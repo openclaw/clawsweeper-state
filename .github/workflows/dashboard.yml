@@ -1,0 +1,57 @@
+name: dashboard
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [clawsweeper_state_refresh]
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clawsweeper-state-dashboard
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: state-repo
+          fetch-depth: 0
+
+      - uses: actions/checkout@v6
+        with:
+          ref: state
+          path: state
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Render dashboard
+        working-directory: state-repo
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm run check
+          pnpm run render -- --source ../state
+
+      - name: Commit dashboard
+        working-directory: state-repo
+        run: |
+          if [ -z "$(git status --porcelain -- README.md)" ]; then
+            echo "Dashboard unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update dashboard"
+          git push

@@ -1,0 +1,412 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/openclaw/clawsweeper/blob/main/schema/state-ledger-event.schema.json",
+  "title": "ClawSweeper state ledger event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "schema_version",
+    "event_id",
+    "event_key",
+    "semantic_sha256",
+    "occurred_at",
+    "recorded_at",
+    "event_type",
+    "producer",
+    "subject",
+    "action",
+    "privacy"
+  ],
+  "properties": {
+    "schema": {
+      "const": "clawsweeper.state-ledger-event.v1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "event_id": {
+      "$ref": "#/$defs/sha256"
+    },
+    "event_key": {
+      "$ref": "#/$defs/eventKey"
+    },
+    "semantic_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_type": {
+      "$ref": "#/$defs/machineText"
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "sha", "workflow", "job", "run_id", "run_attempt", "component"],
+      "properties": {
+        "repository": {
+          "$ref": "#/$defs/repository"
+        },
+        "sha": {
+          "$ref": "#/$defs/machineText"
+        },
+        "workflow": {
+          "$ref": "#/$defs/machineText128"
+        },
+        "job": {
+          "$ref": "#/$defs/machineText128"
+        },
+        "run_id": {
+          "$ref": "#/$defs/machineText"
+        },
+        "run_attempt": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "component": {
+          "$ref": "#/$defs/machineText"
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "kind"],
+      "properties": {
+        "repository": {
+          "$ref": "#/$defs/repository"
+        },
+        "kind": {
+          "enum": [
+            "issue",
+            "pull_request",
+            "cluster",
+            "command",
+            "workflow",
+            "repository",
+            "notification"
+          ]
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "cluster_id": {
+          "$ref": "#/$defs/machineText"
+        },
+        "source_revision": {
+          "$ref": "#/$defs/machineText"
+        },
+        "record_path": {
+          "$ref": "#/$defs/relativePath"
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "status", "retryable", "mutation"],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/machineText"
+        },
+        "status": {
+          "$ref": "#/$defs/machineText"
+        },
+        "reason_code": {
+          "$ref": "#/$defs/machineText"
+        },
+        "retryable": {
+          "type": "boolean"
+        },
+        "mutation": {
+          "type": "boolean"
+        }
+      }
+    },
+    "learning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "signal"],
+      "properties": {
+        "category": {
+          "$ref": "#/$defs/machineText"
+        },
+        "signal": {
+          "$ref": "#/$defs/machineText"
+        },
+        "rule_id": {
+          "$ref": "#/$defs/machineText"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind"],
+        "properties": {
+          "kind": {
+            "$ref": "#/$defs/machineText"
+          },
+          "sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "report_path": {
+            "$ref": "#/$defs/relativePath"
+          },
+          "run_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/actions/runs/[0-9]+$"
+          },
+          "snapshot_id": {
+            "$ref": "#/$defs/machineText"
+          }
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "attempt": {
+          "$ref": "#/$defs/positiveIntegerOrArray"
+        },
+        "cache_mode": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "cached": {
+          "$ref": "#/$defs/booleanOrArray"
+        },
+        "candidate_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "closed_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "completion_reason": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "cost_usd_micros": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "coverage_complete": {
+          "$ref": "#/$defs/booleanOrArray"
+        },
+        "coverage_ratio": {
+          "$ref": "#/$defs/unitIntervalOrArray"
+        },
+        "dispatch_kind": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "duration_ms": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "failed_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "finding_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "input_tokens": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "item_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "model": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "output_tokens": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "phase": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "query_version": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "reasoning_effort": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "result_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "review_mode": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "shard_count": {
+          "$ref": "#/$defs/positiveIntegerOrArray"
+        },
+        "shard_index": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "skipped_count": {
+          "$ref": "#/$defs/nonNegativeIntegerOrArray"
+        },
+        "state": {
+          "$ref": "#/$defs/machineTextOrArray"
+        },
+        "work_kind": {
+          "$ref": "#/$defs/machineTextOrArray"
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "redaction_version", "fields_dropped"],
+      "properties": {
+        "classification": {
+          "enum": ["public", "internal"]
+        },
+        "redaction_version": {
+          "$ref": "#/$defs/machineText"
+        },
+        "fields_dropped": {
+          "type": "array",
+          "maxItems": 64,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/machineText"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "machineText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/@+\\-]*$"
+    },
+    "machineText128": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/@+\\-]*$"
+    },
+    "eventKey": {
+      "type": "string",
+      "minLength": 66,
+      "maxLength": 193,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.+\\-]{0,127}:[a-f0-9]{64}$"
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^[a-z0-9_][a-z0-9_.-]*/[a-z0-9_][a-z0-9_.-]*$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "not": {
+        "anyOf": [
+          {
+            "pattern": "^(?:/|[A-Za-z]:[\\\\/])"
+          },
+          {
+            "pattern": "(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$)"
+          }
+        ]
+      }
+    },
+    "machineTextOrArray": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/machineText"
+        },
+        {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/machineText"
+          }
+        }
+      ]
+    },
+    "positiveIntegerOrArray": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      ]
+    },
+    "nonNegativeIntegerOrArray": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      ]
+    },
+    "booleanOrArray": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "boolean"
+          }
+        }
+      ]
+    },
+    "unitIntervalOrArray": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      ]
+    }
+  }
+}
