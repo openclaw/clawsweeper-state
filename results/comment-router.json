@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:57:03.513Z",
+  "updated_at": "2026-07-31T22:57:11.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115237:5146877208:2026-07-31T19:51:32Z:re_review",
-      "comment_id": "5146877208",
-      "comment_version_key": "5146877208:2026-07-31T19:51:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115237#issuecomment-5146877208",
-      "comment_created_at": "2026-07-31T19:51:32Z",
-      "comment_updated_at": "2026-07-31T19:51:32Z",
-      "comment_body_sha256": "9aafb0d0a8863a422b40f5c0ed46a4ce711b9ca2d36561416f197e420b0fbdb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115237,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T19:54:42.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-setup-schema-v2",
-        "head_sha": "ab3896f37b6f8496e08fe63b9db94b5fcc4120a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116983:5146419042:2026-07-31T19:52:44Z:clawsweeper_needs_human",
       "comment_id": "5146419042",
@@ -31355,6 +31308,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115869:5118250406:2026-07-31T22:55:03Z:clawsweeper_needs_human",
+      "comment_id": "5118250406",
+      "comment_version_key": "5118250406:2026-07-31T22:55:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115869#issuecomment-5118250406",
+      "comment_created_at": "2026-07-29T13:15:22Z",
+      "comment_updated_at": "2026-07-31T22:55:03Z",
+      "comment_body_sha256": "419af3632ce1f6cebe61164a9239e8614bdc19f27b52e4be66d8568965b234fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Complete the exact-head recovery-boundary review** - The supplied patch changes whether tool recovery can proceed after potential side effects, but the local checkout cannot materialize...; Review finding: [medium] Complete the exact-head recovery-boundary review (sha=b764be7605ad97c3113e326b96fc5ffb9941cb0a)",
+      "expected_head_sha": "b764be7605ad97c3113e326b96fc5ffb9941cb0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T22:57:11.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-small-models-20260729",
+        "head_sha": "b764be7605ad97c3113e326b96fc5ffb9941cb0a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
