@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30665369090",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30665369090",
+  "head_sha": "ec2f84cc3f00d92dadd4d5ee41c8e5d402268c04",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T22:14:49.922Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "#98276 remains a reproducible packaging bug on the current checkout: CI archives only dist/, dist-runtime/, and packages/*/dist, while the runtime resolves package-root src/agents/templates and docs/reference/templates. Plan one narrow credited replacement PR that owns an explicit allowlisted archive manifest plus extracted-artifact proof; do not modify the resolver or ACP empty-turn behavior.",
+  "actions": [
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Historical related context only; closed items receive no mutation."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Same proof lane, but a different runtime contract and root cause."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "The broken behavior is established by the current archive producer and the resolver's package-root contract. No viable open PR owns the repair."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Useful historical source work, but it is already closed and cannot be safely repaired in place."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Create one new, same-repo ClawSweeper branch and PR; no current contributor branch is viable."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

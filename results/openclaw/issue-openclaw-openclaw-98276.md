@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
-mode: "plan"
-run_id: "30649399226"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30649399226"
-head_sha: "197d807562e5a5808a8986e161520eccf76ae8af"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "30665369090"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30665369090"
+head_sha: "ec2f84cc3f00d92dadd4d5ee41c8e5d402268c04"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-07-31T19:10:01.177Z"
+published_at: "2026-07-31T22:14:49.922Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30649399226](https://github.com/openclaw/clawsweeper/actions/runs/30649399226)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30665369090](https://github.com/openclaw/clawsweeper/actions/runs/30665369090)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-#98276 is the live canonical non-security packaging bug. The hydrated preflight shows that #98326 is closed, unmerged, uneditable, and unsuitable for revival; its bot review also identified dependency-closure masking that the replacement must avoid. #98274 remains a separate ACP terminal-state report. Plan one narrow credited fix PR after deterministic sync to current main 5332641ed3bab552d23fb16c67bc697a373ea9d7.
+#98276 remains a reproducible packaging bug on the current checkout: CI archives only dist/, dist-runtime/, and packages/*/dist, while the runtime resolves package-root src/agents/templates and docs/reference/templates. Plan one narrow credited replacement PR that owns an explicit allowlisted archive manifest plus extracted-artifact proof; do not modify the resolver or ACP empty-turn behavior.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97916 | keep_closed | skipped | related | Historical context only; no close action is valid for an already-closed, distinct PR. |
-| #98274 | keep_related | planned | related | Related downstream symptom with a separate runtime-contract decision; keep it open independently. |
-| #98276 | fix_needed | planned | canonical | No viable canonical PR exists. A narrow archive-contract helper and isolated extracted-runtime smoke are appropriate within the job's allowed fix/raise_pr scope. |
-| #98326 | keep_closed | skipped | superseded | Closed historical source only; retain evidence and contributor attribution without reopening or closing it again. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Build a replacement fix artifact for one new PR; do not attempt to reuse the closed fork branch. |
+| #97916 | keep_closed | skipped | related | Historical related context only; closed items receive no mutation. |
+| #98274 | keep_related | planned | related | Same proof lane, but a different runtime contract and root cause. |
+| #98276 | fix_needed | planned | canonical | The broken behavior is established by the current archive producer and the resolver's package-root contract. No viable open PR owns the repair. |
+| #98326 | keep_closed | skipped | superseded | Useful historical source work, but it is already closed and cannot be safely repaired in place. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Create one new, same-repo ClawSweeper branch and PR; no current contributor branch is viable. |
 
 ## Needs Human
 
