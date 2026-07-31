@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T12:33:22.930Z",
+  "updated_at": "2026-07-31T12:43:28.988Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116559:5136274043:2026-07-30T21:17:36Z:clawsweeper_needs_human",
-      "comment_id": "5136274043",
-      "comment_version_key": "5136274043:2026-07-30T21:17:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116559#issuecomment-5136274043",
-      "comment_created_at": "2026-07-30T21:06:56Z",
-      "comment_updated_at": "2026-07-30T21:17:36Z",
-      "comment_body_sha256": "72c314b45b68da8ed681a858b4fdf116b10a8f5946233c9b309a5be30cb829bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116559,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main; before merge, rerun the lifecycle proof on the actual merge result so intervening voice-call changes cannot alter close ordering or bridge ownership beh... (sha=e132226fed47195bf300dd9b0e321c032a7ae484)",
-      "expected_head_sha": "e132226fed47195bf300dd9b0e321c032a7ae484",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-30T23:45:14.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-native-consult-teardown",
-        "head_sha": "fde738706b0cefc711374315df6d930a36b5b300",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116558:5136277630:2026-07-30T21:58:08Z:clawsweeper_needs_human",
       "comment_id": "5136277630",
@@ -33086,6 +33053,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116344:5142966618:2026-07-31T12:41:44Z:re_review",
+      "comment_id": "5142966618",
+      "comment_version_key": "5142966618:2026-07-31T12:41:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116344#issuecomment-5142966618",
+      "comment_created_at": "2026-07-31T12:41:44Z",
+      "comment_updated_at": "2026-07-31T12:41:44Z",
+      "comment_body_sha256": "9af71fd232f2912b594841137b0bffe3c37f804f997d3cc6d525ecdee4640cc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116344,
+      "author": "paul-cch",
+      "author_id": 40740310,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T12:43:25.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-process-owned-maintenance-reconciliation",
+        "head_sha": "5f23808be498d2de020a925f7bcd1b9b0bb751ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
