@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:55:53.260Z",
+  "updated_at": "2026-07-31T19:56:01.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:72677:4405899591:2026-05-08T11:02:25Z:re_review",
-      "comment_id": "4405899591",
-      "comment_version_key": "4405899591:2026-05-08T11:02:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/72677#issuecomment-4405899591",
-      "comment_created_at": "2026-05-08T11:02:25Z",
-      "comment_updated_at": "2026-05-08T11:02:25Z",
-      "comment_body_sha256": "81d9e8f90ce7795896cd9173be873c37ee3de14e459114abecd651b861e0ac5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 72677,
-      "author": "liaoandi",
-      "author_id": 31417269,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:37:06.886Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:72677:4405970653:2026-05-08T11:14:55Z:re_review",
       "comment_id": "4405970653",
@@ -32432,6 +32405,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-07-31T19:54:52Z:clawsweeper_needs_human",
+      "comment_id": "5120409280",
+      "comment_version_key": "5120409280:2026-07-31T19:54:52Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/54#issuecomment-5120409280",
+      "comment_created_at": "2026-07-29T16:07:39Z",
+      "comment_updated_at": "2026-07-31T19:54:52Z",
+      "comment_body_sha256": "9e70880d62acd05a9b2c4c40926923a194394dec5efffc662e3a4beaacc407bb",
+      "repo": "openclaw/shellbench",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the effective reasoning control passed to four externally versioned native clients; a client-version mismatch could reject or ignore a requested effort, especially the... (sha=887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb)",
+      "expected_head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T19:56:01.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-reasoning-effort-parity",
+        "head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
