@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116921",
+  "mode": "autonomous",
+  "run_id": "30645123043",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30645123043",
+  "head_sha": "60ad8788f54555eed573d42b38f25f26b8feb62e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116921.md",
+  "published_at": "2026-07-31T16:34:40.871Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116921",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116921",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main (87d5cb9f674259280a725bf33419d1082f40a7d4): a positive session-rail open request unconditionally calls expand(), changing the persisted explicit \"off\" preference to \"card\" and emitting visible=true. The repair is narrow and ready to implement, but this checkout is read-only and lacks installed dependencies, so no branch, regression edit, or validated PR can be produced in this worker environment.",
+  "actions": [
+    {
+      "target": "#116921",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#116921",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker filesystem/dependency environment. The issue remains an open, reproducible canonical bug and should receive the narrow fix artifact below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116921",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116921",
+      "candidate_fix": null,
+      "reason": "Create one narrow new-fix PR from clawsweeper/issue-openclaw-openclaw-116921 after restoring a writable checkout with dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
