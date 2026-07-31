@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:45:27.359Z",
+  "updated_at": "2026-07-31T22:45:28.875Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-07-31T19:38:25Z:clawsweeper_auto_merge",
-      "comment_id": "5146046509",
-      "comment_version_key": "5146046509:2026-07-31T19:38:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-      "comment_created_at": "2026-07-31T18:08:22Z",
-      "comment_updated_at": "2026-07-31T19:38:25Z",
-      "comment_body_sha256": "e3cbc3b2e46a89a09dba4b107935a2ff8da504959b25e1b05f3c44a2badd4699",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=dcf9a110324c143b552d76462647f995a8b5a06d); PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "dcf9a110324c143b552d76462647f995a8b5a06d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T19:46:34.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-        "head_sha": "dcf9a110324c143b552d76462647f995a8b5a06d",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:35:4854763114:2026-07-31T19:47:27Z:clawsweeper_auto_repair",
       "comment_id": "4854763114",
@@ -31277,6 +31224,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:987:4969256321:2026-07-31T22:38:54Z:clawsweeper_auto_repair",
+      "comment_id": "4969256321",
+      "comment_version_key": "4969256321:2026-07-31T22:38:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/987#issuecomment-4969256321",
+      "comment_created_at": "2026-07-14T12:42:00Z",
+      "comment_updated_at": "2026-07-31T22:38:54Z",
+      "comment_body_sha256": "eadeb049d097d49ecb7c06c6efe3038cd855821bb2e8c829bf4129db9d72ce16",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 987,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=16e192825054e2a22ce8234446376e5deee0bcbe)",
+      "expected_head_sha": "16e192825054e2a22ce8234446376e5deee0bcbe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T22:45:28.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/gateway-lkg-update",
+        "head_sha": "16e192825054e2a22ce8234446376e5deee0bcbe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
