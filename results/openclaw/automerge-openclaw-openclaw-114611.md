@@ -2,21 +2,21 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-114611"
 mode: "autonomous"
-run_id: "30636927582"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30636927582"
-head_sha: "60ad8788f54555eed573d42b38f25f26b8feb62e"
+run_id: "30652227116"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30652227116"
+head_sha: "3637a9424ec20396a3903cd79cffb2e4e360bc28"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-07-31T14:21:59.343Z"
+published_at: "2026-07-31T18:04:57.544Z"
 canonical: "#114611"
 canonical_issue: null
 canonical_pr: "#114611"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30636927582](https://github.com/openclaw/clawsweeper/actions/runs/30636927582)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30652227116](https://github.com/openclaw/clawsweeper/actions/runs/30652227116)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #114611
 
 ## Summary
 
-PR #114611 is the open canonical contributor PR and needs a narrow repair before any merge decision. The hydrated artifact shows no security-sensitive signal, but the current docs diff is full-file churn, drops the documented wildcard exception, and fails `check-docs` plus the dependent CI gate.
+Make PR #114611 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
@@ -44,9 +44,9 @@ PR #114611 is the open canonical contributor PR and needs a narrow repair before
 | Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,19 +54,20 @@ PR #114611 is the open canonical contributor PR and needs a narrow repair before
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | blocked | https://github.com/openclaw/openclaw/pull/114611 |  | GitHub rejected the repair branch push because it updates workflow files and the ClawSweeper app token does not have workflows permission |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/116976 | clawsweeper/automerge-openclaw-openclaw-114611 |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #116976 | merge_canonical | blocked | fix_pr | job does not allow merge |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114611 | build_fix_artifact | planned | canonical | Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file churn, then apply the one intended configuration example migration. |
+| #114611 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 

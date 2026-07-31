@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-07-31T18:00:56.878Z",
+  "generated_at": "2026-07-31T18:05:00.379Z",
   "count": 1,
   "summary": {
     "open_prs": 1,
@@ -34,33 +34,24 @@
       "head_sha": "a2a9de7f2a04f5369ad076ac3ee3d4272d310486",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-07-31T18:00:53Z",
+      "updated_at": "2026-07-31T18:03:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 25,
+        "total": 57,
         "counts": {
-          "CANCELLED": 4,
-          "IN_PROGRESS": 12,
-          "SKIPPED": 5,
-          "SUCCESS": 4
+          "CANCELLED": 5,
+          "IN_PROGRESS": 1,
+          "SKIPPED": 32,
+          "SUCCESS": 19
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "CI / preflight:IN_PROGRESS",
-          "Dependency Guard / dependency-guard-detect:IN_PROGRESS",
-          "Real behavior proof:IN_PROGRESS",
-          "Shared OpenClawKit Periphery / Detect shared OpenClawKit scan scope:IN_PROGRESS",
-          "Workflow Sanity / no-tabs:IN_PROGRESS",
-          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
-          "macOS Periphery Dead Code / Detect macOS scan scope:IN_PROGRESS",
-          "CI / security-fast:IN_PROGRESS",
-          "Security Sensitive Guard / security-sensitive-guard:IN_PROGRESS",
-          "Workflow Sanity / actionlint:IN_PROGRESS"
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -74,12 +65,26 @@
         "latest": []
       },
       "latest_record": {
-        "run_id": "30636927582",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30636927582",
+        "run_id": "30652227116",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30652227116",
         "cluster_id": "automerge-openclaw-openclaw-114611",
-        "published_at": "2026-07-31T14:21:59.343Z",
+        "published_at": "2026-07-31T18:04:57.544Z",
         "workflow_conclusion": "success",
-        "apply_action": null
+        "apply_action": {
+          "target": "#116976",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "docs: replace retired hostnameAllowlist in browser-control example",
+          "idempotency_key": null,
+          "reason": "job does not allow merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
       },
       "blockers": [
         "needs_merge_state:BLOCKED",

@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-114611",
+  "mode": "autonomous",
+  "run_id": "30652227116",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30652227116",
+  "head_sha": "3637a9424ec20396a3903cd79cffb2e4e360bc28",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
+  "published_at": "2026-07-31T18:04:57.544Z",
+  "canonical": "#114611",
+  "canonical_issue": null,
+  "canonical_pr": "#114611",
+  "summary": "Make PR #114611 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#114611",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114611",
+      "candidate_fix": "#114611",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "opened": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "blocked",
+      "target": "https://github.com/openclaw/openclaw/pull/114611",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "GitHub rejected the repair branch push because it updates workflow files and the ClawSweeper app token does not have workflows permission",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/116976",
+      "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "replace_uneditable_branch",
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/116976",
+      "commit": "a2a9de7f2a04f5369ad076ac3ee3d4272d310486",
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#116976",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "docs: replace retired hostnameAllowlist in browser-control example",
+      "idempotency_key": null,
+      "reason": "job does not allow merge",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
