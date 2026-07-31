@@ -1,0 +1,181 @@
+{
+  "status": "executed",
+  "generated_at": "2026-07-23T05:18:35.446Z",
+  "repo": "openclaw/openclaw",
+  "repair_repo": "openclaw/clawsweeper",
+  "review_repo": "openclaw/clawsweeper",
+  "since": "2026-07-23T02:18:32.852Z",
+  "execute": true,
+  "force_reprocess": false,
+  "forced_replay_attempt_id": null,
+  "max_comments": 1,
+  "item_numbers": [
+    112878
+  ],
+  "comment_ids": [
+    5054548283
+  ],
+  "status_comment_id": null,
+  "max_autoclose_targets": 8,
+  "scanned_comments": 1,
+  "commands_seen": 1,
+  "actionable": 0,
+  "trusted_bots": [
+    "clawsweeper[bot]",
+    "openclaw-clawsweeper[bot]"
+  ],
+  "allowed_repository_permissions": [
+    "admin",
+    "maintain",
+    "write"
+  ],
+  "max_auto_repairs_per_head": 2,
+  "max_auto_repairs_per_pr": 10,
+  "lookup_concurrency": 8,
+  "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112878:5054548283:2026-07-23T04:51:09Z:re_review",
+      "comment_id": "5054548283",
+      "comment_version_key": "5054548283:2026-07-23T04:51:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112878#issuecomment-5054548283",
+      "repo": "openclaw/openclaw",
+      "target_branch": null,
+      "issue_number": 112878,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_association": "CONTRIBUTOR",
+      "comment_created_at": "2026-07-23T04:51:09Z",
+      "comment_updated_at": "2026-07-23T04:51:09Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "status_comment_id": null,
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "autoclose_message": null,
+      "implementation_prompt": null,
+      "operator_override": null,
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "review_summary": null,
+      "review_followup": null,
+      "freeform_prompt": null,
+      "visual_lens": null,
+      "expected_head_sha": null,
+      "close_reason": null,
+      "close_confidence": null,
+      "close_action_taken": null,
+      "reviewed_at": null,
+      "review_lease_owner": null,
+      "review_lease_comment_id": null,
+      "expected_item_updated_at": null,
+      "expected_source_revision": null,
+      "finding_id": null,
+      "status": "skipped",
+      "actions": [],
+      "author_repository_permission": "admin",
+      "target": {
+        "kind": "pull_request",
+        "title": "test(gateway): consolidate agent event fixtures",
+        "body": "## What Problem This Solves\n\nThe 5,197-line Gateway agent-event suite repeated event construction, chat-run registration, session fixtures, and broadcast setup throughout the file. That boilerplate made the lifecycle and routing assertions harder to review and kept the file substantially above the repository's line-count budget.\n\n## Why This Change Was Made\n\nThis maintainer-commissioned, AI-assisted refactor introduces a colocated agent-event fixture helper, moves every event and chat-run setup onto the builders, and table-drives only cases with the same assertion shape. Semantically distinct lifecycle, persistence, throttling, and routing cases remain separate.\n\nNo production behavior, config/environment surface, SQLite schema, protocol, snapshot, inventory, baseline, or changelog changed.\n\n## User Impact\n\nNo user-visible impact. The same Gateway agent-event behaviors remain covered with less duplicated test setup and clearer failure attribution.\n\n## Evidence\n\n- LOC: test `+991/-1779`, production `+0/-0`, net `-788` lines (15.2%); target file `5,197 -> 4,351` lines plus a 58-line colocated helper.\n- Test count before: 129 passing.\n- Test count after: 129 passing.\n- `node scripts/run-vitest.mjs src/gateway/server-chat.agent-events.test.ts` — 1 file and 129 tests passed before the refactor, after the refactor, after the accepted autoreview fix, and after rebasing onto current `origin/main`.\n- `node scripts/check-changed.mjs -- src/gateway/server-chat.agent-events.test.ts src/gateway/server-chat.agent-events.test-helpers.ts` — passed on Blacksmith Testbox `tbx_01ky6hmm9cp1mtxcv01szwy2k0`; run https://github.com/openclaw/openclaw/actions/runs/29978091486.\n- `.agents/skills/autoreview/scripts/autoreview --mode uncommitted --stream-engine-output` — final run clean with no accepted/actionable findings after restoring the original optional fallback-sequence semantics.\n- `git diff --check origin/main...HEAD` — passed after rebase.\n",
+        "branch": "codex/loc-agent-events-tests",
+        "head_sha": "68ad323e3c986f1bcfd981455733bbbcf954b253",
+        "author": "steipete",
+        "labels": [
+          "gateway",
+          "maintainer",
+          "size: XL"
+        ],
+        "files": [
+          {
+            "path": "src/gateway/server-chat.agent-events.test-helpers.ts",
+            "additions": 58,
+            "deletions": 0,
+            "changeType": "ADDED"
+          },
+          {
+            "path": "src/gateway/server-chat.agent-events.test.ts",
+            "additions": 933,
+            "deletions": 1779,
+            "changeType": "MODIFIED"
+          }
+        ],
+        "changedFiles": 2,
+        "additions": 991,
+        "deletions": 1779,
+        "is_clawsweeper_pr": false,
+        "cluster_id": null,
+        "job_path": null,
+        "source_job_path": null,
+        "has_automerge_job": false,
+        "automerge_cluster_id": "automerge-openclaw-openclaw-112878",
+        "automerge_job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-112878.md",
+        "mode": "autonomous",
+        "mergeable": "MERGEABLE",
+        "merge_state_status": "BEHIND",
+        "review_decision": "",
+        "checks": {
+          "total": 98,
+          "gatingTotal": 93,
+          "counts": {
+            "SUCCESS": 52,
+            "SKIPPED": 45,
+            "NEUTRAL": 1
+          },
+          "blockers": [],
+          "pending": [],
+          "terminalBlockers": [],
+          "externalBlockers": []
+        }
+      },
+      "maintainer_authorized": true,
+      "author_readonly_authorized": false,
+      "reason": "matching ClawSweeper response comment already exists"
+    }
+  ],
+  "exact_comment_version_fast_path": {
+    "suppress": false,
+    "reason": "auth_uncertain"
+  },
+  "short_circuited": false,
+  "ledger_claimed": false,
+  "ledger_changed": false,
+  "timings": {
+    "total_ms": 2911,
+    "phases": [
+      {
+        "name": "list_candidate_comments",
+        "ms": 506
+      },
+      {
+        "name": "prehydrate_comment_commands",
+        "ms": 2006
+      },
+      {
+        "name": "classify_comment_commands",
+        "ms": 13
+      },
+      {
+        "name": "prehydrate_repair_loop_sweeps",
+        "ms": 0
+      },
+      {
+        "name": "classify_repair_loop_sweeps",
+        "ms": 0
+      },
+      {
+        "name": "claim_dispatch_commands",
+        "ms": 0
+      },
+      {
+        "name": "execute_commands",
+        "ms": 317
+      },
+      {
+        "name": "append_ledger",
+        "ms": 0
+      }
+    ]
+  }
+}
