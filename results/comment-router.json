@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T20:43:41.957Z",
+  "updated_at": "2026-07-31T20:44:23.537Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105316:4950971370:2026-07-31T16:38:14Z:clawsweeper_auto_repair",
-      "comment_id": "4950971370",
-      "comment_version_key": "4950971370:2026-07-31T16:38:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105316#issuecomment-4950971370",
-      "comment_created_at": "2026-07-12T11:15:46Z",
-      "comment_updated_at": "2026-07-31T16:38:14Z",
-      "comment_body_sha256": "2a964c0377958e1b8cca70fbdbf80b537bad57a2f4df007542f8497e586f7c5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105316,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5bf424dcac506de725fe117724a862bcd0ca4672)",
-      "expected_head_sha": "5bf424dcac506de725fe117724a862bcd0ca4672",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-07-31T16:42:18.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/active-memory-bound-timeout-breakers",
-        "head_sha": "5bf424dcac506de725fe117724a862bcd0ca4672",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116940:5145206647:2026-07-31T16:35:26Z:clawsweeper_needs_human",
       "comment_id": "5145206647",
@@ -32406,6 +32373,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116970:5145910128:2026-07-31T20:39:01Z:clawsweeper_needs_human",
+      "comment_id": "5145910128",
+      "comment_version_key": "5145910128:2026-07-31T20:39:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116970#issuecomment-5145910128",
+      "comment_created_at": "2026-07-31T17:52:42Z",
+      "comment_updated_at": "2026-07-31T20:39:01Z",
+      "comment_body_sha256": "33a1240b2347d745d1575e50fdca9bc2b2a8eabb22280ea4147e9b6d82048439",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116970,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the first Telegram polling request from a long poll to short polling; an incorrect transition could affect startup availability or request cadence, so the behind branch... (sha=c3ffb609716429c9e103d7bc52b29fd613546e73)",
+      "expected_head_sha": "c3ffb609716429c9e103d7bc52b29fd613546e73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T20:44:23.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/telegram-polling-startup-health",
+        "head_sha": "c3ffb609716429c9e103d7bc52b29fd613546e73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
