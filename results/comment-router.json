@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:12:06.408Z",
+  "updated_at": "2026-07-31T17:13:50.139Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114296:5087492847:2026-07-31T13:09:57Z:clawsweeper_needs_human",
-      "comment_id": "5087492847",
-      "comment_version_key": "5087492847:2026-07-31T13:09:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114296#issuecomment-5087492847",
-      "comment_created_at": "2026-07-27T05:10:23Z",
-      "comment_updated_at": "2026-07-31T13:09:57Z",
-      "comment_body_sha256": "2ea0967e8a2252a156da43ae182fea3f6e8d0318e6f2f63c45600585fc90651f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114296,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports unit and static checks only; before merge, add redacted after-fix Chrome-extension pairing or side-panel runtime evidence s...; Review finding: [P1] Reject DNS names that only start with 127. — extensions/browser/chrome-extension/modules/relay-core.js:23 - [high] Over-broad local-host recognition — extensi... (sha=292176fb0e149dca04e35dc043b3b5ee3998f91d)",
-      "expected_head_sha": "292176fb0e149dca04e35dc043b3b5ee3998f91d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:12:16.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-laptop-qa05-02-c66ca2f",
-        "head_sha": "292176fb0e149dca04e35dc043b3b5ee3998f91d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114193:5085962616:2026-07-31T13:09:57Z:clawsweeper_auto_repair",
       "comment_id": "5085962616",
@@ -31833,6 +31800,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116595:5137727929:2026-07-31T17:11:33Z:clawsweeper_needs_human",
+      "comment_id": "5137727929",
+      "comment_version_key": "5137727929:2026-07-31T17:11:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116595#issuecomment-5137727929",
+      "comment_created_at": "2026-07-31T00:29:17Z",
+      "comment_updated_at": "2026-07-31T17:11:33Z",
+      "comment_body_sha256": "0d715a5c57e50ed8a5fc7e13c18588cbb5e112771e63cfedb6abf0b37223994f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116595,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify every replacement action SHA** - The new pins execute in workflows with release-write or registry credentials, but official upstream source/release inspection was blocked by DNS...; Review finding: [medium] Verify every replacement action SHA — .github/workflows/openclaw-release-publish.yml:727 (sha=6d0bb23174698f9c932b982816b3bcd7d406915d)",
+      "expected_head_sha": "6d0bb23174698f9c932b982816b3bcd7d406915d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:13:50.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-02a2dad65a",
+        "head_sha": "6d0bb23174698f9c932b982816b3bcd7d406915d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
