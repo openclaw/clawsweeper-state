@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-07-31T20:06:22.656Z",
+  "generated_at": "2026-07-31T20:24:03.445Z",
   "count": 1,
   "summary": {
     "open_prs": 1,
@@ -31,12 +31,12 @@
       "title": "docs: replace retired hostnameAllowlist in browser-control example",
       "url": "https://github.com/openclaw/openclaw/pull/116976",
       "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-      "head_sha": "dcf9a110324c143b552d76462647f995a8b5a06d",
+      "head_sha": "52225bc33655ab2f1bd5e66a0881bd10cc1edae0",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-07-31T20:05:56Z",
+      "updated_at": "2026-07-31T20:20:04Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -74,23 +74,29 @@
         ]
       },
       "latest_record": {
-        "run_id": "30657266473",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30657266473",
+        "run_id": "30660374550",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30660374550",
         "cluster_id": "automerge-openclaw-openclaw-116976",
-        "published_at": "2026-07-31T19:31:02.436Z",
-        "workflow_conclusion": "failure",
+        "published_at": "2026-07-31T20:24:01.064Z",
+        "workflow_conclusion": "success",
         "apply_action": {
           "target": "#116976",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#116976",
-          "candidate_fix": "#116976",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "docs: replace retired hostnameAllowlist in browser-control example",
+          "idempotency_key": null,
+          "reason": "job does not allow merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_merge_state:BLOCKED",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
