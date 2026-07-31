@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T15:48:55.751Z",
+  "updated_at": "2026-07-31T15:51:43.892Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79148:4402229917:2026-07-31T11:21:28Z:clawsweeper_needs_human",
-      "comment_id": "4402229917",
-      "comment_version_key": "4402229917:2026-07-31T11:21:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/79148#issuecomment-4402229917",
-      "comment_created_at": "2026-05-08T00:40:14Z",
-      "comment_updated_at": "2026-07-31T11:21:28Z",
-      "comment_body_sha256": "522e68a8341c3a38b9799e8458bd8939a44b2bd9a8507d903af92d57599c9e5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79148,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Retain a hard cap on untrusted prompt history (P1)** - historyLimit is only checked for finiteness, so a valid large configured value serializes that many inbound entries into the model prompt. The old 20-entry...; Review finding: [P1] Retain a hard cap on untrusted prompt history — src/auto-reply/reply/inbound-meta.ts:53-58 - [P2] Carry the resolved cap through shared inbound facts — extens... (sha=4e193be9d469725532ce6fb10be76b0d8e47573b)",
-      "expected_head_sha": "4e193be9d469725532ce6fb10be76b0d8e47573b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-configurable-inbound-history-cap",
-        "head_sha": "4e193be9d469725532ce6fb10be76b0d8e47573b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79185:4402794116:2026-07-31T11:19:08Z:clawsweeper_auto_repair",
       "comment_id": "4402794116",
@@ -31997,6 +31964,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109707:4999628458:2026-07-31T15:42:06Z:clawsweeper_needs_human",
+      "comment_id": "4999628458",
+      "comment_version_key": "4999628458:2026-07-31T15:42:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109707#issuecomment-4999628458",
+      "comment_created_at": "2026-07-17T06:19:11Z",
+      "comment_updated_at": "2026-07-31T15:42:06Z",
+      "comment_body_sha256": "40a270f42adf41e1f27c3f1cc0eb6b9650bdeb3107d1e95788b3f36cb27e2696",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An unconditional 60-second wall-clock deadline may reject legitimate searches over very large trees or slow remote filesystems; the supplied proof establishes recovery from indefinite... (sha=c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa)",
+      "expected_head_sha": "c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T15:51:43.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-find-grep-exec-timeout",
+        "head_sha": "c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
