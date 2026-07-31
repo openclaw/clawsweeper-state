@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:38:13.766Z",
+  "updated_at": "2026-07-31T17:40:05.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105822:4953836862:2026-07-13T02:16:44Z:re_review",
-      "comment_id": "4953836862",
-      "comment_version_key": "4953836862:2026-07-13T02:16:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105822#issuecomment-4953836862",
-      "comment_created_at": "2026-07-13T02:16:44Z",
-      "comment_updated_at": "2026-07-13T02:16:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105822,
-      "author": "lzyyzznl",
-      "author_id": 41978486,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:40:22.216Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105822:4953874377:2026-07-13T02:24:07Z:re_review",
       "comment_id": "4953874377",
@@ -31913,6 +31886,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108092:4987946409:2026-07-31T17:30:06Z:clawsweeper_needs_human",
+      "comment_id": "4987946409",
+      "comment_version_key": "4987946409:2026-07-31T17:30:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108092#issuecomment-4987946409",
+      "comment_created_at": "2026-07-16T03:47:21Z",
+      "comment_updated_at": "2026-07-31T17:30:06Z",
+      "comment_body_sha256": "9b4a4bb9f1b1bf9de4945a1bbac0901bc789660b3c0dcf12c5a4dde8b07dab97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108092,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds a page-scope helper and expanded test surface for an intermediate CDP value without evidence that Chrome rejects it, that OpenClaw loses cursor entries, or that the alrea... (sha=41a865b7eac31d498545b530663732df73a3e522)",
+      "expected_head_sha": "41a865b7eac31d498545b530663732df73a3e522",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:40:05.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cdp-utf16-safe",
+        "head_sha": "41a865b7eac31d498545b530663732df73a3e522",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
