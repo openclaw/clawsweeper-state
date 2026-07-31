@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T13:52:45.816Z",
+  "updated_at": "2026-07-31T13:53:28.698Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116537:5135660149:2026-07-31T05:19:35Z:clawsweeper_needs_human",
-      "comment_id": "5135660149",
-      "comment_version_key": "5135660149:2026-07-31T05:19:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116537#issuecomment-5135660149",
-      "comment_created_at": "2026-07-30T19:58:41Z",
-      "comment_updated_at": "2026-07-31T05:19:35Z",
-      "comment_body_sha256": "365adecbc87a9888b1927ed0b5c7c9b8878a58c10701419700bd58613b824712",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116537,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing operators who explicitly set a high bootstrapMaxChars will inject more USER.md content after upgrade, increasing prompt context, latency, and cost relative to the fixed-cap b... (sha=d7e25e274ca76c488ba81ab0da9beacd21fb7919)",
-      "expected_head_sha": "d7e25e274ca76c488ba81ab0da9beacd21fb7919",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T05:25:33.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/user-bootstrap-config-limit",
-        "head_sha": "d7e25e274ca76c488ba81ab0da9beacd21fb7919",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116579:5137274726:2026-07-31T04:27:31Z:clawsweeper_needs_human",
       "comment_id": "5137274726",
@@ -32784,6 +32751,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:973:5143620697:2026-07-31T13:52:50Z:re_review",
+      "comment_id": "5143620697",
+      "comment_version_key": "5143620697:2026-07-31T13:52:50Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/973#issuecomment-5143620697",
+      "comment_created_at": "2026-07-31T13:52:50Z",
+      "comment_updated_at": "2026-07-31T13:52:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 973,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T13:53:26.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-dead-letter-autorecovery",
+        "head_sha": "2e6b68a6f9bcedea2ef01728de8b39dc173f1461",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
