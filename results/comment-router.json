@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:02:45.386Z",
+  "updated_at": "2026-07-31T19:02:55.121Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116840:5143105979:2026-07-31T14:11:34Z:clawsweeper_needs_human",
-      "comment_id": "5143105979",
-      "comment_version_key": "5143105979:2026-07-31T14:11:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116840#issuecomment-5143105979",
-      "comment_created_at": "2026-07-31T12:58:29Z",
-      "comment_updated_at": "2026-07-31T14:11:34Z",
-      "comment_body_sha256": "8ccff0fab21bf87073564852c0b1a3e785da31f1fc2335ec401d33777119e7ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116840,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow changes remote CI resource lifecycle behavior; required exact-head checks were still in progress in the supplied context, so the final merged workflow behavior has not ye... (sha=9fa24bc6851791148947362377bdf2128c250954)",
-      "expected_head_sha": "9fa24bc6851791148947362377bdf2128c250954",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T14:47:26.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/blacksmith-testbox-lifecycle",
-        "head_sha": "9fa24bc6851791148947362377bdf2128c250954",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116856:5143647207:2026-07-31T13:55:32Z:clawsweeper_needs_human",
       "comment_id": "5143647207",
@@ -32342,6 +32309,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116733:5146465263:2026-07-31T18:59:05Z:re_review",
+      "comment_id": "5146465263",
+      "comment_version_key": "5146465263:2026-07-31T18:59:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116733#issuecomment-5146465263",
+      "comment_created_at": "2026-07-31T18:59:05Z",
+      "comment_updated_at": "2026-07-31T18:59:05Z",
+      "comment_body_sha256": "fffa5731cadd04ed61a9b7c6878c6fe6b2851ffbddb5de1d8510cb5cccf5729e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116733,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T19:02:52.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-116239-state-db-schema-crash-loop",
+        "head_sha": "9183fc6bf08adf5ea0ca23349b7bac394fec4461",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
