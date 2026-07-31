@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T20:59:29.004Z",
+  "updated_at": "2026-07-31T21:00:07.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-07-31T16:45:01Z:clawsweeper_auto_repair",
-      "comment_id": "4591541970",
-      "comment_version_key": "4591541970:2026-07-31T16:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4591541970",
-      "comment_created_at": "2026-06-01T10:02:20Z",
-      "comment_updated_at": "2026-07-31T16:45:01Z",
-      "comment_body_sha256": "91a2a49ee74a8e68f03f02594b62fc6890f5071f7e97c2e5dbf1f447a37d2b5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bd1b728ed94a27836e54e6e123af94cc2876b1b6)",
-      "expected_head_sha": "bd1b728ed94a27836e54e6e123af94cc2876b1b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T16:54:34.227Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "bd1b728ed94a27836e54e6e123af94cc2876b1b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116931:5144941346:2026-07-31T16:50:29Z:clawsweeper_needs_human",
       "comment_id": "5144941346",
@@ -32434,6 +32401,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T20:59:29.004Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:982:5146523675:2026-07-31T20:59:10Z:clawsweeper_needs_human",
+      "comment_id": "5146523675",
+      "comment_version_key": "5146523675:2026-07-31T20:59:10Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/982#issuecomment-5146523675",
+      "comment_created_at": "2026-07-31T19:06:11Z",
+      "comment_updated_at": "2026-07-31T20:59:10Z",
+      "comment_body_sha256": "eb230baebd58ce77e7f53b06cd063fb3143f9f45ba81b3957cd4e320df98b0ed",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 982,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Because this changes shared durable-job retry, deduplication, and dispatch behavior, an error in the current-head fencing could either leave valid repairs queued indefinitely or dispa... (sha=fbb0402d8eae7019602d893e8553cfb2d5560a81)",
+      "expected_head_sha": "fbb0402d8eae7019602d893e8553cfb2d5560a81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T21:00:07.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-stale-issue-job-recovery",
+        "head_sha": "fbb0402d8eae7019602d893e8553cfb2d5560a81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
