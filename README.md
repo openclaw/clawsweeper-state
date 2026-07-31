@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Jul 31, 2026, 15:30 UTC
+Last source update: Jul 31, 2026, 16:20 UTC
 
 ### Fleet
 
@@ -22,9 +22,9 @@ Last source update: Jul 31, 2026, 15:30 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Jul 31, 2026, 15:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30641799065) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Jul 31, 2026, 15:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30641724806) |
-| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Jul 31, 2026, 12:11 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30629675886) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Jul 31, 2026, 16:19 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30646581103) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Jul 31, 2026, 16:19 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30646538282) |
+| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Review in progress | Jul 31, 2026, 16:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30646627620) |
 
 ### Repositories
 
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Jul 31, 2026, 15:00 UTC
+Last source update: Jul 31, 2026, 16:06 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 253 | 100% |
-| Run attempts archived | 660 | audit |
-| Latest successful clusters | 223 | 88.1% |
-| Latest failed clusters | 30 | 11.9% |
+| Run attempts archived | 661 | audit |
+| Latest successful clusters | 224 | 88.5% |
+| Latest failed clusters | 29 | 11.5% |
 | Latest cancelled clusters | 0 | 0.0% |
 | Needs-human clusters | 23 | 9.1% |
 | Fix actions failed | 16 | 5.2% |
@@ -115,17 +115,17 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 253 clusters: 152 maintainer action, 35 automation snapshot, 50 intervention needed, 16 no pending action, 0 completed.
+- Latest records: 253 clusters: 152 maintainer action, 36 automation snapshot, 49 intervention needed, 16 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#111745](https://github.com/openclaw/openclaw/issues/111745) is maintainer_input: Obtain the sanitized reproduction evidence requested in the July 31, 2026 maintainer comment: effective npm_config values, npm config lis....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98276](https://github.com/openclaw/openclaw/pull/98276) is automation_failed: The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#114611](https://github.com/openclaw/openclaw/pull/114611) is action_planned: Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file chur....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [automerge-openclaw-openclaw-116584](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116584.md) is automation_failed: validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, apps [check:chang....
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98276](https://github.com/openclaw/openclaw/pull/98276) is action_planned: A narrow artifact-contract helper and extracted-runtime smoke are appropriate; executor must synchronize once to preflight main and re-ve....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
 | Maintainer Action | 152 | explicit decision, access, or merge authority recorded |
-| Automation Snapshot | 35 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 50 | automation failure or blocker recorded |
+| Automation Snapshot | 36 | repair, check, or planned action recorded; verify live status |
+| Intervention Needed | 49 | automation failure or blocker recorded |
 | No Pending Action | 16 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -137,8 +137,8 @@ State: Failed clusters need inspection
 | checks_blocked | 23 |
 | repair_open | 1 |
 | automation_active | 0 |
-| action_planned | 11 |
-| automation_failed | 35 |
+| action_planned | 12 |
+| automation_failed | 34 |
 | automation_blocked | 15 |
 | reviewed_no_action | 16 |
 | completed | 0 |
@@ -167,6 +167,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98276](https://github.com/openclaw/openclaw/pull/98276) | action_planned | A narrow artifact-contract helper and extracted-runtime smoke are appropriate; executor must synchronize once to preflight main and re-verify befor... | Jul 31, 2026, 16:06 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30641842989](https://github.com/openclaw/clawsweeper/actions/runs/30641842989) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#114611](https://github.com/openclaw/openclaw/pull/114611) | action_planned | Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file churn, then ap... | Jul 31, 2026, 14:21 UTC | [automerge-openclaw-openclaw-114611](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-114611.md) | [30636927582](https://github.com/openclaw/clawsweeper/actions/runs/30636927582) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#113663](https://github.com/openclaw/openclaw/pull/113663) | action_planned | Repair the contributor branch with the smallest header-composition change, preserve current-main OAuth settings discovery and auto-model behavior,... | Jul 31, 2026, 06:35 UTC | [automerge-openclaw-openclaw-113663](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-113663.md) | [30609587993](https://github.com/openclaw/clawsweeper/actions/runs/30609587993) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#109679](https://github.com/openclaw/openclaw/pull/109679) | action_planned | The fix is still necessary and the existing writable PR is the best repair path, but it must be refreshed onto current main and pass exact-head rev... | Jul 17, 2026, 09:07 UTC | [automerge-openclaw-openclaw-109679](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-109679.md) | [29568565291](https://github.com/openclaw/clawsweeper/actions/runs/29568565291) |
@@ -181,13 +182,11 @@ State: Failed clusters need inspection
 | [openclaw/gogcli](https://github.com/openclaw/gogcli) | [#901](https://github.com/openclaw/gogcli/pull/901) | checks_blocked | checks are not clean: test: IN_PROGRESS, windows: IN_PROGRESS | Jul 5, 2026, 03:10 UTC | [issue-openclaw-gogcli-900](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-900.md) | [28727252178](https://github.com/openclaw/clawsweeper/actions/runs/28727252178) |
 | [openclaw/crabbox](https://github.com/openclaw/crabbox) | [#757](https://github.com/openclaw/crabbox/pull/757) | checks_blocked | checks are not clean: Go: IN_PROGRESS, Release Check: IN_PROGRESS | Jul 1, 2026, 23:36 UTC | [issue-openclaw-crabbox-756](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-756.md) | [28554206071](https://github.com/openclaw/clawsweeper/actions/runs/28554206071) |
 | [openclaw/gogcli](https://github.com/openclaw/gogcli) | [#890](https://github.com/openclaw/gogcli/pull/890) | checks_blocked | checks are not clean: test: IN_PROGRESS, windows: IN_PROGRESS | Jun 30, 2026, 05:56 UTC | [issue-openclaw-gogcli-889](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-889.md) | [28422442123](https://github.com/openclaw/clawsweeper/actions/runs/28422442123) |
-| [openclaw/gogcli](https://github.com/openclaw/gogcli) | [#886](https://github.com/openclaw/gogcli/pull/886) | checks_blocked | checks are not clean: test: IN_PROGRESS, windows: IN_PROGRESS | Jun 29, 2026, 10:54 UTC | [issue-openclaw-gogcli-885](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-885.md) | [28365468958](https://github.com/openclaw/clawsweeper/actions/runs/28365468958) |
 
 #### Intervention Needed
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98276](https://github.com/openclaw/openclaw/pull/98276) | automation_failed | The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency/build out... | Jul 31, 2026, 15:00 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30638412449](https://github.com/openclaw/clawsweeper/actions/runs/30638412449) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, apps [check:changed] apps/a... | Jul 31, 2026, 05:09 UTC | [automerge-openclaw-openclaw-116584](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116584.md) | [30597758157](https://github.com/openclaw/clawsweeper/actions/runs/30597758157) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#106789](https://github.com/openclaw/openclaw/pull/106789) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Jul 30, 2026, 14:05 UTC | [automerge-openclaw-openclaw-106789](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-106789.md) | [30545211875](https://github.com/openclaw/clawsweeper/actions/runs/30545211875) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): validation command left 4 background process(es) after exit | Jul 19, 2026, 16:13 UTC | [automerge-openclaw-openclaw-110725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-110725.md) | [29692504658](https://github.com/openclaw/clawsweeper/actions/runs/29692504658) |
@@ -202,6 +201,7 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm lint): $ node scripts/run-oxlint-shards.mjs [oxlint:core] starting [oxlint:core] finished [oxlint:extensions] start... | Jul 13, 2026, 20:43 UTC | [automerge-openclaw-openclaw-104485](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-104485.md) | [29280101463](https://github.com/openclaw/clawsweeper/actions/runs/29280101463) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [cluster:issue-openclaw-openclaw-windows-node-969](cluster:issue-openclaw-openclaw-windows-node-969) | automation_failed | A writable executor must apply the fix artifact, run all required validation, and collect isolated WinUI proof before opening the PR. | Jul 12, 2026, 00:14 UTC | [issue-openclaw-openclaw-windows-node-969](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-969.md) | [29173264896](https://github.com/openclaw/clawsweeper/actions/runs/29173264896) |
 | [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) | [#970](https://github.com/openclaw/openclaw-windows-node/pull/970) | automation_failed | The focused UX defect is current and narrowly implementable, but no viable candidate PR exists. | Jul 12, 2026, 00:13 UTC | [issue-openclaw-openclaw-windows-node-970](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-windows-node-970.md) | [29173264273](https://github.com/openclaw/clawsweeper/actions/runs/29173264273) |
+| [openclaw/peekaboo](https://github.com/openclaw/peekaboo) | [cluster:issue-openclaw-peekaboo-242](cluster:issue-openclaw-peekaboo-242) | automation_failed | Blocked only on executor access to a writable checkout and GitHub PR application. | Jul 11, 2026, 08:50 UTC | [issue-openclaw-peekaboo-242](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-peekaboo-242.md) | [29146434927](https://github.com/openclaw/clawsweeper/actions/runs/29146434927) |
 
 #### No Pending Action
 
