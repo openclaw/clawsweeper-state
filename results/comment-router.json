@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T21:21:56.439Z",
+  "updated_at": "2026-07-31T21:22:09.761Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:978:5145552330:2026-07-31T17:11:15Z:re_review",
-      "comment_id": "5145552330",
-      "comment_version_key": "5145552330:2026-07-31T17:11:15Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/978#issuecomment-5145552330",
-      "comment_created_at": "2026-07-31T17:11:15Z",
-      "comment_updated_at": "2026-07-31T17:11:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 978,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T17:12:03.561Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawsweeper-review-checkpoint-index",
-        "head_sha": "4e0c3e33538291cd2fcb40af211ad006f2e39dc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116595:5137727929:2026-07-31T17:11:33Z:clawsweeper_needs_human",
       "comment_id": "5137727929",
@@ -32387,6 +32340,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions/stale-11.0.0",
         "head_sha": "9f17f5a0b1468ac9733e061a0e0f25ca70de1652",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:216:5027931715:2026-07-31T21:21:00Z:clawsweeper_needs_human",
+      "comment_id": "5027931715",
+      "comment_version_key": "5027931715:2026-07-31T21:21:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw.ai/pull/216#issuecomment-5027931715",
+      "comment_created_at": "2026-07-20T22:35:36Z",
+      "comment_updated_at": "2026-07-31T21:21:00Z",
+      "comment_body_sha256": "9eca39de667d7c44b486a0b160bf4bc24a8ae52884ccc1e7cceff4f980b404d6",
+      "repo": "openclaw/openclaw.ai",
+      "issue_number": 216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/setup-node v7 is a major action upgrade in macOS and Windows installer-verification jobs, and the current head has two failed Git-installer smoke checks; merge should wait unt... (sha=71a49512a4fe6eeb84c1be405066fde46c8487a9)",
+      "expected_head_sha": "71a49512a4fe6eeb84c1be405066fde46c8487a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T21:22:09.760Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-901392d03b",
+        "head_sha": "71a49512a4fe6eeb84c1be405066fde46c8487a9",
         "cluster_id": null,
         "job_path": null
       }
