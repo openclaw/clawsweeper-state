@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-114611"
 mode: "autonomous"
-run_id: "30636235447"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30636235447"
-head_sha: "3d2a878f6e2a52cc82e0fde9795ef341671ed554"
-workflow_conclusion: "failure"
+run_id: "30636927582"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30636927582"
+head_sha: "60ad8788f54555eed573d42b38f25f26b8feb62e"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-07-31T14:10:11.283Z"
+published_at: "2026-07-31T14:21:59.343Z"
 canonical: "#114611"
 canonical_issue: null
 canonical_pr: "#114611"
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30636235447](https://github.com/openclaw/clawsweeper/actions/runs/30636235447)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30636927582](https://github.com/openclaw/clawsweeper/actions/runs/30636927582)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #114611
 
 ## Summary
 
-Make PR #114611 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+PR #114611 is the open canonical contributor PR and needs a narrow repair before any merge decision. The hydrated artifact shows no security-sensitive signal, but the current docs diff is full-file churn, drops the documented wildcard exception, and fails `check-docs` plus the dependent CI gate.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Make PR #114611 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114611 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #114611 | build_fix_artifact | planned | canonical | Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file churn, then apply the one intended configuration example migration. |
 
 ## Needs Human
 

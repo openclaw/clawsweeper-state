@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-114611",
+  "mode": "autonomous",
+  "run_id": "30636927582",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30636927582",
+  "head_sha": "60ad8788f54555eed573d42b38f25f26b8feb62e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
+  "published_at": "2026-07-31T14:21:59.343Z",
+  "canonical": "#114611",
+  "canonical_issue": null,
+  "canonical_pr": "#114611",
+  "summary": "PR #114611 is the open canonical contributor PR and needs a narrow repair before any merge decision. The hydrated artifact shows no security-sensitive signal, but the current docs diff is full-file churn, drops the documented wildcard exception, and fails `check-docs` plus the dependent CI gate.",
+  "actions": [
+    {
+      "target": "#114611",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114611",
+      "candidate_fix": "#114611",
+      "reason": "Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file churn, then apply the one intended configuration example migration."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
