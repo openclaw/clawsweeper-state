@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:40:28.675Z",
+  "updated_at": "2026-07-31T17:41:11.849Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:50:4826455934:2026-07-31T13:35:59Z:clawsweeper_needs_human",
-      "comment_id": "4826455934",
-      "comment_version_key": "4826455934:2026-07-31T13:35:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/50#issuecomment-4826455934",
-      "comment_created_at": "2026-06-28T14:51:19Z",
-      "comment_updated_at": "2026-07-31T13:35:59Z",
-      "comment_body_sha256": "e6ba84cefcc0d9f474dcba81913c8b2fc0d64817be00bb7e269464535b513f19",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 50,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An operator who opts into an exact version will no longer receive newly published OpenClaw security or compatibility fixes during ordinary converges; advancing requires deliberately c... (sha=d5a5c9bc1c6891a7b912102ca113a2ad6bb13446)",
-      "expected_head_sha": "d5a5c9bc1c6891a7b912102ca113a2ad6bb13446",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:42:10.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/pin-openclaw-version",
-        "head_sha": "d5a5c9bc1c6891a7b912102ca113a2ad6bb13446",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-ansible:50:4826555685:2026-06-28T15:30:00Z:re_review",
       "comment_id": "4826555685",
@@ -31893,6 +31860,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T17:40:28.674Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110568:5010618124:2026-07-31T17:30:43Z:clawsweeper_needs_human",
+      "comment_id": "5010618124",
+      "comment_version_key": "5010618124:2026-07-31T17:30:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110568#issuecomment-5010618124",
+      "comment_created_at": "2026-07-18T08:40:04Z",
+      "comment_updated_at": "2026-07-31T17:30:43Z",
+      "comment_body_sha256": "e20ce82d4e52abd63ae509b6d9c0cf5c5c47f468950caca450ce582a93b8db74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110568,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes Matrix recovery semantics from detached in-memory dispatch to durable, potentially at-least-once replay; a final owner review must confirm every current message-like list... (sha=c62cfe473fe8357f2c75a1f9426d35f59211ab3d)",
+      "expected_head_sha": "c62cfe473fe8357f2c75a1f9426d35f59211ab3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:41:11.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-ingress-durability",
+        "head_sha": "c62cfe473fe8357f2c75a1f9426d35f59211ab3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
