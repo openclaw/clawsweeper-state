@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:52:10.613Z",
+  "updated_at": "2026-07-31T16:52:25.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:79702:4840144216:2026-06-30T05:18:04Z:re_review",
-      "comment_id": "4840144216",
-      "comment_version_key": "4840144216:2026-06-30T05:18:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/79702#issuecomment-4840144216",
-      "comment_created_at": "2026-06-30T05:18:04Z",
-      "comment_updated_at": "2026-06-30T05:18:04Z",
-      "comment_body_sha256": "5cea6d821bdfb37c198fa4a154823051fdd8a9704c218c7fd5c03e1766a7d9ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79702,
-      "author": "kreucher",
-      "author_id": 120417,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:04:36.111Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110582:5056448698:2026-07-23T09:01:07Z:re_review",
       "comment_id": "5056448698",
@@ -31741,6 +31714,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116920:5144747757:2026-07-31T16:48:43Z:clawsweeper_needs_human",
+      "comment_id": "5144747757",
+      "comment_version_key": "5144747757:2026-07-31T16:48:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116920#issuecomment-5144747757",
+      "comment_created_at": "2026-07-31T15:45:49Z",
+      "comment_updated_at": "2026-07-31T16:48:43Z",
+      "comment_body_sha256": "8d651caf4dc598498ca4ad86dfa5122bae708f124f1c44ef06ee1dd728983c6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the credentialed Kova revision before pinning** - The workflow fetches the selected Kova ref and later invokes it in a lane with the release workflow’s OpenAI credential. This pa...; Review finding: [medium] Verify the credentialed Kova revision before pinning — .github/workflows/openclaw-performance.yml:73 (sha=f03c9d9d0f13b7153c0b7b61d0701288c46c2807)",
+      "expected_head_sha": "f03c9d9d0f13b7153c0b7b61d0701288c46c2807",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T16:52:25.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-kova-evaluator-pin-20260731",
+        "head_sha": "f03c9d9d0f13b7153c0b7b61d0701288c46c2807",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
