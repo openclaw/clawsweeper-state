@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T15:04:44.816Z",
+  "updated_at": "2026-07-31T15:07:38.750Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82971:4469628989:2026-07-31T12:04:57Z:clawsweeper_needs_human",
-      "comment_id": "4469628989",
-      "comment_version_key": "4469628989:2026-07-31T12:04:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82971#issuecomment-4469628989",
-      "comment_created_at": "2026-05-17T06:41:15Z",
-      "comment_updated_at": "2026-07-31T12:04:57Z",
-      "comment_body_sha256": "6e70acfcae50e30d14421a65f61cbd72bfe8507026a7c3242aba667d5501a201",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82971,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists mock-oriented tests and formatting but no after-fix output from a real packed release check; add redacted terminal output sho...; Review finding: [low] Verify release-check execution and asset parsing — scripts/openclaw-npm-release-check.ts:644 (sha=e93dd0a4bcaff4eb7dd43e5e8457c39660750442)",
-      "expected_head_sha": "e93dd0a4bcaff4eb7dd43e5e8457c39660750442",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-control-ui-protocol-sync",
-        "head_sha": "e93dd0a4bcaff4eb7dd43e5e8457c39660750442",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83254:4472384133:2026-07-31T12:04:48Z:clawsweeper_needs_human",
       "comment_id": "4472384133",
@@ -32329,6 +32296,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116238:5126848526:2026-07-31T14:59:29Z:clawsweeper_needs_human",
+      "comment_id": "5126848526",
+      "comment_version_key": "5126848526:2026-07-31T14:59:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116238#issuecomment-5126848526",
+      "comment_created_at": "2026-07-30T05:10:09Z",
+      "comment_updated_at": "2026-07-31T14:59:29Z",
+      "comment_body_sha256": "efd3ec8c922fb5402d54f77c7f7d2d8681f42d45d67811ed67c5b12e81beea48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116238,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify provenance survives Codex projection** - The PR uses a host-only response field to keep result provenance outside the Codex protocol payload; without direct inspection of the sib...; Review finding: [medium] Verify provenance survives Codex projection — extensions/codex/src/app-server/dynamic-tool-response-state.ts:34 (sha=82c65610568363faf32cbfe0b19e818e1fef8b49)",
+      "expected_head_sha": "82c65610568363faf32cbfe0b19e818e1fef8b49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T15:07:38.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/taint-external-content-tools",
+        "head_sha": "82c65610568363faf32cbfe0b19e818e1fef8b49",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
