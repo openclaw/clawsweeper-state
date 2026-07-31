@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:15:19.646Z",
+  "updated_at": "2026-07-31T17:15:30.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110803:5012022061:2026-07-31T13:15:54Z:clawsweeper_needs_human",
-      "comment_id": "5012022061",
-      "comment_version_key": "5012022061:2026-07-31T13:15:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110803#issuecomment-5012022061",
-      "comment_created_at": "2026-07-18T16:31:10Z",
-      "comment_updated_at": "2026-07-31T13:15:54Z",
-      "comment_body_sha256": "ed26db651f71951ec9f73b0ba0b63954cd18be56889c056bf3be91bd57d6a295",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Polling changes from inline serial dispatch to the shared ingress drain’s up-to-eight concurrent deliveries across different chats; per-chat ordering is retained, but maintainers shou... (sha=cea05826fe5678e4e60865156ec7cd425cc2994c)",
-      "expected_head_sha": "cea05826fe5678e4e60865156ec7cd425cc2994c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:33:54.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalo-polling-durability",
-        "head_sha": "cea05826fe5678e4e60865156ec7cd425cc2994c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110803:5036380010:2026-07-21T16:17:04Z:re_review",
       "comment_id": "5036380010",
@@ -31675,6 +31642,53 @@
       "status": "skipped",
       "processed_at": "2026-07-31T17:15:19.645Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116768:5145568661:2026-07-31T17:12:57Z:re_review",
+      "comment_id": "5145568661",
+      "comment_version_key": "5145568661:2026-07-31T17:12:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116768#issuecomment-5145568661",
+      "comment_created_at": "2026-07-31T17:12:57Z",
+      "comment_updated_at": "2026-07-31T17:12:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116768,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T17:15:28.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-not-found-model-scoped-cooldown-116464",
+        "head_sha": "9537577486f5c47086242d984ef8273bbce72326",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
