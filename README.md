@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Jul 31, 2026, 14:30 UTC
+Last source update: Jul 31, 2026, 15:30 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Jul 31, 2026, 14:30 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Jul 31, 2026, 14:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30638035294) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Jul 31, 2026, 14:05 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30637067626) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Jul 31, 2026, 15:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30641799065) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Jul 31, 2026, 15:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30641724806) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Jul 31, 2026, 12:11 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30629675886) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Jul 31, 2026, 14:25 UTC
+Last source update: Jul 31, 2026, 15:00 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 253 | 100% |
-| Run attempts archived | 659 | audit |
+| Run attempts archived | 660 | audit |
 | Latest successful clusters | 223 | 88.1% |
 | Latest failed clusters | 30 | 11.9% |
 | Latest cancelled clusters | 0 | 0.0% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 253 clusters: 152 maintainer action, 35 automation snapshot, 50 intervention needed, 16 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#111745](https://github.com/openclaw/openclaw/issues/111745) is maintainer_input: Obtain the sanitized reproduction evidence requested in the July 31, 2026 maintainer comment: effective npm_config values, npm config lis....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98276](https://github.com/openclaw/openclaw/pull/98276) is automation_failed: A narrow artifact-packaging repair is appropriate, but current-main reproduction and implementation cannot be performed in this read-only....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98276](https://github.com/openclaw/openclaw/pull/98276) is automation_failed: The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#114611](https://github.com/openclaw/openclaw/pull/114611) is action_planned: Repair the writable contributor branch rather than replace it: restore the page from the pinned base to remove line-ending/full-file chur....
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98276](https://github.com/openclaw/openclaw/pull/98276) | automation_failed | A narrow artifact-packaging repair is appropriate, but current-main reproduction and implementation cannot be performed in this read-only sandbox. | Jul 31, 2026, 14:25 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30637787939](https://github.com/openclaw/clawsweeper/actions/runs/30637787939) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98276](https://github.com/openclaw/openclaw/pull/98276) | automation_failed | The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency/build out... | Jul 31, 2026, 15:00 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30638412449](https://github.com/openclaw/clawsweeper/actions/runs/30638412449) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, apps [check:changed] apps/a... | Jul 31, 2026, 05:09 UTC | [automerge-openclaw-openclaw-116584](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116584.md) | [30597758157](https://github.com/openclaw/clawsweeper/actions/runs/30597758157) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#106789](https://github.com/openclaw/openclaw/pull/106789) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Jul 30, 2026, 14:05 UTC | [automerge-openclaw-openclaw-106789](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-106789.md) | [30545211875](https://github.com/openclaw/clawsweeper/actions/runs/30545211875) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): validation command left 4 background process(es) after exit | Jul 19, 2026, 16:13 UTC | [automerge-openclaw-openclaw-110725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-110725.md) | [29692504658](https://github.com/openclaw/clawsweeper/actions/runs/29692504658) |
