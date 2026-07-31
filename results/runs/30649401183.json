@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116921",
+  "mode": "plan",
+  "run_id": "30649401183",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30649401183",
+  "head_sha": "197d807562e5a5808a8986e161520eccf76ae8af",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116921.md",
+  "published_at": "2026-07-31T18:00:54.373Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116921",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116921",
+  "canonical_pr": null,
+  "summary": "Issue #116921 remains a narrow, reproducible Control UI bug on current main 5332641ed3bab552d23fb16c67bc697a373ea9d7. A positive openRequest still unconditionally expands the rail, overwriting the explicit persisted off preference and sending visible=true. No implementation PR is hydrated in the preflight artifact, so the canonical path is one new, focused credited fix PR.",
+  "actions": [
+    {
+      "target": "#116921",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116921",
+      "candidate_fix": null,
+      "reason": "The hydrated issue evidence and current source agree on a bounded existing-behavior regression. It needs a new narrow implementation PR; no closure or merge action is permitted by this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116921",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116921",
+      "candidate_fix": null,
+      "reason": "Plan one new fix PR from the prescribed repair branch after first adding and observing the failing hide-to-openRequest regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

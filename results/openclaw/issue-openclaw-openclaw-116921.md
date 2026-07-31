@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-116921"
-mode: "autonomous"
-run_id: "30645123043"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30645123043"
-head_sha: "60ad8788f54555eed573d42b38f25f26b8feb62e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-07-31T16:34:40.871Z"
+mode: "plan"
+run_id: "30649401183"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30649401183"
+head_sha: "197d807562e5a5808a8986e161520eccf76ae8af"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-07-31T18:00:54.373Z"
 canonical: "https://github.com/openclaw/openclaw/issues/116921"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/116921"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30645123043](https://github.com/openclaw/clawsweeper/actions/runs/30645123043)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30649401183](https://github.com/openclaw/clawsweeper/actions/runs/30649401183)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/116921
 
 ## Summary
 
-Confirmed on current main (87d5cb9f674259280a725bf33419d1082f40a7d4): a positive session-rail open request unconditionally calls expand(), changing the persisted explicit "off" preference to "card" and emitting visible=true. The repair is narrow and ready to implement, but this checkout is read-only and lacks installed dependencies, so no branch, regression edit, or validated PR can be produced in this worker environment.
+Issue #116921 remains a narrow, reproducible Control UI bug on current main 5332641ed3bab552d23fb16c67bc697a373ea9d7. A positive openRequest still unconditionally expands the rail, overwriting the explicit persisted off preference and sending visible=true. No implementation PR is hydrated in the preflight artifact, so the canonical path is one new, focused credited fix PR.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed on current main (87d5cb9f674259280a725bf33419d1082f40a7d4): a positive
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116921 | fix_needed | blocked | canonical | Implementation is blocked only by the worker filesystem/dependency environment. The issue remains an open, reproducible canonical bug and should receive the narrow fix artifact below. |
-| cluster:issue-openclaw-openclaw-116921 | build_fix_artifact | planned | canonical | Create one narrow new-fix PR from clawsweeper/issue-openclaw-openclaw-116921 after restoring a writable checkout with dependencies. |
+| #116921 | fix_needed | planned | canonical | The hydrated issue evidence and current source agree on a bounded existing-behavior regression. It needs a new narrow implementation PR; no closure or merge action is permitted by this job. |
+| cluster:issue-openclaw-openclaw-116921 | build_fix_artifact | planned | canonical | Plan one new fix PR from the prescribed repair branch after first adding and observing the failing hide-to-openRequest regression. |
 
 ## Needs Human
 
