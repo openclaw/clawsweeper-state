@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "plan",
+  "run_id": "30649399226",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30649399226",
+  "head_sha": "197d807562e5a5808a8986e161520eccf76ae8af",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T19:10:01.177Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "#98276 is the live canonical non-security packaging bug. The hydrated preflight shows that #98326 is closed, unmerged, uneditable, and unsuitable for revival; its bot review also identified dependency-closure masking that the replacement must avoid. #98274 remains a separate ACP terminal-state report. Plan one narrow credited fix PR after deterministic sync to current main 5332641ed3bab552d23fb16c67bc697a373ea9d7.",
+  "actions": [
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Historical context only; no close action is valid for an already-closed, distinct PR."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related downstream symptom with a separate runtime-contract decision; keep it open independently."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "No viable canonical PR exists. A narrow archive-contract helper and isolated extracted-runtime smoke are appropriate within the job's allowed fix/raise_pr scope."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Closed historical source only; retain evidence and contributor attribution without reopening or closing it again."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Build a replacement fix artifact for one new PR; do not attempt to reuse the closed fork branch."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
