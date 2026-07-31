@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:56:59.039Z",
+  "updated_at": "2026-07-31T17:56:59.834Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90750:4635422441:2026-07-31T13:45:18Z:clawsweeper_needs_human",
-      "comment_id": "4635422441",
-      "comment_version_key": "4635422441:2026-07-31T13:45:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90750#issuecomment-4635422441",
-      "comment_created_at": "2026-06-05T20:49:15Z",
-      "comment_updated_at": "2026-07-31T13:45:18Z",
-      "comment_body_sha256": "932dca73c9ab30efd5a2a19f1d69855c8b1b54b142c946d7c1e655090d0376d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90750,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current branch is dirty against main, so an unreconciled rebase could change session-activity cleanup, recovery classification, or exporter wiring from the reviewed head. (sha=83c3212755ca6fe6e6c93464ad56dab6dd0283fb)",
-      "expected_head_sha": "83c3212755ca6fe6e6c93464ad56dab6dd0283fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:52:45.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/87310-diagnostic-stale-tool-activity",
-        "head_sha": "83c3212755ca6fe6e6c93464ad56dab6dd0283fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92686:4698655881:2026-07-31T13:06:42Z:clawsweeper_needs_human",
       "comment_id": "4698655881",
@@ -32077,6 +32044,53 @@
         "kind": "pull_request",
         "branch": "aris/fix-arcee-openrouter-auth",
         "head_sha": "f8ac6b1ce06ded770ee5325191fbfca274600bab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116944:5145926320:2026-07-31T17:54:35Z:re_review",
+      "comment_id": "5145926320",
+      "comment_version_key": "5145926320:2026-07-31T17:54:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116944#issuecomment-5145926320",
+      "comment_created_at": "2026-07-31T17:54:35Z",
+      "comment_updated_at": "2026-07-31T17:54:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116944,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T17:56:56.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maint/fix-codex-sqlite-continuity-116855",
+        "head_sha": "6697e232b2865b325ac9466c429ca917b25472dd",
         "cluster_id": null,
         "job_path": null
       },
