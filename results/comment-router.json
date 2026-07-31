@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T20:02:05.700Z",
+  "updated_at": "2026-07-31T20:02:08.653Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/tokentally:28:5118517269:2026-07-31T15:43:01Z:clawsweeper_needs_human",
-      "comment_id": "5118517269",
-      "comment_version_key": "5118517269:2026-07-31T15:43:01Z",
-      "comment_url": "https://github.com/steipete/tokentally/pull/28#issuecomment-5118517269",
-      "comment_created_at": "2026-07-29T13:38:22Z",
-      "comment_updated_at": "2026-07-31T15:43:01Z",
-      "comment_body_sha256": "0a9bc3dffaef8ef66079db243f0c757efa143ab16adbdfd082a2f02b1afbf79f",
-      "repo": "steipete/tokentally",
-      "issue_number": 28,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally raises inferred totalTokens for existing cached Anthropic payloads, which can change downstream displays, quotas, or cost aggregates even though the prior value... (sha=ff28b0bbcc403b1c9af6fb135cf27af7b52d8e7c)",
-      "expected_head_sha": "ff28b0bbcc403b1c9af6fb135cf27af7b52d8e7c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:44:03.607Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-cache-token-accounting",
-        "head_sha": "ff28b0bbcc403b1c9af6fb135cf27af7b52d8e7c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116806:5144674437:2026-07-31T15:37:57Z:re_review",
       "comment_id": "5144674437",
@@ -32640,6 +32607,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:56:5146962114:2026-07-31T20:01:23Z:re_review",
+      "comment_id": "5146962114",
+      "comment_version_key": "5146962114:2026-07-31T20:01:23Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/56#issuecomment-5146962114",
+      "comment_created_at": "2026-07-31T20:01:23Z",
+      "comment_updated_at": "2026-07-31T20:01:23Z",
+      "comment_body_sha256": "d1041f0f2102e61bd22bb7aacc6769bbcd8f274f889f43d06b19711e9671122a",
+      "repo": "openclaw/rfcs",
+      "issue_number": 56,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T20:02:06.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claw-project-framework",
+        "head_sha": "f63b48ba389d3e0fcfb7bec8afe3519111c13b39",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
