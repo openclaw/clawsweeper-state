@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the `dist-runtime-build` CI artifact so an extracted archive contains the minimum package-root runtime resources needed by Gateway and ACP, including the launcher/package metadata, runtime templates, and built plugin-runtime layout. Preserve a narrow allowlist; do not archive arbitrary source trees or add runtime fallbacks. Add focused regression coverage for the artifact manifest and an extracted-archive smoke that demonstrates Gateway readiness plus ACP import or startup. Keep the distinct ACP empty-turn behavior out of scope: https://github.com/openclaw/openclaw/issues/98274. Do not edit `CHANGELOG.md`.
+Repair the CI runtime-artifact contract for this issue. Keep the fix at the artifact producer: ensure the archive used by downstream proof contains the canonical workspace template resources required by `src/agents/workspace-templates.ts`, while preserving the current canonical bundled-plugin resolution rather than adding `dist/dist/plugins/runtime` symlinks. Add focused regression coverage that inspects/extracts the runtime archive and proves Gateway/ACP startup can resolve templates and bundled plugin runtime assets without local edits. Read the linked closed source work at https://github.com/openclaw/openclaw/pull/98326 only for context; do not revive its branch. Do not add config, runtime fallbacks, or CHANGELOG.md edits; stop and return to triage if the repair requires a product/API decision.
 
 Likely files:
 
 - .github/workflows/ci.yml
 - test/scripts/ci-workflow-guards.test.ts
-- scripts/lib/workspace-bootstrap-smoke.mjs
 - src/agents/workspace-templates.ts
+- src/agents/workspace-templates.test.ts
+- scripts/runtime-postbuild.mjs
 
 Validation:
 
-- node scripts/run-vitest.mjs test/scripts/ci-workflow-guards.test.ts
+- node scripts/run-vitest.mjs src/agents/workspace-templates.test.ts test/scripts/ci-workflow-guards.test.ts
+- node scripts/run-vitest.mjs test/scripts/runtime-postbuild.test.ts test/scripts/stage-bundled-plugin-runtime.test.ts
 - pnpm build:ci-artifacts
-- Extract `dist-runtime-build.tar.zst` in an isolated temporary directory and prove template resolution, Gateway readiness, and ACP import/startup without copied files or symlinks.
-- git diff --check
+- Extract the produced runtime archive in a clean directory and probe `openclaw.mjs gateway` and `openclaw.mjs acp` far enough to verify template and plugin-runtime resolution without copied files or symlinks.
 
 ## Operator Prompt
 
