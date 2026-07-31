@@ -67,21 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the runtime-artifact closure defect in https://github.com/openclaw/openclaw/issues/98276. On current main, `.github/workflows/ci.yml` archives only `dist`, `dist-runtime`, and `packages/*/dist`, while `src/agents/workspace-templates.ts` resolves `src/agents/templates` from the OpenClaw package root. Keep the repair limited to the artifact manifest and a focused clean-extraction smoke: include the required package-root template resources, validate Gateway/ACP startup/probing from the extracted artifact without files leaking in from the source checkout, and use the canonical `dist-runtime`/`dist` plugin layout rather than adding `dist/dist/plugins/runtime` symlink compatibility. Treat https://github.com/openclaw/openclaw/pull/98326 as prior unmerged context only. Do not add config, runtime fallbacks, or CHANGELOG edits; stop and return to triage if clean extraction requires a new public artifact contract beyond the existing proof artifact.
+Repair the `dist-runtime-build` CI artifact so an extracted archive contains the minimum package-root runtime resources needed by Gateway and ACP, including the launcher/package metadata, runtime templates, and built plugin-runtime layout. Preserve a narrow allowlist; do not archive arbitrary source trees or add runtime fallbacks. Add focused regression coverage for the artifact manifest and an extracted-archive smoke that demonstrates Gateway readiness plus ACP import or startup. Keep the distinct ACP empty-turn behavior out of scope: https://github.com/openclaw/openclaw/issues/98274. Do not edit `CHANGELOG.md`.
 
 Likely files:
 
 - .github/workflows/ci.yml
-- src/agents/workspace-templates.ts
-- src/plugins/plugin-runtime-artifact-resolution.ts
+- test/scripts/ci-workflow-guards.test.ts
 - scripts/lib/workspace-bootstrap-smoke.mjs
+- src/agents/workspace-templates.ts
 
 Validation:
 
-- git diff --check
+- node scripts/run-vitest.mjs test/scripts/ci-workflow-guards.test.ts
 - pnpm build:ci-artifacts
-- Create and extract the CI runtime archive into a clean scratch directory, then run the focused Gateway and ACP startup/probe path without access to the source checkout’s `src/agents/templates` or plugin directories.
-- node scripts/run-vitest.mjs src/plugins/stage-bundled-plugin-runtime.test.ts
+- Extract `dist-runtime-build.tar.zst` in an isolated temporary directory and prove template resolution, Gateway readiness, and ACP import/startup without copied files or symlinks.
+- git diff --check
 
 ## Operator Prompt
 
