@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:37:22.495Z",
+  "updated_at": "2026-07-31T19:38:07.896Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116914:5144595791:2026-07-31T15:29:34Z:clawsweeper_needs_human",
-      "comment_id": "5144595791",
-      "comment_version_key": "5144595791:2026-07-31T15:29:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116914#issuecomment-5144595791",
-      "comment_created_at": "2026-07-31T15:29:34Z",
-      "comment_updated_at": "2026-07-31T15:29:34Z",
-      "comment_body_sha256": "69ff01a400e4e5f2333cf82cfa9247f99ea786f78b62da24f77a35387c249905",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116914,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body asserts exact-head localhost proof, but the supplied context contains no inspectable redacted terminal output, runtime log... (sha=8603a48357241b8cb0692aa5bea16434491776e0)",
-      "expected_head_sha": "8603a48357241b8cb0692aa5bea16434491776e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:35:16.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa200-signal-transport-truth",
-        "head_sha": "8603a48357241b8cb0692aa5bea16434491776e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116912:5144597488:2026-07-31T15:29:45Z:clawsweeper_needs_human",
       "comment_id": "5144597488",
@@ -32518,6 +32485,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T19:37:22.494Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116934:5145086431:2026-07-31T19:27:37Z:clawsweeper_needs_human",
+      "comment_id": "5145086431",
+      "comment_version_key": "5145086431:2026-07-31T19:27:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116934#issuecomment-5145086431",
+      "comment_created_at": "2026-07-31T16:21:53Z",
+      "comment_updated_at": "2026-07-31T19:27:37Z",
+      "comment_body_sha256": "c11c6ff7a9e98d5018c69e2bb868f39866033d7ea7ac22d330c720f93d0e8d5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116934,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - A fixed 24-hour unclean-restart horizon still silently suppresses otherwise legitimate Matrix messages after an outage longer than 24 hours; maintainers need to explicitly accept that... (sha=fef6a7fadadc9725293ade1a66a859e96296ff80)",
+      "expected_head_sha": "fef6a7fadadc9725293ade1a66a859e96296ff80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T19:38:07.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-crash-backlog-loss",
+        "head_sha": "fef6a7fadadc9725293ade1a66a859e96296ff80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
