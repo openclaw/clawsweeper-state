@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:02:07.342Z",
+  "updated_at": "2026-07-31T22:04:15.964Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110568:5010618124:2026-07-31T17:30:43Z:clawsweeper_needs_human",
-      "comment_id": "5010618124",
-      "comment_version_key": "5010618124:2026-07-31T17:30:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110568#issuecomment-5010618124",
-      "comment_created_at": "2026-07-18T08:40:04Z",
-      "comment_updated_at": "2026-07-31T17:30:43Z",
-      "comment_body_sha256": "e20ce82d4e52abd63ae509b6d9c0cf5c5c47f468950caca450ce582a93b8db74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110568,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes Matrix recovery semantics from detached in-memory dispatch to durable, potentially at-least-once replay; a final owner review must confirm every current message-like list... (sha=c62cfe473fe8357f2c75a1f9426d35f59211ab3d)",
-      "expected_head_sha": "c62cfe473fe8357f2c75a1f9426d35f59211ab3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T17:42:38.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-ingress-durability",
-        "head_sha": "c62cfe473fe8357f2c75a1f9426d35f59211ab3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111351:5015268158:2026-07-31T17:31:56Z:clawsweeper_needs_human",
       "comment_id": "5015268158",
@@ -32473,6 +32440,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117008:5146687420:2026-07-31T22:00:09Z:clawsweeper_needs_human",
+      "comment_id": "5146687420",
+      "comment_version_key": "5146687420:2026-07-31T22:00:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117008#issuecomment-5146687420",
+      "comment_created_at": "2026-07-31T19:26:53Z",
+      "comment_updated_at": "2026-07-31T22:00:09Z",
+      "comment_body_sha256": "43346c6c610fa29d27d91e75263433bde9fe83ab25901fc8cc8c6da62fb351e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds public plugin-runtime and blob-store contract surface (getOutboundDeliveryQueueStatus and snapshotPolicy) that external plugins may adopt, so maintainers need to expli... (sha=13f578f81c7027a23c814b4a6ac70f71a68ebc31)",
+      "expected_head_sha": "13f578f81c7027a23c814b4a6ac70f71a68ebc31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T22:04:15.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/116876-matrix-durable-replay",
+        "head_sha": "13f578f81c7027a23c814b4a6ac70f71a68ebc31",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
