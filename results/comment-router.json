@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T13:42:04.922Z",
+  "updated_at": "2026-07-31T13:42:10.310Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:240:5061870219:2026-07-31T02:53:46Z:clawsweeper_auto_repair",
-      "comment_id": "5061870219",
-      "comment_version_key": "5061870219:2026-07-31T02:53:46Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/240#issuecomment-5061870219",
-      "comment_created_at": "2026-07-23T18:19:49Z",
-      "comment_updated_at": "2026-07-31T02:53:46Z",
-      "comment_body_sha256": "1b29e1a27a985d3c477dc224391d6750dbafa429d346b816c1ccbc0fccfdf274",
-      "repo": "openclaw/crabpot",
-      "issue_number": 240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=46f732c9d13afd737f7ad32d3d9af84a2031ea7a)",
-      "expected_head_sha": "46f732c9d13afd737f7ad32d3d9af84a2031ea7a",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-07-31T02:54:43.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/submodules/plugins/clawrouter-788c547",
-        "head_sha": "46f732c9d13afd737f7ad32d3d9af84a2031ea7a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-07-31T02:54:15Z:clawsweeper_auto_repair",
       "comment_id": "5118719513",
@@ -33214,6 +33181,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T13:42:04.922Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:54:4863981862:2026-07-31T13:35:18Z:clawsweeper_needs_human",
+      "comment_id": "4863981862",
+      "comment_version_key": "4863981862:2026-07-31T13:35:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/54#issuecomment-4863981862",
+      "comment_created_at": "2026-07-02T08:58:29Z",
+      "comment_updated_at": "2026-07-31T13:35:18Z",
+      "comment_body_sha256": "6a6d6c4ed53954193f01efe01e4a88554fa1ce5bce0e5976870a6f179e2b4758",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes a Debian NeedsLogin run but provides no inspectable redacted terminal output, logs, recording, or artifact from the current he...; Review finding: [P1] Keep Tailscale SSH opt-in — roles/openclaw/defaults/main.yml:11 - [P2] Reconnect stopped nodes without consuming auth keys — roles/openclaw/tasks/tailscale-li... (sha=e6e50ae1de2bc320109fd93eca27522e429313f4)",
+      "expected_head_sha": "e6e50ae1de2bc320109fd93eca27522e429313f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T13:42:10.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-authkey-auto-connect",
+        "head_sha": "e6e50ae1de2bc320109fd93eca27522e429313f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
