@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T21:29:35.851Z",
+  "updated_at": "2026-07-31T21:31:17.632Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116768:5145568661:2026-07-31T17:12:57Z:re_review",
-      "comment_id": "5145568661",
-      "comment_version_key": "5145568661:2026-07-31T17:12:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116768#issuecomment-5145568661",
-      "comment_created_at": "2026-07-31T17:12:57Z",
-      "comment_updated_at": "2026-07-31T17:12:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116768,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T17:15:28.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-not-found-model-scoped-cooldown-116464",
-        "head_sha": "9537577486f5c47086242d984ef8273bbce72326",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116794:5142320482:2026-07-31T17:13:29Z:clawsweeper_needs_human",
       "comment_id": "5142320482",
@@ -32453,6 +32406,39 @@
         "kind": "pull_request",
         "branch": "codex/qa300-cron-lazy-owner",
         "head_sha": "9d07dff959b4615c024d7cd36ba1b9a99d3c24d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117002:5146648253:2026-07-31T21:22:14Z:clawsweeper_needs_human",
+      "comment_id": "5146648253",
+      "comment_version_key": "5146648253:2026-07-31T21:22:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117002#issuecomment-5146648253",
+      "comment_created_at": "2026-07-31T19:22:07Z",
+      "comment_updated_at": "2026-07-31T21:22:14Z",
+      "comment_body_sha256": "1329bb4741d27878451fecbd192f47b3fea72ffb7d06a6745e92f3f6ce9b0f7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes real shell probes but supplies no inspectable redacted terminal output, recording, log, or linked artifact from the current he... (sha=0dc3f2bc51e93a215ffc6d2ac88d08e496169def)",
+      "expected_head_sha": "0dc3f2bc51e93a215ffc6d2ac88d08e496169def",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T21:31:17.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/wave3-cli-shell-profile-owner",
+        "head_sha": "0dc3f2bc51e93a215ffc6d2ac88d08e496169def",
         "cluster_id": null,
         "job_path": null
       }
