@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T21:26:44.161Z",
+  "updated_at": "2026-07-31T21:27:12.306Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105125:4950562964:2026-07-12T08:42:13Z:re_review",
-      "comment_id": "4950562964",
-      "comment_version_key": "4950562964:2026-07-12T08:42:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105125#issuecomment-4950562964",
-      "comment_created_at": "2026-07-12T08:42:13Z",
-      "comment_updated_at": "2026-07-12T08:42:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105125,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T17:14:55.882Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103688:4935755098:2026-07-31T17:11:47Z:clawsweeper_needs_human",
       "comment_id": "4935755098",
@@ -32399,6 +32372,39 @@
         "head_sha": "9a800410165eec5826bdaa39f9d7b35bf9dac877",
         "cluster_id": "automerge-openclaw-openclaw-116976",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117033:5147295175:2026-07-31T21:16:01Z:clawsweeper_needs_human",
+      "comment_id": "5147295175",
+      "comment_version_key": "5147295175:2026-07-31T21:16:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117033#issuecomment-5147295175",
+      "comment_created_at": "2026-07-31T20:44:04Z",
+      "comment_updated_at": "2026-07-31T21:16:01Z",
+      "comment_body_sha256": "9eee006b6114e254ecb950c1ae6114c7b1e9cae10ce90823bae3e53dea876d37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify Teams SDK auth precedence on the reviewed head** - This change supplies skipAuth, an empty client secret, a token callback, and a custom client. The intended prevention of ambien...; Review finding: [medium] Verify Teams SDK auth precedence on the reviewed head — extensions/msteams/src/sdk.ts:274 (sha=c7830497da90cf07a409d3014fe354bd95ae9143)",
+      "expected_head_sha": "c7830497da90cf07a409d3014fe354bd95ae9143",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T21:27:12.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/msteams-private-qa-loopback",
+        "head_sha": "c7830497da90cf07a409d3014fe354bd95ae9143",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
