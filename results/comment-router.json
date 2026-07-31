@@ -1,47 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:01:46.768Z",
+  "updated_at": "2026-07-31T22:02:07.342Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110131:5006350427:2026-07-31T17:30:09Z:autoclose",
-      "comment_id": "5006350427",
-      "comment_version_key": "5006350427:2026-07-31T17:30:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110131#issuecomment-5006350427",
-      "comment_created_at": "2026-07-17T18:31:43Z",
-      "comment_updated_at": "2026-07-31T17:30:09Z",
-      "comment_body_sha256": "d25b5b8307f91c0611cb3eac9a7fbffaf8943e2b1931d34ff4182a049081225c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=d316995290a28c3a60c6993121313aa12d3428d8)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=d316995290a28c3a60c6993121313aa12d3428d8)",
-      "expected_head_sha": "d316995290a28c3a60c6993121313aa12d3428d8",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T17:42:38.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-usage-csv-formula-boundary",
-        "head_sha": "d316995290a28c3a60c6993121313aa12d3428d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110568:5010618124:2026-07-31T17:30:43Z:clawsweeper_needs_human",
       "comment_id": "5010618124",
@@ -32469,6 +32428,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114690:5097999745:2026-07-27T23:28:46Z:re_review",
+      "comment_id": "5097999745",
+      "comment_version_key": "5097999745:2026-07-27T23:28:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/114690#issuecomment-5097999745",
+      "comment_created_at": "2026-07-27T23:28:46Z",
+      "comment_updated_at": "2026-07-27T23:28:46Z",
+      "comment_body_sha256": "28646ac236272bfe199e82542f39ce0eb45a3e425f5e6f37d270867697893701",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114690,
+      "author": "WG-Mojo",
+      "author_id": 24610819,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T22:02:05.554Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
