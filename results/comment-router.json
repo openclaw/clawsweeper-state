@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T12:45:09.859Z",
+  "updated_at": "2026-07-31T12:45:11.602Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116563:5136435002:2026-07-30T21:26:42Z:clawsweeper_needs_human",
-      "comment_id": "5136435002",
-      "comment_version_key": "5136435002:2026-07-30T21:26:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116563#issuecomment-5136435002",
-      "comment_created_at": "2026-07-30T21:26:42Z",
-      "comment_updated_at": "2026-07-30T21:26:42Z",
-      "comment_body_sha256": "e2d7578a4d15ea474e4b68a607c2f6c6733ed7131a0a5894b15a3904c2ca5bc2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116563,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally turns previously forwarded malformed token caps into 400 invalid_request_error; existing clients that relied on zero, fractional, or otherwise malformed values will... (sha=8723503bbfff6cc69c247f8600e4072cf84213b6)",
-      "expected_head_sha": "8723503bbfff6cc69c247f8600e4072cf84213b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-30T23:45:14.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-chat-token-caps-207-20260730",
-        "head_sha": "8723503bbfff6cc69c247f8600e4072cf84213b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116559:5136616017:2026-07-30T21:48:49Z:re_review",
       "comment_id": "5136616017",
@@ -33017,6 +32984,53 @@
         "kind": "pull_request",
         "branch": "agent/fix-process-owned-maintenance-reconciliation",
         "head_sha": "5f23808be498d2de020a925f7bcd1b9b0bb751ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112828:5142983234:2026-07-31T12:43:49Z:re_review",
+      "comment_id": "5142983234",
+      "comment_version_key": "5142983234:2026-07-31T12:43:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112828#issuecomment-5142983234",
+      "comment_created_at": "2026-07-31T12:43:49Z",
+      "comment_updated_at": "2026-07-31T12:43:49Z",
+      "comment_body_sha256": "a3185d9af96774a7b8ce798a02a6cec76d6390366b4427fd4ee9addb3acf1ffe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112828,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T12:45:07.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claws-pr16-control-ui-lifecycle",
+        "head_sha": "70ccab046fab5358a6102993a974bee7e5656814",
         "cluster_id": null,
         "job_path": null
       },
