@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T18:05:34.474Z",
+  "updated_at": "2026-07-31T18:05:39.688Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102101:4912494172:2026-07-31T13:28:31Z:clawsweeper_needs_human",
-      "comment_id": "4912494172",
-      "comment_version_key": "4912494172:2026-07-31T13:28:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102101#issuecomment-4912494172",
-      "comment_created_at": "2026-07-08T07:40:30Z",
-      "comment_updated_at": "2026-07-31T13:28:31Z",
-      "comment_body_sha256": "a78b46a66f1f7c77bdd136f7e78dfa9fd418ef7f7cc8e8478f4f92220790a7f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102101,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes useful redacted live output showing the intended backend allow and HTTP deny behavior, but it is explicitly from older...; Review finding: [medium] Confirm authority-minting callers remain server-owned — src/gateway/server-plugins.ts:362 (sha=692246d6aea50c89432d2b94ab0088e134e27717)",
-      "expected_head_sha": "692246d6aea50c89432d2b94ab0088e134e27717",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:52:45.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/plugin-subagent-backend-override-auth",
-        "head_sha": "692246d6aea50c89432d2b94ab0088e134e27717",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102116:4912875057:2026-07-31T13:27:07Z:clawsweeper_needs_human",
       "comment_id": "4912875057",
@@ -32135,6 +32102,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:979:5146015751:2026-07-31T18:04:52Z:re_review",
+      "comment_id": "5146015751",
+      "comment_version_key": "5146015751:2026-07-31T18:04:52Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/979#issuecomment-5146015751",
+      "comment_created_at": "2026-07-31T18:04:52Z",
+      "comment_updated_at": "2026-07-31T18:04:52Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 979,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T18:05:37.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-modular-entrypoint",
+        "head_sha": "abc389bcca75f3c03abef29fa1ca72b5556ce176",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
