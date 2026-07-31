@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30670168432",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30670168432",
+  "head_sha": "54b6b7c4f2336e9c06255e5c45be9d0d87a7d7d2",
+  "workflow_conclusion": "cancelled",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T22:50:10.683Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "Current main `d92d68ac7766a5b5f33606f77872daf9f0fbe144` still archives only build-output directories, while runtime template and bundled-plugin lookup require package-root resources. The bounded bug remains valid; plan one new credited fix PR with a self-contained extracted-archive smoke that does not borrow checkout dependencies.",
+  "actions": [
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "The canonical issue remains reproducible on current main by the archive producer and its runtime consumers; no viable open implementation PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and executable by the deterministic PR applicator; this worker returns the artifact only."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Same proof pipeline, but a distinct Gateway/ACP behavior and not a safe one-sided automation change."
+    },
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context only; no close, merge, or repair action applies."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Closed historical source PR; it cannot be merged or closed again, but its approach and contributor credit carry forward."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
