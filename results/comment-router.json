@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T15:24:42.113Z",
+  "updated_at": "2026-07-31T15:24:47.997Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100845:4892325274:2026-07-31T12:07:29Z:clawsweeper_needs_human",
-      "comment_id": "4892325274",
-      "comment_version_key": "4892325274:2026-07-31T12:07:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100845#issuecomment-4892325274",
-      "comment_created_at": "2026-07-06T11:36:29Z",
-      "comment_updated_at": "2026-07-31T12:07:29Z",
-      "comment_body_sha256": "45ba562b055155f7faf428990a5766ef485bb5cf2915802c3948cb948f6fbeaf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100845,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The branch is currently dirty against current main, so its fallback integration and checks must be refreshed on a resolved merge result before landing. (sha=bcc5cd706d920ece6c247aa54fc1313d14bf35f0)",
-      "expected_head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T12:27:29.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oneshot-local-otel-export",
-        "head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
-        "cluster_id": "automerge-openclaw-openclaw-100845",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100906:4893551888:2026-07-31T11:46:22Z:clawsweeper_needs_human",
       "comment_id": "4893551888",
@@ -32226,6 +32179,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/nemoclaw-fa96c91",
         "head_sha": "22b1f259703c1f468e8a50f278b6fcbcae3eed37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112652:5143629155:2026-07-31T15:21:44Z:clawsweeper_needs_human",
+      "comment_id": "5143629155",
+      "comment_version_key": "5143629155:2026-07-31T15:21:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112652#issuecomment-5143629155",
+      "comment_created_at": "2026-07-31T13:53:45Z",
+      "comment_updated_at": "2026-07-31T15:21:44Z",
+      "comment_body_sha256": "fe951133653f9c775645c98de9ff8804cd72da3dda299f844f6606503beef666",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112652,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The provided body reports a focused mocked test and static checks, but no after-fix redacted runtime output demonstrating that a whitespace-sep...; Review finding: [medium] Confirm the OAuth proxy-bypass boundary — extensions/googlechat/src/google-auth.runtime.ts:151 (sha=e8b6a7a3e36480ab4d606324e1584574c988806e)",
+      "expected_head_sha": "e8b6a7a3e36480ab4d606324e1584574c988806e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T15:24:47.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/googlechat-no-proxy-whitespace",
+        "head_sha": "e8b6a7a3e36480ab4d606324e1584574c988806e",
         "cluster_id": null,
         "job_path": null
       }
