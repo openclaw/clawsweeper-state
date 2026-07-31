@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T14:40:32.856Z",
+  "updated_at": "2026-07-31T14:41:01.542Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116650:5139195803:2026-07-31T04:15:15Z:clawsweeper_needs_human",
-      "comment_id": "5139195803",
-      "comment_version_key": "5139195803:2026-07-31T04:15:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116650#issuecomment-5139195803",
-      "comment_created_at": "2026-07-31T04:15:15Z",
-      "comment_updated_at": "2026-07-31T04:15:15Z",
-      "comment_body_sha256": "2686209e1c2448009543326a14f8710dac34493cc4f485ec43f19dd3254b8716",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116650,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and checks report focused Testbox suites and CI, but the supplied review context contains no inspectable redacted after-fix runtime... (sha=1d7f04c52912b992830e79a88dd96dd68f4ea808)",
-      "expected_head_sha": "1d7f04c52912b992830e79a88dd96dd68f4ea808",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T05:25:33.767Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openclaw-runtime-isolation-20260730",
-        "head_sha": "1d7f04c52912b992830e79a88dd96dd68f4ea808",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116652:5139198738:2026-07-31T04:15:46Z:clawsweeper_needs_human",
       "comment_id": "5139198738",
@@ -32378,6 +32345,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116855:5144069597:2026-07-31T14:38:54Z:re_review",
+      "comment_id": "5144069597",
+      "comment_version_key": "5144069597:2026-07-31T14:38:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116855#issuecomment-5144069597",
+      "comment_created_at": "2026-07-31T14:38:54Z",
+      "comment_updated_at": "2026-07-31T14:38:54Z",
+      "comment_body_sha256": "77e23eb4d76f26f63d8ddb542612249338bdc5d4313fa38ee04737ae977e452a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116855,
+      "author": "calinilie",
+      "author_id": 1901567,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T14:40:58.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/upstream-codex-canonical-sqlite-final-re-20260731130410-d04971",
+        "head_sha": "3f2dfbd61043bce94b56fbc4f797a5ce5a0e7007",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
