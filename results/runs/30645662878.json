@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30645662878",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30645662878",
+  "head_sha": "a9a84aeb1a1f70aa1b4effb0b4d108b51685e204",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T16:24:53.160Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "#98276 remains the canonical reproducible non-security runtime-artifact packaging bug on preflight main 184c13d01ced6d89fd4f166564f6fa2c2dd43a87. No viable PR is open: #98326 is closed, unmergeable, fork-owned, and its hydrated bot review identified checkout dependency masking that the replacement smoke must avoid. Plan one narrow new fix PR; keep #98274 open as a distinct ACP terminal-state problem and treat closed refs only as historical evidence.",
+  "actions": [
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no closure action is valid."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related downstream symptom with distinct root cause and scope."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "A narrow artifact contract and extracted-runtime smoke are justified; executor should create the new fix PR after its deterministic base sync."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Useful historical direction only; preserve credit without reusing the closed fork branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "No viable canonical PR exists; a new credited fix PR is allowed and executable."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
