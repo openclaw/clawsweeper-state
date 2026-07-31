@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
 mode: "autonomous"
-run_id: "30670168432"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30670168432"
-head_sha: "54b6b7c4f2336e9c06255e5c45be9d0d87a7d7d2"
-workflow_conclusion: "cancelled"
-result_status: "planned"
-published_at: "2026-07-31T22:50:10.683Z"
+run_id: "30670627735"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30670627735"
+head_sha: "f0f71871e3f98bf1875c6ec6f89d14c75629aa6a"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-07-31T23:00:57.569Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30670168432](https://github.com/openclaw/clawsweeper/actions/runs/30670168432)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30670627735](https://github.com/openclaw/clawsweeper/actions/runs/30670627735)
 
-Workflow conclusion: cancelled
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-Current main `d92d68ac7766a5b5f33606f77872daf9f0fbe144` still archives only build-output directories, while runtime template and bundled-plugin lookup require package-root resources. The bounded bug remains valid; plan one new credited fix PR with a self-contained extracted-archive smoke that does not borrow checkout dependencies.
+The canonical packaging defect remains planned for a narrow replacement PR, but this retry is running in a read-only checkout and cannot create the required three-file repair or execute the archive proof. No GitHub mutation is proposed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main `d92d68ac7766a5b5f33606f77872daf9f0fbe144` still archives only buil
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98276 | fix_needed | planned | canonical | The canonical issue remains reproducible on current main by the archive producer and its runtime consumers; no viable open implementation PR is hydrated. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | The repair is narrow and executable by the deterministic PR applicator; this worker returns the artifact only. |
-| #98274 | keep_related | planned | related | Same proof pipeline, but a distinct Gateway/ACP behavior and not a safe one-sided automation change. |
-| #97916 | keep_closed | skipped | independent | Closed context only; no close, merge, or repair action applies. |
-| #98326 | keep_closed | skipped | related | Closed historical source PR; it cannot be merged or closed again, but its approach and contributor credit carry forward. |
+| #98276 | fix_needed | planned | canonical | No viable open PR exists, and the issue is a bounded current-main packaging defect. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | blocked | canonical | Implementation requires a writable repair checkout; the deterministic applicator can replay this exact artifact there. |
+| #98274 | keep_related | planned | related | Related proof path but a separate root cause. |
+| #97916 | keep_closed | skipped | independent | Already closed; no mutation applies. |
+| #98326 | keep_closed | skipped | related | Closed historical source work only; it cannot be updated or closed again. |
 
 ## Needs Human
 
