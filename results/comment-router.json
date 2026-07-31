@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T21:20:40.971Z",
+  "updated_at": "2026-07-31T21:21:03.013Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116963:5145500527:2026-07-31T17:05:43Z:re_review",
-      "comment_id": "5145500527",
-      "comment_version_key": "5145500527:2026-07-31T17:05:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116963#issuecomment-5145500527",
-      "comment_created_at": "2026-07-31T17:05:43Z",
-      "comment_updated_at": "2026-07-31T17:05:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116963,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T17:10:55.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/issue-109527-live-20260731",
-        "head_sha": "9563734c4b7970d1785a687ea9751ee1c92c2750",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116807:5142566942:2026-07-31T17:08:30Z:clawsweeper_needs_human",
       "comment_id": "5142566942",
@@ -32401,6 +32354,39 @@
         "kind": "pull_request",
         "branch": "jesse/prepare-sdk-packages",
         "head_sha": "6a16813a3ca6fbfa8063acfcb99309b963935138",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114725:5096171515:2026-07-31T21:15:19Z:clawsweeper_needs_human",
+      "comment_id": "5096171515",
+      "comment_version_key": "5096171515:2026-07-31T21:15:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114725#issuecomment-5096171515",
+      "comment_created_at": "2026-07-27T20:00:04Z",
+      "comment_updated_at": "2026-07-31T21:15:19Z",
+      "comment_body_sha256": "9f42ae6d614222e27f24bcd60ce087f16ecec58471d8e63d91f34914fb1d8b8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal snippets show intended SQL shapes, but not an after-fix openclaw doctor --fix invocation followed by a successful operati...; Review finding: [P1] Read legacy claims only after acquiring the write lock — extensions/workboard/doctor-contract-api.ts:359 - [medium] Stale migration write can replace claim au... (sha=7f4a16857e3caa2032e1165f77e0ae2ff3e5cfeb)",
+      "expected_head_sha": "7f4a16857e3caa2032e1165f77e0ae2ff3e5cfeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T21:21:03.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-legacy-claim",
+        "head_sha": "7f4a16857e3caa2032e1165f77e0ae2ff3e5cfeb",
         "cluster_id": null,
         "job_path": null
       }
