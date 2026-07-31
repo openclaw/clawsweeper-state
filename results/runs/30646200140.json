@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-90786",
+  "mode": "autonomous",
+  "run_id": "30646200140",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30646200140",
+  "head_sha": "60ad8788f54555eed573d42b38f25f26b8feb62e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
+  "published_at": "2026-07-31T16:21:28.060Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/90786",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/90786",
+  "canonical_pr": null,
+  "summary": "#90786 remains a narrow, reproducible resolver regression on the checkout's current origin/main (`b186d81c46d4cd7074589cf1a9fde5a9a4c0e52f`): the Google plugin declares its memory adapter as `id: \"gemini\"` with `authProviderId: \"google\"`, while the runtime only tries exact/configured lookup ids. A new credited fix PR is appropriate, but this worker cannot modify the read-only checkout or install missing dependencies to run the required focused tests. The preflight main SHA (`79f3474836be71b8c5c7e5bb50b9ecab5981a595`) is not present locally; the executor must rebase/reverify against live main before applying the artifact.",
+  "actions": [
+    {
+      "target": "#90786",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#90786",
+      "candidate_fix": null,
+      "reason": "The defect is clear and bounded, but implementation and validation are blocked solely by the read-only, dependency-free worker checkout."
+    },
+    {
+      "target": "#90787",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90787",
+      "candidate_fix": null,
+      "reason": "Related Google-memory upgrade context, but it has a distinct provider-default and migration decision."
+    },
+    {
+      "target": "#90801",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90801",
+      "candidate_fix": null,
+      "reason": "Related memory-health report with different runtime behavior and no overlap with the narrow adapter-resolution fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-90786",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#90786",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow, new fix PR once the executor has a writable checkout and dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
