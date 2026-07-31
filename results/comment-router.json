@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:57:44.210Z",
+  "updated_at": "2026-07-31T16:57:47.943Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108588:4989880729:2026-07-31T12:48:38Z:clawsweeper_needs_human",
-      "comment_id": "4989880729",
-      "comment_version_key": "4989880729:2026-07-31T12:48:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108588#issuecomment-4989880729",
-      "comment_created_at": "2026-07-16T08:42:45Z",
-      "comment_updated_at": "2026-07-31T12:48:38Z",
-      "comment_body_sha256": "e82f29cb371bdc007c1ceb216e32950d8e5b4b63b4ddc7290ceb85398c437ec6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108588,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides formatter unit tests but no after-fix Feishu run showing a truncated upload, persisted durable reference, and successful follow...; Review finding: [P1] Use the canonical structured media path — extensions/feishu/src/bot-agent-body.ts:25-39 - [medium] Avoid persisting shared inbound paths as a second authority... (sha=54bf476b3398f642fbf670528489fddb05b41766)",
-      "expected_head_sha": "54bf476b3398f642fbf670528489fddb05b41766",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:09:27.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-108534",
-        "head_sha": "54bf476b3398f642fbf670528489fddb05b41766",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109619:4998850159:2026-07-31T12:37:30Z:clawsweeper_auto_repair",
       "comment_id": "4998850159",
@@ -31729,6 +31696,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116805:5142577065:2026-07-31T16:47:01Z:clawsweeper_needs_human",
+      "comment_id": "5142577065",
+      "comment_version_key": "5142577065:2026-07-31T16:47:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116805#issuecomment-5142577065",
+      "comment_created_at": "2026-07-31T11:53:10Z",
+      "comment_updated_at": "2026-07-31T16:47:01Z",
+      "comment_body_sha256": "21c6473393ffe33e2bde91fdd5a67018e9bb63728599a94d10f2007291d20bb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scheduler and runtime metrics will retain a stable sha256: bucket label rather than Discord’s raw opaque bucket identifier. This is an intentional secrecy boundary and keeps group... (sha=0cc4e400157dc2a8352819587a1a3d6ab9333ec1)",
+      "expected_head_sha": "0cc4e400157dc2a8352819587a1a3d6ab9333ec1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T16:57:47.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t24-05-discord-error-redaction",
+        "head_sha": "0cc4e400157dc2a8352819587a1a3d6ab9333ec1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
