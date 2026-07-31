@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T18:21:09.245Z",
+  "updated_at": "2026-07-31T18:21:22.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
-      "comment_id": "5057166130",
-      "comment_version_key": "5057166130:2026-07-23T10:08:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5057166130",
-      "comment_created_at": "2026-07-23T10:08:25Z",
-      "comment_updated_at": "2026-07-23T10:08:25Z",
-      "comment_body_sha256": "dda4098b018fa52157ac153235755207126f16e6b33d4ef033c6c7b31eed9477",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head d477eb9333. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T14:40:07.699Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
       "comment_id": "5060665917",
@@ -32176,6 +32149,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T18:21:09.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115545:5118018616:2026-07-31T18:18:11Z:clawsweeper_needs_human",
+      "comment_id": "5118018616",
+      "comment_version_key": "5118018616:2026-07-31T18:18:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115545#issuecomment-5118018616",
+      "comment_created_at": "2026-07-29T12:54:15Z",
+      "comment_updated_at": "2026-07-31T18:18:11Z",
+      "comment_body_sha256": "f6788c48d4cb9450b364f987d2e59aeb7856bfd97e55d4a835151ba9534bb590",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115545,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Bind credentials before the initial model-selected request** - The proposed contract allows Authorization, Cookie, and equivalent configured values on the initial direct request, but th...; Review finding: [high] Bind credentials before the initial model-selected request — src/agents/tools/web-fetch.ts:203 (sha=bc0e4a76a5b25d0ade6a20ca5bd79daac12321c1)",
+      "expected_head_sha": "bc0e4a76a5b25d0ade6a20ca5bd79daac12321c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T18:21:22.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse-merhi/web-fetch-headers",
+        "head_sha": "bc0e4a76a5b25d0ade6a20ca5bd79daac12321c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
