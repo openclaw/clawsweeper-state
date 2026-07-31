@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:43:59.361Z",
+  "updated_at": "2026-07-31T17:44:04.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-07-31T13:13:17Z:clawsweeper_auto_repair",
-      "comment_id": "4591541970",
-      "comment_version_key": "4591541970:2026-07-31T13:13:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4591541970",
-      "comment_created_at": "2026-06-01T10:02:20Z",
-      "comment_updated_at": "2026-07-31T13:13:17Z",
-      "comment_body_sha256": "723227b24dfb74876317292309bd92b9d5fa129aed34098792b724eca9419d2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fcab52c6f9d27b8800ce7b19cb994966c6e9e134)",
-      "expected_head_sha": "fcab52c6f9d27b8800ce7b19cb994966c6e9e134",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:52:45.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "fcab52c6f9d27b8800ce7b19cb994966c6e9e134",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89395:4600731101:2026-07-31T13:43:19Z:clawsweeper_auto_repair",
       "comment_id": "4600731101",
@@ -32105,6 +32072,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108388:4989729867:2026-07-31T17:39:32Z:clawsweeper_needs_human",
+      "comment_id": "4989729867",
+      "comment_version_key": "4989729867:2026-07-31T17:39:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108388#issuecomment-4989729867",
+      "comment_created_at": "2026-07-16T08:24:11Z",
+      "comment_updated_at": "2026-07-31T17:39:32Z",
+      "comment_body_sha256": "9c4f58523b7c8f035660001404725b79b9eac0d0fc61598c211b937b31055200",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted terminal transcript shows useful after-fix helper and consumer-path behavior, but it cannot substitute for the direct Cod...; Review finding: [medium] Verify the Codex command contract before relaxing replay safety — extensions/codex/src/app-server/event-projector-items.ts:165 (sha=5cd3b7c099fc47b37ea974534404cf519ff8192a)",
+      "expected_head_sha": "5cd3b7c099fc47b37ea974534404cf519ff8192a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:44:04.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/101890-readonly-shell-replay-safe",
+        "head_sha": "5cd3b7c099fc47b37ea974534404cf519ff8192a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
