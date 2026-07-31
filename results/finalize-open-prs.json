@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-07-31T20:28:16.034Z",
+  "generated_at": "2026-07-31T21:00:45.154Z",
   "count": 1,
   "summary": {
     "open_prs": 1,
@@ -31,23 +31,26 @@
       "title": "docs: replace retired hostnameAllowlist in browser-control example",
       "url": "https://github.com/openclaw/openclaw/pull/116976",
       "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-      "head_sha": "52225bc33655ab2f1bd5e66a0881bd10cc1edae0",
+      "head_sha": "fbd13dee2dfd77da1ee12261825c17ed9ab2079e",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-07-31T20:27:31Z",
+      "updated_at": "2026-07-31T20:53:08Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 48,
+        "total": 63,
         "counts": {
-          "CANCELLED": 1,
-          "SUCCESS": 17,
-          "SKIPPED": 30
+          "CANCELLED": 8,
+          "SKIPPED": 35,
+          "SUCCESS": 20
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -74,24 +77,30 @@
         ]
       },
       "latest_record": {
-        "run_id": "30661164505",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30661164505",
+        "run_id": "30662933248",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30662933248",
         "cluster_id": "automerge-openclaw-openclaw-116976",
-        "published_at": "2026-07-31T20:28:13.422Z",
+        "published_at": "2026-07-31T21:00:42.367Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#116976",
-          "action": "keep_canonical",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#116976",
-          "candidate_fix": "#116976",
-          "reason": "The canonical replacement is already merge-ready under the hydrated exact-head evidence. Direct merge is blocked by job frontmatter and remains with the deterministic automerge gate."
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "docs: replace retired hostnameAllowlist in browser-control example",
+          "idempotency_key": null,
+          "reason": "job does not allow merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
