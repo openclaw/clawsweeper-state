@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
 mode: "autonomous"
-run_id: "30670627735"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30670627735"
+run_id: "30672941818"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30672941818"
 head_sha: "f0f71871e3f98bf1875c6ec6f89d14c75629aa6a"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-07-31T23:00:57.569Z"
+result_status: "planned"
+published_at: "2026-07-31T23:43:59.288Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30670627735](https://github.com/openclaw/clawsweeper/actions/runs/30670627735)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30672941818](https://github.com/openclaw/clawsweeper/actions/runs/30672941818)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-The canonical packaging defect remains planned for a narrow replacement PR, but this retry is running in a read-only checkout and cannot create the required three-file repair or execute the archive proof. No GitHub mutation is proposed.
+Current main at 95e097246b1a9b7f6becd211657ddccca16b749a still packs dist-runtime-build.tar.zst from only dist, dist-runtime, and packages/*/dist, while workspace template discovery requires package-root resources. #98276 remains a narrow, non-security CI artifact defect. Plan a credited new fix PR; #98274 remains a distinct ACP behavior follow-up.
 
 ## Impact
 
@@ -66,11 +66,11 @@ The canonical packaging defect remains planned for a narrow replacement PR, but 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98276 | fix_needed | planned | canonical | No viable open PR exists, and the issue is a bounded current-main packaging defect. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | blocked | canonical | Implementation requires a writable repair checkout; the deterministic applicator can replay this exact artifact there. |
-| #98274 | keep_related | planned | related | Related proof path but a separate root cause. |
-| #97916 | keep_closed | skipped | independent | Already closed; no mutation applies. |
-| #98326 | keep_closed | skipped | related | Closed historical source work only; it cannot be updated or closed again. |
+| #97916 | keep_closed | skipped | related | Already closed historical context; no mutation is valid. |
+| #98274 | keep_related | planned | related | Related downstream symptom family with a distinct root cause and maintainer decision. |
+| #98276 | fix_needed | planned | canonical | Current main still reproduces the artifact manifest gap, and the bounded repair is allowed by the job. |
+| #98326 | keep_closed | skipped | superseded | Already closed historical contributor PR; no closure or branch mutation is valid. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | A focused new fix PR is appropriate and allowed. |
 
 ## Needs Human
 
