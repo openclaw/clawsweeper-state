@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:45:29.799Z",
+  "updated_at": "2026-07-31T22:45:33.882Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116314:5146830370:2026-07-31T19:45:35Z:re_review",
-      "comment_id": "5146830370",
-      "comment_version_key": "5146830370:2026-07-31T19:45:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116314#issuecomment-5146830370",
-      "comment_created_at": "2026-07-31T19:45:35Z",
-      "comment_updated_at": "2026-07-31T19:45:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116314,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T19:53:03.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/relocated-install-host-service-management",
-        "head_sha": "2c29ace310872fa0599c0a68747fecb20e4a99e3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/rfcs:48:5058512606:2026-07-23T12:43:15Z:re_review",
       "comment_id": "5058512606",
@@ -31268,6 +31221,39 @@
         "kind": "pull_request",
         "branch": "session-status-presentation",
         "head_sha": "dfc152c16483bb9fa06a3a48aabc47fabc60fce8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:67:5093442392:2026-07-31T22:44:17Z:clawsweeper_auto_repair",
+      "comment_id": "5093442392",
+      "comment_version_key": "5093442392:2026-07-31T22:44:17Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/67#issuecomment-5093442392",
+      "comment_created_at": "2026-07-27T15:40:52Z",
+      "comment_updated_at": "2026-07-31T22:44:17Z",
+      "comment_body_sha256": "c8f93cd41763318f5dd880dc90c9a8c20e10c96f80cd787b250c168f59cf5ef3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 67,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c47b4e59718f1eacd2b26645a3445d02c80b372d)",
+      "expected_head_sha": "c47b4e59718f1eacd2b26645a3445d02c80b372d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T22:45:33.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-reserved-basenames",
+        "head_sha": "c47b4e59718f1eacd2b26645a3445d02c80b372d",
         "cluster_id": null,
         "job_path": null
       }
