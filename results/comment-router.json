@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:03:26.166Z",
+  "updated_at": "2026-07-31T17:05:30.330Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101624:4903584443:2026-07-31T12:26:43Z:clawsweeper_needs_human",
-      "comment_id": "4903584443",
-      "comment_version_key": "4903584443:2026-07-31T12:26:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101624#issuecomment-4903584443",
-      "comment_created_at": "2026-07-07T12:05:05Z",
-      "comment_updated_at": "2026-07-31T12:26:43Z",
-      "comment_body_sha256": "623d014497a71092ee0cbd8e88cda8a089d02369e512c3fdf05bf654fffd66c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Replacing an explicit process exit and formatted error with a thrown error can change the CLI’s visible error formatting or exit handling if a current caller reaches this path. (sha=64b8d6fdb17cc833afe842337df0312248cb4330)",
-      "expected_head_sha": "64b8d6fdb17cc833afe842337df0312248cb4330",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:09:27.288Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-99901-process-exit-model-resolver",
-        "head_sha": "64b8d6fdb17cc833afe842337df0312248cb4330",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101665:4904099689:2026-07-31T12:27:31Z:clawsweeper_needs_human",
       "comment_id": "4904099689",
@@ -31757,6 +31724,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113188:5144179622:2026-07-31T17:00:32Z:clawsweeper_needs_human",
+      "comment_id": "5144179622",
+      "comment_version_key": "5144179622:2026-07-31T17:00:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113188#issuecomment-5144179622",
+      "comment_created_at": "2026-07-31T14:49:21Z",
+      "comment_updated_at": "2026-07-31T17:00:32Z",
+      "comment_body_sha256": "0cb215ff02c43a3d3db2415189bd1a200a49e45bf7fbcd872bc57fc4ffa96ce0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a focused Vitest run, but the supplied PR discussion contains no after-fix real A2A handoff, cache trace, terminal output,...; Review finding: [P1] Escape delimiters before marking A2A context internal — src/agents/tools/agent-step.ts:82-84 - [P1] Update A2A assertions for the new message carrier — src/ag... (sha=7f36a3f86b4323dc1f8ee8900d6c854f3634ce73)",
+      "expected_head_sha": "7f36a3f86b4323dc1f8ee8900d6c854f3634ce73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:05:30.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/a2a-prompt-prefix-caching",
+        "head_sha": "7f36a3f86b4323dc1f8ee8900d6c854f3634ce73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
