@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T23:38:46.539Z",
+  "updated_at": "2026-07-31T23:38:50.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115237:5125299675:2026-07-30T01:32:11Z:re_review",
-      "comment_id": "5125299675",
-      "comment_version_key": "5125299675:2026-07-30T01:32:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115237#issuecomment-5125299675",
-      "comment_created_at": "2026-07-30T01:32:11Z",
-      "comment_updated_at": "2026-07-30T01:32:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115237,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T20:20:06.497Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97175:4815183474:2026-07-31T20:18:47Z:clawsweeper_auto_repair",
       "comment_id": "4815183474",
@@ -31513,6 +31486,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T23:38:46.539Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:481:5118252862:2026-07-31T23:34:31Z:clawsweeper_needs_human",
+      "comment_id": "5118252862",
+      "comment_version_key": "5118252862:2026-07-31T23:34:31Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/481#issuecomment-5118252862",
+      "comment_created_at": "2026-07-29T13:15:36Z",
+      "comment_updated_at": "2026-07-31T23:34:31Z",
+      "comment_body_sha256": "84fb4731f04e842b3d6dfe63753044de40e7af5d33e3f2be6ef3da44b0e9f7a0",
+      "repo": "openclaw/acpx",
+      "issue_number": 481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing downstream consumers that reject unknown serialized event properties or enforce an exact text_delta schema may need an upgrade adjustment before accepting the two new optiona... (sha=b37fb7fadcbeca4ef46dd10505deeb9b9ce19dcc)",
+      "expected_head_sha": "b37fb7fadcbeca4ef46dd10505deeb9b9ce19dcc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T23:38:50.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-text-delta-origin",
+        "head_sha": "b37fb7fadcbeca4ef46dd10505deeb9b9ce19dcc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
