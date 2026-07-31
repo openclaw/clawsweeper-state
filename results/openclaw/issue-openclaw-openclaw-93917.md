@@ -1,0 +1,77 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-93917"
+mode: "autonomous"
+run_id: "30651770665"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30651770665"
+head_sha: "3637a9424ec20396a3903cd79cffb2e4e360bc28"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-07-31T18:33:14.933Z"
+canonical: "https://github.com/openclaw/openclaw/issues/93917"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/93917"
+canonical_pr: null
+actions_total: 4
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-93917
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30651770665](https://github.com/openclaw/clawsweeper/actions/runs/30651770665)
+
+Workflow conclusion: success
+
+Worker result: planned
+
+Canonical: https://github.com/openclaw/openclaw/issues/93917
+
+## Summary
+
+#93917 remains a reproducible, narrow bug on current main (8a4da1d19fadb839d59bd581e8b2403460c873c9). Failed exec outcomes currently hash changing text/aggregated output, so their no-progress streak resets and the existing regression test expects only a warning after 30 calls. A new focused PR should use the stable failed-exec facts while retaining output-sensitive hashing for completed exec calls. The read-only checkout prevents applying or running the repair here; the executable fix artifact is ready for the deterministic executor.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 4 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, docs [check:changed] src/agents/tool-loop-detection.test.ts: core test [check:changed] src/agents/tool-loop-detection.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node scripts/check-env-var-count.mjs --base origin/main [check:changed] max-lines suppression ratchet $ node scripts/check-max-lines-ratchet.mjs --base origin/main [check:changed] changelog attributions $ node scripts/check-changelog-attributions.mjs [check:changed] guarded extension wildcard re-exports $ node scripts/check-extension-wildcard-reexports.mjs [check:changed] plugin-sdk wildcard re-exports $ node scripts/check-plugin-sdk-wildcard-reexports.mjs [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node scripts/check-dependency-pins.mjs [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/tools/loop-detection.md src/agents/tool-loop-detection.test.ts src/agents/tool-loop-detection.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] deprecated API usage $ node scripts/check-deprecated-api-usage.mjs [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] package patch guard $ node scripts/check-package-patches.mjs [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [deadcode] Knip production unused-export scan still running after 60s. [deadcode] Knip full-tree unused-export scan still running after 60s. [deadcode] Knip script unused-export scan still running after 60s. deadcode production unused-export scan produced no export sections. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 10 seconds. 2 retries left. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 1 minute. 1 retries left. [ERR_PNPM_META_FETCH_FAIL] GET https://registry.npmjs.org/knip: fetch failed [check:changed] summary 363ms ok conflict markers 412ms ok environment variable count ratchet 18.66s ok max-lines suppression ratchet 339ms ok changelog attributions 353ms ok guarded extension wildcard re-exports 325ms ok plugin-sdk wildcard re-exports 340ms ok duplicate scan target coverage 410ms ok dependency pin guard 531ms ok format changed files 12.50s ok Plugin SDK API contract manifest 7.47s ok deprecated API usage 1.32s ok plugin boundaries 671ms ok package patch guard 70.43s failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) OPENCLAW_* count 517/517 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) max-lines ratchet OK: 1023 grandfathered suppressions. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) No guarded extension wildcard re-exports found. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) No plugin-sdk wildcard re-exports found in extension API barrels. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [dup:check] target coverage ok [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) PASS direct dependency pin guard: checked 610 directly declared dependency specs across 179 tracked package manifests; 0 violations. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) Checking formatting... All matched files use the correct format. Finished in 110ms on 3 files using 4 threads. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) OK docs/.generated/plugin-sdk-api-baseline.sha256 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) deprecated API usage guard passed [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=28 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=21 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=57 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=321 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=6 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
+| issue_implementation_status_comment | updated | #93917 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #93917 | fix_needed | planned | canonical | Current main still reproduces the issue; build one narrow credited implementation PR. |
+| #93964 | keep_closed | skipped | superseded | Historical evidence only; no mutation is valid for an already-closed PR. |
+| cluster:issue-openclaw-openclaw-93917 | build_fix_artifact | planned |  | Prepare the narrow new-PR repair and run validation in a writable executor checkout. |
+| cluster:issue-openclaw-openclaw-93917 | open_fix_pr | planned | canonical | The job permits one new implementation PR but does not permit merge or close actions. |
+
+## Needs Human
+
+- none
