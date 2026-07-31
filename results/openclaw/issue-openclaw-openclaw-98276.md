@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
-mode: "autonomous"
-run_id: "30638412449"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30638412449"
+mode: "plan"
+run_id: "30641842989"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30641842989"
 head_sha: "60ad8788f54555eed573d42b38f25f26b8feb62e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-07-31T15:00:38.318Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-07-31T16:06:14.602Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30638412449](https://github.com/openclaw/clawsweeper/actions/runs/30638412449)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30641842989](https://github.com/openclaw/clawsweeper/actions/runs/30641842989)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-#98276 remains a reproducible, narrow CI artifact packaging bug on current main b7eceb45953858702c22df007b1e77d0fe182e6d. The archive command includes only dist/, dist-runtime/, and packages/*/dist/, while package-root runtime resolvers require src/agents/templates and bundled-plugin layout resolution. The checkout is read-only and has no node_modules or built artifact, so this worker cannot create, validate, or raise the required fix PR; an executable narrow fix artifact is provided.
+#98276 remains the canonical non-security packaging bug. The hydrated preflight shows no viable open PR: #98326 is closed and unmergeable, while #98274 is a separate ACP terminal-state issue. The local plan checkout retains the direct CI tar producer, which archives only dist, dist-runtime, and package dist outputs even though the established bootstrap contract requires package-root templates. Plan a new narrow credited fix PR after the executor synchronizes to the artifact main SHA and re-verifies the same producer/resolver contract.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97916 | keep_closed | skipped | related | Historical downstream context only; no close or mutation is valid for an already-closed PR. |
-| #98274 | keep_related | planned | related | Related downstream symptom with a distinct root cause and explicit product-decision follow-up. |
-| #98276 | fix_needed | blocked | canonical | The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency/build outputs. |
-| #98326 | keep_closed | skipped | superseded | Useful historical approach and attribution context, but it is closed, unmerged, unavailable in the current checkout, and not a viable canonical PR. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Create one new fix PR from clawsweeper/issue-openclaw-openclaw-98276 after applying the artifact below. |
+| #97916 | keep_closed | skipped | related | Historical context only; closure actions are invalid for this already-closed, distinct PR. |
+| #98274 | keep_related | planned | related | Related downstream symptom with a separate runtime-contract decision; keep open independently. |
+| #98276 | fix_needed | planned | canonical | A narrow artifact-contract helper and extracted-runtime smoke are appropriate; executor must synchronize once to preflight main and re-verify before editing. |
+| #98326 | keep_closed | skipped | superseded | Closed historical source only; carry forward its narrow idea and contributor credit without reusing the fork branch. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | New credited fix PR is the only viable canonical path. |
 
 ## Needs Human
 
