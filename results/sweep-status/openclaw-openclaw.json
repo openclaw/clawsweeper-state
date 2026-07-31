@@ -3,23 +3,93 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Hot intake publish complete",
-  "detail": "Merged 41 hot intake artifacts for run 30633567607 without full folder reconciliation. Captured 44 shard metrics; 0 shards reported non-success review status.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30633567607",
-  "planned_count": 44,
-  "planned_capacity": 44,
-  "planned_shards": 44,
-  "active_codex": 0,
-  "due_backlog": 1049,
-  "oldest_unreviewed_at": "2026-07-31T13:07:34Z",
-  "capacity_reason": "saturated: due backlog filled planned capacity",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 10. Result records: 11. Item numbers: 101750,101777,101813,101819,101829,101841,101866,101878,101899,101900,101913,101916,101932,101940,102001,102003,102039,102045,102054,102061,102069,102082,102084,102101,102116. Next cursor: 102116.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30630885950",
+  "planned_count": null,
+  "planned_capacity": null,
+  "planned_shards": null,
+  "active_codex": null,
+  "due_backlog": null,
+  "oldest_unreviewed_at": null,
+  "capacity_reason": null,
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": null,
+  "apply_health": {
+    "schema_version": 1,
+    "generated_at": "2026-07-31T13:31:56.141Z",
+    "target_repo": "openclaw/openclaw",
+    "mode": "comment_sync",
+    "status": "ok",
+    "summary": "examined count unavailable; 11/25 action records; 0 closed, 10 comments synced, 1 skipped; cursor at #102116.",
+    "examined": null,
+    "action_records": 11,
+    "processed": 11,
+    "processed_limit": 25,
+    "close_limit": 40,
+    "closed": 0,
+    "comment_synced": 10,
+    "skipped": 1,
+    "skip_reasons": {
+      "skipped_stale_review_comment_sync": 1
+    },
+    "lanes": {
+      "closure": {
+        "processed": 0,
+        "closed": 0,
+        "comment_synced": 0,
+        "skipped": 0,
+        "skip_reasons": {}
+      },
+      "comment_sync": {
+        "processed": 11,
+        "closed": 0,
+        "comment_synced": 10,
+        "skipped": 1,
+        "skip_reasons": {
+          "skipped_stale_review_comment_sync": 1
+        }
+      }
+    },
+    "next_actions": [
+      {
+        "reason": "skipped_stale_review_comment_sync",
+        "count": 1,
+        "bucket": "review_refresh",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Refresh review state",
+        "summary": "The durable review comment is newer than the local review report.",
+        "next_step": "Queue a fresh review instead of overwriting the newer durable comment."
+      }
+    ],
+    "next_action_buckets": {
+      "review_refresh": 1
+    },
+    "cycle": {
+      "basis": "not_close_cursor",
+      "apply_ready_count": null,
+      "candidate_counts": null,
+      "window_size": null,
+      "estimated_full_cycle_windows": null,
+      "estimated_full_cycle_minutes": null,
+      "scheduled_interval_minutes": null,
+      "label": "Cycle estimate is only reported for scheduled close cursor windows."
+    },
+    "attention_reasons": [],
+    "cursor_required": true,
+    "cursor": {
+      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
+      "next_after_number": 102116,
+      "next_after_apply_checked_at": null,
+      "updated_at": "2026-07-31T13:30:50.688Z"
+    },
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30630885950"
+  },
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-07-31T13:12:39.374Z",
@@ -139,5 +209,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30628951094"
   },
-  "updated_at": "2026-07-31T13:25:46.103Z"
+  "updated_at": "2026-07-31T13:31:56.737Z"
 }
