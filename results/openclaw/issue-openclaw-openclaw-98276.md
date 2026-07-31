@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
 mode: "autonomous"
-run_id: "30650015178"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30650015178"
-head_sha: "730dfcf159c8473b41e16240dcb2d1116d3f2cec"
-workflow_conclusion: "failure"
+run_id: "30654950729"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30654950729"
+head_sha: "16f01b29508632ab3a904087191e39b20968ab68"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-07-31T17:34:45.824Z"
+published_at: "2026-07-31T18:36:39.740Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30650015178](https://github.com/openclaw/clawsweeper/actions/runs/30650015178)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30654950729](https://github.com/openclaw/clawsweeper/actions/runs/30654950729)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-#98276 remains the canonical non-security runtime-artifact packaging bug on preflight main cd8a96491e2677a2330991884a5ee41396affaf5. No viable canonical PR exists: #98326 is closed, unmerged, uneditable, merge-dirty, and its hydrated bot review identifies checkout dependency borrowing that can mask missing artifact closure. Plan one narrow credited replacement fix PR; retain #98274 as a separate ACP terminal-state issue.
+#98276 remains a reproducible, non-security CI artifact defect on current main `36b80ada3ceae2de21b3d8710b883d778e4c4578`: the archive includes only build outputs while extracted runtime resolution requires package-root templates. No viable open PR exists, so a narrow new fix PR is planned. This read-only worker could not create or validate a branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 |
+| issue_implementation_status_comment | updated | #98276 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +67,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97916 | keep_closed | skipped | related | Historical context only; closure actions are invalid for an already-closed distinct PR. |
-| #98274 | keep_related | planned | related | Related downstream symptom with a separate runtime-contract decision; keep it open independently. |
-| #98276 | fix_needed | planned | canonical | The bug remains real and narrowly repairable; create a new fix PR rather than reuse the closed fork branch. |
-| #98326 | keep_closed | skipped | superseded | Closed historical source only; retain contributor credit without reopening, closing, or reusing the branch. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Build one new credited fix PR with an isolated dependency smoke so extracted archive contents, not checkout dependencies, prove the runtime contract. |
+| #98274 | keep_related | planned | related | Keep open as an adjacent, distinct ACP behavior issue. |
+| #98276 | fix_needed | planned | canonical | Current main still has the reported artifact boundary failure and no viable open candidate PR owns the repair. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Create one focused fix PR from `clawsweeper/issue-openclaw-openclaw-98276` after implementing and validating the artifact contract. |
 
 ## Needs Human
 

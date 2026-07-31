@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30654950729",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30654950729",
+  "head_sha": "16f01b29508632ab3a904087191e39b20968ab68",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T18:36:39.740Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "#98276 remains a reproducible, non-security CI artifact defect on current main `36b80ada3ceae2de21b3d8710b883d778e4c4578`: the archive includes only build outputs while extracted runtime resolution requires package-root templates. No viable open PR exists, so a narrow new fix PR is planned. This read-only worker could not create or validate a branch.",
+  "actions": [
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Keep open as an adjacent, distinct ACP behavior issue."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Current main still has the reported artifact boundary failure and no viable open candidate PR owns the repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Create one focused fix PR from `clawsweeper/issue-openclaw-openclaw-98276` after implementing and validating the artifact contract."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#98276",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
