@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the CI `dist-runtime-build` artifact so an extracted archive preserves the minimal package-root resources required by `openclaw.mjs gateway` and ACP, including the agent template path and bundled plugin runtime resolution layout. Do not add runtime fallback readers, symlinks, new configuration, or CHANGELOG edits. Add a focused archive-manifest guard and an extraction smoke that starts Gateway to readiness and proves ACP can load from the extracted root. Treat https://github.com/openclaw/openclaw/issues/98274 as explicitly out of scope: its empty-turn behavior is a separate failure after artifact startup. Re-check the closed-unmerged approach in https://github.com/openclaw/openclaw/pull/98326 against current main rather than copying it blindly.
+Repair the `dist-runtime-build` CI artifact so an extracted archive contains the minimum package-root runtime resources needed by Gateway and ACP, including the launcher/package metadata, runtime templates, and built plugin-runtime layout. Preserve a narrow allowlist; do not archive arbitrary source trees or add runtime fallbacks. Add focused regression coverage for the artifact manifest and an extracted-archive smoke that demonstrates Gateway readiness plus ACP import or startup. Keep the distinct ACP empty-turn behavior out of scope: https://github.com/openclaw/openclaw/issues/98274. Do not edit `CHANGELOG.md`.
 
 Likely files:
 
 - .github/workflows/ci.yml
-- scripts/dist-runtime-build-artifact.mjs
 - test/scripts/ci-workflow-guards.test.ts
+- scripts/lib/workspace-bootstrap-smoke.mjs
+- src/agents/workspace-templates.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs test/scripts/ci-workflow-guards.test.ts
 - pnpm build:ci-artifacts
-- node scripts/dist-runtime-build-artifact.mjs pack-and-smoke --archive dist-runtime-build.tar.zst
+- Extract `dist-runtime-build.tar.zst` in an isolated temporary directory and prove template resolution, Gateway readiness, and ACP import/startup without copied files or symlinks.
 - git diff --check
 
 ## Operator Prompt
