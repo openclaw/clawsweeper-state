@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:54:23.864Z",
+  "updated_at": "2026-07-31T19:54:25.693Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116899:5144404989:2026-07-31T15:10:52Z:clawsweeper_needs_human",
-      "comment_id": "5144404989",
-      "comment_version_key": "5144404989:2026-07-31T15:10:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116899#issuecomment-5144404989",
-      "comment_created_at": "2026-07-31T15:10:52Z",
-      "comment_updated_at": "2026-07-31T15:10:52Z",
-      "comment_body_sha256": "3c3bc8d4f491022c7b76fd0518cf42fe4c28f541e8019b6fb5666c1ba8290b37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch intentionally changes an existing mutation path: callers that explicitly submit a configured disabled account will now receive INVALID_REQUEST instead of creating a job, so... (sha=90b426b23ccc617ad6468bed3012795c18cccb79)",
-      "expected_head_sha": "90b426b23ccc617ad6468bed3012795c18cccb79",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:35:16.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cron-delivery-account-validation",
-        "head_sha": "90b426b23ccc617ad6468bed3012795c18cccb79",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116904:5144476434:2026-07-31T15:17:07Z:clawsweeper_needs_human",
       "comment_id": "5144476434",
@@ -32418,6 +32385,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T19:54:23.864Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:54:5123890342:2026-07-31T19:47:45Z:clawsweeper_auto_repair",
+      "comment_id": "5123890342",
+      "comment_version_key": "5123890342:2026-07-31T19:47:45Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5123890342",
+      "comment_created_at": "2026-07-29T22:11:57Z",
+      "comment_updated_at": "2026-07-31T19:47:45Z",
+      "comment_body_sha256": "de09ff9bbe972dca11173a7cd58fc7ea271da8baa286f4de0e156e5a843f5ffd",
+      "repo": "openclaw/rfcs",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=393f697fed1027248d1e9d7c9356c8be1487d02c)",
+      "expected_head_sha": "393f697fed1027248d1e9d7c9356c8be1487d02c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T19:54:25.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
+        "head_sha": "393f697fed1027248d1e9d7c9356c8be1487d02c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
