@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:31:11.341Z",
+  "updated_at": "2026-07-31T16:32:25.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116743:5141531579:2026-07-31T09:42:21Z:clawsweeper_auto_repair",
-      "comment_id": "5141531579",
-      "comment_version_key": "5141531579:2026-07-31T09:42:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116743#issuecomment-5141531579",
-      "comment_created_at": "2026-07-31T09:42:21Z",
-      "comment_updated_at": "2026-07-31T09:42:21Z",
-      "comment_body_sha256": "0f957a4f66df5efa24a820ff26bed7f2d93d46bea514ed1e7217b1d9e449ace8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116743,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b4bfb7f0886d9321f40cc7709d1691acf7070c02)",
-      "expected_head_sha": "b4bfb7f0886d9321f40cc7709d1691acf7070c02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auto-qa-bedrock",
-        "head_sha": "b4bfb7f0886d9321f40cc7709d1691acf7070c02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116748:5141555569:2026-07-31T09:45:19Z:clawsweeper_needs_human",
       "comment_id": "5141555569",
@@ -31727,6 +31694,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:106:5011373234:2026-07-31T16:26:13Z:clawsweeper_needs_human",
+      "comment_id": "5011373234",
+      "comment_version_key": "5011373234:2026-07-31T16:26:13Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/106#issuecomment-5011373234",
+      "comment_created_at": "2026-07-18T13:09:11Z",
+      "comment_updated_at": "2026-07-31T16:26:13Z",
+      "comment_body_sha256": "9b4f7a12596e428a4d3a287f4690d78017af363edb1a4164a47262ea0c8bf467",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the local browser-admin security boundary** - The proposed self-host mode creates a deliberate path from the long-lived administrator token to a 12-hour browser-admin session; t...; Review finding: [medium] Confirm the local browser-admin security boundary — worker/local-auth.ts:1 (sha=1e45dd917bed08698818026e867690019ecb1d25)",
+      "expected_head_sha": "1e45dd917bed08698818026e867690019ecb1d25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T16:32:25.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/local-auth",
+        "head_sha": "1e45dd917bed08698818026e867690019ecb1d25",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
