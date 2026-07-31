@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:28:02.943Z",
+  "updated_at": "2026-07-31T19:29:04.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88504:4759786923:2026-06-20T19:39:36Z:re_review",
-      "comment_id": "4759786923",
-      "comment_version_key": "4759786923:2026-06-20T19:39:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4759786923",
-      "comment_created_at": "2026-06-20T19:39:36Z",
-      "comment_updated_at": "2026-06-20T19:39:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88504,
-      "author": "kklouzal",
-      "author_id": 2928845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:20:47.096Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88504:4771588693:2026-06-22T18:31:40Z:re_review",
       "comment_id": "4771588693",
@@ -32464,6 +32437,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:293:5090809180:2026-07-31T19:20:51Z:clawsweeper_needs_human",
+      "comment_id": "5090809180",
+      "comment_version_key": "5090809180:2026-07-31T19:20:51Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/293#issuecomment-5090809180",
+      "comment_created_at": "2026-07-27T11:37:24Z",
+      "comment_updated_at": "2026-07-31T19:20:51Z",
+      "comment_body_sha256": "eeff5a5aab856b4f54cc993b1704060058c52e393b50364af4554f159ba04380",
+      "repo": "openclaw/peekaboo",
+      "issue_number": 293,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Repin Tachikoma to the final merged OAuth revision (P1)** - The gitlink still selects d4cd49f, which this PR identifies as an upstream OAuth review commit rather than its final merged revision. Update Tachikoma...; Review finding: [P1] Repin Tachikoma to the final merged OAuth revision — Tachikoma:1 - [medium] Finalize the OAuth dependency pin — Tachikoma:1 (sha=99254685f7d9b765bb1beca4be5b181f3b62d425)",
+      "expected_head_sha": "99254685f7d9b765bb1beca4be5b181f3b62d425",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T19:29:04.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-oauth-vision",
+        "head_sha": "99254685f7d9b765bb1beca4be5b181f3b62d425",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
