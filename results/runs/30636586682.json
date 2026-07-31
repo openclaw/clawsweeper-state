@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111745",
+  "mode": "autonomous",
+  "run_id": "30636586682",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30636586682",
+  "head_sha": "3d2a878f6e2a52cc82e0fde9795ef341671ed554",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111745.md",
+  "published_at": "2026-07-31T14:06:56.040Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/111745",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/111745",
+  "canonical_pr": null,
+  "summary": "No narrow implementation PR is safe. On current main e051a7bb4a6ba69b87391e990b00813114b1d482, the managed installer already passes the six declared Codex aliases to a host-aware lockfile verifier, which excludes optional packages whose os/cpu/libc constraints do not match the running host. Changing requiredPlatformPackages would not affect npm’s installation resolution and would weaken recovery for an actually omitted host binary. The report needs the sanitized managed-invocation npm configuration and verbose log requested by the maintainer before a root cause can be assigned.",
+  "actions": [
+    {
+      "target": "#111745",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#111745",
+      "candidate_fix": null,
+      "reason": "Keep the issue as the canonical investigation. Current source disproves the proposed verifier fix, while the available artifact lacks the environment and invocation evidence needed to identify why npm materialized incompatible optional packages."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Obtain the sanitized reproduction evidence requested in the July 31, 2026 maintainer comment: effective npm_config values, npm config list --json, verbose/debug output for the exact managed npm invocation, and the resulting managed package-lock/node_modules layout. Reassess only after that evidence identifies an OpenClaw-controlled cause."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#111745",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
