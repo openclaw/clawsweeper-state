@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T15:28:42.467Z",
+  "updated_at": "2026-07-31T15:28:56.667Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105353:4951137087:2026-07-31T12:06:04Z:clawsweeper_needs_human",
-      "comment_id": "4951137087",
-      "comment_version_key": "4951137087:2026-07-31T12:06:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105353#issuecomment-4951137087",
-      "comment_created_at": "2026-07-12T12:15:21Z",
-      "comment_updated_at": "2026-07-31T12:06:04Z",
-      "comment_body_sha256": "cc9f704762336502de7c6b502f1c4c553a918436041d4056cabcdd5a0083e71f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105353,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and integration coverage, but the supplied evidence contains no inspectable after-fix live gateway, browser,...; Review finding: [P1] Obtain approval for the Teams trust model before exposing routes — src/gateway/teams-http.ts:1 - [P1] Approve the permanent Teams plugin API before publishing... (sha=e17f216d3fc76dd0490c56196d59e1c7f12140db)",
-      "expected_head_sha": "e17f216d3fc76dd0490c56196d59e1c7f12140db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/teams-rbac-plugin-api",
-        "head_sha": "e17f216d3fc76dd0490c56196d59e1c7f12140db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105766:4953326936:2026-07-31T11:47:00Z:clawsweeper_needs_human",
       "comment_id": "4953326936",
@@ -32175,6 +32142,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116857:5143706123:2026-07-31T15:22:14Z:clawsweeper_needs_human",
+      "comment_id": "5143706123",
+      "comment_version_key": "5143706123:2026-07-31T15:22:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116857#issuecomment-5143706123",
+      "comment_created_at": "2026-07-31T14:01:21Z",
+      "comment_updated_at": "2026-07-31T15:22:14Z",
+      "comment_body_sha256": "fdcdd744d6ecb3d950ec220d4bebf20382f55a53baa72af98cb334311f6cd29f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify filtering precedes SecretRef evaluation** - The patch must establish the effective discovery provider set before resolving configured file or exec SecretRefs, otherwise a targete...; Review finding: [medium] Verify filtering precedes SecretRef evaluation - [medium] Verify discovery keys remain transient (sha=074c2b600772e1a3076615e52689e71354922415)",
+      "expected_head_sha": "074c2b600772e1a3076615e52689e71354922415",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T15:28:56.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/litellm-catalog-readonly-plan-115953",
+        "head_sha": "074c2b600772e1a3076615e52689e71354922415",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
