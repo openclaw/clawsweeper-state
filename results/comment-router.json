@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T18:07:03.823Z",
+  "updated_at": "2026-07-31T18:07:03.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116866:5143900392:2026-07-31T14:21:28Z:re_review",
-      "comment_id": "5143900392",
-      "comment_version_key": "5143900392:2026-07-31T14:21:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116866#issuecomment-5143900392",
-      "comment_created_at": "2026-07-31T14:21:28Z",
-      "comment_updated_at": "2026-07-31T14:21:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116866,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T14:23:57.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/externalize-byteplus",
-        "head_sha": "4693684a510d1ef36f405a443e5203d6fee66e2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116504:5134643458:2026-07-31T14:21:21Z:clawsweeper_needs_human",
       "comment_id": "5134643458",
@@ -31980,6 +31933,39 @@
         "kind": "pull_request",
         "branch": "agent/simplified-technical-english",
         "head_sha": "68e7376162d1a0590e2bbb7b0e177eddff79d769",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:16:4709625950:2026-07-31T18:05:34Z:clawsweeper_needs_human",
+      "comment_id": "4709625950",
+      "comment_version_key": "4709625950:2026-07-31T18:05:34Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/16#issuecomment-4709625950",
+      "comment_created_at": "2026-06-15T15:39:22Z",
+      "comment_updated_at": "2026-07-31T18:05:34Z",
+      "comment_body_sha256": "e09cc89790566b43114a01a7e150897a60c3818b6ad72aee2090501190103da0",
+      "repo": "openclaw/rfcs",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: All three changed paths are RFC Markdown documents, so an external runtime-proof gate does not apply; the PR’s implementation ledger remains supporting provenance only. (sha=e34b6cf81dff8887d92a269a8baeaeba22e0ada6)",
+      "expected_head_sha": "e34b6cf81dff8887d92a269a8baeaeba22e0ada6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T18:07:03.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "0008-provider-stream-grammar",
+        "head_sha": "e34b6cf81dff8887d92a269a8baeaeba22e0ada6",
         "cluster_id": null,
         "job_path": null
       }
