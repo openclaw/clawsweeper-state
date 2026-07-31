@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T13:13:13.759Z",
+  "updated_at": "2026-07-31T13:13:38.350Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:222:5120779642:2026-07-31T01:19:52Z:clawsweeper_auto_repair",
-      "comment_id": "5120779642",
-      "comment_version_key": "5120779642:2026-07-31T01:19:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw.ai/pull/222#issuecomment-5120779642",
-      "comment_created_at": "2026-07-29T16:40:36Z",
-      "comment_updated_at": "2026-07-31T01:19:52Z",
-      "comment_body_sha256": "22bb6674946c8172c52d6872e90ea347abe25b95f8e970aded1f474da444c35c",
-      "repo": "openclaw/openclaw.ai",
-      "issue_number": 222,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b502ed5ec27047181624aa055e47e121372566b4)",
-      "expected_head_sha": "b502ed5ec27047181624aa055e47e121372566b4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T01:20:39.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/npm-2edd94fa36",
-        "head_sha": "b502ed5ec27047181624aa055e47e121372566b4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:35:4854763114:2026-07-31T01:19:58Z:clawsweeper_auto_repair",
       "comment_id": "4854763114",
@@ -33166,6 +33133,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114594:5092127846:2026-07-31T13:10:35Z:clawsweeper_needs_human",
+      "comment_id": "5092127846",
+      "comment_version_key": "5092127846:2026-07-31T13:10:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114594#issuecomment-5092127846",
+      "comment_created_at": "2026-07-27T13:45:16Z",
+      "comment_updated_at": "2026-07-31T13:10:35Z",
+      "comment_body_sha256": "b9aef0a821a2da55f319ba2ff24913a12b40c715dff6dd1917f70bbd08b64174",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch has no actionable defect, and the remaining action is the explicitly requested human merge review. (sha=2171ba25bd01170adfea5523e7c88939b90157c8)",
+      "expected_head_sha": "2171ba25bd01170adfea5523e7c88939b90157c8",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T13:13:38.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/fix-controlui-root-config",
+        "head_sha": "2171ba25bd01170adfea5523e7c88939b90157c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
