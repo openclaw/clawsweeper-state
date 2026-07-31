@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T17:15:30.695Z",
+  "updated_at": "2026-07-31T17:16:01.719Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110803:5036380010:2026-07-21T16:17:04Z:re_review",
-      "comment_id": "5036380010",
-      "comment_version_key": "5036380010:2026-07-21T16:17:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110803#issuecomment-5036380010",
-      "comment_created_at": "2026-07-21T16:17:04Z",
-      "comment_updated_at": "2026-07-21T16:17:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110803,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:33:54.734Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110803:5037128023:2026-07-21T17:36:22Z:re_review",
       "comment_id": "5037128023",
@@ -31689,6 +31662,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116794:5142320482:2026-07-31T17:13:29Z:clawsweeper_needs_human",
+      "comment_id": "5142320482",
+      "comment_version_key": "5142320482:2026-07-31T17:13:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5142320482",
+      "comment_created_at": "2026-07-31T11:22:44Z",
+      "comment_updated_at": "2026-07-31T17:13:29Z",
+      "comment_body_sha256": "f66a15f4d2e68e15508f070729fd08cf56ad113593b785ad001fefc48f29d2c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR changes the trusted admission boundary and remains dependent on the unmerged predecessor layers, so landing it before the protocol and attribution contract are reviewed could... (sha=25694651025730bcd81ded05d291a022dc30a5ef)",
+      "expected_head_sha": "25694651025730bcd81ded05d291a022dc30a5ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T17:16:01.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-3-runtime",
+        "head_sha": "25694651025730bcd81ded05d291a022dc30a5ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
