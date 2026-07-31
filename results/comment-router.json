@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T18:06:58.640Z",
+  "updated_at": "2026-07-31T18:07:00.521Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116866:5143817786:2026-07-31T14:12:37Z:re_review",
-      "comment_id": "5143817786",
-      "comment_version_key": "5143817786:2026-07-31T14:12:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116866#issuecomment-5143817786",
-      "comment_created_at": "2026-07-31T14:12:37Z",
-      "comment_updated_at": "2026-07-31T14:12:37Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116866,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T14:19:06.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/externalize-byteplus",
-        "head_sha": "f0edf52f6fdb10d85fec9ad42dd6a3dda9c0f8c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108845:4990889993:2026-07-31T14:20:30Z:clawsweeper_needs_human",
       "comment_id": "4990889993",
@@ -31997,6 +31950,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T18:06:58.639Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:60:5118066895:2026-07-31T17:58:35Z:clawsweeper_needs_human",
+      "comment_id": "5118066895",
+      "comment_version_key": "5118066895:2026-07-31T17:58:35Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/60#issuecomment-5118066895",
+      "comment_created_at": "2026-07-29T12:58:45Z",
+      "comment_updated_at": "2026-07-31T17:58:35Z",
+      "comment_body_sha256": "afc78ddcd345a4ce43a0e3888b821d6e2119fa8468e9358f5f37c8a58960a35f",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes a direct dependency behind persisted-archive opening, snapshot import/export, and terminal browsing; CI confirms compilation and tests, but there is no after-update ev... (sha=bcd7c91b565fd898adaf966f04c60a68548ed1ad)",
+      "expected_head_sha": "bcd7c91b565fd898adaf966f04c60a68548ed1ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T18:07:00.520Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.4",
+        "head_sha": "bcd7c91b565fd898adaf966f04c60a68548ed1ad",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
