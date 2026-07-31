@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:12:44.044Z",
+  "updated_at": "2026-07-31T16:13:30.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109953:5002896295:2026-07-31T11:28:18Z:clawsweeper_needs_human",
-      "comment_id": "5002896295",
-      "comment_version_key": "5002896295:2026-07-31T11:28:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109953#issuecomment-5002896295",
-      "comment_created_at": "2026-07-17T11:42:04Z",
-      "comment_updated_at": "2026-07-31T11:28:18Z",
-      "comment_body_sha256": "97a769c8eb8085e27d404d6a0ff9fe407dcf4185f1b45d9d9f03758ddeb35e16",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109953,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes useful terminal output for controlled Blob-like frames and a separate local WebSocket exchange, but it does not demons... (sha=187ac26b0a377d1eed7e0af82661dabeeb4f6943)",
-      "expected_head_sha": "187ac26b0a377d1eed7e0af82661dabeeb4f6943",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/audit-chatgpt-websocket-blob-bound",
-        "head_sha": "187ac26b0a377d1eed7e0af82661dabeeb4f6943",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110024:5004273484:2026-07-31T11:36:59Z:clawsweeper_auto_repair",
       "comment_id": "5004273484",
@@ -31947,6 +31914,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116869:5144992055:2026-07-31T16:11:31Z:re_review",
+      "comment_id": "5144992055",
+      "comment_version_key": "5144992055:2026-07-31T16:11:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116869#issuecomment-5144992055",
+      "comment_created_at": "2026-07-31T16:11:31Z",
+      "comment_updated_at": "2026-07-31T16:11:31Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116869,
+      "author": "metaforismo",
+      "author_id": 39646696,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T16:13:28.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-logs-read-only-preflight",
+        "head_sha": "382c2c250230246d7059c49d4eee132ec4efc59b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
