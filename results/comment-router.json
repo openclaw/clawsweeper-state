@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T14:18:47.116Z",
+  "updated_at": "2026-07-31T14:19:09.773Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116622:5138396403:2026-07-31T04:34:18Z:clawsweeper_needs_human",
-      "comment_id": "5138396403",
-      "comment_version_key": "5138396403:2026-07-31T04:34:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116622#issuecomment-5138396403",
-      "comment_created_at": "2026-07-31T02:02:32Z",
-      "comment_updated_at": "2026-07-31T04:34:18Z",
-      "comment_body_sha256": "ec3d61a7be41c38cbe57c5f6dc68fcbbabe118008ad5b5926be49511ebc8fffa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116622,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes existing Control UI validation at floating-point multipleOf boundaries: values such as 0.2 + 0.1 will now be accepted when TypeBox regards them as a valid... (sha=bfce5ba92000ccf54026fbb717c05c9391f52e04)",
-      "expected_head_sha": "bfce5ba92000ccf54026fbb717c05c9391f52e04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T05:25:33.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/config-schema-runtime",
-        "head_sha": "bfce5ba92000ccf54026fbb717c05c9391f52e04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116621:5138405248:2026-07-31T04:36:04Z:clawsweeper_auto_repair",
       "comment_id": "5138405248",
@@ -32792,6 +32759,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116866:5143817786:2026-07-31T14:12:37Z:re_review",
+      "comment_id": "5143817786",
+      "comment_version_key": "5143817786:2026-07-31T14:12:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116866#issuecomment-5143817786",
+      "comment_created_at": "2026-07-31T14:12:37Z",
+      "comment_updated_at": "2026-07-31T14:12:37Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116866,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T14:19:06.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/externalize-byteplus",
+        "head_sha": "f0edf52f6fdb10d85fec9ad42dd6a3dda9c0f8c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
