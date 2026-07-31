@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:03:31.475Z",
+  "updated_at": "2026-07-31T19:04:33.190Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116858:5143794671:2026-07-31T14:10:07Z:clawsweeper_auto_repair",
-      "comment_id": "5143794671",
-      "comment_version_key": "5143794671:2026-07-31T14:10:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116858#issuecomment-5143794671",
-      "comment_created_at": "2026-07-31T14:10:07Z",
-      "comment_updated_at": "2026-07-31T14:10:07Z",
-      "comment_body_sha256": "a901ec521da5e7b44c0b9418baab532aa37ae933fd9803eea44e4141957adc57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=117caffce8879755ae4c40af7c2a042cdd540a58)",
-      "expected_head_sha": "117caffce8879755ae4c40af7c2a042cdd540a58",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T14:47:26.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/moonshot-tool-schema-anyof",
-        "head_sha": "117caffce8879755ae4c40af7c2a042cdd540a58",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113115:5143882966:2026-07-31T14:19:34Z:clawsweeper_needs_human",
       "comment_id": "5143882966",
@@ -32370,6 +32337,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116642:5146475276:2026-07-31T19:00:17Z:re_review",
+      "comment_id": "5146475276",
+      "comment_version_key": "5146475276:2026-07-31T19:00:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116642#issuecomment-5146475276",
+      "comment_created_at": "2026-07-31T19:00:17Z",
+      "comment_updated_at": "2026-07-31T19:00:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116642,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T19:04:31.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dangling-tool-use-abort-116379",
+        "head_sha": "080ade14209f48c1adc19fcaeaaea1baacb8dbbc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
