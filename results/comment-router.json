@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:59:15.956Z",
+  "updated_at": "2026-07-31T19:59:27.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4789679418:2026-06-24T13:15:49Z:re_review",
-      "comment_id": "4789679418",
-      "comment_version_key": "4789679418:2026-06-24T13:15:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4789679418",
-      "comment_created_at": "2026-06-24T13:15:49Z",
-      "comment_updated_at": "2026-06-24T13:15:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T15:38:34.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4792800604:2026-06-24T19:15:01Z:re_review",
       "comment_id": "4792800604",
@@ -32598,6 +32571,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117011:5146739106:2026-07-31T19:56:30Z:clawsweeper_needs_human",
+      "comment_id": "5146739106",
+      "comment_version_key": "5146739106:2026-07-31T19:56:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117011#issuecomment-5146739106",
+      "comment_created_at": "2026-07-31T19:33:41Z",
+      "comment_updated_at": "2026-07-31T19:56:30Z",
+      "comment_body_sha256": "3df5b5ea27eb7f328ebf75a0de66f3afbe71c78aae19dc17b53390d954e96115",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accidentally merging this temporary reference would introduce Telegram polling behavior through a branch that explicitly says it is validation-only; the canonical candidate still need... (sha=c3ffb609716429c9e103d7bc52b29fd613546e73)",
+      "expected_head_sha": "c3ffb609716429c9e103d7bc52b29fd613546e73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T19:59:27.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/proof-116970-c3ffb609",
+        "head_sha": "c3ffb609716429c9e103d7bc52b29fd613546e73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
