@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-07-31T20:24:03.445Z",
+  "generated_at": "2026-07-31T20:28:16.034Z",
   "count": 1,
   "summary": {
     "open_prs": 1,
@@ -34,9 +34,9 @@
       "head_sha": "52225bc33655ab2f1bd5e66a0881bd10cc1edae0",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-07-31T20:20:04Z",
+      "updated_at": "2026-07-31T20:27:31Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -74,29 +74,23 @@
         ]
       },
       "latest_record": {
-        "run_id": "30660374550",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30660374550",
+        "run_id": "30661164505",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30661164505",
         "cluster_id": "automerge-openclaw-openclaw-116976",
-        "published_at": "2026-07-31T20:24:01.064Z",
+        "published_at": "2026-07-31T20:28:13.422Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#116976",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "docs: replace retired hostnameAllowlist in browser-control example",
-          "idempotency_key": null,
-          "reason": "job does not allow merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "keep_canonical",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#116976",
+          "candidate_fix": "#116976",
+          "reason": "The canonical replacement is already merge-ready under the hydrated exact-head evidence. Direct merge is blocked by job frontmatter and remains with the deterministic automerge gate."
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
