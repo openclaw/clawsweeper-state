@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:41:54.809Z",
+  "updated_at": "2026-07-31T16:42:18.319Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:67:5093442392:2026-07-31T12:30:00Z:clawsweeper_needs_human",
-      "comment_id": "5093442392",
-      "comment_version_key": "5093442392:2026-07-31T12:30:00Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/67#issuecomment-5093442392",
-      "comment_created_at": "2026-07-27T15:40:52Z",
-      "comment_updated_at": "2026-07-31T12:30:00Z",
-      "comment_body_sha256": "846b49d03622f539a46f89db563fc32d960df4a7b098beb968d7dddda74da566",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 67,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes existing cross-platform behavior: callers on non-Windows hosts that currently retain names such as CON or NUL.txt will receive their configured fallback after upgrade. (sha=c47b4e59718f1eacd2b26645a3445d02c80b372d)",
-      "expected_head_sha": "c47b4e59718f1eacd2b26645a3445d02c80b372d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:45:09.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-reserved-basenames",
-        "head_sha": "c47b4e59718f1eacd2b26645a3445d02c80b372d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109623:4998876264:2026-07-31T12:42:57Z:clawsweeper_needs_human",
       "comment_id": "4998876264",
@@ -31713,6 +31680,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105316:4950971370:2026-07-31T16:38:14Z:clawsweeper_auto_repair",
+      "comment_id": "4950971370",
+      "comment_version_key": "4950971370:2026-07-31T16:38:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105316#issuecomment-4950971370",
+      "comment_created_at": "2026-07-12T11:15:46Z",
+      "comment_updated_at": "2026-07-31T16:38:14Z",
+      "comment_body_sha256": "2a964c0377958e1b8cca70fbdbf80b537bad57a2f4df007542f8497e586f7c5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105316,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5bf424dcac506de725fe117724a862bcd0ca4672)",
+      "expected_head_sha": "5bf424dcac506de725fe117724a862bcd0ca4672",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-07-31T16:42:18.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/active-memory-bound-timeout-breakers",
+        "head_sha": "5bf424dcac506de725fe117724a862bcd0ca4672",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
