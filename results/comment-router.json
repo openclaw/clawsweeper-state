@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-07-31T22:57:12.522Z",
+  "updated_at": "2026-07-31T22:57:39.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115670:5146877361:2026-07-31T19:51:34Z:re_review",
-      "comment_id": "5146877361",
-      "comment_version_key": "5146877361:2026-07-31T19:51:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5146877361",
-      "comment_created_at": "2026-07-31T19:51:34Z",
-      "comment_updated_at": "2026-07-31T19:51:34Z",
-      "comment_body_sha256": "81755c7c78498677ecf8455488c7efc14bf93fb641702df832e470616b5a5af6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T19:55:50.746Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claws-adopt-existing-workspace",
-        "head_sha": "0ae4f154750daad7c69db4bfa590a1bbab2d1d38",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-07-31T19:54:52Z:clawsweeper_needs_human",
       "comment_id": "5120409280",
@@ -31352,6 +31305,39 @@
         "kind": "pull_request",
         "branch": "fix/code-mode-small-models-20260729",
         "head_sha": "b764be7605ad97c3113e326b96fc5ffb9941cb0a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116033:5121995221:2026-07-31T22:56:10Z:clawsweeper_needs_human",
+      "comment_id": "5121995221",
+      "comment_version_key": "5121995221:2026-07-31T22:56:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116033#issuecomment-5121995221",
+      "comment_created_at": "2026-07-29T18:33:55Z",
+      "comment_updated_at": "2026-07-31T22:56:10Z",
+      "comment_body_sha256": "fb2eecf92a1cc7d61883d8900f96ff3db97ced951673c5f09b01f68d4fefa5c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and changes shared parsing, completion, and Gateway credential behavior across many command groups; a current-head refresh must confirm that no recen... (sha=29be1445a5ec24aba42fd72a8f88091a3f11b758)",
+      "expected_head_sha": "29be1445a5ec24aba42fd72a8f88091a3f11b758",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T22:57:39.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cli-command-reliability-sweep-20260729",
+        "head_sha": "29be1445a5ec24aba42fd72a8f88091a3f11b758",
         "cluster_id": null,
         "job_path": null
       }
