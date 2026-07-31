@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T15:54:42.484Z",
+  "updated_at": "2026-07-31T15:54:46.079Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79990:4413776645:2026-07-31T11:21:21Z:clawsweeper_needs_human",
-      "comment_id": "4413776645",
-      "comment_version_key": "4413776645:2026-07-31T11:21:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/79990#issuecomment-4413776645",
-      "comment_created_at": "2026-05-09T22:03:07Z",
-      "comment_updated_at": "2026-07-31T11:21:21Z",
-      "comment_body_sha256": "661cad8f6911b09a8f9cf345f4a5ae07b669b4300079721fc3243756e5b3760d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79990,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Remove the malformed cron test block (P1)** - The prior review identified stray braces in this newly added test area, and the unchanged head still has a failing cron-service check. Repair the block so the focuse...; Review finding: [P1] Remove the malformed cron test block — src/cron/service.jobs.test.ts:524 - [P1] Expose providers through the public cron protocol — src/cron/types.ts:256-266... (sha=6a736570d2c1c62ee32af92b0e1b5dccb4f475e2)",
-      "expected_head_sha": "6a736570d2c1c62ee32af92b0e1b5dccb4f475e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T12:27:29.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/custom-headers",
-        "head_sha": "6a736570d2c1c62ee32af92b0e1b5dccb4f475e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80204:4414957079:2026-07-31T11:46:09Z:clawsweeper_auto_repair",
       "comment_id": "4414957079",
@@ -31997,6 +31964,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116805:5144802795:2026-07-31T15:51:30Z:re_review",
+      "comment_id": "5144802795",
+      "comment_version_key": "5144802795:2026-07-31T15:51:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116805#issuecomment-5144802795",
+      "comment_created_at": "2026-07-31T15:51:30Z",
+      "comment_updated_at": "2026-07-31T15:51:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116805,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T15:54:43.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t24-05-discord-error-redaction",
+        "head_sha": "0cc4e400157dc2a8352819587a1a3d6ab9333ec1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
