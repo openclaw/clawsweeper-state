@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T14:36:47.250Z",
+  "updated_at": "2026-07-31T14:37:17.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102886:4926296016:2026-07-31T02:48:50Z:clawsweeper_needs_human",
-      "comment_id": "4926296016",
-      "comment_version_key": "4926296016:2026-07-31T02:48:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102886#issuecomment-4926296016",
-      "comment_created_at": "2026-07-09T14:45:44Z",
-      "comment_updated_at": "2026-07-31T02:48:50Z",
-      "comment_body_sha256": "a2cda94143c0349fee02426ffd19457eef1b89fb3c6fc24c21ff4d67e35f6759",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fixed 30-second deadline deliberately converts a slow-but-eventually-successful Copilot /models response into a failure; refresh the caller and user-visible error path against curre... (sha=47a6e97515c94c76fe3a7e488c6b77d3899e94aa)",
-      "expected_head_sha": "47a6e97515c94c76fe3a7e488c6b77d3899e94aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T05:25:33.767Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/github-copilot-embedding-discovery-timeout",
-        "head_sha": "47a6e97515c94c76fe3a7e488c6b77d3899e94aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102898:4926441281:2026-07-31T02:50:04Z:clawsweeper_needs_human",
       "comment_id": "4926441281",
@@ -32764,6 +32731,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116660:5144031883:2026-07-31T14:35:08Z:re_review",
+      "comment_id": "5144031883",
+      "comment_version_key": "5144031883:2026-07-31T14:35:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116660#issuecomment-5144031883",
+      "comment_created_at": "2026-07-31T14:35:08Z",
+      "comment_updated_at": "2026-07-31T14:35:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116660,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T14:37:14.938Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-group-dm-thread-seed",
+        "head_sha": "bd8b2cb02d689ad0bfb141729daa8e1197e36426",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
