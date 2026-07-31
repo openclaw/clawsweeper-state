@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T20:40:21.762Z",
+  "updated_at": "2026-07-31T20:42:46.348Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116805:5142577065:2026-07-31T16:36:37Z:clawsweeper_needs_human",
-      "comment_id": "5142577065",
-      "comment_version_key": "5142577065:2026-07-31T16:36:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116805#issuecomment-5142577065",
-      "comment_created_at": "2026-07-31T11:53:10Z",
-      "comment_updated_at": "2026-07-31T16:36:37Z",
-      "comment_body_sha256": "ea73b0781e8e361679654a005a3b18c1fe482547aaf8a2749ed9be03e29ac3a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116805,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scheduler’s retained and runtime-metric bucket value changes from Discord’s opaque raw identifier to a stable sha256: label. That is the intended secrecy boundary, but maintainers... (sha=0cc4e400157dc2a8352819587a1a3d6ab9333ec1)",
-      "expected_head_sha": "0cc4e400157dc2a8352819587a1a3d6ab9333ec1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T16:38:09.084Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-05-discord-error-redaction",
-        "head_sha": "0cc4e400157dc2a8352819587a1a3d6ab9333ec1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116612:5138129191:2026-07-31T16:31:28Z:clawsweeper_auto_repair",
       "comment_id": "5138129191",
@@ -32392,6 +32359,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:980:5147279020:2026-07-31T20:42:05Z:re_review",
+      "comment_id": "5147279020",
+      "comment_version_key": "5147279020:2026-07-31T20:42:05Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/980#issuecomment-5147279020",
+      "comment_created_at": "2026-07-31T20:42:05Z",
+      "comment_updated_at": "2026-07-31T20:42:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 980,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T20:42:43.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bounded-exact-publication",
+        "head_sha": "093ffeeb6d84deba015a309750dc343f1799bb74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
