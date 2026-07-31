@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:07:39.335Z",
+  "updated_at": "2026-07-31T19:07:41.074Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:40:5090657867:2026-07-31T14:48:25Z:clawsweeper_needs_human",
-      "comment_id": "5090657867",
-      "comment_version_key": "5090657867:2026-07-31T14:48:25Z",
-      "comment_url": "https://github.com/openclaw/Tachikoma/pull/40#issuecomment-5090657867",
-      "comment_created_at": "2026-07-27T11:19:18Z",
-      "comment_updated_at": "2026-07-31T14:48:25Z",
-      "comment_body_sha256": "b1e2e5477744dc46fd845dbafdab731e61a224585afb23921f59c2b11d673911",
-      "repo": "openclaw/tachikoma",
-      "issue_number": 40,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review OAuth storage and refresh boundary** - The supplied diff materially changes access-token and refresh-token resolution, in-memory caching, and persisted credential updates; valida...; Review finding: [medium] Review OAuth storage and refresh boundary - [medium] Confirm the new backend trust contract (sha=d4cd49f0e8ec178c7224df436b6ea9604ed34cbc)",
-      "expected_head_sha": "d4cd49f0e8ec178c7224df436b6ea9604ed34cbc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T14:49:46.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-oauth-vision",
-        "head_sha": "d4cd49f0e8ec178c7224df436b6ea9604ed34cbc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110058:5004651694:2026-07-31T14:48:24Z:clawsweeper_needs_human",
       "comment_id": "5004651694",
@@ -32330,6 +32297,53 @@
         "kind": "pull_request",
         "branch": "feat/capacity-groups",
         "head_sha": "5f97e9029aacfa8f3444960e6a44e60a14d37b25",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116693:5146500824:2026-07-31T19:03:25Z:re_review",
+      "comment_id": "5146500824",
+      "comment_version_key": "5146500824:2026-07-31T19:03:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116693#issuecomment-5146500824",
+      "comment_created_at": "2026-07-31T19:03:25Z",
+      "comment_updated_at": "2026-07-31T19:03:25Z",
+      "comment_body_sha256": "f4d710117b708f84b58de3885a2925c8e59696167b1e9c32fb6104760ba1c3be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116693,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T19:07:38.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/size-approved-exec-continuations-at-the-resumed",
+        "head_sha": "60b74993fe80fa4dbcc342d4ddb4262b0be8be2d",
         "cluster_id": null,
         "job_path": null
       },
