@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T16:55:11.853Z",
+  "updated_at": "2026-07-31T16:57:02.125Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102379:4921233233:2026-07-31T13:02:25Z:clawsweeper_needs_human",
-      "comment_id": "4921233233",
-      "comment_version_key": "4921233233:2026-07-31T13:02:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102379#issuecomment-4921233233",
-      "comment_created_at": "2026-07-09T03:12:50Z",
-      "comment_updated_at": "2026-07-31T13:02:25Z",
-      "comment_body_sha256": "3f2126c6b90bc0a6371dbf3c510b4dbc1d77ad667189f78860693d94733d6055",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102379,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR has focused fixtures, green CI, and aggregate production-route telemetry, but no redacted current-head Teams tenant evidence th... (sha=0fc04b3cbd2a4806fffa83b19164000c285c697b)",
-      "expected_head_sha": "0fc04b3cbd2a4806fffa83b19164000c285c697b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T13:09:27.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bug-052-msteams-inbound-normalize",
-        "head_sha": "0fc04b3cbd2a4806fffa83b19164000c285c697b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103928:4939369306:2026-07-31T13:03:40Z:clawsweeper_auto_repair",
       "comment_id": "4939369306",
@@ -31715,6 +31682,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116925:5145202369:2026-07-31T16:54:03Z:clawsweeper_needs_human",
+      "comment_id": "5145202369",
+      "comment_version_key": "5145202369:2026-07-31T16:54:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116925#issuecomment-5145202369",
+      "comment_created_at": "2026-07-31T16:34:58Z",
+      "comment_updated_at": "2026-07-31T16:54:03Z",
+      "comment_body_sha256": "91f7451302be21c3fb63ed5c2d729f11572cde28004c09f3b74c85dce8516b52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116925,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reservation implementation changes a message-delivery and reconnect-critical queue invariant, but the full revised source—including release, abort, and queue-close paths—could not... (sha=73dd066fabf3538ec59b145c8ef9604ead0c179a)",
+      "expected_head_sha": "73dd066fabf3538ec59b145c8ef9604ead0c179a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T16:57:02.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/buzz-reconnect-history-catchup",
+        "head_sha": "73dd066fabf3538ec59b145c8ef9604ead0c179a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
