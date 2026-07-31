@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T12:55:25.792Z",
+  "updated_at": "2026-07-31T12:55:47.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88504:4618840420:2026-06-04T04:05:48Z:re_review",
-      "comment_id": "4618840420",
-      "comment_version_key": "4618840420:2026-06-04T04:05:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4618840420",
-      "comment_created_at": "2026-06-04T04:05:48Z",
-      "comment_updated_at": "2026-06-04T04:05:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88504,
-      "author": "kklouzal",
-      "author_id": 2928845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T00:10:10.230Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88504:4759786923:2026-06-20T19:39:36Z:re_review",
       "comment_id": "4759786923",
@@ -33128,6 +33101,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T12:55:25.792Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116808:5142581511:2026-07-31T12:49:28Z:clawsweeper_needs_human",
+      "comment_id": "5142581511",
+      "comment_version_key": "5142581511:2026-07-31T12:49:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116808#issuecomment-5142581511",
+      "comment_created_at": "2026-07-31T11:53:45Z",
+      "comment_updated_at": "2026-07-31T12:49:28Z",
+      "comment_body_sha256": "358e18f651de2d18eb1f5f73d0efca6ca23cfa4b879efc6b83dba502eaaa45d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Authorize the exact dependency-graph change** - The new provider package adds a workspace:* plugin-SDK dev dependency and corresponding pnpm-lock.yaml importer. Repository automation bl...; Review finding: [medium] Authorize the exact dependency-graph change — extensions/llama-server/package.json:6 (sha=e76575b3b3306e284921d2593f19c99050bdeabc)",
+      "expected_head_sha": "e76575b3b3306e284921d2593f19c99050bdeabc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T12:55:47.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "osolmaz/llama-server-provider",
+        "head_sha": "e76575b3b3306e284921d2593f19c99050bdeabc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
