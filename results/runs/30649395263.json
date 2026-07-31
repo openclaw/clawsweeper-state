@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116939",
+  "mode": "autonomous",
+  "run_id": "30649395263",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30649395263",
+  "head_sha": "197d807562e5a5808a8986e161520eccf76ae8af",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116939.md",
+  "published_at": "2026-07-31T17:11:20.784Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116939",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116939",
+  "canonical_pr": null,
+  "summary": "Plan: create one narrow credited fix PR for the current shared visible-text sanitizer defect; keep the adjacent outbound sanitizer PR and package-level stripper issue open as related work.",
+  "actions": [
+    {
+      "target": "#116123",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#116939",
+      "candidate_fix": null,
+      "reason": "Adjacent code-region preservation work with a different sanitizer, root cause, and validation surface."
+    },
+    {
+      "target": "#116939",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116939",
+      "candidate_fix": null,
+      "reason": "The current-main message-loss defect remains real, non-security-sensitive, and safely repairable with a narrow shared-sanitizer change."
+    },
+    {
+      "target": "#116941",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#116939",
+      "candidate_fix": null,
+      "reason": "Related fenced-code data-loss report that requires a separate package-level repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116939",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116939",
+      "candidate_fix": null,
+      "reason": "One new PR on clawsweeper/issue-openclaw-openclaw-116939 is the explicit permitted implementation path."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
