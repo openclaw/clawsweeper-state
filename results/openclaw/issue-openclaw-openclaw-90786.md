@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90786"
 mode: "autonomous"
-run_id: "30646200140"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30646200140"
-head_sha: "60ad8788f54555eed573d42b38f25f26b8feb62e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-07-31T16:21:28.060Z"
-canonical: "https://github.com/openclaw/openclaw/issues/90786"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/90786"
+run_id: "30649397155"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30649397155"
+head_sha: "197d807562e5a5808a8986e161520eccf76ae8af"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-07-31T17:17:57.182Z"
+canonical: "#90786"
+canonical_issue: "#90786"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30646200140](https://github.com/openclaw/clawsweeper/actions/runs/30646200140)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30649397155](https://github.com/openclaw/clawsweeper/actions/runs/30649397155)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/90786
+Canonical: #90786
 
 ## Summary
 
-#90786 remains a narrow, reproducible resolver regression on the checkout's current origin/main (`b186d81c46d4cd7074589cf1a9fde5a9a4c0e52f`): the Google plugin declares its memory adapter as `id: "gemini"` with `authProviderId: "google"`, while the runtime only tries exact/configured lookup ids. A new credited fix PR is appropriate, but this worker cannot modify the read-only checkout or install missing dependencies to run the required focused tests. The preflight main SHA (`79f3474836be71b8c5c7e5bb50b9ecab5981a595`) is not present locally; the executor must rebase/reverify against live main before applying the artifact.
+Current main reproduces the source-level regression: the Google plugin registers the memory adapter as `gemini` with `authProviderId: "google"`, but the shared resolver only attempts exact ids and configured API ids, so memory initialization reaches the existing `Unknown memory embedding provider: google` diagnostic. Prepare one narrow fix PR; no close or merge action is permitted. Focused tests could not run in this read-only checkout because `node_modules` is absent (`p-map` missing).
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/90786
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90786 | fix_needed | blocked | canonical | The defect is clear and bounded, but implementation and validation are blocked solely by the read-only, dependency-free worker checkout. |
-| #90787 | keep_related | planned | related | Related Google-memory upgrade context, but it has a distinct provider-default and migration decision. |
-| #90801 | keep_related | planned | related | Related memory-health report with different runtime behavior and no overlap with the narrow adapter-resolution fix. |
-| cluster:issue-openclaw-openclaw-90786 | build_fix_artifact | planned | canonical | Prepare one narrow, new fix PR once the executor has a writable checkout and dependencies. |
+| #90786 | build_fix_artifact | planned | canonical | Narrow bug-only repair is appropriate. Resolve an unambiguous adapter by its declared auth provider owner only after preserving existing exact adapter-id precedence; keep unknown ids on the existing undefined/diagnostic path. |
+| #90787 | keep_related | planned | related | Related Google memory-provider report, but it is a separate compatibility/defaults decision and must remain independently tracked. |
+| #90801 | keep_related | planned | related | Related memory regression family, but it has distinct behavior and likely product/operational follow-up. |
 
 ## Needs Human
 

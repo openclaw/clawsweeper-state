@@ -1,0 +1,61 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-90786",
+  "mode": "autonomous",
+  "run_id": "30649397155",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30649397155",
+  "head_sha": "197d807562e5a5808a8986e161520eccf76ae8af",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
+  "published_at": "2026-07-31T17:17:57.182Z",
+  "canonical": "#90786",
+  "canonical_issue": "#90786",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the source-level regression: the Google plugin registers the memory adapter as `gemini` with `authProviderId: \"google\"`, but the shared resolver only attempts exact ids and configured API ids, so memory initialization reaches the existing `Unknown memory embedding provider: google` diagnostic. Prepare one narrow fix PR; no close or merge action is permitted. Focused tests could not run in this read-only checkout because `node_modules` is absent (`p-map` missing).",
+  "actions": [
+    {
+      "target": "#90786",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#90786",
+      "candidate_fix": null,
+      "reason": "Narrow bug-only repair is appropriate. Resolve an unambiguous adapter by its declared auth provider owner only after preserving existing exact adapter-id precedence; keep unknown ids on the existing undefined/diagnostic path."
+    },
+    {
+      "target": "#90787",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90786",
+      "candidate_fix": null,
+      "reason": "Related Google memory-provider report, but it is a separate compatibility/defaults decision and must remain independently tracked."
+    },
+    {
+      "target": "#90801",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#90786",
+      "candidate_fix": null,
+      "reason": "Related memory regression family, but it has distinct behavior and likely product/operational follow-up."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 2
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
