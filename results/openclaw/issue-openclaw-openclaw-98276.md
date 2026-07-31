@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
 mode: "autonomous"
-run_id: "30647636922"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30647636922"
-head_sha: "e67f575a539f57544017f97a1da7181f1fb1411d"
+run_id: "30650015178"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30650015178"
+head_sha: "730dfcf159c8473b41e16240dcb2d1116d3f2cec"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-07-31T16:58:54.021Z"
+published_at: "2026-07-31T17:34:45.824Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30647636922](https://github.com/openclaw/clawsweeper/actions/runs/30647636922)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30650015178](https://github.com/openclaw/clawsweeper/actions/runs/30650015178)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-#98276 remains the canonical, reproducible non-security runtime-artifact packaging bug on preflight main e64b7041ec8898654a806d32145b6e1ce676733a. No viable canonical PR exists: #98326 is closed, unmerged, branch-unwritable, and its hydrated bot review identifies checkout dependency borrowing as a masking defect. Plan one new narrow credited fix PR that owns the archive contract and proves a clean extracted runtime without checkout dependency masking.
+#98276 remains the canonical non-security runtime-artifact packaging bug on preflight main cd8a96491e2677a2330991884a5ee41396affaf5. No viable canonical PR exists: #98326 is closed, unmerged, uneditable, merge-dirty, and its hydrated bot review identifies checkout dependency borrowing that can mask missing artifact closure. Plan one narrow credited replacement fix PR; retain #98274 as a separate ACP terminal-state issue.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97916 | keep_closed | skipped | related | Already closed historical context; no closure or repair action is valid for this distinct PR. |
-| #98274 | keep_related | planned | related | Related downstream issue with distinct product and runtime-contract scope; keep open independently. |
-| #98276 | fix_needed | planned | canonical | A bounded CI artifact-contract repair is appropriate and no open contributor branch is viable. |
-| #98326 | keep_closed | skipped | superseded | Historical source direction only. Preserve @qingminglong credit in the new PR body without reusing or mutating the closed fork branch. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | A new credited PR is the explicit canonical repair path. |
+| #97916 | keep_closed | skipped | related | Historical context only; closure actions are invalid for an already-closed distinct PR. |
+| #98274 | keep_related | planned | related | Related downstream symptom with a separate runtime-contract decision; keep it open independently. |
+| #98276 | fix_needed | planned | canonical | The bug remains real and narrowly repairable; create a new fix PR rather than reuse the closed fork branch. |
+| #98326 | keep_closed | skipped | superseded | Closed historical source only; retain contributor credit without reopening, closing, or reusing the branch. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Build one new credited fix PR with an isolated dependency smoke so extracted archive contents, not checkout dependencies, prove the runtime contract. |
 
 ## Needs Human
 
