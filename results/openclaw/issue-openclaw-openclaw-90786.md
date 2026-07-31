@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90786"
 mode: "autonomous"
-run_id: "30649397155"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30649397155"
-head_sha: "197d807562e5a5808a8986e161520eccf76ae8af"
+run_id: "30665950212"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30665950212"
+head_sha: "ec2f84cc3f00d92dadd4d5ee41c8e5d402268c04"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-07-31T17:17:57.182Z"
-canonical: "#90786"
-canonical_issue: "#90786"
+result_status: "blocked"
+published_at: "2026-07-31T22:24:36.041Z"
+canonical: "https://github.com/openclaw/openclaw/issues/90786"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/90786"
 canonical_pr: null
-actions_total: 3
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30649397155](https://github.com/openclaw/clawsweeper/actions/runs/30649397155)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30665950212](https://github.com/openclaw/clawsweeper/actions/runs/30665950212)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #90786
+Canonical: https://github.com/openclaw/openclaw/issues/90786
 
 ## Summary
 
-Current main reproduces the source-level regression: the Google plugin registers the memory adapter as `gemini` with `authProviderId: "google"`, but the shared resolver only attempts exact ids and configured API ids, so memory initialization reaches the existing `Unknown memory embedding provider: google` diagnostic. Prepare one narrow fix PR; no close or merge action is permitted. Focused tests could not run in this read-only checkout because `node_modules` is absent (`p-map` missing).
+Verified on current main e73250f54baf469f5312dadda0a9aede764d742a: the shared memory resolver preserves exact/configured-id lookup but never considers an adapter's declared authProviderId. The Google adapter declares id "gemini" and authProviderId "google", so memory initialization cannot resolve a request for "google". A narrow two-file fix is appropriate, but this checkout is read-only and has no installed dependencies, so no branch patch or local test execution can be completed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Current main reproduces the source-level regression: the Google plugin registers
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/plugins/memory-embedding-provider-runtime.test.ts: core test [check:changed] src/plugins/memory-embedding-provider-runtime.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node scripts/check-env-var-count.mjs --base origin/main [check:changed] max-lines suppression ratchet $ node scripts/check-max-lines-ratchet.mjs --base origin/main [check:changed] changelog attributions $ node scripts/check-changelog-attributions.mjs [check:changed] guarded extension wildcard re-exports $ node scripts/check-extension-wildcard-reexports.mjs [check:changed] plugin-sdk wildcard re-exports $ node scripts/check-plugin-sdk-wildcard-reexports.mjs [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node scripts/check-dependency-pins.mjs [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/plugins/memory-embedding-provider-runtime.test.ts src/plugins/memory-embedding-provider-runtime.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] deprecated API usage $ node scripts/check-deprecated-api-usage.mjs [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] package patch guard $ node scripts/check-package-patches.mjs [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [deadcode] Knip production unused-export scan still running after 60s. [deadcode] Knip full-tree unused-export scan still running after 60s. [deadcode] Knip script unused-export scan still running after 60s. deadcode production unused-export scan produced no export sections. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 10 seconds. 2 retries left. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 1 minute. 1 retries left. [ERR_PNPM_META_FETCH_FAIL] GET https://registry.npmjs.org/knip: fetch failed [check:changed] summary 389ms ok conflict markers 430ms ok environment variable count ratchet 16.51s ok max-lines suppression ratchet 306ms ok changelog attributions 412ms ok guarded extension wildcard re-exports 303ms ok plugin-sdk wildcard re-exports 344ms ok duplicate scan target coverage 349ms ok dependency pin guard 352ms ok format changed files 9.35s ok Plugin SDK API contract manifest 5.86s ok deprecated API usage 1.14s ok plugin boundaries 577ms ok package patch guard 70.37s failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) OPENCLAW_* count 517/517 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) max-lines ratchet OK: 1023 grandfathered suppressions. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) No guarded extension wildcard re-exports found. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) No plugin-sdk wildcard re-exports found in extension API barrels. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) [dup:check] target coverage ok [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) PASS direct dependency pin guard: checked 610 directly declared dependency specs across 179 tracked package manifests; 0 violations. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) Checking formatting... All matched files use the correct format. Finished in 9ms on 2 files using 4 threads. [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) OK docs/.generated/plugin-sdk-api-baseline.sha256 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) deprecated API usage guard passed [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=28 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=21 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=57 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=321 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=6 [WARN] Unsupported engine: wanted: {"node":">=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0"} (current: {"node":"v24.13.0","pnpm":"11.15.1"}) PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
+| issue_implementation_status_comment | updated | #90786 |  |  |
 
 ## Apply Actions
 
@@ -66,9 +67,11 @@ Current main reproduces the source-level regression: the Google plugin registers
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90786 | build_fix_artifact | planned | canonical | Narrow bug-only repair is appropriate. Resolve an unambiguous adapter by its declared auth provider owner only after preserving existing exact adapter-id precedence; keep unknown ids on the existing undefined/diagnostic path. |
-| #90787 | keep_related | planned | related | Related Google memory-provider report, but it is a separate compatibility/defaults decision and must remain independently tracked. |
-| #90801 | keep_related | planned | related | Related memory regression family, but it has distinct behavior and likely product/operational follow-up. |
+| #90786 | keep_canonical | planned | canonical | Open issue #90786 is the canonical narrow resolver regression and has a concrete owner-level repair path. |
+| #90787 | keep_related | planned | related | Same memory-provider family, but unique default/migration and index-state work remains outside this bug-only repair. |
+| #90801 | keep_related | planned | related | Related upgrade symptom family, but no evidence that the resolver repair covers watcher timing or status consistency. |
+| #90786 | fix_needed | blocked | canonical | Implementation is well-scoped but blocked only by this worker's read-only, dependency-free checkout; the executor should apply the attached new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-90786. |
+| cluster:issue-openclaw-openclaw-90786 | build_fix_artifact | planned |  | Create one narrow credited fix PR; do not alter provider defaults, configuration, migrations, command handling, or changelog. |
 
 ## Needs Human
 
