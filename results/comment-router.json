@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T19:05:23.727Z",
+  "updated_at": "2026-07-31T19:06:06.486Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116050:5122501052:2026-07-31T14:42:12Z:clawsweeper_needs_human",
-      "comment_id": "5122501052",
-      "comment_version_key": "5122501052:2026-07-31T14:42:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116050#issuecomment-5122501052",
-      "comment_created_at": "2026-07-29T19:23:35Z",
-      "comment_updated_at": "2026-07-31T14:42:12Z",
-      "comment_body_sha256": "5a362c8921e4b98060421761649ed66e68dd4bc6fca6ddb439a5cbdb6d983ce9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116050,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains useful redacted loopback HTTP/WebSocket proof at 13242763f3d, but the reviewed head is 41f4e705887704f5cd88278c6f...; Review finding: [P1] Stage the public Rust node-host contract before exporting it — crates/openclaw-node-host/src/lib.rs:9-21 - [medium] Assign ownership before sharing Gateway se... (sha=41f4e705887704f5cd88278c6ffdfed406c88992)",
-      "expected_head_sha": "41f4e705887704f5cd88278c6ffdfed406c88992",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T14:48:59.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/rust-gateway-client",
-        "head_sha": "41f4e705887704f5cd88278c6ffdfed406c88992",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:86:4934071535:2026-07-31T14:38:03Z:clawsweeper_needs_human",
       "comment_id": "4934071535",
@@ -32366,6 +32333,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116666:5146494105:2026-07-31T19:02:35Z:re_review",
+      "comment_id": "5146494105",
+      "comment_version_key": "5146494105:2026-07-31T19:02:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116666#issuecomment-5146494105",
+      "comment_created_at": "2026-07-31T19:02:35Z",
+      "comment_updated_at": "2026-07-31T19:02:35Z",
+      "comment_body_sha256": "c565b5150629fe61d9bd7f2ebe8856f8381736c705129eb738851d751e2ca459",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116666,
+      "author": "spencer2211",
+      "author_id": 28957500,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T19:06:04.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/capacity-groups",
+        "head_sha": "5f97e9029aacfa8f3444960e6a44e60a14d37b25",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
