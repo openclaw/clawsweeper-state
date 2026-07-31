@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-116937"
 mode: "autonomous"
-run_id: "30647490374"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30647490374"
-head_sha: "c319ba7b34e1f311e292066ff860b14edcd78bf4"
-workflow_conclusion: "failure"
+run_id: "30653134299"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30653134299"
+head_sha: "3637a9424ec20396a3903cd79cffb2e4e360bc28"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-07-31T17:30:35.814Z"
-canonical: "https://github.com/openclaw/openclaw/issues/116937"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/116937"
+published_at: "2026-07-31T20:06:19.977Z"
+canonical: "#116937"
+canonical_issue: "#116937"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30647490374](https://github.com/openclaw/clawsweeper/actions/runs/30647490374)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30653134299](https://github.com/openclaw/clawsweeper/actions/runs/30653134299)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/116937
+Canonical: #116937
 
 ## Summary
 
-Verified on current main `500fed6d4a91efc2ee3beb1b2d437cb58e5691cb`: `qmd-index-missing` is explicitly non-fixable, but `memory status` prints the generic `memory status --fix` hint for every audit issue. The dedicated `memory index` path owns synchronization. A narrow two-file repair is appropriate; no GitHub mutation was performed.
+#116937 is a current, open, non-security canonical bug. Latest main still labels `qmd-index-missing` as non-fixable but unconditionally recommends `openclaw memory status --fix`. A narrow two-file fix artifact is ready: show the existing per-agent `memory index` recovery command for that diagnosis while retaining the generic `status --fix` hint for genuinely fixable audit findings. No tree changes were possible in this read-only worker sandbox; the prescribed focused test was attempted but could not start because the checkout lacks `p-map` and dependency installation is disallowed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Verified on current main `500fed6d4a91efc2ee3beb1b2d437cb58e5691cb`: `qmd-index-
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116937 | fix_needed | planned | canonical | The issue is a current, narrow command-remediation defect with an existing diagnosis code and recovery command; it needs a new fix PR. |
-| cluster:issue-openclaw-openclaw-116937 | build_fix_artifact | planned | canonical | Create one narrow PR from `clawsweeper/issue-openclaw-openclaw-116937`; repair implementation and test coverage are fully bounded. |
+| #116937 | build_fix_artifact | planned | canonical | The issue has a single, source-proven command-hint defect with an existing command owner and an isolated regression-test seam. |
 
 ## Needs Human
 
