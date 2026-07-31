@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-07-31T23:42:51.161Z",
+  "updated_at": "2026-07-31T23:42:52.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4902943479:2026-07-07T10:47:29Z:re_review",
-      "comment_id": "4902943479",
-      "comment_version_key": "4902943479:2026-07-07T10:47:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4902943479",
-      "comment_created_at": "2026-07-07T10:47:29Z",
-      "comment_updated_at": "2026-07-07T10:47:29Z",
-      "comment_body_sha256": "e54523c3773c102fc205ba473e5506c0f4815b7e278e79e166a01adc2f8b12d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (branch was ~940 commits behind; now conflict-free and mergeable). resolved a docs conflict in `docs/reference/session-management-compaction.md` where upstream reflowed the compaction settings section into prose: kept upstream's structure and folded the `turnmaintenancetasktimeoutms` (opt-in, disabled by default) note into a single prose paragraph, dropping the now-duplicated bullet list. no source behavior change in this refresh. verified locally after rebase: tsgo typecheck clean; affected unit suites green (context-engine-maintenance, transcript-rewrite, command-queue, diagnostic — 147 tests passed). new head 0b88bd92ad",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T20:21:10.499Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4949446333:2026-07-12T01:16:32Z:re_review",
       "comment_id": "4949446333",
@@ -31587,6 +31560,39 @@
       "status": "skipped",
       "processed_at": "2026-07-31T23:42:51.161Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:138:5147914263:2026-07-31T23:42:07Z:clawsweeper_auto_repair",
+      "comment_id": "5147914263",
+      "comment_version_key": "5147914263:2026-07-31T23:42:07Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/138#issuecomment-5147914263",
+      "comment_created_at": "2026-07-31T22:14:19Z",
+      "comment_updated_at": "2026-07-31T23:42:07Z",
+      "comment_body_sha256": "9a354aaca4183d4264e199d50c1f184b92ad774768ce6e530ff412108a9ed4b4",
+      "repo": "openclaw/clickclack",
+      "issue_number": 138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=105462b5d9813099743924a3388bcf5ea4c64d23)",
+      "expected_head_sha": "105462b5d9813099743924a3388bcf5ea4c64d23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T23:42:52.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/named-agent-responding",
+        "head_sha": "105462b5d9813099743924a3388bcf5ea4c64d23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
