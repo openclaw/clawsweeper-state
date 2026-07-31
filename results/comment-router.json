@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T13:22:33.726Z",
+  "updated_at": "2026-07-31T13:25:48.181Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89039:4591504568:2026-07-31T01:29:15Z:clawsweeper_needs_human",
-      "comment_id": "4591504568",
-      "comment_version_key": "4591504568:2026-07-31T01:29:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4591504568",
-      "comment_created_at": "2026-06-01T09:57:55Z",
-      "comment_updated_at": "2026-07-31T01:29:15Z",
-      "comment_body_sha256": "be9b58630fca7c800aef8cb46c70fe5628598da98daef0f3ce65e9c6e556418e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes loopback and real-process proof, but the supplied body anchors that evidence to older head 413a69e6d83f6c1612e2bb7aea... (sha=1e4291aec8c95c51996a1b659df76deca17366c2)",
-      "expected_head_sha": "1e4291aec8c95c51996a1b659df76deca17366c2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T01:31:36.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-takeover-silent-message-loss-87180",
-        "head_sha": "1e4291aec8c95c51996a1b659df76deca17366c2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4601071690:2026-06-02T09:35:31Z:re_review",
       "comment_id": "4601071690",
@@ -33236,6 +33203,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:298:5096326539:2026-07-31T13:24:55Z:clawsweeper_needs_human",
+      "comment_id": "5096326539",
+      "comment_version_key": "5096326539:2026-07-31T13:24:55Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/298#issuecomment-5096326539",
+      "comment_created_at": "2026-07-27T20:15:07Z",
+      "comment_updated_at": "2026-07-31T13:24:55Z",
+      "comment_body_sha256": "be576ac12633729bc7c312f72b25c8fdfca2552374119042d014a33b58d374d5",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 298,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Isolate timeout cleanup from recycled PIDs (P1)** - The recursive walk collects child PIDs, traverses them, and only then signals each PID. A child may exit and its PID may be reused in that interval, so the tim...; Review finding: [P1] Isolate timeout cleanup from recycled PIDs — Core/PeekabooCore/Sources/PeekabooAgentRuntime/MCP/Tools/ShellTool.swift:245 - [high] PID reuse can redirect time... (sha=8ec5568a0a7f5a3031cd16bbece9d1fcc334a0d8)",
+      "expected_head_sha": "8ec5568a0a7f5a3031cd16bbece9d1fcc334a0d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-07-31T13:25:48.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shell-tool-process-timeout",
+        "head_sha": "8ec5568a0a7f5a3031cd16bbece9d1fcc334a0d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
