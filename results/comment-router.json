@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-07-31T21:27:12.306Z",
+  "updated_at": "2026-07-31T21:27:30.004Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103688:4935755098:2026-07-31T17:11:47Z:clawsweeper_needs_human",
-      "comment_id": "4935755098",
-      "comment_version_key": "4935755098:2026-07-31T17:11:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103688#issuecomment-4935755098",
-      "comment_created_at": "2026-07-10T13:20:22Z",
-      "comment_updated_at": "2026-07-31T17:11:47Z",
-      "comment_body_sha256": "7d8771351a7b9927f8aa44f5e19d5ecf2ef8ad437390f101480a10e38aa54b0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A direct clear of only the old loader and manifest caches can leave newer metadata lifecycle memos intact after a rebase, so the resolved branch must clear the central plugin metadata... (sha=c87bfda735b66818dd607637abc6ec09cefba2aa)",
-      "expected_head_sha": "c87bfda735b66818dd607637abc6ec09cefba2aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T17:15:07.370Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-restart-plugin-cache-103571",
-        "head_sha": "c87bfda735b66818dd607637abc6ec09cefba2aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103688:4936290974:2026-07-10T14:21:32Z:re_review",
       "comment_id": "4936290974",
@@ -32406,6 +32373,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116909:5147604450:2026-07-31T21:25:39Z:re_review",
+      "comment_id": "5147604450",
+      "comment_version_key": "5147604450:2026-07-31T21:25:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116909#issuecomment-5147604450",
+      "comment_created_at": "2026-07-31T21:25:39Z",
+      "comment_updated_at": "2026-07-31T21:25:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116909,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-07-31T21:27:27.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-action-sanitize-and-source-mark",
+        "head_sha": "f26b451082e1c251cade26560faa318b669d99c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
