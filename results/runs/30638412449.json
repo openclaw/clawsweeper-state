@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30638412449",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30638412449",
+  "head_sha": "60ad8788f54555eed573d42b38f25f26b8feb62e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-07-31T15:00:38.318Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "#98276 remains a reproducible, narrow CI artifact packaging bug on current main b7eceb45953858702c22df007b1e77d0fe182e6d. The archive command includes only dist/, dist-runtime/, and packages/*/dist/, while package-root runtime resolvers require src/agents/templates and bundled-plugin layout resolution. The checkout is read-only and has no node_modules or built artifact, so this worker cannot create, validate, or raise the required fix PR; an executable narrow fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Historical downstream context only; no close or mutation is valid for an already-closed PR."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Related downstream symptom with a distinct root cause and explicit product-decision follow-up."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "The bug is still present and bounded, but local implementation and validation are blocked by the read-only checkout and absent dependency/build outputs."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Useful historical approach and attribution context, but it is closed, unmerged, unavailable in the current checkout, and not a viable canonical PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Create one new fix PR from clawsweeper/issue-openclaw-openclaw-98276 after applying the artifact below."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
