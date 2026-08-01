@@ -2,6 +2,7 @@
 repo: openclaw/openclaw
 cluster_id: automerge-openclaw-openclaw-117144
 mode: autonomous
+repair_mode: autofix
 job_intent: automerge_pr
 allowed_actions:
   - comment
