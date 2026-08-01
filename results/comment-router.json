@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:03:55.523Z",
+  "updated_at": "2026-08-01T07:03:55.987Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:92223:5108870591:2026-07-28T19:41:09Z:re_review",
-      "comment_id": "5108870591",
-      "comment_version_key": "5108870591:2026-07-28T19:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92223#issuecomment-5108870591",
-      "comment_created_at": "2026-07-28T19:41:09Z",
-      "comment_updated_at": "2026-07-28T19:41:09Z",
-      "comment_body_sha256": "e899b9d43caf7947df146a17b6baf5c2d615664b4fdb1b51edfbdac1bb2a6c87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92223,
-      "author": "joeykrug",
-      "author_id": 5925937,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T04:13:46.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/90098-canonical-media-limits",
-        "head_sha": "3affedbd0c5ed8a7f472de53231e888618647cf5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92223:4683056941:2026-08-01T04:10:21Z:clawsweeper_auto_repair",
       "comment_id": "4683056941",
@@ -31787,6 +31740,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-114553",
         "head_sha": "8f64fb5d6ed1b27e388eaeca92fc73922b0d694f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117034:5147384533:2026-08-01T06:58:38Z:clawsweeper_needs_human",
+      "comment_id": "5147384533",
+      "comment_version_key": "5147384533:2026-08-01T06:58:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5147384533",
+      "comment_created_at": "2026-07-31T20:55:56Z",
+      "comment_updated_at": "2026-08-01T06:58:38Z",
+      "comment_body_sha256": "0128df223ac322f449c504e32b256e157404ac5d8870cdfffcfe82b8ce46d2a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require opt-in before collecting execution identity (P1)** - This new admission hook records execution-attribution context whenever the existing audit ledger is enabled, but that ledger defaults on for installat...; Review finding: [P1] Require opt-in before collecting execution identity — src/agents/agent-command.ts:230 - [high] Default-on attribution collection lacks explicit consent — src/... (sha=32971e7cbe5d3d547149d519ebbc1f724fd52a1b)",
+      "expected_head_sha": "32971e7cbe5d3d547149d519ebbc1f724fd52a1b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:03:55.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-observable-foundation",
+        "head_sha": "32971e7cbe5d3d547149d519ebbc1f724fd52a1b",
         "cluster_id": null,
         "job_path": null
       }
