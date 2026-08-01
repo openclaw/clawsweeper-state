@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-01T19:26:34.910Z",
+  "updated_at": "2026-08-01T19:26:22.567Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117184:5152433249:2026-08-01T16:57:23Z:re_review",
+      "comment_id": "5152433249",
+      "comment_version_key": "5152433249:2026-08-01T16:57:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5152433249",
+      "comment_created_at": "2026-08-01T16:57:23Z",
+      "comment_updated_at": "2026-08-01T16:57:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117184,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:57:35.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media",
+        "head_sha": "7f5b7efa55df36bb241404a4c89ebcab342c3453",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117305:5150708682:2026-08-01T16:56:49Z:clawsweeper_needs_human",
       "comment_id": "5150708682",
@@ -32355,39 +32402,6 @@
         "kind": "pull_request",
         "branch": "octo/20260729-provider-add-recvqbA32usNcb",
         "head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:16:5140090028:2026-08-01T19:17:49Z:clawsweeper_needs_human",
-      "comment_id": "5140090028",
-      "comment_version_key": "5140090028:2026-08-01T19:17:49Z",
-      "comment_url": "https://github.com/openclaw/turnwire/pull/16#issuecomment-5140090028",
-      "comment_created_at": "2026-07-31T06:39:57Z",
-      "comment_updated_at": "2026-08-01T19:17:49Z",
-      "comment_body_sha256": "a93b5d0fdfc7857e738dcde8c6aa969d98e7858a2f789b268f99a88f6f3afd03",
-      "repo": "openclaw/turnwire",
-      "issue_number": 16,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SDK release changes MCP protocol negotiation and session behavior; without a real stdio exchange, maintainers cannot confirm that existing MCP clients can still list tools, call a... (sha=28989e371e901ece3c924cf88c10f5669e9bc18a)",
-      "expected_head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:26:34.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/github.com/modelcontextprotocol/go-sdk-1.7.0",
-        "head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
         "cluster_id": null,
         "job_path": null
       }
