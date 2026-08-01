@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:14:17.116Z",
+  "updated_at": "2026-08-01T09:15:14.723Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116188:5125807277:2026-08-01T06:35:32Z:clawsweeper_needs_human",
-      "comment_id": "5125807277",
-      "comment_version_key": "5125807277:2026-08-01T06:35:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116188#issuecomment-5125807277",
-      "comment_created_at": "2026-07-30T02:50:37Z",
-      "comment_updated_at": "2026-08-01T06:35:32Z",
-      "comment_body_sha256": "7ef6f9cb253002ca5198ed43a6b35ed4a36318c799436ca502bf46ddb9d7c17b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116188,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes hello-ok.policy.attachments a public compatibility contract: clients may rely on its optionality, decoded-size semantics, image-cap behavior, and connection-snapshot lif... (sha=f0fed21b449c4a18b495bd2ead445ebebb93ae0d)",
-      "expected_head_sha": "f0fed21b449c4a18b495bd2ead445ebebb93ae0d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:36:11.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine-issue-116144-feature-advertise-structured-chat-attac-a3aa42",
-        "head_sha": "f0fed21b449c4a18b495bd2ead445ebebb93ae0d",
-        "cluster_id": "automerge-openclaw-openclaw-116188",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116188.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117221:5149916290:2026-08-01T06:35:54Z:clawsweeper_auto_repair",
       "comment_id": "5149916290",
@@ -32652,6 +32605,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117313:5150784915:2026-08-01T09:14:23Z:re_review",
+      "comment_id": "5150784915",
+      "comment_version_key": "5150784915:2026-08-01T09:14:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117313#issuecomment-5150784915",
+      "comment_created_at": "2026-08-01T09:14:23Z",
+      "comment_updated_at": "2026-08-01T09:14:23Z",
+      "comment_body_sha256": "64bdac0ba4ab79a9a85df64f7a5bb4dc54890f0941531517a16457ad49085c43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117313,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T09:15:11.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-compaction-pruning-owner-0801-2d45",
+        "head_sha": "e5a130d21fa038c07cb5a42879d310d2fb25bf5a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
