@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:46:27.460Z",
+  "updated_at": "2026-08-01T20:46:31.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2413:5152883918:2026-08-01T18:48:58Z:re_review",
-      "comment_id": "5152883918",
-      "comment_version_key": "5152883918:2026-08-01T18:48:58Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5152883918",
-      "comment_created_at": "2026-08-01T18:48:58Z",
-      "comment_updated_at": "2026-08-01T18:48:58Z",
-      "comment_body_sha256": "c0d86ff5555a11d6ac5f3da1ed66e7fdd7808d6f30b77043fe12466c0a597213",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2413,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T18:49:31.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-proxy-model-pricing-2393",
-        "head_sha": "6076526038056604f30e08c13bb2a5f5eab369c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117562:5152890105:2026-08-01T18:50:14Z:clawsweeper_needs_human",
       "comment_id": "5152890105",
@@ -32160,6 +32113,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117624:5153350958:2026-08-01T20:45:55Z:clawsweeper_needs_human",
+      "comment_id": "5153350958",
+      "comment_version_key": "5153350958:2026-08-01T20:45:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117624#issuecomment-5153350958",
+      "comment_created_at": "2026-08-01T20:45:55Z",
+      "comment_updated_at": "2026-08-01T20:45:55Z",
+      "comment_body_sha256": "0ffa17ba3ba50e0de8f89d5f2efacd82020070d57dfd677101851a5d691ced97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117624,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the release-validation contract tests; direct Codex-source inspection required by the repository policy is unavailable here, so the supplied Testbox result cannot esta... (sha=4ba2c1b484e2e52bc8b055dc66f4dad944fac8be)",
+      "expected_head_sha": "4ba2c1b484e2e52bc8b055dc66f4dad944fac8be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:46:31.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-release-plugin-agentic-20260801",
+        "head_sha": "4ba2c1b484e2e52bc8b055dc66f4dad944fac8be",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
