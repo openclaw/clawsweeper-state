@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:58:36.166Z",
+  "updated_at": "2026-08-01T14:59:02.687Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115549:5118038629:2026-08-01T12:45:03Z:clawsweeper_needs_human",
-      "comment_id": "5118038629",
-      "comment_version_key": "5118038629:2026-08-01T12:45:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115549#issuecomment-5118038629",
-      "comment_created_at": "2026-07-29T12:56:05Z",
-      "comment_updated_at": "2026-08-01T12:45:03Z",
-      "comment_body_sha256": "839b9e2eb039f10a4772c51ce4c5e1e096b2d218d993164b4a92856539ab5c90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115549,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a public plugin configuration and SecretRef contract for gateway routing; maintainers should explicitly accept the exact per-web-search scope and reserved-header policy befo... (sha=f26249cc440e47b19fa8ebfe78e49b162e416fe0)",
-      "expected_head_sha": "f26249cc440e47b19fa8ebfe78e49b162e416fe0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:45:39.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse-merhi/web-search-security-review",
-        "head_sha": "f26249cc440e47b19fa8ebfe78e49b162e416fe0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:106:5011373234:2026-08-01T12:45:19Z:clawsweeper_needs_human",
       "comment_id": "5011373234",
@@ -32176,6 +32143,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115549:5151963250:2026-08-01T14:58:25Z:re_review",
+      "comment_id": "5151963250",
+      "comment_version_key": "5151963250:2026-08-01T14:58:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115549#issuecomment-5151963250",
+      "comment_created_at": "2026-08-01T14:58:25Z",
+      "comment_updated_at": "2026-08-01T14:58:25Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115549,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T14:59:00.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse-merhi/web-search-security-review",
+        "head_sha": "3a4c113767e06db48e0677fe513e4e7c2d5542c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
