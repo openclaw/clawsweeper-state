@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:37:46.066Z",
+  "updated_at": "2026-08-01T05:37:59.055Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116396:5130712417:2026-08-01T01:16:08Z:clawsweeper_auto_repair",
-      "comment_id": "5130712417",
-      "comment_version_key": "5130712417:2026-08-01T01:16:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116396#issuecomment-5130712417",
-      "comment_created_at": "2026-07-30T12:18:18Z",
-      "comment_updated_at": "2026-08-01T01:16:08Z",
-      "comment_body_sha256": "214ba6e3b0bacf333335d24ddfde6f407c4bcb1f8bbc35749a3cf488d4fc8732",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116396,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=211b15ddb506f0d5a72c5d303f536a825ac8e677)",
-      "expected_head_sha": "211b15ddb506f0d5a72c5d303f536a825ac8e677",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:50:41.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "worktree-fix-strip-orphaned-tool-use",
-        "head_sha": "9a5ddbc3554f22960451624bb1c079f3b040a194",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116504:5134643458:2026-08-01T01:29:22Z:clawsweeper_needs_human",
       "comment_id": "5134643458",
@@ -32122,6 +32089,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117181:5150017286:2026-08-01T05:37:17Z:re_review",
+      "comment_id": "5150017286",
+      "comment_version_key": "5150017286:2026-08-01T05:37:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117181#issuecomment-5150017286",
+      "comment_created_at": "2026-08-01T05:37:17Z",
+      "comment_updated_at": "2026-08-01T05:37:17Z",
+      "comment_body_sha256": "05af438dff5f609ac10c465831d6e395457ddf9985389f14b890a0f88e586c2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117181,
+      "author": "harjothkhara",
+      "author_id": 48686985,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:37:56.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/mcp-http-drain-flake",
+        "head_sha": "1bcad9eba5102d0631591c94511a470b78e9bf52",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
