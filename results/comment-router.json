@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T01:48:12.491Z",
+  "updated_at": "2026-08-01T01:48:33.128Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5064229674:2026-07-23T22:39:21Z:re_review",
-      "comment_id": "5064229674",
-      "comment_version_key": "5064229674:2026-07-23T22:39:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5064229674",
-      "comment_created_at": "2026-07-23T22:39:21Z",
-      "comment_updated_at": "2026-07-23T22:39:21Z",
-      "comment_body_sha256": "2dbd0e1641837d2544c7a352ac709c21312ac515f13df5865fb7872073a899d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 82d3a523f2206f3555442062c561eb7136772db1 now delegates bounded icu parsing/rendering to intl-messageformat per the accepted rfc and patrick feedback; the pr body records 80 focused tests, a clean full build, and exact source-renderer proof",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:20:02.206Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5064292765:2026-07-23T22:49:17Z:re_review",
       "comment_id": "5064292765",
@@ -31372,6 +31345,39 @@
         "head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117144:5148867933:2026-08-01T01:32:05Z:clawsweeper_needs_human",
+      "comment_id": "5148867933",
+      "comment_version_key": "5148867933:2026-08-01T01:32:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5148867933",
+      "comment_created_at": "2026-08-01T01:32:05Z",
+      "comment_updated_at": "2026-08-01T01:32:05Z",
+      "comment_body_sha256": "876ecca12786cd6649c3702d02561251473177904332089f7c5bcad9b0f45bac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a CI-produced artifact consumed outside the build job; a manifest omission or resolver mismatch could make extracted Gateway or ACP runtimes fail even when the normal che... (sha=ab01cddcd4b0fe47d501175cdf9440401de68258)",
+      "expected_head_sha": "ab01cddcd4b0fe47d501175cdf9440401de68258",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T01:48:33.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
+        "head_sha": "ab01cddcd4b0fe47d501175cdf9440401de68258",
+        "cluster_id": "automerge-openclaw-openclaw-117144",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
       }
     }
   ]
