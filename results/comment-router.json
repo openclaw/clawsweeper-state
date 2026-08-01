@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:11:39.395Z",
+  "updated_at": "2026-08-01T08:11:41.700Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117057:5147826419:2026-08-01T05:43:49Z:clawsweeper_needs_human",
-      "comment_id": "5147826419",
-      "comment_version_key": "5147826419:2026-08-01T05:43:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117057#issuecomment-5147826419",
-      "comment_created_at": "2026-07-31T21:59:47Z",
-      "comment_updated_at": "2026-08-01T05:43:49Z",
-      "comment_body_sha256": "80249f6766d21d827604e41dbf91684799ec7380b0b87c5ed51e855e18ef004a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117057,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies strong deterministic focused tests with real local peer, Opus, and RTP machinery, but the Gateway Talk session, OpenAI call/sid... (sha=fd995d6f78ca389bd3238c5f5aa9e1bd7654fe81)",
-      "expected_head_sha": "fd995d6f78ca389bd3238c5f5aa9e1bd7654fe81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:44:27.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/wave3-openai-gateway-audio-startup",
-        "head_sha": "fd995d6f78ca389bd3238c5f5aa9e1bd7654fe81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113171:5150041586:2026-08-01T05:44:29Z:re_review",
       "comment_id": "5150041586",
@@ -32225,6 +32192,53 @@
         "kind": "pull_request",
         "branch": "fix/schema-mismatch-no-db-quarantine-115421",
         "head_sha": "6b79442d475822064d8c7b881f7ecbed2d26a5cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116248:5150561495:2026-08-01T08:11:01Z:re_review",
+      "comment_id": "5150561495",
+      "comment_version_key": "5150561495:2026-08-01T08:11:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5150561495",
+      "comment_created_at": "2026-08-01T08:11:01Z",
+      "comment_updated_at": "2026-08-01T08:11:01Z",
+      "comment_body_sha256": "d7b704624d763b0a9d538103e4a2d0d40ebcfc2c1f096a30d9468fc0cb586bf2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116248,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:11:39.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-paste-subagent-breaks-main-env",
+        "head_sha": "e0b9ab856b6211bd311aa0f4fa219ea8a280f0cc",
         "cluster_id": null,
         "job_path": null
       },
