@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:28:31.862Z",
+  "updated_at": "2026-08-01T05:28:47.714Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106789:4962740326:2026-07-30T14:04:23Z:clawsweeper_needs_human",
-      "comment_id": "4962740326",
-      "comment_version_key": "4962740326:2026-07-30T14:04:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106789#issuecomment-4962740326",
-      "comment_created_at": "2026-07-13T21:13:40Z",
-      "comment_updated_at": "2026-07-30T14:04:23Z",
-      "comment_body_sha256": "eb42de2b0eb2dcaea5688560f08aa7c608f45c03c11137fb14c39da79df02786",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106789,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is currently dirty against main; a three-way merge/rebase may expose conflicts or invalidate the earlier exact-head proof. (sha=b272f5a912cacf9a67a601a9e7296b04a84f9d4e)",
-      "expected_head_sha": "b272f5a912cacf9a67a601a9e7296b04a84f9d4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:50:41.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-104485",
-        "head_sha": "b272f5a912cacf9a67a601a9e7296b04a84f9d4e",
-        "cluster_id": "automerge-openclaw-openclaw-106789",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-106789.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-07-29T16:26:25Z:clawsweeper_needs_human",
       "comment_id": "4971448190",
@@ -32052,6 +32019,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117057:5149981402:2026-08-01T05:26:38Z:re_review",
+      "comment_id": "5149981402",
+      "comment_version_key": "5149981402:2026-08-01T05:26:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117057#issuecomment-5149981402",
+      "comment_created_at": "2026-08-01T05:26:38Z",
+      "comment_updated_at": "2026-08-01T05:26:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117057,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:28:45.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/wave3-openai-gateway-audio-startup",
+        "head_sha": "2dbdf4f4ba001fda47325f01217f9eab4df1c92d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
