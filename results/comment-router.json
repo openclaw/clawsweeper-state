@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:50:02.322Z",
+  "updated_at": "2026-08-01T11:52:29.313Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-01T09:34:40Z:clawsweeper_needs_human",
-      "comment_id": "4854073498",
-      "comment_version_key": "4854073498:2026-08-01T09:34:40Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
-      "comment_created_at": "2026-07-01T11:37:33Z",
-      "comment_updated_at": "2026-08-01T09:34:40Z",
-      "comment_body_sha256": "3984b35a07aeaaa09f44b416a7077d3e33543adf6f66472a906070171e0dc369",
-      "repo": "openclaw/clawscan",
-      "issue_number": 7,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is dirty against current main. Its conflict resolution must retain the AIG scanner pin and install command and must not regress the newer SkillSpector revision. (sha=3db07fe55342a6b9ef14a15d7565daa79a2bae83)",
-      "expected_head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T09:35:20.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/runtime-tool-updates",
-        "head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117063:5147878818:2026-08-01T09:34:52Z:clawsweeper_needs_human",
       "comment_id": "5147878818",
@@ -31946,6 +31913,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117331:5150905715:2026-08-01T11:51:50Z:clawsweeper_needs_human",
+      "comment_id": "5150905715",
+      "comment_version_key": "5150905715:2026-08-01T11:51:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117331#issuecomment-5150905715",
+      "comment_created_at": "2026-08-01T09:51:36Z",
+      "comment_updated_at": "2026-08-01T11:51:50Z",
+      "comment_body_sha256": "6e8b0a181d05f363f4787e659321e0fda5cb44b318d12c2cdeefdf8d75fb5208",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes CI execution ownership for the slow local PTY smoke; merge should wait for the exact-head build-artifacts job to show the migrated tui-pty result rather than relying on... (sha=ab4c74b0971138ca8d77944ba4649cf2081b9873)",
+      "expected_head_sha": "ab4c74b0971138ca8d77944ba4649cf2081b9873",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:52:29.312Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-tui-submit-shutdown-20260801",
+        "head_sha": "ab4c74b0971138ca8d77944ba4649cf2081b9873",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
