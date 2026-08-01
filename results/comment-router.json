@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:16:45.365Z",
+  "updated_at": "2026-08-01T13:16:55.143Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:166:5093818766:2026-08-01T10:57:35Z:clawsweeper_needs_human",
-      "comment_id": "5093818766",
-      "comment_version_key": "5093818766:2026-08-01T10:57:35Z",
-      "comment_url": "https://github.com/openclaw/clawpatch/pull/166#issuecomment-5093818766",
-      "comment_created_at": "2026-07-27T16:14:50Z",
-      "comment_updated_at": "2026-08-01T10:57:35Z",
-      "comment_body_sha256": "bb548d45022080aad14e56c74a220cb849687accbf9430b898cffcd41987b76c",
-      "repo": "openclaw/clawpatch",
-      "issue_number": 166,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Align the TruffleHog binary version with the action pin (P2)** - The wrapper changes to v3.96.0, but the unchanged version: \"3.95.9\" input still selects the older scanner binary. Update that input as well, or ke...; Review finding: [P2] Align the TruffleHog binary version with the action pin — .github/workflows/secret-scan.yml:50-55 - [medium] Secret scanner remains on the prior selected vers... (sha=ee1de7b311129aaafe76aca753214d584a09ab9c)",
-      "expected_head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T10:58:24.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github-actions-30748c8c3e",
-        "head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:57:5120620103:2026-08-01T10:57:48Z:clawsweeper_needs_human",
       "comment_id": "5120620103",
@@ -32631,6 +32598,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115277:5151576553:2026-08-01T13:13:30Z:re_review",
+      "comment_id": "5151576553",
+      "comment_version_key": "5151576553:2026-08-01T13:13:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115277#issuecomment-5151576553",
+      "comment_created_at": "2026-08-01T13:13:30Z",
+      "comment_updated_at": "2026-08-01T13:13:30Z",
+      "comment_body_sha256": "f2ef7b4e99f50fa91f07a1882e24a987f7eb779bd0deed181b71ae35d9b45f62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115277,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T13:16:52.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-server-prefix-toolsallow",
+        "head_sha": "b6e7915a2fe6f6ce3f8cd630e5d7c3e09eee8d37",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
