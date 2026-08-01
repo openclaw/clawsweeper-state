@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:04:40.069Z",
+  "updated_at": "2026-08-01T08:05:12.484Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117175:5149961295:2026-08-01T05:20:06Z:re_review",
-      "comment_id": "5149961295",
-      "comment_version_key": "5149961295:2026-08-01T05:20:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117175#issuecomment-5149961295",
-      "comment_created_at": "2026-08-01T05:20:06Z",
-      "comment_updated_at": "2026-08-01T05:20:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117175,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:21:32.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dsml-recovery-buffer-cap-90015",
-        "head_sha": "ac5fe2b0dc9cb763d987cc5d2d12939af789cfc8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117194:5149668623:2026-08-01T05:19:28Z:clawsweeper_needs_human",
       "comment_id": "5149668623",
@@ -32339,6 +32292,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/lossless-claw-52cf67a",
         "head_sha": "667732bde3d297ea8c2c057b970b875a3820814d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:220:4987751509:2026-08-01T08:00:12Z:clawsweeper_needs_human",
+      "comment_id": "4987751509",
+      "comment_version_key": "4987751509:2026-08-01T08:00:12Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/220#issuecomment-4987751509",
+      "comment_created_at": "2026-07-16T03:06:53Z",
+      "comment_updated_at": "2026-08-01T08:00:12Z",
+      "comment_body_sha256": "05575447a27d4f468726c84784568a3f23cc41515008c82d715cf6708857026e",
+      "repo": "openclaw/crabpot",
+      "issue_number": 220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this conflict-dirty branch would combine a semver-major fixture graph change with a stale 28-file generated-report snapshot, potentially overwriting current baselines or maski... (sha=3d852806bb9439502ef4b083797ff3e2229ea925)",
+      "expected_head_sha": "3d852806bb9439502ef4b083797ff3e2229ea925",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:05:12.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/plugins/memory-tencentdb/tencentdb-agent-memory/memory-tencentdb-1.0.1",
+        "head_sha": "3d852806bb9439502ef4b083797ff3e2229ea925",
         "cluster_id": null,
         "job_path": null
       }
