@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-01T17:43:25.353Z",
+  "updated_at": "2026-08-01T17:42:50.106Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117485:5152204733:2026-08-01T16:00:25Z:clawsweeper_auto_merge",
+      "comment_id": "5152204733",
+      "comment_version_key": "5152204733:2026-08-01T16:00:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152204733",
+      "comment_created_at": "2026-08-01T16:00:25Z",
+      "comment_updated_at": "2026-08-01T16:00:25Z",
+      "comment_body_sha256": "33421e529b59ec4073625ff2b37ec6174296d8380ff635ce46f9f06b2b6d1d83",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=95ee8fca7f8a3d67c8ee3499434535154e01d76b); current checks are failing: Scan iOS dead code:FAILURE, Intersect shared OpenClawKit dead code:FAILURE, ios-build:FAILURE",
+      "expected_head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:01:15.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-110171",
+        "head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
+        "cluster_id": "automerge-openclaw-openclaw-117485",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117276:5150411732:2026-08-01T16:03:07Z:clawsweeper_needs_human",
       "comment_id": "5150411732",
@@ -31267,39 +31314,6 @@
         "kind": "pull_request",
         "branch": "codex/qa300-matrix-block-typing-diagnostic",
         "head_sha": "19aa2807fcfcf47fa641b12aed98b1539878166c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114750:5097086879:2026-08-01T17:37:11Z:clawsweeper_auto_repair",
-      "comment_id": "5097086879",
-      "comment_version_key": "5097086879:2026-08-01T17:37:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114750#issuecomment-5097086879",
-      "comment_created_at": "2026-07-27T21:36:26Z",
-      "comment_updated_at": "2026-08-01T17:37:11Z",
-      "comment_body_sha256": "1b2e18b9de3f4f4d005c549bfbe47aaf82a3b1aa3e752abf2e973a4fcb4ad9c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114750,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4a11660058c3281974b6dca7b725a446526a7433)",
-      "expected_head_sha": "4a11660058c3281974b6dca7b725a446526a7433",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:43:25.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114730",
-        "head_sha": "4a11660058c3281974b6dca7b725a446526a7433",
         "cluster_id": null,
         "job_path": null
       }
