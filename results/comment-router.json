@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:19:45.807Z",
+  "updated_at": "2026-08-01T11:20:47.909Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T08:29:31Z:clawsweeper_needs_human",
-      "comment_id": "5149564387",
-      "comment_version_key": "5149564387:2026-08-01T08:29:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
-      "comment_created_at": "2026-08-01T03:22:15Z",
-      "comment_updated_at": "2026-08-01T08:29:31Z",
-      "comment_body_sha256": "483f6c5d4ff04d179cf001208c34638823f1862e32b1019b3fddbc4b2da1b6d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117180,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the guarded TruffleHog action pin (P1)** - The PR changes this action to v3.96.0, but test/scripts/ci-workflow-guards.test.ts still asserts the v3.95.9 SHA for this exact scanning step. Update that a...; Review finding: [P1] Synchronize the guarded TruffleHog action pin — .github/workflows/ci.yml:904 - [medium] Restore secret-scanner pin guard coverage — .github/workflows/ci.yml:9... (sha=e9dbf249a225b1df00e0416debee3c172a226407)",
-      "expected_head_sha": "e9dbf249a225b1df00e0416debee3c172a226407",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:33:03.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-01e47d2daa",
-        "head_sha": "e9dbf249a225b1df00e0416debee3c172a226407",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117303:5150638671:2026-08-01T08:33:57Z:clawsweeper_needs_human",
       "comment_id": "5150638671",
@@ -32118,6 +32085,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117371:5151196559:2026-08-01T11:20:11Z:clawsweeper_needs_human",
+      "comment_id": "5151196559",
+      "comment_version_key": "5151196559:2026-08-01T11:20:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117371#issuecomment-5151196559",
+      "comment_created_at": "2026-08-01T11:20:11Z",
+      "comment_updated_at": "2026-08-01T11:20:11Z",
+      "comment_body_sha256": "0b25e61c4217daaa108a2a14655cc58fba77c54dc3a72cc9220f0e6f92ac4867",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117371,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused provider tests and SDK-contract reasoning, but no redacted after-fix Google Live runtime artifact demonstrates the chang... (sha=693ed336df53f7eff66565a36489ce5420a41f59)",
+      "expected_head_sha": "693ed336df53f7eff66565a36489ce5420a41f59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:20:47.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-google-live-resumption-token",
+        "head_sha": "693ed336df53f7eff66565a36489ce5420a41f59",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
