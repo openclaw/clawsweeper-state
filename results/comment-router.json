@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:00:28.459Z",
+  "updated_at": "2026-08-01T14:01:12.872Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117176:5149475292:2026-08-01T08:52:19Z:clawsweeper_needs_human",
-      "comment_id": "5149475292",
-      "comment_version_key": "5149475292:2026-08-01T08:52:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117176#issuecomment-5149475292",
-      "comment_created_at": "2026-08-01T02:59:29Z",
-      "comment_updated_at": "2026-08-01T08:52:19Z",
-      "comment_body_sha256": "a5ab87ff0159968d0df43f45f415e28b43e2a0abfa61a673c0eca7d83b6f6f67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains a strong real ephemeral-Gateway scenario on 369e71df2368cd2d9de75ad4224189386b7bb8c1, but the current head 97a303405f9... (sha=97a303405f90b32b7d89144759734c852958f938)",
-      "expected_head_sha": "97a303405f90b32b7d89144759734c852958f938",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:44:23.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/thread-reply-current-source-marking",
-        "head_sha": "97a303405f90b32b7d89144759734c852958f938",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-01T11:39:57Z:clawsweeper_auto_repair",
       "comment_id": "5149865878",
@@ -31996,6 +31963,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111730:5151747681:2026-08-01T14:00:32Z:re_review",
+      "comment_id": "5151747681",
+      "comment_version_key": "5151747681:2026-08-01T14:00:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111730#issuecomment-5151747681",
+      "comment_created_at": "2026-08-01T14:00:32Z",
+      "comment_updated_at": "2026-08-01T14:00:32Z",
+      "comment_body_sha256": "ba28608f62475d8ae8a828ebbb245a52da827eb9256fd1ca7def6dd5fc0bcaa0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111730,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T14:01:08.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-realtime-tool-call-args-parse-error",
+        "head_sha": "eb45b87699eec8f2dc3cb1ed4665a8b491fb026f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
