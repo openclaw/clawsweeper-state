@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:20:31.623Z",
+  "updated_at": "2026-08-01T20:20:34.856Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117521:5152467235:2026-08-01T17:06:22Z:clawsweeper_auto_merge",
-      "comment_id": "5152467235",
-      "comment_version_key": "5152467235:2026-08-01T17:06:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117521#issuecomment-5152467235",
-      "comment_created_at": "2026-08-01T17:06:22Z",
-      "comment_updated_at": "2026-08-01T17:06:22Z",
-      "comment_body_sha256": "a96c380ba9616a9f57274d4d470947960ddc0cf9708e2cf35408d109ad2c1988",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117521,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=e86bc166dac8a585dc4fd33c20e68ac2ca2a076a); current checks are failing: checks-node-compact-small-2:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "e86bc166dac8a585dc4fd33c20e68ac2ca2a076a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T18:00:27.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-117491",
-        "head_sha": "e86bc166dac8a585dc4fd33c20e68ac2ca2a076a",
-        "cluster_id": "automerge-openclaw-openclaw-117521",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117521.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117521.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:113663",
       "comment_id": "repair-loop-label-sweep:automerge:113663",
@@ -32231,6 +32184,39 @@
         "kind": "pull_request",
         "branch": "automation/runtime-tool-updates",
         "head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116551:5135905501:2026-08-01T20:19:57Z:clawsweeper_needs_human",
+      "comment_id": "5135905501",
+      "comment_version_key": "5135905501:2026-08-01T20:19:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5135905501",
+      "comment_created_at": "2026-07-30T20:25:18Z",
+      "comment_updated_at": "2026-08-01T20:19:57Z",
+      "comment_body_sha256": "ee759714308691b4fdbacea6cab17a09c48bd9767cc31855590732143d26da86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116551,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is currently dirty against main and overlaps the August 1 compaction/context-engine ownership refactor, so it is not merge-ready until rebased. (sha=3aa5f10c96a731895b28c20ea614faf73e844d24)",
+      "expected_head_sha": "3aa5f10c96a731895b28c20ea614faf73e844d24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:20:34.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-tool-result-aggregate",
+        "head_sha": "3aa5f10c96a731895b28c20ea614faf73e844d24",
         "cluster_id": null,
         "job_path": null
       }
