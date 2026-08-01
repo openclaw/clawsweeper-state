@@ -1,0 +1,145 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30676738440",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30676738440",
+  "head_sha": "8fbb46bd20a9d0d67d3446a4e46e417a45314dad",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-08-01T01:47:34.616Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "Current main a5d89e169eac425152097c4d942b3eb676fdeced still reproduces the source-level defect: the CI producer archives only dist, dist-runtime, and packages/*/dist, while workspace-template discovery requires package-root src/agents/templates and the installed-workspace smoke requires package-root template files. The checkout is read-only and has no generated runtime outputs, so implementation, archive extraction, Gateway readiness, and ACP import/startup proof cannot be completed in this worker.",
+  "actions": [
+    {
+      "target": "#97916",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Historical context only; already closed."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Distinct ACP lifecycle decision; keep open independently."
+    },
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "No open viable PR owns this still-reproducible, narrow CI artifact manifest defect."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Historical contributor work; already closed and not a viable branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "A writable executor can create the required one-branch fix and run the real artifact proof."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only on a writable trusted executor; no GitHub mutation was attempted."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117144",
+      "branch": "clawsweeper/issue-openclaw-openclaw-98276",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117144",
+      "commit": "ab01cddcd4b0fe47d501175cdf9440401de68258",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#98276",
+      "pr": "https://github.com/openclaw/openclaw/pull/117144",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117144",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117144",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(ci): package runtime resources in dist artifact",
+      "idempotency_key": null,
+      "reason": "checks are not clean: check-dependencies: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
