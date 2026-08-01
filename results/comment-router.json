@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:09:27.706Z",
+  "updated_at": "2026-08-01T06:10:04.436Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:941:5097511795:2026-08-01T01:54:58Z:clawsweeper_needs_human",
-      "comment_id": "5097511795",
-      "comment_version_key": "5097511795:2026-08-01T01:54:58Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/941#issuecomment-5097511795",
-      "comment_created_at": "2026-07-27T22:31:15Z",
-      "comment_updated_at": "2026-08-01T01:54:58Z",
-      "comment_body_sha256": "b165da64e7ea1fd188e54734f15da8eadf5e53474249f719b0c5731e9bf16edb",
-      "repo": "openclaw/gogcli",
-      "issue_number": 941,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that intentionally rely on positional values spilling beyond a finite target range will receive a validation error before the API request instead of the previous writ... (sha=0bee84d15f9fb756a344a558ea7603375cf4fee1)",
-      "expected_head_sha": "0bee84d15f9fb756a344a558ea7603375cf4fee1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:59:04.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sheets-comma-split",
-        "head_sha": "0bee84d15f9fb756a344a558ea7603375cf4fee1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:947:5118036500:2026-08-01T01:57:58Z:clawsweeper_auto_repair",
       "comment_id": "5118036500",
@@ -32288,6 +32255,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T06:09:27.706Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116382:5150123851:2026-08-01T06:09:22Z:re_review",
+      "comment_id": "5150123851",
+      "comment_version_key": "5150123851:2026-08-01T06:09:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116382#issuecomment-5150123851",
+      "comment_created_at": "2026-08-01T06:09:22Z",
+      "comment_updated_at": "2026-08-01T06:09:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116382,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:10:01.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-stale-leaf",
+        "head_sha": "3236c141e072d296f633b02fafd6e26a18f85355",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
