@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:51:36.578Z",
+  "updated_at": "2026-08-01T20:52:17.035Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116543:5152946175:2026-08-01T19:03:17Z:re_review",
-      "comment_id": "5152946175",
-      "comment_version_key": "5152946175:2026-08-01T19:03:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116543#issuecomment-5152946175",
-      "comment_created_at": "2026-08-01T19:03:17Z",
-      "comment_updated_at": "2026-08-01T19:03:17Z",
-      "comment_body_sha256": "064f92a0554f11404ade5a84895e6dbcd0ccab85217f213c611cf590cd77bcc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116543,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:03:54.350Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-thread-replies-pagination-98870",
-        "head_sha": "5687e61d46b92ef60bd78e25e214cbe351ca56eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89526:4604300916:2026-08-01T19:04:20Z:clawsweeper_auto_repair",
       "comment_id": "4604300916",
@@ -32042,6 +31995,39 @@
         "kind": "pull_request",
         "branch": "ui/dashboard-session-timestamps",
         "head_sha": "862716e2b8909ccdb5e1635da05e07d5a6b1cedc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113371:5072333092:2026-08-01T20:51:33Z:clawsweeper_auto_repair",
+      "comment_id": "5072333092",
+      "comment_version_key": "5072333092:2026-08-01T20:51:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113371#issuecomment-5072333092",
+      "comment_created_at": "2026-07-24T16:58:07Z",
+      "comment_updated_at": "2026-08-01T20:51:33Z",
+      "comment_body_sha256": "ae36d47bd65337ec1bd155e9e06c12b4a359028bc8acd82f3fd898f50dcddc2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113371,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a080632e75e3f40362150b7cc1bacbb7dd5deba0)",
+      "expected_head_sha": "a080632e75e3f40362150b7cc1bacbb7dd5deba0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:52:17.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-109285-acp-binding-sessions-hang-restart",
+        "head_sha": "a080632e75e3f40362150b7cc1bacbb7dd5deba0",
         "cluster_id": null,
         "job_path": null
       }
