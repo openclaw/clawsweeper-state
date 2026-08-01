@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:35:37.432Z",
+  "updated_at": "2026-08-01T08:36:22.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114902:5099710900:2026-08-01T06:00:34Z:clawsweeper_needs_human",
-      "comment_id": "5099710900",
-      "comment_version_key": "5099710900:2026-08-01T06:00:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114902#issuecomment-5099710900",
-      "comment_created_at": "2026-07-28T03:49:08Z",
-      "comment_updated_at": "2026-08-01T06:00:34Z",
-      "comment_body_sha256": "1f6376cc0cc9b313406eeb2d8a9a4ec929306ee1cb79c368d0543712d26efcf5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114902,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The fixed policy terminates a QQBot socket after two unanswered heartbeat sends; on an impaired but recoverable link, that deliberately interrupts delivery and consumes reconnect budg... (sha=840bf73812b75c3a9f3a6b5ee1e9b95c4e29bc7d)",
-      "expected_head_sha": "840bf73812b75c3a9f3a6b5ee1e9b95c4e29bc7d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:01:51.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qqbot-heartbeat-ack-watchdog",
-        "head_sha": "840bf73812b75c3a9f3a6b5ee1e9b95c4e29bc7d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114902:5105535616:2026-07-28T14:34:54Z:re_review",
       "comment_id": "5105535616",
@@ -32457,6 +32424,53 @@
         "kind": "pull_request",
         "branch": "stack/passport-wiring-3-runtime",
         "head_sha": "3a6e9141a5708afd1f202315af5bf650594ea46a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117258:5150644491:2026-08-01T08:35:42Z:re_review",
+      "comment_id": "5150644491",
+      "comment_version_key": "5150644491:2026-08-01T08:35:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117258#issuecomment-5150644491",
+      "comment_created_at": "2026-08-01T08:35:42Z",
+      "comment_updated_at": "2026-08-01T08:35:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117258,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:36:20.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117209-auth-snapshot",
+        "head_sha": "99b1782a4cfe340a41f124e493f84742f71c5c01",
         "cluster_id": null,
         "job_path": null
       },
