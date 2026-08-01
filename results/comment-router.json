@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:23:45.555Z",
+  "updated_at": "2026-08-01T19:23:58.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115205:5106256486:2026-08-01T14:26:46Z:clawsweeper_needs_human",
-      "comment_id": "5106256486",
-      "comment_version_key": "5106256486:2026-08-01T14:26:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115205#issuecomment-5106256486",
-      "comment_created_at": "2026-07-28T15:36:12Z",
-      "comment_updated_at": "2026-08-01T14:26:46Z",
-      "comment_body_sha256": "9109f914eabda32b09c58bf6e997526c985b438bb73185a4ac23f920ed496f32",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115205,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR head is behind current main; refresh required checks against GitHub's exact clean merge result before landing. (sha=3239538bd0cf2bdb3a385a3bb64848e7e8178a8a)",
-      "expected_head_sha": "3239538bd0cf2bdb3a385a3bb64848e7e8178a8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:44:58.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/signal-group-id-base64-mismatch",
-        "head_sha": "3239538bd0cf2bdb3a385a3bb64848e7e8178a8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115505:5118012354:2026-08-01T14:36:53Z:clawsweeper_needs_human",
       "comment_id": "5118012354",
@@ -32841,6 +32808,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117577:5153021831:2026-08-01T19:23:17Z:re_review",
+      "comment_id": "5153021831",
+      "comment_version_key": "5153021831:2026-08-01T19:23:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117577#issuecomment-5153021831",
+      "comment_created_at": "2026-08-01T19:23:17Z",
+      "comment_updated_at": "2026-08-01T19:23:17Z",
+      "comment_body_sha256": "13d4a79dc4990123493dbb7262e04d07b7d4e9161d9d13f5b106cb9cd1e462af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117577,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:23:55.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/kova-bootstrap-trace",
+        "head_sha": "e44ee56a8f05360dc23db801d125990d3e6489ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
