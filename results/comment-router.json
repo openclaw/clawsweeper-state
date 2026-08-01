@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T04:32:08.322Z",
+  "updated_at": "2026-08-01T04:33:03.253Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-07-31T23:29:15Z:clawsweeper_needs_human",
-      "comment_id": "5088305683",
-      "comment_version_key": "5088305683:2026-07-31T23:29:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
-      "comment_created_at": "2026-07-27T07:06:46Z",
-      "comment_updated_at": "2026-07-31T23:29:15Z",
-      "comment_body_sha256": "4ffc0fdc3ab53797713bcc9df2ee988edeec63f5266c26904411ec4e6465901f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR documents CI, tests, and isolated migration suites but explicitly records that no inspectable after-fix Doctor upgrade/restart artifact... (sha=7e2af72ab3af7634b208d9f630886048c024f133)",
-      "expected_head_sha": "7e2af72ab3af7634b208d9f630886048c024f133",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T00:01:13.137Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/no-stored-default",
-        "head_sha": "4e7df421d42a13667e49a295f3f0513ad9169933",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112765:5090071813:2026-07-31T23:28:41Z:clawsweeper_auto_repair",
       "comment_id": "5090071813",
@@ -32954,6 +32921,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:68280:5149804256:2026-08-01T04:31:42Z:re_review",
+      "comment_id": "5149804256",
+      "comment_version_key": "5149804256:2026-08-01T04:31:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/68280#issuecomment-5149804256",
+      "comment_created_at": "2026-08-01T04:31:42Z",
+      "comment_updated_at": "2026-08-01T04:31:42Z",
+      "comment_body_sha256": "1018e836512fd1686ce5cfe5387d7894b3c5688249aef891c594e420316c805d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 68280,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T04:33:01.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/loopback-local-probe-auth",
+        "head_sha": "6f6f097f0ca494ffcd811f1f421864fa3fa551c4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
