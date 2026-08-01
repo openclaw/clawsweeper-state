@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:07:00.811Z",
+  "updated_at": "2026-08-01T07:07:17.345Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115329:5132072570:2026-08-01T04:09:59Z:clawsweeper_needs_human",
-      "comment_id": "5132072570",
-      "comment_version_key": "5132072570:2026-08-01T04:09:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115329#issuecomment-5132072570",
-      "comment_created_at": "2026-07-30T14:24:57Z",
-      "comment_updated_at": "2026-08-01T04:09:59Z",
-      "comment_body_sha256": "3baa0cb6b3210c588df736c57e8a1e90caa8deb345b724e3d303e3781b9f6fed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115329,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix real Gateway invocation is included; the PR body records only blocked local validation. Before merge, add redacted terminal, live...; Review finding: [P1] Wait for the approved Gateway memory contract — src/gateway/methods/core-descriptors.ts:362 - [P1] Update the 2026.7 Gateway-method expectation — src/gateway/... (sha=a2a894f5c0871085a2e6cf80c50ded32ee608c3b)",
-      "expected_head_sha": "a2a894f5c0871085a2e6cf80c50ded32ee608c3b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T04:20:17.586Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/memory-list-gateway",
-        "head_sha": "a2a894f5c0871085a2e6cf80c50ded32ee608c3b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113896:5080971631:2026-08-01T04:15:53Z:clawsweeper_auto_repair",
       "comment_id": "5080971631",
@@ -31812,6 +31779,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89040:5150325012:2026-08-01T07:06:34Z:re_review",
+      "comment_id": "5150325012",
+      "comment_version_key": "5150325012:2026-08-01T07:06:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5150325012",
+      "comment_created_at": "2026-08-01T07:06:34Z",
+      "comment_updated_at": "2026-08-01T07:06:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89040,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T07:07:13.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bootstrap-context-event-loop-stall",
+        "head_sha": "16436a2882b9e74b133841abe8c1f4a259b61944",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
