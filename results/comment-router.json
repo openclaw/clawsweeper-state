@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:06:44.603Z",
+  "updated_at": "2026-08-01T10:08:34.789Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:309:4949888150:2026-08-01T07:16:11Z:clawsweeper_auto_repair",
-      "comment_id": "4949888150",
-      "comment_version_key": "4949888150:2026-08-01T07:16:11Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/309#issuecomment-4949888150",
-      "comment_created_at": "2026-07-12T04:09:16Z",
-      "comment_updated_at": "2026-08-01T07:16:11Z",
-      "comment_body_sha256": "f128288bf228940dcaafc6dd294c2ed0e94cd016ce7771bf6edc365cd03c000b",
-      "repo": "openclaw/clownfish",
-      "issue_number": 309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=62039ae65b18eeff123b6781792d0745d11a47a9)",
-      "expected_head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:16:54.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-only-dedupe-close",
-        "head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:161:5088952324:2026-08-01T07:16:16Z:clawsweeper_needs_human",
       "comment_id": "5088952324",
@@ -32720,6 +32687,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112623:5078329042:2026-08-01T10:07:47Z:clawsweeper_needs_human",
+      "comment_id": "5078329042",
+      "comment_version_key": "5078329042:2026-08-01T10:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5078329042",
+      "comment_created_at": "2026-07-25T11:32:53Z",
+      "comment_updated_at": "2026-08-01T10:07:47Z",
+      "comment_body_sha256": "7493981bc6882eb857a9ad8b90a910abe8770652a829e57d10a0f0bdff6b26f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112623,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A redacted isolated trace proves injection on earlier head 78b9556, but final head 55f4ef adds the capped-entry and mixed-outcome guid... (sha=55f4efdda4723ae5df97bff1360e218bcce70c00)",
+      "expected_head_sha": "55f4efdda4723ae5df97bff1360e218bcce70c00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:08:34.788Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "spike/recently-completed-subagents-prompt",
+        "head_sha": "55f4efdda4723ae5df97bff1360e218bcce70c00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
