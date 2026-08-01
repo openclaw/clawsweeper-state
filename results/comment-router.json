@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:15:14.723Z",
+  "updated_at": "2026-08-01T09:15:44.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117221:5149916290:2026-08-01T06:35:54Z:clawsweeper_auto_repair",
-      "comment_id": "5149916290",
-      "comment_version_key": "5149916290:2026-08-01T06:35:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117221#issuecomment-5149916290",
-      "comment_created_at": "2026-08-01T05:06:44Z",
-      "comment_updated_at": "2026-08-01T06:35:54Z",
-      "comment_body_sha256": "5b0e7b5d9992a471ec7726e46c90762413726c2eefd5eac3a1cfd7a4f9ebefee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117221,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=673f77f7ed85dc2e8fec18c9994cffb1cdabd73e)",
-      "expected_head_sha": "673f77f7ed85dc2e8fec18c9994cffb1cdabd73e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:36:33.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-2026-07-31-e",
-        "head_sha": "673f77f7ed85dc2e8fec18c9994cffb1cdabd73e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117260:5150212720:2026-08-01T06:36:07Z:re_review",
       "comment_id": "5150212720",
@@ -32652,6 +32619,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117147:5148938254:2026-08-01T09:14:59Z:clawsweeper_needs_human",
+      "comment_id": "5148938254",
+      "comment_version_key": "5148938254:2026-08-01T09:14:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117147#issuecomment-5148938254",
+      "comment_created_at": "2026-08-01T01:50:59Z",
+      "comment_updated_at": "2026-08-01T09:14:59Z",
+      "comment_body_sha256": "08464531898c6494f4ca02cfefb2aa28ff9ed81dd29c37051c8ece00114860ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body now includes redacted focused-test output, but both new cases use a mocked completion transport; add redacted real-runtime compacti... (sha=1f40b3f30c5b276f63821f7e7754e0e0fef115a2)",
+      "expected_head_sha": "1f40b3f30c5b276f63821f7e7754e0e0fef115a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:15:44.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-111856-compaction-image-regression",
+        "head_sha": "1f40b3f30c5b276f63821f7e7754e0e0fef115a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
