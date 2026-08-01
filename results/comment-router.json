@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T04:09:37.441Z",
+  "updated_at": "2026-08-01T04:09:41.555Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115525:5113662639:2026-07-29T05:36:31Z:re_review",
-      "comment_id": "5113662639",
-      "comment_version_key": "5113662639:2026-07-29T05:36:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115525#issuecomment-5113662639",
-      "comment_created_at": "2026-07-29T05:36:31Z",
-      "comment_updated_at": "2026-07-29T05:36:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115525,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T23:37:31.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-structured-content-keeps-images",
-        "head_sha": "52751ce194db410e761057cdfdc5c817fab7f7b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115525:5118012962:2026-07-31T23:31:26Z:clawsweeper_auto_repair",
       "comment_id": "5118012962",
@@ -32978,6 +32931,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116016:5121541027:2026-08-01T04:07:03Z:clawsweeper_needs_human",
+      "comment_id": "5121541027",
+      "comment_version_key": "5121541027:2026-08-01T04:07:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116016#issuecomment-5121541027",
+      "comment_created_at": "2026-07-29T17:49:52Z",
+      "comment_updated_at": "2026-08-01T04:07:03Z",
+      "comment_body_sha256": "2470acd64ff0b56748abae58965717ee5a4be90a3d8a0468846e2c65e984c3c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116016,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains useful real Telnyx API output for the monorepo implementation, but it does not show the maintainer-required publi...; Review finding: [P1] Replace the monorepo runtime with the published Telnyx package — extensions/telnyx/index.ts:14-18 - [medium] Publish and pin the provider artifact — extension... (sha=3e1df49ef36dd3fe290cd91cd97a0237feeca851)",
+      "expected_head_sha": "3e1df49ef36dd3fe290cd91cd97a0237feeca851",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T04:09:41.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telnyx-inference-provider",
+        "head_sha": "3e1df49ef36dd3fe290cd91cd97a0237feeca851",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
