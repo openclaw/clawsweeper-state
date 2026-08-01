@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:31:21.048Z",
+  "updated_at": "2026-08-01T22:31:27.102Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117274:5153102751:2026-08-01T19:42:32Z:re_review",
-      "comment_id": "5153102751",
-      "comment_version_key": "5153102751:2026-08-01T19:42:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117274#issuecomment-5153102751",
-      "comment_created_at": "2026-08-01T19:42:32Z",
-      "comment_updated_at": "2026-08-01T19:42:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117274,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:43:12.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/114128-literal-newline-guard",
-        "head_sha": "e011046d438b5b7180571b3d91ea43da60ae79a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113920:5081236514:2026-08-01T19:34:01Z:clawsweeper_needs_human",
       "comment_id": "5081236514",
@@ -33137,6 +33090,39 @@
         "kind": "pull_request",
         "branch": "fix/deepgram-realtime-endpointing-turn-taking",
         "head_sha": "e9a5e188910b3131a56c398fd515578ee228faa4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-01T22:30:42Z:clawsweeper_needs_human",
+      "comment_id": "5149865878",
+      "comment_version_key": "5149865878:2026-08-01T22:30:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
+      "comment_created_at": "2026-08-01T04:50:44Z",
+      "comment_updated_at": "2026-08-01T22:30:42Z",
+      "comment_body_sha256": "121370249d6e5e7709da50d3e276e4a550c5a521c6646fc8c49d3fdfa313612a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied PR snapshot still shows required exact-head CI jobs in progress; merge only after those jobs complete successfully for ab62dd73b02ff8d8b65dbc3dd800094d630f30ac. (sha=ab62dd73b02ff8d8b65dbc3dd800094d630f30ac)",
+      "expected_head_sha": "ab62dd73b02ff8d8b65dbc3dd800094d630f30ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:31:27.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-policy-refresh-rebuild-89606",
+        "head_sha": "ab62dd73b02ff8d8b65dbc3dd800094d630f30ac",
         "cluster_id": null,
         "job_path": null
       }
