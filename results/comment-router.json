@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:10:34.200Z",
+  "updated_at": "2026-08-01T08:10:41.998Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117240:5150030015:2026-08-01T05:41:03Z:clawsweeper_needs_human",
-      "comment_id": "5150030015",
-      "comment_version_key": "5150030015:2026-08-01T05:41:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117240#issuecomment-5150030015",
-      "comment_created_at": "2026-08-01T05:41:03Z",
-      "comment_updated_at": "2026-08-01T05:41:03Z",
-      "comment_body_sha256": "f1bef6eaac60b15aa5995c3f73da4c5e972c60ba669e69ce62e12c2685e5aeef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117240,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body describes a real generated-package before/after run, but the referenced JSON files are private temporary paths and were un... (sha=e671b9bafc9a38adfdceb08ac103f402a0913567)",
-      "expected_head_sha": "e671b9bafc9a38adfdceb08ac103f402a0913567",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:41:32.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-plugin-casefold-dependency-ownership",
-        "head_sha": "e671b9bafc9a38adfdceb08ac103f402a0913567",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117238:5150030386:2026-08-01T05:41:09Z:clawsweeper_needs_human",
       "comment_id": "5150030386",
@@ -32200,6 +32167,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T08:10:02Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T08:10:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T08:10:02Z",
+      "comment_body_sha256": "33bd1ea9296ca899405bf2c4fe10d758036b91d953b8f746d7610f90a0e592a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the guarded TruffleHog action pin (P1)** - This changes the scanner action to v3.96.0, but test/scripts/ci-workflow-guards.test.ts still expects the v3.95.9 SHA, so the required guard fails on this b...; Review finding: [P1] Synchronize the guarded TruffleHog action pin — .github/workflows/ci.yml:904 - [low] Keep the secret-scan action pin guard synchronized — .github/workflows/ci... (sha=7fbc0ba97a4d3144f566065d3c590773f7cf5e37)",
+      "expected_head_sha": "7fbc0ba97a4d3144f566065d3c590773f7cf5e37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:10:41.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "7fbc0ba97a4d3144f566065d3c590773f7cf5e37",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
