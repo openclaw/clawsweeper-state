@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:28:13.773Z",
+  "updated_at": "2026-08-01T16:29:48.549Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115947:5119233853:2026-08-01T14:21:42Z:clawsweeper_needs_human",
-      "comment_id": "5119233853",
-      "comment_version_key": "5119233853:2026-08-01T14:21:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115947#issuecomment-5119233853",
-      "comment_created_at": "2026-07-29T14:37:21Z",
-      "comment_updated_at": "2026-08-01T14:21:42Z",
-      "comment_body_sha256": "768c46f3677a7fe79b3df42d275e075b328b2f6a7ce95e6f24e0654d61916ebb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115947,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body provides useful after-fix runtime-seam results using the production recovery module and persisted session state, but its s... (sha=542ef2eefdf01c31492ba437d608d829281a91d1)",
-      "expected_head_sha": "542ef2eefdf01c31492ba437d608d829281a91d1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:25:42.250Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/103724-orphan-recovery-singleflight",
-        "head_sha": "542ef2eefdf01c31492ba437d608d829281a91d1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115947:5120341334:2026-07-29T16:01:34Z:re_review",
       "comment_id": "5120341334",
@@ -31398,6 +31365,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117500:5152323482:2026-08-01T16:29:10Z:clawsweeper_needs_human",
+      "comment_id": "5152323482",
+      "comment_version_key": "5152323482:2026-08-01T16:29:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117500#issuecomment-5152323482",
+      "comment_created_at": "2026-08-01T16:29:10Z",
+      "comment_updated_at": "2026-08-01T16:29:10Z",
+      "comment_body_sha256": "22a69724ed8c72b5f9619d38649722806fce641c07e83cce8803bcf611b33c9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new fail-closed validation intentionally rejects source-performance artifacts made with --skip-combined or older artifacts that lack combined context; that is appropriate for an a... (sha=c6e7d616e284aa3b485e5a0d2e563cc8c2497a45)",
+      "expected_head_sha": "c6e7d616e284aa3b485e5a0d2e563cc8c2497a45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:29:48.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/kova-extension-memory-context",
+        "head_sha": "c6e7d616e284aa3b485e5a0d2e563cc8c2497a45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
