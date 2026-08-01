@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:58:01.971Z",
+  "updated_at": "2026-08-01T08:58:16.439Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107375:5150176936:2026-08-01T06:24:46Z:re_review",
-      "comment_id": "5150176936",
-      "comment_version_key": "5150176936:2026-08-01T06:24:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107375#issuecomment-5150176936",
-      "comment_created_at": "2026-08-01T06:24:46Z",
-      "comment_updated_at": "2026-08-01T06:24:46Z",
-      "comment_body_sha256": "e399d486330263ec6d838f473a0ca304040dd5956d3df6973ad3f5f54f8a521e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107375,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:25:27.736Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openclaw-durable-release-head-pr1-rfc-20260714",
-        "head_sha": "1d803196704951631c2052dd5513428a05c799b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117221:5150177645:2026-08-01T06:25:00Z:re_review",
       "comment_id": "5150177645",
@@ -32583,6 +32536,39 @@
         "kind": "pull_request",
         "branch": "fix/multiline-skill-prompt-scan",
         "head_sha": "8e197068473696fcafcf9411e1fe68bb157f106b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99574:4877247048:2026-08-01T08:57:39Z:clawsweeper_needs_human",
+      "comment_id": "4877247048",
+      "comment_version_key": "4877247048:2026-08-01T08:57:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/99574#issuecomment-4877247048",
+      "comment_created_at": "2026-07-03T14:28:28Z",
+      "comment_updated_at": "2026-08-01T08:57:39Z",
+      "comment_body_sha256": "eef1f4be2b98b9dba97ae4e20d558648c5b12d0560c3446d0cc05d6e7138b430",
+      "repo": "openclaw/openclaw",
+      "issue_number": 99574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR explicitly lacks an after-fix LiteLLM-to-Anthropic run; focused tests and green CI do not show that the proxy accepts the markers or tha... (sha=b8733953e33d280da1a453442bbf081a0a39ee9e)",
+      "expected_head_sha": "b8733953e33d280da1a453442bbf081a0a39ee9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:58:16.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "lhk/fix-litellm-anthropic-cache-retention-37966",
+        "head_sha": "b8733953e33d280da1a453442bbf081a0a39ee9e",
         "cluster_id": null,
         "job_path": null
       }
