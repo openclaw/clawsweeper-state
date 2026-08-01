@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:19:41.445Z",
+  "updated_at": "2026-08-01T20:20:07.193Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1072:5135282083:2026-08-01T17:58:56Z:clawsweeper_needs_human",
-      "comment_id": "5135282083",
-      "comment_version_key": "5135282083:2026-08-01T17:58:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1072#issuecomment-5135282083",
-      "comment_created_at": "2026-07-30T19:21:21Z",
-      "comment_updated_at": "2026-08-01T17:58:56Z",
-      "comment_body_sha256": "928e8dc78dd6c0d9a2f3abfc16a8dc923f4181df068ee19df34cc586aa691fe7",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1072,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Accept flat unknown-method fallbacks (P1)** - The fallback accepts only an object-shaped error with an exact-case message. Existing Gateway behavior also emits flat string errors such as unknown method: ..., so...; Review finding: [P1] Accept flat unknown-method fallbacks — src/OpenClaw.Shared/WindowsNodeClient.cs:984-995 - [P1] Retain trusted request-envelope session keys — src/OpenClaw.Sha... (sha=4a137f6b10131932232f341b077c1edf8c606fa7)",
-      "expected_head_sha": "4a137f6b10131932232f341b077c1edf8c606fa7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:59:27.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-windows-node",
-        "head_sha": "4a137f6b10131932232f341b077c1edf8c606fa7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111278:5152677824:2026-08-01T17:59:37Z:re_review",
       "comment_id": "5152677824",
@@ -32248,6 +32215,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:166:5093818766:2026-08-01T20:19:04Z:clawsweeper_needs_human",
+      "comment_id": "5093818766",
+      "comment_version_key": "5093818766:2026-08-01T20:19:04Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/166#issuecomment-5093818766",
+      "comment_created_at": "2026-07-27T16:14:50Z",
+      "comment_updated_at": "2026-08-01T20:19:04Z",
+      "comment_body_sha256": "ed0e91dd50cf1930162b047701f82d0a354c3b79713c08f910fcee0a63e4693b",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Align the TruffleHog binary version with the action pin (P2)** - The action reference and adjacent comment move to v3.96.0, but this unchanged input still explicitly requests v3.95.9. Update it to v3.96.0, or re...; Review finding: [P2] Align the TruffleHog binary version with the action pin — .github/workflows/secret-scan.yml:55 - [medium] TruffleHog scanner remains pinned to the old version... (sha=ee1de7b311129aaafe76aca753214d584a09ab9c)",
+      "expected_head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:20:07.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-30748c8c3e",
+        "head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
