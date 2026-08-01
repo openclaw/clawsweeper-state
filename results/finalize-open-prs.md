@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-01T00:58:09.089Z
+Generated: 2026-08-01T01:19:30.531Z
 
 ## Summary
 
@@ -30,4 +30,4 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#116976](https://github.com/openclaw/openclaw/pull/116976) | docs: replace retired hostnameAllowlist in browser-control example | automerge-openclaw-openclaw-114611 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:36 SUCCESS:21; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#116976](https://github.com/openclaw/openclaw/pull/116976) | docs: replace retired hostnameAllowlist in browser-control example | automerge-openclaw-openclaw-114611 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:37 SUCCESS:21; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
