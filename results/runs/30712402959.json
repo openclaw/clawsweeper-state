@@ -1,0 +1,60 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117545",
+  "mode": "autonomous",
+  "run_id": "30712402959",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30712402959",
+  "head_sha": "dccfa528f0387431807818ba43823310b5e08f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
+  "published_at": "2026-08-01T18:29:42.930Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_pr": null,
+  "summary": "#117545 remains a bounded NVIDIA plugin catalog bug on current main, but this worker cannot safely implement it: the required current NVIDIA `/v1/models` and per-model error-semantics proof cannot be performed because no NVIDIA API credential is available in the target environment. The issue artifact distinguishes globally retired IDs from account-specific entitlement failures, and the available excerpt does not provide enough complete, current evidence to classify each reported model without guessing. No files changed.",
+  "actions": [
+    {
+      "target": "#117545",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "Do not add blanket suppressions from the reporter excerpt or locally deprecated rows: doing so could incorrectly suppress an account-specific model such as Kimi K2.6. Resume only with a safe live NVIDIA proof that records the current `/v1/models` membership and direct response class for every reported ID."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117545",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
