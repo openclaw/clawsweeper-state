@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:47:06.620Z",
+  "updated_at": "2026-08-01T13:47:19.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115549:5151264436:2026-08-01T11:41:16Z:re_review",
-      "comment_id": "5151264436",
-      "comment_version_key": "5151264436:2026-08-01T11:41:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115549#issuecomment-5151264436",
-      "comment_created_at": "2026-08-01T11:41:16Z",
-      "comment_updated_at": "2026-08-01T11:41:16Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115549,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T11:41:54.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse-merhi/web-search-security-review",
-        "head_sha": "8bb81cb5a23c3391d502a93c4e0ed11dc756da58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:113663",
       "comment_id": "repair-loop-label-sweep:automerge:113663",
@@ -32009,6 +31962,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117427:5151693557:2026-08-01T13:46:39Z:clawsweeper_needs_human",
+      "comment_id": "5151693557",
+      "comment_version_key": "5151693557:2026-08-01T13:46:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117427#issuecomment-5151693557",
+      "comment_created_at": "2026-08-01T13:46:39Z",
+      "comment_updated_at": "2026-08-01T13:46:39Z",
+      "comment_body_sha256": "606c8edb7fb246445e5df70864eb3ec1a1d8eda827e1fb7bab8a65e16fc88608",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117427,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes focused and hermetic SDK HTTP tests, but no inspectable redacted live run, mock-gateway verdict artifact, terminal output... (sha=efbbe34f59a2ab5f3883213bb909cc7e0a4279d6)",
+      "expected_head_sha": "efbbe34f59a2ab5f3883213bb909cc7e0a4279d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:47:19.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-feishu-directory-pagination-ownership",
+        "head_sha": "efbbe34f59a2ab5f3883213bb909cc7e0a4279d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
