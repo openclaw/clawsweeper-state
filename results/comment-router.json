@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:10:43.983Z",
+  "updated_at": "2026-08-01T03:11:12.578Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117047:5147725592:2026-07-31T22:28:41Z:clawsweeper_needs_human",
-      "comment_id": "5147725592",
-      "comment_version_key": "5147725592:2026-07-31T22:28:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117047#issuecomment-5147725592",
-      "comment_created_at": "2026-07-31T21:43:51Z",
-      "comment_updated_at": "2026-07-31T22:28:41Z",
-      "comment_body_sha256": "353171196f6ccd7cfcff7cb04032f07cf24b5428fe4fbc64e8586669dccb1f9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117047,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it cleanly mergeable, but the supplied proof targets c178ec66e11df9eb3cf352e36a7f070f736c9597, not the eventual refreshed merge resul... (sha=c178ec66e11df9eb3cf352e36a7f070f736c9597)",
-      "expected_head_sha": "c178ec66e11df9eb3cf352e36a7f070f736c9597",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:35:40.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa300-ui-memory-refresh-owner",
-        "head_sha": "c178ec66e11df9eb3cf352e36a7f070f736c9597",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117054:5147827303:2026-07-31T22:10:28Z:clawsweeper_needs_human",
       "comment_id": "5147827303",
@@ -32985,6 +32952,53 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116934:5149490865:2026-08-01T03:01:50Z:re_review",
+      "comment_id": "5149490865",
+      "comment_version_key": "5149490865:2026-08-01T03:01:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116934#issuecomment-5149490865",
+      "comment_created_at": "2026-08-01T03:01:50Z",
+      "comment_updated_at": "2026-08-01T03:01:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116934,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T03:11:09.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-crash-backlog-loss",
+        "head_sha": "a6c3e631da005a1a9ab1c1711ca6c25116555668",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
