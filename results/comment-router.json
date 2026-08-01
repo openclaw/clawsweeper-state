@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T01:44:40.740Z",
+  "updated_at": "2026-08-01T01:45:46.910Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111541:5017461420:2026-07-31T22:12:29Z:clawsweeper_needs_human",
-      "comment_id": "5017461420",
-      "comment_version_key": "5017461420:2026-07-31T22:12:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5017461420",
-      "comment_created_at": "2026-07-19T21:36:04Z",
-      "comment_updated_at": "2026-07-31T22:12:29Z",
-      "comment_body_sha256": "1dccfc69a67efd6e93c7d1259f32cfece3522281d7c2e23089a964644b1f7cab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Document rejected host-locale fallback precedence (P2)** - The new loop skips an unsupported LC_ALL or LC_MESSAGES value and accepts a later locale, but the onboarding and plugin-SDK docs still promise that the...; Review finding: [P2] Document rejected host-locale fallback precedence — packages/localization-core/src/context.ts:122-134 - [medium] Authorize the new FormatJS runtime dependency... (sha=6b4926f2755cb08d265519761a7608324f219219)",
-      "expected_head_sha": "6b4926f2755cb08d265519761a7608324f219219",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:20:02.206Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/localization-bundle-foundation",
-        "head_sha": "6b4926f2755cb08d265519761a7608324f219219",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5017907139:2026-07-20T00:23:25Z:re_review",
       "comment_id": "5017907139",
@@ -31304,6 +31271,53 @@
       "actions": [
         {
           "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:952:5148915861:2026-08-01T01:44:57Z:re_review",
+      "comment_id": "5148915861",
+      "comment_version_key": "5148915861:2026-08-01T01:44:57Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/952#issuecomment-5148915861",
+      "comment_created_at": "2026-08-01T01:44:57Z",
+      "comment_updated_at": "2026-08-01T01:44:57Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 952,
+      "author": "brokemac79",
+      "author_id": 255583030,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T01:45:44.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-077-lifecycle-projection",
+        "head_sha": "ebbcb2b97ad89fa3b781729ac154ce743c51c09a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
           "job_path": null
