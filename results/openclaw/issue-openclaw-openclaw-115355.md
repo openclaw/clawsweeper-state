@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-115355"
 mode: "autonomous"
-run_id: "30691929572"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30691929572"
-head_sha: "b347894406412c2b52bfa97a73bf9f5da4ea1598"
-workflow_conclusion: "failure"
+run_id: "30693002264"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30693002264"
+head_sha: "30d0321d9c9cfbc7f97fb7a7776d90a1b1885d41"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-01T09:06:31.715Z"
-canonical: "https://github.com/openclaw/openclaw/issues/115355"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/115355"
+published_at: "2026-08-01T09:09:38.639Z"
+canonical: "#115355"
+canonical_issue: "#115355"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30691929572](https://github.com/openclaw/clawsweeper/actions/runs/30691929572)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30693002264](https://github.com/openclaw/clawsweeper/actions/runs/30693002264)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/115355
+Canonical: #115355
 
 ## Summary
 
-Verified on current main `b0b708d919420d8aebc8aa1cf98576cd9679aacc`: the agent-tool chip test still invokes the production handler against real jsdom history, then restores the URL only in `finally`. The scoped test-only repair remains valid, but this checkout is read-only, so the executor must create/update `clawsweeper/issue-openclaw-openclaw-115355`, apply the one-file change, and run the listed validation.
+Current main at aab7321870f7a789acc6d20c70287d89f3a58f27 still has the real runtime-tool click write #agent-tool-read through window.history.replaceState in ui/src/pages/agents/panels-tools-skills.ts:155. The browser test then restores history only after the mutation in ui/src/pages/agents/panels-tools-skills.browser.test.ts:423. A narrow test-only repair remains valid, but this worker checkout is read-only and lacks node_modules; the mandated focused Vitest command stopped before execution and pnpm install cannot run in this sandbox. No branch, code patch, or PR was created here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Verified on current main `b0b708d919420d8aebc8aa1cf98576cd9679aacc`: the agent-t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #115355 | fix_needed | planned | canonical | Current main still violates the test-isolation invariant. A narrow one-file regression repair is appropriate. |
-| cluster:issue-openclaw-openclaw-115355 | build_fix_artifact | planned |  | Hand off an executable new-PR plan to the deterministic repair executor. |
+| #115355 | open_fix_pr | planned | canonical | Open or update the single ClawSweeper branch clawsweeper/issue-openclaw-openclaw-115355 with the test-only repair once a writable, dependency-hydrated execution environment is available. |
 
 ## Needs Human
 

@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115355",
+  "mode": "autonomous",
+  "run_id": "30693002264",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30693002264",
+  "head_sha": "30d0321d9c9cfbc7f97fb7a7776d90a1b1885d41",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115355.md",
+  "published_at": "2026-08-01T09:09:38.639Z",
+  "canonical": "#115355",
+  "canonical_issue": "#115355",
+  "canonical_pr": null,
+  "summary": "Current main at aab7321870f7a789acc6d20c70287d89f3a58f27 still has the real runtime-tool click write #agent-tool-read through window.history.replaceState in ui/src/pages/agents/panels-tools-skills.ts:155. The browser test then restores history only after the mutation in ui/src/pages/agents/panels-tools-skills.browser.test.ts:423. A narrow test-only repair remains valid, but this worker checkout is read-only and lacks node_modules; the mandated focused Vitest command stopped before execution and pnpm install cannot run in this sandbox. No branch, code patch, or PR was created here.",
+  "actions": [
+    {
+      "target": "#115355",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115355",
+      "candidate_fix": null,
+      "reason": "Open or update the single ClawSweeper branch clawsweeper/issue-openclaw-openclaw-115355 with the test-only repair once a writable, dependency-hydrated execution environment is available."
+    }
+  ],
+  "action_counts": {
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
