@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:37:10.914Z",
+  "updated_at": "2026-08-01T03:37:42.612Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:77:5134156054:2026-07-31T23:17:38Z:clawsweeper_needs_human",
-      "comment_id": "5134156054",
-      "comment_version_key": "5134156054:2026-07-31T23:17:38Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/77#issuecomment-5134156054",
-      "comment_created_at": "2026-07-30T17:29:51Z",
-      "comment_updated_at": "2026-07-31T23:17:38Z",
-      "comment_body_sha256": "8a0f00506d1778007c53aec20017e007bd77be56edf268c49c59490736a895fa",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 77,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Node 24 Windows pnpm check job fails on the PR head; without its diagnostic output, merging could leave a supported Windows development or CI path broken. (sha=8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53)",
-      "expected_head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:18:45.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/development-577c6fd817",
-        "head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117094:5148230360:2026-07-31T23:16:50Z:clawsweeper_needs_human",
       "comment_id": "5148230360",
@@ -32908,6 +32875,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T03:36:29Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T03:36:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T03:36:29Z",
+      "comment_body_sha256": "3213db7e4a6e5ab88e18cfd1ada2e2dfaea20e5c6a74534e18f1e048e5f71ba0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Align the TruffleHog binary selector with the updated action (P1)** - The changed action pin advertises v3.96.0, but this step still explicitly selects the v3.95.9 scanner binary and checksum on line 908. Update...; Review finding: [P1] Align the TruffleHog binary selector with the updated action — .github/workflows/ci.yml:904 - [medium] Secret scanner remains explicitly pinned to the old rel... (sha=4e2091e2eb3ec512612a2ea97f38edb2a3ce39d3)",
+      "expected_head_sha": "4e2091e2eb3ec512612a2ea97f38edb2a3ce39d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:37:42.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "4e2091e2eb3ec512612a2ea97f38edb2a3ce39d3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
