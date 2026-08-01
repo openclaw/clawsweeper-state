@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:22:14.557Z",
+  "updated_at": "2026-08-01T22:22:16.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117577:5153060155:2026-08-01T19:30:57Z:re_review",
-      "comment_id": "5153060155",
-      "comment_version_key": "5153060155:2026-08-01T19:30:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117577#issuecomment-5153060155",
-      "comment_created_at": "2026-08-01T19:30:57Z",
-      "comment_updated_at": "2026-08-01T19:30:57Z",
-      "comment_body_sha256": "b9077a7500a4d016909a11865efdc1c5bcf6518073bc7e75969952112337f76a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117577,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:31:36.142Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/kova-bootstrap-trace",
-        "head_sha": "e44ee56a8f05360dc23db801d125990d3e6489ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117589:5153062334:2026-08-01T19:31:32Z:clawsweeper_auto_repair",
       "comment_id": "5153062334",
@@ -33227,6 +33180,39 @@
         "kind": "pull_request",
         "branch": "fix/114128-literal-newline-guard",
         "head_sha": "96000e136c28e58548321ce49a4b27cd5bfdf1d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-01T22:14:42Z:clawsweeper_needs_human",
+      "comment_id": "5149865878",
+      "comment_version_key": "5149865878:2026-08-01T22:14:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
+      "comment_created_at": "2026-08-01T04:50:44Z",
+      "comment_updated_at": "2026-08-01T22:14:42Z",
+      "comment_body_sha256": "62a850a61a9c1f962f7728503435fe841dd0e5baa5e2ecfdf1cf074a72e37412",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required CI jobs are still running for head a1586a4f9681191420820e9997ab5de90167be07; GitHub currently reports the branch cleanly mergeable but behind main, so refresh CI and mergeabi... (sha=a1586a4f9681191420820e9997ab5de90167be07)",
+      "expected_head_sha": "a1586a4f9681191420820e9997ab5de90167be07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:22:16.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-policy-refresh-rebuild-89606",
+        "head_sha": "a1586a4f9681191420820e9997ab5de90167be07",
         "cluster_id": null,
         "job_path": null
       }
