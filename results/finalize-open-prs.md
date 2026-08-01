@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-01T10:13:45.682Z
+Generated: 2026-08-01T10:20:35.248Z
 
 ## Summary
 
@@ -30,5 +30,5 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | issue-openclaw-openclaw-98276 | MERGEABLE | BLOCKED | CANCELLED:1 SUCCESS:70 SKIPPED:19 FAILURE:2 IN_PROGRESS:16 NEUTRAL:1; blockers:19 | needs_merge_state:BLOCKED, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / build-artifacts:FAILURE; CI / checks-ui-e2e (1/4):IN_PROGRESS, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | issue-openclaw-openclaw-98276 | MERGEABLE | BLOCKED | CANCELLED:3 SKIPPED:22 SUCCESS:87 FAILURE:4 NEUTRAL:1; blockers:6 | needs_merge_state:BLOCKED, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#116976](https://github.com/openclaw/openclaw/pull/116976) | docs: replace retired hostnameAllowlist in browser-control example | automerge-openclaw-openclaw-114611 | MERGEABLE | BEHIND | CANCELLED:17 SKIPPED:45 SUCCESS:26; blockers:10 | security_hold, needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | route to central security triage |
