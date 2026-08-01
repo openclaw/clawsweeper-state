@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T04:02:59.484Z",
+  "updated_at": "2026-08-01T04:03:52.555Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117089:5148196054:2026-07-31T23:05:23Z:clawsweeper_needs_human",
-      "comment_id": "5148196054",
-      "comment_version_key": "5148196054:2026-07-31T23:05:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117089#issuecomment-5148196054",
-      "comment_created_at": "2026-07-31T23:05:23Z",
-      "comment_updated_at": "2026-07-31T23:05:23Z",
-      "comment_body_sha256": "ae976d25c03fd79c4b2db0be16f105a5572fb776974476fff46428f5c6f94c3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117089,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR adds an optional resolveProtectedRanges callback to the public openclaw/plugin-sdk/tool-payload helper. It is backwards-compatible and remains strict by default, but maintainer... (sha=9eb4ec71fee1bfda6a2dfa321aacfe2fe61175e6)",
-      "expected_head_sha": "9eb4ec71fee1bfda6a2dfa321aacfe2fe61175e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:29:47.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sanitizer-protected-regions-116941-116943",
-        "head_sha": "9eb4ec71fee1bfda6a2dfa321aacfe2fe61175e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117086:5148202197:2026-07-31T23:23:50Z:clawsweeper_needs_human",
       "comment_id": "5148202197",
@@ -32956,6 +32923,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113403:5149696821:2026-08-01T04:01:47Z:re_review",
+      "comment_id": "5149696821",
+      "comment_version_key": "5149696821:2026-08-01T04:01:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113403#issuecomment-5149696821",
+      "comment_created_at": "2026-08-01T04:01:47Z",
+      "comment_updated_at": "2026-08-01T04:01:47Z",
+      "comment_body_sha256": "6e56a026341474551da2324f3a28f00897510c5081d7e9d851f1423275428ed3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113403,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T04:03:50.510Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/cron-toolless-run-guard",
+        "head_sha": "cfe54b459d70f4eb432bcebac5a2c9e06f08bfd6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
