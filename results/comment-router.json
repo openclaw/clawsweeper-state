@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:05:37.630Z",
+  "updated_at": "2026-08-01T22:05:46.085Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117588:5153043842:2026-08-01T19:28:04Z:clawsweeper_needs_human",
-      "comment_id": "5153043842",
-      "comment_version_key": "5153043842:2026-08-01T19:28:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117588#issuecomment-5153043842",
-      "comment_created_at": "2026-08-01T19:28:04Z",
-      "comment_updated_at": "2026-08-01T19:28:04Z",
-      "comment_body_sha256": "6d1ee07683362909f22e4a30356f7463fc1334a2f79a77786cedb0b2226b0928",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117588,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main; although GitHub reports it as mergeable, this active gateway test surface should receive an exact-head review after rebase or merge-queue integration. (sha=8dba458cfdb55ec77f602abfdd72edbb40fc7dfd)",
-      "expected_head_sha": "8dba458cfdb55ec77f602abfdd72edbb40fc7dfd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:28:39.211Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-gateway-chat-fixtures-wave5",
-        "head_sha": "8dba458cfdb55ec77f602abfdd72edbb40fc7dfd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2413:5153044379:2026-08-01T19:28:09Z:re_review",
       "comment_id": "5153044379",
@@ -32898,6 +32865,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117655:5153659627:2026-08-01T22:05:13Z:re_review",
+      "comment_id": "5153659627",
+      "comment_version_key": "5153659627:2026-08-01T22:05:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117655#issuecomment-5153659627",
+      "comment_created_at": "2026-08-01T22:05:13Z",
+      "comment_updated_at": "2026-08-01T22:05:13Z",
+      "comment_body_sha256": "2569849812e475db124007987a85d80ac713076658c14682777344ca990085ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117655,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:05:44.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/perf-gateway-ws-readiness",
+        "head_sha": "c079553caa6468ee3cd26316f4ac3b3bb5de6b3f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
