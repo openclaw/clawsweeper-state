@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:53:23.217Z",
+  "updated_at": "2026-08-01T10:54:02.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T07:53:25Z:clawsweeper_needs_human",
-      "comment_id": "5149564387",
-      "comment_version_key": "5149564387:2026-08-01T07:53:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
-      "comment_created_at": "2026-08-01T03:22:15Z",
-      "comment_updated_at": "2026-08-01T07:53:25Z",
-      "comment_body_sha256": "c5c8e435b4bc24f9a16dfb61fabd31d017497a877c16f70ccc7e96800c204e11",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117180,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Synchronize the guarded TruffleHog action pin (P1)** - The workflow now uses the v3.96.0 action SHA, but test/scripts/ci-workflow-guards.test.ts still asserts the v3.95.9 SHA. The required guard therefore fails...; Review finding: [P1] Synchronize the guarded TruffleHog action pin — .github/workflows/ci.yml:904 - [low] Keep the security scanner guard synchronized — .github/workflows/ci.yml:9... (sha=2abdeecd5feffb00068b5d583bdf567281688d3e)",
-      "expected_head_sha": "2abdeecd5feffb00068b5d583bdf567281688d3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:54:14.979Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-01e47d2daa",
-        "head_sha": "2abdeecd5feffb00068b5d583bdf567281688d3e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112390:5150500305:2026-08-01T07:53:41Z:re_review",
       "comment_id": "5150500305",
@@ -32715,6 +32682,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110847:5012204649:2026-08-01T10:53:16Z:clawsweeper_needs_human",
+      "comment_id": "5012204649",
+      "comment_version_key": "5012204649:2026-08-01T10:53:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110847#issuecomment-5012204649",
+      "comment_created_at": "2026-07-18T17:22:27Z",
+      "comment_updated_at": "2026-08-01T10:53:16Z",
+      "comment_body_sha256": "bf4de657c6b09b9addf69bc49e0955bd76c216291b0fef73d59e47eb6f19ae6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110847,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the refreshed contributor branch already contains the bounded, verified owner-boundary fix. (sha=5000406ec461d5cf9a638131f26b2854a469b65d)",
+      "expected_head_sha": "5000406ec461d5cf9a638131f26b2854a469b65d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:54:02.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-audit-filter-trim",
+        "head_sha": "5000406ec461d5cf9a638131f26b2854a469b65d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
