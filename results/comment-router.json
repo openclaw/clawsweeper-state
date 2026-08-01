@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:25:40.873Z",
+  "updated_at": "2026-08-01T20:25:44.073Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112623:5078329042:2026-08-01T15:21:29Z:clawsweeper_needs_human",
-      "comment_id": "5078329042",
-      "comment_version_key": "5078329042:2026-08-01T15:21:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5078329042",
-      "comment_created_at": "2026-07-25T11:32:53Z",
-      "comment_updated_at": "2026-08-01T15:21:29Z",
-      "comment_body_sha256": "846e8ec84018c84537853f343f6d31fb93d08a575755eb344b72cc9b5652eb94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the default model context for any parent session with recently completed children; that can alter retry, recovery, and duplicate-spawn decisions for existing agent wor... (sha=54285da582c5244b7493dd721448b8c5d5a9a57e)",
-      "expected_head_sha": "54285da582c5244b7493dd721448b8c5d5a9a57e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:02:44.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "spike/recently-completed-subagents-prompt",
-        "head_sha": "54285da582c5244b7493dd721448b8c5d5a9a57e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112474:5079549266:2026-08-01T17:34:06Z:clawsweeper_needs_human",
       "comment_id": "5079549266",
@@ -32175,6 +32142,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T20:25:40.873Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117022:5146814350:2026-08-01T20:23:57Z:clawsweeper_auto_repair",
+      "comment_id": "5146814350",
+      "comment_version_key": "5146814350:2026-08-01T20:23:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117022#issuecomment-5146814350",
+      "comment_created_at": "2026-07-31T19:43:29Z",
+      "comment_updated_at": "2026-08-01T20:23:57Z",
+      "comment_body_sha256": "21093077b55644e2fcf6e35c4c9d8368185616ef7682a77ab9637f0e3dd81878",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117022,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=21523a252a4f6f9562e1968b8e54387ca4444c3d)",
+      "expected_head_sha": "21523a252a4f6f9562e1968b8e54387ca4444c3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:25:44.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/wave3-telegram-voice-forbidden-owner",
+        "head_sha": "21523a252a4f6f9562e1968b8e54387ca4444c3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
