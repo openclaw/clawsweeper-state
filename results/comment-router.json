@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:26:36.336Z",
+  "updated_at": "2026-08-01T06:28:10.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116934:5149490865:2026-08-01T03:01:50Z:re_review",
-      "comment_id": "5149490865",
-      "comment_version_key": "5149490865:2026-08-01T03:01:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116934#issuecomment-5149490865",
-      "comment_created_at": "2026-08-01T03:01:50Z",
-      "comment_updated_at": "2026-08-01T03:01:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116934,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:11:09.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-crash-backlog-loss",
-        "head_sha": "a6c3e631da005a1a9ab1c1711ca6c25116555668",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/demark-landing:9:5086731326:2026-08-01T03:04:29Z:clawsweeper_needs_human",
       "comment_id": "5086731326",
@@ -32059,6 +32012,39 @@
         "kind": "pull_request",
         "branch": "fix/freshboot-plugin-state",
         "head_sha": "1e1d80038b34f7dd901bec2eb8504614d41ee555",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116604:5137949038:2026-08-01T06:27:24Z:clawsweeper_needs_human",
+      "comment_id": "5137949038",
+      "comment_version_key": "5137949038:2026-08-01T06:27:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116604#issuecomment-5137949038",
+      "comment_created_at": "2026-07-31T01:01:06Z",
+      "comment_updated_at": "2026-08-01T06:27:24Z",
+      "comment_body_sha256": "e43be674225c783b9a8433382cb8b96d37d1ba2de7bbd23090b12590e53000ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116604,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests and claimed prior-incident output are supplemental only; add redacted after-fix Codex app-server logs, terminal transcript, recor... (sha=f3970cf46f16a3bf851bd944dabebd653d5becab)",
+      "expected_head_sha": "f3970cf46f16a3bf851bd944dabebd653d5becab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:28:10.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-projector-trailing-no-reply",
+        "head_sha": "f3970cf46f16a3bf851bd944dabebd653d5becab",
         "cluster_id": null,
         "job_path": null
       }
