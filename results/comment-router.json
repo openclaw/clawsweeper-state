@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:16:47.246Z",
+  "updated_at": "2026-08-01T16:16:50.720Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86062:4528912275:2026-08-01T04:09:49Z:clawsweeper_auto_repair",
-      "comment_id": "4528912275",
-      "comment_version_key": "4528912275:2026-08-01T04:09:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/86062#issuecomment-4528912275",
-      "comment_created_at": "2026-05-24T13:44:13Z",
-      "comment_updated_at": "2026-08-01T04:09:49Z",
-      "comment_body_sha256": "c916022d0989dcbfaacd104b5b3a36474c30d0d1bc082aa4281ea8c322b7d752",
-      "repo": "openclaw/openclaw",
-      "issue_number": 86062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=862716e2b8909ccdb5e1635da05e07d5a6b1cedc)",
-      "expected_head_sha": "862716e2b8909ccdb5e1635da05e07d5a6b1cedc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T13:42:04.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ui/dashboard-session-timestamps",
-        "head_sha": "862716e2b8909ccdb5e1635da05e07d5a6b1cedc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-01T10:53:50Z:clawsweeper_needs_human",
       "comment_id": "4591541970",
@@ -33070,6 +33037,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:135:5135069962:2026-08-01T16:16:13Z:clawsweeper_needs_human",
+      "comment_id": "5135069962",
+      "comment_version_key": "5135069962:2026-08-01T16:16:13Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/135#issuecomment-5135069962",
+      "comment_created_at": "2026-07-30T19:00:03Z",
+      "comment_updated_at": "2026-08-01T16:16:13Z",
+      "comment_body_sha256": "088e725a311992165f69f388c019b616c221339028419f4c4b35bb05e2d0e8fb",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the executable-action upgrade** - This reference selects TruffleHog v3.96.0 for scans on pull requests and pushes. No source-level defect is identified, but the upstream scanner...; Review finding: [medium] Review the executable-action upgrade — .github/workflows/secret-scan.yml:52 (sha=68f3ad017cc08dec6621daf3fdbdcb130257d652)",
+      "expected_head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:16:50.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
