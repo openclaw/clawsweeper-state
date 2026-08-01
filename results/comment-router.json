@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-08-01T10:21:44.417Z",
+  "updated_at": "2026-08-01T10:21:36.427Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89039:4755018325:2026-06-19T22:09:36Z:re_review",
+      "comment_id": "4755018325",
+      "comment_version_key": "4755018325:2026-06-19T22:09:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4755018325",
+      "comment_created_at": "2026-06-19T22:09:36Z",
+      "comment_updated_at": "2026-06-19T22:09:36Z",
+      "comment_body_sha256": "94b3cf5d8706e33103b9fbd4783da6089ec988ee2979a8ca70995b08fd686f77",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89039,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased onto current upstream/main (now d6cefe26f4); the two red core-runtime shards (secrets/runtime.coverage, wizard/tui secretref tests) were from the stale base predating upstream's runtime secretref validation alignment and are resolved by this rebase",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:27:11.129Z",
+      "target": null
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4756356425:2026-06-20T04:07:19Z:re_review",
       "comment_id": "4756356425",
@@ -32493,15 +32520,15 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:117349:5151002285:2026-08-01T10:20:58Z:re_review",
-      "comment_id": "5151002285",
-      "comment_version_key": "5151002285:2026-08-01T10:20:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117349#issuecomment-5151002285",
-      "comment_created_at": "2026-08-01T10:20:58Z",
-      "comment_updated_at": "2026-08-01T10:20:58Z",
+      "idempotency_key": "comment-router:openclaw/openclaw:117208:5151001863:2026-08-01T10:20:50Z:re_review",
+      "comment_id": "5151001863",
+      "comment_version_key": "5151001863:2026-08-01T10:20:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117208#issuecomment-5151001863",
+      "comment_created_at": "2026-08-01T10:20:50Z",
+      "comment_updated_at": "2026-08-01T10:20:50Z",
       "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
       "repo": "openclaw/openclaw",
-      "issue_number": 117349,
+      "issue_number": 117208,
       "author": "vincentkoc",
       "author_id": 25068,
       "author_name": null,
@@ -32516,11 +32543,11 @@
       "expected_head_sha": null,
       "finding_id": null,
       "status": "executed",
-      "processed_at": "2026-08-01T10:21:31.213Z",
+      "processed_at": "2026-08-01T10:21:32.915Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/realtime-talk-live-smoke-activation",
-        "head_sha": "d83697e7534f8648fabea952ca419f8d067c4c52",
+        "branch": "fix/credentials-enoent-failover-112226",
+        "head_sha": "d6cdc5bd2f38d57a50ad79c053d93fe0934822b0",
         "cluster_id": null,
         "job_path": null
       },
@@ -32538,39 +32565,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:962:4938397150:2026-08-01T10:21:13Z:clawsweeper_auto_repair",
-      "comment_id": "4938397150",
-      "comment_version_key": "4938397150:2026-08-01T10:21:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/962#issuecomment-4938397150",
-      "comment_created_at": "2026-07-10T18:35:24Z",
-      "comment_updated_at": "2026-08-01T10:21:13Z",
-      "comment_body_sha256": "5a5ab1c61b80e598bb168dbd184ba1d6472a135d12fc2514a2b0c92350bb7ae0",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 962,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d03a4ffcda603e12fc6a75bfadf731dec6e21b55)",
-      "expected_head_sha": "d03a4ffcda603e12fc6a75bfadf731dec6e21b55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T10:21:44.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "karkarl-seed-design-system",
-        "head_sha": "d03a4ffcda603e12fc6a75bfadf731dec6e21b55",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
