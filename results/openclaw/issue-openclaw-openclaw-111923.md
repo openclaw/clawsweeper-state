@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-111923"
 mode: "autonomous"
-run_id: "30686637142"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30686637142"
-head_sha: "8fd1140e7aa97790513afaab43eba4dd1085f85a"
-workflow_conclusion: "failure"
+run_id: "30687491541"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30687491541"
+head_sha: "0ced0b5e515bd8fa0d53e3af54392ac474547bf5"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-01T06:00:00.091Z"
-canonical: "https://github.com/openclaw/openclaw/issues/111923"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/111923"
+published_at: "2026-08-01T06:24:24.383Z"
+canonical: "#111923"
+canonical_issue: "#111923"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30686637142](https://github.com/openclaw/clawsweeper/actions/runs/30686637142)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30687491541](https://github.com/openclaw/clawsweeper/actions/runs/30687491541)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/111923
+Canonical: #111923
 
 ## Summary
 
-#111923 remains a real producer-side Memory Core defect in the supplied checkout: numeric-only compound tags are still accepted, persisted through short-term recall, and rendered by REM outside its narrow blacklist. The checkout HEAD `fcb73388379a1b48a6a6abb1bfcf31bbab9e5f95` differs from the preflight main SHA `0cd33bad88c7af167d4a907955c4795b264d5a77`, and the read-only checkout has no dependencies, so implementation and validation must be rerun in a writable checkout refreshed from the preflight base.
+Current main reproduces the canonical producer-side defect: `1.00` and `51-54` are compound tokens but bypass the existing numeric/date rejection, are persisted as concept tags, and the REM renderer accepts any tag not in its narrow blacklist. A narrow owner-plugin repair is clear, but this worker has a read-only filesystem and the focused Vitest command cannot resolve the missing `p-map` dependency, so no branch or PR can be prepared here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/111923
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #111923 | keep_canonical | planned | canonical | Canonical issue remains a narrow bug-only repair with no viable hydrated implementation PR. |
-| #70881 | keep_closed | skipped | related | Already closed historical reference; no mutation is valid. |
-| cluster:issue-openclaw-openclaw-111923 | fix_needed | planned | canonical | A narrow owner-plugin fix PR is permitted and is the best canonical path. |
-| cluster:issue-openclaw-openclaw-111923 | build_fix_artifact | blocked | canonical | Only branch implementation and validation are blocked. Recreate the target branch from verified current main in a writable checkout, install dependencies, then apply the narrow artifact. |
+| #111923 | fix_needed | blocked | canonical | Implement the clear producer-side validity rule in the memory-core plugin, then validate it with focused vocabulary regressions. No issue close or merge action is permitted by this job. |
 
 ## Needs Human
 

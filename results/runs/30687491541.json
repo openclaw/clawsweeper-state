@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-111923",
+  "mode": "autonomous",
+  "run_id": "30687491541",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30687491541",
+  "head_sha": "0ced0b5e515bd8fa0d53e3af54392ac474547bf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-111923.md",
+  "published_at": "2026-08-01T06:24:24.383Z",
+  "canonical": "#111923",
+  "canonical_issue": "#111923",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the canonical producer-side defect: `1.00` and `51-54` are compound tokens but bypass the existing numeric/date rejection, are persisted as concept tags, and the REM renderer accepts any tag not in its narrow blacklist. A narrow owner-plugin repair is clear, but this worker has a read-only filesystem and the focused Vitest command cannot resolve the missing `p-map` dependency, so no branch or PR can be prepared here.",
+  "actions": [
+    {
+      "target": "#111923",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#111923",
+      "candidate_fix": null,
+      "reason": "Implement the clear producer-side validity rule in the memory-core plugin, then validate it with focused vocabulary regressions. No issue close or merge action is permitted by this job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
