@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:13:22.640Z",
+  "updated_at": "2026-08-01T09:14:17.116Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117034:5147384533:2026-08-01T06:35:24Z:clawsweeper_needs_human",
-      "comment_id": "5147384533",
-      "comment_version_key": "5147384533:2026-08-01T06:35:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5147384533",
-      "comment_created_at": "2026-07-31T20:55:56Z",
-      "comment_updated_at": "2026-08-01T06:35:24Z",
-      "comment_body_sha256": "fdebb9342565c8688fb67473c8b8f3b5e372637da5f0e2caf2b76e3d85bbc55f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117034,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Require opt-in for execution identity collection (P1)** - logging.audit.enabled is default-on, and this new admission path sends every run’s execution-attribution context into that ledger. VISION.md requires an...; Review finding: [P1] Require opt-in for execution identity collection — src/agents/agent-command.ts:223-239 - [medium] Default-on attribution retention lacks the required consent... (sha=32971e7cbe5d3d547149d519ebbc1f724fd52a1b)",
-      "expected_head_sha": "32971e7cbe5d3d547149d519ebbc1f724fd52a1b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:35:58.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-observable-foundation",
-        "head_sha": "32971e7cbe5d3d547149d519ebbc1f724fd52a1b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116188:5125807277:2026-08-01T06:35:32Z:clawsweeper_needs_human",
       "comment_id": "5125807277",
@@ -32652,6 +32619,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117245:5150163006:2026-08-01T09:13:34Z:clawsweeper_auto_repair",
+      "comment_id": "5150163006",
+      "comment_version_key": "5150163006:2026-08-01T09:13:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117245#issuecomment-5150163006",
+      "comment_created_at": "2026-08-01T06:20:39Z",
+      "comment_updated_at": "2026-08-01T09:13:34Z",
+      "comment_body_sha256": "d408bab26833a2581bd3cad8a7749720a28a0feb53f99b8865dbc0cdac2af604",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117245,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cc4edcb640d8036966c146e7ed73b655483a6a5d)",
+      "expected_head_sha": "cc4edcb640d8036966c146e7ed73b655483a6a5d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:14:17.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/93917-failed-exec-loop",
+        "head_sha": "cc4edcb640d8036966c146e7ed73b655483a6a5d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
