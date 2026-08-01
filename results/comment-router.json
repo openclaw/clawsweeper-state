@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:20:07.193Z",
+  "updated_at": "2026-08-01T20:20:16.203Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111278:5152677824:2026-08-01T17:59:37Z:re_review",
-      "comment_id": "5152677824",
-      "comment_version_key": "5152677824:2026-08-01T17:59:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111278#issuecomment-5152677824",
-      "comment_created_at": "2026-08-01T17:59:37Z",
-      "comment_updated_at": "2026-08-01T17:59:37Z",
-      "comment_body_sha256": "f05892c7164effff7a27d90eb41386187a2362ae6f13ec22ec84a60ca70fc188",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111278,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T18:00:15.221Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/durable-core-pr3-recovery-v5",
-        "head_sha": "c99a3217cdc87b2ce73c0e37e4a7e8c7533d0a63",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117521:5152467235:2026-08-01T17:06:22Z:clawsweeper_auto_merge",
       "comment_id": "5152467235",
@@ -32245,6 +32198,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-30748c8c3e",
         "head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-01T20:13:58Z:clawsweeper_needs_human",
+      "comment_id": "4854073498",
+      "comment_version_key": "4854073498:2026-08-01T20:13:58Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
+      "comment_created_at": "2026-07-01T11:37:33Z",
+      "comment_updated_at": "2026-08-01T20:13:58Z",
+      "comment_body_sha256": "386765044e86c9b5823b7d607dcdc5e023fc476624c66be82ebd34ee769a77b9",
+      "repo": "openclaw/clawscan",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging the dirty branch without a targeted rebase could omit the AIG scanner installation that current main and v0.1.6 contain. (sha=3db07fe55342a6b9ef14a15d7565daa79a2bae83)",
+      "expected_head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:20:16.203Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/runtime-tool-updates",
+        "head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
         "cluster_id": null,
         "job_path": null
       }
