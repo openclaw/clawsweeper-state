@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:35:26.504Z",
+  "updated_at": "2026-08-01T13:35:32.066Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117330:5151230461:2026-08-01T11:31:03Z:re_review",
-      "comment_id": "5151230461",
-      "comment_version_key": "5151230461:2026-08-01T11:31:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117330#issuecomment-5151230461",
-      "comment_created_at": "2026-08-01T11:31:03Z",
-      "comment_updated_at": "2026-08-01T11:31:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117330,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T11:31:42.247Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-telegram-attested-compat",
-        "head_sha": "5c6381e21c69296c2027d30ce3c3e288d4a2e749",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117332:5151230452:2026-08-01T11:31:03Z:re_review",
       "comment_id": "5151230452",
@@ -32123,6 +32076,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111730:5021175157:2026-08-01T13:34:57Z:clawsweeper_needs_human",
+      "comment_id": "5021175157",
+      "comment_version_key": "5021175157:2026-08-01T13:34:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111730#issuecomment-5021175157",
+      "comment_created_at": "2026-07-20T10:20:05Z",
+      "comment_updated_at": "2026-08-01T13:34:57Z",
+      "comment_body_sha256": "d9c5c26f6378198dfea035953b9c9452ff582796c1e9bbe8a08f5103f73471c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111730,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocked lifecycle tests are strong regression coverage, and the PR body cites a valid-object xAI live run, but no supplied artifact dire... (sha=45c1c58cf28b2fb97da1c6ee5122c274016b6380)",
+      "expected_head_sha": "45c1c58cf28b2fb97da1c6ee5122c274016b6380",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:35:32.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-realtime-tool-call-args-parse-error",
+        "head_sha": "45c1c58cf28b2fb97da1c6ee5122c274016b6380",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
