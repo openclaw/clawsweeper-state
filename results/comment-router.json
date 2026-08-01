@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:05:36.848Z",
+  "updated_at": "2026-08-01T10:06:36.935Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117131:5148691204:2026-08-01T07:16:11Z:clawsweeper_needs_human",
-      "comment_id": "5148691204",
-      "comment_version_key": "5148691204:2026-08-01T07:16:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117131#issuecomment-5148691204",
-      "comment_created_at": "2026-08-01T00:50:20Z",
-      "comment_updated_at": "2026-08-01T07:16:11Z",
-      "comment_body_sha256": "eb5edbb52199fd370b85bd2c44353f69bb17dfbea0540384e3537fa745c888ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head reports a failed check-test-types run and the remaining CI matrix is still in progress; the available read-only context does not expose a file-level failure cause, s... (sha=c646869ed8c2481b701dea69d2927b443ed96174)",
-      "expected_head_sha": "c646869ed8c2481b701dea69d2927b443ed96174",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:16:51.440Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-registry-plugin-snapshot-per-model",
-        "head_sha": "c646869ed8c2481b701dea69d2927b443ed96174",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-01T07:16:10Z:clawsweeper_auto_repair",
       "comment_id": "5118719513",
@@ -32692,6 +32659,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T10:05:36.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2514:5150952995:2026-08-01T10:05:59Z:re_review",
+      "comment_id": "5150952995",
+      "comment_version_key": "5150952995:2026-08-01T10:05:59Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2514#issuecomment-5150952995",
+      "comment_created_at": "2026-08-01T10:05:59Z",
+      "comment_updated_at": "2026-08-01T10:05:59Z",
+      "comment_body_sha256": "28e6265d60fe9d35dbab2b99a03e5446412a33775ac07a52a9f8666d67fe2cdb",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2514,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review all 9/9 ci jobs on github actions have passed 100% green (run 30692666858)! we resolved the tokenization edge case in `antigravitystatusprobe.swift` so model labels containing non-alphanumeric characters (such as parentheses in `gemini 2.5 pro (weekly)`) cleanly tokenize to match cadence aliases",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T10:06:35.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-window-minutes-pace-2431",
+        "head_sha": "39eecc32dc9890c6250617b97531da6fbc584de6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
