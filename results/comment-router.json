@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T01:36:33.008Z",
+  "updated_at": "2026-08-01T01:36:38.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114960:5104695441:2026-07-28T13:22:21Z:re_review",
-      "comment_id": "5104695441",
-      "comment_version_key": "5104695441:2026-07-28T13:22:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114960#issuecomment-5104695441",
-      "comment_created_at": "2026-07-28T13:22:21Z",
-      "comment_updated_at": "2026-07-28T13:22:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114960,
-      "author": "hvhoon",
-      "author_id": 1691610,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:13:51.914Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111628:5018464177:2026-07-31T21:59:13Z:clawsweeper_needs_human",
       "comment_id": "5018464177",
@@ -31467,6 +31440,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T01:36:33.008Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117034:5147384533:2026-08-01T01:28:35Z:clawsweeper_needs_human",
+      "comment_id": "5147384533",
+      "comment_version_key": "5147384533:2026-08-01T01:28:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5147384533",
+      "comment_created_at": "2026-07-31T20:55:56Z",
+      "comment_updated_at": "2026-08-01T01:28:35Z",
+      "comment_body_sha256": "3b8a9c9c2938107303bfd2022e114ebea679e198721ae8f0826fa6273656d031",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep identity persistence off the admission critical path (P1)** - This call runs before delivery/model work and directly reaches runOpenClawStateWriteTransaction, an immediate synchronous SQLite transaction wit...; Review finding: [P1] Keep identity persistence off the admission critical path — src/agents/agent-command.ts:231-241 - [medium] Approve the new identity-data read boundary — src/g... (sha=aed81d3da3e0454978cc54777dd66321fb42e0db)",
+      "expected_head_sha": "aed81d3da3e0454978cc54777dd66321fb42e0db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T01:36:38.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-observable-foundation",
+        "head_sha": "aed81d3da3e0454978cc54777dd66321fb42e0db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
