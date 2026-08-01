@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:56:41.245Z",
+  "updated_at": "2026-08-01T07:57:34.578Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/imsg:198:5095966912:2026-08-01T05:09:47Z:clawsweeper_needs_human",
-      "comment_id": "5095966912",
-      "comment_version_key": "5095966912:2026-08-01T05:09:47Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/198#issuecomment-5095966912",
-      "comment_created_at": "2026-07-27T19:41:55Z",
-      "comment_updated_at": "2026-08-01T05:09:47Z",
-      "comment_body_sha256": "43d220b3899a57a98b26a2f84fc65e484e0dad6e00dcf925cec55ef4936f9819",
-      "repo": "openclaw/imsg",
-      "issue_number": 198,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing consumers may parse the [poll vote] prefix or treat one plain-text row as a changed-option event. This PR replaces that representation with [poll selections] and a full curre... (sha=62676f5c9da471018b12b32e44fa91857f745025)",
-      "expected_head_sha": "62676f5c9da471018b12b32e44fa91857f745025",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:10:18.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/poll-selection-snapshot-display",
-        "head_sha": "62676f5c9da471018b12b32e44fa91857f745025",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:246:5103076937:2026-08-01T05:09:32Z:clawsweeper_auto_repair",
       "comment_id": "5103076937",
@@ -32465,6 +32432,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116920:5150511198:2026-08-01T07:56:50Z:re_review",
+      "comment_id": "5150511198",
+      "comment_version_key": "5150511198:2026-08-01T07:56:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116920#issuecomment-5150511198",
+      "comment_created_at": "2026-08-01T07:56:50Z",
+      "comment_updated_at": "2026-08-01T07:56:50Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116920,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T07:57:32.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-kova-evaluator-pin-20260731",
+        "head_sha": "b51aaf103d7a491763022120b0dd55a5adb4ef78",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
