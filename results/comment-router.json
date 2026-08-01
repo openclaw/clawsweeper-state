@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:06:58.368Z",
+  "updated_at": "2026-08-01T08:06:59.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117181:5150017286:2026-08-01T05:37:17Z:re_review",
-      "comment_id": "5150017286",
-      "comment_version_key": "5150017286:2026-08-01T05:37:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117181#issuecomment-5150017286",
-      "comment_created_at": "2026-08-01T05:37:17Z",
-      "comment_updated_at": "2026-08-01T05:37:17Z",
-      "comment_body_sha256": "05af438dff5f609ac10c465831d6e395457ddf9985389f14b890a0f88e586c2e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117181,
-      "author": "harjothkhara",
-      "author_id": 48686985,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:37:56.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/mcp-http-drain-flake",
-        "head_sha": "1bcad9eba5102d0631591c94511a470b78e9bf52",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117203:5149782978:2026-08-01T05:38:07Z:clawsweeper_needs_human",
       "comment_id": "5149782978",
@@ -32191,6 +32144,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-cli-single-config-read",
         "head_sha": "cc41f3e4c13e0c6c1a9ffa4cc9d5c0c040a1fef7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117277:5150424094:2026-08-01T08:06:06Z:clawsweeper_needs_human",
+      "comment_id": "5150424094",
+      "comment_version_key": "5150424094:2026-08-01T08:06:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117277#issuecomment-5150424094",
+      "comment_created_at": "2026-08-01T07:31:35Z",
+      "comment_updated_at": "2026-08-01T08:06:06Z",
+      "comment_body_sha256": "7c325ed28d6f81c757994182e71598ea09e0c78dfd5506107e5ef091a5408d6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117277,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes an after-fix production-seam probe but supplies no inspectable output, log, screenshot, or artifact; add redacted run... (sha=b9758c7573773c4abca56f174e1e08c66965e5f6)",
+      "expected_head_sha": "b9758c7573773c4abca56f174e1e08c66965e5f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:06:59.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/111923-filter-rem-junk-topics",
+        "head_sha": "b9758c7573773c4abca56f174e1e08c66965e5f6",
         "cluster_id": null,
         "job_path": null
       }
