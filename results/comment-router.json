@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:52:54.370Z",
+  "updated_at": "2026-08-01T19:54:26.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117498:5152306093:2026-08-01T17:24:50Z:clawsweeper_needs_human",
-      "comment_id": "5152306093",
-      "comment_version_key": "5152306093:2026-08-01T17:24:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117498#issuecomment-5152306093",
-      "comment_created_at": "2026-08-01T16:24:37Z",
-      "comment_updated_at": "2026-08-01T17:24:50Z",
-      "comment_body_sha256": "87792b40580d5fc4bb625ffa3285d9c096dcd5a2bbfabdced7edd8e90a320a0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117498,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes which persisted stores enter restart recovery: a false-negative status probe could leave an interrupted durable session unmarked, so a human owner should explicitly accep... (sha=140dae6bb03df2f8290c7126d33bfa256e04b50e)",
-      "expected_head_sha": "140dae6bb03df2f8290c7126d33bfa256e04b50e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:36:24.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/session-recovery-empty-store-skip",
-        "head_sha": "140dae6bb03df2f8290c7126d33bfa256e04b50e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117482:5152316214:2026-08-01T17:31:30Z:clawsweeper_needs_human",
       "comment_id": "5152316214",
@@ -32323,6 +32290,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T19:52:54.370Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:321:4952095915:2026-08-01T19:47:29Z:clawsweeper_needs_human",
+      "comment_id": "4952095915",
+      "comment_version_key": "4952095915:2026-08-01T19:47:29Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/321#issuecomment-4952095915",
+      "comment_created_at": "2026-07-12T17:27:12Z",
+      "comment_updated_at": "2026-08-01T19:47:29Z",
+      "comment_body_sha256": "42c284215d69f37f79fbc43dd56c85283e2b4bee8a3197afc92f4a3b01f2af8a",
+      "repo": "steipete/oracle",
+      "issue_number": 321,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body asserts live results for 1b7d6c7cfe42dc2668ccfde8c7f6c57b51b1cbc7, not the current 840b727b8c6a241da00ff7b4687b81b96c064aab,...; Review finding: [P1] Scope Create PR success to the selected finding — src/browser/actions/codexFindings.ts:420 - [P2] Require positive clipboard evidence for git-copy actions — s... (sha=840b727b8c6a241da00ff7b4687b81b96c064aab)",
+      "expected_head_sha": "840b727b8c6a241da00ff7b4687b81b96c064aab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T19:54:26.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-findings",
+        "head_sha": "840b727b8c6a241da00ff7b4687b81b96c064aab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
