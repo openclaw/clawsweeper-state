@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:34:23.051Z",
+  "updated_at": "2026-08-01T15:34:28.973Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117405:5151588191:2026-08-01T13:16:43Z:clawsweeper_needs_human",
-      "comment_id": "5151588191",
-      "comment_version_key": "5151588191:2026-08-01T13:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117405#issuecomment-5151588191",
-      "comment_created_at": "2026-08-01T13:16:43Z",
-      "comment_updated_at": "2026-08-01T13:16:43Z",
-      "comment_body_sha256": "85580a627182d6011b2a533bdc7f8db683c42c09a1a616f2245ee6dc909544a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117405,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally increases the maximum silent-output wait for this PTY project from 120 seconds to 300 seconds; a genuinely silent hung PTY will take longer to fail, although the... (sha=b9d20a3de98a37d01b5d9373c6bd067fd0332d99)",
-      "expected_head_sha": "b9d20a3de98a37d01b5d9373c6bd067fd0332d99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T13:17:18.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-tui-pty-progress",
-        "head_sha": "b9d20a3de98a37d01b5d9373c6bd067fd0332d99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:271:5128862827:2026-08-01T13:16:46Z:clawsweeper_auto_repair",
       "comment_id": "5128862827",
@@ -32370,6 +32337,53 @@
         "kind": "pull_request",
         "branch": "feat/custodian-wizard-step-payload",
         "head_sha": "f012043b40c7e95aa2eda8ac4905007347b16634",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2413:5152102114:2026-08-01T15:33:40Z:re_review",
+      "comment_id": "5152102114",
+      "comment_version_key": "5152102114:2026-08-01T15:33:40Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5152102114",
+      "comment_created_at": "2026-08-01T15:33:40Z",
+      "comment_updated_at": "2026-08-01T15:33:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2413,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T15:34:26.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-proxy-model-pricing-2393",
+        "head_sha": "bd8b9c61bc9e3c599e0da5a9a080cee87e67d745",
         "cluster_id": null,
         "job_path": null
       },
