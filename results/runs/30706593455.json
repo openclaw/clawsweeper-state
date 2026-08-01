@@ -1,0 +1,125 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-110171",
+  "mode": "autonomous",
+  "run_id": "30706593455",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30706593455",
+  "head_sha": "f43618fd2caeb1cac767b7c05145767d9a3a9453",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-110171.md",
+  "published_at": "2026-08-01T16:04:54.304Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/110171",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/110171",
+  "canonical_pr": null,
+  "summary": "#110171 remains a reproducible, non-security iOS routing bug on current main `b83a966c056288adaef187e3e5826188d9f67724`. iOS ignores `consultRouting: \"force-agent-consult\"` when deciding whether OpenAI realtime must use Gateway relay; the existing relay already preserves the active session key and prevents autonomous provider replies. Plan one narrow two-file fix PR.",
+  "actions": [
+    {
+      "target": "#110171",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Repair the producer of the incorrect routing fact in the iOS config parser; reuse the existing relay policy boundary rather than adding configuration, prompt context, or provider behavior."
+    },
+    {
+      "target": "#71195",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Related realtime-Talk context, but not the same client surface or root cause."
+    },
+    {
+      "target": "#91007",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Closed linked context; no closure or other mutation is permitted or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-110171",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Open or update the one allowed generated fix PR from `clawsweeper/issue-openclaw-openclaw-110171` after applying the narrow artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117485",
+      "branch": "clawsweeper/issue-openclaw-openclaw-110171",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117485",
+      "commit": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#110171",
+      "pr": "https://github.com/openclaw/openclaw/pull/117485",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117485",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117485",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(ios): route forced realtime consults through Gateway relay",
+      "idempotency_key": null,
+      "reason": "checks are not clean: Scan iOS dead code: FAILURE, Intersect shared OpenClawKit dead code: FAILURE, ios-build: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

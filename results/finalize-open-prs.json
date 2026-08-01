@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T15:49:35.542Z",
-  "count": 3,
+  "generated_at": "2026-08-01T16:05:15.093Z",
+  "count": 4,
   "summary": {
-    "open_prs": 3,
+    "open_prs": 4,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 3,
+    "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 3,
+    "needs_merge_preflight": 4,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,6 +27,87 @@
   },
   "prs": [
     {
+      "number": 117485,
+      "title": "fix(ios): route forced realtime consults through Gateway relay",
+      "url": "https://github.com/openclaw/openclaw/pull/117485",
+      "branch": "clawsweeper/issue-openclaw-openclaw-110171",
+      "head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
+      "cluster_id": "issue-openclaw-openclaw-110171",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-110171.md",
+      "updated_at": "2026-08-01T16:04:24Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 74,
+        "counts": {
+          "CANCELLED": 14,
+          "SKIPPED": 31,
+          "SUCCESS": 25,
+          "FAILURE": 4
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "iOS Periphery Dead Code / Scan iOS dead code:FAILURE",
+          "Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE",
+          "CI / ios-build:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152204733",
+            "submitted_at": "2026-08-01T16:00:25Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30706593455",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30706593455",
+        "cluster_id": "issue-openclaw-openclaw-110171",
+        "published_at": "2026-08-01T16:04:54.304Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117485",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(ios): route forced realtime consults through Gateway relay",
+          "idempotency_key": null,
+          "reason": "checks are not clean: Scan iOS dead code: FAILURE, Intersect shared OpenClawKit dead code: FAILURE, ios-build: FAILURE, openclaw/ci-gate: FAILURE",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117443,
       "title": "fix(status): resolve effective channel model override",
       "url": "https://github.com/openclaw/openclaw/pull/117443",
@@ -34,7 +115,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-01T15:49:08Z",
+      "updated_at": "2026-08-01T16:00:04Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -109,7 +190,7 @@
       "head_sha": "16b90803bdaa404226234c93435c89ddc918cc46",
       "cluster_id": "issue-openclaw-openclaw-98276",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-01T12:39:05Z",
+      "updated_at": "2026-08-01T16:04:20Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -186,7 +267,7 @@
       "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T15:45:35Z",
+      "updated_at": "2026-08-01T16:02:10Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
