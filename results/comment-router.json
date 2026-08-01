@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:35:32.066Z",
+  "updated_at": "2026-08-01T13:37:41.541Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117332:5151230452:2026-08-01T11:31:03Z:re_review",
-      "comment_id": "5151230452",
-      "comment_version_key": "5151230452:2026-08-01T11:31:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117332#issuecomment-5151230452",
-      "comment_created_at": "2026-08-01T11:31:03Z",
-      "comment_updated_at": "2026-08-01T11:31:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117332,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T11:31:44.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-2026-6-34-validation-repairs",
-        "head_sha": "27449e95f1f58cfc78b8069aafa9f2640e67a9f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:138:5012369506:2026-08-01T11:30:22Z:clawsweeper_needs_human",
       "comment_id": "5012369506",
@@ -32106,6 +32059,39 @@
         "kind": "pull_request",
         "branch": "fix/xai-realtime-tool-call-args-parse-error",
         "head_sha": "45c1c58cf28b2fb97da1c6ee5122c274016b6380",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117372:5151250475:2026-08-01T13:36:56Z:clawsweeper_needs_human",
+      "comment_id": "5151250475",
+      "comment_version_key": "5151250475:2026-08-01T13:36:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117372#issuecomment-5151250475",
+      "comment_created_at": "2026-08-01T11:37:08Z",
+      "comment_updated_at": "2026-08-01T13:36:56Z",
+      "comment_body_sha256": "dbd79e6ff7c193b1e199127ee63af234a4c7818ae099be0f24eb6b10d8d22195",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117372,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body lists tests, build checks, and API-surface checks but no inspectable after-fix runtime transcript, logs, recording, or artifact; add r... (sha=896003b7864b9b32f74081197aede6dc7b2ac460)",
+      "expected_head_sha": "896003b7864b9b32f74081197aede6dc7b2ac460",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:37:41.540Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/plugin-bundle-contributions",
+        "head_sha": "896003b7864b9b32f74081197aede6dc7b2ac460",
         "cluster_id": null,
         "job_path": null
       }
