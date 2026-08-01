@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T04:15:26.016Z",
+  "updated_at": "2026-08-01T04:15:30.714Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111545:5054351044:2026-07-23T04:28:30Z:re_review",
-      "comment_id": "5054351044",
-      "comment_version_key": "5054351044:2026-07-23T04:28:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111545#issuecomment-5054351044",
-      "comment_created_at": "2026-07-23T04:28:30Z",
-      "comment_updated_at": "2026-07-23T04:28:30Z",
-      "comment_body_sha256": "e2f83e04112b771b6045e6985d3a16431325993da7feb3ee7be6365ab2793980",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111545,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:55:54.523Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:299:5121085054:2026-07-31T23:55:16Z:clawsweeper_needs_human",
       "comment_id": "5121085054",
@@ -32932,6 +32905,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T04:15:26.015Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116513:5134791025:2026-08-01T04:13:03Z:clawsweeper_needs_human",
+      "comment_id": "5134791025",
+      "comment_version_key": "5134791025:2026-08-01T04:13:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116513#issuecomment-5134791025",
+      "comment_created_at": "2026-07-30T18:32:10Z",
+      "comment_updated_at": "2026-08-01T04:13:03Z",
+      "comment_body_sha256": "d853cce5e30cddc2dcf51733bd5e68cee4f3101793dfd20c258367729596045c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing managed OpenAI-compatible endpoints that terminate only by raw EOF will become retryable failures if maintainers accept the strict terminal contract. (sha=7623c0cff17a5cc1b2b8a993de6a117c8696b831)",
+      "expected_head_sha": "7623c0cff17a5cc1b2b8a993de6a117c8696b831",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T04:15:30.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-managed-chat-eof-20260730",
+        "head_sha": "7623c0cff17a5cc1b2b8a993de6a117c8696b831",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
