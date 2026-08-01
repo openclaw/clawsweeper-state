@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:45:07.843Z",
+  "updated_at": "2026-08-01T13:45:09.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2531:5151257128:2026-08-01T11:39:00Z:re_review",
-      "comment_id": "5151257128",
-      "comment_version_key": "5151257128:2026-08-01T11:39:00Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2531#issuecomment-5151257128",
-      "comment_created_at": "2026-08-01T11:39:00Z",
-      "comment_updated_at": "2026-08-01T11:39:00Z",
-      "comment_body_sha256": "3af4c9092c5eb5774aaba8c51ee78ab0bf33cdcd9e8c52a43ebcac23d1dd6d35",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2531,
-      "author": "kocaemre",
-      "author_id": 110906681,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T11:39:41.446Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/linux-posix-spawn-compat",
-        "head_sha": "95ff23eff86d75dd1ab58a518e2cc9e39d446af1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117377:5151261226:2026-08-01T11:40:18Z:clawsweeper_needs_human",
       "comment_id": "5151261226",
@@ -32011,6 +31964,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117400:5151450914:2026-08-01T13:44:28Z:clawsweeper_needs_human",
+      "comment_id": "5151450914",
+      "comment_version_key": "5151450914:2026-08-01T13:44:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5151450914",
+      "comment_created_at": "2026-08-01T12:36:57Z",
+      "comment_updated_at": "2026-08-01T13:44:28Z",
+      "comment_body_sha256": "faf36d8867f6ebe11c8130daaf75465eb12092bad7c86cbdfcd66d9f1f56159e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR supplies copied terminal output, but its claimed real-estimator test file is not present in the submitted head; attach redacted... (sha=a634951bb816b42bb958e3c2ee640d6bf85b4405)",
+      "expected_head_sha": "a634951bb816b42bb958e3c2ee640d6bf85b4405",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:45:09.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-compaction-estimator-117358",
+        "head_sha": "a634951bb816b42bb958e3c2ee640d6bf85b4405",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
