@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:00:15.016Z",
+  "updated_at": "2026-08-01T11:00:18.335Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114473:5089560871:2026-08-01T08:03:04Z:clawsweeper_needs_human",
-      "comment_id": "5089560871",
-      "comment_version_key": "5089560871:2026-08-01T08:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114473#issuecomment-5089560871",
-      "comment_created_at": "2026-07-27T09:21:13Z",
-      "comment_updated_at": "2026-08-01T08:03:04Z",
-      "comment_body_sha256": "c2f4fbe5d75ce9c41c30fc11e3ecf10107183b5f104924c581699f728be1cddb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114473,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Migrate the legacy selector before runtime projection (P1)** - resolveMcpAuthProfileId accepts the new top-level selector and the OAuth-nested selector forever. That leaves two runtime configuration shapes for o...; Review finding: [P1] Migrate the legacy selector before runtime projection — src/agents/mcp-auth-profile.ts:35-52 - [medium] Approve static-token routing to remote MCP origins — s... (sha=05cc0b8f257e763cb8784630903d9577b2f87fa0)",
-      "expected_head_sha": "05cc0b8f257e763cb8784630903d9577b2f87fa0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:05:45.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "grover/LIF-296-lifeos-token-injection",
-        "head_sha": "05cc0b8f257e763cb8784630903d9577b2f87fa0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114523:5090396176:2026-08-01T08:02:16Z:clawsweeper_auto_repair",
       "comment_id": "5090396176",
@@ -32349,6 +32316,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T11:00:15.016Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:16:5140090028:2026-08-01T10:56:16Z:clawsweeper_needs_human",
+      "comment_id": "5140090028",
+      "comment_version_key": "5140090028:2026-08-01T10:56:16Z",
+      "comment_url": "https://github.com/openclaw/turnwire/pull/16#issuecomment-5140090028",
+      "comment_created_at": "2026-07-31T06:39:57Z",
+      "comment_updated_at": "2026-08-01T10:56:16Z",
+      "comment_body_sha256": "4914ea0e0c53c85202d8ff0862b7c9bf25602e854b2e60ceb9483b910385a742",
+      "repo": "openclaw/turnwire",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - go-sdk v1.7.0 adds a substantially revised MCP protocol revision while Turnwire serves externally consumed MCP over stdio; current coverage proves same-version in-memory behavior but... (sha=28989e371e901ece3c924cf88c10f5669e9bc18a)",
+      "expected_head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:00:18.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/modelcontextprotocol/go-sdk-1.7.0",
+        "head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
