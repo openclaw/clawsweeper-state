@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:54:56.514Z",
+  "updated_at": "2026-08-01T16:56:22.081Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:20:4746260445:2026-08-01T15:21:25Z:clawsweeper_auto_repair",
-      "comment_id": "4746260445",
-      "comment_version_key": "4746260445:2026-08-01T15:21:25Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/20#issuecomment-4746260445",
-      "comment_created_at": "2026-06-18T21:26:01Z",
-      "comment_updated_at": "2026-08-01T15:21:25Z",
-      "comment_body_sha256": "1b2af6deffc6667316f1813961f5f39b43928b8705205a0500bf54529e392ffd",
-      "repo": "openclaw/rfcs",
-      "issue_number": 20,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=864d7dee6ba6b9cf9e2f902f174408e5fbc570db)",
-      "expected_head_sha": "864d7dee6ba6b9cf9e2f902f174408e5fbc570db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:22:08.657Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc/cloud-serializable-sqlite-state",
-        "head_sha": "864d7dee6ba6b9cf9e2f902f174408e5fbc570db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:293:5090809180:2026-08-01T15:21:40Z:clawsweeper_needs_human",
       "comment_id": "5090809180",
@@ -31382,6 +31349,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116291:5152426203:2026-08-01T16:55:35Z:re_review",
+      "comment_id": "5152426203",
+      "comment_version_key": "5152426203:2026-08-01T16:55:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116291#issuecomment-5152426203",
+      "comment_created_at": "2026-08-01T16:55:35Z",
+      "comment_updated_at": "2026-08-01T16:55:35Z",
+      "comment_body_sha256": "2c3af826586aa7a344ec22647bc174584f4bd1a9a50b3b5d99879e10dbd57b22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116291,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:56:19.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-111370-hook-orphan-reaper",
+        "head_sha": "a1b26ef0acf5d4ad674999a3bcb7cd3e1c5674e7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
