@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:38:56.960Z",
+  "updated_at": "2026-08-01T09:39:00.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117131:5150282658:2026-08-01T06:55:34Z:re_review",
-      "comment_id": "5150282658",
-      "comment_version_key": "5150282658:2026-08-01T06:55:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117131#issuecomment-5150282658",
-      "comment_created_at": "2026-08-01T06:55:34Z",
-      "comment_updated_at": "2026-08-01T06:55:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117131,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:56:13.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-registry-plugin-snapshot-per-model",
-        "head_sha": "64ef934fd55cd37402f5675802b870ba19b2f8f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116814:5142708516:2026-08-01T06:55:41Z:clawsweeper_needs_human",
       "comment_id": "5142708516",
@@ -32660,6 +32613,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T09:38:56.959Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:589:4988839838:2026-08-01T09:38:25Z:clawsweeper_needs_human",
+      "comment_id": "4988839838",
+      "comment_version_key": "4988839838:2026-08-01T09:38:25Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/589#issuecomment-4988839838",
+      "comment_created_at": "2026-07-16T06:21:57Z",
+      "comment_updated_at": "2026-08-01T09:38:25Z",
+      "comment_body_sha256": "29a049208f027f3efeaf528a232b3b6f3d2d3b814c9319ab5768505a36095fde",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the current draft head as dirty; resolving its conflicts against current main can alter the review prompt and cache integration, so the branch’s July validation does no... (sha=c0785de3001bd32587eb4d518f6fc6da818d9393)",
+      "expected_head_sha": "c0785de3001bd32587eb4d518f6fc6da818d9393",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:39:00.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "investigate/rebase-main-review-rule",
+        "head_sha": "c0785de3001bd32587eb4d518f6fc6da818d9393",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
