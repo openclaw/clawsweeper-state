@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:48:44.043Z",
+  "updated_at": "2026-08-01T17:49:15.832Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5152258292:2026-08-01T16:13:08Z:re_review",
-      "comment_id": "5152258292",
-      "comment_version_key": "5152258292:2026-08-01T16:13:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5152258292",
-      "comment_created_at": "2026-08-01T16:13:08Z",
-      "comment_updated_at": "2026-08-01T16:13:08Z",
-      "comment_body_sha256": "89390ff852014e92246422aba51baa50a41e734765c0e0a436474ade0fd3a24d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:15:58.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "9b5ebac63b1969c1925f8ed8cb64dafec65a6309",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115188:5152269850:2026-08-01T16:16:09Z:re_review",
       "comment_id": "5152269850",
@@ -31273,6 +31226,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115399:5118740697:2026-08-01T17:43:06Z:clawsweeper_needs_human",
+      "comment_id": "5118740697",
+      "comment_version_key": "5118740697:2026-08-01T17:43:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115399#issuecomment-5118740697",
+      "comment_created_at": "2026-07-29T13:57:44Z",
+      "comment_updated_at": "2026-08-01T17:43:06Z",
+      "comment_body_sha256": "1757e69079be28d684f0b72f7174c6f6d356878312d1a049ae00f41b6825880e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115399,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as mergeable but behind main and it remains a draft. The read-only partial checkout could not materialize the shared merge base offline, so run one exact-hea... (sha=86fda1d5d3acd4c96a1158670563c692d51cbd3e)",
+      "expected_head_sha": "86fda1d5d3acd4c96a1158670563c692d51cbd3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:49:15.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "paulcam/mxc-workdir-validation",
+        "head_sha": "86fda1d5d3acd4c96a1158670563c692d51cbd3e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
