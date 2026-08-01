@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:39:44.911Z",
+  "updated_at": "2026-08-01T17:39:47.581Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117480:5152181599:2026-08-01T15:54:23Z:clawsweeper_needs_human",
-      "comment_id": "5152181599",
-      "comment_version_key": "5152181599:2026-08-01T15:54:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117480#issuecomment-5152181599",
-      "comment_created_at": "2026-08-01T15:54:23Z",
-      "comment_updated_at": "2026-08-01T15:54:23Z",
-      "comment_body_sha256": "70be89e58efe946541e3ab4c3111d5cb788771b3dd18f2dd9bca6b0c1a7e1821",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117480,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new 300-second hard ceiling intentionally turns an unusually slow but otherwise valid GitHub release download into a visible Testbox-hydration failure; the supplied terminal proof... (sha=5160d6a623322d71d5d1fd9abbf3aac74d3b2c79)",
-      "expected_head_sha": "5160d6a623322d71d5d1fd9abbf3aac74d3b2c79",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:55:05.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/install-trufflehog-curl-timeout",
-        "head_sha": "5160d6a623322d71d5d1fd9abbf3aac74d3b2c79",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115545:5152182715:2026-08-01T15:54:41Z:re_review",
       "comment_id": "5152182715",
@@ -31315,6 +31282,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T17:39:44.911Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:135:5135069962:2026-08-01T17:38:29Z:clawsweeper_needs_human",
+      "comment_id": "5135069962",
+      "comment_version_key": "5135069962:2026-08-01T17:38:29Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/135#issuecomment-5135069962",
+      "comment_created_at": "2026-07-30T19:00:03Z",
+      "comment_updated_at": "2026-08-01T17:38:29Z",
+      "comment_body_sha256": "8bd8238493f1175dad4b3bcef3c5f79d15da4badab8574a0278353edce8a34f7",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the new action release before merging** - This version bump changes the TruffleHog code executed on pushes and pull requests. The workflow grants only contents: read, but source...; Review finding: [medium] Review the new action release before merging — .github/workflows/secret-scan.yml:52 (sha=68f3ad017cc08dec6621daf3fdbdcb130257d652)",
+      "expected_head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:39:47.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
