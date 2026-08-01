@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T23:44:06.359Z",
+  "updated_at": "2026-08-01T23:44:53.938Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94806:4748697005:2026-08-01T20:30:33Z:clawsweeper_needs_human",
-      "comment_id": "4748697005",
-      "comment_version_key": "4748697005:2026-08-01T20:30:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94806#issuecomment-4748697005",
-      "comment_created_at": "2026-06-19T05:14:35Z",
-      "comment_updated_at": "2026-08-01T20:30:33Z",
-      "comment_body_sha256": "7297c14a0f9bc1d9385182493de798a8acf4a8004d72fe733378e4c282dd604d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94806,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the merge result after rebasing so the status command and generated SDK baseline are reviewed against the actual merge result. (sha=ba27d6d2d7e8a9ddd82a341e5f54aff00791349a)",
-      "expected_head_sha": "ba27d6d2d7e8a9ddd82a341e5f54aff00791349a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:51:36.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-94626-status",
-        "head_sha": "ba27d6d2d7e8a9ddd82a341e5f54aff00791349a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104126:4942132494:2026-08-01T20:43:31Z:clawsweeper_auto_repair",
       "comment_id": "4942132494",
@@ -32589,6 +32556,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113746:5154034630:2026-08-01T23:44:16Z:re_review",
+      "comment_id": "5154034630",
+      "comment_version_key": "5154034630:2026-08-01T23:44:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113746#issuecomment-5154034630",
+      "comment_created_at": "2026-08-01T23:44:16Z",
+      "comment_updated_at": "2026-08-01T23:44:16Z",
+      "comment_body_sha256": "2065aaa5f1bf26ba4dc8b135b903f9d0074fa0fd3c33072cb5671fab37b9775c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113746,
+      "author": "GSUCAS",
+      "author_id": 201416672,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T23:44:52.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/memory-wiki-batch-throughput",
+        "head_sha": "ba334e3809d6fa1f1bb1dccd2f0a036fe2ed9455",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
