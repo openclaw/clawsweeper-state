@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T18:44:06.747Z",
-  "count": 5,
+  "generated_at": "2026-08-01T19:20:05.445Z",
+  "count": 4,
   "summary": {
-    "open_prs": 5,
+    "open_prs": 4,
     "ready_candidates": 0,
-    "security_hold": 1,
+    "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 5,
+    "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 5,
+    "needs_merge_preflight": 4,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,21 +34,22 @@
       "head_sha": "0391535bf9158ba1f42d882faf503f00a3d7f7ed",
       "cluster_id": "issue-openclaw-openclaw-117491",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117491.md",
-      "updated_at": "2026-08-01T18:30:42Z",
+      "updated_at": "2026-08-01T19:19:25Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 134,
         "counts": {
-          "CANCELLED": 1,
-          "SUCCESS": 79,
-          "SKIPPED": 39,
+          "CANCELLED": 7,
+          "SKIPPED": 45,
+          "SUCCESS": 81,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -98,7 +99,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -192,20 +193,21 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-01T18:38:20Z",
+      "updated_at": "2026-08-01T19:17:01Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 139,
+        "total": 148,
         "counts": {
-          "CANCELLED": 12,
-          "SKIPPED": 44,
-          "SUCCESS": 82,
+          "CANCELLED": 14,
+          "SKIPPED": 47,
+          "SUCCESS": 86,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -338,86 +340,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 116976,
-      "title": "docs: replace retired hostnameAllowlist in browser-control example",
-      "url": "https://github.com/openclaw/openclaw/pull/116976",
-      "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-      "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
-      "cluster_id": "automerge-openclaw-openclaw-114611",
-      "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T18:28:03Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": true,
-      "checks": {
-        "total": 88,
-        "counts": {
-          "CANCELLED": 17,
-          "SKIPPED": 45,
-          "SUCCESS": 26
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-            "submitted_at": "2026-07-31T18:08:22Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146093547",
-            "submitted_at": "2026-07-31T18:14:11Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30685036432",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30685036432",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "published_at": "2026-08-01T06:21:15.757Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#116976",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#116976",
-          "candidate_fix": "#116976",
-          "reason": "The canonical PR is a narrow, safe docs correction but is stale against current main; repair its writable branch rather than replacing it."
-        }
-      },
-      "blockers": [
-        "security_hold",
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "route to central security triage"
     }
   ]
 }
