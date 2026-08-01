@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:22:59.919Z",
+  "updated_at": "2026-08-01T20:23:08.381Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117530:5152518784:2026-08-01T17:51:51Z:clawsweeper_needs_human",
-      "comment_id": "5152518784",
-      "comment_version_key": "5152518784:2026-08-01T17:51:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117530#issuecomment-5152518784",
-      "comment_created_at": "2026-08-01T17:19:44Z",
-      "comment_updated_at": "2026-08-01T17:51:51Z",
-      "comment_body_sha256": "ac879fa67a651d05a49766138cdaf0cc2938f15070e13400b5a3df8c64603cef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117530,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body explicitly says hosted focused checks and native Windows Scheduled Task restart proof have not run, and no redacted after-fix runti... (sha=6555dd183d8eb662909491025ff91fe911cf1234)",
-      "expected_head_sha": "6555dd183d8eb662909491025ff91fe911cf1234",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:02:44.174Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-115475-safe-agent-gateway-restart",
-        "head_sha": "6555dd183d8eb662909491025ff91fe911cf1234",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117509:5152553795:2026-08-01T17:56:06Z:clawsweeper_needs_human",
       "comment_id": "5152553795",
@@ -32159,6 +32126,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117401:5153250512:2026-08-01T20:22:27Z:re_review",
+      "comment_id": "5153250512",
+      "comment_version_key": "5153250512:2026-08-01T20:22:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117401#issuecomment-5153250512",
+      "comment_created_at": "2026-08-01T20:20:46Z",
+      "comment_updated_at": "2026-08-01T20:22:27Z",
+      "comment_body_sha256": "b1495cca658a24336d7b3f33ca92faefa06b4ac53e8d989758e1e7780db8f27a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117401,
+      "author": "1052326311",
+      "author_id": 65798732,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T20:23:06.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/115037-claude-synthetic-retry",
+        "head_sha": "2f9c7167aa14b5e7ff38df8a2fdf7de305366c31",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
