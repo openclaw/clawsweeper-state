@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:01:31.603Z",
+  "updated_at": "2026-08-01T16:02:53.458Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117404:5151652356:2026-08-01T13:34:47Z:re_review",
-      "comment_id": "5151652356",
-      "comment_version_key": "5151652356:2026-08-01T13:34:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117404#issuecomment-5151652356",
-      "comment_created_at": "2026-08-01T13:34:47Z",
-      "comment_updated_at": "2026-08-01T13:34:47Z",
-      "comment_body_sha256": "57db383a0938196c7ed6e39f7d9aaf3b52474f8c17a5944f29c4aba1c19c9a24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117404,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T13:35:24.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kitchen-no-peer-e2e",
-        "head_sha": "df326b6b15fcadcadd5eb05376e06d221f5888a4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111730:5021175157:2026-08-01T13:34:57Z:clawsweeper_needs_human",
       "comment_id": "5021175157",
@@ -33000,6 +32953,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114163:5085102004:2026-08-01T16:02:19Z:clawsweeper_needs_human",
+      "comment_id": "5085102004",
+      "comment_version_key": "5085102004:2026-08-01T16:02:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114163#issuecomment-5085102004",
+      "comment_created_at": "2026-07-26T19:46:38Z",
+      "comment_updated_at": "2026-08-01T16:02:19Z",
+      "comment_body_sha256": "e0a4fa5401d5f2cf27e91023cbdb8f7a83f0e940f15945f514440d40f6ebe2a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Establish verified ingress before honoring owner status (P1)** - senderIsOwner reaches the embedded agent’s trusted tool context, but this callable consult surface accepts it from any consumer. The revision comm...; Review finding: [P1] Establish verified ingress before honoring owner status — src/talk/agent-consult-runtime.ts:369 - [high] Plugin-controlled owner assertion reaches trusted too... (sha=284cb7f63b0714fbc3d0cfab654eb6330cf454aa)",
+      "expected_head_sha": "284cb7f63b0714fbc3d0cfab654eb6330cf454aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:02:53.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/facetime-owner-auth",
+        "head_sha": "284cb7f63b0714fbc3d0cfab654eb6330cf454aa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
