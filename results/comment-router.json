@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:10:41.998Z",
+  "updated_at": "2026-08-01T08:11:15.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117238:5150030386:2026-08-01T05:41:09Z:clawsweeper_needs_human",
-      "comment_id": "5150030386",
-      "comment_version_key": "5150030386:2026-08-01T05:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117238#issuecomment-5150030386",
-      "comment_created_at": "2026-08-01T05:41:09Z",
-      "comment_updated_at": "2026-08-01T05:41:09Z",
-      "comment_body_sha256": "381cab9281544c7032933cbd61421fd403c6487409277394215c75a2d2a66bb1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117238,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the ordering by which an accepted attachment becomes durable relative to a later caption send; an incorrect callback bridge could affect retry classification or duplicate... (sha=005287aaf182329959f0914ade85ae1a78f35874)",
-      "expected_head_sha": "005287aaf182329959f0914ade85ae1a78f35874",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:41:38.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-imessage-outbound-attachment-delivery",
-        "head_sha": "005287aaf182329959f0914ade85ae1a78f35874",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117194:5150030932:2026-08-01T05:41:19Z:re_review",
       "comment_id": "5150030932",
@@ -32200,6 +32167,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117295:5150559895:2026-08-01T08:10:33Z:re_review",
+      "comment_id": "5150559895",
+      "comment_version_key": "5150559895:2026-08-01T08:10:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117295#issuecomment-5150559895",
+      "comment_created_at": "2026-08-01T08:10:33Z",
+      "comment_updated_at": "2026-08-01T08:10:33Z",
+      "comment_body_sha256": "37f1c2cc7814b2b6ac99e366f1518e1edc1b32cd8ee5b9fc3c59e8a9b6210802",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117295,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:11:12.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/test-project-memory-watcher",
+        "head_sha": "c6866ec320daf09342994672c873871f6566b2f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
