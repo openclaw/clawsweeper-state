@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T16:55:58.009Z",
-  "count": 4,
+  "generated_at": "2026-08-01T17:08:55.270Z",
+  "count": 5,
   "summary": {
-    "open_prs": 4,
+    "open_prs": 5,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 4,
+    "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 4,
+    "needs_merge_preflight": 5,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,6 +27,72 @@
   },
   "prs": [
     {
+      "number": 117521,
+      "title": "fix(heartbeat): retain configured account for accountless commitments",
+      "url": "https://github.com/openclaw/openclaw/pull/117521",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117491",
+      "head_sha": "e86bc166dac8a585dc4fd33c20e68ac2ca2a076a",
+      "cluster_id": "issue-openclaw-openclaw-117491",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117491.md",
+      "updated_at": "2026-08-01T17:08:04Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 140,
+        "counts": {
+          "CANCELLED": 13,
+          "SKIPPED": 44,
+          "SUCCESS": 80,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / checks-node-compact-small-2:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117521#issuecomment-5152467235",
+            "submitted_at": "2026-08-01T17:06:22Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30707741888",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30707741888",
+        "cluster_id": "issue-openclaw-openclaw-117491",
+        "published_at": "2026-08-01T16:39:52.083Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117485,
       "title": "fix(ios): route forced realtime consults through Gateway relay",
       "url": "https://github.com/openclaw/openclaw/pull/117485",
@@ -34,26 +100,25 @@
       "head_sha": "7a85537e54864c860a2beac801cd6d0f39dfc950",
       "cluster_id": "issue-openclaw-openclaw-110171",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-110171.md",
-      "updated_at": "2026-08-01T16:54:08Z",
+      "updated_at": "2026-08-01T17:01:00Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 49,
+        "total": 57,
         "counts": {
           "CANCELLED": 1,
-          "SUCCESS": 20,
-          "FAILURE": 3,
-          "SKIPPED": 24,
-          "IN_PROGRESS": 1
+          "SKIPPED": 27,
+          "SUCCESS": 25,
+          "FAILURE": 4
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
           "iOS Periphery Dead Code / Scan iOS dead code:FAILURE",
           "Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE",
-          "CI / macos-swift:IN_PROGRESS",
-          "CI / ios-build:FAILURE"
+          "CI / ios-build:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
         ]
       },
       "review_threads": {
@@ -116,7 +181,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-01T16:54:31Z",
+      "updated_at": "2026-08-01T17:05:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -188,30 +253,38 @@
       "title": "fix(ci): package runtime resources in dist artifact",
       "url": "https://github.com/openclaw/openclaw/pull/117144",
       "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-      "head_sha": "16b90803bdaa404226234c93435c89ddc918cc46",
+      "head_sha": "2dc7079d5f5ffa9a2fa2ab773c1bdb1ccdd858b4",
       "cluster_id": "issue-openclaw-openclaw-98276",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-01T16:49:44Z",
+      "updated_at": "2026-08-01T17:05:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 117,
+        "total": 108,
         "counts": {
-          "CANCELLED": 3,
-          "SKIPPED": 22,
-          "SUCCESS": 87,
-          "FAILURE": 4,
+          "CANCELLED": 1,
+          "SUCCESS": 75,
+          "SKIPPED": 19,
+          "IN_PROGRESS": 10,
+          "FAILURE": 2,
           "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / build-artifacts:FAILURE",
+          "CI / checks-ui-e2e (1/4):IN_PROGRESS",
+          "CI / checks-ui-e2e (4/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
           "CI / checks-node-compact-small-2:FAILURE",
-          "CI / check-dependencies:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / check-dependencies:FAILURE"
         ]
       },
       "review_threads": {
@@ -238,24 +311,30 @@
         ]
       },
       "latest_record": {
-        "run_id": "30695391258",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30695391258",
+        "run_id": "30708678021",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30708678021",
         "cluster_id": "automerge-openclaw-openclaw-117144",
-        "published_at": "2026-08-01T10:29:51.359Z",
+        "published_at": "2026-08-01T17:08:32.805Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#117144",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#117144",
-          "candidate_fix": "#117144",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(ci): package runtime resources in dist artifact",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:FAILURE",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-ui-e2e (1/4):IN_PROGRESS; CI / checks-ui-e2e (4/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -268,7 +347,7 @@
       "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T16:52:43Z",
+      "updated_at": "2026-08-01T17:03:45Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
