@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-01T23:21:34.774Z",
+  "updated_at": "2026-08-01T23:21:36.294Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T20:35:46Z:clawsweeper_auto_merge",
-      "comment_id": "5146046509",
-      "comment_version_key": "5146046509:2026-08-01T20:35:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-      "comment_created_at": "2026-07-31T18:08:22Z",
-      "comment_updated_at": "2026-08-01T20:35:46Z",
-      "comment_body_sha256": "7ee281a63fbe6c69903a441f69b62ee9bb88baf7a74db0c18e0d2e23db3db4ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=2f9b1bd76295ddb3f4681494d260fc184f29ee46); PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "2f9b1bd76295ddb3f4681494d260fc184f29ee46",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T20:37:07.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-        "head_sha": "2f9b1bd76295ddb3f4681494d260fc184f29ee46",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:241:5092361352:2026-08-01T20:36:18Z:clawsweeper_auto_repair",
       "comment_id": "5092361352",
@@ -32474,6 +32421,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-doctor-critical-disk-severity",
         "head_sha": "ca3f80b4ab8c125b37b22caf46f52b20cd97d95e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117414:5151690770:2026-08-01T23:14:38Z:clawsweeper_needs_human",
+      "comment_id": "5151690770",
+      "comment_version_key": "5151690770:2026-08-01T23:14:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117414#issuecomment-5151690770",
+      "comment_created_at": "2026-08-01T13:45:56Z",
+      "comment_updated_at": "2026-08-01T23:14:38Z",
+      "comment_body_sha256": "74e3cc5bacce85c45723bd6ed289fe36a7e4df413d17ce0959eeafb831259dcc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided check rollup includes failed check-test-types and openclaw/ci-gate runs; GitHub DNS failed during this review, so it was not possible to establish whether a newer exact-h... (sha=38573a07631395a6bd69f6f2a8e54f2c436e6e65)",
+      "expected_head_sha": "38573a07631395a6bd69f6f2a8e54f2c436e6e65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T23:21:36.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-feishu-sdk-edit-routing",
+        "head_sha": "38573a07631395a6bd69f6f2a8e54f2c436e6e65",
         "cluster_id": null,
         "job_path": null
       }
