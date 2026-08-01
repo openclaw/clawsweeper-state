@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:24:12.841Z",
+  "updated_at": "2026-08-01T06:24:19.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104394:5149470243:2026-08-01T02:58:44Z:re_review",
-      "comment_id": "5149470243",
-      "comment_version_key": "5149470243:2026-08-01T02:58:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104394#issuecomment-5149470243",
-      "comment_created_at": "2026-08-01T02:58:44Z",
-      "comment_updated_at": "2026-08-01T02:58:44Z",
-      "comment_body_sha256": "9ba2f4585578f8d5276ee7f1dd202176a7b7f132357721a7e6e7bc1d3f98702b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104394,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:06:08.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-prefix-channel-account",
-        "head_sha": "bba80d421a136b333215f4f8ec8fb738ae345d8b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:48:5118008978:2026-08-01T03:05:33Z:clawsweeper_needs_human",
       "comment_id": "5118008978",
@@ -32019,6 +31972,39 @@
         "kind": "pull_request",
         "branch": "fix/agents-set-default",
         "head_sha": "bbf41d234728e355fe834d5c660e95216221055a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117258:5150173511:2026-08-01T06:23:40Z:clawsweeper_needs_human",
+      "comment_id": "5150173511",
+      "comment_version_key": "5150173511:2026-08-01T06:23:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117258#issuecomment-5150173511",
+      "comment_created_at": "2026-08-01T06:23:40Z",
+      "comment_updated_at": "2026-08-01T06:23:40Z",
+      "comment_body_sha256": "2a1e4296d6b408859f5d927655f5120c6cf5e1b459eb277b5b4055a6ef7be133",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes an availability-sensitive auth publication boundary: maintainers should confirm the merged code retains the latest derived-agent local credential when a main-store pub... (sha=9bae02a71ef97bc17643c0d868930aeb1e68346d)",
+      "expected_head_sha": "9bae02a71ef97bc17643c0d868930aeb1e68346d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:24:19.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117209-auth-snapshot",
+        "head_sha": "9bae02a71ef97bc17643c0d868930aeb1e68346d",
         "cluster_id": null,
         "job_path": null
       }
