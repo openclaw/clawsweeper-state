@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:35:49.885Z",
+  "updated_at": "2026-08-01T18:36:15.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
-      "comment_id": "5060665917",
-      "comment_version_key": "5060665917:2026-07-23T16:07:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5060665917",
-      "comment_created_at": "2026-07-23T16:07:52Z",
-      "comment_updated_at": "2026-07-23T16:07:52Z",
-      "comment_body_sha256": "c7992f35600de75f08731f3d2493b4b709478558d3ace9e0a66d2ceba825b5c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, no conflicts). new head aa1aaec226. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:27:19.884Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5064003035:2026-07-23T22:05:59Z:re_review",
       "comment_id": "5064003035",
@@ -32700,6 +32673,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116591:5152823905:2026-08-01T18:35:34Z:re_review",
+      "comment_id": "5152823905",
+      "comment_version_key": "5152823905:2026-08-01T18:35:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116591#issuecomment-5152823905",
+      "comment_created_at": "2026-08-01T18:35:34Z",
+      "comment_updated_at": "2026-08-01T18:35:34Z",
+      "comment_body_sha256": "584b5b3a712bf723561489d32f7cb40908fe3f40d200820d2ebf0225a7c44740",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116591,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T18:36:13.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-node-invoke-deadline",
+        "head_sha": "809a73433fbd7acf4da437e69f1c6aeb9f04a9a0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
