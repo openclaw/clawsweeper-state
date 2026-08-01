@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T02:24:01.328Z",
+  "updated_at": "2026-08-01T02:24:03.885Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5017707736:2026-07-19T23:02:39Z:re_review",
-      "comment_id": "5017707736",
-      "comment_version_key": "5017707736:2026-07-19T23:02:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5017707736",
-      "comment_created_at": "2026-07-19T23:02:39Z",
-      "comment_updated_at": "2026-07-19T23:02:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:32:42.524Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5021049369:2026-07-20T10:06:12Z:re_review",
       "comment_id": "5021049369",
@@ -32262,6 +32235,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117113:5148447613:2026-08-01T02:14:10Z:clawsweeper_needs_human",
+      "comment_id": "5148447613",
+      "comment_version_key": "5148447613:2026-08-01T02:14:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117113#issuecomment-5148447613",
+      "comment_created_at": "2026-07-31T23:59:16Z",
+      "comment_updated_at": "2026-08-01T02:14:10Z",
+      "comment_body_sha256": "0d2aefdf3d0e57e9e64aebf0f6f10e66f192137405da9dd14e9ebc215fc7c70b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused unit tests, but it provides no inspected after-fix runtime output, recording, or redacted trajectory artifact from... (sha=eb8955e36f583aefe3718ed90942e7b16a7772dd)",
+      "expected_head_sha": "eb8955e36f583aefe3718ed90942e7b16a7772dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T02:24:03.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-114602-supersede-v2",
+        "head_sha": "eb8955e36f583aefe3718ed90942e7b16a7772dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
