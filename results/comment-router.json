@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T17:25:36.614Z",
+  "updated_at": "2026-08-01T17:25:18.422Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114631:5093972738:2026-08-01T15:32:58Z:clawsweeper_needs_human",
+      "comment_id": "5093972738",
+      "comment_version_key": "5093972738:2026-08-01T15:32:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114631#issuecomment-5093972738",
+      "comment_created_at": "2026-07-27T16:29:44Z",
+      "comment_updated_at": "2026-08-01T15:32:58Z",
+      "comment_body_sha256": "365aef6c8d29c83f82ab1af153b4d92a1e229f9c6c1315cdf851661c711b1a90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional wizardAnswer request and full step response become a durable Gateway contract for macOS and future clients, including option values, defaults, executor metadata, and exte... (sha=f012043b40c7e95aa2eda8ac4905007347b16634)",
+      "expected_head_sha": "f012043b40c7e95aa2eda8ac4905007347b16634",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T15:33:37.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/custodian-wizard-step-payload",
+        "head_sha": "f012043b40c7e95aa2eda8ac4905007347b16634",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114631:5151211253:2026-08-01T11:25:02Z:re_review",
       "comment_id": "5151211253",
@@ -31547,39 +31580,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117498:5152306093:2026-08-01T17:24:50Z:clawsweeper_needs_human",
-      "comment_id": "5152306093",
-      "comment_version_key": "5152306093:2026-08-01T17:24:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117498#issuecomment-5152306093",
-      "comment_created_at": "2026-08-01T16:24:37Z",
-      "comment_updated_at": "2026-08-01T17:24:50Z",
-      "comment_body_sha256": "87792b40580d5fc4bb625ffa3285d9c096dcd5a2bbfabdced7edd8e90a320a0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117498,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes which persisted stores enter restart recovery: a false-negative status probe could leave an interrupted durable session unmarked, so a human owner should explicitly accep... (sha=140dae6bb03df2f8290c7126d33bfa256e04b50e)",
-      "expected_head_sha": "140dae6bb03df2f8290c7126d33bfa256e04b50e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:25:36.614Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/session-recovery-empty-store-skip",
-        "head_sha": "140dae6bb03df2f8290c7126d33bfa256e04b50e",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
