@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:22:05.557Z",
+  "updated_at": "2026-08-01T08:22:12.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116795:5142322966:2026-08-01T05:55:09Z:clawsweeper_needs_human",
-      "comment_id": "5142322966",
-      "comment_version_key": "5142322966:2026-08-01T05:55:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116795#issuecomment-5142322966",
-      "comment_created_at": "2026-07-31T11:23:04Z",
-      "comment_updated_at": "2026-08-01T05:55:09Z",
-      "comment_body_sha256": "672e0003d14e2a5a9bd8996b8e7f483919aa8173a69dca18f0d5476990604475",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116795,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This draft is based on the still-open predecessor https://github.com/openclaw/openclaw/pull/116794 rather than current main; merge sequencing and an exact-head validation refresh are... (sha=73871199b7e62be975afcd3b20b4a7214e4b7164)",
-      "expected_head_sha": "73871199b7e62be975afcd3b20b4a7214e4b7164",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:55:47.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-4-tool-policy",
-        "head_sha": "73871199b7e62be975afcd3b20b4a7214e4b7164",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116332:5129224632:2026-08-01T05:55:36Z:clawsweeper_auto_repair",
       "comment_id": "5129224632",
@@ -32278,6 +32245,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117258:5150598388:2026-08-01T08:21:40Z:re_review",
+      "comment_id": "5150598388",
+      "comment_version_key": "5150598388:2026-08-01T08:21:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117258#issuecomment-5150598388",
+      "comment_created_at": "2026-08-01T08:21:40Z",
+      "comment_updated_at": "2026-08-01T08:21:40Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117258,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:22:10.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117209-auth-snapshot",
+        "head_sha": "3cadaf6d3b5a70a8ebd01899bc729283f822ccf5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
