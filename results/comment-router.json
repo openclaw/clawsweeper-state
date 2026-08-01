@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:09:20.004Z",
+  "updated_at": "2026-08-01T11:09:33.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114750:5150601404:2026-08-01T08:22:38Z:re_review",
-      "comment_id": "5150601404",
-      "comment_version_key": "5150601404:2026-08-01T08:22:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114750#issuecomment-5150601404",
-      "comment_created_at": "2026-08-01T08:22:38Z",
-      "comment_updated_at": "2026-08-01T08:22:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114750,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:23:18.130Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114730",
-        "head_sha": "4a11660058c3281974b6dca7b725a446526a7433",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114983:5150601402:2026-08-01T08:22:38Z:re_review",
       "comment_id": "5150601402",
@@ -32141,6 +32094,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-openai-binary-payload-ownership",
         "head_sha": "17d4e9513d2219d3fb02c113fc8dc9ec82f44c53",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117353:5151160681:2026-08-01T11:08:59Z:clawsweeper_needs_human",
+      "comment_id": "5151160681",
+      "comment_version_key": "5151160681:2026-08-01T11:08:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117353#issuecomment-5151160681",
+      "comment_created_at": "2026-08-01T11:08:59Z",
+      "comment_updated_at": "2026-08-01T11:08:59Z",
+      "comment_body_sha256": "5ef2ebb0c0793ce3355160f135d7195746f98550c261f376ca8dd4ce203d318b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117353,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports Testbox and CI coverage, but does not show an after-fix live Gateway persistence/restart result; add a redacted terminal tr... (sha=ba8e29439207bf95c1e6aa160f07cd9fa7042fb9)",
+      "expected_head_sha": "ba8e29439207bf95c1e6aa160f07cd9fa7042fb9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:09:33.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-board-sqlite-owner-0801-2d45",
+        "head_sha": "ba8e29439207bf95c1e6aa160f07cd9fa7042fb9",
         "cluster_id": null,
         "job_path": null
       }
