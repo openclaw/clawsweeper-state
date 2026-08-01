@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:35:56.726Z",
+  "updated_at": "2026-08-01T05:36:14.526Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116168:5125419900:2026-08-01T01:44:06Z:clawsweeper_needs_human",
-      "comment_id": "5125419900",
-      "comment_version_key": "5125419900:2026-08-01T01:44:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116168#issuecomment-5125419900",
-      "comment_created_at": "2026-07-30T01:50:36Z",
-      "comment_updated_at": "2026-08-01T01:44:06Z",
-      "comment_body_sha256": "65bbda3562e0e7bead09538556a97e665f2924a4ce7ff626a4b15a7f167afb5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116168,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes an existing malformed --auth-choice invocation from a silent exit 0 to exit 1. That is the correct safety behavior for the proven false-success path, but it... (sha=76859ff08b1fe59d859f6b080d2de5d2b241f756)",
-      "expected_head_sha": "76859ff08b1fe59d859f6b080d2de5d2b241f756",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:50:41.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "onboard-auth-choice-empty-provider-id",
-        "head_sha": "76859ff08b1fe59d859f6b080d2de5d2b241f756",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116175:5125613634:2026-08-01T01:42:18Z:clawsweeper_needs_human",
       "comment_id": "5125613634",
@@ -32094,6 +32061,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117214:5150011021:2026-08-01T05:35:29Z:re_review",
+      "comment_id": "5150011021",
+      "comment_version_key": "5150011021:2026-08-01T05:35:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117214#issuecomment-5150011021",
+      "comment_created_at": "2026-08-01T05:35:29Z",
+      "comment_updated_at": "2026-08-01T05:35:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117214,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:36:11.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-transcript-persistence-bound-clean",
+        "head_sha": "a947b737f1dd47af2cc8d30a67d25b0339ab866b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
