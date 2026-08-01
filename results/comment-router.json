@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T01:46:42.741Z",
+  "updated_at": "2026-08-01T01:48:01.649Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5018123238:2026-07-20T01:59:34Z:re_review",
-      "comment_id": "5018123238",
-      "comment_version_key": "5018123238:2026-07-20T01:59:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5018123238",
-      "comment_created_at": "2026-07-20T01:59:34Z",
-      "comment_updated_at": "2026-07-20T01:59:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:20:02.206Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5018850426:2026-07-20T04:40:10Z:re_review",
       "comment_id": "5018850426",
@@ -31349,6 +31322,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116666:5139300133:2026-08-01T01:28:35Z:clawsweeper_needs_human",
+      "comment_id": "5139300133",
+      "comment_version_key": "5139300133:2026-08-01T01:28:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116666#issuecomment-5139300133",
+      "comment_created_at": "2026-07-31T04:34:39Z",
+      "comment_updated_at": "2026-08-01T01:28:35Z",
+      "comment_body_sha256": "a7ad8aef45514931855a29ef473e8fc62c95648b68802ec0115d30469007c3a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116666,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - With hooks.enabled: true, cron-inner work intentionally tops out at seven even while the hook lane is idle. Existing hook-enabled deployments may see more cron admission waiting after... (sha=9ff839f1de8e352afd6f6da80779c40790d33cf5)",
+      "expected_head_sha": "9ff839f1de8e352afd6f6da80779c40790d33cf5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T01:48:01.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/capacity-groups",
+        "head_sha": "9ff839f1de8e352afd6f6da80779c40790d33cf5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
