@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-01T14:12:16.404Z",
+  "generated_at": "2026-08-01T14:34:39.406Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30702491319.json",
+  "run_record": "results/runs/30702513540.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30702491319",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30702513540",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#117443:merge_canonical:blocked:checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#117443",
+      "title": "fix(status): resolve effective channel model override",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30702513540",
+      "cluster_id": "issue-openclaw-openclaw-89532",
+      "hook_run_id": "a8a1e6e0-c84a-4e2a-ac9a-7e278c30cc0c",
+      "url": "https://github.com/openclaw/openclaw/pull/117443"
+    },
+    {
+      "key": "clawsweeper.fix_pr_opened:openclaw/openclaw:#117443:open_fix_pr:opened:59382f10545ffc2955fc88e828be1c649d33f581",
+      "type": "clawsweeper.fix_pr_opened",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#117443",
+      "title": null,
+      "action": "open_fix_pr",
+      "event_status": "opened",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30702513540",
+      "cluster_id": "issue-openclaw-openclaw-89532",
+      "hook_run_id": "2a4e76cf-9abd-46eb-a332-30ae2390e116",
+      "url": "https://github.com/openclaw/openclaw/pull/117443"
+    }
+  ]
 }

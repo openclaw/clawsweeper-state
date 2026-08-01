@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T14:12:15.921Z",
-  "count": 2,
+  "generated_at": "2026-08-01T14:34:27.072Z",
+  "count": 3,
   "summary": {
-    "open_prs": 2,
+    "open_prs": 3,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 2,
+    "needs_checks": 3,
     "needs_review": 0,
-    "needs_merge_preflight": 2,
+    "needs_merge_preflight": 3,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,81 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 117443,
+      "title": "fix(status): resolve effective channel model override",
+      "url": "https://github.com/openclaw/openclaw/pull/117443",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89532",
+      "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
+      "cluster_id": "issue-openclaw-openclaw-89532",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
+      "updated_at": "2026-08-01T14:23:46Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 139,
+        "counts": {
+          "CANCELLED": 12,
+          "SKIPPED": 44,
+          "SUCCESS": 82,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117443#issuecomment-5151834090",
+            "submitted_at": "2026-08-01T14:23:43Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30702513540",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30702513540",
+        "cluster_id": "issue-openclaw-openclaw-89532",
+        "published_at": "2026-08-01T14:34:13.904Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117443",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(status): resolve effective channel model override",
+          "idempotency_key": null,
+          "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 117144,
       "title": "fix(ci): package runtime resources in dist artifact",
@@ -111,7 +186,7 @@
       "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T14:11:46Z",
+      "updated_at": "2026-08-01T14:34:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

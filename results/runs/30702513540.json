@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89532",
+  "mode": "autonomous",
+  "run_id": "30702513540",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30702513540",
+  "head_sha": "5b0ff665559a1d680248caf321402bf66a36a94b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
+  "published_at": "2026-08-01T14:34:13.904Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89532",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89532",
+  "canonical_pr": null,
+  "summary": "Current main 339b8270bbe30dde3d3fd571400cd6666966f42b still reproduces #89532 in source: normal replies resolve channels.modelByChannel before selecting a model when no effective session/heartbeat selection exists, but /status selects the configured/session model first and only adds a channel-override note afterward. The checkout is read-only and lacks node_modules, so this worker cannot create the required branch delta or run focused tests; a narrow new-PR artifact is ready for the executor.",
+  "actions": [
+    {
+      "target": "#87957",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#89532",
+      "candidate_fix": null,
+      "reason": "Keep open as related architectural follow-up; it is not a duplicate or an automation target for this narrow bug fix."
+    },
+    {
+      "target": "#89532",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#89532",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only checkout and missing dependencies. The deterministic executor should create/update clawsweeper/issue-openclaw-openclaw-89532 using the attached narrow artifact."
+    },
+    {
+      "target": "#89602",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#89532",
+      "candidate_fix": null,
+      "reason": "Historical contributor implementation only; no close, comment, merge, or branch-revival action is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89532",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89532",
+      "candidate_fix": null,
+      "reason": "Executor-ready new-fix-PR plan; local implementation remains blocked in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117443",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89532",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117443",
+      "commit": "59382f10545ffc2955fc88e828be1c649d33f581",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#89532",
+      "pr": "https://github.com/openclaw/openclaw/pull/117443",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117443",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117443",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(status): resolve effective channel model override",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
