@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:55:44.405Z",
+  "updated_at": "2026-08-01T08:55:59.718Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116646:5138948988:2026-08-01T05:57:10Z:clawsweeper_needs_human",
-      "comment_id": "5138948988",
-      "comment_version_key": "5138948988:2026-08-01T05:57:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116646#issuecomment-5138948988",
-      "comment_created_at": "2026-07-31T03:30:39Z",
-      "comment_updated_at": "2026-08-01T05:57:10Z",
-      "comment_body_sha256": "438be2ebe1d74a7e3aeb30beff70dd548422b3182329558046882fef9eba448a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116646,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Suppress bare calls through harmless child\\_process aliases (P2)** - The generated matcher always includes bare exec(...), while extractChildProcessBindings drops readFile as exec; therefore a safe readFile alia...; Review finding: [P2] Suppress bare calls through harmless child_process aliases — src/skills/security/scanner.ts:371-380 - [P2] Require a proven namespace for computed members — s... (sha=c363064ee72e2d672d5d57baf0e7fc5b742338f3)",
-      "expected_head_sha": "c363064ee72e2d672d5d57baf0e7fc5b742338f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:19:25.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scanner-child-process-aliases-116255",
-        "head_sha": "c363064ee72e2d672d5d57baf0e7fc5b742338f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116673:5139458860:2026-08-01T05:37:50Z:clawsweeper_needs_human",
       "comment_id": "5139458860",
@@ -32496,6 +32463,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117277:5150424094:2026-08-01T08:51:13Z:clawsweeper_auto_repair",
+      "comment_id": "5150424094",
+      "comment_version_key": "5150424094:2026-08-01T08:51:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117277#issuecomment-5150424094",
+      "comment_created_at": "2026-08-01T07:31:35Z",
+      "comment_updated_at": "2026-08-01T08:51:13Z",
+      "comment_body_sha256": "c9f6a75f6d673d17599b310252b4a2bb32da9c0af4bb49a3ddae38a5b2c35271",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117277,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c8d99353defe677ceb8aef40e53763213af664e6)",
+      "expected_head_sha": "c8d99353defe677ceb8aef40e53763213af664e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:55:59.718Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/111923-filter-rem-junk-topics",
+        "head_sha": "c8d99353defe677ceb8aef40e53763213af664e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
