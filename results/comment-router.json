@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T19:06:44.132Z",
+  "updated_at": "2026-08-01T19:06:27.087Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110714:5011489197:2026-08-01T16:05:31Z:clawsweeper_auto_repair",
+      "comment_id": "5011489197",
+      "comment_version_key": "5011489197:2026-08-01T16:05:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110714#issuecomment-5011489197",
+      "comment_created_at": "2026-07-18T13:46:40Z",
+      "comment_updated_at": "2026-08-01T16:05:31Z",
+      "comment_body_sha256": "316586863b05dfca6bcc46ed5f4c65c185c4df5206069f67f0effa5fb4c5d655",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110714,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68376d2cc32b1a213055166c0d2a5b0c37530fda)",
+      "expected_head_sha": "68376d2cc32b1a213055166c0d2a5b0c37530fda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:39:39.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-oc-path-cli",
+        "head_sha": "68376d2cc32b1a213055166c0d2a5b0c37530fda",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111217:5014427228:2026-08-01T16:06:01Z:clawsweeper_needs_human",
       "comment_id": "5014427228",
@@ -32912,53 +32945,6 @@
       "status": "skipped",
       "processed_at": "2026-08-01T19:06:27.086Z",
       "target": null
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117525:5152957055:2026-08-01T19:06:05Z:re_review",
-      "comment_id": "5152957055",
-      "comment_version_key": "5152957055:2026-08-01T19:06:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117525#issuecomment-5152957055",
-      "comment_created_at": "2026-08-01T19:06:05Z",
-      "comment_updated_at": "2026-08-01T19:06:05Z",
-      "comment_body_sha256": "4ab74286e08664035442e40889a4da1864be64917659e6249ea0a98591a5d802",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117525,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:06:38.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-cli-health-benchmark",
-        "head_sha": "d40d08e91eda306807e7d5bfee663413f8dbf01d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
