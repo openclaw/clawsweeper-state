@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:13:27.988Z",
+  "updated_at": "2026-08-01T19:13:35.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117412:5151588375:2026-08-01T14:12:07Z:clawsweeper_needs_human",
-      "comment_id": "5151588375",
-      "comment_version_key": "5151588375:2026-08-01T14:12:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117412#issuecomment-5151588375",
-      "comment_created_at": "2026-08-01T13:16:46Z",
-      "comment_updated_at": "2026-08-01T14:12:07Z",
-      "comment_body_sha256": "4d63b58a9d0777f50770274096832fc3b67a5f9e9aa348992f12b2e339246c1d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117412,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check set still has build, compact-check, and QA Smoke jobs in progress; merge should wait for their completion on the final head. (sha=7d17d429821f8af86f3756299a676b4b85d1532e)",
-      "expected_head_sha": "7d17d429821f8af86f3756299a676b4b85d1532e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:39:39.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-subagent-sweeper-0801-2d45",
-        "head_sha": "7d17d429821f8af86f3756299a676b4b85d1532e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117406:5151629986:2026-08-01T14:24:45Z:clawsweeper_needs_human",
       "comment_id": "5151629986",
@@ -32957,6 +32924,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89040:5152982807:2026-08-01T19:12:56Z:re_review",
+      "comment_id": "5152982807",
+      "comment_version_key": "5152982807:2026-08-01T19:12:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5152982807",
+      "comment_created_at": "2026-08-01T19:12:56Z",
+      "comment_updated_at": "2026-08-01T19:12:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89040,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:13:31.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bootstrap-context-event-loop-stall",
+        "head_sha": "52b48eeddff896614622633b3266d6abd6a0d013",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
