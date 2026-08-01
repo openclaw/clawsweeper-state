@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:26:41.731Z",
+  "updated_at": "2026-08-01T07:26:47.610Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4875179920:2026-07-03T10:19:38Z:re_review",
-      "comment_id": "4875179920",
-      "comment_version_key": "4875179920:2026-07-03T10:19:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4875179920",
-      "comment_created_at": "2026-07-03T10:19:38Z",
-      "comment_updated_at": "2026-07-03T10:19:38Z",
-      "comment_body_sha256": "d69ebefc1bae99dde1eab27e3d388db24111690997f83ba7e2dd0f699d47f5cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:02:37.460Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4879631195:2026-07-03T22:22:42Z:re_review",
       "comment_id": "4879631195",
@@ -31799,6 +31772,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117222:5149935434:2026-08-01T07:25:48Z:clawsweeper_needs_human",
+      "comment_id": "5149935434",
+      "comment_version_key": "5149935434:2026-08-01T07:25:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117222#issuecomment-5149935434",
+      "comment_created_at": "2026-08-01T05:12:10Z",
+      "comment_updated_at": "2026-08-01T07:25:48Z",
+      "comment_body_sha256": "3ef50fa2a7877e7eb00b36b99693613f6c06f4edbf92a13696cde748e17a290c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as mergeable but behind current main; refresh the branch and required checks against the merge result before landing. (sha=5093970511a662cb1a8ad75c15ae528dac87b381)",
+      "expected_head_sha": "5093970511a662cb1a8ad75c15ae528dac87b381",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:26:47.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-recent-usage-days",
+        "head_sha": "5093970511a662cb1a8ad75c15ae528dac87b381",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
