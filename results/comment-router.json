@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:21:22.667Z",
+  "updated_at": "2026-08-01T11:21:49.508Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:996:5150583103:2026-08-01T08:34:18Z:clawsweeper_needs_human",
-      "comment_id": "5150583103",
-      "comment_version_key": "5150583103:2026-08-01T08:34:18Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/996#issuecomment-5150583103",
-      "comment_created_at": "2026-08-01T08:17:04Z",
-      "comment_updated_at": "2026-08-01T08:34:18Z",
-      "comment_body_sha256": "0a3600a97661261ed791bde5e977d40713edb0869956fa6d27050d27ea542b75",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 996,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the fail-closed validation path used by automated repairs: a future regression in root-digest reuse or alias attribution could misdiagnose a runtime mutation, so the focu... (sha=4ffd7a73caa53881ec6fc9f36cef32cb5d05a428)",
-      "expected_head_sha": "4ffd7a73caa53881ec6fc9f36cef32cb5d05a428",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:34:59.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawsweeper-validation-cache-diagnostics",
-        "head_sha": "4ffd7a73caa53881ec6fc9f36cef32cb5d05a428",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116612:5138129191:2026-08-01T08:31:24Z:clawsweeper_needs_human",
       "comment_id": "5138129191",
@@ -32146,6 +32113,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:77:5134156054:2026-08-01T11:14:28Z:clawsweeper_needs_human",
+      "comment_id": "5134156054",
+      "comment_version_key": "5134156054:2026-08-01T11:14:28Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/77#issuecomment-5134156054",
+      "comment_created_at": "2026-07-30T17:29:51Z",
+      "comment_updated_at": "2026-08-01T11:14:28Z",
+      "comment_body_sha256": "cef6e44c6121ab1fad367502d38211cf565400bb2f6d4bd40af23e09b0451ec5",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 77,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The locked native-build CLI update coincides with a failed Windows Node 24 package-validation job. Until its failing command and error output are inspected, merging could leave a supp... (sha=8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53)",
+      "expected_head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:21:49.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-577c6fd817",
+        "head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
