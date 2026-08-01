@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:26:15.665Z",
+  "updated_at": "2026-08-01T11:26:17.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117159:5150670430:2026-08-01T08:43:14Z:re_review",
-      "comment_id": "5150670430",
-      "comment_version_key": "5150670430:2026-08-01T08:43:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117159#issuecomment-5150670430",
-      "comment_created_at": "2026-08-01T08:43:14Z",
-      "comment_updated_at": "2026-08-01T08:43:14Z",
-      "comment_body_sha256": "dc050b2c4279e1b6af12401bfb01be62033e03bfb65ed0ba386ff89e4276bfc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117159,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review: rebased the unchanged focused repair onto live main b0b708d919420d8aebc8aa1cf98576cd9679aacc after #117282 rewrote the downstream imessage delivery boundary. review exact head b746c8bfcbc8940509c071c6fac61ccd23ad2c01. sanitized aws proof on that exact head passed 193/193 across monitor.behavior, deliver integration, and plugin-payload tests; targeted oxfmt and oxlint passed with zero findings; fresh autoreview is clean. the exact-head check-lint failure has no diagnostic and is another externally canceled core shard (exit 143); one failed-only rerun is active",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:43:51.932Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-2026-07-31-d",
-        "head_sha": "b746c8bfcbc8940509c071c6fac61ccd23ad2c01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:996:5150583103:2026-08-01T08:43:19Z:clawsweeper_needs_human",
       "comment_id": "5150583103",
@@ -32015,6 +31968,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-tui-gateway-terminal-lifetime",
         "head_sha": "55b9ff206e6d464da268f9fa889a040e9dd3cbfc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111782:5021896042:2026-08-01T11:25:44Z:clawsweeper_auto_repair",
+      "comment_id": "5021896042",
+      "comment_version_key": "5021896042:2026-08-01T11:25:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111782#issuecomment-5021896042",
+      "comment_created_at": "2026-07-20T11:49:42Z",
+      "comment_updated_at": "2026-08-01T11:25:44Z",
+      "comment_body_sha256": "5e2184c84d0a8f6cf471f6169f606537aaf9bbff417165201093fb6add9b2995",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111782,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cafe5090a7c9089c9a4b2df4d9a83f0b43334d82)",
+      "expected_head_sha": "cafe5090a7c9089c9a4b2df4d9a83f0b43334d82",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:26:17.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-bedrock-mantle-responses",
+        "head_sha": "cafe5090a7c9089c9a4b2df4d9a83f0b43334d82",
         "cluster_id": null,
         "job_path": null
       }
