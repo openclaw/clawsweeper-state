@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:57:45.466Z",
+  "updated_at": "2026-08-01T22:58:17.967Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117550:5152802359:2026-08-01T20:24:04Z:clawsweeper_auto_repair",
-      "comment_id": "5152802359",
-      "comment_version_key": "5152802359:2026-08-01T20:24:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117550#issuecomment-5152802359",
-      "comment_created_at": "2026-08-01T18:30:24Z",
-      "comment_updated_at": "2026-08-01T20:24:04Z",
-      "comment_body_sha256": "2c7b91413183893a90c19d2249c3e092ae4cdb2e0bedb77206f2285506593b48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e8f40f58ab0b875220eeac3d9880a77c8702e543)",
-      "expected_head_sha": "e8f40f58ab0b875220eeac3d9880a77c8702e543",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:29:25.272Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-picker-auth-profile",
-        "head_sha": "e8f40f58ab0b875220eeac3d9880a77c8702e543",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117582:5153005478:2026-08-01T20:22:41Z:clawsweeper_auto_repair",
       "comment_id": "5153005478",
@@ -32717,6 +32684,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T22:57:45.465Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:134:5135271633:2026-08-01T22:57:43Z:clawsweeper_needs_human",
+      "comment_id": "5135271633",
+      "comment_version_key": "5135271633:2026-08-01T22:57:43Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/134#issuecomment-5135271633",
+      "comment_created_at": "2026-07-30T19:20:17Z",
+      "comment_updated_at": "2026-08-01T22:57:43Z",
+      "comment_body_sha256": "52715076cb222f7cbdcf734ecd34341e5ff5788dde7a4f0368d6cd42d5de26fb",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the write-capable action upgrade before merging** - actions/stale@v11 replaces code that receives issue and pull-request write permissions; the PR provides no controlled run sh...; Review finding: [medium] Validate the write-capable action upgrade before merging — .github/workflows/stale.yml:18 (sha=750865122356586ac616bc162b0c2fbb449842a4)",
+      "expected_head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:58:17.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11",
+        "head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
