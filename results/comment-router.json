@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:20:01.171Z",
+  "updated_at": "2026-08-01T03:21:10.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113403:5148067273:2026-07-31T22:41:29Z:re_review",
-      "comment_id": "5148067273",
-      "comment_version_key": "5148067273:2026-07-31T22:41:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113403#issuecomment-5148067273",
-      "comment_created_at": "2026-07-31T22:41:29Z",
-      "comment_updated_at": "2026-07-31T22:41:29Z",
-      "comment_body_sha256": "e1262f7a5164561b689af0fc07121f654a5b3edfb23dd14e3644e032d3352aa8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113403,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T22:44:11.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/cron-toolless-run-guard",
-        "head_sha": "ac862215695e8950affafdf68f962e1a1fc95103",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1072:5135282083:2026-07-31T22:44:36Z:clawsweeper_needs_human",
       "comment_id": "5135282083",
@@ -33057,6 +33010,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:326:5148747816:2026-08-01T03:01:03Z:clawsweeper_needs_human",
+      "comment_id": "5148747816",
+      "comment_version_key": "5148747816:2026-08-01T03:01:03Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/326#issuecomment-5148747816",
+      "comment_created_at": "2026-08-01T01:03:20Z",
+      "comment_updated_at": "2026-08-01T03:01:03Z",
+      "comment_body_sha256": "cd71942ee0e7dc1375cc3d531b8b0d5047280287dabb64a78caab466f383c228",
+      "repo": "openclaw/wacli",
+      "issue_number": 326,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Quoted-message participant metadata is delivery-sensitive: an incorrect PN/LID counterpart mapping could attach a reply to the wrong participant for affected direct-chat quotes. The r... (sha=1d3c0399ae65805de85e5545320b16f50ae49f1e)",
+      "expected_head_sha": "1d3c0399ae65805de85e5545320b16f50ae49f1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:21:10.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-quote-lid-alias",
+        "head_sha": "1d3c0399ae65805de85e5545320b16f50ae49f1e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
