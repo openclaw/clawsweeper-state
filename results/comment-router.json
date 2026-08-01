@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:03:39.059Z",
+  "updated_at": "2026-08-01T10:03:57.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117185:5150328100:2026-08-01T07:07:23Z:re_review",
-      "comment_id": "5150328100",
-      "comment_version_key": "5150328100:2026-08-01T07:07:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117185#issuecomment-5150328100",
-      "comment_created_at": "2026-08-01T07:07:23Z",
-      "comment_updated_at": "2026-08-01T07:07:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117185,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T07:07:56.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-anthropic-codex",
-        "head_sha": "ff523ac316965f04f86fa9df35161428b7267a1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117269:5150330155:2026-08-01T07:07:54Z:clawsweeper_needs_human",
       "comment_id": "5150330155",
@@ -32777,6 +32730,39 @@
         "kind": "pull_request",
         "branch": "fix-117209-auth-snapshot",
         "head_sha": "1fbe07b963692e0b0d7cb724787b72c7922ba999",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117325:5150944327:2026-08-01T10:03:22Z:clawsweeper_auto_repair",
+      "comment_id": "5150944327",
+      "comment_version_key": "5150944327:2026-08-01T10:03:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117325#issuecomment-5150944327",
+      "comment_created_at": "2026-08-01T10:03:22Z",
+      "comment_updated_at": "2026-08-01T10:03:22Z",
+      "comment_body_sha256": "e9767a2abbd882899b1a71c0ee91abb6d1ad1d35109d04c39fc9776c587def79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117325,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=64b99c4864c2b9d31246089dc7ba2791f40fd341)",
+      "expected_head_sha": "64b99c4864c2b9d31246089dc7ba2791f40fd341",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:03:57.954Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/octopool-guard-read-relay",
+        "head_sha": "64b99c4864c2b9d31246089dc7ba2791f40fd341",
         "cluster_id": null,
         "job_path": null
       }
