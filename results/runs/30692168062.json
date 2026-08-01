@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115355",
+  "mode": "autonomous",
+  "run_id": "30692168062",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30692168062",
+  "head_sha": "b347894406412c2b52bfa97a73bf9f5da4ea1598",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115355.md",
+  "published_at": "2026-08-01T08:48:01.961Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115355",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115355",
+  "canonical_pr": null,
+  "summary": "Verified on main e1101d15b87d859f103d182aabf491f7ad59e6b9: the non-isolated UI suite’s runtime-tool chip test invokes the production history mutation, then restores real shared jsdom history itself. The issue remains valid and has a narrow one-file test-only repair, but this checkout is read-only, so implementation and local validation are blocked for this worker; an executable new-PR artifact is prepared.",
+  "actions": [
+    {
+      "target": "#115355",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#115355",
+      "candidate_fix": null,
+      "reason": "A narrow repair is ready for a new PR, but this read-only checkout cannot produce or validate the required branch delta."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115355",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115355",
+      "candidate_fix": null,
+      "reason": "Create a fresh narrow fix PR from clawsweeper/issue-openclaw-openclaw-115355 after applying the prepared test isolation change."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
