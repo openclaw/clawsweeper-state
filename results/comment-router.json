@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T12:00:27.269Z",
+  "updated_at": "2026-08-01T12:00:45.491Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109381:4999125825:2026-07-17T04:58:20Z:re_review",
-      "comment_id": "4999125825",
-      "comment_version_key": "4999125825:2026-07-17T04:58:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109381#issuecomment-4999125825",
-      "comment_created_at": "2026-07-17T04:58:20Z",
-      "comment_updated_at": "2026-07-17T04:58:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109381,
-      "author": "Pick-cat",
-      "author_id": 266665499,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T09:41:13.454Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109381:4999196470:2026-07-17T05:11:57Z:re_review",
       "comment_id": "4999196470",
@@ -31872,6 +31845,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112329:5127941553:2026-08-01T12:00:14Z:clawsweeper_needs_human",
+      "comment_id": "5127941553",
+      "comment_version_key": "5127941553:2026-08-01T12:00:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112329#issuecomment-5127941553",
+      "comment_created_at": "2026-07-30T07:30:06Z",
+      "comment_updated_at": "2026-08-01T12:00:14Z",
+      "comment_body_sha256": "ca110e13c5fbe97a8328526c9ef133b011f7efa82b9a756cffd9f9a78014d032",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body asserts a live restart result, but the supplied material contains no inspectable redacted terminal output, runtime log, recording,... (sha=1fc4d4378094cf3d2350fd0d5ff16bd2bf8d0b35)",
+      "expected_head_sha": "1fc4d4378094cf3d2350fd0d5ff16bd2bf8d0b35",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T12:00:45.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/fix-matrix-doctor-archive-scan",
+        "head_sha": "1fc4d4378094cf3d2350fd0d5ff16bd2bf8d0b35",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
