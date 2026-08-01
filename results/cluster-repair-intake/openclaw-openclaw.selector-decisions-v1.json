@@ -1,0 +1,114 @@
+{
+  "schema": "clawsweeper-cluster-selector-decisions-v1",
+  "target_repo": "openclaw/openclaw",
+  "stores": [
+    {
+      "store_sha256": "356d46412995c31baaeb66267d1ce3560c941408ccdd6c043ddecca641c21a75",
+      "store_exported_at": "2026-07-29T09:16:16.261Z",
+      "accepted_at": "2026-08-01T08:56:05.870Z",
+      "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30692672371",
+      "selector_summary": {
+        "evaluated": 8,
+        "rejected": 8,
+        "reason_counts": {
+          "model_rejected": 8
+        }
+      },
+      "selector_decision": {
+        "rationale": "No offered cluster is an eligible new, narrow, non-security bug fix. The only clearly bounded bug-fix PR (#51762) already has an open implementation with focused tests and a recorded merge commit SHA, so it is covered work rather than a new ClawSweeper target. The remaining open candidates are feature/product or architecture proposals, existing PR work, closed work, or security-sensitive and require routing.",
+        "assessments": [
+          {
+            "cluster_id": 84,
+            "decision": "rejected",
+            "rationale": "#22438 is a feature proposal requiring maintainer and product decisions, and it is already implemented by the open linked PR #22439. The implementation changes configuration and bootstrap/session-context behavior across ten files and is marked as waiting on the author with compatibility and session-state risk. It is not an unclaimed narrow bug fix.",
+            "candidate_refs": [
+              22438,
+              22439
+            ],
+            "cluster_refs": [
+              22438,
+              22439
+            ]
+          },
+          {
+            "cluster_id": 3890,
+            "decision": "rejected",
+            "rationale": "The sole member, PR #18778, is closed, unmerged, draft-originated work with a dirty/unmergeable state. It is also a large Discord/gateway feature and is not still-open, review-ready bug-fix work.",
+            "candidate_refs": [
+              18778
+            ],
+            "cluster_refs": [
+              18778
+            ]
+          },
+          {
+            "cluster_id": 3878,
+            "decision": "rejected",
+            "rationale": "This is a large security-sensitive enforcement proposal spanning gateway, CLI, UI, agent, and documentation surfaces, with 29 changed files and a needs-proof status. It requires security routing.",
+            "candidate_refs": [
+              18196
+            ],
+            "cluster_refs": [
+              18196
+            ]
+          },
+          {
+            "cluster_id": 3604,
+            "decision": "rejected",
+            "rationale": "#9764 proposes optional user OAuth support and new credential/configuration behavior rather than a narrow bug fix. Repository evidence marks it as requiring both product decision and security review. It requires security routing.",
+            "candidate_refs": [
+              9764
+            ],
+            "cluster_refs": [
+              9764
+            ]
+          },
+          {
+            "cluster_id": 12713,
+            "decision": "rejected",
+            "rationale": "#67419 combines several policy/default changes: enabling an existing option by default, changing memory-loading behavior, and delivering a separately referenced dynamic-file configuration. The issue itself says existing mechanics already address part of it, while the remaining choices require maintainer/product decisions and affect session state.",
+            "candidate_refs": [
+              67419
+            ],
+            "cluster_refs": [
+              67419
+            ]
+          },
+          {
+            "cluster_id": 7856,
+            "decision": "rejected",
+            "rationale": "PR #51762 is a narrow, tested bug fix, but it is already covered by an active implementation: it has one current commit, focused tests, runtime proof, and a recorded merge commit SHA despite the API still reporting open. Selecting duplicate implementation work would not be useful.",
+            "candidate_refs": [
+              51762
+            ],
+            "cluster_refs": [
+              51762
+            ]
+          },
+          {
+            "cluster_id": 3645,
+            "decision": "rejected",
+            "rationale": "#11517 is an architecture refactor proposal for dependency injection across highly coupled runtime and Discord modules. It has no concrete defect reproduction or bounded fix and explicitly needs maintainer/product direction.",
+            "candidate_refs": [
+              11517
+            ],
+            "cluster_refs": [
+              11517
+            ]
+          },
+          {
+            "cluster_id": 3546,
+            "decision": "rejected",
+            "rationale": "#7707 is a broad security-oriented feature request involving memory provenance, retention, retrieval policy, and UI. It requires product and maintainer decisions and security routing rather than a standalone non-security bug fix.",
+            "candidate_refs": [
+              7707
+            ],
+            "cluster_refs": [
+              7707
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
