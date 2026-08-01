@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:35:41.751Z",
+  "updated_at": "2026-08-01T17:35:55.999Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99041:4864663000:2026-08-01T12:51:05Z:clawsweeper_auto_repair",
-      "comment_id": "4864663000",
-      "comment_version_key": "4864663000:2026-08-01T12:51:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99041#issuecomment-4864663000",
-      "comment_created_at": "2026-07-02T10:21:17Z",
-      "comment_updated_at": "2026-08-01T12:51:05Z",
-      "comment_body_sha256": "da93dfee4c8e80575d8282490d270c752eb8338501ab956beda6c4bc88100be8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99041,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=022da1ead4d26839f9bfefe06a0f635031b25ff5)",
-      "expected_head_sha": "022da1ead4d26839f9bfefe06a0f635031b25ff5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:44:38.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/84081-modelstudio-profile-alias-repro",
-        "head_sha": "022da1ead4d26839f9bfefe06a0f635031b25ff5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104240:4943465540:2026-08-01T12:51:40Z:clawsweeper_needs_human",
       "comment_id": "4943465540",
@@ -31394,6 +31361,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2413:5152579753:2026-08-01T17:35:18Z:re_review",
+      "comment_id": "5152579753",
+      "comment_version_key": "5152579753:2026-08-01T17:35:18Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5152579753",
+      "comment_created_at": "2026-08-01T17:35:18Z",
+      "comment_updated_at": "2026-08-01T17:35:18Z",
+      "comment_body_sha256": "c4569f0c2f75a7a2e9e3c08f2e79c8e8f34d17c4f1d02e404d1ffc4130704e53",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2413,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T17:35:53.798Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-proxy-model-pricing-2393",
+        "head_sha": "223bb264689e1bdbc998ac58b1ac58b82eb4aa36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
