@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:31:10.485Z",
+  "updated_at": "2026-08-01T03:31:13.984Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88504:4618840420:2026-06-04T04:05:48Z:re_review",
-      "comment_id": "4618840420",
-      "comment_version_key": "4618840420:2026-06-04T04:05:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4618840420",
-      "comment_created_at": "2026-06-04T04:05:48Z",
-      "comment_updated_at": "2026-06-04T04:05:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88504,
-      "author": "kklouzal",
-      "author_id": 2928845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:11:50.929Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88504:4759786923:2026-06-20T19:39:36Z:re_review",
       "comment_id": "4759786923",
@@ -32848,6 +32821,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T03:31:10.484Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117160:5149090020:2026-08-01T03:27:53Z:clawsweeper_needs_human",
+      "comment_id": "5149090020",
+      "comment_version_key": "5149090020:2026-08-01T03:27:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117160#issuecomment-5149090020",
+      "comment_created_at": "2026-08-01T02:13:17Z",
+      "comment_updated_at": "2026-08-01T03:27:53Z",
+      "comment_body_sha256": "626bddd01f91f7c0f946759833aee4b52ba1214798d5a8e1ecac8073e86a323c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main, and the supplied check rollup includes a failing checks-node-compact-small-9 run; refresh the merge result and confirm exact-head required checks before... (sha=e47deef26dce7775477e56057a65b3ef0fd9ba77)",
+      "expected_head_sha": "e47deef26dce7775477e56057a65b3ef0fd9ba77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:31:13.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/115073-doctor-clean-message",
+        "head_sha": "e47deef26dce7775477e56057a65b3ef0fd9ba77",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
