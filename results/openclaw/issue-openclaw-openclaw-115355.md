@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-115355"
 mode: "autonomous"
-run_id: "30692168062"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30692168062"
+run_id: "30691929572"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30691929572"
 head_sha: "b347894406412c2b52bfa97a73bf9f5da4ea1598"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-01T08:48:01.961Z"
+published_at: "2026-08-01T09:06:31.715Z"
 canonical: "https://github.com/openclaw/openclaw/issues/115355"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/115355"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30692168062](https://github.com/openclaw/clawsweeper/actions/runs/30692168062)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30691929572](https://github.com/openclaw/clawsweeper/actions/runs/30691929572)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/115355
 
 ## Summary
 
-Verified on main e1101d15b87d859f103d182aabf491f7ad59e6b9: the non-isolated UI suite’s runtime-tool chip test invokes the production history mutation, then restores real shared jsdom history itself. The issue remains valid and has a narrow one-file test-only repair, but this checkout is read-only, so implementation and local validation are blocked for this worker; an executable new-PR artifact is prepared.
+Verified on current main `b0b708d919420d8aebc8aa1cf98576cd9679aacc`: the agent-tool chip test still invokes the production handler against real jsdom history, then restores the URL only in `finally`. The scoped test-only repair remains valid, but this checkout is read-only, so the executor must create/update `clawsweeper/issue-openclaw-openclaw-115355`, apply the one-file change, and run the listed validation.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Verified on main e1101d15b87d859f103d182aabf491f7ad59e6b9: the non-isolated UI s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #115355 | fix_needed | blocked | canonical | A narrow repair is ready for a new PR, but this read-only checkout cannot produce or validate the required branch delta. |
-| cluster:issue-openclaw-openclaw-115355 | build_fix_artifact | planned | canonical | Create a fresh narrow fix PR from clawsweeper/issue-openclaw-openclaw-115355 after applying the prepared test isolation change. |
+| #115355 | fix_needed | planned | canonical | Current main still violates the test-isolation invariant. A narrow one-file regression repair is appropriate. |
+| cluster:issue-openclaw-openclaw-115355 | build_fix_artifact | planned |  | Hand off an executable new-PR plan to the deterministic repair executor. |
 
 ## Needs Human
 

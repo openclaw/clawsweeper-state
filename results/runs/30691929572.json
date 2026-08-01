@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115355",
+  "mode": "autonomous",
+  "run_id": "30691929572",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30691929572",
+  "head_sha": "b347894406412c2b52bfa97a73bf9f5da4ea1598",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115355.md",
+  "published_at": "2026-08-01T09:06:31.715Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115355",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115355",
+  "canonical_pr": null,
+  "summary": "Verified on current main `b0b708d919420d8aebc8aa1cf98576cd9679aacc`: the agent-tool chip test still invokes the production handler against real jsdom history, then restores the URL only in `finally`. The scoped test-only repair remains valid, but this checkout is read-only, so the executor must create/update `clawsweeper/issue-openclaw-openclaw-115355`, apply the one-file change, and run the listed validation.",
+  "actions": [
+    {
+      "target": "#115355",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115355",
+      "candidate_fix": null,
+      "reason": "Current main still violates the test-isolation invariant. A narrow one-file regression repair is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115355",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#115355",
+      "candidate_fix": null,
+      "reason": "Hand off an executable new-PR plan to the deterministic repair executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
