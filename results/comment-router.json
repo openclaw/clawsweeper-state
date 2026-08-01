@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:04:54.169Z",
+  "updated_at": "2026-08-01T17:04:56.739Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117461:5152065463:2026-08-01T15:24:44Z:clawsweeper_needs_human",
-      "comment_id": "5152065463",
-      "comment_version_key": "5152065463:2026-08-01T15:24:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117461#issuecomment-5152065463",
-      "comment_created_at": "2026-08-01T15:24:44Z",
-      "comment_updated_at": "2026-08-01T15:24:44Z",
-      "comment_body_sha256": "b3942861b38978ae12e79d6fbab6dc58718271369117b0da6e148f8c6079b39a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117461,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair remains: the patch is correct, but the protected maintainer label and in-progress exact-head checks require normal maintainer merge handling. (sha=2bab2103a42481a57566273c98005ca0c052b873)",
-      "expected_head_sha": "2bab2103a42481a57566273c98005ca0c052b873",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:25:24.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa402-plugin-cold-tool-inventory",
-        "head_sha": "2bab2103a42481a57566273c98005ca0c052b873",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:110:5118265619:2026-08-01T15:21:08Z:clawsweeper_needs_human",
       "comment_id": "5118265619",
@@ -31293,6 +31260,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117493:5152458982:2026-08-01T17:04:11Z:re_review",
+      "comment_id": "5152458982",
+      "comment_version_key": "5152458982:2026-08-01T17:04:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117493#issuecomment-5152458982",
+      "comment_created_at": "2026-08-01T17:04:11Z",
+      "comment_updated_at": "2026-08-01T17:04:11Z",
+      "comment_body_sha256": "28364a121d6e9d0394b51310768ad50604f9867cd2dc2b8bda03d8b38eccd081",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117493,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T17:04:54.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/hooks-pristine-startup",
+        "head_sha": "cab94f84b909cd3dcdf185da9f068f6355a35088",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:325:4970161958:2026-08-01T17:04:06Z:clawsweeper_auto_repair",
