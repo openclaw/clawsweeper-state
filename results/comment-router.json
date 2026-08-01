@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:45:34.593Z",
+  "updated_at": "2026-08-01T22:45:51.269Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:433:4884811011:2026-08-01T19:47:14Z:clawsweeper_needs_human",
-      "comment_id": "4884811011",
-      "comment_version_key": "4884811011:2026-08-01T19:47:14Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/433#issuecomment-4884811011",
-      "comment_created_at": "2026-07-05T04:20:26Z",
-      "comment_updated_at": "2026-08-01T19:47:14Z",
-      "comment_body_sha256": "9ac4bc626c2283bf335e2858d8d30e84ec0c354035ac8cb4b2c470e2260fd430",
-      "repo": "openclaw/acpx",
-      "issue_number": 433,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Define the cache executable trust boundary** - The resolver accepts any executable regular file at the predictable ~/.acpx/native path, while statSync follows symlinks, and falls back t...; Review finding: [medium] Define the cache executable trust boundary — src/acp/lifeline.ts:138 (sha=6c5a4f0e577ff677786f2b289e7785f59e83846a)",
-      "expected_head_sha": "6c5a4f0e577ff677786f2b289e7785f59e83846a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:57:33.905Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bridge-lifeline",
-        "head_sha": "6c5a4f0e577ff677786f2b289e7785f59e83846a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:468:5121122986:2026-08-01T19:46:49Z:clawsweeper_needs_human",
       "comment_id": "5121122986",
@@ -33284,6 +33251,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117655:5153806332:2026-08-01T22:45:05Z:re_review",
+      "comment_id": "5153806332",
+      "comment_version_key": "5153806332:2026-08-01T22:45:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117655#issuecomment-5153806332",
+      "comment_created_at": "2026-08-01T22:45:05Z",
+      "comment_updated_at": "2026-08-01T22:45:05Z",
+      "comment_body_sha256": "ee205baee67f435837ab66a1d13c06fc5fd85d30f92d4f6b4be232798b68fe17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117655,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:45:48.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/perf-gateway-ws-readiness",
+        "head_sha": "681a85a40f0878da8809b6c977b086affc997088",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
