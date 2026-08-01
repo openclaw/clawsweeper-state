@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:17:55.608Z",
+  "updated_at": "2026-08-01T11:19:37.108Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117267:5150318849:2026-08-01T08:31:36Z:clawsweeper_needs_human",
-      "comment_id": "5150318849",
-      "comment_version_key": "5150318849:2026-08-01T08:31:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117267#issuecomment-5150318849",
-      "comment_created_at": "2026-08-01T07:05:17Z",
-      "comment_updated_at": "2026-08-01T08:31:36Z",
-      "comment_body_sha256": "cb38658976971f5c450e7bc306cd385a0f8dddebc50d936d3f98a602f919e79f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117267,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a persisted session-state migration: although typed SQLite columns are intentionally retained for downgrade readers, maintainer review should confirm the narrow pause/kill pay... (sha=6c2260e8e6a2038230023fb6808b9a6f90c73585)",
-      "expected_head_sha": "6c2260e8e6a2038230023fb6808b9a6f90c73585",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:32:25.595Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/prod-wave-subagent-state-052208-2d45",
-        "head_sha": "6c2260e8e6a2038230023fb6808b9a6f90c73585",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117248:5150097029:2026-08-01T08:27:52Z:clawsweeper_needs_human",
       "comment_id": "5150097029",
@@ -32090,6 +32057,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:135:5135069962:2026-08-01T11:18:57Z:clawsweeper_needs_human",
+      "comment_id": "5135069962",
+      "comment_version_key": "5135069962:2026-08-01T11:18:57Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/135#issuecomment-5135069962",
+      "comment_created_at": "2026-07-30T19:00:03Z",
+      "comment_updated_at": "2026-08-01T11:18:57Z",
+      "comment_body_sha256": "5f71378131e4fc874ed6302ad9882bc3c71819b6a4b4c13bd824d8cc4b666528",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the upstream action release before merging** - This line advances code executed against repository contents in CI; successful checks establish that it ran, but not that v3.96.0...; Review finding: [medium] Confirm the upstream action release before merging — .github/workflows/secret-scan.yml:52 (sha=68f3ad017cc08dec6621daf3fdbdcb130257d652)",
+      "expected_head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:19:37.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
