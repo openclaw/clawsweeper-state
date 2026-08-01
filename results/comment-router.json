@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:35:58.835Z",
+  "updated_at": "2026-08-01T06:36:11.325Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117177:5149559956:2026-08-01T03:20:55Z:re_review",
-      "comment_id": "5149559956",
-      "comment_version_key": "5149559956:2026-08-01T03:20:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117177#issuecomment-5149559956",
-      "comment_created_at": "2026-08-01T03:20:55Z",
-      "comment_updated_at": "2026-08-01T03:20:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117177,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:23:55.643Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair-pr-117072-exec-continuation",
-        "head_sha": "5a6716c6ae0246cfbc982ade5057514c5ca4ad3d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117177:5149537842:2026-08-01T03:14:22Z:clawsweeper_needs_human",
       "comment_id": "5149537842",
@@ -31916,6 +31869,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116188:5125807277:2026-08-01T06:35:32Z:clawsweeper_needs_human",
+      "comment_id": "5125807277",
+      "comment_version_key": "5125807277:2026-08-01T06:35:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116188#issuecomment-5125807277",
+      "comment_created_at": "2026-07-30T02:50:37Z",
+      "comment_updated_at": "2026-08-01T06:35:32Z",
+      "comment_body_sha256": "7ef6f9cb253002ca5198ed43a6b35ed4a36318c799436ca502bf46ddb9d7c17b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes hello-ok.policy.attachments a public compatibility contract: clients may rely on its optionality, decoded-size semantics, image-cap behavior, and connection-snapshot lif... (sha=f0fed21b449c4a18b495bd2ead445ebebb93ae0d)",
+      "expected_head_sha": "f0fed21b449c4a18b495bd2ead445ebebb93ae0d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:36:11.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine-issue-116144-feature-advertise-structured-chat-attac-a3aa42",
+        "head_sha": "f0fed21b449c4a18b495bd2ead445ebebb93ae0d",
+        "cluster_id": "automerge-openclaw-openclaw-116188",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116188.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
