@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T23:56:18.336Z",
+  "updated_at": "2026-08-01T23:56:49.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2413:5153454207:2026-08-01T21:10:29Z:re_review",
-      "comment_id": "5153454207",
-      "comment_version_key": "5153454207:2026-08-01T21:10:29Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5153454207",
-      "comment_created_at": "2026-08-01T21:10:29Z",
-      "comment_updated_at": "2026-08-01T21:10:29Z",
-      "comment_body_sha256": "5b36c49059b3136a4bcb56c5b4c2455852edfb0e034ea15c525cc26c3c492808",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2413,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T21:11:07.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-proxy-model-pricing-2393",
-        "head_sha": "a7389fc1ebdb5607a1d7f5c822e491a622725843",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104394:4944928065:2026-07-11T10:25:37Z:re_review",
       "comment_id": "4944928065",
@@ -32589,6 +32542,39 @@
         "kind": "pull_request",
         "branch": "feat/message-citations",
         "head_sha": "98044b55ba89a6fe2f49a928eb3ec8a7ea8ea2f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114680:5095319745:2026-08-01T23:49:11Z:clawsweeper_needs_human",
+      "comment_id": "5095319745",
+      "comment_version_key": "5095319745:2026-08-01T23:49:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114680#issuecomment-5095319745",
+      "comment_created_at": "2026-07-27T18:37:29Z",
+      "comment_updated_at": "2026-08-01T23:49:11Z",
+      "comment_body_sha256": "ec41ebf0f6c7683dc3bc8d3666b6f3d8a36fd3e2d07e9316b7535da13cdb4780",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports tests and past production symptoms, but contains no redacted after-fix app-server transcript, terminal capture, runtime log, r... (sha=653d577d13325e1ef17c2f9794d0f35707841ab0)",
+      "expected_head_sha": "653d577d13325e1ef17c2f9794d0f35707841ab0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T23:56:49.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedded-source-reply-explicit-route",
+        "head_sha": "653d577d13325e1ef17c2f9794d0f35707841ab0",
         "cluster_id": null,
         "job_path": null
       }
