@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115037",
+  "mode": "autonomous",
+  "run_id": "30696573013",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30696573013",
+  "head_sha": "1c9cb5dc6dd27321cd37daed40bc09afde400e1b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115037.md",
+  "published_at": "2026-08-01T11:10:20.159Z",
+  "canonical": "#115037",
+  "canonical_issue": "#115037",
+  "canonical_pr": null,
+  "summary": "Current main still has the narrow resumed-process continuation fix from #90799, but its synthetic-placeholder grace expiry resolves an empty CLI output. `executeCliAttempt` then throws an ordinary `empty_response` without the retry code accepted by the fresh-session recovery owner, allowing the outer model fallback chain to advance before retrying the requested model. Plan a narrow repair that preserves exact placeholder matching, emits a distinct synthetic-empty terminal signal, retries the same requested Claude CLI model once, and lets ordinary model fallback proceed only if that retry fails.",
+  "actions": [
+    {
+      "target": "#115037",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is still required on current main; no close or merge action is permitted by this job."
+    },
+    {
+      "target": "#90789",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "Related synthetic-placeholder lifecycle work remains independently open."
+    },
+    {
+      "target": "#90799",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "Already closed; retain as credited source context and non-regression evidence."
+    },
+    {
+      "target": "#99131",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": "#115037",
+      "candidate_fix": "#90799",
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#99139",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "Already closed; preserve only as historical related context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115037",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "Fix PRs are allowed; build one narrow replacement implementation on `clawsweeper/issue-openclaw-openclaw-115037`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
