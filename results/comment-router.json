@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:09:43.432Z",
+  "updated_at": "2026-08-01T05:09:44.770Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117120:5148750897:2026-08-01T01:03:59Z:re_review",
-      "comment_id": "5148750897",
-      "comment_version_key": "5148750897:2026-08-01T01:03:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117120#issuecomment-5148750897",
-      "comment_created_at": "2026-08-01T01:03:59Z",
-      "comment_updated_at": "2026-08-01T01:03:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117120,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T01:11:44.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/llamacpp-tool-schema-profile-117070",
-        "head_sha": "02bec170ba9bde3c7506cba4413660b19e99d16b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:5148758442:2026-08-01T01:05:40Z:re_review",
       "comment_id": "5148758442",
@@ -31877,6 +31830,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
         "head_sha": "f3451e10d613e35b9393d6d00b35ac92036c9fb6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:70:5140450221:2026-08-01T05:09:04Z:clawsweeper_auto_repair",
+      "comment_id": "5140450221",
+      "comment_version_key": "5140450221:2026-08-01T05:09:04Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/70#issuecomment-5140450221",
+      "comment_created_at": "2026-07-31T07:28:52Z",
+      "comment_updated_at": "2026-08-01T05:09:04Z",
+      "comment_body_sha256": "f44f8efd16edfd3b346c5a3fca2ba6274e73e32c92eb8fdae076e4688899a83a",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 70,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366)",
+      "expected_head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:09:44.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
+        "head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
         "cluster_id": null,
         "job_path": null
       }
