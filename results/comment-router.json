@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:55:23.150Z",
+  "updated_at": "2026-08-01T20:55:32.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112496:5126223963:2026-07-30T03:54:32Z:re_review",
-      "comment_id": "5126223963",
-      "comment_version_key": "5126223963:2026-07-30T03:54:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112496#issuecomment-5126223963",
-      "comment_created_at": "2026-07-30T03:54:32Z",
-      "comment_updated_at": "2026-07-30T03:54:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112496,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:07:39.340Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117283:5150457659:2026-08-01T19:00:25Z:clawsweeper_needs_human",
       "comment_id": "5150457659",
@@ -32043,6 +32016,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117560:5152994299:2026-08-01T20:55:01Z:clawsweeper_needs_human",
+      "comment_id": "5152994299",
+      "comment_version_key": "5152994299:2026-08-01T20:55:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117560#issuecomment-5152994299",
+      "comment_created_at": "2026-08-01T19:16:04Z",
+      "comment_updated_at": "2026-08-01T20:55:01Z",
+      "comment_body_sha256": "2d2e857df1a43e60516e431d8a43c3783afa1fb23a26f166bebbc8fdad010b00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117560,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes which persisted session events become inherited context for a companion’s first question; the focused regression and exact-head runtime proof are strong, but the remai... (sha=47a2efdbc7ea93a35b92ce59c87e385802ae4053)",
+      "expected_head_sha": "47a2efdbc7ea93a35b92ce59c87e385802ae4053",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:55:32.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-companion-transcript-seed",
+        "head_sha": "47a2efdbc7ea93a35b92ce59c87e385802ae4053",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
