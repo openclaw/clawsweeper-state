@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:54:47.651Z",
+  "updated_at": "2026-08-01T10:54:56.279Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117288:5150526535:2026-08-01T08:01:16Z:re_review",
-      "comment_id": "5150526535",
-      "comment_version_key": "5150526535:2026-08-01T08:01:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117288#issuecomment-5150526535",
-      "comment_created_at": "2026-08-01T08:01:16Z",
-      "comment_updated_at": "2026-08-01T08:01:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117288,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:01:56.051Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/static-catalog-prepared-metadata",
-        "head_sha": "26792d9f0ece9f8668fdfbd2ac2a09015921f4b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115119:5102482123:2026-08-01T08:01:20Z:clawsweeper_needs_human",
       "comment_id": "5102482123",
@@ -32347,6 +32300,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T10:54:47.650Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117357:5151110121:2026-08-01T10:54:12Z:clawsweeper_needs_human",
+      "comment_id": "5151110121",
+      "comment_version_key": "5151110121:2026-08-01T10:54:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117357#issuecomment-5151110121",
+      "comment_created_at": "2026-08-01T10:54:12Z",
+      "comment_updated_at": "2026-08-01T10:54:12Z",
+      "comment_body_sha256": "27dae93acce1dbcae44d04442f11655a11a81da1357495d765075ba20be287ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the PR already contains the narrow, source-aligned fix; the maintainer label and routine remaining checks keep final handling with a human reviewer. (sha=bdf01e7ee64307891e14e37abcbcba250e0dab3c)",
+      "expected_head_sha": "bdf01e7ee64307891e14e37abcbcba250e0dab3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:54:56.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-plugin-doctor-visible-warnings",
+        "head_sha": "bdf01e7ee64307891e14e37abcbcba250e0dab3c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
