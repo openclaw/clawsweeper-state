@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:29:51.625Z",
+  "updated_at": "2026-08-01T22:30:47.542Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94383:4737585384:2026-08-01T19:33:34Z:clawsweeper_needs_human",
-      "comment_id": "4737585384",
-      "comment_version_key": "4737585384:2026-08-01T19:33:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94383#issuecomment-4737585384",
-      "comment_created_at": "2026-06-18T03:31:56Z",
-      "comment_updated_at": "2026-08-01T19:33:34Z",
-      "comment_body_sha256": "5eeb1a92da13f78dc8234ace0a685bde37df50f4ae8164ecbd90e5b929f66353",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94383,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not forward raw workspace paths as approval keys (P2)** - workspaceScope is an absolute local path, and this string is placed in allowAlwaysKey. The gateway protocol explicitly carries that field into reviewe...; Review finding: [P2] Do not forward raw workspace paths as approval keys — src/skills/workshop/policy.ts:60 - [P2] Define a lifecycle owner for durable approvals — src/infra/plugi... (sha=37ae68754d7a6809c8a87b0c0edb58bac86aef51)",
-      "expected_head_sha": "37ae68754d7a6809c8a87b0c0edb58bac86aef51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:34:12.176Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "aknight/skill-workshop-allow-always",
-        "head_sha": "37ae68754d7a6809c8a87b0c0edb58bac86aef51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94473:4754982750:2026-08-01T19:33:43Z:clawsweeper_needs_human",
       "comment_id": "4754982750",
@@ -33286,6 +33253,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:161:5088952324:2026-08-01T22:30:07Z:clawsweeper_needs_human",
+      "comment_id": "5088952324",
+      "comment_version_key": "5088952324:2026-08-01T22:30:07Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/161#issuecomment-5088952324",
+      "comment_created_at": "2026-07-27T08:18:06Z",
+      "comment_updated_at": "2026-08-01T22:30:07Z",
+      "comment_body_sha256": "efef04e2f1c899fddf0f5c59ec50dd42430191bf26522a9e23f030b4a38bc17a",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR has a redacted Windows transcript for an older commit, while the current-head source-lock behavior is only described in prose;...; Review finding: [P1] Verify the locked handle matches the pre-open file — skills/autoreview/scripts/autoreview:2272-2273 - [high] Windows snapshot path can be replaced before the... (sha=0fec2776d12b3c2b1b60ec1579055a92c5ce6594)",
+      "expected_head_sha": "0fec2776d12b3c2b1b60ec1579055a92c5ce6594",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:30:47.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-autoreview-snapshot-scan",
+        "head_sha": "0fec2776d12b3c2b1b60ec1579055a92c5ce6594",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
