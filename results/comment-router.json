@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:34:56.117Z",
+  "updated_at": "2026-08-01T17:34:57.899Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2414:5152141801:2026-08-01T15:43:50Z:re_review",
-      "comment_id": "5152141801",
-      "comment_version_key": "5152141801:2026-08-01T15:43:50Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2414#issuecomment-5152141801",
-      "comment_created_at": "2026-08-01T15:43:50Z",
-      "comment_updated_at": "2026-08-01T15:43:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2414,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T15:44:32.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-connection-loss-2403",
-        "head_sha": "db56b523ba380415c49d1e2b445180a45d476f81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117419:5151606697:2026-08-01T15:43:44Z:clawsweeper_auto_repair",
       "comment_id": "5151606697",
@@ -31429,6 +31382,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions/stale-11",
         "head_sha": "13e4f08482634f24cdc5a6f8b712fc9c4288c98b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:981:5146343644:2026-08-01T17:34:15Z:clawsweeper_needs_human",
+      "comment_id": "5146343644",
+      "comment_version_key": "5146343644:2026-08-01T17:34:15Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/981#issuecomment-5146343644",
+      "comment_created_at": "2026-07-31T18:44:07Z",
+      "comment_updated_at": "2026-08-01T17:34:15Z",
+      "comment_body_sha256": "7ac004431eb4ff05780961e04c29de1f7992172a73252325bc3a3a1bedd6c4ba",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 981,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the PR as dirty against current main; conflicts in .github/workflows/sweep.yml, CHANGELOG.md, and test/sweep-workflow.test.ts mean the exact source-drift gates need val... (sha=302b879791f77c94305190d1e8ce730421209497)",
+      "expected_head_sha": "302b879791f77c94305190d1e8ce730421209497",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:34:57.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-materialization",
+        "head_sha": "302b879791f77c94305190d1e8ce730421209497",
         "cluster_id": null,
         "job_path": null
       }
