@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T09:40:44.510Z",
+  "updated_at": "2026-08-01T09:40:43.401Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89604:4624816567:2026-06-04T17:59:46Z:re_review",
@@ -32627,15 +32627,15 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1215:5148361506:2026-08-01T09:36:10Z:clawsweeper_needs_human",
-      "comment_id": "5148361506",
-      "comment_version_key": "5148361506:2026-08-01T09:36:10Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1215#issuecomment-5148361506",
-      "comment_created_at": "2026-07-31T23:40:01Z",
-      "comment_updated_at": "2026-08-01T09:36:10Z",
-      "comment_body_sha256": "1b5b86205eb22717c0880a11ddd09d8f2396bbb6a137559ec2a951538700b944",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1215,
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:166:5093818766:2026-08-01T09:39:25Z:clawsweeper_needs_human",
+      "comment_id": "5093818766",
+      "comment_version_key": "5093818766:2026-08-01T09:39:25Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/166#issuecomment-5093818766",
+      "comment_created_at": "2026-07-27T16:14:50Z",
+      "comment_updated_at": "2026-08-01T09:39:25Z",
+      "comment_body_sha256": "326e5444ff38c0e6b930d92770613fd7cbe74b30dc8ed8077d55d6ad89d50f9a",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 166,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
@@ -32646,15 +32646,15 @@
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is indicated; the remaining action is maintainer review and merge of the proof-backed test-isolation fix. (sha=80c870efb573f2b411a1c2fe2f6ce0d1e4d30a9c)",
-      "expected_head_sha": "80c870efb573f2b411a1c2fe2f6ce0d1e4d30a9c",
+      "repair_reason": "- [ ] **Align the TruffleHog binary version with the action pin (P2)** - The wrapper is changed to v3.96.0 here, but .github/workflows/secret-scan.yml:55 still passes version: \"3.95.9\"; because that input selects the sc...; Review finding: [P2] Align the TruffleHog binary version with the action pin — .github/workflows/secret-scan.yml:50 - [medium] Secret scanner remains on the previous binary — .git... (sha=ee1de7b311129aaafe76aca753214d584a09ab9c)",
+      "expected_head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
       "finding_id": null,
       "status": "skipped",
-      "processed_at": "2026-08-01T09:40:44.509Z",
+      "processed_at": "2026-08-01T09:40:43.401Z",
       "target": {
         "kind": "pull_request",
-        "branch": "codex/test-isolation",
-        "head_sha": "80c870efb573f2b411a1c2fe2f6ce0d1e4d30a9c",
+        "branch": "dependabot/github_actions/github-actions-30748c8c3e",
+        "head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
         "cluster_id": null,
         "job_path": null
       }
