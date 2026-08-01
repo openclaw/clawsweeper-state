@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:46:03.027Z",
+  "updated_at": "2026-08-01T06:46:06.467Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117151:5148939475:2026-08-01T03:23:41Z:clawsweeper_needs_human",
-      "comment_id": "5148939475",
-      "comment_version_key": "5148939475:2026-08-01T03:23:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117151#issuecomment-5148939475",
-      "comment_created_at": "2026-08-01T01:51:18Z",
-      "comment_updated_at": "2026-08-01T03:23:41Z",
-      "comment_body_sha256": "672cf7d863b5139e8a5f8363eec5425c11b3966f4a70724994de48e22d28b694",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117151,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal transcript demonstrates killProcessTree, but the reported affected flow is the child adapter's signalProcessTree plus sup...; Review finding: [P1] Retain attached-tree state through supervisor escalation — packages/agent-core/src/harness/env/kill-tree.ts:66-68 - [high] Supervisor settlement can bypass de... (sha=6e5048f27637bf19605862a2e2d9cf3feede2429)",
-      "expected_head_sha": "6e5048f27637bf19605862a2e2d9cf3feede2429",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T03:28:07.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/unix-process-tree-cleanup",
-        "head_sha": "6e5048f27637bf19605862a2e2d9cf3feede2429",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104394:4944928065:2026-07-11T10:25:37Z:re_review",
       "comment_id": "4944928065",
@@ -32001,6 +31968,53 @@
         "kind": "pull_request",
         "branch": "omarshahine-gateway-invoke-provenance",
         "head_sha": "e5dac88272be84fa5de6bee4393c158264685a44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116807:5150247431:2026-08-01T06:45:32Z:re_review",
+      "comment_id": "5150247431",
+      "comment_version_key": "5150247431:2026-08-01T06:45:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116807#issuecomment-5150247431",
+      "comment_created_at": "2026-08-01T06:45:32Z",
+      "comment_updated_at": "2026-08-01T06:45:32Z",
+      "comment_body_sha256": "0e859097fffea996791f73e0b57c3b6615f120b35cd7bf7f25d706b6a89c07f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116807,
+      "author": "jacobtomlinson",
+      "author_id": 1610850,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:46:04.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-auth-migration-116763",
+        "head_sha": "fb513458ae0147a0326390d5c509ad1c9be96e02",
         "cluster_id": null,
         "job_path": null
       },
