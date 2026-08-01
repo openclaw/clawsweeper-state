@@ -1,91 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:20:34.856Z",
+  "updated_at": "2026-08-01T20:20:39.251Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:113663",
-      "comment_id": "repair-loop-label-sweep:automerge:113663",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113663",
-      "comment_created_at": "2026-08-01T17:57:56.269Z",
-      "comment_updated_at": "2026-08-01T17:57:56.269Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113663,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T18:00:27.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-grok-oauth-client-version",
-        "head_sha": "98cc441f8a048972874bf6ea49095c13b6d51b1f",
-        "cluster_id": "automerge-openclaw-openclaw-113663",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-113663.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117306:5150645692:2026-08-01T18:01:23Z:clawsweeper_auto_repair",
-      "comment_id": "5150645692",
-      "comment_version_key": "5150645692:2026-08-01T18:01:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117306#issuecomment-5150645692",
-      "comment_created_at": "2026-08-01T08:36:03Z",
-      "comment_updated_at": "2026-08-01T18:01:23Z",
-      "comment_body_sha256": "f749ae9f655f1eea3f17b9241fa7aa5a321058a0106ac3cd43538fa0ad6afa8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117306,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f5aef126aa807bdc6f09e817c4a4677a7a55cfcd)",
-      "expected_head_sha": "f5aef126aa807bdc6f09e817c4a4677a7a55cfcd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:02:02.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dm-history-limit-schema-parity",
-        "head_sha": "f5aef126aa807bdc6f09e817c4a4677a7a55cfcd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117525:5152686881:2026-08-01T18:01:22Z:re_review",
       "comment_id": "5152686881",
@@ -32220,6 +32135,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:131:5093770527:2026-08-01T20:16:13Z:clawsweeper_needs_human",
+      "comment_id": "5093770527",
+      "comment_version_key": "5093770527:2026-08-01T20:16:13Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/131#issuecomment-5093770527",
+      "comment_created_at": "2026-07-27T16:10:49Z",
+      "comment_updated_at": "2026-08-01T20:16:13Z",
+      "comment_body_sha256": "fd6d32a390bcc1310d20448aafa9211f7ddf0c60cc9969a10103130f48d1ed7b",
+      "repo": "openclaw/clickclack",
+      "issue_number": 131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject private repositories until room access is enforced (P1)** - The picker accepts repository metadata that includes private, but the project flow creates a public collaboration channel and treats participant...; Review finding: [P1] Reject private repositories until room access is enforced — apps/web/src/routes/app/[workspaceID]/projects/+page.svelte:28 - [high] Private GitHub activity ca... (sha=3471020a467834926999e9339fe61952d0c44ddd)",
+      "expected_head_sha": "3471020a467834926999e9339fe61952d0c44ddd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:20:39.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "s/github-project-rooms",
+        "head_sha": "3471020a467834926999e9339fe61952d0c44ddd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clickclack:131:5094476203:2026-07-27T17:18:11Z:re_review",
+      "comment_id": "5094476203",
+      "comment_version_key": "5094476203:2026-07-27T17:18:11Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/131#issuecomment-5094476203",
+      "comment_created_at": "2026-07-27T17:18:11Z",
+      "comment_updated_at": "2026-07-27T17:18:11Z",
+      "comment_body_sha256": "4f992c148c923534e2d51400f6ad5a677381dd900a9ae7ac23638124397ded13",
+      "repo": "openclaw/clickclack",
+      "issue_number": 131,
+      "author": "Solvely-Colin",
+      "author_id": 211764741,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:20:39.250Z",
+      "target": null
     }
   ]
 }
