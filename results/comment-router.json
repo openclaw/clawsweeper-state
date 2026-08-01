@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:20:08.847Z",
+  "updated_at": "2026-08-01T16:20:18.499Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2548:5151718884:2026-08-01T13:54:00Z:re_review",
-      "comment_id": "5151718884",
-      "comment_version_key": "5151718884:2026-08-01T13:54:00Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2548#issuecomment-5151718884",
-      "comment_created_at": "2026-08-01T13:54:00Z",
-      "comment_updated_at": "2026-08-01T13:54:00Z",
-      "comment_body_sha256": "df1a563512b23fe901cbeeb0defc565630d83d96fe7a27302331592678d0fba5",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2548,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T13:54:38.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/activity-heatmap-ux",
-        "head_sha": "ee6b5cb9333681aa382db0c95285bb613f0430b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/turnwire:15:5094052132:2026-07-27T16:37:44Z:re_review",
       "comment_id": "5094052132",
@@ -32316,6 +32269,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T16:20:08.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117481:5152177424:2026-08-01T16:19:42Z:clawsweeper_needs_human",
+      "comment_id": "5152177424",
+      "comment_version_key": "5152177424:2026-08-01T16:19:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117481#issuecomment-5152177424",
+      "comment_created_at": "2026-08-01T15:53:14Z",
+      "comment_updated_at": "2026-08-01T16:19:42Z",
+      "comment_body_sha256": "5448ad78fc24278f96a0be1cca26a4bf4b62e4558df75fb6f446ac8704878e71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused Vitest results and added unit coverage, but it provides no after-fix runtime artifact through an actual LINE outbou... (sha=07588d7c14fca673837f2a12ddc4e98721ec0856)",
+      "expected_head_sha": "07588d7c14fca673837f2a12ddc4e98721ec0856",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:20:18.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-table-row-overflow-117442",
+        "head_sha": "07588d7c14fca673837f2a12ddc4e98721ec0856",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
