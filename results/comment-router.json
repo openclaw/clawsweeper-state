@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T20:12:47.555Z",
+  "updated_at": "2026-08-01T20:12:33.089Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116404:5131676270:2026-08-01T17:41:46Z:clawsweeper_needs_human",
+      "comment_id": "5131676270",
+      "comment_version_key": "5131676270:2026-08-01T17:41:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116404#issuecomment-5131676270",
+      "comment_created_at": "2026-07-30T13:50:12Z",
+      "comment_updated_at": "2026-08-01T17:41:46Z",
+      "comment_body_sha256": "8835c8fd4778a23c25cf8ecf0fe8d33f41512ce527e94a89f1022aeff47ab3f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116404,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - Merging deliberately permits an over-threshold session to reach the primary agent during a retryable compaction outage; that run can still fail later for context size, so an owner mus... (sha=09b97b14a558b45c984d11427c617543fb1b0bd9)",
+      "expected_head_sha": "09b97b14a558b45c984d11427c617543fb1b0bd9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:47:36.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/100778-preflight-compaction-transient-skip",
+        "head_sha": "09b97b14a558b45c984d11427c617543fb1b0bd9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116404:5132935724:2026-07-30T15:34:25Z:re_review",
       "comment_id": "5132935724",
@@ -32273,39 +32306,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117613:5153219993:2026-08-01T20:12:12Z:clawsweeper_needs_human",
-      "comment_id": "5153219993",
-      "comment_version_key": "5153219993:2026-08-01T20:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117613#issuecomment-5153219993",
-      "comment_created_at": "2026-08-01T20:12:12Z",
-      "comment_updated_at": "2026-08-01T20:12:12Z",
-      "comment_body_sha256": "a953b727dbfb4af112daa23584fb758b91ab60389878d92d3dcc71618355a391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117613,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: This maintainer-labeled, test-only refactor has no user-visible runtime behavior to demonstrate; the focused-suite and changed-gate results described in the PR body ar... (sha=4c1b18d319721d884e3cbe90e4c6647e22a2ab16)",
-      "expected_head_sha": "4c1b18d319721d884e3cbe90e4c6647e22a2ab16",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:12:47.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-agent-fixtures-0801-2d45",
-        "head_sha": "4c1b18d319721d884e3cbe90e4c6647e22a2ab16",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
