@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:24:34.480Z",
+  "updated_at": "2026-08-01T22:26:36.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117589:5153066472:2026-08-01T19:32:39Z:re_review",
-      "comment_id": "5153066472",
-      "comment_version_key": "5153066472:2026-08-01T19:32:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117589#issuecomment-5153066472",
-      "comment_created_at": "2026-08-01T19:32:39Z",
-      "comment_updated_at": "2026-08-01T19:32:39Z",
-      "comment_body_sha256": "05e215d1670a266943a74654764b6373e4c77b80c2352c1222318b7e3ce947d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117589,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:33:08.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/startup-skip-empty-agent-db",
-        "head_sha": "25002874795eaff6904247c738ed372492393c87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115138:5102962198:2026-08-01T19:32:38Z:clawsweeper_auto_repair",
       "comment_id": "5102962198",
@@ -33278,6 +33231,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T22:22:28Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T22:22:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T22:22:28Z",
+      "comment_body_sha256": "6306bc96998e7ddfe8054c8ba922ffe069a83e5fd4eba5527b0689d99a32b3c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner release tuple (P1)** - The workflow still explicitly downloads TruffleHog 3.95.9 with its old digest, and the workflow guard asserts that tuple. Updating only uses to the v3.96...; Review finding: [P1] Synchronize the TruffleHog scanner release tuple — .github/workflows/ci.yml:904 - [medium] TruffleHog wrapper and binary releases diverge — .github/workflows/... (sha=d46fe22a7ffd68959f222e58fd320958c23e3a1a)",
+      "expected_head_sha": "d46fe22a7ffd68959f222e58fd320958c23e3a1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:26:36.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "d46fe22a7ffd68959f222e58fd320958c23e3a1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
