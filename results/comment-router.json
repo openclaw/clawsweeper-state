@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:32:30.101Z",
+  "updated_at": "2026-08-01T20:32:32.562Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111020:5094083396:2026-07-27T16:40:36Z:re_review",
-      "comment_id": "5094083396",
-      "comment_version_key": "5094083396:2026-07-27T16:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5094083396",
-      "comment_created_at": "2026-07-27T16:40:36Z",
-      "comment_updated_at": "2026-07-27T16:40:36Z",
-      "comment_body_sha256": "972e7b2b8d22116a9f6f42058cc7ef38a3d388ce351e93c138e876eb0978eb01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111020,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review current head `9e24e7eae4f639ccc384c75b02611221bfac985b`, please. this revision only replaces the live test’s async `.finally()` callback with ordinary `try`/`finally` to satisfy hosted `no-misused-promises`; product behavior is unchanged. current-head proof: 3 files / 57 focused tests, exact-file extension lint, `git diff --check`, and range-diff pass. i also directly checked codex’s app-server readme plus `bespoke_event_handling.rs` and `core/src/tasks/mod.rs`: `turn/interrupt` completes as interrupted and persists the real interruption marker. paid live proof was not rerun; the 10s/new-inbound policy remains explicitly gated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:20:33.158Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/stats-store:264:5018745799:2026-08-01T18:20:06Z:clawsweeper_needs_human",
       "comment_id": "5018745799",
@@ -32347,6 +32320,53 @@
         "kind": "pull_request",
         "branch": "maint-pr-117057-canonical-20260801",
         "head_sha": "5118e8e25d9c83b39a7e1b16f17e45a1abe59612",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117602:5153291146:2026-08-01T20:31:52Z:re_review",
+      "comment_id": "5153291146",
+      "comment_version_key": "5153291146:2026-08-01T20:31:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117602#issuecomment-5153291146",
+      "comment_created_at": "2026-08-01T20:31:52Z",
+      "comment_updated_at": "2026-08-01T20:31:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117602,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T20:32:30.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/qa-realtime-talk-live-evidence-20260801",
+        "head_sha": "001666791cbd404c22ab87bcd991478002877733",
         "cluster_id": null,
         "job_path": null
       },
