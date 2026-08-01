@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:26:14.885Z",
+  "updated_at": "2026-08-01T08:26:41.222Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117185:5150087615:2026-08-01T05:59:06Z:re_review",
-      "comment_id": "5150087615",
-      "comment_version_key": "5150087615:2026-08-01T05:59:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117185#issuecomment-5150087615",
-      "comment_created_at": "2026-08-01T05:59:06Z",
-      "comment_updated_at": "2026-08-01T05:59:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117185,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:59:45.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-anthropic-codex",
-        "head_sha": "bbc88aec8394b7a290fb1567ca5c51d85e3ec0aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116780:5142084833:2026-08-01T05:58:43Z:clawsweeper_needs_human",
       "comment_id": "5142084833",
@@ -32370,6 +32323,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117300:5150612300:2026-08-01T08:26:03Z:clawsweeper_auto_repair",
+      "comment_id": "5150612300",
+      "comment_version_key": "5150612300:2026-08-01T08:26:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117300#issuecomment-5150612300",
+      "comment_created_at": "2026-08-01T08:26:03Z",
+      "comment_updated_at": "2026-08-01T08:26:03Z",
+      "comment_body_sha256": "1b6e8f744b85aa00ff2ad74d0bde1cbd6d1df42975f6e08c3f1780099effc732",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=491e0983f0a0c22e65fa3ec5c1c788d1598eb010)",
+      "expected_head_sha": "491e0983f0a0c22e65fa3ec5c1c788d1598eb010",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:26:41.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/channel-lifecycle-fact",
+        "head_sha": "491e0983f0a0c22e65fa3ec5c1c788d1598eb010",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
