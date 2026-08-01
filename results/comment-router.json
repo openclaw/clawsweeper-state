@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:30:32.562Z",
+  "updated_at": "2026-08-01T19:30:38.340Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117508:5152402413:2026-08-01T17:21:26Z:clawsweeper_needs_human",
-      "comment_id": "5152402413",
-      "comment_version_key": "5152402413:2026-08-01T17:21:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117508#issuecomment-5152402413",
-      "comment_created_at": "2026-08-01T16:49:17Z",
-      "comment_updated_at": "2026-08-01T17:21:26Z",
-      "comment_body_sha256": "3297cf06866cdd6fd73a25b61782ac162da1bd6dff08abb58277ac86611cf22e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117508,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P0)** - Merging changes the external evaluator revision that controls CI artifact selection; wait for the current head’s deep-profile and artifact-publication jobs to complete successfully, e... (sha=c2eafba5242578fc0e63b535f555b29756370383)",
-      "expected_head_sha": "c2eafba5242578fc0e63b535f555b29756370383",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:22:01.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-canonical-ref",
-        "head_sha": "c2eafba5242578fc0e63b535f555b29756370383",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108324:4989411895:2026-08-01T17:22:51Z:clawsweeper_needs_human",
       "comment_id": "4989411895",
@@ -31937,6 +31904,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117570:5153056562:2026-08-01T19:30:01Z:re_review",
+      "comment_id": "5153056562",
+      "comment_version_key": "5153056562:2026-08-01T19:30:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117570#issuecomment-5153056562",
+      "comment_created_at": "2026-08-01T19:30:01Z",
+      "comment_updated_at": "2026-08-01T19:30:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117570,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:30:36.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa407-channel-status-filter-owner",
+        "head_sha": "9853664110cc4a569b9131b4712b3b0fb2267945",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
