@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116490",
+  "mode": "autonomous",
+  "run_id": "30702491319",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30702491319",
+  "head_sha": "5b0ff665559a1d680248caf321402bf66a36a94b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116490.md",
+  "published_at": "2026-08-01T14:12:10.721Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116490",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116490",
+  "canonical_pr": null,
+  "summary": "#116490 remains a narrow, non-security canonical bug on current main. The Skill Workshop approval-policy owner returns a generic description both when workspace context is absent and when proposal lookup throws, even though the approval remains pending. Build one credited fix PR that makes this degraded state visible, preserves any requested proposal identity within the approval-description cap, updates the documented contract, and adds focused regression coverage. #100498 is closed contextual evidence and explicitly security-sensitive, so it is quarantined from this repair path.",
+  "actions": [
+    {
+      "target": "#100498",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine the exact security-sensitive contextual PR without blocking the unrelated non-security repair for #116490."
+    },
+    {
+      "target": "#116490",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116490",
+      "candidate_fix": null,
+      "reason": "Current main still silently converts two distinct resolution failures into the same bare generic approval card. The repair belongs in the Skill Workshop policy resolver, not in a downstream channel renderer or caller guard."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116490",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#116490",
+      "candidate_fix": null,
+      "reason": "A narrow, executable new-fix-PR plan is available; the deterministic executor should apply it on clawsweeper/issue-openclaw-openclaw-116490 and run validation in a writable dependency-ready environment."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
