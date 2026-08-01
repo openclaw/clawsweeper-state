@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:59:21.747Z",
+  "updated_at": "2026-08-01T06:59:23.749Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:95830:5097573656:2026-07-27T22:39:21Z:re_review",
-      "comment_id": "5097573656",
-      "comment_version_key": "5097573656:2026-07-27T22:39:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95830#issuecomment-5097573656",
-      "comment_created_at": "2026-07-27T22:39:21Z",
-      "comment_updated_at": "2026-07-27T22:39:21Z",
-      "comment_body_sha256": "a444594353e03481f89ecc65857f9fd1b47bcf6a553178b82f89ea0bb733165e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95830,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review current head `37f677a4204b33ecbfb549e065af544361c8f4ab`, please. the prior red was an untouched tooling test’s missing-`rg` failure; current `main` contains the upstream repair. this conflict-free rebase is patch-identical by range-diff and passes `git diff --check`. the pr body records the stalled local focused run honestly; fresh hosted ci and credentialed direct-chat/forum-topic telegram proof remain pending. poll-routing behavior is unchanged",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T04:08:45.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-poll-answer-routing-v2",
-        "head_sha": "88ad43dbaacf4d84a60dda8ff259846da784da5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95830:4780755354:2026-08-01T04:05:56Z:clawsweeper_auto_repair",
       "comment_id": "4780755354",
@@ -31831,6 +31784,39 @@
         "kind": "pull_request",
         "branch": "omarshahine/rfc-0027-sdk-surface",
         "head_sha": "0ff888bb48fd5425a467eecd934549ec38efc1b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115381:5117929977:2026-08-01T06:54:45Z:clawsweeper_auto_repair",
+      "comment_id": "5117929977",
+      "comment_version_key": "5117929977:2026-08-01T06:54:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115381#issuecomment-5117929977",
+      "comment_created_at": "2026-07-29T12:46:13Z",
+      "comment_updated_at": "2026-08-01T06:54:45Z",
+      "comment_body_sha256": "c79cfd087ae7e34cba2e9d099ed39f25c99123a2d39a0c2ca2a9dd0c1a2968c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e3c275dca3e77a27fb336b6a0389ee59043facbd)",
+      "expected_head_sha": "e3c275dca3e77a27fb336b6a0389ee59043facbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:59:23.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/message-tool-channel-target",
+        "head_sha": "e3c275dca3e77a27fb336b6a0389ee59043facbd",
         "cluster_id": null,
         "job_path": null
       }
