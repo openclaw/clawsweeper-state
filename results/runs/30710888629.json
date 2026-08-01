@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-116188",
+  "mode": "autonomous",
+  "run_id": "30710888629",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30710888629",
+  "head_sha": "dccfa528f0387431807818ba43823310b5e08f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116188.md",
+  "published_at": "2026-08-01T19:23:25.414Z",
+  "canonical": "#116188",
+  "canonical_issue": "#116144",
+  "canonical_pr": "#116188",
+  "summary": "#116188 is the canonical implementation for #116144. Hydrated checks and reviews are green at the reviewed head, but the PR is behind current main `b7f0df0ac2e25efb7d6f83ede70a4739086237b1`; prepare a contributor-branch repair artifact for one deterministic rebase and exact-head validation. No security-sensitive signal is present.",
+  "actions": [
+    {
+      "target": "#116144",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#116188",
+      "candidate_fix": "#116188",
+      "reason": "Keep the feature request open as the related tracking issue; no close action is permitted in this job."
+    },
+    {
+      "target": "#116188",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116188",
+      "candidate_fix": "#116188",
+      "reason": "Repair the useful contributor branch rather than replacing it: rebase once onto current main, retain its focused implementation and contributor history, then rerun exact-head validation."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
