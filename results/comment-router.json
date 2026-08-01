@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:00:59.640Z",
+  "updated_at": "2026-08-01T05:01:13.609Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115572:5118039666:2026-08-01T00:01:54Z:clawsweeper_needs_human",
-      "comment_id": "5118039666",
-      "comment_version_key": "5118039666:2026-08-01T00:01:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115572#issuecomment-5118039666",
-      "comment_created_at": "2026-07-29T12:56:10Z",
-      "comment_updated_at": "2026-08-01T00:01:54Z",
-      "comment_body_sha256": "6f08d94449f83c0757a3e8e3ea4058e30f288afd6a5dd4365ddbfe47a12e1061",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve paired role and metadata validation (P1)** - The new branch skips authorizeExistingGatewayDevice entirely for a token-qualified approval-runtime connection. That helper verifies pinned platform/device f...; Review finding: [P1] Preserve paired role and metadata validation — src/gateway/server/ws-connection/connect-device-pairing.ts:657-676 - [high] Paired authorization checks are ski... (sha=7415e50941748ee15a4fff9378da36ea865808f8)",
-      "expected_head_sha": "7415e50941748ee15a4fff9378da36ea865808f8",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-01T00:13:55.336Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115733:5118117362:2026-08-01T00:05:21Z:clawsweeper_needs_human",
       "comment_id": "5118117362",
@@ -33098,6 +33071,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117218:5149891912:2026-08-01T04:59:13Z:clawsweeper_auto_repair",
+      "comment_id": "5149891912",
+      "comment_version_key": "5149891912:2026-08-01T04:59:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117218#issuecomment-5149891912",
+      "comment_created_at": "2026-08-01T04:59:13Z",
+      "comment_updated_at": "2026-08-01T04:59:13Z",
+      "comment_body_sha256": "f5063d438f1f7d606e7500b2c233529b28b01e27119ce399d79a4bdc58a7aa83",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=64e36239eef250e7e7564b58695fd0c5f17c398b)",
+      "expected_head_sha": "64e36239eef250e7e7564b58695fd0c5f17c398b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:01:13.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/classify-credential-enoent-auth",
+        "head_sha": "64e36239eef250e7e7564b58695fd0c5f17c398b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
