@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "30685035665",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30685035665",
+  "head_sha": "a80c24ebf2f19d74cd07645f8d377271c587586b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md",
+  "published_at": "2026-08-01T05:12:13.978Z",
+  "canonical": "#117144",
+  "canonical_issue": "#98276",
+  "canonical_pr": "#117144",
+  "summary": "Keep #117144 as the canonical repair path for #98276. Its current hydrated head still has the actionable Codex finding: the extracted-runtime smoke injects a checkout-only resolver hook, so it does not prove direct consumer execution. Repair the writable same-repo branch, preserve #98326 attribution, rebase once onto current main, and run the changed-surface gate before refreshed review. #98274 is a separate ACP terminal-outcome product decision and remains out of scope.",
+  "actions": [
+    {
+      "target": "#117144",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "A narrow producer-side repair is available: package the listed built workspace distributions in the artifact's normal node_modules/@openclaw layout, remove the resolver hook, and run ACP/Gateway directly from the extracted launcher."
+    },
+    {
+      "target": "#98276",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Keep the source issue open as the canonical user-facing tracking thread until the repaired PR is independently validated and lands."
+    },
+    {
+      "target": "#98274",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different owner boundary and product decision; do not expand this artifact-packaging repair into ACP outcome semantics."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Historical source PR only; preserve attribution and do not emit any close action for an already-closed item."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
