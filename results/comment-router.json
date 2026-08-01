@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:09:34.037Z",
+  "updated_at": "2026-08-01T19:09:44.648Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112326:5123388637:2026-08-01T16:34:12Z:clawsweeper_auto_repair",
-      "comment_id": "5123388637",
-      "comment_version_key": "5123388637:2026-08-01T16:34:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112326#issuecomment-5123388637",
-      "comment_created_at": "2026-07-29T21:08:20Z",
-      "comment_updated_at": "2026-08-01T16:34:12Z",
-      "comment_body_sha256": "96b6fbc5195e3d056c2ddcbb1c0b1e930454b18743ae904fd58d83a258f695c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112326,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=30e3db136e9bc0cc24355b1fe89cafaa710a49eb)",
-      "expected_head_sha": "30e3db136e9bc0cc24355b1fe89cafaa710a49eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:39:39.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/a2a-reverse-send-current",
-        "head_sha": "91d2f5856eb1846d0c138cd5426f6ae6ed46bfeb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116404:5131676270:2026-08-01T14:23:31Z:clawsweeper_needs_human",
       "comment_id": "5131676270",
@@ -32897,6 +32864,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T19:09:34.037Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115246:5106218677:2026-08-01T19:08:10Z:clawsweeper_needs_human",
+      "comment_id": "5106218677",
+      "comment_version_key": "5106218677:2026-08-01T19:08:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115246#issuecomment-5106218677",
+      "comment_created_at": "2026-07-28T15:33:00Z",
+      "comment_updated_at": "2026-08-01T19:08:10Z",
+      "comment_body_sha256": "cd922fdc17b8879fcf7f3815e2f8b843db182cdc983173ae93c677bbae849bea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Guard-owned completion can race download lifecycle** - The supplied author and prior-review evidence says request-guard denial can outrun download or page lifecycle and mis-settle or ov...; Review finding: [high] Guard-owned completion can race download lifecycle — extensions/browser/src/browser/pw-tools-core.downloads.ts:46 (sha=523ead6b78d8064cb8b7ab2605a218d26aa3d807)",
+      "expected_head_sha": "523ead6b78d8064cb8b7ab2605a218d26aa3d807",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T19:09:44.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/browser-sandbox-20260728",
+        "head_sha": "523ead6b78d8064cb8b7ab2605a218d26aa3d807",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
