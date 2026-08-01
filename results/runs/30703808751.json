@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117442",
+  "mode": "autonomous",
+  "run_id": "30703808751",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30703808751",
+  "head_sha": "e9f97b34fd5950884dd6b9ec45f46f4851cf506c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117442.md",
+  "published_at": "2026-08-01T14:49:54.269Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117442",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117442",
+  "canonical_pr": null,
+  "summary": "Verified the open LINE markdown-table data-loss report against `main` at `133a8a6274296133eeb625ff37811bdb857a3374`. Both rendering paths discard rows before `processLineMessage` can apply its existing 30 KB UTF-8 fallback. A narrow new fix PR should remove those pre-measure caps and add focused regression coverage.",
+  "actions": [
+    {
+      "target": "#117442",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117442",
+      "candidate_fix": null,
+      "reason": "The report is a real, open canonical behavior bug. No active contributor PR is present in the supplied live-state artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117442",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117442",
+      "candidate_fix": null,
+      "reason": "Remove the pre-measure caps so the existing 30 KB fallback owns the complete-table delivery decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117442",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117442",
+      "candidate_fix": null,
+      "reason": "Create and validate the narrow fix through the deterministic executor on `clawsweeper/issue-openclaw-openclaw-117442`."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
