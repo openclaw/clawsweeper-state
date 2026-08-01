@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T20:16:21.565Z",
+  "updated_at": "2026-08-01T20:16:03.618Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114538:5090813437:2026-08-01T17:44:05Z:clawsweeper_needs_human",
+      "comment_id": "5090813437",
+      "comment_version_key": "5090813437:2026-08-01T17:44:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114538#issuecomment-5090813437",
+      "comment_created_at": "2026-07-27T11:37:56Z",
+      "comment_updated_at": "2026-08-01T17:44:05Z",
+      "comment_body_sha256": "1331d6cfdbb1324e3d7d406c7db952069c73c3fa4f96fc0b9900fa920011b4d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as conflicting with current main; the current gateway handler was recently rewritten, so a maintainer must inspect the resolved merge result before this host... (sha=498dbb32144dec5e81ae0ec74cff126a926c3f41)",
+      "expected_head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:49:17.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-message-action-workspace-media",
+        "head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117020:5146815450:2026-08-01T17:42:58Z:clawsweeper_needs_human",
       "comment_id": "5146815450",
@@ -32299,39 +32332,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-01T20:14:11Z:clawsweeper_auto_repair",
-      "comment_id": "5118719513",
-      "comment_version_key": "5118719513:2026-08-01T20:14:11Z",
-      "comment_url": "https://github.com/openclaw/clawpatch/pull/170#issuecomment-5118719513",
-      "comment_created_at": "2026-07-29T13:55:53Z",
-      "comment_updated_at": "2026-08-01T20:14:11Z",
-      "comment_body_sha256": "a192d98ae7af25d555298b045a33dff2e328b392ab34dd4a6b7137acc706ca55",
-      "repo": "openclaw/clawpatch",
-      "issue_number": 170,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=df92a88b798f097d79c8355ad99bd31e7e1943e8)",
-      "expected_head_sha": "df92a88b798f097d79c8355ad99bd31e7e1943e8",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:16:21.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/reclaim-local-stale-locks",
-        "head_sha": "df92a88b798f097d79c8355ad99bd31e7e1943e8",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
