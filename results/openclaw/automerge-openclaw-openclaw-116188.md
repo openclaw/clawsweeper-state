@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-116188"
 mode: "autonomous"
-run_id: "30707934189"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30707934189"
-head_sha: "f43618fd2caeb1cac767b7c05145767d9a3a9453"
-workflow_conclusion: "success"
+run_id: "30710027686"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30710027686"
+head_sha: "dccfa528f0387431807818ba43823310b5e08f51"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-01T16:55:49.534Z"
+published_at: "2026-08-01T17:32:06.333Z"
 canonical: "#116188"
 canonical_issue: null
 canonical_pr: "#116188"
@@ -16,7 +16,7 @@ fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 1
+apply_blocked: 0
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30707934189](https://github.com/openclaw/clawsweeper/actions/runs/30707934189)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30710027686](https://github.com/openclaw/clawsweeper/actions/runs/30710027686)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -46,7 +46,7 @@ Make PR #116188 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 1 |
+| Apply blocked | 0 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,13 +54,13 @@ Make PR #116188 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/116188 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116188 | merge_canonical | blocked | fix_pr | protected or paused repair label: maintainer |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
