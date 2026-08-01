@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T21:39:01.992Z",
+  "updated_at": "2026-08-01T21:39:12.894Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5039532635:2026-07-21T22:09:29Z:re_review",
-      "comment_id": "5039532635",
-      "comment_version_key": "5039532635:2026-07-21T22:09:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5039532635",
-      "comment_created_at": "2026-07-21T22:09:29Z",
-      "comment_updated_at": "2026-07-21T22:09:29Z",
-      "comment_body_sha256": "bd2272ea05bd8661d03f29c89e19d44f1259e8eebaa5e0b351e335722403d2b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head 4b4885abb6. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-warn throttle are unchanged. local touched unit suites and tsgo/oxlint green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:24:29.611Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5044582136:2026-07-22T10:12:22Z:re_review",
       "comment_id": "5044582136",
@@ -32436,6 +32409,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115405:5117935490:2026-08-01T21:38:37Z:clawsweeper_needs_human",
+      "comment_id": "5117935490",
+      "comment_version_key": "5117935490:2026-08-01T21:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5117935490",
+      "comment_created_at": "2026-07-29T12:46:41Z",
+      "comment_updated_at": "2026-08-01T21:38:37Z",
+      "comment_body_sha256": "a38afbd7c8a8b8b97228532a270664036d1d1b1c7faa3fc7c703d82642ff54c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, type checks, and lint, but no redacted after-fix CLI fallback run demonstrates that a minted grant produces... (sha=80652425c7b5746ab95dd2d9e3a1f55e8893bb20)",
+      "expected_head_sha": "80652425c7b5746ab95dd2d9e3a1f55e8893bb20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T21:39:12.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegation-capability-cli-loopback",
+        "head_sha": "80652425c7b5746ab95dd2d9e3a1f55e8893bb20",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
