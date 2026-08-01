@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T16:01:05.592Z",
+  "updated_at": "2026-08-01T16:01:31.603Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117404:5151652356:2026-08-01T13:34:47Z:re_review",
@@ -32977,8 +32977,8 @@
       "repair_reason": "structured ClawSweeper verdict: pass (sha=95ee8fca7f8a3d67c8ee3499434535154e01d76b); current checks are failing: Scan iOS dead code:FAILURE, Intersect shared OpenClawKit dead code:FAILURE, ios-build:FAILURE",
       "expected_head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-01T16:01:01.743Z",
+      "status": "executed",
+      "processed_at": "2026-08-01T16:01:15.959Z",
       "target": {
         "kind": "pull_request",
         "branch": "clawsweeper/issue-openclaw-openclaw-110171",
@@ -32988,20 +32988,14 @@
       },
       "actions": [
         {
-          "action": "ensure_automerge_job",
+          "action": "dispatch_repair",
           "status": "executed",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
         },
         {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-        },
-        {
           "action": "comment",
-          "status": "pending",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
