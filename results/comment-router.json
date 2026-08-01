@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:23:10.111Z",
+  "updated_at": "2026-08-01T06:23:12.589Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117167:5149462223:2026-08-01T02:57:29Z:re_review",
-      "comment_id": "5149462223",
-      "comment_version_key": "5149462223:2026-08-01T02:57:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117167#issuecomment-5149462223",
-      "comment_created_at": "2026-08-01T02:57:29Z",
-      "comment_updated_at": "2026-08-01T02:57:29Z",
-      "comment_body_sha256": "fc769a9cc08cd7393853ca1d47aad3c3805cb8138c30d903c1b4a14e39125ed3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117167,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:05:29.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/google-cli-credential-extraction",
-        "head_sha": "93ad0782dd4aa7b6cb29f98d43119cb29b8b5e82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117179:5149456898:2026-08-01T02:56:43Z:re_review",
       "comment_id": "5149456898",
@@ -32047,6 +32000,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-search-fallback-recovery-96534",
         "head_sha": "797d6290262ae453ea22f50e7cf66a5a81508b52",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106187:4956266337:2026-08-01T06:22:29Z:clawsweeper_auto_repair",
+      "comment_id": "4956266337",
+      "comment_version_key": "4956266337:2026-08-01T06:22:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/106187#issuecomment-4956266337",
+      "comment_created_at": "2026-07-13T09:06:49Z",
+      "comment_updated_at": "2026-08-01T06:22:29Z",
+      "comment_body_sha256": "1c68359dd799b9ef9b6f3d838d7d967e61aff483e122cd01d3484d82f13701e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 106187,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7282403fe074f1d478a826cd25c0822241b6e89f)",
+      "expected_head_sha": "7282403fe074f1d478a826cd25c0822241b6e89f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:23:12.589Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-105481-braille-leak-markdown",
+        "head_sha": "7282403fe074f1d478a826cd25c0822241b6e89f",
         "cluster_id": null,
         "job_path": null
       }
