@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:10:20.620Z",
+  "updated_at": "2026-08-01T08:10:34.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117214:5149893046:2026-08-01T05:40:43Z:clawsweeper_needs_human",
-      "comment_id": "5149893046",
-      "comment_version_key": "5149893046:2026-08-01T05:40:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117214#issuecomment-5149893046",
-      "comment_created_at": "2026-08-01T04:59:36Z",
-      "comment_updated_at": "2026-08-01T05:40:43Z",
-      "comment_body_sha256": "229115f989c57c10e37da0d3f3d72c7598b6a7d6e589e21bd1c87b5447bbcce3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117214,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the terminal sequencing of durable transcript persistence: a real overflow now stops later transcript admission until explicit close, so the exact current-base head sh... (sha=a947b737f1dd47af2cc8d30a67d25b0339ab866b)",
-      "expected_head_sha": "a947b737f1dd47af2cc8d30a67d25b0339ab866b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:41:23.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-transcript-persistence-bound-clean",
-        "head_sha": "a947b737f1dd47af2cc8d30a67d25b0339ab866b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117240:5150030015:2026-08-01T05:41:03Z:clawsweeper_needs_human",
       "comment_id": "5150030015",
@@ -32186,6 +32153,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117277:5150557185:2026-08-01T08:09:48Z:re_review",
+      "comment_id": "5150557185",
+      "comment_version_key": "5150557185:2026-08-01T08:09:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117277#issuecomment-5150557185",
+      "comment_created_at": "2026-08-01T08:09:48Z",
+      "comment_updated_at": "2026-08-01T08:09:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117277,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:10:31.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/111923-filter-rem-junk-topics",
+        "head_sha": "b9758c7573773c4abca56f174e1e08c66965e5f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
