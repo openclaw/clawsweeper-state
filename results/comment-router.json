@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:51:08.031Z",
+  "updated_at": "2026-08-01T10:53:23.217Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117156:5148968332:2026-08-01T07:53:32Z:clawsweeper_auto_repair",
-      "comment_id": "5148968332",
-      "comment_version_key": "5148968332:2026-08-01T07:53:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117156#issuecomment-5148968332",
-      "comment_created_at": "2026-08-01T01:58:58Z",
-      "comment_updated_at": "2026-08-01T07:53:32Z",
-      "comment_body_sha256": "0eaa0bf10d383e57052b6e0c3c08158254228c6674ca4cc905fb83d23dfeb5d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117156,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=162cc4d815f8f319eeb036d5f6025b848285af56)",
-      "expected_head_sha": "162cc4d815f8f319eeb036d5f6025b848285af56",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:54:11.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/applypatch-empty-failure-116964",
-        "head_sha": "162cc4d815f8f319eeb036d5f6025b848285af56",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T07:53:25Z:clawsweeper_needs_human",
       "comment_id": "5149564387",
@@ -32701,6 +32668,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:109020:5151105243:2026-08-01T10:52:44Z:re_review",
+      "comment_id": "5151105243",
+      "comment_version_key": "5151105243:2026-08-01T10:52:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109020#issuecomment-5151105243",
+      "comment_created_at": "2026-08-01T10:52:44Z",
+      "comment_updated_at": "2026-08-01T10:52:44Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109020,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T10:53:20.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/google-live-websocket-open-timeout",
+        "head_sha": "4a6592808aa403b2c384f8b395a11448cf142b50",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
