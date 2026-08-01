@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:35:12.614Z",
+  "updated_at": "2026-08-01T16:35:14.175Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117433:5151758080:2026-08-01T14:23:13Z:clawsweeper_needs_human",
-      "comment_id": "5151758080",
-      "comment_version_key": "5151758080:2026-08-01T14:23:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117433#issuecomment-5151758080",
-      "comment_created_at": "2026-08-01T14:03:23Z",
-      "comment_updated_at": "2026-08-01T14:23:13Z",
-      "comment_body_sha256": "bf709b3719974ab12de816c1546985780db901f496fef9b4d6e8cef9f4f8c2b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117433,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the schema text consumed by all packaged database initialization, repair, backup, and recovery paths; a missed build transform would fail at runtime rather than at schema... (sha=73f4151935f601515fd16d071aa0eac7dcb2d5bd)",
-      "expected_head_sha": "73f4151935f601515fd16d071aa0eac7dcb2d5bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:27:42.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/state-schema-inline",
-        "head_sha": "73f4151935f601515fd16d071aa0eac7dcb2d5bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/releasebar:70:4991272951:2026-08-01T14:27:10Z:clawsweeper_needs_human",
       "comment_id": "4991272951",
@@ -31515,6 +31482,53 @@
         "kind": "pull_request",
         "branch": "systemd-unit-escape-roundtrip",
         "head_sha": "9d33ab0b0444f58d092a3029a3c9f237df6ec24b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1005:5152343190:2026-08-01T16:34:35Z:re_review",
+      "comment_id": "5152343190",
+      "comment_version_key": "5152343190:2026-08-01T16:34:35Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1005#issuecomment-5152343190",
+      "comment_created_at": "2026-08-01T16:34:35Z",
+      "comment_updated_at": "2026-08-01T16:34:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1005,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:35:11.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-subsystem-decomposition",
+        "head_sha": "8d5fa1343191ef507e654c3f421b101abc8770c8",
         "cluster_id": null,
         "job_path": null
       },
