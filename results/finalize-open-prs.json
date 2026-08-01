@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T05:50:31.084Z",
+  "generated_at": "2026-08-01T05:53:47.085Z",
   "count": 2,
   "summary": {
     "open_prs": 2,
@@ -83,19 +83,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "30685035665",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30685035665",
+        "run_id": "30685905174",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30685905174",
         "cluster_id": "automerge-openclaw-openclaw-117144",
-        "published_at": "2026-08-01T05:12:13.978Z",
-        "workflow_conclusion": "success",
+        "published_at": "2026-08-01T05:53:29.532Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#117144",
-          "action": "fix_needed",
+          "action": "build_fix_artifact",
           "status": "planned",
           "classification": "canonical",
           "canonical": "#117144",
-          "candidate_fix": null,
-          "reason": "A narrow producer-side repair is available: package the listed built workspace distributions in the artifact's normal node_modules/@openclaw layout, remove the resolver hook, and run ACP/Gateway directly from the extracted launcher."
+          "candidate_fix": "#117144",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
