@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:11:15.665Z",
+  "updated_at": "2026-08-01T08:11:19.208Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117194:5150030932:2026-08-01T05:41:19Z:re_review",
-      "comment_id": "5150030932",
-      "comment_version_key": "5150030932:2026-08-01T05:41:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117194#issuecomment-5150030932",
-      "comment_created_at": "2026-08-01T05:41:19Z",
-      "comment_updated_at": "2026-08-01T05:41:19Z",
-      "comment_body_sha256": "f79330f1e1cfbbad6bce30f79cd1cef573e2aaa4243a145848175e34e4fb049e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117194,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:41:57.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-google-stream-lifecycle",
-        "head_sha": "4c1f68b28fa33665640cb8d37775522f76c74bf8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113171:5078562266:2026-08-01T05:41:42Z:clawsweeper_needs_human",
       "comment_id": "5078562266",
@@ -32214,6 +32167,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117248:5150097029:2026-08-01T08:10:30Z:clawsweeper_needs_human",
+      "comment_id": "5150097029",
+      "comment_version_key": "5150097029:2026-08-01T08:10:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5150097029",
+      "comment_created_at": "2026-08-01T06:01:55Z",
+      "comment_updated_at": "2026-08-01T08:10:30Z",
+      "comment_body_sha256": "916e2e9970f58a3ddfd4154ddea0126d0a92a5c65f7116b5e1b544281be345d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides unit-test assertions but no redacted after-fix REM harness output, runtime log, or persisted-memory result showing that junk ta... (sha=4f11722b90c201292bfc8e79771dd6100a4e369f)",
+      "expected_head_sha": "4f11722b90c201292bfc8e79771dd6100a4e369f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:11:19.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-rem-junk-topics",
+        "head_sha": "4f11722b90c201292bfc8e79771dd6100a4e369f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
