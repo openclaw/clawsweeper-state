@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:59:44.904Z",
+  "updated_at": "2026-08-01T22:59:45.499Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92359:4688027617:2026-08-01T17:39:37Z:clawsweeper_auto_repair",
-      "comment_id": "4688027617",
-      "comment_version_key": "4688027617:2026-08-01T17:39:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92359#issuecomment-4688027617",
-      "comment_created_at": "2026-06-12T06:18:26Z",
-      "comment_updated_at": "2026-08-01T17:39:37Z",
-      "comment_body_sha256": "a0726c5fe3a506df0a900e641e18f10be42675b4b9fcf6c65ee48715a35824ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92359,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5f2edef25da83163a1a83d497ac45f56642f25b2)",
-      "expected_head_sha": "5f2edef25da83163a1a83d497ac45f56642f25b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:29:25.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/modelcompat-allow-sendSessionAffinityHeaders",
-        "head_sha": "5f2edef25da83163a1a83d497ac45f56642f25b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92420:4689890450:2026-08-01T20:01:49Z:clawsweeper_needs_human",
       "comment_id": "4689890450",
@@ -32747,6 +32714,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T22:58:42Z:clawsweeper_needs_human",
+      "comment_id": "5146046509",
+      "comment_version_key": "5146046509:2026-08-01T22:58:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
+      "comment_created_at": "2026-07-31T18:08:22Z",
+      "comment_updated_at": "2026-08-01T22:58:42Z",
+      "comment_body_sha256": "09946a1c93428e30a7a8828185ed3d425c815e51b3cdac604de7916fe0bfa09e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Document \\allowedHostnames\\ as exact host entries (P2)** - allowedHostnames is checked by exact hostname membership in src/infra/net/ssrf.ts, so *.example.com does not permit assets.example.com. Wildcard matchin...; Review finding: [P2] Document allowedHostnames as exact host entries — docs/gateway/security/index.md:494 - [low] Avoid unsupported wildcard SSRF guidance — docs/gateway/security/... (sha=4a9551f1bc141b8b4fa513b6610cd69300da1297)",
+      "expected_head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:59:45.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+        "head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
+        "cluster_id": "automerge-openclaw-openclaw-116976",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
