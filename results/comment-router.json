@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:26:58.576Z",
+  "updated_at": "2026-08-01T15:27:00.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117312:5150695853:2026-08-01T10:30:08Z:clawsweeper_needs_human",
-      "comment_id": "5150695853",
-      "comment_version_key": "5150695853:2026-08-01T10:30:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117312#issuecomment-5150695853",
-      "comment_created_at": "2026-08-01T08:49:41Z",
-      "comment_updated_at": "2026-08-01T10:30:08Z",
-      "comment_body_sha256": "ce28ada84b8c10503085e09213ce32c4d459756a51aa8dc4de56a5c6b8171190",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117312,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Several required checks for the exact current head were still in progress at review time; merge should wait for their normal completion, although no source-level defect was found. (sha=77d9f0c903f2c896c91ba7e171e3d8ff18574cbf)",
-      "expected_head_sha": "77d9f0c903f2c896c91ba7e171e3d8ff18574cbf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T13:02:44.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-card-cancel-error-body",
-        "head_sha": "77d9f0c903f2c896c91ba7e171e3d8ff18574cbf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117317:5150883012:2026-08-01T12:38:45Z:clawsweeper_auto_repair",
       "comment_id": "5150883012",
@@ -32396,6 +32363,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T15:26:58.575Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:16:5140090028:2026-08-01T15:20:52Z:clawsweeper_needs_human",
+      "comment_id": "5140090028",
+      "comment_version_key": "5140090028:2026-08-01T15:20:52Z",
+      "comment_url": "https://github.com/openclaw/turnwire/pull/16#issuecomment-5140090028",
+      "comment_created_at": "2026-07-31T06:39:57Z",
+      "comment_updated_at": "2026-08-01T15:20:52Z",
+      "comment_body_sha256": "723ee53f14e370d147f75cf388c54b70f52e7013dd0317a37e3cb19ced505348",
+      "repo": "openclaw/turnwire",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the direct SDK that implements Turnwire’s external MCP behavior. Upstream v1.7.0 introduces a revised protocol revision, while current evidence does not show a real le... (sha=28989e371e901ece3c924cf88c10f5669e9bc18a)",
+      "expected_head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T15:27:00.871Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/modelcontextprotocol/go-sdk-1.7.0",
+        "head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
