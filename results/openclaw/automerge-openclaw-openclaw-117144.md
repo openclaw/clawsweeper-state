@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-117144"
 mode: "autonomous"
-run_id: "30691014435"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30691014435"
-head_sha: "822424ecf89949204e1fbc3d8cc6ed77f4d18ad8"
-workflow_conclusion: "success"
+run_id: "30692961470"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30692961470"
+head_sha: "30d0321d9c9cfbc7f97fb7a7776d90a1b1885d41"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-01T08:10:07.055Z"
+published_at: "2026-08-01T09:22:26.324Z"
 canonical: "#117144"
-canonical_issue: "#98276"
+canonical_issue: null
 canonical_pr: "#117144"
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30691014435](https://github.com/openclaw/clawsweeper/actions/runs/30691014435)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30692961470](https://github.com/openclaw/clawsweeper/actions/runs/30692961470)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #117144
 
 ## Summary
 
-Keep #117144 as the canonical repair path for #98276. Repair its same-repository branch: rebase onto current main, replace the checkout-assisted extracted-artifact smoke with direct extracted-package execution proof, investigate and fix the failing dependency/CI gates, then rerun focused validation and Codex /review. No merge or close action is permitted by this job.
+Make PR #117144 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Keep #117144 as the canonical repair path for #98276. Repair its same-repository
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98274 | keep_independent | planned | independent | #98274 is related ACP context but has a distinct owner boundary and must remain open independently. |
-| #98276 | keep_canonical | planned | canonical | #98276 remains the canonical issue until the repaired candidate passes validation and lands; post-merge closure is disabled for this job. |
-| #98326 | keep_closed | skipped | superseded | Historical source PR only; keep it closed and preserve its attribution through the canonical repair. |
-| #117144 | fix_needed | planned | canonical | Repair the canonical branch rather than replacing it: strengthen the artifact proof at the consumer boundary, rebase, and resolve relevant CI failures. |
+| #117144 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
