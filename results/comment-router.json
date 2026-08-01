@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:55:48.420Z",
+  "updated_at": "2026-08-01T06:55:55.882Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93985:5149635767:2026-08-01T03:43:09Z:re_review",
-      "comment_id": "5149635767",
-      "comment_version_key": "5149635767:2026-08-01T03:43:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93985#issuecomment-5149635767",
-      "comment_created_at": "2026-08-01T03:43:09Z",
-      "comment_updated_at": "2026-08-01T03:43:09Z",
-      "comment_body_sha256": "ed4fe8082beeca385fe021dd8ad488c408c6396ed0ed07e3bb351efb06f61f7f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93985,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:44:59.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-bind-conflict",
-        "head_sha": "41ade360455d198202b5904e867f333a5efebd7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97135:4814520843:2026-08-01T03:45:08Z:clawsweeper_needs_human",
       "comment_id": "4814520843",
@@ -31971,6 +31924,39 @@
         "kind": "pull_request",
         "branch": "fix/read-tool-bare-date-filename-memory-prefix",
         "head_sha": "dd13623c8891317c31c7ffa29c1bdbf70ca0b18d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116904:5144476434:2026-08-01T06:55:15Z:clawsweeper_needs_human",
+      "comment_id": "5144476434",
+      "comment_version_key": "5144476434:2026-08-01T06:55:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116904#issuecomment-5144476434",
+      "comment_created_at": "2026-07-31T15:17:07Z",
+      "comment_updated_at": "2026-08-01T06:55:15Z",
+      "comment_body_sha256": "58019b6df441b7754efd0242c9bbefb374f069d32f7782160d505d32e7f1ef23",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the reconnect path that keeps already-connected SDK clients usable after transport errors; a regression could make active Gateway consumers stop serving requests after a... (sha=7946e2fe1b787c7abc8e11625d2a787d55383e81)",
+      "expected_head_sha": "7946e2fe1b787c7abc8e11625d2a787d55383e81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:55:55.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa200-gateway-client-eventhub-lifecycle",
+        "head_sha": "7946e2fe1b787c7abc8e11625d2a787d55383e81",
         "cluster_id": null,
         "job_path": null
       }
