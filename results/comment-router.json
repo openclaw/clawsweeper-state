@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:41:35.372Z",
+  "updated_at": "2026-08-01T20:41:37.174Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117525:5152826594:2026-08-01T18:36:14Z:re_review",
-      "comment_id": "5152826594",
-      "comment_version_key": "5152826594:2026-08-01T18:36:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117525#issuecomment-5152826594",
-      "comment_created_at": "2026-08-01T18:36:14Z",
-      "comment_updated_at": "2026-08-01T18:36:14Z",
-      "comment_body_sha256": "7984165f390c047ce306b2e66e2fad805269c296c37d488d3b7c579404c2fca6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117525,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T18:36:53.657Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-cli-health-benchmark",
-        "head_sha": "d40d08e91eda306807e7d5bfee663413f8dbf01d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1008:5152829997:2026-08-01T18:37:06Z:clawsweeper_auto_repair",
       "comment_id": "5152829997",
@@ -32269,6 +32222,39 @@
         "kind": "pull_request",
         "branch": "feature/vpn-provider-netbird-support",
         "head_sha": "3d1bbf00869a6de0ce727379667ed5483b027de1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:54:4863981862:2026-08-01T20:36:24Z:clawsweeper_needs_human",
+      "comment_id": "4863981862",
+      "comment_version_key": "4863981862:2026-08-01T20:36:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/54#issuecomment-4863981862",
+      "comment_created_at": "2026-07-02T08:58:29Z",
+      "comment_updated_at": "2026-08-01T20:36:24Z",
+      "comment_body_sha256": "8c0487972b3b5e6b87f472da2f593f6c19d474ee9f97f05b852aea44211a50f4",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes a Debian test but supplies no inspectable redacted terminal output, logs, recording, or artifact from the current head; a...; Review finding: [P1] Keep Tailscale SSH opt-in — roles/openclaw/defaults/main.yml:11 - [P2] Reconnect stopped nodes without consuming auth keys — roles/openclaw/tasks/tailscale-li... (sha=e6e50ae1de2bc320109fd93eca27522e429313f4)",
+      "expected_head_sha": "e6e50ae1de2bc320109fd93eca27522e429313f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:41:37.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-authkey-auto-connect",
+        "head_sha": "e6e50ae1de2bc320109fd93eca27522e429313f4",
         "cluster_id": null,
         "job_path": null
       }
