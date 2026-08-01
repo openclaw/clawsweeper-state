@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:29:47.101Z",
+  "updated_at": "2026-08-01T22:29:51.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117594:5153069383:2026-08-01T19:33:23Z:clawsweeper_needs_human",
-      "comment_id": "5153069383",
-      "comment_version_key": "5153069383:2026-08-01T19:33:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117594#issuecomment-5153069383",
-      "comment_created_at": "2026-08-01T19:33:23Z",
-      "comment_updated_at": "2026-08-01T19:33:23Z",
-      "comment_body_sha256": "0b00b86ed1d74bd0c7a12123d2e4acb8996ba54627148a01f3f9dfbc7e5e30fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117594,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub context reports the branch as cleanly mergeable but behind main, with several exact-head checks still running; merge should wait for those checks rather than infer... (sha=6ea098000f75bde7aa587448c530e0f7d9e9092f)",
-      "expected_head_sha": "6ea098000f75bde7aa587448c530e0f7d9e9092f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:34:08.635Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-tooling-guard-tests-wave4-2d45",
-        "head_sha": "6ea098000f75bde7aa587448c530e0f7d9e9092f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94383:4737585384:2026-08-01T19:33:34Z:clawsweeper_needs_human",
       "comment_id": "4737585384",
@@ -33272,6 +33239,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117655:5153747727:2026-08-01T22:29:11Z:re_review",
+      "comment_id": "5153747727",
+      "comment_version_key": "5153747727:2026-08-01T22:29:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117655#issuecomment-5153747727",
+      "comment_created_at": "2026-08-01T22:29:11Z",
+      "comment_updated_at": "2026-08-01T22:29:11Z",
+      "comment_body_sha256": "9524f4ba943e39aad711ae607378782f50fce17471291b3f5c21e1cd19f78230",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117655,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:29:48.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/perf-gateway-ws-readiness",
+        "head_sha": "3f4b57408abd2981e6dbac6d2d001d559a7209ef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
