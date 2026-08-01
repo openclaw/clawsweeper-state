@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T15:14:45.319Z",
+  "updated_at": "2026-08-01T15:15:27.112Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104920:4953223900:2026-07-12T23:34:59Z:re_review",
@@ -32103,33 +32103,6 @@
       "target": null
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5152017604:2026-08-01T15:12:25Z:re_review",
-      "comment_id": "5152017604",
-      "comment_version_key": "5152017604:2026-08-01T15:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5152017604",
-      "comment_created_at": "2026-08-01T15:12:25Z",
-      "comment_updated_at": "2026-08-01T15:12:25Z",
-      "comment_body_sha256": "1f141d2f632a32789a91c3c2757b230a9bf16072c5e12e52b29b7baadda5a6b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-01T15:14:30.435Z",
-      "target": null
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117344:5151092737:2026-08-01T15:07:15Z:clawsweeper_needs_human",
       "comment_id": "5151092737",
       "comment_version_key": "5151092737:2026-08-01T15:07:15Z",
@@ -32236,6 +32209,53 @@
       "status": "waiting",
       "processed_at": "2026-08-01T15:14:45.318Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112623:5152017604:2026-08-01T15:12:25Z:re_review",
+      "comment_id": "5152017604",
+      "comment_version_key": "5152017604:2026-08-01T15:12:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5152017604",
+      "comment_created_at": "2026-08-01T15:12:25Z",
+      "comment_updated_at": "2026-08-01T15:12:25Z",
+      "comment_body_sha256": "1f141d2f632a32789a91c3c2757b230a9bf16072c5e12e52b29b7baadda5a6b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112623,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T15:15:25.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "spike/recently-completed-subagents-prompt",
+        "head_sha": "54285da582c5244b7493dd721448b8c5d5a9a57e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
