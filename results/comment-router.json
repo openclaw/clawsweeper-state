@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:40:19.191Z",
+  "updated_at": "2026-08-01T17:41:24.879Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115277:5150561270:2026-08-01T08:10:57Z:re_review",
-      "comment_id": "5150561270",
-      "comment_version_key": "5150561270:2026-08-01T08:10:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115277#issuecomment-5150561270",
-      "comment_created_at": "2026-08-01T08:10:57Z",
-      "comment_updated_at": "2026-08-01T08:10:57Z",
-      "comment_body_sha256": "d7b704624d763b0a9d538103e4a2d0d40ebcfc2c1f096a30d9468fc0cb586bf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115277,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:57:28.552Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115277:5151002856:2026-08-01T10:21:09Z:re_review",
       "comment_id": "5151002856",
@@ -31319,6 +31292,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T17:40:19.190Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111937:5029060297:2026-08-01T17:40:51Z:clawsweeper_needs_human",
+      "comment_id": "5029060297",
+      "comment_version_key": "5029060297:2026-08-01T17:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111937#issuecomment-5029060297",
+      "comment_created_at": "2026-07-21T01:11:02Z",
+      "comment_updated_at": "2026-08-01T17:40:51Z",
+      "comment_body_sha256": "3046fe87818073c69238ae04aeb932f4aba7ce8b701c08383d9c43208564ed33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111937,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Mocked transport integration and a credible production before-case support the bug, but no redacted exact-head after-fix Mattermost ru... (sha=ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7)",
+      "expected_head_sha": "ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:41:24.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-fallback-warning-111778",
+        "head_sha": "ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
