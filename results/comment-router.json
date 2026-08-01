@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:39:48.879Z",
+  "updated_at": "2026-08-01T20:40:01.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112669:5108770666:2026-07-28T19:30:20Z:re_review",
-      "comment_id": "5108770666",
-      "comment_version_key": "5108770666:2026-07-28T19:30:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112669#issuecomment-5108770666",
-      "comment_created_at": "2026-07-28T19:30:20Z",
-      "comment_updated_at": "2026-07-28T19:30:20Z",
-      "comment_body_sha256": "c8049645b6d03bdf15d1f035e7cbce26646b8c7941822b17d715971de9d1eb3b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112669,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:35:38.915Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117558:5152821955:2026-08-01T18:35:08Z:clawsweeper_needs_human",
       "comment_id": "5152821955",
@@ -32271,6 +32244,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117620:5153317344:2026-08-01T20:39:15Z:clawsweeper_needs_human",
+      "comment_id": "5153317344",
+      "comment_version_key": "5153317344:2026-08-01T20:39:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117620#issuecomment-5153317344",
+      "comment_created_at": "2026-08-01T20:39:15Z",
+      "comment_updated_at": "2026-08-01T20:39:15Z",
+      "comment_body_sha256": "5d4e13a4e7f3328a289764b81219c5bbff5c43426f1ff02ed5d2c3ba34fae292",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair work is needed because this PR already contains the narrow owner-boundary fix and no actionable review finding remains. (sha=704b721e4ff194e96ec5c16bcb9f5ffdc8bf3a21)",
+      "expected_head_sha": "704b721e4ff194e96ec5c16bcb9f5ffdc8bf3a21",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T20:40:01.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-117545",
+        "head_sha": "704b721e4ff194e96ec5c16bcb9f5ffdc8bf3a21",
+        "cluster_id": "issue-openclaw-openclaw-117545",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
