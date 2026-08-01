@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:39:18.930Z",
+  "updated_at": "2026-08-01T19:40:16.672Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116562:5136405557:2026-08-01T15:30:59Z:clawsweeper_needs_human",
-      "comment_id": "5136405557",
-      "comment_version_key": "5136405557:2026-08-01T15:30:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5136405557",
-      "comment_created_at": "2026-07-30T21:23:03Z",
-      "comment_updated_at": "2026-08-01T15:30:59Z",
-      "comment_body_sha256": "08545374f5a4296cddbd67408eebf4c0e8d8cb116a896e5e7e237ebb4ba836de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests and static checks are reported, but no inspectable post-fix real setup evidence demonstrates fallback activation, primary recover... (sha=797d6290262ae453ea22f50e7cf66a5a81508b52)",
-      "expected_head_sha": "797d6290262ae453ea22f50e7cf66a5a81508b52",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:36:24.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-fallback-recovery-96534",
-        "head_sha": "797d6290262ae453ea22f50e7cf66a5a81508b52",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116604:5137949038:2026-08-01T15:30:42Z:clawsweeper_auto_repair",
       "comment_id": "5137949038",
@@ -32108,6 +32075,53 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117577:5153092078:2026-08-01T19:39:36Z:re_review",
+      "comment_id": "5153092078",
+      "comment_version_key": "5153092078:2026-08-01T19:39:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117577#issuecomment-5153092078",
+      "comment_created_at": "2026-08-01T19:39:36Z",
+      "comment_updated_at": "2026-08-01T19:39:36Z",
+      "comment_body_sha256": "ae022157f3b605baec266ac28320d6d02cee0301c27358c79d350ce920cded2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117577,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:40:14.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/kova-bootstrap-trace",
+        "head_sha": "e44ee56a8f05360dc23db801d125990d3e6489ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
