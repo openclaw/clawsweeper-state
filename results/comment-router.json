@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:13:53.562Z",
+  "updated_at": "2026-08-01T06:14:39.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5148980087:2026-08-01T02:02:03Z:re_review",
-      "comment_id": "5148980087",
-      "comment_version_key": "5148980087:2026-08-01T02:02:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5148980087",
-      "comment_created_at": "2026-08-01T02:02:03Z",
-      "comment_updated_at": "2026-08-01T02:02:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T02:04:55.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sessions-tombstone-sweep",
-        "head_sha": "23b87e2ae07e0c390b54d2ba9136d9690d017ee8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112961:5080157555:2026-08-01T02:02:16Z:clawsweeper_needs_human",
       "comment_id": "5080157555",
@@ -32299,6 +32252,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/oxlint-1.76.0",
         "head_sha": "d057c7d82078646ac6d1d6dea98fd3c33877fc48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-08-01T06:14:04Z:clawsweeper_needs_human",
+      "comment_id": "5120409280",
+      "comment_version_key": "5120409280:2026-08-01T06:14:04Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/54#issuecomment-5120409280",
+      "comment_created_at": "2026-07-29T16:07:39Z",
+      "comment_updated_at": "2026-08-01T06:14:04Z",
+      "comment_body_sha256": "7935f27a22275b12d9f25b7efa6986eaff8e070cad93f78f03835fdf0dd2fb3c",
+      "repo": "openclaw/shellbench",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the runtime controls of four version-pinned external clients; generated-command assertions do not by themselves prove each installed client accepts and applies the int... (sha=887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb)",
+      "expected_head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:14:39.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-reasoning-effort-parity",
+        "head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
         "cluster_id": null,
         "job_path": null
       }
