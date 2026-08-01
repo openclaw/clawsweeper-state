@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:39:17.195Z",
+  "updated_at": "2026-08-01T08:39:17.318Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116797:5142342995:2026-08-01T05:56:10Z:clawsweeper_auto_repair",
-      "comment_id": "5142342995",
-      "comment_version_key": "5142342995:2026-08-01T05:56:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116797#issuecomment-5142342995",
-      "comment_created_at": "2026-07-31T11:25:46Z",
-      "comment_updated_at": "2026-08-01T05:56:10Z",
-      "comment_body_sha256": "54ece0c9168670741abf78d88c9c4a70c853931e9c9328ad6f6f8ddc7e13b007",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0b6c57f72e232e49e7b882c1ed7482219479ee94)",
-      "expected_head_sha": "0b6c57f72e232e49e7b882c1ed7482219479ee94",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:02:00.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-exec-slow-host-timeout-and-cleanup",
-        "head_sha": "0b6c57f72e232e49e7b882c1ed7482219479ee94",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116790:5142262100:2026-08-01T05:56:09Z:clawsweeper_needs_human",
       "comment_id": "5142262100",
@@ -32464,6 +32431,53 @@
         "kind": "pull_request",
         "branch": "fix/codex-app-server-disconnect-20260801",
         "head_sha": "92116ef2d7781c86a633dbc4d7d07a8ea4c77163",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117296:5150654523:2026-08-01T08:38:37Z:re_review",
+      "comment_id": "5150654523",
+      "comment_version_key": "5150654523:2026-08-01T08:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117296#issuecomment-5150654523",
+      "comment_created_at": "2026-08-01T08:38:37Z",
+      "comment_updated_at": "2026-08-01T08:38:37Z",
+      "comment_body_sha256": "8a2a24dba24d1592811b813c545921ca7f739625e2fda2a88f6fa077509c030d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117296,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:39:14.282Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-app-server-disconnect-20260801",
+        "head_sha": "dcf495514e689a42d054f787c5ac646247bb1f01",
         "cluster_id": null,
         "job_path": null
       },
