@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:24:32.328Z",
+  "updated_at": "2026-08-01T15:24:42.765Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113847:5080605158:2026-08-01T10:27:59Z:clawsweeper_needs_human",
-      "comment_id": "5080605158",
-      "comment_version_key": "5080605158:2026-08-01T10:27:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113847#issuecomment-5080605158",
-      "comment_created_at": "2026-07-25T21:13:01Z",
-      "comment_updated_at": "2026-08-01T10:27:59Z",
-      "comment_body_sha256": "b364a98bffb7a34c2090284c82cd3113b84f8185170891eaea89c84b2b04c7ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Retain generic URL credential redaction (P1)** - preserveUrlQueryValues is enabled for every persisted transcript, so token, code, signature, and similar values bypass the current shared URL-query rule even when...; Review finding: [P1] Retain generic URL credential redaction — src/agents/transcript-redact.ts:35-38 - [high] Generic URL credentials persist in transcripts — src/agents/transcrip... (sha=b39e4f1f949bdc3080d6925eea913f274ff140cd)",
-      "expected_head_sha": "b39e4f1f949bdc3080d6925eea913f274ff140cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T13:02:44.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/transcript-capability-urls",
-        "head_sha": "b39e4f1f949bdc3080d6925eea913f274ff140cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113852:5080652504:2026-08-01T10:28:08Z:clawsweeper_auto_repair",
       "comment_id": "5080652504",
@@ -32425,6 +32392,53 @@
         "kind": "pull_request",
         "branch": "fix/claude-connection-loss-2403",
         "head_sha": "aa770e3aa866963ee413f833091f1a646c329c29",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2413:5152061699:2026-08-01T15:23:53Z:re_review",
+      "comment_id": "5152061699",
+      "comment_version_key": "5152061699:2026-08-01T15:23:53Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5152061699",
+      "comment_created_at": "2026-08-01T15:23:53Z",
+      "comment_updated_at": "2026-08-01T15:23:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2413,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T15:24:39.916Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-proxy-model-pricing-2393",
+        "head_sha": "a0406e141ab5c9a4ffa4d14bc827c391562246a6",
         "cluster_id": null,
         "job_path": null
       },
