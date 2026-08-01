@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117491",
+  "mode": "autonomous",
+  "run_id": "30710889861",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30710889861",
+  "head_sha": "dccfa528f0387431807818ba43823310b5e08f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117491.md",
+  "published_at": "2026-08-01T17:52:05.772Z",
+  "canonical": "#117491",
+  "canonical_issue": "#117491",
+  "canonical_pr": "#117521",
+  "summary": "Current main reproduces the routing defect at the heartbeat delivery owner: a due commitment forces target routing to its channel/recipient/thread while unconditionally clearing the configured heartbeat account. The existing implementation PR #117521 is the single canonical repair path, but its hydrated CI is failing and its head is unavailable in this read-only checkout; update that branch with the narrow source-owner fix and focused regression proof before CI is refreshed.",
+  "actions": [
+    {
+      "target": "#117491",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117491",
+      "candidate_fix": "#117521",
+      "reason": "#117491 remains the authoritative issue for the accountless due-commitment routing regression; it must stay open until the implementation PR has clean required CI."
+    },
+    {
+      "target": "#117521",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117491",
+      "candidate_fix": "#117521",
+      "reason": "Reuse the existing same-repository ClawSweeper branch as the sole implementation path; repair is narrow but requires exact-head focused validation and a refreshed CI result."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
