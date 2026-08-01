@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T21:39:56.408Z",
+  "updated_at": "2026-08-01T21:40:17.941Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
-      "comment_id": "5057166130",
-      "comment_version_key": "5057166130:2026-07-23T10:08:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5057166130",
-      "comment_created_at": "2026-07-23T10:08:25Z",
-      "comment_updated_at": "2026-07-23T10:08:25Z",
-      "comment_body_sha256": "dda4098b018fa52157ac153235755207126f16e6b33d4ef033c6c7b31eed9477",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head d477eb9333. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:24:29.611Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
       "comment_id": "5060665917",
@@ -32460,6 +32433,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T21:36:02Z:clawsweeper_auto_merge",
+      "comment_id": "5146046509",
+      "comment_version_key": "5146046509:2026-08-01T21:36:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
+      "comment_created_at": "2026-07-31T18:08:22Z",
+      "comment_updated_at": "2026-08-01T21:36:02Z",
+      "comment_body_sha256": "5848ad4f4925aa89c743099c60840cec747ccc696d32f00d68ce6a553f33be9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=23a9f2e678b161422bb0f59665bacf51431f1fec); PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "23a9f2e678b161422bb0f59665bacf51431f1fec",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T21:40:17.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+        "head_sha": "23a9f2e678b161422bb0f59665bacf51431f1fec",
+        "cluster_id": "automerge-openclaw-openclaw-116976",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+        }
+      ]
     }
   ]
 }
