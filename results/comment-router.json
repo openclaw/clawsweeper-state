@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:36:56.163Z",
+  "updated_at": "2026-08-01T18:37:40.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5070215177:2026-07-24T13:11:57Z:re_review",
-      "comment_id": "5070215177",
-      "comment_version_key": "5070215177:2026-07-24T13:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5070215177",
-      "comment_created_at": "2026-07-24T13:11:57Z",
-      "comment_updated_at": "2026-07-24T13:11:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:27:19.884Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5073569541:2026-07-24T19:13:53Z:re_review",
       "comment_id": "5073569541",
@@ -32766,6 +32739,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1008:5152829997:2026-08-01T18:37:06Z:clawsweeper_auto_repair",
+      "comment_id": "5152829997",
+      "comment_version_key": "5152829997:2026-08-01T18:37:06Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1008#issuecomment-5152829997",
+      "comment_created_at": "2026-08-01T18:37:06Z",
+      "comment_updated_at": "2026-08-01T18:37:06Z",
+      "comment_body_sha256": "81abd5e397e60fec5fb26605a2b2c9584a9d2016b2322531383df9a58414712a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7ddfa6d73e12c1a7031dd840aac172b39ebf4ad1)",
+      "expected_head_sha": "7ddfa6d73e12c1a7031dd840aac172b39ebf4ad1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:37:40.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/throttle-terminal-ack-sentinel",
+        "head_sha": "7ddfa6d73e12c1a7031dd840aac172b39ebf4ad1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
