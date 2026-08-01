@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:51:48.799Z",
+  "updated_at": "2026-08-01T07:51:50.963Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5084956255:2026-07-26T19:06:32Z:re_review",
-      "comment_id": "5084956255",
-      "comment_version_key": "5084956255:2026-07-26T19:06:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5084956255",
-      "comment_created_at": "2026-07-26T19:06:32Z",
-      "comment_updated_at": "2026-07-26T19:06:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:06:35.365Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5087274277:2026-07-27T04:29:03Z:re_review",
       "comment_id": "5087274277",
@@ -32281,6 +32254,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117020:5146815450:2026-08-01T07:51:09Z:clawsweeper_needs_human",
+      "comment_id": "5146815450",
+      "comment_version_key": "5146815450:2026-08-01T07:51:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117020#issuecomment-5146815450",
+      "comment_created_at": "2026-07-31T19:43:38Z",
+      "comment_updated_at": "2026-08-01T07:51:09Z",
+      "comment_body_sha256": "cbc354ea1c270c528456c20f7d7a477b6b75ba958ff59e102074f94be9c95907",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change sits directly on the Telegram outbound chunking boundary; an incorrect rebase resolution or stale validation could reintroduce rejected, fragmented, or misordered rich mess... (sha=575af6fd2f84b558a76117d6204c4259f321d983)",
+      "expected_head_sha": "575af6fd2f84b558a76117d6204c4259f321d983",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:51:50.962Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa300-telegram-evidence-history",
+        "head_sha": "575af6fd2f84b558a76117d6204c4259f321d983",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
