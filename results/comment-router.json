@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:35:13.048Z",
+  "updated_at": "2026-08-01T11:35:24.646Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117289:5150726054:2026-08-01T08:57:16Z:re_review",
-      "comment_id": "5150726054",
-      "comment_version_key": "5150726054:2026-08-01T08:57:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117289#issuecomment-5150726054",
-      "comment_created_at": "2026-08-01T08:57:16Z",
-      "comment_updated_at": "2026-08-01T08:57:16Z",
-      "comment_body_sha256": "34be25d6166bc77fac2fca0740be3f422b9c66f5c583d856d9a592c6396306ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117289,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:57:49.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-cli-single-config-read",
-        "head_sha": "bdf8766801d6ed0d65bf10024789f24f02861131",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:74252:4342457728:2026-08-01T08:53:14Z:clawsweeper_auto_repair",
       "comment_id": "4342457728",
@@ -31953,6 +31906,39 @@
         "kind": "pull_request",
         "branch": "claude/ios-sidebar-followups",
         "head_sha": "3a8a972693c172c06fc8b3bf61492844315e0c3f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111810:5022981109:2026-08-01T11:34:55Z:clawsweeper_needs_human",
+      "comment_id": "5022981109",
+      "comment_version_key": "5022981109:2026-08-01T11:34:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111810#issuecomment-5022981109",
+      "comment_created_at": "2026-07-20T13:48:41Z",
+      "comment_updated_at": "2026-08-01T11:34:55Z",
+      "comment_body_sha256": "2a6daa80b46b506174c915fcd686b66ea3f9aac242b4ef12681599dc3901b094",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111810,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted terminal script demonstrates decoder semantics and simulated outcomes, not after-fix execution through Z.AI probing and... (sha=cf08d0e03096dc2ac7cbd243e383513712853665)",
+      "expected_head_sha": "cf08d0e03096dc2ac7cbd243e383513712853665",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:35:24.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extensions-utf8-fatal-decode",
+        "head_sha": "cf08d0e03096dc2ac7cbd243e383513712853665",
         "cluster_id": null,
         "job_path": null
       }
