@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117633",
+  "mode": "plan",
+  "run_id": "30719627631",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30719627631",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117633.md",
+  "published_at": "2026-08-01T22:29:26.461Z",
+  "canonical": "#117633",
+  "canonical_issue": "#117633",
+  "canonical_pr": null,
+  "summary": "Issue #117633 is an open, canonical, non-security correctness bug. Current source drops the selected ClawHub publisher identity before detail and install requests, while the existing registry and install-core contracts already accept ownerHandle. Plan one narrow replacement PR; no close or merge action is permitted.",
+  "actions": [
+    {
+      "target": "#117633",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117633",
+      "candidate_fix": null,
+      "reason": "Build a focused fix that preserves ownerHandle from the selected result through Control UI detail/install, acknowledgement retry, Gateway schemas and handlers, install dedupe identity, and lifecycle facade parameters while preserving bare-slug callers."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117633",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#117633",
+      "candidate_fix": null,
+      "reason": "Create one new, attributed, narrow fix PR after implementation and validation; neither merge nor issue closure is allowed in this job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117633"
-mode: "autonomous"
-run_id: "30718303671"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30718303671"
+mode: "plan"
+run_id: "30719627631"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30719627631"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-01T21:12:01.606Z"
-canonical: "https://github.com/openclaw/openclaw/issues/117633"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/117633"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-01T22:29:26.461Z"
+canonical: "#117633"
+canonical_issue: "#117633"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30718303671](https://github.com/openclaw/clawsweeper/actions/runs/30718303671)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30719627631](https://github.com/openclaw/clawsweeper/actions/runs/30719627631)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/117633
+Canonical: #117633
 
 ## Summary
 
-Current main at 813b7975aa48c7b3bda6af03e47c4dfd5bb8b3da still drops the selected ClawHub publisher identity: search-result UI actions pass only `slug`, `skills.detail` accepts and forwards only `slug`, and `skills.install` likewise passes only the bare slug into the lifecycle parser. The lifecycle and ClawHub client already support `ownerHandle`, so this is a narrow existing-behavior repair. Implementation is blocked only because this worker checkout is filesystem read-only; the supplied artifact is ready for the deterministic executor to implement on `clawsweeper/issue-openclaw-openclaw-117633`.
+Issue #117633 is an open, canonical, non-security correctness bug. Current source drops the selected ClawHub publisher identity before detail and install requests, while the existing registry and install-core contracts already accept ownerHandle. Plan one narrow replacement PR; no close or merge action is permitted.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main at 813b7975aa48c7b3bda6af03e47c4dfd5bb8b3da still drops the selecte
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117633 | fix_needed | blocked | canonical | Narrow bug confirmed on current main, but implementation must be performed by the deterministic executor in a writable checkout. |
-| cluster:issue-openclaw-openclaw-117633 | build_fix_artifact | planned | canonical | Create one narrow credited autofix PR from the designated branch after applying the artifact. |
+| #117633 | fix_needed | planned | canonical | Build a focused fix that preserves ownerHandle from the selected result through Control UI detail/install, acknowledgement retry, Gateway schemas and handlers, install dedupe identity, and lifecycle facade parameters while preserving bare-slug callers. |
+| cluster:issue-openclaw-openclaw-117633 | build_fix_artifact | planned |  | Create one new, attributed, narrow fix PR after implementation and validation; neither merge nor issue closure is allowed in this job. |
 
 ## Needs Human
 
