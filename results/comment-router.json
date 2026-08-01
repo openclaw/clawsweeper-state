@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:57:43.644Z",
+  "updated_at": "2026-08-01T09:57:56.901Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114079:5082864691:2026-08-01T07:05:02Z:clawsweeper_auto_repair",
-      "comment_id": "5082864691",
-      "comment_version_key": "5082864691:2026-08-01T07:05:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114079#issuecomment-5082864691",
-      "comment_created_at": "2026-07-26T09:16:04Z",
-      "comment_updated_at": "2026-08-01T07:05:02Z",
-      "comment_body_sha256": "088cf547a3cb72e3fbfe867eb5ceee727bdc028b51ab1e1c515339181efea4c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114079,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fe589d6fdef04e9280b6f753bee61d76ab16d681)",
-      "expected_head_sha": "fe589d6fdef04e9280b6f753bee61d76ab16d681",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:05:45.870Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workboard-session-binding-v1",
-        "head_sha": "fe589d6fdef04e9280b6f753bee61d76ab16d681",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114079:5083085580:2026-07-26T10:29:13Z:re_review",
       "comment_id": "5083085580",
@@ -32796,6 +32763,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T09:57:11Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T09:57:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T09:57:11Z",
+      "comment_body_sha256": "e8ff4915f7efba5967646c5f432f81d601da2b7e6b7f0c186b22aae5443c3c42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the guarded TruffleHog action pin (P1)** - This changes the credential-scan action to 6f3c981… (v3.96.0), but test/scripts/ci-workflow-guards.test.ts still asserts the old TRUFFLEHOG_V3_95_9 SHA. The...; Review finding: [P1] Synchronize the guarded TruffleHog action pin — .github/workflows/ci.yml:904 - [medium] Keep the credential-scan action guard synchronized — .github/workflows... (sha=2af938f0588d6ff59d6bc3617f20cc65e09a1d2e)",
+      "expected_head_sha": "2af938f0588d6ff59d6bc3617f20cc65e09a1d2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:57:56.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "2af938f0588d6ff59d6bc3617f20cc65e09a1d2e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
