@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:33:57.305Z",
+  "updated_at": "2026-08-01T10:33:57.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112078:5106423012:2026-07-28T15:50:32Z:re_review",
-      "comment_id": "5106423012",
-      "comment_version_key": "5106423012:2026-07-28T15:50:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112078#issuecomment-5106423012",
-      "comment_created_at": "2026-07-28T15:50:32Z",
-      "comment_updated_at": "2026-07-28T15:50:32Z",
-      "comment_body_sha256": "99488654a5d06ff09e0ae5f1dbb627f3b3585a78ef5a5c60421ad88ab85ce7df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112078,
-      "author": "jmayank1511",
-      "author_id": 44773097,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T07:49:18.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "nemotron-speech",
-        "head_sha": "5ac0e64374460ffe95430a2d3b10015a92372eb1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112078:5053323839:2026-08-01T07:45:43Z:clawsweeper_auto_repair",
       "comment_id": "5053323839",
@@ -32678,6 +32631,39 @@
         "kind": "pull_request",
         "branch": "ak/angry-kapitsa-821dd4",
         "head_sha": "69fc862c49dfbe8ff35bc24fbead37522029e366",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117323:5150892560:2026-08-01T10:33:19Z:clawsweeper_needs_human",
+      "comment_id": "5150892560",
+      "comment_version_key": "5150892560:2026-08-01T10:33:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117323#issuecomment-5150892560",
+      "comment_created_at": "2026-08-01T09:47:30Z",
+      "comment_updated_at": "2026-08-01T10:33:19Z",
+      "comment_body_sha256": "327f71d90a4e4b5e0d6c239123ecdaf8fe2531a912e1c8ad7705f60fb89e6863",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The default command now relies on a derived provider-discovery scope; any supported authentication source omitted from that scope could hide models that existing users previously saw. (sha=f8eba214f351a99515882abde0aca1189f338e07)",
+      "expected_head_sha": "f8eba214f351a99515882abde0aca1189f338e07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:33:57.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/models-list-scoped-catalog",
+        "head_sha": "f8eba214f351a99515882abde0aca1189f338e07",
         "cluster_id": null,
         "job_path": null
       }
