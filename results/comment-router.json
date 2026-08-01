@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:20:01.069Z",
+  "updated_at": "2026-08-01T16:20:03.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117394:5151716902:2026-08-01T13:53:28Z:re_review",
-      "comment_id": "5151716902",
-      "comment_version_key": "5151716902:2026-08-01T13:53:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117394#issuecomment-5151716902",
-      "comment_created_at": "2026-08-01T13:53:28Z",
-      "comment_updated_at": "2026-08-01T13:53:28Z",
-      "comment_body_sha256": "946cf92d5d66ffde86dbbd022040dd105c1ac5752b8216194decb1f2f1e7a37f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117394,
-      "author": "Lucenx9",
-      "author_id": 185146821,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T13:53:58.209Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-skill-scanner-exec-aliases",
-        "head_sha": "6e54499f61e2ded6e15db36a8dc8824ddefd61e7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1071:5135267678:2026-08-01T13:53:33Z:clawsweeper_auto_repair",
       "comment_id": "5135267678",
@@ -32339,6 +32292,39 @@
         "kind": "pull_request",
         "branch": "octo/20260729-provider-add-recvqbA32usNcb",
         "head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:59:5118062986:2026-08-01T16:19:26Z:clawsweeper_needs_human",
+      "comment_id": "5118062986",
+      "comment_version_key": "5118062986:2026-08-01T16:19:26Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/59#issuecomment-5118062986",
+      "comment_created_at": "2026-07-29T12:58:23Z",
+      "comment_updated_at": "2026-08-01T16:19:26Z",
+      "comment_body_sha256": "18b77dcdf5f6f1bcf72fc047ad4b3d12ca599f33fff76b5d2135b2616e28ffc3",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 59,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate changed verified-secret semantics** - TruffleHog v3.96.0 changes detectors and verification behavior while this workflow uses --only-verified to determine whether a pull reques...; Review finding: [medium] Validate changed verified-secret semantics — .github/workflows/secret-scan.yml:52 (sha=a9be40be753371bdc142ce660ddc8596b1c56ff8)",
+      "expected_head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:20:03.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
         "cluster_id": null,
         "job_path": null
       }
