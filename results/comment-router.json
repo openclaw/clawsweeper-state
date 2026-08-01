@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:16:22.541Z",
+  "updated_at": "2026-08-01T03:17:39.568Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:242:5092848987:2026-07-31T22:38:08Z:clawsweeper_auto_repair",
-      "comment_id": "5092848987",
-      "comment_version_key": "5092848987:2026-07-31T22:38:08Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/242#issuecomment-5092848987",
-      "comment_created_at": "2026-07-27T14:50:09Z",
-      "comment_updated_at": "2026-07-31T22:38:08Z",
-      "comment_body_sha256": "11647fa609d528801d8d5783916b74114242504b0d3f19e68853fa98e0a7991b",
-      "repo": "openclaw/mcporter",
-      "issue_number": 242,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6167a701bcc4836f3e77bc45d386d623f54b9fb1)",
-      "expected_head_sha": "6167a701bcc4836f3e77bc45d386d623f54b9fb1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:42:55.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcporter-audit-2291",
-        "head_sha": "6167a701bcc4836f3e77bc45d386d623f54b9fb1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/mcporter:242:5094060325:2026-07-27T16:38:28Z:re_review",
       "comment_id": "5094060325",
@@ -33031,6 +32998,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117152:5148936030:2026-08-01T02:55:56Z:clawsweeper_needs_human",
+      "comment_id": "5148936030",
+      "comment_version_key": "5148936030:2026-08-01T02:55:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117152#issuecomment-5148936030",
+      "comment_created_at": "2026-08-01T01:50:21Z",
+      "comment_updated_at": "2026-08-01T02:55:56Z",
+      "comment_body_sha256": "14af1f0d23d2401ef20614fc07c8fe23503da3785bf30ef1350efb6cd16ae176",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The branch changes an externally consumed, generated Claude MCP server configuration by adding a 3,610,000 ms timeout; verify the exact current Claude CLI behavior in a current-head r... (sha=43da850d08bc61025b2c6cad65ff6caff5b379d7)",
+      "expected_head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:17:39.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/116554-claude-ask-user",
+        "head_sha": "43da850d08bc61025b2c6cad65ff6caff5b379d7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
