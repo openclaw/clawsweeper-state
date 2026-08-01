@@ -2,53 +2,6 @@
   "updated_at": "2026-08-01T08:06:44.928Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:113171:5150011773:2026-08-01T05:35:42Z:re_review",
-      "comment_id": "5150011773",
-      "comment_version_key": "5150011773:2026-08-01T05:35:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113171#issuecomment-5150011773",
-      "comment_created_at": "2026-08-01T05:35:42Z",
-      "comment_updated_at": "2026-08-01T05:35:42Z",
-      "comment_body_sha256": "df258fa8e6b968643933687ac7ee6bd3ae32affa01c2591d7b63966ab6691f19",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113171,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:36:21.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/session-catalog-pressure-clean-20260724",
-        "head_sha": "9302c574417cb6a9ea2147b131f05291aee926f2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117222:5149935434:2026-08-01T05:36:58Z:clawsweeper_needs_human",
       "comment_id": "5149935434",
       "comment_version_key": "5149935434:2026-08-01T05:36:58Z",
@@ -32172,6 +32125,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/nemoclaw-fa96c91",
         "head_sha": "22b1f259703c1f468e8a50f278b6fcbcae3eed37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:944:5118719368:2026-08-01T08:00:37Z:clawsweeper_needs_human",
+      "comment_id": "5118719368",
+      "comment_version_key": "5118719368:2026-08-01T08:00:37Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/944#issuecomment-5118719368",
+      "comment_created_at": "2026-07-29T13:55:52Z",
+      "comment_updated_at": "2026-08-01T08:00:37Z",
+      "comment_body_sha256": "527ad802c25a4847ea7fab0fafe9dd453646036cf21f57892e4a56a3cd152dbd",
+      "repo": "openclaw/gogcli",
+      "issue_number": 944,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing drafts already corrupted by the released behavior retain their stored reply headers because the patch cannot safely distinguish them from legitimate reply context; recovery r... (sha=c9836084562a837374c7b005af0f5fdb774fddfc)",
+      "expected_head_sha": "c9836084562a837374c7b005af0f5fdb774fddfc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:06:44.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/draft-update-self-reference",
+        "head_sha": "c9836084562a837374c7b005af0f5fdb774fddfc",
         "cluster_id": null,
         "job_path": null
       }
