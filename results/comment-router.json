@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T18:31:04.629Z",
+  "updated_at": "2026-08-01T18:30:44.158Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5014820011:2026-07-19T07:12:03Z:re_review",
@@ -32613,37 +32613,51 @@
       ]
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117550:5152802359:2026-08-01T18:30:24Z:clawsweeper_auto_repair",
-      "comment_id": "5152802359",
-      "comment_version_key": "5152802359:2026-08-01T18:30:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117550#issuecomment-5152802359",
-      "comment_created_at": "2026-08-01T18:30:24Z",
-      "comment_updated_at": "2026-08-01T18:30:24Z",
-      "comment_body_sha256": "3ea832f7367d56e4c2586633c94dbd0affdc48d8f6d5c216291ae5329962acb1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "idempotency_key": "comment-router:steipete/CodexBar:2414:5152800672:2026-08-01T18:30:02Z:re_review",
+      "comment_id": "5152800672",
+      "comment_version_key": "5152800672:2026-08-01T18:30:02Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2414#issuecomment-5152800672",
+      "comment_created_at": "2026-08-01T18:30:02Z",
+      "comment_updated_at": "2026-08-01T18:30:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2414,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=500f6a32581f7409f82c78a6b161797538d34b4e)",
-      "expected_head_sha": "500f6a32581f7409f82c78a6b161797538d34b4e",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:31:04.629Z",
+      "status": "executed",
+      "processed_at": "2026-08-01T18:30:40.977Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/native-picker-auth-profile",
-        "head_sha": "500f6a32581f7409f82c78a6b161797538d34b4e",
+        "branch": "fix/claude-connection-loss-2403",
+        "head_sha": "edc06f52e377ddad23287c15fde2edc0b74b5334",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
