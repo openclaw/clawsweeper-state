@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:16:07.919Z",
+  "updated_at": "2026-08-01T19:16:39.720Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115286:5151762064:2026-08-01T14:04:28Z:re_review",
-      "comment_id": "5151762064",
-      "comment_version_key": "5151762064:2026-08-01T14:04:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5151762064",
-      "comment_created_at": "2026-08-01T14:04:28Z",
-      "comment_updated_at": "2026-08-01T14:04:28Z",
-      "comment_body_sha256": "927766b778611f21ca15fe643eba7696b73e1a372b9850f1ec604383305bafb2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115286,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:39:39.679Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117394:5151764191:2026-08-01T14:05:02Z:re_review",
       "comment_id": "5151764191",
@@ -33005,6 +32978,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:189:5094936150:2026-08-01T19:15:10Z:clawsweeper_needs_human",
+      "comment_id": "5094936150",
+      "comment_version_key": "5094936150:2026-08-01T19:15:10Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/189#issuecomment-5094936150",
+      "comment_created_at": "2026-07-27T18:00:46Z",
+      "comment_updated_at": "2026-08-01T19:15:10Z",
+      "comment_body_sha256": "8188ea784b4223c15459d02b7d44fcc4a6803b9ca0918e76cac58529a32b567f",
+      "repo": "steipete/poltergeist",
+      "issue_number": 189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Chalk 6 is a semver-major direct production dependency. Although Poltergeist’s Node.js 24 minimum satisfies its engine requirement and CI is green, a maintainer should explicitly acce... (sha=a691f5e4b4c592e0f9c0b645384acb5e7f1ebec0)",
+      "expected_head_sha": "a691f5e4b4c592e0f9c0b645384acb5e7f1ebec0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T19:16:39.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/chalk-6.0.0",
+        "head_sha": "a691f5e4b4c592e0f9c0b645384acb5e7f1ebec0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
