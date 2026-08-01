@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:07:28.916Z",
+  "updated_at": "2026-08-01T03:07:43.136Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112784:5128509934:2026-07-31T22:26:45Z:clawsweeper_needs_human",
-      "comment_id": "5128509934",
-      "comment_version_key": "5128509934:2026-07-31T22:26:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112784#issuecomment-5128509934",
-      "comment_created_at": "2026-07-30T08:35:44Z",
-      "comment_updated_at": "2026-07-31T22:26:45Z",
-      "comment_body_sha256": "e86eeb03910c7d65ded019daf00c5432a2b6713f6e2c903259a3a3285462a9e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112784,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports tests and hosted CI, but no redacted after-fix output shows the maintainer-dispatched protected workflow refreshing a real eligi...; Review finding: [medium] Authorize the new dependency graph — packages/localization-core/package.json:38 - [medium] Review the branch-write trust boundary — .github/workflows/loca... (sha=9cedd18d03d4c62cf8a5f6ab5602cf915e5f7bb7)",
-      "expected_head_sha": "9cedd18d03d4c62cf8a5f6ab5602cf915e5f7bb7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:35:40.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/localization-authoring-exemplar",
-        "head_sha": "9cedd18d03d4c62cf8a5f6ab5602cf915e5f7bb7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116314:5128626521:2026-07-31T22:24:25Z:clawsweeper_auto_repair",
       "comment_id": "5128626521",
@@ -32966,6 +32933,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/repobar:97:5117914763:2026-08-01T03:03:38Z:clawsweeper_needs_human",
+      "comment_id": "5117914763",
+      "comment_version_key": "5117914763:2026-08-01T03:03:38Z",
+      "comment_url": "https://github.com/steipete/RepoBar/pull/97#issuecomment-5117914763",
+      "comment_created_at": "2026-07-29T12:44:55Z",
+      "comment_updated_at": "2026-08-01T03:03:38Z",
+      "comment_body_sha256": "9feba677fecec0ada1e4a0d9bbb94b4ba973872acbef394f9399b24b533386ad",
+      "repo": "steipete/repobar",
+      "issue_number": 97,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The available GitHub Actions checks validate the macOS package path, not the registered iOS Xcode test target; an eligible iOS Xcode runner should execute that target before merge. (sha=c21494877d1ba4ab64c8645db2eb6d2fbda246df)",
+      "expected_head_sha": "c21494877d1ba4ab64c8645db2eb6d2fbda246df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:07:43.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-repo-url-malformed-names",
+        "head_sha": "c21494877d1ba4ab64c8645db2eb6d2fbda246df",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
