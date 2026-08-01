@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:56:35.446Z",
+  "updated_at": "2026-08-01T20:56:38.297Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115968:5119940403:2026-08-01T19:06:20Z:clawsweeper_auto_repair",
-      "comment_id": "5119940403",
-      "comment_version_key": "5119940403:2026-08-01T19:06:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115968#issuecomment-5119940403",
-      "comment_created_at": "2026-07-29T15:26:50Z",
-      "comment_updated_at": "2026-08-01T19:06:20Z",
-      "comment_body_sha256": "4feb746c6c737c135dee918c30182f7795567a2388842304fea63068fe9ea68f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115968,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce0134e914ba567c41131b652a8251b3bf8ecc26)",
-      "expected_head_sha": "ce0134e914ba567c41131b652a8251b3bf8ecc26",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:07:46.257Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-compaction-per-candidate-timeout-115546",
-        "head_sha": "ce0134e914ba567c41131b652a8251b3bf8ecc26",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115912:5118483730:2026-08-01T19:06:43Z:clawsweeper_auto_repair",
       "comment_id": "5118483730",
@@ -32049,6 +32016,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117279:5153400357:2026-08-01T20:55:57Z:re_review",
+      "comment_id": "5153400357",
+      "comment_version_key": "5153400357:2026-08-01T20:55:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117279#issuecomment-5153400357",
+      "comment_created_at": "2026-08-01T20:55:57Z",
+      "comment_updated_at": "2026-08-01T20:55:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117279,
+      "author": "jacobtomlinson",
+      "author_id": 1610850,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T20:56:36.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-capabilities-composer-focus",
+        "head_sha": "fb1d8c96821a148c340d6cc7e30d27555e510e63",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
