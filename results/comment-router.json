@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:56:18.236Z",
+  "updated_at": "2026-08-01T08:56:20.443Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117215:5149872280:2026-08-01T06:13:30Z:clawsweeper_needs_human",
-      "comment_id": "5149872280",
-      "comment_version_key": "5149872280:2026-08-01T06:13:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117215#issuecomment-5149872280",
-      "comment_created_at": "2026-08-01T04:52:53Z",
-      "comment_updated_at": "2026-08-01T06:13:30Z",
-      "comment_body_sha256": "29bf0777cb944a1d2d7566f6d1da9d69a06e10d74f16359dce168570ed20ab9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117215,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the stalled-persistence failure contract: once the bounded queue overflows, the relay emits one terminal error, rejects later transcript finals, and clos... (sha=d6f6bcf2916632c477ec83de2b0c936c397d803b)",
-      "expected_head_sha": "d6f6bcf2916632c477ec83de2b0c936c397d803b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:19:25.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-transcript-relay-bound",
-        "head_sha": "d6f6bcf2916632c477ec83de2b0c936c397d803b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117221:5149916290:2026-08-01T05:42:33Z:clawsweeper_auto_repair",
       "comment_id": "5149916290",
@@ -32490,6 +32457,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T08:56:18.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115175:5103997325:2026-08-01T08:55:47Z:clawsweeper_needs_human",
+      "comment_id": "5103997325",
+      "comment_version_key": "5103997325:2026-08-01T08:55:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115175#issuecomment-5103997325",
+      "comment_created_at": "2026-07-28T12:13:56Z",
+      "comment_updated_at": "2026-08-01T08:55:47Z",
+      "comment_body_sha256": "e01db29f03a7caba79866155c27dfe47ce8a6cf148123df80fe47dd9f7757696",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge, and current main changed the same terminal controller and stream processor to protect terminal-output recovery; resolving the conflict by restoring the o... (sha=9e06b79700b0ba327e73221df2212420e7c4b838)",
+      "expected_head_sha": "9e06b79700b0ba327e73221df2212420e7c4b838",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:56:20.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-openai-failed-response-usage",
+        "head_sha": "9e06b79700b0ba327e73221df2212420e7c4b838",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
