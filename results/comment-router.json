@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T04:13:16.484Z",
+  "updated_at": "2026-08-01T04:13:27.130Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:483:5126811552:2026-07-31T23:34:17Z:clawsweeper_needs_human",
-      "comment_id": "5126811552",
-      "comment_version_key": "5126811552:2026-07-31T23:34:17Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/483#issuecomment-5126811552",
-      "comment_created_at": "2026-07-30T05:06:48Z",
-      "comment_updated_at": "2026-07-31T23:34:17Z",
-      "comment_body_sha256": "646d547ca5728be3466a4dfc7504f81ec8d270e42f2ab0c246734c270ba39a61",
-      "repo": "openclaw/acpx",
-      "issue_number": 483,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind containment to the final filesystem operation (P1)** - resolvePathWithinRoot validates this pathname, but readTextFile later passes it to fs.readFile and writeTextFile later passes it through fs.mkdir and f...; Review finding: [P1] Bind containment to the final filesystem operation — src/filesystem.ts:254-258 - [high] Containment check races final filesystem access — src/filesystem.ts:254 (sha=d54d4dc53a24aa0247b19f792909969b47acfee3)",
-      "expected_head_sha": "d54d4dc53a24aa0247b19f792909969b47acfee3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:42:51.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/symlink-sandbox-escape",
-        "head_sha": "d54d4dc53a24aa0247b19f792909969b47acfee3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/acpx:483:5126903005:2026-07-30T05:16:52Z:re_review",
       "comment_id": "5126903005",
@@ -32992,6 +32959,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T04:13:16.484Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113852:5080652504:2026-08-01T04:09:32Z:clawsweeper_auto_repair",
+      "comment_id": "5080652504",
+      "comment_version_key": "5080652504:2026-08-01T04:09:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113852#issuecomment-5080652504",
+      "comment_created_at": "2026-07-25T21:28:27Z",
+      "comment_updated_at": "2026-08-01T04:09:32Z",
+      "comment_body_sha256": "3ddc343afb6abdc0503e6d1d59144d789bdc0cd5db16d9a384d7d78eb21c3dd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=10ec5da53b00bf8b862c1ad6ef223e6d52755a4b)",
+      "expected_head_sha": "10ec5da53b00bf8b862c1ad6ef223e6d52755a4b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T04:13:27.129Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "nepho/qmd-candidate-limit",
+        "head_sha": "10ec5da53b00bf8b862c1ad6ef223e6d52755a4b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
