@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:05:46.182Z",
+  "updated_at": "2026-08-01T11:06:04.080Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117293:5150579278:2026-08-01T08:16:00Z:clawsweeper_needs_human",
-      "comment_id": "5150579278",
-      "comment_version_key": "5150579278:2026-08-01T08:16:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117293#issuecomment-5150579278",
-      "comment_created_at": "2026-08-01T08:16:00Z",
-      "comment_updated_at": "2026-08-01T08:16:00Z",
-      "comment_body_sha256": "1e1bd6251237bb153189d4550b8720c3f7e1262999a5264409e9bf8d921011be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117293,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a large change to persisted transcript checkpoints and dedupe hashes; while the focused cases are strong, landing should wait for the exact merge head to retain the reported s... (sha=48b4b1c6eaa9f09db1065457ea6e1528235483e9)",
-      "expected_head_sha": "48b4b1c6eaa9f09db1065457ea6e1528235483e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:16:39.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-memory-session-ingestion-0801-2d45",
-        "head_sha": "48b4b1c6eaa9f09db1065457ea6e1528235483e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117245:5150163006:2026-08-01T08:16:09Z:clawsweeper_auto_repair",
       "comment_id": "5150163006",
@@ -32190,6 +32157,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117334:5150931876:2026-08-01T11:05:19Z:clawsweeper_needs_human",
+      "comment_id": "5150931876",
+      "comment_version_key": "5150931876:2026-08-01T11:05:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117334#issuecomment-5150931876",
+      "comment_created_at": "2026-08-01T09:59:48Z",
+      "comment_updated_at": "2026-08-01T11:05:19Z",
+      "comment_body_sha256": "b568abc08d14597d010df6e74c0e8538353a531382841fd6b2fc3e169d1de7e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR intentionally removes legacy live-file, marker, and filename-to-identity fallbacks. Maintainers should confirm that the supported upgrade contract is the typed SQLite active co... (sha=33cc8adcf1e8c23e74f97b971341899d1d200e3f)",
+      "expected_head_sha": "33cc8adcf1e8c23e74f97b971341899d1d200e3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:06:04.080Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-sqlite-transcript-ingestion-0801-2d45",
+        "head_sha": "33cc8adcf1e8c23e74f97b971341899d1d200e3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
