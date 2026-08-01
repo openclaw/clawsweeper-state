@@ -67,20 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the active-memory plugin’s existing default `escalate` behavior for Chinese recall requests. In `extensions/active-memory/escalation.ts`, add a deliberately bounded Chinese recall-intent pattern set that captures the reported earlier-conversation/earlier-decision requests without matching ordinary reminders or unrelated uses of 记得. Add table-driven regression coverage in `extensions/active-memory/escalation.test.ts`, including positive Chinese recall cases and negative non-recall Chinese cases. Add or extend one `extensions/active-memory/index.test.ts` boundary test proving an eligible Chinese prompt with no strong lane-one hit reaches the deep-recall model path. Do not add config fields, custom user regexes, an LLM intent fallback, runtime compatibility shims, or new logging as part of this focused repair. Do not edit `CHANGELOG.md`; summarize user-visible behavior in the PR body instead. Stop and return to triage if the implementation requires a language-policy decision broader than Chinese support.
+Repair the existing Active Memory `escalate` behavior for Chinese/CJK recall requests. In `extensions/active-memory/escalation.ts`, extend the canonical recall-intent matcher with narrowly recall-specific Chinese/CJK phrases rather than adding config, a fallback model call, or per-channel logic. Add positive and negative cases in `extensions/active-memory/escalation.test.ts` proving that a Chinese recall question escalates when `hasStrongLaneOneHit` is false, while ordinary non-recall Chinese text does not; preserve `always`, `off`, and strong-lane suppression semantics. Do not change Active Memory config/defaults, SQLite state, channel adapters, or `CHANGELOG.md`. Establish the focused failing regression before implementing, then include concise after-fix behavior evidence in the PR body.
 
 Likely files:
 
 - extensions/active-memory/escalation.ts
 - extensions/active-memory/escalation.test.ts
-- extensions/active-memory/index.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/active-memory/escalation.test.ts
-- node scripts/run-vitest.mjs extensions/active-memory/index.test.ts
 - git diff --check
-- pnpm format extensions/active-memory/escalation.ts extensions/active-memory/escalation.test.ts extensions/active-memory/index.test.ts
 
 ## Operator Prompt
 
