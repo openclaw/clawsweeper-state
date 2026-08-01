@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T12:59:56.367Z",
+  "updated_at": "2026-08-01T13:00:00.788Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:95384:5018479281:2026-07-20T03:24:36Z:re_review",
-      "comment_id": "5018479281",
-      "comment_version_key": "5018479281:2026-07-20T03:24:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95384#issuecomment-5018479281",
-      "comment_created_at": "2026-07-20T03:24:36Z",
-      "comment_updated_at": "2026-07-20T03:24:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95384,
-      "author": "mikasa0818",
-      "author_id": 244515412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T10:34:34.056Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:95384:5019127183:2026-07-20T05:39:57Z:re_review",
       "comment_id": "5019127183",
@@ -32376,6 +32349,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T12:59:56.367Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89553:4605115465:2026-08-01T12:59:01Z:clawsweeper_needs_human",
+      "comment_id": "4605115465",
+      "comment_version_key": "4605115465:2026-08-01T12:59:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89553#issuecomment-4605115465",
+      "comment_created_at": "2026-06-02T17:25:35Z",
+      "comment_updated_at": "2026-08-01T12:59:01Z",
+      "comment_body_sha256": "07e2133a7f427bcd495b02ce8efcf8eaadd9d16f92ad5770807f2eeade9cea95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused unit-test output is reported, but there is no redacted after-fix Docker transcript, inspection output, or runtime log showing a configu...; Review finding: [P1] Audit configured capability grants — src/config/zod-schema.agent-runtime.ts:183 - [P2] Use canonical per-agent configuration paths — src/config/schema.labels.... (sha=b64101548ff4a481f2cb581d13087f4b54c3b3c1)",
+      "expected_head_sha": "b64101548ff4a481f2cb581d13087f4b54c3b3c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:00:00.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sandbox-docker-cap-add",
+        "head_sha": "b64101548ff4a481f2cb581d13087f4b54c3b3c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
