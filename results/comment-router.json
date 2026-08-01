@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:55:49.447Z",
+  "updated_at": "2026-08-01T07:55:58.731Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:79:5117972158:2026-08-01T05:08:55Z:clawsweeper_needs_human",
-      "comment_id": "5117972158",
-      "comment_version_key": "5117972158:2026-08-01T05:08:55Z",
-      "comment_url": "https://github.com/openclaw/notcrawl/pull/79#issuecomment-5117972158",
-      "comment_created_at": "2026-07-29T12:50:00Z",
-      "comment_updated_at": "2026-08-01T05:08:55Z",
-      "comment_body_sha256": "eb5417100f86a9cf8693d07fb1d60eb8e1a9f0858cb56e422a307c8fa1bc8037",
-      "repo": "openclaw/notcrawl",
-      "issue_number": 79,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Pin the action to an immutable revision** - The @v3.96.0 reference remains mutable, allowing a later upstream tag move to alter security-workflow code without a repository commit or rev...; Review finding: [medium] Pin the action to an immutable revision — .github/workflows/secret-scan.yml:52 (sha=92ffea9b167690a1d35a58723d80807c8d7013ed)",
-      "expected_head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:09:41.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:132:5135268702:2026-08-01T05:08:59Z:clawsweeper_auto_repair",
       "comment_id": "5135268702",
@@ -32465,6 +32432,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114538:5090813437:2026-08-01T07:51:28Z:clawsweeper_needs_human",
+      "comment_id": "5090813437",
+      "comment_version_key": "5090813437:2026-08-01T07:51:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114538#issuecomment-5090813437",
+      "comment_created_at": "2026-07-27T11:37:56Z",
+      "comment_updated_at": "2026-08-01T07:51:28Z",
+      "comment_body_sha256": "ba91428cd008e41063bbf4d2216df5a9213eee79cedae2d99324e021ce2cf14e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this head as dirty. The three files that implement the repair were changed on current main after the branch base, so a mechanical conflict resolution could accidentally... (sha=498dbb32144dec5e81ae0ec74cff126a926c3f41)",
+      "expected_head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:55:58.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-message-action-workspace-media",
+        "head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
