@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T21:15:14.374Z",
+  "updated_at": "2026-08-01T21:15:30.372Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4620110665:2026-06-04T07:49:16Z:re_review",
-      "comment_id": "4620110665",
-      "comment_version_key": "4620110665:2026-06-04T07:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4620110665",
-      "comment_created_at": "2026-06-04T07:49:16Z",
-      "comment_updated_at": "2026-06-04T07:49:16Z",
-      "comment_body_sha256": "551b972cab2f85dde706a8f85fe6db80b918e69065dab534913d5243c500f3a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:20:57.749Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4621395951:2026-06-04T10:43:55Z:re_review",
       "comment_id": "4621395951",
@@ -32062,6 +32035,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117021:5146811455:2026-08-01T21:15:00Z:clawsweeper_needs_human",
+      "comment_id": "5146811455",
+      "comment_version_key": "5146811455:2026-08-01T21:15:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117021#issuecomment-5146811455",
+      "comment_created_at": "2026-07-31T19:43:06Z",
+      "comment_updated_at": "2026-08-01T21:15:00Z",
+      "comment_body_sha256": "b316553da6d6996cf4d88401fc6d22ffbe3f45156b2e501c570387ba12332496",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117021,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and CI, but the supplied review context contains no inspectable redacted after-fix Telegram transcript, termi... (sha=3575d02d60897026046d3d369cc5b9b939836233)",
+      "expected_head_sha": "3575d02d60897026046d3d369cc5b9b939836233",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T21:15:30.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-wave3-telegram-inbound",
+        "head_sha": "3575d02d60897026046d3d369cc5b9b939836233",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
