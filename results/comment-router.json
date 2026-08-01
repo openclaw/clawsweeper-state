@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:23:20.639Z",
+  "updated_at": "2026-08-01T11:23:23.749Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116793:5150641628:2026-08-01T08:34:53Z:re_review",
-      "comment_id": "5150641628",
-      "comment_version_key": "5150641628:2026-08-01T08:34:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5150641628",
-      "comment_created_at": "2026-08-01T08:34:53Z",
-      "comment_updated_at": "2026-08-01T08:34:53Z",
-      "comment_body_sha256": "dbd78f11d06721132a87eafe75c2178f7175136ae12e3eecf50e6f1fd200bea0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116793,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:35:31.574Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-2-attribution",
-        "head_sha": "35a75f6400ffe9232085300f70066ea943de7c38",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116794:5150641681:2026-08-01T08:34:54Z:re_review",
       "comment_id": "5150641681",
@@ -32092,6 +32045,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T11:23:20.638Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117356:5151204517:2026-08-01T11:22:50Z:clawsweeper_needs_human",
+      "comment_id": "5151204517",
+      "comment_version_key": "5151204517:2026-08-01T11:22:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117356#issuecomment-5151204517",
+      "comment_created_at": "2026-08-01T11:22:50Z",
+      "comment_updated_at": "2026-08-01T11:22:50Z",
+      "comment_body_sha256": "7770c0f26b6ddfbe1fe07cf0393798dd1db56b2ce1408cd9f05b0b57d5200b38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This intentionally changes an existing terminal outcome: configured fallback models will now run after three replay-safe unclassified silent failures instead of the error being return... (sha=51c8ceb4d2c4c3e57704b58ee7657f5d93e7e088)",
+      "expected_head_sha": "51c8ceb4d2c4c3e57704b58ee7657f5d93e7e088",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:23:23.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/assistant-silent-fallback-after-retries",
+        "head_sha": "51c8ceb4d2c4c3e57704b58ee7657f5d93e7e088",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
