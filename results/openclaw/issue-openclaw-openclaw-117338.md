@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117338"
 mode: "autonomous"
-run_id: "30695289425"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30695289425"
+run_id: "30695476126"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30695476126"
 head_sha: "1c9cb5dc6dd27321cd37daed40bc09afde400e1b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-01T10:20:30.464Z"
+published_at: "2026-08-01T10:24:58.382Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117338"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117338"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30695289425](https://github.com/openclaw/clawsweeper/actions/runs/30695289425)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30695476126](https://github.com/openclaw/clawsweeper/actions/runs/30695476126)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/117338
 
 ## Summary
 
-Latest supplied main (`aa2a5c96f69a1be639c602649d4aa2e4de8da0a8`) still has the reported default-path bug: the active-memory escalate gate recognizes English and Spanish recall patterns only, then returns before deep recall for eligible Chinese prompts. The repair is narrow and ready for a new fix PR, but this worker checkout is read-only and has no dependencies, so it cannot create the requested branch delta or run local validation.
+Current-main evidence remains sufficient: default active-memory `escalate` relies on English/Spanish-only recall intent patterns and returns before deep recall for eligible Chinese prompts. The required repair is a narrow three-file change, but this worker is restricted to a read-only checkout and cannot create or validate the requested branch.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Latest supplied main (`aa2a5c96f69a1be639c602649d4aa2e4de8da0a8`) still has the 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117338 | fix_needed | blocked | canonical | The canonical issue is a real, narrow plugin bug. Only implementation is blocked by the read-only, dependency-free worker checkout; a deterministic executor can create the fix PR. |
-| cluster:issue-openclaw-openclaw-117338 | build_fix_artifact | planned | canonical | A single new fix PR is the explicit canonical path; no contributor PR exists to repair or credit. |
+| #117338 | fix_needed | blocked | canonical | The issue is a real, narrow plugin bug. Only implementation is blocked by this worker environment; a writable executor can create the canonical fix PR. |
+| cluster:issue-openclaw-openclaw-117338 | build_fix_artifact | planned | canonical | A single new credited fix PR is the clear canonical path; no contributor PR exists to repair or replace. |
 
 ## Needs Human
 
