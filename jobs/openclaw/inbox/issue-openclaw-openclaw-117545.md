@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/117545 as a narrow NVIDIA provider-catalog fix. First validate each reported ID against NVIDIA’s current `/v1/models` listing and direct error semantics using a safe live/remote proof path; classify globally retired or removed IDs separately from account-specific entitlement failures such as Kimi K2.6. For globally unavailable IDs, add NVIDIA plugin manifest `modelCatalog.suppressions` entries with accurate reasons and replacements where known so the downloaded remote catalog cannot reintroduce them. Keep provider config, remote catalog refresh settings, and generic core behavior unchanged. Add focused regression coverage for remote-overlay planning plus the NVIDIA manifest behavior. Do not edit CHANGELOG.md; stop and request maintainer direction if the evidence requires a new catalog status API instead of existing suppression metadata.
+Repair https://github.com/openclaw/openclaw/issues/117545 as a narrow NVIDIA provider-catalog bug. First obtain safe redacted live proof against NVIDIA’s current `/v1/models` listing and direct request semantics for every reported ID; distinguish globally retired/removed IDs from account-specific entitlement failures such as Kimi K2.6. Then make the effective hosted remote-overlay path honor NVIDIA plugin-owned retirement/suppression policy for globally unavailable IDs, rather than allowing a newer downloaded same-ID row to bypass it. Prefer the existing manifest suppression and catalog-planning seams; do not add config, change generic remote-refresh settings, or add a new catalog status API unless the existing seam is demonstrably insufficient. Add focused regression coverage that injects a remote overlay with a retired NVIDIA ID and proves it cannot be advertised after effective-catalog planning. Keep the fix scoped to the NVIDIA plugin plus shared planner only as required. Do not edit CHANGELOG.md; stop for maintainer direction if current NVIDIA evidence makes the desired global policy ambiguous.
 
 Likely files:
 
+- src/model-catalog/manifest-planner.ts
+- src/model-catalog/manifest-planner.test.ts
 - extensions/nvidia/openclaw.plugin.json
 - extensions/nvidia/provider-catalog.test.ts
-- src/model-catalog/manifest-planner.test.ts
 - src/plugins/manifest-model-suppression.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/nvidia/provider-catalog.test.ts
 - node scripts/run-vitest.mjs src/model-catalog/manifest-planner.test.ts
-- node scripts/run-vitest.mjs src/model-catalog/remote-overlay.test.ts
+- node scripts/run-vitest.mjs src/plugins/manifest-model-suppression.test.ts
+- node scripts/run-vitest.mjs extensions/nvidia/provider-catalog.test.ts
 - pnpm plugin-sdk:surface:check
 
 ## Operator Prompt
