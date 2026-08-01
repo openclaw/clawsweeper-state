@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117161",
+  "mode": "autonomous",
+  "run_id": "30680449376",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30680449376",
+  "head_sha": "b07ab751813c722d45f07ef955a8b5752ebbbb19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117161.md",
+  "published_at": "2026-08-01T05:04:26.349Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_pr": null,
+  "summary": "Current main `7e78de747b8a64d52f30aee948b697bf4c528691` still contains the socket-readiness plus fixed-20-ms test race. The existing request-start capture is the narrow deterministic boundary, but this read-only checkout lacks dependencies, so implementation and focused validation must run in the writable executor.",
+  "actions": [
+    {
+      "target": "#117161",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "The defect is real and narrowly repairable, but implementation and validation are blocked only by the read-only worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117161",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "Open one narrow implementation PR from the requested ClawSweeper branch once the writable executor reproduces and validates the race."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
