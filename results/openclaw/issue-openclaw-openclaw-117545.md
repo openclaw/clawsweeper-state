@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117545"
 mode: "autonomous"
-run_id: "30716248741"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30716248741"
+run_id: "30716583623"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30716583623"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-01T20:12:46.652Z"
+result_status: "planned"
+published_at: "2026-08-01T20:45:11.275Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-117545
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30716248741](https://github.com/openclaw/clawsweeper/actions/runs/30716248741)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30716583623](https://github.com/openclaw/clawsweeper/actions/runs/30716583623)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/117545
 
 ## Summary
 
-Current main `a26df7153f8118d26b14e2c95633002ced20128d` still has the same-ID remote-overlay precedence defect, but safe implementation is blocked on the job's required authenticated NVIDIA retirement classification. The restricted, read-only worker has neither an NVIDIA credential nor installed test dependencies.
+Current main `db49a9a565f82282c880850964042fe68083421e` source-proves a narrow lifecycle-metadata loss: a same-ID refreshed row retains trusted transport fields but drops existing NVIDIA manifest deprecation status, reason, and replacement metadata. A focused planner repair needs no new NVIDIA retirement policy; live checks remain only for the two unclassified reported IDs.
 
 ## Impact
 
@@ -48,28 +48,29 @@ Current main `a26df7153f8118d26b14e2c95633002ced20128d` still has the same-ID re
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/117620 | clawsweeper/issue-openclaw-openclaw-117545 |  |
 | issue_implementation_status_comment | updated | #117545 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #117620 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117545 | keep_canonical | planned | canonical | Keep the issue open as the canonical thread while current provider evidence determines the exact globally retired IDs eligible for plugin-owned suppression. |
-| cluster:issue-openclaw-openclaw-117545 | fix_needed | blocked | needs_human | The implementation is narrow, but the exact retirement policy is a provider fact that must not be inferred from a report or stale manifest metadata. |
-| cluster:issue-openclaw-openclaw-117545 | build_fix_artifact | blocked | needs_human | Do not create an executable PR until live evidence resolves the provider-policy ambiguity. |
+| #117545 | keep_canonical | planned | canonical | Keep the issue open as the canonical thread for the focused fix PR and its validation. |
+| cluster:issue-openclaw-openclaw-117545 | fix_needed | planned | canonical | Create one narrow fix PR that preserves manifest-owned lifecycle metadata for same-ID remote overlays while retaining remote freshness for non-policy fields. |
+| cluster:issue-openclaw-openclaw-117545 | build_fix_artifact | planned | canonical | The patch scope is explicit and suitable for a new ClawSweeper fix PR. |
 
 ## Needs Human
 
-- Provide safe, redacted authenticated NVIDIA `/v1/models` output and direct completion outcomes for the reported IDs, explicitly separating globally retired models from entitlement-only failures such as Kimi K2.6. Re-run this cluster in a writable checkout with dependencies installed.
+- none
