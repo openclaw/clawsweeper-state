@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:01:30.873Z",
+  "updated_at": "2026-08-01T05:02:30.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104929:4950454390:2026-07-12T08:00:18Z:re_review",
-      "comment_id": "4950454390",
-      "comment_version_key": "4950454390:2026-07-12T08:00:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104929#issuecomment-4950454390",
-      "comment_created_at": "2026-07-12T08:00:18Z",
-      "comment_updated_at": "2026-07-12T08:00:18Z",
-      "comment_body_sha256": "68eba4b9cf0ee99f1e7134a914641af016c9d339e03fcf87f9904b768a672da5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104929,
-      "author": "snowzlmbot",
-      "author_id": 293528334,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review-pr",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T00:19:01.036Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104929:4950492867:2026-07-12T08:15:11Z:re_review",
       "comment_id": "4950492867",
@@ -33070,6 +33043,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T05:01:30.872Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112032:5079052043:2026-08-01T04:59:31Z:clawsweeper_needs_human",
+      "comment_id": "5079052043",
+      "comment_version_key": "5079052043:2026-08-01T04:59:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112032#issuecomment-5079052043",
+      "comment_created_at": "2026-07-25T15:26:51Z",
+      "comment_updated_at": "2026-08-01T04:59:31Z",
+      "comment_body_sha256": "0ea8cd2c993cf48851aa2d104f6592a00b5bf5792fe34696c4e711f095b92476",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accept the unrecoverable-legacy credential tradeoff** - A row with a refresh token but no recoverable authorization-server issuer cannot refresh after discovery; the branch correctly re...; Review finding: [medium] Accept the unrecoverable-legacy credential tradeoff — src/agents/mcp-oauth-provider.ts:136 (sha=35046f428279711a414c37b77138953a876d5b04)",
+      "expected_head_sha": "35046f428279711a414c37b77138953a876d5b04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:02:30.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-oauth-refresh-issuer",
+        "head_sha": "35046f428279711a414c37b77138953a876d5b04",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
