@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:45:54.999Z",
+  "updated_at": "2026-08-01T11:46:17.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117129:5148694149:2026-08-01T09:34:06Z:clawsweeper_needs_human",
-      "comment_id": "5148694149",
-      "comment_version_key": "5148694149:2026-08-01T09:34:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117129#issuecomment-5148694149",
-      "comment_created_at": "2026-08-01T00:51:02Z",
-      "comment_updated_at": "2026-08-01T09:34:06Z",
-      "comment_body_sha256": "aefdf107ccee47ccd7a84ae225feceec3338d250ae6ff09769c198ec2e5f2da0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with cron.webhookToken and job-record-only receivers will continue delivering webhooks but will lose the Authorization header until each exact HTTPS URL is adde... (sha=a6db7f58d12f0564ce32fa141748b696da9812fd)",
-      "expected_head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T09:34:42.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-p0-114893-webhook-auth",
-        "head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116013:5121514979:2026-08-01T09:34:12Z:clawsweeper_needs_human",
       "comment_id": "5121514979",
@@ -31889,6 +31856,39 @@
         "head_sha": "f0fed21b449c4a18b495bd2ead445ebebb93ae0d",
         "cluster_id": "automerge-openclaw-openclaw-116188",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116188.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115545:5118018616:2026-08-01T11:45:40Z:clawsweeper_needs_human",
+      "comment_id": "5118018616",
+      "comment_version_key": "5118018616:2026-08-01T11:45:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115545#issuecomment-5118018616",
+      "comment_created_at": "2026-07-29T12:54:15Z",
+      "comment_updated_at": "2026-08-01T11:45:40Z",
+      "comment_body_sha256": "06a6d22bfcb5a2322fab688cd3bcc427dc04ba8654f4ce757f564cfb02869d8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115545,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Decide the first-hop credential boundary** - The proposed contract permits credential-bearing operator headers on the initial URL chosen by the model; cross-origin redirect filtering oc...; Review finding: [high] Decide the first-hop credential boundary — src/agents/tools/web-fetch.ts:636 (sha=4752e2d713238477e775658dec7236815d2f8319)",
+      "expected_head_sha": "4752e2d713238477e775658dec7236815d2f8319",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:46:17.984Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse-merhi/web-fetch-headers",
+        "head_sha": "4752e2d713238477e775658dec7236815d2f8319",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
