@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:36:41.898Z",
+  "updated_at": "2026-08-01T14:37:11.546Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117144:5150984555:2026-08-01T10:15:38Z:fix_ci",
-      "comment_id": "5150984555",
-      "comment_version_key": "5150984555:2026-08-01T10:15:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5150984555",
-      "comment_created_at": "2026-08-01T10:15:38Z",
-      "comment_updated_at": "2026-08-01T10:15:38Z",
-      "comment_body_sha256": "093a1d4eaed037a2e0c51bdab8c5f9f1bf3213d2282e98f7139cfb0e7178d1f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117144,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "fix ci",
-      "intent": "fix_ci",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T12:37:00.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-        "head_sha": "16b90803bdaa404226234c93435c89ddc918cc46",
-        "cluster_id": "automerge-openclaw-openclaw-117144",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115286:5151002730:2026-08-01T10:21:07Z:re_review",
       "comment_id": "5151002730",
@@ -32160,6 +32113,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T14:36:41.898Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117323:5150892560:2026-08-01T14:36:33Z:clawsweeper_needs_human",
+      "comment_id": "5150892560",
+      "comment_version_key": "5150892560:2026-08-01T14:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117323#issuecomment-5150892560",
+      "comment_created_at": "2026-08-01T09:47:30Z",
+      "comment_updated_at": "2026-08-01T14:36:33Z",
+      "comment_body_sha256": "aa13e769030f83980845dd519bb7825e02733d7c95988aaf612bcd830da898e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The default output now intentionally omits live discovery for unrelated providers; operators must use --provider &lt;id> for live provider-owned discovery or --all for exhaustive cata... (sha=87cd520eb6538ad824cb7bbba92150090efbb4ba)",
+      "expected_head_sha": "87cd520eb6538ad824cb7bbba92150090efbb4ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T14:37:11.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/models-list-scoped-catalog",
+        "head_sha": "87cd520eb6538ad824cb7bbba92150090efbb4ba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
