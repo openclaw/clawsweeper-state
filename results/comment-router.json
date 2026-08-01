@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:20:22.981Z",
+  "updated_at": "2026-08-01T18:20:26.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4812691745:2026-06-26T19:15:35Z:re_review",
-      "comment_id": "4812691745",
-      "comment_version_key": "4812691745:2026-06-26T19:15:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4812691745",
-      "comment_created_at": "2026-06-26T19:15:35Z",
-      "comment_updated_at": "2026-06-26T19:15:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:26:49.067Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4880138130:2026-07-04T01:19:50Z:re_review",
       "comment_id": "4880138130",
@@ -32082,6 +32055,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T18:20:22.981Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:332:5127243495:2026-08-01T18:19:54Z:clawsweeper_needs_human",
+      "comment_id": "5127243495",
+      "comment_version_key": "5127243495:2026-08-01T18:19:54Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/332#issuecomment-5127243495",
+      "comment_created_at": "2026-07-30T06:08:10Z",
+      "comment_updated_at": "2026-08-01T18:19:54Z",
+      "comment_body_sha256": "f5dc7f0453ff5cbe9253107f4e73277888ee8ceafb5896032ba5290621c990ef",
+      "repo": "steipete/oracle",
+      "issue_number": 332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Gemini’s browser upload endpoint is external and can change its accepted-extension behavior; the whitelist should remain limited to formats supported by live evidence. (sha=4ddc53c70a81e8e06709a0ead4f527acddc0a290)",
+      "expected_head_sha": "4ddc53c70a81e8e06709a0ead4f527acddc0a290",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:20:26.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gemini-upload-mime-types",
+        "head_sha": "4ddc53c70a81e8e06709a0ead4f527acddc0a290",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
