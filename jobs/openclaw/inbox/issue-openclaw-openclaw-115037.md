@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the terminal resumed Claude CLI synthetic-placeholder path described by https://github.com/openclaw/openclaw/issues/115037. Preserve the exact `<synthetic>` plus full-text marker contract in `src/agents/cli-runner/claude-live-session.ts`, but carry a terminal synthetic-empty classification to the existing retry/fallback owner so the user prompt gets one bounded retry on the requested model before ordinary `empty_response` model fallback can advance. Do not add config, broaden placeholder matching, suppress genuine empty-response recovery, or modify `CHANGELOG.md`. Add focused regression coverage for the exact resumed terminal sequence and verify both same-model retry and normal fallback after the bounded retry is exhausted; include the prior continuation case from https://github.com/openclaw/openclaw/pull/90799 as a non-regression.
+Repair the terminal resumed Claude CLI synthetic-placeholder path for this issue. In the Claude live-session owner, preserve a typed distinction between an exact <synthetic> placeholder followed by an empty success result whose continuation grace expires and an ordinary empty CLI result. Carry that lifecycle outcome into the CLI runner so it performs one bounded recovery on the originally requested model using the existing safe session/reseed or fork mechanisms before generic model fallback may advance. Do not broaden all empty-response behavior, add configuration, weaken timeout/tool replay protections, or change unrelated provider fallback policy. Add regression coverage for: terminal exact synthetic placeholder uses requested-model recovery first; ordinary empty CLI output still follows existing fallback behavior; later same-process continuation remains delivered; and tool-bearing/unsafe activity does not replay. Do not edit CHANGELOG.md; describe the user-visible behavior and validation in the PR body.
 
 Likely files:
 
 - src/agents/cli-runner/claude-live-session.ts
-- src/agents/cli-runner/claude-live-session.background-tasks.test.ts
 - src/agents/cli-runner.ts
-- src/agents/model-fallback-attempt.ts
-- src/agents/model-fallback.test.ts
+- src/agents/cli-output.ts
+- src/agents/cli-runner/claude-live-session.background-tasks.test.ts
+- src/agents/cli-runner.reliability.test.ts
+- src/agents/cli-runner.context-engine.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/cli-runner/claude-live-session.background-tasks.test.ts src/agents/cli-runner.reliability.test.ts
-- node scripts/run-vitest.mjs src/agents/model-fallback.test.ts
+- node scripts/run-vitest.mjs src/agents/cli-runner.context-engine.test.ts
 - git diff --check
 
 ## Operator Prompt
