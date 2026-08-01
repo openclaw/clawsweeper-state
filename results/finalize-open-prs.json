@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T03:41:26.262Z",
+  "generated_at": "2026-08-01T04:02:10.557Z",
   "count": 2,
   "summary": {
     "open_prs": 2,
@@ -34,7 +34,7 @@
       "head_sha": "ab01cddcd4b0fe47d501175cdf9440401de68258",
       "cluster_id": "issue-openclaw-openclaw-98276",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-01T03:38:02Z",
+      "updated_at": "2026-08-01T03:52:46Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -83,25 +83,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "30676738440",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30676738440",
-        "cluster_id": "issue-openclaw-openclaw-98276",
-        "published_at": "2026-08-01T01:47:34.616Z",
-        "workflow_conclusion": "success",
+        "run_id": "30681775106",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30681775106",
+        "cluster_id": "automerge-openclaw-openclaw-117144",
+        "published_at": "2026-08-01T04:01:47.521Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#117144",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(ci): package runtime resources in dist artifact",
-          "idempotency_key": null,
-          "reason": "checks are not clean: check-dependencies: FAILURE, openclaw/ci-gate: FAILURE",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#117144",
+          "candidate_fix": "#117144",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
