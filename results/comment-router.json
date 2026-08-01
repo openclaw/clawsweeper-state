@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:11:55.124Z",
+  "updated_at": "2026-08-01T14:12:12.846Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:71:5140467821:2026-08-01T11:53:47Z:clawsweeper_needs_human",
-      "comment_id": "5140467821",
-      "comment_version_key": "5140467821:2026-08-01T11:53:47Z",
-      "comment_url": "https://github.com/openclaw/crawlkit/pull/71#issuecomment-5140467821",
-      "comment_created_at": "2026-07-31T07:31:15Z",
-      "comment_updated_at": "2026-08-01T11:53:47Z",
-      "comment_body_sha256": "851f4d4af11c12a81243faaf250000a4ae4a57ffdf9dc14420b953a0f5dd7c07",
-      "repo": "openclaw/crawlkit",
-      "issue_number": 71,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - TruffleHog v3.96.0 adds and tightens detectors, so future changes that passed under v3.95.9 could fail the merge-blocking verified-secret scan. The successful PR checks validate this... (sha=fbc4d795a0d266865cec802f630d269b3f62ac24)",
-      "expected_head_sha": "fbc4d795a0d266865cec802f630d269b3f62ac24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:54:26.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "fbc4d795a0d266865cec802f630d269b3f62ac24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104394:4945012290:2026-08-01T11:53:57Z:clawsweeper_auto_repair",
       "comment_id": "4945012290",
@@ -32040,6 +32007,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115286:5106969358:2026-08-01T14:11:26Z:clawsweeper_needs_human",
+      "comment_id": "5106969358",
+      "comment_version_key": "5106969358:2026-08-01T14:11:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5106969358",
+      "comment_created_at": "2026-07-28T16:35:24Z",
+      "comment_updated_at": "2026-08-01T14:11:26Z",
+      "comment_body_sha256": "37586e3358ad636d67a0ed7e61f48d0f7b15a9850f1c6171c399941e2d4794c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes redacted current-head resolver output, but not after-fix Telegram delivery evidence for the affected sender-policy pat...; Review finding: [P1] Forward Telegram requester identity to the media policy resolver — extensions/telegram/src/bot-message-dispatch.ts:369-375 - [high] Sender-scoped read denial... (sha=e8dc3c989fd28f8263a7a42c7b5a5ac8761ce95f)",
+      "expected_head_sha": "e8dc3c989fd28f8263a7a42c7b5a5ac8761ce95f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T14:12:12.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-defaults-mediaLocalRoots",
+        "head_sha": "e8dc3c989fd28f8263a7a42c7b5a5ac8761ce95f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
