@@ -1,80 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:54:51.162Z",
+  "updated_at": "2026-08-01T08:55:08.715Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113863:5080738726:2026-08-01T05:34:58Z:autoclose",
-      "comment_id": "5080738726",
-      "comment_version_key": "5080738726:2026-08-01T05:34:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113863#issuecomment-5080738726",
-      "comment_created_at": "2026-07-25T21:56:38Z",
-      "comment_updated_at": "2026-08-01T05:34:58Z",
-      "comment_body_sha256": "a37fe0a896b9210dba6f651cc4bd0abe6f67a584b85d0129285a0c58e3e5b671",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=bdf3d1073eecca65cb459d75d0071b597781d10d)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=bdf3d1073eecca65cb459d75d0071b597781d10d)",
-      "expected_head_sha": "bdf3d1073eecca65cb459d75d0071b597781d10d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:19:25.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/95515-schemaless-groupallowfrom",
-        "head_sha": "bdf3d1073eecca65cb459d75d0071b597781d10d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113920:5081236514:2026-08-01T05:56:30Z:clawsweeper_needs_human",
-      "comment_id": "5081236514",
-      "comment_version_key": "5081236514:2026-08-01T05:56:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113920#issuecomment-5081236514",
-      "comment_created_at": "2026-07-26T00:37:53Z",
-      "comment_updated_at": "2026-08-01T05:56:30Z",
-      "comment_body_sha256": "140b4d8c4576f64e3b329fd903a4001ca1d0f890cd56e9788ef83851554162da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113920,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing multi-profile installations will make one external usage read per eligible saved profile on a Gateway cache refresh instead of one per provider. The limit of three bounds par... (sha=54d9051208cb35d8717a41070a1ee13fd09c32f1)",
-      "expected_head_sha": "54d9051208cb35d8717a41070a1ee13fd09c32f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:19:25.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/profile-keyed-provider-usage",
-        "head_sha": "54d9051208cb35d8717a41070a1ee13fd09c32f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114004:5081862040:2026-08-01T05:55:26Z:clawsweeper_auto_repair",
       "comment_id": "5081862040",
@@ -32488,6 +32414,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110004:5003824621:2026-08-01T08:54:33Z:clawsweeper_needs_human",
+      "comment_id": "5003824621",
+      "comment_version_key": "5003824621:2026-08-01T08:54:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110004#issuecomment-5003824621",
+      "comment_created_at": "2026-07-17T13:34:48Z",
+      "comment_updated_at": "2026-08-01T08:54:33Z",
+      "comment_body_sha256": "163bf8b492bae71fea1dccdc662d8dea73df1e7bb89c0795eaa01c5ebb90ec75",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides real codec packets, mocked manager-lifecycle coverage, and CI, but no redacted after-fix Discord runtime output proving capped-... (sha=a0eead453b8932f925dda49c98c6c8122b677b18)",
+      "expected_head_sha": "a0eead453b8932f925dda49c98c6c8122b677b18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:55:08.714Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/discord-voice-pcm-limit",
+        "head_sha": "a0eead453b8932f925dda49c98c6c8122b677b18",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110004:5004711611:2026-07-17T15:15:33Z:re_review",
+      "comment_id": "5004711611",
+      "comment_version_key": "5004711611:2026-07-17T15:15:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110004#issuecomment-5004711611",
+      "comment_created_at": "2026-07-17T15:15:33Z",
+      "comment_updated_at": "2026-07-17T15:15:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110004,
+      "author": "LZY3538",
+      "author_id": 293718838,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:55:08.714Z",
+      "target": null
     }
   ]
 }
