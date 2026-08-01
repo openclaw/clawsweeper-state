@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:27:06.028Z",
+  "updated_at": "2026-08-01T15:27:39.521Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117323:5150892560:2026-08-01T12:48:22Z:clawsweeper_needs_human",
-      "comment_id": "5150892560",
-      "comment_version_key": "5150892560:2026-08-01T12:48:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117323#issuecomment-5150892560",
-      "comment_created_at": "2026-08-01T09:47:30Z",
-      "comment_updated_at": "2026-08-01T12:48:22Z",
-      "comment_body_sha256": "80137c4c862c2a6238e617652e24ea9243948b9a81b861a037710febda1a098f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117323,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A provider with any static or persisted lightweight row is treated as fully covered, so runtime-only models could disappear from the default authenticated list if that lightweight sou... (sha=f8e8f663aafb91ca6218e0f679626ca03fe8bb0e)",
-      "expected_head_sha": "f8e8f663aafb91ca6218e0f679626ca03fe8bb0e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T13:02:44.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/models-list-scoped-catalog",
-        "head_sha": "f8e8f663aafb91ca6218e0f679626ca03fe8bb0e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117208:5151001863:2026-08-01T10:20:50Z:re_review",
       "comment_id": "5151001863",
@@ -32396,6 +32363,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114631:5152075346:2026-08-01T15:27:02Z:re_review",
+      "comment_id": "5152075346",
+      "comment_version_key": "5152075346:2026-08-01T15:27:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114631#issuecomment-5152075346",
+      "comment_created_at": "2026-08-01T15:27:02Z",
+      "comment_updated_at": "2026-08-01T15:27:02Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114631,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T15:27:37.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/custodian-wizard-step-payload",
+        "head_sha": "f012043b40c7e95aa2eda8ac4905007347b16634",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
