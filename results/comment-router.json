@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:07:04.363Z",
+  "updated_at": "2026-08-01T17:07:05.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:54:5135684325:2026-07-30T20:01:11Z:re_review",
-      "comment_id": "5135684325",
-      "comment_version_key": "5135684325:2026-07-30T20:01:11Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5135684325",
-      "comment_created_at": "2026-07-30T20:01:11Z",
-      "comment_updated_at": "2026-07-30T20:01:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/rfcs",
-      "issue_number": 54,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:26:53.342Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/rfcs:54:5146930996:2026-07-31T19:57:22Z:re_review",
       "comment_id": "5146930996",
@@ -31452,6 +31425,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:321:4952095915:2026-08-01T17:04:24Z:clawsweeper_needs_human",
+      "comment_id": "4952095915",
+      "comment_version_key": "4952095915:2026-08-01T17:04:24Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/321#issuecomment-4952095915",
+      "comment_created_at": "2026-07-12T17:27:12Z",
+      "comment_updated_at": "2026-08-01T17:04:24Z",
+      "comment_body_sha256": "071c24010983cddb158dbfe0f47bb53c52a0760d06072a5a86a6d976107fbeec",
+      "repo": "steipete/oracle",
+      "issue_number": 321,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body claims live proof for commit 1b7d6c7cfe42dc2668ccfde8c7f6c57b51b1cbc7, but the current head is 840b727b8c6a241da00ff7b4687...; Review finding: [P1] Scope Create PR success to the selected finding — src/browser/actions/codexFindings.ts:420 - [P2] Require a new clipboard confirmation — src/browser/actions/c... (sha=840b727b8c6a241da00ff7b4687b81b96c064aab)",
+      "expected_head_sha": "840b727b8c6a241da00ff7b4687b81b96c064aab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:07:05.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-findings",
+        "head_sha": "840b727b8c6a241da00ff7b4687b81b96c064aab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
