@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:34:03.197Z",
+  "updated_at": "2026-08-01T14:34:05.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117365:5151419881:2026-08-01T12:28:09Z:re_review",
-      "comment_id": "5151419881",
-      "comment_version_key": "5151419881:2026-08-01T12:28:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117365#issuecomment-5151419881",
-      "comment_created_at": "2026-08-01T12:28:09Z",
-      "comment_updated_at": "2026-08-01T12:28:09Z",
-      "comment_body_sha256": "5823838e9c9c49bd36c86b84d806653e9aa3f9db709d87ead5f9e878a90fe910",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117365,
-      "author": "chernoff-code",
-      "author_id": 221717140,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T12:28:48.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/collapsible-reasoning-ui",
-        "head_sha": "08b784624a9adbbb00445999823699f291ce111d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/uirouter:17:5122296130:2026-08-01T12:20:54Z:clawsweeper_needs_human",
       "comment_id": "5122296130",
@@ -32247,6 +32200,39 @@
         "kind": "pull_request",
         "branch": "codex/sessions-send-announce-media",
         "head_sha": "a345fddd5afe77b543cf855d3da6faf762ea5b4e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:195:5118275402:2026-08-01T14:27:47Z:clawsweeper_auto_repair",
+      "comment_id": "5118275402",
+      "comment_version_key": "5118275402:2026-08-01T14:27:47Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/195#issuecomment-5118275402",
+      "comment_created_at": "2026-07-29T13:17:32Z",
+      "comment_updated_at": "2026-08-01T14:27:47Z",
+      "comment_body_sha256": "23ac301adc1c05f939652e1f744224914729e286e36581f4908fc9227238b7db",
+      "repo": "steipete/poltergeist",
+      "issue_number": 195,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f307b4499c7fc61bc9d9d713acdd86ed2d29776f)",
+      "expected_head_sha": "f307b4499c7fc61bc9d9d713acdd86ed2d29776f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T14:34:05.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-target-name-parsing",
+        "head_sha": "f307b4499c7fc61bc9d9d713acdd86ed2d29776f",
         "cluster_id": null,
         "job_path": null
       }
