@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:19:39.433Z",
+  "updated_at": "2026-08-01T11:19:45.807Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114983:5100804526:2026-08-01T08:28:57Z:clawsweeper_needs_human",
-      "comment_id": "5100804526",
-      "comment_version_key": "5100804526:2026-08-01T08:28:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5100804526",
-      "comment_created_at": "2026-07-28T06:37:16Z",
-      "comment_updated_at": "2026-08-01T08:28:57Z",
-      "comment_body_sha256": "7c3283f62cc51305b3e66e53151dbcadb760326689bee4fa24567ab4261c741b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114983,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The posted terminal evidence demonstrates an earlier mixed-key Doctor run, but it does not show the current-head all-invalid result fo...; Review finding: [P1] Do not encode an empty migration as fail-closed — src/config/model-policy-allowlist-migration.ts:84-87 - [medium] Empty migrated allowlist broadens provider/m... (sha=8689d40dae78710750961bf79abe676392642cce)",
-      "expected_head_sha": "8689d40dae78710750961bf79abe676392642cce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:33:02.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114964",
-        "head_sha": "8689d40dae78710750961bf79abe676392642cce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T08:29:31Z:clawsweeper_needs_human",
       "comment_id": "5149564387",
@@ -32104,6 +32071,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117213:5151193192:2026-08-01T11:19:04Z:re_review",
+      "comment_id": "5151193192",
+      "comment_version_key": "5151193192:2026-08-01T11:19:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5151193192",
+      "comment_created_at": "2026-08-01T11:19:04Z",
+      "comment_updated_at": "2026-08-01T11:19:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117213,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T11:19:43.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-policy-refresh-rebuild-89606",
+        "head_sha": "70d5b4379fe9420c5a80e75aa6cba6b21306dc8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
