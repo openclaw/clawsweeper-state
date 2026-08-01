@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:20:58.102Z",
+  "updated_at": "2026-08-01T09:21:41.573Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117132:5148842106:2026-08-01T06:41:11Z:clawsweeper_needs_human",
-      "comment_id": "5148842106",
-      "comment_version_key": "5148842106:2026-08-01T06:41:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117132#issuecomment-5148842106",
-      "comment_created_at": "2026-08-01T01:25:07Z",
-      "comment_updated_at": "2026-08-01T06:41:11Z",
-      "comment_body_sha256": "267858cc11296443b062f7221b65fb5d2708503e4e45f7d5dc7747cf846e66dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Older board rows have no ownership marker, so the conservative upgrade policy preserves an unmarked row and creates a marked fallback on a later generated re-pin; this avoids destruct... (sha=bdf5b08ba5d21ac37bc1f6af8d493492f7365909)",
-      "expected_head_sha": "bdf5b08ba5d21ac37bc1f6af8d493492f7365909",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:41:47.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-2026-07-31-b",
-        "head_sha": "bdf5b08ba5d21ac37bc1f6af8d493492f7365909",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117131:5150232593:2026-08-01T06:41:59Z:re_review",
       "comment_id": "5150232593",
@@ -32664,6 +32631,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117258:5150807279:2026-08-01T09:21:04Z:re_review",
+      "comment_id": "5150807279",
+      "comment_version_key": "5150807279:2026-08-01T09:21:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117258#issuecomment-5150807279",
+      "comment_created_at": "2026-08-01T09:21:04Z",
+      "comment_updated_at": "2026-08-01T09:21:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117258,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T09:21:38.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117209-auth-snapshot",
+        "head_sha": "a8cc0ef9097c7bc3c02c5ac8e4eabbf1daa7e29a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
