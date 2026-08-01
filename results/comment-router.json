@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:57:41.584Z",
+  "updated_at": "2026-08-01T14:57:45.050Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:107:4996439377:2026-08-01T12:44:31Z:clawsweeper_needs_human",
-      "comment_id": "4996439377",
-      "comment_version_key": "4996439377:2026-08-01T12:44:31Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/107#issuecomment-4996439377",
-      "comment_created_at": "2026-07-16T20:47:45Z",
-      "comment_updated_at": "2026-08-01T12:44:31Z",
-      "comment_body_sha256": "f7c226f8612d5d131fbdb3548873721bf36edab74c2af2c5d8a182d7436bab6b",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 107,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR cites private local release-evidence paths but provides no inspectable redacted artifact, terminal output, runtime log, or recording sho...; Review finding: [P1] Keep the cross-provider panel opt-in by default — skills/autoreview/scripts/autoreview:9585-9586 - [medium] Implicitly send review bundles to Claude — skills/... (sha=dc3c0e356d6430c3feb786d51b47d00db02afb10)",
-      "expected_head_sha": "dc3c0e356d6430c3feb786d51b47d00db02afb10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:45:06.636Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-a-readiness",
-        "head_sha": "dc3c0e356d6430c3feb786d51b47d00db02afb10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/releasebar:72:4991279239:2026-08-01T12:44:35Z:clawsweeper_needs_human",
       "comment_id": "4991279239",
@@ -32112,6 +32079,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117450:5151958430:2026-08-01T14:57:08Z:re_review",
+      "comment_id": "5151958430",
+      "comment_version_key": "5151958430:2026-08-01T14:57:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117450#issuecomment-5151958430",
+      "comment_created_at": "2026-08-01T14:57:08Z",
+      "comment_updated_at": "2026-08-01T14:57:08Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117450,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T14:57:43.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-live-startup-ownership-20260801",
+        "head_sha": "ec4fc9c5673dc6e454b987c47613636fdaf3101c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
