@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:59:07.124Z",
+  "updated_at": "2026-08-01T06:59:19.246Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113847:5080605158:2026-08-01T04:06:04Z:clawsweeper_needs_human",
-      "comment_id": "5080605158",
-      "comment_version_key": "5080605158:2026-08-01T04:06:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113847#issuecomment-5080605158",
-      "comment_created_at": "2026-07-25T21:13:01Z",
-      "comment_updated_at": "2026-08-01T04:06:04Z",
-      "comment_body_sha256": "215eea888f48c90773b95b1ceee686ce1742516bff15050264e66a78a90975b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve redaction for generic URL credentials (P1)** - preserveUrlQueryValues disables both URL-query redaction paths for transcript storage, so arbitrary values under token, code, signature, and similar keys a...; Review finding: [P1] Preserve redaction for generic URL credentials — src/agents/transcript-redact.ts:35 - [high] Do not persist generic credential query values — src/agents/trans... (sha=b39e4f1f949bdc3080d6925eea913f274ff140cd)",
-      "expected_head_sha": "b39e4f1f949bdc3080d6925eea913f274ff140cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T04:08:04.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/transcript-capability-urls",
-        "head_sha": "b39e4f1f949bdc3080d6925eea913f274ff140cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:992:5149723092:2026-08-01T04:07:34Z:clawsweeper_needs_human",
       "comment_id": "5149723092",
@@ -31834,6 +31801,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T06:59:07.123Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116362:5129877841:2026-08-01T06:58:24Z:clawsweeper_auto_repair",
+      "comment_id": "5129877841",
+      "comment_version_key": "5129877841:2026-08-01T06:58:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116362#issuecomment-5129877841",
+      "comment_created_at": "2026-07-30T10:50:35Z",
+      "comment_updated_at": "2026-08-01T06:58:24Z",
+      "comment_body_sha256": "7ec9a142f4701ba981c91e8f41461ab7197cc740c49f71bb221548f972ed121d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116362,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3bb2138983ee35f08489c8f1c026329c018c0d57)",
+      "expected_head_sha": "3bb2138983ee35f08489c8f1c026329c018c0d57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:59:19.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/no-reply-fallback-group-surfaces",
+        "head_sha": "3bb2138983ee35f08489c8f1c026329c018c0d57",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
