@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:14:18.358Z",
+  "updated_at": "2026-08-01T20:14:20.785Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-01T17:46:44Z:clawsweeper_auto_repair",
-      "comment_id": "5149865878",
-      "comment_version_key": "5149865878:2026-08-01T17:46:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
-      "comment_created_at": "2026-08-01T04:50:44Z",
-      "comment_updated_at": "2026-08-01T17:46:44Z",
-      "comment_body_sha256": "c056a1bdc1a6eec495db6bd968b1008148f095a5ba2f960e69a09f3daf9abe5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=60a9c42caeb6d672ad417e01691cc15bcbe7f95f)",
-      "expected_head_sha": "60a9c42caeb6d672ad417e01691cc15bcbe7f95f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:47:41.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "60a9c42caeb6d672ad417e01691cc15bcbe7f95f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117139:5152634293:2026-08-01T17:48:03Z:re_review",
       "comment_id": "5152634293",
@@ -32332,6 +32299,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2554:5152919855:2026-08-01T20:13:40Z:clawsweeper_needs_human",
+      "comment_id": "5152919855",
+      "comment_version_key": "5152919855:2026-08-01T20:13:40Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2554#issuecomment-5152919855",
+      "comment_created_at": "2026-08-01T18:56:37Z",
+      "comment_updated_at": "2026-08-01T20:13:40Z",
+      "comment_body_sha256": "dac35008b2ccc316c1f5de1ce801b2dc3a533808bb00a5bcb39a00716f2674eb",
+      "repo": "steipete/codexbar",
+      "issue_number": 2554,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep browser-cookie decryption on a reviewed source (P1)** - This line redirects SweetCookieKit from the official steipete repository to a contributor fork. An immutable revision prevents later movement but does...; Review finding: [P1] Keep browser-cookie decryption on a reviewed source — Package.swift:11 - [high] Cookie decrypter moves to a contributor-owned source — Package.swift:11 (sha=45359f9828a56d21f898ca2159bfa89d2320de95)",
+      "expected_head_sha": "45359f9828a56d21f898ca2159bfa89d2320de95",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:14:20.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/opencode-go-chrome-cookie-decrypt",
+        "head_sha": "45359f9828a56d21f898ca2159bfa89d2320de95",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
