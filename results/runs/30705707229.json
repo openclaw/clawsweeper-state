@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-110171",
+  "mode": "autonomous",
+  "run_id": "30705707229",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30705707229",
+  "head_sha": "e9f97b34fd5950884dd6b9ec45f46f4851cf506c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-110171.md",
+  "published_at": "2026-08-01T15:28:28.851Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/110171",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/110171",
+  "canonical_pr": null,
+  "summary": "Issue #110171 remains valid on current main (9e43844264a736b234e32af5b018da1e4a058c87). The iOS routing parser does not treat `talk.realtime.consultRouting: force-agent-consult` as Gateway-relay-required, and the OpenAI UI override independently selects direct WebRTC. The existing relay already enforces forced consultation, session reuse, and disables autonomous provider responses, so a narrow iOS routing repair is appropriate.",
+  "actions": [
+    {
+      "target": "#110171",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Route the explicit forced-consult policy through the already-supported Gateway relay rather than adding a parallel context or provider-policy path."
+    },
+    {
+      "target": "#71195",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Both concern realtime Talk, but they have different client owners, reproduction paths, and implementation scope."
+    },
+    {
+      "target": "#91007",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Closed context reference only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-110171",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#110171",
+      "candidate_fix": null,
+      "reason": "Create one narrow, credited fix PR from `clawsweeper/issue-openclaw-openclaw-110171`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
