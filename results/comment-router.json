@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:05:41.178Z",
+  "updated_at": "2026-08-01T14:05:41.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117289:5150715482:2026-08-01T08:54:04Z:re_review",
-      "comment_id": "5150715482",
-      "comment_version_key": "5150715482:2026-08-01T08:54:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117289#issuecomment-5150715482",
-      "comment_created_at": "2026-08-01T08:54:04Z",
-      "comment_updated_at": "2026-08-01T08:54:04Z",
-      "comment_body_sha256": "8d16718dec39df662058f568dc9fab019be23408c0c05a1baa31fb42978dde98",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117289,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:44:23.380Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117288:5150718906:2026-08-01T08:55:05Z:re_review",
       "comment_id": "5150718906",
@@ -32086,6 +32059,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117430:5151720879:2026-08-01T14:04:54Z:clawsweeper_needs_human",
+      "comment_id": "5151720879",
+      "comment_version_key": "5151720879:2026-08-01T14:04:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117430#issuecomment-5151720879",
+      "comment_created_at": "2026-08-01T13:54:29Z",
+      "comment_updated_at": "2026-08-01T14:04:54Z",
+      "comment_body_sha256": "9ca2228c9d299581dd4f512085d6f1f315d7ab28d4759a585fecbc13d2bc3045",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117430,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and static checks, but it contains no inspectable after-fix rendered Control UI proof; add redacted browser evidence... (sha=3303099b3c5c685f90765829133f19ae7ce8114d)",
+      "expected_head_sha": "3303099b3c5c685f90765829133f19ae7ce8114d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T14:05:41.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-ui-clipboard-feedback-accessibility",
+        "head_sha": "3303099b3c5c685f90765829133f19ae7ce8114d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
