@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-01T09:58:12.461Z",
+  "generated_at": "2026-08-01T10:13:56.141Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30693448571.json",
+  "run_record": "results/runs/30694650711.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30693448571",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30694650711",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#117144:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#117144",
+      "title": "fix(ci): package runtime resources in dist artifact",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30694650711",
+      "cluster_id": "automerge-openclaw-openclaw-117144",
+      "hook_run_id": "b766f12d-f79c-4a3a-b7c4-5a04bf0c0923",
+      "url": "https://github.com/openclaw/openclaw/pull/117144"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#117144:repair_contributor_branch:pushed:16b90803bdaa404226234c93435c89ddc918cc46",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#117144",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30694650711",
+      "cluster_id": "automerge-openclaw-openclaw-117144",
+      "hook_run_id": "b2ebc4f5-6e61-4fa7-b74e-2f43b68d2c6d",
+      "url": "https://github.com/openclaw/openclaw/pull/117144"
+    }
+  ]
 }
