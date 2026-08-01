@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T00:36:04.442Z",
+  "updated_at": "2026-08-01T00:36:23.552Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102294:4919386959:2026-07-31T21:28:20Z:clawsweeper_needs_human",
-      "comment_id": "4919386959",
-      "comment_version_key": "4919386959:2026-07-31T21:28:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102294#issuecomment-4919386959",
-      "comment_created_at": "2026-07-08T21:29:44Z",
-      "comment_updated_at": "2026-07-31T21:28:20Z",
-      "comment_body_sha256": "01345f888252326315c5f9d507ec67af8ca43214c1477f54f1417400f2c2e159",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102294,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Use fs-safe for salvage reads and writes (P1)** - pageAbsPath and .salvage are both inside a user-controlled vault, but these raw Node calls follow symlinks. A pruned page symlink can copy an arbitrary target in...; Review finding: [P1] Use fs-safe for salvage reads and writes — extensions/memory-wiki/src/source-sync-state.ts:375-390 - [high] Raw salvage path follows vault symlinks — extensio... (sha=ed4a3fe26cc327887cca803c19803810e6ac3093)",
-      "expected_head_sha": "ed4a3fe26cc327887cca803c19803810e6ac3093",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T21:36:55.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/102230-memory-wiki-prune-notes-salvage",
-        "head_sha": "61c5278cb96a30d2dd964a4cb4464aaa8c72d8cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107375:4970256621:2026-07-31T21:28:58Z:clawsweeper_auto_repair",
       "comment_id": "4970256621",
@@ -31549,6 +31516,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:989:5148622465:2026-08-01T00:35:36Z:re_review",
+      "comment_id": "5148622465",
+      "comment_version_key": "5148622465:2026-08-01T00:35:36Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/989#issuecomment-5148622465",
+      "comment_created_at": "2026-08-01T00:35:36Z",
+      "comment_updated_at": "2026-08-01T00:35:36Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 989,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T00:36:19.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-validation-runtime-recovery",
+        "head_sha": "1c0caf6d29e118b317d8734b3fdeaf70b27949ec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
