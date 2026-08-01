@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:57:40.878Z",
+  "updated_at": "2026-08-01T17:57:40.998Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4870897460:2026-07-02T22:15:53Z:re_review",
-      "comment_id": "4870897460",
-      "comment_version_key": "4870897460:2026-07-02T22:15:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4870897460",
-      "comment_created_at": "2026-07-02T22:15:53Z",
-      "comment_updated_at": "2026-07-02T22:15:53Z",
-      "comment_body_sha256": "5b8961bd1800681b2e2ac045b46e4dac815dc72961af435bb189edf9aacc2355",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:18:27.224Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4875179920:2026-07-03T10:19:38Z:re_review",
       "comment_id": "4875179920",
@@ -31465,6 +31438,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:17:5122296130:2026-08-01T17:57:04Z:clawsweeper_needs_human",
+      "comment_id": "5122296130",
+      "comment_version_key": "5122296130:2026-08-01T17:57:04Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/17#issuecomment-5122296130",
+      "comment_created_at": "2026-07-29T19:02:21Z",
+      "comment_updated_at": "2026-08-01T17:57:04Z",
+      "comment_body_sha256": "7dfdceb31510a69575a048a2e8e74e36b5b04994807c3c51cecfa8710a9642ed",
+      "repo": "openclaw/uirouter",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this major action upgrade could alter stale-label or closure behavior for existing repository items even though all local workflow inputs remain unchanged. (sha=d072b339feb67a48c62da6bbef3105446ab355c9)",
+      "expected_head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:57:40.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
