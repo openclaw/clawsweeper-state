@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:34:12.631Z",
+  "updated_at": "2026-08-01T09:34:29.836Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101777:4951535476:2026-07-12T14:28:48Z:re_review",
-      "comment_id": "4951535476",
-      "comment_version_key": "4951535476:2026-07-12T14:28:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101777#issuecomment-4951535476",
-      "comment_created_at": "2026-07-12T14:28:48Z",
-      "comment_updated_at": "2026-07-12T14:28:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101777,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:46:32.531Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101777:4951632657:2026-07-12T14:59:54Z:re_review",
       "comment_id": "4951632657",
@@ -32686,6 +32659,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114609:5092701188:2026-08-01T09:33:55Z:clawsweeper_needs_human",
+      "comment_id": "5092701188",
+      "comment_version_key": "5092701188:2026-08-01T09:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114609#issuecomment-5092701188",
+      "comment_created_at": "2026-07-27T14:37:04Z",
+      "comment_updated_at": "2026-08-01T09:33:55Z",
+      "comment_body_sha256": "cda23cec087ecb7b433008ab36d607cb3ea84bf747e92f5a241fda96fef5a5d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR head is behind current main but GitHub reports it mergeable; the one-line correction should be reviewed against the current rewritten docs file before merge. (sha=396446afe4a311c58a9bba06487ad95b0a8ae855)",
+      "expected_head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T09:34:29.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/fix-slash-commands-login",
+        "head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
