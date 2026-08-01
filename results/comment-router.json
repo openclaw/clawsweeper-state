@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:48:36.531Z",
+  "updated_at": "2026-08-01T09:50:08.576Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98658:4989969798:2026-07-16T08:53:02Z:re_review",
-      "comment_id": "4989969798",
-      "comment_version_key": "4989969798:2026-07-16T08:53:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98658#issuecomment-4989969798",
-      "comment_created_at": "2026-07-16T08:53:02Z",
-      "comment_updated_at": "2026-07-16T08:53:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98658,
-      "author": "zhangLei99586",
-      "author_id": 294081397,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T07:04:06.132Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-alias-duplicate-warning",
-        "head_sha": "dabff896cdf58277b71bfec8aa618a0b7ca60fab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98658:4856266627:2026-08-01T06:58:38Z:clawsweeper_auto_repair",
       "comment_id": "4856266627",
@@ -32734,6 +32687,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117318:5150899180:2026-08-01T09:49:31Z:clawsweeper_needs_human",
+      "comment_id": "5150899180",
+      "comment_version_key": "5150899180:2026-08-01T09:49:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117318#issuecomment-5150899180",
+      "comment_created_at": "2026-08-01T09:49:31Z",
+      "comment_updated_at": "2026-08-01T09:49:31Z",
+      "comment_body_sha256": "19a13b8ff07945a548bca829f39cc0918adc1bcfce23ff9d89955fbf051ebbb5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided exact-head status reports failing check-lint and aggregate CI gates; inspect and resolve their current logs before merge, even though no source-level regression was found... (sha=d4b20830def3f89d897d5ffa33d76dde87177350)",
+      "expected_head_sha": "d4b20830def3f89d897d5ffa33d76dde87177350",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:50:08.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-tui-gateway-terminal-lifetime",
+        "head_sha": "d4b20830def3f89d897d5ffa33d76dde87177350",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
