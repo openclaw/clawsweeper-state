@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:36:33.692Z",
+  "updated_at": "2026-08-01T10:36:56.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114663:5094915561:2026-08-01T07:51:06Z:clawsweeper_needs_human",
-      "comment_id": "5094915561",
-      "comment_version_key": "5094915561:2026-08-01T07:51:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114663#issuecomment-5094915561",
-      "comment_created_at": "2026-07-27T17:58:35Z",
-      "comment_updated_at": "2026-08-01T07:51:06Z",
-      "comment_body_sha256": "13b18a730e9d891af1596e63b34cef980f44c73fb2d40ecb3fedd5ccd2a2a679",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114663,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A direct merge would combine a two-phase migration/checkpoint design with a newer consolidated migration owner, risking duplicated, skipped, or prematurely checkpointed upgrade work. (sha=a5a82aec6a601858d3b4c192ce44ca36493c1509)",
-      "expected_head_sha": "a5a82aec6a601858d3b4c192ce44ca36493c1509",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:51:45.709Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/cli-plugin-free-preflight",
-        "head_sha": "a5a82aec6a601858d3b4c192ce44ca36493c1509",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117256:5150492478:2026-08-01T07:51:14Z:re_review",
       "comment_id": "5150492478",
@@ -32625,6 +32592,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116687:5151050676:2026-08-01T10:36:17Z:re_review",
+      "comment_id": "5151050676",
+      "comment_version_key": "5151050676:2026-08-01T10:36:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116687#issuecomment-5151050676",
+      "comment_created_at": "2026-08-01T10:36:17Z",
+      "comment_updated_at": "2026-08-01T10:36:17Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116687,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T10:36:53.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/diagnostics-otel-metric-prefix",
+        "head_sha": "bc81e6b2bf337954735887e2e5dcd5ff0cd8958d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
