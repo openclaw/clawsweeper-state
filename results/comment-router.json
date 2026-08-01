@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:12:03.564Z",
+  "updated_at": "2026-08-01T06:12:42.741Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:79:5117972158:2026-08-01T01:58:33Z:clawsweeper_needs_human",
-      "comment_id": "5117972158",
-      "comment_version_key": "5117972158:2026-08-01T01:58:33Z",
-      "comment_url": "https://github.com/openclaw/notcrawl/pull/79#issuecomment-5117972158",
-      "comment_created_at": "2026-07-29T12:50:00Z",
-      "comment_updated_at": "2026-08-01T01:58:33Z",
-      "comment_body_sha256": "84a341b39fde0f2a5d74a48c15d978e39b5477889820184d317a1e42d02fc142",
-      "repo": "openclaw/notcrawl",
-      "issue_number": 79,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the mutable action reference** - This security gate executes the TruffleHog Action selected by @v3.96.0; a mutable tag can later resolve to different code, so confirm that policy...; Review finding: [medium] Review the mutable action reference — .github/workflows/secret-scan.yml:52 (sha=92ffea9b167690a1d35a58723d80807c8d7013ed)",
-      "expected_head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:59:25.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:81:5117981283:2026-08-01T01:58:34Z:clawsweeper_needs_human",
       "comment_id": "5117981283",
@@ -32316,6 +32283,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117008:5146687420:2026-08-01T06:11:28Z:clawsweeper_needs_human",
+      "comment_id": "5146687420",
+      "comment_version_key": "5146687420:2026-08-01T06:11:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117008#issuecomment-5146687420",
+      "comment_created_at": "2026-07-31T19:26:53Z",
+      "comment_updated_at": "2026-08-01T06:11:28Z",
+      "comment_body_sha256": "43beee3a31bb43cfc1d601443750f8b3c1d222584d75f96f1a019f2bc830d4b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional generic automatic-reconciliation flag changes shared durable-delivery behavior for any channel plugin that adopts it, so maintainers need to accept its Plugin SDK lifecyc... (sha=2eaf6a99b803354e9c5e71aa07b7a7a6cde6b301)",
+      "expected_head_sha": "2eaf6a99b803354e9c5e71aa07b7a7a6cde6b301",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:12:42.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/116876-matrix-durable-replay",
+        "head_sha": "baecc30db61b87dd5fcd9f968faeff8f166f1894",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
