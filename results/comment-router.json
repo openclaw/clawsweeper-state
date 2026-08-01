@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:17:03.052Z",
+  "updated_at": "2026-08-01T15:17:10.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:78:5151525764:2026-08-01T12:59:16Z:clawsweeper_needs_human",
-      "comment_id": "5151525764",
-      "comment_version_key": "5151525764:2026-08-01T12:59:16Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/78#issuecomment-5151525764",
-      "comment_created_at": "2026-08-01T12:59:16Z",
-      "comment_updated_at": "2026-08-01T12:59:16Z",
-      "comment_body_sha256": "bca00ea6ff4aeadcc46e7b8a132254b7454dfb3776d632420a8d923b4aab1805",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 78,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the result for existing Windows roots with leading or trailing whitespace: they will now fail closed instead of silently matching an unpadded sibling pat... (sha=c0696e554a6ce686c2720161fa28cb843e348428)",
-      "expected_head_sha": "c0696e554a6ce686c2720161fa28cb843e348428",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:59:47.409Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-path-comparison-trim",
-        "head_sha": "c0696e554a6ce686c2720161fa28cb843e348428",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104920:5011898846:2026-07-18T15:54:27Z:re_review",
       "comment_id": "5011898846",
@@ -32326,6 +32293,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115702:5118084706:2026-08-01T15:16:36Z:clawsweeper_auto_repair",
+      "comment_id": "5118084706",
+      "comment_version_key": "5118084706:2026-08-01T15:16:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115702#issuecomment-5118084706",
+      "comment_created_at": "2026-07-29T13:00:23Z",
+      "comment_updated_at": "2026-08-01T15:16:36Z",
+      "comment_body_sha256": "6f7ae442b67fe775990befc1af9ceb9208010f13c22312cd52b81a7f2ada75f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115702,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d2df0884d496b677d8e5d305c706b6fd40561271)",
+      "expected_head_sha": "d2df0884d496b677d8e5d305c706b6fd40561271",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-01T15:17:10.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/line-inbound-durability",
+        "head_sha": "d2df0884d496b677d8e5d305c706b6fd40561271",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
