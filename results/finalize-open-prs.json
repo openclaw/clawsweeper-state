@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T16:05:15.093Z",
+  "generated_at": "2026-08-01T16:18:11.949Z",
   "count": 4,
   "summary": {
     "open_prs": 4,
@@ -31,34 +31,29 @@
       "title": "fix(ios): route forced realtime consults through Gateway relay",
       "url": "https://github.com/openclaw/openclaw/pull/117485",
       "branch": "clawsweeper/issue-openclaw-openclaw-110171",
-      "head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
+      "head_sha": "322a4797b20e64c9918c369190bccf6272000b56",
       "cluster_id": "issue-openclaw-openclaw-110171",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-110171.md",
-      "updated_at": "2026-08-01T16:04:24Z",
+      "updated_at": "2026-08-01T16:16:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 74,
+        "total": 49,
         "counts": {
-          "CANCELLED": 14,
-          "SKIPPED": 31,
-          "SUCCESS": 25,
-          "FAILURE": 4
+          "CANCELLED": 1,
+          "SUCCESS": 20,
+          "FAILURE": 3,
+          "SKIPPED": 24,
+          "IN_PROGRESS": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "iOS Periphery Dead Code / Scan iOS dead code:FAILURE",
           "Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE",
-          "CI / ios-build:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CI / macos-swift:IN_PROGRESS",
+          "CI / ios-build:FAILURE"
         ]
       },
       "review_threads": {
@@ -68,21 +63,27 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152204733",
             "submitted_at": "2026-08-01T16:00:25Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152208985",
+            "submitted_at": "2026-08-01T16:01:31Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "30706593455",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30706593455",
-        "cluster_id": "issue-openclaw-openclaw-110171",
-        "published_at": "2026-08-01T16:04:54.304Z",
+        "run_id": "30707214456",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30707214456",
+        "cluster_id": "automerge-openclaw-openclaw-117485",
+        "published_at": "2026-08-01T16:18:03.236Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#117485",
@@ -93,7 +94,7 @@
           "candidate_fix": null,
           "title": "fix(ios): route forced realtime consults through Gateway relay",
           "idempotency_key": null,
-          "reason": "checks are not clean: Scan iOS dead code: FAILURE, Intersect shared OpenClawKit dead code: FAILURE, ios-build: FAILURE, openclaw/ci-gate: FAILURE",
+          "reason": "autofix-only job cannot merge",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,
@@ -102,7 +103,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; iOS Periphery Dead Code / Scan iOS dead code:FAILURE; Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -115,7 +116,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-01T16:00:04Z",
+      "updated_at": "2026-08-01T16:16:23Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -267,7 +268,7 @@
       "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T16:02:10Z",
+      "updated_at": "2026-08-01T16:13:13Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
