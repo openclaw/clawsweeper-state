@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-117144"
 mode: "autonomous"
-run_id: "30687492398"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30687492398"
-head_sha: "0ced0b5e515bd8fa0d53e3af54392ac474547bf5"
+run_id: "30691014435"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30691014435"
+head_sha: "822424ecf89949204e1fbc3d8cc6ed77f4d18ad8"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-01T08:07:02.614Z"
-canonical: "https://github.com/openclaw/openclaw/issues/98276"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
-canonical_pr: "https://github.com/openclaw/openclaw/pull/117144"
+published_at: "2026-08-01T08:10:07.055Z"
+canonical: "#117144"
+canonical_issue: "#98276"
+canonical_pr: "#117144"
 actions_total: 4
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30687492398](https://github.com/openclaw/clawsweeper/actions/runs/30687492398)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30691014435](https://github.com/openclaw/clawsweeper/actions/runs/30691014435)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/98276
+Canonical: #117144
 
 ## Summary
 
-Keep #117144 open as the canonical repair PR for #98276. Its current head is behind main, has an unresolved ClawSweeper proof finding, and fails `check-dependencies`/`openclaw/ci-gate`; emit a bounded contributor-branch repair artifact. No close or merge actions are permitted by this job.
+Keep #117144 as the canonical repair path for #98276. Repair its same-repository branch: rebase onto current main, replace the checkout-assisted extracted-artifact smoke with direct extracted-package execution proof, investigate and fix the failing dependency/CI gates, then rerun focused validation and Codex /review. No merge or close action is permitted by this job.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Keep #117144 open as the canonical repair PR for #98276. Its current head is beh
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/98274 | keep_related | planned | related | #98274 remains an open, independent ACP/Gateway product-decision issue and must not be closed through this artifact-packaging repair. |
-| https://github.com/openclaw/openclaw/issues/98276 | keep_canonical | planned | canonical | #98276 is the canonical open issue for the missing runtime-artifact resources; #117144 remains its repair path but is not ready for closeout. |
-| https://github.com/openclaw/openclaw/pull/98326 | keep_closed | skipped | superseded | Already closed in live preflight state; retain as credited source context only. |
-| https://github.com/openclaw/openclaw/pull/117144 | build_fix_artifact | planned | canonical | Repair the writable canonical PR branch, preserving the credited source direction while replacing proof that borrows checkout-only resolution with proof of the extracted consumer path. |
+| #98274 | keep_independent | planned | independent | #98274 is related ACP context but has a distinct owner boundary and must remain open independently. |
+| #98276 | keep_canonical | planned | canonical | #98276 remains the canonical issue until the repaired candidate passes validation and lands; post-merge closure is disabled for this job. |
+| #98326 | keep_closed | skipped | superseded | Historical source PR only; keep it closed and preserve its attribution through the canonical repair. |
+| #117144 | fix_needed | planned | canonical | Repair the canonical branch rather than replacing it: strengthen the artifact proof at the consumer boundary, rebase, and resolve relevant CI failures. |
 
 ## Needs Human
 

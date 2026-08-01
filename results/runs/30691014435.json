@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "30691014435",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30691014435",
+  "head_sha": "822424ecf89949204e1fbc3d8cc6ed77f4d18ad8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md",
+  "published_at": "2026-08-01T08:10:07.055Z",
+  "canonical": "#117144",
+  "canonical_issue": "#98276",
+  "canonical_pr": "#117144",
+  "summary": "Keep #117144 as the canonical repair path for #98276. Repair its same-repository branch: rebase onto current main, replace the checkout-assisted extracted-artifact smoke with direct extracted-package execution proof, investigate and fix the failing dependency/CI gates, then rerun focused validation and Codex /review. No merge or close action is permitted by this job.",
+  "actions": [
+    {
+      "target": "#98274",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#117144",
+      "candidate_fix": null,
+      "reason": "#98274 is related ACP context but has a distinct owner boundary and must remain open independently."
+    },
+    {
+      "target": "#98276",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "#98276 remains the canonical issue until the repaired candidate passes validation and lands; post-merge closure is disabled for this job."
+    },
+    {
+      "target": "#98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Historical source PR only; keep it closed and preserve its attribution through the canonical repair."
+    },
+    {
+      "target": "#117144",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Repair the canonical branch rather than replacing it: strengthen the artifact proof at the consumer boundary, rebase, and resolve relevant CI failures."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
