@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-01T12:18:59.815Z",
+  "updated_at": "2026-08-01T12:17:52.936Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117144:5150984555:2026-08-01T10:15:38Z:fix_ci",
+      "comment_id": "5150984555",
+      "comment_version_key": "5150984555:2026-08-01T10:15:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5150984555",
+      "comment_created_at": "2026-08-01T10:15:38Z",
+      "comment_updated_at": "2026-08-01T10:15:38Z",
+      "comment_body_sha256": "093a1d4eaed037a2e0c51bdab8c5f9f1bf3213d2282e98f7139cfb0e7178d1f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117144,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "fix ci",
+      "intent": "fix_ci",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T10:16:18.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
+        "head_sha": "16b90803bdaa404226234c93435c89ddc918cc46",
+        "cluster_id": "automerge-openclaw-openclaw-117144",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110843:5012192137:2026-07-18T17:18:33Z:re_review",
       "comment_id": "5012192137",
@@ -31380,39 +31427,6 @@
         "kind": "pull_request",
         "branch": "ui/dashboard-session-timestamps",
         "head_sha": "862716e2b8909ccdb5e1635da05e07d5a6b1cedc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:79:5117972158:2026-08-01T12:18:20Z:clawsweeper_needs_human",
-      "comment_id": "5117972158",
-      "comment_version_key": "5117972158:2026-08-01T12:18:20Z",
-      "comment_url": "https://github.com/openclaw/notcrawl/pull/79#issuecomment-5117972158",
-      "comment_created_at": "2026-07-29T12:50:00Z",
-      "comment_updated_at": "2026-08-01T12:18:20Z",
-      "comment_body_sha256": "374d5fe97deb45bfc8e10ef215bf03be8229e2bc84d7c9662cc18a96dd1ee084",
-      "repo": "openclaw/notcrawl",
-      "issue_number": 79,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Pin the updated security action to an immutable commit (P1)** - The new @v3.96.0 reference is a mutable upstream tag in a workflow that executes the repository's secret-scanning gate. Resolve this release to its...; Review finding: [P1] Pin the updated security action to an immutable commit — .github/workflows/secret-scan.yml:52 - [medium] Mutable action tag in secret-scanning gate — .github/... (sha=92ffea9b167690a1d35a58723d80807c8d7013ed)",
-      "expected_head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:18:59.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "92ffea9b167690a1d35a58723d80807c8d7013ed",
         "cluster_id": null,
         "job_path": null
       }
