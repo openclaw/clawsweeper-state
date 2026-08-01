@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:04:59.814Z",
+  "updated_at": "2026-08-01T19:05:34.708Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110110:5006002161:2026-08-01T16:03:04Z:clawsweeper_needs_human",
-      "comment_id": "5006002161",
-      "comment_version_key": "5006002161:2026-08-01T16:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110110#issuecomment-5006002161",
-      "comment_created_at": "2026-07-17T17:56:15Z",
-      "comment_updated_at": "2026-08-01T16:03:04Z",
-      "comment_body_sha256": "4a52e309ba443efabaf41e82110cd853ab559808e1fbd9eba2cb716d54a945a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - At the 1,024-live-IP cap, the proposed eviction resets the least-recently-seen active client's counter. That bounds memory but allows a sufficiently distributed flood to displace an e... (sha=da2b02df6138b1d4a8f70f1192f6afa4930c2647)",
-      "expected_head_sha": "da2b02df6138b1d4a8f70f1192f6afa4930c2647",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:39:39.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-miniapp-ratelimit-bound",
-        "head_sha": "da2b02df6138b1d4a8f70f1192f6afa4930c2647",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110166:5007389289:2026-08-01T16:04:01Z:clawsweeper_auto_repair",
       "comment_id": "5007389289",
@@ -32937,6 +32904,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T19:04:59.813Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117521:5152467235:2026-08-01T19:04:27Z:clawsweeper_auto_repair",
+      "comment_id": "5152467235",
+      "comment_version_key": "5152467235:2026-08-01T19:04:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117521#issuecomment-5152467235",
+      "comment_created_at": "2026-08-01T17:06:22Z",
+      "comment_updated_at": "2026-08-01T19:04:27Z",
+      "comment_body_sha256": "992aec5647add9d35c40d8b6b6f28cbe8b6516bb819ca2260ecbaa0dc38afed6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0391535bf9158ba1f42d882faf503f00a3d7f7ed)",
+      "expected_head_sha": "0391535bf9158ba1f42d882faf503f00a3d7f7ed",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-08-01T19:05:21.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-117491",
+        "head_sha": "0391535bf9158ba1f42d882faf503f00a3d7f7ed",
+        "cluster_id": "automerge-openclaw-openclaw-117521",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117521.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117521.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
