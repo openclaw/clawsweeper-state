@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T21:55:54.348Z",
+  "updated_at": "2026-08-01T21:55:58.404Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5125146819:2026-07-30T01:09:06Z:re_review",
-      "comment_id": "5125146819",
-      "comment_version_key": "5125146819:2026-07-30T01:09:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5125146819",
-      "comment_created_at": "2026-07-30T01:09:06Z",
-      "comment_updated_at": "2026-07-30T01:09:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:24:29.611Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5126385366:2026-07-30T04:18:31Z:re_review",
       "comment_id": "5126385366",
@@ -32758,6 +32731,39 @@
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117222:5149935434:2026-08-01T21:55:21Z:clawsweeper_needs_human",
+      "comment_id": "5149935434",
+      "comment_version_key": "5149935434:2026-08-01T21:55:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117222#issuecomment-5149935434",
+      "comment_created_at": "2026-08-01T05:12:10Z",
+      "comment_updated_at": "2026-08-01T21:55:21Z",
+      "comment_body_sha256": "8794c4cf1c2170eb9a646eee26c31e6e4fa8dd330c9bff715da453a00dcd99cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117222,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied current-head check snapshot still had ios-build and broader required jobs in progress, so merge should wait for the exact-head result rather than relying only on the earl... (sha=62daabec7e26de5a04cf63ac6a407c29f8855e48)",
+      "expected_head_sha": "62daabec7e26de5a04cf63ac6a407c29f8855e48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T21:55:58.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-recent-usage-days",
+        "head_sha": "62daabec7e26de5a04cf63ac6a407c29f8855e48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
