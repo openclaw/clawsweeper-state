@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T02:27:18.062Z",
+  "updated_at": "2026-08-01T02:27:29.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5052108686:2026-07-22T22:06:04Z:re_review",
-      "comment_id": "5052108686",
-      "comment_version_key": "5052108686:2026-07-22T22:06:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5052108686",
-      "comment_created_at": "2026-07-22T22:06:04Z",
-      "comment_updated_at": "2026-07-22T22:06:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:32:42.524Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5057209726:2026-07-23T10:12:25Z:re_review",
       "comment_id": "5057209726",
@@ -32294,6 +32267,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117147:5148938254:2026-08-01T02:25:32Z:clawsweeper_needs_human",
+      "comment_id": "5148938254",
+      "comment_version_key": "5148938254:2026-08-01T02:25:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117147#issuecomment-5148938254",
+      "comment_created_at": "2026-08-01T01:50:59Z",
+      "comment_updated_at": "2026-08-01T02:25:32Z",
+      "comment_body_sha256": "2193e83ac8a4747e0f0611a3ac8d9690c3edcb8d03eee191363bfa3ae0f1ca14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists test and static-check results but provides no inspectable after-fix terminal output, log, recording, or linked artifact; add... (sha=c27af987bb2e2046a7a054b345f6ed59a2980c51)",
+      "expected_head_sha": "c27af987bb2e2046a7a054b345f6ed59a2980c51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T02:27:29.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-111856-compaction-image-regression",
+        "head_sha": "c27af987bb2e2046a7a054b345f6ed59a2980c51",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
