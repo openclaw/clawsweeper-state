@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T00:19:20.724Z",
+  "updated_at": "2026-08-01T00:21:49.605Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114473:5096167128:2026-07-27T19:59:41Z:re_review",
-      "comment_id": "5096167128",
-      "comment_version_key": "5096167128:2026-07-27T19:59:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114473#issuecomment-5096167128",
-      "comment_created_at": "2026-07-27T19:59:41Z",
-      "comment_updated_at": "2026-07-27T19:59:41Z",
-      "comment_body_sha256": "92dc76ac4fe19c2e14f1fcbf7d17956251c15f93f6b607559198da6fb4a3767a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114473,
-      "author": "fancymatt",
-      "author_id": 7379405,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T21:06:53.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "grover/LIF-296-lifeos-token-injection",
-        "head_sha": "05cc0b8f257e763cb8784630903d9577b2f87fa0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114473:5093073765:2026-07-27T15:09:28Z:re_review",
       "comment_id": "5093073765",
@@ -31509,6 +31462,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T00:19:20.723Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:273:5148553403:2026-08-01T00:21:05Z:clawsweeper_auto_repair",
+      "comment_id": "5148553403",
+      "comment_version_key": "5148553403:2026-08-01T00:21:05Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/273#issuecomment-5148553403",
+      "comment_created_at": "2026-08-01T00:21:05Z",
+      "comment_updated_at": "2026-08-01T00:21:05Z",
+      "comment_body_sha256": "00c8f1c297539ba2bf3511e6cd4d3d04ecae463750b3e80451f51a9e05bd0a9b",
+      "repo": "openclaw/crabpot",
+      "issue_number": 273,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ae0a9002905bfeb2c61c84be9c79bba65cc561b6)",
+      "expected_head_sha": "ae0a9002905bfeb2c61c84be9c79bba65cc561b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T00:21:49.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.20",
+        "head_sha": "ae0a9002905bfeb2c61c84be9c79bba65cc561b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
