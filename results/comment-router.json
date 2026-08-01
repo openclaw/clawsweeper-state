@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-01T11:23:30.154Z",
+  "updated_at": "2026-08-01T11:22:23.065Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116792:5150641560:2026-08-01T08:34:52Z:re_review",
+      "comment_id": "5150641560",
+      "comment_version_key": "5150641560:2026-08-01T08:34:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116792#issuecomment-5150641560",
+      "comment_created_at": "2026-08-01T08:34:52Z",
+      "comment_updated_at": "2026-08-01T08:34:52Z",
+      "comment_body_sha256": "752fd7c1ac9edebbd491a0f4c35671c52b326f97c69b431a5d645a78ac4e04cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116792,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:35:28.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-1-node-contract",
+        "head_sha": "ed4e1d58f72ce53d9ef142b422a60b82fc3df656",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116795:5150641752:2026-08-01T08:34:55Z:re_review",
       "comment_id": "5150641752",
@@ -32096,39 +32143,6 @@
         "kind": "pull_request",
         "branch": "fix/test-live-acp-bind-docker-curl-timeout",
         "head_sha": "b60aa19988332b4a7560758270066004c99500c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-01T11:22:56Z:clawsweeper_needs_human",
-      "comment_id": "5118102960",
-      "comment_version_key": "5118102960:2026-08-01T11:22:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
-      "comment_created_at": "2026-07-29T13:02:03Z",
-      "comment_updated_at": "2026-08-01T11:22:56Z",
-      "comment_body_sha256": "41518ce21ae7c125f86d87e90e894b354b1c960e18761de0f516f40a9576417c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty against current main, whose later reply-lifecycle refactor owns dispatcher construction and gathered dispatch state; merge conflict resolution must... (sha=70a9ffd386db86be51204ea70cb5d065ecd99ecd)",
-      "expected_head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:23:30.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/s28-suppress-copied-reply-scaffolding",
-        "head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
         "cluster_id": null,
         "job_path": null
       }
