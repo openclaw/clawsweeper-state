@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:12:54.365Z",
+  "updated_at": "2026-08-01T10:14:02.934Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4609780678:2026-06-03T06:44:35Z:re_review",
-      "comment_id": "4609780678",
-      "comment_version_key": "4609780678:2026-06-03T06:44:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4609780678",
-      "comment_created_at": "2026-06-03T06:44:35Z",
-      "comment_updated_at": "2026-06-03T06:44:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:17:35.076Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4613872043:2026-06-03T15:12:30Z:re_review",
       "comment_id": "4613872043",
@@ -32806,6 +32779,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117341:5150978017:2026-08-01T10:13:33Z:clawsweeper_needs_human",
+      "comment_id": "5150978017",
+      "comment_version_key": "5150978017:2026-08-01T10:13:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117341#issuecomment-5150978017",
+      "comment_created_at": "2026-08-01T10:13:33Z",
+      "comment_updated_at": "2026-08-01T10:13:33Z",
+      "comment_body_sha256": "331b0c782dbbb2e815613875f56c4c8880ce7ff1cca2d9051ab76c86bb1b8dff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117341,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports unit suites and registered-plugin hook assertions, but no after-fix runtime artifact from a real configured provider-and-fa... (sha=fa58718e9b37d08462ff9ae99047cd931f4d2991)",
+      "expected_head_sha": "fa58718e9b37d08462ff9ae99047cd931f4d2991",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:14:02.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-115853-xai-billing-classify",
+        "head_sha": "fa58718e9b37d08462ff9ae99047cd931f4d2991",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
