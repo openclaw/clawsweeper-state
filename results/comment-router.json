@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:47:15.487Z",
+  "updated_at": "2026-08-01T18:47:15.669Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2414:5152324928:2026-08-01T16:29:34Z:re_review",
-      "comment_id": "5152324928",
-      "comment_version_key": "5152324928:2026-08-01T16:29:34Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2414#issuecomment-5152324928",
-      "comment_created_at": "2026-08-01T16:29:34Z",
-      "comment_updated_at": "2026-08-01T16:29:34Z",
-      "comment_body_sha256": "4cfb0d649c879e36ed4fcc6259c106b8ec73e05fa579ffe0b175a1d7732259b0",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2414,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:30:11.645Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-connection-loss-2403",
-        "head_sha": "edc06f52e377ddad23287c15fde2edc0b74b5334",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2413:5152324924:2026-08-01T16:29:34Z:re_review",
       "comment_id": "5152324924",
@@ -32895,6 +32848,39 @@
         "kind": "pull_request",
         "branch": "codex/1074-handoff-design",
         "head_sha": "51232fe755ac798d74490d0e7352c9dc6a12a849",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:3:4514202019:2026-08-01T18:46:32Z:clawsweeper_needs_human",
+      "comment_id": "4514202019",
+      "comment_version_key": "4514202019:2026-08-01T18:46:32Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/3#issuecomment-4514202019",
+      "comment_created_at": "2026-05-22T01:38:21Z",
+      "comment_updated_at": "2026-08-01T18:46:32Z",
+      "comment_body_sha256": "cf3c3b45c52f6187ce7499bb5a19bb4fe3cad2e5104ebe85f98b4fee47538fae",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 3,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No PR body, comment, terminal output, recording, or redacted ESP-device/Gateway handshake shows after-fix behavior. After repair, add redacted...; Review finding: [P1] Reject scope lists that cannot be signed completely — components/esp-openclaw-node/src/esp_openclaw_node_protocol.c:58-65 - [high] Truncated signed scope list... (sha=9291873a5c017100a4d05e03f296787124e443e3)",
+      "expected_head_sha": "9291873a5c017100a4d05e03f296787124e443e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:47:15.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "main",
+        "head_sha": "9291873a5c017100a4d05e03f296787124e443e3",
         "cluster_id": null,
         "job_path": null
       }
