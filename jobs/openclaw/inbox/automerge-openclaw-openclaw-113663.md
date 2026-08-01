@@ -2,6 +2,7 @@
 repo: openclaw/openclaw
 cluster_id: automerge-openclaw-openclaw-113663
 mode: autonomous
+repair_mode: automerge
 job_intent: automerge_pr
 allowed_actions:
   - comment
@@ -30,17 +31,17 @@ security_policy: central_security_only
 security_sensitive: false
 target_branch: clawsweeper/automerge-openclaw-openclaw-113663
 source: pr_automerge
-requested_by: "clawsweeper[bot]"
-requested_by_id: "274271284"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/113663#issuecomment-5078625250"
+requested_by: "Takhoffman"
+requested_by_id: "781889"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/113663#issuecomment-5078834281"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
 Maintainer opted #113663 into ClawSweeper automerge.
 
-Requested by: clawsweeper[bot]
-Request comment: https://github.com/openclaw/openclaw/pull/113663#issuecomment-5078625250
+Requested by: Takhoffman
+Request comment: https://github.com/openclaw/openclaw/pull/113663#issuecomment-5078834281
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/113663
