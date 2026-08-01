@@ -1,0 +1,129 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117470",
+  "mode": "autonomous",
+  "run_id": "30706236466",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30706236466",
+  "head_sha": "e9f97b34fd5950884dd6b9ec45f46f4851cf506c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117470.md",
+  "published_at": "2026-08-01T15:44:26.178Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117470",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117470",
+  "canonical_pr": null,
+  "summary": "#117470 remains a distinct, credible manual-compaction defect on current main 4cd6f14f6db4ff1012f1c405e33b33ddbdb77510. `commands-compact.ts` forwards request-default provider/model to the embedded compactor even after loading the persisted session entry, while normal turns resolve stored model/runtime selection through the model-selection path. A narrow repair likely exists, but this issue also requires validating the Codex-harness fallback described in the report. The mandatory sibling `../codex` source is absent, and this read-only worker cannot clone it; no code or PR plan can be safely finalized under the repository's Codex dependency gate.",
+  "actions": [
+    {
+      "target": "#117470",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117470",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the mandatory Codex dependency-inspection gate; no maintainer product decision is needed."
+    },
+    {
+      "target": "#87284",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#103231",
+      "candidate_fix": null,
+      "reason": "Keep open as a related but separate automatic-compaction/recovery report."
+    },
+    {
+      "target": "#103231",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct root cause and owner boundary; do not combine implementation work."
+    },
+    {
+      "target": "#28337",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; not a mutation target."
+    },
+    {
+      "target": "#108984",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; related compaction-routing evidence only."
+    },
+    {
+      "target": "#111886",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": "#115309",
+      "reason": "Already fixed and closed; historical context only."
+    },
+    {
+      "target": "#115309",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged historical context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117470",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#117470",
+      "candidate_fix": null,
+      "reason": "Emit the bounded artifact for later execution, but block implementation until the required sibling Codex source is available and the actual Claude CLI usage normalizer is directly inspected."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 2,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117470",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
