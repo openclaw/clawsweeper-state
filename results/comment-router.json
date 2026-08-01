@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:39:47.581Z",
+  "updated_at": "2026-08-01T17:39:47.799Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115545:5152182715:2026-08-01T15:54:41Z:re_review",
-      "comment_id": "5152182715",
-      "comment_version_key": "5152182715:2026-08-01T15:54:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115545#issuecomment-5152182715",
-      "comment_created_at": "2026-08-01T15:54:41Z",
-      "comment_updated_at": "2026-08-01T15:54:41Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115545,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T15:55:17.905Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse-merhi/web-fetch-headers",
-        "head_sha": "39b4904ddb5124bdc713810740f537ac0df64a17",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112326:5123315561:2026-07-29T21:02:01Z:re_review",
       "comment_id": "5123315561",
@@ -31312,6 +31265,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
         "head_sha": "68f3ad017cc08dec6621daf3fdbdcb130257d652",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:132:5135268702:2026-08-01T17:38:22Z:clawsweeper_auto_repair",
+      "comment_id": "5135268702",
+      "comment_version_key": "5135268702:2026-08-01T17:38:22Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/132#issuecomment-5135268702",
+      "comment_created_at": "2026-07-30T19:19:58Z",
+      "comment_updated_at": "2026-08-01T17:38:22Z",
+      "comment_body_sha256": "014b6b90766083da4c8686c611ea584c254f07abe20183f0a547709a17d60bf0",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f3451e10d613e35b9393d6d00b35ac92036c9fb6)",
+      "expected_head_sha": "f3451e10d613e35b9393d6d00b35ac92036c9fb6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:39:47.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
+        "head_sha": "f3451e10d613e35b9393d6d00b35ac92036c9fb6",
         "cluster_id": null,
         "job_path": null
       }
