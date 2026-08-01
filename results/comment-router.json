@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:43:37.738Z",
+  "updated_at": "2026-08-01T08:43:53.847Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81857:4452404930:2026-08-01T06:06:26Z:autoclose",
-      "comment_id": "4452404930",
-      "comment_version_key": "4452404930:2026-08-01T06:06:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/81857#issuecomment-4452404930",
-      "comment_created_at": "2026-05-14T16:07:06Z",
-      "comment_updated_at": "2026-08-01T06:06:26Z",
-      "comment_body_sha256": "7db361ee971a0753b50f55e383107826f40a11e2d72bb543dd51d0ce919bd8ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 81857,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=04ed8b30ece0471a80938660a7dd2af8b6106ea3)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=04ed8b30ece0471a80938660a7dd2af8b6106ea3)",
-      "expected_head_sha": "04ed8b30ece0471a80938660a7dd2af8b6106ea3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:06:59.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "active-memory-tools",
-        "head_sha": "04ed8b30ece0471a80938660a7dd2af8b6106ea3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117225:5150114423:2026-08-01T06:06:53Z:clawsweeper_needs_human",
       "comment_id": "5150114423",
@@ -32480,6 +32447,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117159:5150670430:2026-08-01T08:43:14Z:re_review",
+      "comment_id": "5150670430",
+      "comment_version_key": "5150670430:2026-08-01T08:43:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117159#issuecomment-5150670430",
+      "comment_created_at": "2026-08-01T08:43:14Z",
+      "comment_updated_at": "2026-08-01T08:43:14Z",
+      "comment_body_sha256": "dc050b2c4279e1b6af12401bfb01be62033e03bfb65ed0ba386ff89e4276bfc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117159,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review: rebased the unchanged focused repair onto live main b0b708d919420d8aebc8aa1cf98576cd9679aacc after #117282 rewrote the downstream imessage delivery boundary. review exact head b746c8bfcbc8940509c071c6fac61ccd23ad2c01. sanitized aws proof on that exact head passed 193/193 across monitor.behavior, deliver integration, and plugin-payload tests; targeted oxfmt and oxlint passed with zero findings; fresh autoreview is clean. the exact-head check-lint failure has no diagnostic and is another externally canceled core shard (exit 143); one failed-only rerun is active",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:43:51.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oss-find/openclaw-2026-07-31-d",
+        "head_sha": "b746c8bfcbc8940509c071c6fac61ccd23ad2c01",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
