@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:24:21.850Z",
+  "updated_at": "2026-08-01T08:24:26.885Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117215:5149872280:2026-08-01T05:58:45Z:clawsweeper_needs_human",
-      "comment_id": "5149872280",
-      "comment_version_key": "5149872280:2026-08-01T05:58:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117215#issuecomment-5149872280",
-      "comment_created_at": "2026-08-01T04:52:53Z",
-      "comment_updated_at": "2026-08-01T05:58:45Z",
-      "comment_body_sha256": "4f9b624a83a304cd447b115392937a1969dcdaed4b0ae61a8e8df807fcb78f88",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117215,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the failure contract for stalled relay transcript persistence: an admission overflow now sends one terminal error and closes the relay after draining accepted writes.... (sha=cdf683f0044232df1ca01391eab769284b4d4a2e)",
-      "expected_head_sha": "cdf683f0044232df1ca01391eab769284b4d4a2e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:59:20.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-transcript-relay-bound",
-        "head_sha": "cdf683f0044232df1ca01391eab769284b4d4a2e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117244:5150054431:2026-08-01T05:55:26Z:clawsweeper_needs_human",
       "comment_id": "5150054431",
@@ -32348,6 +32315,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117256:5150605243:2026-08-01T08:23:52Z:re_review",
+      "comment_id": "5150605243",
+      "comment_version_key": "5150605243:2026-08-01T08:23:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117256#issuecomment-5150605243",
+      "comment_created_at": "2026-08-01T08:23:52Z",
+      "comment_updated_at": "2026-08-01T08:23:52Z",
+      "comment_body_sha256": "df0941f757e6edf1214dd2bc0334a9802a177ee62862c7940fbedb5c65469902",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117256,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:24:23.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "joshavant/issue-109601-20260801t044651z-b4f2a81d",
+        "head_sha": "67bdda2000fc7e84f9014fb0b7e3124dbf272d20",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
