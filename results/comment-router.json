@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:52:17.975Z",
+  "updated_at": "2026-08-01T18:52:20.300Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5152337207:2026-08-01T16:32:52Z:re_review",
-      "comment_id": "5152337207",
-      "comment_version_key": "5152337207:2026-08-01T16:32:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5152337207",
-      "comment_created_at": "2026-08-01T16:32:52Z",
-      "comment_updated_at": "2026-08-01T16:32:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:33:29.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media",
-        "head_sha": "d6d47f6ab4e54ed057a659ff080eb21a52d46060",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117502:5152339450:2026-08-01T16:33:30Z:clawsweeper_needs_human",
       "comment_id": "5152339450",
@@ -32891,6 +32844,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.4",
         "head_sha": "bcd7c91b565fd898adaf966f04c60a68548ed1ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:59:5118062986:2026-08-01T18:51:25Z:clawsweeper_needs_human",
+      "comment_id": "5118062986",
+      "comment_version_key": "5118062986:2026-08-01T18:51:25Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/59#issuecomment-5118062986",
+      "comment_created_at": "2026-07-29T12:58:23Z",
+      "comment_updated_at": "2026-08-01T18:51:25Z",
+      "comment_body_sha256": "542daca2ca562a4080ecf957f8f4befab80ebf73dab7301d1d7b4feef0767fb0",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 59,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the upgraded verified-secret gate** - TruffleHog v3.96.0 changes detector and verification behavior while this workflow fails only on verified findings; the current PR-body evi...; Review finding: [medium] Validate the upgraded verified-secret gate — .github/workflows/secret-scan.yml:52 (sha=a9be40be753371bdc142ce660ddc8596b1c56ff8)",
+      "expected_head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:52:20.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
         "cluster_id": null,
         "job_path": null
       }
