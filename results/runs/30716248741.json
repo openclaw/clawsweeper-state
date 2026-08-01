@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117545",
+  "mode": "autonomous",
+  "run_id": "30716248741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30716248741",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
+  "published_at": "2026-08-01T20:12:46.652Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_pr": null,
+  "summary": "Current main `a26df7153f8118d26b14e2c95633002ced20128d` still has the same-ID remote-overlay precedence defect, but safe implementation is blocked on the job's required authenticated NVIDIA retirement classification. The restricted, read-only worker has neither an NVIDIA credential nor installed test dependencies.",
+  "actions": [
+    {
+      "target": "#117545",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "Keep the issue open as the canonical thread while current provider evidence determines the exact globally retired IDs eligible for plugin-owned suppression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117545",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "The implementation is narrow, but the exact retirement policy is a provider fact that must not be inferred from a report or stale manifest metadata."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117545",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "Do not create an executable PR until live evidence resolves the provider-policy ambiguity."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide safe, redacted authenticated NVIDIA `/v1/models` output and direct completion outcomes for the reported IDs, explicitly separating globally retired models from entitlement-only failures such as Kimi K2.6. Re-run this cluster in a writable checkout with dependencies installed."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117545",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

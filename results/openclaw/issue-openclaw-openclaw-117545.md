@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117545"
 mode: "autonomous"
-run_id: "30715971168"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30715971168"
+run_id: "30716248741"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30716248741"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-01T20:06:21.874Z"
+published_at: "2026-08-01T20:12:46.652Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30715971168](https://github.com/openclaw/clawsweeper/actions/runs/30715971168)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30716248741](https://github.com/openclaw/clawsweeper/actions/runs/30716248741)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/117545
 
 ## Summary
 
-Current main contains the reported overlay-precedence defect, but this worker cannot safely implement the requested retirement policy: the required authenticated, redacted NVIDIA live classification is unavailable in the restricted environment, and the read-only checkout cannot install the missing test dependency.
+Current main `a26df7153f8118d26b14e2c95633002ced20128d` still has the same-ID remote-overlay precedence defect, but safe implementation is blocked on the job's required authenticated NVIDIA retirement classification. The restricted, read-only worker has neither an NVIDIA credential nor installed test dependencies.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main contains the reported overlay-precedence defect, but this worker ca
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117545 | keep_canonical | planned | canonical | Keep the issue open as the canonical repair thread while live provider evidence identifies which IDs qualify for unconditional suppression. |
-| cluster:issue-openclaw-openclaw-117545 | fix_needed | blocked | needs_human | The source-level repair is narrow, but the provider-owned policy cannot safely be changed without the required live classification. |
-| cluster:issue-openclaw-openclaw-117545 | build_fix_artifact | blocked | needs_human | A concrete patch awaits the authenticated provider classification; no code or PR branch can be safely produced in this checkout. |
+| #117545 | keep_canonical | planned | canonical | Keep the issue open as the canonical thread while current provider evidence determines the exact globally retired IDs eligible for plugin-owned suppression. |
+| cluster:issue-openclaw-openclaw-117545 | fix_needed | blocked | needs_human | The implementation is narrow, but the exact retirement policy is a provider fact that must not be inferred from a report or stale manifest metadata. |
+| cluster:issue-openclaw-openclaw-117545 | build_fix_artifact | blocked | needs_human | Do not create an executable PR until live evidence resolves the provider-policy ambiguity. |
 
 ## Needs Human
 
-- Provide safe, redacted authenticated NVIDIA `/v1/models` listing and direct completion outcomes for the reported IDs, explicitly separating globally retired IDs from account-specific entitlement failures such as Kimi K2.6. Re-run the cluster in a writable checkout with network access and dependencies installed.
+- Provide safe, redacted authenticated NVIDIA `/v1/models` output and direct completion outcomes for the reported IDs, explicitly separating globally retired models from entitlement-only failures such as Kimi K2.6. Re-run this cluster in a writable checkout with dependencies installed.
