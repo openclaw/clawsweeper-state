@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:54:11.803Z",
+  "updated_at": "2026-08-01T09:54:52.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98657:4862980938:2026-07-02T06:52:45Z:re_review",
-      "comment_id": "4862980938",
-      "comment_version_key": "4862980938:2026-07-02T06:52:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98657#issuecomment-4862980938",
-      "comment_created_at": "2026-07-02T06:52:45Z",
-      "comment_updated_at": "2026-07-02T06:52:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98657,
-      "author": "zhangLei99586",
-      "author_id": 294081397,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:05:34.109Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98657:4862998198:2026-07-02T06:55:26Z:re_review",
       "comment_id": "4862998198",
@@ -32732,6 +32705,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:72129:4322677086:2026-08-01T09:54:04Z:clawsweeper_needs_human",
+      "comment_id": "4322677086",
+      "comment_version_key": "4322677086:2026-08-01T09:54:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/72129#issuecomment-4322677086",
+      "comment_created_at": "2026-04-26T18:14:54Z",
+      "comment_updated_at": "2026-08-01T09:54:04Z",
+      "comment_body_sha256": "69c2942c93b4ffcd86d99019d08f226e2a6b6b08244323c354433a1c79d59ad5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 72129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR supplies redacted terminal output from a built live route, but the generation attempt returned HTTP 402 and no successful curre... (sha=e2731f63ecd2620e2344438963f48952c98b1d81)",
+      "expected_head_sha": "e2731f63ecd2620e2344438963f48952c98b1d81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:54:52.720Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/huggingface-image-generation",
+        "head_sha": "e2731f63ecd2620e2344438963f48952c98b1d81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
