@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:42:21.650Z",
+  "updated_at": "2026-08-01T11:42:42.023Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116784:5150751729:2026-08-01T09:04:42Z:re_review",
-      "comment_id": "5150751729",
-      "comment_version_key": "5150751729:2026-08-01T09:04:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116784#issuecomment-5150751729",
-      "comment_created_at": "2026-08-01T09:04:42Z",
-      "comment_updated_at": "2026-08-01T09:04:42Z",
-      "comment_body_sha256": "e4cd3edcafe8025c2818199c09faeeaea689c10eaad86b4457d892e137dbe255",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116784,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T09:05:16.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-116732",
-        "head_sha": "fe760941e33ff28119ea6506d7b89ab6620ab1f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117290:5150533761:2026-08-01T09:00:55Z:clawsweeper_needs_human",
       "comment_id": "5150533761",
@@ -32057,6 +32010,39 @@
         "kind": "pull_request",
         "branch": "fix/112395-state-dir-skip-notice",
         "head_sha": "c1ac2505148bafab87ff2ef50227578d99050c37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117364:5151144666:2026-08-01T11:42:06Z:clawsweeper_needs_human",
+      "comment_id": "5151144666",
+      "comment_version_key": "5151144666:2026-08-01T11:42:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117364#issuecomment-5151144666",
+      "comment_created_at": "2026-08-01T11:04:24Z",
+      "comment_updated_at": "2026-08-01T11:42:06Z",
+      "comment_body_sha256": "298cdc84f1754f7f33eab5712c4ba628959d9076f12fd40ee72065e099c43bfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117364,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes an LM Studio after-fix result, but it contains no inspectable redacted transcript, terminal output, log, screenshot with... (sha=ac8cc6214e375ab4f2c7991a9c97a45846273090)",
+      "expected_head_sha": "ac8cc6214e375ab4f2c7991a9c97a45846273090",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:42:42.023Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-current-turn-runtime-context",
+        "head_sha": "ac8cc6214e375ab4f2c7991a9c97a45846273090",
         "cluster_id": null,
         "job_path": null
       }
