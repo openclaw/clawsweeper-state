@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117338",
+  "mode": "autonomous",
+  "run_id": "30695114668",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30695114668",
+  "head_sha": "1c9cb5dc6dd27321cd37daed40bc09afde400e1b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117338.md",
+  "published_at": "2026-08-01T10:55:34.056Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117338",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117338",
+  "canonical_pr": null,
+  "summary": "The current-main source confirms the bounded Chinese recall-intent defect: default escalate mode returns before deep recall because its intent list contains only English and Spanish patterns. A focused three-file repair is ready for an executor, but this checkout is read-only and lacks dependencies; Corepack cannot create its cache, so no branch delta or local Vitest proof can be produced in this worker.",
+  "actions": [
+    {
+      "target": "#117338",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117338",
+      "candidate_fix": null,
+      "reason": "Implementation is suitable and narrowly defined, but this worker cannot modify the read-only checkout or bootstrap the missing package manager/dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117338",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117338",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited automated fix PR from clawsweeper/issue-openclaw-openclaw-117338 after restoring a writable trusted checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
