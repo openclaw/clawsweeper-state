@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:38:59.796Z",
+  "updated_at": "2026-08-01T10:40:16.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:87471:4589458281:2026-06-01T04:07:36Z:re_review",
-      "comment_id": "4589458281",
-      "comment_version_key": "4589458281:2026-06-01T04:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87471#issuecomment-4589458281",
-      "comment_created_at": "2026-06-01T04:07:36Z",
-      "comment_updated_at": "2026-06-01T04:07:36Z",
-      "comment_body_sha256": "d916549d016d73f652c5c54b99bb430abb133d7d32496284e7e77dd47fc93a63",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87471,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:51:53.394Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:87471:4595082760:2026-06-01T17:47:14Z:re_review",
       "comment_id": "4595082760",
@@ -32605,6 +32578,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T10:38:59.795Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117339:5150969367:2026-08-01T10:36:55Z:clawsweeper_needs_human",
+      "comment_id": "5150969367",
+      "comment_version_key": "5150969367:2026-08-01T10:36:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117339#issuecomment-5150969367",
+      "comment_created_at": "2026-08-01T10:10:44Z",
+      "comment_updated_at": "2026-08-01T10:36:55Z",
+      "comment_body_sha256": "ecb81b50895a64e2ff875525305bbaf583545422c2f9fda1ce48c46f7f753f5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocked-transport tests and mutation evidence support the owner-boundary logic, but no redacted after-fix runtime HTTP-stream or provide... (sha=66ab44e2fad733c6cd7cc5ad4df24f33dd55dc51)",
+      "expected_head_sha": "66ab44e2fad733c6cd7cc5ad4df24f33dd55dc51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:40:16.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/video-download-binary-validation",
+        "head_sha": "66ab44e2fad733c6cd7cc5ad4df24f33dd55dc51",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
