@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117161",
+  "mode": "autonomous",
+  "run_id": "30679777184",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30679777184",
+  "head_sha": "b07ab751813c722d45f07ef955a8b5752ebbbb19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117161.md",
+  "published_at": "2026-08-01T02:27:35.333Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_pr": null,
+  "summary": "The supplied main revision still has the race, and source inspection confirms a narrow deterministic test-only repair. This read-only checkout has no `node_modules`; attempting `pnpm --version` fails because Corepack cannot create its cache on the read-only filesystem, so the required focused reproduction and branch edit cannot run here.",
+  "actions": [
+    {
+      "target": "#103822",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context ref only; no mutation or closeout is appropriate."
+    },
+    {
+      "target": "#117161",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "A narrow test-only fix is required, but implementation and validation must run in the writable executor environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117161",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "Executor should create the one narrow, credited implementation PR after reproducing the flaky assertion on writable infrastructure."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
