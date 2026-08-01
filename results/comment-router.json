@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:09:08.019Z",
+  "updated_at": "2026-08-01T11:09:20.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117248:5150601406:2026-08-01T08:22:38Z:re_review",
-      "comment_id": "5150601406",
-      "comment_version_key": "5150601406:2026-08-01T08:22:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5150601406",
-      "comment_created_at": "2026-08-01T08:22:38Z",
-      "comment_updated_at": "2026-08-01T08:22:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117248,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:23:17.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-rem-junk-topics",
-        "head_sha": "4f11722b90c201292bfc8e79771dd6100a4e369f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114750:5150601404:2026-08-01T08:22:38Z:re_review",
       "comment_id": "5150601404",
@@ -32155,6 +32108,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-plugin-enable-blocked",
         "head_sha": "2282d6b4c229648a2ce42cce842464dd5c98b30f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117369:5151159652:2026-08-01T11:08:43Z:clawsweeper_auto_repair",
+      "comment_id": "5151159652",
+      "comment_version_key": "5151159652:2026-08-01T11:08:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117369#issuecomment-5151159652",
+      "comment_created_at": "2026-08-01T11:08:43Z",
+      "comment_updated_at": "2026-08-01T11:08:43Z",
+      "comment_body_sha256": "443883c3c345f688b173372b22c83ff4e3e5cc0075f866fc3446bc27d08751e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=17d4e9513d2219d3fb02c113fc8dc9ec82f44c53)",
+      "expected_head_sha": "17d4e9513d2219d3fb02c113fc8dc9ec82f44c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:09:20.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-openai-binary-payload-ownership",
+        "head_sha": "17d4e9513d2219d3fb02c113fc8dc9ec82f44c53",
         "cluster_id": null,
         "job_path": null
       }
