@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:13:13.994Z",
+  "updated_at": "2026-08-01T03:13:14.900Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114653:5097888072:2026-07-27T23:14:30Z:re_review",
-      "comment_id": "5097888072",
-      "comment_version_key": "5097888072:2026-07-27T23:14:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/114653#issuecomment-5097888072",
-      "comment_created_at": "2026-07-27T23:14:30Z",
-      "comment_updated_at": "2026-07-27T23:14:30Z",
-      "comment_body_sha256": "ebf3d441f26a8799919740892d5f5ad563c6cc5504de58560bbd872a9fff95f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114653,
-      "author": "jrex-jooni",
-      "author_id": 266595103,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — adding the reproduction/debug details requested, from a new occurrence (the 4th we have records for), which also speaks to the open question of whether this is transient or the deterministic #114180 mechanism",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-07-31T22:39:07.951Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:241:5092361352:2026-07-31T22:38:15Z:clawsweeper_auto_repair",
       "comment_id": "5092361352",
@@ -33012,6 +32967,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/types/node-26.1.2",
         "head_sha": "a5824e406d9d24dc33ffed6af6a99028de19d891",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/releasebar:75:4991294638:2026-08-01T03:05:14Z:clawsweeper_needs_human",
+      "comment_id": "4991294638",
+      "comment_version_key": "4991294638:2026-08-01T03:05:14Z",
+      "comment_url": "https://github.com/steipete/ReleaseBar/pull/75#issuecomment-4991294638",
+      "comment_created_at": "2026-07-16T11:28:42Z",
+      "comment_updated_at": "2026-08-01T03:05:14Z",
+      "comment_body_sha256": "8276de5265376a1be13fdddb1569c0d36dffdaa13b452d8aa1b6e2c88b5cd055",
+      "repo": "steipete/releasebar",
+      "issue_number": 75,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the Vite version that produces deployable Cloudflare Worker Assets; static CI is green, but the PR contains no after-fix build or deployed smoke evidence for this lock... (sha=4b4ffb45966dbd7cbc0b5ad9f5b3d200a1b9b195)",
+      "expected_head_sha": "4b4ffb45966dbd7cbc0b5ad9f5b3d200a1b9b195",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:13:14.899Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/vite-8.1.5",
+        "head_sha": "4b4ffb45966dbd7cbc0b5ad9f5b3d200a1b9b195",
         "cluster_id": null,
         "job_path": null
       }
