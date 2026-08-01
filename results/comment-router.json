@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:00:43.076Z",
+  "updated_at": "2026-08-01T08:00:46.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:993:5149937422:2026-08-01T05:12:45Z:re_review",
-      "comment_id": "5149937422",
-      "comment_version_key": "5149937422:2026-08-01T05:12:45Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/993#issuecomment-5149937422",
-      "comment_created_at": "2026-08-01T05:12:45Z",
-      "comment_updated_at": "2026-08-01T05:12:45Z",
-      "comment_body_sha256": "0d38c8cdf5fee3444d9db3ef6b57fcd16eb80cc74963adf9bc998605169ecb0d",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 993,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:13:23.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawsweeper-focused-modules",
-        "head_sha": "5189aec2212e71b9161899f320eabe596f6052f7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:67:5093442392:2026-08-01T05:09:07Z:clawsweeper_auto_repair",
       "comment_id": "5093442392",
@@ -32492,6 +32445,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/clawrouter-788c547",
         "head_sha": "46f732c9d13afd737f7ad32d3d9af84a2031ea7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114538:5090813437:2026-08-01T08:00:10Z:clawsweeper_needs_human",
+      "comment_id": "5090813437",
+      "comment_version_key": "5090813437:2026-08-01T08:00:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114538#issuecomment-5090813437",
+      "comment_created_at": "2026-07-27T11:37:56Z",
+      "comment_updated_at": "2026-08-01T08:00:10Z",
+      "comment_body_sha256": "b17be01c340cfa927e42d836611062677e3797a1b4f324d71f47e42ece0ed82d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently reports the branch as dirty even though the local three-way merge against current main is clean; mergeability must be refreshed or rechecked on the exact head before... (sha=498dbb32144dec5e81ae0ec74cff126a926c3f41)",
+      "expected_head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:00:46.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-message-action-workspace-media",
+        "head_sha": "498dbb32144dec5e81ae0ec74cff126a926c3f41",
         "cluster_id": null,
         "job_path": null
       }
