@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:02:48.560Z",
+  "updated_at": "2026-08-01T17:03:06.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2548:5152059051:2026-08-01T15:23:15Z:re_review",
-      "comment_id": "5152059051",
-      "comment_version_key": "5152059051:2026-08-01T15:23:15Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2548#issuecomment-5152059051",
-      "comment_created_at": "2026-08-01T15:23:15Z",
-      "comment_updated_at": "2026-08-01T15:23:15Z",
-      "comment_body_sha256": "75e9b298ef29cd1ed90e75bfe87a3978a77faba8f04f96a0a3a94542c0a634e1",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2548,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T15:23:55.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/activity-heatmap-ux",
-        "head_sha": "554ef51df5522d80a436c21b0aec85c7ad550534",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116248:5127213151:2026-07-30T06:03:52Z:re_review",
       "comment_id": "5127213151",
@@ -31428,6 +31381,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117184:5149539587:2026-08-01T17:02:20Z:clawsweeper_needs_human",
+      "comment_id": "5149539587",
+      "comment_version_key": "5149539587:2026-08-01T17:02:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5149539587",
+      "comment_created_at": "2026-08-01T03:14:55Z",
+      "comment_updated_at": "2026-08-01T17:02:20Z",
+      "comment_body_sha256": "a209ba08f60ca0eb0b1c9a54fff7cd7913ea4adf184fd7e5045f42be227ca82a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117184,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains a redacted pasted terminal transcript, but no inspectable final-head artifact demonstrates the actual getReplyFro... (sha=7f5b7efa55df36bb241404a4c89ebcab342c3453)",
+      "expected_head_sha": "7f5b7efa55df36bb241404a4c89ebcab342c3453",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:03:06.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media",
+        "head_sha": "7f5b7efa55df36bb241404a4c89ebcab342c3453",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
