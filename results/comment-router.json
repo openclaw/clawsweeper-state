@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:54:36.526Z",
+  "updated_at": "2026-08-01T19:54:41.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117522:5152472955:2026-08-01T17:11:51Z:clawsweeper_needs_human",
-      "comment_id": "5152472955",
-      "comment_version_key": "5152472955:2026-08-01T17:11:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117522#issuecomment-5152472955",
-      "comment_created_at": "2026-08-01T17:07:46Z",
-      "comment_updated_at": "2026-08-01T17:11:51Z",
-      "comment_body_sha256": "e444797cda83a0ce1fdd56db12a0ec35cbbf334d3c3a9973b8d84b40f5f87b33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117522,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR documents a pre-fix production incident and controlled dispatcher regression coverage, but it explicitly lacks an after-fix patched-runt... (sha=5117f3507f2009f344af5217554b0c0b9baa2518)",
-      "expected_head_sha": "5117f3507f2009f344af5217554b0c0b9baa2518",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:36:24.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/heartbeat-no-reply-fallback",
-        "head_sha": "5117f3507f2009f344af5217554b0c0b9baa2518",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117526:5152503224:2026-08-01T17:15:51Z:clawsweeper_needs_human",
       "comment_id": "5152503224",
@@ -32323,6 +32290,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T19:53:47Z:clawsweeper_auto_merge",
+      "comment_id": "5146046509",
+      "comment_version_key": "5146046509:2026-08-01T19:53:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
+      "comment_created_at": "2026-07-31T18:08:22Z",
+      "comment_updated_at": "2026-08-01T19:53:47Z",
+      "comment_body_sha256": "0f2b10251aad218b0e774d25233e3b0800fa6ef4e094e7edb41d70ffd540087e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=a499f5483624ce1aa1f70d9f91668b64e544aa08); PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "a499f5483624ce1aa1f70d9f91668b64e544aa08",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:54:41.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+        "head_sha": "a499f5483624ce1aa1f70d9f91668b64e544aa08",
+        "cluster_id": "automerge-openclaw-openclaw-116976",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+        }
+      ]
     }
   ]
 }
