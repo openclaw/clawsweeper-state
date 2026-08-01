@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T14:14:08.278Z",
+  "updated_at": "2026-08-01T14:13:58.498Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:70:5140450221:2026-08-01T11:54:13Z:clawsweeper_auto_repair",
+      "comment_id": "5140450221",
+      "comment_version_key": "5140450221:2026-08-01T11:54:13Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/70#issuecomment-5140450221",
+      "comment_created_at": "2026-07-31T07:28:52Z",
+      "comment_updated_at": "2026-08-01T11:54:13Z",
+      "comment_body_sha256": "efbc904b2e6df7e17637e57a8f9c17a8ab3c65c199d2bbbae2c17768413632d2",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 70,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366)",
+      "expected_head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:54:50.774Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
+        "head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:64:5146456080:2026-08-01T11:54:15Z:clawsweeper_needs_human",
       "comment_id": "5146456080",
@@ -32047,39 +32080,6 @@
       "status": "skipped",
       "processed_at": "2026-08-01T14:13:58.497Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:220:4987751509:2026-08-01T14:13:11Z:clawsweeper_needs_human",
-      "comment_id": "4987751509",
-      "comment_version_key": "4987751509:2026-08-01T14:13:11Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/220#issuecomment-4987751509",
-      "comment_created_at": "2026-07-16T03:06:53Z",
-      "comment_updated_at": "2026-08-01T14:13:11Z",
-      "comment_body_sha256": "4941549b01a88395ee89cf2679478293a277e0cb7388a1b613e55ecc77b01424",
-      "repo": "openclaw/crabpot",
-      "issue_number": 220,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Preserve current lock-security overrides on rebase** - The PR-head manifest keeps only the qs override, whereas current main also pins esbuild, tsx, and undici through the merged fixtur...; Review finding: [medium] Preserve current lock-security overrides on rebase — plugins/memory-tencentdb/package.json:7 (sha=3d852806bb9439502ef4b083797ff3e2229ea925)",
-      "expected_head_sha": "3d852806bb9439502ef4b083797ff3e2229ea925",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:14:08.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/plugins/memory-tencentdb/tencentdb-agent-memory/memory-tencentdb-1.0.1",
-        "head_sha": "3d852806bb9439502ef4b083797ff3e2229ea925",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
