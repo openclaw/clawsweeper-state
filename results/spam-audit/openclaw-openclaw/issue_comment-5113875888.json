@@ -1,0 +1,43 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.954Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5113875888",
+    "node_id": "IC_kwDOQb6kR88AAAABMM-NsA",
+    "url": "https://github.com/openclaw/openclaw/issues/115642#issuecomment-5113875888",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115642",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:08:36Z",
+    "updated_at": "2026-08-01T22:58:34Z",
+    "body_hash": "f7c37e32ba4dac23ec9e35a2cbcfa8b530ae28ee06c10fb610ba2b2ff66c88d1",
+    "body_excerpt": "## Root Cause Analysis: Billing Cooldown Outlives the Outage I traced the full billing cooldown lifecycle through the bundled source. Here ... providers | WHAM is OpenAI-only, billing reasons excluded from WHAM | Provider-agnostic lightweight probe for billing-disabled profiles |",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://chatgpt.com/backend-api/wham/usage"
+    ]
+  },
+  "model_result": {
+    "comment_id": "5113875888",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

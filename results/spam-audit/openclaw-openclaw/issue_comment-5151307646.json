@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.952Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5151307646",
+    "node_id": "IC_kwDOQb6kR88AAAABMwq3fg",
+    "url": "https://github.com/openclaw/openclaw/issues/116746#issuecomment-5151307646",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/116746",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-08-01T11:54:39Z",
+    "updated_at": "2026-08-01T22:58:38Z",
+    "body_hash": "e73f64e29250261c9d06e03dcca03380d14d73e29f4ab9f52502b82228461c59",
+    "body_excerpt": "Confirmed against current main (d2b869e). The contradiction is straightforward. **Root cause:** `TAB_BOUND_ACTIONS` in `extensions/browser ... ation, not a reason to keep `extract` out of `TAB_BOUND_ACTIONS` — Playwright-managed tab bindings (the common case) will work correctly.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5151307646",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.952Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5114096700",
+    "node_id": "IC_kwDOQb6kR88AAAABMNLsPA",
+    "url": "https://github.com/openclaw/openclaw/issues/115449#issuecomment-5114096700",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115449",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:38:25Z",
+    "updated_at": "2026-08-01T22:58:38Z",
+    "body_hash": "d28b20f32132d045013a744c35f5702e8befa8e576ff3ff249232ba05d103c0c",
+    "body_excerpt": "## Root Cause Analysis: JSON Schema Conversion Error with Local Models ### Summary When OpenClaw converts Zod v4 tool schemas to JSON Sche ... - OpenClaw: 2026.7.1-2 - Zod: 4.4.3 (bundled, `toJSONSchema` from `zod/v4/core/json-schema-generator.js`) - @openclaw/ai: bundled in dist",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam",
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://json-schema.org/draft/2020-12/schema",
+      "https://json-schema.org/draft/2020-12/schema"
+    ]
+  },
+  "model_result": {
+    "comment_id": "5114096700",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

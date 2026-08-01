@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.953Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5114001048",
+    "node_id": "IC_kwDOQb6kR88AAAABMNF2mA",
+    "url": "https://github.com/openclaw/openclaw/issues/115628#issuecomment-5114001048",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115628",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:25:25Z",
+    "updated_at": "2026-08-01T22:58:36Z",
+    "body_hash": "9f8df2bc201786969497801316430c12a5ff585cf0f79a3505752ab3cfefc483",
+    "body_excerpt": "## Root Cause Analysis: Fresh thread diff includes pre-existing checkout changes ### Summary When a session is created with `worktree: tru ... h_n.js` (`sessions.create` handler) | Session creation with worktree provisioning | | `git-CwHg4Ptn.js` | Low-level git command helpers |",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5114001048",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

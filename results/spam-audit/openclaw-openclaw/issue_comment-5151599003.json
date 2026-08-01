@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.950Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5151599003",
+    "node_id": "IC_kwDOQb6kR88AAAABMw8pmw",
+    "url": "https://github.com/openclaw/openclaw/issues/117338#issuecomment-5151599003",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/117338",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-08-01T13:19:52Z",
+    "updated_at": "2026-08-01T22:58:43Z",
+    "body_hash": "8459ed051db5776730be8f0000d21096595cd6f1835d37bb22fbddbaf79b8362",
+    "body_excerpt": "## Investigation: `RECALL_INTENT_PATTERNS` is English/Spanish regex only, CJK input can never match The issue report is accurate. I confir ... ch does not scale. A model-based fallback for non-Latin scripts would be more robust than enumerating every language's recall vocabulary.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5151599003",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

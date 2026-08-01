@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.950Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5151599516",
+    "node_id": "IC_kwDOQb6kR88AAAABMw8rnA",
+    "url": "https://github.com/openclaw/openclaw/issues/117138#issuecomment-5151599516",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/117138",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-08-01T13:20:00Z",
+    "updated_at": "2026-08-01T22:58:44Z",
+    "body_hash": "6fc9e63825b6a564ad402c43ce2b5db25db761ee4813de53c27b6525162e22de",
+    "body_excerpt": "## Investigation: `OpenAiCompatibleEmbeddings` forwards `dimensions` into the request body; `isEmbeddingDimensionsRejectedError` catches s ... lly, broaden `isUnsupportedEmbeddingFieldError` to catch more 400 shapes, or switch to a default-off approach for the `dimensions` field.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5151599516",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

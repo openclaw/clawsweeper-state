@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.952Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5114040395",
+    "node_id": "IC_kwDOQb6kR88AAAABMNIQSw",
+    "url": "https://github.com/openclaw/openclaw/issues/115451#issuecomment-5114040395",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115451",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:30:43Z",
+    "updated_at": "2026-08-01T22:58:36Z",
+    "body_hash": "2cc56e695ecba62d50b53b31c096d665d11960064ed5688c1a53893c9af45e05",
+    "body_excerpt": "## Root Cause Analysis I traced the full code path for how thinking-policy resolves `max`/`ultra` reasoning tiers. The bug is confirmed: * ... ll`) | | `thinking.shared-BWnbgBUO.js` | `src/auto-reply/thinking.shared.ts` | 2-12 (`THINKING_LEVELS`), 21-29 (`THINKING_LEVEL_RANKS`) |",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5114040395",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

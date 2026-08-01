@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.951Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5151324338",
+    "node_id": "IC_kwDOQb6kR88AAAABMwr4sg",
+    "url": "https://github.com/openclaw/openclaw/issues/116348#issuecomment-5151324338",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/116348",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-08-01T11:59:54Z",
+    "updated_at": "2026-08-01T22:58:40Z",
+    "body_hash": "e5e87741763d2673aca12566c5e71fce697ed15ba29b8f70be26e328cb6df621",
+    "body_excerpt": "## Root Cause Analysis: `emptyFinalAllowedAsSilent` is a no-op in `requireMention` groups I traced the silent-reply policy chain from the  ... VisibleReplyFallbackText`). Empty string = suppress entirely. Any one of these would address the core problem. A and B are complementary.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5151324338",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

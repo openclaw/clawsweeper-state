@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.949Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5151599527",
+    "node_id": "IC_kwDOQb6kR88AAAABMw8rpw",
+    "url": "https://github.com/openclaw/openclaw/issues/117154#issuecomment-5151599527",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/117154",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-08-01T13:20:00Z",
+    "updated_at": "2026-08-01T22:58:44Z",
+    "body_hash": "8c94daa28e613956da4e8a8488f137e805ae4f6acce71e868ef9811c826dc0d2",
+    "body_excerpt": "## Investigation: `CURRENT_SOURCE_REPLY_ACTION_NAMES` explicitly excludes `thread-reply`; thread-placement validation is the missing piece ... ing via `thread-reply` + `NO_REPLY` can draw the no-visible-reply fallback despite having delivered to the current conversation's thread.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5151599527",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

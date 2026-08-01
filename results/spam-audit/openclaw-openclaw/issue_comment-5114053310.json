@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.952Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5114053310",
+    "node_id": "IC_kwDOQb6kR88AAAABMNJCvg",
+    "url": "https://github.com/openclaw/openclaw/issues/115424#issuecomment-5114053310",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115424",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:32:28Z",
+    "updated_at": "2026-08-01T22:58:37Z",
+    "body_hash": "52408b6a611566774f24113df5780808c83b87b16d8ebd2469fe5f0316728462",
+    "body_excerpt": "## Root Cause Analysis: V8 Heap OOM → 7-Core-Dump Loop (#115424) ### Summary The gateway process runs with **no explicit `--max-old-space- ...  32 MB raw bytes | | Recovery retries per startup | 3 (`MAX_RECOVERY_RETRIES`) | | Running sessions at crash | 5 (1 main + 4 subagents) |",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5114053310",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

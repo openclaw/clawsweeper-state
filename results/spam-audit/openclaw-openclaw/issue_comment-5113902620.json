@@ -1,0 +1,40 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-08-01T23:38:49.953Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5113902620",
+    "node_id": "IC_kwDOQb6kR88AAAABMM_2HA",
+    "url": "https://github.com/openclaw/openclaw/issues/115637#issuecomment-5113902620",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/115637",
+    "pull_request_url": null,
+    "author": "aurorabotticus-svg",
+    "author_association": "NONE",
+    "created_at": "2026-07-29T06:12:05Z",
+    "updated_at": "2026-08-01T22:58:34Z",
+    "body_hash": "72e529a2e583f088252ce6c9039da5db7b14d804a60e8f47f68756fecdd3f45c",
+    "body_excerpt": "## Root Cause Analysis: Matrix outbound E2EE fails for rooms joined before `initRustCrypto` ### Summary When a room is joined before `init ... epare` — no-op implementation | | `dist/monitor-C124lfVF.js` | 116-132 | Auto-join handler — can fire during startup before crypto init |",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": []
+  },
+  "model_result": {
+    "comment_id": "5113902620",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "GitHub deterministic signal indicates the comment was minimized as spam.",
+      "Audit policy treats already-minimized spam or abuse as high-signal spam regardless of technical-looking text."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}
