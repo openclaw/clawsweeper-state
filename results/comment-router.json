@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:03:40.252Z",
+  "updated_at": "2026-08-01T08:03:43.022Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116970:5145910128:2026-08-01T03:10:13Z:clawsweeper_needs_human",
-      "comment_id": "5145910128",
-      "comment_version_key": "5145910128:2026-08-01T03:10:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116970#issuecomment-5145910128",
-      "comment_created_at": "2026-07-31T17:52:42Z",
-      "comment_updated_at": "2026-08-01T03:10:13Z",
-      "comment_body_sha256": "21c0dffaeedd63353c42fe6501beee3d44622390bccff1a59fe9423d0869858f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116970,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The first request now changes from a configured long poll to a zero-timeout probe; an incorrect transition would delay or destabilize Telegram startup, so maintainers should wait for... (sha=bfa2057158bf549b2f21a4dfb2247689a081a0b0)",
-      "expected_head_sha": "bfa2057158bf549b2f21a4dfb2247689a081a0b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:20:09.647Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/telegram-polling-startup-health",
-        "head_sha": "bfa2057158bf549b2f21a4dfb2247689a081a0b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117034:5147384533:2026-08-01T04:48:03Z:clawsweeper_needs_human",
       "comment_id": "5147384533",
@@ -32354,6 +32321,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T08:03:40.251Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108522:4988509588:2026-08-01T08:03:10Z:clawsweeper_needs_human",
+      "comment_id": "4988509588",
+      "comment_version_key": "4988509588:2026-08-01T08:03:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108522#issuecomment-4988509588",
+      "comment_created_at": "2026-07-16T05:25:49Z",
+      "comment_updated_at": "2026-08-01T08:03:10Z",
+      "comment_body_sha256": "9580dd2e505a48e21ceeb67e1cf5be411c9557e00fb4d077902dc6cb84df3bea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and checks, but no inspectable after-fix live Slack transcript, recording, terminal output, artifact, or redacted run...; Review finding: [P1] Reuse the canonical Slack identity selector — src/config/types.slack.ts:163 - [medium] Avoid parallel active-identity configuration — src/config/types.slack.t... (sha=48ab69e5e2d4df68af28c26e14b360ff8462bdb1)",
+      "expected_head_sha": "48ab69e5e2d4df68af28c26e14b360ff8462bdb1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:03:43.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/slack-user-identity",
+        "head_sha": "48ab69e5e2d4df68af28c26e14b360ff8462bdb1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
