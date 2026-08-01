@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:29:26.206Z",
+  "updated_at": "2026-08-01T15:29:26.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116489:5151559508:2026-08-01T13:08:41Z:re_review",
-      "comment_id": "5151559508",
-      "comment_version_key": "5151559508:2026-08-01T13:08:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5151559508",
-      "comment_created_at": "2026-08-01T13:08:41Z",
-      "comment_updated_at": "2026-08-01T13:08:41Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T13:09:15.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "fd7c6f6f68da2d55dc4354c7a2dcbf7a561a29d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117401:5151559259:2026-08-01T13:08:36Z:clawsweeper_needs_human",
       "comment_id": "5151559259",
@@ -32408,6 +32361,39 @@
         "kind": "pull_request",
         "branch": "fix/provider-timeline-http-status",
         "head_sha": "eaed7effe3e9e20253162275aae2453c23142d53",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114163:5085102004:2026-08-01T15:22:32Z:clawsweeper_needs_human",
+      "comment_id": "5085102004",
+      "comment_version_key": "5085102004:2026-08-01T15:22:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114163#issuecomment-5085102004",
+      "comment_created_at": "2026-07-26T19:46:38Z",
+      "comment_updated_at": "2026-08-01T15:22:32Z",
+      "comment_body_sha256": "24df4084ace66efa66a8cb9ef1fa061d9eedf1f6da473a501474c40358425b66",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Define verified ingress before forwarding owner status (P1)** - senderIsOwner is passed into the embedded agent's trusted authorization inputs, but the new runtime export only documents that ingress authenticate...; Review finding: [P1] Define verified ingress before forwarding owner status — src/talk/agent-consult-runtime.ts:261-264 - [high] Plugin-supplied owner assertion lacks an enforced... (sha=0308d2f16240805187ee33539a80bcaff5521016)",
+      "expected_head_sha": "0308d2f16240805187ee33539a80bcaff5521016",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T15:29:26.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/facetime-owner-auth",
+        "head_sha": "0308d2f16240805187ee33539a80bcaff5521016",
         "cluster_id": null,
         "job_path": null
       }
