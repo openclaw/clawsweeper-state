@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:07:17.709Z",
+  "updated_at": "2026-08-01T18:08:04.204Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5152286750:2026-08-01T16:19:49Z:re_review",
-      "comment_id": "5152286750",
-      "comment_version_key": "5152286750:2026-08-01T16:19:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5152286750",
-      "comment_created_at": "2026-08-01T16:19:49Z",
-      "comment_updated_at": "2026-08-01T16:19:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:20:20.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "c219cafdd9bb87f9e3b6107aab697a134b2ce40e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:765:5121771922:2026-08-01T16:19:50Z:clawsweeper_needs_human",
       "comment_id": "5121771922",
@@ -32071,6 +32024,39 @@
         "kind": "pull_request",
         "branch": "codex/qa405-debug-async-ownership",
         "head_sha": "880ade6cdeaf881b662674c16b71e3af517b4b8e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115194:5105758034:2026-08-01T18:07:25Z:clawsweeper_needs_human",
+      "comment_id": "5105758034",
+      "comment_version_key": "5105758034:2026-08-01T18:07:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115194#issuecomment-5105758034",
+      "comment_created_at": "2026-07-28T14:54:11Z",
+      "comment_updated_at": "2026-08-01T18:07:25Z",
+      "comment_body_sha256": "d3493a155ad525568c86080f065a710a4074d7a134175bdff4c2e68015a35374",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as mergeable but behind main; refresh the final merge review against the current base before landing, without treating ordinary base drift as a patch defect. (sha=bf42388564e01e88ca4b19256dd3dd9a15d9dc37)",
+      "expected_head_sha": "bf42388564e01e88ca4b19256dd3dd9a15d9dc37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:08:04.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/qa-channel-reuse-toerrorobject",
+        "head_sha": "bf42388564e01e88ca4b19256dd3dd9a15d9dc37",
         "cluster_id": null,
         "job_path": null
       }
