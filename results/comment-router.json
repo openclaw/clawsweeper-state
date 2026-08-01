@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:25:48.829Z",
+  "updated_at": "2026-08-01T06:26:10.464Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/repobar:97:5117914763:2026-08-01T03:03:38Z:clawsweeper_needs_human",
-      "comment_id": "5117914763",
-      "comment_version_key": "5117914763:2026-08-01T03:03:38Z",
-      "comment_url": "https://github.com/steipete/RepoBar/pull/97#issuecomment-5117914763",
-      "comment_created_at": "2026-07-29T12:44:55Z",
-      "comment_updated_at": "2026-08-01T03:03:38Z",
-      "comment_body_sha256": "9feba677fecec0ada1e4a0d9bbb94b4ba973872acbef394f9399b24b533386ad",
-      "repo": "steipete/repobar",
-      "issue_number": 97,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The available GitHub Actions checks validate the macOS package path, not the registered iOS Xcode test target; an eligible iOS Xcode runner should execute that target before merge. (sha=c21494877d1ba4ab64c8645db2eb6d2fbda246df)",
-      "expected_head_sha": "c21494877d1ba4ab64c8645db2eb6d2fbda246df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T03:07:43.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-repo-url-malformed-names",
-        "head_sha": "c21494877d1ba4ab64c8645db2eb6d2fbda246df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/macos-automator-mcp:269:5135349527:2026-08-01T03:06:39Z:clawsweeper_needs_human",
       "comment_id": "5135349527",
@@ -32036,6 +32003,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116943:5150179481:2026-08-01T06:25:36Z:re_review",
+      "comment_id": "5150179481",
+      "comment_version_key": "5150179481:2026-08-01T06:25:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/116943#issuecomment-5150179481",
+      "comment_created_at": "2026-08-01T06:25:36Z",
+      "comment_updated_at": "2026-08-01T06:25:36Z",
+      "comment_body_sha256": "10b4c3d73d7c72918f76b5b149aa277d65c8d6a221632646a16678f9e26290c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116943,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-run",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:26:07.039Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
