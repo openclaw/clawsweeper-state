@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:37:11.546Z",
+  "updated_at": "2026-08-01T14:37:16.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115286:5151002730:2026-08-01T10:21:07Z:re_review",
-      "comment_id": "5151002730",
-      "comment_version_key": "5151002730:2026-08-01T10:21:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5151002730",
-      "comment_created_at": "2026-08-01T10:21:07Z",
-      "comment_updated_at": "2026-08-01T10:21:07Z",
-      "comment_body_sha256": "55092b8186e197497d0ccd21e524dbbc2f6c120111ed89a114f6e59fd6ec6128",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115286,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T12:37:00.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-defaults-mediaLocalRoots",
-        "head_sha": "5871d54f2300d6e22c25619274c172b91952b863",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115277:5151002856:2026-08-01T10:21:09Z:re_review",
       "comment_id": "5151002856",
@@ -32143,6 +32096,39 @@
         "kind": "pull_request",
         "branch": "perf/models-list-scoped-catalog",
         "head_sha": "87cd520eb6538ad824cb7bbba92150090efbb4ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:457:5010614271:2026-08-01T14:28:02Z:clawsweeper_needs_human",
+      "comment_id": "5010614271",
+      "comment_version_key": "5010614271:2026-08-01T14:28:02Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/457#issuecomment-5010614271",
+      "comment_created_at": "2026-07-18T08:38:44Z",
+      "comment_updated_at": "2026-08-01T14:28:02Z",
+      "comment_body_sha256": "810196ea32c43be7f30864007860c7c67072bcb9d06999471f2018c3dda2501c",
+      "repo": "openclaw/acpx",
+      "issue_number": 457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the branch already contains the complete bounded cleanup and only needs ordinary maintainer merge handling. (sha=692742309c3961c17eba3622578ff2a70aee157d)",
+      "expected_head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T14:37:16.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/drop-dead-codex-acp-command-detector",
+        "head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
         "cluster_id": null,
         "job_path": null
       }
