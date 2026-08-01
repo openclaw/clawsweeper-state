@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T23:11:45.604Z",
+  "updated_at": "2026-08-01T23:12:47.496Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117533:5152570216:2026-08-01T17:32:37Z:clawsweeper_needs_human",
-      "comment_id": "5152570216",
-      "comment_version_key": "5152570216:2026-08-01T17:32:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117533#issuecomment-5152570216",
-      "comment_created_at": "2026-08-01T17:32:37Z",
-      "comment_updated_at": "2026-08-01T17:32:37Z",
-      "comment_body_sha256": "2f5e0e78a36801080ba474f4634fadc3ebad8a972c1a4cbdf49c640be9ee82cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an additive but observable Responses API wire-shape change: clients that assert the obsolete exact usage object or use the prior undercounted totals may need to tolerate detai... (sha=83c7443441337e7acf99cacd0ac51131aa0e979b)",
-      "expected_head_sha": "83c7443441337e7acf99cacd0ac51131aa0e979b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:29:25.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-responses-usage-20260801",
-        "head_sha": "83c7443441337e7acf99cacd0ac51131aa0e979b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111278:5152574466:2026-08-01T17:33:51Z:re_review",
       "comment_id": "5152574466",
@@ -32655,6 +32622,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T23:11:45.603Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114173:5153928570:2026-08-01T23:12:11Z:re_review",
+      "comment_id": "5153928570",
+      "comment_version_key": "5153928570:2026-08-01T23:12:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5153928570",
+      "comment_created_at": "2026-08-01T23:12:11Z",
+      "comment_updated_at": "2026-08-01T23:12:11Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114173,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T23:12:44.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-web",
+        "head_sha": "483b126a9f599ded112f8acc49575647fcdbc08d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
