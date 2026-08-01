@@ -67,23 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing Control UI duplicate-ClawHub-slug bug. Preserve the selected search result's `ownerHandle` through `skills.detail` and `skills.install`, including the risk-acknowledgement retry. Update the Gateway protocol schemas and handlers so the registry detail request and lifecycle install receive the owner identity. Reuse the existing ClawHub client contract; do not add config, a new picker mode, or a fallback. Add focused UI and Gateway regression coverage with two same-slug results from different publishers, proving the selected publisher can be opened and installed. Preserve current bare-slug CLI/RPC behavior. Do not edit `CHANGELOG.md`.
+Repair the existing Skills-page collision bug: preserve the selected ClawHub search result’s publisher identity for both details and installation when multiple publishers share a slug. Propagate `ownerHandle` through `packages/gateway-protocol/src/schema/agents-models-skills.ts`, `ui/src/lib/skills/index.ts`, `ui/src/pages/skills/skills-page.ts`, `ui/src/pages/skills/view.ts`, and `src/gateway/server-methods/skills.ts`, then pass it to the existing ClawHub registry-client contract. Add focused regressions for two results with the same slug and distinct owners, covering search-result transport, detail, install, and acknowledgement retry if it retains the selected reference. Do not add config, a parallel picker, runtime fallback behavior, or CHANGELOG changes; stop and escalate if the repair requires a persistent-data or public product-policy decision.
 
 Likely files:
 
-- ui/src/lib/skills/index.ts
-- ui/src/pages/skills/view.ts
-- ui/src/lib/skills/index.test.ts
-- ui/src/pages/skills/view.test.ts
 - packages/gateway-protocol/src/schema/agents-models-skills.ts
+- ui/src/lib/skills/index.ts
+- ui/src/lib/skills/index.test.ts
+- ui/src/pages/skills/skills-page.ts
+- ui/src/pages/skills/view.ts
 - src/gateway/server-methods/skills.ts
 - src/gateway/server-methods/skills.search-detail.test.ts
+- src/gateway/server-methods/skills.clawhub.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/lib/skills/index.test.ts ui/src/pages/skills/view.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods/skills.search-detail.test.ts src/gateway/server-methods/skills.clawhub.test.ts
-- node scripts/run-vitest.mjs src/skills/lifecycle/clawhub.test.ts
+- node scripts/run-vitest.mjs ui/src/lib/skills/index.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/skills.search-detail.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/skills.clawhub.test.ts
 - git diff --check
 
 ## Operator Prompt
