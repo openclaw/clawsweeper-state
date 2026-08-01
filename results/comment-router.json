@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:35:35.438Z",
+  "updated_at": "2026-08-01T09:35:35.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117208:5150251999:2026-08-01T06:46:50Z:re_review",
-      "comment_id": "5150251999",
-      "comment_version_key": "5150251999:2026-08-01T06:46:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117208#issuecomment-5150251999",
-      "comment_created_at": "2026-08-01T06:46:50Z",
-      "comment_updated_at": "2026-08-01T06:46:50Z",
-      "comment_body_sha256": "dfc8d0dac22d45c8944b71ea52798871cf68c013c3ddd81f1b3a6f1073c1c43b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117208,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:47:38.202Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/credentials-enoent-failover-112226",
-        "head_sha": "31e66d6b91826ebcbb2b188e0bbe2e2c46f594c3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117265:5150253255:2026-08-01T06:47:10Z:clawsweeper_needs_human",
       "comment_id": "5150253255",
@@ -32723,6 +32676,39 @@
         "kind": "pull_request",
         "branch": "fix/live-model-switch-cross-provider",
         "head_sha": "7e21b89bba00fc11bbb41f589412943f6e93f06b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117037:5147452976:2026-08-01T09:34:59Z:clawsweeper_needs_human",
+      "comment_id": "5147452976",
+      "comment_version_key": "5147452976:2026-08-01T09:34:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117037#issuecomment-5147452976",
+      "comment_created_at": "2026-07-31T21:05:28Z",
+      "comment_updated_at": "2026-08-01T09:34:59Z",
+      "comment_body_sha256": "d8d505f50c45d10489b0fb3477b5baa9e7f4f00a413d586b673438298f0f178a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117037,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body gives detailed sterile-home results, but no inspectable terminal transcript, recording, redacted log, or linked artifact is a...; Review finding: [P1] Migrate metadata-referenced profiles before rejecting them — src/claws/openclaw-profile.ts:92-99 - [medium] Complete the archive-boundary source review — src/... (sha=19b30687325c783a0b93a7d4666b0ae96f01c85c)",
+      "expected_head_sha": "19b30687325c783a0b93a7d4666b0ae96f01c85c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:35:35.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claws-project-lifecycle",
+        "head_sha": "19b30687325c783a0b93a7d4666b0ae96f01c85c",
         "cluster_id": null,
         "job_path": null
       }
