@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:17:30.128Z",
+  "updated_at": "2026-08-01T22:17:39.762Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116317:5128785784:2026-08-01T19:18:11Z:clawsweeper_needs_human",
-      "comment_id": "5128785784",
-      "comment_version_key": "5128785784:2026-08-01T19:18:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116317#issuecomment-5128785784",
-      "comment_created_at": "2026-07-30T09:06:24Z",
-      "comment_updated_at": "2026-08-01T19:18:11Z",
-      "comment_body_sha256": "bd9dbf84ba866ee1524182a44e8ebe53c203454d599b988218d73cf88c156724",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116317,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This branch is behind current main; the Anthropic pricing normalizer changed afterward, so an exact-head rebase or review refresh is needed even though GitHub reports a clean three-wa... (sha=0e6129d0ec3b2d8202f6f61eb79ef991139863ce)",
-      "expected_head_sha": "0e6129d0ec3b2d8202f6f61eb79ef991139863ce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:30:35.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-116116-catalog-partial-cost",
-        "head_sha": "0e6129d0ec3b2d8202f6f61eb79ef991139863ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116332:5129224632:2026-08-01T19:18:17Z:clawsweeper_auto_repair",
       "comment_id": "5129224632",
@@ -33356,6 +33323,53 @@
         "cluster_id": "automerge-openclaw-openclaw-117144",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117248:5153701445:2026-08-01T22:17:02Z:re_review",
+      "comment_id": "5153701445",
+      "comment_version_key": "5153701445:2026-08-01T22:17:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5153701445",
+      "comment_created_at": "2026-08-01T22:17:02Z",
+      "comment_updated_at": "2026-08-01T22:17:02Z",
+      "comment_body_sha256": "2ddf1bc2f71cb293e4b6766fe1499955188901906a57144a10131103e07aa0f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117248,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:17:37.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-rem-junk-topics",
+        "head_sha": "e79e0e095e348bc56f0ce0a58a32f5204b8c8bd2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
