@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:09:44.770Z",
+  "updated_at": "2026-08-01T05:09:51.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:5148758442:2026-08-01T01:05:40Z:re_review",
-      "comment_id": "5148758442",
-      "comment_version_key": "5148758442:2026-08-01T01:05:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-5148758442",
-      "comment_created_at": "2026-08-01T01:05:40Z",
-      "comment_updated_at": "2026-08-01T01:05:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T01:12:21.621Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-takeover-silent-message-loss-87180",
-        "head_sha": "2f2c647ad0a3675da7d645327f87784046c81ce1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115945:5119159342:2026-08-01T01:09:09Z:clawsweeper_needs_human",
       "comment_id": "5119159342",
@@ -31863,6 +31816,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
         "head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:81:5117981283:2026-08-01T05:09:11Z:clawsweeper_needs_human",
+      "comment_id": "5117981283",
+      "comment_version_key": "5117981283:2026-08-01T05:09:11Z",
+      "comment_url": "https://github.com/openclaw/notcrawl/pull/81#issuecomment-5117981283",
+      "comment_created_at": "2026-07-29T12:50:49Z",
+      "comment_updated_at": "2026-08-01T05:09:11Z",
+      "comment_body_sha256": "a6059f2793a513953c5e1f630f697eda99dee7ea098ae640a93522822b71da3b",
+      "repo": "openclaw/notcrawl",
+      "issue_number": 81,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upstream rewrite, while this daily/manual workflow can label or close up to 1,000 repository items with issues: write and pull-requests: write; a compatib... (sha=9f17f5a0b1468ac9733e061a0e0f25ca70de1652)",
+      "expected_head_sha": "9f17f5a0b1468ac9733e061a0e0f25ca70de1652",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:09:51.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "9f17f5a0b1468ac9733e061a0e0f25ca70de1652",
         "cluster_id": null,
         "job_path": null
       }
