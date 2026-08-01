@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:11:25.236Z",
+  "updated_at": "2026-08-01T18:16:18.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117493:5152273729:2026-08-01T16:26:12Z:clawsweeper_auto_repair",
-      "comment_id": "5152273729",
-      "comment_version_key": "5152273729:2026-08-01T16:26:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117493#issuecomment-5152273729",
-      "comment_created_at": "2026-08-01T16:17:00Z",
-      "comment_updated_at": "2026-08-01T16:26:12Z",
-      "comment_body_sha256": "26b34829a7eed8bf1ee06f2b411bfd6d560620b1c683d07adb6797ca777795fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=01b9c6078275643a337b2e8704b41dd4404d4e7e)",
-      "expected_head_sha": "01b9c6078275643a337b2e8704b41dd4404d4e7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:26:45.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/hooks-pristine-startup",
-        "head_sha": "01b9c6078275643a337b2e8704b41dd4404d4e7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4600442002:2026-06-02T08:42:31Z:re_review",
       "comment_id": "4600442002",
@@ -31966,6 +31933,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117544:5152744926:2026-08-01T18:15:34Z:stop",
+      "comment_id": "5152744926",
+      "comment_version_key": "5152744926:2026-08-01T18:15:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117544#issuecomment-5152744926",
+      "comment_created_at": "2026-08-01T18:15:34Z",
+      "comment_updated_at": "2026-08-01T18:15:34Z",
+      "comment_body_sha256": "0cb785291c49f11b4384e2addbcd1f12133566d68b897d0e0b839a39e171aa1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117544,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "stop",
+      "intent": "stop",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T18:16:18.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-recovery-table-missing-skip",
+        "head_sha": "3c54e096720545db480985e2054401bc6250761e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
