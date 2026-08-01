@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:28:09.166Z",
+  "updated_at": "2026-08-01T05:28:12.910Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117144",
-      "comment_id": "repair-loop-label-sweep:autofix:117144",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117144",
-      "comment_created_at": "2026-08-01T01:47:16.415Z",
-      "comment_updated_at": "2026-08-01T01:47:16.415Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117144,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "autofix enabled; current checks are failing: check-dependencies:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-01T01:49:11.749Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-        "head_sha": "ab01cddcd4b0fe47d501175cdf9440401de68258",
-        "cluster_id": "automerge-openclaw-openclaw-117144",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75225:4355465901:2026-08-01T01:44:06Z:clawsweeper_needs_human",
       "comment_id": "4355465901",
@@ -32029,6 +31977,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T05:26:11Z:clawsweeper_needs_human",
+      "comment_id": "5146046509",
+      "comment_version_key": "5146046509:2026-08-01T05:26:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
+      "comment_created_at": "2026-07-31T18:08:22Z",
+      "comment_updated_at": "2026-08-01T05:26:11Z",
+      "comment_body_sha256": "2c4b81a54932371a62a8d449cc2e516b7150cc98d268777dcdadea208b89e5ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep wildcard patterns on the wildcard policy path (P1)** - allowedHostnames is checked by exact set membership in src/infra/net/ssrf.ts, so moving *.example.com there does not preserve the claimed subdomain beh...; Review finding: [P1] Keep wildcard patterns on the wildcard policy path — docs/tools/browser-control.md:507-509 - [medium] Wildcard SSRF guidance conflicts with runtime — docs/too... (sha=671f6b77e36e15b6007f0f79823fce5f127265c2)",
+      "expected_head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:28:12.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+        "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
+        "cluster_id": "automerge-openclaw-openclaw-116976",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
