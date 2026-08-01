@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98276",
+  "mode": "autonomous",
+  "run_id": "30674391891",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30674391891",
+  "head_sha": "f0f71871e3f98bf1875c6ec6f89d14c75629aa6a",
+  "workflow_conclusion": "cancelled",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
+  "published_at": "2026-08-01T00:22:42.426Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": null,
+  "summary": "The defect is reproducible by source inspection: the runtime-artifact step archives only `dist`, `dist-runtime`, and workspace package `dist` directories, while installed runtime startup resolves package-root templates and needs package metadata plus built plugin runtime assets. A narrow three-file repair is ready to recreate, but implementation is blocked in this read-only checkout because both the supplied preflight (August 1, 2026) and local checkout commit timestamp (August 1, 2026) are future-dated relative to the run date, July 31, 2026; the executor must first hydrate a non-future current main base before applying and validating it.",
+  "actions": [
+    {
+      "target": "#98276",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "A narrow artifact-packaging repair is warranted. Do not alter ACP empty-turn semantics from #98274."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98276",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only on obtaining a coherent current main checkout. Once hydrated, recreate the narrow artifact helper and complete the listed focused validation before opening the required PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
