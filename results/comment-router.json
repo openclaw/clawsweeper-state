@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:45:40.329Z",
+  "updated_at": "2026-08-01T08:45:42.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116987:5146454954:2026-08-01T06:08:42Z:clawsweeper_needs_human",
-      "comment_id": "5146454954",
-      "comment_version_key": "5146454954:2026-08-01T06:08:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116987#issuecomment-5146454954",
-      "comment_created_at": "2026-07-31T18:57:46Z",
-      "comment_updated_at": "2026-08-01T06:08:42Z",
-      "comment_body_sha256": "4d6e1e41c5a8b10d268f9c56c1eaeecfd56c979f30e94c80e882909e6322a943",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it mergeable, so use the normal exact-head check and mergeability gates rather than treating base drift as a patch defect. (sha=483f68549c5570e2a203a90f493e04781e58f137)",
-      "expected_head_sha": "483f68549c5570e2a203a90f493e04781e58f137",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:09:27.706Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/replay-invalid-error-copy",
-        "head_sha": "483f68549c5570e2a203a90f493e04781e58f137",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116987:5148363840:2026-07-31T23:40:32Z:re_review",
       "comment_id": "5148363840",
@@ -32430,6 +32397,53 @@
         "kind": "pull_request",
         "branch": "fix-kova-evaluator-pin-20260731",
         "head_sha": "6f5ce9a18825f744eb7c3e7399ddd4f2718ddfba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117289:5150677233:2026-08-01T08:45:04Z:re_review",
+      "comment_id": "5150677233",
+      "comment_version_key": "5150677233:2026-08-01T08:45:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117289#issuecomment-5150677233",
+      "comment_created_at": "2026-08-01T08:45:04Z",
+      "comment_updated_at": "2026-08-01T08:45:04Z",
+      "comment_body_sha256": "f2ae9870c849ca09ce008b9d08148483e779fe1489c877890ef306494b81c441",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117289,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:45:36.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-cli-single-config-read",
+        "head_sha": "bdf8766801d6ed0d65bf10024789f24f02861131",
         "cluster_id": null,
         "job_path": null
       },
