@@ -2,12 +2,12 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-01T05:15:54.286Z",
+  "generated_at": "2026-08-01T05:50:31.084Z",
   "count": 2,
   "summary": {
     "open_prs": 2,
     "ready_candidates": 0,
-    "security_hold": 0,
+    "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 2,
@@ -34,7 +34,7 @@
       "head_sha": "ab01cddcd4b0fe47d501175cdf9440401de68258",
       "cluster_id": "issue-openclaw-openclaw-98276",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-01T04:49:02Z",
+      "updated_at": "2026-08-01T05:47:25Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -113,20 +113,25 @@
       "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
       "cluster_id": "automerge-openclaw-openclaw-114611",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114611.md",
-      "updated_at": "2026-08-01T04:24:17Z",
+      "updated_at": "2026-08-01T05:48:46Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
-      "security_hold": false,
+      "security_hold": true,
       "checks": {
-        "total": 70,
+        "total": 88,
         "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 38,
-          "SUCCESS": 23
+          "CANCELLED": 17,
+          "SKIPPED": 45,
+          "SUCCESS": 26
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -173,11 +178,12 @@
         }
       },
       "blockers": [
+        "security_hold",
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "route to central security triage"
     }
   ]
 }
