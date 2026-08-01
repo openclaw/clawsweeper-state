@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T01:11:10.557Z",
+  "updated_at": "2026-08-01T01:11:46.271Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80497:4417018595:2026-07-31T22:04:28Z:clawsweeper_needs_human",
-      "comment_id": "4417018595",
-      "comment_version_key": "4417018595:2026-07-31T22:04:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80497#issuecomment-4417018595",
-      "comment_created_at": "2026-05-11T01:56:52Z",
-      "comment_updated_at": "2026-07-31T22:04:28Z",
-      "comment_body_sha256": "0b8ca1565e76d59ed4272874be0bc012b5a6a9e09e89b396c930aa437e103940",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80497,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Choose the canonical model-usage contract before exporting this listener (P1)** - Current main deliberately keeps trusted diagnostics with approved exporter services, while ordinary plugins receive typed model_c...; Review finding: [P1] Choose the canonical model-usage contract before exporting this listener — src/infra/diagnostic-events.ts:1474-1536 - [medium] Define the trusted telemetry co... (sha=2c55b93c27de0dbefaec01c2e93ee4334d9042be)",
-      "expected_head_sha": "2c55b93c27de0dbefaec01c2e93ee4334d9042be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:10:50.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/model-call-completed-usage",
-        "head_sha": "2c55b93c27de0dbefaec01c2e93ee4334d9042be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82540:4466649650:2026-07-31T21:42:28Z:clawsweeper_auto_repair",
       "comment_id": "4466649650",
@@ -31472,6 +31439,53 @@
         "kind": "pull_request",
         "branch": "fix/codex-sse-parse-payload-leak",
         "head_sha": "9c3edf235e2b42876ca2e442cbb6df29dcc65516",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117120:5148750897:2026-08-01T01:03:59Z:re_review",
+      "comment_id": "5148750897",
+      "comment_version_key": "5148750897:2026-08-01T01:03:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117120#issuecomment-5148750897",
+      "comment_created_at": "2026-08-01T01:03:59Z",
+      "comment_updated_at": "2026-08-01T01:03:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117120,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T01:11:44.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/llamacpp-tool-schema-profile-117070",
+        "head_sha": "02bec170ba9bde3c7506cba4413660b19e99d16b",
         "cluster_id": null,
         "job_path": null
       },
