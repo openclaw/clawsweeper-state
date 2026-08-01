@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the terminal resumed Claude CLI synthetic-placeholder path for https://github.com/openclaw/openclaw/issues/115037. Preserve the merged continuation behavior from https://github.com/openclaw/openclaw/pull/90799, but ensure an exact `<synthetic>` “No response requested.” placeholder followed by a terminal empty result does not immediately become generic `empty_response` and advance `agents.defaults.model.fallbacks`. Keep the recovery bounded and on the requested model, with ordinary non-synthetic empty-response fallback unchanged. Add a regression that proves the initial requested model receives the bounded recovery and that fallback selection is not consumed for this synthetic lifecycle case. Stop and escalate if the safe retry requires a new public config option, a changed provider contract, or a product-policy decision. Do not edit `CHANGELOG.md`.
+Repair the terminal resumed Claude CLI synthetic-placeholder path described by https://github.com/openclaw/openclaw/issues/115037. Preserve the exact `<synthetic>` plus full-text marker contract in `src/agents/cli-runner/claude-live-session.ts`, but carry a terminal synthetic-empty classification to the existing retry/fallback owner so the user prompt gets one bounded retry on the requested model before ordinary `empty_response` model fallback can advance. Do not add config, broaden placeholder matching, suppress genuine empty-response recovery, or modify `CHANGELOG.md`. Add focused regression coverage for the exact resumed terminal sequence and verify both same-model retry and normal fallback after the bounded retry is exhausted; include the prior continuation case from https://github.com/openclaw/openclaw/pull/90799 as a non-regression.
 
 Likely files:
 
 - src/agents/cli-runner/claude-live-session.ts
-- src/agents/cli-runner.ts
 - src/agents/cli-runner/claude-live-session.background-tasks.test.ts
-- src/agents/cli-runner.reliability.test.ts
+- src/agents/cli-runner.ts
+- src/agents/model-fallback-attempt.ts
+- src/agents/model-fallback.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/cli-runner/claude-live-session.background-tasks.test.ts src/agents/cli-runner.reliability.test.ts
-- node scripts/run-vitest.mjs src/agents/cli-runner.reliability.test.ts
+- node scripts/run-vitest.mjs src/agents/model-fallback.test.ts
 - git diff --check
 
 ## Operator Prompt
