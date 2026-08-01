@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:49:00.996Z",
+  "updated_at": "2026-08-01T07:49:01.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5015306154:2026-07-19T10:05:25Z:re_review",
-      "comment_id": "5015306154",
-      "comment_version_key": "5015306154:2026-07-19T10:05:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5015306154",
-      "comment_created_at": "2026-07-19T10:05:25Z",
-      "comment_updated_at": "2026-07-19T10:05:25Z",
-      "comment_body_sha256": "b274776354efeafa46e2a61efb879a72007257e563339e56cf1a9a0d0e5394bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 6 commits replayed, no conflicts). new head 4fa8e15f6a. no source behavior change in this refresh; refreshing the three-way merge and required checks against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:06:35.365Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5015923415:2026-07-19T13:36:40Z:re_review",
       "comment_id": "5015923415",
@@ -32109,6 +32082,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T07:49:00.996Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:40:5090657867:2026-08-01T07:46:09Z:clawsweeper_needs_human",
+      "comment_id": "5090657867",
+      "comment_version_key": "5090657867:2026-08-01T07:46:09Z",
+      "comment_url": "https://github.com/openclaw/Tachikoma/pull/40#issuecomment-5090657867",
+      "comment_created_at": "2026-07-27T11:19:18Z",
+      "comment_updated_at": "2026-08-01T07:46:09Z",
+      "comment_body_sha256": "21e2e65f3b24783e8f15e61ff22e400e0fa8dc681a63fc8481665061c7243638",
+      "repo": "openclaw/tachikoma",
+      "issue_number": 40,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes Tachikoma responsible for compatibility with the separately controlled ChatGPT Codex endpoint, account header, and OAuth request shape; a backend-side change could break... (sha=d4cd49f0e8ec178c7224df436b6ea9604ed34cbc)",
+      "expected_head_sha": "d4cd49f0e8ec178c7224df436b6ea9604ed34cbc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:49:01.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-oauth-vision",
+        "head_sha": "d4cd49f0e8ec178c7224df436b6ea9604ed34cbc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
