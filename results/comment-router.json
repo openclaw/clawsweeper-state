@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:15:24.684Z",
+  "updated_at": "2026-08-01T06:15:26.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117162:5149081939:2026-08-01T02:12:41Z:re_review",
-      "comment_id": "5149081939",
-      "comment_version_key": "5149081939:2026-08-01T02:12:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117162#issuecomment-5149081939",
-      "comment_created_at": "2026-08-01T02:12:41Z",
-      "comment_updated_at": "2026-08-01T02:12:41Z",
-      "comment_body_sha256": "9a5f11ec394f54755600f741fe2dfc57ce41da8fc03c1887dee79680d56f1691",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117162,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T02:14:18.825Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-pacer-dequeue",
-        "head_sha": "ae9f93c39da1204b55ade8ca35d9b04854d53dbc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117160:5149090020:2026-08-01T02:15:43Z:clawsweeper_needs_human",
       "comment_id": "5149090020",
@@ -32273,6 +32226,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/claws-portable-agent-settings",
         "head_sha": "be9fb97e8a5d286061b2c25107002e9373b003b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117252:5150143221:2026-08-01T06:14:52Z:clawsweeper_needs_human",
+      "comment_id": "5150143221",
+      "comment_version_key": "5150143221:2026-08-01T06:14:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117252#issuecomment-5150143221",
+      "comment_created_at": "2026-08-01T06:14:52Z",
+      "comment_updated_at": "2026-08-01T06:14:52Z",
+      "comment_body_sha256": "09798cfa7b700e784f7215227987113b2348be228ecfefe99676c087cbcf1811",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing operators and automation that rely on a tag push or direct Docker Release dispatch must move to the release-publish path; the owner should explicitly confirm that the remaini... (sha=93557a0f6243661cc93f93c20a41694cbc49b8ee)",
+      "expected_head_sha": "93557a0f6243661cc93f93c20a41694cbc49b8ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:15:26.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-candidate-validation-before-tag",
+        "head_sha": "93557a0f6243661cc93f93c20a41694cbc49b8ee",
         "cluster_id": null,
         "job_path": null
       }
