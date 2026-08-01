@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:59:23.330Z",
+  "updated_at": "2026-08-01T17:00:29.269Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115549:5152053774:2026-08-01T15:21:56Z:re_review",
-      "comment_id": "5152053774",
-      "comment_version_key": "5152053774:2026-08-01T15:21:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115549#issuecomment-5152053774",
-      "comment_created_at": "2026-08-01T15:21:56Z",
-      "comment_updated_at": "2026-08-01T15:21:56Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115549,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T15:22:32.335Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse-merhi/web-search-security-review",
-        "head_sha": "3a4c113767e06db48e0677fe513e4e7c2d5542c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2548:5151297215:2026-08-01T15:22:03Z:clawsweeper_auto_repair",
       "comment_id": "5151297215",
@@ -31407,6 +31360,39 @@
         "kind": "pull_request",
         "branch": "docs/heartbeat-visibility-retired-key",
         "head_sha": "00922439eef2e9603c60dd2503bc4a2ae8ec7e48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117498:5152306093:2026-08-01T16:59:54Z:clawsweeper_needs_human",
+      "comment_id": "5152306093",
+      "comment_version_key": "5152306093:2026-08-01T16:59:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117498#issuecomment-5152306093",
+      "comment_created_at": "2026-08-01T16:24:37Z",
+      "comment_updated_at": "2026-08-01T16:59:54Z",
+      "comment_body_sha256": "5124ae7c1c39c6df9740853d780463103ef8581bd07040cc772cf54137cb1f00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117498,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes which persisted session stores enter recovery at gateway restart. The probe deliberately retains unknown, missing-schema, and corrupt-store handling for the writer lane,... (sha=3361c7550266396befd56d551aad052d479e622f)",
+      "expected_head_sha": "3361c7550266396befd56d551aad052d479e622f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:00:29.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/session-recovery-empty-store-skip",
+        "head_sha": "3361c7550266396befd56d551aad052d479e622f",
         "cluster_id": null,
         "job_path": null
       }
