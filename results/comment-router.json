@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:58:15.612Z",
+  "updated_at": "2026-08-01T18:58:16.302Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117485",
-      "comment_id": "repair-loop-label-sweep:autofix:117485",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117485",
-      "comment_created_at": "2026-08-01T16:36:02.433Z",
-      "comment_updated_at": "2026-08-01T16:36:02.433Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117485,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "autofix enabled; current checks are failing: ios-build:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:38:14.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-110171",
-        "head_sha": "358807dc324a9cfcb6ab7e7eac8bb0006f814c6e",
-        "cluster_id": "automerge-openclaw-openclaw-117485",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116904:5144476434:2026-08-01T16:37:55Z:clawsweeper_auto_repair",
       "comment_id": "5144476434",
@@ -32992,6 +32940,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T18:57:36Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T18:57:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T18:57:36Z",
+      "comment_body_sha256": "10e3411ddfbd05f061366e71f0a07ad614bbe8dfb614bfd5760c3d34bbf79cd8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scan contract (P1)** - This changes the action wrapper to v3.96.0 but leaves with.version on the v3.95.9 image and digest. Update the scanner metadata and the matching ci-workflow-guar...; Review finding: [P1] Synchronize the TruffleHog scan contract — .github/workflows/ci.yml:904-908 - [P1] Update the Android attestation acceptance contract — .github/workflows/andr... (sha=7d287e04f72104419b00bf922c4e5d17219e0bdc)",
+      "expected_head_sha": "7d287e04f72104419b00bf922c4e5d17219e0bdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:58:16.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "7d287e04f72104419b00bf922c4e5d17219e0bdc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
