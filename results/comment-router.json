@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:49:25.959Z",
+  "updated_at": "2026-08-01T03:50:22.009Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112032:5079052043:2026-07-31T23:25:38Z:clawsweeper_needs_human",
-      "comment_id": "5079052043",
-      "comment_version_key": "5079052043:2026-07-31T23:25:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112032#issuecomment-5079052043",
-      "comment_created_at": "2026-07-25T15:26:51Z",
-      "comment_updated_at": "2026-07-31T23:25:38Z",
-      "comment_body_sha256": "f83eb2cadbb26ea719710ca728daf53a093dc2ddcf6c9ed40be35c14eb795f14",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112032,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm legacy reauthorization policy** - Rows with refresh tokens but no recoverable issuer provenance no longer refresh automatically once discovery is active; this protects the token...; Review finding: [medium] Confirm legacy reauthorization policy — src/agents/mcp-oauth-provider.ts:137 (sha=35046f428279711a414c37b77138953a876d5b04)",
-      "expected_head_sha": "35046f428279711a414c37b77138953a876d5b04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T23:29:47.474Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-oauth-refresh-issuer",
-        "head_sha": "35046f428279711a414c37b77138953a876d5b04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114596:5092127635:2026-07-31T23:27:35Z:clawsweeper_auto_repair",
       "comment_id": "5092127635",
@@ -32942,6 +32909,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117189:5149653345:2026-08-01T03:48:26Z:clawsweeper_needs_human",
+      "comment_id": "5149653345",
+      "comment_version_key": "5149653345:2026-08-01T03:48:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117189#issuecomment-5149653345",
+      "comment_created_at": "2026-08-01T03:48:26Z",
+      "comment_updated_at": "2026-08-01T03:48:26Z",
+      "comment_body_sha256": "8ab4e9ef2cc970a02f6ccc5bd2553f87b81925ea8ea945186ac3f92de8b00d37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The external PR has no after-fix proof in its otherwise blank body; before merge, add a redacted terminal transcript or runtime log showing the...; Review finding: [P1] Keep resolved SecretRef values in the binding fingerprint — src/agents/execution-auth-binding.ts:282-293 - [P1] Retain ambient credential material in the reso... (sha=192d4af5e975581ff1320168382baff9f1e3f0cb)",
+      "expected_head_sha": "192d4af5e975581ff1320168382baff9f1e3f0cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T03:50:22.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alert-autofix-2",
+        "head_sha": "192d4af5e975581ff1320168382baff9f1e3f0cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
