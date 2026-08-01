@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T18:35:38.916Z",
+  "updated_at": "2026-08-01T18:35:49.885Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
-      "comment_id": "5057166130",
-      "comment_version_key": "5057166130:2026-07-23T10:08:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5057166130",
-      "comment_created_at": "2026-07-23T10:08:25Z",
-      "comment_updated_at": "2026-07-23T10:08:25Z",
-      "comment_body_sha256": "dda4098b018fa52157ac153235755207126f16e6b33d4ef033c6c7b31eed9477",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head d477eb9333. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:27:19.884Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
       "comment_id": "5060665917",
@@ -32694,6 +32667,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T18:35:38.915Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117558:5152821955:2026-08-01T18:35:08Z:clawsweeper_needs_human",
+      "comment_id": "5152821955",
+      "comment_version_key": "5152821955:2026-08-01T18:35:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117558#issuecomment-5152821955",
+      "comment_created_at": "2026-08-01T18:35:08Z",
+      "comment_updated_at": "2026-08-01T18:35:08Z",
+      "comment_body_sha256": "5254e41d8a26018ca66f15310f3250a96fc15f0aabd20d3d3e70eecd0caf547e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117558,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes strong mounted Lit/jsdom lifecycle tests and claimed captured logs, but the supplied context contains no directly inspect... (sha=06fff593170f3ce341e05dee7ea5addf8ad47488)",
+      "expected_head_sha": "06fff593170f3ce341e05dee7ea5addf8ad47488",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T18:35:49.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa406-ui-node-mutation-ownership",
+        "head_sha": "06fff593170f3ce341e05dee7ea5addf8ad47488",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
