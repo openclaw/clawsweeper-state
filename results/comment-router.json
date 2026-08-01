@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:29:21.152Z",
+  "updated_at": "2026-08-01T05:30:15.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109707:4999628458:2026-08-01T01:43:41Z:clawsweeper_needs_human",
-      "comment_id": "4999628458",
-      "comment_version_key": "4999628458:2026-08-01T01:43:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109707#issuecomment-4999628458",
-      "comment_created_at": "2026-07-17T06:19:11Z",
-      "comment_updated_at": "2026-08-01T01:43:41Z",
-      "comment_body_sha256": "5a21459dbbd95692dea81a2976f391a3d1c9866b504dca1a84cf6cb0af65dc67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fixed 60-second wall-clock deadline can terminate a valid search over a very large workspace or slow remote filesystem; the branch proves recovery from a wedged child but not that t... (sha=c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa)",
-      "expected_head_sha": "c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:50:41.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-find-grep-exec-timeout",
-        "head_sha": "c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110569:5010615328:2026-08-01T01:40:42Z:clawsweeper_auto_repair",
       "comment_id": "5010615328",
@@ -32063,6 +32030,53 @@
         "kind": "pull_request",
         "branch": "sunlit/local-candidate-openai-responses-reasoning-map",
         "head_sha": "c9a248e4e94f5ca121d52342df529861fe8a3679",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:88810:5149990645:2026-08-01T05:29:36Z:re_review",
+      "comment_id": "5149990645",
+      "comment_version_key": "5149990645:2026-08-01T05:29:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/88810#issuecomment-5149990645",
+      "comment_created_at": "2026-08-01T05:29:36Z",
+      "comment_updated_at": "2026-08-01T05:29:36Z",
+      "comment_body_sha256": "f9764e63e5c75b364e3e054f234824fa189ea2ffb8b26c73bc22bed8cbe74874",
+      "repo": "openclaw/openclaw",
+      "issue_number": 88810,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:30:13.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/empty-text-silent-skip",
+        "head_sha": "3234b23d52a3f9ebedc4769777b21f425513d501",
         "cluster_id": null,
         "job_path": null
       },
