@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117633"
-mode: "autonomous"
-run_id: "30718596407"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30718596407"
+mode: "plan"
+run_id: "30719627631"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30719627631"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-01T23:14:10.078Z"
-canonical: "https://github.com/openclaw/openclaw/issues/117633"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/117633"
+result_status: "planned"
+published_at: "2026-08-01T22:29:26.461Z"
+canonical: "#117633"
+canonical_issue: "#117633"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30718596407](https://github.com/openclaw/clawsweeper/actions/runs/30718596407)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30719627631](https://github.com/openclaw/clawsweeper/actions/runs/30719627631)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/117633
+Canonical: #117633
 
 ## Summary
 
-The issue remains a narrow, non-security canonical bug, but this worker cannot safely implement it: the preflight's required current-main SHA `c539192b5cdd8369c16c6be03258cc68deac17ef` is absent from the supplied checkout, whose grafted `origin/main` is `deffca6565002d890d44ed5fda5c71f858858527`, and the checkout is read-only. Static inspection of that supplied tree still shows the owner identity is dropped at the UI, protocol, and Gateway boundaries. The deterministic executor should refresh to the preflight main SHA, apply the narrow artifact below, validate, and open/update the designated PR branch.
+Issue #117633 is an open, canonical, non-security correctness bug. Current source drops the selected ClawHub publisher identity before detail and install requests, while the existing registry and install-core contracts already accept ownerHandle. Plan one narrow replacement PR; no close or merge action is permitted.
 
 ## Impact
 
@@ -44,7 +44,7 @@ The issue remains a narrow, non-security canonical bug, but this worker cannot s
 | Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ The issue remains a narrow, non-security canonical bug, but this worker cannot s
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
-| issue_implementation_status_comment | updated | #117633 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,8 +66,8 @@ The issue remains a narrow, non-security canonical bug, but this worker cannot s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117633 | fix_needed | blocked | canonical | Implementation is blocked only on obtaining a writable checkout at the preflight main SHA; no maintainer product decision is required. |
-| cluster:issue-openclaw-openclaw-117633 | build_fix_artifact | planned | canonical | A single narrow new PR is appropriate once the executor refreshes the target checkout. |
+| #117633 | fix_needed | planned | canonical | Build a focused fix that preserves ownerHandle from the selected result through Control UI detail/install, acknowledgement retry, Gateway schemas and handlers, install dedupe identity, and lifecycle facade parameters while preserving bare-slug callers. |
+| cluster:issue-openclaw-openclaw-117633 | build_fix_artifact | planned |  | Create one new, attributed, narrow fix PR after implementation and validation; neither merge nor issue closure is allowed in this job. |
 
 ## Needs Human
 
