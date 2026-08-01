@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:34:08.079Z",
+  "updated_at": "2026-08-01T22:34:09.687Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117590:5153056156:2026-08-01T19:42:49Z:clawsweeper_needs_human",
-      "comment_id": "5153056156",
-      "comment_version_key": "5153056156:2026-08-01T19:42:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117590#issuecomment-5153056156",
-      "comment_created_at": "2026-08-01T19:29:56Z",
-      "comment_updated_at": "2026-08-01T19:42:49Z",
-      "comment_body_sha256": "b68d40d587bcf055dcaf0ac1c4ebd0557ae560e75ca9acee85a88134a9a59bc1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117590,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied exact-head Vitest output and fixture-parity claims exercise only the mock-provider suite; they are useful validation but not indep... (sha=41e3166bf5cf34b21d02a483276ba4423cd808d6)",
-      "expected_head_sha": "41e3166bf5cf34b21d02a483276ba4423cd808d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:43:22.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-mock-openai-fixture-dedupe",
-        "head_sha": "41e3166bf5cf34b21d02a483276ba4423cd808d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2413:5153110808:2026-08-01T19:44:41Z:re_review",
       "comment_id": "5153110808",
@@ -33149,6 +33116,53 @@
         "kind": "pull_request",
         "branch": "fix/issue-114602",
         "head_sha": "dadb88d16d21af5e580332be2a8f4024ea823179",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114661:5153764917:2026-08-01T22:33:35Z:re_review",
+      "comment_id": "5153764917",
+      "comment_version_key": "5153764917:2026-08-01T22:33:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114661#issuecomment-5153764917",
+      "comment_created_at": "2026-08-01T22:33:35Z",
+      "comment_updated_at": "2026-08-01T22:33:35Z",
+      "comment_body_sha256": "e0d97884f7b2cd7824246e5f6b11e285ae4523b14bade864b2e60fdd906ad6f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114661,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:34:06.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-114626",
+        "head_sha": "cce2bf3030db14875a6edd8d9027477442bb1664",
         "cluster_id": null,
         "job_path": null
       },
