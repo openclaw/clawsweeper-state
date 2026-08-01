@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:46:28.296Z",
+  "updated_at": "2026-08-01T22:46:50.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117588:5153043842:2026-08-01T20:00:14Z:clawsweeper_needs_human",
-      "comment_id": "5153043842",
-      "comment_version_key": "5153043842:2026-08-01T20:00:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117588#issuecomment-5153043842",
-      "comment_created_at": "2026-08-01T19:28:04Z",
-      "comment_updated_at": "2026-08-01T20:00:14Z",
-      "comment_body_sha256": "1c0075c3ff751321cd12e9882cee505fa14ff937d0ba07c22595b2ba437fff4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117588,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The protected maintainer label requires an explicit maintainer merge decision even though this review found no patch defect. (sha=8dba458cfdb55ec77f602abfdd72edbb40fc7dfd)",
-      "expected_head_sha": "8dba458cfdb55ec77f602abfdd72edbb40fc7dfd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T20:00:50.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-gateway-chat-fixtures-wave5",
-        "head_sha": "8dba458cfdb55ec77f602abfdd72edbb40fc7dfd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117605:5153176136:2026-08-01T20:00:57Z:clawsweeper_needs_human",
       "comment_id": "5153176136",
@@ -33298,6 +33265,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116543:5153810954:2026-08-01T22:46:11Z:re_review",
+      "comment_id": "5153810954",
+      "comment_version_key": "5153810954:2026-08-01T22:46:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116543#issuecomment-5153810954",
+      "comment_created_at": "2026-08-01T22:46:11Z",
+      "comment_updated_at": "2026-08-01T22:46:11Z",
+      "comment_body_sha256": "a8b191d9c030ad5e3628c5445bedbb8ce59cb132e62903b40b4fe4904801d0ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116543,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T22:46:47.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-thread-replies-pagination-98870",
+        "head_sha": "283e0ff35cf0f710aad8a64a8913f119dc2b193e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
