@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:39:29.900Z",
+  "updated_at": "2026-08-01T11:39:31.987Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T05:26:11Z:clawsweeper_needs_human",
-      "comment_id": "5146046509",
-      "comment_version_key": "5146046509:2026-08-01T05:26:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-      "comment_created_at": "2026-07-31T18:08:22Z",
-      "comment_updated_at": "2026-08-01T05:26:11Z",
-      "comment_body_sha256": "2c4b81a54932371a62a8d449cc2e516b7150cc98d268777dcdadea208b89e5ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep wildcard patterns on the wildcard policy path (P1)** - allowedHostnames is checked by exact set membership in src/infra/net/ssrf.ts, so moving *.example.com there does not preserve the claimed subdomain beh...; Review finding: [P1] Keep wildcard patterns on the wildcard policy path — docs/tools/browser-control.md:507-509 - [medium] Wildcard SSRF guidance conflicts with runtime — docs/too... (sha=671f6b77e36e15b6007f0f79823fce5f127265c2)",
-      "expected_head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:57:56.216Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-        "head_sha": "671f6b77e36e15b6007f0f79823fce5f127265c2",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117165:5149205382:2026-08-01T08:34:26Z:clawsweeper_auto_repair",
       "comment_id": "5149205382",
@@ -31902,6 +31869,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T11:39:29.900Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T11:36:27Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T11:36:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T11:36:27Z",
+      "comment_body_sha256": "795ab472fbf81ccfe0bd30aaaf6dd8577e3bb7e2dfaa2962297cfb0d9d8d758e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner and guard contract (P1)** - The action reference now points to v3.96.0, but with.version still downloads v3.95.9 with its prior digest, and the guard test still expects that ol...; Review finding: [P1] Synchronize the TruffleHog scanner and guard contract — .github/workflows/ci.yml:904-908 - [P1] Synchronize the Android attestation workflow guard — .github/w... (sha=f51af4b61daebe633aca208d011e2c47221e062c)",
+      "expected_head_sha": "f51af4b61daebe633aca208d011e2c47221e062c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:39:31.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "f51af4b61daebe633aca208d011e2c47221e062c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
