@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:21:34.695Z",
+  "updated_at": "2026-08-01T05:21:44.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4786813163:2026-06-24T07:16:38Z:re_review",
-      "comment_id": "4786813163",
-      "comment_version_key": "4786813163:2026-06-24T07:16:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4786813163",
-      "comment_created_at": "2026-06-24T07:16:38Z",
-      "comment_updated_at": "2026-06-24T07:16:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:39:52.776Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4789679418:2026-06-24T13:15:49Z:re_review",
       "comment_id": "4789679418",
@@ -31975,6 +31948,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117194:5149668623:2026-08-01T05:19:28Z:clawsweeper_needs_human",
+      "comment_id": "5149668623",
+      "comment_version_key": "5149668623:2026-08-01T05:19:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117194#issuecomment-5149668623",
+      "comment_created_at": "2026-08-01T03:53:19Z",
+      "comment_updated_at": "2026-08-01T05:19:28Z",
+      "comment_body_sha256": "bbb5313b3df0e8ec28e5f003ba57cf1aaa63b621a9231cdf5a823f5d8be46cac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the boundary that decides whether a Google provider failure rotates credentials or ends an agent response, so the protected-label owner should confirm exact-merge-head ch... (sha=b4fd27b3a09a0f52faf98a8ba0977dd4cabbee8f)",
+      "expected_head_sha": "b4fd27b3a09a0f52faf98a8ba0977dd4cabbee8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:21:44.153Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-google-stream-lifecycle",
+        "head_sha": "b4fd27b3a09a0f52faf98a8ba0977dd4cabbee8f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
