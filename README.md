@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 1, 2026, 20:10 UTC
+Last source update: Aug 1, 2026, 20:30 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 1, 2026, 20:10 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 1, 2026, 20:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30716336254) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 1, 2026, 20:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30716935445) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 1, 2026, 20:10 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30716378402) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 1, 2026, 17:29 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30710419013) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 1, 2026, 20:06 UTC
+Last source update: Aug 1, 2026, 20:16 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 284 | 100% |
-| Run attempts archived | 769 | audit |
+| Run attempts archived | 771 | audit |
 | Latest successful clusters | 251 | 88.4% |
 | Latest failed clusters | 33 | 11.6% |
 | Latest cancelled clusters | 0 | 0.0% |
@@ -107,7 +107,7 @@ State: Failed clusters need inspection
 | Fix actions blocked | 73 | 21.1% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
-| Blocked mutation attempts | 224 | 99.6% |
+| Blocked mutation attempts | 225 | 99.6% |
 | Skipped mutation attempts | 1 | 0.4% |
 
 ### Owner Action Dashboard
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 284 clusters: 156 maintainer action, 41 automation snapshot, 70 intervention needed, 17 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#117545](https://github.com/openclaw/openclaw/issues/117545) is maintainer_input: Provide safe, redacted authenticated NVIDIA `/v1/models` listing and direct completion outcomes for the reported IDs, explicitly separati....
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#116976](https://github.com/openclaw/openclaw/pull/116976) is merge_not_authorized: job does not allow merge.
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#117521](https://github.com/openclaw/openclaw/pull/117521) is automation_blocked: autofix-only job cannot merge.
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#116188](https://github.com/openclaw/openclaw/pull/116188) is action_planned: Repair the useful contributor branch rather than replacing it: rebase once onto current main, retain its focused implementation and contr....
 - Completed latest: no completed action in the latest records.
@@ -147,8 +147,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117545](https://github.com/openclaw/openclaw/issues/117545) | maintainer_input | Provide safe, redacted authenticated NVIDIA `/v1/models` listing and direct completion outcomes for the reported IDs, explicitly separating globall... | Aug 1, 2026, 20:06 UTC | [issue-openclaw-openclaw-117545](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117545.md) | [30715971168](https://github.com/openclaw/clawsweeper/actions/runs/30715971168) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#116976](https://github.com/openclaw/openclaw/pull/116976) | merge_not_authorized | job does not allow merge | Aug 1, 2026, 19:57 UTC | [automerge-openclaw-openclaw-116976](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116976.md) | [30715154513](https://github.com/openclaw/clawsweeper/actions/runs/30715154513) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#116976](https://github.com/openclaw/openclaw/pull/116976) | merge_not_authorized | job does not allow merge | Aug 1, 2026, 20:16 UTC | [automerge-openclaw-openclaw-116976](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116976.md) | [30715803333](https://github.com/openclaw/clawsweeper/actions/runs/30715803333) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117545](https://github.com/openclaw/openclaw/issues/117545) | maintainer_input | Provide safe, redacted authenticated NVIDIA `/v1/models` output and direct completion outcomes for the reported IDs, explicitly separating globally... | Aug 1, 2026, 20:12 UTC | [issue-openclaw-openclaw-117545](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117545.md) | [30716248741](https://github.com/openclaw/clawsweeper/actions/runs/30716248741) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#100498](https://github.com/openclaw/openclaw/issues/100498) | maintainer_input | Quarantine the exact security-sensitive contextual PR without blocking the unrelated non-security repair for #116490. | Aug 1, 2026, 14:12 UTC | [issue-openclaw-openclaw-116490](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-116490.md) | [30702491319](https://github.com/openclaw/clawsweeper/actions/runs/30702491319) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#116976](https://github.com/openclaw/openclaw/pull/116976) | merge_not_authorized | job does not allow merge | Jul 31, 2026, 18:04 UTC | [automerge-openclaw-openclaw-114611](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-114611.md) | [30652227116](https://github.com/openclaw/clawsweeper/actions/runs/30652227116) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#111745](https://github.com/openclaw/openclaw/issues/111745) | maintainer_input | Obtain the sanitized reproduction evidence requested in the July 31, 2026 maintainer comment: effective npm_config values, npm config list --json,... | Jul 31, 2026, 14:06 UTC | [issue-openclaw-openclaw-111745](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-111745.md) | [30636586682](https://github.com/openclaw/clawsweeper/actions/runs/30636586682) |
@@ -233,8 +233,8 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
-| issue-openclaw-openclaw-117545 | needs human | Provide safe, redacted authenticated NVIDIA `/v1/models` listing and direct completion outcomes for the reported IDs, explicitly separating globall... | [issue-openclaw-openclaw-117545](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117545.md) | [30715971168](https://github.com/openclaw/clawsweeper/actions/runs/30715971168) |
-| automerge-openclaw-openclaw-116976 | merge_canonical blocked | job does not allow merge | [automerge-openclaw-openclaw-116976](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116976.md) | [30715154513](https://github.com/openclaw/clawsweeper/actions/runs/30715154513) |
+| automerge-openclaw-openclaw-116976 | merge_canonical blocked | job does not allow merge | [automerge-openclaw-openclaw-116976](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116976.md) | [30715803333](https://github.com/openclaw/clawsweeper/actions/runs/30715803333) |
+| issue-openclaw-openclaw-117545 | needs human | Provide safe, redacted authenticated NVIDIA `/v1/models` output and direct completion outcomes for the reported IDs, explicitly separating globally... | [issue-openclaw-openclaw-117545](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117545.md) | [30716248741](https://github.com/openclaw/clawsweeper/actions/runs/30716248741) |
 | automerge-openclaw-openclaw-117521 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-117521](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117521.md) | [30714010173](https://github.com/openclaw/clawsweeper/actions/runs/30714010173) |
 | automerge-openclaw-openclaw-117144 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-117144](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117144.md) | [30710002508](https://github.com/openclaw/clawsweeper/actions/runs/30710002508) |
 | automerge-openclaw-openclaw-117485 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-117485](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117485.md) | [30708141549](https://github.com/openclaw/clawsweeper/actions/runs/30708141549) |
