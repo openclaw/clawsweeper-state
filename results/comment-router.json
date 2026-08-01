@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:05:20.897Z",
+  "updated_at": "2026-08-01T08:05:23.752Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:993:5149966888:2026-08-01T05:21:57Z:re_review",
-      "comment_id": "5149966888",
-      "comment_version_key": "5149966888:2026-08-01T05:21:57Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/993#issuecomment-5149966888",
-      "comment_created_at": "2026-08-01T05:21:57Z",
-      "comment_updated_at": "2026-08-01T05:21:57Z",
-      "comment_body_sha256": "0d38c8cdf5fee3444d9db3ef6b57fcd16eb80cc74963adf9bc998605169ecb0d",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 993,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T05:22:39.293Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawsweeper-focused-modules",
-        "head_sha": "4f50f789363fcae2cebbb8b36692f743eededa65",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T05:20:59Z:clawsweeper_needs_human",
       "comment_id": "5149564387",
@@ -32325,6 +32278,39 @@
         "kind": "pull_request",
         "branch": "codex/discrawl-openai-live-embeddings",
         "head_sha": "7fbd1ed6f1a1aad01b8e77632d0d1b6299751a81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:72:5140468075:2026-08-01T08:04:11Z:clawsweeper_needs_human",
+      "comment_id": "5140468075",
+      "comment_version_key": "5140468075:2026-08-01T08:04:11Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/72#issuecomment-5140468075",
+      "comment_created_at": "2026-07-31T07:31:17Z",
+      "comment_updated_at": "2026-08-01T08:04:11Z",
+      "comment_body_sha256": "97967f350262853087f53e0a0ce1cbedbc206366f9e6cc032ee1bb86234d2ebe",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale@v11 is a major upgrade on a scheduled job with permission to modify issue and pull-request state; ordinary CI does not prove the daily stale-policy execution path. (sha=13e4f08482634f24cdc5a6f8b712fc9c4288c98b)",
+      "expected_head_sha": "13e4f08482634f24cdc5a6f8b712fc9c4288c98b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:05:23.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11",
+        "head_sha": "13e4f08482634f24cdc5a6f8b712fc9c4288c98b",
         "cluster_id": null,
         "job_path": null
       }
