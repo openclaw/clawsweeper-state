@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T12:02:15.212Z",
+  "updated_at": "2026-08-01T12:12:16.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-08-01T09:09:58Z:clawsweeper_needs_human",
-      "comment_id": "4876928065",
-      "comment_version_key": "4876928065:2026-08-01T09:09:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4876928065",
-      "comment_created_at": "2026-07-03T13:44:49Z",
-      "comment_updated_at": "2026-08-01T09:09:58Z",
-      "comment_body_sha256": "5362ae16380014555b999319b573dcd6eeca00ec64610a12b968df10f3b8356b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Port the redaction into the split projection modules (P1)** - Current main no longer owns sanitization in this monolithic file: it is a facade over chat-display-projection.sanitize.ts and chat-display-projection...; Review finding: [P1] Port the redaction into the split projection modules — src/gateway/chat-display-projection.ts:365-367 - [medium] Redaction targets a retired projection owner... (sha=7f7d429cd83b25e6cecfd93688375812d6627bb9)",
-      "expected_head_sha": "7f7d429cd83b25e6cecfd93688375812d6627bb9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T09:47:58.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "2c28560dfd3dc422f91aa435fef026acb68a2cca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103823:4937810369:2026-08-01T09:16:00Z:clawsweeper_auto_repair",
       "comment_id": "4937810369",
@@ -31870,6 +31837,33 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114454:5089272529:2026-08-01T11:58:56Z:clawsweeper_needs_human",
+      "comment_id": "5089272529",
+      "comment_version_key": "5089272529:2026-08-01T11:58:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114454#issuecomment-5089272529",
+      "comment_created_at": "2026-07-27T08:54:09Z",
+      "comment_updated_at": "2026-08-01T11:58:56Z",
+      "comment_body_sha256": "4aebe51891e407f65bbaa2f05d130701e69914ca49d5aeca94296ea968e73103",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this PR as conflict-dirty; a one-sided resolution can retain the current two-shape rule but drop reasoning, or retain the new rule without current-main test coverage, c... (sha=71e518029728f3209ac8b882ff4c4ee5f9fffe02)",
+      "expected_head_sha": "71e518029728f3209ac8b882ff4c4ee5f9fffe02",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-01T12:12:16.036Z",
+      "target": null
     }
   ]
 }
