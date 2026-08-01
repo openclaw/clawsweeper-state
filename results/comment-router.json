@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T20:37:43.354Z",
+  "updated_at": "2026-08-01T20:38:00.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112669:5078729265:2026-08-01T18:35:07Z:clawsweeper_needs_human",
-      "comment_id": "5078729265",
-      "comment_version_key": "5078729265:2026-08-01T18:35:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112669#issuecomment-5078729265",
-      "comment_created_at": "2026-07-25T13:50:33Z",
-      "comment_updated_at": "2026-08-01T18:35:07Z",
-      "comment_body_sha256": "9ed8ba6836bd834554adbf790b0e18f5f9497c10f3ff2b3dc09abf0856389294",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112669,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes abort, drain, and force-clear ownership for shared session state; merge only after the remaining exact-head CI lanes pass and the lifecycle reviewer confirms that replace... (sha=3e334b9efddcece2b275c9744e9c382f3ac8c361)",
-      "expected_head_sha": "3e334b9efddcece2b275c9744e9c382f3ac8c361",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T18:35:38.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stuck-recovery-run-identity-104589",
-        "head_sha": "3e334b9efddcece2b275c9744e9c382f3ac8c361",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112669:5095577192:2026-07-27T19:03:46Z:re_review",
       "comment_id": "5095577192",
@@ -32228,6 +32195,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T20:37:43.354Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2413:5153311166:2026-08-01T20:37:28Z:re_review",
+      "comment_id": "5153311166",
+      "comment_version_key": "5153311166:2026-08-01T20:37:28Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5153311166",
+      "comment_created_at": "2026-08-01T20:37:28Z",
+      "comment_updated_at": "2026-08-01T20:37:28Z",
+      "comment_body_sha256": "39df2c826702c31652598c965b3e93bc81b0565fa8920cf6ac06c75ac41f690d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2413,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T20:37:58.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-proxy-model-pricing-2393",
+        "head_sha": "b5d7393212f6f38bd39775f63ccfb23804a1cb99",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
