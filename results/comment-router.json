@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:40:41.249Z",
+  "updated_at": "2026-08-01T10:41:05.582Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114641:5094292788:2026-08-01T07:51:30Z:clawsweeper_auto_repair",
-      "comment_id": "5094292788",
-      "comment_version_key": "5094292788:2026-08-01T07:51:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114641#issuecomment-5094292788",
-      "comment_created_at": "2026-07-27T16:59:56Z",
-      "comment_updated_at": "2026-08-01T07:51:30Z",
-      "comment_body_sha256": "4528d966f09a5bd635263441bf0b646f6b20c321c10a39c957545d35e15fb915",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=712464515e74684c4d5599c3747d62144d95c725)",
-      "expected_head_sha": "712464515e74684c4d5599c3747d62144d95c725",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:52:01.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-114165-foundry-model-capabilities",
-        "head_sha": "712464515e74684c4d5599c3747d62144d95c725",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:87111:4550574819:2026-08-01T07:51:16Z:clawsweeper_auto_repair",
       "comment_id": "4550574819",
@@ -32623,6 +32590,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117283:5151065302:2026-08-01T10:40:27Z:re_review",
+      "comment_id": "5151065302",
+      "comment_version_key": "5151065302:2026-08-01T10:40:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117283#issuecomment-5151065302",
+      "comment_created_at": "2026-08-01T10:40:27Z",
+      "comment_updated_at": "2026-08-01T10:40:27Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117283,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T10:41:03.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/collector-generation-ownership-20260731",
+        "head_sha": "f00bf01d1f1f9f5532f493b4fe26c0a3f332ca37",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
