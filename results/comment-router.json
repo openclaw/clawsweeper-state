@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:49:19.548Z",
+  "updated_at": "2026-08-01T08:49:36.217Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:51:5150135580:2026-08-01T06:12:34Z:re_review",
-      "comment_id": "5150135580",
-      "comment_version_key": "5150135580:2026-08-01T06:12:34Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/51#issuecomment-5150135580",
-      "comment_created_at": "2026-08-01T06:12:34Z",
-      "comment_updated_at": "2026-08-01T06:12:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/rfcs",
-      "issue_number": 51,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T06:13:14.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/rfc-sender-authentication-strength",
-        "head_sha": "405c422466bee79c50595d6f762b7ab97e005e7b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:192:5094952961:2026-08-01T06:12:35Z:clawsweeper_needs_human",
       "comment_id": "5094952961",
@@ -32508,6 +32461,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T08:49:19.547Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/releasebar:74:4991273635:2026-08-01T08:49:01Z:clawsweeper_needs_human",
+      "comment_id": "4991273635",
+      "comment_version_key": "4991273635:2026-08-01T08:49:01Z",
+      "comment_url": "https://github.com/steipete/ReleaseBar/pull/74#issuecomment-4991273635",
+      "comment_created_at": "2026-07-16T11:26:13Z",
+      "comment_updated_at": "2026-08-01T08:49:01Z",
+      "comment_body_sha256": "c00aa74736c8ec178587559c3289cd9fb6ceeca704c55aaf013225a0b5e01989",
+      "repo": "steipete/releasebar",
+      "issue_number": 74,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - oxlint is part of the required static gate; version 1.74.0 can alter diagnostics for the enabled TypeScript, Unicorn, or OXC plugin rules even though the current PR checks pass. (sha=dc357665111da01f28aee78002fbcb6c0f69974c)",
+      "expected_head_sha": "dc357665111da01f28aee78002fbcb6c0f69974c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:49:36.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/oxlint-1.74.0",
+        "head_sha": "dc357665111da01f28aee78002fbcb6c0f69974c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
