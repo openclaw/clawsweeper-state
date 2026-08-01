@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:47:54.902Z",
+  "updated_at": "2026-08-01T06:48:03.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91237:5149593470:2026-08-01T03:30:35Z:re_review",
-      "comment_id": "5149593470",
-      "comment_version_key": "5149593470:2026-08-01T03:30:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5149593470",
-      "comment_created_at": "2026-08-01T03:30:35Z",
-      "comment_updated_at": "2026-08-01T03:30:35Z",
-      "comment_body_sha256": "37d126308f29dbb4885d275ded1b580d518bf4a62e5028a8033a913a935fa53f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T03:33:26.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
-        "head_sha": "5b5f682a45c8fa52a020fa04b7d796ea00cad9d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108294:4989332762:2026-08-01T03:22:16Z:clawsweeper_needs_human",
       "comment_id": "4989332762",
@@ -31939,6 +31892,39 @@
         "kind": "pull_request",
         "branch": "fix/freshboot-plugin-state",
         "head_sha": "625dd5bba50bffe25b237b5029e0230c9a1cdd77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117241:5150032461:2026-08-01T06:45:05Z:clawsweeper_needs_human",
+      "comment_id": "5150032461",
+      "comment_version_key": "5150032461:2026-08-01T06:45:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117241#issuecomment-5150032461",
+      "comment_created_at": "2026-08-01T05:41:49Z",
+      "comment_updated_at": "2026-08-01T06:45:05Z",
+      "comment_body_sha256": "1bdcf9f2ef4cb731f5ffbc19a07b95bdf1a605ab18d7032a2ddcb02462204127",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although GitHub reports it mergeable, the maintainer merge gate should validate the exact merged head still contains the owner-level gate and disabl... (sha=ac3a3dfe088164762ddac71ec8c2f00514a97283)",
+      "expected_head_sha": "ac3a3dfe088164762ddac71ec8c2f00514a97283",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:48:03.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-telegram-send-capability-owner",
+        "head_sha": "ac3a3dfe088164762ddac71ec8c2f00514a97283",
         "cluster_id": null,
         "job_path": null
       }
