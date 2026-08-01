@@ -67,19 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the existing MCP loopback drain test flake described in https://github.com/openclaw/openclaw/issues/117161. Work only within the gateway test/lifecycle boundary: in `src/gateway/mcp-http.test.ts`, replace the client socket readiness plus fixed 20 ms assertion in `withdraws a closing runtime before drain without fencing its successor` with a deterministic wait for the request to reach the existing `beginMcpLoopbackToolCallCapture({ onRequestStart })` server-side boundary. Preserve the tested runtime invariant in `src/gateway/mcp-http.ts`: the old runtime is withdrawn before the old listener drains and a successor can become active during that drain. Add or adapt focused regression coverage only as needed; do not change production close behavior, add timing cushions, add config, or edit `CHANGELOG.md`. First establish the failure or a regression test on current main, then validate repeated focused runs.
+Repair the load-sensitive Gateway MCP loopback drain test reported at https://github.com/openclaw/openclaw/issues/117161. In `src/gateway/mcp-http.test.ts`, replace the client TCP-connect plus `setImmediate` and fixed 20 ms wait with `beginMcpLoopbackToolCallCapture({ onRequestStart })` connected to the existing old owner-token POST through `x-openclaw-cli-capture-key`; wait for that server-side signal before closing. Preserve the intended invariant: the old runtime is withdrawn before drain, a successor starts while the old accepted request still blocks close, and the old close cannot clear the successor runtime. Keep this test-only; do not change MCP runtime behavior, timeouts, configuration, or `CHANGELOG.md`. Add or retain cleanup for the capture and request, then stop if the repair would require a production contract change.
 
 Likely files:
 
 - src/gateway/mcp-http.test.ts
-- src/gateway/mcp-http.loopback-runtime.ts
-- src/gateway/mcp-http.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/gateway/mcp-http.test.ts
-- Run the focused test in a bounded repeated loop under normal and, when available, loaded conditions to verify no intermittent close-settlement or ECONNRESET failure.
-- pnpm format src/gateway/mcp-http.test.ts
+- for i in $(seq 1 10); do node scripts/run-vitest.mjs src/gateway/mcp-http.test.ts || exit 1; done
+- git diff --check
 
 ## Operator Prompt
 
