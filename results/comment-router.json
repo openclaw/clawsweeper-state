@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-08-01T12:33:43.697Z",
+  "updated_at": "2026-08-01T12:33:22.971Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:83988:4748445146:2026-06-19T04:17:01Z:re_review",
+      "comment_id": "4748445146",
+      "comment_version_key": "4748445146:2026-06-19T04:17:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4748445146",
+      "comment_created_at": "2026-06-19T04:17:01Z",
+      "comment_updated_at": "2026-06-19T04:17:01Z",
+      "comment_body_sha256": "65de7f694401e6fcef87ab8d1d8820f4409190e85d120af7a5dd9f4992af6dde",
+      "repo": "openclaw/openclaw",
+      "issue_number": 83988,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:18:01.199Z",
+      "target": null
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4750636684:2026-06-19T10:16:48Z:re_review",
       "comment_id": "4750636684",
@@ -31757,39 +31784,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117383:5151304195:2026-08-01T12:33:01Z:clawsweeper_needs_human",
-      "comment_id": "5151304195",
-      "comment_version_key": "5151304195:2026-08-01T12:33:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117383#issuecomment-5151304195",
-      "comment_created_at": "2026-08-01T11:53:32Z",
-      "comment_updated_at": "2026-08-01T12:33:01Z",
-      "comment_body_sha256": "f418ff15813cbb73dd803ab3def464c6f554bc4328118cd2fd74382485b48e20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117383,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a shared session-state and lifecycle refactor: an ordering regression could leave an interrupted main session unrecovered, retry it under the wrong lifecycle generation, or em... (sha=589bf3809af2009f3d932c3477fa5bf87a19a127)",
-      "expected_head_sha": "589bf3809af2009f3d932c3477fa5bf87a19a127",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:33:43.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-main-recovery-owner-0801-2d45",
-        "head_sha": "589bf3809af2009f3d932c3477fa5bf87a19a127",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
