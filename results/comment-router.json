@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:22:26.474Z",
+  "updated_at": "2026-08-01T08:23:01.927Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116699:5140089262:2026-08-01T05:56:09Z:clawsweeper_auto_repair",
-      "comment_id": "5140089262",
-      "comment_version_key": "5140089262:2026-08-01T05:56:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116699#issuecomment-5140089262",
-      "comment_created_at": "2026-07-31T06:39:49Z",
-      "comment_updated_at": "2026-08-01T05:56:09Z",
-      "comment_body_sha256": "66fdc60b187e33f0e28437f93facf7de3965bbff548c120440355c918794e3c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116699,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3e176d30a7f7cac9ce79b2628c6c93d5ebcf4670)",
-      "expected_head_sha": "3e176d30a7f7cac9ce79b2628c6c93d5ebcf4670",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:56:44.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/106020-realtime-voice-catalog",
-        "head_sha": "3e176d30a7f7cac9ce79b2628c6c93d5ebcf4670",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116779:5142085899:2026-08-01T05:56:30Z:clawsweeper_needs_human",
       "comment_id": "5142085899",
@@ -32292,6 +32259,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110450:5150600787:2026-08-01T08:22:26Z:re_review",
+      "comment_id": "5150600787",
+      "comment_version_key": "5150600787:2026-08-01T08:22:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110450#issuecomment-5150600787",
+      "comment_created_at": "2026-08-01T08:22:26Z",
+      "comment_updated_at": "2026-08-01T08:22:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110450,
+      "author": "RileyJJY",
+      "author_id": 255106757,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:22:58.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jjy/fix/memory-dreaming-markdown-cap",
+        "head_sha": "c62e478731ca8d0c76d8e870309c42a489b73429",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
