@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:36:42.279Z",
+  "updated_at": "2026-08-01T19:36:59.772Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115968:5119940403:2026-08-01T17:31:17Z:clawsweeper_auto_repair",
-      "comment_id": "5119940403",
-      "comment_version_key": "5119940403:2026-08-01T17:31:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115968#issuecomment-5119940403",
-      "comment_created_at": "2026-07-29T15:26:50Z",
-      "comment_updated_at": "2026-08-01T17:31:17Z",
-      "comment_body_sha256": "ba18b71ce1d58eb9fe86bba4c1c16cb7eece79f1e249ac15fa814671efde7a20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115968,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce0134e914ba567c41131b652a8251b3bf8ecc26)",
-      "expected_head_sha": "ce0134e914ba567c41131b652a8251b3bf8ecc26",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:36:24.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-compaction-per-candidate-timeout-115546",
-        "head_sha": "ce0134e914ba567c41131b652a8251b3bf8ecc26",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116028:5121824987:2026-08-01T15:30:08Z:clawsweeper_needs_human",
       "comment_id": "5121824987",
@@ -32067,6 +32034,59 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T19:32:38Z:clawsweeper_auto_merge",
+      "comment_id": "5146046509",
+      "comment_version_key": "5146046509:2026-08-01T19:32:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
+      "comment_created_at": "2026-07-31T18:08:22Z",
+      "comment_updated_at": "2026-08-01T19:32:38Z",
+      "comment_body_sha256": "e97b623be50f6b78c4a39cacee9969cdcd70a2b1658cefbc672bf7b0fbffe044",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=d89ed1ab030a75ada8bc112763e1e5883e446557); PR head is behind base and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "d89ed1ab030a75ada8bc112763e1e5883e446557",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:36:59.772Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
+        "head_sha": "d89ed1ab030a75ada8bc112763e1e5883e446557",
+        "cluster_id": "automerge-openclaw-openclaw-116976",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "repair_needed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
         }
       ]
     }
