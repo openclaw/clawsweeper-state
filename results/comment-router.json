@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:04:41.353Z",
+  "updated_at": "2026-08-01T17:04:47.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113920:5098843833:2026-07-28T01:41:09Z:re_review",
-      "comment_id": "5098843833",
-      "comment_version_key": "5098843833:2026-07-28T01:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113920#issuecomment-5098843833",
-      "comment_created_at": "2026-07-28T01:33:00Z",
-      "comment_updated_at": "2026-07-28T01:41:09Z",
-      "comment_body_sha256": "b441bc01d9f5f7fb8bd5699ef1ae0e4c461b4a701730c180834021fe8f2bd2b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113920,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T15:24:14.430Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113920:5139039373:2026-07-31T03:48:32Z:re_review",
       "comment_id": "5139039373",
@@ -31408,6 +31381,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T17:04:41.352Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/macos-automator-mcp:270:5135351219:2026-08-01T17:04:11Z:clawsweeper_needs_human",
+      "comment_id": "5135351219",
+      "comment_version_key": "5135351219:2026-08-01T17:04:11Z",
+      "comment_url": "https://github.com/steipete/macos-automator-mcp/pull/270#issuecomment-5135351219",
+      "comment_created_at": "2026-07-30T19:28:22Z",
+      "comment_updated_at": "2026-08-01T17:04:11Z",
+      "comment_body_sha256": "93086877e82a4d90d0fcda2aaac59ee3331db7da6c36bcf72f7a332b6a155541",
+      "repo": "steipete/macos-automator-mcp",
+      "issue_number": 270,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the exact Node type definitions used by frozen installs; CI is green, but the PR body has no current fresh-install or local validation transcript beyond automated chec... (sha=1c24d59d4bf214c0017b2344b042a5c60cbeff98)",
+      "expected_head_sha": "1c24d59d4bf214c0017b2344b042a5c60cbeff98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:04:47.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/types/node-26.1.2",
+        "head_sha": "1c24d59d4bf214c0017b2344b042a5c60cbeff98",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
