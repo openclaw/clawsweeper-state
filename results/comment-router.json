@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:31:02.977Z",
+  "updated_at": "2026-08-01T19:31:26.453Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98923:4862400489:2026-08-01T14:52:25Z:clawsweeper_needs_human",
-      "comment_id": "4862400489",
-      "comment_version_key": "4862400489:2026-08-01T14:52:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98923#issuecomment-4862400489",
-      "comment_created_at": "2026-07-02T05:09:41Z",
-      "comment_updated_at": "2026-08-01T14:52:25Z",
-      "comment_body_sha256": "9a02f3cc9f6256f2ed151c2934e8c3b5b94d048cbbab27602620634601d013d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98923,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty against current main; the August 1, 2026 embedded-agent refactor changed the same runner test structure, so the existing focused proof cannot establ... (sha=dbff49d2d6169bd1e0fdf2a83c6c0e3c71897aed)",
-      "expected_head_sha": "dbff49d2d6169bd1e0fdf2a83c6c0e3c71897aed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T17:36:24.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-tempdir-batch04",
-        "head_sha": "dbff49d2d6169bd1e0fdf2a83c6c0e3c71897aed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110815:5012073736:2026-08-01T15:05:58Z:clawsweeper_auto_repair",
       "comment_id": "5012073736",
@@ -32019,6 +31986,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117139:5153059947:2026-08-01T19:30:54Z:re_review",
+      "comment_id": "5153059947",
+      "comment_version_key": "5153059947:2026-08-01T19:30:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117139#issuecomment-5153059947",
+      "comment_created_at": "2026-08-01T19:30:54Z",
+      "comment_updated_at": "2026-08-01T19:30:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117139,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:31:24.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine-gateway-invoke-provenance",
+        "head_sha": "8fbbb9cbe13d08894794712455a45e1aca553c9c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
