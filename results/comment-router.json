@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:45:42.242Z",
+  "updated_at": "2026-08-01T06:45:54.948Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117118:5148704890:2026-08-01T03:07:40Z:clawsweeper_needs_human",
-      "comment_id": "5148704890",
-      "comment_version_key": "5148704890:2026-08-01T03:07:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117118#issuecomment-5148704890",
-      "comment_created_at": "2026-08-01T00:53:30Z",
-      "comment_updated_at": "2026-08-01T03:07:40Z",
-      "comment_body_sha256": "a1192d283ae2450daa5dd72875c0dd3d449804a9335e2055691688e0cc15b874",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117118,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For histories above 2,000 rows, Gateway intentionally leaves dashboard session and catalog caches cold; the first corresponding request can still perform that work at request time, ev... (sha=2a893066d499b9799de39bef81d24d1704322ed4)",
-      "expected_head_sha": "2a893066d499b9799de39bef81d24d1704322ed4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T03:26:58.476Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/skip-large-sidebar-prewarm",
-        "head_sha": "2a893066d499b9799de39bef81d24d1704322ed4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107921:4988790310:2026-08-01T03:23:42Z:clawsweeper_needs_human",
       "comment_id": "4988790310",
@@ -32004,6 +31971,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T06:45:09Z:clawsweeper_auto_repair",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T06:45:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T06:45:09Z",
+      "comment_body_sha256": "5c7dbca9bbca2885b6f434bdf700624709932c0615e11bf53080ae437d082bde",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f790fbf24f297ae3a77ab3cf59dc81d30f15b97)",
+      "expected_head_sha": "2f790fbf24f297ae3a77ab3cf59dc81d30f15b97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:45:54.946Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "2f790fbf24f297ae3a77ab3cf59dc81d30f15b97",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
