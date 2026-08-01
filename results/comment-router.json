@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T00:32:39.763Z",
+  "updated_at": "2026-08-01T00:32:42.364Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:984:5146881543:2026-07-31T21:25:28Z:clawsweeper_needs_human",
-      "comment_id": "5146881543",
-      "comment_version_key": "5146881543:2026-07-31T21:25:28Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/984#issuecomment-5146881543",
-      "comment_created_at": "2026-07-31T19:52:09Z",
-      "comment_updated_at": "2026-07-31T21:25:28Z",
-      "comment_body_sha256": "9b498f373e36896658108013918e9508054a0d71db9ddce2749d86bbf8c3bf75",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 984,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For each truncated openclaw/openclaw pull request, the worker may now make enough file-list requests to cover the reported count (up to 30 pages) plus a refreshed pull-request snapsho... (sha=4a434e7e1fc530785a6700e088bdbb93b04091a6)",
-      "expected_head_sha": "4a434e7e1fc530785a6700e088bdbb93b04091a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T21:29:26.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/complete-pull-files",
-        "head_sha": "4a434e7e1fc530785a6700e088bdbb93b04091a6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117018:5146805943:2026-07-31T21:27:36Z:clawsweeper_needs_human",
       "comment_id": "5146805943",
@@ -31565,6 +31532,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114893:5099674245:2026-07-28T03:42:54Z:re_review",
+      "comment_id": "5099674245",
+      "comment_version_key": "5099674245:2026-07-28T03:42:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/114893#issuecomment-5099674245",
+      "comment_created_at": "2026-07-28T03:42:54Z",
+      "comment_updated_at": "2026-07-28T03:42:54Z",
+      "comment_body_sha256": "e3ffcb223a94517489a29acdc0aed2e9cdfd4aaa8f672dcbc545258d78b2c25f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114893,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T00:32:40.621Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
