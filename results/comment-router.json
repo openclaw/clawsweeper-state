@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:22:05.385Z",
+  "updated_at": "2026-08-01T22:22:07.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117570:5153056562:2026-08-01T19:30:01Z:re_review",
-      "comment_id": "5153056562",
-      "comment_version_key": "5153056562:2026-08-01T19:30:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117570#issuecomment-5153056562",
-      "comment_created_at": "2026-08-01T19:30:01Z",
-      "comment_updated_at": "2026-08-01T19:30:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117570,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T19:30:36.376Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa407-channel-status-filter-owner",
-        "head_sha": "9853664110cc4a569b9131b4712b3b0fb2267945",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117592:5153058414:2026-08-01T19:30:29Z:clawsweeper_needs_human",
       "comment_id": "5153058414",
@@ -33244,6 +33197,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107739:4979158280:2026-08-01T22:20:51Z:clawsweeper_needs_human",
+      "comment_id": "4979158280",
+      "comment_version_key": "4979158280:2026-08-01T22:20:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107739#issuecomment-4979158280",
+      "comment_created_at": "2026-07-15T09:41:48Z",
+      "comment_updated_at": "2026-08-01T22:20:51Z",
+      "comment_body_sha256": "8866c24d40cf509408c7eb23c0e2a87374e61b93e3513a3a8222869bea0f35a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107739,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind title generation to the resolved utility model (P1)** - resolveUtilityModelRefForAgent is only used as a boolean gate, then generateConversationLabel recomputes its own utility/primary path. If the utility...; Review finding: [P1] Bind title generation to the resolved utility model — src/gateway/session-auto-title.ts:110-124 - [P1] Preserve channel and space names before writing display... (sha=e029f90cbccd3bef27fb14bb5f174f24ac640306)",
+      "expected_head_sha": "e029f90cbccd3bef27fb14bb5f174f24ac640306",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:22:07.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "molty/utility-model-session-titles",
+        "head_sha": "e029f90cbccd3bef27fb14bb5f174f24ac640306",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
