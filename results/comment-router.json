@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:24:19.093Z",
+  "updated_at": "2026-08-01T06:24:51.234Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:48:5118008978:2026-08-01T03:05:33Z:clawsweeper_needs_human",
-      "comment_id": "5118008978",
-      "comment_version_key": "5118008978:2026-08-01T03:05:33Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/48#issuecomment-5118008978",
-      "comment_created_at": "2026-07-29T12:53:22Z",
-      "comment_updated_at": "2026-08-01T03:05:33Z",
-      "comment_body_sha256": "31cb1ed056764b2d65f4e07fe4eeda5619c919cfb82b3484362757577234b783",
-      "repo": "openclaw/shellbench",
-      "issue_number": 48,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify effective bucket privacy before uploading traces (P1)** - head_bucket only confirms that the configured identity can reach the destination; it does not show whether a bucket ACL, policy, or public-access-...; Review finding: [P1] Verify effective bucket privacy before uploading traces — clawbench/trace_upload.py:148 - [high] Destination privacy is not established — clawbench/trace_uplo... (sha=5de5016b954b8755239536536bf771e46a497c76)",
-      "expected_head_sha": "5de5016b954b8755239536536bf771e46a497c76",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T03:06:17.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/task-analysis-export",
-        "head_sha": "5de5016b954b8755239536536bf771e46a497c76",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:40:5090657867:2026-08-01T03:06:00Z:clawsweeper_needs_human",
       "comment_id": "5090657867",
@@ -32008,6 +31975,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117132:5150174850:2026-08-01T06:24:06Z:re_review",
+      "comment_id": "5150174850",
+      "comment_version_key": "5150174850:2026-08-01T06:24:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117132#issuecomment-5150174850",
+      "comment_created_at": "2026-08-01T06:24:06Z",
+      "comment_updated_at": "2026-08-01T06:24:06Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117132,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:24:48.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oss-find/openclaw-2026-07-31-b",
+        "head_sha": "08148b56fbe9056874d5d2b1e3cc58d44d4e088f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
