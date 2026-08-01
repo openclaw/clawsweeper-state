@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T14:13:58.498Z",
+  "updated_at": "2026-08-01T14:14:58.607Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:70:5140450221:2026-08-01T11:54:13Z:clawsweeper_auto_repair",
-      "comment_id": "5140450221",
-      "comment_version_key": "5140450221:2026-08-01T11:54:13Z",
-      "comment_url": "https://github.com/openclaw/crawlkit/pull/70#issuecomment-5140450221",
-      "comment_created_at": "2026-07-31T07:28:52Z",
-      "comment_updated_at": "2026-08-01T11:54:13Z",
-      "comment_body_sha256": "efbc904b2e6df7e17637e57a8f9c17a8ab3c65c199d2bbbae2c17768413632d2",
-      "repo": "openclaw/crawlkit",
-      "issue_number": 70,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366)",
-      "expected_head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:54:50.774Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
-        "head_sha": "40fad9c6895d0bd74d5c6eefd08ba1a7c1f2a366",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:64:5146456080:2026-08-01T11:54:15Z:clawsweeper_needs_human",
       "comment_id": "5146456080",
@@ -32080,6 +32047,53 @@
       "status": "skipped",
       "processed_at": "2026-08-01T14:13:58.497Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117437:5151798593:2026-08-01T14:14:20Z:re_review",
+      "comment_id": "5151798593",
+      "comment_version_key": "5151798593:2026-08-01T14:14:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117437#issuecomment-5151798593",
+      "comment_created_at": "2026-08-01T14:14:20Z",
+      "comment_updated_at": "2026-08-01T14:14:20Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117437,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T14:14:56.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-replay-bounds-20260801",
+        "head_sha": "02c8e76d7f499d84740147eaa0e13b2ea7aa60f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
