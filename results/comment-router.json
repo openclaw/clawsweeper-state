@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T12:55:56.954Z",
+  "updated_at": "2026-08-01T12:56:29.111Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117186:5149558525:2026-08-01T10:28:28Z:clawsweeper_needs_human",
-      "comment_id": "5149558525",
-      "comment_version_key": "5149558525:2026-08-01T10:28:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117186#issuecomment-5149558525",
-      "comment_created_at": "2026-08-01T03:20:29Z",
-      "comment_updated_at": "2026-08-01T10:28:28Z",
-      "comment_body_sha256": "f708579d16a5fac9a07158fc221e4af3da2bdc134493863223e46a426aa2435f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117186,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and added test demonstrate a real local bridge over HTTP/WebSocket but script the provider’s events; add a redacted after-fix xAI r... (sha=a02cc5c8495316bc1b05df9d24d836edbca74917)",
-      "expected_head_sha": "a02cc5c8495316bc1b05df9d24d836edbca74917",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T10:34:05.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-providers-mistral-xai-together",
-        "head_sha": "a02cc5c8495316bc1b05df9d24d836edbca74917",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109072:4994188931:2026-08-01T10:33:10Z:clawsweeper_auto_repair",
       "comment_id": "4994188931",
@@ -32376,6 +32343,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116489:5151514098:2026-08-01T12:55:53Z:re_review",
+      "comment_id": "5151514098",
+      "comment_version_key": "5151514098:2026-08-01T12:55:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5151514098",
+      "comment_created_at": "2026-08-01T12:55:53Z",
+      "comment_updated_at": "2026-08-01T12:55:53Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116489,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T12:56:27.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/before-install-coverage",
+        "head_sha": "9f9b88f84785c9e0c2d8b9038d4331fc69b509be",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
