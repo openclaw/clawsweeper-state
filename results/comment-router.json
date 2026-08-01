@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:40:08.441Z",
+  "updated_at": "2026-08-01T16:40:17.416Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117305:5150708682:2026-08-01T14:47:04Z:clawsweeper_needs_human",
-      "comment_id": "5150708682",
-      "comment_version_key": "5150708682:2026-08-01T14:47:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5150708682",
-      "comment_created_at": "2026-08-01T08:52:37Z",
-      "comment_updated_at": "2026-08-01T14:47:04Z",
-      "comment_body_sha256": "4895c537ad3b9bf3002b1f3a6c25ffde9225088b4ee3674d8974c9952e4bad51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared session-visibility result now carries an additive denial classification. Existing contract checks have passed so far, but required current-head CI is still running and shou... (sha=0633da19246cd781ea2f3dbf0c83215b405e7977)",
-      "expected_head_sha": "0633da19246cd781ea2f3dbf0c83215b405e7977",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:50:03.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-visibility-lookup-failed-114653",
-        "head_sha": "0633da19246cd781ea2f3dbf0c83215b405e7977",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117323:5150892560:2026-08-01T14:43:56Z:clawsweeper_needs_human",
       "comment_id": "5150892560",
@@ -31500,6 +31467,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117184:5152363430:2026-08-01T16:39:38Z:re_review",
+      "comment_id": "5152363430",
+      "comment_version_key": "5152363430:2026-08-01T16:39:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5152363430",
+      "comment_created_at": "2026-08-01T16:39:38Z",
+      "comment_updated_at": "2026-08-01T16:39:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117184,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:40:14.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media",
+        "head_sha": "c19e4cb8c1d2d15277bf0efb568743b02def7622",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
