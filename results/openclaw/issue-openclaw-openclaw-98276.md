@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98276"
 mode: "autonomous"
-run_id: "30672941818"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30672941818"
+run_id: "30673249963"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30673249963"
 head_sha: "f0f71871e3f98bf1875c6ec6f89d14c75629aa6a"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-07-31T23:43:59.288Z"
+published_at: "2026-08-01T00:01:38.183Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98276"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30672941818](https://github.com/openclaw/clawsweeper/actions/runs/30672941818)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30673249963](https://github.com/openclaw/clawsweeper/actions/runs/30673249963)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/98276
 
 ## Summary
 
-Current main at 95e097246b1a9b7f6becd211657ddccca16b749a still packs dist-runtime-build.tar.zst from only dist, dist-runtime, and packages/*/dist, while workspace template discovery requires package-root resources. #98276 remains a narrow, non-security CI artifact defect. Plan a credited new fix PR; #98274 remains a distinct ACP behavior follow-up.
+#98276 remains a reproducible runtime-artifact packaging defect on main 3fc7fb281392ec08fa608defa7395b572d7f71dc. Plan one narrow self-contained artifact fix PR; keep the ACP empty-turn report and closed historical PRs out of mutation scope.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main at 95e097246b1a9b7f6becd211657ddccca16b749a still packs dist-runtim
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97916 | keep_closed | skipped | related | Already closed historical context; no mutation is valid. |
-| #98274 | keep_related | planned | related | Related downstream symptom family with a distinct root cause and maintainer decision. |
-| #98276 | fix_needed | planned | canonical | Current main still reproduces the artifact manifest gap, and the bounded repair is allowed by the job. |
-| #98326 | keep_closed | skipped | superseded | Already closed historical contributor PR; no closure or branch mutation is valid. |
-| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | A focused new fix PR is appropriate and allowed. |
+| #97916 | keep_closed | skipped | related | Closed context only; no close, merge, or repair action is appropriate in this cluster. |
+| #98274 | keep_related | planned | related | Same downstream proof lane, but a distinct Gateway/ACP product-semantics defect. |
+| #98276 | fix_needed | planned | canonical | No viable open PR owns the remaining packaging defect; create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-98276. |
+| #98326 | keep_closed | skipped | superseded | Historical contributor work is credited as evidence; it is already closed and must not receive a closure mutation. |
+| cluster:issue-openclaw-openclaw-98276 | build_fix_artifact | planned | canonical | Build a narrow, self-contained runtime archive contract and prove it from an isolated extraction without checkout dependency borrowing. |
 
 ## Needs Human
 
