@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:41:19.307Z",
+  "updated_at": "2026-08-01T07:42:06.526Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4679526462:2026-06-11T10:19:05Z:re_review",
-      "comment_id": "4679526462",
-      "comment_version_key": "4679526462:2026-06-11T10:19:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4679526462",
-      "comment_created_at": "2026-06-11T10:19:05Z",
-      "comment_updated_at": "2026-06-11T10:19:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:02:37.461Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4682586575:2026-06-11T16:12:40Z:re_review",
       "comment_id": "4682586575",
@@ -32011,6 +31984,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117283:5150457659:2026-08-01T07:41:26Z:clawsweeper_needs_human",
+      "comment_id": "5150457659",
+      "comment_version_key": "5150457659:2026-08-01T07:41:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117283#issuecomment-5150457659",
+      "comment_created_at": "2026-08-01T07:41:26Z",
+      "comment_updated_at": "2026-08-01T07:41:26Z",
+      "comment_body_sha256": "00339dbfdc05e15d330281563d36a38483e2b94ec29319d0f787a5a592865fbc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is currently dirty against main in the active recovery and lifecycle paths, so the frozen validation cannot be transferred to a merge result. (sha=079c183ba628d95c7276899626e26fbad0cf0260)",
+      "expected_head_sha": "079c183ba628d95c7276899626e26fbad0cf0260",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:42:06.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/collector-generation-ownership-20260731",
+        "head_sha": "079c183ba628d95c7276899626e26fbad0cf0260",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
