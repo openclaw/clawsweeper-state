@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:11:44.841Z",
+  "updated_at": "2026-08-01T08:11:45.696Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T05:44:32Z:clawsweeper_needs_human",
-      "comment_id": "5149564387",
-      "comment_version_key": "5149564387:2026-08-01T05:44:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
-      "comment_created_at": "2026-08-01T03:22:15Z",
-      "comment_updated_at": "2026-08-01T05:44:32Z",
-      "comment_body_sha256": "b5c7e2efb8f926138bbb7a357ba979e7e04577b6e1e0b8875cb7c48624f84cf7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117180,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Update the TruffleHog binary selector with the action pin (P1)** - This changes the action revision to v3.96.0, but the same step still passes version: 3.95.9 with the old digest. The credential scan therefore r...; Review finding: [P1] Update the TruffleHog binary selector with the action pin — .github/workflows/ci.yml:904-908 - [medium] Credential scanner binary remains on the old release —... (sha=b72e34358000e2982f0095104c2712a8846b155c)",
-      "expected_head_sha": "b72e34358000e2982f0095104c2712a8846b155c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:45:13.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-01e47d2daa",
-        "head_sha": "b72e34358000e2982f0095104c2712a8846b155c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117236:5150044988:2026-08-01T05:45:28Z:clawsweeper_needs_human",
       "comment_id": "5150044988",
@@ -32239,6 +32206,53 @@
         "kind": "pull_request",
         "branch": "spike/recently-completed-subagents-prompt",
         "head_sha": "6b814abd4166820e1298e0569ca813ed3171b150",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115277:5150561270:2026-08-01T08:10:57Z:re_review",
+      "comment_id": "5150561270",
+      "comment_version_key": "5150561270:2026-08-01T08:10:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115277#issuecomment-5150561270",
+      "comment_created_at": "2026-08-01T08:10:57Z",
+      "comment_updated_at": "2026-08-01T08:10:57Z",
+      "comment_body_sha256": "d7b704624d763b0a9d538103e4a2d0d40ebcfc2c1f096a30d9468fc0cb586bf2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115277,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:11:43.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-server-prefix-toolsallow",
+        "head_sha": "c106aaeac1d7096726524a0260ed5ade6b6ca3b1",
         "cluster_id": null,
         "job_path": null
       },
