@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T00:28:14.851Z",
+  "updated_at": "2026-08-01T00:28:28.849Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:122:5007724566:2026-07-31T21:20:39Z:clawsweeper_needs_human",
-      "comment_id": "5007724566",
-      "comment_version_key": "5007724566:2026-07-31T21:20:39Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/122#issuecomment-5007724566",
-      "comment_created_at": "2026-07-17T21:43:18Z",
-      "comment_updated_at": "2026-07-31T21:20:39Z",
-      "comment_body_sha256": "0c682b172b4e929f1c4df0ba548eed65f7acb697121b873e99e1327ea38d3506",
-      "repo": "openclaw/lobster",
-      "issue_number": 122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two no-op listeners consume every child.stdin stream error, not only the documented broken-pipe case; that broad contract could hide an unexpected local I/O failure and defer all... (sha=6ed2e2af0191301b9110bd188dd17ece2a222608)",
-      "expected_head_sha": "6ed2e2af0191301b9110bd188dd17ece2a222608",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T21:21:29.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/guard-step-stdin-epipe",
-        "head_sha": "6ed2e2af0191301b9110bd188dd17ece2a222608",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:81:5117981283:2026-07-31T21:20:32Z:clawsweeper_needs_human",
       "comment_id": "5117981283",
@@ -31509,6 +31476,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T00:28:14.851Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117117:5148535636:2026-08-01T00:25:21Z:clawsweeper_needs_human",
+      "comment_id": "5148535636",
+      "comment_version_key": "5148535636:2026-08-01T00:25:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117117#issuecomment-5148535636",
+      "comment_created_at": "2026-08-01T00:17:15Z",
+      "comment_updated_at": "2026-08-01T00:25:21Z",
+      "comment_body_sha256": "1f7255b0d4ee9afcda458dbf9f828646da02e9ebd1f9aa0eb26f09bfbe82e2f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117117,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body has unchecked proof items and provides no after-fix installed-plugin run; add redacted terminal output, logs, or a recording that s... (sha=fdbc00a60d038b66e1a49e9fe19b99c011d9013a)",
+      "expected_head_sha": "fdbc00a60d038b66e1a49e9fe19b99c011d9013a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T00:28:28.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-114619-supersede",
+        "head_sha": "fdbc00a60d038b66e1a49e9fe19b99c011d9013a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
