@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117545",
+  "mode": "autonomous",
+  "run_id": "30715971168",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30715971168",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
+  "published_at": "2026-08-01T20:06:21.874Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported overlay-precedence defect, but this worker cannot safely implement the requested retirement policy: the required authenticated, redacted NVIDIA live classification is unavailable in the restricted environment, and the read-only checkout cannot install the missing test dependency.",
+  "actions": [
+    {
+      "target": "#117545",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "Keep the issue open as the canonical repair thread while live provider evidence identifies which IDs qualify for unconditional suppression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117545",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "The source-level repair is narrow, but the provider-owned policy cannot safely be changed without the required live classification."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117545",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "A concrete patch awaits the authenticated provider classification; no code or PR branch can be safely produced in this checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide safe, redacted authenticated NVIDIA `/v1/models` listing and direct completion outcomes for the reported IDs, explicitly separating globally retired IDs from account-specific entitlement failures such as Kimi K2.6. Re-run the cluster in a writable checkout with network access and dependencies installed."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117545",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
