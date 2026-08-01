@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T13:27:39.221Z",
+  "updated_at": "2026-08-01T13:27:49.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:117:5081843282:2026-08-01T11:28:14Z:clawsweeper_needs_human",
-      "comment_id": "5081843282",
-      "comment_version_key": "5081843282:2026-08-01T11:28:14Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/117#issuecomment-5081843282",
-      "comment_created_at": "2026-07-26T03:43:36Z",
-      "comment_updated_at": "2026-08-01T11:28:14Z",
-      "comment_body_sha256": "0e7093ea2a4fb66977ec24476d66c6f83c70e1663bfe5c5a015c66f29c869a09",
-      "repo": "openclaw/clickclack",
-      "issue_number": 117,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging establishes permanent SQLite and PostgreSQL migration state, three public REST operations, generated TypeScript SDK methods, two durable event names, and a fixed 100-pin-per-c... (sha=d26c11abba773132c51defb6e647db3a69610003)",
-      "expected_head_sha": "d26c11abba773132c51defb6e647db3a69610003",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T11:28:52.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pinned-messages",
-        "head_sha": "d26c11abba773132c51defb6e647db3a69610003",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111646:5018796559:2026-08-01T11:28:14Z:clawsweeper_auto_repair",
       "comment_id": "5018796559",
@@ -32115,6 +32082,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T13:27:39.220Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:59:5118062986:2026-08-01T13:26:35Z:clawsweeper_needs_human",
+      "comment_id": "5118062986",
+      "comment_version_key": "5118062986:2026-08-01T13:26:35Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/59#issuecomment-5118062986",
+      "comment_created_at": "2026-07-29T12:58:23Z",
+      "comment_updated_at": "2026-08-01T13:26:35Z",
+      "comment_body_sha256": "fc98d00cb22d0da579993dd10dccb72b55990b0e72fe32f18d8484ecdbb09e99",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 59,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the updated verified-secret gate** - The workflow passes --only-verified, while v3.96.0 includes detector and verification changes; the PR does not show whether expected clean...; Review finding: [medium] Validate the updated verified-secret gate — .github/workflows/secret-scan.yml:52 - [low] Retain third-party action supply-chain review — .github/workflows... (sha=a9be40be753371bdc142ce660ddc8596b1c56ff8)",
+      "expected_head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T13:27:49.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
