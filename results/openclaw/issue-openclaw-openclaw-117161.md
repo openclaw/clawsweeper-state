@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117161"
 mode: "autonomous"
-run_id: "30681143049"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30681143049"
+run_id: "30680771494"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30680771494"
 head_sha: "b07ab751813c722d45f07ef955a8b5752ebbbb19"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-01T03:30:21.853Z"
+published_at: "2026-08-01T03:37:33.636Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117161"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117161"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30681143049](https://github.com/openclaw/clawsweeper/actions/runs/30681143049)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30680771494](https://github.com/openclaw/clawsweeper/actions/runs/30680771494)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/117161
 
 ## Summary
 
-Current main `65f3e42f24336308cb955063ab7fcddfb604787e` still contains the fixed 20 ms MCP loopback drain assertion. A narrow test-only repair is ready to implement, but this read-only checkout has no dependencies for editing or focused validation.
+Current main `7e78de747b8a64d52f30aee948b697bf4c528691` still has the fixed-window drain assertion. The existing request-start capture supplies the narrow deterministic test boundary, but the read-only worker checkout cannot install dependencies, edit, or run the required repetition.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main `65f3e42f24336308cb955063ab7fcddfb604787e` still contains the fixed
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117161 | fix_needed | planned | canonical | The bug remains real and narrowly repairable; only implementation and validation are blocked by the worker environment. |
-| cluster:issue-openclaw-openclaw-117161 | build_fix_artifact | planned | canonical | Open one narrow PR from `clawsweeper/issue-openclaw-openclaw-117161` in the writable executor after reproduction and repeated focused validation. |
+| #117161 | fix_needed | planned | canonical | The bug remains real and narrowly repairable; only implementation and validation are blocked by this worker environment. |
+| cluster:issue-openclaw-openclaw-117161 | build_fix_artifact | planned | canonical | A writable executor should implement and validate one narrow test-only PR on `clawsweeper/issue-openclaw-openclaw-117161`. |
 
 ## Needs Human
 

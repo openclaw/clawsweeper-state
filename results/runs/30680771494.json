@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117161",
+  "mode": "autonomous",
+  "run_id": "30680771494",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30680771494",
+  "head_sha": "b07ab751813c722d45f07ef955a8b5752ebbbb19",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117161.md",
+  "published_at": "2026-08-01T03:37:33.636Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117161",
+  "canonical_pr": null,
+  "summary": "Current main `7e78de747b8a64d52f30aee948b697bf4c528691` still has the fixed-window drain assertion. The existing request-start capture supplies the narrow deterministic test boundary, but the read-only worker checkout cannot install dependencies, edit, or run the required repetition.",
+  "actions": [
+    {
+      "target": "#117161",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "The bug remains real and narrowly repairable; only implementation and validation are blocked by this worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117161",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117161",
+      "candidate_fix": null,
+      "reason": "A writable executor should implement and validate one narrow test-only PR on `clawsweeper/issue-openclaw-openclaw-117161`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
