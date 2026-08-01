@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:41:58.039Z",
+  "updated_at": "2026-08-01T16:42:12.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117433:5151758080:2026-08-01T14:35:39Z:clawsweeper_needs_human",
-      "comment_id": "5151758080",
-      "comment_version_key": "5151758080:2026-08-01T14:35:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117433#issuecomment-5151758080",
-      "comment_created_at": "2026-08-01T14:03:23Z",
-      "comment_updated_at": "2026-08-01T14:35:39Z",
-      "comment_body_sha256": "0747e31eed4f4d330a7797c8026b601fc261a572835f81e2cfa4adcf9567c8ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117433,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If the unified tsdown transform is omitted or regresses in a packaging mode, an installed build could retain a source-time schema file read even though the package contains no SQL ass... (sha=73f4151935f601515fd16d071aa0eac7dcb2d5bd)",
-      "expected_head_sha": "73f4151935f601515fd16d071aa0eac7dcb2d5bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:50:03.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/state-schema-inline",
-        "head_sha": "73f4151935f601515fd16d071aa0eac7dcb2d5bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117424:5151772106:2026-08-01T14:42:10Z:clawsweeper_needs_human",
       "comment_id": "5151772106",
@@ -31584,6 +31551,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117375:5152372239:2026-08-01T16:41:35Z:re_review",
+      "comment_id": "5152372239",
+      "comment_version_key": "5152372239:2026-08-01T16:41:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117375#issuecomment-5152372239",
+      "comment_created_at": "2026-08-01T16:41:35Z",
+      "comment_updated_at": "2026-08-01T16:41:35Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117375,
+      "author": "Takhoffman",
+      "author_id": 781889,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T16:42:09.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "systemd-unit-escape-roundtrip",
+        "head_sha": "9d33ab0b0444f58d092a3029a3c9f237df6ec24b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
