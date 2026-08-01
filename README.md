@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Jul 31, 2026, 23:32 UTC
+Last source update: Aug 1, 2026, 00:05 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Jul 31, 2026, 23:32 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Jul 31, 2026, 23:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30666302845) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Jul 31, 2026, 23:16 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30672343114) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 1, 2026, 00:05 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30667459545) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Jul 31, 2026, 23:44 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30673639213) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Jul 31, 2026, 23:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30673052447) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Jul 31, 2026, 23:27 UTC
+Last source update: Aug 1, 2026, 00:01 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 260 | 100% |
-| Run attempts archived | 691 | audit |
+| Run attempts archived | 693 | audit |
 | Latest successful clusters | 230 | 88.5% |
 | Latest failed clusters | 30 | 11.5% |
 | Latest cancelled clusters | 0 | 0.0% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 260 clusters: 154 maintainer action, 37 automation snapshot, 53 intervention needed, 16 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#116976](https://github.com/openclaw/openclaw/pull/116976) is merge_not_authorized: job does not allow merge.
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-98276](cluster:issue-openclaw-openclaw-98276) is automation_failed: Implementation requires a writable repair checkout; the deterministic applicator can replay this exact artifact there..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98276](https://github.com/openclaw/openclaw/pull/98276) is automation_failed: No viable open PR owns the remaining packaging defect; create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-98276..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#116937](https://github.com/openclaw/openclaw/pull/116937) is action_planned: The issue has a single, source-proven command-hint defect with an existing command owner and an isolated regression-test seam..
 - Completed latest: no completed action in the latest records.
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-98276](cluster:issue-openclaw-openclaw-98276) | automation_failed | Implementation requires a writable repair checkout; the deterministic applicator can replay this exact artifact there. | Jul 31, 2026, 23:00 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30670627735](https://github.com/openclaw/clawsweeper/actions/runs/30670627735) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#98276](https://github.com/openclaw/openclaw/pull/98276) | automation_failed | No viable open PR owns the remaining packaging defect; create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-98276. | Aug 1, 2026, 00:01 UTC | [issue-openclaw-openclaw-98276](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-98276.md) | [30673249963](https://github.com/openclaw/clawsweeper/actions/runs/30673249963) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/plugins/... | Jul 31, 2026, 22:56 UTC | [issue-openclaw-openclaw-90786](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-90786.md) | [30669198364](https://github.com/openclaw/clawsweeper/actions/runs/30669198364) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, docs [check:changed] src/ag... | Jul 31, 2026, 18:33 UTC | [issue-openclaw-openclaw-93917](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-93917.md) | [30651770665](https://github.com/openclaw/clawsweeper/actions/runs/30651770665) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Jul 31, 2026, 17:49 UTC | [issue-openclaw-openclaw-116967](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-116967.md) | [30652172891](https://github.com/openclaw/clawsweeper/actions/runs/30652172891) |
