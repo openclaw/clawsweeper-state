@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T22:23:11.018Z",
+  "updated_at": "2026-08-01T22:23:11.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117509:5152534983:2026-08-01T17:23:43Z:re_review",
-      "comment_id": "5152534983",
-      "comment_version_key": "5152534983:2026-08-01T17:23:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117509#issuecomment-5152534983",
-      "comment_created_at": "2026-08-01T17:23:43Z",
-      "comment_updated_at": "2026-08-01T17:23:43Z",
-      "comment_body_sha256": "cb7fe841e4dde1076e2e71cf73bec5dc279904381b93f3fd8e84a3360d5cef65",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117509,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T19:33:00.753Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117509:5152553795:2026-08-01T19:32:26Z:clawsweeper_needs_human",
       "comment_id": "5152553795",
@@ -33258,6 +33231,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116562:5136405557:2026-08-01T22:22:34Z:clawsweeper_needs_human",
+      "comment_id": "5136405557",
+      "comment_version_key": "5136405557:2026-08-01T22:22:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5136405557",
+      "comment_created_at": "2026-07-30T21:23:03Z",
+      "comment_updated_at": "2026-08-01T22:22:34Z",
+      "comment_body_sha256": "c16dfefd72e55fd4f38988bc10ed0902fc12a5bc9b657fcdfcf534104a22acfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116562,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused fault-injected manager tests are useful supplemental coverage, but the PR has no after-fix configured-runtime outage and recovery proof... (sha=9260cbcbb70ae284ff4a6fd5bf3c298e5c705eda)",
+      "expected_head_sha": "9260cbcbb70ae284ff4a6fd5bf3c298e5c705eda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T22:23:11.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-fallback-recovery-96534",
+        "head_sha": "9260cbcbb70ae284ff4a6fd5bf3c298e5c705eda",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
