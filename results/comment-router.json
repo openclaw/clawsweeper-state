@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:12:06.383Z",
+  "updated_at": "2026-08-01T19:12:15.611Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117305:5150708682:2026-08-01T15:56:58Z:clawsweeper_auto_repair",
-      "comment_id": "5150708682",
-      "comment_version_key": "5150708682:2026-08-01T15:56:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5150708682",
-      "comment_created_at": "2026-08-01T08:52:37Z",
-      "comment_updated_at": "2026-08-01T15:56:58Z",
-      "comment_body_sha256": "3d57b31d17381f4df0a4c7842199a876718e93fa9fbdfc2a8a31fdc7d6a3e4f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0633da19246cd781ea2f3dbf0c83215b405e7977)",
-      "expected_head_sha": "0633da19246cd781ea2f3dbf0c83215b405e7977",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T16:39:39.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-visibility-lookup-failed-114653",
-        "head_sha": "386b54f7a6b4f0416876315ca97eba345f1b255e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117322:5150867095:2026-08-01T16:08:46Z:clawsweeper_needs_human",
       "comment_id": "5150867095",
@@ -32953,6 +32920,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116534:5152978362:2026-08-01T19:11:40Z:re_review",
+      "comment_id": "5152978362",
+      "comment_version_key": "5152978362:2026-08-01T19:11:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116534#issuecomment-5152978362",
+      "comment_created_at": "2026-08-01T19:11:40Z",
+      "comment_updated_at": "2026-08-01T19:11:40Z",
+      "comment_body_sha256": "f6aee9fa9746d26d8609b300087bb5bf32c45221c460a7fcca9f891d6f7bf006",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116534,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T19:12:13.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lark-bundled-contracts-77982",
+        "head_sha": "71e0bea31cd2cdaa4cbda359c14784c4ba51f64b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
