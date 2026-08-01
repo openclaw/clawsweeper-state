@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:17:35.077Z",
+  "updated_at": "2026-08-01T07:17:36.694Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88504:4585534718:2026-08-01T04:57:32Z:clawsweeper_needs_human",
-      "comment_id": "4585534718",
-      "comment_version_key": "4585534718:2026-08-01T04:57:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4585534718",
-      "comment_created_at": "2026-05-31T03:01:16Z",
-      "comment_updated_at": "2026-08-01T04:57:32Z",
-      "comment_body_sha256": "60f1f6811b1d7464e93c5e2cf9a0aa8a98daeb995bd84b811b9df2bfd90968ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88504,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports tests and personal use, but the supplied review context has no directly inspectable exact-head terminal, Gateway, rec... (sha=3be8ed7ca437ecd206f2e35a6fec8f968f79e42a)",
-      "expected_head_sha": "3be8ed7ca437ecd206f2e35a6fec8f968f79e42a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T04:59:04.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/multi-slot-memory-architecture",
-        "head_sha": "3be8ed7ca437ecd206f2e35a6fec8f968f79e42a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88504:4618840420:2026-06-04T04:05:48Z:re_review",
       "comment_id": "4618840420",
@@ -31528,6 +31495,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T07:17:35.076Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110568:5010618124:2026-08-01T07:16:06Z:clawsweeper_needs_human",
+      "comment_id": "5010618124",
+      "comment_version_key": "5010618124:2026-08-01T07:16:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110568#issuecomment-5010618124",
+      "comment_created_at": "2026-07-18T08:40:04Z",
+      "comment_updated_at": "2026-08-01T07:16:06Z",
+      "comment_body_sha256": "c80b78d569bd4dafd6b7dd54f4ec425be2292e162d4c242c05b6cfb656f7c184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110568,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A journal append that exhausts retries sets a sticky admission failure, so every later sync-store persist throws and the Matrix cursor remains behind until process restart; this inten... (sha=66a610d063a221e4e2fa7accd57e9dbf296af6f9)",
+      "expected_head_sha": "66a610d063a221e4e2fa7accd57e9dbf296af6f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:17:36.693Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-ingress-durability",
+        "head_sha": "66a610d063a221e4e2fa7accd57e9dbf296af6f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
