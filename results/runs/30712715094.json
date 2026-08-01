@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117545",
+  "mode": "autonomous",
+  "run_id": "30712715094",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30712715094",
+  "head_sha": "dccfa528f0387431807818ba43823310b5e08f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
+  "published_at": "2026-08-01T18:39:59.641Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117545",
+  "canonical_pr": null,
+  "summary": "#117545 is still an open, canonical, non-security NVIDIA provider-catalog bug on `main` at `a624ba7b96aa8b15d4a859e69853f9842906212d`. Current source confirms the plugin has no NVIDIA suppression entries and that a remote catalog overlay replaces matching manifest rows. Implementation is blocked only on the job-required live NVIDIA classification: this environment has no NVIDIA API credential, so it cannot distinguish globally retired IDs from account-specific access failures without guessing. No files changed and no GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#117545",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "Blocked pending a safe live NVIDIA proof path. Suppressing models based only on the issue excerpt or existing deprecated manifest status would risk turning an account-specific entitlement failure into a global catalog exclusion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117545",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117545",
+      "candidate_fix": null,
+      "reason": "The source-level repair shape is clear, but the exact suppression set and reason strings are intentionally blocked on current provider evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117545",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

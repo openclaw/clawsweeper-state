@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117545"
 mode: "autonomous"
-run_id: "30712402959"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30712402959"
+run_id: "30712715094"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30712715094"
 head_sha: "dccfa528f0387431807818ba43823310b5e08f51"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-01T18:29:42.930Z"
+published_at: "2026-08-01T18:39:59.641Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117545"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30712402959](https://github.com/openclaw/clawsweeper/actions/runs/30712402959)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30712715094](https://github.com/openclaw/clawsweeper/actions/runs/30712715094)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/117545
 
 ## Summary
 
-#117545 remains a bounded NVIDIA plugin catalog bug on current main, but this worker cannot safely implement it: the required current NVIDIA `/v1/models` and per-model error-semantics proof cannot be performed because no NVIDIA API credential is available in the target environment. The issue artifact distinguishes globally retired IDs from account-specific entitlement failures, and the available excerpt does not provide enough complete, current evidence to classify each reported model without guessing. No files changed.
+#117545 is still an open, canonical, non-security NVIDIA provider-catalog bug on `main` at `a624ba7b96aa8b15d4a859e69853f9842906212d`. Current source confirms the plugin has no NVIDIA suppression entries and that a remote catalog overlay replaces matching manifest rows. Implementation is blocked only on the job-required live NVIDIA classification: this environment has no NVIDIA API credential, so it cannot distinguish globally retired IDs from account-specific access failures without guessing. No files changed and no GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/117545
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117545 | keep_canonical | planned | canonical | Do not add blanket suppressions from the reporter excerpt or locally deprecated rows: doing so could incorrectly suppress an account-specific model such as Kimi K2.6. Resume only with a safe live NVIDIA proof that records the current `/v1/models` membership and direct response class for every reported ID. |
+| #117545 | fix_needed | blocked | canonical | Blocked pending a safe live NVIDIA proof path. Suppressing models based only on the issue excerpt or existing deprecated manifest status would risk turning an account-specific entitlement failure into a global catalog exclusion. |
+| cluster:issue-openclaw-openclaw-117545 | build_fix_artifact | blocked | canonical | The source-level repair shape is clear, but the exact suppression set and reason strings are intentionally blocked on current provider evidence. |
 
 ## Needs Human
 
