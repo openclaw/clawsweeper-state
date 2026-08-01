@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:36:56.167Z",
+  "updated_at": "2026-08-01T10:38:18.496Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117256:5150492478:2026-08-01T07:51:14Z:re_review",
-      "comment_id": "5150492478",
-      "comment_version_key": "5150492478:2026-08-01T07:51:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117256#issuecomment-5150492478",
-      "comment_created_at": "2026-08-01T07:51:14Z",
-      "comment_updated_at": "2026-08-01T07:51:14Z",
-      "comment_body_sha256": "8dffd22cb2cf6381131e25efdf9b124753f3d7745fb9313bf1baaa9c1d3dc171",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117256,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T07:51:46.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-109601-20260801t044651z-b4f2a81d",
-        "head_sha": "f58f6303d7c4d922456d7616e5b5d4592a290d89",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5150492452:2026-08-01T07:51:13Z:re_review",
       "comment_id": "5150492452",
@@ -32639,6 +32592,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117266:5150387940:2026-08-01T10:37:41Z:clawsweeper_needs_human",
+      "comment_id": "5150387940",
+      "comment_version_key": "5150387940:2026-08-01T10:37:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117266#issuecomment-5150387940",
+      "comment_created_at": "2026-08-01T07:21:09Z",
+      "comment_updated_at": "2026-08-01T10:37:41Z",
+      "comment_body_sha256": "bcaf83fd4e5f06de2fde3764fda2594116289471a12a0ac568a7b6fad2e88ad4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides exact-head terminal results for focused SQLite/Gateway tests, including HTTP and filesystem scenarios, but it does not yet... (sha=9d04baab18c3538f734aa1e118d628e3c64d393b)",
+      "expected_head_sha": "9d04baab18c3538f734aa1e118d628e3c64d393b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:38:18.496Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/managed-media-branch-retention",
+        "head_sha": "9d04baab18c3538f734aa1e118d628e3c64d393b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
