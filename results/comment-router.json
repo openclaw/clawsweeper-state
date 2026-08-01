@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:09:08.460Z",
+  "updated_at": "2026-08-01T09:10:44.687Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107375:5147253691:2026-07-31T20:39:02Z:re_review",
-      "comment_id": "5147253691",
-      "comment_version_key": "5147253691:2026-07-31T20:39:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107375#issuecomment-5147253691",
-      "comment_created_at": "2026-07-31T20:39:02Z",
-      "comment_updated_at": "2026-07-31T20:39:02Z",
-      "comment_body_sha256": "6d3f6484896b9b6daeee70af3bc704e70df63c8eca2fc290ea3dd944d9bbd6bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107375,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:34:29.009Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107375:5147498252:2026-07-31T21:10:54Z:re_review",
       "comment_id": "5147498252",
@@ -32578,6 +32551,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116920:5144747757:2026-08-01T09:07:34Z:clawsweeper_needs_human",
+      "comment_id": "5144747757",
+      "comment_version_key": "5144747757:2026-08-01T09:07:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116920#issuecomment-5144747757",
+      "comment_created_at": "2026-07-31T15:45:49Z",
+      "comment_updated_at": "2026-08-01T09:07:34Z",
+      "comment_body_sha256": "6f5f4f483e7e81800f91295986b49ddf3ec1fa9505e45bf807668809472943f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the external evaluator revision before execution** - The changed SHA is fetched from openclaw/Kova and later invoked by the release-performance workflow; independently inspect it...; Review finding: [medium] Verify the external evaluator revision before execution — .github/workflows/openclaw-performance.yml:73 (sha=f0a782ded110b1960bf7dc2040d373b42bfed417)",
+      "expected_head_sha": "f0a782ded110b1960bf7dc2040d373b42bfed417",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:10:44.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-kova-evaluator-pin-20260731",
+        "head_sha": "f0a782ded110b1960bf7dc2040d373b42bfed417",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
