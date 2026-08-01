@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:13:44.024Z",
+  "updated_at": "2026-08-01T05:13:44.872Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109707:5148815860:2026-08-01T01:18:20Z:re_review",
-      "comment_id": "5148815860",
-      "comment_version_key": "5148815860:2026-08-01T01:18:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109707#issuecomment-5148815860",
-      "comment_created_at": "2026-08-01T01:18:20Z",
-      "comment_updated_at": "2026-08-01T01:18:20Z",
-      "comment_body_sha256": "ca6e7a93b0ab3288d30a2720ea117a71cc9d40485f192ecf64dfe7c8229e6904",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109707,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T01:21:07.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-find-grep-exec-timeout",
-        "head_sha": "c1fa92b976b5ee5d9d8b1ed901c328cf6e8050fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:49:5118102562:2026-08-01T01:22:32Z:clawsweeper_needs_human",
       "comment_id": "5118102562",
@@ -31825,6 +31778,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-delivery-validity",
         "head_sha": "185bd74e6e73fd26933400c203aaba196f53aafd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:3:4514202019:2026-08-01T05:09:09Z:clawsweeper_needs_human",
+      "comment_id": "4514202019",
+      "comment_version_key": "4514202019:2026-08-01T05:09:09Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/3#issuecomment-4514202019",
+      "comment_created_at": "2026-05-22T01:38:21Z",
+      "comment_updated_at": "2026-08-01T05:09:09Z",
+      "comment_body_sha256": "32f33e885311e3154f559667a66bfc42cffc14f7b6427d718ee394b90bbb2b64",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 3,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No PR body, comment, terminal output, recording, or redacted ESP-device/Gateway handshake shows after-fix scope authorization behavior; add a r...; Review finding: [P1] Reject scope lists that cannot be signed completely — components/esp-openclaw-node/src/esp_openclaw_node_protocol.c:52-70 - [high] Signed scopes can diverge f... (sha=9291873a5c017100a4d05e03f296787124e443e3)",
+      "expected_head_sha": "9291873a5c017100a4d05e03f296787124e443e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:13:44.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "main",
+        "head_sha": "9291873a5c017100a4d05e03f296787124e443e3",
         "cluster_id": null,
         "job_path": null
       }
