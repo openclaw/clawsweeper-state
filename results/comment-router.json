@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:42:50.106Z",
+  "updated_at": "2026-08-01T17:43:30.339Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117485:5152204733:2026-08-01T16:00:25Z:clawsweeper_auto_merge",
-      "comment_id": "5152204733",
-      "comment_version_key": "5152204733:2026-08-01T16:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152204733",
-      "comment_created_at": "2026-08-01T16:00:25Z",
-      "comment_updated_at": "2026-08-01T16:00:25Z",
-      "comment_body_sha256": "33421e529b59ec4073625ff2b37ec6174296d8380ff635ce46f9f06b2b6d1d83",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117485,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=95ee8fca7f8a3d67c8ee3499434535154e01d76b); current checks are failing: Scan iOS dead code:FAILURE, Intersect shared OpenClawKit dead code:FAILURE, ios-build:FAILURE",
-      "expected_head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:01:15.959Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-110171",
-        "head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
-        "cluster_id": "automerge-openclaw-openclaw-117485",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117276:5150411732:2026-08-01T16:03:07Z:clawsweeper_needs_human",
       "comment_id": "5150411732",
@@ -31314,6 +31267,39 @@
         "kind": "pull_request",
         "branch": "codex/qa300-matrix-block-typing-diagnostic",
         "head_sha": "19aa2807fcfcf47fa641b12aed98b1539878166c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117525:5152505837:2026-08-01T17:36:33Z:clawsweeper_needs_human",
+      "comment_id": "5152505837",
+      "comment_version_key": "5152505837:2026-08-01T17:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117525#issuecomment-5152505837",
+      "comment_created_at": "2026-08-01T17:16:29Z",
+      "comment_updated_at": "2026-08-01T17:36:33Z",
+      "comment_body_sha256": "fce00e0b053ebbdc1f2ab3d78cc625897015e4378184521b3b2d1251d0461494",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117525,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This workflow change adds a second published source-performance probe; the exact-head source-performance and Kova runs must finish with both case IDs present before merge. (sha=b02d8cf81115bb45d3ac2fafb60c806b3cac0620)",
+      "expected_head_sha": "b02d8cf81115bb45d3ac2fafb60c806b3cac0620",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:43:30.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-cli-health-benchmark",
+        "head_sha": "39aa02978c8315c9268f2ff3970ba5cd11f07641",
         "cluster_id": null,
         "job_path": null
       }
