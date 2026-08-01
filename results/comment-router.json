@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:18:01.200Z",
+  "updated_at": "2026-08-01T10:19:31.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4620110665:2026-06-04T07:49:16Z:re_review",
-      "comment_id": "4620110665",
-      "comment_version_key": "4620110665:2026-06-04T07:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4620110665",
-      "comment_created_at": "2026-06-04T07:49:16Z",
-      "comment_updated_at": "2026-06-04T07:49:16Z",
-      "comment_body_sha256": "551b972cab2f85dde706a8f85fe6db80b918e69065dab534913d5243c500f3a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T07:27:11.129Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4621395951:2026-06-04T10:43:55Z:re_review",
       "comment_id": "4621395951",
@@ -32485,6 +32458,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T10:18:01.199Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-01T10:19:01Z:clawsweeper_needs_human",
+      "comment_id": "5121262567",
+      "comment_version_key": "5121262567:2026-08-01T10:19:01Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
+      "comment_created_at": "2026-07-29T17:24:33Z",
+      "comment_updated_at": "2026-08-01T10:19:01Z",
+      "comment_body_sha256": "39310a59729e8b12f656ce8736063c75746e236091deb1d10156f1ee9b44223f",
+      "repo": "openclaw/libterminal",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upstream implementation update for a workflow that can write labels and close issues or pull requests; normal CI validates workflow syntax and repository... (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
+      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:19:31.003Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
