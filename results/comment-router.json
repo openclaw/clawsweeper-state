@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:23:19.927Z",
+  "updated_at": "2026-08-01T08:23:20.073Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116263:5127455210:2026-08-01T05:56:31Z:clawsweeper_needs_human",
-      "comment_id": "5127455210",
-      "comment_version_key": "5127455210:2026-08-01T05:56:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116263#issuecomment-5127455210",
-      "comment_created_at": "2026-07-30T06:32:52Z",
-      "comment_updated_at": "2026-08-01T05:56:31Z",
-      "comment_body_sha256": "1818ffe7ba846e7e019d5834d31ecc240287da4efc6e31cfbd7725d8052e2788",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116263,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows focused tests that call scanSource, but no redacted after-fix openclaw security audit --deep or equivalent audit transcript d...; Review finding: [P2] Derive aliases from comment-stripped source — src/skills/security/scanner.ts:487 - [medium] Commented bindings can produce false security findings — src/skill... (sha=38690ff775d071c762308f0a047eec5e2e7305b7)",
-      "expected_head_sha": "38690ff775d071c762308f0a047eec5e2e7305b7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:57:10.461Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scanner-child-process-aliases",
-        "head_sha": "38690ff775d071c762308f0a047eec5e2e7305b7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116028:5121824987:2026-08-01T05:57:06Z:clawsweeper_needs_human",
       "comment_id": "5121824987",
@@ -32303,6 +32270,53 @@
         "kind": "pull_request",
         "branch": "fix/dreaming-rem-junk-topics",
         "head_sha": "4f11722b90c201292bfc8e79771dd6100a4e369f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114750:5150601404:2026-08-01T08:22:38Z:re_review",
+      "comment_id": "5150601404",
+      "comment_version_key": "5150601404:2026-08-01T08:22:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114750#issuecomment-5150601404",
+      "comment_created_at": "2026-08-01T08:22:38Z",
+      "comment_updated_at": "2026-08-01T08:22:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114750,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T08:23:18.130Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-114730",
+        "head_sha": "4a11660058c3281974b6dca7b725a446526a7433",
         "cluster_id": null,
         "job_path": null
       },
