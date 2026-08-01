@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:03:45.185Z",
+  "updated_at": "2026-08-01T06:03:46.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75225:4355465901:2026-08-01T01:55:31Z:clawsweeper_needs_human",
-      "comment_id": "4355465901",
-      "comment_version_key": "4355465901:2026-08-01T01:55:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75225#issuecomment-4355465901",
-      "comment_created_at": "2026-04-30T19:11:57Z",
-      "comment_updated_at": "2026-08-01T01:55:31Z",
-      "comment_body_sha256": "21cb40867f1b952ce94a5c57ebc5b704dc33875a6323fccd52b43a275c5c8ec3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bound descriptions before returning them to the model (P1)** - AgentEntrySchema permits an unrestricted string, but this new mapper returns every allowed target’s full trimmed description. A requester with allow...; Review finding: [P1] Bound descriptions before returning them to the model — src/agents/tools/agents-list-tool.ts:121-123 - [medium] Unbounded configuration text reaches model con... (sha=573e317a901dae7451e265413e0941d60e403635)",
-      "expected_head_sha": "573e317a901dae7451e265413e0941d60e403635",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:58:18.131Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agents-description-field",
-        "head_sha": "573e317a901dae7451e265413e0941d60e403635",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:75225:4581944501:2026-05-30T06:22:10Z:re_review",
       "comment_id": "4581944501",
@@ -32191,6 +32158,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112966:5150101227:2026-08-01T06:03:03Z:re_review",
+      "comment_id": "5150101227",
+      "comment_version_key": "5150101227:2026-08-01T06:03:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112966#issuecomment-5150101227",
+      "comment_created_at": "2026-08-01T06:03:03Z",
+      "comment_updated_at": "2026-08-01T06:03:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112966,
+      "author": "sunlit-deng",
+      "author_id": 253064511,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:03:44.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/local-candidate-openai-responses-reasoning-map",
+        "head_sha": "d2ae787b2a71faac87fc2f9cd96158721e21fa8b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116931:5144941346:2026-08-01T06:00:03Z:clawsweeper_needs_human",
