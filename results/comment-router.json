@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-01T23:43:14.350Z",
+  "updated_at": "2026-08-01T23:42:38.442Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117627:5153360068:2026-08-01T20:47:20Z:clawsweeper_needs_human",
+      "comment_id": "5153360068",
+      "comment_version_key": "5153360068:2026-08-01T20:47:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117627#issuecomment-5153360068",
+      "comment_created_at": "2026-08-01T20:47:20Z",
+      "comment_updated_at": "2026-08-01T20:47:20Z",
+      "comment_body_sha256": "6bc407ebd647c583072a5b5b0e9ee9c0a71273061e3e06c949d64a947e4ba960",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117627,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The GitHub check set was still in progress at review time; a human should merge only after the required checks complete for the reviewed head. (sha=93e935745cb9fb9a1ecdc228249f6da3fc22a817)",
+      "expected_head_sha": "93e935745cb9fb9a1ecdc228249f6da3fc22a817",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T20:51:36.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-ui-usage-presentation-owner-0801-2d45",
+        "head_sha": "93e935745cb9fb9a1ecdc228249f6da3fc22a817",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89739:4610039833:2026-08-01T18:20:18Z:clawsweeper_auto_repair",
       "comment_id": "4610039833",
@@ -32556,53 +32589,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117679:5154029571:2026-08-01T23:42:34Z:re_review",
-      "comment_id": "5154029571",
-      "comment_version_key": "5154029571:2026-08-01T23:42:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117679#issuecomment-5154029571",
-      "comment_created_at": "2026-08-01T23:42:34Z",
-      "comment_updated_at": "2026-08-01T23:42:34Z",
-      "comment_body_sha256": "8572d429dc1c17952c5abe5e593c7ad8de3d37e8590a8a30438e1c9d3cb7af5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117679,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T23:43:12.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-cron-task-session-link-20260801",
-        "head_sha": "eef2967441d52bf106a81e5f6a06927c7a3300e8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
