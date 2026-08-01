@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:31:26.853Z",
+  "updated_at": "2026-08-01T11:31:44.921Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116784:5150712741:2026-08-01T08:53:27Z:re_review",
-      "comment_id": "5150712741",
-      "comment_version_key": "5150712741:2026-08-01T08:53:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116784#issuecomment-5150712741",
-      "comment_created_at": "2026-08-01T08:53:27Z",
-      "comment_updated_at": "2026-08-01T08:53:27Z",
-      "comment_body_sha256": "64531a3eba25251e5b648342283ca56de7c66ef23fc2e820d45e69a3d3a5c571",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116784,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:54:05.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-116732",
-        "head_sha": "9a16f0591bc90b6f3a3e5777506a70d3fa2e0337",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/wacli:325:5117912610:2026-08-01T08:48:54Z:clawsweeper_auto_repair",
-      "comment_id": "5117912610",
-      "comment_version_key": "5117912610:2026-08-01T08:48:54Z",
-      "comment_url": "https://github.com/openclaw/wacli/pull/325#issuecomment-5117912610",
-      "comment_created_at": "2026-07-29T12:44:44Z",
-      "comment_updated_at": "2026-08-01T08:48:54Z",
-      "comment_body_sha256": "e6dfce0a4d2ac5612d7f600c44959047f36607bf9cbed668f9d6d3d36f2dbc82",
-      "repo": "openclaw/wacli",
-      "issue_number": 325,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=333b27c18fb50af0fe1895ba63211a53c02c23f7)",
-      "expected_head_sha": "333b27c18fb50af0fe1895ba63211a53c02c23f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T08:54:05.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sync-follow-logged-out",
-        "head_sha": "333b27c18fb50af0fe1895ba63211a53c02c23f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116900:5144389034:2026-08-01T08:53:25Z:clawsweeper_needs_human",
       "comment_id": "5144389034",
@@ -31690,6 +31610,39 @@
       }
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115545:5118018616:2026-08-01T11:29:42Z:clawsweeper_needs_human",
+      "comment_id": "5118018616",
+      "comment_version_key": "5118018616:2026-08-01T11:29:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115545#issuecomment-5118018616",
+      "comment_created_at": "2026-07-29T12:54:15Z",
+      "comment_updated_at": "2026-08-01T11:29:42Z",
+      "comment_body_sha256": "4b923c2767de7da872ee0d07de33d1cc81d005779c9876a0e0d405674b07f248",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115545,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Scope credential headers to authorized initial origins** - Accepted operator headers are merged into every direct web_fetch request, while the tool URL originates with the model. Cross-...; Review finding: [high] Scope credential headers to authorized initial origins — src/agents/tools/web-fetch.ts:275 (sha=4752e2d713238477e775658dec7236815d2f8319)",
+      "expected_head_sha": "4752e2d713238477e775658dec7236815d2f8319",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:30:54.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse-merhi/web-fetch-headers",
+        "head_sha": "4752e2d713238477e775658dec7236815d2f8319",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116263:5127455210:2026-08-01T11:29:47Z:clawsweeper_needs_human",
       "comment_id": "5127455210",
       "comment_version_key": "5127455210:2026-08-01T11:29:47Z",
@@ -31817,6 +31770,53 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-2026-6-34-matrix-validation-repairs",
         "head_sha": "57d78837e0398be70869f0c8546bba719e8265a8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117330:5151230461:2026-08-01T11:31:03Z:re_review",
+      "comment_id": "5151230461",
+      "comment_version_key": "5151230461:2026-08-01T11:31:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117330#issuecomment-5151230461",
+      "comment_created_at": "2026-08-01T11:31:03Z",
+      "comment_updated_at": "2026-08-01T11:31:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117330,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T11:31:42.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-telegram-attested-compat",
+        "head_sha": "5c6381e21c69296c2027d30ce3c3e288d4a2e749",
         "cluster_id": null,
         "job_path": null
       },
