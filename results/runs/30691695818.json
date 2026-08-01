@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115037",
+  "mode": "autonomous",
+  "run_id": "30691695818",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30691695818",
+  "head_sha": "b347894406412c2b52bfa97a73bf9f5da4ea1598",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115037.md",
+  "published_at": "2026-08-01T08:34:54.151Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115037",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115037",
+  "canonical_pr": null,
+  "summary": "#115037 is a real, still-open P1 lifecycle bug on current main. The merged #90799 correctly waits for same-process continuation after the exact resumed Claude synthetic placeholder, but its terminal-grace path deliberately returns an empty output. That re-enters the normal CLI empty-response failure path and the outer model-fallback runner can execute the user turn on a configured fallback model. Build one narrow PR that performs a bounded, replay-safe same-model redispatch from the Claude live-session owner when this exact terminal lifecycle state occurs; do not change generic empty-response or fallback policy.",
+  "actions": [
+    {
+      "target": "#90799",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation is valid or needed."
+    },
+    {
+      "target": "#99131",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; the open issue has distinct remaining work."
+    },
+    {
+      "target": "#99139",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#90799",
+      "candidate_fix": null,
+      "reason": "Already closed as superseded; no closure action may be emitted."
+    },
+    {
+      "target": "#115037",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "The exact terminal synthetic lifecycle is still converted into generic empty-response fallback; no viable open PR exists."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115037",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115037",
+      "candidate_fix": null,
+      "reason": "Create or update the required branch clawsweeper/issue-openclaw-openclaw-115037 with one focused implementation PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
