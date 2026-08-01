@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T08:59:32.867Z",
+  "updated_at": "2026-08-01T08:59:35.190Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107600:4973721000:2026-08-01T06:22:39Z:clawsweeper_auto_repair",
-      "comment_id": "4973721000",
-      "comment_version_key": "4973721000:2026-08-01T06:22:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107600#issuecomment-4973721000",
-      "comment_created_at": "2026-07-14T20:32:55Z",
-      "comment_updated_at": "2026-08-01T06:22:39Z",
-      "comment_body_sha256": "4e4e8f9c7bcc522bfb6fcf22d8e120d77913a1d16ad68489662b3c75ff810fb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107600,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=994da33e8d4315e7ab43c0d4fff62f90128266b6)",
-      "expected_head_sha": "994da33e8d4315e7ab43c0d4fff62f90128266b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:29:16.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-json-parse-guard",
-        "head_sha": "994da33e8d4315e7ab43c0d4fff62f90128266b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116259:5127280559:2026-08-01T06:22:29Z:clawsweeper_auto_repair",
       "comment_id": "5127280559",
@@ -32456,6 +32423,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T08:59:32.867Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111609:5018275224:2026-08-01T08:58:51Z:clawsweeper_needs_human",
+      "comment_id": "5018275224",
+      "comment_version_key": "5018275224:2026-08-01T08:58:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111609#issuecomment-5018275224",
+      "comment_created_at": "2026-07-20T02:39:30Z",
+      "comment_updated_at": "2026-08-01T08:58:51Z",
+      "comment_body_sha256": "061cd038818223c2dcbb3e8a795441451ffa0bc993ebee6705763b1c56c795ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body provides a terminal transcript against the changed helper, but that helper is not the current Reef runtime or Doctor migra...; Review finding: [P1] Bound the active legacy migration reader — extensions/reef/protocol/node.ts:351-377 - [P2] Do not expose a capped audit prefix as appendable history — extensi... (sha=fd28cfbcbd43ec14cfa0994f1dd67e63773cff78)",
+      "expected_head_sha": "fd28cfbcbd43ec14cfa0994f1dd67e63773cff78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T08:59:35.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/local/reef-readjsonl-bound",
+        "head_sha": "fd28cfbcbd43ec14cfa0994f1dd67e63773cff78",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
