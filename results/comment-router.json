@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T11:09:33.307Z",
+  "updated_at": "2026-08-01T11:11:09.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114983:5150601402:2026-08-01T08:22:38Z:re_review",
-      "comment_id": "5150601402",
-      "comment_version_key": "5150601402:2026-08-01T08:22:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5150601402",
-      "comment_created_at": "2026-08-01T08:22:38Z",
-      "comment_updated_at": "2026-08-01T08:22:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114983,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T08:23:22.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114964",
-        "head_sha": "8689d40dae78710750961bf79abe676392642cce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117254:5150229514:2026-08-01T08:23:05Z:clawsweeper_needs_human",
       "comment_id": "5150229514",
@@ -32127,6 +32080,39 @@
         "kind": "pull_request",
         "branch": "codex/goal100k-board-sqlite-owner-0801-2d45",
         "head_sha": "ba8e29439207bf95c1e6aa160f07cd9fa7042fb9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109020:4993945343:2026-08-01T11:06:47Z:clawsweeper_needs_human",
+      "comment_id": "4993945343",
+      "comment_version_key": "4993945343:2026-08-01T11:06:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109020#issuecomment-4993945343",
+      "comment_created_at": "2026-07-16T15:56:09Z",
+      "comment_updated_at": "2026-08-01T11:06:47Z",
+      "comment_body_sha256": "03c09c859c28e97d3c96c0c6eb0b9f426c8f97e32ddcf66bd9e71de4e6caefcb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The accepted 30-second deadline intentionally turns a very slow but eventually healthy Google Live setup into a visible retryable failure rather than an indefinite Connecting state. (sha=4a6592808aa403b2c384f8b395a11448cf142b50)",
+      "expected_head_sha": "4a6592808aa403b2c384f8b395a11448cf142b50",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T11:11:09.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/google-live-websocket-open-timeout",
+        "head_sha": "4a6592808aa403b2c384f8b395a11448cf142b50",
         "cluster_id": null,
         "job_path": null
       }
