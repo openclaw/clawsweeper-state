@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T16:44:33.701Z",
+  "updated_at": "2026-08-01T16:44:52.961Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:78:5151525764:2026-08-01T14:53:49Z:clawsweeper_needs_human",
-      "comment_id": "5151525764",
-      "comment_version_key": "5151525764:2026-08-01T14:53:49Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/78#issuecomment-5151525764",
-      "comment_created_at": "2026-08-01T12:59:16Z",
-      "comment_updated_at": "2026-08-01T14:53:49Z",
-      "comment_body_sha256": "000d4cc573f47cd2d253f5f157a934c79106ac655b9583dfd10bd9aa8538520e",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 78,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes legacy behavior for Windows callers whose configured root contains leading or trailing whitespace: it now fails closed instead of treating that spelling... (sha=c0696e554a6ce686c2720161fa28cb843e348428)",
-      "expected_head_sha": "c0696e554a6ce686c2720161fa28cb843e348428",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T14:57:41.583Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-path-comparison-trim",
-        "head_sha": "c0696e554a6ce686c2720161fa28cb843e348428",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117450:5151958430:2026-08-01T14:57:08Z:re_review",
       "comment_id": "5151958430",
@@ -31562,6 +31529,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T16:44:33.700Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117505:5152382763:2026-08-01T16:44:20Z:clawsweeper_auto_repair",
+      "comment_id": "5152382763",
+      "comment_version_key": "5152382763:2026-08-01T16:44:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117505#issuecomment-5152382763",
+      "comment_created_at": "2026-08-01T16:44:20Z",
+      "comment_updated_at": "2026-08-01T16:44:20Z",
+      "comment_body_sha256": "b8c168f92be6746058e777194b86a07f8eb28d087725aad6e6d898d2ba3bcecf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e6c8c074c9bdb75aae149b1e367d6855aef28ff8)",
+      "expected_head_sha": "e6c8c074c9bdb75aae149b1e367d6855aef28ff8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T16:44:52.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa402-responses-stream-drain-lifetimes",
+        "head_sha": "e6c8c074c9bdb75aae149b1e367d6855aef28ff8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
