@@ -1,0 +1,76 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-117358"
+mode: "autonomous"
+run_id: "30696730693"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30696730693"
+head_sha: "1c9cb5dc6dd27321cd37daed40bc09afde400e1b"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-01T11:42:58.911Z"
+canonical: "https://github.com/openclaw/openclaw/issues/117358"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/117358"
+canonical_pr: null
+actions_total: 3
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-117358
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30696730693](https://github.com/openclaw/clawsweeper/actions/runs/30696730693)
+
+Workflow conclusion: success
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/117358
+
+## Summary
+
+#117358 is a current-main, narrow canonical bug. The post-turn estimator passes raw branch message rows at `src/agents/command/cli-compaction.ts:592`, while the canonical projection at `src/agents/sessions/session-manager-entries.ts:353` applies the latest compaction/reset boundary via `packages/agent-core/src/harness/session/session.ts:51`. This checkout is read-only, so no branch, regression test, or local validation artifact can be created here; an executor can apply the prepared new-PR plan without product or security judgment.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 3 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/agents/command/cli-compaction.test.ts: core test [check:changed] src/agents/command/cli-compaction.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node scripts/check-env-var-count.mjs --base origin/main [check:changed] max-lines suppression ratchet $ node scripts/check-max-lines-ratchet.mjs --base origin/main [check:changed] changelog attributions $ node scripts/check-changelog-attributions.mjs [check:changed] guarded extension wildcard re-exports $ node scripts/check-extension-wildcard-reexports.mjs [check:changed] plugin-sdk wildcard re-exports $ node scripts/check-plugin-sdk-wildcard-reexports.mjs [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node scripts/check-dependency-pins.mjs [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/agents/command/cli-compaction.test.ts src/agents/command/cli-compaction.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] deprecated API usage $ node scripts/check-deprecated-api-usage.mjs [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] package patch guard $ node scripts/check-package-patches.mjs [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [deadcode] Knip production unused-export scan still running after 60s. [deadcode] Knip full-tree unused-export scan still running after 60s. [deadcode] Knip script unused-export scan still running after 60s. deadcode production unused-export scan produced no export sections. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 10 seconds. 2 retries left. [WARN] GET https://registry.npmjs.org/knip error (EAI_AGAIN). Will retry in 1 minute. 1 retries left. [ERR_PNPM_META_FETCH_FAIL] GET https://registry.npmjs.org/knip: fetch failed [check:changed] summary 332ms ok conflict markers 370ms ok environment variable count ratchet 13.60s ok max-lines suppression ratchet 255ms ok changelog attributions 255ms ok guarded extension wildcard re-exports 251ms ok plugin-sdk wildcard re-exports 266ms ok duplicate scan target coverage 269ms ok dependency pin guard 319ms ok format changed files 7.60s ok Plugin SDK API contract manifest 5.64s ok deprecated API usage 956ms ok plugin boundaries 471ms ok package patch guard 70.30s failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) OPENCLAW_* count 515/515 max-lines ratchet OK: 1015 grandfathered suppressions. No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 612 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 17ms on 2 files using 4 threads. OK docs/.generated/plugin-sdk-api-baseline.sha256 deprecated API usage guard passed Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=28 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=21 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=57 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=321 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=6 PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
+| issue_implementation_status_comment | updated | #117358 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #117358 | fix_needed | planned | canonical | A small owner-local repair is appropriate: estimate pressure from `sessionManager.buildSessionContext().messages` rather than raw branch rows, then add compacted-branch and reset-branch lifecycle regressions. |
+| cluster:issue-openclaw-openclaw-117358 | build_fix_artifact | planned | canonical | Implementation is blocked only by the read-only execution environment; the repair scope and validation path are concrete. |
+| cluster:issue-openclaw-openclaw-117358 | open_fix_pr | blocked | canonical | Apply the attached new-fix-PR artifact in a writable executor, retain the issue link and closing reference, and apply `clawsweeper:autogenerated` plus `clawsweeper:autofix` after opening the PR. |
+
+## Needs Human
+
+- none
