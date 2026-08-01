@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:36:33.981Z",
+  "updated_at": "2026-08-01T06:36:47.380Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117114:5148447646:2026-08-01T03:22:02Z:clawsweeper_needs_human",
-      "comment_id": "5148447646",
-      "comment_version_key": "5148447646:2026-08-01T03:22:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117114#issuecomment-5148447646",
-      "comment_created_at": "2026-07-31T23:59:16Z",
-      "comment_updated_at": "2026-08-01T03:22:02Z",
-      "comment_body_sha256": "1d307afe024674df037685aa24ce254f6b83548063544a7eb1418c4079925bf9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117114,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The new qa-runner-api.js artifact changes bundled QA discovery; installed plugins remain safe only while the tested fallback to the existing runtime-api.js contract is retained throug... (sha=60e199cad4c32ebeda08fa6a7d7aa16ef96cdd25)",
-      "expected_head_sha": "60e199cad4c32ebeda08fa6a7d7aa16ef96cdd25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T03:24:00.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114966-supersede-v2",
-        "head_sha": "60e199cad4c32ebeda08fa6a7d7aa16ef96cdd25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112187:5057556903:2026-08-01T03:15:49Z:clawsweeper_auto_repair",
       "comment_id": "5057556903",
@@ -31916,6 +31883,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117260:5150212720:2026-08-01T06:36:07Z:re_review",
+      "comment_id": "5150212720",
+      "comment_version_key": "5150212720:2026-08-01T06:36:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117260#issuecomment-5150212720",
+      "comment_created_at": "2026-08-01T06:36:07Z",
+      "comment_updated_at": "2026-08-01T06:36:07Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117260,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T06:36:44.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reconcile-session-ingress-tail",
+        "head_sha": "03de2833b2d815aee12c5631adbce9148c626225",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
