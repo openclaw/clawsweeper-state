@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T15:09:12.821Z",
+  "updated_at": "2026-08-01T15:09:15.219Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117392:5151497467:2026-08-01T12:50:41Z:clawsweeper_needs_human",
-      "comment_id": "5151497467",
-      "comment_version_key": "5151497467:2026-08-01T12:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117392#issuecomment-5151497467",
-      "comment_created_at": "2026-08-01T12:50:41Z",
-      "comment_updated_at": "2026-08-01T12:50:41Z",
-      "comment_body_sha256": "2128ff0f35373cff2750b2bcada549c64db83f19f7585f663d80a5fb0ce8caa7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change moves one workspace package from required runtime dependencies to development dependencies, so an incorrectly missed runtime import would make a separately installed QA Lab... (sha=346a8f35e2a3abaf9f03b4efc782f29c5479a135)",
-      "expected_head_sha": "346a8f35e2a3abaf9f03b4efc782f29c5479a135",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T12:51:17.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-lab-matrix-dev-dependency",
-        "head_sha": "346a8f35e2a3abaf9f03b4efc782f29c5479a135",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114663:5094915561:2026-08-01T12:50:39Z:clawsweeper_needs_human",
       "comment_id": "5094915561",
@@ -32180,6 +32147,53 @@
           "status": "executed",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-113663.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117403:5152002217:2026-08-01T15:08:42Z:re_review",
+      "comment_id": "5152002217",
+      "comment_version_key": "5152002217:2026-08-01T15:08:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117403#issuecomment-5152002217",
+      "comment_created_at": "2026-08-01T15:08:42Z",
+      "comment_updated_at": "2026-08-01T15:08:42Z",
+      "comment_body_sha256": "a6daa3b2b4e61b360c606eebeaec81e376346562c64b45dbaf880e31ecfffa44",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117403,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T15:09:12.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-timeline-http-status",
+        "head_sha": "cf4a3416b1b998d089346762752569e1e9cee2c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
         },
         {
           "action": "comment",
