@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-116976"
 mode: "autonomous"
-run_id: "30721077297"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30721077297"
+run_id: "30720552137"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30720552137"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-01T22:38:01.005Z"
+published_at: "2026-08-01T22:26:06.806Z"
 canonical: "#116976"
 canonical_issue: null
 canonical_pr: "#116976"
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30721077297](https://github.com/openclaw/clawsweeper/actions/runs/30721077297)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30720552137](https://github.com/openclaw/clawsweeper/actions/runs/30720552137)
 
 Workflow conclusion: success
 
@@ -60,7 +60,7 @@ Make PR #116976 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #116976 | merge_canonical | blocked | fix_pr | protected or paused repair label: security |
+| #116976 | merge_canonical | blocked | fix_pr | job does not allow merge |
 
 ## Worker Action Matrix
 
