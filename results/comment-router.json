@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T03:06:43.953Z",
+  "updated_at": "2026-08-01T03:06:48.171Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115995:5120695421:2026-07-31T22:17:35Z:clawsweeper_needs_human",
-      "comment_id": "5120695421",
-      "comment_version_key": "5120695421:2026-07-31T22:17:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115995#issuecomment-5120695421",
-      "comment_created_at": "2026-07-29T16:32:26Z",
-      "comment_updated_at": "2026-07-31T22:17:35Z",
-      "comment_body_sha256": "13d52319d203ca818cbb9f8ddd3b465ca29269408a65fef18ef9495ac1573df2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115995,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because direct source and diff review found no actionable patch defect; proceed through normal maintainer merge review for the current base. (sha=9e2a86d2fa5f58f402d063fc11f3b928ac2c56e9)",
-      "expected_head_sha": "9e2a86d2fa5f58f402d063fc11f3b928ac2c56e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-07-31T22:35:40.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-ui-hash-isolation",
-        "head_sha": "9e2a86d2fa5f58f402d063fc11f3b928ac2c56e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116127:5124602827:2026-07-31T22:31:58Z:clawsweeper_needs_human",
       "comment_id": "5124602827",
@@ -32938,6 +32905,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93985:5149464980:2026-08-01T02:57:56Z:re_review",
+      "comment_id": "5149464980",
+      "comment_version_key": "5149464980:2026-08-01T02:57:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93985#issuecomment-5149464980",
+      "comment_created_at": "2026-08-01T02:57:56Z",
+      "comment_updated_at": "2026-08-01T02:57:56Z",
+      "comment_body_sha256": "de66661ccb9e3aa1b0ad4389d683bfea5f978f63b5bc8a67fea30534b63c1d01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93985,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T03:06:45.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-bind-conflict",
+        "head_sha": "e5dda815d9e093bb9429d33d478969ce7a4e7567",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
