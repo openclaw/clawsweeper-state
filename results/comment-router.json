@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:12:15.709Z",
+  "updated_at": "2026-08-01T05:12:43.754Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114609:5092701188:2026-08-01T01:07:20Z:clawsweeper_needs_human",
-      "comment_id": "5092701188",
-      "comment_version_key": "5092701188:2026-08-01T01:07:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114609#issuecomment-5092701188",
-      "comment_created_at": "2026-07-27T14:37:04Z",
-      "comment_updated_at": "2026-08-01T01:07:20Z",
-      "comment_body_sha256": "fc25a6ddbfb740412d8cb04105b864340ce7abb5dbb621027d8ae6f8a5c0cbad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The existing clawsweeper:human-review label is an explicit human gate; no functional or upgrade risk was found in the documentation-only patch. (sha=396446afe4a311c58a9bba06487ad95b0a8ae855)",
-      "expected_head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T01:19:48.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/fix-slash-commands-login",
-        "head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110562:5010561092:2026-08-01T01:06:35Z:clawsweeper_auto_repair",
       "comment_id": "5010561092",
@@ -31833,6 +31786,39 @@
         "kind": "pull_request",
         "branch": "fix/qa-voice-provider-context",
         "head_sha": "4e19fa5652335c8c0584f35fe3239e53c39384cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:77:5134156054:2026-08-01T05:11:50Z:clawsweeper_needs_human",
+      "comment_id": "5134156054",
+      "comment_version_key": "5134156054:2026-08-01T05:11:50Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/77#issuecomment-5134156054",
+      "comment_created_at": "2026-07-30T17:29:51Z",
+      "comment_updated_at": "2026-08-01T05:11:50Z",
+      "comment_body_sha256": "3fcbf0e5ef20e2780534ac8f63ad3e5a4d989be9920723d81eb34004a188a14f",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 77,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging before the Node 24 Windows failure is diagnosed could leave the repository's supported Windows CI and native-addon development path broken by the updated toolchain. (sha=8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53)",
+      "expected_head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T05:12:43.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-577c6fd817",
+        "head_sha": "8fe9bf61c2eabd1ac67c64aa1ea7f59fc38ddb53",
         "cluster_id": null,
         "job_path": null
       }
