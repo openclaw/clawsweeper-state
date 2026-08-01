@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-01T07:27:11.130Z",
+  "updated_at": "2026-08-01T07:27:41.088Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4590718182:2026-06-01T08:10:06Z:re_review",
-      "comment_id": "4590718182",
-      "comment_version_key": "4590718182:2026-06-01T08:10:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4590718182",
-      "comment_created_at": "2026-06-01T08:10:06Z",
-      "comment_updated_at": "2026-06-01T08:10:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T05:02:37.461Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4600023429:2026-06-02T08:03:00Z:re_review",
       "comment_id": "4600023429",
@@ -31817,6 +31790,39 @@
       "status": "skipped",
       "processed_at": "2026-08-01T07:27:11.129Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117256:5150158501:2026-08-01T07:27:05Z:clawsweeper_needs_human",
+      "comment_id": "5150158501",
+      "comment_version_key": "5150158501:2026-08-01T07:27:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117256#issuecomment-5150158501",
+      "comment_created_at": "2026-08-01T06:19:15Z",
+      "comment_updated_at": "2026-08-01T07:27:05Z",
+      "comment_body_sha256": "8910b20a3029f8afb1888f0bd9bf66349296261d61daf5263527d0fe10074bd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body includes useful redacted terminal output and focused tests, but its cross-harness run uses a local mock Responses endpoint rather t...; Review finding: [medium] Verify the cross-harness approval boundary against Codex source — src/agents/model-fallback-runner.ts:481 (sha=f58f6303d7c4d922456d7616e5b5d4592a290d89)",
+      "expected_head_sha": "f58f6303d7c4d922456d7616e5b5d4592a290d89",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T07:27:41.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "joshavant/issue-109601-20260801t044651z-b4f2a81d",
+        "head_sha": "f58f6303d7c4d922456d7616e5b5d4592a290d89",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
