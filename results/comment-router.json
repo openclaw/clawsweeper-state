@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:42:50.106Z",
+  "updated_at": "2026-08-01T17:43:26.845Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117485:5152204733:2026-08-01T16:00:25Z:clawsweeper_auto_merge",
-      "comment_id": "5152204733",
-      "comment_version_key": "5152204733:2026-08-01T16:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117485#issuecomment-5152204733",
-      "comment_created_at": "2026-08-01T16:00:25Z",
-      "comment_updated_at": "2026-08-01T16:00:25Z",
-      "comment_body_sha256": "33421e529b59ec4073625ff2b37ec6174296d8380ff635ce46f9f06b2b6d1d83",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117485,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=95ee8fca7f8a3d67c8ee3499434535154e01d76b); current checks are failing: Scan iOS dead code:FAILURE, Intersect shared OpenClawKit dead code:FAILURE, ios-build:FAILURE",
-      "expected_head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:01:15.959Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-110171",
-        "head_sha": "95ee8fca7f8a3d67c8ee3499434535154e01d76b",
-        "cluster_id": "automerge-openclaw-openclaw-117485",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117485.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117276:5150411732:2026-08-01T16:03:07Z:clawsweeper_needs_human",
       "comment_id": "5150411732",
@@ -31314,6 +31267,39 @@
         "kind": "pull_request",
         "branch": "codex/qa300-matrix-block-typing-diagnostic",
         "head_sha": "19aa2807fcfcf47fa641b12aed98b1539878166c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T17:42:25Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T17:42:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T17:42:25Z",
+      "comment_body_sha256": "33fa944c844a0227ca2e2025a251b4f13cb2f2739d95d34f2a73be1b372d6242",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - The CI scan step changes to the v3.96.0 immutable revision, but test/scripts/ci-workflow-guards.test.ts still requires TRUFFLEHOG_V3_95_9; the parsed-workflow a...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:904 - [P1] Synchronize the Android attestation contract — .github/workflows/android-relea... (sha=33f820212e7e9a9d1d80f3fb6d85e3d5ef86b37f)",
+      "expected_head_sha": "33f820212e7e9a9d1d80f3fb6d85e3d5ef86b37f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:43:26.845Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "33f820212e7e9a9d1d80f3fb6d85e3d5ef86b37f",
         "cluster_id": null,
         "job_path": null
       }
