@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T10:01:14.016Z",
+  "updated_at": "2026-08-01T10:01:48.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5150325012:2026-08-01T07:06:34Z:re_review",
-      "comment_id": "5150325012",
-      "comment_version_key": "5150325012:2026-08-01T07:06:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5150325012",
-      "comment_created_at": "2026-08-01T07:06:34Z",
-      "comment_updated_at": "2026-08-01T07:06:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T07:07:13.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "16436a2882b9e74b133841abe8c1f4a259b61944",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116147:5150326382:2026-08-01T07:06:56Z:re_review",
       "comment_id": "5150326382",
@@ -32805,6 +32758,39 @@
         "kind": "pull_request",
         "branch": "fix/mcp-ui-resource-base64",
         "head_sha": "0c6dba4b5decd293e41607568a001b23778b4eb6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117333:5150923668:2026-08-01T09:57:12Z:clawsweeper_needs_human",
+      "comment_id": "5150923668",
+      "comment_version_key": "5150923668:2026-08-01T09:57:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117333#issuecomment-5150923668",
+      "comment_created_at": "2026-08-01T09:57:12Z",
+      "comment_updated_at": "2026-08-01T09:57:12Z",
+      "comment_body_sha256": "b4ca3087b708b5d81e011743626efd0d8387df0a46d5f3efef94e6dac1651794",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117333,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is needed; the protected maintainer label requires an explicit human approval path after exact-head checks complete. (sha=741882873f505f7d55f7a32768f2aaaf8eda1e23)",
+      "expected_head_sha": "741882873f505f7d55f7a32768f2aaaf8eda1e23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T10:01:48.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-plugin-update-tracked-owner",
+        "head_sha": "741882873f505f7d55f7a32768f2aaaf8eda1e23",
         "cluster_id": null,
         "job_path": null
       }
