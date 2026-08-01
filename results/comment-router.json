@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T17:07:19.976Z",
+  "updated_at": "2026-08-01T17:08:30.749Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114631:5152075346:2026-08-01T15:27:02Z:re_review",
-      "comment_id": "5152075346",
-      "comment_version_key": "5152075346:2026-08-01T15:27:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114631#issuecomment-5152075346",
-      "comment_created_at": "2026-08-01T15:27:02Z",
-      "comment_updated_at": "2026-08-01T15:27:02Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114631,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T15:27:37.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/custodian-wizard-step-payload",
-        "head_sha": "f012043b40c7e95aa2eda8ac4905007347b16634",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117466:5152077553:2026-08-01T15:27:33Z:clawsweeper_needs_human",
       "comment_id": "5152077553",
@@ -31479,6 +31432,39 @@
         "kind": "pull_request",
         "branch": "feat/model-inventory-discovery",
         "head_sha": "a0cdc3d69347570fb93faa678a3a97f2b860a41c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117522:5152472955:2026-08-01T17:07:46Z:clawsweeper_needs_human",
+      "comment_id": "5152472955",
+      "comment_version_key": "5152472955:2026-08-01T17:07:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117522#issuecomment-5152472955",
+      "comment_created_at": "2026-08-01T17:07:46Z",
+      "comment_updated_at": "2026-08-01T17:07:46Z",
+      "comment_body_sha256": "58592ec1a3b17dafa4d75742ee755057255c1308ca0d87d75ea01d20692051dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body documents a pre-fix production incident and deterministic integration results, but it explicitly lacks an after-fix patched-runtime... (sha=5117f3507f2009f344af5217554b0c0b9baa2518)",
+      "expected_head_sha": "5117f3507f2009f344af5217554b0c0b9baa2518",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T17:08:30.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/heartbeat-no-reply-fallback",
+        "head_sha": "5117f3507f2009f344af5217554b0c0b9baa2518",
         "cluster_id": null,
         "job_path": null
       }
