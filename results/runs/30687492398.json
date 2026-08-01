@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "30687492398",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30687492398",
+  "head_sha": "0ced0b5e515bd8fa0d53e3af54392ac474547bf5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md",
+  "published_at": "2026-08-01T08:07:02.614Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98276",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/117144",
+  "summary": "Keep #117144 open as the canonical repair PR for #98276. Its current head is behind main, has an unresolved ClawSweeper proof finding, and fails `check-dependencies`/`openclaw/ci-gate`; emit a bounded contributor-branch repair artifact. No close or merge actions are permitted by this job.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/98274",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#98276",
+      "candidate_fix": null,
+      "reason": "#98274 remains an open, independent ACP/Gateway product-decision issue and must not be closed through this artifact-packaging repair."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/98276",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98276",
+      "candidate_fix": "#117144",
+      "reason": "#98276 is the canonical open issue for the missing runtime-artifact resources; #117144 remains its repair path but is not ready for closeout."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/98326",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Already closed in live preflight state; retain as credited source context only."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/117144",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Repair the writable canonical PR branch, preserving the credited source direction while replacing proof that borrows checkout-only resolution with proof of the extracted consumer path."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
