@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T09:02:40.787Z",
+  "updated_at": "2026-08-01T09:03:36.480Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115745:5118102960:2026-08-01T06:23:12Z:clawsweeper_needs_human",
-      "comment_id": "5118102960",
-      "comment_version_key": "5118102960:2026-08-01T06:23:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115745#issuecomment-5118102960",
-      "comment_created_at": "2026-07-29T13:02:03Z",
-      "comment_updated_at": "2026-08-01T06:23:12Z",
-      "comment_body_sha256": "9dcde1e02d15a71bb066d9b7fe0303e4b0716c734e59855689a5a3f961d9a959",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty against current main, whose later reply-lifecycle refactor owns dispatcher construction and settlement; the exact merged result needs rebase and va... (sha=70a9ffd386db86be51204ea70cb5d065ecd99ecd)",
-      "expected_head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T06:32:20.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/s28-suppress-copied-reply-scaffolding",
-        "head_sha": "70a9ffd386db86be51204ea70cb5d065ecd99ecd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T06:31:31Z:clawsweeper_needs_human",
       "comment_id": "5149564387",
@@ -32480,6 +32447,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117272:5150396375:2026-08-01T09:02:57Z:clawsweeper_needs_human",
+      "comment_id": "5150396375",
+      "comment_version_key": "5150396375:2026-08-01T09:02:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117272#issuecomment-5150396375",
+      "comment_created_at": "2026-08-01T07:23:29Z",
+      "comment_updated_at": "2026-08-01T09:02:57Z",
+      "comment_body_sha256": "6446b7748e43172fbb35a01740fd298aec8ac58223d428d625fd53892b7654d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This migration rewrites persisted session state, so merge should wait for the remaining exact-head checks and a refreshed clean merge against current main before landing. (sha=f4aa51d96b2b5df7c8a6198fb1c0f63741419ac3)",
+      "expected_head_sha": "f4aa51d96b2b5df7c8a6198fb1c0f63741419ac3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T09:03:36.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/legacy-session-key-normalize-117263",
+        "head_sha": "f4aa51d96b2b5df7c8a6198fb1c0f63741419ac3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
