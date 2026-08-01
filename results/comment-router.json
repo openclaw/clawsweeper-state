@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T16:15:17.050Z",
+  "updated_at": "2026-08-01T16:16:03.397Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82540:4466649650:2026-08-01T11:09:36Z:clawsweeper_auto_repair",
@@ -33033,9 +33033,29 @@
       "repair_reason": null,
       "expected_head_sha": null,
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-01T16:15:17.050Z",
-      "target": null
+      "status": "executed",
+      "processed_at": "2026-08-01T16:15:58.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/turn-maintenance-per-task-timeout",
+        "head_sha": "9b5ebac63b1969c1925f8ed8cb64dafec65a6309",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
