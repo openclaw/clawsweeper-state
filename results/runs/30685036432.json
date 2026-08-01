@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-116976",
+  "mode": "autonomous",
+  "run_id": "30685036432",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30685036432",
+  "head_sha": "a80c24ebf2f19d74cd07645f8d377271c587586b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md",
+  "published_at": "2026-08-01T06:21:15.757Z",
+  "canonical": "#116976",
+  "canonical_issue": null,
+  "canonical_pr": "#116976",
+  "summary": "#116976 is the canonical writable replacement for closed source PR #114611. Current main at c7917cca still contains the retired `hostnameAllowlist` documentation example, while the browser navigation owner consumes `allowedHostnames` and its matcher/test suite confirms wildcard entries match subdomains but not the bare suffix. The open PR must be rebased from its reviewed head onto current main and retain the narrow docs correction before it can be reconsidered for merge.",
+  "actions": [
+    {
+      "target": "#114611",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#116976",
+      "candidate_fix": "#116976",
+      "reason": "Historical source PR only; keep it closed and preserve its contributor credit through the replacement PR."
+    },
+    {
+      "target": "#116976",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116976",
+      "candidate_fix": "#116976",
+      "reason": "The canonical PR is a narrow, safe docs correction but is stale against current main; repair its writable branch rather than replacing it."
+    },
+    {
+      "target": "#116976",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116976",
+      "candidate_fix": "#116976",
+      "reason": "Prepare a bounded repair artifact for the single canonical PR; no merge or GitHub mutation is planned by this worker."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
