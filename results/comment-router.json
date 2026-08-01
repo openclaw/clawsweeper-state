@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T06:03:10.417Z",
+  "updated_at": "2026-08-01T06:03:13.757Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117129:5148947086:2026-08-01T01:53:24Z:re_review",
-      "comment_id": "5148947086",
-      "comment_version_key": "5148947086:2026-08-01T01:53:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117129#issuecomment-5148947086",
-      "comment_created_at": "2026-08-01T01:53:24Z",
-      "comment_updated_at": "2026-08-01T01:53:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117129,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T01:57:20.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-p0-114893-webhook-auth",
-        "head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115984:5120306869:2026-08-01T01:42:30Z:clawsweeper_auto_repair",
       "comment_id": "5120306869",
@@ -32226,6 +32179,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117250:5150099621:2026-08-01T06:02:36Z:clawsweeper_needs_human",
+      "comment_id": "5150099621",
+      "comment_version_key": "5150099621:2026-08-01T06:02:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117250#issuecomment-5150099621",
+      "comment_created_at": "2026-08-01T06:02:36Z",
+      "comment_updated_at": "2026-08-01T06:02:36Z",
+      "comment_body_sha256": "389cce8ef5df2b3b01f9110344b8f2edab383afeb73efac1d517f246376b9e0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117250,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and a linked Testbox workflow, but no inspectable after-fix runtime transcript, terminal output, or redacted... (sha=0fbb55a36ca4eb6344be6df44fb7cfcb94ab0c1f)",
+      "expected_head_sha": "0fbb55a36ca4eb6344be6df44fb7cfcb94ab0c1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T06:03:13.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/prod-wave-compaction-052208-2d45",
+        "head_sha": "0fbb55a36ca4eb6344be6df44fb7cfcb94ab0c1f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
