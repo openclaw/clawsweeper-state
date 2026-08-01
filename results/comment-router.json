@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-01T05:41:38.935Z",
+  "updated_at": "2026-08-01T05:42:00.629Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117129:5148694149:2026-08-01T01:30:16Z:clawsweeper_needs_human",
-      "comment_id": "5148694149",
-      "comment_version_key": "5148694149:2026-08-01T01:30:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117129#issuecomment-5148694149",
-      "comment_created_at": "2026-08-01T00:51:02Z",
-      "comment_updated_at": "2026-08-01T01:30:16Z",
-      "comment_body_sha256": "a9e4d13d423362cf08bc396a63635608f0151aa36c00630aa79c05917e574aab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with cron.webhookToken and job-record-only receivers will continue posting after upgrade but lose their Authorization header until every intended exact HTTPS re... (sha=a6db7f58d12f0564ce32fa141748b696da9812fd)",
-      "expected_head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T01:50:41.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-p0-114893-webhook-auth",
-        "head_sha": "a6db7f58d12f0564ce32fa141748b696da9812fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117136:5148801187:2026-08-01T01:14:59Z:clawsweeper_needs_human",
       "comment_id": "5148801187",
@@ -32130,6 +32097,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117194:5150030932:2026-08-01T05:41:19Z:re_review",
+      "comment_id": "5150030932",
+      "comment_version_key": "5150030932:2026-08-01T05:41:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117194#issuecomment-5150030932",
+      "comment_created_at": "2026-08-01T05:41:19Z",
+      "comment_updated_at": "2026-08-01T05:41:19Z",
+      "comment_body_sha256": "f79330f1e1cfbbad6bce30f79cd1cef573e2aaa4243a145848175e34e4fb049e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117194,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-01T05:41:57.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-google-stream-lifecycle",
+        "head_sha": "4c1f68b28fa33665640cb8d37775522f76c74bf8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
