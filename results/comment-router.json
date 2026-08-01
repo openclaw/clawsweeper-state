@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-01T19:26:11.560Z",
+  "updated_at": "2026-08-01T19:26:30.492Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116291:5152426203:2026-08-01T16:55:35Z:re_review",
-      "comment_id": "5152426203",
-      "comment_version_key": "5152426203:2026-08-01T16:55:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116291#issuecomment-5152426203",
-      "comment_created_at": "2026-08-01T16:55:35Z",
-      "comment_updated_at": "2026-08-01T16:55:35Z",
-      "comment_body_sha256": "2c3af826586aa7a344ec22647bc174584f4bd1a9a50b3b5d99879e10dbd57b22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116291,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T16:56:19.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-111370-hook-orphan-reaper",
-        "head_sha": "a1b26ef0acf5d4ad674999a3bcb7cd3e1c5674e7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5152433249:2026-08-01T16:57:23Z:re_review",
       "comment_id": "5152433249",
@@ -32416,6 +32369,39 @@
         "kind": "pull_request",
         "branch": "fix/context-visibility-schema-parity",
         "head_sha": "3bf1ae3d835c01e3b432f9c062331db6f9ffaa5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117581:5153000668:2026-08-01T19:25:53Z:clawsweeper_needs_human",
+      "comment_id": "5153000668",
+      "comment_version_key": "5153000668:2026-08-01T19:25:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117581#issuecomment-5153000668",
+      "comment_created_at": "2026-08-01T19:17:34Z",
+      "comment_updated_at": "2026-08-01T19:25:53Z",
+      "comment_body_sha256": "8128b13e2ed1b776211129f0595cd27536ad233dafe1b8e26e35359b5049702a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117581,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This member-authored, maintainer-labeled draft needs ordinary owner review; the re-review found no narrow mechanical repair to dispatch. (sha=07822aaefdb249c2678bea03cca6c8db4863a650)",
+      "expected_head_sha": "07822aaefdb249c2678bea03cca6c8db4863a650",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T19:26:30.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-conversation-text-cap-20260801",
+        "head_sha": "07822aaefdb249c2678bea03cca6c8db4863a650",
         "cluster_id": null,
         "job_path": null
       }
