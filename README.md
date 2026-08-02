@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 2, 2026, 12:50 UTC
+Last source update: Aug 2, 2026, 13:08 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 2, 2026, 12:50 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 2, 2026, 12:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30748560244) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 2, 2026, 13:08 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30736167808) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 2, 2026, 12:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30748418479) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 2, 2026, 12:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30748419113) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 2, 2026, 12:12 UTC
+Last source update: Aug 2, 2026, 12:50 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 301 | 100% |
-| Run attempts archived | 808 | audit |
+| Run attempts archived | 809 | audit |
 | Latest successful clusters | 266 | 88.4% |
 | Latest failed clusters | 34 | 11.3% |
 | Latest cancelled clusters | 1 | 0.3% |
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117952](https://github.com/openclaw/openclaw/pull/117952) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 2, 2026, 11:14 UTC | [automerge-openclaw-openclaw-117952](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117952.md) | [30744048464](https://github.com/openclaw/clawsweeper/actions/runs/30744048464) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117952](https://github.com/openclaw/openclaw/pull/117952) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 2, 2026, 12:50 UTC | [automerge-openclaw-openclaw-117952](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117952.md) | [30747018013](https://github.com/openclaw/clawsweeper/actions/runs/30747018013) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117906](https://github.com/openclaw/openclaw/pull/117906) | automation_blocked | autofix-only job cannot merge | Aug 2, 2026, 09:00 UTC | [automerge-openclaw-openclaw-117906](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117906.md) | [30739808879](https://github.com/openclaw/clawsweeper/actions/runs/30739808879) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/agents/s... | Aug 2, 2026, 07:45 UTC | [automerge-openclaw-openclaw-117869](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117869.md) | [30737716674](https://github.com/openclaw/clawsweeper/actions/runs/30737716674) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, extensions, extensionTests... | Aug 2, 2026, 07:40 UTC | [automerge-openclaw-openclaw-117881](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117881.md) | [30737052850](https://github.com/openclaw/clawsweeper/actions/runs/30737052850) |
