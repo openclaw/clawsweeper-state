@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:02:09.641Z",
+  "updated_at": "2026-08-02T05:02:13.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117646:5154338714:2026-08-02T01:06:49Z:re_review",
-      "comment_id": "5154338714",
-      "comment_version_key": "5154338714:2026-08-02T01:06:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117646#issuecomment-5154338714",
-      "comment_created_at": "2026-08-02T01:06:49Z",
-      "comment_updated_at": "2026-08-02T01:06:49Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117646,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:07:24.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-sidecar-stop-rejections",
-        "head_sha": "81f5c2f66341273fad036cb320624540c881c18e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2482:5154340058:2026-08-02T01:07:08Z:re_review",
       "comment_id": "5154340058",
@@ -32049,6 +32002,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T05:02:09.640Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117832:5155508829:2026-08-02T05:01:43Z:clawsweeper_needs_human",
+      "comment_id": "5155508829",
+      "comment_version_key": "5155508829:2026-08-02T05:01:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117832#issuecomment-5155508829",
+      "comment_created_at": "2026-08-02T05:01:43Z",
+      "comment_updated_at": "2026-08-02T05:01:43Z",
+      "comment_body_sha256": "e857625afcd0980f31da58fcb5a71347d89f97cca08a35645b4b7755d3faa71e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117832,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a focused regression test and the added test emulates WebSocket behavior, but no redacted after-fix real Codex OAuth runtim... (sha=f4773ac79229fea90f9a2d83a017dbfd09e5df9e)",
+      "expected_head_sha": "f4773ac79229fea90f9a2d83a017dbfd09e5df9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:02:13.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-108614-codex-websocket-session-stream",
+        "head_sha": "f4773ac79229fea90f9a2d83a017dbfd09e5df9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
