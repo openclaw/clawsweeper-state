@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:12:49.372Z",
+  "updated_at": "2026-08-02T18:17:24.712Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101276:4899612295:2026-08-02T15:28:46Z:clawsweeper_needs_human",
-      "comment_id": "4899612295",
-      "comment_version_key": "4899612295:2026-08-02T15:28:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101276#issuecomment-4899612295",
-      "comment_created_at": "2026-07-07T02:44:24Z",
-      "comment_updated_at": "2026-08-02T15:28:46Z",
-      "comment_body_sha256": "bd65bd12447053d0a705a09f87c52492e68614dc7a4cea934c4a98cf1ef27e3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep configured STOP rules ahead of elevated-full (P1)** - This path deliberately skips denylist revalidation when authority is elevated-full, while the new feature promises deny-over-allow behavior. An authoriz...; Review finding: [P1] Keep configured STOP rules ahead of elevated-full — src/agents/bash-tools.exec-host-node-denylist.ts:42-44 - [medium] Elevated execution bypasses the STOP pol... (sha=f267f56c69229c3c17bb3f951be0a01ec94792be)",
-      "expected_head_sha": "f267f56c69229c3c17bb3f951be0a01ec94792be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:30:08.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approvals-denylist-6615",
-        "head_sha": "f267f56c69229c3c17bb3f951be0a01ec94792be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101276:4909197737:2026-07-07T21:28:13Z:re_review",
       "comment_id": "4909197737",
@@ -31489,6 +31456,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T18:12:49.371Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:17:5157915259:2026-08-02T18:10:17Z:clawsweeper_needs_human",
+      "comment_id": "5157915259",
+      "comment_version_key": "5157915259:2026-08-02T18:10:17Z",
+      "comment_url": "https://github.com/openclaw/turnwire/pull/17#issuecomment-5157915259",
+      "comment_created_at": "2026-08-02T12:37:42Z",
+      "comment_updated_at": "2026-08-02T18:10:17Z",
+      "comment_body_sha256": "84c6c538475a80025d41a8d575f98194cde5dd53dec4b73a2fb1fcbbaa9e2697",
+      "repo": "openclaw/turnwire",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports package tests and a build, but it explicitly did not run a deliberately stalled shutdown; provide redacted terminal or runtime o... (sha=0043dbf03d946670a850f8bd363f2516c67fdb88)",
+      "expected_head_sha": "0043dbf03d946670a850f8bd363f2516c67fdb88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:17:24.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-shutdown-timeout",
+        "head_sha": "0043dbf03d946670a850f8bd363f2516c67fdb88",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
