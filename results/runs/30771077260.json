@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118244",
+  "mode": "autonomous",
+  "run_id": "30771077260",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30771077260",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118244.md",
+  "published_at": "2026-08-02T23:19:39.790Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118244",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118244",
+  "canonical_pr": null,
+  "summary": "The regression remains on current main: after a global package swap, the failed-update branch calls the generic in-process service restart, which retains the old binary’s future-config guard. Build a narrow PR that selects the existing updated-install restart mechanism only after a verified successful package swap and a subsequent doctor failure.",
+  "actions": [
+    {
+      "target": "#118244",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118244",
+      "candidate_fix": null,
+      "reason": "A narrow repair is viable and preserves the existing older-binary destructive-action guard for all ordinary/early failures."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118244",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118244",
+      "candidate_fix": null,
+      "reason": "Create one focused fix PR from clawsweeper/issue-openclaw-openclaw-118244."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

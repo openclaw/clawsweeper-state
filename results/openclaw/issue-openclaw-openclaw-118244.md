@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118244"
 mode: "autonomous"
-run_id: "30770636257"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30770636257"
+run_id: "30771077260"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30771077260"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-02T22:47:34.302Z"
+published_at: "2026-08-02T23:19:39.790Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118244"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118244"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30770636257](https://github.com/openclaw/clawsweeper/actions/runs/30770636257)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30771077260](https://github.com/openclaw/clawsweeper/actions/runs/30771077260)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/118244
 
 ## Summary
 
-No implementation PR is needed: current main at 8df95ccd087eacafa55ec16026bc40de08631e14 already runs the post-swap doctor from the verified new installation and restarts a managed gateway through the service adapter after a failed mutable update, avoiding the old CLI config-version guard described in #118244.
+The regression remains on current main: after a global package swap, the failed-update branch calls the generic in-process service restart, which retains the old binary’s future-config guard. Build a narrow PR that selects the existing updated-install restart mechanism only after a verified successful package swap and a subsequent doctor failure.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ No implementation PR is needed: current main at 8df95ccd087eacafa55ec16026bc40de
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #118244 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,7 +66,8 @@ No implementation PR is needed: current main at 8df95ccd087eacafa55ec16026bc40de
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118244 | keep_canonical | planned | canonical | The reported recovery path is already present on current main. Opening a duplicate implementation PR would add no repair value; retain #118244 for maintainer confirmation or reproduction against the current beta artifact. |
+| #118244 | fix_needed | planned | canonical | A narrow repair is viable and preserves the existing older-binary destructive-action guard for all ordinary/early failures. |
+| cluster:issue-openclaw-openclaw-118244 | build_fix_artifact | planned | canonical | Create one focused fix PR from clawsweeper/issue-openclaw-openclaw-118244. |
 
 ## Needs Human
 
