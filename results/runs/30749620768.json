@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117952",
+  "mode": "autonomous",
+  "run_id": "30749620768",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30749620768",
+  "head_sha": "8cdf2a157a0450c40b6a1e9d4474213cc901936d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117952.md",
+  "published_at": "2026-08-02T13:23:24.812Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/117952",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117899",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/117952",
+  "summary": "PR #117952 remains the canonical repair path for issue #117899, but it is behind current main and has an unresolved Codex finding. Current main still uses the 500 ms empty-final fallback, while the hydrated PR review requires an authoritative Gateway chat completion outcome rather than a longer client timer. Plan a narrow repair of the same-repository contributor branch; do not merge or close anything in this autofix job.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/117899",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117952",
+      "candidate_fix": "#117952",
+      "reason": "Keep the report open as the user-visible repro and validation anchor while the canonical PR is repaired."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/117952",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117952",
+      "candidate_fix": null,
+      "reason": "Repair the contributor branch by recording finalized chat-source text in the Gateway completion outcome and having the Talk empty-final path wait for that authoritative chat result."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/117952",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117952",
+      "candidate_fix": null,
+      "reason": "Create the bounded repair contract for the Codex edit pass; finalization remains a later exact-head review decision."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
