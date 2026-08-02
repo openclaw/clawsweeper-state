@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:03:00.658Z",
+  "updated_at": "2026-08-02T11:03:40.936Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117840:5155608766:2026-08-02T08:08:42Z:clawsweeper_needs_human",
-      "comment_id": "5155608766",
-      "comment_version_key": "5155608766:2026-08-02T08:08:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117840#issuecomment-5155608766",
-      "comment_created_at": "2026-08-02T05:19:59Z",
-      "comment_updated_at": "2026-08-02T08:08:42Z",
-      "comment_body_sha256": "1807cf388c0f8cd8cfccdeb678a3ff06d7f3a9f2c3073596e96a5b159c709bee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117840,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes compaction from clearing queued accepted work to returning a retry error, so the final merge result must retain the same alias-key coverage and queue-preservation beha... (sha=c7b46857c1d1848077edc334c61eb49ce07ba71e)",
-      "expected_head_sha": "c7b46857c1d1848077edc334c61eb49ce07ba71e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T08:09:24.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/117810-compact-queued-followup",
-        "head_sha": "c7b46857c1d1848077edc334c61eb49ce07ba71e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117727:5156436613:2026-08-02T08:08:59Z:re_review",
       "comment_id": "5156436613",
@@ -31645,6 +31612,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117473:5157377178:2026-08-02T11:03:08Z:re_review",
+      "comment_id": "5157377178",
+      "comment_version_key": "5157377178:2026-08-02T11:03:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117473#issuecomment-5157377178",
+      "comment_created_at": "2026-08-02T11:03:08Z",
+      "comment_updated_at": "2026-08-02T11:03:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117473,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T11:03:39.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-web-search-401-release",
+        "head_sha": "72d69fa8f95f9727b71c798be5c7a56db1b1fa00",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
