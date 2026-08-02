@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:12:49.372Z",
+  "updated_at": "2026-08-02T18:17:09.214Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101276:4899612295:2026-08-02T15:28:46Z:clawsweeper_needs_human",
-      "comment_id": "4899612295",
-      "comment_version_key": "4899612295:2026-08-02T15:28:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101276#issuecomment-4899612295",
-      "comment_created_at": "2026-07-07T02:44:24Z",
-      "comment_updated_at": "2026-08-02T15:28:46Z",
-      "comment_body_sha256": "bd65bd12447053d0a705a09f87c52492e68614dc7a4cea934c4a98cf1ef27e3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep configured STOP rules ahead of elevated-full (P1)** - This path deliberately skips denylist revalidation when authority is elevated-full, while the new feature promises deny-over-allow behavior. An authoriz...; Review finding: [P1] Keep configured STOP rules ahead of elevated-full — src/agents/bash-tools.exec-host-node-denylist.ts:42-44 - [medium] Elevated execution bypasses the STOP pol... (sha=f267f56c69229c3c17bb3f951be0a01ec94792be)",
-      "expected_head_sha": "f267f56c69229c3c17bb3f951be0a01ec94792be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:30:08.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approvals-denylist-6615",
-        "head_sha": "f267f56c69229c3c17bb3f951be0a01ec94792be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101276:4909197737:2026-07-07T21:28:13Z:re_review",
       "comment_id": "4909197737",
@@ -31489,6 +31456,53 @@
       "status": "skipped",
       "processed_at": "2026-08-02T18:12:49.371Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100845:4892325274:2026-08-02T18:11:51Z:clawsweeper_auto_repair",
+      "comment_id": "4892325274",
+      "comment_version_key": "4892325274:2026-08-02T18:11:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100845#issuecomment-4892325274",
+      "comment_created_at": "2026-07-06T11:36:29Z",
+      "comment_updated_at": "2026-08-02T18:11:51Z",
+      "comment_body_sha256": "184a742971c15def4e9948f59546278c593426458da1446b865dc6e75d0325f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bcc5cd706d920ece6c247aa54fc1313d14bf35f0)",
+      "expected_head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-02T18:16:48.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oneshot-local-otel-export",
+        "head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
+        "cluster_id": "automerge-openclaw-openclaw-100845",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
