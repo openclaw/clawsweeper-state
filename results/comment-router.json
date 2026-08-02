@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:22:28.059Z",
+  "updated_at": "2026-08-02T01:22:29.534Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117248:5153701445:2026-08-01T22:17:02Z:re_review",
-      "comment_id": "5153701445",
-      "comment_version_key": "5153701445:2026-08-01T22:17:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5153701445",
-      "comment_created_at": "2026-08-01T22:17:02Z",
-      "comment_updated_at": "2026-08-01T22:17:02Z",
-      "comment_body_sha256": "2ddf1bc2f71cb293e4b6766fe1499955188901906a57144a10131103e07aa0f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117248,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:17:37.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-rem-junk-topics",
-        "head_sha": "e79e0e095e348bc56f0ce0a58a32f5204b8c8bd2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117623:5153341131:2026-08-01T22:16:59Z:clawsweeper_needs_human",
       "comment_id": "5153341131",
@@ -32487,6 +32440,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-109285-acp-binding-sessions-hang-restart",
         "head_sha": "914915b4f2a6dd243bd501f2618334d828d8ce17",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117719:5154288416:2026-08-02T01:17:11Z:clawsweeper_needs_human",
+      "comment_id": "5154288416",
+      "comment_version_key": "5154288416:2026-08-02T01:17:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117719#issuecomment-5154288416",
+      "comment_created_at": "2026-08-02T00:54:33Z",
+      "comment_updated_at": "2026-08-02T01:17:11Z",
+      "comment_body_sha256": "83a1f9ff182cc3f9f3033a5acceb733e213d1169a50ccdcd608abad23264d8a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117719,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes WhatsApp delivery semantics from immediate degradation to bounded per-conversation retry for selected failures; exhausted retries still follow the shared ingress dead-let... (sha=00c7295016227fe6955638bcb3d5c25b6bebbff4)",
+      "expected_head_sha": "00c7295016227fe6955638bcb3d5c25b6bebbff4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:22:29.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-inbound-media-retry-117708",
+        "head_sha": "00c7295016227fe6955638bcb3d5c25b6bebbff4",
         "cluster_id": null,
         "job_path": null
       }
