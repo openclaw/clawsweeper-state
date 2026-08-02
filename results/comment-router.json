@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:42:38.545Z",
+  "updated_at": "2026-08-02T13:43:11.136Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117946:5157118451:2026-08-02T10:16:56Z:clawsweeper_needs_human",
-      "comment_id": "5157118451",
-      "comment_version_key": "5157118451:2026-08-02T10:16:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117946#issuecomment-5157118451",
-      "comment_created_at": "2026-08-02T10:16:56Z",
-      "comment_updated_at": "2026-08-02T10:16:56Z",
-      "comment_body_sha256": "63ce7d286d50bd5bc4f204037f1586c0074b8455885d94dc470609bd5aed1a58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a9dc6dfef5126a1f740a06bc279bf37aa826a033)",
-      "expected_head_sha": "a9dc6dfef5126a1f740a06bc279bf37aa826a033",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:17:35.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-recall-ingestion-narrow",
-        "head_sha": "a9dc6dfef5126a1f740a06bc279bf37aa826a033",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117947:5157118761:2026-08-02T10:16:59Z:clawsweeper_auto_repair",
       "comment_id": "5157118761",
@@ -30833,6 +30800,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117187:5158279044:2026-08-02T13:42:29Z:re_review",
+      "comment_id": "5158279044",
+      "comment_version_key": "5158279044:2026-08-02T13:42:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117187#issuecomment-5158279044",
+      "comment_created_at": "2026-08-02T13:42:29Z",
+      "comment_updated_at": "2026-08-02T13:42:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117187,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T13:43:08.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/91734-image-generate-input-files",
+        "head_sha": "a1c0f3c6442adc99e782bd35e343c93f63b20763",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
