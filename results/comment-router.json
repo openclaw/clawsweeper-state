@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:41:17.403Z",
+  "updated_at": "2026-08-02T08:41:50.173Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117814:5155367509:2026-08-02T04:39:25Z:clawsweeper_needs_human",
-      "comment_id": "5155367509",
-      "comment_version_key": "5155367509:2026-08-02T04:39:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117814#issuecomment-5155367509",
-      "comment_created_at": "2026-08-02T04:39:25Z",
-      "comment_updated_at": "2026-08-02T04:39:25Z",
-      "comment_body_sha256": "313342fdc7eae36cd4056da499c597af2a035bae4c1a9cf0ec00d618dcb1bf4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117814,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind main and several required checks are still incomplete in the supplied status; refresh validation on the exact merge head before landing. (sha=1c4278c4d7b07c462743356e6cfe54daf1845a93)",
-      "expected_head_sha": "1c4278c4d7b07c462743356e6cfe54daf1845a93",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:40:03.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-docker-canonical-service-auth",
-        "head_sha": "1c4278c4d7b07c462743356e6cfe54daf1845a93",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117795:5155375154:2026-08-02T04:40:35Z:clawsweeper_needs_human",
       "comment_id": "5155375154",
@@ -32392,6 +32359,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156607002:2026-08-02T08:41:11Z:re_review",
+      "comment_id": "5156607002",
+      "comment_version_key": "5156607002:2026-08-02T08:41:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156607002",
+      "comment_created_at": "2026-08-02T08:41:11Z",
+      "comment_updated_at": "2026-08-02T08:41:11Z",
+      "comment_body_sha256": "12eadd77f2951c139787bfccf075d3422b4241ee268e59261d63a2460d360a66",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117727,
+      "author": "Takhoffman",
+      "author_id": 781889,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:41:46.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-fractional-chunk-limits",
+        "head_sha": "48e0fb9be19f7bbac3878bd07372134860c10dce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
