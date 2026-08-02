@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T12:12:56.565Z
+Generated: 2026-08-02T12:51:58.798Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | issue-openclaw-openclaw-90786 | MERGEABLE | BEHIND | CANCELLED:5 SKIPPED:42 SUCCESS:85 NEUTRAL:1; blockers:2 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | issue-openclaw-openclaw-90786 | MERGEABLE | BEHIND | CANCELLED:14 SKIPPED:48 SUCCESS:88 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117954](https://github.com/openclaw/openclaw/pull/117954) | fix(whatsapp): honor disabled self-chat admission | issue-openclaw-openclaw-117941 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:43 SUCCESS:72 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117952](https://github.com/openclaw/openclaw/pull/117952) | fix(control-ui): wait for delayed Talk source replies | issue-openclaw-openclaw-117899 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:44 SUCCESS:91 NEUTRAL:1; blockers:2 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | issue-openclaw-openclaw-73478 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:45 SUCCESS:82 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
