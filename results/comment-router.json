@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T22:17:05.399Z",
+  "updated_at": "2026-08-02T22:17:42.850Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109269:4996069862:2026-08-02T19:35:49Z:clawsweeper_needs_human",
-      "comment_id": "4996069862",
-      "comment_version_key": "4996069862:2026-08-02T19:35:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109269#issuecomment-4996069862",
-      "comment_created_at": "2026-07-16T20:02:40Z",
-      "comment_updated_at": "2026-08-02T19:35:49Z",
-      "comment_body_sha256": "691c5cc7663f3310f6bee74b7aabaf1939b390dfb5a84ffbec4f13d6000282f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fixed 30-second opening deadline intentionally turns a previously unbounded but eventually successful slow upstream into a client-visible 504; neither the proxy CLI documentation no... (sha=ba9f802b206eac3d192f6a63a8ad395067f88e92)",
-      "expected_head_sha": "ba9f802b206eac3d192f6a63a8ad395067f88e92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T19:36:27.848Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/proxy-capture-connect-timeout",
-        "head_sha": "ba9f802b206eac3d192f6a63a8ad395067f88e92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98574:4853991815:2026-08-02T19:35:51Z:clawsweeper_needs_human",
       "comment_id": "4853991815",
@@ -31670,6 +31637,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:95:5160602442:2026-08-02T22:17:13Z:clawsweeper_needs_human",
+      "comment_id": "5160602442",
+      "comment_version_key": "5160602442:2026-08-02T22:17:13Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/95#issuecomment-5160602442",
+      "comment_created_at": "2026-08-02T22:17:13Z",
+      "comment_updated_at": "2026-08-02T22:17:13Z",
+      "comment_body_sha256": "e7f00e305019c0b29b70ba0e98719dc308b5527072f5f7502d4bd2b998452e9c",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 95,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body describes real syscall race results but does not include inspectable terminal output, logs, recording, or linked artifact...; Review finding: [P1] Require descriptor chmod for the effective default directory mode — src/replace-file.ts:395-401 - [medium] Sync adapter can skip default parent permissions —... (sha=cfaa746703369c697c0fce7f102762f17e5a1d2a)",
+      "expected_head_sha": "cfaa746703369c697c0fce7f102762f17e5a1d2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T22:17:42.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dirmode-chmod",
+        "head_sha": "cfaa746703369c697c0fce7f102762f17e5a1d2a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
