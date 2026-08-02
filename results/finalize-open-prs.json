@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T00:09:37.992Z",
-  "count": 7,
+  "generated_at": "2026-08-02T01:13:00.121Z",
+  "count": 8,
   "summary": {
-    "open_prs": 7,
+    "open_prs": 8,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 7,
+    "needs_checks": 8,
     "needs_review": 0,
-    "needs_merge_preflight": 7,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 8,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,33 +27,33 @@
   },
   "prs": [
     {
-      "number": 117704,
-      "title": "fix(xai): Grok subscription inference fails with HTTP 426 on every request",
-      "url": "https://github.com/openclaw/openclaw/pull/117704",
-      "branch": "clawsweeper/automerge-openclaw-openclaw-113663",
-      "head_sha": "6e1e9c5f04b60d9f08312edc0de1f23dd693a728",
-      "cluster_id": "automerge-openclaw-openclaw-113663",
-      "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-113663.md",
-      "updated_at": "2026-08-02T00:07:31Z",
+      "number": 117721,
+      "title": "fix(control-ui): render live thinking agent events in WebChat",
+      "url": "https://github.com/openclaw/openclaw/pull/117721",
+      "branch": "clawsweeper/issue-openclaw-openclaw-88079",
+      "head_sha": "aef90a4f964edebf313c2b7f446c156085742232",
+      "cluster_id": "issue-openclaw-openclaw-88079",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
+      "updated_at": "2026-08-02T01:07:42Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 94,
+        "total": 118,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 40,
-          "SUCCESS": 45,
-          "IN_PROGRESS": 1,
-          "FAILURE": 1
+          "CANCELLED": 12,
+          "SKIPPED": 28,
+          "SUCCESS": 78
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "CI / build-artifacts:IN_PROGRESS",
-          "CI / checks-node-changed:FAILURE"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -63,25 +63,32 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
+            "submitted_at": "2026-08-02T01:05:01Z"
+          }
+        ]
       },
       "latest_record": {
-        "run_id": "30723992316",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30723992316",
-        "cluster_id": "automerge-openclaw-openclaw-113663",
-        "published_at": "2026-08-02T00:08:59.083Z",
+        "run_id": "30725508395",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30725508395",
+        "cluster_id": "issue-openclaw-openclaw-88079",
+        "published_at": "2026-08-02T01:12:12.871Z",
         "workflow_conclusion": "success",
         "apply_action": {
-          "target": "#117704",
+          "target": "#117721",
           "action": "merge_canonical",
           "status": "blocked",
           "classification": "fix_pr",
           "canonical": null,
           "candidate_fix": null,
-          "title": "fix(xai): Grok subscription inference fails with HTTP 426 on every request",
+          "title": "fix(control-ui): render live thinking agent events in WebChat",
           "idempotency_key": null,
-          "reason": "replacement pull request requires a fresh current-head ClawSweeper review; automatic merge disabled",
+          "reason": "checks are not clean: openclaw/ci-gate: IN_PROGRESS",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,
@@ -96,6 +103,65 @@
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
+      "number": 117717,
+      "title": "fix(whatsapp): log terminal inbound media failures",
+      "url": "https://github.com/openclaw/openclaw/pull/117717",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117709",
+      "head_sha": "6c7dc8e696f9d6c9ff81ea056862d40fb24d6c02",
+      "cluster_id": "issue-openclaw-openclaw-117709",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117709.md",
+      "updated_at": "2026-08-02T01:11:24Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 108,
+        "counts": {
+          "CANCELLED": 1,
+          "SUCCESS": 67,
+          "SKIPPED": 38,
+          "IN_PROGRESS": 1,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-large-8:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117717#issuecomment-5154247551",
+            "submitted_at": "2026-08-02T00:44:37Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117717#issuecomment-5154252126",
+            "submitted_at": "2026-08-02T00:45:45Z"
+          }
+        ]
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-8:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117697,
       "title": "fix(whatsapp): preserve source direction for automatic reactions",
       "url": "https://github.com/openclaw/openclaw/pull/117697",
@@ -103,7 +169,7 @@
       "head_sha": "5060d03bc51f343abd808a29bb55ef0e1033c5a8",
       "cluster_id": "issue-openclaw-openclaw-117672",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117672.md",
-      "updated_at": "2026-08-01T23:54:20Z",
+      "updated_at": "2026-08-02T01:07:01Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -131,13 +197,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/117697#issuecomment-5154060076",
             "submitted_at": "2026-08-01T23:51:37Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117697#issuecomment-5154316330",
+            "submitted_at": "2026-08-02T01:01:30Z"
           }
         ]
       },
@@ -414,7 +486,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T00:06:53Z",
+      "updated_at": "2026-08-02T01:07:44Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

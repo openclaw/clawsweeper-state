@@ -1,0 +1,152 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-88079",
+  "mode": "autonomous",
+  "run_id": "30725508395",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30725508395",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
+  "published_at": "2026-08-02T01:12:12.871Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/88079",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/88079",
+  "canonical_pr": null,
+  "summary": "#88079 is a reproducible shared Control UI live-projection regression on current main 681e8c5ab1931c5561c42b4d823af2550d9e0d5c: `agent` events with `stream: \"thinking\"` reach `handleAgentEvent` but are discarded by the non-tool return path. The supplied target checkout is mounted read-only, so this worker cannot create the required branch delta or run the changed-tree validation. A narrow, ready-to-execute new-PR artifact is provided.",
+  "actions": [
+    {
+      "target": "#42276",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#88079",
+      "candidate_fix": null,
+      "reason": "Keep open as related; it has unique TUI product-scope work and is not a duplicate of the WebChat repair."
+    },
+    {
+      "target": "#74021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#88079",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate."
+    },
+    {
+      "target": "#86521",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate."
+    },
+    {
+      "target": "#88079",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#88079",
+      "candidate_fix": null,
+      "reason": "The defect is real on the preflight main SHA and has a narrow shared UI repair path; implementation is blocked only because this worker's checkout is read-only."
+    },
+    {
+      "target": "#91727",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#88079",
+      "candidate_fix": null,
+      "reason": "Already closed; retain only as related rendering context."
+    },
+    {
+      "target": "#95280",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-88079",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#88079",
+      "candidate_fix": null,
+      "reason": "The deterministic executor should apply the narrow artifact on `clawsweeper/issue-openclaw-openclaw-88079`, then validate and raise the one allowed PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 4,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117721",
+      "branch": "clawsweeper/issue-openclaw-openclaw-88079",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117721",
+      "commit": "aef90a4f964edebf313c2b7f446c156085742232",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#88079",
+      "pr": "https://github.com/openclaw/openclaw/pull/117721",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117721",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117721",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(control-ui): render live thinking agent events in WebChat",
+      "idempotency_key": null,
+      "reason": "checks are not clean: openclaw/ci-gate: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
