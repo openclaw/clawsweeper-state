@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T13:50:36.179Z",
+  "updated_at": "2026-08-02T13:51:03.093Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4663167274:2026-06-09T19:12:35Z:re_review",
@@ -30929,8 +30929,8 @@
       "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88)",
       "expected_head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-02T13:50:31.282Z",
+      "status": "executed",
+      "processed_at": "2026-08-02T13:50:47.014Z",
       "target": {
         "kind": "pull_request",
         "branch": "clawsweeper/issue-openclaw-openclaw-73478",
@@ -30940,20 +30940,14 @@
       },
       "actions": [
         {
-          "action": "ensure_automerge_job",
+          "action": "dispatch_repair",
           "status": "executed",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
         },
         {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
-        },
-        {
           "action": "comment",
-          "status": "pending",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
