@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:19:20.368Z",
+  "updated_at": "2026-08-02T00:19:43.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113371:5153508887:2026-08-01T21:24:58Z:re_review",
-      "comment_id": "5153508887",
-      "comment_version_key": "5153508887:2026-08-01T21:24:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113371#issuecomment-5153508887",
-      "comment_created_at": "2026-08-01T21:24:58Z",
-      "comment_updated_at": "2026-08-01T21:24:58Z",
-      "comment_body_sha256": "0bccb784673d47abcf0692a00f2fd62f59c7adf534726c827d41a88e379d2e30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113371,
-      "author": "carlosjarenom",
-      "author_id": 199355241,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T21:25:35.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-109285-acp-binding-sessions-hang-restart",
-        "head_sha": "9aa5a5bd7122b140ba587bebd73268eb2ae70248",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:220:4987751509:2026-08-01T21:24:47Z:clawsweeper_needs_human",
       "comment_id": "4987751509",
@@ -32589,6 +32542,39 @@
         "kind": "pull_request",
         "branch": "docs/heartbeat-visibility-retired-key",
         "head_sha": "43b4b5c7c8569e8f19deb92fb5f6d80e59f765e2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107721:4978125458:2026-08-02T00:16:19Z:clawsweeper_needs_human",
+      "comment_id": "4978125458",
+      "comment_version_key": "4978125458:2026-08-02T00:16:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107721#issuecomment-4978125458",
+      "comment_created_at": "2026-07-15T07:47:18Z",
+      "comment_updated_at": "2026-08-02T00:16:19Z",
+      "comment_body_sha256": "8cc2369f9bd12de078542cc41439905e640987a077907b4d97ada3b6a9cb48c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body reports live macOS validation but supplies no inspectable after-fix artifact, and it explicitly leaves live Windows contai...; Review finding: [P1] Verify the added Codex background-terminal RPC contract — extensions/codex/src/app-server/protocol.ts:701-706 - [high] Unverified external process-control con... (sha=b1b44a9664e495b6b9741ef2e0d9dc50258951d4)",
+      "expected_head_sha": "b1b44a9664e495b6b9741ef2e0d9dc50258951d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T00:19:43.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-cancel-background-terminals",
+        "head_sha": "b1b44a9664e495b6b9741ef2e0d9dc50258951d4",
         "cluster_id": null,
         "job_path": null
       }
