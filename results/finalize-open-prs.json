@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T15:26:49.746Z",
+  "generated_at": "2026-08-02T15:41:47.746Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
@@ -34,7 +34,7 @@
       "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T15:21:04Z",
+      "updated_at": "2026-08-02T15:37:36Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -112,7 +112,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T15:23:53Z",
+      "updated_at": "2026-08-02T15:35:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -190,7 +190,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T15:23:55Z",
+      "updated_at": "2026-08-02T15:35:45Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -238,25 +238,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "30750715408",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30750715408",
+        "run_id": "30751961574",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30751961574",
         "cluster_id": "automerge-openclaw-openclaw-117952",
-        "published_at": "2026-08-02T14:16:19.675Z",
+        "published_at": "2026-08-02T15:40:50.552Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#117952",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(control-ui): wait for delayed Talk source replies",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#117952",
+          "candidate_fix": "#117952",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
@@ -274,35 +268,22 @@
       "head_sha": "00783874eb4f5dea63b166f9b8603d592b0b9aa5",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T15:26:14Z",
+      "updated_at": "2026-08-02T15:41:08Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 51,
+        "total": 125,
         "counts": {
           "CANCELLED": 3,
-          "IN_PROGRESS": 14,
-          "SKIPPED": 23,
-          "SUCCESS": 11
+          "SKIPPED": 40,
+          "SUCCESS": 81,
+          "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / preflight:IN_PROGRESS",
-          "CodeQL / Security High (core-auth-secrets):IN_PROGRESS",
-          "OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS",
-          "Shared OpenClawKit Periphery / Detect shared OpenClawKit scan scope:IN_PROGRESS",
-          "macOS Periphery Dead Code / Detect macOS scan scope:IN_PROGRESS",
-          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
-          "CodeQL / Security High (network-ssrf-boundary):IN_PROGRESS",
-          "CodeQL / Security High (mcp-process-tool-boundary):IN_PROGRESS",
-          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
-          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
-          "CodeQL / Security High (actions):IN_PROGRESS",
-          "CI / security-fast:IN_PROGRESS",
-          "Workflow Sanity / actionlint:IN_PROGRESS"
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -337,8 +318,8 @@
         "apply_action": null
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / preflight:IN_PROGRESS",
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -348,32 +329,26 @@
       "title": "fix(exec): explain Linux OOM-score-adjusted SIGKILLs",
       "url": "https://github.com/openclaw/openclaw/pull/117911",
       "branch": "clawsweeper/issue-openclaw-openclaw-69242",
-      "head_sha": "12ebe46ce9a10365912feddcd3ab91a7b51e801e",
+      "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
       "cluster_id": "issue-openclaw-openclaw-69242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
-      "updated_at": "2026-08-02T15:22:45Z",
+      "updated_at": "2026-08-02T15:37:55Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 145,
+        "total": 118,
         "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 45,
-          "SUCCESS": 84,
-          "FAILURE": 2,
+          "CANCELLED": 1,
+          "SUCCESS": 79,
+          "SKIPPED": 36,
+          "IN_PROGRESS": 1,
           "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / check-sqlite-session-flip-proof:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-large-8:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -417,7 +392,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-8:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -592,7 +567,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T15:24:18Z",
+      "updated_at": "2026-08-02T15:41:23Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -754,7 +729,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T15:25:16Z",
+      "updated_at": "2026-08-02T15:36:58Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
