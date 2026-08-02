@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:25:04.759Z",
+  "updated_at": "2026-08-02T21:25:11.124Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116704:5150075591:2026-08-02T19:15:57Z:clawsweeper_needs_human",
-      "comment_id": "5150075591",
-      "comment_version_key": "5150075591:2026-08-02T19:15:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116704#issuecomment-5150075591",
-      "comment_created_at": "2026-08-01T05:55:08Z",
-      "comment_updated_at": "2026-08-02T19:15:57Z",
-      "comment_body_sha256": "27a13a7738a7a4cde7d0d91734deff001153c5602b278810efd8dc9911f7a01e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116704,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Document dashboard widgets without enabling MCP Apps (P2)** - This unchanged section says the sandbox listener starts only with mcp.apps.enabled and the example enables it, but board.get lazily starts the listen...; Review finding: [P2] Document dashboard widgets without enabling MCP Apps — docs/web/dashboard.md:96-118 - [medium] Avoid requiring the MCP Apps bridge for board widgets — docs/we... (sha=91c5d6d42451a8645bcb48a9acfdc17aec04fae1)",
-      "expected_head_sha": "91c5d6d42451a8645bcb48a9acfdc17aec04fae1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T19:16:31.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/widget-sandbox-proxy-tunnel",
-        "head_sha": "91c5d6d42451a8645bcb48a9acfdc17aec04fae1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110696:5011317997:2026-08-02T19:16:00Z:clawsweeper_needs_human",
       "comment_id": "5011317997",
@@ -31118,6 +31085,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118020:5160409321:2026-08-02T21:24:39Z:re_review",
+      "comment_id": "5160409321",
+      "comment_version_key": "5160409321:2026-08-02T21:24:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118020#issuecomment-5160409321",
+      "comment_created_at": "2026-08-02T21:24:39Z",
+      "comment_updated_at": "2026-08-02T21:24:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118020,
+      "author": "m3talsmith",
+      "author_id": 9272,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:25:09.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "local-model-onboarding/ollama",
+        "head_sha": "46fe0c9e04fa5e801889ee915cc823b40a0c42d3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
