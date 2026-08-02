@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-02T00:24:51.258Z",
+  "updated_at": "2026-08-02T00:24:44.685Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117640:5153545422:2026-08-01T21:33:47Z:clawsweeper_needs_human",
+      "comment_id": "5153545422",
+      "comment_version_key": "5153545422:2026-08-01T21:33:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117640#issuecomment-5153545422",
+      "comment_created_at": "2026-08-01T21:33:47Z",
+      "comment_updated_at": "2026-08-01T21:33:47Z",
+      "comment_body_sha256": "540c28cdf67d75738c7a78eb1ad741e5d95d01339aff7a7806ad97b1fdee1798",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117640,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body still lists exact-head native and lazy Google realtime talkback as pending, so the intended behavior has not yet been independently demonstrated against a real provider se... (sha=30f8fbc67ae2afa74cc7cbf530942c83998b473e)",
+      "expected_head_sha": "30f8fbc67ae2afa74cc7cbf530942c83998b473e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T21:34:19.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-realtime-audio-queue-bounds-20260801",
+        "head_sha": "30f8fbc67ae2afa74cc7cbf530942c83998b473e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117636:5153442762:2026-08-01T21:33:36Z:clawsweeper_needs_human",
       "comment_id": "5153442762",
@@ -32493,39 +32526,6 @@
       "status": "skipped",
       "processed_at": "2026-08-02T00:24:44.685Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114850:5099072893:2026-08-02T00:23:25Z:clawsweeper_needs_human",
-      "comment_id": "5099072893",
-      "comment_version_key": "5099072893:2026-08-02T00:23:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114850#issuecomment-5099072893",
-      "comment_created_at": "2026-07-28T02:03:52Z",
-      "comment_updated_at": "2026-08-02T00:23:25Z",
-      "comment_body_sha256": "b65fe6c31e2a023370b57bc064c9df75da9e3175d9385c0bcad5770d68cfa4d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114850,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused mocked/static checks but includes no redacted after-fix run showing a real cloud-worker bootstrap or dispatch failu... (sha=18412b326aa973380f461eb44412ff2f133423ad)",
-      "expected_head_sha": "18412b326aa973380f461eb44412ff2f133423ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T00:24:51.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-failed-placement-local-recovery",
-        "head_sha": "18412b326aa973380f461eb44412ff2f133423ad",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
