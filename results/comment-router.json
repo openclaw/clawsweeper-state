@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:05:36.072Z",
+  "updated_at": "2026-08-02T01:06:09.610Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:108553:4987564098:2026-07-16T02:29:11Z:re_review",
-      "comment_id": "4987564098",
-      "comment_version_key": "4987564098:2026-07-16T02:29:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108553#issuecomment-4987564098",
-      "comment_created_at": "2026-07-16T02:29:11Z",
-      "comment_updated_at": "2026-07-16T02:29:11Z",
-      "comment_body_sha256": "52870e4f4a2a695ee4a3a70d62cf4ebfc83c3360c5895996431091868febb290",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108553,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:12:00.988Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:108553:4987986461:2026-07-16T03:54:44Z:re_review",
       "comment_id": "4987986461",
@@ -32323,6 +32296,39 @@
         "head_sha": "aef90a4f964edebf313c2b7f446c156085742232",
         "cluster_id": "issue-openclaw-openclaw-88079",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/tokentally:28:5118517269:2026-08-02T01:00:48Z:clawsweeper_needs_human",
+      "comment_id": "5118517269",
+      "comment_version_key": "5118517269:2026-08-02T01:00:48Z",
+      "comment_url": "https://github.com/steipete/tokentally/pull/28#issuecomment-5118517269",
+      "comment_created_at": "2026-07-29T13:38:22Z",
+      "comment_updated_at": "2026-08-02T01:00:48Z",
+      "comment_body_sha256": "57c0e7241d629d511f6471f6f453387c131ee3d759151940b423fdec69bf5c2d",
+      "repo": "steipete/tokentally",
+      "issue_number": 28,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally raises inferred totalTokens for cached Anthropic payloads without an explicit total, so downstream analytics, quotas, alerts, or estimates may increase after upg... (sha=735c550f3d6e6ca2b2a839f566d643ba6072cdd8)",
+      "expected_head_sha": "735c550f3d6e6ca2b2a839f566d643ba6072cdd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:06:09.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-cache-token-accounting",
+        "head_sha": "735c550f3d6e6ca2b2a839f566d643ba6072cdd8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
