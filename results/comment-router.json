@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:18:08.312Z",
+  "updated_at": "2026-08-02T07:18:14.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117620:5153317344:2026-08-02T02:49:39Z:clawsweeper_needs_human",
-      "comment_id": "5153317344",
-      "comment_version_key": "5153317344:2026-08-02T02:49:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117620#issuecomment-5153317344",
-      "comment_created_at": "2026-08-01T20:39:15Z",
-      "comment_updated_at": "2026-08-02T02:49:39Z",
-      "comment_body_sha256": "865bca675606714e567fdbc44431d383a9ab47f1116e0fec427df3b33c1cf58f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117620,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the supplied checks include an unresolved check-lint failure; merge only after that failure is explained or fixed and current-head validation is... (sha=98cf58c9508f32679ba4cca34afd2761bd83f2aa)",
-      "expected_head_sha": "98cf58c9508f32679ba4cca34afd2761bd83f2aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T02:50:20.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-117545",
-        "head_sha": "c39e1dc643f2bcbc3011c46de379df36580d0073",
-        "cluster_id": "issue-openclaw-openclaw-117545",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-02T02:49:47Z:clawsweeper_auto_repair",
       "comment_id": "5154776003",
@@ -32173,6 +32140,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T07:18:08.311Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-02T07:17:30Z:clawsweeper_needs_human",
+      "comment_id": "5093836900",
+      "comment_version_key": "5093836900:2026-08-02T07:17:30Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
+      "comment_created_at": "2026-07-27T16:16:21Z",
+      "comment_updated_at": "2026-08-02T07:17:30Z",
+      "comment_body_sha256": "5b2e4f28483867fb675ff6eaf665fad3107774b088d0cc014b45eb7a6d348fb7",
+      "repo": "openclaw/crabline",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Matrix SDK v42 is a major release with OAuth2 changes, while Crabline’s real-client contract currently uses static access-token authentication; compatibility needs a successful SDK sy... (sha=871844c43e665f190a78259c33f2b24f6a326479)",
+      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:18:14.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
+        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
