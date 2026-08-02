@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T10:10:11.846Z",
+  "updated_at": "2026-08-02T10:11:28.027Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114983:5150601402:2026-08-01T08:22:38Z:re_review",
-      "comment_id": "5150601402",
-      "comment_version_key": "5150601402:2026-08-01T08:22:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5150601402",
-      "comment_created_at": "2026-08-01T08:22:38Z",
-      "comment_updated_at": "2026-08-01T08:22:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114983,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:54:50.146Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114983:5153712285:2026-08-01T22:19:39Z:re_review",
       "comment_id": "5153712285",
@@ -32342,6 +32315,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117248:5150097029:2026-08-02T10:08:33Z:clawsweeper_auto_repair",
+      "comment_id": "5150097029",
+      "comment_version_key": "5150097029:2026-08-02T10:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117248#issuecomment-5150097029",
+      "comment_created_at": "2026-08-01T06:01:55Z",
+      "comment_updated_at": "2026-08-02T10:08:33Z",
+      "comment_body_sha256": "8561b735e41b438246942c67429ccb86dab387b04ab3e77df941ab9dd8d0ad00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c2e9f3d8a94bf389606f64174f3350a1047fe437)",
+      "expected_head_sha": "c2e9f3d8a94bf389606f64174f3350a1047fe437",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T10:11:28.027Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-rem-junk-topics",
+        "head_sha": "c2e9f3d8a94bf389606f64174f3350a1047fe437",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
