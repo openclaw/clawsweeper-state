@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:25:55.201Z",
+  "updated_at": "2026-08-02T00:26:02.057Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2413:5153580460:2026-08-01T21:43:24Z:re_review",
-      "comment_id": "5153580460",
-      "comment_version_key": "5153580460:2026-08-01T21:43:24Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5153580460",
-      "comment_created_at": "2026-08-01T21:43:24Z",
-      "comment_updated_at": "2026-08-01T21:43:24Z",
-      "comment_body_sha256": "b66a6a7c7ef71820dfd3824821dfe49843d273c1c8dbeb646537ac159505ee73",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2413,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T21:44:05.178Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-proxy-model-pricing-2393",
-        "head_sha": "f54ad51d2f787c0fdfea044f2270d05c3d878bc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117646:5153581036:2026-08-01T21:43:34Z:clawsweeper_needs_human",
       "comment_id": "5153581036",
@@ -32398,6 +32351,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T00:25:55.200Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116175:5125613634:2026-08-02T00:25:17Z:clawsweeper_needs_human",
+      "comment_id": "5125613634",
+      "comment_version_key": "5125613634:2026-08-02T00:25:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116175#issuecomment-5125613634",
+      "comment_created_at": "2026-07-30T02:19:39Z",
+      "comment_updated_at": "2026-08-02T00:25:17Z",
+      "comment_body_sha256": "249d45101a615d61bc157782c953ed0691096000bf212432af50c69b7295e45d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - allowedBindSources is a new opt-in security-boundary configuration surface: it preserves existing configurations by default, but maintainers must explicitly accept this as the support... (sha=3f699fb17713c3d437bbbc2135ce4ad01626f677)",
+      "expected_head_sha": "3f699fb17713c3d437bbbc2135ce4ad01626f677",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T00:26:02.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sandbox-allowed-bind-sources",
+        "head_sha": "3f699fb17713c3d437bbbc2135ce4ad01626f677",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
