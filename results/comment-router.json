@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T22:49:40.211Z",
+  "updated_at": "2026-08-02T22:49:47.422Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104690:5112011566:2026-07-29T02:13:55Z:re_review",
-      "comment_id": "5112011566",
-      "comment_version_key": "5112011566:2026-07-29T02:13:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104690#issuecomment-5112011566",
-      "comment_created_at": "2026-07-29T02:13:55Z",
-      "comment_updated_at": "2026-07-29T02:13:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104690,
-      "author": "jimmypuckett",
-      "author_id": 3220069,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T20:21:52.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/msteams-lifecycle-session-reset-99054",
-        "head_sha": "821b8d1120b41c6cea0ffc5deaca7b806cf44e64",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95132:4755525535:2026-08-02T20:21:13Z:clawsweeper_auto_repair",
       "comment_id": "4755525535",
@@ -31825,6 +31778,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-slack-mantis-artifact-freshness",
         "head_sha": "ec68d1077266097114647084e4628973e4ba16cb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118254:5160665353:2026-08-02T22:44:37Z:clawsweeper_needs_human",
+      "comment_id": "5160665353",
+      "comment_version_key": "5160665353:2026-08-02T22:44:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118254#issuecomment-5160665353",
+      "comment_created_at": "2026-08-02T22:34:19Z",
+      "comment_updated_at": "2026-08-02T22:44:37Z",
+      "comment_body_sha256": "14475ae98e0053236bb99b256432e0607a89609b364f96e8e5df4c523ff1952d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused unit and harness tests, but no independently inspectable after-fix runtime, terminal, log, recording, or live-outpu... (sha=5d1f680059961f0abffd51667f6eee03aaad1b52)",
+      "expected_head_sha": "5d1f680059961f0abffd51667f6eee03aaad1b52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T22:49:47.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/terminal-outcome-owner",
+        "head_sha": "5d1f680059961f0abffd51667f6eee03aaad1b52",
         "cluster_id": null,
         "job_path": null
       }
