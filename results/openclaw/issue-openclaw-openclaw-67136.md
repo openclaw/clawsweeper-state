@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-67136"
-mode: "autonomous"
-run_id: "30731866074"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30731866074"
+mode: "plan"
+run_id: "30733333491"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30733333491"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-02T04:45:36.915Z"
-canonical: "https://github.com/openclaw/openclaw/issues/67136"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-02T05:30:21.047Z"
+canonical: "https://github.com/openclaw/openclaw/pull/117843"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/67136"
-canonical_pr: null
-actions_total: 7
+canonical_pr: "https://github.com/openclaw/openclaw/pull/117843"
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30731866074](https://github.com/openclaw/clawsweeper/actions/runs/30731866074)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30733333491](https://github.com/openclaw/clawsweeper/actions/runs/30733333491)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/67136
+Canonical: https://github.com/openclaw/openclaw/pull/117843
 
 ## Summary
 
-Verified against supplied `main` SHA `a084763814504306edcad0c0f52ff93837121c83`: the shared session write tool returns a success receipt immediately after a delegated `writeFile` resolves, without proving the target persisted. The target checkout is filesystem read-only, so no branch, test edits, validation run, or PR can be produced here; a narrow executable fix artifact is ready for a writable executor.
+Keep issue #67136 open and retain PR #117843 as the sole canonical repair path. The PR is narrowly scoped, has passing hydrated checks and real-behavior proof, but is behind main and must be refreshed and exact-head reviewed before any future merge decision. Closed #44662 remains historical context; closed security-sensitive #67202 is quarantined.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,10 @@ Verified against supplied `main` SHA `a084763814504306edcad0c0f52ff93837121c83`:
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44662 | keep_closed | skipped | related | Closed historical context; do not reopen or modify it for this repair. |
-| #67136 | fix_needed | blocked | canonical | A resolving delegated write can still report success when no regular file with the requested content exists. Implementation is blocked only because this worker's checkout is read-only. |
-| #67202 | route_security | planned | security_sensitive | Quarantine this exact linked ref for central OpenClaw security handling; it does not block the unrelated narrow bug-fix artifact. |
-| #84062 | keep_closed | skipped | duplicate | Closed historical duplicate; no closure mutation is valid. |
-| #89853 | keep_closed | skipped | superseded | Closed historical candidate; do not revive or modify it. |
-| cluster:issue-openclaw-openclaw-67136 | build_fix_artifact | planned | canonical | A narrow shared-contract repair is ready; it needs a writable executor to implement and validate. |
-| cluster:issue-openclaw-openclaw-67136 | open_fix_pr | blocked | canonical | Open the planned new fix PR only after the writable executor applies the artifact, passes focused tests and pnpm check:changed, and adds the required ClawSweeper labels. |
+| #67136 | keep_canonical | planned | canonical | Keep the report open until the canonical implementation is merged; do not create a duplicate repair PR. |
+| #117843 | keep_canonical | planned | canonical | This same-repository, writable PR is the single viable implementation path. Keep it open; merge is disallowed by this job and the branch must be refreshed before any later merge recommendation. |
+| #44662 | keep_closed | skipped | related | Already closed historical context; no closure or mutation is valid. |
+| #67202 | route_security | planned | security_sensitive | Route this exact security-sensitive historical PR to central OpenClaw security handling; do not let it block the unrelated non-security repair path. |
 
 ## Needs Human
 

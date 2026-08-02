@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T04:45:50.465Z",
-  "count": 7,
+  "generated_at": "2026-08-02T05:30:36.769Z",
+  "count": 8,
   "summary": {
-    "open_prs": 7,
+    "open_prs": 8,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 6,
+    "needs_checks": 7,
     "needs_review": 0,
-    "needs_merge_preflight": 7,
+    "needs_merge_preflight": 8,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,6 +27,77 @@
   },
   "prs": [
     {
+      "number": 117843,
+      "title": "fix(agents): verify delegated writes before reporting success",
+      "url": "https://github.com/openclaw/openclaw/pull/117843",
+      "branch": "clawsweeper/issue-openclaw-openclaw-67136",
+      "head_sha": "7e39efb171a312bb6a0a813d7dade86da9145472",
+      "cluster_id": "issue-openclaw-openclaw-67136",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67136.md",
+      "updated_at": "2026-08-02T05:28:19Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 141,
+        "counts": {
+          "CANCELLED": 13,
+          "SKIPPED": 43,
+          "SUCCESS": 84,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117843#issuecomment-5155616142",
+            "submitted_at": "2026-08-02T05:21:32Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30733333491",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30733333491",
+        "cluster_id": "issue-openclaw-openclaw-67136",
+        "published_at": "2026-08-02T05:30:21.047Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117843",
+          "action": "keep_canonical",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#117843",
+          "candidate_fix": "#117843",
+          "reason": "This same-repository, writable PR is the single viable implementation path. Keep it open; merge is disallowed by this job and the branch must be refreshed before any later merge recommendation."
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117721,
       "title": "fix(control-ui): render live thinking agent events in WebChat",
       "url": "https://github.com/openclaw/openclaw/pull/117721",
@@ -34,7 +105,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T04:40:19Z",
+      "updated_at": "2026-08-02T05:29:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -180,7 +251,7 @@
       "head_sha": "5060d03bc51f343abd808a29bb55ef0e1033c5a8",
       "cluster_id": "issue-openclaw-openclaw-117672",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117672.md",
-      "updated_at": "2026-08-02T04:41:09Z",
+      "updated_at": "2026-08-02T05:25:32Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -252,26 +323,25 @@
       "title": "fix(model-catalog): preserve manifest lifecycle metadata on refresh",
       "url": "https://github.com/openclaw/openclaw/pull/117620",
       "branch": "clawsweeper/issue-openclaw-openclaw-117545",
-      "head_sha": "a990ab2d73c8642a236403e9586b2426d4310ddb",
+      "head_sha": "d94a0d605fdc8b75274406c571d8e8c3792df8bb",
       "cluster_id": "issue-openclaw-openclaw-117545",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
-      "updated_at": "2026-08-02T04:17:47Z",
+      "updated_at": "2026-08-02T05:05:57Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 113,
+        "total": 115,
         "counts": {
           "CANCELLED": 2,
           "SKIPPED": 41,
-          "SUCCESS": 67,
-          "FAILURE": 3
+          "SUCCESS": 70,
+          "FAILURE": 2
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "CI / checks-node-compact-large-2:FAILURE",
-          "CI / checks-node-compact-small-6:FAILURE",
           "CI / openclaw/ci-gate:FAILURE"
         ]
       },
@@ -316,7 +386,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; CI / checks-node-compact-large-2:FAILURE; CI / checks-node-compact-small-6:FAILURE",
+        "needs_checks:Real behavior proof:CANCELLED; CI / checks-node-compact-large-2:FAILURE; CI / openclaw/ci-gate:FAILURE",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -490,7 +560,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T04:45:20Z",
+      "updated_at": "2026-08-02T05:29:05Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
