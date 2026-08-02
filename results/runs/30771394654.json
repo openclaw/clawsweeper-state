@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118279",
+  "mode": "autonomous",
+  "run_id": "30771394654",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30771394654",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118279.md",
+  "published_at": "2026-08-02T23:34:57.689Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118279",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118279",
+  "canonical_pr": null,
+  "summary": "#118279 remains the canonical open bug. The supplied preflight identifies main as faf2602d22aa0d9d7fa7894a95ef3703b506d049, but this read-only checkout contains only 6adbd0901aa14ce09fccac76dfcc3f0f5b8f3321 and cannot resolve the required SHA. The older checkout independently shows the reported broken boundary: due commitments set disableTools without side-question mode, while the CLI handoff forwards disableTools and the CLI guard rejects tools-disabled always-on-native-tool backends. A narrow fix artifact is ready, but implementation and validation against latest main are blocked until the executor refreshes the checkout.",
+  "actions": [
+    {
+      "target": "#118279",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118279",
+      "candidate_fix": null,
+      "reason": "The issue is a bounded existing-behavior defect with a clear owner boundary; no closure or merge is allowed by this job."
+    },
+    {
+      "target": "#118279",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118279",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable required latest-main checkout; refresh to the preflight SHA before applying the narrow artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118279",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118279",
+      "candidate_fix": null,
+      "reason": "A refreshed executor can apply this small, non-security repair without new configuration, provider policy, or embedded-runner API changes."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
