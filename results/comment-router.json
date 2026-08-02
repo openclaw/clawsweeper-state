@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:14:19.530Z",
+  "updated_at": "2026-08-02T12:14:28.140Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117734:5154495090:2026-08-02T08:58:12Z:clawsweeper_auto_repair",
-      "comment_id": "5154495090",
-      "comment_version_key": "5154495090:2026-08-02T08:58:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5154495090",
-      "comment_created_at": "2026-08-02T01:45:33Z",
-      "comment_updated_at": "2026-08-02T08:58:12Z",
-      "comment_body_sha256": "da461d3fafedf2edc46834458666f0709b74187d1a4211428ee0010dcd6c552e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e4ed0d92cf93cd8105d5fabe3aa332b7966c5532)",
-      "expected_head_sha": "e4ed0d92cf93cd8105d5fabe3aa332b7966c5532",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T09:03:09.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/conversation-burst-budget",
-        "head_sha": "e4ed0d92cf93cd8105d5fabe3aa332b7966c5532",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117744:5154624640:2026-08-02T08:42:03Z:clawsweeper_needs_human",
       "comment_id": "5154624640",
@@ -31331,6 +31298,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114507:5090187305:2026-08-02T12:13:48Z:clawsweeper_needs_human",
+      "comment_id": "5090187305",
+      "comment_version_key": "5090187305:2026-08-02T12:13:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114507#issuecomment-5090187305",
+      "comment_created_at": "2026-07-27T10:26:14Z",
+      "comment_updated_at": "2026-08-02T12:13:48Z",
+      "comment_body_sha256": "5421abc75f7bc6fdb56fdbad0d0c7c5ea0e7eecb25d59e1b40b055bd0af6a276",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main. GitHub reports it mergeable and the touched browser files are unchanged since the PR base, but a maintainer should still review the exact GitHub mer... (sha=6ae69cd3d1aa599746dce3fb45b88be6fc89526b)",
+      "expected_head_sha": "6ae69cd3d1aa599746dce3fb45b88be6fc89526b",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T12:14:28.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sweep-browser-volatile-cleanup-106621",
+        "head_sha": "6ae69cd3d1aa599746dce3fb45b88be6fc89526b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
