@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:05:28.972Z",
+  "updated_at": "2026-08-02T21:05:32.679Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:106705:4969969299:2026-07-14T13:55:27Z:re_review",
-      "comment_id": "4969969299",
-      "comment_version_key": "4969969299:2026-07-14T13:55:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106705#issuecomment-4969969299",
-      "comment_created_at": "2026-07-14T13:55:27Z",
-      "comment_updated_at": "2026-07-14T13:55:27Z",
-      "comment_body_sha256": "51684c6b08db9e0a92c4ae61fbc307d3771b0c64861f0acc70bf08ffd6f53e38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106705,
-      "author": "lzyyzznl",
-      "author_id": 41978486,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - p1/p2 fixes: rebased on upstream/main to resolve stale-base merge conflicts; generated locale output auto-resolved after rebase",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:55:17.582Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:106705:4964447549:2026-07-14T01:13:49Z:re_review",
       "comment_id": "4964447549",
@@ -31217,6 +31190,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118130:5159835448:2026-08-02T21:04:50Z:clawsweeper_needs_human",
+      "comment_id": "5159835448",
+      "comment_version_key": "5159835448:2026-08-02T21:04:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118130#issuecomment-5159835448",
+      "comment_created_at": "2026-08-02T18:52:02Z",
+      "comment_updated_at": "2026-08-02T21:04:50Z",
+      "comment_body_sha256": "9b0eddcea7971bbf9df706f5dd3068113dca2adf50dd6388d9b00745f93b5ccf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new messages intentionally affect the shared agent failover classifier, not Cron alone; without the required direct Codex/runtime-source check, the claim that these are canonical... (sha=1a14a675478f294b5479f3a6cbf8266ee66e43c5)",
+      "expected_head_sha": "1a14a675478f294b5479f3a6cbf8266ee66e43c5",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:05:32.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118083",
+        "head_sha": "1a14a675478f294b5479f3a6cbf8266ee66e43c5",
+        "cluster_id": "automerge-openclaw-openclaw-118130",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118130.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
