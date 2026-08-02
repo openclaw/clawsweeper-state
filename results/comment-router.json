@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T20:40:10.546Z",
+  "updated_at": "2026-08-02T20:41:28.682Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118115:5159736814:2026-08-02T18:26:16Z:re_review",
-      "comment_id": "5159736814",
-      "comment_version_key": "5159736814:2026-08-02T18:26:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118115#issuecomment-5159736814",
-      "comment_created_at": "2026-08-02T18:26:16Z",
-      "comment_updated_at": "2026-08-02T18:26:16Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118115,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T18:26:46.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-compaction-write-classifier-full",
-        "head_sha": "5a9a1c5dddc36209b10886d4a4370daa38d1c998",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:481:5118252862:2026-08-02T18:22:46Z:clawsweeper_needs_human",
       "comment_id": "5118252862",
@@ -31192,6 +31145,39 @@
         "kind": "pull_request",
         "branch": "fix/beta8-plugin-prerelease-20260802",
         "head_sha": "6a084c37b02c93aa800846b3e3995355863e80db",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118184:5160244845:2026-08-02T20:40:52Z:clawsweeper_needs_human",
+      "comment_id": "5160244845",
+      "comment_version_key": "5160244845:2026-08-02T20:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118184#issuecomment-5160244845",
+      "comment_created_at": "2026-08-02T20:40:52Z",
+      "comment_updated_at": "2026-08-02T20:40:52Z",
+      "comment_body_sha256": "335d9a8fe2a04265db5584968a00ed457e23f4a7e3149d4362d62a0297a285fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118184,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused Vitest, formatting, and lint results, but supplies no inspectable after-fix terminal output or benchmark artifact;... (sha=f287ad5f6a1735a56509e17c63c160fb0ff7bf32)",
+      "expected_head_sha": "f287ad5f6a1735a56509e17c63c160fb0ff7bf32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T20:41:28.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-compact-large-1",
+        "head_sha": "f287ad5f6a1735a56509e17c63c160fb0ff7bf32",
         "cluster_id": null,
         "job_path": null
       }
