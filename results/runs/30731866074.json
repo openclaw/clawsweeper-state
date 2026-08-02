@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-67136",
+  "mode": "autonomous",
+  "run_id": "30731866074",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30731866074",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-67136.md",
+  "published_at": "2026-08-02T04:45:36.915Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/67136",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/67136",
+  "canonical_pr": null,
+  "summary": "Verified against supplied `main` SHA `a084763814504306edcad0c0f52ff93837121c83`: the shared session write tool returns a success receipt immediately after a delegated `writeFile` resolves, without proving the target persisted. The target checkout is filesystem read-only, so no branch, test edits, validation run, or PR can be produced here; a narrow executable fix artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#44662",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "Closed historical context; do not reopen or modify it for this repair."
+    },
+    {
+      "target": "#67136",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "A resolving delegated write can still report success when no regular file with the requested content exists. Implementation is blocked only because this worker's checkout is read-only."
+    },
+    {
+      "target": "#67202",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact linked ref for central OpenClaw security handling; it does not block the unrelated narrow bug-fix artifact."
+    },
+    {
+      "target": "#84062",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "Closed historical duplicate; no closure mutation is valid."
+    },
+    {
+      "target": "#89853",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "Closed historical candidate; do not revive or modify it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-67136",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "A narrow shared-contract repair is ready; it needs a writable executor to implement and validate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-67136",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#67136",
+      "candidate_fix": null,
+      "reason": "Open the planned new fix PR only after the writable executor applies the artifact, passes focused tests and pnpm check:changed, and adds the required ClawSweeper labels."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
