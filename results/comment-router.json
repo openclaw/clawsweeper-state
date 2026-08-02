@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:30:32.261Z",
+  "updated_at": "2026-08-02T19:30:33.370Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118014:5159418911:2026-08-02T17:02:47Z:re_review",
-      "comment_id": "5159418911",
-      "comment_version_key": "5159418911:2026-08-02T17:02:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118014#issuecomment-5159418911",
-      "comment_created_at": "2026-08-02T17:02:47Z",
-      "comment_updated_at": "2026-08-02T17:02:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118014,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T17:03:30.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr-91144-schtasks-foreground",
-        "head_sha": "2edad3a07da7fd021a022e668c59288331a01a30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/uirouter:17:5122296130:2026-08-02T17:05:32Z:clawsweeper_needs_human",
       "comment_id": "5122296130",
@@ -31285,6 +31238,39 @@
         "kind": "pull_request",
         "branch": "fix-107202-exec-blocked-verb",
         "head_sha": "33fc72c0b75cfd544fbd8445e30629e8c55a173a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110058:5004651694:2026-08-02T19:29:40Z:clawsweeper_needs_human",
+      "comment_id": "5004651694",
+      "comment_version_key": "5004651694:2026-08-02T19:29:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110058#issuecomment-5004651694",
+      "comment_created_at": "2026-07-17T15:08:44Z",
+      "comment_updated_at": "2026-08-02T19:29:40Z",
+      "comment_body_sha256": "8ec3d0cc71d400466e1b30e9eebc232c5857c6a2bf38c834a8323f7a47ed5ebb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging without refreshed current-base validation could reintroduce an older LINE spool helper/error contract or miswire the new Doctor migration context after the recent rewrites. (sha=3ee1020859c8bea479785b2241e067192b94036e)",
+      "expected_head_sha": "3ee1020859c8bea479785b2241e067192b94036e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:30:33.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-spool-legacy-payload-upgrade",
+        "head_sha": "3ee1020859c8bea479785b2241e067192b94036e",
         "cluster_id": null,
         "job_path": null
       }
