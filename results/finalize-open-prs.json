@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T16:45:36.711Z",
+  "generated_at": "2026-08-02T16:49:19.275Z",
   "count": 13,
   "summary": {
     "open_prs": 13,
@@ -13,7 +13,7 @@
     "needs_checks": 12,
     "needs_review": 0,
     "needs_merge_preflight": 13,
-    "needs_result_backfill": 2
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -34,23 +34,23 @@
       "head_sha": "faffa66caa8d619a793c5d4126bf7bda95c2e99b",
       "cluster_id": "issue-openclaw-openclaw-118029",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118029.md",
-      "updated_at": "2026-08-02T16:43:02Z",
+      "updated_at": "2026-08-02T16:46:21Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 92,
+        "total": 104,
         "counts": {
-          "CANCELLED": 4,
-          "IN_PROGRESS": 2,
-          "SKIPPED": 40,
-          "SUCCESS": 45,
+          "CANCELLED": 9,
+          "SKIPPED": 44,
+          "SUCCESS": 50,
           "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:IN_PROGRESS",
-          "CI / build-artifacts:IN_PROGRESS"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -60,13 +60,20 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118064#issuecomment-5159335044",
+            "submitted_at": "2026-08-02T16:46:19Z"
+          }
+        ]
       },
       "latest_record": null,
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:IN_PROGRESS; CI / build-artifacts:IN_PROGRESS",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight",
         "needs_result_backfill"
       ],
@@ -80,7 +87,7 @@
       "head_sha": "93eb482bbb757d3ec5f0d7d1c301cc3878f06a52",
       "cluster_id": "issue-openclaw-openclaw-118039",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118039.md",
-      "updated_at": "2026-08-02T16:43:11Z",
+      "updated_at": "2026-08-02T16:46:42Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -108,22 +115,48 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/118055#issuecomment-5159309049",
             "submitted_at": "2026-08-02T16:41:41Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118055#issuecomment-5159316926",
+            "submitted_at": "2026-08-02T16:43:11Z"
           }
         ]
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "30756285434",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30756285434",
+        "cluster_id": "issue-openclaw-openclaw-118039",
+        "published_at": "2026-08-02T16:48:54.125Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118055",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(line): clear default access token when removing account",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
@@ -135,7 +168,7 @@
       "head_sha": "a1d1f2f9b678d4ab6c2b5070099de8e3a2d2a75c",
       "cluster_id": "automerge-openclaw-openclaw-114609",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114609.md",
-      "updated_at": "2026-08-02T16:17:09Z",
+      "updated_at": "2026-08-02T16:48:07Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -163,8 +196,8 @@
           {
             "source": "comment",
             "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118045#issuecomment-5159160915",
-            "submitted_at": "2026-08-02T16:17:09Z"
+            "url": "https://github.com/openclaw/openclaw/pull/118045#issuecomment-5159345680",
+            "submitted_at": "2026-08-02T16:48:07Z"
           }
         ]
       },

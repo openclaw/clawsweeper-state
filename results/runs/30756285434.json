@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118039",
+  "mode": "autonomous",
+  "run_id": "30756285434",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30756285434",
+  "head_sha": "8cdf2a157a0450c40b6a1e9d4474213cc901936d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118039.md",
+  "published_at": "2026-08-02T16:48:54.125Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118039",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118039",
+  "canonical_pr": null,
+  "summary": "#118039 is a valid, narrow LINE plugin defect on current main. Deleting the default account delegates to the shared account-delete helper, which clears only the LINE adapter's declared root fields; that list omits channelAccessToken even though LINE account discovery uses it to retain the default account. Plan one focused credited fix PR; no GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#118039",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118039",
+      "candidate_fix": null,
+      "reason": "Repair the plugin-owned deletion policy rather than adding a downstream list/status guard."
+    },
+    {
+      "target": "#117206",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related context only; already closed and not a closeout target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118039",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118039",
+      "candidate_fix": null,
+      "reason": "Create or update the designated ClawSweeper branch and open one narrowly scoped implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118055",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118039",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118055",
+      "commit": "93eb482bbb757d3ec5f0d7d1c301cc3878f06a52",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118039",
+      "pr": "https://github.com/openclaw/openclaw/pull/118055",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118055",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118055",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(line): clear default access token when removing account",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
