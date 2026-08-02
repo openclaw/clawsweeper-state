@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:25:04.610Z",
+  "updated_at": "2026-08-02T03:25:32.673Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95242:4756634572:2026-08-01T23:01:27Z:clawsweeper_needs_human",
-      "comment_id": "4756634572",
-      "comment_version_key": "4756634572:2026-08-01T23:01:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95242#issuecomment-4756634572",
-      "comment_created_at": "2026-06-20T05:46:52Z",
-      "comment_updated_at": "2026-08-01T23:01:27Z",
-      "comment_body_sha256": "4848a7a439f281de913374e5a17a7735f3579dd06ece25e540bc5fd65ca4ff71",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95242,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e91f7baaaef802561d9081adbf35c59cb5e9cb62)",
-      "expected_head_sha": "e91f7baaaef802561d9081adbf35c59cb5e9cb62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:46:55.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-yield-nonfatal",
-        "head_sha": "e91f7baaaef802561d9081adbf35c59cb5e9cb62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95613:4763418559:2026-08-01T22:58:41Z:clawsweeper_auto_repair",
       "comment_id": "4763418559",
@@ -32456,6 +32423,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117620:5153317344:2026-08-02T03:24:38Z:clawsweeper_needs_human",
+      "comment_id": "5153317344",
+      "comment_version_key": "5153317344:2026-08-02T03:24:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117620#issuecomment-5153317344",
+      "comment_created_at": "2026-08-01T20:39:15Z",
+      "comment_updated_at": "2026-08-02T03:24:38Z",
+      "comment_body_sha256": "ceeb582df7e9ab86ed4c9a756e32207af5354eeb8b03a23c0e2a298f538cfac0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This generic planner change makes manifest lifecycle values win for every same-ID remote overlay; maintainers should explicitly accept that remote lifecycle updates cannot override an... (sha=00a26c47b90d3bbb2c6438b7a03f65636a2ecb20)",
+      "expected_head_sha": "00a26c47b90d3bbb2c6438b7a03f65636a2ecb20",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T03:25:32.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-117545",
+        "head_sha": "00a26c47b90d3bbb2c6438b7a03f65636a2ecb20",
+        "cluster_id": "issue-openclaw-openclaw-117545",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
