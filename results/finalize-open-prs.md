@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T07:06:19.180Z
+Generated: 2026-08-02T07:41:32.696Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 9 |
+| open_prs | 8 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 8 |
+| needs_checks | 7 |
 | needs_review | 0 |
-| needs_merge_preflight | 9 |
+| needs_merge_preflight | 8 |
 | needs_result_backfill | 1 |
 
 ## Dispatch
@@ -36,6 +36,5 @@ Status: report_only
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | issue-openclaw-openclaw-88079 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:25 SUCCESS:77; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117717](https://github.com/openclaw/openclaw/pull/117717) | fix(whatsapp): log terminal inbound media failures | issue-openclaw-openclaw-117709 | MERGEABLE | BEHIND | SKIPPED:40 SUCCESS:72 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#117620](https://github.com/openclaw/openclaw/pull/117620) | fix(model-catalog): preserve manifest lifecycle metadata on refresh | issue-openclaw-openclaw-117545 | MERGEABLE | BEHIND | CANCELLED:2 SKIPPED:41 SUCCESS:70 FAILURE:2; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; CI / checks-node-compact-large-2:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#117521](https://github.com/openclaw/openclaw/pull/117521) | fix(heartbeat): retain configured account for accountless commitments | issue-openclaw-openclaw-117491 | MERGEABLE | BEHIND | CANCELLED:2 SKIPPED:39 SUCCESS:59 IN_PROGRESS:21 NEUTRAL:1; blockers:22 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117485](https://github.com/openclaw/openclaw/pull/117485) | fix(ios): route forced realtime consults through Gateway relay | issue-openclaw-openclaw-110171 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:27 SUCCESS:25 FAILURE:4; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; iOS Periphery Dead Code / Scan iOS dead code:FAILURE; Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117443](https://github.com/openclaw/openclaw/pull/117443) | fix(status): resolve effective channel model override | issue-openclaw-openclaw-89532 | MERGEABLE | BEHIND | CANCELLED:14 SKIPPED:48 SUCCESS:88 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
