@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T14:23:05.041Z",
+  "updated_at": "2026-08-02T14:23:24.355Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5147868280:2026-07-31T22:06:29Z:re_review",
-      "comment_id": "5147868280",
-      "comment_version_key": "5147868280:2026-07-31T22:06:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5147868280",
-      "comment_created_at": "2026-07-31T22:06:29Z",
-      "comment_updated_at": "2026-07-31T22:06:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:23:35.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5148797970:2026-08-01T01:14:20Z:re_review",
       "comment_id": "5148797970",
@@ -31430,6 +31403,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117998:5158498345:2026-08-02T14:22:44Z:re_review",
+      "comment_id": "5158498345",
+      "comment_version_key": "5158498345:2026-08-02T14:22:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117998#issuecomment-5158498345",
+      "comment_created_at": "2026-08-02T14:22:44Z",
+      "comment_updated_at": "2026-08-02T14:22:44Z",
+      "comment_body_sha256": "313708dbc0bc3c4f10ad93b4f62e669c766eff4989143559a71a84f69ee5f07f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117998,
+      "author": "chenyangjun-xy",
+      "author_id": 294178215,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1 fixes are on head 0a3ea751960: the stall watchdog is now suspended during event dispatch (slow-handler regression test, red/green verified), and docs/.generated/plugin-sdk-api-baseline.sha256 was regenerated for the canonical channel-outbound seam (plugin-sdk:api:check → ok; deprecated channel-lifecycle hash unchanged). evidence updated in the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T14:23:22.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tlon-sse-stall-watchdog",
+        "head_sha": "0a3ea751960be4f1a721d599cc91a6e6f34ad5c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
