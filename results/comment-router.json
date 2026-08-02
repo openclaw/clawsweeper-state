@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:29:42.603Z",
+  "updated_at": "2026-08-02T02:30:15.980Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:293:5090809180:2026-08-01T22:58:17Z:clawsweeper_auto_repair",
-      "comment_id": "5090809180",
-      "comment_version_key": "5090809180:2026-08-01T22:58:17Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/293#issuecomment-5090809180",
-      "comment_created_at": "2026-07-27T11:37:24Z",
-      "comment_updated_at": "2026-08-01T22:58:17Z",
-      "comment_body_sha256": "f620c320528e4067b5fea6893cf43906641555d57688317618e456632f0e8cca",
-      "repo": "openclaw/peekaboo",
-      "issue_number": 293,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=99254685f7d9b765bb1beca4be5b181f3b62d425)",
-      "expected_head_sha": "99254685f7d9b765bb1beca4be5b181f3b62d425",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:01:06.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-oauth-vision",
-        "head_sha": "99254685f7d9b765bb1beca4be5b181f3b62d425",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:299:5121085054:2026-08-01T22:57:31Z:clawsweeper_needs_human",
       "comment_id": "5121085054",
@@ -32345,6 +32312,53 @@
       "status": "skipped",
       "processed_at": "2026-08-02T02:29:42.603Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crawlkit:71:5154683232:2026-08-02T02:29:26Z:re_review",
+      "comment_id": "5154683232",
+      "comment_version_key": "5154683232:2026-08-02T02:29:26Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/71#issuecomment-5154683232",
+      "comment_created_at": "2026-08-02T02:29:26Z",
+      "comment_updated_at": "2026-08-02T02:29:26Z",
+      "comment_body_sha256": "e595cc1310de8e242866e968adac46b897fccfc2b95383f3e35148a3595128db",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 71,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T02:30:13.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
+        "head_sha": "8f8517e0103e4ec69fe8710011f45e49fa5cacae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
