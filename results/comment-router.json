@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:07:18.422Z",
+  "updated_at": "2026-08-02T08:07:24.284Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:134:5135271633:2026-08-02T04:02:52Z:clawsweeper_needs_human",
-      "comment_id": "5135271633",
-      "comment_version_key": "5135271633:2026-08-02T04:02:52Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/134#issuecomment-5135271633",
-      "comment_created_at": "2026-07-30T19:20:17Z",
-      "comment_updated_at": "2026-08-02T04:02:52Z",
-      "comment_body_sha256": "6b7fc8935860d737135b821f3446629490796d932620f43dde5cd8e8f6fee46f",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Validate the write-capable v11 action before enabling it** - The new action version will label and close items under issues: write and pull-requests: write; static checks cannot prove t...; Review finding: [medium] Validate the write-capable v11 action before enabling it — .github/workflows/stale.yml:18 (sha=750865122356586ac616bc162b0c2fbb449842a4)",
-      "expected_head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:05:46.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions/stale-11",
-        "head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117789:5155169163:2026-08-02T04:05:11Z:clawsweeper_auto_repair",
       "comment_id": "5155169163",
@@ -32207,6 +32174,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1069:5128622930:2026-08-02T08:06:35Z:clawsweeper_needs_human",
+      "comment_id": "5128622930",
+      "comment_version_key": "5128622930:2026-08-02T08:06:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1069#issuecomment-5128622930",
+      "comment_created_at": "2026-07-30T08:48:33Z",
+      "comment_updated_at": "2026-08-02T08:06:35Z",
+      "comment_body_sha256": "a02ebff7d5dc867a9386f312b9a06f8434ff689fa6ee1eb595d966f1b1c7b6ef",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1069,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain the nested presentation fallback (P1)** - Current main still accepts nested-only presentation rows, but this branch now checks only row-level isMain and flattened fields. When an older Gateway sends the r...; Review finding: [P1] Retain the nested presentation fallback — src/OpenClaw.Shared/OpenClawGatewayClient.cs:3795-3797 - [medium] Older direct sessions can lose privacy classificat... (sha=9e2b337f4ce75a13164aca66cedad8333d6d5cd3)",
+      "expected_head_sha": "9e2b337f4ce75a13164aca66cedad8333d6d5cd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:07:24.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/flatten-session-classification",
+        "head_sha": "9e2b337f4ce75a13164aca66cedad8333d6d5cd3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
