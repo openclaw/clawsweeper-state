@@ -67,25 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing LINE location validity defect in https://github.com/openclaw/openclaw/issues/118029. Trace `parseLineDirectives`, `createLocationMessage`, direct outbound delivery, quick-reply batching, and reply-token delivery. Establish one canonical policy so blank required location title/address values cannot reach a LINE request, while surrounding assistant text still has a visible delivery path. Follow the established invalid-template precedent where appropriate; do not add configuration, retries, fallback stacks, unrelated action/carousel changes, or `CHANGELOG.md` edits. Add focused regressions for blank location fields through the directive path and every changed shared sender-construction path. Assess programmatic `channelData.line.location` too, so the repaired owner does not leave a second invalid-payload route. Stop and escalate if a safe repair would require a public API or product-policy decision.
+Repair the LINE blank-location-field message-loss bug. Ensure `[[location: title |  | latitude | longitude]]` never submits a LINE location message that has an empty required title or address, and that surrounding assistant text still delivers. Trace both directive parsing and direct `channelData.line.location` inputs through ordinary outbound and auto-reply delivery; establish one canonical validation boundary so a parser-only fix cannot leave programmatic invalid locations reachable. Do not add config, invent a placeholder address, or change valid location behavior. Add focused regression coverage for blank address/title cases and text preservation; stop and escalate if a safe direct-channel-data guard requires a public API or product-policy change. Do not edit `CHANGELOG.md`.
 
 Likely files:
 
 - extensions/line/src/reply-payload-transform.ts
-- extensions/line/src/reply-payload-transform.test.ts
 - extensions/line/src/send.ts
-- extensions/line/src/send.test.ts
 - extensions/line/src/outbound.ts
 - extensions/line/src/auto-reply-delivery.ts
+- extensions/line/src/reply-payload-transform.test.ts
 - extensions/line/src/channel.sendPayload.test.ts
-- extensions/line/src/auto-reply-delivery.test.ts
+- extensions/line/src/auto-reply-delivery-recovery.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/line/src/reply-payload-transform.test.ts
-- node scripts/run-vitest.mjs extensions/line/src/send.test.ts
-- node scripts/run-vitest.mjs extensions/line/src/channel.sendPayload.test.ts
-- node scripts/run-vitest.mjs extensions/line/src/auto-reply-delivery.test.ts
+- node scripts/run-vitest.mjs extensions/line/src/reply-payload-transform.test.ts extensions/line/src/channel.sendPayload.test.ts extensions/line/src/auto-reply-delivery-recovery.test.ts
+- git diff --check
+- pnpm format extensions/line/src/reply-payload-transform.ts extensions/line/src/send.ts extensions/line/src/reply-payload-transform.test.ts
 
 ## Operator Prompt
 
