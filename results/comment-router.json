@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:46:27.273Z",
+  "updated_at": "2026-08-02T05:46:34.416Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4640901767:2026-06-07T00:29:38Z:re_review",
-      "comment_id": "4640901767",
-      "comment_version_key": "4640901767:2026-06-07T00:29:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4640901767",
-      "comment_created_at": "2026-06-07T00:29:38Z",
-      "comment_updated_at": "2026-06-07T00:29:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:29:37.230Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-02T01:29:23Z:clawsweeper_auto_repair",
       "comment_id": "5154193917",
@@ -32651,6 +32624,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:199:5100814583:2026-08-02T05:45:54Z:clawsweeper_needs_human",
+      "comment_id": "5100814583",
+      "comment_version_key": "5100814583:2026-08-02T05:45:54Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/199#issuecomment-5100814583",
+      "comment_created_at": "2026-07-28T06:38:26Z",
+      "comment_updated_at": "2026-08-02T05:45:54Z",
+      "comment_body_sha256": "204eda0f49acdb740bdfdc40b750a4eaac1933a808e32d2324e74b85cdb43a41",
+      "repo": "openclaw/imsg",
+      "issue_number": 199,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The timeout error can now be returned after one polling interval rather than after the configured full timeout when a request vanishes; this preserves its delivery-unknown meaning but... (sha=5c63215b1d5f3dcc920a160ef8ea568995e61910)",
+      "expected_head_sha": "5c63215b1d5f3dcc920a160ef8ea568995e61910",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:46:34.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/bridge-fail-fast",
+        "head_sha": "5c63215b1d5f3dcc920a160ef8ea568995e61910",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
