@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T23:03:46.501Z",
+  "updated_at": "2026-08-02T23:03:50.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118103:5160188629:2026-08-02T20:25:57Z:re_review",
-      "comment_id": "5160188629",
-      "comment_version_key": "5160188629:2026-08-02T20:25:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118103#issuecomment-5160188629",
-      "comment_created_at": "2026-08-02T20:25:57Z",
-      "comment_updated_at": "2026-08-02T20:25:57Z",
-      "comment_body_sha256": "8da3aa90b9d96522c039228a62ab83a7daed325b45d0c0878c5b1ab0b475e897",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118103,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T20:28:05.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta8-plugin-prerelease-20260802",
-        "head_sha": "9c6ec8bc1a0db14bec24281b5e1c84ea6d7829f0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110719:5013767288:2026-07-19T02:05:21Z:re_review",
       "comment_id": "5013767288",
@@ -32165,6 +32118,39 @@
         "kind": "pull_request",
         "branch": "cleanup/cache-mechanics-adoption",
         "head_sha": "d8a70b1cfa5607a385869ef9ed38a066012d2fa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118271:5160714488:2026-08-02T23:03:03Z:clawsweeper_needs_human",
+      "comment_id": "5160714488",
+      "comment_version_key": "5160714488:2026-08-02T23:03:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118271#issuecomment-5160714488",
+      "comment_created_at": "2026-08-02T22:47:48Z",
+      "comment_updated_at": "2026-08-02T23:03:03Z",
+      "comment_body_sha256": "3c16eb17c3d9d7343813e6236c1246fae2c4b46b9fb57e576df8b09010b51018",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and checks, but it does not include inspectable redacted after-fix gateway close or SIGUSR1 restart output showing th... (sha=564ddae691192b596439d6a5b0b18540f37985c2)",
+      "expected_head_sha": "564ddae691192b596439d6a5b0b18540f37985c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T23:03:50.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/ambient-state-lifecycle-owners",
+        "head_sha": "564ddae691192b596439d6a5b0b18540f37985c2",
         "cluster_id": null,
         "job_path": null
       }
