@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T10:09:51.046Z",
+  "updated_at": "2026-08-02T10:10:11.846Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114983:5100804526:2026-08-02T06:54:06Z:clawsweeper_needs_human",
-      "comment_id": "5100804526",
-      "comment_version_key": "5100804526:2026-08-02T06:54:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5100804526",
-      "comment_created_at": "2026-07-28T06:37:16Z",
-      "comment_updated_at": "2026-08-02T06:54:06Z",
-      "comment_body_sha256": "15c08149ae262323c9787bd79b1811df7a5590723c4ee55cd79cf0910bff6893",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114983,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The latest all-bare evidence is focused test output and helper assertions; the supplied terminal proof is a mixed-key run on an older head, not...; Review finding: [P1] Preserve all-bare legacy restrictions at runtime — src/config/model-policy-allowlist-migration.ts:90-94 - [high] All-bare legacy maps become unrestricted at r... (sha=07997e11cec13dbd64ab9b08db16403c48cf230a)",
-      "expected_head_sha": "07997e11cec13dbd64ab9b08db16403c48cf230a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:54:50.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114964",
-        "head_sha": "07997e11cec13dbd64ab9b08db16403c48cf230a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114983:5150601402:2026-08-01T08:22:38Z:re_review",
       "comment_id": "5150601402",
@@ -32328,6 +32295,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117473:5157077249:2026-08-02T10:09:39Z:re_review",
+      "comment_id": "5157077249",
+      "comment_version_key": "5157077249:2026-08-02T10:09:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117473#issuecomment-5157077249",
+      "comment_created_at": "2026-08-02T10:09:39Z",
+      "comment_updated_at": "2026-08-02T10:09:39Z",
+      "comment_body_sha256": "588a7df51036837c23cb168d048f68d4372c4af054580693f0cf6652f1f334b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117473,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T10:10:10.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-web-search-401-release",
+        "head_sha": "5d1554c6074ca91c88d4d38e1d3d0330444ae1cd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
