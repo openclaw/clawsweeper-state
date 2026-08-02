@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:52:40.858Z",
+  "updated_at": "2026-08-02T02:52:46.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117649:5153952502:2026-08-01T23:19:15Z:re_review",
-      "comment_id": "5153952502",
-      "comment_version_key": "5153952502:2026-08-01T23:19:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117649#issuecomment-5153952502",
-      "comment_created_at": "2026-08-01T23:19:15Z",
-      "comment_updated_at": "2026-08-01T23:19:15Z",
-      "comment_body_sha256": "0c387bef6183bbb9218685a2d973cf756c4d488057bb76206e173de66eaab82e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117649,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T23:19:54.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/gateway-health-connection-trace",
-        "head_sha": "bb36df0ab806b56264ab3020ab8757a0d85da235",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103113:4930384453:2026-08-01T23:14:05Z:clawsweeper_needs_human",
       "comment_id": "4930384453",
@@ -32551,6 +32504,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T02:52:40.858Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114617:5093145444:2026-08-02T02:51:12Z:clawsweeper_needs_human",
+      "comment_id": "5093145444",
+      "comment_version_key": "5093145444:2026-08-02T02:51:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114617#issuecomment-5093145444",
+      "comment_created_at": "2026-07-27T15:15:50Z",
+      "comment_updated_at": "2026-08-02T02:51:12Z",
+      "comment_body_sha256": "21b584f1a3482ca8976bff6cd93fb8e64fd44d3d7c5ca918af0e812ffe1882c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114617,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally denies hosted channel setup to callers that currently have only connection-scoped identity; without a documented supported identity path, an existing CLI, TUI, o... (sha=9dbfa8ed94674e9b4a613cab1983fcf3c1a5cd10)",
+      "expected_head_sha": "9dbfa8ed94674e9b4a613cab1983fcf3c1a5cd10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T02:52:46.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/hosted-wizard-lifecycle",
+        "head_sha": "9dbfa8ed94674e9b4a613cab1983fcf3c1a5cd10",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
