@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T16:22:03.695Z",
+  "generated_at": "2026-08-02T16:30:29.041Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30755873830.json",
+  "run_record": "results/runs/30755743580.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30755873830",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30755743580",
+  "considered": 2,
+  "pending": 1,
+  "sent": 1,
   "failed": 0,
-  "skipped": 0,
-  "actions": []
+  "skipped": 1,
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#117951:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#117951",
+      "title": "fix(gateway): preserve assistant media in live chat events",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "skipped",
+      "reason": "notification already sent",
+      "run_id": "30755743580",
+      "cluster_id": "automerge-openclaw-openclaw-117951",
+      "hook_run_id": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117951"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#117951:repair_contributor_branch:pushed:f6c642876e300b2449f70c04fa56d8f0a0913fbb",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#117951",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30755743580",
+      "cluster_id": "automerge-openclaw-openclaw-117951",
+      "hook_run_id": "776b1003-b176-4843-b233-7fac5893d6f1",
+      "url": "https://github.com/openclaw/openclaw/pull/117951"
+    }
+  ]
 }
