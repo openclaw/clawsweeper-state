@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-117952"
 mode: "autonomous"
-run_id: "30751961574"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30751961574"
-head_sha: "8cdf2a157a0450c40b6a1e9d4474213cc901936d"
-workflow_conclusion: "success"
+run_id: "30765891132"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30765891132"
+head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-02T15:40:50.552Z"
+published_at: "2026-08-02T21:47:12.498Z"
 canonical: "#117952"
 canonical_issue: null
 canonical_pr: "#117952"
 actions_total: 1
 fix_executed: 0
-fix_failed: 1
-fix_blocked: 1
+fix_failed: 0
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30751961574](https://github.com/openclaw/clawsweeper/actions/runs/30751961574)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30765891132](https://github.com/openclaw/clawsweeper/actions/runs/30765891132)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -43,8 +43,8 @@ Make PR #117952 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 | --- | ---: |
 | Worker actions | 1 |
 | Fix executed | 0 |
-| Fix failed | 1 |
-| Fix blocked | 1 |
+| Fix failed | 0 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,9 +54,7 @@ Make PR #117952 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | failed |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
-| automerge_repair_outcome_comment | updated | #117952 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
