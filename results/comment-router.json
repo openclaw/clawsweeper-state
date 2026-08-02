@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:50:35.561Z",
+  "updated_at": "2026-08-02T18:50:46.819Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-02T16:16:05Z:clawsweeper_auto_merge",
-      "comment_id": "4971448190",
-      "comment_version_key": "4971448190:2026-08-02T16:16:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107479#issuecomment-4971448190",
-      "comment_created_at": "2026-07-14T16:18:40Z",
-      "comment_updated_at": "2026-08-02T16:16:05Z",
-      "comment_body_sha256": "6c64f07929c251de81c22e8f6aea2bade5453f9d6df71813fcb4c9c771e617a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107479,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=8bd61193380a26aa560f081626effcd8dcf3da6d); PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "8bd61193380a26aa560f081626effcd8dcf3da6d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T16:17:13.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
-        "head_sha": "8bd61193380a26aa560f081626effcd8dcf3da6d",
-        "cluster_id": "automerge-openclaw-openclaw-107479",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116000:5120772953:2026-08-02T16:16:47Z:clawsweeper_needs_human",
       "comment_id": "5120772953",
@@ -31415,6 +31362,39 @@
         "kind": "pull_request",
         "branch": "codex/release-0.13.5",
         "head_sha": "dc9bda9eeb3a1ecf3862412f507d662ab4367aed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-02T18:49:46Z:clawsweeper_needs_human",
+      "comment_id": "5121262567",
+      "comment_version_key": "5121262567:2026-08-02T18:49:46Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
+      "comment_created_at": "2026-07-29T17:24:33Z",
+      "comment_updated_at": "2026-08-02T18:49:46Z",
+      "comment_body_sha256": "e2d3a9331aa3a7b9f176f624e6871cd3a1f71c51949ae2b1071ddfd4ceca40c0",
+      "repo": "openclaw/libterminal",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upstream runtime change in a workflow with permission to label and close issues and pull requests; green repository checks do not demonstrate that the exi... (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
+      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:50:46.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
         "cluster_id": null,
         "job_path": null
       }
