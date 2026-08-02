@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:48:26.625Z",
+  "updated_at": "2026-08-02T13:49:36.252Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4657182969:2026-06-09T07:16:02Z:re_review",
-      "comment_id": "4657182969",
-      "comment_version_key": "4657182969:2026-06-09T07:16:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4657182969",
-      "comment_created_at": "2026-06-09T07:16:02Z",
-      "comment_updated_at": "2026-06-09T07:16:02Z",
-      "comment_body_sha256": "65a024c8606f6d29651d66bb6555dddb029d88fafdc7deb35cb4652f2ca97b02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:22:32.593Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4660080893:2026-06-09T13:13:43Z:re_review",
       "comment_id": "4660080893",
@@ -30912,6 +30885,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117443:5151834090:2026-08-02T13:48:54Z:clawsweeper_needs_human",
+      "comment_id": "5151834090",
+      "comment_version_key": "5151834090:2026-08-02T13:48:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117443#issuecomment-5151834090",
+      "comment_created_at": "2026-08-01T14:23:43Z",
+      "comment_updated_at": "2026-08-02T13:48:54Z",
+      "comment_body_sha256": "be17244be2c9a449c8a2bed27caeb1198e2bddc75189011c738ac7669c2abf58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes the existing /status precedence for displayed model, runtime, auth, and context-window facts in channel-routed sessions; explicit session, heartbeat, and fallback beha... (sha=59382f10545ffc2955fc88e828be1c649d33f581)",
+      "expected_head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T13:49:36.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89532",
+        "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
+        "cluster_id": "automerge-openclaw-openclaw-117443",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117443.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
