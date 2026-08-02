@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:26:53.445Z",
+  "updated_at": "2026-08-02T16:27:18.530Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4756408688:2026-06-20T04:15:58Z:re_review",
-      "comment_id": "4756408688",
-      "comment_version_key": "4756408688:2026-06-20T04:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4756408688",
-      "comment_created_at": "2026-06-20T04:15:58Z",
-      "comment_updated_at": "2026-06-20T04:15:58Z",
-      "comment_body_sha256": "fc1deacfa8c608861dd717b77e0f1f09afdb8a53cdbb7d906dc4f5a8eea5c124",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T13:22:44.715Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4757307389:2026-06-20T10:15:43Z:re_review",
       "comment_id": "4757307389",
@@ -31140,6 +31113,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117911:5156550726:2026-08-02T16:26:33Z:clawsweeper_needs_human",
+      "comment_id": "5156550726",
+      "comment_version_key": "5156550726:2026-08-02T16:26:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5156550726",
+      "comment_created_at": "2026-08-02T08:30:18Z",
+      "comment_updated_at": "2026-08-02T16:26:33Z",
+      "comment_body_sha256": "690867af4566ed84ae3864f3ebf3095108460f6976b1a6c8b652c881b0872794",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Visible evidence is mock-based regression coverage; before merge, reviewers still need a redacted Linux runtime result showing that a wrapped foreground child reaches the intended qua... (sha=80b9c43e44192a723d9933e0b00bad3da01620e1)",
+      "expected_head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T16:27:18.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-69242",
+        "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+        "cluster_id": "automerge-openclaw-openclaw-117911",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117911.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
