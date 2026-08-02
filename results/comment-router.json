@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:33:01.664Z",
+  "updated_at": "2026-08-02T05:33:36.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5029049553:2026-07-21T01:09:08Z:re_review",
-      "comment_id": "5029049553",
-      "comment_version_key": "5029049553:2026-07-21T01:09:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5029049553",
-      "comment_created_at": "2026-07-21T01:09:08Z",
-      "comment_updated_at": "2026-07-21T01:09:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:29:37.229Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5031148091:2026-07-21T07:11:30Z:re_review",
       "comment_id": "5031148091",
@@ -32421,6 +32394,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:944:5118719368:2026-08-02T05:32:53Z:clawsweeper_needs_human",
+      "comment_id": "5118719368",
+      "comment_version_key": "5118719368:2026-08-02T05:32:53Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/944#issuecomment-5118719368",
+      "comment_created_at": "2026-07-29T13:55:52Z",
+      "comment_updated_at": "2026-08-02T05:32:53Z",
+      "comment_body_sha256": "b4af90cf119c7ecb548eee78abd9216909ed52f7cfe34603bde5c262af67daa7",
+      "repo": "openclaw/gogcli",
+      "issue_number": 944,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing drafts that already contain invalid reply headers are intentionally preserved unless the caller opts into --clear-reply-context; this branch prevents new self-references and... (sha=48cb088b6e3c64d50d68ae2272ce762a66240cee)",
+      "expected_head_sha": "48cb088b6e3c64d50d68ae2272ce762a66240cee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:33:36.297Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/draft-update-self-reference",
+        "head_sha": "48cb088b6e3c64d50d68ae2272ce762a66240cee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
