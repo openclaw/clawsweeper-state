@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-02T11:55:40.038Z",
+  "updated_at": "2026-08-02T11:55:17.288Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117683:5156636142:2026-08-02T08:46:49Z:re_review",
+      "comment_id": "5156636142",
+      "comment_version_key": "5156636142:2026-08-02T08:46:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117683#issuecomment-5156636142",
+      "comment_created_at": "2026-08-02T08:46:49Z",
+      "comment_updated_at": "2026-08-02T08:46:49Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117683,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:47:23.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/117644-windows-unix-commands",
+        "head_sha": "1837d64992e8efde1b231c2aa80a8a109b993d2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114661:5156636218:2026-08-02T08:46:50Z:re_review",
       "comment_id": "5156636218",
@@ -31447,39 +31494,6 @@
         "kind": "pull_request",
         "branch": "codex/release-v0410",
         "head_sha": "132b02ee27db382bd3d08c2489191dbbb6b72b86",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:309:4949888150:2026-08-02T11:54:57Z:clawsweeper_auto_repair",
-      "comment_id": "4949888150",
-      "comment_version_key": "4949888150:2026-08-02T11:54:57Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/309#issuecomment-4949888150",
-      "comment_created_at": "2026-07-12T04:09:16Z",
-      "comment_updated_at": "2026-08-02T11:54:57Z",
-      "comment_body_sha256": "4c9c9524c0a43a4732dc5b4e487ec97d31b7b86871e20788058c358cf8238561",
-      "repo": "openclaw/clownfish",
-      "issue_number": 309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=62039ae65b18eeff123b6781792d0745d11a47a9)",
-      "expected_head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T11:55:40.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-only-dedupe-close",
-        "head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
         "cluster_id": null,
         "job_path": null
       }
