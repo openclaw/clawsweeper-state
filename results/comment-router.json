@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:51:58.544Z",
+  "updated_at": "2026-08-02T12:52:12.125Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107375:5156904004:2026-08-02T09:37:50Z:re_review",
-      "comment_id": "5156904004",
-      "comment_version_key": "5156904004:2026-08-02T09:37:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107375#issuecomment-5156904004",
-      "comment_created_at": "2026-08-02T09:37:50Z",
-      "comment_updated_at": "2026-08-02T09:37:50Z",
-      "comment_body_sha256": "edbc95a4365f30d72e259f65150dd7c941d33747a06b2a045b54f724e2fde944",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107375,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T09:38:26.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openclaw-durable-release-head-pr1-rfc-20260714",
-        "head_sha": "5b8dfa9aadea357b96627ea119633f94ad75cbb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111121:5156904298:2026-08-02T09:37:54Z:re_review",
       "comment_id": "5156904298",
@@ -31188,6 +31141,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T12:51:58.544Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:64:5146456080:2026-08-02T12:47:36Z:clawsweeper_needs_human",
+      "comment_id": "5146456080",
+      "comment_version_key": "5146456080:2026-08-02T12:47:36Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/64#issuecomment-5146456080",
+      "comment_created_at": "2026-07-31T18:57:55Z",
+      "comment_updated_at": "2026-08-02T12:47:36Z",
+      "comment_body_sha256": "7e51ec5ebf02e28f92102279521642d400056d62f9362a6b53854e83a09faf2d",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 64,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading Wrangler, Worker types, and the Worker Vitest pool together can change local D1 setup, generated Worker bindings, test-runtime behavior, or deployment commands even though a... (sha=1b6421637ed57c64dff4acd678ff1da222afd026)",
+      "expected_head_sha": "1b6421637ed57c64dff4acd678ff1da222afd026",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:52:12.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-9a888524a6",
+        "head_sha": "1b6421637ed57c64dff4acd678ff1da222afd026",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
