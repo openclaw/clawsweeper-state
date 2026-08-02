@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:06:01.933Z",
+  "updated_at": "2026-08-02T09:06:09.797Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116543:5155531180:2026-08-02T05:06:13Z:re_review",
-      "comment_id": "5155531180",
-      "comment_version_key": "5155531180:2026-08-02T05:06:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116543#issuecomment-5155531180",
-      "comment_created_at": "2026-08-02T05:05:33Z",
-      "comment_updated_at": "2026-08-02T05:06:13Z",
-      "comment_body_sha256": "9591c74e6537a0645fe8c2a3957db2a2081cd5d7e17ba6e0eec89e00738f73bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116543,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T05:06:50.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-thread-replies-pagination-98870",
-        "head_sha": "8b226062e6e03a3dc133aea66facecb8c8326389",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117810:5155535435:2026-08-02T05:06:17Z:re_review",
       "comment_id": "5155535435",
@@ -32849,6 +32802,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117815:5155361174:2026-08-02T09:05:38Z:clawsweeper_auto_repair",
+      "comment_id": "5155361174",
+      "comment_version_key": "5155361174:2026-08-02T09:05:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117815#issuecomment-5155361174",
+      "comment_created_at": "2026-08-02T04:38:28Z",
+      "comment_updated_at": "2026-08-02T09:05:38Z",
+      "comment_body_sha256": "5835fd18ff8d3cff5feaea1911ae65e2e6898ac0af14b528a2ef8c242f560da0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=05675b700f324b5083c08b1837b133cf6b8434fb)",
+      "expected_head_sha": "05675b700f324b5083c08b1837b133cf6b8434fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:06:09.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-memory-fallback-semantics",
+        "head_sha": "05675b700f324b5083c08b1837b133cf6b8434fb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
