@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:02:39.765Z",
+  "updated_at": "2026-08-02T08:02:41.743Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:158:5155044205:2026-08-02T04:00:55Z:clawsweeper_needs_human",
-      "comment_id": "5155044205",
-      "comment_version_key": "5155044205:2026-08-02T04:00:55Z",
-      "comment_url": "https://github.com/openclaw/discrawl/pull/158#issuecomment-5155044205",
-      "comment_created_at": "2026-08-02T03:43:01Z",
-      "comment_updated_at": "2026-08-02T04:00:55Z",
-      "comment_body_sha256": "4f3fbb6ddf590a9c3b9c81c5011b2c5530ab98c7428fda0a1c8ed39c30d71b38",
-      "repo": "openclaw/discrawl",
-      "issue_number": 158,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Assess the flagged modernc runtime before merge** - Socket reports a high-severity likely-obfuscated-code warning for the newly resolved modernc.org/libc v1.74.4 dependency. The report...; Review finding: [high] Assess the flagged modernc runtime before merge — go.mod:55 (sha=1a1dcd5eb3d8f833f2a214bd5258894c8d9cc0bd)",
-      "expected_head_sha": "1a1dcd5eb3d8f833f2a214bd5258894c8d9cc0bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:01:24.340Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dependency-refresh-20260801",
-        "head_sha": "1a1dcd5eb3d8f833f2a214bd5258894c8d9cc0bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2526:5139629881:2026-08-02T04:00:57Z:clawsweeper_needs_human",
       "comment_id": "5139629881",
@@ -32191,6 +32158,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156399698:2026-08-02T08:02:09Z:re_review",
+      "comment_id": "5156399698",
+      "comment_version_key": "5156399698:2026-08-02T08:02:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156399698",
+      "comment_created_at": "2026-08-02T08:02:09Z",
+      "comment_updated_at": "2026-08-02T08:02:09Z",
+      "comment_body_sha256": "441c15e7149ca2c705012cbd5047acfeee694358a0850c856d6bfb143aa71d3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117727,
+      "author": "Takhoffman",
+      "author_id": 781889,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:02:40.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-fractional-chunk-limits",
+        "head_sha": "1c027bb03bd1f7f112acb61736d0046afe53dbf9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
