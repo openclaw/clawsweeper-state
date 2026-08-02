@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:22:20.277Z",
+  "updated_at": "2026-08-02T19:22:23.655Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:107479",
-      "comment_id": "repair-loop-label-sweep:automerge:107479",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107479",
-      "comment_created_at": "2026-08-02T16:39:15.171Z",
-      "comment_updated_at": "2026-08-02T16:39:15.171Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107479,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T16:41:02.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
-        "head_sha": "757059e6fa9bfbea4d1af8ce78bc13433959f1fd",
-        "cluster_id": "automerge-openclaw-openclaw-107479",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:44:5134062408:2026-08-02T16:41:21Z:clawsweeper_needs_human",
       "comment_id": "5134062408",
@@ -31764,6 +31712,39 @@
         "kind": "pull_request",
         "branch": "fix/build-bound-ui-i18n-taskkill",
         "head_sha": "328e442c899cd423e62ed4fd323135acabd29865",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108006:4988888622:2026-08-02T19:16:30Z:clawsweeper_needs_human",
+      "comment_id": "4988888622",
+      "comment_version_key": "4988888622:2026-08-02T19:16:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108006#issuecomment-4988888622",
+      "comment_created_at": "2026-07-16T06:29:49Z",
+      "comment_updated_at": "2026-08-02T19:16:30Z",
+      "comment_body_sha256": "cceafe04ed64058da1f2863d1a911248d52f597721ca10208fa1b9bc2a3a99ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108006,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although GitHub reported it cleanly mergeable in the supplied state, maintainers should refresh the merge result and rerun the cancelled lint gate o... (sha=c5afde5ed7ec47e6d50c52203dc8cb16a06675cf)",
+      "expected_head_sha": "c5afde5ed7ec47e6d50c52203dc8cb16a06675cf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:22:23.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/task-cancel-id-taskid-key",
+        "head_sha": "c5afde5ed7ec47e6d50c52203dc8cb16a06675cf",
         "cluster_id": null,
         "job_path": null
       }
