@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:03:26.463Z",
+  "updated_at": "2026-08-02T01:03:27.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:5153664115:2026-08-01T22:06:20Z:re_review",
-      "comment_id": "5153664115",
-      "comment_version_key": "5153664115:2026-08-01T22:06:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-5153664115",
-      "comment_created_at": "2026-08-01T22:06:20Z",
-      "comment_updated_at": "2026-08-01T22:06:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:07:01.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-takeover-silent-message-loss-87180",
-        "head_sha": "06c4f60e60f0cec1836bba067d142b41a995eaf3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112669:5153666155:2026-08-01T22:06:51Z:re_review",
       "comment_id": "5153666155",
@@ -32351,6 +32304,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/github.com/modelcontextprotocol/go-sdk-1.7.0",
         "head_sha": "cb6efdc93282ce6c56e077831d99652fa32fdb35",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:373:5153037214:2026-08-02T01:02:45Z:clawsweeper_auto_repair",
+      "comment_id": "5153037214",
+      "comment_version_key": "5153037214:2026-08-02T01:02:45Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/373#issuecomment-5153037214",
+      "comment_created_at": "2026-08-01T19:27:07Z",
+      "comment_updated_at": "2026-08-02T01:02:45Z",
+      "comment_body_sha256": "e81a0508adc09f7689ef813ed3dc302ebe668b91ac2a5235e69f37a6b4345729",
+      "repo": "steipete/summarize",
+      "issue_number": 373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e5e210c4cd288591d66359b26430d3ee10b9e33c)",
+      "expected_head_sha": "e5e210c4cd288591d66359b26430d3ee10b9e33c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:03:27.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/orcarouter-provider",
+        "head_sha": "e5e210c4cd288591d66359b26430d3ee10b9e33c",
         "cluster_id": null,
         "job_path": null
       }
