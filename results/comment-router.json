@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:25:14.529Z",
+  "updated_at": "2026-08-02T07:25:18.196Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116620:5138343402:2026-08-02T03:03:09Z:clawsweeper_needs_human",
-      "comment_id": "5138343402",
-      "comment_version_key": "5138343402:2026-08-02T03:03:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116620#issuecomment-5138343402",
-      "comment_created_at": "2026-07-31T01:56:10Z",
-      "comment_updated_at": "2026-08-02T03:03:09Z",
-      "comment_body_sha256": "1a380655217d67c562316a5528d31b3f9d19ef8a859cb21baf10d9eef5335560",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116620,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the Codex approval contract before merge** - The diff changes the Codex app-server approval bridge, but ../codex is unavailable and network failure prevented the policy-required...; Review finding: [medium] Verify the Codex approval contract before merge — extensions/codex/src/app-server/plugin-approval-roundtrip.ts:1 (sha=1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f)",
-      "expected_head_sha": "1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T03:03:48.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/run-scoped-approval-host",
-        "head_sha": "1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116678:5139680339:2026-08-02T03:03:26Z:clawsweeper_auto_repair",
       "comment_id": "5139680339",
@@ -32121,6 +32088,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114173:5156191799:2026-08-02T07:24:45Z:re_review",
+      "comment_id": "5156191799",
+      "comment_version_key": "5156191799:2026-08-02T07:24:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5156191799",
+      "comment_created_at": "2026-08-02T07:24:45Z",
+      "comment_updated_at": "2026-08-02T07:24:45Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114173,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T07:25:16.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-web",
+        "head_sha": "0504f26ed0f4739ff2fc02a898907cddc3001465",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
