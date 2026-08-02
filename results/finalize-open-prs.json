@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T16:18:13.635Z",
+  "generated_at": "2026-08-02T16:22:03.183Z",
   "count": 11,
   "summary": {
     "open_prs": 11,
@@ -13,7 +13,7 @@
     "needs_checks": 11,
     "needs_review": 0,
     "needs_merge_preflight": 11,
-    "needs_result_backfill": 1
+    "needs_result_backfill": 0
   },
   "dispatch": {
     "enabled": false,
@@ -67,12 +67,18 @@
           }
         ]
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "30755873830",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30755873830",
+        "cluster_id": "automerge-openclaw-openclaw-114609",
+        "published_at": "2026-08-02T16:21:41.536Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
@@ -315,24 +321,63 @@
       "title": "fix(gateway): preserve assistant media in live chat events",
       "url": "https://github.com/openclaw/openclaw/pull/117951",
       "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-      "head_sha": "feb4f6b10608df1ff5649d21a476736dfc96b70f",
+      "head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T16:16:44Z",
+      "updated_at": "2026-08-02T16:20:13Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 118,
         "counts": {
           "CANCELLED": 1,
-          "SUCCESS": 79,
-          "SKIPPED": 39,
+          "SUCCESS": 40,
+          "IN_PROGRESS": 38,
+          "SKIPPED": 38,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -382,7 +427,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CodeQL / Security High (process-exec-boundary):IN_PROGRESS; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -395,7 +440,7 @@
       "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
       "cluster_id": "issue-openclaw-openclaw-69242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
-      "updated_at": "2026-08-02T16:14:22Z",
+      "updated_at": "2026-08-02T16:19:08Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -558,58 +603,30 @@
       "head_sha": "a1525e5a40a63d25ad092d83a6c615a497d069ff",
       "cluster_id": "issue-openclaw-openclaw-61949",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-61949.md",
-      "updated_at": "2026-08-02T16:16:14Z",
+      "updated_at": "2026-08-02T16:19:07Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 117,
+        "total": 118,
         "counts": {
-          "SUCCESS": 41,
-          "IN_PROGRESS": 38,
-          "SKIPPED": 37,
+          "SUCCESS": 69,
+          "SKIPPED": 38,
+          "IN_PROGRESS": 10,
           "NEUTRAL": 1
         },
         "blockers": [
-          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
-          "CI / build-artifacts:IN_PROGRESS",
-          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
           "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
           "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
           "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
           "CI / checks-node-compact-large-1:IN_PROGRESS",
           "CI / checks-node-compact-large-2:IN_PROGRESS",
           "CI / checks-node-compact-large-3:IN_PROGRESS",
-          "CI / checks-node-compact-large-4:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
           "CI / checks-node-compact-large-6:IN_PROGRESS",
           "CI / checks-node-compact-large-7:IN_PROGRESS",
           "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-1:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-12:IN_PROGRESS",
-          "CI / checks-node-compact-small-13:IN_PROGRESS",
-          "CI / checks-node-compact-small-14:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-3:IN_PROGRESS",
-          "CI / checks-node-compact-small-4:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS",
-          "CI / check-npm-lock:IN_PROGRESS",
-          "CI / check-prod-types:IN_PROGRESS",
-          "CI / check-lint:IN_PROGRESS",
-          "CI / check-dependencies:IN_PROGRESS",
-          "CI / check-test-types:IN_PROGRESS",
-          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
-          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
-          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+          "CI / checks-node-compact-small-6:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -653,7 +670,7 @@
       },
       "blockers": [
         "needs_merge_state:BLOCKED",
-        "needs_checks:CodeQL / Security High (process-exec-boundary):IN_PROGRESS; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+        "needs_checks:CI / QA Smoke CI (profile 2/4):IN_PROGRESS; CI / QA Smoke CI (profile 3/4):IN_PROGRESS; CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
