@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:47:17.463Z",
+  "updated_at": "2026-08-02T08:47:25.967Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117816:5155414562:2026-08-02T04:45:54Z:clawsweeper_needs_human",
-      "comment_id": "5155414562",
-      "comment_version_key": "5155414562:2026-08-02T04:45:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117816#issuecomment-5155414562",
-      "comment_created_at": "2026-08-02T04:45:54Z",
-      "comment_updated_at": "2026-08-02T04:45:54Z",
-      "comment_body_sha256": "4c2090790e6865966f79dd7e74422953afecdbddf3d95fda88590ac8bbe4754e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117816,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head release-branch CI still has in-progress lanes in the supplied check rollup, and the protected maintainer label requires explicit release-owner handling before merge. (sha=58a60faf9ee1f0206b270ec5253f066240bb1fc5)",
-      "expected_head_sha": "58a60faf9ee1f0206b270ec5253f066240bb1fc5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:46:33.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-2026-6-34-live-validation-reliability",
-        "head_sha": "58a60faf9ee1f0206b270ec5253f066240bb1fc5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117820:5155418067:2026-08-02T04:46:19Z:clawsweeper_needs_human",
       "comment_id": "5155418067",
@@ -32406,6 +32373,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117683:5156636142:2026-08-02T08:46:49Z:re_review",
+      "comment_id": "5156636142",
+      "comment_version_key": "5156636142:2026-08-02T08:46:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117683#issuecomment-5156636142",
+      "comment_created_at": "2026-08-02T08:46:49Z",
+      "comment_updated_at": "2026-08-02T08:46:49Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117683,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:47:23.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/117644-windows-unix-commands",
+        "head_sha": "1837d64992e8efde1b231c2aa80a8a109b993d2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
