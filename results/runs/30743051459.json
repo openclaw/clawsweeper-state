@@ -1,0 +1,116 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-73478",
+  "mode": "autonomous",
+  "run_id": "30743051459",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30743051459",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
+  "published_at": "2026-08-02T10:35:32.395Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/73478",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/73478",
+  "canonical_pr": null,
+  "summary": "#73478 is a reproducible, non-security Gateway message-loss bug on current main 0bc32f0f5cf5b2202ae0918a26b0a252c1b59495. The narrow new-PR plan is ready, but this worker has a read-only checkout and cannot create the required branch, regression, or validation result.",
+  "actions": [
+    {
+      "target": "#73478",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "The repair is narrowly specified and appropriate for automation, but implementation is blocked only by the read-only target checkout."
+    },
+    {
+      "target": "#81136",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "Already closed context only; no action or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-73478",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "Executor should implement this exact narrow repair on clawsweeper/issue-openclaw-openclaw-73478, run the focused regression and changed gate, then create or update the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117951",
+      "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117951",
+      "commit": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#73478",
+      "pr": "https://github.com/openclaw/openclaw/pull/117951",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117951",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117951",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): preserve assistant media in live chat events",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
