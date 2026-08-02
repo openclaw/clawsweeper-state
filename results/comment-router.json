@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T22:38:49.987Z",
+  "updated_at": "2026-08-02T22:39:04.065Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114095:5083245610:2026-08-02T20:19:24Z:clawsweeper_needs_human",
-      "comment_id": "5083245610",
-      "comment_version_key": "5083245610:2026-08-02T20:19:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114095#issuecomment-5083245610",
-      "comment_created_at": "2026-07-26T11:19:19Z",
-      "comment_updated_at": "2026-08-02T20:19:24Z",
-      "comment_body_sha256": "273974a7e24f9543eca757ebebbae7854966e4758f02f20dbcb2907d13fd7680",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114095,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this as documented would establish a second exact-head readiness decision beside the current scripts/pr artifact and hosted-gate flow; differing evidence coverage or invocatio... (sha=bf73a84dc17b8d76ccf3564259ccf3b41d4176d2)",
-      "expected_head_sha": "bf73a84dc17b8d76ccf3564259ccf3b41d4176d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:21:08.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exact-head-pr-convergence-audit",
-        "head_sha": "bf73a84dc17b8d76ccf3564259ccf3b41d4176d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:123:5160167925:2026-08-02T20:20:27Z:clawsweeper_needs_human",
       "comment_id": "5160167925",
@@ -31507,6 +31474,59 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-02T22:38:15Z:clawsweeper_auto_merge",
+      "comment_id": "5157206715",
+      "comment_version_key": "5157206715:2026-08-02T22:38:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
+      "comment_created_at": "2026-08-02T10:31:46Z",
+      "comment_updated_at": "2026-08-02T22:38:15Z",
+      "comment_body_sha256": "70cf5042c93c6d43a85aa2a96c34321258f46cea5f0684213dc3ac7855f5e100",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=f6c642876e300b2449f70c04fa56d8f0a0913fbb); PR has merge conflicts and needs a cloud rebase repair before automerge",
+      "expected_head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T22:38:49.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+        "head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
         },
         {
           "action": "comment",
