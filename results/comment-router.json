@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:32:41.267Z",
+  "updated_at": "2026-08-02T08:33:38.191Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5155252519:2026-08-02T04:20:35Z:re_review",
-      "comment_id": "5155252519",
-      "comment_version_key": "5155252519:2026-08-02T04:20:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5155252519",
-      "comment_created_at": "2026-08-02T04:20:35Z",
-      "comment_updated_at": "2026-08-02T04:20:35Z",
-      "comment_body_sha256": "444b27dba18d5aefbe0891d7263a587a06c893029338b25a79d330f9431b58ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T04:21:11.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-fallback-recovery-96534",
-        "head_sha": "79373eceec80bfce73b1cbed041a4ebbec70a8cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110855:5012246462:2026-08-02T04:20:42Z:clawsweeper_needs_human",
       "comment_id": "5012246462",
@@ -32391,6 +32344,39 @@
         "kind": "pull_request",
         "branch": "fix/mac-onboarding-remote-gateway-auth-gate",
         "head_sha": "0e86a786c4ae60e019d2cd68302b9e3d6edca33d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117913:5156564275:2026-08-02T08:32:56Z:clawsweeper_needs_human",
+      "comment_id": "5156564275",
+      "comment_version_key": "5156564275:2026-08-02T08:32:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117913#issuecomment-5156564275",
+      "comment_created_at": "2026-08-02T08:32:56Z",
+      "comment_updated_at": "2026-08-02T08:32:56Z",
+      "comment_body_sha256": "b0e258eb5f8d31798bd434167cea3c7c16a233bb8cfdcbdf652a3ab003265272",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check state still has exact-head CI lanes in progress; merge should wait for their normal completion, but this is not a source-level merge-risk finding. (sha=2aba1b20a30828cb7f2dee85f5602ce1985fe8c7)",
+      "expected_head_sha": "2aba1b20a30828cb7f2dee85f5602ce1985fe8c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:33:38.191Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-schema-preflight",
+        "head_sha": "2aba1b20a30828cb7f2dee85f5602ce1985fe8c7",
         "cluster_id": null,
         "job_path": null
       }
