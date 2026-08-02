@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:26:38.505Z",
+  "updated_at": "2026-08-02T16:26:42.293Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4753225456:2026-06-19T16:18:09Z:re_review",
-      "comment_id": "4753225456",
-      "comment_version_key": "4753225456:2026-06-19T16:18:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4753225456",
-      "comment_created_at": "2026-06-19T16:18:09Z",
-      "comment_updated_at": "2026-06-19T16:18:09Z",
-      "comment_body_sha256": "53bdb32cc33ac763964405af5f2a4e81bb2aaf693b5b4fc0729cfbaaf4ea916d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T13:22:44.715Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4755076041:2026-06-19T22:19:00Z:re_review",
       "comment_id": "4755076041",
@@ -31123,6 +31096,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117166:5149221653:2026-08-02T16:25:59Z:clawsweeper_needs_human",
+      "comment_id": "5149221653",
+      "comment_version_key": "5149221653:2026-08-02T16:25:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117166#issuecomment-5149221653",
+      "comment_created_at": "2026-08-01T02:27:32Z",
+      "comment_updated_at": "2026-08-02T16:25:59Z",
+      "comment_body_sha256": "5b85f5e415c1b58d70fee1e55f8f7ad4d6e405c8d6fe81c28dbd6f3c96b3b121",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two open PRs target the same lint-coverage gap; landing both would create duplicate review work and may leave the broader formatter/symlink changes without an independently demonstrat... (sha=435642db00cba152cde31013bd251dcc347ec82f)",
+      "expected_head_sha": "435642db00cba152cde31013bd251dcc347ec82f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:26:42.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/91160-markdown-lint",
+        "head_sha": "435642db00cba152cde31013bd251dcc347ec82f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
