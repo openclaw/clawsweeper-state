@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T17:39:29.647Z",
+  "updated_at": "2026-08-02T17:39:39.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93087:5158763343:2026-08-02T15:09:17Z:re_review",
-      "comment_id": "5158763343",
-      "comment_version_key": "5158763343:2026-08-02T15:09:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93087#issuecomment-5158763343",
-      "comment_created_at": "2026-08-02T15:09:17Z",
-      "comment_updated_at": "2026-08-02T15:09:17Z",
-      "comment_body_sha256": "8b649ae10b53d5214d74bf9682a9ec3503b4573018d94fb16adfbc2e8ca30455",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93087,
-      "author": "kiranmagic7",
-      "author_id": 262980978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T15:09:52.574Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kiran/otel-reject-unsupported-grpc",
-        "head_sha": "f8f71fb9109480c7164b03e37f8b07e4b81f79f2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118020:5158767905:2026-08-02T15:09:59Z:clawsweeper_auto_repair",
       "comment_id": "5158767905",
@@ -31330,6 +31283,39 @@
         "kind": "pull_request",
         "branch": "docs/chrome-extension-disk-budget-10gb",
         "head_sha": "d8da85f3670a1d5c93c6030e204c6494c8c9843e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:589:4988839838:2026-08-02T17:38:28Z:clawsweeper_auto_repair",
+      "comment_id": "4988839838",
+      "comment_version_key": "4988839838:2026-08-02T17:38:28Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/589#issuecomment-4988839838",
+      "comment_created_at": "2026-07-16T06:21:57Z",
+      "comment_updated_at": "2026-08-02T17:38:28Z",
+      "comment_body_sha256": "ebd6f4d2554b50343ad6970ab415c0f79858f21ed9599adc763a515dd223f8e0",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c0785de3001bd32587eb4d518f6fc6da818d9393)",
+      "expected_head_sha": "c0785de3001bd32587eb4d518f6fc6da818d9393",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T17:39:39.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "investigate/rebase-main-review-rule",
+        "head_sha": "c0785de3001bd32587eb4d518f6fc6da818d9393",
         "cluster_id": null,
         "job_path": null
       }
