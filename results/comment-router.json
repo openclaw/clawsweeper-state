@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:23:40.719Z",
+  "updated_at": "2026-08-02T16:23:42.837Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4655071604:2026-06-09T01:16:17Z:re_review",
-      "comment_id": "4655071604",
-      "comment_version_key": "4655071604:2026-06-09T01:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4655071604",
-      "comment_created_at": "2026-06-09T01:16:17Z",
-      "comment_updated_at": "2026-06-09T01:16:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T13:22:44.715Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4657131651:2026-06-09T07:09:04Z:re_review",
       "comment_id": "4657131651",
@@ -30994,6 +30967,39 @@
         "head_sha": "a1525e5a40a63d25ad092d83a6c615a497d069ff",
         "cluster_id": "automerge-openclaw-openclaw-117869",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117869.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117129:5148694149:2026-08-02T16:23:02Z:clawsweeper_needs_human",
+      "comment_id": "5148694149",
+      "comment_version_key": "5148694149:2026-08-02T16:23:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117129#issuecomment-5148694149",
+      "comment_created_at": "2026-08-01T00:51:02Z",
+      "comment_updated_at": "2026-08-02T16:23:02Z",
+      "comment_body_sha256": "05adf804b8a97d98c8c1d9a5f8a8062c16648aa960e1749bfebf0e9f5af5fb78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the release-owned changelog entry (P3)** - CHANGELOG.md is release-owned in this repository, so normal PRs should not add this line. Leave release-note selection to the release workflow and keep this bran...; Review finding: [P3] Remove the release-owned changelog entry — CHANGELOG.md:50 - [medium] Keep the default disclosure issue explicitly unresolved — src/config/cron-webhook-token-... (sha=3534c5aedca47345a051c578fc4e23e193dab11e)",
+      "expected_head_sha": "3534c5aedca47345a051c578fc4e23e193dab11e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:23:42.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-p0-114893-webhook-auth",
+        "head_sha": "3534c5aedca47345a051c578fc4e23e193dab11e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
