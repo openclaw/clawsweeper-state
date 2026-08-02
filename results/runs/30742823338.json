@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117899",
+  "mode": "autonomous",
+  "run_id": "30742823338",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30742823338",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
+  "published_at": "2026-08-02T10:40:02.121Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117899",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117899",
+  "canonical_pr": null,
+  "summary": "#117899 remains a valid, narrow Control UI Talk race on current main 30c87bde99774fdbd0b3b31c1921e3750a1d61e4. The same-run resolver starts a fixed 500 ms no-text fallback after `agent.wait` reports a non-timeout terminal result, while a later text-bearing `chat` final for that run can still arrive. Build one focused PR that aligns the fallback with the authoritative terminal-delivery grace and proves a delayed source reply wins. No GitHub mutation was performed.",
+  "actions": [
+    {
+      "target": "#117899",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117899",
+      "candidate_fix": null,
+      "reason": "This is the sole hydrated cluster item and owns the valid bug report."
+    },
+    {
+      "target": "#117899",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117899",
+      "candidate_fix": null,
+      "reason": "A narrow UI repair can remove the premature 500 ms settlement without changing gateway protocol or configuration."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117899",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117899",
+      "candidate_fix": null,
+      "reason": "Create one new PR from the prescribed branch; no contributor PR exists to repair or credit."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117952",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117899",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117952",
+      "commit": "5783b385aa19906d7e6369d902407e18e73f02f8",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117899",
+      "pr": "https://github.com/openclaw/openclaw/pull/117952",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117952",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117952",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(control-ui): wait for delayed Talk source replies",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
