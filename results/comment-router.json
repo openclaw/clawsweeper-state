@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:09:51.623Z",
+  "updated_at": "2026-08-02T16:09:55.131Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117976",
-      "comment_id": "repair-loop-label-sweep:autofix:117976",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117976",
-      "comment_created_at": "2026-08-02T12:33:06.232Z",
-      "comment_updated_at": "2026-08-02T12:33:06.232Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117976,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T12:34:22.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-90786",
-        "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
-        "cluster_id": "automerge-openclaw-openclaw-117976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:325:4970161958:2026-08-02T12:33:59Z:clawsweeper_auto_repair",
       "comment_id": "4970161958",
@@ -31589,6 +31531,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
         "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:134:5135271633:2026-08-02T16:09:20Z:clawsweeper_needs_human",
+      "comment_id": "5135271633",
+      "comment_version_key": "5135271633:2026-08-02T16:09:20Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/134#issuecomment-5135271633",
+      "comment_created_at": "2026-07-30T19:20:17Z",
+      "comment_updated_at": "2026-08-02T16:09:20Z",
+      "comment_body_sha256": "5aa1d12aeaf46685dbf2627e4edfa14855ed3bafd17d29fb07a7386ce81dbb28",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the write-capable action upgrade** - This changes the external implementation behind three stale and closure policies while retaining write permissions; confirm v11 preserves e...; Review finding: [medium] Validate the write-capable action upgrade — .github/workflows/stale.yml:18 (sha=750865122356586ac616bc162b0c2fbb449842a4)",
+      "expected_head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:09:55.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11",
+        "head_sha": "750865122356586ac616bc162b0c2fbb449842a4",
         "cluster_id": null,
         "job_path": null
       }
