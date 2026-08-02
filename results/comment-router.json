@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:03:30.692Z",
+  "updated_at": "2026-08-02T01:03:34.498Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117213:5153672434:2026-08-01T22:08:43Z:re_review",
-      "comment_id": "5153672434",
-      "comment_version_key": "5153672434:2026-08-01T22:08:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5153672434",
-      "comment_created_at": "2026-08-01T22:08:43Z",
-      "comment_updated_at": "2026-08-01T22:08:43Z",
-      "comment_body_sha256": "be9d4a139af43be0970215bdd3006c03b8aa13f74b4b4229b85bf7c6e08587a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:09:19.590Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "a1586a4f9681191420820e9997ab5de90167be07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117574:5152979563:2026-08-01T22:06:20Z:clawsweeper_needs_human",
       "comment_id": "5152979563",
@@ -32323,6 +32276,39 @@
         "kind": "pull_request",
         "branch": "codex/dependency-refresh-2026-08-01",
         "head_sha": "807fbe2c5ec660158d9f622ed45281a19223bc4d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:484:5131458141:2026-08-02T01:02:59Z:clawsweeper_needs_human",
+      "comment_id": "5131458141",
+      "comment_version_key": "5131458141:2026-08-02T01:02:59Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/484#issuecomment-5131458141",
+      "comment_created_at": "2026-07-30T13:30:13Z",
+      "comment_updated_at": "2026-08-02T01:02:59Z",
+      "comment_body_sha256": "9f7090bb713deed078ca8592c57be427e115047d59479f4a200fe7d2b6452f49",
+      "repo": "openclaw/acpx",
+      "issue_number": 484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging refreshes optional native formatter and linter bindings for macOS and Windows, while the repository CI matrix validates only Ubuntu; a contributor on an untested platform coul... (sha=ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424)",
+      "expected_head_sha": "ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:03:34.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-650d5d9233",
+        "head_sha": "ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424",
         "cluster_id": null,
         "job_path": null
       }
