@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:59:48.039Z",
+  "updated_at": "2026-08-02T19:59:59.474Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114631:5159490015:2026-08-02T17:21:20Z:re_review",
-      "comment_id": "5159490015",
-      "comment_version_key": "5159490015:2026-08-02T17:21:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114631#issuecomment-5159490015",
-      "comment_created_at": "2026-08-02T17:21:20Z",
-      "comment_updated_at": "2026-08-02T17:21:20Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114631,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T17:22:00.529Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/custodian-wizard-step-payload",
-        "head_sha": "f5c7de96258b060ea2fffeb0cf5800a034e351a8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118057:5159491868:2026-08-02T17:21:51Z:clawsweeper_needs_human",
       "comment_id": "5159491868",
@@ -31651,6 +31604,39 @@
         "kind": "pull_request",
         "branch": "agent/clickclack-semantic-mentions",
         "head_sha": "21d18402ace8734a703fd254b28a71311c4f2a97",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-02T19:56:17Z:clawsweeper_needs_human",
+      "comment_id": "5077699954",
+      "comment_version_key": "5077699954:2026-08-02T19:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
+      "comment_created_at": "2026-07-25T08:28:44Z",
+      "comment_updated_at": "2026-08-02T19:56:17Z",
+      "comment_body_sha256": "bee87397715c62d593fdf8ca3349e34aaf98eab8d05731bb9a8eac2ea2ae27a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body only asserts test and review results for an older named head; it provides no inspectable redacted terminal output, runtime logs, re...; Review finding: [P1] Stop treating Gateway’s own session touch as a replacement — src/agents/subagent-spawn-cleanup.ts:48 - [high] Accepted child can lose reserved-spawn quarantin... (sha=717c994cd9acaee9de68edddc4c2210aa0a40749)",
+      "expected_head_sha": "717c994cd9acaee9de68edddc4c2210aa0a40749",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:59:59.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agentic-os-runtime-contract-v1",
+        "head_sha": "717c994cd9acaee9de68edddc4c2210aa0a40749",
         "cluster_id": null,
         "job_path": null
       }
