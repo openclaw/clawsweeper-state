@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-02T20:33:33.093Z",
+  "updated_at": "2026-08-02T20:33:24.206Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:116:5081844962:2026-08-02T18:22:47Z:clawsweeper_needs_human",
+      "comment_id": "5081844962",
+      "comment_version_key": "5081844962:2026-08-02T18:22:47Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/116#issuecomment-5081844962",
+      "comment_created_at": "2026-07-26T03:44:11Z",
+      "comment_updated_at": "2026-08-02T18:22:47Z",
+      "comment_body_sha256": "36b31dd8bf0c95c3bf1e2509f3c0a81f571e4c7fd22ddee21efb75549042661e",
+      "repo": "openclaw/clickclack",
+      "issue_number": 116,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep reply bodies out of durable event payloads (P1)** - thread.reply_created is replayed from the durable event stream, whose documented and tested contract is metadata-only. Storing body here retains and expos...; Review finding: [P1] Keep reply bodies out of durable event payloads — apps/api/internal/store/sqlite/sqlite.go:987-992 - [medium] Replayable events retain reply bodies — apps/api... (sha=4608f047910ba22655a0a4bb926c9abb49875d48)",
+      "expected_head_sha": "4608f047910ba22655a0a4bb926c9abb49875d48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:23:33.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mentions-notifications",
+        "head_sha": "4608f047910ba22655a0a4bb926c9abb49875d48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118104:5159724382:2026-08-02T18:23:00Z:clawsweeper_needs_human",
       "comment_id": "5159724382",
@@ -31028,39 +31061,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113968:5092264837:2026-08-02T20:32:59Z:clawsweeper_auto_repair",
-      "comment_id": "5092264837",
-      "comment_version_key": "5092264837:2026-08-02T20:32:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113968#issuecomment-5092264837",
-      "comment_created_at": "2026-07-27T13:57:44Z",
-      "comment_updated_at": "2026-08-02T20:32:59Z",
-      "comment_body_sha256": "ef9442c106244395ce0ebab0a4545312e75273b3a80ac8021e3f6868fe03f847",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113968,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=518fed3dfa7dae455e073b312dbef9efc5b6fd9c)",
-      "expected_head_sha": "518fed3dfa7dae455e073b312dbef9efc5b6fd9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:33:33.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/live-model-switch-caller-default",
-        "head_sha": "518fed3dfa7dae455e073b312dbef9efc5b6fd9c",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
