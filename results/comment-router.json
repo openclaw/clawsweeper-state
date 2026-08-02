@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T17:05:11.336Z",
+  "updated_at": "2026-08-02T17:06:13.014Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-02T13:49:45Z:clawsweeper_auto_repair",
-      "comment_id": "5157206715",
-      "comment_version_key": "5157206715:2026-08-02T13:49:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
-      "comment_created_at": "2026-08-02T10:31:46Z",
-      "comment_updated_at": "2026-08-02T13:49:45Z",
-      "comment_body_sha256": "1d3b300dc76fadb26386fa0c477404e2de5d40cc929a86fe8f066196cdbafa41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117951,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88)",
-      "expected_head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T13:50:47.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-        "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
-        "cluster_id": "automerge-openclaw-openclaw-117951",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-08-02T13:52:22Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -31588,6 +31541,39 @@
         "kind": "pull_request",
         "branch": "codex/goal100k-provider-stream-fixture-wave14",
         "head_sha": "615f0343735ce1bf5d813ca25c2bbc22330f0f2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:17:5122296130:2026-08-02T17:05:32Z:clawsweeper_needs_human",
+      "comment_id": "5122296130",
+      "comment_version_key": "5122296130:2026-08-02T17:05:32Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/17#issuecomment-5122296130",
+      "comment_created_at": "2026-07-29T19:02:21Z",
+      "comment_updated_at": "2026-08-02T17:05:32Z",
+      "comment_body_sha256": "af1fca638b33560daf98ea5369b0df7fb84795985f7088a50d657cbcbc9b10a8",
+      "repo": "openclaw/uirouter",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the v11 action contract before granting writes** - This major action upgrade will run weekly with permission to modify issue and pull-request state; verify that v11 still accepts...; Review finding: [medium] Verify the v11 action contract before granting writes — .github/workflows/stale.yml:19 (sha=d072b339feb67a48c62da6bbef3105446ab355c9)",
+      "expected_head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T17:06:13.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
         "cluster_id": null,
         "job_path": null
       }
