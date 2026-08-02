@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:18:26.572Z",
+  "updated_at": "2026-08-02T08:20:01.690Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114609:5092701188:2026-08-02T04:12:25Z:clawsweeper_needs_human",
-      "comment_id": "5092701188",
-      "comment_version_key": "5092701188:2026-08-02T04:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114609#issuecomment-5092701188",
-      "comment_created_at": "2026-07-27T14:37:04Z",
-      "comment_updated_at": "2026-08-02T04:12:25Z",
-      "comment_body_sha256": "47b2bd4c65f2a401fc995d28222694dea9e66d262184d4ec7894c01bcfe67d13",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The existing clawsweeper:human-review label is an explicit human gate; it must be cleared or retained by a maintainer before the separate automerge label can take effect. (sha=396446afe4a311c58a9bba06487ad95b0a8ae855)",
-      "expected_head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T04:13:11.112Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/fix-slash-commands-login",
-        "head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117755:5154760692:2026-08-02T04:13:01Z:clawsweeper_needs_human",
       "comment_id": "5154760692",
@@ -32248,6 +32201,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:130:5156492398:2026-08-02T08:19:23Z:re_review",
+      "comment_id": "5156492398",
+      "comment_version_key": "5156492398:2026-08-02T08:19:23Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/130#issuecomment-5156492398",
+      "comment_created_at": "2026-08-02T08:19:23Z",
+      "comment_updated_at": "2026-08-02T08:19:23Z",
+      "comment_body_sha256": "6fbca820b0ac484fc1f05706019f9539e195460255bf7f5a7eacbaadd7d48d7e",
+      "repo": "openclaw/lobster",
+      "issue_number": 130,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:19:57.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-cache-key-sampling-params",
+        "head_sha": "1760cb386c712be8b4b72a21326adba7b6e914c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
