@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:33:41.185Z",
+  "updated_at": "2026-08-02T09:34:22.877Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-02T05:44:37Z:clawsweeper_auto_repair",
-      "comment_id": "5149865878",
-      "comment_version_key": "5149865878:2026-08-02T05:44:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
-      "comment_created_at": "2026-08-01T04:50:44Z",
-      "comment_updated_at": "2026-08-02T05:44:37Z",
-      "comment_body_sha256": "ff1918ab15c15daee95c97a100495f3929155a0bff5a575aea20a290965d7fca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dc739ba61541d54a627a6f0eaae3a8ebecb6d454)",
-      "expected_head_sha": "dc739ba61541d54a627a6f0eaae3a8ebecb6d454",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:45:37.510Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "dc739ba61541d54a627a6f0eaae3a8ebecb6d454",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-02T05:45:18Z:clawsweeper_needs_human",
       "comment_id": "5118719513",
@@ -32408,6 +32375,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117923:5156882493:2026-08-02T09:33:40Z:re_review",
+      "comment_id": "5156882493",
+      "comment_version_key": "5156882493:2026-08-02T09:33:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117923#issuecomment-5156882493",
+      "comment_created_at": "2026-08-02T09:33:40Z",
+      "comment_updated_at": "2026-08-02T09:33:40Z",
+      "comment_body_sha256": "52060ca58659e5da26572f48a0c64edda01ecb57b863cf2aa16429cb483cb3a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117923,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T09:34:20.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-realtime-terminal-tool-calls-20260802",
+        "head_sha": "0f2864f86d3578bd8bae8cc8201e199c92c5504f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
