@@ -3,16 +3,16 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Hot intake publish complete",
-  "detail": "Merged 0 hot intake artifacts for run 30743172955 without full folder reconciliation. Captured 1 shard metrics; 0 shards reported non-success review status.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30743172955",
-  "planned_count": 1,
-  "planned_capacity": 1,
-  "planned_shards": 1,
-  "active_codex": 0,
-  "due_backlog": 534,
-  "oldest_unreviewed_at": "2026-06-08T20:54:50Z",
-  "capacity_reason": "saturated: due backlog filled planned capacity",
+  "state": "Apply comments synced",
+  "detail": "Comment-only apply checkpoint 1 finished. Synced durable review comments: 7. Result records: 9. Item numbers: 90226,106362,106452,106504,106793,107251,107426,107707,107739,108888,110136,110153,111480,111981,112592,112689,113270,113272,113318,113978,114084,114091,114105,114167,114177,114183,114186,114194,114204,114209,114234,114261,114272,114287,114309,114342,114789,114989,115034,115326. Next cursor: none.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30731205825",
+  "planned_count": null,
+  "planned_capacity": null,
+  "planned_shards": null,
+  "active_codex": null,
+  "due_backlog": null,
+  "oldest_unreviewed_at": null,
+  "capacity_reason": null,
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
@@ -21,21 +21,20 @@
   "bot_owned_proof_dispatches": null,
   "apply_health": {
     "schema_version": 1,
-    "generated_at": "2026-08-02T10:11:15.086Z",
+    "generated_at": "2026-08-02T10:24:38.590Z",
     "target_repo": "openclaw/openclaw",
     "mode": "comment_sync",
     "status": "needs_attention",
-    "summary": "examined count unavailable; 7/40 action records; 0 closed, 4 comments synced, 3 skipped; no cursor recorded. Attention: skipped_runtime_budget.",
+    "summary": "examined count unavailable; 9/40 action records; 0 closed, 7 comments synced, 2 skipped; no cursor recorded. Attention: skipped_runtime_budget.",
     "examined": null,
-    "action_records": 7,
-    "processed": 7,
+    "action_records": 9,
+    "processed": 9,
     "processed_limit": 40,
     "close_limit": 0,
     "closed": 0,
-    "comment_synced": 4,
-    "skipped": 3,
+    "comment_synced": 7,
+    "skipped": 2,
     "skip_reasons": {
-      "kept_open": 1,
       "skipped_runtime_budget": 2
     },
     "lanes": {
@@ -47,12 +46,11 @@
         "skip_reasons": {}
       },
       "comment_sync": {
-        "processed": 7,
+        "processed": 9,
         "closed": 0,
-        "comment_synced": 4,
-        "skipped": 3,
+        "comment_synced": 7,
+        "skipped": 2,
         "skip_reasons": {
-          "kept_open": 1,
           "skipped_runtime_budget": 2
         }
       }
@@ -67,20 +65,9 @@
         "label": "Runtime budget",
         "summary": "The apply lane stopped because it reached its bounded runtime.",
         "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      },
-      {
-        "reason": "kept_open",
-        "count": 1,
-        "bucket": "inspect",
-        "owner": "maintainer",
-        "retryable": false,
-        "label": "Inspect skip",
-        "summary": "Apply reported an unmapped skip bucket.",
-        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
       }
     ],
     "next_action_buckets": {
-      "inspect": 1,
       "run_budget": 2
     },
     "cycle": {
@@ -98,7 +85,7 @@
     ],
     "cursor_required": false,
     "cursor": null,
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30730913966"
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30731205825"
   },
   "last_close_apply_health": {
     "schema_version": 1,
@@ -219,5 +206,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30726795932"
   },
-  "updated_at": "2026-08-02T10:21:38.676Z"
+  "updated_at": "2026-08-02T10:24:39.190Z"
 }
