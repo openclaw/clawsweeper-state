@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:39:41.892Z",
+  "updated_at": "2026-08-02T11:40:34.606Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117744:5156581322:2026-08-02T08:36:15Z:re_review",
-      "comment_id": "5156581322",
-      "comment_version_key": "5156581322:2026-08-02T08:36:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117744#issuecomment-5156581322",
-      "comment_created_at": "2026-08-02T08:36:15Z",
-      "comment_updated_at": "2026-08-02T08:36:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117744,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T08:36:47.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-fatal-utf8",
-        "head_sha": "fa155bac935c6308e5c09fb170ddd7e10d4aedcf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117840:5156584118:2026-08-02T08:36:46Z:re_review",
       "comment_id": "5156584118",
@@ -31528,6 +31481,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-117470-native-compact-session-override",
         "head_sha": "3474ee50b6a56976b1cd5a181c3b8dc3a25224f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:324:4960018219:2026-08-02T10:21:44Z:clawsweeper_needs_human",
+      "comment_id": "4960018219",
+      "comment_version_key": "4960018219:2026-08-02T10:21:44Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/324#issuecomment-4960018219",
+      "comment_created_at": "2026-07-13T16:08:15Z",
+      "comment_updated_at": "2026-08-02T10:21:44Z",
+      "comment_body_sha256": "88cbb73108acbed41b8921c8d6161ecc9cf62ae2745ce6d3f287efefb13c11a6",
+      "repo": "steipete/oracle",
+      "issue_number": 324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main has newer dependency and Chrome DevTools protocol commits after the branch reconciliation. Although the supplied GitHub state says the PR is mergeable, refresh the branch... (sha=7e72ffccc3c43c092660e858978ebb086e2e525b)",
+      "expected_head_sha": "7e72ffccc3c43c092660e858978ebb086e2e525b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T11:40:34.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/wsl-loopback-resolver",
+        "head_sha": "7e72ffccc3c43c092660e858978ebb086e2e525b",
         "cluster_id": null,
         "job_path": null
       }
