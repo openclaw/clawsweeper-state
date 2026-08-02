@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:55:54.675Z",
+  "updated_at": "2026-08-02T01:57:05.781Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5015923415:2026-07-19T13:36:40Z:re_review",
-      "comment_id": "5015923415",
-      "comment_version_key": "5015923415:2026-07-19T13:36:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5015923415",
-      "comment_created_at": "2026-07-19T13:36:40Z",
-      "comment_updated_at": "2026-07-19T13:36:40Z",
-      "comment_body_sha256": "92d7d9329130c1ad624ee77a43c513450706c6315e091c1d6b44a93a9c76c3d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — refreshed the generated plugin-sdk api baseline manifest (docs/.generated/plugin-sdk-api-baseline.sha256) after the rebase, which resolves the check-plugin-sdk-api-baseline / ci-gate failures (the pr touches no plugin-sdk exports; the committed manifest snapshot was stale relative to current upstream). new head c250330d16. no source behavior change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:57:45.465Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5016471745:2026-07-19T16:24:26Z:re_review",
       "comment_id": "5016471745",
@@ -32009,6 +31982,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T01:55:54.674Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117689:5154068538:2026-08-02T01:56:31Z:clawsweeper_needs_human",
+      "comment_id": "5154068538",
+      "comment_version_key": "5154068538:2026-08-02T01:56:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117689#issuecomment-5154068538",
+      "comment_created_at": "2026-08-01T23:54:38Z",
+      "comment_updated_at": "2026-08-02T01:56:31Z",
+      "comment_body_sha256": "d5b32e6b2793ecd213cad30aaf16a5eab1daac8601ed1696e5acee6adc9c10f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the canonical persisted path for newly written workspace-anchored media. The paired relative-alias handling must remain with history pruning so older prompt marker text i... (sha=d41a4a01e2b20e7f1586076d4b9fae906fb796ea)",
+      "expected_head_sha": "d41a4a01e2b20e7f1586076d4b9fae906fb796ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:57:05.781Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-sandbox-media-transcript-preview",
+        "head_sha": "d41a4a01e2b20e7f1586076d4b9fae906fb796ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
