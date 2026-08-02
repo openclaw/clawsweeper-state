@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:29:34.152Z",
+  "updated_at": "2026-08-02T07:29:38.746Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111497:5016800661:2026-08-02T03:11:31Z:clawsweeper_auto_repair",
-      "comment_id": "5016800661",
-      "comment_version_key": "5016800661:2026-08-02T03:11:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111497#issuecomment-5016800661",
-      "comment_created_at": "2026-07-19T18:00:54Z",
-      "comment_updated_at": "2026-08-02T03:11:31Z",
-      "comment_body_sha256": "5f6ed696339cc96bfc45871becd56458cfd09cbc9336e0ceccaeadedf91ddad0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111497,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=51be4afadbc9a55994161a7e8258d0e563ab4652)",
-      "expected_head_sha": "51be4afadbc9a55994161a7e8258d0e563ab4652",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T03:15:34.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-preserve-artifact-worktree",
-        "head_sha": "51be4afadbc9a55994161a7e8258d0e563ab4652",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117763:5154904265:2026-08-02T03:16:13Z:re_review",
       "comment_id": "5154904265",
@@ -32121,6 +32088,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T07:29:34.152Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117619:5153415470:2026-08-02T07:23:44Z:clawsweeper_needs_human",
+      "comment_id": "5153415470",
+      "comment_version_key": "5153415470:2026-08-02T07:23:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117619#issuecomment-5153415470",
+      "comment_created_at": "2026-08-01T21:00:00Z",
+      "comment_updated_at": "2026-08-02T07:23:44Z",
+      "comment_body_sha256": "06de86852c8f6935e831189b8fab7b4e8f96d11c41d776c0c29b66520a8fe1fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117619,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Selecting memory.qmd.fallback: \"none\" intentionally changes a QMD failure from automatic degraded memory retrieval into visible memory unavailability; maintainers must endorse that as... (sha=9ee72be91bf63703794e4a5d840f070c6e1d65f8)",
+      "expected_head_sha": "9ee72be91bf63703794e4a5d840f070c6e1d65f8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:29:38.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/fix-qmd-fallback-reindex",
+        "head_sha": "9ee72be91bf63703794e4a5d840f070c6e1d65f8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
