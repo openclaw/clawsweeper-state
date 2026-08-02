@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:05:42.377Z",
+  "updated_at": "2026-08-02T09:06:01.933Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112669:5078729265:2026-08-02T05:05:26Z:clawsweeper_needs_human",
-      "comment_id": "5078729265",
-      "comment_version_key": "5078729265:2026-08-02T05:05:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112669#issuecomment-5078729265",
-      "comment_created_at": "2026-07-25T13:50:33Z",
-      "comment_updated_at": "2026-08-02T05:05:26Z",
-      "comment_body_sha256": "6dcb1c59e4510919ece35827d0bb08c4a808ffd562a3d3ed2fb8601f207399c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112669,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally prevents stuck recovery from aborting, draining, force-clearing, or terminally stamping a newer same-session replacement; the lifecycle owner must confirm that p... (sha=9959b3baa32615c7b7a43b6455af5cc7b748ea1f)",
-      "expected_head_sha": "9959b3baa32615c7b7a43b6455af5cc7b748ea1f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:06:09.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stuck-recovery-run-identity-104589",
-        "head_sha": "9959b3baa32615c7b7a43b6455af5cc7b748ea1f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116543:5155531180:2026-08-02T05:06:13Z:re_review",
       "comment_id": "5155531180",
@@ -32818,6 +32785,53 @@
         "kind": "pull_request",
         "branch": "fix/idle-watchdog-merged-signal",
         "head_sha": "85b6097a1306c7f3d203abb93b7a0241707ede8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117412:5156738283:2026-08-02T09:05:30Z:re_review",
+      "comment_id": "5156738283",
+      "comment_version_key": "5156738283:2026-08-02T09:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117412#issuecomment-5156738283",
+      "comment_created_at": "2026-08-02T09:05:30Z",
+      "comment_updated_at": "2026-08-02T09:05:30Z",
+      "comment_body_sha256": "fb1166389147b6ef53362e4fcdc17b416c375bc81205bd2a951b04cffcb9c644",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117412,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T09:05:58.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-subagent-sweeper-0801-2d45",
+        "head_sha": "2a9729acf0c8fdad6c52f81fd68673e6d3b01ffa",
         "cluster_id": null,
         "job_path": null
       },
