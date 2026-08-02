@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T07:46:42.907Z",
-  "count": 9,
+  "generated_at": "2026-08-02T08:01:56.663Z",
+  "count": 7,
   "summary": {
-    "open_prs": 9,
+    "open_prs": 7,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 6,
     "needs_review": 0,
-    "needs_merge_preflight": 9,
+    "needs_merge_preflight": 7,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,83 +26,6 @@
     "candidates": []
   },
   "prs": [
-    {
-      "number": 117881,
-      "title": "fix(channels): guard malformed setup wizard text results",
-      "url": "https://github.com/openclaw/openclaw/pull/117881",
-      "branch": "clawsweeper/issue-openclaw-openclaw-67366",
-      "head_sha": "4954e97222871416ce8fdd0d94c062d3c2a29627",
-      "cluster_id": "issue-openclaw-openclaw-67366",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67366.md",
-      "updated_at": "2026-08-02T07:37:24Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 142,
-        "counts": {
-          "CANCELLED": 14,
-          "SKIPPED": 44,
-          "SUCCESS": 83,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117881#issuecomment-5156077624",
-            "submitted_at": "2026-08-02T07:02:05Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117881#issuecomment-5156082739",
-            "submitted_at": "2026-08-02T07:03:04Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30737052850",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30737052850",
-        "cluster_id": "automerge-openclaw-openclaw-117881",
-        "published_at": "2026-08-02T07:40:58.918Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117881",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#117881",
-          "candidate_fix": "#117881",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
     {
       "number": 117869,
       "title": "fix(agents): preserve explicit model references in alias guidance",
@@ -187,30 +110,77 @@
       "title": "fix(agents): verify delegated writes before reporting success",
       "url": "https://github.com/openclaw/openclaw/pull/117843",
       "branch": "clawsweeper/issue-openclaw-openclaw-67136",
-      "head_sha": "7e39efb171a312bb6a0a813d7dade86da9145472",
+      "head_sha": "9ddf424c162dade8a37ac909beb52c4051d485ec",
       "cluster_id": "issue-openclaw-openclaw-67136",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67136.md",
-      "updated_at": "2026-08-02T07:45:43Z",
+      "updated_at": "2026-08-02T08:00:07Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 141,
+        "total": 118,
         "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 43,
-          "SUCCESS": 84,
+          "SUCCESS": 27,
+          "IN_PROGRESS": 54,
+          "SKIPPED": 36,
           "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CI / pnpm-store-warmup:IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-fast-max-lines-ratchet:IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (agent-runtime-boundary):IN_PROGRESS",
+          "CI / checks-fast-bundled-protocol:IN_PROGRESS",
+          "CI / checks-fast-bun-launcher:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-b:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-15:IN_PROGRESS",
+          "CI / checks-node-compact-small-16:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-guards:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-bundled-channel-config-metadata:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-additional-boundaries-a:IN_PROGRESS",
+          "CI / check-additional-boundaries-bcd:IN_PROGRESS",
+          "CI / check-prompt-snapshots:IN_PROGRESS",
+          "CI / check-session-accessor-boundary:IN_PROGRESS",
+          "CI / check-plugin-sdk-api-baseline:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -247,8 +217,8 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CodeQL / Security High (process-exec-boundary):IN_PROGRESS; CI / pnpm-store-warmup:IN_PROGRESS; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -261,7 +231,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T07:46:02Z",
+      "updated_at": "2026-08-02T07:56:44Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -561,7 +531,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T07:46:21Z",
+      "updated_at": "2026-08-02T07:57:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -631,86 +601,6 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 117144,
-      "title": "fix(ci): package runtime resources in dist artifact",
-      "url": "https://github.com/openclaw/openclaw/pull/117144",
-      "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-      "head_sha": "c8e2b2697851ffc5dcd584ca5ccac57fe90d026f",
-      "cluster_id": "issue-openclaw-openclaw-98276",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-02T06:43:22Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 122,
-        "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 24,
-          "SUCCESS": 90,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5148867933",
-            "submitted_at": "2026-08-01T01:32:05Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5149556146",
-            "submitted_at": "2026-08-01T03:19:46Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30710002508",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30710002508",
-        "cluster_id": "automerge-openclaw-openclaw-117144",
-        "published_at": "2026-08-01T18:43:56.533Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117144",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(ci): package runtime resources in dist artifact",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
