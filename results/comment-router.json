@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:12:15.720Z",
+  "updated_at": "2026-08-02T05:12:49.041Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115049:5101471895:2026-08-02T01:27:22Z:clawsweeper_needs_human",
-      "comment_id": "5101471895",
-      "comment_version_key": "5101471895:2026-08-02T01:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115049#issuecomment-5101471895",
-      "comment_created_at": "2026-07-28T07:55:47Z",
-      "comment_updated_at": "2026-08-02T01:27:22Z",
-      "comment_body_sha256": "fb826a807adc67af445cc72019f0f4bb59e893ac9c87e2d20173c893af3feaa6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115049,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch cannot merge cleanly; a mechanical resolution that restores the PR’s older marker-only assumptions could bypass current main’s exact sessionTarget route and regress session... (sha=cdbddbf7603508464b04096f725bea72bc36a274)",
-      "expected_head_sha": "cdbddbf7603508464b04096f725bea72bc36a274",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:28:53.923Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "josh/codex-attempt-transcript-snapshot",
-        "head_sha": "cdbddbf7603508464b04096f725bea72bc36a274",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117727:5154425412:2026-08-02T01:28:30Z:clawsweeper_needs_human",
       "comment_id": "5154425412",
@@ -31885,6 +31852,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117213:5155567080:2026-08-02T05:12:12Z:re_review",
+      "comment_id": "5155567080",
+      "comment_version_key": "5155567080:2026-08-02T05:12:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5155567080",
+      "comment_created_at": "2026-08-02T05:12:12Z",
+      "comment_updated_at": "2026-08-02T05:12:12Z",
+      "comment_body_sha256": "726e5cada03da64c9784000f9296e3a3a515f1b150f5af841a00725e23968011",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117213,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T05:12:46.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-policy-refresh-rebuild-89606",
+        "head_sha": "e1deb81070d287a125cf66dfec566ddcfc613627",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
