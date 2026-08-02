@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:43:12.183Z",
+  "updated_at": "2026-08-02T16:43:13.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117603:5158186823:2026-08-02T13:25:17Z:re_review",
-      "comment_id": "5158186823",
-      "comment_version_key": "5158186823:2026-08-02T13:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117603#issuecomment-5158186823",
-      "comment_created_at": "2026-08-02T13:25:17Z",
-      "comment_updated_at": "2026-08-02T13:25:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117603,
-      "author": "dineshsuthar123",
-      "author_id": 142929222,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T13:25:55.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/streamed-partial-error",
-        "head_sha": "027e420c6fc79756c38291dc9dc96e9e3762b8c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117987:5158054613:2026-08-02T13:27:19Z:clawsweeper_needs_human",
       "comment_id": "5158054613",
@@ -31591,6 +31544,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-100-historical-reconciliation",
         "head_sha": "5283654266d6a220c7021b16e1b8c5412af1c83c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1072:5135282083:2026-08-02T16:42:28Z:clawsweeper_needs_human",
+      "comment_id": "5135282083",
+      "comment_version_key": "5135282083:2026-08-02T16:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1072#issuecomment-5135282083",
+      "comment_created_at": "2026-07-30T19:21:21Z",
+      "comment_updated_at": "2026-08-02T16:42:28Z",
+      "comment_body_sha256": "7660078c311b9085a42a1e195a8edb3c2b2650db8257b6ea9c8c00f9ed52b996",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Accept legacy unknown-method response variants (P1)** - Older Gateways can return a flat string error or vary the casing of unknown method. This classifier requires an object error, INVALID_REQUEST, and an exact...; Review finding: [P1] Accept legacy unknown-method response variants — src/OpenClaw.Shared/WindowsNodeClient.cs:980-995 - [P1] Preserve trusted request-envelope session attribution... (sha=4a137f6b10131932232f341b077c1edf8c606fa7)",
+      "expected_head_sha": "4a137f6b10131932232f341b077c1edf8c606fa7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:43:13.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-windows-node",
+        "head_sha": "4a137f6b10131932232f341b077c1edf8c606fa7",
         "cluster_id": null,
         "job_path": null
       }
