@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:24:01.379Z",
+  "updated_at": "2026-08-02T09:24:02.608Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117213:5155631971:2026-08-02T05:25:17Z:re_review",
-      "comment_id": "5155631971",
-      "comment_version_key": "5155631971:2026-08-02T05:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5155631971",
-      "comment_created_at": "2026-08-02T05:25:17Z",
-      "comment_updated_at": "2026-08-02T05:25:17Z",
-      "comment_body_sha256": "1213981f7e11d597bd4e41009c259be2f49672f0ee77310178a4123d47cb48a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T05:25:55.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "55605c1900a0818377fb7ee92edeb469c6bec62b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T05:25:26Z:clawsweeper_needs_human",
-      "comment_id": "5153918023",
-      "comment_version_key": "5153918023:2026-08-02T05:25:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
-      "comment_created_at": "2026-08-01T23:09:04Z",
-      "comment_updated_at": "2026-08-02T05:25:26Z",
-      "comment_body_sha256": "c0339241a4b034f75caa80a1ea4aeb0c873041a49d8b9291c05f5d5673922c24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117676,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep raw transcript turns out of durable promotion (P1)** - These selection checks now exempt any session-corpus User:/Assistant: snippet. The later append fallback writes candidate.snippet directly to MEMORY.md...; Review finding: [P1] Keep raw transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:302-304 - [medium] Raw session text can reach du... (sha=b307c27cc0342f0407dc0879f67701fb9a563e86)",
-      "expected_head_sha": "b307c27cc0342f0407dc0879f67701fb9a563e86",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:26:15.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-transcript-turn-filter",
-        "head_sha": "b307c27cc0342f0407dc0879f67701fb9a563e86",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117268:5150321877:2026-08-02T05:23:35Z:clawsweeper_needs_human",
       "comment_id": "5150321877",
@@ -32504,6 +32424,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114953:5100404191:2026-08-02T09:17:43Z:clawsweeper_needs_human",
+      "comment_id": "5100404191",
+      "comment_version_key": "5100404191:2026-08-02T09:17:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114953#issuecomment-5100404191",
+      "comment_created_at": "2026-07-28T05:41:01Z",
+      "comment_updated_at": "2026-08-02T09:17:43Z",
+      "comment_body_sha256": "bff2fb1d64f6ac945b0a99a1d9f1f839a90f91bcd2b6498057998478f56200cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114953,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains a redacted real k3s transcript for an earlier head and current mock-based tests, but it lacks a current-head live run... (sha=11b6b42d27e878b666a17d6d6bafa6b9d69f3b0d)",
+      "expected_head_sha": "11b6b42d27e878b666a17d6d6bafa6b9d69f3b0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:24:02.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/k8s-teardown-preserves-namespace",
+        "head_sha": "11b6b42d27e878b666a17d6d6bafa6b9d69f3b0d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114953:5102996149:2026-07-28T10:31:59Z:re_review",
+      "comment_id": "5102996149",
+      "comment_version_key": "5102996149:2026-07-28T10:31:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114953#issuecomment-5102996149",
+      "comment_created_at": "2026-07-28T10:31:59Z",
+      "comment_updated_at": "2026-07-28T10:31:59Z",
+      "comment_body_sha256": "eaab1d8c1781151596567e23a8f437a26afa991d89b758220441bdb4dc37bd12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114953,
+      "author": "JackS1237",
+      "author_id": 52392899,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:24:02.608Z",
+      "target": null
     }
   ]
 }
