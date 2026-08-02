@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:38:47.004Z",
+  "updated_at": "2026-08-02T12:38:57.227Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117930:5156849639:2026-08-02T09:27:07Z:re_review",
-      "comment_id": "5156849639",
-      "comment_version_key": "5156849639:2026-08-02T09:27:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117930#issuecomment-5156849639",
-      "comment_created_at": "2026-08-02T09:27:07Z",
-      "comment_updated_at": "2026-08-02T09:27:07Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117930,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T09:27:51.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-117586-usage-basis",
-        "head_sha": "1c3508bfcb4e75f489d612939281deabb0786d23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117927:5156855807:2026-08-02T09:28:22Z:clawsweeper_needs_human",
       "comment_id": "5156855807",
@@ -31285,6 +31238,39 @@
         "kind": "pull_request",
         "branch": "fix/eventkit-fetch-timeout",
         "head_sha": "db8073ef8403a3bb07abc5168e531ffdf0242745",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1007:5152665315:2026-08-02T12:38:22Z:clawsweeper_needs_human",
+      "comment_id": "5152665315",
+      "comment_version_key": "5152665315:2026-08-02T12:38:22Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1007#issuecomment-5152665315",
+      "comment_created_at": "2026-08-01T17:56:24Z",
+      "comment_updated_at": "2026-08-02T12:38:22Z",
+      "comment_body_sha256": "c7607e8bec215468c43c16feb3ba168b57e57225ddb9fdc4c6e88bed8553ecec",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A linked live GitHub proof demonstrates the original owned-update ordering, but it used an earlier branch head; publish redacted curre... (sha=84160ed710bb1dae8a14115a2babdeb823b81056)",
+      "expected_head_sha": "84160ed710bb1dae8a14115a2babdeb823b81056",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:38:57.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/review-storm-self-activity",
+        "head_sha": "84160ed710bb1dae8a14115a2babdeb823b81056",
         "cluster_id": null,
         "job_path": null
       }
