@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-73478"
-mode: "autonomous"
-run_id: "30742828341"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30742828341"
+mode: "plan"
+run_id: "30744624314"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30744624314"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-02T10:06:15.704Z"
+published_at: "2026-08-02T10:58:43.938Z"
 canonical: "https://github.com/openclaw/openclaw/issues/73478"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/73478"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/117951"
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30742828341](https://github.com/openclaw/clawsweeper/actions/runs/30742828341)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30744624314](https://github.com/openclaw/clawsweeper/actions/runs/30744624314)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/73478
 
 ## Summary
 
-#73478 remains an open canonical Gateway behavior bug on main 30c87bde99774fdbd0b3b31c1921e3750a1d61e4. The live-chat projector rejects assistant events that contain mediaUrls without text/delta, and the Gateway delta/final projection builds text-only message content, so generated images are omitted from WebSocket chat subscribers. A narrow new fix PR is appropriate; #81136 is closed historical source work only.
+Keep #73478 open as the canonical bug report and retain #117951 as its active, validated implementation PR. Current main still projects assistant events as text-only: `resolveAssistantLiveChatInput` accepts only text/delta and the delta payload constructs only a text content block, so the issue remains reproducible until #117951 lands. #81136 is closed historical design context and receives no further mutation.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/73478
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #73478 | fix_needed | planned | canonical | Current main still drops assistant media from Gateway live chat. The closed prior PR is not a viable branch, so the canonical issue needs a narrow credited replacement PR. |
-| #81136 | keep_closed | skipped | superseded | Already closed historical contributor work; no closeout or mutation is valid. Preserve its idea and attribution in the replacement PR. |
-| cluster:issue-openclaw-openclaw-73478 | build_fix_artifact | planned | canonical | Prepare a new narrow PR from the current main base; do not reuse the closed fork branch. |
+| https://github.com/openclaw/openclaw/issues/73478 | keep_canonical | planned | canonical | The report remains valid on current main and #117951 is the single active implementation path. Closure and merge are blocked by this job, so this plan makes no mutating recommendation. |
+| https://github.com/openclaw/openclaw/pull/117951 | keep_canonical | planned | canonical | This is the active, narrow candidate for the canonical issue. Keep it as the implementation path; do not merge in this plan because the job explicitly blocks merge and requires human approval. |
+| https://github.com/openclaw/openclaw/pull/81136 | keep_closed | skipped | superseded | Historical design context only; retain contributor context without reopening, closing, or otherwise mutating the already-closed PR. |
 
 ## Needs Human
 
