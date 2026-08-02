@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T04:17:47.482Z",
+  "updated_at": "2026-08-02T04:18:10.439Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103961:4940125084:2026-07-10T22:45:11Z:re_review",
-      "comment_id": "4940125084",
-      "comment_version_key": "4940125084:2026-07-10T22:45:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103961#issuecomment-4940125084",
-      "comment_created_at": "2026-07-10T22:45:11Z",
-      "comment_updated_at": "2026-07-10T22:45:11Z",
-      "comment_body_sha256": "1e7d967b768da01f81db0b626c0e1bbe3270eb6f42f33bac88e05fd32c574fb0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103961,
-      "author": "ObliviateRickLin",
-      "author_id": 83101411,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T00:19:44.701Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103961:4940299418:2026-07-10T23:19:48Z:re_review",
       "comment_id": "4940299418",
@@ -32444,6 +32417,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108899:4993718340:2026-08-02T04:17:29Z:clawsweeper_needs_human",
+      "comment_id": "4993718340",
+      "comment_version_key": "4993718340:2026-08-02T04:17:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108899#issuecomment-4993718340",
+      "comment_created_at": "2026-07-16T15:32:33Z",
+      "comment_updated_at": "2026-08-02T04:17:29Z",
+      "comment_body_sha256": "edba55c6332e917985a3f709e7277d8565c0a0d37b31ed6435fbb0b1a35993f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted QQBot C2C screenshot convincingly demonstrates the earlier non-durable notice path, but the exact current head also chang... (sha=54d9f58da65eb4390a58ee47bb72e6be24273832)",
+      "expected_head_sha": "54d9f58da65eb4390a58ee47bb72e6be24273832",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T04:18:10.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qqbot-reply-session-conflict-terminal-handling",
+        "head_sha": "54d9f58da65eb4390a58ee47bb72e6be24273832",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
