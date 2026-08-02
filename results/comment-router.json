@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:51:51.445Z",
+  "updated_at": "2026-08-02T12:51:51.789Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117449:5151972627:2026-08-02T09:35:08Z:clawsweeper_needs_human",
-      "comment_id": "5151972627",
-      "comment_version_key": "5151972627:2026-08-02T09:35:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117449#issuecomment-5151972627",
-      "comment_created_at": "2026-08-01T15:00:58Z",
-      "comment_updated_at": "2026-08-02T09:35:08Z",
-      "comment_body_sha256": "f24a30d53d49185cd3017fc8d0619249c0b017a7d60936d7cef116e467555f74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117449,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an unrelated reload, prepared provider-auth state is intentionally cleared but not proactively rebuilt. The fingerprint guard prevents stale answers by falling back to computati... (sha=55d879aafdd96ac04c54cdecd6f0c26191226bc9)",
-      "expected_head_sha": "55d879aafdd96ac04c54cdecd6f0c26191226bc9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T09:35:49.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-117411-skip-provider-auth-rewarm-unrelated-reload",
-        "head_sha": "55d879aafdd96ac04c54cdecd6f0c26191226bc9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117901:5156479849:2026-08-02T09:33:24Z:clawsweeper_auto_repair",
       "comment_id": "5156479849",
@@ -31214,6 +31181,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T12:51:51.444Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:85:5156277598:2026-08-02T12:51:04Z:clawsweeper_needs_human",
+      "comment_id": "5156277598",
+      "comment_version_key": "5156277598:2026-08-02T12:51:04Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/85#issuecomment-5156277598",
+      "comment_created_at": "2026-08-02T07:40:54Z",
+      "comment_updated_at": "2026-08-02T12:51:04Z",
+      "comment_body_sha256": "d51d1c719a5cb19a9c91d1e5485b668d1d0a26ab90b0bae5000a060428cd4874",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 85,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes cross-platform compatibility: POSIX callers that used a one-letter-plus-colon filename such as C:name through Root or the path subpath will now receive in... (sha=7024025e7420e4ac2a02fb1d44a6a2e1ac8910cc)",
+      "expected_head_sha": "7024025e7420e4ac2a02fb1d44a6a2e1ac8910cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:51:51.788Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reject-drive-relative-paths",
+        "head_sha": "7024025e7420e4ac2a02fb1d44a6a2e1ac8910cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
