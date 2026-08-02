@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:04:00.005Z",
+  "updated_at": "2026-08-02T21:04:26.210Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:106357:4958661303:2026-07-13T13:50:42Z:re_review",
-      "comment_id": "4958661303",
-      "comment_version_key": "4958661303:2026-07-13T13:50:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106357#issuecomment-4958661303",
-      "comment_created_at": "2026-07-13T13:50:42Z",
-      "comment_updated_at": "2026-07-13T13:50:42Z",
-      "comment_body_sha256": "bc7964421d01150d4d0204b42892fcf48b3b9106e2f1bc8149a589e0b757058d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106357,
-      "author": "dankarization",
-      "author_id": 26330178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:52:58.903Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:106357:5035145025:2026-07-21T14:17:00Z:re_review",
       "comment_id": "5035145025",
@@ -31195,6 +31168,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T21:04:00.004Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118197:5160310893:2026-08-02T21:03:54Z:clawsweeper_needs_human",
+      "comment_id": "5160310893",
+      "comment_version_key": "5160310893:2026-08-02T21:03:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118197#issuecomment-5160310893",
+      "comment_created_at": "2026-08-02T20:58:28Z",
+      "comment_updated_at": "2026-08-02T21:03:54Z",
+      "comment_body_sha256": "788fd3c72109a50806038ccb8d045314be538c89654257fbf16337e51b0e34da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes an existing edge-case response: an unclaimed GET/HEAD with Accept: text/html;q=0, */* changes from SPA HTML to the established startup 503 or ready-state... (sha=06e9277b90541e451a51ab77d8d907ab80ad4961)",
+      "expected_head_sha": "06e9277b90541e451a51ab77d8d907ab80ad4961",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T21:04:26.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-control-ui-accept-precedence",
+        "head_sha": "06e9277b90541e451a51ab77d8d907ab80ad4961",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
