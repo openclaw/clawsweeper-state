@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:34:48.399Z",
+  "updated_at": "2026-08-02T09:35:23.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110128:5155743391:2026-08-02T05:47:47Z:re_review",
-      "comment_id": "5155743391",
-      "comment_version_key": "5155743391:2026-08-02T05:47:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110128#issuecomment-5155743391",
-      "comment_created_at": "2026-08-02T05:47:47Z",
-      "comment_updated_at": "2026-08-02T05:47:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110128,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T05:48:31.746Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qingminglong/memory-host-repeated-content-length",
-        "head_sha": "76d1982191895d230b719dedd42cdef6b264e34e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-02T05:47:56Z:clawsweeper_needs_human",
       "comment_id": "5118719513",
@@ -32422,6 +32375,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117884:5156153311:2026-08-02T09:34:41Z:clawsweeper_needs_human",
+      "comment_id": "5156153311",
+      "comment_version_key": "5156153311:2026-08-02T09:34:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117884#issuecomment-5156153311",
+      "comment_created_at": "2026-08-02T07:17:17Z",
+      "comment_updated_at": "2026-08-02T09:34:41Z",
+      "comment_body_sha256": "d63ae8909bfb5daf362d5fe2f8bfd2f20260fa961260b82da0512c17855efe3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117884,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head openclaw/ci-gate remains red because checks-node-compact-large-2 timed out in src/gateway/server-startup-model-runtime.event-loop.test.ts; the assigned maintainer repor... (sha=85b6097a1306c7f3d203abb93b7a0241707ede8a)",
+      "expected_head_sha": "85b6097a1306c7f3d203abb93b7a0241707ede8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:35:23.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/idle-watchdog-merged-signal",
+        "head_sha": "85b6097a1306c7f3d203abb93b7a0241707ede8a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
