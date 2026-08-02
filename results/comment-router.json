@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:03:26.350Z",
+  "updated_at": "2026-08-02T15:04:26.364Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:950:5157343516:2026-08-02T10:56:46Z:clawsweeper_needs_human",
-      "comment_id": "5157343516",
-      "comment_version_key": "5157343516:2026-08-02T10:56:46Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/950#issuecomment-5157343516",
-      "comment_created_at": "2026-08-02T10:56:46Z",
-      "comment_updated_at": "2026-08-02T10:56:46Z",
-      "comment_body_sha256": "1b6dd2f48390d54c500d3124e61e6304812d782211a4a1e9867ac11baeb37f6f",
-      "repo": "openclaw/gogcli",
-      "issue_number": 950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The GitHub context still reports the exact-head test and windows checks as in progress, so landing should wait for those normal release gates to finish successfully. (sha=0adca1b06558a8b9726465a7f0feb9b0a50eb6a3)",
-      "expected_head_sha": "0adca1b06558a8b9726465a7f0feb9b0a50eb6a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:57:24.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-0.34.2",
-        "head_sha": "0adca1b06558a8b9726465a7f0feb9b0a50eb6a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1027:5016876345:2026-08-02T10:57:59Z:clawsweeper_needs_human",
       "comment_id": "5016876345",
@@ -31488,6 +31455,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118009:5158731591:2026-08-02T15:03:46Z:clawsweeper_needs_human",
+      "comment_id": "5158731591",
+      "comment_version_key": "5158731591:2026-08-02T15:03:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118009#issuecomment-5158731591",
+      "comment_created_at": "2026-08-02T15:03:46Z",
+      "comment_updated_at": "2026-08-02T15:03:46Z",
+      "comment_body_sha256": "668671e54b5aaac411e699c0e6b4dde58f7eb51684139c0771de40562975aaf5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118009,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a blocking live GPT-5.4 pair to a scheduled job capped at 45 minutes; the PR body reports static and Testbox checks, but this review could not independently inspect an exact... (sha=1327574acff5e3588f361175d0e566061756c914)",
+      "expected_head_sha": "1327574acff5e3588f361175d0e566061756c914",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:04:26.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-runtime-pair-gateway-restart-pin",
+        "head_sha": "1327574acff5e3588f361175d0e566061756c914",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
