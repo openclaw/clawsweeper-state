@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T13:23:47.295Z",
+  "generated_at": "2026-08-02T14:17:28.734Z",
   "count": 11,
   "summary": {
     "open_prs": 11,
@@ -34,20 +34,21 @@
       "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T13:20:07Z",
+      "updated_at": "2026-08-02T14:15:08Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 151,
+        "total": 157,
         "counts": {
-          "CANCELLED": 14,
-          "SKIPPED": 48,
-          "SUCCESS": 88,
+          "CANCELLED": 16,
+          "SKIPPED": 50,
+          "SUCCESS": 90,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -110,7 +111,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T13:23:23Z",
+      "updated_at": "2026-08-02T14:13:03Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -184,25 +185,40 @@
       "title": "fix(control-ui): wait for delayed Talk source replies",
       "url": "https://github.com/openclaw/openclaw/pull/117952",
       "branch": "clawsweeper/issue-openclaw-openclaw-117899",
-      "head_sha": "5783b385aa19906d7e6369d902407e18e73f02f8",
+      "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T13:22:05Z",
+      "updated_at": "2026-08-02T14:13:21Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 145,
+        "total": 124,
         "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 44,
-          "SUCCESS": 91,
+          "CANCELLED": 3,
+          "SKIPPED": 35,
+          "SUCCESS": 72,
+          "IN_PROGRESS": 12,
+          "FAILURE": 1,
           "NEUTRAL": 1
         },
         "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CI / checks-ui-e2e (1/4):IN_PROGRESS",
+          "CI / checks-ui-e2e (4/4):IN_PROGRESS",
+          "CI / checks-fast-bundled-protocol:FAILURE",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -229,16 +245,30 @@
         ]
       },
       "latest_record": {
-        "run_id": "30749620768",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30749620768",
+        "run_id": "30750715408",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30750715408",
         "cluster_id": "automerge-openclaw-openclaw-117952",
-        "published_at": "2026-08-02T13:23:24.812Z",
+        "published_at": "2026-08-02T14:16:19.675Z",
         "workflow_conclusion": "success",
-        "apply_action": null
+        "apply_action": {
+          "target": "#117952",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(control-ui): wait for delayed Talk source replies",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / checks-ui-e2e (1/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -251,20 +281,25 @@
       "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T13:22:14Z",
+      "updated_at": "2026-08-02T14:15:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 137,
+        "total": 158,
         "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 45,
-          "SUCCESS": 82,
+          "CANCELLED": 20,
+          "SKIPPED": 52,
+          "SUCCESS": 85,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -280,13 +315,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
             "submitted_at": "2026-08-02T10:31:46Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5158324796",
+            "submitted_at": "2026-08-02T13:51:02Z"
           }
         ]
       },
@@ -474,7 +515,7 @@
       "head_sha": "939bb20056395713273c0f00911b94e6985db5d8",
       "cluster_id": "issue-openclaw-openclaw-61949",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-61949.md",
-      "updated_at": "2026-08-02T13:08:25Z",
+      "updated_at": "2026-08-02T13:35:30Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -553,20 +594,22 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T13:18:10Z",
+      "updated_at": "2026-08-02T14:12:47Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 115,
+        "total": 124,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 27,
-          "SUCCESS": 81
+          "CANCELLED": 11,
+          "SKIPPED": 30,
+          "SUCCESS": 83
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED"
@@ -713,7 +756,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T13:22:29Z",
+      "updated_at": "2026-08-02T14:12:14Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
