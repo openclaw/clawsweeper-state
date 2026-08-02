@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:17:50.721Z",
+  "updated_at": "2026-08-02T08:18:19.235Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117309:5150797356:2026-08-02T04:08:34Z:clawsweeper_auto_repair",
-      "comment_id": "5150797356",
-      "comment_version_key": "5150797356:2026-08-02T04:08:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117309#issuecomment-5150797356",
-      "comment_created_at": "2026-08-01T09:17:59Z",
-      "comment_updated_at": "2026-08-02T04:08:34Z",
-      "comment_body_sha256": "2aa47516ee05d26306db26eb098e97f42b999ad6f1e9f6c8cd61382584084768",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=abe6d571cc2cddc7c87b47e086ac38f00be32aa7)",
-      "expected_head_sha": "abe6d571cc2cddc7c87b47e086ac38f00be32aa7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:13:01.243Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-vitest-importer-routing-owner",
-        "head_sha": "abe6d571cc2cddc7c87b47e086ac38f00be32aa7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117781:5155055285:2026-08-02T04:12:26Z:clawsweeper_needs_human",
       "comment_id": "5155055285",
@@ -32234,6 +32201,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156483599:2026-08-02T08:17:40Z:re_review",
+      "comment_id": "5156483599",
+      "comment_version_key": "5156483599:2026-08-02T08:17:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156483599",
+      "comment_created_at": "2026-08-02T08:17:40Z",
+      "comment_updated_at": "2026-08-02T08:17:40Z",
+      "comment_body_sha256": "06f4c2e99aaa1cfe6c84cab70b7f6a026f1f062b6494eb600ac49152a9823fd8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117727,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review please",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:18:16.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-fractional-chunk-limits",
+        "head_sha": "f63b971c075792c33d71e2a8bcb65db12330193c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
