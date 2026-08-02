@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T22:55:25.634Z",
+  "updated_at": "2026-08-02T22:55:38.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104690:4973376330:2026-07-14T19:53:20Z:re_review",
-      "comment_id": "4973376330",
-      "comment_version_key": "4973376330:2026-07-14T19:53:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104690#issuecomment-4973376330",
-      "comment_created_at": "2026-07-14T19:53:20Z",
-      "comment_updated_at": "2026-07-14T19:53:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104690,
-      "author": "jimmypuckett",
-      "author_id": 3220069,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:21:57.506Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104690:5016132295:2026-07-19T14:41:47Z:re_review",
       "comment_id": "5016132295",
@@ -31945,6 +31918,39 @@
         "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
         "cluster_id": "automerge-openclaw-openclaw-117976",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118041:5159286909:2026-08-02T22:55:02Z:clawsweeper_needs_human",
+      "comment_id": "5159286909",
+      "comment_version_key": "5159286909:2026-08-02T22:55:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118041#issuecomment-5159286909",
+      "comment_created_at": "2026-08-02T16:37:47Z",
+      "comment_updated_at": "2026-08-02T22:55:02Z",
+      "comment_body_sha256": "db5bf9e9c698959312fcbea37b8815ca588e54a41b895c9a088256fb13df01ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118041,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This merge changes durable shared-state rows: both the canonical schema declaration and the additive ensure path must remain together so existing SQLite databases gain the two columns... (sha=dc42ded5c2567d20ec374e6c1ed75a8e897d236f)",
+      "expected_head_sha": "dc42ded5c2567d20ec374e6c1ed75a8e897d236f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T22:55:38.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118018-requester-lifecycle-fence",
+        "head_sha": "dc42ded5c2567d20ec374e6c1ed75a8e897d236f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
