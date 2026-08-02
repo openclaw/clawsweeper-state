@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T22:21:14.894Z",
+  "updated_at": "2026-08-02T22:21:19.398Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-02T19:46:46Z:clawsweeper_needs_human",
-      "comment_id": "5121262567",
-      "comment_version_key": "5121262567:2026-08-02T19:46:46Z",
-      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
-      "comment_created_at": "2026-07-29T17:24:33Z",
-      "comment_updated_at": "2026-08-02T19:46:46Z",
-      "comment_body_sha256": "0f5cde713d552da0c505d10cc9e85351b0972a4c8457b07f184a634eb4452a12",
-      "repo": "openclaw/libterminal",
-      "issue_number": 43,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upstream runtime change in a workflow that writes labels and closes issues and pull requests; successful repository checks do not demonstrate that exempti... (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
-      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T19:47:28.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions/stale-11.0.0",
-        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118149:5160041736:2026-08-02T19:46:55Z:clawsweeper_needs_human",
       "comment_id": "5160041736",
@@ -31682,6 +31649,53 @@
       "status": "skipped",
       "processed_at": "2026-08-02T22:21:14.894Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115405:5160615443:2026-08-02T22:20:44Z:re_review",
+      "comment_id": "5160615443",
+      "comment_version_key": "5160615443:2026-08-02T22:20:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5160615443",
+      "comment_created_at": "2026-08-02T22:20:44Z",
+      "comment_updated_at": "2026-08-02T22:20:44Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115405,
+      "author": "MertBasar0",
+      "author_id": 100199793,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T22:21:17.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegation-capability-cli-loopback",
+        "head_sha": "80652425c7b5746ab95dd2d9e3a1f55e8893bb20",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
