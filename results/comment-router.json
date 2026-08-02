@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:49:50.199Z",
+  "updated_at": "2026-08-02T11:49:55.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156603216:2026-08-02T08:40:27Z:re_review",
-      "comment_id": "5156603216",
-      "comment_version_key": "5156603216:2026-08-02T08:40:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156603216",
-      "comment_created_at": "2026-08-02T08:40:27Z",
-      "comment_updated_at": "2026-08-02T08:40:27Z",
-      "comment_body_sha256": "06a77a20624be9f2816c1f5a5391189b85d9e9f1ce4dacf067351614cabcb4ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117727,
-      "author": "Takhoffman",
-      "author_id": 781889,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T08:41:05.240Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-fractional-chunk-limits",
-        "head_sha": "48e0fb9be19f7bbac3878bd07372134860c10dce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:250:5156604729:2026-08-02T08:40:44Z:clawsweeper_auto_repair",
       "comment_id": "5156604729",
@@ -31536,6 +31489,39 @@
         "kind": "pull_request",
         "branch": "fix/parse-duration-contiguous",
         "head_sha": "ab5f5f1ab3249edc775d8394d9dcb845923a1398",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117946:5157118451:2026-08-02T11:49:25Z:clawsweeper_needs_human",
+      "comment_id": "5157118451",
+      "comment_version_key": "5157118451:2026-08-02T11:49:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117946#issuecomment-5157118451",
+      "comment_created_at": "2026-08-02T10:16:56Z",
+      "comment_updated_at": "2026-08-02T11:49:25Z",
+      "comment_body_sha256": "faeb63f9958f6ca1b21d1714e2e4274afb02333198fe53e7702786529ec68a08",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains terminal output, but it counts memory.recall.recorded events rather than directly showing recall-store entries af... (sha=29184a522d6bc206fe1d7ac05ff9cae3b049c610)",
+      "expected_head_sha": "29184a522d6bc206fe1d7ac05ff9cae3b049c610",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T11:49:55.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-recall-ingestion-narrow",
+        "head_sha": "29184a522d6bc206fe1d7ac05ff9cae3b049c610",
         "cluster_id": null,
         "job_path": null
       }
