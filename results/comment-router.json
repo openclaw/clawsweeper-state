@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T20:36:56.336Z",
+  "updated_at": "2026-08-02T20:36:58.415Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:68843:4551137517:2026-05-27T04:06:41Z:re_review",
-      "comment_id": "4551137517",
-      "comment_version_key": "4551137517:2026-05-27T04:06:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/68843#issuecomment-4551137517",
-      "comment_created_at": "2026-05-27T04:06:41Z",
-      "comment_updated_at": "2026-05-27T04:06:41Z",
-      "comment_body_sha256": "141cd2291a7aac86ec1a473b9438531f88e755a2a639516d6e1f08ff3e3b2648",
-      "repo": "openclaw/openclaw",
-      "issue_number": 68843,
-      "author": "kesslerio",
-      "author_id": 2647990,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:25:08.883Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:68843:4551236751:2026-05-27T04:23:08Z:re_review",
       "comment_id": "4551236751",
@@ -31153,6 +31126,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114068:5082678216:2026-08-02T20:33:36Z:clawsweeper_needs_human",
+      "comment_id": "5082678216",
+      "comment_version_key": "5082678216:2026-08-02T20:33:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114068#issuecomment-5082678216",
+      "comment_created_at": "2026-07-26T08:14:43Z",
+      "comment_updated_at": "2026-08-02T20:33:36Z",
+      "comment_body_sha256": "8279a70a68ccd71e193c36359716e938f177a38a1044878fe4b4bdbdcb14e715",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a second owner for config-path and dotenv-candidate selection: a later loader change can make static root help ignore a plugin-affecting setup unless both paths evolve... (sha=a493f1a2fa3c3d0bac7d4af9d0640d4bf2ad0c43)",
+      "expected_head_sha": "a493f1a2fa3c3d0bac7d4af9d0640d4bf2ad0c43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T20:36:58.414Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/root-help-skip-config-load-when-plugins-unaffected",
+        "head_sha": "a493f1a2fa3c3d0bac7d4af9d0640d4bf2ad0c43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
