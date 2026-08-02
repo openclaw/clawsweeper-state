@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:21:36.565Z",
+  "updated_at": "2026-08-02T12:21:38.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117884:5156735904:2026-08-02T09:05:05Z:re_review",
-      "comment_id": "5156735904",
-      "comment_version_key": "5156735904:2026-08-02T09:05:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117884#issuecomment-5156735904",
-      "comment_created_at": "2026-08-02T09:05:05Z",
-      "comment_updated_at": "2026-08-02T09:05:05Z",
-      "comment_body_sha256": "b2be19971fe5a61192036aeb40169eadaf798d5ab2984e5f1fdebf4d9c589f08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117884,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T09:05:40.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/idle-watchdog-merged-signal",
-        "head_sha": "85b6097a1306c7f3d203abb93b7a0241707ede8a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117412:5156738283:2026-08-02T09:05:30Z:re_review",
       "comment_id": "5156738283",
@@ -31350,6 +31303,39 @@
         "kind": "pull_request",
         "branch": "fix/workboard-archived-dispatch-diagnostic",
         "head_sha": "010f6552471e8e4d1b3be18043b78d752b33534a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117972:5157650994:2026-08-02T12:14:43Z:clawsweeper_needs_human",
+      "comment_id": "5157650994",
+      "comment_version_key": "5157650994:2026-08-02T12:14:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117972#issuecomment-5157650994",
+      "comment_created_at": "2026-08-02T11:51:50Z",
+      "comment_updated_at": "2026-08-02T12:14:43Z",
+      "comment_body_sha256": "888a3b106066274c09f9b95ffe4f73850f2b67415f96db9f96d998d0b3f02d7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117972,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fixed 2,048-identity and 1 MiB limits intentionally emit an error and close an active realtime relay session; this bounds memory and preserves late-event rejection but can interru... (sha=dcf1ce8f01e2bf9bd5acf9216794f6b01511e7c0)",
+      "expected_head_sha": "dcf1ce8f01e2bf9bd5acf9216794f6b01511e7c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:21:38.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-relay-bounded-retention",
+        "head_sha": "dcf1ce8f01e2bf9bd5acf9216794f6b01511e7c0",
         "cluster_id": null,
         "job_path": null
       }
