@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:32:05.407Z",
+  "updated_at": "2026-08-02T13:32:05.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117473:5157077249:2026-08-02T10:09:39Z:re_review",
-      "comment_id": "5157077249",
-      "comment_version_key": "5157077249:2026-08-02T10:09:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117473#issuecomment-5157077249",
-      "comment_created_at": "2026-08-02T10:09:39Z",
-      "comment_updated_at": "2026-08-02T10:09:39Z",
-      "comment_body_sha256": "588a7df51036837c23cb168d048f68d4372c4af054580693f0cf6652f1f334b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117473,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T10:10:10.035Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-web-search-401-release",
-        "head_sha": "5d1554c6074ca91c88d4d38e1d3d0330444ae1cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117248:5150097029:2026-08-02T10:08:33Z:clawsweeper_auto_repair",
       "comment_id": "5150097029",
@@ -30796,6 +30749,39 @@
         "kind": "pull_request",
         "branch": "fix/streamed-partial-error",
         "head_sha": "027e420c6fc79756c38291dc9dc96e9e3762b8c2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117968:5157492436:2026-08-02T13:31:20Z:clawsweeper_needs_human",
+      "comment_id": "5157492436",
+      "comment_version_key": "5157492436:2026-08-02T13:31:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117968#issuecomment-5157492436",
+      "comment_created_at": "2026-08-02T11:22:34Z",
+      "comment_updated_at": "2026-08-02T13:31:20Z",
+      "comment_body_sha256": "746ebb15d5b84768362c5ac66b24b3f29827626d3943bedf8d8f2f0e3ee24e3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117968,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility: Anthropic-compatible proxies that previously produced malformed terminal JSON will now end the turn with an explicit error instead of executing a salvaged partial tool... (sha=af86aaedd485b7316fea7c181e954db0af36f841)",
+      "expected_head_sha": "af86aaedd485b7316fea7c181e954db0af36f841",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T13:32:05.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-strict-tool-args",
+        "head_sha": "af86aaedd485b7316fea7c181e954db0af36f841",
         "cluster_id": null,
         "job_path": null
       }
