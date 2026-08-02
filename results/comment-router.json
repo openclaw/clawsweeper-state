@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:03:05.291Z",
+  "updated_at": "2026-08-02T07:04:18.974Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T02:43:02Z:clawsweeper_needs_human",
-      "comment_id": "5153918023",
-      "comment_version_key": "5153918023:2026-08-02T02:43:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
-      "comment_created_at": "2026-08-01T23:09:04Z",
-      "comment_updated_at": "2026-08-02T02:43:02Z",
-      "comment_body_sha256": "75eb70c8b5beab2d69774f857eb75f42e4a371ac4d333b86ccf65091e7064ba8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117676,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep session transcript turns out of durable promotion (P1)** - The ingress exception is needed to populate the recall store, but applying it at every applyShortTermPromotions check permits session-corpus lines...; Review finding: [P1] Keep session transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:302-304 - [medium] Raw transcript content ca... (sha=149ad82f049439a2300cf9327b84e6548d6f4414)",
-      "expected_head_sha": "149ad82f049439a2300cf9327b84e6548d6f4414",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T02:45:39.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-transcript-turn-filter",
-        "head_sha": "149ad82f049439a2300cf9327b84e6548d6f4414",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117689:5154068538:2026-08-02T02:02:30Z:clawsweeper_needs_human",
       "comment_id": "5154068538",
@@ -32179,6 +32146,53 @@
           "status": "executed",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117881.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116562:5156085883:2026-08-02T07:03:39Z:re_review",
+      "comment_id": "5156085883",
+      "comment_version_key": "5156085883:2026-08-02T07:03:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5156085883",
+      "comment_created_at": "2026-08-02T07:03:39Z",
+      "comment_updated_at": "2026-08-02T07:03:39Z",
+      "comment_body_sha256": "12340b973d9bdd0bc337ad1484e03b0990e294e4a75d64f3c5f5308a79be99bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116562,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T07:04:15.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-fallback-recovery-96534",
+        "head_sha": "bf6d37f41d6c87534da6c59a7eb4f155657b350b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
         },
         {
           "action": "comment",
