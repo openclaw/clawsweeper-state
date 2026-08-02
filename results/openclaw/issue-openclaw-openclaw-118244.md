@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118244"
 mode: "autonomous"
-run_id: "30771077260"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30771077260"
+run_id: "30772787106"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30772787106"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-02T23:19:39.790Z"
-canonical: "https://github.com/openclaw/openclaw/issues/118244"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/118244"
+published_at: "2026-08-02T23:48:46.854Z"
+canonical: "#118244"
+canonical_issue: "#118244"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30771077260](https://github.com/openclaw/clawsweeper/actions/runs/30771077260)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30772787106](https://github.com/openclaw/clawsweeper/actions/runs/30772787106)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/118244
+Canonical: #118244
 
 ## Summary
 
-The regression remains on current main: after a global package swap, the failed-update branch calls the generic in-process service restart, which retains the old binary’s future-config guard. Build a narrow PR that selects the existing updated-install restart mechanism only after a verified successful package swap and a subsequent doctor failure.
+No implementation PR is needed. Hydrated GitHub state marks #118244 closed as of 2026-08-02T23:42:16Z, and latest main at b7f9cd0a01671f7be5fc34b4bd4bf6770603f480 already contains the requested recovery design: failed mutable updates restart the managed service with a visible diagnostic on restart failure, while successful package updates prepare an updated-install restart path. The local checkout is clean and exactly at origin/main; no files were changed. Focused tests were not run because node_modules is absent, but no validation is required for a no-change result.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ The regression remains on current main: after a global package swap, the failed-
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118244 | fix_needed | planned | canonical | A narrow repair is viable and preserves the existing older-binary destructive-action guard for all ordinary/early failures. |
-| cluster:issue-openclaw-openclaw-118244 | build_fix_artifact | planned | canonical | Create one focused fix PR from clawsweeper/issue-openclaw-openclaw-118244. |
+| #118244 | keep_closed | skipped | canonical | The requested fix is already present on current main and the only cluster item is already closed. Creating a duplicate implementation PR would add no value and violate the narrow one-cluster repair scope. |
 
 ## Needs Human
 

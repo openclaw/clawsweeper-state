@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T23:45:20.468Z",
-  "count": 12,
+  "generated_at": "2026-08-02T23:49:11.360Z",
+  "count": 13,
   "summary": {
-    "open_prs": 12,
+    "open_prs": 13,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 12,
+    "needs_checks": 13,
     "needs_review": 0,
-    "needs_merge_preflight": 12,
+    "needs_merge_preflight": 13,
     "needs_result_backfill": 1
   },
   "dispatch": {
@@ -27,6 +27,63 @@
   },
   "prs": [
     {
+      "number": 118303,
+      "title": "fix(minimax): route M3 image calls through MiniMax VL",
+      "url": "https://github.com/openclaw/openclaw/pull/118303",
+      "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+      "head_sha": "8f02839bf0ea17f5c701fa504f91361386dfb56b",
+      "cluster_id": "issue-openclaw-openclaw-116601",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
+      "updated_at": "2026-08-02T23:47:22Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 102,
+        "counts": {
+          "CANCELLED": 5,
+          "IN_PROGRESS": 2,
+          "SKIPPED": 43,
+          "SUCCESS": 50,
+          "FAILURE": 1,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-node-changed:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30770644706",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30770644706",
+        "cluster_id": "issue-openclaw-openclaw-116601",
+        "published_at": "2026-08-02T23:44:26.333Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 118282,
       "title": "fix(doctor): import legacy exec approvals with null usage metadata",
       "url": "https://github.com/openclaw/openclaw/pull/118282",
@@ -34,7 +91,7 @@
       "head_sha": "c3e731b0b34789e47fb02b9d4556aa791016446e",
       "cluster_id": "issue-openclaw-openclaw-118242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118242.md",
-      "updated_at": "2026-08-02T23:42:07Z",
+      "updated_at": "2026-08-02T23:47:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
