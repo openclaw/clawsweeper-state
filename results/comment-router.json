@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:09:54.963Z",
+  "updated_at": "2026-08-02T01:10:11.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2559:5153205061:2026-08-01T22:12:11Z:clawsweeper_needs_human",
-      "comment_id": "5153205061",
-      "comment_version_key": "5153205061:2026-08-01T22:12:11Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2559#issuecomment-5153205061",
-      "comment_created_at": "2026-08-01T20:08:01Z",
-      "comment_updated_at": "2026-08-01T22:12:11Z",
-      "comment_body_sha256": "9117f3aeb22e35e7aea59aa202fbd0695712db6e0c0a4b9e31ebf13918aae308",
-      "repo": "steipete/codexbar",
-      "issue_number": 2559,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Each warm refresh adds filesystem enumeration and metadata reads across up to 30 older date partitions per Codex root. This is bounded rather than corpus-wide, but it can still worsen... (sha=405acceeb275458bcc8b9d3adde065a2e0638743)",
-      "expected_head_sha": "405acceeb275458bcc8b9d3adde065a2e0638743",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:12:53.551Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-warm-cache-resume",
-        "head_sha": "405acceeb275458bcc8b9d3adde065a2e0638743",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/sweet-cookie:37:5090569166:2026-08-01T22:12:25Z:clawsweeper_needs_human",
       "comment_id": "5090569166",
@@ -32424,6 +32391,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117400:5154350467:2026-08-02T01:09:33Z:re_review",
+      "comment_id": "5154350467",
+      "comment_version_key": "5154350467:2026-08-02T01:09:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5154350467",
+      "comment_created_at": "2026-08-02T01:09:33Z",
+      "comment_updated_at": "2026-08-02T01:09:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117400,
+      "author": "wangyan2026",
+      "author_id": 51532318,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T01:10:08.398Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-compaction-estimator-117358",
+        "head_sha": "3bfe80697f41fbad99716586a8c37facff0b1634",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
