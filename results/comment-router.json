@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T14:18:59.886Z",
+  "updated_at": "2026-08-02T14:20:00.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4956918809:2026-07-13T10:20:14Z:re_review",
-      "comment_id": "4956918809",
-      "comment_version_key": "4956918809:2026-07-13T10:20:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4956918809",
-      "comment_created_at": "2026-07-13T10:20:14Z",
-      "comment_updated_at": "2026-07-13T10:20:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:23:35.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4960385241:2026-07-13T16:46:51Z:re_review",
       "comment_id": "4960385241",
@@ -31330,6 +31303,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118003:5158479239:2026-08-02T14:19:20Z:clawsweeper_needs_human",
+      "comment_id": "5158479239",
+      "comment_version_key": "5158479239:2026-08-02T14:19:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118003#issuecomment-5158479239",
+      "comment_created_at": "2026-08-02T14:19:20Z",
+      "comment_updated_at": "2026-08-02T14:19:20Z",
+      "comment_body_sha256": "163faa4230e9409ca16aa627122c97d401d61a78ae8e745bd2c0185c24b0e041",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a data-loss guard boundary: the exception is appropriately limited to the legacy implicit main ID, but the direct config-I/O regression must remain green and the outstand... (sha=9635459587c8a895933e8715207b97532c71a195)",
+      "expected_head_sha": "9635459587c8a895933e8715207b97532c71a195",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T14:20:00.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-dev-gateway-roster",
+        "head_sha": "9635459587c8a895933e8715207b97532c71a195",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
