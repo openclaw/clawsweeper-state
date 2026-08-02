@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:21:50.511Z",
+  "updated_at": "2026-08-02T12:21:58.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117840:5156741899:2026-08-02T09:06:11Z:re_review",
-      "comment_id": "5156741899",
-      "comment_version_key": "5156741899:2026-08-02T09:06:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117840#issuecomment-5156741899",
-      "comment_created_at": "2026-08-02T09:06:11Z",
-      "comment_updated_at": "2026-08-02T09:06:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117840,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T09:06:46.695Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/117810-compact-queued-followup",
-        "head_sha": "6ece69cc3d09e1eb33d528ea9ca288cb710c9f81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97175:4815183474:2026-08-02T09:05:39Z:clawsweeper_auto_repair",
       "comment_id": "4815183474",
@@ -31322,6 +31275,39 @@
         "kind": "pull_request",
         "branch": "fix/gpt-5-6-sol-pro-target",
         "head_sha": "c6b38327cced3f46cee70b005072aec0e9ebcfdb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:318:4949923918:2026-08-02T12:21:26Z:clawsweeper_needs_human",
+      "comment_id": "4949923918",
+      "comment_version_key": "4949923918:2026-08-02T12:21:26Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/318#issuecomment-4949923918",
+      "comment_created_at": "2026-07-12T04:24:05Z",
+      "comment_updated_at": "2026-08-02T12:21:26Z",
+      "comment_body_sha256": "7bb46efb5d3e7379806b45b6637e84763936af0d730c25830417daf5cc348407",
+      "repo": "steipete/oracle",
+      "issue_number": 318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes human-readable browser launch, completion, session-table, and TUI text from requested keys to verified picker labels where available; external text parse... (sha=ea47e7ce2c64e67ca6dea15bde6297ff3d4b9081)",
+      "expected_head_sha": "ea47e7ce2c64e67ca6dea15bde6297ff3d4b9081",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:21:58.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-model-provenance",
+        "head_sha": "ea47e7ce2c64e67ca6dea15bde6297ff3d4b9081",
         "cluster_id": null,
         "job_path": null
       }
