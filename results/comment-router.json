@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:55:28.431Z",
+  "updated_at": "2026-08-02T18:55:29.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
-      "comment_id": "5055554259",
-      "comment_version_key": "5055554259:2026-07-23T07:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5055554259",
-      "comment_created_at": "2026-07-23T07:16:43Z",
-      "comment_updated_at": "2026-07-23T07:16:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T16:18:22.794Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5058756273:2026-07-23T13:08:44Z:re_review",
       "comment_id": "5058756273",
@@ -31432,6 +31405,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105025:4950152361:2026-08-02T18:50:21Z:clawsweeper_needs_human",
+      "comment_id": "4950152361",
+      "comment_version_key": "4950152361:2026-08-02T18:50:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105025#issuecomment-4950152361",
+      "comment_created_at": "2026-07-12T05:56:39Z",
+      "comment_updated_at": "2026-08-02T18:50:21Z",
+      "comment_body_sha256": "2e16520f0b6ea74bc203c7e033dd61dfbcd1022de2676c1390320c47b9b354fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused handler/provider-double coverage is useful, but the PR body confirms no exact-head approved-sender/device run; the supplied media manif...; Review finding: [P1] Move RCS to an external plugin distribution — extensions/rcs/package.json:9 - [P1] Redact RCS rate-limit identifiers — extensions/rcs/src/webhook.ts:77 - [med... (sha=693103a25ba92853eeaa3a46cb4906547ee19f54)",
+      "expected_head_sha": "693103a25ba92853eeaa3a46cb4906547ee19f54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:55:29.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rcs-channel-pr",
+        "head_sha": "693103a25ba92853eeaa3a46cb4906547ee19f54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
