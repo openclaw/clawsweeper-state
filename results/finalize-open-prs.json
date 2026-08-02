@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T16:06:04.626Z",
-  "count": 10,
+  "generated_at": "2026-08-02T16:18:13.635Z",
+  "count": 11,
   "summary": {
-    "open_prs": 10,
+    "open_prs": 11,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 11,
     "needs_review": 0,
-    "needs_merge_preflight": 10,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 11,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,56 @@
   },
   "prs": [
     {
+      "number": 118045,
+      "title": "docs: remove retired openai-codex from /login valid args",
+      "url": "https://github.com/openclaw/openclaw/pull/118045",
+      "branch": "clawsweeper/automerge-openclaw-openclaw-114609",
+      "head_sha": "a1d1f2f9b678d4ab6c2b5070099de8e3a2d2a75c",
+      "cluster_id": "automerge-openclaw-openclaw-114609",
+      "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114609.md",
+      "updated_at": "2026-08-02T16:17:09Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 52,
+        "counts": {
+          "CANCELLED": 2,
+          "SKIPPED": 32,
+          "SUCCESS": 18
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118045#issuecomment-5159160915",
+            "submitted_at": "2026-08-02T16:17:09Z"
+          }
+        ]
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117976,
       "title": "fix(memory): resolve Google embedding provider alias",
       "url": "https://github.com/openclaw/openclaw/pull/117976",
@@ -34,7 +84,7 @@
       "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T16:05:39Z",
+      "updated_at": "2026-08-02T16:16:54Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -112,7 +162,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T16:03:28Z",
+      "updated_at": "2026-08-02T16:16:50Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -190,7 +240,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T16:03:02Z",
+      "updated_at": "2026-08-02T16:16:49Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -268,9 +318,9 @@
       "head_sha": "feb4f6b10608df1ff5649d21a476736dfc96b70f",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T16:05:49Z",
+      "updated_at": "2026-08-02T16:16:44Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -331,7 +381,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
@@ -345,17 +395,17 @@
       "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
       "cluster_id": "issue-openclaw-openclaw-69242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
-      "updated_at": "2026-08-02T15:42:57Z",
+      "updated_at": "2026-08-02T16:14:22Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 134,
+        "total": 140,
         "counts": {
           "CANCELLED": 7,
-          "SKIPPED": 42,
-          "SUCCESS": 84,
+          "SKIPPED": 45,
+          "SUCCESS": 87,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -505,32 +555,61 @@
       "title": "fix(agents): preserve explicit model references in alias guidance",
       "url": "https://github.com/openclaw/openclaw/pull/117869",
       "branch": "clawsweeper/issue-openclaw-openclaw-61949",
-      "head_sha": "939bb20056395713273c0f00911b94e6985db5d8",
+      "head_sha": "a1525e5a40a63d25ad092d83a6c615a497d069ff",
       "cluster_id": "issue-openclaw-openclaw-61949",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-61949.md",
-      "updated_at": "2026-08-02T13:35:30Z",
+      "updated_at": "2026-08-02T16:16:14Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 142,
+        "total": 117,
         "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 45,
-          "SUCCESS": 81,
-          "FAILURE": 2,
+          "SUCCESS": 41,
+          "IN_PROGRESS": 38,
+          "SKIPPED": 37,
           "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / build-artifacts:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -573,8 +652,8 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CodeQL / Security High (process-exec-boundary):IN_PROGRESS; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -587,7 +666,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T16:03:15Z",
+      "updated_at": "2026-08-02T16:16:44Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -749,7 +828,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T16:04:16Z",
+      "updated_at": "2026-08-02T16:16:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
