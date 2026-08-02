@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T16:49:19.275Z
+Generated: 2026-08-02T16:53:46.488Z
 
 ## Summary
 
@@ -14,7 +14,7 @@ Generated: 2026-08-02T16:49:19.275Z
 | needs_checks | 12 |
 | needs_review | 0 |
 | needs_merge_preflight | 13 |
-| needs_result_backfill | 1 |
+| needs_result_backfill | 0 |
 
 ## Dispatch
 
@@ -30,9 +30,9 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118064](https://github.com/openclaw/openclaw/pull/118064) | fix(line): skip invalid location messages before delivery | issue-openclaw-openclaw-118029 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:44 SUCCESS:50 NEUTRAL:1; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118064](https://github.com/openclaw/openclaw/pull/118064) | fix(line): skip invalid location messages before delivery | issue-openclaw-openclaw-118029 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:44 SUCCESS:50 NEUTRAL:1; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118055](https://github.com/openclaw/openclaw/pull/118055) | fix(line): clear default access token when removing account | issue-openclaw-openclaw-118039 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:44 SUCCESS:50 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118045](https://github.com/openclaw/openclaw/pull/118045) | docs: remove retired openai-codex from /login valid args | automerge-openclaw-openclaw-114609 | MERGEABLE | BEHIND | CANCELLED:2 SKIPPED:32 SUCCESS:18; blockers:1 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118045](https://github.com/openclaw/openclaw/pull/118045) | docs: remove retired openai-codex from /login valid args | automerge-openclaw-openclaw-114609 | MERGEABLE | BEHIND | CANCELLED:6 SKIPPED:35 SUCCESS:20; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | issue-openclaw-openclaw-90786 | MERGEABLE | BEHIND | CANCELLED:18 SKIPPED:52 SUCCESS:92 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117954](https://github.com/openclaw/openclaw/pull/117954) | fix(whatsapp): honor disabled self-chat admission | issue-openclaw-openclaw-117941 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:45 SUCCESS:74 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117952](https://github.com/openclaw/openclaw/pull/117952) | fix(control-ui): wait for delayed Talk source replies | issue-openclaw-openclaw-117899 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:40 SUCCESS:86 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

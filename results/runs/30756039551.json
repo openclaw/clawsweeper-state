@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118029",
+  "mode": "autonomous",
+  "run_id": "30756039551",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30756039551",
+  "head_sha": "8cdf2a157a0450c40b6a1e9d4474213cc901936d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118029.md",
+  "published_at": "2026-08-02T16:52:36.420Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118029",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118029",
+  "canonical_pr": null,
+  "summary": "#118029 remains reproducible on pinned main 38a5d39b33284a8ca17efe120b239039b3f37c23. The parser creates an empty required address, while direct LineChannelData locations bypass parser validation through ordinary outbound, inline quick-reply batching, and auto-reply delivery. Build one narrow PR that makes location construction the canonical non-empty title/address boundary, rejects malformed directive state at its producer, and skips invalid direct locations without blocking surrounding text.",
+  "actions": [
+    {
+      "target": "#118029",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118029",
+      "candidate_fix": null,
+      "reason": "This is a reproducible non-security message-loss bug with a narrow owner-boundary repair; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118029",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#118029",
+      "candidate_fix": null,
+      "reason": "The current fix artifact was too narrow because it covered only parser state; this replacement artifact covers the direct channel-data invariant without expanding product scope."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118029",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#118029",
+      "candidate_fix": null,
+      "reason": "The job permits a new implementation PR but prohibits merge and issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118064",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118029",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118064",
+      "commit": "faffa66caa8d619a793c5d4126bf7bda95c2e99b",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118029",
+      "pr": "https://github.com/openclaw/openclaw/pull/118064",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118064",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118064",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(line): skip invalid location messages before delivery",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
