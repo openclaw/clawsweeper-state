@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:35:59.089Z",
+  "updated_at": "2026-08-02T19:36:00.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5122347661:2026-07-29T19:07:36Z:re_review",
-      "comment_id": "5122347661",
-      "comment_version_key": "5122347661:2026-07-29T19:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5122347661",
-      "comment_created_at": "2026-07-29T19:07:36Z",
-      "comment_updated_at": "2026-07-29T19:07:36Z",
-      "comment_body_sha256": "ad0c52d6f78c0daa2725b3675a166f53944a44a98c1b441dd005349d23490039",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now f011010935. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T17:07:02.019Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5123874426:2026-07-29T22:09:43Z:re_review",
       "comment_id": "5123874426",
@@ -31602,6 +31575,39 @@
         "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
         "cluster_id": "issue-openclaw-openclaw-117941",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117509:5152553795:2026-08-02T19:35:23Z:clawsweeper_auto_repair",
+      "comment_id": "5152553795",
+      "comment_version_key": "5152553795:2026-08-02T19:35:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117509#issuecomment-5152553795",
+      "comment_created_at": "2026-08-01T17:28:27Z",
+      "comment_updated_at": "2026-08-02T19:35:23Z",
+      "comment_body_sha256": "1d341efdfe06350e2f97b43d4c4866e46bd1ab66d3d38ad1e8444d434370283e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3baee1f56fbb0383df77d486e0f4d36ae35c4bca)",
+      "expected_head_sha": "3baee1f56fbb0383df77d486e0f4d36ae35c4bca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:36:00.112Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-yield-visible-ack",
+        "head_sha": "3baee1f56fbb0383df77d486e0f4d36ae35c4bca",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
