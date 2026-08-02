@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:39:20.342Z",
+  "updated_at": "2026-08-02T01:40:01.323Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115286:5152112220:2026-08-01T15:36:25Z:re_review",
-      "comment_id": "5152112220",
-      "comment_version_key": "5152112220:2026-08-01T15:36:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5152112220",
-      "comment_created_at": "2026-08-01T15:36:25Z",
-      "comment_updated_at": "2026-08-01T15:36:25Z",
-      "comment_body_sha256": "53783cf38f73058ec869d3c3188eedf3c5270b70c8a73b0a8525e4db6da24e18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115286,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:43:00.150Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-01T22:42:45Z:clawsweeper_auto_repair",
       "comment_id": "5118719513",
@@ -31713,6 +31686,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117730:5154470097:2026-08-02T01:39:22Z:clawsweeper_needs_human",
+      "comment_id": "5154470097",
+      "comment_version_key": "5154470097:2026-08-02T01:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117730#issuecomment-5154470097",
+      "comment_created_at": "2026-08-02T01:39:22Z",
+      "comment_updated_at": "2026-08-02T01:39:22Z",
+      "comment_body_sha256": "7647f2577002c827b2dc93cac716d5eb90f7af9b006878dd78067e5e1f96f18a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117730,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This modifies release automation on the beta publish path; merge should wait for the remaining exact-head checks and the designated code-owner review, even though no source-level corr... (sha=4a866c75c6a0496a026f7dd89b73dedee8511fbe)",
+      "expected_head_sha": "4a866c75c6a0496a026f7dd89b73dedee8511fbe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:40:01.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-shallow-lock-timeout",
+        "head_sha": "4a866c75c6a0496a026f7dd89b73dedee8511fbe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
