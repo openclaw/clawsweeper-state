@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:26:39.241Z",
+  "updated_at": "2026-08-02T18:26:48.062Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118025:5158963360:2026-08-02T15:44:17Z:clawsweeper_needs_human",
-      "comment_id": "5158963360",
-      "comment_version_key": "5158963360:2026-08-02T15:44:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118025#issuecomment-5158963360",
-      "comment_created_at": "2026-08-02T15:44:17Z",
-      "comment_updated_at": "2026-08-02T15:44:17Z",
-      "comment_body_sha256": "1d37368fb102142841dd17d57ad7b627fc30509ee532e5e25b09c565914931e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes both terminal voice-session state and the delivery lifecycle for user-visible mutation summaries; merge review should verify that the bounded process-local retry policy i... (sha=834df423e09d42c79092f7be73b99f010d3d74d6)",
-      "expected_head_sha": "834df423e09d42c79092f7be73b99f010d3d74d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:47:49.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-close-digest-owner-20260802",
-        "head_sha": "834df423e09d42c79092f7be73b99f010d3d74d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:73:5158989104:2026-08-02T15:48:57Z:clawsweeper_auto_repair",
       "comment_id": "5158989104",
@@ -31561,6 +31528,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118115:5159736814:2026-08-02T18:26:16Z:re_review",
+      "comment_id": "5159736814",
+      "comment_version_key": "5159736814:2026-08-02T18:26:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118115#issuecomment-5159736814",
+      "comment_created_at": "2026-08-02T18:26:16Z",
+      "comment_updated_at": "2026-08-02T18:26:16Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118115,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T18:26:46.242Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-compaction-write-classifier-full",
+        "head_sha": "5a9a1c5dddc36209b10886d4a4370daa38d1c998",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
