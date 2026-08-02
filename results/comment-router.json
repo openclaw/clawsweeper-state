@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:48:13.668Z",
+  "updated_at": "2026-08-02T09:48:23.926Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112669:5078729265:2026-08-02T05:26:37Z:autoclose",
-      "comment_id": "5078729265",
-      "comment_version_key": "5078729265:2026-08-02T05:26:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112669#issuecomment-5078729265",
-      "comment_created_at": "2026-07-25T13:50:33Z",
-      "comment_updated_at": "2026-08-02T05:26:37Z",
-      "comment_body_sha256": "a0a472fea2aa06471dcd904a2b7a34ccd563ccecc66551ddd7a5ad19b31d8951",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112669,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required (sha=e63821e26973078571ae0b503ff1c7c572e844a7)",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required (sha=e63821e26973078571ae0b503ff1c7c572e844a7)",
-      "expected_head_sha": "e63821e26973078571ae0b503ff1c7c572e844a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:21:30.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stuck-recovery-run-identity-104589",
-        "head_sha": "e63821e26973078571ae0b503ff1c7c572e844a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113801:5080317284:2026-08-02T05:36:26Z:clawsweeper_needs_human",
       "comment_id": "5080317284",
@@ -32380,6 +32347,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T09:48:13.667Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117888:5156232879:2026-08-02T09:47:41Z:clawsweeper_needs_human",
+      "comment_id": "5156232879",
+      "comment_version_key": "5156232879:2026-08-02T09:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117888#issuecomment-5156232879",
+      "comment_created_at": "2026-08-02T07:32:47Z",
+      "comment_updated_at": "2026-08-02T09:47:41Z",
+      "comment_body_sha256": "ebf06a03325090aebbfbc6be10fdf94722529475d25abc6c46b2be0c2eed3ea3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117888,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve the Windows taskkill executable explicitly (P2)** - spawn(\"taskkill\", ...) resolves through the inherited Windows command-search path, so a modified environment can replace this new automatic teardown ex...; Review finding: [P2] Resolve the Windows taskkill executable explicitly — extensions/acpx/src/runtime-internals/mcp-proxy.mjs:75 - [medium] Bare taskkill command uses inherited co... (sha=d2c233ce90dbf3c128cb8faf5b7a7c07fb159209)",
+      "expected_head_sha": "d2c233ce90dbf3c128cb8faf5b7a7c07fb159209",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:48:23.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acpx-mcp-proxy-stdin-eof",
+        "head_sha": "d2c233ce90dbf3c128cb8faf5b7a7c07fb159209",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
