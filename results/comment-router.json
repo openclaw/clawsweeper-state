@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:05:55.831Z",
+  "updated_at": "2026-08-02T07:05:58.805Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117732:5154525544:2026-08-02T02:02:13Z:clawsweeper_needs_human",
-      "comment_id": "5154525544",
-      "comment_version_key": "5154525544:2026-08-02T02:02:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117732#issuecomment-5154525544",
-      "comment_created_at": "2026-08-02T01:53:23Z",
-      "comment_updated_at": "2026-08-02T02:02:13Z",
-      "comment_body_sha256": "d7d9cc21ca9f1b1258bba3812a04505657a34ce1a2e34d90ace6c50a531d7709",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117732,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes live Talk session-state semantics: an unusually high number of distinct terminal calls now visibly closes the session rather than evicting dedupe state; maintainers... (sha=1ffcfdd168c05d33e764ac111cf9f49be1f7fa31)",
-      "expected_head_sha": "1ffcfdd168c05d33e764ac111cf9f49be1f7fa31",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T02:45:39.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-webrtc-tool-call-bounds-20260802",
-        "head_sha": "1ffcfdd168c05d33e764ac111cf9f49be1f7fa31",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117743:5154570131:2026-08-02T02:34:47Z:clawsweeper_needs_human",
       "comment_id": "5154570131",
@@ -32195,6 +32162,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114678:5156093656:2026-08-02T07:05:09Z:re_review",
+      "comment_id": "5156093656",
+      "comment_version_key": "5156093656:2026-08-02T07:05:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114678#issuecomment-5156093656",
+      "comment_created_at": "2026-08-02T07:05:09Z",
+      "comment_updated_at": "2026-08-02T07:05:09Z",
+      "comment_body_sha256": "110a60f665bfd1150ebbad8ce93fe67811e8a21b0efd545fe60ba30874705f8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114678,
+      "author": "harjothkhara",
+      "author_id": 48686985,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the p1 and both p1 merge-risk items are addressed, so `waiting on author` is stale",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T07:05:56.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/112395-state-dir-skip-notice",
+        "head_sha": "bc6f1353d8769334b18b4c1019ec0cedda842073",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
