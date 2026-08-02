@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:05:41.003Z",
+  "updated_at": "2026-08-02T11:07:00.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103928:4939369306:2026-08-02T07:27:41Z:clawsweeper_needs_human",
-      "comment_id": "4939369306",
-      "comment_version_key": "4939369306:2026-08-02T07:27:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103928#issuecomment-4939369306",
-      "comment_created_at": "2026-07-10T20:40:31Z",
-      "comment_updated_at": "2026-08-02T07:27:41Z",
-      "comment_body_sha256": "4606c5680939dbbcd4b9c6818636ef7cac400a010faef41637f056668a67cde8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103928,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes a real Feishu improvement, but it names an older deployment revision and provides no inspectable redacted current-hea... (sha=94342e97638e5fbcda27421d478ce41df63a5863)",
-      "expected_head_sha": "94342e97638e5fbcda27421d478ce41df63a5863",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T08:10:55.002Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-streaming-latest-wins",
-        "head_sha": "94342e97638e5fbcda27421d478ce41df63a5863",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110703:5011410813:2026-08-02T07:52:34Z:clawsweeper_needs_human",
       "comment_id": "5011410813",
@@ -31659,6 +31626,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-02T11:06:24Z:clawsweeper_needs_human",
+      "comment_id": "5154331249",
+      "comment_version_key": "5154331249:2026-08-02T11:06:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
+      "comment_created_at": "2026-08-02T01:05:01Z",
+      "comment_updated_at": "2026-08-02T11:06:24Z",
+      "comment_body_sha256": "a8568e92782c0c98926fc2d9b144d674162ad9060bbc88e60214e54f9b2877d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR base predates current main, including changes to the shared message-bubble surface; refresh GitHub's exact merge result and required checks before landing rather than assuming... (sha=e92f3b61d62e2cbd2002ed17fad903e7267511c3)",
+      "expected_head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T11:07:00.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-88079",
+        "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
+        "cluster_id": "automerge-openclaw-openclaw-117721",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117721.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
