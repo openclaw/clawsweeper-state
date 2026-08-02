@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118083",
+  "mode": "autonomous",
+  "run_id": "30761125878",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30761125878",
+  "head_sha": "5f8543d985cc58431f107b3d0ecd1a7fb834d73e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118083.md",
+  "published_at": "2026-08-02T18:57:00.429Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118083",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118083",
+  "canonical_pr": null,
+  "summary": "Verified against current main d02101d7ceb6a8e9d34c5674479c1abaa467f7ed: the shared canonical timeout matcher still omits `stream disconnected` and `premature close`, while Cron already consumes the existing `timeout` reason for bounded retries. A narrow four-file fix PR remains appropriate; no persisted `network` reason or protocol change is needed.",
+  "actions": [
+    {
+      "target": "#118083",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "This is a source-proven shared transport-classification bug; repairing the shared producer is narrower and safer than adding downstream Cron-only policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118083",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "A small, test-led fix is permitted by the job and requires no product, configuration, dependency, persistence, or security-boundary decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118083",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "The job permits one implementation PR and no viable contributor PR exists in the hydrated item matrix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118130",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118083",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118130",
+      "commit": "590af263ff24773db86c91fc06a776af3a6b4182",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118083",
+      "pr": "https://github.com/openclaw/openclaw/pull/118130",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118130",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118130",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(failover): classify interrupted transport failures as timeouts",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
