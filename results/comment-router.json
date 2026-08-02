@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:47:53.508Z",
+  "updated_at": "2026-08-02T18:48:05.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114609:5092794580:2026-07-27T14:45:19Z:automerge",
-      "comment_id": "5092794580",
-      "comment_version_key": "5092794580:2026-07-27T14:45:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114609#issuecomment-5092794580",
-      "comment_created_at": "2026-07-27T14:45:19Z",
-      "comment_updated_at": "2026-07-27T14:45:19Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114609,
-      "author": "Takhoffman",
-      "author_id": 781889,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T16:05:30.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/fix-slash-commands-login",
-        "head_sha": "396446afe4a311c58a9bba06487ad95b0a8ae855",
-        "cluster_id": "automerge-openclaw-openclaw-114609",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114609.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114609.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114609:5092701188:2026-08-02T16:04:56Z:clawsweeper_auto_merge",
       "comment_id": "5092701188",
@@ -31464,6 +31405,39 @@
         "kind": "pull_request",
         "branch": "fix/channels-status-all",
         "head_sha": "e096241428c932dc19dbb6425555a93e425eed2e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118126:5159818439:2026-08-02T18:47:27Z:clawsweeper_needs_human",
+      "comment_id": "5159818439",
+      "comment_version_key": "5159818439:2026-08-02T18:47:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118126#issuecomment-5159818439",
+      "comment_created_at": "2026-08-02T18:47:27Z",
+      "comment_updated_at": "2026-08-02T18:47:27Z",
+      "comment_body_sha256": "765c4b8a3666b2cb99364a920074c275fc3ac0d2925b77e3b35c1e30936dcfc8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before merge, a maintainer should read the latest ClawSweeper comment and apply or explicitly waive its Rank-up moves; its body was filtered from the supplied context and GitHub was u... (sha=d3c481d70b5092fe40a078cd15f7ecbc5415c7af)",
+      "expected_head_sha": "d3c481d70b5092fe40a078cd15f7ecbc5415c7af",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:48:05.267Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0802-channel-receipt-identity",
+        "head_sha": "d3c481d70b5092fe40a078cd15f7ecbc5415c7af",
         "cluster_id": null,
         "job_path": null
       }
