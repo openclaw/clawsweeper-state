@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:23:24.354Z",
+  "updated_at": "2026-08-02T12:26:14.480Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5073569541:2026-07-24T19:13:53Z:re_review",
-      "comment_id": "5073569541",
-      "comment_version_key": "5073569541:2026-07-24T19:13:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5073569541",
-      "comment_created_at": "2026-07-24T19:13:53Z",
-      "comment_updated_at": "2026-07-24T19:13:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T09:06:49.601Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5076002559:2026-07-25T01:09:13Z:re_review",
       "comment_id": "5076002559",
@@ -31373,6 +31346,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T12:23:24.353Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:17:5122296130:2026-08-02T12:25:23Z:clawsweeper_needs_human",
+      "comment_id": "5122296130",
+      "comment_version_key": "5122296130:2026-08-02T12:25:23Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/17#issuecomment-5122296130",
+      "comment_created_at": "2026-07-29T19:02:21Z",
+      "comment_updated_at": "2026-08-02T12:25:23Z",
+      "comment_body_sha256": "fb6849f565c3aae4285fa5d65e943bd665a7fd9c56691cdb7c54ebb6abedb2fe",
+      "repo": "openclaw/uirouter",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the new write-capable action runtime** - This major upgrade changes the code executed by a scheduled workflow that can label and close issues and pull requests; accept it only af...; Review finding: [medium] Review the new write-capable action runtime — .github/workflows/stale.yml:19 (sha=d072b339feb67a48c62da6bbef3105446ab355c9)",
+      "expected_head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:26:14.479Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "d072b339feb67a48c62da6bbef3105446ab355c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
