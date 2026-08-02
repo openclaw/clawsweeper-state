@@ -1,38 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:10:49.484Z",
+  "updated_at": "2026-08-02T15:11:27.821Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117951",
-      "comment_id": "repair-loop-label-sweep:autofix:117951",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117951",
-      "comment_created_at": "2026-08-02T10:59:42.911Z",
-      "comment_updated_at": "2026-08-02T10:59:42.911Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117951,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-02T11:01:40.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-        "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
-        "cluster_id": "issue-openclaw-openclaw-73478",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md"
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:117952",
       "comment_id": "repair-loop-label-sweep:autofix:117952",
@@ -31421,6 +31389,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111217:5014427228:2026-08-02T15:10:48Z:clawsweeper_needs_human",
+      "comment_id": "5014427228",
+      "comment_version_key": "5014427228:2026-08-02T15:10:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111217#issuecomment-5014427228",
+      "comment_created_at": "2026-07-19T04:57:54Z",
+      "comment_updated_at": "2026-08-02T15:10:48Z",
+      "comment_body_sha256": "a10e15974af3317eafabd10b772bed5158ba5445c60455892e6ee9b07014ca56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111217,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR provides useful controlled loopback TCP/WebSocket terminal output and focused tests, but this OpenAI-facing transport change la... (sha=aac695e27c737b3f7f0df92260cbb934499ff99a)",
+      "expected_head_sha": "aac695e27c737b3f7f0df92260cbb934499ff99a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:11:27.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bug-049-connect-websocket-timeout",
+        "head_sha": "aac695e27c737b3f7f0df92260cbb934499ff99a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
