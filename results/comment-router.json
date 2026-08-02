@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:58:17.069Z",
+  "updated_at": "2026-08-02T15:58:17.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4837707279:2026-06-29T22:13:34Z:re_review",
-      "comment_id": "4837707279",
-      "comment_version_key": "4837707279:2026-06-29T22:13:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4837707279",
-      "comment_created_at": "2026-06-29T22:13:34Z",
-      "comment_updated_at": "2026-06-29T22:13:34Z",
-      "comment_body_sha256": "5e04065696c1109a9e8aee049087278d38f8b5f0320c873ede3dc4181a8976b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto upstream/main (clean, 3 commits replayed, no conflicts) to refresh against latest main; no behavior change. new head a952d0bc35. all pr-touched unit tests green locally (command-queue 34, context-engine-maintenance 30, transcript-rewrite 7, diagnostic 73)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:31:27.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4842373781:2026-06-30T10:27:22Z:re_review",
       "comment_id": "4842373781",
@@ -31280,6 +31253,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T15:58:17.069Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118031:5159042815:2026-08-02T15:57:39Z:clawsweeper_auto_repair",
+      "comment_id": "5159042815",
+      "comment_version_key": "5159042815:2026-08-02T15:57:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118031#issuecomment-5159042815",
+      "comment_created_at": "2026-08-02T15:57:39Z",
+      "comment_updated_at": "2026-08-02T15:57:39Z",
+      "comment_body_sha256": "8116c3f37d9413dd244ffaae74af1bf49925f7c974bd8ec45a324e1230f37f7f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b2ebfff86995ee4ca311ddf895737a33017ec110)",
+      "expected_head_sha": "b2ebfff86995ee4ca311ddf895737a33017ec110",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:58:17.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-required-validation-children",
+        "head_sha": "b2ebfff86995ee4ca311ddf895737a33017ec110",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
