@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:21:45.653Z",
+  "updated_at": "2026-08-02T07:22:10.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89636:5154814161:2026-08-02T02:58:08Z:re_review",
-      "comment_id": "5154814161",
-      "comment_version_key": "5154814161:2026-08-02T02:58:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89636#issuecomment-5154814161",
-      "comment_created_at": "2026-08-02T02:58:08Z",
-      "comment_updated_at": "2026-08-02T02:58:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89636,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:58:42.268Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-persona-secretref",
-        "head_sha": "96440a58c10dab77b9d49c46e601bdbfb6824b15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:61:5154816118:2026-08-02T02:58:33Z:clawsweeper_auto_repair",
       "comment_id": "5154816118",
@@ -32178,6 +32131,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-78458-dreaming-startup-cleanup",
         "head_sha": "d631985fbbb61ea0a154109c8f87303f906c9781",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117681:5153944840:2026-08-02T07:21:30Z:clawsweeper_needs_human",
+      "comment_id": "5153944840",
+      "comment_version_key": "5153944840:2026-08-02T07:21:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117681#issuecomment-5153944840",
+      "comment_created_at": "2026-08-01T23:17:09Z",
+      "comment_updated_at": "2026-08-02T07:21:30Z",
+      "comment_body_sha256": "acd3df249f76a0223f8f3fee6ad5c50c3c79daa2287584ac77a25d331ee66eac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and follow-up show focused test output, but no redacted after-fix Control UI or Gateway run demonstrates separate detail and instal...; Review finding: [P1] Declare publisher handles in the shared search-result schema — packages/gateway-protocol/src/schema/agents-models-skills.ts:405-414 - [P2] Key detail requests... (sha=c2a0a87b3afbf0bbd54bd2a9fec2b1a8ca1eb3a4)",
+      "expected_head_sha": "c2a0a87b3afbf0bbd54bd2a9fec2b1a8ca1eb3a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:22:10.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/117633-clawhub-slug-collision",
+        "head_sha": "c2a0a87b3afbf0bbd54bd2a9fec2b1a8ca1eb3a4",
         "cluster_id": null,
         "job_path": null
       }
