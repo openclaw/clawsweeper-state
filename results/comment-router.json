@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:18:27.615Z",
+  "updated_at": "2026-08-02T18:21:49.757Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101276:4928129847:2026-07-09T18:07:00Z:re_review",
-      "comment_id": "4928129847",
-      "comment_version_key": "4928129847:2026-07-09T18:07:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101276#issuecomment-4928129847",
-      "comment_created_at": "2026-07-09T18:07:00Z",
-      "comment_updated_at": "2026-07-09T18:07:00Z",
-      "comment_body_sha256": "17f4e8f852827dfa1dda6ad801c26ef48480e0262d229c62e09cf143a7229ce5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101276,
-      "author": "nicknmorty",
-      "author_id": 16600979,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:30:08.118Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101276:4940081051:2026-07-10T22:36:19Z:re_review",
       "comment_id": "4940081051",
@@ -31539,6 +31512,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-08-02T18:21:08Z:clawsweeper_needs_human",
+      "comment_id": "5133286180",
+      "comment_version_key": "5133286180:2026-08-02T18:21:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5133286180",
+      "comment_created_at": "2026-07-30T16:03:22Z",
+      "comment_updated_at": "2026-08-02T18:21:08Z",
+      "comment_body_sha256": "4c3638628fafa680f0ec97ab9da82ebe6832c19e74e73659e09ef28c174fe4f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify private endpoint target validation** - This PR installs a descriptor read from the QA child temp root into the Discord runtime; because the descriptor controls authenticated REST...; Review finding: [medium] Verify private endpoint target validation — extensions/qa-lab/src/crabline-discord-provider-endpoint.ts:49 (sha=82b40d129f7c0953785ac5d76889dcdce0b3ce2a)",
+      "expected_head_sha": "82b40d129f7c0953785ac5d76889dcdce0b3ce2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:21:49.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-crabline-discord-0.1.13",
+        "head_sha": "82b40d129f7c0953785ac5d76889dcdce0b3ce2a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
