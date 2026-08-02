@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:24:25.627Z",
+  "updated_at": "2026-08-02T06:26:11.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/camsnap:11:5154597994:2026-08-02T02:10:09Z:re_review",
-      "comment_id": "5154597994",
-      "comment_version_key": "5154597994:2026-08-02T02:10:09Z",
-      "comment_url": "https://github.com/steipete/camsnap/pull/11#issuecomment-5154597994",
-      "comment_created_at": "2026-08-02T02:10:09Z",
-      "comment_updated_at": "2026-08-02T02:10:09Z",
-      "comment_body_sha256": "67e511796d75610386ea53091d53c82c65f4fc63db8eb1176d93d17543d0fd2a",
-      "repo": "steipete/camsnap",
-      "issue_number": 11,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "OWNER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:10:53.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-capture",
-        "head_sha": "98c3dc1bc8ae384080c3cace439a93efff7be82d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114587:5091871894:2026-08-02T02:10:34Z:clawsweeper_auto_repair",
       "comment_id": "5091871894",
@@ -32538,6 +32491,39 @@
         "head_sha": "d03a4ffcda603e12fc6a75bfadf731dec6e21b55",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117869:5155913641:2026-08-02T06:25:41Z:clawsweeper_auto_merge",
+      "comment_id": "5155913641",
+      "comment_version_key": "5155913641:2026-08-02T06:25:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117869#issuecomment-5155913641",
+      "comment_created_at": "2026-08-02T06:25:41Z",
+      "comment_updated_at": "2026-08-02T06:25:41Z",
+      "comment_body_sha256": "635401797a128f291691829c548991a1ee11752fb731771be052a738b5315c97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117869,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=939bb20056395713273c0f00911b94e6985db5d8)",
+      "expected_head_sha": "939bb20056395713273c0f00911b94e6985db5d8",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-02T06:26:11.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-61949",
+        "head_sha": "939bb20056395713273c0f00911b94e6985db5d8",
+        "cluster_id": "issue-openclaw-openclaw-61949",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-61949.md"
       }
     }
   ]
