@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:09:05.225Z",
+  "updated_at": "2026-08-02T05:09:08.929Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117560:5154363338:2026-08-02T01:12:31Z:re_review",
-      "comment_id": "5154363338",
-      "comment_version_key": "5154363338:2026-08-02T01:12:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117560#issuecomment-5154363338",
-      "comment_created_at": "2026-08-02T01:12:31Z",
-      "comment_updated_at": "2026-08-02T01:12:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117560,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:13:10.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-companion-transcript-seed",
-        "head_sha": "976044553438472664a71608c06d10580ae45753",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Tachikoma:40:5154365603:2026-08-02T01:12:57Z:re_review",
       "comment_id": "5154365603",
@@ -31954,6 +31907,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/agentchat-caa5a01",
         "head_sha": "6a26b11f0660f409a18b5768211df2ee81a7eb1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:217:4969657438:2026-08-02T05:08:26Z:clawsweeper_needs_human",
+      "comment_id": "4969657438",
+      "comment_version_key": "4969657438:2026-08-02T05:08:26Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/217#issuecomment-4969657438",
+      "comment_created_at": "2026-07-14T13:25:27Z",
+      "comment_updated_at": "2026-08-02T05:08:26Z",
+      "comment_body_sha256": "b8142433228cf8587bd2def02befb61eb2e6c0b881d354160e29a048f7a6526f",
+      "repo": "openclaw/crabpot",
+      "issue_number": 217,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging the branch as-is requires resolving conflicts between July 14 generated reports and newer current-main dashboard data; choosing the stale artifacts would misrepresent the actu... (sha=849551afef76329bb5696914b871b10944c1cb8a)",
+      "expected_head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:09:08.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/hyperspell-f994920",
+        "head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
         "cluster_id": null,
         "job_path": null
       }
