@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:51:38.481Z",
+  "updated_at": "2026-08-02T06:52:55.104Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-02T02:41:20Z:clawsweeper_needs_human",
-      "comment_id": "5121262567",
-      "comment_version_key": "5121262567:2026-08-02T02:41:20Z",
-      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
-      "comment_created_at": "2026-07-29T17:24:33Z",
-      "comment_updated_at": "2026-08-02T02:41:20Z",
-      "comment_body_sha256": "2e840938f7500d0307d2806af847439fde47e813e2a9bc09d5131557d9b51df1",
-      "repo": "openclaw/libterminal",
-      "issue_number": 43,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upstream implementation update for a workflow with issues: write and pull-requests: write; without controlled live output, the repository cannot confirm t... (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
-      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T02:43:26.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions/stale-11.0.0",
-        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:54:4863981862:2026-08-02T02:42:45Z:clawsweeper_needs_human",
       "comment_id": "4863981862",
@@ -32219,6 +32186,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:161:5088952324:2026-08-02T06:52:15Z:clawsweeper_needs_human",
+      "comment_id": "5088952324",
+      "comment_version_key": "5088952324:2026-08-02T06:52:15Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/161#issuecomment-5088952324",
+      "comment_created_at": "2026-07-27T08:18:06Z",
+      "comment_updated_at": "2026-08-02T06:52:15Z",
+      "comment_body_sha256": "8891e7fa65c61c924204fab442d357dbde83efbba03ca8d5543606087b8466b3",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body cites a redacted Windows transcript for an earlier commit and describes final-head assertions, but no inspectable final-he...; Review finding: [P1] Bind the locked handle to the validated file — skills/autoreview/scripts/autoreview:2127 - [medium] Windows replacement race can scan unvalidated content — sk... (sha=0fec2776d12b3c2b1b60ec1579055a92c5ce6594)",
+      "expected_head_sha": "0fec2776d12b3c2b1b60ec1579055a92c5ce6594",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T06:52:55.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-autoreview-snapshot-scan",
+        "head_sha": "0fec2776d12b3c2b1b60ec1579055a92c5ce6594",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
