@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:37:06.016Z",
+  "updated_at": "2026-08-02T01:39:20.342Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115286:5106969358:2026-08-01T22:42:07Z:clawsweeper_needs_human",
-      "comment_id": "5106969358",
-      "comment_version_key": "5106969358:2026-08-01T22:42:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5106969358",
-      "comment_created_at": "2026-07-28T16:35:24Z",
-      "comment_updated_at": "2026-08-01T22:42:07Z",
-      "comment_body_sha256": "72c4b2b70a7c9d0e171d7e52e4a49da8b58c98929872a3e54ee22bd89b1df4d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR has useful focused tests and redacted resolver output, but it lacks final-head real Telegram delivery evidence showing an autho...; Review finding: [P2] Reject bare ~ media roots — src/config/zod-schema.agent-defaults.ts:210 - [medium] Bare tilde grants the whole home directory — src/config/zod-schema.agent-de... (sha=7cd398003bf5a71e0841e909d33703504d35228c)",
-      "expected_head_sha": "7cd398003bf5a71e0841e909d33703504d35228c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:43:00.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-defaults-mediaLocalRoots",
-        "head_sha": "7cd398003bf5a71e0841e909d33703504d35228c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115286:5152112220:2026-08-01T15:36:25Z:re_review",
       "comment_id": "5152112220",
@@ -31699,6 +31666,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/Swiftdansi:4:5154467450:2026-08-02T01:38:43Z:re_review",
+      "comment_id": "5154467450",
+      "comment_version_key": "5154467450:2026-08-02T01:38:43Z",
+      "comment_url": "https://github.com/steipete/Swiftdansi/pull/4#issuecomment-5154467450",
+      "comment_created_at": "2026-08-02T01:38:43Z",
+      "comment_updated_at": "2026-08-02T01:38:43Z",
+      "comment_body_sha256": "c8793b42d0768d1c19dfc524a73c13f0d5f1ba199fb1903390df9f63843a8a71",
+      "repo": "steipete/Swiftdansi",
+      "issue_number": 4,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T01:39:17.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/dependency-refresh-20260801",
+        "head_sha": "209b7571dbf3ec3593efb9e208e6dc7687b9b31b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
