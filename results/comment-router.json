@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:16:51.195Z",
+  "updated_at": "2026-08-02T03:17:36.229Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88504:4618840420:2026-06-04T04:05:48Z:re_review",
-      "comment_id": "4618840420",
-      "comment_version_key": "4618840420:2026-06-04T04:05:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4618840420",
-      "comment_created_at": "2026-06-04T04:05:48Z",
-      "comment_updated_at": "2026-06-04T04:05:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88504,
-      "author": "kklouzal",
-      "author_id": 2928845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:40:31.325Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:88504:4759786923:2026-06-20T19:39:36Z:re_review",
       "comment_id": "4759786923",
@@ -32477,6 +32450,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T03:16:49Z:clawsweeper_needs_human",
+      "comment_id": "5153918023",
+      "comment_version_key": "5153918023:2026-08-02T03:16:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
+      "comment_created_at": "2026-08-01T23:09:04Z",
+      "comment_updated_at": "2026-08-02T03:16:49Z",
+      "comment_body_sha256": "9ff9ea3d6eae334adc80b4450562e25b0869867947cf794c04c6593c2878502d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117676,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep raw transcript turns out of durable promotion (P1)** - The session-corpus exception now applies at initial selection and all revalidation points, but selected snippets are written verbatim into MEMORY.md. i...; Review finding: [P1] Keep raw transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:302-304 - [medium] Raw session turns can cross i... (sha=7e6a8225c2007b87e8fdecb4f64330e8654523d5)",
+      "expected_head_sha": "7e6a8225c2007b87e8fdecb4f64330e8654523d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T03:17:36.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-transcript-turn-filter",
+        "head_sha": "7e6a8225c2007b87e8fdecb4f64330e8654523d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
