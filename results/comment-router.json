@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:46:44.550Z",
+  "updated_at": "2026-08-02T06:46:55.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117717:5154247551:2026-08-02T02:42:16Z:clawsweeper_auto_merge",
-      "comment_id": "5154247551",
-      "comment_version_key": "5154247551:2026-08-02T02:42:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117717#issuecomment-5154247551",
-      "comment_created_at": "2026-08-02T00:44:37Z",
-      "comment_updated_at": "2026-08-02T02:42:16Z",
-      "comment_body_sha256": "ecb529abf480e96b8379df87a8619ba30a4df675bf497074518fa514de8d8d82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117717,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=32880179ba4a9aca817a26e848158dba09c94377); current checks are failing: checks-node-compact-large-6:FAILURE, check-lint:FAILURE",
-      "expected_head_sha": "32880179ba4a9aca817a26e848158dba09c94377",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:42:51.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-117709",
-        "head_sha": "32880179ba4a9aca817a26e848158dba09c94377",
-        "cluster_id": "automerge-openclaw-openclaw-117717",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:198:5095966912:2026-08-02T02:42:21Z:clawsweeper_needs_human",
       "comment_id": "5095966912",
@@ -32208,6 +32155,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-channel-wizard-autonomous-progress-fd326",
         "head_sha": "fd326f72c3865529051c22ae8cd57407d8fc21de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117878:5156005128:2026-08-02T06:46:20Z:clawsweeper_needs_human",
+      "comment_id": "5156005128",
+      "comment_version_key": "5156005128:2026-08-02T06:46:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117878#issuecomment-5156005128",
+      "comment_created_at": "2026-08-02T06:46:20Z",
+      "comment_updated_at": "2026-08-02T06:46:20Z",
+      "comment_body_sha256": "b62677b9f08e809fc16d1e5bdda10016c6191c15d73d1b5e4755c0d0d49a7a61",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117878,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes prior hosted runs but does not provide an inspectable exact-head after-fix artifact in the available context; attach... (sha=3e666596acf6232bac1210ee8ef9d83ec494259d)",
+      "expected_head_sha": "3e666596acf6232bac1210ee8ef9d83ec494259d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T06:46:55.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-flip-proof-budgets",
+        "head_sha": "3e666596acf6232bac1210ee8ef9d83ec494259d",
         "cluster_id": null,
         "job_path": null
       }
