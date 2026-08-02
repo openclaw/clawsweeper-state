@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:52:51.150Z",
+  "updated_at": "2026-08-02T19:52:58.146Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109038:4993422912:2026-08-02T17:07:17Z:clawsweeper_needs_human",
-      "comment_id": "4993422912",
-      "comment_version_key": "4993422912:2026-08-02T17:07:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109038#issuecomment-4993422912",
-      "comment_created_at": "2026-07-16T15:03:23Z",
-      "comment_updated_at": "2026-08-02T17:07:17Z",
-      "comment_body_sha256": "1fea96b056df64a5c8db4bf3f191f68723005a1d8169640221605134dfa7a79b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109038,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes compatibility-sensitive session-history behavior: a missed caller could still select an incorrect store or expose an already-persisted current turn as prior context, so m... (sha=4883d027394fb2283417cda7be46543dee4c97c9)",
-      "expected_head_sha": "4883d027394fb2283417cda7be46543dee4c97c9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T17:18:26.070Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-session-header-short-read",
-        "head_sha": "4883d027394fb2283417cda7be46543dee4c97c9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117128:5159478327:2026-08-02T17:18:06Z:re_review",
       "comment_id": "5159478327",
@@ -31680,6 +31647,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118094:5160061298:2026-08-02T19:52:21Z:re_review",
+      "comment_id": "5160061298",
+      "comment_version_key": "5160061298:2026-08-02T19:52:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118094#issuecomment-5160061298",
+      "comment_created_at": "2026-08-02T19:52:21Z",
+      "comment_updated_at": "2026-08-02T19:52:21Z",
+      "comment_body_sha256": "6cba8d9de2b5a5902b43a8b2ae3a3ea37e9d1b55cd04ff0564bb88ba02452fcc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118094,
+      "author": "peterolkhov",
+      "author_id": 300679841,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T19:52:55.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-noop-compaction-hooks",
+        "head_sha": "211e8d0918bdd2be1373ad72f61320d4eff2c552",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
