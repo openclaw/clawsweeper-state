@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117911",
+  "mode": "autonomous",
+  "run_id": "30741072351",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30741072351",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117911.md",
+  "published_at": "2026-08-02T09:27:43.955Z",
+  "canonical": "#117911",
+  "canonical_issue": "#69242",
+  "canonical_pr": "#117911",
+  "summary": "Keep #117911 as the canonical repair candidate and repair its same-repository branch. Current main records only a generic foreground SIGKILL message; the branch has the right narrow owner path, but its `oomScoreAdjusted` fact incorrectly implies successful kernel adjustment even though the Linux wrapper suppresses write errors. The open issue #69242 remains related rather than fixed because this diagnostic does not establish or resolve that issue's reported non-OOM SIGKILL root cause.",
+  "actions": [
+    {
+      "target": "#117911",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117911",
+      "candidate_fix": "#117911",
+      "reason": "Repair the useful existing same-repo branch rather than replacing it. The change is exec-adjacent diagnostics only and does not alter the shell wrapper, authentication, approvals, sandboxing, or command-execution policy."
+    },
+    {
+      "target": "#117911",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117911",
+      "candidate_fix": "#117911",
+      "reason": "Produce a narrow contributor-branch repair artifact with explicit factual semantics, tests for positive and negative signal paths, and current-base validation."
+    },
+    {
+      "target": "#69242",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117911",
+      "candidate_fix": "#117911",
+      "reason": "Keep the issue open and use `Refs #69242` rather than `Closes #69242` in the repaired PR context."
+    },
+    {
+      "target": "#70419",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117911",
+      "candidate_fix": null,
+      "reason": "Historical merged context only."
+    },
+    {
+      "target": "#89104",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117911",
+      "candidate_fix": null,
+      "reason": "Historical merged context only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
