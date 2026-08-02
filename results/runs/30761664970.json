@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117976",
+  "mode": "autonomous",
+  "run_id": "30761664970",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30761664970",
+  "head_sha": "5f8543d985cc58431f107b3d0ecd1a7fb834d73e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md",
+  "published_at": "2026-08-02T18:49:16.699Z",
+  "canonical": "#117976",
+  "canonical_issue": "#90786",
+  "canonical_pr": "#117976",
+  "summary": "Plan a narrow repair of canonical PR #117976. The hydrated PR data shows the prior Codex P1 remains actionable: direct `google` alias fallback exists, but a configured custom provider whose API resolves to `google` does not reach the registered `gemini` adapter. No security-sensitive signal appears. Repair the writable same-repository contributor branch, preserve the existing attribution to #91310 and #90786, validate the two-file changed surface, and leave the PR open because this is autofix-only.",
+  "actions": [
+    {
+      "target": "#117976",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117976",
+      "candidate_fix": null,
+      "reason": "Repair the canonical PR branch before any merge consideration; autofix mode forbids merging and requires the PR remain open after passing proof."
+    },
+    {
+      "target": "#90786",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117976",
+      "candidate_fix": "#117976",
+      "reason": "Keep the reporting issue open while the canonical PR receives the required resolver repair and validation."
+    },
+    {
+      "target": "#91310",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117976",
+      "candidate_fix": "#117976",
+      "reason": "Historical contributor PR only; preserve its attribution in #117976 and do not mutate an already-closed item."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T18:44:41.035Z
+Generated: 2026-08-02T18:50:54.508Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 11 |
+| open_prs | 12 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 11 |
+| needs_checks | 12 |
 | needs_review | 0 |
-| needs_merge_preflight | 11 |
+| needs_merge_preflight | 12 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -30,6 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#118130](https://github.com/openclaw/openclaw/pull/118130) | fix(failover): classify interrupted transport failures as timeouts | issue-openclaw-openclaw-118083 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:40 SUCCESS:57 IN_PROGRESS:22 NEUTRAL:1; blockers:27 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118055](https://github.com/openclaw/openclaw/pull/118055) | fix(line): clear default access token when removing account | issue-openclaw-openclaw-118039 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:47 SUCCESS:50 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118045](https://github.com/openclaw/openclaw/pull/118045) | docs: remove retired openai-codex from /login valid args | automerge-openclaw-openclaw-114609 | MERGEABLE | BEHIND | CANCELLED:6 SKIPPED:35 SUCCESS:20; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | issue-openclaw-openclaw-90786 | MERGEABLE | BEHIND | CANCELLED:18 SKIPPED:52 SUCCESS:92 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
