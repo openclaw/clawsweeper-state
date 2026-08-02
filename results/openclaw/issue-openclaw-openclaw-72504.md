@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-72504"
 mode: "autonomous"
-run_id: "30737958053"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30737958053"
+run_id: "30738917010"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30738917010"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-02T08:01:36.168Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-02T08:29:53.259Z"
 canonical: "https://github.com/openclaw/openclaw/issues/72504"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/72504"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30737958053](https://github.com/openclaw/clawsweeper/actions/runs/30737958053)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30738917010](https://github.com/openclaw/clawsweeper/actions/runs/30738917010)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/72504
 
 ## Summary
 
-Latest preflight main (81031012b222275b9dc2a7bb6e431432a1144581) still deterministically removes the receiving bot’s mention while separately deriving activation from metadata. The narrow repair is clear, but this worker’s checkout is filesystem read-only, so it cannot create/update the required branch or run post-edit proof. An executor should implement the supplied new-PR artifact on clawsweeper/issue-openclaw-openclaw-72504.
+Current main at 86a95b459c94ff7d03b5279d5166b03a39ba1473 still strips the receiving bot's own Feishu mention in normalizeMentions, while group command handling separately computes a normalized probe but still dispatches the unnormalized CommandBody. The issue remains a narrow, non-security Feishu parser/context repair; plan one new credited fix PR.
 
 ## Impact
 
@@ -54,25 +54,26 @@ Latest preflight main (81031012b222275b9dc2a7bb6e431432a1144581) still determini
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/117906 | clawsweeper/issue-openclaw-openclaw-72504 |  |
+| issue_implementation_status_comment | updated | #72504 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #117906 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #72504 | fix_needed | planned | canonical | Issue #72504 is a real, narrow Feishu inbound-parser defect on latest main. Repair must preserve all relevant mention markup in the agent-facing body while retaining group command-only normalization. |
-| #40768 | keep_related | planned | related | Related multi-bot symptom, but unique activation identity problem requiring separate Feishu API/product evidence. |
-| #72532 | keep_closed | skipped | superseded | Historical contributor work informs the new narrow repair; no GitHub mutation is valid for an already closed PR. |
+| #72504 | fix_needed | planned | canonical | The canonical issue remains reproducible from current source and has a narrow owner-boundary repair. |
+| #40768 | keep_related | planned | related | Keep open as a distinct Feishu identity/activation decision; do not add cross-app identity fallbacks to this repair. |
+| #72532 | keep_closed | skipped | superseded | Historical contributor work is creditable source evidence only; no mutation is valid for an already-closed PR. |
 | #72661 | keep_closed | skipped | superseded | Historical alternative only; no closure or merge action is valid. |
-| #87004 | keep_closed | skipped | duplicate | Already-closed duplicate; retained only as historical evidence. |
-| cluster:issue-openclaw-openclaw-72504 | build_fix_artifact | planned | canonical | Executor should apply the narrow fix on the required branch, then run focused tests and the repository changed gate before opening or updating one PR. |
-| cluster:issue-openclaw-openclaw-72504 | open_fix_pr | blocked | canonical | Blocked only on executor write and push capability; implementation plan and validation commands are supplied below. |
+| #87004 | keep_closed | skipped | duplicate | Already-closed duplicate retained as historical evidence only. |
+| cluster:issue-openclaw-openclaw-72504 | build_fix_artifact | planned | canonical | Create one current-main fix PR using the supplied cluster branch and preserve contributor attribution in its body. |
+| cluster:issue-openclaw-openclaw-72504 | open_fix_pr | planned | canonical | Open only after the planned narrow patch, validation, and exact-head Codex review are clean. |
 
 ## Needs Human
 

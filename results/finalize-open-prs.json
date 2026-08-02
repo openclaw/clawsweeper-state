@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T08:01:56.663Z",
-  "count": 7,
+  "generated_at": "2026-08-02T08:30:36.259Z",
+  "count": 9,
   "summary": {
-    "open_prs": 7,
+    "open_prs": 9,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 6,
+    "needs_checks": 7,
     "needs_review": 0,
-    "needs_merge_preflight": 7,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 9,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,141 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 117911,
+      "title": "fix(exec): explain Linux OOM-score-adjusted SIGKILLs",
+      "url": "https://github.com/openclaw/openclaw/pull/117911",
+      "branch": "clawsweeper/issue-openclaw-openclaw-69242",
+      "head_sha": "12ebe46ce9a10365912feddcd3ab91a7b51e801e",
+      "cluster_id": "issue-openclaw-openclaw-69242",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
+      "updated_at": "2026-08-02T08:29:48Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 134,
+        "counts": {
+          "CANCELLED": 9,
+          "QUEUED": 2,
+          "SKIPPED": 41,
+          "SUCCESS": 73,
+          "IN_PROGRESS": 7,
+          "FAILURE": 1,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:QUEUED",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 117906,
+      "title": "fix(feishu): preserve self mentions in agent-facing group messages",
+      "url": "https://github.com/openclaw/openclaw/pull/117906",
+      "branch": "clawsweeper/issue-openclaw-openclaw-72504",
+      "head_sha": "9a5b84c1e24f03251bcf6b2f58440ec9ded68a94",
+      "cluster_id": "issue-openclaw-openclaw-72504",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-72504.md",
+      "updated_at": "2026-08-02T08:29:22Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 110,
+        "counts": {
+          "CANCELLED": 14,
+          "SKIPPED": 45,
+          "SUCCESS": 50,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117906#issuecomment-5156528698",
+            "submitted_at": "2026-08-02T08:26:16Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30738917010",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30738917010",
+        "cluster_id": "issue-openclaw-openclaw-72504",
+        "published_at": "2026-08-02T08:29:53.259Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117906",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(feishu): preserve self mentions in agent-facing group messages",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 117869,
       "title": "fix(agents): preserve explicit model references in alias guidance",
@@ -110,78 +245,22 @@
       "title": "fix(agents): verify delegated writes before reporting success",
       "url": "https://github.com/openclaw/openclaw/pull/117843",
       "branch": "clawsweeper/issue-openclaw-openclaw-67136",
-      "head_sha": "9ddf424c162dade8a37ac909beb52c4051d485ec",
+      "head_sha": "ad199bdec8c6eb5343dbaed699d2a9c024ccfb07",
       "cluster_id": "issue-openclaw-openclaw-67136",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67136.md",
-      "updated_at": "2026-08-02T08:00:07Z",
+      "updated_at": "2026-08-02T08:27:09Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 118,
+        "total": 123,
         "counts": {
-          "SUCCESS": 27,
-          "IN_PROGRESS": 54,
-          "SKIPPED": 36,
+          "SKIPPED": 38,
+          "SUCCESS": 84,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
-          "CI / pnpm-store-warmup:IN_PROGRESS",
-          "CI / build-artifacts:IN_PROGRESS",
-          "CI / checks-fast-max-lines-ratchet:IN_PROGRESS",
-          "CodeQL Critical Quality / Critical Quality (agent-runtime-boundary):IN_PROGRESS",
-          "CI / checks-fast-bundled-protocol:IN_PROGRESS",
-          "CI / checks-fast-bun-launcher:IN_PROGRESS",
-          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
-          "CI / checks-fast-contracts-plugins-a:IN_PROGRESS",
-          "CI / checks-fast-contracts-plugins-b:IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
-          "CI / checks-node-compact-large-1:IN_PROGRESS",
-          "CI / checks-node-compact-large-2:IN_PROGRESS",
-          "CI / checks-node-compact-large-3:IN_PROGRESS",
-          "CI / checks-node-compact-large-4:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-1:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-12:IN_PROGRESS",
-          "CI / checks-node-compact-small-13:IN_PROGRESS",
-          "CI / checks-node-compact-small-14:IN_PROGRESS",
-          "CI / checks-node-compact-small-15:IN_PROGRESS",
-          "CI / checks-node-compact-small-16:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-3:IN_PROGRESS",
-          "CI / checks-node-compact-small-4:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS",
-          "CI / check-guards:IN_PROGRESS",
-          "CI / check-npm-lock:IN_PROGRESS",
-          "CI / check-bundled-channel-config-metadata:IN_PROGRESS",
-          "CI / check-prod-types:IN_PROGRESS",
-          "CI / check-lint:IN_PROGRESS",
-          "CI / check-dependencies:IN_PROGRESS",
-          "CI / check-test-types:IN_PROGRESS",
-          "CI / check-additional-boundaries-a:IN_PROGRESS",
-          "CI / check-additional-boundaries-bcd:IN_PROGRESS",
-          "CI / check-prompt-snapshots:IN_PROGRESS",
-          "CI / check-session-accessor-boundary:IN_PROGRESS",
-          "CI / check-plugin-sdk-api-baseline:IN_PROGRESS",
-          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
-          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
-          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -217,11 +296,10 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
-        "needs_checks:CodeQL / Security High (process-exec-boundary):IN_PROGRESS; CI / pnpm-store-warmup:IN_PROGRESS; CI / build-artifacts:IN_PROGRESS",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 117721,
@@ -231,17 +309,17 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T07:56:44Z",
+      "updated_at": "2026-08-02T08:27:15Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 109,
+        "total": 112,
         "counts": {
           "CANCELLED": 7,
-          "SKIPPED": 25,
-          "SUCCESS": 77
+          "SKIPPED": 26,
+          "SUCCESS": 79
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
@@ -531,17 +609,17 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T07:57:12Z",
+      "updated_at": "2026-08-02T08:27:23Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 151,
+        "total": 154,
         "counts": {
           "CANCELLED": 14,
-          "SKIPPED": 48,
-          "SUCCESS": 88,
+          "SKIPPED": 49,
+          "SUCCESS": 90,
           "NEUTRAL": 1
         },
         "blockers": [
