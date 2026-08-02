@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-100845"
-mode: "autonomous"
-run_id: "30761325389"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30761325389"
+mode: "plan"
+run_id: "30761667170"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30761667170"
 head_sha: "5f8543d985cc58431f107b3d0ecd1a7fb834d73e"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-02T19:47:01.652Z"
+published_at: "2026-08-02T19:51:24.506Z"
 canonical: "#100845"
 canonical_issue: null
 canonical_pr: "#100845"
-actions_total: 1
+actions_total: 2
 fix_executed: 0
-fix_failed: 1
-fix_blocked: 1
+fix_failed: 0
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30761325389](https://github.com/openclaw/clawsweeper/actions/runs/30761325389)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30761667170](https://github.com/openclaw/clawsweeper/actions/runs/30761667170)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,16 +35,16 @@ Canonical: #100845
 
 ## Summary
 
-Make PR #100845 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Keep PR #100845 as the canonical contributor path and repair its branch before any merge consideration. The hydrated preflight reports an open, same-repository writable branch, but it is dirty against current main and its reviewed head predates the current repair requirements; merge is therefore not planned. No security-sensitive signal is present in the hydrated artifact.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
-| Fix failed | 1 |
-| Fix blocked | 1 |
+| Fix failed | 0 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,9 +54,7 @@ Make PR #100845 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | failed |  |  | Codex review-fix worker timed out after 30000ms |
-| execute_fix | blocked |  |  | Codex review-fix worker timed out after 30000ms |
-| automerge_repair_outcome_comment | updated | #100845 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -68,7 +66,8 @@ Make PR #100845 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #100845 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #100845 | fix_needed | planned | canonical | Repair the contributor branch rather than replace or close it; preserve the existing PR and contributor attribution. |
+| #100845 | build_fix_artifact | planned | canonical | Produce the bounded repair plan and validation contract for the existing PR branch. |
 
 ## Needs Human
 
