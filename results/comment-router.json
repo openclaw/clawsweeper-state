@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T04:41:15.438Z",
+  "updated_at": "2026-08-02T04:42:52.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115286:5151603853:2026-08-01T13:21:15Z:re_review",
-      "comment_id": "5151603853",
-      "comment_version_key": "5151603853:2026-08-01T13:21:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5151603853",
-      "comment_created_at": "2026-08-01T13:21:15Z",
-      "comment_updated_at": "2026-08-01T13:21:15Z",
-      "comment_body_sha256": "b7a296f31a8915710ac62b643c0b15b3e20e2f94a2fbeede1f3f7de9e0f1a78d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115286,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T00:25:55.200Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115286:5151762064:2026-08-01T14:04:28Z:re_review",
       "comment_id": "5151762064",
@@ -32560,6 +32533,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117817:5155385671:2026-08-02T04:42:08Z:clawsweeper_needs_human",
+      "comment_id": "5155385671",
+      "comment_version_key": "5155385671:2026-08-02T04:42:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117817#issuecomment-5155385671",
+      "comment_created_at": "2026-08-02T04:42:08Z",
+      "comment_updated_at": "2026-08-02T04:42:08Z",
+      "comment_body_sha256": "1d47d4289514ad6788c6b2b9da21ea7edf421158f67120786ba49beac13fbece",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117817,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports focused tests and static checks, but it contains no redacted after-fix browser or gateway output demonstrating the changed mas... (sha=8077c698c0858cb6a08853bbe51795dafc3ef60c)",
+      "expected_head_sha": "8077c698c0858cb6a08853bbe51795dafc3ef60c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T04:42:52.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-core-drift",
+        "head_sha": "8077c698c0858cb6a08853bbe51795dafc3ef60c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
