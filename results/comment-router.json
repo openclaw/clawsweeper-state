@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T12:52:13.096Z",
+  "updated_at": "2026-08-02T12:52:14.267Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111278:5156904890:2026-08-02T09:37:58Z:re_review",
-      "comment_id": "5156904890",
-      "comment_version_key": "5156904890:2026-08-02T09:37:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111278#issuecomment-5156904890",
-      "comment_created_at": "2026-08-02T09:37:58Z",
-      "comment_updated_at": "2026-08-02T09:37:58Z",
-      "comment_body_sha256": "6d1be47d0ce9d01452474f02cb17279bc4d94204a04a87b657e6d105d96913bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111278,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T09:38:33.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/durable-core-pr3-recovery-v5",
-        "head_sha": "3c344e0a98f34dbb954275f45ca738f744aea3e7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117932:5156913034:2026-08-02T09:39:30Z:clawsweeper_needs_human",
       "comment_id": "5156913034",
@@ -31157,6 +31110,39 @@
         "kind": "pull_request",
         "branch": "automation/runtime-tool-updates",
         "head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:646:5002397642:2026-08-02T12:47:52Z:clawsweeper_auto_repair",
+      "comment_id": "5002397642",
+      "comment_version_key": "5002397642:2026-08-02T12:47:52Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/646#issuecomment-5002397642",
+      "comment_created_at": "2026-07-17T10:51:30Z",
+      "comment_updated_at": "2026-08-02T12:47:52Z",
+      "comment_body_sha256": "7c9c7457296d1240d13365cd238e5feb3900cee0e7361df59b6862c8074f21f7",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 646,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=179929d6326b519fd01269ae325229d2eebcffbe)",
+      "expected_head_sha": "179929d6326b519fd01269ae325229d2eebcffbe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T12:52:14.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/durable-review-status-validation",
+        "head_sha": "179929d6326b519fd01269ae325229d2eebcffbe",
         "cluster_id": null,
         "job_path": null
       }
