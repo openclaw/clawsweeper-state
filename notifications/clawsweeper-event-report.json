@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T20:45:28.818Z",
+  "generated_at": "2026-08-02T21:08:24.938Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30766148933.json",
+  "run_record": "results/runs/30766013583.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30766148933",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30766013583",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#117976:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#117976",
+      "title": "fix(memory): resolve Google embedding provider alias",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30766013583",
+      "cluster_id": "automerge-openclaw-openclaw-117976",
+      "hook_run_id": "7784eb39-a684-4f65-9db6-dc7ece449e8c",
+      "url": "https://github.com/openclaw/openclaw/pull/117976"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#117976:repair_contributor_branch:pushed:2cee673d1a573267c84b41e724d49da7436e497b",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#117976",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30766013583",
+      "cluster_id": "automerge-openclaw-openclaw-117976",
+      "hook_run_id": "a468173e-0abb-44b0-800b-adae9974eaff",
+      "url": "https://github.com/openclaw/openclaw/pull/117976"
+    }
+  ]
 }
