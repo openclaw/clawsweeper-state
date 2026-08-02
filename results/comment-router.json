@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T23:25:34.597Z",
+  "updated_at": "2026-08-02T23:25:35.318Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118087:5159586933:2026-08-02T17:47:09Z:clawsweeper_needs_human",
-      "comment_id": "5159586933",
-      "comment_version_key": "5159586933:2026-08-02T17:47:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118087#issuecomment-5159586933",
-      "comment_created_at": "2026-08-02T17:47:09Z",
-      "comment_updated_at": "2026-08-02T17:47:09Z",
-      "comment_body_sha256": "456461c41a08c04ab8ba653b5833f714077423f3fdf84887915d95ed5a31a0f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118087,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided check state still has several exact-head checks in progress; merge should wait for those required checks and the protected maintainer review to complete. (sha=56601cec8db9747bd36a18f76b36ad7c7a7307a0)",
-      "expected_head_sha": "56601cec8db9747bd36a18f76b36ad7c7a7307a0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:29:29.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-root-test-harness-wave14-2d45",
-        "head_sha": "56601cec8db9747bd36a18f76b36ad7c7a7307a0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118090:5159603993:2026-08-02T17:51:40Z:clawsweeper_needs_human",
       "comment_id": "5159603993",
@@ -32186,6 +32153,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:104:5160847990:2026-08-02T23:24:58Z:clawsweeper_needs_human",
+      "comment_id": "5160847990",
+      "comment_version_key": "5160847990:2026-08-02T23:24:58Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/104#issuecomment-5160847990",
+      "comment_created_at": "2026-08-02T23:24:58Z",
+      "comment_updated_at": "2026-08-02T23:24:58Z",
+      "comment_body_sha256": "2afc856120ec1525404c983ca0838f0bd14cdf3aefa0236816e2de89fc0a2786",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes the implementation selected for existing overwrite writes whenever a bundled native binding is available; the documented off, unavailable-binding auto, and explicit ve... (sha=5e2410969803e3b37fdbb88d0c47f5aacb343161)",
+      "expected_head_sha": "5e2410969803e3b37fdbb88d0c47f5aacb343161",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T23:25:35.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/copyin-native-transaction",
+        "head_sha": "5e2410969803e3b37fdbb88d0c47f5aacb343161",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
