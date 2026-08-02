@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:27:10.337Z",
+  "updated_at": "2026-08-02T07:27:18.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89636:4924087044:2026-07-09T10:29:09Z:re_review",
-      "comment_id": "4924087044",
-      "comment_version_key": "4924087044:2026-07-09T10:29:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89636#issuecomment-4924087044",
-      "comment_created_at": "2026-07-09T10:29:09Z",
-      "comment_updated_at": "2026-07-09T10:29:09Z",
-      "comment_body_sha256": "d52ff3b1e8232f703675f104f5b68d4013688e7c17d04f344d2118f6fae4c266",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89636,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T03:10:11.538Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89636:4960866656:2026-07-13T17:41:30Z:re_review",
       "comment_id": "4960866656",
@@ -32133,6 +32106,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117632:5153397814:2026-08-02T07:22:25Z:clawsweeper_needs_human",
+      "comment_id": "5153397814",
+      "comment_version_key": "5153397814:2026-08-02T07:22:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117632#issuecomment-5153397814",
+      "comment_created_at": "2026-08-01T20:55:15Z",
+      "comment_updated_at": "2026-08-02T07:22:25Z",
+      "comment_body_sha256": "a415a63e26bb894a1b32edf9b1b10e08a4689d84b3b4c7075ee7c95de3e50b05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117632,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body documents execution of the production send owner with Aura but explicitly uses an in-process fake poke and no authenticated Tlon de... (sha=6453278f7b80cbcdad658ede01d165061234932d)",
+      "expected_head_sha": "6453278f7b80cbcdad658ede01d165061234932d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:27:18.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa418-tlon-canonical-group-post-ids",
+        "head_sha": "6453278f7b80cbcdad658ede01d165061234932d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
