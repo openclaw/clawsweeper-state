@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:34:39.843Z",
+  "updated_at": "2026-08-02T09:34:48.399Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116543:5135696872:2026-08-02T05:45:56Z:clawsweeper_needs_human",
-      "comment_id": "5135696872",
-      "comment_version_key": "5135696872:2026-08-02T05:45:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116543#issuecomment-5135696872",
-      "comment_created_at": "2026-07-30T20:02:29Z",
-      "comment_updated_at": "2026-08-02T05:45:56Z",
-      "comment_body_sha256": "31a09b09c9856ee03eb8a89938772b43591a1dfa813a0d85757f835d6c652bb5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116543,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has focused mocked pagination and handler validation, but its body explicitly confirms there is no authenticated after-fix Teams/Graph t... (sha=e52a50c318d30b99d71f2550fc75c4ccdcf9e2e4)",
-      "expected_head_sha": "e52a50c318d30b99d71f2550fc75c4ccdcf9e2e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:46:45.095Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-thread-replies-pagination-98870",
-        "head_sha": "e52a50c318d30b99d71f2550fc75c4ccdcf9e2e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110128:5155743391:2026-08-02T05:47:47Z:re_review",
       "comment_id": "5155743391",
@@ -32408,6 +32375,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117176:5156885546:2026-08-02T09:34:13Z:re_review",
+      "comment_id": "5156885546",
+      "comment_version_key": "5156885546:2026-08-02T09:34:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117176#issuecomment-5156885546",
+      "comment_created_at": "2026-08-02T09:34:13Z",
+      "comment_updated_at": "2026-08-02T09:34:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117176,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T09:34:46.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/thread-reply-current-source-marking",
+        "head_sha": "d25290096966294bc9b209a785421b24b4adc4ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
