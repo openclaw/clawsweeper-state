@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:05:56.884Z",
+  "updated_at": "2026-08-02T21:06:02.399Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:106705:4966317696:2026-07-14T07:07:28Z:re_review",
-      "comment_id": "4966317696",
-      "comment_version_key": "4966317696:2026-07-14T07:07:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106705#issuecomment-4966317696",
-      "comment_created_at": "2026-07-14T07:07:28Z",
-      "comment_updated_at": "2026-07-14T07:07:28Z",
-      "comment_body_sha256": "5300858bbed44f8681df0e68908e3d82017dd459ccb1fc8442a19033fa8f0a5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106705,
-      "author": "lzyyzznl",
-      "author_id": 41978486,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1/p2 fixes: (1) removed docs/.local symlink artifact, (2) added focused reconciliation behavior tests exercising dirty-form merge, raw json reconcile, and failure safety (3 tests, 43 total passing), (3) updated pr body with current-head reconciliation evidence covering dirty-form preservation, baseline rebasing, draft hash advancement, and raw mode reconciliation",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:55:17.583Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:106297:4957156423:2026-07-13T10:50:27Z:re_review",
       "comment_id": "4957156423",
@@ -31267,6 +31240,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T21:05:56.883Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1007:5152665315:2026-08-02T21:05:23Z:clawsweeper_needs_human",
+      "comment_id": "5152665315",
+      "comment_version_key": "5152665315:2026-08-02T21:05:23Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1007#issuecomment-5152665315",
+      "comment_created_at": "2026-08-01T17:56:24Z",
+      "comment_updated_at": "2026-08-02T21:05:23Z",
+      "comment_body_sha256": "a0b79b7371badd0a00f52f08b6e568e20d4a26cc8b27a22c930206bee423dc67",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge against current main. Naively resolving conflicts could leave the snapshot-based receipt dependency on obsolete top-level wiring instead of the current ru... (sha=84160ed710bb1dae8a14115a2babdeb823b81056)",
+      "expected_head_sha": "84160ed710bb1dae8a14115a2babdeb823b81056",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T21:06:02.398Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/review-storm-self-activity",
+        "head_sha": "84160ed710bb1dae8a14115a2babdeb823b81056",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
