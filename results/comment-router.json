@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:21:48.674Z",
+  "updated_at": "2026-08-02T21:21:59.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118094:5159623620:2026-08-02T19:15:23Z:clawsweeper_needs_human",
-      "comment_id": "5159623620",
-      "comment_version_key": "5159623620:2026-08-02T19:15:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118094#issuecomment-5159623620",
-      "comment_created_at": "2026-08-02T17:56:58Z",
-      "comment_updated_at": "2026-08-02T19:15:23Z",
-      "comment_body_sha256": "7c5eb554ce869c008f2efc3677d4e5b36c1337eeb56aca7925654a4123d5cf0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118094,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - after_compaction.compacted is a documented public plugin-hook payload addition. Existing handlers can ignore it, but maintainers should explicitly accept the permanent SDK/runtime con... (sha=699bce230b2c9c10141257251e529169bef3735e)",
-      "expected_head_sha": "699bce230b2c9c10141257251e529169bef3735e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T19:16:01.612Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-noop-compaction-hooks",
-        "head_sha": "699bce230b2c9c10141257251e529169bef3735e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-08-02T19:15:37Z:clawsweeper_needs_human",
       "comment_id": "5120409280",
@@ -31104,6 +31071,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1077:5160396857:2026-08-02T21:21:25Z:re_review",
+      "comment_id": "5160396857",
+      "comment_version_key": "5160396857:2026-08-02T21:21:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1077#issuecomment-5160396857",
+      "comment_created_at": "2026-08-02T21:21:25Z",
+      "comment_updated_at": "2026-08-02T21:21:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1077,
+      "author": "bkudiess",
+      "author_id": 7658216,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:21:57.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-add-reasoning-default-reset",
+        "head_sha": "438df749d02b7a6eaab146a941c6023be465a3d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
