@@ -1,0 +1,78 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117906",
+  "mode": "autonomous",
+  "run_id": "30739808879",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30739808879",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117906.md",
+  "published_at": "2026-08-02T09:00:36.110Z",
+  "canonical": "#117906",
+  "canonical_issue": null,
+  "canonical_pr": "#117906",
+  "summary": "Make PR #117906 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#117906",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117906",
+      "candidate_fix": "#117906",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "pushed": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "pushed",
+      "target": "https://github.com/openclaw/openclaw/pull/117906",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": "722e5b0a5a2c7e74d4c1727f0daa18c75a266341",
+      "base_sync": true
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117906",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(feishu): preserve self mentions in agent-facing group messages",
+      "idempotency_key": null,
+      "reason": "autofix-only job cannot merge",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

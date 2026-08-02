@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T08:55:57.542Z
+Generated: 2026-08-02T09:01:13.536Z
 
 ## Summary
 
@@ -31,7 +31,7 @@ Status: report_only
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [#117911](https://github.com/openclaw/openclaw/pull/117911) | fix(exec): explain Linux OOM-score-adjusted SIGKILLs | issue-openclaw-openclaw-69242 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:43 SUCCESS:82 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | issue-openclaw-openclaw-72504 | MERGEABLE | BEHIND | CANCELLED:8 IN_PROGRESS:1 SKIPPED:45 SUCCESS:52 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | issue-openclaw-openclaw-72504 | MERGEABLE | BEHIND | CANCELLED:9 IN_PROGRESS:1 SKIPPED:45 SUCCESS:52 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117869](https://github.com/openclaw/openclaw/pull/117869) | fix(agents): preserve explicit model references in alias guidance | issue-openclaw-openclaw-61949 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:45 SUCCESS:81 FAILURE:2 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117843](https://github.com/openclaw/openclaw/pull/117843) | fix(agents): verify delegated writes before reporting success | issue-openclaw-openclaw-67136 | MERGEABLE | BEHIND | SKIPPED:38 SUCCESS:84 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | issue-openclaw-openclaw-88079 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:26 SUCCESS:79; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
