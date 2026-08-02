@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:23:28.737Z",
+  "updated_at": "2026-08-02T02:24:07.736Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:59:5118062986:2026-08-01T22:59:20Z:clawsweeper_needs_human",
-      "comment_id": "5118062986",
-      "comment_version_key": "5118062986:2026-08-01T22:59:20Z",
-      "comment_url": "https://github.com/openclaw/graincrawl/pull/59#issuecomment-5118062986",
-      "comment_created_at": "2026-07-29T12:58:23Z",
-      "comment_updated_at": "2026-08-01T22:59:20Z",
-      "comment_body_sha256": "fcdd0c514aefa5a029d58ebd47ea3354baec8af047904668a0cb9682e1547664",
-      "repo": "openclaw/graincrawl",
-      "issue_number": 59,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm v3.96.0 preserves the verification boundary** - This workflow uses --only-verified to decide whether a merge gate fails, while the upstream release changes detectors and verific...; Review finding: [medium] Confirm v3.96.0 preserves the verification boundary — .github/workflows/secret-scan.yml:52 (sha=a9be40be753371bdc142ce660ddc8596b1c56ff8)",
-      "expected_head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:59:55.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:57:4713045624:2026-08-01T22:59:26Z:clawsweeper_auto_repair",
       "comment_id": "4713045624",
@@ -32319,6 +32286,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/camsnap:11:5154240388:2026-08-02T02:23:31Z:clawsweeper_needs_human",
+      "comment_id": "5154240388",
+      "comment_version_key": "5154240388:2026-08-02T02:23:31Z",
+      "comment_url": "https://github.com/steipete/camsnap/pull/11#issuecomment-5154240388",
+      "comment_created_at": "2026-08-02T00:42:41Z",
+      "comment_updated_at": "2026-08-02T02:23:31Z",
+      "comment_body_sha256": "82975c005dbe198bc979ca85dcc6e4df3fb37e1851228811df8415a684157096",
+      "repo": "steipete/camsnap",
+      "issue_number": 11,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Gate release publication on notarization acceptance (P1)** - goreleaser release publishes the GitHub release before the following notarytool submit --wait loop runs. When configured notarization is rejected, the...; Review finding: [P1] Gate release publication on notarization acceptance — .github/workflows/release.yml:153-159 - [high] Notarization runs after public release upload — .github/w... (sha=344b2c3515a7fcca4708d16cafa8544b3f47ce46)",
+      "expected_head_sha": "344b2c3515a7fcca4708d16cafa8544b3f47ce46",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T02:24:07.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-capture",
+        "head_sha": "344b2c3515a7fcca4708d16cafa8544b3f47ce46",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
