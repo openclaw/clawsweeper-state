@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:18:49.496Z",
+  "updated_at": "2026-08-02T11:19:40.506Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-02T08:05:39Z:clawsweeper_needs_human",
-      "comment_id": "5154776003",
-      "comment_version_key": "5154776003:2026-08-02T08:05:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117757#issuecomment-5154776003",
-      "comment_created_at": "2026-08-02T02:49:47Z",
-      "comment_updated_at": "2026-08-02T08:05:39Z",
-      "comment_body_sha256": "b9cca4f0dc706bd4f31f259daac98ee36631cdfb45d5ed698f0fa1f6e233a0a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117757,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete automated repair remains: the linked issue is owned by this active PR, whose remaining gate is ordinary exact-head CI completion and maintainer merge review. (sha=c795bd70f2b65100b0b44966c61160c32555f7bf)",
-      "expected_head_sha": "c795bd70f2b65100b0b44966c61160c32555f7bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T08:10:55.002Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-memory-flush-append-race",
-        "head_sha": "c795bd70f2b65100b0b44966c61160c32555f7bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117884:5156153311:2026-08-02T07:56:56Z:clawsweeper_needs_human",
       "comment_id": "5156153311",
@@ -31703,6 +31670,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:481:5118252862:2026-08-02T11:18:50Z:clawsweeper_needs_human",
+      "comment_id": "5118252862",
+      "comment_version_key": "5118252862:2026-08-02T11:18:50Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/481#issuecomment-5118252862",
+      "comment_created_at": "2026-07-29T13:15:36Z",
+      "comment_updated_at": "2026-08-02T11:18:50Z",
+      "comment_body_sha256": "a21028926a9326fa363d8c61f57722cf5b5e4e04c27dd90f8ab446732e862975",
+      "repo": "openclaw/acpx",
+      "issue_number": 481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change expands a public runtime-event shape; downstream consumers should treat both new fields as optional, as the contract documents. (sha=cd74b417cc004d5145644d57f10003d7291978a5)",
+      "expected_head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T11:19:40.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-text-delta-origin",
+        "head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
