@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:37:22.737Z",
+  "updated_at": "2026-08-02T18:37:26.111Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:117:5159042501:2026-08-02T15:57:36Z:clawsweeper_auto_repair",
-      "comment_id": "5159042501",
-      "comment_version_key": "5159042501:2026-08-02T15:57:36Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/117#issuecomment-5159042501",
-      "comment_created_at": "2026-08-02T15:57:36Z",
-      "comment_updated_at": "2026-08-02T15:57:36Z",
-      "comment_body_sha256": "747693054d6520f5aa017670d6db6e55fa1dc883a8d60040326b8bf9e5990ca0",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 117,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=279f24e525c66517d7dbdae6f3abdf8752f24df6)",
-      "expected_head_sha": "279f24e525c66517d7dbdae6f3abdf8752f24df6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:58:07.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/users-channels-limit",
-        "head_sha": "279f24e525c66517d7dbdae6f3abdf8752f24df6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:66:5159041525:2026-08-02T15:57:26Z:clawsweeper_auto_repair",
       "comment_id": "5159041525",
@@ -31499,6 +31466,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T18:37:22.736Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118100:5159682081:2026-08-02T18:36:33Z:clawsweeper_needs_human",
+      "comment_id": "5159682081",
+      "comment_version_key": "5159682081:2026-08-02T18:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118100#issuecomment-5159682081",
+      "comment_created_at": "2026-08-02T18:11:50Z",
+      "comment_updated_at": "2026-08-02T18:36:33Z",
+      "comment_body_sha256": "78e7bcb3bf5544ce52f0e6c0c743c2d04e0024194f71753e238ca36ebf7981f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118100,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes validation of an existing persisted payload type. The branch addresses the known upgrade path for stored malformed scripts, but maintainer review should retain that recov... (sha=896c6b71a0a756268dfa8dc6e0f93b09cfe4b344)",
+      "expected_head_sha": "896c6b71a0a756268dfa8dc6e0f93b09cfe4b344",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:37:26.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cron-script-syntax-validation",
+        "head_sha": "896c6b71a0a756268dfa8dc6e0f93b09cfe4b344",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
