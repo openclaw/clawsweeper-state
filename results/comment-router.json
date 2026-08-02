@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:56:26.312Z",
+  "updated_at": "2026-08-02T11:56:29.706Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156654939:2026-08-02T08:50:15Z:re_review",
-      "comment_id": "5156654939",
-      "comment_version_key": "5156654939:2026-08-02T08:50:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156654939",
-      "comment_created_at": "2026-08-02T08:50:15Z",
-      "comment_updated_at": "2026-08-02T08:50:15Z",
-      "comment_body_sha256": "63399d89eb794190d6f95f5617ab8ae72e527cd30fd6ed3911e9c287eaa46eda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117727,
-      "author": "Takhoffman",
-      "author_id": 781889,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T08:50:52.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-fractional-chunk-limits",
-        "head_sha": "dcb3cfa8db18183b4dca2932de508761a2e7c9fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107744:4978840064:2026-08-02T08:51:59Z:clawsweeper_auto_repair",
       "comment_id": "4978840064",
@@ -31466,6 +31419,39 @@
         "kind": "pull_request",
         "branch": "fix/blocked-local-checkout-not-verified",
         "head_sha": "69926bd38453b88313352d6f2504ea527abd3dee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:217:4969657438:2026-08-02T11:53:51Z:clawsweeper_needs_human",
+      "comment_id": "4969657438",
+      "comment_version_key": "4969657438:2026-08-02T11:53:51Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/217#issuecomment-4969657438",
+      "comment_created_at": "2026-07-14T13:25:27Z",
+      "comment_updated_at": "2026-08-02T11:53:51Z",
+      "comment_body_sha256": "686dfa178eaa724c7bc7820ae26dc4de1ea274103c53a1f462ea2dc931c8c51d",
+      "repo": "openclaw/crabpot",
+      "issue_number": 217,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging the dirty branch would require resolving 18 stale generated report files; retaining their July 14 values would misstate the current fixture scan and dashboard. (sha=849551afef76329bb5696914b871b10944c1cb8a)",
+      "expected_head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T11:56:29.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/hyperspell-f994920",
+        "head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
         "cluster_id": null,
         "job_path": null
       }
