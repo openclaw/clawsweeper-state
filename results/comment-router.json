@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:37:07.572Z",
+  "updated_at": "2026-08-02T06:37:50.556Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117750:5154727415:2026-08-02T02:39:25Z:re_review",
-      "comment_id": "5154727415",
-      "comment_version_key": "5154727415:2026-08-02T02:39:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117750#issuecomment-5154727415",
-      "comment_created_at": "2026-08-02T02:39:25Z",
-      "comment_updated_at": "2026-08-02T02:39:25Z",
-      "comment_body_sha256": "8de0c8e0fe1cc898d09af7820c6cca54da3aebaae47750e8db1795101d3dfb96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117750,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:40:03.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-agents-subagent-completion-deadline-ac7",
-        "head_sha": "ac7aa03b14c6ec38f04f8430bd79b54e857937ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:60:5118066895:2026-08-02T02:41:01Z:clawsweeper_needs_human",
       "comment_id": "5118066895",
@@ -32202,6 +32155,39 @@
         "kind": "pull_request",
         "branch": "fix-kimi-engine-cli-contract",
         "head_sha": "f6fcee100f19d998229e451af145549086512082",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117870:5155965535:2026-08-02T06:37:15Z:clawsweeper_auto_repair",
+      "comment_id": "5155965535",
+      "comment_version_key": "5155965535:2026-08-02T06:37:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117870#issuecomment-5155965535",
+      "comment_created_at": "2026-08-02T06:37:15Z",
+      "comment_updated_at": "2026-08-02T06:37:15Z",
+      "comment_body_sha256": "a0b3ebc607fc2de2f51b765fcb627d3b8fada9350a3c45b6c6449a12d2e391df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4e5e8ad46586fbd3838c8255abbdfb14169cae53)",
+      "expected_head_sha": "4e5e8ad46586fbd3838c8255abbdfb14169cae53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T06:37:50.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/consolidate-openclaw-tools",
+        "head_sha": "4e5e8ad46586fbd3838c8255abbdfb14169cae53",
         "cluster_id": null,
         "job_path": null
       }
