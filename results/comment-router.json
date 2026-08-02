@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T22:40:46.042Z",
+  "updated_at": "2026-08-02T22:40:36.706Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90621:4630428920:2026-08-02T20:17:10Z:clawsweeper_auto_repair",
@@ -31531,51 +31531,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:118261:5160686250:2026-08-02T22:40:02Z:re_review",
-      "comment_id": "5160686250",
-      "comment_version_key": "5160686250:2026-08-02T22:40:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118261#issuecomment-5160686250",
-      "comment_created_at": "2026-08-02T22:40:02Z",
-      "comment_updated_at": "2026-08-02T22:40:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118261,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2518:5133896311:2026-08-02T22:40:07Z:clawsweeper_needs_human",
+      "comment_id": "5133896311",
+      "comment_version_key": "5133896311:2026-08-02T22:40:07Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2518#issuecomment-5133896311",
+      "comment_created_at": "2026-07-30T17:03:58Z",
+      "comment_updated_at": "2026-08-02T22:40:07Z",
+      "comment_body_sha256": "713a64bf80c9d3037820b867189f84d60755e41bd72a40d20f1e7486f7741ef3",
+      "repo": "steipete/codexbar",
+      "issue_number": 2518,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and owner comment report substantial tests, builds, and a source-blind compiled-test run, but provide no after-fix screenshot, reco... (sha=89066087a12db698f11587111a7cff6ea42806ba)",
+      "expected_head_sha": "89066087a12db698f11587111a7cff6ea42806ba",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T22:40:43.665Z",
+      "status": "skipped",
+      "processed_at": "2026-08-02T22:40:36.706Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/117899-control-ui-talk-grace-race",
-        "head_sha": "adcc108445b025592de565df48f836cc3851eaea",
+        "branch": "codex/global-low-power-mode",
+        "head_sha": "89066087a12db698f11587111a7cff6ea42806ba",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
