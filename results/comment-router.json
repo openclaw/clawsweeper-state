@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-02T16:47:51.627Z",
+  "updated_at": "2026-08-02T16:47:35.109Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117585:5158255958:2026-08-02T13:38:01Z:re_review",
+      "comment_id": "5158255958",
+      "comment_version_key": "5158255958:2026-08-02T13:38:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117585#issuecomment-5158255958",
+      "comment_created_at": "2026-08-02T13:38:01Z",
+      "comment_updated_at": "2026-08-02T13:38:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117585,
+      "author": "dineshsuthar123",
+      "author_id": 142929222,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T13:38:36.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-usage-accounting",
+        "head_sha": "1867894651fb9dd26e87b8fe5f689bb82aabccb1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117572:5158262504:2026-08-02T13:39:14Z:re_review",
       "comment_id": "5158262504",
@@ -31562,39 +31609,6 @@
         "kind": "pull_request",
         "branch": "refactor/copilot-oauth-ownership",
         "head_sha": "8f1137ad1452e1333eb9334d6b262ba88d9d1133",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118012:5158800803:2026-08-02T16:47:08Z:clawsweeper_needs_human",
-      "comment_id": "5158800803",
-      "comment_version_key": "5158800803:2026-08-02T16:47:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118012#issuecomment-5158800803",
-      "comment_created_at": "2026-08-02T15:15:34Z",
-      "comment_updated_at": "2026-08-02T16:47:08Z",
-      "comment_body_sha256": "01c5e3247bed0f6cff49de90662af517a398dc1a9e33950ecc335f0504970777",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118012,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct upstream Codex contract stated in the PR body remains unverified in this checkout because the mandatory sibling ../codex source tree is absent. (sha=1a383b40f0b7e00b0ac755c41822ed455090fa5b)",
-      "expected_head_sha": "1a383b40f0b7e00b0ac755c41822ed455090fa5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T16:47:51.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-codex-pinned-evidence-owner",
-        "head_sha": "1a383b40f0b7e00b0ac755c41822ed455090fa5b",
         "cluster_id": null,
         "job_path": null
       }
