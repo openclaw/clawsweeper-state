@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T08:07:32.702Z",
+  "updated_at": "2026-08-02T08:07:24.284Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117789:5155169163:2026-08-02T04:05:11Z:clawsweeper_auto_repair",
@@ -32176,15 +32176,15 @@
       ]
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1027:5016876345:2026-08-02T08:02:40Z:clawsweeper_needs_human",
-      "comment_id": "5016876345",
-      "comment_version_key": "5016876345:2026-08-02T08:02:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1027#issuecomment-5016876345",
-      "comment_created_at": "2026-07-19T18:23:46Z",
-      "comment_updated_at": "2026-08-02T08:02:40Z",
-      "comment_body_sha256": "644ab39e386d2ca0f5e8017eeb0961d1068211a0a982885c421f5ce1ffbaee89",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1069:5128622930:2026-08-02T08:06:35Z:clawsweeper_needs_human",
+      "comment_id": "5128622930",
+      "comment_version_key": "5128622930:2026-08-02T08:06:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1069#issuecomment-5128622930",
+      "comment_created_at": "2026-07-30T08:48:33Z",
+      "comment_updated_at": "2026-08-02T08:06:35Z",
+      "comment_body_sha256": "a02ebff7d5dc867a9386f312b9a06f8434ff689fa6ee1eb595d966f1b1c7b6ef",
       "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1027,
+      "issue_number": 1069,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
@@ -32195,15 +32195,15 @@
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body states that rebased-head Windows build and test validation, MXC E2E validation, and a redacted native approval capture have not bee...; Review finding: [P1] Rebase the preview flow onto the V2-only approval stack — src/OpenClaw.Shared/Capabilities/SystemCapability.cs:513 - [medium] Preserve current fail-closed app... (sha=a3c3fba8944a27da699c1f0e1ef17df135a84a68)",
-      "expected_head_sha": "a3c3fba8944a27da699c1f0e1ef17df135a84a68",
+      "repair_reason": "- [ ] **Retain the nested presentation fallback (P1)** - Current main still accepts nested-only presentation rows, but this branch now checks only row-level isMain and flattened fields. When an older Gateway sends the r...; Review finding: [P1] Retain the nested presentation fallback — src/OpenClaw.Shared/OpenClawGatewayClient.cs:3795-3797 - [medium] Older direct sessions can lose privacy classificat... (sha=9e2b337f4ce75a13164aca66cedad8333d6d5cd3)",
+      "expected_head_sha": "9e2b337f4ce75a13164aca66cedad8333d6d5cd3",
       "finding_id": null,
       "status": "skipped",
-      "processed_at": "2026-08-02T08:07:32.702Z",
+      "processed_at": "2026-08-02T08:07:24.284Z",
       "target": {
         "kind": "pull_request",
-        "branch": "agent/semantic-approval-prompts",
-        "head_sha": "a3c3fba8944a27da699c1f0e1ef17df135a84a68",
+        "branch": "feat/flatten-session-classification",
+        "head_sha": "9e2b337f4ce75a13164aca66cedad8333d6d5cd3",
         "cluster_id": null,
         "job_path": null
       }
