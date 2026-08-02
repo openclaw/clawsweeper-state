@@ -1,0 +1,143 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-67366",
+  "mode": "autonomous",
+  "run_id": "30736012393",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30736012393",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-67366.md",
+  "published_at": "2026-08-02T07:05:34.794Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/67366",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/67366",
+  "canonical_pr": null,
+  "summary": "Current main `996b1e1e86214f12679b90135dd5b53cbc0debcb` still has the two reported direct `.trim()` calls on runtime prompt results. The open issue is canonical; prior PRs are closed, unmerged historical attempts. Plan one narrow new fix PR that preserves required-input validation and explicit keep/cancel behavior while covering malformed non-string prompt results at both call sites.",
+  "actions": [
+    {
+      "target": "#67366",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "Issue #67366 remains source-reproducible on current main and has a narrow owner-boundary repair path."
+    },
+    {
+      "target": "#67374",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "Closed context only; do not mutate or reuse its fork branch."
+    },
+    {
+      "target": "#87100",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "Closed context only; preserve as implementation history, not a candidate fix."
+    },
+    {
+      "target": "#90284",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "Closed context only; the new fix should remain smaller and avoid global prompter coercion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-67366",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "Create one new focused implementation artifact for the canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-67366",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#67366",
+      "candidate_fix": null,
+      "reason": "The allowed autonomous fix lane should open or update its single canonical PR only after the planned validation succeeds."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/117881",
+      "branch": "clawsweeper/issue-openclaw-openclaw-67366",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117881",
+      "commit": "4954e97222871416ce8fdd0d94c062d3c2a29627",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#67366",
+      "pr": "https://github.com/openclaw/openclaw/pull/117881",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/117881",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#117881",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(channels): guard malformed setup wizard text results",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T05:30:36.769Z",
-  "count": 8,
+  "generated_at": "2026-08-02T07:06:19.180Z",
+  "count": 9,
   "summary": {
-    "open_prs": 8,
+    "open_prs": 9,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 7,
+    "needs_checks": 8,
     "needs_review": 0,
-    "needs_merge_preflight": 8,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 9,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,142 @@
   },
   "prs": [
     {
+      "number": 117881,
+      "title": "fix(channels): guard malformed setup wizard text results",
+      "url": "https://github.com/openclaw/openclaw/pull/117881",
+      "branch": "clawsweeper/issue-openclaw-openclaw-67366",
+      "head_sha": "4954e97222871416ce8fdd0d94c062d3c2a29627",
+      "cluster_id": "issue-openclaw-openclaw-67366",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67366.md",
+      "updated_at": "2026-08-02T07:05:13Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 142,
+        "counts": {
+          "CANCELLED": 14,
+          "SKIPPED": 44,
+          "SUCCESS": 83,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117881#issuecomment-5156077624",
+            "submitted_at": "2026-08-02T07:02:05Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30736012393",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30736012393",
+        "cluster_id": "issue-openclaw-openclaw-67366",
+        "published_at": "2026-08-02T07:05:34.794Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117881",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(channels): guard malformed setup wizard text results",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 117869,
+      "title": "fix(agents): preserve explicit model references in alias guidance",
+      "url": "https://github.com/openclaw/openclaw/pull/117869",
+      "branch": "clawsweeper/issue-openclaw-openclaw-61949",
+      "head_sha": "939bb20056395713273c0f00911b94e6985db5d8",
+      "cluster_id": "issue-openclaw-openclaw-61949",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-61949.md",
+      "updated_at": "2026-08-02T06:47:47Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 142,
+        "counts": {
+          "CANCELLED": 13,
+          "SKIPPED": 45,
+          "SUCCESS": 81,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/117869#issuecomment-5155913641",
+            "submitted_at": "2026-08-02T06:25:41Z"
+          }
+        ]
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 117843,
       "title": "fix(agents): verify delegated writes before reporting success",
       "url": "https://github.com/openclaw/openclaw/pull/117843",
@@ -34,7 +170,7 @@
       "head_sha": "7e39efb171a312bb6a0a813d7dade86da9145472",
       "cluster_id": "issue-openclaw-openclaw-67136",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-67136.md",
-      "updated_at": "2026-08-02T05:28:19Z",
+      "updated_at": "2026-08-02T07:03:29Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -105,7 +241,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T05:29:06Z",
+      "updated_at": "2026-08-02T07:03:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -184,7 +320,7 @@
       "head_sha": "2c8918cb74d4857797a46cfd1a7d8ad1bc1f92f6",
       "cluster_id": "issue-openclaw-openclaw-117709",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117709.md",
-      "updated_at": "2026-08-02T02:50:57Z",
+      "updated_at": "2026-08-02T06:53:03Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -242,81 +378,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 117697,
-      "title": "fix(whatsapp): preserve source direction for automatic reactions",
-      "url": "https://github.com/openclaw/openclaw/pull/117697",
-      "branch": "clawsweeper/issue-openclaw-openclaw-117672",
-      "head_sha": "5060d03bc51f343abd808a29bb55ef0e1033c5a8",
-      "cluster_id": "issue-openclaw-openclaw-117672",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117672.md",
-      "updated_at": "2026-08-02T05:25:32Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 128,
-        "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 45,
-          "SUCCESS": 73,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117697#issuecomment-5154060076",
-            "submitted_at": "2026-08-01T23:51:37Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30723386747",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30723386747",
-        "cluster_id": "issue-openclaw-openclaw-117672",
-        "published_at": "2026-08-01T23:58:49.291Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117697",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(whatsapp): preserve source direction for automatic reactions",
-          "idempotency_key": null,
-          "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS, openclaw/ci-gate: QUEUED",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 117620,
@@ -396,27 +457,46 @@
       "title": "fix(heartbeat): retain configured account for accountless commitments",
       "url": "https://github.com/openclaw/openclaw/pull/117521",
       "branch": "clawsweeper/issue-openclaw-openclaw-117491",
-      "head_sha": "5ceba05c3ab01ef54fad22a005bec7fae31b06b3",
+      "head_sha": "b402f078b10fe7da6ad70e7ace57bee912f5a28f",
       "cluster_id": "issue-openclaw-openclaw-117491",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117491.md",
-      "updated_at": "2026-08-02T04:16:21Z",
+      "updated_at": "2026-08-02T07:03:29Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 122,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 43,
-          "SUCCESS": 81,
+          "CANCELLED": 2,
+          "SKIPPED": 39,
+          "SUCCESS": 59,
+          "IN_PROGRESS": 21,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -466,7 +546,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -560,7 +640,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T05:29:05Z",
+      "updated_at": "2026-08-02T07:02:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
