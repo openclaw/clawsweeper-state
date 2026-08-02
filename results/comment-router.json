@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:27:04.400Z",
+  "updated_at": "2026-08-02T09:27:53.447Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/imsg:187:5020327912:2026-08-02T05:33:39Z:clawsweeper_needs_human",
-      "comment_id": "5020327912",
-      "comment_version_key": "5020327912:2026-08-02T05:33:39Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/187#issuecomment-5020327912",
-      "comment_created_at": "2026-07-20T08:41:36Z",
-      "comment_updated_at": "2026-08-02T05:33:39Z",
-      "comment_body_sha256": "6b5ebed7a7f8a17e34c9cefea56a79491cf8f95df36b937d65ed1dc01c435efe",
-      "repo": "openclaw/imsg",
-      "issue_number": 187,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - In headless RPC sessions with unavailable Contacts, name-like send targets now return -32602; callers must use a phone number, email address, or explicit chat target until Contacts ac... (sha=af95a7c9c9938679d4593c1a3a5254d3a4a902d9)",
-      "expected_head_sha": "af95a7c9c9938679d4593c1a3a5254d3a4a902d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:34:22.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/rpc-contacts-skip-undetermined",
-        "head_sha": "af95a7c9c9938679d4593c1a3a5254d3a4a902d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:196:5155680628:2026-08-02T05:34:52Z:clawsweeper_needs_human",
       "comment_id": "5155680628",
@@ -32420,6 +32387,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117930:5156849639:2026-08-02T09:27:07Z:re_review",
+      "comment_id": "5156849639",
+      "comment_version_key": "5156849639:2026-08-02T09:27:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117930#issuecomment-5156849639",
+      "comment_created_at": "2026-08-02T09:27:07Z",
+      "comment_updated_at": "2026-08-02T09:27:07Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117930,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T09:27:51.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-117586-usage-basis",
+        "head_sha": "1c3508bfcb4e75f489d612939281deabb0786d23",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
