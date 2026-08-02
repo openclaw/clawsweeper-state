@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:50:14.486Z",
+  "updated_at": "2026-08-02T09:50:16.610Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117859:5155750240:2026-08-02T06:07:08Z:clawsweeper_auto_repair",
-      "comment_id": "5155750240",
-      "comment_version_key": "5155750240:2026-08-02T06:07:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117859#issuecomment-5155750240",
-      "comment_created_at": "2026-08-02T05:49:16Z",
-      "comment_updated_at": "2026-08-02T06:07:08Z",
-      "comment_body_sha256": "f077cbb3817552252f6ea3360b75d94c425bb45a6bb8afedcb03eaa553831ead",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117859,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4d709e60e6eb3b99f79cb455ff78968680c1c4ad)",
-      "expected_head_sha": "4d709e60e6eb3b99f79cb455ff78968680c1c4ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:21:30.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/webhook-spool-factory",
-        "head_sha": "852e9f552875eccb0dcbbb3d0fa8b564c5daae5e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:175:5155898114:2026-08-02T06:22:30Z:clawsweeper_needs_human",
       "comment_id": "5155898114",
@@ -32316,6 +32283,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T09:50:14.486Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114953:5100404191:2026-08-02T09:49:44Z:clawsweeper_needs_human",
+      "comment_id": "5100404191",
+      "comment_version_key": "5100404191:2026-08-02T09:49:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114953#issuecomment-5100404191",
+      "comment_created_at": "2026-07-28T05:41:01Z",
+      "comment_updated_at": "2026-08-02T09:49:44Z",
+      "comment_body_sha256": "c2cb63a130be1e36e19d6dbb7cc8f903db80c17da0cbee6a7d9cd35306713736",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114953,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body includes a redacted real k3s terminal transcript for prior head 17262b9c, but the current head changed custom --delete sem... (sha=b1a75b2aa5326b06033bb9fc9e74111fd99c3874)",
+      "expected_head_sha": "b1a75b2aa5326b06033bb9fc9e74111fd99c3874",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:50:16.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/k8s-teardown-preserves-namespace",
+        "head_sha": "b1a75b2aa5326b06033bb9fc9e74111fd99c3874",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
