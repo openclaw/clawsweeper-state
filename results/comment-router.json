@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:27:54.872Z",
+  "updated_at": "2026-08-02T06:28:05.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114254:5098847442:2026-07-28T01:33:28Z:re_review",
-      "comment_id": "5098847442",
-      "comment_version_key": "5098847442:2026-07-28T01:33:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114254#issuecomment-5098847442",
-      "comment_created_at": "2026-07-28T01:33:28Z",
-      "comment_updated_at": "2026-07-28T01:33:28Z",
-      "comment_body_sha256": "077adf74c81818d392703512342c55b63f0c1e0912bc2175bfa1cec122015d86",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114254,
-      "author": "lujiajing1126",
-      "author_id": 2568208,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:11:43.748Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/usage-cost-refresh-lock-pid-reuse",
-        "head_sha": "ade22e9b62857324e6ab9b5e3819e0ad377f9207",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114254:5086945029:2026-08-02T02:11:12Z:clawsweeper_auto_repair",
       "comment_id": "5086945029",
@@ -32522,6 +32475,39 @@
         "kind": "pull_request",
         "branch": "fix/verbose-health-timeout",
         "head_sha": "347296a385d17a6c15b6ee2eb5e803b170a8938c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117841:5155605774:2026-08-02T06:27:23Z:clawsweeper_needs_human",
+      "comment_id": "5155605774",
+      "comment_version_key": "5155605774:2026-08-02T06:27:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117841#issuecomment-5155605774",
+      "comment_created_at": "2026-08-02T05:19:28Z",
+      "comment_updated_at": "2026-08-02T06:27:23Z",
+      "comment_body_sha256": "6358a197698c4397e9c347cd4aca6abf9454c601517f4c15169fc2f01e79673c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117841,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body summarizes tests, but the prepared linked artifact is an unreachable example.test URL and no inspectable after-fix termina... (sha=99e8afc8eecd6f47718a0a6c8f42204360da7b01)",
+      "expected_head_sha": "99e8afc8eecd6f47718a0a6c8f42204360da7b01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T06:28:05.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-media-canonical-facts-owner-110737",
+        "head_sha": "99e8afc8eecd6f47718a0a6c8f42204360da7b01",
         "cluster_id": null,
         "job_path": null
       }
