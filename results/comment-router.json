@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:38:33.005Z",
+  "updated_at": "2026-08-02T09:38:36.825Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117315:5150877084:2026-08-02T05:49:00Z:clawsweeper_needs_human",
-      "comment_id": "5150877084",
-      "comment_version_key": "5150877084:2026-08-02T05:49:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117315#issuecomment-5150877084",
-      "comment_created_at": "2026-08-01T09:42:48Z",
-      "comment_updated_at": "2026-08-02T05:49:00Z",
-      "comment_body_sha256": "8c2decae25476dfe0913f38d53dfec2bb6a263b96e0a2fa698f20741cbfcc4f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117315,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided snapshot still has required CI lanes in progress, so merge should wait for GitHub to report the exact current head clean and all required checks successful. (sha=8c71d44c204aa65fddf58731b911788083c0181f)",
-      "expected_head_sha": "8c71d44c204aa65fddf58731b911788083c0181f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:51:44.886Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "8c71d44c204aa65fddf58731b911788083c0181f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:57:5106099740:2026-08-02T05:51:25Z:clawsweeper_auto_repair",
       "comment_id": "5106099740",
@@ -32447,6 +32414,53 @@
         "kind": "pull_request",
         "branch": "codex/durable-core-pr2-storage-v2",
         "head_sha": "2d564d52fe14e5896abef1c51f813a4799f8f325",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111278:5156904890:2026-08-02T09:37:58Z:re_review",
+      "comment_id": "5156904890",
+      "comment_version_key": "5156904890:2026-08-02T09:37:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111278#issuecomment-5156904890",
+      "comment_created_at": "2026-08-02T09:37:58Z",
+      "comment_updated_at": "2026-08-02T09:37:58Z",
+      "comment_body_sha256": "6d1be47d0ce9d01452474f02cb17279bc4d94204a04a87b657e6d105d96913bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111278,
+      "author": "mjnkao",
+      "author_id": 224045620,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T09:38:33.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/durable-core-pr3-recovery-v5",
+        "head_sha": "3c344e0a98f34dbb954275f45ca738f744aea3e7",
         "cluster_id": null,
         "job_path": null
       },
