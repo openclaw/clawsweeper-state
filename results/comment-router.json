@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:08:15.265Z",
+  "updated_at": "2026-08-02T19:08:34.860Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4644242214:2026-06-07T22:06:07Z:re_review",
-      "comment_id": "4644242214",
-      "comment_version_key": "4644242214:2026-06-07T22:06:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4644242214",
-      "comment_created_at": "2026-06-07T22:06:07Z",
-      "comment_updated_at": "2026-06-07T22:06:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T16:18:38.100Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4657182969:2026-06-09T07:16:02Z:re_review",
       "comment_id": "4657182969",
@@ -31819,6 +31792,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-02T19:03:41Z:clawsweeper_needs_human",
+      "comment_id": "5077699954",
+      "comment_version_key": "5077699954:2026-08-02T19:03:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
+      "comment_created_at": "2026-07-25T08:28:44Z",
+      "comment_updated_at": "2026-08-02T19:03:41Z",
+      "comment_body_sha256": "5c4a1f36aba9810a90edbd063af7c91995ae3e153232ed053fe57ec2fbb49c13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused tests and checks, but it contains no inspectable redacted final-head Gateway transcript, runtime log, terminal output, r...; Review finding: [medium] Obtain security ownership for reserved spawn authority — src/plugins/runtime/types.ts:147 (sha=ab78d52f52a8d2e0ed20541f815e56dbf862e538)",
+      "expected_head_sha": "ab78d52f52a8d2e0ed20541f815e56dbf862e538",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:08:34.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agentic-os-runtime-contract-v1",
+        "head_sha": "ab78d52f52a8d2e0ed20541f815e56dbf862e538",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
