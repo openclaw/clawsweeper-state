@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:40:12.722Z",
+  "updated_at": "2026-08-02T00:40:19.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117648:5153634262:2026-08-01T21:58:22Z:re_review",
-      "comment_id": "5153634262",
-      "comment_version_key": "5153634262:2026-08-01T21:58:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117648#issuecomment-5153634262",
-      "comment_created_at": "2026-08-01T21:58:22Z",
-      "comment_updated_at": "2026-08-01T21:58:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117648,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T21:58:58.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/rename-cron-failure-automations",
-        "head_sha": "dadbb6d39bce62882e799eecfc58c294563cef79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114661:5153637811:2026-08-01T21:59:23Z:re_review",
       "comment_id": "5153637811",
@@ -32347,6 +32300,39 @@
         "kind": "pull_request",
         "branch": "fix/bound-companion-transcript-seed",
         "head_sha": "16e2cff499773b8fe70618a6209d3fe89f29eaaa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88504:4585534718:2026-08-02T00:39:36Z:clawsweeper_needs_human",
+      "comment_id": "4585534718",
+      "comment_version_key": "4585534718:2026-08-02T00:39:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/88504#issuecomment-4585534718",
+      "comment_created_at": "2026-05-31T03:01:16Z",
+      "comment_updated_at": "2026-08-02T00:39:36Z",
+      "comment_body_sha256": "df4df3c96c3ae05d7cae50572918d330fb77dde36f7e2e3c0067eea4049e3e25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 88504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but no inspectable redacted current-head terminal, Gateway, live-output, or log artifact demonstrates legacy... (sha=d2b556a2051454ed0a407afaa188e486722bacba)",
+      "expected_head_sha": "d2b556a2051454ed0a407afaa188e486722bacba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T00:40:19.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/multi-slot-memory-architecture",
+        "head_sha": "d2b556a2051454ed0a407afaa188e486722bacba",
         "cluster_id": null,
         "job_path": null
       }
