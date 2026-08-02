@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T00:04:11.319Z
+Generated: 2026-08-02T00:09:37.992Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 6 |
+| open_prs | 7 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 6 |
+| needs_checks | 7 |
 | needs_review | 0 |
-| needs_merge_preflight | 6 |
+| needs_merge_preflight | 7 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -30,6 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#117704](https://github.com/openclaw/openclaw/pull/117704) | fix(xai): Grok subscription inference fails with HTTP 426 on every request | automerge-openclaw-openclaw-113663 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:40 SUCCESS:45 IN_PROGRESS:1 FAILURE:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117697](https://github.com/openclaw/openclaw/pull/117697) | fix(whatsapp): preserve source direction for automatic reactions | issue-openclaw-openclaw-117672 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:45 SUCCESS:73 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117620](https://github.com/openclaw/openclaw/pull/117620) | fix(model-catalog): preserve manifest lifecycle metadata on refresh | issue-openclaw-openclaw-117545 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:44 SUCCESS:85 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117521](https://github.com/openclaw/openclaw/pull/117521) | fix(heartbeat): retain configured account for accountless commitments | issue-openclaw-openclaw-117491 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:43 SUCCESS:81 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

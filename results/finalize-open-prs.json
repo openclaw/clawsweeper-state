@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T00:04:11.319Z",
-  "count": 6,
+  "generated_at": "2026-08-02T00:09:37.992Z",
+  "count": 7,
   "summary": {
-    "open_prs": 6,
+    "open_prs": 7,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 6,
+    "needs_checks": 7,
     "needs_review": 0,
-    "needs_merge_preflight": 6,
+    "needs_merge_preflight": 7,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,75 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 117704,
+      "title": "fix(xai): Grok subscription inference fails with HTTP 426 on every request",
+      "url": "https://github.com/openclaw/openclaw/pull/117704",
+      "branch": "clawsweeper/automerge-openclaw-openclaw-113663",
+      "head_sha": "6e1e9c5f04b60d9f08312edc0de1f23dd693a728",
+      "cluster_id": "automerge-openclaw-openclaw-113663",
+      "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-113663.md",
+      "updated_at": "2026-08-02T00:07:31Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 94,
+        "counts": {
+          "CANCELLED": 7,
+          "SKIPPED": 40,
+          "SUCCESS": 45,
+          "IN_PROGRESS": 1,
+          "FAILURE": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-node-changed:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30723992316",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30723992316",
+        "cluster_id": "automerge-openclaw-openclaw-113663",
+        "published_at": "2026-08-02T00:08:59.083Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#117704",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(xai): Grok subscription inference fails with HTTP 426 on every request",
+          "idempotency_key": null,
+          "reason": "replacement pull request requires a fresh current-head ClawSweeper review; automatic merge disabled",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 117697,
       "title": "fix(whatsapp): preserve source direction for automatic reactions",
@@ -345,7 +414,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T00:01:26Z",
+      "updated_at": "2026-08-02T00:06:53Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
