@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T04:30:44.639Z",
+  "updated_at": "2026-08-02T04:30:52.855Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:133:5135273020:2026-08-02T00:22:46Z:clawsweeper_needs_human",
-      "comment_id": "5135273020",
-      "comment_version_key": "5135273020:2026-08-02T00:22:46Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/133#issuecomment-5135273020",
-      "comment_created_at": "2026-07-30T19:20:26Z",
-      "comment_updated_at": "2026-08-02T00:22:46Z",
-      "comment_body_sha256": "e6b7948cea756e7a0950f517197883592bbe8ba9bc58f95084148676f3e04657",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 133,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct production dependency spans several runtime paths, but no redacted after-upgrade Gitcrawl smoke demonstrates that the v0.14.4 module behaves correctly in this application. (sha=4dbd67816eba8aa3312a689bc18cd3833766c6b1)",
-      "expected_head_sha": "4dbd67816eba8aa3312a689bc18cd3833766c6b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T00:24:19.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.4",
-        "head_sha": "4dbd67816eba8aa3312a689bc18cd3833766c6b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/imsg:199:5100763223:2026-07-28T06:32:14Z:re_review",
       "comment_id": "5100763223",
@@ -32472,6 +32439,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T04:30:44.639Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117803:5155311238:2026-08-02T04:30:04Z:clawsweeper_needs_human",
+      "comment_id": "5155311238",
+      "comment_version_key": "5155311238:2026-08-02T04:30:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117803#issuecomment-5155311238",
+      "comment_created_at": "2026-08-02T04:30:04Z",
+      "comment_updated_at": "2026-08-02T04:30:04Z",
+      "comment_body_sha256": "8a51008679a8e5328c28b3ebd6f0dcf390ea388dfc45989b3d40c8a67148b254",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117803,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a focused mocked policy test, but contains no inspectable after-fix gateway, terminal, log, recording, or live-output proof... (sha=029e0eaa300822389305b1edd89ab9311a531d19)",
+      "expected_head_sha": "029e0eaa300822389305b1edd89ab9311a531d19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T04:30:52.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/logbook-deny-commands",
+        "head_sha": "029e0eaa300822389305b1edd89ab9311a531d19",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
