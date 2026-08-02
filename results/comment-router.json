@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:00:23.411Z",
+  "updated_at": "2026-08-02T03:01:02.843Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:16:5140090028:2026-08-01T23:23:27Z:clawsweeper_needs_human",
-      "comment_id": "5140090028",
-      "comment_version_key": "5140090028:2026-08-01T23:23:27Z",
-      "comment_url": "https://github.com/openclaw/turnwire/pull/16#issuecomment-5140090028",
-      "comment_created_at": "2026-07-31T06:39:57Z",
-      "comment_updated_at": "2026-08-01T23:23:27Z",
-      "comment_body_sha256": "42c3685c37c8f85847ceea109c2455987b032c12a6ce900d0bff2319344e82c1",
-      "repo": "openclaw/turnwire",
-      "issue_number": 16,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SDK release changes protocol negotiation and session behavior; without a real Turnwire stdio exchange, compatibility for existing MCP clients at the deployed transport boundary re... (sha=28989e371e901ece3c924cf88c10f5669e9bc18a)",
-      "expected_head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:24:04.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/github.com/modelcontextprotocol/go-sdk-1.7.0",
-        "head_sha": "28989e371e901ece3c924cf88c10f5669e9bc18a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:321:4952095915:2026-08-01T23:23:30Z:clawsweeper_needs_human",
       "comment_id": "4952095915",
@@ -32551,6 +32518,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112669:5154824884:2026-08-02T03:00:21Z:re_review",
+      "comment_id": "5154824884",
+      "comment_version_key": "5154824884:2026-08-02T03:00:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112669#issuecomment-5154824884",
+      "comment_created_at": "2026-08-02T03:00:21Z",
+      "comment_updated_at": "2026-08-02T03:00:21Z",
+      "comment_body_sha256": "d5493b554525bd32e53407f00321da327325fe49f5cfd118023a920a4a8a9bae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112669,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T03:01:00.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stuck-recovery-run-identity-104589",
+        "head_sha": "e5c7ca72346cb6cf9ae79349259bc7e45938e833",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
