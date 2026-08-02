@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:36:50.586Z",
+  "updated_at": "2026-08-02T08:37:09.095Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117803:5155311238:2026-08-02T04:30:04Z:clawsweeper_needs_human",
-      "comment_id": "5155311238",
-      "comment_version_key": "5155311238:2026-08-02T04:30:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117803#issuecomment-5155311238",
-      "comment_created_at": "2026-08-02T04:30:04Z",
-      "comment_updated_at": "2026-08-02T04:30:04Z",
-      "comment_body_sha256": "8a51008679a8e5328c28b3ebd6f0dcf390ea388dfc45989b3d40c8a67148b254",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a focused mocked policy test, but contains no inspectable after-fix gateway, terminal, log, recording, or live-output proof... (sha=029e0eaa300822389305b1edd89ab9311a531d19)",
-      "expected_head_sha": "029e0eaa300822389305b1edd89ab9311a531d19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:30:52.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/logbook-deny-commands",
-        "head_sha": "029e0eaa300822389305b1edd89ab9311a531d19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117800:5155312639:2026-08-02T04:30:14Z:clawsweeper_needs_human",
       "comment_id": "5155312639",
@@ -32386,6 +32353,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117788:5155154068:2026-08-02T08:36:32Z:clawsweeper_needs_human",
+      "comment_id": "5155154068",
+      "comment_version_key": "5155154068:2026-08-02T08:36:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117788#issuecomment-5155154068",
+      "comment_created_at": "2026-08-02T04:02:31Z",
+      "comment_updated_at": "2026-08-02T08:36:32Z",
+      "comment_body_sha256": "a577ef90050b8d59016831c8081a7e06307a808843efd7d9f4ab9701ecafa232",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117788,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is delivery-sensitive: the intentional bounded-tail behavior starts a replacement database at its current maximum, so restored historical rows at or below that watermark are not... (sha=744af0e1b942b0d3c15f5970971ae52eac3923b0)",
+      "expected_head_sha": "744af0e1b942b0d3c15f5970971ae52eac3923b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:37:09.095Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-recovery-cursor-db-generation",
+        "head_sha": "744af0e1b942b0d3c15f5970971ae52eac3923b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
