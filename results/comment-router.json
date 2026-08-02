@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T15:01:25.907Z",
+  "updated_at": "2026-08-02T15:01:16.908Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117315:5150877084:2026-08-02T10:49:52Z:clawsweeper_needs_human",
@@ -31429,37 +31429,51 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-02T15:00:36Z:clawsweeper_needs_human",
-      "comment_id": "5154193917",
-      "comment_version_key": "5154193917:2026-08-02T15:00:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
-      "comment_created_at": "2026-08-02T00:30:44Z",
-      "comment_updated_at": "2026-08-02T15:00:36Z",
-      "comment_body_sha256": "a7ae898eac7a0a18eeca7bb53b0ee26af40834aecc7e9ac75d8f3435d42e00c0",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-02T15:00:00Z:clawsweeper_auto_repair",
+      "comment_id": "5157206715",
+      "comment_version_key": "5157206715:2026-08-02T15:00:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
+      "comment_created_at": "2026-08-02T10:31:46Z",
+      "comment_updated_at": "2026-08-02T15:00:00Z",
+      "comment_body_sha256": "4b261029a40cc65cd0b9daa76480863394021697a1179576122911df3eae06f5",
       "repo": "openclaw/openclaw",
-      "issue_number": 117712,
+      "issue_number": 117951,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
       "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Update the TruffleHog image selector (P2)** - The action reference now points at v3.96.0, but the invocation still explicitly requests the v3.95.9 image and digest on the next line. This leaves the credential sc...; Review finding: [P2] Update the TruffleHog image selector — .github/workflows/ci.yml:913 - [medium] Credential scanner retains the old image digest — .github/workflows/ci.yml:917 (sha=11090c2833c7b78dfd2c317e31bd70da7acb5183)",
-      "expected_head_sha": "11090c2833c7b78dfd2c317e31bd70da7acb5183",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:01:25.906Z",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88)",
+      "expected_head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-08-02T15:00:59.937Z",
       "target": {
         "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-b3ce8c744c",
-        "head_sha": "11090c2833c7b78dfd2c317e31bd70da7acb5183",
-        "cluster_id": null,
-        "job_path": null
-      }
+        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+        "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
