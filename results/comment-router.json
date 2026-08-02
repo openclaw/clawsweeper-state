@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:45:02.184Z",
+  "updated_at": "2026-08-02T00:45:20.039Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117657:5153659211:2026-08-01T22:05:07Z:clawsweeper_needs_human",
-      "comment_id": "5153659211",
-      "comment_version_key": "5153659211:2026-08-01T22:05:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117657#issuecomment-5153659211",
-      "comment_created_at": "2026-08-01T22:05:07Z",
-      "comment_updated_at": "2026-08-01T22:05:07Z",
-      "comment_body_sha256": "e07bc850a8458b6e63d8e17966b8dd74c42a1227106addefae71b3db5d8fb7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117657,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused Vitest results, but its added coverage uses a mocked Gateway client and no inspectable after-fix Control UI run or redac... (sha=a2893fba094c2aa541613b0013ceacd308d50495)",
-      "expected_head_sha": "a2893fba094c2aa541613b0013ceacd308d50495",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:05:37.629Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-ui-artifact-utf8-8d7",
-        "head_sha": "a2893fba094c2aa541613b0013ceacd308d50495",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117655:5153659627:2026-08-01T22:05:13Z:re_review",
       "comment_id": "5153659627",
@@ -32294,6 +32261,59 @@
       "status": "skipped",
       "processed_at": "2026-08-02T00:45:02.183Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117717:5154247551:2026-08-02T00:44:37Z:clawsweeper_auto_repair",
+      "comment_id": "5154247551",
+      "comment_version_key": "5154247551:2026-08-02T00:44:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117717#issuecomment-5154247551",
+      "comment_created_at": "2026-08-02T00:44:37Z",
+      "comment_updated_at": "2026-08-02T00:44:37Z",
+      "comment_body_sha256": "e406ce233913aae4837a467100a726de3715214b7782c4b12c7b135c2a444818",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c51171f2e069c658f463b13e706b6d7f5741266f)",
+      "expected_head_sha": "c51171f2e069c658f463b13e706b6d7f5741266f",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-02T00:45:15.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-117709",
+        "head_sha": "c51171f2e069c658f463b13e706b6d7f5741266f",
+        "cluster_id": "automerge-openclaw-openclaw-117717",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
