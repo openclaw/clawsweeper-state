@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T20:25:22.329Z",
+  "updated_at": "2026-08-02T20:26:35.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116232:5126674096:2026-08-02T15:05:02Z:clawsweeper_needs_human",
-      "comment_id": "5126674096",
-      "comment_version_key": "5126674096:2026-08-02T15:05:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116232#issuecomment-5126674096",
-      "comment_created_at": "2026-07-30T04:53:25Z",
-      "comment_updated_at": "2026-08-02T15:05:02Z",
-      "comment_body_sha256": "1dc33f0e064b41c466adacbd8590e0e0ce13ac4e58332a7d9e5d5f05dcce1ddc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116232,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests and CI exercise the predicate, but the PR explicitly has no after-fix WhatsApp/Baileys transport run; add redacted terminal outpu... (sha=f34236abae1deae370e32ae69f2b2a42674dfce6)",
-      "expected_head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:01:48.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-retry-drop-timed-out",
-        "head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116328:5129007834:2026-08-02T15:05:39Z:clawsweeper_auto_repair",
       "comment_id": "5129007834",
@@ -31117,6 +31084,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118103:5160188629:2026-08-02T20:25:57Z:re_review",
+      "comment_id": "5160188629",
+      "comment_version_key": "5160188629:2026-08-02T20:25:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118103#issuecomment-5160188629",
+      "comment_created_at": "2026-08-02T20:25:57Z",
+      "comment_updated_at": "2026-08-02T20:25:57Z",
+      "comment_body_sha256": "8da3aa90b9d96522c039228a62ab83a7daed325b45d0c0878c5b1ab0b475e897",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118103,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T20:26:32.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta8-plugin-prerelease-20260802",
+        "head_sha": "9c6ec8bc1a0db14bec24281b5e1c84ea6d7829f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
