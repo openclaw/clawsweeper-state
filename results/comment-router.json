@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T06:12:43.573Z",
+  "updated_at": "2026-08-02T06:14:34.886Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117443:5151834090:2026-08-02T01:50:59Z:clawsweeper_needs_human",
-      "comment_id": "5151834090",
-      "comment_version_key": "5151834090:2026-08-02T01:50:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117443#issuecomment-5151834090",
-      "comment_created_at": "2026-08-01T14:23:43Z",
-      "comment_updated_at": "2026-08-02T01:50:59Z",
-      "comment_body_sha256": "8acba7ef269ac69acaf2a4df9bd2241fa06e752429ce353f71ed0bc396798579",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117443,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes model-derived runtime labels, including the OpenAI Codex label, but the required direct inspection of sibling ../codex cannot be completed in this environment. (sha=59382f10545ffc2955fc88e828be1c649d33f581)",
-      "expected_head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:51:35.595Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89532",
-        "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
-        "cluster_id": "automerge-openclaw-openclaw-117443",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117443.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1196:5099758281:2026-08-02T01:42:47Z:clawsweeper_auto_repair",
       "comment_id": "5099758281",
@@ -32495,6 +32448,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T06:12:43.572Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T06:13:58Z:clawsweeper_needs_human",
+      "comment_id": "5153918023",
+      "comment_version_key": "5153918023:2026-08-02T06:13:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
+      "comment_created_at": "2026-08-01T23:09:04Z",
+      "comment_updated_at": "2026-08-02T06:13:58Z",
+      "comment_body_sha256": "6f45013b3db04cbfec569988d05b7cc1d72fbcec717eba9c5fd2e07abc435ba2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117676,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep transcript turns out of durable promotion (P1)** - This exemption now admits session-corpus User: and Assistant: snippets into selected. recordGroundedShortTermCandidates records them as agent, and the no-c...; Review finding: [P1] Keep transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:302-304 - [medium] Raw session text can enter durabl... (sha=f1d80c0dbb05650106a795756d4d6ca5423f1a59)",
+      "expected_head_sha": "f1d80c0dbb05650106a795756d4d6ca5423f1a59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T06:14:34.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-transcript-turn-filter",
+        "head_sha": "f1d80c0dbb05650106a795756d4d6ca5423f1a59",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
