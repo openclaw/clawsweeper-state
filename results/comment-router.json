@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:22:31.383Z",
+  "updated_at": "2026-08-02T02:22:44.343Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T22:58:42Z:clawsweeper_needs_human",
-      "comment_id": "5146046509",
-      "comment_version_key": "5146046509:2026-08-01T22:58:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-      "comment_created_at": "2026-07-31T18:08:22Z",
-      "comment_updated_at": "2026-08-01T22:58:42Z",
-      "comment_body_sha256": "09946a1c93428e30a7a8828185ed3d425c815e51b3cdac604de7916fe0bfa09e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Document \\allowedHostnames\\ as exact host entries (P2)** - allowedHostnames is checked by exact hostname membership in src/infra/net/ssrf.ts, so *.example.com does not permit assets.example.com. Wildcard matchin...; Review finding: [P2] Document allowedHostnames as exact host entries — docs/gateway/security/index.md:494 - [low] Avoid unsupported wildcard SSRF guidance — docs/gateway/security/... (sha=4a9551f1bc141b8b4fa513b6610cd69300da1297)",
-      "expected_head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:59:45.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-        "head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:216:5027931715:2026-08-01T22:59:05Z:clawsweeper_needs_human",
       "comment_id": "5027931715",
@@ -32316,6 +32269,39 @@
         "kind": "pull_request",
         "branch": "chore/dependency-refresh-2026-08-01",
         "head_sha": "e0593809d6f7bae9218929f4fc28abf7a18014b0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117747:5154653295:2026-08-02T02:22:06Z:clawsweeper_needs_human",
+      "comment_id": "5154653295",
+      "comment_version_key": "5154653295:2026-08-02T02:22:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117747#issuecomment-5154653295",
+      "comment_created_at": "2026-08-02T02:22:06Z",
+      "comment_updated_at": "2026-08-02T02:22:06Z",
+      "comment_body_sha256": "fa489d178b5ea18fc0c00662d8fc0a12b10444f7b9854692e2ca37ca9c0565fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117747,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The visible evidence is focused mock-based coverage for custom search operations, fd, and ripgrep; add a redacted after-fix terminal or runtime... (sha=10739bee1063f88945c9ac2b9c707ce41178f736)",
+      "expected_head_sha": "10739bee1063f88945c9ac2b9c707ce41178f736",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T02:22:44.342Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-find-grep-limit-sentinel-20260801",
+        "head_sha": "10739bee1063f88945c9ac2b9c707ce41178f736",
         "cluster_id": null,
         "job_path": null
       }
