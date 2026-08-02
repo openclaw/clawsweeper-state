@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T04:46:55.138Z",
+  "updated_at": "2026-08-02T04:47:29.347Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117580:5154194627:2026-08-02T00:30:57Z:re_review",
-      "comment_id": "5154194627",
-      "comment_version_key": "5154194627:2026-08-02T00:30:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117580#issuecomment-5154194627",
-      "comment_created_at": "2026-08-02T00:30:57Z",
-      "comment_updated_at": "2026-08-02T00:30:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117580,
-      "author": "yangxiansheng",
-      "author_id": 14273636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T00:31:28.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-117470-native-compact-session-override",
-        "head_sha": "05902eb0d013bd525ffa7042479e6d2eb1d431e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117283:5150457659:2026-08-02T00:30:52Z:clawsweeper_needs_human",
       "comment_id": "5150457659",
@@ -32569,6 +32522,39 @@
         "kind": "pull_request",
         "branch": "cleanup/approval-native-factory",
         "head_sha": "79902151dfacc3580b208918bc0c7afb17188016",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115334:5121282923:2026-08-02T04:12:07Z:clawsweeper_needs_human",
+      "comment_id": "5121282923",
+      "comment_version_key": "5121282923:2026-08-02T04:12:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115334#issuecomment-5121282923",
+      "comment_created_at": "2026-07-29T17:26:15Z",
+      "comment_updated_at": "2026-08-02T04:12:07Z",
+      "comment_body_sha256": "a376cde08499a129abaa11c2e63b905a93fbf6015dbb8a59ecc9519633cc2224",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, whose agent execution-state refactor now owns all affected paths; confirm the exact three-way merge preserves both normal and sandboxed propagation... (sha=1b055b70bbda4a78876f8d96b5436562917d5bb6)",
+      "expected_head_sha": "1b055b70bbda4a78876f8d96b5436562917d5bb6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T04:47:29.346Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/read-tool-nonvision-note",
+        "head_sha": "1b055b70bbda4a78876f8d96b5436562917d5bb6",
         "cluster_id": null,
         "job_path": null
       }
