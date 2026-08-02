@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:20:04.829Z",
+  "updated_at": "2026-08-02T08:20:36.692Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117792:5155212743:2026-08-02T04:13:15Z:clawsweeper_needs_human",
-      "comment_id": "5155212743",
-      "comment_version_key": "5155212743:2026-08-02T04:13:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117792#issuecomment-5155212743",
-      "comment_created_at": "2026-08-02T04:13:15Z",
-      "comment_updated_at": "2026-08-02T04:13:15Z",
-      "comment_body_sha256": "6dcbc642d5f552e08013a1a06d5acb8882a21fbdfe7382bd15d1c2152b18c8da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117792,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides focused Vitest and static-check results, but no redacted after-fix run from a real Gateway session showing the WebSocket,... (sha=fbd45c8d4a7e61f751abe7709a422b0393311f3c)",
-      "expected_head_sha": "fbd45c8d4a7e61f751abe7709a422b0393311f3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:13:49.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-multimodal-history-78729",
-        "head_sha": "fbd45c8d4a7e61f751abe7709a422b0393311f3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89039:4591504568:2026-08-02T04:13:17Z:clawsweeper_needs_human",
       "comment_id": "4591504568",
@@ -32262,6 +32229,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117400:5151450914:2026-08-02T08:19:56Z:clawsweeper_needs_human",
+      "comment_id": "5151450914",
+      "comment_version_key": "5151450914:2026-08-02T08:19:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5151450914",
+      "comment_created_at": "2026-08-01T12:36:57Z",
+      "comment_updated_at": "2026-08-02T08:19:56Z",
+      "comment_body_sha256": "09d81e74a651f20c70d194942866243c4079b06108068d1993f589e8b9d95c1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes compaction scheduling for existing persisted sessions with reset or compaction boundaries; it is aligned with the model-context projection, but the session-... (sha=8b19e693f7dd5320bfb2cfdda7b34389db31464d)",
+      "expected_head_sha": "8b19e693f7dd5320bfb2cfdda7b34389db31464d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:20:36.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-compaction-estimator-117358",
+        "head_sha": "8b19e693f7dd5320bfb2cfdda7b34389db31464d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
