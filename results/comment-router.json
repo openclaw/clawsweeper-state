@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:41:15.223Z",
+  "updated_at": "2026-08-02T15:42:57.894Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:4634382632:2026-06-05T18:31:09Z:re_review",
-      "comment_id": "4634382632",
-      "comment_version_key": "4634382632:2026-06-05T18:31:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4634382632",
-      "comment_created_at": "2026-06-05T18:31:09Z",
-      "comment_updated_at": "2026-06-05T18:31:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:10:31.266Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:4654867838:2026-06-09T00:37:13Z:re_review",
       "comment_id": "4654867838",
@@ -31098,6 +31071,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117911:5156550726:2026-08-02T15:42:15Z:clawsweeper_needs_human",
+      "comment_id": "5156550726",
+      "comment_version_key": "5156550726:2026-08-02T15:42:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5156550726",
+      "comment_created_at": "2026-08-02T08:30:18Z",
+      "comment_updated_at": "2026-08-02T15:42:15Z",
+      "comment_body_sha256": "f7ddf8aee72234b9e31b3a9395f27fb9c1215b6439d438c2af5b595317130231",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still running and GitHub reports the branch behind main; refresh the merge result and let required checks complete before landing. (sha=80b9c43e44192a723d9933e0b00bad3da01620e1)",
+      "expected_head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T15:42:57.893Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-69242",
+        "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+        "cluster_id": "automerge-openclaw-openclaw-117911",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117911.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
