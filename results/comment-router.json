@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:18:38.101Z",
+  "updated_at": "2026-08-02T16:18:41.797Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117631:5153393945:2026-08-02T13:18:11Z:clawsweeper_needs_human",
-      "comment_id": "5153393945",
-      "comment_version_key": "5153393945:2026-08-02T13:18:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117631#issuecomment-5153393945",
-      "comment_created_at": "2026-08-01T20:54:09Z",
-      "comment_updated_at": "2026-08-02T13:18:11Z",
-      "comment_body_sha256": "cdc182434085a080249b56cf935f712742409d0c41287d83894d878874df65e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117631,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes terminal RED/GREEN results, but no inspectable after-fix terminal transcript, screenshot, recording, log, or artifact is... (sha=a358022c969c08f7faebe9a0c909b2570e46fa02)",
-      "expected_head_sha": "a358022c969c08f7faebe9a0c909b2570e46fa02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T13:18:54.567Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa417-cli-selected-context-owner",
-        "head_sha": "a358022c969c08f7faebe9a0c909b2570e46fa02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1071:5135267678:2026-08-02T13:18:10Z:clawsweeper_needs_human",
       "comment_id": "5135267678",
@@ -30841,6 +30808,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T16:18:38.100Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118026:5159165185:2026-08-02T16:17:55Z:clawsweeper_needs_human",
+      "comment_id": "5159165185",
+      "comment_version_key": "5159165185:2026-08-02T16:17:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118026#issuecomment-5159165185",
+      "comment_created_at": "2026-08-02T16:17:55Z",
+      "comment_updated_at": "2026-08-02T16:17:55Z",
+      "comment_body_sha256": "02f43d07de9f75cc746c3f15660b8423a124b840747db3ba6c6641c9eac26e93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118026,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted session-recovery ownership: a false-positive handoff would suppress the old process’s failure while relying on the replacement to finish recovery. (sha=6939f245143742dd231d0dd25c6b07c366888fdc)",
+      "expected_head_sha": "6939f245143742dd231d0dd25c6b07c366888fdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:18:41.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-restart-lease-handoff",
+        "head_sha": "6939f245143742dd231d0dd25c6b07c366888fdc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
