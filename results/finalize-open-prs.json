@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T15:41:47.746Z",
+  "generated_at": "2026-08-02T15:46:13.732Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
@@ -34,7 +34,7 @@
       "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T15:37:36Z",
+      "updated_at": "2026-08-02T15:43:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -112,7 +112,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T15:35:48Z",
+      "updated_at": "2026-08-02T15:41:18Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -190,7 +190,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T15:35:45Z",
+      "updated_at": "2026-08-02T15:41:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -268,7 +268,7 @@
       "head_sha": "00783874eb4f5dea63b166f9b8603d592b0b9aa5",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T15:41:08Z",
+      "updated_at": "2026-08-02T15:44:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -332,23 +332,25 @@
       "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
       "cluster_id": "issue-openclaw-openclaw-69242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
-      "updated_at": "2026-08-02T15:37:55Z",
+      "updated_at": "2026-08-02T15:42:57Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 118,
+        "total": 133,
         "counts": {
-          "CANCELLED": 1,
-          "SUCCESS": 79,
-          "SKIPPED": 36,
+          "CANCELLED": 6,
           "IN_PROGRESS": 1,
+          "SKIPPED": 42,
+          "SUCCESS": 83,
           "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "CI / checks-node-compact-large-8:IN_PROGRESS"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -375,24 +377,30 @@
         ]
       },
       "latest_record": {
-        "run_id": "30741072351",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30741072351",
+        "run_id": "30754089504",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30754089504",
         "cluster_id": "automerge-openclaw-openclaw-117911",
-        "published_at": "2026-08-02T09:27:43.955Z",
+        "published_at": "2026-08-02T15:45:54.068Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#117911",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#117911",
-          "candidate_fix": "#117911",
-          "reason": "Repair the useful existing same-repo branch rather than replacing it. The change is exec-adjacent diagnostics only and does not alter the shell wrapper, authentication, approvals, sandboxing, or command-execution policy."
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(exec): explain Linux OOM-score-adjusted SIGKILLs",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-8:IN_PROGRESS",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -729,7 +737,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T15:36:58Z",
+      "updated_at": "2026-08-02T15:42:26Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
