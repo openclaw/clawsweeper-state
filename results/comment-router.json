@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:08:11.993Z",
+  "updated_at": "2026-08-02T21:08:42.416Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105025:4950152361:2026-08-02T18:50:21Z:clawsweeper_needs_human",
-      "comment_id": "4950152361",
-      "comment_version_key": "4950152361:2026-08-02T18:50:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105025#issuecomment-4950152361",
-      "comment_created_at": "2026-07-12T05:56:39Z",
-      "comment_updated_at": "2026-08-02T18:50:21Z",
-      "comment_body_sha256": "2e16520f0b6ea74bc203c7e033dd61dfbcd1022de2676c1390320c47b9b354fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused handler/provider-double coverage is useful, but the PR body confirms no exact-head approved-sender/device run; the supplied media manif...; Review finding: [P1] Move RCS to an external plugin distribution — extensions/rcs/package.json:9 - [P1] Redact RCS rate-limit identifiers — extensions/rcs/src/webhook.ts:77 - [med... (sha=693103a25ba92853eeaa3a46cb4906547ee19f54)",
-      "expected_head_sha": "693103a25ba92853eeaa3a46cb4906547ee19f54",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:56:39.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/rcs-channel-pr",
-        "head_sha": "693103a25ba92853eeaa3a46cb4906547ee19f54",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113111:5079359508:2026-08-02T16:07:46Z:clawsweeper_needs_human",
       "comment_id": "5079359508",
@@ -31265,6 +31232,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118197:5160348321:2026-08-02T21:08:06Z:re_review",
+      "comment_id": "5160348321",
+      "comment_version_key": "5160348321:2026-08-02T21:08:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118197#issuecomment-5160348321",
+      "comment_created_at": "2026-08-02T21:08:06Z",
+      "comment_updated_at": "2026-08-02T21:08:06Z",
+      "comment_body_sha256": "ce78b890c047d06d039d3cd1ffa712002b28bde1e916646806928eaeda7b6c76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118197,
+      "author": "peterolkhov",
+      "author_id": 300679841,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:08:40.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-control-ui-accept-precedence",
+        "head_sha": "4dd3e8f1ddf7e7032b0c7335b563bd87bfb7e60d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
