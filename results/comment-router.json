@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:08:39.705Z",
+  "updated_at": "2026-08-02T15:08:46.700Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115881:5118254933:2026-08-02T10:53:59Z:clawsweeper_needs_human",
-      "comment_id": "5118254933",
-      "comment_version_key": "5118254933:2026-08-02T10:53:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115881#issuecomment-5118254933",
-      "comment_created_at": "2026-07-29T13:15:47Z",
-      "comment_updated_at": "2026-08-02T10:53:59Z",
-      "comment_body_sha256": "3c9c78e8039a5ff25a8a0bc43ab4c5260167ffccb1eb4439b866845143a5b213",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body supplies matcher output, a focused test run, and CI, but none demonstrates an observed xAI 403 causing billing disablement and fall... (sha=0d6503bd2b7f44a95be70e8e9988919988ec8d71)",
-      "expected_head_sha": "0d6503bd2b7f44a95be70e8e9988919988ec8d71",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T11:01:40.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-billing-classifier",
-        "head_sha": "0d6503bd2b7f44a95be70e8e9988919988ec8d71",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115968:5119940403:2026-08-02T10:54:46Z:clawsweeper_auto_repair",
       "comment_id": "5119940403",
@@ -31392,6 +31359,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118019:5158756315:2026-08-02T15:08:05Z:clawsweeper_needs_human",
+      "comment_id": "5158756315",
+      "comment_version_key": "5158756315:2026-08-02T15:08:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118019#issuecomment-5158756315",
+      "comment_created_at": "2026-08-02T15:08:05Z",
+      "comment_updated_at": "2026-08-02T15:08:05Z",
+      "comment_body_sha256": "6092105a968ebab7e14a8e7ffcba3b9d5298efb818d2a92839e2c39aaeb4e835",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR is stacked on https://github.com/openclaw/openclaw/pull/117920, which owns the shared session-access policy and helper surface; merge or rebase review must verify the combined... (sha=65bd4d99ca7ae46d583ecfc7abceafa534701a51)",
+      "expected_head_sha": "65bd4d99ca7ae46d583ecfc7abceafa534701a51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:08:46.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-session-command-lifecycle",
+        "head_sha": "65bd4d99ca7ae46d583ecfc7abceafa534701a51",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
