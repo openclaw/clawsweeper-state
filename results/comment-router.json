@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:20:38.045Z",
+  "updated_at": "2026-08-02T02:20:46.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5153875856:2026-08-01T22:58:58Z:re_review",
-      "comment_id": "5153875856",
-      "comment_version_key": "5153875856:2026-08-01T22:58:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5153875856",
-      "comment_created_at": "2026-08-01T22:58:58Z",
-      "comment_updated_at": "2026-08-01T22:58:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:59:35.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media",
-        "head_sha": "c14793a1526468aed445d6c781a5db3ab3c58740",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112669:5153876230:2026-08-01T22:59:01Z:re_review",
       "comment_id": "5153876230",
@@ -32330,6 +32283,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/modernc.org/sqlite-1.55.0",
         "head_sha": "9f37c3e9154994f5cdeac0f3f2ed7f28baa54628",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117743:5154570131:2026-08-02T02:20:08Z:clawsweeper_needs_human",
+      "comment_id": "5154570131",
+      "comment_version_key": "5154570131:2026-08-02T02:20:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117743#issuecomment-5154570131",
+      "comment_created_at": "2026-08-02T02:03:50Z",
+      "comment_updated_at": "2026-08-02T02:20:08Z",
+      "comment_body_sha256": "03ea8e28c7ccd033b90ec7394aa87bd1489ac632cf80390748148b07c78372bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117743,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete repair remains: wait for the current-head checks, then have a maintainer make the normal merge decision for this member-authored diagnostics change. (sha=0bf416e7cf61c77b412126e3fd83527e4aa0b56d)",
+      "expected_head_sha": "0bf416e7cf61c77b412126e3fd83527e4aa0b56d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T02:20:46.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-preflight-attribution",
+        "head_sha": "0bf416e7cf61c77b412126e3fd83527e4aa0b56d",
         "cluster_id": null,
         "job_path": null
       }
