@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:02:19.330Z",
+  "updated_at": "2026-08-02T03:02:25.605Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:318:4949981318:2026-07-12T04:41:32Z:re_review",
-      "comment_id": "4949981318",
-      "comment_version_key": "4949981318:2026-07-12T04:41:32Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/318#issuecomment-4949981318",
-      "comment_created_at": "2026-07-12T04:41:32Z",
-      "comment_updated_at": "2026-07-12T04:41:32Z",
-      "comment_body_sha256": "757258e4c599fd5af599cf84df45d663450f75c84215f75fa2cdf335203e9220",
-      "repo": "steipete/oracle",
-      "issue_number": 318,
-      "author": "DragonFSKY",
-      "author_id": 38503900,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:24:45.291Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:190:5094941427:2026-08-01T23:24:15Z:clawsweeper_needs_human",
       "comment_id": "5094941427",
@@ -32561,6 +32534,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116437:5132965098:2026-08-02T03:01:49Z:clawsweeper_needs_human",
+      "comment_id": "5132965098",
+      "comment_version_key": "5132965098:2026-08-02T03:01:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116437#issuecomment-5132965098",
+      "comment_created_at": "2026-07-30T15:36:30Z",
+      "comment_updated_at": "2026-08-02T03:01:49Z",
+      "comment_body_sha256": "e85eed1be541d637bec3453f15e433bf56dc12596579f3536043c7d56a632f2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116437,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor relocates canonical-key and store-selection semantics used by session reads and mutations; a missed caller could select a different agent store, lose legacy-key handling,... (sha=c039575b1dc4e5228a3f6f73d6734ad1dd4926e6)",
+      "expected_head_sha": "c039575b1dc4e5228a3f6f73d6734ad1dd4926e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T03:02:25.605Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/session-store-ownership",
+        "head_sha": "c039575b1dc4e5228a3f6f73d6734ad1dd4926e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
