@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:43:45.743Z",
+  "updated_at": "2026-08-02T01:43:47.319Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5153802360:2026-08-01T22:43:53Z:re_review",
-      "comment_id": "5153802360",
-      "comment_version_key": "5153802360:2026-08-01T22:43:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5153802360",
-      "comment_created_at": "2026-08-01T22:43:53Z",
-      "comment_updated_at": "2026-08-01T22:43:53Z",
-      "comment_body_sha256": "9143972444c5de9e3f8655947c19789e02a54e6dd08094798abd6c12a1a92e6a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T22:44:28.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-fallback-recovery-96534",
-        "head_sha": "5c630a1c48e8bee0f7447033cf22303c576f9ee4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:70:5140450221:2026-08-01T22:43:49Z:clawsweeper_auto_repair",
       "comment_id": "5140450221",
@@ -31762,6 +31715,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions/stale-11",
         "head_sha": "13e4f08482634f24cdc5a6f8b712fc9c4288c98b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:166:5093818766:2026-08-02T01:42:56Z:clawsweeper_needs_human",
+      "comment_id": "5093818766",
+      "comment_version_key": "5093818766:2026-08-02T01:42:56Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/166#issuecomment-5093818766",
+      "comment_created_at": "2026-07-27T16:14:50Z",
+      "comment_updated_at": "2026-08-02T01:42:56Z",
+      "comment_body_sha256": "012955c69d1d094a69b31ae25dbeebf5ed330f6e5743cbe6850a341b61105d3b",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Align the TruffleHog binary version with the action pin (P2)** - The action pin changes to the SHA annotated v3.96.0, but the unchanged version input still explicitly requests 3.95.9. The job can therefore conti...; Review finding: [P2] Align the TruffleHog binary version with the action pin — .github/workflows/secret-scan.yml:50-55 - [medium] TruffleHog input selects an older scanner — .gith... (sha=ee1de7b311129aaafe76aca753214d584a09ab9c)",
+      "expected_head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:43:47.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-30748c8c3e",
+        "head_sha": "ee1de7b311129aaafe76aca753214d584a09ab9c",
         "cluster_id": null,
         "job_path": null
       }
