@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T10:36:33.498Z",
+  "updated_at": "2026-08-02T10:38:05.315Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5156328006:2026-08-02T07:49:47Z:re_review",
-      "comment_id": "5156328006",
-      "comment_version_key": "5156328006:2026-08-02T07:49:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5156328006",
-      "comment_created_at": "2026-08-02T07:49:47Z",
-      "comment_updated_at": "2026-08-02T07:49:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T07:50:19.054Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "0504f26ed0f4739ff2fc02a898907cddc3001465",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5156329056:2026-08-02T07:49:57Z:re_review",
       "comment_id": "5156329056",
@@ -31753,6 +31706,39 @@
         "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
         "cluster_id": "issue-openclaw-openclaw-117941",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117955:5157238665:2026-08-02T10:37:29Z:clawsweeper_needs_human",
+      "comment_id": "5157238665",
+      "comment_version_key": "5157238665:2026-08-02T10:37:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117955#issuecomment-5157238665",
+      "comment_created_at": "2026-08-02T10:37:29Z",
+      "comment_updated_at": "2026-08-02T10:37:29Z",
+      "comment_body_sha256": "1a82dde4c73d59f6959a8f0d31b201fe5e71321e44e99fb4cd576cd7909c78e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117955,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused and subsystem Testbox runs, but those are unit/CI validation rather than after-fix real behavior proof; provide a r... (sha=0d15c416ff7517ccc42494c76704a79882a57f58)",
+      "expected_head_sha": "0d15c416ff7517ccc42494c76704a79882a57f58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T10:38:05.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-system-agent-wave12",
+        "head_sha": "0d15c416ff7517ccc42494c76704a79882a57f58",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
