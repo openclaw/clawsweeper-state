@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:51:40.955Z",
+  "updated_at": "2026-08-02T03:52:40.975Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clickclack:131:5094476203:2026-07-27T17:18:11Z:re_review",
-      "comment_id": "5094476203",
-      "comment_version_key": "5094476203:2026-07-27T17:18:11Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/131#issuecomment-5094476203",
-      "comment_created_at": "2026-07-27T17:18:11Z",
-      "comment_updated_at": "2026-07-27T17:18:11Z",
-      "comment_body_sha256": "4f992c148c923534e2d51400f6ad5a677381dd900a9ae7ac23638124397ded13",
-      "repo": "openclaw/clickclack",
-      "issue_number": 131,
-      "author": "Solvely-Colin",
-      "author_id": 211764741,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:49:14.129Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:70:5140450221:2026-08-01T23:48:31Z:clawsweeper_auto_repair",
       "comment_id": "5140450221",
@@ -32528,6 +32501,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T03:52:07Z:clawsweeper_needs_human",
+      "comment_id": "5153918023",
+      "comment_version_key": "5153918023:2026-08-02T03:52:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
+      "comment_created_at": "2026-08-01T23:09:04Z",
+      "comment_updated_at": "2026-08-02T03:52:07Z",
+      "comment_body_sha256": "ddb8a8e659ccbe4c1b031505c30e06016ef0a37a21e39406ca5d933f2f451994",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117676,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep raw transcript turns out of durable promotion (P1)** - This newly disables the raw User:/Assistant: guard on the normal selected-candidate path. The recording function stamps these candidates as agent/unkno...; Review finding: [P1] Keep raw transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:302-304 - [medium] Raw session turns can become... (sha=4f64ad5c5c2aeb85bb1f535c8b97ad3ac85037db)",
+      "expected_head_sha": "4f64ad5c5c2aeb85bb1f535c8b97ad3ac85037db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T03:52:40.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-transcript-turn-filter",
+        "head_sha": "4f64ad5c5c2aeb85bb1f535c8b97ad3ac85037db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
