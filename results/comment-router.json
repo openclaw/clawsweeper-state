@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-02T11:55:32.993Z",
+  "updated_at": "2026-08-02T11:55:17.288Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117683:5156636142:2026-08-02T08:46:49Z:re_review",
+      "comment_id": "5156636142",
+      "comment_version_key": "5156636142:2026-08-02T08:46:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117683#issuecomment-5156636142",
+      "comment_created_at": "2026-08-02T08:46:49Z",
+      "comment_updated_at": "2026-08-02T08:46:49Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117683,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:47:23.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/117644-windows-unix-commands",
+        "head_sha": "1837d64992e8efde1b231c2aa80a8a109b993d2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114661:5156636218:2026-08-02T08:46:50Z:re_review",
       "comment_id": "5156636218",
@@ -31447,39 +31494,6 @@
         "kind": "pull_request",
         "branch": "codex/release-v0410",
         "head_sha": "132b02ee27db382bd3d08c2489191dbbb6b72b86",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1204:5118274352:2026-08-02T11:54:58Z:clawsweeper_needs_human",
-      "comment_id": "5118274352",
-      "comment_version_key": "5118274352:2026-08-02T11:54:58Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1204#issuecomment-5118274352",
-      "comment_created_at": "2026-07-29T13:17:28Z",
-      "comment_updated_at": "2026-08-02T11:54:58Z",
-      "comment_body_sha256": "bbda39ef77fb999db880e8cd2b3f65dc4661ea214fed64a75eb0ed01e1f1425f",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1204,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Although this PR changes no runtime behavior, publishing a detailed SSH credential contract before maintainers choose the revocation, expiry-only-provider, token-persistence, and sess... (sha=51232fe755ac798d74490d0e7352c9dc6a12a849)",
-      "expected_head_sha": "51232fe755ac798d74490d0e7352c9dc6a12a849",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T11:55:32.992Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/1074-handoff-design",
-        "head_sha": "51232fe755ac798d74490d0e7352c9dc6a12a849",
         "cluster_id": null,
         "job_path": null
       }
