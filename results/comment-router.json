@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:39:52.828Z",
+  "updated_at": "2026-08-02T13:39:59.053Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111497:5016800661:2026-08-02T10:11:03Z:clawsweeper_needs_human",
-      "comment_id": "5016800661",
-      "comment_version_key": "5016800661:2026-08-02T10:11:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111497#issuecomment-5016800661",
-      "comment_created_at": "2026-07-19T18:00:54Z",
-      "comment_updated_at": "2026-08-02T10:11:03Z",
-      "comment_body_sha256": "6469cd8bb2fd4db81ed461addee247792d5b65f2ce18b2d9f1d5208f0ba9298c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111497,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a shared SQLite schema and the public plugin runtime contract; the head is also behind current main with CI still in progress, so merge should use the completed exact-hea... (sha=18a407dc361b60f68242c9fddbd1963568cf28cc)",
-      "expected_head_sha": "18a407dc361b60f68242c9fddbd1963568cf28cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:11:35.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-preserve-artifact-worktree",
-        "head_sha": "18a407dc361b60f68242c9fddbd1963568cf28cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116375:5130009277:2026-08-02T10:11:26Z:clawsweeper_auto_repair",
       "comment_id": "5130009277",
@@ -30802,6 +30769,53 @@
         "kind": "pull_request",
         "branch": "fix/memory-status-vector-metadata",
         "head_sha": "9576afba7e4acacecf6b468c61a5e6cfb13dd411",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2407:5158263120:2026-08-02T13:39:21Z:re_review",
+      "comment_id": "5158263120",
+      "comment_version_key": "5158263120:2026-08-02T13:39:21Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5158263120",
+      "comment_created_at": "2026-08-02T13:39:21Z",
+      "comment_updated_at": "2026-08-02T13:39:21Z",
+      "comment_body_sha256": "f65554f256a65e91526d5b260d661c2e0d6932fec345a03fdabb583856ba2956",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2407,
+      "author": "chenow9",
+      "author_id": 302014081,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T13:39:56.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/grok-local-token-cost",
+        "head_sha": "1218ecffd9022b3339dda3b39368246bce49e753",
         "cluster_id": null,
         "job_path": null
       },
