@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-73478"
 mode: "autonomous"
-run_id: "30743051459"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30743051459"
+run_id: "30742828341"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30742828341"
 head_sha: "7e4d8cb7cee432b87afec79e1fbfa3209c084474"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-02T10:35:32.395Z"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-02T10:06:15.704Z"
 canonical: "https://github.com/openclaw/openclaw/issues/73478"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/73478"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30743051459](https://github.com/openclaw/clawsweeper/actions/runs/30743051459)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30742828341](https://github.com/openclaw/clawsweeper/actions/runs/30742828341)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/73478
 
 ## Summary
 
-#73478 is a reproducible, non-security Gateway message-loss bug on current main 0bc32f0f5cf5b2202ae0918a26b0a252c1b59495. The narrow new-PR plan is ready, but this worker has a read-only checkout and cannot create the required branch, regression, or validation result.
+#73478 remains an open canonical Gateway behavior bug on main 30c87bde99774fdbd0b3b31c1921e3750a1d61e4. The live-chat projector rejects assistant events that contain mediaUrls without text/delta, and the Gateway delta/final projection builds text-only message content, so generated images are omitted from WebSocket chat subscribers. A narrow new fix PR is appropriate; #81136 is closed historical source work only.
 
 ## Impact
 
@@ -54,22 +54,21 @@ Canonical: https://github.com/openclaw/openclaw/issues/73478
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/117951 | clawsweeper/issue-openclaw-openclaw-73478 |  |
-| issue_implementation_status_comment | updated | #73478 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117951 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #73478 | fix_needed | blocked | canonical | The repair is narrowly specified and appropriate for automation, but implementation is blocked only by the read-only target checkout. |
-| #81136 | keep_closed | skipped | superseded | Already closed context only; no action or mutation is valid. |
-| cluster:issue-openclaw-openclaw-73478 | build_fix_artifact | planned | canonical | Executor should implement this exact narrow repair on clawsweeper/issue-openclaw-openclaw-73478, run the focused regression and changed gate, then create or update the single issue PR. |
+| #73478 | fix_needed | planned | canonical | Current main still drops assistant media from Gateway live chat. The closed prior PR is not a viable branch, so the canonical issue needs a narrow credited replacement PR. |
+| #81136 | keep_closed | skipped | superseded | Already closed historical contributor work; no closeout or mutation is valid. Preserve its idea and attribution in the replacement PR. |
+| cluster:issue-openclaw-openclaw-73478 | build_fix_artifact | planned | canonical | Prepare a new narrow PR from the current main base; do not reuse the closed fork branch. |
 
 ## Needs Human
 
