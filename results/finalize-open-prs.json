@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T14:22:48.269Z",
-  "count": 11,
+  "generated_at": "2026-08-02T14:51:32.764Z",
+  "count": 10,
   "summary": {
-    "open_prs": 11,
+    "open_prs": 10,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 10,
     "needs_review": 0,
-    "needs_merge_preflight": 11,
+    "needs_merge_preflight": 10,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,7 +34,7 @@
       "head_sha": "0a4a445d0c223673d0eed387eaae0d14d526bdcc",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T14:20:26Z",
+      "updated_at": "2026-08-02T14:48:15Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -111,7 +111,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T14:18:21Z",
+      "updated_at": "2026-08-02T14:45:38Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -189,7 +189,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T14:21:28Z",
+      "updated_at": "2026-08-02T14:51:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -273,7 +273,7 @@
       "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T14:17:30Z",
+      "updated_at": "2026-08-02T14:50:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -324,12 +324,20 @@
         ]
       },
       "latest_record": {
-        "run_id": "30744624314",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30744624314",
-        "cluster_id": "issue-openclaw-openclaw-73478",
-        "published_at": "2026-08-02T10:58:43.938Z",
-        "workflow_conclusion": "success",
-        "apply_action": null
+        "run_id": "30750808319",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30750808319",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "published_at": "2026-08-02T14:51:05.736Z",
+        "workflow_conclusion": "failure",
+        "apply_action": {
+          "target": "#117951",
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#117951",
+          "candidate_fix": "#117951",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
@@ -586,7 +594,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T14:18:07Z",
+      "updated_at": "2026-08-02T14:51:11Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -748,7 +756,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T14:17:39Z",
+      "updated_at": "2026-08-02T14:50:49Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -812,86 +820,6 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 117144,
-      "title": "fix(ci): package runtime resources in dist artifact",
-      "url": "https://github.com/openclaw/openclaw/pull/117144",
-      "branch": "clawsweeper/issue-openclaw-openclaw-98276",
-      "head_sha": "c8e2b2697851ffc5dcd584ca5ccac57fe90d026f",
-      "cluster_id": "issue-openclaw-openclaw-98276",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-98276.md",
-      "updated_at": "2026-08-02T06:43:22Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 122,
-        "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 24,
-          "SUCCESS": 90,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5148867933",
-            "submitted_at": "2026-08-01T01:32:05Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117144#issuecomment-5149556146",
-            "submitted_at": "2026-08-01T03:19:46Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30710002508",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30710002508",
-        "cluster_id": "automerge-openclaw-openclaw-117144",
-        "published_at": "2026-08-01T18:43:56.533Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117144",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(ci): package runtime resources in dist artifact",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
