@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T14:22:10.223Z",
+  "updated_at": "2026-08-02T14:22:14.296Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
-      "comment_id": "5055554259",
-      "comment_version_key": "5055554259:2026-07-23T07:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5055554259",
-      "comment_created_at": "2026-07-23T07:16:43Z",
-      "comment_updated_at": "2026-07-23T07:16:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:23:35.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5058756273:2026-07-23T13:08:44Z:re_review",
       "comment_id": "5058756273",
@@ -31386,6 +31359,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T14:22:10.223Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115277:5106840475:2026-08-02T14:20:46Z:clawsweeper_needs_human",
+      "comment_id": "5106840475",
+      "comment_version_key": "5106840475:2026-08-02T14:20:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115277#issuecomment-5106840475",
+      "comment_created_at": "2026-07-28T16:22:53Z",
+      "comment_updated_at": "2026-08-02T14:20:46Z",
+      "comment_body_sha256": "34d7f231637514fa0cd85425f761a71292294a15d6d22dbc74d7119fd7393e1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115277,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes an existing narrow-allowlist outcome: configured server-name prefix globs can now initialize MCP resources rather than ending with no callable tools. (sha=97bfb7b68b17304f098c5a376a8f21c39ced1b80)",
+      "expected_head_sha": "97bfb7b68b17304f098c5a376a8f21c39ced1b80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T14:22:14.296Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-server-prefix-toolsallow",
+        "head_sha": "97bfb7b68b17304f098c5a376a8f21c39ced1b80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
