@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:17:04.627Z",
+  "updated_at": "2026-08-02T16:17:15.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113802:5080317802:2026-08-02T12:10:15Z:clawsweeper_auto_repair",
-      "comment_id": "5080317802",
-      "comment_version_key": "5080317802:2026-08-02T12:10:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113802#issuecomment-5080317802",
-      "comment_created_at": "2026-07-25T19:48:14Z",
-      "comment_updated_at": "2026-08-02T12:10:15Z",
-      "comment_body_sha256": "0124caee39818df68f62da2f755eb411b7174d2ece2f8c911f2da853c496623f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113802,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=95f5c3bced272a828ba109dcd03a37e904676e9d)",
-      "expected_head_sha": "95f5c3bced272a828ba109dcd03a37e904676e9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:35:58.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/goal-token-budget-accounting-20260725",
-        "head_sha": "95f5c3bced272a828ba109dcd03a37e904676e9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114032:5082172353:2026-08-02T12:10:57Z:clawsweeper_auto_repair",
       "comment_id": "5082172353",
@@ -31549,6 +31516,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T16:17:04.626Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116428:5132825447:2026-08-02T16:16:38Z:clawsweeper_needs_human",
+      "comment_id": "5132825447",
+      "comment_version_key": "5132825447:2026-08-02T16:16:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116428#issuecomment-5132825447",
+      "comment_created_at": "2026-07-30T15:25:20Z",
+      "comment_updated_at": "2026-08-02T16:16:38Z",
+      "comment_body_sha256": "3e77d4acbf0d8c552ad5f3687006b66217fa37634271285ec615470ae61d9315",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body supplies unit tests and prior-baseline CI only, while explicitly deferring exact-head Windows validation; add a redacted Windows run s...; Review finding: [P1] Preserve MXC authorization after approval snapshots — src/plugins/hooks.ts:1212-1218 - [medium] Verify the policy-widening contract before merge — extensions/... (sha=e763e44427ce7a052652cbce6818cff25c5ca4a1)",
+      "expected_head_sha": "e763e44427ce7a052652cbce6818cff25c5ca4a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:17:15.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/chgord/UpstreamMxcPolicyAdvisor",
+        "head_sha": "e763e44427ce7a052652cbce6818cff25c5ca4a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
