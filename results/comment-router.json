@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T01:50:43.604Z",
+  "updated_at": "2026-08-02T01:51:28.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4949916296:2026-07-12T04:20:41Z:re_review",
-      "comment_id": "4949916296",
-      "comment_version_key": "4949916296:2026-07-12T04:20:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4949916296",
-      "comment_created_at": "2026-07-12T04:20:41Z",
-      "comment_updated_at": "2026-07-12T04:20:41Z",
-      "comment_body_sha256": "07585eb40197e1b0c9c2f112eb453ef514cd6cd21c97a327310b214bf03854cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (head now 091563173c), please re-review against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T22:57:45.465Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4951303267:2026-07-12T13:12:43Z:re_review",
       "comment_id": "4951303267",
@@ -31923,6 +31896,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:9:5154515378:2026-08-02T01:50:56Z:clawsweeper_needs_human",
+      "comment_id": "5154515378",
+      "comment_version_key": "5154515378:2026-08-02T01:50:56Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/9#issuecomment-5154515378",
+      "comment_created_at": "2026-08-02T01:50:56Z",
+      "comment_updated_at": "2026-08-02T01:50:56Z",
+      "comment_body_sha256": "1bd59e0c541df4c15844a7959c4cd64df1108c9328418937112ea4c7f040b3a6",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 9,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The four target-specific ESP32 checks were still in progress in the supplied PR state, so their final hardware-target validation result remains pending. (sha=a6e5f5a218c43311788d651c11c8e14c52de4d21)",
+      "expected_head_sha": "a6e5f5a218c43311788d651c11c8e14c52de4d21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T01:51:28.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/room-node-lean",
+        "head_sha": "a6e5f5a218c43311788d651c11c8e14c52de4d21",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
