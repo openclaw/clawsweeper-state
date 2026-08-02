@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T10:09:00.432Z",
+  "updated_at": "2026-08-02T10:09:15.665Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117114:5156035771:2026-08-02T06:52:54Z:re_review",
-      "comment_id": "5156035771",
-      "comment_version_key": "5156035771:2026-08-02T06:52:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117114#issuecomment-5156035771",
-      "comment_created_at": "2026-08-02T06:52:54Z",
-      "comment_updated_at": "2026-08-02T06:52:54Z",
-      "comment_body_sha256": "38367e6ebea6576897c1ace643d2a1488af345631a7807f6bcf61cb6d9416ce4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117114,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T06:53:34.589Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-114966-supersede-v2",
-        "head_sha": "b197944d89767e2471cdeb0fe79ff24565cd3dcd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114983:5100804526:2026-08-02T06:54:06Z:clawsweeper_needs_human",
       "comment_id": "5100804526",
@@ -32339,6 +32292,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-wiki-agent-scope",
         "head_sha": "20edd22265a636f0a227ab90ff289bcf904a0167",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:197:5157071844:2026-08-02T10:08:43Z:clawsweeper_needs_human",
+      "comment_id": "5157071844",
+      "comment_version_key": "5157071844:2026-08-02T10:08:43Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/197#issuecomment-5157071844",
+      "comment_created_at": "2026-08-02T10:08:43Z",
+      "comment_updated_at": "2026-08-02T10:08:43Z",
+      "comment_body_sha256": "97adba086542357ba283b9c396d3ae6e8e35926fbe27e52bde7a9a4843f7b856",
+      "repo": "steipete/poltergeist",
+      "issue_number": 197,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This modifies tag-triggered release automation; the new script receives syntax coverage in PR CI, while the queued macOS checks should complete on the exact head before merge. (sha=526e2e5cb5fbcc50aed93a8a3a44a996345409b6)",
+      "expected_head_sha": "526e2e5cb5fbcc50aed93a8a3a44a996345409b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T10:09:15.665Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-bun-lipo-signatures",
+        "head_sha": "526e2e5cb5fbcc50aed93a8a3a44a996345409b6",
         "cluster_id": null,
         "job_path": null
       }
