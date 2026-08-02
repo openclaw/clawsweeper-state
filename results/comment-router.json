@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T14:15:54.667Z",
+  "updated_at": "2026-08-02T14:16:01.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4948430063:2026-07-11T19:15:25Z:re_review",
-      "comment_id": "4948430063",
-      "comment_version_key": "4948430063:2026-07-11T19:15:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4948430063",
-      "comment_created_at": "2026-07-11T19:15:25Z",
-      "comment_updated_at": "2026-07-11T19:15:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:23:35.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4949437311:2026-07-12T01:12:50Z:re_review",
       "comment_id": "4949437311",
@@ -31286,6 +31259,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T14:15:54.667Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116304:5128374302:2026-08-02T14:15:24Z:clawsweeper_needs_human",
+      "comment_id": "5128374302",
+      "comment_version_key": "5128374302:2026-08-02T14:15:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116304#issuecomment-5128374302",
+      "comment_created_at": "2026-07-30T08:20:37Z",
+      "comment_updated_at": "2026-08-02T14:15:24Z",
+      "comment_body_sha256": "16947f14af528afe4ca2a810dc994ed66d45696fb8fd8212379f1e72c509949d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116304,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Recognize direct calls through collected namespace aliases (P1)** - collectChildProcessBindings records proc for const proc = require(\"child_process\"), but this direct-member branch still only permits three lite...; Review finding: [P1] Recognize direct calls through collected namespace aliases — src/skills/security/scanner.ts:434-435 - [P2] Collect ESM namespace-import aliases — src/skills/s... (sha=486b7b4719bbc5aaac4beaacfab1969990db448c)",
+      "expected_head_sha": "486b7b4719bbc5aaac4beaacfab1969990db448c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T14:16:01.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scanner-child-process-bindings-116255",
+        "head_sha": "486b7b4719bbc5aaac4beaacfab1969990db448c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
