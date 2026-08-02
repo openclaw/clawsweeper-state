@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:35:42.128Z",
+  "updated_at": "2026-08-02T09:35:49.232Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117825:5155514625:2026-08-02T05:48:25Z:clawsweeper_auto_repair",
-      "comment_id": "5155514625",
-      "comment_version_key": "5155514625:2026-08-02T05:48:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117825#issuecomment-5155514625",
-      "comment_created_at": "2026-08-02T05:02:45Z",
-      "comment_updated_at": "2026-08-02T05:48:25Z",
-      "comment_body_sha256": "19efbf77d995cb0495717b688c894e437b172818b7e8c65a975104bd94e1a0b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117825,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d638a784aa5a66e964d52c4b6981894c00bb0f4f)",
-      "expected_head_sha": "d638a784aa5a66e964d52c4b6981894c00bb0f4f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T05:49:03.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/core-micro-helpers",
-        "head_sha": "d638a784aa5a66e964d52c4b6981894c00bb0f4f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117858:5155749543:2026-08-02T05:49:06Z:clawsweeper_needs_human",
       "comment_id": "5155749543",
@@ -32436,6 +32403,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117449:5151972627:2026-08-02T09:35:08Z:clawsweeper_needs_human",
+      "comment_id": "5151972627",
+      "comment_version_key": "5151972627:2026-08-02T09:35:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117449#issuecomment-5151972627",
+      "comment_created_at": "2026-08-01T15:00:58Z",
+      "comment_updated_at": "2026-08-02T09:35:08Z",
+      "comment_body_sha256": "f24a30d53d49185cd3017fc8d0619249c0b017a7d60936d7cef116e467555f74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117449,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an unrelated reload, prepared provider-auth state is intentionally cleared but not proactively rebuilt. The fingerprint guard prevents stale answers by falling back to computati... (sha=55d879aafdd96ac04c54cdecd6f0c26191226bc9)",
+      "expected_head_sha": "55d879aafdd96ac04c54cdecd6f0c26191226bc9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:35:49.231Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-117411-skip-provider-auth-rewarm-unrelated-reload",
+        "head_sha": "55d879aafdd96ac04c54cdecd6f0c26191226bc9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
