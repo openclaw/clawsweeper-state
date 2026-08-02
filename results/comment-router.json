@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:54:50.626Z",
+  "updated_at": "2026-08-02T09:54:54.758Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97845:4988114276:2026-07-16T04:15:26Z:re_review",
-      "comment_id": "4988114276",
-      "comment_version_key": "4988114276:2026-07-16T04:15:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97845#issuecomment-4988114276",
-      "comment_created_at": "2026-07-16T04:15:26Z",
-      "comment_updated_at": "2026-07-16T04:15:26Z",
-      "comment_body_sha256": "19495df5a9c855d17cfa75ca83797457629900fa73a745e5c0d40e85213cbc5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97845,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:28:41.996Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97845:4989227896:2026-07-16T07:19:02Z:re_review",
       "comment_id": "4989227896",
@@ -32372,6 +32345,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T09:54:50.625Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117449:5151972627:2026-08-02T09:52:04Z:clawsweeper_needs_human",
+      "comment_id": "5151972627",
+      "comment_version_key": "5151972627:2026-08-02T09:52:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117449#issuecomment-5151972627",
+      "comment_created_at": "2026-08-01T15:00:58Z",
+      "comment_updated_at": "2026-08-02T09:52:04Z",
+      "comment_body_sha256": "e6073dde910c380506bd6e395fddabc43d63613ff37ed8a89215f9e21d4f7ae9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117449,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an unrelated reload, prepared provider-auth state remains intentionally absent, so the first model picker or model-listing request may pay a fresh auth-discovery cost until a la... (sha=97bfaacc87a173b650590606f44d94cd9a59047d)",
+      "expected_head_sha": "97bfaacc87a173b650590606f44d94cd9a59047d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:54:54.757Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-117411-skip-provider-auth-rewarm-unrelated-reload",
+        "head_sha": "97bfaacc87a173b650590606f44d94cd9a59047d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
