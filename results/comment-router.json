@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:53:33.874Z",
+  "updated_at": "2026-08-02T15:53:34.344Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117580:5153000965:2026-08-02T12:17:51Z:clawsweeper_auto_repair",
-      "comment_id": "5153000965",
-      "comment_version_key": "5153000965:2026-08-02T12:17:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117580#issuecomment-5153000965",
-      "comment_created_at": "2026-08-01T19:17:38Z",
-      "comment_updated_at": "2026-08-02T12:17:51Z",
-      "comment_body_sha256": "0e8370656284d97dec9d339ed6e060ee30c06eec14007bfce914f87820ae0525",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f2b3b8b8ccb0459df4a7825d5cbaf74f49fe7719)",
-      "expected_head_sha": "f2b3b8b8ccb0459df4a7825d5cbaf74f49fe7719",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:21:48.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-117470-native-compact-session-override",
-        "head_sha": "f2b3b8b8ccb0459df4a7825d5cbaf74f49fe7719",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:342:5088738396:2026-08-02T12:21:21Z:clawsweeper_auto_repair",
       "comment_id": "5088738396",
@@ -31206,6 +31173,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T15:53:33.874Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117646:5153581036:2026-08-02T15:52:55Z:clawsweeper_needs_human",
+      "comment_id": "5153581036",
+      "comment_version_key": "5153581036:2026-08-02T15:52:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117646#issuecomment-5153581036",
+      "comment_created_at": "2026-08-01T21:43:34Z",
+      "comment_updated_at": "2026-08-02T15:52:55Z",
+      "comment_body_sha256": "330790d252028efaae55c758ad1e7b7712b5237ca260ee682e534b94523849d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117646,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes shutdown from fail-fast sidecar cleanup to best-effort group cleanup, so the exact merge result should retain focused lifecycle coverage and pass its required Gateway/CI... (sha=81f5c2f66341273fad036cb320624540c881c18e)",
+      "expected_head_sha": "81f5c2f66341273fad036cb320624540c881c18e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:53:34.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-sidecar-stop-rejections",
+        "head_sha": "81f5c2f66341273fad036cb320624540c881c18e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
