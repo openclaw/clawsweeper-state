@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:49:52.712Z",
+  "updated_at": "2026-08-02T05:49:53.824Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114580:5091609455:2026-08-02T01:33:58Z:clawsweeper_needs_human",
-      "comment_id": "5091609455",
-      "comment_version_key": "5091609455:2026-08-02T01:33:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114580#issuecomment-5091609455",
-      "comment_created_at": "2026-07-27T13:00:45Z",
-      "comment_updated_at": "2026-08-02T01:33:58Z",
-      "comment_body_sha256": "e5ce5a39756d5f86b51b9bb423a14fa8d32b80c26520510b5613dd0dc8def994",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch base predates the current-main timezone-aware Tlon history update. GitHub reports a clean merge, but the final three-way result should be inspected to ensure that update re... (sha=931622978a67f33efb2a9ef91f9f528347aa910e)",
-      "expected_head_sha": "931622978a67f33efb2a9ef91f9f528347aa910e",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:35:02.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/tlon-history-cache-lifecycle",
-        "head_sha": "931622978a67f33efb2a9ef91f9f528347aa910e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114580:5101279865:2026-07-28T07:34:36Z:re_review",
       "comment_id": "5101279865",
@@ -32654,6 +32607,39 @@
         "kind": "pull_request",
         "branch": "cleanup/webhook-spool-factory",
         "head_sha": "4fc7536d17fa4b875a80a3cb667c0a04d47412a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117860:5155750149:2026-08-02T05:49:14Z:clawsweeper_needs_human",
+      "comment_id": "5155750149",
+      "comment_version_key": "5155750149:2026-08-02T05:49:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117860#issuecomment-5155750149",
+      "comment_created_at": "2026-08-02T05:49:14Z",
+      "comment_updated_at": "2026-08-02T05:49:14Z",
+      "comment_body_sha256": "3f6e258cd6f61602b6aae8899868868386e2fe166351d5e61e81ae03a2f0f5f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The available body reports tests and CI but contains no inspectable after-fix Zalo runtime transcript, log, recording, or artifact; add redacte... (sha=9c232f11b9b58d61d847049fea7026d84711fd8b)",
+      "expected_head_sha": "9c232f11b9b58d61d847049fea7026d84711fd8b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:49:53.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-zalouser-delivery-failures-0801",
+        "head_sha": "9c232f11b9b58d61d847049fea7026d84711fd8b",
         "cluster_id": null,
         "job_path": null
       }
