@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T02:49:14.880Z",
+  "generated_at": "2026-08-02T03:36:53.243Z",
   "count": 8,
   "summary": {
     "open_prs": 8,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 7,
     "needs_review": 0,
     "needs_merge_preflight": 8,
     "needs_result_backfill": 0
@@ -34,7 +34,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T02:45:22Z",
+      "updated_at": "2026-08-02T03:34:52Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -113,40 +113,19 @@
       "head_sha": "2c8918cb74d4857797a46cfd1a7d8ad1bc1f92f6",
       "cluster_id": "issue-openclaw-openclaw-117709",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117709.md",
-      "updated_at": "2026-08-02T02:47:39Z",
+      "updated_at": "2026-08-02T02:50:57Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 108,
+        "total": 113,
         "counts": {
-          "SUCCESS": 50,
-          "SKIPPED": 38,
-          "IN_PROGRESS": 19,
+          "SKIPPED": 40,
+          "SUCCESS": 72,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CI / build-artifacts:IN_PROGRESS",
-          "CI / checks-node-compact-large-1:IN_PROGRESS",
-          "CI / checks-node-compact-large-2:IN_PROGRESS",
-          "CI / checks-node-compact-large-3:IN_PROGRESS",
-          "CI / checks-node-compact-large-4:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-12:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-3:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -172,11 +151,11 @@
         ]
       },
       "latest_record": {
-        "run_id": "30729347408",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30729347408",
+        "run_id": "30730754729",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30730754729",
         "cluster_id": "automerge-openclaw-openclaw-117717",
-        "published_at": "2026-08-02T02:48:51.398Z",
-        "workflow_conclusion": "failure",
+        "published_at": "2026-08-02T03:35:54.024Z",
+        "workflow_conclusion": "success",
         "apply_action": {
           "target": "#117717",
           "action": "build_fix_artifact",
@@ -184,15 +163,14 @@
           "classification": "canonical",
           "canonical": "#117717",
           "candidate_fix": "#117717",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "reason": "Run the bounded repair/rebase/review loop against the existing canonical branch; do not replace or merge it."
         }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / checks-node-compact-large-1:IN_PROGRESS; CI / checks-node-compact-large-2:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 117697,
@@ -202,7 +180,7 @@
       "head_sha": "5060d03bc51f343abd808a29bb55ef0e1033c5a8",
       "cluster_id": "issue-openclaw-openclaw-117672",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117672.md",
-      "updated_at": "2026-08-02T02:47:04Z",
+      "updated_at": "2026-08-02T03:30:55Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -274,29 +252,26 @@
       "title": "fix(model-catalog): preserve manifest lifecycle metadata on refresh",
       "url": "https://github.com/openclaw/openclaw/pull/117620",
       "branch": "clawsweeper/issue-openclaw-openclaw-117545",
-      "head_sha": "98cf58c9508f32679ba4cca34afd2761bd83f2aa",
+      "head_sha": "00a26c47b90d3bbb2c6438b7a03f65636a2ecb20",
       "cluster_id": "issue-openclaw-openclaw-117545",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117545.md",
-      "updated_at": "2026-08-02T02:45:12Z",
+      "updated_at": "2026-08-02T03:25:32Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 133,
+        "total": 129,
         "counts": {
-          "CANCELLED": 6,
-          "SKIPPED": 42,
-          "SUCCESS": 81,
-          "FAILURE": 3,
+          "CANCELLED": 3,
+          "SKIPPED": 40,
+          "SUCCESS": 83,
+          "FAILURE": 2,
           "NEUTRAL": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / checks-node-compact-large-6:FAILURE",
-          "CI / check-lint:FAILURE",
+          "CI / checks-node-compact-large-7:FAILURE",
           "CI / openclaw/ci-gate:FAILURE"
         ]
       },
@@ -341,7 +316,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:Real behavior proof:CANCELLED; CI / checks-node-compact-large-7:FAILURE; CI / openclaw/ci-gate:FAILURE",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -515,7 +490,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T02:46:10Z",
+      "updated_at": "2026-08-02T03:34:45Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

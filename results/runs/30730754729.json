@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117717",
+  "mode": "autonomous",
+  "run_id": "30730754729",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30730754729",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117717.md",
+  "published_at": "2026-08-02T03:35:54.024Z",
+  "canonical": "#117717",
+  "canonical_issue": "#117709",
+  "canonical_pr": "#117717",
+  "summary": "Keep #117717 as the canonical, narrow repair PR for #117709. Its hydrated exact-head checks, real-behavior proof, and ClawSweeper review are passing; this fix-only job should repair the same branch only if a fresh rebase/review exposes an actionable change, and must not merge or close anything.",
+  "actions": [
+    {
+      "target": "#100119",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117717",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation."
+    },
+    {
+      "target": "#117708",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117717",
+      "candidate_fix": null,
+      "reason": "Distinct root cause and user-visible outcome; retain independently."
+    },
+    {
+      "target": "#117709",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "fixed_by_candidate",
+      "canonical": "#117717",
+      "candidate_fix": "#117717",
+      "reason": "Covered by the canonical PR but must stay open until a permitted post-merge closeout."
+    },
+    {
+      "target": "#117717",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117717",
+      "candidate_fix": "#117717",
+      "reason": "Run the bounded repair/rebase/review loop against the existing canonical branch; do not replace or merge it."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
