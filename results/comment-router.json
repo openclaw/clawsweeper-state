@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T17:47:22.800Z",
+  "updated_at": "2026-08-02T17:47:44.116Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116450:5133290546:2026-08-02T15:16:23Z:clawsweeper_needs_human",
@@ -31006,65 +31006,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:100845:5019184053:2026-07-20T05:51:52Z:automerge",
-      "comment_id": "5019184053",
-      "comment_version_key": "5019184053:2026-07-20T05:51:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100845#issuecomment-5019184053",
-      "comment_created_at": "2026-07-20T05:51:52Z",
-      "comment_updated_at": "2026-07-20T05:51:52Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100845,
-      "author": "amknight",
-      "author_id": 15041791,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-02T17:47:11.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oneshot-local-otel-export",
-        "head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
-        "cluster_id": "automerge-openclaw-openclaw-100845",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100193:4885164229:2026-08-02T17:41:52Z:clawsweeper_auto_repair",
       "comment_id": "4885164229",
       "comment_version_key": "4885164229:2026-08-02T17:41:52Z",
@@ -31287,6 +31228,59 @@
           "status": "blocked",
           "label": null,
           "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:100845:5019184053:2026-07-20T05:51:52Z:automerge",
+      "comment_id": "5019184053",
+      "comment_version_key": "5019184053:2026-07-20T05:51:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100845#issuecomment-5019184053",
+      "comment_created_at": "2026-07-20T05:51:52Z",
+      "comment_updated_at": "2026-07-20T05:51:52Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100845,
+      "author": "amknight",
+      "author_id": 15041791,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T17:47:30.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oneshot-local-otel-export",
+        "head_sha": "bcc5cd706d920ece6c247aa54fc1313d14bf35f0",
+        "cluster_id": "automerge-openclaw-openclaw-100845",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
         },
         {
           "action": "comment",
