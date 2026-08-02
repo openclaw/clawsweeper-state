@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T11:08:15.944Z",
+  "updated_at": "2026-08-02T11:09:17.917Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113347:5071279430:2026-08-02T07:41:20Z:clawsweeper_needs_human",
-      "comment_id": "5071279430",
-      "comment_version_key": "5071279430:2026-08-02T07:41:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113347#issuecomment-5071279430",
-      "comment_created_at": "2026-07-24T15:01:42Z",
-      "comment_updated_at": "2026-08-02T07:41:20Z",
-      "comment_body_sha256": "ce633d0e7902dd68a77ef498e85dfd5b0b92ba7ee872b6a11572828d7330bb29",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113347,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the trusted-origin exception before merge** - The PR changes delivery behavior based on internal agent-runtime message-action context; current main verifies that context through...; Review finding: [medium] Confirm the trusted-origin exception before merge — src/gateway/server-methods/send.ts:553 (sha=98164a0bbae2cf0451b9a1d6c115700165bfc903)",
-      "expected_head_sha": "98164a0bbae2cf0451b9a1d6c115700165bfc903",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T08:10:55.002Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-ignore-populated-location-v2",
-        "head_sha": "98164a0bbae2cf0451b9a1d6c115700165bfc903",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113366:5072128959:2026-08-02T07:52:12Z:clawsweeper_needs_human",
       "comment_id": "5072128959",
@@ -31687,6 +31654,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113900:5080973544:2026-08-02T11:08:44Z:clawsweeper_auto_repair",
+      "comment_id": "5080973544",
+      "comment_version_key": "5080973544:2026-08-02T11:08:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113900#issuecomment-5080973544",
+      "comment_created_at": "2026-07-25T23:10:49Z",
+      "comment_updated_at": "2026-08-02T11:08:44Z",
+      "comment_body_sha256": "a7139a48a5ac4c3cd3a7cc972aec57af7125e8f808a5b66af366aebe414390ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=81cabf8800e6c4f161bcbd1cbe9086126e61d5a3)",
+      "expected_head_sha": "81cabf8800e6c4f161bcbd1cbe9086126e61d5a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T11:09:17.916Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-autoqa-shell-onboarding-31190d",
+        "head_sha": "81cabf8800e6c4f161bcbd1cbe9086126e61d5a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
