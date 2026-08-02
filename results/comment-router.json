@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:09:33.195Z",
+  "updated_at": "2026-08-02T16:09:35.663Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5077446334:2026-07-25T07:10:46Z:re_review",
-      "comment_id": "5077446334",
-      "comment_version_key": "5077446334:2026-07-25T07:10:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5077446334",
-      "comment_created_at": "2026-07-25T07:10:46Z",
-      "comment_updated_at": "2026-07-25T07:10:46Z",
-      "comment_body_sha256": "c2dac2dcb082dccc6e3f49ba832de5df6c51e021d46af6b4728b9ca57a004ace",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts; mergeable). new head 9f1dbdd6a6. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-warn backoff are unchanged",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:31:27.723Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5078622646:2026-07-25T13:16:47Z:re_review",
       "comment_id": "5078622646",
@@ -31560,6 +31533,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89039:5159112590:2026-08-02T16:09:02Z:re_review",
+      "comment_id": "5159112590",
+      "comment_version_key": "5159112590:2026-08-02T16:09:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-5159112590",
+      "comment_created_at": "2026-08-02T16:09:02Z",
+      "comment_updated_at": "2026-08-02T16:09:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89039,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T16:09:33.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-takeover-silent-message-loss-87180",
+        "head_sha": "8fb6f9a2e64317555f01d624b03a7e7cdf166b1f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
