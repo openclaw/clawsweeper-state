@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 2, 2026, 10:08 UTC
+Last source update: Aug 2, 2026, 10:47 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 2, 2026, 10:08 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 2, 2026, 10:08 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30743022992) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 2, 2026, 10:03 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30742968782) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Aug 2, 2026, 10:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30744339091) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 2, 2026, 10:24 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30743649471) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 2, 2026, 08:50 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30740547782) |
 
 ### Repositories
@@ -91,20 +91,20 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 2, 2026, 10:06 UTC
+Last source update: Aug 2, 2026, 10:43 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 298 | 100% |
-| Run attempts archived | 803 | audit |
-| Latest successful clusters | 263 | 88.3% |
-| Latest failed clusters | 34 | 11.4% |
+| Latest clusters reviewed | 300 | 100% |
+| Run attempts archived | 805 | audit |
+| Latest successful clusters | 265 | 88.3% |
+| Latest failed clusters | 34 | 11.3% |
 | Latest cancelled clusters | 1 | 0.3% |
 | Needs-human clusters | 23 | 7.7% |
-| Fix actions failed | 19 | 5.2% |
-| Fix actions blocked | 76 | 20.8% |
+| Fix actions failed | 19 | 5.1% |
+| Fix actions blocked | 76 | 20.6% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
 | Blocked mutation attempts | 237 | 99.6% |
@@ -115,15 +115,15 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 298 clusters: 157 maintainer action, 48 automation snapshot, 77 intervention needed, 16 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#117881](https://github.com/openclaw/openclaw/pull/117881) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
+- Latest records: 300 clusters: 159 maintainer action, 48 automation snapshot, 77 intervention needed, 16 no pending action, 0 completed.
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#117954](https://github.com/openclaw/openclaw/pull/117954) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#73478](https://github.com/openclaw/openclaw/pull/73478) is automation_failed: Current main still drops assistant media from Gateway live chat. The closed prior PR is not a viable branch, so the canonical issue needs....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#117911](https://github.com/openclaw/openclaw/pull/117911) is action_planned: Repair the useful existing same-repo branch rather than replacing it. The change is exec-adjacent diagnostics only and does not alter the....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
-| Maintainer Action | 157 | explicit decision, access, or merge authority recorded |
+| Maintainer Action | 159 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 48 | repair, check, or planned action recorded; verify live status |
 | Intervention Needed | 77 | automation failure or blocker recorded |
 | No Pending Action | 16 | latest record proposes no repair or apply action |
@@ -132,7 +132,7 @@ State: Failed clusters need inspection
 | Lane state | Count |
 | --- | ---: |
 | maintainer_input | 41 |
-| merge_ready | 18 |
+| merge_ready | 20 |
 | merge_not_authorized | 98 |
 | checks_blocked | 29 |
 | repair_open | 1 |
@@ -147,6 +147,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117954](https://github.com/openclaw/openclaw/pull/117954) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 2, 2026, 10:43 UTC | [issue-openclaw-openclaw-117941](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117941.md) | [30742939447](https://github.com/openclaw/clawsweeper/actions/runs/30742939447) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117952](https://github.com/openclaw/openclaw/pull/117952) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 2, 2026, 10:40 UTC | [issue-openclaw-openclaw-117899](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117899.md) | [30742823338](https://github.com/openclaw/clawsweeper/actions/runs/30742823338) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117881](https://github.com/openclaw/openclaw/pull/117881) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 2, 2026, 07:05 UTC | [issue-openclaw-openclaw-67366](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-67366.md) | [30736012393](https://github.com/openclaw/clawsweeper/actions/runs/30736012393) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#67202](https://github.com/openclaw/openclaw/issues/67202) | maintainer_input | Route this exact security-sensitive historical PR to central OpenClaw security handling; do not let it block the unrelated non-security repair path. | Aug 2, 2026, 05:30 UTC | [issue-openclaw-openclaw-67136](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-67136.md) | [30733333491](https://github.com/openclaw/clawsweeper/actions/runs/30733333491) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#117620](https://github.com/openclaw/openclaw/pull/117620) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 1, 2026, 20:45 UTC | [issue-openclaw-openclaw-117545](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-117545.md) | [30716583623](https://github.com/openclaw/clawsweeper/actions/runs/30716583623) |
@@ -160,8 +162,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#107479](https://github.com/openclaw/openclaw/pull/107479) | merge_not_authorized | job does not allow merge | Jul 14, 2026, 13:02 UTC | [automerge-openclaw-openclaw-103304](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-103304.md) | [29333867746](https://github.com/openclaw/clawsweeper/actions/runs/29333867746) |
 | [openclaw/discrawl](https://github.com/openclaw/discrawl) | [#129](https://github.com/openclaw/discrawl/pull/129) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Jul 14, 2026, 13:00 UTC | [issue-openclaw-discrawl-128](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-discrawl-128.md) | [29333817142](https://github.com/openclaw/clawsweeper/actions/runs/29333817142) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#106859](https://github.com/openclaw/openclaw/pull/106859) | merge_not_authorized | job does not allow merge | Jul 13, 2026, 22:27 UTC | [automerge-openclaw-openclaw-106528](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-106528.md) | [29288691960](https://github.com/openclaw/clawsweeper/actions/runs/29288691960) |
-| [openclaw/wacli](https://github.com/openclaw/wacli) | [#302](https://github.com/openclaw/wacli/pull/302) | merge_not_authorized | job does not allow merge | Jul 13, 2026, 22:17 UTC | [automerge-openclaw-wacli-302](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-wacli-302.md) | [29288163697](https://github.com/openclaw/clawsweeper/actions/runs/29288163697) |
-| [openclaw/wacli](https://github.com/openclaw/wacli) | [#302](https://github.com/openclaw/wacli/pull/302) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Jul 13, 2026, 21:36 UTC | [issue-openclaw-wacli-301](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-wacli-301.md) | [29285698281](https://github.com/openclaw/clawsweeper/actions/runs/29285698281) |
 
 #### Automation Snapshot
 
