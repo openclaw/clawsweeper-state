@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:51:30.846Z",
+  "updated_at": "2026-08-02T03:51:40.955Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:131:5093770527:2026-08-01T23:48:34Z:clawsweeper_needs_human",
-      "comment_id": "5093770527",
-      "comment_version_key": "5093770527:2026-08-01T23:48:34Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/131#issuecomment-5093770527",
-      "comment_created_at": "2026-07-27T16:10:49Z",
-      "comment_updated_at": "2026-08-01T23:48:34Z",
-      "comment_body_sha256": "f0e4b508884d87661be77657bbf483d8680d00de69053de9cd61d5d9f9d16ec9",
-      "repo": "openclaw/clickclack",
-      "issue_number": 131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject private repositories until room access is enforced (P1)** - The picker accepts repository metadata with private, but this flow creates a public collaboration channel and project participants are not an AC...; Review finding: [P1] Reject private repositories until room access is enforced — apps/web/src/routes/app/[workspaceID]/projects/+page.svelte:29 - [high] Private repository events... (sha=3471020a467834926999e9339fe61952d0c44ddd)",
-      "expected_head_sha": "3471020a467834926999e9339fe61952d0c44ddd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:49:14.129Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "s/github-project-rooms",
-        "head_sha": "3471020a467834926999e9339fe61952d0c44ddd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clickclack:131:5094476203:2026-07-27T17:18:11Z:re_review",
       "comment_id": "5094476203",
@@ -32514,6 +32481,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117641:5155087246:2026-08-02T03:51:04Z:re_review",
+      "comment_id": "5155087246",
+      "comment_version_key": "5155087246:2026-08-02T03:51:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117641#issuecomment-5155087246",
+      "comment_created_at": "2026-08-02T03:51:04Z",
+      "comment_updated_at": "2026-08-02T03:51:04Z",
+      "comment_body_sha256": "2d605c4498807aa471e1e226794373c4df7da319318553ede5e36e25c20a4905",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117641,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T03:51:39.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/graceful-sigterm-drain",
+        "head_sha": "5127f315dbe2a03d2fd0c3d5c4be5c1ff2c7821a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
