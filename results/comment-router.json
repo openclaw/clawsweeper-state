@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:38:05.180Z",
+  "updated_at": "2026-08-02T00:40:12.722Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117273:5153623645:2026-08-01T21:55:25Z:re_review",
-      "comment_id": "5153623645",
-      "comment_version_key": "5153623645:2026-08-01T21:55:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117273#issuecomment-5153623645",
-      "comment_created_at": "2026-08-01T21:55:25Z",
-      "comment_updated_at": "2026-08-01T21:55:25Z",
-      "comment_body_sha256": "d16a5a32b0134e7d13011c46d11cc6ed71689832b1a79d12b28dc192f1448786",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117273,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T21:56:06.275Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/91160-markdown-lint",
-        "head_sha": "81531f433059ccad69b1fbd424cfd073b7ec9392",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117648:5153634262:2026-08-01T21:58:22Z:re_review",
       "comment_id": "5153634262",
@@ -32361,6 +32314,39 @@
         "kind": "pull_request",
         "branch": "codex/triage-2026-08-01",
         "head_sha": "48ffb65c30b34c99d0fa6382b6121e89c9b628be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117560:5152994299:2026-08-02T00:39:32Z:clawsweeper_needs_human",
+      "comment_id": "5152994299",
+      "comment_version_key": "5152994299:2026-08-02T00:39:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117560#issuecomment-5152994299",
+      "comment_created_at": "2026-08-01T19:16:04Z",
+      "comment_updated_at": "2026-08-02T00:39:32Z",
+      "comment_body_sha256": "4962af6c321f7fe19e6f850ab8e7873d6c74907b1e85afdeed012ebdf197c7b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117560,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes strong real SQLite output for 47a2ef..., but later current-head commits changed compaction handling and extracted the... (sha=16e2cff499773b8fe70618a6209d3fe89f29eaaa)",
+      "expected_head_sha": "16e2cff499773b8fe70618a6209d3fe89f29eaaa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T00:40:12.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-companion-transcript-seed",
+        "head_sha": "16e2cff499773b8fe70618a6209d3fe89f29eaaa",
         "cluster_id": null,
         "job_path": null
       }
