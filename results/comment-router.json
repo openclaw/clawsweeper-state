@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:20:56.547Z",
+  "updated_at": "2026-08-02T05:21:12.083Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4770452512:2026-06-22T16:16:34Z:re_review",
-      "comment_id": "4770452512",
-      "comment_version_key": "4770452512:2026-06-22T16:16:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4770452512",
-      "comment_created_at": "2026-06-22T16:16:34Z",
-      "comment_updated_at": "2026-06-22T16:16:34Z",
-      "comment_body_sha256": "2de974179c5a3546cb3b9a0a67b3fcced4a2b84bb2d0c057b4b54d93ccf9ba53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:29:37.229Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4773555710:2026-06-22T22:15:38Z:re_review",
       "comment_id": "4773555710",
@@ -32207,6 +32180,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117792:5155212743:2026-08-02T05:20:36Z:clawsweeper_needs_human",
+      "comment_id": "5155212743",
+      "comment_version_key": "5155212743:2026-08-02T05:20:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117792#issuecomment-5155212743",
+      "comment_created_at": "2026-08-02T04:13:15Z",
+      "comment_updated_at": "2026-08-02T05:20:36Z",
+      "comment_body_sha256": "c92307c352261912e332477ee96fb9b0d23335550b6af571b442a3abfb64d551",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117792,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change intentionally makes qualifying retained reset-archive messages visible as redacted content rather than returning an oversized placeholder; the protected maintainer label re... (sha=3c78dac16c40dd5927f688b75ad82ea2e192afcb)",
+      "expected_head_sha": "3c78dac16c40dd5927f688b75ad82ea2e192afcb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:21:12.082Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-multimodal-history-78729",
+        "head_sha": "3c78dac16c40dd5927f688b75ad82ea2e192afcb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
