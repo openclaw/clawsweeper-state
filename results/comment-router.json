@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T23:20:39.393Z",
+  "updated_at": "2026-08-02T23:21:10.635Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114409:5088586841:2026-08-02T17:56:59Z:clawsweeper_needs_human",
-      "comment_id": "5088586841",
-      "comment_version_key": "5088586841:2026-08-02T17:56:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114409#issuecomment-5088586841",
-      "comment_created_at": "2026-07-27T07:37:30Z",
-      "comment_updated_at": "2026-08-02T17:56:59Z",
-      "comment_body_sha256": "f6d88124cba81604b17de43f9940de9bbea9994a3ce3d5f00034b16c4f6aee4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114409,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Conflict resolution against current main can change or omit assertions covered by the recorded original-head test run, so it needs exact-head focused proof before merge. (sha=425405e44d2c711c44fd67c52a718f6366c75502)",
-      "expected_head_sha": "425405e44d2c711c44fd67c52a718f6366c75502",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:29:29.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-dedup-channels-wave-two",
-        "head_sha": "425405e44d2c711c44fd67c52a718f6366c75502",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114423:5088749957:2026-08-02T17:57:49Z:clawsweeper_needs_human",
       "comment_id": "5088749957",
@@ -32220,6 +32187,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T23:20:39.392Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118271:5160714488:2026-08-02T23:20:26Z:clawsweeper_needs_human",
+      "comment_id": "5160714488",
+      "comment_version_key": "5160714488:2026-08-02T23:20:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118271#issuecomment-5160714488",
+      "comment_created_at": "2026-08-02T22:47:48Z",
+      "comment_updated_at": "2026-08-02T23:20:26Z",
+      "comment_body_sha256": "54a0d9f7225d68a8bad307862164dfbd942e5e5427127b1557586819d272a9ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and checks, but it contains no inspectable redacted after-fix gateway close or SIGUSR1 restart output demonstrating t... (sha=599cbbb67c3864494c1a8c35512dbdf643fd14ef)",
+      "expected_head_sha": "599cbbb67c3864494c1a8c35512dbdf643fd14ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T23:21:10.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/ambient-state-lifecycle-owners",
+        "head_sha": "599cbbb67c3864494c1a8c35512dbdf643fd14ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
