@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:17:42.869Z",
+  "updated_at": "2026-08-02T16:17:50.422Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115829:5118165151:2026-08-02T12:13:33Z:clawsweeper_auto_repair",
-      "comment_id": "5118165151",
-      "comment_version_key": "5118165151:2026-08-02T12:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115829#issuecomment-5118165151",
-      "comment_created_at": "2026-07-29T13:07:46Z",
-      "comment_updated_at": "2026-08-02T12:13:33Z",
-      "comment_body_sha256": "34c3589707585dfd2f7f17ce2ca814cd4d0f2edaf277201b0a1cd928c3e7d866",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e6875bd3522d6cfe11f2b0a1c5112e426bfcb55)",
-      "expected_head_sha": "2e6875bd3522d6cfe11f2b0a1c5112e426bfcb55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:35:58.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/plugin-tui-status",
-        "head_sha": "2e6875bd3522d6cfe11f2b0a1c5112e426bfcb55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117022:5146814350:2026-08-02T12:12:35Z:clawsweeper_auto_repair",
       "comment_id": "5146814350",
@@ -31533,6 +31500,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T16:17:42.868Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115301:5132081993:2026-08-02T16:17:03Z:clawsweeper_needs_human",
+      "comment_id": "5132081993",
+      "comment_version_key": "5132081993:2026-08-02T16:17:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115301#issuecomment-5132081993",
+      "comment_created_at": "2026-07-30T14:25:43Z",
+      "comment_updated_at": "2026-08-02T16:17:03Z",
+      "comment_body_sha256": "6234cbae7713e177111cf0ee8c171bfe91542bd9b42835f58bcd509e7c447039",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused unit tests, formatting, and CI, but includes no after-fix Teams, gateway, or mock-gateway runtime artifact showing...; Review finding: [P1] Reuse the shared approval command parser — extensions/msteams/src/approval-control.ts:7-8 - [P1] Pass the resolved approval owner to the gateway — extensions/... (sha=389a1dc326f80c8993f499e0eb4c35c857d3aeb4)",
+      "expected_head_sha": "389a1dc326f80c8993f499e0eb4c35c857d3aeb4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:17:50.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-approval-control",
+        "head_sha": "389a1dc326f80c8993f499e0eb4c35c857d3aeb4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
