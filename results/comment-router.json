@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:50:29.061Z",
+  "updated_at": "2026-08-02T16:50:49.728Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:337:5074241558:2026-08-02T13:42:04Z:clawsweeper_needs_human",
-      "comment_id": "5074241558",
-      "comment_version_key": "5074241558:2026-08-02T13:42:04Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/337#issuecomment-5074241558",
-      "comment_created_at": "2026-07-24T20:46:47Z",
-      "comment_updated_at": "2026-08-02T13:42:04Z",
-      "comment_body_sha256": "152118d79daeff605388d1027dd6f470369093a09d92397cf3aae7e8dd1f80df",
-      "repo": "steipete/oracle",
-      "issue_number": 337,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The privileged Pages workflow only runs on pushes to main; the queued macOS CI check should complete before merge, and the next normal Pages deployment should be observed as the runti... (sha=38ab72fe1695b9e1a77ef782b65240e733d1a1e2)",
-      "expected_head_sha": "38ab72fe1695b9e1a77ef782b65240e733d1a1e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T13:42:38.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-7a5a078ad4",
-        "head_sha": "38ab72fe1695b9e1a77ef782b65240e733d1a1e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117187:5158279044:2026-08-02T13:42:29Z:re_review",
       "comment_id": "5158279044",
@@ -31570,6 +31537,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-02T16:50:02Z:clawsweeper_auto_merge",
+      "comment_id": "4971448190",
+      "comment_version_key": "4971448190:2026-08-02T16:50:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107479#issuecomment-4971448190",
+      "comment_created_at": "2026-07-14T16:18:40Z",
+      "comment_updated_at": "2026-08-02T16:50:02Z",
+      "comment_body_sha256": "01154e3fa3d3b71f38ee86183947d6260e873db8f7bcaf1dd21afeb948ca6ce8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107479,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=735b56fa7663bc095e9772c92ad1a5b8c37dfa2b)",
+      "expected_head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T16:50:49.728Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
+        "head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
+        "cluster_id": "automerge-openclaw-openclaw-107479",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
