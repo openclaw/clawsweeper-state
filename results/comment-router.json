@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T03:10:11.539Z",
+  "updated_at": "2026-08-02T03:10:20.288Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117653:5153985635:2026-08-01T23:28:41Z:re_review",
-      "comment_id": "5153985635",
-      "comment_version_key": "5153985635:2026-08-01T23:28:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117653#issuecomment-5153985635",
-      "comment_created_at": "2026-08-01T23:28:41Z",
-      "comment_updated_at": "2026-08-01T23:28:41Z",
-      "comment_body_sha256": "b2d4cb5ac2e37b91906038e0d3e1eedbd17e210c54814c261cbd7880bd32d0f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117653,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-01T23:29:12.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/agent-local-startup-trace",
-        "head_sha": "6ccc8e439da7ace01aa4429190612f0fe7860eb1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117685:5153963981:2026-08-01T23:29:02Z:clawsweeper_needs_human",
       "comment_id": "5153963981",
@@ -32535,6 +32488,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T03:10:11.538Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:137:5154871476:2026-08-02T03:09:46Z:clawsweeper_needs_human",
+      "comment_id": "5154871476",
+      "comment_version_key": "5154871476:2026-08-02T03:09:46Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/137#issuecomment-5154871476",
+      "comment_created_at": "2026-08-02T03:09:46Z",
+      "comment_updated_at": "2026-08-02T03:09:46Z",
+      "comment_body_sha256": "82c59e6a5db122f982bb53d8b3a45610312dc6c0c41f44e2ebb16b9ac71bc046",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: This release-metadata-only change has no runtime behavior to demonstrate; the relevant proof is the exact changelog diff and the repository’s signed release workflow.... (sha=6d382149524a3c91c5adcd5f42c8174ed0a5dc12)",
+      "expected_head_sha": "6d382149524a3c91c5adcd5f42c8174ed0a5dc12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T03:10:20.287Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-0.8.8-prep",
+        "head_sha": "6d382149524a3c91c5adcd5f42c8174ed0a5dc12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
