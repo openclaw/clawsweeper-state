@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:20:12.634Z",
+  "updated_at": "2026-08-02T07:20:20.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112898:5113430311:2026-07-29T04:59:05Z:re_review",
-      "comment_id": "5113430311",
-      "comment_version_key": "5113430311:2026-07-29T04:59:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112898#issuecomment-5113430311",
-      "comment_created_at": "2026-07-29T04:59:05Z",
-      "comment_updated_at": "2026-07-29T04:59:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112898,
-      "author": "wz-heng",
-      "author_id": 68931789,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T02:51:50.356Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/browser-extension-relay-startup",
-        "head_sha": "1f786d7d9a5b1c46e4f341250a27e882c51b410a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112898:5075542825:2026-08-02T02:48:26Z:clawsweeper_needs_human",
       "comment_id": "5075542825",
@@ -32167,6 +32120,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T07:20:12.634Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114983:5100804526:2026-08-02T07:19:38Z:clawsweeper_needs_human",
+      "comment_id": "5100804526",
+      "comment_version_key": "5100804526:2026-08-02T07:19:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114983#issuecomment-5100804526",
+      "comment_created_at": "2026-07-28T06:37:16Z",
+      "comment_updated_at": "2026-08-02T07:19:38Z",
+      "comment_body_sha256": "8232949cfba9f042611f2ebc3c0379192d69ab88bbc343d5c9d13589f37327f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114983,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal proof is a mixed-key Doctor run on an older head; the final all-bare behavior has only focused test output, not...; Review finding: [P1] Keep all-bare legacy maps out of the config-write migration path — src/config/model-policy-allowlist-migration.ts:90-94 - [high] Empty migrated policy becomes... (sha=f81f6e5f3773f4c7327956266452be443ed35798)",
+      "expected_head_sha": "f81f6e5f3773f4c7327956266452be443ed35798",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:20:20.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-114964",
+        "head_sha": "f81f6e5f3773f4c7327956266452be443ed35798",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
