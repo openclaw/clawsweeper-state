@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116601",
+  "mode": "autonomous",
+  "run_id": "30770644706",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30770644706",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
+  "published_at": "2026-08-02T23:44:26.333Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116601",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116601",
+  "canonical_pr": null,
+  "summary": "Current main at 8df95ccd087eacafa55ec16026bc40de08631e14 still exposes MiniMax-M3 as image-capable even though the bundled MiniMax and MiniMax Portal catalogs exclusively use the Anthropic-compatible route. Native-vision detection consumes that catalog input flag, so M3 bypasses the existing plugin-owned MiniMax-VL-01 fallback. Plan a narrow MiniMax catalog correction with focused regression coverage. This read-only checkout has no node_modules, so no patch or focused test execution was possible here; the executor should apply and validate the artifact on the repair branch.",
+  "actions": [
+    {
+      "target": "#116601",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "The issue remains reproducible from current source. A narrow plugin-owned metadata repair is appropriate and does not require a config, provider, core routing, or compatibility change."
+    },
+    {
+      "target": "#64244",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation is valid or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116601",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "No viable contributor PR exists; create one narrow credited repair PR from clawsweeper/issue-openclaw-openclaw-116601."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
