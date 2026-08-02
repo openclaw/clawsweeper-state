@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-02T14:51:32.764Z
+Generated: 2026-08-02T14:22:48.269Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 10 |
+| open_prs | 11 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 10 |
+| needs_checks | 11 |
 | needs_review | 0 |
-| needs_merge_preflight | 10 |
+| needs_merge_preflight | 11 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -40,3 +40,4 @@ Status: report_only
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | issue-openclaw-openclaw-88079 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:30 SUCCESS:83; blockers:6 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117485](https://github.com/openclaw/openclaw/pull/117485) | fix(ios): route forced realtime consults through Gateway relay | issue-openclaw-openclaw-110171 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:27 SUCCESS:25 FAILURE:4; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; iOS Periphery Dead Code / Scan iOS dead code:FAILURE; Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117443](https://github.com/openclaw/openclaw/pull/117443) | fix(status): resolve effective channel model override | issue-openclaw-openclaw-89532 | MERGEABLE | BEHIND | CANCELLED:14 SKIPPED:49 SUCCESS:90 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | issue-openclaw-openclaw-98276 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:24 SUCCESS:90 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
