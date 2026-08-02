@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T16:50:50.419Z",
+  "updated_at": "2026-08-02T16:51:53.441Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117187:5158279044:2026-08-02T13:42:29Z:re_review",
-      "comment_id": "5158279044",
-      "comment_version_key": "5158279044:2026-08-02T13:42:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117187#issuecomment-5158279044",
-      "comment_created_at": "2026-08-02T13:42:29Z",
-      "comment_updated_at": "2026-08-02T13:42:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117187,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T13:43:08.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/91734-image-generate-input-files",
-        "head_sha": "a1c0f3c6442adc99e782bd35e343c93f63b20763",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114149:5084803031:2026-08-02T13:18:35Z:clawsweeper_auto_repair",
       "comment_id": "5084803031",
@@ -31584,6 +31537,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:252:5159363595:2026-08-02T16:51:15Z:clawsweeper_needs_human",
+      "comment_id": "5159363595",
+      "comment_version_key": "5159363595:2026-08-02T16:51:15Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/252#issuecomment-5159363595",
+      "comment_created_at": "2026-08-02T16:51:15Z",
+      "comment_updated_at": "2026-08-02T16:51:15Z",
+      "comment_body_sha256": "caf33a1e2e2516088dd58d23917e12ec0c367ea1c47307dd9b5cc6d4a4a3e9fe",
+      "repo": "openclaw/mcporter",
+      "issue_number": 252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The collaborator-authored docs-only patch is correct and needs normal maintainer acceptance, not an automated repair or cleanup action. (sha=370e795ff7a4b3b8b6d3c4167720b654a09567a7)",
+      "expected_head_sha": "370e795ff7a4b3b8b6d3c4167720b654a09567a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T16:51:53.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/chrome-devtools-relay-section",
+        "head_sha": "370e795ff7a4b3b8b6d3c4167720b654a09567a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
