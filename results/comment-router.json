@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T00:05:29.297Z",
+  "updated_at": "2026-08-02T00:06:01.055Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113809:5080430344:2026-08-01T21:05:56Z:clawsweeper_needs_human",
-      "comment_id": "5080430344",
-      "comment_version_key": "5080430344:2026-08-01T21:05:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113809#issuecomment-5080430344",
-      "comment_created_at": "2026-07-25T20:22:34Z",
-      "comment_updated_at": "2026-08-01T21:05:56Z",
-      "comment_body_sha256": "9ab90510817fa184763c813efd4d194980d7b0b95c7630fc090ffb2a62c7be00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113809,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes retry behavior for an already-created but commit-less Git destination: instead of reaching later Git, dependency, or build failures, it stops and requires... (sha=3b2147f2dfc35c34b600246ab31fe2093a4cb67f)",
-      "expected_head_sha": "3b2147f2dfc35c34b600246ab31fe2093a4cb67f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T21:14:51.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/install-recover-incomplete-git-checkout",
-        "head_sha": "3b2147f2dfc35c34b600246ab31fe2093a4cb67f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114036:5082203863:2026-08-01T19:07:07Z:clawsweeper_needs_human",
       "comment_id": "5082203863",
@@ -32582,6 +32549,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114173:5154105795:2026-08-02T00:05:26Z:re_review",
+      "comment_id": "5154105795",
+      "comment_version_key": "5154105795:2026-08-02T00:05:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5154105795",
+      "comment_created_at": "2026-08-02T00:05:26Z",
+      "comment_updated_at": "2026-08-02T00:05:26Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114173,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T00:05:58.354Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-web",
+        "head_sha": "91be6250a7773cee02a498b2694821302f5e0482",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
