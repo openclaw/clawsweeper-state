@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118083"
 mode: "autonomous"
-run_id: "30761125878"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30761125878"
+run_id: "30761665979"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30761665979"
 head_sha: "5f8543d985cc58431f107b3d0ecd1a7fb834d73e"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-02T18:57:00.429Z"
+published_at: "2026-08-02T19:00:52.051Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118083"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118083"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/118130"
 actions_total: 3
 fix_executed: 0
 fix_failed: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30761125878](https://github.com/openclaw/clawsweeper/actions/runs/30761125878)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30761665979](https://github.com/openclaw/clawsweeper/actions/runs/30761665979)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118083
 
 ## Summary
 
-Verified against current main d02101d7ceb6a8e9d34c5674479c1abaa467f7ed: the shared canonical timeout matcher still omits `stream disconnected` and `premature close`, while Cron already consumes the existing `timeout` reason for bounded retries. A narrow four-file fix PR remains appropriate; no persisted `network` reason or protocol change is needed.
+#118083 remains the open canonical issue. Hydrated PR #118130 is the focused, credited implementation candidate, but it is behind current main and cannot be recommended for merge in this plan. Its same-repository branch is writable, so the next deterministic path is to rebase and validate that existing branch rather than open a competing PR.
 
 ## Impact
 
@@ -54,22 +54,21 @@ Verified against current main d02101d7ceb6a8e9d34c5674479c1abaa467f7ed: the shar
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/118130 | clawsweeper/issue-openclaw-openclaw-118083 |  |
-| issue_implementation_status_comment | updated | #118083 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118130 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118083 | fix_needed | planned | canonical | This is a source-proven shared transport-classification bug; repairing the shared producer is narrower and safer than adding downstream Cron-only policy. |
-| cluster:issue-openclaw-openclaw-118083 | build_fix_artifact | planned | canonical | A small, test-led fix is permitted by the job and requires no product, configuration, dependency, persistence, or security-boundary decision. |
-| cluster:issue-openclaw-openclaw-118083 | open_fix_pr | planned | canonical | The job permits one implementation PR and no viable contributor PR exists in the hydrated item matrix. |
+| #118083 | keep_canonical | planned | canonical | Keep the issue open as the canonical tracking thread until the linked implementation PR is current with main, validated, and merged. |
+| #118130 | fix_needed | planned | fixed_by_candidate | Repair the existing writable PR branch by rebasing onto current main, preserving its issue link and @ralphael-grain attribution, then rerun the focused validation and a clean Codex review. Merge remains outside this plan's allowed actions. |
+| cluster:issue-openclaw-openclaw-118083 | build_fix_artifact | planned |  | Prepare a deterministic branch-repair artifact for the existing implementation PR. |
 
 ## Needs Human
 
