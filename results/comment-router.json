@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:48:34.272Z",
+  "updated_at": "2026-08-02T05:48:36.040Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117676:5153918023:2026-08-02T01:32:13Z:clawsweeper_needs_human",
-      "comment_id": "5153918023",
-      "comment_version_key": "5153918023:2026-08-02T01:32:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117676#issuecomment-5153918023",
-      "comment_created_at": "2026-08-01T23:09:04Z",
-      "comment_updated_at": "2026-08-02T01:32:13Z",
-      "comment_body_sha256": "dcc5891fb9d8d89b9eaab85b2a26db96e6feb76bf097a64cd4330e56361de55f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117676,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep transcript turns out of durable promotion (P1)** - These apply-path checks feed authoritativeSelected, and its raw snippets flow into buildPromotionSection for MEMORY.md. Keep the path-aware exception at re...; Review finding: [P1] Keep transcript turns out of durable promotion — extensions/memory-core/src/short-term-promotion-apply.ts:301-304 - [medium] Do not bypass durable-memory tran... (sha=bbffe68a9605092fc47d7f46147ae5bf9345eeef)",
-      "expected_head_sha": "bbffe68a9605092fc47d7f46147ae5bf9345eeef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:33:01.143Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-transcript-turn-filter",
-        "head_sha": "bbffe68a9605092fc47d7f46147ae5bf9345eeef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117233:5150001780:2026-08-02T01:24:38Z:clawsweeper_needs_human",
       "comment_id": "5150001780",
@@ -32671,6 +32638,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:170:5118719513:2026-08-02T05:47:56Z:clawsweeper_needs_human",
+      "comment_id": "5118719513",
+      "comment_version_key": "5118719513:2026-08-02T05:47:56Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/170#issuecomment-5118719513",
+      "comment_created_at": "2026-07-29T13:55:53Z",
+      "comment_updated_at": "2026-08-02T05:47:56Z",
+      "comment_body_sha256": "6a4aadc0378505eb9cd1f4fee07544ed6317bee19f8b1fca980e31c09beef277",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted feature-lock coordination; merging without preserving the shared mutation boundary could let a stale cleanup delete a newly claimed live lock. The final head’s... (sha=28382ac60a375332a2c9b23c83fcfb2ca18ac6b8)",
+      "expected_head_sha": "28382ac60a375332a2c9b23c83fcfb2ca18ac6b8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:48:36.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reclaim-local-stale-locks",
+        "head_sha": "28382ac60a375332a2c9b23c83fcfb2ca18ac6b8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
