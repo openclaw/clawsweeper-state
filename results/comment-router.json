@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:02:30.017Z",
+  "updated_at": "2026-08-02T09:02:54.712Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
-      "comment_id": "5055554259",
-      "comment_version_key": "5055554259:2026-07-23T07:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5055554259",
-      "comment_created_at": "2026-07-23T07:16:43Z",
-      "comment_updated_at": "2026-07-23T07:16:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:53:33.910Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5058756273:2026-07-23T13:08:44Z:re_review",
       "comment_id": "5058756273",
@@ -32772,6 +32745,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117919:5156720045:2026-08-02T09:02:20Z:clawsweeper_needs_human",
+      "comment_id": "5156720045",
+      "comment_version_key": "5156720045:2026-08-02T09:02:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117919#issuecomment-5156720045",
+      "comment_created_at": "2026-08-02T09:02:20Z",
+      "comment_updated_at": "2026-08-02T09:02:20Z",
+      "comment_body_sha256": "57d7e000587befc8f8f45bb95984e5d308190e55e1f8fa324da7844d02e4355b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117919,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes setup for operators who previously expected a downloaded model to be loaded automatically: they must now load their intended model in LM Studio before set... (sha=16d97961d24e4d188c84b34bc95dd5729b7ec902)",
+      "expected_head_sha": "16d97961d24e4d188c84b34bc95dd5729b7ec902",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:02:54.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "live-local-provider-e2e-20260802",
+        "head_sha": "16d97961d24e4d188c84b34bc95dd5729b7ec902",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
