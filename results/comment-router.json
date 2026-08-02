@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T10:22:34.213Z",
+  "updated_at": "2026-08-02T10:22:52.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:5156159487:2026-08-02T07:18:24Z:re_review",
-      "comment_id": "5156159487",
-      "comment_version_key": "5156159487:2026-08-02T07:18:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-5156159487",
-      "comment_created_at": "2026-08-02T07:18:24Z",
-      "comment_updated_at": "2026-08-02T07:18:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T07:19:01.011Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-takeover-silent-message-loss-87180",
-        "head_sha": "ac491f41d797a1c3db2af6cd1f2a0c44603a8d30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117847:5155650361:2026-08-02T07:19:01Z:clawsweeper_needs_human",
       "comment_id": "5155650361",
@@ -32131,6 +32084,39 @@
         "kind": "pull_request",
         "branch": "codex/scheduled-task-control",
         "head_sha": "ba8c00799b1f48f639476d363ede1970740fb80b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2573:5156426053:2026-08-02T10:22:14Z:clawsweeper_needs_human",
+      "comment_id": "5156426053",
+      "comment_version_key": "5156426053:2026-08-02T10:22:14Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2573#issuecomment-5156426053",
+      "comment_created_at": "2026-08-02T08:07:03Z",
+      "comment_updated_at": "2026-08-02T10:22:14Z",
+      "comment_body_sha256": "64c56acbe770bba3f1b89cf6eb37fb3c12dcf4f8f5794d25f9e2e3693bacba26",
+      "repo": "steipete/codexbar",
+      "issue_number": 2573,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub check snapshot still showed the Linux ARM build in progress, so normal merge gating should wait for required checks to settle on the reviewed head. (sha=307c3cf1dae605a9666a8935ca5d73482910372a)",
+      "expected_head_sha": "307c3cf1dae605a9666a8935ca5d73482910372a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T10:22:52.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/spenddash-date-stability",
+        "head_sha": "307c3cf1dae605a9666a8935ca5d73482910372a",
         "cluster_id": null,
         "job_path": null
       }
