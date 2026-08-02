@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-73478",
+  "mode": "autonomous",
+  "run_id": "30742828341",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30742828341",
+  "head_sha": "7e4d8cb7cee432b87afec79e1fbfa3209c084474",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
+  "published_at": "2026-08-02T10:06:15.704Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/73478",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/73478",
+  "canonical_pr": null,
+  "summary": "#73478 remains an open canonical Gateway behavior bug on main 30c87bde99774fdbd0b3b31c1921e3750a1d61e4. The live-chat projector rejects assistant events that contain mediaUrls without text/delta, and the Gateway delta/final projection builds text-only message content, so generated images are omitted from WebSocket chat subscribers. A narrow new fix PR is appropriate; #81136 is closed historical source work only.",
+  "actions": [
+    {
+      "target": "#73478",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "Current main still drops assistant media from Gateway live chat. The closed prior PR is not a viable branch, so the canonical issue needs a narrow credited replacement PR."
+    },
+    {
+      "target": "#81136",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "Already closed historical contributor work; no closeout or mutation is valid. Preserve its idea and attribution in the replacement PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-73478",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#73478",
+      "candidate_fix": null,
+      "reason": "Prepare a new narrow PR from the current main base; do not reuse the closed fork branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
