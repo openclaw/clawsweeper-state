@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:10:12.544Z",
+  "updated_at": "2026-08-02T05:10:13.585Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/tokentally:30:5154385634:2026-08-02T01:17:50Z:re_review",
-      "comment_id": "5154385634",
-      "comment_version_key": "5154385634:2026-08-02T01:17:50Z",
-      "comment_url": "https://github.com/steipete/tokentally/pull/30#issuecomment-5154385634",
-      "comment_created_at": "2026-08-02T01:17:50Z",
-      "comment_updated_at": "2026-08-02T01:17:50Z",
-      "comment_body_sha256": "59111a670c24ae2fdbdea6cf79f30a07158ffecadb53ea148199aa411a0aacd7",
-      "repo": "steipete/tokentally",
-      "issue_number": 30,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "OWNER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:18:25.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/dependencies-2026-08-01",
-        "head_sha": "ad3074b60fc29dd9797113f19311992d80ad068b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115968:5154388993:2026-08-02T01:18:45Z:re_review",
       "comment_id": "5154388993",
@@ -31911,6 +31864,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T05:10:12.544Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116070:5122993385:2026-08-02T05:09:41Z:clawsweeper_needs_human",
+      "comment_id": "5122993385",
+      "comment_version_key": "5122993385:2026-08-02T05:09:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116070#issuecomment-5122993385",
+      "comment_created_at": "2026-07-29T20:18:11Z",
+      "comment_updated_at": "2026-08-02T05:09:41Z",
+      "comment_body_sha256": "450fcd134149d36fe5f78c7468cf43791af43412032fac67a2d51e4228d8f61b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116070,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - counterScope is a newly documented, externally consumed telemetry field. Its rotation and stability semantics become a compatibility commitment for downstream collectors and need expl... (sha=1483a0c797a4875889e42f450e9ebbe292e40aba)",
+      "expected_head_sha": "1483a0c797a4875889e42f450e9ebbe292e40aba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:10:13.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-telemetry-scope",
+        "head_sha": "1483a0c797a4875889e42f450e9ebbe292e40aba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
