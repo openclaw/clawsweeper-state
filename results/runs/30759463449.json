@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118083",
+  "mode": "autonomous",
+  "run_id": "30759463449",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30759463449",
+  "head_sha": "5f8543d985cc58431f107b3d0ecd1a7fb834d73e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118083.md",
+  "published_at": "2026-08-02T18:03:00.385Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118083",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118083",
+  "canonical_pr": null,
+  "summary": "Verified against current main `1704ea591820f3eee6e655fef302987e1ba5eac6`: Cron's bounded retry path uses `resolveCronExecutionRetryHint`, whose network matcher misses `ENOTFOUND`, interrupted-stream, premature-close, and generic connection-error wording. A narrow two-file PR should extend that matcher and add regression coverage. `network` must not be added to `CronFailoverReasonSchema`: it is a Cron retry category, while the protocol schema is deliberately constrained to the shared `FailoverReason` union, which has no `network` member.",
+  "actions": [
+    {
+      "target": "#118083",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "The reported interrupted-transport gap is real and has a focused owner-boundary repair."
+    },
+    {
+      "target": "#118083",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "Create the allowed narrow implementation PR; do not widen the gateway protocol for a Cron-only regex classification."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118083",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "A new, narrow implementation PR is safe and permitted by the job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118083",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118083",
+      "candidate_fix": null,
+      "reason": "The job explicitly permits raising one implementation PR for this issue."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
