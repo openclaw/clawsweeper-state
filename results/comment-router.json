@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T17:18:26.056Z",
+  "updated_at": "2026-08-02T17:18:26.070Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96937:5106939747:2026-07-28T16:32:32Z:re_review",
-      "comment_id": "5106939747",
-      "comment_version_key": "5106939747:2026-07-28T16:32:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96937#issuecomment-5106939747",
-      "comment_created_at": "2026-07-28T16:32:32Z",
-      "comment_updated_at": "2026-07-28T16:32:32Z",
-      "comment_body_sha256": "1569611994227d710367df0eccdef4635c96018ca036df875cc18b4a6e25362d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96937,
-      "author": "WilliamK112",
-      "author_id": 164879897,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T14:34:22.934Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perplexity-search-context-size",
-        "head_sha": "446fcc29ef30b8180468a6425c8d24522d5b4a6c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96937:4806445482:2026-08-02T14:33:45Z:clawsweeper_needs_human",
       "comment_id": "4806445482",
@@ -31231,6 +31184,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T17:18:26.055Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109038:4993422912:2026-08-02T17:07:17Z:clawsweeper_needs_human",
+      "comment_id": "4993422912",
+      "comment_version_key": "4993422912:2026-08-02T17:07:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109038#issuecomment-4993422912",
+      "comment_created_at": "2026-07-16T15:03:23Z",
+      "comment_updated_at": "2026-08-02T17:07:17Z",
+      "comment_body_sha256": "1fea96b056df64a5c8db4bf3f191f68723005a1d8169640221605134dfa7a79b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109038,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes compatibility-sensitive session-history behavior: a missed caller could still select an incorrect store or expose an already-persisted current turn as prior context, so m... (sha=4883d027394fb2283417cda7be46543dee4c97c9)",
+      "expected_head_sha": "4883d027394fb2283417cda7be46543dee4c97c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T17:18:26.070Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-session-header-short-read",
+        "head_sha": "4883d027394fb2283417cda7be46543dee4c97c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
