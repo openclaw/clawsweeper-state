@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116601",
+  "mode": "autonomous",
+  "run_id": "30772177165",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30772177165",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
+  "published_at": "2026-08-02T23:57:00.427Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116601",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116601",
+  "canonical_pr": null,
+  "summary": "#116601 remains a reproducible MiniMax catalog regression on current main 6c6e8fe1b08b47afa64b74cf4a8b2af80084b92a. The MiniMax plugin’s Anthropic-compatible static catalog advertises MiniMax-M3 as image-capable, so the existing image-tool fallback does not reach plugin-owned MiniMax-VL-01. Plan one narrow credited fix PR; no GitHub mutation or local patch was possible in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#116601",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "Current main still contains the M3 image-capability metadata that bypasses the existing MiniMax-VL-01 fallback. The repair is limited to the owning MiniMax catalog and regressions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116601",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "Create or update the single `clawsweeper/issue-openclaw-openclaw-116601` implementation PR after applying the narrow plugin-owned metadata repair and focused tests."
+    },
+    {
+      "target": "#64244",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#116601",
+      "candidate_fix": null,
+      "reason": "Already closed related regression; retain as context for the MiniMax-VL routing invariant."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118303",
+      "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118303",
+      "commit": "8f02839bf0ea17f5c701fa504f91361386dfb56b",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#116601",
+      "pr": "https://github.com/openclaw/openclaw/pull/118303",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118303",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118303",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(minimax): route M3 image calls through MiniMax VL",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-changed: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
