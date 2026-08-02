@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:20:01.690Z",
+  "updated_at": "2026-08-02T08:20:04.829Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117755:5154760692:2026-08-02T04:13:01Z:clawsweeper_needs_human",
-      "comment_id": "5154760692",
-      "comment_version_key": "5154760692:2026-08-02T04:13:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117755#issuecomment-5154760692",
-      "comment_created_at": "2026-08-02T02:46:26Z",
-      "comment_updated_at": "2026-08-02T04:13:01Z",
-      "comment_body_sha256": "befad687299426f4764cecce7eb68505203ba901281a57cacd9d1de836a16266",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117755,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This shared completion contract now gates project delegation, watched runs, batch runs, and live-test wrappers; a regression could add up to one second of CI stall time or terminate t... (sha=a641e711fd6e9b50e0f82592d0cce448fe95c147)",
-      "expected_head_sha": "a641e711fd6e9b50e0f82592d0cce448fe95c147",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:13:40.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-help-exit-process-flake-20260801",
-        "head_sha": "a641e711fd6e9b50e0f82592d0cce448fe95c147",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117792:5155212743:2026-08-02T04:13:15Z:clawsweeper_needs_human",
       "comment_id": "5155212743",
@@ -32231,6 +32198,53 @@
         "kind": "pull_request",
         "branch": "fix/llm-cache-key-sampling-params",
         "head_sha": "1760cb386c712be8b4b72a21326adba7b6e914c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117744:5156492335:2026-08-02T08:19:23Z:re_review",
+      "comment_id": "5156492335",
+      "comment_version_key": "5156492335:2026-08-02T08:19:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117744#issuecomment-5156492335",
+      "comment_created_at": "2026-08-02T08:19:23Z",
+      "comment_updated_at": "2026-08-02T08:19:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117744,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:20:02.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-catalog-fatal-utf8",
+        "head_sha": "fa155bac935c6308e5c09fb170ddd7e10d4aedcf",
         "cluster_id": null,
         "job_path": null
       },
