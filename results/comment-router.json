@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:57:16.921Z",
+  "updated_at": "2026-08-02T15:57:18.306Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2413:5153580460:2026-08-01T21:43:24Z:re_review",
-      "comment_id": "5153580460",
-      "comment_version_key": "5153580460:2026-08-01T21:43:24Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2413#issuecomment-5153580460",
-      "comment_created_at": "2026-08-01T21:43:24Z",
-      "comment_updated_at": "2026-08-01T21:43:24Z",
-      "comment_body_sha256": "b66a6a7c7ef71820dfd3824821dfe49843d273c1c8dbeb646537ac159505ee73",
-      "repo": "steipete/codexbar",
-      "issue_number": 2413,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T12:23:24.353Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2413:5153611536:2026-08-01T21:52:14Z:re_review",
       "comment_id": "5153611536",
@@ -31282,6 +31255,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T15:57:16.921Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117507:5152517177:2026-08-02T15:51:54Z:clawsweeper_needs_human",
+      "comment_id": "5152517177",
+      "comment_version_key": "5152517177:2026-08-02T15:51:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117507#issuecomment-5152517177",
+      "comment_created_at": "2026-08-01T17:19:21Z",
+      "comment_updated_at": "2026-08-02T15:51:54Z",
+      "comment_body_sha256": "c8fd800e0f2fee1597a3572cf8ad6f6a05cba80ac5f1576a07086e47c666e8f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact reviewed head still has a red required aggregate CI gate. The recorded failure appears unrelated to the worker diff, but merge should wait for an exact-head required-gate re... (sha=97bdb06f31da0417a7f327f610f3f87b5d373a36)",
+      "expected_head_sha": "97bdb06f31da0417a7f327f610f3f87b5d373a36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T15:57:18.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/isolate-worker-state-listeners",
+        "head_sha": "97bdb06f31da0417a7f327f610f3f87b5d373a36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
