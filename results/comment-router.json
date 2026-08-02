@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:00:44.395Z",
+  "updated_at": "2026-08-02T08:00:45.895Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2407:5130949408:2026-07-30T12:42:55Z:re_review",
-      "comment_id": "5130949408",
-      "comment_version_key": "5130949408:2026-07-30T12:42:55Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5130949408",
-      "comment_created_at": "2026-07-30T12:42:55Z",
-      "comment_updated_at": "2026-07-30T12:42:55Z",
-      "comment_body_sha256": "ca26ba23c2932a622802508f2ff3a9ca832d4fbfb13050880c2c0a35e21bea9d",
-      "repo": "steipete/codexbar",
-      "issue_number": 2407,
-      "author": "chenow9",
-      "author_id": 302014081,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:00:42.312Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2554:5152919855:2026-08-02T04:00:14Z:clawsweeper_needs_human",
       "comment_id": "5152919855",
@@ -32173,6 +32146,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T08:00:44.394Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116381:5130242125:2026-08-02T07:59:01Z:clawsweeper_needs_human",
+      "comment_id": "5130242125",
+      "comment_version_key": "5130242125:2026-08-02T07:59:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116381#issuecomment-5130242125",
+      "comment_created_at": "2026-07-30T11:26:49Z",
+      "comment_updated_at": "2026-08-02T07:59:01Z",
+      "comment_body_sha256": "bc088d1d8a4011d1991b85bf9dc119de5191888ebeda8f796521fca06eac853f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this layer independently would add a canonical runtime seam without demonstrating the intended operator outcome: direct ACP execution without a separately configured Gateway. (sha=dc41ebca6ec9acc38a3769e599b1a7f9cc82921a)",
+      "expected_head_sha": "dc41ebca6ec9acc38a3769e599b1a7f9cc82921a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:00:45.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-runtime-core-4",
+        "head_sha": "dc41ebca6ec9acc38a3769e599b1a7f9cc82921a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
