@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T18:41:44.051Z",
+  "updated_at": "2026-08-02T18:42:18.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:50:4826555685:2026-06-28T15:30:00Z:re_review",
-      "comment_id": "4826555685",
-      "comment_version_key": "4826555685:2026-06-28T15:30:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/50#issuecomment-4826555685",
-      "comment_created_at": "2026-06-28T15:30:00Z",
-      "comment_updated_at": "2026-06-28T15:30:00Z",
-      "comment_body_sha256": "3a5366f012c4419c0b9c48e61c9993e4e5edff28ab1082b1e9e191cd758e8082",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 50,
-      "author": "dmoka",
-      "author_id": 9437108,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:59:40.908Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-ansible:50:4826590544:2026-06-28T15:43:47Z:re_review",
       "comment_id": "4826590544",
@@ -31473,6 +31446,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:951:5159795962:2026-08-02T18:41:35Z:clawsweeper_needs_human",
+      "comment_id": "5159795962",
+      "comment_version_key": "5159795962:2026-08-02T18:41:35Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/951#issuecomment-5159795962",
+      "comment_created_at": "2026-08-02T18:41:35Z",
+      "comment_updated_at": "2026-08-02T18:41:35Z",
+      "comment_body_sha256": "77d20e8bf0295fb33ff4f24c3a8fc5e5d2ee3f5f3071c89267f36acf8770131a",
+      "repo": "openclaw/gogcli",
+      "issue_number": 951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin the reusable release workflow to an immutable commit (P1)** - This job grants write permissions and forwards the Apple signing, notarization, and Homebrew credentials to openclaw/release-workflows, but @v1 i...; Review finding: [P1] Pin the reusable release workflow to an immutable commit — .github/workflows/release-unified.yml:38 - [high] Floating reusable workflow receives release secre... (sha=01788d52479a68897abe51350532ba273eddce4c)",
+      "expected_head_sha": "01788d52479a68897abe51350532ba273eddce4c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T18:42:18.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/unified-release",
+        "head_sha": "01788d52479a68897abe51350532ba273eddce4c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
