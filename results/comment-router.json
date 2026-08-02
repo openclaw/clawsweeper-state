@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T21:03:07.476Z",
+  "updated_at": "2026-08-02T21:03:19.423Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107119:4970160113:2026-07-14T14:12:37Z:re_review",
-      "comment_id": "4970160113",
-      "comment_version_key": "4970160113:2026-07-14T14:12:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107119#issuecomment-4970160113",
-      "comment_created_at": "2026-07-14T14:12:37Z",
-      "comment_updated_at": "2026-07-14T14:12:37Z",
-      "comment_body_sha256": "ff0b565a4eec68d7e714d5b4241d4b6bd84ad9d1d568a80ea5ec495f9436e8ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107119,
-      "author": "lzyyzznl",
-      "author_id": 41978486,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - p1 fix: added pmap concurrency proof + concurrency:20 justification in pr body; rebased on upstream/main",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T18:52:57.307Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107119:4970515741:2026-07-14T14:46:32Z:re_review",
       "comment_id": "4970515741",
@@ -31183,6 +31156,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118201:5160327920:2026-08-02T21:02:51Z:clawsweeper_needs_human",
+      "comment_id": "5160327920",
+      "comment_version_key": "5160327920:2026-08-02T21:02:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118201#issuecomment-5160327920",
+      "comment_created_at": "2026-08-02T21:02:51Z",
+      "comment_updated_at": "2026-08-02T21:02:51Z",
+      "comment_body_sha256": "754cc1f715ad309f87c76e154bf8fcb467fcd643f0050c03659de1bc46abd257",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused regression tests and review results, but no inspectable after-fix live gateway transcript, terminal output, recordi... (sha=77fa6e96ae1f46f6047bee2d8a1916ff675c1c4f)",
+      "expected_head_sha": "77fa6e96ae1f46f6047bee2d8a1916ff675c1c4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T21:03:19.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-112615-atomic-child-admission",
+        "head_sha": "77fa6e96ae1f46f6047bee2d8a1916ff675c1c4f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
