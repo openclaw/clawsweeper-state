@@ -1,139 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:22:16.329Z",
+  "updated_at": "2026-08-02T19:22:18.399Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114631:5159259597:2026-08-02T16:33:15Z:re_review",
-      "comment_id": "5159259597",
-      "comment_version_key": "5159259597:2026-08-02T16:33:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114631#issuecomment-5159259597",
-      "comment_created_at": "2026-08-02T16:33:15Z",
-      "comment_updated_at": "2026-08-02T16:33:15Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114631,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T16:33:45.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/custodian-wizard-step-payload",
-        "head_sha": "6a01b3ba2d400a85a8bb98ad50406ea2b4001894",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-02T16:30:23Z:clawsweeper_auto_merge",
-      "comment_id": "4971448190",
-      "comment_version_key": "4971448190:2026-08-02T16:30:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107479#issuecomment-4971448190",
-      "comment_created_at": "2026-07-14T16:18:40Z",
-      "comment_updated_at": "2026-08-02T16:30:23Z",
-      "comment_body_sha256": "70d9d8581fb8850efa5c962e06d3c185d7baa5178843709188939035dd2e44a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107479,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=757059e6fa9bfbea4d1af8ce78bc13433959f1fd); PR head is behind base and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "757059e6fa9bfbea4d1af8ce78bc13433959f1fd",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T16:37:08.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
-        "head_sha": "757059e6fa9bfbea4d1af8ce78bc13433959f1fd",
-        "cluster_id": "automerge-openclaw-openclaw-107479",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:116:5159043780:2026-08-02T16:38:54Z:clawsweeper_needs_human",
-      "comment_id": "5159043780",
-      "comment_version_key": "5159043780:2026-08-02T16:38:54Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/116#issuecomment-5159043780",
-      "comment_created_at": "2026-08-02T15:57:49Z",
-      "comment_updated_at": "2026-08-02T16:38:54Z",
-      "comment_body_sha256": "883c367da5495f883d6d2b4dccc434eeac2caf9842f9c9e04d2b832f376c5f04",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 116,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this member-authored draft now be marked ready for maintainer review and merge once the remaining release check completes? | **Mark ready for... (sha=52589d0b29ebb99b9a810c4e15b01786751f0516)",
-      "expected_head_sha": "52589d0b29ebb99b9a810c4e15b01786751f0516",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T16:39:41.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/help-parity",
-        "head_sha": "52589d0b29ebb99b9a810c4e15b01786751f0516",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1011:5159199088:2026-08-02T16:36:17Z:clawsweeper_needs_human",
       "comment_id": "5159199088",
@@ -31762,6 +31629,53 @@
       "target": null
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:114072:5099470637:2026-07-28T03:08:08Z:re_review",
+      "comment_id": "5099470637",
+      "comment_version_key": "5099470637:2026-07-28T03:08:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5099470637",
+      "comment_created_at": "2026-07-28T03:08:08Z",
+      "comment_updated_at": "2026-07-28T03:08:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114072,
+      "author": "fr-meyer",
+      "author_id": 26621962,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T19:22:15.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-decomposition-orchestration",
+        "head_sha": "779ecfed8d823dee27a108c450dbb0e084e05ab4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:69022:4333324231:2026-08-02T19:21:25Z:clawsweeper_auto_repair",
       "comment_id": "4333324231",
       "comment_version_key": "4333324231:2026-08-02T19:21:25Z",
@@ -31793,6 +31707,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114072:5082692677:2026-08-02T19:21:14Z:clawsweeper_auto_repair",
+      "comment_id": "5082692677",
+      "comment_version_key": "5082692677:2026-08-02T19:21:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5082692677",
+      "comment_created_at": "2026-07-26T08:19:25Z",
+      "comment_updated_at": "2026-08-02T19:21:14Z",
+      "comment_body_sha256": "ea26549ee57cc2deb734b658da1ba103aa744c103bb0274b129f2bb531b94d32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=779ecfed8d823dee27a108c450dbb0e084e05ab4)",
+      "expected_head_sha": "779ecfed8d823dee27a108c450dbb0e084e05ab4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:22:18.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-decomposition-orchestration",
+        "head_sha": "779ecfed8d823dee27a108c450dbb0e084e05ab4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114072:5083153630:2026-07-26T10:51:27Z:re_review",
+      "comment_id": "5083153630",
+      "comment_version_key": "5083153630:2026-07-26T10:51:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5083153630",
+      "comment_created_at": "2026-07-26T10:51:27Z",
+      "comment_updated_at": "2026-07-26T10:51:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114072,
+      "author": "fr-meyer",
+      "author_id": 26621962,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T19:22:18.399Z",
+      "target": null
     }
   ]
 }
