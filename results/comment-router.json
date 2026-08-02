@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T17:39:13.029Z",
+  "updated_at": "2026-08-02T17:39:22.918Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/turnwire:17:5157915259:2026-08-02T15:08:04Z:clawsweeper_needs_human",
-      "comment_id": "5157915259",
-      "comment_version_key": "5157915259:2026-08-02T15:08:04Z",
-      "comment_url": "https://github.com/openclaw/turnwire/pull/17#issuecomment-5157915259",
-      "comment_created_at": "2026-08-02T12:37:42Z",
-      "comment_updated_at": "2026-08-02T15:08:04Z",
-      "comment_body_sha256": "eb26f6ee398705a277fd739e027a2342b4baeb3e0388e8f8c0113acee9a0e627",
-      "repo": "openclaw/turnwire",
-      "issue_number": 17,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports package tests and a build, but not an after-fix stalled-shutdown run proving the serve command returns at the deadline. Provide... (sha=0043dbf03d946670a850f8bd363f2516c67fdb88)",
-      "expected_head_sha": "0043dbf03d946670a850f8bd363f2516c67fdb88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T15:09:01.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-shutdown-timeout",
-        "head_sha": "0043dbf03d946670a850f8bd363f2516c67fdb88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-02T15:08:57Z:clawsweeper_needs_human",
       "comment_id": "4469526858",
@@ -31319,6 +31286,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/slacrawl:117:5159555551:2026-08-02T17:38:44Z:re_review",
+      "comment_id": "5159555551",
+      "comment_version_key": "5159555551:2026-08-02T17:38:44Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/117#issuecomment-5159555551",
+      "comment_created_at": "2026-08-02T17:38:44Z",
+      "comment_updated_at": "2026-08-02T17:38:44Z",
+      "comment_body_sha256": "3725d9b1d4a8796629a9be510887104af831d3f6066e890c69d3f0f9b1b0a83d",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 117,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T17:39:21.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/users-channels-limit",
+        "head_sha": "65ad939eac895a739d74f145ee72601055288271",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
