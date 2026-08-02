@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-02T22:47:55.285Z",
-  "count": 11,
+  "generated_at": "2026-08-02T23:07:06.600Z",
+  "count": 12,
   "summary": {
-    "open_prs": 11,
+    "open_prs": 12,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 12,
     "needs_review": 0,
-    "needs_merge_preflight": 11,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 12,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,62 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 118282,
+      "title": "fix(doctor): import legacy exec approvals with null usage metadata",
+      "url": "https://github.com/openclaw/openclaw/pull/118282",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118242",
+      "head_sha": "c3e731b0b34789e47fb02b9d4556aa791016446e",
+      "cluster_id": "issue-openclaw-openclaw-118242",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118242.md",
+      "updated_at": "2026-08-02T23:05:34Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 139,
+        "counts": {
+          "CANCELLED": 11,
+          "SKIPPED": 44,
+          "SUCCESS": 83,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118282#issuecomment-5160760627",
+            "submitted_at": "2026-08-02T23:01:13Z"
+          }
+        ]
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 118055,
       "title": "fix(line): clear default access token when removing account",
@@ -183,21 +239,23 @@
       "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-02T22:44:06Z",
+      "updated_at": "2026-08-02T23:05:52Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 140,
+        "total": 149,
         "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 44,
-          "SUCCESS": 86,
+          "CANCELLED": 13,
+          "SKIPPED": 47,
+          "SUCCESS": 88,
           "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -264,7 +322,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-02T22:44:04Z",
+      "updated_at": "2026-08-02T23:05:43Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -342,7 +400,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-02T22:44:18Z",
+      "updated_at": "2026-08-02T23:05:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -420,7 +478,7 @@
       "head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-02T22:45:16Z",
+      "updated_at": "2026-08-02T23:05:40Z",
       "mergeable": "CONFLICTING",
       "merge_state_status": "DIRTY",
       "review_decision": "",
@@ -670,7 +728,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-02T22:44:02Z",
+      "updated_at": "2026-08-02T23:05:49Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -834,7 +892,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-02T22:44:16Z",
+      "updated_at": "2026-08-02T23:05:55Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

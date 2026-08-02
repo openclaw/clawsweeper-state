@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118274",
+  "mode": "autonomous",
+  "run_id": "30771241611",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30771241611",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118274.md",
+  "published_at": "2026-08-02T23:05:59.369Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118274",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118274",
+  "canonical_pr": null,
+  "summary": "#118274 is a valid open canonical bug. Current main records the failed tool at the embedded-run owner, but deliberately suppresses a recoverable non-exec tool-error warning when no user-facing reply exists; that leaves both channel delivery and isolated cron with no final payload. Plan one narrow shared payload-owner fix and regression update; no GitHub or checkout mutation was performed.",
+  "actions": [
+    {
+      "target": "#79472",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118274",
+      "candidate_fix": null,
+      "reason": "Closed historical context; not a mutation target for this issue implementation lane."
+    },
+    {
+      "target": "#83093",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118274",
+      "candidate_fix": null,
+      "reason": "Closed historical context; not a mutation target for this issue implementation lane."
+    },
+    {
+      "target": "#118274",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118274",
+      "candidate_fix": null,
+      "reason": "The violated invariant is a visible or intentionally recorded terminal outcome for a failed tool turn. The existing shared payload policy suppresses the only terminal failure payload for recoverable non-exec errors despite there being no user-facing reply."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118274",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118274",
+      "candidate_fix": null,
+      "reason": "No viable PR exists. A one-condition shared-owner repair plus the existing focused regression is narrow and directly covers both reported delivery surfaces."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118274",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118274",
+      "candidate_fix": null,
+      "reason": "Create or update the single branch clawsweeper/issue-openclaw-openclaw-118274, then open one narrow credited implementation PR linked to #118274."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
