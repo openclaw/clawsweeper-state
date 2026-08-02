@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-117976"
 mode: "autonomous"
-run_id: "30751036219"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30751036219"
+run_id: "30750896923"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30750896923"
 head_sha: "8cdf2a157a0450c40b6a1e9d4474213cc901936d"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-02T14:21:48.243Z"
+published_at: "2026-08-02T14:54:37.631Z"
 canonical: "#117976"
-canonical_issue: "#90786"
+canonical_issue: null
 canonical_pr: "#117976"
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30751036219](https://github.com/openclaw/clawsweeper/actions/runs/30751036219)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30750896923](https://github.com/openclaw/clawsweeper/actions/runs/30750896923)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #117976
 
 ## Summary
 
-Keep #117976 as the canonical repair path. Its hydrated exact head is behind main and the Codex review identifies an unresolved configured-alias P1, so plan a narrow contributor-branch repair and revalidation; do not close or merge any item in this autofix job.
+Make PR #117976 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Keep #117976 as the canonical repair path. Its hydrated exact head is behind mai
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90786 | keep_related | planned | fixed_by_candidate | The issue remains the user-facing root-cause thread, with #117976 owning the active fix and validation path. |
-| #91310 | keep_closed | skipped | superseded | Historical useful contributor work; retain it as credited source evidence only. |
-| #117976 | fix_needed | planned | canonical | Repair the single canonical PR rather than replacing it: the branch is writable, the defect is bounded to the shared memory embedding resolver, and source credit is already preserved. |
-| #117976 | build_fix_artifact | planned | canonical | Provide an executable, narrow contributor-branch repair contract for the Codex edit pass. |
+| #117976 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
