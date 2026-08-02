@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T15:09:49.740Z",
+  "updated_at": "2026-08-02T15:09:55.063Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-02T10:31:46Z:clawsweeper_auto_merge",
-      "comment_id": "5157206715",
-      "comment_version_key": "5157206715:2026-08-02T10:31:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
-      "comment_created_at": "2026-08-02T10:31:46Z",
-      "comment_updated_at": "2026-08-02T10:31:46Z",
-      "comment_body_sha256": "a894573632b3fcbb1f3daf266824c993cfe1caeef2edee1bad06912f78915138",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117951,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88)",
-      "expected_head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T11:01:40.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-        "head_sha": "3eaa2c0f3ab2e20908810c4fc08bf2e3184a4a88",
-        "cluster_id": "issue-openclaw-openclaw-73478",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117960:5157268890:2026-08-02T10:51:27Z:clawsweeper_needs_human",
       "comment_id": "5157268890",
@@ -31392,6 +31359,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93087:5158763343:2026-08-02T15:09:17Z:re_review",
+      "comment_id": "5158763343",
+      "comment_version_key": "5158763343:2026-08-02T15:09:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93087#issuecomment-5158763343",
+      "comment_created_at": "2026-08-02T15:09:17Z",
+      "comment_updated_at": "2026-08-02T15:09:17Z",
+      "comment_body_sha256": "8b649ae10b53d5214d74bf9682a9ec3503b4573018d94fb16adfbc2e8ca30455",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93087,
+      "author": "kiranmagic7",
+      "author_id": 262980978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T15:09:52.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kiran/otel-reject-unsupported-grpc",
+        "head_sha": "f8f71fb9109480c7164b03e37f8b07e4b81f79f2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
