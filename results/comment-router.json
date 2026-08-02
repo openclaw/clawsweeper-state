@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T19:47:39.725Z",
+  "updated_at": "2026-08-02T19:47:43.540Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116677:5139639947:2026-08-02T17:17:13Z:clawsweeper_needs_human",
-      "comment_id": "5139639947",
-      "comment_version_key": "5139639947:2026-08-02T17:17:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116677#issuecomment-5139639947",
-      "comment_created_at": "2026-07-31T05:34:22Z",
-      "comment_updated_at": "2026-08-02T17:17:13Z",
-      "comment_body_sha256": "814dff913e4f28e5e409a94ee0671e04c4823193485283e23951a43ea97a6ee1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116677,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recursive cleanup is availability-sensitive: if the directory mtime heartbeat did not persist on a supported filesystem, a later backup could remove a live run after the 24-hour w... (sha=184f93a0e518cd71e686a41280d4bd01c3fafd20)",
-      "expected_head_sha": "184f93a0e518cd71e686a41280d4bd01c3fafd20",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T17:17:56.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-2026-07-31",
-        "head_sha": "184f93a0e518cd71e686a41280d4bd01c3fafd20",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116019:5121566898:2026-08-02T17:17:21Z:clawsweeper_auto_repair",
       "comment_id": "5121566898",
@@ -31648,6 +31615,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:87:5160041705:2026-08-02T19:46:55Z:re_review",
+      "comment_id": "5160041705",
+      "comment_version_key": "5160041705:2026-08-02T19:46:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/87#issuecomment-5160041705",
+      "comment_created_at": "2026-08-02T19:46:55Z",
+      "comment_updated_at": "2026-08-02T19:46:55Z",
+      "comment_body_sha256": "564755aa2eb63ec0b7144de438a2da5da295be91d25376a12678254d29ae0640",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 87,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T19:47:40.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lock-windows-transient-denial",
+        "head_sha": "46038173f1cccafeec4d46cb37c483d8ecaef7c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
