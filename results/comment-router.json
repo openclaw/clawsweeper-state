@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-02T00:20:03.372Z",
+  "updated_at": "2026-08-02T00:19:44.702Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117180:5149564387:2026-08-01T21:26:51Z:clawsweeper_needs_human",
+      "comment_id": "5149564387",
+      "comment_version_key": "5149564387:2026-08-01T21:26:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117180#issuecomment-5149564387",
+      "comment_created_at": "2026-08-01T03:22:15Z",
+      "comment_updated_at": "2026-08-01T21:26:51Z",
+      "comment_body_sha256": "dd31ec033edaa8a3de50a2c3fab43d6820def1bd156d9f0c2a62077af1999969",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner release tuple (P1)** - The action ref changes to v3.96.0 here, but the version input still downloads v3.95.9 with its old digest; the focused workflow guard also asserts that o...; Review finding: [P1] Synchronize the TruffleHog scanner release tuple — .github/workflows/ci.yml:904 - [medium] TruffleHog action and downloaded binary diverge — .github/workflows... (sha=d882e76bc22da8628f1cda1b7b55b1c1627deddc)",
+      "expected_head_sha": "d882e76bc22da8628f1cda1b7b55b1c1627deddc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-01T21:27:40.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-01e47d2daa",
+        "head_sha": "d882e76bc22da8628f1cda1b7b55b1c1627deddc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:983:5147231351:2026-07-31T20:36:29Z:re_review",
       "comment_id": "5147231351",
@@ -32515,39 +32548,6 @@
       "status": "skipped",
       "processed_at": "2026-08-02T00:19:44.701Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:59:5118062986:2026-08-02T00:19:09Z:clawsweeper_needs_human",
-      "comment_id": "5118062986",
-      "comment_version_key": "5118062986:2026-08-02T00:19:09Z",
-      "comment_url": "https://github.com/openclaw/graincrawl/pull/59#issuecomment-5118062986",
-      "comment_created_at": "2026-07-29T12:58:23Z",
-      "comment_updated_at": "2026-08-02T00:19:09Z",
-      "comment_body_sha256": "4c28429cca470d6cd85381fd30f3a7c48cd72d531dd11db9cdd1d1b584495e0d",
-      "repo": "openclaw/graincrawl",
-      "issue_number": 59,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify changed secret-gate behavior before merging** - The action runs with --only-verified and can fail the workflow. Because v3.96.0 changes detectors and verification behavior, revie...; Review finding: [medium] Verify changed secret-gate behavior before merging — .github/workflows/secret-scan.yml:52 (sha=a9be40be753371bdc142ce660ddc8596b1c56ff8)",
-      "expected_head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T00:20:03.372Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/trufflesecurity/trufflehog-3.96.0",
-        "head_sha": "a9be40be753371bdc142ce660ddc8596b1c56ff8",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
