@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T02:36:14.253Z",
+  "updated_at": "2026-08-02T02:37:27.534Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-01T23:03:01Z:clawsweeper_needs_human",
-      "comment_id": "5149865878",
-      "comment_version_key": "5149865878:2026-08-01T23:03:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
-      "comment_created_at": "2026-08-01T04:50:44Z",
-      "comment_updated_at": "2026-08-01T23:03:01Z",
-      "comment_body_sha256": "b37d92c4e77668d01debd8d5bee31fb0a72e43b0719674509e7e43dee63ade95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair remains: review the focused patch and allow the exact-head validation already running to complete before merge. (sha=603cbd38298591eb79ecdc2368e23a91da933a0b)",
-      "expected_head_sha": "603cbd38298591eb79ecdc2368e23a91da933a0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-01T23:03:45.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "603cbd38298591eb79ecdc2368e23a91da933a0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117147:5148938254:2026-08-01T23:03:14Z:clawsweeper_needs_human",
       "comment_id": "5148938254",
@@ -32331,6 +32298,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117400:5154715198:2026-08-02T02:36:45Z:re_review",
+      "comment_id": "5154715198",
+      "comment_version_key": "5154715198:2026-08-02T02:36:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5154715198",
+      "comment_created_at": "2026-08-02T02:36:45Z",
+      "comment_updated_at": "2026-08-02T02:36:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117400,
+      "author": "wangyan2026",
+      "author_id": 51532318,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T02:37:24.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-compaction-estimator-117358",
+        "head_sha": "76f3754398f5d94dabcaf1b30c41009acbdd7466",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
