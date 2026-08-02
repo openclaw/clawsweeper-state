@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:57:30.293Z",
+  "updated_at": "2026-08-02T05:58:17.864Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101441:4901108578:2026-08-02T01:13:07Z:clawsweeper_needs_human",
-      "comment_id": "4901108578",
-      "comment_version_key": "4901108578:2026-08-02T01:13:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-4901108578",
-      "comment_created_at": "2026-07-07T07:10:06Z",
-      "comment_updated_at": "2026-08-02T01:13:07Z",
-      "comment_body_sha256": "6276357ef639789a58c4550cb2b518fa8e4650856111296fa0884b360370eea0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101441,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR explicitly provides mocked runtime-boundary tests but no credentialed or safe-account after-fix Zalo Personal delivery evidence; add a r... (sha=676fd73da348fdd849e40551d3935d789718822e)",
-      "expected_head_sha": "676fd73da348fdd849e40551d3935d789718822e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T01:44:32.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-sanitize-outbound-90684",
-        "head_sha": "676fd73da348fdd849e40551d3935d789718822e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101593:4903258229:2026-08-01T07:54:23Z:clawsweeper_needs_human",
       "comment_id": "4903258229",
@@ -32532,6 +32499,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T05:57:30.292Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80453:4416626900:2026-08-02T05:57:35Z:clawsweeper_needs_human",
+      "comment_id": "4416626900",
+      "comment_version_key": "4416626900:2026-08-02T05:57:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80453#issuecomment-4416626900",
+      "comment_created_at": "2026-05-10T23:31:02Z",
+      "comment_updated_at": "2026-08-02T05:57:35Z",
+      "comment_body_sha256": "0eca0c264a46a192844a81fda017af0ea62e499a2ee3e259f1a4661efbc7b709",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the trusted-exec credential boundary explicitly** - The new fallback admits GH_TOKEN and GITHUB_TOKEN after the normal inherited-environment sanitizer rejected them. The posture...; Review finding: [medium] Approve the trusted-exec credential boundary explicitly — src/infra/host-env-security.ts:293 (sha=b525ed4326fff82462b2afe908da5a3a091d007c)",
+      "expected_head_sha": "b525ed4326fff82462b2afe908da5a3a091d007c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:58:17.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "gh-token-env",
+        "head_sha": "b525ed4326fff82462b2afe908da5a3a091d007c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
