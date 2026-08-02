@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:07:17.775Z",
+  "updated_at": "2026-08-02T07:07:47.612Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:52:4845296775:2026-08-02T02:41:43Z:clawsweeper_needs_human",
-      "comment_id": "4845296775",
-      "comment_version_key": "4845296775:2026-08-02T02:41:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/52#issuecomment-4845296775",
-      "comment_created_at": "2026-06-30T15:36:55Z",
-      "comment_updated_at": "2026-08-02T02:41:43Z",
-      "comment_body_sha256": "12dd2d48cf2890158ecb84618c58c682cddb14347d29fafe6d301901a68080a9",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 52,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides syntax checks, a decision table, and source before/after output, but no redacted live Linux proof of auth-key join, operator ha...; Review finding: [P1] Preserve a pre-existing Tailscale operator — roles/openclaw/tasks/main.yml:31-34 - [medium] Existing operator is silently replaced — roles/openclaw/tasks/main... (sha=6d877aa8714f55b51c9409bb384b96efe410561e)",
-      "expected_head_sha": "6d877aa8714f55b51c9409bb384b96efe410561e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T02:45:45.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tailscale-operator-permission",
-        "head_sha": "6d877aa8714f55b51c9409bb384b96efe410561e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:216:5027931715:2026-08-02T02:46:54Z:clawsweeper_needs_human",
       "comment_id": "5027931715",
@@ -32197,6 +32164,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T07:07:17.775Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-02T07:07:03Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-02T07:07:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-02T07:07:03Z",
+      "comment_body_sha256": "47b6b0a3934366b0ad32d3ca5118820133ea8edac768451743cd87cfe1e36d39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the TruffleHog workflow-guard pin (P2)** - This changes the credential-scan action to 6f3c981…, but the guard still asserts 27b0417…; the workflow-guard test therefore rejects the PR. Update the paired ac...; Review finding: [P2] Update the TruffleHog workflow-guard pin — .github/workflows/ci.yml:913 - [medium] Verify upstream security-workflow action revisions — .github/workflows/ci.y... (sha=0aea8d97b6d4ac4ec0c5f2a21f28d26badb2412b)",
+      "expected_head_sha": "0aea8d97b6d4ac4ec0c5f2a21f28d26badb2412b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T07:07:47.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "0aea8d97b6d4ac4ec0c5f2a21f28d26badb2412b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
