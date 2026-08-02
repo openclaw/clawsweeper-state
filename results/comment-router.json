@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:06:52.321Z",
+  "updated_at": "2026-08-02T08:06:53.990Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2407:5155156674:2026-08-02T04:02:58Z:re_review",
-      "comment_id": "5155156674",
-      "comment_version_key": "5155156674:2026-08-02T04:02:58Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5155156674",
-      "comment_created_at": "2026-08-02T04:02:58Z",
-      "comment_updated_at": "2026-08-02T04:02:58Z",
-      "comment_body_sha256": "c825fc7e103895d72026855e50062f120aa9cae73e56c783674d7e10d443b92e",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2407,
-      "author": "chenow9",
-      "author_id": 302014081,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T04:03:36.629Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/grok-local-token-cost",
-        "head_sha": "390a0f52b3f416d1cf844e1f4ced8a0ac83909fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-02T04:03:15Z:clawsweeper_needs_human",
       "comment_id": "5093836900",
@@ -32204,6 +32157,39 @@
         "kind": "pull_request",
         "branch": "fix/reactor-chat-layout-cycle",
         "head_sha": "87b16b4384a029c4be2496c14dd7d4ffb93b82b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117897:5156421827:2026-08-02T08:06:13Z:clawsweeper_needs_human",
+      "comment_id": "5156421827",
+      "comment_version_key": "5156421827:2026-08-02T08:06:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117897#issuecomment-5156421827",
+      "comment_created_at": "2026-08-02T08:06:13Z",
+      "comment_updated_at": "2026-08-02T08:06:13Z",
+      "comment_body_sha256": "c3d7beb00b12da104f38bb62a22ba46ba9c6c1c78501bd028ee1860f994fdaaa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117897,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, including an ephemeral gateway startup test with mocked provider discovery and catalogs, but contains no ind... (sha=b9338f0268efb30dcbc7f515f9ca635d552821ef)",
+      "expected_head_sha": "b9338f0268efb30dcbc7f515f9ca635d552821ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T08:06:53.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-startup-model-runtime-bootstrap-snapshot",
+        "head_sha": "b9338f0268efb30dcbc7f515f9ca635d552821ef",
         "cluster_id": null,
         "job_path": null
       }
