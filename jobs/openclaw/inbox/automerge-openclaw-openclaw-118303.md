@@ -1,7 +1,8 @@
 ---
 repo: openclaw/openclaw
-cluster_id: automerge-openclaw-openclaw-75403
+cluster_id: automerge-openclaw-openclaw-118303
 mode: autonomous
+repair_mode: autofix
 job_intent: automerge_pr
 allowed_actions:
   - comment
@@ -15,11 +16,11 @@ require_human_for:
   - close
   - merge
 canonical:
-  - #75403
+  - #118303
 candidates:
-  - #75403
+  - #118303
 cluster_refs:
-  - #75403
+  - #118303
 allow_instant_close: false
 allow_fix_pr: true
 allow_merge: false
@@ -28,30 +29,29 @@ allow_post_merge_close: false
 require_fix_before_close: true
 security_policy: central_security_only
 security_sensitive: false
-target_branch: clawsweeper/automerge-openclaw-openclaw-75403
+target_branch: clawsweeper/automerge-openclaw-openclaw-118303
 source: pr_automerge
 requested_by: "clawsweeper[bot]"
-requested_by_id: "274271284"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/75403#issuecomment-4357671409"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/118303"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
-Maintainer opted #75403 into ClawSweeper automerge.
+Maintainer opted #118303 into ClawSweeper autofix.
 
 Requested by: clawsweeper[bot]
-Request comment: https://github.com/openclaw/openclaw/pull/75403#issuecomment-4357671409
+Request comment: https://github.com/openclaw/openclaw/pull/118303
 
 
-Source PR: https://github.com/openclaw/openclaw/pull/75403
-Title: fix: making typing start fire-and-forget allows cleanup/idle to run before a persistent typin...
+Source PR: https://github.com/openclaw/openclaw/pull/118303
+Title: fix(minimax): route M3 image calls through MiniMax VL
 
 ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop:
 
-- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/openclaw/pull/75403"]` so the Codex edit pass can make this PR merge-ready.
+- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/openclaw/pull/118303"]` so the Codex edit pass can make this PR merge-ready.
 - The edit pass should rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context when required, run the relevant validation, and keep iterating until the branch is ready or an external blocker is proven.
 - If the PR branch cannot be safely updated, emit a narrow credited replacement only when the artifact can preserve the original contributor credit; otherwise return `needs_human`.
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
-- Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
+- Final merge is disabled for autofix. Keep the PR open after a passing ClawSweeper verdict unless a maintainer explicitly changes mode.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
 
