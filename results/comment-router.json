@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:25:57.945Z",
+  "updated_at": "2026-08-02T13:27:58.995Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116489:5157053656:2026-08-02T10:05:26Z:re_review",
-      "comment_id": "5157053656",
-      "comment_version_key": "5157053656:2026-08-02T10:05:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5157053656",
-      "comment_created_at": "2026-08-02T10:05:26Z",
-      "comment_updated_at": "2026-08-02T10:05:26Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T10:06:02.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "55316c02289760f3917862dee362131d875a30d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-02T10:06:11Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -30805,6 +30758,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117987:5158054613:2026-08-02T13:27:19Z:clawsweeper_needs_human",
+      "comment_id": "5158054613",
+      "comment_version_key": "5158054613:2026-08-02T13:27:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117987#issuecomment-5158054613",
+      "comment_created_at": "2026-08-02T13:01:21Z",
+      "comment_updated_at": "2026-08-02T13:27:19Z",
+      "comment_body_sha256": "a4b2a17c8abe89899410f5681137528d1d3c2eece17b7c824cb1d0649c018dbd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117987,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes replacement semantics for existing shell startup files, including mode preservation and symlink targets; preserve the four built-CLI profile cases if the branch is refres... (sha=0851909e5995a705b0b20bdcbd57da69cb941792)",
+      "expected_head_sha": "0851909e5995a705b0b20bdcbd57da69cb941792",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T13:27:58.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-completion-profile-atomic-20260802",
+        "head_sha": "0851909e5995a705b0b20bdcbd57da69cb941792",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
