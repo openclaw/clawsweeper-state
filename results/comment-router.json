@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T07:43:59.143Z",
+  "updated_at": "2026-08-02T07:45:23.020Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117764:5154842342:2026-08-02T03:38:35Z:clawsweeper_needs_human",
-      "comment_id": "5154842342",
-      "comment_version_key": "5154842342:2026-08-02T03:38:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117764#issuecomment-5154842342",
-      "comment_created_at": "2026-08-02T03:03:55Z",
-      "comment_updated_at": "2026-08-02T03:38:35Z",
-      "comment_body_sha256": "1963cc6330eb66113fb8c563dfdf8099e26e74467dbdccf07151998809d86f0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117764,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests and remote CI are valuable supplemental evidence, but the PR body expressly says no plaintext-only live Matrix end-to-end result...; Review finding: [P1] Reject punctuation localpart continuations — extensions/matrix/src/matrix/monitor/mentions.ts:51 - [medium] Punctuation bypasses the visible-account boundary... (sha=c13ef1ff2a14df4b2ac5c0ef53bab92f775a9397)",
-      "expected_head_sha": "c13ef1ff2a14df4b2ac5c0ef53bab92f775a9397",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T03:39:30.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-matrix-native-mentions-0801",
-        "head_sha": "c13ef1ff2a14df4b2ac5c0ef53bab92f775a9397",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117749:5154789798:2026-08-02T03:33:49Z:clawsweeper_needs_human",
       "comment_id": "5154789798",
@@ -32157,6 +32124,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117176:5156299390:2026-08-02T07:44:39Z:re_review",
+      "comment_id": "5156299390",
+      "comment_version_key": "5156299390:2026-08-02T07:44:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117176#issuecomment-5156299390",
+      "comment_created_at": "2026-08-02T07:44:39Z",
+      "comment_updated_at": "2026-08-02T07:44:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117176,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T07:45:20.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/thread-reply-current-source-marking",
+        "head_sha": "ac0659a934db74a4a6eb8250c74023ab49102280",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
