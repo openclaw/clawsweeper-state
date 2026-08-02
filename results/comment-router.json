@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T05:07:48.419Z",
+  "updated_at": "2026-08-02T05:08:02.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117400:5154350467:2026-08-02T01:09:33Z:re_review",
-      "comment_id": "5154350467",
-      "comment_version_key": "5154350467:2026-08-02T01:09:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5154350467",
-      "comment_created_at": "2026-08-02T01:09:33Z",
-      "comment_updated_at": "2026-08-02T01:09:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117400,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T01:10:08.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stale-compaction-estimator-117358",
-        "head_sha": "3bfe80697f41fbad99716586a8c37facff0b1634",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117481:5154350882:2026-08-02T01:09:40Z:re_review",
       "comment_id": "5154350882",
@@ -32024,6 +31977,39 @@
         "kind": "pull_request",
         "branch": "cleanup/approval-native-factory",
         "head_sha": "1c1c5a4b0f37ee458d55337d9d53fa6b4860c0c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117809:5155541597:2026-08-02T05:07:23Z:clawsweeper_auto_repair",
+      "comment_id": "5155541597",
+      "comment_version_key": "5155541597:2026-08-02T05:07:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117809#issuecomment-5155541597",
+      "comment_created_at": "2026-08-02T05:07:23Z",
+      "comment_updated_at": "2026-08-02T05:07:23Z",
+      "comment_body_sha256": "892775b3f6183486e30439e1203feb9bd0e8e73ab1de45cb5d9da2b43fc83080",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117809,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=50e03a851d424ce6284b11ee9b19eaf1d5e91b83)",
+      "expected_head_sha": "50e03a851d424ce6284b11ee9b19eaf1d5e91b83",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-02T05:08:02.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/slack-native-data-fallback-chunks",
+        "head_sha": "50e03a851d424ce6284b11ee9b19eaf1d5e91b83",
         "cluster_id": null,
         "job_path": null
       }
