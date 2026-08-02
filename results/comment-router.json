@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-02T14:20:03.116Z",
+  "updated_at": "2026-08-02T14:21:44.567Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4966422803:2026-07-14T07:21:49Z:re_review",
-      "comment_id": "4966422803",
-      "comment_version_key": "4966422803:2026-07-14T07:21:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4966422803",
-      "comment_created_at": "2026-07-14T07:21:49Z",
-      "comment_updated_at": "2026-07-14T07:21:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:23:35.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4969677154:2026-07-14T13:27:24Z:re_review",
       "comment_id": "4969677154",
@@ -31362,6 +31335,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T14:20:03.115Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-02T14:21:07Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-02T14:21:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-02T14:21:07Z",
+      "comment_body_sha256": "4f6587967e26fea0f20be110adab1953896677bd8cf85c4f48ab71cf7494e710",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog scanner contract (P2)** - The action reference moves to v3.96.0, but the adjacent version input still hard-selects the v3.95.9 image and digest. Update that selector and the matching w...; Review finding: [P2] Synchronize the TruffleHog scanner contract — .github/workflows/ci.yml:913 - [medium] Secret scanner stays on the old explicit image release — .github/workflo... (sha=8fb40de449e92f94ac86c6367264dddeb7ac4e3b)",
+      "expected_head_sha": "8fb40de449e92f94ac86c6367264dddeb7ac4e3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T14:21:44.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "8fb40de449e92f94ac86c6367264dddeb7ac4e3b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
