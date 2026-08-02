@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T13:23:06.341Z",
+  "updated_at": "2026-08-02T13:23:22.196Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116000:5120772953:2026-08-02T09:57:43Z:clawsweeper_needs_human",
-      "comment_id": "5120772953",
-      "comment_version_key": "5120772953:2026-08-02T09:57:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116000#issuecomment-5120772953",
-      "comment_created_at": "2026-07-29T16:39:58Z",
-      "comment_updated_at": "2026-08-02T09:57:43Z",
-      "comment_body_sha256": "cf01a0bf83e9c4727c1e466ef23792cab252d68331d1b13cf61bcfe20c815bc1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116000,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - DiagnosticEventPayload is publicly exported to plugins, so adding session.maintenance.pruned can make external exhaustive event switches fail to compile on upgrade unless maintainers... (sha=a4bafc7a98269ce6aad7a65a71d9842ec4caa132)",
-      "expected_head_sha": "a4bafc7a98269ce6aad7a65a71d9842ec4caa132",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T10:03:50.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/105198-session-reaper-metrics",
-        "head_sha": "a4bafc7a98269ce6aad7a65a71d9842ec4caa132",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116000:5121097883:2026-07-29T17:10:39Z:re_review",
       "comment_id": "5121097883",
@@ -30747,6 +30714,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:79702:5158173013:2026-08-02T13:22:44Z:re_review",
+      "comment_id": "5158173013",
+      "comment_version_key": "5158173013:2026-08-02T13:22:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/79702#issuecomment-5158173013",
+      "comment_created_at": "2026-08-02T13:22:44Z",
+      "comment_updated_at": "2026-08-02T13:22:44Z",
+      "comment_body_sha256": "64b61a8123bea64ca3959e673ebf0ceb2989d6d4d829e0c0b424ab400dafb20e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 79702,
+      "author": "kreucher",
+      "author_id": 120417,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T13:23:19.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-query-instruction-prefix-openai-embedding",
+        "head_sha": "7fa27d29cf68d82885898bed07a0853775f3e230",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
