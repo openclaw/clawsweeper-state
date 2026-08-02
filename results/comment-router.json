@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T09:48:03.858Z",
+  "updated_at": "2026-08-02T09:48:04.797Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109038:4993422912:2026-08-02T06:20:33Z:clawsweeper_auto_repair",
-      "comment_id": "4993422912",
-      "comment_version_key": "4993422912:2026-08-02T06:20:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109038#issuecomment-4993422912",
-      "comment_created_at": "2026-07-16T15:03:23Z",
-      "comment_updated_at": "2026-08-02T06:20:33Z",
-      "comment_body_sha256": "84a5fa47db5a4eb6b8fb7ae69d2f3ebcd63e24def663dc2357bb8debe61b5bca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109038,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6c2314ff09be1df08859b53970a158ffe0d14157)",
-      "expected_head_sha": "6c2314ff09be1df08859b53970a158ffe0d14157",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T06:21:10.566Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-session-header-short-read",
-        "head_sha": "6c2314ff09be1df08859b53970a158ffe0d14157",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109038:4995619130:2026-07-16T19:07:30Z:re_review",
       "comment_id": "4995619130",
@@ -32404,6 +32371,39 @@
       "status": "skipped",
       "processed_at": "2026-08-02T09:48:03.858Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:85:5156277598:2026-08-02T09:46:24Z:clawsweeper_needs_human",
+      "comment_id": "5156277598",
+      "comment_version_key": "5156277598:2026-08-02T09:46:24Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/85#issuecomment-5156277598",
+      "comment_created_at": "2026-08-02T07:40:54Z",
+      "comment_updated_at": "2026-08-02T09:46:24Z",
+      "comment_body_sha256": "2f0107cc8999fed9fb5642e44b471cd6c60034d68dc0aba4689eaabc215ed669",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 85,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Validate every file-store key path (P1)** - The new guard only runs through resolveSafeRelativePath(), but fileStore.open, read variants, remove, and exists still call Root with assertRelativePath() alone. As a...; Review finding: [P1] Validate every file-store key path — src/path.ts:160-165 - [medium] Inconsistent file-store key validation — src/path.ts:163 (sha=4d7ccad542256fbc34b85229494b9c3654c5163c)",
+      "expected_head_sha": "4d7ccad542256fbc34b85229494b9c3654c5163c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T09:48:04.797Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reject-drive-relative-paths",
+        "head_sha": "4d7ccad542256fbc34b85229494b9c3654c5163c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
