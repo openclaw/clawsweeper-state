@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-02T20:21:08.541Z",
+  "updated_at": "2026-08-02T20:21:11.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/slacrawl:117:5159555551:2026-08-02T17:38:44Z:re_review",
-      "comment_id": "5159555551",
-      "comment_version_key": "5159555551:2026-08-02T17:38:44Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/117#issuecomment-5159555551",
-      "comment_created_at": "2026-08-02T17:38:44Z",
-      "comment_updated_at": "2026-08-02T17:38:44Z",
-      "comment_body_sha256": "3725d9b1d4a8796629a9be510887104af831d3f6066e890c69d3f0f9b1b0a83d",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 117,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T17:39:21.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/users-channels-limit",
-        "head_sha": "65ad939eac895a739d74f145ee72601055288271",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110624:5010989960:2026-08-02T17:38:50Z:clawsweeper_needs_human",
       "comment_id": "5010989960",
@@ -31556,6 +31509,39 @@
         "kind": "pull_request",
         "branch": "feat/exact-head-pr-convergence-audit",
         "head_sha": "bf73a84dc17b8d76ccf3564259ccf3b41d4176d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:123:5160167925:2026-08-02T20:20:27Z:clawsweeper_needs_human",
+      "comment_id": "5160167925",
+      "comment_version_key": "5160167925:2026-08-02T20:20:27Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/123#issuecomment-5160167925",
+      "comment_created_at": "2026-08-02T20:20:27Z",
+      "comment_updated_at": "2026-08-02T20:20:27Z",
+      "comment_body_sha256": "eebf8b9ada38fe2efa943953fe10730dc400211c60af50e37852314b5d012d2e",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 123,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the shared \\@v1\\ release-workflow contract (P1)** - The latest release explicitly documents retaining the shared workflow’s @v1 compatibility contract, but this changes the credential-bearing caller to...; Review finding: [P1] Preserve the shared @v1 release-workflow contract — .github/workflows/release-unified.yml:21 - [medium] Review the credential-bearing reusable workflow versio... (sha=714c30542ab9f8281286fd33d33142d31fbdf5fb)",
+      "expected_head_sha": "714c30542ab9f8281286fd33d33142d31fbdf5fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-02T20:21:11.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/openclaw/release-workflows/dot-github/workflows/release-go-cli.yml-1.4.1",
+        "head_sha": "714c30542ab9f8281286fd33d33142d31fbdf5fb",
         "cluster_id": null,
         "job_path": null
       }
