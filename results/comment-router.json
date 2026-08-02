@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-02T08:09:24.256Z",
+  "updated_at": "2026-08-02T08:09:39.671Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98657:4856160568:2026-08-02T03:56:42Z:clawsweeper_needs_human",
-      "comment_id": "4856160568",
-      "comment_version_key": "4856160568:2026-08-02T03:56:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98657#issuecomment-4856160568",
-      "comment_created_at": "2026-07-01T14:22:12Z",
-      "comment_updated_at": "2026-08-02T03:56:42Z",
-      "comment_body_sha256": "349cebe3c0e977d8178bb3b74a93327f87bf64c7a94da8c2af4fc469652894dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98657,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5ad14d2c05fd92f2862968e79a8f63013ffc596b)",
-      "expected_head_sha": "5ad14d2c05fd92f2862968e79a8f63013ffc596b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T04:06:20.304Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/flock-dashdash-separator",
-        "head_sha": "5ad14d2c05fd92f2862968e79a8f63013ffc596b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105350:4951097994:2026-08-02T03:43:37Z:clawsweeper_auto_repair",
       "comment_id": "4951097994",
@@ -32207,6 +32174,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117727:5156436613:2026-08-02T08:08:59Z:re_review",
+      "comment_id": "5156436613",
+      "comment_version_key": "5156436613:2026-08-02T08:08:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117727#issuecomment-5156436613",
+      "comment_created_at": "2026-08-02T08:08:59Z",
+      "comment_updated_at": "2026-08-02T08:08:59Z",
+      "comment_body_sha256": "1b82113894735bfc4209de5318541bf1a4bf07373058166bae328f14a5e8ddee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117727,
+      "author": "Takhoffman",
+      "author_id": 781889,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T08:09:33.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-fractional-chunk-limits",
+        "head_sha": "f63b971c075792c33d71e2a8bcb65db12330193c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
