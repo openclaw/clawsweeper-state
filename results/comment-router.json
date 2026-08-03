@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T23:04:08.374Z",
+  "updated_at": "2026-08-03T23:04:38.134Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118836:5170649853:2026-08-03T19:11:44Z:re_review",
-      "comment_id": "5170649853",
-      "comment_version_key": "5170649853:2026-08-03T19:11:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118836#issuecomment-5170649853",
-      "comment_created_at": "2026-08-03T19:11:44Z",
-      "comment_updated_at": "2026-08-03T19:11:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "2b319e90-8f6f-11f1-97c5-f33d50c7c015",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118836,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T19:12:21.285Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-control-ui-operator-admin-20260803",
-        "head_sha": "f928d698bc7c2c1bb839b33bef399f55c9ccafea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118784:5169549126:2026-08-03T19:10:55Z:clawsweeper_needs_human",
       "comment_id": "5169549126",
@@ -32224,6 +32176,39 @@
         "kind": "pull_request",
         "branch": "docs/fix-verified-config-guidance",
         "head_sha": "120dfcc385fe0c14da54aa316c7d484199a336dd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118863:5170567084:2026-08-03T23:03:56Z:clawsweeper_needs_human",
+      "comment_id": "5170567084",
+      "comment_version_key": "5170567084:2026-08-03T23:03:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118863#issuecomment-5170567084",
+      "comment_created_at": "2026-08-03T19:03:23Z",
+      "comment_updated_at": "2026-08-03T23:03:56Z",
+      "comment_body_sha256": "75b8f817f904475fdbea41613c79cff13703957a5a008927b824681c14999444",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118863,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is cleanly mergeable but behind current main, and one exact-head compact CI check remains in progress; refresh mergeability and wait for that check before landing. (sha=717fdd54ebfcabae608f3b99d1d171d143129eac)",
+      "expected_head_sha": "717fdd54ebfcabae608f3b99d1d171d143129eac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T23:04:38.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-media-audio-network-20260803",
+        "head_sha": "717fdd54ebfcabae608f3b99d1d171d143129eac",
         "cluster_id": null,
         "job_path": null
       }
