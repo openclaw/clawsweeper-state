@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:32:57.853Z",
+  "updated_at": "2026-08-03T06:34:48.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117277:5150424094:2026-08-03T02:26:07Z:clawsweeper_needs_human",
-      "comment_id": "5150424094",
-      "comment_version_key": "5150424094:2026-08-03T02:26:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117277#issuecomment-5150424094",
-      "comment_created_at": "2026-08-01T07:31:35Z",
-      "comment_updated_at": "2026-08-03T02:26:07Z",
-      "comment_body_sha256": "9d40b3efa07c811b701c4cce2375fed4114632e46a14c9b30de6684780d88ffc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117277,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check snapshot shows failures in check-lint, two changed-node shards, and openclaw/ci-gate, while the branch is behind current main; require a current merge-result CI run... (sha=1b2b04c627d662681a187f9d8a4574cb37e58229)",
-      "expected_head_sha": "1b2b04c627d662681a187f9d8a4574cb37e58229",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T02:50:31.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/111923-filter-rem-junk-topics",
-        "head_sha": "1b2b04c627d662681a187f9d8a4574cb37e58229",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117571:5153053598:2026-08-03T01:47:51Z:clawsweeper_needs_human",
       "comment_id": "5153053598",
@@ -31844,6 +31811,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118041:5163095549:2026-08-03T06:34:14Z:re_review",
+      "comment_id": "5163095549",
+      "comment_version_key": "5163095549:2026-08-03T06:34:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118041#issuecomment-5163095549",
+      "comment_created_at": "2026-08-03T06:34:14Z",
+      "comment_updated_at": "2026-08-03T06:34:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118041,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T06:34:46.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118018-requester-lifecycle-fence",
+        "head_sha": "9aa5f7d7f9b9b228690a689f4331a4f9680dcf4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
