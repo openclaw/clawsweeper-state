@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118408"
 mode: "autonomous"
-run_id: "30790620603"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30790620603"
+run_id: "30790996207"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30790996207"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-03T06:42:17.208Z"
+published_at: "2026-08-03T06:47:25.118Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118408"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118408"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30790620603](https://github.com/openclaw/clawsweeper/actions/runs/30790620603)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30790996207](https://github.com/openclaw/clawsweeper/actions/runs/30790996207)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118408
 
 ## Summary
 
-Verified on `main` at `bbe71fe3cf44f4c08b758e8466dd1465621c3849`: ordinary subagent completion handoffs retry the direct requester-agent call a finite four attempts, while durable SQLite recovery is entered only for generated-media completion events. Existing coverage proves a single no-send-evidence takeover retry, not persistent exhaustion with durable handoff. The requested repair is narrow and valid, but this worker cannot edit, create a branch, or run the mandated temp-directory tests because the supplied checkout is read-only and approvals are disabled.
+The canonical issue remains a narrow, non-security repair candidate. Static inspection of the supplied checkout finds the same shape: ordinary completion delivery uses the finite direct retry path, while durable queue enqueue and scheduling are gated to generated-media completions. Implementation is blocked because this checkout is read-only and does not contain the preflight `main` SHA `57d8b1fc7398753f56ee7fb65498f4a5581ca434`, so the worker cannot safely add the required regression, patch, validate, or create the requested branch from the audited base.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified on `main` at `bbe71fe3cf44f4c08b758e8466dd1465621c3849`: ordinary subag
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118408 | fix_needed | blocked | canonical | A writable trusted executor must add the failing persistent-takeover regression, extend the existing durable queue producer path for ordinary completed announcements, run the focused tests, and open/update the required single repair PR. |
-| #91650 | keep_closed | skipped | duplicate | Already closed; preserve it only as related historical evidence for the canonical open issue. |
-| cluster:issue-openclaw-openclaw-118408 | build_fix_artifact | blocked | canonical | Implementation artifact is ready, but execution is blocked by the read-only checkout. |
+| #118408 | fix_needed | blocked | canonical | A writable trusted checkout containing the hydrated preflight base, or an updated preflight artifact for the current main checkout, is required before implementation and validation. |
+| #91650 | keep_closed | skipped | duplicate | Already closed; retain only as supporting evidence for the canonical open issue. |
+| cluster:issue-openclaw-openclaw-118408 | build_fix_artifact | blocked | canonical | The repair remains narrow, but a safe writable base is required before producing an executable PR. |
 
 ## Needs Human
 
