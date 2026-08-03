@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T01:28:44.403Z",
+  "generated_at": "2026-08-03T01:57:27.119Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
@@ -13,7 +13,7 @@
     "needs_checks": 15,
     "needs_review": 0,
     "needs_merge_preflight": 15,
-    "needs_result_backfill": 1
+    "needs_result_backfill": 2
   },
   "dispatch": {
     "enabled": false,
@@ -27,32 +27,36 @@
   },
   "prs": [
     {
-      "number": 118339,
-      "title": "fix(heartbeat): preserve CLI side-question mode for commitments",
-      "url": "https://github.com/openclaw/openclaw/pull/118339",
-      "branch": "clawsweeper/issue-openclaw-openclaw-118279",
-      "head_sha": "b16a2a5f79cbc80ad6ca0c4beb38263a53b71eac",
-      "cluster_id": "issue-openclaw-openclaw-118279",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118279.md",
-      "updated_at": "2026-08-03T01:25:57Z",
+      "number": 118361,
+      "title": "fix(browser): make extension deep doctor probe page snapshots",
+      "url": "https://github.com/openclaw/openclaw/pull/118361",
+      "branch": "clawsweeper/issue-openclaw-openclaw-116747",
+      "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
+      "cluster_id": "issue-openclaw-openclaw-116747",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md",
+      "updated_at": "2026-08-03T01:56:43Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 143,
+        "total": 127,
         "counts": {
-          "CANCELLED": 12,
+          "CANCELLED": 10,
           "SKIPPED": 44,
-          "SUCCESS": 86,
-          "NEUTRAL": 1
+          "SUCCESS": 70,
+          "IN_PROGRESS": 2,
+          "FAILURE": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "Real behavior proof:CANCELLED",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / check-lint:FAILURE"
         ]
       },
       "review_threads": {
@@ -67,37 +71,17 @@
           {
             "source": "comment",
             "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118339#issuecomment-5161230404",
-            "submitted_at": "2026-08-03T00:55:22Z"
+            "url": "https://github.com/openclaw/openclaw/pull/118361#issuecomment-5161527102",
+            "submitted_at": "2026-08-03T01:55:27Z"
           }
         ]
       },
-      "latest_record": {
-        "run_id": "30774371805",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30774371805",
-        "cluster_id": "issue-openclaw-openclaw-118279",
-        "published_at": "2026-08-03T01:03:25.358Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#118339",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(heartbeat): preserve CLI side-question mode for commitments",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
+      "latest_record": null,
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_merge_state:BLOCKED",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
+        "needs_merge_preflight",
+        "needs_result_backfill"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
@@ -179,7 +163,7 @@
       "head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
       "cluster_id": "issue-openclaw-openclaw-118185",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118185.md",
-      "updated_at": "2026-08-03T01:25:48Z",
+      "updated_at": "2026-08-03T01:53:36Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -258,30 +242,30 @@
       "title": "fix(minimax): route M3 image calls through MiniMax VL",
       "url": "https://github.com/openclaw/openclaw/pull/118303",
       "branch": "clawsweeper/issue-openclaw-openclaw-116601",
-      "head_sha": "c234711a432cc7be53074975b51560f81c460d9b",
+      "head_sha": "d0dbc08691709691d7e251b3633cb9e8dcb8c1cc",
       "cluster_id": "issue-openclaw-openclaw-116601",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
-      "updated_at": "2026-08-03T01:27:08Z",
+      "updated_at": "2026-08-03T01:55:48Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 124,
+        "total": 97,
         "counts": {
-          "CANCELLED": 8,
-          "SKIPPED": 45,
-          "SUCCESS": 69,
-          "FAILURE": 2
+          "CANCELLED": 3,
+          "SKIPPED": 39,
+          "SUCCESS": 51,
+          "IN_PROGRESS": 1,
+          "FAILURE": 2,
+          "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / checks-node-compact-large-6:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-node-changed:FAILURE",
+          "CI / check-lint:FAILURE"
         ]
       },
       "review_threads": {
@@ -330,8 +314,8 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -344,7 +328,7 @@
       "head_sha": "c3e731b0b34789e47fb02b9d4556aa791016446e",
       "cluster_id": "issue-openclaw-openclaw-118242",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118242.md",
-      "updated_at": "2026-08-03T01:25:52Z",
+      "updated_at": "2026-08-03T01:53:38Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -549,7 +533,7 @@
       "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
       "cluster_id": "issue-openclaw-openclaw-90786",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-90786.md",
-      "updated_at": "2026-08-03T01:27:59Z",
+      "updated_at": "2026-08-03T01:55:21Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -632,7 +616,7 @@
       "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-03T01:27:59Z",
+      "updated_at": "2026-08-03T01:54:55Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -710,7 +694,7 @@
       "head_sha": "6996408d1b4dae1d2a3d7dc9901c9c681d091978",
       "cluster_id": "issue-openclaw-openclaw-117899",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117899.md",
-      "updated_at": "2026-08-03T01:27:29Z",
+      "updated_at": "2026-08-03T01:54:50Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -758,10 +742,10 @@
         ]
       },
       "latest_record": {
-        "run_id": "30773442672",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30773442672",
+        "run_id": "30765891132",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30765891132",
         "cluster_id": "automerge-openclaw-openclaw-117952",
-        "published_at": "2026-08-03T01:22:24.476Z",
+        "published_at": "2026-08-02T21:47:12.498Z",
         "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#117952",
@@ -788,7 +772,7 @@
       "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
       "cluster_id": "issue-openclaw-openclaw-73478",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-03T01:27:28Z",
+      "updated_at": "2026-08-03T01:54:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -1030,7 +1014,7 @@
       "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
       "cluster_id": "issue-openclaw-openclaw-88079",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-88079.md",
-      "updated_at": "2026-08-03T01:26:55Z",
+      "updated_at": "2026-08-03T01:54:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -1114,7 +1098,7 @@
       "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
       "cluster_id": "issue-openclaw-openclaw-89532",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89532.md",
-      "updated_at": "2026-08-03T01:28:04Z",
+      "updated_at": "2026-08-03T01:54:56Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
