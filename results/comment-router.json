@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T03:29:57.367Z",
+  "updated_at": "2026-08-03T03:30:09.805Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118256:5160642415:2026-08-02T22:58:20Z:clawsweeper_needs_human",
-      "comment_id": "5160642415",
-      "comment_version_key": "5160642415:2026-08-02T22:58:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118256#issuecomment-5160642415",
-      "comment_created_at": "2026-08-02T22:28:08Z",
-      "comment_updated_at": "2026-08-02T22:58:20Z",
-      "comment_body_sha256": "8a588bacfd86e230920e514f09f412c241ce0f7c9f380d1df58cff1c21977c21",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118256,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two permanent identifier allowances and two fixture exclusions intentionally reduce lint coverage at those exact names and paths; maintainers should accept that scope explicitly r... (sha=4260cbad7c8c22ab78ef5586420c2e575fab2ec5)",
-      "expected_head_sha": "4260cbad7c8c22ab78ef5586420c2e575fab2ec5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T22:58:49.070Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/lint-reserved-findings",
-        "head_sha": "4260cbad7c8c22ab78ef5586420c2e575fab2ec5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:100845",
       "comment_id": "repair-loop-label-sweep:automerge:100845",
@@ -32609,6 +32576,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115807:5161995406:2026-08-03T03:29:34Z:re_review",
+      "comment_id": "5161995406",
+      "comment_version_key": "5161995406:2026-08-03T03:29:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115807#issuecomment-5161995406",
+      "comment_created_at": "2026-08-03T03:29:34Z",
+      "comment_updated_at": "2026-08-03T03:29:34Z",
+      "comment_body_sha256": "1f4b053d07d6fb0660c1073d66ca5dd035f0c2d37edb702d2a166aad966b4c1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115807,
+      "author": "lsr911",
+      "author_id": 18230762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T03:30:06.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-e2ee-room-encryptor-reprocess",
+        "head_sha": "928d6950d92e31dc99b9692869d775597aa6937e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
