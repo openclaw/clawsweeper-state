@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T18:12:47.542Z",
+  "updated_at": "2026-08-03T18:14:00.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111336:5167415838:2026-08-03T14:05:43Z:re_review",
-      "comment_id": "5167415838",
-      "comment_version_key": "5167415838:2026-08-03T14:05:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111336#issuecomment-5167415838",
-      "comment_created_at": "2026-08-03T14:05:43Z",
-      "comment_updated_at": "2026-08-03T14:05:43Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "6b426ee0-8f44-11f1-8a8a-ad939531bcc3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111336,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T14:06:19.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-probe-timeout-vs-unauth",
-        "head_sha": "0483663520cc76e77dc87443baa937b75398d600",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:468:5121122986:2026-08-03T14:05:41Z:clawsweeper_auto_repair",
       "comment_id": "5121122986",
@@ -32603,6 +32555,39 @@
         "kind": "pull_request",
         "branch": "qa-gateway-b1-node-exec-approvals",
         "head_sha": "7e7b48482b71fed97bf1db726b4f5b67f289ed09",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-03T18:04:42Z:clawsweeper_needs_human",
+      "comment_id": "5077699954",
+      "comment_version_key": "5077699954:2026-08-03T18:04:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
+      "comment_created_at": "2026-07-25T08:28:44Z",
+      "comment_updated_at": "2026-08-03T18:04:42Z",
+      "comment_body_sha256": "bd8c1f9a3669df74ced8c69cb0564dd9f48e03b15f8ce68782763a79a173ab77",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports checks but has no inspectable current-head after-fix logs, terminal output, recording, or artifact for the actual reserved-...; Review finding: [P1] Obtain approval before publishing this Plugin SDK contract — src/plugins/runtime/types.ts:148-154 - [medium] Final authorization path could not be inspected (sha=cde9e4ba6737df5f955297094cbe7a8dfaa02151)",
+      "expected_head_sha": "cde9e4ba6737df5f955297094cbe7a8dfaa02151",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T18:14:00.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agentic-os-runtime-contract-v1",
+        "head_sha": "cde9e4ba6737df5f955297094cbe7a8dfaa02151",
         "cluster_id": null,
         "job_path": null
       }
