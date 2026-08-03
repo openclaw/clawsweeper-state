@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:02:37.822Z",
+  "updated_at": "2026-08-03T06:03:33.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118365:5161650575:2026-08-03T02:19:37Z:re_review",
-      "comment_id": "5161650575",
-      "comment_version_key": "5161650575:2026-08-03T02:19:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118365#issuecomment-5161650575",
-      "comment_created_at": "2026-08-03T02:19:37Z",
-      "comment_updated_at": "2026-08-03T02:19:37Z",
-      "comment_body_sha256": "7dbcb14ec10a02d2ee2e28cd8ca5456f162e08e4cd6f4f69e997388d322605bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118365,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T02:20:08.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auto-qa-chat-composer-lint-owner-f2af",
-        "head_sha": "af58761a4d5cd333a4de0ef48e2a71b88c0746f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118359:5161475717:2026-08-03T02:21:36Z:clawsweeper_needs_human",
       "comment_id": "5161475717",
@@ -31671,6 +31624,39 @@
         "kind": "pull_request",
         "branch": "fix/catalog-integrity-diagnostics",
         "head_sha": "87272a38e68cc681c98921baf240da3bd5fbda87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118497:5162615353:2026-08-03T05:56:48Z:clawsweeper_needs_human",
+      "comment_id": "5162615353",
+      "comment_version_key": "5162615353:2026-08-03T05:56:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118497#issuecomment-5162615353",
+      "comment_created_at": "2026-08-03T05:22:57Z",
+      "comment_updated_at": "2026-08-03T05:56:48Z",
+      "comment_body_sha256": "bf1f972f5b0538beb145409f4d401f544241b1a032312e54d289e4cfe1a2bbf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118497,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR text describes a live Matrix run as still in progress, but the supplied evidence has no redacted after-fix Matrix event, terminal output... (sha=f5ff631b7be74d7f0e0fb39c57e55ae4a7c22a80)",
+      "expected_head_sha": "f5ff631b7be74d7f0e0fb39c57e55ae4a7c22a80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T06:03:33.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-matrix-code-mentions",
+        "head_sha": "f5ff631b7be74d7f0e0fb39c57e55ae4a7c22a80",
         "cluster_id": null,
         "job_path": null
       }
