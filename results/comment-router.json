@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:07:59.455Z",
+  "updated_at": "2026-08-03T22:08:18.124Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118802:5169981395:2026-08-03T18:01:54Z:clawsweeper_needs_human",
-      "comment_id": "5169981395",
-      "comment_version_key": "5169981395:2026-08-03T18:01:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118802#issuecomment-5169981395",
-      "comment_created_at": "2026-08-03T18:01:54Z",
-      "comment_updated_at": "2026-08-03T18:01:54Z",
-      "comment_body_sha256": "d414bfb159d2cff16c719b2ff6e8e91f5d7df7f3eafb465bc685863170fe6ac1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118802,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch is behind current main; refresh the rebase and review the exact merge result before landing, even though the current head is reported mergeable. (sha=38f9088d5ee8bb0848afa7d4f62461ec07f331da)",
-      "expected_head_sha": "38f9088d5ee8bb0848afa7d4f62461ec07f331da",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T18:03:07.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-tui-pty-scenario-model-routing",
-        "head_sha": "38f9088d5ee8bb0848afa7d4f62461ec07f331da",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116413:5131957093:2026-08-03T18:01:45Z:clawsweeper_auto_repair",
       "comment_id": "5131957093",
@@ -33090,6 +33057,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118982:5172267280:2026-08-03T22:07:41Z:re_review",
+      "comment_id": "5172267280",
+      "comment_version_key": "5172267280:2026-08-03T22:07:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118982#issuecomment-5172267280",
+      "comment_created_at": "2026-08-03T22:07:41Z",
+      "comment_updated_at": "2026-08-03T22:07:41Z",
+      "comment_body_sha256": "9e1a9d8a246824ad65ed4cc7f6f6f5f4400057d9c5355335f8bc75d15832d8d6",
+      "source_delivery_id": "bf72e150-8f87-11f1-983e-d2e0a8809c17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118982,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T22:08:16.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t04-tui-editor-input-20260803",
+        "head_sha": "d6b9971f94174b1ad9735be53ec6c6df860b9350",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
