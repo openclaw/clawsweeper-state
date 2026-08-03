@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:12:58.960Z",
+  "updated_at": "2026-08-03T19:13:11.925Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118682:5168152976:2026-08-03T15:08:07Z:re_review",
-      "comment_id": "5168152976",
-      "comment_version_key": "5168152976:2026-08-03T15:08:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118682#issuecomment-5168152976",
-      "comment_created_at": "2026-08-03T15:08:07Z",
-      "comment_updated_at": "2026-08-03T15:08:07Z",
-      "comment_body_sha256": "ec60da8039a41b032497e8273dd3cdbb68e2cc55d95f11dd7615ac671ba9c3e4",
-      "source_delivery_id": "234b0990-8f4d-11f1-931d-2875e47a1fbc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118682,
-      "author": "RerankerGuo",
-      "author_id": 121015044,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T15:08:41.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-79469-effective-reasoning",
-        "head_sha": "0e12cce0de26afc996030bc491486e0c462f1456",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118709:5168152628:2026-08-03T15:08:05Z:re_review",
       "comment_id": "5168152628",
@@ -32888,6 +32840,39 @@
         "kind": "pull_request",
         "branch": "fix/native-claude-trajectory-eligibility",
         "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118805:5170035820:2026-08-03T19:12:39Z:clawsweeper_needs_human",
+      "comment_id": "5170035820",
+      "comment_version_key": "5170035820:2026-08-03T19:12:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118805#issuecomment-5170035820",
+      "comment_created_at": "2026-08-03T18:07:39Z",
+      "comment_updated_at": "2026-08-03T19:12:39Z",
+      "comment_body_sha256": "8c633848ca3ee41a649aeb0dd2e3ee7d6da31b5e236afab6dc930603637cc782",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hosted UI checks are currently skipped while the PR remains a draft; before merge, refresh required hosted validation for the exact head or its clean merge result. (sha=8b14aa0ac355421564830ff4b492a7766838e057)",
+      "expected_head_sha": "8b14aa0ac355421564830ff4b492a7766838e057",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:13:11.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-control-ui-service-worker-update-20260803",
+        "head_sha": "8b14aa0ac355421564830ff4b492a7766838e057",
         "cluster_id": null,
         "job_path": null
       }
