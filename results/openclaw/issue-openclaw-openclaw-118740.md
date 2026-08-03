@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118740"
 mode: "autonomous"
-run_id: "30848287428"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30848287428"
+run_id: "30850008418"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30850008418"
 head_sha: "326104b08f93941c21ab7afd2cd57a60b51ff583"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-03T20:08:54.391Z"
-canonical: "#118740"
-canonical_issue: "#118740"
+published_at: "2026-08-03T20:31:07.757Z"
+canonical: "https://github.com/openclaw/openclaw/issues/118740"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30848287428](https://github.com/openclaw/clawsweeper/actions/runs/30848287428)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30850008418](https://github.com/openclaw/clawsweeper/actions/runs/30850008418)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #118740
+Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 ## Summary
 
-Verified against current main `317320a95eaa91d59375c57885819cc71643e807`: `CODESIGN_TIMESTAMP=auto` initializes `--timestamp=none` and only enables timestamps when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A SHA-1 selector therefore deterministically keeps `--timestamp=none`, while every `codesign --sign` invocation correctly preserves the selector. The repair is narrow and ready for a new PR, but this worker cannot edit the read-only checkout, dependencies are absent, and this Linux host cannot provide the required macOS `security`/codesign proof.
+Current main `f73a7809a5e6d8c55427aa746a9ae0551ac3c5cc` still has the reported defect: in auto mode the script initializes `--timestamp=none` and enables `--timestamp` only when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A 40-character SHA-1 selector therefore deterministically remains unsigned by Apple’s timestamp service. The fix is a narrow, non-security script/test/docs repair, but this checkout is read-only, has no installed dependencies, and runs on Linux without macOS `security` or `codesign` tooling.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Verified against current main `317320a95eaa91d59375c57885819cc71643e807`: `CODES
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118740 | fix_needed | planned | canonical | The issue remains a reproducible existing-behavior bug with a clear root owner. A writable macOS-capable executor should implement and validate the supplied narrow artifact before opening the permitted fix PR. |
+| #118740 | fix_needed | blocked | canonical | A real existing-behavior bug remains on current main and has a clear owner boundary. The current worker cannot write the repair branch or execute its required focused and macOS validations. |
+| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | The planned artifact is narrow, keeps the established signing policy, and requires no new configuration, dependency, fallback path, or security-boundary decision. |
 
 ## Needs Human
 

@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118740",
+  "mode": "autonomous",
+  "run_id": "30850008418",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30850008418",
+  "head_sha": "326104b08f93941c21ab7afd2cd57a60b51ff583",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118740.md",
+  "published_at": "2026-08-03T20:31:07.757Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_pr": null,
+  "summary": "Current main `f73a7809a5e6d8c55427aa746a9ae0551ac3c5cc` still has the reported defect: in auto mode the script initializes `--timestamp=none` and enables `--timestamp` only when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A 40-character SHA-1 selector therefore deterministically remains unsigned by Apple’s timestamp service. The fix is a narrow, non-security script/test/docs repair, but this checkout is read-only, has no installed dependencies, and runs on Linux without macOS `security` or `codesign` tooling.",
+  "actions": [
+    {
+      "target": "#118740",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "A real existing-behavior bug remains on current main and has a clear owner boundary. The current worker cannot write the repair branch or execute its required focused and macOS validations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118740",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "The planned artifact is narrow, keeps the established signing policy, and requires no new configuration, dependency, fallback path, or security-boundary decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
