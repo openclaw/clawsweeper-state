@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:35:03.924Z",
+  "updated_at": "2026-08-03T15:35:34.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5165356426:2026-08-03T10:46:07Z:re_review",
-      "comment_id": "5165356426",
-      "comment_version_key": "5165356426:2026-08-03T10:46:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5165356426",
-      "comment_created_at": "2026-08-03T10:46:07Z",
-      "comment_updated_at": "2026-08-03T10:46:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T11:05:31.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-fallback-recovery-96534",
-        "head_sha": "d75cb435900751688d510e1c8b37d9cc422ac9f5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116530:5135224499:2026-08-03T11:04:43Z:clawsweeper_auto_repair",
       "comment_id": "5135224499",
@@ -31919,6 +31872,39 @@
         "kind": "pull_request",
         "branch": "fix/daytona-hydrate-cache-fallback",
         "head_sha": "ac9380b9dfbed51c9fd15f93eeae8f7a5fc706d6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111692:5019468684:2026-08-03T15:34:52Z:clawsweeper_needs_human",
+      "comment_id": "5019468684",
+      "comment_version_key": "5019468684:2026-08-03T15:34:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111692#issuecomment-5019468684",
+      "comment_created_at": "2026-07-20T06:40:55Z",
+      "comment_updated_at": "2026-08-03T15:34:52Z",
+      "comment_body_sha256": "52d551e6d1a38ea00991bada0e8d9e3c6c6630b02d93b102ca249eceb1f65e6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111692,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A fixed, unconfigured 30-second response-header deadline can turn an existing slow-but-eventually-successful ClickClack setup, recovery, or audited-write request into a TimeoutError w... (sha=06cc14463ca743cb52d05deb97a8f1e61e5ba235)",
+      "expected_head_sha": "06cc14463ca743cb52d05deb97a8f1e61e5ba235",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T15:35:34.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clickclack-rest-request-deadline",
+        "head_sha": "06cc14463ca743cb52d05deb97a8f1e61e5ba235",
         "cluster_id": null,
         "job_path": null
       }
