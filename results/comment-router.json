@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:20:41.722Z",
+  "updated_at": "2026-08-03T00:20:44.663Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-02T21:07:56Z:clawsweeper_needs_human",
-      "comment_id": "5093836900",
-      "comment_version_key": "5093836900:2026-08-02T21:07:56Z",
-      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
-      "comment_created_at": "2026-07-27T16:16:21Z",
-      "comment_updated_at": "2026-08-02T21:07:56Z",
-      "comment_body_sha256": "110d55ea3559c49581825891370acb4562cbccb5152b7b1075be5fd79d7629ba",
-      "repo": "openclaw/crabline",
-      "issue_number": 248,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upstream major SDK release changes Matrix OAuth support; without a passing SDK-driven Matrix integration result, compatibility with the actual client behavior exercised by Crablin... (sha=871844c43e665f190a78259c33f2b24f6a326479)",
-      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:08:52.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
-        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-02T21:07:57Z:clawsweeper_needs_human",
       "comment_id": "5156335270",
@@ -32390,6 +32357,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118307:5161067301:2026-08-03T00:20:05Z:re_review",
+      "comment_id": "5161067301",
+      "comment_version_key": "5161067301:2026-08-03T00:20:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118307#issuecomment-5161067301",
+      "comment_created_at": "2026-08-03T00:20:05Z",
+      "comment_updated_at": "2026-08-03T00:20:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118307,
+      "author": "shad0wca7",
+      "author_id": 9969843,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T00:20:42.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/fix-matrix-failed-preview",
+        "head_sha": "7887b3f881c246f08434f3cea4555b3854c45b30",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
