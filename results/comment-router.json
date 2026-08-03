@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T11:11:22.339Z",
+  "updated_at": "2026-08-03T11:11:42.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113980:5162487758:2026-08-03T05:02:29Z:re_review",
-      "comment_id": "5162487758",
-      "comment_version_key": "5162487758:2026-08-03T05:02:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113980#issuecomment-5162487758",
-      "comment_created_at": "2026-08-03T05:02:29Z",
-      "comment_updated_at": "2026-08-03T05:02:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113980,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T05:03:05.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/111854-truncation-placeholder",
-        "head_sha": "d3ff6ea550501a080138b6ae1b40d0b4071f8f9d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118480:5162489131:2026-08-03T05:02:45Z:clawsweeper_needs_human",
       "comment_id": "5162489131",
@@ -32493,6 +32446,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-82091-channel-hot-reload-known-accounts",
         "head_sha": "2e59b9fbd1bc31f48aa392cf30cc5e0b412266d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-03T11:11:10Z:clawsweeper_needs_human",
+      "comment_id": "5077699954",
+      "comment_version_key": "5077699954:2026-08-03T11:11:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
+      "comment_created_at": "2026-07-25T08:28:44Z",
+      "comment_updated_at": "2026-08-03T11:11:10Z",
+      "comment_body_sha256": "19783152a5c040da9a01630494ece9ce32d5c9bddb43cfefde6d3dbb56eabead",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports tests and CI but supplies no inspectable current-head after-fix runtime transcript, logs, recording, or artifact showing accepte...; Review finding: [P1] Reject claims on existing unowned sessions — src/plugin-sdk/session-store-runtime.ts:171-172 - [P1] Obtain approval before publishing this Plugin SDK contract... (sha=840d56c99659a30ef2254a1741d6268284e08d02)",
+      "expected_head_sha": "840d56c99659a30ef2254a1741d6268284e08d02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T11:11:42.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agentic-os-runtime-contract-v1",
+        "head_sha": "840d56c99659a30ef2254a1741d6268284e08d02",
         "cluster_id": null,
         "job_path": null
       }
