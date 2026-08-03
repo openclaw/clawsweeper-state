@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Memory Core dreaming recall-ingestion regression from https://github.com/openclaw/openclaw/issues/117669. In `recordGroundedShortTermCandidates`, pass the existing `allowTranscriptTurnSnippet: isShortTermSessionCorpusPath(normalizedPath)` option to the contamination check after path normalization. Do not relax the durable-promotion checks in `extensions/memory-core/src/short-term-promotion-apply.ts`; raw transcript turns must remain unable to reach `MEMORY.md`. Add focused regression coverage proving that a `User:` or `Assistant:` snippet at `memory/.dreams/session-corpus/...` enters the short-term recall store while contamination filtering remains effective. Do not edit `CHANGELOG.md`.
+Fix the current Memory Core dreaming regression described by https://github.com/openclaw/openclaw/issues/117669. At the grounded short-term recall-ingestion boundary in `extensions/memory-core/src/short-term-promotion-record.ts`, allow speaker-prefixed snippets only when `normalizedPath` is a valid session-corpus path, using the existing `isShortTermSessionCorpusPath` and `allowTranscriptTurnSnippet` contract. Do not remove or globally weaken `RAW_TRANSCRIPT_TURN_RE`; do not alter durable-promotion call sites in `short-term-promotion-apply.ts`. Add focused regression coverage in `extensions/memory-core/src/short-term-promotion.test.ts` that proves a `memory/.dreams/session-corpus/YYYY-MM-DD.txt` `User:` or `Assistant:` snippet is persisted by `recordGroundedShortTermCandidates`, while an equivalent non-session path remains filtered and raw transcript text still cannot be promoted to `MEMORY.md`. Treat https://github.com/openclaw/openclaw/pull/117946 and https://github.com/openclaw/openclaw/pull/118325 as closed-unmerged reference attempts, not branches to revive. No `CHANGELOG.md` edit; put release-note context in the PR body.
 
 Likely files:
 
 - extensions/memory-core/src/short-term-promotion-record.ts
 - extensions/memory-core/src/short-term-promotion.test.ts
-- extensions/memory-core/src/short-term-promotion-apply.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/memory-core/src/short-term-promotion.test.ts
 - git diff --check
+- pnpm format extensions/memory-core/src/short-term-promotion-record.ts extensions/memory-core/src/short-term-promotion.test.ts
 
 ## Operator Prompt
 

@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-03T01:47:36.747Z",
+  "updated_at": "2026-08-03T01:44:30.147Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118199:5160474997:2026-08-02T21:42:38Z:re_review",
+      "comment_id": "5160474997",
+      "comment_version_key": "5160474997:2026-08-02T21:42:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118199#issuecomment-5160474997",
+      "comment_created_at": "2026-08-02T21:42:38Z",
+      "comment_updated_at": "2026-08-02T21:42:38Z",
+      "comment_body_sha256": "99adb5152bab7c6fe0b1b8d6f612d5a013da8a255baf6dcfb050afebc3ad814f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118199,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:43:16.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-cli-backends",
+        "head_sha": "5bebc59e3ed49010e5d55e8c2e043457f2748d16",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117364:5151144666:2026-08-02T21:43:19Z:clawsweeper_needs_human",
       "comment_id": "5151144666",
@@ -32434,39 +32481,6 @@
         "kind": "pull_request",
         "branch": "fix/cron-preserve-stored-tools-116059",
         "head_sha": "93f044ed3c504d6cffaf9ce218c50bf7d0cd4eec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118358:5161472766:2026-08-03T01:47:00Z:clawsweeper_needs_human",
-      "comment_id": "5161472766",
-      "comment_version_key": "5161472766:2026-08-03T01:47:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118358#issuecomment-5161472766",
-      "comment_created_at": "2026-08-03T01:47:00Z",
-      "comment_updated_at": "2026-08-03T01:47:00Z",
-      "comment_body_sha256": "96f5b871272b20779e3f3e1c9ee8e4ff9109259269428004a343b7292386a96b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118358,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused test results, and the visible regression test is an in-process harness with a manually installed controller; no red... (sha=749bfbaaa7ca9cf54d3ecc4382407d476a6ad2ff)",
-      "expected_head_sha": "749bfbaaa7ca9cf54d3ecc4382407d476a6ad2ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:47:36.747Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-cli-cancel-session-lanes",
-        "head_sha": "749bfbaaa7ca9cf54d3ecc4382407d476a6ad2ff",
         "cluster_id": null,
         "job_path": null
       }
