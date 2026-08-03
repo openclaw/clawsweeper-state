@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:25:01.081Z",
+  "updated_at": "2026-08-03T06:25:24.470Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105707:4952813065:2026-08-03T02:39:52Z:clawsweeper_needs_human",
-      "comment_id": "4952813065",
-      "comment_version_key": "4952813065:2026-08-03T02:39:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105707#issuecomment-4952813065",
-      "comment_created_at": "2026-07-12T21:18:39Z",
-      "comment_updated_at": "2026-08-03T02:39:52Z",
-      "comment_body_sha256": "678cc1e09ded26c74e8b2da0ca2e16e5ce6f7dc535c63b6bacd84fbb462c5068",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR head is currently merge-conflicted with main; its lifecycle and Gateway wiring must be rebased onto the current terminal-event code before merge. (sha=b59b8b6030461293ae024979c88755c07a11186d)",
-      "expected_head_sha": "b59b8b6030461293ae024979c88755c07a11186d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T02:50:31.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "final-event-message-id",
-        "head_sha": "b59b8b6030461293ae024979c88755c07a11186d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105765:4953313408:2026-08-03T02:40:22Z:clawsweeper_needs_human",
       "comment_id": "4953313408",
@@ -31788,6 +31755,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118402:5163029232:2026-08-03T06:24:40Z:re_review",
+      "comment_id": "5163029232",
+      "comment_version_key": "5163029232:2026-08-03T06:24:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118402#issuecomment-5163029232",
+      "comment_created_at": "2026-08-03T06:24:40Z",
+      "comment_updated_at": "2026-08-03T06:24:40Z",
+      "comment_body_sha256": "82a77f0b5228a9fc82c19c6b47b4b023bc43a018ed053993c04253c1cdd75d01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118402,
+      "author": "MoerAI",
+      "author_id": 26067127,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T06:25:22.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-failure-loop-streak",
+        "head_sha": "941e90a7a311a1d05e1c04f589e036f6f3905d55",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
