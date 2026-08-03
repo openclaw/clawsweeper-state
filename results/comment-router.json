@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:39:30.754Z",
+  "updated_at": "2026-08-03T15:40:50.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118576:5164185012:2026-08-03T11:09:10Z:clawsweeper_auto_repair",
-      "comment_id": "5164185012",
-      "comment_version_key": "5164185012:2026-08-03T11:09:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118576#issuecomment-5164185012",
-      "comment_created_at": "2026-08-03T08:44:06Z",
-      "comment_updated_at": "2026-08-03T11:09:10Z",
-      "comment_body_sha256": "ac5b1b47afe44e67b471a0d4e944160dd566102e1a06a87ef2cc67b98445221b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118576,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=80914d6c4e2013b273510f84df02e7c30c7ff1c3)",
-      "expected_head_sha": "80914d6c4e2013b273510f84df02e7c30c7ff1c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T11:12:57.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-903",
-        "head_sha": "80914d6c4e2013b273510f84df02e7c30c7ff1c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118633:5165598274:2026-08-03T11:13:11Z:clawsweeper_needs_human",
       "comment_id": "5165598274",
@@ -31912,6 +31879,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118602:5168532151:2026-08-03T15:39:58Z:re_review",
+      "comment_id": "5168532151",
+      "comment_version_key": "5168532151:2026-08-03T15:39:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118602#issuecomment-5168532151",
+      "comment_created_at": "2026-08-03T15:39:58Z",
+      "comment_updated_at": "2026-08-03T15:39:58Z",
+      "comment_body_sha256": "dd79e8889b628e03cc33db6f98a89cf1d96718a662b4303b52cc967fd04ba8a7",
+      "source_delivery_id": "95e8f030-8f51-11f1-8f72-d00fbd4b76b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118602,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T15:40:48.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/daytona-hydrate-cache-fallback",
+        "head_sha": "7f75b3f4940e5b53c528e9c8c2cc93c0306b046b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
