@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:58:42.369Z",
+  "updated_at": "2026-08-03T13:58:52.972Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/discrawl:163:5163984990:2026-08-03T08:22:11Z:re_review",
-      "comment_id": "5163984990",
-      "comment_version_key": "5163984990:2026-08-03T08:22:11Z",
-      "comment_url": "https://github.com/openclaw/discrawl/pull/163#issuecomment-5163984990",
-      "comment_created_at": "2026-08-03T08:22:11Z",
-      "comment_updated_at": "2026-08-03T08:22:11Z",
-      "comment_body_sha256": "a52cc4e0f9b7815b809015d144fec0c594b078bf9b7d2d5d6580f726715d1c20",
-      "repo": "openclaw/discrawl",
-      "issue_number": 163,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T08:22:59.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-integrity-diagnostics",
-        "head_sha": "b75d89bf94391ba52bc8c22862a4c4d76aad45d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118573:5164006216:2026-08-03T08:24:35Z:clawsweeper_needs_human",
       "comment_id": "5164006216",
@@ -31908,6 +31861,39 @@
         "kind": "pull_request",
         "branch": "codex/qa200-ui-settings-mutation-owner",
         "head_sha": "e5eb6941d52cf3083374439a0d719429eab8f64f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117229:5149994819:2026-08-03T13:58:14Z:clawsweeper_needs_human",
+      "comment_id": "5149994819",
+      "comment_version_key": "5149994819:2026-08-03T13:58:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117229#issuecomment-5149994819",
+      "comment_created_at": "2026-08-01T05:30:50Z",
+      "comment_updated_at": "2026-08-03T13:58:14Z",
+      "comment_body_sha256": "2a52ba9831a3210abea2fc0aded1d81d34b45aaa83088d5eb3af6a6c36c86a5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117229,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes native and focused test results, but the supplied body and review context do not contain an inspectable after-fix Telegram tra... (sha=7bb67a6f16aac08ff6fbdb2a7d4d364281879f92)",
+      "expected_head_sha": "7bb67a6f16aac08ff6fbdb2a7d4d364281879f92",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:58:52.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-telegram-delivery-correlation-topic-owner",
+        "head_sha": "7bb67a6f16aac08ff6fbdb2a7d4d364281879f92",
         "cluster_id": null,
         "job_path": null
       }
