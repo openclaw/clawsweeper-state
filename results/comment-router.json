@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T03:00:53.957Z",
+  "updated_at": "2026-08-03T03:01:46.216Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-02T22:41:56Z:clawsweeper_auto_repair",
-      "comment_id": "5077699954",
-      "comment_version_key": "5077699954:2026-08-02T22:41:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
-      "comment_created_at": "2026-07-25T08:28:44Z",
-      "comment_updated_at": "2026-08-02T22:41:56Z",
-      "comment_body_sha256": "260176b59df7ad741d18c5e30f725ddac35b1094a5b4d7c339917fe4e467cdf4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=418005612546c1f40f0353c9f6dea844634f08d6)",
-      "expected_head_sha": "418005612546c1f40f0353c9f6dea844634f08d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T22:42:29.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agentic-os-runtime-contract-v1",
-        "head_sha": "418005612546c1f40f0353c9f6dea844634f08d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118253:5160633995:2026-08-02T22:42:27Z:clawsweeper_needs_human",
       "comment_id": "5160633995",
@@ -32541,6 +32508,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117151:5148939475:2026-08-03T03:01:00Z:clawsweeper_needs_human",
+      "comment_id": "5148939475",
+      "comment_version_key": "5148939475:2026-08-03T03:01:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117151#issuecomment-5148939475",
+      "comment_created_at": "2026-08-01T01:51:18Z",
+      "comment_updated_at": "2026-08-03T03:01:00Z",
+      "comment_body_sha256": "bad47a4ef6b94c9bb8f99ad8cce03fe31f541d7ce094321361c0780935aa8761",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117151,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate a child before accepting its post-snapshot identity (P1)** - children yields only numeric PIDs. If the listed child exits and its PID is reused before this identity read, the replacement is admitted a...; Review finding: [P1] Revalidate a child before accepting its post-snapshot identity — packages/agent-core/src/harness/env/kill-tree.ts:332-337 - [high] PID reuse can admit an unre... (sha=cbc071ec52faf5e52cb1ccdba20cfac2a6e43b16)",
+      "expected_head_sha": "cbc071ec52faf5e52cb1ccdba20cfac2a6e43b16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T03:01:46.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/unix-process-tree-cleanup",
+        "head_sha": "cbc071ec52faf5e52cb1ccdba20cfac2a6e43b16",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
