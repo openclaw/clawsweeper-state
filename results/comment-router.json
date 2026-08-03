@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-03T00:09:54.569Z",
+  "updated_at": "2026-08-03T00:09:32.379Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118130:5160314458:2026-08-02T20:59:27Z:re_review",
+      "comment_id": "5160314458",
+      "comment_version_key": "5160314458:2026-08-02T20:59:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118130#issuecomment-5160314458",
+      "comment_created_at": "2026-08-02T20:59:27Z",
+      "comment_updated_at": "2026-08-02T20:59:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118130,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-02T21:00:10.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118083",
+        "head_sha": "1a14a675478f294b5479f3a6cbf8266ee66e43c5",
+        "cluster_id": "automerge-openclaw-openclaw-118130",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118130.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118199:5160315956:2026-08-02T20:59:51Z:clawsweeper_needs_human",
       "comment_id": "5160315956",
@@ -32234,39 +32281,6 @@
         "kind": "pull_request",
         "branch": "fix/media-max-mb-schema-parity",
         "head_sha": "97b0a1e6e84b71f7eecee5ae438a9d546a2d1d3f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118305:5160945126:2026-08-03T00:04:56Z:clawsweeper_needs_human",
-      "comment_id": "5160945126",
-      "comment_version_key": "5160945126:2026-08-03T00:04:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118305#issuecomment-5160945126",
-      "comment_created_at": "2026-08-02T23:52:17Z",
-      "comment_updated_at": "2026-08-03T00:04:56Z",
-      "comment_body_sha256": "6f139004b2e87a73e695ff5a4d29d23e1b2c5eb21d2bb3145672ada8141f4255",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocks and a provider probe are supplemental evidence, but the PR has no after-fix real Telegram proof; add a redacted live run, recordi... (sha=9548ccc1dfc1c4aeb52ac97862494f8ba5ab0851)",
-      "expected_head_sha": "9548ccc1dfc1c4aeb52ac97862494f8ba5ab0851",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T00:09:54.569Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-telegram-empty-reply",
-        "head_sha": "b04e3f33ecdf1ba888afabd77c654fac54d5dae4",
         "cluster_id": null,
         "job_path": null
       }
