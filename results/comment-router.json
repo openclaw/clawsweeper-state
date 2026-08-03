@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:52:52.627Z",
+  "updated_at": "2026-08-03T13:53:06.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118378:5161830836:2026-08-03T07:34:20Z:clawsweeper_needs_human",
-      "comment_id": "5161830836",
-      "comment_version_key": "5161830836:2026-08-03T07:34:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118378#issuecomment-5161830836",
-      "comment_created_at": "2026-08-03T02:57:48Z",
-      "comment_updated_at": "2026-08-03T07:34:20Z",
-      "comment_body_sha256": "3b5cae98f666d96ad0b12ee20e56cdd506b302740640fb01c170a777d8878dfc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118378,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This availability-sensitive recovery change is on a branch GitHub reports as behind current main; it needs a rebase or branch update and required checks on the resulting exact head be... (sha=6925726545b066ba3e8556deb9816de63b6ccad0)",
-      "expected_head_sha": "6925726545b066ba3e8556deb9816de63b6ccad0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T07:44:03.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/issue-118244",
-        "head_sha": "6925726545b066ba3e8556deb9816de63b6ccad0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118041:5159286909:2026-08-03T07:41:44Z:clawsweeper_auto_repair",
       "comment_id": "5159286909",
@@ -31932,6 +31899,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118687:5167217147:2026-08-03T13:52:33Z:clawsweeper_needs_human",
+      "comment_id": "5167217147",
+      "comment_version_key": "5167217147:2026-08-03T13:52:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118687#issuecomment-5167217147",
+      "comment_created_at": "2026-08-03T13:52:33Z",
+      "comment_updated_at": "2026-08-03T13:52:33Z",
+      "comment_body_sha256": "6531b4550a1536d5b0093e1b7d6c351a0c5e3b9199b0577e9ebfb24c7bf4e6af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118687,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as behind current main, so landing should use a refreshed merge head and the exact-head UI E2E/check gates rather than relying only on the earlier retained T... (sha=b77267098b00d66e6ccbb5bf0401b17e664c4cdf)",
+      "expected_head_sha": "b77267098b00d66e6ccbb5bf0401b17e664c4cdf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:53:06.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-94-whole-system-stress",
+        "head_sha": "b77267098b00d66e6ccbb5bf0401b17e664c4cdf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
