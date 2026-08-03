@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118489",
+  "mode": "autonomous",
+  "run_id": "30788288399",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30788288399",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118489.md",
+  "published_at": "2026-08-03T05:58:15.691Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_pr": null,
+  "summary": "#118489 remains a reproducible canonical bug on main e4884d981a40308bc192175e5cd9522f4c29182d. The finalizer still requires lifecycle activeCount to reach zero and rejects any prior terminal presentation, but this read-only checkout lacks dependencies and sibling ../codex source needed to establish the required regressions and Code Mode lifecycle contract. A narrow new-PR artifact is ready; only local implementation and validation are blocked.",
+  "actions": [
+    {
+      "target": "#118274",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118489",
+      "candidate_fix": "#118344",
+      "reason": "Already closed; it is evidence only and is not a closure target in this repair lane."
+    },
+    {
+      "target": "#118344",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "Already closed and cannot be modified by this lane."
+    },
+    {
+      "target": "#118489",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "A narrow repair is warranted, but this worker cannot create regressions, inspect the required Codex dependency contract, or validate a patch in the provided checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118489",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new fix PR after a writable executor establishes the regressions and directly inspects sibling Codex source."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
