@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118776",
+  "mode": "autonomous",
+  "run_id": "30845328482",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30845328482",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
+  "published_at": "2026-08-03T19:27:51.100Z",
+  "canonical": "#118776",
+  "canonical_issue": "#118776",
+  "canonical_pr": "#118806",
+  "summary": "Verified against preflight main c12579ae57debb32c9ab5a2b7f0d0cce400f4bab: stored leaf sessions deny child-control tools but retain sessions_yield, while the shared leaf prompt still tells them to yield for descendant completion. The open canonical repair PR #118806 has the correct narrow four-file surface and required labels, but its hydrated head has failing security-fast and openclaw/ci-gate checks; repair and exact-head validation must complete before it can be treated as a fix candidate.",
+  "actions": [
+    {
+      "target": "#118776",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": "#118806",
+      "reason": "This is the authoritative report for the leaf capability/prompt invariant. It remains open because #118806 is not yet validation-clean."
+    },
+    {
+      "target": "#118806",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118806",
+      "candidate_fix": "#118806",
+      "reason": "Reuse the existing same-repository writable PR rather than creating a duplicate. First inspect the exact failed CI logs, repair only any concrete branch/base or validation issue, then rerun focused policy/prompt/yield proof and the changed gate."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

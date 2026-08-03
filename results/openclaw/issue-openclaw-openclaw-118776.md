@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118776"
 mode: "autonomous"
-run_id: "30835586426"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30835586426"
+run_id: "30845328482"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30845328482"
 head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-03T18:31:27.102Z"
-canonical: "https://github.com/openclaw/openclaw/issues/118776"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/118776"
-canonical_pr: null
-actions_total: 3
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-03T19:27:51.100Z"
+canonical: "#118776"
+canonical_issue: "#118776"
+canonical_pr: "#118806"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30835586426](https://github.com/openclaw/clawsweeper/actions/runs/30835586426)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30845328482](https://github.com/openclaw/clawsweeper/actions/runs/30845328482)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/118776
+Canonical: #118776
 
 ## Summary
 
-Current main (d857c8eebcc25cec729a8131ac1cfd3dbe454a4e) still has the source-reproducible leaf-subagent defect. The leaf deny list omits sessions_yield and the subagent prompt gives unconditional descendant-wait guidance. A narrow policy-and-prompt repair is appropriate, but this worker checkout is read-only and lacks node_modules, so implementation and focused validation are blocked here.
+Verified against preflight main c12579ae57debb32c9ab5a2b7f0d0cce400f4bab: stored leaf sessions deny child-control tools but retain sessions_yield, while the shared leaf prompt still tells them to yield for descendant completion. The open canonical repair PR #118806 has the correct narrow four-file surface and required labels, but its hydrated head has failing security-fast and openclaw/ci-gate checks; repair and exact-head validation must complete before it can be treated as a fix candidate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,8 +54,7 @@ Current main (d857c8eebcc25cec729a8131ac1cfd3dbe454a4e) still has the source-rep
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/118806 | clawsweeper/issue-openclaw-openclaw-118776 |  |
-| issue_implementation_status_comment | updated | #118776 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,8 @@ Current main (d857c8eebcc25cec729a8131ac1cfd3dbe454a4e) still has the source-rep
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118776 | keep_canonical | planned | canonical | The open canonical issue describes a confirmed narrow bug and must remain open until its focused fix PR is created and validated. |
-| cluster:issue-openclaw-openclaw-118776 | fix_needed | blocked | canonical | Only implementation is blocked by the immutable worker environment. The deterministic executor should apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-118776. |
-| cluster:issue-openclaw-openclaw-118776 | build_fix_artifact | planned | canonical | No viable contributor PR exists; create one narrow credited fix PR when a writable executor is available. |
+| #118776 | keep_canonical | planned | canonical | This is the authoritative report for the leaf capability/prompt invariant. It remains open because #118806 is not yet validation-clean. |
+| #118806 | fix_needed | planned | canonical | Reuse the existing same-repository writable PR rather than creating a duplicate. First inspect the exact failed CI logs, repair only any concrete branch/base or validation issue, then rerun focused policy/prompt/yield proof and the changed gate. |
 
 ## Needs Human
 

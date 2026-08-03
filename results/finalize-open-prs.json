@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T19:24:01.515Z",
+  "generated_at": "2026-08-03T19:30:21.070Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
@@ -34,7 +34,7 @@
       "head_sha": "39000bacc134f75218328d31d514b99d649650ab",
       "cluster_id": "issue-openclaw-openclaw-118771",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118771.md",
-      "updated_at": "2026-08-03T19:20:26Z",
+      "updated_at": "2026-08-03T19:25:08Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -65,8 +65,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118807#issuecomment-5170767554",
+            "submitted_at": "2026-08-03T19:23:54Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "30835615780",
@@ -134,12 +141,20 @@
         ]
       },
       "latest_record": {
-        "run_id": "30835586426",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835586426",
+        "run_id": "30845328482",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30845328482",
         "cluster_id": "issue-openclaw-openclaw-118776",
-        "published_at": "2026-08-03T18:31:27.102Z",
-        "workflow_conclusion": "failure",
-        "apply_action": null
+        "published_at": "2026-08-03T19:27:51.100Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118806",
+          "action": "fix_needed",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#118806",
+          "candidate_fix": "#118806",
+          "reason": "Reuse the existing same-repository writable PR rather than creating a duplicate. First inspect the exact failed CI logs, repair only any concrete branch/base or validation issue, then rerun focused policy/prompt/yield proof and the changed gate."
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
