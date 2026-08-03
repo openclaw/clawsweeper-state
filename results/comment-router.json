@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:11:43.319Z",
+  "updated_at": "2026-08-03T10:12:05.081Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118360:5162185840:2026-08-03T04:09:20Z:re_review",
-      "comment_id": "5162185840",
-      "comment_version_key": "5162185840:2026-08-03T04:09:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118360#issuecomment-5162185840",
-      "comment_created_at": "2026-08-03T04:09:20Z",
-      "comment_updated_at": "2026-08-03T04:09:20Z",
-      "comment_body_sha256": "0aa2d13a7affaff0298ccdcb5611515d460de33e74a5835a74ffe8bfce29136b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118360,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T04:09:59.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-112616-20260802t224048z-ce294c65",
-        "head_sha": "92cac7fc20358d8417b00d90c84efe7cdf737844",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115006:5100887892:2026-08-03T04:09:32Z:clawsweeper_needs_human",
       "comment_id": "5100887892",
@@ -31592,6 +31545,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-898",
         "head_sha": "ba357ffe0170c89db731e0966963d140ccc4fe22",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:484:5131458141:2026-08-03T10:08:20Z:clawsweeper_needs_human",
+      "comment_id": "5131458141",
+      "comment_version_key": "5131458141:2026-08-03T10:08:20Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/484#issuecomment-5131458141",
+      "comment_created_at": "2026-07-30T13:30:13Z",
+      "comment_updated_at": "2026-08-03T10:08:20Z",
+      "comment_body_sha256": "ae05d4e1551d334f9249fd36c736485a76f5e39f04bd06230c0f78e06446be3b",
+      "repo": "openclaw/acpx",
+      "issue_number": 484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging updates native oxfmt and oxlint optional bindings for macOS and Windows, while the repository's code workflow runs only on Ubuntu and the PR contains no corresponding real ins... (sha=ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424)",
+      "expected_head_sha": "ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T10:12:05.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-650d5d9233",
+        "head_sha": "ba8f3346e9c4a1cdf91a12714a4c8a1ba533d424",
         "cluster_id": null,
         "job_path": null
       }
