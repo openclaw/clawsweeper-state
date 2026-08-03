@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:52:18.047Z",
+  "updated_at": "2026-08-03T04:52:19.830Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118324:5161310174:2026-08-03T01:11:27Z:re_review",
-      "comment_id": "5161310174",
-      "comment_version_key": "5161310174:2026-08-03T01:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118324#issuecomment-5161310174",
-      "comment_created_at": "2026-08-03T01:11:27Z",
-      "comment_updated_at": "2026-08-03T01:11:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118324,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T01:12:00.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-agent-db-fixture",
-        "head_sha": "61776482d71497731b0909a100b505f50f0b5be3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-03T01:11:47Z:clawsweeper_needs_human",
       "comment_id": "5160156082",
@@ -31574,6 +31527,39 @@
         "kind": "pull_request",
         "branch": "fix/wacrawl-dependabot-major-tag",
         "head_sha": "fd6eb127d10396ee1179d77784d13b9e2c643358",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118461:5162428118:2026-08-03T04:51:44Z:clawsweeper_needs_human",
+      "comment_id": "5162428118",
+      "comment_version_key": "5162428118:2026-08-03T04:51:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118461#issuecomment-5162428118",
+      "comment_created_at": "2026-08-03T04:51:44Z",
+      "comment_updated_at": "2026-08-03T04:51:44Z",
+      "comment_body_sha256": "44658ae369767db331f8bc158020c551b312acde9d80ef98b4c333037970d26d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118461,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports deterministic tests and an unlinked investigation, but it does not contain inspectable after-fix runtime output, a recordin... (sha=7cf755986220a9fc5f9de45497a61c44cac09bae)",
+      "expected_head_sha": "7cf755986220a9fc5f9de45497a61c44cac09bae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T04:52:19.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-subagent-error-delivery",
+        "head_sha": "7cf755986220a9fc5f9de45497a61c44cac09bae",
         "cluster_id": null,
         "job_path": null
       }
