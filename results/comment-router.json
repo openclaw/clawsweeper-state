@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:06:36.618Z",
+  "updated_at": "2026-08-03T00:06:40.933Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118111:5159749176:2026-08-02T18:29:26Z:clawsweeper_needs_human",
-      "comment_id": "5159749176",
-      "comment_version_key": "5159749176:2026-08-02T18:29:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118111#issuecomment-5159749176",
-      "comment_created_at": "2026-08-02T18:29:26Z",
-      "comment_updated_at": "2026-08-02T18:29:26Z",
-      "comment_body_sha256": "9e7b25f18ccf54259c1b8fb55f89fa3adc2293bf96c8d5c92912c2e93698fd9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118111,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the CI package/build sequence; wait for all four QA smoke profiles to complete successfully before merging, because only profile 1/4 has completed in the supplied check s... (sha=d98c90fa61bcee0030b3f1707d6474e51faea6df)",
-      "expected_head_sha": "d98c90fa61bcee0030b3f1707d6474e51faea6df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:53:34.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-performance-qa-build",
-        "head_sha": "d98c90fa61bcee0030b3f1707d6474e51faea6df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118103:5159846205:2026-08-02T20:47:29Z:clawsweeper_needs_human",
       "comment_id": "5159846205",
@@ -32366,6 +32333,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118301:5160996818:2026-08-03T00:06:05Z:clawsweeper_needs_human",
+      "comment_id": "5160996818",
+      "comment_version_key": "5160996818:2026-08-03T00:06:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118301#issuecomment-5160996818",
+      "comment_created_at": "2026-08-03T00:06:05Z",
+      "comment_updated_at": "2026-08-03T00:06:05Z",
+      "comment_body_sha256": "ccc4218f367fdf3e1289b460823c2bd94f4c2e533a7058dbee403f20df40692c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main while GitHub reports it cleanly mergeable; refresh the branch and recheck the focused lifecycle tests against the merge result so the owner-boundary... (sha=975a69ea19120d5831d8db444c458b1750a30203)",
+      "expected_head_sha": "975a69ea19120d5831d8db444c458b1750a30203",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T00:06:40.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-realtime-voice-state-116201",
+        "head_sha": "975a69ea19120d5831d8db444c458b1750a30203",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
