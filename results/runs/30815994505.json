@@ -1,0 +1,143 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118669",
+  "mode": "autonomous",
+  "run_id": "30815994505",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30815994505",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118669.md",
+  "published_at": "2026-08-03T13:41:53.816Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118669",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118669",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main baeaca2ad4c1b48bd0d3fcee530e7b568b51e63c: Workboard persists the dispatched run ID and a running execution, but its subagent terminal hook performs only managed-worktree cleanup. A narrow plugin-owned fix should reconcile only the still-running card whose card and execution run IDs exactly match the terminal event, blocking it with a durable event-derived reason when no explicit Workboard terminal action has already transitioned it. This read-only worker cannot modify or locally validate the checkout; it emits the executable new-PR artifact for the deterministic applicator.",
+  "actions": [
+    {
+      "target": "#102314",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "Related historical Workboard lifecycle context only."
+    },
+    {
+      "target": "#108361",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "Related historical Workboard state-consistency repair, already closed."
+    },
+    {
+      "target": "#108490",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "Closed context reference; not a mutation target."
+    },
+    {
+      "target": "#118669",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "A narrow Workboard-plugin repair is required; no viable candidate PR is hydrated in this cluster."
+    },
+    {
+      "target": "#118669",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "Keep this issue open for the planned credited ClawSweeper autofix PR and its validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118669",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118669",
+      "candidate_fix": null,
+      "reason": "Create one narrow new fix PR for the canonical issue; do not merge or close from this lane."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "keep_canonical": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118679",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118669",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118679",
+      "commit": "694b04c32abc00cdf7b860aea8a660feab50e12a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118669",
+      "pr": "https://github.com/openclaw/openclaw/pull/118679",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118679",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118679",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(workboard): reconcile terminal subagent runs",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
