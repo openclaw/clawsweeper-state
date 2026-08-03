@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:27:48.884Z",
+  "updated_at": "2026-08-03T04:28:03.957Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118344:5161290562:2026-08-03T01:07:39Z:clawsweeper_needs_human",
-      "comment_id": "5161290562",
-      "comment_version_key": "5161290562:2026-08-03T01:07:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118344#issuecomment-5161290562",
-      "comment_created_at": "2026-08-03T01:07:39Z",
-      "comment_updated_at": "2026-08-03T01:07:39Z",
-      "comment_body_sha256": "d9188511ec254adc1f4775a2c47a79a9746d95b7a6c2674cf765b3fa4e1f13f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118344,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the final-reply path for failed tools; current guards must continue to prevent replay, duplicate delivery, and follow-up finalization for active, approval-bound, yield... (sha=112f37f49cec2871e2f564948c6332d6678aedce)",
-      "expected_head_sha": "112f37f49cec2871e2f564948c6332d6678aedce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:08:27.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-118274-terminal-failed-tools-v2",
-        "head_sha": "112f37f49cec2871e2f564948c6332d6678aedce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpdf:12:5157914932:2026-08-03T01:08:01Z:clawsweeper_auto_repair",
       "comment_id": "5157914932",
@@ -31312,6 +31279,53 @@
         "kind": "pull_request",
         "branch": "fix/wait-for-release-ci",
         "head_sha": "7de35d89bc214bc87e7cec99015a0e27b18b6c54",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/wacrawl:54:5162298577:2026-08-03T04:27:17Z:re_review",
+      "comment_id": "5162298577",
+      "comment_version_key": "5162298577:2026-08-03T04:27:17Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/54#issuecomment-5162298577",
+      "comment_created_at": "2026-08-03T04:27:17Z",
+      "comment_updated_at": "2026-08-03T04:27:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 54,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T04:28:01.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maintain/wacrawl-validation-20260803",
+        "head_sha": "6d226bebf4631723f76ae1ab0862eea86742aa32",
         "cluster_id": null,
         "job_path": null
       },
