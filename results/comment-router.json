@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:00:36.030Z",
+  "updated_at": "2026-08-03T13:01:47.367Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116794:5162938175:2026-08-03T06:13:06Z:re_review",
-      "comment_id": "5162938175",
-      "comment_version_key": "5162938175:2026-08-03T06:13:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5162938175",
-      "comment_created_at": "2026-08-03T06:13:06Z",
-      "comment_updated_at": "2026-08-03T06:13:06Z",
-      "comment_body_sha256": "b81091ebde600448b792ff43d395b50396b05d7f800421cdd43427e10840d0b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116794,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T06:14:11.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-3-runtime",
-        "head_sha": "76d16179f112bf6ede86a0c3bcd8d0b9db181c62",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114480:5089702575:2026-08-03T06:12:24Z:clawsweeper_auto_repair",
       "comment_id": "5089702575",
@@ -32384,6 +32337,39 @@
         "kind": "pull_request",
         "branch": "kit/fix-whatsapp-self-lid-mention",
         "head_sha": "8c88f94a9b940be4bb25e2ea0095c560d1481de6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116353:5129647326:2026-08-03T13:01:11Z:clawsweeper_auto_repair",
+      "comment_id": "5129647326",
+      "comment_version_key": "5129647326:2026-08-03T13:01:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116353#issuecomment-5129647326",
+      "comment_created_at": "2026-07-30T10:29:15Z",
+      "comment_updated_at": "2026-08-03T13:01:11Z",
+      "comment_body_sha256": "6853685c24b1ac0b525cc1f23a77cc808b0aa743e29c15429e8b7a3d81f70bfb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116353,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8b7a0555e779869df710379cd2d87f6ca79b5452)",
+      "expected_head_sha": "8b7a0555e779869df710379cd2d87f6ca79b5452",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:01:47.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-inbound-debounce-structured-context",
+        "head_sha": "8b7a0555e779869df710379cd2d87f6ca79b5452",
         "cluster_id": null,
         "job_path": null
       }
