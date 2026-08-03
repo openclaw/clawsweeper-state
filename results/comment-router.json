@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:26:50.981Z",
+  "updated_at": "2026-08-03T10:27:08.840Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/discrawl:163:5161995060:2026-08-03T04:19:15Z:clawsweeper_needs_human",
-      "comment_id": "5161995060",
-      "comment_version_key": "5161995060:2026-08-03T04:19:15Z",
-      "comment_url": "https://github.com/openclaw/discrawl/pull/163#issuecomment-5161995060",
-      "comment_created_at": "2026-08-03T03:29:29Z",
-      "comment_updated_at": "2026-08-03T04:19:15Z",
-      "comment_body_sha256": "dc4be291544ff6436bd0555ce3f4c9365ea11a1a5452eb09fe942ac0ef4e072a",
-      "repo": "openclaw/discrawl",
-      "issue_number": 163,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No narrow repair is needed: the patch has no supported code defect, and the remaining action is ordinary maintainer merge review. (sha=87272a38e68cc681c98921baf240da3bd5fbda87)",
-      "expected_head_sha": "87272a38e68cc681c98921baf240da3bd5fbda87",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T04:20:07.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-integrity-diagnostics",
-        "head_sha": "87272a38e68cc681c98921baf240da3bd5fbda87",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118451:5162252679:2026-08-03T04:20:25Z:clawsweeper_auto_repair",
       "comment_id": "5162252679",
@@ -31496,6 +31463,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-08-03T10:25:48Z:clawsweeper_auto_repair",
+      "comment_id": "5160944009",
+      "comment_version_key": "5160944009:2026-08-03T10:25:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118303#issuecomment-5160944009",
+      "comment_created_at": "2026-08-02T23:51:57Z",
+      "comment_updated_at": "2026-08-03T10:25:48Z",
+      "comment_body_sha256": "9d95c1aac43be6ad1adc9ce54edddfb2df9e08ebce0b8e2d6ee6316e91cca572",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b9218ca0d4bc5f5a4a82e5661ec68c7729de4684)",
+      "expected_head_sha": "b9218ca0d4bc5f5a4a82e5661ec68c7729de4684",
+      "finding_id": "review-feedback",
+      "status": "waiting",
+      "processed_at": "2026-08-03T10:26:53.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "b9218ca0d4bc5f5a4a82e5661ec68c7729de4684",
+        "cluster_id": "automerge-openclaw-openclaw-118303",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
