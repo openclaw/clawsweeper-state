@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 3, 2026, 13:37 UTC
+Last source update: Aug 3, 2026, 14:01 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 3, 2026, 13:37 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Aug 3, 2026, 13:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30816917602) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 3, 2026, 13:22 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30817607331) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Aug 3, 2026, 14:01 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30819741400) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 3, 2026, 13:59 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30820389631) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 3, 2026, 11:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/30810581531) |
 
 ### Repositories
@@ -91,20 +91,20 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 3, 2026, 13:13 UTC
+Last source update: Aug 3, 2026, 13:56 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 326 | 100% |
-| Run attempts archived | 891 | audit |
-| Latest successful clusters | 286 | 87.7% |
-| Latest failed clusters | 39 | 12.0% |
+| Latest clusters reviewed | 327 | 100% |
+| Run attempts archived | 892 | audit |
+| Latest successful clusters | 287 | 87.8% |
+| Latest failed clusters | 39 | 11.9% |
 | Latest cancelled clusters | 1 | 0.3% |
-| Needs-human clusters | 23 | 7.1% |
+| Needs-human clusters | 23 | 7.0% |
 | Fix actions failed | 19 | 4.9% |
-| Fix actions blocked | 75 | 19.3% |
+| Fix actions blocked | 75 | 19.2% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
 | Blocked mutation attempts | 257 | 99.6% |
@@ -115,15 +115,15 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 326 clusters: 163 maintainer action, 51 automation snapshot, 91 intervention needed, 21 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#118656](https://github.com/openclaw/openclaw/pull/118656) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
+- Latest records: 327 clusters: 164 maintainer action, 51 automation snapshot, 91 intervention needed, 21 no pending action, 0 completed.
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#118685](https://github.com/openclaw/openclaw/pull/118685) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#118652](https://github.com/openclaw/openclaw/pull/118652) is automation_failed: Current main lacks a lifecycle owner that terminates all process-supervisor runs during gateway shutdown or restart..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#118361](https://github.com/openclaw/openclaw/pull/118361) is checks_blocked: checks are not clean: check-lint: FAILURE, openclaw/ci-gate: FAILURE.
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
-| Maintainer Action | 163 | explicit decision, access, or merge authority recorded |
+| Maintainer Action | 164 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 51 | repair, check, or planned action recorded; verify live status |
 | Intervention Needed | 91 | automation failure or blocker recorded |
 | No Pending Action | 21 | latest record proposes no repair or apply action |
@@ -132,7 +132,7 @@ State: Failed clusters need inspection
 | Lane state | Count |
 | --- | ---: |
 | maintainer_input | 41 |
-| merge_ready | 24 |
+| merge_ready | 25 |
 | merge_not_authorized | 98 |
 | checks_blocked | 31 |
 | repair_open | 1 |
@@ -147,6 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118685](https://github.com/openclaw/openclaw/pull/118685) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 3, 2026, 13:56 UTC | [issue-openclaw-openclaw-118673](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-118673.md) | [30817343279](https://github.com/openclaw/clawsweeper/actions/runs/30817343279) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118656](https://github.com/openclaw/openclaw/pull/118656) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 3, 2026, 12:21 UTC | [issue-openclaw-openclaw-118649](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-118649.md) | [30811151078](https://github.com/openclaw/clawsweeper/actions/runs/30811151078) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#107479](https://github.com/openclaw/openclaw/pull/107479) | merge_not_authorized | job does not allow merge | Aug 2, 2026, 16:57 UTC | [automerge-openclaw-openclaw-107479](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-107479.md) | [30757037741](https://github.com/openclaw/clawsweeper/actions/runs/30757037741) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118064](https://github.com/openclaw/openclaw/pull/118064) | merge_ready | issue implementation PR checks are green; merge intentionally blocked for this lane | Aug 2, 2026, 16:52 UTC | [issue-openclaw-openclaw-118029](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-118029.md) | [30756039551](https://github.com/openclaw/clawsweeper/actions/runs/30756039551) |
@@ -161,7 +162,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#116976](https://github.com/openclaw/openclaw/pull/116976) | merge_not_authorized | job does not allow merge | Jul 31, 2026, 18:04 UTC | [automerge-openclaw-openclaw-114611](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-114611.md) | [30652227116](https://github.com/openclaw/clawsweeper/actions/runs/30652227116) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#111745](https://github.com/openclaw/openclaw/issues/111745) | maintainer_input | Obtain the sanitized reproduction evidence requested in the July 31, 2026 maintainer comment: effective npm_config values, npm config list --json,... | Jul 31, 2026, 14:06 UTC | [issue-openclaw-openclaw-111745](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-111745.md) | [30636586682](https://github.com/openclaw/clawsweeper/actions/runs/30636586682) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#67584](https://github.com/openclaw/openclaw/issues/67584) | maintainer_input | Quarantine this exact PR for central OpenClaw security handling without affecting classification of the non-security items. | Jul 17, 2026, 09:01 UTC | [gitcrawl-59-memory-wiki-per-agent-vault-path-isolation-for-multi-tenant-depl](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/gitcrawl-59-memory-wiki-per-agent-vault-path-isolation-for-multi-tenant-depl.md) | [29568070623](https://github.com/openclaw/clawsweeper/actions/runs/29568070623) |
-| [openclaw/crabbox](https://github.com/openclaw/crabbox) | [#1044](https://github.com/openclaw/crabbox/issues/1044) | maintainer_input | For https://github.com/openclaw/crabbox/issues/1044, identify a contributor willing to own ongoing Google Cloud Run sandbox support and provide liv... | Jul 17, 2026, 07:23 UTC | [issue-openclaw-crabbox-1044](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-1044.md) | [29562638791](https://github.com/openclaw/clawsweeper/actions/runs/29562638791) |
 
 #### Automation Snapshot
 
