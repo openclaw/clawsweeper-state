@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:44:49.465Z",
+  "updated_at": "2026-08-03T00:45:30.532Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108452:4989820368:2026-08-02T21:08:57Z:clawsweeper_needs_human",
-      "comment_id": "4989820368",
-      "comment_version_key": "4989820368:2026-08-02T21:08:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108452#issuecomment-4989820368",
-      "comment_created_at": "2026-07-16T08:35:19Z",
-      "comment_updated_at": "2026-08-02T21:08:57Z",
-      "comment_body_sha256": "5c55abd7001073869aebefecd32eb2e2bc11f92aee51a21b24db8efb1a0c8582",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108452,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body explicitly says that a redacted after-fix app-server transcript is not attached; add a redacted disableTools: true runtime transcri...; Review finding: [P2] Preserve runtime-plan normalization for empty catalogs — src/agents/runtime-plan/tools.ts:128-129 - [P3] Describe CLI allowlist enforcement accurately — src/s... (sha=57ae64c8ba52eebfdafbe22cfe16ee57d872fdef)",
-      "expected_head_sha": "57ae64c8ba52eebfdafbe22cfe16ee57d872fdef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:18:56.904Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/codex-disabletools-native-surface",
-        "head_sha": "57ae64c8ba52eebfdafbe22cfe16ee57d872fdef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110774:5011854996:2026-08-02T18:51:26Z:clawsweeper_needs_human",
       "comment_id": "5011854996",
@@ -32628,6 +32595,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-08-03T00:44:29Z:clawsweeper_auto_repair",
+      "comment_id": "5160944009",
+      "comment_version_key": "5160944009:2026-08-03T00:44:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118303#issuecomment-5160944009",
+      "comment_created_at": "2026-08-02T23:51:57Z",
+      "comment_updated_at": "2026-08-03T00:44:29Z",
+      "comment_body_sha256": "c6c540b71f3170d2d69ba5c94aa6f99376e6b6131548011350a97a40a032b290",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=35665aed18364f9ad47f0f30cfa38021b2036d45)",
+      "expected_head_sha": "35665aed18364f9ad47f0f30cfa38021b2036d45",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-03T00:45:15.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "35665aed18364f9ad47f0f30cfa38021b2036d45",
+        "cluster_id": "automerge-openclaw-openclaw-118303",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
