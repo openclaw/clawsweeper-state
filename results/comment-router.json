@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T12:38:42.463Z",
+  "updated_at": "2026-08-03T12:39:45.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118378:5162735571:2026-08-03T05:42:13Z:re_review",
-      "comment_id": "5162735571",
-      "comment_version_key": "5162735571:2026-08-03T05:42:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118378#issuecomment-5162735571",
-      "comment_created_at": "2026-08-03T05:42:13Z",
-      "comment_updated_at": "2026-08-03T05:42:13Z",
-      "comment_body_sha256": "f6920f8dd6de91e8453e2a43fbb4b21259a28f45bbe3fe7721572929fd82ca35",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118378,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T05:42:49.890Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/issue-118244",
-        "head_sha": "b02f35756f3ec64998e124ba77ee2a417c35c1ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118510:5162737263:2026-08-03T05:42:31Z:clawsweeper_needs_human",
       "comment_id": "5162737263",
@@ -32473,6 +32426,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T12:38:42.463Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118516:5162833497:2026-08-03T12:38:22Z:clawsweeper_needs_human",
+      "comment_id": "5162833497",
+      "comment_version_key": "5162833497:2026-08-03T12:38:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118516#issuecomment-5162833497",
+      "comment_created_at": "2026-08-03T05:58:12Z",
+      "comment_updated_at": "2026-08-03T12:38:22Z",
+      "comment_body_sha256": "fd6af8ce0a46b9e63fd11e8e6601f95f336955b1986275939e6167bd54cf0b7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently marks the branch dirty, so a rebase may expose integration changes not represented by the reviewed head. (sha=168c5dc762383b301f4d1442bcf20582c28d2b71)",
+      "expected_head_sha": "168c5dc762383b301f4d1442bcf20582c28d2b71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T12:39:45.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extension-security-consistency",
+        "head_sha": "168c5dc762383b301f4d1442bcf20582c28d2b71",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
