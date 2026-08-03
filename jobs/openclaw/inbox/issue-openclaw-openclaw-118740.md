@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the macOS signing owner so `CODESIGN_TIMESTAMP=auto` derives the timestamp decision from the resolved signing certificate type rather than the literal `SIGN_IDENTITY` selector. Preserve explicit `on`/`off` modes and the ad-hoc no-timestamp path. Add focused regression coverage for a Developer ID Application SHA-1 selector and its name form, and stop if the repair would require a new config surface. Do not edit `CHANGELOG.md`.
+Repair the existing macOS signing bug where `CODESIGN_TIMESTAMP=auto` chooses `--timestamp=none` for a hash-pinned Developer ID Application identity. In `scripts/codesign-mac-app.sh`, retain the exact `SIGN_IDENTITY` value for every `codesign --sign` invocation, but determine timestamp eligibility by resolving a SHA-1 identity through `security find-identity -p codesigning -v` and checking the matched certificate display name. Preserve name-form, auto-selected, ad-hoc, and explicit on/off behavior. Add focused regression coverage in `test/scripts/codesign-mac-app.test.ts` using the existing fake-command seam; update `docs/platforms/mac/signing.md` to document hash-form identities. Do not add a config option or fallback path. Do not edit `CHANGELOG.md`. Before opening a PR, establish the failing regression; then run the focused test and, on a real macOS host with a Developer ID hash, package/sign an app and show `codesign -dvv` contains `Timestamp=` with private data redacted.
 
 Likely files:
 
@@ -78,7 +78,8 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs test/scripts/codesign-mac-app.test.ts
-- On a macOS signing host, sign with a Developer ID SHA-1 selector under automatic mode and verify `codesign --display -v` reports `Timestamp=`.
+- On a macOS signing host: `SIGN_IDENTITY=<redacted-SHA-1> CODESIGN_TIMESTAMP=auto scripts/package-mac-app.sh`, then confirm `codesign -dvv dist/OpenClaw.app` includes `Timestamp=`.
+- Review name-form Developer ID, auto-selected identity, ad-hoc signing, and explicit `CODESIGN_TIMESTAMP=on|off` behavior.
 
 ## Operator Prompt
 
