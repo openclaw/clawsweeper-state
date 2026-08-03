@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118372",
+  "mode": "autonomous",
+  "run_id": "30779195329",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30779195329",
+  "head_sha": "fd51157a108041712de66756c2617f7a118068cb",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118372.md",
+  "published_at": "2026-08-03T02:48:25.973Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118372",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118372",
+  "canonical_pr": null,
+  "summary": "#118372 is an open canonical issue on current main. A narrow repair path is available: launchd currently writes gateway stderr to /dev/null while macOS diagnostics intentionally ignore the already-defined supervisor stderr path. Route stderr to the existing gateway error log and include its bounded tail in diagnostics. The reported manual npm-upgrade service-env crash remains unproven because its stack trace was discarded; this repair preserves the evidence needed for any subsequent root-cause fix.",
+  "actions": [
+    {
+      "target": "#118372",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118372",
+      "candidate_fix": null,
+      "reason": "This is the only hydrated cluster item and remains the authoritative report for the macOS launchd diagnostics defect."
+    },
+    {
+      "target": "#118372",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118372",
+      "candidate_fix": null,
+      "reason": "A narrow, non-security repair directly satisfies the actionable stderr-retention request and fixes the diagnostic path that currently discards the only evidence needed to diagnose the broader crash loop."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118372",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118372",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited implementation PR from clawsweeper/issue-openclaw-openclaw-118372; no existing contributor PR is available to repair."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
