@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:46:33.704Z",
+  "updated_at": "2026-08-03T15:47:42.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118641:5165741215:2026-08-03T11:29:15Z:clawsweeper_needs_human",
-      "comment_id": "5165741215",
-      "comment_version_key": "5165741215:2026-08-03T11:29:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118641#issuecomment-5165741215",
-      "comment_created_at": "2026-08-03T11:29:15Z",
-      "comment_updated_at": "2026-08-03T11:29:15Z",
-      "comment_body_sha256": "8f6ba90788bc5ec0bf16fd901e75a640e2ebabeb650fc193c1a54c463ecfc636",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b9b458d8ed76a95a94f5095823610485cf3fad45)",
-      "expected_head_sha": "b9b458d8ed76a95a94f5095823610485cf3fad45",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T11:30:03.071Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-92-memory-lancedb-module-state",
-        "head_sha": "b9b458d8ed76a95a94f5095823610485cf3fad45",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118628:5165531126:2026-08-03T11:29:22Z:clawsweeper_needs_human",
       "comment_id": "5165531126",
@@ -31957,6 +31924,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118681:5168609110:2026-08-03T15:47:09Z:re_review",
+      "comment_id": "5168609110",
+      "comment_version_key": "5168609110:2026-08-03T15:47:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5168609110",
+      "comment_created_at": "2026-08-03T15:47:09Z",
+      "comment_updated_at": "2026-08-03T15:47:09Z",
+      "comment_body_sha256": "62b9c41b9e1cdca80aeef1fea359fbb2223b07893b20ed45fff2dcbfde9ff8c5",
+      "source_delivery_id": "96d92720-8f52-11f1-800f-6559b180255d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118681,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T15:47:40.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reactive-memory-flush-114081",
+        "head_sha": "12183f3286830b4163e77732773d75c3a13fb89c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
