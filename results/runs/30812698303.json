@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118652",
+  "mode": "autonomous",
+  "run_id": "30812698303",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30812698303",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md",
+  "published_at": "2026-08-03T13:13:54.804Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118652",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118652",
+  "canonical_pr": null,
+  "summary": "Issue #118652 is valid on current main dfb13780435f807f6004be5167384bbe6f2fdaf0. The process-wide supervisor retains active and starting subprocesses only in memory, while gateway shutdown drains sessions, plugins, cron, and sockets without terminating that supervisor. A narrow gateway-owned shutdown path can cancel and await all supervised process trees without changing config, persistence, or the security boundary.",
+  "actions": [
+    {
+      "target": "#118652",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "Current main lacks a lifecycle owner that terminates all process-supervisor runs during gateway shutdown or restart."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118652",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "A focused new fix PR is appropriate; no contributor PR exists to repair or replace."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
