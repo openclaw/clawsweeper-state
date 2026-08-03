@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:02:27.270Z",
+  "updated_at": "2026-08-03T05:03:07.288Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118349:5161333114:2026-08-03T01:16:27Z:clawsweeper_needs_human",
-      "comment_id": "5161333114",
-      "comment_version_key": "5161333114:2026-08-03T01:16:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118349#issuecomment-5161333114",
-      "comment_created_at": "2026-08-03T01:16:27Z",
-      "comment_updated_at": "2026-08-03T01:16:27Z",
-      "comment_body_sha256": "e9e8739e586ebc1be4f51da4ba2b7a55f4d5072f308c940dc3404a8f5e6415b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118349,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and CI-style checks, but the supplied evidence contains no after-fix live Telegram run, runtime log, recordin... (sha=bde183586a5f7e7c7d71342ee5987090e2d383b4)",
-      "expected_head_sha": "bde183586a5f7e7c7d71342ee5987090e2d383b4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:17:00.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/partial-sanitize-118027",
-        "head_sha": "bde183586a5f7e7c7d71342ee5987090e2d383b4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1196:5099758281:2026-08-03T01:16:57Z:clawsweeper_auto_repair",
       "comment_id": "5099758281",
@@ -31595,6 +31562,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113980:5162487758:2026-08-03T05:02:29Z:re_review",
+      "comment_id": "5162487758",
+      "comment_version_key": "5162487758:2026-08-03T05:02:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113980#issuecomment-5162487758",
+      "comment_created_at": "2026-08-03T05:02:29Z",
+      "comment_updated_at": "2026-08-03T05:02:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113980,
+      "author": "Linux2010",
+      "author_id": 35169750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T05:03:05.052Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/111854-truncation-placeholder",
+        "head_sha": "d3ff6ea550501a080138b6ae1b40d0b4071f8f9d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
