@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T13:56:56.259Z",
-  "count": 18,
+  "generated_at": "2026-08-03T14:05:51.432Z",
+  "count": 19,
   "summary": {
-    "open_prs": 18,
+    "open_prs": 19,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 18,
+    "needs_checks": 19,
     "needs_review": 0,
-    "needs_merge_preflight": 18,
-    "needs_result_backfill": 4
+    "needs_merge_preflight": 19,
+    "needs_result_backfill": 3
   },
   "dispatch": {
     "enabled": false,
@@ -27,38 +27,96 @@
   },
   "prs": [
     {
-      "number": 118688,
-      "title": "fix(agents): redrive suspended completions after compaction unlock",
-      "url": "https://github.com/openclaw/openclaw/pull/118688",
-      "branch": "clawsweeper/issue-openclaw-openclaw-118625",
-      "head_sha": "64e982af9a5efd85b470e761352f245d1b3af39b",
-      "cluster_id": "issue-openclaw-openclaw-118625",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
-      "updated_at": "2026-08-03T13:56:10Z",
+      "number": 118696,
+      "title": "fix(gateway): terminate supervised subprocesses on shutdown",
+      "url": "https://github.com/openclaw/openclaw/pull/118696",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118652",
+      "head_sha": "6516d910a1365e757acee46c6c5950c3368e3f0b",
+      "cluster_id": "issue-openclaw-openclaw-118652",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md",
+      "updated_at": "2026-08-03T14:03:57Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 131,
+        "total": 130,
         "counts": {
-          "CANCELLED": 7,
+          "CANCELLED": 10,
+          "IN_PROGRESS": 61,
+          "SKIPPED": 38,
+          "SUCCESS": 19,
           "QUEUED": 1,
-          "IN_PROGRESS": 6,
-          "SKIPPED": 41,
-          "SUCCESS": 75,
           "NEUTRAL": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:IN_PROGRESS",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CodeQL / Security High (core-auth-secrets):IN_PROGRESS",
+          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
+          "CodeQL / Security High (mcp-process-tool-boundary):IN_PROGRESS",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
+          "CodeQL / Security High (actions):IN_PROGRESS",
+          "CI / pnpm-store-warmup:IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-fast-max-lines-ratchet:IN_PROGRESS",
+          "CI / checks-fast-bundled-protocol:IN_PROGRESS",
+          "CI / checks-fast-bun-launcher:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (mcp-process-runtime-boundary):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-b:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
           "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
           "CI / checks-node-compact-large-5:IN_PROGRESS",
           "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
           "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS"
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-15:IN_PROGRESS",
+          "CI / checks-node-compact-small-16:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-guards:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-bundled-channel-config-metadata:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-additional-boundaries-a:IN_PROGRESS",
+          "CI / check-additional-boundaries-bcd:IN_PROGRESS",
+          "CI / check-prompt-snapshots:IN_PROGRESS",
+          "CI / check-session-accessor-boundary:IN_PROGRESS",
+          "CI / check-session-transcript-reader-boundary:IN_PROGRESS",
+          "CI / check-sqlite-session-schema-baseline:IN_PROGRESS",
+          "CI / check-plugin-sdk-api-baseline:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS",
+          "CI / checks-windows-node-test:QUEUED"
         ]
       },
       "review_threads": {
@@ -71,12 +129,101 @@
         "count": 0,
         "latest": []
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "30812698303",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30812698303",
+        "cluster_id": "issue-openclaw-openclaw-118652",
+        "published_at": "2026-08-03T13:13:54.804Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118688,
+      "title": "fix(agents): redrive suspended completions after compaction unlock",
+      "url": "https://github.com/openclaw/openclaw/pull/118688",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118625",
+      "head_sha": "64e982af9a5efd85b470e761352f245d1b3af39b",
+      "cluster_id": "issue-openclaw-openclaw-118625",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
+      "updated_at": "2026-08-03T14:02:41Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 142,
+        "counts": {
+          "CANCELLED": 11,
+          "SKIPPED": 45,
+          "SUCCESS": 83,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / checks-node-compact-large-8:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118688#issuecomment-5167284116",
+            "submitted_at": "2026-08-03T13:57:11Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118688#issuecomment-5167305858",
+            "submitted_at": "2026-08-03T13:58:41Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30817235143",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30817235143",
+        "cluster_id": "issue-openclaw-openclaw-118625",
+        "published_at": "2026-08-03T14:05:06.911Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118688",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(agents): redrive suspended completions after compaction unlock",
+          "idempotency_key": null,
+          "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
@@ -88,7 +235,7 @@
       "head_sha": "aeea47146db18a8e17dfcd20bfe96302cd63bb4c",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-03T13:56:16Z",
+      "updated_at": "2026-08-03T13:56:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -118,13 +265,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167187700",
             "submitted_at": "2026-08-03T13:50:07Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167221362",
+            "submitted_at": "2026-08-03T13:52:52Z"
           }
         ]
       },
@@ -219,29 +372,56 @@
       "title": "fix(workboard): reconcile terminal subagent runs",
       "url": "https://github.com/openclaw/openclaw/pull/118679",
       "branch": "clawsweeper/issue-openclaw-openclaw-118669",
-      "head_sha": "694b04c32abc00cdf7b860aea8a660feab50e12a",
+      "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
       "cluster_id": "issue-openclaw-openclaw-118669",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118669.md",
-      "updated_at": "2026-08-03T13:54:28Z",
+      "updated_at": "2026-08-03T14:05:17Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 109,
         "counts": {
-          "CANCELLED": 15,
-          "SKIPPED": 45,
-          "SUCCESS": 72
+          "CANCELLED": 1,
+          "SUCCESS": 37,
+          "SKIPPED": 39,
+          "IN_PROGRESS": 32
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -269,8 +449,8 @@
       },
       "latest_record": null,
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / build-artifacts:IN_PROGRESS; CI / checks-fast-contracts-channels-a:IN_PROGRESS",
         "needs_merge_preflight",
         "needs_result_backfill"
       ],

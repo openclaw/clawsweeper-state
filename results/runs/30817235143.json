@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118625",
+  "mode": "autonomous",
+  "run_id": "30817235143",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30817235143",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
+  "published_at": "2026-08-03T14:05:06.911Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118625",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118625",
+  "canonical_pr": null,
+  "summary": "Verified on current main (096c929ecf6ec2df9ec2b3a959799807b0442bdc): successful required subagent completions retain a durable suspended payload after their delivery deadline, but resumeSubagentRun deliberately returns for suspended entries and the sweeper only discards them after retention. Compaction releases the conflicting session lock without redriving those same-requester delivery obligations. A narrow new PR should redrive only expiry-suspended successful completions for the compacted requester after lock release, reusing the existing bounded generation-based retry path.",
+  "actions": [
+    {
+      "target": "#118625",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118625",
+      "candidate_fix": null,
+      "reason": "The issue remains valid on current main and has a narrow owner-boundary repair path; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118625",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118625",
+      "candidate_fix": null,
+      "reason": "Create the one narrow credited implementation artifact required by the issue lane."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118625",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118625",
+      "candidate_fix": null,
+      "reason": "Job permits one new fix PR and forbids merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118688",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118625",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118688",
+      "commit": "64e982af9a5efd85b470e761352f245d1b3af39b",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118625",
+      "pr": "https://github.com/openclaw/openclaw/pull/118688",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118688",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118688",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): redrive suspended completions after compaction unlock",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
