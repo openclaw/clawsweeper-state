@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T11:45:22.827Z",
+  "generated_at": "2026-08-03T12:23:17.812Z",
   "count": 14,
   "summary": {
     "open_prs": 14,
@@ -27,35 +27,31 @@
   },
   "prs": [
     {
-      "number": 118599,
-      "title": "fix(gateway): coordinate singleton lock through shared state",
-      "url": "https://github.com/openclaw/openclaw/pull/118599",
-      "branch": "clawsweeper/issue-openclaw-openclaw-117635",
-      "head_sha": "94013261cfb9b52626aad14836dfaaea7b37500c",
-      "cluster_id": "issue-openclaw-openclaw-117635",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117635.md",
-      "updated_at": "2026-08-03T10:44:37Z",
+      "number": 118656,
+      "title": "fix(nextcloud-talk): repump independent room lanes during delivery",
+      "url": "https://github.com/openclaw/openclaw/pull/118656",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118649",
+      "head_sha": "9e65506c8e31805162bbfd0c35dfc3683300f108",
+      "cluster_id": "issue-openclaw-openclaw-118649",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118649.md",
+      "updated_at": "2026-08-03T12:19:34Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 140,
+        "total": 112,
         "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 43,
-          "SUCCESS": 82,
-          "FAILURE": 1,
+          "CANCELLED": 11,
+          "SKIPPED": 47,
+          "SUCCESS": 53,
           "NEUTRAL": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Workflow Sanity / actionlint:FAILURE"
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -70,8 +66,93 @@
           {
             "source": "comment",
             "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118656#issuecomment-5166210397",
+            "submitted_at": "2026-08-03T12:18:33Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30811151078",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30811151078",
+        "cluster_id": "issue-openclaw-openclaw-118649",
+        "published_at": "2026-08-03T12:21:22.646Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118656",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(nextcloud-talk): repump independent room lanes during delivery",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118599,
+      "title": "fix(gateway): coordinate singleton lock through shared state",
+      "url": "https://github.com/openclaw/openclaw/pull/118599",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117635",
+      "head_sha": "7ef75093d737ffd994fbfa3638b6a9c64be93392",
+      "cluster_id": "issue-openclaw-openclaw-117635",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117635.md",
+      "updated_at": "2026-08-03T12:21:29Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 123,
+        "counts": {
+          "CANCELLED": 2,
+          "QUEUED": 1,
+          "IN_PROGRESS": 5,
+          "SKIPPED": 39,
+          "SUCCESS": 75,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:QUEUED",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/118599#issuecomment-5164364532",
             "submitted_at": "2026-08-03T09:04:36Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118599#issuecomment-5165342470",
+            "submitted_at": "2026-08-03T10:44:37Z"
           }
         ]
       },
@@ -85,7 +166,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:QUEUED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -380,89 +461,6 @@
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight",
         "needs_result_backfill"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 118055,
-      "title": "fix(line): clear default access token when removing account",
-      "url": "https://github.com/openclaw/openclaw/pull/118055",
-      "branch": "clawsweeper/issue-openclaw-openclaw-118039",
-      "head_sha": "49483896a05b283075f6d64bb3d08758b0d8b74b",
-      "cluster_id": "issue-openclaw-openclaw-118039",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118039.md",
-      "updated_at": "2026-08-02T21:52:54Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 111,
-        "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 47,
-          "SUCCESS": 50,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118055#issuecomment-5159309049",
-            "submitted_at": "2026-08-02T16:41:41Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118055#issuecomment-5159316926",
-            "submitted_at": "2026-08-02T16:43:11Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30756285434",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30756285434",
-        "cluster_id": "issue-openclaw-openclaw-118039",
-        "published_at": "2026-08-02T16:48:54.125Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#118055",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(line): clear default access token when removing account",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },

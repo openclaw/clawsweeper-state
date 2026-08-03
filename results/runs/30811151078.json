@@ -1,0 +1,135 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118649",
+  "mode": "autonomous",
+  "run_id": "30811151078",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30811151078",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118649.md",
+  "published_at": "2026-08-03T12:21:22.646Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118649",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118649",
+  "canonical_pr": null,
+  "summary": "Latest main at 8895b0c28858caf9c45f4924bc27db281f672522 still reproduces the source-level scheduling defect: Nextcloud Talk explicitly enables full delivery-idle repumping, which makes a running room A delivery block the next drain cycle and prevents an independent room B claim. The repair is narrow and has an executable artifact, but this worker checkout is read-only, so it cannot add the required failing regression, patch the branch, or run focused validation.",
+  "actions": [
+    {
+      "target": "#111186",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only; the Nextcloud-specific override remains on current main."
+    },
+    {
+      "target": "#111283",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and related by the shared ingress scheduling family, not a duplicate of the Nextcloud report."
+    },
+    {
+      "target": "#114184",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Same durable-ingress area, but its lane identity and migration contract are independent."
+    },
+    {
+      "target": "#118649",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118649",
+      "candidate_fix": null,
+      "reason": "Bug remains valid on latest main; implementation is blocked only by the immutable checkout, not by product or technical ambiguity."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118649",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118649",
+      "candidate_fix": null,
+      "reason": "A new narrow fix PR is appropriate once a writable executor checks out the requested branch."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118656",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118649",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118656",
+      "commit": "9e65506c8e31805162bbfd0c35dfc3683300f108",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118649",
+      "pr": "https://github.com/openclaw/openclaw/pull/118656",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118656",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118656",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(nextcloud-talk): repump independent room lanes during delivery",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
