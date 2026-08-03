@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118740"
 mode: "autonomous"
-run_id: "30839805700"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30839805700"
+run_id: "30844340050"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30844340050"
 head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-03T18:25:23.534Z"
+result_status: "planned"
+published_at: "2026-08-03T19:21:31.218Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30839805700](https://github.com/openclaw/clawsweeper/actions/runs/30839805700)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30844340050](https://github.com/openclaw/clawsweeper/actions/runs/30844340050)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 ## Summary
 
-Current main at a67c52611e5768ffe89dc2c4eea0cea0e26e34e6 still has the reported bug: scripts/codesign-mac-app.sh selects --timestamp=none in auto mode by checking the supplied SIGN_IDENTITY string for “Developer ID Application”. A SHA-1-pinned identity cannot satisfy that check. The repair is narrow and specified below, but this checkout is read-only and has no installed dependencies, so no branch change, failing regression, focused test, or macOS artifact proof can be produced in this worker.
+#118740 remains the open canonical bug. Current main cd42cb77033265b3cc63846e2391f77366f356eb still bases CODESIGN_TIMESTAMP=auto on the literal SIGN_IDENTITY string, so a SHA-1-pinned Developer ID Application identity receives --timestamp=none. Plan one narrow non-security repair PR; no linked candidate PR exists.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main at a67c52611e5768ffe89dc2c4eea0cea0e26e34e6 still has the reported 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118740 | fix_needed | blocked | canonical | Implementation is blocked solely by the read-only worker checkout and unavailable dependency installation, not by product, security, or repair-scope ambiguity. |
-| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | A narrow repair artifact is ready for a writable macOS-capable executor. |
+| #118740 | fix_needed | planned | canonical | The source-proven defect remains on current main and has a narrow owner-boundary repair path. |
+| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | The permitted canonical path is a new, focused implementation PR from clawsweeper/issue-openclaw-openclaw-118740. |
 
 ## Needs Human
 

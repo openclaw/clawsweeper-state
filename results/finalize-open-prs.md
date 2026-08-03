@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T18:45:56.805Z
+Generated: 2026-08-03T19:24:01.515Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118807](https://github.com/openclaw/openclaw/pull/118807) | fix(reply): defer steer messages while embedded compaction runs | issue-openclaw-openclaw-118771 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:39 SUCCESS:79 FAILURE:2 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118807](https://github.com/openclaw/openclaw/pull/118807) | fix(reply): defer steer messages while embedded compaction runs | issue-openclaw-openclaw-118771 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:42 SUCCESS:82 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | issue-openclaw-openclaw-118776 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:44 SUCCESS:81 FAILURE:2 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118796](https://github.com/openclaw/openclaw/pull/118796) | fix(session): require a real context snapshot for CLI usage | issue-openclaw-openclaw-118772 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:43 SUCCESS:83 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118751](https://github.com/openclaw/openclaw/pull/118751) | fix(agents): reject failed embedded image hydration | issue-openclaw-openclaw-102190 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:45 SUCCESS:84 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
