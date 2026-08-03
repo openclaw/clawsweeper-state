@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-118796",
+  "mode": "autonomous",
+  "run_id": "30845321618",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30845321618",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118796.md",
+  "published_at": "2026-08-03T20:04:29.072Z",
+  "canonical": "#118796",
+  "canonical_issue": "#118772",
+  "canonical_pr": "#118796",
+  "summary": "#118796 is the narrow canonical repair path for #118772, but its hydrated head is behind current main and has unresolved `security-fast` and `openclaw/ci-gate` failures. Repair the writable same-repository contributor branch, preserve the issue attribution, rebase it on `c12579ae57debb32c9ab5a2b7f0d0cce400f4bab`, and rerun the exact-head review and validation loop. Merge and close remain disabled by this job.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/118772",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#118796",
+      "candidate_fix": "#118796",
+      "reason": "Keep the issue open as the root-cause and validation thread while the adopted PR is repaired; closing is blocked by job policy and by the candidate's failing checks."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/118796",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118796",
+      "candidate_fix": "#118796",
+      "reason": "The same-repository branch is writable and the PR is a focused 3-file repair. Its missing exact-head/base refresh and failing check details are repair tasks, not reasons to replace or merge the branch."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

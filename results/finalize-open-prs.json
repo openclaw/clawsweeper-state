@@ -2,14 +2,14 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T19:41:45.648Z",
+  "generated_at": "2026-08-03T20:05:04.153Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
-    "mergeability_unknown": 1,
+    "mergeability_unknown": 0,
     "needs_checks": 16,
     "needs_review": 0,
     "needs_merge_preflight": 16,
@@ -227,20 +227,12 @@
         ]
       },
       "latest_record": {
-        "run_id": "30840158811",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30840158811",
+        "run_id": "30845321618",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30845321618",
         "cluster_id": "automerge-openclaw-openclaw-118796",
-        "published_at": "2026-08-03T18:43:30.288Z",
-        "workflow_conclusion": "failure",
-        "apply_action": {
-          "target": "#118796",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#118796",
-          "candidate_fix": "#118796",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
-        }
+        "published_at": "2026-08-03T20:04:29.072Z",
+        "workflow_conclusion": "success",
+        "apply_action": null
       },
       "blockers": [
         "needs_merge_state:BEHIND",
@@ -258,8 +250,8 @@
       "cluster_id": "issue-openclaw-openclaw-102190",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-102190.md",
       "updated_at": "2026-08-03T18:13:44Z",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -319,12 +311,11 @@
         }
       },
       "blockers": [
-        "mergeability_unknown",
-        "merge_state_unknown",
+        "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 118721,

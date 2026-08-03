@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118796"
 mode: "autonomous"
-run_id: "30840158811"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30840158811"
+run_id: "30845321618"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30845321618"
 head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-03T18:43:30.288Z"
+published_at: "2026-08-03T20:04:29.072Z"
 canonical: "#118796"
-canonical_issue: null
+canonical_issue: "#118772"
 canonical_pr: "#118796"
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30840158811](https://github.com/openclaw/clawsweeper/actions/runs/30840158811)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30845321618](https://github.com/openclaw/clawsweeper/actions/runs/30845321618)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #118796
 
 ## Summary
 
-Make PR #118796 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#118796 is the narrow canonical repair path for #118772, but its hydrated head is behind current main and has unresolved `security-fast` and `openclaw/ci-gate` failures. Repair the writable same-repository contributor branch, preserve the issue attribution, rebase it on `c12579ae57debb32c9ab5a2b7f0d0cce400f4bab`, and rerun the exact-head review and validation loop. Merge and close remain disabled by this job.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Make PR #118796 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118796 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/issues/118772 | keep_related | planned | related | Keep the issue open as the root-cause and validation thread while the adopted PR is repaired; closing is blocked by job policy and by the candidate's failing checks. |
+| https://github.com/openclaw/openclaw/pull/118796 | fix_needed | planned | canonical | The same-repository branch is writable and the PR is a focused 3-file repair. Its missing exact-head/base refresh and failing check details are repair tasks, not reasons to replace or merge the branch. |
 
 ## Needs Human
 
