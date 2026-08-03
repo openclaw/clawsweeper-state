@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:49:37.812Z",
+  "updated_at": "2026-08-03T05:49:45.252Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118361:5161527102:2026-08-03T01:55:27Z:clawsweeper_needs_human",
-      "comment_id": "5161527102",
-      "comment_version_key": "5161527102:2026-08-03T01:55:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118361#issuecomment-5161527102",
-      "comment_created_at": "2026-08-03T01:55:27Z",
-      "comment_updated_at": "2026-08-03T01:55:27Z",
-      "comment_body_sha256": "21b7bfddcfa35d41fbfaa07656f418f3e1dedcd06d309b5eecbaefa1a646946f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains after source review; let the normal exact-head CI and merge gates evaluate this bot-generated patch. (sha=2532feb490cb7b4e05df868ec4296a0364484b2a)",
-      "expected_head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T01:56:13.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-116747",
-        "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-        "cluster_id": "issue-openclaw-openclaw-116747",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-08-03T01:59:47Z:clawsweeper_needs_human",
       "comment_id": "5120409280",
@@ -31619,6 +31572,39 @@
         "kind": "pull_request",
         "branch": "codex/qa0803-openai-tts-model",
         "head_sha": "ffef6e9187d8dc099ee53abd728774812887c007",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118498:5162613915:2026-08-03T05:48:01Z:clawsweeper_auto_repair",
+      "comment_id": "5162613915",
+      "comment_version_key": "5162613915:2026-08-03T05:48:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118498#issuecomment-5162613915",
+      "comment_created_at": "2026-08-03T05:22:42Z",
+      "comment_updated_at": "2026-08-03T05:48:01Z",
+      "comment_body_sha256": "83dad0487c1095b016225a462c5dbb03b2e83ef08fbb1ceeb4c3b949208ef63b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118498,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9330d7c384c14d704e2695e8216df1debdc4463f)",
+      "expected_head_sha": "9330d7c384c14d704e2695e8216df1debdc4463f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T05:49:45.252Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fast-context-session-authorization",
+        "head_sha": "9330d7c384c14d704e2695e8216df1debdc4463f",
         "cluster_id": null,
         "job_path": null
       }
