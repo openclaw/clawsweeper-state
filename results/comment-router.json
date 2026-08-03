@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:12:32.709Z",
+  "updated_at": "2026-08-03T22:12:32.733Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118811:5169897360:2026-08-03T17:53:21Z:re_review",
-      "comment_id": "5169897360",
-      "comment_version_key": "5169897360:2026-08-03T17:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118811#issuecomment-5169897360",
-      "comment_created_at": "2026-08-03T17:53:21Z",
-      "comment_updated_at": "2026-08-03T17:53:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118811,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T18:11:53.748Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-setup-inference-tail",
-        "head_sha": "0c246914047c4a01ce825ffaabe5a3f9b61559f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117174:5170089285:2026-08-03T18:13:23Z:re_review",
       "comment_id": "5170089285",
@@ -33067,6 +33020,39 @@
         "kind": "pull_request",
         "branch": "fix/context-visibility-schema-parity",
         "head_sha": "3bf1ae3d835c01e3b432f9c062331db6f9ffaa5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-03T22:11:49Z:clawsweeper_needs_human",
+      "comment_id": "5156335270",
+      "comment_version_key": "5156335270:2026-08-03T22:11:49Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5156335270",
+      "comment_created_at": "2026-08-02T07:51:03Z",
+      "comment_updated_at": "2026-08-03T22:11:49Z",
+      "comment_body_sha256": "1ec4e8e50a5b9fd58055e7434c763eef592e619e4b464cc407f9d9ed1cae0042",
+      "repo": "openclaw/lobster",
+      "issue_number": 128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the branch has no actionable review findings, sufficient real-behavior proof, and awaits ordinary maintainer merge review. (sha=75b859e229c2e60ed0ef68b9a51b83271579e306)",
+      "expected_head_sha": "75b859e229c2e60ed0ef68b9a51b83271579e306",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T22:12:32.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-validation-retry-off-by-one",
+        "head_sha": "75b859e229c2e60ed0ef68b9a51b83271579e306",
         "cluster_id": null,
         "job_path": null
       }
