@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:20:59.039Z",
+  "updated_at": "2026-08-03T16:21:19.140Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T22:58:42Z:clawsweeper_needs_human",
-      "comment_id": "5146046509",
-      "comment_version_key": "5146046509:2026-08-01T22:58:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116976#issuecomment-5146046509",
-      "comment_created_at": "2026-07-31T18:08:22Z",
-      "comment_updated_at": "2026-08-01T22:58:42Z",
-      "comment_body_sha256": "09946a1c93428e30a7a8828185ed3d425c815e51b3cdac604de7916fe0bfa09e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Document \\allowedHostnames\\ as exact host entries (P2)** - allowedHostnames is checked by exact hostname membership in src/infra/net/ssrf.ts, so *.example.com does not permit assets.example.com. Wildcard matchin...; Review finding: [P2] Document allowedHostnames as exact host entries — docs/gateway/security/index.md:494 - [low] Avoid unsupported wildcard SSRF guidance — docs/gateway/security/... (sha=4a9551f1bc141b8b4fa513b6610cd69300da1297)",
-      "expected_head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:53:09.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-114611",
-        "head_sha": "4a9551f1bc141b8b4fa513b6610cd69300da1297",
-        "cluster_id": "automerge-openclaw-openclaw-116976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-116976.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118203:5160338335:2026-08-03T12:50:01Z:clawsweeper_needs_human",
       "comment_id": "5160338335",
@@ -31808,6 +31775,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117213:5149865878:2026-08-03T16:20:25Z:clawsweeper_auto_repair",
+      "comment_id": "5149865878",
+      "comment_version_key": "5149865878:2026-08-03T16:20:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5149865878",
+      "comment_created_at": "2026-08-01T04:50:44Z",
+      "comment_updated_at": "2026-08-03T16:20:25Z",
+      "comment_body_sha256": "7e4f360c418bc23a0f5d25067cefc7d2a3754d2ebdcecea96c044e14da60c44a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=46443fc1a6e19bee974d6ec456f1c8e9254b9255)",
+      "expected_head_sha": "46443fc1a6e19bee974d6ec456f1c8e9254b9255",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T16:21:19.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-policy-refresh-rebuild-89606",
+        "head_sha": "46443fc1a6e19bee974d6ec456f1c8e9254b9255",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
