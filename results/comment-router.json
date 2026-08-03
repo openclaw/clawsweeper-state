@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:22:30.383Z",
+  "updated_at": "2026-08-03T21:22:31.255Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2600:5169687107:2026-08-03T17:32:52Z:re_review",
-      "comment_id": "5169687107",
-      "comment_version_key": "5169687107:2026-08-03T17:32:52Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2600#issuecomment-5169687107",
-      "comment_created_at": "2026-08-03T17:32:52Z",
-      "comment_updated_at": "2026-08-03T17:32:52Z",
-      "comment_body_sha256": "28f10c8a8cab84731fa8ef6e10b89f6d5dbe37b5c70cd1045e3c9c17a7a340c8",
-      "source_delivery_id": "5b6ce960-8f61-11f1-853e-382ca75acdc7",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2600,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T17:33:27.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-30day-window-2592",
-        "head_sha": "cbbc44d6067c1d8a4daa159d818d321382af38bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118758:5169118330:2026-08-03T17:33:20Z:clawsweeper_auto_repair",
       "comment_id": "5169118330",
@@ -32886,6 +32838,39 @@
         "kind": "pull_request",
         "branch": "qa-media-reference-intake-20260803",
         "head_sha": "0ae77a91b24a08153559e4ce6909726c892c745f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116797:5142342995:2026-08-03T21:20:56Z:clawsweeper_auto_repair",
+      "comment_id": "5142342995",
+      "comment_version_key": "5142342995:2026-08-03T21:20:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116797#issuecomment-5142342995",
+      "comment_created_at": "2026-07-31T11:25:46Z",
+      "comment_updated_at": "2026-08-03T21:20:56Z",
+      "comment_body_sha256": "268e30b317c78b9e560a30f5d338a6cf1b7a39bad34ed87d0a27814442d02db9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116797,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0b6c57f72e232e49e7b882c1ed7482219479ee94)",
+      "expected_head_sha": "0b6c57f72e232e49e7b882c1ed7482219479ee94",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T21:22:31.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-exec-slow-host-timeout-and-cleanup",
+        "head_sha": "0b6c57f72e232e49e7b882c1ed7482219479ee94",
         "cluster_id": null,
         "job_path": null
       }
