@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:55:51.896Z",
+  "updated_at": "2026-08-03T06:56:37.140Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110692:5161989083:2026-08-03T03:28:15Z:re_review",
-      "comment_id": "5161989083",
-      "comment_version_key": "5161989083:2026-08-03T03:28:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110692#issuecomment-5161989083",
-      "comment_created_at": "2026-08-03T03:28:15Z",
-      "comment_updated_at": "2026-08-03T03:28:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110692,
-      "author": "lsr911",
-      "author_id": 18230762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T03:28:52.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-loopback-ws-ip-guard",
-        "head_sha": "021fa71b25924e8b9a7d6956fcb00484a9991f83",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110692:5161994191:2026-08-03T03:29:18Z:re_review",
       "comment_id": "5161994191",
@@ -31733,6 +31686,39 @@
         "kind": "pull_request",
         "branch": "codex/clawsweeper-legacy-terminal-receipts",
         "head_sha": "513d29088c5deab30a73202ae8c6721ec3ec483e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118402:5162116385:2026-08-03T06:55:37Z:clawsweeper_needs_human",
+      "comment_id": "5162116385",
+      "comment_version_key": "5162116385:2026-08-03T06:55:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118402#issuecomment-5162116385",
+      "comment_created_at": "2026-08-03T03:55:14Z",
+      "comment_updated_at": "2026-08-03T06:55:37Z",
+      "comment_body_sha256": "80e4479f23672cfc871524b34ac2e49fe480d8d73a3ac6622a1dc15ed0812e79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the default availability guard: existing same-command retry loops whose output differs only in the selected timestamp, counter, duration, or process-id spans will now... (sha=941e90a7a311a1d05e1c04f589e036f6f3905d55)",
+      "expected_head_sha": "941e90a7a311a1d05e1c04f589e036f6f3905d55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T06:56:37.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-failure-loop-streak",
+        "head_sha": "941e90a7a311a1d05e1c04f589e036f6f3905d55",
         "cluster_id": null,
         "job_path": null
       }
