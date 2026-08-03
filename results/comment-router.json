@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:19:18.247Z",
+  "updated_at": "2026-08-03T19:19:23.974Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118683:5168302265:2026-08-03T15:20:28Z:re_review",
-      "comment_id": "5168302265",
-      "comment_version_key": "5168302265:2026-08-03T15:20:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118683#issuecomment-5168302265",
-      "comment_created_at": "2026-08-03T15:20:28Z",
-      "comment_updated_at": "2026-08-03T15:20:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "dcab9750-8f4e-11f1-80c0-c0f0974dcfb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118683,
-      "author": "xzh-icenter",
-      "author_id": 279172199,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T15:21:15.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/link-understanding-cancel-body",
-        "head_sha": "427e0ec5f3a043d8e36e85fd9d5b612a1e1f5e25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111759:5022010262:2026-08-03T15:12:45Z:clawsweeper_auto_repair",
       "comment_id": "5022010262",
@@ -32823,6 +32775,39 @@
         "kind": "pull_request",
         "branch": "fix/workflow-cost-skip-cached-replays",
         "head_sha": "f416939522c3e0a504e8860ca1a2ad866c6c3e0e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:56:5164173661:2026-08-03T19:18:44Z:clawsweeper_needs_human",
+      "comment_id": "5164173661",
+      "comment_version_key": "5164173661:2026-08-03T19:18:44Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/56#issuecomment-5164173661",
+      "comment_created_at": "2026-08-03T08:42:51Z",
+      "comment_updated_at": "2026-08-03T19:18:44Z",
+      "comment_body_sha256": "47595d7595f75523d4f5df223b081745cf90361b0ca072b1e202ab47a8001e61",
+      "repo": "openclaw/carapace",
+      "issue_number": 56,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the third-party CodeQL action revision and therefore its bundled analysis behavior; the action is still SHA-pinned and the PR checks passed, but the workflow will exec... (sha=03bb5e4aede97495e8875a4946b8e70dedabed19)",
+      "expected_head_sha": "03bb5e4aede97495e8875a4946b8e70dedabed19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:19:23.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-ce612e0709",
+        "head_sha": "03bb5e4aede97495e8875a4946b8e70dedabed19",
         "cluster_id": null,
         "job_path": null
       }
