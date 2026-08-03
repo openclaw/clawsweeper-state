@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T17:16:03.522Z",
-  "count": 19,
+  "generated_at": "2026-08-03T17:38:37.699Z",
+  "count": 20,
   "summary": {
-    "open_prs": 19,
+    "open_prs": 20,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 19,
+    "needs_checks": 20,
     "needs_review": 0,
-    "needs_merge_preflight": 19,
-    "needs_result_backfill": 3
+    "needs_merge_preflight": 20,
+    "needs_result_backfill": 4
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,66 @@
   },
   "prs": [
     {
+      "number": 118796,
+      "title": "fix(session): require a real context snapshot for CLI usage",
+      "url": "https://github.com/openclaw/openclaw/pull/118796",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118772",
+      "head_sha": "89a7dbd93c9c3548e578f52b750d269bd5528dc8",
+      "cluster_id": "issue-openclaw-openclaw-118772",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118772.md",
+      "updated_at": "2026-08-03T17:32:47Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 128,
+        "counts": {
+          "CANCELLED": 8,
+          "SKIPPED": 39,
+          "SUCCESS": 69,
+          "FAILURE": 1,
+          "IN_PROGRESS": 10,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / security-fast:FAILURE",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 118751,
       "title": "fix(agents): reject failed embedded image hydration",
       "url": "https://github.com/openclaw/openclaw/pull/118751",
@@ -34,7 +94,7 @@
       "head_sha": "7692569535418edbce6d1c57acc0777df543c4f3",
       "cluster_id": "issue-openclaw-openclaw-102190",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-102190.md",
-      "updated_at": "2026-08-03T16:18:49Z",
+      "updated_at": "2026-08-03T17:34:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
