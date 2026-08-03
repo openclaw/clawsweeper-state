@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:29:15.489Z",
+  "updated_at": "2026-08-03T06:31:20.397Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113567:5077709142:2026-08-03T01:50:27Z:clawsweeper_needs_human",
-      "comment_id": "5077709142",
-      "comment_version_key": "5077709142:2026-08-03T01:50:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113567#issuecomment-5077709142",
-      "comment_created_at": "2026-07-25T08:29:52Z",
-      "comment_updated_at": "2026-08-03T01:50:27Z",
-      "comment_body_sha256": "08b43159028d2ba7c62dffb1191c7017f7693cdf512f0bed80fa4a5244de24e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113567,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains a credible redacted terminal transcript for the earlier Doctor path, but commit d593b0271be9984fdba3ac0b20342b586d3cd0...; Review finding: [P1] Harden snapshot creation before writing sensitive state — src/state/openclaw-state-pre-migration-backup.ts:132-142 - [medium] Snapshot is written before file... (sha=d84e472a21f9172b4b94f947f4b746115c865311)",
-      "expected_head_sha": "d84e472a21f9172b4b94f947f4b746115c865311",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T02:50:31.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/state-pre-migration-backup",
-        "head_sha": "d84e472a21f9172b4b94f947f4b746115c865311",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113207:5078106676:2026-08-03T02:46:02Z:clawsweeper_needs_human",
       "comment_id": "5078106676",
@@ -31830,6 +31797,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114287:5087384083:2026-08-03T06:30:45Z:clawsweeper_auto_repair",
+      "comment_id": "5087384083",
+      "comment_version_key": "5087384083:2026-08-03T06:30:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114287#issuecomment-5087384083",
+      "comment_created_at": "2026-07-27T04:49:24Z",
+      "comment_updated_at": "2026-08-03T06:30:45Z",
+      "comment_body_sha256": "0512711d19e9ea6283d481f4d3143c42fb4547f8347afa90975afa06ad2c91ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114287,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=03c094b08e54f14cd98c82afd4cd786c07d1a944)",
+      "expected_head_sha": "03c094b08e54f14cd98c82afd4cd786c07d1a944",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T06:31:20.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/publication-security-preflight",
+        "head_sha": "03c094b08e54f14cd98c82afd4cd786c07d1a944",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
