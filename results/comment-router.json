@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:15:02.751Z",
+  "updated_at": "2026-08-03T01:15:15.980Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117412:5160456623:2026-08-02T21:37:32Z:re_review",
-      "comment_id": "5160456623",
-      "comment_version_key": "5160456623:2026-08-02T21:37:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117412#issuecomment-5160456623",
-      "comment_created_at": "2026-08-02T21:37:32Z",
-      "comment_updated_at": "2026-08-02T21:37:32Z",
-      "comment_body_sha256": "6dd186331e722704ba6368e2089e70c9e36e942d85c46369b7172ed31acf334e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117412,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T21:38:07.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/goal100k-subagent-sweeper-0801-2d45",
-        "head_sha": "d05acd9b9959f92ae66a19ded62b59ed8fffae8c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111545:5017907509:2026-07-20T00:23:38Z:re_review",
       "comment_id": "5017907509",
@@ -32521,6 +32474,39 @@
         "kind": "pull_request",
         "branch": "fix/send-file-store-warnings",
         "head_sha": "dbabddc7b9d8580ad51640b8cee80417c619e92a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-03T01:07:19Z:clawsweeper_auto_repair",
+      "comment_id": "4854073498",
+      "comment_version_key": "4854073498:2026-08-03T01:07:19Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
+      "comment_created_at": "2026-07-01T11:37:33Z",
+      "comment_updated_at": "2026-08-03T01:07:19Z",
+      "comment_body_sha256": "78d5184dbc42cceab05d2e8d4477772b2f7b6c7026f6f091550809137547f49b",
+      "repo": "openclaw/clawscan",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3db07fe55342a6b9ef14a15d7565daa79a2bae83)",
+      "expected_head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T01:15:15.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/runtime-tool-updates",
+        "head_sha": "3db07fe55342a6b9ef14a15d7565daa79a2bae83",
         "cluster_id": null,
         "job_path": null
       }
