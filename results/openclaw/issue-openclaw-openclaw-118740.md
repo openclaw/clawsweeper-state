@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118740"
 mode: "autonomous"
-run_id: "30831669076"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30831669076"
+run_id: "30830387469"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30830387469"
 head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-03T16:34:48.527Z"
+result_status: "blocked"
+published_at: "2026-08-03T16:56:09.465Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30831669076](https://github.com/openclaw/clawsweeper/actions/runs/30831669076)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30830387469](https://github.com/openclaw/clawsweeper/actions/runs/30830387469)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 ## Summary
 
-#118740 remains a current-main, non-security macOS signing bug. The canonical fix is a narrow new PR that resolves hash-form identities only for automatic timestamp eligibility while preserving the exact supplied hash for every codesign invocation.
+#118740 is a current-main, non-security signing bug with a narrow repair path. The provided checkout is read-only, so no regression, patch, branch update, or PR can be produced here; the fix artifact is ready for an executor with a writable macOS-capable checkout.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118740 | fix_needed | planned | canonical | The issue is source-reproducible on the supplied current main SHA and has a bounded owner-local repair. |
-| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | A new focused fix PR is appropriate and permitted; no contributor PR exists to repair or replace. |
+| #118740 | fix_needed | planned | canonical | The defect is source-reproducible on current main and requires a narrow code/test/docs repair. |
+| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | blocked | canonical | Implementation is blocked only by the read-only Linux checkout and missing dependencies; a writable executor should apply the narrow artifact below. |
 
 ## Needs Human
 

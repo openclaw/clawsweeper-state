@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118740",
+  "mode": "autonomous",
+  "run_id": "30830387469",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30830387469",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118740.md",
+  "published_at": "2026-08-03T16:56:09.465Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_pr": null,
+  "summary": "#118740 is a current-main, non-security signing bug with a narrow repair path. The provided checkout is read-only, so no regression, patch, branch update, or PR can be produced here; the fix artifact is ready for an executor with a writable macOS-capable checkout.",
+  "actions": [
+    {
+      "target": "#118740",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "The defect is source-reproducible on current main and requires a narrow code/test/docs repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118740",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only Linux checkout and missing dependencies; a writable executor should apply the narrow artifact below."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
