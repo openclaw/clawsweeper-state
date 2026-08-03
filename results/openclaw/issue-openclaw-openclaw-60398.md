@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-60398"
-mode: "plan"
-run_id: "30790463410"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30790463410"
+mode: "autonomous"
+run_id: "30789450598"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30789450598"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-03T08:05:13.320Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-03T06:19:11.836Z"
 canonical: "https://github.com/openclaw/openclaw/issues/60398"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/60398"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30790463410](https://github.com/openclaw/clawsweeper/actions/runs/30790463410)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30789450598](https://github.com/openclaw/clawsweeper/actions/runs/30789450598)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/60398
 
 ## Summary
 
-Keep #60398 as the canonical open bug and prepare one narrow implementation PR plan. The hydrated evidence distinguishes the unresolved boot-volume plist problem from the merged env-wrapper fix in #89967; closed #90923 is historical source evidence only.
+#60398 remains an open, non-security canonical bug on main d26dcc02c5e9c67a19b07f0739f9c82a1875224e. A lifecycle-wide boot-volume LaunchAgent resolver is still required, but this worker has a read-only checkout and cannot create or validate the required branch delta.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Keep #60398 as the canonical open bug and prepare one narrow implementation PR p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #60398 | fix_needed | planned | canonical | Plan a narrow existing-behavior repair; no configuration, dependency, or product-policy change is required. |
-| cluster:issue-openclaw-openclaw-60398 | build_fix_artifact | planned |  | Prepare one new credited PR from clawsweeper/issue-openclaw-openclaw-60398. |
+| #60398 | fix_needed | planned | canonical | A narrow existing-behavior repair is warranted with no new config or policy surface. |
+| cluster:issue-openclaw-openclaw-60398 | build_fix_artifact | planned |  | Open or update the single allowed fix PR on clawsweeper/issue-openclaw-openclaw-60398. |
 
 ## Needs Human
 
