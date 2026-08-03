@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:21:07.860Z",
+  "updated_at": "2026-08-03T22:21:15.898Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:132:5168142459:2026-08-03T18:26:18Z:clawsweeper_needs_human",
-      "comment_id": "5168142459",
-      "comment_version_key": "5168142459:2026-08-03T18:26:18Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5168142459",
-      "comment_created_at": "2026-08-03T15:07:17Z",
-      "comment_updated_at": "2026-08-03T18:26:18Z",
-      "comment_body_sha256": "df834d7b0eff99ca8f8c1c5003ce41b08f353fe03186e45516489686e1dfe96c",
-      "repo": "openclaw/lobster",
-      "issue_number": 132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A non-cooperative injected adapter can continue its own work after the workflow stops waiting; the PR correctly bounds workflow availability, but cannot externally terminate an adapte... (sha=d82ff0ed011f42f1d5aedb14e7d08019addd1a2d)",
-      "expected_head_sha": "d82ff0ed011f42f1d5aedb14e7d08019addd1a2d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T18:27:19.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-invoke-honor-abort-signal",
-        "head_sha": "d82ff0ed011f42f1d5aedb14e7d08019addd1a2d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:257:5168900311:2026-08-03T18:25:59Z:clawsweeper_auto_repair",
       "comment_id": "5168900311",
@@ -32852,6 +32819,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T22:21:07.860Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103705:4936148212:2026-08-03T22:20:25Z:clawsweeper_auto_repair",
+      "comment_id": "4936148212",
+      "comment_version_key": "4936148212:2026-08-03T22:20:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103705#issuecomment-4936148212",
+      "comment_created_at": "2026-07-10T14:04:51Z",
+      "comment_updated_at": "2026-08-03T22:20:25Z",
+      "comment_body_sha256": "6c143cf3f059fee4b3691a06e2cb6a420a5a5eec75e91c7d13fbc32df0abc798",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4d4b07963d666bc2ac3ac5665b72998b3ab109da)",
+      "expected_head_sha": "4d4b07963d666bc2ac3ac5665b72998b3ab109da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T22:21:15.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gate-deduplicated-chat-responses",
+        "head_sha": "4d4b07963d666bc2ac3ac5665b72998b3ab109da",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
