@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118489"
 mode: "autonomous"
-run_id: "30787076271"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30787076271"
+run_id: "30787301551"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30787301551"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-03T05:31:02.549Z"
+published_at: "2026-08-03T05:36:16.105Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118489"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118489"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30787076271](https://github.com/openclaw/clawsweeper/actions/runs/30787076271)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30787301551](https://github.com/openclaw/clawsweeper/actions/runs/30787301551)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118489
 
 ## Summary
 
-#118489 is still a narrow, source-reproducible bug on current main fd10614a482b987b19dfe9029290108466f82d83. The required focused test cannot start because the checkout lacks p-map, and this read-only worker cannot run pnpm install, edit the branch, or validate a repair. A concrete two-file new-PR artifact is ready for an executor with a writable, dependency-complete checkout.
+#118489 remains source-reproducible on current main 122181649e732e9db53dae2ffa61df7eb10bbeec. The finalizer still couples exact persisted terminal-result proof to activeCount === 0 and unconditionally suppresses a later failed terminal outcome after prior tool presentation. This worker cannot implement or validate because the checkout is read-only, node_modules is absent, and ../codex is absent; a narrow new-PR artifact is ready for a dependency-complete executor.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118489
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118489 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment: the checkout is read-only and dependencies are incomplete. The issue remains canonical and suitable for a narrow new fix PR. |
-| cluster:issue-openclaw-openclaw-118489 | build_fix_artifact | planned | canonical | A dependency-complete executor can implement and validate this narrow repair without config, schema, dependency, documentation, or changelog changes. |
+| #118489 | fix_needed | blocked | canonical | Only the implementation path is blocked by this worker environment. The issue classification and narrow repair path are clear. |
+| cluster:issue-openclaw-openclaw-118489 | build_fix_artifact | planned | canonical | The repair is confined to the existing shared finalizer and its focused regression suite; no config, schema, dependency, documentation, or changelog change is required. |
 
 ## Needs Human
 

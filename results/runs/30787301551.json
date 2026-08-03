@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118489",
+  "mode": "autonomous",
+  "run_id": "30787301551",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30787301551",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118489.md",
+  "published_at": "2026-08-03T05:36:16.105Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_pr": null,
+  "summary": "#118489 remains source-reproducible on current main 122181649e732e9db53dae2ffa61df7eb10bbeec. The finalizer still couples exact persisted terminal-result proof to activeCount === 0 and unconditionally suppresses a later failed terminal outcome after prior tool presentation. This worker cannot implement or validate because the checkout is read-only, node_modules is absent, and ../codex is absent; a narrow new-PR artifact is ready for a dependency-complete executor.",
+  "actions": [
+    {
+      "target": "#118489",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "Only the implementation path is blocked by this worker environment. The issue classification and narrow repair path are clear."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118489",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "The repair is confined to the existing shared finalizer and its focused regression suite; no config, schema, dependency, documentation, or changelog change is required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
