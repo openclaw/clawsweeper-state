@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117635",
+  "mode": "autonomous",
+  "run_id": "30788286836",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30788286836",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117635.md",
+  "published_at": "2026-08-03T06:32:36.062Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117635",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117635",
+  "canonical_pr": null,
+  "summary": "Current main at e4884d981a40308bc192175e5cd9522f4c29182d retains the reported cross-container singleton defect: gateway state ownership is hashed from the canonical shared state directory, but the physical lock and SQLite coordinator default to the process-local temporary directory. Docker Compose mounts `/home/node/.openclaw` into both services while each container has its own `/tmp`, so two gateway containers can acquire separate physical locks and poll the same channel. A narrow new fix PR is appropriate.",
+  "actions": [
+    {
+      "target": "#117635",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "The issue is a source-proven default-path ownership bug with a localized implementation and test surface. #86119 is a distinct embedded-run lifecycle leak; #107322 is closed and unrelated to this lock-location repair."
+    },
+    {
+      "target": "#86119",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "Both reports can manifest as duplicate or lingering runtime activity, but their root causes and repair owners differ. Keep #86119 open for its separate lifecycle investigation."
+    },
+    {
+      "target": "#107322",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no action or reclassification is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117635",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "Create one narrow implementation PR from `clawsweeper/issue-openclaw-openclaw-117635`; no merge or issue close is permitted in this job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
