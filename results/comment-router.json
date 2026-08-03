@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T23:11:54.865Z",
+  "updated_at": "2026-08-03T23:12:08.224Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4525651005:2026-05-23T14:24:31Z:re_review",
-      "comment_id": "4525651005",
-      "comment_version_key": "4525651005:2026-05-23T14:24:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4525651005",
-      "comment_created_at": "2026-05-23T14:24:31Z",
-      "comment_updated_at": "2026-05-23T14:24:31Z",
-      "comment_body_sha256": "da1efbc3f6203ed2778405d9cf818b0700c1ce77688060ef2a6cb6a6b5f61b1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T19:26:24.738Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4525894163:2026-05-23T16:08:16Z:re_review",
       "comment_id": "4525894163",
@@ -32254,6 +32227,39 @@
         "head_sha": "722e5b0a5a2c7e74d4c1727f0daa18c75a266341",
         "cluster_id": "automerge-openclaw-openclaw-117906",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117906.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116232:5126674096:2026-08-03T23:10:17Z:clawsweeper_needs_human",
+      "comment_id": "5126674096",
+      "comment_version_key": "5126674096:2026-08-03T23:10:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116232#issuecomment-5126674096",
+      "comment_created_at": "2026-07-30T04:53:25Z",
+      "comment_updated_at": "2026-08-03T23:10:17Z",
+      "comment_body_sha256": "1c2ffe728fa9d3f979ae8ad89e0a553b8c0c7d97d2e0350dea0a57f11e3c311c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused unit tests exercise the predicate, but no after-fix WhatsApp/Baileys transport run demonstrates that a real timeout is not replayed; ad... (sha=f34236abae1deae370e32ae69f2b2a42674dfce6)",
+      "expected_head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T23:12:08.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-retry-drop-timed-out",
+        "head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
