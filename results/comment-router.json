@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T17:22:20.452Z",
+  "updated_at": "2026-08-03T17:22:49.401Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111582:5166885018:2026-08-03T13:23:26Z:re_review",
-      "comment_id": "5166885018",
-      "comment_version_key": "5166885018:2026-08-03T13:23:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111582#issuecomment-5166885018",
-      "comment_created_at": "2026-08-03T13:23:26Z",
-      "comment_updated_at": "2026-08-03T13:23:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "828b5630-8f3e-11f1-9c4b-0fc22a684048",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111582,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T13:24:02.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-check-file-utils-git-ls-files",
-        "head_sha": "ef437b6f97fed8712d95e24c7961e5e7fc7de7bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118363:5166894356:2026-08-03T13:24:19Z:re_review",
       "comment_id": "5166894356",
@@ -32612,6 +32564,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-a6da792cd5",
         "head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118389:5161820263:2026-08-03T17:13:55Z:clawsweeper_needs_human",
+      "comment_id": "5161820263",
+      "comment_version_key": "5161820263:2026-08-03T17:13:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118389#issuecomment-5161820263",
+      "comment_created_at": "2026-08-03T02:55:34Z",
+      "comment_updated_at": "2026-08-03T17:13:55Z",
+      "comment_body_sha256": "d6136c38652873ec85c06185bdf0163eba425246240add286d7e00f0ac1d0d56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body supplies an earlier combined compact-CI result but explicitly says the final raw exact-head attempt is pending; attach red... (sha=aa3f82aaec7b4ca829b2d5659ba343ddade11c8d)",
+      "expected_head_sha": "aa3f82aaec7b4ca829b2d5659ba343ddade11c8d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T17:22:49.401Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-30pct-integration",
+        "head_sha": "aa3f82aaec7b4ca829b2d5659ba343ddade11c8d",
         "cluster_id": null,
         "job_path": null
       }
