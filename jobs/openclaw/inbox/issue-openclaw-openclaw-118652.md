@@ -67,21 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the gateway-restart orphan-process bug in one focused PR. Treat `src/process/supervisor` as the lifecycle owner: add a bounded shutdown/drain operation that cancels every active and starting run through the existing SIGTERM/SIGKILL tree-cancellation behavior, then call it from the gateway close lifecycle once admission is fenced and stop hooks cannot leave new work behind. Cover a concurrent-start race as well as an already-running child. Add focused supervisor and gateway-close regression tests; do not add environment-marker process scanning, a systemd reaper, new config, or CHANGELOG.md edits. Stop and escalate if the repair requires a persistent-state migration or a new public plugin API.
+Repair the gateway lifecycle leak for process-supervised CLI runs. Trace every current `getProcessSupervisor()` caller and the gateway stop/restart path, then add one canonical supervisor lifecycle-drain operation that prevents new starts, cancels all active owned runs/process groups, waits under an existing or narrowly defined bounded deadline, escalates only the remaining owned children, and preserves run exit accounting. Invoke it from the shared gateway lifecycle boundary for graceful stop and in-process restart; do not add systemd-specific PID scanning, global environment-variable reaping, a config option, or compatibility fallbacks. Add focused regressions proving active supervised child processes are cancelled on stop and restart, including a non-responsive-child escalation case if the existing supervisor contract supports it. Keep the PR to this one lifecycle topic and describe the observed before/after behavior in the PR body; do not edit `CHANGELOG.md`.
 
 Likely files:
 
 - src/process/supervisor/types.ts
 - src/process/supervisor/supervisor.ts
+- src/process/supervisor/index.ts
 - src/process/supervisor/supervisor.test.ts
-- src/gateway/server-start.ts
-- src/gateway/server-close.test.ts
+- src/cli/gateway-cli/run-loop.ts
+- src/cli/gateway-cli/run-loop.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/process/supervisor/supervisor.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-close.test.ts
-- Manual packaged/service proof: launch a long-running gateway-hosted background exec, restart the gateway with SIGTERM, and verify the child process tree exits after the bounded drain.
+- node scripts/run-vitest.mjs src/process/supervisor
+- node scripts/run-vitest.mjs src/cli/gateway-cli/run-loop.test.ts
+- git diff --check
+- node scripts/check-changed.mjs -- src/process/supervisor/index.ts src/process/supervisor/supervisor.ts src/process/supervisor/types.ts src/cli/gateway-cli/run-loop.ts
 
 ## Operator Prompt
 
