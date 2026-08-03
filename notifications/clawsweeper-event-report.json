@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T11:04:01.186Z",
+  "generated_at": "2026-08-03T11:45:41.192Z",
   "input": "repair-apply-report.json",
-  "run_record": null,
+  "run_record": "results/runs/30808151949.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30806763391",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30808151949",
+  "considered": 2,
+  "pending": 1,
+  "sent": 1,
   "failed": 0,
-  "skipped": 0,
-  "actions": []
+  "skipped": 1,
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#118303:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#118303",
+      "title": "fix(minimax): route M3 image calls through MiniMax VL",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "skipped",
+      "reason": "notification already sent",
+      "run_id": "30808151949",
+      "cluster_id": "automerge-openclaw-openclaw-118303",
+      "hook_run_id": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118303"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#118303:repair_contributor_branch:pushed:99e9da6bd63ede2fb0b5bc0ee25391ce50acb599",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#118303",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30808151949",
+      "cluster_id": "automerge-openclaw-openclaw-118303",
+      "hook_run_id": "f14632d0-f088-4c06-8207-30f2da765008",
+      "url": "https://github.com/openclaw/openclaw/pull/118303"
+    }
+  ]
 }
