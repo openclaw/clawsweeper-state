@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:26:39.656Z",
+  "updated_at": "2026-08-03T06:27:43.715Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107171:4968540353:2026-08-03T01:56:17Z:clawsweeper_needs_human",
-      "comment_id": "4968540353",
-      "comment_version_key": "4968540353:2026-08-03T01:56:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107171#issuecomment-4968540353",
-      "comment_created_at": "2026-07-14T11:15:07Z",
-      "comment_updated_at": "2026-08-03T01:56:17Z",
-      "comment_body_sha256": "cb06e41906b604ee1d5c28f14b91ef35a86436b30845f153e77d53fb0dfbd184",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body explicitly says its focused lifecycle exercise uses mocked Teams SDK routes and a mocked persistent dedupe factory, with no live Te... (sha=3ce965cec0dc4073d3819cd068ffcac996a96ea4)",
-      "expected_head_sha": "3ce965cec0dc4073d3819cd068ffcac996a96ea4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T02:50:31.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bug-056-msteams-delivery-dedupe",
-        "head_sha": "3ce965cec0dc4073d3819cd068ffcac996a96ea4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107486:4971566734:2026-08-03T02:24:27Z:clawsweeper_needs_human",
       "comment_id": "4971566734",
@@ -31802,6 +31769,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118523:5163044492:2026-08-03T06:26:42Z:re_review",
+      "comment_id": "5163044492",
+      "comment_version_key": "5163044492:2026-08-03T06:26:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118523#issuecomment-5163044492",
+      "comment_created_at": "2026-08-03T06:26:42Z",
+      "comment_updated_at": "2026-08-03T06:26:42Z",
+      "comment_body_sha256": "c1ea3d2bab9c8b637048d95e6377b6a214a329b720239d125e781238a3da7ab2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118523,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T06:27:40.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118489-failed-tool-finalization-residuals",
+        "head_sha": "52b717fd7884bb5b903163f09c1c7e4e86a11642",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
