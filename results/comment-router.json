@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:05:20.445Z",
+  "updated_at": "2026-08-03T14:05:36.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1021:5165094318:2026-08-03T10:17:00Z:re_review",
-      "comment_id": "5165094318",
-      "comment_version_key": "5165094318:2026-08-03T10:17:00Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1021#issuecomment-5165094318",
-      "comment_created_at": "2026-08-03T10:17:00Z",
-      "comment_updated_at": "2026-08-03T10:17:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "773ce470-8f24-11f1-8e85-d7e570d28891",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1021,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T10:17:43.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawsweeper-bounded-main-workflows",
-        "head_sha": "846fc46fe834dd7b49fcefbac8d00968d2c8d53d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-03T10:13:01Z:clawsweeper_needs_human",
       "comment_id": "5077699954",
@@ -31721,6 +31673,39 @@
         "kind": "pull_request",
         "branch": "codex/qa0803-talk-final-transcript-drain",
         "head_sha": "77e7027b789200cb91fa0aa4013d909e473bca2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118695:5167397905:2026-08-03T14:04:40Z:clawsweeper_needs_human",
+      "comment_id": "5167397905",
+      "comment_version_key": "5167397905:2026-08-03T14:04:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118695#issuecomment-5167397905",
+      "comment_created_at": "2026-08-03T14:04:40Z",
+      "comment_updated_at": "2026-08-03T14:04:40Z",
+      "comment_body_sha256": "45a6722fa708cd867d498d86591e08b6d19de5b60bed9b0d5aab9d670869213b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch has focused mock-backed tests, including real guarded-fetch logic with controlled DNS, but the available PR body and artifacts do no... (sha=fa4cae9c415f042ebc5c09fbcba04de9883c8d39)",
+      "expected_head_sha": "fa4cae9c415f042ebc5c09fbcba04de9883c8d39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T14:05:36.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-slack-gov-media-boundary",
+        "head_sha": "fa4cae9c415f042ebc5c09fbcba04de9883c8d39",
         "cluster_id": null,
         "job_path": null
       }
