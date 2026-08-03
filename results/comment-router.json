@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:30:28.145Z",
+  "updated_at": "2026-08-03T05:30:34.490Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118340:5161257733:2026-08-03T01:06:21Z:clawsweeper_needs_human",
-      "comment_id": "5161257733",
-      "comment_version_key": "5161257733:2026-08-03T01:06:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118340#issuecomment-5161257733",
-      "comment_created_at": "2026-08-03T01:01:09Z",
-      "comment_updated_at": "2026-08-03T01:06:21Z",
-      "comment_body_sha256": "392627efab852169428ad9330ab0fbac9d3ca666c572e233c94fefa70d0d1e70",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118340,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair is warranted; explicit maintainer confirmation is required because the PR carries the protected maintainer label. (sha=f8b8e078fc667356b625d7af4fa9bcd9be0323f7)",
-      "expected_head_sha": "f8b8e078fc667356b625d7af4fa9bcd9be0323f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:47:26.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/gateway-stable-https-url",
-        "head_sha": "f8b8e078fc667356b625d7af4fa9bcd9be0323f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118356:5161457198:2026-08-03T01:43:39Z:clawsweeper_needs_human",
       "comment_id": "5161457198",
@@ -31601,6 +31568,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118402:5162659438:2026-08-03T05:29:52Z:re_review",
+      "comment_id": "5162659438",
+      "comment_version_key": "5162659438:2026-08-03T05:29:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118402#issuecomment-5162659438",
+      "comment_created_at": "2026-08-03T05:29:52Z",
+      "comment_updated_at": "2026-08-03T05:29:52Z",
+      "comment_body_sha256": "ffb3654302b305b47aa38e090855b7cb41de5522c3bed53eb232b3f64b04d92f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118402,
+      "author": "MoerAI",
+      "author_id": 26067127,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T05:30:31.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-failure-loop-streak",
+        "head_sha": "db433cba28bb0c19b9b7316a6d4e0ac4f544400b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
