@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:00:46.292Z",
+  "updated_at": "2026-08-03T16:01:31.595Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116526:5135224945:2026-08-03T12:10:28Z:clawsweeper_needs_human",
-      "comment_id": "5135224945",
-      "comment_version_key": "5135224945:2026-08-03T12:10:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116526#issuecomment-5135224945",
-      "comment_created_at": "2026-07-30T19:16:02Z",
-      "comment_updated_at": "2026-08-03T12:10:28Z",
-      "comment_body_sha256": "b03005200f4e3ee78ece48e1015d87079c56294d0ba8326badff2c5a891eb975",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116526,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body cites focused Vitest coverage and git diff --check, but no after-fix real Gateway run, redacted logs, terminal output, or recording...; Review finding: [P1] Record deferred shared failures before device-proof rejection — src/gateway/server/ws-connection/auth-context.ts:144-155 - [high] Invalid device proof bypasse... (sha=c4792ac2a4b0e461f80f3567587f1f9d4905c900)",
-      "expected_head_sha": "c4792ac2a4b0e461f80f3567587f1f9d4905c900",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:11:13.724Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-898",
-        "head_sha": "c4792ac2a4b0e461f80f3567587f1f9d4905c900",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118507:5162706662:2026-08-03T12:10:31Z:clawsweeper_needs_human",
       "comment_id": "5162706662",
@@ -31970,6 +31937,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110569:5168752401:2026-08-03T16:00:52Z:re_review",
+      "comment_id": "5168752401",
+      "comment_version_key": "5168752401:2026-08-03T16:00:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5168752401",
+      "comment_created_at": "2026-08-03T16:00:52Z",
+      "comment_updated_at": "2026-08-03T16:00:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "8182bdd0-8f54-11f1-8a8b-c4535d216e37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110569,
+      "author": "RileyJJY",
+      "author_id": 255106757,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T16:01:29.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jjy/fix/docs-i18n-glossary-git-timeouts",
+        "head_sha": "b84d64949a4536732a54b92ef11b79c7143ace88",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
