@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T02:56:19.107Z",
+  "updated_at": "2026-08-03T02:57:28.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118261:5160686250:2026-08-02T22:40:02Z:re_review",
-      "comment_id": "5160686250",
-      "comment_version_key": "5160686250:2026-08-02T22:40:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118261#issuecomment-5160686250",
-      "comment_created_at": "2026-08-02T22:40:02Z",
-      "comment_updated_at": "2026-08-02T22:40:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118261,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T22:40:43.665Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/117899-control-ui-talk-grace-race",
-        "head_sha": "adcc108445b025592de565df48f836cc3851eaea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2388:5083016009:2026-07-26T10:06:13Z:re_review",
       "comment_id": "5083016009",
@@ -32534,6 +32487,39 @@
         "kind": "pull_request",
         "branch": "codex/goal50k-apps-packages-cleanup-wave1-2d45",
         "head_sha": "1b7bfcd43e1c57fd1f9406f298336108af00b80b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116306:5128423476:2026-08-03T02:50:48Z:clawsweeper_auto_repair",
+      "comment_id": "5128423476",
+      "comment_version_key": "5128423476:2026-08-03T02:50:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116306#issuecomment-5128423476",
+      "comment_created_at": "2026-07-30T08:25:53Z",
+      "comment_updated_at": "2026-08-03T02:50:48Z",
+      "comment_body_sha256": "1dbe18985eb5925bc2c7b291905bef0ca4c15f1dfbd9bb2d3ec14478e1b8f246",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a0067bc9c3134b96ee7653d857df2ed2e65531a0)",
+      "expected_head_sha": "a0067bc9c3134b96ee7653d857df2ed2e65531a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T02:57:28.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/include-provider-in-silent-fallback",
+        "head_sha": "a0067bc9c3134b96ee7653d857df2ed2e65531a0",
         "cluster_id": null,
         "job_path": null
       }
