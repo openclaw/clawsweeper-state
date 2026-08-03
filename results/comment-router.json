@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:31:49.314Z",
+  "updated_at": "2026-08-03T06:31:58.613Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113311:5079234847:2026-08-03T02:39:34Z:clawsweeper_needs_human",
-      "comment_id": "5079234847",
-      "comment_version_key": "5079234847:2026-08-03T02:39:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113311#issuecomment-5079234847",
-      "comment_created_at": "2026-07-25T16:20:31Z",
-      "comment_updated_at": "2026-08-03T02:39:34Z",
-      "comment_body_sha256": "5b1125cb6ae8234e7c5e488367798941a1c9265c44d3816777449a3571c1169c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113311,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is currently dirty against main. Its SQLite and client changes must be rebased and re-proven on the actual merged result before landing. (sha=96c688ec5815d082470e5a3e7a61aacb14f356ff)",
-      "expected_head_sha": "96c688ec5815d082470e5a3e7a61aacb14f356ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T02:50:31.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-lossless-proof-retention",
-        "head_sha": "96c688ec5815d082470e5a3e7a61aacb14f356ff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114609:5092701188:2026-08-02T16:32:21Z:autoclose",
       "comment_id": "5092701188",
@@ -31830,6 +31797,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118296:5163075974:2026-08-03T06:31:16Z:re_review",
+      "comment_id": "5163075974",
+      "comment_version_key": "5163075974:2026-08-03T06:31:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118296#issuecomment-5163075974",
+      "comment_created_at": "2026-08-03T06:31:16Z",
+      "comment_updated_at": "2026-08-03T06:31:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118296,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T06:31:56.675Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "joshavant/issue-110378-20260802t205636z-3c7ecd59",
+        "head_sha": "f3d98a88dbafa5695ea301498f498d67cbd15e01",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
