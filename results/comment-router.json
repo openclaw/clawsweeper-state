@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:56:58.428Z",
+  "updated_at": "2026-08-03T00:57:02.201Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118206:5160344774:2026-08-02T21:16:51Z:clawsweeper_needs_human",
-      "comment_id": "5160344774",
-      "comment_version_key": "5160344774:2026-08-02T21:16:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118206#issuecomment-5160344774",
-      "comment_created_at": "2026-08-02T21:07:06Z",
-      "comment_updated_at": "2026-08-02T21:16:51Z",
-      "comment_body_sha256": "fc9c00fe9b0b10f0d76d979c61554d655c4108a33f652255c01aad1d94e687e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118206,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch base is older than current main; although the provided checks are successful for the PR head, the protected maintainer label warrants a refreshed merge-result review and re... (sha=2ed7d6722c92fb165e879c825122392a12992a39)",
-      "expected_head_sha": "2ed7d6722c92fb165e879c825122392a12992a39",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:20:26.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-owner-allowlist-prompt-budget-50289",
-        "head_sha": "2ed7d6722c92fb165e879c825122392a12992a39",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:91:5160391314:2026-08-02T21:19:54Z:clawsweeper_needs_human",
       "comment_id": "5160391314",
@@ -32688,6 +32655,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118169:5161234597:2026-08-03T00:56:16Z:re_review",
+      "comment_id": "5161234597",
+      "comment_version_key": "5161234597:2026-08-03T00:56:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5161234597",
+      "comment_created_at": "2026-08-03T00:56:16Z",
+      "comment_updated_at": "2026-08-03T00:56:16Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118169,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T00:56:58.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup",
+        "head_sha": "5cfe7f5935bd1b53d4e3a5038b676a870a97cc81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
