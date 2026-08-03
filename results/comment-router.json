@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:01:28.468Z",
+  "updated_at": "2026-08-03T21:01:39.022Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111392:5016231987:2026-08-03T16:44:28Z:clawsweeper_auto_repair",
-      "comment_id": "5016231987",
-      "comment_version_key": "5016231987:2026-08-03T16:44:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111392#issuecomment-5016231987",
-      "comment_created_at": "2026-07-19T15:12:26Z",
-      "comment_updated_at": "2026-08-03T16:44:28Z",
-      "comment_body_sha256": "2538bb62c71b5354e09a4f5413193af3ea54eee5689e2c655f0936954799b7ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=32ada30e0fc66252626f9642695c1042fb85c4f3)",
-      "expected_head_sha": "32ada30e0fc66252626f9642695c1042fb85c4f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T16:47:27.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/111376-skip-unchanged-workspace-entries",
-        "head_sha": "32ada30e0fc66252626f9642695c1042fb85c4f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111471:5016542865:2026-08-03T16:42:44Z:clawsweeper_needs_human",
       "comment_id": "5016542865",
@@ -32604,6 +32571,53 @@
       "status": "skipped",
       "processed_at": "2026-08-03T21:01:28.468Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-08-03T21:00:28Z:clawsweeper_needs_human",
+      "comment_id": "5160996295",
+      "comment_version_key": "5160996295:2026-08-03T21:00:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118309#issuecomment-5160996295",
+      "comment_created_at": "2026-08-03T00:05:57Z",
+      "comment_updated_at": "2026-08-03T21:00:28Z",
+      "comment_body_sha256": "5a838d94fabe28c7254cc1f37fa0aafd83cbb9ec58ac5422ac559d1b02210f47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This is already the open candidate fix for the canonical report and is explicitly awaiting maintainer review, so a separate repair job would duplicate active work. (sha=bb567cd88c9f8f05db950a54d6ed40dc37f68561)",
+      "expected_head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T21:01:39.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118185",
+        "head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
+        "cluster_id": "automerge-openclaw-openclaw-118309",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118309.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
