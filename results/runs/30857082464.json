@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118740",
+  "mode": "autonomous",
+  "run_id": "30857082464",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30857082464",
+  "head_sha": "42a7674d5f25d34441c20a8164c0409eda450a68",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118740.md",
+  "published_at": "2026-08-03T22:11:25.853Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118740",
+  "canonical_pr": null,
+  "summary": "#118740 remains a narrow, reproducible non-security bug on current main. In `auto` mode, the signing script classifies the raw `SIGN_IDENTITY` selector instead of the selected certificate, so a SHA-1 selector for a Developer ID Application certificate receives `--timestamp=none`. The read-only worker sandbox cannot create the requested branch or run the write-based Vitest fixture; a ready-to-apply narrow fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#118740",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "Keep the issue open as the canonical report until the planned fix PR validates and lands; the job prohibits close and merge."
+    },
+    {
+      "target": "#118740",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "A narrow repair is required: resolve the supplied selector against `security find-identity -p codesigning -v` in `auto` mode, preserve explicit `on`/`off` and `-`, and cover the result with fake command fixtures."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118740",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "The branch and PR require deterministic executor-side filesystem and GitHub mutations, unavailable to this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
