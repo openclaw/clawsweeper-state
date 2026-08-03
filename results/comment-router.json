@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:20:21.134Z",
+  "updated_at": "2026-08-03T21:20:24.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111138:5013866266:2026-08-03T16:45:32Z:clawsweeper_needs_human",
-      "comment_id": "5013866266",
-      "comment_version_key": "5013866266:2026-08-03T16:45:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111138#issuecomment-5013866266",
-      "comment_created_at": "2026-07-19T02:42:49Z",
-      "comment_updated_at": "2026-08-03T16:45:32Z",
-      "comment_body_sha256": "4719bddef63d1be6e0248d51a61aa6d96fb5b845e2bcdf9843358a28d5d62b25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The refreshed PR body reports focused mocked WebSocket tests but provides no after-fix output from a real Codex WebSocket session; attach redac... (sha=7b52e5d96c458fc543e57c419de7fd658ee458fb)",
-      "expected_head_sha": "7b52e5d96c458fc543e57c419de7fd658ee458fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T17:31:09.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chatgpt-responses-ws-utf8-fatal",
-        "head_sha": "7b52e5d96c458fc543e57c419de7fd658ee458fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115808:5118157004:2026-08-03T16:46:50Z:clawsweeper_auto_repair",
       "comment_id": "5118157004",
@@ -32872,6 +32839,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-03T21:18:39Z:clawsweeper_needs_human",
+      "comment_id": "5157206715",
+      "comment_version_key": "5157206715:2026-08-03T21:18:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
+      "comment_created_at": "2026-08-02T10:31:46Z",
+      "comment_updated_at": "2026-08-03T21:18:39Z",
+      "comment_body_sha256": "7f5aba430f8de92952bd27050301b9b7f6a397f4fa4dc7ace63ad3392c1eee30",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main and changes the same live-chat projection paths that were recently refactored; GitHub reports a clean merge, but the exact current three-way result could... (sha=294d1f348b21927b031d50a22f44d1be41b89e24)",
+      "expected_head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T21:20:24.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+        "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
