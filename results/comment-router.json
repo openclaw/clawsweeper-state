@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:48:33.318Z",
+  "updated_at": "2026-08-03T15:48:47.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1223:5165758447:2026-08-03T11:35:08Z:re_review",
-      "comment_id": "5165758447",
-      "comment_version_key": "5165758447:2026-08-03T11:35:08Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1223#issuecomment-5165758447",
-      "comment_created_at": "2026-08-03T11:31:15Z",
-      "comment_updated_at": "2026-08-03T11:35:08Z",
-      "comment_body_sha256": "bd934dfdb4fa7a1fc7e09379059dbcabbaa5d94ef63329b443f1791c95ee45d0",
-      "source_delivery_id": "61bb0f40-8f2f-11f1-86f1-08a8e70fdfb3",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1223,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T11:35:52.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/daytona-post-sync-ssh-retry",
-        "head_sha": "1d3d5591428701d5234b50fb7164579afb7dccea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115049:5101471895:2026-08-03T11:35:13Z:clawsweeper_needs_human",
       "comment_id": "5101471895",
@@ -31933,6 +31885,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-search-fallback-recovery-96534",
         "head_sha": "29cb5a2771648bc75f9d9a5380de8be823a9005f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116780:5142084833:2026-08-03T15:48:13Z:clawsweeper_needs_human",
+      "comment_id": "5142084833",
+      "comment_version_key": "5142084833:2026-08-03T15:48:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116780#issuecomment-5142084833",
+      "comment_created_at": "2026-07-31T10:52:26Z",
+      "comment_updated_at": "2026-08-03T15:48:13Z",
+      "comment_body_sha256": "dbf372353944fcec687b15704661664ea203e6ba90fd62d406e44f1b5a877641",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116780,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; the patch applies cleanly to the current source, but maintainers should refresh focused exact-head or merge-result dispatch-suite validation before... (sha=844181496eaa967607b570dead9a51d530cbc98c)",
+      "expected_head_sha": "844181496eaa967607b570dead9a51d530cbc98c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T15:48:47.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/dispatch-suite-windows-path",
+        "head_sha": "844181496eaa967607b570dead9a51d530cbc98c",
         "cluster_id": null,
         "job_path": null
       }
