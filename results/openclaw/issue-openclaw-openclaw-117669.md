@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117669"
 mode: "autonomous"
-run_id: "30773439361"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30773439361"
+run_id: "30775837891"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30775837891"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-03T00:30:33.000Z"
+result_status: "planned"
+published_at: "2026-08-03T01:08:05.971Z"
 canonical: "https://github.com/openclaw/openclaw/issues/117669"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/117669"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30773439361](https://github.com/openclaw/clawsweeper/actions/runs/30773439361)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30775837891](https://github.com/openclaw/clawsweeper/actions/runs/30775837891)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/117669
 
 ## Summary
 
-Confirmed the canonical defect on current main b7f9cd0a01671f7be5fc34b4bd4bf6770603f480: recordGroundedShortTermCandidates normalizes the corpus path but calls isContaminatedDreamingSnippet(rawSnippet) without the existing session-corpus allowance, so User:/Assistant: corpus turns are dropped before the SQLite recall store. The durable-promotion call sites remain correctly strict. This worker has a read-only checkout, so it could not apply or run the focused regression; a narrow executable fix artifact is provided.
+No implementation PR is needed. Current main d9669ce72cbe31ff8e1ae66de03f34f2014a4f1e already performs the requested normalized session-corpus path check at the short-term recall recording boundary, while all durable MEMORY.md promotion checks remain strict. The checkout has no local diff.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,24 +54,22 @@ Confirmed the canonical defect on current main b7f9cd0a01671f7be5fc34b4bd4bf6770
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/118325 | clawsweeper/issue-openclaw-openclaw-117669 |  |
 | issue_implementation_status_comment | updated | #117669 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118325 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117669 | fix_needed | blocked | canonical | A narrow repair is source-confirmed, but the read-only checkout prevents applying and validating it in this worker. |
-| #67580 | keep_closed | skipped | related | Already closed; no mutation is valid. |
-| #117676 | keep_closed | skipped | superseded | Already closed and not a viable canonical implementation. |
-| #117946 | keep_closed | skipped | superseded | Already closed; its narrow approach should be carried forward in the replacement fix with credit. |
-| cluster:issue-openclaw-openclaw-117669 | build_fix_artifact | planned | canonical | Create one narrow branch/PR from current main after obtaining a writable execution checkout. |
+| #117669 | comment | planned | canonical | The reported producer-boundary defect no longer reproduces from current source: the exact path-scoped option named in the job is already installed on main. The issue remains open because this lane cannot close it. |
+| #67580 | keep_closed | skipped | related | Already closed; retained solely as related historical evidence. |
+| #117676 | keep_closed | skipped | superseded | Already closed; its broad durable-promotion approach is superseded by the current path-scoped recall-only implementation. |
+| #117946 | keep_closed | skipped | superseded | Already closed and unmerged; no replacement PR is needed because the narrow repair is present on current main. |
 
 ## Needs Human
 
