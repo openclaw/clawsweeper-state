@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:47:42.082Z",
+  "updated_at": "2026-08-03T16:48:11.900Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4678090258:2026-06-11T07:12:29Z:re_review",
-      "comment_id": "4678090258",
-      "comment_version_key": "4678090258:2026-06-11T07:12:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4678090258",
-      "comment_created_at": "2026-06-11T07:12:29Z",
-      "comment_updated_at": "2026-06-11T07:12:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T13:23:52.201Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4679526462:2026-06-11T10:19:05Z:re_review",
       "comment_id": "4679526462",
@@ -32087,6 +32060,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117488:5152222822:2026-08-03T16:47:36Z:clawsweeper_needs_human",
+      "comment_id": "5152222822",
+      "comment_version_key": "5152222822:2026-08-03T16:47:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117488#issuecomment-5152222822",
+      "comment_created_at": "2026-08-01T16:05:03Z",
+      "comment_updated_at": "2026-08-03T16:47:36Z",
+      "comment_body_sha256": "bb8e14b3a62409cda5f1e49a88b4c4fb946a8e416414647456e04156c1847a48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes previously accepted compound doctor invocations into deterministic exit-code-2 failures; the docs separate the modes but do not explicitly promise that ev... (sha=b6deab86985c023c8f85352326da0d997c35e293)",
+      "expected_head_sha": "b6deab86985c023c8f85352326da0d997c35e293",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T16:48:11.900Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa402-doctor-operation-preflight",
+        "head_sha": "b6deab86985c023c8f85352326da0d997c35e293",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
