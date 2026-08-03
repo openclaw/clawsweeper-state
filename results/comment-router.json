@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T02:00:33.036Z",
+  "updated_at": "2026-08-03T02:01:05.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:62:5132628282:2026-08-02T22:16:52Z:clawsweeper_needs_human",
-      "comment_id": "5132628282",
-      "comment_version_key": "5132628282:2026-08-02T22:16:52Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/62#issuecomment-5132628282",
-      "comment_created_at": "2026-07-30T15:09:38Z",
-      "comment_updated_at": "2026-08-02T22:16:52Z",
-      "comment_body_sha256": "137c554cbaa5562436cafbe5d459698e017913cc450b651d9f537f5668df886f",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 62,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Once published, the package names, root and ./server exports, React peer range, and packed React-to-core version relationship become compatibility commitments; CI validates their mech... (sha=177bb5fde90e1f9eda5919c3a439890ef2d8ea95)",
-      "expected_head_sha": "177bb5fde90e1f9eda5919c3a439890ef2d8ea95",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T22:20:48.217Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/prepare-sdk-packages",
-        "head_sha": "177bb5fde90e1f9eda5919c3a439890ef2d8ea95",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:57:5106099740:2026-08-02T22:16:54Z:clawsweeper_auto_repair",
       "comment_id": "5106099740",
@@ -32376,6 +32343,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-08-03T02:00:11Z:clawsweeper_auto_repair",
+      "comment_id": "5160944009",
+      "comment_version_key": "5160944009:2026-08-03T02:00:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118303#issuecomment-5160944009",
+      "comment_created_at": "2026-08-02T23:51:57Z",
+      "comment_updated_at": "2026-08-03T02:00:11Z",
+      "comment_body_sha256": "7de0ae5709be5c8a18817828d7cd91412512ef50fd9dd6d7711b18f9c5fdaf6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d0dbc08691709691d7e251b3633cb9e8dcb8c1cc)",
+      "expected_head_sha": "d0dbc08691709691d7e251b3633cb9e8dcb8c1cc",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T02:00:52.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "d0dbc08691709691d7e251b3633cb9e8dcb8c1cc",
+        "cluster_id": "automerge-openclaw-openclaw-118303",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
