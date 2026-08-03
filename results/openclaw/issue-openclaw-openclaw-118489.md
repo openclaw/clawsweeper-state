@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118489"
 mode: "autonomous"
-run_id: "30788288399"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30788288399"
+run_id: "30788604089"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30788604089"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-03T05:58:15.691Z"
+published_at: "2026-08-03T06:03:27.252Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118489"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118489"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30788288399](https://github.com/openclaw/clawsweeper/actions/runs/30788288399)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30788604089](https://github.com/openclaw/clawsweeper/actions/runs/30788604089)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/118489
 
 ## Summary
 
-#118489 remains a reproducible canonical bug on main e4884d981a40308bc192175e5cd9522f4c29182d. The finalizer still requires lifecycle activeCount to reach zero and rejects any prior terminal presentation, but this read-only checkout lacks dependencies and sibling ../codex source needed to establish the required regressions and Code Mode lifecycle contract. A narrow new-PR artifact is ready; only local implementation and validation are blocked.
+#118489 remains the open canonical bug on current main d7ab20a727734072031af5d6f0ceeef476ae1afa. The shared finalizer still requires activeCount === 0 for exact terminal-tool settlement and still rejects hasTerminalToolPresentation without scoping it to the current failed batch. A narrow new-PR plan is ready, but this read-only checkout has neither node_modules nor sibling ../codex, so the required regressions, lifecycle-owner investigation, Code Mode contract inspection, and validation cannot be completed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118489
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118274 | keep_closed | skipped | related | Already closed; it is evidence only and is not a closure target in this repair lane. |
-| #118344 | keep_closed | skipped | related | Already closed and cannot be modified by this lane. |
-| #118489 | fix_needed | blocked | canonical | A narrow repair is warranted, but this worker cannot create regressions, inspect the required Codex dependency contract, or validate a patch in the provided checkout. |
-| cluster:issue-openclaw-openclaw-118489 | build_fix_artifact | planned | canonical | Prepare one narrow new fix PR after a writable executor establishes the regressions and directly inspects sibling Codex source. |
+| #118489 | fix_needed | blocked | canonical | The residual regression is source-reproducible, but implementation and validation require a writable checkout with dependencies plus direct inspection of ../codex before changing Code Mode-adjacent lifecycle behavior. |
+| cluster:issue-openclaw-openclaw-118489 | build_fix_artifact | planned | canonical | Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-118489 after reproducing the two residual states and identifying whether lifecycle staleness must be repaired at its producer. |
 
 ## Needs Human
 
