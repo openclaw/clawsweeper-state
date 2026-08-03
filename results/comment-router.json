@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:00:10.166Z",
+  "updated_at": "2026-08-03T01:01:12.465Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1077:5160396857:2026-08-02T21:21:25Z:re_review",
-      "comment_id": "5160396857",
-      "comment_version_key": "5160396857:2026-08-02T21:21:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1077#issuecomment-5160396857",
-      "comment_created_at": "2026-08-02T21:21:25Z",
-      "comment_updated_at": "2026-08-02T21:21:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1077,
-      "author": "bkudiess",
-      "author_id": 7658216,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T21:21:57.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-add-reasoning-default-reset",
-        "head_sha": "438df749d02b7a6eaab146a941c6023be465a3d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:87:5159884860:2026-08-02T21:21:40Z:clawsweeper_auto_repair",
       "comment_id": "5159884860",
@@ -32682,6 +32635,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T01:00:10.165Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118332:5161169353:2026-08-03T01:00:40Z:clawsweeper_needs_human",
+      "comment_id": "5161169353",
+      "comment_version_key": "5161169353:2026-08-03T01:00:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118332#issuecomment-5161169353",
+      "comment_created_at": "2026-08-03T00:41:40Z",
+      "comment_updated_at": "2026-08-03T01:00:40Z",
+      "comment_body_sha256": "a8ea97f5359092da77c8ba757f94f7a8dc085d88bcfee36ce19b4c61f17e93ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes structured assistant state returned from persisted history; required checks are still running for this exact head, so cross-client replay compatibility is not yet fu... (sha=f258ef60e9b3467957719e45a0d0761114854bc1)",
+      "expected_head_sha": "f258ef60e9b3467957719e45a0d0761114854bc1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T01:01:12.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ope-6-preserve-chat-trace",
+        "head_sha": "f258ef60e9b3467957719e45a0d0761114854bc1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
