@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118489",
+  "mode": "autonomous",
+  "run_id": "30787076271",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30787076271",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118489.md",
+  "published_at": "2026-08-03T05:31:02.549Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118489",
+  "canonical_pr": null,
+  "summary": "#118489 is still a narrow, source-reproducible bug on current main fd10614a482b987b19dfe9029290108466f82d83. The required focused test cannot start because the checkout lacks p-map, and this read-only worker cannot run pnpm install, edit the branch, or validate a repair. A concrete two-file new-PR artifact is ready for an executor with a writable, dependency-complete checkout.",
+  "actions": [
+    {
+      "target": "#118489",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment: the checkout is read-only and dependencies are incomplete. The issue remains canonical and suitable for a narrow new fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118489",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118489",
+      "candidate_fix": null,
+      "reason": "A dependency-complete executor can implement and validate this narrow repair without config, schema, dependency, documentation, or changelog changes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
