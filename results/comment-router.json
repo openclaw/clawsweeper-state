@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:19:44.820Z",
+  "updated_at": "2026-08-03T16:20:22.193Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115371:5118110681:2026-08-03T12:47:36Z:clawsweeper_auto_repair",
-      "comment_id": "5118110681",
-      "comment_version_key": "5118110681:2026-08-03T12:47:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115371#issuecomment-5118110681",
-      "comment_created_at": "2026-07-29T13:02:46Z",
-      "comment_updated_at": "2026-08-03T12:47:36Z",
-      "comment_body_sha256": "041b484a3cd4132a1bbdff05c1833f530740c048e8ae822b1bca26afd3be69b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115371,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce4fb74dce255cf2390d9aaf784cc33c695c5345)",
-      "expected_head_sha": "ce4fb74dce255cf2390d9aaf784cc33c695c5345",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:53:09.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-guided-export-v2",
-        "head_sha": "ce4fb74dce255cf2390d9aaf784cc33c695c5345",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115390:5118745256:2026-08-03T11:54:06Z:clawsweeper_needs_human",
       "comment_id": "5118745256",
@@ -31778,6 +31745,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111138:5168948509:2026-08-03T16:19:39Z:re_review",
+      "comment_id": "5168948509",
+      "comment_version_key": "5168948509:2026-08-03T16:19:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111138#issuecomment-5168948509",
+      "comment_created_at": "2026-08-03T16:19:39Z",
+      "comment_updated_at": "2026-08-03T16:19:39Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "2136c400-8f57-11f1-9a02-bf8c2a9b7d4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111138,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T16:20:20.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chatgpt-responses-ws-utf8-fatal",
+        "head_sha": "628a36c1bc8671a51abe7dc0001d0c03aa23c741",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
