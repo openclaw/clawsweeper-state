@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:59:31.546Z",
+  "updated_at": "2026-08-03T22:59:43.029Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118758:5169118330:2026-08-03T19:04:34Z:clawsweeper_needs_human",
-      "comment_id": "5169118330",
-      "comment_version_key": "5169118330:2026-08-03T19:04:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118758#issuecomment-5169118330",
-      "comment_created_at": "2026-08-03T16:36:05Z",
-      "comment_updated_at": "2026-08-03T19:04:34Z",
-      "comment_body_sha256": "143791fb7b927da4631de3efbb6e19a11468f7455f15f423f5d820c179d79663",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118758,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and check-bundled-channel-config-metadata is currently failing in the provided CI state; merge only after a rebase and exact-head CI result establish... (sha=f0cfb278da819ac51df5d41d76a16f480b4be9a2)",
-      "expected_head_sha": "f0cfb278da819ac51df5d41d76a16f480b4be9a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T19:05:19.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-feishu-webhook-route-boundary",
-        "head_sha": "f0cfb278da819ac51df5d41d76a16f480b4be9a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118823:5170021459:2026-08-03T19:04:47Z:clawsweeper_needs_human",
       "comment_id": "5170021459",
@@ -32143,6 +32110,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118988:5172629350:2026-08-03T22:58:53Z:automerge",
+      "comment_id": "5172629350",
+      "comment_version_key": "5172629350:2026-08-03T22:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118988#issuecomment-5172629350",
+      "comment_created_at": "2026-08-03T22:58:53Z",
+      "comment_updated_at": "2026-08-03T22:58:53Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118988,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T22:59:35.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-gateway-b1-rpc-chat",
+        "head_sha": "76c26cb29994ad8df215c9cf2bcab5d431c131bc",
+        "cluster_id": "automerge-openclaw-openclaw-118988",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118988.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118988.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
