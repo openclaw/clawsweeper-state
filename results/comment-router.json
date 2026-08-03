@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:24:43.778Z",
+  "updated_at": "2026-08-03T14:25:05.167Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5164833126:2026-08-03T09:49:30Z:re_review",
-      "comment_id": "5164833126",
-      "comment_version_key": "5164833126:2026-08-03T09:49:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5164833126",
-      "comment_created_at": "2026-08-03T09:49:30Z",
-      "comment_updated_at": "2026-08-03T09:49:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:23:39.265Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111205:5165154040:2026-08-03T10:23:14Z:re_review",
       "comment_id": "5165154040",
@@ -31938,6 +31911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88709:4587349371:2026-08-03T14:19:22Z:clawsweeper_auto_repair",
+      "comment_id": "4587349371",
+      "comment_version_key": "4587349371:2026-08-03T14:19:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/88709#issuecomment-4587349371",
+      "comment_created_at": "2026-05-31T16:37:18Z",
+      "comment_updated_at": "2026-08-03T14:19:22Z",
+      "comment_body_sha256": "34380ff726504f2fc47fafa76d139c58a516e5d9d6209ebd874bfc0d22fc00fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 88709,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=80595c9ae7a261658dd3782e24e58cabcfe933cc)",
+      "expected_head_sha": "80595c9ae7a261658dd3782e24e58cabcfe933cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T14:25:05.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-api-key-billing-cooldown",
+        "head_sha": "80595c9ae7a261658dd3782e24e58cabcfe933cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
