@@ -1,0 +1,125 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117635",
+  "mode": "autonomous",
+  "run_id": "30798008753",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30798008753",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117635.md",
+  "published_at": "2026-08-03T09:09:01.304Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117635",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117635",
+  "canonical_pr": null,
+  "summary": "#117635 remains a current-main, non-security Gateway ownership defect. The canonical state directory determines only a hash while the physical state lock remains beneath each process's temporary lock directory, allowing isolated containers sharing OPENCLAW_STATE_DIR to acquire separate locks. No viable candidate PR is hydrated; plan one narrow credited fix PR.",
+  "actions": [
+    {
+      "target": "#117635",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "Open canonical issue with a narrow owner-boundary repair path and no hydrated implementation PR."
+    },
+    {
+      "target": "#86119",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "Keep open as related but independent lifecycle work."
+    },
+    {
+      "target": "#107322",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "Closed context evidence only; no close or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117635",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117635",
+      "candidate_fix": null,
+      "reason": "The job permits one new focused fix PR; implementation remains bounded to the lock boundary and its regression test."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118599",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117635",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118599",
+      "commit": "94013261cfb9b52626aad14836dfaaea7b37500c",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117635",
+      "pr": "https://github.com/openclaw/openclaw/pull/118599",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118599",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118599",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): coordinate singleton lock through shared state",
+      "idempotency_key": null,
+      "reason": "checks are not clean: actionlint: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
