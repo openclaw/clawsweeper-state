@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118482",
+  "mode": "autonomous",
+  "run_id": "30787638175",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30787638175",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118482.md",
+  "published_at": "2026-08-03T05:42:37.164Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118482",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118482",
+  "canonical_pr": null,
+  "summary": "The diagnostics omission is present in current main, but the mandatory sibling `../codex` source checkout is absent. This read-only worker cannot establish the required Codex protocol proof or create the requested branch, so implementation is blocked pending an executor with that checkout or approved equivalent proof.",
+  "actions": [
+    {
+      "target": "#118482",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118482",
+      "candidate_fix": null,
+      "reason": "Current main has the narrow diagnostics bug, but implementation cannot proceed until the required Codex protocol/source gate is satisfied."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118482",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118482",
+      "candidate_fix": null,
+      "reason": "Executable implementation is deferred solely until an executor inspects `../codex` source or obtains approved equivalent protocol proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118482",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
