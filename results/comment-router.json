@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:09:48.531Z",
+  "updated_at": "2026-08-03T04:10:02.170Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118297:5160886171:2026-08-02T23:35:19Z:clawsweeper_needs_human",
-      "comment_id": "5160886171",
-      "comment_version_key": "5160886171:2026-08-02T23:35:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118297#issuecomment-5160886171",
-      "comment_created_at": "2026-08-02T23:35:19Z",
-      "comment_updated_at": "2026-08-02T23:35:19Z",
-      "comment_body_sha256": "dc59ce9cec6ef785c1b5c884078bdc1e898b93a9e9f38f85dd79e21d946add59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118297,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main advanced from the PR parent with commit 079dfb6716 touching all three changed paths. GitHub reports a clean merge, but final landing should use exact-head hosted checks a... (sha=7a2da003f12cdd714a717a97f859778742fc86b0)",
-      "expected_head_sha": "7a2da003f12cdd714a717a97f859778742fc86b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T23:35:54.122Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auto-qa-cron-zoned-fold-date-474c",
-        "head_sha": "7a2da003f12cdd714a717a97f859778742fc86b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:103:5160778507:2026-08-02T23:35:45Z:clawsweeper_needs_human",
       "comment_id": "5160778507",
@@ -32579,6 +32546,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118360:5162185840:2026-08-03T04:09:20Z:re_review",
+      "comment_id": "5162185840",
+      "comment_version_key": "5162185840:2026-08-03T04:09:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118360#issuecomment-5162185840",
+      "comment_created_at": "2026-08-03T04:09:20Z",
+      "comment_updated_at": "2026-08-03T04:09:20Z",
+      "comment_body_sha256": "0aa2d13a7affaff0298ccdcb5611515d460de33e74a5835a74ffe8bfce29136b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118360,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T04:09:59.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "joshavant/issue-112616-20260802t224048z-ce294c65",
+        "head_sha": "92cac7fc20358d8417b00d90c84efe7cdf737844",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
