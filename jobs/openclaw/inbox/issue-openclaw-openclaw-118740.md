@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing macOS signing timestamp policy. In `scripts/codesign-mac-app.sh`, make `CODESIGN_TIMESTAMP=auto` determine whether a selected SHA-1 `SIGN_IDENTITY` denotes a Developer ID Application certificate by using the existing `security find-identity -p codesigning -v` source of truth; preserve explicit `on`/`off` modes and the ad-hoc `-` override. Do not add a configuration option or fallback policy. Extend `test/scripts/codesign-mac-app.test.ts` with fake `security` and `codesign` coverage proving that both a Developer ID name and its SHA-1 selector pass `--timestamp`, while a non-Developer-ID identity does not. Update `docs/platforms/mac/signing.md` only as needed to say that a certificate name or SHA-1 hash is accepted. Do not edit `CHANGELOG.md`; include concise release-note context in the PR body. Before opening a PR, establish the failing regression or equivalent focused source proof and stop if the approach needs a product, config, or security-policy decision.
+Repair the existing macOS signing contract: with `CODESIGN_TIMESTAMP=auto`, a valid Developer ID Application identity must receive `--timestamp` whether `SIGN_IDENTITY` is its display name or its 40-character SHA-1 hash. Resolve or classify the selected identity once at the signing boundary; retain explicit `on`, `off`, and ad-hoc behavior. Add a focused regression in `test/scripts/codesign-mac-app.test.ts` proving the hash-pinned Developer ID path forwards `--timestamp`. Update `docs/platforms/mac/signing.md` only if clarification is needed. Do not add configuration, runtime fallback behavior, or unrelated packaging changes; do not edit `CHANGELOG.md`.
 
 Likely files:
 
@@ -78,8 +78,7 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs test/scripts/codesign-mac-app.test.ts
-- On a macOS signing host, package with a redacted SHA-1 Developer ID selector and verify `codesign -dvvv dist/OpenClaw.app` reports a trusted `Timestamp=` value.
-- git diff --check
+- On a macOS signing host, package with a hash-pinned Developer ID identity and verify `codesign -dvv dist/OpenClaw.app` reports `Timestamp=`.
 
 ## Operator Prompt
 
