@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:51:58.627Z",
+  "updated_at": "2026-08-03T01:54:55.625Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113567:5160590702:2026-08-02T22:13:52Z:re_review",
-      "comment_id": "5160590702",
-      "comment_version_key": "5160590702:2026-08-02T22:13:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113567#issuecomment-5160590702",
-      "comment_created_at": "2026-08-02T22:13:52Z",
-      "comment_updated_at": "2026-08-02T22:13:52Z",
-      "comment_body_sha256": "6aec36264b7de4272e5a796fe70adeb0e3223c8df225e10be5b8f421102a030e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113567,
-      "author": "dpriscal",
-      "author_id": 22611279,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T22:17:03.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/state-pre-migration-backup",
-        "head_sha": "52ae7541bbd2d74ea9e8bb0a58fe7584bda11298",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:95:5160602442:2026-08-02T22:17:13Z:clawsweeper_needs_human",
       "comment_id": "5160602442",
@@ -32399,6 +32352,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-telegram-empty-reply",
         "head_sha": "b04e3f33ecdf1ba888afabd77c654fac54d5dae4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:64:5126163052:2026-08-03T01:49:20Z:clawsweeper_auto_repair",
+      "comment_id": "5126163052",
+      "comment_version_key": "5126163052:2026-08-03T01:49:20Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/64#issuecomment-5126163052",
+      "comment_created_at": "2026-07-30T03:44:02Z",
+      "comment_updated_at": "2026-08-03T01:49:20Z",
+      "comment_body_sha256": "8df099448871ba5d922fa2d9ea1fa5953c135ca7d96623f0262b75acd658b202",
+      "repo": "openclaw/shellbench",
+      "issue_number": 64,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f4490e8e4370cbc752404a1becce42d5a6a69f8)",
+      "expected_head_sha": "9f4490e8e4370cbc752404a1becce42d5a6a69f8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T01:54:55.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-eval-run-acceptance",
+        "head_sha": "9f4490e8e4370cbc752404a1becce42d5a6a69f8",
         "cluster_id": null,
         "job_path": null
       }
