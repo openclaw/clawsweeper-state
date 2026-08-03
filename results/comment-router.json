@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:17:23.490Z",
+  "updated_at": "2026-08-03T19:17:42.213Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110562:5168249058:2026-08-03T15:16:08Z:re_review",
-      "comment_id": "5168249058",
-      "comment_version_key": "5168249058:2026-08-03T15:16:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5168249058",
-      "comment_created_at": "2026-08-03T15:16:08Z",
-      "comment_updated_at": "2026-08-03T15:16:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "413f6210-8f4e-11f1-95a8-65d83eb92d72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110562,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T15:16:43.847Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/check-workflows-timeouts",
-        "head_sha": "72507d75d9d68ac020a60fe6aea74e754bec6c79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111171:5168271623:2026-08-03T15:17:57Z:re_review",
       "comment_id": "5168271623",
@@ -32847,6 +32799,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "22be65b0f25521b8a9261ee519c1020360ab0efb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118780:5169469461:2026-08-03T19:16:59Z:clawsweeper_needs_human",
+      "comment_id": "5169469461",
+      "comment_version_key": "5169469461:2026-08-03T19:16:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118780#issuecomment-5169469461",
+      "comment_created_at": "2026-08-03T17:11:48Z",
+      "comment_updated_at": "2026-08-03T19:16:59Z",
+      "comment_body_sha256": "64a459265e6c49f3eeae4086dea8d44c4c88ddfd4b9485ee2c6f2b2b762a687f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118780,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This shared formatter intentionally changes displayed provider metadata and attachment presentation across all three media tools. The branch should merge only with the cross-path test... (sha=bba95c0991079d9ba56ca4706927df10045e6585)",
+      "expected_head_sha": "bba95c0991079d9ba56ca4706927df10045e6585",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:17:42.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-generated-media-directive-boundary",
+        "head_sha": "bba95c0991079d9ba56ca4706927df10045e6585",
         "cluster_id": null,
         "job_path": null
       }
