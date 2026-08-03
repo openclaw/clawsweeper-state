@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:58:11.038Z",
+  "updated_at": "2026-08-03T13:58:17.338Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/discrawl:163:5163867387:2026-08-03T08:11:06Z:re_review",
-      "comment_id": "5163867387",
-      "comment_version_key": "5163867387:2026-08-03T08:11:06Z",
-      "comment_url": "https://github.com/openclaw/discrawl/pull/163#issuecomment-5163867387",
-      "comment_created_at": "2026-08-03T08:11:06Z",
-      "comment_updated_at": "2026-08-03T08:11:06Z",
-      "comment_body_sha256": "6c3e234564400eb59ca0244c7554aa2bc3dab69b7c2c35d596b1792e69a996f5",
-      "repo": "openclaw/discrawl",
-      "issue_number": 163,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T08:12:05.477Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-integrity-diagnostics",
-        "head_sha": "2e7cb6a80e4903be26c57c54bc1995763498990a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:35:5163935824:2026-08-03T08:17:18Z:clawsweeper_needs_human",
       "comment_id": "5163935824",
@@ -31931,6 +31884,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116885:5144212266:2026-08-03T13:57:41Z:clawsweeper_needs_human",
+      "comment_id": "5144212266",
+      "comment_version_key": "5144212266:2026-08-03T13:57:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116885#issuecomment-5144212266",
+      "comment_created_at": "2026-07-31T14:52:22Z",
+      "comment_updated_at": "2026-08-03T13:57:41Z",
+      "comment_body_sha256": "6b3481b6225eeefe2865e2bbf30a75c29f5ba57abe875beeb6b4b36379f937ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116885,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and the provided required-check snapshot has a failed compact lane and aggregate CI gate; landing should wait for checks to run against the exact ref... (sha=99bb62b63ea30d47144f6752ed94a56c99e94e9e)",
+      "expected_head_sha": "99bb62b63ea30d47144f6752ed94a56c99e94e9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:58:17.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa200-ui-preview-modal-responsive",
+        "head_sha": "99bb62b63ea30d47144f6752ed94a56c99e94e9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
