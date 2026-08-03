@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117669"
-mode: "plan"
-run_id: "30778349632"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30778349632"
+mode: "autonomous"
+run_id: "30775617626"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30775617626"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-03T02:09:41.201Z"
-canonical: "https://github.com/openclaw/openclaw/pull/98236"
-canonical_issue: null
-canonical_pr: "https://github.com/openclaw/openclaw/pull/98236"
-actions_total: 6
+published_at: "2026-08-03T03:39:14.099Z"
+canonical: "https://github.com/openclaw/openclaw/issues/117669"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/117669"
+canonical_pr: null
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30778349632](https://github.com/openclaw/clawsweeper/actions/runs/30778349632)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30775617626](https://github.com/openclaw/clawsweeper/actions/runs/30775617626)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/pull/98236
+Canonical: https://github.com/openclaw/openclaw/issues/117669
 
 ## Summary
 
-No repair PR is planned. The supplied live artifact shows #117669 was closed on August 3, 2026 after maintainer confirmation that #98236 landed the relevant session/transcript SQLite behavior on main; all former repair attempts are closed. The linked security-sensitive PR is quarantined separately.
+No implementation PR is needed: current main at 18c9f27e2de3cb1d3ac6555588a356d56c6fd9bb already applies the requested path-scoped transcript exception during short-term recall recording, and durable promotion still rejects contaminated transcript-shaped content. The checkout is clean with no branch delta.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ No repair PR is planned. The supplied live artifact shows #117669 was closed on 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #117669 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +66,11 @@ No repair PR is planned. The supplied live artifact shows #117669 was closed on 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #67580 | keep_closed | skipped | related | Closed historical context only; no closure or repair action is valid. |
-| #98236 | route_security | planned | security_sensitive | Quarantine this exact linked security-sensitive item; do not let it expand the ordinary closed-issue maintenance scope. |
-| #117669 | keep_closed | skipped | fixed_by_candidate | Already closed by maintainer confirmation of the landed fix; no new PR, comment, or closure action is appropriate. |
-| #117676 | keep_closed | skipped | superseded | Closed historical attempt with overly broad durable-promotion changes; no reopening or replacement is needed because the issue is already fixed. |
-| #117946 | keep_closed | skipped | superseded | Closed historical attempt; preserve attribution but do not revive it because the issue is already closed as fixed. |
-| #118325 | keep_closed | skipped | superseded | Already closed historical repair attempt; no additional action is valid. |
+| #117669 | keep_canonical | planned | canonical | The source-level regression is already repaired on current main. The job blocks closure, and no hydrated merged PR identifies the landing commit, so this result deliberately avoids an unsupported fixed-by-candidate or closure action. |
+| #67580 | keep_closed | skipped | related | Already closed; retained only as historical evidence for preserving the strict durable-promotion contamination boundary. |
+| #117676 | keep_closed | skipped | superseded | Already closed and superseded by the current main implementation, which scopes the exception to recall recording rather than durable promotion. |
+| #117946 | keep_closed | skipped | superseded | Already closed; its narrow repair intent is present on current main, so no replacement branch or credit-carrying PR is needed. |
+| #118325 | keep_closed | skipped | superseded | Already closed and unmerged; it is historical confirmation, not a candidate fix reference for mutation or closeout. |
 
 ## Needs Human
 
