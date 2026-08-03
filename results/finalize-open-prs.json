@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T16:22:26.241Z",
+  "generated_at": "2026-08-03T16:27:16.175Z",
   "count": 21,
   "summary": {
     "open_prs": 21,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 2,
+    "needs_rebase": 1,
     "mergeability_unknown": 0,
     "needs_checks": 21,
     "needs_review": 0,
     "needs_merge_preflight": 21,
-    "needs_result_backfill": 4
+    "needs_result_backfill": 3
   },
   "dispatch": {
     "enabled": false,
@@ -73,12 +73,32 @@
           }
         ]
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "30829062455",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30829062455",
+        "cluster_id": "issue-openclaw-openclaw-102190",
+        "published_at": "2026-08-03T16:26:28.575Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118751",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(agents): reject failed embedded image hydration",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
@@ -306,7 +326,7 @@
       "head_sha": "8adbba1dfd660b0d0dd428360cf59ebb32c8b254",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-03T16:19:36Z",
+      "updated_at": "2026-08-03T16:21:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -1123,31 +1143,45 @@
       "title": "fix(whatsapp): honor disabled self-chat admission",
       "url": "https://github.com/openclaw/openclaw/pull/117954",
       "branch": "clawsweeper/issue-openclaw-openclaw-117941",
-      "head_sha": "913b8f22a99bea15c14991197b9a72c532fc2160",
+      "head_sha": "dbaa3a4eeb096cd1cb2d9d1ed9008b363b78f794",
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
-      "updated_at": "2026-08-03T16:21:17Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
+      "updated_at": "2026-08-03T16:25:54Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 112,
         "counts": {
-          "CANCELLED": 12,
-          "SKIPPED": 45,
-          "SUCCESS": 74,
+          "CANCELLED": 3,
+          "SKIPPED": 40,
+          "SUCCESS": 49,
+          "IN_PROGRESS": 19,
           "NEUTRAL": 1
         },
         "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -1196,12 +1230,11 @@
         }
       },
       "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 117952,

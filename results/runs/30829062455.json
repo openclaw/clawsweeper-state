@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-102190",
+  "mode": "autonomous",
+  "run_id": "30829062455",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30829062455",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-102190.md",
+  "published_at": "2026-08-03T16:26:28.575Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/102190",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/102190",
+  "canonical_pr": null,
+  "summary": "Verified on current main f9baa3e89421772d92a3ec54248dfa390b089214: the embedded prompt dispatcher receives a structured image result with failedMediaCount but ignores it and can call the provider with only remaining images. CLI and plugin-harness siblings reject that exact condition before their model boundary. A narrow new fix PR should add the same rejection at the embedded dispatch owner and a focused no-submission regression. This read-only worker sandbox cannot apply or validate the patch itself.",
+  "actions": [
+    {
+      "target": "#102190",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#102190",
+      "candidate_fix": null,
+      "reason": "Real existing-behavior bug with an established sibling invariant: structured image hydration failure must stop provider submission rather than silently omit user input."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-102190",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#102190",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-102190; no configuration, provider policy, prompt marker, path-bearing error text, or parallel fallback is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118751",
+      "branch": "clawsweeper/issue-openclaw-openclaw-102190",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118751",
+      "commit": "7692569535418edbce6d1c57acc0777df543c4f3",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#102190",
+      "pr": "https://github.com/openclaw/openclaw/pull/118751",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118751",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118751",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): reject failed embedded image hydration",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
