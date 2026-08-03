@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T06:55:46.536Z",
+  "updated_at": "2026-08-03T06:55:51.896Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115807:5161989297:2026-08-03T03:28:17Z:re_review",
-      "comment_id": "5161989297",
-      "comment_version_key": "5161989297:2026-08-03T03:28:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115807#issuecomment-5161989297",
-      "comment_created_at": "2026-08-03T03:28:17Z",
-      "comment_updated_at": "2026-08-03T03:28:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115807,
-      "author": "lsr911",
-      "author_id": 18230762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T03:28:46.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-e2ee-room-encryptor-reprocess",
-        "head_sha": "928d6950d92e31dc99b9692869d775597aa6937e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110692:5161989083:2026-08-03T03:28:15Z:re_review",
       "comment_id": "5161989083",
@@ -31747,6 +31700,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-118371-state-dir-locks",
         "head_sha": "59fc0cce17b1433088f6e51803cd2fc3ecfac6eb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1018:5162103053:2026-08-03T06:55:12Z:clawsweeper_needs_human",
+      "comment_id": "5162103053",
+      "comment_version_key": "5162103053:2026-08-03T06:55:12Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1018#issuecomment-5162103053",
+      "comment_created_at": "2026-08-03T03:52:21Z",
+      "comment_updated_at": "2026-08-03T06:55:12Z",
+      "comment_body_sha256": "c064cab7c238134f2bbe5728ba1e7c4e54dd5d1d61ee43f62e79f379d96d3049",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1018,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This nine-file change alters the durable identity contract between GitHub comments, signed workflow receipts, the Worker queue, and Bay telemetry; a missed boundary case could leave a... (sha=513d29088c5deab30a73202ae8c6721ec3ec483e)",
+      "expected_head_sha": "513d29088c5deab30a73202ae8c6721ec3ec483e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T06:55:51.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawsweeper-legacy-terminal-receipts",
+        "head_sha": "513d29088c5deab30a73202ae8c6721ec3ec483e",
         "cluster_id": null,
         "job_path": null
       }
