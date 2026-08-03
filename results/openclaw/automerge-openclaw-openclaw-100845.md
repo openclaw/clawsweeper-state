@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-100845"
-mode: "plan"
-run_id: "30766148933"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30766148933"
-head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "30781275711"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30781275711"
+head_sha: "fd51157a108041712de66756c2617f7a118068cb"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-02T20:45:03.662Z"
+published_at: "2026-08-03T03:27:13.655Z"
 canonical: "#100845"
 canonical_issue: null
 canonical_pr: "#100845"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30766148933](https://github.com/openclaw/clawsweeper/actions/runs/30766148933)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30781275711](https://github.com/openclaw/clawsweeper/actions/runs/30781275711)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #100845
 
 ## Summary
 
-Keep PR #100845 as the canonical contributor path and repair its writable same-repository branch. The hydrated preflight marks the old PR head dirty against current main, so no merge action is planned; repair must rebase once, address the generic one-shot service eligibility review finding, preserve the no-duplicate Gateway transport behavior, and validate the resulting exact head.
+Make PR #100845 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Keep PR #100845 as the canonical contributor path and repair its writable same-r
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #100845 | fix_needed | planned | canonical | Repair the original contributor branch before any merge gate; retain source PR history and attribution. |
-| #100845 | build_fix_artifact | planned | canonical | Provide an auditable, bounded repair plan for the canonical PR rather than replacing or closing it. |
+| #100845 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
