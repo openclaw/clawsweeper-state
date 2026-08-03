@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T03:35:44.417Z",
+  "updated_at": "2026-08-03T03:35:56.192Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118245:5160657056:2026-08-02T22:36:10Z:clawsweeper_needs_human",
-      "comment_id": "5160657056",
-      "comment_version_key": "5160657056:2026-08-02T22:36:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118245#issuecomment-5160657056",
-      "comment_created_at": "2026-08-02T22:32:08Z",
-      "comment_updated_at": "2026-08-02T22:36:10Z",
-      "comment_body_sha256": "2ad698e0571fdaddd00353317989196075fb1112555d807b6ff66f5a70bf4269",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118245,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and static checks, but it does not include after-fix runtime output demonstrating a real transient failure fo... (sha=6c9ef997b933bc524df3234a3f5b1694bd0961c3)",
-      "expected_head_sha": "6c9ef997b933bc524df3234a3f5b1694bd0961c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T23:01:14.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/single-flight-adoption",
-        "head_sha": "6c9ef997b933bc524df3234a3f5b1694bd0961c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118265:5160672196:2026-08-02T22:54:07Z:clawsweeper_needs_human",
       "comment_id": "5160672196",
@@ -32530,6 +32497,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118396:5162021905:2026-08-03T03:35:17Z:re_review",
+      "comment_id": "5162021905",
+      "comment_version_key": "5162021905:2026-08-03T03:35:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118396#issuecomment-5162021905",
+      "comment_created_at": "2026-08-03T03:35:17Z",
+      "comment_updated_at": "2026-08-03T03:35:17Z",
+      "comment_body_sha256": "b52db2423bb0b985e7f133aaf315e0956b949c4269788207d6a72c02dbe6570e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118396,
+      "author": "nvtoroy",
+      "author_id": 90771587,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T03:35:54.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/btw-prepared-runtime-owner-key",
+        "head_sha": "eb510cbd3dfdbd99e475b70d20ef27c9ae9269ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
