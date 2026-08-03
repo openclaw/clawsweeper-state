@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing macOS signing bug where `CODESIGN_TIMESTAMP=auto` chooses `--timestamp=none` for a hash-pinned Developer ID Application identity. In `scripts/codesign-mac-app.sh`, retain the exact `SIGN_IDENTITY` value for every `codesign --sign` invocation, but determine timestamp eligibility by resolving a SHA-1 identity through `security find-identity -p codesigning -v` and checking the matched certificate display name. Preserve name-form, auto-selected, ad-hoc, and explicit on/off behavior. Add focused regression coverage in `test/scripts/codesign-mac-app.test.ts` using the existing fake-command seam; update `docs/platforms/mac/signing.md` to document hash-form identities. Do not add a config option or fallback path. Do not edit `CHANGELOG.md`. Before opening a PR, establish the failing regression; then run the focused test and, on a real macOS host with a Developer ID hash, package/sign an app and show `codesign -dvv` contains `Timestamp=` with private data redacted.
+Fix the existing macOS signing behavior so `CODESIGN_TIMESTAMP=auto` selects `--timestamp` for a Developer ID Application certificate whether `SIGN_IDENTITY` is supplied by name or certificate SHA-1 hash. Keep explicit `on` and `off` modes and ad-hoc signing unchanged. Repair the signing-script owner boundary rather than adding configuration or broadening timestamp behavior for non-Developer-ID certificates. Add focused captured-argument regression coverage for both identity forms, then establish macOS signed-artifact proof that the hash-pinned app reports a trusted `Timestamp=` value.
 
 Likely files:
 
@@ -78,8 +78,8 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs test/scripts/codesign-mac-app.test.ts
-- On a macOS signing host: `SIGN_IDENTITY=<redacted-SHA-1> CODESIGN_TIMESTAMP=auto scripts/package-mac-app.sh`, then confirm `codesign -dvv dist/OpenClaw.app` includes `Timestamp=`.
-- Review name-form Developer ID, auto-selected identity, ad-hoc signing, and explicit `CODESIGN_TIMESTAMP=on|off` behavior.
+- On macOS, sign an app with a hash-pinned Developer ID identity and verify `codesign -dvv` reports `Timestamp=` for the resulting app.
+- Verify `CODESIGN_TIMESTAMP=on`, `off`, and ad-hoc signing retain their existing behavior.
 
 ## Operator Prompt
 
