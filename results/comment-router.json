@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:20:22.193Z",
+  "updated_at": "2026-08-03T16:20:23.815Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115390:5118745256:2026-08-03T11:54:06Z:clawsweeper_needs_human",
-      "comment_id": "5118745256",
-      "comment_version_key": "5118745256:2026-08-03T11:54:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115390#issuecomment-5118745256",
-      "comment_created_at": "2026-07-29T13:58:03Z",
-      "comment_updated_at": "2026-08-03T11:54:06Z",
-      "comment_body_sha256": "47ad13b3402fc71866862deafcb03a0fb52bde249c99f543193fee06ebee9467",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115390,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and generation checks, but no inspectable after-fix generated-client or node-host cancellation-consumption artifact i... (sha=7c8dc5f5f221ed4cc7238ad38ae04fec95de1584)",
-      "expected_head_sha": "7c8dc5f5f221ed4cc7238ad38ae04fec95de1584",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:53:09.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/node-invoke-cancel-contract",
-        "head_sha": "7c8dc5f5f221ed4cc7238ad38ae04fec95de1584",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116327:5129026353:2026-08-03T12:30:13Z:clawsweeper_auto_repair",
       "comment_id": "5129026353",
@@ -31793,6 +31760,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-03T16:19:30Z:clawsweeper_needs_human",
+      "comment_id": "4854073498",
+      "comment_version_key": "4854073498:2026-08-03T16:19:30Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
+      "comment_created_at": "2026-07-01T11:37:33Z",
+      "comment_updated_at": "2026-08-03T16:19:30Z",
+      "comment_body_sha256": "3d27b439a94f76badefd07b037f7310831c3af89777656f8d8f5e0b345a9526c",
+      "repo": "openclaw/clawscan",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging unvalidated tool upgrades into the default sandbox could change scanner availability, output, verdicts, or failure rates for existing Docker-mode users without an upgrade comp... (sha=bb644fe1646cbd7f74c81947259ec5b042fad776)",
+      "expected_head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T16:20:23.815Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/runtime-tool-updates",
+        "head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
