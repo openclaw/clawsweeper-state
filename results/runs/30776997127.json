@@ -1,0 +1,136 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-116747",
+  "mode": "autonomous",
+  "run_id": "30776997127",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30776997127",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md",
+  "published_at": "2026-08-03T02:04:42.552Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/116747",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/116747",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main `f2af4e97b356570dd0cadf66127b1449a0f8c085`: extension-profile deep doctor returns a warning without exercising the page command path, and relay CDP timeouts discard the already-routed tab and method. The repair is narrow and ready for a new fix PR, but this worker's filesystem is read-only, so it cannot create the required branch, patch, or changed-tree validation evidence.",
+  "actions": [
+    {
+      "target": "#116747",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#116747",
+      "candidate_fix": null,
+      "reason": "Issue #116747 is a reproducible, non-security browser-plugin diagnostic defect with a narrow existing-path repair."
+    },
+    {
+      "target": "#113955",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#116747",
+      "candidate_fix": null,
+      "reason": "Keep #113955 open as its own cold-connection recovery/product-decision track; it is not covered by this extension-relay diagnostic repair."
+    },
+    {
+      "target": "#113921",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#116747",
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116747",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#116747",
+      "candidate_fix": null,
+      "reason": "Executor must apply the narrow artifact in a writable checkout, then create or update `clawsweeper/issue-openclaw-openclaw-116747` and open the labeled fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-116747",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#116747",
+      "candidate_fix": null,
+      "reason": "Blocked solely on the immutable target checkout; the accompanying artifact is a new-fix-PR plan."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118361",
+      "branch": "clawsweeper/issue-openclaw-openclaw-116747",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118361",
+      "commit": "2532feb490cb7b4e05df868ec4296a0364484b2a",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#116747",
+      "pr": "https://github.com/openclaw/openclaw/pull/118361",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118361",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118361",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(browser): make extension deep doctor probe page snapshots",
+      "idempotency_key": null,
+      "reason": "checks are not clean: check-lint: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
