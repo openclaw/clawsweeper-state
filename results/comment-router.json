@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:56:49.256Z",
+  "updated_at": "2026-08-03T00:56:58.428Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111343:5015778674:2026-07-19T12:50:17Z:re_review",
-      "comment_id": "5015778674",
-      "comment_version_key": "5015778674:2026-07-19T12:50:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111343#issuecomment-5015778674",
-      "comment_created_at": "2026-07-19T12:50:17Z",
-      "comment_updated_at": "2026-07-19T12:50:17Z",
-      "comment_body_sha256": "51ababeaaafe90ac9f0731ed8963c9b141a19f7e250db9bbea862563b0c2e15a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111343,
-      "author": "mjnkao",
-      "author_id": 224045620,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:20:24.111Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118206:5160344774:2026-08-02T21:16:51Z:clawsweeper_needs_human",
       "comment_id": "5160344774",
@@ -32682,6 +32655,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118338:5161235440:2026-08-03T00:56:25Z:clawsweeper_needs_human",
+      "comment_id": "5161235440",
+      "comment_version_key": "5161235440:2026-08-03T00:56:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118338#issuecomment-5161235440",
+      "comment_created_at": "2026-08-03T00:56:25Z",
+      "comment_updated_at": "2026-08-03T00:56:25Z",
+      "comment_body_sha256": "165b8951683dfea4e4113b7d624b46c9386ae130983361d2cfe2898ccaff3e6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118338,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal transcript demonstrates a proposed heartbeat execution-mode repair, not the cron policy behavior in the submitte...; Review finding: [P1] Replace the unrelated cron patch with the heartbeat fix — src/agents/tools/cron-tool-creator-cap.ts:190-207 - [medium] Scope mismatch hides a tool-authority c... (sha=89da4458965476970bd4bbd558c4d6e6ebac9bcc)",
+      "expected_head_sha": "89da4458965476970bd4bbd558c4d6e6ebac9bcc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T00:56:58.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-toolsallow-cap-synthesis-117299",
+        "head_sha": "89da4458965476970bd4bbd558c4d6e6ebac9bcc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
