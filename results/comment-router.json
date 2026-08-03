@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:04:06.631Z",
+  "updated_at": "2026-08-03T01:06:14.045Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118020:5160409321:2026-08-02T21:24:39Z:re_review",
-      "comment_id": "5160409321",
-      "comment_version_key": "5160409321:2026-08-02T21:24:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118020#issuecomment-5160409321",
-      "comment_created_at": "2026-08-02T21:24:39Z",
-      "comment_updated_at": "2026-08-02T21:24:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118020,
-      "author": "m3talsmith",
-      "author_id": 9272,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T21:25:09.268Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "local-model-onboarding/ollama",
-        "head_sha": "46fe0c9e04fa5e801889ee915cc823b40a0c42d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118210:5160409548:2026-08-02T21:24:43Z:clawsweeper_needs_human",
       "comment_id": "5160409548",
@@ -32682,6 +32635,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118321:5161071739:2026-08-03T01:00:56Z:clawsweeper_auto_repair",
+      "comment_id": "5161071739",
+      "comment_version_key": "5161071739:2026-08-03T01:00:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118321#issuecomment-5161071739",
+      "comment_created_at": "2026-08-03T00:21:08Z",
+      "comment_updated_at": "2026-08-03T01:00:56Z",
+      "comment_body_sha256": "d5af1f0d224d821c668da463147f09bf28cca66ca2d8cf1a345cca29db727321",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118321,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=884bb3eb53bf6af9d86c16d1cd81953461c4eb7d)",
+      "expected_head_sha": "884bb3eb53bf6af9d86c16d1cd81953461c4eb7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T01:06:14.045Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openclaw-testing-skill-selection-20260802",
+        "head_sha": "884bb3eb53bf6af9d86c16d1cd81953461c4eb7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
