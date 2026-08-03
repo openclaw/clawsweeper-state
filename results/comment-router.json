@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:50:54.261Z",
+  "updated_at": "2026-08-03T14:50:58.040Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117259:5150282575:2026-08-03T09:17:25Z:clawsweeper_auto_repair",
-      "comment_id": "5150282575",
-      "comment_version_key": "5150282575:2026-08-03T09:17:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117259#issuecomment-5150282575",
-      "comment_created_at": "2026-08-01T06:55:33Z",
-      "comment_updated_at": "2026-08-03T09:17:25Z",
-      "comment_body_sha256": "47d95c367d9dde100120910643e37bfefd110fe46791ccaa4c00030ca6d8b923",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117259,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7c0c6198fd5fadc1d8824a3b2762a57320fc5370)",
-      "expected_head_sha": "7c0c6198fd5fadc1d8824a3b2762a57320fc5370",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:41:00.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/buzz-cold-start-recovery-watermark",
-        "head_sha": "7c0c6198fd5fadc1d8824a3b2762a57320fc5370",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117299:5150606511:2026-08-03T09:54:15Z:clawsweeper_needs_human",
       "comment_id": "5150606511",
@@ -31755,6 +31722,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:311:5167920817:2026-08-03T14:50:16Z:re_review",
+      "comment_id": "5167920817",
+      "comment_version_key": "5167920817:2026-08-03T14:50:16Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/311#issuecomment-5167920817",
+      "comment_created_at": "2026-08-03T14:50:16Z",
+      "comment_updated_at": "2026-08-03T14:50:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "a487c870-8f4a-11f1-99a8-cf4f2efd60c1",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 311,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T14:50:54.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/daemon-cancel-sleep",
+        "head_sha": "8be2fbd55feff332796abaa825ebe6ba9d4e94e2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
