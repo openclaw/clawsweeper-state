@@ -1,0 +1,124 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118772",
+  "mode": "autonomous",
+  "run_id": "30835070832",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835070832",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118772.md",
+  "published_at": "2026-08-03T17:42:56.071Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118772",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118772",
+  "canonical_pr": null,
+  "summary": "Issue #118772 remains a valid, narrow non-security repair on current main (94f431417b251470546e9555cdde02695a0afcd2). The reply accounting owner marks any configured CLI-provider run's aggregate usage as a fresh context snapshot even when that run supplies no usable final-call snapshot; session persistence then records the aggregate prompt total as fresh, and CLI compaction trusts it. Restrict fresh-context attribution to an actual final-call usage snapshot or explicit prompt snapshot, preserving aggregate usage only for billing/cost accounting.",
+  "actions": [
+    {
+      "target": "#117314",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118772",
+      "candidate_fix": null,
+      "reason": "Do not mutate an already-closed historical issue."
+    },
+    {
+      "target": "#117511",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118772",
+      "candidate_fix": null,
+      "reason": "Do not mutate an already-closed historical issue."
+    },
+    {
+      "target": "#118772",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118772",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is available: do not infer context-snapshot freshness from provider classification alone."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118772",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118772",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited implementation PR from clawsweeper/issue-openclaw-openclaw-118772."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118796",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118772",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118796",
+      "commit": "89a7dbd93c9c3548e578f52b750d269bd5528dc8",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118772",
+      "pr": "https://github.com/openclaw/openclaw/pull/118796",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118796",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118796",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(session): require a real context snapshot for CLI usage",
+      "idempotency_key": null,
+      "reason": "checks are not clean: security-fast: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

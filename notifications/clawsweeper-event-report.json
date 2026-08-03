@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T17:38:38.233Z",
+  "generated_at": "2026-08-03T17:46:20.090Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30833215966.json",
+  "run_record": "results/runs/30835070832.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30833215966",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30835070832",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#118796:merge_canonical:blocked:checks are not clean: security-fast: FAILURE, openclaw/ci-gate: FAILURE",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#118796",
+      "title": "fix(session): require a real context snapshot for CLI usage",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30835070832",
+      "cluster_id": "issue-openclaw-openclaw-118772",
+      "hook_run_id": "4534dc54-94bc-4b16-8be5-32561bf4d6a7",
+      "url": "https://github.com/openclaw/openclaw/pull/118796"
+    },
+    {
+      "key": "clawsweeper.fix_pr_opened:openclaw/openclaw:#118796:open_fix_pr:opened:89a7dbd93c9c3548e578f52b750d269bd5528dc8",
+      "type": "clawsweeper.fix_pr_opened",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#118796",
+      "title": null,
+      "action": "open_fix_pr",
+      "event_status": "opened",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30835070832",
+      "cluster_id": "issue-openclaw-openclaw-118772",
+      "hook_run_id": "6932a44e-933f-43dc-8e6d-4c7a95bcbd84",
+      "url": "https://github.com/openclaw/openclaw/pull/118796"
+    }
+  ]
 }
