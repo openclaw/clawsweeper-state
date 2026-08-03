@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:00:04.450Z",
+  "updated_at": "2026-08-03T00:00:05.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114645:5094359137:2026-08-02T18:21:16Z:clawsweeper_needs_human",
-      "comment_id": "5094359137",
-      "comment_version_key": "5094359137:2026-08-02T18:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114645#issuecomment-5094359137",
-      "comment_created_at": "2026-07-27T17:06:31Z",
-      "comment_updated_at": "2026-08-02T18:21:16Z",
-      "comment_body_sha256": "20775b07b8df741b73dd3ed68888bd4be20b22ce3390e3824125c2b67a7dc8d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114645,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Decide durable secret retirement policy** - The new durable map is bounded but has no owner-scoped deletion path, so a rotated SecretRef form remains in exact-value redaction until late...; Review finding: [low] Decide durable secret retirement policy — src/logging/secret-redaction-registry.ts:6 (sha=5074408b1020089bfee1acc6cea06cbc57f98620)",
-      "expected_head_sha": "5074408b1020089bfee1acc6cea06cbc57f98620",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T20:53:34.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secret-redaction-durable-tier",
-        "head_sha": "5074408b1020089bfee1acc6cea06cbc57f98620",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113987:5098310342:2026-08-02T20:33:17Z:clawsweeper_auto_repair",
       "comment_id": "5098310342",
@@ -32295,6 +32262,53 @@
         "kind": "pull_request",
         "branch": "jesse/signal-qr-setup",
         "head_sha": "4adae9ccd4060c96a2eefc123208a0ac036ce56c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114173:5160970360:2026-08-02T23:59:23Z:re_review",
+      "comment_id": "5160970360",
+      "comment_version_key": "5160970360:2026-08-02T23:59:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5160970360",
+      "comment_created_at": "2026-08-02T23:59:23Z",
+      "comment_updated_at": "2026-08-02T23:59:23Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114173,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T00:00:01.521Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-web",
+        "head_sha": "0504f26ed0f4739ff2fc02a898907cddc3001465",
         "cluster_id": null,
         "job_path": null
       },
