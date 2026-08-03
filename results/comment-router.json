@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:16:55.524Z",
+  "updated_at": "2026-08-03T05:17:09.688Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:983:5147435377:2026-07-31T21:03:00Z:re_review",
-      "comment_id": "5147435377",
-      "comment_version_key": "5147435377:2026-07-31T21:03:00Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/983#issuecomment-5147435377",
-      "comment_created_at": "2026-07-31T21:03:00Z",
-      "comment_updated_at": "2026-07-31T21:03:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 983,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:25:58.313Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:983:5147701047:2026-07-31T21:40:03Z:re_review",
       "comment_id": "5147701047",
@@ -31627,6 +31600,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T05:16:55.524Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116404:5131676270:2026-08-03T05:13:40Z:clawsweeper_needs_human",
+      "comment_id": "5131676270",
+      "comment_version_key": "5131676270:2026-08-03T05:13:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116404#issuecomment-5131676270",
+      "comment_created_at": "2026-07-30T13:50:12Z",
+      "comment_updated_at": "2026-08-03T05:13:40Z",
+      "comment_body_sha256": "71d08f57143e32b91238d4506977410dced71196b442811f0400588780c5cbaa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116404,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - This intentionally permits the reply to proceed with an over-budget session after a transient compaction-provider outage; the downstream model call can still fail for context size, so... (sha=63be47c9bead3d0dcb726e3744baffc6bf41de0a)",
+      "expected_head_sha": "63be47c9bead3d0dcb726e3744baffc6bf41de0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T05:17:09.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/100778-preflight-compaction-transient-skip",
+        "head_sha": "63be47c9bead3d0dcb726e3744baffc6bf41de0a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
