@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-03T02:55:27.261Z",
+  "updated_at": "2026-08-03T02:55:33.664Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-02T22:38:15Z:clawsweeper_auto_merge",
-      "comment_id": "5157206715",
-      "comment_version_key": "5157206715:2026-08-02T22:38:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
-      "comment_created_at": "2026-08-02T10:31:46Z",
-      "comment_updated_at": "2026-08-02T22:38:15Z",
-      "comment_body_sha256": "70cf5042c93c6d43a85aa2a96c34321258f46cea5f0684213dc3ac7855f5e100",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117951,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=f6c642876e300b2449f70c04fa56d8f0a0913fbb); PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-02T22:38:49.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-        "head_sha": "f6c642876e300b2449f70c04fa56d8f0a0913fbb",
-        "cluster_id": "automerge-openclaw-openclaw-117951",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111813:5025373748:2026-08-02T22:38:15Z:clawsweeper_auto_repair",
       "comment_id": "5025373748",
@@ -32548,6 +32495,39 @@
         "kind": "pull_request",
         "branch": "feature/claude-cli-fast-mode",
         "head_sha": "e4cc067a4b6e133041ccd07f79d9a989acdbbf8e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-03T02:54:20Z:clawsweeper_needs_human",
+      "comment_id": "5093836900",
+      "comment_version_key": "5093836900:2026-08-03T02:54:20Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
+      "comment_created_at": "2026-07-27T16:16:21Z",
+      "comment_updated_at": "2026-08-03T02:54:20Z",
+      "comment_body_sha256": "b7c3fb16084d377923299a238ca33c3d98fa990846bd0124e271ef75e0c68942",
+      "repo": "openclaw/crabline",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - matrix-js-sdk 42.0.0 is a major update to the client that validates Crabline’s Matrix protocol fidelity; merging without a passing SDK-driven integration run could leave the supported... (sha=871844c43e665f190a78259c33f2b24f6a326479)",
+      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T02:55:33.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
+        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
         "cluster_id": null,
         "job_path": null
       }
