@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:01:25.949Z",
+  "updated_at": "2026-08-03T19:01:28.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/wacli:337:5167920541:2026-08-03T14:50:15Z:re_review",
-      "comment_id": "5167920541",
-      "comment_version_key": "5167920541:2026-08-03T14:50:15Z",
-      "comment_url": "https://github.com/openclaw/wacli/pull/337#issuecomment-5167920541",
-      "comment_created_at": "2026-08-03T14:50:15Z",
-      "comment_updated_at": "2026-08-03T14:50:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/wacli",
-      "issue_number": 337,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T14:50:50.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-client-overall-timeout",
-        "head_sha": "92722946eff12fbe5a82ed8e00ac5ed063a67be1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/wacli:337:5166380946:2026-08-03T14:49:48Z:clawsweeper_auto_repair",
       "comment_id": "5166380946",
@@ -32815,6 +32768,39 @@
         "kind": "pull_request",
         "branch": "codex/copilot-credits-used-2593",
         "head_sha": "a4f6bcd5439a5718d7dc9202021f18e525426a9b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118828:5170094716:2026-08-03T19:00:41Z:clawsweeper_needs_human",
+      "comment_id": "5170094716",
+      "comment_version_key": "5170094716:2026-08-03T19:00:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118828#issuecomment-5170094716",
+      "comment_created_at": "2026-08-03T18:13:59Z",
+      "comment_updated_at": "2026-08-03T19:00:41Z",
+      "comment_body_sha256": "be07815b39d67bc3cce24d7ee0030b599b1f5ff34bf4ff3b1b34c0533892b73c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118828,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The schema projection is consumed by external plugin configurations. Before merge, an owner should confirm that every explicitly named accounts property is intended to be an account s... (sha=c36f073c3e88f29d9c9c66578f5026f29738c73e)",
+      "expected_head_sha": "c36f073c3e88f29d9c9c66578f5026f29738c73e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:01:28.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-external-channel-named-account-heartbeat",
+        "head_sha": "c36f073c3e88f29d9c9c66578f5026f29738c73e",
         "cluster_id": null,
         "job_path": null
       }
