@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:02:25.836Z",
+  "updated_at": "2026-08-03T01:04:06.631Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:92:5160408642:2026-08-02T21:24:28Z:clawsweeper_needs_human",
-      "comment_id": "5160408642",
-      "comment_version_key": "5160408642:2026-08-02T21:24:28Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/92#issuecomment-5160408642",
-      "comment_created_at": "2026-08-02T21:24:28Z",
-      "comment_updated_at": "2026-08-02T21:24:28Z",
-      "comment_body_sha256": "9b0aa912ec3b7b71daf44605b46503e5a278a2fc4cbd55f035fab522502fdde0",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 92,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The global native Windows mapper changes ERROR_ACCESS_DENIED from the previously native-only EACCES to EPERM; callers that compare only EACCES need the documented dual-code compatibil... (sha=9312d5d0252274b472a4f2cb16bf13d03ed587ee)",
-      "expected_head_sha": "9312d5d0252274b472a4f2cb16bf13d03ed587ee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:25:04.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sidecar-lock-native",
-        "head_sha": "9312d5d0252274b472a4f2cb16bf13d03ed587ee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118020:5160409321:2026-08-02T21:24:39Z:re_review",
       "comment_id": "5160409321",
@@ -32668,6 +32635,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-08-03T01:03:08Z:clawsweeper_auto_repair",
+      "comment_id": "5160944009",
+      "comment_version_key": "5160944009:2026-08-03T01:03:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118303#issuecomment-5160944009",
+      "comment_created_at": "2026-08-02T23:51:57Z",
+      "comment_updated_at": "2026-08-03T01:03:08Z",
+      "comment_body_sha256": "aa01bbfbefbc0a62ab80be87119ce718700a2bb253a32e7af2cc8395f1af4b7f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d9a6fa0237a6442a0f504529423dd96334f33742)",
+      "expected_head_sha": "d9a6fa0237a6442a0f504529423dd96334f33742",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T01:03:50.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-116601",
+        "head_sha": "d9a6fa0237a6442a0f504529423dd96334f33742",
+        "cluster_id": "automerge-openclaw-openclaw-118303",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118303.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
