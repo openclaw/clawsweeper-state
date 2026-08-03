@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T23:08:09.693Z",
+  "updated_at": "2026-08-03T23:08:46.591Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clickclack:147:5170318854:2026-08-03T18:37:31Z:re_review",
-      "comment_id": "5170318854",
-      "comment_version_key": "5170318854:2026-08-03T18:37:31Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/147#issuecomment-5170318854",
-      "comment_created_at": "2026-08-03T18:37:31Z",
-      "comment_updated_at": "2026-08-03T18:37:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clickclack",
-      "issue_number": 147,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T19:19:50.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "security/callback-azure-platform-vip",
-        "head_sha": "b3f58ec245128b7056d55e0d3b8c2fe5052612b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:147:5168517034:2026-08-03T19:19:10Z:clawsweeper_needs_human",
       "comment_id": "5168517034",
@@ -32209,6 +32162,39 @@
         "kind": "pull_request",
         "branch": "codex/agent-id-p0-observable-foundation",
         "head_sha": "9f64c3a5cf4692af5ef5879605018569d657264c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119002:5172689476:2026-08-03T23:07:58Z:clawsweeper_needs_human",
+      "comment_id": "5172689476",
+      "comment_version_key": "5172689476:2026-08-03T23:07:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119002#issuecomment-5172689476",
+      "comment_created_at": "2026-08-03T23:07:58Z",
+      "comment_updated_at": "2026-08-03T23:07:58Z",
+      "comment_body_sha256": "72ae0a8027079f8082505b01381d6c86019a23660ffae8bc8fc51454b4fa24f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds isTransientNetworkError to the existing plugin SDK retry-runtime surface; external plugins could begin relying on its broad retry semantics unless maintainers confirm and... (sha=9e0517295e619cdc7e77cebc15126fa4b6365317)",
+      "expected_head_sha": "9e0517295e619cdc7e77cebc15126fa4b6365317",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T23:08:46.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr-118994-network-parity",
+        "head_sha": "9e0517295e619cdc7e77cebc15126fa4b6365317",
         "cluster_id": null,
         "job_path": null
       }
