@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T17:34:36.315Z",
+  "updated_at": "2026-08-03T17:34:50.923Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-08-03T13:38:37Z:clawsweeper_auto_repair",
-      "comment_id": "5167057200",
-      "comment_version_key": "5167057200:2026-08-03T13:38:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118679#issuecomment-5167057200",
-      "comment_created_at": "2026-08-03T13:38:37Z",
-      "comment_updated_at": "2026-08-03T13:38:37Z",
-      "comment_body_sha256": "79a77b4a7de1999332b49d13d5c7ff358e23da1666f7ec6bae1c29045ec0faac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118679,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=694b04c32abc00cdf7b860aea8a660feab50e12a)",
-      "expected_head_sha": "694b04c32abc00cdf7b860aea8a660feab50e12a",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T13:39:44.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118669",
-        "head_sha": "694b04c32abc00cdf7b860aea8a660feab50e12a",
-        "cluster_id": "automerge-openclaw-openclaw-118679",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118679.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118679.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1230:5167069264:2026-08-03T13:39:44Z:clawsweeper_auto_repair",
       "comment_id": "5167069264",
@@ -32650,6 +32603,39 @@
         "kind": "pull_request",
         "branch": "fix/118772-total-tokens-cumulative",
         "head_sha": "483b0127fabe3029195fb5071a1907c8e9a26b4c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118203:5160338335:2026-08-03T17:34:06Z:clawsweeper_needs_human",
+      "comment_id": "5160338335",
+      "comment_version_key": "5160338335:2026-08-03T17:34:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118203#issuecomment-5160338335",
+      "comment_created_at": "2026-08-02T21:05:21Z",
+      "comment_updated_at": "2026-08-03T17:34:06Z",
+      "comment_body_sha256": "6afddc92724432718d157bb1f553df5bfaca3f5d98fa27f2246d62b181f7da41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a public plugin SDK lifecycle contract: external plugins depend on the default no-throw behavior and may rely on source-less same-plugin refresh semantics. (sha=dd9d7ea2a1707e6cd3df6687c7e3d815978769ed)",
+      "expected_head_sha": "dd9d7ea2a1707e6cd3df6687c7e3d815978769ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T17:34:50.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-route-registration-strict",
+        "head_sha": "dd9d7ea2a1707e6cd3df6687c7e3d815978769ed",
         "cluster_id": null,
         "job_path": null
       }
