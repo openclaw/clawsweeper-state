@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118806"
 mode: "autonomous"
-run_id: "30854005030"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30854005030"
+run_id: "30849756371"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30849756371"
 head_sha: "326104b08f93941c21ab7afd2cd57a60b51ff583"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-03T21:53:08.768Z"
+published_at: "2026-08-03T20:44:34.757Z"
 canonical: "#118806"
-canonical_issue: "#118776"
+canonical_issue: null
 canonical_pr: "#118806"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30854005030](https://github.com/openclaw/clawsweeper/actions/runs/30854005030)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30849756371](https://github.com/openclaw/clawsweeper/actions/runs/30849756371)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #118806
 
 ## Summary
 
-#118806 is the canonical, narrowly scoped repair for #118776. Current main still leaves `sessions_yield` outside the leaf deny list while the leaf prompt universally recommends it; the PR targets both owner surfaces and adds focused tests. It remains non-merge-ready because hydrated CI reports `security-fast` and `openclaw/ci-gate` failures without their diagnostics, so the next deterministic step is to repair and revalidate the writable same-repo branch.
+Make PR #118806 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: #118806
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/118776 | keep_related | planned | related | Keep the source issue open while its canonical PR is repaired and validated; current failing required checks block any fixed-by-candidate closeout. |
-| https://github.com/openclaw/openclaw/pull/118806 | build_fix_artifact | planned | canonical | Repair the existing canonical branch rather than replace it: it is focused, writable, already credits #118776's reporter, and has no hydrated human or review-bot finding beyond the failing-check repair loop. |
+| #118806 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
