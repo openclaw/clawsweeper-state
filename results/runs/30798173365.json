@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115853",
+  "mode": "autonomous",
+  "run_id": "30798173365",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30798173365",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115853.md",
+  "published_at": "2026-08-03T09:14:16.885Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115853",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115853",
+  "canonical_pr": null,
+  "summary": "#115853 remains a narrow, non-security xAI failover bug on current main 0cad02313a9cbc6d1e60dfcb1d44b1bde523e3fb. The xAI provider matcher omits both reported billing phrases, while the current structured failover path preserves a provider-hook classification ahead of ambiguous HTTP 403 auth handling. A new same-repo fix PR is appropriate, but this worker cannot write the required branch delta or run the requested tests because the target checkout is filesystem read-only.",
+  "actions": [
+    {
+      "target": "#115853",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "The issue remains the canonical open report and the only correct implementation target."
+    },
+    {
+      "target": "#115871",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "Already closed; do not reopen, close, or merge it from this cluster."
+    },
+    {
+      "target": "#115881",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "Already closed; preserve its investigation context without treating it as a viable fix."
+    },
+    {
+      "target": "#117341",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115853",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "Create or update the designated same-repo branch with the narrow artifact below; no config, default, shared matcher, dependency, or changelog change is justified."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115853",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115853",
+      "candidate_fix": null,
+      "reason": "The deterministic executor can implement and validate this small, explicit repair on clawsweeper/issue-openclaw-openclaw-115853."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
