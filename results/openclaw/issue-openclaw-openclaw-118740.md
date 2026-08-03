@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118740"
-mode: "autonomous"
-run_id: "30850008418"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30850008418"
-head_sha: "326104b08f93941c21ab7afd2cd57a60b51ff583"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-03T20:31:07.757Z"
+mode: "plan"
+run_id: "30845323865"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30845323865"
+head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-03T20:50:50.571Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118740"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30850008418](https://github.com/openclaw/clawsweeper/actions/runs/30850008418)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30845323865](https://github.com/openclaw/clawsweeper/actions/runs/30845323865)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 ## Summary
 
-Current main `f73a7809a5e6d8c55427aa746a9ae0551ac3c5cc` still has the reported defect: in auto mode the script initializes `--timestamp=none` and enables `--timestamp` only when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A 40-character SHA-1 selector therefore deterministically remains unsigned by Apple’s timestamp service. The fix is a narrow, non-security script/test/docs repair, but this checkout is read-only, has no installed dependencies, and runs on Linux without macOS `security` or `codesign` tooling.
+#118740 remains the open canonical bug. Current main c12579ae57debb32c9ab5a2b7f0d0cce400f4bab still chooses CODESIGN_TIMESTAMP=auto from the literal SIGN_IDENTITY value, so a SHA-1-pinned Developer ID Application certificate receives --timestamp=none. Plan one narrow non-security fix PR; no candidate PR is hydrated.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main `f73a7809a5e6d8c55427aa746a9ae0551ac3c5cc` still has the reported d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118740 | fix_needed | blocked | canonical | A real existing-behavior bug remains on current main and has a clear owner boundary. The current worker cannot write the repair branch or execute its required focused and macOS validations. |
-| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | The planned artifact is narrow, keeps the established signing policy, and requires no new configuration, dependency, fallback path, or security-boundary decision. |
+| #118740 | fix_needed | planned | canonical | Current main still has the source-proven bounded defect with a clear script owner and narrow regression seam. |
+| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | The canonical path is one focused new implementation PR from clawsweeper/issue-openclaw-openclaw-118740. |
 
 ## Needs Human
 
