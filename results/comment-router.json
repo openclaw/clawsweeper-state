@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T20:09:48.957Z",
+  "updated_at": "2026-08-03T20:11:31.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110569:5103219948:2026-07-28T10:56:05Z:re_review",
-      "comment_id": "5103219948",
-      "comment_version_key": "5103219948:2026-07-28T10:56:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5103219948",
-      "comment_created_at": "2026-07-28T10:56:05Z",
-      "comment_updated_at": "2026-07-28T10:56:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110569,
-      "author": "RileyJJY",
-      "author_id": 255106757,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T16:08:19.858Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118744:5168831683:2026-08-03T16:08:23Z:clawsweeper_auto_repair",
       "comment_id": "5168831683",
@@ -32355,6 +32328,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118897:5171096596:2026-08-03T20:10:52Z:clawsweeper_needs_human",
+      "comment_id": "5171096596",
+      "comment_version_key": "5171096596:2026-08-03T20:10:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118897#issuecomment-5171096596",
+      "comment_created_at": "2026-08-03T19:59:49Z",
+      "comment_updated_at": "2026-08-03T20:10:52Z",
+      "comment_body_sha256": "8a318ccfae53857339b2beb3bf89c57cbdf1525e9c4f6104d8d63a43cf25170d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118897,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the remote MCP trust policy** - The changed classification makes all SSE and Streamable HTTP MCP results model-untrusted, so maintainers need to explicitly accept that configure...; Review finding: [medium] Confirm the remote MCP trust policy — src/agents/agent-bundle-mcp-materialize.ts:339 (sha=e71c82d9f9fbf5bfc553c7c72496151b97e63936)",
+      "expected_head_sha": "e71c82d9f9fbf5bfc553c7c72496151b97e63936",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T20:11:31.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-mcp-network-provenance",
+        "head_sha": "e71c82d9f9fbf5bfc553c7c72496151b97e63936",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
