@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:24:00.295Z",
+  "updated_at": "2026-08-03T19:24:45.518Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-03T15:23:09Z:clawsweeper_needs_human",
-      "comment_id": "5156313398",
-      "comment_version_key": "5156313398:2026-08-03T15:23:09Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
-      "comment_created_at": "2026-08-02T07:47:11Z",
-      "comment_updated_at": "2026-08-03T15:23:09Z",
-      "comment_body_sha256": "08deaec5cb9dcdf3e2a664e3f1febff32ccc8069d242d5150350a66b14726761",
-      "repo": "openclaw/lobster",
-      "issue_number": 126,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The behavior is Windows-specific, so merge confidence depends on the contributor’s supplied Windows terminal proof; this read-only Linux checkout could not independently execute that... (sha=146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d)",
-      "expected_head_sha": "146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T15:24:38.611Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-ensure-directory-extended-path",
-        "head_sha": "146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110562:5010561092:2026-08-03T15:23:54Z:clawsweeper_auto_repair",
       "comment_id": "5010561092",
@@ -32891,6 +32858,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118807:5170767554:2026-08-03T19:23:54Z:clawsweeper_auto_merge",
+      "comment_id": "5170767554",
+      "comment_version_key": "5170767554:2026-08-03T19:23:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118807#issuecomment-5170767554",
+      "comment_created_at": "2026-08-03T19:23:54Z",
+      "comment_updated_at": "2026-08-03T19:23:54Z",
+      "comment_body_sha256": "32671c3c4d6a3b4afc61e4f142be19e4e06e65ca66a68b5c3b4c3b8778be124e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118807,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=39000bacc134f75218328d31d514b99d649650ab); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": "39000bacc134f75218328d31d514b99d649650ab",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-03T19:24:31.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118771",
+        "head_sha": "39000bacc134f75218328d31d514b99d649650ab",
+        "cluster_id": "automerge-openclaw-openclaw-118807",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118807.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118807.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
