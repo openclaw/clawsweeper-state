@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:22:03.778Z",
+  "updated_at": "2026-08-03T05:22:06.030Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116543:5155284665:2026-08-02T04:26:11Z:re_review",
-      "comment_id": "5155284665",
-      "comment_version_key": "5155284665:2026-08-02T04:26:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116543#issuecomment-5155284665",
-      "comment_created_at": "2026-08-02T04:26:11Z",
-      "comment_updated_at": "2026-08-02T04:26:11Z",
-      "comment_body_sha256": "1076079a443851ec81dcb31ed415eb478d29dfd4e7fa06b259bcc33d337c5b9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116543,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:37:05.766Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116543:5155531180:2026-08-02T05:06:13Z:re_review",
       "comment_id": "5155531180",
@@ -31555,6 +31528,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T05:22:03.778Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118450:5162276928:2026-08-03T05:21:15Z:clawsweeper_needs_human",
+      "comment_id": "5162276928",
+      "comment_version_key": "5162276928:2026-08-03T05:21:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118450#issuecomment-5162276928",
+      "comment_created_at": "2026-08-03T04:24:01Z",
+      "comment_updated_at": "2026-08-03T05:21:15Z",
+      "comment_body_sha256": "2238d1072226746378370cde6ea91a7aaf1fd211dff3ab7e1121e5add51898bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR demonstrates the real plugin registry, durable sender, Slack sender, and WebClient request boundary, but Slack API responses are determi... (sha=6e679b584213dcd5732a4066cdff76c3549b3216)",
+      "expected_head_sha": "6e679b584213dcd5732a4066cdff76c3549b3216",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T05:22:06.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-slack-question-results",
+        "head_sha": "6e679b584213dcd5732a4066cdff76c3549b3216",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
