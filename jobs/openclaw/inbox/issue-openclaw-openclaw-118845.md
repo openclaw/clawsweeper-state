@@ -67,30 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Workboard oversized-comment usability defect without adding a configuration option, batch input, or changing the 2,000-character limit. Keep validation authoritative in `extensions/workboard/src/store-core.ts`; update its shared error path so an oversized comment reports the submitted and allowed character counts and says to split the comment or reference an existing URL/path artifact. Add `maxLength: 2000` and concise recovery guidance to `workboard_comment` in `extensions/workboard/src/tools.ts`. Update the Control UI comment input in `ui/src/pages/workboard/` to show/enforce the same limit before it sends `workboard.cards.comment`; retain server-side validation for direct Gateway clients. Add focused store, tool, Gateway, and UI regression coverage. Update `docs/plugins/workboard.md` only to document the stable comment limit and valid artifact-reference recovery. Read `extensions/AGENTS.md` and `ui/AGENTS.md`; do not edit `CHANGELOG.md` or introduce compatibility shims.
+Repair the existing Workboard compact-comment contract for https://github.com/openclaw/openclaw/issues/118845. Keep the 2,000-character limit and do not add batching, a max-length config option, or a new persistence model. Update the `workboard_comment` TypeBox schema and agent-facing description so callers learn the limit before execution. Make the oversize validation error include the normalized value's actual length and a concise recovery path such as shortening or splitting the comment. Add focused regression coverage at the tool and/or store boundary for an exact-limit body and an over-limit body, and verify the archive operation remains independently callable. Update `docs/plugins/workboard.md` only if a short public limit/recovery note is needed. Do not edit `CHANGELOG.md`.
 
 Likely files:
 
+- extensions/workboard/src/tools.ts
 - extensions/workboard/src/store-core.ts
 - extensions/workboard/src/store-normalizers.ts
-- extensions/workboard/src/tools.ts
-- extensions/workboard/src/store.test.ts
 - extensions/workboard/src/tools.test.ts
-- extensions/workboard/src/gateway.test.ts
-- ui/src/lib/workboard/mutations.ts
-- ui/src/pages/workboard/view-card-details.ts
-- ui/src/pages/workboard/view-card-modal.ts
-- ui/src/lib/workboard/index.test.ts
-- ui/src/pages/workboard/view.test.ts
+- extensions/workboard/src/store.test.ts
 - docs/plugins/workboard.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/workboard/src/store.test.ts
 - node scripts/run-vitest.mjs extensions/workboard/src/tools.test.ts
-- node scripts/run-vitest.mjs extensions/workboard/src/gateway.test.ts
-- node scripts/run-vitest.mjs ui/src/lib/workboard/index.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/workboard/view.test.ts
+- node scripts/run-vitest.mjs extensions/workboard/src/store.test.ts
 - git diff --check
 
 ## Operator Prompt
