@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:17:42.230Z",
+  "updated_at": "2026-08-03T21:18:12.661Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2397:5169464668:2026-08-03T17:11:19Z:re_review",
-      "comment_id": "5169464668",
-      "comment_version_key": "5169464668:2026-08-03T17:11:19Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2397#issuecomment-5169464668",
-      "comment_created_at": "2026-08-03T17:11:19Z",
-      "comment_updated_at": "2026-08-03T17:11:19Z",
-      "comment_body_sha256": "b9f6974c7d3626bcd4e652ceb7f3c050a64471a557a6aef7a3c983aa3dbd274d",
-      "source_delivery_id": "58dd4530-8f5e-11f1-9716-0d5554c81493",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2397,
-      "author": "hhh2210",
-      "author_id": 107194248,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review `73599708`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T17:11:49.082Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/show-cached-spend-refreshing",
-        "head_sha": "73599708161414ca4ed1184caaa4a51830c35520",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118781:5169464727:2026-08-03T17:11:19Z:clawsweeper_auto_repair",
       "comment_id": "5169464727",
@@ -32772,6 +32724,39 @@
         "kind": "pull_request",
         "branch": "qa-gateway-b1-hosted-web",
         "head_sha": "7a64a994a4a35f171ebc32c19dcb6e1f4af7760c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:955:5171830749:2026-08-03T21:17:33Z:clawsweeper_needs_human",
+      "comment_id": "5171830749",
+      "comment_version_key": "5171830749:2026-08-03T21:17:33Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/955#issuecomment-5171830749",
+      "comment_created_at": "2026-08-03T21:17:33Z",
+      "comment_updated_at": "2026-08-03T21:17:33Z",
+      "comment_body_sha256": "22b2b4063636dd6e80182657c2ada6f29ab3034351781568846559eb87893dd1",
+      "repo": "openclaw/gogcli",
+      "issue_number": 955,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused unit tests, but it includes no redacted after-fix Gmail CLI output, recording, or runtime log from a real rich-text... (sha=14b2241ad86d14c5950e02c269b5bbf5c7bb8068)",
+      "expected_head_sha": "14b2241ad86d14c5950e02c269b5bbf5c7bb8068",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T21:18:12.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "warn-plain-only-draft-update",
+        "head_sha": "14b2241ad86d14c5950e02c269b5bbf5c7bb8068",
         "cluster_id": null,
         "job_path": null
       }
