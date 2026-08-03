@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:29:51.529Z",
+  "updated_at": "2026-08-03T05:30:02.723Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118332:5161169353:2026-08-03T01:38:31Z:clawsweeper_needs_human",
-      "comment_id": "5161169353",
-      "comment_version_key": "5161169353:2026-08-03T01:38:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118332#issuecomment-5161169353",
-      "comment_created_at": "2026-08-03T00:41:40Z",
-      "comment_updated_at": "2026-08-03T01:38:31Z",
-      "comment_body_sha256": "e61eaa7128245421cb9127a8aeebe1e8f8be811f29581ef28aebb6b311b039bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118332,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the structured assistant state replayed from persisted history to multiple clients; maintainers should retain the Gateway’s existing sanitization and verify the exact pay... (sha=f258ef60e9b3467957719e45a0d0761114854bc1)",
-      "expected_head_sha": "f258ef60e9b3467957719e45a0d0761114854bc1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:47:26.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ope-6-preserve-chat-trace",
-        "head_sha": "f258ef60e9b3467957719e45a0d0761114854bc1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118337:5161228409:2026-08-03T00:54:56Z:clawsweeper_needs_human",
       "comment_id": "5161228409",
@@ -31587,6 +31554,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115286:5162653520:2026-08-03T05:29:04Z:re_review",
+      "comment_id": "5162653520",
+      "comment_version_key": "5162653520:2026-08-03T05:29:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115286#issuecomment-5162653520",
+      "comment_created_at": "2026-08-03T05:29:04Z",
+      "comment_updated_at": "2026-08-03T05:29:04Z",
+      "comment_body_sha256": "a15a52a98c7ca21a06a3b7c111e664c0051e59382922e80df07169698866e499",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115286,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T05:29:59.228Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-defaults-mediaLocalRoots",
+        "head_sha": "6c7b14862b52141d86607466ef21fafcb3c0521c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
