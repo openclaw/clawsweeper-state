@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T09:38:42.820Z",
+  "generated_at": "2026-08-03T10:27:00.381Z",
   "count": 14,
   "summary": {
     "open_prs": 14,
@@ -254,24 +254,23 @@
       "title": "fix(minimax): route M3 image calls through MiniMax VL",
       "url": "https://github.com/openclaw/openclaw/pull/118303",
       "branch": "clawsweeper/issue-openclaw-openclaw-116601",
-      "head_sha": "bd92629cd2279edbc7f286efe3bc1a9e94fb1d22",
+      "head_sha": "b9218ca0d4bc5f5a4a82e5661ec68c7729de4684",
       "cluster_id": "issue-openclaw-openclaw-116601",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
-      "updated_at": "2026-08-03T09:35:08Z",
+      "updated_at": "2026-08-03T10:25:22Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 122,
+        "total": 124,
         "counts": {
-          "CANCELLED": 3,
+          "CANCELLED": 2,
           "SKIPPED": 41,
-          "SUCCESS": 77,
+          "SUCCESS": 80,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED"
         ]
       },
@@ -299,24 +298,30 @@
         ]
       },
       "latest_record": {
-        "run_id": "30791079463",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30791079463",
+        "run_id": "30803094498",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30803094498",
         "cluster_id": "automerge-openclaw-openclaw-118303",
-        "published_at": "2026-08-03T07:09:45.085Z",
-        "workflow_conclusion": "failure",
+        "published_at": "2026-08-03T10:25:31.859Z",
+        "workflow_conclusion": "success",
         "apply_action": {
           "target": "#118303",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#118303",
-          "candidate_fix": "#118303",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(minimax): route M3 image calls through MiniMax VL",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
