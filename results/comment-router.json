@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-03T13:07:01.725Z",
+  "updated_at": "2026-08-03T13:04:20.488Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1079:5162953498:2026-08-03T06:15:07Z:clawsweeper_needs_human",
+      "comment_id": "5162953498",
+      "comment_version_key": "5162953498:2026-08-03T06:15:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1079#issuecomment-5162953498",
+      "comment_created_at": "2026-08-03T06:15:07Z",
+      "comment_updated_at": "2026-08-03T06:15:07Z",
+      "comment_body_sha256": "780ab80b8059f264b1e57c7bf668a59904da2e13d81e305ebd3fa0674eb9f6ff",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1079,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated third-party action runs in repository automation, so retain the immutable SHA pin and merge only after the normal required checks are complete; the workflow itself limits... (sha=ce46fc45cb434199b2a53e42fcf57a228d4b7aef)",
+      "expected_head_sha": "ce46fc45cb434199b2a53e42fcf57a228d4b7aef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T06:16:04.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github/gh-aw-actions/setup-cli-0.84.1",
+        "head_sha": "ce46fc45cb434199b2a53e42fcf57a228d4b7aef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118296:5160854373:2026-08-03T06:15:31Z:clawsweeper_needs_human",
       "comment_id": "5160854373",
@@ -32353,54 +32386,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118409:5166677086:2026-08-03T13:06:22Z:re_review",
-      "comment_id": "5166677086",
-      "comment_version_key": "5166677086:2026-08-03T13:06:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118409#issuecomment-5166677086",
-      "comment_created_at": "2026-08-03T13:06:22Z",
-      "comment_updated_at": "2026-08-03T13:06:22Z",
-      "comment_body_sha256": "addec08d49789600b37b63cb1fa81b1058d3cb8b21e7764f67536e4100bd7530",
-      "source_delivery_id": "20d3fed0-8f3c-11f1-876e-4f0d1947567c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118409,
-      "author": "RerankerGuo",
-      "author_id": 121015044,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T13:06:59.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-118371-state-dir-locks",
-        "head_sha": "e57c8b098b54902fc4a556ff970d96c16ee08463",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
