@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T07:10:34.659Z",
+  "updated_at": "2026-08-03T07:11:08.672Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118396:5162056179:2026-08-03T03:42:26Z:re_review",
-      "comment_id": "5162056179",
-      "comment_version_key": "5162056179:2026-08-03T03:42:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118396#issuecomment-5162056179",
-      "comment_created_at": "2026-08-03T03:42:26Z",
-      "comment_updated_at": "2026-08-03T03:42:26Z",
-      "comment_body_sha256": "0943b899dc24538099a13df63e2ad9a311c627a216e86d89724dcab7a8bedb3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118396,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T03:43:03.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/btw-prepared-runtime-owner-key",
-        "head_sha": "eb510cbd3dfdbd99e475b70d20ef27c9ae9269ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118425:5162058469:2026-08-03T03:42:57Z:clawsweeper_needs_human",
       "comment_id": "5162058469",
@@ -31743,6 +31696,39 @@
         "kind": "pull_request",
         "branch": "fix/run-timeout-progress-grace-113182",
         "head_sha": "92204a2e030748f7bbcf0b7b7805b96d180d5593",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118553:5163356997:2026-08-03T07:10:09Z:clawsweeper_needs_human",
+      "comment_id": "5163356997",
+      "comment_version_key": "5163356997:2026-08-03T07:10:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118553#issuecomment-5163356997",
+      "comment_created_at": "2026-08-03T07:10:09Z",
+      "comment_updated_at": "2026-08-03T07:10:09Z",
+      "comment_body_sha256": "3e8e48ad97835c80216617afa046392c0da58e5125fe08b131640d670587974d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - src/gateway/mcp-app-standalone.ts:594 retains a distinct, pre-existing deterministic HTML HEAD route without Content-Length; maintainers should either scope this PR explicitly to the... (sha=2a400649d414fc0f99ec909cc7abf68cfea2ccde)",
+      "expected_head_sha": "2a400649d414fc0f99ec909cc7abf68cfea2ccde",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T07:11:08.671Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-app-sandbox-head-content-length",
+        "head_sha": "2a400649d414fc0f99ec909cc7abf68cfea2ccde",
         "cluster_id": null,
         "job_path": null
       }
