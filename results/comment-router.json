@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T18:30:54.265Z",
+  "updated_at": "2026-08-03T18:30:46.474Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5156329056:2026-08-02T07:49:57Z:re_review",
@@ -32800,37 +32800,57 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118805:5170035820:2026-08-03T18:30:09Z:clawsweeper_needs_human",
-      "comment_id": "5170035820",
-      "comment_version_key": "5170035820:2026-08-03T18:30:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118805#issuecomment-5170035820",
-      "comment_created_at": "2026-08-03T18:07:39Z",
-      "comment_updated_at": "2026-08-03T18:30:09Z",
-      "comment_body_sha256": "b72df6245ec9b605cb511eb955d48cb046979f31f2dc5bb51ceabff1d78e503b",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118806:5170245430:2026-08-03T18:29:51Z:clawsweeper_auto_merge",
+      "comment_id": "5170245430",
+      "comment_version_key": "5170245430:2026-08-03T18:29:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118806#issuecomment-5170245430",
+      "comment_created_at": "2026-08-03T18:29:51Z",
+      "comment_updated_at": "2026-08-03T18:29:51Z",
+      "comment_body_sha256": "62afbc234c3530a0c4bea1fee120d32d0181357cfca478c714d2050008b9cea6",
       "repo": "openclaw/openclaw",
-      "issue_number": 118805,
+      "issue_number": 118806,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
       "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local checkout could inspect the PR head and advertised current-main owner path but could not materialize GitHub’s exact merge commit because its promisor remote and GitHub API we... (sha=0f32a6189809a87fc3ce837dfe928b2655cbeb4b)",
-      "expected_head_sha": "0f32a6189809a87fc3ce837dfe928b2655cbeb4b",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=d20ce06d439667096a4a319750a93686904a6e2e); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T18:30:54.265Z",
+      "status": "waiting",
+      "processed_at": "2026-08-03T18:30:41.665Z",
       "target": {
         "kind": "pull_request",
-        "branch": "qa-control-ui-service-worker-update-20260803",
-        "head_sha": "0f32a6189809a87fc3ce837dfe928b2655cbeb4b",
-        "cluster_id": null,
-        "job_path": null
-      }
+        "branch": "clawsweeper/issue-openclaw-openclaw-118776",
+        "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
+        "cluster_id": "automerge-openclaw-openclaw-118806",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118806.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118806.md"
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118806.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
