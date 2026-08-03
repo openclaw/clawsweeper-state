@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118793",
+  "mode": "autonomous",
+  "run_id": "30837366159",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30837366159",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118793.md",
+  "published_at": "2026-08-03T17:50:07.923Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118793",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118793",
+  "canonical_pr": null,
+  "summary": "Verified on the checked-out newer main snapshot `830ab164ef861f82b63c32026c4594474f40830c`: the exact Claude CLI message `You've hit your session limit · resets 1:50pm` has no classifier match, while existing prompt failover policy already advances configured fallbacks for `rate_limit`. The narrow repair is a provider-gated Claude CLI classifier plus regression coverage; no security or product-policy change is needed. Local tests were not run because `node_modules` is absent and this worker has a read-only filesystem, so the executor must install/validate in its writable trusted checkout.",
+  "actions": [
+    {
+      "target": "#85103",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#118793",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no close or follow-up action belongs in this cluster."
+    },
+    {
+      "target": "#98976",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#118793",
+      "candidate_fix": null,
+      "reason": "Related fallback-classification area, but a distinct root cause and policy surface remains open in #98976."
+    },
+    {
+      "target": "#118793",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118793",
+      "candidate_fix": null,
+      "reason": "A narrow, source-reproducible provider-specific classification gap remains on the checked-out current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118793",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118793",
+      "candidate_fix": null,
+      "reason": "Implementation is narrow, non-security-sensitive, and ready for a credited ClawSweeper fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118793",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118793",
+      "candidate_fix": null,
+      "reason": "The job permits one new narrow implementation PR but disallows merge and issue closure."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
