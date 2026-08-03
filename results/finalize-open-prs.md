@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T00:02:22.249Z
+Generated: 2026-08-02T23:57:25.008Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 14 |
+| open_prs | 13 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 14 |
+| needs_checks | 13 |
 | needs_review | 0 |
-| needs_merge_preflight | 14 |
-| needs_result_backfill | 2 |
+| needs_merge_preflight | 13 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -30,7 +30,6 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | issue-openclaw-openclaw-118185 | MERGEABLE | BLOCKED | CANCELLED:5 IN_PROGRESS:30 SKIPPED:42 SUCCESS:49 NEUTRAL:1; blockers:33 | needs_merge_state:BLOCKED, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | issue-openclaw-openclaw-116601 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:56 FAILURE:2 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118282](https://github.com/openclaw/openclaw/pull/118282) | fix(doctor): import legacy exec approvals with null usage metadata | issue-openclaw-openclaw-118242 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:44 SUCCESS:83 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118055](https://github.com/openclaw/openclaw/pull/118055) | fix(line): clear default access token when removing account | issue-openclaw-openclaw-118039 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:47 SUCCESS:50 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
