@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T18:11:38.911Z",
+  "updated_at": "2026-08-03T18:11:41.262Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115408:5120729068:2026-07-29T16:35:46Z:re_review",
@@ -32524,8 +32524,8 @@
       "repair_reason": "structured ClawSweeper verdict: pass (sha=89a7dbd93c9c3548e578f52b750d269bd5528dc8); current checks are failing: security-fast:FAILURE, openclaw/ci-gate:FAILURE",
       "expected_head_sha": "89a7dbd93c9c3548e578f52b750d269bd5528dc8",
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-03T18:11:08.578Z",
+      "status": "executed",
+      "processed_at": "2026-08-03T18:11:24.424Z",
       "target": {
         "kind": "pull_request",
         "branch": "clawsweeper/issue-openclaw-openclaw-118772",
@@ -32535,20 +32535,14 @@
       },
       "actions": [
         {
-          "action": "ensure_automerge_job",
+          "action": "dispatch_repair",
           "status": "executed",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118796.md"
         },
         {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118796.md"
-        },
-        {
           "action": "comment",
-          "status": "pending",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
