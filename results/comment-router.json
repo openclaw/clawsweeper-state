@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T18:30:46.474Z",
+  "updated_at": "2026-08-03T18:31:00.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5156329056:2026-08-02T07:49:57Z:re_review",
-      "comment_id": "5156329056",
-      "comment_version_key": "5156329056:2026-08-02T07:49:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5156329056",
-      "comment_created_at": "2026-08-02T07:49:57Z",
-      "comment_updated_at": "2026-08-02T07:49:57Z",
-      "comment_body_sha256": "4a75d5cb75b51af9bf7865413b4836650828c13668d160644c8742dffe755482",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T14:42:56.109Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5164833126:2026-08-03T09:49:30Z:re_review",
       "comment_id": "5164833126",
@@ -32851,6 +32824,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116511:5134705194:2026-08-03T18:30:24Z:clawsweeper_needs_human",
+      "comment_id": "5134705194",
+      "comment_version_key": "5134705194:2026-08-03T18:30:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5134705194",
+      "comment_created_at": "2026-07-30T18:23:44Z",
+      "comment_updated_at": "2026-08-03T18:30:24Z",
+      "comment_body_sha256": "9fd85c8bfad83e852679fc1cc46318f1ae553907b3f49c57aee7aa9ad05fa207",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116511,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty against current main. A merge must reconcile the branch's new byte-bounded transcript reader with main's current active-event reader and rerun the... (sha=e6d128c16c98d86138789c652812d8780810cfed)",
+      "expected_head_sha": "e6d128c16c98d86138789c652812d8780810cfed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T18:31:00.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/issue-109656-continuation-skip-sqlite-20260730",
+        "head_sha": "e6d128c16c98d86138789c652812d8780810cfed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
