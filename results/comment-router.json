@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T18:14:43.281Z",
+  "updated_at": "2026-08-03T18:14:44.828Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:88709:5104794064:2026-07-28T13:31:15Z:re_review",
-      "comment_id": "5104794064",
-      "comment_version_key": "5104794064:2026-07-28T13:31:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/88709#issuecomment-5104794064",
-      "comment_created_at": "2026-07-28T13:31:15Z",
-      "comment_updated_at": "2026-07-28T13:31:15Z",
-      "comment_body_sha256": "7febf0ff618ec29f5ead7973d172bb2d40ac99db92232e3ad4e69a47d1ba792f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 88709,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T14:12:17.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inline-api-key-billing-cooldown",
-        "head_sha": "80595c9ae7a261658dd3782e24e58cabcfe933cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88709:4587349371:2026-08-03T14:11:28Z:clawsweeper_auto_repair",
       "comment_id": "4587349371",
@@ -32603,6 +32556,39 @@
         "kind": "pull_request",
         "branch": "fix/anthropic-claude-opus5-version",
         "head_sha": "88e10d77f93c4fff7ffc4f0df507998920c0fb83",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118826:5170095494:2026-08-03T18:14:04Z:clawsweeper_needs_human",
+      "comment_id": "5170095494",
+      "comment_version_key": "5170095494:2026-08-03T18:14:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118826#issuecomment-5170095494",
+      "comment_created_at": "2026-08-03T18:14:04Z",
+      "comment_updated_at": "2026-08-03T18:14:04Z",
+      "comment_body_sha256": "9af71c203d7ff28a7128f510489acbd97874e8e9b99950c814938f7ff3c1352d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118826,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and its own PR body marks the serial QA Suite Docker run plus fresh qa-evidence.json inspection as pending; rebase and capture that current-head evid... (sha=7ae1ddbc99320da2db1f1bcb52c5d60a6c101518)",
+      "expected_head_sha": "7ae1ddbc99320da2db1f1bcb52c5d60a6c101518",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T18:14:44.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-containers-primary-coverage-20260803",
+        "head_sha": "7ae1ddbc99320da2db1f1bcb52c5d60a6c101518",
         "cluster_id": null,
         "job_path": null
       }
