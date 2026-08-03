@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T03:26:42.668Z",
+  "updated_at": "2026-08-03T03:28:49.947Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:349:5160744481:2026-08-02T22:56:33Z:clawsweeper_auto_repair",
-      "comment_id": "5160744481",
-      "comment_version_key": "5160744481:2026-08-02T22:56:33Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/349#issuecomment-5160744481",
-      "comment_created_at": "2026-08-02T22:56:33Z",
-      "comment_updated_at": "2026-08-02T22:56:33Z",
-      "comment_body_sha256": "41f17bbd3be45d690b2262bddb5a46932955a0f2c5988f5b84b1a63232ed7a14",
-      "repo": "steipete/oracle",
-      "issue_number": 349,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2fb6abe68a36b28095bbd5fd40b203a134825c75)",
-      "expected_head_sha": "2fb6abe68a36b28095bbd5fd40b203a134825c75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T22:57:12.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/add-atlas-cloud-provider",
-        "head_sha": "2fb6abe68a36b28095bbd5fd40b203a134825c75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-02T22:56:25Z:clawsweeper_needs_human",
       "comment_id": "5160702307",
@@ -32581,6 +32548,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115807:5161989297:2026-08-03T03:28:17Z:re_review",
+      "comment_id": "5161989297",
+      "comment_version_key": "5161989297:2026-08-03T03:28:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115807#issuecomment-5161989297",
+      "comment_created_at": "2026-08-03T03:28:17Z",
+      "comment_updated_at": "2026-08-03T03:28:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115807,
+      "author": "lsr911",
+      "author_id": 18230762,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T03:28:46.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-e2ee-room-encryptor-reprocess",
+        "head_sha": "928d6950d92e31dc99b9692869d775597aa6937e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
