@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T16:37:34.548Z",
+  "generated_at": "2026-08-03T16:45:24.967Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30831669076.json",
+  "run_record": "results/runs/30829913877.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30831669076",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30829913877",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#117954:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#117954",
+      "title": "fix(whatsapp): honor disabled self-chat admission",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30829913877",
+      "cluster_id": "automerge-openclaw-openclaw-117954",
+      "hook_run_id": "15d53253-8119-49d7-ad16-509b0457f6ff",
+      "url": "https://github.com/openclaw/openclaw/pull/117954"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#117954:repair_contributor_branch:pushed:dbaa3a4eeb096cd1cb2d9d1ed9008b363b78f794",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#117954",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30829913877",
+      "cluster_id": "automerge-openclaw-openclaw-117954",
+      "hook_run_id": "f70fa71a-0fd6-4b5a-92ac-474ce697cd3e",
+      "url": "https://github.com/openclaw/openclaw/pull/117954"
+    }
+  ]
 }
