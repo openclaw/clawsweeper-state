@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:03:47.552Z",
+  "updated_at": "2026-08-03T19:03:54.633Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118688:5167284116:2026-08-03T14:38:36Z:clawsweeper_auto_merge",
-      "comment_id": "5167284116",
-      "comment_version_key": "5167284116:2026-08-03T14:38:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118688#issuecomment-5167284116",
-      "comment_created_at": "2026-08-03T13:57:11Z",
-      "comment_updated_at": "2026-08-03T14:38:36Z",
-      "comment_body_sha256": "7206bfc87c1bee0e59ef683be9dc93b511e7924d0182fea25f97d7194a1d7789",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118688,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=f49fe912541c5b1b1359858bd0d4cb5212bc8474); current checks are failing: checks-node-compact-large-8:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": "f49fe912541c5b1b1359858bd0d4cb5212bc8474",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-03T14:57:29.258Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118625",
-        "head_sha": "f49fe912541c5b1b1359858bd0d4cb5212bc8474",
-        "cluster_id": "automerge-openclaw-openclaw-118688",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101745:5168003197:2026-08-03T14:56:23Z:re_review",
       "comment_id": "5168003197",
@@ -32896,6 +32849,39 @@
         "kind": "pull_request",
         "branch": "qa-media-pdf-dispatch-20260803",
         "head_sha": "da6c1ad5267ff6841754df5dcb4ab8d5c69a1e70",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118871:5170565066:2026-08-03T19:03:10Z:clawsweeper_needs_human",
+      "comment_id": "5170565066",
+      "comment_version_key": "5170565066:2026-08-03T19:03:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118871#issuecomment-5170565066",
+      "comment_created_at": "2026-08-03T19:03:10Z",
+      "comment_updated_at": "2026-08-03T19:03:10Z",
+      "comment_body_sha256": "093ff1ed2c9863172ff436726f21a46fffc707e938f41f75d04225726c721ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118871,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this protected test-stability PR be merged after the exact-head Node check completes? | **Merge after exact-head checks:** Accept the focused... (sha=6a0db0b12e2459d679417e821281dd6850c9dffe)",
+      "expected_head_sha": "6a0db0b12e2459d679417e821281dd6850c9dffe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:03:54.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-mcp-catalog-deterministic-clock",
+        "head_sha": "6a0db0b12e2459d679417e821281dd6850c9dffe",
         "cluster_id": null,
         "job_path": null
       }
