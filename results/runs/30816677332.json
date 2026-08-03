@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118652",
+  "mode": "autonomous",
+  "run_id": "30816677332",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30816677332",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md",
+  "published_at": "2026-08-03T15:04:51.792Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118652",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118652",
+  "canonical_pr": null,
+  "summary": "Current main at pinned SHA 096c929ecf6ec2df9ec2b3a959799807b0442bdc still has the lifecycle leak: src/process/supervisor/index.ts owns an unregistered module singleton, while src/gateway/server-close.ts stops cron and other producers without draining active or starting supervised runs. The checkout is read-only, so no concrete repair or validation could be performed in this pass; a writable executor should apply the narrow lifecycle repair below.",
+  "actions": [
+    {
+      "target": "#118652",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "The reported failure remains a narrow shared-lifecycle bug on current main; no closure or merge action is permitted by this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118652",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "Implementation is proven necessary but blocked until a writable repair executor is supplied."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118652",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate this focused fix without product or security judgment."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118696",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118652",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118696",
+      "commit": "6516d910a1365e757acee46c6c5950c3368e3f0b",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118652",
+      "pr": "https://github.com/openclaw/openclaw/pull/118696",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118696",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118696",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): terminate supervised subprocesses on shutdown",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

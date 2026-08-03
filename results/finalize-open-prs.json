@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T14:52:22.816Z",
-  "count": 19,
+  "generated_at": "2026-08-03T15:07:15.861Z",
+  "count": 20,
   "summary": {
-    "open_prs": 19,
+    "open_prs": 20,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 1,
+    "needs_rebase": 2,
     "mergeability_unknown": 0,
-    "needs_checks": 19,
+    "needs_checks": 20,
     "needs_review": 0,
-    "needs_merge_preflight": 19,
-    "needs_result_backfill": 2
+    "needs_merge_preflight": 20,
+    "needs_result_backfill": 3
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,80 @@
   },
   "prs": [
     {
+      "number": 118721,
+      "title": "fix(workboard): bound SQLite card-list hydration",
+      "url": "https://github.com/openclaw/openclaw/pull/118721",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118706",
+      "head_sha": "d1d4744d41f60bb77c02031b66889539e25ac323",
+      "cluster_id": "issue-openclaw-openclaw-118706",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118706.md",
+      "updated_at": "2026-08-03T15:04:02Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 96,
+        "counts": {
+          "CANCELLED": 8,
+          "SKIPPED": 43,
+          "SUCCESS": 18,
+          "IN_PROGRESS": 27
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / pnpm-store-warmup:IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-fast-max-lines-ratchet:IN_PROGRESS",
+          "CI / checks-fast-bundled-protocol:IN_PROGRESS",
+          "CI / checks-fast-bun-launcher:IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-b:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-changed:IN_PROGRESS",
+          "CI / check-guards:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-bundled-channel-config-metadata:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-additional-boundaries-a:IN_PROGRESS",
+          "CI / check-additional-boundaries-bcd:IN_PROGRESS",
+          "CI / check-prompt-snapshots:IN_PROGRESS",
+          "CI / check-session-accessor-boundary:IN_PROGRESS",
+          "CI / check-session-transcript-reader-boundary:IN_PROGRESS",
+          "CI / check-sqlite-session-schema-baseline:IN_PROGRESS",
+          "CI / check-plugin-sdk-api-baseline:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 118696,
       "title": "fix(gateway): terminate supervised subprocesses on shutdown",
       "url": "https://github.com/openclaw/openclaw/pull/118696",
@@ -34,20 +108,21 @@
       "head_sha": "6516d910a1365e757acee46c6c5950c3368e3f0b",
       "cluster_id": "issue-openclaw-openclaw-118652",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md",
-      "updated_at": "2026-08-03T14:10:33Z",
+      "updated_at": "2026-08-03T15:02:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 141,
+        "total": 150,
         "counts": {
-          "CANCELLED": 13,
-          "SKIPPED": 42,
-          "SUCCESS": 85,
+          "CANCELLED": 15,
+          "SKIPPED": 45,
+          "SUCCESS": 89,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -63,30 +138,42 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/118696#issuecomment-5167474418",
             "submitted_at": "2026-08-03T14:10:30Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118696#issuecomment-5167988010",
+            "submitted_at": "2026-08-03T14:55:17Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "30819533426",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30819533426",
+        "run_id": "30816677332",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30816677332",
         "cluster_id": "issue-openclaw-openclaw-118652",
-        "published_at": "2026-08-03T14:26:58.986Z",
+        "published_at": "2026-08-03T15:04:51.792Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#118696",
-          "action": "keep_canonical",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#118696",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
           "candidate_fix": null,
-          "reason": "The existing same-repository PR is the clearest validated implementation path; preserve its author credit and do not replace it."
+          "title": "fix(gateway): terminate supervised subprocesses on shutdown",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
@@ -104,7 +191,7 @@
       "head_sha": "f49fe912541c5b1b1359858bd0d4cb5212bc8474",
       "cluster_id": "issue-openclaw-openclaw-118625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
-      "updated_at": "2026-08-03T14:41:38Z",
+      "updated_at": "2026-08-03T15:03:11Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -183,27 +270,40 @@
       "title": "fix(agents): record stop reason in completion trajectory",
       "url": "https://github.com/openclaw/openclaw/pull/118685",
       "branch": "clawsweeper/issue-openclaw-openclaw-118673",
-      "head_sha": "4677cf3c8f6c5a09d5b179bc572cafae9daf8c00",
+      "head_sha": "c20c7c0e23f8b0c521ade0e7ddcc8e839f8c65c9",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-03T14:48:21Z",
+      "updated_at": "2026-08-03T15:04:35Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 41,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 42,
-          "SUCCESS": 82,
-          "NEUTRAL": 1
+          "CANCELLED": 3,
+          "QUEUED": 1,
+          "IN_PROGRESS": 14,
+          "SKIPPED": 14,
+          "SUCCESS": 9
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CodeQL Critical Quality / Select Critical Quality shards:QUEUED",
+          "CI / preflight:IN_PROGRESS",
+          "CodeQL / Security High (core-auth-secrets):IN_PROGRESS",
+          "OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS",
+          "Real behavior proof:IN_PROGRESS",
+          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
+          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
+          "CodeQL / Security High (network-ssrf-boundary):IN_PROGRESS",
+          "CodeQL / Security High (mcp-process-tool-boundary):IN_PROGRESS",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
+          "CodeQL / Security High (actions):IN_PROGRESS",
+          "CI / security-fast:IN_PROGRESS",
+          "Workflow Sanity / actionlint:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -213,7 +313,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 2,
+        "count": 3,
         "latest": [
           {
             "source": "comment",
@@ -226,6 +326,12 @@
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167221362",
             "submitted_at": "2026-08-03T13:52:52Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167990697",
+            "submitted_at": "2026-08-03T14:55:29Z"
           }
         ]
       },
@@ -253,7 +359,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CodeQL Critical Quality / Select Critical Quality shards:QUEUED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -850,7 +956,7 @@
       "head_sha": "a1d1f2f9b678d4ab6c2b5070099de8e3a2d2a75c",
       "cluster_id": "automerge-openclaw-openclaw-114609",
       "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-114609.md",
-      "updated_at": "2026-08-03T14:48:30Z",
+      "updated_at": "2026-08-03T15:00:45Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -1000,8 +1106,8 @@
       "cluster_id": "issue-openclaw-openclaw-117941",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117941.md",
       "updated_at": "2026-08-03T09:34:46Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -1063,11 +1169,12 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 117952,
