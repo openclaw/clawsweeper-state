@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T12:23:17.812Z
+Generated: 2026-08-03T12:29:10.700Z
 
 ## Summary
 
@@ -31,7 +31,7 @@ Status: report_only
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [#118656](https://github.com/openclaw/openclaw/pull/118656) | fix(nextcloud-talk): repump independent room lanes during delivery | issue-openclaw-openclaw-118649 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:47 SUCCESS:53 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118599](https://github.com/openclaw/openclaw/pull/118599) | fix(gateway): coordinate singleton lock through shared state | issue-openclaw-openclaw-117635 | MERGEABLE | BEHIND | CANCELLED:2 QUEUED:1 IN_PROGRESS:5 SKIPPED:39 SUCCESS:75 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:QUEUED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118599](https://github.com/openclaw/openclaw/pull/118599) | fix(gateway): coordinate singleton lock through shared state | issue-openclaw-openclaw-117635 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:82 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | issue-openclaw-openclaw-116747 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:45 SUCCESS:72 FAILURE:2; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | issue-openclaw-openclaw-118185 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:47 SUCCESS:83 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | issue-openclaw-openclaw-116601 | MERGEABLE | BEHIND | CANCELLED:3 SKIPPED:40 SUCCESS:78 NEUTRAL:1; blockers:2 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
