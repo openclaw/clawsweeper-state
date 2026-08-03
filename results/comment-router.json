@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:02:15.638Z",
+  "updated_at": "2026-08-03T13:02:34.132Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114480:5101855416:2026-07-28T08:37:14Z:re_review",
-      "comment_id": "5101855416",
-      "comment_version_key": "5101855416:2026-07-28T08:37:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114480#issuecomment-5101855416",
-      "comment_created_at": "2026-07-28T08:37:14Z",
-      "comment_updated_at": "2026-07-28T08:37:14Z",
-      "comment_body_sha256": "2cfa2b90fffc336dd79458eceec8b65df3f5e576c121026b9074a7421241b72e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114480,
-      "author": "zhl-cyber",
-      "author_id": 219816616,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T06:14:13.065Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117302:5150624297:2026-08-03T06:13:30Z:clawsweeper_needs_human",
       "comment_id": "5150624297",
@@ -32388,6 +32361,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118658:5166626367:2026-08-03T13:01:41Z:clawsweeper_needs_human",
+      "comment_id": "5166626367",
+      "comment_version_key": "5166626367:2026-08-03T13:01:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118658#issuecomment-5166626367",
+      "comment_created_at": "2026-08-03T13:01:41Z",
+      "comment_updated_at": "2026-08-03T13:01:41Z",
+      "comment_body_sha256": "2795847c77643720cf3dffd843eb4b3f7caefe859dfe1d5cea85ec2d417ee36a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118658,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused Vitest, type, lint, and diff checks, but it provides no after-fix real catalog-session run or redacted Codex superv... (sha=34b363ef972dce511c1beb2b444c9c69c4caee1f)",
+      "expected_head_sha": "34b363ef972dce511c1beb2b444c9c69c4caee1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:02:34.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-118642-codex-catalog-routing",
+        "head_sha": "34b363ef972dce511c1beb2b444c9c69c4caee1f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
