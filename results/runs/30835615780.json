@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118771",
+  "mode": "autonomous",
+  "run_id": "30835615780",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835615780",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118771.md",
+  "published_at": "2026-08-03T18:00:20.812Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118771",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118771",
+  "canonical_pr": null,
+  "summary": "Current main source confirms the reported defect and supports a two-file repair: defer a rejected steer when its reason is `compacting`, using the existing follow-up queue and drain lifecycle. This worker cannot apply or validate the patch because the supplied checkout is read-only; the focused test command is also blocked by missing dependencies (`p-map`), and Corepack cannot create its cache on the read-only filesystem. A narrow executable fix artifact is provided for the deterministic executor.",
+  "actions": [
+    {
+      "target": "#118771",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118771",
+      "candidate_fix": null,
+      "reason": "A narrow root-cause repair is ready to implement; no configured behavior, queue mode, or compaction ownership policy needs to change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118771",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118771",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only checkout and unavailable dependencies; the deterministic executor can apply the specified narrow patch on `clawsweeper/issue-openclaw-openclaw-118771`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118807",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118771",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118807",
+      "commit": "39000bacc134f75218328d31d514b99d649650ab",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118771",
+      "pr": "https://github.com/openclaw/openclaw/pull/118807",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118807",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

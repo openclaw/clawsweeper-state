@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T17:38:37.699Z",
-  "count": 20,
+  "generated_at": "2026-08-03T18:03:11.027Z",
+  "count": 19,
   "summary": {
-    "open_prs": 20,
+    "open_prs": 19,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 20,
+    "needs_checks": 19,
     "needs_review": 0,
-    "needs_merge_preflight": 20,
+    "needs_merge_preflight": 19,
     "needs_result_backfill": 4
   },
   "dispatch": {
@@ -27,6 +27,119 @@
   },
   "prs": [
     {
+      "number": 118807,
+      "title": "fix(reply): defer steer messages while embedded compaction runs",
+      "url": "https://github.com/openclaw/openclaw/pull/118807",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118771",
+      "head_sha": "39000bacc134f75218328d31d514b99d649650ab",
+      "cluster_id": "issue-openclaw-openclaw-118771",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118771.md",
+      "updated_at": "2026-08-03T17:40:54Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 128,
+        "counts": {
+          "CANCELLED": 7,
+          "SKIPPED": 39,
+          "SUCCESS": 79,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / security-fast:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30835615780",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835615780",
+        "cluster_id": "issue-openclaw-openclaw-118771",
+        "published_at": "2026-08-03T18:00:20.812Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118806,
+      "title": "fix(agents): remove yield from leaf subagents",
+      "url": "https://github.com/openclaw/openclaw/pull/118806",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118776",
+      "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
+      "cluster_id": "issue-openclaw-openclaw-118776",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
+      "updated_at": "2026-08-03T17:42:48Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 132,
+        "counts": {
+          "CANCELLED": 10,
+          "SKIPPED": 41,
+          "SUCCESS": 78,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / security-fast:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30835115124",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835115124",
+        "cluster_id": "issue-openclaw-openclaw-118776",
+        "published_at": "2026-08-03T17:15:22.730Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 118796,
       "title": "fix(session): require a real context snapshot for CLI usage",
       "url": "https://github.com/openclaw/openclaw/pull/118796",
@@ -40,13 +153,12 @@
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 128,
+        "total": 130,
         "counts": {
           "CANCELLED": 8,
-          "SKIPPED": 39,
-          "SUCCESS": 69,
-          "FAILURE": 1,
-          "IN_PROGRESS": 10,
+          "SKIPPED": 40,
+          "SUCCESS": 79,
+          "FAILURE": 2,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -55,16 +167,7 @@
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "CI / security-fast:FAILURE",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS"
+          "CI / openclaw/ci-gate:FAILURE"
         ]
       },
       "review_threads": {
@@ -1270,251 +1373,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
-    },
-    {
-      "number": 117951,
-      "title": "fix(gateway): preserve assistant media in live chat events",
-      "url": "https://github.com/openclaw/openclaw/pull/117951",
-      "branch": "clawsweeper/issue-openclaw-openclaw-73478",
-      "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
-      "cluster_id": "issue-openclaw-openclaw-73478",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-73478.md",
-      "updated_at": "2026-08-03T09:33:46Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 143,
-        "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 47,
-          "SUCCESS": 88,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
-            "submitted_at": "2026-08-02T10:31:46Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5158324796",
-            "submitted_at": "2026-08-02T13:51:02Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30755743580",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30755743580",
-        "cluster_id": "automerge-openclaw-openclaw-117951",
-        "published_at": "2026-08-02T16:29:38.078Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117951",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(gateway): preserve assistant media in live chat events",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 117911,
-      "title": "fix(exec): explain Linux OOM-score-adjusted SIGKILLs",
-      "url": "https://github.com/openclaw/openclaw/pull/117911",
-      "branch": "clawsweeper/issue-openclaw-openclaw-69242",
-      "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
-      "cluster_id": "issue-openclaw-openclaw-69242",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-69242.md",
-      "updated_at": "2026-08-03T13:27:15Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 149,
-        "counts": {
-          "CANCELLED": 11,
-          "SKIPPED": 48,
-          "SUCCESS": 89,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5156550726",
-            "submitted_at": "2026-08-02T08:30:18Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5156556121",
-            "submitted_at": "2026-08-02T08:31:19Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30754089504",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30754089504",
-        "cluster_id": "automerge-openclaw-openclaw-117911",
-        "published_at": "2026-08-02T15:45:54.068Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117911",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(exec): explain Linux OOM-score-adjusted SIGKILLs",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 117906,
-      "title": "fix(feishu): preserve self mentions in agent-facing group messages",
-      "url": "https://github.com/openclaw/openclaw/pull/117906",
-      "branch": "clawsweeper/issue-openclaw-openclaw-72504",
-      "head_sha": "722e5b0a5a2c7e74d4c1727f0daa18c75a266341",
-      "cluster_id": "issue-openclaw-openclaw-72504",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-72504.md",
-      "updated_at": "2026-08-03T11:21:01Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 120,
-        "counts": {
-          "CANCELLED": 14,
-          "SKIPPED": 49,
-          "SUCCESS": 56,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117906#issuecomment-5156528698",
-            "submitted_at": "2026-08-02T08:26:16Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/117906#issuecomment-5156535528",
-            "submitted_at": "2026-08-02T08:27:28Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30739808879",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30739808879",
-        "cluster_id": "automerge-openclaw-openclaw-117906",
-        "published_at": "2026-08-02T09:00:36.110Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#117906",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(feishu): preserve self mentions in agent-facing group messages",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }
