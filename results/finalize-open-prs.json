@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T14:40:16.909Z",
+  "generated_at": "2026-08-03T14:29:41.583Z",
   "count": 19,
   "summary": {
     "open_prs": 19,
@@ -101,24 +101,25 @@
       "title": "fix(agents): redrive suspended completions after compaction unlock",
       "url": "https://github.com/openclaw/openclaw/pull/118688",
       "branch": "clawsweeper/issue-openclaw-openclaw-118625",
-      "head_sha": "f49fe912541c5b1b1359858bd0d4cb5212bc8474",
+      "head_sha": "64e982af9a5efd85b470e761352f245d1b3af39b",
       "cluster_id": "issue-openclaw-openclaw-118625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
-      "updated_at": "2026-08-03T14:37:24Z",
+      "updated_at": "2026-08-03T14:20:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 133,
+        "total": 142,
         "counts": {
-          "CANCELLED": 5,
-          "SKIPPED": 42,
+          "CANCELLED": 11,
+          "SKIPPED": 45,
           "SUCCESS": 83,
           "FAILURE": 2,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -186,24 +187,46 @@
       "head_sha": "4677cf3c8f6c5a09d5b179bc572cafae9daf8c00",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-03T14:37:39Z",
+      "updated_at": "2026-08-03T14:26:16Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 118,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 42,
-          "SUCCESS": 82,
+          "CANCELLED": 1,
+          "SUCCESS": 55,
+          "SKIPPED": 37,
+          "IN_PROGRESS": 24,
           "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -253,7 +276,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
