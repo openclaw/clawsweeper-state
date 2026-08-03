@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T23:18:12.582Z",
+  "updated_at": "2026-08-03T23:18:27.174Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4761637322:2026-06-21T10:17:42Z:re_review",
-      "comment_id": "4761637322",
-      "comment_version_key": "4761637322:2026-06-21T10:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4761637322",
-      "comment_created_at": "2026-06-21T10:17:42Z",
-      "comment_updated_at": "2026-06-21T10:17:42Z",
-      "comment_body_sha256": "1d7275ca475ed706f8e713c30eb683287c955425eb380f59f0e081b0844924d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T19:26:24.738Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4762565510:2026-06-21T16:18:31Z:re_review",
       "comment_id": "4762565510",
@@ -32517,6 +32490,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T23:18:12.582Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-03T23:17:21Z:clawsweeper_needs_human",
+      "comment_id": "5159399788",
+      "comment_version_key": "5159399788:2026-08-03T23:17:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
+      "comment_created_at": "2026-08-02T16:58:31Z",
+      "comment_updated_at": "2026-08-03T23:17:21Z",
+      "comment_body_sha256": "da69b394c84e8abc9b6b84457b58c20413026e084760e73a54ccbb6381f496fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Route activity lookups through the private endpoint (P1)** - Late discovery: installing this descriptor changes the expected transport boundary, but Activity instance lookup still posts Bot authorization to hard...; Review finding: [P1] Route activity lookups through the private endpoint — extensions/discord/src/provider-endpoint.ts:181-184 - [P1] Allow the private provider's attachment uploa... (sha=1bffd09b318e5ff3dc56e174f0a61b66981aad46)",
+      "expected_head_sha": "1bffd09b318e5ff3dc56e174f0a61b66981aad46",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T23:18:27.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/discord-provider-endpoint-runtime",
+        "head_sha": "1bffd09b318e5ff3dc56e174f0a61b66981aad46",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
