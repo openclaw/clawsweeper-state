@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:43:19.614Z",
+  "updated_at": "2026-08-03T14:44:19.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116232:5126674096:2026-08-03T09:17:56Z:clawsweeper_needs_human",
-      "comment_id": "5126674096",
-      "comment_version_key": "5126674096:2026-08-03T09:17:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116232#issuecomment-5126674096",
-      "comment_created_at": "2026-07-30T04:53:25Z",
-      "comment_updated_at": "2026-08-03T09:17:56Z",
-      "comment_body_sha256": "03baad696314fa342764fb374f56bb5256d31bb856d821914764d71743317312",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116232,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides focused unit-test results but explicitly states that no live WhatsApp/Baileys timeout send was run; add redacted runtime l... (sha=f34236abae1deae370e32ae69f2b2a42674dfce6)",
-      "expected_head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:41:00.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-retry-drop-timed-out",
-        "head_sha": "f34236abae1deae370e32ae69f2b2a42674dfce6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116237:5126774901:2026-08-03T09:17:10Z:clawsweeper_auto_repair",
       "comment_id": "5126774901",
@@ -31723,6 +31690,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118568:5167841899:2026-08-03T14:43:23Z:re_review",
+      "comment_id": "5167841899",
+      "comment_version_key": "5167841899:2026-08-03T14:43:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118568#issuecomment-5167841899",
+      "comment_created_at": "2026-08-03T14:43:23Z",
+      "comment_updated_at": "2026-08-03T14:43:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "aede12d0-8f49-11f1-93ee-46e4b677e22a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118568,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T14:44:16.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-75184-config-help",
+        "head_sha": "eeb318f27ed9eb3b20f207b5c85b2dd8d56166d0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
