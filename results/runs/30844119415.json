@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118845",
+  "mode": "autonomous",
+  "run_id": "30844119415",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30844119415",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118845.md",
+  "published_at": "2026-08-03T19:34:09.070Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118845",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118845",
+  "canonical_pr": null,
+  "summary": "#118845 remains a clear canonical Workboard tool-contract bug, but implementation is blocked in this worker because the required preflight main revision cd42cb77033265b3cc63846e2391f77366f356eb is absent from the supplied checkout. The local main at b026d3572e85d83568df1c0430fa1fcce72c2038 confirms the reported mismatch, but cannot establish current-main behavior or produce a valid branch delta against the required base.",
+  "actions": [
+    {
+      "target": "#118845",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118845",
+      "candidate_fix": null,
+      "reason": "The issue is a narrow bug-only repair candidate; keep it open while the executor syncs the required base and implements the artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118845",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118845",
+      "candidate_fix": null,
+      "reason": "Sync or replace the checkout at preflight main SHA, then reproduce before modifying code; the job expressly requires stopping when latest-main reproduction cannot be established."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118845",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118845",
+      "candidate_fix": null,
+      "reason": "A fresh checkout can apply this limited plugin-local repair as one new fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
