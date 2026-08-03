@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T07:06:12.328Z",
+  "updated_at": "2026-08-03T07:06:18.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118396:5162021905:2026-08-03T03:35:17Z:re_review",
-      "comment_id": "5162021905",
-      "comment_version_key": "5162021905:2026-08-03T03:35:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118396#issuecomment-5162021905",
-      "comment_created_at": "2026-08-03T03:35:17Z",
-      "comment_updated_at": "2026-08-03T03:35:17Z",
-      "comment_body_sha256": "b52db2423bb0b985e7f133aaf315e0956b949c4269788207d6a72c02dbe6570e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118396,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T03:35:54.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/btw-prepared-runtime-owner-key",
-        "head_sha": "eb510cbd3dfdbd99e475b70d20ef27c9ae9269ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113561:5077648196:2026-08-03T03:32:14Z:clawsweeper_needs_human",
       "comment_id": "5077648196",
@@ -31754,6 +31707,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T07:06:12.327Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118524:5162913372:2026-08-03T07:01:11Z:clawsweeper_needs_human",
+      "comment_id": "5162913372",
+      "comment_version_key": "5162913372:2026-08-03T07:01:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118524#issuecomment-5162913372",
+      "comment_created_at": "2026-08-03T06:10:10Z",
+      "comment_updated_at": "2026-08-03T07:01:11Z",
+      "comment_body_sha256": "23c9c710a0fdc1d28c6a38302e5fe39be9312ae84c281d5f87ab161a88d15a91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused parser tests only; it needs redacted terminal or log evidence that openclaw doctor --fix imports a real legacy file...; Review finding: [P1] Restrict null normalization to legacy metadata fields — src/infra/exec-approvals-config.ts:189 - [medium] Broad null coercion weakens approval-file validation... (sha=15717464c29e0d688281e5397607e736e4101c0c)",
+      "expected_head_sha": "15717464c29e0d688281e5397607e736e4101c0c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T07:06:18.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approvals-migration-null-fields",
+        "head_sha": "15717464c29e0d688281e5397607e736e4101c0c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
