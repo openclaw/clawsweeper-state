@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118740",
+  "mode": "autonomous",
+  "run_id": "30848287428",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30848287428",
+  "head_sha": "326104b08f93941c21ab7afd2cd57a60b51ff583",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118740.md",
+  "published_at": "2026-08-03T20:08:54.391Z",
+  "canonical": "#118740",
+  "canonical_issue": "#118740",
+  "canonical_pr": null,
+  "summary": "Verified against current main `317320a95eaa91d59375c57885819cc71643e807`: `CODESIGN_TIMESTAMP=auto` initializes `--timestamp=none` and only enables timestamps when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A SHA-1 selector therefore deterministically keeps `--timestamp=none`, while every `codesign --sign` invocation correctly preserves the selector. The repair is narrow and ready for a new PR, but this worker cannot edit the read-only checkout, dependencies are absent, and this Linux host cannot provide the required macOS `security`/codesign proof.",
+  "actions": [
+    {
+      "target": "#118740",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118740",
+      "candidate_fix": null,
+      "reason": "The issue remains a reproducible existing-behavior bug with a clear root owner. A writable macOS-capable executor should implement and validate the supplied narrow artifact before opening the permitted fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

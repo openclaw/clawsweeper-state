@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118740"
 mode: "autonomous"
-run_id: "30844340050"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30844340050"
-head_sha: "4f67ca516da0fc29fed5ae2b8e17fce14d49354d"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-03T19:21:31.218Z"
-canonical: "https://github.com/openclaw/openclaw/issues/118740"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/118740"
+run_id: "30848287428"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30848287428"
+head_sha: "326104b08f93941c21ab7afd2cd57a60b51ff583"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-03T20:08:54.391Z"
+canonical: "#118740"
+canonical_issue: "#118740"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30844340050](https://github.com/openclaw/clawsweeper/actions/runs/30844340050)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30848287428](https://github.com/openclaw/clawsweeper/actions/runs/30848287428)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/118740
+Canonical: #118740
 
 ## Summary
 
-#118740 remains the open canonical bug. Current main cd42cb77033265b3cc63846e2391f77366f356eb still bases CODESIGN_TIMESTAMP=auto on the literal SIGN_IDENTITY string, so a SHA-1-pinned Developer ID Application identity receives --timestamp=none. Plan one narrow non-security repair PR; no linked candidate PR exists.
+Verified against current main `317320a95eaa91d59375c57885819cc71643e807`: `CODESIGN_TIMESTAMP=auto` initializes `--timestamp=none` and only enables timestamps when the literal `SIGN_IDENTITY` selector contains `Developer ID Application`. A SHA-1 selector therefore deterministically keeps `--timestamp=none`, while every `codesign --sign` invocation correctly preserves the selector. The repair is narrow and ready for a new PR, but this worker cannot edit the read-only checkout, dependencies are absent, and this Linux host cannot provide the required macOS `security`/codesign proof.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118740
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118740 | fix_needed | planned | canonical | The source-proven defect remains on current main and has a narrow owner-boundary repair path. |
-| cluster:issue-openclaw-openclaw-118740 | build_fix_artifact | planned | canonical | The permitted canonical path is a new, focused implementation PR from clawsweeper/issue-openclaw-openclaw-118740. |
+| #118740 | fix_needed | planned | canonical | The issue remains a reproducible existing-behavior bug with a clear root owner. A writable macOS-capable executor should implement and validate the supplied narrow artifact before opening the permitted fix PR. |
 
 ## Needs Human
 
