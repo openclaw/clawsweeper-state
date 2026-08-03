@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T17:45:49.386Z
+Generated: 2026-08-03T17:38:37.699Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 22 |
+| open_prs | 20 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 1 |
 | mergeability_unknown | 0 |
-| needs_checks | 22 |
+| needs_checks | 20 |
 | needs_review | 0 |
-| needs_merge_preflight | 22 |
+| needs_merge_preflight | 20 |
 | needs_result_backfill | 4 |
 
 ## Dispatch
@@ -30,9 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118807](https://github.com/openclaw/openclaw/pull/118807) | fix(reply): defer steer messages while embedded compaction runs | issue-openclaw-openclaw-118771 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:38 SUCCESS:40 IN_PROGRESS:39 FAILURE:1 NEUTRAL:1; blockers:44 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | issue-openclaw-openclaw-118776 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:40 SUCCESS:48 FAILURE:1 IN_PROGRESS:30 NEUTRAL:1; blockers:36 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118796](https://github.com/openclaw/openclaw/pull/118796) | fix(session): require a real context snapshot for CLI usage | issue-openclaw-openclaw-118772 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:40 SUCCESS:79 FAILURE:2 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118796](https://github.com/openclaw/openclaw/pull/118796) | fix(session): require a real context snapshot for CLI usage | issue-openclaw-openclaw-118772 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:39 SUCCESS:69 FAILURE:1 IN_PROGRESS:10 NEUTRAL:1; blockers:15 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118751](https://github.com/openclaw/openclaw/pull/118751) | fix(agents): reject failed embedded image hydration | issue-openclaw-openclaw-102190 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:45 SUCCESS:84 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118721](https://github.com/openclaw/openclaw/pull/118721) | fix(workboard): bound SQLite card-list hydration | issue-openclaw-openclaw-118706 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:52; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118696](https://github.com/openclaw/openclaw/pull/118696) | fix(gateway): terminate supervised subprocesses on shutdown | issue-openclaw-openclaw-118652 | MERGEABLE | BEHIND | CANCELLED:15 SKIPPED:45 SUCCESS:89 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
