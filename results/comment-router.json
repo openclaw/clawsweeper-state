@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:14:21.349Z",
+  "updated_at": "2026-08-03T16:14:22.820Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105643:4952544572:2026-08-03T12:23:09Z:clawsweeper_needs_human",
-      "comment_id": "4952544572",
-      "comment_version_key": "4952544572:2026-08-03T12:23:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-4952544572",
-      "comment_created_at": "2026-07-12T19:53:32Z",
-      "comment_updated_at": "2026-08-03T12:23:09Z",
-      "comment_body_sha256": "03f15f250072068200f80d2e5b1ae6f1ff4754c229c0942f431aee053c8bc159",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105643,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as mergeable but behind current main; refresh the actual three-way merge result and complete the in-progress required checks before landing. (sha=b40a87005f0f41a8ab383ef4f6c84cdaa73f5b26)",
-      "expected_head_sha": "b40a87005f0f41a8ab383ef4f6c84cdaa73f5b26",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:31:06.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bundle-mcp-temp-sweep",
-        "head_sha": "b40a87005f0f41a8ab383ef4f6c84cdaa73f5b26",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105643:4952652823:2026-07-12T20:27:43Z:re_review",
       "comment_id": "4952652823",
@@ -31954,6 +31921,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:255:5168889075:2026-08-03T16:13:50Z:clawsweeper_needs_human",
+      "comment_id": "5168889075",
+      "comment_version_key": "5168889075:2026-08-03T16:13:50Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/255#issuecomment-5168889075",
+      "comment_created_at": "2026-08-03T16:13:50Z",
+      "comment_updated_at": "2026-08-03T16:13:50Z",
+      "comment_body_sha256": "77bd17cb741b1a7e3b969b5cacac9dbc8bd8598087ecce6a32fcb0153a17c670",
+      "repo": "openclaw/crabline",
+      "issue_number": 255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body contains upstream release notes but no after-update run of Crabline’s formatter/linter commands; a development-tool upgrade can change formatting or lint results across co... (sha=31d1fcf8ff2686d7070ad49a375308e8e7955369)",
+      "expected_head_sha": "31d1fcf8ff2686d7070ad49a375308e8e7955369",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T16:14:22.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-minor-and-patch-544fee7394",
+        "head_sha": "31d1fcf8ff2686d7070ad49a375308e8e7955369",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
