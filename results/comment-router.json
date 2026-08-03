@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:20:58.996Z",
+  "updated_at": "2026-08-03T21:21:10.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118770:5169377938:2026-08-03T17:02:20Z:clawsweeper_needs_human",
-      "comment_id": "5169377938",
-      "comment_version_key": "5169377938:2026-08-03T17:02:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118770#issuecomment-5169377938",
-      "comment_created_at": "2026-08-03T17:02:20Z",
-      "comment_updated_at": "2026-08-03T17:02:20Z",
-      "comment_body_sha256": "5182b529a1ea8f4c6136a5943cd45589e4ebcab359984007d0502e386eef9814",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118770,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this maintainer-labeled deterministic test-performance patch merge once the remaining required checks complete on commit c8b0793731596c3514657... (sha=c8b0793731596c35146578cd8c5ab1931b0002d7)",
-      "expected_head_sha": "c8b0793731596c35146578cd8c5ab1931b0002d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T17:31:09.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-large6-current",
-        "head_sha": "c8b0793731596c35146578cd8c5ab1931b0002d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118788:5169662226:2026-08-03T17:30:42Z:clawsweeper_auto_repair",
       "comment_id": "5169662226",
@@ -32874,6 +32841,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118856:5171859029:2026-08-03T21:20:15Z:re_review",
+      "comment_id": "5171859029",
+      "comment_version_key": "5171859029:2026-08-03T21:20:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118856#issuecomment-5171859029",
+      "comment_created_at": "2026-08-03T21:20:15Z",
+      "comment_updated_at": "2026-08-03T21:20:15Z",
+      "comment_body_sha256": "ec079931813031b60a2a2d316f4925ef49b45568f5c3060d698b09d0dc82b7b3",
+      "source_delivery_id": "1f40ce50-8f81-11f1-9fd1-868163932ab4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118856,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T21:21:07.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-dry-run-no-state-mutation",
+        "head_sha": "3688e3abd181ce0dfe3a6035cbb171700ee24908",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
