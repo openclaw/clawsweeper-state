@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T03:13:27.123Z",
+  "updated_at": "2026-08-03T03:14:05.188Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:260:5160706789:2026-08-02T22:45:38Z:clawsweeper_auto_repair",
-      "comment_id": "5160706789",
-      "comment_version_key": "5160706789:2026-08-02T22:45:38Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/260#issuecomment-5160706789",
-      "comment_created_at": "2026-08-02T22:45:38Z",
-      "comment_updated_at": "2026-08-02T22:45:38Z",
-      "comment_body_sha256": "7f374669db2f183f478a2894945be8783ec302bfb4b696a9a2d8fee1e6d1de3e",
-      "repo": "openclaw/mcporter",
-      "issue_number": 260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=3cf684e0b200d3fcf9c008f076d870628fd606ae)",
-      "expected_head_sha": "3cf684e0b200d3fcf9c008f076d870628fd606ae",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-02T22:46:26.684Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/mcp2-duplicate-tools",
-        "head_sha": "3cf684e0b200d3fcf9c008f076d870628fd606ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118261:5160648583:2026-08-02T22:45:52Z:clawsweeper_auto_repair",
       "comment_id": "5160648583",
@@ -32601,6 +32568,53 @@
         "cluster_id": "automerge-openclaw-openclaw-100845",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100845.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111205:5161914940:2026-08-03T03:13:23Z:re_review",
+      "comment_id": "5161914940",
+      "comment_version_key": "5161914940:2026-08-03T03:13:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111205#issuecomment-5161914940",
+      "comment_created_at": "2026-08-03T03:13:23Z",
+      "comment_updated_at": "2026-08-03T03:13:23Z",
+      "comment_body_sha256": "1b94f5b68c74123787740bb7380a495e272cab8f4e9c969cf026d22f63074627",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111205,
+      "author": "nvtoroy",
+      "author_id": 90771587,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T03:14:01.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-native-hook-relay-config",
+        "head_sha": "1c41cda276754269c557ab967a3c07a4da24201a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
