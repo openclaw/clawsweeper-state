@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:10:41.787Z",
+  "updated_at": "2026-08-03T22:10:42.688Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118555:5163448817:2026-08-03T18:04:38Z:clawsweeper_auto_repair",
-      "comment_id": "5163448817",
-      "comment_version_key": "5163448817:2026-08-03T18:04:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118555#issuecomment-5163448817",
-      "comment_created_at": "2026-08-03T07:20:54Z",
-      "comment_updated_at": "2026-08-03T18:04:38Z",
-      "comment_body_sha256": "55d08182b3d497915b239d19157cea603bf13910ce950fbd7da9f10cb542c811",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118555,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f)",
-      "expected_head_sha": "e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T18:05:11.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/prompt-build-drop-marker",
-        "head_sha": "e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118812:5170008464:2026-08-03T18:04:45Z:clawsweeper_auto_repair",
       "comment_id": "5170008464",
@@ -33129,6 +33096,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-03T22:09:21Z:clawsweeper_needs_human",
+      "comment_id": "5157206715",
+      "comment_version_key": "5157206715:2026-08-03T22:09:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
+      "comment_created_at": "2026-08-02T10:31:46Z",
+      "comment_updated_at": "2026-08-03T22:09:21Z",
+      "comment_body_sha256": "41abcfe65209e938b53aa375020933613b78550bcb8af1b5025f30eb1200d6b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; this partial checkout cannot materialize the exact GitHub merge tree, so the merged source needs an exact-head refresh despite GitHub reporting a cl... (sha=294d1f348b21927b031d50a22f44d1be41b89e24)",
+      "expected_head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T22:10:42.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+        "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
