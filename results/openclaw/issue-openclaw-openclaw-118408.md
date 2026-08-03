@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118408"
 mode: "autonomous"
-run_id: "30790996207"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30790996207"
+run_id: "30791265644"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30791265644"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-03T06:47:25.118Z"
+published_at: "2026-08-03T06:52:30.578Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118408"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118408"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30790996207](https://github.com/openclaw/clawsweeper/actions/runs/30790996207)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30791265644](https://github.com/openclaw/clawsweeper/actions/runs/30791265644)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118408
 
 ## Summary
 
-The canonical issue remains a narrow, non-security repair candidate. Static inspection of the supplied checkout finds the same shape: ordinary completion delivery uses the finite direct retry path, while durable queue enqueue and scheduling are gated to generated-media completions. Implementation is blocked because this checkout is read-only and does not contain the preflight `main` SHA `57d8b1fc7398753f56ee7fb65498f4a5581ca434`, so the worker cannot safely add the required regression, patch, validate, or create the requested branch from the audited base.
+Verified the reported source-level gap on the hydrated `main` SHA `57d8b1fc7398753f56ee7fb65498f4a5581ca434`: ordinary completion delivery uses the finite direct retry path, while durable SQLite queue handoff and recovery scheduling are gated to generated-media completions. The issue is a narrow, non-security bug fix, but implementation is blocked because this worker checkout is read-only and cannot add the required regression, patch source, run the temp-directory-focused tests, or create the requested repair branch.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The canonical issue remains a narrow, non-security repair candidate. Static insp
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118408 | fix_needed | blocked | canonical | A writable trusted checkout containing the hydrated preflight base, or an updated preflight artifact for the current main checkout, is required before implementation and validation. |
-| #91650 | keep_closed | skipped | duplicate | Already closed; retain only as supporting evidence for the canonical open issue. |
-| cluster:issue-openclaw-openclaw-118408 | build_fix_artifact | blocked | canonical | The repair remains narrow, but a safe writable base is required before producing an executable PR. |
+| #118408 | fix_needed | blocked | canonical | A writable trusted executor should add the failing persistent-takeover regression, extend the established durable queue producer sequence for ordinary completed announcements, validate, and open or update the single required PR branch. |
+| #91650 | keep_closed | skipped | duplicate | Already closed and therefore not a mutation target; retain as evidence for the canonical issue. |
+| cluster:issue-openclaw-openclaw-118408 | build_fix_artifact | blocked | canonical | The implementation plan is bounded and ready for a writable executor; this worker cannot perform the edits or validation. |
 
 ## Needs Human
 

@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118408",
+  "mode": "autonomous",
+  "run_id": "30791265644",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30791265644",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118408.md",
+  "published_at": "2026-08-03T06:52:30.578Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118408",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118408",
+  "canonical_pr": null,
+  "summary": "Verified the reported source-level gap on the hydrated `main` SHA `57d8b1fc7398753f56ee7fb65498f4a5581ca434`: ordinary completion delivery uses the finite direct retry path, while durable SQLite queue handoff and recovery scheduling are gated to generated-media completions. The issue is a narrow, non-security bug fix, but implementation is blocked because this worker checkout is read-only and cannot add the required regression, patch source, run the temp-directory-focused tests, or create the requested repair branch.",
+  "actions": [
+    {
+      "target": "#118408",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "A writable trusted executor should add the failing persistent-takeover regression, extend the established durable queue producer sequence for ordinary completed announcements, validate, and open or update the single required PR branch."
+    },
+    {
+      "target": "#91650",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "Already closed and therefore not a mutation target; retain as evidence for the canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118408",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "The implementation plan is bounded and ready for a writable executor; this worker cannot perform the edits or validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118408",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
