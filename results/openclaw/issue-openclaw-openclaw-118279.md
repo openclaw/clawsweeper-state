@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118279"
 mode: "autonomous"
-run_id: "30771394654"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30771394654"
+run_id: "30774371805"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30774371805"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-02T23:34:57.689Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-03T01:03:25.358Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118279"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118279"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30771394654](https://github.com/openclaw/clawsweeper/actions/runs/30771394654)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30774371805](https://github.com/openclaw/clawsweeper/actions/runs/30774371805)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/118279
 
 ## Summary
 
-#118279 remains the canonical open bug. The supplied preflight identifies main as faf2602d22aa0d9d7fa7894a95ef3703b506d049, but this read-only checkout contains only 6adbd0901aa14ce09fccac76dfcc3f0f5b8f3321 and cannot resolve the required SHA. The older checkout independently shows the reported broken boundary: due commitments set disableTools without side-question mode, while the CLI handoff forwards disableTools and the CLI guard rejects tools-disabled always-on-native-tool backends. A narrow fix artifact is ready, but implementation and validation against latest main are blocked until the executor refreshes the checkout.
+#118279 remains a source-reproducible current-main bug at c43ba8e3fca90e7e03b487564c5f3c6b0a02923d. The due-commitment heartbeat disables tools without forwarding the existing side-question execution mode into the direct CLI runner, so the native-tool guard throws before delivery. A narrow new fix PR is appropriate; this read-only checkout has no node_modules, so focused tests and branch changes must run in the executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,21 +54,21 @@ Canonical: https://github.com/openclaw/openclaw/issues/118279
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/118339 | clawsweeper/issue-openclaw-openclaw-118279 |  |
+| issue_implementation_status_comment | updated | #118279 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #118339 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118279 | keep_canonical | planned | canonical | The issue is a bounded existing-behavior defect with a clear owner boundary; no closure or merge is allowed by this job. |
-| #118279 | fix_needed | blocked | canonical | Implementation is blocked only by the unavailable required latest-main checkout; refresh to the preflight SHA before applying the narrow artifact. |
-| cluster:issue-openclaw-openclaw-118279 | build_fix_artifact | planned | canonical | A refreshed executor can apply this small, non-security repair without new configuration, provider policy, or embedded-runner API changes. |
+| #118279 | fix_needed | planned | canonical | The hydrated canonical issue is open, non-security-sensitive, and has no viable fixing PR. The defect is bounded to an internal option and CLI handoff. |
+| cluster:issue-openclaw-openclaw-118279 | build_fix_artifact | planned | canonical | Create or update the single requested branch clawsweeper/issue-openclaw-openclaw-118279 with the narrow internal repair; do not add config, provider-specific bypasses, embedded-runner execution-mode plumbing, or delivery-state changes. |
 
 ## Needs Human
 

@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118279",
+  "mode": "autonomous",
+  "run_id": "30774371805",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30774371805",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118279.md",
+  "published_at": "2026-08-03T01:03:25.358Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118279",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118279",
+  "canonical_pr": null,
+  "summary": "#118279 remains a source-reproducible current-main bug at c43ba8e3fca90e7e03b487564c5f3c6b0a02923d. The due-commitment heartbeat disables tools without forwarding the existing side-question execution mode into the direct CLI runner, so the native-tool guard throws before delivery. A narrow new fix PR is appropriate; this read-only checkout has no node_modules, so focused tests and branch changes must run in the executor.",
+  "actions": [
+    {
+      "target": "#118279",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118279",
+      "candidate_fix": null,
+      "reason": "The hydrated canonical issue is open, non-security-sensitive, and has no viable fixing PR. The defect is bounded to an internal option and CLI handoff."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118279",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118279",
+      "candidate_fix": null,
+      "reason": "Create or update the single requested branch clawsweeper/issue-openclaw-openclaw-118279 with the narrow internal repair; do not add config, provider-specific bypasses, embedded-runner execution-mode plumbing, or delivery-state changes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118339",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118279",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118339",
+      "commit": "b16a2a5f79cbc80ad6ca0c4beb38263a53b71eac",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118279",
+      "pr": "https://github.com/openclaw/openclaw/pull/118339",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118339",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118339",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(heartbeat): preserve CLI side-question mode for commitments",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
