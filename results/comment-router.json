@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:40:50.524Z",
+  "updated_at": "2026-08-03T15:41:09.620Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118633:5165598274:2026-08-03T11:13:11Z:clawsweeper_needs_human",
-      "comment_id": "5165598274",
-      "comment_version_key": "5165598274:2026-08-03T11:13:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118633#issuecomment-5165598274",
-      "comment_created_at": "2026-08-03T11:13:11Z",
-      "comment_updated_at": "2026-08-03T11:13:11Z",
-      "comment_body_sha256": "494d77adf18941e4d0bcf9af3f36b00a55c950656b57c9bcb5fd9849cc0733de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c680cc09f024fcc360832f152b5564f5c26abfdc)",
-      "expected_head_sha": "c680cc09f024fcc360832f152b5564f5c26abfdc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T11:13:42.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-large5-gateway-core",
-        "head_sha": "c680cc09f024fcc360832f152b5564f5c26abfdc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118507:5162706662:2026-08-03T11:12:58Z:clawsweeper_needs_human",
       "comment_id": "5162706662",
@@ -31910,6 +31877,54 @@
         "kind": "pull_request",
         "branch": "fix/daytona-hydrate-cache-fallback",
         "head_sha": "7f75b3f4940e5b53c528e9c8c2cc93c0306b046b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118310:5168537532:2026-08-03T15:40:24Z:re_review",
+      "comment_id": "5168537532",
+      "comment_version_key": "5168537532:2026-08-03T15:40:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118310#issuecomment-5168537532",
+      "comment_created_at": "2026-08-03T15:40:24Z",
+      "comment_updated_at": "2026-08-03T15:40:24Z",
+      "comment_body_sha256": "ba5740d21670432dc9e37877cccdf7b67157ca53d8895dc9e8d79b73875aeb32",
+      "source_delivery_id": "a56fda50-8f51-11f1-9cd1-366d986287d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118310,
+      "author": "Takhoffman",
+      "author_id": 781889,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T15:41:07.191Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-memory-agent-fanout-20260802",
+        "head_sha": "edc6a906457544d7dac5f1721afed3fa3582f741",
         "cluster_id": null,
         "job_path": null
       },
