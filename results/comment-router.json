@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:01:11.587Z",
+  "updated_at": "2026-08-03T15:01:23.692Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113074:5133545053:2026-08-03T07:42:13Z:clawsweeper_needs_human",
-      "comment_id": "5133545053",
-      "comment_version_key": "5133545053:2026-08-03T07:42:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113074#issuecomment-5133545053",
-      "comment_created_at": "2026-07-30T16:28:42Z",
-      "comment_updated_at": "2026-08-03T07:42:13Z",
-      "comment_body_sha256": "2b4cbf824574fd3b99753d95dbb89b5e009fb0a8b861e5b8b2b403a258a3e5fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113074,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The GitHub merge state is dirty, and blindly rebasing would retain a change to the deleted store.session-key-normalization.test.ts; the surviving teardown calls need a current-main au... (sha=395137ecb81984e37b6bfc7ff77aea73955cb174)",
-      "expected_head_sha": "395137ecb81984e37b6bfc7ff77aea73955cb174",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:41:00.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/test-session-db-cleanup",
-        "head_sha": "395137ecb81984e37b6bfc7ff77aea73955cb174",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116844:5143148278:2026-08-03T08:41:40Z:clawsweeper_auto_repair",
       "comment_id": "5143148278",
@@ -31796,6 +31763,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T15:01:11.587Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102170:4914728570:2026-08-03T15:00:39Z:clawsweeper_auto_repair",
+      "comment_id": "4914728570",
+      "comment_version_key": "4914728570:2026-08-03T15:00:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102170#issuecomment-4914728570",
+      "comment_created_at": "2026-07-08T12:23:23Z",
+      "comment_updated_at": "2026-08-03T15:00:39Z",
+      "comment_body_sha256": "02084a179896746ded51fc985fbfa22dc748e227002e8ee889f4b945537b85b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=10dacb57fc13084c2f3009d2fe7d7cd83caa84c7)",
+      "expected_head_sha": "10dacb57fc13084c2f3009d2fe7d7cd83caa84c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T15:01:23.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/102138-google-provider-migration",
+        "head_sha": "10dacb57fc13084c2f3009d2fe7d7cd83caa84c7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
