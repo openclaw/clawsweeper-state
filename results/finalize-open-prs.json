@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T14:19:47.885Z",
+  "generated_at": "2026-08-03T14:29:41.583Z",
   "count": 19,
   "summary": {
     "open_prs": 19,
@@ -74,12 +74,20 @@
         ]
       },
       "latest_record": {
-        "run_id": "30812698303",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30812698303",
+        "run_id": "30819533426",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30819533426",
         "cluster_id": "issue-openclaw-openclaw-118652",
-        "published_at": "2026-08-03T13:13:54.804Z",
-        "workflow_conclusion": "failure",
-        "apply_action": null
+        "published_at": "2026-08-03T14:26:58.986Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118696",
+          "action": "keep_canonical",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#118696",
+          "candidate_fix": null,
+          "reason": "The existing same-repository PR is the clearest validated implementation path; preserve its author credit and do not replace it."
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
@@ -96,7 +104,7 @@
       "head_sha": "64e982af9a5efd85b470e761352f245d1b3af39b",
       "cluster_id": "issue-openclaw-openclaw-118625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
-      "updated_at": "2026-08-03T14:15:17Z",
+      "updated_at": "2026-08-03T14:20:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -176,30 +184,49 @@
       "title": "fix(agents): record stop reason in completion trajectory",
       "url": "https://github.com/openclaw/openclaw/pull/118685",
       "branch": "clawsweeper/issue-openclaw-openclaw-118673",
-      "head_sha": "aeea47146db18a8e17dfcd20bfe96302cd63bb4c",
+      "head_sha": "4677cf3c8f6c5a09d5b179bc572cafae9daf8c00",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-03T14:13:55Z",
+      "updated_at": "2026-08-03T14:26:16Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 143,
+        "total": 118,
         "counts": {
-          "CANCELLED": 12,
-          "SKIPPED": 47,
-          "SUCCESS": 83,
+          "CANCELLED": 1,
+          "SUCCESS": 55,
+          "SKIPPED": 37,
+          "IN_PROGRESS": 24,
           "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -249,7 +276,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -319,17 +346,17 @@
       "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
       "cluster_id": "issue-openclaw-openclaw-118669",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118669.md",
-      "updated_at": "2026-08-03T14:11:12Z",
+      "updated_at": "2026-08-03T14:20:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 123,
+        "total": 126,
         "counts": {
           "CANCELLED": 7,
-          "SKIPPED": 44,
-          "SUCCESS": 72
+          "SKIPPED": 45,
+          "SUCCESS": 74
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",

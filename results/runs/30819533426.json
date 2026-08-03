@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118652",
+  "mode": "plan",
+  "run_id": "30819533426",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30819533426",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md",
+  "published_at": "2026-08-03T14:26:58.986Z",
+  "canonical": "#118696",
+  "canonical_issue": "#118652",
+  "canonical_pr": "#118696",
+  "summary": "Keep #118652 open with #118696 as the canonical implementation path. The hydrated PR is focused, non-security-sensitive, reviewed cleanly, and has passing CI; merge and closure remain outside this job's allowed actions.",
+  "actions": [
+    {
+      "target": "#118696",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118696",
+      "candidate_fix": null,
+      "reason": "The existing same-repository PR is the clearest validated implementation path; preserve its author credit and do not replace it."
+    },
+    {
+      "target": "#118652",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118652",
+      "candidate_fix": "#118696",
+      "reason": "Keep the source report open as the canonical tracking issue until the candidate PR is merged by an authorized maintainer."
+    },
+    {
+      "target": "#113021",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "Both items involve subprocess lifecycle behavior, but their triggering lifecycle owner, expected behavior, and remaining work differ."
+    },
+    {
+      "target": "#65694",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#118652",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure, comment, or mutation is valid for this historical context item."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
