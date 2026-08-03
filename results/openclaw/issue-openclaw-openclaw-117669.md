@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-117669"
-mode: "autonomous"
-run_id: "30777751945"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30777751945"
+mode: "plan"
+run_id: "30778349632"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30778349632"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-03T01:56:57.004Z"
-canonical: "https://github.com/openclaw/openclaw/issues/117669"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/117669"
-canonical_pr: null
-actions_total: 2
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-03T02:09:41.201Z"
+canonical: "https://github.com/openclaw/openclaw/pull/98236"
+canonical_issue: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/98236"
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30777751945](https://github.com/openclaw/clawsweeper/actions/runs/30777751945)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30778349632](https://github.com/openclaw/clawsweeper/actions/runs/30778349632)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/117669
+Canonical: https://github.com/openclaw/openclaw/pull/98236
 
 ## Summary
 
-Current main at f2af4e97b356570dd0cadf66127b1449a0f8c085 still rejects valid speaker-prefixed session-corpus snippets at the grounded recall-ingestion boundary. The repair is narrow and fully specified, but this worker sandbox is read-only, so it cannot modify the branch, validate the patched tree, or open the PR.
+No repair PR is planned. The supplied live artifact shows #117669 was closed on August 3, 2026 after maintainer confirmation that #98236 landed the relevant session/transcript SQLite behavior on main; all former repair attempts are closed. The linked security-sensitive PR is quarantined separately.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,12 @@ Current main at f2af4e97b356570dd0cadf66127b1449a0f8c085 still rejects valid spe
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #117669 | fix_needed | planned | canonical | No viable open PR owns the repair. Create one narrow fix from current main and preserve the closed contributor attempt as credit only. |
-| cluster:issue-openclaw-openclaw-117669 | build_fix_artifact | blocked | canonical | Only implementation is blocked. The deterministic executor can apply this artifact to `clawsweeper/issue-openclaw-openclaw-117669`. |
+| #67580 | keep_closed | skipped | related | Closed historical context only; no closure or repair action is valid. |
+| #98236 | route_security | planned | security_sensitive | Quarantine this exact linked security-sensitive item; do not let it expand the ordinary closed-issue maintenance scope. |
+| #117669 | keep_closed | skipped | fixed_by_candidate | Already closed by maintainer confirmation of the landed fix; no new PR, comment, or closure action is appropriate. |
+| #117676 | keep_closed | skipped | superseded | Closed historical attempt with overly broad durable-promotion changes; no reopening or replacement is needed because the issue is already fixed. |
+| #117946 | keep_closed | skipped | superseded | Closed historical attempt; preserve attribution but do not revive it because the issue is already closed as fixed. |
+| #118325 | keep_closed | skipped | superseded | Already closed historical repair attempt; no additional action is valid. |
 
 ## Needs Human
 
