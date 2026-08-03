@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118279"
-mode: "autonomous"
-run_id: "30774371805"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30774371805"
+mode: "plan"
+run_id: "30775874159"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30775874159"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-03T01:03:25.358Z"
+published_at: "2026-08-03T03:34:02.602Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118279"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118279"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30774371805](https://github.com/openclaw/clawsweeper/actions/runs/30774371805)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30775874159](https://github.com/openclaw/clawsweeper/actions/runs/30775874159)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118279
 
 ## Summary
 
-#118279 remains a source-reproducible current-main bug at c43ba8e3fca90e7e03b487564c5f3c6b0a02923d. The due-commitment heartbeat disables tools without forwarding the existing side-question execution mode into the direct CLI runner, so the native-tool guard throws before delivery. A narrow new fix PR is appropriate; this read-only checkout has no node_modules, so focused tests and branch changes must run in the executor.
+Current main d9669ce72cbe31ff8e1ae66de03f34f2014a4f1e does not reproduce the reported Claude CLI guard rejection: Claude now declares selectable native tools with execution-args enforcement, and prepare installs an exact empty native-tool cap before the guard. The current PR’s side-question change is therefore not needed for the reported failure and also changes CLI run semantics beyond the guard workaround. Do not merge it; closure or issue resolution requires a separate permitted maintainer action.
 
 ## Impact
 
@@ -54,21 +54,20 @@ Canonical: https://github.com/openclaw/openclaw/issues/118279
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/118339 | clawsweeper/issue-openclaw-openclaw-118279 |  |
-| issue_implementation_status_comment | updated | #118279 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118339 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118279 | fix_needed | planned | canonical | The hydrated canonical issue is open, non-security-sensitive, and has no viable fixing PR. The defect is bounded to an internal option and CLI handoff. |
-| cluster:issue-openclaw-openclaw-118279 | build_fix_artifact | planned | canonical | Create or update the single requested branch clawsweeper/issue-openclaw-openclaw-118279 with the narrow internal repair; do not add config, provider-specific bypasses, embedded-runner execution-mode plumbing, or delivery-state changes. |
+| #118279 | keep_related | planned | fixed_by_candidate | The issue is no longer reproducible for its stated Claude CLI failure on hydrated current main. This plan does not close the issue because closure is blocked by job policy and no hydrated upstream fixing PR is available as candidate_fix. |
+| #118339 | keep_related | planned | superseded | Do not merge #118339. Its narrow diff is mechanically sound, but it is unnecessary for the reported current Claude CLI failure and changes run-mode semantics. A permitted follow-up should close it as superseded by current main after preserving the source issue attribution. |
 
 ## Needs Human
 
