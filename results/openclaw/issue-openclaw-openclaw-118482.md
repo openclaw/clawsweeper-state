@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118482"
 mode: "autonomous"
-run_id: "30788029561"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30788029561"
+run_id: "30788301811"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30788301811"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-03T05:53:03.638Z"
+published_at: "2026-08-03T08:09:43.945Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118482"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118482"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30788029561](https://github.com/openclaw/clawsweeper/actions/runs/30788029561)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30788301811](https://github.com/openclaw/clawsweeper/actions/runs/30788301811)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118482
 
 ## Summary
 
-Current main at `5c5aeaddc2bb28e7fc38c6c223a44f8ea0df1c92` still drops safe endpoint failure details from `codex_endpoint_probe`, while `codex_sessions_list` preserves them. The required sibling `../codex` source checkout is absent; this restricted read-only worker cannot establish the mandatory Codex protocol proof or create the fix branch.
+Current main at `e4884d981a40308bc192175e5cd9522f4c29182d` still drops safe endpoint failure details from `codex_endpoint_probe`, while `codex_sessions_list` preserves them. The required sibling `../codex` source checkout is absent; this restricted read-only worker cannot establish the mandatory Codex protocol proof or create the fix branch.
 
 ## Impact
 
