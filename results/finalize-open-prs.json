@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T10:50:43.188Z",
+  "generated_at": "2026-08-03T09:38:42.820Z",
   "count": 14,
   "summary": {
     "open_prs": 14,
@@ -34,7 +34,7 @@
       "head_sha": "94013261cfb9b52626aad14836dfaaea7b37500c",
       "cluster_id": "issue-openclaw-openclaw-117635",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-117635.md",
-      "updated_at": "2026-08-03T10:44:37Z",
+      "updated_at": "2026-08-03T09:05:15Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -254,33 +254,25 @@
       "title": "fix(minimax): route M3 image calls through MiniMax VL",
       "url": "https://github.com/openclaw/openclaw/pull/118303",
       "branch": "clawsweeper/issue-openclaw-openclaw-116601",
-      "head_sha": "94d777506e15a14ea58779b854d870d9d8d85c19",
+      "head_sha": "bd92629cd2279edbc7f286efe3bc1a9e94fb1d22",
       "cluster_id": "issue-openclaw-openclaw-116601",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116601.md",
-      "updated_at": "2026-08-03T10:44:06Z",
+      "updated_at": "2026-08-03T09:35:08Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 115,
+        "total": 122,
         "counts": {
-          "CANCELLED": 1,
-          "SUCCESS": 68,
-          "SKIPPED": 37,
-          "IN_PROGRESS": 8,
+          "CANCELLED": 3,
+          "SKIPPED": 41,
+          "SUCCESS": 77,
           "NEUTRAL": 1
         },
         "blockers": [
           "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "CI / checks-node-compact-large-1:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS"
+          "Real behavior proof:CANCELLED"
         ]
       },
       "review_threads": {
@@ -307,10 +299,10 @@
         ]
       },
       "latest_record": {
-        "run_id": "30805318827",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30805318827",
+        "run_id": "30791079463",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30791079463",
         "cluster_id": "automerge-openclaw-openclaw-118303",
-        "published_at": "2026-08-03T10:48:55.587Z",
+        "published_at": "2026-08-03T07:09:45.085Z",
         "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#118303",
@@ -324,7 +316,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-1:IN_PROGRESS; CI / checks-node-compact-large-5:IN_PROGRESS",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
