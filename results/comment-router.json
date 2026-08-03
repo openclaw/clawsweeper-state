@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T15:08:51.205Z",
+  "updated_at": "2026-08-03T15:09:38.937Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114783:5105320658:2026-07-28T14:17:29Z:re_review",
-      "comment_id": "5105320658",
-      "comment_version_key": "5105320658:2026-07-28T14:17:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114783#issuecomment-5105320658",
-      "comment_created_at": "2026-07-28T14:17:29Z",
-      "comment_updated_at": "2026-07-28T14:17:29Z",
-      "comment_body_sha256": "3e1d9ac4d050a4714267852fd5f79d0b21607bd81effc5657c214865346c2b04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114783,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T10:42:29.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/o4-manifest-first-host-bundles-upstream",
-        "head_sha": "14bd05f569144932072b2f257c7f1a8f144a2680",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114783:5097667778:2026-08-03T10:41:53Z:clawsweeper_needs_human",
       "comment_id": "5097667778",
@@ -31831,6 +31784,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118702:5167579051:2026-08-03T15:08:54Z:clawsweeper_needs_human",
+      "comment_id": "5167579051",
+      "comment_version_key": "5167579051:2026-08-03T15:08:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118702#issuecomment-5167579051",
+      "comment_created_at": "2026-08-03T14:19:48Z",
+      "comment_updated_at": "2026-08-03T15:08:54Z",
+      "comment_body_sha256": "fc1ae9c86cda54cbcf5379aeda07d5624363775a358d2d9edde403d49be821ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118702,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an authentication and persisted-configuration boundary: merging intentionally changes --secret-input-mode ref from rewriting resolved profile material to preserving profile ow... (sha=9f266e1daf9c8942f6765fba53c43c865750a3e2)",
+      "expected_head_sha": "9f266e1daf9c8942f6765fba53c43c865750a3e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T15:09:38.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-onboard-ref-secret-no-plaintext",
+        "head_sha": "9f266e1daf9c8942f6765fba53c43c865750a3e2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
