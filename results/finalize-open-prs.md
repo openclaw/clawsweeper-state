@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T15:56:52.229Z
+Generated: 2026-08-03T15:51:47.599Z
 
 ## Summary
 
@@ -14,7 +14,7 @@ Generated: 2026-08-03T15:56:52.229Z
 | needs_checks | 20 |
 | needs_review | 0 |
 | needs_merge_preflight | 20 |
-| needs_result_backfill | 2 |
+| needs_result_backfill | 3 |
 
 ## Dispatch
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118721](https://github.com/openclaw/openclaw/pull/118721) | fix(workboard): bound SQLite card-list hydration | issue-openclaw-openclaw-118706 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:52; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118721](https://github.com/openclaw/openclaw/pull/118721) | fix(workboard): bound SQLite card-list hydration | issue-openclaw-openclaw-118706 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:52; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118696](https://github.com/openclaw/openclaw/pull/118696) | fix(gateway): terminate supervised subprocesses on shutdown | issue-openclaw-openclaw-118652 | MERGEABLE | BEHIND | CANCELLED:15 SKIPPED:45 SUCCESS:89 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118688](https://github.com/openclaw/openclaw/pull/118688) | fix(agents): redrive suspended completions after compaction unlock | issue-openclaw-openclaw-118625 | MERGEABLE | BEHIND | CANCELLED:1 SUCCESS:80 SKIPPED:38 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118685](https://github.com/openclaw/openclaw/pull/118685) | fix(agents): record stop reason in completion trajectory | issue-openclaw-openclaw-118673 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:42 SUCCESS:82 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
