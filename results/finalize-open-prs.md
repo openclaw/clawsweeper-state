@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T00:11:44.213Z
+Generated: 2026-08-02T23:57:25.008Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 15 |
+| open_prs | 13 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 15 |
+| needs_checks | 13 |
 | needs_review | 0 |
-| needs_merge_preflight | 15 |
-| needs_result_backfill | 2 |
+| needs_merge_preflight | 13 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -30,8 +30,6 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#118315](https://github.com/openclaw/openclaw/pull/118315) | fix(agents): finalize settled failed tool turns | issue-openclaw-openclaw-118274 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:38 SUCCESS:67 IN_PROGRESS:13 NEUTRAL:1; blockers:18 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | issue-openclaw-openclaw-118185 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:47 SUCCESS:82 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | issue-openclaw-openclaw-116601 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:56 FAILURE:2 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118282](https://github.com/openclaw/openclaw/pull/118282) | fix(doctor): import legacy exec approvals with null usage metadata | issue-openclaw-openclaw-118242 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:44 SUCCESS:83 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118055](https://github.com/openclaw/openclaw/pull/118055) | fix(line): clear default access token when removing account | issue-openclaw-openclaw-118039 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:47 SUCCESS:50 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
@@ -43,5 +41,5 @@ Status: report_only
 | [#117911](https://github.com/openclaw/openclaw/pull/117911) | fix(exec): explain Linux OOM-score-adjusted SIGKILLs | issue-openclaw-openclaw-69242 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:48 SUCCESS:89 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | issue-openclaw-openclaw-72504 | MERGEABLE | BEHIND | CANCELLED:14 SKIPPED:49 SUCCESS:56 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | issue-openclaw-openclaw-88079 | MERGEABLE | BEHIND | CANCELLED:17 SKIPPED:37 SUCCESS:91; blockers:9 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#117485](https://github.com/openclaw/openclaw/pull/117485) | fix(ios): route forced realtime consults through Gateway relay | issue-openclaw-openclaw-110171 | MERGEABLE | BEHIND | CANCELLED:1 IN_PROGRESS:8 SKIPPED:10 SUCCESS:13; blockers:8 | needs_merge_state:BEHIND, needs_checks:CI / preflight:IN_PROGRESS; OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS; CI / security-fast:IN_PROGRESS, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#117485](https://github.com/openclaw/openclaw/pull/117485) | fix(ios): route forced realtime consults through Gateway relay | issue-openclaw-openclaw-110171 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:27 SUCCESS:25 FAILURE:4; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; iOS Periphery Dead Code / Scan iOS dead code:FAILURE; Shared OpenClawKit Periphery / Intersect shared OpenClawKit dead code:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#117443](https://github.com/openclaw/openclaw/pull/117443) | fix(status): resolve effective channel model override | issue-openclaw-openclaw-89532 | MERGEABLE | BEHIND | CANCELLED:16 SKIPPED:51 SUCCESS:92 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
