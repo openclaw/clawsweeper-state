@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118706",
+  "mode": "autonomous",
+  "run_id": "30822394010",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30822394010",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118706.md",
+  "published_at": "2026-08-03T14:37:30.887Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118706",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118706",
+  "canonical_pr": null,
+  "summary": "The hydrated issue is an open canonical, non-security reproducible performance bug. The available checkout cannot implement or validate a fix because it is read-only and is not the preflight current-main revision: local HEAD is 8d263b484422b24ba1d600ba21a5ebeb4da54272, while the artifact identifies current main as 25f174c8a04400605b7540212e7276a1acf3c186, which is absent locally. Static inspection of the available tree confirms the reported N×child-table hydration path, so a narrow new PR remains the appropriate repair path once a writable checkout at the artifact main SHA is provided.",
+  "actions": [
+    {
+      "target": "#118706",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118706",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable writable checkout at the hydrated current-main revision; no product, security, or canonical-path ambiguity remains."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118706",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#118706",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan is ready for a writable checkout at the hydrated current-main SHA."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
