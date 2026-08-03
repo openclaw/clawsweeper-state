@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T00:12:01.392Z",
+  "updated_at": "2026-08-03T00:13:00.487Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117274:5153690846:2026-08-01T22:14:00Z:re_review",
-      "comment_id": "5153690846",
-      "comment_version_key": "5153690846:2026-08-01T22:14:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117274#issuecomment-5153690846",
-      "comment_created_at": "2026-08-01T22:14:00Z",
-      "comment_updated_at": "2026-08-01T22:14:00Z",
-      "comment_body_sha256": "6210a3f89aee85922b827b8b3e314f029d79cadd8cd1c6770be88f6cbe9d6a51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117274,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:04:00.004Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117274:5155795222:2026-08-02T05:58:59Z:re_review",
       "comment_id": "5155795222",
@@ -32268,6 +32241,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118315:5161027573:2026-08-03T00:12:13Z:clawsweeper_needs_human",
+      "comment_id": "5161027573",
+      "comment_version_key": "5161027573:2026-08-03T00:12:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118315#issuecomment-5161027573",
+      "comment_created_at": "2026-08-03T00:12:13Z",
+      "comment_updated_at": "2026-08-03T00:12:13Z",
+      "comment_body_sha256": "c9149cd7b0fbd51ab35c865b1c4c6bcf44c05058ff7cc042363cc908739f6cca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind the supplied current main, and this read-only checkout could not load that main revision for a three-way source review; rebase and refresh the focused current-mai... (sha=bf5210b21d6c6158614143beaa2e7e400ac24f58)",
+      "expected_head_sha": "bf5210b21d6c6158614143beaa2e7e400ac24f58",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T00:13:00.487Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118274",
+        "head_sha": "bf5210b21d6c6158614143beaa2e7e400ac24f58",
+        "cluster_id": "issue-openclaw-openclaw-118274",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118274.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
