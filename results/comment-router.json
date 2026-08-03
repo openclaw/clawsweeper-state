@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:05:17.532Z",
+  "updated_at": "2026-08-03T21:05:30.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:5169322211:2026-08-03T16:56:43Z:re_review",
-      "comment_id": "5169322211",
-      "comment_version_key": "5169322211:2026-08-03T16:56:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-5169322211",
-      "comment_created_at": "2026-08-03T16:56:43Z",
-      "comment_updated_at": "2026-08-03T16:56:43Z",
-      "comment_body_sha256": "0d0c8b4a1cf54804a9f8ea8d41bfbef0e13af269a6e3e1b6ba0fe6007751e3a8",
-      "source_delivery_id": "4ed2b130-8f5c-11f1-9f29-a72d3d7732c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T16:58:52.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feishu-video-preview",
-        "head_sha": "531e597947269a8852bfbb9f7ea063920bd5ab9d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:66:5157918151:2026-08-03T16:58:57Z:clawsweeper_auto_repair",
       "comment_id": "5157918151",
@@ -32538,6 +32490,39 @@
         "kind": "pull_request",
         "branch": "qa-gateway-b1-hosted-web",
         "head_sha": "7a64a994a4a35f171ebc32c19dcb6e1f4af7760c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118951:5171699260:2026-08-03T21:04:48Z:clawsweeper_needs_human",
+      "comment_id": "5171699260",
+      "comment_version_key": "5171699260:2026-08-03T21:04:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118951#issuecomment-5171699260",
+      "comment_created_at": "2026-08-03T21:04:48Z",
+      "comment_updated_at": "2026-08-03T21:04:48Z",
+      "comment_body_sha256": "df2693092744f1d09c6498b635c8a385fe003628186180fd3f70390cb045f85c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body says the exact-head private-QA build and both script scenarios are still pending; the test-only coverage should not be treated as a completed regression gate until those r... (sha=18e922c5c16419219e330dfbdc9fb8e53d6a9794)",
+      "expected_head_sha": "18e922c5c16419219e330dfbdc9fb8e53d6a9794",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T21:05:30.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-logging",
+        "head_sha": "18e922c5c16419219e330dfbdc9fb8e53d6a9794",
         "cluster_id": null,
         "job_path": null
       }
