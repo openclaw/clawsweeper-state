@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T20:08:46.202Z",
+  "updated_at": "2026-08-03T20:08:57.997Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2397:5168759975:2026-08-03T16:01:37Z:re_review",
-      "comment_id": "5168759975",
-      "comment_version_key": "5168759975:2026-08-03T16:01:37Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2397#issuecomment-5168759975",
-      "comment_created_at": "2026-08-03T16:01:37Z",
-      "comment_updated_at": "2026-08-03T16:01:37Z",
-      "comment_body_sha256": "64c4d1d7550c2f09c6e519da2921bb17a3a95a23c7d0dab6b6097e740cf92f02",
-      "source_delivery_id": "9bd5c920-8f54-11f1-9c28-b9a7f8b9d831",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2397,
-      "author": "hhh2210",
-      "author_id": 107194248,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review `15baefd7`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T16:02:22.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/show-cached-spend-refreshing",
-        "head_sha": "15baefd7f482674b08ea8e9a29703c86d04756ea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118310:5168765927:2026-08-03T16:02:11Z:re_review",
       "comment_id": "5168765927",
@@ -32364,6 +32316,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T20:08:46.202Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116526:5135224945:2026-08-03T20:07:32Z:clawsweeper_needs_human",
+      "comment_id": "5135224945",
+      "comment_version_key": "5135224945:2026-08-03T20:07:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116526#issuecomment-5135224945",
+      "comment_created_at": "2026-07-30T19:16:02Z",
+      "comment_updated_at": "2026-08-03T20:07:32Z",
+      "comment_body_sha256": "fcd84ffb58ecf04d95117049392469a4a17bbdb456861970ab8361fa96b2a41e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused Vitest coverage and CI results but includes no after-fix real Gateway or reverse-proxy transcript, log, terminal output,... (sha=ab2ee60ad10e37d1fc50fbba51c6a8fe141fab0b)",
+      "expected_head_sha": "ab2ee60ad10e37d1fc50fbba51c6a8fe141fab0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T20:08:57.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-898",
+        "head_sha": "ab2ee60ad10e37d1fc50fbba51c6a8fe141fab0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
