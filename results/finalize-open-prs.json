@@ -2,14 +2,14 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T19:35:49.545Z",
+  "generated_at": "2026-08-03T19:41:45.648Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
-    "mergeability_unknown": 0,
+    "mergeability_unknown": 1,
     "needs_checks": 16,
     "needs_review": 0,
     "needs_merge_preflight": 16,
@@ -76,12 +76,20 @@
         ]
       },
       "latest_record": {
-        "run_id": "30835615780",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835615780",
-        "cluster_id": "issue-openclaw-openclaw-118771",
-        "published_at": "2026-08-03T18:00:20.812Z",
+        "run_id": "30844222024",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30844222024",
+        "cluster_id": "automerge-openclaw-openclaw-118807",
+        "published_at": "2026-08-03T19:39:22.488Z",
         "workflow_conclusion": "failure",
-        "apply_action": null
+        "apply_action": {
+          "target": "#118807",
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#118807",
+          "candidate_fix": "#118807",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
@@ -250,8 +258,8 @@
       "cluster_id": "issue-openclaw-openclaw-102190",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-102190.md",
       "updated_at": "2026-08-03T18:13:44Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "UNKNOWN",
+      "merge_state_status": "UNKNOWN",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -311,11 +319,12 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "mergeability_unknown",
+        "merge_state_unknown",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
     },
     {
       "number": 118721,
