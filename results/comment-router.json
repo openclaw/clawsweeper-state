@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:13:43.697Z",
+  "updated_at": "2026-08-03T19:15:16.696Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118702:5167579051:2026-08-03T15:08:54Z:clawsweeper_needs_human",
-      "comment_id": "5167579051",
-      "comment_version_key": "5167579051:2026-08-03T15:08:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118702#issuecomment-5167579051",
-      "comment_created_at": "2026-08-03T14:19:48Z",
-      "comment_updated_at": "2026-08-03T15:08:54Z",
-      "comment_body_sha256": "fc1ae9c86cda54cbcf5379aeda07d5624363775a358d2d9edde403d49be821ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118702,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an authentication and persisted-configuration boundary: merging intentionally changes --secret-input-mode ref from rewriting resolved profile material to preserving profile ow... (sha=9f266e1daf9c8942f6765fba53c43c865750a3e2)",
-      "expected_head_sha": "9f266e1daf9c8942f6765fba53c43c865750a3e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T15:09:38.937Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-onboard-ref-secret-no-plaintext",
-        "head_sha": "9f266e1daf9c8942f6765fba53c43c865750a3e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:132:5168186671:2026-08-03T15:10:57Z:re_review",
       "comment_id": "5168186671",
@@ -32876,6 +32843,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:66:5170678735:2026-08-03T19:14:36Z:clawsweeper_needs_human",
+      "comment_id": "5170678735",
+      "comment_version_key": "5170678735:2026-08-03T19:14:36Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/66#issuecomment-5170678735",
+      "comment_created_at": "2026-08-03T19:14:36Z",
+      "comment_updated_at": "2026-08-03T19:14:36Z",
+      "comment_body_sha256": "90689ff18ecc5d7b47217a28a554c3a5dba21763fed9e860337f87e8cd21675e",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 66,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the CodeQL action executed by repository automation; retain immutable official GitHub action pins and rely on the completed CodeQL workflow check before merge. (sha=191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba)",
+      "expected_head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:15:16.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-ce612e0709",
+        "head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
