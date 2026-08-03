@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T11:33:15.271Z",
+  "updated_at": "2026-08-03T11:33:48.137Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115777:5118131136:2026-08-03T05:10:44Z:clawsweeper_auto_repair",
-      "comment_id": "5118131136",
-      "comment_version_key": "5118131136:2026-08-03T05:10:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115777#issuecomment-5118131136",
-      "comment_created_at": "2026-07-29T13:04:36Z",
-      "comment_updated_at": "2026-08-03T05:10:44Z",
-      "comment_body_sha256": "162bb75a716161454905946099a24ac6b1bfcafab6cbcc138712d8919b0eb7ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115777,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=95cc1ec8655db05b7c797359a8289ad228e38f57)",
-      "expected_head_sha": "95cc1ec8655db05b7c797359a8289ad228e38f57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T05:16:51.931Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-realized-driver-evidence",
-        "head_sha": "95cc1ec8655db05b7c797359a8289ad228e38f57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113980:5081600226:2026-08-03T05:15:37Z:clawsweeper_auto_repair",
       "comment_id": "5081600226",
@@ -32483,6 +32450,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1223:5165758447:2026-08-03T11:32:57Z:re_review",
+      "comment_id": "5165758447",
+      "comment_version_key": "5165758447:2026-08-03T11:32:57Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1223#issuecomment-5165758447",
+      "comment_created_at": "2026-08-03T11:31:15Z",
+      "comment_updated_at": "2026-08-03T11:32:57Z",
+      "comment_body_sha256": "8e11a767d9e291fd466c1e7ec1ed51a9d80ab61df3f388146eeb9242c627de7c",
+      "source_delivery_id": "13552ca0-8f2f-11f1-8ea8-c457bf8d87ac",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1223,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T11:33:45.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/daytona-post-sync-ssh-retry",
+        "head_sha": "860e2a2b06a49cd8ca3450daace59e354dddf54b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
