@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T16:20:54.069Z",
+  "updated_at": "2026-08-03T16:20:59.039Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116403:5131275265:2026-08-03T12:47:01Z:clawsweeper_needs_human",
-      "comment_id": "5131275265",
-      "comment_version_key": "5131275265:2026-08-03T12:47:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116403#issuecomment-5131275265",
-      "comment_created_at": "2026-07-30T13:13:23Z",
-      "comment_updated_at": "2026-08-03T12:47:01Z",
-      "comment_body_sha256": "68d06a8dc8abdd7a7e3eb009791275ac1f32309dbd3bbf130ba056d685d83cff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116403,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch extends a shared AsyncLocalStorage execution context. Every asynchronous producer whose event must reach the local adapter must remain inside the owning turn scope, includi... (sha=8c81bfdf4b453eb2d76a6cb166d6d6c3e42ea111)",
-      "expected_head_sha": "8c81bfdf4b453eb2d76a6cb166d6d6c3e42ea111",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T12:53:09.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/agent-turn-lifecycle",
-        "head_sha": "8c81bfdf4b453eb2d76a6cb166d6d6c3e42ea111",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116976:5146046509:2026-08-01T22:58:42Z:clawsweeper_needs_human",
       "comment_id": "5146046509",
@@ -31793,6 +31760,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118598:5168955324:2026-08-03T16:20:21Z:re_review",
+      "comment_id": "5168955324",
+      "comment_version_key": "5168955324:2026-08-03T16:20:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118598#issuecomment-5168955324",
+      "comment_created_at": "2026-08-03T16:20:21Z",
+      "comment_updated_at": "2026-08-03T16:20:21Z",
+      "comment_body_sha256": "1c38c1e341ddf94c892fe38f6dbd018a34ce23f79908d20f69e1274532c4e54a",
+      "source_delivery_id": "39fb6720-8f57-11f1-956f-624dca6d76ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118598,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T16:20:57.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/blacksmith-admission-routing",
+        "head_sha": "6fb6d8017443f953af1aa03da88aae33346b3f14",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
