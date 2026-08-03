@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:11:33.537Z",
+  "updated_at": "2026-08-03T10:11:43.319Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117037:5147452976:2026-08-03T04:09:17Z:clawsweeper_auto_repair",
-      "comment_id": "5147452976",
-      "comment_version_key": "5147452976:2026-08-03T04:09:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117037#issuecomment-5147452976",
-      "comment_created_at": "2026-07-31T21:05:28Z",
-      "comment_updated_at": "2026-08-03T04:09:17Z",
-      "comment_body_sha256": "36c6f15ce3d9ee9ceab65122f0457ed19cafda1aeb23316f3115cafbdc0e1087",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117037,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=19b30687325c783a0b93a7d4666b0ae96f01c85c)",
-      "expected_head_sha": "19b30687325c783a0b93a7d4666b0ae96f01c85c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T04:09:48.531Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-project-lifecycle",
-        "head_sha": "19b30687325c783a0b93a7d4666b0ae96f01c85c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118360:5162185840:2026-08-03T04:09:20Z:re_review",
       "comment_id": "5162185840",
@@ -31595,6 +31562,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116526:5135224945:2026-08-03T10:10:59Z:clawsweeper_needs_human",
+      "comment_id": "5135224945",
+      "comment_version_key": "5135224945:2026-08-03T10:10:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116526#issuecomment-5135224945",
+      "comment_created_at": "2026-07-30T19:16:02Z",
+      "comment_updated_at": "2026-08-03T10:10:59Z",
+      "comment_body_sha256": "5a1b2b004086544edb3fd2c8bb5d50a2c875ed1f7944fb8a9cc1a298a13b4b4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests only; add redacted after-fix request evidence showing same-host proxy failures become rate-limited and clean...; Review finding: [medium] Resolve the final pre-authentication merge result — src/gateway/auth.ts:124 (sha=ba357ffe0170c89db731e0966963d140ccc4fe22)",
+      "expected_head_sha": "ba357ffe0170c89db731e0966963d140ccc4fe22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T10:11:43.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-898",
+        "head_sha": "ba357ffe0170c89db731e0966963d140ccc4fe22",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
