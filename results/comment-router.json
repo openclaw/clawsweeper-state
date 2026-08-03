@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:04:06.705Z",
+  "updated_at": "2026-08-03T21:04:11.508Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100932:4894016358:2026-08-03T16:46:40Z:clawsweeper_needs_human",
-      "comment_id": "4894016358",
-      "comment_version_key": "4894016358:2026-08-03T16:46:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100932#issuecomment-4894016358",
-      "comment_created_at": "2026-07-06T14:34:53Z",
-      "comment_updated_at": "2026-08-03T16:46:40Z",
-      "comment_body_sha256": "46970e3ced56afae4a3a545d5a6212390ae847ed21e18f013ab1a6af6bd8f7a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100932,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty against current main, and current main replaced the mock-server response architecture; merging cannot safely preserve the proposed fixtures without... (sha=22b6ff600f1a8aa3c83000bb4b8836e5e4bc26a2)",
-      "expected_head_sha": "22b6ff600f1a8aa3c83000bb4b8836e5e4bc26a2",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T16:47:42.082Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/control-ui-mock-fixtures",
-        "head_sha": "22b6ff600f1a8aa3c83000bb4b8836e5e4bc26a2",
-        "cluster_id": "automerge-openclaw-openclaw-100932",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100932.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117488:5152222822:2026-08-03T16:47:36Z:clawsweeper_needs_human",
       "comment_id": "5152222822",
@@ -32525,6 +32478,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118788:5171687374:2026-08-03T21:03:26Z:re_review",
+      "comment_id": "5171687374",
+      "comment_version_key": "5171687374:2026-08-03T21:03:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118788#issuecomment-5171687374",
+      "comment_created_at": "2026-08-03T21:03:26Z",
+      "comment_updated_at": "2026-08-03T21:03:26Z",
+      "comment_body_sha256": "7c4c7655c606143ae5ac8a243688d9bb55344093b3481e42a368532d1f1a1956",
+      "source_delivery_id": "c6483bf0-8f7e-11f1-87ca-5dbd95d925d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118788,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T21:04:09.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-control-ui-shell-routing-20260803",
+        "head_sha": "5b2abf9d6e826a2546e5078fd066322164707b29",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
