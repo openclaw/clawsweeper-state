@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-03T13:15:21.532Z
+Generated: 2026-08-03T13:56:56.259Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 14 |
+| open_prs | 18 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 1 |
 | mergeability_unknown | 0 |
-| needs_checks | 14 |
+| needs_checks | 18 |
 | needs_review | 0 |
-| needs_merge_preflight | 14 |
-| needs_result_backfill | 1 |
+| needs_merge_preflight | 18 |
+| needs_result_backfill | 4 |
 
 ## Dispatch
 
@@ -30,6 +30,10 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#118688](https://github.com/openclaw/openclaw/pull/118688) | fix(agents): redrive suspended completions after compaction unlock | issue-openclaw-openclaw-118625 | MERGEABLE | BEHIND | CANCELLED:7 QUEUED:1 IN_PROGRESS:6 SKIPPED:41 SUCCESS:75 NEUTRAL:1; blockers:9 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118685](https://github.com/openclaw/openclaw/pull/118685) | fix(agents): record stop reason in completion trajectory | issue-openclaw-openclaw-118673 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:47 SUCCESS:83 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118680](https://github.com/openclaw/openclaw/pull/118680) | fix(config): accept declared model compatibility routing settings | issue-openclaw-openclaw-118667 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:45 SUCCESS:86 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | issue-openclaw-openclaw-118669 | MERGEABLE | BEHIND | CANCELLED:15 SKIPPED:45 SUCCESS:72; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118656](https://github.com/openclaw/openclaw/pull/118656) | fix(nextcloud-talk): repump independent room lanes during delivery | issue-openclaw-openclaw-118649 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:47 SUCCESS:53 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118599](https://github.com/openclaw/openclaw/pull/118599) | fix(gateway): coordinate singleton lock through shared state | issue-openclaw-openclaw-117635 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:82 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | issue-openclaw-openclaw-116747 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:45 SUCCESS:72 FAILURE:2; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

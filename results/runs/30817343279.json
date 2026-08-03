@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118673",
+  "mode": "autonomous",
+  "run_id": "30817343279",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30817343279",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
+  "published_at": "2026-08-03T13:56:13.765Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118673",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118673",
+  "canonical_pr": null,
+  "summary": "Current main source reproduces the core trajectory omission: `result.lastAssistant?.stopReason` informs terminal classification but is absent from the immediately following `model.completed` event. A narrow fix PR is appropriate, but implementation is blocked in this read-only checkout. The required sibling `../codex` source is also absent, so the conditional Codex extension mirror cannot be judged or changed under the repository’s Codex dependency gate.",
+  "actions": [
+    {
+      "target": "#118673",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118673",
+      "candidate_fix": null,
+      "reason": "This is the sole hydrated item and remains the canonical bug report."
+    },
+    {
+      "target": "#118673",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118673",
+      "candidate_fix": null,
+      "reason": "A writable executor must implement and validate the core repair. It must inspect the sibling Codex source before deciding whether to include the matching extension projection and test."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118673",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118673",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from `clawsweeper/issue-openclaw-openclaw-118673`; do not close or merge the issue from this lane."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118685",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118673",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118685",
+      "commit": "aeea47146db18a8e17dfcd20bfe96302cd63bb4c",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118673",
+      "pr": "https://github.com/openclaw/openclaw/pull/118685",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118685",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118685",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): record stop reason in completion trajectory",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
