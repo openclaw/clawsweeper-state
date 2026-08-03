@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:11:23.454Z",
+  "updated_at": "2026-08-03T10:11:33.537Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118393:5161825049:2026-08-03T02:56:34Z:clawsweeper_needs_human",
-      "comment_id": "5161825049",
-      "comment_version_key": "5161825049:2026-08-03T02:56:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118393#issuecomment-5161825049",
-      "comment_created_at": "2026-08-03T02:56:34Z",
-      "comment_updated_at": "2026-08-03T02:56:34Z",
-      "comment_body_sha256": "1c577fb27bdeb6a9a01571ed0a5b0f91a2adbd5a77392cda760c11796dd21127",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118393,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head hosted checks are still in progress, so the final merge gate is not yet established despite the completed successful checks and the PR's supplied remote validation. (sha=2f268df2b15f55ac49915e69df316fbe6f12f034)",
-      "expected_head_sha": "2f268df2b15f55ac49915e69df316fbe6f12f034",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T04:09:30.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auto-qa-cron-settlement-owner-f2af",
-        "head_sha": "2f268df2b15f55ac49915e69df316fbe6f12f034",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117037:5147452976:2026-08-03T04:09:17Z:clawsweeper_auto_repair",
       "comment_id": "5147452976",
@@ -31580,6 +31547,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116562:5165031038:2026-08-03T10:10:53Z:re_review",
+      "comment_id": "5165031038",
+      "comment_version_key": "5165031038:2026-08-03T10:10:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5165031038",
+      "comment_created_at": "2026-08-03T10:10:53Z",
+      "comment_updated_at": "2026-08-03T10:10:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "9ca56b70-8f23-11f1-8f57-e3cd897d9f15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116562,
+      "author": "wenrizc",
+      "author_id": 167160780,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T10:11:30.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-fallback-recovery-96534",
+        "head_sha": "3f495a43014afda38ba62b97d560bb693e641e21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
