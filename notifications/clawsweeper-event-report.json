@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T14:40:17.632Z",
+  "generated_at": "2026-08-03T14:52:46.414Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/30822394010.json",
+  "run_record": "results/runs/30820468806.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "30822394010",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "30820468806",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#118688:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#118688",
+      "title": "fix(agents): redrive suspended completions after compaction unlock",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30820468806",
+      "cluster_id": "automerge-openclaw-openclaw-118688",
+      "hook_run_id": "fb35a133-a374-43d9-9ec1-b9f7aba28423",
+      "url": "https://github.com/openclaw/openclaw/pull/118688"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#118688:repair_contributor_branch:pushed:f49fe912541c5b1b1359858bd0d4cb5212bc8474",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#118688",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "30820468806",
+      "cluster_id": "automerge-openclaw-openclaw-118688",
+      "hook_run_id": "429d2bcd-5440-4611-ae11-741448de2463",
+      "url": "https://github.com/openclaw/openclaw/pull/118688"
+    }
+  ]
 }
