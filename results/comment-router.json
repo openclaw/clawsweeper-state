@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:58:56.420Z",
+  "updated_at": "2026-08-03T14:58:59.919Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113031:5076862740:2026-08-03T07:40:33Z:clawsweeper_needs_human",
-      "comment_id": "5076862740",
-      "comment_version_key": "5076862740:2026-08-03T07:40:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113031#issuecomment-5076862740",
-      "comment_created_at": "2026-07-25T04:10:48Z",
-      "comment_updated_at": "2026-08-03T07:40:33Z",
-      "comment_body_sha256": "1903bb34d0f28e1a300ed51d9872e2146f53b5740069edebc4c6c802cb68a705",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113031,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is based on July 23 while current main is 50 commits newer and now owns pending page-share cleanup through pageShareRelay; a conflict resolution or transplant that restores... (sha=e27c43f5992c54cdae394c8db986e4990b1ca8ab)",
-      "expected_head_sha": "e27c43f5992c54cdae394c8db986e4990b1ca8ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:41:00.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ext-relay-error-honesty",
-        "head_sha": "e27c43f5992c54cdae394c8db986e4990b1ca8ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113172:5079360917:2026-08-03T07:42:49Z:clawsweeper_needs_human",
       "comment_id": "5079360917",
@@ -31787,6 +31754,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116204:5168028292:2026-08-03T14:58:17Z:re_review",
+      "comment_id": "5168028292",
+      "comment_version_key": "5168028292:2026-08-03T14:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116204#issuecomment-5168028292",
+      "comment_created_at": "2026-08-03T14:58:17Z",
+      "comment_updated_at": "2026-08-03T14:58:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "c31c7fa0-8f4b-11f1-9225-8071e20964a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116204,
+      "author": "sunlit-deng",
+      "author_id": 253064511,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T14:58:58.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-106969-base64url",
+        "head_sha": "88786a8cf2ea1e50501ff2bd3892ce03e8c667fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
