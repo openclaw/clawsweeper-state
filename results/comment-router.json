@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:22:38.050Z",
+  "updated_at": "2026-08-03T10:22:38.057Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115801:5118158856:2026-08-03T04:08:38Z:clawsweeper_needs_human",
-      "comment_id": "5118158856",
-      "comment_version_key": "5118158856:2026-08-03T04:08:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115801#issuecomment-5118158856",
-      "comment_created_at": "2026-07-29T13:07:10Z",
-      "comment_updated_at": "2026-08-03T04:08:38Z",
-      "comment_body_sha256": "75a4bed005261e45dca16bad530ada2b4b66b593c62a2894f7e53ab823e18244",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115801,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users who combine file-backed Claude --settings with an explicit or configured OpenClaw fast-mode value will receive a remediation error after upgrade; green tests do not dec... (sha=e4cc067a4b6e133041ccd07f79d9a989acdbbf8e)",
-      "expected_head_sha": "e4cc067a4b6e133041ccd07f79d9a989acdbbf8e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T04:14:43.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/claude-cli-fast-mode",
-        "head_sha": "e4cc067a4b6e133041ccd07f79d9a989acdbbf8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114596:5092127635:2026-08-03T04:08:18Z:clawsweeper_auto_repair",
       "comment_id": "5092127635",
@@ -31581,6 +31548,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1221:5164528994:2026-08-03T10:21:24Z:clawsweeper_needs_human",
+      "comment_id": "5164528994",
+      "comment_version_key": "5164528994:2026-08-03T10:21:24Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1221#issuecomment-5164528994",
+      "comment_created_at": "2026-08-03T09:20:42Z",
+      "comment_updated_at": "2026-08-03T10:21:24Z",
+      "comment_body_sha256": "cb66cf07d29696288d25c1845b0bb8681077b93ee3598487fa56ac2872db7a45",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1221,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes unconfigured Azure broker clients from a CLI-derived image to the coordinator’s default image; deployed coordinator defaults must remain the supported so... (sha=7ce9ec9f9b6ad155097e395fa2ae5d176718e578)",
+      "expected_head_sha": "7ce9ec9f9b6ad155097e395fa2ae5d176718e578",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T10:22:38.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/azure-broker-default-image",
+        "head_sha": "7ce9ec9f9b6ad155097e395fa2ae5d176718e578",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
