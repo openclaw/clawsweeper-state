@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T01:24:31.228Z",
+  "updated_at": "2026-08-03T01:24:53.325Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111487:5016636513:2026-08-02T21:35:25Z:clawsweeper_needs_human",
-      "comment_id": "5016636513",
-      "comment_version_key": "5016636513:2026-08-02T21:35:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111487#issuecomment-5016636513",
-      "comment_created_at": "2026-07-19T17:10:53Z",
-      "comment_updated_at": "2026-08-02T21:35:25Z",
-      "comment_body_sha256": "97fd3cccbe7455afccd0a9e9ea8b8189502962073f2abb372a5af9149e5533eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging the cumulative branch would add a new durable configuration family, persisted coordination model, background recovery behavior, Gateway vocabulary, and CLI contract before mai... (sha=d42d5d856be0a9e981db3b5c62a6e1568cbe6e19)",
-      "expected_head_sha": "d42d5d856be0a9e981db3b5c62a6e1568cbe6e19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-02T21:42:59.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/durable-core-pr6-operations-v2",
-        "head_sha": "d42d5d856be0a9e981db3b5c62a6e1568cbe6e19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111545:5017462026:2026-08-02T21:37:54Z:clawsweeper_auto_repair",
       "comment_id": "5017462026",
@@ -32546,6 +32513,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118351:5161368232:2026-08-03T01:24:11Z:re_review",
+      "comment_id": "5161368232",
+      "comment_version_key": "5161368232:2026-08-03T01:24:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118351#issuecomment-5161368232",
+      "comment_created_at": "2026-08-03T01:24:11Z",
+      "comment_updated_at": "2026-08-03T01:24:11Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118351,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T01:24:51.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-compact-large-3-next",
+        "head_sha": "436e49a167ea41583759df816193af141173f24c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
