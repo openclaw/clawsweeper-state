@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118482"
 mode: "autonomous"
-run_id: "30787638175"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30787638175"
+run_id: "30788029561"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30788029561"
 head_sha: "e55de43cfc039ea45931eb4e947364399afc280c"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-03T05:42:37.164Z"
+published_at: "2026-08-03T05:53:03.638Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118482"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118482"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30787638175](https://github.com/openclaw/clawsweeper/actions/runs/30787638175)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30788029561](https://github.com/openclaw/clawsweeper/actions/runs/30788029561)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118482
 
 ## Summary
 
-The diagnostics omission is present in current main, but the mandatory sibling `../codex` source checkout is absent. This read-only worker cannot establish the required Codex protocol proof or create the requested branch, so implementation is blocked pending an executor with that checkout or approved equivalent proof.
+Current main at `5c5aeaddc2bb28e7fc38c6c223a44f8ea0df1c92` still drops safe endpoint failure details from `codex_endpoint_probe`, while `codex_sessions_list` preserves them. The required sibling `../codex` source checkout is absent; this restricted read-only worker cannot establish the mandatory Codex protocol proof or create the fix branch.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The diagnostics omission is present in current main, but the mandatory sibling `
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118482 | fix_needed | blocked | canonical | Current main has the narrow diagnostics bug, but implementation cannot proceed until the required Codex protocol/source gate is satisfied. |
-| cluster:issue-openclaw-openclaw-118482 | build_fix_artifact | blocked | canonical | Executable implementation is deferred solely until an executor inspects `../codex` source or obtains approved equivalent protocol proof. |
+| #118482 | fix_needed | blocked | canonical | The repair shape is narrow and source-proven within OpenClaw, but implementation is blocked until an executor establishes the required Codex protocol proof. |
+| cluster:issue-openclaw-openclaw-118482 | build_fix_artifact | blocked | canonical | A deterministic executor can implement this after inspecting `../codex` source or recording approved equivalent Codex protocol proof. |
 
 ## Needs Human
 
