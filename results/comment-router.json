@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T10:22:50.328Z",
+  "updated_at": "2026-08-03T10:22:57.155Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112227:5083996084:2026-07-26T14:50:41Z:re_review",
-      "comment_id": "5083996084",
-      "comment_version_key": "5083996084:2026-07-26T14:50:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112227#issuecomment-5083996084",
-      "comment_created_at": "2026-07-26T14:50:41Z",
-      "comment_updated_at": "2026-07-26T14:50:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112227,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T04:16:00.787Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114261:5087017360:2026-08-03T04:09:12Z:clawsweeper_auto_repair",
       "comment_id": "5087017360",
@@ -31543,6 +31516,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T10:22:50.328Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-03T10:21:45Z:clawsweeper_needs_human",
+      "comment_id": "5154776003",
+      "comment_version_key": "5154776003:2026-08-03T10:21:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117757#issuecomment-5154776003",
+      "comment_created_at": "2026-08-02T02:49:47Z",
+      "comment_updated_at": "2026-08-03T10:21:45Z",
+      "comment_body_sha256": "a6cc8ae917486167cf0e548787077052d6586c3da0501860c4d431efa02264c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117757,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is cleanly mergeable but behind current main, and the required hosted aggregate gate remains red because one compact shard timed out in an unrelated gateway test according to t... (sha=ce1d0cff19e60fd777127e6cab36899480a28a21)",
+      "expected_head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T10:22:57.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-memory-flush-append-race",
+        "head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
