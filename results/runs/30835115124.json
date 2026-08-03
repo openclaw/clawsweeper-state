@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118776",
+  "mode": "autonomous",
+  "run_id": "30835115124",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835115124",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
+  "published_at": "2026-08-03T17:15:22.730Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118776",
+  "canonical_pr": null,
+  "summary": "Current main (94f431417b251470546e9555cdde02695a0afcd2) still has the source-reproducible leaf-subagent defect. Leaf capability policy denies child-producing/control tools but leaves sessions_yield available; the subagent prompt unconditionally directs every child to yield for descendant completion. A narrow owner-boundary repair is ready for a writable executor, but this checkout is read-only and has no node_modules, so no branch edit or local validation could be performed.",
+  "actions": [
+    {
+      "target": "#118776",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "#118776 is a narrow, still-open bug report with an explicit canonical repair path; it must remain open until the replacement fix PR is created and validated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this immutable checkout. A writable executor should apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-118776, then run the listed validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118776",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate; no contributor PR exists to repair or replace."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
