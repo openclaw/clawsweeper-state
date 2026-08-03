@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:18:38.347Z",
+  "updated_at": "2026-08-03T22:18:45.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118690:5167327068:2026-08-03T18:11:33Z:clawsweeper_needs_human",
-      "comment_id": "5167327068",
-      "comment_version_key": "5167327068:2026-08-03T18:11:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118690#issuecomment-5167327068",
-      "comment_created_at": "2026-08-03T14:00:10Z",
-      "comment_updated_at": "2026-08-03T18:11:33Z",
-      "comment_body_sha256": "2f80d473340de531d9b4f36fd79ff9b0b781f3928eb55152a7498541228a18be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118690,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The fallback relies on each channel plugin accurately reporting whether its channel-specific payload is independently deliverable; an incorrect negative result could expose hidden spe... (sha=572b2f09621ac5e9831eb18ca812665fd497f7d2)",
-      "expected_head_sha": "572b2f09621ac5e9831eb18ca812665fd497f7d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T18:17:01.492Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-tts-hidden-text-fallback",
-        "head_sha": "572b2f09621ac5e9831eb18ca812665fd497f7d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-03T18:16:20Z:clawsweeper_needs_human",
       "comment_id": "5156377755",
@@ -32893,6 +32860,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-03T22:18:02Z:clawsweeper_auto_repair",
+      "comment_id": "5156377755",
+      "comment_version_key": "5156377755:2026-08-03T22:18:02Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/130#issuecomment-5156377755",
+      "comment_created_at": "2026-08-02T07:58:25Z",
+      "comment_updated_at": "2026-08-03T22:18:02Z",
+      "comment_body_sha256": "265b8e8fb91d5da7d61ef63cf73f94d580c68b45f9adb2317a75daf34c333b41",
+      "repo": "openclaw/lobster",
+      "issue_number": 130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=1760cb386c712be8b4b72a21326adba7b6e914c5)",
+      "expected_head_sha": "1760cb386c712be8b4b72a21326adba7b6e914c5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-03T22:18:45.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-cache-key-sampling-params",
+        "head_sha": "1760cb386c712be8b4b72a21326adba7b6e914c5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
