@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the failed-terminal-tool finalizer in `src/agents/embedded-agent-runner/run/incomplete-turn.ts` for https://github.com/openclaw/openclaw/issues/118489. Preserve the exact current-terminal call-id and tool-owner result correlation added by https://github.com/openclaw/openclaw/pull/118344. Split persisted-result proof from aggregate lifecycle proof so an exact persisted failed terminal result may proceed when `activeCount` is stale only if no async-started tool activity or accepted child session remains; scope terminal-presentation suppression so a prior successful presentation does not settle a later failed terminal outcome. Retain every existing fail-closed guard for aborts, timeouts, prompt errors, delivery, client tools, yields, approvals, unmatched errors, async work, and child sessions. Add focused helper regressions for prior-presentation-plus-later-failure, stale lifecycle plus exact failed result, normal user and required isolated-cron composition, and active-async negative control. Before landing a Code Mode-specific claim, personally inspect the exact upstream Codex source/runtime contract; `../codex` was absent during triage, so clone or obtain it in the repair environment if required. Do not add configuration, runtime compatibility shims, or CHANGELOG edits.
+Repair https://github.com/openclaw/openclaw/issues/118489 at the shared embedded-runner incomplete-turn owner. First establish failing focused regressions for: (1) an earlier successful terminal tool presentation followed by a later exact failed terminal batch with no assistant payload, and (2) the reported Code Mode ordering where exact failed results persist before lifecycle decrement. Preserve exact call-ID and tool-owner matching plus all abort, timeout, prompt-error, delivery, async, child-session, client-tool, yield, and approval fail-closed paths. Scope terminal-presentation evidence to the current failed batch; if stale lifecycle state is real, repair its producer or demonstrate why persisted exact results are authoritative rather than adding a broad bypass. Inspect sibling ../codex source before making any Code Mode contract claim. Add regression coverage, do not add configuration or compatibility surface, and do not edit CHANGELOG.md because it is release-owned.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/run/incomplete-turn.ts
 - src/agents/embedded-agent-runner/run.incomplete-turn.test.ts
-- src/agents/embedded-agent-runner/run/terminal-resolution.ts
+- src/agents/embedded-agent-runner/run/attempt-phase-lifecycle.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run.incomplete-turn.test.ts
-- Run focused normal-channel and required isolated-cron regression coverage for the two residual state combinations.
-- Inspect the exact upstream Codex source/runtime contract before asserting the Code Mode lifecycle ordering.
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/attempt-phase-lifecycle.test.ts
+- pnpm tsgo:prod
+- git diff --check
 
 ## Operator Prompt
 
