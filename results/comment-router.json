@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:19:26.959Z",
+  "updated_at": "2026-08-03T14:19:51.516Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5153848891:2026-08-01T22:54:04Z:re_review",
-      "comment_id": "5153848891",
-      "comment_version_key": "5153848891:2026-08-01T22:54:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5153848891",
-      "comment_created_at": "2026-08-01T22:54:04Z",
-      "comment_updated_at": "2026-08-01T22:54:04Z",
-      "comment_body_sha256": "b98b884bb136d0cc97644f5c30d71044d2dc93be8adf34d69048186ec69f3f2b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:23:39.265Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5153893255:2026-08-01T23:02:37Z:re_review",
       "comment_id": "5153893255",
@@ -31843,6 +31816,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118701:5167572126:2026-08-03T14:19:13Z:clawsweeper_needs_human",
+      "comment_id": "5167572126",
+      "comment_version_key": "5167572126:2026-08-03T14:19:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118701#issuecomment-5167572126",
+      "comment_created_at": "2026-08-03T14:19:13Z",
+      "comment_updated_at": "2026-08-03T14:19:13Z",
+      "comment_body_sha256": "09cb9b1f52916b13e8426ea1e54e00f0c13b184e4788ec87c32f9c8dae368935",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118701,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an intentional enforcement change for existing configurations: users who implicitly relied on a disabled, denied, or non-allow-listed bundled provider will no longer execute i... (sha=5a8c30be27e4bf57ca1c8af9a071a9817e61e605)",
+      "expected_head_sha": "5a8c30be27e4bf57ca1c8af9a071a9817e61e605",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T14:19:51.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-bundled-plugin-policy-enforcement",
+        "head_sha": "5a8c30be27e4bf57ca1c8af9a071a9817e61e605",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
