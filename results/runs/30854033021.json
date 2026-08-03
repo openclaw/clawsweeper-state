@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-87426",
+  "mode": "autonomous",
+  "run_id": "30854033021",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30854033021",
+  "head_sha": "326104b08f93941c21ab7afd2cd57a60b51ff583",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-87426.md",
+  "published_at": "2026-08-03T21:26:20.365Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/87426",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/87426",
+  "canonical_pr": null,
+  "summary": "#87426 remains a reproducible narrow bug on current main e4b6bde45a0769865219fa0b086618c66decdc13. The default explain-mode tool metadata preserves the stage-paraphrase, and the terminal error summary carries only that metadata; the payload formatter therefore cannot prefer a redacted compact command for no-reply cron failures. Plan a new focused PR that records a dedicated compact redacted exec command at the terminal-error owner, preserves ordinary progress text, and uses that fact only for exec/bash failure presentation. Focused validation could not start because the read-only checkout lacks the required p-map dependency; executor must run pnpm install in its writable environment before the declared tests.",
+  "actions": [
+    {
+      "target": "#87426",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#87426",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is appropriate; no open viable implementation PR exists."
+    },
+    {
+      "target": "#97511",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#87426",
+      "candidate_fix": null,
+      "reason": "Historical related fix only; it is already closed and must not receive a mutation."
+    },
+    {
+      "target": "#104389",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Same exec-failure presentation family, but a distinct user-boundary policy problem with separate maintainer decisions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-87426",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#87426",
+      "candidate_fix": null,
+      "reason": "Create one new narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-87426 after writable-environment validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
