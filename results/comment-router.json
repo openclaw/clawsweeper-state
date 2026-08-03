@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T17:34:20.591Z",
+  "updated_at": "2026-08-03T17:34:36.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118680:5167057998:2026-08-03T13:38:41Z:clawsweeper_needs_human",
-      "comment_id": "5167057998",
-      "comment_version_key": "5167057998:2026-08-03T13:38:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118680#issuecomment-5167057998",
-      "comment_created_at": "2026-08-03T13:38:41Z",
-      "comment_updated_at": "2026-08-03T13:38:41Z",
-      "comment_body_sha256": "c53bcf643ec3658e220fff38350da375d68fe2b758ac4f22061a2dbcb8424e7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118680,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a strict persisted configuration surface: settings that were formerly rejected will now reach existing provider transports, so the remaining exact-head build and check la... (sha=a526bb70794a4cf6a79519ff6f42e0902c0d7b6d)",
-      "expected_head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T13:39:36.640Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118667",
-        "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
-        "cluster_id": "issue-openclaw-openclaw-118667",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-08-03T13:38:37Z:clawsweeper_auto_repair",
       "comment_id": "5167057200",
@@ -32664,6 +32617,39 @@
         "kind": "pull_request",
         "branch": "fix/default-http-client-timeout",
         "head_sha": "d3257c97b4a7f1be3db6e619375800022b276fd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118792:5169699141:2026-08-03T17:33:55Z:clawsweeper_needs_human",
+      "comment_id": "5169699141",
+      "comment_version_key": "5169699141:2026-08-03T17:33:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118792#issuecomment-5169699141",
+      "comment_created_at": "2026-08-03T17:33:55Z",
+      "comment_updated_at": "2026-08-03T17:33:55Z",
+      "comment_body_sha256": "ad905a0ab5410d62cedff596d89730e762808118f3c0c99c0dc5458deea5c4b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118792,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body describes focused regression tests and CI, but it does not include redacted after-fix output from a real CLI-provider run; add a te... (sha=483b0127fabe3029195fb5071a1907c8e9a26b4c)",
+      "expected_head_sha": "483b0127fabe3029195fb5071a1907c8e9a26b4c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T17:34:36.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118772-total-tokens-cumulative",
+        "head_sha": "483b0127fabe3029195fb5071a1907c8e9a26b4c",
         "cluster_id": null,
         "job_path": null
       }
