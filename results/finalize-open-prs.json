@@ -2,14 +2,14 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-03T18:27:57.807Z",
+  "generated_at": "2026-08-03T18:33:58.518Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
-    "mergeability_unknown": 0,
+    "mergeability_unknown": 1,
     "needs_checks": 17,
     "needs_review": 0,
     "needs_merge_preflight": 17,
@@ -90,21 +90,22 @@
       "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
       "cluster_id": "issue-openclaw-openclaw-118776",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
-      "updated_at": "2026-08-03T18:24:58Z",
+      "updated_at": "2026-08-03T18:31:13Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 141,
         "counts": {
-          "CANCELLED": 10,
-          "SKIPPED": 41,
-          "SUCCESS": 78,
+          "CANCELLED": 13,
+          "SKIPPED": 44,
+          "SUCCESS": 81,
           "FAILURE": 2,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -121,14 +122,21 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118806#issuecomment-5170245430",
+            "submitted_at": "2026-08-03T18:29:51Z"
+          }
+        ]
       },
       "latest_record": {
-        "run_id": "30835115124",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835115124",
+        "run_id": "30835586426",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835586426",
         "cluster_id": "issue-openclaw-openclaw-118776",
-        "published_at": "2026-08-03T17:15:22.730Z",
+        "published_at": "2026-08-03T18:31:27.102Z",
         "workflow_conclusion": "failure",
         "apply_action": null
       },
@@ -147,7 +155,7 @@
       "head_sha": "89a7dbd93c9c3548e578f52b750d269bd5528dc8",
       "cluster_id": "issue-openclaw-openclaw-118772",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118772.md",
-      "updated_at": "2026-08-03T18:23:05Z",
+      "updated_at": "2026-08-03T18:28:38Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -952,8 +960,8 @@
       "cluster_id": "issue-openclaw-openclaw-118185",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118185.md",
       "updated_at": "2026-08-03T09:33:13Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "UNKNOWN",
+      "merge_state_status": "UNKNOWN",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -1019,11 +1027,12 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "mergeability_unknown",
+        "merge_state_unknown",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
     },
     {
       "number": 118303,

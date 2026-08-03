@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118776",
+  "mode": "autonomous",
+  "run_id": "30835586426",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30835586426",
+  "head_sha": "4f67ca516da0fc29fed5ae2b8e17fce14d49354d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
+  "published_at": "2026-08-03T18:31:27.102Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118776",
+  "canonical_pr": null,
+  "summary": "Current main (d857c8eebcc25cec729a8131ac1cfd3dbe454a4e) still has the source-reproducible leaf-subagent defect. The leaf deny list omits sessions_yield and the subagent prompt gives unconditional descendant-wait guidance. A narrow policy-and-prompt repair is appropriate, but this worker checkout is read-only and lacks node_modules, so implementation and focused validation are blocked here.",
+  "actions": [
+    {
+      "target": "#118776",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "The open canonical issue describes a confirmed narrow bug and must remain open until its focused fix PR is created and validated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118776",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "Only implementation is blocked by the immutable worker environment. The deterministic executor should apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-118776."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118776",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118776",
+      "candidate_fix": null,
+      "reason": "No viable contributor PR exists; create one narrow credited fix PR when a writable executor is available."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118806",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118776",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118806",
+      "commit": "d20ce06d439667096a4a319750a93686904a6e2e",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118776",
+      "pr": "https://github.com/openclaw/openclaw/pull/118806",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118806",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
