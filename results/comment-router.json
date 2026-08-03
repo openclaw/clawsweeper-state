@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T05:40:32.302Z",
+  "updated_at": "2026-08-03T05:42:07.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2407:5158263120:2026-08-02T13:39:21Z:re_review",
-      "comment_id": "5158263120",
-      "comment_version_key": "5158263120:2026-08-02T13:39:21Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5158263120",
-      "comment_created_at": "2026-08-02T13:39:21Z",
-      "comment_updated_at": "2026-08-02T13:39:21Z",
-      "comment_body_sha256": "f65554f256a65e91526d5b260d661c2e0d6932fec345a03fdabb583856ba2956",
-      "repo": "steipete/codexbar",
-      "issue_number": 2407,
-      "author": "chenow9",
-      "author_id": 302014081,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:51:10.252Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118305:5160945126:2026-08-03T01:51:12Z:clawsweeper_needs_human",
       "comment_id": "5160945126",
@@ -31624,6 +31597,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118511:5162730665:2026-08-03T05:41:25Z:re_review",
+      "comment_id": "5162730665",
+      "comment_version_key": "5162730665:2026-08-03T05:41:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118511#issuecomment-5162730665",
+      "comment_created_at": "2026-08-03T05:41:25Z",
+      "comment_updated_at": "2026-08-03T05:41:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118511,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T05:42:04.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auto-qa-google-sse-first-body-deadline-c1c",
+        "head_sha": "267ad5dc20dd76122df27fa998ace1440dfc64e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
