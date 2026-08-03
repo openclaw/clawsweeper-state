@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-118408",
+  "mode": "autonomous",
+  "run_id": "30791504133",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30791504133",
+  "head_sha": "e55de43cfc039ea45931eb4e947364399afc280c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-118408.md",
+  "published_at": "2026-08-03T06:57:31.123Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/118408",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/118408",
+  "canonical_pr": null,
+  "summary": "Verified the source-level repair premise on the hydrated `main` SHA `48d3f2e213452fb5d08053682a54c4dac406fb76`: ordinary completion delivery still uses finite direct retries, while durable SQLite handoff is gated to generated-media completions. The issue is a narrow non-security bug fix. Implementation is blocked only because the supplied worker checkout is read-only, preventing the required regression, patch, validation, branch update, and PR creation.",
+  "actions": [
+    {
+      "target": "#118408",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "A writable trusted executor should implement the established durable queue handoff after retry exhaustion, validate the focused surface, and create or update the single requested PR."
+    },
+    {
+      "target": "#91650",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "Already closed; retain it only as supporting context for the open canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-118408",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#118408",
+      "candidate_fix": null,
+      "reason": "The bounded fix plan is ready but cannot be applied in a read-only worker checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#118408",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
