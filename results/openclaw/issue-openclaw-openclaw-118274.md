@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118274"
-mode: "autonomous"
-run_id: "30772091359"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30772091359"
+mode: "plan"
+run_id: "30772786025"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30772786025"
 head_sha: "de31c9959070dd22ec785fdbcc924fc8e6de1e06"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-02T23:29:34.106Z"
+published_at: "2026-08-03T00:19:42.091Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118274"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118274"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/118315"
 actions_total: 4
 fix_executed: 0
 fix_failed: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30772091359](https://github.com/openclaw/clawsweeper/actions/runs/30772091359)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30772786025](https://github.com/openclaw/clawsweeper/actions/runs/30772786025)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118274
 
 ## Summary
 
-#118274 remains a reproducible, non-security canonical bug on `openclaw/openclaw@5aae66f4e368187e2edb242f123585db74c11b77`. The shared settled-tool finalization guard treats any `lastToolError` and any errored terminal `toolResult` as proof that tools were not settled, even when every terminal tool call has a matching post-assistant result and no work remains active. Plan a narrow one-shot, tools-disabled finalization repair with focused embedded-runner and isolated-cron regressions. No GitHub or checkout mutation was performed.
+Keep issue #118274 and its focused implementation PR #118315 as the canonical fix path. The hydrated state shows no security-sensitive items, no actionable human or third-party bot review findings, a narrow three-file PR, and passing relevant checks; merging remains outside this job's allowed actions.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/118274
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118274 | keep_canonical | planned | canonical | The issue describes a broken existing terminal-outcome invariant, not a new feature or policy decision. The owner is the generic embedded-runner settled-tool continuation path, and the narrow repair benefits channels and isolated cron through the existing shared flow. |
-| cluster:issue-openclaw-openclaw-118274 | fix_needed | planned | canonical | No viable candidate PR is hydrated. The job permits one narrow new fix PR on clawsweeper/issue-openclaw-openclaw-118274. |
-| cluster:issue-openclaw-openclaw-118274 | build_fix_artifact | planned | canonical | The resulting PR remains limited to the settled-turn owner, its regression suite, and the existing cron projection test. |
-| cluster:issue-openclaw-openclaw-118274 | open_fix_pr | planned | canonical | The job permits raising one implementation PR but prohibits merge and issue closure. |
+| #79472 | keep_closed | skipped | fixed_by_candidate | Already closed historical context; no closure action is valid. |
+| #83093 | keep_closed | skipped | related | Already closed historical context; no closure action is valid. |
+| #118274 | keep_canonical | planned | canonical | Keep the report open as the canonical issue until its linked fix PR is merged; closure is blocked by job policy. |
+| #118315 | keep_canonical | planned | canonical | This is the viable focused fix PR. Merge is intentionally not recommended because the job explicitly blocks merge actions and live mergeability is still reported as unknown. |
 
 ## Needs Human
 
