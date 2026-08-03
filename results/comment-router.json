@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:53:51.679Z",
+  "updated_at": "2026-08-03T04:54:36.703Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118347:5161318626:2026-08-03T01:13:17Z:clawsweeper_needs_human",
-      "comment_id": "5161318626",
-      "comment_version_key": "5161318626:2026-08-03T01:13:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118347#issuecomment-5161318626",
-      "comment_created_at": "2026-08-03T01:13:17Z",
-      "comment_updated_at": "2026-08-03T01:13:17Z",
-      "comment_body_sha256": "ed7ed632d7644db130331a3674c4885099e70f2de9a21016de1c5d03189d30b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118347,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Several required CI jobs were still in progress at review time; merge only after the exact PR head completes the required checks successfully. (sha=53d4cce835eef86279176474e9ced83a54600cb2)",
-      "expected_head_sha": "53d4cce835eef86279176474e9ced83a54600cb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:13:56.598Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-doctor-loader-mock",
-        "head_sha": "53d4cce835eef86279176474e9ced83a54600cb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117795:5155375154:2026-08-03T01:07:05Z:clawsweeper_needs_human",
       "comment_id": "5155375154",
@@ -31563,6 +31530,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/wacrawl:57:5162439831:2026-08-03T04:53:56Z:re_review",
+      "comment_id": "5162439831",
+      "comment_version_key": "5162439831:2026-08-03T04:53:56Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/57#issuecomment-5162439831",
+      "comment_created_at": "2026-08-03T04:53:56Z",
+      "comment_updated_at": "2026-08-03T04:53:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 57,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-03T04:54:34.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wacrawl-dependabot-major-tag",
+        "head_sha": "b06b45084fd788511bb67963b617680b8d01c132",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
