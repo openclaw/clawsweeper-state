@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:55:57.877Z",
+  "updated_at": "2026-08-03T04:56:24.563Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2582:5161326281:2026-08-03T01:15:00Z:re_review",
-      "comment_id": "5161326281",
-      "comment_version_key": "5161326281:2026-08-03T01:15:00Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2582#issuecomment-5161326281",
-      "comment_created_at": "2026-08-03T01:15:00Z",
-      "comment_updated_at": "2026-08-03T01:15:00Z",
-      "comment_body_sha256": "5022c314437b1e4ab3789af37df817e3d2c2667cd82d0d144a0ac74499411e51",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2582,
-      "author": "ikkira",
-      "author_id": 4424977,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T01:15:32.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "main",
-        "head_sha": "74ff0721f6068c14813f9f38cab76ec31ff2a2e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117365:5151143767:2026-08-03T01:07:09Z:clawsweeper_needs_human",
       "comment_id": "5151143767",
@@ -31600,6 +31553,39 @@
         "kind": "pull_request",
         "branch": "feat/sessions-tombstone-sweep",
         "head_sha": "74c9256f2b3f9d7b8f2078e67e4996ca6c7d4697",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118471:5162451663:2026-08-03T04:55:55Z:clawsweeper_needs_human",
+      "comment_id": "5162451663",
+      "comment_version_key": "5162451663:2026-08-03T04:55:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118471#issuecomment-5162451663",
+      "comment_created_at": "2026-08-03T04:55:55Z",
+      "comment_updated_at": "2026-08-03T04:55:55Z",
+      "comment_body_sha256": "83536f8c69bf99b649378fe6a02b23097e87ec22c5d932b906f8a47c7fa0b600",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118471,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused test and static-check results, but not after-fix proof from a real agent/profile-ordering setup; redact private endpoin... (sha=2bf0f5c22f578d90522bb985bcf6b948db812f94)",
+      "expected_head_sha": "2bf0f5c22f578d90522bb985bcf6b948db812f94",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T04:56:24.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup50k-agents-model-provider-wave2",
+        "head_sha": "2bf0f5c22f578d90522bb985bcf6b948db812f94",
         "cluster_id": null,
         "job_path": null
       }
