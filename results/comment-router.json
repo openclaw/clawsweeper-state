@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T04:42:21.799Z",
+  "updated_at": "2026-08-03T04:42:36.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2457:5088495438:2026-07-27T07:26:55Z:re_review",
-      "comment_id": "5088495438",
-      "comment_version_key": "5088495438:2026-07-27T07:26:55Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5088495438",
-      "comment_created_at": "2026-07-27T07:26:55Z",
-      "comment_updated_at": "2026-07-27T07:26:55Z",
-      "comment_body_sha256": "cdf7dc5b1f4c94424dca38fc9ed323a104c39760a81b91f5d1cba409b814296f",
-      "repo": "steipete/codexbar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T01:10:16.563Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2457:5090558975:2026-07-27T11:08:13Z:re_review",
       "comment_id": "5090558975",
@@ -31441,6 +31414,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118359:5161475717:2026-08-03T04:41:52Z:clawsweeper_auto_repair",
+      "comment_id": "5161475717",
+      "comment_version_key": "5161475717:2026-08-03T04:41:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118359#issuecomment-5161475717",
+      "comment_created_at": "2026-08-03T01:47:38Z",
+      "comment_updated_at": "2026-08-03T04:41:52Z",
+      "comment_body_sha256": "047e9fb4ce8c99f7e65782652e17f9034d86daec7baafe2e35bddf951bff3e2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=01a8e618fa98a842da3a72f1caa8b37d36bd9dc2)",
+      "expected_head_sha": "01a8e618fa98a842da3a72f1caa8b37d36bd9dc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T04:42:36.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-retire-queued-cancellation-on-freeze-118028",
+        "head_sha": "01a8e618fa98a842da3a72f1caa8b37d36bd9dc2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
