@@ -1,0 +1,134 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-117669",
+  "mode": "autonomous",
+  "run_id": "30773439361",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30773439361",
+  "head_sha": "de31c9959070dd22ec785fdbcc924fc8e6de1e06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-117669.md",
+  "published_at": "2026-08-03T00:30:33.000Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/117669",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/117669",
+  "canonical_pr": null,
+  "summary": "Confirmed the canonical defect on current main b7f9cd0a01671f7be5fc34b4bd4bf6770603f480: recordGroundedShortTermCandidates normalizes the corpus path but calls isContaminatedDreamingSnippet(rawSnippet) without the existing session-corpus allowance, so User:/Assistant: corpus turns are dropped before the SQLite recall store. The durable-promotion call sites remain correctly strict. This worker has a read-only checkout, so it could not apply or run the focused regression; a narrow executable fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#117669",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#117669",
+      "candidate_fix": null,
+      "reason": "A narrow repair is source-confirmed, but the read-only checkout prevents applying and validating it in this worker."
+    },
+    {
+      "target": "#67580",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#117669",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#117676",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117669",
+      "candidate_fix": null,
+      "reason": "Already closed and not a viable canonical implementation."
+    },
+    {
+      "target": "#117946",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#117669",
+      "candidate_fix": null,
+      "reason": "Already closed; its narrow approach should be carried forward in the replacement fix with credit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-117669",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117669",
+      "candidate_fix": null,
+      "reason": "Create one narrow branch/PR from current main after obtaining a writable execution checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/118325",
+      "branch": "clawsweeper/issue-openclaw-openclaw-117669",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118325",
+      "commit": "8586d60d45acb51a8ae4c2637a4d8ba434045299",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#117669",
+      "pr": "https://github.com/openclaw/openclaw/pull/118325",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118325",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118325",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(memory-core): ingest transcript turns into short-term recall",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
