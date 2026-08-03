@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-03T15:11:40.176Z",
+  "updated_at": "2026-08-03T15:09:38.937Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114783:5097667778:2026-08-03T10:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5097667778",
+      "comment_version_key": "5097667778:2026-08-03T10:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114783#issuecomment-5097667778",
+      "comment_created_at": "2026-07-27T22:50:14Z",
+      "comment_updated_at": "2026-08-03T10:41:53Z",
+      "comment_body_sha256": "d7ac7e29c591a9ee15417285c6fad8a250e0c217dd7640a1d78abef2f1d6cd33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114783,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a separately versioned external plugin-manifest compatibility contract; maintainers need to decide whether atomic host-bundle semantics are durable and distinct from t... (sha=14bd05f569144932072b2f257c7f1a8f144a2680)",
+      "expected_head_sha": "14bd05f569144932072b2f257c7f1a8f144a2680",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T10:42:31.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/o4-manifest-first-host-bundles-upstream",
+        "head_sha": "14bd05f569144932072b2f257c7f1a8f144a2680",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117572:5153244294:2026-08-01T20:19:04Z:re_review",
       "comment_id": "5153244294",
@@ -31784,54 +31817,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:132:5168186671:2026-08-03T15:10:57Z:re_review",
-      "comment_id": "5168186671",
-      "comment_version_key": "5168186671:2026-08-03T15:10:57Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5168186671",
-      "comment_created_at": "2026-08-03T15:10:57Z",
-      "comment_updated_at": "2026-08-03T15:10:57Z",
-      "comment_body_sha256": "e4d43ff6b8221f4f13efd29a8f59de262e083c9c639fc83e9d40b1f89e2b91e2",
-      "source_delivery_id": "885ee450-8f4d-11f1-97ca-93efe5cce0c4",
-      "repo": "openclaw/lobster",
-      "issue_number": 132,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T15:11:37.466Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-invoke-honor-abort-signal",
-        "head_sha": "6da3d7302cac534db953786b8ca6a36429e5d34a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
