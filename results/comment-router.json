@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T14:11:13.255Z",
+  "updated_at": "2026-08-03T14:11:13.712Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118618:5164863973:2026-08-03T10:03:05Z:clawsweeper_needs_human",
-      "comment_id": "5164863973",
-      "comment_version_key": "5164863973:2026-08-03T10:03:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118618#issuecomment-5164863973",
-      "comment_created_at": "2026-08-03T09:52:47Z",
-      "comment_updated_at": "2026-08-03T10:03:05Z",
-      "comment_body_sha256": "4be73d726328d0a3afc1aca1d9e503929601e7b7421c3666a82d7795ae2c1267",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118618,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately changes a security-sensitive behavior: background compaction will no longer inherit foreground authority to invoke a provider-hosted network tool. (sha=f89a4c943e4aaa061c5731bd4f78221d066aa5ea)",
-      "expected_head_sha": "f89a4c943e4aaa061c5731bd4f78221d066aa5ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T10:18:27.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-compaction-disable-native-tools",
-        "head_sha": "f89a4c943e4aaa061c5731bd4f78221d066aa5ea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117998:5158453518:2026-08-03T10:14:43Z:clawsweeper_needs_human",
       "comment_id": "5158453518",
@@ -31743,6 +31710,39 @@
         "head_sha": "6516d910a1365e757acee46c6c5950c3368e3f0b",
         "cluster_id": "issue-openclaw-openclaw-118652",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118652.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2529:5141782183:2026-08-03T14:10:07Z:clawsweeper_needs_human",
+      "comment_id": "5141782183",
+      "comment_version_key": "5141782183:2026-08-03T14:10:07Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2529#issuecomment-5141782183",
+      "comment_created_at": "2026-07-31T10:13:13Z",
+      "comment_updated_at": "2026-08-03T14:10:07Z",
+      "comment_body_sha256": "c6d5fe90a7ee687a41a2bb310b7334303d75403ee7dd4d1f52d311e8d2cb7ca0",
+      "repo": "steipete/codexbar",
+      "issue_number": 2529,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Avoid capturing full process environments (P1)** - ps eww returns the target process’s entire environment, so filtering result.stdout afterward does not limit what CodexBar has captured; API keys and other unrel...; Review finding: [P1] Avoid capturing full process environments — Sources/CodexBarCore/LocalAgentSessionScanner.swift:362-365 - [high] Full target-process environments are captured... (sha=8f0287c0cb3399f5795caec34ea745fc71ffd794)",
+      "expected_head_sha": "8f0287c0cb3399f5795caec34ea745fc71ffd794",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T14:11:13.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/ohmypi-agent-sessions",
+        "head_sha": "8f0287c0cb3399f5795caec34ea745fc71ffd794",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
