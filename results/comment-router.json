@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T22:18:03.334Z",
+  "updated_at": "2026-08-03T22:18:07.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117320:5170113453:2026-08-03T18:15:58Z:re_review",
-      "comment_id": "5170113453",
-      "comment_version_key": "5170113453:2026-08-03T18:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117320#issuecomment-5170113453",
-      "comment_created_at": "2026-08-03T18:15:58Z",
-      "comment_updated_at": "2026-08-03T18:15:58Z",
-      "comment_body_sha256": "7b91a8389619bc123a67f555783788f9091321097273fecd0ee75d5c5f8ad908",
-      "source_delivery_id": "60cc4800-8f67-11f1-9290-eab73e5f7ba9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117320,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T18:16:50.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-lmstudio-jit-canonical-identity",
-        "head_sha": "7c3f8b0a286f4f6b29684dfa1ced3a63fea6a28b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115969:5119983994:2026-08-03T18:11:50Z:clawsweeper_needs_human",
       "comment_id": "5119983994",
@@ -32893,6 +32845,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117230:5149997695:2026-08-03T22:17:22Z:clawsweeper_needs_human",
+      "comment_id": "5149997695",
+      "comment_version_key": "5149997695:2026-08-03T22:17:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117230#issuecomment-5149997695",
+      "comment_created_at": "2026-08-01T05:31:30Z",
+      "comment_updated_at": "2026-08-03T22:17:22Z",
+      "comment_body_sha256": "6c3cd4bc39ca04d3b9d5401ddc8d94e2360e2eca8e8d38e545afd1706d93fcfb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117230,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides assertions and CI claims but no inspectable after-fix Control UI, terminal, recording, runtime log, or artifact; please redact... (sha=06ae626ff63797c36ac8cacde80449dec2515776)",
+      "expected_head_sha": "06ae626ff63797c36ac8cacde80449dec2515776",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T22:18:07.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-workboard-session-capture-owner",
+        "head_sha": "06ae626ff63797c36ac8cacde80449dec2515776",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
