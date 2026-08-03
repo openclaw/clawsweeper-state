@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-03T19:05:14.808Z",
+  "updated_at": "2026-08-03T19:05:16.732Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116204:5168028292:2026-08-03T14:58:17Z:re_review",
-      "comment_id": "5168028292",
-      "comment_version_key": "5168028292:2026-08-03T14:58:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116204#issuecomment-5168028292",
-      "comment_created_at": "2026-08-03T14:58:17Z",
-      "comment_updated_at": "2026-08-03T14:58:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "c31c7fa0-8f4b-11f1-9225-8071e20964a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116204,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T14:58:58.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-106969-base64url",
-        "head_sha": "88786a8cf2ea1e50501ff2bd3892ce03e8c667fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111373:5015436720:2026-08-03T14:59:43Z:clawsweeper_auto_repair",
       "comment_id": "5015436720",
@@ -32875,6 +32827,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-ce612e0709",
         "head_sha": "deae4f57bd7d146385cae0ebe43ac93c83acbd06",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118874:5170578648:2026-08-03T19:04:34Z:clawsweeper_needs_human",
+      "comment_id": "5170578648",
+      "comment_version_key": "5170578648:2026-08-03T19:04:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118874#issuecomment-5170578648",
+      "comment_created_at": "2026-08-03T19:04:34Z",
+      "comment_updated_at": "2026-08-03T19:04:34Z",
+      "comment_body_sha256": "20c66f7b5e6721d5c773b1fe042923287eeef7b036d845d7d917c4ea51037612",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118874,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - check-lint is currently failing and several checks are still running; the supplied review context has no failure log to determine whether that is unrelated infrastructure or an exact-... (sha=374f558c5f0261eac47f76db19c98127e692a064)",
+      "expected_head_sha": "374f558c5f0261eac47f76db19c98127e692a064",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T19:05:16.732Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-plugin-descriptor-result-provenance",
+        "head_sha": "374f558c5f0261eac47f76db19c98127e692a064",
         "cluster_id": null,
         "job_path": null
       }
