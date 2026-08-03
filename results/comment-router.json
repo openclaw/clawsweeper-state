@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T21:14:10.926Z",
+  "updated_at": "2026-08-03T21:14:16.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:4905306393:2026-07-07T15:09:38Z:re_review",
-      "comment_id": "4905306393",
-      "comment_version_key": "4905306393:2026-07-07T15:09:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-4905306393",
-      "comment_created_at": "2026-07-07T15:09:38Z",
-      "comment_updated_at": "2026-07-07T15:09:38Z",
-      "comment_body_sha256": "78de6a24c2f8995a0e8c9bcccd374312b1b7d65b8810e7249e421fabe889d7f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T17:09:14.741Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98458:4905461509:2026-07-07T15:25:50Z:re_review",
       "comment_id": "4905461509",
@@ -32733,6 +32706,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118962:5171782000:2026-08-03T21:13:27Z:clawsweeper_needs_human",
+      "comment_id": "5171782000",
+      "comment_version_key": "5171782000:2026-08-03T21:13:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118962#issuecomment-5171782000",
+      "comment_created_at": "2026-08-03T21:13:27Z",
+      "comment_updated_at": "2026-08-03T21:13:27Z",
+      "comment_body_sha256": "f525f15cc9f29a57863d8b66ea3cec5541e8bccd664602c96cfa7e9be7e5235e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118962,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the merge result and let exact-head hosted CI complete before landing, because the test relies on shared global plugin-loader state. (sha=cb6c4fb2d2cd0925aa23f07a3de044a0b584c271)",
+      "expected_head_sha": "cb6c4fb2d2cd0925aa23f07a3de044a0b584c271",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T21:14:16.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "a06-plugin-hooks-20260803",
+        "head_sha": "cb6c4fb2d2cd0925aa23f07a3de044a0b584c271",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
