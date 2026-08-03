@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-03T13:57:21.279Z",
+  "updated_at": "2026-08-03T13:57:51.134Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-03T08:06:35Z:clawsweeper_needs_human",
-      "comment_id": "5160702307",
-      "comment_version_key": "5160702307:2026-08-03T08:06:35Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/142#issuecomment-5160702307",
-      "comment_created_at": "2026-08-02T22:44:24Z",
-      "comment_updated_at": "2026-08-03T08:06:35Z",
-      "comment_body_sha256": "514ea987ec0961f62ce6a5c223a7b4166ca1b95486570dcfc608b6789d688518",
-      "repo": "openclaw/clickclack",
-      "issue_number": 142,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging before the shared Electron-capable release path is ready would make CHANGELOG.md state that 0.3.0 released on August 2, 2026 while no v0.3.0 tag or published release exists. (sha=9feff69636048d5bd71685f4b678d30d11e1c928)",
-      "expected_head_sha": "9feff69636048d5bd71685f4b678d30d11e1c928",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T08:10:15.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/0.3.0-prep",
-        "head_sha": "9feff69636048d5bd71685f4b678d30d11e1c928",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clickclack:142:5160706738:2026-08-02T22:45:37Z:re_review",
       "comment_id": "5160706738",
@@ -31905,6 +31872,39 @@
       "status": "skipped",
       "processed_at": "2026-08-03T13:57:21.279Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102054:4911936524:2026-08-03T13:57:20Z:clawsweeper_needs_human",
+      "comment_id": "4911936524",
+      "comment_version_key": "4911936524:2026-08-03T13:57:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102054#issuecomment-4911936524",
+      "comment_created_at": "2026-07-08T06:19:57Z",
+      "comment_updated_at": "2026-08-03T13:57:20Z",
+      "comment_body_sha256": "25745b75cd343983778c8a9fb902b87ec4346f6ddbd789c8bb50d371fee3947b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this dirty branch without a current-main rebase could regress the newer remote-workspace transfer, deduplication, and bounded-media behavior now owned by event-projector-media... (sha=d23ed819a6812ea691615bd66ca36d87e93d06e5)",
+      "expected_head_sha": "d23ed819a6812ea691615bd66ca36d87e93d06e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T13:57:51.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/cla-20-image-generation",
+        "head_sha": "d23ed819a6812ea691615bd66ca36d87e93d06e5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
