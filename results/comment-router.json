@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:20:30.951Z",
+  "updated_at": "2026-08-04T15:20:38.161Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117176:5149475292:2026-08-04T11:15:13Z:clawsweeper_needs_human",
-      "comment_id": "5149475292",
-      "comment_version_key": "5149475292:2026-08-04T11:15:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117176#issuecomment-5149475292",
-      "comment_created_at": "2026-08-01T02:59:29Z",
-      "comment_updated_at": "2026-08-04T11:15:13Z",
-      "comment_body_sha256": "ef55003aa52da46045457ad74ebfbac16cf4040fb6bd8615c48e5bf69e5742d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Discord and Feishu transports were not live-exercised; their target and receipt behavior is covered by provider-owned contracts plus the real ephemeral Gateway QA scenario. (sha=ed6eea8c2e67c97b458fec3e2130a5e746310d9b)",
-      "expected_head_sha": "ed6eea8c2e67c97b458fec3e2130a5e746310d9b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T11:15:55.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/thread-reply-current-source-marking",
-        "head_sha": "ed6eea8c2e67c97b458fec3e2130a5e746310d9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117176:5150146275:2026-08-01T06:15:43Z:re_review",
       "comment_id": "5150146275",
@@ -32197,6 +32164,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:134:5181079201:2026-08-04T15:20:03Z:re_review",
+      "comment_id": "5181079201",
+      "comment_version_key": "5181079201:2026-08-04T15:20:03Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5181079201",
+      "comment_created_at": "2026-08-04T15:20:03Z",
+      "comment_updated_at": "2026-08-04T15:20:03Z",
+      "comment_body_sha256": "1f7e3349bf68c76b78f59c24147eeeb7af21aeb1fa7beee4afe38a291b51db42",
+      "source_delivery_id": "f7a26a60-9017-11f1-9adf-8cb882e6c9b9",
+      "repo": "openclaw/lobster",
+      "issue_number": 134,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T15:20:36.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workflow-cost-skip-cached-replays",
+        "head_sha": "afa93c9835ecbe28e1b3cc020c71d447b4d249e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
