@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:14:27.816Z",
+  "updated_at": "2026-08-04T14:15:13.025Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:119172",
-      "comment_id": "repair-loop-label-sweep:autofix:119172",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119172",
-      "comment_created_at": "2026-08-04T10:07:51.367Z",
-      "comment_updated_at": "2026-08-04T10:07:51.367Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119172,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T10:09:42.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-53932",
-        "head_sha": "9f880b538e35c9ef0debe087a02ed61bb2b97b78",
-        "cluster_id": "automerge-openclaw-openclaw-119172",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119172.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119172.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115803:5118160926:2026-08-04T10:08:37Z:clawsweeper_auto_repair",
       "comment_id": "5118160926",
@@ -32503,6 +32445,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119251:5180294987:2026-08-04T14:14:23Z:re_review",
+      "comment_id": "5180294987",
+      "comment_version_key": "5180294987:2026-08-04T14:14:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119251#issuecomment-5180294987",
+      "comment_created_at": "2026-08-04T14:14:23Z",
+      "comment_updated_at": "2026-08-04T14:14:23Z",
+      "comment_body_sha256": "ec4c6b50ec2d0d1c4d298cd638e45eb1559ca8aef1a8e75a79f092e8034dcb6c",
+      "source_delivery_id": "cc03d0a0-900e-11f1-94b9-14e5572734c3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119251,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T14:15:10.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t07-tui-streaming-tool-cards-20260804",
+        "head_sha": "ddfb0115e4e4ef064e3f3ac81d5fa9041f890385",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
