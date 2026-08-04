@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:43:36.722Z",
+  "updated_at": "2026-08-04T05:43:50.226Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115670:5118073904:2026-08-03T23:19:11Z:clawsweeper_auto_repair",
-      "comment_id": "5118073904",
-      "comment_version_key": "5118073904:2026-08-03T23:19:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5118073904",
-      "comment_created_at": "2026-07-29T12:59:23Z",
-      "comment_updated_at": "2026-08-03T23:19:11Z",
-      "comment_body_sha256": "019f42180a1ff9cb17658106c05dab4ed683d9f02be24d6008dd1f409f01b0a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1efc36993fcb469aac21fb37e7904240e00b2377)",
-      "expected_head_sha": "1efc36993fcb469aac21fb37e7904240e00b2377",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:20:16.187Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claws-adopt-existing-workspace",
-        "head_sha": "1efc36993fcb469aac21fb37e7904240e00b2377",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110294:5009238389:2026-08-03T23:16:12Z:clawsweeper_needs_human",
       "comment_id": "5009238389",
@@ -32657,6 +32624,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118144:5175090180:2026-08-04T05:43:11Z:re_review",
+      "comment_id": "5175090180",
+      "comment_version_key": "5175090180:2026-08-04T05:43:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118144#issuecomment-5175090180",
+      "comment_created_at": "2026-08-04T05:43:11Z",
+      "comment_updated_at": "2026-08-04T05:43:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "61bdab40-8fc7-11f1-8eb6-860dc40d4fea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118144,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T05:43:47.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-100364-telegram-forum-getchat-timeout",
+        "head_sha": "ae487d2a0881cd44267b1c73f012ad12b2c81367",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
