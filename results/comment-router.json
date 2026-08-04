@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T04:10:03.303Z",
+  "updated_at": "2026-08-04T04:10:07.421Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/proxyline:19:5166375751:2026-08-03T22:02:02Z:clawsweeper_needs_human",
-      "comment_id": "5166375751",
-      "comment_version_key": "5166375751:2026-08-03T22:02:02Z",
-      "comment_url": "https://github.com/openclaw/proxyline/pull/19#issuecomment-5166375751",
-      "comment_created_at": "2026-08-03T12:36:08Z",
-      "comment_updated_at": "2026-08-03T22:02:02Z",
-      "comment_body_sha256": "dd06cbb1b6f6d0f342f1a61443b70d72b1a43bb468140f91dd8bb916c130a73d",
-      "repo": "openclaw/proxyline",
-      "issue_number": 19,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows mock-accelerated e2e output and green checks, but not an unmocked after-fix Node-agent run against a stalled proxy; add a red... (sha=3de952a888a13394cabd446b7c726ace7bbb2ae3)",
-      "expected_head_sha": "3de952a888a13394cabd446b7c726ace7bbb2ae3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T22:02:43.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-connect-default-timeout",
-        "head_sha": "3de952a888a13394cabd446b7c726ace7bbb2ae3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/remindctl:67:5172040644:2026-08-03T21:39:51Z:re_review",
       "comment_id": "5172040644",
@@ -33280,6 +33247,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T04:10:03.303Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116678:5139680339:2026-08-04T04:09:18Z:clawsweeper_needs_human",
+      "comment_id": "5139680339",
+      "comment_version_key": "5139680339:2026-08-04T04:09:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116678#issuecomment-5139680339",
+      "comment_created_at": "2026-07-31T05:40:39Z",
+      "comment_updated_at": "2026-08-04T04:09:18Z",
+      "comment_body_sha256": "580161420454b247396291c37aff20d50e3bbf067ab8cb3f7a92a5db7cdc862a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116678,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Route ACP prompts through the ingress authority boundary (P1)** - This labels the prompt as external input but calls the trusted local runner with owner authority. ACP supplies no sender identity here, so host-f...; Review finding: [P1] Route ACP prompts through the ingress authority boundary — src/acp/native-agent.ts:440-444 - [P1] Preserve released root Gateway bridge flags — src/cli/acp-cl... (sha=42c283af5de6c4b5ccacf12ff40077b9017b3a5b)",
+      "expected_head_sha": "42c283af5de6c4b5ccacf12ff40077b9017b3a5b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T04:10:07.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-local-runtime",
+        "head_sha": "42c283af5de6c4b5ccacf12ff40077b9017b3a5b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
