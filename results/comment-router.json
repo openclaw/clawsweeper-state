@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:51:55.974Z",
+  "updated_at": "2026-08-04T07:59:28.166Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1073:5148696916:2026-08-04T03:21:22Z:clawsweeper_auto_repair",
-      "comment_id": "5148696916",
-      "comment_version_key": "5148696916:2026-08-04T03:21:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1073#issuecomment-5148696916",
-      "comment_created_at": "2026-08-01T00:51:39Z",
-      "comment_updated_at": "2026-08-04T03:21:22Z",
-      "comment_body_sha256": "98857aa8e47a92410c2de5b24cb5658570ed4626824886c6c5f68761b4e16982",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1073,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a9cfa04a66caef813b3d08e5f371688c4bea448f)",
-      "expected_head_sha": "a9cfa04a66caef813b3d08e5f371688c4bea448f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:03:23.431Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/llongley/plan-openclaw-msix",
-        "head_sha": "a9cfa04a66caef813b3d08e5f371688c4bea448f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:225:5158960498:2026-08-04T04:02:59Z:clawsweeper_needs_human",
       "comment_id": "5158960498",
@@ -32337,6 +32304,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89039:5176188192:2026-08-04T07:57:20Z:re_review",
+      "comment_id": "5176188192",
+      "comment_version_key": "5176188192:2026-08-04T07:57:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-5176188192",
+      "comment_created_at": "2026-08-04T07:57:20Z",
+      "comment_updated_at": "2026-08-04T07:57:20Z",
+      "comment_body_sha256": "cc26e1a887fdfd3b7a90cc111ccccc9ad905db6814d25cee579c742256ecb5ae",
+      "source_delivery_id": "1f6ac710-8fda-11f1-9deb-31f6f7ffc2e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89039,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T07:59:25.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-takeover-silent-message-loss-87180",
+        "head_sha": "7a73832e789777c0708ba339dce9f1e8ec09d8d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
