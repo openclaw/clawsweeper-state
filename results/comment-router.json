@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T21:21:11.533Z",
+  "updated_at": "2026-08-04T21:21:37.441Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119238:5182758951:2026-08-04T17:59:43Z:re_review",
-      "comment_id": "5182758951",
-      "comment_version_key": "5182758951:2026-08-04T17:59:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119238#issuecomment-5182758951",
-      "comment_created_at": "2026-08-04T17:59:43Z",
-      "comment_updated_at": "2026-08-04T17:59:43Z",
-      "comment_body_sha256": "7796c3c2af63569b1e2cbf1eb0acce068d287b75d036816be9295cd81df05c24",
-      "source_delivery_id": "464b2060-902e-11f1-94f6-4826aa48d7de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119238,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T18:00:16.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-local-provider-lifecycle-20260804",
-        "head_sha": "ef632a4a93d53aac21787cc85ac84fc8686f7985",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119277:5181767588:2026-08-04T18:00:22Z:clawsweeper_auto_repair",
       "comment_id": "5181767588",
@@ -31900,6 +31852,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-filename-decoding",
         "head_sha": "9c2a80059303b4bb387d6fad853cfaf2511ba024",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:58:5175262321:2026-08-04T21:20:19Z:clawsweeper_needs_human",
+      "comment_id": "5175262321",
+      "comment_version_key": "5175262321:2026-08-04T21:20:19Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/58#issuecomment-5175262321",
+      "comment_created_at": "2026-08-04T06:08:15Z",
+      "comment_updated_at": "2026-08-04T21:20:19Z",
+      "comment_body_sha256": "749691b4d94126dcbc271f29288eba3a0ce834f298e3cfe4e54ac64b160c80c5",
+      "repo": "openclaw/rfcs",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: The PR changes only an RFC document, so after-fix runtime proof is not applicable. (sha=287a7ff9619a43427caa691f49c80a49195b7274)",
+      "expected_head_sha": "287a7ff9619a43427caa691f49c80a49195b7274",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T21:21:37.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/0010-openclaw-msix-packaging",
+        "head_sha": "287a7ff9619a43427caa691f49c80a49195b7274",
         "cluster_id": null,
         "job_path": null
       }
