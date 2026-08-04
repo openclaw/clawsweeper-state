@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T22:29:43.274Z",
+  "updated_at": "2026-08-04T22:30:13.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116796:5142322305:2026-08-04T19:06:24Z:clawsweeper_needs_human",
-      "comment_id": "5142322305",
-      "comment_version_key": "5142322305:2026-08-04T19:06:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116796#issuecomment-5142322305",
-      "comment_created_at": "2026-07-31T11:22:59Z",
-      "comment_updated_at": "2026-08-04T19:06:24Z",
-      "comment_body_sha256": "bb7cdf11511ce26f84a35a3e32678dab498189bc77fcfcc4f1979e35a409d398",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116796,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve a non-equivalent legacy audit row (P2)** - This rewrites any matching legacy key and returns before inserting the generated event. The key omits actor and session identity; the new test itself stores le...; Review finding: [P2] Preserve a non-equivalent legacy audit row — src/audit/audit-event-store.ts:597-605 - [medium] Legacy audit relabeling can falsify provenance — src/audit/audi... (sha=e63a9a78782d8979050475b3c1e87051c1680f21)",
-      "expected_head_sha": "e63a9a78782d8979050475b3c1e87051c1680f21",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T19:07:21.144Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-5-node-audit",
-        "head_sha": "e63a9a78782d8979050475b3c1e87051c1680f21",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119278:5181739358:2026-08-04T19:06:33Z:clawsweeper_needs_human",
       "comment_id": "5181739358",
@@ -31851,6 +31818,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118787:5169634996:2026-08-04T22:20:48Z:clawsweeper_needs_human",
+      "comment_id": "5169634996",
+      "comment_version_key": "5169634996:2026-08-04T22:20:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118787#issuecomment-5169634996",
+      "comment_created_at": "2026-08-03T17:28:20Z",
+      "comment_updated_at": "2026-08-04T22:20:48Z",
+      "comment_body_sha256": "bb37c307965fe06893aa59a14834e089e3b6facc65b3fe027a06c42736fba57c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118787,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the exact merge candidate and revalidate its clean merge before landing. (sha=133257985327eade58ba20a0ef07fc4f11990eeb)",
+      "expected_head_sha": "133257985327eade58ba20a0ef07fc4f11990eeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T22:30:13.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auto-qa-ui-question-lifecycle-owner-3b6",
+        "head_sha": "133257985327eade58ba20a0ef07fc4f11990eeb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
