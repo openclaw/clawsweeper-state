@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:26:48.528Z",
+  "updated_at": "2026-08-04T12:27:10.336Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116678:5175845951:2026-08-04T07:21:39Z:re_review",
-      "comment_id": "5175845951",
-      "comment_version_key": "5175845951:2026-08-04T07:21:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116678#issuecomment-5175845951",
-      "comment_created_at": "2026-08-04T07:21:39Z",
-      "comment_updated_at": "2026-08-04T07:21:39Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "22a6f890-8fd5-11f1-85ed-04e0989a1bde",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116678,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:22:17.383Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/acp-local-runtime",
-        "head_sha": "d01b5675b6ad606995f409b81f7441c7a23b6ea8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116394:5175845812:2026-08-04T07:21:38Z:re_review",
       "comment_id": "5175845812",
@@ -33850,6 +33802,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T12:26:48.528Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117968:5157492436:2026-08-04T12:26:11Z:clawsweeper_needs_human",
+      "comment_id": "5157492436",
+      "comment_version_key": "5157492436:2026-08-04T12:26:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117968#issuecomment-5157492436",
+      "comment_created_at": "2026-08-02T11:22:34Z",
+      "comment_updated_at": "2026-08-04T12:26:11Z",
+      "comment_body_sha256": "9f826f47a4cc88b02b7142462aa6cd1031eb0894c2d7191ecc319c4666436482",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117968,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Anthropic-compatible proxies that previously supplied malformed completed JSON will now receive an explicit failed turn instead of executing a leniently repaired partial call. (sha=af86aaedd485b7316fea7c181e954db0af36f841)",
+      "expected_head_sha": "af86aaedd485b7316fea7c181e954db0af36f841",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:27:10.336Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-strict-tool-args",
+        "head_sha": "af86aaedd485b7316fea7c181e954db0af36f841",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
