@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
 mode: "autonomous"
-run_id: "30918868241"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30918868241"
+run_id: "30931936912"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30931936912"
 head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-04T16:04:58.046Z"
-canonical: "https://github.com/openclaw/openclaw/issues/118560"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
+published_at: "2026-08-04T17:12:36.420Z"
+canonical: "#118560"
+canonical_issue: "#118560"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30918868241](https://github.com/openclaw/clawsweeper/actions/runs/30918868241)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30931936912](https://github.com/openclaw/clawsweeper/actions/runs/30931936912)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/118560
+Canonical: #118560
 
 ## Summary
 
-#118560 remains a reproducible, non-security Control UI defect on pinned main 52954a1fa8f4d63914967a87f56ada21f5a0252e. The repair needs a new narrow PR that carries the selected archive anchor through a concurrency-safe one-shot handoff, while keeping archive display identity separate from the live session ID used by chat.send.
+#118560 is a reproducible non-security Control UI defect on current main. A selected transcript-search hit carries sessionId/messageId, but the navigation callback forwards only sessionKey; no hydrated PR owns the repair. Plan a narrow credited fix PR.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex review-fix worker timed out after 690073ms |
-| issue_implementation_status_comment | updated | #118560 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | keep_canonical | planned | canonical | Open canonical issue; no hydrated candidate PR owns the fix. |
-| cluster:issue-openclaw-openclaw-118560 | fix_needed | planned | canonical | A new fix PR is required; no configuration, protocol, reset-lifecycle, persistence, or security-boundary change is needed. |
-| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | Implement the canonical repair on clawsweeper/issue-openclaw-openclaw-118560. |
+| #118560 | fix_needed | planned | canonical | Current main drops the archive provenance before the initial chat-history request. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned |  | No viable PR is hydrated; a narrow new fix PR is appropriate. |
 
 ## Needs Human
 
