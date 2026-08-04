@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T01:17:31.714Z",
+  "updated_at": "2026-08-04T01:28:03.271Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118870:5170568861:2026-08-03T20:18:22Z:clawsweeper_needs_human",
-      "comment_id": "5170568861",
-      "comment_version_key": "5170568861:2026-08-03T20:18:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118870#issuecomment-5170568861",
-      "comment_created_at": "2026-08-03T19:03:34Z",
-      "comment_updated_at": "2026-08-03T20:18:22Z",
-      "comment_body_sha256": "ddaeb3bcd88d9f5ad7e6aa6fe006782cccf6893753d07f365396212eb1401038",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118870,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the PR body still says current-head QA, changed-gate, autoreview, and CI evidence will be added; refresh the focused Gateway proof against the c... (sha=8b29ea9122fc0368aa28b443d855f0b27b02157c)",
-      "expected_head_sha": "8b29ea9122fc0368aa28b443d855f0b27b02157c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:19:13.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-gateway-b1-hosted-web",
-        "head_sha": "8b29ea9122fc0368aa28b443d855f0b27b02157c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118805:5170035820:2026-08-03T20:18:18Z:clawsweeper_auto_repair",
       "comment_id": "5170035820",
@@ -33115,6 +33082,54 @@
         "kind": "pull_request",
         "branch": "agent/model-picker-replace-mode-hint",
         "head_sha": "95a6e473a1ebf4b24cbe0643b3bd7140380ca030",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111146:5173535105:2026-08-04T01:27:34Z:re_review",
+      "comment_id": "5173535105",
+      "comment_version_key": "5173535105:2026-08-04T01:27:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111146#issuecomment-5173535105",
+      "comment_created_at": "2026-08-04T01:27:34Z",
+      "comment_updated_at": "2026-08-04T01:27:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "ac644650-8fa3-11f1-8d0d-5df3736b01fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111146,
+      "author": "xydigit-zt",
+      "author_id": 294751694,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T01:28:00.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-reply-session-conflict-notice",
+        "head_sha": "f84b5fb45f6cca5841aa4d9951d18acbebf63546",
         "cluster_id": null,
         "job_path": null
       },
