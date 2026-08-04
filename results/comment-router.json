@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T19:20:21.851Z",
+  "updated_at": "2026-08-04T19:20:59.246Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105025:4950152361:2026-08-04T15:03:20Z:clawsweeper_auto_repair",
-      "comment_id": "4950152361",
-      "comment_version_key": "4950152361:2026-08-04T15:03:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105025#issuecomment-4950152361",
-      "comment_created_at": "2026-07-12T05:56:39Z",
-      "comment_updated_at": "2026-08-04T15:03:20Z",
-      "comment_body_sha256": "a2c2a5efac30cd375103202f29191d706b3861eb1045378bf13888553cd31a28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c8b7f3da5784fbf411fcffea752bc044f15e6c6)",
-      "expected_head_sha": "2c8b7f3da5784fbf411fcffea752bc044f15e6c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T15:05:30.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/rcs-channel-pr",
-        "head_sha": "2c8b7f3da5784fbf411fcffea752bc044f15e6c6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105025:5049384024:2026-07-22T17:34:27Z:re_review",
       "comment_id": "5049384024",
@@ -31776,6 +31743,54 @@
         "kind": "pull_request",
         "branch": "agent/fix-gemini-web-search-schema",
         "head_sha": "40c22276f8fddbc3a964626639c48e85c4e63792",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2646:5183569122:2026-08-04T19:20:07Z:re_review",
+      "comment_id": "5183569122",
+      "comment_version_key": "5183569122:2026-08-04T19:20:07Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2646#issuecomment-5183569122",
+      "comment_created_at": "2026-08-04T19:20:07Z",
+      "comment_updated_at": "2026-08-04T19:20:07Z",
+      "comment_body_sha256": "dad651939dcb06bb382879790360334d723f469e57f6e7d87406ddc98908b843",
+      "source_delivery_id": "81536d60-9039-11f1-90ba-671f68b568ff",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2646,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - both p1 findings from the 18:59 review are addressed in e1894f28a:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T19:20:57.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-cost-cache-2637",
+        "head_sha": "e1894f28a17766f3d0b06f429fb5bcc5e9238303",
         "cluster_id": null,
         "job_path": null
       },
