@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:31:34.576Z",
+  "updated_at": "2026-08-04T12:31:56.117Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/kova:89:5174477426:2026-08-04T07:22:13Z:clawsweeper_needs_human",
-      "comment_id": "5174477426",
-      "comment_version_key": "5174477426:2026-08-04T07:22:13Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/89#issuecomment-5174477426",
-      "comment_created_at": "2026-08-04T04:05:43Z",
-      "comment_updated_at": "2026-08-04T07:22:13Z",
-      "comment_body_sha256": "fd64a043c79e4f7d5c183bed98541b4ad93c2100688f39c6105a09c9dfa11ce6",
-      "repo": "openclaw/kova",
-      "issue_number": 89,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive producer contract is paired with the still-open OpenClaw consumer at https://github.com/openclaw/openclaw/pull/119121; release use before the documented consumer rollout... (sha=0f9e678e239b45db46d2bd930b7983203580df78)",
-      "expected_head_sha": "0f9e678e239b45db46d2bd930b7983203580df78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:22:51.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/deep-profile-resource-gating",
-        "head_sha": "0f9e678e239b45db46d2bd930b7983203580df78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119131:5175854570:2026-08-04T07:22:38Z:re_review",
       "comment_id": "5175854570",
@@ -33876,6 +33843,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119209:5179066701:2026-08-04T12:31:10Z:clawsweeper_needs_human",
+      "comment_id": "5179066701",
+      "comment_version_key": "5179066701:2026-08-04T12:31:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119209#issuecomment-5179066701",
+      "comment_created_at": "2026-08-04T12:31:10Z",
+      "comment_updated_at": "2026-08-04T12:31:10Z",
+      "comment_body_sha256": "040902e79e11f70af37041177693e6ded4a51efe4a80da00fe60c75f3737b729",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the Control UI guide for removed GPT-Live OAuth (P1)** - This new rejection makes OAuth-only GPT-Live sessions fail before any request, but docs/web/control-ui.md:488 still instructs operators that browse...; Review finding: [P1] Update the Control UI guide for removed GPT-Live OAuth — extensions/openai/realtime-quicksilver-wire.ts:394-400 - [P1] Remove the unused auth parameter — exte... (sha=a7b7f0e872fe485ce54235bad103f6010a5b3c5f)",
+      "expected_head_sha": "a7b7f0e872fe485ce54235bad103f6010a5b3c5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:31:56.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/realtime-openai-route-auth",
+        "head_sha": "a7b7f0e872fe485ce54235bad103f6010a5b3c5f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
