@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119129"
 mode: "autonomous"
-run_id: "30882912729"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30882912729"
+run_id: "30887218191"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30887218191"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-04T06:15:54.840Z"
-canonical: "https://github.com/openclaw/openclaw/issues/119129"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/119129"
+published_at: "2026-08-04T07:23:30.762Z"
+canonical: "#119129"
+canonical_issue: "#119129"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30882912729](https://github.com/openclaw/clawsweeper/actions/runs/30882912729)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30887218191](https://github.com/openclaw/clawsweeper/actions/runs/30887218191)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/119129
+Canonical: #119129
 
 ## Summary
 
-Current main 3f2fb7e36589e79408dcfdf93df231eea4850978 reproduces the owner-key selection defect by source: resolver lookup returns the newest owner flow without applying the cancellation terminal-state contract. The checkout is read-only, so implementation and validation cannot be performed here; a narrow executable fix artifact is ready.
+Current main reproduces the owner-key resolver defect by source inspection, but this worker checkout is read-only: the required regression-test patch was rejected by the filesystem sandbox. No code, branch, PR, GitHub mutation, or validation run was performed. A narrow implementation artifact is ready for an executor with write access.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main 3f2fb7e36589e79408dcfdf93df231eea4850978 reproduces the owner-key s
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119129 | fix_needed | blocked | canonical | A narrow bug fix is warranted, but this read-only checkout cannot create the required branch delta or run write-producing test fixtures. |
-| cluster:issue-openclaw-openclaw-119129 | build_fix_artifact | planned | canonical | Ready for a writable executor to implement and validate as one narrow PR. |
+| #119129 | fix_needed | blocked | canonical | The repair requires source and regression-test edits, which this worker cannot write in the current sandbox. |
 
 ## Needs Human
 
