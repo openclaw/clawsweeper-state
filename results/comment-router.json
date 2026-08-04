@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:14:53.782Z",
+  "updated_at": "2026-08-04T06:14:56.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118998:5173079461:2026-08-04T00:10:57Z:re_review",
-      "comment_id": "5173079461",
-      "comment_version_key": "5173079461:2026-08-04T00:10:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118998#issuecomment-5173079461",
-      "comment_created_at": "2026-08-04T00:10:57Z",
-      "comment_updated_at": "2026-08-04T00:10:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "f7bb8a60-8f98-11f1-8849-eae57845c6e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118998,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:11:37.109Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t08-tui-terminal-safety-20260803",
-        "head_sha": "6a73f1db483c3a53697041130e5d706b71cf4a36",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118988:5172464708:2026-08-03T22:34:40Z:automerge",
       "comment_id": "5172464708",
@@ -32754,6 +32706,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:256:5168896416:2026-08-04T06:14:20Z:clawsweeper_needs_human",
+      "comment_id": "5168896416",
+      "comment_version_key": "5168896416:2026-08-04T06:14:20Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/256#issuecomment-5168896416",
+      "comment_created_at": "2026-08-03T16:14:34Z",
+      "comment_updated_at": "2026-08-04T06:14:20Z",
+      "comment_body_sha256": "3114325a06ebbd4b7aeda7afe3c253cde402eba6345fc25464dd2aaf275543e0",
+      "repo": "openclaw/crabline",
+      "issue_number": 256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is warranted because there is no actionable defect; routine maintainer review is the remaining action. (sha=7696217cfbfad9462bb878fb0156c88d19185ccb)",
+      "expected_head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:14:56.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
+        "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
