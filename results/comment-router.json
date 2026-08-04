@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:32:40.911Z",
+  "updated_at": "2026-08-04T06:33:31.022Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118524:5173599442:2026-08-04T01:38:44Z:re_review",
-      "comment_id": "5173599442",
-      "comment_version_key": "5173599442:2026-08-04T01:38:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118524#issuecomment-5173599442",
-      "comment_created_at": "2026-08-04T01:38:44Z",
-      "comment_updated_at": "2026-08-04T01:38:44Z",
-      "comment_body_sha256": "85e1adfbf4b71133470c15e9cd08cc86e8c4a4056d6133153648991d0ca6dcc2",
-      "source_delivery_id": "3b120ad0-8fa5-11f1-9118-ecf2681d83d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118524,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T01:39:16.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approvals-migration-null-fields",
-        "head_sha": "585de9f51b7ff7b0155643dacb9e05615dec0b57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118681:5173597585:2026-08-04T01:38:23Z:re_review",
       "comment_id": "5173597585",
@@ -32342,6 +32294,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119119:5174855020:2026-08-04T06:32:49Z:clawsweeper_needs_human",
+      "comment_id": "5174855020",
+      "comment_version_key": "5174855020:2026-08-04T06:32:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119119#issuecomment-5174855020",
+      "comment_created_at": "2026-08-04T05:08:35Z",
+      "comment_updated_at": "2026-08-04T06:32:49Z",
+      "comment_body_sha256": "49ae7e976ddc96111ad0277302f8d071fce184a80dcd2ac37f5f8c736d4e32dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119119,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete repair remains; this PR only needs the normal exact-head merge checks before landing. (sha=c357a82dd386f4a739bc9fdfffda011f35211aa0)",
+      "expected_head_sha": "c357a82dd386f4a739bc9fdfffda011f35211aa0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:33:31.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-fractional-transcript-timestamp",
+        "head_sha": "c357a82dd386f4a739bc9fdfffda011f35211aa0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
