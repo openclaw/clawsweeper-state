@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:03:18.974Z",
+  "updated_at": "2026-08-04T07:03:23.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119029:5174079995:2026-08-04T02:57:37Z:re_review",
-      "comment_id": "5174079995",
-      "comment_version_key": "5174079995:2026-08-04T02:57:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119029#issuecomment-5174079995",
-      "comment_created_at": "2026-08-04T02:57:37Z",
-      "comment_updated_at": "2026-08-04T02:57:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "403d95f0-8fb0-11f1-8b83-2f3f6076515e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119029,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T02:59:34.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent-tool-safety-approvals-20260804",
-        "head_sha": "c55feea2b0c4dcf46bcdd715a21f30b39d0a2f7a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118884:5174106211:2026-08-04T03:02:10Z:re_review",
       "comment_id": "5174106211",
@@ -32165,6 +32117,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T07:03:18.939Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117882:5156074560:2026-08-04T07:02:26Z:clawsweeper_needs_human",
+      "comment_id": "5156074560",
+      "comment_version_key": "5156074560:2026-08-04T07:02:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117882#issuecomment-5156074560",
+      "comment_created_at": "2026-08-02T07:01:26Z",
+      "comment_updated_at": "2026-08-04T07:02:26Z",
+      "comment_body_sha256": "b08445b5c87fec226d83b4c6a21ec3be9061c5d4a0554eecb83c131d8417f1ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117882,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the shell-escaping regression matrix (P1)** - Current main expands this path to eight cases and executes the displayed remediation command through sh; this unchanged branch still has only the older sing...; Review finding: [P1] Preserve the shell-escaping regression matrix — src/skills/lifecycle/clawhub.test.ts:1744-1782 - [medium] Current command-escaping coverage is absent from the... (sha=ee3971cddd2bf108faeb9ae956d1ebfd04ba9f23)",
+      "expected_head_sha": "ee3971cddd2bf108faeb9ae956d1ebfd04ba9f23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:03:23.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/goal100k-skills-wave11",
+        "head_sha": "ee3971cddd2bf108faeb9ae956d1ebfd04ba9f23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
