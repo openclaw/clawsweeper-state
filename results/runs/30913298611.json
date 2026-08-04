@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119233",
+  "mode": "autonomous",
+  "run_id": "30913298611",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30913298611",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119233.md",
+  "published_at": "2026-08-04T13:52:07.101Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_pr": null,
+  "summary": "Current main b5876a10862ced9a2ffed191d7324d57839ef2fb still has the inherited-order persistence bug. The narrow owner-boundary repair and regression are defined, but this read-only checkout cannot modify the branch; focused validation is also blocked by missing local dependency p-map.",
+  "actions": [
+    {
+      "target": "#119233",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Implementation is source-proven and narrow, but this worker cannot write the required branch or install missing test dependencies in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Executor should implement this narrow canonical repair on clawsweeper/issue-openclaw-openclaw-119233."
+    },
+    {
+      "target": "#114989",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different root cause and intentionally out of scope for this persistence-only repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
