@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119079",
+  "mode": "autonomous",
+  "run_id": "30877079181",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30877079181",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119079.md",
+  "published_at": "2026-08-04T04:44:10.891Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119079",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119079",
+  "canonical_pr": null,
+  "summary": "#119079 is a real current-main bug. Fractional Talk timestamps reach STRICT session-root INTEGER bindings through ensureTranscriptSessionRoot. A narrow two-file repair and regression plan is ready, but this worker checkout is read-only (pnpm/Corepack failed with EROFS), so no branch, patch, or validation could be produced here.",
+  "actions": [
+    {
+      "target": "#110237",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation is permitted or needed."
+    },
+    {
+      "target": "#112703",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open for its release/product follow-up."
+    },
+    {
+      "target": "#119079",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119079",
+      "candidate_fix": null,
+      "reason": "Open canonical bug with a narrow storage-owner repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119079",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119079",
+      "candidate_fix": null,
+      "reason": "No viable implementation PR existed in the hydrated inventory."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119079",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119079",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker filesystem; the deterministic executor can apply this artifact in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
