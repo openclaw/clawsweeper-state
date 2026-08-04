@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:12:22.803Z",
+  "updated_at": "2026-08-04T08:12:30.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:107:4996439377:2026-08-04T04:09:58Z:clawsweeper_needs_human",
-      "comment_id": "4996439377",
-      "comment_version_key": "4996439377:2026-08-04T04:09:58Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/107#issuecomment-4996439377",
-      "comment_created_at": "2026-07-16T20:47:45Z",
-      "comment_updated_at": "2026-08-04T04:09:58Z",
-      "comment_body_sha256": "ed6185398edee160bd9d73970d15b6b3af08390d9c369f73103c970d55e902b6",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 107,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body lists pass claims but only names a private absolute artifact directory; add redacted terminal output or retained artifacts that visibl...; Review finding: [P1] Preserve Codex as the implicit reviewer default — skills/autoreview/SKILL.md:10 - [P2] Retain Beam validation in the repository workflow — .github/workflows/v... (sha=dc3c0e356d6430c3feb786d51b47d00db02afb10)",
-      "expected_head_sha": "dc3c0e356d6430c3feb786d51b47d00db02afb10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:10:39.972Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-a-readiness",
-        "head_sha": "dc3c0e356d6430c3feb786d51b47d00db02afb10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118750:5168926540:2026-08-04T04:09:05Z:clawsweeper_auto_repair",
       "comment_id": "5168926540",
@@ -32684,6 +32651,54 @@
       "status": "skipped",
       "processed_at": "2026-08-04T08:12:22.803Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116793:5176325478:2026-08-04T08:11:43Z:re_review",
+      "comment_id": "5176325478",
+      "comment_version_key": "5176325478:2026-08-04T08:11:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5176325478",
+      "comment_created_at": "2026-08-04T08:11:43Z",
+      "comment_updated_at": "2026-08-04T08:11:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "21a95a80-8fdc-11f1-9fe2-60b802180aab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116793,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T08:12:28.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-2-attribution",
+        "head_sha": "77ee30715673d8a2f5e1b88648ce4132df08f049",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
