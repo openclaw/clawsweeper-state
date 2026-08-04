@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:25:56.479Z",
+  "updated_at": "2026-08-04T05:29:06.726Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117477:5152166369:2026-08-03T23:15:14Z:clawsweeper_needs_human",
-      "comment_id": "5152166369",
-      "comment_version_key": "5152166369:2026-08-03T23:15:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117477#issuecomment-5152166369",
-      "comment_created_at": "2026-08-01T15:50:15Z",
-      "comment_updated_at": "2026-08-03T23:15:14Z",
-      "comment_body_sha256": "1d105145199549691254fc8c048a2bacd4c8e02f71a6fbb27cdc762e0219d742",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117477,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the publish token out of dependency lifecycle scripts (P1)** - The new local setup action installs the checked-out project with lifecycle scripts enabled while the job-level docs publish token is inherited....; Review finding: [P1] Keep the publish token out of dependency lifecycle scripts — .github/workflows/docs-sync-publish.yml:56-60 - [high] Publish token reaches dependency lifecycle... (sha=f0c72cefbd7bf9da21505c68f16ca1b3e990742b)",
-      "expected_head_sha": "f0c72cefbd7bf9da21505c68f16ca1b3e990742b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:15:55.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/maturity-generated-publish",
-        "head_sha": "f0c72cefbd7bf9da21505c68f16ca1b3e990742b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/wacli:338:5172492177:2026-08-03T22:38:32Z:re_review",
       "comment_id": "5172492177",
@@ -32590,6 +32557,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118792:5174999792:2026-08-04T05:28:35Z:re_review",
+      "comment_id": "5174999792",
+      "comment_version_key": "5174999792:2026-08-04T05:28:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118792#issuecomment-5174999792",
+      "comment_created_at": "2026-08-04T05:28:35Z",
+      "comment_updated_at": "2026-08-04T05:28:35Z",
+      "comment_body_sha256": "1fef20d5a8a4c74a6ce09d7a192dd4d6ca75c4d53ab334d9a10e9d03efb4d11f",
+      "source_delivery_id": "576b11c0-8fc5-11f1-9d56-b1b5b00a75d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118792,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T05:29:04.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118772-total-tokens-cumulative",
+        "head_sha": "fada037b3cd1e731bb248e93c6c4e70daf8178f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
