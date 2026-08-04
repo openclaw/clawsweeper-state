@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:21:13.041Z",
+  "updated_at": "2026-08-04T06:21:14.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110429:5173306355:2026-08-04T00:48:11Z:re_review",
-      "comment_id": "5173306355",
-      "comment_version_key": "5173306355:2026-08-04T00:48:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5173306355",
-      "comment_created_at": "2026-08-04T00:48:11Z",
-      "comment_updated_at": "2026-08-04T00:48:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "2b3d2bf0-8f9e-11f1-8b21-3402bd5a20b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110429,
-      "author": "RileyJJY",
-      "author_id": 255106757,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:48:40.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/comfy-workflow-file-cap",
-        "head_sha": "530df46105dbab121bff85fbea24664d7d07c73a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119039:5173370943:2026-08-04T00:59:13Z:re_review",
       "comment_id": "5173370943",
@@ -32477,6 +32429,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T06:21:13.041Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:254:5166225820:2026-08-04T06:19:33Z:clawsweeper_needs_human",
+      "comment_id": "5166225820",
+      "comment_version_key": "5166225820:2026-08-04T06:19:33Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/254#issuecomment-5166225820",
+      "comment_created_at": "2026-08-03T12:20:11Z",
+      "comment_updated_at": "2026-08-04T06:19:33Z",
+      "comment_body_sha256": "86f307898085f1881624b83ef2edc9337d5b4e323bce79abe091dbd5cbc277b9",
+      "repo": "openclaw/crabline",
+      "issue_number": 254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair is identified; the PR is ready for ordinary maintainer review rather than an automated repair lane. (sha=70a69e94b355e9976cef7f0d88430e08d24a2fd1)",
+      "expected_head_sha": "70a69e94b355e9976cef7f0d88430e08d24a2fd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:21:14.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-audio-inbound",
+        "head_sha": "70a69e94b355e9976cef7f0d88430e08d24a2fd1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
