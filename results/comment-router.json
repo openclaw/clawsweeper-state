@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:32:03.397Z",
+  "updated_at": "2026-08-04T11:33:56.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119121:5174979016:2026-08-04T07:07:46Z:clawsweeper_needs_human",
-      "comment_id": "5174979016",
-      "comment_version_key": "5174979016:2026-08-04T07:07:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5174979016",
-      "comment_created_at": "2026-08-04T05:25:28Z",
-      "comment_updated_at": "2026-08-04T07:07:46Z",
-      "comment_body_sha256": "c30d2cc16238e9cea57a3bcebf1f678fb8d258156eb6e3c36dca14536aa7ccc0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119121,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Audit the new Kova trust root before live execution (P1)** - This changes the immutable Kova revision that is fetched and later receives live OpenAI credentials. The custom-ref guard is good, but the exact Kova...; Review finding: [P1] Audit the new Kova trust root before live execution — .github/workflows/openclaw-performance.yml:78-79 - [medium] New evaluator revision lacks directly verifi... (sha=58654d948334033db9258cb2643e2455fad4d157)",
-      "expected_head_sha": "58654d948334033db9258cb2643e2455fad4d157",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:08:31.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-profiled-partial-gate",
-        "head_sha": "58654d948334033db9258cb2643e2455fad4d157",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103872:4938369172:2026-08-04T07:07:49Z:clawsweeper_auto_repair",
       "comment_id": "4938369172",
@@ -33752,6 +33719,54 @@
         "kind": "pull_request",
         "branch": "fix/telegram-offset-persist-retry",
         "head_sha": "2e49eddf277d022e28b1ddf76afa9bb018db54d9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119051:5178413698:2026-08-04T11:33:22Z:re_review",
+      "comment_id": "5178413698",
+      "comment_version_key": "5178413698:2026-08-04T11:33:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119051#issuecomment-5178413698",
+      "comment_created_at": "2026-08-04T11:33:22Z",
+      "comment_updated_at": "2026-08-04T11:33:22Z",
+      "comment_body_sha256": "ce929c1a915e7623a6d1a0ff23ae658df00e08c7da62294c18edf8429e8e9291",
+      "source_delivery_id": "4d5eb5f0-8ff8-11f1-86b9-444802cf7110",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119051,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T11:33:54.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/agent-migration-checkpoint",
+        "head_sha": "575098d87295738069351591d886745ab5de35e2",
         "cluster_id": null,
         "job_path": null
       },
