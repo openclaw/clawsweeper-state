@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T16:07:39.983Z",
+  "updated_at": "2026-08-04T16:07:44.606Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:112:5176366595:2026-08-04T12:08:00Z:clawsweeper_needs_human",
-      "comment_id": "5176366595",
-      "comment_version_key": "5176366595:2026-08-04T12:08:00Z",
-      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/112#issuecomment-5176366595",
-      "comment_created_at": "2026-08-04T08:16:03Z",
-      "comment_updated_at": "2026-08-04T12:08:00Z",
-      "comment_body_sha256": "d586b48dff85bbd325a9f5af1c14d9c8d5acd6e81b67291c69701281327a80cf",
-      "repo": "openclaw/nix-openclaw",
-      "issue_number": 112,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the trusted CI actor addition** - This allowlist controls whether same-repository PR activity can run native jobs that check out and execute repository code; confirm this actor...; Review finding: [low] Confirm the trusted CI actor addition — .github/workflows/ci.yml:26 (sha=2b2658b3bad9d888d8ed78bb08d94281ab196f65)",
-      "expected_head_sha": "2b2658b3bad9d888d8ed78bb08d94281ab196f65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T12:08:37.667Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-nix-correction-plugin-version",
-        "head_sha": "2b2658b3bad9d888d8ed78bb08d94281ab196f65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117464:5152061513:2026-08-04T12:08:14Z:clawsweeper_auto_repair",
       "comment_id": "5152061513",
@@ -32162,6 +32129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119188:5178129435:2026-08-04T16:06:56Z:clawsweeper_needs_human",
+      "comment_id": "5178129435",
+      "comment_version_key": "5178129435:2026-08-04T16:06:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119188#issuecomment-5178129435",
+      "comment_created_at": "2026-08-04T11:05:52Z",
+      "comment_updated_at": "2026-08-04T16:06:56Z",
+      "comment_body_sha256": "0ed7213c20ba6d721b040a9836f0c26388012b066996e70d0457bb40e02faaa0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The sandbox failure prevents verification that the new provider-plugin inference matches all current QA provider aliases and custom-provider contracts. (sha=28f63c96e9aa81f527c362e8cf8fe4944f1937dc)",
+      "expected_head_sha": "28f63c96e9aa81f527c362e8cf8fe4944f1937dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:07:44.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta8-qa-scenario-contracts",
+        "head_sha": "28f63c96e9aa81f527c362e8cf8fe4944f1937dc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
