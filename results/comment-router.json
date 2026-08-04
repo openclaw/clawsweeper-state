@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:34:28.837Z",
+  "updated_at": "2026-08-04T05:36:18.156Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118857:5170566266:2026-08-03T23:16:40Z:clawsweeper_needs_human",
-      "comment_id": "5170566266",
-      "comment_version_key": "5170566266:2026-08-03T23:16:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118857#issuecomment-5170566266",
-      "comment_created_at": "2026-08-03T19:03:17Z",
-      "comment_updated_at": "2026-08-03T23:16:40Z",
-      "comment_body_sha256": "ced43086b8d7a7c2435c60fbe0f820bfa6787b4b525a512ec8eb2db43ec679bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118857,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: there is no concrete defect in the branch, and ordinary member review plus the exact-head CI gate remain. (sha=72f670911e8ed0a248df0b4ee6030ad3557c84b6)",
-      "expected_head_sha": "72f670911e8ed0a248df0b4ee6030ad3557c84b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:17:19.145Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-media-fetch-boundaries-20260803",
-        "head_sha": "72f670911e8ed0a248df0b4ee6030ad3557c84b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118978:5172331605:2026-08-03T23:17:27Z:clawsweeper_needs_human",
       "comment_id": "5172331605",
@@ -32636,6 +32603,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119051:5175043412:2026-08-04T05:35:35Z:re_review",
+      "comment_id": "5175043412",
+      "comment_version_key": "5175043412:2026-08-04T05:35:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119051#issuecomment-5175043412",
+      "comment_created_at": "2026-08-04T05:35:35Z",
+      "comment_updated_at": "2026-08-04T05:35:35Z",
+      "comment_body_sha256": "2ff9a926befc0860c7841dc0065d1f483c41548926c97382479723e2f667ae76",
+      "source_delivery_id": "51908b80-8fc6-11f1-9876-677dd7efb88c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119051,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T05:36:16.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/agent-migration-checkpoint",
+        "head_sha": "917777be40374c47742fa8cfd13a5324efb7a2ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
