@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-53932",
+  "mode": "plan",
+  "run_id": "30890938143",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30890938143",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
+  "published_at": "2026-08-04T08:20:37.061Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Slack plugin repair for #53932. Current main 9faf34d3 drops the established forceDocument/asDocument intent before Slack’s shared media loader, while Telegram and WhatsApp preserve it. Route the unrelated security-sensitive historical PR separately; keep the broader product request open as related.",
+  "actions": [
+    {
+      "target": "#40829",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical security-sensitive PR with central OpenClaw security handling; do not mutate it."
+    },
+    {
+      "target": "#41965",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Related document-delivery product work remains open and is outside this bug-only repair."
+    },
+    {
+      "target": "#53932",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "This is the canonical reproducible bug and has a narrow plugin-owned repair path."
+    },
+    {
+      "target": "#53988",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no close or mutation action is valid for an already-closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-53932",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR after implementing and validating the artifact."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
