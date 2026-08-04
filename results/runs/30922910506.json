@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119233",
+  "mode": "plan",
+  "run_id": "30922910506",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30922910506",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119233.md",
+  "published_at": "2026-08-04T15:21:37.113Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the writer-boundary defect: `setAuthProfileOrder` saves a nonempty secondary-agent order without preserving inherited IDs, and local-store pruning removes IDs with no local credentials. A narrow fix and reload regression are appropriate; #114989 remains a separate runtime-refresh issue.",
+  "actions": [
+    {
+      "target": "#119233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Build the permitted narrow fix PR."
+    },
+    {
+      "target": "#114989",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Different lifecycle boundary; no closure or implementation scope expansion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow implementation path for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
