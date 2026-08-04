@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T13:21:43.162Z",
+  "updated_at": "2026-08-04T13:21:46.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110562:5010561092:2026-08-04T08:16:07Z:clawsweeper_needs_human",
-      "comment_id": "5010561092",
-      "comment_version_key": "5010561092:2026-08-04T08:16:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5010561092",
-      "comment_created_at": "2026-07-18T08:19:31Z",
-      "comment_updated_at": "2026-08-04T08:16:07Z",
-      "comment_body_sha256": "6db263e841a083efdb6e19d40ae0a18dc1810c61860aa65cb78f8a900a5ad5c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110562,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reuse the managed child-process runner (P1)** - The repository already owns this timeout/process-tree boundary in scripts/lib/managed-child-process.mjs. Keeping a parallel runner duplicates its cleanup policy an...; Review finding: [P1] Reuse the managed child-process runner — scripts/check-workflows.mjs:139-147 - [medium] Unvalidated SystemRoot can select a non-system terminator — scripts/ch... (sha=60401cbb8337791f6e169dbb892a73ff436d7d2f)",
-      "expected_head_sha": "60401cbb8337791f6e169dbb892a73ff436d7d2f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T08:20:21.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/check-workflows-timeouts",
-        "head_sha": "60401cbb8337791f6e169dbb892a73ff436d7d2f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110562:5010711809:2026-07-18T09:12:55Z:re_review",
       "comment_id": "5010711809",
@@ -33641,6 +33608,54 @@
         "kind": "pull_request",
         "branch": "fix/code-mode-host-owned-replay-stack-20260804",
         "head_sha": "611aaaf93cde34670e6960694a56fbe98a265f53",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119057:5179651849:2026-08-04T13:21:05Z:re_review",
+      "comment_id": "5179651849",
+      "comment_version_key": "5179651849:2026-08-04T13:21:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5179651849",
+      "comment_created_at": "2026-08-04T13:21:05Z",
+      "comment_updated_at": "2026-08-04T13:21:05Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "59bb3d50-9007-11f1-8694-f8df69bb47d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119057,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T13:21:44.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-semantic-observation-stack-20260804",
+        "head_sha": "591211342c6c5300657212f94bf7d72ad1169708",
         "cluster_id": null,
         "job_path": null
       },
