@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:22:23.833Z",
+  "updated_at": "2026-08-04T07:22:31.176Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4623136398:2026-06-04T14:33:56Z:re_review",
-      "comment_id": "4623136398",
-      "comment_version_key": "4623136398:2026-06-04T14:33:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4623136398",
-      "comment_created_at": "2026-06-04T14:33:56Z",
-      "comment_updated_at": "2026-06-04T14:33:56Z",
-      "comment_body_sha256": "136c3b679b80356760fc00312e46b94db3bea6c5aaba23372f355bd3acfb5664",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:02:31.863Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4624947959:2026-06-04T18:19:23Z:re_review",
       "comment_id": "4624947959",
@@ -32031,6 +32004,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-04T07:21:39Z:clawsweeper_needs_human",
+      "comment_id": "5164752963",
+      "comment_version_key": "5164752963:2026-08-04T07:21:39Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/12#issuecomment-5164752963",
+      "comment_created_at": "2026-08-03T09:41:00Z",
+      "comment_updated_at": "2026-08-04T07:21:39Z",
+      "comment_body_sha256": "09035367910963f364bd5d1bdf33c4026470e1f57aed671e2204713e084e6b93",
+      "repo": "openclaw/babelfish",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This semver-minor SDK update changes the production MCP transport and validation implementation; CI passed, but no redacted after-update runtime MCP transcript has been supplied. (sha=5bd5af6f8503e6a4de23105fef3886f0217929d0)",
+      "expected_head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:22:31.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-minor-and-patch-0f47153fa6",
+        "head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
