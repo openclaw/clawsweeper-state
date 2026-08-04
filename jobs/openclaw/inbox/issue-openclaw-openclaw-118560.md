@@ -67,14 +67,14 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Control UI transcript-search navigation so selecting a result whose sessionId/messageId identify a reset archive causes the initial WebChat history load to use that anchor. Trace the typed hit through navigation, route data, pane setup, and chat history; consume the anchor once, preserving normal navigation, refresh, and pagination. Do not change reset lifecycle, Gateway protocol, persisted state, or add configuration. Extend focused unit coverage and add a Control UI E2E where active history differs from the reset archive; assert both the outgoing anchor pair and archived transcript rendering. Stop for maintainer direction if the route representation would require a protocol or product-contract change. Put user-visible release-note context in the PR body, not CHANGELOG.md.
+Repair the Control UI transcript-search navigation so a selected hit preserves its existing {sessionKey, sessionId, messageId} through a typed one-shot route or handoff and the first chat.history request. The observable result is that selecting a reset-era match renders the archived transcript around that message instead of the replacement live transcript. Keep normal session navigation, subsequent refreshes, and pagination unchanged; do not add Gateway/protocol/config surface or edit CHANGELOG.md. Extend focused unit coverage and the existing browser scenario; include release-note context in the PR body.
 
 Likely files:
 
 - ui/src/pages/sessions/view.ts
 - ui/src/pages/sessions/sessions-page.ts
-- ui/src/lib/sessions/route-navigation.ts
 - ui/src/pages/chat/route-loader.ts
+- ui/src/pages/chat/chat-page.ts
 - ui/src/pages/chat/chat-pane-session.ts
 - ui/src/pages/chat/chat-history.ts
 - ui/src/pages/sessions/view.test.ts
@@ -82,9 +82,9 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/sessions/view.test.ts ui/src/pages/sessions/sessions-page.test.ts
-- node scripts/run-vitest.mjs ui/src/e2e/session-transcript-search.e2e.test.ts
-- node scripts/run-vitest.mjs src/gateway/server.chat.gateway-server-chat-b.test.ts
+- node scripts/run-vitest.mjs ui/src/pages/sessions/view.test.ts ui/src/pages/chat/chat-history.test.ts
+- pnpm test ui/src/e2e/session-transcript-search.e2e.test.ts
+- node scripts/run-vitest.mjs src/gateway/server.chat.gateway-server-chat-b.test.ts -t "reopens a search anchor from a prior session id"
 
 ## Operator Prompt
 

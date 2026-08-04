@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing per-agent auth-order persistence bug: when setAuthProfileOrder writes a nonempty explicit order, preserve its deduped IDs through the local SQLite save so inherited main-agent OAuth profile IDs remain valid order references. Add a regression in src/agents/auth-profiles/profiles.test.ts using main-only inherited profiles and an empty secondary store; assert the secondary order survives reload while the secondary credentials remain empty. Do not add configuration, copy credentials, change provider routing, or address the separate runtime-refresh behavior in https://github.com/openclaw/openclaw/issues/114989. Do not edit release-owned CHANGELOG.md; include user-visible release context in the PR body.
+Repair the inherited-profile persistence bug described by https://github.com/openclaw/openclaw/issues/119233. Keep credential ownership unchanged: update the per-agent auth-order writer to preserve its validated requested IDs through the local save, then add a regression where a secondary agent inherits OpenAI profiles only from main, sets an inherited profile as its order, reloads, and retains that override. Do not add config, fallback behavior, credential copies, or CHANGELOG.md edits; include concise release-note context in the PR body.
 
 Likely files:
 
@@ -77,6 +77,7 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/agents/auth-profiles/profiles.test.ts
+- node scripts/check-changed.mjs -- src/agents/auth-profiles/profiles.ts src/agents/auth-profiles/profiles.test.ts
 
 ## Operator Prompt
 
