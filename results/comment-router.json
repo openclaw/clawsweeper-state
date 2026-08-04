@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T10:08:58.249Z",
+  "updated_at": "2026-08-04T10:09:17.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:87247:4572794048:2026-05-29T08:51:25Z:re_review",
-      "comment_id": "4572794048",
-      "comment_version_key": "4572794048:2026-05-29T08:51:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/87247#issuecomment-4572794048",
-      "comment_created_at": "2026-05-29T08:51:25Z",
-      "comment_updated_at": "2026-05-29T08:51:25Z",
-      "comment_body_sha256": "ccdc8c3b5cec9c57765e4961c6461f7c2a5784e79fe95a57c2954ccb76fe04a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 87247,
-      "author": "airbing11",
-      "author_id": 134471324,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:09:59.373Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:87247:4637356695:2026-06-06T04:21:27Z:re_review",
       "comment_id": "4637356695",
@@ -33956,6 +33929,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118589:5164182683:2026-08-04T10:08:33Z:clawsweeper_needs_human",
+      "comment_id": "5164182683",
+      "comment_version_key": "5164182683:2026-08-04T10:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118589#issuecomment-5164182683",
+      "comment_created_at": "2026-08-03T08:43:50Z",
+      "comment_updated_at": "2026-08-04T10:08:33Z",
+      "comment_body_sha256": "7f52a09c62f2b912fd064a66064775e53e2457eb8198683a78b4099056538fbf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows focused Vitest output against a mocked app-server request and explicitly lacks a real Codex app-server rejection. After addin...; Review finding: [low] Verify Codex app-server error contract (sha=075ef30797b6e902a9280d2b871f1d9093f39f6f)",
+      "expected_head_sha": "075ef30797b6e902a9280d2b871f1d9093f39f6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T10:09:17.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-118482",
+        "head_sha": "075ef30797b6e902a9280d2b871f1d9093f39f6f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
