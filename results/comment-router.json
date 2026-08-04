@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:37:55.166Z",
+  "updated_at": "2026-08-04T05:39:00.335Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-03T23:17:21Z:clawsweeper_needs_human",
-      "comment_id": "5159399788",
-      "comment_version_key": "5159399788:2026-08-03T23:17:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
-      "comment_created_at": "2026-08-02T16:58:31Z",
-      "comment_updated_at": "2026-08-03T23:17:21Z",
-      "comment_body_sha256": "da69b394c84e8abc9b6b84457b58c20413026e084760e73a54ccbb6381f496fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Route activity lookups through the private endpoint (P1)** - Late discovery: installing this descriptor changes the expected transport boundary, but Activity instance lookup still posts Bot authorization to hard...; Review finding: [P1] Route activity lookups through the private endpoint — extensions/discord/src/provider-endpoint.ts:181-184 - [P1] Allow the private provider's attachment uploa... (sha=1bffd09b318e5ff3dc56e174f0a61b66981aad46)",
-      "expected_head_sha": "1bffd09b318e5ff3dc56e174f0a61b66981aad46",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:18:27.174Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-provider-endpoint-runtime",
-        "head_sha": "1bffd09b318e5ff3dc56e174f0a61b66981aad46",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118992:5172760331:2026-08-03T23:19:08Z:clawsweeper_needs_human",
       "comment_id": "5172760331",
@@ -32642,6 +32609,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116019:5175061058:2026-08-04T05:38:26Z:re_review",
+      "comment_id": "5175061058",
+      "comment_version_key": "5175061058:2026-08-04T05:38:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116019#issuecomment-5175061058",
+      "comment_created_at": "2026-08-04T05:38:26Z",
+      "comment_updated_at": "2026-08-04T05:38:26Z",
+      "comment_body_sha256": "070ef1da86454e3e89da94957f587660b2f055c519ec85d52166b31c21e08330",
+      "source_delivery_id": "b7b16970-8fc6-11f1-8be4-5631b39246b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116019,
+      "author": "he-yufeng",
+      "author_id": 40085740,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T05:38:56.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guarded-fetch-unread-body-sweep",
+        "head_sha": "6154b14a300bd56f66cbffe357a2c88c01def3e5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
