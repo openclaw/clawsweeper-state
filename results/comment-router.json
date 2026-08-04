@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T20:27:42.684Z",
+  "updated_at": "2026-08-04T20:28:17.960Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:84860:4522413933:2026-05-22T20:12:10Z:re_review",
-      "comment_id": "4522413933",
-      "comment_version_key": "4522413933:2026-05-22T20:12:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/84860#issuecomment-4522413933",
-      "comment_created_at": "2026-05-22T20:11:47Z",
-      "comment_updated_at": "2026-05-22T20:12:10Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 84860,
-      "author": "trackoor",
-      "author_id": 55851864,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T16:33:33.663Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:84860:4571547882:2026-05-29T06:31:18Z:re_review",
       "comment_id": "4571547882",
@@ -31944,6 +31917,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119277:5181767588:2026-08-04T20:27:33Z:clawsweeper_needs_human",
+      "comment_id": "5181767588",
+      "comment_version_key": "5181767588:2026-08-04T20:27:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119277#issuecomment-5181767588",
+      "comment_created_at": "2026-08-04T16:20:57Z",
+      "comment_updated_at": "2026-08-04T20:27:33Z",
+      "comment_body_sha256": "a9b95f86b2e21c8da048f6d98c48b688b4a326c3e6c5cbc0cd9af0c44a3c5199",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119277,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body asserts local success but has no inspectable redacted after-fix terminal output, runtime log, recording, or artifact for the embedded... (sha=7b9a11af2e47ae16f7d446afd9c1048a15d39fb8)",
+      "expected_head_sha": "7b9a11af2e47ae16f7d446afd9c1048a15d39fb8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T20:28:17.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-context-cap-71136",
+        "head_sha": "7b9a11af2e47ae16f7d446afd9c1048a15d39fb8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
