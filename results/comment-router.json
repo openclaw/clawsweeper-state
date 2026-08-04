@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T01:31:08.874Z",
+  "updated_at": "2026-08-04T01:38:55.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118867:5170576497:2026-08-03T20:18:56Z:clawsweeper_needs_human",
-      "comment_id": "5170576497",
-      "comment_version_key": "5170576497:2026-08-03T20:18:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118867#issuecomment-5170576497",
-      "comment_created_at": "2026-08-03T19:04:21Z",
-      "comment_updated_at": "2026-08-03T20:18:56Z",
-      "comment_body_sha256": "55ef557c404f3d49524fafd73249ec77ac0f70c8f22d7b05029434cf2ac50ab1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118867,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub snapshot still shows security-fast failed and multiple build, extension-boundary, compact-test, and QA checks in progress; merge only after the final GitHub merge... (sha=8b4ab6400bc9d581cc955407313a4c051c16311a)",
-      "expected_head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:19:43.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-prometheus",
-        "head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118866:5170571610:2026-08-03T20:18:41Z:clawsweeper_auto_repair",
       "comment_id": "5170571610",
@@ -33166,6 +33133,54 @@
         "kind": "pull_request",
         "branch": "test/qa-canvas-agent-node",
         "head_sha": "ee0b2da044a57009ee31f995048b357d78100a05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118681:5173597585:2026-08-04T01:38:23Z:re_review",
+      "comment_id": "5173597585",
+      "comment_version_key": "5173597585:2026-08-04T01:38:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5173597585",
+      "comment_created_at": "2026-08-04T01:38:23Z",
+      "comment_updated_at": "2026-08-04T01:38:23Z",
+      "comment_body_sha256": "c54d04bd3fa9261142a06d66df98265563732076be9bac00789c73215c516a07",
+      "source_delivery_id": "2ea13a50-8fa5-11f1-9c90-fcf16c7e8bb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118681,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T01:38:53.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reactive-memory-flush-114081",
+        "head_sha": "d67e6c3efa3da75206166589fe912b00d4ff1342",
         "cluster_id": null,
         "job_path": null
       },
