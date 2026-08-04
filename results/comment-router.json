@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T10:11:17.104Z",
+  "updated_at": "2026-08-04T10:12:04.743Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2457:5100739304:2026-07-28T06:29:13Z:re_review",
-      "comment_id": "5100739304",
-      "comment_version_key": "5100739304:2026-07-28T06:29:13Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5100739304",
-      "comment_created_at": "2026-07-28T06:29:13Z",
-      "comment_updated_at": "2026-07-28T06:29:13Z",
-      "comment_body_sha256": "48e17bdc54b50f9b35d3796309e2be9aa36468e781e85c4fef1945731ef0453b",
-      "repo": "steipete/codexbar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:16:29.161Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2457:5100855311:2026-07-28T06:43:53Z:re_review",
       "comment_id": "5100855311",
@@ -34529,6 +34502,53 @@
         "cluster_id": "automerge-openclaw-openclaw-92230",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118656:5166210397:2026-08-04T10:10:56Z:clawsweeper_needs_human",
+      "comment_id": "5166210397",
+      "comment_version_key": "5166210397:2026-08-04T10:10:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118656#issuecomment-5166210397",
+      "comment_created_at": "2026-08-03T12:18:33Z",
+      "comment_updated_at": "2026-08-04T10:10:56Z",
+      "comment_body_sha256": "270353ad61fa86696a240404192932791ad5afd41bb59f30291df2b38dba80f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118656,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automated closure lacks the required exact landing provenance because local history is shallow and GitHub was unreachable during this review. (sha=9e65506c8e31805162bbfd0c35dfc3683300f108)",
+      "expected_head_sha": "9e65506c8e31805162bbfd0c35dfc3683300f108",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T10:12:04.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118649",
+        "head_sha": "9e65506c8e31805162bbfd0c35dfc3683300f108",
+        "cluster_id": "issue-openclaw-openclaw-118649",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118649.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
