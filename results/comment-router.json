@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T19:13:46.083Z",
+  "updated_at": "2026-08-04T19:15:00.316Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119219:5179576410:2026-08-04T14:33:12Z:clawsweeper_needs_human",
-      "comment_id": "5179576410",
-      "comment_version_key": "5179576410:2026-08-04T14:33:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119219#issuecomment-5179576410",
-      "comment_created_at": "2026-08-04T13:14:06Z",
-      "comment_updated_at": "2026-08-04T14:33:12Z",
-      "comment_body_sha256": "22c0a7d0070667263e552c2df71a00db5c6531104f3636d1f2b94b0a7a548abc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Narrow the PR’s privacy claim (P2)** - The changed scenario explicitly excludes diagnostic trajectory bundles because they retain compiled prompts, yet the PR body claims the marker is absent from persisted even...; Review finding: [P2] Narrow the PR’s privacy claim — qa/scenarios/agents/instruction-profile-artifact-followthrough-live.yaml:14-16 - [low] Diagnostic trajectory retains compiled... (sha=a17e66d0021b6c762b1ba2900a681c8b800eeb1d)",
-      "expected_head_sha": "a17e66d0021b6c762b1ba2900a681c8b800eeb1d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T15:02:58.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-b3-context-no-meta-leak-20260804",
-        "head_sha": "a17e66d0021b6c762b1ba2900a681c8b800eeb1d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119248:5180182632:2026-08-04T14:05:14Z:clawsweeper_needs_human",
       "comment_id": "5180182632",
@@ -31784,6 +31751,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:81208:5183515370:2026-08-04T19:14:22Z:re_review",
+      "comment_id": "5183515370",
+      "comment_version_key": "5183515370:2026-08-04T19:14:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81208#issuecomment-5183515370",
+      "comment_created_at": "2026-08-04T19:14:22Z",
+      "comment_updated_at": "2026-08-04T19:14:22Z",
+      "comment_body_sha256": "545040955fdc96c2a9ffa9d7379b81fdeb623e58c77e06fbacfacdee3549e8ba",
+      "source_delivery_id": "b3a4db10-9038-11f1-9b21-6a285cf5d39b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81208,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T19:14:58.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-67288-mantle-discovery-gate",
+        "head_sha": "2e8091627ea2474a6852a5a59b4bcca40c142f61",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
