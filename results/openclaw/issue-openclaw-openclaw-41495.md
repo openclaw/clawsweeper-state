@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-41495"
 mode: "autonomous"
-run_id: "30933304475"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30933304475"
+run_id: "30933728183"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30933728183"
 head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
 workflow_conclusion: "success"
 result_status: "needs_human"
-published_at: "2026-08-04T17:25:56.557Z"
+published_at: "2026-08-04T17:31:45.831Z"
 canonical: "https://github.com/openclaw/openclaw/issues/41495"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/41495"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30933304475](https://github.com/openclaw/clawsweeper/actions/runs/30933304475)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30933728183](https://github.com/openclaw/clawsweeper/actions/runs/30933728183)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/41495
 
 ## Summary
 
-The stale inline-button prompt is reproducible, but no safe narrow repair satisfies the requested typed, portable interaction contract. Existing typed callbacks are deliberately opaque; the only generic model-turn fallback is deprecated raw callback data.
+The stale prompt is reproducible, but a safe typed portable button repair needs a product/API decision: explicit callback actions are opaque and unclaimed clicks silently end, while the only generic agent-return path is deprecated raw value fallback.
 
 ## Impact
 
@@ -66,9 +66,9 @@ The stale inline-button prompt is reproducible, but no safe narrow repair satisf
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41495 | keep_canonical | planned | canonical | Keep the canonical issue open pending a maintainer decision on the generic model-authored button outcome. |
-| cluster:issue-openclaw-openclaw-41495 | needs_human | planned | needs_human | Maintainer direction is needed on a first-class portable model-response/select action and its cross-channel routing semantics. A prompt-only change to opaque callbacks risks silent clicks; directing models to deprecated raw values violates the requested typed/no-inference boundary. |
+| #41495 | keep_canonical | planned | canonical | Keep the live canonical issue open while maintainers choose the supported generic interaction contract. |
+| cluster:issue-openclaw-openclaw-41495 | needs_human | planned | needs_human | Do not create a prompt-only PR that promotes deprecated raw callback inference or causes opaque callback clicks to silently do nothing. |
 
 ## Needs Human
 
-- Should OpenClaw add a portable, model-authorable response action with defined agent-visible routing across channels? This product/API decision is required before a safe fix PR can replace the stale shared guidance.
+- Choose one supported contract for model-authored generic choices: add a first-class typed response/select action with cross-channel agent routing, or explicitly retain and document value as a supported model-facing callback contract. Either choice exceeds the stated prompt-only bug-fix boundary.
