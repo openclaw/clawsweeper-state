@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:20:22.589Z",
+  "updated_at": "2026-08-04T06:20:25.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110569:5173200699:2026-08-04T00:30:50Z:re_review",
-      "comment_id": "5173200699",
-      "comment_version_key": "5173200699:2026-08-04T00:30:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5173200699",
-      "comment_created_at": "2026-08-04T00:30:50Z",
-      "comment_updated_at": "2026-08-04T00:30:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "bf64c070-8f9b-11f1-9d1c-44f04227f14f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110569,
-      "author": "RileyJJY",
-      "author_id": 255106757,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:31:29.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/docs-i18n-glossary-git-timeouts",
-        "head_sha": "88cace711b4d4a52f2436a2dc3a58c4b435a6237",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118854:5173215947:2026-08-04T00:33:23Z:re_review",
       "comment_id": "5173215947",
@@ -32564,6 +32516,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119101:5174833412:2026-08-04T06:19:51Z:clawsweeper_auto_repair",
+      "comment_id": "5174833412",
+      "comment_version_key": "5174833412:2026-08-04T06:19:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119101#issuecomment-5174833412",
+      "comment_created_at": "2026-08-04T05:05:06Z",
+      "comment_updated_at": "2026-08-04T06:19:51Z",
+      "comment_body_sha256": "376430353ed1604d0817fa9b3bbf7fd41e0a5ecbfbf4db796085b4654bbb2579",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119101,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=99cc467b277741bfbb0bf470dfb3123393da72d0)",
+      "expected_head_sha": "99cc467b277741bfbb0bf470dfb3123393da72d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:20:25.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-narrative-blank-tz",
+        "head_sha": "99cc467b277741bfbb0bf470dfb3123393da72d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
