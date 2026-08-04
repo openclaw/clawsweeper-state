@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:05:14.150Z",
+  "updated_at": "2026-08-04T08:05:32.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119071:5174050868:2026-08-04T02:52:30Z:re_review",
-      "comment_id": "5174050868",
-      "comment_version_key": "5174050868:2026-08-04T02:52:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119071#issuecomment-5174050868",
-      "comment_created_at": "2026-08-04T02:52:30Z",
-      "comment_updated_at": "2026-08-04T02:52:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119071,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T04:07:14.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/118503-managed-env-dotenv-sync",
-        "head_sha": "c6dd80968c95a535a8071f796f4cc348129f2bd9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119071:5174483332:2026-08-04T04:06:41Z:clawsweeper_auto_repair",
       "comment_id": "5174483332",
@@ -32601,6 +32554,39 @@
         "kind": "pull_request",
         "branch": "ui/dashboard-session-timestamps",
         "head_sha": "862716e2b8909ccdb5e1635da05e07d5a6b1cedc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91271:4644476495:2026-08-04T08:04:50Z:clawsweeper_needs_human",
+      "comment_id": "4644476495",
+      "comment_version_key": "4644476495:2026-08-04T08:04:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91271#issuecomment-4644476495",
+      "comment_created_at": "2026-06-07T23:53:14Z",
+      "comment_updated_at": "2026-08-04T08:04:50Z",
+      "comment_body_sha256": "5812601e35c8cfcb42a94bb2e0ec4070cd0bd7034fa07f05f069398cfb30747d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused helper assertions are useful supplemental coverage, but the PR body explicitly lacks a redacted after-fix multi-agent runtime exchange....; Review finding: [P0] Bound requester names before system-prompt interpolation — src/agents/tools/sessions-send-helpers.ts:87-91 - [high] Unbounded configured text reaches system p... (sha=8668734822ec0415fc85d98b827d883de2bbc59a)",
+      "expected_head_sha": "8668734822ec0415fc85d98b827d883de2bbc59a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T08:05:32.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/38570-a2a-requester-identity",
+        "head_sha": "8668734822ec0415fc85d98b827d883de2bbc59a",
         "cluster_id": null,
         "job_path": null
       }
