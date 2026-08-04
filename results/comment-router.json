@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T16:14:13.324Z",
+  "updated_at": "2026-08-04T16:14:14.301Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119218:5179439422:2026-08-04T13:01:50Z:re_review",
-      "comment_id": "5179439422",
-      "comment_version_key": "5179439422:2026-08-04T13:01:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119218#issuecomment-5179439422",
-      "comment_created_at": "2026-08-04T13:01:50Z",
-      "comment_updated_at": "2026-08-04T13:01:50Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "a88bd000-9004-11f1-8d1e-5a59f7f49f3b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119218,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T13:02:27.876Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "beta8-gateway-hang",
-        "head_sha": "9ec1771f3e7eeff12543a40f557be02667babdec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118069:5159413626:2026-08-04T13:01:14Z:clawsweeper_needs_human",
       "comment_id": "5159413626",
@@ -31794,6 +31746,39 @@
         "kind": "pull_request",
         "branch": "fix/opencode-catalog-static-sync",
         "head_sha": "fc1c218e83bae1d5f7d731e682134efeb0261b96",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:225:5158960498:2026-08-04T16:05:50Z:clawsweeper_needs_human",
+      "comment_id": "5158960498",
+      "comment_version_key": "5158960498:2026-08-04T16:05:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw.ai/pull/225#issuecomment-5158960498",
+      "comment_created_at": "2026-08-02T15:43:45Z",
+      "comment_updated_at": "2026-08-04T16:05:50Z",
+      "comment_body_sha256": "61f4273941350a5614fb4b905e02eb8d34330e8ebd1b5382b523098ca1c36929",
+      "repo": "openclaw/openclaw.ai",
+      "issue_number": 225,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Pin the imported security guidance to an upstream revision** - The lockfile updates only a content hash for new iframe, CSP, and sandbox guidance. Add a source commit or release referen...; Review finding: [medium] Pin the imported security guidance to an upstream revision — skills-lock.json:14 (sha=42b638de124f3ee51110fee30a81127aa660c1b5)",
+      "expected_head_sha": "42b638de124f3ee51110fee30a81127aa660c1b5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:14:14.301Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/update-skills",
+        "head_sha": "42b638de124f3ee51110fee30a81127aa660c1b5",
         "cluster_id": null,
         "job_path": null
       }
