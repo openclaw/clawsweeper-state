@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T22:19:47.989Z",
+  "updated_at": "2026-08-04T22:19:52.657Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117527:5152506843:2026-08-04T19:02:06Z:clawsweeper_auto_repair",
-      "comment_id": "5152506843",
-      "comment_version_key": "5152506843:2026-08-04T19:02:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117527#issuecomment-5152506843",
-      "comment_created_at": "2026-08-01T17:16:44Z",
-      "comment_updated_at": "2026-08-04T19:02:06Z",
-      "comment_body_sha256": "58102bf254a80cc7221178a368991fa2b55ca1c1091f99ca8b0a5baf61547a4c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117527,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=da6eadd6c2d510a1cb7318fd0ca799e124c3427a)",
-      "expected_head_sha": "da6eadd6c2d510a1cb7318fd0ca799e124c3427a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T19:03:59.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa404-compatible-speech-canonical-voice",
-        "head_sha": "da6eadd6c2d510a1cb7318fd0ca799e124c3427a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117961:5157293067:2026-08-04T19:02:10Z:clawsweeper_needs_human",
       "comment_id": "5157293067",
@@ -31922,6 +31889,54 @@
       "status": "skipped",
       "processed_at": "2026-08-04T22:19:47.989Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119023:5185255560:2026-08-04T22:19:23Z:re_review",
+      "comment_id": "5185255560",
+      "comment_version_key": "5185255560:2026-08-04T22:19:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119023#issuecomment-5185255560",
+      "comment_created_at": "2026-08-04T22:19:23Z",
+      "comment_updated_at": "2026-08-04T22:19:23Z",
+      "comment_body_sha256": "0e7215b3953ab8fbca82294707ef5ae8ae2b2015a0ff566f503d09280060a0b7",
+      "source_delivery_id": "8c9689f0-9052-11f1-8f12-9003af50fd1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119023,
+      "author": "scoootscooob",
+      "author_id": 167050519,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T22:19:51.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/slack-inherit-channel-context",
+        "head_sha": "ff950742ece410c9d91d8ac3894f261cdc4cd8a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
