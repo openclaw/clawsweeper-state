@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:13:25.958Z",
+  "updated_at": "2026-08-04T14:13:29.036Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119121:5177543134:2026-08-04T10:08:08Z:re_review",
-      "comment_id": "5177543134",
-      "comment_version_key": "5177543134:2026-08-04T10:08:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5177543134",
-      "comment_created_at": "2026-08-04T10:08:08Z",
-      "comment_updated_at": "2026-08-04T10:08:08Z",
-      "comment_body_sha256": "c0363250f2329dea6710be4ce309cd103b0baba60c492011869dd9b78520224d",
-      "source_delivery_id": "651cb4f0-8fec-11f1-90d2-772e80678ef6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119121,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T10:08:53.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-profiled-partial-gate",
-        "head_sha": "75c7827e63334aaf51817e409142bb1f8abdbeb4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116794:5177550257:2026-08-04T10:08:46Z:re_review",
       "comment_id": "5177550257",
@@ -32774,6 +32726,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-04T14:09:23Z:clawsweeper_needs_human",
+      "comment_id": "5093836900",
+      "comment_version_key": "5093836900:2026-08-04T14:09:23Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
+      "comment_created_at": "2026-07-27T16:16:21Z",
+      "comment_updated_at": "2026-08-04T14:09:23Z",
+      "comment_body_sha256": "0b7328c91259c809152a5ee90ac663b685b60fb27a883005b02f4c821984e8fe",
+      "repo": "openclaw/crabline",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - matrix-js-sdk 42.0.0 is a semver-major update with upstream OAuth API changes; merging without a passing real SDK sync/send run could weaken Crabline’s provider-fidelity coverage. (sha=871844c43e665f190a78259c33f2b24f6a326479)",
+      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T14:13:29.036Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
+        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
