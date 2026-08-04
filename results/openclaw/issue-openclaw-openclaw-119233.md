@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119233"
 mode: "autonomous"
-run_id: "30913298611"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30913298611"
+run_id: "30917022141"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30917022141"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-04T13:52:07.101Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-04T14:10:21.205Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119233"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119233"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30913298611](https://github.com/openclaw/clawsweeper/actions/runs/30913298611)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30917022141](https://github.com/openclaw/clawsweeper/actions/runs/30917022141)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/119233
 
 ## Summary
 
-Current main b5876a10862ced9a2ffed191d7324d57839ef2fb still has the inherited-order persistence bug. The narrow owner-boundary repair and regression are defined, but this read-only checkout cannot modify the branch; focused validation is also blocked by missing local dependency p-map.
+#119233 is a source-proven SQLite persistence bug on current main. A narrow fix should preserve explicit inherited order IDs at the existing writer boundary without persisting their OAuth credentials; #114989 remains a separate runtime-refresh follow-up.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main b5876a10862ced9a2ffed191d7324d57839ef2fb still has the inherited-or
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119233 | fix_needed | blocked | canonical | Implementation is source-proven and narrow, but this worker cannot write the required branch or install missing test dependencies in the read-only checkout. |
-| cluster:issue-openclaw-openclaw-119233 | build_fix_artifact | planned | canonical | Executor should implement this narrow canonical repair on clawsweeper/issue-openclaw-openclaw-119233. |
-| #114989 | keep_related | planned | related | Different root cause and intentionally out of scope for this persistence-only repair. |
+| #119233 | fix_needed | planned | canonical | The issue remains valid on current main and has a small, established persistence-owner repair path. |
+| #114989 | keep_related | planned | related | Same auth-order area, but a distinct lifecycle/runtime-refresh root cause; leave it open for its own repair path. |
+| cluster:issue-openclaw-openclaw-119233 | build_fix_artifact | planned |  | Create one narrow credited fix PR for the canonical issue. |
 
 ## Needs Human
 
