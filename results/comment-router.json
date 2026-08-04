@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:06:58.903Z",
+  "updated_at": "2026-08-04T11:07:31.613Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2583:5175016801:2026-08-04T05:31:16Z:re_review",
-      "comment_id": "5175016801",
-      "comment_version_key": "5175016801:2026-08-04T05:31:16Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2583#issuecomment-5175016801",
-      "comment_created_at": "2026-08-04T05:31:16Z",
-      "comment_updated_at": "2026-08-04T05:31:16Z",
-      "comment_body_sha256": "3ed7d9f05b4f895b13e54483518aa4e59fc5465f26c9a7c2d891e20d2666bf46",
-      "source_delivery_id": "b7531240-8fc5-11f1-8191-30fda651a860",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2583,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T05:31:48.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-opencodego-zen-balance-2581",
-        "head_sha": "8f4efafc20afb4f361690c03e00ff05a831393d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119103:5175019476:2026-08-04T05:31:44Z:re_review",
       "comment_id": "5175019476",
@@ -34749,6 +34701,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-buzz-relay-info-bounded-json",
         "head_sha": "50d5c1d4d408ddaec3ce0858b63149ce208e3c43",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119171:5177474009:2026-08-04T11:06:40Z:clawsweeper_needs_human",
+      "comment_id": "5177474009",
+      "comment_version_key": "5177474009:2026-08-04T11:06:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119171#issuecomment-5177474009",
+      "comment_created_at": "2026-08-04T10:01:47Z",
+      "comment_updated_at": "2026-08-04T11:06:40Z",
+      "comment_body_sha256": "724fb327fa3b2ed49e6af395fde7fe87363c5575918b44b7667c27e812d1cd58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes secret-bearing release-QA job selection; an incorrect condition could either duplicate Matrix capacity use or suppress its release verdict, so exact-head workflow proof r... (sha=65e53e92981924b799750003fe0e2d5b59f82dab)",
+      "expected_head_sha": "65e53e92981924b799750003fe0e2d5b59f82dab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:07:31.613Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta8-release-qa-gates",
+        "head_sha": "65e53e92981924b799750003fe0e2d5b59f82dab",
         "cluster_id": null,
         "job_path": null
       }
