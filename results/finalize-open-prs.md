@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-04T20:22:13.113Z
+Generated: 2026-08-04T22:38:46.329Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 14 |
+| open_prs | 11 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 14 |
+| needs_checks | 11 |
 | needs_review | 0 |
-| needs_merge_preflight | 14 |
-| needs_result_backfill | 2 |
+| needs_merge_preflight | 11 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -41,6 +41,3 @@ Status: report_only
 | [#118696](https://github.com/openclaw/openclaw/pull/118696) | fix(gateway): terminate supervised subprocesses on shutdown | issue-openclaw-openclaw-118652 | MERGEABLE | BEHIND | CANCELLED:15 SKIPPED:45 SUCCESS:89 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118688](https://github.com/openclaw/openclaw/pull/118688) | fix(agents): redrive suspended completions after compaction unlock | issue-openclaw-openclaw-118625 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:44 SUCCESS:84 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118685](https://github.com/openclaw/openclaw/pull/118685) | fix(agents): record stop reason in completion trajectory | issue-openclaw-openclaw-118673 | MERGEABLE | BEHIND | CANCELLED:4 SKIPPED:42 SUCCESS:80 FAILURE:2 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118680](https://github.com/openclaw/openclaw/pull/118680) | fix(config): accept declared model compatibility routing settings | issue-openclaw-openclaw-118667 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:47 SUCCESS:90 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | issue-openclaw-openclaw-118669 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:48 SUCCESS:76; blockers:6 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118656](https://github.com/openclaw/openclaw/pull/118656) | fix(nextcloud-talk): repump independent room lanes during delivery | issue-openclaw-openclaw-118649 | MERGEABLE | BEHIND | CANCELLED:14 SKIPPED:50 SUCCESS:56 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

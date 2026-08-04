@@ -1,0 +1,124 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-42106",
+  "mode": "autonomous",
+  "run_id": "30951829683",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30951829683",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-42106.md",
+  "published_at": "2026-08-04T22:37:13.273Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/42106",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/42106",
+  "canonical_pr": null,
+  "summary": "#42106 remains a source-reproducible canonical bug on main 8fc44585931decce2e821efac34a599b5845c08a. A narrow new fix PR is appropriate, but this worker checkout is read-only and lacks node_modules, so it cannot create or validate the branch here.",
+  "actions": [
+    {
+      "target": "#42106",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Repair the chunker, subscriber payload cleanup, and same-flush coalescer join as one owner-boundary fix; do not add a public contract or config."
+    },
+    {
+      "target": "#42824",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#73981",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#94216",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; preserve @eldar702 attribution in the replacement PR."
+    },
+    {
+      "target": "#94247",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; preserve @ml12580 attribution in the replacement PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-42106",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#42106",
+      "candidate_fix": null,
+      "reason": "Hand the narrow repair contract to the deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex review-fix worker timed out after 933148ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#42106",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
