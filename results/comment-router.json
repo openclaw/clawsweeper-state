@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T13:21:49.692Z",
+  "updated_at": "2026-08-04T13:21:50.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110562:5011207138:2026-07-18T12:14:01Z:re_review",
-      "comment_id": "5011207138",
-      "comment_version_key": "5011207138:2026-07-18T12:14:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5011207138",
-      "comment_created_at": "2026-07-18T12:14:01Z",
-      "comment_updated_at": "2026-07-18T12:14:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110562,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T08:20:21.344Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110562:5011537485:2026-07-18T14:02:15Z:re_review",
       "comment_id": "5011537485",
@@ -33715,6 +33688,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119191:5178167183:2026-08-04T13:16:29Z:clawsweeper_needs_human",
+      "comment_id": "5178167183",
+      "comment_version_key": "5178167183:2026-08-04T13:16:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119191#issuecomment-5178167183",
+      "comment_created_at": "2026-08-04T11:09:13Z",
+      "comment_updated_at": "2026-08-04T13:16:29Z",
+      "comment_body_sha256": "d47e2641e7aee398913c0b8ebc59feb20302b3c326b5a7c38e970cdba96e7b1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the PR as mergeable but behind current main, and exact-head CI is still in progress; land only after those gates complete. (sha=222d09dbaee6b00199610e1ee4fd04bb9aeefd00)",
+      "expected_head_sha": "222d09dbaee6b00199610e1ee4fd04bb9aeefd00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T13:21:50.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-t02-tui-gateway-boundary-20260804",
+        "head_sha": "222d09dbaee6b00199610e1ee4fd04bb9aeefd00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
