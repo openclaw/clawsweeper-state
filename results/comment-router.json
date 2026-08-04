@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T09:28:35.930Z",
+  "updated_at": "2026-08-04T09:30:23.074Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4890889331:2026-07-06T08:54:30Z:re_review",
-      "comment_id": "4890889331",
-      "comment_version_key": "4890889331:2026-07-06T08:54:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4890889331",
-      "comment_created_at": "2026-07-06T08:54:30Z",
-      "comment_updated_at": "2026-07-06T08:54:30Z",
-      "comment_body_sha256": "2f43df5f028d2f225810b6ac0b86837c330a764fd0aa668ab38a19459942ae15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:07:11.758Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4899243463:2026-07-07T01:31:28Z:re_review",
       "comment_id": "4899243463",
@@ -33549,6 +33522,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118589:5164182683:2026-08-04T09:29:48Z:clawsweeper_needs_human",
+      "comment_id": "5164182683",
+      "comment_version_key": "5164182683:2026-08-04T09:29:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118589#issuecomment-5164182683",
+      "comment_created_at": "2026-08-03T08:43:50Z",
+      "comment_updated_at": "2026-08-04T09:29:48Z",
+      "comment_body_sha256": "236f50de6470a02c5146028e36a634adf4e0290dd9cf02108ea0687fbf1f2d7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR shows passing mocked Vitest output and explicitly lacks a live Codex app-server rejection; add a redacted terminal or runtime transcript...; Review finding: [P0] Bound the disclosed endpoint failure detail — extensions/codex/src/supervision-tools.ts:1075 - [high] Unbounded endpoint error reaches agent context — extensi... (sha=8cfa4ce5ca83aa019cd97372d4ed8e81a33532c0)",
+      "expected_head_sha": "8cfa4ce5ca83aa019cd97372d4ed8e81a33532c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T09:30:23.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-118482",
+        "head_sha": "8cfa4ce5ca83aa019cd97372d4ed8e81a33532c0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
