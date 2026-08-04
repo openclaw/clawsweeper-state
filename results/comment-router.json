@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:21:57.304Z",
+  "updated_at": "2026-08-04T11:21:58.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Kova:89:5175650538:2026-08-04T06:58:58Z:re_review",
-      "comment_id": "5175650538",
-      "comment_version_key": "5175650538:2026-08-04T06:58:58Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/89#issuecomment-5175650538",
-      "comment_created_at": "2026-08-04T06:58:58Z",
-      "comment_updated_at": "2026-08-04T06:58:58Z",
-      "comment_body_sha256": "eb1a667a072bf9247d656ab9f8402de6d6c75d70ebfbf706a262ab48533b829d",
-      "source_delivery_id": "f7eeb870-8fd1-11f1-8956-cc1ea48ddc95",
-      "repo": "openclaw/Kova",
-      "issue_number": 89,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T06:59:29.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/deep-profile-resource-gating",
-        "head_sha": "0f9e678e239b45db46d2bd930b7983203580df78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119051:5175650535:2026-08-04T06:58:58Z:re_review",
       "comment_id": "5175650535",
@@ -33902,6 +33854,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T11:21:57.304Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1085:5174202695:2026-08-04T11:10:17Z:clawsweeper_needs_human",
+      "comment_id": "5174202695",
+      "comment_version_key": "5174202695:2026-08-04T11:10:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1085#issuecomment-5174202695",
+      "comment_created_at": "2026-08-04T03:17:21Z",
+      "comment_updated_at": "2026-08-04T11:10:17Z",
+      "comment_body_sha256": "9d87e140eba90b47c8cad4fa60364a573ab34c3147ed02d403a3afed3782f005",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This 18-file lifecycle transfer can regress existing tray, Hub, setup, or shutdown behavior if its stacked parent changes alter the combined runtime path. (sha=7d5f24587a67c7af704d0b90c18c3f7e8dc148c2)",
+      "expected_head_sha": "7d5f24587a67c7af704d0b90c18c3f7e8dc148c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:21:58.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-app-surface-owners",
+        "head_sha": "7d5f24587a67c7af704d0b90c18c3f7e8dc148c2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
