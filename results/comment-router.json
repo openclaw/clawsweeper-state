@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:37:47.669Z",
+  "updated_at": "2026-08-04T11:40:39.422Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98766:4860231863:2026-08-04T06:13:33Z:clawsweeper_needs_human",
-      "comment_id": "4860231863",
-      "comment_version_key": "4860231863:2026-08-04T06:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98766#issuecomment-4860231863",
-      "comment_created_at": "2026-07-01T21:36:18Z",
-      "comment_updated_at": "2026-08-04T06:13:33Z",
-      "comment_body_sha256": "0df3f2fd28dcee75df824c8f6bb978d4396653bcebb8ecf6707edfa9e1dd44c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98766,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR records a real Docker lifecycle run for pre-rebase head 87ac766, but current head 165e68 includes lifecycle-related conflict re...; Review finding: [medium] Verify Codex lifecycle-owner propagation — extensions/codex/src/conversation-binding.ts:141 (sha=165e68ca00cb5d144b587654ac82f0ce4fad9c11)",
-      "expected_head_sha": "165e68ca00cb5d144b587654ac82f0ce4fad9c11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:08:53.644Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/managed-sandbox-lifecycle",
-        "head_sha": "165e68ca00cb5d144b587654ac82f0ce4fad9c11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104351:4944408600:2026-08-04T06:14:12Z:clawsweeper_auto_repair",
       "comment_id": "4944408600",
@@ -33793,6 +33760,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119121:5178487150:2026-08-04T11:40:09Z:re_review",
+      "comment_id": "5178487150",
+      "comment_version_key": "5178487150:2026-08-04T11:40:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5178487150",
+      "comment_created_at": "2026-08-04T11:40:09Z",
+      "comment_updated_at": "2026-08-04T11:40:09Z",
+      "comment_body_sha256": "52a89999e010163f244bf7d78988d8135a1706890f23e2dbb243244ea1361521",
+      "source_delivery_id": "3f62e330-8ff9-11f1-8332-5e2a3b64c6c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119121,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T11:40:37.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-profiled-partial-gate",
+        "head_sha": "6245b4e34a99ba0beecb922a381c9fad2aa716f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
