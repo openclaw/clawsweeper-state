@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:11:42.473Z",
+  "updated_at": "2026-08-04T15:11:47.589Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119121:5178188526:2026-08-04T11:11:04Z:re_review",
-      "comment_id": "5178188526",
-      "comment_version_key": "5178188526:2026-08-04T11:11:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5178188526",
-      "comment_created_at": "2026-08-04T11:11:04Z",
-      "comment_updated_at": "2026-08-04T11:11:04Z",
-      "comment_body_sha256": "eb8789d97c03942e7dd667d0351b70338556940badc6a248773cc4a31e2df606",
-      "source_delivery_id": "2fac0c40-8ff5-11f1-9a27-ad94250e76f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119121,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T11:11:33.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-profiled-partial-gate",
-        "head_sha": "00c6ef783a85813c05df0307424cae758b257ee8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1071:5135267678:2026-08-04T11:11:16Z:clawsweeper_auto_repair",
       "comment_id": "5135267678",
@@ -32180,6 +32132,39 @@
         "kind": "pull_request",
         "branch": "t06-tui-local-shell-20260804",
         "head_sha": "082d03a11de832956758829e04efe38a7bb782ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-04T15:03:33Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-04T15:03:33Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-04T15:03:33Z",
+      "comment_body_sha256": "dc6cb97e875ff58e3f27bd7429f33fbb6e72ce02af7cf23e0b3ccf1b7a3109fb",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Future Claude Code manifests will become eligible when their trajectories validate; longitudinal reports should distinguish this forward-only cohort correction from historical manifes... (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T15:11:47.589Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
         "cluster_id": null,
         "job_path": null
       }
