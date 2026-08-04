@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:02:01.352Z",
+  "updated_at": "2026-08-04T06:04:38.464Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118020:5158767905:2026-08-03T23:20:16Z:clawsweeper_auto_repair",
-      "comment_id": "5158767905",
-      "comment_version_key": "5158767905:2026-08-03T23:20:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118020#issuecomment-5158767905",
-      "comment_created_at": "2026-08-02T15:09:59Z",
-      "comment_updated_at": "2026-08-03T23:20:16Z",
-      "comment_body_sha256": "98ebc28127aba19cc7749c681d50c60c50d0126ee8d4328cabaae25e7d6903cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118020,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3c5a7a1bf888708bdda7aed22871c012a5fa28f4)",
-      "expected_head_sha": "3c5a7a1bf888708bdda7aed22871c012a5fa28f4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:20:53.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "local-model-onboarding/ollama",
-        "head_sha": "3c5a7a1bf888708bdda7aed22871c012a5fa28f4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118020:5160409321:2026-08-02T21:24:39Z:re_review",
       "comment_id": "5160409321",
@@ -32773,6 +32740,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116019:5121566898:2026-08-04T06:03:41Z:clawsweeper_needs_human",
+      "comment_id": "5121566898",
+      "comment_version_key": "5121566898:2026-08-04T06:03:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116019#issuecomment-5121566898",
+      "comment_created_at": "2026-07-29T17:52:19Z",
+      "comment_updated_at": "2026-08-04T06:03:41Z",
+      "comment_body_sha256": "ada5f7f3da4dabaff5d4b6d4b7fa4e6866f8d9629a02931c826cc41c8a332fbb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR fixes two callers but its complete-sweep claim is inaccurate: current main still has at least six terminal guarded-fetch paths that can await a never-settling cancellation befo... (sha=6154b14a300bd56f66cbffe357a2c88c01def3e5)",
+      "expected_head_sha": "6154b14a300bd56f66cbffe357a2c88c01def3e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:04:38.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guarded-fetch-unread-body-sweep",
+        "head_sha": "6154b14a300bd56f66cbffe357a2c88c01def3e5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
