@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
 mode: "autonomous"
-run_id: "30904101787"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30904101787"
+run_id: "30900045613"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30900045613"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-04T11:54:25.602Z"
+published_at: "2026-08-04T10:31:01.904Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30904101787](https://github.com/openclaw/clawsweeper/actions/runs/30904101787)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30900045613](https://github.com/openclaw/clawsweeper/actions/runs/30900045613)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 ## Summary
 
-#118560 remains a reproducible, non-security Control UI defect on main b5d41f90053b414267bb203b64f1f8dde12b2bda. The supplied checkout is clean but read-only, so no code delta or post-edit validation can be produced in this worker.
+Issue #118560 remains reproducible on pinned main 121c6c10423827ce8a65118600f3498e20b8f6e0: transcript-search activation passes only sessionKey, discarding the required sessionId/messageId anchor despite Gateway support for anchored reset-archive reads. The supplied checkout is clean but read-only, so this worker could not apply the repair or complete final validation.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 | Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #118560 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | fix_needed | blocked | canonical | Only the implementation pass is blocked by the unavailable writable checkout; the canonical classification is clear. |
-| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once a writable executor is available. |
+| #118560 | fix_needed | blocked | canonical | Concrete implementation is blocked only by the read-only checkout; no maintainer product decision is needed. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A narrow, non-security repair is ready for a writable executor. |
 
 ## Needs Human
 
