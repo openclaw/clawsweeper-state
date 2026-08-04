@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:22:03.741Z",
+  "updated_at": "2026-08-04T08:22:54.116Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119082:5174244359:2026-08-04T03:24:08Z:re_review",
-      "comment_id": "5174244359",
-      "comment_version_key": "5174244359:2026-08-04T03:24:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119082#issuecomment-5174244359",
-      "comment_created_at": "2026-08-04T03:24:08Z",
-      "comment_updated_at": "2026-08-04T03:24:08Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119082,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T04:13:30.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llamacpp-simple-completion-host-order-20260804",
-        "head_sha": "48a759f6a0468f0777b477fdfc6e894d729a4fb0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119082:5174521584:2026-08-04T04:12:53Z:clawsweeper_needs_human",
       "comment_id": "5174521584",
@@ -32836,6 +32789,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118568:5163690537:2026-08-04T08:22:08Z:clawsweeper_needs_human",
+      "comment_id": "5163690537",
+      "comment_version_key": "5163690537:2026-08-04T08:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118568#issuecomment-5163690537",
+      "comment_created_at": "2026-08-03T07:50:56Z",
+      "comment_updated_at": "2026-08-04T08:22:08Z",
+      "comment_body_sha256": "d5d6179adcf503be1ff43f4d8e3d5dc67231eec851a12e0b637ecd6d105f292e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118568,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The posted terminal output verifies prior-head schema help, but it does not show the current-head CLI runtime producing an empty works... (sha=5a40512507deece997e8b7520d2b0742b9da6b70)",
+      "expected_head_sha": "5a40512507deece997e8b7520d2b0742b9da6b70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T08:22:54.116Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-75184-config-help",
+        "head_sha": "5a40512507deece997e8b7520d2b0742b9da6b70",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
