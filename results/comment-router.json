@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:29:39.678Z",
+  "updated_at": "2026-08-04T06:30:08.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117034:5173435090:2026-08-04T01:10:05Z:re_review",
-      "comment_id": "5173435090",
-      "comment_version_key": "5173435090:2026-08-04T01:10:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5173435090",
-      "comment_created_at": "2026-08-04T01:10:05Z",
-      "comment_updated_at": "2026-08-04T01:10:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "3aefb290-8fa1-11f1-81c9-aa5de6d9adc5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117034,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T01:10:41.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-observable-foundation",
-        "head_sha": "3e505ba48903b86cfaabb358a779eb6eca9cf7ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118998:5173452523:2026-08-04T01:13:03Z:re_review",
       "comment_id": "5173452523",
@@ -32402,6 +32354,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110562:5010561092:2026-08-04T06:29:14Z:clawsweeper_needs_human",
+      "comment_id": "5010561092",
+      "comment_version_key": "5010561092:2026-08-04T06:29:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5010561092",
+      "comment_created_at": "2026-07-18T08:19:31Z",
+      "comment_updated_at": "2026-08-04T06:29:14Z",
+      "comment_body_sha256": "4da04eb8687d84afeab6f1590171490927ae9802be5fb6eff2776455fc3963ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110562,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep Windows termination bounded and trusted (P2)** - spawnSync(\"taskkill\", ...) runs inside the timeout callback with neither a trusted executable path nor a bound. Node waits for a synchronous child to close,...; Review finding: [P2] Keep Windows termination bounded and trusted — scripts/check-workflows.mjs:66-69 - [P2] Surface timed-out discovery probes — scripts/check-workflows.mjs:231-2... (sha=e11805a525a9b59ab185e8c78387cd547aa7f149)",
+      "expected_head_sha": "e11805a525a9b59ab185e8c78387cd547aa7f149",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:30:08.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/check-workflows-timeouts",
+        "head_sha": "e11805a525a9b59ab185e8c78387cd547aa7f149",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
