@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:18:56.210Z",
+  "updated_at": "2026-08-04T12:19:38.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:138:5012369506:2026-08-04T07:19:19Z:clawsweeper_needs_human",
-      "comment_id": "5012369506",
-      "comment_version_key": "5012369506:2026-08-04T07:19:19Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/138#issuecomment-5012369506",
-      "comment_created_at": "2026-07-18T18:12:15Z",
-      "comment_updated_at": "2026-08-04T07:19:19Z",
-      "comment_body_sha256": "484bc91131004909923acc83157db525795d26b6d359962eff4f310bd5d69a9d",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the submitted patch is ready for normal maintainer landing review. (sha=2212df7c590a73ec062f19e212c4b77a720eead1)",
-      "expected_head_sha": "2212df7c590a73ec062f19e212c4b77a720eead1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:20:51.180Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-viewer-invalid-timestamp",
-        "head_sha": "2212df7c590a73ec062f19e212c4b77a720eead1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:13:5164757534:2026-08-04T07:13:28Z:clawsweeper_needs_human",
       "comment_id": "5164757534",
@@ -33782,6 +33749,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119068:5178933395:2026-08-04T12:18:53Z:re_review",
+      "comment_id": "5178933395",
+      "comment_version_key": "5178933395:2026-08-04T12:18:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119068#issuecomment-5178933395",
+      "comment_created_at": "2026-08-04T12:18:53Z",
+      "comment_updated_at": "2026-08-04T12:18:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "a8dff230-8ffe-11f1-9bb6-63601d96e0fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119068,
+      "author": "Schimuneck",
+      "author_id": 715074,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T12:19:34.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-stop-unmanaged-process",
+        "head_sha": "7742c293a00d752b65fb85562141bd64954ad48a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
