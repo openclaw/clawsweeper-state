@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T09:28:01.338Z",
+  "updated_at": "2026-08-04T09:28:05.122Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4864742010:2026-07-02T10:30:51Z:re_review",
-      "comment_id": "4864742010",
-      "comment_version_key": "4864742010:2026-07-02T10:30:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4864742010",
-      "comment_created_at": "2026-07-02T10:30:51Z",
-      "comment_updated_at": "2026-07-02T10:30:51Z",
-      "comment_body_sha256": "887f176995f96e8a8f6bb9951d714446aa2178cb62e79440f97c72255aa786e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:07:11.758Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4870897460:2026-07-02T22:15:53Z:re_review",
       "comment_id": "4870897460",
@@ -33510,6 +33483,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116795:5142322966:2026-08-04T09:26:01Z:clawsweeper_needs_human",
+      "comment_id": "5142322966",
+      "comment_version_key": "5142322966:2026-08-04T09:26:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116795#issuecomment-5142322966",
+      "comment_created_at": "2026-07-31T11:23:04Z",
+      "comment_updated_at": "2026-08-04T09:26:01Z",
+      "comment_body_sha256": "eb95ebfe43f407a2b5eed1ac5614efecf2834edec0013667d547974a0960e5b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116795,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep attribution out of public harness functions (P1)** - The public SDK re-exports this factory, but the new path promotes any extra JavaScript attribution property into authoritative hook context. A plugin can...; Review finding: [P1] Keep attribution out of public harness functions — src/agents/agent-tools.ts:1208-1210 - [P1] Carry attribution through plugin-harness tool construction — src... (sha=24a1c08b40a43e291446c0cfc09e74accedccdb2)",
+      "expected_head_sha": "24a1c08b40a43e291446c0cfc09e74accedccdb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T09:28:05.122Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-4-tool-policy",
+        "head_sha": "24a1c08b40a43e291446c0cfc09e74accedccdb2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
