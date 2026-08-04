@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:14:16.779Z",
+  "updated_at": "2026-08-04T14:14:25.469Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116551:5177380123:2026-08-04T09:53:06Z:re_review",
-      "comment_id": "5177380123",
-      "comment_version_key": "5177380123:2026-08-04T09:53:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5177380123",
-      "comment_created_at": "2026-08-04T09:53:06Z",
-      "comment_updated_at": "2026-08-04T09:53:06Z",
-      "comment_body_sha256": "e2d2fe3cd7197fd8110a7012284a44eecfe3cdc0456a44e1df52e09904f705bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116551,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T10:09:42.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-result-aggregate",
-        "head_sha": "9596cd41f1fa0ac30b8cd894d19477757c48a214",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:119160",
       "comment_id": "repair-loop-label-sweep:autofix:119160",
@@ -32533,6 +32486,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-status-all-plugin-discovery",
         "head_sha": "3a4f599d3e114d3a04df8fcc01de4395013148d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119226:5179482268:2026-08-04T14:13:39Z:clawsweeper_auto_repair",
+      "comment_id": "5179482268",
+      "comment_version_key": "5179482268:2026-08-04T14:13:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119226#issuecomment-5179482268",
+      "comment_created_at": "2026-08-04T13:05:43Z",
+      "comment_updated_at": "2026-08-04T14:13:39Z",
+      "comment_body_sha256": "2a74560904b87f763177a4f5359f7bdef5629a1edcf62d471cfb3462a0c04c2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8686a2df20f597db19b9dc9e10c344285c67935b)",
+      "expected_head_sha": "8686a2df20f597db19b9dc9e10c344285c67935b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T14:14:25.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-lock-state-dir-118371",
+        "head_sha": "8686a2df20f597db19b9dc9e10c344285c67935b",
         "cluster_id": null,
         "job_path": null
       }
