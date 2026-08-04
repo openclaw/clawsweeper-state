@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:25:59.440Z",
+  "updated_at": "2026-08-04T08:27:00.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118507:5162706662:2026-08-04T04:15:37Z:clawsweeper_needs_human",
-      "comment_id": "5162706662",
-      "comment_version_key": "5162706662:2026-08-04T04:15:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118507#issuecomment-5162706662",
-      "comment_created_at": "2026-08-03T05:37:26Z",
-      "comment_updated_at": "2026-08-04T04:15:37Z",
-      "comment_body_sha256": "38653c0534eb33170e66f9d0e433a0b541a75f791216e0322b0cab3844710a6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118507,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as behind and several required CI lanes are still running; landing should wait for an exact current-main merge result and completed checks. (sha=91bb0679dad09bc617f1b60ce5847a29b7b6239b)",
-      "expected_head_sha": "91bb0679dad09bc617f1b60ce5847a29b7b6239b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:16:19.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "usage-cost-configured-session-store",
-        "head_sha": "91bb0679dad09bc617f1b60ce5847a29b7b6239b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118657:5166348466:2026-08-04T04:09:50Z:clawsweeper_needs_human",
       "comment_id": "5166348466",
@@ -32816,6 +32783,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-04T08:22:59Z:clawsweeper_needs_human",
+      "comment_id": "5156377755",
+      "comment_version_key": "5156377755:2026-08-04T08:22:59Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/130#issuecomment-5156377755",
+      "comment_created_at": "2026-08-02T07:58:25Z",
+      "comment_updated_at": "2026-08-04T08:22:59Z",
+      "comment_body_sha256": "124c9d30f83274ad3bb20dba61ade878d25aac6b5e2a94901e0a9619b3ba1b4f",
+      "repo": "openclaw/lobster",
+      "issue_number": 130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading deliberately bypasses prior response-cache files and state-key records, causing one fresh model call per previously cached distinct request; this increases cost but prevents... (sha=2b3cef0e3667b41a198f406c43dd9a090d87fac7)",
+      "expected_head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T08:27:00.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-cache-key-sampling-params",
+        "head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
