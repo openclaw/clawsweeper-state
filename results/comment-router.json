@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:15:37.758Z",
+  "updated_at": "2026-08-04T06:15:44.273Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118601:5172928261:2026-08-03T23:46:24Z:re_review",
-      "comment_id": "5172928261",
-      "comment_version_key": "5172928261:2026-08-03T23:46:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118601#issuecomment-5172928261",
-      "comment_created_at": "2026-08-03T23:46:24Z",
-      "comment_updated_at": "2026-08-03T23:46:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118601,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:13:29.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-migration-diagnostic-116965",
-        "head_sha": "d1ebc869689bb021274b20e8147565a7ca025ce9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110450:5172949203:2026-08-03T23:49:58Z:re_review",
       "comment_id": "5172949203",
@@ -32688,6 +32641,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/clawrouter-788c547",
         "head_sha": "46f732c9d13afd737f7ad32d3d9af84a2031ea7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-04T06:15:05Z:clawsweeper_needs_human",
+      "comment_id": "5121262567",
+      "comment_version_key": "5121262567:2026-08-04T06:15:05Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
+      "comment_created_at": "2026-07-29T17:24:33Z",
+      "comment_updated_at": "2026-08-04T06:15:05Z",
+      "comment_body_sha256": "9c806468bf711b8764124bd36bb2086e36220ae05c1370963797bbdab52e6232",
+      "repo": "openclaw/libterminal",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The v11 action runtime has not been observed executing this repository’s stale policy; an incompatibility could alter automated stale labeling or closure behavior. (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
+      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:15:44.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
         "cluster_id": null,
         "job_path": null
       }
