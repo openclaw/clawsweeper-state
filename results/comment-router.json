@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:21:57.950Z",
+  "updated_at": "2026-08-04T07:22:01.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89039:4601071690:2026-06-02T09:35:31Z:re_review",
-      "comment_id": "4601071690",
-      "comment_version_key": "4601071690:2026-06-02T09:35:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89039#issuecomment-4601071690",
-      "comment_created_at": "2026-06-02T09:35:31Z",
-      "comment_updated_at": "2026-06-02T09:35:31Z",
-      "comment_body_sha256": "e2ffb1741aa2b7800698a583ae3b051ec5b4a889c2816a017566f7c65b578c84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89039,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:02:31.863Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89039:4601546681:2026-06-02T10:36:48Z:re_review",
       "comment_id": "4601546681",
@@ -31971,6 +31944,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T07:21:57.950Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119130:5175361161:2026-08-04T07:21:23Z:clawsweeper_needs_human",
+      "comment_id": "5175361161",
+      "comment_version_key": "5175361161:2026-08-04T07:21:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119130#issuecomment-5175361161",
+      "comment_created_at": "2026-08-04T06:21:57Z",
+      "comment_updated_at": "2026-08-04T07:21:23Z",
+      "comment_body_sha256": "270cbfba02a9295daade0b7b50ace353a4ee3ec38bb34578e642c8eb817f7de0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies focused regression-test output but no after-fix real CLI or runtime transcript showing owner-key show or cancel selecting the l... (sha=e3778c0812b119246f36382dd7a3cf1b7effeb2b)",
+      "expected_head_sha": "e3778c0812b119246f36382dd7a3cf1b7effeb2b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:22:01.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/taskflow-owner-lookup-active-flow",
+        "head_sha": "e3778c0812b119246f36382dd7a3cf1b7effeb2b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
