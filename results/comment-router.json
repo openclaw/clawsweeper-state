@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T17:23:02.540Z",
+  "updated_at": "2026-08-04T17:23:38.006Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4655071604:2026-06-09T01:16:17Z:re_review",
-      "comment_id": "4655071604",
-      "comment_version_key": "4655071604:2026-06-09T01:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4655071604",
-      "comment_created_at": "2026-06-09T01:16:17Z",
-      "comment_updated_at": "2026-06-09T01:16:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T14:02:24.123Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4657131651:2026-06-09T07:09:04Z:re_review",
       "comment_id": "4657131651",
@@ -31440,6 +31413,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T17:23:02.540Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118960:5171703660:2026-08-04T17:22:47Z:clawsweeper_needs_human",
+      "comment_id": "5171703660",
+      "comment_version_key": "5171703660:2026-08-04T17:22:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118960#issuecomment-5171703660",
+      "comment_created_at": "2026-08-03T21:05:19Z",
+      "comment_updated_at": "2026-08-04T17:22:47Z",
+      "comment_body_sha256": "da59b6ff390ccaff00a7a84be4ff9a62de79262ecc8d32d546527c3181429368",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118960,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change depends on the stable macOS client identifier to preserve an existing system-agent prompt path; rebase and exact-head proof should confirm macOS remains included while unsu... (sha=4a944c2ba020746273bf1b1648ff203ab16293f1)",
+      "expected_head_sha": "4a944c2ba020746273bf1b1648ff203ab16293f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T17:23:38.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-agent-approval-kind",
+        "head_sha": "4a944c2ba020746273bf1b1648ff203ab16293f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
