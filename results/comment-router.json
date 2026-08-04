@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:09:23.638Z",
+  "updated_at": "2026-08-04T06:09:54.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118988:5173036381:2026-08-04T00:04:25Z:re_review",
-      "comment_id": "5173036381",
-      "comment_version_key": "5173036381:2026-08-04T00:04:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118988#issuecomment-5173036381",
-      "comment_created_at": "2026-08-04T00:04:25Z",
-      "comment_updated_at": "2026-08-04T00:04:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "0ea2d770-8f98-11f1-82a1-039bab749594",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118988,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:05:00.276Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-gateway-b1-rpc-chat",
-        "head_sha": "54397c0ff74d40ec90ff20e2f9498248bc6a1e97",
-        "cluster_id": "automerge-openclaw-openclaw-118988",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118988.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118988:5173036554:2026-08-04T00:04:27Z:automerge",
       "comment_id": "5173036554",
@@ -32771,6 +32723,39 @@
         "kind": "pull_request",
         "branch": "qa-b3-shared-channel-memory-20260804",
         "head_sha": "54eab19cea268c26f0770e515d2aaa9307e79ef2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116204:5126162249:2026-08-04T06:08:59Z:clawsweeper_needs_human",
+      "comment_id": "5126162249",
+      "comment_version_key": "5126162249:2026-08-04T06:08:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116204#issuecomment-5126162249",
+      "comment_created_at": "2026-07-30T03:43:53Z",
+      "comment_updated_at": "2026-08-04T06:08:59Z",
+      "comment_body_sha256": "fbca128cad53267573a41bb7a8eb66ccbed4c6a8f4d7a76f433951a33305be0f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct inspection of the pinned @google/genai package was unavailable because this checkout has no installed package and outbound DNS could not reach GitHub; exact-head CI should comp... (sha=a4ea74896598d55e0c58e3fa3f5524f249ffac6b)",
+      "expected_head_sha": "a4ea74896598d55e0c58e3fa3f5524f249ffac6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:09:54.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-106969-base64url",
+        "head_sha": "a4ea74896598d55e0c58e3fa3f5524f249ffac6b",
         "cluster_id": null,
         "job_path": null
       }
