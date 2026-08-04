@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T19:18:43.501Z",
+  "updated_at": "2026-08-04T19:18:32.568Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2635:5174373861:2026-08-04T15:03:59Z:clawsweeper_auto_repair",
@@ -31738,52 +31738,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5183550423:2026-08-04T19:18:04Z:re_review",
-      "comment_id": "5183550423",
-      "comment_version_key": "5183550423:2026-08-04T19:18:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5183550423",
-      "comment_created_at": "2026-08-04T19:18:04Z",
-      "comment_updated_at": "2026-08-04T19:18:04Z",
-      "comment_body_sha256": "fd0e64950b0f81ece506c0246dfa050b3df993aee207b9344868ffc0fbe507b6",
-      "source_delivery_id": "3868bd80-9039-11f1-8328-0b3bc1b93c4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:68:5182423456:2026-08-04T19:17:42Z:clawsweeper_needs_human",
+      "comment_id": "5182423456",
+      "comment_version_key": "5182423456:2026-08-04T19:17:42Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/68#issuecomment-5182423456",
+      "comment_created_at": "2026-08-04T17:25:08Z",
+      "comment_updated_at": "2026-08-04T19:17:42Z",
+      "comment_body_sha256": "72351aeeed005ae15358902a47772b7630e16ba867dc417ce141112cfb5c5870",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 68,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
       "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the lockfile with the manifest version (P2)** - The PR changes the API importer to 4.12.34 but leaves pnpm-lock.yaml at 4.12.32. CI installs with --frozen-lockfile, so installation fails before every requ...; Review finding: [P2] Update the lockfile with the manifest version — apps/api/package.json:24 - [medium] Resolve the patched Hono version in the lockfile — apps/api/package.json:24 (sha=05268005a8229bea11a35adc3cd329dc2d132f69)",
+      "expected_head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T19:18:40.493Z",
+      "status": "skipped",
+      "processed_at": "2026-08-04T19:18:32.568Z",
       "target": {
         "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk-settings",
-        "head_sha": "6508e3175328c20e51f94622fd358064c0d2c8ea",
+        "branch": "dependabot/npm_and_yarn/apps/api/hono-4.12.34",
+        "head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
