@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-41495",
+  "mode": "autonomous",
+  "run_id": "30927048488",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30927048488",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-41495.md",
+  "published_at": "2026-08-04T17:02:11.395Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/41495",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/41495",
+  "canonical_pr": null,
+  "summary": "Current main (50a30b7373d78fe8a63e597bd28138b6aa805765) has a narrow prompt-contract bug. The repair is clear, but this worker checkout is read-only and lacks dependencies for focused validation, so no branch or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#41495",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#41495",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only sandbox and absent dependency install; the fix path is otherwise narrow and source-reproduced."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-41495",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#41495",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from the designated ClawSweeper branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review did not pass after final base synchronization: Merge blocked: the new generic callback example produces Telegram buttons whose unmatched clicks have no visible or model-routed outcome.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#41495",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
