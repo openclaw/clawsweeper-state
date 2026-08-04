@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T04:10:07.421Z",
+  "updated_at": "2026-08-04T04:10:09.748Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/remindctl:67:5172040644:2026-08-03T21:39:51Z:re_review",
@@ -33189,39 +33189,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1076:5160275971:2026-08-04T04:09:29Z:clawsweeper_needs_human",
-      "comment_id": "5160275971",
-      "comment_version_key": "5160275971:2026-08-04T04:09:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1076#issuecomment-5160275971",
-      "comment_created_at": "2026-08-02T20:49:05Z",
-      "comment_updated_at": "2026-08-04T04:09:29Z",
-      "comment_body_sha256": "bf1a08f88003c42219befadca0c835986091728dd5cb21ccb058726c08a238eb",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1076,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Authorize the initial SSH handshake (P0)** - The live client receives only ReconnectAuthorizationAsync here. OpenClawGatewayClient calls HandshakeAuthorizationAsync immediately before its credential-bearing conn...; Review finding: [P0] Authorize the initial SSH handshake — src/OpenClaw.Connection/GatewayConnectionManager.cs:487-506 - [high] Initial handshake can disclose SSH credential — src... (sha=606cacbc8c5c433057516e616acf942e227cd2e5)",
-      "expected_head_sha": "606cacbc8c5c433057516e616acf942e227cd2e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:10:03.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-connection-analysis",
-        "head_sha": "606cacbc8c5c433057516e616acf942e227cd2e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1076:5169663229:2026-08-03T17:30:47Z:re_review",
       "comment_id": "5169663229",
       "comment_version_key": "5169663229:2026-08-03T17:30:47Z",
@@ -33277,6 +33244,39 @@
         "kind": "pull_request",
         "branch": "refactor/acp-local-runtime",
         "head_sha": "42c283af5de6c4b5ccacf12ff40077b9017b3a5b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1076:5160275971:2026-08-04T04:09:29Z:clawsweeper_needs_human",
+      "comment_id": "5160275971",
+      "comment_version_key": "5160275971:2026-08-04T04:09:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1076#issuecomment-5160275971",
+      "comment_created_at": "2026-08-02T20:49:05Z",
+      "comment_updated_at": "2026-08-04T04:09:29Z",
+      "comment_body_sha256": "bf1a08f88003c42219befadca0c835986091728dd5cb21ccb058726c08a238eb",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Authorize the initial SSH handshake (P0)** - The live client receives only ReconnectAuthorizationAsync here. OpenClawGatewayClient calls HandshakeAuthorizationAsync immediately before its credential-bearing conn...; Review finding: [P0] Authorize the initial SSH handshake — src/OpenClaw.Connection/GatewayConnectionManager.cs:487-506 - [high] Initial handshake can disclose SSH credential — src... (sha=606cacbc8c5c433057516e616acf942e227cd2e5)",
+      "expected_head_sha": "606cacbc8c5c433057516e616acf942e227cd2e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T04:10:09.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-connection-analysis",
+        "head_sha": "606cacbc8c5c433057516e616acf942e227cd2e5",
         "cluster_id": null,
         "job_path": null
       }
