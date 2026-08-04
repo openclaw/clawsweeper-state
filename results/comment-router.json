@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T10:10:24.834Z",
+  "updated_at": "2026-08-04T10:10:26.298Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105994:4954579969:2026-08-04T05:07:12Z:clawsweeper_needs_human",
-      "comment_id": "4954579969",
-      "comment_version_key": "4954579969:2026-08-04T05:07:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105994#issuecomment-4954579969",
-      "comment_created_at": "2026-07-13T04:58:51Z",
-      "comment_updated_at": "2026-08-04T05:07:12Z",
-      "comment_body_sha256": "e424a126836713dad490f21c0a86f45a4cbcc17f638901cf1b14ee02ded245a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105994,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The dirty branch predates current main’s streaming settlement and fallback sequencing; a mechanical conflict resolution could regress Feishu message delivery. (sha=2998e6c3cb9419dd0fdac5fe383d1d5198adcabb)",
-      "expected_head_sha": "2998e6c3cb9419dd0fdac5fe383d1d5198adcabb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:13:14.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-230028-delivery-notice",
-        "head_sha": "2998e6c3cb9419dd0fdac5fe383d1d5198adcabb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-04T05:12:38Z:clawsweeper_needs_human",
       "comment_id": "5164752963",
@@ -34048,6 +34015,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110068:5177560568:2026-08-04T10:09:45Z:re_review",
+      "comment_id": "5177560568",
+      "comment_version_key": "5177560568:2026-08-04T10:09:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110068#issuecomment-5177560568",
+      "comment_created_at": "2026-08-04T10:09:45Z",
+      "comment_updated_at": "2026-08-04T10:09:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "9ef0efc0-8fec-11f1-8c1e-340a0462fae3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110068,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T10:10:24.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-offset-persist-retry",
+        "head_sha": "862eb13698b6a2aeb6c3d904411bff655791fbee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119171:5177474009:2026-08-04T10:09:38Z:clawsweeper_needs_human",
