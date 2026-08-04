@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:12:44.468Z",
+  "updated_at": "2026-08-04T14:12:45.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119171:5177471837:2026-08-04T10:01:36Z:re_review",
-      "comment_id": "5177471837",
-      "comment_version_key": "5177471837:2026-08-04T10:01:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119171#issuecomment-5177471837",
-      "comment_created_at": "2026-08-04T10:01:36Z",
-      "comment_updated_at": "2026-08-04T10:01:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "7b5c7760-8feb-11f1-844a-5858a2cdcfd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119171,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T10:02:15.534Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta8-release-qa-gates",
-        "head_sha": "65e53e92981924b799750003fe0e2d5b59f82dab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1078:5161998484:2026-08-04T10:01:03Z:clawsweeper_needs_human",
       "comment_id": "5161998484",
@@ -32784,6 +32736,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-108893-embedding-rate-limit-backoff",
         "head_sha": "1ab1d2bd80e6821ced230054421721d4fdd3d428",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115278:5106674886:2026-08-04T14:10:50Z:clawsweeper_needs_human",
+      "comment_id": "5106674886",
+      "comment_version_key": "5106674886:2026-08-04T14:10:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115278#issuecomment-5106674886",
+      "comment_created_at": "2026-07-28T16:09:09Z",
+      "comment_updated_at": "2026-08-04T14:10:50Z",
+      "comment_body_sha256": "26c91dedc66a3a2c922e03c99f1d65e01eae294086f95cd2ce75a7750f358f59",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115278,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This shared matcher gates group delivery across channels; rebase and require fresh exact-head build/lint completion before merge, since the reported head is behind main and those chec... (sha=819d793efd8346dc17ce50547200f25444244764)",
+      "expected_head_sha": "819d793efd8346dc17ce50547200f25444244764",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T14:12:45.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mentions-decorated-identity-names",
+        "head_sha": "819d793efd8346dc17ce50547200f25444244764",
         "cluster_id": null,
         "job_path": null
       }
