@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:28:46.380Z",
+  "updated_at": "2026-08-04T12:29:00.362Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-04T07:21:39Z:clawsweeper_needs_human",
-      "comment_id": "5164752963",
-      "comment_version_key": "5164752963:2026-08-04T07:21:39Z",
-      "comment_url": "https://github.com/openclaw/babelfish/pull/12#issuecomment-5164752963",
-      "comment_created_at": "2026-08-03T09:41:00Z",
-      "comment_updated_at": "2026-08-04T07:21:39Z",
-      "comment_body_sha256": "09035367910963f364bd5d1bdf33c4026470e1f57aed671e2204713e084e6b93",
-      "repo": "openclaw/babelfish",
-      "issue_number": 12,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This semver-minor SDK update changes the production MCP transport and validation implementation; CI passed, but no redacted after-update runtime MCP transcript has been supplied. (sha=5bd5af6f8503e6a4de23105fef3886f0217929d0)",
-      "expected_head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:22:31.176Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/production-minor-and-patch-0f47153fa6",
-        "head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-04T07:21:38Z:clawsweeper_needs_human",
       "comment_id": "4854073498",
@@ -33825,6 +33792,54 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:92230:5179026667:2026-08-04T12:28:22Z:re_review",
+      "comment_id": "5179026667",
+      "comment_version_key": "5179026667:2026-08-04T12:28:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/92230#issuecomment-5179026667",
+      "comment_created_at": "2026-08-04T12:28:22Z",
+      "comment_updated_at": "2026-08-04T12:28:22Z",
+      "comment_body_sha256": "8413ec3f945eae1847dd864b97f7811b997ff415de41733a0d85838cb567f1d5",
+      "source_delivery_id": "fbf62100-8fff-11f1-9047-c72960ec5523",
+      "repo": "openclaw/openclaw",
+      "issue_number": 92230,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T12:28:57.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawSean/slack-model-menu",
+        "head_sha": "4e818046b52c7833f6e1e2ec14c8d85c198c319e",
+        "cluster_id": "automerge-openclaw-openclaw-92230",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
