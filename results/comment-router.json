@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:13:34.054Z",
+  "updated_at": "2026-08-04T05:13:53.472Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118998:5172654439:2026-08-03T23:02:45Z:re_review",
-      "comment_id": "5172654439",
-      "comment_version_key": "5172654439:2026-08-03T23:02:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118998#issuecomment-5172654439",
-      "comment_created_at": "2026-08-03T23:02:45Z",
-      "comment_updated_at": "2026-08-03T23:02:45Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "source_delivery_id": "71265970-8f8f-11f1-9a27-4b2489256a6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118998,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T23:03:33.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t08-tui-terminal-safety-20260803",
-        "head_sha": "63bf2b40cfe7129ee74a7b2d59c8cc58e0ccca82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118995:5172654998:2026-08-03T23:02:50Z:re_review",
       "comment_id": "5172654998",
@@ -32873,6 +32825,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T05:13:34.054Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:478:5117912122:2026-08-04T05:13:13Z:clawsweeper_needs_human",
+      "comment_id": "5117912122",
+      "comment_version_key": "5117912122:2026-08-04T05:13:13Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/478#issuecomment-5117912122",
+      "comment_created_at": "2026-07-29T12:44:42Z",
+      "comment_updated_at": "2026-08-04T05:13:13Z",
+      "comment_body_sha256": "5c703dfad67f290f46cde413c2d5131cc0de5a1a2d0f91436c1bb427f0c653b5",
+      "repo": "openclaw/acpx",
+      "issue_number": 478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports regression tests, CI, and a benchmark, but provides no inspectable after-fix terminal output, runtime logs, recording, screens... (sha=5d3063b81189d8b9da851abf0891b88828d68f41)",
+      "expected_head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T05:13:53.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-adapter-process-lifecycle",
+        "head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
