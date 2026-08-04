@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:31:14.381Z",
+  "updated_at": "2026-08-04T15:32:53.563Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119175:5177528323:2026-08-04T11:23:51Z:clawsweeper_auto_repair",
-      "comment_id": "5177528323",
-      "comment_version_key": "5177528323:2026-08-04T11:23:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119175#issuecomment-5177528323",
-      "comment_created_at": "2026-08-04T10:06:44Z",
-      "comment_updated_at": "2026-08-04T11:23:51Z",
-      "comment_body_sha256": "2e7b1eec33c3245654292bc658b80af805a955c81a1129765bb858c3333a0413",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119175,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d2f4866488e3b64d8cb86be7dd20aa7ed3f8fdbb)",
-      "expected_head_sha": "d2f4866488e3b64d8cb86be7dd20aa7ed3f8fdbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T11:24:39.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recoverable-timeout-subagent-completion-loss",
-        "head_sha": "d2f4866488e3b64d8cb86be7dd20aa7ed3f8fdbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117641:5153526852:2026-08-04T11:15:52Z:clawsweeper_auto_repair",
       "comment_id": "5153526852",
@@ -32090,6 +32057,54 @@
       "status": "skipped",
       "processed_at": "2026-08-04T15:31:14.381Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:81208:5181217837:2026-08-04T15:32:16Z:re_review",
+      "comment_id": "5181217837",
+      "comment_version_key": "5181217837:2026-08-04T15:32:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81208#issuecomment-5181217837",
+      "comment_created_at": "2026-08-04T15:32:16Z",
+      "comment_updated_at": "2026-08-04T15:32:16Z",
+      "comment_body_sha256": "3690875fa56f3147886d06427dbdae1fa14bf668dacdd8adc1306802bcd1468c",
+      "source_delivery_id": "ac8d4e80-9019-11f1-8f87-c420c00a7d18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81208,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T15:32:51.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-67288-mantle-discovery-gate",
+        "head_sha": "7c7be7a3b5e9e29c0ae8b7458591744d46f1bc86",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
