@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T19:20:59.246Z",
+  "updated_at": "2026-08-04T19:21:21.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105025:5049384024:2026-07-22T17:34:27Z:re_review",
-      "comment_id": "5049384024",
-      "comment_version_key": "5049384024:2026-07-22T17:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105025#issuecomment-5049384024",
-      "comment_created_at": "2026-07-22T17:34:27Z",
-      "comment_updated_at": "2026-07-22T17:34:27Z",
-      "comment_body_sha256": "6930d39879b58842a87eb4c845c3e5bd40cfe5df31da4c07490cfbf88d22475c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105025,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `623fd88c2028d59df1e8828428556921cc42ff47`. this follow-up only fixes the three hosted test/lint findings from the previous exact-head run: typed inbound mock payload, bound response-end assertion, and async cleanup callback typing. focused tests are 20/20 and the full rcs suite is 107/107",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T15:05:30.487Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105025:5049472727:2026-07-22T17:44:02Z:re_review",
       "comment_id": "5049472727",
@@ -31808,6 +31781,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:66:5170678735:2026-08-04T19:20:32Z:clawsweeper_needs_human",
+      "comment_id": "5170678735",
+      "comment_version_key": "5170678735:2026-08-04T19:20:32Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/66#issuecomment-5170678735",
+      "comment_created_at": "2026-08-03T19:14:36Z",
+      "comment_updated_at": "2026-08-04T19:20:32Z",
+      "comment_body_sha256": "5b1fc05c67d048fdd1c7c5adf8220239c0f17391f23f6fd21ba079f2bf272305",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 66,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow defaults CodeQL off, so a normal green check can leave the upgraded executable action path unobserved until a repository enables it. (sha=191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba)",
+      "expected_head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T19:21:21.977Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-ce612e0709",
+        "head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
