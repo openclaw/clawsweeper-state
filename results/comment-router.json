@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T23:14:59.060Z",
+  "updated_at": "2026-08-04T23:15:06.224Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118361:5161527102:2026-08-03T01:55:27Z:clawsweeper_needs_human",
-      "comment_id": "5161527102",
-      "comment_version_key": "5161527102:2026-08-03T01:55:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118361#issuecomment-5161527102",
-      "comment_created_at": "2026-08-03T01:55:27Z",
-      "comment_updated_at": "2026-08-03T01:55:27Z",
-      "comment_body_sha256": "21b7bfddcfa35d41fbfaa07656f418f3e1dedcd06d309b5eecbaefa1a646946f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains after source review; let the normal exact-head CI and merge gates evaluate this bot-generated patch. (sha=2532feb490cb7b4e05df868ec4296a0364484b2a)",
-      "expected_head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T19:22:04.086Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-116747",
-        "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-        "cluster_id": "issue-openclaw-openclaw-116747",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118523:5162911881:2026-08-04T17:25:58Z:clawsweeper_auto_repair",
       "comment_id": "5162911881",
@@ -31842,6 +31809,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116794:5185644746:2026-08-04T23:14:38Z:re_review",
+      "comment_id": "5185644746",
+      "comment_version_key": "5185644746:2026-08-04T23:14:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5185644746",
+      "comment_created_at": "2026-08-04T23:14:38Z",
+      "comment_updated_at": "2026-08-04T23:14:38Z",
+      "comment_body_sha256": "bc29fbd96ae7acfe91a059e15fbd0733a703a21f46a5538dba00a735643cfe40",
+      "source_delivery_id": "44593770-905a-11f1-9a7b-aa61e89f9bda",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116794,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T23:15:02.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-3-runtime",
+        "head_sha": "ef1eb6c7669e30556fa990d6ba74b1d3f468f62a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
