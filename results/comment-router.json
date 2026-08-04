@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:05:43.939Z",
+  "updated_at": "2026-08-04T15:05:46.167Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116793:5177733065:2026-08-04T10:26:34Z:re_review",
-      "comment_id": "5177733065",
-      "comment_version_key": "5177733065:2026-08-04T10:26:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5177733065",
-      "comment_created_at": "2026-08-04T10:26:34Z",
-      "comment_updated_at": "2026-08-04T10:26:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116793,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T11:08:03.597Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116792:5177733066:2026-08-04T10:26:34Z:re_review",
       "comment_id": "5177733066",
@@ -32111,6 +32084,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T15:05:43.939Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119246:5180889488:2026-08-04T15:04:14Z:clawsweeper_needs_human",
+      "comment_id": "5180889488",
+      "comment_version_key": "5180889488:2026-08-04T15:04:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119246#issuecomment-5180889488",
+      "comment_created_at": "2026-08-04T15:04:14Z",
+      "comment_updated_at": "2026-08-04T15:04:14Z",
+      "comment_body_sha256": "c44a0ce5a82d7a7e3986f58b35a6ae52c8f9e1add1b5cff4192346a4e9552b16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the node client revocable until the lifecycle drain ends (P1)** - close() removes this node from the shared client set before awaiting the drain. Pairing and token revocation only invalidate node sessions b...; Review finding: [P1] Keep the node client revocable until the lifecycle drain ends — src/gateway/server/ws-connection.ts:576 - [medium] Drain bypasses the device revocation fence... (sha=9a2d969484a3c144b24c8e25ab0e26b46c7ab233)",
+      "expected_head_sha": "9a2d969484a3c144b24c8e25ab0e26b46c7ab233",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T15:05:46.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-node-result-close-drain",
+        "head_sha": "9a2d969484a3c144b24c8e25ab0e26b46c7ab233",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
