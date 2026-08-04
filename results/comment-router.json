@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T22:31:01.376Z",
+  "updated_at": "2026-08-04T22:44:32.005Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-04T19:06:22Z:clawsweeper_needs_human",
-      "comment_id": "4469526858",
-      "comment_version_key": "4469526858:2026-08-04T19:06:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
-      "comment_created_at": "2026-05-17T05:54:16Z",
-      "comment_updated_at": "2026-08-04T19:06:22Z",
-      "comment_body_sha256": "a625185b79210ae4b38ac65ffc45e0342127be3e43a25b06bbbc93ef8f9abc04",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unsafe or invalid manually authored approvals will no longer authorize commands; Doctor removes those full entries on repair, so affected operators must re-approve commands they still... (sha=c05cdd3dce4c76fdd1d7f79e8385fc69e12e746a)",
-      "expected_head_sha": "c05cdd3dce4c76fdd1d7f79e8385fc69e12e746a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T19:07:47.589Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "c05cdd3dce4c76fdd1d7f79e8385fc69e12e746a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116792:5142322271:2026-08-04T19:06:46Z:clawsweeper_needs_human",
       "comment_id": "5142322271",
@@ -31823,6 +31790,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2646:5185433640:2026-08-04T22:43:56Z:re_review",
+      "comment_id": "5185433640",
+      "comment_version_key": "5185433640:2026-08-04T22:43:56Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2646#issuecomment-5185433640",
+      "comment_created_at": "2026-08-04T22:43:56Z",
+      "comment_updated_at": "2026-08-04T22:43:56Z",
+      "comment_body_sha256": "0388182729279914eaffceb1e940e4e7c6e17c0e970169161a9e620ee27c8228",
+      "source_delivery_id": "fb134500-9055-11f1-8844-ed77ca78b293",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2646,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - the three findings from the 22:24 review are addressed in 71e2743f3:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T22:44:30.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-cost-cache-2637",
+        "head_sha": "71e2743f33df1bc461714f233c5b6d4fe1550452",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
