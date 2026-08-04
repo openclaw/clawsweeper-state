@@ -67,27 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing forceDocument/asDocument contract for Slack media delivery. Trace normal Slack media sends and message(action="upload-file") through extensions/slack/src/outbound-adapter.ts, message-action-dispatch.ts, action-runtime.ts, send.ts, and client-delivery.ts; ensure an explicit force-document intent reaches the shared loader as optimizeImages: false, while ordinary Slack uploads retain the current default. Add focused regression tests proving the loader receives the flag and both send paths preserve the intent. Add concise Slack documentation for the existing explicit delivery intent if the current action reference omits it. Do not add a Slack account config option, change the default optimization policy, change the Plugin SDK surface, or edit CHANGELOG.md. Include user-visible release-note context in the PR body.
+Repair the existing explicit no-compression contract for Slack media delivery in https://github.com/openclaw/openclaw/issues/53932. Preserve forceDocument through the Slack outbound adapter, Slack send options, and the final upload loader; pass optimizeImages: false only when that intent is true. Cover direct outbound media and the Slack upload-file action if it exposes the same intent. Keep ordinary Slack image optimization unchanged, add no Slack config/default, do not broaden automatic read-tool attachment behavior, and do not edit CHANGELOG.md. Add focused regression coverage proving the Slack adapter forwards the intent and the final loader receives the no-optimization option.
 
 Likely files:
 
 - extensions/slack/src/outbound-adapter.ts
-- extensions/slack/src/message-action-dispatch.ts
-- extensions/slack/src/action-runtime.ts
 - extensions/slack/src/send.ts
 - extensions/slack/src/client-delivery.ts
 - extensions/slack/src/outbound-adapter.test.ts
 - extensions/slack/src/send.upload.test.ts
-- extensions/slack/src/action-runtime.test.ts
-- extensions/slack/src/message-action-dispatch.test.ts
-- docs/channels/slack.md
+- extensions/slack/src/message-action-dispatch.ts
+- extensions/slack/src/action-runtime.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/slack/src/outbound-adapter.test.ts
 - node scripts/run-vitest.mjs extensions/slack/src/send.upload.test.ts
-- node scripts/run-vitest.mjs extensions/slack/src/action-runtime.test.ts
-- node scripts/run-vitest.mjs extensions/slack/src/message-action-dispatch.test.ts
 - node scripts/run-vitest.mjs src/infra/outbound/message-action-runner.media.test.ts
 
 ## Operator Prompt
