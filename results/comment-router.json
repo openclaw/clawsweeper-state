@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:18:53.045Z",
+  "updated_at": "2026-08-04T12:18:56.210Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119116:5174836957:2026-08-04T07:19:47Z:clawsweeper_needs_human",
-      "comment_id": "5174836957",
-      "comment_version_key": "5174836957:2026-08-04T07:19:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119116#issuecomment-5174836957",
-      "comment_created_at": "2026-08-04T05:05:43Z",
-      "comment_updated_at": "2026-08-04T07:19:47Z",
-      "comment_body_sha256": "64c0f79e6eda9cb2a1bbdd53bc88d9e220860a720d6ce2a6451f27321ed51120",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119116,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On Windows, the updater intentionally refuses before fetch until a verifiable process-tree owner exists; existing Windows updater users will not receive automated updates through this... (sha=001507622331cdbe1919c6f6ecd2dc8cefe08bb4)",
-      "expected_head_sha": "001507622331cdbe1919c6f6ecd2dc8cefe08bb4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:20:44.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/live-updater-command-timeouts",
-        "head_sha": "001507622331cdbe1919c6f6ecd2dc8cefe08bb4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:138:5012369506:2026-08-04T07:19:19Z:clawsweeper_needs_human",
       "comment_id": "5012369506",
@@ -33782,6 +33749,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119169:5177522246:2026-08-04T12:18:22Z:clawsweeper_auto_repair",
+      "comment_id": "5177522246",
+      "comment_version_key": "5177522246:2026-08-04T12:18:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119169#issuecomment-5177522246",
+      "comment_created_at": "2026-08-04T10:06:10Z",
+      "comment_updated_at": "2026-08-04T12:18:22Z",
+      "comment_body_sha256": "8dea9caad6705e95bc25eb8963c18e779d918d13d2e48718d724291ad43d4b7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4bdcd4141deaba1f7920e8afc1494712bdb99165)",
+      "expected_head_sha": "4bdcd4141deaba1f7920e8afc1494712bdb99165",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:18:56.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channel-durable-delivery-ambiguous",
+        "head_sha": "4bdcd4141deaba1f7920e8afc1494712bdb99165",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
