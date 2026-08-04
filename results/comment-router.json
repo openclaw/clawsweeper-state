@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:16:03.031Z",
+  "updated_at": "2026-08-04T07:16:03.362Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110569:5103219948:2026-07-28T10:56:05Z:re_review",
-      "comment_id": "5103219948",
-      "comment_version_key": "5103219948:2026-07-28T10:56:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5103219948",
-      "comment_created_at": "2026-07-28T10:56:05Z",
-      "comment_updated_at": "2026-07-28T10:56:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110569,
-      "author": "RileyJJY",
-      "author_id": 255106757,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:01:49.401Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110569:5168752401:2026-08-03T16:00:52Z:re_review",
       "comment_id": "5168752401",
@@ -31764,6 +31737,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116707:5140386130:2026-08-04T07:15:29Z:clawsweeper_auto_repair",
+      "comment_id": "5140386130",
+      "comment_version_key": "5140386130:2026-08-04T07:15:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116707#issuecomment-5140386130",
+      "comment_created_at": "2026-07-31T07:20:35Z",
+      "comment_updated_at": "2026-08-04T07:15:29Z",
+      "comment_body_sha256": "016c5c6e5abaf081e4e9071b1ad24cbbc7326a7a4e1f7d6659657927d53df8f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9efb28d4d6ce37efa9da5a243764a434afb85aaf)",
+      "expected_head_sha": "9efb28d4d6ce37efa9da5a243764a434afb85aaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:16:03.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/116568-cron-disabled-jobs",
+        "head_sha": "9efb28d4d6ce37efa9da5a243764a434afb85aaf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
