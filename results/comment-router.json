@@ -2,54 +2,6 @@
   "updated_at": "2026-08-04T13:10:30.276Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:119121:5176193419:2026-08-04T07:57:54Z:re_review",
-      "comment_id": "5176193419",
-      "comment_version_key": "5176193419:2026-08-04T07:57:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5176193419",
-      "comment_created_at": "2026-08-04T07:57:54Z",
-      "comment_updated_at": "2026-08-04T07:57:54Z",
-      "comment_body_sha256": "8463878c13aada419e82f8a2aea18050cbe3a6822a4cf6c9c4338cc3888444c4",
-      "source_delivery_id": "339855e0-8fda-11f1-81ec-5076342e85a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119121,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:59:56.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kova-profiled-partial-gate",
-        "head_sha": "bf248c55dd0229677aec8febb5c8c3269b851cae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:116678:5176221250:2026-08-04T08:00:57Z:re_review",
       "comment_id": "5176221250",
       "comment_version_key": "5176221250:2026-08-04T08:00:57Z",
@@ -33794,6 +33746,39 @@
         "kind": "pull_request",
         "branch": "fix/default-http-client-timeout",
         "head_sha": "ed42d2c730acba4fdce8c4ec85aa68e7d7216356",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115465:5117953146:2026-08-04T13:08:10Z:clawsweeper_needs_human",
+      "comment_id": "5117953146",
+      "comment_version_key": "5117953146:2026-08-04T13:08:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115465#issuecomment-5117953146",
+      "comment_created_at": "2026-07-29T12:48:15Z",
+      "comment_updated_at": "2026-08-04T13:08:10Z",
+      "comment_body_sha256": "eddcabcc1af9afecae7974207bdc0efb404402339044a4075b50be886906aa23",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; if rebasing changes the response boundary or merge result, refresh the exact-head review and checks before landing. (sha=ac184d6a43c2ba5d7140177ea03a2b69a50f1801)",
+      "expected_head_sha": "ac184d6a43c2ba5d7140177ea03a2b69a50f1801",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T13:10:30.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "local-google-video-operation-strict-utf8",
+        "head_sha": "ac184d6a43c2ba5d7140177ea03a2b69a50f1801",
         "cluster_id": null,
         "job_path": null
       }
