@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T01:31:08.874Z",
+  "updated_at": "2026-08-04T01:32:17.906Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118867:5170576497:2026-08-03T20:18:56Z:clawsweeper_needs_human",
-      "comment_id": "5170576497",
-      "comment_version_key": "5170576497:2026-08-03T20:18:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118867#issuecomment-5170576497",
-      "comment_created_at": "2026-08-03T19:04:21Z",
-      "comment_updated_at": "2026-08-03T20:18:56Z",
-      "comment_body_sha256": "55ef557c404f3d49524fafd73249ec77ac0f70c8f22d7b05029434cf2ac50ab1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118867,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub snapshot still shows security-fast failed and multiple build, extension-boundary, compact-test, and QA checks in progress; merge only after the final GitHub merge... (sha=8b4ab6400bc9d581cc955407313a4c051c16311a)",
-      "expected_head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:19:43.294Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-prometheus",
-        "head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118866:5170571610:2026-08-03T20:18:41Z:clawsweeper_auto_repair",
       "comment_id": "5170571610",
@@ -33166,6 +33133,54 @@
         "kind": "pull_request",
         "branch": "test/qa-canvas-agent-node",
         "head_sha": "ee0b2da044a57009ee31f995048b357d78100a05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118738:5173558809:2026-08-04T01:31:44Z:re_review",
+      "comment_id": "5173558809",
+      "comment_version_key": "5173558809:2026-08-04T01:31:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118738#issuecomment-5173558809",
+      "comment_created_at": "2026-08-04T01:31:44Z",
+      "comment_updated_at": "2026-08-04T01:31:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "40eae360-8fa4-11f1-9faf-3874786082a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118738,
+      "author": "bek91",
+      "author_id": 66288351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T01:32:15.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/beta7-codex",
+        "head_sha": "03b144000110633454f3b312c8ac90838b1426bb",
         "cluster_id": null,
         "job_path": null
       },
