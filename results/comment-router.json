@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T02:43:17.978Z",
+  "updated_at": "2026-08-04T02:59:14.839Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118788:5169662226:2026-08-03T20:10:41Z:clawsweeper_needs_human",
-      "comment_id": "5169662226",
-      "comment_version_key": "5169662226:2026-08-03T20:10:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118788#issuecomment-5169662226",
-      "comment_created_at": "2026-08-03T17:30:42Z",
-      "comment_updated_at": "2026-08-03T20:10:41Z",
-      "comment_body_sha256": "c4d9d7665efc79feeaf3e3f8f31c67b28f02bea96b5a2ba20b8e631e0ed14a2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118788,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds browser and QA automation while the supplied exact-head status reports a failed checks-ui-e2e (1/4) shard and CI gate; the available evidence does not establish whether t... (sha=bfb638756a1440f7409807619925b2d8dfca7d9f)",
-      "expected_head_sha": "bfb638756a1440f7409807619925b2d8dfca7d9f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:20:20.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-control-ui-shell-routing-20260803",
-        "head_sha": "bfb638756a1440f7409807619925b2d8dfca7d9f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118808:5170001751:2026-08-03T19:11:23Z:clawsweeper_auto_repair",
       "comment_id": "5170001751",
@@ -33512,6 +33479,53 @@
         "kind": "pull_request",
         "branch": "security/slash-authorization-followup",
         "head_sha": "f350c667c3cad7d74f369e2dbe764f437ac152eb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119052:5174074268:2026-08-04T02:56:38Z:re_review",
+      "comment_id": "5174074268",
+      "comment_version_key": "5174074268:2026-08-04T02:56:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119052#issuecomment-5174074268",
+      "comment_created_at": "2026-08-04T02:56:38Z",
+      "comment_updated_at": "2026-08-04T02:56:38Z",
+      "comment_body_sha256": "5c2751b42e992673ee96d7f93188f6930d85948fa35e04b62163a30cec96f25a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119052,
+      "author": "MoerAI",
+      "author_id": 26067127,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T02:59:13.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/schtasks-launch-evidence",
+        "head_sha": "21aebe38fc69c3d1af41633874fece80ade2e475",
         "cluster_id": null,
         "job_path": null
       },
