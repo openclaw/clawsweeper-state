@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T21:50:27.176Z",
-  "count": 11,
+  "generated_at": "2026-08-04T20:22:13.113Z",
+  "count": 14,
   "summary": {
-    "open_prs": 11,
+    "open_prs": 14,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 14,
     "needs_review": 0,
-    "needs_merge_preflight": 11,
-    "needs_result_backfill": 1
+    "needs_merge_preflight": 14,
+    "needs_result_backfill": 2
   },
   "dispatch": {
     "enabled": false,
@@ -854,6 +854,220 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118680,
+      "title": "fix(config): accept declared model compatibility routing settings",
+      "url": "https://github.com/openclaw/openclaw/pull/118680",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118667",
+      "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+      "cluster_id": "issue-openclaw-openclaw-118667",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md",
+      "updated_at": "2026-08-04T11:25:22Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 151,
+        "counts": {
+          "CANCELLED": 13,
+          "SKIPPED": 47,
+          "SUCCESS": 90,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118680#issuecomment-5167057998",
+            "submitted_at": "2026-08-03T13:38:41Z"
+          }
+        ]
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118679,
+      "title": "fix(workboard): reconcile terminal subagent runs",
+      "url": "https://github.com/openclaw/openclaw/pull/118679",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118669",
+      "head_sha": "c3287e48919c9813f74b04c575f435b58f5bd546",
+      "cluster_id": "issue-openclaw-openclaw-118669",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118669.md",
+      "updated_at": "2026-08-04T13:24:40Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 135,
+        "counts": {
+          "CANCELLED": 11,
+          "SKIPPED": 48,
+          "SUCCESS": 76
+        },
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118679#issuecomment-5167057200",
+            "submitted_at": "2026-08-03T13:38:37Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118679#issuecomment-5167072468",
+            "submitted_at": "2026-08-03T13:40:01Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30819003741",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30819003741",
+        "cluster_id": "automerge-openclaw-openclaw-118679",
+        "published_at": "2026-08-03T14:17:25.471Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118679",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(workboard): reconcile terminal subagent runs",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118656,
+      "title": "fix(nextcloud-talk): repump independent room lanes during delivery",
+      "url": "https://github.com/openclaw/openclaw/pull/118656",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118649",
+      "head_sha": "9e65506c8e31805162bbfd0c35dfc3683300f108",
+      "cluster_id": "issue-openclaw-openclaw-118649",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118649.md",
+      "updated_at": "2026-08-04T10:12:04Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 121,
+        "counts": {
+          "CANCELLED": 14,
+          "SKIPPED": 50,
+          "SUCCESS": 56,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118656#issuecomment-5166210397",
+            "submitted_at": "2026-08-03T12:18:33Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30811151078",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30811151078",
+        "cluster_id": "issue-openclaw-openclaw-118649",
+        "published_at": "2026-08-03T12:21:22.646Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118656",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(nextcloud-talk): repump independent room lanes during delivery",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
