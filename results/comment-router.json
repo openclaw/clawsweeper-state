@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T23:10:09.814Z",
+  "updated_at": "2026-08-04T23:10:47.779Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119150:5183520213:2026-08-04T19:14:53Z:re_review",
-      "comment_id": "5183520213",
-      "comment_version_key": "5183520213:2026-08-04T19:14:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119150#issuecomment-5183520213",
-      "comment_created_at": "2026-08-04T19:14:53Z",
-      "comment_updated_at": "2026-08-04T19:14:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "c631d940-9038-11f1-88fc-da1876b3f1f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119150,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T19:15:21.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-release-validation-20260804",
-        "head_sha": "87da8e36b2cb88c28152e10cdc7c2af864847f1f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118499:5162621157:2026-08-04T19:14:26Z:clawsweeper_auto_repair",
       "comment_id": "5162621157",
@@ -31897,6 +31849,39 @@
         "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
         "cluster_id": "issue-openclaw-openclaw-119350",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119350.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:65:5170685697:2026-08-04T23:09:32Z:clawsweeper_needs_human",
+      "comment_id": "5170685697",
+      "comment_version_key": "5170685697:2026-08-04T23:09:32Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/65#issuecomment-5170685697",
+      "comment_created_at": "2026-08-03T19:15:17Z",
+      "comment_updated_at": "2026-08-04T23:09:32Z",
+      "comment_body_sha256": "8ca238813ea25782090a42e4c5797691ae985e3afee0c5f981e8df11bc2276ff",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 65,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - jose 6.2.5–6.2.7 tightens JOSE parsing and validation; an existing Cloudflare Access assertion that was previously accepted could fail during login, while the current tests stub the v... (sha=004b4e71020c34f7423d3c426809c3b25b52bc8e)",
+      "expected_head_sha": "004b4e71020c34f7423d3c426809c3b25b52bc8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T23:10:47.779Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-4fe9a71e02",
+        "head_sha": "004b4e71020c34f7423d3c426809c3b25b52bc8e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
