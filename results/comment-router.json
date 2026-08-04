@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T09:31:20.935Z",
+  "updated_at": "2026-08-04T09:31:26.115Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4901367950:2026-07-07T07:44:28Z:re_review",
-      "comment_id": "4901367950",
-      "comment_version_key": "4901367950:2026-07-07T07:44:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4901367950",
-      "comment_created_at": "2026-07-07T07:44:28Z",
-      "comment_updated_at": "2026-07-07T07:44:28Z",
-      "comment_body_sha256": "f8318f582252868cb63bc826c8c44ee768204b08547c49abad54a4177ab18562",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:07:11.758Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4904321994:2026-07-07T13:27:27Z:re_review",
       "comment_id": "4904321994",
@@ -33576,6 +33549,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:278:5177001186:2026-08-04T09:30:21Z:clawsweeper_needs_human",
+      "comment_id": "5177001186",
+      "comment_version_key": "5177001186:2026-08-04T09:30:21Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/278#issuecomment-5177001186",
+      "comment_created_at": "2026-08-04T09:17:09Z",
+      "comment_updated_at": "2026-08-04T09:30:21Z",
+      "comment_body_sha256": "aeda5e6f154bab36372578dc208c858b9686a615ad021d4ee8bfcfd62b72850b",
+      "repo": "openclaw/crabpot",
+      "issue_number": 278,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review upstream telemetry changes before approval** - This line advances external executable fixture code to a release containing session/context and dashboard changes; inspect the upst...; Review finding: [medium] Review upstream telemetry changes before approval — plugins/clawmetry:1 (sha=aad76ca23c390801d42639271e2033a9da040583)",
+      "expected_head_sha": "aad76ca23c390801d42639271e2033a9da040583",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T09:31:26.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/clawmetry-7271437",
+        "head_sha": "aad76ca23c390801d42639271e2033a9da040583",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
