@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T03:04:27.174Z",
+  "updated_at": "2026-08-04T03:04:30.222Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118844:5170221202:2026-08-03T19:29:00Z:clawsweeper_needs_human",
-      "comment_id": "5170221202",
-      "comment_version_key": "5170221202:2026-08-03T19:29:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118844#issuecomment-5170221202",
-      "comment_created_at": "2026-08-03T18:27:13Z",
-      "comment_updated_at": "2026-08-03T19:29:00Z",
-      "comment_body_sha256": "1548e1999e405c9af080c71785d367a6dadfcc31938e43c4df4df76fbe0380fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118844,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The prior completed ClawSweeper review requested a rebase and refreshed focused evidence. The new head remains behind current main but GitHub reports it cleanly mergeable, so maintain... (sha=ed151ff5daa3cc13ac5e7bf450a8c55fe5f2308a)",
-      "expected_head_sha": "ed151ff5daa3cc13ac5e7bf450a8c55fe5f2308a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:20:20.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-diagnostic-events",
-        "head_sha": "11a0a5b52c2cbf40fabcec44939c96f51ffed266",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118860:5170564090:2026-08-03T19:16:30Z:clawsweeper_needs_human",
       "comment_id": "5170564090",
@@ -33616,6 +33583,54 @@
         "kind": "pull_request",
         "branch": "agent/fix-new-session-metadata",
         "head_sha": "467f5cd935ae74f2c6c73c8da2e9bdfbe1eada36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118912:5174116764:2026-08-04T03:04:01Z:re_review",
+      "comment_id": "5174116764",
+      "comment_version_key": "5174116764:2026-08-04T03:04:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118912#issuecomment-5174116764",
+      "comment_created_at": "2026-08-04T03:04:01Z",
+      "comment_updated_at": "2026-08-04T03:04:01Z",
+      "comment_body_sha256": "a3e3bb988852d1cb3011be32afee7f57e0fadfe3eeb546aac76be3982c39ab8e",
+      "source_delivery_id": "2534d9c0-8fb1-11f1-96ed-5ab1f212d26d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118912,
+      "author": "ZYV5ge",
+      "author_id": 39863830,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T03:04:28.599Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-session-category-search",
+        "head_sha": "72a2556568de636c6cc2b6e3947aa846c49e4248",
         "cluster_id": null,
         "job_path": null
       },
