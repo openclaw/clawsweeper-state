@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:15:06.008Z",
+  "updated_at": "2026-08-04T07:15:07.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112270:5174441420:2026-08-04T03:59:42Z:re_review",
-      "comment_id": "5174441420",
-      "comment_version_key": "5174441420:2026-08-04T03:59:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112270#issuecomment-5174441420",
-      "comment_created_at": "2026-08-04T03:59:42Z",
-      "comment_updated_at": "2026-08-04T03:59:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "ecd543f0-8fb8-11f1-94e8-e9f7df946af7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112270,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T04:00:13.517Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/fix-disabled-memory-status",
-        "head_sha": "749c141d85fc881596655f392ce967f0cf2cdccd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:46:5169583587:2026-08-04T03:21:33Z:clawsweeper_needs_human",
       "comment_id": "5169583587",
@@ -31785,6 +31737,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:182:5168899329:2026-08-04T07:14:15Z:clawsweeper_needs_human",
+      "comment_id": "5168899329",
+      "comment_version_key": "5168899329:2026-08-04T07:14:15Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/182#issuecomment-5168899329",
+      "comment_created_at": "2026-08-03T16:14:52Z",
+      "comment_updated_at": "2026-08-04T07:14:15Z",
+      "comment_body_sha256": "93d1f5db8b6ec8355b1958e38e14bb4a829daf72ddc82b4d6711f66188463d53",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The tag-triggered release workflow has not been exercised by this PR’s ordinary CI run, so an action bootstrap regression could surface during publishing despite successful CI validat... (sha=089e186d4e5b3d39e0673bbac44a81a6bf84f785)",
+      "expected_head_sha": "089e186d4e5b3d39e0673bbac44a81a6bf84f785",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:15:07.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-defbc93555",
+        "head_sha": "089e186d4e5b3d39e0673bbac44a81a6bf84f785",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
