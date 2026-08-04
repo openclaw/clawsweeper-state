@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119233",
+  "mode": "autonomous",
+  "run_id": "30918879191",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30918879191",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119233.md",
+  "published_at": "2026-08-04T15:03:56.179Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119233",
+  "canonical_pr": null,
+  "summary": "#119233 remains a source-proven per-agent auth-order persistence bug on current main. Plan one narrow fix that preserves inherited order references without copying OAuth credentials; keep #114989 open as a separate runtime-refresh follow-up.",
+  "actions": [
+    {
+      "target": "#119233",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Current main still has the reported silent persistence failure, with a small established writer-boundary repair path."
+    },
+    {
+      "target": "#114989",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "Same auth-order area, but a different runtime-refresh root cause and follow-up path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119233",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#119233",
+      "candidate_fix": null,
+      "reason": "No viable fix PR is hydrated; build one narrow new-fix-PR artifact for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
