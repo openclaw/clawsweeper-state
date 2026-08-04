@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:13:53.472Z",
+  "updated_at": "2026-08-04T05:14:01.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118995:5172654998:2026-08-03T23:02:50Z:re_review",
-      "comment_id": "5172654998",
-      "comment_version_key": "5172654998:2026-08-03T23:02:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118995#issuecomment-5172654998",
-      "comment_created_at": "2026-08-03T23:02:50Z",
-      "comment_updated_at": "2026-08-03T23:02:50Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "source_delivery_id": "7465f410-8f8f-11f1-96cc-1bf06ac6446b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118995,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-03T23:03:33.426Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-gateway-usage-memory-apis",
-        "head_sha": "5d11394cc21c75ee7a2b4d763f9ff2d47f11afa4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118603:5164835821:2026-08-03T23:02:46Z:clawsweeper_needs_human",
       "comment_id": "5164835821",
@@ -32855,6 +32807,39 @@
         "kind": "pull_request",
         "branch": "agent/fix-adapter-process-lifecycle",
         "head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118879:5170601195:2026-08-04T05:13:18Z:clawsweeper_needs_human",
+      "comment_id": "5170601195",
+      "comment_version_key": "5170601195:2026-08-04T05:13:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118879#issuecomment-5170601195",
+      "comment_created_at": "2026-08-03T19:06:48Z",
+      "comment_updated_at": "2026-08-04T05:13:18Z",
+      "comment_body_sha256": "58395198f74e3202408e3f429846553cf8b10bb38e0e62d2954ea3f634523045",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only state-machine tests and CI are supplied; add redacted real Gateway restart-recovery output before merge. After adding proof, update the PR... (sha=e2d841bc4ebe7b92cf3782930c6437fd715bb56c)",
+      "expected_head_sha": "e2d841bc4ebe7b92cf3782930c6437fd715bb56c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T05:14:01.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-terminal-recovery-residue",
+        "head_sha": "e2d841bc4ebe7b92cf3782930c6437fd715bb56c",
         "cluster_id": null,
         "job_path": null
       }
