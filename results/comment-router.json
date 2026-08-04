@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:07:46.704Z",
+  "updated_at": "2026-08-04T07:07:51.999Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101745:5174148244:2026-08-04T03:08:46Z:re_review",
-      "comment_id": "5174148244",
-      "comment_version_key": "5174148244:2026-08-04T03:08:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101745#issuecomment-5174148244",
-      "comment_created_at": "2026-08-04T03:08:46Z",
-      "comment_updated_at": "2026-08-04T03:08:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "cf11a720-8fb1-11f1-864d-e2703f7c2969",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101745,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:09:15.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-101643-codex-compaction-cap",
-        "head_sha": "40f66c6ea3ed03af7aabb94a322ffa29f247ae2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119050:5174151567:2026-08-04T03:09:16Z:re_review",
-      "comment_id": "5174151567",
-      "comment_version_key": "5174151567:2026-08-04T03:09:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119050#issuecomment-5174151567",
-      "comment_created_at": "2026-08-04T03:09:16Z",
-      "comment_updated_at": "2026-08-04T03:09:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e123d000-8fb1-11f1-8c3f-3b37d1001270",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119050,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:09:46.671Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-setup-handoff-20260804",
-        "head_sha": "7a6d6fdfb4fd45b7212903263a67cba4131129eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Kova:88:5174154429:2026-08-04T03:09:44Z:re_review",
       "comment_id": "5174154429",
@@ -31978,6 +31882,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116394:5130683316:2026-08-04T07:06:57Z:clawsweeper_needs_human",
+      "comment_id": "5130683316",
+      "comment_version_key": "5130683316:2026-08-04T07:06:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116394#issuecomment-5130683316",
+      "comment_created_at": "2026-07-30T12:15:24Z",
+      "comment_updated_at": "2026-08-04T07:06:57Z",
+      "comment_body_sha256": "7182347e3e9fde3e7efa045d85653490b0ee6b870a3856a3fce027ca3a4cd6a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116394,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Project a reviewer-safe request to the local host (P1)** - The local broker forwards requestedEnv and raw display fields directly to the host callback, while Gateway deliberately exposes only environment-key nam...; Review finding: [P1] Project a reviewer-safe request to the local host — src/agents/local-exec-approval-broker.ts:95-98 - [P1] Fence approvals after the local turn ends — src/agen... (sha=9393818e3d7030a6433262fa96f7f231d8700243)",
+      "expected_head_sha": "9393818e3d7030a6433262fa96f7f231d8700243",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:07:51.999Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/acp-runtime-turn-host-2",
+        "head_sha": "9393818e3d7030a6433262fa96f7f231d8700243",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116394:5175524660:2026-08-04T06:43:32Z:re_review",
+      "comment_id": "5175524660",
+      "comment_version_key": "5175524660:2026-08-04T06:43:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116394#issuecomment-5175524660",
+      "comment_created_at": "2026-08-04T06:43:32Z",
+      "comment_updated_at": "2026-08-04T06:43:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116394,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:07:51.999Z",
+      "target": null
     }
   ]
 }
