@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:27:10.336Z",
+  "updated_at": "2026-08-04T12:28:46.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116394:5175845812:2026-08-04T07:21:38Z:re_review",
-      "comment_id": "5175845812",
-      "comment_version_key": "5175845812:2026-08-04T07:21:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116394#issuecomment-5175845812",
-      "comment_created_at": "2026-08-04T07:21:38Z",
-      "comment_updated_at": "2026-08-04T07:21:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "22884d00-8fd5-11f1-88e9-759e3353d84a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116394,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:22:20.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/acp-runtime-turn-host-2",
-        "head_sha": "7b650a5f7507fd45bf64b08dcefac107d8de91d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-04T07:21:39Z:clawsweeper_needs_human",
       "comment_id": "5164752963",
@@ -33835,6 +33787,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:57:5178740137:2026-08-04T12:27:52Z:clawsweeper_needs_human",
+      "comment_id": "5178740137",
+      "comment_version_key": "5178740137:2026-08-04T12:27:52Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/57#issuecomment-5178740137",
+      "comment_created_at": "2026-08-04T12:04:28Z",
+      "comment_updated_at": "2026-08-04T12:27:52Z",
+      "comment_body_sha256": "ccd287c9aa27cb6a89c1ddd3fb0e82ec47baa3ab2dd5b10c6f9bc1beda166e13",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 57,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes local regression and Composio results but does not include inspectable output from the repository-required Crabpot pl... (sha=6400db8e93a53559d532fd9e3fe30321a984c231)",
+      "expected_head_sha": "6400db8e93a53559d532fd9e3fe30321a984c231",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T12:28:46.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-packed-manifest-fields",
+        "head_sha": "6400db8e93a53559d532fd9e3fe30321a984c231",
+        "cluster_id": "automerge-openclaw-plugin-inspector-57",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-57.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
