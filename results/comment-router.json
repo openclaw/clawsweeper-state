@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T07:04:43.356Z",
+  "updated_at": "2026-08-04T07:04:25.161Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118907:5174116635:2026-08-04T03:03:59Z:re_review",
@@ -32014,52 +32014,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:119082:5175694746:2026-08-04T07:04:07Z:re_review",
-      "comment_id": "5175694746",
-      "comment_version_key": "5175694746:2026-08-04T07:04:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119082#issuecomment-5175694746",
-      "comment_created_at": "2026-08-04T07:04:07Z",
-      "comment_updated_at": "2026-08-04T07:04:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "b03a4930-8fd2-11f1-83c3-465c27bf9c63",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118594:5164210915:2026-08-04T07:03:28Z:clawsweeper_auto_repair",
+      "comment_id": "5164210915",
+      "comment_version_key": "5164210915:2026-08-04T07:03:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118594#issuecomment-5164210915",
+      "comment_created_at": "2026-08-03T08:46:55Z",
+      "comment_updated_at": "2026-08-04T07:03:28Z",
+      "comment_body_sha256": "998d8ca08ae4772ff2f2716db41fb1a18162fc2958be315a55c8912c900668e7",
       "repo": "openclaw/openclaw",
-      "issue_number": 119082,
-      "author": "vincentkoc",
-      "author_id": 25068,
+      "issue_number": 118594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3895ea5245ea9d879391f16b250bfbef7f9dc1c0)",
+      "expected_head_sha": "3895ea5245ea9d879391f16b250bfbef7f9dc1c0",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:04:39.909Z",
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:04:25.161Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/llamacpp-simple-completion-host-order-20260804",
-        "head_sha": "1fb4f3c70975e94d6f9a83ddc96693f5daa4c411",
+        "branch": "docs/install-jetson-guide",
+        "head_sha": "3895ea5245ea9d879391f16b250bfbef7f9dc1c0",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
