@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-04T02:04:00.906Z",
+  "updated_at": "2026-08-04T01:40:10.724Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118843:5170576027:2026-08-03T20:15:31Z:clawsweeper_needs_human",
+      "comment_id": "5170576027",
+      "comment_version_key": "5170576027:2026-08-03T20:15:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118843#issuecomment-5170576027",
+      "comment_created_at": "2026-08-03T19:04:17Z",
+      "comment_updated_at": "2026-08-03T20:15:31Z",
+      "comment_body_sha256": "04862480db69acd9860b4b732a2a1b52ea483845a338e572505a7dabc8d4ad7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118843,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the rebase and the named QA evidence before landing so the process-control test is proven against the merge target. (sha=521d92943e167c0c7c27e942985487b1adff102a)",
+      "expected_head_sha": "521d92943e167c0c7c27e942985487b1adff102a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-03T20:20:20.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-a01-process-controls-20260803",
+        "head_sha": "521d92943e167c0c7c27e942985487b1adff102a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118867:5170576497:2026-08-03T20:11:26Z:clawsweeper_needs_human",
       "comment_id": "5170576497",
@@ -33180,54 +33213,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119050:5173754358:2026-08-04T02:03:33Z:re_review",
-      "comment_id": "5173754358",
-      "comment_version_key": "5173754358:2026-08-04T02:03:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119050#issuecomment-5173754358",
-      "comment_created_at": "2026-08-04T02:03:33Z",
-      "comment_updated_at": "2026-08-04T02:03:33Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "source_delivery_id": "b2cd1b20-8fa8-11f1-8e15-da084e6c8ed8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119050,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T02:03:59.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-setup-handoff-20260804",
-        "head_sha": "03ba86544e8f3051a1275a4b4a4646e10078a9f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
