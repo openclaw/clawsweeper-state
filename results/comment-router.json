@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T04:04:51.397Z",
+  "updated_at": "2026-08-04T04:04:53.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118919:5171124824:2026-08-03T20:24:44Z:clawsweeper_needs_human",
-      "comment_id": "5171124824",
-      "comment_version_key": "5171124824:2026-08-03T20:24:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118919#issuecomment-5171124824",
-      "comment_created_at": "2026-08-03T20:02:55Z",
-      "comment_updated_at": "2026-08-03T20:24:44Z",
-      "comment_body_sha256": "abcf99a4847b6aff1858ca574c0804de37e716a74b98971f616f7bf4e61d2311",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118919,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check state still lists build, lint, type, QA-smoke, and compact-check jobs as in progress; merge should wait for the required jobs to become terminal and gree... (sha=66582ed591c014d732f90aa4cde5435bddf523ac)",
-      "expected_head_sha": "66582ed591c014d732f90aa4cde5435bddf523ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T21:19:28.281Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-a09-plugin-managed-flows-20260803",
-        "head_sha": "a02ea5e8c14e3b826d75be78b4b8e34eacd7a6ac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118902:5171134069:2026-08-03T21:14:59Z:clawsweeper_needs_human",
       "comment_id": "5171134069",
@@ -33389,6 +33356,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117034:5174469119:2026-08-04T04:04:20Z:re_review",
+      "comment_id": "5174469119",
+      "comment_version_key": "5174469119:2026-08-04T04:04:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5174469119",
+      "comment_created_at": "2026-08-04T04:04:20Z",
+      "comment_updated_at": "2026-08-04T04:04:20Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "927d8f60-8fb9-11f1-9f86-755fc88eb3a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117034,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T04:04:51.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-observable-foundation",
+        "head_sha": "f3ed395f95d12a0e5ceb35fb30525c6834aad456",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
