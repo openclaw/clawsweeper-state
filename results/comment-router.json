@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:07:44.224Z",
+  "updated_at": "2026-08-04T07:07:46.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118907:5174142537:2026-08-04T03:08:08Z:re_review",
-      "comment_id": "5174142537",
-      "comment_version_key": "5174142537:2026-08-04T03:08:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118907#issuecomment-5174142537",
-      "comment_created_at": "2026-08-04T03:08:08Z",
-      "comment_updated_at": "2026-08-04T03:08:08Z",
-      "comment_body_sha256": "534a1feb471e64dd4f7c2f21b2de2418b75bf78d6ce53c1a0a385b3976e280c0",
-      "source_delivery_id": "b8749ef0-8fb1-11f1-96b1-22a4f9a0af3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118907,
-      "author": "ZYV5ge",
-      "author_id": 39863830,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:08:49.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-macos-dashboard-dialogs",
-        "head_sha": "27f550dbd3f28d82962a48fe2afad884d5675e15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101745:5174148244:2026-08-04T03:08:46Z:re_review",
       "comment_id": "5174148244",
@@ -31990,6 +31942,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-add-session-paging-foundation",
         "head_sha": "48d55f6cfd36a83f6e2f3b0b364a68b25e40f6fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118792:5169699141:2026-08-04T07:06:46Z:clawsweeper_needs_human",
+      "comment_id": "5169699141",
+      "comment_version_key": "5169699141:2026-08-04T07:06:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118792#issuecomment-5169699141",
+      "comment_created_at": "2026-08-03T17:33:55Z",
+      "comment_updated_at": "2026-08-04T07:06:46Z",
+      "comment_body_sha256": "b7028b6232904d542fd6c833c8f7d495152d043cd1544f1cece043f3edce39ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118792,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - For runs without a final-call snapshot, the intentional upgrade behavior is to retain or mark the session estimate stale until a valid snapshot or compaction result exists; maintainer... (sha=efed76a4a70f2960c23a106c10cc5fbbd8bab824)",
+      "expected_head_sha": "efed76a4a70f2960c23a106c10cc5fbbd8bab824",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:07:46.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118772-total-tokens-cumulative",
+        "head_sha": "efed76a4a70f2960c23a106c10cc5fbbd8bab824",
         "cluster_id": null,
         "job_path": null
       }
