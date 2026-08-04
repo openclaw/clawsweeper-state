@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T22:25:21.506Z",
+  "updated_at": "2026-08-04T22:25:26.606Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116794:5183259057:2026-08-04T18:49:11Z:freeform_assist",
-      "comment_id": "5183259057",
-      "comment_version_key": "5183259057:2026-08-04T18:49:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5183259057",
-      "comment_created_at": "2026-08-04T18:49:11Z",
-      "comment_updated_at": "2026-08-04T18:49:11Z",
-      "comment_body_sha256": "21da6e1947752b0b585734e02d3bc9c7d6506743bcfddfc29f3c493808e83495",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116794,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nfinal exact-head refresh at d9efe2c757a after the pr1 generated native i18n inventory fix and clean restack. prior host-only privacy and lifecycle re-admission moves remain applied.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T19:06:57.453Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-3-runtime",
-        "head_sha": "d9efe2c757aae1d6b624972f6b25c0aea6bf606a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118696:5167474418:2026-08-04T19:06:08Z:clawsweeper_auto_merge",
       "comment_id": "5167474418",
@@ -31888,6 +31841,39 @@
         "kind": "pull_request",
         "branch": "fix/xai-invalid-utf8-oauth",
         "head_sha": "7bc3ad1a8ceb3433107d4f38f815552f767c3ac4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119354:5185293151:2026-08-04T22:24:38Z:clawsweeper_needs_human",
+      "comment_id": "5185293151",
+      "comment_version_key": "5185293151:2026-08-04T22:24:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119354#issuecomment-5185293151",
+      "comment_created_at": "2026-08-04T22:24:38Z",
+      "comment_updated_at": "2026-08-04T22:24:38Z",
+      "comment_body_sha256": "ae2f1c706208f36bf7047feb8e6d343a3e75552096ac0d1789f467894b7bac95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119354,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This read-only checkout has no installed Microsoft Teams SDK source and DNS prevented fetching it, so the endpoint-override contract could not be independently inspected here; require... (sha=fee5f4860a09a0720d8daa0b85c14bc52ec2fd72)",
+      "expected_head_sha": "fee5f4860a09a0720d8daa0b85c14bc52ec2fd72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T22:25:26.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-msteams-jwks-test",
+        "head_sha": "fee5f4860a09a0720d8daa0b85c14bc52ec2fd72",
         "cluster_id": null,
         "job_path": null
       }
