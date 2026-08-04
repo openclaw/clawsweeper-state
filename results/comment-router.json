@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-03T23:43:15.914Z",
+  "updated_at": "2026-08-04T00:00:40.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5026104580:2026-07-20T19:06:06Z:re_review",
-      "comment_id": "5026104580",
-      "comment_version_key": "5026104580:2026-07-20T19:06:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5026104580",
-      "comment_created_at": "2026-07-20T19:06:06Z",
-      "comment_updated_at": "2026-07-20T19:06:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T19:26:24.738Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5029049553:2026-07-21T01:09:08Z:re_review",
       "comment_id": "5029049553",
@@ -32837,6 +32810,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1075:5159857312:2026-08-03T23:59:45Z:clawsweeper_needs_human",
+      "comment_id": "5159857312",
+      "comment_version_key": "5159857312:2026-08-03T23:59:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1075#issuecomment-5159857312",
+      "comment_created_at": "2026-08-02T18:58:07Z",
+      "comment_updated_at": "2026-08-03T23:59:45Z",
+      "comment_body_sha256": "af4612da6ce5023c4af88ad5fb77c8daf7baa6d7054b058fe6141a2dc5766bde",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The atomic change spans persisted permission writes, live capability exposure, and execution-approval observation; a regression could alter an existing user's effective command exposu... (sha=57ac65dc0dfaefc82e751786f337da0dba0064be)",
+      "expected_head_sha": "57ac65dc0dfaefc82e751786f337da0dba0064be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T00:00:40.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-permissions-mvvm-pilot",
+        "head_sha": "57ac65dc0dfaefc82e751786f337da0dba0064be",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
