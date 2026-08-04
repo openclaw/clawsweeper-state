@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-53932",
+  "mode": "autonomous",
+  "run_id": "30886385404",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30886385404",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
+  "published_at": "2026-08-04T07:47:36.886Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_pr": null,
+  "summary": "#53932 remains a confirmed, non-security Slack correctness bug. Current main drops the established forceDocument/asDocument intent before Slack reaches the shared loader, which therefore defaults to image optimization. A narrow implementation artifact is ready; code changes and local validation are blocked because this target checkout is read-only.",
+  "actions": [
+    {
+      "target": "#53932",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout; the canonical fix path is the cluster-scoped new-fix-PR artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-53932",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "A narrow plugin-owned fix is ready for an executor with a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
