@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T08:34:22.937Z",
-  "count": 16,
+  "generated_at": "2026-08-04T08:40:17.240Z",
+  "count": 17,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 16,
+    "needs_checks": 17,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
-    "needs_result_backfill": 3
+    "needs_merge_preflight": 17,
+    "needs_result_backfill": 4
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,55 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119160,
+      "title": "fix(bedrock): honor Opus 5 maxTokens when reasoning is off",
+      "url": "https://github.com/openclaw/openclaw/pull/119160",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119148",
+      "head_sha": "fb78c112e28a6eb6f14d1414d650900441b07f2b",
+      "cluster_id": "issue-openclaw-openclaw-119148",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119148.md",
+      "updated_at": "2026-08-04T08:35:46Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 95,
+        "counts": {
+          "CANCELLED": 8,
+          "SKIPPED": 42,
+          "SUCCESS": 43,
+          "IN_PROGRESS": 2
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 118807,
       "title": "fix(reply): defer steer messages while embedded compaction runs",
