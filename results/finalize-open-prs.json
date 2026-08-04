@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T09:28:03.827Z",
-  "count": 15,
+  "generated_at": "2026-08-04T09:35:30.353Z",
+  "count": 16,
   "summary": {
-    "open_prs": 15,
+    "open_prs": 16,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 15,
+    "needs_checks": 16,
     "needs_review": 0,
-    "needs_merge_preflight": 15,
+    "needs_merge_preflight": 16,
     "needs_result_backfill": 2
   },
   "dispatch": {
@@ -27,6 +27,77 @@
   },
   "prs": [
     {
+      "number": 119172,
+      "title": "fix(slack): preserve original bytes for forced media uploads",
+      "url": "https://github.com/openclaw/openclaw/pull/119172",
+      "branch": "clawsweeper/issue-openclaw-openclaw-53932",
+      "head_sha": "9f880b538e35c9ef0debe087a02ed61bb2b97b78",
+      "cluster_id": "issue-openclaw-openclaw-53932",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
+      "updated_at": "2026-08-04T09:34:35Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 63,
+        "counts": {
+          "CANCELLED": 12,
+          "IN_PROGRESS": 17,
+          "SKIPPED": 26,
+          "SUCCESS": 8
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / preflight:IN_PROGRESS",
+          "CodeQL / Security High (core-auth-secrets):IN_PROGRESS",
+          "OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS",
+          "Shared OpenClawKit Periphery / Detect shared OpenClawKit scan scope:IN_PROGRESS",
+          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
+          "macOS Periphery Dead Code / Detect macOS scan scope:IN_PROGRESS",
+          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
+          "CodeQL / Security High (network-ssrf-boundary):IN_PROGRESS",
+          "CodeQL / Security High (mcp-process-tool-boundary):IN_PROGRESS",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
+          "CodeQL / Security High (actions):IN_PROGRESS",
+          "CI / security-fast:IN_PROGRESS",
+          "Security Sensitive Guard / security-sensitive-guard:IN_PROGRESS",
+          "Workflow Sanity / actionlint:IN_PROGRESS",
+          "Dependency Guard / dependency-guard:IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30892678104",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30892678104",
+        "cluster_id": "issue-openclaw-openclaw-53932",
+        "published_at": "2026-08-04T08:54:27.696Z",
+        "workflow_conclusion": "success",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 119160,
       "title": "fix(bedrock): honor Opus 5 maxTokens when reasoning is off",
       "url": "https://github.com/openclaw/openclaw/pull/119160",
@@ -34,7 +105,7 @@
       "head_sha": "fb78c112e28a6eb6f14d1414d650900441b07f2b",
       "cluster_id": "issue-openclaw-openclaw-119148",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119148.md",
-      "updated_at": "2026-08-04T09:25:09Z",
+      "updated_at": "2026-08-04T09:33:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
