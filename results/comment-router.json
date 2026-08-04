@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T18:09:54.924Z",
+  "updated_at": "2026-08-04T18:10:04.308Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119057:5173970388:2026-08-04T13:29:22Z:clawsweeper_needs_human",
-      "comment_id": "5173970388",
-      "comment_version_key": "5173970388:2026-08-04T13:29:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5173970388",
-      "comment_created_at": "2026-08-04T02:38:32Z",
-      "comment_updated_at": "2026-08-04T13:29:22Z",
-      "comment_body_sha256": "9d8edfc10090ef9e670098ddc7080a69fff5312c12058592680318abca2ba291",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new default prompt boundary can add a model round trip or alter established one-cell workflows when a model previously chose a target semantically. (sha=591211342c6c5300657212f94bf7d72ad1169708)",
-      "expected_head_sha": "591211342c6c5300657212f94bf7d72ad1169708",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T14:07:43.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-semantic-observation-stack-20260804",
-        "head_sha": "591211342c6c5300657212f94bf7d72ad1169708",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-08-04T13:27:46Z:clawsweeper_needs_human",
       "comment_id": "5174219273",
@@ -31771,6 +31738,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119299:5182854672:2026-08-04T18:09:07Z:clawsweeper_needs_human",
+      "comment_id": "5182854672",
+      "comment_version_key": "5182854672:2026-08-04T18:09:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119299#issuecomment-5182854672",
+      "comment_created_at": "2026-08-04T18:09:07Z",
+      "comment_updated_at": "2026-08-04T18:09:07Z",
+      "comment_body_sha256": "7a591af2227ddea1980f045c83afc3c75d3c8041b1f890a6d0a672f5e7d929b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live run shows an MCP server restored on an earlier functional head, but it does not prove explicit finite-cap capture or...; Review finding: [P1] Capture authority for explicit finite tool caps — src/agents/tools/cron-tool.ts:470-477 - [P1] Intersect captured MCP tool names before projection — src/agent... (sha=157ecfe6c9579f388c8212ecc214e2dd4dee82df)",
+      "expected_head_sha": "157ecfe6c9579f388c8212ecc214e2dd4dee82df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T18:10:04.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-runtime-authority-v1",
+        "head_sha": "157ecfe6c9579f388c8212ecc214e2dd4dee82df",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
