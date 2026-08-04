@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119148"
-mode: "autonomous"
-run_id: "30890488374"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30890488374"
+mode: "plan"
+run_id: "30895879125"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30895879125"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-04T08:58:43.661Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-04T09:27:28.373Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119148"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119148"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119160"
 actions_total: 5
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30890488374](https://github.com/openclaw/clawsweeper/actions/runs/30890488374)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30895879125](https://github.com/openclaw/clawsweeper/actions/runs/30895879125)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/119148
 
 ## Summary
 
-#119148 is a current, narrow Bedrock provider bug on main b1f2aae3. A two-file fix plan is ready, but this worker cannot edit or validate the branch because the checkout is read-only and its focused test dependencies are incomplete.
+Keep #119148 and repair the writable #119160 branch: scope the model-cap resolver to the explicit Opus 5 reasoning-off contract before revalidating.
 
 ## Impact
 
@@ -54,8 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119148
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119160 | clawsweeper/issue-openclaw-openclaw-119148 |  |
-| issue_implementation_status_comment | updated | #119148 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/119148
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119148 | fix_needed | planned | canonical | Use the existing provider-local cap resolver for explicit reasoning-off requests; it preserves request overrides and omits synthetic fallback caps. |
-| #97176 | keep_closed | skipped | related | Already closed; no mutation. |
-| #97343 | keep_closed | skipped | related | Already merged; no mutation. |
-| cluster:issue-openclaw-openclaw-119148 | build_fix_artifact | planned | canonical | Narrow new fix PR is appropriate. |
-| cluster:issue-openclaw-openclaw-119148 | open_fix_pr | blocked | canonical | This worker has a read-only checkout, so it cannot apply the patch or run pnpm install to restore missing dependencies. Executor should apply the artifact on clawsweeper/issue-openclaw-openclaw-119148, install dependencies if required, and validate before opening the PR. |
+| #97176 | keep_closed | skipped | related | Already closed; no closure mutation is valid. |
+| #97343 | keep_closed | skipped | related | Already closed; no closure mutation is valid. |
+| #119148 | keep_canonical | planned | canonical | The report is a distinct, source-reproducible Opus 5 reasoning-off cap omission with a viable repair PR. |
+| #119160 | fix_needed | planned | canonical | Repair the existing writable PR branch; do not merge while its actionable bot review finding remains unresolved. |
+| cluster:issue-openclaw-openclaw-119148 | build_fix_artifact | planned | canonical | Produces an executable repair path for the hydrated P1 review finding without broadening the cluster. |
 
 ## Needs Human
 

@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-04T09:07:35.480Z
+Generated: 2026-08-04T09:28:03.827Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 17 |
+| open_prs | 15 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 17 |
+| needs_checks | 15 |
 | needs_review | 0 |
-| needs_merge_preflight | 17 |
-| needs_result_backfill | 3 |
+| needs_merge_preflight | 15 |
+| needs_result_backfill | 2 |
 
 ## Dispatch
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | issue-openclaw-openclaw-119148 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:43 SUCCESS:46; blockers:4 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | issue-openclaw-openclaw-119148 | MERGEABLE | BEHIND | CANCELLED:18 SKIPPED:51 SUCCESS:52; blockers:9 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118807](https://github.com/openclaw/openclaw/pull/118807) | fix(reply): defer steer messages while embedded compaction runs | issue-openclaw-openclaw-118771 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:42 SUCCESS:82 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | issue-openclaw-openclaw-118776 | MERGEABLE | BEHIND | CANCELLED:13 SKIPPED:44 SUCCESS:81 FAILURE:2 NEUTRAL:1; blockers:8 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118796](https://github.com/openclaw/openclaw/pull/118796) | fix(session): require a real context snapshot for CLI usage | issue-openclaw-openclaw-118772 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:43 SUCCESS:83 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
@@ -45,5 +45,3 @@ Status: report_only
 | [#118599](https://github.com/openclaw/openclaw/pull/118599) | fix(gateway): coordinate singleton lock through shared state | issue-openclaw-openclaw-117635 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:82 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | issue-openclaw-openclaw-116747 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:45 SUCCESS:72 FAILURE:2; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | issue-openclaw-openclaw-118185 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:48 SUCCESS:85 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | issue-openclaw-openclaw-116601 | MERGEABLE | BEHIND | CANCELLED:3 SKIPPED:40 SUCCESS:78 NEUTRAL:1; blockers:2 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#118282](https://github.com/openclaw/openclaw/pull/118282) | fix(doctor): import legacy exec approvals with null usage metadata | issue-openclaw-openclaw-118242 | MERGEABLE | BEHIND | CANCELLED:11 SKIPPED:44 SUCCESS:83 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
