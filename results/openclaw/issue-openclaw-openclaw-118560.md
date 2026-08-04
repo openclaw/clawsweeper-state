@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
 mode: "autonomous"
-run_id: "30900045613"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30900045613"
+run_id: "30913032997"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30913032997"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-04T10:31:01.904Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-04T14:24:40.445Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30900045613](https://github.com/openclaw/clawsweeper/actions/runs/30900045613)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30913032997](https://github.com/openclaw/clawsweeper/actions/runs/30913032997)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 ## Summary
 
-Issue #118560 remains reproducible on pinned main 121c6c10423827ce8a65118600f3498e20b8f6e0: transcript-search activation passes only sessionKey, discarding the required sessionId/messageId anchor despite Gateway support for anchored reset-archive reads. The supplied checkout is clean but read-only, so this worker could not apply the repair or complete final validation.
+Confirmed on main e2b90e6e71c54184d13eae2030c058549f4098c9: transcript-search navigation drops the hit anchor before the initial chat load. A narrow, credited UI-only fix PR is planned; no Gateway, protocol, config, or changelog change is needed. Local focused tests could not start because the checkout lacks the installed p-map dependency.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Issue #118560 remains reproducible on pinned main 121c6c10423827ce8a65118600f349
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: Merge blocked: archived history identity leaks into subsequent send routing. |
+| issue_implementation_status_comment | updated | #118560 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +67,9 @@ Issue #118560 remains reproducible on pinned main 121c6c10423827ce8a65118600f349
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | fix_needed | blocked | canonical | Concrete implementation is blocked only by the read-only checkout; no maintainer product decision is needed. |
-| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A narrow, non-security repair is ready for a writable executor. |
+| #118560 | fix_needed | planned | canonical | The issue is reproducible by source trace on current main and has no viable PR. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned |  | Prepared a narrow implementation and validation plan for the deterministic executor. |
+| cluster:issue-openclaw-openclaw-118560 | open_fix_pr | planned |  | The job permits one new fix PR and prohibits merge/close. |
 
 ## Needs Human
 
