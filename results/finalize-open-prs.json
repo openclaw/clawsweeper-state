@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T22:38:46.329Z",
-  "count": 11,
+  "generated_at": "2026-08-04T23:15:26.419Z",
+  "count": 12,
   "summary": {
-    "open_prs": 11,
+    "open_prs": 12,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 12,
     "needs_review": 0,
-    "needs_merge_preflight": 11,
+    "needs_merge_preflight": 12,
     "needs_result_backfill": 1
   },
   "dispatch": {
@@ -26,6 +26,82 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119367,
+      "title": "fix(memory-core): resume validated session transcript appends",
+      "url": "https://github.com/openclaw/openclaw/pull/119367",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119350",
+      "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
+      "cluster_id": "issue-openclaw-openclaw-119350",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119350.md",
+      "updated_at": "2026-08-04T23:11:52Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 103,
+        "counts": {
+          "CANCELLED": 7,
+          "SKIPPED": 44,
+          "SUCCESS": 51,
+          "IN_PROGRESS": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119367#issuecomment-5185607290",
+            "submitted_at": "2026-08-04T23:09:27Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30955531366",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30955531366",
+        "cluster_id": "issue-openclaw-openclaw-119350",
+        "published_at": "2026-08-04T23:15:00.226Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119367",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(memory-core): resume validated session transcript appends",
+          "idempotency_key": null,
+          "reason": "checks are not clean: build-artifacts: IN_PROGRESS",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119265,
       "title": "fix(agents): audit direct embedded bundle tool calls",
@@ -778,7 +854,7 @@
       "head_sha": "8adbba1dfd660b0d0dd428360cf59ebb32c8b254",
       "cluster_id": "issue-openclaw-openclaw-118673",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118673.md",
-      "updated_at": "2026-08-04T19:02:03Z",
+      "updated_at": "2026-08-04T23:15:22Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
