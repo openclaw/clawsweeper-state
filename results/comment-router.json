@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:09:28.565Z",
+  "updated_at": "2026-08-04T07:09:38.963Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/wacli:338:5171844676:2026-08-04T03:19:56Z:clawsweeper_needs_human",
-      "comment_id": "5171844676",
-      "comment_version_key": "5171844676:2026-08-04T03:19:56Z",
-      "comment_url": "https://github.com/openclaw/wacli/pull/338#issuecomment-5171844676",
-      "comment_created_at": "2026-08-03T21:19:12Z",
-      "comment_updated_at": "2026-08-04T03:19:56Z",
-      "comment_body_sha256": "f934383581e8266916ccb9438f20b5e7b1d92d844dc396584465369cbba13832",
-      "repo": "openclaw/wacli",
-      "issue_number": 338,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds persistent coordinates, including live-location updates, to local history; maintainers should explicitly accept that retention scope. (sha=fd4ba2c262342e6bad8cb301661e0234154d0a2c)",
-      "expected_head_sha": "fd4ba2c262342e6bad8cb301661e0234154d0a2c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T03:20:49.430Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/send-location",
-        "head_sha": "fd4ba2c262342e6bad8cb301661e0234154d0a2c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118879:5170601195:2026-08-04T03:20:17Z:clawsweeper_auto_repair",
       "comment_id": "5170601195",
@@ -31880,6 +31847,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:86541:5175738541:2026-08-04T07:09:05Z:re_review",
+      "comment_id": "5175738541",
+      "comment_version_key": "5175738541:2026-08-04T07:09:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/86541#issuecomment-5175738541",
+      "comment_created_at": "2026-08-04T07:09:05Z",
+      "comment_updated_at": "2026-08-04T07:09:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "61a6d170-8fd3-11f1-938f-3056cd96d681",
+      "repo": "openclaw/openclaw",
+      "issue_number": 86541,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T07:09:35.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-038-telegram-polling-sleep",
+        "head_sha": "3d05213b47268f51474ea4aabf90562e20cfe0fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
