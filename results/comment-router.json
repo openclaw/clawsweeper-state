@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:25:06.500Z",
+  "updated_at": "2026-08-04T11:25:23.081Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118594:5164210915:2026-08-04T07:03:28Z:clawsweeper_auto_repair",
-      "comment_id": "5164210915",
-      "comment_version_key": "5164210915:2026-08-04T07:03:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118594#issuecomment-5164210915",
-      "comment_created_at": "2026-08-03T08:46:55Z",
-      "comment_updated_at": "2026-08-04T07:03:28Z",
-      "comment_body_sha256": "998d8ca08ae4772ff2f2716db41fb1a18162fc2958be315a55c8912c900668e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118594,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3895ea5245ea9d879391f16b250bfbef7f9dc1c0)",
-      "expected_head_sha": "3895ea5245ea9d879391f16b250bfbef7f9dc1c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:04:25.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/install-jetson-guide",
-        "head_sha": "3895ea5245ea9d879391f16b250bfbef7f9dc1c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117034:5175579604:2026-08-04T06:50:34Z:re_review",
       "comment_id": "5175579604",
@@ -33795,6 +33762,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118680:5167057998:2026-08-04T11:24:06Z:clawsweeper_needs_human",
+      "comment_id": "5167057998",
+      "comment_version_key": "5167057998:2026-08-04T11:24:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118680#issuecomment-5167057998",
+      "comment_created_at": "2026-08-03T13:38:41Z",
+      "comment_updated_at": "2026-08-04T11:24:06Z",
+      "comment_body_sha256": "95a2c7fc42caa818abe0ac5e67d418fd85fc9d00f8731af621c38fad5599d2a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously rejected persisted settings will now affect provider routing, cache behavior, session headers, or tool streaming; that compatibility expansion is intentional but merits the... (sha=a526bb70794a4cf6a79519ff6f42e0902c0d7b6d)",
+      "expected_head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T11:25:23.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118667",
+        "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+        "cluster_id": "issue-openclaw-openclaw-118667",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
