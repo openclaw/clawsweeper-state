@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T21:04:50.574Z",
+  "updated_at": "2026-08-04T21:04:56.563Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118965:5182291264:2026-08-04T17:11:58Z:re_review",
-      "comment_id": "5182291264",
-      "comment_version_key": "5182291264:2026-08-04T17:11:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118965#issuecomment-5182291264",
-      "comment_created_at": "2026-08-04T17:11:58Z",
-      "comment_updated_at": "2026-08-04T17:11:58Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "9a824930-9027-11f1-986b-60dfe164437c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118965,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T17:12:31.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-otel-runtime",
-        "head_sha": "e09bdd11032f0f67c0074cbb8691726f4d74e615",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117315:5150877084:2026-08-04T17:08:00Z:clawsweeper_needs_human",
       "comment_id": "5150877084",
@@ -31690,6 +31642,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T21:04:50.574Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115845:5118243019:2026-08-04T20:28:02Z:clawsweeper_needs_human",
+      "comment_id": "5118243019",
+      "comment_version_key": "5118243019:2026-08-04T20:28:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115845#issuecomment-5118243019",
+      "comment_created_at": "2026-07-29T13:14:40Z",
+      "comment_updated_at": "2026-08-04T20:28:02Z",
+      "comment_body_sha256": "716aa75c5962ed075d50982b6b1891cd649a2f69b93c43151947da6a9ccfcffb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; the PR is a clean documentation change awaiting ordinary maintainer acceptance. (sha=6935e41704404bb77b62a42f951cac98bcb0a88f)",
+      "expected_head_sha": "6935e41704404bb77b62a42f951cac98bcb0a88f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T21:04:56.563Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/onboard-gateway-password-auth",
+        "head_sha": "6935e41704404bb77b62a42f951cac98bcb0a88f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
