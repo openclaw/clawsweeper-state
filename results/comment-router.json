@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:00:28.452Z",
+  "updated_at": "2026-08-04T07:00:30.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116244:5173695214:2026-08-04T01:53:57Z:re_review",
-      "comment_id": "5173695214",
-      "comment_version_key": "5173695214:2026-08-04T01:53:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116244#issuecomment-5173695214",
-      "comment_created_at": "2026-08-04T01:53:57Z",
-      "comment_updated_at": "2026-08-04T01:53:57Z",
-      "comment_body_sha256": "914f6c32b887a6664fd05ca8d97eca70198c9048da473866c5f8dd6abc9d8d77",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116244,
-      "author": "Universe-ustc",
-      "author_id": 173423921,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T02:38:55.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/112376-dashboard-exec-inherit-policy",
-        "head_sha": "9592241739051d649c263e7616df2fe76173627d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106357:4958138232:2026-08-04T02:24:54Z:clawsweeper_needs_human",
       "comment_id": "4958138232",
@@ -32182,6 +32135,39 @@
         "kind": "pull_request",
         "branch": "fix/media-client-overall-timeout",
         "head_sha": "92722946eff12fbe5a82ed8e00ac5ed063a67be1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:58:5175262321:2026-08-04T06:40:32Z:clawsweeper_needs_human",
+      "comment_id": "5175262321",
+      "comment_version_key": "5175262321:2026-08-04T06:40:32Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/58#issuecomment-5175262321",
+      "comment_created_at": "2026-08-04T06:08:15Z",
+      "comment_updated_at": "2026-08-04T06:40:32Z",
+      "comment_body_sha256": "481333b45278a083fc4b11adb671d9e2d85356161f50f16057070301f99bce26",
+      "repo": "openclaw/rfcs",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body supplies design assertions only; before merge, add redacted after-change prototype evidence for a relevant MSIX install, onboarding... (sha=287a7ff9619a43427caa691f49c80a49195b7274)",
+      "expected_head_sha": "287a7ff9619a43427caa691f49c80a49195b7274",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:00:30.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/0010-openclaw-msix-packaging",
+        "head_sha": "287a7ff9619a43427caa691f49c80a49195b7274",
         "cluster_id": null,
         "job_path": null
       }
