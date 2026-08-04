@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:11:24.542Z",
+  "updated_at": "2026-08-04T11:11:36.088Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118523:5162911881:2026-08-04T06:21:29Z:clawsweeper_needs_human",
-      "comment_id": "5162911881",
-      "comment_version_key": "5162911881:2026-08-04T06:21:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118523#issuecomment-5162911881",
-      "comment_created_at": "2026-08-03T06:09:58Z",
-      "comment_updated_at": "2026-08-04T06:21:29Z",
-      "comment_body_sha256": "5462d508d7f2e37f5cb3e8057bb2e40d74a4abcd04513a6e9aab28fcfa8673ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118523,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Adjacent qa-channel and cron runs are useful, but the contributor reports that the exact presentation-residual gateway scenario did no... (sha=b1667f84f0fcf11341100211e3881a3d6ab4f34c)",
-      "expected_head_sha": "b1667f84f0fcf11341100211e3881a3d6ab4f34c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T06:22:08.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/118489-failed-tool-finalization-residuals",
-        "head_sha": "b1667f84f0fcf11341100211e3881a3d6ab4f34c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-04T06:21:41Z:clawsweeper_needs_human",
       "comment_id": "5156377755",
@@ -34139,6 +34106,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119121:5178188526:2026-08-04T11:11:04Z:re_review",
+      "comment_id": "5178188526",
+      "comment_version_key": "5178188526:2026-08-04T11:11:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5178188526",
+      "comment_created_at": "2026-08-04T11:11:04Z",
+      "comment_updated_at": "2026-08-04T11:11:04Z",
+      "comment_body_sha256": "eb8789d97c03942e7dd667d0351b70338556940badc6a248773cc4a31e2df606",
+      "source_delivery_id": "2fac0c40-8ff5-11f1-9a27-ad94250e76f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119121,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T11:11:33.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-profiled-partial-gate",
+        "head_sha": "00c6ef783a85813c05df0307424cae758b257ee8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
