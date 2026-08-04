@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T16:09:46.117Z",
+  "updated_at": "2026-08-04T16:09:57.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119051:5178813044:2026-08-04T12:10:28Z:re_review",
-      "comment_id": "5178813044",
-      "comment_version_key": "5178813044:2026-08-04T12:10:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119051#issuecomment-5178813044",
-      "comment_created_at": "2026-08-04T12:10:28Z",
-      "comment_updated_at": "2026-08-04T12:10:28Z",
-      "comment_body_sha256": "534343731b505564b02174abb70d1a15851e7bba8b7b1930f02f0657db53502d",
-      "source_delivery_id": "7b905370-8ffd-11f1-9827-429a0744f788",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119051,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T12:11:02.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/agent-migration-checkpoint",
-        "head_sha": "1e014fe715cfd44b7d148cec57e1228e6938d117",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119198:5178504847:2026-08-04T12:10:59Z:clawsweeper_needs_human",
       "comment_id": "5178504847",
@@ -32174,6 +32126,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-install-policy-config-20260804",
         "head_sha": "4b21c4aaed468b4fdcb96da5c9af0683f3fe912a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119271:5181639789:2026-08-04T16:08:57Z:clawsweeper_needs_human",
+      "comment_id": "5181639789",
+      "comment_version_key": "5181639789:2026-08-04T16:08:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119271#issuecomment-5181639789",
+      "comment_created_at": "2026-08-04T16:08:57Z",
+      "comment_updated_at": "2026-08-04T16:08:57Z",
+      "comment_body_sha256": "627fceef4851cdbc2a4685b92e38c30e47c16e032cc74b61408c62e0bb5e7d21",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies an in-process regression test and claimed CI results, but no inspectable after-fix Doctor or gateway run; add redacted terminal... (sha=6b2c3950ce8f3b99f9cc55a25ced1e7e1beec708)",
+      "expected_head_sha": "6b2c3950ce8f3b99f9cc55a25ced1e7e1beec708",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:09:57.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-db-v14-migration-entry-valid",
+        "head_sha": "6b2c3950ce8f3b99f9cc55a25ced1e7e1beec708",
         "cluster_id": null,
         "job_path": null
       }
