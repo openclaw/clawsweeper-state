@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T02:04:00.906Z",
+  "updated_at": "2026-08-04T02:05:05.418Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118867:5170576497:2026-08-03T20:11:26Z:clawsweeper_needs_human",
-      "comment_id": "5170576497",
-      "comment_version_key": "5170576497:2026-08-03T20:11:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118867#issuecomment-5170576497",
-      "comment_created_at": "2026-08-03T19:04:21Z",
-      "comment_updated_at": "2026-08-03T20:11:26Z",
-      "comment_body_sha256": "e5ed93329ab2e7594aa055e3734ce4c98f5211c4634f3e4c5c3b06a6a1d071cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118867,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The submitted runtime artifact is tied to an earlier frozen ref rather than the current PR head, so it does not by itself establish exact-head behavior after the force-push. (sha=8b4ab6400bc9d581cc955407313a4c051c16311a)",
-      "expected_head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:20:20.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-prometheus",
-        "head_sha": "8b4ab6400bc9d581cc955407313a4c051c16311a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118855:5170599098:2026-08-03T20:13:39Z:clawsweeper_needs_human",
       "comment_id": "5170599098",
@@ -33211,6 +33178,54 @@
         "kind": "pull_request",
         "branch": "fix/ollama-setup-handoff-20260804",
         "head_sha": "03ba86544e8f3051a1275a4b4a4646e10078a9f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119047:5173760067:2026-08-04T02:04:29Z:re_review",
+      "comment_id": "5173760067",
+      "comment_version_key": "5173760067:2026-08-04T02:04:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119047#issuecomment-5173760067",
+      "comment_created_at": "2026-08-04T02:04:29Z",
+      "comment_updated_at": "2026-08-04T02:04:29Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "d42f3fa0-8fa8-11f1-956b-c56b9073fdbd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119047,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T02:05:02.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/qa-canvas-agent-node",
+        "head_sha": "ee0b2da044a57009ee31f995048b357d78100a05",
         "cluster_id": null,
         "job_path": null
       },
