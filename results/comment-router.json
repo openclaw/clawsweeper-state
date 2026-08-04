@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:21:59.959Z",
+  "updated_at": "2026-08-04T11:22:00.780Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116394:5175654284:2026-08-04T06:59:25Z:re_review",
-      "comment_id": "5175654284",
-      "comment_version_key": "5175654284:2026-08-04T06:59:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116394#issuecomment-5175654284",
-      "comment_created_at": "2026-08-04T06:59:25Z",
-      "comment_updated_at": "2026-08-04T06:59:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "07c2b120-8fd2-11f1-84f6-b026b316fa02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116394,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T06:59:55.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/acp-runtime-turn-host-2",
-        "head_sha": "9393818e3d7030a6433262fa96f7f231d8700243",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116678:5175654302:2026-08-04T06:59:25Z:re_review",
       "comment_id": "5175654302",
@@ -33869,6 +33821,39 @@
         "kind": "pull_request",
         "branch": "karkarl-migrate-reactor-theme-resources",
         "head_sha": "7944e78b68ad3eeeca03bd2d33cc9736c20fa66a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:126:5167645379:2026-08-04T11:21:11Z:clawsweeper_needs_human",
+      "comment_id": "5167645379",
+      "comment_version_key": "5167645379:2026-08-04T11:21:11Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/126#issuecomment-5167645379",
+      "comment_created_at": "2026-08-03T14:25:31Z",
+      "comment_updated_at": "2026-08-04T11:21:11Z",
+      "comment_body_sha256": "23a08bfadf1059d5b974a673e0de75cc3c20d1f0c84df6052676e95872886552",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body contains red/green constructor and package-test output, which is useful supplemental evidence but not after-fix real behavior proof; a... (sha=ed42d2c730acba4fdce8c4ec85aa68e7d7216356)",
+      "expected_head_sha": "ed42d2c730acba4fdce8c4ec85aa68e7d7216356",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:22:00.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/default-http-client-timeout",
+        "head_sha": "ed42d2c730acba4fdce8c4ec85aa68e7d7216356",
         "cluster_id": null,
         "job_path": null
       }
