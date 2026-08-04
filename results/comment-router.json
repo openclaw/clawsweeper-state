@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:12:52.542Z",
+  "updated_at": "2026-08-04T14:12:54.117Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119171:5177474009:2026-08-04T10:01:47Z:clawsweeper_needs_human",
-      "comment_id": "5177474009",
-      "comment_version_key": "5177474009:2026-08-04T10:01:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119171#issuecomment-5177474009",
-      "comment_created_at": "2026-08-04T10:01:47Z",
-      "comment_updated_at": "2026-08-04T10:01:47Z",
-      "comment_body_sha256": "a06500a4f0bf1e58f5f9029fce6be1f845b007ea134aac656c57320dfd686e39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release automation selection, so exact-head workflow proof should show one Matrix job for the Matrix caller and no Matrix job for the Buzz-only caller before merge. (sha=65e53e92981924b799750003fe0e2d5b59f82dab)",
-      "expected_head_sha": "65e53e92981924b799750003fe0e2d5b59f82dab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T10:02:47.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta8-release-qa-gates",
-        "head_sha": "65e53e92981924b799750003fe0e2d5b59f82dab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119051:5177480084:2026-08-04T10:02:21Z:re_review",
       "comment_id": "5177480084",
@@ -32786,6 +32753,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117735:5154499930:2026-08-04T14:11:49Z:clawsweeper_auto_repair",
+      "comment_id": "5154499930",
+      "comment_version_key": "5154499930:2026-08-04T14:11:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117735#issuecomment-5154499930",
+      "comment_created_at": "2026-08-02T01:46:53Z",
+      "comment_updated_at": "2026-08-04T14:11:49Z",
+      "comment_body_sha256": "7ae481d8037fa24d4fd4a25126d9401eccab41c12f030d294554a147d250236f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117735,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=45afcb9218e6db61ed2d8db91c54e1c1422d19d0)",
+      "expected_head_sha": "45afcb9218e6db61ed2d8db91c54e1c1422d19d0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-04T14:12:54.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-binary-download-content-validation",
+        "head_sha": "45afcb9218e6db61ed2d8db91c54e1c1422d19d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
