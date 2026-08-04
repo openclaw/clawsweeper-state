@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T02:05:05.418Z",
+  "updated_at": "2026-08-04T02:10:06.301Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118855:5170599098:2026-08-03T20:13:39Z:clawsweeper_needs_human",
-      "comment_id": "5170599098",
-      "comment_version_key": "5170599098:2026-08-03T20:13:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118855#issuecomment-5170599098",
-      "comment_created_at": "2026-08-03T19:06:36Z",
-      "comment_updated_at": "2026-08-03T20:13:39Z",
-      "comment_body_sha256": "e02bb864de68e4a49086ffdeeef12a28451c85b06f709e83c5900d1fac0d597e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118855,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new script has a 30-minute budget and serially invokes broad lifecycle and platform-specific phases; incomplete exact-head CI plus failed check-lint and security-fast gates must b... (sha=773882d845716ce87f2c0276ec6e13a92a29ce96)",
-      "expected_head_sha": "773882d845716ce87f2c0276ec6e13a92a29ce96",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:20:20.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-service-lifecycle",
-        "head_sha": "773882d845716ce87f2c0276ec6e13a92a29ce96",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118856:5170637944:2026-08-03T20:12:42Z:clawsweeper_needs_human",
       "comment_id": "5170637944",
@@ -33226,6 +33193,54 @@
         "kind": "pull_request",
         "branch": "test/qa-canvas-agent-node",
         "head_sha": "ee0b2da044a57009ee31f995048b357d78100a05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118661:5173792004:2026-08-04T02:09:35Z:re_review",
+      "comment_id": "5173792004",
+      "comment_version_key": "5173792004:2026-08-04T02:09:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118661#issuecomment-5173792004",
+      "comment_created_at": "2026-08-04T02:09:35Z",
+      "comment_updated_at": "2026-08-04T02:09:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "8a3cc740-8fa9-11f1-943c-b6ab7bcdfdb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118661,
+      "author": "zhangqueping",
+      "author_id": 3436352,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T02:10:04.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-118627-sessions-reset-main-session-guard",
+        "head_sha": "5690b0846a620acb6715ceebc201e13fabae1e10",
         "cluster_id": null,
         "job_path": null
       },
