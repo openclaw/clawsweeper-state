@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:15:27.497Z",
+  "updated_at": "2026-08-04T14:15:30.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110068:5177560568:2026-08-04T10:09:45Z:re_review",
-      "comment_id": "5177560568",
-      "comment_version_key": "5177560568:2026-08-04T10:09:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110068#issuecomment-5177560568",
-      "comment_created_at": "2026-08-04T10:09:45Z",
-      "comment_updated_at": "2026-08-04T10:09:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "9ef0efc0-8fec-11f1-8c1e-340a0462fae3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110068,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T10:10:24.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-offset-persist-retry",
-        "head_sha": "862eb13698b6a2aeb6c3d904411bff655791fbee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119171:5177474009:2026-08-04T10:09:38Z:clawsweeper_needs_human",
       "comment_id": "5177474009",
@@ -32481,6 +32433,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T14:15:27.497Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:279:5177004562:2026-08-04T14:14:04Z:clawsweeper_needs_human",
+      "comment_id": "5177004562",
+      "comment_version_key": "5177004562:2026-08-04T14:14:04Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/279#issuecomment-5177004562",
+      "comment_created_at": "2026-08-04T09:17:21Z",
+      "comment_updated_at": "2026-08-04T14:14:04Z",
+      "comment_body_sha256": "909ad3bc7051a6e2ed32450077fbd23a1dd312c86a848c3134d4a5e9a2e468b7",
+      "repo": "openclaw/crabpot",
+      "issue_number": 279,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the high-priority NemoClaw compatibility baseline; any newly surfaced contract drift should be reviewed through the generated compatibility report rather than silently... (sha=9858913c7ea59c8637bf61f1bc74bb6b48764432)",
+      "expected_head_sha": "9858913c7ea59c8637bf61f1bc74bb6b48764432",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T14:15:30.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/nemoclaw-0de2789",
+        "head_sha": "9858913c7ea59c8637bf61f1bc74bb6b48764432",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
