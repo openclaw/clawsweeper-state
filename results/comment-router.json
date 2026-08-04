@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:27:48.021Z",
+  "updated_at": "2026-08-04T11:30:04.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119063:5175540586:2026-08-04T06:45:39Z:re_review",
-      "comment_id": "5175540586",
-      "comment_version_key": "5175540586:2026-08-04T06:45:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119063#issuecomment-5175540586",
-      "comment_created_at": "2026-08-04T06:45:39Z",
-      "comment_updated_at": "2026-08-04T06:45:39Z",
-      "comment_body_sha256": "1f7c86d91301d90e171e7e1a156fabfe40dd42380f5b858f79f28118855a83d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119063,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:07:47.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-bench-probe-deadline",
-        "head_sha": "bed8e7061ed6812a7abdea0728d75f57cc8fd2c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118524:5175596532:2026-08-04T06:52:33Z:re_review",
       "comment_id": "5175596532",
@@ -33778,6 +33731,39 @@
         "kind": "pull_request",
         "branch": "fix/telegram-offset-persist-retry",
         "head_sha": "52f57ba3ae3526704f842e23f5fc11747c0a4aa2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118523:5162911881:2026-08-04T11:29:18Z:clawsweeper_needs_human",
+      "comment_id": "5162911881",
+      "comment_version_key": "5162911881:2026-08-04T11:29:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118523#issuecomment-5162911881",
+      "comment_created_at": "2026-08-03T06:09:58Z",
+      "comment_updated_at": "2026-08-04T11:29:18Z",
+      "comment_body_sha256": "025b18fecd5973eb6d0ff6944e1b7996c99174d062f787b981960c7addfd1d3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR links redacted mock-gateway and Codex CLI artifacts, but DNS prevented inspection and the local scratch directory contains no c... (sha=f6f4a719811bf1678262f6d101dd6c4b3109944f)",
+      "expected_head_sha": "f6f4a719811bf1678262f6d101dd6c4b3109944f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:30:04.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/118489-failed-tool-finalization-residuals",
+        "head_sha": "f6f4a719811bf1678262f6d101dd6c4b3109944f",
         "cluster_id": null,
         "job_path": null
       }
