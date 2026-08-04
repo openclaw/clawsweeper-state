@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:33:46.518Z",
+  "updated_at": "2026-08-04T06:33:48.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82105:4458886902:2026-08-04T01:35:42Z:clawsweeper_auto_repair",
-      "comment_id": "4458886902",
-      "comment_version_key": "4458886902:2026-08-04T01:35:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82105#issuecomment-4458886902",
-      "comment_created_at": "2026-05-15T10:10:25Z",
-      "comment_updated_at": "2026-08-04T01:35:42Z",
-      "comment_body_sha256": "3912575268c48d396193cc78ccb0c07ee7f412e9b102ffca1077ec63c2d3160a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82105,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a999dbd597d6ef062315c43b8d28eb354dd8922)",
-      "expected_head_sha": "5a999dbd597d6ef062315c43b8d28eb354dd8922",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T01:40:10.724Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docker-bundle-channel-voice-plugins",
-        "head_sha": "5a999dbd597d6ef062315c43b8d28eb354dd8922",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90788:4636493492:2026-08-04T01:33:04Z:clawsweeper_auto_repair",
       "comment_id": "4636493492",
@@ -32327,6 +32294,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119121:5174979016:2026-08-04T06:32:54Z:clawsweeper_needs_human",
+      "comment_id": "5174979016",
+      "comment_version_key": "5174979016:2026-08-04T06:32:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5174979016",
+      "comment_created_at": "2026-08-04T05:25:28Z",
+      "comment_updated_at": "2026-08-04T06:32:54Z",
+      "comment_body_sha256": "68b8bf0be7cbbef113db25e559e3e995ec6c63ab280cd4491e915a16ba3b7928",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Audit the new Kova trust root before live execution (P1)** - This final push replaces the trusted defaults with 0f9e…, which the workflow fetches, installs, and executes before passing it the live OpenAI credent...; Review finding: [P1] Audit the new Kova trust root before live execution — .github/workflows/openclaw-performance.yml:78-79 - [P1] Preserve permitted historical Kova report compat... (sha=09f596e969abc9a6f3a68866b1f4fadf1dfb2bc2)",
+      "expected_head_sha": "09f596e969abc9a6f3a68866b1f4fadf1dfb2bc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:33:48.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-profiled-partial-gate",
+        "head_sha": "09f596e969abc9a6f3a68866b1f4fadf1dfb2bc2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
