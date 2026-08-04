@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:25:37.562Z",
+  "updated_at": "2026-08-04T08:25:44.878Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119050:5174229480:2026-08-04T03:21:32Z:re_review",
-      "comment_id": "5174229480",
-      "comment_version_key": "5174229480:2026-08-04T03:21:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119050#issuecomment-5174229480",
-      "comment_created_at": "2026-08-04T03:21:32Z",
-      "comment_updated_at": "2026-08-04T03:21:32Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119050,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T04:15:54.681Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-setup-handoff-20260804",
-        "head_sha": "8a68252113666121795a6d8ee2b4be4545b291a4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119050:5174109438:2026-08-04T04:15:16Z:clawsweeper_needs_human",
       "comment_id": "5174109438",
@@ -32812,6 +32765,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-bedrock-max-tokens",
         "head_sha": "60806fa55f22cc97b5983817d258d80d82ae68fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119147:5176454665:2026-08-04T08:25:08Z:clawsweeper_needs_human",
+      "comment_id": "5176454665",
+      "comment_version_key": "5176454665:2026-08-04T08:25:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119147#issuecomment-5176454665",
+      "comment_created_at": "2026-08-04T08:25:08Z",
+      "comment_updated_at": "2026-08-04T08:25:08Z",
+      "comment_body_sha256": "f695cf0b0711bee288cf27c0cc5e657169473da8cbb25e947eaa36fa5979e0d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows focused mocked unit coverage, but no after-fix Gateway/provider run or runtime artifact demonstrating the changed behavior. A... (sha=eb6bf36db9ca61c47d57387182294ab3c9f42c3a)",
+      "expected_head_sha": "eb6bf36db9ca61c47d57387182294ab3c9f42c3a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T08:25:44.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-key-auth-cooldown-scope",
+        "head_sha": "eb6bf36db9ca61c47d57387182294ab3c9f42c3a",
         "cluster_id": null,
         "job_path": null
       }
