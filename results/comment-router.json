@@ -2,54 +2,6 @@
   "updated_at": "2026-08-04T07:08:32.204Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:119050:5174165373:2026-08-04T03:11:32Z:re_review",
-      "comment_id": "5174165373",
-      "comment_version_key": "5174165373:2026-08-04T03:11:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119050#issuecomment-5174165373",
-      "comment_created_at": "2026-08-04T03:11:32Z",
-      "comment_updated_at": "2026-08-04T03:11:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "329e6cb0-8fb2-11f1-92d8-d255531e16e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119050,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:12:00.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-setup-handoff-20260804",
-        "head_sha": "3e96bdc1573b6c96d55929afdce76e0110647f5c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:119050:5174166895:2026-08-04T03:11:49Z:re_review",
       "comment_id": "5174166895",
       "comment_version_key": "5174166895:2026-08-04T03:11:49Z",
@@ -31876,6 +31828,39 @@
         "kind": "pull_request",
         "branch": "refactor/scout-r-2026-07-30",
         "head_sha": "8e79692ee54c6023c99633c72a380020f22db926",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119121:5174979016:2026-08-04T07:07:46Z:clawsweeper_needs_human",
+      "comment_id": "5174979016",
+      "comment_version_key": "5174979016:2026-08-04T07:07:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119121#issuecomment-5174979016",
+      "comment_created_at": "2026-08-04T05:25:28Z",
+      "comment_updated_at": "2026-08-04T07:07:46Z",
+      "comment_body_sha256": "c30d2cc16238e9cea57a3bcebf1f678fb8d258156eb6e3c36dca14536aa7ccc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Audit the new Kova trust root before live execution (P1)** - This changes the immutable Kova revision that is fetched and later receives live OpenAI credentials. The custom-ref guard is good, but the exact Kova...; Review finding: [P1] Audit the new Kova trust root before live execution — .github/workflows/openclaw-performance.yml:78-79 - [medium] New evaluator revision lacks directly verifi... (sha=58654d948334033db9258cb2643e2455fad4d157)",
+      "expected_head_sha": "58654d948334033db9258cb2643e2455fad4d157",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:08:31.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kova-profiled-partial-gate",
+        "head_sha": "58654d948334033db9258cb2643e2455fad4d157",
         "cluster_id": null,
         "job_path": null
       }
