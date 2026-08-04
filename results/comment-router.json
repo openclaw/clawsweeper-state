@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:11:04.931Z",
+  "updated_at": "2026-08-04T12:11:44.677Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawpatch:182:5168899329:2026-08-04T07:14:15Z:clawsweeper_needs_human",
-      "comment_id": "5168899329",
-      "comment_version_key": "5168899329:2026-08-04T07:14:15Z",
-      "comment_url": "https://github.com/openclaw/clawpatch/pull/182#issuecomment-5168899329",
-      "comment_created_at": "2026-08-03T16:14:52Z",
-      "comment_updated_at": "2026-08-04T07:14:15Z",
-      "comment_body_sha256": "93d1f5db8b6ec8355b1958e38e14bb4a829daf72ddc82b4d6711f66188463d53",
-      "repo": "openclaw/clawpatch",
-      "issue_number": 182,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The tag-triggered release workflow has not been exercised by this PR’s ordinary CI run, so an action bootstrap regression could surface during publishing despite successful CI validat... (sha=089e186d4e5b3d39e0673bbac44a81a6bf84f785)",
-      "expected_head_sha": "089e186d4e5b3d39e0673bbac44a81a6bf84f785",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:15:07.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github-actions-defbc93555",
-        "head_sha": "089e186d4e5b3d39e0673bbac44a81a6bf84f785",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117887:5156337351:2026-08-04T07:14:39Z:clawsweeper_needs_human",
       "comment_id": "5156337351",
@@ -33882,6 +33849,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119198:5178504847:2026-08-04T12:10:59Z:clawsweeper_needs_human",
+      "comment_id": "5178504847",
+      "comment_version_key": "5178504847:2026-08-04T12:10:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119198#issuecomment-5178504847",
+      "comment_created_at": "2026-08-04T11:41:56Z",
+      "comment_updated_at": "2026-08-04T12:10:59Z",
+      "comment_body_sha256": "d4db0fdecb1f0bf8ae00dc63fa4708df9ae58d8f2eeb065c51c82c278cd7eb50",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119198,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Filter hook-added root memory by path (P1)** - The post-hook pass only filters records named MEMORY.md. agent:bootstrap exposes a mutable file array, so a hook can add &lt;workspace>/MEMORY.md as another valid b...; Review finding: [P1] Filter hook-added root memory by path — src/agents/bootstrap-files.ts:242-250 - [high] Hook metadata can bypass private-memory filtering — src/agents/bootstra... (sha=7e356dc31aca76c7e091a801e5c9351ba5ff5223)",
+      "expected_head_sha": "7e356dc31aca76c7e091a801e5c9351ba5ff5223",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:11:44.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-memory-bootstrap-privacy-20260804",
+        "head_sha": "7e356dc31aca76c7e091a801e5c9351ba5ff5223",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
