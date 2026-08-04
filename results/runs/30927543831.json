@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119263",
+  "mode": "autonomous",
+  "run_id": "30927543831",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30927543831",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119263.md",
+  "published_at": "2026-08-04T16:14:44.116Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119271",
+  "summary": "#119263 remains a current-main migration bug. #119271 is the useful writable contributor fix, but its active review, behind-main state, and failed/pending checks require an exact-head repair and validation pass before it can be considered.",
+  "actions": [
+    {
+      "target": "#119263",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Keep the issue open until the repaired PR proves the Doctor migration on a genuine v14 fixture."
+    },
+    {
+      "target": "#119271",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Repair the existing writable contributor branch; do not replace useful source work or merge it from this lane."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119263",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Narrow executable repair plan for #119271."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
