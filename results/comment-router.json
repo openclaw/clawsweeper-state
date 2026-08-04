@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T16:09:56.353Z",
+  "updated_at": "2026-08-04T16:09:46.117Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119051:5178813044:2026-08-04T12:10:28Z:re_review",
@@ -32146,52 +32146,37 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:116551:5181643279:2026-08-04T16:09:16Z:re_review",
-      "comment_id": "5181643279",
-      "comment_version_key": "5181643279:2026-08-04T16:09:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5181643279",
-      "comment_created_at": "2026-08-04T16:09:16Z",
-      "comment_updated_at": "2026-08-04T16:09:16Z",
-      "comment_body_sha256": "a3b01659ec3474b9f2a5d860be260351d6182a403290aeeb85c41374e3926874",
-      "source_delivery_id": "d84cb380-901e-11f1-8f44-a28c951f7794",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119228:5179475756:2026-08-04T16:08:54Z:clawsweeper_auto_repair",
+      "comment_id": "5179475756",
+      "comment_version_key": "5179475756:2026-08-04T16:08:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119228#issuecomment-5179475756",
+      "comment_created_at": "2026-08-04T13:05:10Z",
+      "comment_updated_at": "2026-08-04T16:08:54Z",
+      "comment_body_sha256": "a1220dfbb019e5d8d42e9e9ce5cb08810ef89d15d5bc300cb1db0345b72a5a00",
       "repo": "openclaw/openclaw",
-      "issue_number": 116551,
-      "author": "abarsegov",
-      "author_id": 181010154,
+      "issue_number": 119228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4b21c4aaed468b4fdcb96da5c9af0683f3fe912a)",
+      "expected_head_sha": "4b21c4aaed468b4fdcb96da5c9af0683f3fe912a",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T16:09:54.281Z",
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:09:46.117Z",
       "target": {
         "kind": "pull_request",
-        "branch": "codex/fix-tool-result-aggregate",
-        "head_sha": "fe5ab024f347849ba778a64ebd14ca0ed2255818",
+        "branch": "fix/plugin-install-policy-config-20260804",
+        "head_sha": "4b21c4aaed468b4fdcb96da5c9af0683f3fe912a",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
