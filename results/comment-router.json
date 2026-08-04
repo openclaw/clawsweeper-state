@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:25:24.418Z",
+  "updated_at": "2026-08-04T05:25:42.641Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118781:5170129462:2026-08-03T18:17:32Z:re_review",
-      "comment_id": "5170129462",
-      "comment_version_key": "5170129462:2026-08-03T18:17:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118781#issuecomment-5170129462",
-      "comment_created_at": "2026-08-03T18:17:32Z",
-      "comment_updated_at": "2026-08-03T18:17:32Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118781,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T23:15:08.952Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117311:5150693659:2026-08-03T23:14:34Z:clawsweeper_auto_repair",
       "comment_id": "5150693659",
@@ -32584,6 +32557,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117034:5147384533:2026-08-04T05:21:08Z:clawsweeper_needs_human",
+      "comment_id": "5147384533",
+      "comment_version_key": "5147384533:2026-08-04T05:21:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117034#issuecomment-5147384533",
+      "comment_created_at": "2026-07-31T20:55:56Z",
+      "comment_updated_at": "2026-08-04T05:21:08Z",
+      "comment_body_sha256": "f9ab4868aba8fd0486d5d6fc40bd5a44e4fe4ae105012a6d55d80f58e27ada7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live proof is substantial but targets f3ed395 rather than the current e48a9e head; add a redacted current-head opt-in, ex...; Review finding: [medium] Confirm execution-identity read authorization (sha=e48a9eb7bf8885a76a2c0cf7a02eac50346fea45)",
+      "expected_head_sha": "e48a9eb7bf8885a76a2c0cf7a02eac50346fea45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T05:25:42.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-observable-foundation",
+        "head_sha": "e48a9eb7bf8885a76a2c0cf7a02eac50346fea45",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
