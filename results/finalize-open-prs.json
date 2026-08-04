@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T10:31:36.140Z",
-  "count": 15,
+  "generated_at": "2026-08-04T11:17:16.017Z",
+  "count": 14,
   "summary": {
-    "open_prs": 15,
+    "open_prs": 14,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 15,
+    "needs_checks": 14,
     "needs_review": 0,
-    "needs_merge_preflight": 15,
+    "needs_merge_preflight": 14,
     "needs_result_backfill": 2
   },
   "dispatch": {
@@ -34,16 +34,17 @@
       "head_sha": "9f880b538e35c9ef0debe087a02ed61bb2b97b78",
       "cluster_id": "issue-openclaw-openclaw-53932",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
-      "updated_at": "2026-08-04T10:14:29Z",
+      "updated_at": "2026-08-04T11:16:29Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 147,
+        "total": 158,
         "counts": {
-          "CANCELLED": 14,
-          "SKIPPED": 46,
+          "CANCELLED": 19,
+          "IN_PROGRESS": 2,
+          "SKIPPED": 50,
           "SUCCESS": 86,
           "NEUTRAL": 1
         },
@@ -53,7 +54,11 @@
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -99,32 +104,36 @@
       "title": "fix(bedrock): honor Opus 5 maxTokens when reasoning is off",
       "url": "https://github.com/openclaw/openclaw/pull/119160",
       "branch": "clawsweeper/issue-openclaw-openclaw-119148",
-      "head_sha": "fb78c112e28a6eb6f14d1414d650900441b07f2b",
+      "head_sha": "cf8c714479035bfa2400288362352f0df0ac8b4d",
       "cluster_id": "issue-openclaw-openclaw-119148",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119148.md",
-      "updated_at": "2026-08-04T10:19:30Z",
+      "updated_at": "2026-08-04T11:14:50Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 127,
+        "total": 89,
         "counts": {
-          "CANCELLED": 20,
-          "SKIPPED": 53,
-          "SUCCESS": 54
+          "CANCELLED": 3,
+          "SKIPPED": 41,
+          "SUCCESS": 34,
+          "IN_PROGRESS": 11
         },
         "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -134,7 +143,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 3,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
@@ -147,34 +156,28 @@
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119160#issuecomment-5176994782",
             "submitted_at": "2026-08-04T09:16:37Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119160#issuecomment-5177576027",
-            "submitted_at": "2026-08-04T10:11:16Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "30895879125",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30895879125",
-        "cluster_id": "issue-openclaw-openclaw-119148",
-        "published_at": "2026-08-04T09:27:28.373Z",
-        "workflow_conclusion": "success",
+        "run_id": "30899559048",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30899559048",
+        "cluster_id": "automerge-openclaw-openclaw-119160",
+        "published_at": "2026-08-04T11:16:45.436Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#119160",
-          "action": "fix_needed",
+          "action": "build_fix_artifact",
           "status": "planned",
           "classification": "canonical",
-          "canonical": "#119148",
-          "candidate_fix": null,
-          "reason": "Repair the existing writable PR branch; do not merge while its actionable bot review finding remains unresolved."
+          "canonical": "#119160",
+          "candidate_fix": "#119160",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -786,17 +789,17 @@
       "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
       "cluster_id": "issue-openclaw-openclaw-118667",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md",
-      "updated_at": "2026-08-03T13:40:12Z",
+      "updated_at": "2026-08-04T11:15:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 145,
+        "total": 151,
         "counts": {
           "CANCELLED": 13,
-          "SKIPPED": 45,
-          "SUCCESS": 86,
+          "SKIPPED": 47,
+          "SUCCESS": 90,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -1069,83 +1072,6 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 118361,
-      "title": "fix(browser): make extension deep doctor probe page snapshots",
-      "url": "https://github.com/openclaw/openclaw/pull/118361",
-      "branch": "clawsweeper/issue-openclaw-openclaw-116747",
-      "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-      "cluster_id": "issue-openclaw-openclaw-116747",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md",
-      "updated_at": "2026-08-03T17:13:09Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 129,
-        "counts": {
-          "CANCELLED": 10,
-          "SKIPPED": 45,
-          "SUCCESS": 72,
-          "FAILURE": 2
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / check-lint:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118361#issuecomment-5161527102",
-            "submitted_at": "2026-08-03T01:55:27Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30776997127",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30776997127",
-        "cluster_id": "issue-openclaw-openclaw-116747",
-        "published_at": "2026-08-03T02:04:42.552Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#118361",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(browser): make extension deep doctor probe page snapshots",
-          "idempotency_key": null,
-          "reason": "checks are not clean: check-lint: FAILURE, openclaw/ci-gate: FAILURE",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
