@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:23:51.252Z",
+  "updated_at": "2026-08-04T12:24:40.006Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/kova:86:5174449377:2026-08-04T07:21:17Z:clawsweeper_needs_human",
-      "comment_id": "5174449377",
-      "comment_version_key": "5174449377:2026-08-04T07:21:17Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/86#issuecomment-5174449377",
-      "comment_created_at": "2026-08-04T04:01:02Z",
-      "comment_updated_at": "2026-08-04T07:21:17Z",
-      "comment_body_sha256": "c9de6c3a844ef6b0cc6cf7e84c9a11d750e55e268e6aa0081b047a3535d20025",
-      "repo": "openclaw/kova",
-      "issue_number": 86,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair finding remains; this member-authored PR awaits ordinary maintainer merge review. (sha=61b8864c504af544c248cade7baeb07d519f82a2)",
-      "expected_head_sha": "61b8864c504af544c248cade7baeb07d519f82a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T07:21:57.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-cli-startup-attribution",
-        "head_sha": "61b8864c504af544c248cade7baeb07d519f82a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/kova:86:5173844231:2026-08-04T02:18:03Z:re_review",
       "comment_id": "5173844231",
@@ -33829,6 +33796,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-04T12:23:35Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-04T12:23:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-04T12:23:35Z",
+      "comment_body_sha256": "4acf833c3c0cfdeb1e75f6b0fd913811470120444d041f266df2c4655f961de1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog guard with the new action pin (P2)** - This line changes the scanner action to v3.96.0, but test/scripts/ci-workflow-guards.test.ts still requires the old v3.95.9 SHA and is selected b...; Review finding: [P2] Synchronize the TruffleHog guard with the new action pin — .github/workflows/ci.yml:913 - [P2] Synchronize the Android attestation guard — .github/workflows/a... (sha=46dd51e89b7acdae441b3d96ba78cfdd114ff459)",
+      "expected_head_sha": "46dd51e89b7acdae441b3d96ba78cfdd114ff459",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:24:40.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "46dd51e89b7acdae441b3d96ba78cfdd114ff459",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
