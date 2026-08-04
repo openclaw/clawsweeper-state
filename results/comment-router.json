@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T23:02:59.238Z",
+  "updated_at": "2026-08-04T23:03:12.272Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116792:5176325448:2026-08-04T08:11:43Z:re_review",
-      "comment_id": "5176325448",
-      "comment_version_key": "5176325448:2026-08-04T08:11:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116792#issuecomment-5176325448",
-      "comment_created_at": "2026-08-04T08:11:43Z",
-      "comment_updated_at": "2026-08-04T08:11:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116792,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T19:07:57.922Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116792:5179689959:2026-08-04T13:24:32Z:re_review",
       "comment_id": "5179689959",
@@ -31906,6 +31879,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116620:5138343402:2026-08-04T23:01:18Z:clawsweeper_needs_human",
+      "comment_id": "5138343402",
+      "comment_version_key": "5138343402:2026-08-04T23:01:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116620#issuecomment-5138343402",
+      "comment_created_at": "2026-07-31T01:56:10Z",
+      "comment_updated_at": "2026-08-04T23:01:18Z",
+      "comment_body_sha256": "6e653f68d87b06171d7ee85c82a4f72125477a80ad50c285a66555b161d9b18c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve configured Discord voice for direct runtime callers (P1)** - channelRuntime remains optional on the exported MonitorDiscordOpts, but this new gate disables voice whenever callers omit it. Normal channel...; Review finding: [P1] Preserve configured Discord voice for direct runtime callers — extensions/discord/src/monitor/provider.ts:174-176 - [medium] Verify Codex approval cancellatio... (sha=1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f)",
+      "expected_head_sha": "1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T23:03:12.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/run-scoped-approval-host",
+        "head_sha": "1656afc5a2b4e9941f9c74a2ca1b1a2edf455f2f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
