@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:18:41.862Z",
+  "updated_at": "2026-08-04T07:19:11.002Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101248:4921307916:2026-07-09T03:29:48Z:re_review",
-      "comment_id": "4921307916",
-      "comment_version_key": "4921307916:2026-07-09T03:29:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101248#issuecomment-4921307916",
-      "comment_created_at": "2026-07-09T03:29:48Z",
-      "comment_updated_at": "2026-07-09T03:29:48Z",
-      "comment_body_sha256": "e404b3e1b5dfc9dfe711faa0001e4c27361ec5d225e770db3391c5a91e559037",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101248,
-      "author": "nicknmorty",
-      "author_id": 16600979,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:02:24.875Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101248:4921322546:2026-07-09T03:33:25Z:re_review",
       "comment_id": "4921322546",
@@ -31884,6 +31857,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:16:5122266911:2026-08-04T07:13:01Z:clawsweeper_needs_human",
+      "comment_id": "5122266911",
+      "comment_version_key": "5122266911:2026-08-04T07:13:01Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/16#issuecomment-5122266911",
+      "comment_created_at": "2026-07-29T18:59:25Z",
+      "comment_updated_at": "2026-08-04T07:13:01Z",
+      "comment_body_sha256": "e178ea6b973916417b43c5520804bfdb8e5ba2dfd9caec17efd9c0e375c54440",
+      "repo": "openclaw/uirouter",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The formatter and linter update native development-tool binaries; although the CI matrix passed, no redacted after-update run from a real setup is attached to establish the contributo... (sha=120a61adc9ea7ec28d386cb157c3823e6c07f484)",
+      "expected_head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:19:11.002Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-7776e25466",
+        "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
