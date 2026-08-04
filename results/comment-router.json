@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:11:36.088Z",
+  "updated_at": "2026-08-04T11:11:48.691Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-04T06:21:41Z:clawsweeper_needs_human",
-      "comment_id": "5156377755",
-      "comment_version_key": "5156377755:2026-08-04T06:21:41Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/130#issuecomment-5156377755",
-      "comment_created_at": "2026-08-02T07:58:25Z",
-      "comment_updated_at": "2026-08-04T06:21:41Z",
-      "comment_body_sha256": "e2d80daf4ba9e63b1c18644b7968209ed3fde949ce37c12ca0cef968fe8751e7",
-      "repo": "openclaw/lobster",
-      "issue_number": 130,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading deliberately bypasses all entries and run-state records keyed by the prior identity, causing one fresh model call per previously cached distinct request; old files remain on... (sha=2b3cef0e3667b41a198f406c43dd9a090d87fac7)",
-      "expected_head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T06:22:31.738Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-cache-key-sampling-params",
-        "head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119130:5175361161:2026-08-04T06:21:57Z:clawsweeper_auto_repair",
       "comment_id": "5175361161",
@@ -34154,6 +34121,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1071:5135267678:2026-08-04T11:11:16Z:clawsweeper_auto_repair",
+      "comment_id": "5135267678",
+      "comment_version_key": "5135267678:2026-08-04T11:11:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1071#issuecomment-5135267678",
+      "comment_created_at": "2026-07-30T19:19:51Z",
+      "comment_updated_at": "2026-08-04T11:11:16Z",
+      "comment_body_sha256": "7a3dd02d6388bc20a75c2ae20b0d87ad59e81ff2b7fd72a1a71f6f0828d1b164",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1071,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=19e4b163da3ad9d0b5a2368a65da3046c6387ec2)",
+      "expected_head_sha": "19e4b163da3ad9d0b5a2368a65da3046c6387ec2",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:11:48.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "calebeden-voice-assistant-v0",
+        "head_sha": "19e4b163da3ad9d0b5a2368a65da3046c6387ec2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
