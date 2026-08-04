@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T08:25:23.865Z",
+  "updated_at": "2026-08-04T08:25:35.688Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119080:5174531091:2026-08-04T04:14:25Z:clawsweeper_auto_repair",
-      "comment_id": "5174531091",
-      "comment_version_key": "5174531091:2026-08-04T04:14:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119080#issuecomment-5174531091",
-      "comment_created_at": "2026-08-04T04:14:25Z",
-      "comment_updated_at": "2026-08-04T04:14:25Z",
-      "comment_body_sha256": "d17d53f7703fb075307d1f0829a17449ede19630a82c565c41cfea95f4e705a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119080,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e250ac1f099763d378540d1dd56d1e4145fe20f3)",
-      "expected_head_sha": "e250ac1f099763d378540d1dd56d1e4145fe20f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T04:15:03.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-chunk-resilient-send",
-        "head_sha": "e250ac1f099763d378540d1dd56d1e4145fe20f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117619:5174532887:2026-08-04T04:14:43Z:re_review",
       "comment_id": "5174532887",
@@ -32816,6 +32783,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117443:5151834090:2026-08-04T08:24:36Z:clawsweeper_needs_human",
+      "comment_id": "5151834090",
+      "comment_version_key": "5151834090:2026-08-04T08:24:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117443#issuecomment-5151834090",
+      "comment_created_at": "2026-08-01T14:23:43Z",
+      "comment_updated_at": "2026-08-04T08:24:36Z",
+      "comment_body_sha256": "bb87c4f4568f1656cfb32715bfe4822cb92de9bac3b15977de96f3e542d93951",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this branch would re-resolve channel routing from persisted delivery state in shared status formatting, which can reintroduce stale-identity status output that the current pro... (sha=59382f10545ffc2955fc88e828be1c649d33f581)",
+      "expected_head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T08:25:35.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89532",
+        "head_sha": "59382f10545ffc2955fc88e828be1c649d33f581",
+        "cluster_id": "automerge-openclaw-openclaw-117443",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117443.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
