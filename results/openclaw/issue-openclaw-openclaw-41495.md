@@ -2,40 +2,40 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-41495"
 mode: "autonomous"
-run_id: "30927048488"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30927048488"
+run_id: "30932522651"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30932522651"
 head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-04T17:02:11.395Z"
+result_status: "needs_human"
+published_at: "2026-08-04T17:18:40.011Z"
 canonical: "https://github.com/openclaw/openclaw/issues/41495"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/41495"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-41495
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30927048488](https://github.com/openclaw/clawsweeper/actions/runs/30927048488)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30932522651](https://github.com/openclaw/clawsweeper/actions/runs/30932522651)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/41495
 
 ## Summary
 
-Current main (50a30b7373d78fe8a63e597bd28138b6aa805765) has a narrow prompt-contract bug. The repair is clear, but this worker checkout is read-only and lacks dependencies for focused validation, so no branch or PR can be produced here.
+No safe narrow repair is available under the requested typed portable-button boundary. The stale prompt is real, but the only existing generic model-turn path is deprecated raw callback value fallback; explicit typed callbacks are intentionally opaque and can silently do nothing when no plugin owns them.
 
 ## Impact
 
@@ -44,17 +44,16 @@ Current main (50a30b7373d78fe8a63e597bd28138b6aa805765) has a narrow prompt-cont
 | Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: Merge blocked: the new generic callback example produces Telegram buttons whose unmatched clicks have no visible or model-routed outcome. |
 | issue_implementation_status_comment | updated | #41495 |  |  |
 
 ## Apply Actions
@@ -67,9 +66,9 @@ Current main (50a30b7373d78fe8a63e597bd28138b6aa805765) has a narrow prompt-cont
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #41495 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only sandbox and absent dependency install; the fix path is otherwise narrow and source-reproduced. |
-| cluster:issue-openclaw-openclaw-41495 | build_fix_artifact | planned |  | Create one narrow credited fix PR from the designated ClawSweeper branch. |
+| #41495 | keep_canonical | planned | canonical | Keep the reproducible issue open while maintainers decide whether to add a first-class model-response presentation action with cross-channel routing semantics. |
+| cluster:issue-openclaw-openclaw-41495 | needs_human | planned | needs_human | A safe fix requires product/API direction for a typed model-response action and canonical routing/fallback semantics. Updating shared guidance to opaque typed callbacks is unsafe; directing models to deprecated raw value callbacks conflicts with the requested no-inference portable contract. |
 
 ## Needs Human
 
-- none
+- Decide whether OpenClaw should add a portable, model-authorable response/selection action that has a defined agent-visible outcome across channels. That work exceeds this issue's narrow prompt-only repair boundary.
