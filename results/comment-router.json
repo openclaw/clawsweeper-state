@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T21:24:01.891Z",
+  "updated_at": "2026-08-04T21:24:17.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119188:5178129435:2026-08-04T18:02:31Z:clawsweeper_needs_human",
-      "comment_id": "5178129435",
-      "comment_version_key": "5178129435:2026-08-04T18:02:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119188#issuecomment-5178129435",
-      "comment_created_at": "2026-08-04T11:05:52Z",
-      "comment_updated_at": "2026-08-04T18:02:31Z",
-      "comment_body_sha256": "8c4c1a6696d0f7696ebae6d01778cb2c60a5ad3c21e25d676bae2bfe89fec9c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119188,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so mergeability and exact-head checks should be refreshed before landing. (sha=28f63c96e9aa81f527c362e8cf8fe4944f1937dc)",
-      "expected_head_sha": "28f63c96e9aa81f527c362e8cf8fe4944f1937dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T18:04:05.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/beta8-qa-scenario-contracts",
-        "head_sha": "28f63c96e9aa81f527c362e8cf8fe4944f1937dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:311:5166378293:2026-08-04T18:03:41Z:clawsweeper_auto_repair",
       "comment_id": "5166378293",
@@ -31888,6 +31855,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2646:5184788199:2026-08-04T21:23:36Z:re_review",
+      "comment_id": "5184788199",
+      "comment_version_key": "5184788199:2026-08-04T21:23:36Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2646#issuecomment-5184788199",
+      "comment_created_at": "2026-08-04T21:23:36Z",
+      "comment_updated_at": "2026-08-04T21:23:36Z",
+      "comment_body_sha256": "b1ce056443cd3be2f9ee04ffc0ca0ebcd2683d6c5e8db0d1d55a5c83fc0e2c69",
+      "source_delivery_id": "c1700640-904a-11f1-95be-321e3a8cb793",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2646,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - both p1 findings from the 21:11 review are addressed in 2f80534c9:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T21:24:15.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-cost-cache-2637",
+        "head_sha": "2f80534c9cfd7ce61d88d4d47fbf82c93b64c87c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
