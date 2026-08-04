@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T16:09:56.353Z",
+  "updated_at": "2026-08-04T16:10:59.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119051:5178813044:2026-08-04T12:10:28Z:re_review",
-      "comment_id": "5178813044",
-      "comment_version_key": "5178813044:2026-08-04T12:10:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119051#issuecomment-5178813044",
-      "comment_created_at": "2026-08-04T12:10:28Z",
-      "comment_updated_at": "2026-08-04T12:10:28Z",
-      "comment_body_sha256": "534343731b505564b02174abb70d1a15851e7bba8b7b1930f02f0657db53502d",
-      "source_delivery_id": "7b905370-8ffd-11f1-9827-429a0744f788",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119051,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T12:11:02.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/agent-migration-checkpoint",
-        "head_sha": "1e014fe715cfd44b7d148cec57e1228e6938d117",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119198:5178504847:2026-08-04T12:10:59Z:clawsweeper_needs_human",
       "comment_id": "5178504847",
@@ -32192,6 +32144,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-04T16:09:41Z:clawsweeper_needs_human",
+      "comment_id": "5169562551",
+      "comment_version_key": "5169562551:2026-08-04T16:09:41Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/45#issuecomment-5169562551",
+      "comment_created_at": "2026-08-03T17:21:34Z",
+      "comment_updated_at": "2026-08-04T16:09:41Z",
+      "comment_body_sha256": "0624eee0434c5b8fa67d25b6d5ed381fd60ab39f54f5e443540cca604bb3aa4a",
+      "repo": "openclaw/libterminal",
+      "issue_number": 45,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No contributor-supplied after-fix real-run evidence is present in the PR body or supplied discussion; passing CI is useful but does not satisfy the required real-behavior proof gate. (sha=0d905fed759afd82db16409c41e75ae13cd5f04d)",
+      "expected_head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:10:59.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-a6da792cd5",
+        "head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
