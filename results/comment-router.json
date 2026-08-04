@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T10:02:54.916Z",
+  "updated_at": "2026-08-04T10:03:01.619Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116394:5130683316:2026-08-04T05:04:30Z:clawsweeper_needs_human",
-      "comment_id": "5130683316",
-      "comment_version_key": "5130683316:2026-08-04T05:04:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116394#issuecomment-5130683316",
-      "comment_created_at": "2026-07-30T12:15:24Z",
-      "comment_updated_at": "2026-08-04T05:04:30Z",
-      "comment_body_sha256": "9b32260d4ca86e5f0f7c352353874879d47486d8383e1cc2e1fae0228f105716",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Enforce request-specific allowed decisions locally (P1)** - The local broker returns the handler result unchanged. A request that excludes allow-always can therefore receive that verdict, and the existing exec p...; Review finding: [P1] Enforce request-specific allowed decisions locally — src/agents/local-exec-approval-broker.ts:94-100 - [high] Local handler can grant excluded durable approva... (sha=6108a3ea75781070dbcfaab374d6bbb986dd9ab7)",
-      "expected_head_sha": "6108a3ea75781070dbcfaab374d6bbb986dd9ab7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:09:12.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/acp-runtime-turn-host-2",
-        "head_sha": "6108a3ea75781070dbcfaab374d6bbb986dd9ab7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118523:5162911881:2026-08-04T05:08:40Z:clawsweeper_needs_human",
       "comment_id": "5162911881",
@@ -33885,6 +33852,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T10:02:54.916Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:126:5167645379:2026-08-04T10:02:26Z:clawsweeper_needs_human",
+      "comment_id": "5167645379",
+      "comment_version_key": "5167645379:2026-08-04T10:02:26Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/126#issuecomment-5167645379",
+      "comment_created_at": "2026-08-03T14:25:31Z",
+      "comment_updated_at": "2026-08-04T10:02:26Z",
+      "comment_body_sha256": "d91e4e246cc50e767008afeab3e280dec8337cbdcdc9fc4f27f73a5554334cc6",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body provides red/green constructor and package-test output, but not an after-fix controlled stalled-request result; post a redacted termin... (sha=ed42d2c730acba4fdce8c4ec85aa68e7d7216356)",
+      "expected_head_sha": "ed42d2c730acba4fdce8c4ec85aa68e7d7216356",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T10:03:01.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/default-http-client-timeout",
+        "head_sha": "ed42d2c730acba4fdce8c4ec85aa68e7d7216356",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
