@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:22:36.982Z",
+  "updated_at": "2026-08-04T06:23:18.438Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75225:4355465901:2026-08-04T00:17:19Z:clawsweeper_needs_human",
-      "comment_id": "4355465901",
-      "comment_version_key": "4355465901:2026-08-04T00:17:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75225#issuecomment-4355465901",
-      "comment_created_at": "2026-04-30T19:11:57Z",
-      "comment_updated_at": "2026-08-04T00:17:19Z",
-      "comment_body_sha256": "5debc47e665c54deef5b7a40b10f2a06a087f705ba1c451a934564e65d4f5a25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bound descriptions before returning them to the model (P1)** - AgentEntrySchema accepts an unrestricted string, while this new map forwards every allowed target's full trimmed description into agents_list. With...; Review finding: [P1] Bound descriptions before returning them to the model — src/agents/tools/agents-list-tool.ts:120-122 - [medium] Unbounded configured text reaches model contex... (sha=573e317a901dae7451e265413e0941d60e403635)",
-      "expected_head_sha": "573e317a901dae7451e265413e0941d60e403635",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T01:00:52.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agents-description-field",
-        "head_sha": "573e317a901dae7451e265413e0941d60e403635",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109381:4997954377:2026-08-04T00:18:56Z:clawsweeper_auto_repair",
       "comment_id": "4997954377",
@@ -32447,6 +32414,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119116:5175366573:2026-08-04T06:22:42Z:re_review",
+      "comment_id": "5175366573",
+      "comment_version_key": "5175366573:2026-08-04T06:22:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119116#issuecomment-5175366573",
+      "comment_created_at": "2026-08-04T06:22:42Z",
+      "comment_updated_at": "2026-08-04T06:22:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "e6f5ba00-8fcc-11f1-8b77-90dd5d954d77",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119116,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T06:23:16.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/live-updater-command-timeouts",
+        "head_sha": "65cb923eab8a504fb0ce29edbd63808c320c1fe6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
