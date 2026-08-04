@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:03:24.791Z",
+  "updated_at": "2026-08-04T07:03:25.810Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118879:5174115963:2026-08-04T03:03:53Z:re_review",
-      "comment_id": "5174115963",
-      "comment_version_key": "5174115963:2026-08-04T03:03:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118879#issuecomment-5174115963",
-      "comment_created_at": "2026-08-04T03:03:53Z",
-      "comment_updated_at": "2026-08-04T03:03:53Z",
-      "comment_body_sha256": "5539ea1cf93e42c8888af2c11200483729e644d1dcd7e460de4d2577b0b17f02",
-      "source_delivery_id": "202a1c10-8fb1-11f1-9e1a-8b8c0e4cf561",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118879,
-      "author": "ZYV5ge",
-      "author_id": 39863830,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:04:19.262Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-terminal-recovery-residue",
-        "head_sha": "0ffeea98419de668efc3a95a9e625d447b3bfc9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118896:5174116399:2026-08-04T03:03:57Z:re_review",
       "comment_id": "5174116399",
@@ -32132,6 +32084,39 @@
         "kind": "pull_request",
         "branch": "fix/verbose-health-timeout",
         "head_sha": "347296a385d17a6c15b6ee2eb5e803b170a8938c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-04T07:00:49Z:clawsweeper_needs_human",
+      "comment_id": "5154776003",
+      "comment_version_key": "5154776003:2026-08-04T07:00:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117757#issuecomment-5154776003",
+      "comment_created_at": "2026-08-02T02:49:47Z",
+      "comment_updated_at": "2026-08-04T07:00:49Z",
+      "comment_body_sha256": "58e9f0204792f617bad6fd52808f9d4804cf2a0e8fed823dc63b3ac79e30b816",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117757,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The PR is behind main and the required hosted aggregate gate is red from the reported unrelated compact-shard timeout; refresh the merge result and obtain a green required gate before... (sha=ce1d0cff19e60fd777127e6cab36899480a28a21)",
+      "expected_head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:03:25.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-memory-flush-append-race",
+        "head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
         "cluster_id": null,
         "job_path": null
       }
