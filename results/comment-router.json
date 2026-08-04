@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T20:15:52.013Z",
+  "updated_at": "2026-08-04T20:15:56.827Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119150:5176278297:2026-08-04T16:15:27Z:clawsweeper_needs_human",
-      "comment_id": "5176278297",
-      "comment_version_key": "5176278297:2026-08-04T16:15:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119150#issuecomment-5176278297",
-      "comment_created_at": "2026-08-04T08:07:12Z",
-      "comment_updated_at": "2026-08-04T16:15:27Z",
-      "comment_body_sha256": "133d337a53721c5474debd706861b2ba0da1f9a11070488ecc70bec3a93f1c93",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head parity run is pending, and sandbox failure prevented independent review of the shared mock-provider and Codex protocol boundaries. (sha=1835dae4fdc1d5016b766912c039bffde3ca2a8a)",
-      "expected_head_sha": "1835dae4fdc1d5016b766912c039bffde3ca2a8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T16:16:12.684Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-release-validation-20260804",
-        "head_sha": "1835dae4fdc1d5016b766912c039bffde3ca2a8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2612:5169917978:2026-08-04T15:04:20Z:clawsweeper_auto_repair",
       "comment_id": "5169917978",
@@ -31861,6 +31828,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119205:5184118348:2026-08-04T20:15:23Z:re_review",
+      "comment_id": "5184118348",
+      "comment_version_key": "5184118348:2026-08-04T20:15:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119205#issuecomment-5184118348",
+      "comment_created_at": "2026-08-04T20:15:23Z",
+      "comment_updated_at": "2026-08-04T20:15:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "3a0a3ee0-9041-11f1-965d-a96279b8a0db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119205,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T20:15:54.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cron-failure-alerts-default-on",
+        "head_sha": "e4583b157dfa3b63238915844c853701c24a319d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
