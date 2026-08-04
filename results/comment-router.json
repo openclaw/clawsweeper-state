@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:30:36.744Z",
+  "updated_at": "2026-08-04T06:30:49.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97103:5173473654:2026-08-04T01:16:35Z:re_review",
-      "comment_id": "5173473654",
-      "comment_version_key": "5173473654:2026-08-04T01:16:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5173473654",
-      "comment_created_at": "2026-08-04T01:16:35Z",
-      "comment_updated_at": "2026-08-04T01:16:35Z",
-      "comment_body_sha256": "c619410bbddf97db41a47e250d845cd82a712f3849f3dabd0ebbae664ac3507b",
-      "source_delivery_id": "233f2210-8fa2-11f1-93e6-556915f5d76e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97103,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T01:17:17.349Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/sessions-cleanup-archive-report",
-        "head_sha": "6255ae66f56b377d722a38de34ce72949844d75a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:5173475848:2026-08-04T01:16:59Z:re_review",
       "comment_id": "5173475848",
@@ -32369,6 +32321,39 @@
         "kind": "pull_request",
         "branch": "fix/live-updater-command-timeouts",
         "head_sha": "65cb923eab8a504fb0ce29edbd63808c320c1fe6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119131:5175420887:2026-08-04T06:30:11Z:clawsweeper_needs_human",
+      "comment_id": "5175420887",
+      "comment_version_key": "5175420887:2026-08-04T06:30:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119131#issuecomment-5175420887",
+      "comment_created_at": "2026-08-04T06:30:11Z",
+      "comment_updated_at": "2026-08-04T06:30:11Z",
+      "comment_body_sha256": "6925275ab7cc45b5b464cabc62319a540874910d615b60205c920f6304a52b31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this draft as behind main; rebase and refresh validation against the exact final head before landing. (sha=d21c6be1817cc838779088d873333fb89dddf315)",
+      "expected_head_sha": "d21c6be1817cc838779088d873333fb89dddf315",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:30:49.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-oauth-realtime-connect-timeout-20260804",
+        "head_sha": "d21c6be1817cc838779088d873333fb89dddf315",
         "cluster_id": null,
         "job_path": null
       }
