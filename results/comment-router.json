@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T22:23:16.375Z",
+  "updated_at": "2026-08-04T22:23:52.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116795:5183195763:2026-08-04T18:42:50Z:freeform_assist",
-      "comment_id": "5183195763",
-      "comment_version_key": "5183195763:2026-08-04T18:42:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116795#issuecomment-5183195763",
-      "comment_created_at": "2026-08-04T18:42:50Z",
-      "comment_updated_at": "2026-08-04T18:42:50Z",
-      "comment_body_sha256": "91e4cc0ca13069dd1ff81dcfb2dc139e6b9387e786b743af55b7eaad28b37eb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116795,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nexact-head refresh after full-stack rebase and repair. public tool builders continue stripping forged attribution; private storage remains weakmap-owned; correlation now projects only agentid/sessionkey/sessionid/runid and cannot leak lifecyclegeneration. added focused hook regression coverage.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T19:06:24.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-4-tool-policy",
-        "head_sha": "ac725424bed3bd01b5ed94384e7f0578e579d437",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116795:5183259049:2026-08-04T18:49:11Z:freeform_assist",
       "comment_id": "5183259049",
@@ -31924,6 +31877,39 @@
         "kind": "pull_request",
         "branch": "refactor/talk-harness-event-results",
         "head_sha": "297c5a02e709653548fda435e7a684c6514e130e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:209:5182272282:2026-08-04T22:23:13Z:clawsweeper_auto_repair",
+      "comment_id": "5182272282",
+      "comment_version_key": "5182272282:2026-08-04T22:23:13Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/209#issuecomment-5182272282",
+      "comment_created_at": "2026-08-04T17:10:03Z",
+      "comment_updated_at": "2026-08-04T22:23:13Z",
+      "comment_body_sha256": "e3552f54929e99f1e1916ea897ebc6207f225b14e5aeb727c2d5314b01b37827",
+      "repo": "openclaw/imsg",
+      "issue_number": 209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2d5b420eaa4ed580e87d5c47d9dcf95f451eb99a)",
+      "expected_head_sha": "2d5b420eaa4ed580e87d5c47d9dcf95f451eb99a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T22:23:52.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/synchronous-send-progress-delegate",
+        "head_sha": "2d5b420eaa4ed580e87d5c47d9dcf95f451eb99a",
         "cluster_id": null,
         "job_path": null
       }
