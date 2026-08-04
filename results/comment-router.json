@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:30:04.284Z",
+  "updated_at": "2026-08-04T11:30:55.308Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118524:5175596532:2026-08-04T06:52:33Z:re_review",
-      "comment_id": "5175596532",
-      "comment_version_key": "5175596532:2026-08-04T06:52:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118524#issuecomment-5175596532",
-      "comment_created_at": "2026-08-04T06:52:33Z",
-      "comment_updated_at": "2026-08-04T06:52:33Z",
-      "comment_body_sha256": "07bdf0a24262597727c74724c40a9d1c2fb6f351c5b53384d5f83060f7486c31",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118524,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:07:47.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approvals-migration-null-fields",
-        "head_sha": "e923dbbeecce04c57f380bf72a23dbde3c1063a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112446:5175614880:2026-08-04T06:54:46Z:re_review",
       "comment_id": "5175614880",
@@ -33764,6 +33717,39 @@
         "kind": "pull_request",
         "branch": "fix/118489-failed-tool-finalization-residuals",
         "head_sha": "f6f4a719811bf1678262f6d101dd6c4b3109944f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119186:5178131071:2026-08-04T11:30:11Z:clawsweeper_needs_human",
+      "comment_id": "5178131071",
+      "comment_version_key": "5178131071:2026-08-04T11:30:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119186#issuecomment-5178131071",
+      "comment_created_at": "2026-08-04T11:06:03Z",
+      "comment_updated_at": "2026-08-04T11:30:11Z",
+      "comment_body_sha256": "296d67983494cad19bf5686a685de42db74805427bf96d9f542e3bdb1d04a067",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119186,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve restrictive plugin allowlists (P1)** - The memory scope always sets allowRestrictiveAllowlistBypass, so an owner such as google selected by memory config is added to plugins.allow and enabled even when...; Review finding: [P1] Preserve restrictive plugin allowlists — src/plugins/runtime/runtime-registry-loader.ts:87-90 - [medium] Memory CLI bypasses plugin allowlists — src/plugins/r... (sha=2ec89afc4fafb4b1ebe9108347cb1af1ffcc529c)",
+      "expected_head_sha": "2ec89afc4fafb4b1ebe9108347cb1af1ffcc529c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:30:55.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta8-memory-cli-plugin-activation",
+        "head_sha": "2ec89afc4fafb4b1ebe9108347cb1af1ffcc529c",
         "cluster_id": null,
         "job_path": null
       }
