@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-53932"
 mode: "autonomous"
-run_id: "30891450841"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30891450841"
+run_id: "30892678104"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30892678104"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-04T08:26:17.729Z"
+published_at: "2026-08-04T08:54:27.696Z"
 canonical: "https://github.com/openclaw/openclaw/issues/53932"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/53932"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30891450841](https://github.com/openclaw/clawsweeper/actions/runs/30891450841)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30892678104](https://github.com/openclaw/clawsweeper/actions/runs/30892678104)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/53932
 
 ## Summary
 
-Current main 9faf34d3bcb6aed4b69faa24c329b03691178692 still drops Slack forced-document intent before the upload loader, which defaults to image optimization. A narrow Slack-owned fix PR is appropriate, but this checkout is read-only, so branch creation, edits, and validation are blocked.
+Main b6a445c393ec378d066ced0d31b679ad4c6c2f72 still drops the existing forceDocument/asDocument intent in Slack before the final loader defaults to image optimization. A narrow new fix PR is appropriate, but this read-only checkout cannot create the branch, patch files, or run validation.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main 9faf34d3bcb6aed4b69faa24c329b03691178692 still drops Slack forced-d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #40829 | route_security | planned | security_sensitive | Central OpenClaw security triage owns this reference. |
-| #41965 | keep_related | planned | related | Keep its distinct product scope open. |
-| #53932 | fix_needed | blocked | canonical | The required fix is reproducible, but the read-only environment prevents implementation and branch validation. |
+| #40829 | route_security | planned | security_sensitive | Central OpenClaw security handling owns this closed reference. |
+| #41965 | keep_related | planned | related | Keep its distinct product decision open. |
+| #53932 | fix_needed | blocked | canonical | Reproduced on current main; implementation is blocked only because the worker filesystem is read-only. |
 | #53988 | keep_closed | skipped | superseded | Closed context reference; no closure action is valid. |
-| cluster:issue-openclaw-openclaw-53932 | build_fix_artifact | blocked | canonical | Executor must apply this artifact in a writable trusted checkout. |
+| cluster:issue-openclaw-openclaw-53932 | build_fix_artifact | blocked | canonical | Apply this artifact in a writable trusted checkout on clawsweeper/issue-openclaw-openclaw-53932. |
 
 ## Needs Human
 
