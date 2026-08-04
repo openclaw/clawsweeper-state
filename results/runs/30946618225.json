@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119330",
+  "mode": "autonomous",
+  "run_id": "30946618225",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30946618225",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119330.md",
+  "published_at": "2026-08-04T20:20:26.047Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119330",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119330",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the sessions_spawn ACP rejection: a restrictive requester allowlist is an effective OpenClaw tool snapshot, yet ACP requires absent host aliases such as apply_patch. The reported /acp spawn path does not traverse this gate on current main. Plan one narrow core fix PR; retain ACP deny and sandbox protections.",
+  "actions": [
+    {
+      "target": "#119330",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119330",
+      "candidate_fix": null,
+      "reason": "Real, narrow ACP-only defect with no open implementation PR in the hydrated cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119330",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119330",
+      "candidate_fix": null,
+      "reason": "Build a new narrow PR from the configured ClawSweeper branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119330",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119330",
+      "candidate_fix": null,
+      "reason": "Job permits one implementation PR and forbids merge/close actions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
