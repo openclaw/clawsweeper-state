@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-04T06:14:56.746Z",
+  "updated_at": "2026-08-04T06:15:05.530Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118988:5172464708:2026-08-03T22:34:40Z:automerge",
-      "comment_id": "5172464708",
-      "comment_version_key": "5172464708:2026-08-03T22:34:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118988#issuecomment-5172464708",
-      "comment_created_at": "2026-08-03T22:34:40Z",
-      "comment_updated_at": "2026-08-03T22:34:40Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118988,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T00:13:29.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-gateway-b1-rpc-chat",
-        "head_sha": "54397c0ff74d40ec90ff20e2f9498248bc6a1e97",
-        "cluster_id": "automerge-openclaw-openclaw-118988",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118988.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118714:5172797575:2026-08-03T23:25:08Z:re_review",
       "comment_id": "5172797575",
@@ -32736,6 +32683,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
         "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:217:4969657438:2026-08-04T06:14:17Z:clawsweeper_needs_human",
+      "comment_id": "4969657438",
+      "comment_version_key": "4969657438:2026-08-04T06:14:17Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/217#issuecomment-4969657438",
+      "comment_created_at": "2026-07-14T13:25:27Z",
+      "comment_updated_at": "2026-08-04T06:14:17Z",
+      "comment_body_sha256": "32de804379a4f48e245d45a79738d54aeec688ad54f4bf2e6b0122a1bd08e9b7",
+      "repo": "openclaw/crabpot",
+      "issue_number": 217,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is dirty against current main; its July-generated reports cannot establish compatibility for a merge based on today’s fixture and OpenClaw reference state. (sha=849551afef76329bb5696914b871b10944c1cb8a)",
+      "expected_head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T06:15:05.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/hyperspell-f994920",
+        "head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
         "cluster_id": null,
         "job_path": null
       }
