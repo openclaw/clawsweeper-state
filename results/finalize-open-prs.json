@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T09:44:54.331Z",
-  "count": 15,
+  "generated_at": "2026-08-04T09:35:30.353Z",
+  "count": 16,
   "summary": {
-    "open_prs": 15,
+    "open_prs": 16,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 15,
+    "needs_checks": 16,
     "needs_review": 0,
-    "needs_merge_preflight": 15,
+    "needs_merge_preflight": 16,
     "needs_result_backfill": 2
   },
   "dispatch": {
@@ -36,23 +36,40 @@
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
       "updated_at": "2026-08-04T09:34:35Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 138,
+        "total": 63,
         "counts": {
           "CANCELLED": 12,
-          "SKIPPED": 43,
-          "SUCCESS": 82,
-          "NEUTRAL": 1
+          "IN_PROGRESS": 17,
+          "SKIPPED": 26,
+          "SUCCESS": 8
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "Real behavior proof:CANCELLED",
+          "CI / preflight:IN_PROGRESS",
+          "CodeQL / Security High (core-auth-secrets):IN_PROGRESS",
+          "OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS",
+          "Shared OpenClawKit Periphery / Detect shared OpenClawKit scan scope:IN_PROGRESS",
+          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
+          "macOS Periphery Dead Code / Detect macOS scan scope:IN_PROGRESS",
+          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
+          "CodeQL / Security High (network-ssrf-boundary):IN_PROGRESS",
+          "CodeQL / Security High (mcp-process-tool-boundary):IN_PROGRESS",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
+          "CodeQL / Security High (actions):IN_PROGRESS",
+          "CI / security-fast:IN_PROGRESS",
+          "Security Sensitive Guard / security-sensitive-guard:IN_PROGRESS",
+          "Workflow Sanity / actionlint:IN_PROGRESS",
+          "Dependency Guard / dependency-guard:IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -74,7 +91,7 @@
         "apply_action": null
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_merge_state:BLOCKED",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
@@ -88,7 +105,7 @@
       "head_sha": "fb78c112e28a6eb6f14d1414d650900441b07f2b",
       "cluster_id": "issue-openclaw-openclaw-119148",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119148.md",
-      "updated_at": "2026-08-04T09:38:05Z",
+      "updated_at": "2026-08-04T09:33:06Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -901,7 +918,7 @@
       "head_sha": "9e65506c8e31805162bbfd0c35dfc3683300f108",
       "cluster_id": "issue-openclaw-openclaw-118649",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118649.md",
-      "updated_at": "2026-08-04T09:36:58Z",
+      "updated_at": "2026-08-04T09:03:52Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -1121,6 +1138,88 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 118309,
+      "title": "fix(claude-cli): deduplicate live and imported assistant turns",
+      "url": "https://github.com/openclaw/openclaw/pull/118309",
+      "branch": "clawsweeper/issue-openclaw-openclaw-118185",
+      "head_sha": "bb567cd88c9f8f05db950a54d6ed40dc37f68561",
+      "cluster_id": "issue-openclaw-openclaw-118185",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118185.md",
+      "updated_at": "2026-08-03T21:01:38Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 144,
+        "counts": {
+          "CANCELLED": 10,
+          "SKIPPED": 48,
+          "SUCCESS": 85,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118309#issuecomment-5160996295",
+            "submitted_at": "2026-08-03T00:05:57Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/118309#issuecomment-5161011155",
+            "submitted_at": "2026-08-03T00:09:10Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30773797117",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30773797117",
+        "cluster_id": "automerge-openclaw-openclaw-118309",
+        "published_at": "2026-08-03T00:46:46.527Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#118309",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(claude-cli): deduplicate live and imported assistant turns",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
