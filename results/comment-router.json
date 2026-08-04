@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T11:20:08.137Z",
+  "updated_at": "2026-08-04T11:20:08.711Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117213:5175493545:2026-08-04T06:39:22Z:re_review",
-      "comment_id": "5175493545",
-      "comment_version_key": "5175493545:2026-08-04T06:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5175493545",
-      "comment_created_at": "2026-08-04T06:39:22Z",
-      "comment_updated_at": "2026-08-04T06:39:22Z",
-      "comment_body_sha256": "7b773ca100c1502cf5c7aca2c6e90c47f74ed693bb2c5c6cf3d654564ccb4bf2",
-      "source_delivery_id": "3b15c240-8fcf-11f1-8b01-e842f05ea09c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T06:39:55.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-policy-refresh-rebuild-89606",
-        "head_sha": "3cec33420c221b484cde6e0a9fb619b0b6d55962",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117890:5156285090:2026-08-04T06:39:29Z:clawsweeper_auto_repair",
       "comment_id": "5156285090",
@@ -33959,6 +33911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119188:5178129435:2026-08-04T11:19:28Z:clawsweeper_needs_human",
+      "comment_id": "5178129435",
+      "comment_version_key": "5178129435:2026-08-04T11:19:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119188#issuecomment-5178129435",
+      "comment_created_at": "2026-08-04T11:05:52Z",
+      "comment_updated_at": "2026-08-04T11:19:28Z",
+      "comment_body_sha256": "ac1154e1735dedb1640ee967e50606bea9c054f48d48c180db491aee447c97a3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the shared live-frontier QA plugin allow-list; an incorrect owner mapping would make release-validation scenarios unable to resolve their selected models or providers. (sha=c8eef4ef0bc12f5fefbfd9965a103241dd72f060)",
+      "expected_head_sha": "c8eef4ef0bc12f5fefbfd9965a103241dd72f060",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T11:20:08.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta8-qa-scenario-contracts",
+        "head_sha": "c8eef4ef0bc12f5fefbfd9965a103241dd72f060",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
