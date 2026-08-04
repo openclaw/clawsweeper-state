@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-114989"
 mode: "autonomous"
-run_id: "30887835080"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30887835080"
+run_id: "30887168310"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30887168310"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-04T07:57:21.352Z"
+published_at: "2026-08-04T07:27:47.837Z"
 canonical: "https://github.com/openclaw/openclaw/issues/114989"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/114989"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30887835080](https://github.com/openclaw/clawsweeper/actions/runs/30887835080)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30887168310](https://github.com/openclaw/clawsweeper/actions/runs/30887168310)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/114989
 
 ## Summary
 
-Current main (45643863d7132a2580864ac05d007dcc724a5dbf) still omits the best-effort Gateway auth refresh after successful auth-order set/clear. A narrow fix PR is warranted, but this checkout is read-only, so implementation and validation are planned for the deterministic executor.
+#114989 remains a reproducible, narrow lifecycle bug on main 8393b377: successful auth-order set/clear writes SQLite but does not ask a running Gateway to discard its cached auth snapshot. A two-file fix artifact is ready; this worker could not apply or validate it because the supplied checkout is read-only.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main (45643863d7132a2580864ac05d007dcc724a5dbf) still omits the best-eff
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #114989 | fix_needed | planned | canonical | Repair the persisted auth-order owner path so newly started sessions receive the updated order while preserving existing pinned-session behavior. |
-| cluster:issue-openclaw-openclaw-114989 | build_fix_artifact | planned |  | Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-114989. |
-| cluster:issue-openclaw-openclaw-114989 | open_fix_pr | planned |  | No viable open implementation PR is present in the hydrated cluster. |
+| #114989 | fix_needed | planned | canonical | The persistent write owner is correct; the missing cross-process refresh belongs immediately after each successful CLI mutation. |
+| cluster:issue-openclaw-openclaw-114989 | build_fix_artifact | planned | canonical | Create the narrow fix PR from the supplied artifact; do not alter resolver precedence, profiles, config, or docs. |
+| cluster:issue-openclaw-openclaw-114989 | open_fix_pr | planned | canonical | Apply the artifact on clawsweeper/issue-openclaw-openclaw-114989, validate it, then open or update the single issue PR. |
 
 ## Needs Human
 
