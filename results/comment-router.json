@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T05:07:11.491Z",
+  "updated_at": "2026-08-04T05:07:13.101Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118925:5172046816:2026-08-03T21:40:30Z:automerge",
-      "comment_id": "5172046816",
-      "comment_version_key": "5172046816:2026-08-03T21:40:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118925#issuecomment-5172046816",
-      "comment_created_at": "2026-08-03T21:40:30Z",
-      "comment_updated_at": "2026-08-03T21:40:30Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118925,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T22:19:47.934Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/qa-tool-policy-gates",
-        "head_sha": "cddc82ec27e1ba42d496381fcfb1c9a1e7f029ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118982:5172095674:2026-08-03T21:46:03Z:re_review",
       "comment_id": "5172095674",
@@ -33124,6 +33091,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T05:07:11.491Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119061:5174221982:2026-08-04T05:03:11Z:clawsweeper_needs_human",
+      "comment_id": "5174221982",
+      "comment_version_key": "5174221982:2026-08-04T05:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119061#issuecomment-5174221982",
+      "comment_created_at": "2026-08-04T03:20:19Z",
+      "comment_updated_at": "2026-08-04T05:03:11Z",
+      "comment_body_sha256": "87a56f6edea3e70236b7035ff7fe865c6e79190a6ae77998185c0b0044e9c2fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body explicitly disclaims an after-fix typed-migration run; provide a redacted runtime or terminal proof showing the first result and co... (sha=21b914fd327517bb8a94f11d214d61b52f70e4de)",
+      "expected_head_sha": "21b914fd327517bb8a94f11d214d61b52f70e4de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T05:07:13.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-memory-canonical-migration-guidance",
+        "head_sha": "21b914fd327517bb8a94f11d214d61b52f70e4de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
