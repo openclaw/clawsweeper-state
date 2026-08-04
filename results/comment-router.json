@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:20:38.161Z",
+  "updated_at": "2026-08-04T15:21:13.826Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117176:5150146275:2026-08-01T06:15:43Z:re_review",
-      "comment_id": "5150146275",
-      "comment_version_key": "5150146275:2026-08-01T06:15:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117176#issuecomment-5150146275",
-      "comment_created_at": "2026-08-01T06:15:43Z",
-      "comment_updated_at": "2026-08-01T06:15:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117176,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T11:15:55.471Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117176:5156299390:2026-08-02T07:44:39Z:re_review",
       "comment_id": "5156299390",
@@ -32212,6 +32185,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119246:5180889488:2026-08-04T15:20:21Z:clawsweeper_needs_human",
+      "comment_id": "5180889488",
+      "comment_version_key": "5180889488:2026-08-04T15:20:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119246#issuecomment-5180889488",
+      "comment_created_at": "2026-08-04T15:04:14Z",
+      "comment_updated_at": "2026-08-04T15:20:21Z",
+      "comment_body_sha256": "0b1d05073c4a5de0b06f6c535a6bdf31960bff7dfe7a0c28675488cacfc3e273",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup still shows a failed lint check and multiple build, Gateway, and QA checks in progress; merge should wait for those exact-head results and a diagn... (sha=9057ca45e1555f4a4e75d7fe74594f34ab29121c)",
+      "expected_head_sha": "9057ca45e1555f4a4e75d7fe74594f34ab29121c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T15:21:13.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-node-result-close-drain",
+        "head_sha": "9057ca45e1555f4a4e75d7fe74594f34ab29121c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
