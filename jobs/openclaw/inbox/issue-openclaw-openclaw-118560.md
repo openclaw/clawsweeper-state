@@ -67,22 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Control UI transcript-search navigation bug: when a search result identifies an archived predecessor with sessionKey, sessionId, and messageId, retain that full provenance through navigation and load chat history through the existing anchored Gateway contract. Keep archive selection in Gateway; do not add config, a new protocol API, a UI-side transcript reader, or runtime compatibility fallbacks. Add a focused regression for a reset-era hit sharing the active session key but targeting an older session ID/message ID, plus preserve ordinary active-hit navigation. Do not edit release-owned CHANGELOG.md; add release-note context to the PR body.
+Repair the Control UI transcript-search navigation so a selected hit preserves its existing {sessionKey, sessionId, messageId} through a typed one-shot route or handoff and the first chat.history request. The observable result is that selecting a reset-era match renders the archived transcript around that message instead of the replacement live transcript. Keep normal session navigation, subsequent refreshes, and pagination unchanged; do not add Gateway/protocol/config surface or edit CHANGELOG.md. Extend focused unit coverage and the existing browser scenario; include release-note context in the PR body.
 
 Likely files:
 
 - ui/src/pages/sessions/view.ts
 - ui/src/pages/sessions/sessions-page.ts
+- ui/src/pages/chat/route-loader.ts
+- ui/src/pages/chat/chat-page.ts
+- ui/src/pages/chat/chat-pane-session.ts
 - ui/src/pages/chat/chat-history.ts
-- ui/src/e2e/session-transcript-search.e2e.test.ts
 - ui/src/pages/sessions/view.test.ts
+- ui/src/e2e/session-transcript-search.e2e.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs ui/src/pages/sessions/view.test.ts
-- node scripts/run-vitest.mjs ui/src/pages/sessions/agent-scope.test.ts
-- Run the focused Control UI transcript-search E2E regression covering a reset-era hit and assert the history request includes sessionId and messageId.
-- Verify the existing Gateway archived-anchor regression in src/gateway/session-transcript-readers.test.ts remains covered.
+- node scripts/run-vitest.mjs ui/src/pages/sessions/view.test.ts ui/src/pages/chat/chat-history.test.ts
+- pnpm test ui/src/e2e/session-transcript-search.e2e.test.ts
+- node scripts/run-vitest.mjs src/gateway/server.chat.gateway-server-chat-b.test.ts -t "reopens a search anchor from a prior session id"
 
 ## Operator Prompt
 
