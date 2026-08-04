@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T14:32:15.913Z",
+  "updated_at": "2026-08-04T14:32:24.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118835:5170199804:2026-08-04T10:06:07Z:clawsweeper_needs_human",
-      "comment_id": "5170199804",
-      "comment_version_key": "5170199804:2026-08-04T10:06:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118835#issuecomment-5170199804",
-      "comment_created_at": "2026-08-03T18:25:03Z",
-      "comment_updated_at": "2026-08-04T10:06:07Z",
-      "comment_body_sha256": "5dca4533901f4b83e70ec33ec0cb720c23951093d9bd5aa3aeeea7c75cdfe1ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118835,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes Claude CLI subscription-exhaustion handling from a surfaced error to model rotation; the branch is also behind main, so merge must use an exact current-base... (sha=1c1725ed277b3d210fd6843fc2b5102d063ae3a9)",
-      "expected_head_sha": "1c1725ed277b3d210fd6843fc2b5102d063ae3a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T10:11:17.103Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-118793-claude-session-limit",
-        "head_sha": "1c1725ed277b3d210fd6843fc2b5102d063ae3a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118879:5170601195:2026-08-04T10:07:17Z:clawsweeper_needs_human",
       "comment_id": "5170601195",
@@ -32340,6 +32307,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119246:5180502025:2026-08-04T14:31:52Z:re_review",
+      "comment_id": "5180502025",
+      "comment_version_key": "5180502025:2026-08-04T14:31:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119246#issuecomment-5180502025",
+      "comment_created_at": "2026-08-04T14:31:52Z",
+      "comment_updated_at": "2026-08-04T14:31:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "3c9f1b60-9011-11f1-9367-d6913634b563",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119246,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T14:32:21.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-node-result-close-drain",
+        "head_sha": "9a2d969484a3c144b24c8e25ab0e26b46c7ab233",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
