@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T02:25:40.489Z",
+  "updated_at": "2026-08-04T02:25:52.129Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101294:4899865250:2026-08-03T19:20:56Z:clawsweeper_needs_human",
-      "comment_id": "4899865250",
-      "comment_version_key": "4899865250:2026-08-03T19:20:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101294#issuecomment-4899865250",
-      "comment_created_at": "2026-07-07T03:35:52Z",
-      "comment_updated_at": "2026-08-03T19:20:56Z",
-      "comment_body_sha256": "6f4bd90f66a1f6903e18ab285fc687e4dc63d339ec642bce83d0fdb98c5ea125",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101294,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Authorize the dependency graph before merge** - The PR adds libphonenumber-js to the WhatsApp plugin manifest and both lock representations; repository automation requires administrator...; Review finding: [medium] Authorize the dependency graph before merge — extensions/whatsapp/package.json:13 (sha=793617f96c70d299b8b0973711c8c17af7d94a16)",
-      "expected_head_sha": "793617f96c70d299b8b0973711c8c17af7d94a16",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T20:20:20.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/whatsapp-phone-code-login-clean",
-        "head_sha": "793617f96c70d299b8b0973711c8c17af7d94a16",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103845:4938096585:2026-08-03T19:24:00Z:clawsweeper_auto_repair",
       "comment_id": "4938096585",
@@ -33363,6 +33330,54 @@
         "kind": "pull_request",
         "branch": "fix/gateway-bench-probe-deadline",
         "head_sha": "02370cdb272330e76da9b6338aa916afda566efe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:101276:5173887654:2026-08-04T02:25:17Z:re_review",
+      "comment_id": "5173887654",
+      "comment_version_key": "5173887654:2026-08-04T02:25:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101276#issuecomment-5173887654",
+      "comment_created_at": "2026-08-04T02:25:17Z",
+      "comment_updated_at": "2026-08-04T02:25:17Z",
+      "comment_body_sha256": "3b452164b25c4987ad51452c53efd49a918eb5c63d211bb2a9c2297d50bc268b",
+      "source_delivery_id": "bc3d4e70-8fab-11f1-96f7-2ec22605cfcd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101276,
+      "author": "nicknmorty",
+      "author_id": 16600979,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T02:25:50.286Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approvals-denylist-6615",
+        "head_sha": "8611f26a72d861033f64bee93d0b02aa3a606295",
         "cluster_id": null,
         "job_path": null
       },
