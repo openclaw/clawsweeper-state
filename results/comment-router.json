@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T12:31:56.117Z",
+  "updated_at": "2026-08-04T12:33:07.619Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119131:5175854570:2026-08-04T07:22:38Z:re_review",
-      "comment_id": "5175854570",
-      "comment_version_key": "5175854570:2026-08-04T07:22:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119131#issuecomment-5175854570",
-      "comment_created_at": "2026-08-04T07:22:38Z",
-      "comment_updated_at": "2026-08-04T07:22:38Z",
-      "comment_body_sha256": "e9957ad2ce436a21e383dcb9d3cca9e3b3580284cea7b62812305d17b7763503",
-      "source_delivery_id": "45fc1370-8fd5-11f1-9947-e230670f6ccf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119131,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T07:23:06.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-oauth-realtime-connect-timeout-20260804",
-        "head_sha": "dc8bcf97d09b6f4dde45e83c9c40ba28a42d38e8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117232:5150003405:2026-08-04T07:14:47Z:clawsweeper_auto_repair",
       "comment_id": "5150003405",
@@ -33873,6 +33825,39 @@
         "kind": "pull_request",
         "branch": "stack/realtime-openai-route-auth",
         "head_sha": "a7b7f0e872fe485ce54235bad103f6010a5b3c5f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119198:5178504847:2026-08-04T12:32:14Z:clawsweeper_needs_human",
+      "comment_id": "5178504847",
+      "comment_version_key": "5178504847:2026-08-04T12:32:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119198#issuecomment-5178504847",
+      "comment_created_at": "2026-08-04T11:41:56Z",
+      "comment_updated_at": "2026-08-04T12:32:14Z",
+      "comment_body_sha256": "979520eedfd782d96f1bcd61f7c93e3f11ac4681e309d8937e06eb9de9e22fee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119198,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude root memory before non-primary allowlists (P1)** - The post-hook call still returns the subagent or cron name allowlist before applying the new root-memory path check. A hook can append &lt;workspace>/ME...; Review finding: [P1] Exclude root memory before non-primary allowlists — src/agents/workspace.ts:1065-1069 - [high] Allowed hook names can carry private root memory — src/agents/w... (sha=01b4e5693493a83fc934c415960e9f859c449086)",
+      "expected_head_sha": "01b4e5693493a83fc934c415960e9f859c449086",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T12:33:07.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-memory-bootstrap-privacy-20260804",
+        "head_sha": "01b4e5693493a83fc934c415960e9f859c449086",
         "cluster_id": null,
         "job_path": null
       }
