@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119263",
+  "mode": "autonomous",
+  "run_id": "30923945558",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30923945558",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119263.md",
+  "published_at": "2026-08-04T16:09:59.220Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119271",
+  "summary": "Current main reproduces the v14 ordering defect. #119271 is the useful, writable canonical repair path, but must be rebased, verified with a true v14 Doctor fixture, and have its failing/pending CI repaired before it can proceed.",
+  "actions": [
+    {
+      "target": "#119263",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Keep the issue open until the repaired contributor PR has an exact-head review and changed-surface validation."
+    },
+    {
+      "target": "#119271",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Repair the writable contributor branch rather than replacing it; retain attribution and require exact-head validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119263",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": "#119271",
+      "reason": "Executable repair plan for the existing writable contributor PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119263",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
