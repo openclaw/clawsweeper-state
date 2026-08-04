@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119263",
+  "mode": "autonomous",
+  "run_id": "30922461354",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30922461354",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119263.md",
+  "published_at": "2026-08-04T15:16:46.523Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119263",
+  "canonical_pr": null,
+  "summary": "Confirmed on main d06fc25a: the v14 preflight repairs a current-derived index requiring entry_valid before the v15 session additions are installed. A narrow, transaction-local repair and regression plan are ready; implementation is blocked only because this worker checkout is read-only and lacks dependencies.",
+  "actions": [
+    {
+      "target": "#119263",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": null,
+      "reason": "Canonical reproducible migration defect; deterministic executor should apply the attached new-fix-PR artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119263",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119263",
+      "candidate_fix": null,
+      "reason": "Narrow root-cause repair is defined and requires a writable executor branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

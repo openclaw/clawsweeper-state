@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-04T15:04:32.989Z",
+  "generated_at": "2026-08-04T15:17:40.582Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
@@ -34,40 +34,24 @@
       "head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
       "cluster_id": "issue-openclaw-openclaw-119253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119253.md",
-      "updated_at": "2026-08-04T15:03:54Z",
+      "updated_at": "2026-08-04T15:12:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 31,
+        "total": 137,
         "counts": {
-          "CANCELLED": 2,
-          "QUEUED": 10,
-          "IN_PROGRESS": 12,
-          "SKIPPED": 7
+          "CANCELLED": 7,
+          "SKIPPED": 43,
+          "SUCCESS": 85,
+          "IN_PROGRESS": 1,
+          "NEUTRAL": 1
         },
         "blockers": [
-          "CI / preflight:QUEUED",
-          "ClawSweeper Dispatch / dispatch:QUEUED",
-          "CodeQL / Security High (core-auth-secrets):QUEUED",
-          "CodeQL Critical Quality / Select Critical Quality shards:QUEUED",
-          "OpenGrep — PR Diff / Scan changed paths (precise):QUEUED",
-          "Workflow Sanity / no-tabs:QUEUED",
-          "macOS Periphery Dead Code / Detect macOS scan scope:QUEUED",
-          "Dependency Guard / dependency-guard-detect:IN_PROGRESS",
-          "Real behavior proof:IN_PROGRESS",
-          "Security Sensitive Guard / security-sensitive-guard-detect:IN_PROGRESS",
-          "Shared OpenClawKit Periphery / Detect shared OpenClawKit scan scope:IN_PROGRESS",
-          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
-          "CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS",
-          "CodeQL / Security High (network-ssrf-boundary):IN_PROGRESS",
-          "CodeQL / Security High (mcp-process-tool-boundary):QUEUED",
-          "CodeQL / Security High (process-exec-boundary):QUEUED",
-          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
-          "CodeQL / Security High (actions):IN_PROGRESS",
-          "CI / security-fast:IN_PROGRESS",
-          "Workflow Sanity / actionlint:IN_PROGRESS"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / build-artifacts:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -77,13 +61,20 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119265#issuecomment-5180980780",
+            "submitted_at": "2026-08-04T15:11:55Z"
+          }
+        ]
       },
       "latest_record": null,
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / preflight:QUEUED; ClawSweeper Dispatch / dispatch:QUEUED; CodeQL / Security High (core-auth-secrets):QUEUED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS",
         "needs_merge_preflight",
         "needs_result_backfill"
       ],
@@ -689,7 +680,7 @@
       "head_sha": "2ce65e201139a35baf00a7fb4046d37f9dd4f0b4",
       "cluster_id": "issue-openclaw-openclaw-118625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118625.md",
-      "updated_at": "2026-08-04T15:00:23Z",
+      "updated_at": "2026-08-04T15:14:21Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

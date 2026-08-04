@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-04T15:04:32.989Z
+Generated: 2026-08-04T15:17:40.582Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119265](https://github.com/openclaw/openclaw/pull/119265) | fix(agents): audit direct embedded bundle tool calls | issue-openclaw-openclaw-119253 | MERGEABLE | BEHIND | CANCELLED:2 QUEUED:10 IN_PROGRESS:12 SKIPPED:7; blockers:20 | needs_merge_state:BEHIND, needs_checks:CI / preflight:QUEUED; ClawSweeper Dispatch / dispatch:QUEUED; CodeQL / Security High (core-auth-secrets):QUEUED, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119265](https://github.com/openclaw/openclaw/pull/119265) | fix(agents): audit direct embedded bundle tool calls | issue-openclaw-openclaw-119253 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:43 SUCCESS:85 IN_PROGRESS:1 NEUTRAL:1; blockers:3 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; CI / build-artifacts:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119172](https://github.com/openclaw/openclaw/pull/119172) | fix(slack): preserve original bytes for forced media uploads | issue-openclaw-openclaw-53932 | MERGEABLE | BEHIND | CANCELLED:20 SKIPPED:51 SUCCESS:89 NEUTRAL:1; blockers:9 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | issue-openclaw-openclaw-119148 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:47 SUCCESS:49; blockers:4 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#118807](https://github.com/openclaw/openclaw/pull/118807) | fix(reply): defer steer messages while embedded compaction runs | issue-openclaw-openclaw-118771 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:42 SUCCESS:82 FAILURE:2 NEUTRAL:1; blockers:7 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
