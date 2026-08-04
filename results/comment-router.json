@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T09:16:38.054Z",
+  "updated_at": "2026-08-04T09:16:42.640Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83988:4484464185:2026-08-04T05:05:33Z:clawsweeper_auto_repair",
-      "comment_id": "4484464185",
-      "comment_version_key": "4484464185:2026-08-04T05:05:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4484464185",
-      "comment_created_at": "2026-05-19T04:42:23Z",
-      "comment_updated_at": "2026-08-04T05:05:33Z",
-      "comment_body_sha256": "0285b3328c59108bc356b5875526e15688d116c2efa6d5c6e2b8473cfe0df9c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=336d7cc2f98326853612d4c7857ad026c811df05)",
-      "expected_head_sha": "336d7cc2f98326853612d4c7857ad026c811df05",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T05:07:11.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-final-text-before-audio-83511",
-        "head_sha": "336d7cc2f98326853612d4c7857ad026c811df05",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4495586887:2026-05-20T07:13:24Z:re_review",
       "comment_id": "4495586887",
@@ -32974,6 +32941,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117884:5156153311:2026-08-04T09:15:56Z:clawsweeper_needs_human",
+      "comment_id": "5156153311",
+      "comment_version_key": "5156153311:2026-08-04T09:15:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117884#issuecomment-5156153311",
+      "comment_created_at": "2026-08-02T07:17:17Z",
+      "comment_updated_at": "2026-08-04T09:15:56Z",
+      "comment_body_sha256": "9b65817828aa4e169b86c6f5b25e4bac89e3dc678c30ee65f64b9949f46ff042",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117884,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the cancellation-sensitive liveness boundary; retain the post-cancellation and genuinely-silent-provider controls when validating the exact merge result. (sha=032077dd173dc36a4c1766a21b38b175a2b3fbcb)",
+      "expected_head_sha": "032077dd173dc36a4c1766a21b38b175a2b3fbcb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T09:16:42.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/idle-watchdog-merged-signal",
+        "head_sha": "032077dd173dc36a4c1766a21b38b175a2b3fbcb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
