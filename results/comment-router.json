@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T21:29:24.190Z",
+  "updated_at": "2026-08-04T21:41:41.663Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-04T18:04:13Z:clawsweeper_needs_human",
-      "comment_id": "5119082703",
-      "comment_version_key": "5119082703:2026-08-04T18:04:13Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
-      "comment_created_at": "2026-07-29T14:25:13Z",
-      "comment_updated_at": "2026-08-04T18:04:13Z",
-      "comment_body_sha256": "3f368d72c9cfdc73e4de4811bcb2dc25c0044656b9708eedb325820fab2da677",
-      "repo": "openclaw/shellbench",
-      "issue_number": 52,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Future valid Claude Code runs become eligible without changing historical manifests, so comparative reports should distinguish the forward-only cohort correction. (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
-      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T18:04:55.525Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-claude-trajectory-eligibility",
-        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-04T18:03:59Z:clawsweeper_auto_repair",
       "comment_id": "5160727900",
@@ -31909,6 +31876,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2646:5184942686:2026-08-04T21:41:05Z:re_review",
+      "comment_id": "5184942686",
+      "comment_version_key": "5184942686:2026-08-04T21:41:05Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2646#issuecomment-5184942686",
+      "comment_created_at": "2026-08-04T21:41:05Z",
+      "comment_updated_at": "2026-08-04T21:41:05Z",
+      "comment_body_sha256": "b970a3dd056f66ee3882ed5f70644ab5c3ae4c13b178508a8729f3036c8c0fcd",
+      "source_delivery_id": "33280ba0-904d-11f1-94df-5b0eae7f1f5e",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2646,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - both findings from the 21:27 review are addressed in 530eb6d08:",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-04T21:41:39.414Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bound-cost-cache-2637",
+        "head_sha": "530eb6d08c5bba4014e087b5156b6db339ca6fab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
