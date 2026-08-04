@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-53932",
+  "mode": "autonomous",
+  "run_id": "30891450841",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30891450841",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
+  "published_at": "2026-08-04T08:26:17.729Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_pr": null,
+  "summary": "Current main 9faf34d3bcb6aed4b69faa24c329b03691178692 still drops Slack forced-document intent before the upload loader, which defaults to image optimization. A narrow Slack-owned fix PR is appropriate, but this checkout is read-only, so branch creation, edits, and validation are blocked.",
+  "actions": [
+    {
+      "target": "#40829",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Central OpenClaw security triage owns this reference."
+    },
+    {
+      "target": "#41965",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Keep its distinct product scope open."
+    },
+    {
+      "target": "#53932",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "The required fix is reproducible, but the read-only environment prevents implementation and branch validation."
+    },
+    {
+      "target": "#53988",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Closed context reference; no closure action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-53932",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#53932",
+      "candidate_fix": null,
+      "reason": "Executor must apply this artifact in a writable trusted checkout."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#53932",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
