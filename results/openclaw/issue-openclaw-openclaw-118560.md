@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
-mode: "plan"
-run_id: "30903947381"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30903947381"
+mode: "autonomous"
+run_id: "30900045613"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30900045613"
 head_sha: "3d4b45a19e50dbe373c138c7c198029d15173ce7"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-04T11:21:06.724Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-04T10:31:01.904Z"
 canonical: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30903947381](https://github.com/openclaw/clawsweeper/actions/runs/30903947381)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30900045613](https://github.com/openclaw/clawsweeper/actions/runs/30900045613)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 ## Summary
 
-#118560 is a reproducible, non-security Control UI bug on main b5d41f90053b414267bb203b64f1f8dde12b2bda. Transcript-search activation drops the hit’s sessionId/messageId, while the existing Gateway chat.history contract supports anchored reset-archive reads. Plan one narrow credited fix PR; no GitHub mutation or code edit was performed in plan mode.
+Issue #118560 remains reproducible on pinned main 121c6c10423827ce8a65118600f3498e20b8f6e0: transcript-search activation passes only sessionKey, discarding the required sessionId/messageId anchor despite Gateway support for anchored reset-archive reads. The supplied checkout is clean but read-only, so this worker could not apply the repair or complete final validation.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | fix_needed | planned | canonical | The canonical issue needs a narrow Control UI repair using the existing Gateway contract. |
-| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A single new fix PR is the viable canonical path. |
+| #118560 | fix_needed | blocked | canonical | Concrete implementation is blocked only by the read-only checkout; no maintainer product decision is needed. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A narrow, non-security repair is ready for a writable executor. |
 
 ## Needs Human
 
