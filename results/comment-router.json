@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T15:15:21.226Z",
+  "updated_at": "2026-08-04T15:15:54.281Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-08-04T11:12:43Z:clawsweeper_needs_human",
-      "comment_id": "5010052996",
-      "comment_version_key": "5010052996:2026-08-04T11:12:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5010052996",
-      "comment_created_at": "2026-07-18T05:22:08Z",
-      "comment_updated_at": "2026-08-04T11:12:43Z",
-      "comment_body_sha256": "2b519e6e02fda7ab2a317f24b79ce303c2e6ab41b142943b34278f9b502994ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; normal PR handling should wait for the exact-head checks and merge-result refresh. (sha=cc901d9c23d1664b3bff7c85cec459483d3ec4be)",
-      "expected_head_sha": "cc901d9c23d1664b3bff7c85cec459483d3ec4be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T11:13:26.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/comfy-workflow-file-cap",
-        "head_sha": "cc901d9c23d1664b3bff7c85cec459483d3ec4be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110429:5173306355:2026-08-04T00:48:11Z:re_review",
       "comment_id": "5173306355",
@@ -32167,6 +32134,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119260:5180916360:2026-08-04T15:15:13Z:clawsweeper_needs_human",
+      "comment_id": "5180916360",
+      "comment_version_key": "5180916360:2026-08-04T15:15:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119260#issuecomment-5180916360",
+      "comment_created_at": "2026-08-04T15:06:29Z",
+      "comment_updated_at": "2026-08-04T15:15:13Z",
+      "comment_body_sha256": "0148daef650087ce207dfc33f736fe9e91723ba2a1982433120813e474f6e504",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes tests but supplies no redacted after-fix terminal, runtime, log, recording, or artifact evidence from the exact head; add that...; Review finding: [P1] Keep unavailable ownership non-truthy outside cleanup — src/gateway/managed-image-attachments.ts:1023-1024 - [medium] Truthy unavailable result bypasses trans... (sha=4c5b0a7c1ee7a16ff2c4ec999757cf6c99ae18bc)",
+      "expected_head_sha": "4c5b0a7c1ee7a16ff2c4ec999757cf6c99ae18bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T15:15:54.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/managed-media-cleanup-unavailable-store",
+        "head_sha": "4c5b0a7c1ee7a16ff2c4ec999757cf6c99ae18bc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
