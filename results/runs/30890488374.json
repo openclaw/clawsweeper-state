@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119148",
+  "mode": "autonomous",
+  "run_id": "30890488374",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30890488374",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119148.md",
+  "published_at": "2026-08-04T08:58:43.661Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119148",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119148",
+  "canonical_pr": null,
+  "summary": "#119148 is a current, narrow Bedrock provider bug on main b1f2aae3. A two-file fix plan is ready, but this worker cannot edit or validate the branch because the checkout is read-only and its focused test dependencies are incomplete.",
+  "actions": [
+    {
+      "target": "#119148",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": null,
+      "reason": "Use the existing provider-local cap resolver for explicit reasoning-off requests; it preserves request overrides and omits synthetic fallback caps."
+    },
+    {
+      "target": "#97176",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119148",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#97343",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119148",
+      "candidate_fix": null,
+      "reason": "Already merged; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119148",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": null,
+      "reason": "Narrow new fix PR is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119148",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": null,
+      "reason": "This worker has a read-only checkout, so it cannot apply the patch or run pnpm install to restore missing dependencies. Executor should apply the artifact on clawsweeper/issue-openclaw-openclaw-119148, install dependencies if required, and validate before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119160",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119148",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119160",
+      "commit": "fb78c112e28a6eb6f14d1414d650900441b07f2b",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119148",
+      "pr": "https://github.com/openclaw/openclaw/pull/119160",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119160",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
