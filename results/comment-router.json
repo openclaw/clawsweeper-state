@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-04T16:11:03.064Z",
+  "updated_at": "2026-08-04T16:11:07.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119169:5178594966:2026-08-04T11:51:14Z:re_review",
-      "comment_id": "5178594966",
-      "comment_version_key": "5178594966:2026-08-04T11:51:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119169#issuecomment-5178594966",
-      "comment_created_at": "2026-08-04T11:51:14Z",
-      "comment_updated_at": "2026-08-04T11:51:14Z",
-      "comment_body_sha256": "8af5999db806840ab40526089732b0687ade173a0c58c24012b8f6fd0fbc02d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119169,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T12:12:45.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-durable-delivery-ambiguous",
-        "head_sha": "4bdcd4141deaba1f7920e8afc1494712bdb99165",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:257:5168900311:2026-08-04T12:11:07Z:clawsweeper_auto_repair",
       "comment_id": "5168900311",
@@ -32162,6 +32115,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions/stale-11",
         "head_sha": "02188416e600d73276f7cb904406203c00f17482",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119226:5179482268:2026-08-04T16:09:36Z:clawsweeper_auto_repair",
+      "comment_id": "5179482268",
+      "comment_version_key": "5179482268:2026-08-04T16:09:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119226#issuecomment-5179482268",
+      "comment_created_at": "2026-08-04T13:05:43Z",
+      "comment_updated_at": "2026-08-04T16:09:36Z",
+      "comment_body_sha256": "6b8993e0fc53b59ddd2ff5f0923ded10eace7011bfd628e5b53e48978be7b5e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8686a2df20f597db19b9dc9e10c344285c67935b)",
+      "expected_head_sha": "8686a2df20f597db19b9dc9e10c344285c67935b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T16:11:07.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-lock-state-dir-118371",
+        "head_sha": "8686a2df20f597db19b9dc9e10c344285c67935b",
         "cluster_id": null,
         "job_path": null
       }
