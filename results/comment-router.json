@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T07:14:49.734Z",
+  "updated_at": "2026-08-04T07:15:20.937Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112329:5174438476:2026-08-04T03:59:10Z:re_review",
-      "comment_id": "5174438476",
-      "comment_version_key": "5174438476:2026-08-04T03:59:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112329#issuecomment-5174438476",
-      "comment_created_at": "2026-08-04T03:59:10Z",
-      "comment_updated_at": "2026-08-04T03:59:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "da0151b0-8fb8-11f1-9667-5c5193b81d05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112329,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T03:59:49.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/fix-matrix-doctor-archive-scan",
-        "head_sha": "8eae32bc62c3308b497824a2c2b36993cbb386b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112270:5174441420:2026-08-04T03:59:42Z:re_review",
       "comment_id": "5174441420",
@@ -31782,6 +31734,39 @@
         "kind": "pull_request",
         "branch": "kit/fix-disabled-memory-status",
         "head_sha": "749c141d85fc881596655f392ce967f0cf2cdccd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117887:5156337351:2026-08-04T07:14:39Z:clawsweeper_needs_human",
+      "comment_id": "5156337351",
+      "comment_version_key": "5156337351:2026-08-04T07:14:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117887#issuecomment-5156337351",
+      "comment_created_at": "2026-08-02T07:51:24Z",
+      "comment_updated_at": "2026-08-04T07:14:39Z",
+      "comment_body_sha256": "3801290656f359651a98006e33af98f15660afed3b9cee23de8f1bd36b764c56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; the cancellation and reader-release ordering needs green required checks on the exact rebased merge head. (sha=b89d856fe1b0d1659d62e43301e869b9a9013b52)",
+      "expected_head_sha": "b89d856fe1b0d1659d62e43301e869b9a9013b52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T07:15:20.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-sse-reader-cancel",
+        "head_sha": "b89d856fe1b0d1659d62e43301e869b9a9013b52",
         "cluster_id": null,
         "job_path": null
       }
