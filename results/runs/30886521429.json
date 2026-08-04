@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-71136",
+  "mode": "autonomous",
+  "run_id": "30886521429",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30886521429",
+  "head_sha": "3d4b45a19e50dbe373c138c7c198029d15173ce7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-71136.md",
+  "published_at": "2026-08-04T07:17:54.644Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/71136",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/71136",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow canonical bug: embedded runs omit the selected agent's existing contextTokens cap, unlike the CLI path. Plan one credited ClawSweeper PR; no close or merge action.",
+  "actions": [
+    {
+      "target": "#39857",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#71136",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#71136",
+      "candidate_fix": null,
+      "reason": "Open canonical issue; no viable implementation PR is hydrated."
+    },
+    {
+      "target": "#79011",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Not a duplicate: this repair propagates an existing per-agent setting and adds no configuration surface."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-71136",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#71136",
+      "candidate_fix": null,
+      "reason": "Create the narrow implementation artifact for the canonical issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-71136",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#71136",
+      "candidate_fix": null,
+      "reason": "Job permits one new implementation PR and prohibits merge/close."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#71136",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
