@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T04:06:52.171Z",
+  "updated_at": "2026-08-04T04:06:52.490Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118966:5171859574:2026-08-03T21:20:17Z:clawsweeper_needs_human",
-      "comment_id": "5171859574",
-      "comment_version_key": "5171859574:2026-08-03T21:20:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118966#issuecomment-5171859574",
-      "comment_created_at": "2026-08-03T21:20:17Z",
-      "comment_updated_at": "2026-08-03T21:20:17Z",
-      "comment_body_sha256": "913ed2483a2fab516bfe989e9fc8769d6315c99638e1301c85524d53157d9c64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118966,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete patch defect was found; this member-authored, maintainer-labeled PR should proceed through ordinary review and CI rather than a repair lane. (sha=02f8eb60355c00e9d9549a0413c1d0f3627f443a)",
-      "expected_head_sha": "02f8eb60355c00e9d9549a0413c1d0f3627f443a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-03T21:20:58.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-gateway-b1-rpc-automation",
-        "head_sha": "02f8eb60355c00e9d9549a0413c1d0f3627f443a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118856:5171859029:2026-08-03T21:20:15Z:re_review",
       "comment_id": "5171859029",
@@ -33355,6 +33322,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119033:5174475906:2026-08-04T04:05:27Z:clawsweeper_needs_human",
+      "comment_id": "5174475906",
+      "comment_version_key": "5174475906:2026-08-04T04:05:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119033#issuecomment-5174475906",
+      "comment_created_at": "2026-08-04T04:05:27Z",
+      "comment_updated_at": "2026-08-04T04:05:27Z",
+      "comment_body_sha256": "3a1966f6839f7846dee51a904694ea6f908d3d60f65092b38501f2e1163ab34e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Runtime parity accepts one known-harness-gap skip as passable, so an incorrect Codex assumption could make this QA lane green while suppressing useful Codex coverage. (sha=dc41d697799007dd907a8054f5b4d82f00a3dce1)",
+      "expected_head_sha": "dc41d697799007dd907a8054f5b4d82f00a3dce1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T04:06:52.490Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qa-b3-compaction-pruning-20260803",
+        "head_sha": "dc41d697799007dd907a8054f5b4d82f00a3dce1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
