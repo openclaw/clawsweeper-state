@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-04T19:07:01.588Z",
+  "updated_at": "2026-08-04T19:07:12.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113561:5180462685:2026-08-04T14:28:33Z:re_review",
-      "comment_id": "5180462685",
-      "comment_version_key": "5180462685:2026-08-04T14:28:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113561#issuecomment-5180462685",
-      "comment_created_at": "2026-08-04T14:28:33Z",
-      "comment_updated_at": "2026-08-04T14:28:33Z",
-      "comment_body_sha256": "37ae67adf7755a7e130767662630a5c71db14583b50ac92944ef444f98c6b8f6",
-      "source_delivery_id": "c6660fd0-9010-11f1-9017-0b6e049f8421",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113561,
-      "author": "samson1357924",
-      "author_id": 98934496,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T14:29:05.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/opencode-catalog-static-sync",
-        "head_sha": "b45104f27a93fc05b370a21cf76cd691f03f17d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118586:5164183115:2026-08-04T14:28:24Z:clawsweeper_auto_repair",
       "comment_id": "5164183115",
@@ -31939,6 +31891,39 @@
         "kind": "pull_request",
         "branch": "codex/qa0803-doctor-cli-recovery",
         "head_sha": "3c252e799342236eb50a9958be0922d2ecca0a82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119299:5182854672:2026-08-04T19:06:23Z:clawsweeper_needs_human",
+      "comment_id": "5182854672",
+      "comment_version_key": "5182854672:2026-08-04T19:06:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119299#issuecomment-5182854672",
+      "comment_created_at": "2026-08-04T18:09:07Z",
+      "comment_updated_at": "2026-08-04T19:06:23Z",
+      "comment_body_sha256": "4d8a45e59f848e17b2194988cd8244bbf06347c6307104a713d987a2f7730dec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body shows a live MCP run on parent commit b8e36d08480, but it does not prove explicit finite-cap capture or that tools added l...; Review finding: [P1] Capture authority for every finite cron cap — src/agents/tools/cron-tool.ts:473-479 - [P1] Enforce captured MCP tool names during projection — src/agents/cli-... (sha=157ecfe6c9579f388c8212ecc214e2dd4dee82df)",
+      "expected_head_sha": "157ecfe6c9579f388c8212ecc214e2dd4dee82df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T19:07:12.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-runtime-authority-v1",
+        "head_sha": "157ecfe6c9579f388c8212ecc214e2dd4dee82df",
         "cluster_id": null,
         "job_path": null
       }
