@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-04T21:09:49.887Z",
+  "updated_at": "2026-08-04T21:09:54.326Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115670:5118073904:2026-08-04T16:09:44Z:clawsweeper_needs_human",
-      "comment_id": "5118073904",
-      "comment_version_key": "5118073904:2026-08-04T16:09:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5118073904",
-      "comment_created_at": "2026-07-29T12:59:23Z",
-      "comment_updated_at": "2026-08-04T16:09:44Z",
-      "comment_body_sha256": "764876559ee9908a4c02cf63e09cb660b465c5ba331ef931fe0b5cf67be11197",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This creates a public opt-in CLI contract and a lazy-additive SQLite origin record; a downgraded build will not understand adoption provenance and can revert to its former workspace-r... (sha=5d48125e6ed752e38d1934bbc9c8d82f924c2d0d)",
-      "expected_head_sha": "5d48125e6ed752e38d1934bbc9c8d82f924c2d0d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T17:22:33.071Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claws-adopt-existing-workspace",
-        "head_sha": "5d48125e6ed752e38d1934bbc9c8d82f924c2d0d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117455:5152018533:2026-08-04T16:04:50Z:clawsweeper_needs_human",
       "comment_id": "5152018533",
@@ -31575,6 +31542,39 @@
       "status": "skipped",
       "processed_at": "2026-08-04T21:09:49.887Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113183:5089922152:2026-08-04T21:09:14Z:clawsweeper_needs_human",
+      "comment_id": "5089922152",
+      "comment_version_key": "5089922152:2026-08-04T21:09:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113183#issuecomment-5089922152",
+      "comment_created_at": "2026-07-27T09:58:19Z",
+      "comment_updated_at": "2026-08-04T21:09:14Z",
+      "comment_body_sha256": "96e480cbf48ca19f0728bc6822c84e92b449eb13e9a9798527d10675aef40cae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies mocked unit tests and reports no live Anthropic OAuth after-fix run; add redacted terminal output, logs, or recording after rep...; Review finding: [P1] Probe canonical Claude CLI OAuth profiles — src/agents/auth-profiles/usage.ts:139-145 - [P1] Keep cooldown probes bound to the failed profile — src/agents/aut... (sha=ce4300506c042fe8934cb11efd03f4ba77e01f18)",
+      "expected_head_sha": "ce4300506c042fe8934cb11efd03f4ba77e01f18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-04T21:09:54.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-usage-reset-cooldown",
+        "head_sha": "ce4300506c042fe8934cb11efd03f4ba77e01f18",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
