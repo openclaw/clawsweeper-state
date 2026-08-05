@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:11:51.595Z",
+  "updated_at": "2026-08-05T06:12:53.198Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116291:5186718730:2026-08-05T02:09:23Z:re_review",
-      "comment_id": "5186718730",
-      "comment_version_key": "5186718730:2026-08-05T02:09:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116291#issuecomment-5186718730",
-      "comment_created_at": "2026-08-05T02:09:23Z",
-      "comment_updated_at": "2026-08-05T02:09:23Z",
-      "comment_body_sha256": "cd44184fd6f3098c526b54d82c98baa3ac7c0ea7e093ac161e03d4b82a5063f4",
-      "source_delivery_id": "adbbe600-9072-11f1-831e-d25def64bd4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116291,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:09:54.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-111370-hook-orphan-reaper",
-        "head_sha": "79b23d0f4cb159ac6b0dd096c8b797b54d184cda",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112818:5075143002:2026-08-05T02:09:11Z:clawsweeper_needs_human",
       "comment_id": "5075143002",
@@ -32536,6 +32488,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119422:5187060613:2026-08-05T06:12:13Z:clawsweeper_needs_human",
+      "comment_id": "5187060613",
+      "comment_version_key": "5187060613:2026-08-05T06:12:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119422#issuecomment-5187060613",
+      "comment_created_at": "2026-08-05T03:06:08Z",
+      "comment_updated_at": "2026-08-05T06:12:13Z",
+      "comment_body_sha256": "33705e4f985ea2b5c8aa27173f19392a97eb457db0191e3e0fbadacea53b24dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations that used zero as an effective delete-all cap will retain history after upgrade; operators who still need reclamation must set a positive budget. (sha=060440a601954f38bce0bcfcc0290a028f6071c7)",
+      "expected_head_sha": "060440a601954f38bce0bcfcc0290a028f6071c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:12:53.198Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-maxdiskbytes-zero",
+        "head_sha": "060440a601954f38bce0bcfcc0290a028f6071c7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
