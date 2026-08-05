@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119616",
+  "mode": "autonomous",
+  "run_id": "31013225424",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31013225424",
+  "head_sha": "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119616.md",
+  "published_at": "2026-08-05T14:20:10.833Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119616",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119616",
+  "canonical_pr": null,
+  "summary": "#119616 is a current-main Feishu plugin bug with a narrow repair path. Implementation and focused validation are blocked in this read-only checkout: the test harness cannot resolve its declared p-map dependency. A new fix-PR artifact is ready for the executor.",
+  "actions": [
+    {
+      "target": "#119616",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119616",
+      "candidate_fix": null,
+      "reason": "The local sandbox prevents the required branch edit and dependency installation; hand off the bounded repair artifact to the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119616",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119616",
+      "candidate_fix": null,
+      "reason": "Create the issue-scoped branch and validate the plugin-local repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
