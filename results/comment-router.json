@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T15:12:34.152Z",
+  "updated_at": "2026-08-05T15:12:59.503Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:88:5167643847:2026-08-05T11:35:32Z:clawsweeper_needs_human",
-      "comment_id": "5167643847",
-      "comment_version_key": "5167643847:2026-08-05T11:35:32Z",
-      "comment_url": "https://github.com/openclaw/notcrawl/pull/88#issuecomment-5167643847",
-      "comment_created_at": "2026-08-03T14:25:23Z",
-      "comment_updated_at": "2026-08-05T11:35:32Z",
-      "comment_body_sha256": "7a3e37d957ac3ca8f105e8ebaea1cd2aa43eadf85340874cc2a6048a9ee3238e",
-      "repo": "openclaw/notcrawl",
-      "issue_number": 88,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies unit and httptest output but no after-fix real CLI behavior proof; add redacted terminal output or a recording, then update the... (sha=3adabac3c8afb20f2ed4a9e245bc26e67e808742)",
-      "expected_head_sha": "3adabac3c8afb20f2ed4a9e245bc26e67e808742",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T11:36:04.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/default-http-client-timeout",
-        "head_sha": "3adabac3c8afb20f2ed4a9e245bc26e67e808742",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119516:5190773223:2026-08-05T10:46:38Z:re_review",
       "comment_id": "5190773223",
@@ -31635,6 +31602,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-05T15:12:06Z:clawsweeper_needs_human",
+      "comment_id": "5159399788",
+      "comment_version_key": "5159399788:2026-08-05T15:12:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
+      "comment_created_at": "2026-08-02T16:58:31Z",
+      "comment_updated_at": "2026-08-05T15:12:06Z",
+      "comment_body_sha256": "591954af3a95006ed7a84c20b64ec9ad01a96f1ae21adb9f91c8678a0ea935d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict endpoint overrides to an authorized bootstrap (P1)** - This newly exported setter accepts any valid private endpoint and installs it process-wide, after which REST and Gateway paths send Bot authorizati...; Review finding: [P1] Restrict endpoint overrides to an authorized bootstrap — extensions/discord/api.ts:24-27 - [high] Public setter lacks caller authorization — extensions/discor... (sha=3a55bce57ff48f40cf648b28c5634e0be756d84d)",
+      "expected_head_sha": "3a55bce57ff48f40cf648b28c5634e0be756d84d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T15:12:59.503Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/discord-provider-endpoint-runtime",
+        "head_sha": "3a55bce57ff48f40cf648b28c5634e0be756d84d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
