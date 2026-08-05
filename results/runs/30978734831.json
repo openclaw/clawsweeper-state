@@ -1,0 +1,160 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119440",
+  "mode": "autonomous",
+  "run_id": "30978734831",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30978734831",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119440.md",
+  "published_at": "2026-08-05T06:19:16.274Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119440",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119440",
+  "canonical_pr": null,
+  "summary": "#119440 is a source-reproducible canonical bug on main dc93ea6d. Per-dedupe identity preparation is quadratic (about 16,900 preparations for 65 configured plus 65 discovered targets); use an invocation-local prepared-identity cache without changing physical-identity semantics. No code was written because this worker checkout is read-only; focused validation is also blocked by missing node_modules dependency p-map.",
+  "actions": [
+    {
+      "target": "#13758",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation permitted or needed."
+    },
+    {
+      "target": "#75297",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation permitted or needed."
+    },
+    {
+      "target": "#75688",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation permitted or needed."
+    },
+    {
+      "target": "#75707",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation permitted or needed."
+    },
+    {
+      "target": "#76188",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation permitted or needed."
+    },
+    {
+      "target": "#91517",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Adjacent but distinct already-closed issue."
+    },
+    {
+      "target": "#119440",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119440",
+      "candidate_fix": null,
+      "reason": "A narrow root-cause repair is available: cache prepared identities only for one dedupe invocation, preserving the existing comparator's exact semantics and avoiding a long-lived freshness cache."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119440",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119440",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-119440."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 6,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 6,
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119512",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119440",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119512",
+      "commit": "b0607b7a9d203ab0d87799c70feaa3b284dbb475",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119440",
+      "pr": "https://github.com/openclaw/openclaw/pull/119512",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119512",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119512",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(sessions): reuse identities during target dedupe",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
