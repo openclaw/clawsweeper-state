@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:01:11.023Z",
+  "updated_at": "2026-08-05T16:02:05.990Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-08-05T11:13:00Z:clawsweeper_needs_human",
-      "comment_id": "5174219273",
-      "comment_version_key": "5174219273:2026-08-05T11:13:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5174219273",
-      "comment_created_at": "2026-08-04T03:19:55Z",
-      "comment_updated_at": "2026-08-05T11:13:00Z",
-      "comment_body_sha256": "a8629f395caa4a39189664dedd95a57a1c3d553e237728681f769578ddf7bfa4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users who set tools.codeMode.maxPendingToolCalls now get accepted queueing up to fixed 256-request and 8 MiB ceilings instead of immediate guest-frontier rejection; that capa... (sha=87c2d0ac871e4e3c49416743fc03a86410c2a8f9)",
-      "expected_head_sha": "87c2d0ac871e4e3c49416743fc03a86410c2a8f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T11:39:07.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "87c2d0ac871e4e3c49416743fc03a86410c2a8f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119055:5174502639:2026-08-05T10:42:10Z:clawsweeper_needs_human",
       "comment_id": "5174502639",
@@ -31736,6 +31703,55 @@
         "kind": "pull_request",
         "branch": "fix/bound-companion-transcript-seed",
         "head_sha": "c0b86d847f590fb6b55c3ecd0d827b2ef4731226",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118112:5193868457:2026-08-05T15:35:39Z:re_review",
+      "comment_id": "5193868457",
+      "comment_version_key": "5193868457:2026-08-05T15:35:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118112#issuecomment-5193868457",
+      "comment_created_at": "2026-08-05T15:35:39Z",
+      "comment_updated_at": "2026-08-05T15:35:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118112,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "forced_replay": true,
+      "attempt_id": "pr118112-5bce30c-after-reset",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:02:03.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-117628-telegram-button-contract",
+        "head_sha": "5bce30c24a014106ff379ca515bf6270e6686740",
         "cluster_id": null,
         "job_path": null
       },
