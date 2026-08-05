@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "30977200924"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30977200924"
+run_id: "30981115019"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30981115019"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T06:27:02.065Z"
+published_at: "2026-08-05T07:02:35.831Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30977200924](https://github.com/openclaw/clawsweeper/actions/runs/30977200924)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30981115019](https://github.com/openclaw/clawsweeper/actions/runs/30981115019)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains a reproducible, non-security canonical issue. Plan one narrow credited fix PR that derives both SecretRef reference artifacts from the existing registry matrix, with strict marker-only Markdown replacement and generated-artifact checks.
+#44289 remains the open canonical issue. Current main at 76ac472f still validates checked-in SecretRef reference artifacts after drift rather than providing the requested deterministic writer/check path. The three linked PRs are closed historical context; a narrow credited replacement PR is appropriate.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 | Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
+| issue_implementation_status_comment | updated | #44289 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +67,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | Implement the established generated-artifact contract on a new ClawSweeper branch. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | No open, writable contributor PR exists; create a new focused fix artifact. |
-| #85969 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
-| #89142 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
-| #91612 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| #44289 | fix_needed | planned | canonical | Implement the narrow registry-backed SecretRef reference artifact generator and check path; runtime SecretRef behavior remains unchanged. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Create one narrow, source-owned replacement fix artifact for the canonical issue. |
+| #85969 | keep_closed | skipped | superseded | Closed context only; no mutation is valid. |
+| #89142 | keep_closed | skipped | superseded | Closed context only; no mutation is valid. |
+| #91612 | keep_closed | skipped | superseded | Closed context only; no mutation is valid. |
 
 ## Needs Human
 
