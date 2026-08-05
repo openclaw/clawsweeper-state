@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:30:46.007Z",
+  "updated_at": "2026-08-05T23:31:52.755Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:76221:4364540514:2026-08-02T22:53:44Z:clawsweeper_auto_repair",
-      "comment_id": "4364540514",
-      "comment_version_key": "4364540514:2026-08-02T22:53:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/76221#issuecomment-4364540514",
-      "comment_created_at": "2026-05-02T19:17:50Z",
-      "comment_updated_at": "2026-08-02T22:53:44Z",
-      "comment_body_sha256": "c1fa2f9334a0a17b226c31b242203883f648b3dca83ed1efa09ea0cdf1a74f46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 76221,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a74a1e2e73026d2d5e03b0fa7cf16006d9257701)",
-      "expected_head_sha": "a74a1e2e73026d2d5e03b0fa7cf16006d9257701",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T17:36:51.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-anthropic-vertex-audit",
-        "head_sha": "a74a1e2e73026d2d5e03b0fa7cf16006d9257701",
-        "cluster_id": "automerge-openclaw-openclaw-76221",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76221.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82105:4458886902:2026-08-05T16:16:58Z:clawsweeper_auto_repair",
       "comment_id": "4458886902",
@@ -33154,6 +33121,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119256:5180866476:2026-08-05T23:31:10Z:clawsweeper_needs_human",
+      "comment_id": "5180866476",
+      "comment_version_key": "5180866476:2026-08-05T23:31:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5180866476",
+      "comment_created_at": "2026-08-04T15:02:16Z",
+      "comment_updated_at": "2026-08-05T23:31:10Z",
+      "comment_body_sha256": "5242eb903e2350a3b38ca8fc70d01a451c5da28dac3f79da51f1ac66676c31fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The available PR body and comments describe live runs but provide no inspectable redacted exact-head transcript, terminal output, recording, lo...; Review finding: [P1] Commit vote dedupe only after a successful decode — extensions/whatsapp/src/inbound/poll-votes.ts:430-454 - [P1] Persist the poll payload when the outbound se... (sha=d3110251d8f874797a6c96bcf925a475366e0258)",
+      "expected_head_sha": "d3110251d8f874797a6c96bcf925a475366e0258",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:31:52.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/whatsapp-poll-vote-hook",
+        "head_sha": "d3110251d8f874797a6c96bcf925a475366e0258",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
