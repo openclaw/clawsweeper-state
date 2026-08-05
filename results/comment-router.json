@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:25:01.226Z",
+  "updated_at": "2026-08-05T23:26:11.184Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118499:5194891180:2026-08-05T17:09:31Z:re_review",
-      "comment_id": "5194891180",
-      "comment_version_key": "5194891180:2026-08-05T17:09:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118499#issuecomment-5194891180",
-      "comment_created_at": "2026-08-05T17:09:31Z",
-      "comment_updated_at": "2026-08-05T17:09:31Z",
-      "comment_body_sha256": "d7c177a342156ac1acd3fe22b26c2bc2f7d1a0b3a87bcadba9237c73f859138d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118499,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T17:35:34.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk",
-        "head_sha": "2fa43c6359243ad50bce5f4b69f622c91e33a82c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5194895578:2026-08-05T17:09:59Z:re_review",
       "comment_id": "5194895578",
@@ -33164,6 +33117,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-7776e25466",
         "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3429:5198530872:2026-08-05T23:25:29Z:clawsweeper_needs_human",
+      "comment_id": "5198530872",
+      "comment_version_key": "5198530872:2026-08-05T23:25:29Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3429#issuecomment-5198530872",
+      "comment_created_at": "2026-08-05T23:25:29Z",
+      "comment_updated_at": "2026-08-05T23:25:29Z",
+      "comment_body_sha256": "1202b729415eff23d8260cd4c14ad5a9dec4bffae9cfe8c556fc198e9876931a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A loopback URL proves only its network destination, not that it serves the stated checkout or an isolated local Convex backend; published artifacts could therefore weaken the existing... (sha=a560dd696dfb45fc99d93c49ba7f4ec68bbdb9af)",
+      "expected_head_sha": "a560dd696dfb45fc99d93c49ba7f4ec68bbdb9af",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:26:11.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/ui-proof-optional-crabbox",
+        "head_sha": "a560dd696dfb45fc99d93c49ba7f4ec68bbdb9af",
         "cluster_id": null,
         "job_path": null
       }
