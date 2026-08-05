@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T04:08:08.265Z",
+  "updated_at": "2026-08-05T04:08:29.885Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119321:5186304716:2026-08-05T00:59:27Z:re_review",
-      "comment_id": "5186304716",
-      "comment_version_key": "5186304716:2026-08-05T00:59:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119321#issuecomment-5186304716",
-      "comment_created_at": "2026-08-05T00:59:27Z",
-      "comment_updated_at": "2026-08-05T00:59:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e8c0e430-9068-11f1-9b6a-3520e208cb10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119321,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T01:00:05.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/macos-realtime-runtime",
-        "head_sha": "751329cd4c9e17a01f6e3f448cd2ab0f142f1bca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119203:5186294292:2026-08-05T00:57:36Z:re_review",
       "comment_id": "5186294292",
@@ -32115,6 +32067,39 @@
         "kind": "pull_request",
         "branch": "main",
         "head_sha": "73053c96de488e942f953f0deaa0a7660b481c7d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118389:5161820263:2026-08-05T04:06:35Z:clawsweeper_needs_human",
+      "comment_id": "5161820263",
+      "comment_version_key": "5161820263:2026-08-05T04:06:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118389#issuecomment-5161820263",
+      "comment_created_at": "2026-08-03T02:55:34Z",
+      "comment_updated_at": "2026-08-05T04:06:35Z",
+      "comment_body_sha256": "8b7677a72c61a4948ff0fa82417568bb2c1f26c902b23b5bdc24f531b18a47cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The accessible body reports a prior timing but contains no inspectable raw compact-CI output for the current head; attach redacted CI or termin...; Review finding: [P2] Remove the release-owned changelog entry — CHANGELOG.md:9 - [low] Resolve the failed exact-head security gate (sha=4a75ed972fafd14d4bfeb5965220da189049834e)",
+      "expected_head_sha": "4a75ed972fafd14d4bfeb5965220da189049834e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T04:08:29.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-30pct-integration",
+        "head_sha": "4a75ed972fafd14d4bfeb5965220da189049834e",
         "cluster_id": null,
         "job_path": null
       }
