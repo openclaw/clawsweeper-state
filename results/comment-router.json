@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:39:33.031Z",
+  "updated_at": "2026-08-05T06:40:01.930Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:2948:4868454115:2026-08-05T02:16:25Z:clawsweeper_auto_repair",
-      "comment_id": "4868454115",
-      "comment_version_key": "4868454115:2026-08-05T02:16:25Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/2948#issuecomment-4868454115",
-      "comment_created_at": "2026-07-02T17:08:35Z",
-      "comment_updated_at": "2026-08-05T02:16:25Z",
-      "comment_body_sha256": "b95918ffa0cf557fecfe5a1d78a5cf5ccb6f0fed34e477997a23078bfd99c0f3",
-      "repo": "openclaw/clawhub",
-      "issue_number": 2948,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2172b6badd2b433e8c305de870a2af47b823be28)",
-      "expected_head_sha": "2172b6badd2b433e8c305de870a2af47b823be28",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:20:29.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "account-feed-model-api",
-        "head_sha": "2172b6badd2b433e8c305de870a2af47b823be28",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:94299:4744301789:2026-06-18T17:00:15Z:re_review",
       "comment_id": "4744301789",
@@ -32589,6 +32556,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T06:39:33.031Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119497:5187996664:2026-08-05T06:39:32Z:clawsweeper_needs_human",
+      "comment_id": "5187996664",
+      "comment_version_key": "5187996664:2026-08-05T06:39:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119497#issuecomment-5187996664",
+      "comment_created_at": "2026-08-05T05:39:25Z",
+      "comment_updated_at": "2026-08-05T06:39:32Z",
+      "comment_body_sha256": "ec11c8eae9d20574c0ca2f928ac2b4f8e4ae3eed6ded867af6bddcf5877ef63e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119497,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body shows a failing fallback transcript and mock regressions, not a successful after-fix live run from the current head. After ad... (sha=cf5e2a63307b6a4f3e1836ec5d565b9393c9e810)",
+      "expected_head_sha": "cf5e2a63307b6a4f3e1836ec5d565b9393c9e810",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:40:01.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-character-reply-evidence-20260805",
+        "head_sha": "cf5e2a63307b6a4f3e1836ec5d565b9393c9e810",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
