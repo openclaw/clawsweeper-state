@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
 mode: "autonomous"
-run_id: "30931936912"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30931936912"
+run_id: "30959165868"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30959165868"
 head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-04T17:12:36.420Z"
-canonical: "#118560"
-canonical_issue: "#118560"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-05T00:32:18.785Z"
+canonical: "https://github.com/openclaw/openclaw/issues/118560"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30931936912](https://github.com/openclaw/clawsweeper/actions/runs/30931936912)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30959165868](https://github.com/openclaw/clawsweeper/actions/runs/30959165868)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #118560
+Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 ## Summary
 
-#118560 is a reproducible non-security Control UI defect on current main. A selected transcript-search hit carries sessionId/messageId, but the navigation callback forwards only sessionKey; no hydrated PR owns the repair. Plan a narrow credited fix PR.
+Current main contains the reproducible WebChat reset-archive defect. The narrow fix is defined, but this worker is filesystem read-only and lacks runnable local test dependencies, so no branch or PR can be produced here.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Canonical: #118560
 | Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Canonical: #118560
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex review-fix worker timed out after 867394ms |
+| issue_implementation_status_comment | updated | #118560 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +67,8 @@ Canonical: #118560
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | fix_needed | planned | canonical | Current main drops the archive provenance before the initial chat-history request. |
-| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned |  | No viable PR is hydrated; a narrow new fix PR is appropriate. |
+| #118560 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only filesystem. `pnpm docs:list` also failed before execution because Corepack could not create its cache; node_modules lacks Vitest and Playwright. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A bounded UI-only repair can reuse the existing Gateway contract; no protocol, config, storage, or changelog change is needed. |
 
 ## Needs Human
 
