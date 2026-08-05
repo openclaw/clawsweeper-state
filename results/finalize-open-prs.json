@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T20:56:02.400Z",
-  "count": 14,
+  "generated_at": "2026-08-05T21:08:39.535Z",
+  "count": 15,
   "summary": {
-    "open_prs": 14,
+    "open_prs": 15,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 11,
     "needs_review": 0,
-    "needs_merge_preflight": 14,
+    "needs_merge_preflight": 15,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,81 +27,31 @@
   },
   "prs": [
     {
-      "number": 119735,
-      "title": "fix(whatsapp): refresh activity for pending inbound work",
-      "url": "https://github.com/openclaw/openclaw/pull/119735",
-      "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-      "head_sha": "f90a1a274bd7a439e6b68190eda2ce743396b954",
-      "cluster_id": "issue-openclaw-openclaw-114169",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
-      "updated_at": "2026-08-05T20:54:50Z",
+      "number": 119737,
+      "title": "fix(slack): require confirmed thread placement for terminal receipts",
+      "url": "https://github.com/openclaw/openclaw/pull/119737",
+      "branch": "clawsweeper/issue-openclaw-openclaw-96692",
+      "head_sha": "eb13c2b6cbfbec9ec40949988059e802207d1ff1",
+      "cluster_id": "issue-openclaw-openclaw-96692",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
+      "updated_at": "2026-08-05T21:05:29Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 111,
+        "total": 99,
         "counts": {
-          "SKIPPED": 39,
-          "SUCCESS": 18,
-          "IN_PROGRESS": 5,
-          "QUEUED": 49
+          "SKIPPED": 38,
+          "SUCCESS": 56,
+          "IN_PROGRESS": 4,
+          "NEUTRAL": 1
         },
         "blockers": [
-          "CI / security-fast:IN_PROGRESS",
-          "Workflow Sanity / actionlint:IN_PROGRESS",
-          "CI / pnpm-store-warmup:QUEUED",
-          "Dependency Guard / dependency-guard:IN_PROGRESS",
-          "CI / build-artifacts:QUEUED",
-          "CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS",
-          "CI / checks-fast-max-lines-ratchet:QUEUED",
-          "CI / checks-fast-bundled-protocol:QUEUED",
-          "CI / checks-fast-bun-launcher:QUEUED",
-          "CI / checks-fast-contracts-plugins-a:QUEUED",
-          "CI / checks-fast-contracts-plugins-b:IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-a:QUEUED",
-          "CI / checks-fast-contracts-channels-b:QUEUED",
-          "CI / checks-node-compact-large-1:QUEUED",
-          "CI / checks-node-compact-large-2:QUEUED",
-          "CI / checks-node-compact-large-3:QUEUED",
-          "CI / checks-node-compact-large-4:QUEUED",
-          "CI / checks-node-compact-large-5:QUEUED",
-          "CI / checks-node-compact-large-6:QUEUED",
-          "CI / checks-node-compact-large-7:QUEUED",
-          "CI / checks-node-compact-large-8:QUEUED",
-          "CI / checks-node-compact-small-1:QUEUED",
-          "CI / checks-node-compact-small-10:QUEUED",
-          "CI / checks-node-compact-small-11:QUEUED",
-          "CI / checks-node-compact-small-12:QUEUED",
-          "CI / checks-node-compact-small-13:QUEUED",
-          "CI / checks-node-compact-small-14:QUEUED",
-          "CI / checks-node-compact-small-15:QUEUED",
-          "CI / checks-node-compact-small-16:QUEUED",
-          "CI / checks-node-compact-small-2:QUEUED",
-          "CI / checks-node-compact-small-3:QUEUED",
-          "CI / checks-node-compact-small-4:QUEUED",
-          "CI / checks-node-compact-small-5:QUEUED",
-          "CI / checks-node-compact-small-6:QUEUED",
-          "CI / checks-node-compact-small-7:QUEUED",
-          "CI / checks-node-compact-small-8:QUEUED",
-          "CI / checks-node-compact-small-9:QUEUED",
-          "CI / check-guards:QUEUED",
-          "CI / check-npm-lock:QUEUED",
-          "CI / check-bundled-channel-config-metadata:QUEUED",
-          "CI / check-prod-types:QUEUED",
-          "CI / check-lint:QUEUED",
-          "CI / check-dependencies:QUEUED",
-          "CI / check-test-types:QUEUED",
-          "CI / check-additional-boundaries-a:QUEUED",
-          "CI / check-additional-boundaries-bcd:QUEUED",
-          "CI / check-prompt-snapshots:QUEUED",
-          "CI / check-session-accessor-boundary:QUEUED",
-          "CI / check-session-transcript-reader-boundary:QUEUED",
-          "CI / check-sqlite-session-schema-baseline:QUEUED",
-          "CI / check-plugin-sdk-api-baseline:QUEUED",
-          "CI / check-sqlite-session-flip-proof:QUEUED",
-          "CI / check-additional-extension-package-boundary:QUEUED",
-          "CI / check-additional-runtime-topology-architecture:QUEUED"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -115,19 +65,79 @@
         "latest": []
       },
       "latest_record": {
-        "run_id": "31041676846",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31041676846",
-        "cluster_id": "issue-openclaw-openclaw-114169",
-        "published_at": "2026-08-05T20:04:49.545Z",
+        "run_id": "31008717397",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31008717397",
+        "cluster_id": "issue-openclaw-openclaw-96692",
+        "published_at": "2026-08-05T13:49:28.114Z",
         "workflow_conclusion": "failure",
         "apply_action": null
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
-        "needs_checks:CI / security-fast:IN_PROGRESS; Workflow Sanity / actionlint:IN_PROGRESS; CI / pnpm-store-warmup:QUEUED",
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / check-sqlite-session-flip-proof:IN_PROGRESS; CI / check-additional-extension-package-boundary:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 119735,
+      "title": "fix(whatsapp): refresh activity for pending inbound work",
+      "url": "https://github.com/openclaw/openclaw/pull/119735",
+      "branch": "clawsweeper/issue-openclaw-openclaw-114169",
+      "head_sha": "f90a1a274bd7a439e6b68190eda2ce743396b954",
+      "cluster_id": "issue-openclaw-openclaw-114169",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
+      "updated_at": "2026-08-05T21:05:23Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 114,
+        "counts": {
+          "SKIPPED": 40,
+          "SUCCESS": 73,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31044412285",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31044412285",
+        "cluster_id": "issue-openclaw-openclaw-114169",
+        "published_at": "2026-08-05T21:07:02.136Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119735",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(whatsapp): refresh activity for pending inbound work",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 119731,
@@ -139,7 +149,7 @@
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
       "updated_at": "2026-08-05T20:26:03Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -184,7 +194,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -194,24 +204,26 @@
       "title": "fix(uninstall): remove owned shell completion registrations with state",
       "url": "https://github.com/openclaw/openclaw/pull/119722",
       "branch": "clawsweeper/issue-openclaw-openclaw-112625",
-      "head_sha": "3b0215bbfcac6992c10e96858942f7830159b042",
+      "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
       "cluster_id": "issue-openclaw-openclaw-112625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-112625.md",
-      "updated_at": "2026-08-05T20:51:29Z",
+      "updated_at": "2026-08-05T20:58:35Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 128,
+        "total": 118,
         "counts": {
           "CANCELLED": 1,
-          "SKIPPED": 47,
-          "SUCCESS": 79,
+          "SUCCESS": 77,
+          "SKIPPED": 38,
+          "IN_PROGRESS": 1,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-small-6:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -261,7 +273,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-small-6:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -338,22 +350,25 @@
       "title": "fix(telegram): prioritize configured commands in capped menus",
       "url": "https://github.com/openclaw/openclaw/pull/119717",
       "branch": "clawsweeper/issue-openclaw-openclaw-89252",
-      "head_sha": "8ec6719930a977e0716cf98ad1cbef4480b79a07",
+      "head_sha": "48ae7e5c2468fffa0661abc46fcb51c1cb8fa53e",
       "cluster_id": "issue-openclaw-openclaw-89252",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
-      "updated_at": "2026-08-05T20:54:31Z",
+      "updated_at": "2026-08-05T21:06:38Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 124,
+        "total": 113,
         "counts": {
-          "SKIPPED": 48,
-          "SUCCESS": 75,
+          "CANCELLED": 1,
+          "SUCCESS": 73,
+          "SKIPPED": 38,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -408,9 +423,10 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119712,

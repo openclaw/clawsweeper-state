@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-114169",
+  "mode": "autonomous",
+  "run_id": "31044412285",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31044412285",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
+  "published_at": "2026-08-05T21:07:02.136Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_pr": null,
+  "summary": "Verified on main 2db3431f: WhatsApp can retain busy work with an unrefreshed activity timestamp. Plan a narrow WhatsApp status-lifecycle heartbeat; retain the fixed 25-minute gateway stuck policy and add no configuration.",
+  "actions": [
+    {
+      "target": "#114169",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "The canonical repair is at the WhatsApp busy-status lifecycle owner, not a configurable consumer-side timeout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-114169",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "A two-file, plugin-owned repair and focused regression are sufficient for a new fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119735",
+      "branch": "clawsweeper/issue-openclaw-openclaw-114169",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119735",
+      "commit": "f90a1a274bd7a439e6b68190eda2ce743396b954",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#114169",
+      "pr": "https://github.com/openclaw/openclaw/pull/119735",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119735",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119735",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(whatsapp): refresh activity for pending inbound work",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
