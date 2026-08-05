@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T05:40:47.368Z",
+  "updated_at": "2026-08-05T05:41:31.150Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117681:5186644750:2026-08-05T01:57:12Z:re_review",
-      "comment_id": "5186644750",
-      "comment_version_key": "5186644750:2026-08-05T01:57:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117681#issuecomment-5186644750",
-      "comment_created_at": "2026-08-05T01:57:12Z",
-      "comment_updated_at": "2026-08-05T01:57:12Z",
-      "comment_body_sha256": "8249457f7639d3fb58d5366284d70eb682ee322f6e45efdf62f5349d3e203e0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117681,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T01:59:52.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/117633-clawhub-slug-collision",
-        "head_sha": "c36ed8a6d8147e0a98a6a8c7c048d540b7c63177",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113257:5186639775:2026-08-05T01:56:26Z:re_review",
       "comment_id": "5186639775",
@@ -32697,6 +32650,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T05:40:47.368Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119467:5187470155:2026-08-05T05:40:55Z:clawsweeper_needs_human",
+      "comment_id": "5187470155",
+      "comment_version_key": "5187470155:2026-08-05T05:40:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187470155",
+      "comment_created_at": "2026-08-05T04:16:08Z",
+      "comment_updated_at": "2026-08-05T05:40:55Z",
+      "comment_body_sha256": "42ddd1efb4705ee41b85530c735bfdf62a6980083f5625f6211795d696a0497e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep raw-text search indices in the original HTML string (P1)** - toLowerCase() can expand Unicode (İ becomes two UTF-16 code units), so closeStart no longer indexes html. A script body with many such characters...; Review finding: [P1] Keep raw-text search indices in the original HTML string — extensions/web-readability/web-content-extractor.ts:132-146 - [high] Unicode offset bypasses the ne... (sha=5ed10e4d7f09094f93a161b2a763c52a7932be49)",
+      "expected_head_sha": "5ed10e4d7f09094f93a161b2a763c52a7932be49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T05:41:31.150Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/web-readability-depth-cap",
+        "head_sha": "5ed10e4d7f09094f93a161b2a763c52a7932be49",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
