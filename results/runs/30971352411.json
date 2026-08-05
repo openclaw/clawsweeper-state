@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119360",
+  "mode": "autonomous",
+  "run_id": "30971352411",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30971352411",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119360.md",
+  "published_at": "2026-08-05T04:25:29.157Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_pr": null,
+  "summary": "Verified #119360 on main 866dade2462f0cbb4b6a617cabe09dd5cc6dd2ea: a deferred A→B restart publishes B as an accepted target before emission, so B→A schedules a new restart even though A is still running. A narrow coordinator-owned applied-target repair is appropriate, but this read-only checkout cannot create the required branch changes; focused tests also cannot start because dependency p-map is absent.",
+  "actions": [
+    {
+      "target": "#119360",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Canonical bounded Gateway lifecycle defect; a new narrow fix PR is required."
+    },
+    {
+      "target": "#98436",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Distinct product-direction follow-up; no debounce or configuration surface belongs in this bug repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the supplied checkout's read-only filesystem and incomplete dependencies; the repair plan is ready for the deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex review-fix worker timed out after 620877ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119360",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
