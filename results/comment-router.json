@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:26:40.029Z",
+  "updated_at": "2026-08-05T11:26:43.657Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-05T08:01:02Z:clawsweeper_needs_human",
-      "comment_id": "5134107795",
-      "comment_version_key": "5134107795:2026-08-05T08:01:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
-      "comment_created_at": "2026-07-30T17:24:48Z",
-      "comment_updated_at": "2026-08-05T08:01:02Z",
-      "comment_body_sha256": "e0a6e1e9dbd74eadcb58f987fc1ff41ea97240c8037519a15f078f56c736807d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the new warning acknowledgement boundary** - The new token and re-evaluation protocol decides whether staged third-party content can reach installation and configuration commit,...; Review finding: [medium] Review the new warning acknowledgement boundary — src/security/install-policy.ts:554 (sha=945b9c27f88c5f936bd020f17bf05e1e28ceb9b0)",
-      "expected_head_sha": "945b9c27f88c5f936bd020f17bf05e1e28ceb9b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:02:57.684Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "945b9c27f88c5f936bd020f17bf05e1e28ceb9b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116489:5151514098:2026-08-01T12:55:53Z:re_review",
       "comment_id": "5151514098",
@@ -32389,6 +32356,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119425:5191129289:2026-08-05T11:26:08Z:re_review",
+      "comment_id": "5191129289",
+      "comment_version_key": "5191129289:2026-08-05T11:26:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119425#issuecomment-5191129289",
+      "comment_created_at": "2026-08-05T11:26:08Z",
+      "comment_updated_at": "2026-08-05T11:26:08Z",
+      "comment_body_sha256": "3169d486ed39daa16e299dda661ad5f51d850317e6db1151a6361523af43e948",
+      "source_delivery_id": "7479b590-90c0-11f1-8cd7-4d5680a44889",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119425,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof and ci status evidence were added to the pr body and the `real behavior proof` check is passing; the latest review predates that evidence update",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:26:41.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-deferred-lane-release-119382",
+        "head_sha": "7682871a5b091733d6495be9bad1cb927b53ecfb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
