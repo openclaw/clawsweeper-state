@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:02:16.109Z",
+  "updated_at": "2026-08-05T00:02:34.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118896:5183629057:2026-08-04T19:26:04Z:re_review",
-      "comment_id": "5183629057",
-      "comment_version_key": "5183629057:2026-08-04T19:26:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118896#issuecomment-5183629057",
-      "comment_created_at": "2026-08-04T19:26:04Z",
-      "comment_updated_at": "2026-08-04T19:26:04Z",
-      "comment_body_sha256": "bf07b6d122543eabfc025cf7bfac10c865eb5b757f4f20887483891e7ebc1231",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118896,
-      "author": "ZYV5ge",
-      "author_id": 39863830,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T20:01:32.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-gemini-web-search-schema",
-        "head_sha": "5b87cceb6972b815830506e163d6d8b77830326c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119277:5183653828:2026-08-04T19:28:28Z:re_review",
       "comment_id": "5183653828",
@@ -32095,6 +32048,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T00:02:16.109Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:478:5117912122:2026-08-04T23:26:57Z:clawsweeper_needs_human",
+      "comment_id": "5117912122",
+      "comment_version_key": "5117912122:2026-08-04T23:26:57Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/478#issuecomment-5117912122",
+      "comment_created_at": "2026-07-29T12:44:42Z",
+      "comment_updated_at": "2026-08-04T23:26:57Z",
+      "comment_body_sha256": "a8733982361d33e43a94330ed643a1ddcba3297af26f7a0c88d2fa1e129b606e",
+      "repo": "openclaw/acpx",
+      "issue_number": 478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and CI, but it has no inspectable final-head terminal output, live logs, recording, or artifact showing repaired desc... (sha=5d3063b81189d8b9da851abf0891b88828d68f41)",
+      "expected_head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:02:34.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-adapter-process-lifecycle",
+        "head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
