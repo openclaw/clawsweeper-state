@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T05:27:41.247Z",
+  "updated_at": "2026-08-05T05:27:46.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5057209726:2026-07-23T10:12:25Z:re_review",
-      "comment_id": "5057209726",
-      "comment_version_key": "5057209726:2026-07-23T10:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5057209726",
-      "comment_created_at": "2026-07-23T10:12:25Z",
-      "comment_updated_at": "2026-07-23T10:12:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T01:20:01.964Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5060736300:2026-07-23T16:15:14Z:re_review",
       "comment_id": "5060736300",
@@ -32489,6 +32462,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104158:4942400393:2026-08-05T05:27:03Z:clawsweeper_needs_human",
+      "comment_id": "4942400393",
+      "comment_version_key": "4942400393:2026-08-05T05:27:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104158#issuecomment-4942400393",
+      "comment_created_at": "2026-07-11T04:30:09Z",
+      "comment_updated_at": "2026-08-05T05:27:03Z",
+      "comment_body_sha256": "5be937513a201990c8aaa3eb1872b2930848420728fb286aa9bdd42a4fb7f306",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104158,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Document the live paired-node collection (P2)** - The new --node path calls node.describe, but this page still says the CLI does not fetch live paired-node commands and its options table omits --node, --url, --t...; Review finding: [P2] Document the live paired-node collection — docs/cli/commands.md:58-60 - [P2] Sanitize paired-node labels before Markdown output — src/cli-catalog-overlay/list... (sha=94237d5ba93b956332555d61eedae89505c00571)",
+      "expected_head_sha": "94237d5ba93b956332555d61eedae89505c00571",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T05:27:46.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/commands-upstream-node",
+        "head_sha": "94237d5ba93b956332555d61eedae89505c00571",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
