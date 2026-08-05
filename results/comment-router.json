@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T22:40:26.990Z",
+  "updated_at": "2026-08-05T22:41:01.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4773555710:2026-06-22T22:15:38Z:re_review",
-      "comment_id": "4773555710",
-      "comment_version_key": "4773555710:2026-06-22T22:15:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4773555710",
-      "comment_created_at": "2026-06-22T22:15:38Z",
-      "comment_updated_at": "2026-06-22T22:15:38Z",
-      "comment_body_sha256": "6d9996451017e6b58e34fb820150d40ded657a1d1ab14897afa28ee168a39e09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T17:32:07.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4775548149:2026-06-23T04:18:29Z:re_review",
       "comment_id": "4775548149",
@@ -32435,6 +32408,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T22:40:26.990Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119256:5180866476:2026-08-05T22:40:12Z:clawsweeper_needs_human",
+      "comment_id": "5180866476",
+      "comment_version_key": "5180866476:2026-08-05T22:40:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5180866476",
+      "comment_created_at": "2026-08-04T15:02:16Z",
+      "comment_updated_at": "2026-08-05T22:40:12Z",
+      "comment_body_sha256": "1df7d45a585b6cf2bce8b240f39448456cb2d31aa47af1be8b13469be92a1dbf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The discussion describes live WhatsApp poll, vote, and restart runs but provides no inspectable redacted exact-head transcript, termin...; Review finding: [P1] Commit dedupe only after decoding the vote — extensions/whatsapp/src/inbound/poll-votes.ts:438-444 - [P1] Prune expired durable poll state — extensions/whatsa... (sha=f3cbc74d9347570b54e7828d24612f6098fa5d81)",
+      "expected_head_sha": "f3cbc74d9347570b54e7828d24612f6098fa5d81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T22:41:01.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/whatsapp-poll-vote-hook",
+        "head_sha": "f3cbc74d9347570b54e7828d24612f6098fa5d81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
