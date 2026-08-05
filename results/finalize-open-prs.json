@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T10:26:54.779Z",
-  "count": 9,
+  "generated_at": "2026-08-05T10:41:42.930Z",
+  "count": 8,
   "summary": {
-    "open_prs": 9,
+    "open_prs": 8,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 9,
+    "needs_checks": 8,
     "needs_review": 0,
-    "needs_merge_preflight": 9,
+    "needs_merge_preflight": 8,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,20 +34,21 @@
       "head_sha": "1a109a1aa3cc869e80218762a8b0bc18b3e6fdba",
       "cluster_id": "issue-openclaw-openclaw-119557",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119557.md",
-      "updated_at": "2026-08-05T10:04:19Z",
+      "updated_at": "2026-08-05T10:40:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 133,
+        "total": 142,
         "counts": {
-          "CANCELLED": 10,
-          "SKIPPED": 42,
-          "SUCCESS": 80,
+          "CANCELLED": 12,
+          "SKIPPED": 45,
+          "SUCCESS": 84,
           "NEUTRAL": 1
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
@@ -62,8 +63,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119567#issuecomment-5190716688",
+            "submitted_at": "2026-08-05T10:40:23Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "30996832702",
@@ -225,79 +233,6 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119509,
-      "title": "fix(sessions): decode Windows legacy-codepage exec output",
-      "url": "https://github.com/openclaw/openclaw/pull/119509",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119483",
-      "head_sha": "c234a419bb0fad357270c5c6511bba6b96bb519c",
-      "cluster_id": "issue-openclaw-openclaw-119483",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119483.md",
-      "updated_at": "2026-08-05T10:25:23Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 141,
-        "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 45,
-          "SUCCESS": 88,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119509#issuecomment-5188239113",
-            "submitted_at": "2026-08-05T06:12:35Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119509#issuecomment-5188247338",
-            "submitted_at": "2026-08-05T06:13:47Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30984421359",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30984421359",
-        "cluster_id": "automerge-openclaw-openclaw-119509",
-        "published_at": "2026-08-05T07:25:12.581Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119509",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#119509",
-          "candidate_fix": null,
-          "reason": "Repair the contributor branch: retain the canonical Windows codepage decoder while explicitly preserving the existing session exec BOM behavior, then rebase and re-review the exact head."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BLOCKED",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
