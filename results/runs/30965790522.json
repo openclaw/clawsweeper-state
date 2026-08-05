@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119360",
+  "mode": "autonomous",
+  "run_id": "30965790522",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30965790522",
+  "head_sha": "6976512bc0fe3528f2f0a91699e4e291d0ce2850",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119360.md",
+  "published_at": "2026-08-05T02:25:47.487Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_pr": null,
+  "summary": "Confirmed #119360 on main ed31a4dd: deferred A advances the source diff baseline, so exact running-config B is planned as a reverse restart before paused restart debt can be retired. A narrow managed-reloader repair and regression are ready as an artifact, but this checkout is read-only and lacks runnable dependencies.",
+  "actions": [
+    {
+      "target": "#119360",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout and unavailable dependencies; the repair is narrow and does not require a product or security decision."
+    },
+    {
+      "target": "#98436",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Keep open independently; this repair must not add debounce policy or change restart classification."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119360",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready executor can implement and validate this two-file repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

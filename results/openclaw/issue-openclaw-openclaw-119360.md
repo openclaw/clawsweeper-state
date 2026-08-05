@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119360"
 mode: "autonomous"
-run_id: "30962491614"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30962491614"
-head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
+run_id: "30965790522"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30965790522"
+head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-05T00:20:21.116Z"
+published_at: "2026-08-05T02:25:47.487Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119360"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119360"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30962491614](https://github.com/openclaw/clawsweeper/actions/runs/30962491614)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30965790522](https://github.com/openclaw/clawsweeper/actions/runs/30965790522)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119360
 
 ## Summary
 
-#119360 remains reproducible on current main (9ff9aac7). The required repair is planned, but this checkout is read-only and the supplied fb81d03 target is absent from its shallow history, so no tracked edit or validation rerun was possible.
+Confirmed #119360 on main ed31a4dd: deferred A advances the source diff baseline, so exact running-config B is planned as a reverse restart before paused restart debt can be retired. A narrow managed-reloader repair and regression are ready as an artifact, but this checkout is read-only and lacks runnable dependencies.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/119360
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119360 | fix_needed | blocked | canonical | Implementation is blocked only by checkout capability; the narrow repair path is specified below. |
-| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | Create the narrow repair PR once a writable checkout anchored to the intended base is available. |
-| #98436 | keep_related | planned | related | Adjacent product-direction work; no change or closure in this bug-fix lane. |
+| #119360 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies; the repair is narrow and does not require a product or security decision. |
+| #98436 | keep_related | planned | related | Keep open independently; this repair must not add debounce policy or change restart classification. |
+| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | A writable, dependency-ready executor can implement and validate this two-file repair. |
 
 ## Needs Human
 
