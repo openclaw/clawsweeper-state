@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T03:16:39.593Z",
+  "updated_at": "2026-08-05T03:17:00.947Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119372:5185747762:2026-08-04T23:30:05Z:clawsweeper_auto_repair",
-      "comment_id": "5185747762",
-      "comment_version_key": "5185747762:2026-08-04T23:30:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119372#issuecomment-5185747762",
-      "comment_created_at": "2026-08-04T23:30:05Z",
-      "comment_updated_at": "2026-08-04T23:30:05Z",
-      "comment_body_sha256": "b17ded3d21288c514c9a38c075ed5d4142347ec676d0c17d6cb31ca72f1526e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119372,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=811dbf9fe47c482c890141dc4553805dd1d32eb6)",
-      "expected_head_sha": "811dbf9fe47c482c890141dc4553805dd1d32eb6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T00:06:44.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/memory-core-lazy-registration-20260804",
-        "head_sha": "af2957ab7f9b89eab685ea4edb26ef368b0a5d18",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118685",
       "comment_id": "repair-loop-label-sweep:autofix:118685",
@@ -31779,6 +31746,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T03:16:39.593Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119446:5187123086:2026-08-05T03:16:18Z:clawsweeper_needs_human",
+      "comment_id": "5187123086",
+      "comment_version_key": "5187123086:2026-08-05T03:16:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119446#issuecomment-5187123086",
+      "comment_created_at": "2026-08-05T03:16:18Z",
+      "comment_updated_at": "2026-08-05T03:16:18Z",
+      "comment_body_sha256": "738f23a57265f2285acc165c9bf790c756a51a088ef9ead4bd0c76f29d6d961f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal probe demonstrates synthetic production-function inputs, not the headers and successful behavior of a real sandboxed Cont...; Review finding: [P1] Reject cross-site no-Origin cookie requests — src/gateway/http-auth-utils.ts:217-221 - [P1] Fail closed for unproven opaque-origin metadata — src/gateway/http... (sha=0f38327e60e3be2b42cd0593454e1a48392ed3fe)",
+      "expected_head_sha": "0f38327e60e3be2b42cd0593454e1a48392ed3fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T03:17:00.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-cookie-origin-check",
+        "head_sha": "0f38327e60e3be2b42cd0593454e1a48392ed3fe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
