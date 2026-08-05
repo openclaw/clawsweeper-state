@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:20:29.936Z",
+  "updated_at": "2026-08-05T12:21:37.794Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119486:5189983110:2026-08-05T09:21:30Z:re_review",
-      "comment_id": "5189983110",
-      "comment_version_key": "5189983110:2026-08-05T09:21:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119486#issuecomment-5189983110",
-      "comment_created_at": "2026-08-05T09:21:30Z",
-      "comment_updated_at": "2026-08-05T09:21:30Z",
-      "comment_body_sha256": "95b1d18c1bd99cc6181196515a98e8e042b3e089678a906e6bbf5ee66d803729",
-      "source_delivery_id": "0bfad320-90af-11f1-8660-b645a5edb8f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119486,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the previous review lease expired without a completed review (placeholder comment from the last cycle). please re-review this pr",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T09:22:05.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-live-image-payload-metering-119445",
-        "head_sha": "f1ce51efef444caf3fa41e2cbe7581bc3c3f3c67",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116416:5132147327:2026-08-05T09:21:05Z:clawsweeper_auto_repair",
       "comment_id": "5132147327",
@@ -32014,6 +31966,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116000:5120772953:2026-08-05T12:20:49Z:clawsweeper_needs_human",
+      "comment_id": "5120772953",
+      "comment_version_key": "5120772953:2026-08-05T12:20:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116000#issuecomment-5120772953",
+      "comment_created_at": "2026-07-29T16:39:58Z",
+      "comment_updated_at": "2026-08-05T12:20:49Z",
+      "comment_body_sha256": "e71d623bcebdf94ecc70dc221724ff4658bfb765cafd3a6d5e51ff71ed53ae0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116000,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body documents focused Session Reaper and exporter-seam tests, but no redacted after-fix Gateway run with a Prometheus scrape or OTLP colle...; Review finding: [P1] Require internal provenance for pruning metrics — extensions/diagnostics-otel/src/service-recorders-operations.ts:145-147 - [P1] Keep the pruning event out of... (sha=39f8d5460ad9ace282ab5446018188e6ad2f33e5)",
+      "expected_head_sha": "39f8d5460ad9ace282ab5446018188e6ad2f33e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:21:37.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/105198-session-reaper-metrics",
+        "head_sha": "39f8d5460ad9ace282ab5446018188e6ad2f33e5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
