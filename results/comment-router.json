@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T15:06:40.129Z",
+  "updated_at": "2026-08-05T15:06:46.641Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116551:5191124780:2026-08-05T11:25:38Z:re_review",
-      "comment_id": "5191124780",
-      "comment_version_key": "5191124780:2026-08-05T11:25:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5191124780",
-      "comment_created_at": "2026-08-05T11:25:38Z",
-      "comment_updated_at": "2026-08-05T11:25:38Z",
-      "comment_body_sha256": "3f82d3eda92cb80e6e3c53b57e76b60f88ab0dcbf12a61c1d6d80c64848a15aa",
-      "source_delivery_id": "62e40fb0-90c0-11f1-80ed-3476d4129728",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116551,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T11:26:10.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-result-aggregate",
-        "head_sha": "0f715acf3157c0b40829437ca01053235d036241",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119430:5191127992:2026-08-05T11:25:59Z:re_review",
       "comment_id": "5191127992",
@@ -31803,6 +31755,39 @@
         "kind": "pull_request",
         "branch": "codex/loc-0805-infra-dmvazq",
         "head_sha": "5cf860d274bd2dd0afe0c6e737b319bd4944cd86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:258:5168913744:2026-08-05T15:04:55Z:clawsweeper_needs_human",
+      "comment_id": "5168913744",
+      "comment_version_key": "5168913744:2026-08-05T15:04:55Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/258#issuecomment-5168913744",
+      "comment_created_at": "2026-08-03T16:16:16Z",
+      "comment_updated_at": "2026-08-05T15:04:55Z",
+      "comment_body_sha256": "6526ced166be1903b8abb842276a3a1f378c1bc1c7227e3527d579fa094b0c04",
+      "repo": "openclaw/crabline",
+      "issue_number": 258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major scheduled-automation upgrade; a normal PR check does not demonstrate its later label, exemption, close-message, and closure behavior with write permission... (sha=58db486d21b3be511a154d213e14c61a0f8a63f1)",
+      "expected_head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T15:06:46.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-0b68e6ec17",
+        "head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
         "cluster_id": null,
         "job_path": null
       }
