@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven paragraph-boundary loss in https://github.com/openclaw/openclaw/issues/42106. Preserve separators through EmbeddedBlockChunker and embedded-agent payload emission, coordinate the block coalescer so one-flush joins do not double whitespace, and add regression coverage for a forced cross-delivery flush plus existing fence/tag/dedup behavior. Do not add config or plugin-SDK boundary metadata; stop and escalate if the repair requires a new public contract. Keep CHANGELOG.md untouched; include release-note context in the PR body.
+Repair the paragraph-boundary loss reported at https://github.com/openclaw/openclaw/issues/42106. Preserve paragraph-boundary semantics at the shared embedded-agent chunker and through block delivery; do not add an unconditional downstream joiner or channel-specific workaround. Account for `emitBlockChunk` trimming trailing text and ensure coalescing does not double a separator when two boundary-carrying chunks remain in one flush. Update the existing destructive expectations, prove direct separate deliveries reconstruct the source exactly, cover same-flush and forced/independent-flush coalescer behavior, and check the BTW sibling path. Do not add config, metadata APIs, or CHANGELOG.md edits; include release-note context in the PR body. Prior closed attempts for context: https://github.com/openclaw/openclaw/pull/94216 and https://github.com/openclaw/openclaw/pull/94247.
 
 Likely files:
 
 - src/agents/embedded-agent-block-chunker.ts
 - src/agents/embedded-agent-subscribe.ts
 - src/auto-reply/reply/block-reply-coalescer.ts
+- src/agents/embedded-agent-block-chunker.test.ts
 - src/agents/embedded-agent-subscribe.subscribe-embedded-agent-session.chunking-fences.test.ts
 - src/auto-reply/reply/reply-utils.test.ts
+- src/agents/btw.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-subscribe.subscribe-embedded-agent-session.chunking-fences.test.ts src/agents/embedded-agent-block-chunker.test.ts
-- node scripts/run-vitest.mjs src/auto-reply/reply/reply-utils.test.ts src/auto-reply/reply/block-streaming.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-block-chunker.test.ts src/agents/embedded-agent-subscribe.subscribe-embedded-agent-session.chunking-fences.test.ts src/auto-reply/reply/reply-utils.test.ts src/agents/btw.test.ts
+- Add a regression asserting reconstructed paragraph-streamed output equals the original input across separate deliveries.
 
 ## Operator Prompt
 
