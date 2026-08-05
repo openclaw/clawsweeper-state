@@ -2,59 +2,60 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-118560"
 mode: "autonomous"
-run_id: "30968233652"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30968233652"
-head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
-workflow_conclusion: "success"
+run_id: "30959165868"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30959165868"
+head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-05T02:10:10.654Z"
-canonical: "#118560"
-canonical_issue: "#118560"
+published_at: "2026-08-05T00:32:18.785Z"
+canonical: "https://github.com/openclaw/openclaw/issues/118560"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/118560"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-118560
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30968233652](https://github.com/openclaw/clawsweeper/actions/runs/30968233652)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30959165868](https://github.com/openclaw/clawsweeper/actions/runs/30959165868)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #118560
+Canonical: https://github.com/openclaw/openclaw/issues/118560
 
 ## Summary
 
-Confirmed UI-owned identity loss on current main, but the filesystem is read-only; the scoped patch was rejected before any file changed. A narrow new-fix-PR artifact is ready.
+Current main contains the reproducible WebChat reset-archive defect. The narrow fix is defined, but this worker is filesystem read-only and lacks runnable local test dependencies, so no branch or PR can be produced here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex review-fix worker timed out after 867394ms |
+| issue_implementation_status_comment | updated | #118560 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +67,9 @@ Confirmed UI-owned identity loss on current main, but the filesystem is read-onl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118560 | fix_needed | blocked | canonical | Implementation, validation of a modified tree, and PR creation require a writable execution environment. |
+| #118560 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only filesystem. `pnpm docs:list` also failed before execution because Corepack could not create its cache; node_modules lacks Vitest and Playwright. |
+| cluster:issue-openclaw-openclaw-118560 | build_fix_artifact | planned | canonical | A bounded UI-only repair can reuse the existing Gateway contract; no protocol, config, storage, or changelog change is needed. |
 
 ## Needs Human
 
-- Run this fix artifact in a writable ClawSweeper worker.
+- none
