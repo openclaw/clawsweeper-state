@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T11:42:14.682Z",
+  "generated_at": "2026-08-05T11:38:08.795Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
@@ -13,7 +13,7 @@
     "needs_checks": 10,
     "needs_review": 0,
     "needs_merge_preflight": 10,
-    "needs_result_backfill": 0
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -43,15 +43,17 @@
         "total": 123,
         "counts": {
           "CANCELLED": 9,
+          "IN_PROGRESS": 1,
           "SKIPPED": 32,
-          "SUCCESS": 81,
+          "SUCCESS": 80,
           "NEUTRAL": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -71,32 +73,12 @@
           }
         ]
       },
-      "latest_record": {
-        "run_id": "31000202378",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31000202378",
-        "cluster_id": "issue-openclaw-openclaw-119581",
-        "published_at": "2026-08-05T11:41:51.844Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119590",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(build): select the root-help bundle that exports outputRootHelp",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
+      "latest_record": null,
       "blockers": [
         "needs_merge_state:BLOCKED",
         "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
+        "needs_merge_preflight",
+        "needs_result_backfill"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
