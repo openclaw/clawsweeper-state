@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-05T19:01:46.105Z
+Generated: 2026-08-05T19:06:55.188Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 10 |
+| open_prs | 11 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 9 |
+| needs_checks | 10 |
 | needs_review | 0 |
-| needs_merge_preflight | 10 |
-| needs_result_backfill | 1 |
+| needs_merge_preflight | 11 |
+| needs_result_backfill | 2 |
 
 ## Dispatch
 
@@ -30,7 +30,8 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119717](https://github.com/openclaw/openclaw/pull/119717) | fix(telegram): prioritize configured commands in capped menus | issue-openclaw-openclaw-89252 | MERGEABLE | BLOCKED | SKIPPED:38 SUCCESS:33 IN_PROGRESS:41; blockers:41 | needs_merge_state:BLOCKED, needs_checks:CI / build-artifacts:IN_PROGRESS; CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | issue-openclaw-openclaw-89430 | MERGEABLE | BLOCKED | SKIPPED:39 SUCCESS:51 IN_PROGRESS:20 NEUTRAL:1; blockers:20 | needs_merge_state:BLOCKED, needs_checks:CI / checks-node-compact-large-2:IN_PROGRESS; CI / checks-node-compact-large-3:IN_PROGRESS; CI / checks-node-compact-large-4:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119717](https://github.com/openclaw/openclaw/pull/119717) | fix(telegram): prioritize configured commands in capped menus | issue-openclaw-openclaw-89252 | MERGEABLE | BLOCKED | SKIPPED:38 SUCCESS:70 IN_PROGRESS:4 NEUTRAL:1; blockers:4 | needs_merge_state:BLOCKED, needs_checks:CI / checks-node-compact-large-7:IN_PROGRESS; CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-7:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | issue-openclaw-openclaw-119692 | MERGEABLE | BLOCKED | SKIPPED:26 SUCCESS:80 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | issue-openclaw-openclaw-92199 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:44 SUCCESS:58 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119528](https://github.com/openclaw/openclaw/pull/119528) | fix(agents): timestamp recovered Claude CLI history | issue-openclaw-openclaw-94679 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:45 SUCCESS:84 FAILURE:2 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
