@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:08:37.572Z",
+  "updated_at": "2026-08-05T07:08:42.199Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5186530797:2026-08-05T01:37:41Z:re_review",
-      "comment_id": "5186530797",
-      "comment_version_key": "5186530797:2026-08-05T01:37:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5186530797",
-      "comment_created_at": "2026-08-05T01:37:41Z",
-      "comment_updated_at": "2026-08-05T01:37:41Z",
-      "comment_body_sha256": "46d6a34f64dae780b2298aa0eefeff7e01da5b5e35d4cb986bb07ba2aca9d9d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:22:48.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "2f4e26a81f986cb54d5ea7b9582748f2447d0f47",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119399:5186549542:2026-08-05T01:41:00Z:re_review",
       "comment_id": "5186549542",
@@ -32819,6 +32772,39 @@
         "kind": "pull_request",
         "branch": "auto/issue-119515",
         "head_sha": "cd2d1310f6df7609afce934ade51d8d9eba82f47",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119394:5186676143:2026-08-05T07:08:05Z:clawsweeper_needs_human",
+      "comment_id": "5186676143",
+      "comment_version_key": "5186676143:2026-08-05T07:08:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119394#issuecomment-5186676143",
+      "comment_created_at": "2026-08-05T02:02:25Z",
+      "comment_updated_at": "2026-08-05T07:08:05Z",
+      "comment_body_sha256": "0485f2ebaef53257f431df6786c1f76a8f8a55f274ab8ddeacbef35fb73152ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119394,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the current external PR is focused and has no remaining mechanical blocker. (sha=de58e041f110d327fa9b36afbd9a78ea3876a920)",
+      "expected_head_sha": "de58e041f110d327fa9b36afbd9a78ea3876a920",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:08:42.199Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-refactor-docs-skill-ref",
+        "head_sha": "de58e041f110d327fa9b36afbd9a78ea3876a920",
         "cluster_id": null,
         "job_path": null
       }
