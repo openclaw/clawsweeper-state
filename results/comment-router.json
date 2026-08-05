@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:07:40.596Z",
+  "updated_at": "2026-08-05T11:07:42.340Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109962:5007383764:2026-07-17T20:53:29Z:re_review",
-      "comment_id": "5007383764",
-      "comment_version_key": "5007383764:2026-07-17T20:53:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109962#issuecomment-5007383764",
-      "comment_created_at": "2026-07-17T20:53:29Z",
-      "comment_updated_at": "2026-07-17T20:53:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109962,
-      "author": "qingminlong",
-      "author_id": 299714188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T06:07:11.887Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119506:5188196466:2026-08-05T06:06:38Z:clawsweeper_needs_human",
       "comment_id": "5188196466",
@@ -33649,6 +33622,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T11:07:40.596Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117998:5158453518:2026-08-05T11:05:33Z:clawsweeper_auto_repair",
+      "comment_id": "5158453518",
+      "comment_version_key": "5158453518:2026-08-05T11:05:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117998#issuecomment-5158453518",
+      "comment_created_at": "2026-08-02T14:14:30Z",
+      "comment_updated_at": "2026-08-05T11:05:33Z",
+      "comment_body_sha256": "e2a094d0bb72ec0c0ad29216fa94011d6682c20111ee731a3bbd95917e8830d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117998,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4fd13b7de84dabfc0cb8d080a2b43be667e1c29b)",
+      "expected_head_sha": "4fd13b7de84dabfc0cb8d080a2b43be667e1c29b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T11:07:42.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tlon-sse-stall-watchdog",
+        "head_sha": "4fd13b7de84dabfc0cb8d080a2b43be667e1c29b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
