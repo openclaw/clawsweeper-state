@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119483"
 mode: "autonomous"
-run_id: "30977882727"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30977882727"
+run_id: "30978720622"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30978720622"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T05:30:40.519Z"
+published_at: "2026-08-05T06:14:47.251Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119483"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119483"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30977882727](https://github.com/openclaw/clawsweeper/actions/runs/30977882727)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30978720622](https://github.com/openclaw/clawsweeper/actions/runs/30978720622)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119483
 
 ## Summary
 
-#119483 is a real legacy session-execution decoding gap. The current agent exec path already preserves valid UTF-8 and falls back to the Windows console code page only for invalid UTF-8; no Python-specific UTF-8 flag should be injected. Older session bash and extension-exec paths still hard-code UTF-8 decoding, so a narrow PR should reuse the shared streaming decoder there.
+#119483 remains a reproducible session-extension api.exec decoding bug on main dc93ea6d699a3ab30915fd3282fd12aa0ac8aeb2. Plan a narrow credited fix PR using the existing Windows streaming decoder; no GitHub mutations were made.
 
 ## Impact
 
@@ -54,21 +54,22 @@ Canonical: https://github.com/openclaw/openclaw/issues/119483
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119509 | clawsweeper/issue-openclaw-openclaw-119483 |  |
+| issue_implementation_status_comment | updated | #119483 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #119509 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119483 | fix_needed | planned | canonical | Repair both session-owned UTF-8-only consumers through the established decoder; do not alter arbitrary Python invocation arguments or environment. |
-| cluster:issue-openclaw-openclaw-119483 | build_fix_artifact | planned | canonical | A narrow new PR can share the existing decode policy across the remaining session-owned subprocess surfaces. |
-| cluster:issue-openclaw-openclaw-119483 | open_fix_pr | planned | canonical | The job permits a new fix PR but forbids merge and issue closure. |
+| #119483 | fix_needed | planned | canonical | Replace only api.exec stream decoding; retain process lifecycle, output limits, API shape, and generic process runner behavior. |
+| cluster:issue-openclaw-openclaw-119483 | build_fix_artifact | planned | canonical | A narrow production repair and focused regressions are appropriate; no existing viable PR is hydrated. |
+| cluster:issue-openclaw-openclaw-119483 | open_fix_pr | planned | canonical | The issue is open and the job authorizes one new fix PR, but direct PR creation is reserved for the deterministic applicator. |
 
 ## Needs Human
 

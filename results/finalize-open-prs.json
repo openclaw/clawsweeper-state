@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T05:43:16.665Z",
-  "count": 5,
+  "generated_at": "2026-08-05T06:15:35.276Z",
+  "count": 7,
   "summary": {
-    "open_prs": 5,
+    "open_prs": 7,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 5,
+    "needs_checks": 7,
     "needs_review": 0,
-    "needs_merge_preflight": 5,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 7,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,27 +27,32 @@
   },
   "prs": [
     {
-      "number": 119500,
-      "title": "fix(memory): detect unindexed memory files in status",
-      "url": "https://github.com/openclaw/openclaw/pull/119500",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119411",
-      "head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
-      "cluster_id": "issue-openclaw-openclaw-119411",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
-      "updated_at": "2026-08-05T05:35:32Z",
+      "number": 119512,
+      "title": "fix(sessions): reuse identities during target dedupe",
+      "url": "https://github.com/openclaw/openclaw/pull/119512",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119440",
+      "head_sha": "b0607b7a9d203ab0d87799c70feaa3b284dbb475",
+      "cluster_id": "issue-openclaw-openclaw-119440",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119440.md",
+      "updated_at": "2026-08-05T06:14:42Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 94,
+        "total": 131,
         "counts": {
-          "CANCELLED": 3,
-          "SKIPPED": 43,
-          "SUCCESS": 48
+          "CANCELLED": 6,
+          "IN_PROGRESS": 2,
+          "SKIPPED": 40,
+          "SUCCESS": 82,
+          "NEUTRAL": 1
         },
         "blockers": [
-          "Real behavior proof:CANCELLED"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -59,6 +64,133 @@
       "review_bots": {
         "count": 0,
         "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 119509,
+      "title": "fix(sessions): decode Windows legacy-codepage exec output",
+      "url": "https://github.com/openclaw/openclaw/pull/119509",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119483",
+      "head_sha": "106ec531c479e2dcefd940d8b2efed335f7e5ba6",
+      "cluster_id": "issue-openclaw-openclaw-119483",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119483.md",
+      "updated_at": "2026-08-05T06:13:47Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 141,
+        "counts": {
+          "CANCELLED": 10,
+          "SKIPPED": 43,
+          "SUCCESS": 87,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119509#issuecomment-5188239113",
+            "submitted_at": "2026-08-05T06:12:35Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30978720622",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30978720622",
+        "cluster_id": "issue-openclaw-openclaw-119483",
+        "published_at": "2026-08-05T06:14:47.251Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119509",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(sessions): decode Windows legacy-codepage exec output",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 119500,
+      "title": "fix(memory): detect unindexed memory files in status",
+      "url": "https://github.com/openclaw/openclaw/pull/119500",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119411",
+      "head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
+      "cluster_id": "issue-openclaw-openclaw-119411",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
+      "updated_at": "2026-08-05T06:14:05Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 109,
+        "counts": {
+          "CANCELLED": 7,
+          "SKIPPED": 48,
+          "SUCCESS": 54
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119500#issuecomment-5188244849",
+            "submitted_at": "2026-08-05T06:13:25Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "30977123951",
@@ -84,7 +216,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"

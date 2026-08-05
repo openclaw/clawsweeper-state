@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119483",
+  "mode": "autonomous",
+  "run_id": "30978720622",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30978720622",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119483.md",
+  "published_at": "2026-08-05T06:14:47.251Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119483",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119483",
+  "canonical_pr": null,
+  "summary": "#119483 remains a reproducible session-extension api.exec decoding bug on main dc93ea6d699a3ab30915fd3282fd12aa0ac8aeb2. Plan a narrow credited fix PR using the existing Windows streaming decoder; no GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#119483",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "Replace only api.exec stream decoding; retain process lifecycle, output limits, API shape, and generic process runner behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119483",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "A narrow production repair and focused regressions are appropriate; no existing viable PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119483",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "The issue is open and the job authorizes one new fix PR, but direct PR creation is reserved for the deterministic applicator."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119509",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119483",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119509",
+      "commit": "106ec531c479e2dcefd940d8b2efed335f7e5ba6",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119483",
+      "pr": "https://github.com/openclaw/openclaw/pull/119509",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119509",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119509",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(sessions): decode Windows legacy-codepage exec output",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
