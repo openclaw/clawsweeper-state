@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T21:37:23.671Z",
+  "updated_at": "2026-08-05T21:38:00.946Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110803:5055029313:2026-07-23T06:05:04Z:re_review",
-      "comment_id": "5055029313",
-      "comment_version_key": "5055029313:2026-07-23T06:05:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110803#issuecomment-5055029313",
-      "comment_created_at": "2026-07-23T06:05:04Z",
-      "comment_updated_at": "2026-07-23T06:05:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110803,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:27:32.119Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110803:5079115145:2026-07-25T15:45:15Z:re_review",
       "comment_id": "5079115145",
@@ -32583,6 +32556,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T21:37:23.671Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119309:5184068509:2026-08-05T21:37:17Z:clawsweeper_needs_human",
+      "comment_id": "5184068509",
+      "comment_version_key": "5184068509:2026-08-05T21:37:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119309#issuecomment-5184068509",
+      "comment_created_at": "2026-08-04T20:10:46Z",
+      "comment_updated_at": "2026-08-05T21:37:17Z",
+      "comment_body_sha256": "f8e662ac3a52955c1c4d0abfb7cf56231a5d7ddec25cfc8d16c2e45d8f09c0be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is behind current main and the supplied context records failed build-artifacts and CI gates; their cause is unproven, so merge needs a rebased exact-head validation. (sha=27c0f4371474d032b72147358f7d1d4e86e01a21)",
+      "expected_head_sha": "27c0f4371474d032b72147358f7d1d4e86e01a21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T21:38:00.946Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-lane-package-watch-roots",
+        "head_sha": "27c0f4371474d032b72147358f7d1d4e86e01a21",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
