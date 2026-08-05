@@ -67,18 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the configured ACP binding lifecycle for https://github.com/openclaw/openclaw/issues/119551. In src/acp/persistent-bindings.lifecycle.ts, resolve only the explicit primary model for the owning OpenClaw agent via spec.agentId, not the harness acpAgentId, and conditionally pass it to initializeSession as runtimeOptions.model with explicit-model provenance. Preserve the existing no-explicit-model behavior so global/default agent models are not newly forced into ACP. Reconcile ready persisted bindings whose stored runtime model is absent or differs so upgrades do not retain the old environment-selected model; avoid a reinitialization loop when an adapter reports an unsupported model. Add focused lifecycle coverage for distinct owner and harness IDs, no explicit owner model, and an existing stale model. Do not broaden the change into ACP spawn paths already covered by the model-forwarding flow. Do not edit CHANGELOG.md; record the user-visible fix in the PR body. Related context: https://github.com/openclaw/openclaw/issues/106008.
+Repair the configured persistent ACP-binding initialization path. In `src/acp/persistent-bindings.lifecycle.ts`, resolve only `resolveAgentExplicitModelPrimary(cfg, spec.agentId)` and forward it through `runtimeOptions` when present; keep `spec.acpAgentId ?? spec.agentId` only as the ACP harness argument, and do not use effective/default model resolution or add config. Add focused lifecycle regression coverage for an owner agent whose harness alias differs, plus defaults-only behavior. Preserve ready persistent sessions rather than resetting them unless direct ACP capability proof establishes a safe reconciliation path. Do not change ACPX environment policy or `CHANGELOG.md`; put user-visible release context in the PR body.
 
 Likely files:
 
 - src/acp/persistent-bindings.lifecycle.ts
 - src/acp/persistent-bindings.lifecycle.test.ts
-- src/agents/agent-scope.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/acp/persistent-bindings.lifecycle.test.ts
-- node scripts/run-vitest.mjs src/agents/agent-scope.test.ts
+- node scripts/run-vitest.mjs src/acp/control-plane/manager.initialize-session.test.ts
 - git diff --check
 
 ## Operator Prompt
