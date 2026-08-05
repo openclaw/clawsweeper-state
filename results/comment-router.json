@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T02:09:57.578Z",
+  "updated_at": "2026-08-05T02:10:10.738Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116796:5176945983:2026-08-04T09:11:57Z:re_review",
-      "comment_id": "5176945983",
-      "comment_version_key": "5176945983:2026-08-04T09:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116796#issuecomment-5176945983",
-      "comment_created_at": "2026-08-04T09:11:57Z",
-      "comment_updated_at": "2026-08-04T09:11:57Z",
-      "comment_body_sha256": "1c731bacf2646764c9bcff06ec149ef8ff54cc8e2534ce0ab41c7dd6b2718970",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116796,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T22:17:54.708Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116796:5177275885:2026-08-04T09:42:35Z:re_review",
       "comment_id": "5177275885",
@@ -31418,6 +31391,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-05T02:09:19Z:clawsweeper_needs_human",
+      "comment_id": "5184023904",
+      "comment_version_key": "5184023904:2026-08-05T02:09:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119326#issuecomment-5184023904",
+      "comment_created_at": "2026-08-04T20:06:23Z",
+      "comment_updated_at": "2026-08-05T02:09:19Z",
+      "comment_body_sha256": "87b9c945ac2d67be0aa74a1890072224e17efb5ed67a822443090c021f8bb4c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119326,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch has strong unit-level resolver and compaction-wiring coverage, but no after-fix configured runtime or ephemeral Gateway/QA transcrip... (sha=b9dd1702a08fab294436df5c2a1ca1b550852784)",
+      "expected_head_sha": "b9dd1702a08fab294436df5c2a1ca1b550852784",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T02:10:10.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-account-scope",
+        "head_sha": "b9dd1702a08fab294436df5c2a1ca1b550852784",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
