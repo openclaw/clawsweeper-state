@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:46:16.782Z",
+  "updated_at": "2026-08-05T23:47:01.244Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:66:5170678735:2026-08-05T18:41:48Z:clawsweeper_needs_human",
-      "comment_id": "5170678735",
-      "comment_version_key": "5170678735:2026-08-05T18:41:48Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/66#issuecomment-5170678735",
-      "comment_created_at": "2026-08-03T19:14:36Z",
-      "comment_updated_at": "2026-08-05T18:41:48Z",
-      "comment_body_sha256": "71a1746222b4ab4569f5a10c703f49998f8065bfc6a9b84da49b10b3dae31c4c",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 66,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A green workflow alone is not enough evidence here: with CodeQL disabled, both changed action steps are skipped, so an unobserved action-version regression could reach the security sc... (sha=191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba)",
-      "expected_head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T18:42:29.934Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-ce612e0709",
-        "head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3412:5194286235:2026-08-05T18:41:53Z:clawsweeper_needs_human",
       "comment_id": "5194286235",
@@ -32649,6 +32616,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T23:46:16.782Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3401:5186763644:2026-08-05T23:46:13Z:clawsweeper_needs_human",
+      "comment_id": "5186763644",
+      "comment_version_key": "5186763644:2026-08-05T23:46:13Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3401#issuecomment-5186763644",
+      "comment_created_at": "2026-08-05T02:16:26Z",
+      "comment_updated_at": "2026-08-05T23:46:13Z",
+      "comment_body_sha256": "2008de93b0eabbaf2abb470c15e7643d1ee22b4f1842ec8db6a36e592f54cb3d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3401,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides focused mocked-context Vitest results, but no after-fix real Convex/API trace showing index, latest, and tag recovery; pos...; Review finding: [P2] Skip repair follow-ups after a finalizer claim wins — convex/maintenance.ts:3396-3401 - [P2] Clear staged data for every repaired version — convex/skills.ts:1... (sha=91cd64137a42f6d24c4bc7e84056f6609046f408)",
+      "expected_head_sha": "91cd64137a42f6d24c4bc7e84056f6609046f408",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:47:01.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/3349-publish-version-projection",
+        "head_sha": "91cd64137a42f6d24c4bc7e84056f6609046f408",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
