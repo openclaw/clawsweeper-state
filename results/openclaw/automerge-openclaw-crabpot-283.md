@@ -2,16 +2,16 @@
 repo: "openclaw/crabpot"
 cluster_id: "automerge-openclaw-crabpot-283"
 mode: "autonomous"
-run_id: "31032367410"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31032367410"
+run_id: "31037655905"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31037655905"
 head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T18:05:03.998Z"
+published_at: "2026-08-05T19:11:30.780Z"
 canonical: "#283"
 canonical_issue: null
 canonical_pr: "#283"
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/crabpot
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31032367410](https://github.com/openclaw/clawsweeper/actions/runs/31032367410)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31037655905](https://github.com/openclaw/clawsweeper/actions/runs/31037655905)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #283
 
 ## Summary
 
-PR #283 is the canonical adopted repair candidate. Its current head passed the hydrated GitHub checks, but ClawSweeper’s review found the generated workspace-plan reports still contain the pre-0.3.21 Inspector checkout. Repair the same writable contributor branch by rebasing and regenerating those two reports; do not merge or close.
+Make PR #283 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ PR #283 is the canonical adopted repair candidate. Its current head passed the h
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #283 | fix_needed | planned | canonical | The branch’s source and package pin update must be propagated to its tracked generated workspace-plan outputs before it can satisfy the review finding. |
-| #283 | build_fix_artifact | planned | canonical | A narrow contributor-branch repair preserves Patrick-Erichsen’s commits and directly resolves the only actionable review finding. |
+| #283 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
