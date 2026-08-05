@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T02:14:42.443Z",
+  "updated_at": "2026-08-05T02:15:20.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:106402:4964845386:2026-07-14T02:32:13Z:re_review",
-      "comment_id": "4964845386",
-      "comment_version_key": "4964845386:2026-07-14T02:32:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106402#issuecomment-4964845386",
-      "comment_created_at": "2026-07-14T02:32:13Z",
-      "comment_updated_at": "2026-07-14T02:32:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106402,
-      "author": "Monkey-wusky",
-      "author_id": 66244686,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T22:26:38.974Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116654:5139202816:2026-08-04T22:28:02Z:clawsweeper_auto_repair",
       "comment_id": "5139202816",
@@ -31555,6 +31528,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T02:14:42.443Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104812:4949336319:2026-08-05T02:14:27Z:clawsweeper_needs_human",
+      "comment_id": "4949336319",
+      "comment_version_key": "4949336319:2026-08-05T02:14:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104812#issuecomment-4949336319",
+      "comment_created_at": "2026-07-12T00:34:34Z",
+      "comment_updated_at": "2026-08-05T02:14:27Z",
+      "comment_body_sha256": "e71be0ad08333f9a2a83388694ab169c5c2b022a6fed252ac83c5889f1c64905",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes existing setups with an unavailable configured Kimi SecretRef from a strict runtime error to a fail-closed missing-key result instead of ambient-key fall... (sha=bba5c60b3ca513e3b83062cc115a01bb3862f565)",
+      "expected_head_sha": "bba5c60b3ca513e3b83062cc115a01bb3862f565",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T02:15:20.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "moonshot-kimi-search-secretref-runtime-20260712",
+        "head_sha": "bba5c60b3ca513e3b83062cc115a01bb3862f565",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
