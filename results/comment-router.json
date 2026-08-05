@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:07:47.325Z",
+  "updated_at": "2026-08-05T07:08:09.632Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5186506567:2026-08-05T01:33:36Z:re_review",
-      "comment_id": "5186506567",
-      "comment_version_key": "5186506567:2026-08-05T01:33:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5186506567",
-      "comment_created_at": "2026-08-05T01:33:36Z",
-      "comment_updated_at": "2026-08-05T01:33:36Z",
-      "comment_body_sha256": "1c14ea9051106b12964261335b772b0c2c2970e16de138bce0f7a38884ee0082",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:22:48.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk-settings",
-        "head_sha": "a5645e9f547cbff007b1813f9ecda13ce88aeea7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110415:5186528140:2026-08-05T01:37:11Z:re_review",
       "comment_id": "5186528140",
@@ -32847,6 +32800,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-extract-reasoning-clear-reconciler",
         "head_sha": "602183ae6be206f981b532b56736bd71b5981c2a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T07:07:28Z:clawsweeper_auto_repair",
+      "comment_id": "5187769266",
+      "comment_version_key": "5187769266:2026-08-05T07:07:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119482#issuecomment-5187769266",
+      "comment_created_at": "2026-08-05T05:04:33Z",
+      "comment_updated_at": "2026-08-05T07:07:28Z",
+      "comment_body_sha256": "a15cede8544f35d3c312aecceee3e847bc7c5db640634e9b6b9758fe7a41ab52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=75044b68519af512579e12d7458f838105de754c)",
+      "expected_head_sha": "75044b68519af512579e12d7458f838105de754c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:08:09.632Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-plugin-metadata-context-20260805",
+        "head_sha": "75044b68519af512579e12d7458f838105de754c",
         "cluster_id": null,
         "job_path": null
       }
