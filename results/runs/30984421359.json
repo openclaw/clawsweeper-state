@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119509",
+  "mode": "autonomous",
+  "run_id": "30984421359",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30984421359",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119509.md",
+  "published_at": "2026-08-05T07:25:12.581Z",
+  "canonical": "#119509",
+  "canonical_issue": "#119483",
+  "canonical_pr": "#119509",
+  "summary": "Keep #119509 open and repair its single actionable compatibility regression before rebase, exact-head review, and validation. The linked issue remains open until the repaired PR is ready to own its fix path.",
+  "actions": [
+    {
+      "target": "#119483",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119509",
+      "candidate_fix": "#119509",
+      "reason": "The issue has a viable canonical repair PR, but that PR needs its reported compatibility repair and fresh validation first."
+    },
+    {
+      "target": "#119509",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119509",
+      "candidate_fix": null,
+      "reason": "Repair the contributor branch: retain the canonical Windows codepage decoder while explicitly preserving the existing session exec BOM behavior, then rebase and re-review the exact head."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
