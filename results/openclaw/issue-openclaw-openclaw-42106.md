@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-42106"
 mode: "autonomous"
-run_id: "30968622876"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30968622876"
-head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
+run_id: "30971452853"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30971452853"
+head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T02:59:19.713Z"
+published_at: "2026-08-05T04:29:25.680Z"
 canonical: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_pr: null
 actions_total: 6
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30968622876](https://github.com/openclaw/clawsweeper/actions/runs/30968622876)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30971452853](https://github.com/openclaw/clawsweeper/actions/runs/30971452853)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 ## Summary
 
-#42106 remains a reproducible, non-security canonical bug on current main; plan one narrow credited fix PR.
+#42106 remains source-reproducible on current main. The canonical repair is a narrow new fix PR preserving safe paragraph separators through chunking and delivery, while preventing duplicate coalescer joiners.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 | Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex review-fix worker timed out after 175306ms |
+| issue_implementation_status_comment | updated | #42106 |  |  |
 
 ## Apply Actions
 
@@ -66,12 +67,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #42106 | keep_canonical | planned | canonical | Canonical report for the shared embedded-agent block-streaming delimiter loss. |
-| #73981 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| #94216 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| #94247 | keep_closed | skipped | superseded | Already closed; do not mutate. |
-| cluster:issue-openclaw-openclaw-42106 | fix_needed | planned | canonical | No viable open contributor PR exists; create one narrow current-main fix. |
-| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned | canonical | Prepare the executable new-fix-PR plan below. |
+| #42106 | fix_needed | planned | canonical | The issue is open, non-security-sensitive, and source-reproducible; no viable canonical PR exists. |
+| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned | canonical | A new branch is required because current main has no repair delta or viable open PR. |
+| cluster:issue-openclaw-openclaw-42106 | open_fix_pr | planned | canonical | The job permits a single new fix PR and forbids merge or issue closure. |
+| #73981 | keep_closed | skipped | superseded | Already closed. |
+| #94216 | keep_closed | skipped | superseded | Already closed. |
+| #94247 | keep_closed | skipped | superseded | Already closed. |
 
 ## Needs Human
 
