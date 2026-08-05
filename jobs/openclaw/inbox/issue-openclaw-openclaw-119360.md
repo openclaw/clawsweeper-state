@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway config-reload lifecycle so a restart-required candidate that is reverted to the actual running configuration before deferred emission cancels restart work. Keep persisted-source acceptance, restart targets, invalid-config handling, and SecretRef preflight safety intact; do not add a debounce/config option or alter restart classification. Add a managed-reloader regression for deferred restart-class A followed by exact initial B, then drain the blocker and assert no restart signal or leaked terminal restriction. Use the existing managed reload sequence tests; no changelog edit is needed.
+Repair the existing Gateway restart-debt behavior for https://github.com/openclaw/openclaw/issues/119360. Preserve normal restart requirements and the existing explicit writer-intent/retry protections, but make the restart coordinator retain a distinct authoritative actually-applied runtime/source target and cancel a deferred restart when the final validated A configuration equals that target after A→B(restart required)→A. Cover the related but distinct batching context in https://github.com/openclaw/openclaw/issues/98436 only as a sibling invariant; do not add debounce settings, flags, or runtime compatibility paths. Add focused regression coverage proving no recovery restart/SIGUSR1 after work drains for the exact revert, while a genuinely different final restart-class config still restarts. Do not edit release-owned CHANGELOG.md; describe the user-visible repair in the PR body.
 
 Likely files:
 
-- src/gateway/config-reload.ts
-- src/gateway/server-reload-managed.ts
 - src/gateway/server-reload-restart.ts
+- src/gateway/server-reload-managed.ts
 - src/gateway/server-reload-handlers.test.ts
+- src/gateway/config-reload.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/server-reload-handlers.test.ts
-- node scripts/check-changed.mjs -- src/gateway/config-reload.ts src/gateway/server-reload-managed.ts src/gateway/server-reload-restart.ts src/gateway/server-reload-handlers.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-reload-handlers.test.ts src/gateway/config-reload.test.ts
+- git diff --check
 
 ## Operator Prompt
 
