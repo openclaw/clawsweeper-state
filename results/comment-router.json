@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T18:33:10.117Z",
+  "updated_at": "2026-08-05T18:33:46.190Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1196:5099758281:2026-08-05T14:23:11Z:clawsweeper_auto_repair",
-      "comment_id": "5099758281",
-      "comment_version_key": "5099758281:2026-08-05T14:23:11Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1196#issuecomment-5099758281",
-      "comment_created_at": "2026-07-28T03:57:12Z",
-      "comment_updated_at": "2026-08-05T14:23:11Z",
-      "comment_body_sha256": "3aba9e3b54fbbeebe2a72b22fe187e79af27732185d6e8506cbf88906dd1a376",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1196,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908)",
-      "expected_head_sha": "4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T14:23:45.250Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/280-perf-design",
-        "head_sha": "4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104158:5193003351:2026-08-05T14:23:19Z:re_review",
       "comment_id": "5193003351",
@@ -32428,6 +32395,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117425:5151798809:2026-08-05T18:33:01Z:clawsweeper_needs_human",
+      "comment_id": "5151798809",
+      "comment_version_key": "5151798809:2026-08-05T18:33:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117425#issuecomment-5151798809",
+      "comment_created_at": "2026-08-01T14:14:23Z",
+      "comment_updated_at": "2026-08-05T18:33:01Z",
+      "comment_body_sha256": "f40b8f7cd9498e186a36607b1495c11cdbf1fa273d740a6a9f63443bf1d35b67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this branch changes which delayed automation output is delivered; it must be rebased onto current main and its lifecycle matrix revalidated because main changed the same cron,... (sha=3ee1081ee5b04ad904efa6744bf5c0e43bf3d957)",
+      "expected_head_sha": "3ee1081ee5b04ad904efa6744bf5c0e43bf3d957",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T18:33:46.190Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-cron-trigger-origin-lifecycle",
+        "head_sha": "3ee1081ee5b04ad904efa6744bf5c0e43bf3d957",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
