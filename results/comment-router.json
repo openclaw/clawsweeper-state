@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:39:51.421Z",
+  "updated_at": "2026-08-05T23:39:52.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/remindctl:66:5195609928:2026-08-05T18:19:46Z:re_review",
-      "comment_id": "5195609928",
-      "comment_version_key": "5195609928:2026-08-05T18:19:46Z",
-      "comment_url": "https://github.com/openclaw/remindctl/pull/66#issuecomment-5195609928",
-      "comment_created_at": "2026-08-05T18:19:46Z",
-      "comment_updated_at": "2026-08-05T18:19:46Z",
-      "comment_body_sha256": "246809cb5de3bac83cb9f2e381b9720c0fed4e95f9684e3573a2d289ae0360c7",
-      "source_delivery_id": "3d3e1aa0-90fa-11f1-958c-43ad17aafc37",
-      "repo": "openclaw/remindctl",
-      "issue_number": 66,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T18:20:24.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/eventkit-fetch-timeout",
-        "head_sha": "42098a0e0e190c1966abcd01f3ead4bc5a50f59b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:13:5164757534:2026-08-05T18:22:32Z:clawsweeper_needs_human",
       "comment_id": "5164757534",
@@ -32802,6 +32754,39 @@
         "kind": "pull_request",
         "branch": "fix/native-fleet-rebootstrap",
         "head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-05T23:39:17Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-05T23:39:17Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-05T23:39:17Z",
+      "comment_body_sha256": "f74405fbfaaab29c9a28061fbc1c258825b74ff795b27a32de9bf95b3aa7f661",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes which completed Claude Code runs qualify for native aggregation; the existing trajectory converter’s validation and the documented control run are the relevant safegua... (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:39:52.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
         "cluster_id": null,
         "job_path": null
       }
