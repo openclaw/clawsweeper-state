@@ -67,19 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Gateway config-reload lifecycle so a restart-required write deferred behind active work, followed by a settled exact revert to the process-applied configuration, cancels restart work instead of scheduling SIGUSR1. Keep the restart-intent preservation required for genuinely different final restart-class configurations; do not add a debounce or configuration option, and do not edit CHANGELOG.md. Add focused regression coverage for deferred change then exact revert, including absence of the restart request/signal; include release-note context in the PR body.
+Repair the Gateway config-reload lifecycle so a restart-required candidate that is reverted to the actual running configuration before deferred emission cancels restart work. Keep persisted-source acceptance, restart targets, invalid-config handling, and SecretRef preflight safety intact; do not add a debounce/config option or alter restart classification. Add a managed-reloader regression for deferred restart-class A followed by exact initial B, then drain the blocker and assert no restart signal or leaked terminal restriction. Use the existing managed reload sequence tests; no changelog edit is needed.
 
 Likely files:
 
 - src/gateway/config-reload.ts
+- src/gateway/server-reload-managed.ts
 - src/gateway/server-reload-restart.ts
-- src/gateway/config-reload.test.ts
 - src/gateway/server-reload-handlers.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/config-reload.test.ts
 - node scripts/run-vitest.mjs src/gateway/server-reload-handlers.test.ts
+- node scripts/check-changed.mjs -- src/gateway/config-reload.ts src/gateway/server-reload-managed.ts src/gateway/server-reload-restart.ts src/gateway/server-reload-handlers.test.ts
 
 ## Operator Prompt
 
