@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:04:30.090Z",
+  "updated_at": "2026-08-05T11:04:38.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5180912467:2026-08-04T15:06:09Z:re_review",
-      "comment_id": "5180912467",
-      "comment_version_key": "5180912467:2026-08-04T15:06:09Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5180912467",
-      "comment_created_at": "2026-08-04T15:06:09Z",
-      "comment_updated_at": "2026-08-04T15:06:09Z",
-      "comment_body_sha256": "b806d72b7ecef4e1dd304763e3793947ceb89a79bf9abfac68e052b5655d5e04",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T06:03:15.076Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:134:5181079201:2026-08-04T15:20:03Z:re_review",
       "comment_id": "5181079201",
@@ -33696,6 +33669,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T11:04:30.090Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T11:02:10Z:clawsweeper_needs_human",
+      "comment_id": "5187769266",
+      "comment_version_key": "5187769266:2026-08-05T11:02:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119482#issuecomment-5187769266",
+      "comment_created_at": "2026-08-05T05:04:33Z",
+      "comment_updated_at": "2026-08-05T11:02:10Z",
+      "comment_body_sha256": "c7eb3241653c84a466ba3c0d49232e8f2a094ef63b308a990d901477061f9d5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new Doctor-scoped cache influences plugin-owned provider and tool discovery; an unrecognized future inventory-mutating repair could retain stale capability facts for the remainder... (sha=ff416393255918172633e82a4d6f7f1d9e4f1ff4)",
+      "expected_head_sha": "ff416393255918172633e82a4d6f7f1d9e4f1ff4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T11:04:38.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-plugin-metadata-context-20260805",
+        "head_sha": "ff416393255918172633e82a4d6f7f1d9e4f1ff4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
