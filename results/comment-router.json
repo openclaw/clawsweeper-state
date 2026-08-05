@@ -1,38 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:33:13.799Z",
+  "updated_at": "2026-08-05T07:34:18.394Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118361",
-      "comment_id": "repair-loop-label-sweep:autofix:118361",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118361",
-      "comment_created_at": "2026-08-05T02:20:25.760Z",
-      "comment_updated_at": "2026-08-05T02:20:25.760Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118361,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:24:05.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-116747",
-        "head_sha": "2532feb490cb7b4e05df868ec4296a0364484b2a",
-        "cluster_id": "issue-openclaw-openclaw-116747",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-116747.md"
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118656",
       "comment_id": "repair-loop-label-sweep:autofix:118656",
@@ -32965,6 +32933,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119299:5182854672:2026-08-05T07:33:43Z:clawsweeper_needs_human",
+      "comment_id": "5182854672",
+      "comment_version_key": "5182854672:2026-08-05T07:33:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119299#issuecomment-5182854672",
+      "comment_created_at": "2026-08-04T18:09:07Z",
+      "comment_updated_at": "2026-08-05T07:33:43Z",
+      "comment_body_sha256": "b438bcfff45ad89cf71c0921efe81fe31ca41b0ba5d7ac8f2dcbc6400569bf8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR reports live configured-MCP proof for 1a443e1, not the current d117 head, and does not provide current-head visible proof of fi...; Review finding: [medium] Verify the exact-head authority boundary (sha=d117fd112c2c522bb5361be268bb3b6e801ed838)",
+      "expected_head_sha": "d117fd112c2c522bb5361be268bb3b6e801ed838",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:34:18.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-runtime-authority-v1",
+        "head_sha": "d117fd112c2c522bb5361be268bb3b6e801ed838",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
