@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:28:46.112Z",
+  "updated_at": "2026-08-05T16:30:59.740Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3285:5186731649:2026-08-05T13:04:48Z:clawsweeper_needs_human",
-      "comment_id": "5186731649",
-      "comment_version_key": "5186731649:2026-08-05T13:04:48Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5186731649",
-      "comment_created_at": "2026-08-05T02:11:24Z",
-      "comment_updated_at": "2026-08-05T13:04:48Z",
-      "comment_body_sha256": "013838c139bb342b33cfbea4bf15fdf8d52e0a948aa9c9342f41269e9301152d",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3285,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Regenerate the SDK lock entries from the published package (P1)** - The PR states these integrity values came from pre-publication artifacts. bun.lock is used for exact installs, so a release artifact mismatch c...; Review finding: [P1] Regenerate the SDK lock entries from the published package — bun.lock:456 - [P2] Move initial flag evaluation out of the root route — src/routes/__root.tsx:34... (sha=847a6435455187e5db6ef73b4524e6dddcb86cb2)",
-      "expected_head_sha": "847a6435455187e5db6ef73b4524e6dddcb86cb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:06:19.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/integrate-krill-switch-flags",
-        "head_sha": "847a6435455187e5db6ef73b4524e6dddcb86cb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119593:5192102074:2026-08-05T13:05:54Z:re_review",
       "comment_id": "5192102074",
@@ -32061,6 +32028,54 @@
           "label": "clawsweeper:automerge",
           "job_path": null
         },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119441:5194483352:2026-08-05T16:30:07Z:re_review",
+      "comment_id": "5194483352",
+      "comment_version_key": "5194483352:2026-08-05T16:30:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119441#issuecomment-5194483352",
+      "comment_created_at": "2026-08-05T16:30:07Z",
+      "comment_updated_at": "2026-08-05T16:30:07Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "ec3884b0-90ea-11f1-802a-7f150945a459",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119441,
+      "author": "sallyom",
+      "author_id": 11166065,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:30:57.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-118503-systemd-dotenv",
+        "head_sha": "5149a74dcac8babb20aa12a0574a638c5a09b2e7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
