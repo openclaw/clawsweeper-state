@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T01:18:56.203Z",
+  "updated_at": "2026-08-05T01:19:12.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110709:5013185064:2026-07-18T22:33:58Z:re_review",
-      "comment_id": "5013185064",
-      "comment_version_key": "5013185064:2026-07-18T22:33:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110709#issuecomment-5013185064",
-      "comment_created_at": "2026-07-18T22:33:58Z",
-      "comment_updated_at": "2026-07-18T22:33:58Z",
-      "comment_body_sha256": "7f0f28b43bca09c5348805060f7eb70887d3dd353e105ccbcbc9d798d6b0ae23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110709,
-      "author": "wuqxuan",
-      "author_id": 3159199,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T21:18:03.138Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110709:5013443791:2026-07-19T00:06:10Z:re_review",
       "comment_id": "5013443791",
@@ -31746,6 +31719,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T01:18:56.203Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118335:5161211041:2026-08-05T01:18:36Z:clawsweeper_needs_human",
+      "comment_id": "5161211041",
+      "comment_version_key": "5161211041:2026-08-05T01:18:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118335#issuecomment-5161211041",
+      "comment_created_at": "2026-08-03T00:51:02Z",
+      "comment_updated_at": "2026-08-05T01:18:36Z",
+      "comment_body_sha256": "25696796242ace8044ebe3b51c86602226133d26d1f94cf264d1746c223c62f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118335,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body lists code and test changes but provides no redacted after-fix agent-run output, recording, or runtime logs demonstrating generic v...; Review finding: [P1] Pass the active catalog surface instead of inferring Code Mode — src/agents/tool-search-catalog.ts:415 - [P1] Keep MCP lookalikes behind the trusted direct-to... (sha=816a674985ac945536664fed528b5514475e28fc)",
+      "expected_head_sha": "816a674985ac945536664fed528b5514475e28fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T01:19:12.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-direct-tool-config",
+        "head_sha": "816a674985ac945536664fed528b5514475e28fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
