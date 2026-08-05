@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T09:14:39.363Z",
+  "updated_at": "2026-08-05T09:14:50.290Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3398:5186730068:2026-08-05T03:25:05Z:clawsweeper_needs_human",
-      "comment_id": "5186730068",
-      "comment_version_key": "5186730068:2026-08-05T03:25:05Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3398#issuecomment-5186730068",
-      "comment_created_at": "2026-08-05T02:11:08Z",
-      "comment_updated_at": "2026-08-05T03:25:05Z",
-      "comment_body_sha256": "ab69b4c98c6dfef7383b6ef8d55e96fdd48d4eedaf7f79becdf22e233b06aa83",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3398,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The submitted browser comparison predates Carapace v0.6.1; removing the imports could change token-selected browser typography on the current merge result even though server Open Grap... (sha=01cb52aa03e6970798846953a06199d212379aab)",
-      "expected_head_sha": "01cb52aa03e6970798846953a06199d212379aab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T03:25:51.747Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/remove-redundant-font-bundles",
-        "head_sha": "01cb52aa03e6970798846953a06199d212379aab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119023:5187178265:2026-08-05T03:25:48Z:re_review",
       "comment_id": "5187178265",
@@ -33149,6 +33116,54 @@
         "kind": "pull_request",
         "branch": "fix/media-sweep-managed-outgoing",
         "head_sha": "cc09ff7f26fd337bc43a03dbba805b27387014cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:134:5189908424:2026-08-05T09:13:54Z:re_review",
+      "comment_id": "5189908424",
+      "comment_version_key": "5189908424:2026-08-05T09:13:54Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5189908424",
+      "comment_created_at": "2026-08-05T09:13:54Z",
+      "comment_updated_at": "2026-08-05T09:13:54Z",
+      "comment_body_sha256": "58b67a1fcae5353cdd2cc043998b75a55af0a7da6be9f42e393a81372bb664d2",
+      "source_delivery_id": "fc15b8e0-90ad-11f1-9d39-6576eb0c38ab",
+      "repo": "openclaw/lobster",
+      "issue_number": 134,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T09:14:47.991Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workflow-cost-skip-cached-replays",
+        "head_sha": "3810216ec357b3b608fa85f3a6b1ee2506c3d19f",
         "cluster_id": null,
         "job_path": null
       },
