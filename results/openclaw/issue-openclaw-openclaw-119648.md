@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119648"
-mode: "autonomous"
-run_id: "31019199321"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31019199321"
-head_sha: "14bd27bc8fa1232dd866aba9a9b525496fba200e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T15:58:02.684Z"
+mode: "plan"
+run_id: "31023438615"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31023438615"
+head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-05T16:13:45.077Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119648"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119648"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31019199321](https://github.com/openclaw/clawsweeper/actions/runs/31019199321)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31023438615](https://github.com/openclaw/clawsweeper/actions/runs/31023438615)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/119648
 
 ## Summary
 
-Verified on main 9546d2af: a missing profile-specific unit can adopt the first unrelated marker-owned system unit. A narrow fix PR remains appropriate, but this checkout is read-only and lacks node_modules, so no branch or validated patch could be produced here.
+#119648 is an open, reproducible non-security lifecycle bug on current main. Plan a narrow credited fix PR that removes unscoped marker-owned systemd unit adoption while retaining canonical and explicit unit resolution.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Verified on main 9546d2af: a missing profile-specific unit can adopt the first u
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119648 | keep_canonical | planned | canonical | This is a reproducible existing-behavior bug with one clear canonical issue and no active implementation PR. |
-| cluster:issue-openclaw-openclaw-119648 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. The executor should apply the attached narrow artifact on clawsweeper/issue-openclaw-openclaw-119648. |
-| cluster:issue-openclaw-openclaw-119648 | build_fix_artifact | planned | canonical | A two-file owner-boundary repair removes the unrelated-unit adoption without adding legacy name compatibility. |
+| #119648 | fix_needed | planned | canonical | The bug is confirmed and bounded. No viable implementation PR is hydrated, so the canonical issue needs a new narrow fix path rather than closure or merge. |
+| cluster:issue-openclaw-openclaw-119648 | build_fix_artifact | planned | canonical | A focused new fix PR is appropriate; no configuration, security-boundary, changelog, or broad Doctor-flow rewrite is required. |
 
 ## Needs Human
 
