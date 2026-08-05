@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T20:46:54.663Z",
+  "updated_at": "2026-08-05T20:47:12.240Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117611:5153217902:2026-08-05T13:25:28Z:clawsweeper_auto_repair",
-      "comment_id": "5153217902",
-      "comment_version_key": "5153217902:2026-08-05T13:25:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117611#issuecomment-5153217902",
-      "comment_created_at": "2026-08-01T20:11:37Z",
-      "comment_updated_at": "2026-08-05T13:25:28Z",
-      "comment_body_sha256": "d811e653863aa9c5f48eda1f35f1a8364becd5d2c04235757d64799ae316a9e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117611,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:18:23.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa405-line-preserve-all-table-rows",
-        "head_sha": "a34dd3eb7fc432fa92a6fa449ed0c1123ccd86fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117866:5155940149:2026-08-05T13:25:29Z:clawsweeper_auto_repair",
       "comment_id": "5155940149",
@@ -32517,6 +32484,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119712:5196827378:2026-08-05T20:46:26Z:clawsweeper_needs_human",
+      "comment_id": "5196827378",
+      "comment_version_key": "5196827378:2026-08-05T20:46:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119712#issuecomment-5196827378",
+      "comment_created_at": "2026-08-05T20:12:49Z",
+      "comment_updated_at": "2026-08-05T20:46:26Z",
+      "comment_body_sha256": "ad564ae6a404a11e16c048cf7fffa8af232f3dacfb9b16f75967cd50885375fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact OpenAI SDK 6.49.0 contract and a redacted live MiniMax terminal payload could not be independently inspected, so green mock parity CI does not establish external-provider be... (sha=5f06105ef03ea2f5cad196c9fed915e528783255)",
+      "expected_head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T20:47:12.240Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119692",
+        "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
+        "cluster_id": "issue-openclaw-openclaw-119692",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
