@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119551"
 mode: "autonomous"
-run_id: "31001802199"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31001802199"
-head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T14:07:56.570Z"
-canonical: "https://github.com/openclaw/openclaw/issues/119551"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/119551"
+run_id: "31018655395"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31018655395"
+head_sha: "14bd27bc8fa1232dd866aba9a9b525496fba200e"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-05T15:16:28.829Z"
+canonical: "#119551"
+canonical_issue: "#119551"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31001802199](https://github.com/openclaw/clawsweeper/actions/runs/31001802199)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31018655395](https://github.com/openclaw/clawsweeper/actions/runs/31018655395)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/119551
+Canonical: #119551
 
 ## Summary
 
-#119551 is the canonical, non-security configured-binding lifecycle bug; #106008 is a related but distinct ACPX spawn-environment feature request. A narrow new-fix-PR artifact is ready, but implementation is blocked in this read-only target checkout.
+Confirmed the current-main ACP configured-binding defect. A narrow replacement fix PR is appropriate; open contributor PR #119599 remains related but needs correction before it could be a candidate.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #106008 | keep_related | planned | related | Related ACP model-routing work remains independently open and must not be folded into this narrow binding-lifecycle repair. |
-| #119551 | fix_needed | blocked | canonical | The fix is narrow and ready for execution in a writable checkout; this run cannot apply it. |
-| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Plan a new narrow fix PR; no GitHub mutation is performed by this worker. |
+| #119551 | keep_canonical | planned | canonical | Open canonical issue; no close or merge is authorized. |
+| #119599 | fix_needed | planned | related | Useful related attempt, but not the correct owner-boundary repair. The hydrated commit is unavailable in this shallow checkout, so no branch mutation was attempted. |
 
 ## Needs Human
 
