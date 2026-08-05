@@ -67,19 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing WhatsApp long-active-work health-state defect tracked by https://github.com/openclaw/openclaw/issues/114169. First establish a failing boundary regression from WhatsApp pending work through channel status into gateway health evaluation. Refresh authoritative activity while work remains active, or reuse the established shared run-state pattern where that is the coherent owner boundary; preserve terminal cleanup and the 25-minute stale/disconnected recovery. Do not add gateway config, environment variables, compatibility readers, or retired health-monitor settings. Add focused regression coverage and put user-visible release context in the PR body, not CHANGELOG.md.
+Repair the WhatsApp pending-work activity producer so a healthy awaited inbound handler refreshes last-run activity while pending work remains positive, without adding a gateway busy-timeout setting or changing the 25-minute stuck policy. Reuse the shared channel lifecycle/run-state heartbeat through public plugin seams where practical; ensure heartbeat cleanup when work reaches zero or the monitor stops. Add a focused regression proving a >25-minute-equivalent active turn remains healthy and cleanup occurs. Related context: https://github.com/openclaw/openclaw/issues/114169 and closed unmerged https://github.com/openclaw/openclaw/pull/114840. Likely files are the WhatsApp monitor state and inbound delivery path plus focused tests; preserve existing gateway stale-work restart behavior. Put release-note context in the PR body or commit message; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/whatsapp/src/auto-reply/monitor-state.ts
-- extensions/whatsapp/src/inbound/message-delivery.ts
 - extensions/whatsapp/src/auto-reply/monitor.ts
+- extensions/whatsapp/src/inbound/message-delivery.ts
+- extensions/whatsapp/src/auto-reply/monitor-state.test.ts
 - src/gateway/channel-health-policy.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/channel-health-policy.test.ts
-- pnpm test extensions/whatsapp
+- node scripts/run-vitest.mjs extensions/whatsapp/src/auto-reply/monitor-state.test.ts
+- node scripts/run-vitest.mjs src/gateway/channel-health-policy.test.ts src/gateway/channel-health-monitor.test.ts
+- Run a focused WhatsApp pending-work dispatch regression with fake time or an equivalent gateway harness.
 
 ## Operator Prompt
 
