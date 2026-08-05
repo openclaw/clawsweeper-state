@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T19:43:13.111Z",
+  "updated_at": "2026-08-05T19:43:16.537Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116000:5193876667:2026-08-05T15:36:24Z:re_review",
-      "comment_id": "5193876667",
-      "comment_version_key": "5193876667:2026-08-05T15:36:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116000#issuecomment-5193876667",
-      "comment_created_at": "2026-08-05T15:36:24Z",
-      "comment_updated_at": "2026-08-05T15:36:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116000,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T16:08:08.451Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/105198-session-reaper-metrics",
-        "head_sha": "9b0be28bdce7e7e6755da4524303cb16272bd012",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116000:5120772953:2026-08-05T16:07:11Z:clawsweeper_needs_human",
       "comment_id": "5120772953",
@@ -32385,6 +32338,39 @@
         "kind": "pull_request",
         "branch": "fix/native-claude-trajectory-eligibility",
         "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-05T19:42:25Z:clawsweeper_needs_human",
+      "comment_id": "5164752963",
+      "comment_version_key": "5164752963:2026-08-05T19:42:25Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/12#issuecomment-5164752963",
+      "comment_created_at": "2026-08-03T09:41:00Z",
+      "comment_updated_at": "2026-08-05T19:42:25Z",
+      "comment_body_sha256": "1d6aad1fb6adaea41a222e999831777c453736dbd2072dcd1141b9f44ceae47f",
+      "repo": "openclaw/babelfish",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - SDK 1.30.0 changes MCP stdio, SSE, and Streamable HTTP behavior, so imported servers could expose an interoperability regression despite the clean lockfile-only diff. (sha=5bd5af6f8503e6a4de23105fef3886f0217929d0)",
+      "expected_head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T19:43:16.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-minor-and-patch-0f47153fa6",
+        "head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
         "cluster_id": null,
         "job_path": null
       }
