@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119172",
+  "mode": "autonomous",
+  "run_id": "31013321940",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31013321940",
+  "head_sha": "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119172.md",
+  "published_at": "2026-08-05T16:08:34.877Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/119172",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/53932",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119172",
+  "summary": "Keep #119172 open and repair its writable contributor branch. The Slack propagation fix is the canonical path for #53932, but the reviewed head is behind main and leaves the model-visible forceDocument contract contradictory for Slack.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/53932",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119172",
+      "candidate_fix": "#119172",
+      "reason": "No close action is permitted or safe until the repaired PR has an exact-head review and lands."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119172",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119172",
+      "candidate_fix": "#119172",
+      "reason": "Repair the canonical branch, rebase it, regenerate prompt snapshots after the model-visible description update, then obtain one exact-head re-review. Merge is disabled by this job."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119172",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119172",
+      "candidate_fix": "#119172",
+      "reason": "The job requires a repair artifact for the existing PR; no replacement PR or closure is needed."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

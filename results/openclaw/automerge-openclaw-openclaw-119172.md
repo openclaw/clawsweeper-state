@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119172"
 mode: "autonomous"
-run_id: "31008504173"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31008504173"
-head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+run_id: "31013321940"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31013321940"
+head_sha: "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T13:21:53.970Z"
-canonical: "#119172"
-canonical_issue: null
-canonical_pr: "#119172"
-actions_total: 1
+published_at: "2026-08-05T16:08:34.877Z"
+canonical: "https://github.com/openclaw/openclaw/pull/119172"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/53932"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119172"
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31008504173](https://github.com/openclaw/clawsweeper/actions/runs/31008504173)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31013321940](https://github.com/openclaw/clawsweeper/actions/runs/31013321940)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119172
+Canonical: https://github.com/openclaw/openclaw/pull/119172
 
 ## Summary
 
-Make PR #119172 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Keep #119172 open and repair its writable contributor branch. The Slack propagation fix is the canonical path for #53932, but the reviewed head is behind main and leaves the model-visible forceDocument contract contradictory for Slack.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #119172 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119172 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/issues/53932 | keep_related | planned | related | No close action is permitted or safe until the repaired PR has an exact-head review and lands. |
+| https://github.com/openclaw/openclaw/pull/119172 | fix_needed | planned | canonical | Repair the canonical branch, rebase it, regenerate prompt snapshots after the model-visible description update, then obtain one exact-head re-review. Merge is disabled by this job. |
+| https://github.com/openclaw/openclaw/pull/119172 | build_fix_artifact | planned | canonical | The job requires a repair artifact for the existing PR; no replacement PR or closure is needed. |
 
 ## Needs Human
 
