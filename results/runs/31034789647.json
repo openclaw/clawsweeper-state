@@ -1,0 +1,105 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119692",
+  "mode": "autonomous",
+  "run_id": "31034789647",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31034789647",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md",
+  "published_at": "2026-08-05T19:01:23.585Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119692",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119692",
+  "canonical_pr": null,
+  "summary": "A narrow fix is warranted on main e69c3df: the shared parser recognizes nested cached_tokens and prompt_cache_hit_tokens but not top-level cached_tokens. This read-only sandbox cannot apply or run the regression; the executor should create the planned fix PR.",
+  "actions": [
+    {
+      "target": "#119692",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119692",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker's read-only filesystem and absent installed dependency source; no local patch or test execution is permitted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119692",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119692",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-119692 after the executor rechecks live issue state and installed OpenAI SDK types."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119712",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119692",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119712",
+      "commit": "5f06105ef03ea2f5cad196c9fed915e528783255",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119692",
+      "pr": "https://github.com/openclaw/openclaw/pull/119712",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119712",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119712",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(usage): preserve top-level cached tokens in completions streams",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

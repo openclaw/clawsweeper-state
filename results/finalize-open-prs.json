@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T18:05:24.470Z",
-  "count": 8,
+  "generated_at": "2026-08-05T19:01:46.105Z",
+  "count": 10,
   "summary": {
-    "open_prs": 8,
+    "open_prs": 10,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 8,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 10,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,149 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119717,
+      "title": "fix(telegram): prioritize configured commands in capped menus",
+      "url": "https://github.com/openclaw/openclaw/pull/119717",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89252",
+      "head_sha": "8ec6719930a977e0716cf98ad1cbef4480b79a07",
+      "cluster_id": "issue-openclaw-openclaw-89252",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
+      "updated_at": "2026-08-05T18:59:24Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 112,
+        "counts": {
+          "SKIPPED": 38,
+          "SUCCESS": 33,
+          "IN_PROGRESS": 41
+        },
+        "blockers": [
+          "CI / build-artifacts:IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-plugins-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-15:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-additional-boundaries-a:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CodeQL Critical Quality / Critical Quality (channel-runtime-boundary):IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 119712,
+      "title": "fix(usage): preserve top-level cached tokens in completions streams",
+      "url": "https://github.com/openclaw/openclaw/pull/119712",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119692",
+      "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
+      "cluster_id": "issue-openclaw-openclaw-119692",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md",
+      "updated_at": "2026-08-05T18:48:10Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 107,
+        "counts": {
+          "SKIPPED": 26,
+          "SUCCESS": 80,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31034789647",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31034789647",
+        "cluster_id": "issue-openclaw-openclaw-119692",
+        "published_at": "2026-08-05T19:01:23.585Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119712",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(usage): preserve top-level cached tokens in completions streams",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 119589,
       "title": "fix(acp): retain final-only text until dispatch completes",
