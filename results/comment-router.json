@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:41:28.015Z",
+  "updated_at": "2026-08-05T23:41:32.906Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119668:5195735785:2026-08-05T18:32:25Z:re_review",
-      "comment_id": "5195735785",
-      "comment_version_key": "5195735785:2026-08-05T18:32:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119668#issuecomment-5195735785",
-      "comment_created_at": "2026-08-05T18:32:25Z",
-      "comment_updated_at": "2026-08-05T18:32:25Z",
-      "comment_body_sha256": "f45d7956f97e039a07145e8bea12c18dbde53837daaa48a82cd356369d02ec28",
-      "source_delivery_id": "01f5a470-90fc-11f1-97ac-8d81d7050776",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119668,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T18:33:06.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t35-03-responses-idle-activity",
-        "head_sha": "a8b728c1bd8752630d41e01d344593ff3eb046b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117425:5151798809:2026-08-05T18:33:01Z:clawsweeper_needs_human",
       "comment_id": "5151798809",
@@ -32640,6 +32592,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-gateway-protocol-core",
         "head_sha": "df74c4ed64213c535c576cb5fc44706b80586e51",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118008:5158543101:2026-08-05T23:35:02Z:clawsweeper_needs_human",
+      "comment_id": "5158543101",
+      "comment_version_key": "5158543101:2026-08-05T23:35:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5158543101",
+      "comment_created_at": "2026-08-02T14:30:56Z",
+      "comment_updated_at": "2026-08-05T23:35:02Z",
+      "comment_body_sha256": "afe6a7c843fdbcc55bbba7e9653476535ba04ada9c6d9631d703c15b0eee3cac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Authorize the exact Crabline dependency update** - The PR changes the Crabline integrity pin and bypasses the normal release-age hold for 0.1.13; direct package inspection was unavailab...; Review finding: [medium] Authorize the exact Crabline dependency update — extensions/qa-lab/package.json:10 (sha=eccec816a14545c3293792d99bcd3a0e5cc44f55)",
+      "expected_head_sha": "eccec816a14545c3293792d99bcd3a0e5cc44f55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:41:32.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-server-terminology",
+        "head_sha": "eccec816a14545c3293792d99bcd3a0e5cc44f55",
         "cluster_id": null,
         "job_path": null
       }
