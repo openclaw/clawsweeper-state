@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T22:37:59.365Z",
+  "updated_at": "2026-08-05T22:38:00.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4664620871:2026-06-09T22:22:51Z:re_review",
-      "comment_id": "4664620871",
-      "comment_version_key": "4664620871:2026-06-09T22:22:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4664620871",
-      "comment_created_at": "2026-06-09T22:22:51Z",
-      "comment_updated_at": "2026-06-09T22:22:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T17:32:07.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4666426802:2026-06-10T04:11:18Z:re_review",
       "comment_id": "4666426802",
@@ -32314,6 +32287,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119722:5196416781:2026-08-05T22:32:55Z:clawsweeper_needs_human",
+      "comment_id": "5196416781",
+      "comment_version_key": "5196416781:2026-08-05T22:32:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
+      "comment_created_at": "2026-08-05T19:33:37Z",
+      "comment_updated_at": "2026-08-05T22:32:55Z",
+      "comment_body_sha256": "0e65f29c436c5dfb0278e5271c87daa62715aff24c8957342cf4992b2a7f9d7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119722,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally edits existing user shell profiles during uninstall, so compatibility depends on retaining the marker-bounded and exact recognized-source matching verified by the f... (sha=a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d)",
+      "expected_head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T22:38:00.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-112625",
+        "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
+        "cluster_id": "automerge-openclaw-openclaw-119722",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119722.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
