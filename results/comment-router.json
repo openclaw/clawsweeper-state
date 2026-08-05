@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:02:34.840Z",
+  "updated_at": "2026-08-05T00:02:48.472Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118499:5183694549:2026-08-04T19:32:31Z:re_review",
-      "comment_id": "5183694549",
-      "comment_version_key": "5183694549:2026-08-04T19:32:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118499#issuecomment-5183694549",
-      "comment_created_at": "2026-08-04T19:32:31Z",
-      "comment_updated_at": "2026-08-04T19:32:31Z",
-      "comment_body_sha256": "fd3b1c62989103d724f25c14191937be016712fa76fef6d4edc4d9c2e56353bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118499,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T20:01:32.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk",
-        "head_sha": "57f1379c328a78829b368320be89d3f2276b1abb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119307:5183697851:2026-08-04T19:32:52Z:re_review",
       "comment_id": "5183697851",
@@ -32050,6 +32003,39 @@
         "kind": "pull_request",
         "branch": "feat/runtime-permission-policy",
         "head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119320:5184762111:2026-08-05T00:01:49Z:clawsweeper_needs_human",
+      "comment_id": "5184762111",
+      "comment_version_key": "5184762111:2026-08-05T00:01:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119320#issuecomment-5184762111",
+      "comment_created_at": "2026-08-04T21:21:09Z",
+      "comment_updated_at": "2026-08-05T00:01:49Z",
+      "comment_body_sha256": "244e9f852e9debe6bb2bee4c8e1f74a91e93f3c5949e3343be836e5dd232ee72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the two documentation hunks against the current base before merge. (sha=da90a88bcc24084b33d1f020db451957838ed311)",
+      "expected_head_sha": "da90a88bcc24084b33d1f020db451957838ed311",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:02:48.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/implicit-mentions-supported-channels",
+        "head_sha": "da90a88bcc24084b33d1f020db451957838ed311",
         "cluster_id": null,
         "job_path": null
       }
