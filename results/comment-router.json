@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T17:26:41.089Z",
+  "updated_at": "2026-08-05T17:27:11.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:5003186425:2026-07-17T12:18:27Z:re_review",
-      "comment_id": "5003186425",
-      "comment_version_key": "5003186425:2026-07-17T12:18:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5003186425",
-      "comment_created_at": "2026-07-17T12:18:27Z",
-      "comment_updated_at": "2026-07-17T12:18:27Z",
-      "comment_body_sha256": "691434338f794ceabf9c5196e3ae063fdd23c692b2f8dea0d6f36cce5738789e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:16:51.921Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:5003870202:2026-07-17T13:40:18Z:re_review",
       "comment_id": "5003870202",
@@ -32285,6 +32258,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T17:26:41.089Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119666:5194274355:2026-08-05T17:26:07Z:clawsweeper_needs_human",
+      "comment_id": "5194274355",
+      "comment_version_key": "5194274355:2026-08-05T17:26:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119666#issuecomment-5194274355",
+      "comment_created_at": "2026-08-05T16:10:32Z",
+      "comment_updated_at": "2026-08-05T17:26:07Z",
+      "comment_body_sha256": "9a3b723c8c058df9fd3d7a1000445dddd98e54b9f1a6fb5a4159d5899c14019b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119666,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact case-insensitive Bearer schemes (P1)** - Both patterns use g rather than gi. Authentication schemes are case-insensitive, and configured remote headers can send authorization: bearer &lt;token68>; a refle...; Review finding: [P1] Redact case-insensitive Bearer schemes — packages/memory-host-sdk/src/host/error-utils.ts:10-11 - [high] Lower-case bearer credentials bypass redaction — pack... (sha=1fc6007c86773d9ecc6b772ae2b26d951fa4c5d5)",
+      "expected_head_sha": "1fc6007c86773d9ecc6b772ae2b26d951fa4c5d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T17:27:11.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t24-13-memory-host-error-redaction",
+        "head_sha": "1fc6007c86773d9ecc6b772ae2b26d951fa4c5d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
