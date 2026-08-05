@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:40:35.618Z",
+  "updated_at": "2026-08-05T23:40:36.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112362:5195633646:2026-08-05T18:22:09Z:re_review",
-      "comment_id": "5195633646",
-      "comment_version_key": "5195633646:2026-08-05T18:22:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112362#issuecomment-5195633646",
-      "comment_created_at": "2026-08-05T18:22:09Z",
-      "comment_updated_at": "2026-08-05T18:22:09Z",
-      "comment_body_sha256": "01d9e4f200d20d57a40fbd77a1a3faa7699bcc670dd7ba1f8d3146fa6c7dd33d",
-      "source_delivery_id": "92facdd0-90fa-11f1-9755-4eebeef170c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112362,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T18:24:23.218Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-skills-bypass-config-guard",
-        "head_sha": "aee574787de1f1ce4dacd3a534bba34eb5722da8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3074:4991707464:2026-08-05T18:23:43Z:clawsweeper_auto_repair",
       "comment_id": "4991707464",
@@ -32721,6 +32673,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/agentchat-caa5a01",
         "head_sha": "6a26b11f0660f409a18b5768211df2ee81a7eb1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119706:5197151722:2026-08-05T23:39:28Z:clawsweeper_needs_human",
+      "comment_id": "5197151722",
+      "comment_version_key": "5197151722:2026-08-05T23:39:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119706#issuecomment-5197151722",
+      "comment_created_at": "2026-08-05T20:46:56Z",
+      "comment_updated_at": "2026-08-05T23:39:28Z",
+      "comment_body_sha256": "53f033aa002bce4858e55bcd7733a27d3e15b31ec8dc4106c161d7620ae1aae7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The provided before/after terminal harness is useful, but it substitutes the transport client, capture store, and guarded-release boun... (sha=740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb)",
+      "expected_head_sha": "740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:40:36.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-capture-stalled-read-deadline",
+        "head_sha": "740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb",
         "cluster_id": null,
         "job_path": null
       }
