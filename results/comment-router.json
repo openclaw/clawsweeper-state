@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:26:32.033Z",
+  "updated_at": "2026-08-05T11:26:33.887Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T08:00:59Z:clawsweeper_needs_human",
-      "comment_id": "5187769266",
-      "comment_version_key": "5187769266:2026-08-05T08:00:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119482#issuecomment-5187769266",
-      "comment_created_at": "2026-08-05T05:04:33Z",
-      "comment_updated_at": "2026-08-05T08:00:59Z",
-      "comment_body_sha256": "4a795e21ae9f28e2da796d4634ab501630dffa6f56d9ffb5f80da61c96cf4621",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The body’s Kova result is tied to 75044b68519af512579e12d7458f838105de754c rather than current head ce0e9c4f62c9ad2a3169b57eb658796089515e17, so the claimed production reduction needs... (sha=ce0e9c4f62c9ad2a3169b57eb658796089515e17)",
-      "expected_head_sha": "ce0e9c4f62c9ad2a3169b57eb658796089515e17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:02:24.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/doctor-plugin-metadata-context-20260805",
-        "head_sha": "ce0e9c4f62c9ad2a3169b57eb658796089515e17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:65:5170685697:2026-08-05T08:01:47Z:clawsweeper_needs_human",
       "comment_id": "5170685697",
@@ -32312,6 +32279,54 @@
         "kind": "pull_request",
         "branch": "fix/whatsapp-lid-inbound-peer-119475",
         "head_sha": "435795a7ffbe05a78a31a133cebab994dac71d2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119243:5191128351:2026-08-05T11:26:01Z:re_review",
+      "comment_id": "5191128351",
+      "comment_version_key": "5191128351:2026-08-05T11:26:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119243#issuecomment-5191128351",
+      "comment_created_at": "2026-08-05T11:26:01Z",
+      "comment_updated_at": "2026-08-05T11:26:01Z",
+      "comment_body_sha256": "3169d486ed39daa16e299dda661ad5f51d850317e6db1151a6361523af43e948",
+      "source_delivery_id": "70cd0140-90c0-11f1-8c4a-b8a6c6876d50",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119243,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof and ci status evidence were added to the pr body and the `real behavior proof` check is passing; the latest review predates that evidence update",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:26:32.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-keep-own-mention-72504",
+        "head_sha": "267a5d4862c6f506b6778584addb5d5d546b009a",
         "cluster_id": null,
         "job_path": null
       },
