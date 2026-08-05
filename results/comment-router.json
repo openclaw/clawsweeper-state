@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:15:56.210Z",
+  "updated_at": "2026-08-05T12:16:01.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5189978386:2026-08-05T09:21:00Z:re_review",
-      "comment_id": "5189978386",
-      "comment_version_key": "5189978386:2026-08-05T09:21:00Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5189978386",
-      "comment_created_at": "2026-08-05T09:21:00Z",
-      "comment_updated_at": "2026-08-05T09:21:00Z",
-      "comment_body_sha256": "3171973bf47c55dd97be4d2585e23ccd0b8f3531881046a88eb95aa4566239cc",
-      "source_delivery_id": "fa173450-90ae-11f1-91f5-cfd7bfa053b1",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T09:21:35.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workflow-cost-skip-cached-replays",
-        "head_sha": "3810216ec357b3b608fa85f3a6b1ee2506c3d19f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119225:5189983271:2026-08-05T09:21:31Z:re_review",
       "comment_id": "5189983271",
@@ -32005,6 +31957,39 @@
         "kind": "pull_request",
         "branch": "rfc/multi-slot-memory-role-architecture",
         "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:62:5123133546:2026-08-05T12:14:48Z:clawsweeper_needs_human",
+      "comment_id": "5123133546",
+      "comment_version_key": "5123133546:2026-08-05T12:14:48Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/62#issuecomment-5123133546",
+      "comment_created_at": "2026-07-29T20:36:00Z",
+      "comment_updated_at": "2026-08-05T12:14:48Z",
+      "comment_body_sha256": "3f039dba8f9970da7fb24079fd7283d8bd93373a9dc0342e65f236b4e28daff6",
+      "repo": "openclaw/shellbench",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Historical runs that used runtime-selected defaults are not directly comparable with new explicit direct/Code Mode results until a matched batch establishes the new boundary. (sha=f5b31cb1260b631b811bf0ede9f4eba51a94b98c)",
+      "expected_head_sha": "f5b31cb1260b631b811bf0ede9f4eba51a94b98c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:16:01.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openclaw-tool-search-explicit-off",
+        "head_sha": "f5b31cb1260b631b811bf0ede9f4eba51a94b98c",
         "cluster_id": null,
         "job_path": null
       }
