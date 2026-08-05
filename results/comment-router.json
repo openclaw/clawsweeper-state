@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:17:59.445Z",
+  "updated_at": "2026-08-05T07:18:15.273Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91237:4643932703:2026-08-05T00:33:53Z:clawsweeper_needs_human",
-      "comment_id": "4643932703",
-      "comment_version_key": "4643932703:2026-08-05T00:33:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-4643932703",
-      "comment_created_at": "2026-06-07T20:02:24Z",
-      "comment_updated_at": "2026-08-05T00:33:53Z",
-      "comment_body_sha256": "e2ac7a6d811beb52dfaa2bb3af0a1f1b968ed7ef86257d4d9034da896b9044db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes existing verified OpenRouter Anthropic deployments with OPENCLAW_CACHE_RETENTION=long from a five-minute marker to OpenRouter’s costlier one-hour cache-write tier. (sha=f809aba45773327d307710b5910f205d745f77fe)",
-      "expected_head_sha": "f809aba45773327d307710b5910f205d745f77fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:24:05.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
-        "head_sha": "f809aba45773327d307710b5910f205d745f77fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91271:4644476495:2026-08-05T00:31:29Z:clawsweeper_needs_human",
       "comment_id": "4644476495",
@@ -32871,6 +32838,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119477:5187936083:2026-08-05T07:17:43Z:clawsweeper_needs_human",
+      "comment_id": "5187936083",
+      "comment_version_key": "5187936083:2026-08-05T07:17:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119477#issuecomment-5187936083",
+      "comment_created_at": "2026-08-05T05:30:25Z",
+      "comment_updated_at": "2026-08-05T07:17:43Z",
+      "comment_body_sha256": "b4afe2fa707b1964b6eedfedfa8ed15155689f522a00e0b652c5c43c5bdf92bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119477,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports unit suites and repository checks, but contains no redacted after-fix provider/runtime or terminal trace; add real behavior...; Review finding: [P1] Apply scoped policy before ElevenLabs profile fallback — extensions/elevenlabs/speech-provider.ts:191-192 - [P1] Register scoped credentials with the environm... (sha=e7c180fa7f415c925ecc66c776ce21801634c1e4)",
+      "expected_head_sha": "e7c180fa7f415c925ecc66c776ce21801634c1e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:18:15.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/scoped-provider-keys",
+        "head_sha": "e7c180fa7f415c925ecc66c776ce21801634c1e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
