@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-05T19:34:27.499Z
+Generated: 2026-08-05T20:00:53.172Z
 
 ## Summary
 
@@ -11,7 +11,7 @@ Generated: 2026-08-05T19:34:27.499Z
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 8 |
+| needs_checks | 9 |
 | needs_review | 0 |
 | needs_merge_preflight | 12 |
 | needs_result_backfill | 2 |
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | issue-openclaw-openclaw-112625 | MERGEABLE | BEHIND | SKIPPED:51 SUCCESS:81 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | issue-openclaw-openclaw-112625 | MERGEABLE | BEHIND | CANCELLED:1 SUCCESS:70 SKIPPED:38 IN_PROGRESS:8 NEUTRAL:1; blockers:9 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-6:IN_PROGRESS; CI / checks-node-compact-large-7:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | issue-openclaw-openclaw-89430 | MERGEABLE | BEHIND | SKIPPED:40 SUCCESS:72 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119717](https://github.com/openclaw/openclaw/pull/119717) | fix(telegram): prioritize configured commands in capped menus | issue-openclaw-openclaw-89252 | MERGEABLE | BEHIND | SKIPPED:39 SUCCESS:75 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | issue-openclaw-openclaw-119692 | MERGEABLE | BEHIND | SKIPPED:26 SUCCESS:80 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |

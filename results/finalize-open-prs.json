@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T19:34:27.499Z",
+  "generated_at": "2026-08-05T20:00:53.172Z",
   "count": 12,
   "summary": {
     "open_prs": 12,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 9,
     "needs_review": 0,
     "needs_merge_preflight": 12,
     "needs_result_backfill": 2
@@ -31,22 +31,34 @@
       "title": "fix(uninstall): remove owned shell completion registrations with state",
       "url": "https://github.com/openclaw/openclaw/pull/119722",
       "branch": "clawsweeper/issue-openclaw-openclaw-112625",
-      "head_sha": "427b8af60ae3e76d90fc83d8616d8acdd355610f",
+      "head_sha": "3b0215bbfcac6992c10e96858942f7830159b042",
       "cluster_id": "issue-openclaw-openclaw-112625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-112625.md",
-      "updated_at": "2026-08-05T19:33:17Z",
+      "updated_at": "2026-08-05T19:52:52Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 133,
+        "total": 118,
         "counts": {
-          "SKIPPED": 51,
-          "SUCCESS": 81,
+          "CANCELLED": 1,
+          "SUCCESS": 70,
+          "SKIPPED": 38,
+          "IN_PROGRESS": 8,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -60,24 +72,25 @@
           {
             "source": "comment",
             "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196346698",
-            "submitted_at": "2026-08-05T19:26:55Z"
+            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
+            "submitted_at": "2026-08-05T19:33:37Z"
           },
           {
             "source": "comment",
             "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
-            "submitted_at": "2026-08-05T19:33:37Z"
+            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196427869",
+            "submitted_at": "2026-08-05T19:34:39Z"
           }
         ]
       },
       "latest_record": null,
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-6:IN_PROGRESS; CI / checks-node-compact-large-7:IN_PROGRESS",
         "needs_merge_preflight",
         "needs_result_backfill"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119718,

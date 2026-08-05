@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-81355",
+  "mode": "autonomous",
+  "run_id": "31035470296",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31035470296",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-81355.md",
+  "published_at": "2026-08-05T19:59:05.760Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/81355",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/81355",
+  "canonical_pr": null,
+  "summary": "#81355 remains valid on main. The merged #89978 covers only plugin auto-enable work; current `tts.status` still performs synchronous preference/provider work before its first yield and repeats provider discovery/configuration checks. A narrow new PR is warranted.",
+  "actions": [
+    {
+      "target": "#81355",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#81355",
+      "candidate_fix": null,
+      "reason": "Implement a current-main TTS status snapshot path that prepares preferences and provider facts once, yields before diagnostics, and preserves the existing response shape."
+    },
+    {
+      "target": "#89978",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#81355",
+      "candidate_fix": null,
+      "reason": "Already merged historical context; no mutation is valid."
+    },
+    {
+      "target": "#93868",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#81355",
+      "candidate_fix": null,
+      "reason": "Closed, unmerged historical candidate; retain as credited context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-81355",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#81355",
+      "candidate_fix": null,
+      "reason": "Create one current-main PR on clawsweeper/issue-openclaw-openclaw-81355; do not revive the closed contributor branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#81355",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
