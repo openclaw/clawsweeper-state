@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119581",
+  "mode": "autonomous",
+  "run_id": "31000202378",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31000202378",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119581.md",
+  "published_at": "2026-08-05T11:41:51.844Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119581",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119581",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main 80da61668eb6445d6430a8513301c222d820c9c0: the root-help identity resolver accepts the first root-help filename without verifying its required outputRootHelp export, causing the source fallback. A narrow new fix PR is warranted; no local changes were made because this worker checkout is read-only.",
+  "actions": [
+    {
+      "target": "#119581",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119581",
+      "candidate_fix": null,
+      "reason": "Current main still has the reported build-time selection defect. The canonical fix is a focused replacement PR from clawsweeper/issue-openclaw-openclaw-119581."
+    },
+    {
+      "target": "#114067",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119581",
+      "candidate_fix": null,
+      "reason": "Related root-help behavior, but a different root cause and validation path; leave it open independently."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119581",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119581",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR; preserve the existing fallback for genuinely missing or broken renderers."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119590",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119581",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119590",
+      "commit": "9b2b77d3d12de18f34f52d03633f93bdb2211c58",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119581",
+      "pr": "https://github.com/openclaw/openclaw/pull/119590",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119590",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119590",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(build): select the root-help bundle that exports outputRootHelp",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
