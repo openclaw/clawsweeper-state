@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119484",
+  "mode": "autonomous",
+  "run_id": "30981917516",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30981917516",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119484.md",
+  "published_at": "2026-08-05T06:50:01.100Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119484",
+  "canonical_pr": null,
+  "summary": "#119484 is a reproducible current-main bug. A narrow new-fix-PR artifact is ready, but this worker cannot modify the read-only checkout or run the required write-producing/Windows validation.",
+  "actions": [
+    {
+      "target": "#119484",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119484",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only filesystem sandbox. The deterministic executor should apply the attached new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-119484."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119484",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Ready for the executor to implement, validate, label, and open the single credited fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
