@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:05:19.484Z",
+  "updated_at": "2026-08-05T12:05:29.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119238:5182977511:2026-08-04T18:21:33Z:re_review",
-      "comment_id": "5182977511",
-      "comment_version_key": "5182977511:2026-08-04T18:21:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119238#issuecomment-5182977511",
-      "comment_created_at": "2026-08-04T18:21:33Z",
-      "comment_updated_at": "2026-08-04T18:21:33Z",
-      "comment_body_sha256": "23d2e7e41ad570e3da33ac6828a4e797e9810cd782ccf123b3815e09946df564",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119238,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:25:45.227Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119238:5183387771:2026-08-04T19:01:24Z:re_review",
       "comment_id": "5183387771",
@@ -32389,6 +32362,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119178:5177561276:2026-08-05T12:02:27Z:clawsweeper_needs_human",
+      "comment_id": "5177561276",
+      "comment_version_key": "5177561276:2026-08-05T12:02:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119178#issuecomment-5177561276",
+      "comment_created_at": "2026-08-04T10:09:49Z",
+      "comment_updated_at": "2026-08-05T12:02:27Z",
+      "comment_body_sha256": "2289969e3cabda9970e43c3dbcaef406ea7896cca4f5dfdc94a69e43fd2494fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a clean but behind branch; refresh required checks if current-main integration changes the exact head before landing. (sha=e6c65c97871f4cd2f62731fa0e8a82354fcbb89f)",
+      "expected_head_sha": "e6c65c97871f4cd2f62731fa0e8a82354fcbb89f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:05:29.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/taskflow-skills-removed-alias",
+        "head_sha": "e6c65c97871f4cd2f62731fa0e8a82354fcbb89f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
