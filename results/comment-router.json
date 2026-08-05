@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:24:12.110Z",
+  "updated_at": "2026-08-05T16:24:14.390Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:57:5120620103:2026-08-05T13:01:42Z:clawsweeper_needs_human",
-      "comment_id": "5120620103",
-      "comment_version_key": "5120620103:2026-08-05T13:01:42Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/57#issuecomment-5120620103",
-      "comment_created_at": "2026-07-29T16:25:46Z",
-      "comment_updated_at": "2026-08-05T13:01:42Z",
-      "comment_body_sha256": "0801862409a1282863193742d615d89611ae6cdff60ead2bc1b13ae699a4d5c6",
-      "repo": "openclaw/shellbench",
-      "issue_number": 57,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Define trust for remote npm tarballs** - The hash verifies that the selected bytes arrived intact, but it does not establish a trusted producer. npm installation can execute package lif...; Review finding: [medium] Define trust for remote npm tarballs — scripts/native_eval/bootstrap_beast.sh:95 (sha=3da8ec53b7964b64469dafd3090abcf318d942c8)",
-      "expected_head_sha": "3da8ec53b7964b64469dafd3090abcf318d942c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:02:27.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openclaw-candidate-artifacts",
-        "head_sha": "3da8ec53b7964b64469dafd3090abcf318d942c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3396:5186726387:2026-08-05T13:01:48Z:clawsweeper_auto_repair",
       "comment_id": "5186726387",
@@ -32127,6 +32094,54 @@
       "status": "skipped",
       "processed_at": "2026-08-05T16:24:12.110Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116793:5194410023:2026-08-05T16:23:13Z:re_review",
+      "comment_id": "5194410023",
+      "comment_version_key": "5194410023:2026-08-05T16:23:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5194410023",
+      "comment_created_at": "2026-08-05T16:23:13Z",
+      "comment_updated_at": "2026-08-05T16:23:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "f56df5c0-90e9-11f1-9743-69b94aa9ddd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116793,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:24:12.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-2-attribution",
+        "head_sha": "d2e463e30a00ce0489cee646b7e070bdd7641e5e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
