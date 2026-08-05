@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T21:35:10.565Z",
+  "updated_at": "2026-08-05T21:35:11.553Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119664:5194442943:2026-08-05T16:26:14Z:clawsweeper_auto_repair",
-      "comment_id": "5194442943",
-      "comment_version_key": "5194442943:2026-08-05T16:26:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119664#issuecomment-5194442943",
-      "comment_created_at": "2026-08-05T16:26:14Z",
-      "comment_updated_at": "2026-08-05T16:26:14Z",
-      "comment_body_sha256": "47a6764b1d6ef60ac06e58faae1587f2154380282007b6483294081cfe824737",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=26e55db59bfec7790b2cb5defcb414cab2c9a7fb)",
-      "expected_head_sha": "26e55db59bfec7790b2cb5defcb414cab2c9a7fb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:27:09.410Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ship-sandbox-setup-scripts",
-        "head_sha": "26e55db59bfec7790b2cb5defcb414cab2c9a7fb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:2873:4808388313:2026-08-05T16:23:43Z:clawsweeper_needs_human",
       "comment_id": "4808388313",
@@ -32544,6 +32511,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111628:5018464177:2026-08-05T21:31:50Z:clawsweeper_needs_human",
+      "comment_id": "5018464177",
+      "comment_version_key": "5018464177:2026-08-05T21:31:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111628#issuecomment-5018464177",
+      "comment_created_at": "2026-07-20T03:21:22Z",
+      "comment_updated_at": "2026-08-05T21:31:50Z",
+      "comment_body_sha256": "1a07324a339f650da1ff19d2758bf2c142c54200304f1bd8ec6ff2e8aca3e2d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111628,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch’s ACPX 0.12.0 proof does not establish that ACPX 0.13.0 consumes the persisted reset marker after restart. (sha=29edecef791ed29be75920975a69c5895c21baf7)",
+      "expected_head_sha": "29edecef791ed29be75920975a69c5895c21baf7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T21:35:11.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-close-discard-acpx-resume",
+        "head_sha": "29edecef791ed29be75920975a69c5895c21baf7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
