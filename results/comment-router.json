@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:35:11.348Z",
+  "updated_at": "2026-08-05T23:37:54.205Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-03T21:01:12Z:clawsweeper_auto_merge",
-      "comment_id": "5154331249",
-      "comment_version_key": "5154331249:2026-08-03T21:01:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
-      "comment_created_at": "2026-08-02T01:05:01Z",
-      "comment_updated_at": "2026-08-03T21:01:12Z",
-      "comment_body_sha256": "24a81733d119435f3411b760ca3f678acd03410d5100e1138339f1d4ca45bf32",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117721,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=e92f3b61d62e2cbd2002ed17fad903e7267511c3)",
-      "expected_head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-05T17:36:51.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-88079",
-        "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
-        "cluster_id": "automerge-openclaw-openclaw-117721",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117721.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-08-05T05:17:03Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -33176,6 +33143,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112283:5198609183:2026-08-05T23:37:09Z:re_review",
+      "comment_id": "5198609183",
+      "comment_version_key": "5198609183:2026-08-05T23:37:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112283#issuecomment-5198609183",
+      "comment_created_at": "2026-08-05T23:37:09Z",
+      "comment_updated_at": "2026-08-05T23:37:09Z",
+      "comment_body_sha256": "cbeaaa36e61f284902acdc336a281da88645f4331d6aca6052cce260005f35d6",
+      "source_delivery_id": "93bf2b40-9126-11f1-809c-9ff8225b62a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112283,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T23:37:51.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/otel-harness-run-adopt-diagnostic-trace",
+        "head_sha": "510ba03ced014926844d4dac40884f671a1b8b38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
