@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:26:28.759Z",
+  "updated_at": "2026-08-05T11:26:32.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-05T08:01:16Z:clawsweeper_needs_human",
-      "comment_id": "5121262567",
-      "comment_version_key": "5121262567:2026-08-05T08:01:16Z",
-      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
-      "comment_created_at": "2026-07-29T17:24:33Z",
-      "comment_updated_at": "2026-08-05T08:01:16Z",
-      "comment_body_sha256": "572797fe8083456fab5392f5b064d49437fc4a06e81b7bff6ec7ae6f74297925",
-      "repo": "openclaw/libterminal",
-      "issue_number": 43,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the v11 action before scheduled write-token execution** - The new pinned Action release will label and close repository items on the scheduled workflow; CI does not demonstrate i...; Review finding: [medium] Review the v11 action before scheduled write-token execution — .github/workflows/stale.yml:19 (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
-      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:02:22.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions/stale-11.0.0",
-        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T08:00:59Z:clawsweeper_needs_human",
       "comment_id": "5187769266",
@@ -32297,6 +32264,54 @@
         "kind": "pull_request",
         "branch": "fix/compaction-summary-output-cap-119404",
         "head_sha": "ecd6b4a62961359ad38500b861e65671747c2f82",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119523:5191127002:2026-08-05T11:25:53Z:re_review",
+      "comment_id": "5191127002",
+      "comment_version_key": "5191127002:2026-08-05T11:25:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119523#issuecomment-5191127002",
+      "comment_created_at": "2026-08-05T11:25:53Z",
+      "comment_updated_at": "2026-08-05T11:25:53Z",
+      "comment_body_sha256": "3169d486ed39daa16e299dda661ad5f51d850317e6db1151a6361523af43e948",
+      "source_delivery_id": "6c1a75b0-90c0-11f1-8570-ce616e236bd2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119523,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof and ci status evidence were added to the pr body and the `real behavior proof` check is passing; the latest review predates that evidence update",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:26:29.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-lid-inbound-peer-119475",
+        "head_sha": "435795a7ffbe05a78a31a133cebab994dac71d2f",
         "cluster_id": null,
         "job_path": null
       },
