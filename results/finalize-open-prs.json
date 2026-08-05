@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T23:11:23.095Z",
+  "generated_at": "2026-08-05T23:17:10.581Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 12,
+    "needs_checks": 13,
     "needs_review": 0,
     "needs_merge_preflight": 15,
     "needs_result_backfill": 0
@@ -114,22 +114,34 @@
       "title": "fix(whatsapp): refresh activity for pending inbound work",
       "url": "https://github.com/openclaw/openclaw/pull/119735",
       "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-      "head_sha": "f90a1a274bd7a439e6b68190eda2ce743396b954",
+      "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
       "cluster_id": "issue-openclaw-openclaw-114169",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
-      "updated_at": "2026-08-05T23:02:48Z",
+      "updated_at": "2026-08-05T23:10:03Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 126,
+        "total": 112,
         "counts": {
-          "SKIPPED": 52,
-          "SUCCESS": 73,
+          "CANCELLED": 1,
+          "SKIPPED": 40,
+          "SUCCESS": 62,
+          "IN_PROGRESS": 8,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -172,9 +184,10 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-large-6:IN_PROGRESS; CI / checks-node-compact-large-7:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119731,
