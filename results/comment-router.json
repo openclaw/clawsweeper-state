@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-05T09:45:43.477Z",
+  "updated_at": "2026-08-05T09:45:42.044Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80204:5187312485:2026-08-05T03:49:38Z:re_review",
+      "comment_id": "5187312485",
+      "comment_version_key": "5187312485:2026-08-05T03:49:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80204#issuecomment-5187312485",
+      "comment_created_at": "2026-08-05T03:49:38Z",
+      "comment_updated_at": "2026-08-05T03:49:38Z",
+      "comment_body_sha256": "7a8740a0775fd6178ee5f3708ab1a9ce1dd426155dd5837284469e81a712f7a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80204,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T04:12:24.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-bootstrap-tls-fingerprint",
+        "head_sha": "77e5621398572bf4e94a7decaeb1d832178c2a6b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80204:4414957079:2026-08-05T04:08:08Z:clawsweeper_needs_human",
       "comment_id": "4414957079",
@@ -33199,39 +33246,6 @@
         "kind": "pull_request",
         "branch": "fix/session-viewer-invalid-timestamp",
         "head_sha": "2212df7c590a73ec062f19e212c4b77a720eead1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1076:5160275971:2026-08-05T09:44:50Z:clawsweeper_needs_human",
-      "comment_id": "5160275971",
-      "comment_version_key": "5160275971:2026-08-05T09:44:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1076#issuecomment-5160275971",
-      "comment_created_at": "2026-08-02T20:49:05Z",
-      "comment_updated_at": "2026-08-05T09:44:50Z",
-      "comment_body_sha256": "90dd558efbe463c2c36f1a7fa3c2fa28a98b9ecbfdb354834ec0b2014176a796",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1076,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Refresh proof for the final handshake changes (P1)** - This artifact still identifies b7c2a9f as the tested head, but 976b903 later adds the node pre-auth gate, hello correlation, and validation reauthorization....; Review finding: [P1] Refresh proof for the final handshake changes — docs/proof/pr1076/proof-summary.json:2 - [medium] Current proof predates final credential guards — docs/proof/... (sha=31e156399778be8200f717b59c03d103927db68d)",
-      "expected_head_sha": "31e156399778be8200f717b59c03d103927db68d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T09:45:43.476Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-connection-analysis",
-        "head_sha": "31e156399778be8200f717b59c03d103927db68d",
         "cluster_id": null,
         "job_path": null
       }
