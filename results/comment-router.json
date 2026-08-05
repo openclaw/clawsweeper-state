@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T20:35:57.182Z",
+  "updated_at": "2026-08-05T20:36:01.678Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116404:5131676270:2026-08-05T16:05:51Z:clawsweeper_auto_repair",
-      "comment_id": "5131676270",
-      "comment_version_key": "5131676270:2026-08-05T16:05:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116404#issuecomment-5131676270",
-      "comment_created_at": "2026-07-30T13:50:12Z",
-      "comment_updated_at": "2026-08-05T16:05:51Z",
-      "comment_body_sha256": "c973751d11e037db0fbd74fadee15445b669636cc38590c31f2148b39039f0b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7f7895831d498d622d683032e812a8c98fee0983)",
-      "expected_head_sha": "7f7895831d498d622d683032e812a8c98fee0983",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:18:23.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-pr/100778-preflight-compaction-transient-skip",
-        "head_sha": "7f7895831d498d622d683032e812a8c98fee0983",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116511:5134705194:2026-08-05T16:10:08Z:clawsweeper_auto_repair",
       "comment_id": "5134705194",
@@ -32376,6 +32343,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114636:5197038832:2026-08-05T20:35:21Z:re_review",
+      "comment_id": "5197038832",
+      "comment_version_key": "5197038832:2026-08-05T20:35:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114636#issuecomment-5197038832",
+      "comment_created_at": "2026-08-05T20:35:21Z",
+      "comment_updated_at": "2026-08-05T20:35:21Z",
+      "comment_body_sha256": "e1f76ab536d02ee7b531d98687dc447fe49d989fafd438df05f484796b2e8fa9",
+      "source_delivery_id": "2e1b00c0-910d-11f1-8966-27dbdf389f73",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114636,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 2b1b62d52f60038e74737e5ddefeab8159e0f1ea",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T20:35:59.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/hosting-profile-conformance-artifact",
+        "head_sha": "2b1b62d52f60038e74737e5ddefeab8159e0f1ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
