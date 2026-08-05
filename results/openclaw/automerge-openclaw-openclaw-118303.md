@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118303"
-mode: "autonomous"
-run_id: "31004274359"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31004274359"
+mode: "plan"
+run_id: "31008298774"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31008298774"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T12:37:32.402Z"
+published_at: "2026-08-05T13:10:05.889Z"
 canonical: "#118303"
-canonical_issue: null
+canonical_issue: "#116601"
 canonical_pr: "#118303"
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31004274359](https://github.com/openclaw/clawsweeper/actions/runs/31004274359)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31008298774](https://github.com/openclaw/clawsweeper/actions/runs/31008298774)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #118303
 
 ## Summary
 
-Make PR #118303 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Keep #116601 open as the canonical report and repair #118303 on its contributor branch. Current main still advertises M3 image input; the candidate needs both alias-aware MiniMax Doctor migration and scoped Doctor-contract loading for manifest provider-auth aliases.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #118303 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118303 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #64244 | keep_closed | skipped | related | Already closed; no mutation. |
+| #116601 | keep_canonical | planned | canonical | Canonical issue remains open until the repaired candidate is independently validated. |
+| #118303 | fix_needed | planned | canonical | Repair the existing same-repository writable branch; do not merge in autofix mode. |
 
 ## Needs Human
 
