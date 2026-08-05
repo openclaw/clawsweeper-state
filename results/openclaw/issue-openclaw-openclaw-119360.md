@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119360"
 mode: "autonomous"
-run_id: "30980644441"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30980644441"
+run_id: "30989751964"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30989751964"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-05T08:15:23.930Z"
-canonical: "#119360"
-canonical_issue: "#119360"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-05T08:45:15.500Z"
+canonical: "https://github.com/openclaw/openclaw/issues/119360"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/119360"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-119360
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30980644441](https://github.com/openclaw/clawsweeper/actions/runs/30980644441)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30989751964](https://github.com/openclaw/clawsweeper/actions/runs/30989751964)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: #119360
+Canonical: https://github.com/openclaw/openclaw/issues/119360
 
 ## Summary
 
-Confirmed #119360 on current main: B→A is replanned before debt reconciliation, while deferred B overwrites the only accepted-target state. A writable checkout is required to add the narrow repair, regression, and PR.
+Current main reproduces the lifecycle defect by inspection: a deferred restart candidate advances the reload comparison baseline before the runtime restarts, so an exact revert is misclassified as another restart. Create one narrow fix PR with an A→B→A active-work regression.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,10 @@ Confirmed #119360 on current main: B→A is replanned before debt reconciliation
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119360 | build_fix_artifact | blocked | canonical | The environment blocks filesystem writes, so the required code/test delta and PR branch cannot be produced. |
-| #98436 | keep_related | planned | related | Shared coordinator area, distinct root cause and product scope. |
+| #119360 | fix_needed | planned | canonical | The restart baseline must remain the authoritative applied A until the deferred B restart actually emits; this is a narrow existing-behavior repair. |
+| #98436 | keep_related | planned | related | Keep open independently; no duplicate or closure action is appropriate. |
+| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | No viable contributor PR exists; the configured ClawSweeper branch should carry one narrow fix PR. |
 
 ## Needs Human
 
-- Provide a writable repair executor/checkout with dependencies available to implement and validate the planned new fix PR.
+- none

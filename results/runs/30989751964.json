@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119360",
+  "mode": "autonomous",
+  "run_id": "30989751964",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30989751964",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119360.md",
+  "published_at": "2026-08-05T08:45:15.500Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the lifecycle defect by inspection: a deferred restart candidate advances the reload comparison baseline before the runtime restarts, so an exact revert is misclassified as another restart. Create one narrow fix PR with an A→B→A active-work regression.",
+  "actions": [
+    {
+      "target": "#119360",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "The restart baseline must remain the authoritative applied A until the deferred B restart actually emits; this is a narrow existing-behavior repair."
+    },
+    {
+      "target": "#98436",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Keep open independently; no duplicate or closure action is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119360",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "No viable contributor PR exists; the configured ClawSweeper branch should carry one narrow fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
