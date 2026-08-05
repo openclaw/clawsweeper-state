@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T21:13:17.679Z",
+  "generated_at": "2026-08-05T21:08:39.535Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 11,
     "needs_review": 0,
     "needs_merge_preflight": 15,
     "needs_result_backfill": 0
@@ -40,13 +40,19 @@
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 101,
+        "total": 99,
         "counts": {
-          "SKIPPED": 39,
-          "SUCCESS": 61,
+          "SKIPPED": 38,
+          "SUCCESS": 56,
+          "IN_PROGRESS": 4,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -59,32 +65,19 @@
         "latest": []
       },
       "latest_record": {
-        "run_id": "31045057114",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31045057114",
+        "run_id": "31008717397",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31008717397",
         "cluster_id": "issue-openclaw-openclaw-96692",
-        "published_at": "2026-08-05T21:12:42.233Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119737",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(slack): require confirmed thread placement for terminal receipts",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
+        "published_at": "2026-08-05T13:49:28.114Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / check-sqlite-session-flip-proof:IN_PROGRESS; CI / check-additional-extension-package-boundary:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119735,
@@ -154,7 +147,7 @@
       "head_sha": "accec47835415908ba8b5fc7aa09e1ef0da87824",
       "cluster_id": "issue-openclaw-openclaw-57148",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
-      "updated_at": "2026-08-05T21:09:20Z",
+      "updated_at": "2026-08-05T20:26:03Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -214,21 +207,23 @@
       "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
       "cluster_id": "issue-openclaw-openclaw-112625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-112625.md",
-      "updated_at": "2026-08-05T21:08:31Z",
+      "updated_at": "2026-08-05T20:58:35Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 118,
         "counts": {
           "CANCELLED": 1,
-          "SUCCESS": 79,
-          "SKIPPED": 39,
+          "SUCCESS": 77,
+          "SKIPPED": 38,
+          "IN_PROGRESS": 1,
           "NEUTRAL": 1
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / checks-node-compact-small-6:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -278,7 +273,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / checks-node-compact-small-6:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
