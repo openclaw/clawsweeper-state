@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:30:37.508Z",
+  "updated_at": "2026-08-05T13:00:32.380Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100511:4888270064:2026-08-05T08:02:59Z:clawsweeper_needs_human",
-      "comment_id": "4888270064",
-      "comment_version_key": "4888270064:2026-08-05T08:02:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100511#issuecomment-4888270064",
-      "comment_created_at": "2026-07-06T00:59:34Z",
-      "comment_updated_at": "2026-08-05T08:02:59Z",
-      "comment_body_sha256": "d5a81cf7e36e12f26e8c994da3f9a76dde6ad5457176afdeb4e798cd402ea1e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Honor the blocked-work grace before aborting (P1)** - This timer aborts unconditionally after noOutputTimeoutMs, although current main deliberately gives quiet active tools and result-holding background tasks th...; Review finding: [P1] Honor the blocked-work grace before aborting — src/agents/cli-runner/claude-live-session.ts:787-797 - [medium] Do not time out already-started quiet tool work... (sha=e6a08148e94daf29e5a1a723027f4105735ec38b)",
-      "expected_head_sha": "e6a08148e94daf29e5a1a723027f4105735ec38b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T09:47:00.103Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-timeout-stall",
-        "head_sha": "e6a08148e94daf29e5a1a723027f4105735ec38b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103711:4936233005:2026-08-05T08:41:05Z:clawsweeper_needs_human",
       "comment_id": "4936233005",
@@ -31601,6 +31568,54 @@
       "status": "skipped",
       "processed_at": "2026-08-05T12:30:37.508Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119237:5192020744:2026-08-05T12:58:29Z:re_review",
+      "comment_id": "5192020744",
+      "comment_version_key": "5192020744:2026-08-05T12:58:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119237#issuecomment-5192020744",
+      "comment_created_at": "2026-08-05T12:58:29Z",
+      "comment_updated_at": "2026-08-05T12:58:29Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "5bde3260-90cd-11f1-8815-c8e845540310",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119237,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T13:00:30.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/code-mode-execution-accounting-stack-20260804",
+        "head_sha": "092dabcce302def8342821444c30fdcff6086053",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
