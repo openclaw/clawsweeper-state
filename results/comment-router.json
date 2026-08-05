@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T08:04:06.538Z",
+  "updated_at": "2026-08-05T08:04:13.900Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103371:5187036782:2026-08-05T03:02:12Z:re_review",
-      "comment_id": "5187036782",
-      "comment_version_key": "5187036782:2026-08-05T03:02:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103371#issuecomment-5187036782",
-      "comment_created_at": "2026-08-05T03:02:12Z",
-      "comment_updated_at": "2026-08-05T03:02:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "0ec7c8e0-907a-11f1-8700-11ee07250e80",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103371,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T03:02:49.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/qqbot-own-credential-entries",
-        "head_sha": "49a405a9c7a1f954cd4ef07b9256ef8e7c8629f2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3380:5186724657:2026-08-05T03:03:22Z:clawsweeper_needs_human",
       "comment_id": "5186724657",
@@ -32820,6 +32772,39 @@
         "kind": "pull_request",
         "branch": "fix/control-ui-cookie-origin-check",
         "head_sha": "1980f0bf72ffd47cb0622a54849c6c75518bb088",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:132:5168142459:2026-08-05T08:02:08Z:clawsweeper_needs_human",
+      "comment_id": "5168142459",
+      "comment_version_key": "5168142459:2026-08-05T08:02:08Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5168142459",
+      "comment_created_at": "2026-08-03T15:07:17Z",
+      "comment_updated_at": "2026-08-05T08:02:08Z",
+      "comment_body_sha256": "643ae5ae923a466189485466cf00a6e9775583f0af9bfb84dcdcedf913e22f8d",
+      "repo": "openclaw/lobster",
+      "issue_number": 132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A host adapter that ignores ctx.signal can continue its already-started model request after Lobster stops waiting, so retries may overlap billed work; the PR documents this cooperativ... (sha=bdcceb1f662051ed1b7a1f872efcfaa81e519826)",
+      "expected_head_sha": "bdcceb1f662051ed1b7a1f872efcfaa81e519826",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T08:04:13.900Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-invoke-honor-abort-signal",
+        "head_sha": "bdcceb1f662051ed1b7a1f872efcfaa81e519826",
         "cluster_id": null,
         "job_path": null
       }
