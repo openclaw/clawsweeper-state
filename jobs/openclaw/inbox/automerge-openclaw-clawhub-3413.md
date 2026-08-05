@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-clawhub-3413
 source: pr_automerge
 requested_by: "Patrick-Erichsen"
 requested_by_id: "20157849"
-request_comment_url: "https://github.com/openclaw/clawhub/pull/3413#issuecomment-5194676704"
+request_comment_url: "https://github.com/openclaw/clawhub/pull/3413#issuecomment-5194880048"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/clawhub/pull/3413#issuecomment
 Maintainer opted #3413 into ClawSweeper automerge.
 
 Requested by: Patrick-Erichsen
-Request comment: https://github.com/openclaw/clawhub/pull/3413#issuecomment-5194676704
+Request comment: https://github.com/openclaw/clawhub/pull/3413#issuecomment-5194880048
 
 
 Source PR: https://github.com/openclaw/clawhub/pull/3413
