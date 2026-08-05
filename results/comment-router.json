@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T17:32:57.756Z",
+  "updated_at": "2026-08-05T17:33:28.730Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118067:5192329844:2026-08-05T13:27:12Z:re_review",
-      "comment_id": "5192329844",
-      "comment_version_key": "5192329844:2026-08-05T13:27:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5192329844",
-      "comment_created_at": "2026-08-05T13:27:12Z",
-      "comment_updated_at": "2026-08-05T13:27:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "5eb857a0-90d1-11f1-938f-f7251677c838",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T13:27:46.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-provider-endpoint-runtime",
-        "head_sha": "af71f68687ac592c2f1f5982b843183ca31e11e6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113366:5072128959:2026-08-05T13:26:36Z:clawsweeper_auto_repair",
       "comment_id": "5072128959",
@@ -32265,6 +32217,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T17:32:57.756Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:123:5195135170:2026-08-05T17:32:54Z:clawsweeper_needs_human",
+      "comment_id": "5195135170",
+      "comment_version_key": "5195135170:2026-08-05T17:32:54Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/123#issuecomment-5195135170",
+      "comment_created_at": "2026-08-05T17:32:54Z",
+      "comment_updated_at": "2026-08-05T17:32:54Z",
+      "comment_body_sha256": "9653769892410790ca848c05e529a062dd873eb86a4c456cbaf5d3d24c680b65",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 123,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement action code runs in CI and release jobs, including a publish job with OIDC permission; merge should wait for the remaining Windows and Cargo checks and retain the full... (sha=0b47c6812682bd6be7eee5f84f8e9d21c38f2f41)",
+      "expected_head_sha": "0b47c6812682bd6be7eee5f84f8e9d21c38f2f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T17:33:28.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-a9bcc878af",
+        "head_sha": "0b47c6812682bd6be7eee5f84f8e9d21c38f2f41",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
