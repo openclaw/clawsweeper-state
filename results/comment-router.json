@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:36:01.270Z",
+  "updated_at": "2026-08-05T10:36:01.811Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:81818:5187907261:2026-08-05T05:26:05Z:re_review",
-      "comment_id": "5187907261",
-      "comment_version_key": "5187907261:2026-08-05T05:26:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/81818#issuecomment-5187907261",
-      "comment_created_at": "2026-08-05T05:26:05Z",
-      "comment_updated_at": "2026-08-05T05:26:05Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "27fdb450-908e-11f1-9cb6-1c6a59f3eb6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 81818,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:26:41.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "af/cap-skill-download-size",
-        "head_sha": "e3320ba98cfc6b3772162ecadb56c80c28850c4f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:95830:5187909728:2026-08-05T05:26:26Z:re_review",
       "comment_id": "5187909728",
@@ -33718,6 +33670,39 @@
         "kind": "pull_request",
         "branch": "fix/bedrock-reasoning-off-maxtokens-119148",
         "head_sha": "7f4911252050b2aab14ae02be8ddce3915d98a23",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:468:5121122986:2026-08-05T10:35:05Z:clawsweeper_needs_human",
+      "comment_id": "5121122986",
+      "comment_version_key": "5121122986:2026-08-05T10:35:05Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/468#issuecomment-5121122986",
+      "comment_created_at": "2026-07-29T17:12:36Z",
+      "comment_updated_at": "2026-08-05T10:35:05Z",
+      "comment_body_sha256": "d57bf28e24578cfd70bef967f469a4108a30155538571a5358185e879b9d3cfb",
+      "repo": "openclaw/acpx",
+      "issue_number": 468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging makes the optional field and callback-first fallback ordering a long-term public embedded-runtime contract, so its API boundary needs explicit sponsorship. (sha=e91cc50439e7ed58845fca82e23c72dcaaf7fd8a)",
+      "expected_head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:36:01.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/runtime-permission-policy",
+        "head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
         "cluster_id": null,
         "job_path": null
       }
