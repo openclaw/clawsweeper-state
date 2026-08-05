@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:02:48.472Z",
+  "updated_at": "2026-08-05T00:05:19.719Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119307:5183697851:2026-08-04T19:32:52Z:re_review",
-      "comment_id": "5183697851",
-      "comment_version_key": "5183697851:2026-08-04T19:32:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119307#issuecomment-5183697851",
-      "comment_created_at": "2026-08-04T19:32:52Z",
-      "comment_updated_at": "2026-08-04T19:32:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119307,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T20:01:32.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-boundary-recorder-identity-20260804",
-        "head_sha": "84146a503630d29281a3e42e9792356768f8a66b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110580:5183705098:2026-08-04T19:33:36Z:re_review",
       "comment_id": "5183705098",
@@ -32036,6 +31989,39 @@
         "kind": "pull_request",
         "branch": "docs/implicit-mentions-supported-channels",
         "head_sha": "da90a88bcc24084b33d1f020db451957838ed311",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1071:5135267678:2026-08-05T00:04:35Z:clawsweeper_needs_human",
+      "comment_id": "5135267678",
+      "comment_version_key": "5135267678:2026-08-05T00:04:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1071#issuecomment-5135267678",
+      "comment_created_at": "2026-07-30T19:19:51Z",
+      "comment_updated_at": "2026-08-05T00:04:35Z",
+      "comment_body_sha256": "a57fde96a64a064d5d4cb5e7563e2d78e9a22b16b9b4ccc9353d027ab0cfcb43",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1071,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked video predates the current head, and the claimed current-head retest has no directly inspectable current-head artifact; add... (sha=31c906917f00b369bde04b928e29d721be7dfd02)",
+      "expected_head_sha": "31c906917f00b369bde04b928e29d721be7dfd02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:05:19.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "calebeden-voice-assistant-v0",
+        "head_sha": "31c906917f00b369bde04b928e29d721be7dfd02",
         "cluster_id": null,
         "job_path": null
       }
