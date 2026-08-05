@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119418",
+  "mode": "autonomous",
+  "run_id": "30971479946",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30971479946",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119418.md",
+  "published_at": "2026-08-05T03:37:17.542Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119418",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119418",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the generic Tool Search decoder defect. A narrow, provider-agnostic fix artifact is ready, but this worker's checkout is read-only and lacks dependencies, so it could not modify or validate the branch locally.",
+  "actions": [
+    {
+      "target": "#119418",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119418",
+      "candidate_fix": null,
+      "reason": "Implementation and focused validation are blocked only by the immutable, dependency-free checkout; the prepared artifact can be applied on clawsweeper/issue-openclaw-openclaw-119418."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119418",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119418",
+      "candidate_fix": null,
+      "reason": "Apply the narrow generic decoder repair and tests on the designated ClawSweeper branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
