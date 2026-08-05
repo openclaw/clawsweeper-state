@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T03:21:11.268Z",
+  "updated_at": "2026-08-05T03:21:14.870Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80204:4414957079:2026-08-05T00:13:06Z:clawsweeper_needs_human",
-      "comment_id": "4414957079",
-      "comment_version_key": "4414957079:2026-08-05T00:13:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80204#issuecomment-4414957079",
-      "comment_created_at": "2026-05-10T09:32:17Z",
-      "comment_updated_at": "2026-08-05T00:13:06Z",
-      "comment_body_sha256": "ee8c2c903506f56c73402a40b93bb471e9f4d6c9ed5b30c17831ef2bcdcc2196",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80204,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes certificate-trust selection; merge only after the remaining exact-head checks complete, since a regression could reject valid local TLS clients or misapply a configured p... (sha=c659021a205fa1e6c9f1ac5a4c8f8f2751d2777c)",
-      "expected_head_sha": "c659021a205fa1e6c9f1ac5a4c8f8f2751d2777c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T00:13:57.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-bootstrap-tls-fingerprint",
-        "head_sha": "c659021a205fa1e6c9f1ac5a4c8f8f2751d2777c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80204:5181343795:2026-08-04T15:42:54Z:re_review",
       "comment_id": "5181343795",
@@ -31789,6 +31756,54 @@
         "kind": "pull_request",
         "branch": "codex/telegram-partial-streaming",
         "head_sha": "cbe8a12becb299612007bb861eec748d1d9da996",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113651:5187149539:2026-08-05T03:20:47Z:re_review",
+      "comment_id": "5187149539",
+      "comment_version_key": "5187149539:2026-08-05T03:20:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113651#issuecomment-5187149539",
+      "comment_created_at": "2026-08-05T03:20:47Z",
+      "comment_updated_at": "2026-08-05T03:20:47Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "a7843580-907c-11f1-9499-5da9e50c551c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113651,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T03:21:12.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-live-openai-provider-proof",
+        "head_sha": "27f3af8edf4bb9c6d07d0f41bafeb1c0572782b7",
         "cluster_id": null,
         "job_path": null
       },
