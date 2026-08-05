@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T02:22:54.486Z",
+  "updated_at": "2026-08-05T02:22:55.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91988:4704070153:2026-06-15T02:49:39Z:re_review",
-      "comment_id": "4704070153",
-      "comment_version_key": "4704070153:2026-06-15T02:49:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91988#issuecomment-4704070153",
-      "comment_created_at": "2026-06-15T02:49:39Z",
-      "comment_updated_at": "2026-06-15T02:49:39Z",
-      "comment_body_sha256": "0e6f55c11ec58b9241cebae2ce243873a99453e001b8dbc9358c512599440fe0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91988,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T23:13:12.760Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:91988:4704194168:2026-06-15T03:20:31Z:re_review",
       "comment_id": "4704194168",
@@ -31306,6 +31279,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T02:22:54.486Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3404:5186715888:2026-08-05T02:22:12Z:clawsweeper_needs_human",
+      "comment_id": "5186715888",
+      "comment_version_key": "5186715888:2026-08-05T02:22:12Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3404#issuecomment-5186715888",
+      "comment_created_at": "2026-08-05T02:08:55Z",
+      "comment_updated_at": "2026-08-05T02:22:12Z",
+      "comment_body_sha256": "dd3bf96d0ab8bb6bb4031d6d248528176a0828aeab34ccb9c95f7e546f8937af",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3404,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If neither configured Barnacle App can mint a repository-scoped token with pull-request write access, a changed updater run will still push its branch before stopping with the new dia... (sha=910af5ccd36bc942ceaaefbf653e8b66b45c734b)",
+      "expected_head_sha": "910af5ccd36bc942ceaaefbf653e8b66b45c734b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T02:22:55.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-updater-app-auth",
+        "head_sha": "910af5ccd36bc942ceaaefbf653e8b66b45c734b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
