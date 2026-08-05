@@ -1,14 +1,14 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-57148"
-mode: "autonomous"
-run_id: "31008823339"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31008823339"
-head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "31013316158"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31013316158"
+head_sha: "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T13:55:18.944Z"
-canonical: "https://github.com/openclaw/openclaw/issues/57148"
+published_at: "2026-08-05T14:14:16.938Z"
+canonical: "#57148"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/57148"
 canonical_pr: null
 actions_total: 3
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31008823339](https://github.com/openclaw/clawsweeper/actions/runs/31008823339)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31013316158](https://github.com/openclaw/clawsweeper/actions/runs/31013316158)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/57148
+Canonical: #57148
 
 ## Summary
 
-#57148 remains a reproducible canonical bug on bf7840f5391a6f329a6be568c5f3f1a94c8dadbe: ordinary subagent completion text is unbounded in protected/native, ACP/plain/transcript, and durable correlated parent delivery. A narrow no-config fix PR is needed; no branch diff exists yet. Closed #73320 is quarantined security context and is not a fix source.
+Pinned main 03a9e022 still injects ordinary subagent completion text without a hard parent-context cap. Plan a narrow new fix PR for canonical issue #57148; quarantine closed security-sensitive PR #73320 without using it as source or attribution.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/57148
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #57148 | fix_needed | planned | canonical | The cap belongs in a separate parent-prompt projection, preserving raw completion state and direct external-message fallback behavior. |
-| #73320 | route_security | planned | security_sensitive | Quarantine this exact closed reference with central OpenClaw security handling while continuing the unrelated non-security repair. |
-| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-57148 after implementing and validating the artifact. |
+| #57148 | fix_needed | planned | canonical | Current main reproduces the canonical issue; no config surface is needed. |
+| #73320 | route_security | planned | security_sensitive | Quarantined closed security context; no mutation or attribution. |
+| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned |  | A narrow, testable fix is available without changing the security or configuration boundary. |
 
 ## Needs Human
 

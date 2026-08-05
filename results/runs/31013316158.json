@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-57148",
+  "mode": "plan",
+  "run_id": "31013316158",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31013316158",
+  "head_sha": "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
+  "published_at": "2026-08-05T14:14:16.938Z",
+  "canonical": "#57148",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/57148",
+  "canonical_pr": null,
+  "summary": "Pinned main 03a9e022 still injects ordinary subagent completion text without a hard parent-context cap. Plan a narrow new fix PR for canonical issue #57148; quarantine closed security-sensitive PR #73320 without using it as source or attribution.",
+  "actions": [
+    {
+      "target": "#57148",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "Current main reproduces the canonical issue; no config surface is needed."
+    },
+    {
+      "target": "#73320",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined closed security context; no mutation or attribution."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-57148",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "A narrow, testable fix is available without changing the security or configuration boundary."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
