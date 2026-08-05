@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119551",
+  "mode": "autonomous",
+  "run_id": "31001802199",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31001802199",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
+  "published_at": "2026-08-05T14:07:56.570Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_pr": null,
+  "summary": "#119551 is the canonical, non-security configured-binding lifecycle bug; #106008 is a related but distinct ACPX spawn-environment feature request. A narrow new-fix-PR artifact is ready, but implementation is blocked in this read-only target checkout.",
+  "actions": [
+    {
+      "target": "#106008",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Related ACP model-routing work remains independently open and must not be folded into this narrow binding-lifecycle repair."
+    },
+    {
+      "target": "#119551",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "The fix is narrow and ready for execution in a writable checkout; this run cannot apply it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119551",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Plan a new narrow fix PR; no GitHub mutation is performed by this worker."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

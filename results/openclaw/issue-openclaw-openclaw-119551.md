@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119551"
 mode: "autonomous"
-run_id: "30996830610"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30996830610"
+run_id: "31001802199"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31001802199"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-05T10:22:57.692Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-05T14:07:56.570Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30996830610](https://github.com/openclaw/clawsweeper/actions/runs/30996830610)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31001802199](https://github.com/openclaw/clawsweeper/actions/runs/31001802199)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 ## Summary
 
-Plan a narrow configured-ACP-binding lifecycle fix for #119551; no security-sensitive signal or viable contributor PR is present.
+#119551 is the canonical, non-security configured-binding lifecycle bug; #106008 is a related but distinct ACPX spawn-environment feature request. A narrow new-fix-PR artifact is ready, but implementation is blocked in this read-only target checkout.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan a narrow configured-ACP-binding lifecycle fix for #119551; no security-sens
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119551 | fix_needed | planned | canonical | Repair the canonical source-reproducible bug with a new narrow fix PR. |
-| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Executable new-fix-PR plan; plan mode makes no repository or GitHub mutations. |
+| #106008 | keep_related | planned | related | Related ACP model-routing work remains independently open and must not be folded into this narrow binding-lifecycle repair. |
+| #119551 | fix_needed | blocked | canonical | The fix is narrow and ready for execution in a writable checkout; this run cannot apply it. |
+| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Plan a new narrow fix PR; no GitHub mutation is performed by this worker. |
 
 ## Needs Human
 
