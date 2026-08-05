@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:27:38.309Z",
+  "updated_at": "2026-08-05T11:28:37.507Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119537:5189203959:2026-08-05T08:03:22Z:clawsweeper_needs_human",
-      "comment_id": "5189203959",
-      "comment_version_key": "5189203959:2026-08-05T08:03:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119537#issuecomment-5189203959",
-      "comment_created_at": "2026-08-05T08:03:22Z",
-      "comment_updated_at": "2026-08-05T08:03:22Z",
-      "comment_body_sha256": "ce08947eb69ff451fa92b3804a2e17cb6814662c3697552805681269c04286ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119537,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports a loopback Vitest transport run, but it provides no redacted live configured-provider or reverse-proxy output showing the after-...; Review finding: [P1] Redact custom configured header secrets — extensions/ollama/src/embedding-provider.ts:440-443 - [P3] Remove the retired log-redaction scenario — extensions/ol... (sha=22b83c635bf8f0f1ac229c81ccc478825bc300c8)",
-      "expected_head_sha": "22b83c635bf8f0f1ac229c81ccc478825bc300c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:04:24.704Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-06-ollama-embedding-error-redaction",
-        "head_sha": "22b83c635bf8f0f1ac229c81ccc478825bc300c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119169:5189215530:2026-08-05T08:04:42Z:re_review",
       "comment_id": "5189215530",
@@ -32422,6 +32389,54 @@
       "status": "skipped",
       "processed_at": "2026-08-05T11:27:38.309Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119574:5191145452:2026-08-05T11:27:58Z:re_review",
+      "comment_id": "5191145452",
+      "comment_version_key": "5191145452:2026-08-05T11:27:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119574#issuecomment-5191145452",
+      "comment_created_at": "2026-08-05T11:27:58Z",
+      "comment_updated_at": "2026-08-05T11:27:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "b6978560-90c0-11f1-9d38-bd3a71fb3e78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119574,
+      "author": "AppleSpriter",
+      "author_id": 26051275,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:28:35.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/assistant-bubble-style",
+        "head_sha": "5ab14ac9650946ff0dcca34b06cc9add37410777",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
