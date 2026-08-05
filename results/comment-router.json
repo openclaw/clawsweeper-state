@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T18:26:34.919Z",
+  "updated_at": "2026-08-05T18:28:14.527Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117305:5150708682:2026-08-05T14:16:57Z:clawsweeper_needs_human",
-      "comment_id": "5150708682",
-      "comment_version_key": "5150708682:2026-08-05T14:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5150708682",
-      "comment_created_at": "2026-08-01T08:52:37Z",
-      "comment_updated_at": "2026-08-05T14:16:57Z",
-      "comment_body_sha256": "95a70d177507b27a42171330ef72bfd5d2b6d868276479496fbf25b325598b48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The redacted real Gateway trace demonstrates an earlier branch state, but later commits changed diagnostics; provide a redacted exact-... (sha=e0d02b4c8e3766a96f6ecea8f56e59becf422a22)",
-      "expected_head_sha": "e0d02b4c8e3766a96f6ecea8f56e59becf422a22",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T14:17:36.493Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-visibility-lookup-failed-114653",
-        "head_sha": "e0d02b4c8e3766a96f6ecea8f56e59becf422a22",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119617:5192622659:2026-08-05T13:51:29Z:re_review",
       "comment_id": "5192622659",
@@ -32446,6 +32413,54 @@
         "kind": "pull_request",
         "branch": "feat/model-here-session-scope",
         "head_sha": "6520c1bafaacc708c95f2fd4813b93d4935e839f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119279:5195687396:2026-08-05T18:27:33Z:re_review",
+      "comment_id": "5195687396",
+      "comment_version_key": "5195687396:2026-08-05T18:27:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119279#issuecomment-5195687396",
+      "comment_created_at": "2026-08-05T18:27:33Z",
+      "comment_updated_at": "2026-08-05T18:27:33Z",
+      "comment_body_sha256": "f1da3bf501e309562ac3a0c6429435146b0d2ca3fe4c344042d043c284ad8cc9",
+      "source_delivery_id": "540598c0-90fb-11f1-8095-14c6b04cbd0b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119279,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — regression coverage added (commit `65cb87cc18e`): the registered offer route is now exercised with an absent runtime config facade. the new test fails against the unguarded `api.runtime.config.current()` with the issue's exact `typeerror: cannot read properties of undefined (reading 'current')` and passes with the fallback (options preflight answered 204 + `access-control-allow-origin` from the registration config's `gateway.controlui.allowedorigins`). `extensions/openai/index.test.ts` 17/17 green on the new head; evidence added to the pr body",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T18:28:12.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-quicksilver-config-fallback-119274",
+        "head_sha": "65cb87cc18e5d26f28ec214d699a69816d51b6ae",
         "cluster_id": null,
         "job_path": null
       },
