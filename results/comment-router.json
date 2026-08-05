@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T09:38:51.231Z",
+  "updated_at": "2026-08-05T09:38:59.422Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:81208:5183725965:2026-08-04T19:35:43Z:re_review",
-      "comment_id": "5183725965",
-      "comment_version_key": "5183725965:2026-08-04T19:35:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/81208#issuecomment-5183725965",
-      "comment_created_at": "2026-08-04T19:35:43Z",
-      "comment_updated_at": "2026-08-04T19:35:43Z",
-      "comment_body_sha256": "1ad091948ecab2ce4816ff9d7c3e7a1d3dd30e7ec31c3d7744a20d23b4e3d943",
-      "repo": "openclaw/openclaw",
-      "issue_number": 81208,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T04:06:42.776Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:81208:5185975329:2026-08-05T00:05:37Z:re_review",
       "comment_id": "5185975329",
@@ -33243,6 +33216,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T09:38:51.231Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T09:38:20Z:clawsweeper_needs_human",
+      "comment_id": "5187769266",
+      "comment_version_key": "5187769266:2026-08-05T09:38:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119482#issuecomment-5187769266",
+      "comment_created_at": "2026-08-05T05:04:33Z",
+      "comment_updated_at": "2026-08-05T09:38:20Z",
+      "comment_body_sha256": "8e8a85c59792c83673ff69fa7f5d8523202c912a21b1725c23060a4e5fdc63c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Doctor --fix can remove stale model references; retaining the default-workspace refresh coverage is important so a valid workspace-owned provider is never classified as unavailable. (sha=72121c42e78a900d15ec3066f31971a29a9a724c)",
+      "expected_head_sha": "72121c42e78a900d15ec3066f31971a29a9a724c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T09:38:59.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-plugin-metadata-context-20260805",
+        "head_sha": "72121c42e78a900d15ec3066f31971a29a9a724c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
