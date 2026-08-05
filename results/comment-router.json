@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T05:01:45.538Z",
+  "updated_at": "2026-08-05T05:01:54.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117400:5152489633:2026-08-01T17:12:09Z:re_review",
-      "comment_id": "5152489633",
-      "comment_version_key": "5152489633:2026-08-01T17:12:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117400#issuecomment-5152489633",
-      "comment_created_at": "2026-08-01T17:12:09Z",
-      "comment_updated_at": "2026-08-01T17:12:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117400,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T01:12:22.130Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117400:5154350467:2026-08-02T01:09:33Z:re_review",
       "comment_id": "5154350467",
@@ -32077,6 +32050,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3266:5186729157:2026-08-05T05:00:57Z:clawsweeper_needs_human",
+      "comment_id": "5186729157",
+      "comment_version_key": "5186729157:2026-08-05T05:00:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3266#issuecomment-5186729157",
+      "comment_created_at": "2026-08-05T02:11:00Z",
+      "comment_updated_at": "2026-08-05T05:00:57Z",
+      "comment_body_sha256": "c31e9eeaca1a1a11f6eb28ca1d69381f21cc078de1f93e5a73ba6274df2b45fe",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports an external scan but has no after-fix macOS run proving EventKit permissions, calendar creation, or idempotent event behavior;...; Review finding: [P1] Honor the documented calendar-name argument — skills/macos-calendar-automation/scripts/create_icloud_cal.swift:4 - [P1] Remove raw Calendar database deletion... (sha=3725ed4f858cc8ac743ef9da9067799359625400)",
+      "expected_head_sha": "3725ed4f858cc8ac743ef9da9067799359625400",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T05:01:54.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-skill-macos-calendar-automation",
+        "head_sha": "3725ed4f858cc8ac743ef9da9067799359625400",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
