@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119385",
+  "mode": "autonomous",
+  "run_id": "30978484256",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30978484256",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "cancelled",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119385.md",
+  "published_at": "2026-08-05T06:23:08.468Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119385",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119385",
+  "canonical_pr": null,
+  "summary": "Current main still loses both child-stream diagnostics on `qa_cli_timeout`. A narrow new PR is warranted; it retains bounded stdout/stderr tails without changing the 60-second limit, process-group termination, or Active Memory migration behavior.",
+  "actions": [
+    {
+      "target": "#119385",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119385",
+      "candidate_fix": null,
+      "reason": "The issue is a reproducible central QA timeout-reporting defect, not yet a proven Active Memory migration defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119385",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119385",
+      "candidate_fix": null,
+      "reason": "Implementation is explicitly delegated to the deterministic PR executor; this read-only checkout cannot create the branch or install missing dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119385",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119385",
+      "candidate_fix": null,
+      "reason": "No existing implementation PR was hydrated; the job authorizes one narrow fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
