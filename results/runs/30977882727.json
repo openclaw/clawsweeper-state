@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119483",
+  "mode": "autonomous",
+  "run_id": "30977882727",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30977882727",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119483.md",
+  "published_at": "2026-08-05T05:30:40.519Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119483",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119483",
+  "canonical_pr": null,
+  "summary": "#119483 is a real legacy session-execution decoding gap. The current agent exec path already preserves valid UTF-8 and falls back to the Windows console code page only for invalid UTF-8; no Python-specific UTF-8 flag should be injected. Older session bash and extension-exec paths still hard-code UTF-8 decoding, so a narrow PR should reuse the shared streaming decoder there.",
+  "actions": [
+    {
+      "target": "#119483",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "Repair both session-owned UTF-8-only consumers through the established decoder; do not alter arbitrary Python invocation arguments or environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119483",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "A narrow new PR can share the existing decode policy across the remaining session-owned subprocess surfaces."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119483",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119483",
+      "candidate_fix": null,
+      "reason": "The job permits a new fix PR but forbids merge and issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
