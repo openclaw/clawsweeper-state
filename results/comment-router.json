@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T18:42:29.934Z",
+  "updated_at": "2026-08-05T18:42:45.272Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119624:5193030124:2026-08-05T14:25:39Z:re_review",
-      "comment_id": "5193030124",
-      "comment_version_key": "5193030124:2026-08-05T14:25:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119624#issuecomment-5193030124",
-      "comment_created_at": "2026-08-05T14:25:39Z",
-      "comment_updated_at": "2026-08-05T14:25:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "890e6140-90d9-11f1-9f50-356b842119a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119624,
-      "author": "pcpilot-dev",
-      "author_id": 221209300,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T14:26:14.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "integration/dreaming-v2-upstream-20260805-r2",
-        "head_sha": "f98d8ba3891b29aae7dffdcc19ee31f1dd843431",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:70:5183422180:2026-08-05T14:25:31Z:clawsweeper_needs_human",
       "comment_id": "5183422180",
@@ -32404,6 +32356,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-ce612e0709",
         "head_sha": "191d18d3e3b7b2836d7bf7b91e84eb89e6e73eba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3412:5194286235:2026-08-05T18:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5194286235",
+      "comment_version_key": "5194286235:2026-08-05T18:41:53Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3412#issuecomment-5194286235",
+      "comment_created_at": "2026-08-05T16:11:36Z",
+      "comment_updated_at": "2026-08-05T18:41:53Z",
+      "comment_body_sha256": "39fa99d6535fda3b9aac6187d7fea487f66b08b57bdd6f5d6b4bb474ce37faaf",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3412,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain Carapace’s lockfile integrity digest (P2)** - This jsdom-only update deletes the SHA-512 digest for the unchanged @openclaw/carapace Git dependency. The clean merge preserves that deletion, weakening the...; Review finding: [P2] Retain Carapace’s lockfile integrity digest — bun.lock:450 - [medium] Unrelated Git dependency loses its SHA-512 digest — bun.lock:450 (sha=e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2)",
+      "expected_head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T18:42:45.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/jsdom-30.0.1",
+        "head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
         "cluster_id": null,
         "job_path": null
       }
