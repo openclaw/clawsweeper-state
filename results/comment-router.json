@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T22:52:32.322Z",
+  "updated_at": "2026-08-05T22:52:38.892Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:123:5195135170:2026-08-05T17:32:54Z:clawsweeper_needs_human",
-      "comment_id": "5195135170",
-      "comment_version_key": "5195135170:2026-08-05T17:32:54Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/123#issuecomment-5195135170",
-      "comment_created_at": "2026-08-05T17:32:54Z",
-      "comment_updated_at": "2026-08-05T17:32:54Z",
-      "comment_body_sha256": "9653769892410790ca848c05e529a062dd873eb86a4c456cbaf5d3d24c680b65",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 123,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement action code runs in CI and release jobs, including a publish job with OIDC permission; merge should wait for the remaining Windows and Cargo checks and retain the full... (sha=0b47c6812682bd6be7eee5f84f8e9d21c38f2f41)",
-      "expected_head_sha": "0b47c6812682bd6be7eee5f84f8e9d21c38f2f41",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T17:33:28.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-a9bcc878af",
-        "head_sha": "0b47c6812682bd6be7eee5f84f8e9d21c38f2f41",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119576:5195140589:2026-08-05T17:33:21Z:re_review",
       "comment_id": "5195140589",
@@ -33076,6 +33043,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1096:5198298963:2026-08-05T22:51:58Z:re_review",
+      "comment_id": "5198298963",
+      "comment_version_key": "5198298963:2026-08-05T22:51:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1096#issuecomment-5198298963",
+      "comment_created_at": "2026-08-05T22:51:58Z",
+      "comment_updated_at": "2026-08-05T22:51:58Z",
+      "comment_body_sha256": "e45de0291427a909da3ea6aba268b4cc6d0eb0fefe47c20cf49c00a28a6b656e",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1096,
+      "author": "bkudiess",
+      "author_id": 7658216,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T22:52:36.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-chat-runtime-bundle",
+        "head_sha": "4301c4fa2332823377e8320a0e5f84eb2f27e857",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
