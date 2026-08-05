@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T08:34:03.961Z",
+  "updated_at": "2026-08-05T08:37:14.111Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119162:5187101106:2026-08-05T03:12:44Z:re_review",
-      "comment_id": "5187101106",
-      "comment_version_key": "5187101106:2026-08-05T03:12:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119162#issuecomment-5187101106",
-      "comment_created_at": "2026-08-05T03:12:44Z",
-      "comment_updated_at": "2026-08-05T03:12:44Z",
-      "comment_body_sha256": "4b0821ea838ba46fd2d54e6c01b9579a594d82c693f7687414d48c0bf01f8412",
-      "source_delivery_id": "876730a0-907b-11f1-9b12-060f06865018",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119162,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T03:13:27.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-reply-pending-final-partial",
-        "head_sha": "9c933b0399029255c682aef1c38a40570ef1bb1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119277:5186993586:2026-08-05T02:55:35Z:re_review",
       "comment_id": "5186993586",
@@ -33165,6 +33117,39 @@
         "kind": "pull_request",
         "branch": "fix/gap-discord-status-channel-model",
         "head_sha": "b92988e36e27150ba2ae9e45da023941cdae667a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:16:5122266911:2026-08-05T08:36:30Z:clawsweeper_needs_human",
+      "comment_id": "5122266911",
+      "comment_version_key": "5122266911:2026-08-05T08:36:30Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/16#issuecomment-5122266911",
+      "comment_created_at": "2026-07-29T18:59:25Z",
+      "comment_updated_at": "2026-08-05T08:36:30Z",
+      "comment_body_sha256": "1f2c7069d5ff34f792c32c111e5b42b20d858834fbe9085f5c88faa07e3a7688",
+      "repo": "openclaw/uirouter",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No bounded repair is identified; the remaining action is normal dependency-owner review of the clean bot update. (sha=120a61adc9ea7ec28d386cb157c3823e6c07f484)",
+      "expected_head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T08:37:14.111Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-7776e25466",
+        "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
         "cluster_id": null,
         "job_path": null
       }
