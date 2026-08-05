@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T08:40:27.429Z",
+  "updated_at": "2026-08-05T08:40:31.293Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119421:5186879728:2026-08-05T02:35:52Z:re_review",
-      "comment_id": "5186879728",
-      "comment_version_key": "5186879728:2026-08-05T02:35:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119421#issuecomment-5186879728",
-      "comment_created_at": "2026-08-05T02:35:52Z",
-      "comment_updated_at": "2026-08-05T02:35:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119421,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T03:19:23.989Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/missing-config-plugin-metadata",
-        "head_sha": "1c871de871b33e187eb4233988bbb837ff5f9e99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119421:5187137602:2026-08-05T03:18:44Z:clawsweeper_needs_human",
       "comment_id": "5187137602",
@@ -33181,6 +33134,39 @@
         "kind": "pull_request",
         "branch": "feature/spatio-temporal-dynamics-v2",
         "head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:488:5179744694:2026-08-05T08:37:41Z:clawsweeper_needs_human",
+      "comment_id": "5179744694",
+      "comment_version_key": "5179744694:2026-08-05T08:37:41Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/488#issuecomment-5179744694",
+      "comment_created_at": "2026-08-04T13:29:29Z",
+      "comment_updated_at": "2026-08-05T08:37:41Z",
+      "comment_body_sha256": "806a2d786639a04abb29a78d84469b3deb85d5e22a1a2d1dc9916a28990db8ab",
+      "repo": "openclaw/acpx",
+      "issue_number": 488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Frozen production installs will resolve a newer direct TypeScript runtime loader and a changed transitive WebAssembly-runtime resolution; CI passes, but accepting that third-party run... (sha=17c1d03840bec3db1ae609530c74df7856f9857e)",
+      "expected_head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T08:40:31.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-ec51b0fbd6",
+        "head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
         "cluster_id": null,
         "job_path": null
       }
