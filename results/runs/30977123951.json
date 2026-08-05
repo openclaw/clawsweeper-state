@@ -1,0 +1,134 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119411",
+  "mode": "autonomous",
+  "run_id": "30977123951",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30977123951",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
+  "published_at": "2026-08-05T05:43:06.274Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119411",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119411",
+  "canonical_pr": null,
+  "summary": "Verified current main 75ef5aeb: status-mode manager checks session drift but not memory-source drift before returning status. A narrow repair is ready as an artifact, but this worker's read-only checkout rejected the patch and cannot run write-producing tests.",
+  "actions": [
+    {
+      "target": "#119411",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119411",
+      "candidate_fix": null,
+      "reason": "The status contradiction is source-reproducible on current main. The worker cannot modify this checkout; hand the artifact to the deterministic writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119411",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119411",
+      "candidate_fix": null,
+      "reason": "Create or update clawsweeper/issue-openclaw-openclaw-119411 from the supplied artifact."
+    },
+    {
+      "target": "#40088",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119411",
+      "candidate_fix": null,
+      "reason": "Keep open as related, separate watcher work."
+    },
+    {
+      "target": "#90042",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate provider identity owner and repair path."
+    },
+    {
+      "target": "#113553",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate provider-status repair path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_independent": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119500",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119411",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119500",
+      "commit": "dee80c87f63508762e51a56e434fe4526228d39a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119411",
+      "pr": "https://github.com/openclaw/openclaw/pull/119500",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119500",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119500",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(memory): detect unindexed memory files in status",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

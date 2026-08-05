@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T05:30:56.245Z",
-  "count": 4,
+  "generated_at": "2026-08-05T05:43:16.665Z",
+  "count": 5,
   "summary": {
-    "open_prs": 4,
+    "open_prs": 5,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 4,
+    "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 4,
+    "needs_merge_preflight": 5,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,69 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119500,
+      "title": "fix(memory): detect unindexed memory files in status",
+      "url": "https://github.com/openclaw/openclaw/pull/119500",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119411",
+      "head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
+      "cluster_id": "issue-openclaw-openclaw-119411",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
+      "updated_at": "2026-08-05T05:35:32Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 94,
+        "counts": {
+          "CANCELLED": 3,
+          "SKIPPED": 43,
+          "SUCCESS": 48
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30977123951",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30977123951",
+        "cluster_id": "issue-openclaw-openclaw-119411",
+        "published_at": "2026-08-05T05:43:06.274Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119500",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(memory): detect unindexed memory files in status",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119367,
       "title": "fix(memory-core): resume validated session transcript appends",
