@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:13:12.237Z",
+  "updated_at": "2026-08-05T10:14:24.943Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119276:5181713562:2026-08-05T05:23:38Z:clawsweeper_auto_repair",
-      "comment_id": "5181713562",
-      "comment_version_key": "5181713562:2026-08-05T05:23:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119276#issuecomment-5181713562",
-      "comment_created_at": "2026-08-04T16:15:46Z",
-      "comment_updated_at": "2026-08-05T05:23:38Z",
-      "comment_body_sha256": "2004e3569460aaab47c9323ace4fc49ef91a0f4b0ae75a13c10a3084a8f4c2ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1ef7000f20a92a6c0174b8ed5731487178795a51)",
-      "expected_head_sha": "1ef7000f20a92a6c0174b8ed5731487178795a51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T05:24:24.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-mcp-app-standalone-fetch-timeout",
-        "head_sha": "1ef7000f20a92a6c0174b8ed5731487178795a51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-05T05:23:49Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -33271,6 +33238,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T10:13:12.237Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1076:5160275971:2026-08-05T10:13:41Z:clawsweeper_needs_human",
+      "comment_id": "5160275971",
+      "comment_version_key": "5160275971:2026-08-05T10:13:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1076#issuecomment-5160275971",
+      "comment_created_at": "2026-08-02T20:49:05Z",
+      "comment_updated_at": "2026-08-05T10:13:41Z",
+      "comment_body_sha256": "dd6ba048f7926e77d5376dfe0011210c586eacd2614eb62b7d6e6f72efabeeef",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1076,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the private host address from proof (P2)** - The newly committed proof artifact still exposes a hostAddress field. Remove or redact it before merge so the public proof package does not disclose local netw...; Review finding: [P2] Remove the private host address from proof — docs/proof/pr1076/proof-sshd.json:6 - [low] Proof artifact exposes a private host address — docs/proof/pr1076/pro... (sha=6d8068a8f206e229cc436c2bb4b0ac7502790e09)",
+      "expected_head_sha": "6d8068a8f206e229cc436c2bb4b0ac7502790e09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:14:24.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-connection-analysis",
+        "head_sha": "6d8068a8f206e229cc436c2bb4b0ac7502790e09",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
