@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T18:00:35.718Z",
+  "updated_at": "2026-08-05T18:01:29.452Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119237:5179651778:2026-08-04T13:21:05Z:re_review",
-      "comment_id": "5179651778",
-      "comment_version_key": "5179651778:2026-08-04T13:21:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119237#issuecomment-5179651778",
-      "comment_created_at": "2026-08-04T13:21:05Z",
-      "comment_updated_at": "2026-08-04T13:21:05Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119237,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T14:16:12.214Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119237:5180120776:2026-08-05T14:14:15Z:clawsweeper_needs_human",
       "comment_id": "5180120776",
@@ -32297,6 +32270,39 @@
         "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
         "cluster_id": "automerge-openclaw-plugin-inspector-58",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3412:5194286235:2026-08-05T18:00:39Z:clawsweeper_needs_human",
+      "comment_id": "5194286235",
+      "comment_version_key": "5194286235:2026-08-05T18:00:39Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3412#issuecomment-5194286235",
+      "comment_created_at": "2026-08-05T16:11:36Z",
+      "comment_updated_at": "2026-08-05T18:00:39Z",
+      "comment_body_sha256": "a060b8bb2503076f8699348dcc190f1c303d91d25e1dfb6fe3e2e17159027869",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3412,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain Carapace’s lockfile integrity digest (P2)** - This jsdom-only update deletes the SHA-512 digest for the unchanged @openclaw/carapace Git dependency. The clean merge preserves that deletion, weakening the...; Review finding: [P2] Retain Carapace’s lockfile integrity digest — bun.lock:450 - [medium] Unrelated Git dependency loses its SHA-512 digest — bun.lock:450 (sha=e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2)",
+      "expected_head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T18:01:29.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/jsdom-30.0.1",
+        "head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
