@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-96692",
+  "mode": "autonomous",
+  "run_id": "31008717397",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31008717397",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
+  "published_at": "2026-08-05T13:49:28.114Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/96692",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/96692",
+  "canonical_pr": null,
+  "summary": "#96692 remains reproducible on current checkout main 4b37a052: Slack text and Block Kit sends can accept absent or mismatched response thread evidence as success. A narrow sender-owner repair is planned, but this worker checkout is read-only and has no dependencies, so it cannot create or validate the required branch/PR.",
+  "actions": [
+    {
+      "target": "#96692",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "The issue remains a narrow, non-security Slack delivery-truth bug; no viable open PR exists."
+    },
+    {
+      "target": "#96692",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable checkout. The executor should apply the supplied narrow artifact on an editable checkout, then re-fetch issue state before opening/updating the configured branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-96692",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "A single sender-owner repair plus focused regressions is the best fix; #96705 found the same invariant but is closed, uneditable, and much broader than needed."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
