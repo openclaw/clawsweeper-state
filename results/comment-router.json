@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-05T17:34:05.868Z",
+  "updated_at": "2026-08-05T17:33:48.714Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119593:5191578779:2026-08-05T13:21:08Z:clawsweeper_auto_repair",
+      "comment_id": "5191578779",
+      "comment_version_key": "5191578779:2026-08-05T13:21:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119593#issuecomment-5191578779",
+      "comment_created_at": "2026-08-05T12:14:22Z",
+      "comment_updated_at": "2026-08-05T13:21:08Z",
+      "comment_body_sha256": "907c7963589528d36baf41437c5204e3fc4d92fb33a8f200bfe2556c442b19e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=45b920aca9e1d9b29313f88f5bd1a21a98ed1080)",
+      "expected_head_sha": "45b920aca9e1d9b29313f88f5bd1a21a98ed1080",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T13:28:06.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/venice-gemini-thought-signature",
+        "head_sha": "45b920aca9e1d9b29313f88f5bd1a21a98ed1080",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119099:5174549006:2026-08-05T13:18:20Z:clawsweeper_auto_repair",
       "comment_id": "5174549006",
@@ -32259,54 +32292,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5195140589:2026-08-05T17:33:21Z:re_review",
-      "comment_id": "5195140589",
-      "comment_version_key": "5195140589:2026-08-05T17:33:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5195140589",
-      "comment_created_at": "2026-08-05T17:33:21Z",
-      "comment_updated_at": "2026-08-05T17:33:21Z",
-      "comment_body_sha256": "a88f9542070ebaaf4264dcc2d34a5def383b705b70c75453f872925de9d2dcc3",
-      "source_delivery_id": "c1b34500-90f3-11f1-9f8d-25c7d7daa877",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — managed restart coordinator proof added to the evidence section: real `startgatewayconfigreloader` + real chokidar + real file, wired to the real `creategatewayrestartcoordinator` transaction (production wiring, including `settle(\"committed\")` after accepted request). scenario a (planner-derived a->b + ordinary b->a revert): coordinator retires the deferred restart debt (retirerejectedrestart=true), 0 sigusr1 signals. scenario b (explicit writer restart a->b + ordinary b->a revert): restart re-armed via onrestart #2 (port=null), debt never retired, 0 sigusr1 signals. full trace in evidence",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T17:34:02.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-cancel-restart-on-revert-119360",
-        "head_sha": "1b10face582653074459032073b90880a795aae6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
