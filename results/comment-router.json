@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:18:16.470Z",
+  "updated_at": "2026-08-05T16:18:25.909Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119572:5190494628:2026-08-05T12:12:29Z:clawsweeper_auto_repair",
-      "comment_id": "5190494628",
-      "comment_version_key": "5190494628:2026-08-05T12:12:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119572#issuecomment-5190494628",
-      "comment_created_at": "2026-08-05T10:15:46Z",
-      "comment_updated_at": "2026-08-05T12:12:29Z",
-      "comment_body_sha256": "2ac52af316962a754b4680ab893b37465f8adc9d146f0b4d8e228a1c2c69141e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b5471881a8095e0b726057a18e177254cd151f59)",
-      "expected_head_sha": "b5471881a8095e0b726057a18e177254cd151f59",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-05T12:13:13.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-profile-timeout-artifact-20260805",
-        "head_sha": "b5471881a8095e0b726057a18e177254cd151f59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:66:5157918151:2026-08-05T12:09:42Z:clawsweeper_auto_repair",
       "comment_id": "5157918151",
@@ -31811,6 +31778,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110803:5194352460:2026-08-05T16:17:43Z:re_review",
+      "comment_id": "5194352460",
+      "comment_version_key": "5194352460:2026-08-05T16:17:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110803#issuecomment-5194352460",
+      "comment_created_at": "2026-08-05T16:17:43Z",
+      "comment_updated_at": "2026-08-05T16:17:43Z",
+      "comment_body_sha256": "74146da34a44d0bdf50a870174e31e3509ff2f8872940a9153a5824a55067f25",
+      "source_delivery_id": "311fbfa0-90e9-11f1-95b6-d87f9bf70397",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110803,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:18:23.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalo-polling-durability",
+        "head_sha": "ad4513a87e1af17a4396081464fffab3cea115ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
