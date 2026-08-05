@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-57148"
 mode: "autonomous"
-run_id: "31004199291"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31004199291"
+run_id: "31008823339"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31008823339"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T13:05:13.557Z"
+published_at: "2026-08-05T13:55:18.944Z"
 canonical: "https://github.com/openclaw/openclaw/issues/57148"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/57148"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31004199291](https://github.com/openclaw/clawsweeper/actions/runs/31004199291)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31008823339](https://github.com/openclaw/clawsweeper/actions/runs/31008823339)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/57148
 
 ## Summary
 
-#57148 is a reproducible current-main hard-cap bug. Plan one narrow PR with a shared parent-prompt projection; preserve raw completion state and direct external delivery text. #73320 remains quarantined for central security handling.
+#57148 remains a reproducible canonical bug on bf7840f5391a6f329a6be568c5f3f1a94c8dadbe: ordinary subagent completion text is unbounded in protected/native, ACP/plain/transcript, and durable correlated parent delivery. A narrow no-config fix PR is needed; no branch diff exists yet. Closed #73320 is quarantined security context and is not a fix source.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/57148
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #57148 | fix_needed | planned | canonical | A fixed internal cap is a narrow bug repair and does not require the issue's proposed public configuration option. |
-| #73320 | route_security | planned | security_sensitive | Quarantine #73320 to central OpenClaw security triage; continue the unrelated #57148 bug repair. |
-| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned | canonical | No viable open PR exists; prepare one narrow new fix PR. |
-| cluster:issue-openclaw-openclaw-57148 | open_fix_pr | planned | canonical | Open one credited fix PR after the artifact is implemented and validated. |
+| #57148 | fix_needed | planned | canonical | The cap belongs in a separate parent-prompt projection, preserving raw completion state and direct external-message fallback behavior. |
+| #73320 | route_security | planned | security_sensitive | Quarantine this exact closed reference with central OpenClaw security handling while continuing the unrelated non-security repair. |
+| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-57148 after implementing and validating the artifact. |
 
 ## Needs Human
 
