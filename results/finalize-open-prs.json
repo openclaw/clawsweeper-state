@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T10:41:42.930Z",
-  "count": 8,
+  "generated_at": "2026-08-05T11:34:13.412Z",
+  "count": 10,
   "summary": {
-    "open_prs": 8,
+    "open_prs": 10,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 10,
     "needs_review": 0,
-    "needs_merge_preflight": 8,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 10,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,134 @@
   },
   "prs": [
     {
+      "number": 119590,
+      "title": "fix(build): select the root-help bundle that exports outputRootHelp",
+      "url": "https://github.com/openclaw/openclaw/pull/119590",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119581",
+      "head_sha": "9b2b77d3d12de18f34f52d03633f93bdb2211c58",
+      "cluster_id": "issue-openclaw-openclaw-119581",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119581.md",
+      "updated_at": "2026-08-05T11:31:56Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 108,
+        "counts": {
+          "CANCELLED": 6,
+          "IN_PROGRESS": 15,
+          "SKIPPED": 27,
+          "SUCCESS": 59,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 119589,
+      "title": "fix(acp): retain final-only text until dispatch completes",
+      "url": "https://github.com/openclaw/openclaw/pull/119589",
+      "branch": "clawsweeper/issue-openclaw-openclaw-92199",
+      "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
+      "cluster_id": "issue-openclaw-openclaw-92199",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
+      "updated_at": "2026-08-05T11:27:12Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 103,
+        "counts": {
+          "CANCELLED": 8,
+          "SKIPPED": 40,
+          "SUCCESS": 54,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "30999753771",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30999753771",
+        "cluster_id": "issue-openclaw-openclaw-92199",
+        "published_at": "2026-08-05T11:33:51.163Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119589",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(acp): retain final-only text until dispatch completes",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 119567,
       "title": "fix(gateway): flush throttled chat deltas after 150 ms",
       "url": "https://github.com/openclaw/openclaw/pull/119567",
@@ -34,7 +162,7 @@
       "head_sha": "1a109a1aa3cc869e80218762a8b0bc18b3e6fdba",
       "cluster_id": "issue-openclaw-openclaw-119557",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119557.md",
-      "updated_at": "2026-08-05T10:40:33Z",
+      "updated_at": "2026-08-05T11:13:23Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

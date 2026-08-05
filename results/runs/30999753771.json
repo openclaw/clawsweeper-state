@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92199",
+  "mode": "autonomous",
+  "run_id": "30999753771",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30999753771",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
+  "published_at": "2026-08-05T11:33:51.163Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92199",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92199",
+  "canonical_pr": null,
+  "summary": "Current main retains the final-only ACP defect: streamed done/error events flush and reset turn text before outer dispatch settlement. A narrow final-only lifecycle repair is ready, but this checkout is read-only and has no dependencies, so implementation and validation cannot run here.",
+  "actions": [
+    {
+      "target": "#92199",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout; emit the narrow fix PR artifact for an executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92199",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "A new narrow PR is the viable canonical path."
+    },
+    {
+      "target": "#84486",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "Keep the Feishu report open for its distinct streaming-card behavior."
+    },
+    {
+      "target": "#84501",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "Already closed; retained solely as historical context."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119589",
+      "branch": "clawsweeper/issue-openclaw-openclaw-92199",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119589",
+      "commit": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#92199",
+      "pr": "https://github.com/openclaw/openclaw/pull/119589",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119589",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119589",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(acp): retain final-only text until dispatch completes",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

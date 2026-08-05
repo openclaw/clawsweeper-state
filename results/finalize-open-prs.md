@@ -1,20 +1,20 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-05T10:41:42.930Z
+Generated: 2026-08-05T11:34:13.412Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 8 |
+| open_prs | 10 |
 | ready_candidates | 0 |
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 8 |
+| needs_checks | 10 |
 | needs_review | 0 |
-| needs_merge_preflight | 8 |
-| needs_result_backfill | 0 |
+| needs_merge_preflight | 10 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -30,6 +30,8 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#119590](https://github.com/openclaw/openclaw/pull/119590) | fix(build): select the root-help bundle that exports outputRootHelp | issue-openclaw-openclaw-119581 | MERGEABLE | BLOCKED | CANCELLED:6 IN_PROGRESS:15 SKIPPED:27 SUCCESS:59 NEUTRAL:1; blockers:17 | needs_merge_state:BLOCKED, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | issue-openclaw-openclaw-92199 | MERGEABLE | BLOCKED | CANCELLED:8 SKIPPED:40 SUCCESS:54 NEUTRAL:1; blockers:4 | needs_merge_state:BLOCKED, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119567](https://github.com/openclaw/openclaw/pull/119567) | fix(gateway): flush throttled chat deltas after 150 ms | issue-openclaw-openclaw-119557 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:45 SUCCESS:84 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119528](https://github.com/openclaw/openclaw/pull/119528) | fix(agents): timestamp recovered Claude CLI history | issue-openclaw-openclaw-94679 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:45 SUCCESS:84 FAILURE:2 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119512](https://github.com/openclaw/openclaw/pull/119512) | fix(sessions): reuse identities during target dedupe | issue-openclaw-openclaw-119440 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:87 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
