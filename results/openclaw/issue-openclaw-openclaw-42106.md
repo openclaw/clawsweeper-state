@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-42106"
 mode: "autonomous"
-run_id: "30951829683"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30951829683"
+run_id: "30958710330"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30958710330"
 head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-04T22:37:13.273Z"
+result_status: "planned"
+published_at: "2026-08-05T00:00:36.598Z"
 canonical: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_pr: null
-actions_total: 6
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30951829683](https://github.com/openclaw/clawsweeper/actions/runs/30951829683)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30958710330](https://github.com/openclaw/clawsweeper/actions/runs/30958710330)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 ## Summary
 
-#42106 remains a source-reproducible canonical bug on main 8fc44585931decce2e821efac34a599b5845c08a. A narrow new fix PR is appropriate, but this worker checkout is read-only and lacks node_modules, so it cannot create or validate the branch here.
+Current main fb81d03d8eb2f2784f7a7ab64c31f1b8dc81f771 still drops paragraph separators. A narrow internal repair PR is planned; the read-only checkout prevents applying it here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex review-fix worker timed out after 933148ms |
-| issue_implementation_status_comment | updated | #42106 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,12 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #42106 | fix_needed | planned | canonical | Repair the chunker, subscriber payload cleanup, and same-flush coalescer join as one owner-boundary fix; do not add a public contract or config. |
-| #42824 | keep_closed | skipped | related | Closed historical context only. |
-| #73981 | keep_closed | skipped | superseded | Closed historical context only. |
-| #94216 | keep_closed | skipped | superseded | Closed historical context only; preserve @eldar702 attribution in the replacement PR. |
-| #94247 | keep_closed | skipped | superseded | Closed historical context only; preserve @ml12580 attribution in the replacement PR. |
-| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned |  | Hand the narrow repair contract to the deterministic executor. |
+| #42106 | fix_needed | planned | canonical | Source inspection reproduces the separator-loss invariant on current main; no viable open PR exists. |
+| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned | canonical | Implement the verified root-cause repair on clawsweeper/issue-openclaw-openclaw-42106, then open one labeled autofix PR. |
 
 ## Needs Human
 
