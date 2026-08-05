@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:14:18.063Z",
+  "updated_at": "2026-08-05T12:14:25.000Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119500:5189874668:2026-08-05T09:10:17Z:re_review",
-      "comment_id": "5189874668",
-      "comment_version_key": "5189874668:2026-08-05T09:10:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119500#issuecomment-5189874668",
-      "comment_created_at": "2026-08-05T09:10:17Z",
-      "comment_updated_at": "2026-08-05T09:10:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "7ac24510-90ad-11f1-8678-d6752f5835ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119500,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T09:10:51.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119411",
-        "head_sha": "77277a61cc0b544f79a0095f534588f110b8d347",
-        "cluster_id": "issue-openclaw-openclaw-119411",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115278:5106674886:2026-08-05T09:06:16Z:clawsweeper_needs_human",
       "comment_id": "5106674886",
@@ -32059,6 +32011,39 @@
         "kind": "pull_request",
         "branch": "alert-autofix-11",
         "head_sha": "02e9c3da523419942e4a92d0f7f334ecea8d899f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:54:5120409280:2026-08-05T12:09:00Z:clawsweeper_needs_human",
+      "comment_id": "5120409280",
+      "comment_version_key": "5120409280:2026-08-05T12:09:00Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/54#issuecomment-5120409280",
+      "comment_created_at": "2026-07-29T16:07:39Z",
+      "comment_updated_at": "2026-08-05T12:09:00Z",
+      "comment_body_sha256": "6065176fc95045c0de84fec368788a35e71743fbaa20234a7d7777e9d3071e7d",
+      "repo": "openclaw/shellbench",
+      "issue_number": 54,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Each mapping targets a separately versioned native client; command-construction tests do not prove that every pinned client accepts its control at runtime. (sha=887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb)",
+      "expected_head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:14:24.999Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-reasoning-effort-parity",
+        "head_sha": "887c2597c1e6ef7ad369cd9a72c800b8fb52ffeb",
         "cluster_id": null,
         "job_path": null
       }
