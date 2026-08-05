@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:34:27.839Z",
+  "updated_at": "2026-08-05T06:34:46.294Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115803:5118160926:2026-08-05T02:17:14Z:clawsweeper_auto_repair",
-      "comment_id": "5118160926",
-      "comment_version_key": "5118160926:2026-08-05T02:17:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115803#issuecomment-5118160926",
-      "comment_created_at": "2026-07-29T13:07:22Z",
-      "comment_updated_at": "2026-08-05T02:17:14Z",
-      "comment_body_sha256": "306d2e5f41d21cd5e1172fd1dc76726dde800d27b917a0aedb94411191f17d8e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=39b4b67b6c11d6a531117cb16ad13c49386825e0)",
-      "expected_head_sha": "39b4b67b6c11d6a531117cb16ad13c49386825e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:17:53.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-84034",
-        "head_sha": "39b4b67b6c11d6a531117cb16ad13c49386825e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115803:5180011139:2026-08-04T13:51:54Z:re_review",
       "comment_id": "5180011139",
@@ -32559,6 +32526,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119319:5184741238:2026-08-05T06:34:04Z:clawsweeper_needs_human",
+      "comment_id": "5184741238",
+      "comment_version_key": "5184741238:2026-08-05T06:34:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119319#issuecomment-5184741238",
+      "comment_created_at": "2026-08-04T21:18:43Z",
+      "comment_updated_at": "2026-08-05T06:34:04Z",
+      "comment_body_sha256": "19df8efc25edfbce1350a295196963cdd435bc6a077544cbc5409c47ed5c43bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119319,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body supplies earlier-head terminal output, and the new stateless test directly instantiates SDK objects rather than OpenClaw’s configured...; Review finding: [P1] Keep root MCP fixtures resolvable — package.json:1962-1964 - [P1] Use the v2 tools/list path for every exposed catalog — src/agents/agent-bundle-mcp-runtime.t... (sha=4e9e868ee4015799cbc1015a68e765e58a8efbcd)",
+      "expected_head_sha": "4e9e868ee4015799cbc1015a68e765e58a8efbcd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:34:46.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "mcp-v2-stateless",
+        "head_sha": "4e9e868ee4015799cbc1015a68e765e58a8efbcd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
