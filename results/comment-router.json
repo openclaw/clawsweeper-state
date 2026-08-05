@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:06:32.297Z",
+  "updated_at": "2026-08-05T12:06:48.607Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:95830:5189441857:2026-08-05T08:29:17Z:re_review",
-      "comment_id": "5189441857",
-      "comment_version_key": "5189441857:2026-08-05T08:29:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95830#issuecomment-5189441857",
-      "comment_created_at": "2026-08-05T08:29:17Z",
-      "comment_updated_at": "2026-08-05T08:29:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "c01f7020-90a7-11f1-8b5c-ea116356b3e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95830,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T08:29:45.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-poll-answer-routing-v2",
-        "head_sha": "3ac45bc9fc5c9d610ca6f05fbea4dbb0fe038041",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119240:5180135395:2026-08-05T08:29:19Z:clawsweeper_auto_repair",
       "comment_id": "5180135395",
@@ -32354,6 +32306,39 @@
         "kind": "pull_request",
         "branch": "jesse/system-agent-qr-host",
         "head_sha": "c590975633691f25550509d4acfe80d8ef7a0861",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116904:5144476434:2026-08-05T12:05:40Z:clawsweeper_needs_human",
+      "comment_id": "5144476434",
+      "comment_version_key": "5144476434:2026-08-05T12:05:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116904#issuecomment-5144476434",
+      "comment_created_at": "2026-07-31T15:17:07Z",
+      "comment_updated_at": "2026-08-05T12:05:40Z",
+      "comment_body_sha256": "c0ace68f058f179bc9dab76efeffae754c92f7231e0b73333acbcb5ce2c8d538",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The dirty rebase must retain current main’s request-timeout/abort ownership changes and regenerate the checked-in browser runtime; otherwise the merged branch could regress Gateway av... (sha=7946e2fe1b787c7abc8e11625d2a787d55383e81)",
+      "expected_head_sha": "7946e2fe1b787c7abc8e11625d2a787d55383e81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:06:48.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa200-gateway-client-eventhub-lifecycle",
+        "head_sha": "7946e2fe1b787c7abc8e11625d2a787d55383e81",
         "cluster_id": null,
         "job_path": null
       }
