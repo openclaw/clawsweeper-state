@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92199",
+  "mode": "plan",
+  "run_id": "31000389101",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31000389101",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
+  "published_at": "2026-08-05T11:37:47.972Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92199",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92199",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119589",
+  "summary": "Keep #92199 as the canonical issue and #119589 as its active narrow fix PR. The Feishu report is related but has a distinct dispatcher root cause; the older contributor PR is already closed historical context.",
+  "actions": [
+    {
+      "target": "#92199",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92199",
+      "candidate_fix": "#119589",
+      "reason": "Canonical tracker remains open because closure is blocked by job policy and the candidate fix is not merged."
+    },
+    {
+      "target": "#119589",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "This is the viable canonical fix path; the job forbids merge, so it remains open pending the required exact-head review and normal merge gates."
+    },
+    {
+      "target": "#84486",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "Same user-visible message-loss family, but a distinct owner and root cause; no closure is appropriate."
+    },
+    {
+      "target": "#84501",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92199",
+      "candidate_fix": null,
+      "reason": "Historical closed context only; no close action may be emitted."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

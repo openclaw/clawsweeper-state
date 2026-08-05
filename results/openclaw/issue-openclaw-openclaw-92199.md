@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-92199"
-mode: "autonomous"
-run_id: "30999753771"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30999753771"
+mode: "plan"
+run_id: "31000389101"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31000389101"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-05T11:33:51.163Z"
+result_status: "planned"
+published_at: "2026-08-05T11:37:47.972Z"
 canonical: "https://github.com/openclaw/openclaw/issues/92199"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/92199"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119589"
 actions_total: 4
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30999753771](https://github.com/openclaw/clawsweeper/actions/runs/30999753771)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31000389101](https://github.com/openclaw/clawsweeper/actions/runs/31000389101)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/92199
 
 ## Summary
 
-Current main retains the final-only ACP defect: streamed done/error events flush and reset turn text before outer dispatch settlement. A narrow final-only lifecycle repair is ready, but this checkout is read-only and has no dependencies, so implementation and validation cannot run here.
+Keep #92199 as the canonical issue and #119589 as its active narrow fix PR. The Feishu report is related but has a distinct dispatcher root cause; the older contributor PR is already closed historical context.
 
 ## Impact
 
@@ -54,23 +54,22 @@ Current main retains the final-only ACP defect: streamed done/error events flush
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119589 | clawsweeper/issue-openclaw-openclaw-92199 |  |
-| issue_implementation_status_comment | updated | #92199 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119589 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #92199 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout; emit the narrow fix PR artifact for an executor. |
-| cluster:issue-openclaw-openclaw-92199 | build_fix_artifact | planned | canonical | A new narrow PR is the viable canonical path. |
-| #84486 | keep_related | planned | related | Keep the Feishu report open for its distinct streaming-card behavior. |
-| #84501 | keep_closed | skipped | superseded | Already closed; retained solely as historical context. |
+| #92199 | keep_canonical | planned | canonical | Canonical tracker remains open because closure is blocked by job policy and the candidate fix is not merged. |
+| #119589 | keep_canonical | planned | canonical | This is the viable canonical fix path; the job forbids merge, so it remains open pending the required exact-head review and normal merge gates. |
+| #84486 | keep_related | planned | related | Same user-visible message-loss family, but a distinct owner and root cause; no closure is appropriate. |
+| #84501 | keep_closed | skipped | superseded | Historical closed context only; no close action may be emitted. |
 
 ## Needs Human
 

@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T11:34:13.412Z",
+  "generated_at": "2026-08-05T11:38:08.795Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
@@ -34,38 +34,26 @@
       "head_sha": "9b2b77d3d12de18f34f52d03633f93bdb2211c58",
       "cluster_id": "issue-openclaw-openclaw-119581",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119581.md",
-      "updated_at": "2026-08-05T11:31:56Z",
+      "updated_at": "2026-08-05T11:37:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 108,
+        "total": 123,
         "counts": {
-          "CANCELLED": 6,
-          "IN_PROGRESS": 15,
-          "SKIPPED": 27,
-          "SUCCESS": 59,
+          "CANCELLED": 9,
+          "IN_PROGRESS": 1,
+          "SKIPPED": 32,
+          "SUCCESS": 80,
           "NEUTRAL": 1
         },
         "blockers": [
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
-          "Real behavior proof:IN_PROGRESS",
-          "CI / checks-node-compact-large-2:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-3:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS"
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -75,13 +63,20 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119590#issuecomment-5191222587",
+            "submitted_at": "2026-08-05T11:36:25Z"
+          }
+        ]
       },
       "latest_record": null,
       "blockers": [
         "needs_merge_state:BLOCKED",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:IN_PROGRESS",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight",
         "needs_result_backfill"
       ],
@@ -126,25 +121,19 @@
         "latest": []
       },
       "latest_record": {
-        "run_id": "30999753771",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30999753771",
+        "run_id": "31000389101",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31000389101",
         "cluster_id": "issue-openclaw-openclaw-92199",
-        "published_at": "2026-08-05T11:33:51.163Z",
+        "published_at": "2026-08-05T11:37:47.972Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#119589",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
+          "action": "keep_canonical",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#92199",
           "candidate_fix": null,
-          "title": "fix(acp): retain final-only text until dispatch completes",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "reason": "This is the viable canonical fix path; the job forbids merge, so it remains open pending the required exact-head review and normal merge gates."
         }
       },
       "blockers": [
