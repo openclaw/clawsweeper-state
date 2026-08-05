@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T04:02:53.719Z",
+  "updated_at": "2026-08-05T04:03:10.112Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78852:5112460043:2026-07-29T03:28:58Z:re_review",
-      "comment_id": "5112460043",
-      "comment_version_key": "5112460043:2026-07-29T03:28:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78852#issuecomment-5112460043",
-      "comment_created_at": "2026-07-29T03:28:58Z",
-      "comment_updated_at": "2026-07-29T03:28:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78852,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T00:25:53.885Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:78852:5125806029:2026-07-30T02:50:24Z:re_review",
       "comment_id": "5125806029",
@@ -32205,6 +32178,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T04:02:53.719Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110450:5010145071:2026-08-05T04:01:37Z:clawsweeper_needs_human",
+      "comment_id": "5010145071",
+      "comment_version_key": "5010145071:2026-08-05T04:01:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110450#issuecomment-5010145071",
+      "comment_created_at": "2026-07-18T05:55:31Z",
+      "comment_updated_at": "2026-08-05T04:01:37Z",
+      "comment_body_sha256": "c9ff20cccf8d3334aacc4775c7aaf28031d5628ed4c533129babc8adeaad5812",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 16 MiB branch introduces a second implementation of the shared managed-Markdown contract; it must remain byte-compatible for existing files, symlinks, and concurrent diary writers. (sha=11813452d8b5d431a42467882574cf57dae16f1a)",
+      "expected_head_sha": "11813452d8b5d431a42467882574cf57dae16f1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T04:03:10.112Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jjy/fix/memory-dreaming-markdown-cap",
+        "head_sha": "11813452d8b5d431a42467882574cf57dae16f1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
