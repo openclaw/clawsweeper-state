@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:07:41.220Z",
+  "updated_at": "2026-08-05T07:07:47.325Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118499:5186506453:2026-08-05T01:33:35Z:re_review",
-      "comment_id": "5186506453",
-      "comment_version_key": "5186506453:2026-08-05T01:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118499#issuecomment-5186506453",
-      "comment_created_at": "2026-08-05T01:33:35Z",
-      "comment_updated_at": "2026-08-05T01:33:35Z",
-      "comment_body_sha256": "e9253be85f91ebe350110d2b002392890bc13b28338c232555442d427fbf2162",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118499,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:22:48.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk",
-        "head_sha": "fe2c9911b2b198c95b8e2e4441fcfabff0df4c31",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118505:5186506567:2026-08-05T01:33:36Z:re_review",
       "comment_id": "5186506567",
@@ -32861,6 +32814,39 @@
         "kind": "pull_request",
         "branch": "fix/media-sweep-managed-outgoing",
         "head_sha": "61f4a00347ddff47190b0100be44a9dd6df5f7c4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1094:5188374317:2026-08-05T07:07:14Z:clawsweeper_needs_human",
+      "comment_id": "5188374317",
+      "comment_version_key": "5188374317:2026-08-05T07:07:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1094#issuecomment-5188374317",
+      "comment_created_at": "2026-08-05T06:30:48Z",
+      "comment_updated_at": "2026-08-05T07:07:14Z",
+      "comment_body_sha256": "e07c9c9d01ab2d60566d2277f1f7917b26351df6f36098ca58f781381a51a9eb",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1094,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reconciler governs per-thread intent, acknowledgement, snapshot correlation, retries, reconnects, and disposal, so an integration error can leave a chat thread showing stale reaso... (sha=602183ae6be206f981b532b56736bd71b5981c2a)",
+      "expected_head_sha": "602183ae6be206f981b532b56736bd71b5981c2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:07:47.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-extract-reasoning-clear-reconciler",
+        "head_sha": "602183ae6be206f981b532b56736bd71b5981c2a",
         "cluster_id": null,
         "job_path": null
       }
