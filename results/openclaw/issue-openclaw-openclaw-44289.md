@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
-mode: "autonomous"
-run_id: "30983371051"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30983371051"
+mode: "plan"
+run_id: "30984419766"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30984419766"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T08:20:08.670Z"
-canonical: "https://github.com/openclaw/openclaw/issues/44289"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
+published_at: "2026-08-05T08:23:58.007Z"
+canonical: "#44289"
+canonical_issue: "#44289"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30983371051](https://github.com/openclaw/clawsweeper/actions/runs/30983371051)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30984419766](https://github.com/openclaw/clawsweeper/actions/runs/30984419766)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/44289
+Canonical: #44289
 
 ## Summary
 
-#44289 remains the canonical open bug: current main validates manually synchronized SecretRef reference artifacts but has no deterministic writer/check workflow. The closed PRs are historical, unmergeable context. Plan a narrow new fix PR; this worker's target checkout is read-only, so no local patch was applied here.
+#44289 remains the canonical, reproducible SecretRef docs-drift repair. Plan one narrow new fix PR; do not reuse the three closed attempts.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | Create one registry-backed generator/check repair path for the canonical issue. |
-| #85969 | keep_closed | skipped | superseded | Already closed; retain only as credited historical evidence. |
-| #89142 | keep_closed | skipped | superseded | Already closed; carry forward only the useful generator direction and review findings. |
-| #91612 | keep_closed | skipped | superseded | Already closed; retain as credited historical context only. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Prepare a new focused fix PR rather than reviving closed fork branches. |
+| #44289 | fix_needed | planned | canonical | Create the requested deterministic registry-to-artifact writer/check path without changing runtime SecretRef behavior. |
+| #85969 | keep_closed | skipped | superseded | Already closed; no closure, merge, or branch revival is valid. |
+| #89142 | keep_closed | skipped | superseded | Already closed historical context only. |
+| #91612 | keep_closed | skipped | superseded | Already closed historical context only. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Produce one new, focused PR from clawsweeper/issue-openclaw-openclaw-44289. |
 
 ## Needs Human
 
