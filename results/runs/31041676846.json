@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-114169",
+  "mode": "autonomous",
+  "run_id": "31041676846",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31041676846",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
+  "published_at": "2026-08-05T20:04:49.545Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_pr": null,
+  "summary": "Current main confirms a WhatsApp-only stale busy-activity path. Plan a narrow plugin-owned heartbeat fix; do not add a global timeout configuration surface.",
+  "actions": [
+    {
+      "target": "#114169",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "Repair the WhatsApp producer-side activity fact rather than weakening the shared hung-run safeguard with configuration."
+    },
+    {
+      "target": "#114840",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-114169",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR can directly repair the verified producer-side invariant."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
