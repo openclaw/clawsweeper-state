@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "30968605044",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30968605044",
+  "head_sha": "6976512bc0fe3528f2f0a91699e4e291d0ce2850",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-05T03:28:53.745Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains a reproducible, narrow documentation-generation bug on main. Current main has no generator/writer; this worker could not materialize or validate the branch because the checkout is read-only and focused tests cannot resolve the missing p-map dependency. An executable new-PR artifact is ready.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "A registry-backed renderer/check pair directly repairs the established artifact-generation contract without changing SecretRef runtime behavior."
+    },
+    {
+      "target": "#85969",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical implementation evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#89142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical implementation evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#91612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical implementation evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "New narrow fix PR required; no viable open contributor branch exists."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Materialization and validation require a writable executor with the repository dependency install available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
