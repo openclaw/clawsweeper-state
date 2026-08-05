@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T08:24:17.342Z",
-  "count": 8,
+  "generated_at": "2026-08-05T09:47:59.354Z",
+  "count": 9,
   "summary": {
-    "open_prs": 8,
+    "open_prs": 9,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 8,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 9,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,93 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119567,
+      "title": "fix(gateway): flush throttled chat deltas after 150 ms",
+      "url": "https://github.com/openclaw/openclaw/pull/119567",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119557",
+      "head_sha": "1a109a1aa3cc869e80218762a8b0bc18b3e6fdba",
+      "cluster_id": "issue-openclaw-openclaw-119557",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119557.md",
+      "updated_at": "2026-08-05T09:45:54Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 131,
+        "counts": {
+          "CANCELLED": 10,
+          "SKIPPED": 41,
+          "SUCCESS": 41,
+          "IN_PROGRESS": 38,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-dependencies:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119528,
       "title": "fix(agents): timestamp recovered Claude CLI history",
@@ -184,7 +271,7 @@
       "head_sha": "106ec531c479e2dcefd940d8b2efed335f7e5ba6",
       "cluster_id": "issue-openclaw-openclaw-119483",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119483.md",
-      "updated_at": "2026-08-05T06:32:56Z",
+      "updated_at": "2026-08-05T09:46:59Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -256,22 +343,23 @@
       "title": "fix(memory): detect unindexed memory files in status",
       "url": "https://github.com/openclaw/openclaw/pull/119500",
       "branch": "clawsweeper/issue-openclaw-openclaw-119411",
-      "head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
+      "head_sha": "77277a61cc0b544f79a0095f534588f110b8d347",
       "cluster_id": "issue-openclaw-openclaw-119411",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
-      "updated_at": "2026-08-05T06:16:24Z",
+      "updated_at": "2026-08-05T09:22:03Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 109,
+        "total": 119,
         "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 48,
-          "SUCCESS": 54
+          "CANCELLED": 8,
+          "SKIPPED": 53,
+          "SUCCESS": 58
         },
         "blockers": [
+          "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED",
           "Real behavior proof:CANCELLED"
