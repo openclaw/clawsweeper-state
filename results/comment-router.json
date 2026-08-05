@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:10:02.755Z",
+  "updated_at": "2026-08-05T11:10:04.697Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112370:5071591496:2026-07-24T15:34:46Z:re_review",
-      "comment_id": "5071591496",
-      "comment_version_key": "5071591496:2026-07-24T15:34:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112370#issuecomment-5071591496",
-      "comment_created_at": "2026-07-24T15:34:46Z",
-      "comment_updated_at": "2026-07-24T15:34:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112370,
-      "author": "yangxiansheng",
-      "author_id": 14273636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T06:14:32.341Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112370:5096308506:2026-08-05T06:13:50Z:clawsweeper_needs_human",
       "comment_id": "5096308506",
@@ -33549,6 +33522,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100934:4894027765:2026-08-05T11:06:07Z:clawsweeper_needs_human",
+      "comment_id": "4894027765",
+      "comment_version_key": "4894027765:2026-08-05T11:06:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100934#issuecomment-4894027765",
+      "comment_created_at": "2026-07-06T14:36:06Z",
+      "comment_updated_at": "2026-08-05T11:06:07Z",
+      "comment_body_sha256": "d45a67458b1abc5539f89e01b830ba87d93ab3bc4c34e12290eb1923f97e4e71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100934,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge, and current main has substantially rewritten the shared CSS and form-control test architecture; resolving it can change typography hierarchy or responsiv... (sha=b61f170047099020fb2ebd04b6d22ef56b66cca8)",
+      "expected_head_sha": "b61f170047099020fb2ebd04b6d22ef56b66cca8",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:10:04.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/text-size-behavior",
+        "head_sha": "b61f170047099020fb2ebd04b6d22ef56b66cca8",
+        "cluster_id": "automerge-openclaw-openclaw-100934",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-100934.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
