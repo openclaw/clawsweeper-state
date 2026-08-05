@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:07:48.111Z",
+  "updated_at": "2026-08-05T11:07:51.472Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119385:5188228607:2026-08-05T06:11:06Z:stop",
-      "comment_id": "5188228607",
-      "comment_version_key": "5188228607:2026-08-05T06:11:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/119385#issuecomment-5188228607",
-      "comment_created_at": "2026-08-05T06:11:06Z",
-      "comment_updated_at": "2026-08-05T06:11:06Z",
-      "comment_body_sha256": "1ce70e45205c6e20a2c33525d64dd28a05aad15f806a31a64d9f2bf1b004f7f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119385,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "stop",
-      "intent": "stop",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T06:11:41.592Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": "issue-openclaw-openclaw-119385",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119385.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104160:5188229154:2026-08-05T06:11:10Z:re_review",
       "comment_id": "5188229154",
@@ -33616,6 +33571,39 @@
         "kind": "pull_request",
         "branch": "feat/compatible-bundle-agent-metadata",
         "head_sha": "6ce3e509c04cef69e230569cf3712bd9d1a21b4f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118668:5166587703:2026-08-05T11:06:07Z:clawsweeper_needs_human",
+      "comment_id": "5166587703",
+      "comment_version_key": "5166587703:2026-08-05T11:06:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118668#issuecomment-5166587703",
+      "comment_created_at": "2026-08-03T12:57:59Z",
+      "comment_updated_at": "2026-08-05T11:06:07Z",
+      "comment_body_sha256": "972cda9c0dcd0856d38e8795fa2f66faf14e5de5b63ca517047e3ab8f7cf226e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body supplies tests, static checks, and CI claims, but no redacted after-fix host-mode runtime output proving the filesystem result. After... (sha=fcd2544b7bede8f529ecadeac5daaa721e0c5805)",
+      "expected_head_sha": "fcd2544b7bede8f529ecadeac5daaa721e0c5805",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T11:07:51.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-104358-cleanup-host-staging",
+        "head_sha": "fcd2544b7bede8f529ecadeac5daaa721e0c5805",
         "cluster_id": null,
         "job_path": null
       }
