@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-42106"
 mode: "autonomous"
-run_id: "30963453992"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30963453992"
-head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
-workflow_conclusion: "success"
+run_id: "30968622876"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30968622876"
+head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T01:52:04.749Z"
+published_at: "2026-08-05T02:59:19.713Z"
 canonical: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/42106"
 canonical_pr: null
-actions_total: 2
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30963453992](https://github.com/openclaw/clawsweeper/actions/runs/30963453992)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30968622876](https://github.com/openclaw/clawsweeper/actions/runs/30968622876)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/42106
 
 ## Summary
 
-Current main still drops paragraph separators across block-streamed deliveries. A narrow, new fix PR is planned; no viable open PR exists.
+#42106 remains a reproducible, non-security canonical bug on current main; plan one narrow credited fix PR.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Current main still drops paragraph separators across block-streamed deliveries. 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
-| issue_implementation_status_comment | updated | #42106 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,8 +66,12 @@ Current main still drops paragraph separators across block-streamed deliveries. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #42106 | fix_needed | planned | canonical | The bug is source-reproducible on current main, is non-security-sensitive, needs no new public contract, and has no open viable candidate PR. |
-| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned | canonical | Create the required branch clawsweeper/issue-openclaw-openclaw-42106 and open one narrow PR after focused tests and pnpm check:changed pass. |
+| #42106 | keep_canonical | planned | canonical | Canonical report for the shared embedded-agent block-streaming delimiter loss. |
+| #73981 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| #94216 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| #94247 | keep_closed | skipped | superseded | Already closed; do not mutate. |
+| cluster:issue-openclaw-openclaw-42106 | fix_needed | planned | canonical | No viable open contributor PR exists; create one narrow current-main fix. |
+| cluster:issue-openclaw-openclaw-42106 | build_fix_artifact | planned | canonical | Prepare the executable new-fix-PR plan below. |
 
 ## Needs Human
 
