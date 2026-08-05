@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T02:08:52.940Z",
+  "updated_at": "2026-08-05T02:09:04.679Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119278:5181739358:2026-08-04T21:31:21Z:clawsweeper_needs_human",
-      "comment_id": "5181739358",
-      "comment_version_key": "5181739358:2026-08-04T21:31:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119278#issuecomment-5181739358",
-      "comment_created_at": "2026-08-04T16:18:15Z",
-      "comment_updated_at": "2026-08-04T21:31:21Z",
-      "comment_body_sha256": "42489fbaa8ae8f4764798540457fe311bc227ad12de2c75a465f95239a917fd0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119278,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds two security-sensitive configuration surfaces (allowBots and botLoopProtection); default denial is preserved, but a maintainer must explicitly sponsor the permanent bundled-... (sha=f063dac74c5038ced63d70a94c62b11f1e2c2af5)",
-      "expected_head_sha": "f063dac74c5038ced63d70a94c62b11f1e2c2af5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T22:17:44.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/clickclack-bot-to-bot",
-        "head_sha": "f063dac74c5038ced63d70a94c62b11f1e2c2af5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119277:5181767588:2026-08-04T21:19:41Z:clawsweeper_auto_repair",
       "comment_id": "5181767588",
@@ -31320,6 +31287,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119275:5186713657:2026-08-05T02:08:33Z:re_review",
+      "comment_id": "5186713657",
+      "comment_version_key": "5186713657:2026-08-05T02:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119275#issuecomment-5186713657",
+      "comment_created_at": "2026-08-05T02:08:33Z",
+      "comment_updated_at": "2026-08-05T02:08:33Z",
+      "comment_body_sha256": "9beb249fdde3c80efd9f0b14d63ea4a5ad8a9a8c96e6f9dec06de6b3a1934903",
+      "source_delivery_id": "9050ec50-9072-11f1-82c7-9a4878c9a068",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119275,
+      "author": "dandriscoll",
+      "author_id": 5069805,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T02:09:02.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-suffix-drops-summary-body",
+        "head_sha": "ae553187207622e729d4181abc82a8930c034f7a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
