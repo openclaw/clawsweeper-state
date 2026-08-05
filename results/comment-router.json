@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:03:22.445Z",
+  "updated_at": "2026-08-05T07:03:35.833Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:4509650455:2026-05-21T15:14:22Z:re_review",
-      "comment_id": "4509650455",
-      "comment_version_key": "4509650455:2026-05-21T15:14:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4509650455",
-      "comment_created_at": "2026-05-21T15:14:22Z",
-      "comment_updated_at": "2026-05-21T15:14:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:22:32.620Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:4510287039:2026-05-21T16:20:08Z:re_review",
       "comment_id": "4510287039",
@@ -32745,6 +32718,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1078:5161998484:2026-08-05T07:03:00Z:clawsweeper_needs_human",
+      "comment_id": "5161998484",
+      "comment_version_key": "5161998484:2026-08-05T07:03:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1078#issuecomment-5161998484",
+      "comment_created_at": "2026-08-03T03:30:14Z",
+      "comment_updated_at": "2026-08-05T07:03:00Z",
+      "comment_body_sha256": "153acfa1f0880e52d77d2ce38b0f10174bb25a1ac0b405a6eaf43be700a3b8ac",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1078,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older cached tool metadata has no run or legacy-turn scope. The migration is deterministic and tested, but maintainers must explicitly accept how historical rows are matched and resto... (sha=7eb9183afefdd7242baee38c922c90a447d29159)",
+      "expected_head_sha": "7eb9183afefdd7242baee38c922c90a447d29159",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:03:35.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-preserve-native-tool-identity",
+        "head_sha": "7eb9183afefdd7242baee38c922c90a447d29159",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
