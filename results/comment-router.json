@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T20:22:55.910Z",
+  "updated_at": "2026-08-05T20:23:07.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5193744094:2026-08-05T15:25:19Z:re_review",
-      "comment_id": "5193744094",
-      "comment_version_key": "5193744094:2026-08-05T15:25:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5193744094",
-      "comment_created_at": "2026-08-05T15:25:19Z",
-      "comment_updated_at": "2026-08-05T15:25:19Z",
-      "comment_body_sha256": "c56e7a5a8fc65a2d116eb504d3c2ac681b42bbf568e41b9b731043a872c0ffba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — real gateway behavior proof added to the pr body: drove the real `startgatewayconfigreloader` + real chokidar watcher against a real `openclaw.json` on disk (writes via the production `subscribetowrites` path). terminal trace in evidence shows explicit a→b deferral, ordinary b→a revert re-arming the restart (no `reverted to running config` cancel), plus a control run proving planner-derived debt still cancels. all 130 ci check-runs on head `1b10face5` are green (0 failures)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T16:11:04.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-cancel-restart-on-revert-119360",
-        "head_sha": "1b10face582653074459032073b90880a795aae6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119576:5190604219:2026-08-05T16:10:18Z:clawsweeper_auto_repair",
       "comment_id": "5190604219",
@@ -32435,6 +32388,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-presentation-models",
         "head_sha": "b77dfba0f1dd90f53f7393d73653d8ec279b34a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1077:5160354843:2026-08-05T20:22:24Z:clawsweeper_needs_human",
+      "comment_id": "5160354843",
+      "comment_version_key": "5160354843:2026-08-05T20:22:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1077#issuecomment-5160354843",
+      "comment_created_at": "2026-08-02T21:09:52Z",
+      "comment_updated_at": "2026-08-05T20:22:24Z",
+      "comment_body_sha256": "b3cff4c5dbd6386b552f3dbf373ad57a0820c949f9f0784bf490e856a59f0694",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1077,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR cannot merge independently because it depends on the open drafts https://github.com/openclaw/openclaw-windows-node/pull/1090 and https://github.com/openclaw/openclaw-windows-n... (sha=96549f9766e5e30812482251de75d76d628ea23a)",
+      "expected_head_sha": "96549f9766e5e30812482251de75d76d628ea23a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T20:23:07.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-add-reasoning-default-reset",
+        "head_sha": "96549f9766e5e30812482251de75d76d628ea23a",
         "cluster_id": null,
         "job_path": null
       }
