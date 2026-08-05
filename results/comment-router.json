@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T09:02:57.633Z",
+  "updated_at": "2026-08-05T09:03:00.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118926:5172264469:2026-08-05T03:19:28Z:clawsweeper_needs_human",
-      "comment_id": "5172264469",
-      "comment_version_key": "5172264469:2026-08-05T03:19:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118926#issuecomment-5172264469",
-      "comment_created_at": "2026-08-03T22:07:20Z",
-      "comment_updated_at": "2026-08-05T03:19:28Z",
-      "comment_body_sha256": "1071e662d95e98a927dc188196e4a29940dd6db0ec00301d6888913f26886107",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118926,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that still pass either retired flag will now fail argument parsing; maintainers should explicitly accept that immediate rejection rather than restore a schema-invalid... (sha=fccf952031566dbe854a62325d0845d811db4ff7)",
-      "expected_head_sha": "fccf952031566dbe854a62325d0845d811db4ff7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T03:20:19.334Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-doctor-cli-recovery",
-        "head_sha": "fccf952031566dbe854a62325d0845d811db4ff7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119331:5186896778:2026-08-05T02:38:50Z:re_review",
       "comment_id": "5186896778",
@@ -33180,6 +33147,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119539:5189798552:2026-08-05T09:02:33Z:re_review",
+      "comment_id": "5189798552",
+      "comment_version_key": "5189798552:2026-08-05T09:02:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119539#issuecomment-5189798552",
+      "comment_created_at": "2026-08-05T09:02:33Z",
+      "comment_updated_at": "2026-08-05T09:02:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "65ef9210-90ac-11f1-91ff-e82e1af7a2db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119539,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T09:02:59.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t37-01-synology-nonidempotent-retry",
+        "head_sha": "cc6dab710f059e78674b3de486c1fae4df0a0bde",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
