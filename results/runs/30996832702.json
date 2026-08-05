@@ -1,0 +1,79 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119557",
+  "mode": "plan",
+  "run_id": "30996832702",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30996832702",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119557.md",
+  "published_at": "2026-08-05T10:26:34.123Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119557",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119557",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119567",
+  "summary": "Keep #119557 and the narrow, green #119567 implementation as canonical. Keep the error-terminal work (#119554/#119556) and contributor quiet-stream PR #119566 related; this job cannot merge or close anything.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/119557",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119557",
+      "candidate_fix": "#119567",
+      "reason": "Canonical bug report; no close action is permitted."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119567",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119557",
+      "candidate_fix": "#119567",
+      "reason": "Viable canonical implementation PR; retain for normal maintainer merge handling."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/119554",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119557",
+      "candidate_fix": "#119556",
+      "reason": "Related Gateway streaming family, but a distinct terminal-error root cause."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119556",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119554",
+      "candidate_fix": "#119556",
+      "reason": "Useful contributor work with distinct validation and ownership; no closure or merge action is allowed."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119566",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119557",
+      "candidate_fix": null,
+      "reason": "Keep open for contributor credit and maintainer comparison; do not treat it as safely superseded in this plan."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_related": 3
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

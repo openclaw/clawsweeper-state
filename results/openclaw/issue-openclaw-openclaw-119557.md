@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119557"
-mode: "autonomous"
-run_id: "30992476447"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30992476447"
+mode: "plan"
+run_id: "30996832702"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30996832702"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T10:05:29.681Z"
+published_at: "2026-08-05T10:26:34.123Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119557"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119557"
-canonical_pr: null
-actions_total: 7
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119567"
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30992476447](https://github.com/openclaw/clawsweeper/actions/runs/30992476447)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30996832702](https://github.com/openclaw/clawsweeper/actions/runs/30996832702)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/119557
 
 ## Summary
 
-Current main c02e39345bf6946acd0635ac18732f4003dd45b5 still has the bare 150 ms delta-throttle return, so #119557 is valid. Plan a narrow new PR that gives active streamed chat a lifecycle-owned trailing flush; keep #119556 separate because it fixes the related error-terminal buffer-clear path.
+Keep #119557 and the narrow, green #119567 implementation as canonical. Keep the error-terminal work (#119554/#119556) and contributor quiet-stream PR #119566 related; this job cannot merge or close anything.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,8 +54,7 @@ Current main c02e39345bf6946acd0635ac18732f4003dd45b5 still has the bare 150 ms 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119567 | clawsweeper/issue-openclaw-openclaw-119557 |  |
-| issue_implementation_status_comment | updated | #119557 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,13 +66,11 @@ Current main c02e39345bf6946acd0635ac18732f4003dd45b5 still has the bare 150 ms 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118192 | keep_closed | skipped | superseded | Already closed; no closure or mutation is valid. |
-| #118207 | keep_closed | skipped | superseded | Already closed; no closure or mutation is valid. |
-| #119554 | keep_related | planned | related | Distinct root cause and validation path; leave #119554 with its contributor PR #119556. |
-| #119556 | keep_related | planned | related | Keep the contributor's distinct error-terminal repair independent and credited; do not duplicate or replace it. |
-| #119557 | fix_needed | planned | canonical | A narrow lifecycle-owned trailing timer is the canonical owner-boundary repair. |
-| cluster:issue-openclaw-openclaw-119557 | build_fix_artifact | planned | canonical | #119557 has no implementation PR and permits a narrow new fix PR. |
-| cluster:issue-openclaw-openclaw-119557 | open_fix_pr | planned | canonical | Job authorizes fix and raise_pr, but not merge or close. |
+| https://github.com/openclaw/openclaw/issues/119557 | keep_canonical | planned | canonical | Canonical bug report; no close action is permitted. |
+| https://github.com/openclaw/openclaw/pull/119567 | keep_canonical | planned | canonical | Viable canonical implementation PR; retain for normal maintainer merge handling. |
+| https://github.com/openclaw/openclaw/issues/119554 | keep_related | planned | related | Related Gateway streaming family, but a distinct terminal-error root cause. |
+| https://github.com/openclaw/openclaw/pull/119556 | keep_related | planned | related | Useful contributor work with distinct validation and ownership; no closure or merge action is allowed. |
+| https://github.com/openclaw/openclaw/pull/119566 | keep_related | planned | related | Keep open for contributor credit and maintainer comparison; do not treat it as safely superseded in this plan. |
 
 ## Needs Human
 
