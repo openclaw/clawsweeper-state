@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-114169",
+  "mode": "plan",
+  "run_id": "31045738534",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31045738534",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
+  "published_at": "2026-08-05T21:22:30.304Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/114169",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119735",
+  "summary": "Keep #114169 open as the canonical issue and #119735 open as its viable canonical fix PR. The closed configuration PR #114840 is historical partial-overlap context only. Merge is not permitted by this job.",
+  "actions": [
+    {
+      "target": "#114169",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114169",
+      "candidate_fix": "#119735",
+      "reason": "Canonical issue remains open while the repair PR owns validation and landing."
+    },
+    {
+      "target": "#114840",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#114169",
+      "candidate_fix": null,
+      "reason": "Already closed; no close action is valid."
+    },
+    {
+      "target": "#119735",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119735",
+      "candidate_fix": null,
+      "reason": "Merge is disabled by job frontmatter; retain this PR as the canonical fix path for a later merge-gated run."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
