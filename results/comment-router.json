@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:11:21.228Z",
+  "updated_at": "2026-08-05T07:12:02.196Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116416:5133168342:2026-07-30T15:53:12Z:re_review",
-      "comment_id": "5133168342",
-      "comment_version_key": "5133168342:2026-07-30T15:53:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116416#issuecomment-5133168342",
-      "comment_created_at": "2026-07-30T15:53:12Z",
-      "comment_updated_at": "2026-07-30T15:53:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116416,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:22:59.647Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116416:5157365433:2026-08-02T11:00:53Z:re_review",
       "comment_id": "5157365433",
@@ -32841,6 +32814,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104160:5188702737:2026-08-05T07:11:27Z:re_review",
+      "comment_id": "5188702737",
+      "comment_version_key": "5188702737:2026-08-05T07:11:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104160#issuecomment-5188702737",
+      "comment_created_at": "2026-08-05T07:11:27Z",
+      "comment_updated_at": "2026-08-05T07:11:27Z",
+      "comment_body_sha256": "1eafcf2f90f40c12d9de5d678ef1dfe52fc134c4030abf21e9141c9d191b5162",
+      "source_delivery_id": "e0c08f90-909c-11f1-8b01-dc882b9e5178",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104160,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 3f95c85a3656ae3bf37bc7d278b32d280db1da17. repaired the docs slice after the #104159 restack: kept docs_map publish/package-owned, normalized private command gates in the command reference generator, preserved generated docs for the live node cli flags, capped command prompt guidance, and hid host cli routes in code mode. wsl proof: targeted vitest stack passed 4 shards / 114 tests; docs:commands:check, oxfmt --check, git diff --check, and pnpm deadcode:exports passed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T07:12:00.186Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/commands-upstream-docs",
+        "head_sha": "3f95c85a3656ae3bf37bc7d278b32d280db1da17",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
