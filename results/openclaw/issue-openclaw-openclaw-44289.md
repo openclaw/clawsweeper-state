@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31053077595"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31053077595"
+run_id: "31055603971"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31055603971"
 head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-05T23:21:47.991Z"
+published_at: "2026-08-05T23:54:08.660Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
-actions_total: 2
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 1
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31053077595](https://github.com/openclaw/clawsweeper/actions/runs/31053077595)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31055603971](https://github.com/openclaw/clawsweeper/actions/runs/31055603971)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains a reproducible canonical documentation-drift bug on main. A narrow generated-docs fix is defined, but this read-only checkout cannot create the branch or install the missing test dependency required for local validation.
+#44289 remains reproducible on b269e652bc8118abb53e6486a839cf120dc55043: registry-backed matrix construction exists, but no generator/check writes both reference artifacts or protects preflight. A narrow credited new-PR artifact is ready. Implementation is blocked only because this checkout is read-only; even `pnpm docs:list` fails when Corepack attempts to create its cache on the EROFS filesystem.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 1 |
@@ -67,8 +67,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | blocked | canonical | The defect is verified, but implementation and validation are blocked by the read-only checkout and unavailable dependency installation. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Create one narrow credited PR from `clawsweeper/issue-openclaw-openclaw-44289`. The branch must be validated after dependencies are available. |
+| #44289 | fix_needed | blocked | canonical | The repair is source-reproducible, but this worker cannot write a branch, generated artifacts, or local validation state in the supplied read-only checkout. |
+| #85969 | keep_closed | skipped | superseded | Historical context only; no mutation is valid for an already closed PR. |
+| #89142 | keep_closed | skipped | superseded | Historical context only; no mutation is valid for an already closed PR. |
+| #91612 | keep_closed | skipped | superseded | Historical context only; no mutation is valid for an already closed PR. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | A deterministic executor can apply this artifact in a writable task checkout. |
+| cluster:issue-openclaw-openclaw-44289 | open_fix_pr | blocked |  | Do not open a PR without the implementation and validation required by the job. |
 
 ## Needs Human
 

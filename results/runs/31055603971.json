@@ -1,0 +1,126 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "31055603971",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31055603971",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-05T23:54:08.660Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains reproducible on b269e652bc8118abb53e6486a839cf120dc55043: registry-backed matrix construction exists, but no generator/check writes both reference artifacts or protects preflight. A narrow credited new-PR artifact is ready. Implementation is blocked only because this checkout is read-only; even `pnpm docs:list` fails when Corepack attempts to create its cache on the EROFS filesystem.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "The repair is source-reproducible, but this worker cannot write a branch, generated artifacts, or local validation state in the supplied read-only checkout."
+    },
+    {
+      "target": "#85969",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for an already closed PR."
+    },
+    {
+      "target": "#89142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for an already closed PR."
+    },
+    {
+      "target": "#91612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for an already closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "A deterministic executor can apply this artifact in a writable task checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Do not open a PR without the implementation and validation required by the job."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#44289",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
