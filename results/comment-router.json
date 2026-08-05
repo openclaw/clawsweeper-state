@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T08:08:19.247Z",
+  "updated_at": "2026-08-05T08:08:36.165Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119430:5187071163:2026-08-05T03:07:45Z:clawsweeper_auto_repair",
-      "comment_id": "5187071163",
-      "comment_version_key": "5187071163:2026-08-05T03:07:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119430#issuecomment-5187071163",
-      "comment_created_at": "2026-08-05T03:07:45Z",
-      "comment_updated_at": "2026-08-05T03:07:45Z",
-      "comment_body_sha256": "3b0f9dfcf7ab1938fa45a6b78e7ed041a06093bc7ae4240b0f0d2ca2e03a9f28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119430,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=83f287682765e50cd63c540a280e6851ba64cd54)",
-      "expected_head_sha": "83f287682765e50cd63c540a280e6851ba64cd54",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T03:08:23.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-summary-output-cap-119404",
-        "head_sha": "83f287682765e50cd63c540a280e6851ba64cd54",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-05T03:06:23Z:clawsweeper_needs_human",
       "comment_id": "5169562551",
@@ -32783,6 +32750,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3362:5186726742:2026-08-05T08:07:37Z:clawsweeper_needs_human",
+      "comment_id": "5186726742",
+      "comment_version_key": "5186726742:2026-08-05T08:07:37Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3362#issuecomment-5186726742",
+      "comment_created_at": "2026-08-05T02:10:37Z",
+      "comment_updated_at": "2026-08-05T08:07:37Z",
+      "comment_body_sha256": "a5363c34c9d83f025b872702729f281a48988225aec1052f8faca96c3f0b4010",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3362,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes mixed CJK/Latin preview output at every shared helper call site; maintainers should explicitly accept the 60% display-policy threshold before landing. (sha=c53b78604415574465d80dbed273e71021717477)",
+      "expected_head_sha": "c53b78604415574465d80dbed273e71021717477",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T08:08:36.165Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-preview-cjk",
+        "head_sha": "c53b78604415574465d80dbed273e71021717477",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
