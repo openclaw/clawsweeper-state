@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:01:04.199Z",
+  "updated_at": "2026-08-05T06:01:10.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117550:5186666111:2026-08-05T02:00:44Z:re_review",
-      "comment_id": "5186666111",
-      "comment_version_key": "5186666111:2026-08-05T02:00:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117550#issuecomment-5186666111",
-      "comment_created_at": "2026-08-05T02:00:44Z",
-      "comment_updated_at": "2026-08-05T02:00:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "7856ba90-9071-11f1-8869-ee5ca4b66b02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117550,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:01:17.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-picker-auth-profile",
-        "head_sha": "7c2424784f70795a41641685dd638a78decb2383",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118965:5186605968:2026-08-05T01:50:31Z:re_review",
       "comment_id": "5186605968",
@@ -32681,6 +32633,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-70c85b9e63",
         "head_sha": "4bd2bdf790d447e94553e8c859c3b52de4b759d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-05T06:00:38Z:clawsweeper_auto_repair",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-05T06:00:38Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-05T06:00:38Z",
+      "comment_body_sha256": "7cdef4cb0187443beb88f64bfbf3257bd90b43e42c769373d17d8cfb6827f524",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d)",
+      "expected_head_sha": "146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:01:10.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "146c5a1b2ee9ad1aa6e32a35ed279ca3a8522c4d",
         "cluster_id": null,
         "job_path": null
       }
