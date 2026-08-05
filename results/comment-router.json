@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:04:25.225Z",
+  "updated_at": "2026-08-05T10:04:28.694Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:100960:5187780477:2026-08-05T05:06:15Z:re_review",
-      "comment_id": "5187780477",
-      "comment_version_key": "5187780477:2026-08-05T05:06:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100960#issuecomment-5187780477",
-      "comment_created_at": "2026-08-05T05:06:15Z",
-      "comment_updated_at": "2026-08-05T05:06:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "62e959f0-908b-11f1-87f9-94910cafffef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100960,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:06:44.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/cli-catalog-review-hardening",
-        "head_sha": "13ddbc80a4be7e432954d456802f955b9488b3a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3074:4991707464:2026-08-05T05:06:07Z:clawsweeper_auto_repair",
       "comment_id": "4991707464",
@@ -33395,6 +33347,39 @@
         "kind": "pull_request",
         "branch": "s/fix-chat-avatar-shift",
         "head_sha": "4201cfd1d9d06fe52b5471916afabcb52388a916",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118601:5164408177:2026-08-05T10:02:57Z:clawsweeper_needs_human",
+      "comment_id": "5164408177",
+      "comment_version_key": "5164408177:2026-08-05T10:02:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118601#issuecomment-5164408177",
+      "comment_created_at": "2026-08-03T09:09:29Z",
+      "comment_updated_at": "2026-08-05T10:02:57Z",
+      "comment_body_sha256": "deacd1b236844990c0a4e2c49f99fc8e29648e5d7c5edc762f249888a75b74c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118601,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh the exact head and its required checks before merging the shared Plugin SDK registration change. (sha=d1ebc869689bb021274b20e8147565a7ca025ce9)",
+      "expected_head_sha": "d1ebc869689bb021274b20e8147565a7ca025ce9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:04:28.694Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hook-migration-diagnostic-116965",
+        "head_sha": "d1ebc869689bb021274b20e8147565a7ca025ce9",
         "cluster_id": null,
         "job_path": null
       }
