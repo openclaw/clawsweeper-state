@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:26:37.288Z",
+  "updated_at": "2026-08-05T11:26:39.559Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:66:5157918151:2026-08-05T08:01:14Z:clawsweeper_auto_repair",
-      "comment_id": "5157918151",
-      "comment_version_key": "5157918151:2026-08-05T08:01:14Z",
-      "comment_url": "https://github.com/openclaw/remindctl/pull/66#issuecomment-5157918151",
-      "comment_created_at": "2026-08-02T12:38:15Z",
-      "comment_updated_at": "2026-08-05T08:01:14Z",
-      "comment_body_sha256": "2f1c10075fe72488a21c2a6302bb4fb095fc976ffb8b58e8f724ad3a55f7ff6e",
-      "repo": "openclaw/remindctl",
-      "issue_number": 66,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=db8073ef8403a3bb07abc5168e531ffdf0242745)",
-      "expected_head_sha": "db8073ef8403a3bb07abc5168e531ffdf0242745",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T08:02:44.299Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/eventkit-fetch-timeout",
-        "head_sha": "db8073ef8403a3bb07abc5168e531ffdf0242745",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-05T08:01:16Z:clawsweeper_auto_repair",
       "comment_id": "5160727900",
@@ -32357,6 +32324,54 @@
         "kind": "pull_request",
         "branch": "fix/openai-quicksilver-config-fallback-119274",
         "head_sha": "f4b12424d6f3c4b8eb46b67c0207455a59cd747f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119226:5191128679:2026-08-05T11:26:03Z:re_review",
+      "comment_id": "5191128679",
+      "comment_version_key": "5191128679:2026-08-05T11:26:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119226#issuecomment-5191128679",
+      "comment_created_at": "2026-08-05T11:26:03Z",
+      "comment_updated_at": "2026-08-05T11:26:03Z",
+      "comment_body_sha256": "3169d486ed39daa16e299dda661ad5f51d850317e6db1151a6361523af43e948",
+      "source_delivery_id": "724c0020-90c0-11f1-97f4-003850ee76a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119226,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof and ci status evidence were added to the pr body and the `real behavior proof` check is passing; the latest review predates that evidence update",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T11:26:37.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-lock-state-dir-118371",
+        "head_sha": "9b4473953675084b7b1637af14311c69f983678e",
         "cluster_id": null,
         "job_path": null
       },
