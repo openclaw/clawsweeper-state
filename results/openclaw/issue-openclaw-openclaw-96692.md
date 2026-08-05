@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-96692"
-mode: "autonomous"
-run_id: "31008717397"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31008717397"
-head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T13:49:28.114Z"
-canonical: "https://github.com/openclaw/openclaw/issues/96692"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/96692"
+mode: "plan"
+run_id: "31013319057"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31013319057"
+head_sha: "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-05T15:11:10.452Z"
+canonical: "#96692"
+canonical_issue: "#96692"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31008717397](https://github.com/openclaw/clawsweeper/actions/runs/31008717397)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31013319057](https://github.com/openclaw/clawsweeper/actions/runs/31013319057)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/96692
+Canonical: #96692
 
 ## Summary
 
-#96692 remains reproducible on current checkout main 4b37a052: Slack text and Block Kit sends can accept absent or mismatched response thread evidence as success. A narrow sender-owner repair is planned, but this worker checkout is read-only and has no dependencies, so it cannot create or validate the required branch/PR.
+#96692 remains a reproducible canonical Slack delivery-confirmation bug on current main. Plan a narrow replacement PR that retains generic child-to-root canonicalization while requiring confirmed placement for terminal source replies.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/96692
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #96692 | keep_canonical | planned | canonical | The issue remains a narrow, non-security Slack delivery-truth bug; no viable open PR exists. |
-| #96692 | fix_needed | blocked | canonical | Implementation is blocked only by the immutable checkout. The executor should apply the supplied narrow artifact on an editable checkout, then re-fetch issue state before opening/updating the configured branch. |
-| cluster:issue-openclaw-openclaw-96692 | build_fix_artifact | planned | canonical | A single sender-owner repair plus focused regressions is the best fix; #96705 found the same invariant but is closed, uneditable, and much broader than needed. |
+| #96692 | fix_needed | planned | canonical | Repair receipt provenance at its owner rather than adding recovery or intake policy. |
+| cluster:issue-openclaw-openclaw-96692 | build_fix_artifact | planned | canonical | Create a narrow new fix PR; the historical fork #96705 is closed, dirty, and uneditable. |
+| #96692 | open_fix_pr | planned | canonical | The job authorizes a new fix PR and forbids merge or issue closure. |
 
 ## Needs Human
 
