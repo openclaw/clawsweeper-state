@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:24:41.785Z",
+  "updated_at": "2026-08-05T23:24:44.750Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118681:5194649153:2026-08-05T16:45:53Z:re_review",
-      "comment_id": "5194649153",
-      "comment_version_key": "5194649153:2026-08-05T16:45:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5194649153",
-      "comment_created_at": "2026-08-05T16:45:53Z",
-      "comment_updated_at": "2026-08-05T16:45:53Z",
-      "comment_body_sha256": "c870f229208e6119ab896e723a766abb126aefd958398eff035f9767cd5137de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118681,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1 fixed on head 1d94f4d6fcf (rebased onto current origin/main): the nested maintenance turn now also clears userturntranscriptrecorder plus every remaining outer stateful field (enqueue, streamparams, internalevents, inputprovenance, ownernumbers, delivery modes, lifecycle deferral, block-reply shaping, terminal reply expectation, conversationrecall, mcp cleanup, persistence suppression flags), retaining only the private write observer. isolation regression asserts the outer recorder is neither supplied nor completed and none of the outer stateful fields reach the nested run. exact-head checkpoint + durable-write evidence re-run on this head (memory file updated; evidence files refreshed)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T17:35:34.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reactive-memory-flush-114081",
-        "head_sha": "1d94f4d6fcf1a20270af03cbd544bbe9b6675597",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119632:5194803061:2026-08-05T17:00:47Z:re_review",
       "comment_id": "5194803061",
@@ -33194,6 +33147,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rastermill:2:5194205534:2026-08-05T23:11:32Z:clawsweeper_needs_human",
+      "comment_id": "5194205534",
+      "comment_version_key": "5194205534:2026-08-05T23:11:32Z",
+      "comment_url": "https://github.com/openclaw/rastermill/pull/2#issuecomment-5194205534",
+      "comment_created_at": "2026-08-05T16:04:31Z",
+      "comment_updated_at": "2026-08-05T23:11:32Z",
+      "comment_body_sha256": "148e8798902735e154b160eef531ef58cfaec3e1d0e6e9b8a89e06c169c4340a",
+      "repo": "openclaw/rastermill",
+      "issue_number": 2,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - With default autoOrient, macOS sips conversions of transformed HEIF/AVIF inputs now produce upright pixels and swapped output geometry; callers that depended on raw container geometry... (sha=e3fd172deac87a3570a9e276deb34faa6752f5cb)",
+      "expected_head_sha": "e3fd172deac87a3570a9e276deb34faa6752f5cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:24:44.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/heif-auto-orient",
+        "head_sha": "e3fd172deac87a3570a9e276deb34faa6752f5cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
