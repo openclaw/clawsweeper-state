@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:38:55.421Z",
+  "updated_at": "2026-08-05T10:39:42.273Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:100960:5187971146:2026-08-05T05:35:32Z:re_review",
-      "comment_id": "5187971146",
-      "comment_version_key": "5187971146:2026-08-05T05:35:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100960#issuecomment-5187971146",
-      "comment_created_at": "2026-08-05T05:35:32Z",
-      "comment_updated_at": "2026-08-05T05:35:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "7a6c7f90-908f-11f1-94ea-f9cbd50de95c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100960,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:36:06.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/cli-catalog-review-hardening",
-        "head_sha": "c170708438e5a154ccbcc7c73e28a0d2b8fc27d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104160:4942412146:2026-08-05T05:36:12Z:clawsweeper_auto_repair",
       "comment_id": "4942412146",
@@ -33570,6 +33522,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-ffe2cf8ffe",
         "head_sha": "d4a5829ab82458905a8e5469a8e7177689426976",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119482:5187769266:2026-08-05T10:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5187769266",
+      "comment_version_key": "5187769266:2026-08-05T10:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119482#issuecomment-5187769266",
+      "comment_created_at": "2026-08-05T05:04:33Z",
+      "comment_updated_at": "2026-08-05T10:38:45Z",
+      "comment_body_sha256": "1182a6a9ae4f49cafba8f40aa21b0362ac9333fc8d74cf4ec6322fe4ba84fe6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119482,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The only published Kova comparison is for ancestor 72121c42e78a900d15ec3066f31971a29a9a724c; the PR body itself says later health-stage changes require a fresh exact-head run. (sha=ff416393255918172633e82a4d6f7f1d9e4f1ff4)",
+      "expected_head_sha": "ff416393255918172633e82a4d6f7f1d9e4f1ff4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:39:42.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-plugin-metadata-context-20260805",
+        "head_sha": "ff416393255918172633e82a4d6f7f1d9e4f1ff4",
         "cluster_id": null,
         "job_path": null
       }
