@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-05T03:09:40.363Z",
+  "updated_at": "2026-08-05T03:09:17.049Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118803:5169789882:2026-08-04T23:24:23Z:clawsweeper_auto_repair",
+      "comment_id": "5169789882",
+      "comment_version_key": "5169789882:2026-08-04T23:24:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118803#issuecomment-5169789882",
+      "comment_created_at": "2026-08-03T17:42:37Z",
+      "comment_updated_at": "2026-08-04T23:24:23Z",
+      "comment_body_sha256": "4ef8be110eeecbe00c48423621e9730090d26e64a14f615a001b9ffe71ebd7d4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118803,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=9b80a66e7b503859592eee5843fa6489c148f90a)",
+      "expected_head_sha": "9b80a66e7b503859592eee5843fa6489c148f90a",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-04T23:25:37.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/opencode-go-hy3-catalog",
+        "head_sha": "9b80a66e7b503859592eee5843fa6489c148f90a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93247:4706848560:2026-08-04T23:24:38Z:clawsweeper_auto_repair",
       "comment_id": "4706848560",
@@ -31883,54 +31916,6 @@
       "status": "skipped",
       "processed_at": "2026-08-05T03:09:17.049Z",
       "target": null
-    },
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2646:5187079230:2026-08-05T03:09:03Z:re_review",
-      "comment_id": "5187079230",
-      "comment_version_key": "5187079230:2026-08-05T03:09:03Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2646#issuecomment-5187079230",
-      "comment_created_at": "2026-08-05T03:09:03Z",
-      "comment_updated_at": "2026-08-05T03:09:03Z",
-      "comment_body_sha256": "0881a96e6f1c22caba995a0323079f55d9e129c7dc80c8d1721ae75de7287d3e",
-      "source_delivery_id": "044405e0-907b-11f1-8346-25b031ff079c",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2646,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - both p1 findings from the 02:49 review are addressed in 3970a96a6 (on top of @steipete's 1f104be21 and the main merge):",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T03:09:38.149Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bound-cost-cache-2637",
-        "head_sha": "3970a96a67ae2e3f78e204d6a60e8fa5c6b4c6d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
