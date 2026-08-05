@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/crabpot",
+  "cluster_id": "automerge-openclaw-crabpot-283",
+  "mode": "autonomous",
+  "run_id": "31032367410",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31032367410",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md",
+  "published_at": "2026-08-05T18:05:03.998Z",
+  "canonical": "#283",
+  "canonical_issue": null,
+  "canonical_pr": "#283",
+  "summary": "PR #283 is the canonical adopted repair candidate. Its current head passed the hydrated GitHub checks, but ClawSweeper’s review found the generated workspace-plan reports still contain the pre-0.3.21 Inspector checkout. Repair the same writable contributor branch by rebasing and regenerating those two reports; do not merge or close.",
+  "actions": [
+    {
+      "target": "#283",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#283",
+      "candidate_fix": "#283",
+      "reason": "The branch’s source and package pin update must be propagated to its tracked generated workspace-plan outputs before it can satisfy the review finding."
+    },
+    {
+      "target": "#283",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#283",
+      "candidate_fix": "#283",
+      "reason": "A narrow contributor-branch repair preserves Patrick-Erichsen’s commits and directly resolves the only actionable review finding."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
