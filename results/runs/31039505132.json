@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-57148",
+  "mode": "autonomous",
+  "run_id": "31039505132",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31039505132",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
+  "published_at": "2026-08-05T20:30:47.515Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/57148",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/57148",
+  "canonical_pr": null,
+  "summary": "Verified on main e69c3df2361b38285917c29b0c90867c75b8ebe9: ordinary subagent completion text is assigned unbounded in src/agents/subagent-announce.ts and rendered through the shared protected/plain task-completion formatter in src/agents/internal-events.ts. A narrow 6,000-UTF-16-unit capped formatter with a visible truncation marker is appropriate; no config surface or persistence change is needed. Implementation is blocked because this checkout is read-only and has no dependencies: writing fails with EROFS and the focused Vitest runner fails before tests load because p-map is absent.",
+  "actions": [
+    {
+      "target": "#57148",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "The bug is reproducible by source inspection and has a narrow owner-boundary repair, but this worker cannot edit or validate the branch in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-57148",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "A new narrow ClawSweeper fix PR is the viable canonical path."
+    },
+    {
+      "target": "#73320",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantined independently; it does not block the ordinary non-security repair for #57148."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119731",
+      "branch": "clawsweeper/issue-openclaw-openclaw-57148",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119731",
+      "commit": "accec47835415908ba8b5fc7aa09e1ef0da87824",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#57148",
+      "pr": "https://github.com/openclaw/openclaw/pull/119731",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119731",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119731",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): bound task-completion result prompts",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

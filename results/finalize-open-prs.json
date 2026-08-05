@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T20:09:39.940Z",
-  "count": 12,
+  "generated_at": "2026-08-05T20:31:16.199Z",
+  "count": 13,
   "summary": {
-    "open_prs": 12,
+    "open_prs": 13,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 12,
+    "needs_merge_preflight": 13,
     "needs_result_backfill": 1
   },
   "dispatch": {
@@ -26,6 +26,66 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119731,
+      "title": "fix(agents): bound task-completion result prompts",
+      "url": "https://github.com/openclaw/openclaw/pull/119731",
+      "branch": "clawsweeper/issue-openclaw-openclaw-57148",
+      "head_sha": "accec47835415908ba8b5fc7aa09e1ef0da87824",
+      "cluster_id": "issue-openclaw-openclaw-57148",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
+      "updated_at": "2026-08-05T20:26:03Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 123,
+        "counts": {
+          "SKIPPED": 41,
+          "SUCCESS": 81,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31039505132",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31039505132",
+        "cluster_id": "issue-openclaw-openclaw-57148",
+        "published_at": "2026-08-05T20:30:47.515Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119731",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(agents): bound task-completion result prompts",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 119722,
       "title": "fix(uninstall): remove owned shell completion registrations with state",
@@ -111,15 +171,15 @@
       "head_sha": "a27e689fff7fc435fac963dd3fe6e539f9fa7408",
       "cluster_id": "issue-openclaw-openclaw-89430",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-05T19:09:30Z",
+      "updated_at": "2026-08-05T20:10:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 113,
+        "total": 119,
         "counts": {
-          "SKIPPED": 40,
+          "SKIPPED": 46,
           "SUCCESS": 72,
           "NEUTRAL": 1
         },
@@ -132,8 +192,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
+            "submitted_at": "2026-08-05T20:10:31Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31035509844",
@@ -171,7 +238,7 @@
       "head_sha": "8ec6719930a977e0716cf98ad1cbef4480b79a07",
       "cluster_id": "issue-openclaw-openclaw-89252",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
-      "updated_at": "2026-08-05T20:02:13Z",
+      "updated_at": "2026-08-05T20:30:22Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -218,15 +285,15 @@
       "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
       "cluster_id": "issue-openclaw-openclaw-119692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md",
-      "updated_at": "2026-08-05T19:09:29Z",
+      "updated_at": "2026-08-05T20:12:56Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 107,
+        "total": 112,
         "counts": {
-          "SKIPPED": 26,
+          "SKIPPED": 31,
           "SUCCESS": 80,
           "NEUTRAL": 1
         },
@@ -239,8 +306,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119712#issuecomment-5196827378",
+            "submitted_at": "2026-08-05T20:12:49Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31034789647",
