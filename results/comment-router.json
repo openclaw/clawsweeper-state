@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-05T23:29:25.356Z",
+  "updated_at": "2026-08-05T23:28:10.937Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118647:5194930078:2026-08-05T17:13:24Z:re_review",
+      "comment_id": "5194930078",
+      "comment_version_key": "5194930078:2026-08-05T17:13:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118647#issuecomment-5194930078",
+      "comment_created_at": "2026-08-05T17:13:24Z",
+      "comment_updated_at": "2026-08-05T17:13:24Z",
+      "comment_body_sha256": "0601fcf80465f9c839ef9e576ee7e33b265cb3a13e1051c1a6f63ce2ba247225",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118647,
+      "author": "osolmaz",
+      "author_id": 2453968,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T17:35:34.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "osolmaz/tool-loop-recovery-core",
+        "head_sha": "23043c61653c4307d66b31d78ab6ed70cf258dfe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118389:5161820263:2026-08-05T17:35:48Z:clawsweeper_auto_repair",
       "comment_id": "5161820263",
@@ -33090,39 +33137,6 @@
         "kind": "pull_request",
         "branch": "codex/fix-sqlite-archive-bounded-memory",
         "head_sha": "faa09ea11c2c473bab6b9e83b47e29cfaf5e8ee2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:57:5106099740:2026-08-05T23:12:02Z:clawsweeper_auto_repair",
-      "comment_id": "5106099740",
-      "comment_version_key": "5106099740:2026-08-05T23:12:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/57#issuecomment-5106099740",
-      "comment_created_at": "2026-07-28T15:22:58Z",
-      "comment_updated_at": "2026-08-05T23:12:02Z",
-      "comment_body_sha256": "c790722c25f37c1559c2b4f0b90c0bdfd4233c00de4c4cdd6133524445ea5b0a",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 57,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=40e8d8c18a5cb08603df59ba7eead9cadb70aab8)",
-      "expected_head_sha": "40e8d8c18a5cb08603df59ba7eead9cadb70aab8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T23:29:25.356Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "octo/20260728-provider-add-recvq8ai5lL5Z1",
-        "head_sha": "40e8d8c18a5cb08603df59ba7eead9cadb70aab8",
         "cluster_id": null,
         "job_path": null
       }
