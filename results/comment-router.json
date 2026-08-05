@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T09:24:13.033Z",
+  "updated_at": "2026-08-05T09:24:41.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119247:5180197157:2026-08-05T03:30:00Z:clawsweeper_auto_repair",
-      "comment_id": "5180197157",
-      "comment_version_key": "5180197157:2026-08-05T03:30:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119247#issuecomment-5180197157",
-      "comment_created_at": "2026-08-04T14:06:25Z",
-      "comment_updated_at": "2026-08-05T03:30:00Z",
-      "comment_body_sha256": "9ad8436baf711a058d9aad7ee7f2ee1be7cc5a98f71e28fe61663f0fbcc1b2cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119247,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9d821cec3b995613c86d88263c333e526df5eb0a)",
-      "expected_head_sha": "9d821cec3b995613c86d88263c333e526df5eb0a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T03:30:51.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resume-synthetic-placeholder-115037",
-        "head_sha": "9d821cec3b995613c86d88263c333e526df5eb0a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2643:5175888170:2026-08-05T03:36:23Z:clawsweeper_needs_human",
       "comment_id": "5175888170",
@@ -33199,6 +33166,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107295:4969333447:2026-08-05T09:19:35Z:clawsweeper_needs_human",
+      "comment_id": "4969333447",
+      "comment_version_key": "4969333447:2026-08-05T09:19:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107295#issuecomment-4969333447",
+      "comment_created_at": "2026-07-14T12:50:31Z",
+      "comment_updated_at": "2026-08-05T09:19:35Z",
+      "comment_body_sha256": "db8cab9078d239ba860e9c4d8bf200636ca84424b84438c968f6993117e7b7a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require Tencent's package to own the QQBot secret contract (P1)** - This adds a QQBot-specific core fallback whenever the package has no contract artifact or metadata loading fails. The existing generic loader a...; Review finding: [P1] Require Tencent's package to own the QQBot secret contract — src/secrets/channel-contract-api.ts:206 - [medium] Core retains Tencent credential policy — src/s... (sha=c5e3fbe1b8e67be9131a1bc54d0e250833f3dd74)",
+      "expected_head_sha": "c5e3fbe1b8e67be9131a1bc54d0e250833f3dd74",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T09:24:41.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/externalize-qqbot",
+        "head_sha": "c5e3fbe1b8e67be9131a1bc54d0e250833f3dd74",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
