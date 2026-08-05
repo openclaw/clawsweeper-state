@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 5, 2026, 17:17 UTC
+Last source update: Aug 5, 2026, 17:53 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 5, 2026, 17:17 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 5, 2026, 17:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31029155477) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 5, 2026, 17:53 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31029190448) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 5, 2026, 17:15 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31029151429) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 5, 2026, 17:15 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31029154206) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 5, 2026, 17:18 UTC
+Last source update: Aug 5, 2026, 17:28 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 379 | 100% |
-| Run attempts archived | 1028 | audit |
+| Run attempts archived | 1029 | audit |
 | Latest successful clusters | 318 | 83.9% |
 | Latest failed clusters | 59 | 15.6% |
 | Latest cancelled clusters | 2 | 0.5% |
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 5, 2026, 17:18 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31028856386](https://github.com/openclaw/clawsweeper/actions/runs/31028856386) |
+| [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 5, 2026, 17:28 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31029695571](https://github.com/openclaw/clawsweeper/actions/runs/31029695571) |
 | [openclaw/plugin-inspector](https://github.com/openclaw/plugin-inspector) | [#58](https://github.com/openclaw/plugin-inspector/pull/58) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 5, 2026, 16:42 UTC | [automerge-openclaw-plugin-inspector-58](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-plugin-inspector-58.md) | [31026026866](https://github.com/openclaw/clawsweeper/actions/runs/31026026866) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119616](https://github.com/openclaw/openclaw/pull/119616) | automation_blocked | Repair requires source edits and dependency installation, neither permitted in this worker workspace. | Aug 5, 2026, 15:20 UTC | [issue-openclaw-openclaw-119616](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119616.md) | [31018652642](https://github.com/openclaw/clawsweeper/actions/runs/31018652642) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#96692](https://github.com/openclaw/openclaw/pull/96692) | automation_failed | Implementation is blocked only by the immutable checkout. The executor should apply the supplied narrow artifact on an editable checkout, then re-f... | Aug 5, 2026, 13:49 UTC | [issue-openclaw-openclaw-96692](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-96692.md) | [31008717397](https://github.com/openclaw/clawsweeper/actions/runs/31008717397) |
