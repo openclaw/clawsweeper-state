@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:30:41.767Z",
+  "updated_at": "2026-08-05T23:30:46.007Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119585:5195170070:2026-08-05T17:36:02Z:re_review",
-      "comment_id": "5195170070",
-      "comment_version_key": "5195170070:2026-08-05T17:36:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119585#issuecomment-5195170070",
-      "comment_created_at": "2026-08-05T17:36:02Z",
-      "comment_updated_at": "2026-08-05T17:36:02Z",
-      "comment_body_sha256": "a616e319494865f65e25a015bc14d34b932d45f0ac99a86e24a6d7370928ef11",
-      "source_delivery_id": "21c89710-90f4-11f1-9ed4-3bbc0aa47bf0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119585,
-      "author": "Jackten",
-      "author_id": 2895479,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — r4 pushed (0a5ffd3c09f): both remaining p1 findings fixed (maintenance preview non-observing with the apply/preview branch traced; all 15 catalog-inferred inspection commands classified + regression-tested), the sdk merge-risk resolved by keeping `observe` off the exported helper types via an internal inspection entry point (baselines restored unchanged), and the pr body now carries inspectable current-head proof transcripts captured from a production host at this exact commit",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T17:36:43.462Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-readonly-state-db",
-        "head_sha": "0a5ffd3c09f775fede50ad21c8fd950af55cad22",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:76221:4364540514:2026-08-02T22:53:44Z:clawsweeper_auto_repair",
       "comment_id": "4364540514",
@@ -33100,6 +33052,53 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-08-05T22:41:50Z:clawsweeper_auto_repair",
+      "comment_id": "5196803797",
+      "comment_version_key": "5196803797:2026-08-05T22:41:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
+      "comment_created_at": "2026-08-05T20:10:31Z",
+      "comment_updated_at": "2026-08-05T22:41:50Z",
+      "comment_body_sha256": "dfd26dffb6063f503ffe7d019899658b66f82aa42ffdc79cd1b5fb33d9a4f0d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119718,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e45ecd8e4621947ec8a2484572270564b5ccc002)",
+      "expected_head_sha": "e45ecd8e4621947ec8a2484572270564b5ccc002",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-08-05T23:30:32.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89430",
+        "head_sha": "e45ecd8e4621947ec8a2484572270564b5ccc002",
+        "cluster_id": "automerge-openclaw-openclaw-119718",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
         },
         {
           "action": "comment",
