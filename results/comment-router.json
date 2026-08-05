@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T22:38:13.632Z",
+  "updated_at": "2026-08-05T22:38:16.883Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:4679526462:2026-06-11T10:19:05Z:re_review",
-      "comment_id": "4679526462",
-      "comment_version_key": "4679526462:2026-06-11T10:19:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-4679526462",
-      "comment_created_at": "2026-06-11T10:19:05Z",
-      "comment_updated_at": "2026-06-11T10:19:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T17:32:07.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:4682586575:2026-06-11T16:12:40Z:re_review",
       "comment_id": "4682586575",
@@ -32392,6 +32365,39 @@
         "head_sha": "accec47835415908ba8b5fc7aa09e1ef0da87824",
         "cluster_id": "issue-openclaw-openclaw-57148",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119736:5198090888:2026-08-05T22:37:03Z:clawsweeper_needs_human",
+      "comment_id": "5198090888",
+      "comment_version_key": "5198090888:2026-08-05T22:37:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119736#issuecomment-5198090888",
+      "comment_created_at": "2026-08-05T22:25:00Z",
+      "comment_updated_at": "2026-08-05T22:37:03Z",
+      "comment_body_sha256": "cccb9716b69d86813dbf9d493661a246fe7c69711ed793e8c0adfdc2c5b19463",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports focused tests and static checks, but no redacted after-fix runtime trace of persistence and restart recovery; add one before m... (sha=13473cfce64970dda50848ff03a52c54a45004c3)",
+      "expected_head_sha": "13473cfce64970dda50848ff03a52c54a45004c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T22:38:16.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "synapse/terminal-evidence-envelope",
+        "head_sha": "13473cfce64970dda50848ff03a52c54a45004c3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
