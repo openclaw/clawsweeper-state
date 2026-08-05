@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T01:00:00.572Z",
+  "updated_at": "2026-08-05T01:00:02.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-04T20:21:17Z:clawsweeper_needs_human",
-      "comment_id": "5156335270",
-      "comment_version_key": "5156335270:2026-08-04T20:21:17Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5156335270",
-      "comment_created_at": "2026-08-02T07:51:03Z",
-      "comment_updated_at": "2026-08-04T20:21:17Z",
-      "comment_body_sha256": "7918bcc8c48a61baa82d59dc46eb66eee19a757537677812594aa5af0dcd0541",
-      "repo": "openclaw/lobster",
-      "issue_number": 128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing workflows that only obtain valid output on the formerly extra request will fail at their configured retry limit after this change. (sha=4e1b81e60284e6250826b792281219df62f96871)",
-      "expected_head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T20:22:15.514Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-validation-retry-off-by-one",
-        "head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1025:5174200169:2026-08-04T20:21:42Z:clawsweeper_auto_repair",
       "comment_id": "5174200169",
@@ -31818,6 +31785,54 @@
         "kind": "pull_request",
         "branch": "stack/realtime-private-model-gate",
         "head_sha": "7ccc2c9e3b3d0955796776fed86300ace97efb97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112818:5186304721:2026-08-05T00:59:27Z:re_review",
+      "comment_id": "5186304721",
+      "comment_version_key": "5186304721:2026-08-05T00:59:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112818#issuecomment-5186304721",
+      "comment_created_at": "2026-08-05T00:59:27Z",
+      "comment_updated_at": "2026-08-05T00:59:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "e8f5afd0-9068-11f1-91db-2453626eb02b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112818,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T01:00:00.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/talk-harness-event-results",
+        "head_sha": "1053f8801e2f7c716f8010975c079046bee7460a",
         "cluster_id": null,
         "job_path": null
       },
