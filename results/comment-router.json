@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T20:23:56.581Z",
+  "updated_at": "2026-08-05T20:24:13.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3412:5194286235:2026-08-05T16:11:36Z:clawsweeper_needs_human",
-      "comment_id": "5194286235",
-      "comment_version_key": "5194286235:2026-08-05T16:11:36Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3412#issuecomment-5194286235",
-      "comment_created_at": "2026-08-05T16:11:36Z",
-      "comment_updated_at": "2026-08-05T16:11:36Z",
-      "comment_body_sha256": "c86c1f64ab690a624dd53929c5499c3e7a68cf19e122e65588c22fcdfa49e397",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3412,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - jsdom 30 changes browser-emulation behavior used across the default Vitest environment, so the still-running unit gate should complete successfully before merge. (sha=e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2)",
-      "expected_head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:12:19.238Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/jsdom-30.0.1",
-        "head_sha": "e2ac22a2d8f9e5cb6c1c9ad430feddf87fe74cb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119674:5194289602:2026-08-05T16:11:53Z:clawsweeper_auto_repair",
       "comment_id": "5194289602",
@@ -32406,6 +32373,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113421:5196895321:2026-08-05T20:20:06Z:re_review",
+      "comment_id": "5196895321",
+      "comment_version_key": "5196895321:2026-08-05T20:20:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113421#issuecomment-5196895321",
+      "comment_created_at": "2026-08-05T20:20:06Z",
+      "comment_updated_at": "2026-08-05T20:20:06Z",
+      "comment_body_sha256": "bde89a057f1a5c1ad029d08f2d3871927141acc38f4844fe09a980fe09e8d947",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113421,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 65c55a973e2086b96c3175c69ba43a8f8bee8c19",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T20:24:10.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/readiness-core-owner-adoption",
+        "head_sha": "65c55a973e2086b96c3175c69ba43a8f8bee8c19",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
