@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:29:07.625Z",
+  "updated_at": "2026-08-05T06:29:10.449Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3399:5186733346:2026-08-05T02:11:41Z:clawsweeper_auto_repair",
-      "comment_id": "5186733346",
-      "comment_version_key": "5186733346:2026-08-05T02:11:41Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3399#issuecomment-5186733346",
-      "comment_created_at": "2026-08-05T02:11:41Z",
-      "comment_updated_at": "2026-08-05T02:11:41Z",
-      "comment_body_sha256": "570998ba011149f85b7fb3d917bd6051de47a6b075f78f54d73c33a240e63570",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3399,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f5cdc9c991be5684f65f1152badfa62e03bfc7c8)",
-      "expected_head_sha": "f5cdc9c991be5684f65f1152badfa62e03bfc7c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:12:17.426Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/skills-canonical-ssr",
-        "head_sha": "f5cdc9c991be5684f65f1152badfa62e03bfc7c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119146:5176391084:2026-08-05T02:11:36Z:clawsweeper_auto_repair",
       "comment_id": "5176391084",
@@ -32629,6 +32596,54 @@
       "status": "skipped",
       "processed_at": "2026-08-05T06:29:07.625Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:126:5188358980:2026-08-05T06:28:38Z:re_review",
+      "comment_id": "5188358980",
+      "comment_version_key": "5188358980:2026-08-05T06:28:38Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5188358980",
+      "comment_created_at": "2026-08-05T06:28:38Z",
+      "comment_updated_at": "2026-08-05T06:28:38Z",
+      "comment_body_sha256": "e6cfda1e88e0c6baacc13a8896e294c64c8670335ecba8b607b0c9447083c929",
+      "source_delivery_id": "e563c090-9096-11f1-8fbe-38fce2e68434",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T06:29:08.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
