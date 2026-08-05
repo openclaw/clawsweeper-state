@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:03:21.833Z",
+  "updated_at": "2026-08-05T12:03:22.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115507:5189370801:2026-08-05T08:21:29Z:re_review",
-      "comment_id": "5189370801",
-      "comment_version_key": "5189370801:2026-08-05T08:21:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115507#issuecomment-5189370801",
-      "comment_created_at": "2026-08-05T08:21:29Z",
-      "comment_updated_at": "2026-08-05T08:21:29Z",
-      "comment_body_sha256": "1ea9e5bdf4180bf2a0877d06b54851223dc3d2d878f3dc7c7fcfb68187445e9c",
-      "source_delivery_id": "a97c1bd0-90a6-11f1-93cc-0b12c10422d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115507,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T08:22:00.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "v2/api-key-retry-attempt",
-        "head_sha": "771c76a5eaca6390cc701a6c650e4747c9ed7e4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:134:5169405589:2026-08-05T08:21:28Z:clawsweeper_auto_repair",
       "comment_id": "5169405589",
@@ -32264,6 +32216,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T12:03:21.833Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3363:5186732705:2026-08-05T12:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5186732705",
+      "comment_version_key": "5186732705:2026-08-05T12:01:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3363#issuecomment-5186732705",
+      "comment_created_at": "2026-08-05T02:11:34Z",
+      "comment_updated_at": "2026-08-05T12:01:25Z",
+      "comment_body_sha256": "b0d022615b16d6158b686d883b64988ffa8f0075179e9afa951783e12dc19def",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3363,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing native and mirrored first-token rows can miss the new range-scan bounds until both admin-gated production backfills run after deployment. (sha=8d376a48a57bb26b456b5ca7477ea48f66dec383)",
+      "expected_head_sha": "8d376a48a57bb26b456b5ca7477ea48f66dec383",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:03:22.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/japanese-search-tokens",
+        "head_sha": "8d376a48a57bb26b456b5ca7477ea48f66dec383",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
