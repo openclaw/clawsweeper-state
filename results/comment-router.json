@@ -2,33 +2,6 @@
   "updated_at": "2026-08-05T17:30:03.725Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:5173475848:2026-08-04T01:16:59Z:re_review",
-      "comment_id": "5173475848",
-      "comment_version_key": "5173475848:2026-08-04T01:16:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5173475848",
-      "comment_created_at": "2026-08-04T01:16:59Z",
-      "comment_updated_at": "2026-08-04T01:16:59Z",
-      "comment_body_sha256": "ae9b0dc25a34370c22d847b16183f21eaeb324e5e88baeb73fb3ea8563f0606f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:16:51.921Z",
-      "target": null
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:119127:5187257247:2026-08-05T03:39:52Z:re_review",
       "comment_id": "5187257247",
       "comment_version_key": "5187257247:2026-08-05T03:39:52Z",
@@ -32348,6 +32321,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-05T16:19:04Z:clawsweeper_needs_human",
+      "comment_id": "4591541970",
+      "comment_version_key": "4591541970:2026-08-05T16:19:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4591541970",
+      "comment_created_at": "2026-06-01T10:02:20Z",
+      "comment_updated_at": "2026-08-05T16:19:04Z",
+      "comment_body_sha256": "5e42cf7eded210936ea980717bbdbfc10ac2556fcb7f7f97a194bcb621109d5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains terminal benchmark data for 8baeff3a, not the reviewed da042b45 head; add redacted exact-head output or an artifa...; Review finding: [P1] Reject external initial glob roots — src/agents/workspace-extra-bootstrap-walker.ts:341-350 - [high] Initial glob root can traverse outside the workspace — sr... (sha=da042b45a93cf15460321fdf1d24d1613dc70a90)",
+      "expected_head_sha": "da042b45a93cf15460321fdf1d24d1613dc70a90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T17:30:02.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bootstrap-context-event-loop-stall",
+        "head_sha": "da042b45a93cf15460321fdf1d24d1613dc70a90",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
