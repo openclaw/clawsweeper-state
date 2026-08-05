@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31049006352"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31049006352"
+run_id: "31049582966"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31049582966"
 head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-05T21:41:44.041Z"
+published_at: "2026-08-05T21:48:24.286Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31049006352](https://github.com/openclaw/clawsweeper/actions/runs/31049006352)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31049582966](https://github.com/openclaw/clawsweeper/actions/runs/31049582966)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-Reproduced on current main: SecretRef reference artifacts are registry-derived only through parity tests; no writer, check command, or preflight gate exists. Implementation is blocked because this worker filesystem is read-only and dependencies are missing.
+#44289 remains reproducible on main: the registry-derived artifacts are parity-checked but have no generator or preflight check command. A narrow new fix PR is appropriate, but this worker cannot write or validate it because the sandbox is read-only and local dependencies/Corepack are unavailable.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Reproduced on current main: SecretRef reference artifacts are registry-derived o
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | blocked | canonical | A narrow fix is clear, but this worker cannot write the required branch or install missing dependencies. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Executable narrow implementation plan prepared for the deterministic repair executor. |
-| #85969 | keep_closed | skipped | superseded | Already closed. |
-| #89142 | keep_closed | skipped | superseded | Already closed. |
-| #91612 | keep_closed | skipped | superseded | Already closed. |
+| #44289 | fix_needed | blocked | canonical | Implementation is blocked only by this read-only worker environment. pnpm docs:list cannot initialize Corepack because its cache path is EROFS; focused Vitest cannot start because p-map is absent. The executor should implement and validate the planned branch in a writable dependency-ready checkout. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Create one narrow PR from clawsweeper/issue-openclaw-openclaw-44289; do not revive the closed historical branches. |
+| #85969 | keep_closed | skipped | related | Closed historical context. |
+| #89142 | keep_closed | skipped | related | Closed historical context. |
+| #91612 | keep_closed | skipped | related | Closed historical context. |
 
 ## Needs Human
 

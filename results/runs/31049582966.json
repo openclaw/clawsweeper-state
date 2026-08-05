@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "31049582966",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31049582966",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-05T21:48:24.286Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains reproducible on main: the registry-derived artifacts are parity-checked but have no generator or preflight check command. A narrow new fix PR is appropriate, but this worker cannot write or validate it because the sandbox is read-only and local dependencies/Corepack are unavailable.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this read-only worker environment. pnpm docs:list cannot initialize Corepack because its cache path is EROFS; focused Vitest cannot start because p-map is absent. The executor should implement and validate the planned branch in a writable dependency-ready checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-44289; do not revive the closed historical branches."
+    },
+    {
+      "target": "#85969",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Closed historical context."
+    },
+    {
+      "target": "#89142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Closed historical context."
+    },
+    {
+      "target": "#91612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Closed historical context."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
