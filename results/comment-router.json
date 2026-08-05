@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T08:37:14.111Z",
+  "updated_at": "2026-08-05T08:37:32.097Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119277:5186993586:2026-08-05T02:55:35Z:re_review",
-      "comment_id": "5186993586",
-      "comment_version_key": "5186993586:2026-08-05T02:55:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119277#issuecomment-5186993586",
-      "comment_created_at": "2026-08-05T02:55:35Z",
-      "comment_updated_at": "2026-08-05T02:55:35Z",
-      "comment_body_sha256": "2f3eea5443e047f926408e8545f7f6d14ccfed77aa18458d07ca10584c6ce124",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119277,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T03:13:28.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-context-cap-71136",
-        "head_sha": "670ef413127edb7bfcf5af697d8ab10fef316c87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119277:5181767588:2026-08-05T03:11:59Z:clawsweeper_auto_repair",
       "comment_id": "5181767588",
@@ -33150,6 +33103,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-7776e25466",
         "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:58:5120614947:2026-08-05T08:36:54Z:clawsweeper_needs_human",
+      "comment_id": "5120614947",
+      "comment_version_key": "5120614947:2026-08-05T08:36:54Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/58#issuecomment-5120614947",
+      "comment_created_at": "2026-07-29T16:25:19Z",
+      "comment_updated_at": "2026-08-05T08:36:54Z",
+      "comment_body_sha256": "d39fd642ac19f68776469bf9fab444f1a36e57cc1d3f122922ad38c800bd5ee7",
+      "repo": "openclaw/shellbench",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legacy manifests with a bootstrap timestamp but no recorded lease ID will perform one full hydration when recovery finds no remote run; this adds bounded provisioning work before the... (sha=8949dc8328e9b86a0cf1f80bcf3a976c67c4837a)",
+      "expected_head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T08:37:32.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-fleet-rebootstrap",
+        "head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
         "cluster_id": null,
         "job_path": null
       }
