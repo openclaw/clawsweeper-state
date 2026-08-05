@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the registry-backed SecretRef reference-documentation drift tracked by https://github.com/openclaw/openclaw/issues/44289. Keep src/secrets/credential-matrix.ts as the canonical data/format owner; add a deterministic write/check entrypoint that updates both docs/reference/secretref-user-supplied-credentials-matrix.json and only the marked credential lists in docs/reference/secretref-credential-surface.md. Reuse the same formatter in focused drift tests, provide an actionable check-mode regeneration hint, and wire the command into the appropriate existing guard if it is cheap and deterministic. Do not alter SecretRef runtime resolution, registry eligibility, public config, or credential security policy. Treat https://github.com/openclaw/openclaw/pull/85969, https://github.com/openclaw/openclaw/pull/89142, and https://github.com/openclaw/openclaw/pull/91612 only as historical references; reimplement against current main. No CHANGELOG edit is expected; describe the contributor-workflow improvement in the PR body.
+Repair the established SecretRef reference-generation contract for https://github.com/openclaw/openclaw/issues/44289. Keep `buildSecretRefCredentialMatrix()` and the registry as canonical inputs; add one deterministic formatter/writer that updates both the matrix JSON and only the marked supported/unsupported Markdown lists, plus paired `*:gen` and `*:check` package scripts. Preserve handwritten Markdown outside markers, keep runtime SecretRef behavior unchanged, update focused regression coverage to compare both artifacts with shared formatter output, and wire the check into the appropriate existing generated-artifact/docs validation seam. Review the closed prior attempts only as reference; do not revive their branches or copy unrelated churn. Do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -81,9 +81,9 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/secrets/target-registry.docs.test.ts
-- node scripts/run-vitest.mjs src/secrets/credential-matrix-docs.test.ts
-- Run the new generation command, then its check mode, and confirm a deliberate marker-block drift fails check mode before regeneration restores it.
+- node scripts/run-vitest.mjs src/secrets/target-registry.docs.test.ts src/secrets/credential-matrix-docs.test.ts
+- pnpm secretref:docs:gen
+- pnpm secretref:docs:check
 - git diff --check
 
 ## Operator Prompt
