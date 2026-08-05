@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:35:51.981Z",
+  "updated_at": "2026-08-05T10:36:01.270Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119467:5187525444:2026-08-05T04:25:10Z:re_review",
-      "comment_id": "5187525444",
-      "comment_version_key": "5187525444:2026-08-05T04:25:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187525444",
-      "comment_created_at": "2026-08-05T04:25:10Z",
-      "comment_updated_at": "2026-08-05T04:25:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T05:25:31.842Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:81818:5187907261:2026-08-05T05:26:05Z:re_review",
       "comment_id": "5187907261",
@@ -33715,6 +33688,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T10:35:51.981Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119231:5179575944:2026-08-05T10:35:24Z:clawsweeper_needs_human",
+      "comment_id": "5179575944",
+      "comment_version_key": "5179575944:2026-08-05T10:35:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119231#issuecomment-5179575944",
+      "comment_created_at": "2026-08-04T13:14:03Z",
+      "comment_updated_at": "2026-08-05T10:35:24Z",
+      "comment_body_sha256": "dd984a4bfddf530be109761d65d1ecb30416f4c76c2cf37baf0cb8cba927bd38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused resolver tests are present, but the PR explicitly lacks an after-fix real Bedrock provider-path run; add redacted terminal output or lo... (sha=7f4911252050b2aab14ae02be8ddce3915d98a23)",
+      "expected_head_sha": "7f4911252050b2aab14ae02be8ddce3915d98a23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:36:01.270Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bedrock-reasoning-off-maxtokens-119148",
+        "head_sha": "7f4911252050b2aab14ae02be8ddce3915d98a23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
