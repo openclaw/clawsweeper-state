@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119360",
+  "mode": "autonomous",
+  "run_id": "30958726347",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30958726347",
+  "head_sha": "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119360.md",
+  "published_at": "2026-08-05T00:05:47.565Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119360",
+  "canonical_pr": null,
+  "summary": "#119360 is a real deferred-restart baseline bug on current main. A restart-required edit is accepted as the reload baseline before its deferred SIGUSR1 emits; reverting to the physical runtime config is then planned as another restart-required A→B diff. Build a narrow credited fix PR; #98436 remains related product-policy work.",
+  "actions": [
+    {
+      "target": "#119360",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Create a narrow repair that compares the pending restart target with the still-running restart baseline, so an exact pre-emission revert retires restart debt instead of scheduling a replacement restart."
+    },
+    {
+      "target": "#98436",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Keep open independently; this repair must not introduce or decide the broader restart-batching product policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119360",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Prepare the narrow new-fix-PR artifact below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119360",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Job permits one new ClawSweeper implementation PR and forbids merge/close actions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
