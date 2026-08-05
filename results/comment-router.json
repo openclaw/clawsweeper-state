@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:15:44.841Z",
+  "updated_at": "2026-08-05T12:15:48.975Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5189908424:2026-08-05T09:13:54Z:re_review",
-      "comment_id": "5189908424",
-      "comment_version_key": "5189908424:2026-08-05T09:13:54Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5189908424",
-      "comment_created_at": "2026-08-05T09:13:54Z",
-      "comment_updated_at": "2026-08-05T09:13:54Z",
-      "comment_body_sha256": "58b67a1fcae5353cdd2cc043998b75a55af0a7da6be9f42e393a81372bb664d2",
-      "source_delivery_id": "fc15b8e0-90ad-11f1-9d39-6576eb0c38ab",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T09:14:47.991Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workflow-cost-skip-cached-replays",
-        "head_sha": "3810216ec357b3b608fa85f3a6b1ee2506c3d19f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119536:5189199934:2026-08-05T09:14:39Z:clawsweeper_needs_human",
       "comment_id": "5189199934",
@@ -32035,6 +31987,39 @@
         "kind": "pull_request",
         "branch": "rfc/model-harness-profiles",
         "head_sha": "02df4b53ab1402f97d7072420aae986262ea1b1a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-05T12:14:10Z:clawsweeper_auto_repair",
+      "comment_id": "5160727900",
+      "comment_version_key": "5160727900:2026-08-05T12:14:10Z",
+      "comment_url": "https://github.com/openclaw/remindctl/pull/67#issuecomment-5160727900",
+      "comment_created_at": "2026-08-02T22:51:37Z",
+      "comment_updated_at": "2026-08-05T12:14:10Z",
+      "comment_body_sha256": "2138203f97b740784d3d59bf68a4df52d791b332c74c1ae98a6abbedbb7f4044",
+      "repo": "openclaw/remindctl",
+      "issue_number": 67,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3e83c4d54f0cb305362e90be1643e7d066ca37db)",
+      "expected_head_sha": "3e83c4d54f0cb305362e90be1643e7d066ca37db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T12:15:48.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/geocode-timeout",
+        "head_sha": "3e83c4d54f0cb305362e90be1643e7d066ca37db",
         "cluster_id": null,
         "job_path": null
       }
