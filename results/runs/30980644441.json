@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119360",
+  "mode": "autonomous",
+  "run_id": "30980644441",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30980644441",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119360.md",
+  "published_at": "2026-08-05T08:15:23.930Z",
+  "canonical": "#119360",
+  "canonical_issue": "#119360",
+  "canonical_pr": null,
+  "summary": "Confirmed #119360 on current main: B→A is replanned before debt reconciliation, while deferred B overwrites the only accepted-target state. A writable checkout is required to add the narrow repair, regression, and PR.",
+  "actions": [
+    {
+      "target": "#119360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "The environment blocks filesystem writes, so the required code/test delta and PR branch cannot be produced."
+    },
+    {
+      "target": "#98436",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119360",
+      "candidate_fix": null,
+      "reason": "Shared coordinator area, distinct root cause and product scope."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair executor/checkout with dependencies available to implement and validate the planned new fix PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
