@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:19:53.190Z",
+  "updated_at": "2026-08-05T06:20:13.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117681:5156830760:2026-08-02T09:23:17Z:re_review",
-      "comment_id": "5156830760",
-      "comment_version_key": "5156830760:2026-08-02T09:23:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117681#issuecomment-5156830760",
-      "comment_created_at": "2026-08-02T09:23:17Z",
-      "comment_updated_at": "2026-08-02T09:23:17Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117681,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:11:00.693Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105707:4952813065:2026-08-05T02:10:34Z:clawsweeper_auto_repair",
       "comment_id": "4952813065",
@@ -32625,6 +32598,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119299:5182854672:2026-08-05T06:19:15Z:clawsweeper_needs_human",
+      "comment_id": "5182854672",
+      "comment_version_key": "5182854672:2026-08-05T06:19:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119299#issuecomment-5182854672",
+      "comment_created_at": "2026-08-04T18:09:07Z",
+      "comment_updated_at": "2026-08-05T06:19:15Z",
+      "comment_body_sha256": "de9160aa68b7d9f8ab26d79b1aaa42720e988b11665e5511ea04b20ea1eceedf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes a live configured-MCP run for an earlier head, but does not prove the current head preserves Codex agent scoping or f...; Review finding: [P1] Preserve Codex agent scoping for configured MCP tools — extensions/codex/src/app-server/run-attempt-tool-setup.ts:147-151 - [P1] Disable native authority for... (sha=8d78033a8fc93af212e205477e8f057b7ad34c79)",
+      "expected_head_sha": "8d78033a8fc93af212e205477e8f057b7ad34c79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:20:13.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-runtime-authority-v1",
+        "head_sha": "8d78033a8fc93af212e205477e8f057b7ad34c79",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
