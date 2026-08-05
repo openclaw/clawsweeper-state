@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T01:17:56.672Z",
+  "updated_at": "2026-08-05T01:18:33.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/gogcli:955:5184441028:2026-08-04T20:47:38Z:re_review",
-      "comment_id": "5184441028",
-      "comment_version_key": "5184441028:2026-08-04T20:47:38Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/955#issuecomment-5184441028",
-      "comment_created_at": "2026-08-04T20:47:38Z",
-      "comment_updated_at": "2026-08-04T20:47:38Z",
-      "comment_body_sha256": "b73e6d1173283b4b44c9a97625939e86959214571bf38adcba88b1158e20ee9f",
-      "repo": "openclaw/gogcli",
-      "issue_number": 955,
-      "author": "mcinteerj",
-      "author_id": 3613653,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T21:17:17.628Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "warn-plain-only-draft-update",
-        "head_sha": "8dbbdfc357cd87829358bb52ac3dd9fcaf86f862",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119342:5184665833:2026-08-04T21:16:38Z:clawsweeper_auto_repair",
       "comment_id": "5184665833",
@@ -31757,6 +31710,39 @@
         "kind": "pull_request",
         "branch": "codex/qa0803-doctor-cli-recovery",
         "head_sha": "ed3f3316d990567f2c100f8e70a9c9bde98ab045",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118876:5170578774:2026-08-05T01:17:18Z:clawsweeper_needs_human",
+      "comment_id": "5170578774",
+      "comment_version_key": "5170578774:2026-08-05T01:17:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118876#issuecomment-5170578774",
+      "comment_created_at": "2026-08-03T19:04:35Z",
+      "comment_updated_at": "2026-08-05T01:17:18Z",
+      "comment_body_sha256": "2ab1cca5fbfddd250e20ddb430a6e1c0e742c9f16868d0918bdc8dcbce512229",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118876,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body claims a localhost production-service run, but no reviewable after-fix output or artifact proves both hostile bound history and the lo...; Review finding: [P1] Keep provenance conditional on fetched history — extensions/clickclack/src/discussions/tool.ts:15 - [medium] Static provenance taints trusted local results —... (sha=ce7f10106cf995d54a7aaba653f9ce75ca309bbb)",
+      "expected_head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T01:18:33.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0803-clickclack-discussion-network-provenance",
+        "head_sha": "ce7f10106cf995d54a7aaba653f9ce75ca309bbb",
         "cluster_id": null,
         "job_path": null
       }
