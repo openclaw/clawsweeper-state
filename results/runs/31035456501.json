@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89252",
+  "mode": "autonomous",
+  "run_id": "31035456501",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31035456501",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
+  "published_at": "2026-08-05T20:55:30.455Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89252",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89252",
+  "canonical_pr": null,
+  "summary": "Current main still drops configured Telegram custom commands first when the generated menu exceeds Telegram’s count or text budget. Plan a narrow new PR that prioritizes configured commands and proves mixed-overflow behavior.",
+  "actions": [
+    {
+      "target": "#89252",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89252",
+      "candidate_fix": null,
+      "reason": "The defect is a narrow ordering error in the Telegram plugin. Existing process-local hash behavior correctly re-registers the already-truncated menu on restart; it is not the owner of this loss."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89252",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89252",
+      "candidate_fix": null,
+      "reason": "No open viable PR exists; create one narrow current-main repair PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119717",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89252",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119717",
+      "commit": "8ec6719930a977e0716cf98ad1cbef4480b79a07",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#89252",
+      "pr": "https://github.com/openclaw/openclaw/pull/119717",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119717",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119717",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(telegram): prioritize configured commands in capped menus",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
