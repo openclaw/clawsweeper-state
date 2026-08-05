@@ -2,15 +2,15 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T22:29:46.834Z",
+  "generated_at": "2026-08-05T23:11:23.095Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
     "ready_candidates": 0,
-    "security_hold": 1,
+    "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 12,
     "needs_review": 0,
     "needs_merge_preflight": 15,
     "needs_result_backfill": 0
@@ -31,22 +31,25 @@
       "title": "fix(slack): require confirmed thread placement for terminal receipts",
       "url": "https://github.com/openclaw/openclaw/pull/119737",
       "branch": "clawsweeper/issue-openclaw-openclaw-96692",
-      "head_sha": "eb13c2b6cbfbec9ec40949988059e802207d1ff1",
+      "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
       "cluster_id": "issue-openclaw-openclaw-96692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-05T22:28:35Z",
+      "updated_at": "2026-08-05T23:04:07Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 109,
+        "total": 99,
         "counts": {
-          "SKIPPED": 47,
-          "SUCCESS": 61,
+          "CANCELLED": 1,
+          "SUCCESS": 59,
+          "SKIPPED": 38,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -55,29 +58,56 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 3,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198118390",
             "submitted_at": "2026-08-05T22:28:25Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198130911",
+            "submitted_at": "2026-08-05T22:30:04Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198235083",
+            "submitted_at": "2026-08-05T22:43:49Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "31008717397",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31008717397",
-        "cluster_id": "issue-openclaw-openclaw-96692",
-        "published_at": "2026-08-05T13:49:28.114Z",
-        "workflow_conclusion": "failure",
-        "apply_action": null
+        "run_id": "31052977808",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31052977808",
+        "cluster_id": "automerge-openclaw-openclaw-119737",
+        "published_at": "2026-08-05T23:09:35.990Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119737",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(slack): require confirmed thread placement for terminal receipts",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119735,
@@ -87,15 +117,15 @@
       "head_sha": "f90a1a274bd7a439e6b68190eda2ce743396b954",
       "cluster_id": "issue-openclaw-openclaw-114169",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
-      "updated_at": "2026-08-05T22:26:55Z",
+      "updated_at": "2026-08-05T23:02:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 126,
         "counts": {
-          "SKIPPED": 46,
+          "SKIPPED": 52,
           "SUCCESS": 73,
           "NEUTRAL": 1
         },
@@ -108,13 +138,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
             "submitted_at": "2026-08-05T22:26:45Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198171204",
+            "submitted_at": "2026-08-05T22:35:28Z"
           }
         ]
       },
@@ -148,15 +184,15 @@
       "head_sha": "accec47835415908ba8b5fc7aa09e1ef0da87824",
       "cluster_id": "issue-openclaw-openclaw-57148",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
-      "updated_at": "2026-08-05T21:41:35Z",
+      "updated_at": "2026-08-05T22:46:04Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 125,
+        "total": 129,
         "counts": {
-          "SKIPPED": 43,
+          "SKIPPED": 47,
           "SUCCESS": 81,
           "NEUTRAL": 1
         },
@@ -169,8 +205,21 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119731#issuecomment-5198174139",
+            "submitted_at": "2026-08-05T22:35:52Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119731#issuecomment-5198238249",
+            "submitted_at": "2026-08-05T22:44:14Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31039505132",
@@ -208,17 +257,17 @@
       "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
       "cluster_id": "issue-openclaw-openclaw-112625",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-112625.md",
-      "updated_at": "2026-08-05T21:41:40Z",
+      "updated_at": "2026-08-05T22:38:00Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 130,
         "counts": {
           "CANCELLED": 1,
+          "SKIPPED": 49,
           "SUCCESS": 79,
-          "SKIPPED": 39,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -285,11 +334,11 @@
       "head_sha": "e45ecd8e4621947ec8a2484572270564b5ccc002",
       "cluster_id": "issue-openclaw-openclaw-89430",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-05T22:24:53Z",
+      "updated_at": "2026-08-05T22:41:59Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
-      "security_hold": true,
+      "security_hold": false,
       "checks": {
         "total": 113,
         "counts": {
@@ -348,12 +397,11 @@
         }
       },
       "blockers": [
-        "security_hold",
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "route to central security triage"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119717,
@@ -363,7 +411,7 @@
       "head_sha": "48ae7e5c2468fffa0661abc46fcb51c1cb8fa53e",
       "cluster_id": "issue-openclaw-openclaw-89252",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
-      "updated_at": "2026-08-05T21:06:38Z",
+      "updated_at": "2026-08-05T22:45:14Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -806,7 +854,7 @@
       "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
       "cluster_id": "issue-openclaw-openclaw-119350",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119350.md",
-      "updated_at": "2026-08-05T21:41:17Z",
+      "updated_at": "2026-08-05T22:43:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
