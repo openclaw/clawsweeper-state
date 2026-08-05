@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:39:21.750Z",
+  "updated_at": "2026-08-05T23:39:32.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1234:5195560512:2026-08-05T18:14:43Z:clawsweeper_needs_human",
-      "comment_id": "5195560512",
-      "comment_version_key": "5195560512:2026-08-05T18:14:43Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1234#issuecomment-5195560512",
-      "comment_created_at": "2026-08-05T18:14:43Z",
-      "comment_updated_at": "2026-08-05T18:14:43Z",
-      "comment_body_sha256": "1321c1fc45649c8008fc3065182bbc86073d97d36356ab6e9d6838fe633a8342",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1234,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the source only; already-published Linux developer images retain the bad Corepack cache ownership until the protected Publish Developer Image workflow republishes Linu... (sha=2e1fc09d327bc78c41379becd75846ab2485bfbf)",
-      "expected_head_sha": "2e1fc09d327bc78c41379becd75846ab2485bfbf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T18:15:27.070Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-devtools-corepack-home",
-        "head_sha": "2e1fc09d327bc78c41379becd75846ab2485bfbf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-05T18:16:40Z:clawsweeper_auto_repair",
       "comment_id": "5160702307",
@@ -32805,6 +32772,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T23:39:21.750Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119768:5198618915:2026-08-05T23:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5198618915",
+      "comment_version_key": "5198618915:2026-08-05T23:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119768#issuecomment-5198618915",
+      "comment_created_at": "2026-08-05T23:38:45Z",
+      "comment_updated_at": "2026-08-05T23:38:45Z",
+      "comment_body_sha256": "3b54d00a85410e1c7d0f6f0d6b040a21ffd67d136fb8568174beb0878e2fc263",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and checks, but provides no after-fix native agent exec transcript, terminal output, recording, or runtime ar...; Review finding: [P1] Preserve implicit exec provenance through workspace admission — src/agents/workspace-run.ts:134-136 - [medium] Rosterless admission is broader than the exec r... (sha=5d7f1900a63245ee44d8cb7388a9a804049b577a)",
+      "expected_head_sha": "5d7f1900a63245ee44d8cb7388a9a804049b577a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:39:32.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-exec-isolated-roster-resolution",
+        "head_sha": "5d7f1900a63245ee44d8cb7388a9a804049b577a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
