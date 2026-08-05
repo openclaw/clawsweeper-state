@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:26:36.359Z",
+  "updated_at": "2026-08-05T06:28:40.272Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119403:5186729333:2026-08-05T02:11:01Z:clawsweeper_needs_human",
-      "comment_id": "5186729333",
-      "comment_version_key": "5186729333:2026-08-05T02:11:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119403#issuecomment-5186729333",
-      "comment_created_at": "2026-08-05T02:11:01Z",
-      "comment_updated_at": "2026-08-05T02:11:01Z",
-      "comment_body_sha256": "4c79553159809976560fdc3dcb3b945baf59833a13c1c8b172d764de1f9acb8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119403,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The focused boundary test proves emitted envelopes, but an after-fix scheduled cache-warmer run has not yet been observed end-to-end. (sha=31dec02b882b2f1ca681733785ceae2e6ec23dd8)",
-      "expected_head_sha": "31dec02b882b2f1ca681733785ceae2e6ec23dd8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:11:47.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-cache-warmer-shard-envelopes",
-        "head_sha": "31dec02b882b2f1ca681733785ceae2e6ec23dd8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3398:5182053346:2026-08-04T16:48:42Z:re_review",
       "comment_id": "5182053346",
@@ -32646,6 +32613,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T06:26:36.359Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95830:4780755354:2026-08-05T06:27:58Z:clawsweeper_needs_human",
+      "comment_id": "4780755354",
+      "comment_version_key": "4780755354:2026-08-05T06:27:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/95830#issuecomment-4780755354",
+      "comment_created_at": "2026-06-23T15:27:44Z",
+      "comment_updated_at": "2026-08-05T06:27:58Z",
+      "comment_body_sha256": "36e11723d51265bc4a42771dd8df9ce629e19994fe518048cf420c860bfbf984",
+      "repo": "openclaw/openclaw",
+      "issue_number": 95830,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require membership for every group poll voter (P1)** - The membership lookup is skipped when the voter is in the configured allowlist. An allowlisted former member can therefore vote a forwarded public poll and...; Review finding: [P1] Require membership for every group poll voter — extensions/telegram/src/bot-handlers.poll-answer.runtime.ts:97-100 - [P1] Mark channel polls unavailable befor... (sha=0241b6e77f4ea7adf6d75be99e26d36b54956075)",
+      "expected_head_sha": "0241b6e77f4ea7adf6d75be99e26d36b54956075",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:28:40.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-poll-answer-routing-v2",
+        "head_sha": "0241b6e77f4ea7adf6d75be99e26d36b54956075",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
