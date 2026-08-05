@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:35:09.483Z",
+  "updated_at": "2026-08-05T10:35:15.522Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119467:5187634602:2026-08-05T04:42:58Z:re_review",
-      "comment_id": "5187634602",
-      "comment_version_key": "5187634602:2026-08-05T04:42:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187634602",
-      "comment_created_at": "2026-08-05T04:42:58Z",
-      "comment_updated_at": "2026-08-05T04:42:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:25:28.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-readability-depth-cap",
-        "head_sha": "4e2f12d07683823df81f56b86ef7e095e71cf3e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116404:5131676270:2026-08-05T05:24:41Z:clawsweeper_needs_human",
       "comment_id": "5131676270",
@@ -33741,6 +33694,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119249:5180193315:2026-08-05T10:34:43Z:clawsweeper_needs_human",
+      "comment_id": "5180193315",
+      "comment_version_key": "5180193315:2026-08-05T10:34:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119249#issuecomment-5180193315",
+      "comment_created_at": "2026-08-04T14:06:05Z",
+      "comment_updated_at": "2026-08-05T10:34:43Z",
+      "comment_body_sha256": "a8321c9f405c591548cf36a7af711c0bbbd6d1ad0c6069cbbe936f8d831be0fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119249,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies mocked Vitest evidence, not an after-fix Control UI or Gateway-backed observation; add redacted browser, terminal, or runtime-l... (sha=afafb9f71ab6f57f4a43d3d9ce3d17abdeb3abd1)",
+      "expected_head_sha": "afafb9f71ab6f57f4a43d3d9ce3d17abdeb3abd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:35:15.522Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-verdict-canonical-slug-108647",
+        "head_sha": "afafb9f71ab6f57f4a43d3d9ce3d17abdeb3abd1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
