@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:28:10.937Z",
+  "updated_at": "2026-08-05T23:29:20.563Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118647:5194930078:2026-08-05T17:13:24Z:re_review",
-      "comment_id": "5194930078",
-      "comment_version_key": "5194930078:2026-08-05T17:13:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118647#issuecomment-5194930078",
-      "comment_created_at": "2026-08-05T17:13:24Z",
-      "comment_updated_at": "2026-08-05T17:13:24Z",
-      "comment_body_sha256": "0601fcf80465f9c839ef9e576ee7e33b265cb3a13e1051c1a6f63ce2ba247225",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118647,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T17:35:34.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "osolmaz/tool-loop-recovery-core",
-        "head_sha": "23043c61653c4307d66b31d78ab6ed70cf258dfe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118389:5161820263:2026-08-05T17:35:48Z:clawsweeper_auto_repair",
       "comment_id": "5161820263",
@@ -33137,6 +33090,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-sqlite-archive-bounded-memory",
         "head_sha": "faa09ea11c2c473bab6b9e83b47e29cfaf5e8ee2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116505:5134542153:2026-08-05T23:25:38Z:clawsweeper_auto_repair",
+      "comment_id": "5134542153",
+      "comment_version_key": "5134542153:2026-08-05T23:25:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116505#issuecomment-5134542153",
+      "comment_created_at": "2026-07-30T18:08:16Z",
+      "comment_updated_at": "2026-08-05T23:25:38Z",
+      "comment_body_sha256": "2267405cee2faceecf84c1e158308e19108b554d58da07f367796733fb47069c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9ac042f700e380500572a5bbd1e193f36a99b476)",
+      "expected_head_sha": "9ac042f700e380500572a5bbd1e193f36a99b476",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T23:29:20.563Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-copilot-raptor-catalog",
+        "head_sha": "9ac042f700e380500572a5bbd1e193f36a99b476",
         "cluster_id": null,
         "job_path": null
       }
