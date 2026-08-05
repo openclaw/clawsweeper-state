@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T13:11:54.105Z",
+  "updated_at": "2026-08-05T13:12:13.731Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119509:5190478360:2026-08-05T10:14:02Z:re_review",
-      "comment_id": "5190478360",
-      "comment_version_key": "5190478360:2026-08-05T10:14:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119509#issuecomment-5190478360",
-      "comment_created_at": "2026-08-05T10:14:02Z",
-      "comment_updated_at": "2026-08-05T10:14:02Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "62fd4890-90b6-11f1-9dfd-4ac0f8435416",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119509,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T10:14:31.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119483",
-        "head_sha": "c234a419bb0fad357270c5c6511bba6b96bb519c",
-        "cluster_id": "automerge-openclaw-openclaw-119509",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119509.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119571:5190481085:2026-08-05T10:14:20Z:clawsweeper_auto_repair",
       "comment_id": "5190481085",
@@ -31541,6 +31493,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:342:5192162996:2026-08-05T13:11:30Z:clawsweeper_needs_human",
+      "comment_id": "5192162996",
+      "comment_version_key": "5192162996:2026-08-05T13:11:30Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/342#issuecomment-5192162996",
+      "comment_created_at": "2026-08-05T13:11:30Z",
+      "comment_updated_at": "2026-08-05T13:11:30Z",
+      "comment_body_sha256": "b42c1fe825d0d2cde3b13be75e9f4a33addaaaf1d4c8af4535947cad102f96a9",
+      "repo": "openclaw/wacli",
+      "issue_number": 342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An incorrect release date or embedded version would make source-built binaries identify as 0.16.0 outside the intended release contract; confirm the authorized release inputs before m... (sha=691b5f7c8dad3b2e013d32b439ce555c24581f90)",
+      "expected_head_sha": "691b5f7c8dad3b2e013d32b439ce555c24581f90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T13:12:13.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/0.16.0-prep",
+        "head_sha": "691b5f7c8dad3b2e013d32b439ce555c24581f90",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
