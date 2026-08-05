@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-57148",
+  "mode": "autonomous",
+  "run_id": "31019120595",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31019120595",
+  "head_sha": "14bd27bc8fa1232dd866aba9a9b525496fba200e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
+  "published_at": "2026-08-05T16:03:34.865Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/57148",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/57148",
+  "canonical_pr": null,
+  "summary": "Current main ce06e7924e880032a0ca58dd52c61a6e1d409769 still passes ordinary subagent completion text unbounded into protected/plain parent prompts and durable correlated delivery. A narrow new-fix-PR artifact is ready; implementation is blocked only because this worker checkout is read-only.",
+  "actions": [
+    {
+      "target": "#57148",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "#57148 is the live canonical report. The cap can be added at one parent-prompt projection boundary without a public configuration surface or raw-result mutation."
+    },
+    {
+      "target": "#73320",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact closed linked PR; it does not block the independent non-security fix for #57148."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-57148",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#57148",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from the supplied ClawSweeper branch after applying and validating the artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,14 +1,14 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-57148"
-mode: "plan"
-run_id: "31013316158"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31013316158"
-head_sha: "4dc8d1d8c5331386a04bd78cc6d289e05f6e94d5"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-05T14:14:16.938Z"
-canonical: "#57148"
+mode: "autonomous"
+run_id: "31019120595"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31019120595"
+head_sha: "14bd27bc8fa1232dd866aba9a9b525496fba200e"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-05T16:03:34.865Z"
+canonical: "https://github.com/openclaw/openclaw/issues/57148"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/57148"
 canonical_pr: null
 actions_total: 3
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31013316158](https://github.com/openclaw/clawsweeper/actions/runs/31013316158)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31019120595](https://github.com/openclaw/clawsweeper/actions/runs/31019120595)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #57148
+Canonical: https://github.com/openclaw/openclaw/issues/57148
 
 ## Summary
 
-Pinned main 03a9e022 still injects ordinary subagent completion text without a hard parent-context cap. Plan a narrow new fix PR for canonical issue #57148; quarantine closed security-sensitive PR #73320 without using it as source or attribution.
+Current main ce06e7924e880032a0ca58dd52c61a6e1d409769 still passes ordinary subagent completion text unbounded into protected/plain parent prompts and durable correlated delivery. A narrow new-fix-PR artifact is ready; implementation is blocked only because this worker checkout is read-only.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Pinned main 03a9e022 still injects ordinary subagent completion text without a h
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #57148 | fix_needed | planned | canonical | Current main reproduces the canonical issue; no config surface is needed. |
-| #73320 | route_security | planned | security_sensitive | Quarantined closed security context; no mutation or attribution. |
-| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned |  | A narrow, testable fix is available without changing the security or configuration boundary. |
+| #57148 | fix_needed | planned | canonical | #57148 is the live canonical report. The cap can be added at one parent-prompt projection boundary without a public configuration surface or raw-result mutation. |
+| #73320 | route_security | planned | security_sensitive | Quarantine this exact closed linked PR; it does not block the independent non-security fix for #57148. |
+| cluster:issue-openclaw-openclaw-57148 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR from the supplied ClawSweeper branch after applying and validating the artifact. |
 
 ## Needs Human
 
