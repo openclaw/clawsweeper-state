@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T11:07:07.144Z",
+  "updated_at": "2026-08-05T11:07:32.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-05T06:02:29Z:clawsweeper_auto_repair",
-      "comment_id": "5160727900",
-      "comment_version_key": "5160727900:2026-08-05T06:02:29Z",
-      "comment_url": "https://github.com/openclaw/remindctl/pull/67#issuecomment-5160727900",
-      "comment_created_at": "2026-08-02T22:51:37Z",
-      "comment_updated_at": "2026-08-05T06:02:29Z",
-      "comment_body_sha256": "3fa1243e3f078da96b6007b72865a25b1218aa11dc9a5600dbf077ee72182996",
-      "repo": "openclaw/remindctl",
-      "issue_number": 67,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3e83c4d54f0cb305362e90be1643e7d066ca37db)",
-      "expected_head_sha": "3e83c4d54f0cb305362e90be1643e7d066ca37db",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T06:04:43.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/geocode-timeout",
-        "head_sha": "3e83c4d54f0cb305362e90be1643e7d066ca37db",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/wacli:337:5166380946:2026-08-05T06:03:40Z:clawsweeper_auto_repair",
       "comment_id": "5166380946",
@@ -33759,6 +33726,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117757:5154776003:2026-08-05T11:05:36Z:clawsweeper_needs_human",
+      "comment_id": "5154776003",
+      "comment_version_key": "5154776003:2026-08-05T11:05:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117757#issuecomment-5154776003",
+      "comment_created_at": "2026-08-02T02:49:47Z",
+      "comment_updated_at": "2026-08-05T11:05:36Z",
+      "comment_body_sha256": "9cbdef02d236c258bd7dac22eb16bf9f1df4da165681258cfa258133eb5cadb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117757,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The branch is behind current main and the required aggregate gate remains red from the reported compact-shard timeout; refresh the merge result and obtain a green required gate before... (sha=ce1d0cff19e60fd777127e6cab36899480a28a21)",
+      "expected_head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T11:07:32.010Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-memory-flush-append-race",
+        "head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
