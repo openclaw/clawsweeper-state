@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:02:34.701Z",
+  "updated_at": "2026-08-05T00:02:34.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119275:5183675363:2026-08-04T19:30:37Z:re_review",
-      "comment_id": "5183675363",
-      "comment_version_key": "5183675363:2026-08-04T19:30:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119275#issuecomment-5183675363",
-      "comment_created_at": "2026-08-04T19:30:37Z",
-      "comment_updated_at": "2026-08-04T19:30:37Z",
-      "comment_body_sha256": "ef3cea873a36750930be36ca116d347370b13d4f44a665dea25133edc5f6233a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119275,
-      "author": "dandriscoll",
-      "author_id": 5069805,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T20:01:32.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-suffix-drops-summary-body",
-        "head_sha": "5875b95e21b506a3befee235523045780520cc74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118499:5183694549:2026-08-04T19:32:31Z:re_review",
       "comment_id": "5183694549",
@@ -32064,6 +32017,39 @@
         "kind": "pull_request",
         "branch": "codex/944-live-tier",
         "head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:468:5121122986:2026-08-04T23:26:47Z:clawsweeper_needs_human",
+      "comment_id": "5121122986",
+      "comment_version_key": "5121122986:2026-08-04T23:26:47Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/468#issuecomment-5121122986",
+      "comment_created_at": "2026-07-29T17:12:36Z",
+      "comment_updated_at": "2026-08-04T23:26:47Z",
+      "comment_body_sha256": "5563fae2f65b1e9380b0a0b7a8fd6b6174c3ce2156bb3ea078e787e0b4a3bc1f",
+      "repo": "openclaw/acpx",
+      "issue_number": 468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes PermissionPolicy and its callback-first precedence a long-term supported embedding contract, so future policy evolution must preserve this API behavior. (sha=e91cc50439e7ed58845fca82e23c72dcaaf7fd8a)",
+      "expected_head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:02:34.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/runtime-permission-policy",
+        "head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
         "cluster_id": null,
         "job_path": null
       }
