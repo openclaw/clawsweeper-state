@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119551"
 mode: "autonomous"
-run_id: "30994636572"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30994636572"
+run_id: "30996830610"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30996830610"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T10:00:15.420Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-05T10:22:57.692Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30994636572](https://github.com/openclaw/clawsweeper/actions/runs/30994636572)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30996830610](https://github.com/openclaw/clawsweeper/actions/runs/30996830610)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 ## Summary
 
-#119551 remains a reproducible non-security ACP lifecycle bug. A narrow two-file repair and regression plan is ready, but this target checkout is read-only and has no prepared dependencies, so no edit or validation could be completed in this run.
+Plan a narrow configured-ACP-binding lifecycle fix for #119551; no security-sensitive signal or viable contributor PR is present.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119551 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and missing prepared dependencies; no maintainer product decision is unresolved. |
-| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Ready for execution in a writable checkout with ClawSweeper-prepared dependencies. |
+| #119551 | fix_needed | planned | canonical | Repair the canonical source-reproducible bug with a new narrow fix PR. |
+| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Executable new-fix-PR plan; plan mode makes no repository or GitHub mutations. |
 
 ## Needs Human
 
