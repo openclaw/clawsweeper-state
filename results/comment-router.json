@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:13:49.651Z",
+  "updated_at": "2026-08-05T06:14:05.604Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119326:5184023904:2026-08-05T02:09:19Z:clawsweeper_needs_human",
-      "comment_id": "5184023904",
-      "comment_version_key": "5184023904:2026-08-05T02:09:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119326#issuecomment-5184023904",
-      "comment_created_at": "2026-08-04T20:06:23Z",
-      "comment_updated_at": "2026-08-05T02:09:19Z",
-      "comment_body_sha256": "87b9c945ac2d67be0aa74a1890072224e17efb5ed67a822443090c021f8bb4c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119326,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The branch has strong unit-level resolver and compaction-wiring coverage, but no after-fix configured runtime or ephemeral Gateway/QA transcrip... (sha=b9dd1702a08fab294436df5c2a1ca1b550852784)",
-      "expected_head_sha": "b9dd1702a08fab294436df5c2a1ca1b550852784",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:10:10.738Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/history-limit-account-scope",
-        "head_sha": "b9dd1702a08fab294436df5c2a1ca1b550852784",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119376:5185989740:2026-08-05T02:09:11Z:clawsweeper_needs_human",
       "comment_id": "5185989740",
@@ -32541,6 +32508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119500:5188244849:2026-08-05T06:13:25Z:clawsweeper_needs_human",
+      "comment_id": "5188244849",
+      "comment_version_key": "5188244849:2026-08-05T06:13:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119500#issuecomment-5188244849",
+      "comment_created_at": "2026-08-05T06:13:25Z",
+      "comment_updated_at": "2026-08-05T06:13:25Z",
+      "comment_body_sha256": "36b998379facb09666333c382b55fc43197a6755477e9752f4919305501a9933",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body formally closes https://github.com/openclaw/openclaw/issues/119411 even though it intentionally leaves that issue's watcher-delivery failure unresolved; merging would clos... (sha=dee80c87f63508762e51a56e434fe4526228d39a)",
+      "expected_head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T06:14:05.604Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119411",
+        "head_sha": "dee80c87f63508762e51a56e434fe4526228d39a",
+        "cluster_id": "issue-openclaw-openclaw-119411",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
