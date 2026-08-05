@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T22:31:57.863Z",
+  "updated_at": "2026-08-05T22:32:13.043Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:16:5122266911:2026-08-05T16:34:00Z:clawsweeper_needs_human",
-      "comment_id": "5122266911",
-      "comment_version_key": "5122266911:2026-08-05T16:34:00Z",
-      "comment_url": "https://github.com/openclaw/uirouter/pull/16#issuecomment-5122266911",
-      "comment_created_at": "2026-07-29T18:59:25Z",
-      "comment_updated_at": "2026-08-05T16:34:00Z",
-      "comment_body_sha256": "2a0f585a911c4501b63f86800bb386f9559e9393e25ff452e3721ddd17269b4d",
-      "repo": "openclaw/uirouter",
-      "issue_number": 16,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint execute in the repository quality gate, so their updated behavior could affect future formatting or lint results despite the recorded matrix passing. (sha=120a61adc9ea7ec28d386cb157c3823e6c07f484)",
-      "expected_head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:34:53.712Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/development-7776e25466",
-        "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:23:4759946091:2026-08-05T16:34:14Z:clawsweeper_auto_repair",
       "comment_id": "4759946091",
@@ -32834,6 +32801,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119747:5198143570:2026-08-05T22:31:46Z:re_review",
+      "comment_id": "5198143570",
+      "comment_version_key": "5198143570:2026-08-05T22:31:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119747#issuecomment-5198143570",
+      "comment_created_at": "2026-08-05T22:31:46Z",
+      "comment_updated_at": "2026-08-05T22:31:46Z",
+      "comment_body_sha256": "102cb7c18a640af535bf4740c31430d39871a565142e8f2f23cd1ba7ac6a7ae5",
+      "source_delivery_id": "71989460-911d-11f1-8ab7-5b2af2d39e7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119747,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T22:32:11.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/otel-startup-rollback-preserve-20260805",
+        "head_sha": "6de8714e29e6a94806f28e81391b6eeb28f61366",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
