@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:05:50.813Z",
+  "updated_at": "2026-08-05T16:05:50.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119540:5191446911:2026-08-05T12:00:23Z:re_review",
-      "comment_id": "5191446911",
-      "comment_version_key": "5191446911:2026-08-05T12:00:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119540#issuecomment-5191446911",
-      "comment_created_at": "2026-08-05T12:00:23Z",
-      "comment_updated_at": "2026-08-05T12:00:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "3db316a0-90c5-11f1-8a9f-240a73c83f6d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119540,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T12:00:58.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-119484-crlf",
-        "head_sha": "fbc353a151c9476ff7124389555b627b240e8329",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117456:5152035569:2026-08-05T12:01:13Z:clawsweeper_needs_human",
       "comment_id": "5152035569",
@@ -31763,6 +31715,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-only-dedupe-close",
         "head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:14:5164783618:2026-08-05T16:04:55Z:clawsweeper_needs_human",
+      "comment_id": "5164783618",
+      "comment_version_key": "5164783618:2026-08-05T16:04:55Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/14#issuecomment-5164783618",
+      "comment_created_at": "2026-08-03T09:44:17Z",
+      "comment_updated_at": "2026-08-05T16:04:55Z",
+      "comment_body_sha256": "7889d5c8838be591babb7665ce7118a4255083d8a758eb54caeb5b224438cd35",
+      "repo": "openclaw/babelfish",
+      "issue_number": 14,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging replaces executable upstream CodeQL action and bundled analysis behavior for scheduled and push-time security scans, even though this PR preserves the workflow’s permissions a... (sha=20810d4c5a7344e406c58288cdc28048c32eafc2)",
+      "expected_head_sha": "20810d4c5a7344e406c58288cdc28048c32eafc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T16:05:50.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-ce612e0709",
+        "head_sha": "20810d4c5a7344e406c58288cdc28048c32eafc2",
         "cluster_id": null,
         "job_path": null
       }
