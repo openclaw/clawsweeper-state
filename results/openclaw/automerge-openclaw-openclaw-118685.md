@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118685"
 mode: "autonomous"
-run_id: "30968231284"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30968231284"
-head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
-workflow_conclusion: "success"
+run_id: "30962639142"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30962639142"
+head_sha: "2a61adcc1f062561ba3c9deb62cc0df97cdc81d2"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-05T04:56:47.201Z"
+published_at: "2026-08-05T00:28:31.924Z"
 canonical: "#118685"
-canonical_issue: "#118673"
+canonical_issue: null
 canonical_pr: "#118685"
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30968231284](https://github.com/openclaw/clawsweeper/actions/runs/30968231284)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30962639142](https://github.com/openclaw/clawsweeper/actions/runs/30962639142)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #118685
 
 ## Summary
 
-#118685 remains the canonical repair path for #118673, but needs a rebase and a narrow core repair before re-review. No GitHub mutation is proposed.
+Make PR #118685 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Canonical: #118685
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118673 | keep_related | planned | related | Keep the report open while its linked PR is repaired; close and merge are disabled by job policy. |
-| #118685 | fix_needed | planned | canonical | Repair the writable same-repository contributor branch, preserving the source-report attribution; do not merge in this autofix job. |
-| #118685 | build_fix_artifact | planned | canonical | The artifact below defines the bounded repair and exact-head validation loop. |
+| #118685 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
