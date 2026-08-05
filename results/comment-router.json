@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T23:41:32.906Z",
+  "updated_at": "2026-08-05T23:41:37.767Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117425:5151798809:2026-08-05T18:33:01Z:clawsweeper_needs_human",
-      "comment_id": "5151798809",
-      "comment_version_key": "5151798809:2026-08-05T18:33:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117425#issuecomment-5151798809",
-      "comment_created_at": "2026-08-01T14:14:23Z",
-      "comment_updated_at": "2026-08-05T18:33:01Z",
-      "comment_body_sha256": "f40b8f7cd9498e186a36607b1495c11cdbf1fa273d740a6a9f63443bf1d35b67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this branch changes which delayed automation output is delivered; it must be rebased onto current main and its lifecycle matrix revalidated because main changed the same cron,... (sha=3ee1081ee5b04ad904efa6744bf5c0e43bf3d957)",
-      "expected_head_sha": "3ee1081ee5b04ad904efa6744bf5c0e43bf3d957",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T18:33:46.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-cron-trigger-origin-lifecycle",
-        "head_sha": "3ee1081ee5b04ad904efa6744bf5c0e43bf3d957",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:138:5012369506:2026-08-05T18:22:01Z:clawsweeper_needs_human",
       "comment_id": "5012369506",
@@ -32628,6 +32595,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111970:5198633282:2026-08-05T23:40:56Z:re_review",
+      "comment_id": "5198633282",
+      "comment_version_key": "5198633282:2026-08-05T23:40:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111970#issuecomment-5198633282",
+      "comment_created_at": "2026-08-05T23:40:56Z",
+      "comment_updated_at": "2026-08-05T23:40:56Z",
+      "comment_body_sha256": "8fd78314c8ead28a34d0bfbc06a754721686f98be1259606d12a7d1d68c4125f",
+      "source_delivery_id": "1b6ee300-9127-11f1-8650-10a511df0f41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111970,
+      "author": "aspalagin",
+      "author_id": 263096044,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T23:41:35.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/foreground-fence-bounded-wait",
+        "head_sha": "5276d8eb931e30c2e9b7989a09ce9949f6c398c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
