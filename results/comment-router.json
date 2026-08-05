@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T17:51:38.317Z",
+  "updated_at": "2026-08-05T17:51:45.723Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119605:5192906729:2026-08-05T14:15:15Z:re_review",
-      "comment_id": "5192906729",
-      "comment_version_key": "5192906729:2026-08-05T14:15:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119605#issuecomment-5192906729",
-      "comment_created_at": "2026-08-05T14:15:15Z",
-      "comment_updated_at": "2026-08-05T14:15:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "14c38690-90d8-11f1-86e1-32d045254241",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119605,
-      "author": "Glucksberg",
-      "author_id": 80581902,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T14:15:49.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/102179-finality-aware-message-tool",
-        "head_sha": "f28b620fc0c587442406c41b4a2fcb9c44ce0cc4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119585:5191502615:2026-08-05T14:15:23Z:clawsweeper_auto_repair",
       "comment_id": "5191502615",
@@ -32258,6 +32210,39 @@
         "kind": "pull_request",
         "branch": "codex/agent-runtime-path-cleanup",
         "head_sha": "3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:70:5183422180:2026-08-05T17:50:59Z:clawsweeper_needs_human",
+      "comment_id": "5183422180",
+      "comment_version_key": "5183422180:2026-08-05T17:50:59Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/70#issuecomment-5183422180",
+      "comment_created_at": "2026-08-04T19:04:51Z",
+      "comment_updated_at": "2026-08-05T17:50:59Z",
+      "comment_body_sha256": "f6ef54580604623ee43a6c781cac10e9d55ef7fb896c1c32cf9f5e21a1284d81",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 70,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the local and CI D1-backed Worker test runtime to Miniflare 5 alpha; migration, seed, binding, or request behavior could differ despite the green checks. (sha=4bd2bdf790d447e94553e8c859c3b52de4b759d3)",
+      "expected_head_sha": "4bd2bdf790d447e94553e8c859c3b52de4b759d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T17:51:45.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-70c85b9e63",
+        "head_sha": "4bd2bdf790d447e94553e8c859c3b52de4b759d3",
         "cluster_id": null,
         "job_path": null
       }
