@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T04:01:55.950Z",
+  "updated_at": "2026-08-05T04:02:06.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78852:4585530181:2026-05-31T02:58:35Z:re_review",
-      "comment_id": "4585530181",
-      "comment_version_key": "4585530181:2026-05-31T02:58:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78852#issuecomment-4585530181",
-      "comment_created_at": "2026-05-31T02:58:35Z",
-      "comment_updated_at": "2026-05-31T02:58:35Z",
-      "comment_body_sha256": "e2ad11d9d36a44a328c1f148747d5ddcee469e88830bd578fd496ffbfb2272e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78852,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T00:25:53.885Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:78852:4589844948:2026-06-01T05:37:37Z:re_review",
       "comment_id": "4589844948",
@@ -32181,6 +32154,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T04:01:55.950Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119457:5187380460:2026-08-05T04:01:28Z:clawsweeper_needs_human",
+      "comment_id": "5187380460",
+      "comment_version_key": "5187380460:2026-08-05T04:01:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119457#issuecomment-5187380460",
+      "comment_created_at": "2026-08-05T04:01:28Z",
+      "comment_updated_at": "2026-08-05T04:01:28Z",
+      "comment_body_sha256": "75cad03102ad93b2c9c861fcc72be55a28828c714356430231beb2029909914b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies focused mock/test output only; add redacted after-fix runtime output from the real debug-capture fetch patch before merge. Afte... (sha=592a6adc0eb0e38d30d7834490fb3ecb63128c70)",
+      "expected_head_sha": "592a6adc0eb0e38d30d7834490fb3ecb63128c70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T04:02:06.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-minimax-music-tee-cancel-hang",
+        "head_sha": "592a6adc0eb0e38d30d7834490fb3ecb63128c70",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
