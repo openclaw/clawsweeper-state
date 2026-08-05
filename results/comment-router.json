@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:28:56.758Z",
+  "updated_at": "2026-08-05T12:28:57.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3285:5186731649:2026-08-05T09:43:57Z:clawsweeper_auto_repair",
-      "comment_id": "5186731649",
-      "comment_version_key": "5186731649:2026-08-05T09:43:57Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5186731649",
-      "comment_created_at": "2026-08-05T02:11:24Z",
-      "comment_updated_at": "2026-08-05T09:43:57Z",
-      "comment_body_sha256": "c0e67386b59aaafa4b40effea473ed3c999d4c2f097d6c8bf2bf655e37a23b6c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3285,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=847a6435455187e5db6ef73b4524e6dddcb86cb2)",
-      "expected_head_sha": "847a6435455187e5db6ef73b4524e6dddcb86cb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T09:44:39.160Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/integrate-krill-switch-flags",
-        "head_sha": "847a6435455187e5db6ef73b4524e6dddcb86cb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119127:5190201722:2026-08-05T09:44:35Z:re_review",
       "comment_id": "5190201722",
@@ -31707,6 +31674,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117911:5156550726:2026-08-05T12:28:08Z:clawsweeper_needs_human",
+      "comment_id": "5156550726",
+      "comment_version_key": "5156550726:2026-08-05T12:28:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5156550726",
+      "comment_created_at": "2026-08-02T08:30:18Z",
+      "comment_updated_at": "2026-08-05T12:28:08Z",
+      "comment_body_sha256": "6cc277d295dfea6d3300f780f0eeb730acdc3f37249a507134d21d29417270d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed foreground Linux path has no supplied redacted runtime evidence showing that a selected wrapper fact reaches the SIGKILL guidance; unit coverage and CI do not establish th... (sha=80b9c43e44192a723d9933e0b00bad3da01620e1)",
+      "expected_head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T12:28:57.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-69242",
+        "head_sha": "80b9c43e44192a723d9933e0b00bad3da01620e1",
+        "cluster_id": "automerge-openclaw-openclaw-117911",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117911.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
