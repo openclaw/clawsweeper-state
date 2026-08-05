@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-05T19:11:56.479Z
+Generated: 2026-08-05T19:17:11.614Z
 
 ## Summary
 
@@ -14,7 +14,7 @@ Generated: 2026-08-05T19:11:56.479Z
 | needs_checks | 8 |
 | needs_review | 0 |
 | needs_merge_preflight | 11 |
-| needs_result_backfill | 2 |
+| needs_result_backfill | 1 |
 
 ## Dispatch
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | issue-openclaw-openclaw-89430 | MERGEABLE | BLOCKED | SKIPPED:40 SUCCESS:72 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | issue-openclaw-openclaw-89430 | MERGEABLE | BLOCKED | SKIPPED:40 SUCCESS:72 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119717](https://github.com/openclaw/openclaw/pull/119717) | fix(telegram): prioritize configured commands in capped menus | issue-openclaw-openclaw-89252 | MERGEABLE | BLOCKED | SKIPPED:39 SUCCESS:75 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | issue-openclaw-openclaw-119692 | MERGEABLE | BLOCKED | SKIPPED:26 SUCCESS:80 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | issue-openclaw-openclaw-92199 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:44 SUCCESS:58 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

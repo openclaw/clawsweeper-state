@@ -1,0 +1,135 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89430",
+  "mode": "autonomous",
+  "run_id": "31035509844",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31035509844",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
+  "published_at": "2026-08-05T19:16:44.781Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89430",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89430",
+  "canonical_pr": null,
+  "summary": "#89430 is reproducible on main e69c3df2361b38285917c29b0c90867c75b8ebe9. A narrow plugin-only remote-link repair is ready, but this worker filesystem is read-only, so no branch, code change, test run, or PR could be produced here.",
+  "actions": [
+    {
+      "target": "#89430",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89430",
+      "candidate_fix": null,
+      "reason": "Current main still drops remote artifacts; native/local attachment upload remains unsupported."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89430",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89430",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate the narrow new PR from this artifact."
+    },
+    {
+      "target": "#9764",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#89430",
+      "candidate_fix": null,
+      "reason": "Related Google Chat capability, but it needs a separate maintainer-approved auth design."
+    },
+    {
+      "target": "#89637",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive preflight item; no repair, merge, or closeout action from this cluster."
+    },
+    {
+      "target": "#92518",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#89430",
+      "candidate_fix": null,
+      "reason": "Already closed; historical source only."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119718",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89430",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119718",
+      "commit": "a27e689fff7fc435fac963dd3fe6e539f9fa7408",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#89430",
+      "pr": "https://github.com/openclaw/openclaw/pull/119718",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119718",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119718",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(googlechat): deliver remote media URLs as text links",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
