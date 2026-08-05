@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T13:19:02.151Z",
+  "updated_at": "2026-08-05T13:19:03.260Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119530:5190666272:2026-08-05T10:34:41Z:re_review",
-      "comment_id": "5190666272",
-      "comment_version_key": "5190666272:2026-08-05T10:34:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119530#issuecomment-5190666272",
-      "comment_created_at": "2026-08-05T10:34:41Z",
-      "comment_updated_at": "2026-08-05T10:34:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "4510bb70-90b9-11f1-8565-acc768d6921e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119530,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T10:35:07.683Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-telegram-native-cmd-silent-failure",
-        "head_sha": "c506cab8f227eda3a32b7cc1e2ad33149e16718d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119249:5180193315:2026-08-05T10:34:43Z:clawsweeper_needs_human",
       "comment_id": "5180193315",
@@ -31236,6 +31188,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-context-cap-71136",
         "head_sha": "ef1c8d0fc55f2f236bcad7d348a33cd7e1628068",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119549:5189796051:2026-08-05T13:18:23Z:clawsweeper_auto_repair",
+      "comment_id": "5189796051",
+      "comment_version_key": "5189796051:2026-08-05T13:18:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119549#issuecomment-5189796051",
+      "comment_created_at": "2026-08-05T09:02:19Z",
+      "comment_updated_at": "2026-08-05T13:18:23Z",
+      "comment_body_sha256": "7f3ff4c6b0a87010d6397f2b9ec671bac4e7a5b5a5f302c317f02999ff304855",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119549,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=36ff5b35c50d8c57d5a4d74d22f02d7a2becdb9b)",
+      "expected_head_sha": "36ff5b35c50d8c57d5a4d74d22f02d7a2becdb9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T13:19:03.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/42106-stream-boundary",
+        "head_sha": "36ff5b35c50d8c57d5a4d74d22f02d7a2becdb9b",
         "cluster_id": null,
         "job_path": null
       }
