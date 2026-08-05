@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119360"
 mode: "autonomous"
-run_id: "30971352411"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30971352411"
+run_id: "30984463726"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30984463726"
 head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
 workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T04:25:29.157Z"
+result_status: "planned"
+published_at: "2026-08-05T07:29:09.349Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119360"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119360"
 canonical_pr: null
-actions_total: 3
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30971352411](https://github.com/openclaw/clawsweeper/actions/runs/30971352411)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30984463726](https://github.com/openclaw/clawsweeper/actions/runs/30984463726)
 
 Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/119360
 
 ## Summary
 
-Verified #119360 on main 866dade2462f0cbb4b6a617cabe09dd5cc6dd2ea: a deferred Aâ†’B restart publishes B as an accepted target before emission, so Bâ†’A schedules a new restart even though A is still running. A narrow coordinator-owned applied-target repair is appropriate, but this read-only checkout cannot create the required branch changes; focused tests also cannot start because dependency p-map is absent.
+#119360 remains a reproducible current-main Gateway lifecycle bug. A deferred restart to B advances the reload comparison baseline, so the exact applied-state revert A is planned as a second restart before the managed lifecycle can retire Bâ€™s debt. The narrow repair is ready as a new fix-PR artifact; this read-only worker could not edit or validate the branch.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Verified #119360 on main 866dade2462f0cbb4b6a617cabe09dd5cc6dd2ea: a deferred Aâ
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex review-fix worker timed out after 620877ms |
-| issue_implementation_status_comment | updated | #119360 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,11 @@ Verified #119360 on main 866dade2462f0cbb4b6a617cabe09dd5cc6dd2ea: a deferred Aâ
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119360 | fix_needed | planned | canonical | Canonical bounded Gateway lifecycle defect; a new narrow fix PR is required. |
-| #98436 | keep_related | planned | related | Distinct product-direction follow-up; no debounce or configuration surface belongs in this bug repair. |
-| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | blocked | canonical | Implementation is blocked only by the supplied checkout's read-only filesystem and incomplete dependencies; the repair plan is ready for the deterministic executor. |
+| #119360 | keep_canonical | planned | canonical | Canonical report for cancellation of a deferred restart after an exact revert to the active applied configuration. |
+| #98436 | keep_related | planned | related | Adjacent restart behavior, but distinct root cause and product scope. |
+| #119360 | fix_needed | planned | canonical | Add an applied-source equality decision before normal restart planning, while retaining explicit writer-required restarts. |
+| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | Narrow non-security fix suitable for the deterministic PR executor. |
+| cluster:issue-openclaw-openclaw-119360 | open_fix_pr | planned | canonical | Job authorizes one narrow implementation PR; merge and issue closure remain disallowed. |
 
 ## Needs Human
 
