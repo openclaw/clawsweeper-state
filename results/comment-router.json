@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:08:09.632Z",
+  "updated_at": "2026-08-05T07:08:37.572Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110415:5186528140:2026-08-05T01:37:11Z:re_review",
-      "comment_id": "5186528140",
-      "comment_version_key": "5186528140:2026-08-05T01:37:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110415#issuecomment-5186528140",
-      "comment_created_at": "2026-08-05T01:37:11Z",
-      "comment_updated_at": "2026-08-05T01:37:11Z",
-      "comment_body_sha256": "d5bbaba53ec957d47ff71eaf522bc6c90d10fc9477a4289e523bc730748433ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110415,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:22:48.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/allowfrom-accountkey-normalize-110187",
-        "head_sha": "246ca4086b0fd6651a51f6105b533da5a8229e5d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5186530797:2026-08-05T01:37:41Z:re_review",
       "comment_id": "5186530797",
@@ -32833,6 +32786,39 @@
         "kind": "pull_request",
         "branch": "perf/doctor-plugin-metadata-context-20260805",
         "head_sha": "75044b68519af512579e12d7458f838105de754c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119516:5188671808:2026-08-05T07:07:51Z:clawsweeper_needs_human",
+      "comment_id": "5188671808",
+      "comment_version_key": "5188671808:2026-08-05T07:07:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5188671808",
+      "comment_created_at": "2026-08-05T07:07:51Z",
+      "comment_updated_at": "2026-08-05T07:07:51Z",
+      "comment_body_sha256": "943223c30296fda5e4c244232a304c391673fc7c60a1ba9238e789bec01f86d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes a relevant real systemd failure transcript, but it explicitly does not show the patched two-install CLI recovery succe... (sha=cd2d1310f6df7609afce934ade51d8d9eba82f47)",
+      "expected_head_sha": "cd2d1310f6df7609afce934ade51d8d9eba82f47",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T07:08:37.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/issue-119515",
+        "head_sha": "cd2d1310f6df7609afce934ade51d8d9eba82f47",
         "cluster_id": null,
         "job_path": null
       }
