@@ -67,10 +67,11 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing Gateway restart-debt behavior for https://github.com/openclaw/openclaw/issues/119360. Preserve normal restart requirements and the existing explicit writer-intent/retry protections, but make the restart coordinator retain a distinct authoritative actually-applied runtime/source target and cancel a deferred restart when the final validated A configuration equals that target after A→B(restart required)→A. Cover the related but distinct batching context in https://github.com/openclaw/openclaw/issues/98436 only as a sibling invariant; do not add debounce settings, flags, or runtime compatibility paths. Add focused regression coverage proving no recovery restart/SIGUSR1 after work drains for the exact revert, while a genuinely different final restart-class config still restarts. Do not edit release-owned CHANGELOG.md; describe the user-visible repair in the PR body.
+Repair the Gateway lifecycle for running A → accepted/deferred restart-required B → exact A revert. Keep restart classification and explicit writer-required restart semantics intact; instead, make the lifecycle decide restart necessity from the settled candidate relative to the authoritative applied runtime/source state. Add a regression with active work holding B's restart, then restore A, drain work, and assert no restart request occurs. Keep https://github.com/openclaw/openclaw/issues/98436 out of scope because it is distinct batching work. Do not add config options or edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
+- src/gateway/config-reload.ts
 - src/gateway/server-reload-restart.ts
 - src/gateway/server-reload-managed.ts
 - src/gateway/server-reload-handlers.test.ts
@@ -78,8 +79,8 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs src/gateway/server-reload-handlers.test.ts src/gateway/config-reload.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs src/gateway/server-reload-handlers.test.ts
+- node scripts/run-vitest.mjs src/gateway/config-reload.test.ts
 
 ## Operator Prompt
 
