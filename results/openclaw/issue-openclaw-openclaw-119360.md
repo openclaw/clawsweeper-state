@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119360"
-mode: "autonomous"
-run_id: "30965790522"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30965790522"
+mode: "plan"
+run_id: "30968232504"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30968232504"
 head_sha: "6976512bc0fe3528f2f0a91699e4e291d0ce2850"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-05T02:25:47.487Z"
-canonical: "https://github.com/openclaw/openclaw/issues/119360"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/119360"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-05T02:29:21.047Z"
+canonical: "#119360"
+canonical_issue: "#119360"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30965790522](https://github.com/openclaw/clawsweeper/actions/runs/30965790522)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/30968232504](https://github.com/openclaw/clawsweeper/actions/runs/30968232504)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/119360
+Canonical: #119360
 
 ## Summary
 
-Confirmed #119360 on main ed31a4dd: deferred A advances the source diff baseline, so exact running-config B is planned as a reverse restart before paused restart debt can be retired. A narrow managed-reloader repair and regression are ready as an artifact, but this checkout is read-only and lacks runnable dependencies.
+Current main still restarts after deferred restart-class A is reverted to the active initial configuration B. Plan a narrow managed-owner fix that cancels only wholly config-owned exact-runtime reverts, preserving plugin-index and forced/conservative restart paths.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Confirmed #119360 on main ed31a4dd: deferred A advances the source diff baseline
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119360 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies; the repair is narrow and does not require a product or security decision. |
-| #98436 | keep_related | planned | related | Keep open independently; this repair must not add debounce policy or change restart classification. |
-| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | A writable, dependency-ready executor can implement and validate this two-file repair. |
+| #119360 | fix_needed | planned | canonical | The source reproduction remains valid and is a narrow bug-only repair. |
+| #98436 | keep_related | planned | related | Related gateway-restart work with distinct product scope; do not close or fold it into this bug fix. |
+| cluster:issue-openclaw-openclaw-119360 | build_fix_artifact | planned | canonical | A focused implementation can preserve existing restart semantics while repairing the lifecycle owner. |
 
 ## Needs Human
 
