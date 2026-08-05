@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:06:07.896Z",
+  "updated_at": "2026-08-05T06:06:09.343Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118965:5184615546:2026-08-04T21:05:47Z:re_review",
-      "comment_id": "5184615546",
-      "comment_version_key": "5184615546:2026-08-04T21:05:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118965#issuecomment-5184615546",
-      "comment_created_at": "2026-08-04T21:05:47Z",
-      "comment_updated_at": "2026-08-04T21:05:47Z",
-      "comment_body_sha256": "6c6e6e1fe4cf09c4f32f10033aca6e9aedd384cfd2eeeb155ddc4d3527d011d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118965,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:08:36.356Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118965:5186511184:2026-08-05T01:34:23Z:re_review",
       "comment_id": "5186511184",
@@ -32490,6 +32463,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96515:4792092019:2026-08-05T06:05:27Z:clawsweeper_needs_human",
+      "comment_id": "4792092019",
+      "comment_version_key": "4792092019:2026-08-05T06:05:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/96515#issuecomment-4792092019",
+      "comment_created_at": "2026-06-24T17:44:21Z",
+      "comment_updated_at": "2026-08-05T06:05:27Z",
+      "comment_body_sha256": "c7140997617a07eaf5f264b946cb5e9414fb68098d0fa73193c8c91eabec1f05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 96515,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused fixtures and CI support the matcher, but the PR still lacks redacted after-fix output from a real Cloudflare Sandbox showing both the o... (sha=4cd318ab03eeaf1cb73a05d48efa7fd0aca7affd)",
+      "expected_head_sha": "4cd318ab03eeaf1cb73a05d48efa7fd0aca7affd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T06:06:09.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cloudchamber-container-detection",
+        "head_sha": "4cd318ab03eeaf1cb73a05d48efa7fd0aca7affd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
