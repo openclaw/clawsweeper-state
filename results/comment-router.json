@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T18:36:20.847Z",
+  "updated_at": "2026-08-05T18:36:56.099Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/acpx:481:5154810787:2026-08-02T02:57:20Z:re_review",
-      "comment_id": "5154810787",
-      "comment_version_key": "5154810787:2026-08-02T02:57:20Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/481#issuecomment-5154810787",
-      "comment_created_at": "2026-08-02T02:57:20Z",
-      "comment_updated_at": "2026-08-02T02:57:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/acpx",
-      "issue_number": 481,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T14:24:26.501Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:309:4949888150:2026-08-05T14:24:02Z:clawsweeper_auto_repair",
       "comment_id": "4949888150",
@@ -32407,6 +32380,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T18:36:20.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117961:5157293067:2026-08-05T18:36:23Z:clawsweeper_needs_human",
+      "comment_id": "5157293067",
+      "comment_version_key": "5157293067:2026-08-05T18:36:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117961#issuecomment-5157293067",
+      "comment_created_at": "2026-08-02T10:47:20Z",
+      "comment_updated_at": "2026-08-05T18:36:23Z",
+      "comment_body_sha256": "2f9bf7ac720d6f6f3b0fc9070ac8012603dca16ea07aa4c9b8ed2a70aec98874",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; GitHub reports it mergeable, but the A2UI source has changed since the reviewed head and warrants an exact-merge refresh before landing. (sha=70a05f7674c6aa81adb1f86beb27f5359f84c94c)",
+      "expected_head_sha": "70a05f7674c6aa81adb1f86beb27f5359f84c94c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T18:36:56.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/a2ui-head-content-length",
+        "head_sha": "70a05f7674c6aa81adb1f86beb27f5359f84c94c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
