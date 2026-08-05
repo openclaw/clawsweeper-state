@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T22:00:58.960Z",
+  "generated_at": "2026-08-05T22:29:46.834Z",
   "count": 15,
   "summary": {
     "open_prs": 15,
@@ -10,7 +10,7 @@
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 11,
     "needs_review": 0,
     "needs_merge_preflight": 15,
     "needs_result_backfill": 0
@@ -34,7 +34,7 @@
       "head_sha": "eb13c2b6cbfbec9ec40949988059e802207d1ff1",
       "cluster_id": "issue-openclaw-openclaw-96692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-05T21:41:39Z",
+      "updated_at": "2026-08-05T22:28:35Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -55,8 +55,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198118390",
+            "submitted_at": "2026-08-05T22:28:25Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31008717397",
@@ -80,15 +87,15 @@
       "head_sha": "f90a1a274bd7a439e6b68190eda2ce743396b954",
       "cluster_id": "issue-openclaw-openclaw-114169",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
-      "updated_at": "2026-08-05T21:38:13Z",
+      "updated_at": "2026-08-05T22:26:55Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 114,
+        "total": 120,
         "counts": {
-          "SKIPPED": 40,
+          "SKIPPED": 46,
           "SUCCESS": 73,
           "NEUTRAL": 1
         },
@@ -101,8 +108,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
+            "submitted_at": "2026-08-05T22:26:45Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31045738534",
@@ -268,22 +282,25 @@
       "title": "fix(googlechat): deliver remote media URLs as text links",
       "url": "https://github.com/openclaw/openclaw/pull/119718",
       "branch": "clawsweeper/issue-openclaw-openclaw-89430",
-      "head_sha": "a27e689fff7fc435fac963dd3fe6e539f9fa7408",
+      "head_sha": "e45ecd8e4621947ec8a2484572270564b5ccc002",
       "cluster_id": "issue-openclaw-openclaw-89430",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-05T21:45:31Z",
+      "updated_at": "2026-08-05T22:24:53Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": true,
       "checks": {
-        "total": 123,
+        "total": 113,
         "counts": {
-          "SKIPPED": 50,
-          "SUCCESS": 72,
+          "CANCELLED": 1,
+          "SKIPPED": 40,
+          "SUCCESS": 71,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -309,21 +326,21 @@
         ]
       },
       "latest_record": {
-        "run_id": "31035509844",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31035509844",
-        "cluster_id": "issue-openclaw-openclaw-89430",
-        "published_at": "2026-08-05T19:16:44.781Z",
+        "run_id": "31049254315",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31049254315",
+        "cluster_id": "automerge-openclaw-openclaw-119718",
+        "published_at": "2026-08-05T22:28:55.431Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#119718",
           "action": "merge_canonical",
-          "status": "ready",
+          "status": "blocked",
           "classification": "fix_pr",
           "canonical": null,
           "candidate_fix": null,
           "title": "fix(googlechat): deliver remote media URLs as text links",
           "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "reason": "autofix-only job cannot merge",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,
@@ -332,7 +349,8 @@
       },
       "blockers": [
         "security_hold",
-        "needs_merge_state:BEHIND",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "route to central security triage"
