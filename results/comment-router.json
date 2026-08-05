@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T06:28:50.358Z",
+  "updated_at": "2026-08-05T06:28:51.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3390:5186730409:2026-08-05T02:11:11Z:clawsweeper_needs_human",
-      "comment_id": "5186730409",
-      "comment_version_key": "5186730409:2026-08-05T02:11:11Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3390#issuecomment-5186730409",
-      "comment_created_at": "2026-08-05T02:11:11Z",
-      "comment_updated_at": "2026-08-05T02:11:11Z",
-      "comment_body_sha256": "0437de7b6d0ded5df59a2f99cf5fb4400355a55e83c4c206591bc1a6ae550a82",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3390,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the Carapace lockfile integrity hash (P2)** - This update removes the existing sha512 field for the unchanged git-sourced Carapace dependency. The resolved commit remains pinned, but the frozen lockfile...; Review finding: [P2] Preserve the Carapace lockfile integrity hash — bun.lock:454 - [medium] Git dependency checksum removed — bun.lock:454 (sha=bda9fd5e27a785d09f701d0685cc36d7c848d87a)",
-      "expected_head_sha": "bda9fd5e27a785d09f701d0685cc36d7c848d87a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:12:04.410Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-6ec69dc283",
-        "head_sha": "bda9fd5e27a785d09f701d0685cc36d7c848d87a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3293:5186732734:2026-08-05T02:11:35Z:clawsweeper_auto_repair",
       "comment_id": "5186732734",
@@ -32533,6 +32500,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119221:5188357234:2026-08-05T06:28:23Z:re_review",
+      "comment_id": "5188357234",
+      "comment_version_key": "5188357234:2026-08-05T06:28:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119221#issuecomment-5188357234",
+      "comment_created_at": "2026-08-05T06:28:23Z",
+      "comment_updated_at": "2026-08-05T06:28:23Z",
+      "comment_body_sha256": "695323b615e63b478b7b0bda84da8734e14d2fed9c9dfcb473dd60c324ec78ff",
+      "source_delivery_id": "dca96860-9096-11f1-9404-03511be2cb87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119221,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T06:28:49.819Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-transcript-rebound-guard",
+        "head_sha": "ede2842930175bcb4009876ad069cedeae29eeb3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1077:5160354843:2026-08-05T06:28:08Z:clawsweeper_auto_repair",
