@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:38:44.088Z",
+  "updated_at": "2026-08-05T16:38:56.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117213:5182547614:2026-08-04T17:37:49Z:re_review",
-      "comment_id": "5182547614",
-      "comment_version_key": "5182547614:2026-08-04T17:37:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117213#issuecomment-5182547614",
-      "comment_created_at": "2026-08-04T17:37:49Z",
-      "comment_updated_at": "2026-08-04T17:37:49Z",
-      "comment_body_sha256": "423c02fe3a552cad09fa1319e0c9c7040075543699dff875e109bc60d220cc18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117213,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:10:09.321Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117213:5182861428:2026-08-04T18:09:50Z:re_review",
       "comment_id": "5182861428",
@@ -31930,6 +31903,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104160:5194573817:2026-08-05T16:38:28Z:freeform_assist",
+      "comment_id": "5194573817",
+      "comment_version_key": "5194573817:2026-08-05T16:38:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104160#issuecomment-5194573817",
+      "comment_created_at": "2026-08-05T16:38:28Z",
+      "comment_updated_at": "2026-08-05T16:38:28Z",
+      "comment_body_sha256": "a01c1ea365b7f06ddf0fd44229199fa04565200e65227e182caaf9b250feac81",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104160,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review\\n\\nupdated fork head with targeted repairs on top of #104159 31a14229837:\\n- carries code mode state through compacted prompt rebuilds with typed params\\n- keeps plugin-owned descendants reachable below the core-owned ools namespace\\n- tracks private qa and experimental claws descriptor gates in docs freshness\\n- preserves the #104159 rendered prompt cap and generic-node-invoke filtering\\n\\nwsl proof on the exact patch:\\n- focused vitest set passed for command policy, docs guard/generator, prompt/projection, embedded prompt, and compaction\\n- pnpm docs:commands:check passed\\n- test tsgo passed\\n- pnpm deadcode:exports passed\\n- oxfmt --check passed on touched files\\n- git diff --check passed",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:38:54.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/commands-upstream-docs",
+        "head_sha": "d7c0abb33737a9e596567c08bc6d8cb680b4de4a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
