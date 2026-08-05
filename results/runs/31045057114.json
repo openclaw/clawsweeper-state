@@ -1,0 +1,161 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-96692",
+  "mode": "autonomous",
+  "run_id": "31045057114",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31045057114",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
+  "published_at": "2026-08-05T21:12:42.233Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/96692",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/96692",
+  "canonical_pr": null,
+  "summary": "#96692 remains reproducible on main 2db3431f: Slack receipts treat the requested thread as confirmed when Slack omits message.thread_ts, allowing an unconfirmed terminal thread placement to complete durable delivery. A narrow new-PR artifact is ready, but this read-only checkout has no dependencies, so no branch, PR, comment, or label was created.",
+  "actions": [
+    {
+      "target": "#96692",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Implementation is narrow and appropriate, but this worker cannot create the branch delta or install the missing dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-96692",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-96692 once a writable executor with dependencies is available."
+    },
+    {
+      "target": "#90063",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#95250",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#96705",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#100607",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#108283",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#96692",
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation."
+    },
+    {
+      "target": "#114479",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; independent of this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 6
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 6
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119737",
+      "branch": "clawsweeper/issue-openclaw-openclaw-96692",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119737",
+      "commit": "eb13c2b6cbfbec9ec40949988059e802207d1ff1",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#96692",
+      "pr": "https://github.com/openclaw/openclaw/pull/119737",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119737",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119737",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(slack): require confirmed thread placement for terminal receipts",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
