@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
-mode: "plan"
-run_id: "30984419766"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/30984419766"
-head_sha: "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-05T08:23:58.007Z"
-canonical: "#44289"
-canonical_issue: "#44289"
+mode: "autonomous"
+run_id: "31049006352"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31049006352"
+head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-05T21:41:44.041Z"
+canonical: "https://github.com/openclaw/openclaw/issues/44289"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/30984419766](https://github.com/openclaw/clawsweeper/actions/runs/30984419766)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31049006352](https://github.com/openclaw/clawsweeper/actions/runs/31049006352)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #44289
+Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains the canonical, reproducible SecretRef docs-drift repair. Plan one narrow new fix PR; do not reuse the three closed attempts.
+Reproduced on current main: SecretRef reference artifacts are registry-derived only through parity tests; no writer, check command, or preflight gate exists. Implementation is blocked because this worker filesystem is read-only and dependencies are missing.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: #44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | Create the requested deterministic registry-to-artifact writer/check path without changing runtime SecretRef behavior. |
-| #85969 | keep_closed | skipped | superseded | Already closed; no closure, merge, or branch revival is valid. |
-| #89142 | keep_closed | skipped | superseded | Already closed historical context only. |
-| #91612 | keep_closed | skipped | superseded | Already closed historical context only. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Produce one new, focused PR from clawsweeper/issue-openclaw-openclaw-44289. |
+| #44289 | fix_needed | blocked | canonical | A narrow fix is clear, but this worker cannot write the required branch or install missing dependencies. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Executable narrow implementation plan prepared for the deterministic repair executor. |
+| #85969 | keep_closed | skipped | superseded | Already closed. |
+| #89142 | keep_closed | skipped | superseded | Already closed. |
+| #91612 | keep_closed | skipped | superseded | Already closed. |
 
 ## Needs Human
 
