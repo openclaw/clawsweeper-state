@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:18:35.731Z",
+  "updated_at": "2026-08-05T00:19:40.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2457:5100531239:2026-07-28T06:00:35Z:re_review",
-      "comment_id": "5100531239",
-      "comment_version_key": "5100531239:2026-07-28T06:00:35Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5100531239",
-      "comment_created_at": "2026-07-28T06:00:35Z",
-      "comment_updated_at": "2026-07-28T06:00:35Z",
-      "comment_body_sha256": "48756ca54e13f5f33d04a99370e350a819c32e9570f60534ffba6d8629158f30",
-      "repo": "steipete/codexbar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T20:05:48.712Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2457:5100739304:2026-07-28T06:29:13Z:re_review",
       "comment_id": "5100739304",
@@ -31872,6 +31845,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T00:18:35.731Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116260:5127573463:2026-08-05T00:19:00Z:clawsweeper_needs_human",
+      "comment_id": "5127573463",
+      "comment_version_key": "5127573463:2026-08-05T00:19:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116260#issuecomment-5127573463",
+      "comment_created_at": "2026-07-30T06:47:39Z",
+      "comment_updated_at": "2026-08-05T00:19:00Z",
+      "comment_body_sha256": "b09fb945c9f67a8c7e5b1744ea1155f90d6dc3dff3364bbb66fcc3c21fcaa885",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve full masking for legacy credentials in ordinary fields (P1)** - This sends ordinary sk-, legacy GitHub/Slack, and Bearer values through a helper that intentionally retains a six-character prefix and fou...; Review finding: [P1] Preserve full masking for legacy credentials in ordinary fields — extensions/codex/src/supervision-tools.ts:815 - [high] Legacy credentials become partially v... (sha=3452f390a5b278e69113ec07a47f6bd7053fc18b)",
+      "expected_head_sha": "3452f390a5b278e69113ec07a47f6bd7053fc18b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:19:40.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-supervision-redaction-coverage",
+        "head_sha": "3452f390a5b278e69113ec07a47f6bd7053fc18b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
