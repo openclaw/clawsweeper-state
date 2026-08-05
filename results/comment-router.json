@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:18:33.678Z",
+  "updated_at": "2026-08-05T16:18:41.758Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105393:4951376381:2026-08-05T12:28:10Z:clawsweeper_auto_repair",
-      "comment_id": "4951376381",
-      "comment_version_key": "4951376381:2026-08-05T12:28:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105393#issuecomment-4951376381",
-      "comment_created_at": "2026-07-12T13:36:48Z",
-      "comment_updated_at": "2026-08-05T12:28:10Z",
-      "comment_body_sha256": "7883933603582a8b0556ceaa3fbe64a98d33e03a4cd2af7d21ac9c4b9715f5fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105393,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f9661bbc6b6a3e98f1d756181098cc7c6cdedd05)",
-      "expected_head_sha": "f9661bbc6b6a3e98f1d756181098cc7c6cdedd05",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-05T12:28:47.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/screenshot-no-focus-steal-headed-105357",
-        "head_sha": "f9661bbc6b6a3e98f1d756181098cc7c6cdedd05",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118879:5170601195:2026-08-05T12:28:21Z:clawsweeper_needs_human",
       "comment_id": "5170601195",
@@ -32114,6 +32081,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119676:5194355624:2026-08-05T16:18:01Z:re_review",
+      "comment_id": "5194355624",
+      "comment_version_key": "5194355624:2026-08-05T16:18:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119676#issuecomment-5194355624",
+      "comment_created_at": "2026-08-05T16:18:01Z",
+      "comment_updated_at": "2026-08-05T16:18:01Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "3bce6dc0-90e9-11f1-8440-c9c2452e2e44",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119676,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:18:39.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-startup",
+        "head_sha": "626f53f5453ce244af836c5cbc1501817d0732b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
