@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T09:33:17.457Z",
+  "updated_at": "2026-08-05T09:33:21.368Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119212:5178868154:2026-08-05T04:00:29Z:clawsweeper_auto_repair",
-      "comment_id": "5178868154",
-      "comment_version_key": "5178868154:2026-08-05T04:00:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119212#issuecomment-5178868154",
-      "comment_created_at": "2026-08-04T12:14:09Z",
-      "comment_updated_at": "2026-08-05T04:00:29Z",
-      "comment_body_sha256": "0726f063854e530e6ccaa729c3b651491a6c10abc29e2e277c8e46b50343e3e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cad6aa8920627c7cb2a40f914a12bf9c02afcf8a)",
-      "expected_head_sha": "cad6aa8920627c7cb2a40f914a12bf9c02afcf8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T04:01:55.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/talk-consult-lifecycle",
-        "head_sha": "cad6aa8920627c7cb2a40f914a12bf9c02afcf8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119212:5186854571:2026-08-05T02:31:40Z:re_review",
       "comment_id": "5186854571",
@@ -33240,6 +33207,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T09:33:17.457Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119538:5190089673:2026-08-05T09:32:36Z:clawsweeper_needs_human",
+      "comment_id": "5190089673",
+      "comment_version_key": "5190089673:2026-08-05T09:32:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119538#issuecomment-5190089673",
+      "comment_created_at": "2026-08-05T09:32:36Z",
+      "comment_updated_at": "2026-08-05T09:32:36Z",
+      "comment_body_sha256": "ee35872c055d683542a305b8e5c9a11b5f175ada459ef4e9d146007deb005606",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The independent STT error boundary in extensions/qqbot/src/engine/utils/stt.ts:119-135 can still reflect its Bearer API key in an exception; this PR does not worsen that behavior, but... (sha=a32e1ec69490c9d336122223c15a4c926b054fd2)",
+      "expected_head_sha": "a32e1ec69490c9d336122223c15a4c926b054fd2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T09:33:21.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t24-07-qqbot-api-error-redaction",
+        "head_sha": "a32e1ec69490c9d336122223c15a4c926b054fd2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
