@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:31:27.624Z",
+  "updated_at": "2026-08-05T00:31:45.977Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-04T20:09:49Z:clawsweeper_needs_human",
-      "comment_id": "5156335270",
-      "comment_version_key": "5156335270:2026-08-04T20:09:49Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5156335270",
-      "comment_created_at": "2026-08-02T07:51:03Z",
-      "comment_updated_at": "2026-08-04T20:09:49Z",
-      "comment_body_sha256": "497813865fe36388bfd456a88dcd5eb7cdbe95233b2abee77849f00f32faee21",
-      "repo": "openclaw/lobster",
-      "issue_number": 128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing workflows that only obtain valid output on the formerly extra request will fail at their configured limit after this change, even though the updated wording makes that limit... (sha=4e1b81e60284e6250826b792281219df62f96871)",
-      "expected_head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-04T20:17:52.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-validation-retry-off-by-one",
-        "head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:128:5162671447:2026-08-03T05:31:30Z:re_review",
       "comment_id": "5162671447",
@@ -31786,6 +31753,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3404:5186134224:2026-08-05T00:31:12Z:re_review",
+      "comment_id": "5186134224",
+      "comment_version_key": "5186134224:2026-08-05T00:31:12Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3404#issuecomment-5186134224",
+      "comment_created_at": "2026-08-05T00:31:12Z",
+      "comment_updated_at": "2026-08-05T00:31:12Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "f6f7a470-9064-11f1-9f59-41ae94613483",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3404,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T00:31:43.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-updater-app-auth",
+        "head_sha": "910af5ccd36bc942ceaaefbf653e8b66b45c734b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
