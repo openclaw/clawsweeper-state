@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119578",
+  "mode": "autonomous",
+  "run_id": "31004599505",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31004599505",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md",
+  "published_at": "2026-08-05T12:52:07.124Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119578",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119578",
+  "canonical_pr": null,
+  "summary": "Current main still parses the SQLite chat-history candidate tail before enforcing its byte budget. A narrow, chat-only metadata-first repair is warranted; it must preserve oversized placeholders, reset-aware sequence IDs, NO_REPLY filtering, and pagination.",
+  "actions": [
+    {
+      "target": "#119578",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "The issue is source-reproducible on main and has a narrow canonical owner-boundary repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119578",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "A focused new PR can repair only chat.history without changing generic reader or session-memory semantics."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119578",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "The job permits a new implementation PR but not merge or closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119578",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
