@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T16:27:45.352Z",
+  "updated_at": "2026-08-05T16:27:47.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3398:5186730068:2026-08-05T13:03:17Z:clawsweeper_needs_human",
-      "comment_id": "5186730068",
-      "comment_version_key": "5186730068:2026-08-05T13:03:17Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3398#issuecomment-5186730068",
-      "comment_created_at": "2026-08-05T02:11:08Z",
-      "comment_updated_at": "2026-08-05T13:03:17Z",
-      "comment_body_sha256": "f863137f2c7e87adfa36acd9f7428177f3b96a010c5e8b81277147d906694a2c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3398,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The submitted visual and bundle evidence uses Carapace v0.2.0, whereas a clean merge would retain current main’s v0.6.1 typography contract; removing the local font faces could theref... (sha=01cb52aa03e6970798846953a06199d212379aab)",
-      "expected_head_sha": "01cb52aa03e6970798846953a06199d212379aab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T13:05:42.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "contrib/remove-redundant-font-bundles",
-        "head_sha": "01cb52aa03e6970798846953a06199d212379aab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3399:5186733346:2026-08-05T13:04:51Z:clawsweeper_auto_repair",
       "comment_id": "5186733346",
@@ -32042,6 +32009,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119275:5194453420:2026-08-05T16:27:15Z:re_review",
+      "comment_id": "5194453420",
+      "comment_version_key": "5194453420:2026-08-05T16:27:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119275#issuecomment-5194453420",
+      "comment_created_at": "2026-08-05T16:27:15Z",
+      "comment_updated_at": "2026-08-05T16:27:15Z",
+      "comment_body_sha256": "193ee07b475fc9623916c3f05575fa20be84a25b5ac0c2381dfef2df5c9b231f",
+      "source_delivery_id": "85b0f5b0-90ea-11f1-85bc-1b0ea265ac31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119275,
+      "author": "dandriscoll",
+      "author_id": 5069805,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T16:27:45.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-suffix-drops-summary-body",
+        "head_sha": "ad507a80b25be5d3de5595dd9ace41bd7a94c778",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
