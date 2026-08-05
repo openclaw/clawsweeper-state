@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T12:26:58.327Z",
+  "updated_at": "2026-08-05T12:27:03.388Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:245:5068815494:2026-08-05T09:36:25Z:clawsweeper_auto_repair",
-      "comment_id": "5068815494",
-      "comment_version_key": "5068815494:2026-08-05T09:36:25Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/245#issuecomment-5068815494",
-      "comment_created_at": "2026-07-24T10:29:41Z",
-      "comment_updated_at": "2026-08-05T09:36:25Z",
-      "comment_body_sha256": "488fe037d3b68275b52923aee6bb2c7e1f887ac5c5d38d2e0a48b01e8c01a770",
-      "repo": "openclaw/crabpot",
-      "issue_number": 245,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4bf64994b838fa7ba247011f70b17fd2b6f00789)",
-      "expected_head_sha": "4bf64994b838fa7ba247011f70b17fd2b6f00789",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T09:40:58.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/submodules/plugins/dingtalk-connector-5e2b4d9",
-        "head_sha": "4bf64994b838fa7ba247011f70b17fd2b6f00789",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:257:5168900311:2026-08-05T09:39:17Z:clawsweeper_auto_repair",
       "comment_id": "5168900311",
@@ -31744,6 +31711,53 @@
       "status": "skipped",
       "processed_at": "2026-08-05T12:26:58.327Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118680:5167057998:2026-08-05T12:26:24Z:clawsweeper_needs_human",
+      "comment_id": "5167057998",
+      "comment_version_key": "5167057998:2026-08-05T12:26:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118680#issuecomment-5167057998",
+      "comment_created_at": "2026-08-03T13:38:41Z",
+      "comment_updated_at": "2026-08-05T12:26:24Z",
+      "comment_body_sha256": "79c79cf648fbecbebe01c9d73aff4e124eca7699c7fdacf308eafd2bcdbf357a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, previously rejected persisted compatibility settings can begin changing provider routing, cache retention, session-affinity headers, or tool streaming; that is the inte... (sha=a526bb70794a4cf6a79519ff6f42e0902c0d7b6d)",
+      "expected_head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T12:27:03.388Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118667",
+        "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+        "cluster_id": "issue-openclaw-openclaw-118667",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
