@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-05T00:06:08.774Z",
+  "updated_at": "2026-08-05T00:06:22.019Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119210:5183837077:2026-08-04T19:47:14Z:re_review",
-      "comment_id": "5183837077",
-      "comment_version_key": "5183837077:2026-08-04T19:47:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119210#issuecomment-5183837077",
-      "comment_created_at": "2026-08-04T19:47:14Z",
-      "comment_updated_at": "2026-08-04T19:47:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119210,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-04T20:01:32.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/realtime-private-model-gate",
-        "head_sha": "474f202c3f3ba2fde2d5a4267175349ceab81005",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112818:5183837209:2026-08-04T19:47:15Z:re_review",
       "comment_id": "5183837209",
@@ -31998,6 +31951,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119373:5185976114:2026-08-05T00:05:42Z:clawsweeper_auto_repair",
+      "comment_id": "5185976114",
+      "comment_version_key": "5185976114:2026-08-05T00:05:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119373#issuecomment-5185976114",
+      "comment_created_at": "2026-08-05T00:05:42Z",
+      "comment_updated_at": "2026-08-05T00:05:42Z",
+      "comment_body_sha256": "271f876690f2f0eedf042bfcbdefbd3c050cd2a020fd344da6fd13330c63dfd0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=59df99d9c9e569505b241bddc04e016c7d33a0a6)",
+      "expected_head_sha": "59df99d9c9e569505b241bddc04e016c7d33a0a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T00:06:22.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-slack-progress-markdown-1",
+        "head_sha": "59df99d9c9e569505b241bddc04e016c7d33a0a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
