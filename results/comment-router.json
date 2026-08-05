@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:12:53.212Z",
+  "updated_at": "2026-08-05T07:14:48.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119397:5186805404:2026-08-05T02:23:09Z:re_review",
-      "comment_id": "5186805404",
-      "comment_version_key": "5186805404:2026-08-05T02:23:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119397#issuecomment-5186805404",
-      "comment_created_at": "2026-08-05T02:23:09Z",
-      "comment_updated_at": "2026-08-05T02:23:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "9a6e6c10-9074-11f1-9511-1b1eca4c1c64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119397,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T02:23:34.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/text-overlay-redesign-8df182",
-        "head_sha": "f63f1e0d892b38c1cbf6eba8738a2e9503469a6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119413:5186804228:2026-08-05T02:22:57Z:clawsweeper_needs_human",
       "comment_id": "5186804228",
@@ -32874,6 +32826,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119528:5188728016:2026-08-05T07:14:01Z:clawsweeper_needs_human",
+      "comment_id": "5188728016",
+      "comment_version_key": "5188728016:2026-08-05T07:14:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119528#issuecomment-5188728016",
+      "comment_created_at": "2026-08-05T07:14:01Z",
+      "comment_updated_at": "2026-08-05T07:14:01Z",
+      "comment_body_sha256": "0d59e54796b8ceb9451d239dbf01ffe3ca5177775628312da1f15b7da017cabe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this PR as behind and several exact-head checks remain in progress; refresh mergeability and checks before landing. (sha=dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4)",
+      "expected_head_sha": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T07:14:48.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-94679",
+        "head_sha": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
+        "cluster_id": "issue-openclaw-openclaw-94679",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
