@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T04:33:36.346Z",
-  "count": 6,
+  "generated_at": "2026-08-05T04:56:56.595Z",
+  "count": 4,
   "summary": {
-    "open_prs": 6,
+    "open_prs": 4,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 6,
+    "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 6,
+    "needs_merge_preflight": 4,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -326,168 +326,6 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 118807,
-      "title": "fix(reply): defer steer messages while embedded compaction runs",
-      "url": "https://github.com/openclaw/openclaw/pull/118807",
-      "branch": "clawsweeper/issue-openclaw-openclaw-118771",
-      "head_sha": "39000bacc134f75218328d31d514b99d649650ab",
-      "cluster_id": "issue-openclaw-openclaw-118771",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118771.md",
-      "updated_at": "2026-08-05T04:19:06Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 149,
-        "counts": {
-          "CANCELLED": 16,
-          "SKIPPED": 46,
-          "SUCCESS": 84,
-          "FAILURE": 2,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / security-fast:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118807#issuecomment-5170767554",
-            "submitted_at": "2026-08-03T19:23:54Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118807#issuecomment-5170775067",
-            "submitted_at": "2026-08-03T19:24:45Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30844222024",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30844222024",
-        "cluster_id": "automerge-openclaw-openclaw-118807",
-        "published_at": "2026-08-03T19:39:22.488Z",
-        "workflow_conclusion": "failure",
-        "apply_action": {
-          "target": "#118807",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#118807",
-          "candidate_fix": "#118807",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 118806,
-      "title": "fix(agents): remove yield from leaf subagents",
-      "url": "https://github.com/openclaw/openclaw/pull/118806",
-      "branch": "clawsweeper/issue-openclaw-openclaw-118776",
-      "head_sha": "d20ce06d439667096a4a319750a93686904a6e2e",
-      "cluster_id": "issue-openclaw-openclaw-118776",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118776.md",
-      "updated_at": "2026-08-05T01:17:19Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 154,
-        "counts": {
-          "CANCELLED": 18,
-          "SKIPPED": 49,
-          "SUCCESS": 84,
-          "FAILURE": 2,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "Real behavior proof:CANCELLED",
-          "CI / security-fast:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118806#issuecomment-5170245430",
-            "submitted_at": "2026-08-03T18:29:51Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/118806#issuecomment-5170258379",
-            "submitted_at": "2026-08-03T18:31:13Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30965745742",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30965745742",
-        "cluster_id": "automerge-openclaw-openclaw-118806",
-        "published_at": "2026-08-05T01:40:43.505Z",
-        "workflow_conclusion": "failure",
-        "apply_action": {
-          "target": "#118806",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#118806",
-          "candidate_fix": "#118806",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
