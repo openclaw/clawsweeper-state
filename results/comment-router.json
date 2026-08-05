@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T21:19:21.562Z",
+  "updated_at": "2026-08-05T21:19:28.165Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119644:5192962350:2026-08-05T15:18:45Z:clawsweeper_needs_human",
-      "comment_id": "5192962350",
-      "comment_version_key": "5192962350:2026-08-05T15:18:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119644#issuecomment-5192962350",
-      "comment_created_at": "2026-08-05T14:20:01Z",
-      "comment_updated_at": "2026-08-05T15:18:45Z",
-      "comment_body_sha256": "0539d7c99081654a8f38e040d0111c4af0b2d71738a6f3bdf7b05a68369ce969",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119644,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor is source-plausible, but the supplied timing notes intentionally do not provide the scoped guide's before/after startup-seconds and RSS comparison, so the claimed import-... (sha=661dce3b5dc9401649fafcf90f63036b68581cca)",
-      "expected_head_sha": "661dce3b5dc9401649fafcf90f63036b68581cca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T16:18:23.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-worker-core-tools",
-        "head_sha": "661dce3b5dc9401649fafcf90f63036b68581cca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119621:5192996365:2026-08-05T15:11:13Z:clawsweeper_needs_human",
       "comment_id": "5192996365",
@@ -32534,6 +32501,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3400:5197468727:2026-08-05T21:18:41Z:re_review",
+      "comment_id": "5197468727",
+      "comment_version_key": "5197468727:2026-08-05T21:18:41Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3400#issuecomment-5197468727",
+      "comment_created_at": "2026-08-05T21:18:41Z",
+      "comment_updated_at": "2026-08-05T21:18:41Z",
+      "comment_body_sha256": "e387a66a4f5855b763e687b553f17ea33b68f372314d216fd671c2ed4e1146ff",
+      "source_delivery_id": "3c0f7c50-9113-11f1-8b17-559f111a02bc",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3400,
+      "author": "hummern",
+      "author_id": 260059310,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T21:19:22.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-upload-ticket-mismatch",
+        "head_sha": "fd93cefe5f72ffed8e500cfbd7362ae3bca05ec1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
