@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-05T04:01:49.990Z",
+  "updated_at": "2026-08-05T04:01:53.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78852:4527123364:2026-05-24T02:14:41Z:re_review",
-      "comment_id": "4527123364",
-      "comment_version_key": "4527123364:2026-05-24T02:14:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78852#issuecomment-4527123364",
-      "comment_created_at": "2026-05-24T02:14:41Z",
-      "comment_updated_at": "2026-05-24T02:14:41Z",
-      "comment_body_sha256": "c3a2c920e137d2e9c847555b04a319d23ac3ca8a75236ed47b9e8ef510e1d2b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78852,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T00:25:53.885Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:78852:4527145945:2026-05-24T02:20:38Z:re_review",
       "comment_id": "4527145945",
@@ -32169,6 +32142,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T04:01:49.990Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119456:5187377669:2026-08-05T04:01:00Z:clawsweeper_needs_human",
+      "comment_id": "5187377669",
+      "comment_version_key": "5187377669:2026-08-05T04:01:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119456#issuecomment-5187377669",
+      "comment_created_at": "2026-08-05T04:01:00Z",
+      "comment_updated_at": "2026-08-05T04:01:00Z",
+      "comment_body_sha256": "0167bc60166c5ddf903b2b920e23f95b8ba1b9840d46e0d8986495e85a5b24bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119456,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The additive durable session field is compatibility-sensitive: existing rows have no run owner until their next lifecycle start, so the timestamp fallback remains their temporary beha... (sha=8ff053687f7ac3f2cba259f0414a348222fcb0b6)",
+      "expected_head_sha": "8ff053687f7ac3f2cba259f0414a348222fcb0b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T04:01:53.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-lifecycle-same-run-stale",
+        "head_sha": "8ff053687f7ac3f2cba259f0414a348222fcb0b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
