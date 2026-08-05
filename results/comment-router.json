@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T07:16:06.806Z",
+  "updated_at": "2026-08-05T07:17:59.445Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86540:4535361389:2026-08-05T00:24:16Z:clawsweeper_auto_repair",
-      "comment_id": "4535361389",
-      "comment_version_key": "4535361389:2026-08-05T00:24:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/86540#issuecomment-4535361389",
-      "comment_created_at": "2026-05-25T15:25:09Z",
-      "comment_updated_at": "2026-08-05T00:24:16Z",
-      "comment_body_sha256": "8e37c742fd7b412984f18c3ab9f061ec53adf165fffa19cfd18ee8a0ef17269b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 86540,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T02:24:05.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bug-035-036-subagent-delivery-locks",
-        "head_sha": "f9c6fc7de291905233e7d5ca65201f6d299e00ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:91237:4643932703:2026-08-05T00:33:53Z:clawsweeper_needs_human",
       "comment_id": "4643932703",
@@ -32856,6 +32823,54 @@
       "status": "skipped",
       "processed_at": "2026-08-05T07:16:06.806Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:95830:5188769191:2026-08-05T07:17:28Z:re_review",
+      "comment_id": "5188769191",
+      "comment_version_key": "5188769191:2026-08-05T07:17:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/95830#issuecomment-5188769191",
+      "comment_created_at": "2026-08-05T07:17:28Z",
+      "comment_updated_at": "2026-08-05T07:17:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "b8181fd0-909d-11f1-98de-cba3db4571ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 95830,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T07:17:57.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-poll-answer-routing-v2",
+        "head_sha": "da456512b7fe70666d1e6b2b24a124983b509e95",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
