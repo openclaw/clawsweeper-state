@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:36:12.205Z",
+  "updated_at": "2026-08-05T10:36:16.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91271:5187926510:2026-08-05T05:28:57Z:re_review",
-      "comment_id": "5187926510",
-      "comment_version_key": "5187926510:2026-08-05T05:28:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91271#issuecomment-5187926510",
-      "comment_created_at": "2026-08-05T05:28:57Z",
-      "comment_updated_at": "2026-08-05T05:28:57Z",
-      "comment_body_sha256": "70ced2208dd47463e924c3beb940402796ddf5cdc82ea12daeab121b33e408cd",
-      "source_delivery_id": "8f520930-908e-11f1-8abf-73c6d65b0883",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91271,
-      "author": "deepujain",
-      "author_id": 406777,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:29:26.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/38570-a2a-requester-identity",
-        "head_sha": "25e8a1497054e5171622cf8cf5909020fb73546d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119478:5187927105:2026-08-05T05:29:02Z:re_review",
       "comment_id": "5187927105",
@@ -33658,6 +33610,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T10:36:12.205Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:310:5164078211:2026-08-05T10:31:15Z:clawsweeper_needs_human",
+      "comment_id": "5164078211",
+      "comment_version_key": "5164078211:2026-08-05T10:31:15Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/310#issuecomment-5164078211",
+      "comment_created_at": "2026-08-03T08:32:28Z",
+      "comment_updated_at": "2026-08-05T10:31:15Z",
+      "comment_body_sha256": "3934347aa72ad55afe4d51edc753ce8626a6fe5f91a3c6ddac7345689741336e",
+      "repo": "openclaw/peekaboo",
+      "issue_number": 310,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes coordinate_context version 1 a public MCP contract, including field names, nullability, top-left global-point basis, and see reference_id semantics. (sha=d4535317a6545ad8a698ce847762de4cdf454a0e)",
+      "expected_head_sha": "d4535317a6545ad8a698ce847762de4cdf454a0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:36:16.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/capture-coordinate-context",
+        "head_sha": "d4535317a6545ad8a698ce847762de4cdf454a0e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
