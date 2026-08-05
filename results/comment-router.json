@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T11:37:19.326Z",
+  "updated_at": "2026-08-05T11:37:13.198Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116416:5189133394:2026-08-05T07:55:43Z:re_review",
@@ -32404,37 +32404,51 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119240:5180135395:2026-08-05T11:36:34Z:clawsweeper_auto_repair",
-      "comment_id": "5180135395",
-      "comment_version_key": "5180135395:2026-08-05T11:36:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119240#issuecomment-5180135395",
-      "comment_created_at": "2026-08-04T14:01:21Z",
-      "comment_updated_at": "2026-08-05T11:36:34Z",
-      "comment_body_sha256": "1f95bb334af29ff02f3bf04d4dc9c734c9d328026fc87a52282072cda09fbf4b",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119590:5191222587:2026-08-05T11:36:25Z:clawsweeper_needs_human",
+      "comment_id": "5191222587",
+      "comment_version_key": "5191222587:2026-08-05T11:36:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119590#issuecomment-5191222587",
+      "comment_created_at": "2026-08-05T11:36:25Z",
+      "comment_updated_at": "2026-08-05T11:36:25Z",
+      "comment_body_sha256": "f67ff0606d04c1d5e55629c4be58f763ed680aeb60d5b61dbcefb99d30d3cf13",
       "repo": "openclaw/openclaw",
-      "issue_number": 119240,
+      "issue_number": 119590,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
       "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=29fe602559b11a9d432a71aaeed351af7e124290)",
-      "expected_head_sha": "29fe602559b11a9d432a71aaeed351af7e124290",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete automated repair remains; continue normal exact-head CI and the existing autofix workflow if a check identifies one. (sha=9b2b77d3d12de18f34f52d03633f93bdb2211c58)",
+      "expected_head_sha": "9b2b77d3d12de18f34f52d03633f93bdb2211c58",
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T11:37:19.326Z",
+      "status": "executed",
+      "processed_at": "2026-08-05T11:37:13.198Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/memory-status-vector-store-92102",
-        "head_sha": "29fe602559b11a9d432a71aaeed351af7e124290",
-        "cluster_id": null,
-        "job_path": null
-      }
+        "branch": "clawsweeper/issue-openclaw-openclaw-119581",
+        "head_sha": "9b2b77d3d12de18f34f52d03633f93bdb2211c58",
+        "cluster_id": "issue-openclaw-openclaw-119581",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119581.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
