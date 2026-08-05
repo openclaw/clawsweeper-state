@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T20:05:19.590Z",
+  "generated_at": "2026-08-05T20:09:39.940Z",
   "count": 12,
   "summary": {
     "open_prs": 12,
@@ -13,7 +13,7 @@
     "needs_checks": 9,
     "needs_review": 0,
     "needs_merge_preflight": 12,
-    "needs_result_backfill": 2
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -74,12 +74,32 @@
           }
         ]
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "31040056855",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31040056855",
+        "cluster_id": "automerge-openclaw-openclaw-119722",
+        "published_at": "2026-08-05T20:09:13.536Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119722",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(uninstall): remove owned shell completion registrations with state",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
