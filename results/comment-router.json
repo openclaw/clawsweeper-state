@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-05T10:38:08.589Z",
+  "updated_at": "2026-08-05T10:38:20.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119422:5187964202:2026-08-05T05:34:29Z:re_review",
-      "comment_id": "5187964202",
-      "comment_version_key": "5187964202:2026-08-05T05:34:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119422#issuecomment-5187964202",
-      "comment_created_at": "2026-08-05T05:34:29Z",
-      "comment_updated_at": "2026-08-05T05:34:29Z",
-      "comment_body_sha256": "1bfc371f9a25d54eddaebeaed44e0dc1b32e2f363a9196292ae8ce236c357236",
-      "source_delivery_id": "54d081f0-908f-11f1-9c8a-21ff5a14c296",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119422,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T05:34:55.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-maxdiskbytes-zero",
-        "head_sha": "060440a601954f38bce0bcfcc0290a028f6071c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119271:5181639789:2026-08-05T05:30:45Z:clawsweeper_needs_human",
       "comment_id": "5181639789",
@@ -33579,6 +33531,39 @@
         "kind": "pull_request",
         "branch": "codex/gateway-independent-core-rfc",
         "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:31:4900174065:2026-08-05T10:32:01Z:clawsweeper_needs_human",
+      "comment_id": "4900174065",
+      "comment_version_key": "4900174065:2026-08-05T10:32:01Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/31#issuecomment-4900174065",
+      "comment_created_at": "2026-07-07T04:39:28Z",
+      "comment_updated_at": "2026-08-05T10:32:01Z",
+      "comment_body_sha256": "fc0dbb9b61e0eb116ddca705d3f3953ce7d10c538a193793af2ebd59e35ea2ce",
+      "repo": "openclaw/rfcs",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: This is a documentation-only RFC PR, so runtime proof is not a merge gate; the remaining gate is maintainer acceptance through the RFC lifecycle. (sha=b337b35023421ecc87f58fe46a8389d632f119ce)",
+      "expected_head_sha": "b337b35023421ecc87f58fe46a8389d632f119ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T10:38:20.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "edpiva/remote-harness-event-contract-rfc",
+        "head_sha": "b337b35023421ecc87f58fe46a8389d632f119ce",
         "cluster_id": null,
         "job_path": null
       }
