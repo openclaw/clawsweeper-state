@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-05T13:09:33.160Z",
+  "updated_at": "2026-08-05T13:09:34.913Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:134:5169405589:2026-08-05T09:47:13Z:clawsweeper_needs_human",
-      "comment_id": "5169405589",
-      "comment_version_key": "5169405589:2026-08-05T09:47:13Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5169405589",
-      "comment_created_at": "2026-08-03T17:05:12Z",
-      "comment_updated_at": "2026-08-05T09:47:13Z",
-      "comment_body_sha256": "d4daab2d3f8b5274506b2f580035d84a5f1c6ee387ca0a06f0e3016ee0b99b6d",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not suppress keyless usage based on prior LLM charges (P1)** - An unmarked shell or pipeline output with the same model and billable token counts as an earlier LLM call reaches billCopy(null, ...); it searche...; Review finding: [P1] Do not suppress keyless usage based on prior LLM charges — src/commands/stdlib/llm_invoke.ts:352-364 - [medium] Keyless usage can impersonate a billed LLM res... (sha=588c9db2d715fce72665b8fccb22d47eea7584a6)",
-      "expected_head_sha": "588c9db2d715fce72665b8fccb22d47eea7584a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T09:47:51.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workflow-cost-skip-cached-replays",
-        "head_sha": "588c9db2d715fce72665b8fccb22d47eea7584a6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118683:5167159361:2026-08-05T10:00:55Z:clawsweeper_needs_human",
       "comment_id": "5167159361",
@@ -31694,6 +31661,39 @@
       "status": "skipped",
       "processed_at": "2026-08-05T13:09:33.160Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109203:5006808816:2026-08-05T13:08:59Z:clawsweeper_needs_human",
+      "comment_id": "5006808816",
+      "comment_version_key": "5006808816:2026-08-05T13:08:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109203#issuecomment-5006808816",
+      "comment_created_at": "2026-07-17T19:31:45Z",
+      "comment_updated_at": "2026-08-05T13:08:59Z",
+      "comment_body_sha256": "259e532c0ff57a774e6f869065d30b8a66bcaf95137f0eaaed5e3797235dafa1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109203,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve the agent header as an actual agent (P1)** - X-OpenClaw-Agent-Id is documented as an agent selector, but this passes it as accountId; the resolver only uses that for channel-account bindings and otherwis...; Review finding: [P1] Resolve the agent header as an actual agent — extensions/ag-ui/src/http-handler.ts:378-383 - [P1] Scope SSE hook state to each admitted run — extensions/ag-ui... (sha=33a15fc459c6342e92b28a58dbaa7999955922b1)",
+      "expected_head_sha": "33a15fc459c6342e92b28a58dbaa7999955922b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-05T13:09:34.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ag-ui-channel",
+        "head_sha": "33a15fc459c6342e92b28a58dbaa7999955922b1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
