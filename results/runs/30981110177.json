@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-94679",
+  "mode": "autonomous",
+  "run_id": "30981110177",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30981110177",
+  "head_sha": "49e8c7de6cfed4a7c34ea4b6449a5ee83e2df6a8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md",
+  "published_at": "2026-08-05T07:16:46.264Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/94679",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/94679",
+  "canonical_pr": null,
+  "summary": "Confirmed on main 76ac472f: Claude CLI recovery drops persisted timestamps and lacks stale-context guidance. A narrow fix PR is planned; implementation is blocked in this read-only checkout with missing dependencies.",
+  "actions": [
+    {
+      "target": "#94679",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#94679",
+      "candidate_fix": null,
+      "reason": "Open canonical issue has a narrow, established-behavior repair; no close or merge is authorized."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-94679",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#94679",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate the planned narrow branch repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119528",
+      "branch": "clawsweeper/issue-openclaw-openclaw-94679",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119528",
+      "commit": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#94679",
+      "pr": "https://github.com/openclaw/openclaw/pull/119528",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119528",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119528",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): timestamp recovered Claude CLI history",
+      "idempotency_key": null,
+      "reason": "checks are not clean: QA Smoke CI (profile 2/4): FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

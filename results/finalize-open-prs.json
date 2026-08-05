@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-05T07:02:52.309Z",
-  "count": 7,
+  "generated_at": "2026-08-05T07:17:54.581Z",
+  "count": 8,
   "summary": {
-    "open_prs": 7,
+    "open_prs": 8,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 7,
+    "needs_checks": 8,
     "needs_review": 0,
-    "needs_merge_preflight": 7,
+    "needs_merge_preflight": 8,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,82 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119528,
+      "title": "fix(agents): timestamp recovered Claude CLI history",
+      "url": "https://github.com/openclaw/openclaw/pull/119528",
+      "branch": "clawsweeper/issue-openclaw-openclaw-94679",
+      "head_sha": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
+      "cluster_id": "issue-openclaw-openclaw-94679",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md",
+      "updated_at": "2026-08-05T07:15:37Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 142,
+        "counts": {
+          "CANCELLED": 10,
+          "SKIPPED": 45,
+          "SUCCESS": 84,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "Real behavior proof:CANCELLED",
+          "CI / QA Smoke CI (profile 2/4):FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119528#issuecomment-5188728016",
+            "submitted_at": "2026-08-05T07:14:01Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "30981110177",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30981110177",
+        "cluster_id": "issue-openclaw-openclaw-94679",
+        "published_at": "2026-08-05T07:16:46.264Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119528",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(agents): timestamp recovered Claude CLI history",
+          "idempotency_key": null,
+          "reason": "checks are not clean: QA Smoke CI (profile 2/4): FAILURE, openclaw/ci-gate: FAILURE",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:Real behavior proof:CANCELLED; Real behavior proof:CANCELLED; Real behavior proof:CANCELLED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119512,
       "title": "fix(sessions): reuse identities during target dedupe",
