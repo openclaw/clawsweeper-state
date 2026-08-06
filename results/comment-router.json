@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-06T00:10:02.856Z",
+  "updated_at": "2026-08-06T00:09:49.737Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118888:5196196716:2026-08-05T19:11:24Z:re_review",
+      "comment_id": "5196196716",
+      "comment_version_key": "5196196716:2026-08-05T19:11:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118888#issuecomment-5196196716",
+      "comment_created_at": "2026-08-05T19:11:24Z",
+      "comment_updated_at": "2026-08-05T19:11:24Z",
+      "comment_body_sha256": "5893cf4efbaff5152484309b6c9ad17828f143901471de59faaec8a4cb60b715",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118888,
+      "author": "Kailigithub",
+      "author_id": 12250313,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-05T19:25:49.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-118845-workboard-error-actual-length",
+        "head_sha": "f1d0a36d00a492fb21d78c07e77e4e6a0d854f0b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119665:5196274964:2026-08-05T19:19:31Z:re_review",
       "comment_id": "5196274964",
@@ -32326,39 +32373,6 @@
         "kind": "pull_request",
         "branch": "fix/discovery-fetch-timeout",
         "head_sha": "2fe61b7b0e445f5d92579edebdbf7bbeef2aede2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:490:5192368457:2026-08-06T00:09:18Z:clawsweeper_needs_human",
-      "comment_id": "5192368457",
-      "comment_version_key": "5192368457:2026-08-06T00:09:18Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/490#issuecomment-5192368457",
-      "comment_created_at": "2026-08-05T13:30:29Z",
-      "comment_updated_at": "2026-08-06T00:09:18Z",
-      "comment_body_sha256": "f393907a05ec17e9561d3e9e5df2efc4106d5876e329faa479a0aff42b926a55",
-      "repo": "openclaw/acpx",
-      "issue_number": 490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upgraded third-party action will run in self-hosted Crabbox hydration and the id-token-enabled trusted-publishing release job, neither of which is exercised by ordinary PR checks. (sha=8d42f939605e434b4d4b2a4032f3c9876f39582a)",
-      "expected_head_sha": "8d42f939605e434b4d4b2a4032f3c9876f39582a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T00:10:02.856Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-a9bcc878af",
-        "head_sha": "8d42f939605e434b4d4b2a4032f3c9876f39582a",
         "cluster_id": null,
         "job_path": null
       }
