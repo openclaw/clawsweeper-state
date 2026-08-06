@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:39:40.626Z",
+  "updated_at": "2026-08-06T09:39:43.411Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:100960:5187562824:2026-08-05T04:31:37Z:re_review",
-      "comment_id": "5187562824",
-      "comment_version_key": "5187562824:2026-08-05T04:31:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100960#issuecomment-5187562824",
-      "comment_created_at": "2026-08-05T04:31:37Z",
-      "comment_updated_at": "2026-08-05T04:31:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100960,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:43:13.231Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:100960:5187616572:2026-08-05T04:40:04Z:re_review",
       "comment_id": "5187616572",
@@ -32350,6 +32323,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117226:5150092642:2026-08-06T09:35:37Z:clawsweeper_needs_human",
+      "comment_id": "5150092642",
+      "comment_version_key": "5150092642:2026-08-06T09:35:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117226#issuecomment-5150092642",
+      "comment_created_at": "2026-08-01T06:00:40Z",
+      "comment_updated_at": "2026-08-06T09:35:37Z",
+      "comment_body_sha256": "b5ecdb03e007d1b003247c6f79a238ba1567532384738a59043cb74c211cd4d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117226,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Unify the image metadata boundary across transports (P1)** - The direct return now introduces a bounded usage contract, but the Codex Responses route still forwards terminal usage and tool_usage as unknown metad...; Review finding: [P1] Unify the image metadata boundary across transports — extensions/openai/image-generation-provider.ts:1128-1137 - [medium] Codex terminal metadata is forwarded... (sha=92fcf8a987d91c6cd67ca8255310d2ae01c2dcb6)",
+      "expected_head_sha": "92fcf8a987d91c6cd67ca8255310d2ae01c2dcb6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T09:39:43.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-openai-image-usage-owner",
+        "head_sha": "92fcf8a987d91c6cd67ca8255310d2ae01c2dcb6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
