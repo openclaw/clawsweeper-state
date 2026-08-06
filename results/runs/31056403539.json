@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119755",
+  "mode": "autonomous",
+  "run_id": "31056403539",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31056403539",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119755.md",
+  "published_at": "2026-08-06T00:26:20.917Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119755",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119755",
+  "canonical_pr": null,
+  "summary": "Confirmed on main d3d25737: health reads through the legacy sessions.json locator but publishes that locator instead of its canonical SQLite database target. No branch or tests could be completed because this worker checkout is read-only and its dependency install lacks p-map; the focused test runner fails before test discovery.",
+  "actions": [
+    {
+      "target": "#119755",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119755",
+      "candidate_fix": null,
+      "reason": "Narrow producer-boundary bug: preserve the legacy locator for SQLite session reads, but expose the resolved canonical SQLite target in health output."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119755",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119755",
+      "candidate_fix": null,
+      "reason": "Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-119755 after dependency installation and focused validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119779",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119755",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119779",
+      "commit": "a53bd170d88da64c05ec044598fd4ff7a4874dad",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119755",
+      "pr": "https://github.com/openclaw/openclaw/pull/119779",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119779",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119779",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(health): report canonical SQLite session store path",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
