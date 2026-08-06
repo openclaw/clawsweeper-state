@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:49:53.943Z",
+  "updated_at": "2026-08-06T05:50:58.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5161010372:2026-08-03T00:09:00Z:re_review",
-      "comment_id": "5161010372",
-      "comment_version_key": "5161010372:2026-08-03T00:09:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5161010372",
-      "comment_created_at": "2026-08-03T00:09:00Z",
-      "comment_updated_at": "2026-08-03T00:09:00Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T02:05:46.983Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5161109097:2026-08-03T00:28:16Z:re_review",
       "comment_id": "5161109097",
@@ -31792,6 +31765,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1108:5200890618:2026-08-06T05:50:16Z:clawsweeper_needs_human",
+      "comment_id": "5200890618",
+      "comment_version_key": "5200890618:2026-08-06T05:50:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1108#issuecomment-5200890618",
+      "comment_created_at": "2026-08-06T05:50:16Z",
+      "comment_updated_at": "2026-08-06T05:50:16Z",
+      "comment_body_sha256": "b4c151596b294f07d7c6b7f1a4803dc43e576b8982e1cecb7305666957c7fcee",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Generated path-only entries will intentionally stop authorizing commands, while manually authored path-only rules remain broad. Maintainers should explicitly confirm that upgrade dist... (sha=747aedb4729d85d6d83439a76055f5d22b903ad3)",
+      "expected_head_sha": "747aedb4729d85d6d83439a76055f5d22b903ad3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T05:50:58.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-investigate-exec-policy-regression",
+        "head_sha": "747aedb4729d85d6d83439a76055f5d22b903ad3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
