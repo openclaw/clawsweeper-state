@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T04:18:29.359Z",
+  "updated_at": "2026-08-06T04:28:08.723Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117365:5151280416:2026-08-01T11:46:18Z:re_review",
-      "comment_id": "5151280416",
-      "comment_version_key": "5151280416:2026-08-01T11:46:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117365#issuecomment-5151280416",
-      "comment_created_at": "2026-08-01T11:46:18Z",
-      "comment_updated_at": "2026-08-01T11:46:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117365,
-      "author": "chernoff-code",
-      "author_id": 221717140,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T23:33:34.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1037:5194249608:2026-08-05T23:32:52Z:clawsweeper_needs_human",
       "comment_id": "5194249608",
@@ -31878,6 +31851,54 @@
       "processed_at": "2026-08-06T04:18:27.255Z",
       "target": {
         "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119706:5200384174:2026-08-06T04:27:23Z:re_review",
+      "comment_id": "5200384174",
+      "comment_version_key": "5200384174:2026-08-06T04:27:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119706#issuecomment-5200384174",
+      "comment_created_at": "2026-08-06T04:27:23Z",
+      "comment_updated_at": "2026-08-06T04:27:23Z",
+      "comment_body_sha256": "45ba6f679691c8fe82f7b8500bceba443ec325fa47facd488256fea106059ad5",
+      "source_delivery_id": "1f8f1270-914f-11f1-979a-2599fc9ed74d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119706,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T04:28:05.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-capture-stalled-read-deadline",
+        "head_sha": "740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb",
         "cluster_id": null,
         "job_path": null
       },
