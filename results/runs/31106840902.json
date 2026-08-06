@@ -1,0 +1,136 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119551",
+  "mode": "autonomous",
+  "run_id": "31106840902",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31106840902",
+  "head_sha": "daf339e6d1d35d6246ffd2bfd3aae5f61342ad32",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
+  "published_at": "2026-08-06T14:39:15.156Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_pr": null,
+  "summary": "Current main reproduces #119551: configured ACP bindings omit the owning agent’s explicit primary model and explicit-selection provenance, and reuse sessions after that configured model changes. The narrow two-file repair is defined, but this checkout is read-only and lacks dependencies, so no branch or validated PR can be produced here.",
+  "actions": [
+    {
+      "target": "#106008",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Keep open as a separate ACP startup-model follow-up."
+    },
+    {
+      "target": "#119551",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "A narrow canonical repair PR is required; no viable open candidate PR exists."
+    },
+    {
+      "target": "#119599",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Already closed; retain only as credited historical evidence."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119551",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Artifact is sufficient for the executor to create one narrow credited fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119551",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Apply the artifact in a writable checkout with dependencies, then open/update clawsweeper/issue-openclaw-openclaw-119551 and apply the required ClawSweeper labels."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119968",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119551",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119968",
+      "commit": "75ec5b0b7a01e068437c5e00db1638c1f2f79198",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119551",
+      "pr": "https://github.com/openclaw/openclaw/pull/119968",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119968",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119968",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(acp): pass configured binding owner model to runtime",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

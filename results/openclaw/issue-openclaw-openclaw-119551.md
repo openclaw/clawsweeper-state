@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119551"
 mode: "autonomous"
-run_id: "31078375679"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31078375679"
-head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
+run_id: "31106840902"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31106840902"
+head_sha: "daf339e6d1d35d6246ffd2bfd3aae5f61342ad32"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-06T07:43:41.000Z"
+published_at: "2026-08-06T14:39:15.156Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_pr: null
-actions_total: 4
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31078375679](https://github.com/openclaw/clawsweeper/actions/runs/31078375679)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31106840902](https://github.com/openclaw/clawsweeper/actions/runs/31106840902)
 
 Workflow conclusion: success
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 ## Summary
 
-#119551 is reproducible on main 1f10ef80: configured ACP bindings initialize without the owning agent's explicit model. The narrow repair is clear, but this worker checkout is read-only, so implementation and validation must be performed by the executor from the attached fix artifact.
+Current main reproduces #119551: configured ACP bindings omit the owning agent’s explicit primary model and explicit-selection provenance, and reuse sessions after that configured model changes. The narrow two-file repair is defined, but this checkout is read-only and lacks dependencies, so no branch or validated PR can be produced here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,23 +54,24 @@ Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: Not merge-ready: stale ACP metadata can bypass model reconfiguration and silently reuse the old ACPX model. |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119968 | clawsweeper/issue-openclaw-openclaw-119551 |  |
 | issue_implementation_status_comment | updated | #119551 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #119968 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119551 | fix_needed | blocked | canonical | Implement the artifact on clawsweeper/issue-openclaw-openclaw-119551, then run focused proof and pnpm check:changed before opening the PR. |
-| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Narrow bug-only repair artifact for a new ClawSweeper PR. |
-| #106008 | keep_related | planned | related | Related ACP model-routing work with independent scope; leave open. |
-| #119599 | keep_closed | skipped | superseded | Historical source material only; no closure or mutation is valid. |
+| #106008 | keep_related | planned | related | Keep open as a separate ACP startup-model follow-up. |
+| #119551 | fix_needed | planned | canonical | A narrow canonical repair PR is required; no viable open candidate PR exists. |
+| #119599 | keep_closed | skipped | superseded | Already closed; retain only as credited historical evidence. |
+| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Artifact is sufficient for the executor to create one narrow credited fix PR. |
+| cluster:issue-openclaw-openclaw-119551 | open_fix_pr | blocked | canonical | Apply the artifact in a writable checkout with dependencies, then open/update clawsweeper/issue-openclaw-openclaw-119551 and apply the required ClawSweeper labels. |
 
 ## Needs Human
 
