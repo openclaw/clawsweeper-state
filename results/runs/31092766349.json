@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119887",
+  "mode": "autonomous",
+  "run_id": "31092766349",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31092766349",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119887.md",
+  "published_at": "2026-08-06T10:29:16.541Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119887",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119887",
+  "canonical_pr": null,
+  "summary": "Current main 7321c4424683ee5831f1d5602c403f0c66f51259 still rejects valid archived JSONL with a terminal NUL run before Doctor can rewrite it. A narrow Doctor-only fix is warranted; no security-sensitive signal was found.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/119887",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119887",
+      "candidate_fix": null,
+      "reason": "Implement the reported Doctor-only recovery while retaining strict parsing and atomic replacement safeguards."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/113695",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#119887",
+      "candidate_fix": null,
+      "reason": "Already merged; no closure or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119887",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119887",
+      "candidate_fix": "#119887",
+      "reason": "Create one narrow ClawSweeper fix PR from clawsweeper/issue-openclaw-openclaw-119887."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
