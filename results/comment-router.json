@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T02:29:40.091Z",
+  "updated_at": "2026-08-06T02:30:39.167Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113422:5197636828:2026-08-05T21:34:28Z:re_review",
-      "comment_id": "5197636828",
-      "comment_version_key": "5197636828:2026-08-05T21:34:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113422#issuecomment-5197636828",
-      "comment_created_at": "2026-08-05T21:34:28Z",
-      "comment_updated_at": "2026-08-05T21:34:28Z",
-      "comment_body_sha256": "6dbadd30b029471ecde38188ada7247dddacd90c955c892212278aa441870646",
-      "source_delivery_id": "705f23a0-9115-11f1-8979-a8f7c7804221",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113422,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head b1444c990774de008c550d34c1862ee05e602e4a. follow-up fix keeps hosting profile constants in src/hosting/types.ts so config schema/cli/runtime constant consumers do not import the full profile behavior module. wsl proof passed focused auth/control-ui/node-event vitest (126 tests), pnpm deadcode:exports, tsgo test src config, touched-file oxfmt, and git diff --check",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T21:35:07.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/standard-hosting-profiles-owner-adoption",
-        "head_sha": "b1444c990774de008c550d34c1862ee05e602e4a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111628:5018464177:2026-08-05T21:31:50Z:clawsweeper_needs_human",
       "comment_id": "5018464177",
@@ -31531,6 +31483,39 @@
         "kind": "pull_request",
         "branch": "fix/sparse-manifest-safety-20260806",
         "head_sha": "c5ddf0be2066d0eaa0a30cd7a7ca1b1afe40dba9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118555:5163448817:2026-08-06T02:29:37Z:clawsweeper_auto_repair",
+      "comment_id": "5163448817",
+      "comment_version_key": "5163448817:2026-08-06T02:29:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118555#issuecomment-5163448817",
+      "comment_created_at": "2026-08-03T07:20:54Z",
+      "comment_updated_at": "2026-08-06T02:29:37Z",
+      "comment_body_sha256": "28c473e80bba67a3c53dd59baf86f7d9a27a0b1e665012d0d4e2e3eadcf0a03a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118555,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f)",
+      "expected_head_sha": "e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T02:30:39.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prompt-build-drop-marker",
+        "head_sha": "e53c6d0a7b6cdf3616985b3f14ccb4defeaac24f",
         "cluster_id": null,
         "job_path": null
       }
