@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
-mode: "autonomous"
-run_id: "31067510031"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31067510031"
+mode: "plan"
+run_id: "31068654087"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31068654087"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-06T04:22:54.605Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-06T04:26:49.551Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31067510031](https://github.com/openclaw/clawsweeper/actions/runs/31067510031)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31068654087](https://github.com/openclaw/clawsweeper/actions/runs/31068654087)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains a reproducible non-security documentation-drift bug on main de27d8306e4c5cc5951045c3b643356e8a9549b2. The current target checkout is read-only, so this worker cannot make or validate the required branch edits; a narrow credited fix PR remains appropriate.
+Plan a narrow credited fix PR that makes buildSecretRefCredentialMatrix() the sole producer for the checked-in SecretRef JSON matrix and marked Markdown lists, with deterministic generation/drift checks. No GitHub mutation is proposed.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | Canonical issue requires a new narrow fix PR; closed contributor PRs are historical source evidence only. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | blocked |  | Needs a writable executor to implement and validate the prepared narrow repair. |
-| #85969 | keep_closed | skipped | superseded | Historical evidence only. |
-| #89142 | keep_closed | skipped | superseded | Historical evidence only. |
-| #91612 | keep_closed | skipped | superseded | Historical evidence only. |
+| #44289 | fix_needed | planned | canonical | The issue is reproducible, non-security-sensitive, and has a narrow canonical implementation path. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | A new focused PR is required; no open hydrated candidate can be repaired. |
+| #85969 | keep_closed | skipped | superseded | Already closed; no closure or mutation action is valid. |
+| #89142 | keep_closed | skipped | superseded | Already closed; no closure or mutation action is valid. |
+| #91612 | keep_closed | skipped | superseded | Already closed; no closure or mutation action is valid. |
 
 ## Needs Human
 
