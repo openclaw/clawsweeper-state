@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T16:48:49.365Z",
+  "updated_at": "2026-08-06T16:58:03.794Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111237:5014654368:2026-08-06T08:48:54Z:clawsweeper_auto_repair",
-      "comment_id": "5014654368",
-      "comment_version_key": "5014654368:2026-08-06T08:48:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111237#issuecomment-5014654368",
-      "comment_created_at": "2026-07-19T06:08:58Z",
-      "comment_updated_at": "2026-08-06T08:48:54Z",
-      "comment_body_sha256": "a87dd2640faf5eb9c79de8bac59b6c7bebeeb9dd2e8828d648540d01e60e9a4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111237,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dd6e9e3bd5c1a51a453b63aa9818d6a835b7a062)",
-      "expected_head_sha": "dd6e9e3bd5c1a51a453b63aa9818d6a835b7a062",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T10:40:29.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/venice-live-model-metadata-20260719",
-        "head_sha": "dd6e9e3bd5c1a51a453b63aa9818d6a835b7a062",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113361:5071842814:2026-08-06T09:03:37Z:clawsweeper_auto_repair",
       "comment_id": "5071842814",
@@ -32057,6 +32024,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119955:5205445709:2026-08-06T15:45:51Z:clawsweeper_needs_human",
+      "comment_id": "5205445709",
+      "comment_version_key": "5205445709:2026-08-06T15:45:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119955#issuecomment-5205445709",
+      "comment_created_at": "2026-08-06T13:44:00Z",
+      "comment_updated_at": "2026-08-06T15:45:51Z",
+      "comment_body_sha256": "e5e6570c82a7a73a2b25d9ec552f39ed32238d4c6476c743f11d94929d1422f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119955,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies a mocked handler test but no after-fix authenticated HTTP-to-Gateway-to-channel trace; add a redacted private-channel run or pe...; Review finding: [P2] Document the required idempotency key — docs/plugins/admin-http-rpc.md:175-176 - [P2] Describe session behavior accurately — docs/plugins/admin-http-rpc.md:17... (sha=e3425148fad52c006b4ee4c86cf76d619ea31078)",
+      "expected_head_sha": "e3425148fad52c006b4ee4c86cf76d619ea31078",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T16:58:03.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/admin-rpc-message-send",
+        "head_sha": "e3425148fad52c006b4ee4c86cf76d619ea31078",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
