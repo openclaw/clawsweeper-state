@@ -1,0 +1,116 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "31058696184",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31058696184",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-06T00:47:09.646Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains the open canonical bug. A narrow replacement fix PR is appropriate, but this worker's target checkout is read-only, so implementation and validation are blocked pending a writable executor.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "The registry-backed matrix exists, but the checked-in JSON and Markdown marker blocks remain manually synchronized; a generator/check boundary is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "A writable target checkout is required to implement and validate the fix artifact."
+    },
+    {
+      "target": "#85969",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#89142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#91612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is valid for a closed PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1,
+    "skipped": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#44289",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
