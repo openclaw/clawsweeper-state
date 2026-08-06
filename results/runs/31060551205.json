@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119758",
+  "mode": "autonomous",
+  "run_id": "31060551205",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31060551205",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119758.md",
+  "published_at": "2026-08-06T02:09:23.345Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119758",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119758",
+  "canonical_pr": null,
+  "summary": "#119758 remains a reproducible canonical bug on main a1064adb6861cdd242c6814562120c0420ea494b. Targeted updates drop the inferred official channel, while --all preserves it. A narrow new-PR plan is ready, but this read-only checkout has no node_modules and pnpm cannot initialize its Corepack cache (EROFS), so no patch or validation could be performed here.",
+  "actions": [
+    {
+      "target": "#119758",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119758",
+      "candidate_fix": null,
+      "reason": "Implement the existing official-channel contract for targeted trusted official installs without enabling catalog sync or changing pin policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119758",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119758",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate this narrow repair on clawsweeper/issue-openclaw-openclaw-119758."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119799",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119758",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119799",
+      "commit": "83762118b65d7d31215286aed6ace32d87e77e6a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119758",
+      "pr": "https://github.com/openclaw/openclaw/pull/119799",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119799",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119799",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(plugins): keep targeted official updates on the core channel",
+      "idempotency_key": null,
+      "reason": "checks are not clean: preflight: QUEUED, Scan changed paths (precise): QUEUED",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
