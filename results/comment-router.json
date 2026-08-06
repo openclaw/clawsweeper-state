@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T03:09:20.482Z",
+  "updated_at": "2026-08-06T03:09:23.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5197460075:2026-08-05T21:17:42Z:re_review",
-      "comment_id": "5197460075",
-      "comment_version_key": "5197460075:2026-08-05T21:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5197460075",
-      "comment_created_at": "2026-08-05T21:17:42Z",
-      "comment_updated_at": "2026-08-05T21:17:42Z",
-      "comment_body_sha256": "67afa23c71b3e15f9795ac3591fc16754b15c26d966dd35d24cfb92a3b04248d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T22:42:16.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "17b39bd5b7c5b30380674c87e0247c888e236042",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114636:5197725045:2026-08-05T21:43:00Z:re_review",
       "comment_id": "5197725045",
@@ -31535,6 +31488,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-connection-domain-owners",
         "head_sha": "d6a92f831ece07b438e1e040604d4339867acd5b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1105:5198093247:2026-08-06T03:08:05Z:clawsweeper_auto_repair",
+      "comment_id": "5198093247",
+      "comment_version_key": "5198093247:2026-08-06T03:08:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1105#issuecomment-5198093247",
+      "comment_created_at": "2026-08-05T22:25:16Z",
+      "comment_updated_at": "2026-08-06T03:08:05Z",
+      "comment_body_sha256": "7bdd7791b85e59dd83c09d0e8cc744242dfc39f111290ad40e91769d15ab6466",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=66cd1c81679396aaa6e44a60b0ab2716563a7e60)",
+      "expected_head_sha": "66cd1c81679396aaa6e44a60b0ab2716563a7e60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T03:09:23.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-latest-fallback",
+        "head_sha": "66cd1c81679396aaa6e44a60b0ab2716563a7e60",
         "cluster_id": null,
         "job_path": null
       }
