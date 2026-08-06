@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:03:14.167Z",
+  "updated_at": "2026-08-06T09:03:20.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112896:5200433415:2026-08-06T04:36:05Z:re_review",
-      "comment_id": "5200433415",
-      "comment_version_key": "5200433415:2026-08-06T04:36:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5200433415",
-      "comment_created_at": "2026-08-06T04:36:05Z",
-      "comment_updated_at": "2026-08-06T04:36:05Z",
-      "comment_body_sha256": "f26b9808aab616f7127411e821919d2211673450881e518ea500de32202f6ca6",
-      "source_delivery_id": "56b06cd0-9150-11f1-9724-9730dad5b6b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112896,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T04:36:51.774Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-restored-admission",
-        "head_sha": "b0b4afe0acc3f5a582459a22e61c87becac9ffe2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116794:5200283423:2026-08-06T04:10:00Z:re_review",
       "comment_id": "5200283423",
@@ -32288,6 +32240,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T09:03:14.167Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1098:5194221127:2026-08-06T09:02:24Z:clawsweeper_needs_human",
+      "comment_id": "5194221127",
+      "comment_version_key": "5194221127:2026-08-06T09:02:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1098#issuecomment-5194221127",
+      "comment_created_at": "2026-08-05T16:05:58Z",
+      "comment_updated_at": "2026-08-06T09:02:24Z",
+      "comment_body_sha256": "318b94929f8fbcd74b1e3d1f8177411e840dd5ab5505cd787b07e9b380c2255f",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is stacked on https://github.com/openclaw/openclaw-windows-node/pull/1096, which GitHub reports as dirty, so this branch has no established final three-way merge result against... (sha=8464a7438bc40c154f25d42f35b71d10c245cd72)",
+      "expected_head_sha": "8464a7438bc40c154f25d42f35b71d10c245cd72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T09:03:20.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-chat-composer-layer",
+        "head_sha": "8464a7438bc40c154f25d42f35b71d10c245cd72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
