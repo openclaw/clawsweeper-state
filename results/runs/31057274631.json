@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119591",
+  "mode": "autonomous",
+  "run_id": "31057274631",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31057274631",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119591.md",
+  "published_at": "2026-08-06T01:00:58.711Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119591",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119591",
+  "canonical_pr": null,
+  "summary": "#119591 remains a real current-main bug. A narrow new fix PR is planned, but this worker cannot implement or validate it because the checkout is read-only, dependencies are absent, and no Venice credential is available for the required redacted provider probe.",
+  "actions": [
+    {
+      "target": "#119591",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119591",
+      "candidate_fix": null,
+      "reason": "Implementation and validation require the writable executor branch and a provider-boundary environment."
+    },
+    {
+      "target": "#119593",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119591",
+      "candidate_fix": null,
+      "reason": "Already closed; it is evidence only and cannot receive a closure action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119591",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119591",
+      "candidate_fix": null,
+      "reason": "Create a narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-119591."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review timed out after 127384ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119591",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
