@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T10:17:41.864Z",
+  "updated_at": "2026-08-06T10:17:48.646Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100115:4884225391:2026-08-06T03:31:30Z:clawsweeper_needs_human",
-      "comment_id": "4884225391",
-      "comment_version_key": "4884225391:2026-08-06T03:31:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100115#issuecomment-4884225391",
-      "comment_created_at": "2026-07-05T00:11:56Z",
-      "comment_updated_at": "2026-08-06T03:31:30Z",
-      "comment_body_sha256": "e56e12f99d37780c5db99f0b5aa5969ade901db0655d85f45d6a0efecd2653f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing OTLP consumers that used an omitted usage attribute as a signal will now receive an explicit zero for events that report zero; this is intentional but needs maintainer accept... (sha=af097c7c3f3834d3db7193fb563d5a2f014a76e4)",
-      "expected_head_sha": "af097c7c3f3834d3db7193fb563d5a2f014a76e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:44:04.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "investigate/tool-call-zero-context",
-        "head_sha": "af097c7c3f3834d3db7193fb563d5a2f014a76e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116369:5129992242:2026-08-06T03:36:46Z:clawsweeper_auto_repair",
       "comment_id": "5129992242",
@@ -32616,6 +32583,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T10:17:41.864Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-06T10:17:15Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-06T10:17:15Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-06T10:17:15Z",
+      "comment_body_sha256": "dc97c3bafba49e44fdb5e226173c6f7f6a4e8e98a9f52a8a02a90cb254ab3a10",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes benchmark-evidence eligibility: completed Claude Code runs will no longer be excluded solely for an unsupported trajectory mode, so maintainers must accept that the ex... (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T10:17:48.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
