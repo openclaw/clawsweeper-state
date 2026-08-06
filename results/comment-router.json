@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T21:56:18.942Z",
+  "updated_at": "2026-08-06T21:56:43.388Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-06T10:41:59Z:clawsweeper_auto_repair",
-      "comment_id": "5160702307",
-      "comment_version_key": "5160702307:2026-08-06T10:41:59Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/142#issuecomment-5160702307",
-      "comment_created_at": "2026-08-02T22:44:24Z",
-      "comment_updated_at": "2026-08-06T10:41:59Z",
-      "comment_body_sha256": "b423ff6e7f61c370dc0a227bce4f2962317cd7ca165bc74d91667780f02a86f5",
-      "repo": "openclaw/clickclack",
-      "issue_number": 142,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9feff69636048d5bd71685f4b678d30d11e1c928)",
-      "expected_head_sha": "9feff69636048d5bd71685f4b678d30d11e1c928",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T10:42:35.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/0.3.0-prep",
-        "head_sha": "9feff69636048d5bd71685f4b678d30d11e1c928",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119886:5203600104:2026-08-06T10:44:28Z:re_review",
       "comment_id": "5203600104",
@@ -32212,6 +32179,54 @@
         "kind": "pull_request",
         "branch": "user/giodl/claws-project-lifecycle",
         "head_sha": "9d6721ff8b6684d8b9b05343c8f70710f6e08ac5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119874:5207519861:2026-08-06T16:40:58Z:re_review",
+      "comment_id": "5207519861",
+      "comment_version_key": "5207519861:2026-08-06T16:40:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119874#issuecomment-5207519861",
+      "comment_created_at": "2026-08-06T16:40:58Z",
+      "comment_updated_at": "2026-08-06T16:40:58Z",
+      "comment_body_sha256": "45722c7fb1a7c29aaac7863c88d32c87636dee7716b2a179c61556407fd4fc7f",
+      "source_delivery_id": "9afe2110-91b5-11f1-9c61-b8415c76aad8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119874,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T21:56:41.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-timeout-seconds-naming",
+        "head_sha": "f5e9e82a0685e23908eed91904c48c73b5a795a1",
         "cluster_id": null,
         "job_path": null
       },
