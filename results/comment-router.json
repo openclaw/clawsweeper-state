@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:32:42.249Z",
+  "updated_at": "2026-08-06T05:33:08.785Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119737:5198118390:2026-08-06T01:29:33Z:clawsweeper_auto_repair",
-      "comment_id": "5198118390",
-      "comment_version_key": "5198118390:2026-08-06T01:29:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198118390",
-      "comment_created_at": "2026-08-05T22:28:25Z",
-      "comment_updated_at": "2026-08-06T01:29:33Z",
-      "comment_body_sha256": "e5e886bcef393e0c69e7133f4282aead0c4a7960101fb428a8b7ae5227482262",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119737,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=db140b159c758bf135a7de9a9f6afe073c3ac4cd)",
-      "expected_head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
-      "finding_id": "review-feedback",
-      "status": "executed",
-      "processed_at": "2026-08-06T01:32:34.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-96692",
-        "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
-        "cluster_id": "automerge-openclaw-openclaw-119737",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119737.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119737.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-06T01:31:28Z:clawsweeper_needs_human",
       "comment_id": "5199365650",
@@ -31571,6 +31524,54 @@
       "status": "skipped",
       "processed_at": "2026-08-06T05:32:42.249Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112896:5200769564:2026-08-06T05:32:32Z:re_review",
+      "comment_id": "5200769564",
+      "comment_version_key": "5200769564:2026-08-06T05:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5200769564",
+      "comment_created_at": "2026-08-06T05:32:32Z",
+      "comment_updated_at": "2026-08-06T05:32:32Z",
+      "comment_body_sha256": "9d0d50eb3bbc91c08776b8a411df79c1edece4c4916bcb53478aa416f5dd692f",
+      "source_delivery_id": "399c7320-9158-11f1-9920-add6308d7d13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112896,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please. updated #112896 after rebasing onto current upstream/main 355c107c093767cb14c1463b8e3a7dd9764a7359 and pushed only to fork branch user/giodl/rfc-0013-restored-admission at exact head 89345a007267af4c50b8d3d735fab50ec7dea96b. validation passed: snapshot/restored/final/recovery-journal vitest 31 tests; gateway method-list/restored/suspension/restore/startup vitest 146 tests; cli/root-command/protocol vitest 90 tests; test-source tsgo; deadcode exports; protocol check; touched-file oxfmt; touched-file oxlint; git diff --check",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T05:33:05.214Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-restored-admission",
+        "head_sha": "89345a007267af4c50b8d3d735fab50ec7dea96b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
