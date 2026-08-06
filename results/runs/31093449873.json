@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "31093449873",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31093449873",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-06T10:36:55.703Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains the canonical reproducible SecretRef documentation-generation repair. Implementation cannot be safely replayed here: the supplied repair base f99b6a48f7749eb47aa85dfe37df94290c0ef000 is unavailable, while this checkout is read-only at unrelated main SHA 7321c4424683ee5831f1d5602c403f0c66f51259.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "A writable checkout containing the intended base (or a fresh writable checkout at current main) is required before the narrow repair can be recreated and validated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Executable repair is blocked only by checkout/base availability; the artifact is ready for replay in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout containing current openclaw/openclaw main (or restore the pinned repair base) so ClawSweeper can recreate, validate, and raise the one allowed fix PR."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#44289",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
