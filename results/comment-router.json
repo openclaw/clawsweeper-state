@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T14:58:29.668Z",
+  "updated_at": "2026-08-06T14:58:38.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119891:5202957389:2026-08-06T09:41:17Z:clawsweeper_needs_human",
-      "comment_id": "5202957389",
-      "comment_version_key": "5202957389:2026-08-06T09:41:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119891#issuecomment-5202957389",
-      "comment_created_at": "2026-08-06T09:41:17Z",
-      "comment_updated_at": "2026-08-06T09:41:17Z",
-      "comment_body_sha256": "caf2e30c1adcc29189f3f334d084abaa6abad1040cf28029944710b55a321f44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119891,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Scope shallow accumulation by sender name (P1)** - senderName is a valid harness identity when IDs are absent, but this new key omits it. Two name-only group participants can therefore accumulate into one review...; Review finding: [P1] Scope shallow accumulation by sender name — src/skills/workshop/experience-review.ts:354-361 - [P1] Require a verified read before auto-applying a patch — src... (sha=6ae6997e4abd1e9b7fee5dee5d9e7cdc734d6cce)",
-      "expected_head_sha": "6ae6997e4abd1e9b7fee5dee5d9e7cdc734d6cce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T09:41:51.931Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/skill-workshop-extend-learning",
-        "head_sha": "6ae6997e4abd1e9b7fee5dee5d9e7cdc734d6cce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119892:5202959765:2026-08-06T09:41:32Z:clawsweeper_auto_repair",
       "comment_id": "5202959765",
@@ -31923,6 +31890,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T14:58:29.668Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:344:5206466425:2026-08-06T14:57:49Z:clawsweeper_auto_repair",
+      "comment_id": "5206466425",
+      "comment_version_key": "5206466425:2026-08-06T14:57:49Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/344#issuecomment-5206466425",
+      "comment_created_at": "2026-08-06T14:57:49Z",
+      "comment_updated_at": "2026-08-06T14:57:49Z",
+      "comment_body_sha256": "5f8c0f50215191eb61f84b706a54db1df9d4fcaf5b6e0194c51c3da427cc4d61",
+      "repo": "openclaw/wacli",
+      "issue_number": 344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa04991a2f6d485ea618e76d099615594ed91fd1)",
+      "expected_head_sha": "aa04991a2f6d485ea618e76d099615594ed91fd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T14:58:38.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "diagnose-unparsed-messages",
+        "head_sha": "aa04991a2f6d485ea618e76d099615594ed91fd1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
