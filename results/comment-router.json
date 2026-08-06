@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:04:06.492Z",
+  "updated_at": "2026-08-06T00:04:10.987Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113421:5195959081:2026-08-05T18:50:11Z:re_review",
-      "comment_id": "5195959081",
-      "comment_version_key": "5195959081:2026-08-05T18:50:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113421#issuecomment-5195959081",
-      "comment_created_at": "2026-08-05T18:50:11Z",
-      "comment_updated_at": "2026-08-05T18:50:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113421,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/readiness-core-owner-adoption",
-        "head_sha": "5dc65b066fb923b5389098c005914c5956e913a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113422:5195969188:2026-08-05T18:50:50Z:re_review",
       "comment_id": "5195969188",
@@ -32513,6 +32466,39 @@
         "kind": "pull_request",
         "branch": "agent/add-ibm-bob-provider",
         "head_sha": "8d4a0bb249d82b011686758ea421fdc72521c241",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-06T00:03:40Z:clawsweeper_needs_human",
+      "comment_id": "4854073498",
+      "comment_version_key": "4854073498:2026-08-06T00:03:40Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
+      "comment_created_at": "2026-07-01T11:37:33Z",
+      "comment_updated_at": "2026-08-06T00:03:40Z",
+      "comment_body_sha256": "c6c880bbf66c64831a8ac5884500498144c18204ba238c4024c01424250e745c",
+      "repo": "openclaw/clawscan",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging republishes the default sandbox image, so the upgraded tools can change existing scans’ findings, raw JSON, exit behavior, or benchmark verdicts without a CLI-code change. (sha=bb644fe1646cbd7f74c81947259ec5b042fad776)",
+      "expected_head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:04:10.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/runtime-tool-updates",
+        "head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
         "cluster_id": null,
         "job_path": null
       }
