@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T14:59:11.466Z",
-  "count": 17,
+  "generated_at": "2026-08-06T15:21:11.250Z",
+  "count": 18,
   "summary": {
-    "open_prs": 17,
+    "open_prs": 18,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 12,
     "needs_review": 0,
-    "needs_merge_preflight": 17,
+    "needs_merge_preflight": 18,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,6 +27,81 @@
   },
   "prs": [
     {
+      "number": 119983,
+      "title": "fix(workboard): include operator notes in Start prompt",
+      "url": "https://github.com/openclaw/openclaw/pull/119983",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119962",
+      "head_sha": "d0e62e6a5a75f434a5afe0e854614fc95304bee0",
+      "cluster_id": "issue-openclaw-openclaw-119962",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
+      "updated_at": "2026-08-06T14:58:48Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 102,
+        "counts": {
+          "SKIPPED": 24,
+          "SUCCESS": 66,
+          "FAILURE": 11,
+          "QUEUED": 1
+        },
+        "blockers": [
+          "CI / QA Smoke CI (profile 3/4):FAILURE",
+          "CI / checks-node-compact-large-1:FAILURE",
+          "CI / checks-node-compact-large-3:FAILURE",
+          "CI / checks-node-compact-large-6:FAILURE",
+          "CI / checks-node-compact-large-8:FAILURE",
+          "CI / checks-node-compact-small-12:FAILURE",
+          "CI / checks-node-compact-small-15:FAILURE",
+          "CI / checks-node-compact-small-16:FAILURE",
+          "CI / checks-node-compact-small-3:FAILURE",
+          "CI / check-prompt-snapshots:FAILURE",
+          "CI / check-plugin-sdk-api-baseline:FAILURE",
+          "CI / openclaw/ci-gate:QUEUED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31111783081",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31111783081",
+        "cluster_id": "issue-openclaw-openclaw-119962",
+        "published_at": "2026-08-06T15:20:28.106Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119983",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(workboard): include operator notes in Start prompt",
+          "idempotency_key": null,
+          "reason": "checks are not clean: preflight: QUEUED",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CI / QA Smoke CI (profile 3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 119975,
       "title": "fix(gateway): report active unmanaged restart startup accurately",
       "url": "https://github.com/openclaw/openclaw/pull/119975",
@@ -34,7 +109,7 @@
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-06T14:54:26Z",
+      "updated_at": "2026-08-06T15:05:52Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BLOCKED",
       "review_decision": "",

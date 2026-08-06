@@ -1,0 +1,105 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119962",
+  "mode": "autonomous",
+  "run_id": "31111783081",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31111783081",
+  "head_sha": "daf339e6d1d35d6246ffd2bfd3aae5f61342ad32",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
+  "published_at": "2026-08-06T15:20:28.106Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119962",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119962",
+  "canonical_pr": null,
+  "summary": "Confirmed on main f5add819: autonomous Workboard Start omits metadata.comments from its Gateway agent message. A narrow two-file repair is ready as an executable artifact; implementation is blocked only because this worker checkout is read-only and lacks dependencies for the focused test.",
+  "actions": [
+    {
+      "target": "#119962",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119962",
+      "candidate_fix": null,
+      "reason": "The bug is reproducible from current source. This worker cannot modify the read-only checkout or install the missing dependency; apply the cluster fix artifact on the designated writable proof environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119962",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119962",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited ClawSweeper PR from clawsweeper/issue-openclaw-openclaw-119962."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119983",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119962",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119983",
+      "commit": "d0e62e6a5a75f434a5afe0e854614fc95304bee0",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119962",
+      "pr": "https://github.com/openclaw/openclaw/pull/119983",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119983",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119983",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(workboard): include operator notes in Start prompt",
+      "idempotency_key": null,
+      "reason": "checks are not clean: preflight: QUEUED",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
