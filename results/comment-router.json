@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T22:59:41.862Z",
+  "updated_at": "2026-08-06T22:59:46.765Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117614:5203801362:2026-08-06T11:03:57Z:re_review",
-      "comment_id": "5203801362",
-      "comment_version_key": "5203801362:2026-08-06T11:03:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117614#issuecomment-5203801362",
-      "comment_created_at": "2026-08-06T11:03:57Z",
-      "comment_updated_at": "2026-08-06T11:03:57Z",
-      "comment_body_sha256": "127ec54d47abfe8f12dc8c76ca02c69d161c139e3b76efb310300ca63a7c7467",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117614,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T11:33:23.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/verbose-health-timeout",
-        "head_sha": "c4000aa5d47352f3901b805e37139e601cac557d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119900:5202873229:2026-08-06T11:32:44Z:clawsweeper_auto_repair",
       "comment_id": "5202873229",
@@ -32152,6 +32105,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118599:5164364532:2026-08-06T22:57:25Z:clawsweeper_auto_repair",
+      "comment_id": "5164364532",
+      "comment_version_key": "5164364532:2026-08-06T22:57:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118599#issuecomment-5164364532",
+      "comment_created_at": "2026-08-03T09:04:36Z",
+      "comment_updated_at": "2026-08-06T22:57:25Z",
+      "comment_body_sha256": "683cf6d60cfa109b9912c741303a344e9a7a5e828c56369ac7e9348ef38fac34",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118599,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=54a6385a621ea45937fce13d106d4133d8e8f558)",
+      "expected_head_sha": "54a6385a621ea45937fce13d106d4133d8e8f558",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T22:59:33.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-117635",
+        "head_sha": "54a6385a621ea45937fce13d106d4133d8e8f558",
+        "cluster_id": "automerge-openclaw-openclaw-118599",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118599.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118599.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119235:5179717399:2026-08-06T22:55:42Z:clawsweeper_auto_repair",
