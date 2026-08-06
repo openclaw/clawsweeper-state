@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T14:33:58.245Z",
+  "updated_at": "2026-08-06T14:34:01.718Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119847:5201222556:2026-08-06T08:43:15Z:clawsweeper_needs_human",
-      "comment_id": "5201222556",
-      "comment_version_key": "5201222556:2026-08-06T08:43:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119847#issuecomment-5201222556",
-      "comment_created_at": "2026-08-06T06:36:00Z",
-      "comment_updated_at": "2026-08-06T08:43:15Z",
-      "comment_body_sha256": "71a2d67fbf79a87dfe9f1c04925145ea82e57b3e6d1b016d6ae91f32d1eb3b8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject a cleanup target equal to its workspace root (P2)** - isPathInside accepts equality, so a receipt with identical attachment and root paths reaches recursive removal with an empty relative path. Because th...; Review finding: [P2] Reject a cleanup target equal to its workspace root — src/agents/subagent-attachments.ts:304-317 - [medium] Recursive cleanup can target the workspace root —... (sha=858fd1e4a0b83ebbcb3e9c8650861730c905bc2e)",
-      "expected_head_sha": "858fd1e4a0b83ebbcb3e9c8650861730c905bc2e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T08:44:17.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-929",
-        "head_sha": "858fd1e4a0b83ebbcb3e9c8650861730c905bc2e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119846:5202408293:2026-08-06T08:44:07Z:clawsweeper_needs_human",
       "comment_id": "5202408293",
@@ -32495,6 +32462,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119966:5206102689:2026-08-06T14:33:14Z:re_review",
+      "comment_id": "5206102689",
+      "comment_version_key": "5206102689:2026-08-06T14:33:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119966#issuecomment-5206102689",
+      "comment_created_at": "2026-08-06T14:33:14Z",
+      "comment_updated_at": "2026-08-06T14:33:14Z",
+      "comment_body_sha256": "ac511a81967380a27e59c513fbe939d287db1fd037ee3dcda9705516e27637cb",
+      "source_delivery_id": "c29c8390-91a3-11f1-9998-c685b0fa4e78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119966,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T14:33:58.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-mac-mini-testing-d83bbe",
+        "head_sha": "97dc66cf149b6466bf57eaf806072d719ce9bbd5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
