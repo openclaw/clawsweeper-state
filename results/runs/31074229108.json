@@ -1,0 +1,105 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-39461",
+  "mode": "autonomous",
+  "run_id": "31074229108",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31074229108",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-39461.md",
+  "published_at": "2026-08-06T05:58:57.924Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/39461",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/39461",
+  "canonical_pr": null,
+  "summary": "#39461 is a real non-security QQBot diagnostics bug. The narrow repair is clear, but this worker cannot edit the supplied read-only checkout; a new credited fix PR artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#39461",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#39461",
+      "candidate_fix": null,
+      "reason": "Canonical issue remains open and is ready for the narrow diagnostics-only repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-39461",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#39461",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout; the fix path and validation plan are concrete."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119849",
+      "branch": "clawsweeper/issue-openclaw-openclaw-39461",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119849",
+      "commit": "1f6c12bebd037b1dd3dce73f795702ffa41a3a58",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#39461",
+      "pr": "https://github.com/openclaw/openclaw/pull/119849",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119849",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119849",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(qqbot): remove stale data-directory diagnostic",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

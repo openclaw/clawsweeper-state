@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-39461"
 mode: "autonomous"
-run_id: "31071386549"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31071386549"
+run_id: "31074229108"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31074229108"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-06T04:54:05.226Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-06T05:58:57.924Z"
 canonical: "https://github.com/openclaw/openclaw/issues/39461"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/39461"
 canonical_pr: null
-actions_total: 6
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31071386549](https://github.com/openclaw/clawsweeper/actions/runs/31071386549)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31074229108](https://github.com/openclaw/clawsweeper/actions/runs/31074229108)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/39461
 
 ## Summary
 
-#39461 is a valid, narrow QQBot UX repair: remove the Windows startup diagnostic that recommends unsupported `QQBOT_DATA_DIR`; do not add a new per-plugin environment/config surface.
+#39461 is a real non-security QQBot diagnostics bug. The narrow repair is clear, but this worker cannot edit the supplied read-only checkout; a new credited fix PR artifact is ready for a writable executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,24 +54,21 @@ Canonical: https://github.com/openclaw/openclaw/issues/39461
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119849 | clawsweeper/issue-openclaw-openclaw-39461 |  |
+| issue_implementation_status_comment | updated | #39461 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #119849 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #39461 | fix_needed | planned | canonical | The correct owner-level repair is diagnostic cleanup, not resurrecting a retired per-plugin storage override. |
-| #77218 | keep_closed | skipped | superseded | Closed context only; no mutation is valid. |
-| #80256 | keep_closed | skipped | superseded | Closed context only; no mutation is valid. |
-| #89597 | keep_closed | skipped | related | Historical partial overlap, already merged and closed. |
-| cluster:issue-openclaw-openclaw-39461 | build_fix_artifact | planned |  | A new narrow fix PR is permitted and no viable open contributor PR exists. |
-| cluster:issue-openclaw-openclaw-39461 | open_fix_pr | planned | canonical | Job authorizes one implementation PR; merge and issue closure remain out of scope. |
+| #39461 | fix_needed | planned | canonical | Canonical issue remains open and is ready for the narrow diagnostics-only repair. |
+| cluster:issue-openclaw-openclaw-39461 | build_fix_artifact | blocked |  | Implementation is blocked only by the read-only checkout; the fix path and validation plan are concrete. |
 
 ## Needs Human
 
