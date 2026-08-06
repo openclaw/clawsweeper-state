@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-06T07:37:32.780Z",
+  "updated_at": "2026-08-06T07:37:33.455Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119588:5200011622:2026-08-06T03:22:07Z:re_review",
-      "comment_id": "5200011622",
-      "comment_version_key": "5200011622:2026-08-06T03:22:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119588#issuecomment-5200011622",
-      "comment_created_at": "2026-08-06T03:22:07Z",
-      "comment_updated_at": "2026-08-06T03:22:07Z",
-      "comment_body_sha256": "e3c8c4bf382bc6e30ebc746c5c70529e9359db872abe38d69293dc70a34d30ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119588,
-      "author": "printerjam",
-      "author_id": 525517,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T03:30:37.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-release-phantom-execution",
-        "head_sha": "9c6eb78824535f8dd3644e14241a04095e8cd222",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119815:5200017067:2026-08-06T03:23:06Z:re_review",
-      "comment_id": "5200017067",
-      "comment_version_key": "5200017067:2026-08-06T03:23:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119815#issuecomment-5200017067",
-      "comment_created_at": "2026-08-06T03:23:06Z",
-      "comment_updated_at": "2026-08-06T03:23:06Z",
-      "comment_body_sha256": "def7bcfc9d87200770b664feb05380e9cca9722c80b418441193dbc10419af51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119815,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T03:30:37.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-decision-receipt-foundation",
-        "head_sha": "958e993233c8790b65ffa6068dc74fb226c1700b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112896:5200017858:2026-08-06T03:23:14Z:re_review",
       "comment_id": "5200017858",
@@ -32225,6 +32131,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115507:5118015208:2026-08-06T07:36:37Z:clawsweeper_needs_human",
+      "comment_id": "5118015208",
+      "comment_version_key": "5118015208:2026-08-06T07:36:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115507#issuecomment-5118015208",
+      "comment_created_at": "2026-07-29T12:53:56Z",
+      "comment_updated_at": "2026-08-06T07:36:37Z",
+      "comment_body_sha256": "2bfe11c04235c411abe7d2e7ecf666f8d3699e844414d1fad11fae4cc5b31435",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes attempt from a zero-based key index to a one-based per-key retry ordinal; no supported typed SDK or in-tree consumer relies on it, but JavaScript-only runtime consumer... (sha=3c01f48cdebf7195468091148236607d07a0030a)",
+      "expected_head_sha": "3c01f48cdebf7195468091148236607d07a0030a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T07:37:33.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "v2/api-key-retry-attempt",
+        "head_sha": "3c01f48cdebf7195468091148236607d07a0030a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115507:5199247110:2026-08-06T01:10:25Z:re_review",
+      "comment_id": "5199247110",
+      "comment_version_key": "5199247110:2026-08-06T01:10:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115507#issuecomment-5199247110",
+      "comment_created_at": "2026-08-06T01:10:25Z",
+      "comment_updated_at": "2026-08-06T01:10:25Z",
+      "comment_body_sha256": "a29984c572bc81e5d781c102a10cd2bf47371c0dbf030089bcf55a6842a53e1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115507,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T07:37:33.455Z",
+      "target": null
     }
   ]
 }
