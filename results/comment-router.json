@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:17:19.667Z",
+  "updated_at": "2026-08-06T00:18:55.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116511:5196303442:2026-08-05T19:22:37Z:re_review",
-      "comment_id": "5196303442",
-      "comment_version_key": "5196303442:2026-08-05T19:22:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5196303442",
-      "comment_created_at": "2026-08-05T19:22:37Z",
-      "comment_updated_at": "2026-08-05T19:22:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116511,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/issue-109656-continuation-skip-sqlite-20260730",
-        "head_sha": "066007a8262244f865bd4fe11973a605cf777bc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ],
-      "source_delivery_id": "05d09080-9103-11f1-9077-6dca6e4566bd"
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119696:5196314695:2026-08-05T19:23:50Z:re_review",
       "comment_id": "5196314695",
@@ -32360,6 +32312,39 @@
         "kind": "pull_request",
         "branch": "fix/actions-full-resync-rehydrate-20260805",
         "head_sha": "f754339a1698ef8fdba3b9a826e6c8c46b31360e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:457:5010614271:2026-08-06T00:02:54Z:clawsweeper_needs_human",
+      "comment_id": "5010614271",
+      "comment_version_key": "5010614271:2026-08-06T00:02:54Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/457#issuecomment-5010614271",
+      "comment_created_at": "2026-07-18T08:38:44Z",
+      "comment_updated_at": "2026-08-06T00:02:54Z",
+      "comment_body_sha256": "ebf0828a64b33edc3f06f3ea250ccf65319963c1081f5ef1feda686efdf5d5bc",
+      "repo": "openclaw/acpx",
+      "issue_number": 457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the PR has no actionable defect; it awaits ordinary maintainer merge review. (sha=692742309c3961c17eba3622578ff2a70aee157d)",
+      "expected_head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:18:55.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/drop-dead-codex-acp-command-detector",
+        "head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
         "cluster_id": null,
         "job_path": null
       }
