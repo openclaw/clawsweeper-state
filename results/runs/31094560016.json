@@ -1,0 +1,116 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119087",
+  "mode": "autonomous",
+  "run_id": "31094560016",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31094560016",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119087.md",
+  "published_at": "2026-08-06T11:33:50.813Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119087",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119087",
+  "canonical_pr": null,
+  "summary": "Current main f7f270555c67c61a683e297b8fad5aff0181899c retains the reported cold-start issue. Plan one narrow PR: lazily import device-pairing only for the already-pending Control UI migration reconciliation, preserving truthful /readyz and migration behavior.",
+  "actions": [
+    {
+      "target": "#119087",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119087",
+      "candidate_fix": null,
+      "reason": "A focused import-boundary repair removes unnecessary normal-path bootstrap work without changing readiness semantics or device-auth migration behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119087",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119087",
+      "candidate_fix": null,
+      "reason": "Create one new-fix PR from the prescribed ClawSweeper branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119087",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119087",
+      "candidate_fix": null,
+      "reason": "No viable open implementation PR exists; job authorizes one narrow fix PR."
+    },
+    {
+      "target": "#106680",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as a separate performance follow-up."
+    },
+    {
+      "target": "#111048",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security-sensitive linked context must not enter this repair path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review did not pass after final base synchronization: Merge is blocked: the branch improves scan timing but does not satisfy its stated runtime-import boundary.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119087",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
