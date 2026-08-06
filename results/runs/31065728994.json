@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119794",
+  "mode": "autonomous",
+  "run_id": "31065728994",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31065728994",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119794.md",
+  "published_at": "2026-08-06T03:47:50.877Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119794",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119794",
+  "canonical_pr": null,
+  "summary": "#119794 is a valid gateway ingress-ordering bug on main. Reserve each canonical session's chat-send order before asynchronous pre-admission, then consume that reservation immediately before active-run queue injection; do not change the already-FIFO agent-core queue or add a UI-only workaround.",
+  "actions": [
+    {
+      "target": "#119794",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119794",
+      "candidate_fix": null,
+      "reason": "A later attachment-bearing chat.send can overtake an earlier queued steer during asynchronous gateway preparation and dispatch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119794",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119794",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-119794."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex review-fix worker timed out after 1481154ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119794",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
