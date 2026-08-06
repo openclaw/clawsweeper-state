@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T03:59:29.342Z",
+  "updated_at": "2026-08-06T04:01:10.761Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1077:5160354843:2026-08-05T22:54:30Z:clawsweeper_needs_human",
-      "comment_id": "5160354843",
-      "comment_version_key": "5160354843:2026-08-05T22:54:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1077#issuecomment-5160354843",
-      "comment_created_at": "2026-08-02T21:09:52Z",
-      "comment_updated_at": "2026-08-05T22:54:30Z",
-      "comment_body_sha256": "d1bb9e600c0bf0c44631e0e8d078876a4b4cfd21f94e4306c2698e7cbdadc9af",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1077,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft’s exact head and full discussion could not be re-read locally because required promisor objects were unavailable and GitHub DNS failed. (sha=96549f9766e5e30812482251de75d76d628ea23a)",
-      "expected_head_sha": "96549f9766e5e30812482251de75d76d628ea23a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T22:57:27.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-add-reasoning-default-reset",
-        "head_sha": "96549f9766e5e30812482251de75d76d628ea23a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1096:5190449413:2026-08-05T22:56:47Z:clawsweeper_needs_human",
       "comment_id": "5190449413",
@@ -31938,6 +31905,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-06T04:00:22Z:clawsweeper_auto_merge",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-06T04:00:22Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-06T04:00:22Z",
+      "comment_body_sha256": "a9c98799c5f725106426de01879a7952fff2cf9009782b6ac60b5cee5c8dbf84",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T04:01:10.761Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:merge-ready",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
