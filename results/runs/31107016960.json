@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119958",
+  "mode": "autonomous",
+  "run_id": "31107016960",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31107016960",
+  "head_sha": "daf339e6d1d35d6246ffd2bfd3aae5f61342ad32",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
+  "published_at": "2026-08-06T14:58:30.072Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119958",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119958",
+  "canonical_pr": null,
+  "summary": "Current main (913b53ad808772be8c3a8497f7320d93e928b4db) still has the reproducible unmanaged SIGUSR1 false-failure path. Plan one narrow new PR: a renewable gateway-loop startup-progress lease, consumed by the unmanaged listener waiter after its normal 60-second window.",
+  "actions": [
+    {
+      "target": "#119958",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119958",
+      "candidate_fix": null,
+      "reason": "#119958 is the open canonical report. #105544 is a closed migration-only predecessor; its managed restart-health lease does not cover the unmanaged listener path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119958",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119958",
+      "candidate_fix": null,
+      "reason": "Create or update clawsweeper/issue-openclaw-openclaw-119958 with the narrow fix artifact below; no merge or issue close is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119975",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119958",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119975",
+      "commit": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119958",
+      "pr": "https://github.com/openclaw/openclaw/pull/119975",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119975",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119975",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): report active unmanaged restart startup accurately",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-6: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

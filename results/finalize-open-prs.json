@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T14:39:55.157Z",
-  "count": 16,
+  "generated_at": "2026-08-06T14:59:11.466Z",
+  "count": 17,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 11,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
+    "needs_merge_preflight": 17,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,66 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119975,
+      "title": "fix(gateway): report active unmanaged restart startup accurately",
+      "url": "https://github.com/openclaw/openclaw/pull/119975",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119958",
+      "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
+      "cluster_id": "issue-openclaw-openclaw-119958",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
+      "updated_at": "2026-08-06T14:54:26Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 126,
+        "counts": {
+          "SKIPPED": 42,
+          "SUCCESS": 83,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31107016960",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31107016960",
+        "cluster_id": "issue-openclaw-openclaw-119958",
+        "published_at": "2026-08-06T14:58:30.072Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119975",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(gateway): report active unmanaged restart startup accurately",
+          "idempotency_key": null,
+          "reason": "checks are not clean: checks-node-compact-large-6: IN_PROGRESS",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 119968,
       "title": "fix(acp): pass configured binding owner model to runtime",
