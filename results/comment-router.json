@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:05:21.294Z",
+  "updated_at": "2026-08-06T00:08:59.584Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119668:5196127180:2026-08-05T19:04:16Z:re_review",
-      "comment_id": "5196127180",
-      "comment_version_key": "5196127180:2026-08-05T19:04:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119668#issuecomment-5196127180",
-      "comment_created_at": "2026-08-05T19:04:16Z",
-      "comment_updated_at": "2026-08-05T19:04:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119668,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t35-03-responses-idle-activity",
-        "head_sha": "a8b728c1bd8752630d41e01d344593ff3eb046b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119674:5196142367:2026-08-05T19:05:47Z:re_review",
       "comment_id": "5196142367",
@@ -32429,6 +32382,39 @@
         "kind": "pull_request",
         "branch": "steipete/special-case-triage",
         "head_sha": "9a2a077286c1cb5a629a6b4c8ac3fed9fcbb533c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3428:5198387604:2026-08-06T00:08:21Z:clawsweeper_auto_repair",
+      "comment_id": "5198387604",
+      "comment_version_key": "5198387604:2026-08-06T00:08:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3428#issuecomment-5198387604",
+      "comment_created_at": "2026-08-05T23:03:39Z",
+      "comment_updated_at": "2026-08-06T00:08:21Z",
+      "comment_body_sha256": "8be1cfd44f1f57047957e5fd749c77e6579e596f751453ec210e4b88cbec6e50",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7bd70630a1fee04e111669efeef7cf6ccac1f9a6)",
+      "expected_head_sha": "7bd70630a1fee04e111669efeef7cf6ccac1f9a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:08:59.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/clickable-home-hero",
+        "head_sha": "7bd70630a1fee04e111669efeef7cf6ccac1f9a6",
         "cluster_id": null,
         "job_path": null
       }
