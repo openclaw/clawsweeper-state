@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:49:41.489Z",
+  "updated_at": "2026-08-06T00:49:43.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1235:5196443480:2026-08-05T19:36:08Z:re_review",
-      "comment_id": "5196443480",
-      "comment_version_key": "5196443480:2026-08-05T19:36:08Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1235#issuecomment-5196443480",
-      "comment_created_at": "2026-08-05T19:36:08Z",
-      "comment_updated_at": "2026-08-05T19:36:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e8f71680-9104-11f1-8c15-c5f840068801",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1235,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:36:37.418Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-lease-cleanup",
-        "head_sha": "f9030ff8735f115cb3a922551a1ce0be0a75fccd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104018:4940953972:2026-08-05T19:35:38Z:clawsweeper_auto_repair",
       "comment_id": "4940953972",
@@ -32423,6 +32375,39 @@
         "kind": "pull_request",
         "branch": "codex/944-live-tier",
         "head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:268:5128846606:2026-08-06T00:43:55Z:clawsweeper_needs_human",
+      "comment_id": "5128846606",
+      "comment_version_key": "5128846606:2026-08-06T00:43:55Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/268#issuecomment-5128846606",
+      "comment_created_at": "2026-07-30T09:12:45Z",
+      "comment_updated_at": "2026-08-06T00:43:55Z",
+      "comment_body_sha256": "11c65049cfb5940fd4fc69cf613764408d6fb49aa6c7e79441aa4334db7ede71",
+      "repo": "openclaw/crabpot",
+      "issue_number": 268,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is currently dirty; resolving only the README conflict could retain generated compatibility records for the old OpenClaw target rather than current main’s promoted default pin. (sha=667732bde3d297ea8c2c057b970b875a3820814d)",
+      "expected_head_sha": "667732bde3d297ea8c2c057b970b875a3820814d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:49:43.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/lossless-claw-52cf67a",
+        "head_sha": "667732bde3d297ea8c2c057b970b875a3820814d",
         "cluster_id": null,
         "job_path": null
       }
