@@ -1,0 +1,105 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119754",
+  "mode": "autonomous",
+  "run_id": "31056385027",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31056385027",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119754.md",
+  "published_at": "2026-08-06T00:06:59.214Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119754",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119754",
+  "canonical_pr": null,
+  "summary": "#119754 is a reproducible current-main bug. Expected-leaf chat admission maps a dirty SQLite transcript projection to raw INVALID_REQUEST instead of the established retryable UNAVAILABLE response. A narrow two-file fix artifact is ready; implementation is blocked only because this worker checkout is read-only and missing dependencies.",
+  "actions": [
+    {
+      "target": "#119754",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119754",
+      "candidate_fix": null,
+      "reason": "The bug is confirmed, but this worker cannot write the new fix branch or install missing dependencies in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119754",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119754",
+      "candidate_fix": null,
+      "reason": "Create the narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-119754 after applying and validating this artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119778",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119754",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119778",
+      "commit": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119754",
+      "pr": "https://github.com/openclaw/openclaw/pull/119778",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119778",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119778",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): return retryable chat send error during transcript rebuild",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
