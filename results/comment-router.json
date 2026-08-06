@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:01:43.954Z",
+  "updated_at": "2026-08-06T09:01:59.302Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4960385241:2026-07-13T16:46:51Z:re_review",
-      "comment_id": "4960385241",
-      "comment_version_key": "4960385241:2026-07-13T16:46:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4960385241",
-      "comment_created_at": "2026-07-13T16:46:51Z",
-      "comment_updated_at": "2026-07-13T16:46:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:33:32.125Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119802:5200417941:2026-08-06T04:33:25Z:clawsweeper_auto_repair",
       "comment_id": "5200417941",
@@ -32302,6 +32275,39 @@
         "head_sha": "1f6c12bebd037b1dd3dce73f795702ffa41a3a58",
         "cluster_id": "issue-openclaw-openclaw-39461",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-39461.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115505:5118012354:2026-08-06T09:01:20Z:clawsweeper_needs_human",
+      "comment_id": "5118012354",
+      "comment_version_key": "5118012354:2026-08-06T09:01:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115505#issuecomment-5118012354",
+      "comment_created_at": "2026-07-29T12:53:40Z",
+      "comment_updated_at": "2026-08-06T09:01:20Z",
+      "comment_body_sha256": "cbb3407b1e376d13c6cba61cdd7a0be09ed5924f19652890d9bf6ca59fbe6fbf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied harness stubs the model boundary and directly invokes the reviewer; it does not prove the run-owned memo or either host's after-fi...; Review finding: [P2] Cover the node-host review path — src/agents/exec-auto-reviewer.ts:347-348 - [medium] Approve bounded verdict reuse at the exec safety boundary — src/agents/e... (sha=18e08a542bb3eb27d69c3714c86c8197b8f5f31f)",
+      "expected_head_sha": "18e08a542bb3eb27d69c3714c86c8197b8f5f31f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T09:01:59.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "v2/exec-reviewer-verdict-memo",
+        "head_sha": "18e08a542bb3eb27d69c3714c86c8197b8f5f31f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
