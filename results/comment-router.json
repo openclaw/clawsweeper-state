@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T23:10:00.109Z",
+  "updated_at": "2026-08-06T23:10:06.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4600478603:2026-06-02T08:45:25Z:re_review",
-      "comment_id": "4600478603",
-      "comment_version_key": "4600478603:2026-06-02T08:45:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4600478603",
-      "comment_created_at": "2026-06-02T08:45:25Z",
-      "comment_updated_at": "2026-06-02T08:45:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T11:42:59.253Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4602422401:2026-06-02T12:35:00Z:re_review",
       "comment_id": "4602422401",
@@ -32473,6 +32446,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T23:10:00.109Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119174:5177565663:2026-08-06T23:07:08Z:clawsweeper_needs_human",
+      "comment_id": "5177565663",
+      "comment_version_key": "5177565663:2026-08-06T23:07:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119174#issuecomment-5177565663",
+      "comment_created_at": "2026-08-04T10:10:14Z",
+      "comment_updated_at": "2026-08-06T23:07:08Z",
+      "comment_body_sha256": "5bd23ef269ab40ad5cc7eb31f9cede079c762da1d2e44352d626283da7a0cae3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119174,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body asserts live Doubao and gateway runs, but the PR record contains no inspectable redacted terminal trace, log, artifact, screenshot, or...; Review finding: [P1] Terminalize post-ready provider failures — extensions/volcengine/realtime-voice-provider.ts:467-476 - [P1] Bound compressed frames before decompression — exte... (sha=9add234e5b2d280c9541f37907b352868fac3f02)",
+      "expected_head_sha": "9add234e5b2d280c9541f37907b352868fac3f02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T23:10:06.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doubao-realtime-voice",
+        "head_sha": "9add234e5b2d280c9541f37907b352868fac3f02",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
