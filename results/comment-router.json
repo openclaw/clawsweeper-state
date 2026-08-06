@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T14:41:04.782Z",
+  "updated_at": "2026-08-06T14:41:30.002Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119809:5202859835:2026-08-06T09:31:15Z:re_review",
-      "comment_id": "5202859835",
-      "comment_version_key": "5202859835:2026-08-06T09:31:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119809#issuecomment-5202859835",
-      "comment_created_at": "2026-08-06T09:31:15Z",
-      "comment_updated_at": "2026-08-06T09:31:15Z",
-      "comment_body_sha256": "3fb5e8d95a255e09b4d824209fdd31cd2b2b258876b66d9248d9400734aa6076",
-      "source_delivery_id": "926af730-9179-11f1-94e6-481fa0c5c228",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119809,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T09:32:01.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalo-test-teardown-agent-db-close",
-        "head_sha": "a0a652a85f04f09ef0dddd88690d123bad43122d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97361:5202741258:2026-08-06T09:19:06Z:re_review",
       "comment_id": "5202741258",
@@ -32251,6 +32203,39 @@
         "kind": "pull_request",
         "branch": "fix/hook-heartbeat-target-agent",
         "head_sha": "418ef7af374f02a4a5d0a307fd849b08e2a07a47",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119963:5206227216:2026-08-06T14:40:52Z:clawsweeper_needs_human",
+      "comment_id": "5206227216",
+      "comment_version_key": "5206227216:2026-08-06T14:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119963#issuecomment-5206227216",
+      "comment_created_at": "2026-08-06T14:40:52Z",
+      "comment_updated_at": "2026-08-06T14:40:52Z",
+      "comment_body_sha256": "a0141fc078e2b927fc9d8580a3407b93b3b9065c2c9d7d5f64d65d19d7bd6eea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119963,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The proposed loopback test is an appropriate production-shaped proof design, but the PR body supplies no inspectable after-fix output or artifa... (sha=681c106c492a8529422e9e044f4526f17a8fa622)",
+      "expected_head_sha": "681c106c492a8529422e9e044f4526f17a8fa622",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T14:41:30.002Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/twilio-error-response-redaction-20260806",
+        "head_sha": "681c106c492a8529422e9e044f4526f17a8fa622",
         "cluster_id": null,
         "job_path": null
       }
