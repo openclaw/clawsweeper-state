@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T07:40:30.056Z",
+  "updated_at": "2026-08-06T07:41:02.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118685:5167187700:2026-08-06T02:33:41Z:clawsweeper_auto_repair",
-      "comment_id": "5167187700",
-      "comment_version_key": "5167187700:2026-08-06T02:33:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167187700",
-      "comment_created_at": "2026-08-03T13:50:07Z",
-      "comment_updated_at": "2026-08-06T02:33:41Z",
-      "comment_body_sha256": "9f2ef15f996206d480a7aac12ea4996a724a37e40e03c7081777ad09403850a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118685,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d5c142f48fd97fcd9c0d5c53cd7f1ce35fd05169)",
-      "expected_head_sha": "d5c142f48fd97fcd9c0d5c53cd7f1ce35fd05169",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-06T03:32:29.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118673",
-        "head_sha": "d935883805219a6fcc429037f41ec75389c4cf86",
-        "cluster_id": "automerge-openclaw-openclaw-118685",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118685.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118777:5169388864:2026-08-06T01:31:34Z:clawsweeper_auto_repair",
       "comment_id": "5169388864",
@@ -32015,6 +31982,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110110:5006002161:2026-08-06T07:40:16Z:clawsweeper_needs_human",
+      "comment_id": "5006002161",
+      "comment_version_key": "5006002161:2026-08-06T07:40:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110110#issuecomment-5006002161",
+      "comment_created_at": "2026-07-17T17:56:15Z",
+      "comment_updated_at": "2026-08-06T07:40:16Z",
+      "comment_body_sha256": "229bd923c46ec6a55cd75903a9ff36d5939861ec4527fc0ba56d510a41f9c4ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied isolated gateway transcript exercises ordinary HTTP 429 behavior, but it does not demonstrate the new expiry, 1,024-key c...; Review finding: [P1] Pass the required launch-ticket fixture — extensions/telegram/src/miniapp/routes.rate-limit.test.ts:58 - [medium] Choose the full-map limiter policy — extensi... (sha=7868e2695a9a8c751f137588c016d7442862eb9b)",
+      "expected_head_sha": "7868e2695a9a8c751f137588c016d7442862eb9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T07:41:02.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-miniapp-ratelimit-bound",
+        "head_sha": "7868e2695a9a8c751f137588c016d7442862eb9b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
