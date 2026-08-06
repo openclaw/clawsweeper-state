@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T03:27:32.391Z",
+  "updated_at": "2026-08-06T03:29:53.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116795:5197891813:2026-08-05T22:01:12Z:re_review",
-      "comment_id": "5197891813",
-      "comment_version_key": "5197891813:2026-08-05T22:01:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116795#issuecomment-5197891813",
-      "comment_created_at": "2026-08-05T22:01:12Z",
-      "comment_updated_at": "2026-08-05T22:01:12Z",
-      "comment_body_sha256": "4069640c30947fd8ea00bd9cdc3ff33597dcbec3600ed3d8718b5263c12bf5c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116795,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T22:42:16.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-4-tool-policy",
-        "head_sha": "2cb09769e4993d6d903c1962f8abd47507aaf675",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116796:5197891927:2026-08-05T22:01:13Z:re_review",
       "comment_id": "5197891927",
@@ -31463,6 +31416,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T03:27:32.391Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119202:5178955335:2026-08-06T03:29:15Z:clawsweeper_needs_human",
+      "comment_id": "5178955335",
+      "comment_version_key": "5178955335:2026-08-06T03:29:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119202#issuecomment-5178955335",
+      "comment_created_at": "2026-08-04T12:21:09Z",
+      "comment_updated_at": "2026-08-06T03:29:15Z",
+      "comment_body_sha256": "696f3238fc5d12cd7fc9bb088c13b522ada97754275e72b675564d4c435e968a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is behind current main, so landing should refresh the exact merge result and required checks rather than rely on an older head-only result. (sha=7f9c4fbeb5fc4628bf71fa64f231403247fd0ca3)",
+      "expected_head_sha": "7f9c4fbeb5fc4628bf71fa64f231403247fd0ca3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T03:29:53.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-stale-plugin-change-ids",
+        "head_sha": "7f9c4fbeb5fc4628bf71fa64f231403247fd0ca3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
