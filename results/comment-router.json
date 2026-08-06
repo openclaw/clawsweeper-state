@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:04:45.974Z",
+  "updated_at": "2026-08-06T00:04:52.634Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119710:5196107461:2026-08-05T19:02:27Z:re_review",
-      "comment_id": "5196107461",
-      "comment_version_key": "5196107461:2026-08-05T19:02:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119710#issuecomment-5196107461",
-      "comment_created_at": "2026-08-05T19:02:27Z",
-      "comment_updated_at": "2026-08-05T19:02:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119710,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-warmup-responsiveness-20260805",
-        "head_sha": "f2b7a98d690886adf3bef57eccc95d73f07cea6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119666:5196125920:2026-08-05T19:04:09Z:re_review",
       "comment_id": "5196125920",
@@ -32457,6 +32410,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/production-minor-and-patch-0f47153fa6",
         "head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:478:5117912122:2026-08-06T00:04:16Z:clawsweeper_needs_human",
+      "comment_id": "5117912122",
+      "comment_version_key": "5117912122:2026-08-06T00:04:16Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/478#issuecomment-5117912122",
+      "comment_created_at": "2026-07-29T12:44:42Z",
+      "comment_updated_at": "2026-08-06T00:04:16Z",
+      "comment_body_sha256": "846ae222244b4a386d97ad4a7e3a899ce6bcc0f1876a0fa6a4103ed996737671",
+      "repo": "openclaw/acpx",
+      "issue_number": 478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and CI but provides no inspectable after-fix runtime artifact; add redacted terminal output or logs showing final-hea...; Review finding: [P1] Capture Windows descendants before a fast wrapper exits — src/acp/process-tree.ts:335-337 - [P1] Revalidate descendant identity immediately before signaling —... (sha=5d3063b81189d8b9da851abf0891b88828d68f41)",
+      "expected_head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:04:52.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-adapter-process-lifecycle",
+        "head_sha": "5d3063b81189d8b9da851abf0891b88828d68f41",
         "cluster_id": null,
         "job_path": null
       }
