@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:09:17.448Z",
+  "updated_at": "2026-08-06T00:09:25.132Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:83988:5196178787:2026-08-05T19:09:33Z:re_review",
-      "comment_id": "5196178787",
-      "comment_version_key": "5196178787:2026-08-05T19:09:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/83988#issuecomment-5196178787",
-      "comment_created_at": "2026-08-05T19:09:33Z",
-      "comment_updated_at": "2026-08-05T19:09:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 83988,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-final-text-before-audio-83511",
-        "head_sha": "318e3e0157160a251d72c68912900ac8d069898d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119299:5196186628:2026-08-05T19:10:20Z:re_review",
       "comment_id": "5196186628",
@@ -32401,6 +32354,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/discovery-icon-hierarchy",
         "head_sha": "0deaa7e579bdaa8ec42a0f9cf0e07f897ebdc31e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:204:5193629920:2026-08-06T00:08:47Z:clawsweeper_auto_repair",
+      "comment_id": "5193629920",
+      "comment_version_key": "5193629920:2026-08-06T00:08:47Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/204#issuecomment-5193629920",
+      "comment_created_at": "2026-08-05T15:15:43Z",
+      "comment_updated_at": "2026-08-06T00:08:47Z",
+      "comment_body_sha256": "2a468a5f6aed8f17b2d66ef6041b8740a43f3b7e33f92017f6c6de6a8bdcc39d",
+      "repo": "steipete/poltergeist",
+      "issue_number": 204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=df7bf80fefc3fc59d568a1e1d7f45546732acad5)",
+      "expected_head_sha": "df7bf80fefc3fc59d568a1e1d7f45546732acad5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:09:25.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clean-resolves-wrong-state-file",
+        "head_sha": "df7bf80fefc3fc59d568a1e1d7f45546732acad5",
         "cluster_id": null,
         "job_path": null
       }
