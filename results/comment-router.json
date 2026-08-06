@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:29:24.315Z",
+  "updated_at": "2026-08-06T00:30:27.636Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119687:5195249086:2026-08-05T18:36:16Z:clawsweeper_needs_human",
-      "comment_id": "5195249086",
-      "comment_version_key": "5195249086:2026-08-05T18:36:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5195249086",
-      "comment_created_at": "2026-08-05T17:43:55Z",
-      "comment_updated_at": "2026-08-05T18:36:16Z",
-      "comment_body_sha256": "5efb08146c0860c15c91d38800305eeb5f769862df7c17d1b472371f9235ebd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119687,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve staging when workspace access is none or ro (P1)** - This calls the normal filesystem-bridge write path, but that path rejects every write unless workspaceAccess is rw. none is the documented default an...; Review finding: [P1] Preserve staging when workspace access is none or ro — src/auto-reply/reply/stage-sandbox-media.ts:332-336 - [P2] Read the upload source through a pinned boun... (sha=89fbb866583ed3837eeb177b036a1e5e2e685337)",
-      "expected_head_sha": "89fbb866583ed3837eeb177b036a1e5e2e685337",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T19:26:56.346Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ssh-media-staging-112160",
-        "head_sha": "89fbb866583ed3837eeb177b036a1e5e2e685337",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119689:5195783494:2026-08-05T18:37:09Z:clawsweeper_needs_human",
       "comment_id": "5195783494",
@@ -32312,6 +32279,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114636:5199000870:2026-08-06T00:29:50Z:re_review",
+      "comment_id": "5199000870",
+      "comment_version_key": "5199000870:2026-08-06T00:29:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114636#issuecomment-5199000870",
+      "comment_created_at": "2026-08-06T00:29:50Z",
+      "comment_updated_at": "2026-08-06T00:29:50Z",
+      "comment_body_sha256": "a3079de8269a67fa1ef4a4bc8a3f17ec37ede5d729e5eeda6216ca17ca3c848d",
+      "source_delivery_id": "eff34750-912d-11f1-8e6e-16d5e80dae66",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114636,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `3b5fbfd842598db0dfe8e05b0c65f91a05d609d0`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T00:30:25.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/hosting-profile-conformance-artifact",
+        "head_sha": "3b5fbfd842598db0dfe8e05b0c65f91a05d609d0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
