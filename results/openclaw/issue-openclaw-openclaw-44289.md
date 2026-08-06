@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31071370445"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31071370445"
+run_id: "31074231974"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31074231974"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-06T05:07:26.748Z"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-06T06:45:03.896Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31071370445](https://github.com/openclaw/clawsweeper/actions/runs/31071370445)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31074231974](https://github.com/openclaw/clawsweeper/actions/runs/31074231974)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains an open, reproducible non-security bug on main 941e68bcf5696e624fc0be63ef162b34a4225e0c. Plan one narrow new PR that makes the registry-backed matrix the writer/check source for both committed SecretRef reference artifacts; the earlier contributor PRs are closed historical attempts.
+#44289 remains a reproducible canonical bug: current main (355c107c093767cb14c1463b8e3a7dd9764a7359) has neither SecretRef docs generation/check commands nor a generator script. A narrow credited fix plan is ready, but this worker's supplied target checkout is read-only, so implementation and validation are blocked pending the deterministic writable executor.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
 | issue_implementation_status_comment | updated | #44289 |  |  |
 
 ## Apply Actions
@@ -67,11 +67,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | A new, narrow fix PR is appropriate; no open contributor branch is available to repair. |
-| #85969 | keep_closed | skipped | superseded | Already closed; no closure or mutation is valid. |
-| #89142 | keep_closed | skipped | superseded | Already closed; retain only as credited historical evidence. |
-| #91612 | keep_closed | skipped | superseded | Already closed; retain only as credited historical evidence. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned |  | Executable narrow new-fix-PR plan. |
+| #44289 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout; the deterministic executor can apply the attached narrow fix artifact in its writable branch. |
+| #85969 | keep_closed | skipped | superseded | Historical evidence only. |
+| #89142 | keep_closed | skipped | superseded | Historical evidence only. |
+| #91612 | keep_closed | skipped | superseded | Historical evidence only. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Ready for a writable deterministic executor. |
 
 ## Needs Human
 
