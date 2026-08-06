@@ -2,39 +2,6 @@
   "updated_at": "2026-08-06T12:33:53.345Z",
   "commands": [
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119212:5178868154:2026-08-06T06:34:20Z:clawsweeper_auto_repair",
-      "comment_id": "5178868154",
-      "comment_version_key": "5178868154:2026-08-06T06:34:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119212#issuecomment-5178868154",
-      "comment_created_at": "2026-08-04T12:14:09Z",
-      "comment_updated_at": "2026-08-06T06:34:20Z",
-      "comment_body_sha256": "f669c0fbdf91ae8a505021c4ee107e69518e81ca8763ab471342d774d412fc8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cad6aa8920627c7cb2a40f914a12bf9c02afcf8a)",
-      "expected_head_sha": "cad6aa8920627c7cb2a40f914a12bf9c02afcf8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T06:36:16.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/talk-consult-lifecycle",
-        "head_sha": "cad6aa8920627c7cb2a40f914a12bf9c02afcf8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:119212:5183837518:2026-08-04T19:47:17Z:re_review",
       "comment_id": "5183837518",
       "comment_version_key": "5183837518:2026-08-04T19:47:17Z",
@@ -33074,6 +33041,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119894:5202965698:2026-08-06T12:33:08Z:clawsweeper_needs_human",
+      "comment_id": "5202965698",
+      "comment_version_key": "5202965698:2026-08-06T12:33:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119894#issuecomment-5202965698",
+      "comment_created_at": "2026-08-06T09:42:10Z",
+      "comment_updated_at": "2026-08-06T12:33:08Z",
+      "comment_body_sha256": "5a83dc25271070b1a455132dd6df558c4452e0171e75053d2c7491ee59e49f72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that deliberately pass blank model or thinking flags will now fail before Gateway RPC instead of being silently ignored. (sha=108563d6325d546a93aeaff8ba6efc245e217a24)",
+      "expected_head_sha": "108563d6325d546a93aeaff8ba6efc245e217a24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T12:33:53.336Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/prospect-cron-edit-blank-model",
+        "head_sha": "108563d6325d546a93aeaff8ba6efc245e217a24",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
