@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118685"
-mode: "autonomous"
-run_id: "31090192585"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31090192585"
+mode: "plan"
+run_id: "31092764420"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31092764420"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-06T09:56:15.901Z"
-canonical: "#118685"
-canonical_issue: null
+published_at: "2026-08-06T10:25:06.239Z"
+canonical: "#118673"
+canonical_issue: "#118673"
 canonical_pr: "#118685"
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31090192585](https://github.com/openclaw/clawsweeper/actions/runs/31090192585)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31092764420](https://github.com/openclaw/clawsweeper/actions/runs/31092764420)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #118685
+Canonical: #118673
 
 ## Summary
 
-Make PR #118685 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Keep issue #118673 open as the canonical diagnostic gap and repair PR #118685 as an explicitly partial embedded-runner fix. The repair must correct trajectory attribution to the current attempt-owned completion snapshot, remove the PR body closing keyword, retain reporter credit, and leave Codex out because its upstream protocol has no native model completion reason.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #118685 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118685 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #118673 | keep_canonical | planned | canonical | The issue has remaining unique scope after the partial core repair. |
+| #118685 | fix_needed | planned | canonical | Repair the actionable review finding without falsely broadening the diagnostic contract. |
+| #118685 | build_fix_artifact | planned | canonical | Produce an executable, credited repair plan for the editable same-repository contributor branch. |
 
 ## Needs Human
 
