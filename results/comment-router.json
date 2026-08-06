@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:08:59.584Z",
+  "updated_at": "2026-08-06T00:09:17.448Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119674:5196142367:2026-08-05T19:05:47Z:re_review",
-      "comment_id": "5196142367",
-      "comment_version_key": "5196142367:2026-08-05T19:05:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5196142367",
-      "comment_created_at": "2026-08-05T19:05:47Z",
-      "comment_updated_at": "2026-08-05T19:05:47Z",
-      "comment_body_sha256": "4a913ade854f57d85733355110543dcc8a839d0351310701f0b1a3ea940473eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119674,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119648-doctor-profile-service-identity",
-        "head_sha": "f49cd29416c8fe59e5b1fb0fcd134355a2efcbd8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:83988:5196178787:2026-08-05T19:09:33Z:re_review",
       "comment_id": "5196178787",
@@ -32415,6 +32368,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/clickable-home-hero",
         "head_sha": "7bd70630a1fee04e111669efeef7cf6ccac1f9a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3427:5198393117:2026-08-06T00:08:41Z:clawsweeper_needs_human",
+      "comment_id": "5198393117",
+      "comment_version_key": "5198393117:2026-08-06T00:08:41Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3427#issuecomment-5198393117",
+      "comment_created_at": "2026-08-05T23:04:27Z",
+      "comment_updated_at": "2026-08-06T00:08:41Z",
+      "comment_body_sha256": "e28528ceb7cc79fd9320a5e861039fc60ba0bee5a653e03bdd68616a0d05080a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3427,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would establish a public content-type icon policy before that product direction has explicit maintainer approval. (sha=0deaa7e579bdaa8ec42a0f9cf0e07f897ebdc31e)",
+      "expected_head_sha": "0deaa7e579bdaa8ec42a0f9cf0e07f897ebdc31e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:09:17.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/discovery-icon-hierarchy",
+        "head_sha": "0deaa7e579bdaa8ec42a0f9cf0e07f897ebdc31e",
         "cluster_id": null,
         "job_path": null
       }
