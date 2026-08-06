@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:43:35.430Z",
+  "updated_at": "2026-08-06T11:44:14.855Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:86901:5200893550:2026-08-06T05:50:39Z:re_review",
-      "comment_id": "5200893550",
-      "comment_version_key": "5200893550:2026-08-06T05:50:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/86901#issuecomment-5200893550",
-      "comment_created_at": "2026-08-06T05:50:39Z",
-      "comment_updated_at": "2026-08-06T05:50:39Z",
-      "comment_body_sha256": "3d46cd6d24161b91794928c9e2b7d3261d2ce9ccf36493a2e51c259b4e8e3def",
-      "repo": "openclaw/openclaw",
-      "issue_number": 86901,
-      "author": "name5566",
-      "author_id": 274551,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T06:34:07.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-card-table-limit",
-        "head_sha": "28a2edb473271da7d87c8f7b3c42217da95f515b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86901:4544243779:2026-08-06T06:33:29Z:clawsweeper_auto_repair",
       "comment_id": "4544243779",
@@ -32836,6 +32789,39 @@
         "kind": "pull_request",
         "branch": "fix/auto-reply-pending-final-partial",
         "head_sha": "24350c7afe3e6f5f6f6f008c54f2c2dde43942b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1040:5203738253:2026-08-06T11:43:38Z:clawsweeper_needs_human",
+      "comment_id": "5203738253",
+      "comment_version_key": "5203738253:2026-08-06T11:43:38Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1040#issuecomment-5203738253",
+      "comment_created_at": "2026-08-06T10:57:07Z",
+      "comment_updated_at": "2026-08-06T11:43:38Z",
+      "comment_body_sha256": "1f4661029e350e262f3818e0f07d984f3e2dfad637513ecd763dd761d2d4f91b",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes apply-workflow reconciliation sequencing; the supplied real-behavior proof is intentionally fixture-based rather than a live mutating apply run, so current-head workflow... (sha=69edd98eb250a406d223c211371dc2c822581281)",
+      "expected_head_sha": "69edd98eb250a406d223c211371dc2c822581281",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:44:14.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scope-comment-only-reconciliation",
+        "head_sha": "69edd98eb250a406d223c211371dc2c822581281",
         "cluster_id": null,
         "job_path": null
       }
