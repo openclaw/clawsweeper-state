@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T07:24:38.634Z",
+  "updated_at": "2026-08-06T07:25:10.551Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:37:4976617467:2026-07-15T03:37:53Z:re_review",
-      "comment_id": "4976617467",
-      "comment_version_key": "4976617467:2026-07-15T03:37:53Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/37#issuecomment-4976617467",
-      "comment_created_at": "2026-07-15T03:37:53Z",
-      "comment_updated_at": "2026-07-15T03:37:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/rfcs",
-      "issue_number": 37,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T03:02:17.721Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:37:4979177266:2026-08-06T03:01:26Z:clawsweeper_needs_human",
       "comment_id": "4979177266",
@@ -32354,6 +32327,54 @@
         {
           "action": "merge",
           "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117128:5201667277:2026-08-06T07:24:38Z:re_review",
+      "comment_id": "5201667277",
+      "comment_version_key": "5201667277:2026-08-06T07:24:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5201667277",
+      "comment_created_at": "2026-08-06T07:24:38Z",
+      "comment_updated_at": "2026-08-06T07:24:38Z",
+      "comment_body_sha256": "6ad6d8c33cc7c9f4493f3fd50601a81640aca28f3fb6ee65d25156e9ee2fcea4",
+      "source_delivery_id": "e2cb7680-9167-11f1-808b-8afcdefea7ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased head `3002dbd887563dc42125d7c034970f6025b131ae` keeps config preflight on manifest assignments and bundled public artifacts, adds throwing external channel/web-provider regressions, and documents the posix owner-execute requirement",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T07:25:08.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "3002dbd887563dc42125d7c034970f6025b131ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
           "label": null,
           "job_path": null
         },
