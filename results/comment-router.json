@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:28:38.524Z",
+  "updated_at": "2026-08-06T05:28:40.798Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1234:5195560512:2026-08-06T00:49:42Z:clawsweeper_auto_repair",
-      "comment_id": "5195560512",
-      "comment_version_key": "5195560512:2026-08-06T00:49:42Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1234#issuecomment-5195560512",
-      "comment_created_at": "2026-08-05T18:14:43Z",
-      "comment_updated_at": "2026-08-06T00:49:42Z",
-      "comment_body_sha256": "e5a8ab90a074ff1a66f4b7f0eb629f9e5dc46e8da813f285fbddcf428e51f7d8",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1234,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=2e1fc09d327bc78c41379becd75846ab2485bfbf)",
-      "expected_head_sha": "2e1fc09d327bc78c41379becd75846ab2485bfbf",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-06T00:50:21.076Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-devtools-corepack-home",
-        "head_sha": "2e1fc09d327bc78c41379becd75846ab2485bfbf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1057:5199136865:2026-08-06T00:51:24Z:re_review",
       "comment_id": "5199136865",
@@ -31618,6 +31585,54 @@
         "kind": "pull_request",
         "branch": "stack/passport-wiring-1-node-contract",
         "head_sha": "5d2c38b89fe69e6d386a3d6fe8fcd0a679cb8799",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116794:5200740690:2026-08-06T05:28:02Z:re_review",
+      "comment_id": "5200740690",
+      "comment_version_key": "5200740690:2026-08-06T05:28:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5200740690",
+      "comment_created_at": "2026-08-06T05:28:02Z",
+      "comment_updated_at": "2026-08-06T05:28:02Z",
+      "comment_body_sha256": "68bca4a05f952c96386227452b54c7a3d050096653664cccff0a317febc9f63a",
+      "source_delivery_id": "98b7a330-9157-11f1-95b2-cf0f139d0689",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116794,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 91b282ed511ecdb1f77df06245407f4e5deccfe9 after the prior queue stalled. direct sibling codex inspection is complete at codex-rs/app-server-protocol/src/protocol/v2/thread.rs:57 and turn.rs:71 on codex main 9a6668f674d74b35418fa534b3b6285a315d0765; neither start request exposes attribution. openclaw request correlation remains private at src/acp/control-plane/manager.turn-runner.ts:257 and :264. please publish a fresh durable review and clear the prior security/rank-up item",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T05:28:37.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-3-runtime",
+        "head_sha": "91b282ed511ecdb1f77df06245407f4e5deccfe9",
         "cluster_id": null,
         "job_path": null
       },
