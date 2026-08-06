@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T03:09:23.377Z",
+  "updated_at": "2026-08-06T03:09:23.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114636:5197725045:2026-08-05T21:43:00Z:re_review",
-      "comment_id": "5197725045",
-      "comment_version_key": "5197725045:2026-08-05T21:43:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114636#issuecomment-5197725045",
-      "comment_created_at": "2026-08-05T21:43:00Z",
-      "comment_updated_at": "2026-08-05T21:43:00Z",
-      "comment_body_sha256": "6e4c438f5de344a75bf201f0cae2e4f68a20f943ccbdb6656da3af3aed2d2ec5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114636,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 715c7beb967e3b200573cbf7c2ed5579d9877ef3 after restacking on #113422 head b1444c990774de008c550d34c1862ee05e602e4a. local wsl proof passed: focused hosting/profile vitest set (4 shards, 98 tests), pnpm deadcode:exports, test-src tsgo, pnpm docs:list, oxfmt --check on touched files, and git diff --check. follow-up fix keeps hosting_profile_* constants imported from hosting/types after the #113422 import split",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T22:42:16.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/hosting-profile-conformance-artifact",
-        "head_sha": "715c7beb967e3b200573cbf7c2ed5579d9877ef3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119325:5197820126:2026-08-05T21:53:18Z:re_review",
       "comment_id": "5197820126",
@@ -31521,6 +31474,39 @@
         "kind": "pull_request",
         "branch": "feat/gateway-latest-fallback",
         "head_sha": "66cd1c81679396aaa6e44a60b0ab2716563a7e60",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1085:5174202695:2026-08-06T03:06:54Z:clawsweeper_needs_human",
+      "comment_id": "5174202695",
+      "comment_version_key": "5174202695:2026-08-06T03:06:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1085#issuecomment-5174202695",
+      "comment_created_at": "2026-08-04T03:17:21Z",
+      "comment_updated_at": "2026-08-06T03:06:54Z",
+      "comment_body_sha256": "c56f00f183e9824af4a9caa0e198ae0ec0a6e2ed2995f95a5e7a871a95fce1b6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 18-file native-lifecycle transfer can regress tray, window creation, or shutdown behavior despite the contract tests, and the supplied inspectable screen capture predates the curr... (sha=378197f764476b869b03500b2420ce535e5149d5)",
+      "expected_head_sha": "378197f764476b869b03500b2420ce535e5149d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T03:09:23.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-app-surface-owners",
+        "head_sha": "378197f764476b869b03500b2420ce535e5149d5",
         "cluster_id": null,
         "job_path": null
       }
