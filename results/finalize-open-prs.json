@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T09:02:19.809Z",
-  "count": 16,
+  "generated_at": "2026-08-06T09:23:36.467Z",
+  "count": 15,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 15,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
-    "mergeability_unknown": 0,
+    "mergeability_unknown": 1,
     "needs_checks": 11,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
+    "needs_merge_preflight": 15,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,73 +26,6 @@
     "candidates": []
   },
   "prs": [
-    {
-      "number": 119849,
-      "title": "fix(qqbot): remove stale data-directory diagnostic",
-      "url": "https://github.com/openclaw/openclaw/pull/119849",
-      "branch": "clawsweeper/issue-openclaw-openclaw-39461",
-      "head_sha": "1f6c12bebd037b1dd3dce73f795702ffa41a3a58",
-      "cluster_id": "issue-openclaw-openclaw-39461",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-39461.md",
-      "updated_at": "2026-08-06T08:24:10Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 101,
-        "counts": {
-          "SKIPPED": 52,
-          "SUCCESS": 48,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119849#issuecomment-5201244928",
-            "submitted_at": "2026-08-06T06:39:01Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31074229108",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31074229108",
-        "cluster_id": "issue-openclaw-openclaw-39461",
-        "published_at": "2026-08-06T05:58:57.924Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119849",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(qqbot): remove stale data-directory diagnostic",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
     {
       "number": 119784,
       "title": "fix(gateway): avoid parsing excluded chat history payloads",
@@ -756,8 +689,8 @@
       "cluster_id": "issue-openclaw-openclaw-92199",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
       "updated_at": "2026-08-05T13:06:28Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "UNKNOWN",
+      "merge_state_status": "UNKNOWN",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -811,11 +744,12 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "mergeability_unknown",
+        "merge_state_unknown",
         "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
     },
     {
       "number": 119528,
@@ -825,7 +759,7 @@
       "head_sha": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
       "cluster_id": "issue-openclaw-openclaw-94679",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md",
-      "updated_at": "2026-08-05T07:15:37Z",
+      "updated_at": "2026-08-06T09:19:45Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
