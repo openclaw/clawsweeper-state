@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-06T11:28:49.778Z",
+  "updated_at": "2026-08-06T11:28:10.608Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:58823:4346662451:2026-08-06T04:44:37Z:clawsweeper_needs_human",
+      "comment_id": "4346662451",
+      "comment_version_key": "4346662451:2026-08-06T04:44:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/58823#issuecomment-4346662451",
+      "comment_created_at": "2026-04-29T18:54:26Z",
+      "comment_updated_at": "2026-08-06T04:44:37Z",
+      "comment_body_sha256": "61115e2846b5df75195d03615a255215a9a7250ce8938f491b5c9866dec68eaf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 58823,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused unit tests and CI evidence, but no after-fix real configuration-to-runtime trace for an isolated cron or fallback run.... (sha=234215c5b3ecfe25df3e025d79b4d363005479da)",
+      "expected_head_sha": "234215c5b3ecfe25df3e025d79b4d363005479da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T05:44:25.428Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-model-precedence-global-default",
+        "head_sha": "234215c5b3ecfe25df3e025d79b4d363005479da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-06T04:42:05Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -33330,39 +33363,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107833:4988532068:2026-08-06T11:26:31Z:clawsweeper_needs_human",
-      "comment_id": "4988532068",
-      "comment_version_key": "4988532068:2026-08-06T11:26:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107833#issuecomment-4988532068",
-      "comment_created_at": "2026-07-16T05:29:48Z",
-      "comment_updated_at": "2026-08-06T11:26:31Z",
-      "comment_body_sha256": "93073068d4aca12edd3310157dce6afb7c44128cf94b1bf521f821ce93dd232e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107833,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocked tests are present, but the PR lacks redacted after-fix output from a real multi-account gateway or an approved ephemeral mock-ga... (sha=a4adca856f3d75b236942fd70e32ad2db0658b4c)",
-      "expected_head_sha": "a4adca856f3d75b236942fd70e32ad2db0658b4c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T11:28:49.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "lhk/fix-matrix-live-status-107742",
-        "head_sha": "a4adca856f3d75b236942fd70e32ad2db0658b4c",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
