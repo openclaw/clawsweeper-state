@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T06:31:36.172Z",
+  "updated_at": "2026-08-06T06:32:16.587Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:490:5192368457:2026-08-06T02:10:10Z:clawsweeper_needs_human",
-      "comment_id": "5192368457",
-      "comment_version_key": "5192368457:2026-08-06T02:10:10Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/490#issuecomment-5192368457",
-      "comment_created_at": "2026-08-05T13:30:29Z",
-      "comment_updated_at": "2026-08-06T02:10:10Z",
-      "comment_body_sha256": "bca60b5ef52e64b2a90f05fe684ae89c9f4e7b5617d2d163c8517515f269331b",
-      "repo": "openclaw/acpx",
-      "issue_number": 490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upgraded third-party action will execute on self-hosted Crabbox hydration and the id-token-enabled trusted-publishing release job, neither of which is exercised as that production... (sha=8d42f939605e434b4d4b2a4032f3c9876f39582a)",
-      "expected_head_sha": "8d42f939605e434b4d4b2a4032f3c9876f39582a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T02:19:59.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions-a9bcc878af",
-        "head_sha": "8d42f939605e434b4d4b2a4032f3c9876f39582a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3401:5186763644:2026-08-06T02:11:28Z:clawsweeper_auto_repair",
       "comment_id": "5186763644",
@@ -32108,6 +32075,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119240:5201189741:2026-08-06T06:31:35Z:re_review",
+      "comment_id": "5201189741",
+      "comment_version_key": "5201189741:2026-08-06T06:31:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119240#issuecomment-5201189741",
+      "comment_created_at": "2026-08-06T06:31:35Z",
+      "comment_updated_at": "2026-08-06T06:31:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "797d78b0-9160-11f1-8a54-f8f50c61bd7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119240,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T06:32:14.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-status-vector-store-92102",
+        "head_sha": "0b135cbf392fd884f254a4a127c556d67b3f3294",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
