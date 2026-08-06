@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:02:39.904Z",
+  "updated_at": "2026-08-06T00:02:49.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3415:5196261309:2026-08-05T19:18:06Z:re_review",
-      "comment_id": "5196261309",
-      "comment_version_key": "5196261309:2026-08-05T19:18:06Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3415#issuecomment-5196261309",
-      "comment_created_at": "2026-08-05T19:18:06Z",
-      "comment_updated_at": "2026-08-05T19:18:06Z",
-      "comment_body_sha256": "59d2531addf2686691edcd787cabfb63ac9f6013e7081319aa35f7ec903a05a6",
-      "source_delivery_id": "63bbcc10-9102-11f1-8afd-1e4a8436becd",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3415,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:18:40.768Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/hide-org-row-official",
-        "head_sha": "14e93a4efc9379354f340c013e32e7b0e41cd0f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-05T19:01:07Z:clawsweeper_needs_human",
       "comment_id": "5121262567",
@@ -32596,6 +32548,39 @@
         "kind": "pull_request",
         "branch": "agent/retire-clawdinator-fleet",
         "head_sha": "c47fea5e9b3a1d601eb8b17c4d654bb377a91d91",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:488:5179744694:2026-08-06T00:02:18Z:clawsweeper_needs_human",
+      "comment_id": "5179744694",
+      "comment_version_key": "5179744694:2026-08-06T00:02:18Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/488#issuecomment-5179744694",
+      "comment_created_at": "2026-08-04T13:29:29Z",
+      "comment_updated_at": "2026-08-06T00:02:18Z",
+      "comment_body_sha256": "080777913d5320890754692778b494de4ae2baa2870dda70b96fc0dc50122078",
+      "repo": "openclaw/acpx",
+      "issue_number": 488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the pinned graph used by frozen installs, including an optional @napi-rs/wasm-runtime snapshot; recorded CI is green, but maintainers should accept this routine depend... (sha=17c1d03840bec3db1ae609530c74df7856f9857e)",
+      "expected_head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:02:49.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-ec51b0fbd6",
+        "head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
         "cluster_id": null,
         "job_path": null
       }
