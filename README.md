@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 6, 2026, 00:49 UTC
+Last source update: Aug 6, 2026, 00:54 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 6, 2026, 00:49 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Aug 6, 2026, 00:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31056514643) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Aug 6, 2026, 00:54 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31060646462) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply finished | Aug 5, 2026, 23:44 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31057218624) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 5, 2026, 23:58 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31058154760) |
 
@@ -91,23 +91,23 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 6, 2026, 00:52 UTC
+Last source update: Aug 6, 2026, 01:00 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 392 | 100% |
-| Run attempts archived | 1063 | audit |
-| Latest successful clusters | 330 | 84.2% |
-| Latest failed clusters | 60 | 15.3% |
+| Latest clusters reviewed | 393 | 100% |
+| Run attempts archived | 1065 | audit |
+| Latest successful clusters | 330 | 84.0% |
+| Latest failed clusters | 61 | 15.5% |
 | Latest cancelled clusters | 2 | 0.5% |
 | Needs-human clusters | 25 | 6.4% |
 | Fix actions failed | 19 | 4.3% |
-| Fix actions blocked | 77 | 17.6% |
+| Fix actions blocked | 78 | 17.8% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
-| Blocked mutation attempts | 275 | 99.6% |
+| Blocked mutation attempts | 276 | 99.6% |
 | Skipped mutation attempts | 1 | 0.4% |
 
 ### Owner Action Dashboard
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 392 clusters: 179 maintainer action, 70 automation snapshot, 119 intervention needed, 24 no pending action, 0 completed.
+- Latest records: 393 clusters: 179 maintainer action, 70 automation snapshot, 120 intervention needed, 24 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119784](https://github.com/openclaw/openclaw/pull/119784) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
-- Intervention first: [openclaw/crabpot](https://github.com/openclaw/crabpot) [#283](https://github.com/openclaw/crabpot/pull/283) is automation_failed: Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a sepa....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-119591](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119591.md) is automation_failed: Codex /review timed out after 127384ms.
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119551](https://github.com/openclaw/openclaw/pull/119551) is action_planned: Open canonical issue; current main remains affected and the repair fits the stated bug-fix boundary..
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 179 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 70 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 119 | automation failure or blocker recorded |
+| Intervention Needed | 120 | automation failure or blocker recorded |
 | No Pending Action | 24 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -138,7 +138,7 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 34 |
-| automation_failed | 67 |
+| automation_failed | 68 |
 | automation_blocked | 52 |
 | reviewed_no_action | 24 |
 | completed | 0 |
@@ -187,11 +187,12 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | Codex /review timed out after 127384ms | Aug 6, 2026, 01:00 UTC | [issue-openclaw-openclaw-119591](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119591.md) | [31057274631](https://github.com/openclaw/clawsweeper/actions/runs/31057274631) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119718](https://github.com/openclaw/openclaw/pull/119718) | automation_blocked | autofix-only job cannot merge | Aug 6, 2026, 00:56 UTC | [automerge-openclaw-openclaw-119718](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119718.md) | [31056620012](https://github.com/openclaw/clawsweeper/actions/runs/31056620012) |
 | [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 6, 2026, 00:52 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31060666276](https://github.com/openclaw/clawsweeper/actions/runs/31060666276) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | Codex fix worker timed out after 1800000ms | Aug 6, 2026, 00:47 UTC | [issue-openclaw-openclaw-44289](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-44289.md) | [31058696184](https://github.com/openclaw/clawsweeper/actions/runs/31058696184) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119735](https://github.com/openclaw/openclaw/pull/119735) | automation_blocked | autofix-only job cannot merge | Aug 5, 2026, 23:27 UTC | [automerge-openclaw-openclaw-119735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119735.md) | [31053325148](https://github.com/openclaw/clawsweeper/actions/runs/31053325148) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119737](https://github.com/openclaw/openclaw/pull/119737) | automation_blocked | autofix-only job cannot merge | Aug 5, 2026, 23:09 UTC | [automerge-openclaw-openclaw-119737](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119737.md) | [31052977808](https://github.com/openclaw/clawsweeper/actions/runs/31052977808) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119718](https://github.com/openclaw/openclaw/pull/119718) | automation_blocked | autofix-only job cannot merge | Aug 5, 2026, 22:28 UTC | [automerge-openclaw-openclaw-119718](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119718.md) | [31049254315](https://github.com/openclaw/clawsweeper/actions/runs/31049254315) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119717](https://github.com/openclaw/openclaw/pull/119717) | automation_blocked | autofix-only job cannot merge | Aug 5, 2026, 21:54 UTC | [automerge-openclaw-openclaw-119717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119717.md) | [31044377132](https://github.com/openclaw/clawsweeper/actions/runs/31044377132) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119722](https://github.com/openclaw/openclaw/pull/119722) | automation_blocked | autofix-only job cannot merge | Aug 5, 2026, 21:17 UTC | [automerge-openclaw-openclaw-119722](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119722.md) | [31045548540](https://github.com/openclaw/clawsweeper/actions/runs/31045548540) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | Codex fix worker timed out after 1800000ms | Aug 5, 2026, 19:59 UTC | [issue-openclaw-openclaw-81355](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-81355.md) | [31035470296](https://github.com/openclaw/clawsweeper/actions/runs/31035470296) |
@@ -201,7 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#96692](https://github.com/openclaw/openclaw/pull/96692) | automation_failed | Implementation is blocked only by the immutable checkout. The executor should apply the supplied narrow artifact on an editable checkout, then re-f... | Aug 5, 2026, 13:49 UTC | [issue-openclaw-openclaw-96692](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-96692.md) | [31008717397](https://github.com/openclaw/clawsweeper/actions/runs/31008717397) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119592](https://github.com/openclaw/openclaw/pull/119592) | automation_failed | Open canonical issue; no viable implementation PR is hydrated. | Aug 5, 2026, 12:56 UTC | [issue-openclaw-openclaw-119592](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119592.md) | [31004605443](https://github.com/openclaw/clawsweeper/actions/runs/31004605443) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118599](https://github.com/openclaw/openclaw/pull/118599) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 5, 2026, 12:32 UTC | [automerge-openclaw-openclaw-118599](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118599.md) | [31004022776](https://github.com/openclaw/clawsweeper/actions/runs/31004022776) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118807](https://github.com/openclaw/openclaw/pull/118807) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 5, 2026, 05:13 UTC | [automerge-openclaw-openclaw-118807](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118807.md) | [30974609326](https://github.com/openclaw/clawsweeper/actions/runs/30974609326) |
 
 #### No Pending Action
 
@@ -233,10 +233,11 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-openclaw-openclaw-119591 | execute_fix blocked | Codex /review timed out after 127384ms | [issue-openclaw-openclaw-119591](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119591.md) | [31057274631](https://github.com/openclaw/clawsweeper/actions/runs/31057274631) |
+| automerge-openclaw-openclaw-119718 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119718](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119718.md) | [31056620012](https://github.com/openclaw/clawsweeper/actions/runs/31056620012) |
 | issue-openclaw-openclaw-44289 | execute_fix blocked | Codex fix worker timed out after 1800000ms | [issue-openclaw-openclaw-44289](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-44289.md) | [31058696184](https://github.com/openclaw/clawsweeper/actions/runs/31058696184) |
 | automerge-openclaw-openclaw-119735 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119735.md) | [31053325148](https://github.com/openclaw/clawsweeper/actions/runs/31053325148) |
 | automerge-openclaw-openclaw-119737 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119737](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119737.md) | [31052977808](https://github.com/openclaw/clawsweeper/actions/runs/31052977808) |
-| automerge-openclaw-openclaw-119718 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119718](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119718.md) | [31049254315](https://github.com/openclaw/clawsweeper/actions/runs/31049254315) |
 | automerge-openclaw-openclaw-119717 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119717](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119717.md) | [31044377132](https://github.com/openclaw/clawsweeper/actions/runs/31044377132) |
 | automerge-openclaw-openclaw-119722 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-119722](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119722.md) | [31045548540](https://github.com/openclaw/clawsweeper/actions/runs/31045548540) |
 | issue-openclaw-openclaw-81355 | execute_fix blocked | Codex fix worker timed out after 1800000ms | [issue-openclaw-openclaw-81355](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-81355.md) | [31035470296](https://github.com/openclaw/clawsweeper/actions/runs/31035470296) |
@@ -262,12 +263,12 @@ State: Failed clusters need inspection
 | issue-openclaw-openclaw-113631 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-openclaw-113631](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-113631.md) | [30754058583](https://github.com/openclaw/clawsweeper/actions/runs/30754058583) |
 | automerge-openclaw-openclaw-117906 | merge_canonical blocked | autofix-only job cannot merge | [automerge-openclaw-openclaw-117906](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117906.md) | [30739808879](https://github.com/openclaw/clawsweeper/actions/runs/30739808879) |
 | issue-openclaw-openclaw-69242 | merge_canonical blocked | checks are not clean: check-sqlite-session-flip-proof: FAILURE, openclaw/ci-gate: FAILURE | [issue-openclaw-openclaw-69242](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-69242.md) | [30738935968](https://github.com/openclaw/clawsweeper/actions/runs/30738935968) |
-| automerge-openclaw-openclaw-117869 | fix failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/agents/s... | [automerge-openclaw-openclaw-117869](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-117869.md) | [30737716674](https://github.com/openclaw/clawsweeper/actions/runs/30737716674) |
 
 ### Fix Failure Queue
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
+| [issue-openclaw-openclaw-119591](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119591.md) | blocked |  |  | Codex /review timed out after 127384ms | [31057274631](https://github.com/openclaw/clawsweeper/actions/runs/31057274631) |
 | [issue-openclaw-openclaw-44289](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-44289.md) | blocked |  |  | Codex fix worker timed out after 1800000ms | [31058696184](https://github.com/openclaw/clawsweeper/actions/runs/31058696184) |
 | [issue-openclaw-openclaw-81355](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-81355.md) | blocked |  |  | Codex fix worker timed out after 1800000ms | [31035470296](https://github.com/openclaw/clawsweeper/actions/runs/31035470296) |
 | [issue-openclaw-openclaw-118560](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-118560.md) | blocked |  |  | Codex review-fix worker timed out after 867394ms | [30959165868](https://github.com/openclaw/clawsweeper/actions/runs/30959165868) |
@@ -292,14 +293,13 @@ State: Failed clusters need inspection
 | [automerge-openclaw-openclaw-116584](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116584.md) | failed |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, apps [check:changed] apps/a... | [30597758157](https://github.com/openclaw/clawsweeper/actions/runs/30597758157) |
 | [automerge-openclaw-openclaw-116584](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-116584.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, apps [check:changed] apps/a... | [30597758157](https://github.com/openclaw/clawsweeper/actions/runs/30597758157) |
 | [automerge-openclaw-openclaw-110725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-110725.md) | failed |  |  | validation command failed (pnpm check:changed): validation command left 4 background process(es) after exit | [29692504658](https://github.com/openclaw/clawsweeper/actions/runs/29692504658) |
-| [automerge-openclaw-openclaw-110725](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-110725.md) | blocked |  |  | validation command failed (pnpm check:changed): validation command left 4 background process(es) after exit | [29692504658](https://github.com/openclaw/clawsweeper/actions/runs/29692504658) |
 
 ### Top Blocked Reasons
 
 | Reason | Latest count | Example cluster |
 | --- | ---: | --- |
 | job does not allow merge | 102 | [automerge-openclaw-openclaw-107479](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-107479.md) |
-| autofix-only job cannot merge | 18 | [automerge-openclaw-openclaw-119735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119735.md) |
+| autofix-only job cannot merge | 18 | [automerge-openclaw-openclaw-119718](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119718.md) |
 | checks are not clean: test: IN_PROGRESS, windows: IN_PROGRESS | 9 | [issue-openclaw-gogcli-917](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-gogcli-917.md) |
 | checks are not clean: Go: IN_PROGRESS, Release Check: IN_PROGRESS | 7 | [issue-openclaw-crabbox-756](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-crabbox-756.md) |
 | checks are not clean: build-artifacts: IN_PROGRESS | 2 | [issue-openclaw-openclaw-119350](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-119350.md) |
