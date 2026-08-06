@@ -2,16 +2,16 @@
 repo: "openclaw/crabpot"
 cluster_id: "automerge-openclaw-crabpot-283"
 mode: "autonomous"
-run_id: "31056925449"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31056925449"
-head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
-workflow_conclusion: "failure"
+run_id: "31058919521"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31058919521"
+head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T23:42:15.354Z"
-canonical: "#283"
+published_at: "2026-08-06T00:17:50.784Z"
+canonical: "https://github.com/openclaw/crabpot/pull/283"
 canonical_issue: null
-canonical_pr: "#283"
-actions_total: 1
+canonical_pr: "https://github.com/openclaw/crabpot/pull/283"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/crabpot
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31056925449](https://github.com/openclaw/clawsweeper/actions/runs/31056925449)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31058919521](https://github.com/openclaw/clawsweeper/actions/runs/31058919521)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #283
+Canonical: https://github.com/openclaw/crabpot/pull/283
 
 ## Summary
 
-Make PR #283 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#283 is the canonical non-security PR. Its CI is passing, but its v0.3.21 source pin leaves both checked-in workspace-plan reports at the prior inspector ref, so it needs a narrow contributor-branch repair before review can pass.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Make PR #283 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #283 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/crabpot/pull/283 | fix_needed | planned | canonical | Repair the opted-in contributor branch; no close or merge action is authorized. |
+| https://github.com/openclaw/crabpot/pull/283 | build_fix_artifact | planned | canonical | Use the existing writable same-repository contributor branch and preserve Patrick-Erichsen's commits and attribution. |
 
 ## Needs Human
 

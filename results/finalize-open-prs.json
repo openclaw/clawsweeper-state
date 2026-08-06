@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T00:08:23.286Z",
-  "count": 16,
+  "generated_at": "2026-08-06T00:18:24.730Z",
+  "count": 17,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 13,
+    "needs_checks": 14,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 17,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,52 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 119779,
+      "title": "fix(health): report canonical SQLite session store path",
+      "url": "https://github.com/openclaw/openclaw/pull/119779",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119755",
+      "head_sha": "a53bd170d88da64c05ec044598fd4ff7a4874dad",
+      "cluster_id": "issue-openclaw-openclaw-119755",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119755.md",
+      "updated_at": "2026-08-06T00:10:21Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 123,
+        "counts": {
+          "SKIPPED": 42,
+          "SUCCESS": 77,
+          "IN_PROGRESS": 3,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-large-7:IN_PROGRESS; CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-8:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119778,
       "title": "fix(gateway): return retryable chat send error during transcript rebuild",
@@ -395,20 +441,20 @@
       "title": "fix(googlechat): deliver remote media URLs as text links",
       "url": "https://github.com/openclaw/openclaw/pull/119718",
       "branch": "clawsweeper/issue-openclaw-openclaw-89430",
-      "head_sha": "e45ecd8e4621947ec8a2484572270564b5ccc002",
+      "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
       "cluster_id": "issue-openclaw-openclaw-89430",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-05T23:58:17Z",
+      "updated_at": "2026-08-06T00:08:27Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 113,
+        "total": 112,
         "counts": {
           "CANCELLED": 1,
-          "SKIPPED": 40,
-          "SUCCESS": 71,
+          "SUCCESS": 72,
+          "SKIPPED": 38,
           "NEUTRAL": 1
         },
         "blockers": [
