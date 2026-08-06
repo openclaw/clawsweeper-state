@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:33:08.785Z",
+  "updated_at": "2026-08-06T05:33:14.543Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-06T01:31:28Z:clawsweeper_needs_human",
-      "comment_id": "5199365650",
-      "comment_version_key": "5199365650:2026-08-06T01:31:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119784#issuecomment-5199365650",
-      "comment_created_at": "2026-08-06T01:31:28Z",
-      "comment_updated_at": "2026-08-06T01:31:28Z",
-      "comment_body_sha256": "4541fc530bf65adc3c64a9f23a093d37d5baddeb9bf6c556e5c0699a1047109e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119784,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This open autofix PR already owns the concrete repair and has no actionable reviewer finding for a separate repair lane. (sha=8f272db71ccfd04fb8599eb84c0ba320d2b5173c)",
-      "expected_head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T01:32:40.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119578",
-        "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-        "cluster_id": "issue-openclaw-openclaw-119578",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115399:5118740697:2026-08-06T01:31:39Z:clawsweeper_needs_human",
       "comment_id": "5118740697",
@@ -31572,6 +31525,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119441:5187062435:2026-08-06T04:45:29Z:clawsweeper_auto_repair",
+      "comment_id": "5187062435",
+      "comment_version_key": "5187062435:2026-08-06T04:45:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119441#issuecomment-5187062435",
+      "comment_created_at": "2026-08-05T03:06:25Z",
+      "comment_updated_at": "2026-08-06T04:45:29Z",
+      "comment_body_sha256": "939925cfb6e271bc585789688aacc56c245350c85a8bfd45dee62361aa99e9e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119441,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b8b10e894ce911f473419eab2171ae37c01d5f7e)",
+      "expected_head_sha": "b8b10e894ce911f473419eab2171ae37c01d5f7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T05:33:14.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-118503-systemd-dotenv",
+        "head_sha": "b8b10e894ce911f473419eab2171ae37c01d5f7e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
