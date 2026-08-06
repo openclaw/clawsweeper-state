@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T00:52:56.617Z",
+  "generated_at": "2026-08-06T00:57:19.159Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31060666276.json",
+  "run_record": "results/runs/31056620012.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31060666276",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31056620012",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#119718:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#119718",
+      "title": "fix(googlechat): deliver remote media URLs as text links",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31056620012",
+      "cluster_id": "automerge-openclaw-openclaw-119718",
+      "hook_run_id": "c4b635d0-3938-4eee-bfc5-8df705273002",
+      "url": "https://github.com/openclaw/openclaw/pull/119718"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#119718:repair_contributor_branch:pushed:81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#119718",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31056620012",
+      "cluster_id": "automerge-openclaw-openclaw-119718",
+      "hook_run_id": "a09be601-4132-43c1-ad1e-11bdaca97770",
+      "url": "https://github.com/openclaw/openclaw/pull/119718"
+    }
+  ]
 }
