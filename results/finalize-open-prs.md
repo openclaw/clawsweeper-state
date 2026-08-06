@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-06T01:47:29.665Z
+Generated: 2026-08-06T01:54:04.009Z
 
 ## Summary
 
@@ -11,7 +11,7 @@ Generated: 2026-08-06T01:47:29.665Z
 | security_hold | 0 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 12 |
+| needs_checks | 11 |
 | needs_review | 0 |
 | needs_merge_preflight | 16 |
 | needs_result_backfill | 1 |
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119799](https://github.com/openclaw/openclaw/pull/119799) | fix(plugins): keep targeted official updates on the core channel | issue-openclaw-openclaw-119758 | MERGEABLE | BEHIND | SKIPPED:37 SUCCESS:47 IN_PROGRESS:34 NEUTRAL:1; blockers:34 | needs_merge_state:BEHIND, needs_checks:CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS; CI / QA Smoke CI (profile 3/4):IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119799](https://github.com/openclaw/openclaw/pull/119799) | fix(plugins): keep targeted official updates on the core channel | issue-openclaw-openclaw-119758 | MERGEABLE | BEHIND | SKIPPED:38 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight, needs_result_backfill | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | MERGEABLE | BEHIND | SKIPPED:45 SUCCESS:84 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | issue-openclaw-openclaw-119754 | MERGEABLE | BEHIND | SKIPPED:43 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | issue-openclaw-openclaw-96692 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:42 SUCCESS:59 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
