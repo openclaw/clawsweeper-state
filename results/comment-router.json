@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:49:22.377Z",
+  "updated_at": "2026-08-06T11:54:16.888Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119819:5201208608:2026-08-06T06:34:09Z:re_review",
-      "comment_id": "5201208608",
-      "comment_version_key": "5201208608:2026-08-06T06:34:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119819#issuecomment-5201208608",
-      "comment_created_at": "2026-08-06T06:34:09Z",
-      "comment_updated_at": "2026-08-06T06:34:09Z",
-      "comment_body_sha256": "0616031e2fa40072fb3236a44738facb11874abf8722d24da9010ac1bc60b795",
-      "source_delivery_id": "d4ccde40-9160-11f1-815a-152a7242d45a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119819,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T06:34:45.717Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-heartbeat-target-agent",
-        "head_sha": "418ef7af374f02a4a5d0a307fd849b08e2a07a47",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107937:5201209481:2026-08-06T06:34:16Z:re_review",
       "comment_id": "5201209481",
@@ -32834,6 +32786,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-7d7dfe0edd",
         "head_sha": "ce346499b3e705479e979be7256d7f144f0af04f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3418:5198113342:2026-08-06T11:53:32Z:clawsweeper_needs_human",
+      "comment_id": "5198113342",
+      "comment_version_key": "5198113342:2026-08-06T11:53:32Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3418#issuecomment-5198113342",
+      "comment_created_at": "2026-08-05T22:27:43Z",
+      "comment_updated_at": "2026-08-06T11:53:32Z",
+      "comment_body_sha256": "1e3f1cfa96df320d7f90523390461a0aea991e32182b98651884e4a170a4a291",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3418,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a second catalog-discovery surface whose query, category, eligibility, and Trending semantics can drift from the dedicated routes. (sha=5bb323f2c4f264adaaaa41db4f633e7220c37511)",
+      "expected_head_sha": "5bb323f2c4f264adaaaa41db4f633e7220c37511",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:54:16.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/restore-home-catalog-discovery",
+        "head_sha": "5bb323f2c4f264adaaaa41db4f633e7220c37511",
         "cluster_id": null,
         "job_path": null
       }
