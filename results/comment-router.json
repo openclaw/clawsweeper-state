@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T06:23:21.246Z",
+  "updated_at": "2026-08-06T06:23:42.125Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2457:5101250203:2026-07-28T07:31:17Z:re_review",
-      "comment_id": "5101250203",
-      "comment_version_key": "5101250203:2026-07-28T07:31:17Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5101250203",
-      "comment_created_at": "2026-07-28T07:31:17Z",
-      "comment_updated_at": "2026-07-28T07:31:17Z",
-      "comment_body_sha256": "147c766d3c446396e24aece0bc3e1ccd0cbf487991590e9d87622df5be2c7f94",
-      "repo": "steipete/codexbar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T02:06:43.755Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2457:5101364541:2026-07-28T07:44:07Z:re_review",
       "comment_id": "5101364541",
@@ -31953,6 +31926,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1246:5200560146:2026-08-06T06:18:40Z:clawsweeper_auto_repair",
+      "comment_id": "5200560146",
+      "comment_version_key": "5200560146:2026-08-06T06:18:40Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1246#issuecomment-5200560146",
+      "comment_created_at": "2026-08-06T04:58:21Z",
+      "comment_updated_at": "2026-08-06T06:18:40Z",
+      "comment_body_sha256": "e1a4d7a54974fb183632b49a126381d7e61d580aa9734a90a18767adb503e9ef",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ebdc61af0b80bca718bca7b079632d15cbc10b37)",
+      "expected_head_sha": "ebdc61af0b80bca718bca7b079632d15cbc10b37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T06:23:42.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reused-workspace-git-coherence-20260806",
+        "head_sha": "ebdc61af0b80bca718bca7b079632d15cbc10b37",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
