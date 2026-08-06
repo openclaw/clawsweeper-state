@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T04:39:00.422Z",
+  "updated_at": "2026-08-06T04:39:06.076Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1095:5190443235:2026-08-05T23:40:57Z:clawsweeper_needs_human",
-      "comment_id": "5190443235",
-      "comment_version_key": "5190443235:2026-08-05T23:40:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1095#issuecomment-5190443235",
-      "comment_created_at": "2026-08-05T10:10:20Z",
-      "comment_updated_at": "2026-08-05T23:40:57Z",
-      "comment_body_sha256": "d7b3e01c24a78a4b792392ed4e68953c8ee66cbca7412165ab03e17c5ef135ea",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1095,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Any wire-shape or signing-argument mismatch could reject existing operator or node pairing and reconnect handshakes. (sha=df74c4ed64213c535c576cb5fc44706b80586e51)",
-      "expected_head_sha": "df74c4ed64213c535c576cb5fc44706b80586e51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T23:41:28.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bkudiess-gateway-protocol-core",
-        "head_sha": "df74c4ed64213c535c576cb5fc44706b80586e51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118008:5158543101:2026-08-05T23:35:02Z:clawsweeper_needs_human",
       "comment_id": "5158543101",
@@ -31828,6 +31795,54 @@
       "status": "skipped",
       "processed_at": "2026-08-06T04:39:00.422Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119576:5200447947:2026-08-06T04:38:37Z:re_review",
+      "comment_id": "5200447947",
+      "comment_version_key": "5200447947:2026-08-06T04:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5200447947",
+      "comment_created_at": "2026-08-06T04:38:37Z",
+      "comment_updated_at": "2026-08-06T04:38:37Z",
+      "comment_body_sha256": "6d0c90bf9954d30db9b7248009819e1df18b78e014ec3035350eed94fed82bde",
+      "source_delivery_id": "b12ca3e0-9150-11f1-8aee-bfe36d12a89f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119576,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the hot/no-op intermediate finding is fixed on head `02885555a41`: the revert-cancel check now compares against the compare config the runtime was running when the deferred restart was armed (`pendingrestartbasecompareconfig`), so an intervening hot-only apply no longer marks still-deferred restart-owned fields as running. real managed-coordinator scenario d proof (real reloader + real chokidar + real file, production wiring incl. the hot-apply runtime commit): planner a→b → hot b→d → ordinary d→a revert retires the deferred restart debt, onrestart stays ×1, 0 sigusr1. new regression test covers the sequence and fails on the prior head (onrestart ×2). full trace in the evidence section",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T04:39:04.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-cancel-restart-on-revert-119360",
+        "head_sha": "02885555a418fa239cbca9335063ed013a532191",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
