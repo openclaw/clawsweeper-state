@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T13:57:25.481Z",
+  "generated_at": "2026-08-06T14:34:46.559Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31106690751.json",
+  "run_record": "results/runs/31106677961.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31106690751",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31106677961",
+  "considered": 2,
+  "pending": 1,
+  "sent": 1,
   "failed": 0,
-  "skipped": 0,
-  "actions": []
+  "skipped": 1,
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#118599:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#118599",
+      "title": "fix(gateway): coordinate singleton lock through shared state",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "skipped",
+      "reason": "notification already sent",
+      "run_id": "31106677961",
+      "cluster_id": "automerge-openclaw-openclaw-118599",
+      "hook_run_id": null,
+      "url": "https://github.com/openclaw/openclaw/pull/118599"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#118599:repair_contributor_branch:pushed:54a6385a621ea45937fce13d106d4133d8e8f558",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#118599",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31106677961",
+      "cluster_id": "automerge-openclaw-openclaw-118599",
+      "hook_run_id": "ce8dca0f-7f4f-4d6a-9a51-d79ef516a3d8",
+      "url": "https://github.com/openclaw/openclaw/pull/118599"
+    }
+  ]
 }
