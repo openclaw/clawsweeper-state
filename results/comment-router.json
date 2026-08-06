@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:19:18.812Z",
+  "updated_at": "2026-08-06T00:19:59.641Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:119722",
-      "comment_id": "repair-loop-label-sweep:autofix:119722",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119722",
-      "comment_created_at": "2026-08-05T19:23:36.174Z",
-      "comment_updated_at": "2026-08-05T19:23:36.174Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119722,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-112625",
-        "head_sha": "427b8af60ae3e76d90fc83d8616d8acdd355610f",
-        "cluster_id": "automerge-openclaw-openclaw-119722",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119722.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119722.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119608:5196333820:2026-08-05T19:25:45Z:re_review",
       "comment_id": "5196333820",
@@ -32330,6 +32272,39 @@
         "kind": "pull_request",
         "branch": "codex/provenance-clarity",
         "head_sha": "8a4b4a65d8763313cea6d7ce4d1dd44b9aa957b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3430:5198929852:2026-08-06T00:19:25Z:clawsweeper_needs_human",
+      "comment_id": "5198929852",
+      "comment_version_key": "5198929852:2026-08-06T00:19:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3430#issuecomment-5198929852",
+      "comment_created_at": "2026-08-06T00:19:25Z",
+      "comment_updated_at": "2026-08-06T00:19:25Z",
+      "comment_body_sha256": "665764ac115e7276cce99e40eb51a175e0d751a6d967c5f63821b955ea59de39",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3430,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Keep evaluator execution outside production** - The new prototype launches a local evaluator over upstream snapshots while its sandbox and credential broker are deferred; it must not be...; Review finding: [medium] Keep evaluator execution outside production — scripts/prototypes/nvidia-skill-evaluation.ts:1 (sha=461fe87beb81327cd537c5d881f95c7ef5a227f4)",
+      "expected_head_sha": "461fe87beb81327cd537c5d881f95c7ef5a227f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:19:59.641Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/nvidia-tier3-clawhub-prototype",
+        "head_sha": "461fe87beb81327cd537c5d881f95c7ef5a227f4",
         "cluster_id": null,
         "job_path": null
       }
