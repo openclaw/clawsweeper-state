@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the configured ACP binding lifecycle for https://github.com/openclaw/openclaw/issues/119551. Resolve the explicit model from the owning `spec.agentId`, not `spec.acpAgentId`; pass it only when present as `runtimeOptions: { model }` with explicit-model provenance; and make ready-session matching recreate bindings when the explicit model differs or is removed. Preserve existing behavior when only `agents.defaults.model` exists. Add focused lifecycle regression tests for forwarding, no-default fallback, model drift/removal, and distinct owner-versus-harness IDs. Treat https://github.com/openclaw/openclaw/pull/119599 only as source material because it is closed unmerged and selects the wrong boundary. Do not add configuration, environment variables, runtime fallbacks, or changelog edits; stop if the repair requires a product decision.
+Repair configured ACP binding initialization for https://github.com/openclaw/openclaw/issues/119551. Resolve only the owning spec.agentId explicit primary model, not spec.acpAgentId or defaults; conditionally pass it as runtimeOptions.model with explicit-selection provenance; and compare it with persisted runtime options so a changed configured model recreates the session. Add focused lifecycle tests for owner-versus-harness lookup, absent explicit model, matching model reuse, and model-change reinitialization. Do not add config or environment fallbacks, broaden into https://github.com/openclaw/openclaw/issues/106008, or edit CHANGELOG.md.
 
 Likely files:
 
@@ -78,8 +78,8 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/acp/persistent-bindings.lifecycle.test.ts
-- node scripts/check-changed.mjs -- src/acp/persistent-bindings.lifecycle.ts src/acp/persistent-bindings.lifecycle.test.ts
-- Run an ACPX/OpenCode smoke that records the effective configured session model when a suitable isolated backend is available.
+- node scripts/run-vitest.mjs src/acp/control-plane/manager.runtime-config-validation.test.ts
+- git diff --check
 
 ## Operator Prompt
 
