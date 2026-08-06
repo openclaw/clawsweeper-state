@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:09:49.737Z",
+  "updated_at": "2026-08-06T00:10:21.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118888:5196196716:2026-08-05T19:11:24Z:re_review",
-      "comment_id": "5196196716",
-      "comment_version_key": "5196196716:2026-08-05T19:11:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118888#issuecomment-5196196716",
-      "comment_created_at": "2026-08-05T19:11:24Z",
-      "comment_updated_at": "2026-08-05T19:11:24Z",
-      "comment_body_sha256": "5893cf4efbaff5152484309b6c9ad17828f143901471de59faaec8a4cb60b715",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118888,
-      "author": "Kailigithub",
-      "author_id": 12250313,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-118845-workboard-error-actual-length",
-        "head_sha": "f1d0a36d00a492fb21d78c07e77e4e6a0d854f0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119665:5196274964:2026-08-05T19:19:31Z:re_review",
       "comment_id": "5196274964",
@@ -32373,6 +32326,39 @@
         "kind": "pull_request",
         "branch": "fix/discovery-fetch-timeout",
         "head_sha": "2fe61b7b0e445f5d92579edebdbf7bbeef2aede2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3423:5198280779:2026-08-06T00:09:40Z:clawsweeper_auto_repair",
+      "comment_id": "5198280779",
+      "comment_version_key": "5198280779:2026-08-06T00:09:40Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3423#issuecomment-5198280779",
+      "comment_created_at": "2026-08-05T22:49:25Z",
+      "comment_updated_at": "2026-08-06T00:09:40Z",
+      "comment_body_sha256": "cb0bdc4a1edbe4ed884eb8f1a301980fd9b41002fe442aeb694acae3c29b158a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=334952a5aec8d218c3622b11fe6a7858f215f119)",
+      "expected_head_sha": "334952a5aec8d218c3622b11fe6a7858f215f119",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:10:21.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/skills-sh-trending-provenance",
+        "head_sha": "334952a5aec8d218c3622b11fe6a7858f215f119",
         "cluster_id": null,
         "job_path": null
       }
