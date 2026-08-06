@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T14:39:46.574Z",
+  "updated_at": "2026-08-06T14:39:49.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:2948:4870697051:2026-07-02T21:40:33Z:re_review",
-      "comment_id": "4870697051",
-      "comment_version_key": "4870697051:2026-07-02T21:40:33Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/2948#issuecomment-4870697051",
-      "comment_created_at": "2026-07-02T21:40:33Z",
-      "comment_updated_at": "2026-07-02T21:40:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawhub",
-      "issue_number": 2948,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T09:26:43.395Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2407:5202840889:2026-08-06T09:29:18Z:re_review",
       "comment_id": "5202840889",
@@ -32242,6 +32215,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119970:5206202628:2026-08-06T14:39:05Z:clawsweeper_needs_human",
+      "comment_id": "5206202628",
+      "comment_version_key": "5206202628:2026-08-06T14:39:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119970#issuecomment-5206202628",
+      "comment_created_at": "2026-08-06T14:39:05Z",
+      "comment_updated_at": "2026-08-06T14:39:05Z",
+      "comment_body_sha256": "3c25810997fc0d4cd6aabc7874c6f8846a5de6dd39a27196db13d165c1038364",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119970,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and static checks, but contains no redacted after-fix runtime, transport, or live-output evidence for the changed err... (sha=d87e52ac98afce246d71f032934888606deaba28)",
+      "expected_head_sha": "d87e52ac98afce246d71f032934888606deaba28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T14:39:49.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-lmstudio-redact-error-body",
+        "head_sha": "d87e52ac98afce246d71f032934888606deaba28",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
