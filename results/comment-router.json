@@ -1,6 +1,87 @@
 {
-  "updated_at": "2026-08-06T14:32:21.830Z",
+  "updated_at": "2026-08-06T14:32:09.708Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2407:5202386029:2026-08-06T08:41:42Z:re_review",
+      "comment_id": "5202386029",
+      "comment_version_key": "5202386029:2026-08-06T08:41:42Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5202386029",
+      "comment_created_at": "2026-08-06T08:41:42Z",
+      "comment_updated_at": "2026-08-06T08:41:42Z",
+      "comment_body_sha256": "0f66a6a1f7156789ff05022c8396c45cc4ebe0003bce8f6237823eec24aff3da",
+      "source_delivery_id": "a6b5d630-9172-11f1-9e0f-9622d3aeae9b",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2407,
+      "author": "chenow9",
+      "author_id": 302014081,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T08:42:18.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/grok-local-token-cost",
+        "head_sha": "8ffe623d8629f8461b4627e20fd3eda1731db87e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119319:5184741238:2026-08-06T08:41:39Z:clawsweeper_needs_human",
+      "comment_id": "5184741238",
+      "comment_version_key": "5184741238:2026-08-06T08:41:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119319#issuecomment-5184741238",
+      "comment_created_at": "2026-08-04T21:18:43Z",
+      "comment_updated_at": "2026-08-06T08:41:39Z",
+      "comment_body_sha256": "0969e5cd6383560e637e13ac0078951f27ad0f7e3827178b96b4916674858040",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119319,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes earlier-head terminal output and an in-process raw-SDK test, but no inspectable exact-head OpenClaw configured-runtime...; Review finding: [P2] Transfer catalog-use accounting to the fallback session — src/agents/agent-bundle-mcp-runtime.ts:917-918 - [medium] Authorize and inspect the v2 dependency gr... (sha=b3049dec61032d10d1f7e33caadd8d65a01167ef)",
+      "expected_head_sha": "b3049dec61032d10d1f7e33caadd8d65a01167ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T08:42:18.489Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "mcp-v2-stateless",
+        "head_sha": "b3049dec61032d10d1f7e33caadd8d65a01167ef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:57:4713045624:2026-08-06T08:42:42Z:clawsweeper_auto_repair",
       "comment_id": "4713045624",
@@ -32429,87 +32510,6 @@
       "status": "skipped",
       "processed_at": "2026-08-06T14:32:09.129Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119851:5201222909:2026-08-06T14:31:05Z:clawsweeper_needs_human",
-      "comment_id": "5201222909",
-      "comment_version_key": "5201222909:2026-08-06T14:31:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119851#issuecomment-5201222909",
-      "comment_created_at": "2026-08-06T06:36:03Z",
-      "comment_updated_at": "2026-08-06T14:31:05Z",
-      "comment_body_sha256": "9e8dabf87c0a1f76a6cb76708914db322959dda178b3317a89ff71feb54c46e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119851,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep repeated-request evidence core-owned (P1)** - recordRepeatedRequestObservation accepts every model.call.started, but plugins can emit that public diagnostic event through both normal and trusted SDK emitter...; Review finding: [P1] Keep repeated-request evidence core-owned — src/logging/diagnostic-run-activity.ts:307 - [P1] Preserve the recovery fence when cancellation throws — src/auto-... (sha=cf8f629f3f172488fc6846f3f00ce371e876e910)",
-      "expected_head_sha": "cf8f629f3f172488fc6846f3f00ce371e876e910",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T14:32:19.687Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-119009-recovery",
-        "head_sha": "cf8f629f3f172488fc6846f3f00ce371e876e910",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119780:5206082817:2026-08-06T14:31:45Z:re_review",
-      "comment_id": "5206082817",
-      "comment_version_key": "5206082817:2026-08-06T14:31:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119780#issuecomment-5206082817",
-      "comment_created_at": "2026-08-06T14:31:45Z",
-      "comment_updated_at": "2026-08-06T14:31:45Z",
-      "comment_body_sha256": "0ea2b3c008e425ed11c1d541ecd660d98e007e89de892647c4742fe52721ff04",
-      "source_delivery_id": "8d8b9d30-91a3-11f1-81c4-83a4a68f5be0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119780,
-      "author": "metaforismo",
-      "author_id": 39646696,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T14:32:19.985Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qqbot-actionable-errors",
-        "head_sha": "9fd8dfead8928ebe2712cf510548b7cf6a600169",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
