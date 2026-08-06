@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:04:10.987Z",
+  "updated_at": "2026-08-06T00:04:11.897Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113422:5195969188:2026-08-05T18:50:50Z:re_review",
-      "comment_id": "5195969188",
-      "comment_version_key": "5195969188:2026-08-05T18:50:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113422#issuecomment-5195969188",
-      "comment_created_at": "2026-08-05T18:50:50Z",
-      "comment_updated_at": "2026-08-05T18:50:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113422,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/standard-hosting-profiles-owner-adoption",
-        "head_sha": "bcc53177ec49f853a9068451d5eda443cee0f15f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119705:5195979996:2026-08-05T18:51:32Z:re_review",
       "comment_id": "5195979996",
@@ -32499,6 +32452,39 @@
         "kind": "pull_request",
         "branch": "automation/runtime-tool-updates",
         "head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:13:5164757534:2026-08-06T00:03:36Z:clawsweeper_needs_human",
+      "comment_id": "5164757534",
+      "comment_version_key": "5164757534:2026-08-06T00:03:36Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/13#issuecomment-5164757534",
+      "comment_created_at": "2026-08-03T09:41:29Z",
+      "comment_updated_at": "2026-08-06T00:03:36Z",
+      "comment_body_sha256": "63a14460f014c81ff6bfcfa0d7b779451b3d09f6d25704fad0b26df128f718a3",
+      "repo": "openclaw/babelfish",
+      "issue_number": 13,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is indicated; the clean dependency update needs only ordinary maintainer approval. (sha=4688339ec9e76322567a955120e9dff21681181b)",
+      "expected_head_sha": "4688339ec9e76322567a955120e9dff21681181b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:04:11.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-minor-and-patch-2002b58cc1",
+        "head_sha": "4688339ec9e76322567a955120e9dff21681181b",
         "cluster_id": null,
         "job_path": null
       }
