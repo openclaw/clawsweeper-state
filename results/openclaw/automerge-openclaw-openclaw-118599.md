@@ -2,21 +2,21 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118599"
 mode: "autonomous"
-run_id: "31106677961"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31106677961"
-head_sha: "daf339e6d1d35d6246ffd2bfd3aae5f61342ad32"
+run_id: "31129468571"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31129468571"
+head_sha: "3f368a3e394d76c31584fce700cee9a62485cb66"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-06T14:34:02.911Z"
+published_at: "2026-08-06T23:37:20.407Z"
 canonical: "#118599"
 canonical_issue: null
 canonical_pr: "#118599"
 actions_total: 1
 fix_executed: 0
-fix_failed: 0
-fix_blocked: 0
+fix_failed: 1
+fix_blocked: 1
 apply_executed: 0
-apply_blocked: 1
+apply_blocked: 0
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31106677961](https://github.com/openclaw/clawsweeper/actions/runs/31106677961)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31129468571](https://github.com/openclaw/clawsweeper/actions/runs/31129468571)
 
 Workflow conclusion: success
 
@@ -43,10 +43,10 @@ Make PR #118599 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 | --- | ---: |
 | Worker actions | 1 |
 | Fix executed | 0 |
-| Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix failed | 1 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
-| Apply blocked | 1 |
+| Apply blocked | 0 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,13 +54,15 @@ Make PR #118599 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/118599 |  |  |
+| repair_contributor_branch | failed |  |  | Codex /review did not pass after final base synchronization: One current-diff user-visible inconsistency remains; otherwise the lock, backup, security, and Fly upgrade changes are narrow and the recorded changed-surface proof is sufficient. |
+| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: One current-diff user-visible inconsistency remains; otherwise the lock, backup, security, and Fly upgrade changes are narrow and the recorded changed-surface proof is sufficient. |
+| automerge_repair_outcome_comment | updated | #118599 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118599 | merge_canonical | blocked | fix_pr | autofix-only job cannot merge |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 

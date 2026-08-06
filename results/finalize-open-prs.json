@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T23:22:33.894Z",
+  "generated_at": "2026-08-06T23:39:29.380Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
@@ -10,7 +10,7 @@
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 11,
     "needs_review": 0,
     "needs_merge_preflight": 17,
     "needs_result_backfill": 0
@@ -34,17 +34,26 @@
       "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
       "cluster_id": "issue-openclaw-openclaw-119962",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-06T23:07:37Z",
+      "updated_at": "2026-08-06T23:29:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 2,
+        "total": 97,
         "counts": {
-          "SKIPPED": 2
+          "SUCCESS": 71,
+          "SKIPPED": 21,
+          "FAILURE": 4,
+          "QUEUED": 1
         },
-        "blockers": []
+        "blockers": [
+          "CI / checks-ui-e2e (1/4):FAILURE",
+          "CI / checks-ui-e2e (3/4):FAILURE",
+          "CI / checks-node-compact-large-1:FAILURE",
+          "CI / checks-node-compact-large-3:FAILURE",
+          "CI / openclaw/ci-gate:QUEUED"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -93,9 +102,10 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-ui-e2e (1/4):FAILURE; CI / checks-ui-e2e (3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 119975,
