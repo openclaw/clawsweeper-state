@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:46:28.440Z",
+  "updated_at": "2026-08-06T05:46:30.103Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5156328006:2026-08-02T07:49:47Z:re_review",
-      "comment_id": "5156328006",
-      "comment_version_key": "5156328006:2026-08-02T07:49:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5156328006",
-      "comment_created_at": "2026-08-02T07:49:47Z",
-      "comment_updated_at": "2026-08-02T07:49:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T02:05:46.983Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5156359824:2026-08-02T07:55:20Z:re_review",
       "comment_id": "5156359824",
@@ -31754,6 +31727,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119837:5200859848:2026-08-06T05:45:58Z:clawsweeper_auto_repair",
+      "comment_id": "5200859848",
+      "comment_version_key": "5200859848:2026-08-06T05:45:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119837#issuecomment-5200859848",
+      "comment_created_at": "2026-08-06T05:45:58Z",
+      "comment_updated_at": "2026-08-06T05:45:58Z",
+      "comment_body_sha256": "5bfd8044c0e12124f4ceeff8d8ce8ec5d7143b44c240db7b3073f19a7beb0417",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=14fda68c54b86df7c41f33ca35e5d63f6d5105fc)",
+      "expected_head_sha": "14fda68c54b86df7c41f33ca35e5d63f6d5105fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T05:46:30.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/steer-fallback-fifo-admission",
+        "head_sha": "14fda68c54b86df7c41f33ca35e5d63f6d5105fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
