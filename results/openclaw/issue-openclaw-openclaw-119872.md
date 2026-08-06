@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119872"
 mode: "autonomous"
-run_id: "31086041239"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31086041239"
+run_id: "31086810734"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31086810734"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-06T08:50:56.712Z"
+published_at: "2026-08-06T08:59:59.033Z"
 canonical: "https://github.com/openclaw/openclaw/issues/119872"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/119872"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31086041239](https://github.com/openclaw/clawsweeper/actions/runs/31086041239)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31086810734](https://github.com/openclaw/clawsweeper/actions/runs/31086810734)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/119872
 
 ## Summary
 
-No implementation PR is justified on current main f99b6a48: the unsafe Code Mode failure path intentionally terminates the inner tool loop, then the embedded-run owner performs a tools-disabled settled-turn finalization to produce a visible, failure-honest assistant reply. The reported silent outcome needs a fresh reproduction proving that this outer finalizer was bypassed, unavailable, or failed.
+No implementation PR is justified on current main f99b6a48. Unsafe Code Mode failures intentionally stop the inner tool loop, while the embedded-run owner performs a tools-disabled settled-turn finalization that produces a failure-honest visible reply. A new fix needs a current reproduction showing that this finalizer was bypassed, unavailable, or failed.
 
 ## Impact
 
@@ -66,7 +66,7 @@ No implementation PR is justified on current main f99b6a48: the unsafe Code Mode
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119872 | keep_canonical | planned | canonical | Keep the issue open for a concrete current reproduction, but do not create a speculative PR that removes the side-effect safety boundary. |
+| #119872 | keep_canonical | planned | canonical | The issue remains the canonical report, but current main already has the owner-level repair. Changing the inner terminate flag would weaken side-effect safety and is not the best fix. |
 
 ## Needs Human
 
