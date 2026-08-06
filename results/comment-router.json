@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T13:23:56.466Z",
+  "updated_at": "2026-08-06T13:25:53.806Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:98458:5169322211:2026-08-03T16:56:43Z:re_review",
-      "comment_id": "5169322211",
-      "comment_version_key": "5169322211:2026-08-03T16:56:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98458#issuecomment-5169322211",
-      "comment_created_at": "2026-08-03T16:56:43Z",
-      "comment_updated_at": "2026-08-03T16:56:43Z",
-      "comment_body_sha256": "0d0c8b4a1cf54804a9f8ea8d41bfbef0e13af269a6e3e1b6ba0fe6007751e3a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98458,
-      "author": "areslp",
-      "author_id": 100579,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T07:38:41.973Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:98458:5174226174:2026-08-04T03:20:58Z:re_review",
       "comment_id": "5174226174",
@@ -32553,6 +32526,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-06T13:16:34Z:clawsweeper_needs_human",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-06T13:16:34Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-06T13:16:34Z",
+      "comment_body_sha256": "9742c066166a8e911cba890662d3b5129a932590dd1656943979c48daeeae4fb",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until the release commit is merged, main’s package version and changelog remain at 0.3.20 while the v0.3.21 artifact is already published. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T13:25:53.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
