@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:21:03.303Z",
+  "updated_at": "2026-08-06T00:21:15.251Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94383:4737585384:2026-08-05T18:55:05Z:clawsweeper_needs_human",
-      "comment_id": "4737585384",
-      "comment_version_key": "4737585384:2026-08-05T18:55:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94383#issuecomment-4737585384",
-      "comment_created_at": "2026-06-18T03:31:56Z",
-      "comment_updated_at": "2026-08-05T18:55:05Z",
-      "comment_body_sha256": "d8884b306e6fbda24fb2e58bc9b2ce4dc20d22404a3ef9b2f58c387b928d9de8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94383,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not forward raw workspace paths as approval keys (P2)** - workspaceScope is an absolute local path, and this string is placed in allowAlwaysKey. The gateway protocol explicitly carries that field into reviewe...; Review finding: [P2] Do not forward raw workspace paths as approval keys — src/skills/workshop/policy.ts:60 - [P2] Define a lifecycle owner for durable approvals — src/infra/plugi... (sha=37ae68754d7a6809c8a87b0c0edb58bac86aef51)",
-      "expected_head_sha": "37ae68754d7a6809c8a87b0c0edb58bac86aef51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T19:26:56.346Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "aknight/skill-workshop-allow-always",
-        "head_sha": "37ae68754d7a6809c8a87b0c0edb58bac86aef51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116373:5130005792:2026-08-05T18:36:13Z:clawsweeper_auto_repair",
       "comment_id": "5130005792",
@@ -32293,6 +32260,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:357:5192828623:2026-08-06T00:08:53Z:clawsweeper_auto_repair",
+      "comment_id": "5192828623",
+      "comment_version_key": "5192828623:2026-08-06T00:08:53Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/357#issuecomment-5192828623",
+      "comment_created_at": "2026-08-05T14:08:31Z",
+      "comment_updated_at": "2026-08-06T00:08:53Z",
+      "comment_body_sha256": "f4a96b51327a4432be17ef98fdb1f4e81e3c21ca5aae6738eaaa4c816b1b454e",
+      "repo": "steipete/oracle",
+      "issue_number": 357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=794b46893299dfff6c5826126f117f759d596412)",
+      "expected_head_sha": "794b46893299dfff6c5826126f117f759d596412",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:21:15.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-german-effort-labels",
+        "head_sha": "794b46893299dfff6c5826126f117f759d596412",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
