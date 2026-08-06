@@ -67,24 +67,24 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the SecretRef reference-doc drift regression. Use buildSecretRefCredentialMatrix() and the source-tree registry as the sole source to generate the checked-in JSON matrix and only the marked Markdown credential-list blocks. Add an idempotent writer and paired check command following current repository conventions; retain parity coverage and add focused drift/idempotence tests. Compare the release implementation before restoring behavior, and do not change SecretRef eligibility, runtime resolution, config/defaults, or CHANGELOG. Related prior attempts: https://github.com/openclaw/openclaw/pull/85969, https://github.com/openclaw/openclaw/pull/89142, https://github.com/openclaw/openclaw/pull/91612.
+Repair the existing SecretRef docs drift boundary without changing SecretRef runtime resolution, credential eligibility, config shape, or plugin contracts. Use `buildSecretRefCredentialMatrix()` as the sole data source; add one shared formatter/generator that writes the matrix JSON and the two Markdown marker blocks, expose documented `gen:secretref-docs` and `check:secretref-docs` commands, wire the check into the appropriate preflight, and make parity tests consume the formatter rather than duplicate formatting policy. Add focused generator/check regression coverage, preserve surrounding Markdown prose, and include release-note context in the PR body without editing CHANGELOG.md. Use the closed attempts only as reference: https://github.com/openclaw/openclaw/pull/85969, https://github.com/openclaw/openclaw/pull/89142, https://github.com/openclaw/openclaw/pull/91612.
 
 Likely files:
 
 - src/secrets/credential-matrix.ts
-- src/secrets/target-registry-data.ts
 - src/secrets/target-registry.docs.test.ts
-- src/secrets/credential-matrix-docs.test.ts
 - scripts/generate-secretref-credential-matrix.ts
+- scripts/check.mjs
 - package.json
-- docs/reference/secretref-user-supplied-credentials-matrix.json
 - docs/reference/secretref-credential-surface.md
+- docs/reference/secretref-user-supplied-credentials-matrix.json
 
 Validation:
 
+- pnpm gen:secretref-docs
+- pnpm check:secretref-docs
 - node scripts/run-vitest.mjs src/secrets/target-registry.docs.test.ts src/secrets/credential-matrix-docs.test.ts
-- pnpm gen:secretref-docs && pnpm check:secretref-docs
-- git diff --check
+- pnpm check:changed -- src/secrets/credential-matrix.ts src/secrets/target-registry.docs.test.ts scripts/generate-secretref-credential-matrix.ts scripts/check.mjs package.json docs/reference/secretref-credential-surface.md docs/reference/secretref-user-supplied-credentials-matrix.json
 
 ## Operator Prompt
 
