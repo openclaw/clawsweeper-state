@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T10:27:14.060Z",
+  "updated_at": "2026-08-06T10:28:03.080Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104160:5188702737:2026-08-05T07:11:27Z:re_review",
-      "comment_id": "5188702737",
-      "comment_version_key": "5188702737:2026-08-05T07:11:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104160#issuecomment-5188702737",
-      "comment_created_at": "2026-08-05T07:11:27Z",
-      "comment_updated_at": "2026-08-05T07:11:27Z",
-      "comment_body_sha256": "1eafcf2f90f40c12d9de5d678ef1dfe52fc134c4030abf21e9141c9d191b5162",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104160,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 3f95c85a3656ae3bf37bc7d278b32d280db1da17. repaired the docs slice after the #104159 restack: kept docs_map publish/package-owned, normalized private command gates in the command reference generator, preserved generated docs for the live node cli flags, capped command prompt guidance, and hid host cli routes in code mode. wsl proof: targeted vitest stack passed 4 shards / 114 tests; docs:commands:check, oxfmt --check, git diff --check, and pnpm deadcode:exports passed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:44:15.239Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104160:5193139652:2026-08-05T14:34:44Z:re_review",
       "comment_id": "5193139652",
@@ -32623,6 +32596,52 @@
         "kind": "pull_request",
         "branch": "mcp-v2-stateless",
         "head_sha": "a903c0075b5d5248aaad31bd6275c36bfd5a4b4d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119087:5203424755:2026-08-06T10:27:30Z:re_review",
+      "comment_id": "5203424755",
+      "comment_version_key": "5203424755:2026-08-06T10:27:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/119087#issuecomment-5203424755",
+      "comment_created_at": "2026-08-06T10:27:30Z",
+      "comment_updated_at": "2026-08-06T10:27:30Z",
+      "comment_body_sha256": "4618960dc63d624c9c6c014f89b41c3b24116a9530d0f5260fe6ba1bd5528077",
+      "source_delivery_id": "6eb85960-9181-11f1-8541-7a72c3606621",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119087,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review re-evaluate implementation eligibility using the maintainer decision above. if no concrete blocker remains, emit work_candidate=queue_fix_pr, work_status=candidate, work_confidence=high, a repair work prompt, likely files, and validation; otherwise name the exact blocker and keep the gate",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T10:28:00.441Z",
+      "target": {
+        "kind": "issue",
         "cluster_id": null,
         "job_path": null
       },
