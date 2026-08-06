@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T03:49:59.512Z",
+  "generated_at": "2026-08-06T04:06:19.904Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31065728994.json",
+  "run_record": "results/runs/31068701246.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31065728994",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31068701246",
+  "considered": 2,
+  "pending": 1,
+  "sent": 1,
   "failed": 0,
-  "skipped": 0,
-  "actions": []
+  "skipped": 1,
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#119717:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#119717",
+      "title": "fix(telegram): prioritize configured commands in capped menus",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "skipped",
+      "reason": "notification already sent",
+      "run_id": "31068701246",
+      "cluster_id": "automerge-openclaw-openclaw-119717",
+      "hook_run_id": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119717"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#119717:repair_contributor_branch:pushed:4562fe53ce106fe0ff28c8d71f7a005b3ff3ebbb",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#119717",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31068701246",
+      "cluster_id": "automerge-openclaw-openclaw-119717",
+      "hook_run_id": "fe9dbe5e-d912-40e8-923a-44acee5432d3",
+      "url": "https://github.com/openclaw/openclaw/pull/119717"
+    }
+  ]
 }
