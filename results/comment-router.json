@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T16:58:03.794Z",
+  "updated_at": "2026-08-06T19:10:24.249Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113361:5071842814:2026-08-06T09:03:37Z:clawsweeper_auto_repair",
-      "comment_id": "5071842814",
-      "comment_version_key": "5071842814:2026-08-06T09:03:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113361#issuecomment-5071842814",
-      "comment_created_at": "2026-07-24T16:03:31Z",
-      "comment_updated_at": "2026-08-06T09:03:37Z",
-      "comment_body_sha256": "0f4fe78a4795c0f0c657cacf14904f365177d7cf837fbe2cdeeee8b9ea3f3b89",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3802763c97c4e12cc853a9c827da6ca6d542028c)",
-      "expected_head_sha": "3802763c97c4e12cc853a9c827da6ca6d542028c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T10:40:29.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/102113-nondeliverable-v2",
-        "head_sha": "3802763c97c4e12cc853a9c827da6ca6d542028c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112388:5127638013:2026-08-06T08:46:47Z:clawsweeper_auto_repair",
       "comment_id": "5127638013",
@@ -32057,6 +32024,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112896:5207750436:2026-08-06T17:17:22Z:re_review",
+      "comment_id": "5207750436",
+      "comment_version_key": "5207750436:2026-08-06T17:17:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5207750436",
+      "comment_created_at": "2026-08-06T17:17:22Z",
+      "comment_updated_at": "2026-08-06T17:17:22Z",
+      "comment_body_sha256": "7a6b65f3402dbc7e6a6e124e58828961b55ac917fc3a10f7fb0e7e3ca8c98955",
+      "source_delivery_id": "b092a0a0-91ba-11f1-9b6b-e0663a492f7c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112896,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 27ca7ca96736651cbdb57d1bcbb63203aa2a2f76. this is a rebase-only refresh onto upstream/main 9c2dbf6500f16cafc6c68edbc3144b9acf06fe56 with restored-admission conflict resolution; local diff/conflict-marker checks passed, package-backed local vitest was blocked by private feed auth so github ci is the current materialized proof",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T19:10:21.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-restored-admission",
+        "head_sha": "0c2ec9392063227c93c1d3ab516d195b2de72c8e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
