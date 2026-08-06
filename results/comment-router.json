@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:27:46.634Z",
+  "updated_at": "2026-08-06T05:28:38.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:103:4639469443:2026-08-06T00:48:36Z:clawsweeper_auto_repair",
-      "comment_id": "4639469443",
-      "comment_version_key": "4639469443:2026-08-06T00:48:36Z",
-      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/103#issuecomment-4639469443",
-      "comment_created_at": "2026-06-06T15:37:18Z",
-      "comment_updated_at": "2026-08-06T00:48:36Z",
-      "comment_body_sha256": "bb8aef7cec1ea8e33f3ddd130fb68fd56b95179679178f61bba78c28e0e0774f",
-      "repo": "openclaw/nix-openclaw",
-      "issue_number": 103,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21)",
-      "expected_head_sha": "3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T00:50:00.665Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-runtime-path-cleanup",
-        "head_sha": "3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1234:5195560512:2026-08-06T00:49:42Z:clawsweeper_auto_repair",
       "comment_id": "5195560512",
@@ -31620,6 +31587,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116792:5200740669:2026-08-06T05:28:02Z:re_review",
+      "comment_id": "5200740669",
+      "comment_version_key": "5200740669:2026-08-06T05:28:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116792#issuecomment-5200740669",
+      "comment_created_at": "2026-08-06T05:28:02Z",
+      "comment_updated_at": "2026-08-06T05:28:02Z",
+      "comment_body_sha256": "6450fb00226a328d128737c13d61d32799d1838d1477d6e0d1813fd7e460ce4d",
+      "source_delivery_id": "989267f0-9157-11f1-9630-3c399291ab60",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116792,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 5d2c38b89fe69e6d386a3d6fe8fcd0a679cb8799 after the prior lease expired. the requested nonzero-timeout macos value/null/legacy boundary proof is at gatewaynodesession.swift:1371-1383, gatewaynodesessiontests.swift:2457-2511, macnodehostworker.swift:120-153, and macnodehostworkertests.swift:241-279. current main merge-tree is clean. please publish a fresh durable review and reassess the prior rank-up moves",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T05:28:35.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-1-node-contract",
+        "head_sha": "5d2c38b89fe69e6d386a3d6fe8fcd0a679cb8799",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
