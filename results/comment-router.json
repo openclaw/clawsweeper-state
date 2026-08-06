@@ -1,87 +1,6 @@
 {
-  "updated_at": "2026-08-06T04:39:06.076Z",
+  "updated_at": "2026-08-06T04:39:28.719Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118008:5158543101:2026-08-05T23:35:02Z:clawsweeper_needs_human",
-      "comment_id": "5158543101",
-      "comment_version_key": "5158543101:2026-08-05T23:35:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5158543101",
-      "comment_created_at": "2026-08-02T14:30:56Z",
-      "comment_updated_at": "2026-08-05T23:35:02Z",
-      "comment_body_sha256": "afe6a7c843fdbcc55bbba7e9653476535ba04ada9c6d9631d703c15b0eee3cac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Authorize the exact Crabline dependency update** - The PR changes the Crabline integrity pin and bypasses the normal release-age hold for 0.1.13; direct package inspection was unavailab...; Review finding: [medium] Authorize the exact Crabline dependency update — extensions/qa-lab/package.json:10 (sha=eccec816a14545c3293792d99bcd3a0e5cc44f55)",
-      "expected_head_sha": "eccec816a14545c3293792d99bcd3a0e5cc44f55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-05T23:41:32.906Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-server-terminology",
-        "head_sha": "eccec816a14545c3293792d99bcd3a0e5cc44f55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111970:5198633282:2026-08-05T23:40:56Z:re_review",
-      "comment_id": "5198633282",
-      "comment_version_key": "5198633282:2026-08-05T23:40:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111970#issuecomment-5198633282",
-      "comment_created_at": "2026-08-05T23:40:56Z",
-      "comment_updated_at": "2026-08-05T23:40:56Z",
-      "comment_body_sha256": "8fd78314c8ead28a34d0bfbc06a754721686f98be1259606d12a7d1d68c4125f",
-      "source_delivery_id": "1b6ee300-9127-11f1-8650-10a511df0f41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111970,
-      "author": "aspalagin",
-      "author_id": 263096044,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T23:41:35.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/foreground-fence-bounded-wait",
-        "head_sha": "5276d8eb931e30c2e9b7989a09ce9949f6c398c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:68:5182423456:2026-08-05T23:41:00Z:clawsweeper_auto_repair",
       "comment_id": "5182423456",
@@ -31843,6 +31762,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119706:5197151722:2026-08-06T04:37:58Z:clawsweeper_needs_human",
+      "comment_id": "5197151722",
+      "comment_version_key": "5197151722:2026-08-06T04:37:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119706#issuecomment-5197151722",
+      "comment_created_at": "2026-08-05T20:46:56Z",
+      "comment_updated_at": "2026-08-06T04:37:58Z",
+      "comment_body_sha256": "40bd788b7450165b437b9830302a1c4ea74fca1bdf7b272bff7ef786a1ba210a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main; GitHub reports it cleanly mergeable, but refresh the exact-head check if it is rebased before merge. (sha=740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb)",
+      "expected_head_sha": "740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T04:39:28.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-capture-stalled-read-deadline",
+        "head_sha": "740c21f832b4d1fa9077ade8ea0dc87b5bcc6eeb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119706:5198716355:2026-08-05T23:51:24Z:re_review",
+      "comment_id": "5198716355",
+      "comment_version_key": "5198716355:2026-08-05T23:51:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119706#issuecomment-5198716355",
+      "comment_created_at": "2026-08-05T23:51:24Z",
+      "comment_updated_at": "2026-08-05T23:51:24Z",
+      "comment_body_sha256": "fbb9a973cf833a1180a26c0dc5b43aacd1675b005dd3562ba50a186685894a14",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119706,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T04:39:28.719Z",
+      "target": null
     }
   ]
 }
