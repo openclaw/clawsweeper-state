@@ -2,15 +2,15 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T17:34:10.876Z",
+  "generated_at": "2026-08-06T23:22:33.894Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 1,
-    "needs_rebase": 0,
+    "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 11,
+    "needs_checks": 10,
     "needs_review": 0,
     "needs_merge_preflight": 17,
     "needs_result_backfill": 0
@@ -31,35 +31,20 @@
       "title": "fix(workboard): include operator notes in Start prompt",
       "url": "https://github.com/openclaw/openclaw/pull/119983",
       "branch": "clawsweeper/issue-openclaw-openclaw-119962",
-      "head_sha": "d0e62e6a5a75f434a5afe0e854614fc95304bee0",
+      "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
       "cluster_id": "issue-openclaw-openclaw-119962",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-06T15:30:51Z",
+      "updated_at": "2026-08-06T23:07:37Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 102,
+        "total": 2,
         "counts": {
-          "SKIPPED": 24,
-          "SUCCESS": 66,
-          "FAILURE": 12
+          "SKIPPED": 2
         },
-        "blockers": [
-          "CI / QA Smoke CI (profile 3/4):FAILURE",
-          "CI / checks-node-compact-large-1:FAILURE",
-          "CI / checks-node-compact-large-3:FAILURE",
-          "CI / checks-node-compact-large-6:FAILURE",
-          "CI / checks-node-compact-large-8:FAILURE",
-          "CI / checks-node-compact-small-12:FAILURE",
-          "CI / checks-node-compact-small-15:FAILURE",
-          "CI / checks-node-compact-small-16:FAILURE",
-          "CI / checks-node-compact-small-3:FAILURE",
-          "CI / check-prompt-snapshots:FAILURE",
-          "CI / check-plugin-sdk-api-baseline:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -68,8 +53,21 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209715304",
+            "submitted_at": "2026-08-06T22:56:08Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209781669",
+            "submitted_at": "2026-08-06T23:07:36Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31111783081",
@@ -95,10 +93,9 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / QA Smoke CI (profile 3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 119975,
@@ -108,7 +105,7 @@
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-06T15:36:57Z",
+      "updated_at": "2026-08-06T22:09:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -129,13 +126,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5207031002",
             "submitted_at": "2026-08-06T15:36:49Z"
+          },
+          {
+            "source": "comment",
+            "author": "islandpreneur007",
+            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5208455053",
+            "submitted_at": "2026-08-06T19:10:25Z"
           }
         ]
       },
@@ -175,9 +178,9 @@
       "head_sha": "75ec5b0b7a01e068437c5e00db1638c1f2f79198",
       "cluster_id": "issue-openclaw-openclaw-119551",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
-      "updated_at": "2026-08-06T16:28:08Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "updated_at": "2026-08-06T23:06:48Z",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -196,43 +199,44 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119968#issuecomment-5207148439",
             "submitted_at": "2026-08-06T15:49:41Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119968#issuecomment-5209460496",
+            "submitted_at": "2026-08-06T22:09:34Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "31106840902",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31106840902",
-        "cluster_id": "issue-openclaw-openclaw-119551",
-        "published_at": "2026-08-06T14:39:15.156Z",
-        "workflow_conclusion": "success",
+        "run_id": "31128801689",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31128801689",
+        "cluster_id": "automerge-openclaw-openclaw-119968",
+        "published_at": "2026-08-06T23:20:10.569Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#119968",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(acp): pass configured binding owner model to runtime",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#119968",
+          "candidate_fix": "#119968",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 119901,
@@ -1199,7 +1203,7 @@
       "head_sha": "77277a61cc0b544f79a0095f534588f110b8d347",
       "cluster_id": "issue-openclaw-openclaw-119411",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119411.md",
-      "updated_at": "2026-08-06T14:39:42Z",
+      "updated_at": "2026-08-06T22:56:05Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
