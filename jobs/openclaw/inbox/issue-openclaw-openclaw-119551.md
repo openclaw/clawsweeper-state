@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair configured channel-to-ACP binding initialization so the owning OpenClaw agent's explicit `model.primary` reaches `initializeSession` as `runtimeOptions.model`. Resolve with `spec.agentId`, never `spec.acpAgentId`, because the latter selects only the external harness. Preserve no-explicit-model behavior, compare the desired model with persisted runtime metadata so changed configuration recreates the session, and add focused lifecycle regression cases. Do not add config/env options, fallbacks, or CHANGELOG.md edits; put release-note context in the PR body.
+Repair the configured ACP binding lifecycle for https://github.com/openclaw/openclaw/issues/119551. Resolve the explicit model from the owning `spec.agentId`, not `spec.acpAgentId`; pass it only when present as `runtimeOptions: { model }` with explicit-model provenance; and make ready-session matching recreate bindings when the explicit model differs or is removed. Preserve existing behavior when only `agents.defaults.model` exists. Add focused lifecycle regression tests for forwarding, no-default fallback, model drift/removal, and distinct owner-versus-harness IDs. Treat https://github.com/openclaw/openclaw/pull/119599 only as source material because it is closed unmerged and selects the wrong boundary. Do not add configuration, environment variables, runtime fallbacks, or changelog edits; stop if the repair requires a product decision.
 
 Likely files:
 
@@ -78,7 +78,8 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs src/acp/persistent-bindings.lifecycle.test.ts
-- Verify through the ACP manager/runtime boundary that a configured explicit model reaches runtime.ensureSession and a changed configured model reinitializes the binding.
+- node scripts/check-changed.mjs -- src/acp/persistent-bindings.lifecycle.ts src/acp/persistent-bindings.lifecycle.test.ts
+- Run an ACPX/OpenCode smoke that records the effective configured session model when a suitable isolated backend is available.
 
 ## Operator Prompt
 
