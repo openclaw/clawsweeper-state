@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:33:22.447Z",
+  "updated_at": "2026-08-06T05:33:47.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116793:5145334256:2026-07-31T16:48:55Z:re_review",
-      "comment_id": "5145334256",
-      "comment_version_key": "5145334256:2026-07-31T16:48:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5145334256",
-      "comment_created_at": "2026-07-31T16:48:55Z",
-      "comment_updated_at": "2026-07-31T16:48:55Z",
-      "comment_body_sha256": "cf7b0119ba416cbc510a8160f91f9021f128010817c2bc94871373320d7940da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116793,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T01:34:02.623Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116793:5150641628:2026-08-01T08:34:53Z:re_review",
       "comment_id": "5150641628",
@@ -31584,6 +31557,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-06T05:33:10Z:clawsweeper_needs_human",
+      "comment_id": "5148652773",
+      "comment_version_key": "5148652773:2026-08-06T05:33:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5148652773",
+      "comment_created_at": "2026-08-01T00:42:02Z",
+      "comment_updated_at": "2026-08-06T05:33:10Z",
+      "comment_body_sha256": "127d623b7a0f08182c2fe7e35d195f1e15ffc96227ac20e1d00286a9d8b82f44",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Skip credential setters during inspection (P1)** - Late in this review cycle: inspection passes a synthetic credential into normal provider selection, which can call plugin-defined credential setters before the...; Review finding: [P1] Skip credential setters during inspection — src/secrets/runtime-web-tools.ts:928 - [medium] Inspection can invoke plugin credential setters — src/secrets/runt... (sha=91e47c98c96d60232ae92c8e2abc9308a5592102)",
+      "expected_head_sha": "91e47c98c96d60232ae92c8e2abc9308a5592102",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T05:33:47.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "91e47c98c96d60232ae92c8e2abc9308a5592102",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
