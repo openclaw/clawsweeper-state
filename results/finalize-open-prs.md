@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-06T15:21:11.250Z
+Generated: 2026-08-06T17:34:10.876Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 18 |
+| open_prs | 17 |
 | ready_candidates | 0 |
 | security_hold | 1 |
 | needs_rebase | 0 |
 | mergeability_unknown | 0 |
-| needs_checks | 12 |
+| needs_checks | 11 |
 | needs_review | 0 |
-| needs_merge_preflight | 18 |
+| needs_merge_preflight | 17 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -30,9 +30,9 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | issue-openclaw-openclaw-119962 | MERGEABLE | BLOCKED | SKIPPED:24 SUCCESS:66 FAILURE:11 QUEUED:1; blockers:12 | needs_merge_state:BLOCKED, needs_checks:CI / QA Smoke CI (profile 3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | MERGEABLE | BLOCKED | SKIPPED:42 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
-| [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | MERGEABLE | BLOCKED | SKIPPED:43 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | issue-openclaw-openclaw-119962 | MERGEABLE | BEHIND | SKIPPED:24 SUCCESS:66 FAILURE:12; blockers:12 | needs_merge_state:BEHIND, needs_checks:CI / QA Smoke CI (profile 3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | MERGEABLE | BEHIND | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | issue-openclaw-openclaw-119884 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:39 SUCCESS:83 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | MERGEABLE | BEHIND | SKIPPED:51 SUCCESS:84 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | issue-openclaw-openclaw-119754 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
@@ -47,4 +47,3 @@ Status: report_only
 | [#119528](https://github.com/openclaw/openclaw/pull/119528) | fix(agents): timestamp recovered Claude CLI history | issue-openclaw-openclaw-94679 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:53 SUCCESS:84 FAILURE:2 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119512](https://github.com/openclaw/openclaw/pull/119512) | fix(sessions): reuse identities during target dedupe | issue-openclaw-openclaw-119440 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:87 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119500](https://github.com/openclaw/openclaw/pull/119500) | fix(memory): detect unindexed memory files in status | issue-openclaw-openclaw-119411 | MERGEABLE | BEHIND | CANCELLED:8 SKIPPED:60 SUCCESS:58; blockers:4 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#119367](https://github.com/openclaw/openclaw/pull/119367) | fix(memory-core): resume validated session transcript appends | issue-openclaw-openclaw-119350 | MERGEABLE | BEHIND | CANCELLED:7 SKIPPED:48 SUCCESS:55; blockers:5 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

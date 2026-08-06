@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T15:21:11.250Z",
-  "count": 18,
+  "generated_at": "2026-08-06T17:34:10.876Z",
+  "count": 17,
   "summary": {
-    "open_prs": 18,
+    "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 12,
+    "needs_checks": 11,
     "needs_review": 0,
-    "needs_merge_preflight": 18,
+    "needs_merge_preflight": 17,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,9 +34,9 @@
       "head_sha": "d0e62e6a5a75f434a5afe0e854614fc95304bee0",
       "cluster_id": "issue-openclaw-openclaw-119962",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-06T14:58:48Z",
+      "updated_at": "2026-08-06T15:30:51Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -44,8 +44,7 @@
         "counts": {
           "SKIPPED": 24,
           "SUCCESS": 66,
-          "FAILURE": 11,
-          "QUEUED": 1
+          "FAILURE": 12
         },
         "blockers": [
           "CI / QA Smoke CI (profile 3/4):FAILURE",
@@ -59,7 +58,7 @@
           "CI / checks-node-compact-small-3:FAILURE",
           "CI / check-prompt-snapshots:FAILURE",
           "CI / check-plugin-sdk-api-baseline:FAILURE",
-          "CI / openclaw/ci-gate:QUEUED"
+          "CI / openclaw/ci-gate:FAILURE"
         ]
       },
       "review_threads": {
@@ -95,7 +94,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_checks:CI / QA Smoke CI (profile 3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE",
         "needs_merge_preflight"
       ],
@@ -109,15 +108,15 @@
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-06T15:05:52Z",
+      "updated_at": "2026-08-06T15:36:57Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 126,
+        "total": 134,
         "counts": {
-          "SKIPPED": 42,
+          "SKIPPED": 50,
           "SUCCESS": 83,
           "NEUTRAL": 1
         },
@@ -130,8 +129,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5207031002",
+            "submitted_at": "2026-08-06T15:36:49Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31107016960",
@@ -156,7 +162,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -169,15 +175,15 @@
       "head_sha": "75ec5b0b7a01e068437c5e00db1638c1f2f79198",
       "cluster_id": "issue-openclaw-openclaw-119551",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
-      "updated_at": "2026-08-06T14:22:54Z",
+      "updated_at": "2026-08-06T16:28:08Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 126,
+        "total": 138,
         "counts": {
-          "SKIPPED": 43,
+          "SKIPPED": 55,
           "SUCCESS": 82,
           "NEUTRAL": 1
         },
@@ -190,8 +196,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119968#issuecomment-5207148439",
+            "submitted_at": "2026-08-06T15:49:41Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31106840902",
@@ -216,7 +229,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -1238,80 +1251,6 @@
           "title": "fix(memory): detect unindexed memory files in status",
           "idempotency_key": null,
           "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119367,
-      "title": "fix(memory-core): resume validated session transcript appends",
-      "url": "https://github.com/openclaw/openclaw/pull/119367",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119350",
-      "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
-      "cluster_id": "issue-openclaw-openclaw-119350",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119350.md",
-      "updated_at": "2026-08-05T22:43:33Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 110,
-        "counts": {
-          "CANCELLED": 7,
-          "SKIPPED": 48,
-          "SUCCESS": 55
-        },
-        "blockers": [
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119367#issuecomment-5185607290",
-            "submitted_at": "2026-08-04T23:09:27Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30955531366",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30955531366",
-        "cluster_id": "issue-openclaw-openclaw-119350",
-        "published_at": "2026-08-04T23:15:00.226Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119367",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(memory-core): resume validated session transcript appends",
-          "idempotency_key": null,
-          "reason": "checks are not clean: build-artifacts: IN_PROGRESS",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,
