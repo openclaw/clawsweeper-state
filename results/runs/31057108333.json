@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119578",
+  "mode": "autonomous",
+  "run_id": "31057108333",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31057108333",
+  "head_sha": "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md",
+  "published_at": "2026-08-06T00:33:49.946Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119578",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119578",
+  "canonical_pr": null,
+  "summary": "#119578 is a valid canonical performance bug. The shared SQLite recent-tail reader parses every maxLines candidate before applying its byte budget; a narrow metadata-first repair is planned. Opening the PR is blocked pending a fresh executor recheck because the preflight main SHA differs from this checkout's current shallow main snapshot, and this worker cannot write in its read-only workspace.",
+  "actions": [
+    {
+      "target": "#119578",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "A metadata-first selection at the SQLite transcript-reader owner is the narrow canonical repair; no config, cache, schema migration, or gateway-local workaround is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119578",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "Build a narrow credited PR from the current main after re-fetching the issue and base state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119578",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#119578",
+      "candidate_fix": null,
+      "reason": "The deterministic executor must re-fetch live issue state and current main, apply the artifact on clawsweeper/issue-openclaw-openclaw-119578, then run the listed proof before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119784",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119578",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119784",
+      "commit": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119578",
+      "pr": "https://github.com/openclaw/openclaw/pull/119784",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119784",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119784",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): avoid parsing excluded chat history payloads",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

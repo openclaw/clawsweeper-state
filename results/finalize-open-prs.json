@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T00:28:34.977Z",
+  "generated_at": "2026-08-06T00:34:50.136Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 14,
+    "needs_checks": 13,
     "needs_review": 0,
     "needs_merge_preflight": 17,
     "needs_result_backfill": 0
@@ -40,28 +40,13 @@
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 122,
         "counts": {
-          "SKIPPED": 36,
-          "SUCCESS": 70,
-          "IN_PROGRESS": 13,
+          "SKIPPED": 37,
+          "SUCCESS": 84,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS",
-          "CI / checks-windows-node-test:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -74,19 +59,32 @@
         "latest": []
       },
       "latest_record": {
-        "run_id": "31004599505",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31004599505",
+        "run_id": "31057108333",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31057108333",
         "cluster_id": "issue-openclaw-openclaw-119578",
-        "published_at": "2026-08-05T12:52:07.124Z",
-        "workflow_conclusion": "failure",
-        "apply_action": null
+        "published_at": "2026-08-06T00:33:49.946Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#119784",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(gateway): avoid parsing excluded chat history payloads",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / QA Smoke CI (profile 2/4):IN_PROGRESS; CI / checks-node-compact-large-5:IN_PROGRESS; CI / checks-node-compact-large-6:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 119778,
@@ -96,7 +94,7 @@
       "head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
       "cluster_id": "issue-openclaw-openclaw-119754",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119754.md",
-      "updated_at": "2026-08-05T23:54:28Z",
+      "updated_at": "2026-08-06T00:29:25Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -156,7 +154,7 @@
       "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
       "cluster_id": "issue-openclaw-openclaw-96692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-05T23:04:07Z",
+      "updated_at": "2026-08-06T00:30:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -460,17 +458,17 @@
       "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
       "cluster_id": "issue-openclaw-openclaw-89430",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-06T00:18:13Z",
+      "updated_at": "2026-08-06T00:34:00Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 112,
+        "total": 118,
         "counts": {
           "CANCELLED": 1,
+          "SKIPPED": 44,
           "SUCCESS": 72,
-          "SKIPPED": 38,
           "NEUTRAL": 1
         },
         "blockers": [
