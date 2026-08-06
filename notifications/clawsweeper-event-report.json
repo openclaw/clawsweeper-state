@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T23:45:04.618Z",
+  "generated_at": "2026-08-06T23:54:52.483Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31130027919.json",
+  "run_record": "results/runs/31128828754.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31130027919",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31128828754",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#119983:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#119983",
+      "title": "fix(workboard): include operator notes in Start prompt",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31128828754",
+      "cluster_id": "automerge-openclaw-openclaw-119983",
+      "hook_run_id": "0bf8e6b2-4335-431f-a603-4202117c6bfc",
+      "url": "https://github.com/openclaw/openclaw/pull/119983"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#119983:repair_contributor_branch:pushed:36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#119983",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31128828754",
+      "cluster_id": "automerge-openclaw-openclaw-119983",
+      "hook_run_id": "3a57dc80-9e5f-439b-a67d-74faafb399fc",
+      "url": "https://github.com/openclaw/openclaw/pull/119983"
+    }
+  ]
 }
