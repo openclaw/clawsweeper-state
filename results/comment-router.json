@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T13:28:07.865Z",
+  "updated_at": "2026-08-06T13:29:17.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113491:5077611573:2026-07-25T08:00:48Z:re_review",
-      "comment_id": "5077611573",
-      "comment_version_key": "5077611573:2026-07-25T08:00:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113491#issuecomment-5077611573",
-      "comment_created_at": "2026-07-25T08:00:48Z",
-      "comment_updated_at": "2026-07-25T08:00:48Z",
-      "comment_body_sha256": "ddbfbef443a0fb81f1abb9a6bb3ea95bff7752f8f1af2514c982ae51c8f7efc1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113491,
-      "author": "Glucksberg",
-      "author_id": 80581902,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T07:39:17.353Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119815:5199711690:2026-08-06T02:30:02Z:re_review",
       "comment_id": "5199711690",
@@ -32614,6 +32587,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:488:5179744694:2026-08-06T13:28:35Z:clawsweeper_needs_human",
+      "comment_id": "5179744694",
+      "comment_version_key": "5179744694:2026-08-06T13:28:35Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/488#issuecomment-5179744694",
+      "comment_created_at": "2026-08-04T13:29:29Z",
+      "comment_updated_at": "2026-08-06T13:28:35Z",
+      "comment_body_sha256": "9fbd78b3997da66c001bc023ea5f83e4c7b4d7766697183db772f1fd41f88ddf",
+      "repo": "openclaw/acpx",
+      "issue_number": 488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the frozen graph used by fresh installs for a direct runtime loader, including an optional @napi-rs/wasm-runtime 1.2.2 resolution; green CI does not substitute for mai... (sha=17c1d03840bec3db1ae609530c74df7856f9857e)",
+      "expected_head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T13:29:17.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-ec51b0fbd6",
+        "head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
