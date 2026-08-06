@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T06:29:20.674Z",
+  "updated_at": "2026-08-06T06:30:17.270Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1241:5199613781:2026-08-06T02:14:18Z:clawsweeper_needs_human",
-      "comment_id": "5199613781",
-      "comment_version_key": "5199613781:2026-08-06T02:14:18Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1241#issuecomment-5199613781",
-      "comment_created_at": "2026-08-06T02:14:18Z",
-      "comment_updated_at": "2026-08-06T02:14:18Z",
-      "comment_body_sha256": "cc1089988e7eb03a0464b8abeca6d8f713b3f4fd7998349332d8a109ca3d956a",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1241,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sparse-checkout users with an in-scope hidden path will now fail before sync instead of continuing with a partial manifest; this is the intended safety tradeoff and should re... (sha=6e15331d0bacc61e19f2423235e74d9e0b56c880)",
-      "expected_head_sha": "6e15331d0bacc61e19f2423235e74d9e0b56c880",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T02:15:01.661Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sparse-manifest-safety-20260806",
-        "head_sha": "6e15331d0bacc61e19f2423235e74d9e0b56c880",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-06T02:16:51Z:clawsweeper_auto_repair",
       "comment_id": "5160702307",
@@ -32076,6 +32043,54 @@
         "kind": "pull_request",
         "branch": "fix/auto-reply-pending-final-partial",
         "head_sha": "a4942c9a9357cd9f8a36514fc8a78dd7dcc64d38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118430:5201176233:2026-08-06T06:29:49Z:re_review",
+      "comment_id": "5201176233",
+      "comment_version_key": "5201176233:2026-08-06T06:29:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118430#issuecomment-5201176233",
+      "comment_created_at": "2026-08-06T06:29:49Z",
+      "comment_updated_at": "2026-08-06T06:29:49Z",
+      "comment_body_sha256": "41c614fef1012ee18ed164a2bcd708c06c3efd41b240d5d6cb51ab3833af4bb5",
+      "source_delivery_id": "39b865f0-9160-11f1-99e4-dea0d23d8b5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118430,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T06:30:15.490Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-install-linger-warning-107033",
+        "head_sha": "fd7c8732af398d2c1e039563380f1af7add79a6c",
         "cluster_id": null,
         "job_path": null
       },
