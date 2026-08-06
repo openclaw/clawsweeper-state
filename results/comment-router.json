@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:42:59.254Z",
+  "updated_at": "2026-08-06T11:43:20.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119162:5201168431:2026-08-06T06:28:43Z:re_review",
-      "comment_id": "5201168431",
-      "comment_version_key": "5201168431:2026-08-06T06:28:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119162#issuecomment-5201168431",
-      "comment_created_at": "2026-08-06T06:28:43Z",
-      "comment_updated_at": "2026-08-06T06:28:43Z",
-      "comment_body_sha256": "d28ae502a4c5b67248c2c7fee780ae2cc87b598a4bba20fb03a2d324c1f4f93b",
-      "source_delivery_id": "131ece70-9160-11f1-8625-10d7e5b44d8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119162,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T06:29:16.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-reply-pending-final-partial",
-        "head_sha": "a4942c9a9357cd9f8a36514fc8a78dd7dcc64d38",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118430:5201176233:2026-08-06T06:29:49Z:re_review",
-      "comment_id": "5201176233",
-      "comment_version_key": "5201176233:2026-08-06T06:29:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118430#issuecomment-5201176233",
-      "comment_created_at": "2026-08-06T06:29:49Z",
-      "comment_updated_at": "2026-08-06T06:29:49Z",
-      "comment_body_sha256": "41c614fef1012ee18ed164a2bcd708c06c3efd41b240d5d6cb51ab3833af4bb5",
-      "source_delivery_id": "39b865f0-9160-11f1-99e4-dea0d23d8b5f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118430,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T06:30:15.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-install-linger-warning-107033",
-        "head_sha": "fd7c8732af398d2c1e039563380f1af7add79a6c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119844:5200843549:2026-08-06T06:30:57Z:clawsweeper_auto_repair",
       "comment_id": "5200843549",
@@ -32910,6 +32814,66 @@
       "finding_id": null,
       "status": "skipped",
       "processed_at": "2026-08-06T11:42:59.253Z",
+      "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-06T11:41:41Z:clawsweeper_needs_human",
+      "comment_id": "5148652773",
+      "comment_version_key": "5148652773:2026-08-06T11:41:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5148652773",
+      "comment_created_at": "2026-08-01T00:42:02Z",
+      "comment_updated_at": "2026-08-06T11:41:41Z",
+      "comment_body_sha256": "18f25402e10830cc36c9cac7e250b478f0c6921bc40353598b5c878937cbc5a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing exec-provider configurations that would fail gateway startup will now be rejected earlier by host-local CLI validation and writes; operators must run those checks on the gate... (sha=1ddfdbf0f4942bfe91afb9982eda84bfa10927b2)",
+      "expected_head_sha": "1ddfdbf0f4942bfe91afb9982eda84bfa10927b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:43:20.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "1ddfdbf0f4942bfe91afb9982eda84bfa10927b2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117128:5200201969:2026-08-06T03:55:55Z:re_review",
+      "comment_id": "5200201969",
+      "comment_version_key": "5200201969:2026-08-06T03:55:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5200201969",
+      "comment_created_at": "2026-08-06T03:55:55Z",
+      "comment_updated_at": "2026-08-06T03:55:55Z",
+      "comment_body_sha256": "24fe3d80c1ae2741932f58a9b451ae93b25bb877ff179488cc34d9660e597dcc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1 addressed on `91e47c98`; please re-evaluate",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:43:20.580Z",
       "target": null
     }
   ]
