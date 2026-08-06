@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119884",
+  "mode": "autonomous",
+  "run_id": "31087096308",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31087096308",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119884.md",
+  "published_at": "2026-08-06T09:41:23.660Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119884",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119884",
+  "canonical_pr": null,
+  "summary": "Confirmed on main c67556df: the shared offline compactor VACUUMs and checkpoints but never ANALYZEs. The narrow fix is ready as a new PR artifact; local focused Vitest could not start because the read-only checkout lacks p-map.",
+  "actions": [
+    {
+      "target": "#119884",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119884",
+      "candidate_fix": null,
+      "reason": "The issue remains reproducible by source inspection and needs a narrow canonical offline-maintenance repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119884",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119884",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-119884."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/119901",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119884",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119901",
+      "commit": "792e4db741ecf70f6cdccb39e435fda59692e24a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119884",
+      "pr": "https://github.com/openclaw/openclaw/pull/119901",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/119901",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#119901",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(doctor): analyze SQLite databases after offline compaction",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
