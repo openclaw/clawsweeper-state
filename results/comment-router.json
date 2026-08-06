@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:39:43.306Z",
+  "updated_at": "2026-08-06T11:39:46.802Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119788:5200083218:2026-08-06T05:35:58Z:clawsweeper_auto_repair",
-      "comment_id": "5200083218",
-      "comment_version_key": "5200083218:2026-08-06T05:35:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119788#issuecomment-5200083218",
-      "comment_created_at": "2026-08-06T03:35:10Z",
-      "comment_updated_at": "2026-08-06T05:35:58Z",
-      "comment_body_sha256": "8f8fd81cb8975fd5c1f1d5311d157d74b2bea71340f94ffe9590c2a5c05f9ec7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119788,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0d8e739a826ea7c5b777494fc61a19ed31747fde)",
-      "expected_head_sha": "0d8e739a826ea7c5b777494fc61a19ed31747fde",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T05:44:25.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-status-yield-diagnostics",
-        "head_sha": "0d8e739a826ea7c5b777494fc61a19ed31747fde",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119818:5200128645:2026-08-06T04:40:01Z:clawsweeper_auto_repair",
       "comment_id": "5200128645",
@@ -33418,6 +33385,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118989:5172283604:2026-08-06T11:38:56Z:clawsweeper_needs_human",
+      "comment_id": "5172283604",
+      "comment_version_key": "5172283604:2026-08-06T11:38:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118989#issuecomment-5172283604",
+      "comment_created_at": "2026-08-03T22:09:49Z",
+      "comment_updated_at": "2026-08-06T11:38:56Z",
+      "comment_body_sha256": "a828d4a24465c6e4171e33ce09413badf755a9707cb629d553e7e53c5cb58832",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118989,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR drives the real shell script but replaces both security and codesign; attach redacted real Developer ID hash-selected timestamp output o... (sha=4d09189fcc8523e373c3f40755b2d86a508a2b64)",
+      "expected_head_sha": "4d09189fcc8523e373c3f40755b2d86a508a2b64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:39:46.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oss-find/118740-codesign-timestamp",
+        "head_sha": "4d09189fcc8523e373c3f40755b2d86a508a2b64",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
