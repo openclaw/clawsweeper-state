@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T13:38:00.586Z",
+  "updated_at": "2026-08-06T13:38:05.459Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119190:5202187773:2026-08-06T08:20:10Z:re_review",
-      "comment_id": "5202187773",
-      "comment_version_key": "5202187773:2026-08-06T08:20:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119190#issuecomment-5202187773",
-      "comment_created_at": "2026-08-06T08:20:10Z",
-      "comment_updated_at": "2026-08-06T08:20:10Z",
-      "comment_body_sha256": "5a0f33752d36954bd962ab9af9fa8df32e9214db090783a89aedc3c239a1932f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119190,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T08:39:43.908Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scale-rss-pressure-thresholds",
-        "head_sha": "b42717e2db49d479515d58ab905412ffbe78012a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97361:5202364729:2026-08-06T08:39:33Z:re_review",
       "comment_id": "5202364729",
@@ -32565,6 +32518,39 @@
         "kind": "pull_request",
         "branch": "fix/synology-hosted-media-903",
         "head_sha": "180d5ae709f7ac342052e3232cec6656856172ef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-06T13:33:18Z:clawsweeper_needs_human",
+      "comment_id": "5159399788",
+      "comment_version_key": "5159399788:2026-08-06T13:33:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
+      "comment_created_at": "2026-08-02T16:58:31Z",
+      "comment_updated_at": "2026-08-06T13:33:18Z",
+      "comment_body_sha256": "1b01b3ad5d055d393d5569d25a089cc955ed39becdccdc397d3b9904235a1570",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the privileged routing contract** - The new public assertion and manifest entitlement authorize an entitled bundled runtime to redirect Discord bot-token traffic, so their long-...; Review finding: [medium] Approve the privileged routing contract — src/plugin-sdk/runtime-store.ts:20 (sha=1f4e6618d8f035da02856b6808f816364546fd12)",
+      "expected_head_sha": "1f4e6618d8f035da02856b6808f816364546fd12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T13:38:05.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/discord-provider-endpoint-runtime",
+        "head_sha": "1f4e6618d8f035da02856b6808f816364546fd12",
         "cluster_id": null,
         "job_path": null
       }
