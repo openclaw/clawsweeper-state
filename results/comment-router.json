@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T10:28:03.080Z",
+  "updated_at": "2026-08-06T10:30:50.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104160:5193139652:2026-08-05T14:34:44Z:re_review",
-      "comment_id": "5193139652",
-      "comment_version_key": "5193139652:2026-08-05T14:34:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104160#issuecomment-5193139652",
-      "comment_created_at": "2026-08-05T14:34:44Z",
-      "comment_updated_at": "2026-08-05T14:34:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104160,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:44:15.239Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-06T04:42:39Z:clawsweeper_auto_repair",
       "comment_id": "4466829643",
@@ -32646,6 +32619,65 @@
         "job_path": null
       },
       "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1252:5203451081:2026-08-06T10:30:00Z:automerge",
+      "comment_id": "5203451081",
+      "comment_version_key": "5203451081:2026-08-06T10:30:00Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203451081",
+      "comment_created_at": "2026-08-06T10:30:00Z",
+      "comment_updated_at": "2026-08-06T10:30:00Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T10:30:41.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "4c4549db2a2b070de3d2ec68025180d45904afc8",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
