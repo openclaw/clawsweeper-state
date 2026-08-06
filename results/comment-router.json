@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T00:03:47.284Z",
+  "updated_at": "2026-08-06T00:03:56.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104018:5195540330:2026-08-05T18:12:43Z:re_review",
-      "comment_id": "5195540330",
-      "comment_version_key": "5195540330:2026-08-05T18:12:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104018#issuecomment-5195540330",
-      "comment_created_at": "2026-08-05T18:12:43Z",
-      "comment_updated_at": "2026-08-05T18:12:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104018,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-05T19:25:49.873Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/readiness-profiles-upstream",
-        "head_sha": "a8098928a6b4276a78e3b29c6db76f5aeaef2f9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112423:5195900911:2026-08-05T18:46:35Z:re_review",
       "comment_id": "5195900911",
@@ -32539,6 +32492,39 @@
         "kind": "pull_request",
         "branch": "fix/runtime-text-delta-origin",
         "head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:491:5194278499:2026-08-06T00:03:08Z:clawsweeper_auto_repair",
+      "comment_id": "5194278499",
+      "comment_version_key": "5194278499:2026-08-06T00:03:08Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/491#issuecomment-5194278499",
+      "comment_created_at": "2026-08-05T16:10:55Z",
+      "comment_updated_at": "2026-08-06T00:03:08Z",
+      "comment_body_sha256": "5ba74c3fe25dba354b529310db02729c1e2852bdb9773c4529be4cc615b0f080",
+      "repo": "openclaw/acpx",
+      "issue_number": 491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=10a9f8255fa9afdb6f33254570c33ae2b65bfd1e)",
+      "expected_head_sha": "10a9f8255fa9afdb6f33254570c33ae2b65bfd1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T00:03:56.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/489-reapply-pinned-model-on-set",
+        "head_sha": "10a9f8255fa9afdb6f33254570c33ae2b65bfd1e",
         "cluster_id": null,
         "job_path": null
       }
