@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T23:32:57.203Z",
+  "updated_at": "2026-08-06T23:33:17.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4999013510:2026-07-17T04:35:39Z:re_review",
-      "comment_id": "4999013510",
-      "comment_version_key": "4999013510:2026-07-17T04:35:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4999013510",
-      "comment_created_at": "2026-07-17T04:35:39Z",
-      "comment_updated_at": "2026-07-17T04:35:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T11:42:59.253Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5001958681:2026-07-17T10:13:20Z:re_review",
       "comment_id": "5001958681",
@@ -32849,6 +32822,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T23:32:57.203Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3431:5209946698:2026-08-06T23:32:31Z:clawsweeper_needs_human",
+      "comment_id": "5209946698",
+      "comment_version_key": "5209946698:2026-08-06T23:32:31Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3431#issuecomment-5209946698",
+      "comment_created_at": "2026-08-06T23:32:31Z",
+      "comment_updated_at": "2026-08-06T23:32:31Z",
+      "comment_body_sha256": "46751b9eb4b16e67e22e5717cf5c67552f852fbef49ea8d289815130d95b0a8a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3431,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore the Carapace integrity checksum (P1)** - This dependency group does not update @openclaw/carapace, yet the lockfile drops its existing sha512 field. Preserve that record when regenerating the lockfile so...; Review finding: [P1] Restore the Carapace integrity checksum — bun.lock:451 - [medium] Unrelated Git dependency checksum is removed — bun.lock:451 (sha=4dc8851db4d29e6fdd555462215c36a45e676009)",
+      "expected_head_sha": "4dc8851db4d29e6fdd555462215c36a45e676009",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T23:33:17.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-554537bb44",
+        "head_sha": "4dc8851db4d29e6fdd555462215c36a45e676009",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
