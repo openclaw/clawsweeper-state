@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:27:54.927Z",
+  "updated_at": "2026-08-06T11:28:10.608Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119844:5200843549:2026-08-06T05:43:28Z:clawsweeper_auto_repair",
-      "comment_id": "5200843549",
-      "comment_version_key": "5200843549:2026-08-06T05:43:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119844#issuecomment-5200843549",
-      "comment_created_at": "2026-08-06T05:43:28Z",
-      "comment_updated_at": "2026-08-06T05:43:28Z",
-      "comment_body_sha256": "8a35848bedf469178317bed77d93460dc50d01cf6941230d0778b43ae239d6eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119844,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3b63482e7d3e042dcd0ddc9adaef3dbf6f75b214)",
-      "expected_head_sha": "3b63482e7d3e042dcd0ddc9adaef3dbf6f75b214",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T05:44:08.906Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-925",
-        "head_sha": "3b63482e7d3e042dcd0ddc9adaef3dbf6f75b214",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:58823:4346662451:2026-08-06T04:44:37Z:clawsweeper_needs_human",
       "comment_id": "4346662451",
@@ -33331,6 +33298,54 @@
         "kind": "pull_request",
         "branch": "fix/qa-subagent-terminal-lane-20260806",
         "head_sha": "3571ef6416bec89a37c0866cce2ba4944ee523a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117128:5204049108:2026-08-06T11:27:34Z:re_review",
+      "comment_id": "5204049108",
+      "comment_version_key": "5204049108:2026-08-06T11:27:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5204049108",
+      "comment_created_at": "2026-08-06T11:27:34Z",
+      "comment_updated_at": "2026-08-06T11:27:34Z",
+      "comment_body_sha256": "c110fad0a9a22c1df9491e2f2c94b0626020c8f944900243ab98bbe20ce03f3e",
+      "source_delivery_id": "d2ca33d0-9189-11f1-870e-7aefa7dae11e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117128,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — rebased head `1ddfdbf0` keeps channel preflight runtime-free (no runtime calls during config/channel preflight), building on `3002dbd8`'s manifest-only config preflight. adds the channel-side runtime-free guard so plugin metadata/credential hooks stay inert across all inspection surfaces",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T11:28:08.342Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-secretref-path-preflight-117051",
+        "head_sha": "1ddfdbf0f4942bfe91afb9982eda84bfa10927b2",
         "cluster_id": null,
         "job_path": null
       },
