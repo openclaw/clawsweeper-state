@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-06T00:18:24.730Z
+Generated: 2026-08-06T00:22:34.897Z
 
 ## Summary
 
@@ -14,7 +14,7 @@ Generated: 2026-08-06T00:18:24.730Z
 | needs_checks | 14 |
 | needs_review | 0 |
 | needs_merge_preflight | 17 |
-| needs_result_backfill | 1 |
+| needs_result_backfill | 0 |
 
 ## Dispatch
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#119779](https://github.com/openclaw/openclaw/pull/119779) | fix(health): report canonical SQLite session store path | issue-openclaw-openclaw-119755 | MERGEABLE | BEHIND | SKIPPED:42 SUCCESS:77 IN_PROGRESS:3 NEUTRAL:1; blockers:3 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-7:IN_PROGRESS; CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-8:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | MERGEABLE | BLOCKED | IN_PROGRESS:14 SKIPPED:36 SUCCESS:16 QUEUED:53; blockers:67 | needs_merge_state:BLOCKED, needs_checks:CodeQL / Security High (core-auth-secrets):IN_PROGRESS; OpenGrep — PR Diff / Scan changed paths (precise):IN_PROGRESS; CodeQL / Security High (channel-runtime-boundary):IN_PROGRESS, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | issue-openclaw-openclaw-119754 | MERGEABLE | BEHIND | SKIPPED:43 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | issue-openclaw-openclaw-96692 | MERGEABLE | BEHIND | CANCELLED:1 SUCCESS:59 SKIPPED:38 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | issue-openclaw-openclaw-114169 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:41 SUCCESS:71 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
