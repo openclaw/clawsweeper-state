@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T10:36:02.997Z",
+  "updated_at": "2026-08-06T10:37:01.843Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116796:5200740686:2026-08-06T05:28:02Z:re_review",
-      "comment_id": "5200740686",
-      "comment_version_key": "5200740686:2026-08-06T05:28:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116796#issuecomment-5200740686",
-      "comment_created_at": "2026-08-06T05:28:02Z",
-      "comment_updated_at": "2026-08-06T05:28:02Z",
-      "comment_body_sha256": "9e585746aeb04fc7d6c87f07e932ec742f5299131d25b8906ba5487f0e68d6f9",
-      "source_delivery_id": "98c0caf0-9157-11f1-96fa-4bd87c366ed2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116796,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 9164e341757ea935c845d69c43597ea556bd753d after the prior queue stalled, based on pr4 f3b2bdda3c7af8fb14e97b1ffe8a3b00f30ae26a. the pr5 audit patch is byte-equivalent to previously reviewed bbd812a3e84f98668eacfdd31ed10abbdc5f54b3; current ci is green with 89 passing checks and no attention checks. please publish a fresh durable review and reassess every prior finding and rank-up move",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T05:28:34.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-5-node-audit",
-        "head_sha": "9164e341757ea935c845d69c43597ea556bd753d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119278:5181739358:2026-08-06T05:28:37Z:clawsweeper_auto_repair",
       "comment_id": "5181739358",
@@ -32681,6 +32633,53 @@
       "status": "skipped",
       "processed_at": "2026-08-06T10:36:02.997Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1252:5203255124:2026-08-06T10:36:18Z:clawsweeper_auto_merge",
+      "comment_id": "5203255124",
+      "comment_version_key": "5203255124:2026-08-06T10:36:18Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203255124",
+      "comment_created_at": "2026-08-06T10:11:48Z",
+      "comment_updated_at": "2026-08-06T10:36:18Z",
+      "comment_body_sha256": "63f5c165613c9793c3d673cd6d54aa71fd48a9826549b7a770117c93b74acb99",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=4c4549db2a2b070de3d2ec68025180d45904afc8)",
+      "expected_head_sha": "4c4549db2a2b070de3d2ec68025180d45904afc8",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T10:37:01.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "4c4549db2a2b070de3d2ec68025180d45904afc8",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
