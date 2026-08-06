@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T07:47:29.756Z",
+  "updated_at": "2026-08-06T07:48:14.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119394:5186676143:2026-08-06T02:26:37Z:clawsweeper_needs_human",
-      "comment_id": "5186676143",
-      "comment_version_key": "5186676143:2026-08-06T02:26:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119394#issuecomment-5186676143",
-      "comment_created_at": "2026-08-05T02:02:25Z",
-      "comment_updated_at": "2026-08-06T02:26:37Z",
-      "comment_body_sha256": "df2e473140d80b9000cd3bec8d1acae8a381f65e9c1afdbd5a436007e31e70ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The focused contributor PR already owns the repair; no separate automated repair lane is needed. (sha=8c0f79181401abdfec80cd114b67abd01935c284)",
-      "expected_head_sha": "8c0f79181401abdfec80cd114b67abd01935c284",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T03:32:29.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-refactor-docs-skill-ref",
-        "head_sha": "8c0f79181401abdfec80cd114b67abd01935c284",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119500:5188244849:2026-08-05T09:21:03Z:clawsweeper_auto_repair",
       "comment_id": "5188244849",
@@ -32018,6 +31985,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119195:5178448730:2026-08-06T07:47:32Z:clawsweeper_needs_human",
+      "comment_id": "5178448730",
+      "comment_version_key": "5178448730:2026-08-06T07:47:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119195#issuecomment-5178448730",
+      "comment_created_at": "2026-08-04T11:36:28Z",
+      "comment_updated_at": "2026-08-06T07:47:32Z",
+      "comment_body_sha256": "da9129b9374fec3938ef0dd922503919a400ca6c4754c7c03df79d3d8487baa5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119195,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes cron scheduling and finalization lifecycle behavior; refresh exact-head checks after the draft is made ready and rebased onto current main before merge. (sha=9a9dcf077a9ed1abead4c3a53373a5f3ce885ba0)",
+      "expected_head_sha": "9a9dcf077a9ed1abead4c3a53373a5f3ce885ba0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T07:48:14.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/cron-cross-tick-bounded-dispatcher",
+        "head_sha": "9a9dcf077a9ed1abead4c3a53373a5f3ce885ba0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
