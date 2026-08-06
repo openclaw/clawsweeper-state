@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31083184063"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31083184063"
+run_id: "31086029736"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31086029736"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-06T08:39:56.008Z"
+published_at: "2026-08-06T10:00:23.534Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31083184063](https://github.com/openclaw/clawsweeper/actions/runs/31083184063)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31086029736](https://github.com/openclaw/clawsweeper/actions/runs/31086029736)
 
 Workflow conclusion: failure
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains the canonical open bug. The hydrated record proves current main detects SecretRef reference drift but lacks a canonical generator/check flow. Historical PRs #85969, #89142, and #91612 are closed context only. Implementation is blocked in this run because the supplied target checkout is read-only; the narrow credited fix artifact is ready for an executor with a writable checkout.
+#44289 remains a reproducible canonical documentation-generation regression on main f99b6a48f7749eb47aa85dfe37df94290c0ef000. A narrow new fix PR is appropriate, but this worker checkout is read-only, so implementation and local validation cannot be performed here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #44289 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,11 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | blocked | canonical | Blocked only on a writable target checkout; no product, security, or maintainer decision remains. |
-| #85969 | keep_closed | skipped | superseded | Historical evidence only. |
-| #89142 | keep_closed | skipped | superseded | Historical evidence only. |
-| #91612 | keep_closed | skipped | superseded | Historical evidence only. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | A narrow new credited fix PR is appropriate once a writable checkout is available. |
+| #44289 | fix_needed | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-44289. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | blocked | canonical | A writable trusted checkout is required to implement and validate the planned repair. |
 
 ## Needs Human
 
