@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-06T08:51:46.941Z",
+  "updated_at": "2026-08-06T08:52:02.058Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4880138130:2026-07-04T01:19:50Z:re_review",
-      "comment_id": "4880138130",
-      "comment_version_key": "4880138130:2026-07-04T01:19:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4880138130",
-      "comment_created_at": "2026-07-04T01:19:50Z",
-      "comment_updated_at": "2026-07-04T01:19:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T04:33:32.125Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4881101676:2026-07-04T07:13:45Z:re_review",
       "comment_id": "4881101676",
@@ -32093,6 +32066,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119863:5202358911:2026-08-06T08:51:22Z:clawsweeper_needs_human",
+      "comment_id": "5202358911",
+      "comment_version_key": "5202358911:2026-08-06T08:51:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119863#issuecomment-5202358911",
+      "comment_created_at": "2026-08-06T08:38:54Z",
+      "comment_updated_at": "2026-08-06T08:51:22Z",
+      "comment_body_sha256": "996a722dd5e0be74c25c4be5df61dd3436394731cfe3cd057fb7ad4aaa21332e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119863,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes stale worktrees from implicit repair to a requested-command failure until the operator explicitly runs pnpm install; the exact PNPM 11.15.1 source could not... (sha=368a17a812c7b13209004c8cb17fec1769a7bc0b)",
+      "expected_head_sha": "368a17a812c7b13209004c8cb17fec1769a7bc0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T08:52:02.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pnpm-gwt-deps-status",
+        "head_sha": "368a17a812c7b13209004c8cb17fec1769a7bc0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
