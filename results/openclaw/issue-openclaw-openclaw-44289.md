@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31078273011"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31078273011"
+run_id: "31083184063"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31083184063"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-06T08:03:58.626Z"
+result_status: "blocked"
+published_at: "2026-08-06T08:39:56.008Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31078273011](https://github.com/openclaw/clawsweeper/actions/runs/31078273011)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31083184063](https://github.com/openclaw/clawsweeper/actions/runs/31083184063)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-Current main detects SecretRef reference drift but lacks a canonical generator/check workflow. Plan one narrow credited fix PR; do not merge or close anything.
+#44289 remains the canonical open bug. The hydrated record proves current main detects SecretRef reference drift but lacks a canonical generator/check flow. Historical PRs #85969, #89142, and #91612 are closed context only. Implementation is blocked in this run because the supplied target checkout is read-only; the narrow credited fix artifact is ready for an executor with a writable checkout.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Current main detects SecretRef reference drift but lacks a canonical generator/c
 | Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Current main detects SecretRef reference drift but lacks a canonical generator/c
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
+| issue_implementation_status_comment | updated | #44289 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +67,11 @@ Current main detects SecretRef reference drift but lacks a canonical generator/c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | planned | canonical | The reproducible non-security documentation-generation regression remains present and no viable open PR exists. |
-| #85969 | keep_closed | skipped | related | Already closed; no mutation. |
-| #89142 | keep_closed | skipped | related | Already closed; no mutation. |
-| #91612 | keep_closed | skipped | related | Already closed; no mutation. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Create or update clawsweeper/issue-openclaw-openclaw-44289, then open one labeled PR. |
+| #44289 | fix_needed | blocked | canonical | Blocked only on a writable target checkout; no product, security, or maintainer decision remains. |
+| #85969 | keep_closed | skipped | superseded | Historical evidence only. |
+| #89142 | keep_closed | skipped | superseded | Historical evidence only. |
+| #91612 | keep_closed | skipped | superseded | Historical evidence only. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | A narrow new credited fix PR is appropriate once a writable checkout is available. |
 
 ## Needs Human
 
