@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T11:33:59.545Z",
+  "updated_at": "2026-08-06T11:34:57.238Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119341:5184658311:2026-08-06T05:34:18Z:clawsweeper_auto_repair",
-      "comment_id": "5184658311",
-      "comment_version_key": "5184658311:2026-08-06T05:34:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5184658311",
-      "comment_created_at": "2026-08-04T21:09:33Z",
-      "comment_updated_at": "2026-08-06T05:34:18Z",
-      "comment_body_sha256": "1ba4ea5e4901c922180570725c2d9d8b5b29e4be8a3572c0e46f11d6c0e31637",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119341,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=43d1efb7d9522a3a79dddd78a5d7977a83c6160f)",
-      "expected_head_sha": "43d1efb7d9522a3a79dddd78a5d7977a83c6160f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T05:44:25.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract",
-        "head_sha": "43d1efb7d9522a3a79dddd78a5d7977a83c6160f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119344:5184658487:2026-08-06T05:34:12Z:clawsweeper_needs_human",
       "comment_id": "5184658487",
@@ -33418,6 +33385,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1232:5174217164:2026-08-06T11:27:59Z:clawsweeper_needs_human",
+      "comment_id": "5174217164",
+      "comment_version_key": "5174217164:2026-08-06T11:27:59Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1232#issuecomment-5174217164",
+      "comment_created_at": "2026-08-04T03:19:39Z",
+      "comment_updated_at": "2026-08-06T11:27:59Z",
+      "comment_body_sha256": "842aa35a64220488a1f663d3f34af1e1dd5e9ad3d6cf1b1f758723ddc5136a1a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm the scope of the release-team bypass** - The verifier now requires a pull-request bypass for the release team. That GitHub bypass applies to any protected-branch pull request by...; Review finding: [medium] Confirm the scope of the release-team bypass — scripts/verify-github-release-policy.mjs:156 - [medium] Validate the added release signer independently — .... (sha=01d5fdd09f63cc2eecca741c5b894bd39dc0194f)",
+      "expected_head_sha": "01d5fdd09f63cc2eecca741c5b894bd39dc0194f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T11:34:57.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-signer-policy",
+        "head_sha": "01d5fdd09f63cc2eecca741c5b894bd39dc0194f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
