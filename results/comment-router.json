@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T05:40:34.898Z",
+  "updated_at": "2026-08-06T05:41:35.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112865:5199467253:2026-08-06T01:48:49Z:re_review",
-      "comment_id": "5199467253",
-      "comment_version_key": "5199467253:2026-08-06T01:48:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112865#issuecomment-5199467253",
-      "comment_created_at": "2026-08-06T01:48:49Z",
-      "comment_updated_at": "2026-08-06T01:48:49Z",
-      "comment_body_sha256": "ad65959c116cb39500fd35cc493ab5cc9e7f4f92d5e38f653206572c259f2acd",
-      "source_delivery_id": "f8f7c6e0-9138-11f1-983d-af1e6ea01814",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112865,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 32cd8e68b2d539dc0d6c9b3ef2821c3275961a20",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T01:49:19.767Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-final-capture",
-        "head_sha": "32cd8e68b2d539dc0d6c9b3ef2821c3275961a20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:60:5189217860:2026-08-06T01:48:58Z:clawsweeper_auto_repair",
       "comment_id": "5189217860",
@@ -31675,6 +31627,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112896:5200827362:2026-08-06T05:40:59Z:re_review",
+      "comment_id": "5200827362",
+      "comment_version_key": "5200827362:2026-08-06T05:40:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112896#issuecomment-5200827362",
+      "comment_created_at": "2026-08-06T05:40:59Z",
+      "comment_updated_at": "2026-08-06T05:40:59Z",
+      "comment_body_sha256": "2298cdfa968542138e08c7b3f5597b07ff5dbc508fe462055492a0247a9d3d0e",
+      "source_delivery_id": "68065b80-9159-11f1-8c78-3305f781604e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112896,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review please. updated #112896 after rebasing onto current upstream/main 874c63318b590a3567a49d36066d79d211f8be08 and pushed only to fork branch user/giodl/rfc-0013-restored-admission at exact head ebe486dae3cad495c73259c5ee04cc042292fe8b. validation passed: snapshot/restored/final/recovery-journal vitest 31 tests; gateway method-list/restored/suspension/restore/startup vitest 146 tests; cli/root-command/protocol vitest 90 tests; test-source tsgo; deadcode exports; protocol check; touched-file oxfmt; touched-file oxlint; git diff --check",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T05:41:32.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-restored-admission",
+        "head_sha": "ebe486dae3cad495c73259c5ee04cc042292fe8b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
