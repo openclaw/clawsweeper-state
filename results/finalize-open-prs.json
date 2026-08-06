@@ -2,12 +2,12 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T03:24:54.776Z",
+  "generated_at": "2026-08-06T03:43:39.822Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
     "ready_candidates": 0,
-    "security_hold": 0,
+    "security_hold": 1,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 11,
@@ -34,15 +34,15 @@
       "head_sha": "83762118b65d7d31215286aed6ace32d87e77e6a",
       "cluster_id": "issue-openclaw-openclaw-119758",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119758.md",
-      "updated_at": "2026-08-06T02:04:14Z",
+      "updated_at": "2026-08-06T03:39:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 127,
+        "total": 129,
         "counts": {
-          "SKIPPED": 44,
+          "SKIPPED": 46,
           "SUCCESS": 82,
           "NEUTRAL": 1
         },
@@ -55,13 +55,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119799#issuecomment-5199554456",
             "submitted_at": "2026-08-06T02:04:06Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119799#issuecomment-5200067581",
+            "submitted_at": "2026-08-06T03:32:17Z"
           }
         ]
       },
@@ -168,7 +174,7 @@
       "head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
       "cluster_id": "issue-openclaw-openclaw-119754",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119754.md",
-      "updated_at": "2026-08-06T02:42:33Z",
+      "updated_at": "2026-08-06T03:39:12Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -189,13 +195,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/119778#issuecomment-5199641212",
             "submitted_at": "2026-08-06T02:18:20Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119778#issuecomment-5200068559",
+            "submitted_at": "2026-08-06T03:32:28Z"
           }
         ]
       },
@@ -239,7 +251,7 @@
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
-      "security_hold": false,
+      "security_hold": true,
       "checks": {
         "total": 107,
         "counts": {
@@ -282,27 +294,28 @@
         ]
       },
       "latest_record": {
-        "run_id": "31065983220",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31065983220",
+        "run_id": "31068652687",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31068652687",
         "cluster_id": "automerge-openclaw-openclaw-119737",
-        "published_at": "2026-08-06T02:48:58.835Z",
-        "workflow_conclusion": "failure",
+        "published_at": "2026-08-06T03:41:28.322Z",
+        "workflow_conclusion": "success",
         "apply_action": {
           "target": "#119737",
-          "action": "build_fix_artifact",
+          "action": "fix_needed",
           "status": "planned",
           "classification": "canonical",
           "canonical": "#119737",
           "candidate_fix": "#119737",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "reason": "Repair the contributor branch rather than replacing it; no security-sensitive signal is present."
         }
       },
       "blockers": [
+        "security_route",
         "needs_merge_state:BEHIND",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "route to central security triage"
     },
     {
       "number": 119735,
@@ -610,7 +623,7 @@
       "head_sha": "48ae7e5c2468fffa0661abc46fcb51c1cb8fa53e",
       "cluster_id": "issue-openclaw-openclaw-89252",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
-      "updated_at": "2026-08-05T23:44:40Z",
+      "updated_at": "2026-08-06T03:39:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
