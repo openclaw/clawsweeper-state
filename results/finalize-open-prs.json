@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T02:36:27.081Z",
+  "generated_at": "2026-08-06T02:49:30.058Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
@@ -101,15 +101,15 @@
       "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
       "cluster_id": "issue-openclaw-openclaw-119578",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md",
-      "updated_at": "2026-08-06T01:45:21Z",
+      "updated_at": "2026-08-06T02:43:48Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 130,
+        "total": 136,
         "counts": {
-          "SKIPPED": 45,
+          "SKIPPED": 51,
           "SUCCESS": 84,
           "NEUTRAL": 1
         },
@@ -168,7 +168,7 @@
       "head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
       "cluster_id": "issue-openclaw-openclaw-119754",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119754.md",
-      "updated_at": "2026-08-06T02:18:29Z",
+      "updated_at": "2026-08-06T02:42:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -235,7 +235,7 @@
       "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
       "cluster_id": "issue-openclaw-openclaw-96692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-06T02:34:08Z",
+      "updated_at": "2026-08-06T02:44:04Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -282,25 +282,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "31052977808",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31052977808",
+        "run_id": "31065983220",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31065983220",
         "cluster_id": "automerge-openclaw-openclaw-119737",
-        "published_at": "2026-08-05T23:09:35.990Z",
-        "workflow_conclusion": "success",
+        "published_at": "2026-08-06T02:48:58.835Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#119737",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(slack): require confirmed thread placement for terminal receipts",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#119737",
+          "candidate_fix": "#119737",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
