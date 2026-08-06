@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-06T01:03:04.873Z",
+  "generated_at": "2026-08-06T01:47:29.665Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
@@ -13,7 +13,7 @@
     "needs_checks": 12,
     "needs_review": 0,
     "needs_merge_preflight": 16,
-    "needs_result_backfill": 0
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,83 @@
   },
   "prs": [
     {
+      "number": 119799,
+      "title": "fix(plugins): keep targeted official updates on the core channel",
+      "url": "https://github.com/openclaw/openclaw/pull/119799",
+      "branch": "clawsweeper/issue-openclaw-openclaw-119758",
+      "head_sha": "83762118b65d7d31215286aed6ace32d87e77e6a",
+      "cluster_id": "issue-openclaw-openclaw-119758",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119758.md",
+      "updated_at": "2026-08-06T01:24:07Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 119,
+        "counts": {
+          "SKIPPED": 37,
+          "SUCCESS": 47,
+          "IN_PROGRESS": 34,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-b:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-14:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-prod-types:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS; CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 119784,
       "title": "fix(gateway): avoid parsing excluded chat history payloads",
       "url": "https://github.com/openclaw/openclaw/pull/119784",
@@ -34,15 +111,15 @@
       "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
       "cluster_id": "issue-openclaw-openclaw-119578",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md",
-      "updated_at": "2026-08-06T00:44:05Z",
+      "updated_at": "2026-08-06T01:45:21Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 122,
+        "total": 130,
         "counts": {
-          "SKIPPED": 37,
+          "SKIPPED": 45,
           "SUCCESS": 84,
           "NEUTRAL": 1
         },
@@ -55,8 +132,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119784#issuecomment-5199365650",
+            "submitted_at": "2026-08-06T01:31:28Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31057108333",
@@ -94,7 +178,7 @@
       "head_sha": "f08a62b62ca9245bc3106a22c7bc34d9c549e27a",
       "cluster_id": "issue-openclaw-openclaw-119754",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119754.md",
-      "updated_at": "2026-08-06T00:29:25Z",
+      "updated_at": "2026-08-06T01:45:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -154,17 +238,17 @@
       "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
       "cluster_id": "issue-openclaw-openclaw-96692",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-06T00:44:03Z",
+      "updated_at": "2026-08-06T01:32:49Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 99,
+        "total": 103,
         "counts": {
           "CANCELLED": 1,
+          "SKIPPED": 42,
           "SUCCESS": 59,
-          "SKIPPED": 38,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -1112,77 +1196,6 @@
       "blockers": [
         "needs_merge_state:BEHIND",
         "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119172,
-      "title": "fix(slack): preserve original bytes for forced media uploads",
-      "url": "https://github.com/openclaw/openclaw/pull/119172",
-      "branch": "clawsweeper/issue-openclaw-openclaw-53932",
-      "head_sha": "9f880b538e35c9ef0debe087a02ed61bb2b97b78",
-      "cluster_id": "issue-openclaw-openclaw-53932",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-53932.md",
-      "updated_at": "2026-08-05T13:17:29Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 164,
-        "counts": {
-          "CANCELLED": 20,
-          "SKIPPED": 52,
-          "SUCCESS": 91,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119172#issuecomment-5177520246",
-            "submitted_at": "2026-08-04T10:05:59Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119172#issuecomment-5178265736",
-            "submitted_at": "2026-08-04T11:18:41Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31013321940",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31013321940",
-        "cluster_id": "automerge-openclaw-openclaw-119172",
-        "published_at": "2026-08-05T16:08:34.877Z",
-        "workflow_conclusion": "success",
-        "apply_action": null
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
