@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-06T04:42:24.947Z",
+  "updated_at": "2026-08-06T04:42:38.532Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-06T00:03:40Z:clawsweeper_needs_human",
-      "comment_id": "4854073498",
-      "comment_version_key": "4854073498:2026-08-06T00:03:40Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
-      "comment_created_at": "2026-07-01T11:37:33Z",
-      "comment_updated_at": "2026-08-06T00:03:40Z",
-      "comment_body_sha256": "c6c880bbf66c64831a8ac5884500498144c18204ba238c4024c01424250e745c",
-      "repo": "openclaw/clawscan",
-      "issue_number": 7,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging republishes the default sandbox image, so the upgraded tools can change existing scans’ findings, raw JSON, exit behavior, or benchmark verdicts without a CLI-code change. (sha=bb644fe1646cbd7f74c81947259ec5b042fad776)",
-      "expected_head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T00:04:10.987Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/runtime-tool-updates",
-        "head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:13:5164757534:2026-08-06T00:03:36Z:clawsweeper_needs_human",
       "comment_id": "5164757534",
@@ -31698,6 +31665,39 @@
       "status": "skipped",
       "processed_at": "2026-08-06T04:42:24.947Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119342:5184665833:2026-08-06T04:41:59Z:clawsweeper_auto_repair",
+      "comment_id": "5184665833",
+      "comment_version_key": "5184665833:2026-08-06T04:41:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5184665833",
+      "comment_created_at": "2026-08-04T21:10:21Z",
+      "comment_updated_at": "2026-08-06T04:41:59Z",
+      "comment_body_sha256": "e66534f99fb80519b19261c7c80da80bd0d56cdda2a4fa67df064c254b7d6c4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f14d83ccfc78d898d3946aee08476dadf2b9dd11)",
+      "expected_head_sha": "f14d83ccfc78d898d3946aee08476dadf2b9dd11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T04:42:38.532Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-host",
+        "head_sha": "f14d83ccfc78d898d3946aee08476dadf2b9dd11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
