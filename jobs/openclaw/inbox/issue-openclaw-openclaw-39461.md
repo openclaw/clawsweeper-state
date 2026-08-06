@@ -67,18 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair this issue as a QQBot diagnostics-only bug. At Gateway startup, stop recommending QQBOT_DATA_DIR and stop treating the legacy ~/.openclaw/qqbot path as current runtime storage; report the canonical SQLite/media ownership instead. Do not add QQBOT_DATA_DIR, alter getQQBotDataDir semantics, move persisted state, or change legacy media-remap compatibility. Add focused regression coverage for a Windows-like HOME path and OPENCLAW_HOME. No CHANGELOG.md edit; include concise user-visible release-note context in the PR body.
+Repair the QQBot startup diagnostics defect: current diagnostics recommend `QQBOT_DATA_DIR`, but the current plugin has no such environment contract and runtime state is SQLite-backed. Remove the stale legacy data-directory probe/report and unsupported recommendation from `extensions/qqbot/src/engine/utils/diagnostics.ts`; do not add `QQBOT_DATA_DIR` support or a new configuration surface. Preserve `getQQBotDataDir` for its existing `/bot-logs` artifact and restricted legacy-download uses. Add focused diagnostics regression coverage using an isolated home that proves startup does not create the legacy QQBot directory or emit the unsupported hint. Do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/qqbot/src/engine/utils/diagnostics.ts
 - extensions/qqbot/src/engine/utils/diagnostics.test.ts
-- extensions/qqbot/src/engine/utils/platform.test.ts
+- extensions/qqbot/src/engine/utils/platform-storage-laziness.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/qqbot/src/engine/utils/diagnostics.test.ts extensions/qqbot/src/engine/utils/platform.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs extensions/qqbot/src/engine/utils/diagnostics.test.ts extensions/qqbot/src/engine/utils/platform-storage-laziness.test.ts
 
 ## Operator Prompt
 
