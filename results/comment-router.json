@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:24:26.375Z",
+  "updated_at": "2026-08-06T09:24:40.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5200447947:2026-08-06T04:38:37Z:re_review",
-      "comment_id": "5200447947",
-      "comment_version_key": "5200447947:2026-08-06T04:38:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5200447947",
-      "comment_created_at": "2026-08-06T04:38:37Z",
-      "comment_updated_at": "2026-08-06T04:38:37Z",
-      "comment_body_sha256": "6d0c90bf9954d30db9b7248009819e1df18b78e014ec3035350eed94fed82bde",
-      "source_delivery_id": "b12ca3e0-9150-11f1-8aee-bfe36d12a89f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the hot/no-op intermediate finding is fixed on head `02885555a41`: the revert-cancel check now compares against the compare config the runtime was running when the deferred restart was armed (`pendingrestartbasecompareconfig`), so an intervening hot-only apply no longer marks still-deferred restart-owned fields as running. real managed-coordinator scenario d proof (real reloader + real chokidar + real file, production wiring incl. the hot-apply runtime commit): planner a→b → hot b→d → ordinary d→a revert retires the deferred restart debt, onrestart stays ×1, 0 sigusr1. new regression test covers the sequence and fails on the prior head (onrestart ×2). full trace in the evidence section",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T04:39:04.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-cancel-restart-on-revert-119360",
-        "head_sha": "02885555a418fa239cbca9335063ed013a532191",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116795:5200283421:2026-08-06T04:09:59Z:re_review",
       "comment_id": "5200283421",
@@ -32392,6 +32344,39 @@
         "kind": "pull_request",
         "branch": "feat/skill-publish-catalog-metadata",
         "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3427:5198393117:2026-08-06T09:24:05Z:clawsweeper_auto_repair",
+      "comment_id": "5198393117",
+      "comment_version_key": "5198393117:2026-08-06T09:24:05Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3427#issuecomment-5198393117",
+      "comment_created_at": "2026-08-05T23:04:27Z",
+      "comment_updated_at": "2026-08-06T09:24:05Z",
+      "comment_body_sha256": "d6da2bdd9088936838c5dbbae6249b0d90016665b531d8c476ff592ffd46bc92",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3427,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d2e9cbb6905128a89daa0dbcf98f75641d37b1a6)",
+      "expected_head_sha": "d2e9cbb6905128a89daa0dbcf98f75641d37b1a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-06T09:24:40.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/discovery-icon-hierarchy",
+        "head_sha": "d2e9cbb6905128a89daa0dbcf98f75641d37b1a6",
         "cluster_id": null,
         "job_path": null
       }
