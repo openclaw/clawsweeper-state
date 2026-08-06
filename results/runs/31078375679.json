@@ -1,0 +1,108 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-119551",
+  "mode": "autonomous",
+  "run_id": "31078375679",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31078375679",
+  "head_sha": "480d56953f381b127bdc0b5a7029efeeaa717595",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
+  "published_at": "2026-08-06T07:43:41.000Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/119551",
+  "canonical_pr": null,
+  "summary": "#119551 is reproducible on main 1f10ef80: configured ACP bindings initialize without the owning agent's explicit model. The narrow repair is clear, but this worker checkout is read-only, so implementation and validation must be performed by the executor from the attached fix artifact.",
+  "actions": [
+    {
+      "target": "#119551",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Implement the artifact on clawsweeper/issue-openclaw-openclaw-119551, then run focused proof and pnpm check:changed before opening the PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-119551",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Narrow bug-only repair artifact for a new ClawSweeper PR."
+    },
+    {
+      "target": "#106008",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Related ACP model-routing work with independent scope; leave open."
+    },
+    {
+      "target": "#119599",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119551",
+      "candidate_fix": null,
+      "reason": "Historical source material only; no closure or mutation is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review did not pass after final base synchronization: Not merge-ready: stale ACP metadata can bypass model reconfiguration and silently reuse the old ACPX model.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#119551",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

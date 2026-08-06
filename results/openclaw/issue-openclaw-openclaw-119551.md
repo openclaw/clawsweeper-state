@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-119551"
 mode: "autonomous"
-run_id: "31072502305"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31072502305"
+run_id: "31078375679"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31078375679"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-06T04:59:28.749Z"
-canonical: "#119551"
-canonical_issue: "#119551"
+result_status: "blocked"
+published_at: "2026-08-06T07:43:41.000Z"
+canonical: "https://github.com/openclaw/openclaw/issues/119551"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/119551"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31072502305](https://github.com/openclaw/clawsweeper/actions/runs/31072502305)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31078375679](https://github.com/openclaw/clawsweeper/actions/runs/31078375679)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #119551
+Canonical: https://github.com/openclaw/openclaw/issues/119551
 
 ## Summary
 
-Confirmed current-main ACP lifecycle bug. A narrow two-file fix artifact is ready; this worker could not edit or run focused Vitest because the checkout is read-only and dependencies are absent.
+#119551 is reproducible on main 1f10ef80: configured ACP bindings initialize without the owning agent's explicit model. The narrow repair is clear, but this worker checkout is read-only, so implementation and validation must be performed by the executor from the attached fix artifact.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Confirmed current-main ACP lifecycle bug. A narrow two-file fix artifact is read
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex /review did not pass after final base synchronization: Not merge-ready: stale ACP metadata can bypass model reconfiguration and silently reuse the old ACPX model. |
+| issue_implementation_status_comment | updated | #119551 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +67,10 @@ Confirmed current-main ACP lifecycle bug. A narrow two-file fix artifact is read
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119551 | keep_canonical | planned | canonical | Open canonical issue remains valid and has a narrow owner-boundary repair. |
-| #119551 | fix_needed | planned | canonical | Resolve the owner agent's explicit model once, forward it with explicit provenance, and reinitialize only when that explicit desired model differs from persisted runtime metadata. |
-| #119551 | build_fix_artifact | planned | canonical | A narrow replacement implementation is required; no source changes could be made in this read-only checkout. |
-| #119551 | open_fix_pr | planned | canonical | Open one narrow PR for this canonical issue after applying and validating the artifact. |
-| #119599 | keep_closed | skipped | superseded | Already closed; no mutation is permitted or needed. |
+| #119551 | fix_needed | blocked | canonical | Implement the artifact on clawsweeper/issue-openclaw-openclaw-119551, then run focused proof and pnpm check:changed before opening the PR. |
+| cluster:issue-openclaw-openclaw-119551 | build_fix_artifact | planned | canonical | Narrow bug-only repair artifact for a new ClawSweeper PR. |
+| #106008 | keep_related | planned | related | Related ACP model-routing work with independent scope; leave open. |
+| #119599 | keep_closed | skipped | superseded | Historical source material only; no closure or mutation is valid. |
 
 ## Needs Human
 
