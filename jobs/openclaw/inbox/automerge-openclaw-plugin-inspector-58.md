@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-plugin-inspector-58
 source: pr_automerge
 requested_by: "Patrick-Erichsen"
 requested_by_id: "20157849"
-request_comment_url: "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194720912"
+request_comment_url: "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194460725"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/plugin-inspector/pull/58#issue
 Maintainer opted #58 into ClawSweeper automerge.
 
 Requested by: Patrick-Erichsen
-Request comment: https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194720912
+Request comment: https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194460725
 
 
 Source PR: https://github.com/openclaw/plugin-inspector/pull/58
