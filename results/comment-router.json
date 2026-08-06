@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:38:55.115Z",
+  "updated_at": "2026-08-06T09:38:57.728Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116792:5200251451:2026-08-06T04:04:26Z:re_review",
-      "comment_id": "5200251451",
-      "comment_version_key": "5200251451:2026-08-06T04:04:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116792#issuecomment-5200251451",
-      "comment_created_at": "2026-08-06T04:04:26Z",
-      "comment_updated_at": "2026-08-06T04:04:26Z",
-      "comment_body_sha256": "29fd90143d86ccc9290751940b35e74dab5aea871860ce5017dbb109cc96fa38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116792,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T04:42:21.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-1-node-contract",
-        "head_sha": "5d2c38b89fe69e6d386a3d6fe8fcd0a679cb8799",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119441:5200299168:2026-08-06T04:12:41Z:re_review",
       "comment_id": "5200299168",
@@ -32387,6 +32340,39 @@
         "head_sha": "722f57ccdcf3db5616a38c8fdf42bdf242766bd1",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-06T09:35:17Z:clawsweeper_auto_merge",
+      "comment_id": "5157206715",
+      "comment_version_key": "5157206715:2026-08-06T09:35:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117951#issuecomment-5157206715",
+      "comment_created_at": "2026-08-02T10:31:46Z",
+      "comment_updated_at": "2026-08-06T09:35:17Z",
+      "comment_body_sha256": "2f0024cc17c8ea68f783fa32a6db9f7b42ac1bceb568d6b843486d33a1f7684d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=294d1f348b21927b031d50a22f44d1be41b89e24)",
+      "expected_head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-06T09:38:57.728Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-73478",
+        "head_sha": "294d1f348b21927b031d50a22f44d1be41b89e24",
+        "cluster_id": "automerge-openclaw-openclaw-117951",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117951.md"
       }
     }
   ]
