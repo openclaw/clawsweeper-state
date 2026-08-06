@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31093449873"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31093449873"
+run_id: "31093811171"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31093811171"
 head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-06T10:36:55.703Z"
+published_at: "2026-08-06T11:09:46.187Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-44289
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31093449873](https://github.com/openclaw/clawsweeper/actions/runs/31093449873)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31093811171](https://github.com/openclaw/clawsweeper/actions/runs/31093811171)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains the canonical reproducible SecretRef documentation-generation repair. Implementation cannot be safely replayed here: the supplied repair base f99b6a48f7749eb47aa85dfe37df94290c0ef000 is unavailable, while this checkout is read-only at unrelated main SHA 7321c4424683ee5831f1d5602c403f0c66f51259.
+#44289 remains the canonical reproducible SecretRef documentation-generation repair. The provided checkout is read-only, so the narrow fix cannot be recreated, validated on current main, or raised from this run.
 
 ## Impact
 
@@ -48,13 +48,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #44289 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | blocked | canonical | A writable checkout containing the intended base (or a fresh writable checkout at current main) is required before the narrow repair can be recreated and validated. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | blocked | canonical | Executable repair is blocked only by checkout/base availability; the artifact is ready for replay in a writable checkout. |
+| #44289 | fix_needed | blocked | canonical | A writable checkout at current main is required to implement and validate the already-defined narrow repair. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | A current-main writable executor can replay this bounded artifact as one new fix PR. |
 
 ## Needs Human
 
-- Provide a writable checkout containing current openclaw/openclaw main (or restore the pinned repair base) so ClawSweeper can recreate, validate, and raise the one allowed fix PR.
+- none
