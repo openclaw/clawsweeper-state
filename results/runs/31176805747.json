@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120207",
+  "mode": "plan",
+  "run_id": "31176805747",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31176805747",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120207.md",
+  "published_at": "2026-08-07T12:12:26.565Z",
+  "canonical": "#120207",
+  "canonical_issue": "#120207",
+  "canonical_pr": null,
+  "summary": "#120207 remains a reproducible non-security CLI live-session bug on current main. Plan a new narrow fix PR; quarantine #120218 because its hydrated PR is security-sensitive and includes unrelated OAuth work.",
+  "actions": [
+    {
+      "target": "#120207",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "Canonical issue for the buffered Claude CLI live-session output loss."
+    },
+    {
+      "target": "#108315",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "Related timeout-origin investigation; it is not a duplicate of the terminal-output-loss bug."
+    },
+    {
+      "target": "#120218",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact PR for central OpenClaw security handling; do not merge, repair, or use it as the canonical fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120207",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "A new narrow, non-security fix path is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120207",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "Create a replacement fix artifact for the canonical non-security bug."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
