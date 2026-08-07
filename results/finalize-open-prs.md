@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T01:08:18.709Z
+Generated: 2026-08-07T00:41:54.347Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#120076](https://github.com/openclaw/openclaw/pull/120076) | fix(mcp): receive loopback OAuth login callbacks | issue-openclaw-openclaw-120019 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:77 FAILURE:5 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#120076](https://github.com/openclaw/openclaw/pull/120076) | fix(mcp): receive loopback OAuth login callbacks | issue-openclaw-openclaw-120019 | MERGEABLE | BEHIND | SKIPPED:42 SUCCESS:77 FAILURE:5 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | issue-openclaw-openclaw-119962 | MERGEABLE | BEHIND | SUCCESS:71 SKIPPED:21 FAILURE:5; blockers:5 | needs_merge_state:BEHIND, needs_checks:CI / checks-ui-e2e (1/4):FAILURE; CI / checks-ui-e2e (3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | CONFLICTING | DIRTY | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
