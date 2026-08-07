@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:53:22.953Z",
+  "updated_at": "2026-08-07T01:53:24.888Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117021:5206955539:2026-08-06T15:29:45Z:re_review",
-      "comment_id": "5206955539",
-      "comment_version_key": "5206955539:2026-08-06T15:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117021#issuecomment-5206955539",
-      "comment_created_at": "2026-08-06T15:29:45Z",
-      "comment_updated_at": "2026-08-06T15:29:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117021,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T15:35:47.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-wave3-telegram-inbound",
-        "head_sha": "95c2291afb6117d84c9dcc4b9436a51966f6c594",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ],
-      "source_delivery_id": "a7bcf610-91ab-11f1-9162-02362c04249c"
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113366:5206978534:2026-08-06T15:31:54Z:re_review",
       "comment_id": "5206978534",
@@ -32463,6 +32415,39 @@
         "kind": "pull_request",
         "branch": "agent/simplified-technical-english",
         "head_sha": "68e7376162d1a0590e2bbb7b0e177eddff79d769",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-07T01:52:44Z:clawsweeper_needs_human",
+      "comment_id": "4759967424",
+      "comment_version_key": "4759967424:2026-08-07T01:52:44Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/17#issuecomment-4759967424",
+      "comment_created_at": "2026-06-20T20:57:22Z",
+      "comment_updated_at": "2026-08-07T01:52:44Z",
+      "comment_body_sha256": "d92f4f174cc4996617c7c3deeb06ba3f285ab2fa1868ea1f29dc3b121dde31b3",
+      "repo": "openclaw/rfcs",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepting the Host/core split without reconciling it with RFC 0027 could create conflicting gateway lifecycle, runtime-routing, session-state, and delivery contracts. (sha=ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4)",
+      "expected_head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:53:24.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-independent-core-rfc",
+        "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
         "cluster_id": null,
         "job_path": null
       }
