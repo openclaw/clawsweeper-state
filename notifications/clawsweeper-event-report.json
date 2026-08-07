@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T00:09:53.928Z",
+  "generated_at": "2026-08-07T00:14:42.927Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31129160942.json",
+  "run_record": "results/runs/31132551284.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31129160942",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31132551284",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/crabbox:#1252:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/crabbox",
+      "target": "#1252",
+      "title": "fix(worker): stop invalid Spot requests from retrying On-Demand",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31132551284",
+      "cluster_id": "automerge-openclaw-crabbox-1252",
+      "hook_run_id": "ad10b3f3-8a8c-4008-997a-123607b85b56",
+      "url": "https://github.com/openclaw/crabbox/pull/1252"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/crabbox:#1252:repair_contributor_branch:pushed:3de9496d482ea91bebe3cd1e711c51bf93954c90",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/crabbox",
+      "target": "#1252",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31132551284",
+      "cluster_id": "automerge-openclaw-crabbox-1252",
+      "hook_run_id": "6db43c7f-4f8b-4ea4-83d7-86721be8b8ec",
+      "url": "https://github.com/openclaw/crabbox/pull/1252"
+    }
+  ]
 }
