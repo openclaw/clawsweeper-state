@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:44:07.616Z",
+  "updated_at": "2026-08-07T03:44:09.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4812691745:2026-06-26T19:15:35Z:re_review",
-      "comment_id": "4812691745",
-      "comment_version_key": "4812691745:2026-06-26T19:15:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4812691745",
-      "comment_created_at": "2026-06-26T19:15:35Z",
-      "comment_updated_at": "2026-06-26T19:15:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T23:36:19.641Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4880138130:2026-07-04T01:19:50Z:re_review",
       "comment_id": "4880138130",
@@ -31223,6 +31196,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T03:44:07.616Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120058:5211016039:2026-08-07T03:42:34Z:clawsweeper_needs_human",
+      "comment_id": "5211016039",
+      "comment_version_key": "5211016039:2026-08-07T03:42:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120058#issuecomment-5211016039",
+      "comment_created_at": "2026-08-07T01:36:22Z",
+      "comment_updated_at": "2026-08-07T03:42:34Z",
+      "comment_body_sha256": "851d724dcee1bcc6bdb67868095ad55e15aa0e516b5aa878e18996825a62a7f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Derive Vercel variants from the tagged release (P1)** - This static list always resolves browser tags, but the Docker release owner emits those tags only when the tagged Dockerfile supports the browser build. A...; Review finding: [P1] Derive Vercel variants from the tagged release — scripts/vercel-container-registry-publish.mjs:17 - [P1] Keep source attestation verification mandatory — scri... (sha=bc14b4e2b512480a3096759e22ee5785eb45bc09)",
+      "expected_head_sha": "bc14b4e2b512480a3096759e22ee5785eb45bc09",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T03:44:09.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/vercel-container-registry",
+        "head_sha": "bc14b4e2b512480a3096759e22ee5785eb45bc09",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
