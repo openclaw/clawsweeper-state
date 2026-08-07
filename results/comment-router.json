@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:42:11.511Z",
+  "updated_at": "2026-08-07T03:42:19.880Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119686:5195431276:2026-08-06T23:35:24Z:clawsweeper_auto_repair",
-      "comment_id": "5195431276",
-      "comment_version_key": "5195431276:2026-08-06T23:35:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119686#issuecomment-5195431276",
-      "comment_created_at": "2026-08-05T18:02:11Z",
-      "comment_updated_at": "2026-08-06T23:35:24Z",
-      "comment_body_sha256": "448f5bb289f0d8b7a243d33b62411003589ea710899d71f639ce5d5933b705e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119686,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8e15da42550067986155025d23a6a908e4090c19)",
-      "expected_head_sha": "8e15da42550067986155025d23a6a908e4090c19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T23:36:10.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wikimedia-thumbnail-fallback",
-        "head_sha": "8e15da42550067986155025d23a6a908e4090c19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119686:5200025852:2026-08-06T03:24:29Z:re_review",
       "comment_id": "5200025852",
@@ -31118,6 +31085,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118680:5167057998:2026-08-07T03:35:54Z:clawsweeper_needs_human",
+      "comment_id": "5167057998",
+      "comment_version_key": "5167057998:2026-08-07T03:35:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118680#issuecomment-5167057998",
+      "comment_created_at": "2026-08-03T13:38:41Z",
+      "comment_updated_at": "2026-08-07T03:35:54Z",
+      "comment_body_sha256": "f3361ce929853d39700b6d4fa9cbedf73f1f38e05204d49679b5ee0a0b13613f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After an upgrade, previously rejected persisted compatibility blocks can begin influencing provider routing, session-affinity headers, cache retention, or tool streaming; that is inte... (sha=a526bb70794a4cf6a79519ff6f42e0902c0d7b6d)",
+      "expected_head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T03:42:19.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118667",
+        "head_sha": "a526bb70794a4cf6a79519ff6f42e0902c0d7b6d",
+        "cluster_id": "issue-openclaw-openclaw-118667",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-118667.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
