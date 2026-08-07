@@ -1,76 +1,78 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-87336"
-mode: "autonomous"
-run_id: "31213028861"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31213028861"
+mode: "plan"
+run_id: "31216402645"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31216402645"
 head_sha: "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-07T20:48:04.455Z"
+result_status: "needs_human"
+published_at: "2026-08-07T20:52:26.468Z"
 canonical: "https://github.com/openclaw/openclaw/issues/87336"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/87336"
-canonical_pr: null
-actions_total: 3
+canonical_pr: "https://github.com/openclaw/openclaw/pull/120347"
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 1
+apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 2
 ---
 
 # issue-openclaw-openclaw-87336
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31213028861](https://github.com/openclaw/clawsweeper/actions/runs/31213028861)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31216402645](https://github.com/openclaw/clawsweeper/actions/runs/31216402645)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/87336
 
 ## Summary
 
-Current main still dispatches arbitrary missing sessions_send targets. A narrow fix artifact is ready, but this checkout is read-only and lacks both the requested repair branch and pinned base, so no patch or exact-head validation can be produced here.
+#87336 is a reproducible non-security session-lifecycle defect and #120347 is its narrow, writable implementation path. A maintainer must first approve the intentional compatibility change: sessions_send will no longer materialize arbitrary explicit key-shaped targets on first send.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 1 |
+| Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/120347 | clawsweeper/issue-openclaw-openclaw-87336 |  |
-| issue_implementation_status_comment | updated | #87336 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120347 | merge_canonical | blocked | fix_pr | checks are not clean: checks-node-compact-small-6: FAILURE, openclaw/ci-gate: FAILURE |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #87336 | fix_needed | planned | canonical | Confirmed ordinary correctness defect; no security, auth, approval, sandbox, config, protocol, or sessions_spawn change is required. |
-| cluster:issue-openclaw-openclaw-87336 | build_fix_artifact | planned | canonical | Apply this artifact in a writable checkout seeded with the pinned base and clawsweeper/issue-openclaw-openclaw-87336. |
-| #15558 | keep_closed | skipped | related | Historical context only; already closed. |
+| #15558 | keep_closed | skipped | independent | Already closed; no closeout action is valid. |
+| #87336 | keep_canonical | planned | canonical | Keep the issue open until the compatibility decision and candidate validation are complete. |
+| #120347 | needs_human | blocked | needs_human | Maintainer decision required: may sessions_send stop materializing arbitrary explicit key-shaped targets on their first send and instead return a structured missing-target result, retaining only configured-agent-main bootstrap? Approval is also needed before repairing the behind branch and diagnosing the unhydrated CI failures. |
+| cluster:issue-openclaw-openclaw-87336 | fix_needed | blocked | needs_human | The technical repair path is clear, but its deliberate compatibility change is not authorized by the hydrated maintainer state. |
+| cluster:issue-openclaw-openclaw-87336 | build_fix_artifact | blocked | needs_human | Executable only after the maintainer accepts the compatibility change. |
 
 ## Needs Human
 
-- none
+- Approve or reject changing sessions_send so arbitrary explicit missing key-shaped targets return structured not-found instead of materializing a session on first send; configured-agent-main bootstrap remains the sole creation exception.
+- If approved, authorize repair of #120347 after the executor re-fetches state, rebases the branch, and diagnoses the unhydrated checks-node-compact-small-6/openclaw-ci-gate failures.

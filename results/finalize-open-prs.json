@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T20:48:32.059Z",
+  "generated_at": "2026-08-07T20:52:52.936Z",
   "count": 13,
   "summary": {
     "open_prs": 13,
@@ -70,25 +70,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "31213028861",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31213028861",
+        "run_id": "31216402645",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31216402645",
         "cluster_id": "issue-openclaw-openclaw-87336",
-        "published_at": "2026-08-07T20:48:04.455Z",
+        "published_at": "2026-08-07T20:52:26.468Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#120347",
-          "action": "merge_canonical",
+          "action": "needs_human",
           "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(gateway): reject missing sessions_send targets",
-          "idempotency_key": null,
-          "reason": "checks are not clean: checks-node-compact-small-6: FAILURE, openclaw/ci-gate: FAILURE",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "classification": "needs_human",
+          "canonical": "#87336",
+          "candidate_fix": "#120347",
+          "reason": "Maintainer decision required: may sessions_send stop materializing arbitrary explicit key-shaped targets on their first send and instead return a structured missing-target result, retaining only configured-agent-main bootstrap? Approval is also needed before repairing the behind branch and diagnosing the unhydrated CI failures."
         }
       },
       "blockers": [

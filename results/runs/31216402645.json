@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-87336",
+  "mode": "plan",
+  "run_id": "31216402645",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31216402645",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
+  "published_at": "2026-08-07T20:52:26.468Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/87336",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/87336",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/120347",
+  "summary": "#87336 is a reproducible non-security session-lifecycle defect and #120347 is its narrow, writable implementation path. A maintainer must first approve the intentional compatibility change: sessions_send will no longer materialize arbitrary explicit key-shaped targets on first send.",
+  "actions": [
+    {
+      "target": "#15558",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closeout action is valid."
+    },
+    {
+      "target": "#87336",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#87336",
+      "candidate_fix": "#120347",
+      "reason": "Keep the issue open until the compatibility decision and candidate validation are complete."
+    },
+    {
+      "target": "#120347",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#87336",
+      "candidate_fix": "#120347",
+      "reason": "Maintainer decision required: may sessions_send stop materializing arbitrary explicit key-shaped targets on their first send and instead return a structured missing-target result, retaining only configured-agent-main bootstrap? Approval is also needed before repairing the behind branch and diagnosing the unhydrated CI failures."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-87336",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#87336",
+      "candidate_fix": "#120347",
+      "reason": "The technical repair path is clear, but its deliberate compatibility change is not authorized by the hydrated maintainer state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-87336",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#87336",
+      "candidate_fix": "#120347",
+      "reason": "Executable only after the maintainer accepts the compatibility change."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_canonical": 1,
+    "needs_human": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 1,
+    "blocked": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Approve or reject changing sessions_send so arbitrary explicit missing key-shaped targets return structured not-found instead of materializing a session on first send; configured-agent-main bootstrap remains the sole creation exception.",
+    "If approved, authorize repair of #120347 after the executor re-fetches state, rebases the branch, and diagnoses the unhydrated checks-node-compact-small-6/openclaw-ci-gate failures."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
