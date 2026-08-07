@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T13:34:29.704Z",
+  "updated_at": "2026-08-07T13:35:11.978Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120025:5209967381:2026-08-07T07:39:41Z:clawsweeper_needs_human",
-      "comment_id": "5209967381",
-      "comment_version_key": "5209967381:2026-08-07T07:39:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120025#issuecomment-5209967381",
-      "comment_created_at": "2026-08-06T23:35:24Z",
-      "comment_updated_at": "2026-08-07T07:39:41Z",
-      "comment_body_sha256": "c02db02832ffe3537ab392c4e30c6bc27b9c4c9c37ced812c67ef5630662e694",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sub-agent configurations that listed message, sessions_send, or another hard-denied tool in allow or alsoAllow will lose that previously effective override after upgrade. (sha=c8748af5fcc22d8ab9c989fe7d1ff8f401c76748)",
-      "expected_head_sha": "c8748af5fcc22d8ab9c989fe7d1ff8f401c76748",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T08:42:32.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/subagent-message-hard-deny",
-        "head_sha": "f884ca86827df6e8ecb4fe2db3c5dfddd95807ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120027:5209970637:2026-08-07T07:39:08Z:clawsweeper_auto_repair",
       "comment_id": "5209970637",
@@ -31959,6 +31926,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T13:34:29.704Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:488:5179744694:2026-08-07T13:34:32Z:clawsweeper_needs_human",
+      "comment_id": "5179744694",
+      "comment_version_key": "5179744694:2026-08-07T13:34:32Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/488#issuecomment-5179744694",
+      "comment_created_at": "2026-08-04T13:29:29Z",
+      "comment_updated_at": "2026-08-07T13:34:32Z",
+      "comment_body_sha256": "84021b3eeadbfc228e71e3635dda912113b3406a99ad58501a2919afac1a84eb",
+      "repo": "openclaw/acpx",
+      "issue_number": 488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The regenerated lockfile also changes the optional WASI path from @napi-rs/wasm-runtime 1.1.6 to 1.2.2; the green checks do not demonstrate that platform-specific installation path. (sha=17c1d03840bec3db1ae609530c74df7856f9857e)",
+      "expected_head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T13:35:11.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-ec51b0fbd6",
+        "head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
