@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T00:43:10.879Z",
+  "updated_at": "2026-08-07T00:43:11.363Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:106832:5204239706:2026-08-06T11:48:29Z:re_review",
-      "comment_id": "5204239706",
-      "comment_version_key": "5204239706:2026-08-06T11:48:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/106832#issuecomment-5204239706",
-      "comment_created_at": "2026-08-06T11:48:29Z",
-      "comment_updated_at": "2026-08-06T11:48:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 106832,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T13:40:38.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/session-presentation-contract",
-        "head_sha": "a1e7920ff4d38b45f97ee6c856dd3ce3a49e5b5a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119275:5204271657:2026-08-06T11:51:59Z:re_review",
       "comment_id": "5204271657",
@@ -32884,6 +32837,39 @@
         "kind": "pull_request",
         "branch": "fix/release-cross-os-migration-restart",
         "head_sha": "ad6c11f24d4c58358922c5b1c8b2f70e91ab02ce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119813:5200097126:2026-08-07T00:42:01Z:clawsweeper_auto_repair",
+      "comment_id": "5200097126",
+      "comment_version_key": "5200097126:2026-08-07T00:42:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119813#issuecomment-5200097126",
+      "comment_created_at": "2026-08-06T03:37:30Z",
+      "comment_updated_at": "2026-08-07T00:42:01Z",
+      "comment_body_sha256": "2cc95c9de52566c45fc16e04b60d2ecc8ef481f2dfd3ae24f755428bdc2d4f1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119813,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=961805ea64689a7b378b757381a5ed8d8a1132b2)",
+      "expected_head_sha": "961805ea64689a7b378b757381a5ed8d8a1132b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T00:43:11.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/code-mode-openai-transport-accounting-restack-20260806",
+        "head_sha": "961805ea64689a7b378b757381a5ed8d8a1132b2",
         "cluster_id": null,
         "job_path": null
       }
