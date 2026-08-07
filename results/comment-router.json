@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-07T21:36:11.993Z",
+  "updated_at": "2026-08-07T21:34:46.700Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79702:4411845078:2026-08-07T16:38:10Z:clawsweeper_auto_repair",
+      "comment_id": "4411845078",
+      "comment_version_key": "4411845078:2026-08-07T16:38:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/79702#issuecomment-4411845078",
+      "comment_created_at": "2026-05-09T07:17:55Z",
+      "comment_updated_at": "2026-08-07T16:38:10Z",
+      "comment_body_sha256": "016f3c4d4e5214ce7fa03cbbb5042408222b6081a794ab773ce183cc88ce2651",
+      "repo": "openclaw/openclaw",
+      "issue_number": 79702,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7e8b82a1c6c7b2b016e9df98c5559f7fcfaafd65)",
+      "expected_head_sha": "7e8b82a1c6c7b2b016e9df98c5559f7fcfaafd65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T16:49:43.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-query-instruction-prefix-openai-embedding",
+        "head_sha": "7e8b82a1c6c7b2b016e9df98c5559f7fcfaafd65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:86062:4528912275:2026-08-06T09:04:06Z:clawsweeper_auto_repair",
       "comment_id": "4528912275",
@@ -32392,54 +32425,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111528:5222236225:2026-08-07T21:35:29Z:re_review",
-      "comment_id": "5222236225",
-      "comment_version_key": "5222236225:2026-08-07T21:35:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111528#issuecomment-5222236225",
-      "comment_created_at": "2026-08-07T21:35:29Z",
-      "comment_updated_at": "2026-08-07T21:35:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e957b8b0-92a7-11f1-9cc8-62617a1b270a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111528,
-      "author": "MonkeyLeeT",
-      "author_id": 6754057,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T21:36:08.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-101929-midturn-projection",
-        "head_sha": "f0e60ddf7e5db005e3927053752551b3f9086224",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
