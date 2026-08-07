@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T22:49:32.275Z",
+  "updated_at": "2026-08-07T22:49:33.599Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112709:5128482119:2026-08-07T18:19:04Z:clawsweeper_auto_repair",
-      "comment_id": "5128482119",
-      "comment_version_key": "5128482119:2026-08-07T18:19:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112709#issuecomment-5128482119",
-      "comment_created_at": "2026-07-30T08:32:34Z",
-      "comment_updated_at": "2026-08-07T18:19:04Z",
-      "comment_body_sha256": "87d8a9c5d9e485a2257b28f2af9c08b1c284338b37c08f5108ed181203ca4b2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112709,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9214b3628b24cca19cdf4062c1e813e3d7741715)",
-      "expected_head_sha": "9214b3628b24cca19cdf4062c1e813e3d7741715",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T18:50:52.915Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/taskflow-atomic-cancel-state",
-        "head_sha": "9214b3628b24cca19cdf4062c1e813e3d7741715",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116344:5129531786:2026-08-07T17:46:41Z:clawsweeper_needs_human",
       "comment_id": "5129531786",
@@ -32230,6 +32197,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120374:5222968591:2026-08-07T22:48:55Z:clawsweeper_needs_human",
+      "comment_id": "5222968591",
+      "comment_version_key": "5222968591:2026-08-07T22:48:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120374#issuecomment-5222968591",
+      "comment_created_at": "2026-08-07T22:48:55Z",
+      "comment_updated_at": "2026-08-07T22:48:55Z",
+      "comment_body_sha256": "f6c9d0fdbfddd33573a39a4fbcbe589ee064ee9876a608aaca130f27b611edcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Focused coverage uses a mocked flow-suite implementation, so it proves partition construction but not the actual profile-2/4 smoke run; inspect the exact-head trace showing four launc... (sha=164135133fc797b1f7fb18a3e97314969ef5ba6e)",
+      "expected_head_sha": "164135133fc797b1f7fb18a3e97314969ef5ba6e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T22:49:33.599Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-smoke-exclusive-shared-partitions-20260807",
+        "head_sha": "164135133fc797b1f7fb18a3e97314969ef5ba6e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
