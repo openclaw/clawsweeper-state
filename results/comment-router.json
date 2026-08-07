@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T20:41:21.336Z",
+  "updated_at": "2026-08-07T20:41:27.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119299:5182854672:2026-08-07T15:43:45Z:clawsweeper_needs_human",
-      "comment_id": "5182854672",
-      "comment_version_key": "5182854672:2026-08-07T15:43:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119299#issuecomment-5182854672",
-      "comment_created_at": "2026-08-04T18:09:07Z",
-      "comment_updated_at": "2026-08-07T15:43:45Z",
-      "comment_body_sha256": "2773beb35ff7b74b6187886c798b7b4ba216fe7a498a44a94b0e86a3dda1e603",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119299,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject symbolic MCP grants before cloud admission (P1)** - The new prefix check does not recognize bundle-mcp or group:plugins, although both create and expand to bundle MCP tools. The worker only exposes fixed...; Review finding: [P1] Reject symbolic MCP grants before cloud admission — src/gateway/worker-environments/worker-turn-payload.ts:195-205 - [medium] Verify persisted native authorit... (sha=11277f1812370ef750ce93ee1d148e3786c376b2)",
-      "expected_head_sha": "11277f1812370ef750ce93ee1d148e3786c376b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T15:49:25.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-runtime-authority-v1",
-        "head_sha": "11277f1812370ef750ce93ee1d148e3786c376b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119299:5182880103:2026-08-04T18:11:45Z:re_review",
       "comment_id": "5182880103",
@@ -31946,6 +31913,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119817:5221798527:2026-08-07T20:40:51Z:re_review",
+      "comment_id": "5221798527",
+      "comment_version_key": "5221798527:2026-08-07T20:40:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119817#issuecomment-5221798527",
+      "comment_created_at": "2026-08-07T20:40:51Z",
+      "comment_updated_at": "2026-08-07T20:40:51Z",
+      "comment_body_sha256": "b39e2246488e75fdc8ce26e334d94efad8b35afa63806da00af73ca92d0ce26a",
+      "source_delivery_id": "47c65940-92a0-11f1-9be1-6ffd8d848b9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119817,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — global-scope hook events are now partitioned by owning agent (p1)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T20:41:25.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hook-heartbeat-targeted-wake-119808",
+        "head_sha": "68faee9fdf013b340c3eec3c21bae3fc9d8193a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
