@@ -1,0 +1,116 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-89254",
+  "mode": "autonomous",
+  "run_id": "31145403874",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31145403874",
+  "head_sha": "2eb1787e0d183a84f29e84614b84f228037ba69f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-89254.md",
+  "published_at": "2026-08-07T04:26:14.363Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/89254",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89254",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow Matrix nested-DM diagnostic defect on main. The executor-ready fix is blocked only because this checkout is read-only and lacks writable dependency/Corepack state; no code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#89254",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#89254",
+      "candidate_fix": null,
+      "reason": "A canonical fix is clear, but implementation requires a writable executor checkout."
+    },
+    {
+      "target": "#74112",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#89254",
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no closure or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-89254",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#89254",
+      "candidate_fix": null,
+      "reason": "A writable executor can apply this three-file, regression-backed repair and open the permitted PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120143",
+      "branch": "clawsweeper/issue-openclaw-openclaw-89254",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120143",
+      "commit": "bc3012edd4df6fb5d53e313c412aa42701639816",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#89254",
+      "pr": "https://github.com/openclaw/openclaw/pull/120143",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120143",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120143",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(matrix): warn when open DMs lack an allowlist wildcard",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
