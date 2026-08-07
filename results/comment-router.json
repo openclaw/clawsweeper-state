@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:42:08.648Z",
+  "updated_at": "2026-08-07T07:43:08.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-07T03:48:02Z:clawsweeper_auto_repair",
-      "comment_id": "5160727900",
-      "comment_version_key": "5160727900:2026-08-07T03:48:02Z",
-      "comment_url": "https://github.com/openclaw/remindctl/pull/67#issuecomment-5160727900",
-      "comment_created_at": "2026-08-02T22:51:37Z",
-      "comment_updated_at": "2026-08-07T03:48:02Z",
-      "comment_body_sha256": "5f82f2a2102b3386522273256e2d78e29c4a05881b5940a4d0d2bdc024ec3735",
-      "repo": "openclaw/remindctl",
-      "issue_number": 67,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e4759bac6c2ad75a784c08ecb18d4ed1c669c431)",
-      "expected_head_sha": "e4759bac6c2ad75a784c08ecb18d4ed1c669c431",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T04:02:49.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/geocode-timeout",
-        "head_sha": "e4759bac6c2ad75a784c08ecb18d4ed1c669c431",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/uirouter:16:5122266911:2026-08-07T04:01:56Z:clawsweeper_needs_human",
       "comment_id": "5122266911",
@@ -32103,6 +32070,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/agent-skills:166:5214030107:2026-08-07T07:42:38Z:re_review",
+      "comment_id": "5214030107",
+      "comment_version_key": "5214030107:2026-08-07T07:42:38Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/166#issuecomment-5214030107",
+      "comment_created_at": "2026-08-07T07:42:38Z",
+      "comment_updated_at": "2026-08-07T07:42:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "90df0b80-9233-11f1-8b94-33855f4c8f62",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 166,
+      "author": "kesslerio",
+      "author_id": 2647990,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T07:43:06.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trufflehog-no-update",
+        "head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
