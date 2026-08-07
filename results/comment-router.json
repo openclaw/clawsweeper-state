@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:49:31.161Z",
+  "updated_at": "2026-08-07T07:49:34.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90101:4618139166:2026-08-07T04:42:26Z:clawsweeper_needs_human",
-      "comment_id": "4618139166",
-      "comment_version_key": "4618139166:2026-08-07T04:42:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90101#issuecomment-4618139166",
-      "comment_created_at": "2026-06-04T01:24:48Z",
-      "comment_updated_at": "2026-08-07T04:42:26Z",
-      "comment_body_sha256": "59d30afea754b02ad4f87d63d387a48a7eac75cd1dc95ada4e9a5bd942289706",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90101,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR contains terminal proof from earlier commits, not a redacted configured-agent run attributable to current head 420691dd; add ex...; Review finding: [P0] Cap action summaries before prompt injection — src/runtime-self-context/render.ts:101-105 - [P1] Prevent action references from reaching the model — src/confi... (sha=420691dd8265e6962e64dce04973fee79ed45ab9)",
-      "expected_head_sha": "420691dd8265e6962e64dce04973fee79ed45ab9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T04:43:23.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "draft/runtime-self-context-plan",
-        "head_sha": "420691dd8265e6962e64dce04973fee79ed45ab9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90101:4619190283:2026-06-04T05:14:00Z:re_review",
       "comment_id": "4619190283",
@@ -31986,6 +31953,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T07:49:31.161Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120024:5209976364:2026-08-07T07:46:33Z:clawsweeper_needs_human",
+      "comment_id": "5209976364",
+      "comment_version_key": "5209976364:2026-08-07T07:46:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120024#issuecomment-5209976364",
+      "comment_created_at": "2026-08-06T23:36:42Z",
+      "comment_updated_at": "2026-08-07T07:46:33Z",
+      "comment_body_sha256": "2e01d23d205f52b2be70fc7b5165239aeb13c2550319cf58b8966393cafa30b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120024,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact probe failures before status rendering (P1)** - resolveGatewayProbeSnapshot preserves raw probe errors, and this formatter emits them in normal status text and JSON. A remote close or transport error that...; Review finding: [P1] Redact probe failures before status rendering — src/commands/status-all/format.ts:393-394 - [P1] Redact close reasons before constructing transport errors — s... (sha=a4600ecdbaf734306324238335434459a9968574)",
+      "expected_head_sha": "a4600ecdbaf734306324238335434459a9968574",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:49:34.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-diagnostics-redaction",
+        "head_sha": "a4600ecdbaf734306324238335434459a9968574",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
