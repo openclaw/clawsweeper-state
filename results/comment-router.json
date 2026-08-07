@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T12:20:26.428Z",
+  "updated_at": "2026-08-07T12:20:26.601Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120165:5213518354:2026-08-07T07:45:01Z:clawsweeper_needs_human",
-      "comment_id": "5213518354",
-      "comment_version_key": "5213518354:2026-08-07T07:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120165#issuecomment-5213518354",
-      "comment_created_at": "2026-08-07T06:45:37Z",
-      "comment_updated_at": "2026-08-07T07:45:01Z",
-      "comment_body_sha256": "41e86845c727cf8c18150b0f080c29549e242dca99fe6fe8bddeab89314d2be0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120165,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The projection-unavailable version is process-global while completed caches are request-context-local, so one rebuilding projection can temporarily invalidate otherwise unrelated comp... (sha=6493a469ded7a594784eb87b96cb6109feb09509)",
-      "expected_head_sha": "6493a469ded7a594784eb87b96cb6109feb09509",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T07:45:50.918Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/list-degrade-projection-rebuild",
-        "head_sha": "6493a469ded7a594784eb87b96cb6109feb09509",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:103:4639469443:2026-08-07T07:41:15Z:clawsweeper_auto_repair",
       "comment_id": "4639469443",
@@ -32031,6 +31998,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T12:20:26.428Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2504:5122252200:2026-08-07T12:07:47Z:clawsweeper_needs_human",
+      "comment_id": "5122252200",
+      "comment_version_key": "5122252200:2026-08-07T12:07:47Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2504#issuecomment-5122252200",
+      "comment_created_at": "2026-07-29T18:57:52Z",
+      "comment_updated_at": "2026-08-07T12:07:47Z",
+      "comment_body_sha256": "ccdf1203a5a870c52043399279fdcbb6218dba3e9b93e00e1169c8b9545836c8",
+      "repo": "steipete/codexbar",
+      "issue_number": 2504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this PR as dirty; current main changed the surrounding provider-cost interface after the PR base, so the reviewed branch result is not yet the merge result. (sha=34974731d75839f61807f0fe396245878654402d)",
+      "expected_head_sha": "34974731d75839f61807f0fe396245878654402d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T12:20:26.601Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/opencode-pay-as-you-go-usage",
+        "head_sha": "34974731d75839f61807f0fe396245878654402d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
