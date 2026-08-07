@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T17:15:43.800Z
+Generated: 2026-08-07T17:22:41.891Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 14 |
+| open_prs | 13 |
 | ready_candidates | 0 |
 | security_hold | 1 |
 | needs_rebase | 3 |
 | mergeability_unknown | 0 |
 | needs_checks | 4 |
 | needs_review | 0 |
-| needs_merge_preflight | 14 |
+| needs_merge_preflight | 13 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -43,4 +43,3 @@ Status: report_only
 | [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | CONFLICTING | DIRTY | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | issue-openclaw-openclaw-119884 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:39 SUCCESS:83 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | CONFLICTING | DIRTY | SKIPPED:51 SUCCESS:84 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
-| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | issue-openclaw-openclaw-119754 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |

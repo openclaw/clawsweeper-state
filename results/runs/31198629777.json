@@ -1,0 +1,98 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-92884",
+  "mode": "autonomous",
+  "run_id": "31198629777",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31198629777",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-92884.md",
+  "published_at": "2026-08-07T17:22:14.688Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/92884",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/92884",
+  "canonical_pr": null,
+  "summary": "Current main b738e257 still has the same-origin channel-schema ownership bug: selection ignores manifest preferOver and is registry-order dependent. A narrow two-file repair is defined, but this worker checkout is read-only and has no node_modules/tsx, so it cannot create or validate the required branch locally.",
+  "actions": [
+    {
+      "target": "#92884",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#92884",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only, dependency-free checkout; the repair remains narrow and suitable for a new fix PR."
+    },
+    {
+      "target": "#92902",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#92884",
+      "candidate_fix": null,
+      "reason": "Already closed; retained solely as historical source context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-92884",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#92884",
+      "candidate_fix": null,
+      "reason": "Create a new credited ClawSweeper branch and PR after applying the narrow repair and validation plan."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review did not pass after final base synchronization: Merge blocked by one P1 correctness issue in closer-origin schema precedence.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#92884",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
