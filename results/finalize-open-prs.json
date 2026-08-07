@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T16:08:27.169Z",
-  "count": 13,
+  "generated_at": "2026-08-07T17:15:43.800Z",
+  "count": 14,
   "summary": {
-    "open_prs": 13,
+    "open_prs": 14,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
     "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 13,
+    "needs_merge_preflight": 14,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,66 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120298,
+      "title": "fix(config): preserve manual .bak.* backups",
+      "url": "https://github.com/openclaw/openclaw/pull/120298",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120253",
+      "head_sha": "c72cc1c29f5b2b29e3b045b6994851047d6f5469",
+      "cluster_id": "issue-openclaw-openclaw-120253",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
+      "updated_at": "2026-08-07T17:01:15Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 124,
+        "counts": {
+          "SKIPPED": 41,
+          "SUCCESS": 82,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31198891319",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31198891319",
+        "cluster_id": "issue-openclaw-openclaw-120253",
+        "published_at": "2026-08-07T17:13:58.558Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120298",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(config): preserve manual .bak.* backups",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 120249,
       "title": "fix(discord): honor maxLinesPerMessage for CLI sends",
@@ -101,22 +161,20 @@
       "head_sha": "e9a800cc569e5f110146b74055bfd8ae876b23e2",
       "cluster_id": "issue-openclaw-openclaw-120228",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120228.md",
-      "updated_at": "2026-08-07T16:02:14Z",
+      "updated_at": "2026-08-07T16:50:27Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 99,
+        "total": 105,
         "counts": {
           "CANCELLED": 1,
-          "SKIPPED": 24,
-          "SUCCESS": 73,
-          "IN_PROGRESS": 1
+          "SKIPPED": 29,
+          "SUCCESS": 75
         },
         "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED",
-          "CI / android-build-play:IN_PROGRESS"
+          "ClawSweeper Dispatch / dispatch:CANCELLED"
         ]
       },
       "review_threads": {
@@ -165,8 +223,8 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / android-build-play:IN_PROGRESS",
+        "needs_merge_state:BEHIND",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
