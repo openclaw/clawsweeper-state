@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T04:47:58.876Z",
-  "count": 16,
+  "generated_at": "2026-08-07T05:22:47.175Z",
+  "count": 17,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 1,
-    "needs_rebase": 1,
+    "needs_rebase": 2,
     "mergeability_unknown": 0,
     "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
+    "needs_merge_preflight": 17,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,6 +27,66 @@
   },
   "prs": [
     {
+      "number": 120150,
+      "title": "fix(discord): identify native-command empty reply outcomes",
+      "url": "https://github.com/openclaw/openclaw/pull/120150",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120142",
+      "head_sha": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
+      "cluster_id": "issue-openclaw-openclaw-120142",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120142.md",
+      "updated_at": "2026-08-07T05:13:55Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 90,
+        "counts": {
+          "SKIPPED": 40,
+          "SUCCESS": 49,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31148564805",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31148564805",
+        "cluster_id": "issue-openclaw-openclaw-120142",
+        "published_at": "2026-08-07T05:21:02.918Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120150",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(discord): identify native-command empty reply outcomes",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
+    {
       "number": 120143,
       "title": "fix(matrix): warn when open DMs lack an allowlist wildcard",
       "url": "https://github.com/openclaw/openclaw/pull/120143",
@@ -36,7 +96,7 @@
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89254.md",
       "updated_at": "2026-08-07T04:29:48Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -81,7 +141,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -246,8 +306,8 @@
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
       "updated_at": "2026-08-07T01:47:56Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -305,10 +365,11 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 119968,

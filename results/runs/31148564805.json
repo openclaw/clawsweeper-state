@@ -1,0 +1,134 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120142",
+  "mode": "autonomous",
+  "run_id": "31148564805",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31148564805",
+  "head_sha": "2eb1787e0d183a84f29e84614b84f228037ba69f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120142.md",
+  "published_at": "2026-08-07T05:21:02.918Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120142",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120142",
+  "canonical_pr": null,
+  "summary": "Current main f87d8bb7 reproduces the opaque Discord fallback in both native-command consumers. A narrow, non-security fix should retain suppression and delivery behavior while rendering the command name plus only recorded facts. The checkout is read-only, so this is an executable fix artifact for the deterministic PR executor rather than a local branch change.",
+  "actions": [
+    {
+      "target": "#120142",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120142",
+      "candidate_fix": null,
+      "reason": "Source-reproducible diagnostic bug; no configuration, API, dependency, or security-boundary change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120142",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120142",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited ClawSweeper fix PR."
+    },
+    {
+      "target": "#111870",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different owner boundary and reproduction path."
+    },
+    {
+      "target": "#116277",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; not a mutation target."
+    },
+    {
+      "target": "#1221",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; not a mutation target."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120150",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120142",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120150",
+      "commit": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120142",
+      "pr": "https://github.com/openclaw/openclaw/pull/120150",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120150",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120150",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(discord): identify native-command empty reply outcomes",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
