@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T18:00:48.333Z",
+  "updated_at": "2026-08-07T18:03:21.426Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119575:5190588520:2026-08-07T12:51:40Z:clawsweeper_auto_repair",
-      "comment_id": "5190588520",
-      "comment_version_key": "5190588520:2026-08-07T12:51:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119575#issuecomment-5190588520",
-      "comment_created_at": "2026-08-05T10:26:08Z",
-      "comment_updated_at": "2026-08-07T12:51:40Z",
-      "comment_body_sha256": "cbc0f50a6ecbd2193bba6670b462079f3c83ab7103399893ec9b6efa1b7696ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119575,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7a63cae81e77085c4b6c239105e9561b07829c0e)",
-      "expected_head_sha": "7a63cae81e77085c4b6c239105e9561b07829c0e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T13:48:56.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/maintenance-window-v2-2026q3",
-        "head_sha": "7a63cae81e77085c4b6c239105e9561b07829c0e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119589:5191500547:2026-08-07T03:39:35Z:clawsweeper_auto_merge",
       "comment_id": "5191500547",
@@ -32187,6 +32154,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1119:5220439472:2026-08-07T18:02:47Z:clawsweeper_needs_human",
+      "comment_id": "5220439472",
+      "comment_version_key": "5220439472:2026-08-07T18:02:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1119#issuecomment-5220439472",
+      "comment_created_at": "2026-08-07T18:02:47Z",
+      "comment_updated_at": "2026-08-07T18:02:47Z",
+      "comment_body_sha256": "009f9bfc8f48a7a19eb0f4b7bed77d2556d15e37d7c2e13edeae202188dc9e86",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1119,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a prior live run but explicitly says it was not rerun at the final head, and it provides no screenshot, recording, di...; Review finding: [P1] Use the HTTP credential contract for media downloads — src/OpenClaw.Shared/OpenClawGatewayClient.AssistantMedia.cs:233-234 - [medium] HTTP media requests use... (sha=f8e07d143185c9a3802c87d706f366789fd512e6)",
+      "expected_head_sha": "f8e07d143185c9a3802c87d706f366789fd512e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T18:03:21.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "calebeden-investigate-media-rendering",
+        "head_sha": "f8e07d143185c9a3802c87d706f366789fd512e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
