@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:39:34.496Z",
+  "updated_at": "2026-08-07T01:39:43.683Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5189804129:2026-08-05T09:03:05Z:re_review",
-      "comment_id": "5189804129",
-      "comment_version_key": "5189804129:2026-08-05T09:03:05Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5189804129",
-      "comment_created_at": "2026-08-05T09:03:05Z",
-      "comment_updated_at": "2026-08-05T09:03:05Z",
-      "comment_body_sha256": "c2fe1f5926a2ffd1a4d9d19eba54220f4368a1c305617b15620afbc6a5c35ce0",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T14:58:29.668Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:134:5189855351:2026-08-05T09:08:18Z:re_review",
       "comment_id": "5189855351",
@@ -32744,6 +32717,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T01:39:34.496Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119976:5207156546:2026-08-07T01:39:04Z:clawsweeper_needs_human",
+      "comment_id": "5207156546",
+      "comment_version_key": "5207156546:2026-08-07T01:39:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119976#issuecomment-5207156546",
+      "comment_created_at": "2026-08-06T15:50:41Z",
+      "comment_updated_at": "2026-08-07T01:39:04Z",
+      "comment_body_sha256": "941eb5c0787589ce8af403570faa7f27d34d823f6d10c32b03feca3d213cddd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and static checks only; it contains no inspectable after-fix trace showing reflected credentials removed from the res...; Review finding: [P1] Redact reflected Nextcloud Talk signatures — extensions/nextcloud-talk/src/send.ts:69 - [high] Reflected HMAC signature remains visible — extensions/nextcloud... (sha=a153d51ebff22893f65d2e117f119b5ae9462295)",
+      "expected_head_sha": "a153d51ebff22893f65d2e117f119b5ae9462295",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:39:43.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-nextcloud-talk-redact-error-body",
+        "head_sha": "a153d51ebff22893f65d2e117f119b5ae9462295",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
