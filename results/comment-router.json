@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T23:47:17.896Z",
+  "updated_at": "2026-08-07T23:47:24.790Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-07T20:12:39Z:clawsweeper_needs_human",
-      "comment_id": "5194538175",
-      "comment_version_key": "5194538175:2026-08-07T20:12:39Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
-      "comment_created_at": "2026-08-05T16:34:55Z",
-      "comment_updated_at": "2026-08-07T20:12:39Z",
-      "comment_body_sha256": "f4a2c5c236dd5b42005c10c3d98d31f10efacaaf54291cc2bcd7a3fdfe48ff5b",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until accepted and merged, the published v0.3.21 artifact and default-branch metadata remain out of sync; users or downstream tooling reading main still see 0.3.20. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T20:14:18.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:280:5176998369:2026-08-07T20:14:35Z:clawsweeper_auto_repair",
       "comment_id": "5176998369",
@@ -32270,6 +32223,53 @@
       "status": "skipped",
       "processed_at": "2026-08-07T23:47:17.896Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-07T23:43:37Z:clawsweeper_needs_human",
+      "comment_id": "5199365650",
+      "comment_version_key": "5199365650:2026-08-07T23:43:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119784#issuecomment-5199365650",
+      "comment_created_at": "2026-08-06T01:31:28Z",
+      "comment_updated_at": "2026-08-07T23:43:37Z",
+      "comment_body_sha256": "69dcb757aec2ac3346f7269ccd0ec9903cfd7b04fe8afe54743e97a3c0ca74b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119784,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current branch is merge-conflicted in the active-event reader; a careless rebase could lose current projection/retry behavior or change transcript pagination semantics. (sha=8f272db71ccfd04fb8599eb84c0ba320d2b5173c)",
+      "expected_head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T23:47:24.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119578",
+        "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
+        "cluster_id": "issue-openclaw-openclaw-119578",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
