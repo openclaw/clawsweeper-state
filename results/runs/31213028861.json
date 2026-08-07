@@ -1,0 +1,115 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-87336",
+  "mode": "autonomous",
+  "run_id": "31213028861",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31213028861",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
+  "published_at": "2026-08-07T20:48:04.455Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/87336",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/87336",
+  "canonical_pr": null,
+  "summary": "Current main still dispatches arbitrary missing sessions_send targets. A narrow fix artifact is ready, but this checkout is read-only and lacks both the requested repair branch and pinned base, so no patch or exact-head validation can be produced here.",
+  "actions": [
+    {
+      "target": "#87336",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#87336",
+      "candidate_fix": null,
+      "reason": "Confirmed ordinary correctness defect; no security, auth, approval, sandbox, config, protocol, or sessions_spawn change is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-87336",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#87336",
+      "candidate_fix": null,
+      "reason": "Apply this artifact in a writable checkout seeded with the pinned base and clawsweeper/issue-openclaw-openclaw-87336."
+    },
+    {
+      "target": "#15558",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; already closed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120347",
+      "branch": "clawsweeper/issue-openclaw-openclaw-87336",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120347",
+      "commit": "26abcc866cbf05e165a9c48344cfb17f15bcb416",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#87336",
+      "pr": "https://github.com/openclaw/openclaw/pull/120347",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120347",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120347",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(gateway): reject missing sessions_send targets",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-small-6: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

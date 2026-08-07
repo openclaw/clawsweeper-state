@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T19:49:31.665Z",
-  "count": 12,
+  "generated_at": "2026-08-07T20:48:32.059Z",
+  "count": 13,
   "summary": {
-    "open_prs": 12,
+    "open_prs": 13,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 2,
     "mergeability_unknown": 0,
-    "needs_checks": 4,
+    "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 12,
+    "needs_merge_preflight": 13,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,78 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120347,
+      "title": "fix(gateway): reject missing sessions_send targets",
+      "url": "https://github.com/openclaw/openclaw/pull/120347",
+      "branch": "clawsweeper/issue-openclaw-openclaw-87336",
+      "head_sha": "26abcc866cbf05e165a9c48344cfb17f15bcb416",
+      "cluster_id": "issue-openclaw-openclaw-87336",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
+      "updated_at": "2026-08-07T20:45:34Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 135,
+        "counts": {
+          "SKIPPED": 52,
+          "SUCCESS": 80,
+          "FAILURE": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-small-6:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120347#issuecomment-5221829117",
+            "submitted_at": "2026-08-07T20:44:45Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "31213028861",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31213028861",
+        "cluster_id": "issue-openclaw-openclaw-87336",
+        "published_at": "2026-08-07T20:48:04.455Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120347",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(gateway): reject missing sessions_send targets",
+          "idempotency_key": null,
+          "reason": "checks are not clean: checks-node-compact-small-6: FAILURE, openclaw/ci-gate: FAILURE",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-small-6:FAILURE; CI / openclaw/ci-gate:FAILURE",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 120298,
       "title": "fix(config): preserve manual .bak.* backups",
