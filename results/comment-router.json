@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T17:42:44.367Z",
+  "updated_at": "2026-08-07T17:42:55.075Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:280:5217644409:2026-08-07T13:26:34Z:re_review",
-      "comment_id": "5217644409",
-      "comment_version_key": "5217644409:2026-08-07T13:26:34Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/280#issuecomment-5217644409",
-      "comment_created_at": "2026-08-07T13:26:34Z",
-      "comment_updated_at": "2026-08-07T13:26:34Z",
-      "comment_body_sha256": "69e0a3922de7c5f3187aa4e301ddfe1adf61e363f013faab16c3a046f42a0d7b",
-      "source_delivery_id": "9caac190-9263-11f1-85a1-f7512de66c47",
-      "repo": "openclaw/mcporter",
-      "issue_number": 280,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T13:27:09.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/daemon-log-serve-stream-errors",
-        "head_sha": "839fc6a388dacbff21ab09074fccac11735f9dc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1196:5099758281:2026-08-07T13:25:55Z:clawsweeper_auto_repair",
       "comment_id": "5099758281",
@@ -32270,6 +32222,39 @@
         "kind": "pull_request",
         "branch": "fix/qa-evidence-coverage-metadata-20260807",
         "head_sha": "9213088b4e4bd4e3e8769a4dd39d926f35cc3103",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120285:5219700436:2026-08-07T17:41:51Z:clawsweeper_needs_human",
+      "comment_id": "5219700436",
+      "comment_version_key": "5219700436:2026-08-07T17:41:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120285#issuecomment-5219700436",
+      "comment_created_at": "2026-08-07T16:43:50Z",
+      "comment_updated_at": "2026-08-07T17:41:51Z",
+      "comment_body_sha256": "31daa44680f02383a98262265c94f1be1c2cdce0d597a6d962db3bffa43cf594",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR-head source and direct Codex dependency contract could not be inspected because the blobless checkout and network were unavailable. (sha=f5e8d07c4fafb2b895fa972cb60fed87579b6359)",
+      "expected_head_sha": "f5e8d07c4fafb2b895fa972cb60fed87579b6359",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T17:42:55.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/refactor-steer-admission",
+        "head_sha": "f5e8d07c4fafb2b895fa972cb60fed87579b6359",
         "cluster_id": null,
         "job_path": null
       }
