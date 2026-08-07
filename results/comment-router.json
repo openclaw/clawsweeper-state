@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:33:49.054Z",
+  "updated_at": "2026-08-07T06:33:57.477Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118430:5210229280:2026-08-07T00:14:18Z:re_review",
-      "comment_id": "5210229280",
-      "comment_version_key": "5210229280:2026-08-07T00:14:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118430#issuecomment-5210229280",
-      "comment_created_at": "2026-08-07T00:14:18Z",
-      "comment_updated_at": "2026-08-07T00:14:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118430,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T01:35:31.837Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118430:5210839765:2026-08-07T01:16:40Z:re_review",
       "comment_id": "5210839765",
@@ -31287,6 +31260,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1053:5211419393:2026-08-07T06:29:51Z:clawsweeper_needs_human",
+      "comment_id": "5211419393",
+      "comment_version_key": "5211419393:2026-08-07T06:29:51Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1053#issuecomment-5211419393",
+      "comment_created_at": "2026-08-07T02:30:28Z",
+      "comment_updated_at": "2026-08-07T06:29:51Z",
+      "comment_body_sha256": "1e1fa367326546ca6bdb85f6b97e4619e7d2cbae465cb26279ab6741aff2ec5a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1053,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR documents credible live and controlled runs, but the current-head proof envelope was not independently inspectable from the ava... (sha=5ba31b2373e0c2bd132e0d116d9ce1a3dcb69764)",
+      "expected_head_sha": "5ba31b2373e0c2bd132e0d116d9ce1a3dcb69764",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T06:33:57.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/review-cache-coordination-gate",
+        "head_sha": "5ba31b2373e0c2bd132e0d116d9ce1a3dcb69764",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
