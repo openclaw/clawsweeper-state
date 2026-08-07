@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:32:59.282Z",
+  "updated_at": "2026-08-07T07:33:00.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119914:5204203407:2026-08-06T11:44:33Z:re_review",
-      "comment_id": "5204203407",
-      "comment_version_key": "5204203407:2026-08-06T11:44:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/119914#issuecomment-5204203407",
-      "comment_created_at": "2026-08-06T11:44:33Z",
-      "comment_updated_at": "2026-08-06T11:44:33Z",
-      "comment_body_sha256": "3f83a573d331d22db32193f180f2675b5ab3acfcbb03ec50394c0b59f494a68a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119914,
-      "author": "rr34",
-      "author_id": 40132894,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T02:46:05.294Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-07T02:45:25Z:clawsweeper_auto_repair",
       "comment_id": "5157206715",
@@ -32180,6 +32135,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/hyperspell-f994920",
         "head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:143:5209982610:2026-08-07T07:32:05Z:clawsweeper_needs_human",
+      "comment_id": "5209982610",
+      "comment_version_key": "5209982610:2026-08-07T07:32:05Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/143#issuecomment-5209982610",
+      "comment_created_at": "2026-08-06T23:37:37Z",
+      "comment_updated_at": "2026-08-07T07:32:05Z",
+      "comment_body_sha256": "facb0531299d5d5b711fc70b32a31e71c51fc4e13a13ad7888453fc3cb3f0947",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the embedded SQLite implementation below existing local and portable archives; the PR supplies no evidence that archives created with v1.55.0 can open, migrate, read,... (sha=54213d8eeb67de391ecb44f0876bcc2349283b46)",
+      "expected_head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:33:00.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
         "cluster_id": null,
         "job_path": null
       }
