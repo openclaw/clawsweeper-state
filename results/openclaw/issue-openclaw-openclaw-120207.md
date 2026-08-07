@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120207"
-mode: "plan"
-run_id: "31176805747"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31176805747"
+mode: "autonomous"
+run_id: "31171079611"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31171079611"
 head_sha: "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-07T12:12:26.565Z"
-canonical: "#120207"
-canonical_issue: "#120207"
+published_at: "2026-08-07T12:01:32.080Z"
+canonical: "https://github.com/openclaw/openclaw/issues/120207"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/120207"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31176805747](https://github.com/openclaw/clawsweeper/actions/runs/31176805747)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31171079611](https://github.com/openclaw/clawsweeper/actions/runs/31171079611)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #120207
+Canonical: https://github.com/openclaw/openclaw/issues/120207
 
 ## Summary
 
-#120207 remains a reproducible non-security CLI live-session bug on current main. Plan a new narrow fix PR; quarantine #120218 because its hydrated PR is security-sensitive and includes unrelated OAuth work.
+Current main confirms #120207: Claude live-session failures finalize the parser then discard accumulated output. Plan a narrow failure-owned partial-output path that preserves timeout/abort semantics.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,8 @@ Canonical: #120207
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| execute_fix | blocked |  |  | Codex /review timed out after 30000ms |
+| issue_implementation_status_comment | updated | #120207 |  |  |
 
 ## Apply Actions
 
@@ -66,11 +67,9 @@ Canonical: #120207
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120207 | keep_canonical | planned | canonical | Canonical issue for the buffered Claude CLI live-session output loss. |
-| #108315 | keep_related | planned | related | Related timeout-origin investigation; it is not a duplicate of the terminal-output-loss bug. |
-| #120218 | route_security | planned | security_sensitive | Quarantine this exact PR for central OpenClaw security handling; do not merge, repair, or use it as the canonical fix. |
-| cluster:issue-openclaw-openclaw-120207 | fix_needed | planned | canonical | A new narrow, non-security fix path is needed. |
-| cluster:issue-openclaw-openclaw-120207 | build_fix_artifact | planned | canonical | Create a replacement fix artifact for the canonical non-security bug. |
+| #120207 | fix_needed | planned | canonical | The reported loss is real for final/durable output. Repair must carry partial text as failure-owned terminal evidence while retaining the original timeout, abort, or provider failure. |
+| #108315 | keep_related | planned | related | Related timeout symptom family, but distinct root-cause scope; keep #108315 open for live reproduction. |
+| cluster:issue-openclaw-openclaw-120207 | build_fix_artifact | planned |  | A new focused PR is appropriate. |
 
 ## Needs Human
 
