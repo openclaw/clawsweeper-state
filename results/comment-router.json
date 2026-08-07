@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T18:39:06.872Z",
+  "updated_at": "2026-08-07T18:39:24.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4654028532:2026-06-08T22:17:15Z:re_review",
-      "comment_id": "4654028532",
-      "comment_version_key": "4654028532:2026-06-08T22:17:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4654028532",
-      "comment_created_at": "2026-06-08T22:17:15Z",
-      "comment_updated_at": "2026-06-08T22:17:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T13:57:16.975Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4655991161:2026-06-09T04:06:21Z:re_review",
       "comment_id": "4655991161",
@@ -32125,6 +32098,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120227:5216629833:2026-08-07T18:38:42Z:clawsweeper_needs_human",
+      "comment_id": "5216629833",
+      "comment_version_key": "5216629833:2026-08-07T18:38:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120227#issuecomment-5216629833",
+      "comment_created_at": "2026-08-07T11:45:02Z",
+      "comment_updated_at": "2026-08-07T18:38:42Z",
+      "comment_body_sha256": "d86dbe9763c345a5e0d56ac1b1332150b4a29139cc9c223fde202059c9f0345a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120227,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new regression reaches a real SQLite accessor but remains a Vitest setup with the terminal runner mocked; add a redacted after-fix configur...; Review finding: [P1] Preserve the session key’s store scope for ownership enumeration — src/plugins/registry-runtime.ts:461 - [high] Incognito locked identities can evade enumerat... (sha=ef285385debc1c3f74697c408e4d71c400da2721)",
+      "expected_head_sha": "ef285385debc1c3f74697c408e4d71c400da2721",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T18:39:24.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-run-session-scope",
+        "head_sha": "ef285385debc1c3f74697c408e4d71c400da2721",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
