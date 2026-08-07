@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:47:15.277Z",
+  "updated_at": "2026-08-07T07:47:20.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113802:5212221901:2026-08-07T04:01:40Z:re_review",
-      "comment_id": "5212221901",
-      "comment_version_key": "5212221901:2026-08-07T04:01:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113802#issuecomment-5212221901",
-      "comment_created_at": "2026-08-07T04:01:40Z",
-      "comment_updated_at": "2026-08-07T04:01:40Z",
-      "comment_body_sha256": "97d87992ea785596de18c8dd0b89888ab959ea61f70956fd931b4aac430b1420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113802,
-      "author": "ArthurNie",
-      "author_id": 264332276,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T04:40:33.032Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/goal-token-budget-accounting-20260725",
-        "head_sha": "6ce8875d6d8828a918f73bdabe462dfb4a84dcdb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113802:5080317802:2026-08-07T04:39:49Z:clawsweeper_needs_human",
       "comment_id": "5080317802",
@@ -32070,6 +32023,39 @@
         "kind": "pull_request",
         "branch": "fix/gateway-request-latency",
         "head_sha": "cb5ef12e376e57d3f1cb7ce4d636f3ae102eed33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119213:5178914758:2026-08-07T07:46:36Z:clawsweeper_auto_repair",
+      "comment_id": "5178914758",
+      "comment_version_key": "5178914758:2026-08-07T07:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119213#issuecomment-5178914758",
+      "comment_created_at": "2026-08-04T12:17:08Z",
+      "comment_updated_at": "2026-08-07T07:46:36Z",
+      "comment_body_sha256": "98b5830b408f06eb7b8a53fedbe4642b1563ffd542c0b75d7b6b0f2042c86d9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bed5df69736fb3677c6ccf294f534dc600865f9d)",
+      "expected_head_sha": "bed5df69736fb3677c6ccf294f534dc600865f9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:47:20.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-whatsapp-debounce-context",
+        "head_sha": "bed5df69736fb3677c6ccf294f534dc600865f9d",
         "cluster_id": null,
         "job_path": null
       }
