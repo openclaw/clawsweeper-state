@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:43:37.602Z",
+  "updated_at": "2026-08-07T01:43:59.031Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119961:5206397793:2026-08-06T14:53:07Z:re_review",
-      "comment_id": "5206397793",
-      "comment_version_key": "5206397793:2026-08-06T14:53:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119961#issuecomment-5206397793",
-      "comment_created_at": "2026-08-06T14:53:07Z",
-      "comment_updated_at": "2026-08-06T14:53:07Z",
-      "comment_body_sha256": "971e0905f1bcaaf07be2af5f8ffbf371064e141a30304c504e090a399900f77f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119961,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T15:35:47.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/otel-sdk-disabled-20260806",
-        "head_sha": "47f8408f89fc422bf80b30fcd7d62b29c9c48b3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119966:5206420765:2026-08-06T14:54:30Z:re_review",
       "comment_id": "5206420765",
@@ -32565,6 +32518,39 @@
         "kind": "pull_request",
         "branch": "feat/skill-publish-catalog-metadata",
         "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1104:5198086402:2026-08-07T01:43:21Z:clawsweeper_needs_human",
+      "comment_id": "5198086402",
+      "comment_version_key": "5198086402:2026-08-07T01:43:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1104#issuecomment-5198086402",
+      "comment_created_at": "2026-08-05T22:24:27Z",
+      "comment_updated_at": "2026-08-07T01:43:21Z",
+      "comment_body_sha256": "5eb8feb0fe7980afa3535f3f1100100d9189113315adac61ee63e53bdf648499",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow has OIDC and artifact-to-WSL security boundaries, so it should not merge until the current head completes a hosted run with its release artifact and Gateway candidate. (sha=6a62ca22d123cb820661a0b150601f5ea950a8d6)",
+      "expected_head_sha": "6a62ca22d123cb820661a0b150601f5ea950a8d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:43:59.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/release-candidate-e2e",
+        "head_sha": "6a62ca22d123cb820661a0b150601f5ea950a8d6",
         "cluster_id": null,
         "job_path": null
       }
