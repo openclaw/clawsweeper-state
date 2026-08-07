@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T00:05:02.303Z",
+  "updated_at": "2026-08-07T00:10:36.408Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-06T12:40:23Z:clawsweeper_needs_human",
-      "comment_id": "5121262567",
-      "comment_version_key": "5121262567:2026-08-06T12:40:23Z",
-      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
-      "comment_created_at": "2026-07-29T17:24:33Z",
-      "comment_updated_at": "2026-08-06T12:40:23Z",
-      "comment_body_sha256": "265711e7981a335892661c5af50a01257c2ff677b6d585697e862e0feaaf5711",
-      "repo": "openclaw/libterminal",
-      "issue_number": 43,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 includes an upstream ESM migration; without a manual or scheduled v11 run, this repository's stale labels, exemptions, and close behavior remain unobserved. (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
-      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T12:41:09.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/actions/stale-11.0.0",
-        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119886:5202545135:2026-08-06T12:40:40Z:clawsweeper_auto_repair",
       "comment_id": "5202545135",
@@ -33038,6 +33005,53 @@
           "label": "clawsweeper:merge-ready",
           "job_path": null
         },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-07T00:09:45Z:clawsweeper_auto_merge",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-07T00:09:45Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-07T00:09:45Z",
+      "comment_body_sha256": "6550c5c5a8fb1b07b070a3af7f2cc568f42c4a9c50c0667985b826419a0daa1d",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T00:10:36.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
         {
           "action": "merge",
           "status": "blocked",
