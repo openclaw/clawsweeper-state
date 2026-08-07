@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:44:22.587Z",
+  "updated_at": "2026-08-07T07:44:27.304Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1054:5212420038:2026-08-07T04:34:28Z:re_review",
-      "comment_id": "5212420038",
-      "comment_version_key": "5212420038:2026-08-07T04:34:28Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1054#issuecomment-5212420038",
-      "comment_created_at": "2026-08-07T04:34:28Z",
-      "comment_updated_at": "2026-08-07T04:34:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "47243930-9219-11f1-8311-0e070e82fe00",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1054,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T04:34:52.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/comment-router-public-read-fallback",
-        "head_sha": "5fb8989ebe4484b279698a68fbfe1182d1825f22",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120069:5210430993:2026-08-07T04:34:16Z:clawsweeper_needs_human",
       "comment_id": "5210430993",
@@ -32068,6 +32020,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T07:44:22.587Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117244:5150054431:2026-08-07T07:43:06Z:clawsweeper_needs_human",
+      "comment_id": "5150054431",
+      "comment_version_key": "5150054431:2026-08-07T07:43:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117244#issuecomment-5150054431",
+      "comment_created_at": "2026-08-01T05:48:28Z",
+      "comment_updated_at": "2026-08-07T07:43:06Z",
+      "comment_body_sha256": "cc44f5b16f3578b5ffd21cfd2192ea272ccfdecc9d187f4e491ae51dfae83b6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately removes ETag, Last-Modified, and validator-authorized resume from existing Control UI assistant-media responses; clients with old validators receive a full 200 re... (sha=ac43c66f97a55ee6f50f4c813c76e95061749b36)",
+      "expected_head_sha": "ac43c66f97a55ee6f50f4c813c76e95061749b36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:44:27.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-g4-mutable-media-strong-etag",
+        "head_sha": "ac43c66f97a55ee6f50f4c813c76e95061749b36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
