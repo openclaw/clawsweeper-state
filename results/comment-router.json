@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-07T13:40:11.705Z",
+  "updated_at": "2026-08-07T13:39:25.749Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120161:5213486061:2026-08-07T07:44:08Z:clawsweeper_needs_human",
+      "comment_id": "5213486061",
+      "comment_version_key": "5213486061:2026-08-07T07:44:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120161#issuecomment-5213486061",
+      "comment_created_at": "2026-08-07T06:41:09Z",
+      "comment_updated_at": "2026-08-07T07:44:08Z",
+      "comment_body_sha256": "d0ec51559ee8162715140c5a028a5c126446f2be2e9b6e945a43523b749b57cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The frozen-target fallback is automation-sensitive; retaining the parser in sparse checkout and its exact-list guard is necessary to avoid a module-resolution failure. (sha=710e894be8a8af8e12dd219fdd1cc87fda77cc15)",
+      "expected_head_sha": "710e894be8a8af8e12dd219fdd1cc87fda77cc15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T08:42:32.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-shard-concurrency-env",
+        "head_sha": "710e894be8a8af8e12dd219fdd1cc87fda77cc15",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120164:5213492618:2026-08-07T07:43:50Z:clawsweeper_auto_repair",
       "comment_id": "5213492618",
@@ -31917,39 +31950,6 @@
       "status": "skipped",
       "processed_at": "2026-08-07T13:39:25.749Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119686:5195431276:2026-08-07T13:39:24Z:clawsweeper_auto_repair",
-      "comment_id": "5195431276",
-      "comment_version_key": "5195431276:2026-08-07T13:39:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119686#issuecomment-5195431276",
-      "comment_created_at": "2026-08-05T18:02:11Z",
-      "comment_updated_at": "2026-08-07T13:39:24Z",
-      "comment_body_sha256": "121e4862ec8f3032795daf1bdf4aa62d29d64fb243d2cc50a56e364cd6ab06b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119686,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3137196a9b148fa14e672275ef4338fccc10b196)",
-      "expected_head_sha": "3137196a9b148fa14e672275ef4338fccc10b196",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T13:40:11.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wikimedia-thumbnail-fallback",
-        "head_sha": "3137196a9b148fa14e672275ef4338fccc10b196",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
