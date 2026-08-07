@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:41:38.931Z",
+  "updated_at": "2026-08-07T03:42:01.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:100960:5208306957:2026-08-06T18:45:34Z:re_review",
-      "comment_id": "5208306957",
-      "comment_version_key": "5208306957:2026-08-06T18:45:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/100960#issuecomment-5208306957",
-      "comment_created_at": "2026-08-06T18:45:34Z",
-      "comment_updated_at": "2026-08-06T18:45:34Z",
-      "comment_body_sha256": "daec44beaab6d75f5c0da9a59cbce4eaf15fafe2b96eafcd430a4f32974b248f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 100960,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 2155498943dd4687d446b59f3df0124bba59ee51. clean rebase-only refresh onto upstream/main dcf7fadf2c03d594f455e140194044a492f1fc6e; range-diff is patch-equivalent across all four commits; local git diff --check and conflict-marker search passed; focused vitest remains unavailable in this windows clone because dependencies are not materialized, so github ci is the package-materialized proof path",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T23:35:50.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/cli-catalog-review-hardening",
-        "head_sha": "2155498943dd4687d446b59f3df0124bba59ee51",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119967:5206084299:2026-08-06T23:35:13Z:clawsweeper_auto_repair",
       "comment_id": "5206084299",
@@ -31089,6 +31042,39 @@
         "kind": "pull_request",
         "branch": "fix/bench-gateway-surrogate-probe-error",
         "head_sha": "7a69cb1819a8e4a5177595942f5bfc1b9d2dd3e1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119942:5204764121:2026-08-07T03:41:23Z:clawsweeper_needs_human",
+      "comment_id": "5204764121",
+      "comment_version_key": "5204764121:2026-08-07T03:41:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119942#issuecomment-5204764121",
+      "comment_created_at": "2026-08-06T12:42:16Z",
+      "comment_updated_at": "2026-08-07T03:41:23Z",
+      "comment_body_sha256": "dbe61d1665b6234e7d992d3d2e6d1a5d628e47ecffe1cdaa2e9dfcaf2950e054",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Authorize the resolved dependency delta** - The exact head is blocked by dependency-graph guard for shrinkwrap and package metadata changes; an administrator or security owner must insp...; Review finding: [medium] Authorize the resolved dependency delta — scripts/github/dependency-guard.mjs:965 - [medium] Verify the Codex relay contract (sha=b8041401e8bf2c16a3415c11469f3e0dfb148577)",
+      "expected_head_sha": "b8041401e8bf2c16a3415c11469f3e0dfb148577",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T03:42:01.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/extended-stable-2026.6.35-rebuild",
+        "head_sha": "b8041401e8bf2c16a3415c11469f3e0dfb148577",
         "cluster_id": null,
         "job_path": null
       }
