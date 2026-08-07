@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T09:42:09.806Z",
+  "updated_at": "2026-08-07T09:42:11.888Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116677:5139639947:2026-08-07T05:57:29Z:clawsweeper_auto_repair",
-      "comment_id": "5139639947",
-      "comment_version_key": "5139639947:2026-08-07T05:57:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116677#issuecomment-5139639947",
-      "comment_created_at": "2026-07-31T05:34:22Z",
-      "comment_updated_at": "2026-08-07T05:57:29Z",
-      "comment_body_sha256": "cc85261f9987f0ea5eebbf1a4b4055a71daebb2cca2221ab4a2e3349d107106b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116677,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e3e0e8aa6ac44c608486254c2c58ae8514fd7e5)",
-      "expected_head_sha": "2e3e0e8aa6ac44c608486254c2c58ae8514fd7e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T06:39:36.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oss-find/openclaw-2026-07-31",
-        "head_sha": "2e3e0e8aa6ac44c608486254c2c58ae8514fd7e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116794:5142320482:2026-08-07T05:42:03Z:clawsweeper_needs_human",
       "comment_id": "5142320482",
@@ -32235,6 +32202,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T09:42:09.806Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117884:5156153311:2026-08-07T09:41:24Z:clawsweeper_needs_human",
+      "comment_id": "5156153311",
+      "comment_version_key": "5156153311:2026-08-07T09:41:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117884#issuecomment-5156153311",
+      "comment_created_at": "2026-08-02T07:17:17Z",
+      "comment_updated_at": "2026-08-07T09:41:24Z",
+      "comment_body_sha256": "f54858141f6eb5ad26bdc7045fdc9cc519a3256eb4effd4a043eaac19f2acab6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117884,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change affects the model-idle availability boundary; exact-head CI is still in progress, so merge should wait for the required checks to complete green. (sha=0d96a7c12923800a46919a10dad0c68b45d54310)",
+      "expected_head_sha": "0d96a7c12923800a46919a10dad0c68b45d54310",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T09:42:11.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/idle-watchdog-merged-signal",
+        "head_sha": "0d96a7c12923800a46919a10dad0c68b45d54310",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
