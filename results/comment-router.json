@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T13:58:55.392Z",
+  "updated_at": "2026-08-07T13:58:59.550Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120115:5211499282:2026-08-07T08:41:15Z:clawsweeper_needs_human",
-      "comment_id": "5211499282",
-      "comment_version_key": "5211499282:2026-08-07T08:41:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120115#issuecomment-5211499282",
-      "comment_created_at": "2026-08-07T02:42:06Z",
-      "comment_updated_at": "2026-08-07T08:41:15Z",
-      "comment_body_sha256": "acbe48ff8d29d44496de7566c9273557979eb138dfe8dd7446579da2d0d4caa8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A merge would establish a compatibility promise for an external standard and Codex projection, but this environment could not independently inspect the required upstream and sibling-C... (sha=6658ec02650a07e9349e6136b4ed91ad2e720f5e)",
-      "expected_head_sha": "6658ec02650a07e9349e6136b4ed91ad2e720f5e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T09:34:58.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/openai-agent-plugins-e8b082",
-        "head_sha": "6658ec02650a07e9349e6136b4ed91ad2e720f5e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120161:5213486061:2026-08-07T08:44:13Z:clawsweeper_auto_repair",
       "comment_id": "5213486061",
@@ -31657,6 +31624,54 @@
       "status": "skipped",
       "processed_at": "2026-08-07T13:58:55.392Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118682:5217984540:2026-08-07T13:58:27Z:re_review",
+      "comment_id": "5217984540",
+      "comment_version_key": "5217984540:2026-08-07T13:58:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118682#issuecomment-5217984540",
+      "comment_created_at": "2026-08-07T13:58:27Z",
+      "comment_updated_at": "2026-08-07T13:58:27Z",
+      "comment_body_sha256": "438230bdaec5cd212bde7ac477289df71bb490b95e3798391178ccdc8e726aba",
+      "source_delivery_id": "10d49f60-9268-11f1-9e20-d5937a46ab20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118682,
+      "author": "RerankerGuo",
+      "author_id": 121015044,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T13:58:56.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-79469-effective-reasoning",
+        "head_sha": "40914549a933bd4dfe91dc8ae3b6fa4308e309e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
