@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T02:38:11.504Z",
+  "updated_at": "2026-08-07T02:38:48.181Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120040:5208726521:2026-08-06T19:56:02Z:re_review",
-      "comment_id": "5208726521",
-      "comment_version_key": "5208726521:2026-08-06T19:56:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120040#issuecomment-5208726521",
-      "comment_created_at": "2026-08-06T19:56:02Z",
-      "comment_updated_at": "2026-08-06T19:56:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120040,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T22:08:19.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-node-platform-contract",
-        "head_sha": "5444ab41b18fd0fe0ed5a21adf8c1d05b9ba1d58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120018:5208726527:2026-08-06T19:56:02Z:re_review",
       "comment_id": "5208726527",
@@ -31749,6 +31702,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T02:38:11.504Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119993:5209958691:2026-08-07T02:38:16Z:clawsweeper_auto_repair",
+      "comment_id": "5209958691",
+      "comment_version_key": "5209958691:2026-08-07T02:38:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119993#issuecomment-5209958691",
+      "comment_created_at": "2026-08-06T23:34:10Z",
+      "comment_updated_at": "2026-08-07T02:38:16Z",
+      "comment_body_sha256": "2406df6d33d601aaab269cb02ef254b26d10b256d034379e61a184dd9d50f7ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6f4344951f18d3daab59802526d7695b7bc1fccb)",
+      "expected_head_sha": "6f4344951f18d3daab59802526d7695b7bc1fccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T02:38:48.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-vector-probe-silent-fail",
+        "head_sha": "6f4344951f18d3daab59802526d7695b7bc1fccb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
