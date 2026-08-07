@@ -1,0 +1,133 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120134",
+  "mode": "autonomous",
+  "run_id": "31176038883",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31176038883",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120134.md",
+  "published_at": "2026-08-07T12:31:38.115Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120134",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120134",
+  "canonical_pr": null,
+  "summary": "#120134 remains a narrow, source-reproducible Windows Scheduled Task restart bug on main 01cc71060d6c57eff142cfc210685c651ccb6397. The verified gateway process is tree-killed immediately after `/End`, while the snapshot lacks ParentProcessId needed to recognize the invoking CLI as a descendant. A new focused fix PR is warranted. No code was changed here because this worker checkout is read-only; the existing focused test command is also blocked by missing node_modules (missing p-map).",
+  "actions": [
+    {
+      "target": "#63491",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "Shared Windows Scheduled Task area, distinct root cause and remaining work."
+    },
+    {
+      "target": "#90158",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "Related restart lifecycle surface, but a separate `/Run` failure contract."
+    },
+    {
+      "target": "#99518",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this exact approval-boundary report to central OpenClaw security handling without blocking the non-security fix."
+    },
+    {
+      "target": "#120134",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "Implement the owner-level descendant exception, preserving external verified-tree cleanup and failure on an unreleased port."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120134",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "No viable implementation PR is hydrated; create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-120134."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120230",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120134",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120230",
+      "commit": "d4b40a7f32aa597302c7c7852e3db1109c36e33f",
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120134",
+      "pr": "https://github.com/openclaw/openclaw/pull/120230",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120230",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120230",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(windows): preserve gateway restart CLI during Scheduled Task handoff",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T12:02:07.931Z",
-  "count": 17,
+  "generated_at": "2026-08-07T12:32:16.196Z",
+  "count": 18,
   "summary": {
-    "open_prs": 17,
+    "open_prs": 18,
     "ready_candidates": 0,
     "security_hold": 2,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
     "needs_checks": 8,
     "needs_review": 0,
-    "needs_merge_preflight": 17,
+    "needs_merge_preflight": 18,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,66 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120230,
+      "title": "fix(windows): preserve gateway restart CLI during Scheduled Task handoff",
+      "url": "https://github.com/openclaw/openclaw/pull/120230",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120134",
+      "head_sha": "d4b40a7f32aa597302c7c7852e3db1109c36e33f",
+      "cluster_id": "issue-openclaw-openclaw-120134",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120134.md",
+      "updated_at": "2026-08-07T12:21:45Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 124,
+        "counts": {
+          "SKIPPED": 41,
+          "SUCCESS": 82,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31176038883",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31176038883",
+        "cluster_id": "issue-openclaw-openclaw-120134",
+        "published_at": "2026-08-07T12:31:38.115Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120230",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(windows): preserve gateway restart CLI during Scheduled Task handoff",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 120215,
       "title": "fix(plugins): retain incognito scope for embedded session ownership",

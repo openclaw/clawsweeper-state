@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120134"
 mode: "autonomous"
-run_id: "31159533620"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31159533620"
+run_id: "31176038883"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31176038883"
 head_sha: "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-07T08:02:42.162Z"
-canonical: "#120134"
-canonical_issue: "#120134"
+result_status: "planned"
+published_at: "2026-08-07T12:31:38.115Z"
+canonical: "https://github.com/openclaw/openclaw/issues/120134"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/120134"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31159533620](https://github.com/openclaw/clawsweeper/actions/runs/31159533620)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31176038883](https://github.com/openclaw/clawsweeper/actions/runs/31176038883)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: #120134
+Canonical: https://github.com/openclaw/openclaw/issues/120134
 
 ## Summary
 
-#120134 remains a valid, narrow Scheduled Task restart defect on ea4466e5dce50cf972524623990e27db8f3b32be. The required repair is specified, but this worker has a read-only checkout and cannot create/update clawsweeper/issue-openclaw-openclaw-120134 or run the resulting regression suite and Windows proof.
+#120134 remains a narrow, source-reproducible Windows Scheduled Task restart bug on main 01cc71060d6c57eff142cfc210685c651ccb6397. The verified gateway process is tree-killed immediately after `/End`, while the snapshot lacks ParentProcessId needed to recognize the invoking CLI as a descendant. A new focused fix PR is warranted. No code was changed here because this worker checkout is read-only; the existing focused test command is also blocked by missing node_modules (missing p-map).
 
 ## Impact
 
@@ -54,23 +54,24 @@ Canonical: #120134
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/120230 | clawsweeper/issue-openclaw-openclaw-120134 |  |
+| issue_implementation_status_comment | updated | #120134 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #120230 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120134 | fix_needed | planned | canonical | Implement the narrow owner-boundary repair before opening the allowed fix PR. |
-| #120134 | build_fix_artifact | planned | canonical | A new fix PR is allowed, but cannot be produced from the read-only worker checkout. |
-| #63491 | keep_related | planned | related | Related Windows Scheduled Task symptoms, different root cause and repair boundary. |
-| #90158 | keep_related | planned | related | Separate failure phase and proposed owner behavior. |
-| #99518 | route_security | planned | security_sensitive | Quarantined to central security handling without blocking the ordinary Windows restart repair. |
+| #63491 | keep_related | planned | related | Shared Windows Scheduled Task area, distinct root cause and remaining work. |
+| #90158 | keep_related | planned | related | Related restart lifecycle surface, but a separate `/Run` failure contract. |
+| #99518 | route_security | planned | security_sensitive | Route this exact approval-boundary report to central OpenClaw security handling without blocking the non-security fix. |
+| #120134 | fix_needed | planned | canonical | Implement the owner-level descendant exception, preserving external verified-tree cleanup and failure on an unreleased port. |
+| cluster:issue-openclaw-openclaw-120134 | build_fix_artifact | planned | canonical | No viable implementation PR is hydrated; create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-120134. |
 
 ## Needs Human
 

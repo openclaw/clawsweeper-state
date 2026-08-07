@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T12:02:07.931Z
+Generated: 2026-08-07T12:32:16.196Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 17 |
+| open_prs | 18 |
 | ready_candidates | 0 |
 | security_hold | 2 |
 | needs_rebase | 3 |
 | mergeability_unknown | 0 |
 | needs_checks | 8 |
 | needs_review | 0 |
-| needs_merge_preflight | 17 |
+| needs_merge_preflight | 18 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -30,6 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | issue-openclaw-openclaw-120134 | MERGEABLE | BLOCKED | SKIPPED:41 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120215](https://github.com/openclaw/openclaw/pull/120215) | fix(plugins): retain incognito scope for embedded session ownership | issue-openclaw-openclaw-120178 | MERGEABLE | BEHIND | SKIPPED:47 SUCCESS:81 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | issue-openclaw-openclaw-120142 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:49 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | issue-openclaw-openclaw-89254 | MERGEABLE | BEHIND | SKIPPED:48 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
