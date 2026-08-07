@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T21:31:35.589Z",
+  "updated_at": "2026-08-07T21:32:02.914Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:76221:4364540514:2026-08-02T22:53:44Z:clawsweeper_auto_repair",
-      "comment_id": "4364540514",
-      "comment_version_key": "4364540514:2026-08-02T22:53:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/76221#issuecomment-4364540514",
-      "comment_created_at": "2026-05-02T19:17:50Z",
-      "comment_updated_at": "2026-08-02T22:53:44Z",
-      "comment_body_sha256": "c1fa2f9334a0a17b226c31b242203883f648b3dca83ed1efa09ea0cdf1a74f46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 76221,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a74a1e2e73026d2d5e03b0fa7cf16006d9257701)",
-      "expected_head_sha": "a74a1e2e73026d2d5e03b0fa7cf16006d9257701",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T16:49:43.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-anthropic-vertex-audit",
-        "head_sha": "a74a1e2e73026d2d5e03b0fa7cf16006d9257701",
-        "cluster_id": "automerge-openclaw-openclaw-76221",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76221.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78441:4387483564:2026-08-07T16:44:23Z:clawsweeper_needs_human",
       "comment_id": "4387483564",
@@ -32395,6 +32362,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120300:5222205492:2026-08-07T21:31:08Z:re_review",
+      "comment_id": "5222205492",
+      "comment_version_key": "5222205492:2026-08-07T21:31:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120300#issuecomment-5222205492",
+      "comment_created_at": "2026-08-07T21:31:08Z",
+      "comment_updated_at": "2026-08-07T21:31:08Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "4e56ef70-92a7-11f1-8bf2-a12cea6051d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120300,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T21:32:00.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-update-restart-auth-owner-20260807",
+        "head_sha": "1b940192e8ade11f87f6184c8575403e86ee0d94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
