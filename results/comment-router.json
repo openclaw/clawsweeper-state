@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T02:42:39.221Z",
+  "updated_at": "2026-08-07T02:42:50.800Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103623:5208015670:2026-08-06T17:58:09Z:re_review",
-      "comment_id": "5208015670",
-      "comment_version_key": "5208015670:2026-08-06T17:58:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103623#issuecomment-5208015670",
-      "comment_created_at": "2026-08-06T17:58:09Z",
-      "comment_updated_at": "2026-08-06T17:58:09Z",
-      "comment_body_sha256": "0848b29921559911386675cb5bba0aa819092cc33e9dd352b882e9414c607f02",
-      "source_delivery_id": "62f83ca0-91c0-11f1-96ca-9775a3ab9696",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103623,
-      "author": "lit26",
-      "author_id": 51225681,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T22:30:51.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/stepfun-default-3.7-flash",
-        "head_sha": "dd3ae6347a160e06cbd209cdc496e09b340100d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119874:5209558447:2026-08-06T22:26:49Z:re_review",
       "comment_id": "5209558447",
@@ -31294,6 +31246,39 @@
         "kind": "pull_request",
         "branch": "claude/openai-agent-plugins-e8b082",
         "head_sha": "ffc9b5318f3c2cddcf0a9818c80b1cf5a40e7062",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116875:5146050233:2026-08-07T02:42:01Z:clawsweeper_needs_human",
+      "comment_id": "5146050233",
+      "comment_version_key": "5146050233:2026-08-07T02:42:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116875#issuecomment-5146050233",
+      "comment_created_at": "2026-07-31T18:08:51Z",
+      "comment_updated_at": "2026-08-07T02:42:01Z",
+      "comment_body_sha256": "8228ad482a238c38c69a642e7c5456dd94f99ec007f7f5b299a1e7d1c059f0ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116875,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The real macOS restart trace predates the final commit’s restoration-error wording; focused exact-head tests cover that persistent-failure branch. (sha=7773e3cd0dae456a0a9777f62b48b50b42f6392b)",
+      "expected_head_sha": "7773e3cd0dae456a0a9777f62b48b50b42f6392b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T02:42:50.800Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-restart-bootstrap-teardown-retry",
+        "head_sha": "7773e3cd0dae456a0a9777f62b48b50b42f6392b",
         "cluster_id": null,
         "job_path": null
       }
