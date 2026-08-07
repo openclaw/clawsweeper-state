@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T00:43:01.706Z",
+  "updated_at": "2026-08-07T00:43:04.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1104:5205373220:2026-08-06T13:38:28Z:re_review",
-      "comment_id": "5205373220",
-      "comment_version_key": "5205373220:2026-08-06T13:38:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1104#issuecomment-5205373220",
-      "comment_created_at": "2026-08-06T13:38:28Z",
-      "comment_updated_at": "2026-08-06T13:38:28Z",
-      "comment_body_sha256": "accfef440ed004a23acf073b68547fad1148c013ad5c37b813d1d328bf194712",
-      "source_delivery_id": "1bb46950-919c-11f1-832c-01608b577217",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1104,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T13:39:04.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/release-candidate-e2e",
-        "head_sha": "4a48e045810cfc34188f8521c88ac69b09d6cfd6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1044:5205375065:2026-08-06T13:38:36Z:clawsweeper_needs_human",
       "comment_id": "5205375065",
@@ -32902,6 +32854,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T00:43:01.706Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120080:5210473110:2026-08-07T00:42:26Z:clawsweeper_needs_human",
+      "comment_id": "5210473110",
+      "comment_version_key": "5210473110:2026-08-07T00:42:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120080#issuecomment-5210473110",
+      "comment_created_at": "2026-08-07T00:42:26Z",
+      "comment_updated_at": "2026-08-07T00:42:26Z",
+      "comment_body_sha256": "2449514b34c14502dc90a5e8e8362bfcf94a7b4dc9599ccb8196b650e86ef411",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and the supplied exact-head check snapshot is incomplete; refresh the three-way review and let required CI finish before merging. (sha=d76f0cf68a5ab1216595cefd714b6ebdf1ee62dd)",
+      "expected_head_sha": "d76f0cf68a5ab1216595cefd714b6ebdf1ee62dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T00:43:04.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/fix-current-main-ci-baselines",
+        "head_sha": "d76f0cf68a5ab1216595cefd714b6ebdf1ee62dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
