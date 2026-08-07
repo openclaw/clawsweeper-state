@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-07T16:46:31.501Z",
+  "updated_at": "2026-08-07T16:46:35.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:283:5194651438:2026-08-05T16:46:08Z:automerge",
-      "comment_id": "5194651438",
-      "comment_version_key": "5194651438:2026-08-05T16:46:08Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/283#issuecomment-5194651438",
-      "comment_created_at": "2026-08-05T16:46:08Z",
-      "comment_updated_at": "2026-08-05T16:46:08Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/crabpot",
-      "issue_number": 283,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T12:30:50.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "0cb363fdae97a06cc91f96525529cb3907ae20ad",
-        "cluster_id": "automerge-openclaw-crabpot-283",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabpot:283:5194849316:2026-08-05T17:05:22Z:automerge",
       "comment_id": "5194849316",
@@ -32099,6 +32046,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T16:46:31.501Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:260:5214491899:2026-08-07T16:45:54Z:clawsweeper_needs_human",
+      "comment_id": "5214491899",
+      "comment_version_key": "5214491899:2026-08-07T16:45:54Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/260#issuecomment-5214491899",
+      "comment_created_at": "2026-08-07T08:24:18Z",
+      "comment_updated_at": "2026-08-07T16:45:54Z",
+      "comment_body_sha256": "4ab283edcc2b4960d29c681731942609c833650fcf4a762067ed56a4c025463e",
+      "repo": "openclaw/crabline",
+      "issue_number": 260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this MEMBER-authored Mattermost protocol-fidelity repair be approved for merge after confirming the cited native direct-message naming contrac... (sha=9fc67fa2348489f0ee805570c4941563a6ca8310)",
+      "expected_head_sha": "9fc67fa2348489f0ee805570c4941563a6ca8310",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T16:46:35.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-canonical-dm-identity",
+        "head_sha": "9fc67fa2348489f0ee805570c4941563a6ca8310",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
