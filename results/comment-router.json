@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-07T01:42:58.746Z",
+  "updated_at": "2026-08-07T01:41:56.683Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119686:5205885194:2026-08-06T14:16:52Z:re_review",
+      "comment_id": "5205885194",
+      "comment_version_key": "5205885194:2026-08-06T14:16:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119686#issuecomment-5205885194",
+      "comment_created_at": "2026-08-06T14:16:52Z",
+      "comment_updated_at": "2026-08-06T14:16:52Z",
+      "comment_body_sha256": "e88ccf17fe9489d3fb9ddba037581b47302f69641a49859adc168889de82e5fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119686,
+      "author": "sappkevin",
+      "author_id": 109696421,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-06T15:35:47.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wikimedia-thumbnail-fallback",
+        "head_sha": "96a3a2e1a6a48eed698323ae8fa6f49f97a8e113",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117339:5206274787:2026-08-06T14:44:28Z:re_review",
       "comment_id": "5206274787",
@@ -32662,39 +32709,6 @@
         "kind": "pull_request",
         "branch": "fix/zalouser-fixture-windows-teardown",
         "head_sha": "9676594925c45a7f36554271855370affa7a1d7b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119892:5202959765:2026-08-07T01:42:17Z:clawsweeper_needs_human",
-      "comment_id": "5202959765",
-      "comment_version_key": "5202959765:2026-08-07T01:42:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119892#issuecomment-5202959765",
-      "comment_created_at": "2026-08-06T09:41:32Z",
-      "comment_updated_at": "2026-08-07T01:42:17Z",
-      "comment_body_sha256": "ae19c081d08fce26358bc927756e19eb3854a0e5e1da2751f300bd6a1505a893",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119892,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds a public AI-host dispatch API and hidden evidence-policy inputs while changing provider egress and auth selection; maintainers need to accept that as a durable compati... (sha=6c117e16a55450ab6636f35ea363dc2b9936dd87)",
-      "expected_head_sha": "6c117e16a55450ab6636f35ea363dc2b9936dd87",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T01:42:58.746Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/code-mode-trace-projection-stack-20260806",
-        "head_sha": "6c117e16a55450ab6636f35ea363dc2b9936dd87",
         "cluster_id": null,
         "job_path": null
       }
