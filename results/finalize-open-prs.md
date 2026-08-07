@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T00:14:27.526Z
+Generated: 2026-08-07T00:30:39.439Z
 
 ## Summary
 
@@ -30,6 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#120076](https://github.com/openclaw/openclaw/pull/120076) | fix(mcp): receive loopback OAuth login callbacks | issue-openclaw-openclaw-120019 | MERGEABLE | BLOCKED | SKIPPED:42 SUCCESS:77 FAILURE:5 NEUTRAL:1; blockers:5 | needs_merge_state:BLOCKED, needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | issue-openclaw-openclaw-119962 | MERGEABLE | BEHIND | SUCCESS:71 SKIPPED:21 FAILURE:5; blockers:5 | needs_merge_state:BEHIND, needs_checks:CI / checks-ui-e2e (1/4):FAILURE; CI / checks-ui-e2e (3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | CONFLICTING | DIRTY | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
@@ -45,4 +46,3 @@ Status: report_only
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | issue-openclaw-openclaw-119692 | MERGEABLE | BEHIND | SKIPPED:39 SUCCESS:80 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | issue-openclaw-openclaw-92199 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:44 SUCCESS:58 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119528](https://github.com/openclaw/openclaw/pull/119528) | fix(agents): timestamp recovered Claude CLI history | issue-openclaw-openclaw-94679 | MERGEABLE | BEHIND | CANCELLED:10 SKIPPED:53 SUCCESS:84 FAILURE:2 NEUTRAL:1; blockers:5 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#119512](https://github.com/openclaw/openclaw/pull/119512) | fix(sessions): reuse identities during target dedupe | issue-openclaw-openclaw-119440 | MERGEABLE | BEHIND | CANCELLED:9 SKIPPED:43 SUCCESS:87 NEUTRAL:1; blockers:4 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

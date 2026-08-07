@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T00:14:27.526Z",
+  "generated_at": "2026-08-07T00:30:39.439Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
@@ -26,6 +26,74 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120076,
+      "title": "fix(mcp): receive loopback OAuth login callbacks",
+      "url": "https://github.com/openclaw/openclaw/pull/120076",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120019",
+      "head_sha": "564ddda18e1b128a75284416b4589b90d0f3cdb4",
+      "cluster_id": "issue-openclaw-openclaw-120019",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
+      "updated_at": "2026-08-07T00:16:26Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 125,
+        "counts": {
+          "SKIPPED": 42,
+          "SUCCESS": 77,
+          "FAILURE": 5,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-large-1:FAILURE",
+          "CI / checks-node-compact-large-3:FAILURE",
+          "CI / check-dependencies:FAILURE",
+          "CI / check-test-types:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31131169980",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31131169980",
+        "cluster_id": "issue-openclaw-openclaw-120019",
+        "published_at": "2026-08-07T00:30:06.658Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120076",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(mcp): receive loopback OAuth login callbacks",
+          "idempotency_key": null,
+          "reason": "checks are not clean: checks-node-compact-large-1: FAILURE, checks-node-compact-large-3: FAILURE, check-dependencies: FAILURE, check-test-types: FAILURE, openclaw/ci-gate: FAILURE",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 119983,
       "title": "fix(workboard): include operator notes in Start prompt",
@@ -1117,80 +1185,6 @@
           "title": "fix(agents): timestamp recovered Claude CLI history",
           "idempotency_key": null,
           "reason": "checks are not clean: QA Smoke CI (profile 2/4): FAILURE, openclaw/ci-gate: FAILURE",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119512,
-      "title": "fix(sessions): reuse identities during target dedupe",
-      "url": "https://github.com/openclaw/openclaw/pull/119512",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119440",
-      "head_sha": "b0607b7a9d203ab0d87799c70feaa3b284dbb475",
-      "cluster_id": "issue-openclaw-openclaw-119440",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119440.md",
-      "updated_at": "2026-08-06T08:30:21Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 140,
-        "counts": {
-          "CANCELLED": 9,
-          "SKIPPED": 43,
-          "SUCCESS": 87,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119512#issuecomment-5188260282",
-            "submitted_at": "2026-08-05T06:15:40Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30978734831",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30978734831",
-        "cluster_id": "issue-openclaw-openclaw-119440",
-        "published_at": "2026-08-05T06:19:16.274Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119512",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(sessions): reuse identities during target dedupe",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,

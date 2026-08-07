@@ -1,0 +1,125 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120019",
+  "mode": "autonomous",
+  "run_id": "31131169980",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31131169980",
+  "head_sha": "3f368a3e394d76c31584fce700cee9a62485cb66",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
+  "published_at": "2026-08-07T00:30:06.658Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120019",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120019",
+  "canonical_pr": null,
+  "summary": "Confirmed current-main MCP OAuth loopback completion defect. A narrow CLI-owned fix is planned, but this worker cannot edit the read-only checkout or create its branch; the artifact is ready for the deterministic executor.",
+  "actions": [
+    {
+      "target": "#120019",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120019",
+      "candidate_fix": null,
+      "reason": "Keep the source issue open while the credited fix PR is prepared."
+    },
+    {
+      "target": "#120019",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120019",
+      "candidate_fix": null,
+      "reason": "Existing expected loopback OAuth behavior is broken on current main; the canonical repair is a narrow CLI integration of the existing callback helper."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120019",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120019",
+      "candidate_fix": null,
+      "reason": "Narrow implementation artifact for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120019",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120019",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only execution environment; the deterministic executor can apply the attached artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120076",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120019",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120076",
+      "commit": "564ddda18e1b128a75284416b4589b90d0f3cdb4",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120019",
+      "pr": "https://github.com/openclaw/openclaw/pull/120076",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120076",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120076",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(mcp): receive loopback OAuth login callbacks",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-1: FAILURE, checks-node-compact-large-3: FAILURE, check-dependencies: FAILURE, check-test-types: FAILURE, openclaw/ci-gate: FAILURE",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
