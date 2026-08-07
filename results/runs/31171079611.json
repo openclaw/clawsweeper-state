@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120207",
+  "mode": "autonomous",
+  "run_id": "31171079611",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31171079611",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120207.md",
+  "published_at": "2026-08-07T12:01:32.080Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120207",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120207",
+  "canonical_pr": null,
+  "summary": "Current main confirms #120207: Claude live-session failures finalize the parser then discard accumulated output. Plan a narrow failure-owned partial-output path that preserves timeout/abort semantics.",
+  "actions": [
+    {
+      "target": "#120207",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "The reported loss is real for final/durable output. Repair must carry partial text as failure-owned terminal evidence while retaining the original timeout, abort, or provider failure."
+    },
+    {
+      "target": "#108315",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "Related timeout symptom family, but distinct root-cause scope; keep #108315 open for live reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120207",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120207",
+      "candidate_fix": null,
+      "reason": "A new focused PR is appropriate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review timed out after 30000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120207",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
