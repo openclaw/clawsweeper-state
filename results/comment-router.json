@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T19:44:56.795Z",
+  "updated_at": "2026-08-07T19:45:14.548Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116372:5218651555:2026-08-07T15:00:49Z:re_review",
-      "comment_id": "5218651555",
-      "comment_version_key": "5218651555:2026-08-07T15:00:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116372#issuecomment-5218651555",
-      "comment_created_at": "2026-08-07T15:00:49Z",
-      "comment_updated_at": "2026-08-07T15:00:49Z",
-      "comment_body_sha256": "16aa9023827103f6e3b6828c65221f7aa87e237b311f57f9eeb57bfcd5f5a5ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116372,
-      "author": "sloptop-the-terrible",
-      "author_id": 310909503,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T15:35:14.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-opus-5-capabilities",
-        "head_sha": "d526202e62405af78c5607a925e4594513c9f123",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116373:5218651754:2026-08-07T15:00:50Z:re_review",
       "comment_id": "5218651754",
@@ -32194,6 +32147,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
         "head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98707:4857554789:2026-08-07T19:44:04Z:clawsweeper_needs_human",
+      "comment_id": "4857554789",
+      "comment_version_key": "4857554789:2026-08-07T19:44:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/98707#issuecomment-4857554789",
+      "comment_created_at": "2026-07-01T16:17:26Z",
+      "comment_updated_at": "2026-08-07T19:44:04Z",
+      "comment_body_sha256": "64f00c7f661a28c4a9b8adc4731d9ccdadcd2384c4db89d7c0194c289991944a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 98707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Use a current media-core response reader (P1)** - The added @openclaw/media-core/read-response-with-limit subpath is absent from current main’s package exports, so this dirty branch will fail module resolution a...; Review finding: [P1] Use a current media-core response reader — src/plugins/credential-broker.ts:4 - [P1] Preserve the MCP agent-session context — src/mcp/plugin-tools-serve.ts:43... (sha=3a21400824537008b36fbd6c08febd98e2907930)",
+      "expected_head_sha": "3a21400824537008b36fbd6c08febd98e2907930",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T19:45:14.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/brokered-credential-foundation",
+        "head_sha": "3a21400824537008b36fbd6c08febd98e2907930",
         "cluster_id": null,
         "job_path": null
       }
