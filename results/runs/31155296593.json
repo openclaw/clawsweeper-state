@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120134",
+  "mode": "autonomous",
+  "run_id": "31155296593",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31155296593",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120134.md",
+  "published_at": "2026-08-07T07:24:24.847Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120134",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120134",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the Windows Scheduled Task restart defect at source level. A narrow owner-boundary fix is ready as an artifact; implementation and validation are blocked because this checkout is read-only and lacks node_modules/p-map.",
+  "actions": [
+    {
+      "target": "#63491",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as a related Windows Scheduled Task investigation; this narrow repair does not resolve its broader listener-loss report."
+    },
+    {
+      "target": "#90158",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The reported /Run failure occurs after #120134's cleanup-and-port-release stage and needs a separate recovery-policy decision."
+    },
+    {
+      "target": "#99518",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Approval-boundary policy is outside this ordinary bug-fix lane."
+    },
+    {
+      "target": "#120134",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "A verified-snapshot ancestor check can narrowly preserve the restarting CLI while retaining ordinary external tree cleanup and the existing port-release failure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120134",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120134",
+      "candidate_fix": null,
+      "reason": "Executor should apply the narrow artifact on clawsweeper/issue-openclaw-openclaw-120134, install dependencies remotely, and obtain Windows lifecycle proof before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
