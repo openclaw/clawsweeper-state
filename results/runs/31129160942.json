@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-44289",
+  "mode": "autonomous",
+  "run_id": "31129160942",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31129160942",
+  "head_sha": "9725dabfeba014e742e0b54d84b2613e22d60716",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-44289.md",
+  "published_at": "2026-08-07T00:07:32.161Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/44289",
+  "canonical_pr": null,
+  "summary": "#44289 remains reproducible on main b4a26783: parity tests manually compare registry-derived SecretRef docs, but no generator/check command exists. The supplied checkout is read-only (Corepack fails with EROFS), so implementation and local validation are blocked; a narrow, validated fix plan is ready.",
+  "actions": [
+    {
+      "target": "#44289",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only checkout; the executor should apply the attached new-fix-PR artifact in a writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-44289",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Create one new focused PR from clawsweeper/issue-openclaw-openclaw-44289."
+    },
+    {
+      "target": "#85969",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Do not revive or mutate closed prior-art PRs."
+    },
+    {
+      "target": "#89142",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Do not revive or mutate closed prior-art PRs."
+    },
+    {
+      "target": "#91612",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#44289",
+      "candidate_fix": null,
+      "reason": "Do not revive or mutate closed prior-art PRs."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
