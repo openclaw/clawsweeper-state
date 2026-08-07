@@ -1,0 +1,135 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-91860",
+  "mode": "autonomous",
+  "run_id": "31183812103",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31183812103",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-91860.md",
+  "published_at": "2026-08-07T14:48:31.870Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/91860",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/91860",
+  "canonical_pr": null,
+  "summary": "#91860 remains reproducible on main 01cc7106: Discord’s early chunk planner lacks config/account context, so a 20-line CLI payload defaults to 17-line chunks before Discord can resolve its effective account policy. The checkout is read-only, so no branch or test changes could be made; a narrow executable fix artifact is provided.",
+  "actions": [
+    {
+      "target": "#91860",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#91860",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable checkout. The supplied new-fix-PR artifact carries the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-91860",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#91860",
+      "candidate_fix": null,
+      "reason": "A new same-repo fix PR is appropriate; no viable open contributor branch exists."
+    },
+    {
+      "target": "#40133",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#91860",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#91885",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#91860",
+      "candidate_fix": null,
+      "reason": "Closed historical attempt; its useful diagnosis is carried forward without reopening or mutation."
+    },
+    {
+      "target": "#95526",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different channel and product contract; not part of this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120249",
+      "branch": "clawsweeper/issue-openclaw-openclaw-91860",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120249",
+      "commit": "f2dc4662d1e72d6a46547ad32ca7dc8a889ffb5a",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#91860",
+      "pr": "https://github.com/openclaw/openclaw/pull/120249",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120249",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120249",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(discord): honor maxLinesPerMessage for CLI sends",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-8: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

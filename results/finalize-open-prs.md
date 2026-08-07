@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T14:36:20.059Z
+Generated: 2026-08-07T14:49:17.624Z
 
 ## Summary
 
@@ -11,10 +11,10 @@ Generated: 2026-08-07T14:36:20.059Z
 | security_hold | 2 |
 | needs_rebase | 3 |
 | mergeability_unknown | 0 |
-| needs_checks | 10 |
+| needs_checks | 9 |
 | needs_review | 0 |
 | needs_merge_preflight | 20 |
-| needs_result_backfill | 1 |
+| needs_result_backfill | 0 |
 
 ## Dispatch
 
@@ -30,9 +30,9 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | issue-openclaw-openclaw-91860 | MERGEABLE | BEHIND | SKIPPED:34 SUCCESS:87 IN_PROGRESS:1 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | issue-openclaw-openclaw-91860 | MERGEABLE | BEHIND | SKIPPED:35 SUCCESS:89 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120247](https://github.com/openclaw/openclaw/pull/120247) | fix(android): keep chat drafts readable on compact screens | issue-openclaw-openclaw-120228 | MERGEABLE | BEHIND | SKIPPED:34 SUCCESS:24 FAILURE:2; blockers:2 | needs_merge_state:BEHIND, needs_checks:CI / native-i18n:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | issue-openclaw-openclaw-120134 | MERGEABLE | BEHIND | SKIPPED:41 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | issue-openclaw-openclaw-120134 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120215](https://github.com/openclaw/openclaw/pull/120215) | fix(plugins): retain incognito scope for embedded session ownership | issue-openclaw-openclaw-120178 | MERGEABLE | BEHIND | SKIPPED:47 SUCCESS:81 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | issue-openclaw-openclaw-120142 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:49 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | issue-openclaw-openclaw-89254 | MERGEABLE | BEHIND | SKIPPED:48 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
