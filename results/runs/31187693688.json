@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120228",
+  "mode": "plan",
+  "run_id": "31187693688",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31187693688",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120228.md",
+  "published_at": "2026-08-07T15:01:43.404Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/120247",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120228",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/120247",
+  "summary": "Keep #120228 open as the canonical report and repair the existing writable same-repository PR #120247. The PR is narrow and non-security-sensitive, but it is behind main, android-build-play is pending, and native-i18n failed without a hydrated failure log; no merge is recommended.",
+  "actions": [
+    {
+      "target": "#120228",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120228",
+      "candidate_fix": "#120247",
+      "reason": "The issue remains the canonical user-facing report while #120247 owns the implementation and validation work."
+    },
+    {
+      "target": "#120247",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120247",
+      "candidate_fix": null,
+      "reason": "Rebase/refresh the existing writable branch, inspect and repair or classify the native-i18n failure, then rerun changed-surface validation and exact-head review. Do not merge in this job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120228",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120247",
+      "candidate_fix": null,
+      "reason": "Prepare an executable contributor-branch repair path for #120247."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
