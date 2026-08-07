@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T12:31:57.682Z",
+  "updated_at": "2026-08-07T12:32:02.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115371:5125300344:2026-07-30T01:32:15Z:re_review",
-      "comment_id": "5125300344",
-      "comment_version_key": "5125300344:2026-07-30T01:32:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115371#issuecomment-5125300344",
-      "comment_created_at": "2026-07-30T01:32:15Z",
-      "comment_updated_at": "2026-07-30T01:32:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115371,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T07:47:01.066Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115371:5144644254:2026-07-31T15:34:45Z:re_review",
       "comment_id": "5144644254",
@@ -32158,6 +32131,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1241:5199613781:2026-08-07T12:31:19Z:clawsweeper_needs_human",
+      "comment_id": "5199613781",
+      "comment_version_key": "5199613781:2026-08-07T12:31:19Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1241#issuecomment-5199613781",
+      "comment_created_at": "2026-08-06T02:14:18Z",
+      "comment_updated_at": "2026-08-07T12:31:19Z",
+      "comment_body_sha256": "4b645a587007a4ec5893e621394338bce4d560034d20e1e5ce3fa8398b23cc42",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On Git versions older than 2.41, an ambiguous missing in-scope tracked path will newly stop a scoped sync before upload, including an intentional deletion that cannot be distinguished... (sha=5dfcd8bcaccc8d854474e66e00a912c9bcad955f)",
+      "expected_head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T12:32:02.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sparse-manifest-safety-20260806",
+        "head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
