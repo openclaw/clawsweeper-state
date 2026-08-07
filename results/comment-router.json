@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:43:11.549Z",
+  "updated_at": "2026-08-07T01:43:37.602Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119275:5206334932:2026-08-06T14:48:37Z:re_review",
-      "comment_id": "5206334932",
-      "comment_version_key": "5206334932:2026-08-06T14:48:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119275#issuecomment-5206334932",
-      "comment_created_at": "2026-08-06T14:48:37Z",
-      "comment_updated_at": "2026-08-06T14:48:37Z",
-      "comment_body_sha256": "19569f3a93467ba7c90e78f591f488057e5c367970a48eae1218996529d9f036",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119275,
-      "author": "dandriscoll",
-      "author_id": 5069805,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T15:35:47.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-suffix-drops-summary-body",
-        "head_sha": "57c556ac23d051ec29a1ccc9c0c046f648a1d5a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119961:5206397793:2026-08-06T14:53:07Z:re_review",
       "comment_id": "5206397793",
@@ -32579,6 +32532,39 @@
         "kind": "pull_request",
         "branch": "automation/update-skills",
         "head_sha": "d4ed85c7a6475b4a4b8bf03dbb12d2fc6047a2f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-07T01:42:54Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-07T01:42:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-07T01:42:54Z",
+      "comment_body_sha256": "ccdf0242b18466abc51b3a8f580f8e3a5877b68b7dac7d05d2307b308ceaf2f3",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Supplying categories, topics, or either clear flag to a root publish intentionally creates a patch release for every selected unchanged skill; a maintainer must accept that catalog-wi... (sha=cc70d190dbcea71a6f04b117ad2f74fe5054fc81)",
+      "expected_head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:43:37.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
         "cluster_id": null,
         "job_path": null
       }
