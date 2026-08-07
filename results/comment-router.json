@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T13:26:21.884Z",
+  "updated_at": "2026-08-07T13:26:23.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119277:5181767588:2026-08-07T08:29:50Z:clawsweeper_needs_human",
-      "comment_id": "5181767588",
-      "comment_version_key": "5181767588:2026-08-07T08:29:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119277#issuecomment-5181767588",
-      "comment_created_at": "2026-08-04T16:20:57Z",
-      "comment_updated_at": "2026-08-07T08:29:50Z",
-      "comment_body_sha256": "3c8981d425b15652397a76bb9c0b0b51d9a68421759604a2cb411d6471517de1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119277,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, existing per-agent contextTokens settings will begin changing embedded-session and compaction thresholds; smaller caps can compact earlier, while larger caps remain bou... (sha=954ebcaca0288c5dab5f556ab6bfce673d10be66)",
-      "expected_head_sha": "954ebcaca0288c5dab5f556ab6bfce673d10be66",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T08:42:32.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-context-cap-71136",
-        "head_sha": "954ebcaca0288c5dab5f556ab6bfce673d10be66",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112247:5186046648:2026-08-07T07:52:54Z:clawsweeper_auto_repair",
       "comment_id": "5186046648",
@@ -31956,6 +31923,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T13:26:21.884Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-07T13:23:54Z:clawsweeper_needs_human",
+      "comment_id": "4759967424",
+      "comment_version_key": "4759967424:2026-08-07T13:23:54Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/17#issuecomment-4759967424",
+      "comment_created_at": "2026-06-20T20:57:22Z",
+      "comment_updated_at": "2026-08-07T13:23:54Z",
+      "comment_body_sha256": "13cd10e5ef749ff37a07631cd8b7a3c646a38e5eead8f7cf9b659294186e6367",
+      "repo": "openclaw/rfcs",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The proposed Host lifecycle is not reconciled with https://github.com/openclaw/rfcs/pull/35, which requires a ready Namespace gateway before deployment. (sha=ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4)",
+      "expected_head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T13:26:23.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-independent-core-rfc",
+        "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
