@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T09:41:23.852Z",
+  "updated_at": "2026-08-07T09:41:28.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119827:5213467801:2026-08-07T06:38:43Z:re_review",
-      "comment_id": "5213467801",
-      "comment_version_key": "5213467801:2026-08-07T06:38:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119827#issuecomment-5213467801",
-      "comment_created_at": "2026-08-07T06:38:43Z",
-      "comment_updated_at": "2026-08-07T06:38:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "a2be0580-922a-11f1-99f3-0dcb2b16a5e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119827,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T06:39:20.629Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-claim-bind-limit-119490",
-        "head_sha": "b5b56e241519ed26a94807343ad4e4d13bb0bf75",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:42637:4323673961:2026-08-07T05:07:54Z:clawsweeper_needs_human",
       "comment_id": "4323673961",
@@ -32328,6 +32280,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T09:41:23.852Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:963:5215419648:2026-08-07T09:40:35Z:clawsweeper_auto_repair",
+      "comment_id": "5215419648",
+      "comment_version_key": "5215419648:2026-08-07T09:40:35Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/963#issuecomment-5215419648",
+      "comment_created_at": "2026-08-07T09:40:35Z",
+      "comment_updated_at": "2026-08-07T09:40:35Z",
+      "comment_body_sha256": "b683830f2af6bdbdbf828f44e28884d18e347a260d4e86307dad82e56a6c2ea0",
+      "repo": "openclaw/gogcli",
+      "issue_number": 963,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0350e7958a8d4f8e545dc90ef275f23c13f6cfd2)",
+      "expected_head_sha": "0350e7958a8d4f8e545dc90ef275f23c13f6cfd2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T09:41:28.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gmail-attachment-by-index",
+        "head_sha": "0350e7958a8d4f8e545dc90ef275f23c13f6cfd2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
