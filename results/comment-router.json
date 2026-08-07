@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:41:02.224Z",
+  "updated_at": "2026-08-07T07:41:04.963Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120131:5212029301:2026-08-07T03:40:56Z:clawsweeper_needs_human",
-      "comment_id": "5212029301",
-      "comment_version_key": "5212029301:2026-08-07T03:40:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120131#issuecomment-5212029301",
-      "comment_created_at": "2026-08-07T03:40:56Z",
-      "comment_updated_at": "2026-08-07T03:40:56Z",
-      "comment_body_sha256": "6da8f7329f80793e7a18b904ab9a9a2003b3bdb290ccac3e363aede8091da4f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Replacing NodeSDK’s resource setup with an explicit detector list can change supported OTEL_NODE_RESOURCE_DETECTORS handling or allow detected OTEL_SERVICE_NAME data to override expli... (sha=395956f6b399fc85155a604ff50441e1c3edf13c)",
-      "expected_head_sha": "395956f6b399fc85155a604ff50441e1c3edf13c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T03:41:35.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/diagnostics-otel-restart-119997",
-        "head_sha": "395956f6b399fc85155a604ff50441e1c3edf13c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120125:5212029845:2026-08-07T03:40:58Z:clawsweeper_needs_human",
       "comment_id": "5212029845",
@@ -32094,6 +32061,54 @@
         {
           "action": "merge",
           "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/agent-skills:169:5214010856:2026-08-07T07:40:34Z:re_review",
+      "comment_id": "5214010856",
+      "comment_version_key": "5214010856:2026-08-07T07:40:34Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/169#issuecomment-5214010856",
+      "comment_created_at": "2026-08-07T07:40:34Z",
+      "comment_updated_at": "2026-08-07T07:40:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "4749ead0-9233-11f1-9bb5-f3753f148d3d",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 169,
+      "author": "kesslerio",
+      "author_id": 2647990,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T07:41:03.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/engine-process-lifecycle",
+        "head_sha": "7415a43192a1a35916e32d70d9e1066537004b42",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
           "label": null,
           "job_path": null
         },
