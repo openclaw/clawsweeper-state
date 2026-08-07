@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:38:55.620Z",
+  "updated_at": "2026-08-07T01:38:56.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:119:5018393244:2026-07-20T03:07:31Z:re_review",
-      "comment_id": "5018393244",
-      "comment_version_key": "5018393244:2026-07-20T03:07:31Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/119#issuecomment-5018393244",
-      "comment_created_at": "2026-07-20T03:07:31Z",
-      "comment_updated_at": "2026-07-20T03:07:31Z",
-      "comment_body_sha256": "9545e01a863c2f61eab3f5f95b828cf9e93c7f16b72b819efb5750e3c2c12805",
-      "repo": "openclaw/lobster",
-      "issue_number": 119,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T14:57:08.720Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:119:4943783923:2026-08-06T14:56:31Z:clawsweeper_auto_repair",
       "comment_id": "4943783923",
@@ -32774,6 +32747,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T01:38:50.977Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117887:5156337351:2026-08-07T01:38:19Z:clawsweeper_needs_human",
+      "comment_id": "5156337351",
+      "comment_version_key": "5156337351:2026-08-07T01:38:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117887#issuecomment-5156337351",
+      "comment_created_at": "2026-08-02T07:51:24Z",
+      "comment_updated_at": "2026-08-07T01:38:19Z",
+      "comment_body_sha256": "e7b13788af4b6be15128488a82271913202e9dee73d0f701d834e4b1ece1fda0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; focused proxy tests and the loopback socket-closure proof should run on the exact resulting merge head before landing. (sha=b89d856fe1b0d1659d62e43301e869b9a9013b52)",
+      "expected_head_sha": "b89d856fe1b0d1659d62e43301e869b9a9013b52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:38:56.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-sse-reader-cancel",
+        "head_sha": "b89d856fe1b0d1659d62e43301e869b9a9013b52",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
