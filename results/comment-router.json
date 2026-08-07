@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T13:26:23.492Z",
+  "updated_at": "2026-08-07T13:27:11.455Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112247:5186046648:2026-08-07T07:52:54Z:clawsweeper_auto_repair",
-      "comment_id": "5186046648",
-      "comment_version_key": "5186046648:2026-08-07T07:52:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112247#issuecomment-5186046648",
-      "comment_created_at": "2026-08-05T00:16:48Z",
-      "comment_updated_at": "2026-08-07T07:52:54Z",
-      "comment_body_sha256": "64dfda41ee80da4c47a871f50467efb008e45cab7c55b79471e875be3f4be968",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112247,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e765089ef36d2bced1f858690837f68a6261fa0a)",
-      "expected_head_sha": "e765089ef36d2bced1f858690837f68a6261fa0a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T08:42:32.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-stable-session-key-retire-ttl",
-        "head_sha": "e765089ef36d2bced1f858690837f68a6261fa0a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119388:5186354349:2026-08-07T08:32:46Z:clawsweeper_auto_repair",
       "comment_id": "5186354349",
@@ -31956,6 +31923,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:280:5217644409:2026-08-07T13:26:34Z:re_review",
+      "comment_id": "5217644409",
+      "comment_version_key": "5217644409:2026-08-07T13:26:34Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/280#issuecomment-5217644409",
+      "comment_created_at": "2026-08-07T13:26:34Z",
+      "comment_updated_at": "2026-08-07T13:26:34Z",
+      "comment_body_sha256": "69e0a3922de7c5f3187aa4e301ddfe1adf61e363f013faab16c3a046f42a0d7b",
+      "source_delivery_id": "9caac190-9263-11f1-85a1-f7512de66c47",
+      "repo": "openclaw/mcporter",
+      "issue_number": 280,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T13:27:09.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/daemon-log-serve-stream-errors",
+        "head_sha": "839fc6a388dacbff21ab09074fccac11735f9dc1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
