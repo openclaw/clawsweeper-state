@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-07T04:43:19.985Z",
+  "updated_at": "2026-08-07T04:43:21.292Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116795:5210332549:2026-08-07T00:27:45Z:re_review",
-      "comment_id": "5210332549",
-      "comment_version_key": "5210332549:2026-08-07T00:27:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116795#issuecomment-5210332549",
-      "comment_created_at": "2026-08-07T00:27:45Z",
-      "comment_updated_at": "2026-08-07T00:27:45Z",
-      "comment_body_sha256": "f85b6cd4b889b953ed87ee8d99b73d2c3ac4dea21ac1d1c38961ef186846d75e",
-      "source_delivery_id": "d01c3d50-91f6-11f1-8274-9e5cccef785a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116795,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T00:28:15.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-4-tool-policy",
-        "head_sha": "f7839003c0c7adeb2b6b77a8b2cb9403850c8be4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116793:5210331754:2026-08-07T00:27:37Z:re_review",
-      "comment_id": "5210331754",
-      "comment_version_key": "5210331754:2026-08-07T00:27:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5210331754",
-      "comment_created_at": "2026-08-07T00:27:37Z",
-      "comment_updated_at": "2026-08-07T00:27:37Z",
-      "comment_body_sha256": "438684f2117a6617a81f72b27d76d7ffbb6da72fd0300acebd1f3dd76f48da94",
-      "source_delivery_id": "cb863a70-91f6-11f1-9ab8-bf200167645b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116793,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T00:28:17.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-2-attribution",
-        "head_sha": "7031943b2a60268ff4e6113d1d0ee4d6633f2fec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116796:5210332943:2026-08-07T00:27:48Z:re_review",
       "comment_id": "5210332943",
@@ -31225,6 +31129,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120018:5209941867:2026-08-07T04:41:11Z:clawsweeper_needs_human",
+      "comment_id": "5209941867",
+      "comment_version_key": "5209941867:2026-08-07T04:41:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120018#issuecomment-5209941867",
+      "comment_created_at": "2026-08-06T23:31:50Z",
+      "comment_updated_at": "2026-08-07T04:41:11Z",
+      "comment_body_sha256": "3afc72d51eda7b0527e961a435ed42d87fe926c07d4c7888782bd0cbaabc4a2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120018,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds a required 45-minute release job that depends on live GitHub Actions artifact, run-attempt, job-inventory, and upload/download behavior; the supplied Crabbox run exercise... (sha=4104cfa3a64082e921b27b7478c3c6670511d6d4)",
+      "expected_head_sha": "4104cfa3a64082e921b27b7478c3c6670511d6d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T04:43:21.291Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/gateway-node-linux-compat",
+        "head_sha": "4104cfa3a64082e921b27b7478c3c6670511d6d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120018:5208248707:2026-08-06T18:35:40Z:re_review",
+      "comment_id": "5208248707",
+      "comment_version_key": "5208248707:2026-08-06T18:35:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120018#issuecomment-5208248707",
+      "comment_created_at": "2026-08-06T18:35:40Z",
+      "comment_updated_at": "2026-08-06T18:35:40Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120018,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T04:43:21.292Z",
+      "target": null
     }
   ]
 }
