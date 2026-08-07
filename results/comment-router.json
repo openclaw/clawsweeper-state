@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T02:23:17.282Z",
+  "updated_at": "2026-08-07T02:23:23.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118616:5165254048:2026-08-06T12:34:35Z:clawsweeper_needs_human",
-      "comment_id": "5165254048",
-      "comment_version_key": "5165254048:2026-08-06T12:34:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118616#issuecomment-5165254048",
-      "comment_created_at": "2026-08-03T10:34:29Z",
-      "comment_updated_at": "2026-08-06T12:34:35Z",
-      "comment_body_sha256": "f8bdf09142bf077108d8fac00febdeeb704648e754adcbbaf04198da1286fbc2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind a main rewrite of both runtime files; rebase and re-run focused proof against the exact head before merge. (sha=7f62dde5df94f313a16aee0e5d16bfc5b6a28727)",
-      "expected_head_sha": "7f62dde5df94f313a16aee0e5d16bfc5b6a28727",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T15:37:47.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-call-background-liveness",
-        "head_sha": "7f62dde5df94f313a16aee0e5d16bfc5b6a28727",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118657:5166348466:2026-08-06T13:14:45Z:clawsweeper_auto_repair",
       "comment_id": "5166348466",
@@ -32257,6 +32224,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T02:23:17.282Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-07T02:18:51Z:clawsweeper_needs_human",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-07T02:18:51Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-07T02:18:51Z",
+      "comment_body_sha256": "95bf33a07ab99a342457fbec786dcf7067a0224a76f13aa077af1a4baf319176",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a Windows persistence boundary; a defect in namespace conversion could affect UNC or custom device-directory setups, though the patch explicitly preserves device namespac... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
+      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T02:23:23.010Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
