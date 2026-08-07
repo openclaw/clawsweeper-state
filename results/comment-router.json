@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:01:51.694Z",
+  "updated_at": "2026-08-07T06:02:06.901Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116793:5210990377:2026-08-07T01:32:50Z:re_review",
-      "comment_id": "5210990377",
-      "comment_version_key": "5210990377:2026-08-07T01:32:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116793#issuecomment-5210990377",
-      "comment_created_at": "2026-08-07T01:32:50Z",
-      "comment_updated_at": "2026-08-07T01:32:50Z",
-      "comment_body_sha256": "4cfe4fb5af6bd9d9a4d68ae23d15c3dd99f88730f9d7a2a23b3b2a77d88108d3",
-      "source_delivery_id": "e89a4b70-91ff-11f1-8f36-fc486630b8f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116793,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T01:33:45.281Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-2-attribution",
-        "head_sha": "cf20a4898fad357d62b3e2987534b9587836a5a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120045:5210989193:2026-08-07T01:32:40Z:clawsweeper_needs_human",
       "comment_id": "5210989193",
@@ -31116,6 +31068,39 @@
         "kind": "pull_request",
         "branch": "fix/native-claude-trajectory-eligibility",
         "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:43:5121262567:2026-08-07T06:01:30Z:clawsweeper_needs_human",
+      "comment_id": "5121262567",
+      "comment_version_key": "5121262567:2026-08-07T06:01:30Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/43#issuecomment-5121262567",
+      "comment_created_at": "2026-07-29T17:24:33Z",
+      "comment_updated_at": "2026-08-07T06:01:30Z",
+      "comment_body_sha256": "1186e51d83b8ba9bb305295e7fd951fba503d61b608c58583e10e9acf0d83761",
+      "repo": "openclaw/libterminal",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scheduled workflow has write permission to label and close issues and pull requests; an incompatible major-version action change could alter real item state when it next runs. (sha=232c60dd381ecc3fce85e8703043a6c71be26fdd)",
+      "expected_head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T06:02:06.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions/stale-11.0.0",
+        "head_sha": "232c60dd381ecc3fce85e8703043a6c71be26fdd",
         "cluster_id": null,
         "job_path": null
       }
