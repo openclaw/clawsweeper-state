@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T01:39:52.728Z",
+  "generated_at": "2026-08-07T01:53:56.555Z",
   "count": 16,
   "summary": {
     "open_prs": 16,
@@ -94,7 +94,7 @@
       "head_sha": "0c77df0530dd8d4fe469b835a6887bb4ff02cf98",
       "cluster_id": "issue-openclaw-openclaw-120019",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
-      "updated_at": "2026-08-07T01:29:12Z",
+      "updated_at": "2026-08-07T01:42:23Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -171,16 +171,16 @@
       "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
       "cluster_id": "issue-openclaw-openclaw-119962",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-07T00:44:33Z",
+      "updated_at": "2026-08-07T01:39:16Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 97,
+        "total": 101,
         "counts": {
+          "SKIPPED": 25,
           "SUCCESS": 71,
-          "SKIPPED": 21,
           "FAILURE": 5
         },
         "blockers": [
@@ -251,7 +251,7 @@
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-07T01:36:41Z",
+      "updated_at": "2026-08-07T01:47:56Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -289,31 +289,25 @@
           {
             "source": "comment",
             "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5209461812",
-            "submitted_at": "2026-08-06T22:09:48Z"
+            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5211035380",
+            "submitted_at": "2026-08-07T01:38:54Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "31107016960",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31107016960",
-        "cluster_id": "issue-openclaw-openclaw-119958",
-        "published_at": "2026-08-06T14:58:30.072Z",
-        "workflow_conclusion": "success",
+        "run_id": "31138691197",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31138691197",
+        "cluster_id": "automerge-openclaw-openclaw-119975",
+        "published_at": "2026-08-07T01:52:38.043Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#119975",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(gateway): report active unmanaged restart startup accurately",
-          "idempotency_key": null,
-          "reason": "checks are not clean: checks-node-compact-large-6: IN_PROGRESS",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#119975",
+          "candidate_fix": "#119975",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
