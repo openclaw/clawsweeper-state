@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T23:35:55.288Z",
+  "updated_at": "2026-08-07T23:36:25.855Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91237:4701259959:2026-06-14T08:59:22Z:re_review",
-      "comment_id": "4701259959",
-      "comment_version_key": "4701259959:2026-06-14T08:59:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-4701259959",
-      "comment_created_at": "2026-06-14T08:59:22Z",
-      "comment_updated_at": "2026-06-14T08:59:22Z",
-      "comment_body_sha256": "8cd06ba3b04fb098a715d904c9e55921b3af62dccbfedf8c5836dabe6cb14b9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T19:33:58.154Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:91237:5118314378:2026-07-29T13:20:51Z:re_review",
       "comment_id": "5118314378",
@@ -32110,6 +32083,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120362:5223229616:2026-08-07T23:35:47Z:re_review",
+      "comment_id": "5223229616",
+      "comment_version_key": "5223229616:2026-08-07T23:35:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120362#issuecomment-5223229616",
+      "comment_created_at": "2026-08-07T23:35:47Z",
+      "comment_updated_at": "2026-08-07T23:35:47Z",
+      "comment_body_sha256": "13514fac04f8728fbfc5bfeb1ee825a0298470e7389b9c2978d4fe686dc76307",
+      "source_delivery_id": "b848e9e0-92b8-11f1-95b9-75b016293229",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120362,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the p1 (persisted-path migration for pre-upgrade rows) is applied on head c5923f281b56ee53efb91822b01d2ce25b2e0de7: the state-migration owner now canonicalizes legacy raw-root path spellings (live and removed rows, idempotent, read-only detection), with an end-to-end regression proving the migrated row survives the previously failing lock sequence. ci is green on this exact head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T23:36:23.286Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/intelligent-clarke-8391bf",
+        "head_sha": "c5923f281b56ee53efb91822b01d2ce25b2e0de7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
