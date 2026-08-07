@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T14:00:01.456Z",
+  "updated_at": "2026-08-07T14:02:57.156Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118750:5215372357:2026-08-07T09:35:26Z:re_review",
-      "comment_id": "5215372357",
-      "comment_version_key": "5215372357:2026-08-07T09:35:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118750#issuecomment-5215372357",
-      "comment_created_at": "2026-08-07T09:35:26Z",
-      "comment_updated_at": "2026-08-07T09:35:26Z",
-      "comment_body_sha256": "ba22230803afa30822570aff8e5dd5ac09fa19d2483585b1d51b8175605d1932",
-      "source_delivery_id": "52562f00-9243-11f1-8200-d9aab430df02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118750,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T09:35:58.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-core-timestamp-nan-safe",
-        "head_sha": "3786468d3b17444286ce10ff109db71a809c4064",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118211:5215387166:2026-08-07T09:36:55Z:re_review",
       "comment_id": "5215387166",
@@ -31670,6 +31622,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
         "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-07T13:58:12Z:clawsweeper_needs_human",
+      "comment_id": "5169562551",
+      "comment_version_key": "5169562551:2026-08-07T13:58:12Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/45#issuecomment-5169562551",
+      "comment_created_at": "2026-08-03T17:21:34Z",
+      "comment_updated_at": "2026-08-07T13:58:12Z",
+      "comment_body_sha256": "befedae85bdf8364c5e6288186c0db214c1258777c1e0adce48174fa426505b8",
+      "repo": "openclaw/libterminal",
+      "issue_number": 45,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After-fix proof is limited to CI; the PR body contains no contributor- or maintainer-owned live installation and tool-run evidence. (sha=0d905fed759afd82db16409c41e75ae13cd5f04d)",
+      "expected_head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T14:02:57.156Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-a6da792cd5",
+        "head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
         "cluster_id": null,
         "job_path": null
       }
