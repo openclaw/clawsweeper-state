@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T15:45:39.135Z",
+  "updated_at": "2026-08-07T15:45:49.116Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2726:5210911502:2026-08-07T11:01:40Z:clawsweeper_needs_human",
-      "comment_id": "5210911502",
-      "comment_version_key": "5210911502:2026-08-07T11:01:40Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2726#issuecomment-5210911502",
-      "comment_created_at": "2026-08-07T01:23:35Z",
-      "comment_updated_at": "2026-08-07T11:01:40Z",
-      "comment_body_sha256": "d2c7597ba1e727eba57c795d3c9e5ed77803137e0e1784f7f6d862b341be4594",
-      "repo": "steipete/codexbar",
-      "issue_number": 2726,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces a large persisted-cache migration and cross-process locking protocol; an upgrade edge case could defer local cost refreshes or require a safe cache rebuild for existin... (sha=1946578513493f8d06298aca0bf5bccfbd1c035b)",
-      "expected_head_sha": "1946578513493f8d06298aca0bf5bccfbd1c035b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T11:15:52.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-catchup-linear-indexing",
-        "head_sha": "1946578513493f8d06298aca0bf5bccfbd1c035b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2718:5209940170:2026-08-07T11:14:33Z:clawsweeper_auto_repair",
       "comment_id": "5209940170",
@@ -32610,6 +32577,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:78441:5219115622:2026-08-07T15:45:09Z:re_review",
+      "comment_id": "5219115622",
+      "comment_version_key": "5219115622:2026-08-07T15:45:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/78441#issuecomment-5219115622",
+      "comment_created_at": "2026-08-07T15:45:09Z",
+      "comment_updated_at": "2026-08-07T15:45:09Z",
+      "comment_body_sha256": "4440eed1d13c563a217f69d722f0beef209fbf73481002ee4249918d4a316a57",
+      "source_delivery_id": "f8be18c0-9276-11f1-80f0-a16eab8ffc25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 78441,
+      "author": "guanbear",
+      "author_id": 11829005,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T15:45:47.152Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sessions-spawn-tools-allow-pr2",
+        "head_sha": "4e5c011daa9283972b1c1679e43262c9594a2c4c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
