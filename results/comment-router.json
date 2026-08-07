@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T09:46:54.208Z",
+  "updated_at": "2026-08-07T09:47:08.739Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120115:5212588628:2026-08-07T04:57:18Z:re_review",
-      "comment_id": "5212588628",
-      "comment_version_key": "5212588628:2026-08-07T04:57:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120115#issuecomment-5212588628",
-      "comment_created_at": "2026-08-07T04:57:18Z",
-      "comment_updated_at": "2026-08-07T04:57:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120115,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T06:39:36.357Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120131:5212601242:2026-08-07T04:59:19Z:re_review",
       "comment_id": "5212601242",
@@ -32151,6 +32124,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T09:46:54.208Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-07T09:46:23Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-07T09:46:23Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-07T09:46:23Z",
+      "comment_body_sha256": "69721419f5a3c3554383ecbd32a78d152c2bb228dcc2b94cdbaadfd4ca0b2d58",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Using categories, topics, or either clear control with a multi-skill root intentionally creates a patch release for every selected unchanged skill; this becomes a public workflow comp... (sha=cc70d190dbcea71a6f04b117ad2f74fe5054fc81)",
+      "expected_head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T09:47:08.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
