@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:35:49.971Z",
+  "updated_at": "2026-08-07T01:36:03.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119817:5206207397:2026-08-06T14:39:23Z:re_review",
-      "comment_id": "5206207397",
-      "comment_version_key": "5206207397:2026-08-06T14:39:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119817#issuecomment-5206207397",
-      "comment_created_at": "2026-08-06T14:39:23Z",
-      "comment_updated_at": "2026-08-06T14:39:23Z",
-      "comment_body_sha256": "c87eb19871ed9881b209f283eb98641089c6180b12b2efd97814d22cf6fb7d9f",
-      "source_delivery_id": "9e861f10-91a4-11f1-9afe-15392945e8d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119817,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — real gateway-to-runner trace added to evidence: fresh run driving the real `startheartbeatrunner` scheduler + real wake queue (`requestheartbeat`) with a recording `runonce` seam. before/after: base `c37ba84f662` consumes the scoped hook wake for unscheduled agent `ops` 0 times (queued hook event unread); pr head `3e356fee484` consumes it exactly once at `agent:ops:main` with 0 unrelated agent runs, and unconfigured targets stay rejected. regression suites 125/125",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T14:39:59.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-heartbeat-targeted-wake-119808",
-        "head_sha": "3e356fee4848846d86bb77a77d7f7dceeb48ac2b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119819:5200459478:2026-08-06T14:39:43Z:clawsweeper_needs_human",
       "comment_id": "5200459478",
@@ -32797,6 +32749,39 @@
         "kind": "pull_request",
         "branch": "steipete/cron-exit-watcher-retry",
         "head_sha": "28ac833da34f4221e73ecfea5df6efda3082c3a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120028:5209982572:2026-08-07T01:35:25Z:clawsweeper_needs_human",
+      "comment_id": "5209982572",
+      "comment_version_key": "5209982572:2026-08-07T01:35:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120028#issuecomment-5209982572",
+      "comment_created_at": "2026-08-06T23:37:36Z",
+      "comment_updated_at": "2026-08-07T01:35:25Z",
+      "comment_body_sha256": "4e831ce7688439de3328352690c27288945d4bfa0226c783590166cc6e4e8781",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120028,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing partial QQBot configurations will intentionally stop using saved credentials and remain unavailable until completed; a maintainer must affirm that upgrade behavior. (sha=038577cd2ff4702ecc90981d137243abf11f2fa9)",
+      "expected_head_sha": "038577cd2ff4702ecc90981d137243abf11f2fa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:36:03.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/qqbot-credential-recovery",
+        "head_sha": "038577cd2ff4702ecc90981d137243abf11f2fa9",
         "cluster_id": null,
         "job_path": null
       }
