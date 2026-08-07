@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T20:49:32.554Z",
+  "updated_at": "2026-08-07T20:49:44.051Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:138:5012369506:2026-08-07T16:25:30Z:clawsweeper_needs_human",
-      "comment_id": "5012369506",
-      "comment_version_key": "5012369506:2026-08-07T16:25:30Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/138#issuecomment-5012369506",
-      "comment_created_at": "2026-07-18T18:12:15Z",
-      "comment_updated_at": "2026-08-07T16:25:30Z",
-      "comment_body_sha256": "a24fe6c9f850ec1916002dd3728beff6c8159b6ab7f8d2ffdcbcb8c21d99a4d9",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair lane is needed; the focused patch is ready for ordinary maintainer merge review. (sha=2212df7c590a73ec062f19e212c4b77a720eead1)",
-      "expected_head_sha": "2212df7c590a73ec062f19e212c4b77a720eead1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T16:26:56.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-viewer-invalid-timestamp",
-        "head_sha": "2212df7c590a73ec062f19e212c4b77a720eead1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1059:5219535679:2026-08-07T16:26:27Z:clawsweeper_auto_repair",
       "comment_id": "5219535679",
@@ -32054,6 +32021,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89395:5221862850:2026-08-07T20:49:03Z:re_review",
+      "comment_id": "5221862850",
+      "comment_version_key": "5221862850:2026-08-07T20:49:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89395#issuecomment-5221862850",
+      "comment_created_at": "2026-08-07T20:49:03Z",
+      "comment_updated_at": "2026-08-07T20:49:03Z",
+      "comment_body_sha256": "84511868cfb580b24a26f802afe3262d331d8dde87dcecf19d0a6658150d8096",
+      "source_delivery_id": "6d8cf3e0-92a1-11f1-8486-4a19caf29bb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89395,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review (ci-unblock head; scope unchanged)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T20:49:40.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-media-secretref-silent-swallow",
+        "head_sha": "60dcbead7a3eacb967a3d02702306db03ad34781",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
