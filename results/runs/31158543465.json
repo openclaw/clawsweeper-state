@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120157",
+  "mode": "autonomous",
+  "run_id": "31158543465",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31158543465",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120157.md",
+  "published_at": "2026-08-07T08:35:39.737Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120157",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120157",
+  "canonical_pr": null,
+  "summary": "#120157 is reproducible on main ea4466e5: contextless plugin follow-up registration replaces a yielded child’s requester-owned row before normal reactivation runs, losing completion delivery and the parent wake obligation. A narrow new-fix-PR artifact is ready; local focused validation is blocked by the checkout’s missing p-map dependency and read-only filesystem.",
+  "actions": [
+    {
+      "target": "#120157",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120157",
+      "candidate_fix": null,
+      "reason": "Existing behavior is broken lifecycle preservation, not a new feature or security boundary change."
+    },
+    {
+      "target": "#95535",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Same sessions_yield area, distinct isolated-cron product contract."
+    },
+    {
+      "target": "#106704",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Shared yield lifecycle area, different root cause and repair."
+    },
+    {
+      "target": "#112668",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct transport-delivery reliability path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120157",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120157",
+      "candidate_fix": null,
+      "reason": "A writable executor should implement and validate the narrow canonical repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

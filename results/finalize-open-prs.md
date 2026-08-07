@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T08:05:06.804Z
+Generated: 2026-08-07T08:37:13.946Z
 
 ## Summary
 
@@ -9,7 +9,7 @@ Generated: 2026-08-07T08:05:06.804Z
 | open_prs | 17 |
 | ready_candidates | 0 |
 | security_hold | 2 |
-| needs_rebase | 2 |
+| needs_rebase | 3 |
 | mergeability_unknown | 0 |
 | needs_checks | 9 |
 | needs_review | 0 |
@@ -37,7 +37,7 @@ Status: report_only
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | CONFLICTING | DIRTY | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | CONFLICTING | DIRTY | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | issue-openclaw-openclaw-119884 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:39 SUCCESS:83 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | MERGEABLE | BEHIND | SKIPPED:51 SUCCESS:84 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | CONFLICTING | DIRTY | SKIPPED:51 SUCCESS:84 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | issue-openclaw-openclaw-119754 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | issue-openclaw-openclaw-96692 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:46 SUCCESS:59 NEUTRAL:1; blockers:1 | security_route, needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | route to central security triage |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | issue-openclaw-openclaw-114169 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:49 SUCCESS:71 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |

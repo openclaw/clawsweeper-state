@@ -2,13 +2,13 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T08:05:06.804Z",
+  "generated_at": "2026-08-07T08:37:13.946Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
     "ready_candidates": 0,
     "security_hold": 2,
-    "needs_rebase": 2,
+    "needs_rebase": 3,
     "mergeability_unknown": 0,
     "needs_checks": 9,
     "needs_review": 0,
@@ -552,8 +552,8 @@
       "cluster_id": "issue-openclaw-openclaw-119578",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md",
       "updated_at": "2026-08-06T02:43:48Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -605,10 +605,11 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 119778,
