@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T19:27:41.669Z",
+  "updated_at": "2026-08-07T19:27:49.450Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5218699429:2026-08-07T15:05:21Z:re_review",
-      "comment_id": "5218699429",
-      "comment_version_key": "5218699429:2026-08-07T15:05:21Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5218699429",
-      "comment_created_at": "2026-08-07T15:05:21Z",
-      "comment_updated_at": "2026-08-07T15:05:21Z",
-      "comment_body_sha256": "340a7be011cd451f1c6492d830db46bf1a9edd320cf55ea542af9d4b28bdfd3d",
-      "source_delivery_id": "69ab4db0-9271-11f1-826d-822401703446",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T15:05:59.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workflow-cost-skip-cached-replays",
-        "head_sha": "d9b111be8bfc6fd229f8815611f51af6e7fc257b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:85:5213935759:2026-08-07T15:09:13Z:clawsweeper_needs_human",
       "comment_id": "5213935759",
@@ -32200,6 +32152,39 @@
         "kind": "pull_request",
         "branch": "feat/skill-publish-catalog-metadata",
         "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:268:5128846606:2026-08-07T19:27:04Z:clawsweeper_auto_repair",
+      "comment_id": "5128846606",
+      "comment_version_key": "5128846606:2026-08-07T19:27:04Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/268#issuecomment-5128846606",
+      "comment_created_at": "2026-07-30T09:12:45Z",
+      "comment_updated_at": "2026-08-07T19:27:04Z",
+      "comment_body_sha256": "816ffb194767facd4f6b73077f6f1669c4e545d6cdc1ec6f429859eb087879f6",
+      "repo": "openclaw/crabpot",
+      "issue_number": 268,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=667732bde3d297ea8c2c057b970b875a3820814d)",
+      "expected_head_sha": "667732bde3d297ea8c2c057b970b875a3820814d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-07T19:27:49.450Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/lossless-claw-52cf67a",
+        "head_sha": "667732bde3d297ea8c2c057b970b875a3820814d",
         "cluster_id": null,
         "job_path": null
       }
