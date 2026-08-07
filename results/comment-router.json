@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T12:44:35.112Z",
+  "updated_at": "2026-08-07T12:45:00.729Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/agent-skills:168:5214122305:2026-08-07T07:53:08Z:re_review",
-      "comment_id": "5214122305",
-      "comment_version_key": "5214122305:2026-08-07T07:53:08Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/168#issuecomment-5214122305",
-      "comment_created_at": "2026-08-07T07:53:08Z",
-      "comment_updated_at": "2026-08-07T07:53:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "07e7f4c0-9235-11f1-910b-fa9f2b324b57",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 168,
-      "author": "kesslerio",
-      "author_id": 2647990,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T07:53:43.507Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/dry-run-preflight",
-        "head_sha": "33d41de464976b9eaebab646e58d6ef6a4ee053d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:987:4969256321:2026-08-07T07:57:53Z:clawsweeper_auto_repair",
       "comment_id": "4969256321",
@@ -32204,6 +32156,39 @@
         "kind": "pull_request",
         "branch": "fix/qa-live-model-policy-20260807",
         "head_sha": "f4e53879b29ccc7c09550f8a30ad0a2911ab9d7c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:143:5209982610:2026-08-07T12:30:23Z:clawsweeper_needs_human",
+      "comment_id": "5209982610",
+      "comment_version_key": "5209982610:2026-08-07T12:30:23Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/143#issuecomment-5209982610",
+      "comment_created_at": "2026-08-06T23:37:37Z",
+      "comment_updated_at": "2026-08-07T12:30:23Z",
+      "comment_body_sha256": "176aed454a9c1af65ef1105f80a5011b2c5cb7549ec89ec7be7174180c8e5506",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the SQLite implementation used for existing local and portable archives, but the PR supplies no after-fix evidence that a v1.55.0 archive opens, passes quick_check, su... (sha=54213d8eeb67de391ecb44f0876bcc2349283b46)",
+      "expected_head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T12:45:00.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
         "cluster_id": null,
         "job_path": null
       }
