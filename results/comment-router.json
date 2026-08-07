@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T04:43:38.085Z",
+  "updated_at": "2026-08-07T04:43:38.995Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119920:5204709997:2026-08-07T00:33:30Z:clawsweeper_needs_human",
-      "comment_id": "5204709997",
-      "comment_version_key": "5204709997:2026-08-07T00:33:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119920#issuecomment-5204709997",
-      "comment_created_at": "2026-08-06T12:36:42Z",
-      "comment_updated_at": "2026-08-07T00:33:30Z",
-      "comment_body_sha256": "f2a83afedebada7c3b75f065380c695b87f70b3bad19ecef2a792d57818e98b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119920,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The QA-only readiness gate now depends on a bounded authoritative /joined_rooms request; a degraded homeserver should fail the scenario rather than permit an early encrypted send. (sha=c6b7a52ae9b897201cd556fbe05258e84e5b6d07)",
-      "expected_head_sha": "c6b7a52ae9b897201cd556fbe05258e84e5b6d07",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T00:35:14.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-matrix-e2ee-readiness-v2-20260806",
-        "head_sha": "c6b7a52ae9b897201cd556fbe05258e84e5b6d07",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119237:5180120776:2026-08-07T00:31:58Z:clawsweeper_needs_human",
       "comment_id": "5180120776",
@@ -31068,6 +31035,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116796:5212502185:2026-08-07T04:43:11Z:re_review",
+      "comment_id": "5212502185",
+      "comment_version_key": "5212502185:2026-08-07T04:43:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116796#issuecomment-5212502185",
+      "comment_created_at": "2026-08-07T04:43:11Z",
+      "comment_updated_at": "2026-08-07T04:43:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "7f323d80-921a-11f1-86b9-fc330c88811f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116796,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T04:43:37.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/passport-wiring-5-node-audit",
+        "head_sha": "402b6a36f2bb0aac3322f519344021d66fbadb06",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120104:5211484541:2026-08-07T04:42:29Z:clawsweeper_auto_repair",
