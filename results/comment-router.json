@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:41:21.121Z",
+  "updated_at": "2026-08-07T01:41:27.076Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:132:5183678998:2026-08-04T19:31:00Z:re_review",
-      "comment_id": "5183678998",
-      "comment_version_key": "5183678998:2026-08-04T19:31:00Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5183678998",
-      "comment_created_at": "2026-08-04T19:31:00Z",
-      "comment_updated_at": "2026-08-04T19:31:00Z",
-      "comment_body_sha256": "5a83565d1072bceb6fa8fe4686025500e52fc4423a6527369baf0d30ba50acd0",
-      "repo": "openclaw/lobster",
-      "issue_number": 132,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T15:12:31.907Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:132:5188378800:2026-08-05T06:31:26Z:re_review",
       "comment_id": "5188378800",
@@ -32809,6 +32782,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T01:41:21.121Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119057:5173970388:2026-08-07T01:40:33Z:clawsweeper_needs_human",
+      "comment_id": "5173970388",
+      "comment_version_key": "5173970388:2026-08-07T01:40:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5173970388",
+      "comment_created_at": "2026-08-04T02:38:32Z",
+      "comment_updated_at": "2026-08-07T01:40:33Z",
+      "comment_body_sha256": "387ac867b3bbf21ebe3ac59bff1d10f176491b0fd3865e60d7805b47d46c682b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind delivery targets at the host boundary (P1)** - The new guidance authorizes mutation from “trusted prior context” or a tool-owned ID, but the execution context carries no request-target capability and the co...; Review finding: [P1] Bind delivery targets at the host boundary — src/agents/code-mode.ts:167-175 - [medium] Conversation destination is not request-bound — src/agents/code-mode.t... (sha=09fd586ee111a359d60ee8f32ddc1411a81cb643)",
+      "expected_head_sha": "09fd586ee111a359d60ee8f32ddc1411a81cb643",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:41:27.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-semantic-observation-stack-20260804",
+        "head_sha": "09fd586ee111a359d60ee8f32ddc1411a81cb643",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
