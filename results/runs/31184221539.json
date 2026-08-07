@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120228",
+  "mode": "autonomous",
+  "run_id": "31184221539",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31184221539",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120228.md",
+  "published_at": "2026-08-07T14:33:57.611Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120228",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120228",
+  "canonical_pr": null,
+  "summary": "#120228 reproduces on current main: five inline 48dp controls leave about 35dp for the Android chat editor at a 360dp viewport. Plan one narrow responsive composer repair and focused Compose proof.",
+  "actions": [
+    {
+      "target": "#120228",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120228",
+      "candidate_fix": null,
+      "reason": "This is a reproducible default-path Android layout regression with a narrow, non-security repair path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120228",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120228",
+      "candidate_fix": null,
+      "reason": "An attachment menu alone would still leave the editor too narrow. The two-row compact layout directly repairs the invariant without changing transport, attachment, voice, or Talk contracts."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120228",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120228",
+      "candidate_fix": null,
+      "reason": "Build a single new fix PR from the requested ClawSweeper branch; no contributor PR requires repair or replacement."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120247",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120228",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120247",
+      "commit": "4ced5b979680d6e58b0cb7248f0c4f29ed99674f",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120228",
+      "pr": "https://github.com/openclaw/openclaw/pull/120247",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120247",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120247",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(android): keep chat drafts readable on compact screens",
+      "idempotency_key": null,
+      "reason": "checks are not clean: native-i18n: FAILURE, android-build-play: IN_PROGRESS, android-ktlint: QUEUED",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

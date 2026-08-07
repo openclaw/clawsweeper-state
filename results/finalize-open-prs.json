@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T13:50:24.483Z",
-  "count": 18,
+  "generated_at": "2026-08-07T14:36:20.059Z",
+  "count": 20,
   "summary": {
-    "open_prs": 18,
+    "open_prs": 20,
     "ready_candidates": 0,
     "security_hold": 2,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
-    "needs_checks": 8,
+    "needs_checks": 10,
     "needs_review": 0,
-    "needs_merge_preflight": 18,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 20,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -27,6 +27,114 @@
   },
   "prs": [
     {
+      "number": 120249,
+      "title": "fix(discord): honor maxLinesPerMessage for CLI sends",
+      "url": "https://github.com/openclaw/openclaw/pull/120249",
+      "branch": "clawsweeper/issue-openclaw-openclaw-91860",
+      "head_sha": "f2dc4662d1e72d6a46547ad32ca7dc8a889ffb5a",
+      "cluster_id": "issue-openclaw-openclaw-91860",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-91860.md",
+      "updated_at": "2026-08-07T14:27:01Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 123,
+        "counts": {
+          "SKIPPED": 34,
+          "SUCCESS": 87,
+          "IN_PROGRESS": 1,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-large-8:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 120247,
+      "title": "fix(android): keep chat drafts readable on compact screens",
+      "url": "https://github.com/openclaw/openclaw/pull/120247",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120228",
+      "head_sha": "4ced5b979680d6e58b0cb7248f0c4f29ed99674f",
+      "cluster_id": "issue-openclaw-openclaw-120228",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120228.md",
+      "updated_at": "2026-08-07T14:17:39Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 60,
+        "counts": {
+          "SKIPPED": 34,
+          "SUCCESS": 24,
+          "FAILURE": 2
+        },
+        "blockers": [
+          "CI / native-i18n:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31184221539",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31184221539",
+        "cluster_id": "issue-openclaw-openclaw-120228",
+        "published_at": "2026-08-07T14:33:57.611Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120247",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(android): keep chat drafts readable on compact screens",
+          "idempotency_key": null,
+          "reason": "checks are not clean: native-i18n: FAILURE, android-build-play: IN_PROGRESS, android-ktlint: QUEUED",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / native-i18n:FAILURE; CI / openclaw/ci-gate:FAILURE",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
       "number": 120230,
       "title": "fix(windows): preserve gateway restart CLI during Scheduled Task handoff",
       "url": "https://github.com/openclaw/openclaw/pull/120230",
@@ -34,9 +142,9 @@
       "head_sha": "d4b40a7f32aa597302c7c7852e3db1109c36e33f",
       "cluster_id": "issue-openclaw-openclaw-120134",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120134.md",
-      "updated_at": "2026-08-07T13:28:57Z",
+      "updated_at": "2026-08-07T14:01:00Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -81,7 +189,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
