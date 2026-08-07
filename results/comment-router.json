@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T19:45:14.548Z",
+  "updated_at": "2026-08-07T19:45:33.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116373:5218651754:2026-08-07T15:00:50Z:re_review",
-      "comment_id": "5218651754",
-      "comment_version_key": "5218651754:2026-08-07T15:00:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116373#issuecomment-5218651754",
-      "comment_created_at": "2026-08-07T15:00:50Z",
-      "comment_updated_at": "2026-08-07T15:00:50Z",
-      "comment_body_sha256": "16aa9023827103f6e3b6828c65221f7aa87e237b311f57f9eeb57bfcd5f5a5ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116373,
-      "author": "sloptop-the-terrible",
-      "author_id": 310909503,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T15:35:14.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-session-forced-key",
-        "head_sha": "f0cf40cf5475b5a7d736ee5b7864d9ac8d276566",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119275:5218651834:2026-08-07T15:00:51Z:re_review",
       "comment_id": "5218651834",
@@ -32180,6 +32133,39 @@
         "kind": "pull_request",
         "branch": "codex/brokered-credential-foundation",
         "head_sha": "3a21400824537008b36fbd6c08febd98e2907930",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112361:5127948026:2026-08-07T19:38:32Z:clawsweeper_auto_repair",
+      "comment_id": "5127948026",
+      "comment_version_key": "5127948026:2026-08-07T19:38:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112361#issuecomment-5127948026",
+      "comment_created_at": "2026-07-30T07:30:54Z",
+      "comment_updated_at": "2026-08-07T19:38:32Z",
+      "comment_body_sha256": "b7905a11654d34826d0b0779e37ec57fda12d536376faf0b8edb52ae69bbc728",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=713a8c6cb4b7e478bb6299234415fb91c1c5e143)",
+      "expected_head_sha": "713a8c6cb4b7e478bb6299234415fb91c1c5e143",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T19:45:33.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/els773-voice-call-turn-taking",
+        "head_sha": "713a8c6cb4b7e478bb6299234415fb91c1c5e143",
         "cluster_id": null,
         "job_path": null
       }
