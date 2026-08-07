@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T01:08:19.333Z",
+  "generated_at": "2026-08-07T01:40:24.376Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31136561828.json",
+  "run_record": "results/runs/31135686305.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31136561828",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31135686305",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#120076:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#120076",
+      "title": "fix(mcp): receive loopback OAuth login callbacks",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31135686305",
+      "cluster_id": "automerge-openclaw-openclaw-120076",
+      "hook_run_id": "b9d88e74-8102-405e-834b-9b788e3703d9",
+      "url": "https://github.com/openclaw/openclaw/pull/120076"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#120076:repair_contributor_branch:pushed:0c77df0530dd8d4fe469b835a6887bb4ff02cf98",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#120076",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31135686305",
+      "cluster_id": "automerge-openclaw-openclaw-120076",
+      "hook_run_id": "3189860c-73cb-4828-be62-03beedb6c36e",
+      "url": "https://github.com/openclaw/openclaw/pull/120076"
+    }
+  ]
 }
