@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:37:46.303Z",
+  "updated_at": "2026-08-07T07:37:52.046Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119930:5210850484:2026-08-07T01:17:30Z:re_review",
-      "comment_id": "5210850484",
-      "comment_version_key": "5210850484:2026-08-07T01:17:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119930#issuecomment-5210850484",
-      "comment_created_at": "2026-08-07T01:17:30Z",
-      "comment_updated_at": "2026-08-07T01:17:30Z",
-      "comment_body_sha256": "85591074c33f592bd5fc96aa0a565be589d2a50b8e340c826c40736a20bb2cb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119930,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T03:36:58.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/prospect-agents-update-clear-identity",
-        "head_sha": "5134849e4a4f69d992b4bac5640383485dfc51a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119923:5210809045:2026-08-07T01:13:30Z:re_review",
       "comment_id": "5210809045",
@@ -32035,6 +31988,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-provider-capture-terminal-ownership",
         "head_sha": "7f484be99ceeb42c91afe68a40487000bbbbbe7a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119182:5178131969:2026-08-07T07:35:56Z:clawsweeper_needs_human",
+      "comment_id": "5178131969",
+      "comment_version_key": "5178131969:2026-08-07T07:35:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119182#issuecomment-5178131969",
+      "comment_created_at": "2026-08-04T11:06:08Z",
+      "comment_updated_at": "2026-08-07T07:35:56Z",
+      "comment_body_sha256": "8215e25c733da81fea6a090fd5ac20fbc06460c1b54c012364f7946ebd08ca55",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally makes otherwise valid NIP-11 documents larger than 16 MiB fail Buzz setup; maintainers should explicitly accept that resource-protection compatibility boundary. (sha=6d8b2319b6c82091d8d1f9492cfebe081f207378)",
+      "expected_head_sha": "6d8b2319b6c82091d8d1f9492cfebe081f207378",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:37:52.046Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-buzz-relay-info-bounded-json",
+        "head_sha": "6d8b2319b6c82091d8d1f9492cfebe081f207378",
         "cluster_id": null,
         "job_path": null
       }
