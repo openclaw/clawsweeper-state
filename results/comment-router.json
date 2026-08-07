@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:29:58.485Z",
+  "updated_at": "2026-08-07T06:30:08.256Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118430:5199542400:2026-08-06T02:02:01Z:re_review",
-      "comment_id": "5199542400",
-      "comment_version_key": "5199542400:2026-08-06T02:02:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118430#issuecomment-5199542400",
-      "comment_created_at": "2026-08-06T02:02:01Z",
-      "comment_updated_at": "2026-08-06T02:02:01Z",
-      "comment_body_sha256": "0d451d485027bedac341b0c7ad8c30e4b340046a446d3d48a015f2103ad37139",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118430,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — clearing the stuck review-recovery marker: a fresh review started on 2026-08-05 but never produced a durable verdict; please re-review the current head (75dd87c260fc)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T01:35:31.837Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118430:5200353189:2026-08-06T04:21:57Z:re_review",
       "comment_id": "5200353189",
@@ -31233,6 +31206,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120146:5213392320:2026-08-07T06:29:24Z:re_review",
+      "comment_id": "5213392320",
+      "comment_version_key": "5213392320:2026-08-07T06:29:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120146#issuecomment-5213392320",
+      "comment_created_at": "2026-08-07T06:29:24Z",
+      "comment_updated_at": "2026-08-07T06:29:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "564653c0-9229-11f1-934d-e22d083dbde1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120146,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T06:30:06.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-device-pair-revoke-silent-failure",
+        "head_sha": "8da6a8621c87c4b50cb8d48f4a9e886390ef0e9d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
