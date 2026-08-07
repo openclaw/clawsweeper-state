@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120134"
 mode: "autonomous"
-run_id: "31155296593"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31155296593"
+run_id: "31159533620"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31159533620"
 head_sha: "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-07T07:24:24.847Z"
-canonical: "https://github.com/openclaw/openclaw/issues/120134"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/120134"
+published_at: "2026-08-07T08:02:42.162Z"
+canonical: "#120134"
+canonical_issue: "#120134"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31155296593](https://github.com/openclaw/clawsweeper/actions/runs/31155296593)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31159533620](https://github.com/openclaw/clawsweeper/actions/runs/31159533620)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/120134
+Canonical: #120134
 
 ## Summary
 
-Current main reproduces the Windows Scheduled Task restart defect at source level. A narrow owner-boundary fix is ready as an artifact; implementation and validation are blocked because this checkout is read-only and lacks node_modules/p-map.
+#120134 remains a valid, narrow Scheduled Task restart defect on ea4466e5dce50cf972524623990e27db8f3b32be. The required repair is specified, but this worker has a read-only checkout and cannot create/update clawsweeper/issue-openclaw-openclaw-120134 or run the resulting regression suite and Windows proof.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Current main reproduces the Windows Scheduled Task restart defect at source leve
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #63491 | keep_related | planned | related | Keep open as a related Windows Scheduled Task investigation; this narrow repair does not resolve its broader listener-loss report. |
-| #90158 | keep_related | planned | related | The reported /Run failure occurs after #120134's cleanup-and-port-release stage and needs a separate recovery-policy decision. |
-| #99518 | route_security | planned | security_sensitive | Approval-boundary policy is outside this ordinary bug-fix lane. |
-| #120134 | fix_needed | planned | canonical | A verified-snapshot ancestor check can narrowly preserve the restarting CLI while retaining ordinary external tree cleanup and the existing port-release failure. |
-| cluster:issue-openclaw-openclaw-120134 | build_fix_artifact | blocked | canonical | Executor should apply the narrow artifact on clawsweeper/issue-openclaw-openclaw-120134, install dependencies remotely, and obtain Windows lifecycle proof before opening the PR. |
+| #120134 | fix_needed | planned | canonical | Implement the narrow owner-boundary repair before opening the allowed fix PR. |
+| #120134 | build_fix_artifact | planned | canonical | A new fix PR is allowed, but cannot be produced from the read-only worker checkout. |
+| #63491 | keep_related | planned | related | Related Windows Scheduled Task symptoms, different root cause and repair boundary. |
+| #90158 | keep_related | planned | related | Separate failure phase and proposed owner behavior. |
+| #99518 | route_security | planned | security_sensitive | Quarantined to central security handling without blocking the ordinary Windows restart repair. |
 
 ## Needs Human
 
