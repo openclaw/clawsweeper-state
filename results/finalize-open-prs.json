@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T08:37:13.946Z",
+  "generated_at": "2026-08-07T10:27:59.062Z",
   "count": 17,
   "summary": {
     "open_prs": 17,
@@ -10,7 +10,7 @@
     "security_hold": 2,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
-    "needs_checks": 9,
+    "needs_checks": 8,
     "needs_review": 0,
     "needs_merge_preflight": 17,
     "needs_result_backfill": 0
@@ -27,6 +27,66 @@
   },
   "prs": [
     {
+      "number": 120215,
+      "title": "fix(plugins): retain incognito scope for embedded session ownership",
+      "url": "https://github.com/openclaw/openclaw/pull/120215",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120178",
+      "head_sha": "d6343eccde801343621d23e8625581ec22a6ff01",
+      "cluster_id": "issue-openclaw-openclaw-120178",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120178.md",
+      "updated_at": "2026-08-07T10:15:29Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 123,
+        "counts": {
+          "SKIPPED": 41,
+          "SUCCESS": 81,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31166546343",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31166546343",
+        "cluster_id": "issue-openclaw-openclaw-120178",
+        "published_at": "2026-08-07T10:26:11.378Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120215",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(plugins): retain incognito scope for embedded session ownership",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
+    {
       "number": 120150,
       "title": "fix(discord): identify native-command empty reply outcomes",
       "url": "https://github.com/openclaw/openclaw/pull/120150",
@@ -34,7 +94,7 @@
       "head_sha": "6f687016092db7c2ebdd0095fcaabe6a069fb075",
       "cluster_id": "issue-openclaw-openclaw-120142",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120142.md",
-      "updated_at": "2026-08-07T06:45:19Z",
+      "updated_at": "2026-08-07T09:39:28Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -55,19 +115,13 @@
         "examples": []
       },
       "review_bots": {
-        "count": 2,
+        "count": 1,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120150#issuecomment-5212885651",
             "submitted_at": "2026-08-07T05:40:29Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120150#issuecomment-5213472325",
-            "submitted_at": "2026-08-07T06:39:17Z"
           }
         ]
       },
@@ -1197,76 +1251,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 119589,
-      "title": "fix(acp): retain final-only text until dispatch completes",
-      "url": "https://github.com/openclaw/openclaw/pull/119589",
-      "branch": "clawsweeper/issue-openclaw-openclaw-92199",
-      "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-      "cluster_id": "issue-openclaw-openclaw-92199",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
-      "updated_at": "2026-08-07T03:39:42Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 115,
-        "counts": {
-          "CANCELLED": 12,
-          "SKIPPED": 44,
-          "SUCCESS": 58,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119589#issuecomment-5191500547",
-            "submitted_at": "2026-08-05T12:06:10Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31000389101",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31000389101",
-        "cluster_id": "issue-openclaw-openclaw-92199",
-        "published_at": "2026-08-05T11:37:47.972Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119589",
-          "action": "keep_canonical",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#92199",
-          "candidate_fix": null,
-          "reason": "This is the viable canonical fix path; the job forbids merge, so it remains open pending the required exact-head review and normal merge gates."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }

@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120178",
+  "mode": "autonomous",
+  "run_id": "31166546343",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31166546343",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120178.md",
+  "published_at": "2026-08-07T10:26:11.378Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120178",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120178",
+  "canonical_pr": null,
+  "summary": "Confirmed current-main ownership-scope defect. Plan a narrow new fix PR; this read-only worker could not create or validate the branch.",
+  "actions": [
+    {
+      "target": "#120178",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120178",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is needed; no viable implementation PR was hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120178",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120178",
+      "candidate_fix": null,
+      "reason": "Executor should implement, validate, and open the authorized single fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120215",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120178",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120215",
+      "commit": "d6343eccde801343621d23e8625581ec22a6ff01",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120178",
+      "pr": "https://github.com/openclaw/openclaw/pull/120215",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120215",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120215",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(plugins): retain incognito scope for embedded session ownership",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

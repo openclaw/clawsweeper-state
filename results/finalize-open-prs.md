@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T08:37:13.946Z
+Generated: 2026-08-07T10:27:59.062Z
 
 ## Summary
 
@@ -11,7 +11,7 @@ Generated: 2026-08-07T08:37:13.946Z
 | security_hold | 2 |
 | needs_rebase | 3 |
 | mergeability_unknown | 0 |
-| needs_checks | 9 |
+| needs_checks | 8 |
 | needs_review | 0 |
 | needs_merge_preflight | 17 |
 | needs_result_backfill | 0 |
@@ -30,6 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| [#120215](https://github.com/openclaw/openclaw/pull/120215) | fix(plugins): retain incognito scope for embedded session ownership | issue-openclaw-openclaw-120178 | MERGEABLE | BLOCKED | SKIPPED:41 SUCCESS:81 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | issue-openclaw-openclaw-120142 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:49 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | issue-openclaw-openclaw-89254 | MERGEABLE | BEHIND | SKIPPED:48 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120076](https://github.com/openclaw/openclaw/pull/120076) | fix(mcp): receive loopback OAuth login callbacks | issue-openclaw-openclaw-120019 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:50 SUCCESS:80 NEUTRAL:1; blockers:1 | security_hold, needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | route to central security triage |
@@ -46,4 +47,3 @@ Status: report_only
 | [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | issue-openclaw-openclaw-89430 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:46 SUCCESS:72 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119717](https://github.com/openclaw/openclaw/pull/119717) | fix(telegram): prioritize configured commands in capped menus | issue-openclaw-openclaw-89252 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:44 SUCCESS:73 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | issue-openclaw-openclaw-119692 | MERGEABLE | BEHIND | SKIPPED:39 SUCCESS:80 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
-| [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | issue-openclaw-openclaw-92199 | MERGEABLE | BEHIND | CANCELLED:12 SKIPPED:44 SUCCESS:58 NEUTRAL:1; blockers:6 | needs_merge_state:BEHIND, needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
