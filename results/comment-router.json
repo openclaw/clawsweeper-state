@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T15:40:37.565Z",
+  "updated_at": "2026-08-07T15:40:58.724Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78441:4656743191:2026-06-09T06:24:51Z:re_review",
-      "comment_id": "4656743191",
-      "comment_version_key": "4656743191:2026-06-09T06:24:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78441#issuecomment-4656743191",
-      "comment_created_at": "2026-06-09T06:24:51Z",
-      "comment_updated_at": "2026-06-09T06:24:51Z",
-      "comment_body_sha256": "2f2d2d7a13897e257fa4cc4a6558d3ca16f6817808b0dafd566c12e4b22532f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78441,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T10:46:49.103Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:78441:4676871288:2026-06-11T03:18:49Z:re_review",
       "comment_id": "4676871288",
@@ -32659,6 +32632,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T15:40:37.564Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118668:5166587703:2026-08-07T15:40:11Z:clawsweeper_needs_human",
+      "comment_id": "5166587703",
+      "comment_version_key": "5166587703:2026-08-07T15:40:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118668#issuecomment-5166587703",
+      "comment_created_at": "2026-08-03T12:57:59Z",
+      "comment_updated_at": "2026-08-07T15:40:11Z",
+      "comment_body_sha256": "d97b65207e50fd9637404b25770e97cc76e2076a994dfac6ef41d45e4ea90505",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests cover the logic, but the only posted terminal result is for the prior head and does not demonstrate this head’s queued production... (sha=45c9690f01a6ca4243e0e27c49e7ba1e2616c99b)",
+      "expected_head_sha": "45c9690f01a6ca4243e0e27c49e7ba1e2616c99b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T15:40:58.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-104358-cleanup-host-staging",
+        "head_sha": "45c9690f01a6ca4243e0e27c49e7ba1e2616c99b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
