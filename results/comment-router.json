@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:42:19.880Z",
+  "updated_at": "2026-08-07T03:42:21.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119686:5200025852:2026-08-06T03:24:29Z:re_review",
-      "comment_id": "5200025852",
-      "comment_version_key": "5200025852:2026-08-06T03:24:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119686#issuecomment-5200025852",
-      "comment_created_at": "2026-08-06T03:24:29Z",
-      "comment_updated_at": "2026-08-06T03:24:29Z",
-      "comment_body_sha256": "003d73a851feec0924c7bf35106ff868895fdb061c6ff6723a0efe0820951da7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119686,
-      "author": "sappkevin",
-      "author_id": 109696421,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T23:36:10.798Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120009:5209969078:2026-08-06T23:35:39Z:clawsweeper_auto_repair",
       "comment_id": "5209969078",
@@ -31132,6 +31105,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120120:5212024884:2026-08-07T03:40:31Z:clawsweeper_needs_human",
+      "comment_id": "5212024884",
+      "comment_version_key": "5212024884:2026-08-07T03:40:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120120#issuecomment-5212024884",
+      "comment_created_at": "2026-08-07T03:40:31Z",
+      "comment_updated_at": "2026-08-07T03:40:31Z",
+      "comment_body_sha256": "4b12ea18966ffa446d598dfabe6c1385c656262447e000b4db2e1ea39046db54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required exact-head CI was still in progress in the supplied context; merge should wait for its normal completion and any current ClawSweeper rank-up moves. (sha=9ee9e99660294ce2acf128d2451a73b81cc83ef4)",
+      "expected_head_sha": "9ee9e99660294ce2acf128d2451a73b81cc83ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T03:42:21.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/loc3-chat-host-5f2b",
+        "head_sha": "9ee9e99660294ce2acf128d2451a73b81cc83ef4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
