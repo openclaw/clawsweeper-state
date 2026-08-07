@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T11:51:41.295Z",
+  "updated_at": "2026-08-07T11:51:34.762Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107152:5211573962:2026-08-07T02:51:03Z:re_review",
@@ -31877,36 +31877,36 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120215:5216623068:2026-08-07T11:50:56Z:clawsweeper_auto_merge",
-      "comment_id": "5216623068",
-      "comment_version_key": "5216623068:2026-08-07T11:50:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120215#issuecomment-5216623068",
-      "comment_created_at": "2026-08-07T11:44:24Z",
-      "comment_updated_at": "2026-08-07T11:50:56Z",
-      "comment_body_sha256": "64c869fe0b010f42181b0bd9f7adab01958729c0210703bf42278a459a9e97ae",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120218:5216621426:2026-08-07T11:50:47Z:clawsweeper_needs_human",
+      "comment_id": "5216621426",
+      "comment_version_key": "5216621426:2026-08-07T11:50:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120218#issuecomment-5216621426",
+      "comment_created_at": "2026-08-07T11:44:15Z",
+      "comment_updated_at": "2026-08-07T11:50:47Z",
+      "comment_body_sha256": "e272419be6e648a748fa972586733b1c49bd996dd8ee54affc65c87a77b91edd",
       "repo": "openclaw/openclaw",
-      "issue_number": 120215,
+      "issue_number": 120218,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
       "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
       "trusted_bot": true,
       "trusted_bot_author": "clawsweeper[bot]",
       "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=d6343eccde801343621d23e8625581ec22a6ff01)",
-      "expected_head_sha": "d6343eccde801343621d23e8625581ec22a6ff01",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports mock-driven focused tests, but contains no redacted real Claude abort or OAuth callback run showing the after-fix operator...; Review finding: [P1] Preserve the aborted terminal state with partial text — src/agents/cli-runner/claude-live-session.ts:561-568 - [P1] Preserve partial output for timeout aborts... (sha=432e52597419e761f2f09fb42540b62eb961c1e1)",
+      "expected_head_sha": "432e52597419e761f2f09fb42540b62eb961c1e1",
       "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-07T11:51:41.295Z",
+      "status": "skipped",
+      "processed_at": "2026-08-07T11:51:34.762Z",
       "target": {
         "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120178",
-        "head_sha": "d6343eccde801343621d23e8625581ec22a6ff01",
-        "cluster_id": "automerge-openclaw-openclaw-120215",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120215.md"
+        "branch": "fix/claude-live-abort-partial-output-120207",
+        "head_sha": "432e52597419e761f2f09fb42540b62eb961c1e1",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
