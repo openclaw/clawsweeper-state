@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:44:57.960Z",
+  "updated_at": "2026-08-07T06:45:06.613Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119256:5204020502:2026-08-06T11:24:33Z:re_review",
-      "comment_id": "5204020502",
-      "comment_version_key": "5204020502:2026-08-06T11:24:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5204020502",
-      "comment_created_at": "2026-08-06T11:24:33Z",
-      "comment_updated_at": "2026-08-06T11:24:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "pscoutosoares",
-      "author_id": 15336146,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T02:37:40.273Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119256:5208079322:2026-08-06T18:08:20Z:re_review",
       "comment_id": "5208079322",
@@ -31991,6 +31964,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120056:5211039896:2026-08-07T06:44:25Z:clawsweeper_needs_human",
+      "comment_id": "5211039896",
+      "comment_version_key": "5211039896:2026-08-07T06:44:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120056#issuecomment-5211039896",
+      "comment_created_at": "2026-08-07T01:39:34Z",
+      "comment_updated_at": "2026-08-07T06:44:25Z",
+      "comment_body_sha256": "eb94ad7df6373f656a96ad6dc2f6d85ccb42929799f242a834260219b313ffad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new test reaches the real classifier through a mocked run harness, but no redacted after-fix cron run, runtime log, or production-boundary... (sha=c4ab223510f14ec9c33941b42ea7769af443abcc)",
+      "expected_head_sha": "c4ab223510f14ec9c33941b42ea7769af443abcc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T06:45:06.613Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-silent-reply-clears-tool-error",
+        "head_sha": "c4ab223510f14ec9c33941b42ea7769af443abcc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
