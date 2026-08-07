@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:39:49.338Z",
+  "updated_at": "2026-08-07T01:40:03.097Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5189908424:2026-08-05T09:13:54Z:re_review",
-      "comment_id": "5189908424",
-      "comment_version_key": "5189908424:2026-08-05T09:13:54Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5189908424",
-      "comment_created_at": "2026-08-05T09:13:54Z",
-      "comment_updated_at": "2026-08-05T09:13:54Z",
-      "comment_body_sha256": "58b67a1fcae5353cdd2cc043998b75a55af0a7da6be9f42e393a81372bb664d2",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T14:58:29.668Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:134:5189978386:2026-08-05T09:21:00Z:re_review",
       "comment_id": "5189978386",
@@ -32771,6 +32744,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120031:5211038678:2026-08-07T01:39:23Z:clawsweeper_needs_human",
+      "comment_id": "5211038678",
+      "comment_version_key": "5211038678:2026-08-07T01:39:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120031#issuecomment-5211038678",
+      "comment_created_at": "2026-08-07T01:39:23Z",
+      "comment_updated_at": "2026-08-07T01:39:23Z",
+      "comment_body_sha256": "5dbe0ace9e3453db93f940126e3be647264043e4f6d9db88d51af4c084fff420",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed branch controls retry versus ambiguous-send recovery after provider aborts; exact-head CI must be green before merge because the supplied check rollup includes failed type... (sha=ddd3b1117b785a4b3696e79f7f3682a70f8bc2a3)",
+      "expected_head_sha": "ddd3b1117b785a4b3696e79f7f3682a70f8bc2a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:40:03.097Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/outbound-abort-custody",
+        "head_sha": "ddd3b1117b785a4b3696e79f7f3682a70f8bc2a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
