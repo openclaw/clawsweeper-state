@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:41:29.791Z",
+  "updated_at": "2026-08-07T03:41:35.679Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120044:5209963738:2026-08-06T23:34:52Z:clawsweeper_auto_repair",
-      "comment_id": "5209963738",
-      "comment_version_key": "5209963738:2026-08-06T23:34:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120044#issuecomment-5209963738",
-      "comment_created_at": "2026-08-06T23:34:52Z",
-      "comment_updated_at": "2026-08-06T23:34:52Z",
-      "comment_body_sha256": "8d3e3fe6dbb78f610e4ca395d52caa24a648e4da0c2d74f214c409307a2ea5c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120044,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a522b20e041abb32f389271d4a3236113bd70ced)",
-      "expected_head_sha": "a522b20e041abb32f389271d4a3236113bd70ced",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T23:35:41.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-request-latency",
-        "head_sha": "a522b20e041abb32f389271d4a3236113bd70ced",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115405:5117935490:2026-08-06T23:34:58Z:clawsweeper_auto_repair",
       "comment_id": "5117935490",
@@ -31092,6 +31059,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T03:41:29.791Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120131:5212029301:2026-08-07T03:40:56Z:clawsweeper_needs_human",
+      "comment_id": "5212029301",
+      "comment_version_key": "5212029301:2026-08-07T03:40:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120131#issuecomment-5212029301",
+      "comment_created_at": "2026-08-07T03:40:56Z",
+      "comment_updated_at": "2026-08-07T03:40:56Z",
+      "comment_body_sha256": "6da8f7329f80793e7a18b904ab9a9a2003b3bdb290ccac3e363aede8091da4f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Replacing NodeSDK’s resource setup with an explicit detector list can change supported OTEL_NODE_RESOURCE_DETECTORS handling or allow detected OTEL_SERVICE_NAME data to override expli... (sha=395956f6b399fc85155a604ff50441e1c3edf13c)",
+      "expected_head_sha": "395956f6b399fc85155a604ff50441e1c3edf13c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T03:41:35.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diagnostics-otel-restart-119997",
+        "head_sha": "395956f6b399fc85155a604ff50441e1c3edf13c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
