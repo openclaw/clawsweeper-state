@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-118688",
+  "mode": "autonomous",
+  "run_id": "31181944520",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31181944520",
+  "head_sha": "f6f6bfca7d65aa54eec9daa82ab84cda9ad6e0e8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md",
+  "published_at": "2026-08-07T13:23:04.483Z",
+  "canonical": "#118688",
+  "canonical_issue": "#118625",
+  "canonical_pr": "#118688",
+  "summary": "#118688 remains the canonical repair path, but needs a producer-recorded, typed compaction/lock causal binding before its automatic redrive can be merge-ready. The current requester-wide expiry selection can invoke the duplicate-risk manual redrive for unrelated completions.",
+  "actions": [
+    {
+      "target": "#118625",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118625",
+      "candidate_fix": "#118688",
+      "reason": "Keep the source report open while its canonical fix is repaired and re-reviewed."
+    },
+    {
+      "target": "#118688",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118688",
+      "candidate_fix": "#118688",
+      "reason": "Repair the contributor branch with a typed, matching compaction/lock cause recorded at the delivery suspension producer; do not infer causal ownership from requester identity, expiry text, or a timestamp-only scan."
+    },
+    {
+      "target": "#119072",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#118688",
+      "candidate_fix": null,
+      "reason": "Keep open as related work; do not merge, close, or replace it in this #118688 repair job."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
