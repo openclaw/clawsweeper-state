@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T08:48:04.579Z",
+  "updated_at": "2026-08-07T09:00:08.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120058:5212203157:2026-08-07T03:59:28Z:re_review",
-      "comment_id": "5212203157",
-      "comment_version_key": "5212203157:2026-08-07T03:59:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120058#issuecomment-5212203157",
-      "comment_created_at": "2026-08-07T03:59:28Z",
-      "comment_updated_at": "2026-08-07T03:59:28Z",
-      "comment_body_sha256": "a2479407324c56bd8957ac6d98c56aded6fa36f510fa82b8db3fa29b68b285dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120058,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T05:45:14.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/vercel-container-registry",
-        "head_sha": "a4ffc73d6fb81e8816d903040dc9f49b55ccaaea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120058:5211016039:2026-08-07T05:42:59Z:clawsweeper_needs_human",
       "comment_id": "5211016039",
@@ -32447,6 +32400,39 @@
         "kind": "pull_request",
         "branch": "fix/review-cache-coordination-gate",
         "head_sha": "5ba31b2373e0c2bd132e0d116d9ce1a3dcb69764",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:41:4988768351:2026-08-07T08:59:24Z:clawsweeper_auto_repair",
+      "comment_id": "4988768351",
+      "comment_version_key": "4988768351:2026-08-07T08:59:24Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/41#issuecomment-4988768351",
+      "comment_created_at": "2026-07-16T06:10:47Z",
+      "comment_updated_at": "2026-08-07T08:59:24Z",
+      "comment_body_sha256": "8c081b09b578c29e1a03f2168829e7f990a893d9ba9a5ce2ae864211c60725f8",
+      "repo": "openclaw/rfcs",
+      "issue_number": 41,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6a2a0c2bc163d600cd1ef52d57c8f10993f06251)",
+      "expected_head_sha": "6a2a0c2bc163d600cd1ef52d57c8f10993f06251",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T09:00:08.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0004-doctor-structured-repair",
+        "head_sha": "6a2a0c2bc163d600cd1ef52d57c8f10993f06251",
         "cluster_id": null,
         "job_path": null
       }
