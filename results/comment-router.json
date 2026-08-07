@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T12:31:32.049Z",
+  "updated_at": "2026-08-07T12:31:35.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119827:5214057849:2026-08-07T07:45:33Z:re_review",
-      "comment_id": "5214057849",
-      "comment_version_key": "5214057849:2026-08-07T07:45:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119827#issuecomment-5214057849",
-      "comment_created_at": "2026-08-07T07:45:33Z",
-      "comment_updated_at": "2026-08-07T07:45:33Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "source_delivery_id": "f9088ab0-9233-11f1-9986-9fc3b56022cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119827,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T07:46:01.809Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-claim-bind-limit-119490",
-        "head_sha": "9608744489866e000a017c9039767717e4e18531",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116244:5214062225:2026-08-07T07:46:03Z:re_review",
       "comment_id": "5214062225",
@@ -32164,6 +32116,39 @@
         "kind": "pull_request",
         "branch": "codex/944-live-tier",
         "head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:217:4969657438:2026-08-07T12:30:46Z:clawsweeper_needs_human",
+      "comment_id": "4969657438",
+      "comment_version_key": "4969657438:2026-08-07T12:30:46Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/217#issuecomment-4969657438",
+      "comment_created_at": "2026-07-14T13:25:27Z",
+      "comment_updated_at": "2026-08-07T12:30:46Z",
+      "comment_body_sha256": "5ffae9eef7d573e8b9698f17989497eb9952d533edbb950b7eebe980609d7650",
+      "repo": "openclaw/crabpot",
+      "issue_number": 217,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resolving the conflict without regenerating the reports would publish compatibility evidence for the obsolete 2026.7.1 target instead of current main’s 2026.7.2 target. (sha=849551afef76329bb5696914b871b10944c1cb8a)",
+      "expected_head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T12:31:35.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/submodules/plugins/hyperspell-f994920",
+        "head_sha": "849551afef76329bb5696914b871b10944c1cb8a",
         "cluster_id": null,
         "job_path": null
       }
