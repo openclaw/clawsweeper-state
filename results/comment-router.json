@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:44:32.230Z",
+  "updated_at": "2026-08-07T07:45:03.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117397:5151499387:2026-08-07T04:35:42Z:clawsweeper_needs_human",
-      "comment_id": "5151499387",
-      "comment_version_key": "5151499387:2026-08-07T04:35:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117397#issuecomment-5151499387",
-      "comment_created_at": "2026-08-01T12:51:17Z",
-      "comment_updated_at": "2026-08-07T04:35:42Z",
-      "comment_body_sha256": "73d9b54b85d2ec1eb08f9d8069f0a95bd713f200cd284e867294d6b714449478",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117397,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; run the focused clone lifecycle regressions on the exact clean merge result before landing. (sha=5844bccaf2739da7091bc0411b77e2a6b441d53e)",
-      "expected_head_sha": "5844bccaf2739da7091bc0411b77e2a6b441d53e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T04:36:25.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-shared-response-cancel-lifecycle",
-        "head_sha": "5844bccaf2739da7091bc0411b77e2a6b441d53e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111125:5013805099:2026-08-07T04:36:18Z:clawsweeper_needs_human",
       "comment_id": "5013805099",
@@ -32053,6 +32020,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119169:5214047521:2026-08-07T07:44:23Z:re_review",
+      "comment_id": "5214047521",
+      "comment_version_key": "5214047521:2026-08-07T07:44:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119169#issuecomment-5214047521",
+      "comment_created_at": "2026-08-07T07:44:23Z",
+      "comment_updated_at": "2026-08-07T07:44:23Z",
+      "comment_body_sha256": "e4d22f1cf1e1a756ec578387d8a8dde2fc6e65a1609a4ab52537e06480223f16",
+      "source_delivery_id": "cf3e25a0-9233-11f1-97dd-52ff06d764cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119169,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T07:45:00.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channel-durable-delivery-ambiguous",
+        "head_sha": "ccc80ade341c5be1f9930118a451ded1590590cf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
