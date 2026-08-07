@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T15:19:59.892Z",
-  "count": 20,
+  "generated_at": "2026-08-07T16:08:27.169Z",
+  "count": 13,
   "summary": {
-    "open_prs": 20,
+    "open_prs": 13,
     "ready_candidates": 0,
-    "security_hold": 2,
+    "security_hold": 1,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
-    "needs_checks": 9,
+    "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 20,
+    "needs_merge_preflight": 13,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,15 +34,15 @@
       "head_sha": "f2dc4662d1e72d6a46547ad32ca7dc8a889ffb5a",
       "cluster_id": "issue-openclaw-openclaw-91860",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-91860.md",
-      "updated_at": "2026-08-07T14:27:01Z",
+      "updated_at": "2026-08-07T15:49:24Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 125,
+        "total": 135,
         "counts": {
-          "SKIPPED": 35,
+          "SKIPPED": 45,
           "SUCCESS": 89,
           "NEUTRAL": 1
         },
@@ -55,8 +55,15 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120249#issuecomment-5219149537",
+            "submitted_at": "2026-08-07T15:48:34Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31183812103",
@@ -91,24 +98,25 @@
       "title": "fix(android): keep chat drafts readable on compact screens",
       "url": "https://github.com/openclaw/openclaw/pull/120247",
       "branch": "clawsweeper/issue-openclaw-openclaw-120228",
-      "head_sha": "4ced5b979680d6e58b0cb7248f0c4f29ed99674f",
+      "head_sha": "e9a800cc569e5f110146b74055bfd8ae876b23e2",
       "cluster_id": "issue-openclaw-openclaw-120228",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120228.md",
-      "updated_at": "2026-08-07T14:49:14Z",
+      "updated_at": "2026-08-07T16:02:14Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 60,
+        "total": 99,
         "counts": {
-          "SKIPPED": 34,
-          "SUCCESS": 24,
-          "FAILURE": 2
+          "CANCELLED": 1,
+          "SKIPPED": 24,
+          "SUCCESS": 73,
+          "IN_PROGRESS": 1
         },
         "blockers": [
-          "CI / native-i18n:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "ClawSweeper Dispatch / dispatch:CANCELLED",
+          "CI / android-build-play:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -118,28 +126,47 @@
         "examples": []
       },
       "review_bots": {
-        "count": 0,
-        "latest": []
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120247#issuecomment-5219045824",
+            "submitted_at": "2026-08-07T15:38:14Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120247#issuecomment-5219054599",
+            "submitted_at": "2026-08-07T15:39:08Z"
+          }
+        ]
       },
       "latest_record": {
-        "run_id": "31187693688",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31187693688",
-        "cluster_id": "issue-openclaw-openclaw-120228",
-        "published_at": "2026-08-07T15:01:43.404Z",
+        "run_id": "31193680622",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31193680622",
+        "cluster_id": "automerge-openclaw-openclaw-120247",
+        "published_at": "2026-08-07T16:07:58.941Z",
         "workflow_conclusion": "success",
         "apply_action": {
           "target": "#120247",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#120247",
+          "action": "merge_canonical",
+          "status": "blocked",
+          "classification": "fix_pr",
+          "canonical": null,
           "candidate_fix": null,
-          "reason": "Rebase/refresh the existing writable branch, inspect and repair or classify the native-i18n failure, then rerun changed-surface validation and exact-head review. Do not merge in this job."
+          "title": "fix(android): keep chat drafts readable on compact screens",
+          "idempotency_key": null,
+          "reason": "autofix-only job cannot merge",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:CI / native-i18n:FAILURE; CI / openclaw/ci-gate:FAILURE",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED; CI / android-build-play:IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -910,526 +937,6 @@
           "canonical": null,
           "candidate_fix": null,
           "title": "fix(gateway): return retryable chat send error during transcript rebuild",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 119737,
-      "title": "fix(slack): require confirmed thread placement for terminal receipts",
-      "url": "https://github.com/openclaw/openclaw/pull/119737",
-      "branch": "clawsweeper/issue-openclaw-openclaw-96692",
-      "head_sha": "db140b159c758bf135a7de9a9f6afe073c3ac4cd",
-      "cluster_id": "issue-openclaw-openclaw-96692",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-96692.md",
-      "updated_at": "2026-08-06T02:44:04Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": true,
-      "checks": {
-        "total": 107,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 46,
-          "SUCCESS": 59,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 3,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198118390",
-            "submitted_at": "2026-08-05T22:28:25Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198130911",
-            "submitted_at": "2026-08-05T22:30:04Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119737#issuecomment-5198235083",
-            "submitted_at": "2026-08-05T22:43:49Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31068652687",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31068652687",
-        "cluster_id": "automerge-openclaw-openclaw-119737",
-        "published_at": "2026-08-06T03:41:28.322Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119737",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#119737",
-          "candidate_fix": "#119737",
-          "reason": "Repair the contributor branch rather than replacing it; no security-sensitive signal is present."
-        }
-      },
-      "blockers": [
-        "security_route",
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "route to central security triage"
-    },
-    {
-      "number": 119735,
-      "title": "fix(whatsapp): refresh activity for pending inbound work",
-      "url": "https://github.com/openclaw/openclaw/pull/119735",
-      "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-      "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-      "cluster_id": "issue-openclaw-openclaw-114169",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-114169.md",
-      "updated_at": "2026-08-06T00:41:50Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 122,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 49,
-          "SUCCESS": 71,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
-            "submitted_at": "2026-08-05T22:26:45Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198171204",
-            "submitted_at": "2026-08-05T22:35:28Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31053325148",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31053325148",
-        "cluster_id": "automerge-openclaw-openclaw-119735",
-        "published_at": "2026-08-05T23:27:26.601Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119735",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(whatsapp): refresh activity for pending inbound work",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119731,
-      "title": "fix(agents): bound task-completion result prompts",
-      "url": "https://github.com/openclaw/openclaw/pull/119731",
-      "branch": "clawsweeper/issue-openclaw-openclaw-57148",
-      "head_sha": "accec47835415908ba8b5fc7aa09e1ef0da87824",
-      "cluster_id": "issue-openclaw-openclaw-57148",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-57148.md",
-      "updated_at": "2026-08-05T23:39:06Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 129,
-        "counts": {
-          "SKIPPED": 47,
-          "SUCCESS": 81,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119731#issuecomment-5198174139",
-            "submitted_at": "2026-08-05T22:35:52Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31039505132",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31039505132",
-        "cluster_id": "issue-openclaw-openclaw-57148",
-        "published_at": "2026-08-05T20:30:47.515Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119731",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(agents): bound task-completion result prompts",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 119722,
-      "title": "fix(uninstall): remove owned shell completion registrations with state",
-      "url": "https://github.com/openclaw/openclaw/pull/119722",
-      "branch": "clawsweeper/issue-openclaw-openclaw-112625",
-      "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
-      "cluster_id": "issue-openclaw-openclaw-112625",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-112625.md",
-      "updated_at": "2026-08-07T15:03:04Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 130,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 49,
-          "SUCCESS": 79,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
-            "submitted_at": "2026-08-05T19:33:37Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196427869",
-            "submitted_at": "2026-08-05T19:34:39Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31045548540",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31045548540",
-        "cluster_id": "automerge-openclaw-openclaw-119722",
-        "published_at": "2026-08-05T21:17:41.672Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119722",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(uninstall): remove owned shell completion registrations with state",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119718,
-      "title": "fix(googlechat): deliver remote media URLs as text links",
-      "url": "https://github.com/openclaw/openclaw/pull/119718",
-      "branch": "clawsweeper/issue-openclaw-openclaw-89430",
-      "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-      "cluster_id": "issue-openclaw-openclaw-89430",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89430.md",
-      "updated_at": "2026-08-06T00:34:38Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 120,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 46,
-          "SUCCESS": 72,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
-            "submitted_at": "2026-08-05T20:10:31Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5197643150",
-            "submitted_at": "2026-08-05T21:34:57Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31056620012",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31056620012",
-        "cluster_id": "automerge-openclaw-openclaw-119718",
-        "published_at": "2026-08-06T00:56:24.746Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119718",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(googlechat): deliver remote media URLs as text links",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119717,
-      "title": "fix(telegram): prioritize configured commands in capped menus",
-      "url": "https://github.com/openclaw/openclaw/pull/119717",
-      "branch": "clawsweeper/issue-openclaw-openclaw-89252",
-      "head_sha": "4562fe53ce106fe0ff28c8d71f7a005b3ff3ebbb",
-      "cluster_id": "issue-openclaw-openclaw-89252",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-89252.md",
-      "updated_at": "2026-08-06T05:18:33Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 119,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 44,
-          "SUCCESS": 73,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 3,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119717#issuecomment-5196718968",
-            "submitted_at": "2026-08-05T20:02:03Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119717#issuecomment-5196991729",
-            "submitted_at": "2026-08-05T20:30:22Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119717#issuecomment-5197109299",
-            "submitted_at": "2026-08-05T20:42:31Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31071905373",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31071905373",
-        "cluster_id": "automerge-openclaw-openclaw-119717",
-        "published_at": "2026-08-06T05:22:31.615Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119717",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#119717",
-          "candidate_fix": "#119717",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119712,
-      "title": "fix(usage): preserve top-level cached tokens in completions streams",
-      "url": "https://github.com/openclaw/openclaw/pull/119712",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119692",
-      "head_sha": "5f06105ef03ea2f5cad196c9fed915e528783255",
-      "cluster_id": "issue-openclaw-openclaw-119692",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119692.md",
-      "updated_at": "2026-08-07T15:03:21Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 120,
-        "counts": {
-          "SKIPPED": 39,
-          "SUCCESS": 80,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119712#issuecomment-5196827378",
-            "submitted_at": "2026-08-05T20:12:49Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31034789647",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31034789647",
-        "cluster_id": "issue-openclaw-openclaw-119692",
-        "published_at": "2026-08-05T19:01:23.585Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119712",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(usage): preserve top-level cached tokens in completions streams",
           "idempotency_key": null,
           "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
           "merged_at": null,

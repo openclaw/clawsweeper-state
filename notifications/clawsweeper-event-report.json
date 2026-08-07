@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-07T15:20:00.591Z",
+  "generated_at": "2026-08-07T16:08:44.489Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31189446630.json",
+  "run_record": "results/runs/31193680622.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31189446630",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31193680622",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#120247:merge_canonical:blocked:autofix-only job cannot merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#120247",
+      "title": "fix(android): keep chat drafts readable on compact screens",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31193680622",
+      "cluster_id": "automerge-openclaw-openclaw-120247",
+      "hook_run_id": "fdb29a3d-d2a6-4c54-a664-a7ca5c0bba1e",
+      "url": "https://github.com/openclaw/openclaw/pull/120247"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/openclaw:#120247:repair_contributor_branch:pushed:e9a800cc569e5f110146b74055bfd8ae876b23e2",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#120247",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31193680622",
+      "cluster_id": "automerge-openclaw-openclaw-120247",
+      "hook_run_id": "d002c318-89b2-4e75-9641-2d4374a05480",
+      "url": "https://github.com/openclaw/openclaw/pull/120247"
+    }
+  ]
 }
