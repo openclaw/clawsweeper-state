@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T22:43:36.023Z",
+  "updated_at": "2026-08-07T22:43:42.061Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105887:5220363034:2026-08-07T17:54:48Z:re_review",
-      "comment_id": "5220363034",
-      "comment_version_key": "5220363034:2026-08-07T17:54:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105887#issuecomment-5220363034",
-      "comment_created_at": "2026-08-07T17:54:48Z",
-      "comment_updated_at": "2026-08-07T17:54:48Z",
-      "comment_body_sha256": "59491296f25cfafbcb3327f670ae86821219ca846b306da6a005cc020e48450d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105887,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T18:49:59.635Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/deepinfra-request-policy",
-        "head_sha": "f7c97a15bf0a7210c2cf1f8292ca9982e7473245",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5220364147:2026-08-07T17:54:54Z:re_review",
       "comment_id": "5220364147",
@@ -32274,6 +32227,39 @@
         "kind": "pull_request",
         "branch": "codex/skill-discovery-direct-read",
         "head_sha": "fefd15fe0e419e404d0d192e41b01c818ec79c0d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120342:5222248257:2026-08-07T22:42:38Z:clawsweeper_needs_human",
+      "comment_id": "5222248257",
+      "comment_version_key": "5222248257:2026-08-07T22:42:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120342#issuecomment-5222248257",
+      "comment_created_at": "2026-08-07T21:37:13Z",
+      "comment_updated_at": "2026-08-07T22:42:38Z",
+      "comment_body_sha256": "a657abeea30481c47e82417386977d3ea7859dee5d156f2c0a8d0e18bfe4d3ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub CLI v2.97's exact non-TTY stdout shape was not independently inspected, and the focused harness supplies the expected URL literally rather than exercising a real dispatch. (sha=bd588d610916ee86a9f4b37f81eb417c89107aeb)",
+      "expected_head_sha": "bd588d610916ee86a9f4b37f81eb417c89107aeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T22:43:42.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/2026-8-1-release-validation-d90625",
+        "head_sha": "d0fe3cc0eaacdd810532bbf202abc9a4a857745d",
         "cluster_id": null,
         "job_path": null
       }
