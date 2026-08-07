@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T16:49:40.067Z",
+  "updated_at": "2026-08-07T16:49:42.092Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118682:5217113174:2026-08-07T12:34:38Z:re_review",
-      "comment_id": "5217113174",
-      "comment_version_key": "5217113174:2026-08-07T12:34:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118682#issuecomment-5217113174",
-      "comment_created_at": "2026-08-07T12:34:38Z",
-      "comment_updated_at": "2026-08-07T12:34:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "5b563960-925c-11f1-8e0c-253160eb8a3b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118682,
-      "author": "RerankerGuo",
-      "author_id": 121015044,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T12:35:11.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-79469-effective-reasoning",
-        "head_sha": "40914549a933bd4dfe91dc8ae3b6fa4308e309e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:309:4949888150:2026-08-07T12:35:39Z:clawsweeper_auto_repair",
       "comment_id": "4949888150",
@@ -32022,6 +31974,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-codex-slack",
         "head_sha": "f4648d7870d14af125b9900fd502891a1775e450",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119106:5174915267:2026-08-07T15:40:59Z:clawsweeper_needs_human",
+      "comment_id": "5174915267",
+      "comment_version_key": "5174915267:2026-08-07T15:40:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119106#issuecomment-5174915267",
+      "comment_created_at": "2026-08-04T05:17:30Z",
+      "comment_updated_at": "2026-08-07T15:40:59Z",
+      "comment_body_sha256": "d9315bc460617a85dd26d9ded7e7920a9739f4b5d29a499edf51f0f02ec6e909",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119106,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body is an unfilled template and contains no redacted after-fix workflow, terminal, runtime, or log evidence. After adding proof, update...; Review finding: [P1] Bind SecretRef runs to the materialized key — src/agents/execution-auth-binding.ts:282-293 - [P1] Retain direct provider-key rotation in the owner proof — src... (sha=d965a5c625dd64a834c2c00458b437c2374cbae6)",
+      "expected_head_sha": "d965a5c625dd64a834c2c00458b437c2374cbae6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T16:49:42.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alert-autofix-11",
+        "head_sha": "d965a5c625dd64a834c2c00458b437c2374cbae6",
         "cluster_id": null,
         "job_path": null
       }
