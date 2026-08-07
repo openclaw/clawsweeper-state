@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T02:13:09.781Z",
-  "count": 16,
+  "generated_at": "2026-08-07T03:29:45.148Z",
+  "count": 15,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 15,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
     "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
+    "needs_merge_preflight": 15,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,66 +27,6 @@
   },
   "prs": [
     {
-      "number": 120100,
-      "title": "fix(diagnostics): preserve CLI turn usage totals",
-      "url": "https://github.com/openclaw/openclaw/pull/120100",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120060",
-      "head_sha": "af907a0709cd151917aeedc74ca390687622fbd9",
-      "cluster_id": "issue-openclaw-openclaw-120060",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120060.md",
-      "updated_at": "2026-08-07T02:03:47Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 124,
-        "counts": {
-          "SKIPPED": 41,
-          "SUCCESS": 82,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 0,
-        "latest": []
-      },
-      "latest_record": {
-        "run_id": "31135214713",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31135214713",
-        "cluster_id": "issue-openclaw-openclaw-120060",
-        "published_at": "2026-08-07T01:32:00.836Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120100",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(diagnostics): preserve CLI turn usage totals",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
       "number": 120076,
       "title": "fix(mcp): receive loopback OAuth login callbacks",
       "url": "https://github.com/openclaw/openclaw/pull/120076",
@@ -94,17 +34,17 @@
       "head_sha": "0c77df0530dd8d4fe469b835a6887bb4ff02cf98",
       "cluster_id": "issue-openclaw-openclaw-120019",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
-      "updated_at": "2026-08-07T01:42:23Z",
+      "updated_at": "2026-08-07T03:23:51Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 126,
         "counts": {
           "CANCELLED": 1,
+          "SKIPPED": 44,
           "SUCCESS": 80,
-          "SKIPPED": 38,
           "NEUTRAL": 1
         },
         "blockers": [
@@ -135,25 +75,19 @@
         ]
       },
       "latest_record": {
-        "run_id": "31135686305",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31135686305",
+        "run_id": "31142138572",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31142138572",
         "cluster_id": "automerge-openclaw-openclaw-120076",
-        "published_at": "2026-08-07T01:37:45.459Z",
-        "workflow_conclusion": "success",
+        "published_at": "2026-08-07T03:27:47.443Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#120076",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(mcp): receive loopback OAuth login callbacks",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#120076",
+          "candidate_fix": "#120076",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
@@ -1129,7 +1063,7 @@
       "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
       "cluster_id": "issue-openclaw-openclaw-92199",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-92199.md",
-      "updated_at": "2026-08-05T13:06:28Z",
+      "updated_at": "2026-08-07T02:41:42Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",

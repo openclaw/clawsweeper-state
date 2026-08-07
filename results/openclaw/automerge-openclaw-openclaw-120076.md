@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-120076"
 mode: "autonomous"
-run_id: "31135686305"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31135686305"
-head_sha: "3f368a3e394d76c31584fce700cee9a62485cb66"
-workflow_conclusion: "success"
+run_id: "31142138572"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31142138572"
+head_sha: "2eb1787e0d183a84f29e84614b84f228037ba69f"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-07T01:37:45.459Z"
+published_at: "2026-08-07T03:27:47.443Z"
 canonical: "#120076"
 canonical_issue: null
 canonical_pr: "#120076"
@@ -16,7 +16,7 @@ fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 1
+apply_blocked: 0
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31135686305](https://github.com/openclaw/clawsweeper/actions/runs/31135686305)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31142138572](https://github.com/openclaw/clawsweeper/actions/runs/31142138572)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -46,7 +46,7 @@ Make PR #120076 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 1 |
+| Apply blocked | 0 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,13 +54,13 @@ Make PR #120076 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/120076 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120076 | merge_canonical | blocked | fix_pr | autofix-only job cannot merge |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
