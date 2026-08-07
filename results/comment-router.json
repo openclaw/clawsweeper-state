@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:44:08.775Z",
+  "updated_at": "2026-08-07T06:44:15.803Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116462:5133898191:2026-08-07T02:36:15Z:clawsweeper_needs_human",
-      "comment_id": "5133898191",
-      "comment_version_key": "5133898191:2026-08-07T02:36:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116462#issuecomment-5133898191",
-      "comment_created_at": "2026-07-30T17:04:11Z",
-      "comment_updated_at": "2026-08-07T02:36:15Z",
-      "comment_body_sha256": "59831fcf21345dd6b5eeabf7f38a31dfd746f94fc22805b914b8cf9c64ed34ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116462,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify secret rejection before setup persistence** - The supplied diff introduces answers_json state and accepts arbitrary string answer values; status redaction is insufficient if cred...; Review finding: [medium] Verify secret rejection before setup persistence — src/state/openclaw-state-schema.sql:2115 (sha=3b3b859f366ddc5ec2c20ad576297d05513f04fc)",
-      "expected_head_sha": "3b3b859f366ddc5ec2c20ad576297d05513f04fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T02:36:53.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-scoped-skill-lifecycle",
-        "head_sha": "3b3b859f366ddc5ec2c20ad576297d05513f04fc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119850:5201748404:2026-08-07T02:36:38Z:clawsweeper_needs_human",
       "comment_id": "5201748404",
@@ -31958,6 +31925,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T06:44:08.775Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120105:5212309416:2026-08-07T06:43:42Z:clawsweeper_needs_human",
+      "comment_id": "5212309416",
+      "comment_version_key": "5212309416:2026-08-07T06:43:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120105#issuecomment-5212309416",
+      "comment_created_at": "2026-08-07T04:16:03Z",
+      "comment_updated_at": "2026-08-07T06:43:42Z",
+      "comment_body_sha256": "a7a800ba40ad162389b1bab1ea74cd877735f0e55e1b02ef2ea29abeeea73cb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has failing check-lint and aggregate CI gates; their cause was not available from read-only local evidence and must be cleared before merge. (sha=9161dfc93027bf80693483de2d8314f71ce50bff)",
+      "expected_head_sha": "9161dfc93027bf80693483de2d8314f71ce50bff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T06:44:15.803Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scripts-stable-shard-timing-key",
+        "head_sha": "9161dfc93027bf80693483de2d8314f71ce50bff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
