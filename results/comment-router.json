@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T16:54:04.232Z",
+  "updated_at": "2026-08-07T16:54:07.918Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119139:5175900886:2026-08-07T11:53:12Z:clawsweeper_auto_repair",
-      "comment_id": "5175900886",
-      "comment_version_key": "5175900886:2026-08-07T11:53:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119139#issuecomment-5175900886",
-      "comment_created_at": "2026-08-04T07:27:49Z",
-      "comment_updated_at": "2026-08-07T11:53:12Z",
-      "comment_body_sha256": "737febc21e1acd267514ebd5086058b8ea769c91f01875b426b3c78526a965d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119139,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e8d88e41d7a7a7a1ff207681bfa23295ed8e1dd)",
-      "expected_head_sha": "2e8d88e41d7a7a7a1ff207681bfa23295ed8e1dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T12:46:39.675Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/issue-119083",
-        "head_sha": "2e8d88e41d7a7a7a1ff207681bfa23295ed8e1dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119225:5179486596:2026-08-07T11:48:36Z:clawsweeper_auto_repair",
       "comment_id": "5179486596",
@@ -32117,6 +32084,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1252:5203255124:2026-08-07T16:51:08Z:clawsweeper_auto_merge",
+      "comment_id": "5203255124",
+      "comment_version_key": "5203255124:2026-08-07T16:51:08Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203255124",
+      "comment_created_at": "2026-08-06T10:11:48Z",
+      "comment_updated_at": "2026-08-07T16:51:08Z",
+      "comment_body_sha256": "00d37b8fffe767cae4803b3a5320b948eb15b80c1de1a2d8d1842dda4cacd344",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=3de9496d482ea91bebe3cd1e711c51bf93954c90)",
+      "expected_head_sha": "3de9496d482ea91bebe3cd1e711c51bf93954c90",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T16:54:07.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "3de9496d482ea91bebe3cd1e711c51bf93954c90",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
