@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:42:06.552Z",
+  "updated_at": "2026-08-07T07:42:08.648Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-07T03:47:42Z:clawsweeper_needs_human",
-      "comment_id": "5194538175",
-      "comment_version_key": "5194538175:2026-08-07T03:47:42Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
-      "comment_created_at": "2026-08-05T16:34:55Z",
-      "comment_updated_at": "2026-08-07T03:47:42Z",
-      "comment_body_sha256": "7263ede23e07e34f7c94ff2774ebec0b26fcdbe27943d5871d67c2590b8aa122",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The active human-review gate requires a release owner to decide whether to merge the already-published metadata; no code repair is needed. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T04:01:11.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-07T03:48:02Z:clawsweeper_auto_repair",
       "comment_id": "5160727900",
@@ -32117,6 +32070,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T07:42:06.552Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120002:5211020824:2026-08-07T07:41:00Z:clawsweeper_needs_human",
+      "comment_id": "5211020824",
+      "comment_version_key": "5211020824:2026-08-07T07:41:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120002#issuecomment-5211020824",
+      "comment_created_at": "2026-08-07T01:37:03Z",
+      "comment_updated_at": "2026-08-07T07:41:00Z",
+      "comment_body_sha256": "f0c39e29530d0998b62f97b348e68eae9ad1bdc6eafe180e9df26789b0502b27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main, so required checks must be refreshed against GitHub’s final merge result before landing. (sha=2e8684c8f88cc095ce199a3dcf20d8cdc23075f8)",
+      "expected_head_sha": "2e8684c8f88cc095ce199a3dcf20d8cdc23075f8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:42:08.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-xai-terminal-output",
+        "head_sha": "2e8684c8f88cc095ce199a3dcf20d8cdc23075f8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
