@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T15:46:28.114Z",
+  "updated_at": "2026-08-07T15:46:49.820Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1042:5205191188:2026-08-07T11:24:31Z:clawsweeper_auto_repair",
-      "comment_id": "5205191188",
-      "comment_version_key": "5205191188:2026-08-07T11:24:31Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1042#issuecomment-5205191188",
-      "comment_created_at": "2026-08-06T13:23:20Z",
-      "comment_updated_at": "2026-08-07T11:24:31Z",
-      "comment_body_sha256": "6fb65a067410b9473c5571dc70f6547932a76d46daa9f928c959def0fa4c3881",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1042,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d)",
-      "expected_head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T11:25:11.370Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawsweeper-close-guard-pairs",
-        "head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:142:5160702307:2026-08-07T11:24:24Z:clawsweeper_auto_repair",
       "comment_id": "5160702307",
@@ -32637,6 +32604,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119741:5219126306:2026-08-07T15:46:12Z:re_review",
+      "comment_id": "5219126306",
+      "comment_version_key": "5219126306:2026-08-07T15:46:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119741#issuecomment-5219126306",
+      "comment_created_at": "2026-08-07T15:46:12Z",
+      "comment_updated_at": "2026-08-07T15:46:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "1e48ff60-9277-11f1-8c39-83acb1accd2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119741,
+      "author": "HermanZeng",
+      "author_id": 25895921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T15:46:47.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-sqlite-archive-bounded-memory",
+        "head_sha": "f39e27ccb336a28f095b0611cc96c8666c6ef234",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
