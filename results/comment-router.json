@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T23:37:18.845Z",
+  "updated_at": "2026-08-07T23:37:29.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:91237:5149593470:2026-08-01T03:30:35Z:re_review",
-      "comment_id": "5149593470",
-      "comment_version_key": "5149593470:2026-08-01T03:30:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5149593470",
-      "comment_created_at": "2026-08-01T03:30:35Z",
-      "comment_updated_at": "2026-08-01T03:30:35Z",
-      "comment_body_sha256": "37d126308f29dbb4885d275ded1b580d518bf4a62e5028a8033a913a935fa53f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 91237,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T19:33:58.154Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:283:5194901661:2026-08-07T19:34:53Z:clawsweeper_auto_repair",
       "comment_id": "5194901661",
@@ -32158,6 +32131,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120352:5223232807:2026-08-07T23:36:28Z:clawsweeper_needs_human",
+      "comment_id": "5223232807",
+      "comment_version_key": "5223232807:2026-08-07T23:36:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120352#issuecomment-5223232807",
+      "comment_created_at": "2026-08-07T23:36:28Z",
+      "comment_updated_at": "2026-08-07T23:36:28Z",
+      "comment_body_sha256": "089a6bbc3b4b79eb80522bc73d6f209f041558955bbfd61f6dc01e22d042c38e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120352,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The latest ClawSweeper comment was filtered from the supplied context; its existing rank-up moves should be read before an actual merge decision. (sha=6d57a88a69ffef0992644b5f71c1ffbc5ed912b6)",
+      "expected_head_sha": "6d57a88a69ffef0992644b5f71c1ffbc5ed912b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T23:37:29.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "6d57a88a69ffef0992644b5f71c1ffbc5ed912b6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
