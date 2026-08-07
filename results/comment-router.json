@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T17:49:25.665Z",
+  "updated_at": "2026-08-07T17:49:26.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119256:5217630492:2026-08-07T13:25:09Z:re_review",
-      "comment_id": "5217630492",
-      "comment_version_key": "5217630492:2026-08-07T13:25:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119256#issuecomment-5217630492",
-      "comment_created_at": "2026-08-07T13:25:09Z",
-      "comment_updated_at": "2026-08-07T13:25:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119256,
-      "author": "pscoutosoares",
-      "author_id": 15336146,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T13:48:24.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/whatsapp-poll-vote-hook",
-        "head_sha": "e35329956bb2bb93635ba2ef7f79348d36656b0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-07T13:40:05Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -32198,6 +32151,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T17:49:25.665Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:258:5168913744:2026-08-07T17:38:01Z:clawsweeper_needs_human",
+      "comment_id": "5168913744",
+      "comment_version_key": "5168913744:2026-08-07T17:38:01Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/258#issuecomment-5168913744",
+      "comment_created_at": "2026-08-03T16:16:16Z",
+      "comment_updated_at": "2026-08-07T17:38:01Z",
+      "comment_body_sha256": "01e1aec338dee12b28bf6072e36336761ddc8ffc61bfa1485a7b0770f3c091cf",
+      "repo": "openclaw/crabline",
+      "issue_number": 258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 would run daily with permission to label and close issues and pull requests; the successful PR checks did not exercise its scheduled exemption, labeling, and closure... (sha=58db486d21b3be511a154d213e14c61a0f8a63f1)",
+      "expected_head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T17:49:26.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-0b68e6ec17",
+        "head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
