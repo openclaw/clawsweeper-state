@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T04:46:11.146Z",
+  "updated_at": "2026-08-07T04:46:11.853Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116794:5210416727:2026-08-07T00:36:38Z:re_review",
-      "comment_id": "5210416727",
-      "comment_version_key": "5210416727:2026-08-07T00:36:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116794#issuecomment-5210416727",
-      "comment_created_at": "2026-08-07T00:36:38Z",
-      "comment_updated_at": "2026-08-07T00:36:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "0ed0adf0-91f8-11f1-92c4-2ef9cd2b207d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116794,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T00:37:13.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-3-runtime",
-        "head_sha": "b45dfb7a0628eef1157126cd29c6de62dc5f774d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116795:5210416749:2026-08-07T00:36:39Z:re_review",
       "comment_id": "5210416749",
@@ -31188,6 +31140,39 @@
         "kind": "pull_request",
         "branch": "rfc/cloud-serializable-sqlite-state",
         "head_sha": "864d7dee6ba6b9cf9e2f902f174408e5fbc570db",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119894:5202965698:2026-08-07T04:44:36Z:clawsweeper_needs_human",
+      "comment_id": "5202965698",
+      "comment_version_key": "5202965698:2026-08-07T04:44:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119894#issuecomment-5202965698",
+      "comment_created_at": "2026-08-06T09:42:10Z",
+      "comment_updated_at": "2026-08-07T04:44:36Z",
+      "comment_body_sha256": "c287a3168494e39b2696f8caa1623f80175542898f99b78220303ef17b3eb99b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that intentionally pass blank model or thinking flags will now fail locally and must omit those flags; this is the PR’s intentional CLI compatibility change. (sha=46bae568e1335f6af5d3aeb209d556ca1161c809)",
+      "expected_head_sha": "46bae568e1335f6af5d3aeb209d556ca1161c809",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T04:46:11.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/prospect-cron-edit-blank-model",
+        "head_sha": "46bae568e1335f6af5d3aeb209d556ca1161c809",
         "cluster_id": null,
         "job_path": null
       }
