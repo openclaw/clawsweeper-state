@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T08:43:01.893Z",
+  "updated_at": "2026-08-07T08:43:13.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116796:5150641830:2026-08-01T08:34:56Z:re_review",
-      "comment_id": "5150641830",
-      "comment_version_key": "5150641830:2026-08-01T08:34:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116796#issuecomment-5150641830",
-      "comment_created_at": "2026-08-01T08:34:56Z",
-      "comment_updated_at": "2026-08-01T08:34:56Z",
-      "comment_body_sha256": "0610ebcfab0f4b9e9b544fa6290c7f90b46f2d99229343c01c1d191454069ed7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116796,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T05:40:59.932Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116796:5162938146:2026-08-03T06:13:06Z:re_review",
       "comment_id": "5162938146",
@@ -32410,6 +32383,54 @@
       "status": "skipped",
       "processed_at": "2026-08-07T08:43:01.893Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:284:5214822877:2026-08-07T08:42:38Z:re_review",
+      "comment_id": "5214822877",
+      "comment_version_key": "5214822877:2026-08-07T08:42:38Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/284#issuecomment-5214822877",
+      "comment_created_at": "2026-08-07T08:42:38Z",
+      "comment_updated_at": "2026-08-07T08:42:38Z",
+      "comment_body_sha256": "584dbeab4385347be2207ba9b95524716ffa12e26eba289d46e0d56e919b1d07",
+      "source_delivery_id": "f280a940-923b-11f1-8558-6640729af831",
+      "repo": "openclaw/mcporter",
+      "issue_number": 284,
+      "author": "vitalijssilins",
+      "author_id": 2399388,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — added real daemon-run proof (real 401 against a live oauth server from an isolated home; transcript in the pr body) and hardened the headless path to fail fast with a server-named error instead of waiting out the authorization timeout, per the risk flagged in #283",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T08:43:11.657Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/env-no-browser-serve-path",
+        "head_sha": "fbc594d48b21c77a8c4e7d5f34d0db7ad554dda6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
