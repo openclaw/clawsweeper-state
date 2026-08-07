@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T17:45:46.008Z",
+  "updated_at": "2026-08-07T17:45:53.366Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118631:5165600356:2026-08-07T13:39:53Z:clawsweeper_auto_repair",
-      "comment_id": "5165600356",
-      "comment_version_key": "5165600356:2026-08-07T13:39:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118631#issuecomment-5165600356",
-      "comment_created_at": "2026-08-03T11:13:26Z",
-      "comment_updated_at": "2026-08-07T13:39:53Z",
-      "comment_body_sha256": "bd9e18b6aa6b273b6c5230b140a88514396dc6c9b10333e5db7a2844b6d3ba62",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118631,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5f91843d0dce201e72ac3c1b83d5af1066e1369d)",
-      "expected_head_sha": "5f91843d0dce201e72ac3c1b83d5af1066e1369d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T13:40:29.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0803-requester-final-settle",
-        "head_sha": "5f91843d0dce201e72ac3c1b83d5af1066e1369d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118668:5217787711:2026-08-07T13:40:15Z:re_review",
       "comment_id": "5217787711",
@@ -32291,6 +32258,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119575:5190588520:2026-08-07T17:44:59Z:clawsweeper_needs_human",
+      "comment_id": "5190588520",
+      "comment_version_key": "5190588520:2026-08-07T17:44:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119575#issuecomment-5190588520",
+      "comment_created_at": "2026-08-05T10:26:08Z",
+      "comment_updated_at": "2026-08-07T17:44:59Z",
+      "comment_body_sha256": "8ad3fb215db7f06a7780fefdf727b36a00825473de68c8c314bfcd9fa4c96434",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119575,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence calls helpers and directly constructed service state while explicitly stubbing gateway wiring, so it does not show an aft...; Review finding: [P1] Restart cron when its fallback timezone changes — src/gateway/server-cron.ts:616 - [P1] Clear deferred state when replacing the cron service — src/cron/mainte... (sha=08cfb0d3afd33ea28b14003455a4e427403e96cb)",
+      "expected_head_sha": "08cfb0d3afd33ea28b14003455a4e427403e96cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T17:45:53.366Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/maintenance-window-v2-2026q3",
+        "head_sha": "08cfb0d3afd33ea28b14003455a4e427403e96cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
