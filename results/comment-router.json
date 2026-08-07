@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T22:04:28.060Z",
+  "updated_at": "2026-08-07T22:04:33.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78852:5210970001:2026-08-07T01:30:12Z:re_review",
-      "comment_id": "5210970001",
-      "comment_version_key": "5210970001:2026-08-07T01:30:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78852#issuecomment-5210970001",
-      "comment_created_at": "2026-08-07T01:30:12Z",
-      "comment_updated_at": "2026-08-07T01:30:12Z",
-      "comment_body_sha256": "5f3c159780f848e10161c2eb3e3b3715290121b1e0b787b65e60c57606e9fbf5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78852,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T17:36:06.858Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5220186336:2026-08-07T17:35:33Z:re_review",
       "comment_id": "5220186336",
@@ -32315,6 +32288,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T22:04:28.060Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:309:4949888150:2026-08-07T22:03:52Z:clawsweeper_auto_repair",
+      "comment_id": "4949888150",
+      "comment_version_key": "4949888150:2026-08-07T22:03:52Z",
+      "comment_url": "https://github.com/openclaw/clownfish/pull/309#issuecomment-4949888150",
+      "comment_created_at": "2026-07-12T04:09:16Z",
+      "comment_updated_at": "2026-08-07T22:03:52Z",
+      "comment_body_sha256": "51cb13b06a29591976c47deec5779623fef9f46ab48c9dcf09598d4ef9bad24d",
+      "repo": "openclaw/clownfish",
+      "issue_number": 309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=62039ae65b18eeff123b6781792d0745d11a47a9)",
+      "expected_head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-07T22:04:33.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-only-dedupe-close",
+        "head_sha": "62039ae65b18eeff123b6781792d0745d11a47a9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
