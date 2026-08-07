@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-07T16:02:43.213Z",
+  "updated_at": "2026-08-07T16:02:07.338Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116551:5215742346:2026-08-07T10:15:55Z:re_review",
+      "comment_id": "5215742346",
+      "comment_version_key": "5215742346:2026-08-07T10:15:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5215742346",
+      "comment_created_at": "2026-08-07T10:15:55Z",
+      "comment_updated_at": "2026-08-07T10:15:55Z",
+      "comment_body_sha256": "f78b3099991fefcb6c5c3f7b1f5bfa199232c4fcc5a92bad48e5f2401b816af9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116551,
+      "author": "osolmaz",
+      "author_id": 2453968,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T11:38:03.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-tool-result-aggregate",
+        "head_sha": "833effc18f7e9c0069c0041caf075b5fefd5c08b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120208:5216187069:2026-08-07T11:00:30Z:re_review",
       "comment_id": "5216187069",
@@ -32581,39 +32628,6 @@
         "kind": "pull_request",
         "branch": "codex/cache-speed-fix-safeguards",
         "head_sha": "1d88dceda6c23f0c526c7951bbd5fd127682360e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1110:5201282392:2026-08-07T16:01:53Z:clawsweeper_needs_human",
-      "comment_id": "5201282392",
-      "comment_version_key": "5201282392:2026-08-07T16:01:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1110#issuecomment-5201282392",
-      "comment_created_at": "2026-08-06T06:43:54Z",
-      "comment_updated_at": "2026-08-07T16:01:53Z",
-      "comment_body_sha256": "2f1f3e3d64945b4d697a8b7adc7e5652d058453edafd9d158726b4c549e5decb",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is indicated; this remains an ordinary maintainer-review candidate once it is ready for review. (sha=2829648f556e96f929fdb18de64fb3ee2c36a3aa)",
-      "expected_head_sha": "2829648f556e96f929fdb18de64fb3ee2c36a3aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T16:02:43.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "calebeden-remove-legacy-chat-ui",
-        "head_sha": "2829648f556e96f929fdb18de64fb3ee2c36a3aa",
         "cluster_id": null,
         "job_path": null
       }
