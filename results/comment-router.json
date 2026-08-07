@@ -1,97 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:53:25.510Z",
+  "updated_at": "2026-08-07T01:53:34.485Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:119968",
-      "comment_id": "repair-loop-label-sweep:autofix:119968",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119968",
-      "comment_created_at": "2026-08-06T15:32:04.710Z",
-      "comment_updated_at": "2026-08-06T15:32:04.710Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119968,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T15:35:47.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119551",
-        "head_sha": "75ec5b0b7a01e068437c5e00db1638c1f2f79198",
-        "cluster_id": "automerge-openclaw-openclaw-119968",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119968.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119968.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119974:5207016668:2026-08-06T15:35:22Z:clawsweeper_needs_human",
-      "comment_id": "5207016668",
-      "comment_version_key": "5207016668:2026-08-06T15:35:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119974#issuecomment-5207016668",
-      "comment_created_at": "2026-08-06T15:35:22Z",
-      "comment_updated_at": "2026-08-06T15:35:22Z",
-      "comment_body_sha256": "533dca6613f5b65944bbb479df2ba8d879ed9683545dcb2cc4c6fe508a005dbd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119974,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Both production files changed on main after the PR base; refresh the exact merge-result review and relevant checks before merge. (sha=fb04ecc055322ec486717682ee7fd3de8c3fc77d)",
-      "expected_head_sha": "fb04ecc055322ec486717682ee7fd3de8c3fc77d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T15:35:59.857Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/loc-qa-runtime-api-5c8d",
-        "head_sha": "fb04ecc055322ec486717682ee7fd3de8c3fc77d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119736:5205176949:2026-08-06T13:22:00Z:re_review",
       "comment_id": "5205176949",
@@ -32436,6 +32345,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:56:5146544160:2026-08-07T01:52:52Z:clawsweeper_needs_human",
+      "comment_id": "5146544160",
+      "comment_version_key": "5146544160:2026-08-07T01:52:52Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/56#issuecomment-5146544160",
+      "comment_created_at": "2026-07-31T19:08:45Z",
+      "comment_updated_at": "2026-08-07T01:52:52Z",
+      "comment_body_sha256": "512bfba5da8e90ed1b45f4a9bab466867935904c45d6f36f1af946187cda1707",
+      "repo": "openclaw/rfcs",
+      "issue_number": 56,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: This PR changes RFC Markdown only, so runtime behavior proof is not required for the documentation patch. (sha=b700fcf0e0c9b1d2bc2026f405b9a8640c8cdcd5)",
+      "expected_head_sha": "b700fcf0e0c9b1d2bc2026f405b9a8640c8cdcd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:53:34.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claw-project-framework",
+        "head_sha": "b700fcf0e0c9b1d2bc2026f405b9a8640c8cdcd5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:56:5146828379:2026-07-31T19:45:20Z:re_review",
+      "comment_id": "5146828379",
+      "comment_version_key": "5146828379:2026-07-31T19:45:20Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/56#issuecomment-5146828379",
+      "comment_created_at": "2026-07-31T19:45:20Z",
+      "comment_updated_at": "2026-07-31T19:45:20Z",
+      "comment_body_sha256": "2c2000cae58cba27ab4048b5464e3d0667dd098f00eccd2fa16c07b980d9aa5c",
+      "repo": "openclaw/rfcs",
+      "issue_number": 56,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:53:34.485Z",
+      "target": null
     }
   ]
 }
