@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T21:21:42.268Z",
+  "updated_at": "2026-08-07T21:25:36.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120140:5219167826:2026-08-07T15:50:29Z:re_review",
-      "comment_id": "5219167826",
-      "comment_version_key": "5219167826:2026-08-07T15:50:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120140#issuecomment-5219167826",
-      "comment_created_at": "2026-08-07T15:50:29Z",
-      "comment_updated_at": "2026-08-07T15:50:29Z",
-      "comment_body_sha256": "21a31fd35655d53a6f4b2b4b0f4232a6398800a5e2fc1c3840c6e6ea572e40bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120140,
-      "author": "amoghasgekar",
-      "author_id": 72576112,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T16:48:48.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "plugin-runtime-abort-session",
-        "head_sha": "aa1d90c5f823defa288ff006810c5632d8cbf2e2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120286:5219261855:2026-08-07T15:59:58Z:re_review",
       "comment_id": "5219261855",
@@ -32512,6 +32465,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-07T21:24:41Z:clawsweeper_auto_merge",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-07T21:24:41Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-07T21:24:41Z",
+      "comment_body_sha256": "11bafe3b292c540a3c413102ba038102908d48122b8182a6071985c83e7a0baf",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T21:25:36.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:merge-ready",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
