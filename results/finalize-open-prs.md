@@ -1,19 +1,19 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-07T17:22:41.891Z
+Generated: 2026-08-07T19:31:22.037Z
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_prs | 13 |
+| open_prs | 12 |
 | ready_candidates | 0 |
 | security_hold | 1 |
-| needs_rebase | 3 |
+| needs_rebase | 2 |
 | mergeability_unknown | 0 |
 | needs_checks | 4 |
 | needs_review | 0 |
-| needs_merge_preflight | 13 |
+| needs_merge_preflight | 12 |
 | needs_result_backfill | 0 |
 
 ## Dispatch
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#120298](https://github.com/openclaw/openclaw/pull/120298) | fix(config): preserve manual .bak.* backups | issue-openclaw-openclaw-120253 | MERGEABLE | BEHIND | SKIPPED:41 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#120298](https://github.com/openclaw/openclaw/pull/120298) | fix(config): preserve manual .bak.* backups | issue-openclaw-openclaw-120253 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | issue-openclaw-openclaw-91860 | MERGEABLE | BEHIND | SKIPPED:45 SUCCESS:89 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120247](https://github.com/openclaw/openclaw/pull/120247) | fix(android): keep chat drafts readable on compact screens | issue-openclaw-openclaw-120228 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:29 SUCCESS:75; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | issue-openclaw-openclaw-120134 | MERGEABLE | BEHIND | SKIPPED:49 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
@@ -42,4 +42,3 @@ Status: report_only
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | issue-openclaw-openclaw-119958 | CONFLICTING | DIRTY | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119968](https://github.com/openclaw/openclaw/pull/119968) | fix(acp): pass configured binding owner model to runtime | issue-openclaw-openclaw-119551 | CONFLICTING | DIRTY | SKIPPED:55 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#119901](https://github.com/openclaw/openclaw/pull/119901) | fix(doctor): analyze SQLite databases after offline compaction | issue-openclaw-openclaw-119884 | MERGEABLE | BEHIND | CANCELLED:1 SKIPPED:39 SUCCESS:83 NEUTRAL:1; blockers:1 | needs_merge_state:BEHIND, needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
-| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | issue-openclaw-openclaw-119578 | CONFLICTING | DIRTY | SKIPPED:51 SUCCESS:84 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
