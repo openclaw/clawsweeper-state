@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120130",
+  "mode": "autonomous",
+  "run_id": "31147960827",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31147960827",
+  "head_sha": "2eb1787e0d183a84f29e84614b84f228037ba69f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120130.md",
+  "published_at": "2026-08-07T04:47:25.432Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120130",
+  "canonical_pr": null,
+  "summary": "#120130 remains a real main-branch test flake at f87d8bb72daaf9853b1f6c2e0dda7a1201d365b5. The fake emits protocol responses from an unjoined task and the stale-receipt assertion uses wall-clock sleeps. Plan a narrow PR with causal test barriers plus, only if necessary, a DEBUG-only receipt-clock seam. This worker could not run Swift locally (permissionDenied) and its Crabbox binary preflight failed, so remote macOS validation remains an executor gate.",
+  "actions": [
+    {
+      "target": "#120130",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "The failing behavior is isolated to test synchronization; a narrow repair can preserve runtime behavior and original deadline semantics."
+    },
+    {
+      "target": "#118831",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep #118831 on its independent maintainer-review path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "Create one small new fix PR from current main; no contributor PR is a viable implementation candidate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120130",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "The job permits one new implementation PR and prohibits merge/close actions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

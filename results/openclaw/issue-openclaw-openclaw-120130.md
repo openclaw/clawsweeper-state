@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120130"
 mode: "autonomous"
-run_id: "31145040749"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31145040749"
+run_id: "31147960827"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31147960827"
 head_sha: "2eb1787e0d183a84f29e84614b84f228037ba69f"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-07T03:48:31.689Z"
+published_at: "2026-08-07T04:47:25.432Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120130"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120130"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31145040749](https://github.com/openclaw/clawsweeper/actions/runs/31145040749)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31147960827](https://github.com/openclaw/clawsweeper/actions/runs/31147960827)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/120130
 
 ## Summary
 
-#120130 remains a reproducible test-only defect on supplied main 1823be79ce7910e282d34e9540b3dfbebefbd213. The fake schedules protocol replies independently of listener re-arm and the stale-receipt regression uses 60/120ms sleeps, allowing ordering races despite the serialized suite. No branch was modified: this sandbox is read-only and Swift execution returned permissionDenied. A narrow new fix PR is planned for remote macOS validation.
+#120130 remains a real main-branch test flake at f87d8bb72daaf9853b1f6c2e0dda7a1201d365b5. The fake emits protocol responses from an unjoined task and the stale-receipt assertion uses wall-clock sleeps. Plan a narrow PR with causal test barriers plus, only if necessary, a DEBUG-only receipt-clock seam. This worker could not run Swift locally (permissionDenied) and its Crabbox binary preflight failed, so remote macOS validation remains an executor gate.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/120130
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120130 | fix_needed | planned | canonical | A test-fixture repair can remove timing assumptions without changing GatewayNodeSession production behavior. |
-| #118831 | keep_related | planned | related | Keep open independently; it is runner-policy context, not the same root cause or an implementation candidate. |
-| cluster:issue-openclaw-openclaw-120130 | build_fix_artifact | planned |  | Create one focused branch/PR from current main. |
-| cluster:issue-openclaw-openclaw-120130 | open_fix_pr | planned |  | No viable PR implements this GatewayNodeSession flake repair; #118831 is unrelated. |
+| #120130 | fix_needed | planned | canonical | The failing behavior is isolated to test synchronization; a narrow repair can preserve runtime behavior and original deadline semantics. |
+| #118831 | keep_related | planned | related | Keep #118831 on its independent maintainer-review path. |
+| cluster:issue-openclaw-openclaw-120130 | build_fix_artifact | planned |  | Create one small new fix PR from current main; no contributor PR is a viable implementation candidate. |
+| cluster:issue-openclaw-openclaw-120130 | open_fix_pr | planned |  | The job permits one new implementation PR and prohibits merge/close actions. |
 
 ## Needs Human
 
