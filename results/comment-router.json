@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T20:21:02.515Z",
+  "updated_at": "2026-08-07T20:26:00.905Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5152500880:2026-08-01T17:15:13Z:re_review",
-      "comment_id": "5152500880",
-      "comment_version_key": "5152500880:2026-08-01T17:15:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5152500880",
-      "comment_created_at": "2026-08-01T17:15:13Z",
-      "comment_updated_at": "2026-08-01T17:15:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T15:44:37.106Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5152574169:2026-08-01T17:33:45Z:re_review",
       "comment_id": "5152574169",
@@ -31909,6 +31882,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T20:21:02.515Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-07T20:25:16Z:clawsweeper_needs_human",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-07T20:25:16Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-07T20:25:16Z",
+      "comment_body_sha256": "eb28accb3317fa7d4b7434175cf7ebbc25b156c85e8d1c6e6c3757345536be20",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the filesystem identity used for configured Windows state paths; the tested guard must continue to normalize only equivalent drive/UNC roots and leave device namespaces u... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
+      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T20:26:00.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
