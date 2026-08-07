@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:41:48.218Z",
+  "updated_at": "2026-08-07T01:41:56.683Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109203:5205436525:2026-08-06T13:43:16Z:re_review",
-      "comment_id": "5205436525",
-      "comment_version_key": "5205436525:2026-08-06T13:43:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109203#issuecomment-5205436525",
-      "comment_created_at": "2026-08-06T13:43:16Z",
-      "comment_updated_at": "2026-08-06T13:43:16Z",
-      "comment_body_sha256": "865af8932c74101e75698638aaa151e548be2fa603617f4d586a26429c6b7f29",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109203,
-      "author": "mme",
-      "author_id": 247775,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T15:35:47.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ag-ui-channel",
-        "head_sha": "c385ca36aa32d9c916036dae477d780087f07508",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:86901:5205502478:2026-08-06T13:48:18Z:re_review",
       "comment_id": "5205502478",
@@ -32737,6 +32690,39 @@
         "kind": "pull_request",
         "branch": "fix/health-session-store-path",
         "head_sha": "dc86bd0e434666cb8081a7d5528cda7213ee9d04",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119964:5207057550:2026-08-07T01:40:52Z:clawsweeper_needs_human",
+      "comment_id": "5207057550",
+      "comment_version_key": "5207057550:2026-08-07T01:40:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119964#issuecomment-5207057550",
+      "comment_created_at": "2026-08-06T15:39:40Z",
+      "comment_updated_at": "2026-08-07T01:40:52Z",
+      "comment_body_sha256": "526a69d1ef8fb20b5a22fc3e1ef37ac22f7a625f3506cd658d82c73106d04ca8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although the three-way merge is clean, normal merge handling should validate checks on the exact resulting head. (sha=9676594925c45a7f36554271855370affa7a1d7b)",
+      "expected_head_sha": "9676594925c45a7f36554271855370affa7a1d7b",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-07T01:41:56.683Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalouser-fixture-windows-teardown",
+        "head_sha": "9676594925c45a7f36554271855370affa7a1d7b",
         "cluster_id": null,
         "job_path": null
       }
