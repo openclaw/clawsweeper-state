@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120130",
+  "mode": "autonomous",
+  "run_id": "31145040749",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31145040749",
+  "head_sha": "2eb1787e0d183a84f29e84614b84f228037ba69f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120130.md",
+  "published_at": "2026-08-07T03:48:31.689Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120130",
+  "canonical_pr": null,
+  "summary": "#120130 remains a reproducible test-only defect on supplied main 1823be79ce7910e282d34e9540b3dfbebefbd213. The fake schedules protocol replies independently of listener re-arm and the stale-receipt regression uses 60/120ms sleeps, allowing ordering races despite the serialized suite. No branch was modified: this sandbox is read-only and Swift execution returned permissionDenied. A narrow new fix PR is planned for remote macOS validation.",
+  "actions": [
+    {
+      "target": "#120130",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "A test-fixture repair can remove timing assumptions without changing GatewayNodeSession production behavior."
+    },
+    {
+      "target": "#118831",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open independently; it is runner-policy context, not the same root cause or an implementation candidate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "Create one focused branch/PR from current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120130",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120130",
+      "candidate_fix": null,
+      "reason": "No viable PR implements this GatewayNodeSession flake repair; #118831 is unrelated."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
