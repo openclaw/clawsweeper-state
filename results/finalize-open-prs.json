@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T00:41:54.347Z",
-  "count": 15,
+  "generated_at": "2026-08-07T01:33:42.207Z",
+  "count": 16,
   "summary": {
-    "open_prs": 15,
+    "open_prs": 16,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
     "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 15,
+    "needs_merge_preflight": 16,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -27,33 +27,26 @@
   },
   "prs": [
     {
-      "number": 120076,
-      "title": "fix(mcp): receive loopback OAuth login callbacks",
-      "url": "https://github.com/openclaw/openclaw/pull/120076",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120019",
-      "head_sha": "564ddda18e1b128a75284416b4589b90d0f3cdb4",
-      "cluster_id": "issue-openclaw-openclaw-120019",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
-      "updated_at": "2026-08-07T00:39:02Z",
+      "number": 120100,
+      "title": "fix(diagnostics): preserve CLI turn usage totals",
+      "url": "https://github.com/openclaw/openclaw/pull/120100",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120060",
+      "head_sha": "af907a0709cd151917aeedc74ca390687622fbd9",
+      "cluster_id": "issue-openclaw-openclaw-120060",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120060.md",
+      "updated_at": "2026-08-07T01:20:34Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 125,
+        "total": 124,
         "counts": {
-          "SKIPPED": 42,
-          "SUCCESS": 77,
-          "FAILURE": 5,
+          "SKIPPED": 41,
+          "SUCCESS": 82,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CI / checks-node-compact-large-1:FAILURE",
-          "CI / checks-node-compact-large-3:FAILURE",
-          "CI / check-dependencies:FAILURE",
-          "CI / check-test-types:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -64,6 +57,82 @@
       "review_bots": {
         "count": 0,
         "latest": []
+      },
+      "latest_record": {
+        "run_id": "31135214713",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31135214713",
+        "cluster_id": "issue-openclaw-openclaw-120060",
+        "published_at": "2026-08-07T01:32:00.836Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120100",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(diagnostics): preserve CLI turn usage totals",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
+    {
+      "number": 120076,
+      "title": "fix(mcp): receive loopback OAuth login callbacks",
+      "url": "https://github.com/openclaw/openclaw/pull/120076",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120019",
+      "head_sha": "0c77df0530dd8d4fe469b835a6887bb4ff02cf98",
+      "cluster_id": "issue-openclaw-openclaw-120019",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
+      "updated_at": "2026-08-07T01:29:12Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 120,
+        "counts": {
+          "CANCELLED": 1,
+          "SUCCESS": 80,
+          "SKIPPED": 38,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "ClawSweeper Dispatch / dispatch:CANCELLED"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 2,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120076#issuecomment-5210485126",
+            "submitted_at": "2026-08-07T00:43:16Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120076#issuecomment-5210502449",
+            "submitted_at": "2026-08-07T00:44:28Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31131169980",
@@ -89,7 +158,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE",
+        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -102,7 +171,7 @@
       "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
       "cluster_id": "issue-openclaw-openclaw-119962",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-06T23:29:12Z",
+      "updated_at": "2026-08-07T00:44:33Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -182,7 +251,7 @@
       "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
       "cluster_id": "issue-openclaw-openclaw-119958",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-06T22:09:48Z",
+      "updated_at": "2026-08-07T00:44:47Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -203,7 +272,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 2,
+        "count": 3,
         "latest": [
           {
             "source": "comment",
@@ -216,6 +285,12 @@
             "author": "islandpreneur007",
             "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5208455053",
             "submitted_at": "2026-08-06T19:10:25Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5209461812",
+            "submitted_at": "2026-08-06T22:09:48Z"
           }
         ]
       },
