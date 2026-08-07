@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:37:03.713Z",
+  "updated_at": "2026-08-07T01:37:27.488Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116792:5206238660:2026-08-06T14:41:47Z:re_review",
-      "comment_id": "5206238660",
-      "comment_version_key": "5206238660:2026-08-06T14:41:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116792#issuecomment-5206238660",
-      "comment_created_at": "2026-08-06T14:41:47Z",
-      "comment_updated_at": "2026-08-06T14:41:47Z",
-      "comment_body_sha256": "3567b7897d52d363c0d4be089c3c7354df48e26de7fafa5a569eda342d3a3cfb",
-      "source_delivery_id": "f3da2560-91a4-11f1-8acd-9576dfc6e9b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116792,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T14:42:21.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/passport-wiring-1-node-contract",
-        "head_sha": "6d37e1e92913e20fcffaa1d516b60d3560df501c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116795:5206238664:2026-08-06T14:41:47Z:re_review",
       "comment_id": "5206238664",
@@ -32767,6 +32719,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-898-v2",
         "head_sha": "81274beeec5cb4cbb22ee990b361b29764cf7fca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119902:5202915989:2026-08-07T01:36:52Z:clawsweeper_needs_human",
+      "comment_id": "5202915989",
+      "comment_version_key": "5202915989:2026-08-07T01:36:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119902#issuecomment-5202915989",
+      "comment_created_at": "2026-08-06T09:37:03Z",
+      "comment_updated_at": "2026-08-07T01:36:52Z",
+      "comment_body_sha256": "75b6d94a9b48884f7789f0967c50822f508d2e30873517cfd959c1ea3662e857",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An older local Gateway that rejects the optional signed identity is retried without it, preserving approval availability but silently omitting enabled audit attribution. (sha=6a7deb7fdf0de42c1af4fd46db3fd312619de9ea)",
+      "expected_head_sha": "6a7deb7fdf0de42c1af4fd46db3fd312619de9ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:37:27.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-execution-context-carrier",
+        "head_sha": "6a7deb7fdf0de42c1af4fd46db3fd312619de9ea",
         "cluster_id": null,
         "job_path": null
       }
