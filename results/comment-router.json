@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:36:15.048Z",
+  "updated_at": "2026-08-07T03:36:38.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118749:5209897453:2026-08-06T23:25:12Z:re_review",
-      "comment_id": "5209897453",
-      "comment_version_key": "5209897453:2026-08-06T23:25:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118749#issuecomment-5209897453",
-      "comment_created_at": "2026-08-06T23:25:12Z",
-      "comment_updated_at": "2026-08-06T23:25:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "136fbd10-91ee-11f1-96fe-2d5bb8afbcfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118749,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T23:28:06.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-timestamp-nan-comparator",
-        "head_sha": "fcec33f828f7aa54102f44cc40f55c8384452b5c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120029:5209912540:2026-08-06T23:27:31Z:clawsweeper_auto_repair",
       "comment_id": "5209912540",
@@ -31148,6 +31100,39 @@
         "kind": "pull_request",
         "branch": "moonshot-kimi-search-secretref-runtime-20260712",
         "head_sha": "c580c953426ca987da1fa424fb35aab2c0741460",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118032:5159044897:2026-08-07T03:33:00Z:clawsweeper_needs_human",
+      "comment_id": "5159044897",
+      "comment_version_key": "5159044897:2026-08-07T03:33:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118032#issuecomment-5159044897",
+      "comment_created_at": "2026-08-02T15:58:00Z",
+      "comment_updated_at": "2026-08-07T03:33:00Z",
+      "comment_body_sha256": "f97daba0f808e16d12fdac557c39d5dfc9f4cc4067722dc1ba7759145d719f6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes the implicit default from off to on for existing configured models whose local row omits reasoning metadata but whose authoritative catalog marks them re... (sha=66264757fc68033a78981178f3127e00644cc293)",
+      "expected_head_sha": "66264757fc68033a78981178f3127e00644cc293",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T03:36:38.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/auto-qa-reasoning-catalog-fe811",
+        "head_sha": "66264757fc68033a78981178f3127e00644cc293",
         "cluster_id": null,
         "job_path": null
       }
