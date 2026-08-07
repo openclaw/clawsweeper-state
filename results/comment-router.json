@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:47:07.292Z",
+  "updated_at": "2026-08-07T06:47:10.189Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5053280625:2026-07-23T01:19:19Z:re_review",
-      "comment_id": "5053280625",
-      "comment_version_key": "5053280625:2026-07-23T01:19:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5053280625",
-      "comment_created_at": "2026-07-23T01:19:19Z",
-      "comment_updated_at": "2026-07-23T01:19:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T02:41:50.906Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
       "comment_id": "5055554259",
@@ -31959,6 +31932,39 @@
       "status": "skipped",
       "processed_at": "2026-08-07T06:47:07.276Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120131:5212029301:2026-08-07T06:46:21Z:clawsweeper_auto_repair",
+      "comment_id": "5212029301",
+      "comment_version_key": "5212029301:2026-08-07T06:46:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120131#issuecomment-5212029301",
+      "comment_created_at": "2026-08-07T03:40:56Z",
+      "comment_updated_at": "2026-08-07T06:46:21Z",
+      "comment_body_sha256": "41cdfb45e12138b21e10a676d074ec1ea29b6f6dd4e38b8d184d1675f3ecf953",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ee66fb322cba41f866f7b09838225b380ff3552e)",
+      "expected_head_sha": "ee66fb322cba41f866f7b09838225b380ff3552e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T06:47:10.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diagnostics-otel-restart-119997",
+        "head_sha": "ee66fb322cba41f866f7b09838225b380ff3552e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
