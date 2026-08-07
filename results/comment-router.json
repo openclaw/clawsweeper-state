@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T15:37:19.655Z",
+  "updated_at": "2026-08-07T15:38:17.096Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89826:4612301006:2026-08-07T10:43:42Z:clawsweeper_auto_repair",
-      "comment_id": "4612301006",
-      "comment_version_key": "4612301006:2026-08-07T10:43:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89826#issuecomment-4612301006",
-      "comment_created_at": "2026-06-03T12:29:03Z",
-      "comment_updated_at": "2026-08-07T10:43:42Z",
-      "comment_body_sha256": "f12b9cdf830346388e1f0696af678605564b587e95f2f077434e0b7277caaf8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89826,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3b9121a97dd2324c14d8751388ed3a03e1c5f342)",
-      "expected_head_sha": "3b9121a97dd2324c14d8751388ed3a03e1c5f342",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T10:46:44.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ux-token-meter-pr93",
-        "head_sha": "3b9121a97dd2324c14d8751388ed3a03e1c5f342",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89826:4697313750:2026-06-13T03:24:25Z:re_review",
       "comment_id": "4697313750",
@@ -32534,6 +32501,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109029:4993892022:2026-08-07T15:37:36Z:clawsweeper_needs_human",
+      "comment_id": "4993892022",
+      "comment_version_key": "4993892022:2026-08-07T15:37:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109029#issuecomment-4993892022",
+      "comment_created_at": "2026-07-16T15:50:24Z",
+      "comment_updated_at": "2026-08-07T15:37:36Z",
+      "comment_body_sha256": "87e718397c5f0ce4bea5d889cd75b99bfbbd848bedef3de111032cf430a2fb8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109029,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a dirty merge, and rebasing the old branch could accidentally restore obsolete Crabline or runtime-parity flow instead of applying only the bounded reader to current ow... (sha=cfcf285c74e89a9a900b163914887301b3ff89a3)",
+      "expected_head_sha": "cfcf285c74e89a9a900b163914887301b3ff89a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T15:38:17.096Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-lab-bound-transport-responses",
+        "head_sha": "cfcf285c74e89a9a900b163914887301b3ff89a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
