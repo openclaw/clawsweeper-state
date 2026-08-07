@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T07:45:13.605Z",
+  "updated_at": "2026-08-07T07:45:47.564Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111125:5013881484:2026-07-19T02:49:01Z:re_review",
-      "comment_id": "5013881484",
-      "comment_version_key": "5013881484:2026-07-19T02:49:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111125#issuecomment-5013881484",
-      "comment_created_at": "2026-07-19T02:49:01Z",
-      "comment_updated_at": "2026-07-19T02:49:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111125,
-      "author": "VectorPeak",
-      "author_id": 73048950,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T04:36:54.897Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-08-07T04:36:34Z:clawsweeper_needs_human",
       "comment_id": "5212438693",
@@ -32083,6 +32056,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118835:5170199804:2026-08-07T07:44:05Z:clawsweeper_needs_human",
+      "comment_id": "5170199804",
+      "comment_version_key": "5170199804:2026-08-07T07:44:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118835#issuecomment-5170199804",
+      "comment_created_at": "2026-08-03T18:25:03Z",
+      "comment_updated_at": "2026-08-07T07:44:05Z",
+      "comment_body_sha256": "cc0551968530e05210d5a774dd9b9a26d5a74a77284ef607e70390afe69aa9ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The branch is merge-conflicted with current main; resolving changes around provider runtime and the dist entry can alter the lazy-loading boundary, so the old-head build, singleton sm... (sha=1c1725ed277b3d210fd6843fc2b5102d063ae3a9)",
+      "expected_head_sha": "1c1725ed277b3d210fd6843fc2b5102d063ae3a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T07:45:47.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-118793-claude-session-limit",
+        "head_sha": "1c1725ed277b3d210fd6843fc2b5102d063ae3a9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
