@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T10:25:31.937Z",
+  "updated_at": "2026-08-07T10:29:19.206Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119991:5207050567:2026-08-07T03:40:10Z:clawsweeper_needs_human",
-      "comment_id": "5207050567",
-      "comment_version_key": "5207050567:2026-08-07T03:40:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119991#issuecomment-5207050567",
-      "comment_created_at": "2026-08-06T15:38:55Z",
-      "comment_updated_at": "2026-08-07T03:40:10Z",
-      "comment_body_sha256": "95deaba1eb38ece9e00f86f1cee674a0d1c0bc6091c709f47a5a013d9c8bd27a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119991,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This draft is based directly on the still-open runtime repair at https://github.com/openclaw/openclaw/pull/119981 and cannot land independently. (sha=97483bedbd838cb33b8cef9428b5cd1a81dc96e8)",
-      "expected_head_sha": "97483bedbd838cb33b8cef9428b5cd1a81dc96e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T06:39:36.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-node-rolling-compat",
-        "head_sha": "97483bedbd838cb33b8cef9428b5cd1a81dc96e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-08-07T01:39:05Z:clawsweeper_needs_human",
       "comment_id": "5209715304",
@@ -32175,6 +32142,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/agent-skills:168:5215868649:2026-08-07T10:28:36Z:re_review",
+      "comment_id": "5215868649",
+      "comment_version_key": "5215868649:2026-08-07T10:28:36Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/168#issuecomment-5215868649",
+      "comment_created_at": "2026-08-07T10:28:36Z",
+      "comment_updated_at": "2026-08-07T10:28:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "c0306bb0-924a-11f1-87df-74668d3c2d80",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 168,
+      "author": "kesslerio",
+      "author_id": 2647990,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T10:29:16.844Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/dry-run-preflight",
+        "head_sha": "84dc30e1b1f69b6f753b57b2bffeb8182ba272ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
