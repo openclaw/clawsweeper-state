@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-07T21:07:35.051Z",
+  "updated_at": "2026-08-07T21:07:37.204Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:78441:4589844547:2026-06-01T05:37:32Z:re_review",
-      "comment_id": "4589844547",
-      "comment_version_key": "4589844547:2026-06-01T05:37:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78441#issuecomment-4589844547",
-      "comment_created_at": "2026-06-01T05:37:32Z",
-      "comment_updated_at": "2026-06-01T05:37:32Z",
-      "comment_body_sha256": "cf08d3d4248f74718bc0b5672799ef673367cca957531604600464985402d8d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78441,
-      "author": "guanbear",
-      "author_id": 11829005,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T16:46:00.870Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:78441:4592822246:2026-06-01T13:01:36Z:re_review",
       "comment_id": "4592822246",
@@ -32363,6 +32336,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:143:5209982610:2026-08-07T21:06:40Z:clawsweeper_needs_human",
+      "comment_id": "5209982610",
+      "comment_version_key": "5209982610:2026-08-07T21:06:40Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/143#issuecomment-5209982610",
+      "comment_created_at": "2026-08-06T23:37:37Z",
+      "comment_updated_at": "2026-08-07T21:06:40Z",
+      "comment_body_sha256": "5d53e3cc11f113426432c8c4184c1314c1f20b2c65f1a30ddec92400a6f1b44d",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the SQLite engine for existing local and portable archives, but no PR-head run demonstrates reopening, diagnosing, and persisting an existing Gitcrawl archive. (sha=54213d8eeb67de391ecb44f0876bcc2349283b46)",
+      "expected_head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T21:07:37.204Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
