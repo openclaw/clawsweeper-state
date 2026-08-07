@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-07T00:30:39.439Z",
-  "count": 16,
+  "generated_at": "2026-08-07T00:41:54.347Z",
+  "count": 15,
   "summary": {
-    "open_prs": 16,
+    "open_prs": 15,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 10,
+    "needs_checks": 9,
     "needs_review": 0,
-    "needs_merge_preflight": 16,
+    "needs_merge_preflight": 15,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -34,9 +34,9 @@
       "head_sha": "564ddda18e1b128a75284416b4589b90d0f3cdb4",
       "cluster_id": "issue-openclaw-openclaw-120019",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
-      "updated_at": "2026-08-07T00:16:26Z",
+      "updated_at": "2026-08-07T00:39:02Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -88,7 +88,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_checks:CI / checks-node-compact-large-1:FAILURE; CI / checks-node-compact-large-3:FAILURE; CI / check-dependencies:FAILURE",
         "needs_merge_preflight"
       ],
@@ -1113,82 +1113,6 @@
           "canonical": "#92199",
           "candidate_fix": null,
           "reason": "This is the viable canonical fix path; the job forbids merge, so it remains open pending the required exact-head review and normal merge gates."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED; PR context and evidence / Real behavior proof:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119528,
-      "title": "fix(agents): timestamp recovered Claude CLI history",
-      "url": "https://github.com/openclaw/openclaw/pull/119528",
-      "branch": "clawsweeper/issue-openclaw-openclaw-94679",
-      "head_sha": "dbc07e2f3de2a5ebd09f5248b7f5ac6abec9e4d4",
-      "cluster_id": "issue-openclaw-openclaw-94679",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md",
-      "updated_at": "2026-08-06T10:40:10Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 150,
-        "counts": {
-          "CANCELLED": 10,
-          "SKIPPED": 53,
-          "SUCCESS": 84,
-          "FAILURE": 2,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "PR context and evidence / Real behavior proof:CANCELLED",
-          "CI / QA Smoke CI (profile 2/4):FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119528#issuecomment-5188728016",
-            "submitted_at": "2026-08-05T07:14:01Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "30981110177",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/30981110177",
-        "cluster_id": "issue-openclaw-openclaw-94679",
-        "published_at": "2026-08-05T07:16:46.264Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119528",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(agents): timestamp recovered Claude CLI history",
-          "idempotency_key": null,
-          "reason": "checks are not clean: QA Smoke CI (profile 2/4): FAILURE, openclaw/ci-gate: FAILURE",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
         }
       },
       "blockers": [

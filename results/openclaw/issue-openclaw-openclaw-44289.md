@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-44289"
 mode: "autonomous"
-run_id: "31129160942"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31129160942"
-head_sha: "9725dabfeba014e742e0b54d84b2613e22d60716"
+run_id: "31134912762"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31134912762"
+head_sha: "3f368a3e394d76c31584fce700cee9a62485cb66"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-07T00:07:32.161Z"
+published_at: "2026-08-07T00:39:56.526Z"
 canonical: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/44289"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31129160942](https://github.com/openclaw/clawsweeper/actions/runs/31129160942)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31134912762](https://github.com/openclaw/clawsweeper/actions/runs/31134912762)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 ## Summary
 
-#44289 remains reproducible on main b4a26783: parity tests manually compare registry-derived SecretRef docs, but no generator/check command exists. The supplied checkout is read-only (Corepack fails with EROFS), so implementation and local validation are blocked; a narrow, validated fix plan is ready.
+#44289 remains reproducible on current main: documentation parity is post-hoc test logic, with no shared formatter or generation/check command. Implementation is blocked only by the read-only checkout and missing local test dependencies; a narrow new-PR artifact is ready.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/44289
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44289 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout; the executor should apply the attached new-fix-PR artifact in a writable checkout. |
-| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Create one new focused PR from clawsweeper/issue-openclaw-openclaw-44289. |
-| #85969 | keep_closed | skipped | superseded | Do not revive or mutate closed prior-art PRs. |
-| #89142 | keep_closed | skipped | superseded | Do not revive or mutate closed prior-art PRs. |
-| #91612 | keep_closed | skipped | superseded | Do not revive or mutate closed prior-art PRs. |
+| #44289 | fix_needed | blocked | canonical | A writable executor checkout with dependencies is required to add the formatter, generator, tests, committed outputs, and package/check wiring. |
+| #85969 | keep_closed | skipped | related | Already closed. |
+| #89142 | keep_closed | skipped | related | Already closed. |
+| #91612 | keep_closed | skipped | related | Already closed. |
+| cluster:issue-openclaw-openclaw-44289 | build_fix_artifact | planned | canonical | Create one narrow branch/PR from clawsweeper/issue-openclaw-openclaw-44289. |
 
 ## Needs Human
 
