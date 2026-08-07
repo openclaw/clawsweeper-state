@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T17:45:08.078Z",
+  "updated_at": "2026-08-07T17:45:11.908Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:168:5209979693:2026-08-07T13:39:29Z:clawsweeper_auto_repair",
-      "comment_id": "5209979693",
-      "comment_version_key": "5209979693:2026-08-07T13:39:29Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/168#issuecomment-5209979693",
-      "comment_created_at": "2026-08-06T23:37:10Z",
-      "comment_updated_at": "2026-08-07T13:39:29Z",
-      "comment_body_sha256": "cb3d3e72d47e98d1d774bd494b630077db42e529efeba8733ba429bbafaebc7d",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 168,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e86994bc66771856f3c1d0f6c0505b0da73bbced)",
-      "expected_head_sha": "e86994bc66771856f3c1d0f6c0505b0da73bbced",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-07T13:40:10.643Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/dry-run-preflight",
-        "head_sha": "e86994bc66771856f3c1d0f6c0505b0da73bbced",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118631:5165600356:2026-08-07T13:39:53Z:clawsweeper_auto_repair",
       "comment_id": "5165600356",
@@ -32274,6 +32241,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119686:5220268333:2026-08-07T17:44:32Z:re_review",
+      "comment_id": "5220268333",
+      "comment_version_key": "5220268333:2026-08-07T17:44:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119686#issuecomment-5220268333",
+      "comment_created_at": "2026-08-07T17:44:32Z",
+      "comment_updated_at": "2026-08-07T17:44:32Z",
+      "comment_body_sha256": "3b3ee06b8acedc4b4c0a95f36aafc869e35b91f3a4d1008feb0d21e6eb670b06",
+      "source_delivery_id": "a6039950-9287-11f1-8bee-5b14899e872d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119686,
+      "author": "sappkevin",
+      "author_id": 109696421,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T17:45:09.829Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wikimedia-thumbnail-fallback",
+        "head_sha": "bb46914e6442e3da8fe288a297c1c2221be1cddc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
