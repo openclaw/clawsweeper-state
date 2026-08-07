@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T01:33:47.676Z",
+  "updated_at": "2026-08-07T01:34:03.106Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119943:5205952455:2026-08-06T14:34:53Z:clawsweeper_auto_repair",
-      "comment_id": "5205952455",
-      "comment_version_key": "5205952455:2026-08-06T14:34:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119943#issuecomment-5205952455",
-      "comment_created_at": "2026-08-06T14:22:28Z",
-      "comment_updated_at": "2026-08-06T14:34:53Z",
-      "comment_body_sha256": "e7c0770f103148a261f2ffdf92a363452d3061b133d60b6a54ed3c0c5cc62624",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119943,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0998a29f57bf5cd75d3f483aa69da01e99e006d3)",
-      "expected_head_sha": "0998a29f57bf5cd75d3f483aa69da01e99e006d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-06T14:35:36.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-116588",
-        "head_sha": "0998a29f57bf5cd75d3f483aa69da01e99e006d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119960:5206118647:2026-08-06T14:34:23Z:clawsweeper_needs_human",
       "comment_id": "5206118647",
@@ -33055,6 +33022,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120045:5210989193:2026-08-07T01:32:40Z:clawsweeper_needs_human",
+      "comment_id": "5210989193",
+      "comment_version_key": "5210989193:2026-08-07T01:32:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120045#issuecomment-5210989193",
+      "comment_created_at": "2026-08-07T01:32:40Z",
+      "comment_updated_at": "2026-08-07T01:32:40Z",
+      "comment_body_sha256": "12adf6ade776ff2a2f55739183a1822d1990efcb5392baa23f9551711bb4d4a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120045,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body supplies a claimed pre-fix device failure and a focused unit test, but no redacted after-fix Android 16 device trace showing the promp...; Review finding: [P1] Publish phone-state access for node reapproval — apps/android/app/src/thirdParty/java/ai/openclaw/app/node/SmsManager.kt:744-755 - [medium] New phone-state gr... (sha=f81f31ec676e7f9022a3358cdeb19eee6b6bc862)",
+      "expected_head_sha": "f81f31ec676e7f9022a3358cdeb19eee6b6bc862",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T01:34:03.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-sms-phone-state",
+        "head_sha": "f81f31ec676e7f9022a3358cdeb19eee6b6bc862",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
