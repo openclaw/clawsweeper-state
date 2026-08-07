@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-07T02:38:48.181Z",
+  "updated_at": "2026-08-07T02:39:02.272Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120018:5208726527:2026-08-06T19:56:02Z:re_review",
-      "comment_id": "5208726527",
-      "comment_version_key": "5208726527:2026-08-06T19:56:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120018#issuecomment-5208726527",
-      "comment_created_at": "2026-08-06T19:56:02Z",
-      "comment_updated_at": "2026-08-06T19:56:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120018,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-06T22:08:19.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-node-linux-compat",
-        "head_sha": "e4152afd563f90d75e5e73633daa2139489d90b9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119991:5208726533:2026-08-06T19:56:02Z:re_review",
       "comment_id": "5208726533",
@@ -31732,6 +31685,39 @@
         "kind": "pull_request",
         "branch": "fix/gap-vector-probe-silent-fail",
         "head_sha": "6f4344951f18d3daab59802526d7695b7bc1fccb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119777:5199058768:2026-08-07T02:38:17Z:clawsweeper_needs_human",
+      "comment_id": "5199058768",
+      "comment_version_key": "5199058768:2026-08-07T02:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119777#issuecomment-5199058768",
+      "comment_created_at": "2026-08-06T00:39:16Z",
+      "comment_updated_at": "2026-08-07T02:38:17Z",
+      "comment_body_sha256": "faa50113b15ec7ac34c848f797c6fb03650390baf1399f671f67cf014a4defbf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119777,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; merge only after GitHub reports the required checks green. (sha=b1106f03d1a998e23562cd841b9521151159d370)",
+      "expected_head_sha": "b1106f03d1a998e23562cd841b9521151159d370",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-07T02:39:02.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/health-session-store-path",
+        "head_sha": "b1106f03d1a998e23562cd841b9521151159d370",
         "cluster_id": null,
         "job_path": null
       }
