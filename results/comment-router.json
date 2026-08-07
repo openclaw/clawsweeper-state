@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-07T06:39:14.587Z",
+  "updated_at": "2026-08-07T06:39:22.437Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1051:5211034882:2026-08-07T01:38:50Z:clawsweeper_auto_repair",
-      "comment_id": "5211034882",
-      "comment_version_key": "5211034882:2026-08-07T01:38:50Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1051#issuecomment-5211034882",
-      "comment_created_at": "2026-08-07T01:38:50Z",
-      "comment_updated_at": "2026-08-07T01:38:50Z",
-      "comment_body_sha256": "0b08e1884175ea8d82afaffc435ef43d605b8d66cbb583f90f8a8aa0be753402",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7f915316928e07e61d6e85a746d6bddfccbbd571)",
-      "expected_head_sha": "7f915316928e07e61d6e85a746d6bddfccbbd571",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T01:39:29.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-1049-out-of-block-metadata",
-        "head_sha": "7f915316928e07e61d6e85a746d6bddfccbbd571",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78852:4395412766:2026-08-07T01:38:49Z:clawsweeper_needs_human",
       "comment_id": "4395412766",
@@ -31263,6 +31230,54 @@
       "status": "skipped",
       "processed_at": "2026-08-07T06:39:14.587Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119827:5213467801:2026-08-07T06:38:43Z:re_review",
+      "comment_id": "5213467801",
+      "comment_version_key": "5213467801:2026-08-07T06:38:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119827#issuecomment-5213467801",
+      "comment_created_at": "2026-08-07T06:38:43Z",
+      "comment_updated_at": "2026-08-07T06:38:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "a2be0580-922a-11f1-99f3-0dcb2b16a5e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119827,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-07T06:39:20.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-claim-bind-limit-119490",
+        "head_sha": "b5b56e241519ed26a94807343ad4e4d13bb0bf75",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
