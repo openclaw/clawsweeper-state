@@ -1,71 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:48:46.752Z",
+  "updated_at": "2026-08-08T14:49:05.999Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194460725:2026-08-05T16:27:55Z:automerge",
-      "comment_id": "5194460725",
-      "comment_version_key": "5194460725:2026-08-05T16:27:55Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194460725",
-      "comment_created_at": "2026-08-05T16:27:55Z",
-      "comment_updated_at": "2026-08-05T16:27:55Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:35:49.875Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194720912:2026-08-05T16:52:55Z:automerge",
       "comment_id": "5194720912",
@@ -33498,6 +33433,39 @@
         "kind": "pull_request",
         "branch": "fix/trufflehog-no-update",
         "head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:494:5223616670:2026-08-08T14:48:32Z:clawsweeper_auto_repair",
+      "comment_id": "5223616670",
+      "comment_version_key": "5223616670:2026-08-08T14:48:32Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/494#issuecomment-5223616670",
+      "comment_created_at": "2026-08-08T00:43:10Z",
+      "comment_updated_at": "2026-08-08T14:48:32Z",
+      "comment_body_sha256": "fa7932a9925bb07d4a77e676f66dc77d100d07657f9533d894c2b784d0625cea",
+      "repo": "openclaw/acpx",
+      "issue_number": 494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=311294713d22fa84bd550c264c9e50b3cbad9fd5)",
+      "expected_head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:49:05.999Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-turn-prompt-readiness-20260807",
+        "head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
         "cluster_id": null,
         "job_path": null
       }
