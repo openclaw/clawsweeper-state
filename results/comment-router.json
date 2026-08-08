@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:57:39.623Z",
+  "updated_at": "2026-08-08T14:57:39.692Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194623651:2026-08-05T16:43:22Z:maintainer_approve_automerge",
-      "comment_id": "5194623651",
-      "comment_version_key": "5194623651:2026-08-05T16:43:22Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194623651",
-      "comment_created_at": "2026-08-05T16:43:22Z",
-      "comment_updated_at": "2026-08-05T16:43:22Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:24.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:70:5183422180:2026-08-08T10:35:44Z:clawsweeper_auto_repair",
       "comment_id": "5183422180",
@@ -33394,6 +33335,39 @@
         "kind": "pull_request",
         "branch": "feat/961-docs-comments-locate",
         "head_sha": "b25d995c891a83fe529ac17afda926b3eca124e5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:58:5120614947:2026-08-08T14:56:55Z:clawsweeper_needs_human",
+      "comment_id": "5120614947",
+      "comment_version_key": "5120614947:2026-08-08T14:56:55Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/58#issuecomment-5120614947",
+      "comment_created_at": "2026-07-29T16:25:19Z",
+      "comment_updated_at": "2026-08-08T14:56:55Z",
+      "comment_body_sha256": "b289ee9022a22ae6094a8a5b9a189b92fcbede4b42e1ec6e8ae4afe3d750c1de",
+      "repo": "openclaw/shellbench",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legacy manifests that have a bootstrap timestamp but no recorded lease identity will perform one conservative remote hydration when the active remote run is missing, adding bounded re... (sha=8949dc8328e9b86a0cf1f80bcf3a976c67c4837a)",
+      "expected_head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:57:39.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-fleet-rebootstrap",
+        "head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
         "cluster_id": null,
         "job_path": null
       }
