@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T15:08:42.104Z",
+  "updated_at": "2026-08-08T15:10:56.758Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120431:5225704621:2026-08-08T10:28:26Z:re_review",
-      "comment_id": "5225704621",
-      "comment_version_key": "5225704621:2026-08-08T10:28:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120431#issuecomment-5225704621",
-      "comment_created_at": "2026-08-08T10:28:26Z",
-      "comment_updated_at": "2026-08-08T10:28:26Z",
-      "comment_body_sha256": "927f61c5df9db733a89638985710b2ad798cffd67b171e9369496f23d7e4c83b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120431,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:54.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-login-oauth-loopback",
-        "head_sha": "c44c459e4cabcddee73924a353b0517d9b2f8fc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120526:5225709718:2026-08-08T10:30:02Z:re_review",
       "comment_id": "5225709718",
@@ -33214,6 +33167,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-97c731b4de",
         "head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:204:5193629920:2026-08-08T15:10:18Z:clawsweeper_auto_repair",
+      "comment_id": "5193629920",
+      "comment_version_key": "5193629920:2026-08-08T15:10:18Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/204#issuecomment-5193629920",
+      "comment_created_at": "2026-08-05T15:15:43Z",
+      "comment_updated_at": "2026-08-08T15:10:18Z",
+      "comment_body_sha256": "0faa896492e3f11fbd0c231832706981f5e23de90ba45f88b363bd08b970b960",
+      "repo": "steipete/poltergeist",
+      "issue_number": 204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=df7bf80fefc3fc59d568a1e1d7f45546732acad5)",
+      "expected_head_sha": "df7bf80fefc3fc59d568a1e1d7f45546732acad5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-08T15:10:56.758Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clean-resolves-wrong-state-file",
+        "head_sha": "df7bf80fefc3fc59d568a1e1d7f45546732acad5",
         "cluster_id": null,
         "job_path": null
       }
