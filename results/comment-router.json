@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:44:34.517Z",
+  "updated_at": "2026-08-08T19:44:45.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112765:5226732876:2026-08-08T15:19:13Z:re_review",
-      "comment_id": "5226732876",
-      "comment_version_key": "5226732876:2026-08-08T15:19:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112765#issuecomment-5226732876",
-      "comment_created_at": "2026-08-08T15:19:13Z",
-      "comment_updated_at": "2026-08-08T15:19:13Z",
-      "comment_body_sha256": "249fa806300ea3eb1ea401c5533ad67cfcae9016a8696ced68f8c0c82c4faedc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112765,
-      "author": "troioi-vn",
-      "author_id": 45875464,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:43:24.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mcp-call-cli",
-        "head_sha": "ff7129978a8405a7554c8ff3f95f17d9bf8baf61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120605:5226733552:2026-08-08T15:19:24Z:re_review",
       "comment_id": "5226733552",
@@ -32262,6 +32215,39 @@
         "kind": "pull_request",
         "branch": "ci/skip-docs-publish-in-forks",
         "head_sha": "1c4f9382034c7ac99db0418d51510012651265ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112804:5075162079:2026-08-08T19:44:03Z:clawsweeper_needs_human",
+      "comment_id": "5075162079",
+      "comment_version_key": "5075162079:2026-08-08T19:44:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112804#issuecomment-5075162079",
+      "comment_created_at": "2026-07-24T22:41:41Z",
+      "comment_updated_at": "2026-08-08T19:44:03Z",
+      "comment_body_sha256": "f0e3d6c87c6d2b6a6af3270061652eba642f09a7235f7d57edc4dafbce079964",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112804,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although GitHub reports a clean merge, the focused regression test and required checks should run on the actual current merge result before landing. (sha=0fb5801884576278c734df7fe9dae4f1d4c4dac3)",
+      "expected_head_sha": "0fb5801884576278c734df7fe9dae4f1d4c4dac3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:44:45.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-payload-blank-location",
+        "head_sha": "0fb5801884576278c734df7fe9dae4f1d4c4dac3",
         "cluster_id": null,
         "job_path": null
       }
