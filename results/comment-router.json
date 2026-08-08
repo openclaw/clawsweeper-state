@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:15:51.072Z",
+  "updated_at": "2026-08-08T22:15:54.238Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119819:5227132212:2026-08-08T17:01:35Z:re_review",
-      "comment_id": "5227132212",
-      "comment_version_key": "5227132212:2026-08-08T17:01:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119819#issuecomment-5227132212",
-      "comment_created_at": "2026-08-08T17:01:35Z",
-      "comment_updated_at": "2026-08-08T17:01:35Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119819,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-heartbeat-target-agent",
-        "head_sha": "2df90dc83c7f747bd3ea4c41384808925a629db3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97103:5227139505:2026-08-08T17:03:17Z:re_review",
       "comment_id": "5227139505",
@@ -32317,6 +32270,39 @@
         "kind": "pull_request",
         "branch": "shanselman-fix-composer-accessibility",
         "head_sha": "d0061670ea2cad06bb31a211d19b89f786c84bee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1059:5219535679:2026-08-08T22:15:06Z:clawsweeper_needs_human",
+      "comment_id": "5219535679",
+      "comment_version_key": "5219535679:2026-08-08T22:15:06Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1059#issuecomment-5219535679",
+      "comment_created_at": "2026-08-07T16:26:27Z",
+      "comment_updated_at": "2026-08-08T22:15:06Z",
+      "comment_body_sha256": "47b219f20732333294e3fbef4ec7aaae76a9a079cb26efd972865deda4b3f14b",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head pnpm check is currently failing and the supplied context does not expose its failing step or log; do not merge until it is green or the failure is diagnosed and repaire... (sha=85abed7ee41f940699832c2b1374493d5d0e677d)",
+      "expected_head_sha": "85abed7ee41f940699832c2b1374493d5d0e677d",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-08T22:15:54.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawsweeper-review-state-120232",
+        "head_sha": "85abed7ee41f940699832c2b1374493d5d0e677d",
         "cluster_id": null,
         "job_path": null
       }
