@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:38:58.520Z",
+  "updated_at": "2026-08-08T17:39:07.195Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120460:5226094903:2026-08-08T12:26:04Z:re_review",
-      "comment_id": "5226094903",
-      "comment_version_key": "5226094903:2026-08-08T12:26:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120460#issuecomment-5226094903",
-      "comment_created_at": "2026-08-08T12:26:04Z",
-      "comment_updated_at": "2026-08-08T12:26:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120460,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:42:19.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/pensive-grothendieck-646d82",
-        "head_sha": "0dd5cf9cccafb35d4377b68e28b2b29f23b071a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:79702:5226105834:2026-08-08T12:29:25Z:re_review",
       "comment_id": "5226105834",
@@ -32794,6 +32747,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T17:38:58.520Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1236:5198911441:2026-08-08T17:24:39Z:clawsweeper_auto_repair",
+      "comment_id": "5198911441",
+      "comment_version_key": "5198911441:2026-08-08T17:24:39Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1236#issuecomment-5198911441",
+      "comment_created_at": "2026-08-06T00:16:40Z",
+      "comment_updated_at": "2026-08-08T17:24:39Z",
+      "comment_body_sha256": "bbb811cc851c361b85d0e3db5386ff190296fabb0ede83b211fca10ec2b81bec",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1e0c24322334357add46c8c7b46e61458ab80264)",
+      "expected_head_sha": "1e0c24322334357add46c8c7b46e61458ab80264",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T17:39:07.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/actions-full-resync-rehydrate-20260805",
+        "head_sha": "1e0c24322334357add46c8c7b46e61458ab80264",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
