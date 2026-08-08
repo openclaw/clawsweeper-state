@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:29:17.169Z",
+  "updated_at": "2026-08-08T12:29:19.064Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115060:5224627142:2026-08-08T06:30:03Z:re_review",
-      "comment_id": "5224627142",
-      "comment_version_key": "5224627142:2026-08-08T06:30:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115060#issuecomment-5224627142",
-      "comment_created_at": "2026-08-08T05:02:36Z",
-      "comment_updated_at": "2026-08-08T06:30:03Z",
-      "comment_body_sha256": "b068940d1152f22774fb990be60e641fa577aa212e68f6e50f2ba3f4afd7a1a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115060,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/webchat-media-metadata-autoscroll",
-        "head_sha": "59621e5fbb2c6a65ebb562256f90d9e216458b78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120472:5224831032:2026-08-08T05:59:58Z:re_review",
       "comment_id": "5224831032",
@@ -33471,6 +33424,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/production-aab3d26328",
         "head_sha": "b92b6f7e8dc6ecd7ef9bb2e32dc22f331df2fc33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-08T12:27:09Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-08T12:27:09Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-08T12:27:09Z",
+      "comment_body_sha256": "6a528903e15568b0ca8c9112ac453ecbbd870329fcfd4b7bf4648d0e1e6824f9",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CrawlKit is a direct dependency across configuration, storage, remote, and sync paths; without an after-update Gitcrawl run, a patch-level upstream change could alter an existing runt... (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:29:19.064Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
         "cluster_id": null,
         "job_path": null
       }
