@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:38:32.510Z",
+  "updated_at": "2026-08-08T14:38:36.932Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118523:5162911881:2026-08-08T09:41:37Z:clawsweeper_auto_repair",
-      "comment_id": "5162911881",
-      "comment_version_key": "5162911881:2026-08-08T09:41:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118523#issuecomment-5162911881",
-      "comment_created_at": "2026-08-03T06:09:58Z",
-      "comment_updated_at": "2026-08-08T09:41:37Z",
-      "comment_body_sha256": "6e623d36fc9c8b47d6a9de28ed4fd4644d565da2f5562eedb91969a389d2d9a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118523,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3da7513a890675309ff9f6346d7aca2a6c1323bf)",
-      "expected_head_sha": "3da7513a890675309ff9f6346d7aca2a6c1323bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T09:45:51.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/118489-failed-tool-finalization-residuals",
-        "head_sha": "3da7513a890675309ff9f6346d7aca2a6c1323bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118535:5163334387:2026-08-08T09:42:09Z:clawsweeper_auto_repair",
       "comment_id": "5163334387",
@@ -33290,6 +33257,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T14:38:32.510Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1129:5226575758:2026-08-08T14:38:07Z:clawsweeper_needs_human",
+      "comment_id": "5226575758",
+      "comment_version_key": "5226575758:2026-08-08T14:38:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1129#issuecomment-5226575758",
+      "comment_created_at": "2026-08-08T14:38:07Z",
+      "comment_updated_at": "2026-08-08T14:38:07Z",
+      "comment_body_sha256": "fe4ef23c13d38d5bc7a81a89fca65a2d7edabc5490159239c22fff2f1938e1e3",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied current-head output shows normal reload restoration, not an actual lease-contention failure followed by the new retry and successful recovery. (sha=89a04d544d0b49b855a35ef36b9476fc1418a6b0)",
+      "expected_head_sha": "89a04d544d0b49b855a35ef36b9476fc1418a6b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:38:36.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shanselman-fix-wizard-lease-recovery",
+        "head_sha": "89a04d544d0b49b855a35ef36b9476fc1418a6b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
