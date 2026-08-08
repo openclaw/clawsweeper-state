@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:40:04.850Z",
+  "updated_at": "2026-08-08T12:40:10.491Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120470:5225094998:2026-08-08T07:19:13Z:re_review",
-      "comment_id": "5225094998",
-      "comment_version_key": "5225094998:2026-08-08T07:19:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120470#issuecomment-5225094998",
-      "comment_created_at": "2026-08-08T07:19:13Z",
-      "comment_updated_at": "2026-08-08T07:19:13Z",
-      "comment_body_sha256": "3abe6f4a932b7b9a2b8a155536f975a7ff46765fad88376621e3fee00b119579",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120470,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/steering-before-tool-calls-e3da1b",
-        "head_sha": "88ba3e531e0e2cc2b5c4bea9d5ca03934aa1536a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120354:5225095990:2026-08-08T07:19:30Z:re_review",
       "comment_id": "5225095990",
@@ -33321,6 +33274,39 @@
         "kind": "pull_request",
         "branch": "fix/geocode-timeout",
         "head_sha": "e4759bac6c2ad75a784c08ecb18d4ed1c669c431",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120546:5225583383:2026-08-08T12:39:15Z:clawsweeper_auto_repair",
+      "comment_id": "5225583383",
+      "comment_version_key": "5225583383:2026-08-08T12:39:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120546#issuecomment-5225583383",
+      "comment_created_at": "2026-08-08T09:49:38Z",
+      "comment_updated_at": "2026-08-08T12:39:15Z",
+      "comment_body_sha256": "95161fc4d64fc5411bb2751ac4123a5ba314ba748d62e0d535e49c53e4f8cf01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120546,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6ab8985e49567a20e914c42b90dd9f09c5bcf4a9)",
+      "expected_head_sha": "6ab8985e49567a20e914c42b90dd9f09c5bcf4a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:40:10.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/missing-cloud-sessions-feature-464b33",
+        "head_sha": "6ab8985e49567a20e914c42b90dd9f09c5bcf4a9",
         "cluster_id": null,
         "job_path": null
       }
