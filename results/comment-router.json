@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:07:32.043Z",
+  "updated_at": "2026-08-08T14:07:35.831Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118720:5209061306:2026-08-06T20:54:49Z:re_review",
-      "comment_id": "5209061306",
-      "comment_version_key": "5209061306:2026-08-06T20:54:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118720#issuecomment-5209061306",
-      "comment_created_at": "2026-08-06T20:54:49Z",
-      "comment_updated_at": "2026-08-06T20:54:49Z",
-      "comment_body_sha256": "c41be731f4c4280814748d55c73f5059b30dab9c9925ef373489e025a947e4c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118720,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T09:41:18.521Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120487:5224795172:2026-08-08T09:40:25Z:clawsweeper_needs_human",
       "comment_id": "5224795172",
@@ -33448,6 +33421,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T14:07:32.043Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:68:5182423456:2026-08-08T14:06:50Z:clawsweeper_needs_human",
+      "comment_id": "5182423456",
+      "comment_version_key": "5182423456:2026-08-08T14:06:50Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/68#issuecomment-5182423456",
+      "comment_created_at": "2026-08-04T17:25:08Z",
+      "comment_updated_at": "2026-08-08T14:06:50Z",
+      "comment_body_sha256": "ec4d204c2c03bf3714994563be063e1efae02cf02b7ca047628f93a9ee8e132f",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 68,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Regenerate pnpm-lock.yaml for Hono 4.12.34 (P2)** - The manifest now requests Hono 4.12.34, but the root lockfile still pins 4.12.32. CI installs with pnpm install --frozen-lockfile, so all required jobs fail be...; Review finding: [P2] Regenerate pnpm-lock.yaml for Hono 4.12.34 — apps/api/package.json:24 - [medium] Resolve the security update in pnpm-lock.yaml — apps/api/package.json:24 (sha=05268005a8229bea11a35adc3cd329dc2d132f69)",
+      "expected_head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:07:35.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/apps/api/hono-4.12.34",
+        "head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
