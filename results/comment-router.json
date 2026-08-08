@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:17:09.090Z",
+  "updated_at": "2026-08-08T09:17:40.650Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120350:5224533938:2026-08-08T04:36:45Z:re_review",
-      "comment_id": "5224533938",
-      "comment_version_key": "5224533938:2026-08-08T04:36:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120350#issuecomment-5224533938",
-      "comment_created_at": "2026-08-08T04:36:45Z",
-      "comment_updated_at": "2026-08-08T04:36:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "c36534d0-92e2-11f1-87ec-6d9d6a784df0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120350,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:37:19.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/loc5-leafhelpers-3c8e",
-        "head_sha": "b7f184fe10a8152069880eb51692ed292fd04bfd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119909:5224534405:2026-08-08T04:36:54Z:re_review",
       "comment_id": "5224534405",
@@ -33256,6 +33208,39 @@
         "kind": "pull_request",
         "branch": "fix/browser-intelligence-effort-submenu",
         "head_sha": "e28f2d3bba207ab4415a0a41df0e023cb5291eaa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/tokentally:34:5213735091:2026-08-08T09:16:59Z:clawsweeper_needs_human",
+      "comment_id": "5213735091",
+      "comment_version_key": "5213735091:2026-08-08T09:16:59Z",
+      "comment_url": "https://github.com/steipete/tokentally/pull/34#issuecomment-5213735091",
+      "comment_created_at": "2026-08-07T07:10:21Z",
+      "comment_updated_at": "2026-08-08T09:16:59Z",
+      "comment_body_sha256": "075a9e191c1720700b049fd2d0bd0e6e96ce17887c11db7a99467aa7bbf57221",
+      "repo": "steipete/tokentally",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The lockfile replaces 38 optional native oxfmt and oxlint binding entries across supported platforms, while the successful full gate ran only on Ubuntu Node 24. (sha=1e1d5c610c11237e08ddd218f2aa407730fd877e)",
+      "expected_head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:17:40.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-2df6aa9551",
+        "head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
         "cluster_id": null,
         "job_path": null
       }
