@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T12:18:56.286Z",
+  "generated_at": "2026-08-08T12:24:35.744Z",
   "count": 12,
   "summary": {
     "open_prs": 12,
@@ -10,10 +10,10 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 3,
+    "needs_checks": 2,
     "needs_review": 0,
     "needs_merge_preflight": 12,
-    "needs_result_backfill": 1
+    "needs_result_backfill": 0
   },
   "dispatch": {
     "enabled": false,
@@ -40,15 +40,12 @@
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 100,
+        "total": 102,
         "counts": {
-          "SKIPPED": 24,
-          "SUCCESS": 75,
-          "IN_PROGRESS": 1
+          "SKIPPED": 25,
+          "SUCCESS": 77
         },
-        "blockers": [
-          "CI / checks-node-compact-large-8:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -60,14 +57,33 @@
         "count": 0,
         "latest": []
       },
-      "latest_record": null,
+      "latest_record": {
+        "run_id": "31255477396",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31255477396",
+        "cluster_id": "issue-openclaw-openclaw-120557",
+        "published_at": "2026-08-08T12:24:13.408Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120586",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(control-ui): prioritize session provider quota window",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS",
-        "needs_merge_preflight",
-        "needs_result_backfill"
+        "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 120583,
