@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:40:10.491Z",
+  "updated_at": "2026-08-08T12:40:10.882Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120354:5225095990:2026-08-08T07:19:30Z:re_review",
-      "comment_id": "5225095990",
-      "comment_version_key": "5225095990:2026-08-08T07:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120354#issuecomment-5225095990",
-      "comment_created_at": "2026-08-08T07:19:30Z",
-      "comment_updated_at": "2026-08-08T07:19:30Z",
-      "comment_body_sha256": "e0faff14c1fee2b5bcf21d9eeb442edad65479726040265e0f940e1669907b5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120354,
-      "author": "mikasa0818",
-      "author_id": 244515412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-task-list-stable-pagination",
-        "head_sha": "d5693ddfa434f0485dc94d4935d84fb0ae027df9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120453:5225097853:2026-08-08T07:20:06Z:re_review",
       "comment_id": "5225097853",
@@ -33307,6 +33260,39 @@
         "kind": "pull_request",
         "branch": "steipete/missing-cloud-sessions-feature-464b33",
         "head_sha": "6ab8985e49567a20e914c42b90dd9f09c5bcf4a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:344:5206466425:2026-08-08T12:39:34Z:clawsweeper_auto_repair",
+      "comment_id": "5206466425",
+      "comment_version_key": "5206466425:2026-08-08T12:39:34Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/344#issuecomment-5206466425",
+      "comment_created_at": "2026-08-06T14:57:49Z",
+      "comment_updated_at": "2026-08-08T12:39:34Z",
+      "comment_body_sha256": "8bec66f05c6c1c619968afe2338a4de1199f7c7c2ece5ca40675b278baf34ffe",
+      "repo": "openclaw/wacli",
+      "issue_number": 344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2392ba27bd9d62db2d89bf55a8b1244f934fe287)",
+      "expected_head_sha": "2392ba27bd9d62db2d89bf55a8b1244f934fe287",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:40:10.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "diagnose-unparsed-messages",
+        "head_sha": "2392ba27bd9d62db2d89bf55a8b1244f934fe287",
         "cluster_id": null,
         "job_path": null
       }
