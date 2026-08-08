@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:46:55.605Z",
+  "updated_at": "2026-08-08T22:46:57.888Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120457:5227486111:2026-08-08T18:22:52Z:re_review",
-      "comment_id": "5227486111",
-      "comment_version_key": "5227486111:2026-08-08T18:22:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120457#issuecomment-5227486111",
-      "comment_created_at": "2026-08-08T18:22:52Z",
-      "comment_updated_at": "2026-08-08T18:22:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120457,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T18:43:57.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/clawstudio-1m-context-configuration-79869f",
-        "head_sha": "d0510aed9c04614445638dc1ec361e20cda68cff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120457:5224579857:2026-08-08T18:43:07Z:clawsweeper_auto_repair",
       "comment_id": "5224579857",
@@ -32345,6 +32298,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T22:46:55.605Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102182:4915056699:2026-08-08T22:41:52Z:clawsweeper_needs_human",
+      "comment_id": "4915056699",
+      "comment_version_key": "4915056699:2026-08-08T22:41:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/102182#issuecomment-4915056699",
+      "comment_created_at": "2026-07-08T13:02:33Z",
+      "comment_updated_at": "2026-08-08T22:41:52Z",
+      "comment_body_sha256": "afef91edc8a51eb8ee7ca8b52d621b1b61896eb72be31e8cd771841461cfa73b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 102182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR explicitly says live Control UI/WebChat proof is pending; tests and CI do not show after-fix runtime behavior. After adding proof, updat... (sha=dfd610f596fd04e7fae69d448f701109a44baa1b)",
+      "expected_head_sha": "dfd610f596fd04e7fae69d448f701109a44baa1b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:46:57.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/control-ui-live-assistant-stream",
+        "head_sha": "dfd610f596fd04e7fae69d448f701109a44baa1b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
