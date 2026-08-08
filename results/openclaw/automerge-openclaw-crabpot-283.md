@@ -2,12 +2,12 @@
 repo: "openclaw/crabpot"
 cluster_id: "automerge-openclaw-crabpot-283"
 mode: "autonomous"
-run_id: "31241204444"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31241204444"
-head_sha: "985651bf6642e630964b8aab69f0f00e23700f33"
+run_id: "31243837351"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31243837351"
+head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-08T05:19:40.030Z"
+published_at: "2026-08-08T06:29:47.735Z"
 canonical: "#283"
 canonical_issue: null
 canonical_pr: "#283"
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabpot
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31241204444](https://github.com/openclaw/clawsweeper/actions/runs/31241204444)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31243837351](https://github.com/openclaw/clawsweeper/actions/runs/31243837351)
 
 Workflow conclusion: failure
 
