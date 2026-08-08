@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T15:22:17.271Z",
+  "updated_at": "2026-08-08T15:25:12.719Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103623:4942525111:2026-07-11T04:55:53Z:re_review",
-      "comment_id": "4942525111",
-      "comment_version_key": "4942525111:2026-07-11T04:55:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103623#issuecomment-4942525111",
-      "comment_created_at": "2026-07-11T04:55:53Z",
-      "comment_updated_at": "2026-07-11T04:55:53Z",
-      "comment_body_sha256": "26873109d55bc7e47537069f6658f2251d49be2c35fcd346810e1e5c6067a5fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103623,
-      "author": "lit26",
-      "author_id": 51225681,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T10:40:48.059Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103623:4942731540:2026-07-11T05:30:51Z:re_review",
       "comment_id": "4942731540",
@@ -33208,6 +33181,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-08T15:24:37Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-08T15:24:37Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-08T15:24:37Z",
+      "comment_body_sha256": "217b445f3b4e980990bbf1e3b50dda640f9153f51d9b54d13a72bb9e377fee7c",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CrawlKit is a direct dependency across configuration, remote, SQLite-store, and vector paths; the metadata-only branch provides no Gitcrawl runtime validation at v0.14.5. (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T15:25:12.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
