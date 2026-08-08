@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:33:17.754Z",
+  "updated_at": "2026-08-08T17:33:38.460Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:46:5084093874:2026-08-08T13:33:02Z:clawsweeper_auto_repair",
-      "comment_id": "5084093874",
-      "comment_version_key": "5084093874:2026-08-08T13:33:02Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/46#issuecomment-5084093874",
-      "comment_created_at": "2026-07-26T15:17:29Z",
-      "comment_updated_at": "2026-08-08T13:33:02Z",
-      "comment_body_sha256": "88a8ae0c7b2de5221123830c44e6723bae3c3008c732cd9e5851577ee83a63ae",
-      "repo": "openclaw/rfcs",
-      "issue_number": 46,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f290e9b3f09708bb309d6c4c9bd2e39dc76b663)",
-      "expected_head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T13:33:48.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-continuity-sidecars",
-        "head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120527:5226328494:2026-08-08T13:33:24Z:re_review",
       "comment_id": "5226328494",
@@ -33082,6 +33049,54 @@
         "kind": "pull_request",
         "branch": "fix/120488-poll-ack-exec-event",
         "head_sha": "698a98f8c8bc612af0979d75c823a912d7f97bad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120641:5227293931:2026-08-08T17:33:09Z:re_review",
+      "comment_id": "5227293931",
+      "comment_version_key": "5227293931:2026-08-08T17:33:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120641#issuecomment-5227293931",
+      "comment_created_at": "2026-08-08T17:33:09Z",
+      "comment_updated_at": "2026-08-08T17:33:09Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "3980fc50-934f-11f1-8f69-b3c6b5ecdb93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120641,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T17:33:36.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/refactor-inline-state-migration-policy-120451",
+        "head_sha": "68d3a9173f57335566af0e42f4ca3c8ff507592d",
         "cluster_id": null,
         "job_path": null
       },
