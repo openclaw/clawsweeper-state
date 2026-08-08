@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:40:00.005Z",
+  "updated_at": "2026-08-08T17:40:37.324Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120559:5226252785:2026-08-08T13:12:14Z:re_review",
-      "comment_id": "5226252785",
-      "comment_version_key": "5226252785:2026-08-08T13:12:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120559#issuecomment-5226252785",
-      "comment_created_at": "2026-08-08T13:12:14Z",
-      "comment_updated_at": "2026-08-08T13:12:14Z",
-      "comment_body_sha256": "ce1d337ba18cef0a3da7d8f0e19df90facc9383935e0260bbb4ac4a7ef1b7646",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120559,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-run",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:42:19.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stop-cancels-experience-review",
-        "head_sha": "0e6435b26693bacedd2d4c338b552c82a823a1ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120509:5226293804:2026-08-08T13:23:22Z:re_review",
       "comment_id": "5226293804",
@@ -32640,6 +32593,39 @@
         "kind": "pull_request",
         "branch": "fix/realtime-dtmf-priority",
         "head_sha": "ebdcae171d69ff0f4712258882a14263b183f45f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118377:5161833074:2026-08-08T17:40:01Z:clawsweeper_needs_human",
+      "comment_id": "5161833074",
+      "comment_version_key": "5161833074:2026-08-08T17:40:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118377#issuecomment-5161833074",
+      "comment_created_at": "2026-08-03T02:58:17Z",
+      "comment_updated_at": "2026-08-08T17:40:01Z",
+      "comment_body_sha256": "fe9a7d22f2d58b57c2c066da47cfe0eed1f89f8cf2e6955d2055b59044477bd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118377,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has strong deterministic mocked regressions and channel-suite output, but no after-fix real transport-client trace for a seal() finaliza... (sha=89a81b2f87b7c9b1391589ca86effac64fb551d3)",
+      "expected_head_sha": "89a81b2f87b7c9b1391589ca86effac64fb551d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T17:40:37.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/draft-seal-throttle-race-118348",
+        "head_sha": "89a81b2f87b7c9b1391589ca86effac64fb551d3",
         "cluster_id": null,
         "job_path": null
       }
