@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T20:43:03.380Z",
+  "updated_at": "2026-08-08T20:43:13.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5084956255:2026-07-26T19:06:32Z:re_review",
-      "comment_id": "5084956255",
-      "comment_version_key": "5084956255:2026-07-26T19:06:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5084956255",
-      "comment_created_at": "2026-07-26T19:06:32Z",
-      "comment_updated_at": "2026-07-26T19:06:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:49:22.569Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5087274277:2026-07-27T04:29:03Z:re_review",
       "comment_id": "5087274277",
@@ -32283,6 +32256,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:282:5206751181:2026-08-08T20:42:44Z:clawsweeper_auto_repair",
+      "comment_id": "5206751181",
+      "comment_version_key": "5206751181:2026-08-08T20:42:44Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/282#issuecomment-5206751181",
+      "comment_created_at": "2026-08-06T15:13:20Z",
+      "comment_updated_at": "2026-08-08T20:42:44Z",
+      "comment_body_sha256": "cf4ae93ef05446a49364ea60a57461fd3917bb6d55abc645ac2661f177e5aaa4",
+      "repo": "openclaw/mcporter",
+      "issue_number": 282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d32b3eeab5060d5420f7bd9f9977a34f08aa7449)",
+      "expected_head_sha": "d32b3eeab5060d5420f7bd9f9977a34f08aa7449",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T20:43:13.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-idle-legacy-sse-startup",
+        "head_sha": "d32b3eeab5060d5420f7bd9f9977a34f08aa7449",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
