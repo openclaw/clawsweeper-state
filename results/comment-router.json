@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:27:51.348Z",
+  "updated_at": "2026-08-08T10:32:59.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2374:5103944130:2026-07-28T12:08:32Z:re_review",
-      "comment_id": "5103944130",
-      "comment_version_key": "5103944130:2026-07-28T12:08:32Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2374#issuecomment-5103944130",
-      "comment_created_at": "2026-07-28T12:08:32Z",
-      "comment_updated_at": "2026-07-28T12:08:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/codexbar",
-      "issue_number": 2374,
-      "author": "joeVenner",
-      "author_id": 61122897,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T05:22:32.911Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2374:5104148975:2026-07-28T12:29:11Z:re_review",
       "comment_id": "5104148975",
@@ -33408,6 +33381,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120434:5225716358:2026-08-08T10:31:51Z:re_review",
+      "comment_id": "5225716358",
+      "comment_version_key": "5225716358:2026-08-08T10:31:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120434#issuecomment-5225716358",
+      "comment_created_at": "2026-08-08T10:31:51Z",
+      "comment_updated_at": "2026-08-08T10:31:51Z",
+      "comment_body_sha256": "7bef783105b97552898d325b7a463bb34d569f0a41077298c9efef089750b734",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120434,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the late-claim p2 is fixed on head 6f72657a7d45f1377d4d16b0141ca66015581bf8: claimworktreeremoval atomically rejects finalized rows (typed finalized contention), finalized losers record nothing, and busy outcomes write conditionally on a live row so no path can overwrite the winning removed-lossless fact. regression covers the stale-loser race. ci green on this exact head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T10:32:58.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/worktree-cleanup-outcome",
+        "head_sha": "6f72657a7d45f1377d4d16b0141ca66015581bf8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
