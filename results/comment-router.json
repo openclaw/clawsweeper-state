@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T04:38:09.814Z",
+  "updated_at": "2026-08-08T04:38:55.824Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-07T23:43:37Z:clawsweeper_needs_human",
-      "comment_id": "5199365650",
-      "comment_version_key": "5199365650:2026-08-07T23:43:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119784#issuecomment-5199365650",
-      "comment_created_at": "2026-08-06T01:31:28Z",
-      "comment_updated_at": "2026-08-07T23:43:37Z",
-      "comment_body_sha256": "69dcb757aec2ac3346f7269ccd0ec9903cfd7b04fe8afe54743e97a3c0ca74b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119784,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current branch is merge-conflicted in the active-event reader; a careless rebase could lose current projection/retry behavior or change transcript pagination semantics. (sha=8f272db71ccfd04fb8599eb84c0ba320d2b5173c)",
-      "expected_head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T23:47:24.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119578",
-        "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
-        "cluster_id": "issue-openclaw-openclaw-119578",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1098:5194221127:2026-08-07T23:46:27Z:clawsweeper_auto_repair",
       "comment_id": "5194221127",
@@ -32342,6 +32295,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120431:5224540126:2026-08-08T04:38:25Z:re_review",
+      "comment_id": "5224540126",
+      "comment_version_key": "5224540126:2026-08-08T04:38:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120431#issuecomment-5224540126",
+      "comment_created_at": "2026-08-08T04:38:25Z",
+      "comment_updated_at": "2026-08-08T04:38:25Z",
+      "comment_body_sha256": "d29066752d49c0596622ce0da414b703c3a4e9f68d46c46bc216f479487089e4",
+      "source_delivery_id": "feb9f520-92e2-11f1-820e-eba077dd379b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120431,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T04:38:54.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-login-oauth-loopback",
+        "head_sha": "344a67f63f4c3b7a587913dbe38eb87333f043a1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
