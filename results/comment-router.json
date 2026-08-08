@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:19:46.781Z",
+  "updated_at": "2026-08-08T10:19:54.148Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:283:5194849316:2026-08-05T17:05:22Z:automerge",
-      "comment_id": "5194849316",
-      "comment_version_key": "5194849316:2026-08-05T17:05:22Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/283#issuecomment-5194849316",
-      "comment_created_at": "2026-08-05T17:05:22Z",
-      "comment_updated_at": "2026-08-05T17:05:22Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/crabpot",
-      "issue_number": 283,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T05:13:15.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "0cb363fdae97a06cc91f96525529cb3907ae20ad",
-        "cluster_id": "automerge-openclaw-crabpot-283",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194460725:2026-08-05T16:27:55Z:automerge",
       "comment_id": "5194460725",
@@ -33561,6 +33508,39 @@
         "kind": "pull_request",
         "branch": "feat/gmail-auto-from-addressed-alias-env",
         "head_sha": "41272d5b60ba1052aed645d19cd26d99d2f5b470",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacrawl:63:5225676681:2026-08-08T10:19:08Z:clawsweeper_needs_human",
+      "comment_id": "5225676681",
+      "comment_version_key": "5225676681:2026-08-08T10:19:08Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/63#issuecomment-5225676681",
+      "comment_created_at": "2026-08-08T10:19:08Z",
+      "comment_updated_at": "2026-08-08T10:19:08Z",
+      "comment_body_sha256": "58e44c085a1d6153abdf3475941b5089492324efd75fc7dfb7380129b41ea9ce",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 63,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This replaces the SQLite engine used for persisted archives and source snapshots; the upstream release regenerates platform-specific SQLite code, so compatibility on less-common targe... (sha=560f7f3e7372a7620398ac77f518851cf2604f7c)",
+      "expected_head_sha": "560f7f3e7372a7620398ac77f518851cf2604f7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T10:19:54.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "560f7f3e7372a7620398ac77f518851cf2604f7c",
         "cluster_id": null,
         "job_path": null
       }
