@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 8, 2026, 22:38 UTC
+Last source update: Aug 8, 2026, 23:15 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 436 | 100% |
-| Run attempts archived | 1205 | audit |
-| Latest successful clusters | 372 | 85.3% |
-| Latest failed clusters | 62 | 14.2% |
+| Run attempts archived | 1206 | audit |
+| Latest successful clusters | 371 | 85.1% |
+| Latest failed clusters | 63 | 14.4% |
 | Latest cancelled clusters | 2 | 0.5% |
 | Needs-human clusters | 26 | 6.0% |
 | Fix actions failed | 22 | 4.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 436 clusters: 194 maintainer action, 86 automation snapshot, 132 intervention needed, 24 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120652](https://github.com/openclaw/openclaw/pull/120652) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#99277](https://github.com/openclaw/openclaw/pull/99277) is automation_blocked: Use the owner-local public afterRecord seam; do not revive the retired cleanup configuration..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#99277](https://github.com/openclaw/openclaw/pull/99277) is automation_failed: No viable open PR exists; implement the existing shared contract without reviving retired cleanup compatibility..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#98870](https://github.com/openclaw/openclaw/pull/98870) is action_planned: No open viable PR owns the fix. A narrow new fix PR is appropriate and permitted by job frontmatter..
 - Completed latest: no completed action in the latest records.
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 44 |
-| automation_failed | 72 |
-| automation_blocked | 60 |
+| automation_failed | 73 |
+| automation_blocked | 59 |
 | reviewed_no_action | 24 |
 | completed | 0 |
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#99277](https://github.com/openclaw/openclaw/pull/99277) | automation_blocked | Use the owner-local public afterRecord seam; do not revive the retired cleanup configuration. | Aug 8, 2026, 22:13 UTC | [issue-openclaw-openclaw-99277](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-99277.md) | [31280728201](https://github.com/openclaw/clawsweeper/actions/runs/31280728201) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#99277](https://github.com/openclaw/openclaw/pull/99277) | automation_failed | No viable open PR exists; implement the existing shared contract without reviving retired cleanup compatibility. | Aug 8, 2026, 23:15 UTC | [issue-openclaw-openclaw-99277](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-99277.md) | [31282628792](https://github.com/openclaw/clawsweeper/actions/runs/31282628792) |
 | [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 8, 2026, 20:09 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31275987820](https://github.com/openclaw/clawsweeper/actions/runs/31275987820) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#97287](https://github.com/openclaw/openclaw/pull/97287) | automation_blocked | No node_modules or pnpm store is present in the target checkout. Read-only sandboxing prevents dependency installation, so the mandatory node-sdk s... | Aug 8, 2026, 14:03 UTC | [issue-openclaw-openclaw-97287](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-97287.md) | [31260628490](https://github.com/openclaw/clawsweeper/actions/runs/31260628490) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118685](https://github.com/openclaw/openclaw/pull/118685) | automation_blocked | autofix-only job cannot merge | Aug 8, 2026, 09:21 UTC | [automerge-openclaw-openclaw-118685](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118685.md) | [31249116745](https://github.com/openclaw/clawsweeper/actions/runs/31249116745) |
