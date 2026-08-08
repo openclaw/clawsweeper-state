@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T18:23:59.639Z",
+  "updated_at": "2026-08-08T18:24:06.094Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:134:5169405589:2026-08-08T14:09:26Z:clawsweeper_needs_human",
-      "comment_id": "5169405589",
-      "comment_version_key": "5169405589:2026-08-08T14:09:26Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5169405589",
-      "comment_created_at": "2026-08-03T17:05:12Z",
-      "comment_updated_at": "2026-08-08T14:09:26Z",
-      "comment_body_sha256": "21358b929348fce0d7e61d37f0654e661fa7b406bf82b6839d26b4d49930f781",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve provenance beyond the state-write cap (P2)** - After the 65th distinct state.set, this evicts the oldest trusted source object. A later unchanged state.get rebuilds its cached LLM result from JSON witho...; Review finding: [P2] Preserve provenance beyond the state-write cap — src/commands/stdlib/state.ts:12-18 - [P2] Preserve all settled charges across a resume — src/commands/stdlib/... (sha=a91734fbd18d0dcbf0590e016615525ab8951040)",
-      "expected_head_sha": "a91734fbd18d0dcbf0590e016615525ab8951040",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T14:09:56.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workflow-cost-skip-cached-replays",
-        "head_sha": "a91734fbd18d0dcbf0590e016615525ab8951040",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-08T14:10:50Z:clawsweeper_auto_repair",
       "comment_id": "5187051359",
@@ -32877,6 +32844,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/osc-progress:31:5217992134:2026-08-08T18:23:36Z:clawsweeper_needs_human",
+      "comment_id": "5217992134",
+      "comment_version_key": "5217992134:2026-08-08T18:23:36Z",
+      "comment_url": "https://github.com/steipete/osc-progress/pull/31#issuecomment-5217992134",
+      "comment_created_at": "2026-08-07T13:59:11Z",
+      "comment_updated_at": "2026-08-08T18:23:36Z",
+      "comment_body_sha256": "e5d97267c2bf40f3d616777762307513ff4edf5777c022aae239a13bd8f1e385",
+      "repo": "steipete/osc-progress",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt, Oxlint, and Rolldown select OS-specific native bindings; Ubuntu-only CI does not establish a clean frozen install and check on other contributor hosts. (sha=0d658f23ec01d59a8b8787440348f42e8586efa9)",
+      "expected_head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T18:24:06.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
+        "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
