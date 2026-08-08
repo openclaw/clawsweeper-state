@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-99277",
+  "mode": "autonomous",
+  "run_id": "31275198493",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31275198493",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-99277.md",
+  "published_at": "2026-08-08T19:54:26.552Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_pr": null,
+  "summary": "#99277 is a reproducible current-main bug: accepted Mattermost posts reach inbound dispatch without the shared acknowledgement bridge. A narrow plugin-local fix is ready to build, but this worker checkout is read-only, so no branch, tests, or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#99277",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Implement the missing bridge through the public Plugin SDK and Mattermost-owned transport; do not add configuration or core imports."
+    },
+    {
+      "target": "#15634",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Keep open independently; this repair must not absorb its product work."
+    },
+    {
+      "target": "#80426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#119124",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Produce the narrow branch plan for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Executor should apply the fix artifact on clawsweeper/issue-openclaw-openclaw-99277, validate it, then open the labeled PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

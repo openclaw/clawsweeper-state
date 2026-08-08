@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-08T19:02:31.246Z
+Generated: 2026-08-08T19:56:00.966Z
 
 ## Summary
 
@@ -9,7 +9,7 @@ Generated: 2026-08-08T19:02:31.246Z
 | open_prs | 12 |
 | ready_candidates | 0 |
 | security_hold | 0 |
-| needs_rebase | 1 |
+| needs_rebase | 2 |
 | mergeability_unknown | 0 |
 | needs_checks | 2 |
 | needs_review | 0 |
@@ -31,7 +31,7 @@ Status: report_only
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [#120652](https://github.com/openclaw/openclaw/pull/120652) | fix: suppress fast-auto status updates when progress is hidden | issue-openclaw-openclaw-97601 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
-| [#120586](https://github.com/openclaw/openclaw/pull/120586) | fix(control-ui): prioritize session provider quota window | issue-openclaw-openclaw-120557 | MERGEABLE | BEHIND | SKIPPED:33 SUCCESS:77 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
+| [#120586](https://github.com/openclaw/openclaw/pull/120586) | fix(control-ui): prioritize session provider quota window | issue-openclaw-openclaw-120557 | CONFLICTING | DIRTY | SKIPPED:33 SUCCESS:77 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#120583](https://github.com/openclaw/openclaw/pull/120583) | fix(process): disclose omitted retained output in finished polls | issue-openclaw-openclaw-120567 | MERGEABLE | BEHIND | SKIPPED:45 SUCCESS:85 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | issue-openclaw-openclaw-120356 | MERGEABLE | BEHIND | SKIPPED:52 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | issue-openclaw-openclaw-120536 | CONFLICTING | DIRTY | SKIPPED:53 SUCCESS:82 NEUTRAL:1 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
