@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T03:22:54.944Z",
-  "count": 13,
+  "generated_at": "2026-08-08T03:57:32.209Z",
+  "count": 12,
   "summary": {
-    "open_prs": 13,
+    "open_prs": 12,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 3,
     "mergeability_unknown": 0,
-    "needs_checks": 6,
+    "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 13,
+    "needs_merge_preflight": 12,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -100,7 +100,7 @@
       "head_sha": "088f41bc9713f203f4f25941408601ab002b62d5",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T02:52:29Z",
+      "updated_at": "2026-08-08T03:49:11Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -128,13 +128,19 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5220797105",
             "submitted_at": "2026-08-07T18:42:53Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5223983781",
+            "submitted_at": "2026-08-08T02:02:58Z"
           }
         ]
       },
@@ -872,89 +878,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
-    },
-    {
-      "number": 119901,
-      "title": "fix(doctor): analyze SQLite databases after offline compaction",
-      "url": "https://github.com/openclaw/openclaw/pull/119901",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119884",
-      "head_sha": "6f9eb81c559571844f0a4050ce8d2da647afd0ef",
-      "cluster_id": "issue-openclaw-openclaw-119884",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119884.md",
-      "updated_at": "2026-08-06T10:47:23Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 124,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 39,
-          "SUCCESS": 83,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 3,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119901#issuecomment-5202908645",
-            "submitted_at": "2026-08-06T09:36:15Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119901#issuecomment-5202920285",
-            "submitted_at": "2026-08-06T09:37:25Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119901#issuecomment-5202969458",
-            "submitted_at": "2026-08-06T09:42:34Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31089877241",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31089877241",
-        "cluster_id": "automerge-openclaw-openclaw-119901",
-        "published_at": "2026-08-06T10:13:54.983Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119901",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(doctor): analyze SQLite databases after offline compaction",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }
