@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T01:54:32.314Z",
+  "generated_at": "2026-08-08T02:11:45.853Z",
   "count": 13,
   "summary": {
     "open_prs": 13,
@@ -10,7 +10,7 @@
     "security_hold": 1,
     "needs_rebase": 2,
     "mergeability_unknown": 0,
-    "needs_checks": 5,
+    "needs_checks": 6,
     "needs_review": 0,
     "needs_merge_preflight": 13,
     "needs_result_backfill": 0
@@ -97,22 +97,32 @@
       "title": "fix(config): preserve manual .bak.* backups",
       "url": "https://github.com/openclaw/openclaw/pull/120298",
       "branch": "clawsweeper/issue-openclaw-openclaw-120253",
-      "head_sha": "c72cc1c29f5b2b29e3b045b6994851047d6f5469",
+      "head_sha": "088f41bc9713f203f4f25941408601ab002b62d5",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-07T18:43:39Z",
+      "updated_at": "2026-08-08T02:02:58Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 132,
+        "total": 118,
         "counts": {
-          "SKIPPED": 49,
-          "SUCCESS": 82,
+          "SUCCESS": 73,
+          "SKIPPED": 37,
+          "IN_PROGRESS": 3,
+          "FAILURE": 4,
           "NEUTRAL": 1
         },
-        "blockers": []
+        "blockers": [
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / check-prod-types:FAILURE",
+          "CI / check-lint:FAILURE",
+          "CI / check-test-types:FAILURE",
+          "CI / check-additional-extension-package-boundary:FAILURE"
+        ]
       },
       "review_threads": {
         "status": "clean",
@@ -155,9 +165,10 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-6:IN_PROGRESS; CI / checks-node-compact-small-7:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     },
     {
       "number": 120249,
