@@ -1,113 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:30:08.114Z",
+  "updated_at": "2026-08-08T21:30:10.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120512:5227006685:2026-08-08T16:29:44Z:re_review",
-      "comment_id": "5227006685",
-      "comment_version_key": "5227006685:2026-08-08T16:29:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120512#issuecomment-5227006685",
-      "comment_created_at": "2026-08-08T16:29:44Z",
-      "comment_updated_at": "2026-08-08T16:29:44Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120512,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T16:46:33.155Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sessions-resolve-short-ref",
-        "head_sha": "09ba866146bebde7ae3e87163550ee14970d1185",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120512:5225172869:2026-08-08T16:45:58Z:clawsweeper_needs_human",
-      "comment_id": "5225172869",
-      "comment_version_key": "5225172869:2026-08-08T16:45:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120512#issuecomment-5225172869",
-      "comment_created_at": "2026-08-08T07:42:17Z",
-      "comment_updated_at": "2026-08-08T16:45:58Z",
-      "comment_body_sha256": "676222a636bbc9645ec78d96eed46c2d9f2fa70eadae109ec87d2668048ed193",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Apply the client visibility filter to short-ID candidates (P1)** - The new short-ID path calls filterAndSortSessionEntries without the client-specific filter that sessions.list uses to hide incognito and non-own...; Review finding: [P1] Apply the client visibility filter to short-ID candidates — src/gateway/sessions-resolve.ts:124-146 - [high] Short-ID resolution exposes private session candi... (sha=09ba866146bebde7ae3e87163550ee14970d1185)",
-      "expected_head_sha": "09ba866146bebde7ae3e87163550ee14970d1185",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T16:46:35.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sessions-resolve-short-ref",
-        "head_sha": "09ba866146bebde7ae3e87163550ee14970d1185",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120512:5225743533:2026-08-08T10:40:25Z:re_review",
-      "comment_id": "5225743533",
-      "comment_version_key": "5225743533:2026-08-08T10:40:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120512#issuecomment-5225743533",
-      "comment_created_at": "2026-08-08T10:40:25Z",
-      "comment_updated_at": "2026-08-08T10:40:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120512,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T16:46:35.089Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120512:5225876897:2026-08-08T11:20:37Z:re_review",
       "comment_id": "5225876897",
@@ -32567,6 +32460,145 @@
         "head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194599966:2026-08-05T16:41:05Z:maintainer_approve_automerge",
+      "comment_id": "5194599966",
+      "comment_version_key": "5194599966:2026-08-05T16:41:05Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194599966",
+      "comment_created_at": "2026-08-05T16:41:05Z",
+      "comment_updated_at": "2026-08-05T16:41:05Z",
+      "comment_body_sha256": "e6d571999e51fc11207b5b105951d21003ee3c9c583117d356ec0f0e2fa2c648",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T21:30:10.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194623651:2026-08-05T16:43:22Z:maintainer_approve_automerge",
+      "comment_id": "5194623651",
+      "comment_version_key": "5194623651:2026-08-05T16:43:22Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194623651",
+      "comment_created_at": "2026-08-05T16:43:22Z",
+      "comment_updated_at": "2026-08-05T16:43:22Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T21:30:10.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194720912:2026-08-05T16:52:55Z:automerge",
+      "comment_id": "5194720912",
+      "comment_version_key": "5194720912:2026-08-05T16:52:55Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194720912",
+      "comment_created_at": "2026-08-05T16:52:55Z",
+      "comment_updated_at": "2026-08-05T16:52:55Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T21:30:10.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
       }
     }
   ]
