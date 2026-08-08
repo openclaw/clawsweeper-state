@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:36:13.725Z",
+  "updated_at": "2026-08-08T09:37:50.843Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118792:5224510647:2026-08-08T04:29:57Z:re_review",
-      "comment_id": "5224510647",
-      "comment_version_key": "5224510647:2026-08-08T04:29:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118792#issuecomment-5224510647",
-      "comment_created_at": "2026-08-08T04:29:57Z",
-      "comment_updated_at": "2026-08-08T04:29:57Z",
-      "comment_body_sha256": "758c28da7f58f735b3b6e936f60d1410aa1cd0ea6737d16d0ae37f3ece4eb02c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118792,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:42:31.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/118772-total-tokens-cumulative",
-        "head_sha": "a2fc681cae56886be6caca823a58a84d143958ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:284:5214393290:2026-08-08T04:41:51Z:clawsweeper_auto_repair",
       "comment_id": "5214393290",
@@ -33073,6 +33026,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120268:5219127474:2026-08-08T09:36:45Z:clawsweeper_needs_human",
+      "comment_id": "5219127474",
+      "comment_version_key": "5219127474:2026-08-08T09:36:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120268#issuecomment-5219127474",
+      "comment_created_at": "2026-08-07T15:46:19Z",
+      "comment_updated_at": "2026-08-08T09:36:45Z",
+      "comment_body_sha256": "fab4b2a43203370a80b4b6385dd38a9083d05f064dea7536dd7e6a43b62cd464",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120268,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied flowchart discusses inherited CI failures but does not show after-fix database migration, hydrated list behavior, or a re...; Review finding: [P1] Register the blob column as pending additive work — src/state/openclaw-agent-db-schema.ts:580 - [P1] Prevent stale blobs from crossing session generations — s... (sha=b686922d1500ab5b9bf6d452f485d06a65da81a3)",
+      "expected_head_sha": "b686922d1500ab5b9bf6d452f485d06a65da81a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:37:50.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/session-entry-blobs-side-column",
+        "head_sha": "b686922d1500ab5b9bf6d452f485d06a65da81a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
