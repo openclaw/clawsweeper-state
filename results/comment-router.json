@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T20:38:57.373Z",
+  "updated_at": "2026-08-08T20:40:10.979Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5015306154:2026-07-19T10:05:25Z:re_review",
-      "comment_id": "5015306154",
-      "comment_version_key": "5015306154:2026-07-19T10:05:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5015306154",
-      "comment_created_at": "2026-07-19T10:05:25Z",
-      "comment_updated_at": "2026-07-19T10:05:25Z",
-      "comment_body_sha256": "b274776354efeafa46e2a61efb879a72007257e563339e56cf1a9a0d0e5394bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 6 commits replayed, no conflicts). new head 4fa8e15f6a. no source behavior change in this refresh; refreshing the three-way merge and required checks against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:49:22.569Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5015923415:2026-07-19T13:36:40Z:re_review",
       "comment_id": "5015923415",
@@ -32162,6 +32135,39 @@
         "head_sha": "627838764b26573f42d03eca27ddfe6d66e476e7",
         "cluster_id": "automerge-openclaw-openclaw-120583",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120583.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113035:5078323060:2026-08-08T20:38:12Z:clawsweeper_needs_human",
+      "comment_id": "5078323060",
+      "comment_version_key": "5078323060:2026-08-08T20:38:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113035#issuecomment-5078323060",
+      "comment_created_at": "2026-07-25T11:30:38Z",
+      "comment_updated_at": "2026-08-08T20:38:12Z",
+      "comment_body_sha256": "f520832db187096d0a3169841777fd8b69908e8a4ec37f08be5249a0c281deed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113035,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body claims a localhost WebSocket exercise but has no inspectable redacted trace, logs, recording, or artifact showing the after-fix behavi... (sha=90862dce3d740b618547325b185b232b7be95245)",
+      "expected_head_sha": "90862dce3d740b618547325b185b232b7be95245",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T20:40:10.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ext-copilot-pairing-backoff",
+        "head_sha": "90862dce3d740b618547325b185b232b7be95245",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
