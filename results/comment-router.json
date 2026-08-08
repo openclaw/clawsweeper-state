@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T05:23:43.503Z",
+  "updated_at": "2026-08-08T05:23:59.265Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120119:5211756533:2026-08-07T03:09:50Z:re_review",
-      "comment_id": "5211756533",
-      "comment_version_key": "5211756533:2026-08-07T03:09:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120119#issuecomment-5211756533",
-      "comment_created_at": "2026-08-07T03:09:50Z",
-      "comment_updated_at": "2026-08-07T03:09:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120119,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T00:42:40.386Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120119:5211877977:2026-08-07T03:23:14Z:re_review",
       "comment_id": "5211877977",
@@ -32252,6 +32225,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:258:5168913744:2026-08-08T05:23:15Z:clawsweeper_needs_human",
+      "comment_id": "5168913744",
+      "comment_version_key": "5168913744:2026-08-08T05:23:15Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/258#issuecomment-5168913744",
+      "comment_created_at": "2026-08-03T16:16:16Z",
+      "comment_updated_at": "2026-08-08T05:23:15Z",
+      "comment_body_sha256": "5b187d1366d68a277ad293d4c77af84cdcf313c21578acb6f219b3da0aaed859",
+      "repo": "openclaw/crabline",
+      "issue_number": 258,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 is a major upgrade for a scheduled job that can label and close live issues and pull requests; ordinary PR checks do not observe that lifecycle behavior. (sha=58db486d21b3be511a154d213e14c61a0f8a63f1)",
+      "expected_head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T05:23:59.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-0b68e6ec17",
+        "head_sha": "58db486d21b3be511a154d213e14c61a0f8a63f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
