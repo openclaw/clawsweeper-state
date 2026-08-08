@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:45:54.180Z",
+  "updated_at": "2026-08-08T09:45:56.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97135:5224566089:2026-08-08T04:46:18Z:re_review",
-      "comment_id": "5224566089",
-      "comment_version_key": "5224566089:2026-08-08T04:46:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97135#issuecomment-5224566089",
-      "comment_created_at": "2026-08-08T04:46:18Z",
-      "comment_updated_at": "2026-08-08T04:46:18Z",
-      "comment_body_sha256": "a33d8570a00738e058c31ca96078a4a4c8191601406b0b7d4673294b97e9b7e5",
-      "source_delivery_id": "19409e20-92e4-11f1-805a-74c2514d9a8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97135,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:46:51.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/hide-recovered-failed-progress",
-        "head_sha": "b651fa67f8843d9630e919769b24f9679abdc2a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120451:5224323813:2026-08-08T04:46:16Z:clawsweeper_needs_human",
       "comment_id": "5224323813",
@@ -33122,6 +33074,39 @@
         "kind": "pull_request",
         "branch": "codex/control-ui-forget-browser-20260807",
         "head_sha": "28e98385ebd5422ee7803a5053f19514ed410fca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-08T09:45:12Z:clawsweeper_needs_human",
+      "comment_id": "5219412032",
+      "comment_version_key": "5219412032:2026-08-08T09:45:12Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
+      "comment_created_at": "2026-08-07T16:13:44Z",
+      "comment_updated_at": "2026-08-08T09:45:12Z",
+      "comment_body_sha256": "b4c7bdbf017dc8f44966ff340565538d2e38c688dc1726defce5c2a29829e17e",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes executable code in the security-scanning workflow, and the available check digest does not show a completed CodeQL Light run across all five categories on the proposed he... (sha=faacfb0c32a7bf702b04bc38b427139d8fc58cfa)",
+      "expected_head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:45:56.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-97c731b4de",
+        "head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
         "cluster_id": null,
         "job_path": null
       }
