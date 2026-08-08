@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T07:43:16.210Z",
+  "updated_at": "2026-08-08T07:43:23.255Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120148:5213892907:2026-08-08T02:46:02Z:clawsweeper_needs_human",
-      "comment_id": "5213892907",
-      "comment_version_key": "5213892907:2026-08-08T02:46:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120148#issuecomment-5213892907",
-      "comment_created_at": "2026-08-07T07:28:30Z",
-      "comment_updated_at": "2026-08-08T02:46:02Z",
-      "comment_body_sha256": "2b86bfd966f4b6e264218f8c063254eb759afb5c9f128d6a77705c2a30c946c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120148,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hosted exact-head CI is still in progress; merge should wait for the required checks to complete on the reviewed head. (sha=8c6565d1e60ff486e3bf49810e3650f84f82fd18)",
-      "expected_head_sha": "8c6565d1e60ff486e3bf49810e3650f84f82fd18",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T02:46:49.370Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-fallback-empty-completion-120132",
-        "head_sha": "8c6565d1e60ff486e3bf49810e3650f84f82fd18",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120148:5224004681:2026-08-08T02:08:35Z:re_review",
       "comment_id": "5224004681",
@@ -32815,6 +32782,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T07:43:16.210Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114087:5083039829:2026-08-08T07:42:39Z:clawsweeper_needs_human",
+      "comment_id": "5083039829",
+      "comment_version_key": "5083039829:2026-08-08T07:42:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114087#issuecomment-5083039829",
+      "comment_created_at": "2026-07-26T10:13:40Z",
+      "comment_updated_at": "2026-08-08T07:42:39Z",
+      "comment_body_sha256": "802f9e1fa06d79fa393da1490d0474b1dab2d0f86ed2a77842e1321f59384b58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114087,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body says no live Business-chat round trip was captured and contains no inspectable redacted after-fix artifact. After adding proof, upd...; Review finding: [P1] Scope Business routes by configured Telegram account — extensions/telegram/src/business-connection-store.ts:163-165 - [P1] Fail closed when the Business conne... (sha=473688fc40815afc66cb24181aca484afc7999d1)",
+      "expected_head_sha": "473688fc40815afc66cb24181aca484afc7999d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T07:43:23.255Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "telegram-business-connect",
+        "head_sha": "473688fc40815afc66cb24181aca484afc7999d1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
