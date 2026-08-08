@@ -1,0 +1,96 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-97601",
+  "mode": "autonomous",
+  "run_id": "31262782095",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31262782095",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-97601.md",
+  "published_at": "2026-08-08T16:04:32.594Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/97601",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/97601",
+  "canonical_pr": null,
+  "summary": "#97601 is a narrow, reproducible existing-behavior bug on main 1e004151c618d876881740ff1fd35353a547e7c6. A new fix PR is appropriate, but this worker checkout is read-only and lacks node_modules, so no branch diff or passing focused run could be produced here.",
+  "actions": [
+    {
+      "target": "#97601",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Repair the generic delivery policy and Telegram fallback without changing fast-auto routing, diagnostic events, config, or provider behavior."
+    },
+    {
+      "target": "#79859",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Leave open for its separate maintainer product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-97601",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "The executor should create the narrow PR, install dependencies in its writable validation environment, and rerun focused proof plus the changed gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command runtime budget exhausted",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#97601",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
