@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T18:48:14.962Z",
+  "updated_at": "2026-08-08T18:48:19.962Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120569:5226146956:2026-08-08T13:50:37Z:clawsweeper_needs_human",
-      "comment_id": "5226146956",
-      "comment_version_key": "5226146956:2026-08-08T13:50:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120569#issuecomment-5226146956",
-      "comment_created_at": "2026-08-08T12:41:25Z",
-      "comment_updated_at": "2026-08-08T13:50:37Z",
-      "comment_body_sha256": "7252fd3818ea2c24aa4645b305ededcacb2343e1bd6a70b06df97d10e564f044",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120569,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned OpenAI SDK source/types were unavailable locally and network access could not fetch them; supplied exact-head type/CI results provide partial contract coverage. (sha=325722185315037a380d9e3fd0734c587413ff4e)",
-      "expected_head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T14:41:15.063Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120356",
-        "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
-        "cluster_id": "automerge-openclaw-openclaw-120569",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120569.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120580:5226349903:2026-08-08T13:46:05Z:clawsweeper_needs_human",
       "comment_id": "5226349903",
@@ -32386,6 +32339,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T18:48:14.962Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120647:5227580853:2026-08-08T18:47:32Z:clawsweeper_auto_repair",
+      "comment_id": "5227580853",
+      "comment_version_key": "5227580853:2026-08-08T18:47:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120647#issuecomment-5227580853",
+      "comment_created_at": "2026-08-08T18:47:32Z",
+      "comment_updated_at": "2026-08-08T18:47:32Z",
+      "comment_body_sha256": "2629a5bb79ccd8426eb74e1ceaace1bba7c49063b1a04089c82585569b649cd0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120647,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1153149e2381de8a9e6b8ff647b566569616fd34)",
+      "expected_head_sha": "1153149e2381de8a9e6b8ff647b566569616fd34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T18:48:19.962Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-reply-media-reuse",
+        "head_sha": "1153149e2381de8a9e6b8ff647b566569616fd34",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
