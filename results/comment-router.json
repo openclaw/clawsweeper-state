@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T18:52:01.728Z",
+  "updated_at": "2026-08-08T18:52:14.606Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawdinators:12:5171329325:2026-08-08T14:39:57Z:clawsweeper_auto_repair",
-      "comment_id": "5171329325",
-      "comment_version_key": "5171329325:2026-08-08T14:39:57Z",
-      "comment_url": "https://github.com/openclaw/clawdinators/pull/12#issuecomment-5171329325",
-      "comment_created_at": "2026-08-03T20:25:34Z",
-      "comment_updated_at": "2026-08-08T14:39:57Z",
-      "comment_body_sha256": "9edd7c2d16a18cbe0fe7a2e77292e5ee5ed312b811d568e1f3b9fe565fa87158",
-      "repo": "openclaw/clawdinators",
-      "issue_number": 12,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c47fea5e9b3a1d601eb8b17c4d654bb377a91d91)",
-      "expected_head_sha": "c47fea5e9b3a1d601eb8b17c4d654bb377a91d91",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T14:47:18.545Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/retire-clawdinator-fleet",
-        "head_sha": "c47fea5e9b3a1d601eb8b17c4d654bb377a91d91",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:166:5209972960:2026-08-08T14:48:07Z:clawsweeper_needs_human",
       "comment_id": "5209972960",
@@ -32273,6 +32240,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T18:52:01.728Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119680:5194578840:2026-08-08T18:51:32Z:clawsweeper_needs_human",
+      "comment_id": "5194578840",
+      "comment_version_key": "5194578840:2026-08-08T18:51:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119680#issuecomment-5194578840",
+      "comment_created_at": "2026-08-05T16:38:58Z",
+      "comment_updated_at": "2026-08-08T18:51:32Z",
+      "comment_body_sha256": "69017074e006b2de23ceb77aed7e5785d69c70fc9b8c93149c8bf43999443e86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is currently dirty against main; merging either overlapping branch without a deliberate rebase could restore the broader private-QA build step or create two competing harness b... (sha=fbc6b2691753ae93b9637b218b22f64a7828e665)",
+      "expected_head_sha": "fbc6b2691753ae93b9637b218b22f64a7828e665",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T18:52:14.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta-package-qa-harness-20260805",
+        "head_sha": "fbc6b2691753ae93b9637b218b22f64a7828e665",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
