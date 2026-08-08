@@ -2,15 +2,15 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T09:26:45.421Z",
+  "generated_at": "2026-08-08T11:31:33.557Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
     "ready_candidates": 0,
-    "security_hold": 1,
-    "needs_rebase": 1,
+    "security_hold": 0,
+    "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 4,
+    "needs_checks": 3,
     "needs_review": 0,
     "needs_merge_preflight": 10,
     "needs_result_backfill": 0
@@ -27,22 +27,22 @@
   },
   "prs": [
     {
-      "number": 120550,
-      "title": "fix(agents): preserve latest context-usage provenance",
-      "url": "https://github.com/openclaw/openclaw/pull/120550",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120536",
-      "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-      "cluster_id": "issue-openclaw-openclaw-120536",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md",
-      "updated_at": "2026-08-08T09:11:58Z",
+      "number": 120569,
+      "title": "fix(ai): mark missing OpenAI Completions usage unavailable",
+      "url": "https://github.com/openclaw/openclaw/pull/120569",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120356",
+      "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
+      "cluster_id": "issue-openclaw-openclaw-120356",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120356.md",
+      "updated_at": "2026-08-08T11:18:40Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 124,
+        "total": 125,
         "counts": {
-          "SKIPPED": 41,
+          "SKIPPED": 42,
           "SUCCESS": 82,
           "NEUTRAL": 1
         },
@@ -57,6 +57,85 @@
       "review_bots": {
         "count": 0,
         "latest": []
+      },
+      "latest_record": {
+        "run_id": "31253293896",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31253293896",
+        "cluster_id": "issue-openclaw-openclaw-120356",
+        "published_at": "2026-08-08T11:30:49.383Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120569",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(ai): mark missing OpenAI Completions usage unavailable",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
+    {
+      "number": 120550,
+      "title": "fix(agents): preserve latest context-usage provenance",
+      "url": "https://github.com/openclaw/openclaw/pull/120550",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120536",
+      "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+      "cluster_id": "issue-openclaw-openclaw-120536",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md",
+      "updated_at": "2026-08-08T11:03:14Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 136,
+        "counts": {
+          "SKIPPED": 53,
+          "SUCCESS": 82,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 4,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225569174",
+            "submitted_at": "2026-08-08T09:45:11Z"
+          },
+          {
+            "source": "comment",
+            "author": "vincentkoc",
+            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225777741",
+            "submitted_at": "2026-08-08T10:51:25Z"
+          },
+          {
+            "source": "comment",
+            "author": "vincentkoc",
+            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225814862",
+            "submitted_at": "2026-08-08T11:03:12Z"
+          }
+        ]
       },
       "latest_record": {
         "run_id": "31249008962",
@@ -81,7 +160,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -157,26 +236,56 @@
       "title": "fix(config): preserve manual .bak.* backups",
       "url": "https://github.com/openclaw/openclaw/pull/120298",
       "branch": "clawsweeper/issue-openclaw-openclaw-120253",
-      "head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
+      "head_sha": "bfef7fb6fe3584be2a896da10202e2349bf128dd",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T06:37:39Z",
+      "updated_at": "2026-08-08T11:30:34Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "merge_state_status": "BLOCKED",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 120,
+        "total": 118,
         "counts": {
-          "SUCCESS": 78,
-          "SKIPPED": 38,
-          "FAILURE": 3,
+          "SUCCESS": 47,
+          "SKIPPED": 37,
+          "IN_PROGRESS": 33,
           "NEUTRAL": 1
         },
         "blockers": [
-          "CI / checks-node-compact-small-8:FAILURE",
-          "CI / check-plugin-sdk-api-baseline:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
+          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
+          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
+          "CI / checks-node-compact-large-1:IN_PROGRESS",
+          "CI / checks-node-compact-large-2:IN_PROGRESS",
+          "CI / checks-node-compact-large-3:IN_PROGRESS",
+          "CI / checks-node-compact-large-4:IN_PROGRESS",
+          "CI / checks-node-compact-large-5:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:IN_PROGRESS",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-1:IN_PROGRESS",
+          "CI / checks-node-compact-small-10:IN_PROGRESS",
+          "CI / checks-node-compact-small-11:IN_PROGRESS",
+          "CI / checks-node-compact-small-12:IN_PROGRESS",
+          "CI / checks-node-compact-small-13:IN_PROGRESS",
+          "CI / checks-node-compact-small-2:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-4:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / checks-node-compact-small-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-9:IN_PROGRESS",
+          "CI / check-npm-lock:IN_PROGRESS",
+          "CI / check-lint:IN_PROGRESS",
+          "CI / check-test-types:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
+          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -225,8 +334,8 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-small-8:FAILURE; CI / check-plugin-sdk-api-baseline:FAILURE; CI / openclaw/ci-gate:FAILURE",
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -641,79 +750,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 120076,
-      "title": "fix(mcp): receive loopback OAuth login callbacks",
-      "url": "https://github.com/openclaw/openclaw/pull/120076",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120019",
-      "head_sha": "0c77df0530dd8d4fe469b835a6887bb4ff02cf98",
-      "cluster_id": "issue-openclaw-openclaw-120019",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
-      "updated_at": "2026-08-07T06:57:13Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": true,
-      "checks": {
-        "total": 132,
-        "counts": {
-          "CANCELLED": 1,
-          "SKIPPED": 50,
-          "SUCCESS": 80,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "ClawSweeper Dispatch / dispatch:CANCELLED"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120076#issuecomment-5210485126",
-            "submitted_at": "2026-08-07T00:43:16Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120076#issuecomment-5210502449",
-            "submitted_at": "2026-08-07T00:44:28Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31157252078",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31157252078",
-        "cluster_id": "automerge-openclaw-openclaw-120076",
-        "published_at": "2026-08-07T07:30:36.754Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120076",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#120076",
-          "candidate_fix": "#120076",
-          "reason": "Repair the editable same-repository contributor branch; no merge or close is authorized in this autofix job."
-        }
-      },
-      "blockers": [
-        "security_hold",
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "route to central security triage"
     }
   ]
 }

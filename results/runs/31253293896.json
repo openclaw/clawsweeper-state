@@ -1,0 +1,105 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120356",
+  "mode": "autonomous",
+  "run_id": "31253293896",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31253293896",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120356.md",
+  "published_at": "2026-08-08T11:30:49.383Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120356",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120356",
+  "canonical_pr": null,
+  "summary": "Current main has the reported generic OpenAI Completions accounting defect: successful streams with no usable terminal usage retain the initialized zero usage fact, so context estimation cannot engage. A narrow shared producer repair is defined, but this checkout is read-only and lacks dependencies, so no branch or validated patch could be produced here.",
+  "actions": [
+    {
+      "target": "#120356",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120356",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout and dependency installation; neither is available in this worker sandbox."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120356",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120356",
+      "candidate_fix": null,
+      "reason": "Create the narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-120356 after restoring a writable dependency-complete checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120569",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120356",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120569",
+      "commit": "325722185315037a380d9e3fd0734c587413ff4e",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120356",
+      "pr": "https://github.com/openclaw/openclaw/pull/120569",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120569",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120569",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(ai): mark missing OpenAI Completions usage unavailable",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
