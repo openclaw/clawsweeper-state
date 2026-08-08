@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:32:33.303Z",
+  "updated_at": "2026-08-08T14:32:40.370Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120501:5225497157:2026-08-08T09:22:46Z:re_review",
-      "comment_id": "5225497157",
-      "comment_version_key": "5225497157:2026-08-08T09:22:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120501#issuecomment-5225497157",
-      "comment_created_at": "2026-08-08T09:22:46Z",
-      "comment_updated_at": "2026-08-08T09:22:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120501,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T09:44:50.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-current-main-ci",
-        "head_sha": "24dad0bb5d46bde5e67b86b5c8d29d03ebd022a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120426:5225508350:2026-08-08T09:26:14Z:re_review",
       "comment_id": "5225508350",
@@ -33417,6 +33370,39 @@
         "kind": "pull_request",
         "branch": "rfc/multi-slot-memory-role-architecture",
         "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:16:5122266911:2026-08-08T14:31:48Z:clawsweeper_needs_human",
+      "comment_id": "5122266911",
+      "comment_version_key": "5122266911:2026-08-08T14:31:48Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/16#issuecomment-5122266911",
+      "comment_created_at": "2026-07-29T18:59:25Z",
+      "comment_updated_at": "2026-08-08T14:31:48Z",
+      "comment_body_sha256": "2d4729ba6c969b94174e3213b28ac190a8a6f17cff7929f5e7e4ff55377b6100",
+      "repo": "openclaw/uirouter",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The formatter and linter are executable development tools used by the baseline check, so their minor-version and lockfile binding updates could change CI or contributor validation beh... (sha=120a61adc9ea7ec28d386cb157c3823e6c07f484)",
+      "expected_head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:32:40.370Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-7776e25466",
+        "head_sha": "120a61adc9ea7ec28d386cb157c3823e6c07f484",
         "cluster_id": null,
         "job_path": null
       }
