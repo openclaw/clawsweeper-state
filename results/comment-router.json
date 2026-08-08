@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-08T00:33:51.905Z",
+  "updated_at": "2026-08-08T00:33:52.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120334:5221593116:2026-08-07T20:15:10Z:re_review",
-      "comment_id": "5221593116",
-      "comment_version_key": "5221593116:2026-08-07T20:15:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120334#issuecomment-5221593116",
-      "comment_created_at": "2026-08-07T20:15:10Z",
-      "comment_updated_at": "2026-08-07T20:15:10Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120334,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T20:49:49.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/commit-settings-link-bug-bb063e",
-        "head_sha": "725256aaea1c4ed6ff0e31f7dbcf3c56f933c61c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120285:5221671661:2026-08-07T20:24:51Z:re_review",
-      "comment_id": "5221671661",
-      "comment_version_key": "5221671661:2026-08-07T20:24:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120285#issuecomment-5221671661",
-      "comment_created_at": "2026-08-07T20:24:51Z",
-      "comment_updated_at": "2026-08-07T20:24:51Z",
-      "comment_body_sha256": "03cc46f18cfb194de1fff8397b9dd385f10c23fb17471051e978f5f2146112b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120285,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T20:49:49.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refactor-steer-admission",
-        "head_sha": "3463f375af1f6c7fbddac4d22513bbc19be0fde5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120337:5221695454:2026-08-07T20:27:45Z:re_review",
       "comment_id": "5221695454",
@@ -32050,6 +31956,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-08T00:33:01Z:clawsweeper_needs_human",
+      "comment_id": "5156335270",
+      "comment_version_key": "5156335270:2026-08-08T00:33:01Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5156335270",
+      "comment_created_at": "2026-08-02T07:51:03Z",
+      "comment_updated_at": "2026-08-08T00:33:01Z",
+      "comment_body_sha256": "44481b2d63a19b7731e4fbed1052d468698eae064a305368f89d925a2282b9b7",
+      "repo": "openclaw/lobster",
+      "issue_number": 128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing workflows that only receive schema-valid output on the historical N+2nd request will now fail at the documented N+1-call limit unless their retry setting is increased. (sha=4e1b81e60284e6250826b792281219df62f96871)",
+      "expected_head_sha": "4e1b81e60284e6250826b792281219df62f96871",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T00:33:52.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-validation-retry-off-by-one",
+        "head_sha": "4e1b81e60284e6250826b792281219df62f96871",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:128:5162671447:2026-08-03T05:31:30Z:re_review",
+      "comment_id": "5162671447",
+      "comment_version_key": "5162671447:2026-08-03T05:31:30Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5162671447",
+      "comment_created_at": "2026-08-03T05:31:30Z",
+      "comment_updated_at": "2026-08-03T05:31:30Z",
+      "comment_body_sha256": "53e3aac23ac2c3044af0d1e78158d27bb7e4c83929b740adf3af6af7a0dc97ef",
+      "repo": "openclaw/lobster",
+      "issue_number": 128,
+      "author": "Yigtwxx",
+      "author_id": 156921875,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T00:33:52.327Z",
+      "target": null
     }
   ]
 }
