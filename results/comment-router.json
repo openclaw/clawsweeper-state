@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:45:50.617Z",
+  "updated_at": "2026-08-08T10:46:02.564Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-08T04:43:56Z:clawsweeper_auto_repair",
-      "comment_id": "4416120074",
-      "comment_version_key": "4416120074:2026-08-08T04:43:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-4416120074",
-      "comment_created_at": "2026-05-10T19:19:16Z",
-      "comment_updated_at": "2026-08-08T04:43:56Z",
-      "comment_body_sha256": "8a3a684869cff02d2385b99ea12a8c2ba775421e841cb653252aca2f8d0e2c3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7170a8654069c70e9f4c000847012df2e9a312d0)",
-      "expected_head_sha": "7170a8654069c70e9f4c000847012df2e9a312d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T05:52:42.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "d06a7d802179e229508d468b85d47a17972878a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:88504:4585534718:2026-08-08T05:37:16Z:clawsweeper_auto_repair",
       "comment_id": "4585534718",
@@ -33335,6 +33302,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-08T10:43:58Z:clawsweeper_needs_human",
+      "comment_id": "5225566532",
+      "comment_version_key": "5225566532:2026-08-08T10:43:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225566532",
+      "comment_created_at": "2026-08-08T09:44:21Z",
+      "comment_updated_at": "2026-08-08T10:43:58Z",
+      "comment_body_sha256": "8f82878f57037021727d3acaffbd6ca04b764d36e10c78b68572c946329bc024",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120550,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Repository policy requires direct sibling Codex runtime/source inspection before a Codex-related merge verdict, but ../codex is unavailable in this read-only environment. (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
+      "expected_head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T10:46:02.563Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120536",
+        "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+        "cluster_id": "automerge-openclaw-openclaw-120550",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120550.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
