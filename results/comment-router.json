@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T08:31:34.305Z",
+  "updated_at": "2026-08-08T08:32:28.074Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120373:5224005419:2026-08-08T02:08:48Z:re_review",
-      "comment_id": "5224005419",
-      "comment_version_key": "5224005419:2026-08-08T02:08:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120373#issuecomment-5224005419",
-      "comment_created_at": "2026-08-08T02:08:48Z",
-      "comment_updated_at": "2026-08-08T02:08:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120373,
-      "author": "tharuntejmeta",
-      "author_id": 129321782,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T03:46:26.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "add-muse-spark-1.2",
-        "head_sha": "033fce182fe8b589b1833962b9b2e33e321f3ab8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115060:5224214003:2026-08-08T03:19:53Z:re_review",
       "comment_id": "5224214003",
@@ -33155,6 +33108,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
         "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2762:5225284094:2026-08-08T08:31:49Z:clawsweeper_auto_repair",
+      "comment_id": "5225284094",
+      "comment_version_key": "5225284094:2026-08-08T08:31:49Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2762#issuecomment-5225284094",
+      "comment_created_at": "2026-08-08T08:15:16Z",
+      "comment_updated_at": "2026-08-08T08:31:49Z",
+      "comment_body_sha256": "a27a31ce1f2eac40421eea0eab09ce6974158b7c5d34425d5eb9027bf466714f",
+      "repo": "steipete/codexbar",
+      "issue_number": 2762,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=502c04a63586ac2c297b93da784b42186008fcf8)",
+      "expected_head_sha": "502c04a63586ac2c297b93da784b42186008fcf8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T08:32:28.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/cost-store-sqlite-cutover",
+        "head_sha": "502c04a63586ac2c297b93da784b42186008fcf8",
         "cluster_id": null,
         "job_path": null
       }
