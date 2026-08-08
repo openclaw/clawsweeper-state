@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:26:39.143Z",
+  "updated_at": "2026-08-08T22:26:39.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120629:5227222033:2026-08-08T17:15:26Z:re_review",
-      "comment_id": "5227222033",
-      "comment_version_key": "5227222033:2026-08-08T17:15:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120629#issuecomment-5227222033",
-      "comment_created_at": "2026-08-08T17:15:26Z",
-      "comment_updated_at": "2026-08-08T17:15:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "bfc89ff0-934c-11f1-82a9-a37353512914",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120629,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:42:35.166Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sessions-patch-many",
-        "head_sha": "5c16ba22967214b00a243cb9051d1899f2e69564",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120632:5227327885:2026-08-08T17:42:04Z:clawsweeper_auto_repair",
       "comment_id": "5227327885",
@@ -32121,6 +32073,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/claws-onboarding-personalization-ui",
         "head_sha": "1afb9029ecaf17f9744413c61564188b468e8d3a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:379:5199606291:2026-08-08T22:26:03Z:clawsweeper_needs_human",
+      "comment_id": "5199606291",
+      "comment_version_key": "5199606291:2026-08-08T22:26:03Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/379#issuecomment-5199606291",
+      "comment_created_at": "2026-08-06T02:13:06Z",
+      "comment_updated_at": "2026-08-08T22:26:03Z",
+      "comment_body_sha256": "90a14e256d02145812503d97ff4107000b486265f0d1248058b29cc11882e332",
+      "repo": "steipete/summarize",
+      "issue_number": 379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair remains; the proof-positive clean branch needs ordinary maintainer merge review. (sha=5d5af5f0e5a259e36b1a27351764d744e65070a6)",
+      "expected_head_sha": "5d5af5f0e5a259e36b1a27351764d744e65070a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:26:39.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-native-bridge-cancel",
+        "head_sha": "5d5af5f0e5a259e36b1a27351764d744e65070a6",
         "cluster_id": null,
         "job_path": null
       }
