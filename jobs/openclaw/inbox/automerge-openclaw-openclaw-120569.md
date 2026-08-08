@@ -1,8 +1,8 @@
 ---
-repo: openclaw/mcporter
-cluster_id: automerge-openclaw-mcporter-289
+repo: openclaw/openclaw
+cluster_id: automerge-openclaw-openclaw-120569
 mode: autonomous
-repair_mode: automerge
+repair_mode: autofix
 job_intent: automerge_pr
 allowed_actions:
   - comment
@@ -16,11 +16,11 @@ require_human_for:
   - close
   - merge
 canonical:
-  - #289
+  - #120569
 candidates:
-  - #289
+  - #120569
 cluster_refs:
-  - #289
+  - #120569
 allow_instant_close: false
 allow_fix_pr: true
 allow_merge: false
@@ -29,30 +29,29 @@ allow_post_merge_close: false
 require_fix_before_close: true
 security_policy: central_security_only
 security_sensitive: false
-target_branch: clawsweeper/automerge-openclaw-mcporter-289
+target_branch: clawsweeper/automerge-openclaw-openclaw-120569
 source: pr_automerge
-requested_by: "steipete"
-requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/mcporter/pull/289#issuecomment-5226343562"
+requested_by: "clawsweeper[bot]"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/120569"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
-Maintainer opted #289 into ClawSweeper automerge.
+Maintainer opted #120569 into ClawSweeper autofix.
 
-Requested by: steipete
-Request comment: https://github.com/openclaw/mcporter/pull/289#issuecomment-5226343562
+Requested by: clawsweeper[bot]
+Request comment: https://github.com/openclaw/openclaw/pull/120569
 
 
-Source PR: https://github.com/openclaw/mcporter/pull/289
-Title: feat(chrome): add browser relay authentication v2
+Source PR: https://github.com/openclaw/openclaw/pull/120569
+Title: fix(ai): mark missing OpenAI Completions usage unavailable
 
 ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop:
 
-- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/mcporter/pull/289"]` so the Codex edit pass can make this PR merge-ready.
+- Emit a fix artifact with `repair_strategy: "repair_contributor_branch"` and `source_prs: ["https://github.com/openclaw/openclaw/pull/120569"]` so the Codex edit pass can make this PR merge-ready.
 - The edit pass should rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context when required, run the relevant validation, and keep iterating until the branch is ready or an external blocker is proven.
 - If the PR branch cannot be safely updated, emit a narrow credited replacement only when the artifact can preserve the original contributor credit; otherwise return `needs_human`.
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
-- Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
+- Final merge is disabled for autofix. Keep the PR open after a passing ClawSweeper verdict unless a maintainer explicitly changes mode.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
 
