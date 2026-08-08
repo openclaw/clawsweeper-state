@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:26:14.633Z",
+  "updated_at": "2026-08-08T22:26:33.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120649:5227267074:2026-08-08T17:26:05Z:re_review",
-      "comment_id": "5227267074",
-      "comment_version_key": "5227267074:2026-08-08T17:26:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120649#issuecomment-5227267074",
-      "comment_created_at": "2026-08-08T17:26:05Z",
-      "comment_updated_at": "2026-08-08T17:26:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120649,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr-merge-comment-url",
-        "head_sha": "82d75551a65e6a85fc442fcd7f487014f3161ea3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119511:5227278836:2026-08-08T17:29:14Z:re_review",
       "comment_id": "5227278836",
@@ -32163,6 +32116,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/audit-primitive-docs",
         "head_sha": "b29f5c5a3ffbc496bd5f0903b4aeb2fec2e012da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/tokentally:34:5213735091:2026-08-08T22:25:48Z:clawsweeper_needs_human",
+      "comment_id": "5213735091",
+      "comment_version_key": "5213735091:2026-08-08T22:25:48Z",
+      "comment_url": "https://github.com/steipete/tokentally/pull/34#issuecomment-5213735091",
+      "comment_created_at": "2026-08-07T07:10:21Z",
+      "comment_updated_at": "2026-08-08T22:25:48Z",
+      "comment_body_sha256": "b50a354ecbbe37586410454e311435f796a535a4688b0b222fa46269ed0913e6",
+      "repo": "steipete/tokentally",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The successful Ubuntu/Node 24 check does not establish clean-install behavior for the updated native formatter and linter binaries on other contributor platforms. (sha=1e1d5c610c11237e08ddd218f2aa407730fd877e)",
+      "expected_head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:26:33.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-2df6aa9551",
+        "head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
         "cluster_id": null,
         "job_path": null
       }
