@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T20:40:36.592Z",
+  "updated_at": "2026-08-08T20:40:43.318Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
-      "comment_id": "5057166130",
-      "comment_version_key": "5057166130:2026-07-23T10:08:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5057166130",
-      "comment_created_at": "2026-07-23T10:08:25Z",
-      "comment_updated_at": "2026-07-23T10:08:25Z",
-      "comment_body_sha256": "dda4098b018fa52157ac153235755207126f16e6b33d4ef033c6c7b31eed9477",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head d477eb9333. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:49:22.569Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
       "comment_id": "5060665917",
@@ -32193,6 +32166,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T20:40:36.592Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114087:5083039829:2026-08-08T20:39:19Z:clawsweeper_needs_human",
+      "comment_id": "5083039829",
+      "comment_version_key": "5083039829:2026-08-08T20:39:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114087#issuecomment-5083039829",
+      "comment_created_at": "2026-07-26T10:13:40Z",
+      "comment_updated_at": "2026-08-08T20:39:19Z",
+      "comment_body_sha256": "22350c71771e6342a3fc8eb65d8aa2bae0b818d4824fd29c487ab0dcc3e64aae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114087,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes an unsuccessful live attempt but provides no inspectable redacted artifact showing an after-fix Business-chat reply a...; Review finding: [P1] Derive Business updates’ per-chat sequential lanes — extensions/telegram/src/bot-handlers.message-events.runtime.ts:333-400 - [P1] Send pairing challenges thr... (sha=0355cdb4e13878bf4a76673bbacaaa4202fa5b08)",
+      "expected_head_sha": "0355cdb4e13878bf4a76673bbacaaa4202fa5b08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T20:40:43.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "telegram-business-connect",
+        "head_sha": "0355cdb4e13878bf4a76673bbacaaa4202fa5b08",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
