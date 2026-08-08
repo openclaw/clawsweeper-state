@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T07:47:27.361Z",
+  "updated_at": "2026-08-08T07:51:31.910Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119023:5173457078:2026-08-08T03:34:34Z:clawsweeper_auto_repair",
-      "comment_id": "5173457078",
-      "comment_version_key": "5173457078:2026-08-08T03:34:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119023#issuecomment-5173457078",
-      "comment_created_at": "2026-08-04T01:13:50Z",
-      "comment_updated_at": "2026-08-08T03:34:34Z",
-      "comment_body_sha256": "96b714f4bcf7b645d077c7e58ec519ea06f21f9abf4fe09ef885a7fccaf11991",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119023,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=21114052ebc24c73a1d95b1eb0bcd7b31ec00813)",
-      "expected_head_sha": "21114052ebc24c73a1d95b1eb0bcd7b31ec00813",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T03:39:17.805Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/slack-inherit-channel-context",
-        "head_sha": "21114052ebc24c73a1d95b1eb0bcd7b31ec00813",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:67:5160727900:2026-08-08T03:38:57Z:clawsweeper_auto_repair",
       "comment_id": "5160727900",
@@ -33071,6 +33038,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabline:262:5225202703:2026-08-08T07:50:53Z:re_review",
+      "comment_id": "5225202703",
+      "comment_version_key": "5225202703:2026-08-08T07:50:53Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/262#issuecomment-5225202703",
+      "comment_created_at": "2026-08-08T07:50:53Z",
+      "comment_updated_at": "2026-08-08T07:50:53Z",
+      "comment_body_sha256": "33ae0cf070f7bd2139ba424f029273f35f0a4c7804f824141ce6af58a2967176",
+      "source_delivery_id": "e1bee000-92fd-11f1-8ce6-d9d9a12c7dde",
+      "repo": "openclaw/crabline",
+      "issue_number": 262,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T07:51:29.651Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openclaw-bridge-contracts",
+        "head_sha": "24a5383f34d55eb5db281dd8e2572343f3297f03",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
