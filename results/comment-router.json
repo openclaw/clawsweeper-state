@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T03:40:40.958Z",
+  "updated_at": "2026-08-08T03:40:59.368Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-07T22:57:10Z:clawsweeper_needs_human",
-      "comment_id": "5194538175",
-      "comment_version_key": "5194538175:2026-08-07T22:57:10Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
-      "comment_created_at": "2026-08-05T16:34:55Z",
-      "comment_updated_at": "2026-08-07T22:57:10Z",
-      "comment_body_sha256": "c88925178bc9577be6a4298c7e5fb32d6dfe111010f5f209bd906e2327604cd3",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The package was published from the tag before this metadata commit reached main; leaving the PR unmerged keeps main at 0.3.20 and creates release-history drift. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T22:58:22.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194599966:2026-08-05T16:41:05Z:maintainer_approve_automerge",
       "comment_id": "5194599966",
@@ -32267,6 +32220,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-08T03:40:24Z:clawsweeper_auto_repair",
+      "comment_id": "5187051359",
+      "comment_version_key": "5187051359:2026-08-08T03:40:24Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3406#issuecomment-5187051359",
+      "comment_created_at": "2026-08-05T03:04:47Z",
+      "comment_updated_at": "2026-08-08T03:40:24Z",
+      "comment_body_sha256": "bb6d0ac3c9e9e74b7b71dd97787197c0c47ee3bbed124227ce43db89e8379685",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3406,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=7f5dca33cf6f53586acea3bf352f23a98829ec9c)",
+      "expected_head_sha": "7f5dca33cf6f53586acea3bf352f23a98829ec9c",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-08T03:40:59.368Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/update-skills",
+        "head_sha": "7f5dca33cf6f53586acea3bf352f23a98829ec9c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
