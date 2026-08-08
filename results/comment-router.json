@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-08T02:40:25.273Z",
+  "updated_at": "2026-08-08T02:40:25.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120369:5222929838:2026-08-07T22:43:36Z:re_review",
-      "comment_id": "5222929838",
-      "comment_version_key": "5222929838:2026-08-07T22:43:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120369#issuecomment-5222929838",
-      "comment_created_at": "2026-08-07T22:43:36Z",
-      "comment_updated_at": "2026-08-07T22:43:36Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "6e34d960-92b1-11f1-9fc0-1c07a1c21848",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120369,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T22:44:03.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/1m-context-wording-219e90",
-        "head_sha": "50b463e676d4fcb6e3b5bed0f1d0ad776990077f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120358:5222929886:2026-08-07T22:43:36Z:re_review",
-      "comment_id": "5222929886",
-      "comment_version_key": "5222929886:2026-08-07T22:43:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120358#issuecomment-5222929886",
-      "comment_created_at": "2026-08-07T22:43:36Z",
-      "comment_updated_at": "2026-08-07T22:43:36Z",
-      "comment_body_sha256": "df8d36f937f30ebbc3580542d5cc2cc88770b4a666765a45ca18ae902b7bc735",
-      "source_delivery_id": "6e40c040-92b1-11f1-8505-aece2a4a1b29",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120358,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T22:44:07.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/codex-plugin-install-prompts",
-        "head_sha": "c8d161a63df75b951abdfcee9549d678ed512938",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5222929587:2026-08-07T22:43:34Z:re_review",
       "comment_id": "5222929587",
@@ -31841,6 +31745,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119057:5173970388:2026-08-08T02:37:31Z:clawsweeper_needs_human",
+      "comment_id": "5173970388",
+      "comment_version_key": "5173970388:2026-08-08T02:37:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5173970388",
+      "comment_created_at": "2026-08-04T02:38:32Z",
+      "comment_updated_at": "2026-08-08T02:37:31Z",
+      "comment_body_sha256": "473f14b0df3dc640141758e7d78ecaf211d3c4aabda897d1862384caf8ad0540",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind delivery to host-issued target authority (P1)** - The new guidance permits an owner-returned target ID to mutate, but the bridge forwards guest arguments unchanged and the sender accepts any syntactically v...; Review finding: [P1] Bind delivery to host-issued target authority — src/agents/code-mode.ts:77-79 - [high] Guest code can substitute a valid conversation reference — src/agents/c... (sha=da9d2cd6e07b722aed7cf59059877d0c9b303e21)",
+      "expected_head_sha": "da9d2cd6e07b722aed7cf59059877d0c9b303e21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T02:40:25.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-semantic-observation-stack-20260804",
+        "head_sha": "da9d2cd6e07b722aed7cf59059877d0c9b303e21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119057:5222404225:2026-08-07T21:57:26Z:re_review",
+      "comment_id": "5222404225",
+      "comment_version_key": "5222404225:2026-08-07T21:57:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5222404225",
+      "comment_created_at": "2026-08-07T21:57:26Z",
+      "comment_updated_at": "2026-08-07T21:57:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119057,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T02:40:25.394Z",
+      "target": null
     }
   ]
 }
