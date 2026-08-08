@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:26:33.377Z",
+  "updated_at": "2026-08-08T22:26:38.333Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119511:5227278836:2026-08-08T17:29:14Z:re_review",
-      "comment_id": "5227278836",
-      "comment_version_key": "5227278836:2026-08-08T17:29:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119511#issuecomment-5227278836",
-      "comment_created_at": "2026-08-08T17:29:14Z",
-      "comment_updated_at": "2026-08-08T17:29:14Z",
-      "comment_body_sha256": "d8a059bfe2e6120739ff265a3e4d73923c024ba28a11eb7a7224ec1de11d538f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119511,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tasks-maintenance-archive-119269",
-        "head_sha": "4c04427d4f6c4d8c84a52ce9a8319a5f360975ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120583:5227284631:2026-08-08T17:30:48Z:re_review",
       "comment_id": "5227284631",
@@ -32149,6 +32102,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/dependencies-2df6aa9551",
         "head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1127:5225333909:2026-08-08T22:25:28Z:clawsweeper_auto_repair",
+      "comment_id": "5225333909",
+      "comment_version_key": "5225333909:2026-08-08T22:25:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1127#issuecomment-5225333909",
+      "comment_created_at": "2026-08-08T08:30:44Z",
+      "comment_updated_at": "2026-08-08T22:25:28Z",
+      "comment_body_sha256": "4db9874dad14ccaa11f6c4dabad47ce965b339b4e9f56f15d5bc5a81f282b589",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1127,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6e09cea138a44c64f70233404423919b7e10d356)",
+      "expected_head_sha": "6e09cea138a44c64f70233404423919b7e10d356",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:26:38.333Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-gateway-compatibility-ux",
+        "head_sha": "6e09cea138a44c64f70233404423919b7e10d356",
         "cluster_id": null,
         "job_path": null
       }
