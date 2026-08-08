@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:43:42.645Z",
+  "updated_at": "2026-08-08T19:43:43.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5226632482:2026-08-08T14:53:09Z:re_review",
-      "comment_id": "5226632482",
-      "comment_version_key": "5226632482:2026-08-08T14:53:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5226632482",
-      "comment_created_at": "2026-08-08T14:53:09Z",
-      "comment_updated_at": "2026-08-08T14:53:09Z",
-      "comment_body_sha256": "26cb08bc6a2eca72dfa1d11ed62f76dba8d17f2baaeeb3cddc7d737114275099",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:43:24.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "d73f2c35e873aec4476a888d03525811e03cce3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119527:5226638210:2026-08-08T14:54:39Z:re_review",
       "comment_id": "5226638210",
@@ -32358,6 +32311,39 @@
         "kind": "pull_request",
         "branch": "qa-laptop-qa02-c66ca2f",
         "head_sha": "cb19ef8f6239803654a36bdfcc0fe86bc40fcd14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114423:5088749957:2026-08-08T19:43:03Z:clawsweeper_needs_human",
+      "comment_id": "5088749957",
+      "comment_version_key": "5088749957:2026-08-08T19:43:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114423#issuecomment-5088749957",
+      "comment_created_at": "2026-07-27T07:56:30Z",
+      "comment_updated_at": "2026-08-08T19:43:03Z",
+      "comment_body_sha256": "3db577a84f1278bcc7c177e574447a76d5102d143735c91bcaca3d335e2de054",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A mechanical conflict resolution could silently discard newer Discord authorization, Matrix fallback, or Slack streaming and preparation regressions now on current main. (sha=1d7a91c21e9c7e20c183cd9964750f375fb4ba01)",
+      "expected_head_sha": "1d7a91c21e9c7e20c183cd9964750f375fb4ba01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:43:43.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-dedup-messaging-phase-two",
+        "head_sha": "1d7a91c21e9c7e20c183cd9964750f375fb4ba01",
         "cluster_id": null,
         "job_path": null
       }
