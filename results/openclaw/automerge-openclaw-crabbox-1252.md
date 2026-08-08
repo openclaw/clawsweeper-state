@@ -2,12 +2,12 @@
 repo: "openclaw/crabbox"
 cluster_id: "automerge-openclaw-crabbox-1252"
 mode: "autonomous"
-run_id: "31247880268"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31247880268"
+run_id: "31248338546"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31248338546"
 head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-08T08:27:33.973Z"
+published_at: "2026-08-08T08:43:08.616Z"
 canonical: "#1252"
 canonical_issue: null
 canonical_pr: "#1252"
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/crabbox
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31247880268](https://github.com/openclaw/clawsweeper/actions/runs/31247880268)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31248338546](https://github.com/openclaw/clawsweeper/actions/runs/31248338546)
 
 Workflow conclusion: success
 
