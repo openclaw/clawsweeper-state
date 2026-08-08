@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T05:13:01.356Z",
+  "generated_at": "2026-08-08T05:20:34.642Z",
   "count": 12,
   "summary": {
     "open_prs": 12,
@@ -97,28 +97,29 @@
       "title": "fix(config): preserve manual .bak.* backups",
       "url": "https://github.com/openclaw/openclaw/pull/120298",
       "branch": "clawsweeper/issue-openclaw-openclaw-120253",
-      "head_sha": "088f41bc9713f203f4f25941408601ab002b62d5",
+      "head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T03:49:11Z",
+      "updated_at": "2026-08-08T05:18:31Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 126,
+        "total": 51,
         "counts": {
-          "SKIPPED": 44,
-          "SUCCESS": 76,
-          "FAILURE": 5,
+          "IN_PROGRESS": 6,
+          "SUCCESS": 20,
+          "SKIPPED": 24,
           "NEUTRAL": 1
         },
         "blockers": [
-          "CI / check-prod-types:FAILURE",
-          "CI / check-lint:FAILURE",
-          "CI / check-test-types:FAILURE",
-          "CI / check-additional-extension-package-boundary:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
+          "CI / preflight:IN_PROGRESS",
+          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
+          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
+          "CI / security-fast:IN_PROGRESS",
+          "CodeQL Critical Quality / Critical Quality (config-boundary):IN_PROGRESS"
         ]
       },
       "review_threads": {
@@ -168,7 +169,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / check-prod-types:FAILURE; CI / check-lint:FAILURE; CI / check-test-types:FAILURE",
+        "needs_checks:CI / preflight:IN_PROGRESS; iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS; CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
