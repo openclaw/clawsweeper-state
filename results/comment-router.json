@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:39:57.941Z",
+  "updated_at": "2026-08-08T17:40:00.005Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120434:5226251897:2026-08-08T13:11:59Z:re_review",
-      "comment_id": "5226251897",
-      "comment_version_key": "5226251897:2026-08-08T13:11:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120434#issuecomment-5226251897",
-      "comment_created_at": "2026-08-08T13:11:59Z",
-      "comment_updated_at": "2026-08-08T13:11:59Z",
-      "comment_body_sha256": "4a105072bdd13b695ef5000f37edf62500f0af87a95ea11c6e89662cb3d6fa2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120434,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the restore-race p2 is fixed on head e8755b9ce60c5f49a17b84df391cca92fb97400d, and by design rather than another guard: the run-end outcome now persists atomically inside remove()'s finalization update, so no post-finalize write path exists at all; every retained/failed write is live-row conditional. a generation-lifecycle regression (remove → restore → dirty retain supersedes) covers the interleaving. ci green on this exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:42:19.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/worktree-cleanup-outcome",
-        "head_sha": "e8755b9ce60c5f49a17b84df391cca92fb97400d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120559:5226252785:2026-08-08T13:12:14Z:re_review",
       "comment_id": "5226252785",
@@ -32657,6 +32610,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T17:39:57.941Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113739:5079451505:2026-08-08T17:39:23Z:clawsweeper_auto_repair",
+      "comment_id": "5079451505",
+      "comment_version_key": "5079451505:2026-08-08T17:39:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113739#issuecomment-5079451505",
+      "comment_created_at": "2026-07-25T17:19:08Z",
+      "comment_updated_at": "2026-08-08T17:39:23Z",
+      "comment_body_sha256": "1ac822ef645cd2c9110f00906c88f86f490b22c48a04de9a2b320b0cf8864cd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113739,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ebdcae171d69ff0f4712258882a14263b183f45f)",
+      "expected_head_sha": "ebdcae171d69ff0f4712258882a14263b183f45f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T17:40:00.005Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/realtime-dtmf-priority",
+        "head_sha": "ebdcae171d69ff0f4712258882a14263b183f45f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
