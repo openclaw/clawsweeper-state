@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:40:19.761Z",
+  "updated_at": "2026-08-08T21:40:29.008Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120625:5226928247:2026-08-08T16:09:26Z:re_review",
-      "comment_id": "5226928247",
-      "comment_version_key": "5226928247:2026-08-08T16:09:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120625#issuecomment-5226928247",
-      "comment_created_at": "2026-08-08T16:09:26Z",
-      "comment_updated_at": "2026-08-08T16:09:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120625,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T16:49:45.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-route-changed-scope-family",
-        "head_sha": "879889f034ec5b2e4711682efc06f3ef0758dc2a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120625:5227081277:2026-08-08T16:49:11Z:clawsweeper_needs_human",
       "comment_id": "5227081277",
@@ -32381,6 +32334,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-launchd-cutover-safety",
         "head_sha": "faa951bb593c7b2d78b0eab39684cc521e0b8ca4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:121:4989218136:2026-08-08T21:28:27Z:clawsweeper_needs_human",
+      "comment_id": "4989218136",
+      "comment_version_key": "4989218136:2026-08-08T21:28:27Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/121#issuecomment-4989218136",
+      "comment_created_at": "2026-07-16T07:17:43Z",
+      "comment_updated_at": "2026-08-08T21:28:27Z",
+      "comment_body_sha256": "9c37f04e4fe08dfb1159f68184f06cac5d81e3429a8b57a8adbb4ff05085d3e1",
+      "repo": "openclaw/lobster",
+      "issue_number": 121,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR is still a draft; despite its clean merge state, it needs an intentional ready-for-review decision before it can be merged. (sha=cac7c09a70f98bd410923679fbd48982d1a0d025)",
+      "expected_head_sha": "cac7c09a70f98bd410923679fbd48982d1a0d025",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T21:40:29.008Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/where-command-coverage",
+        "head_sha": "cac7c09a70f98bd410923679fbd48982d1a0d025",
         "cluster_id": null,
         "job_path": null
       }
