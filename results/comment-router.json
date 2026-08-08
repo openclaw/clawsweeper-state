@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T23:42:41.477Z",
+  "updated_at": "2026-08-08T23:42:50.087Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120677:5227755036:2026-08-08T19:32:24Z:re_review",
-      "comment_id": "5227755036",
-      "comment_version_key": "5227755036:2026-08-08T19:32:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120677#issuecomment-5227755036",
-      "comment_created_at": "2026-08-08T19:32:24Z",
-      "comment_updated_at": "2026-08-08T19:32:24Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120677,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T19:33:33.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-clawhub-upgrade-fixture",
-        "head_sha": "3b758504a6d81cf355f41ba16e7e0da1a90c870d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:71:5209990860:2026-08-08T19:33:02Z:clawsweeper_needs_human",
       "comment_id": "5209990860",
@@ -32374,6 +32327,39 @@
         "kind": "pull_request",
         "branch": "fix/mattermost-thread-attachments",
         "head_sha": "3bdb74d85b6663a78fa494bac2dc59952816b64b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120727:5228561248:2026-08-08T23:42:19Z:clawsweeper_needs_human",
+      "comment_id": "5228561248",
+      "comment_version_key": "5228561248:2026-08-08T23:42:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120727#issuecomment-5228561248",
+      "comment_created_at": "2026-08-08T22:46:37Z",
+      "comment_updated_at": "2026-08-08T23:42:19Z",
+      "comment_body_sha256": "b9f045e1af5115e83aaa32d1e4c67b49ce21173ce6eca3ad9be905e7a481eb3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Enforce view-only leases at the RFB boundary (P1)** - control:false is only recorded for observer bookkeeping; every binary client frame is still forwarded at line 141. The adjacent test mints that exact token a...; Review finding: [P1] Enforce view-only leases at the RFB boundary — src/gateway/worker-environments/desktop-observe.ts:107-142 - [P2] Fence desktop teardown with the owner epoch —... (sha=10fa73bd6fb99ca61a9739733dc1dadf69863b01)",
+      "expected_head_sha": "10fa73bd6fb99ca61a9739733dc1dadf69863b01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T23:42:50.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vibrant-dirac-0159a5",
+        "head_sha": "10fa73bd6fb99ca61a9739733dc1dadf69863b01",
         "cluster_id": null,
         "job_path": null
       }
