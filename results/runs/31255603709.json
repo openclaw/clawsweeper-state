@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-97287",
+  "mode": "autonomous",
+  "run_id": "31255603709",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31255603709",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-97287.md",
+  "published_at": "2026-08-08T11:52:27.045Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/97287",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/97287",
+  "canonical_pr": null,
+  "summary": "#97287 is a confirmed plugin-local Feishu delivery bug on main 90acd2bc. The current checkout is read-only and has no installed @larksuiteoapi/node-sdk@1.71.1 source/types, so the required cache-owner contract cannot be verified and no safe implementation or validation can run here.",
+  "actions": [
+    {
+      "target": "#97287",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#97287",
+      "candidate_fix": null,
+      "reason": "Blocked only on the required dependency-contract inspection and writable execution environment; the issue remains open and canonical."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-97287",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#97287",
+      "candidate_fix": null,
+      "reason": "Create the narrow PR only after an executor with dependency source access verifies the SDK cache contract and can write, test, and review the branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#97287",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T11:31:33.557Z",
+  "generated_at": "2026-08-08T11:53:29.798Z",
   "count": 10,
   "summary": {
     "open_prs": 10,
@@ -10,7 +10,7 @@
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 3,
+    "needs_checks": 2,
     "needs_review": 0,
     "needs_merge_preflight": 10,
     "needs_result_backfill": 0
@@ -34,9 +34,9 @@
       "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
       "cluster_id": "issue-openclaw-openclaw-120356",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120356.md",
-      "updated_at": "2026-08-08T11:18:40Z",
+      "updated_at": "2026-08-08T11:43:48Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -81,7 +81,7 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
@@ -94,7 +94,7 @@
       "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
       "cluster_id": "issue-openclaw-openclaw-120536",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md",
-      "updated_at": "2026-08-08T11:03:14Z",
+      "updated_at": "2026-08-08T11:44:53Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -239,54 +239,19 @@
       "head_sha": "bfef7fb6fe3584be2a896da10202e2349bf128dd",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T11:30:34Z",
+      "updated_at": "2026-08-08T11:44:18Z",
       "mergeable": "MERGEABLE",
-      "merge_state_status": "BLOCKED",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 118,
+        "total": 120,
         "counts": {
-          "SUCCESS": 47,
-          "SKIPPED": 37,
-          "IN_PROGRESS": 33,
+          "SUCCESS": 81,
+          "SKIPPED": 38,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CI / build-artifacts:IN_PROGRESS",
-          "CI / QA Smoke CI (profile 1/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 3/4):IN_PROGRESS",
-          "CI / QA Smoke CI (profile 4/4):IN_PROGRESS",
-          "CI / checks-fast-contracts-channels-a:IN_PROGRESS",
-          "CI / checks-node-compact-large-1:IN_PROGRESS",
-          "CI / checks-node-compact-large-2:IN_PROGRESS",
-          "CI / checks-node-compact-large-3:IN_PROGRESS",
-          "CI / checks-node-compact-large-4:IN_PROGRESS",
-          "CI / checks-node-compact-large-5:IN_PROGRESS",
-          "CI / checks-node-compact-large-6:IN_PROGRESS",
-          "CI / checks-node-compact-large-7:IN_PROGRESS",
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-1:IN_PROGRESS",
-          "CI / checks-node-compact-small-10:IN_PROGRESS",
-          "CI / checks-node-compact-small-11:IN_PROGRESS",
-          "CI / checks-node-compact-small-12:IN_PROGRESS",
-          "CI / checks-node-compact-small-13:IN_PROGRESS",
-          "CI / checks-node-compact-small-2:IN_PROGRESS",
-          "CI / checks-node-compact-small-3:IN_PROGRESS",
-          "CI / checks-node-compact-small-4:IN_PROGRESS",
-          "CI / checks-node-compact-small-5:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
-          "CI / checks-node-compact-small-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-9:IN_PROGRESS",
-          "CI / check-npm-lock:IN_PROGRESS",
-          "CI / check-lint:IN_PROGRESS",
-          "CI / check-test-types:IN_PROGRESS",
-          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
-          "CI / check-additional-extension-package-boundary:IN_PROGRESS",
-          "CI / check-additional-runtime-topology-architecture:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -295,7 +260,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 2,
+        "count": 3,
         "latest": [
           {
             "source": "comment",
@@ -308,6 +273,12 @@
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5223983781",
             "submitted_at": "2026-08-08T02:02:58Z"
+          },
+          {
+            "source": "comment",
+            "author": "steipete",
+            "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5225932912",
+            "submitted_at": "2026-08-08T11:38:11Z"
           }
         ]
       },
@@ -334,11 +305,10 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BLOCKED",
-        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / QA Smoke CI (profile 1/4):IN_PROGRESS; CI / QA Smoke CI (profile 2/4):IN_PROGRESS",
+        "needs_merge_state:BEHIND",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 120249,
