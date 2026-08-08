@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:34:04.628Z",
+  "updated_at": "2026-08-08T12:34:05.904Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120487:5225019103:2026-08-08T06:56:51Z:re_review",
-      "comment_id": "5225019103",
-      "comment_version_key": "5225019103:2026-08-08T06:56:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120487#issuecomment-5225019103",
-      "comment_created_at": "2026-08-08T06:56:51Z",
-      "comment_updated_at": "2026-08-08T06:56:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120487,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cranky-northcutt-7d70cc",
-        "head_sha": "679a83dccd64560984ab7d1eb2b50a70710e3bc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120502:5225026782:2026-08-08T06:59:17Z:re_review",
       "comment_id": "5225026782",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "codex/provenance-clarity",
         "head_sha": "8a4b4a65d8763313cea6d7ce4d1dd44b9aa957b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1070:5225273630:2026-08-08T12:32:42Z:clawsweeper_needs_human",
+      "comment_id": "5225273630",
+      "comment_version_key": "5225273630:2026-08-08T12:32:42Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1070#issuecomment-5225273630",
+      "comment_created_at": "2026-08-08T08:12:18Z",
+      "comment_updated_at": "2026-08-08T12:32:42Z",
+      "comment_body_sha256": "e56a347f84b65426a56e60c8fc70a21a673f8d893a177e11807d12ee39be2bd7",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1070,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Correct the proof's network-access statement (P3)** - The README says this proof makes no network call, but the companion script runs pnpm install and can invoke both npm install and pnpm add to fetch packages....; Review finding: [P3] Correct the proof's network-access statement — docs/proof/trailing-html-comment-parsing/README.md:96-97 - [low] Proof documentation omits package-registry acc... (sha=bf6d211c82d2ca84d03b367d211e56b6e781710e)",
+      "expected_head_sha": "bf6d211c82d2ca84d03b367d211e56b6e781710e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:34:05.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trailing-html-comment-parsing",
+        "head_sha": "bf6d211c82d2ca84d03b367d211e56b6e781710e",
         "cluster_id": null,
         "job_path": null
       }
