@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:26:11.268Z",
+  "updated_at": "2026-08-08T22:26:14.633Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120648:5227266925:2026-08-08T17:26:03Z:re_review",
-      "comment_id": "5227266925",
-      "comment_version_key": "5227266925:2026-08-08T17:26:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120648#issuecomment-5227266925",
-      "comment_created_at": "2026-08-08T17:26:03Z",
-      "comment_updated_at": "2026-08-08T17:26:03Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120648,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/pr-120620-final-isolation",
-        "head_sha": "495deecfa483bc6a01a233a6dd3512c0e041e80c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120649:5227267074:2026-08-08T17:26:05Z:re_review",
       "comment_id": "5227267074",
@@ -32177,6 +32130,39 @@
         "kind": "pull_request",
         "branch": "fix/trufflehog-no-update",
         "head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:66:5223104231:2026-08-08T22:25:38Z:clawsweeper_auto_repair",
+      "comment_id": "5223104231",
+      "comment_version_key": "5223104231:2026-08-08T22:25:38Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/66#issuecomment-5223104231",
+      "comment_created_at": "2026-08-07T23:13:11Z",
+      "comment_updated_at": "2026-08-08T22:25:38Z",
+      "comment_body_sha256": "91ef8703282c6bd7cbf3e60a062326597b063c18a99ad1e3404798dab5eb2a46",
+      "repo": "openclaw/carapace",
+      "issue_number": 66,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b29f5c5a3ffbc496bd5f0903b4aeb2fec2e012da)",
+      "expected_head_sha": "b29f5c5a3ffbc496bd5f0903b4aeb2fec2e012da",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:26:14.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/audit-primitive-docs",
+        "head_sha": "b29f5c5a3ffbc496bd5f0903b4aeb2fec2e012da",
         "cluster_id": null,
         "job_path": null
       }
