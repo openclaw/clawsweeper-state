@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-08T09:22:40.661Z
+Generated: 2026-08-08T09:26:45.421Z
 
 ## Summary
 
@@ -11,10 +11,10 @@ Generated: 2026-08-08T09:22:40.661Z
 | security_hold | 1 |
 | needs_rebase | 1 |
 | mergeability_unknown | 0 |
-| needs_checks | 5 |
+| needs_checks | 4 |
 | needs_review | 0 |
 | needs_merge_preflight | 10 |
-| needs_result_backfill | 1 |
+| needs_result_backfill | 0 |
 
 ## Dispatch
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | issue-openclaw-openclaw-120536 | MERGEABLE | BLOCKED | SKIPPED:40 SUCCESS:80 IN_PROGRESS:1 NEUTRAL:1; blockers:1 | needs_merge_state:BLOCKED, needs_checks:CI / checks-node-compact-small-7:IN_PROGRESS, needs_merge_preflight, needs_result_backfill | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | issue-openclaw-openclaw-120536 | MERGEABLE | BLOCKED | SKIPPED:41 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BLOCKED, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120347](https://github.com/openclaw/openclaw/pull/120347) | fix(gateway): reject missing sessions_send targets | issue-openclaw-openclaw-87336 | MERGEABLE | BEHIND | SKIPPED:52 SUCCESS:80 FAILURE:2 NEUTRAL:1; blockers:2 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-small-6:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#120298](https://github.com/openclaw/openclaw/pull/120298) | fix(config): preserve manual .bak.* backups | issue-openclaw-openclaw-120253 | MERGEABLE | BEHIND | SUCCESS:78 SKIPPED:38 FAILURE:3 NEUTRAL:1; blockers:3 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-small-8:FAILURE; CI / check-plugin-sdk-api-baseline:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | issue-openclaw-openclaw-91860 | MERGEABLE | BEHIND | SKIPPED:45 SUCCESS:89 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
