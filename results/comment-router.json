@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:46:37.688Z",
+  "updated_at": "2026-08-08T10:46:38.932Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117199:5149684910:2026-08-08T04:45:13Z:clawsweeper_auto_repair",
-      "comment_id": "5149684910",
-      "comment_version_key": "5149684910:2026-08-08T04:45:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117199#issuecomment-5149684910",
-      "comment_created_at": "2026-08-01T03:58:14Z",
-      "comment_updated_at": "2026-08-08T04:45:13Z",
-      "comment_body_sha256": "68a5912f2cad432c012c4772610866ffdf1dd7c780a80bf3bd82e51c589e4717",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117199,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c59d926f60528adf951cf253d371b5a107d33a36)",
-      "expected_head_sha": "c59d926f60528adf951cf253d371b5a107d33a36",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T05:52:42.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-qa-media-packaging",
-        "head_sha": "c59d926f60528adf951cf253d371b5a107d33a36",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118668:5166587703:2026-08-08T04:49:47Z:clawsweeper_auto_repair",
       "comment_id": "5166587703",
@@ -33331,6 +33298,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118685:5167187700:2026-08-08T10:45:49Z:clawsweeper_needs_human",
+      "comment_id": "5167187700",
+      "comment_version_key": "5167187700:2026-08-08T10:45:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118685#issuecomment-5167187700",
+      "comment_created_at": "2026-08-03T13:50:07Z",
+      "comment_updated_at": "2026-08-08T10:45:49Z",
+      "comment_body_sha256": "9dce60b58e673e138c3e1aa8c35a78f066193fcbd8992c81000de5c2a065950d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118685,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent upstream Codex source inspection could not be completed because the sibling checkout is absent and DNS prevented cloning; the PR’s claim that the upstream protocol has no... (sha=8dca4c1f1af24cf961921f345b282d97e14680a7)",
+      "expected_head_sha": "8dca4c1f1af24cf961921f345b282d97e14680a7",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T10:46:38.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118673",
+        "head_sha": "8dca4c1f1af24cf961921f345b282d97e14680a7",
+        "cluster_id": "automerge-openclaw-openclaw-118685",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118685.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
