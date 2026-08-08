@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:14:32.126Z",
+  "updated_at": "2026-08-08T22:14:39.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120350:5226948486:2026-08-08T16:14:43Z:re_review",
-      "comment_id": "5226948486",
-      "comment_version_key": "5226948486:2026-08-08T16:14:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120350#issuecomment-5226948486",
-      "comment_created_at": "2026-08-08T16:14:43Z",
-      "comment_updated_at": "2026-08-08T16:14:43Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120350,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/loc5-leafhelpers-3c8e",
-        "head_sha": "8a12ab4a79d8ad2a0c628237fe0bc329446db574",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120546:5226955906:2026-08-08T16:16:40Z:re_review",
       "comment_id": "5226955906",
@@ -32406,6 +32359,39 @@
         "kind": "pull_request",
         "branch": "rfc/multi-slot-memory-role-architecture",
         "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:18:4749527613:2026-08-08T22:14:00Z:clawsweeper_auto_repair",
+      "comment_id": "4749527613",
+      "comment_version_key": "4749527613:2026-08-08T22:14:00Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/18#issuecomment-4749527613",
+      "comment_created_at": "2026-06-19T07:43:51Z",
+      "comment_updated_at": "2026-08-08T22:14:00Z",
+      "comment_body_sha256": "9e99f20a99cf96375edd6ef5bd285c7e1a9949cdcddba48c7498db7ed834c8eb",
+      "repo": "openclaw/rfcs",
+      "issue_number": 18,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=02df4b53ab1402f97d7072420aae986262ea1b1a)",
+      "expected_head_sha": "02df4b53ab1402f97d7072420aae986262ea1b1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:14:39.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/model-harness-profiles",
+        "head_sha": "02df4b53ab1402f97d7072420aae986262ea1b1a",
         "cluster_id": null,
         "job_path": null
       }
