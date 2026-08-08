@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:58:10.956Z",
+  "updated_at": "2026-08-08T14:58:19.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120511:5225620386:2026-08-08T10:01:47Z:re_review",
-      "comment_id": "5225620386",
-      "comment_version_key": "5225620386:2026-08-08T10:01:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120511#issuecomment-5225620386",
-      "comment_created_at": "2026-08-08T10:01:47Z",
-      "comment_updated_at": "2026-08-08T10:01:47Z",
-      "comment_body_sha256": "77cf0ffb78527d07916792babbfab6af6712aa2175ce1f95174c97ccd61866e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120511,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:54.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/angry-noyce-4a4776",
-        "head_sha": "4fba0300c66be8ce378fde437ab4f957c263c67e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120556:5225635208:2026-08-08T10:06:29Z:re_review",
       "comment_id": "5225635208",
@@ -33284,6 +33237,39 @@
         "kind": "pull_request",
         "branch": "fix/eventkit-fetch-timeout",
         "head_sha": "42098a0e0e190c1966abcd01f3ead4bc5a50f59b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:31:4599109781:2026-08-08T14:57:39Z:clawsweeper_auto_repair",
+      "comment_id": "4599109781",
+      "comment_version_key": "4599109781:2026-08-08T14:57:39Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/31#issuecomment-4599109781",
+      "comment_created_at": "2026-06-02T05:55:04Z",
+      "comment_updated_at": "2026-08-08T14:57:39Z",
+      "comment_body_sha256": "9c3746de57a0aa68f476996276a2a8a5203aa625f13155e052bc3025e09684c5",
+      "repo": "openclaw/shellbench",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=140c17c30175d6e469e7ad6844cb9c6d49343056)",
+      "expected_head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:58:19.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/spatio-temporal-dynamics-v2",
+        "head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
         "cluster_id": null,
         "job_path": null
       }
