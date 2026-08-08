@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:42:40.283Z",
+  "updated_at": "2026-08-08T09:42:44.677Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120446:5224558354:2026-08-08T04:44:03Z:clawsweeper_needs_human",
-      "comment_id": "5224558354",
-      "comment_version_key": "5224558354:2026-08-08T04:44:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120446#issuecomment-5224558354",
-      "comment_created_at": "2026-08-08T04:44:03Z",
-      "comment_updated_at": "2026-08-08T04:44:03Z",
-      "comment_body_sha256": "624cd004643a5b3c00a6b8136461d01b56e2d6e810232337a8e3f765148cb6f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120446,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is 15 commits behind main; although main has not changed its touched logging files, rebase or exact-head refresh is needed before merge. The latest ClawSweeper comment’s ra... (sha=226bac513de6f3dd0410567de078ce543ce08336)",
-      "expected_head_sha": "226bac513de6f3dd0410567de078ce543ce08336",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T04:44:46.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/logging-diagnostics-strict-integer",
-        "head_sha": "226bac513de6f3dd0410567de078ce543ce08336",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120463:5224558514:2026-08-08T04:44:06Z:clawsweeper_auto_repair",
       "comment_id": "5224558514",
@@ -33061,6 +33028,54 @@
       "status": "skipped",
       "processed_at": "2026-08-08T09:42:40.283Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120358:5225559714:2026-08-08T09:42:08Z:re_review",
+      "comment_id": "5225559714",
+      "comment_version_key": "5225559714:2026-08-08T09:42:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120358#issuecomment-5225559714",
+      "comment_created_at": "2026-08-08T09:42:08Z",
+      "comment_updated_at": "2026-08-08T09:42:08Z",
+      "comment_body_sha256": "88e74a1b346223f9fb41d533ccbdbb03da33bf7aa13a342209664bb3bed95670",
+      "source_delivery_id": "6c85ec10-930d-11f1-8967-c27fe626901e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120358,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T09:42:42.632Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-plugin-install-prompts",
+        "head_sha": "560b19b8ffff389863a009467cf06dbcbdc0314e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
