@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T16:40:51.810Z",
+  "updated_at": "2026-08-08T16:40:57.145Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/nix-openclaw:103:4643476928:2026-06-07T17:59:48Z:re_review",
-      "comment_id": "4643476928",
-      "comment_version_key": "4643476928:2026-06-07T17:59:48Z",
-      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/103#issuecomment-4643476928",
-      "comment_created_at": "2026-06-07T17:59:48Z",
-      "comment_updated_at": "2026-06-07T17:59:48Z",
-      "comment_body_sha256": "c75c76b4d68d36cac74f7750f79c7e74528a1ecaca84670cdd1b253349185697",
-      "repo": "openclaw/nix-openclaw",
-      "issue_number": 103,
-      "author": "joshp123",
-      "author_id": 1497361,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T11:53:44.423Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/nix-openclaw:103:4643641098:2026-06-07T18:34:48Z:re_review",
       "comment_id": "4643641098",
@@ -33323,6 +33296,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120637:5227047725:2026-08-08T16:40:23Z:clawsweeper_needs_human",
+      "comment_id": "5227047725",
+      "comment_version_key": "5227047725:2026-08-08T16:40:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120637#issuecomment-5227047725",
+      "comment_created_at": "2026-08-08T16:40:23Z",
+      "comment_updated_at": "2026-08-08T16:40:23Z",
+      "comment_body_sha256": "9579222bca2d740b4fdd74db60431c50ce8889ef3c973b90e5e8ec9496b7285e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120637,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct Codex dependency-contract check required by repository policy cannot be completed while sibling ../codex is unavailable; this blocks an unconditional merge endorsement, not... (sha=571cd8ee0f791807e95e87e287a0b9d5e612ddb1)",
+      "expected_head_sha": "571cd8ee0f791807e95e87e287a0b9d5e612ddb1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T16:40:57.145Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/codex-completed-tool-meta-ci-20260808",
+        "head_sha": "571cd8ee0f791807e95e87e287a0b9d5e612ddb1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
