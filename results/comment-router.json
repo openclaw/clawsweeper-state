@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:44:08.506Z",
+  "updated_at": "2026-08-08T17:44:08.932Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120572:5226369567:2026-08-08T13:44:58Z:re_review",
-      "comment_id": "5226369567",
-      "comment_version_key": "5226369567:2026-08-08T13:44:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120572#issuecomment-5226369567",
-      "comment_created_at": "2026-08-08T13:44:58Z",
-      "comment_updated_at": "2026-08-08T13:44:58Z",
-      "comment_body_sha256": "45b6ff2bd3fb6f362b7b47e1d9ef52d4ec15545e25c1458df3329e1135cdae2d",
-      "source_delivery_id": "59571020-932f-11f1-911e-2613934dfbf0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120572,
-      "author": "Arata1202",
-      "author_id": 142312848,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:45:34.695Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/loop-warning-tool-result",
-        "head_sha": "eb3f7718801b3067887c8958f0d4a0c1ce5baf26",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118685:5226369979:2026-08-08T13:45:04Z:re_review",
       "comment_id": "5226369979",
@@ -32850,6 +32802,39 @@
         "kind": "pull_request",
         "branch": "test/gateway-node-compat-evidence",
         "head_sha": "e26ef9ec93be95e77299ae0373ee35ea00d75f96",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103844:4938017884:2026-08-08T17:39:55Z:clawsweeper_needs_human",
+      "comment_id": "4938017884",
+      "comment_version_key": "4938017884:2026-08-08T17:39:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103844#issuecomment-4938017884",
+      "comment_created_at": "2026-07-10T17:47:15Z",
+      "comment_updated_at": "2026-08-08T17:39:55Z",
+      "comment_body_sha256": "8bfc19e61905a8ad9dbe8aaeb0f6cca109b1a8b10533ae07dc14d293fe9b2c2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify authority confinement in the parent bridge** - The launcher enables the Codex client profile and serves a local app, but the unmerged parent owns resource-path containment, opaqu...; Review finding: [medium] Verify authority confinement in the parent bridge — extensions/codex/.mcp.json:3 (sha=6acb34ca27aaf9d33ede6393c35bc3fc4016c714)",
+      "expected_head_sha": "6acb34ca27aaf9d33ede6393c35bc3fc4016c714",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T17:44:08.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/codex-sidebar-plugin",
+        "head_sha": "6acb34ca27aaf9d33ede6393c35bc3fc4016c714",
         "cluster_id": null,
         "job_path": null
       }
