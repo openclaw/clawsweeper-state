@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:03:29.527Z",
+  "updated_at": "2026-08-08T21:06:02.598Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-08T16:38:13Z:clawsweeper_auto_repair",
-      "comment_id": "5187051359",
-      "comment_version_key": "5187051359:2026-08-08T16:38:13Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3406#issuecomment-5187051359",
-      "comment_created_at": "2026-08-05T03:04:47Z",
-      "comment_updated_at": "2026-08-08T16:38:13Z",
-      "comment_body_sha256": "fb5e75d142fba7e1fc6fc9ab88d2f6085f28c6c5ebecd8201a9e5d4d6326d63c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=da69916f9d6b29e181558f32d615fb28182daa4a)",
-      "expected_head_sha": "da69916f9d6b29e181558f32d615fb28182daa4a",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-08T16:38:51.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/update-skills",
-        "head_sha": "da69916f9d6b29e181558f32d615fb28182daa4a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:84:5213916637:2026-08-08T16:38:20Z:clawsweeper_needs_human",
       "comment_id": "5213916637",
@@ -32603,6 +32570,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2647:5228163304:2026-08-08T21:05:28Z:re_review",
+      "comment_id": "5228163304",
+      "comment_version_key": "5228163304:2026-08-08T21:05:28Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2647#issuecomment-5228163304",
+      "comment_created_at": "2026-08-08T21:05:28Z",
+      "comment_updated_at": "2026-08-08T21:05:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "e2bd3dc0-936c-11f1-8e4f-18282eb0e2cf",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2647,
+      "author": "KSEGIT",
+      "author_id": 9919062,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T21:06:00.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "copilot-ai-credits",
+        "head_sha": "b7406fb8a30722f2bea3ff22019c10bf30a703ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
