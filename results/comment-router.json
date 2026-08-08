@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:25:50.804Z",
+  "updated_at": "2026-08-08T14:26:29.496Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119457:5225405242:2026-08-08T08:53:36Z:re_review",
-      "comment_id": "5225405242",
-      "comment_version_key": "5225405242:2026-08-08T08:53:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119457#issuecomment-5225405242",
-      "comment_created_at": "2026-08-08T08:53:36Z",
-      "comment_updated_at": "2026-08-08T08:53:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119457,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T09:44:50.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-minimax-music-tee-cancel-hang",
-        "head_sha": "dca4c7aa54c4bc3b439203e4216c9eed1466cb13",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120508:5225451911:2026-08-08T09:08:54Z:re_review",
       "comment_id": "5225451911",
@@ -33487,6 +33440,39 @@
         "kind": "pull_request",
         "branch": "karkarl-seed-design-system",
         "head_sha": "d03a4ffcda603e12fc6a75bfadf731dec6e21b55",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:134:5169405589:2026-08-08T14:25:49Z:clawsweeper_needs_human",
+      "comment_id": "5169405589",
+      "comment_version_key": "5169405589:2026-08-08T14:25:49Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5169405589",
+      "comment_created_at": "2026-08-03T17:05:12Z",
+      "comment_updated_at": "2026-08-08T14:25:49Z",
+      "comment_body_sha256": "7ffdc2ebc37fac2beda654af7d8b857dbddb3caabc13067a58df244eebb94e30",
+      "repo": "openclaw/lobster",
+      "issue_number": 134,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve provenance beyond the state-write cap (P2)** - After the 65th distinct state.set, this evicts the oldest trusted source object. A later unchanged state.get rebuilds its cached LLM result from JSON witho...; Review finding: [P2] Preserve provenance beyond the state-write cap — src/commands/stdlib/state.ts:12-18 - [P2] Preserve all settled charges across a resume — src/commands/stdlib/... (sha=a91734fbd18d0dcbf0590e016615525ab8951040)",
+      "expected_head_sha": "a91734fbd18d0dcbf0590e016615525ab8951040",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:26:29.496Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workflow-cost-skip-cached-replays",
+        "head_sha": "a91734fbd18d0dcbf0590e016615525ab8951040",
         "cluster_id": null,
         "job_path": null
       }
