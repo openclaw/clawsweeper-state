@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T08:43:51.728Z",
-  "count": 9,
+  "generated_at": "2026-08-08T09:22:40.661Z",
+  "count": 10,
   "summary": {
-    "open_prs": 9,
+    "open_prs": 10,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 4,
+    "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 9,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 10,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,50 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120550,
+      "title": "fix(agents): preserve latest context-usage provenance",
+      "url": "https://github.com/openclaw/openclaw/pull/120550",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120536",
+      "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+      "cluster_id": "issue-openclaw-openclaw-120536",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md",
+      "updated_at": "2026-08-08T09:11:58Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BLOCKED",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 122,
+        "counts": {
+          "SKIPPED": 40,
+          "SUCCESS": 80,
+          "IN_PROGRESS": 1,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-small-7:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BLOCKED",
+        "needs_checks:CI / checks-node-compact-small-7:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 120347,
       "title": "fix(gateway): reject missing sessions_send targets",
