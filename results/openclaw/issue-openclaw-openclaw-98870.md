@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98870"
 mode: "autonomous"
-run_id: "31279553132"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31279553132"
+run_id: "31279971143"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31279971143"
 head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-08T21:38:15.541Z"
+published_at: "2026-08-08T22:08:47.118Z"
 canonical: "https://github.com/openclaw/openclaw/issues/98870"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/98870"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31279553132](https://github.com/openclaw/clawsweeper/actions/runs/31279553132)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31279971143](https://github.com/openclaw/clawsweeper/actions/runs/31279971143)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/98870
 
 ## Summary
 
-#98870 remains the open canonical Teams thread-context bug. Current main still performs a single Graph replies-page request; all linked pagination PRs are closed, unmerged historical work. Plan a narrow, credited replacement fix PR with complete bounded pagination, deadline propagation, chronological newest-window selection, and fail-closed reply-context degradation.
+#98870 remains the open canonical bug on main 909509a5db8d08cab840d92af1c1fd69193771ed. All linked pagination PRs are closed and unmerged; plan one narrow, credited ClawSweeper fix PR without closing or merging anything.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/98870
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98870 | fix_needed | planned | canonical | A narrow plugin-owned repair remains appropriate; merge and close actions are disallowed by the job. |
-| cluster:issue-openclaw-openclaw-98870 | build_fix_artifact | planned | canonical | Create one new credited fix PR from clawsweeper/issue-openclaw-openclaw-98870 after the bounded implementation and validation path complete. |
+| #98870 | fix_needed | planned | canonical | A bounded owner-plugin repair is required; no open writable candidate PR exists. |
+| cluster:issue-openclaw-openclaw-98870 | build_fix_artifact | planned | canonical | Create or update the designated ClawSweeper branch and PR; do not merge or close the issue. |
 
 ## Needs Human
 
