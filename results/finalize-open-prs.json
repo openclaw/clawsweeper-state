@@ -2,13 +2,13 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T02:11:45.853Z",
+  "generated_at": "2026-08-08T03:22:54.944Z",
   "count": 13,
   "summary": {
     "open_prs": 13,
     "ready_candidates": 0,
     "security_hold": 1,
-    "needs_rebase": 2,
+    "needs_rebase": 3,
     "mergeability_unknown": 0,
     "needs_checks": 6,
     "needs_review": 0,
@@ -100,28 +100,25 @@
       "head_sha": "088f41bc9713f203f4f25941408601ab002b62d5",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T02:02:58Z",
+      "updated_at": "2026-08-08T02:52:29Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 118,
+        "total": 126,
         "counts": {
-          "SUCCESS": 73,
-          "SKIPPED": 37,
-          "IN_PROGRESS": 3,
-          "FAILURE": 4,
+          "SKIPPED": 44,
+          "SUCCESS": 76,
+          "FAILURE": 5,
           "NEUTRAL": 1
         },
         "blockers": [
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-6:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS",
           "CI / check-prod-types:FAILURE",
           "CI / check-lint:FAILURE",
           "CI / check-test-types:FAILURE",
-          "CI / check-additional-extension-package-boundary:FAILURE"
+          "CI / check-additional-extension-package-boundary:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
         ]
       },
       "review_threads": {
@@ -165,7 +162,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-6:IN_PROGRESS; CI / checks-node-compact-small-7:IN_PROGRESS",
+        "needs_checks:CI / check-prod-types:FAILURE; CI / check-lint:FAILURE; CI / check-test-types:FAILURE",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
@@ -590,8 +587,8 @@
       "cluster_id": "issue-openclaw-openclaw-120019",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120019.md",
       "updated_at": "2026-08-07T06:57:13Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": true,
       "checks": {
@@ -647,7 +644,8 @@
       },
       "blockers": [
         "security_hold",
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_checks:ClawSweeper Dispatch / dispatch:CANCELLED",
         "needs_merge_preflight"
       ],

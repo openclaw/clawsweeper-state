@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120413",
+  "mode": "autonomous",
+  "run_id": "31235536037",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31235536037",
+  "head_sha": "5d279ea784c682b9d4ac7411d111eb352a90f5a6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120413.md",
+  "published_at": "2026-08-08T03:21:12.326Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120413",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120413",
+  "canonical_pr": null,
+  "summary": "Confirmed on current main 2c5214f9: config set/patch enter Doctor state migration before their normal validation/write path, allowing legacy cron repair to mutate unrelated state. A narrow CLI-routing repair is ready, but this worker checkout is read-only and lacks dependencies, so no branch or local validation could be produced here.",
+  "actions": [
+    {
+      "target": "#120413",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120413",
+      "candidate_fix": null,
+      "reason": "Open canonical bug; no candidate PR was hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120413",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120413",
+      "candidate_fix": null,
+      "reason": "Narrow non-security bug fix; no new config surface, migration, SQLite schema, or changelog edit."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120413",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120413",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the deterministic executor; this worker cannot write the branch or install dependencies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120413",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120413",
+      "candidate_fix": null,
+      "reason": "Implementation and validation must run in a writable checkout with a ready dependency install or Testbox."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
