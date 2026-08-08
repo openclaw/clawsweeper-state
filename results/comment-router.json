@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:28:55.468Z",
+  "updated_at": "2026-08-08T14:32:33.303Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116551:5225483798:2026-08-08T09:18:43Z:re_review",
-      "comment_id": "5225483798",
-      "comment_version_key": "5225483798:2026-08-08T09:18:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116551#issuecomment-5225483798",
-      "comment_created_at": "2026-08-08T09:18:43Z",
-      "comment_updated_at": "2026-08-08T09:18:43Z",
-      "comment_body_sha256": "7ee7f515a7f93decfa37477400097dca66fa09afb00e8741b50756b7ed9f7390",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116551,
-      "author": "osolmaz",
-      "author_id": 2453968,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T09:44:50.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-result-aggregate",
-        "head_sha": "e95406adc2b596695332eeb7dda69e123d73a40e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120501:5225497157:2026-08-08T09:22:46Z:re_review",
       "comment_id": "5225497157",
@@ -33431,6 +33384,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/website/npm_and_yarn-6b7f7a8c69",
         "head_sha": "3bda2f8b1b5629021c1d9a2befc60efd19041edf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:22:4756680671:2026-08-08T14:23:25Z:clawsweeper_auto_repair",
+      "comment_id": "4756680671",
+      "comment_version_key": "4756680671:2026-08-08T14:23:25Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/22#issuecomment-4756680671",
+      "comment_created_at": "2026-06-20T06:08:15Z",
+      "comment_updated_at": "2026-08-08T14:23:25Z",
+      "comment_body_sha256": "0d0c2fe2b5e26842ae1a4b299c0cb93cf6507b8d61634b10fbad387378991371",
+      "repo": "openclaw/rfcs",
+      "issue_number": 22,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=63fb092a20f8ddb426c202e4f654ba45ec28f4d2)",
+      "expected_head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:32:33.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rfc/multi-slot-memory-role-architecture",
+        "head_sha": "63fb092a20f8ddb426c202e4f654ba45ec28f4d2",
         "cluster_id": null,
         "job_path": null
       }
