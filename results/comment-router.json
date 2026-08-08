@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T13:42:40.087Z",
+  "updated_at": "2026-08-08T13:42:48.092Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119537:5225304102:2026-08-08T08:21:18Z:re_review",
-      "comment_id": "5225304102",
-      "comment_version_key": "5225304102:2026-08-08T08:21:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119537#issuecomment-5225304102",
-      "comment_created_at": "2026-08-08T08:21:18Z",
-      "comment_updated_at": "2026-08-08T08:21:18Z",
-      "comment_body_sha256": "62482777148589d13fdb547fde068f86729669929787880ad194c9f93223da55",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119537,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T08:45:15.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-06-ollama-embedding-error-redaction",
-        "head_sha": "1da96ab8598b60f5d47d8410d93dbe8204e7817f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118668:5225307887:2026-08-08T08:22:28Z:re_review",
       "comment_id": "5225307887",
@@ -33361,6 +33314,39 @@
         "kind": "pull_request",
         "branch": "fix/120488-poll-ack-exec-event",
         "head_sha": "a3bec08215e2cc33c72f7c8ce50a03bf6edcd9f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120589:5226359461:2026-08-08T13:42:08Z:clawsweeper_auto_repair",
+      "comment_id": "5226359461",
+      "comment_version_key": "5226359461:2026-08-08T13:42:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120589#issuecomment-5226359461",
+      "comment_created_at": "2026-08-08T13:42:08Z",
+      "comment_updated_at": "2026-08-08T13:42:08Z",
+      "comment_body_sha256": "7ecb95e04788c5251ebe3f5a5dc3c43ce93440edb1a9911264c203ab029f412e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce9d8f11eba813201ac345e35c122d42dee46d1a)",
+      "expected_head_sha": "ce9d8f11eba813201ac345e35c122d42dee46d1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T13:42:48.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-120306-discord-tool-progress-args",
+        "head_sha": "ce9d8f11eba813201ac345e35c122d42dee46d1a",
         "cluster_id": null,
         "job_path": null
       }
