@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T01:48:56.356Z",
+  "updated_at": "2026-08-08T01:48:58.596Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-07T22:02:53Z:clawsweeper_needs_human",
-      "comment_id": "5156313398",
-      "comment_version_key": "5156313398:2026-08-07T22:02:53Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
-      "comment_created_at": "2026-08-02T07:47:11Z",
-      "comment_updated_at": "2026-08-07T22:02:53Z",
-      "comment_body_sha256": "07425fcf8886f7af75f4b1ac373b2a5f1f09a1f24a00f0b8b64d90ba6ebdbf67",
-      "repo": "openclaw/lobster",
-      "issue_number": 126,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the filesystem identity used for configured Windows directories; drive and UNC equivalents must normalize while device namespaces such as Volume GUID paths remain untouch... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
-      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T22:19:32.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-ensure-directory-extended-path",
-        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:121:4989218136:2026-08-07T22:02:40Z:clawsweeper_needs_human",
       "comment_id": "4989218136",
@@ -32447,6 +32414,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T01:48:56.356Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113902:5081013519:2026-08-08T01:48:22Z:clawsweeper_needs_human",
+      "comment_id": "5081013519",
+      "comment_version_key": "5081013519:2026-08-08T01:48:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113902#issuecomment-5081013519",
+      "comment_created_at": "2026-07-25T23:23:48Z",
+      "comment_updated_at": "2026-08-08T01:48:22Z",
+      "comment_body_sha256": "0f03502bf364e5a207c3cdfc565f96356580c136e236da5269c4828837713558",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflict resolution must retain current main's lifecycle lease and revision-conditional rollback; taking the branch's older transaction flow would weaken concurrent plugin lifecyc... (sha=0f087dd923909affe42074b6e02a5b135a068a7a)",
+      "expected_head_sha": "0f087dd923909affe42074b6e02a5b135a068a7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T01:48:58.596Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-keep-files-recovery-d5",
+        "head_sha": "0f087dd923909affe42074b6e02a5b135a068a7a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
