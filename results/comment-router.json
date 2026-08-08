@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T00:41:36.236Z",
+  "updated_at": "2026-08-08T00:41:53.726Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:143:5209982610:2026-08-07T21:06:40Z:clawsweeper_needs_human",
-      "comment_id": "5209982610",
-      "comment_version_key": "5209982610:2026-08-07T21:06:40Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/143#issuecomment-5209982610",
-      "comment_created_at": "2026-08-06T23:37:37Z",
-      "comment_updated_at": "2026-08-07T21:06:40Z",
-      "comment_body_sha256": "5d53e3cc11f113426432c8c4184c1314c1f20b2c65f1a30ddec92400a6f1b44d",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the SQLite engine for existing local and portable archives, but no PR-head run demonstrates reopening, diagnosing, and persisting an existing Gitcrawl archive. (sha=54213d8eeb67de391ecb44f0876bcc2349283b46)",
-      "expected_head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T21:07:37.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
-        "head_sha": "54213d8eeb67de391ecb44f0876bcc2349283b46",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:245:5068815494:2026-08-07T21:06:57Z:clawsweeper_auto_repair",
       "comment_id": "5068815494",
@@ -32242,6 +32209,54 @@
       "status": "skipped",
       "processed_at": "2026-08-08T00:41:36.236Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120044:5223606560:2026-08-08T00:41:17Z:re_review",
+      "comment_id": "5223606560",
+      "comment_version_key": "5223606560:2026-08-08T00:41:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120044#issuecomment-5223606560",
+      "comment_created_at": "2026-08-08T00:41:17Z",
+      "comment_updated_at": "2026-08-08T00:41:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "de964710-92c1-11f1-94a1-f8b610e68aac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120044,
+      "author": "sasan1200",
+      "author_id": 28139727,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T00:41:51.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-request-latency",
+        "head_sha": "92f87bc9a797b5f4f45b2141913bc8f9d1f3a0db",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
