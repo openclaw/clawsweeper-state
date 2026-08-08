@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98870",
+  "mode": "autonomous",
+  "run_id": "31275233554",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31275233554",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98870.md",
+  "published_at": "2026-08-08T20:00:08.914Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98870",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98870",
+  "canonical_pr": null,
+  "summary": "#98870 remains a reproducible plugin-local bug on main 18897643699ac94bcfcbdcc9a994705ef63049d6. A narrow new fix PR is warranted, but this worker's filesystem is read-only: no branch edits or focused tests could be performed. The artifact preserves an executable, bounded repair path.",
+  "actions": [
+    {
+      "target": "#98870",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98870",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment. The deterministic executor should apply the supplied new-PR artifact on clawsweeper/issue-openclaw-openclaw-98870."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98870",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98870",
+      "candidate_fix": null,
+      "reason": "Create one narrow, credited fix PR after applying the repair contract."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98870",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98870",
+      "candidate_fix": null,
+      "reason": "Blocked pending implementation and validation in a writable executor checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
