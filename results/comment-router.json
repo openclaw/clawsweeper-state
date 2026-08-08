@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T03:47:42.945Z",
+  "updated_at": "2026-08-08T03:47:43.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120358:5223234454:2026-08-07T23:36:47Z:re_review",
-      "comment_id": "5223234454",
-      "comment_version_key": "5223234454:2026-08-07T23:36:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120358#issuecomment-5223234454",
-      "comment_created_at": "2026-08-07T23:36:47Z",
-      "comment_updated_at": "2026-08-07T23:36:47Z",
-      "comment_body_sha256": "8f878febf4ce2eff7f0f2c820f9029fd125b2ab828af456f036d71ac45463608",
-      "source_delivery_id": "dc403830-92b8-11f1-84ed-9ef28ce476e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120358,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T23:37:17.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/codex-plugin-install-prompts",
-        "head_sha": "a7eed6138c9668f930283eebb675abe3b3aec97e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120352:5223232807:2026-08-07T23:36:28Z:clawsweeper_needs_human",
       "comment_id": "5223232807",
@@ -32062,6 +32014,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T03:47:42.945Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120374:5222968591:2026-08-08T03:46:24Z:clawsweeper_needs_human",
+      "comment_id": "5222968591",
+      "comment_version_key": "5222968591:2026-08-08T03:46:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120374#issuecomment-5222968591",
+      "comment_created_at": "2026-08-07T22:48:55Z",
+      "comment_updated_at": "2026-08-08T03:46:24Z",
+      "comment_body_sha256": "4974ffd1dcd2411a1ee5069d3e4dc914027df6842e396f3b611c6a1962cd783b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes CI Smoke launch topology; the focused test is mock-based, and the exact-head profile-2 artifact plus the failed CI gate have not yet established the hosted four-launch/si... (sha=b366bdf0062f8ac978e606f1c91052c6b240e936)",
+      "expected_head_sha": "b366bdf0062f8ac978e606f1c91052c6b240e936",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T03:47:43.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-smoke-exclusive-shared-partitions-20260807",
+        "head_sha": "b366bdf0062f8ac978e606f1c91052c6b240e936",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
