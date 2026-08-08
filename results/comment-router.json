@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:44:43.888Z",
+  "updated_at": "2026-08-08T14:44:44.938Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/wacrawl:65:5225687241:2026-08-08T10:22:41Z:clawsweeper_needs_human",
-      "comment_id": "5225687241",
-      "comment_version_key": "5225687241:2026-08-08T10:22:41Z",
-      "comment_url": "https://github.com/openclaw/wacrawl/pull/65#issuecomment-5225687241",
-      "comment_created_at": "2026-08-08T10:22:41Z",
-      "comment_updated_at": "2026-08-08T10:22:41Z",
-      "comment_body_sha256": "94fba6134863225b14cb9aadf1ce74a1db1f8f02e559266a42f44978f5d9f01e",
-      "repo": "openclaw/wacrawl",
-      "issue_number": 65,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep CodeQL action revisions aligned (P1)** - This changes init to v4.37.6 but leaves analyze on v4.37.4. The supplied checks show analyze fails on this head, so do not merge a mixed-version workflow; update ana...; Review finding: [P1] Keep CodeQL action revisions aligned — .github/workflows/codeql.yml:25 - [medium] CodeQL analysis no longer completes — .github/workflows/codeql.yml:25 (sha=eb6006ad124ed7ddf44f338cc3c2ec75b801cb1a)",
-      "expected_head_sha": "eb6006ad124ed7ddf44f338cc3c2ec75b801cb1a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T10:23:26.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github/codeql-action/init-4.37.6",
-        "head_sha": "eb6006ad124ed7ddf44f338cc3c2ec75b801cb1a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:66:5223104231:2026-08-08T10:25:28Z:clawsweeper_auto_repair",
       "comment_id": "5223104231",
@@ -33341,6 +33308,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119001:5226598946:2026-08-08T14:44:11Z:re_review",
+      "comment_id": "5226598946",
+      "comment_version_key": "5226598946:2026-08-08T14:44:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5226598946",
+      "comment_created_at": "2026-08-08T14:44:11Z",
+      "comment_updated_at": "2026-08-08T14:44:11Z",
+      "comment_body_sha256": "4566f490ea66853a92dcd492c5972990df6dec24961cac483c4e762ea181afb0",
+      "source_delivery_id": "9eb914d0-9337-11f1-8f04-167bf9615c2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119001,
+      "author": "GoatInAHat",
+      "author_id": 55002508,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T14:44:42.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-native-realtime-voice",
+        "head_sha": "003fd76ad6c307082c4e369e25ab0ad6c2923ebf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89823:4612293557:2026-08-08T14:43:59Z:clawsweeper_auto_repair",
