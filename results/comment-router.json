@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T07:44:17.775Z",
+  "updated_at": "2026-08-08T07:44:29.354Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120423:5224142462:2026-08-08T02:46:16Z:clawsweeper_auto_repair",
-      "comment_id": "5224142462",
-      "comment_version_key": "5224142462:2026-08-08T02:46:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120423#issuecomment-5224142462",
-      "comment_created_at": "2026-08-08T02:46:16Z",
-      "comment_updated_at": "2026-08-08T02:46:16Z",
-      "comment_body_sha256": "79dcfbaadda33410ed09f4edac14a8370bae12338cb14411f5fbb321808f9d44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120423,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b3ec6b78b1d3d8bdbbace612237bb4c8268ef9b8)",
-      "expected_head_sha": "b3ec6b78b1d3d8bdbbace612237bb4c8268ef9b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T02:46:54.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-blocked-strand-120383",
-        "head_sha": "b3ec6b78b1d3d8bdbbace612237bb4c8268ef9b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120382:5224142429:2026-08-08T02:46:16Z:clawsweeper_auto_repair",
       "comment_id": "5224142429",
@@ -32833,6 +32800,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120514:5225178497:2026-08-08T07:43:54Z:re_review",
+      "comment_id": "5225178497",
+      "comment_version_key": "5225178497:2026-08-08T07:43:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120514#issuecomment-5225178497",
+      "comment_created_at": "2026-08-08T07:43:54Z",
+      "comment_updated_at": "2026-08-08T07:43:54Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "source_delivery_id": "e86a71e0-92fc-11f1-9fe9-6bed6018cef6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120514,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T07:44:27.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/regen-protocol-models",
+        "head_sha": "0be898b5bfeb116586e55b1ca4b7e611308b99e2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
