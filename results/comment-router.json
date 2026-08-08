@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:19:16.884Z",
+  "updated_at": "2026-08-08T22:20:54.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120575:5227162968:2026-08-08T17:08:35Z:re_review",
-      "comment_id": "5227162968",
-      "comment_version_key": "5227162968:2026-08-08T17:08:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120575#issuecomment-5227162968",
-      "comment_created_at": "2026-08-08T17:08:35Z",
-      "comment_updated_at": "2026-08-08T17:08:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120575,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/process-poll-notification-ack",
-        "head_sha": "cdd27be845ce44936c3e7e9e8062b8ce07893a29",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120457:5227231092:2026-08-08T17:17:13Z:re_review",
       "comment_id": "5227231092",
@@ -32275,6 +32228,39 @@
         "kind": "pull_request",
         "branch": "fix/290-oauth-dcr-refresh",
         "head_sha": "6df1ca1ad9cdc642a3c27bb7c8b76da79177be26",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:293:5228467109:2026-08-08T22:20:22Z:clawsweeper_needs_human",
+      "comment_id": "5228467109",
+      "comment_version_key": "5228467109:2026-08-08T22:20:22Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/293#issuecomment-5228467109",
+      "comment_created_at": "2026-08-08T22:20:22Z",
+      "comment_updated_at": "2026-08-08T22:20:22Z",
+      "comment_body_sha256": "9e37e70e1af6fca57f932c30110e69d1fa9a5c4d6dfd9b19d08b50a6630fac2c",
+      "repo": "openclaw/mcporter",
+      "issue_number": 293,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes MCPorter’s policy, rather than the SDK’s default issuer comparison, responsible for issuer validation in interactive and transport OAuth flows. (sha=ef461b1bbeaefe4fc10cd2afbdc91edb748bcf3f)",
+      "expected_head_sha": "ef461b1bbeaefe4fc10cd2afbdc91edb748bcf3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:20:54.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-origin-issuer-alias",
+        "head_sha": "ef461b1bbeaefe4fc10cd2afbdc91edb748bcf3f",
         "cluster_id": null,
         "job_path": null
       }
