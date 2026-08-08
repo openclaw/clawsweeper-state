@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120488",
+  "mode": "autonomous",
+  "run_id": "31242527292",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31242527292",
+  "head_sha": "62acb03356bbbc6799b7922d17de2a9930934890",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120488.md",
+  "published_at": "2026-08-08T07:06:32.904Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120488",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120488",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow current-main lifecycle defect: completion notification identity is discarded before terminal process poll returns, so the matching heartbeat event remains queued. A repair artifact is ready; implementation and validation are blocked in this read-only checkout because dependencies are absent and no usable remote-proof backend is available.",
+  "actions": [
+    {
+      "target": "#120488",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120488",
+      "candidate_fix": null,
+      "reason": "The report is reproducible from the current source and is a bug-only, non-security repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120488",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120488",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is warranted, but the immutable checkout prevents applying and validating it here."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120488",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120488",
+      "candidate_fix": null,
+      "reason": "Apply the attached artifact in a writable executor, run its validation commands, then open or update `clawsweeper/issue-openclaw-openclaw-120488`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex /review timed out after 113403ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120488",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}

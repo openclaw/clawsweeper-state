@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T06:31:11.949Z",
-  "count": 12,
+  "generated_at": "2026-08-08T07:06:53.392Z",
+  "count": 11,
   "summary": {
-    "open_prs": 12,
+    "open_prs": 11,
     "ready_candidates": 0,
     "security_hold": 1,
-    "needs_rebase": 3,
+    "needs_rebase": 2,
     "mergeability_unknown": 0,
     "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 12,
+    "needs_merge_preflight": 11,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -100,7 +100,7 @@
       "head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T05:52:02Z",
+      "updated_at": "2026-08-08T06:37:39Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
@@ -126,7 +126,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 3,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
@@ -139,12 +139,6 @@
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5223983781",
             "submitted_at": "2026-08-08T02:02:58Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5224692582",
-            "submitted_at": "2026-08-08T05:18:31Z"
           }
         ]
       },
@@ -806,74 +800,6 @@
           "canonical": "#119975",
           "candidate_fix": "#119975",
           "reason": "Repair the same-repository writable branch with process- and request-bound boot-owner state, then obtain exact-head review; merge remains disabled by job policy."
-        }
-      },
-      "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
-    },
-    {
-      "number": 119968,
-      "title": "fix(acp): pass configured binding owner model to runtime",
-      "url": "https://github.com/openclaw/openclaw/pull/119968",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119551",
-      "head_sha": "75ec5b0b7a01e068437c5e00db1638c1f2f79198",
-      "cluster_id": "issue-openclaw-openclaw-119551",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119551.md",
-      "updated_at": "2026-08-06T23:06:48Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 138,
-        "counts": {
-          "SKIPPED": 55,
-          "SUCCESS": 82,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119968#issuecomment-5207148439",
-            "submitted_at": "2026-08-06T15:49:41Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119968#issuecomment-5209460496",
-            "submitted_at": "2026-08-06T22:09:34Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31132517825",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31132517825",
-        "cluster_id": "automerge-openclaw-openclaw-119968",
-        "published_at": "2026-08-07T00:01:27.388Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119968",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#119968",
-          "candidate_fix": "#119968",
-          "reason": "Repair the canonical same-repo branch; do not merge or close it."
         }
       },
       "blockers": [
