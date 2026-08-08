@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T23:00:30.047Z",
+  "updated_at": "2026-08-08T23:00:43.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119768:5198618915:2026-08-08T18:45:26Z:clawsweeper_needs_human",
-      "comment_id": "5198618915",
-      "comment_version_key": "5198618915:2026-08-08T18:45:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119768#issuecomment-5198618915",
-      "comment_created_at": "2026-08-05T23:38:45Z",
-      "comment_updated_at": "2026-08-08T18:45:26Z",
-      "comment_body_sha256": "d990b6873a64dc211600419237216517aad0777ff527fe12159366bbf5b8c318",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119768,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep rosterless SDK inputs outside workspace admission (P1)** - resolveRunWorkspaceDir is the shared workspace-ownership boundary, and this change admits any caller that passes {} with the implicit/default main...; Review finding: [P1] Keep rosterless SDK inputs outside workspace admission — src/agents/workspace-run.ts:128-144 - [medium] Generic rosterless callers gain workspace admission —... (sha=056ebffc1299af539d338af41cd94ddc5a77cd19)",
-      "expected_head_sha": "056ebffc1299af539d338af41cd94ddc5a77cd19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T18:46:09.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-exec-isolated-roster-resolution",
-        "head_sha": "056ebffc1299af539d338af41cd94ddc5a77cd19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120648:5227573052:2026-08-08T18:45:32Z:clawsweeper_needs_human",
       "comment_id": "5227573052",
@@ -32297,6 +32264,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T23:00:30.047Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:494:5223616670:2026-08-08T23:00:03Z:clawsweeper_auto_repair",
+      "comment_id": "5223616670",
+      "comment_version_key": "5223616670:2026-08-08T23:00:03Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/494#issuecomment-5223616670",
+      "comment_created_at": "2026-08-08T00:43:10Z",
+      "comment_updated_at": "2026-08-08T23:00:03Z",
+      "comment_body_sha256": "2676fde42fad33a38b2a27d5988163b6944ef425f50862bebf688af59f9c6ba9",
+      "repo": "openclaw/acpx",
+      "issue_number": 494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=311294713d22fa84bd550c264c9e50b3cbad9fd5)",
+      "expected_head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-08T23:00:43.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-turn-prompt-readiness-20260807",
+        "head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
