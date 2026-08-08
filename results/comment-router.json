@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:38:40.769Z",
+  "updated_at": "2026-08-08T09:38:52.392Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113429:5075551379:2026-08-08T04:39:20Z:clawsweeper_auto_repair",
-      "comment_id": "5075551379",
-      "comment_version_key": "5075551379:2026-08-08T04:39:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113429#issuecomment-5075551379",
-      "comment_created_at": "2026-07-24T23:30:56Z",
-      "comment_updated_at": "2026-08-08T04:39:20Z",
-      "comment_body_sha256": "5c9cfa8b3e1b841628d11b42d92e46e0895a6bfda2a37983b3eebb3a7a4962fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=126aedd0a3c431fa66a2b89a4dc153143bc300cf)",
-      "expected_head_sha": "126aedd0a3c431fa66a2b89a4dc153143bc300cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T04:43:42.118Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/codex-reset-retained-session-generation",
-        "head_sha": "126aedd0a3c431fa66a2b89a4dc153143bc300cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113924:5081253217:2026-08-08T04:39:39Z:clawsweeper_auto_repair",
       "comment_id": "5081253217",
@@ -33053,6 +33020,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120470:5225546951:2026-08-08T09:38:17Z:re_review",
+      "comment_id": "5225546951",
+      "comment_version_key": "5225546951:2026-08-08T09:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120470#issuecomment-5225546951",
+      "comment_created_at": "2026-08-08T09:38:17Z",
+      "comment_updated_at": "2026-08-08T09:38:17Z",
+      "comment_body_sha256": "416df15c870ee3f0edfca39d1ae99691875e7b464ab93623f79211a5e5a5f29c",
+      "source_delivery_id": "e2e2c8c0-930c-11f1-9639-7e2bdb9168a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120470,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T09:38:50.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/steering-before-tool-calls-e3da1b",
+        "head_sha": "35420465baec553a3be80f8d0231de8c3c3c3c12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
