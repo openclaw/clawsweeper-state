@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T02:26:53.904Z",
+  "updated_at": "2026-08-08T02:35:32.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5222850379:2026-08-07T22:32:20Z:re_review",
-      "comment_id": "5222850379",
-      "comment_version_key": "5222850379:2026-08-07T22:32:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5222850379",
-      "comment_created_at": "2026-08-07T22:32:20Z",
-      "comment_updated_at": "2026-08-07T22:32:20Z",
-      "comment_body_sha256": "1080ae37bb070b86b7032ee9dfad62a9b184a45236197f653e6d7f7b11c3a034",
-      "source_delivery_id": "db08dfc0-92af-11f1-9317-16b8954df42c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T22:33:06.626Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk-settings",
-        "head_sha": "e5b7fea7aae8e0126332b3eb6f2d7f055c8dbb72",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119784:5199365650:2026-08-07T22:33:42Z:clawsweeper_auto_repair",
       "comment_id": "5199365650",
@@ -32515,6 +32467,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-native-bridge-cancel",
         "head_sha": "5d5af5f0e5a259e36b1a27351764d744e65070a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:84853:4505381513:2026-08-08T02:33:30Z:clawsweeper_needs_human",
+      "comment_id": "4505381513",
+      "comment_version_key": "4505381513:2026-08-08T02:33:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/84853#issuecomment-4505381513",
+      "comment_created_at": "2026-05-21T06:26:49Z",
+      "comment_updated_at": "2026-08-08T02:33:30Z",
+      "comment_body_sha256": "2a74de51b34d968e8ca384c9421d0de8b9956f08aab0b0460778e11d38f42a21",
+      "repo": "openclaw/openclaw",
+      "issue_number": 84853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A mechanical rebase would suppress established generic tool and command item events as well as detailed output; the replacement must preserve start and terminal lifecycle events and p... (sha=7888b7d9eafc8bc5e8fa3b58f942afbe7960bd3a)",
+      "expected_head_sha": "7888b7d9eafc8bc5e8fa3b58f942afbe7960bd3a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T02:35:32.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bug-030-gateway-cpu-yield",
+        "head_sha": "7888b7d9eafc8bc5e8fa3b58f942afbe7960bd3a",
         "cluster_id": null,
         "job_path": null
       }
