@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T13:43:10.767Z",
+  "updated_at": "2026-08-08T13:43:48.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120451:5225334682:2026-08-08T08:30:59Z:re_review",
-      "comment_id": "5225334682",
-      "comment_version_key": "5225334682:2026-08-08T08:30:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120451#issuecomment-5225334682",
-      "comment_created_at": "2026-08-08T08:30:59Z",
-      "comment_updated_at": "2026-08-08T08:30:59Z",
-      "comment_body_sha256": "5b8e06014f60ce14d495aa29772a01e4ef5f77d1993f72827e42615df959ad3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120451,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T08:45:15.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-patch-migration-120413",
-        "head_sha": "9a50ce20ae6f2f16853a6ea4af376cdf0228be30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119901:5202908645:2026-08-08T07:43:19Z:clawsweeper_needs_human",
       "comment_id": "5202908645",
@@ -33308,6 +33261,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120556:5225745464:2026-08-08T13:43:04Z:clawsweeper_needs_human",
+      "comment_id": "5225745464",
+      "comment_version_key": "5225745464:2026-08-08T13:43:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120556#issuecomment-5225745464",
+      "comment_created_at": "2026-08-08T10:41:04Z",
+      "comment_updated_at": "2026-08-08T13:43:04Z",
+      "comment_body_sha256": "b7f9cd00361bf13db371dceeb1cf3517df963bce162828558831449ca50eadd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head has no successful preparation-plus-Linux/macOS/Windows execution, so merging could leave the release gate unable to exercise the new artifact path. (sha=35d11a09c98bee15240810db88a42599754173d5)",
+      "expected_head_sha": "35d11a09c98bee15240810db88a42599754173d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T13:43:48.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/release-cross-os-companion-registry",
+        "head_sha": "35d11a09c98bee15240810db88a42599754173d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
