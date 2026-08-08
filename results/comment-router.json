@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T15:00:37.153Z",
+  "updated_at": "2026-08-08T15:08:42.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120493:5225662722:2026-08-08T10:14:49Z:re_review",
-      "comment_id": "5225662722",
-      "comment_version_key": "5225662722:2026-08-08T10:14:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120493#issuecomment-5225662722",
-      "comment_created_at": "2026-08-08T10:14:49Z",
-      "comment_updated_at": "2026-08-08T10:14:49Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120493,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:54.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/bulk-session-archive-latency-437be4",
-        "head_sha": "680039f6c0b91d3cb7dc3450a0f5f774f66b695d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120431:5225704621:2026-08-08T10:28:26Z:re_review",
       "comment_id": "5225704621",
@@ -33228,6 +33181,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github/codeql-action/analyze-4.37.6",
         "head_sha": "e357d77fd0ccb6c30259ba361bc5bd6e6f348a40",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-08T15:08:06Z:clawsweeper_needs_human",
+      "comment_id": "5219412032",
+      "comment_version_key": "5219412032:2026-08-08T15:08:06Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
+      "comment_created_at": "2026-08-07T16:13:44Z",
+      "comment_updated_at": "2026-08-08T15:08:06Z",
+      "comment_body_sha256": "d88a5b8181c38aa31024b526939ba38a4746309a85b7f0be67ba412545929109",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until CodeQL Light completes on this head, an action compatibility problem could prevent one or more of the five security profiles from initializing or uploading results. (sha=faacfb0c32a7bf702b04bc38b427139d8fc58cfa)",
+      "expected_head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T15:08:42.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-97c731b4de",
+        "head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
         "cluster_id": null,
         "job_path": null
       }
