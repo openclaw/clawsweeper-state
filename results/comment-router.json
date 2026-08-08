@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T23:42:26.210Z",
+  "updated_at": "2026-08-08T23:42:41.477Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-08T19:32:30Z:clawsweeper_needs_human",
-      "comment_id": "5194538175",
-      "comment_version_key": "5194538175:2026-08-08T19:32:30Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
-      "comment_created_at": "2026-08-05T16:34:55Z",
-      "comment_updated_at": "2026-08-08T19:32:30Z",
-      "comment_body_sha256": "571206e685fb6554c0b7113c337156486debbded5581a5eadf16f192b835954b",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging records a package version that has already been published; the release owner should confirm the linked Crabpot source/package pin and ClawHub pin are reconciled so consumers d... (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T19:33:10.772Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120677:5227755036:2026-08-08T19:32:24Z:re_review",
       "comment_id": "5227755036",
@@ -32391,6 +32344,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T23:42:26.210Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108039:4988611772:2026-08-08T23:42:03Z:clawsweeper_auto_repair",
+      "comment_id": "4988611772",
+      "comment_version_key": "4988611772:2026-08-08T23:42:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108039#issuecomment-4988611772",
+      "comment_created_at": "2026-07-16T05:44:50Z",
+      "comment_updated_at": "2026-08-08T23:42:03Z",
+      "comment_body_sha256": "06e02dd281628da32bd23042b70dd64bd704dfea105bd3cc7f05ac9209db7952",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108039,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3bdb74d85b6663a78fa494bac2dc59952816b64b)",
+      "expected_head_sha": "3bdb74d85b6663a78fa494bac2dc59952816b64b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T23:42:41.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-thread-attachments",
+        "head_sha": "3bdb74d85b6663a78fa494bac2dc59952816b64b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
