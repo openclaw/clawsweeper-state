@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:14:46.230Z",
+  "updated_at": "2026-08-08T22:14:49.811Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119267:5226986416:2026-08-08T16:24:33Z:re_review",
-      "comment_id": "5226986416",
-      "comment_version_key": "5226986416:2026-08-08T16:24:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119267#issuecomment-5226986416",
-      "comment_created_at": "2026-08-08T16:24:33Z",
-      "comment_updated_at": "2026-08-08T16:24:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119267,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/native-tool-events-origin",
-        "head_sha": "6f5608dae0865dc05a1d64c3e092bcdba94ffb1e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5226999171:2026-08-08T16:27:44Z:re_review",
       "comment_id": "5226999171",
@@ -32053,6 +32006,39 @@
       }
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-08T22:12:51Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-08T22:12:51Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-08T22:12:51Z",
+      "comment_body_sha256": "373be2ad29a949f9c7049ef89b6bfff638c4313e5d5a31ace599daf4847195c1",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the evidence policy: completed Claude Code runs that are currently excluded for an unsupported manifest mode can become eligible for native aggregation, so the benchma... (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:13:20.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:255:5168889075:2026-08-08T22:00:04Z:clawsweeper_needs_human",
       "comment_id": "5168889075",
       "comment_version_key": "5168889075:2026-08-08T22:00:04Z",
@@ -32350,14 +32336,14 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:315:5228394838:2026-08-08T22:14:17Z:clawsweeper_auto_repair",
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:315:5228394838:2026-08-08T22:14:17Z:clawsweeper_auto_repair",
       "comment_id": "5228394838",
       "comment_version_key": "5228394838:2026-08-08T22:14:17Z",
       "comment_url": "https://github.com/openclaw/Peekaboo/pull/315#issuecomment-5228394838",
       "comment_created_at": "2026-08-08T21:59:52Z",
       "comment_updated_at": "2026-08-08T22:14:17Z",
       "comment_body_sha256": "a3699cbfe221ed4503be0dfeee0139cf514b37c28fe00401951febe1831890de",
-      "repo": "openclaw/peekaboo",
+      "repo": "openclaw/Peekaboo",
       "issue_number": 315,
       "author": "clawsweeper[bot]",
       "author_id": 274271284,
@@ -32373,14 +32359,15 @@
       "expected_head_sha": "93d8d9f7e829d8a295300061f963156d38a527f0",
       "finding_id": "review-feedback",
       "status": "skipped",
-      "processed_at": "2026-08-08T22:14:46.230Z",
+      "processed_at": "2026-08-08T22:14:49.811Z",
       "target": {
         "kind": "pull_request",
         "branch": "codex/background-computer-use",
         "head_sha": "93d8d9f7e829d8a295300061f963156d38a527f0",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "source_delivery_conflict": true
     }
   ]
 }
