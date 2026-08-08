@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T07:06:53.392Z",
-  "count": 11,
+  "generated_at": "2026-08-08T07:58:15.545Z",
+  "count": 10,
   "summary": {
-    "open_prs": 11,
+    "open_prs": 10,
     "ready_candidates": 0,
     "security_hold": 1,
-    "needs_rebase": 2,
+    "needs_rebase": 1,
     "mergeability_unknown": 0,
     "needs_checks": 5,
     "needs_review": 0,
-    "needs_merge_preflight": 11,
+    "needs_merge_preflight": 10,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -734,80 +734,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
-    {
-      "number": 119975,
-      "title": "fix(gateway): report active unmanaged restart startup accurately",
-      "url": "https://github.com/openclaw/openclaw/pull/119975",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119958",
-      "head_sha": "959419e2d8a1ab8e90ade7156d74ebc1cc0f97ef",
-      "cluster_id": "issue-openclaw-openclaw-119958",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119958.md",
-      "updated_at": "2026-08-07T01:47:56Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 134,
-        "counts": {
-          "SKIPPED": 50,
-          "SUCCESS": 83,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 3,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5207031002",
-            "submitted_at": "2026-08-06T15:36:49Z"
-          },
-          {
-            "source": "comment",
-            "author": "islandpreneur007",
-            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5208455053",
-            "submitted_at": "2026-08-06T19:10:25Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119975#issuecomment-5211035380",
-            "submitted_at": "2026-08-07T01:38:54Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31140156832",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31140156832",
-        "cluster_id": "automerge-openclaw-openclaw-119975",
-        "published_at": "2026-08-07T02:11:18.328Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119975",
-          "action": "fix_needed",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#119975",
-          "candidate_fix": "#119975",
-          "reason": "Repair the same-repository writable branch with process- and request-bound boot-owner state, then obtain exact-head review; merge remains disabled by job policy."
-        }
-      },
-      "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     }
   ]
 }
