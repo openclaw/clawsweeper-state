@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T08:29:58.276Z",
+  "updated_at": "2026-08-08T08:30:01.436Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104322:5223976691:2026-08-08T02:01:12Z:re_review",
-      "comment_id": "5223976691",
-      "comment_version_key": "5223976691:2026-08-08T02:01:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104322#issuecomment-5223976691",
-      "comment_created_at": "2026-08-08T02:01:12Z",
-      "comment_updated_at": "2026-08-08T02:01:12Z",
-      "comment_body_sha256": "fafb50105a2b42e6ab0c7748676d2174130d37048d6c21a535260563583e987e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104322,
-      "author": "litang9",
-      "author_id": 141409885,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T03:46:26.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-message-send-retry",
-        "head_sha": "bcdb2cf0631ec5ab0c455e9694f84b8a8c97e6f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120359:5223982835:2026-08-08T02:02:41Z:re_review",
       "comment_id": "5223982835",
@@ -33239,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "fix/runtime-text-delta-origin",
         "head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:494:5223616670:2026-08-08T08:29:31Z:clawsweeper_needs_human",
+      "comment_id": "5223616670",
+      "comment_version_key": "5223616670:2026-08-08T08:29:31Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/494#issuecomment-5223616670",
+      "comment_created_at": "2026-08-08T00:43:10Z",
+      "comment_updated_at": "2026-08-08T08:29:31Z",
+      "comment_body_sha256": "fe4dbb283d19607294edd264159470d2efd8e7c576b8c11d93042fef26f0baae",
+      "repo": "openclaw/acpx",
+      "issue_number": 494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing external implementations of AcpRuntimeTurn must add the required field. (sha=311294713d22fa84bd550c264c9e50b3cbad9fd5)",
+      "expected_head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T08:30:01.436Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-turn-prompt-readiness-20260807",
+        "head_sha": "311294713d22fa84bd550c264c9e50b3cbad9fd5",
         "cluster_id": null,
         "job_path": null
       }
