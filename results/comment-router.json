@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T04:46:53.012Z",
+  "updated_at": "2026-08-08T04:46:55.698Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:31:4599109781:2026-08-08T00:32:55Z:clawsweeper_auto_repair",
-      "comment_id": "4599109781",
-      "comment_version_key": "4599109781:2026-08-08T00:32:55Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/31#issuecomment-4599109781",
-      "comment_created_at": "2026-06-02T05:55:04Z",
-      "comment_updated_at": "2026-08-08T00:32:55Z",
-      "comment_body_sha256": "f7ea7cf82102a7c10adabb7070ef32be0f5c30f2c465d0a811a95402d417cca4",
-      "repo": "openclaw/shellbench",
-      "issue_number": 31,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=140c17c30175d6e469e7ad6844cb9c6d49343056)",
-      "expected_head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T00:33:35.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/spatio-temporal-dynamics-v2",
-        "head_sha": "140c17c30175d6e469e7ad6844cb9c6d49343056",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-08T00:33:00Z:clawsweeper_needs_human",
       "comment_id": "5156377755",
@@ -32609,6 +32576,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120451:5224323813:2026-08-08T04:46:16Z:clawsweeper_needs_human",
+      "comment_id": "5224323813",
+      "comment_version_key": "5224323813:2026-08-08T04:46:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120451#issuecomment-5224323813",
+      "comment_created_at": "2026-08-08T03:37:48Z",
+      "comment_updated_at": "2026-08-08T04:46:16Z",
+      "comment_body_sha256": "9e5ab5618cb6f2f32507a1146426557c7b40d2a37732b0692c033e0da560b7ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes upgrade behavior: targeted config writes with pending legacy state will no longer repair it implicitly, so operators must use explicit openclaw doctor --fix... (sha=8d7ef71f1b9a0b438056fc5d596cbdeb3b049297)",
+      "expected_head_sha": "8d7ef71f1b9a0b438056fc5d596cbdeb3b049297",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T04:46:55.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-patch-migration-120413",
+        "head_sha": "8d7ef71f1b9a0b438056fc5d596cbdeb3b049297",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
