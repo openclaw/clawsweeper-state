@@ -1,0 +1,78 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-118685",
+  "mode": "autonomous",
+  "run_id": "31242269698",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31242269698",
+  "head_sha": "62acb03356bbbc6799b7922d17de2a9930934890",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118685.md",
+  "published_at": "2026-08-08T06:17:43.411Z",
+  "canonical": "#118685",
+  "canonical_issue": null,
+  "canonical_pr": "#118685",
+  "summary": "Make PR #118685 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#118685",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118685",
+      "candidate_fix": "#118685",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "pushed": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "pushed",
+      "target": "https://github.com/openclaw/openclaw/pull/118685",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": "6ea5de653b014722850945533835c632d2170820",
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#118685",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(agents): record stop reason in completion trajectory",
+      "idempotency_key": null,
+      "reason": "autofix-only job cannot merge",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

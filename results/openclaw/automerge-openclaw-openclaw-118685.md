@@ -1,22 +1,22 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118685"
-mode: "plan"
-run_id: "31092764420"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31092764420"
-head_sha: "480d56953f381b127bdc0b5a7029efeeaa717595"
+mode: "autonomous"
+run_id: "31242269698"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31242269698"
+head_sha: "62acb03356bbbc6799b7922d17de2a9930934890"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-06T10:25:06.239Z"
-canonical: "#118673"
-canonical_issue: "#118673"
+published_at: "2026-08-08T06:17:43.411Z"
+canonical: "#118685"
+canonical_issue: null
 canonical_pr: "#118685"
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,28 +25,28 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31092764420](https://github.com/openclaw/clawsweeper/actions/runs/31092764420)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31242269698](https://github.com/openclaw/clawsweeper/actions/runs/31242269698)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #118673
+Canonical: #118685
 
 ## Summary
 
-Keep issue #118673 open as the canonical diagnostic gap and repair PR #118685 as an explicitly partial embedded-runner fix. The repair must correct trajectory attribution to the current attempt-owned completion snapshot, remove the PR body closing keyword, retain reporter credit, and leave Codex out because its upstream protocol has no native model completion reason.
+Make PR #118685 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,21 +54,19 @@ Keep issue #118673 open as the canonical diagnostic gap and repair PR #118685 as
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/openclaw/pull/118685 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #118685 | merge_canonical | blocked | fix_pr | autofix-only job cannot merge |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118673 | keep_canonical | planned | canonical | The issue has remaining unique scope after the partial core repair. |
-| #118685 | fix_needed | planned | canonical | Repair the actionable review finding without falsely broadening the diagnostic contract. |
-| #118685 | build_fix_artifact | planned | canonical | Produce an executable, credited repair plan for the editable same-repository contributor branch. |
+| #118685 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 

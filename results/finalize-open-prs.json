@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T05:20:34.642Z",
+  "generated_at": "2026-08-08T06:19:12.922Z",
   "count": 12,
   "summary": {
     "open_prs": 12,
@@ -100,26 +100,23 @@
       "head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
       "cluster_id": "issue-openclaw-openclaw-120253",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md",
-      "updated_at": "2026-08-08T05:18:31Z",
+      "updated_at": "2026-08-08T05:52:02Z",
       "mergeable": "MERGEABLE",
       "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 51,
+        "total": 120,
         "counts": {
-          "IN_PROGRESS": 6,
-          "SUCCESS": 20,
-          "SKIPPED": 24,
+          "SUCCESS": 78,
+          "SKIPPED": 38,
+          "FAILURE": 3,
           "NEUTRAL": 1
         },
         "blockers": [
-          "CI / preflight:IN_PROGRESS",
-          "iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS",
-          "CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
-          "CodeQL / Security High (plugin-trust-boundary):IN_PROGRESS",
-          "CI / security-fast:IN_PROGRESS",
-          "CodeQL Critical Quality / Critical Quality (config-boundary):IN_PROGRESS"
+          "CI / checks-node-compact-small-8:FAILURE",
+          "CI / check-plugin-sdk-api-baseline:FAILURE",
+          "CI / openclaw/ci-gate:FAILURE"
         ]
       },
       "review_threads": {
@@ -129,7 +126,7 @@
         "examples": []
       },
       "review_bots": {
-        "count": 2,
+        "count": 3,
         "latest": [
           {
             "source": "comment",
@@ -142,6 +139,12 @@
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5223983781",
             "submitted_at": "2026-08-08T02:02:58Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5224692582",
+            "submitted_at": "2026-08-08T05:18:31Z"
           }
         ]
       },
@@ -169,7 +172,7 @@
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / preflight:IN_PROGRESS; iOS Periphery Dead Code / Detect iOS scan scope:IN_PROGRESS; CodeQL / Security High (process-exec-boundary):IN_PROGRESS",
+        "needs_checks:CI / checks-node-compact-small-8:FAILURE; CI / check-plugin-sdk-api-baseline:FAILURE; CI / openclaw/ci-gate:FAILURE",
         "needs_merge_preflight"
       ],
       "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
