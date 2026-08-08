@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T01:33:09.857Z",
+  "updated_at": "2026-08-08T01:33:54.362Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119585:5191502615:2026-08-07T21:42:31Z:clawsweeper_needs_human",
-      "comment_id": "5191502615",
-      "comment_version_key": "5191502615:2026-08-07T21:42:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119585#issuecomment-5191502615",
-      "comment_created_at": "2026-08-05T12:06:22Z",
-      "comment_updated_at": "2026-08-07T21:42:31Z",
-      "comment_body_sha256": "43fb83bfb0d757a0ae0df940a23d746d30648f182deab2fb576d960fdad047f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119585,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing hosts whose shared state has an older schema will now receive a nonzero inspection result until gateway startup or openclaw doctor --fix migrates it; maintainers must accept... (sha=84c5a31aed6af49cb47649eb075b17181cff096d)",
-      "expected_head_sha": "84c5a31aed6af49cb47649eb075b17181cff096d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-07T21:47:35.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-readonly-state-db",
-        "head_sha": "84c5a31aed6af49cb47649eb075b17181cff096d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119641:5192871111:2026-08-07T21:41:03Z:clawsweeper_auto_repair",
       "comment_id": "5192871111",
@@ -32134,6 +32101,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120084:5223852436:2026-08-08T01:33:09Z:re_review",
+      "comment_id": "5223852436",
+      "comment_version_key": "5223852436:2026-08-08T01:33:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120084#issuecomment-5223852436",
+      "comment_created_at": "2026-08-08T01:33:09Z",
+      "comment_updated_at": "2026-08-08T01:33:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "1cdfb220-92c9-11f1-9b84-b7bb9f264d49",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120084,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T01:33:52.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fish-audio-speech-directory",
+        "head_sha": "27d8b420d219b916511ee23575d8bbe0f7971609",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
