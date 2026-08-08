@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T06:37:20.531Z",
+  "updated_at": "2026-08-08T06:37:39.867Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117616:5153256072:2026-08-08T01:47:45Z:clawsweeper_auto_repair",
-      "comment_id": "5153256072",
-      "comment_version_key": "5153256072:2026-08-08T01:47:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117616#issuecomment-5153256072",
-      "comment_created_at": "2026-08-01T20:22:24Z",
-      "comment_updated_at": "2026-08-08T01:47:45Z",
-      "comment_body_sha256": "d708631cfacf8cc0fbe92571ed787ea2c4644f4845174f519f9abaf98a12ba4c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d0be6deec58ccf62ac9dabaa78daa3c10a56daeb)",
-      "expected_head_sha": "d0be6deec58ccf62ac9dabaa78daa3c10a56daeb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T01:48:27.276Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/launchd-ownership-unreadable-plist",
-        "head_sha": "d0be6deec58ccf62ac9dabaa78daa3c10a56daeb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120373:5222962232:2026-08-08T01:48:10Z:clawsweeper_auto_repair",
       "comment_id": "5222962232",
@@ -32406,6 +32373,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120298:5220797105:2026-08-08T05:51:54Z:clawsweeper_needs_human",
+      "comment_id": "5220797105",
+      "comment_version_key": "5220797105:2026-08-08T05:51:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120298#issuecomment-5220797105",
+      "comment_created_at": "2026-08-07T18:42:53Z",
+      "comment_updated_at": "2026-08-08T05:51:54Z",
+      "comment_body_sha256": "68c16c0f5c9cd128c2578262fa65f54a47f8985f14d2c188aa7bec819171bb09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120298,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The patch is correct, but the existing clawsweeper:human-review gate and failed exact-head checks require maintainer handling rather than an automated repair. (sha=ad0bae37389a2bf2a573c8b02918434394d873ad)",
+      "expected_head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T06:37:39.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120253",
+        "head_sha": "ad0bae37389a2bf2a573c8b02918434394d873ad",
+        "cluster_id": "issue-openclaw-openclaw-120253",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120253.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
