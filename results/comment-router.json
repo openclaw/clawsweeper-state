@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:42:40.805Z",
+  "updated_at": "2026-08-08T19:42:59.457Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119910:5204080847:2026-08-08T15:42:39Z:clawsweeper_needs_human",
-      "comment_id": "5204080847",
-      "comment_version_key": "5204080847:2026-08-08T15:42:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119910#issuecomment-5204080847",
-      "comment_created_at": "2026-08-06T11:31:07Z",
-      "comment_updated_at": "2026-08-08T15:42:39Z",
-      "comment_body_sha256": "b680a1c6ff621cb03a82f99b38981e701aaa415e9b0a325c97834ae4e94c5c79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119910,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not persist raw Slack content in QA mismatch errors (P1)** - This was present on the earlier reviewed head. The new JSON dump includes every observed message's text and blockText; those errors become scenario...; Review finding: [P1] Do not persist raw Slack content in QA mismatch errors — extensions/qa-lab/src/live-transports/slack/slack-live.scenario-fixtures.ts:99-107 - [medium] Raw Sla... (sha=fd72659e9c9345eabec6a51d1db8ca56a2c62658)",
-      "expected_head_sha": "fd72659e9c9345eabec6a51d1db8ca56a2c62658",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:43:18.985Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-slack-commentary-classifier-20260806",
-        "head_sha": "fd72659e9c9345eabec6a51d1db8ca56a2c62658",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93247:4706848560:2026-08-08T15:42:31Z:clawsweeper_auto_repair",
       "comment_id": "4706848560",
@@ -32338,6 +32305,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119267:5227793608:2026-08-08T19:42:28Z:re_review",
+      "comment_id": "5227793608",
+      "comment_version_key": "5227793608:2026-08-08T19:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119267#issuecomment-5227793608",
+      "comment_created_at": "2026-08-08T19:42:28Z",
+      "comment_updated_at": "2026-08-08T19:42:28Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "4a471800-9361-11f1-803c-f7fd23b326c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119267,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T19:42:57.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/native-tool-events-origin",
+        "head_sha": "6df93e8375fc0ade69170554b12d60a63e45bf3d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
