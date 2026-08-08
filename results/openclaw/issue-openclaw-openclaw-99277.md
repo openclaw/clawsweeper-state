@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "31275198493"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31275198493"
+run_id: "31275822054"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31275822054"
 head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-08T19:54:26.552Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-08T20:05:15.098Z"
 canonical: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31275198493](https://github.com/openclaw/clawsweeper/actions/runs/31275198493)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31275822054](https://github.com/openclaw/clawsweeper/actions/runs/31275822054)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-#99277 is a reproducible current-main bug: accepted Mattermost posts reach inbound dispatch without the shared acknowledgement bridge. A narrow plugin-local fix is ready to build, but this worker checkout is read-only, so no branch, tests, or PR can be produced here.
+Plan a narrow new PR for the confirmed Mattermost shared-ack bridge. #99277 remains canonical; prior PRs are closed historical evidence, and #15634 remains a separate parity umbrella.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | fix_needed | planned | canonical | Implement the missing bridge through the public Plugin SDK and Mattermost-owned transport; do not add configuration or core imports. |
-| #15634 | keep_related | planned | related | Keep open independently; this repair must not absorb its product work. |
-| #80426 | keep_closed | skipped | superseded | Historical evidence only; no mutation is valid for a closed PR. |
-| #119124 | keep_closed | skipped | superseded | Historical evidence only; no mutation is valid for a closed PR. |
-| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned | canonical | Produce the narrow branch plan for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-99277 | open_fix_pr | blocked | canonical | Executor should apply the fix artifact on clawsweeper/issue-openclaw-openclaw-99277, validate it, then open the labeled PR. |
+| #99277 | fix_needed | planned | canonical | Current-main bounded bug; create a new focused fix rather than reviving closed branches. |
+| #15634 | keep_related | planned | related | Keep its broader product decision open independently. |
+| #80426 | keep_closed | skipped | superseded | Historical evidence only; no closure action is valid for an already closed PR. |
+| #119124 | keep_closed | skipped | superseded | Historical evidence only; carry forward its credit and corrected design in the new PR. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned | canonical | Prepare the deterministic executor to implement, validate, label, and open one narrow PR. |
+| cluster:issue-openclaw-openclaw-99277 | open_fix_pr | planned | canonical | Job permits a new fix PR but prohibits merge and issue closure. |
 
 ## Needs Human
 
