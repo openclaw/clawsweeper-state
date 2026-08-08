@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:34:30.286Z",
+  "updated_at": "2026-08-08T09:35:05.167Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118523:5224491612:2026-08-08T04:25:04Z:re_review",
-      "comment_id": "5224491612",
-      "comment_version_key": "5224491612:2026-08-08T04:25:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118523#issuecomment-5224491612",
-      "comment_created_at": "2026-08-08T04:25:04Z",
-      "comment_updated_at": "2026-08-08T04:25:04Z",
-      "comment_body_sha256": "97c17e3d4dd17ba4db86fdb6699e32b4002224b9435de1bf55f1b10bee7b5e0c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118523,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:42:31.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/118489-failed-tool-finalization-residuals",
-        "head_sha": "4daa4f9766ff303529c9e5cfd7e90f0e69e38eb7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5224496460:2026-08-08T04:26:21Z:re_review",
       "comment_id": "5224496460",
@@ -33128,6 +33081,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:361:5225476021:2026-08-08T09:34:22Z:clawsweeper_needs_human",
+      "comment_id": "5225476021",
+      "comment_version_key": "5225476021:2026-08-08T09:34:22Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/361#issuecomment-5225476021",
+      "comment_created_at": "2026-08-08T09:16:30Z",
+      "comment_updated_at": "2026-08-08T09:34:22Z",
+      "comment_body_sha256": "dd5308588b82dce27e35b87da883c725ed9284c1682e9a8170fbebbe6e6c1e28",
+      "repo": "steipete/oracle",
+      "issue_number": 361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact final PR-head source could not be retrieved locally, so selector compatibility on the amended branch still needs a source-level review refresh before merge. (sha=fdb5c8f5aed8ee44cd8696420af717b814bf930b)",
+      "expected_head_sha": "fdb5c8f5aed8ee44cd8696420af717b814bf930b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:35:05.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-intelligence-effort-submenu",
+        "head_sha": "fdb5c8f5aed8ee44cd8696420af717b814bf930b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
