@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T16:49:39.506Z",
+  "updated_at": "2026-08-08T16:49:41.633Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120434:5224134068:2026-08-08T12:38:03Z:clawsweeper_auto_repair",
-      "comment_id": "5224134068",
-      "comment_version_key": "5224134068:2026-08-08T12:38:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120434#issuecomment-5224134068",
-      "comment_created_at": "2026-08-08T02:43:50Z",
-      "comment_updated_at": "2026-08-08T12:38:03Z",
-      "comment_body_sha256": "8746438c01083c312873a22aa64d85c129725330b53e4d1d74b0e3eff358b78f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f272184df670ad279ffa646d4224020be05ff57)",
-      "expected_head_sha": "2f272184df670ad279ffa646d4224020be05ff57",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T12:41:03.489Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/worktree-cleanup-outcome",
-        "head_sha": "2f272184df670ad279ffa646d4224020be05ff57",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119538:5226092246:2026-08-08T12:25:18Z:re_review",
       "comment_id": "5226092246",
@@ -33399,6 +33366,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2764:5227081167:2026-08-08T16:49:09Z:re_review",
+      "comment_id": "5227081167",
+      "comment_version_key": "5227081167:2026-08-08T16:49:09Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2764#issuecomment-5227081167",
+      "comment_created_at": "2026-08-08T16:49:09Z",
+      "comment_updated_at": "2026-08-08T16:49:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "14a26a00-9349-11f1-9bd1-b24366b4137c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2764,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T16:49:40.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cost-store-retention-mtime",
+        "head_sha": "6be86b83c3b70f9aa9c7de5546b785901bcec2f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
