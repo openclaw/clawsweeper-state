@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:42:59.457Z",
+  "updated_at": "2026-08-08T19:43:06.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93247:4706848560:2026-08-08T15:42:31Z:clawsweeper_auto_repair",
-      "comment_id": "4706848560",
-      "comment_version_key": "4706848560:2026-08-08T15:42:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-4706848560",
-      "comment_created_at": "2026-06-15T10:13:35Z",
-      "comment_updated_at": "2026-08-08T15:42:31Z",
-      "comment_body_sha256": "7fb7b8ace50b2125bfd9e552b0c6f36f209927504988aa378829e71ffcdefb92",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8a279750f2d1eb1f5d903eaf4f61412d51cc603e)",
-      "expected_head_sha": "8a279750f2d1eb1f5d903eaf4f61412d51cc603e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:43:20.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/diagnostic-ghost-entries-pruning",
-        "head_sha": "8a279750f2d1eb1f5d903eaf4f61412d51cc603e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5025459430:2026-07-20T17:57:50Z:re_review",
       "comment_id": "5025459430",
@@ -32353,6 +32320,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114424:5088746208:2026-08-08T19:42:24Z:clawsweeper_needs_human",
+      "comment_id": "5088746208",
+      "comment_version_key": "5088746208:2026-08-08T19:42:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114424#issuecomment-5088746208",
+      "comment_created_at": "2026-07-27T07:56:06Z",
+      "comment_updated_at": "2026-08-08T19:42:24Z",
+      "comment_body_sha256": "ec6a9364147c3d06f53d3a16f1622d5a8faa7fce5274f1fc78ccca343305f8cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114424,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resolving the dirty merge across all six suites mechanically could drop provider regression contracts added on current main after this branch was created. (sha=e6e03d0da718456f46107d637eb6390a3fa32f81)",
+      "expected_head_sha": "e6e03d0da718456f46107d637eb6390a3fa32f81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:43:06.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-dedup-provider-phase2-b461",
+        "head_sha": "e6e03d0da718456f46107d637eb6390a3fa32f81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
