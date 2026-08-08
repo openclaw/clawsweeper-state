@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:44:02.574Z",
+  "updated_at": "2026-08-08T10:44:07.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5224802003:2026-08-08T05:50:33Z:re_review",
-      "comment_id": "5224802003",
-      "comment_version_key": "5224802003:2026-08-08T05:50:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5224802003",
-      "comment_created_at": "2026-08-08T05:50:33Z",
-      "comment_updated_at": "2026-08-08T05:50:33Z",
-      "comment_body_sha256": "ab20cde747d27d7ab93707f459b19b69c07f44d723c39ef9da4e17cf0d0043d8",
-      "source_delivery_id": "12c411e0-92ed-11f1-829e-41a7fcaa9c80",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T05:51:08.561Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "d06a7d802179e229508d468b85d47a17972878a8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120463:5224558514:2026-08-08T05:51:11Z:clawsweeper_needs_human",
       "comment_id": "5224558514",
@@ -33562,6 +33514,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T10:44:02.574Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118676:5166981736:2026-08-08T10:41:22Z:clawsweeper_needs_human",
+      "comment_id": "5166981736",
+      "comment_version_key": "5166981736:2026-08-08T10:41:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118676#issuecomment-5166981736",
+      "comment_created_at": "2026-08-03T13:32:19Z",
+      "comment_updated_at": "2026-08-08T10:41:22Z",
+      "comment_body_sha256": "96d4f4809a6bed0deb69fe696f87893b27c3acff0176d0a9829d6e53877366be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118676,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports tests and static checks only; add a redacted after-fix Gateway or Control UI run showing the proposal becomes stale and App... (sha=4c24ea84f29b2b5b5695f3aa8605700ca579f24e)",
+      "expected_head_sha": "4c24ea84f29b2b5b5695f3aa8605700ca579f24e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T10:44:07.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-90388-reconcile-workshop-target",
+        "head_sha": "4c24ea84f29b2b5b5695f3aa8605700ca579f24e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
