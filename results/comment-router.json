@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T07:35:52.286Z",
+  "updated_at": "2026-08-08T07:36:40.595Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:58:5120614947:2026-08-08T02:32:24Z:clawsweeper_needs_human",
-      "comment_id": "5120614947",
-      "comment_version_key": "5120614947:2026-08-08T02:32:24Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/58#issuecomment-5120614947",
-      "comment_created_at": "2026-07-29T16:25:19Z",
-      "comment_updated_at": "2026-08-08T02:32:24Z",
-      "comment_body_sha256": "478c2086752364f68d52988ee69acf02ace6df395402bba47a7d369080036d9b",
-      "repo": "openclaw/shellbench",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older manifests without bootstrapped_lease_id will intentionally perform one additional remote hydration on their next missing-state recovery dispatch. (sha=8949dc8328e9b86a0cf1f80bcf3a976c67c4837a)",
-      "expected_head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T02:40:25.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-fleet-rebootstrap",
-        "head_sha": "8949dc8328e9b86a0cf1f80bcf3a976c67c4837a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119057:5173970388:2026-08-08T02:37:31Z:clawsweeper_needs_human",
       "comment_id": "5173970388",
@@ -32779,6 +32746,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1104:5198086402:2026-08-08T07:35:59Z:clawsweeper_needs_human",
+      "comment_id": "5198086402",
+      "comment_version_key": "5198086402:2026-08-08T07:35:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1104#issuecomment-5198086402",
+      "comment_created_at": "2026-08-05T22:24:27Z",
+      "comment_updated_at": "2026-08-08T07:35:59Z",
+      "comment_body_sha256": "a1984f73d9ba7536a4098be67e29422697f4cade729a5d0eb99a1f2a945673e9",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1104,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final head changes caller-artifact sourcing, while the available PR-body proof is for an earlier content head; merging before fresh stable and prerelease caller runs pass would le... (sha=fe229caa04dd383d373f8863e809687342f466bf)",
+      "expected_head_sha": "fe229caa04dd383d373f8863e809687342f466bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T07:36:40.595Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/release-candidate-e2e",
+        "head_sha": "fe229caa04dd383d373f8863e809687342f466bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
