@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T10:47:46.412Z",
+  "updated_at": "2026-08-08T10:47:53.408Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120404:5223905775:2026-08-08T04:43:05Z:clawsweeper_needs_human",
-      "comment_id": "5223905775",
-      "comment_version_key": "5223905775:2026-08-08T04:43:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120404#issuecomment-5223905775",
-      "comment_created_at": "2026-08-08T01:44:59Z",
-      "comment_updated_at": "2026-08-08T04:43:05Z",
-      "comment_body_sha256": "afb67aad02ae6be4b3faadd1ba24d8b31b2e77021331c006b256d69f4dbf2606",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR describes a deployed after-fix result but provides no inspectable redacted trace, log, or artifact showing the exact-head flush... (sha=d75d3a5b4765c2eae777c3e8aace472c1d2b8af7)",
-      "expected_head_sha": "d75d3a5b4765c2eae777c3e8aace472c1d2b8af7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T05:52:42.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-flush-write-outputschema",
-        "head_sha": "d75d3a5b4765c2eae777c3e8aace472c1d2b8af7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120428:5224125903:2026-08-08T04:49:04Z:clawsweeper_auto_repair",
       "comment_id": "5224125903",
@@ -33303,6 +33270,54 @@
       "status": "skipped",
       "processed_at": "2026-08-08T10:47:46.412Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5225765117:2026-08-08T10:47:18Z:re_review",
+      "comment_id": "5225765117",
+      "comment_version_key": "5225765117:2026-08-08T10:47:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5225765117",
+      "comment_created_at": "2026-08-08T10:47:18Z",
+      "comment_updated_at": "2026-08-08T10:47:18Z",
+      "comment_body_sha256": "82c4f117b4538afe67d85a050df505661b25b739ea0431d595d2a0024d70b7c2",
+      "source_delivery_id": "87614b20-9316-11f1-8e32-4143ff73f0e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T10:47:51.749Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "98120d3864700f6056f253fa356846b71fe9a3ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
