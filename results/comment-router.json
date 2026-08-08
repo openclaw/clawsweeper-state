@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T11:55:37.523Z",
+  "updated_at": "2026-08-08T11:57:43.887Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117339:5225150503:2026-08-08T07:35:15Z:re_review",
-      "comment_id": "5225150503",
-      "comment_version_key": "5225150503:2026-08-08T07:35:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117339#issuecomment-5225150503",
-      "comment_created_at": "2026-08-08T07:35:15Z",
-      "comment_updated_at": "2026-08-08T07:35:15Z",
-      "comment_body_sha256": "f5e1d290b762438843d1f3692473a1f57f8312588a4645a5a551fd7baa51ef67",
-      "source_delivery_id": "b2d9c9a0-92fb-11f1-9f16-401c7e3c7814",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117339,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:35:50.496Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/video-download-binary-validation",
-        "head_sha": "52f399389f44e0f6f4f61d403dcf7e9ec63c429c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1104:5198086402:2026-08-08T07:35:59Z:clawsweeper_needs_human",
       "comment_id": "5198086402",
@@ -33454,6 +33406,39 @@
         "kind": "pull_request",
         "branch": "fix/windows-ensure-directory-extended-path",
         "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:132:5168142459:2026-08-08T11:57:08Z:clawsweeper_auto_repair",
+      "comment_id": "5168142459",
+      "comment_version_key": "5168142459:2026-08-08T11:57:08Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5168142459",
+      "comment_created_at": "2026-08-03T15:07:17Z",
+      "comment_updated_at": "2026-08-08T11:57:08Z",
+      "comment_body_sha256": "06a779b0dfa308799e2f7965aa541d62ba01e0244ab74fa0bee1a1f6c85bcbc1",
+      "repo": "openclaw/lobster",
+      "issue_number": 132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3fbc836c0636830d8e6373e5b2b02fae73ff9c03)",
+      "expected_head_sha": "3fbc836c0636830d8e6373e5b2b02fae73ff9c03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T11:57:43.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-invoke-honor-abort-signal",
+        "head_sha": "3fbc836c0636830d8e6373e5b2b02fae73ff9c03",
         "cluster_id": null,
         "job_path": null
       }
