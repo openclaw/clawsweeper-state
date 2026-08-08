@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120449",
+  "mode": "autonomous",
+  "run_id": "31240016267",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31240016267",
+  "head_sha": "985651bf6642e630964b8aab69f0f00e23700f33",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120449.md",
+  "published_at": "2026-08-08T05:11:22.595Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120449",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120449",
+  "canonical_pr": null,
+  "summary": "Verified on main 68e37772452c234b9230014821273a13855f2951: WARNING-tier loop advisories are logged then discarded before the allowed before-tool-call outcome, so neither normal wrapped-tool nor client-tool result content reaches the model/transcript. A narrow fix artifact is ready; implementation is blocked only because this worker checkout is read-only.",
+  "actions": [
+    {
+      "target": "#120415",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120449",
+      "candidate_fix": null,
+      "reason": "Keep open as related work; no closure is authorized."
+    },
+    {
+      "target": "#120448",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120449",
+      "candidate_fix": null,
+      "reason": "Closed context reference; no mutation."
+    },
+    {
+      "target": "#120449",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120449",
+      "candidate_fix": null,
+      "reason": "Source reproduction holds on current main; create one narrow fix PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120449",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120449",
+      "candidate_fix": null,
+      "reason": "Deterministic executor should implement and validate this artifact on clawsweeper/issue-openclaw-openclaw-120449."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/agents/agent-tool-definition-adapter.ts: core production [check:changed] src/agents/agent-tools.before-tool-call.e2e.test.ts: core test [check:changed] src/agents/agent-tools.before-tool-call.integration.e2e.test.ts: core test [check:changed] src/agents/agent-tools.before-tool-call.policy.ts: core production [check:changed] src/agents/agent-tools.before-tool-call.state.ts: core production [check:changed] src/agents/agent-tools.before-tool-call.types.ts: core production [check:changed] src/agents/agent-tools.before-tool-call.wrapper.ts: core production [check:changed] src/agents/tool-loop-admission.test.ts: core test [check:changed] src/agents/tool-loop-admission.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node scripts/check-env-var-count.mjs --base origin/main [check:changed] max-lines suppression ratchet $ node scripts/check-max-lines-ratchet.mjs --base origin/main [check:changed] changelog attributions $ node scripts/check-changelog-attributions.mjs [check:changed] guarded extension wildcard re-exports $ node scripts/check-extension-wildcard-reexports.mjs [check:changed] plugin-sdk wildcard re-exports $ node scripts/check-plugin-sdk-wildcard-reexports.mjs [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node scripts/check-dependency-pins.mjs [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/agents/agent-tool-definition-adapter.ts src/agents/agent-tools.before-tool-call.e2e.test.ts src/agents/agent-tools.before-tool-call.integration.e2e.test.ts src/agents/agent-tools.before-tool-call.policy.ts src/agents/agent-tools.before-tool-call.state.ts src/agents/agent-tools.before-tool-call.types.ts src/agents/agent-tools.before-tool-call.wrapper.ts src/agents/tool-loop-admission.test.ts src/agents/tool-loop-admission.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check Plugin SDK API contract drift detected. Manifest mismatch: docs/.generated/plugin-sdk-api-baseline.sha256 If this Plugin SDK surface change is intentional, run `pnpm plugin-sdk:api:gen` and commit the updated manifest. If not intentional, fix the plugin-sdk exports or metadata first. [check:changed] summary 322ms ok conflict markers 356ms ok environment variable count ratchet 14.13s ok max-lines suppression ratchet 266ms ok changelog attributions 265ms ok guarded extension wildcard re-exports 254ms ok plugin-sdk wildcard re-exports 283ms ok duplicate scan target coverage 291ms ok dependency pin guard 322ms ok format changed files 7.76s failed:1 Plugin SDK API contract manifest [check:changed] FAILED (exit 1) OPENCLAW_* count 513/513 max-lines ratchet OK: 987 grandfathered suppressions. No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 617 directly declared dependency specs across 178 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 21ms on 9 files using 4 threads. [ELIFECYCLE] Command failed with exit code 1. [ELIFECYCLE] Command failed with exit code 1.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120449",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
