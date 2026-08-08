@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:16:26.474Z",
+  "updated_at": "2026-08-08T21:16:36.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120539:5226871609:2026-08-08T15:54:36Z:re_review",
-      "comment_id": "5226871609",
-      "comment_version_key": "5226871609:2026-08-08T15:54:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120539#issuecomment-5226871609",
-      "comment_created_at": "2026-08-08T15:54:36Z",
-      "comment_updated_at": "2026-08-08T15:54:36Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120539,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T16:42:10.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/eager-rubin-d70c2d",
-        "head_sha": "5d71ec72f32c7924e72b179f6738c0a18ae54a44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120539:5225749937:2026-08-08T16:41:38Z:clawsweeper_auto_repair",
       "comment_id": "5225749937",
@@ -32600,6 +32553,39 @@
         "kind": "pull_request",
         "branch": "fix/trailing-html-comment-parsing",
         "head_sha": "84f12f1aadbd921af1578bb0cf1c6410267baa13",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/osc-progress:31:5217992134:2026-08-08T21:01:44Z:clawsweeper_needs_human",
+      "comment_id": "5217992134",
+      "comment_version_key": "5217992134:2026-08-08T21:01:44Z",
+      "comment_url": "https://github.com/steipete/osc-progress/pull/31#issuecomment-5217992134",
+      "comment_created_at": "2026-08-07T13:59:11Z",
+      "comment_updated_at": "2026-08-08T21:01:44Z",
+      "comment_body_sha256": "60268752e625f6471af17770beda64e92dc07af2c3f32770b2d95ef574bea236",
+      "repo": "steipete/osc-progress",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint resolve platform-specific native bindings; the successful check covers Ubuntu/Node 24 only, so frozen-install behavior on macOS and Windows is not directly observed. (sha=0d658f23ec01d59a8b8787440348f42e8586efa9)",
+      "expected_head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T21:16:36.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
+        "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
         "cluster_id": null,
         "job_path": null
       }
