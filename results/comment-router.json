@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:29:19.064Z",
+  "updated_at": "2026-08-08T12:30:13.237Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120472:5224831032:2026-08-08T05:59:58Z:re_review",
-      "comment_id": "5224831032",
-      "comment_version_key": "5224831032:2026-08-08T05:59:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120472#issuecomment-5224831032",
-      "comment_created_at": "2026-08-08T05:59:58Z",
-      "comment_updated_at": "2026-08-08T05:59:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120472,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/verify-pr-hosted-gates-decimal-pr",
-        "head_sha": "fa439e6027e608feadc55b5c2fae4a7262b101fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120468:5224842861:2026-08-08T06:03:25Z:re_review",
       "comment_id": "5224842861",
@@ -33457,6 +33410,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
         "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:254:5166225820:2026-08-08T12:29:35Z:clawsweeper_auto_repair",
+      "comment_id": "5166225820",
+      "comment_version_key": "5166225820:2026-08-08T12:29:35Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/254#issuecomment-5166225820",
+      "comment_created_at": "2026-08-03T12:20:11Z",
+      "comment_updated_at": "2026-08-08T12:29:35Z",
+      "comment_body_sha256": "35ea8e6cd70da61ff8acd70b1ab057019d061e63822ea6e7ce4624cf7a8f07ad",
+      "repo": "openclaw/crabline",
+      "issue_number": 254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=70a69e94b355e9976cef7f0d88430e08d24a2fd1)",
+      "expected_head_sha": "70a69e94b355e9976cef7f0d88430e08d24a2fd1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:30:13.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-audio-inbound",
+        "head_sha": "70a69e94b355e9976cef7f0d88430e08d24a2fd1",
         "cluster_id": null,
         "job_path": null
       }
