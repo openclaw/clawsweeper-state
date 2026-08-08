@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T08:13:08.727Z",
-  "count": 10,
+  "generated_at": "2026-08-08T08:27:52.312Z",
+  "count": 9,
   "summary": {
-    "open_prs": 10,
+    "open_prs": 9,
     "ready_candidates": 0,
     "security_hold": 1,
     "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 5,
+    "needs_checks": 4,
     "needs_review": 0,
-    "needs_merge_preflight": 10,
+    "needs_merge_preflight": 9,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -654,86 +654,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "route to central security triage"
-    },
-    {
-      "number": 119983,
-      "title": "fix(workboard): include operator notes in Start prompt",
-      "url": "https://github.com/openclaw/openclaw/pull/119983",
-      "branch": "clawsweeper/issue-openclaw-openclaw-119962",
-      "head_sha": "36d8fda796274bea9bef55a88a9b9d1d1ec43e57",
-      "cluster_id": "issue-openclaw-openclaw-119962",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119962.md",
-      "updated_at": "2026-08-07T06:39:09Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 103,
-        "counts": {
-          "SKIPPED": 27,
-          "SUCCESS": 71,
-          "FAILURE": 5
-        },
-        "blockers": [
-          "CI / checks-ui-e2e (1/4):FAILURE",
-          "CI / checks-ui-e2e (3/4):FAILURE",
-          "CI / checks-node-compact-large-1:FAILURE",
-          "CI / checks-node-compact-large-3:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209715304",
-            "submitted_at": "2026-08-06T22:56:08Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/119983#issuecomment-5209781669",
-            "submitted_at": "2026-08-06T23:07:36Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31128828754",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31128828754",
-        "cluster_id": "automerge-openclaw-openclaw-119983",
-        "published_at": "2026-08-06T23:54:02.000Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#119983",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(workboard): include operator notes in Start prompt",
-          "idempotency_key": null,
-          "reason": "autofix-only job cannot merge",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-ui-e2e (1/4):FAILURE; CI / checks-ui-e2e (3/4):FAILURE; CI / checks-node-compact-large-1:FAILURE",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }

@@ -1,0 +1,78 @@
+{
+  "repo": "openclaw/crabbox",
+  "cluster_id": "automerge-openclaw-crabbox-1252",
+  "mode": "autonomous",
+  "run_id": "31247880268",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31247880268",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": "openclaw/crabbox#1252:5203451081:2026-08-06T10:30:00Z",
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md",
+  "published_at": "2026-08-08T08:27:33.973Z",
+  "canonical": "#1252",
+  "canonical_issue": null,
+  "canonical_pr": "#1252",
+  "summary": "Make PR #1252 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#1252",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#1252",
+      "candidate_fix": "#1252",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "pushed": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "pushed",
+      "target": "https://github.com/openclaw/crabbox/pull/1252",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": "d03ceb53446bddbd511ff673ba76bd6d2ff6c143",
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#1252",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(worker): stop invalid Spot requests from retrying On-Demand",
+      "idempotency_key": null,
+      "reason": "job does not allow merge",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
