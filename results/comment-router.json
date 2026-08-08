@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:38:39.825Z",
+  "updated_at": "2026-08-08T14:38:56.314Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120436:5224160205:2026-08-08T08:50:25Z:clawsweeper_needs_human",
-      "comment_id": "5224160205",
-      "comment_version_key": "5224160205:2026-08-08T08:50:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120436#issuecomment-5224160205",
-      "comment_created_at": "2026-08-08T02:51:40Z",
-      "comment_updated_at": "2026-08-08T08:50:25Z",
-      "comment_body_sha256": "2dad19594608c2cda4e4e7941fbe2f95312ff89e98f45868cb5f13dc01c15408",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120436,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty, and current main changed the same chat-header/test surface after the PR base; merge safety requires resolving the rebase and reviewing the resultin... (sha=bb36368ff6d0619d389ccefbf123e09f27cb9a54)",
-      "expected_head_sha": "bb36368ff6d0619d389ccefbf123e09f27cb9a54",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T09:45:51.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/missing-terminal-button-3412cc",
-        "head_sha": "91efbbec7efa859f118147da2f6af07d8031ff4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120430:5224760871:2026-08-08T08:50:10Z:clawsweeper_auto_repair",
       "comment_id": "5224760871",
@@ -33281,6 +33248,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T14:38:39.825Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120576:5226576512:2026-08-08T14:38:19Z:clawsweeper_needs_human",
+      "comment_id": "5226576512",
+      "comment_version_key": "5226576512:2026-08-08T14:38:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120576#issuecomment-5226576512",
+      "comment_created_at": "2026-08-08T14:38:19Z",
+      "comment_updated_at": "2026-08-08T14:38:19Z",
+      "comment_body_sha256": "c8d7d6fff80b6016a7e3591485a2259ea4f318790b79a254cb6ff1b41ac58287",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120576,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies mocked command tests and static checks, but no after-fix service-manager run showing an unloaded definition removed. After addi... (sha=1612c07430fbf8b7a0684a63bc8f29811125fe16)",
+      "expected_head_sha": "1612c07430fbf8b7a0684a63bc8f29811125fe16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:38:56.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/uninstall-unloaded-launchagent",
+        "head_sha": "1612c07430fbf8b7a0684a63bc8f29811125fe16",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
