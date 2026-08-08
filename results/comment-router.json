@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T13:38:13.961Z",
+  "updated_at": "2026-08-08T13:38:17.411Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:963:5215419648:2026-08-08T08:12:04Z:clawsweeper_auto_repair",
-      "comment_id": "5215419648",
-      "comment_version_key": "5215419648:2026-08-08T08:12:04Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/963#issuecomment-5215419648",
-      "comment_created_at": "2026-08-07T09:40:35Z",
-      "comment_updated_at": "2026-08-08T08:12:04Z",
-      "comment_body_sha256": "746ca77270321813f60bc53f02b3024683f33d7e090754a6a480d515e1f465e3",
-      "repo": "openclaw/gogcli",
-      "issue_number": 963,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d63b32d65373cb2d486213e379c5b79ac938108f)",
-      "expected_head_sha": "d63b32d65373cb2d486213e379c5b79ac938108f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T08:20:43.643Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gmail-attachment-by-index",
-        "head_sha": "d63b32d65373cb2d486213e379c5b79ac938108f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:69:5182424182:2026-08-08T08:21:04Z:clawsweeper_needs_human",
       "comment_id": "5182424182",
@@ -33427,6 +33394,65 @@
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/mcporter:289:5226343562:2026-08-08T13:37:45Z:automerge",
+      "comment_id": "5226343562",
+      "comment_version_key": "5226343562:2026-08-08T13:37:45Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/289#issuecomment-5226343562",
+      "comment_created_at": "2026-08-08T13:37:45Z",
+      "comment_updated_at": "2026-08-08T13:37:45Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/mcporter",
+      "issue_number": 289,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-08T13:38:13.223Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/browser-relay-auth-v2",
+        "head_sha": "5d8f7c0410e90e3d82c4ed4f33294b4fe924da06",
+        "cluster_id": "automerge-openclaw-mcporter-289",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-mcporter-289.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-mcporter-289.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
           "label": null,
           "job_path": null
         },
