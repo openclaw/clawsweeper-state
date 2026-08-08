@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:32:52.587Z",
+  "updated_at": "2026-08-08T14:33:01.890Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120525:5225510923:2026-08-08T09:27:03Z:re_review",
-      "comment_id": "5225510923",
-      "comment_version_key": "5225510923:2026-08-08T09:27:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120525#issuecomment-5225510923",
-      "comment_created_at": "2026-08-08T09:27:03Z",
-      "comment_updated_at": "2026-08-08T09:27:03Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120525,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T09:44:50.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/pr-wrapper-octopool-reads",
-        "head_sha": "67503f674879cde59b7afd9baf97de14d13a55bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120483:5225511414:2026-08-08T09:27:13Z:re_review",
       "comment_id": "5225511414",
@@ -33389,6 +33342,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0004-doctor-structured-repair",
         "head_sha": "6a2a0c2bc163d600cd1ef52d57c8f10993f06251",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1111:5206348947:2026-08-08T14:23:45Z:clawsweeper_needs_human",
+      "comment_id": "5206348947",
+      "comment_version_key": "5206348947:2026-08-08T14:23:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1111#issuecomment-5206348947",
+      "comment_created_at": "2026-08-06T14:49:29Z",
+      "comment_updated_at": "2026-08-08T14:23:45Z",
+      "comment_body_sha256": "a85016fd50b474e1430d2f0374bb5528603928b3ec54271364b461c2391eef9f",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1111,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked screenshots directly show the intended replay on 8d0f5480, but final head be50098 has reported test results only; add a red... (sha=be50098bae12e6291ad60b2196ca50996837f94e)",
+      "expected_head_sha": "be50098bae12e6291ad60b2196ca50996837f94e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:33:01.890Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/companion-main-20260806",
+        "head_sha": "be50098bae12e6291ad60b2196ca50996837f94e",
         "cluster_id": null,
         "job_path": null
       }
