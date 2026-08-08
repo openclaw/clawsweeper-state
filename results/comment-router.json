@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T00:57:59.252Z",
+  "updated_at": "2026-08-08T00:57:59.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120285:5222277800:2026-08-07T21:41:27Z:re_review",
-      "comment_id": "5222277800",
-      "comment_version_key": "5222277800:2026-08-07T21:41:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120285#issuecomment-5222277800",
-      "comment_created_at": "2026-08-07T21:41:27Z",
-      "comment_updated_at": "2026-08-07T21:41:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "becd6990-92a8-11f1-86e4-27b268dce933",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120285,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T21:42:07.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refactor-steer-admission",
-        "head_sha": "d46a8f36cd2c5d6f0e58e54bfc500438f2e90775",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112496:5078535718:2026-07-25T12:47:55Z:re_review",
       "comment_id": "5078535718",
@@ -32032,6 +31984,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/audit-color-tokens",
         "head_sha": "cce45b382943b0d6fe68b371d38096d12456d40d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:58:5223099896:2026-08-08T00:57:20Z:clawsweeper_needs_human",
+      "comment_id": "5223099896",
+      "comment_version_key": "5223099896:2026-08-08T00:57:20Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/58#issuecomment-5223099896",
+      "comment_created_at": "2026-08-07T23:12:36Z",
+      "comment_updated_at": "2026-08-08T00:57:20Z",
+      "comment_body_sha256": "d161dda5d5f776c8af6f9eb5753dec92f3ac8f6dc4fd7f00aecd8ef5ca6564f9",
+      "repo": "openclaw/carapace",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This member-authored PR has sufficient proof and no actionable repair finding; it needs ordinary human merge review rather than an automated repair lane. (sha=6169d0ebb02002f96302b670c520f81c95b1e00b)",
+      "expected_head_sha": "6169d0ebb02002f96302b670c520f81c95b1e00b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T00:57:59.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/audit-avatar",
+        "head_sha": "6169d0ebb02002f96302b670c520f81c95b1e00b",
         "cluster_id": null,
         "job_path": null
       }
