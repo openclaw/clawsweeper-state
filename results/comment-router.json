@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:43:20.648Z",
+  "updated_at": "2026-08-08T22:44:25.567Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:92499:5140723886:2026-07-31T08:05:17Z:re_review",
-      "comment_id": "5140723886",
-      "comment_version_key": "5140723886:2026-07-31T08:05:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92499#issuecomment-5140723886",
-      "comment_created_at": "2026-07-31T08:05:17Z",
-      "comment_updated_at": "2026-07-31T08:05:17Z",
-      "comment_body_sha256": "c7c8659a4625ed1f4d2f6e0a09c00c25455366846b09ed9849051033b48693dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92499,
-      "author": "SYU8384",
-      "author_id": 62822461,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review: implementation is unchanged; the head refresh at 229bfe7e24858c1ff2f751f49014d26860cd5f59 retries ci after github's synthetic-merge checkout timed out. please review the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T18:41:33.737Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:92499:5140939600:2026-07-31T08:31:58Z:re_review",
       "comment_id": "5140939600",
@@ -32316,6 +32289,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T22:43:20.648Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120534:5225762219:2026-08-08T22:43:47Z:clawsweeper_needs_human",
+      "comment_id": "5225762219",
+      "comment_version_key": "5225762219:2026-08-08T22:43:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120534#issuecomment-5225762219",
+      "comment_created_at": "2026-08-08T10:46:25Z",
+      "comment_updated_at": "2026-08-08T22:43:47Z",
+      "comment_body_sha256": "96833915ceb31698ee42a1bf8b49710ad5e5af90f4d8ea704f017999af1fe698",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120534,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Refresh the Codex contract evidence** - The PR body cites Codex 0.146.1 while the stated base and current main pin 0.147.0, so the claimed direct protocol inspection does not establish...; Review finding: [medium] Refresh the Codex contract evidence — extensions/codex/package.json:11 (sha=3626e21a8c90132fa982b87a04a88ea857cc7b50)",
+      "expected_head_sha": "3626e21a8c90132fa982b87a04a88ea857cc7b50",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:44:25.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-f1r-canonical-execution-context-carrier",
+        "head_sha": "3626e21a8c90132fa982b87a04a88ea857cc7b50",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
