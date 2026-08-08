@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:31:48.368Z",
+  "updated_at": "2026-08-08T09:32:41.145Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120456:5224419731:2026-08-08T04:05:42Z:re_review",
-      "comment_id": "5224419731",
-      "comment_version_key": "5224419731:2026-08-08T04:05:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120456#issuecomment-5224419731",
-      "comment_created_at": "2026-08-08T04:05:42Z",
-      "comment_updated_at": "2026-08-08T04:05:42Z",
-      "comment_body_sha256": "ca09a25bcf569e9ff2c1590f4b1fa8320d689467e800ed0be7e2f6dcf5c516c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120456,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:42:31.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-lint-gate-tests",
-        "head_sha": "629618e42d3664783bdbd0013c7f2223a427b45f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:92649:5224450300:2026-08-08T04:14:57Z:re_review",
       "comment_id": "5224450300",
@@ -33152,6 +33105,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/audit-dropdown",
         "head_sha": "c5c10b3151f5acce9592fec76372cd9e7d6ebbf9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:58:5223099896:2026-08-08T09:27:09Z:clawsweeper_needs_human",
+      "comment_id": "5223099896",
+      "comment_version_key": "5223099896:2026-08-08T09:27:09Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/58#issuecomment-5223099896",
+      "comment_created_at": "2026-08-07T23:12:36Z",
+      "comment_updated_at": "2026-08-08T09:27:09Z",
+      "comment_body_sha256": "7510c76f92199935179b3cb4583cfbf0f6720529ac818a94309f410f2b0bd31c",
+      "repo": "openclaw/carapace",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is identified; as a member-authored PR, this requires ordinary human merge review rather than automated cleanup. (sha=6169d0ebb02002f96302b670c520f81c95b1e00b)",
+      "expected_head_sha": "6169d0ebb02002f96302b670c520f81c95b1e00b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:32:41.145Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/audit-avatar",
+        "head_sha": "6169d0ebb02002f96302b670c520f81c95b1e00b",
         "cluster_id": null,
         "job_path": null
       }
