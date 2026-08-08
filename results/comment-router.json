@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T18:09:36.677Z",
+  "updated_at": "2026-08-08T18:09:37.525Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119717:5196718968:2026-08-08T13:49:51Z:clawsweeper_needs_human",
-      "comment_id": "5196718968",
-      "comment_version_key": "5196718968:2026-08-08T13:49:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119717#issuecomment-5196718968",
-      "comment_created_at": "2026-08-05T20:02:03Z",
-      "comment_updated_at": "2026-08-08T13:49:51Z",
-      "comment_body_sha256": "51fa8c8bd3fdc8999927e761c5e380756f0c4fb916625c63d79231dd69704bfe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119717,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has focused mock-based coverage, but no recorded real Telegram run showing the final capped menu and scoped publication behavior after the change. (sha=2ecc99d18cf845b9ce059fffbc49228e2d52a239)",
-      "expected_head_sha": "2ecc99d18cf845b9ce059fffbc49228e2d52a239",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:50:43.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89252",
-        "head_sha": "2ecc99d18cf845b9ce059fffbc49228e2d52a239",
-        "cluster_id": "automerge-openclaw-openclaw-119717",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119717.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2457:5081410241:2026-08-08T13:50:04Z:clawsweeper_auto_repair",
       "comment_id": "5081410241",
@@ -32894,6 +32847,39 @@
         "kind": "pull_request",
         "branch": "fix/native-eval-run-acceptance",
         "head_sha": "9f4490e8e4370cbc752404a1becce42d5a6a69f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-08T18:08:57Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-08T18:08:57Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-08T18:08:57Z",
+      "comment_body_sha256": "e928fd60a9f6293ba47b5d07414053b251bed329fe14c7b7acd9bb6c23f3964b",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CrawlKit is a direct runtime dependency across configuration, storage, remote, vector, and CLI paths; the PR records no Gitcrawl test or runtime smoke result at v0.14.5. (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T18:09:37.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
         "cluster_id": null,
         "job_path": null
       }
