@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:45:44.913Z",
+  "updated_at": "2026-08-08T21:45:46.906Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawrouter:110:5227132676:2026-08-08T17:01:41Z:re_review",
-      "comment_id": "5227132676",
-      "comment_version_key": "5227132676:2026-08-08T17:01:41Z",
-      "comment_url": "https://github.com/openclaw/clawrouter/pull/110#issuecomment-5227132676",
-      "comment_created_at": "2026-08-08T17:01:41Z",
-      "comment_updated_at": "2026-08-08T17:01:41Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "d4a40ce0-934a-11f1-90d3-57853819dc22",
-      "repo": "openclaw/clawrouter",
-      "issue_number": 110,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:02:17.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gpt-5-6-reasoning-efforts",
-        "head_sha": "c35be57b80500f831656e1ab8682d335f90862cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2766:5226984029:2026-08-08T17:03:57Z:clawsweeper_auto_repair",
       "comment_id": "5226984029",
@@ -32378,6 +32330,39 @@
         "kind": "pull_request",
         "branch": "fix/delegated-approval-handoff-116519",
         "head_sha": "aa1972ba5a8eeeee8804acba7612839c284ecd17",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-08T21:29:12Z:clawsweeper_needs_human",
+      "comment_id": "5169562551",
+      "comment_version_key": "5169562551:2026-08-08T21:29:12Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/45#issuecomment-5169562551",
+      "comment_created_at": "2026-08-03T17:21:34Z",
+      "comment_updated_at": "2026-08-08T21:29:12Z",
+      "comment_body_sha256": "a719bc5808313bed93315f17fba83961c9ab0142e27efd4d6936433848dfb7e6",
+      "repo": "openclaw/libterminal",
+      "issue_number": 45,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint run in the contributor check scripts, so their minor releases can change accepted formatting or lint diagnostics even though the current tree passes CI. (sha=0d905fed759afd82db16409c41e75ae13cd5f04d)",
+      "expected_head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T21:45:46.906Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-a6da792cd5",
+        "head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
         "cluster_id": null,
         "job_path": null
       }
