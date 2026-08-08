@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:44:47.366Z",
+  "updated_at": "2026-08-08T09:45:11.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115371:5118110681:2026-08-08T04:45:58Z:clawsweeper_needs_human",
-      "comment_id": "5118110681",
-      "comment_version_key": "5118110681:2026-08-08T04:45:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115371#issuecomment-5118110681",
-      "comment_created_at": "2026-07-29T13:02:46Z",
-      "comment_updated_at": "2026-08-08T04:45:58Z",
-      "comment_body_sha256": "4b4c1268aa245e541b78aec9f71953106dfecb6420a0dd980248ca43025d885d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115371,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restack this PR to the bootstrap-export slice (P1)** - This branch removes the dedicated commit-review dispatch while also carrying release, UI, i18n, and other unrelated changes. That makes a dirty 2,007-file P...; Review finding: [P1] Restack this PR to the bootstrap-export slice — .github/workflows/clawsweeper-dispatch.yml:318 - [medium] Separate unrelated release automation changes — .git... (sha=e572545c3813eb7867a343af8c2312799f69853c)",
-      "expected_head_sha": "e572545c3813eb7867a343af8c2312799f69853c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T04:46:47.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-guided-export-v2",
-        "head_sha": "e572545c3813eb7867a343af8c2312799f69853c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115371:5124053195:2026-07-29T22:33:39Z:re_review",
       "comment_id": "5124053195",
@@ -33066,6 +33033,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-08T09:44:21Z:clawsweeper_needs_human",
+      "comment_id": "5225566532",
+      "comment_version_key": "5225566532:2026-08-08T09:44:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225566532",
+      "comment_created_at": "2026-08-08T09:44:21Z",
+      "comment_updated_at": "2026-08-08T09:44:21Z",
+      "comment_body_sha256": "82987e6631978ffe35c4e4d47988b75c74bf15f8183cf4b0c4415ec4c10affe2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120550,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentional legacy-CLI change replaces unproven numeric terminal context with an unavailable marker; direct Codex source inspection is still required by repository policy before m... (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
+      "expected_head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T09:45:11.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120536",
+        "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
+        "cluster_id": "issue-openclaw-openclaw-120536",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
