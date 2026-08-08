@@ -1,0 +1,117 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-99277",
+  "mode": "autonomous",
+  "run_id": "31278339582",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31278339582",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-99277.md",
+  "published_at": "2026-08-08T21:43:21.814Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/99277",
+  "canonical_pr": null,
+  "summary": "Current main 57b0e29 still lacks Mattermost automatic acknowledgements. A narrow plugin-local repair is ready to implement, but this worker filesystem is read-only: branch edits and focused validation cannot run. The artifact corrects stale cleanup guidance: acknowledgements are retained; the retired messages.removeAckAfterReply key must not be revived.",
+  "actions": [
+    {
+      "target": "#99277",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker filesystem; no code or test artifact can be created here."
+    },
+    {
+      "target": "#15634",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Related area, distinct remaining scope."
+    },
+    {
+      "target": "#80426",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#119124",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Already closed; not an editable canonical fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-99277",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#99277",
+      "candidate_fix": null,
+      "reason": "Narrow replacement fix artifact for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#99277",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
