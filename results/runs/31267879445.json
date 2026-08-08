@@ -1,0 +1,135 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-97601",
+  "mode": "autonomous",
+  "run_id": "31267879445",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31267879445",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-97601.md",
+  "published_at": "2026-08-08T17:52:52.502Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/97601",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/97601",
+  "canonical_pr": null,
+  "summary": "#97601 is a reproducible, non-security dispatch-policy bug. A narrow new fix PR is warranted, but this read-only shallow checkout lacks node_modules and cannot prove or create the requested branch against preflight main 13322b2; the executor must refresh main, implement, and validate the supplied artifact.",
+  "actions": [
+    {
+      "target": "#97601",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the supplied checkout state; the executor can apply the narrow artifact on refreshed main."
+    },
+    {
+      "target": "#79859",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Distinct surface and product scope; leave open."
+    },
+    {
+      "target": "#85087",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#85104",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-97601",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97601",
+      "candidate_fix": null,
+      "reason": "Fresh writable checkout required for implementation and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120652",
+      "branch": "clawsweeper/issue-openclaw-openclaw-97601",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120652",
+      "commit": "730963df60a65fc60858847428cee953e78e0c32",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#97601",
+      "pr": "https://github.com/openclaw/openclaw/pull/120652",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120652",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120652",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix: suppress fast-auto status updates when progress is hidden",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
