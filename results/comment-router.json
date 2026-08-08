@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T11:33:32.262Z",
+  "updated_at": "2026-08-08T11:33:50.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabline:256:5168896416:2026-08-08T06:28:50Z:clawsweeper_needs_human",
-      "comment_id": "5168896416",
-      "comment_version_key": "5168896416:2026-08-08T06:28:50Z",
-      "comment_url": "https://github.com/openclaw/crabline/pull/256#issuecomment-5168896416",
-      "comment_created_at": "2026-08-03T16:14:34Z",
-      "comment_updated_at": "2026-08-08T06:28:50Z",
-      "comment_body_sha256": "aa9a5b7af17dbf1a67c9aec27be4ebbc915d78635a009b00063e63f343117e2e",
-      "repo": "openclaw/crabline",
-      "issue_number": 256,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Baileys rc14 is an upstream pre-release and may change the protocol behavior exercised by the compatibility suite, even though it is not shipped in Crabline’s runtime package. (sha=7696217cfbfad9462bb878fb0156c88d19185ccb)",
-      "expected_head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T06:30:02.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
-        "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:217:4969657438:2026-08-08T06:31:26Z:clawsweeper_auto_repair",
       "comment_id": "4969657438",
@@ -33295,6 +33262,55 @@
         "head_sha": "f801c1885fbb8e9a808b1d9d6a7bc54632f9a3bf",
         "cluster_id": null,
         "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117911:5225804181:2026-08-08T10:59:49Z:re_review",
+      "comment_id": "5225804181",
+      "comment_version_key": "5225804181:2026-08-08T10:59:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117911#issuecomment-5225804181",
+      "comment_created_at": "2026-08-08T10:59:49Z",
+      "comment_updated_at": "2026-08-08T10:59:49Z",
+      "comment_body_sha256": "6f8eeac5a1050b462edf2cdd755c57381f7da89eb6cf3acb325904e4b88cf7ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117911,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "forced_replay": true,
+      "attempt_id": "recover-pr117911-comment5225804181",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T11:33:47.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-69242",
+        "head_sha": "76abc4d5400690ee5b0de7547f7e8ac2bb70cf63",
+        "cluster_id": "automerge-openclaw-openclaw-117911",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117911.md"
       },
       "actions": [
         {
