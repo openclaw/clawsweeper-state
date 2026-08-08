@@ -1,0 +1,124 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120567",
+  "mode": "autonomous",
+  "run_id": "31255589161",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31255589161",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120567.md",
+  "published_at": "2026-08-08T12:18:02.728Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120567",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120567",
+  "canonical_pr": null,
+  "summary": "Confirmed on main 90acd2bc: finished-session poll renders only the 2,000-character tail although the full retained aggregate is available only in non-model-visible details. Plan one narrow credited fix PR; local implementation/validation awaits a writable checkout with dependencies.",
+  "actions": [
+    {
+      "target": "#120567",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120567",
+      "candidate_fix": null,
+      "reason": "Open issue is the canonical, reproducible existing-behavior bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120567",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120567",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is sufficient; no configuration, retention-policy, schema, or product-direction change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120567",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120567",
+      "candidate_fix": null,
+      "reason": "Artifact directs the executor to make and validate the narrow repair on clawsweeper/issue-openclaw-openclaw-120567."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120567",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120567",
+      "candidate_fix": null,
+      "reason": "The job permits one new fix PR and prohibits merge/close."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "ready": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120583",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120567",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120583",
+      "commit": "8af7adae435dfb85e17970faa41fb6be367062ec",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120567",
+      "pr": "https://github.com/openclaw/openclaw/pull/120583",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120583",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120583",
+      "action": "merge_canonical",
+      "status": "ready",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(process): disclose omitted retained output in finished polls",
+      "idempotency_key": null,
+      "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}

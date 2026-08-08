@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-08T11:53:29.798Z",
-  "count": 10,
+  "generated_at": "2026-08-08T12:18:56.286Z",
+  "count": 12,
   "summary": {
-    "open_prs": 10,
+    "open_prs": 12,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 0,
     "mergeability_unknown": 0,
-    "needs_checks": 2,
+    "needs_checks": 3,
     "needs_review": 0,
-    "needs_merge_preflight": 10,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 12,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,109 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120586,
+      "title": "fix(control-ui): prioritize session provider quota window",
+      "url": "https://github.com/openclaw/openclaw/pull/120586",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120557",
+      "head_sha": "ab862fb047d07894d17d4fb9e32f971f3f046396",
+      "cluster_id": "issue-openclaw-openclaw-120557",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120557.md",
+      "updated_at": "2026-08-08T12:10:07Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 100,
+        "counts": {
+          "SKIPPED": 24,
+          "SUCCESS": 75,
+          "IN_PROGRESS": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-large-8:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
+    {
+      "number": 120583,
+      "title": "fix(process): disclose omitted retained output in finished polls",
+      "url": "https://github.com/openclaw/openclaw/pull/120583",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120567",
+      "head_sha": "8af7adae435dfb85e17970faa41fb6be367062ec",
+      "cluster_id": "issue-openclaw-openclaw-120567",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120567.md",
+      "updated_at": "2026-08-08T12:05:21Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 124,
+        "counts": {
+          "SKIPPED": 40,
+          "SUCCESS": 83,
+          "NEUTRAL": 1
+        },
+        "blockers": []
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": {
+        "run_id": "31255589161",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31255589161",
+        "cluster_id": "issue-openclaw-openclaw-120567",
+        "published_at": "2026-08-08T12:18:02.728Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#120583",
+          "action": "merge_canonical",
+          "status": "ready",
+          "classification": "fix_pr",
+          "canonical": null,
+          "candidate_fix": null,
+          "title": "fix(process): disclose omitted retained output in finished polls",
+          "idempotency_key": null,
+          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
+          "merged_at": null,
+          "merge_commit_sha": null,
+          "live_state": null,
+          "live_updated_at": null
+        }
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+    },
     {
       "number": 120569,
       "title": "fix(ai): mark missing OpenAI Completions usage unavailable",
