@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:10:11.346Z",
+  "updated_at": "2026-08-08T09:10:37.479Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:488:5179744694:2026-08-08T04:08:28Z:clawsweeper_needs_human",
-      "comment_id": "5179744694",
-      "comment_version_key": "5179744694:2026-08-08T04:08:28Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/488#issuecomment-5179744694",
-      "comment_created_at": "2026-08-04T13:29:29Z",
-      "comment_updated_at": "2026-08-08T04:08:28Z",
-      "comment_body_sha256": "056870871c1d2738f427ddbd3784cc695a69b3493833f106f8083592eeb556e7",
-      "repo": "openclaw/acpx",
-      "issue_number": 488,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generated lockfile also upgrades the optional wasm32-wasi Rolldown binding’s @napi-rs/wasm-runtime from 1.1.6 to 1.2.2; the reported Linux Node 22/24 checks do not independently e... (sha=17c1d03840bec3db1ae609530c74df7856f9857e)",
-      "expected_head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T04:18:28.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/production-ec51b0fbd6",
-        "head_sha": "17c1d03840bec3db1ae609530c74df7856f9857e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-08T04:21:02Z:clawsweeper_needs_human",
       "comment_id": "4854073498",
@@ -33248,6 +33215,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-08T09:09:54Z:clawsweeper_needs_human",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-08T09:09:54Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-08T09:09:54Z",
+      "comment_body_sha256": "38594630d0333dee6fe0f77a689538b1fdbd616889db77738d952b7995ea69bb",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging records a version already published from the tagged head, so a release owner should confirm the published package and downstream pins are intentionally this baseline. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T09:10:37.479Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
