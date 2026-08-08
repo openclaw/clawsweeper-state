@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:43:49.091Z",
+  "updated_at": "2026-08-08T19:44:04.623Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120421:5226655711:2026-08-08T14:59:19Z:re_review",
-      "comment_id": "5226655711",
-      "comment_version_key": "5226655711:2026-08-08T14:59:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120421#issuecomment-5226655711",
-      "comment_created_at": "2026-08-08T14:59:19Z",
-      "comment_updated_at": "2026-08-08T14:59:19Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120421,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:43:24.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-gate-sharded-oxlint-20260808",
-        "head_sha": "fc9785eb002266a0c858d5678e79c89517e651fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117646:5226668977:2026-08-08T15:02:47Z:re_review",
-      "comment_id": "5226668977",
-      "comment_version_key": "5226668977:2026-08-08T15:02:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117646#issuecomment-5226668977",
-      "comment_created_at": "2026-08-08T15:02:47Z",
-      "comment_updated_at": "2026-08-08T15:02:47Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117646,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:43:24.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-sidecar-stop-rejections",
-        "head_sha": "0f2e9064ca10e14bb0920c955c92a73d5654f940",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120457:5226681375:2026-08-08T15:05:56Z:re_review",
       "comment_id": "5226681375",
@@ -32141,6 +32047,39 @@
       ]
     },
     {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110166:5007389289:2026-08-08T19:42:55Z:clawsweeper_needs_human",
+      "comment_id": "5007389289",
+      "comment_version_key": "5007389289:2026-08-08T19:42:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110166#issuecomment-5007389289",
+      "comment_created_at": "2026-07-17T20:54:17Z",
+      "comment_updated_at": "2026-08-08T19:42:55Z",
+      "comment_body_sha256": "1e0904aae48d8d545a17c42771d68be83a9124c190e14dad4b0a84de71a2242e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty; rebasing must preserve the controller's route-freshness and owner-qualified verdict-key contracts rather than transplanting the old page state. (sha=9f50acbe9e7b6acea7d1eaae2c12cd1d27ad6752)",
+      "expected_head_sha": "9f50acbe9e7b6acea7d1eaae2c12cd1d27ad6752",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:43:33.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/hydrate-skill-security-verdicts",
+        "head_sha": "9f50acbe9e7b6acea7d1eaae2c12cd1d27ad6752",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
       "idempotency_key": "comment-router:openclaw/openclaw:120177:5227796214:2026-08-08T19:43:12Z:re_review",
       "comment_id": "5227796214",
       "comment_version_key": "5227796214:2026-08-08T19:43:12Z",
@@ -32334,6 +32273,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:166:5209972960:2026-08-08T19:43:19Z:clawsweeper_needs_human",
+      "comment_id": "5209972960",
+      "comment_version_key": "5209972960:2026-08-08T19:43:19Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/166#issuecomment-5209972960",
+      "comment_created_at": "2026-08-06T23:36:13Z",
+      "comment_updated_at": "2026-08-08T19:43:19Z",
+      "comment_body_sha256": "2079735fccdb9afebed292d64fdb24089dbcbaae2ee885cb343b43eea3758c77",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing the flag restores TruffleHog’s default update/version-check behavior on older installations; the supplied live proof covers 3.96.0, not its latency or network behavior on old... (sha=7c47948066519be99d241cc571ce0ab499f4d717)",
+      "expected_head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:44:04.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trufflehog-no-update",
+        "head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
