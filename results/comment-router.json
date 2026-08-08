@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:58:06.864Z",
+  "updated_at": "2026-08-08T14:58:07.316Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120534:5225617041:2026-08-08T10:00:44Z:re_review",
-      "comment_id": "5225617041",
-      "comment_version_key": "5225617041:2026-08-08T10:00:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120534#issuecomment-5225617041",
-      "comment_created_at": "2026-08-08T10:00:44Z",
-      "comment_updated_at": "2026-08-08T10:00:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120534,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:54.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-f1r-canonical-execution-context-carrier",
-        "head_sha": "30856229551206b965f8978b1b5604ffb61fe9f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120523:5225620041:2026-08-08T10:01:40Z:re_review",
       "comment_id": "5225620041",
@@ -33312,6 +33265,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/apps/api/hono-4.12.34",
         "head_sha": "05268005a8229bea11a35adc3cd329dc2d132f69",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-08T14:57:37Z:clawsweeper_needs_human",
+      "comment_id": "5119082703",
+      "comment_version_key": "5119082703:2026-08-08T14:57:37Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
+      "comment_created_at": "2026-07-29T14:25:13Z",
+      "comment_updated_at": "2026-08-08T14:57:37Z",
+      "comment_body_sha256": "50c74fd34782d1d5048e79a7a723a40771ac9d45205b91d6e8f2b2f7cc90d44d",
+      "repo": "openclaw/shellbench",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes which completed native Claude Code runs can qualify as trajectory-complete benchmark evidence; maintainers must explicitly accept that evidence-policy boundary. (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
+      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:58:07.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-claude-trajectory-eligibility",
+        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
         "cluster_id": null,
         "job_path": null
       }
