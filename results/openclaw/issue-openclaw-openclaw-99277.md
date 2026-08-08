@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-99277"
 mode: "autonomous"
-run_id: "31280728201"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31280728201"
+run_id: "31282628792"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31282628792"
 head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
-workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-08T22:13:54.747Z"
-canonical: "#99277"
-canonical_issue: "#99277"
+workflow_conclusion: "failure"
+result_status: "planned"
+published_at: "2026-08-08T23:15:59.826Z"
+canonical: "https://github.com/openclaw/openclaw/issues/99277"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/99277"
 canonical_pr: null
-actions_total: 5
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31280728201](https://github.com/openclaw/clawsweeper/actions/runs/31280728201)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31282628792](https://github.com/openclaw/clawsweeper/actions/runs/31282628792)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: #99277
+Canonical: https://github.com/openclaw/openclaw/issues/99277
 
 ## Summary
 
-#99277 reproduces on current main. A narrow plugin-local fix is ready to implement, but this read-only worker cannot edit, validate, commit, push, or open the required PR. The supplied cleanup requirement conflicts with current main: the cleanup setting is retired, so the canonical repair must retain static acknowledgements.
+Current main 39bbdd61423229e0d74eb0c0d72440ffa3b443c8 still reproduces #99277. Plan a narrow new Mattermost repair PR using the public acknowledgement SDK and durable afterRecord seam; static acknowledgements must remain because cleanup configuration is retired.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,13 @@ Canonical: #99277
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #99277 | keep_canonical | planned | canonical | The hydrated issue remains open and is the focused canonical report for this current shared-config defect. |
-| #99277 | build_fix_artifact | planned | canonical | Use the owner-local public afterRecord seam; do not revive the retired cleanup configuration. |
-| #15634 | keep_related | planned | related | Related Mattermost work, but independent scope. |
-| #80426 | keep_closed | skipped | superseded | Already closed; no closure mutation. |
-| #119124 | keep_closed | skipped | superseded | Already closed; no closure mutation. |
+| #99277 | keep_canonical | planned | canonical | Focused current bug in an established shared configuration contract. |
+| #99277 | fix_needed | planned | canonical | No viable open PR exists; implement the existing shared contract without reviving retired cleanup compatibility. |
+| cluster:issue-openclaw-openclaw-99277 | build_fix_artifact | planned | canonical | Create the narrow credited implementation artifact for deterministic PR creation. |
+| cluster:issue-openclaw-openclaw-99277 | open_fix_pr | planned | canonical | The job explicitly authorizes a single new implementation PR. |
+| #15634 | keep_related | planned | related | Related umbrella, but independent of the acknowledgement-contract bug. |
+| #80426 | keep_closed | skipped | superseded | Historical evidence only. |
+| #119124 | keep_closed | skipped | superseded | Historical evidence only. |
 
 ## Needs Human
 
