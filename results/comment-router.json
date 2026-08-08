@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:37:19.440Z",
+  "updated_at": "2026-08-08T17:37:47.658Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-08T13:41:04Z:clawsweeper_needs_human",
-      "comment_id": "5219412032",
-      "comment_version_key": "5219412032:2026-08-08T13:41:04Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
-      "comment_created_at": "2026-08-07T16:13:44Z",
-      "comment_updated_at": "2026-08-08T13:41:04Z",
-      "comment_body_sha256": "f6812331c5859451f58a52bb3423df3beb63fe7c8d7830fced9994acbc02e07a",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3438,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until CodeQL Light completes on this head, a compatibility problem in the updated third-party action could prevent one or more scan profiles from initializing or uploading security re... (sha=faacfb0c32a7bf702b04bc38b427139d8fc58cfa)",
-      "expected_head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T13:41:41.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github-actions-97c731b4de",
-        "head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:31:4599109781:2026-08-08T13:31:48Z:clawsweeper_auto_repair",
       "comment_id": "4599109781",
@@ -32928,6 +32895,53 @@
       "status": "skipped",
       "processed_at": "2026-08-08T17:37:19.440Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1252:5203255124:2026-08-08T17:23:33Z:clawsweeper_auto_merge",
+      "comment_id": "5203255124",
+      "comment_version_key": "5203255124:2026-08-08T17:23:33Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203255124",
+      "comment_created_at": "2026-08-06T10:11:48Z",
+      "comment_updated_at": "2026-08-08T17:23:33Z",
+      "comment_body_sha256": "278312532f82ee47b7b5e065da4a6dc52cfeec5704b48e491487330cd2e7dab1",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=cc425267c603456a666e82740a979ec861ff5ba9)",
+      "expected_head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T17:37:47.658Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
