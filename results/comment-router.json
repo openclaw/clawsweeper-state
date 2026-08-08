@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:58:18.737Z",
+  "updated_at": "2026-08-08T15:00:33.149Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120560:5225653675:2026-08-08T10:12:00Z:re_review",
-      "comment_id": "5225653675",
-      "comment_version_key": "5225653675:2026-08-08T10:12:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120560#issuecomment-5225653675",
-      "comment_created_at": "2026-08-08T10:12:00Z",
-      "comment_updated_at": "2026-08-08T10:12:00Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120560,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T10:36:54.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/acp-projector-single-dispatch",
-        "head_sha": "b14a6861fd98e956b24e892f06be899b40e4a943",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118927:5225655014:2026-08-08T10:12:25Z:re_review",
       "comment_id": "5225655014",
@@ -33256,6 +33209,39 @@
         "kind": "pull_request",
         "branch": "codex/agent-runtime-path-cleanup",
         "head_sha": "3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/osc-progress:31:5217992134:2026-08-08T14:59:57Z:clawsweeper_needs_human",
+      "comment_id": "5217992134",
+      "comment_version_key": "5217992134:2026-08-08T14:59:57Z",
+      "comment_url": "https://github.com/steipete/osc-progress/pull/31#issuecomment-5217992134",
+      "comment_created_at": "2026-08-07T13:59:11Z",
+      "comment_updated_at": "2026-08-08T14:59:57Z",
+      "comment_body_sha256": "64e4754f91bce699363946e873d8a7c396c3bd8d943d5bd1a6364137fcd8cc44",
+      "repo": "steipete/osc-progress",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt, Oxlint, and Rolldown ship native platform bindings; the sole successful CI job is Ubuntu, so a macOS or Windows frozen install remains unverified. (sha=0d658f23ec01d59a8b8787440348f42e8586efa9)",
+      "expected_head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T15:00:33.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
+        "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
         "cluster_id": null,
         "job_path": null
       }
