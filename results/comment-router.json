@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T09:20:35.191Z",
+  "updated_at": "2026-08-08T09:20:57.643Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120450:5224536397:2026-08-08T04:37:26Z:re_review",
-      "comment_id": "5224536397",
-      "comment_version_key": "5224536397:2026-08-08T04:37:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120450#issuecomment-5224536397",
-      "comment_created_at": "2026-08-08T04:37:26Z",
-      "comment_updated_at": "2026-08-08T04:37:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "dc11e320-92e2-11f1-839f-ed960d5eadce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120450,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T04:38:03.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gracious-bhabha-e8ae70",
-        "head_sha": "adb90f8d0c6775a86d9699d58ee3bf47c8ee3386",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120460:5224537265:2026-08-08T04:37:36Z:clawsweeper_auto_repair",
       "comment_id": "5224537265",
@@ -33240,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "feat/dry-run-preflight",
         "head_sha": "588ab3eabacc2634776cecd1f86427fa8e7a4946",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-08T09:13:08Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-08T09:13:08Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-08T09:13:08Z",
+      "comment_body_sha256": "c5a77d2704bf86d46457e7dc069d28f9221cbc8623db1050b26596f00beada6a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This open PR already contains a focused implementation, passing repository checks, and sufficient real behavior proof; it needs ordinary maintainer merge review rather than repair aut... (sha=cc70d190dbcea71a6f04b117ad2f74fe5054fc81)",
+      "expected_head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T09:20:57.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "cc70d190dbcea71a6f04b117ad2f74fe5054fc81",
         "cluster_id": null,
         "job_path": null
       }
