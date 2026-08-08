@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T16:49:42.073Z",
+  "updated_at": "2026-08-08T16:49:43.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119538:5226092246:2026-08-08T12:25:18Z:re_review",
-      "comment_id": "5226092246",
-      "comment_version_key": "5226092246:2026-08-08T12:25:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119538#issuecomment-5226092246",
-      "comment_created_at": "2026-08-08T12:25:18Z",
-      "comment_updated_at": "2026-08-08T12:25:18Z",
-      "comment_body_sha256": "c31673869d20f31e6926620f47a0b47c10f6f98d88efa5eab3a3383fd17a03b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119538,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T12:41:16.551Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-07-qqbot-api-error-redaction",
-        "head_sha": "0ae0d00acfa0b37bdcc14e1f72e51cf375d32014",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120527:5226144706:2026-08-08T12:40:44Z:re_review",
       "comment_id": "5226144706",
@@ -33413,6 +33366,39 @@
         "head_sha": "da69916f9d6b29e181558f32d615fb28182daa4a",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119717:5196718968:2026-08-08T16:46:51Z:clawsweeper_needs_human",
+      "comment_id": "5196718968",
+      "comment_version_key": "5196718968:2026-08-08T16:46:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119717#issuecomment-5196718968",
+      "comment_created_at": "2026-08-05T20:02:03Z",
+      "comment_updated_at": "2026-08-08T16:46:51Z",
+      "comment_body_sha256": "85fdba9fe88ab8b5c8141787e730605c539814b8497a97749b0965bc9f696223",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119717,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head required checks are still running; approval should use their completed result rather than the earlier reviewed head. (sha=fdd98900e5eecebe74fca5c702740dc2b63bd8ee)",
+      "expected_head_sha": "fdd98900e5eecebe74fca5c702740dc2b63bd8ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T16:49:43.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89252",
+        "head_sha": "fdd98900e5eecebe74fca5c702740dc2b63bd8ee",
+        "cluster_id": "automerge-openclaw-openclaw-119717",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119717.md"
       }
     }
   ]
