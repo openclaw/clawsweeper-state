@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T18:42:55.865Z",
+  "updated_at": "2026-08-08T18:43:05.775Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118681:5226526360:2026-08-08T14:25:09Z:re_review",
-      "comment_id": "5226526360",
-      "comment_version_key": "5226526360:2026-08-08T14:25:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5226526360",
-      "comment_created_at": "2026-08-08T14:25:09Z",
-      "comment_updated_at": "2026-08-08T14:25:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118681,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T14:39:39.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reactive-memory-flush-114081",
-        "head_sha": "bb14611784914cd7b781f8367d212cebd23c7e74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120589:5226530056:2026-08-08T14:26:07Z:re_review",
       "comment_id": "5226530056",
@@ -32475,6 +32428,39 @@
         "kind": "pull_request",
         "branch": "feat/gmail-auto-from-addressed-alias-env",
         "head_sha": "41272d5b60ba1052aed645d19cd26d99d2f5b470",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-08T18:42:22Z:clawsweeper_needs_human",
+      "comment_id": "5093836900",
+      "comment_version_key": "5093836900:2026-08-08T18:42:22Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
+      "comment_created_at": "2026-07-27T16:16:21Z",
+      "comment_updated_at": "2026-08-08T18:42:22Z",
+      "comment_body_sha256": "efd64f3c7879bbd3c999c2bbe190fd0226076aceaacaf8167885b16f2169419b",
+      "repo": "openclaw/crabline",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - matrix-js-sdk 42 changes Matrix OAuth support and removes OAuth-related helpers; Crabline’s static test imports do not use those removed helpers, but compatibility of the full real SD... (sha=871844c43e665f190a78259c33f2b24f6a326479)",
+      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T18:43:05.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
+        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
         "cluster_id": null,
         "job_path": null
       }
