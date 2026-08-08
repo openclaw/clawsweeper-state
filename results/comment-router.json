@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:44:43.187Z",
+  "updated_at": "2026-08-08T19:44:45.822Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119267:5226762702:2026-08-08T15:27:09Z:re_review",
-      "comment_id": "5226762702",
-      "comment_version_key": "5226762702:2026-08-08T15:27:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119267#issuecomment-5226762702",
-      "comment_created_at": "2026-08-08T15:27:09Z",
-      "comment_updated_at": "2026-08-08T15:27:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119267,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:43:24.702Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/native-tool-events-origin",
-        "head_sha": "262df57a15096dea04557dd5fd201195425fb8f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119995:5226764346:2026-08-08T15:27:34Z:re_review",
       "comment_id": "5226764346",
@@ -32191,6 +32144,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T19:44:43.187Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114409:5088586841:2026-08-08T19:44:09Z:clawsweeper_needs_human",
+      "comment_id": "5088586841",
+      "comment_version_key": "5088586841:2026-08-08T19:44:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114409#issuecomment-5088586841",
+      "comment_created_at": "2026-07-27T07:37:30Z",
+      "comment_updated_at": "2026-08-08T19:44:09Z",
+      "comment_body_sha256": "b7076534ef53aa9d978f989a30343041737b363c64cf85b07b94e7b203b52450",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resolving the four test-file conflicts can silently discard newer current-main authorization, queue, or progress regressions. (sha=425405e44d2c711c44fd67c52a718f6366c75502)",
+      "expected_head_sha": "425405e44d2c711c44fd67c52a718f6366c75502",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:44:45.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-dedup-channels-wave-two",
+        "head_sha": "425405e44d2c711c44fd67c52a718f6366c75502",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
