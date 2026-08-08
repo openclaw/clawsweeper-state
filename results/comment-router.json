@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T14:26:29.496Z",
+  "updated_at": "2026-08-08T14:26:54.271Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120508:5225451911:2026-08-08T09:08:54Z:re_review",
-      "comment_id": "5225451911",
-      "comment_version_key": "5225451911:2026-08-08T09:08:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120508#issuecomment-5225451911",
-      "comment_created_at": "2026-08-08T09:08:54Z",
-      "comment_updated_at": "2026-08-08T09:08:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120508,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T09:44:50.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/eventstream-terminal-contract",
-        "head_sha": "435ad977ff2a6baa88d1de4793ff8ef562f0e04e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120451:5225454808:2026-08-08T09:09:53Z:re_review",
       "comment_id": "5225454808",
@@ -33473,6 +33426,39 @@
         "kind": "pull_request",
         "branch": "fix/workflow-cost-skip-cached-replays",
         "head_sha": "a91734fbd18d0dcbf0590e016615525ab8951040",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/tokentally:34:5213735091:2026-08-08T14:23:17Z:clawsweeper_needs_human",
+      "comment_id": "5213735091",
+      "comment_version_key": "5213735091:2026-08-08T14:23:17Z",
+      "comment_url": "https://github.com/steipete/tokentally/pull/34#issuecomment-5213735091",
+      "comment_created_at": "2026-08-07T07:10:21Z",
+      "comment_updated_at": "2026-08-08T14:23:17Z",
+      "comment_body_sha256": "54e1080b0be59e3e46543db0dfe9f961dd36a1794339db31385b0531e80f8f07",
+      "repo": "steipete/tokentally",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - oxfmt and oxlint refresh optional native binaries for 19 platform variants each, while the available CI evidence exercises only Ubuntu on Node 24; other contributor platforms rely on... (sha=1e1d5c610c11237e08ddd218f2aa407730fd877e)",
+      "expected_head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T14:26:54.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-2df6aa9551",
+        "head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
         "cluster_id": null,
         "job_path": null
       }
