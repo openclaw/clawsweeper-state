@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T17:39:52.947Z",
+  "updated_at": "2026-08-08T17:39:57.854Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5226233712:2026-08-08T13:06:40Z:re_review",
-      "comment_id": "5226233712",
-      "comment_version_key": "5226233712:2026-08-08T13:06:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5226233712",
-      "comment_created_at": "2026-08-08T13:06:40Z",
-      "comment_updated_at": "2026-08-08T13:06:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T13:42:19.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "525fb415a3c6588c89ec080631b6376d1edcf02d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120075:5226244728:2026-08-08T13:10:00Z:re_review",
       "comment_id": "5226244728",
@@ -32702,6 +32655,39 @@
         "kind": "pull_request",
         "branch": "steipete/refactor-inline-state-migration-policy-120451",
         "head_sha": "68d3a9173f57335566af0e42f4ca3c8ff507592d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1127:5225333909:2026-08-08T17:39:14Z:clawsweeper_needs_human",
+      "comment_id": "5225333909",
+      "comment_version_key": "5225333909:2026-08-08T17:39:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1127#issuecomment-5225333909",
+      "comment_created_at": "2026-08-08T08:30:44Z",
+      "comment_updated_at": "2026-08-08T17:39:14Z",
+      "comment_body_sha256": "5293b2a2647bd65ff71eed0641e2c0dba4f0c9e0717ab31ab24c557d4df08709",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1127,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes terminal handshake and retry behavior across 42 files; the supplied proof uses a loopback fake Gateway and does not exercise a real Gateway or WSL path. (sha=f63e7a2975a347e11e63ae9fe6585982788794ac)",
+      "expected_head_sha": "f63e7a2975a347e11e63ae9fe6585982788794ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T17:39:57.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-gateway-compatibility-ux",
+        "head_sha": "f63e7a2975a347e11e63ae9fe6585982788794ac",
         "cluster_id": null,
         "job_path": null
       }
