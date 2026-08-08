@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T22:15:54.238Z",
+  "updated_at": "2026-08-08T22:18:35.877Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97103:5227139505:2026-08-08T17:03:17Z:re_review",
-      "comment_id": "5227139505",
-      "comment_version_key": "5227139505:2026-08-08T17:03:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5227139505",
-      "comment_created_at": "2026-08-08T17:03:17Z",
-      "comment_updated_at": "2026-08-08T17:03:17Z",
-      "comment_body_sha256": "57c6ff06d9fd261b73ff6ccaae713e69e929d20313d45c7cd80a047b6f9bafb0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97103,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T17:41:49.146Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/sessions-cleanup-archive-report",
-        "head_sha": "3c352205af6995c048605029003e3a1acc52ca92",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:94663:5227142691:2026-08-08T17:04:03Z:re_review",
       "comment_id": "5227142691",
@@ -32303,6 +32256,39 @@
         "kind": "pull_request",
         "branch": "fix/clawsweeper-review-state-120232",
         "head_sha": "85abed7ee41f940699832c2b1374493d5d0e677d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/tokentally:34:5213735091:2026-08-08T22:17:43Z:clawsweeper_needs_human",
+      "comment_id": "5213735091",
+      "comment_version_key": "5213735091:2026-08-08T22:17:43Z",
+      "comment_url": "https://github.com/steipete/tokentally/pull/34#issuecomment-5213735091",
+      "comment_created_at": "2026-08-07T07:10:21Z",
+      "comment_updated_at": "2026-08-08T22:17:43Z",
+      "comment_body_sha256": "a72b9b8db621a6b80b4a3c1b88ad5edabf8f544e6bc9a14f2d9968750124cae0",
+      "repo": "steipete/tokentally",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The lockfile replaces optional native formatter and linter binaries for 38 platform/architecture entries; the supplied successful Node 24 Linux check does not establish installation b... (sha=1e1d5c610c11237e08ddd218f2aa407730fd877e)",
+      "expected_head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T22:18:35.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-2df6aa9551",
+        "head_sha": "1e1d5c610c11237e08ddd218f2aa407730fd877e",
         "cluster_id": null,
         "job_path": null
       }
