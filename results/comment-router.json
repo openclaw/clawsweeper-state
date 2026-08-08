@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T12:30:13.237Z",
+  "updated_at": "2026-08-08T12:30:38.249Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120468:5224842861:2026-08-08T06:03:25Z:re_review",
-      "comment_id": "5224842861",
-      "comment_version_key": "5224842861:2026-08-08T06:03:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120468#issuecomment-5224842861",
-      "comment_created_at": "2026-08-08T06:03:25Z",
-      "comment_updated_at": "2026-08-08T06:03:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120468,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T07:43:03.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/detect-dist-runtime-byte-growth",
-        "head_sha": "de43ec8487b8b096ecbf49d2611c801f7a4fb4a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120460:5224857403:2026-08-08T06:07:51Z:re_review",
       "comment_id": "5224857403",
@@ -33443,6 +33396,39 @@
         "kind": "pull_request",
         "branch": "codex/whatsapp-audio-inbound",
         "head_sha": "70a69e94b355e9976cef7f0d88430e08d24a2fd1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:84:5213916637:2026-08-08T12:28:54Z:clawsweeper_needs_human",
+      "comment_id": "5213916637",
+      "comment_version_key": "5213916637:2026-08-08T12:28:54Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/84#issuecomment-5213916637",
+      "comment_created_at": "2026-08-07T07:30:33Z",
+      "comment_updated_at": "2026-08-08T12:28:54Z",
+      "comment_body_sha256": "84fea56dd57c8fee3eed08ac61f20bebc03e423e59856f2870ff1eadd2a1f95b",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 84,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The upstream release changes journal rollback handling; merging without an archive upgrade/reopen check leaves compatibility with existing persisted archives unproven. (sha=babdd41994e48820c706885495ce62309a30141b)",
+      "expected_head_sha": "babdd41994e48820c706885495ce62309a30141b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T12:30:38.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "babdd41994e48820c706885495ce62309a30141b",
         "cluster_id": null,
         "job_path": null
       }
