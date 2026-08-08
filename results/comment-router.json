@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T08:43:23.514Z",
+  "updated_at": "2026-08-08T08:43:29.405Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119713:5196809684:2026-08-08T03:38:41Z:clawsweeper_auto_repair",
-      "comment_id": "5196809684",
-      "comment_version_key": "5196809684:2026-08-08T03:38:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119713#issuecomment-5196809684",
-      "comment_created_at": "2026-08-05T20:11:04Z",
-      "comment_updated_at": "2026-08-08T03:38:41Z",
-      "comment_body_sha256": "c0af4cfde3cc9a4e1f9cff9351d62c7c92f71fddea85ad01b820c0a45b25d4ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119713,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0da183a3062ff63ebb20bcd7839a8581e26eb246)",
-      "expected_head_sha": "0da183a3062ff63ebb20bcd7839a8581e26eb246",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T03:48:01.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-fallback-circuit-breaker",
-        "head_sha": "0da183a3062ff63ebb20bcd7839a8581e26eb246",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120001:5209974208:2026-08-08T03:42:56Z:clawsweeper_auto_repair",
       "comment_id": "5209974208",
@@ -33105,6 +33072,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:103623:5225371342:2026-08-08T08:42:50Z:re_review",
+      "comment_id": "5225371342",
+      "comment_version_key": "5225371342:2026-08-08T08:42:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103623#issuecomment-5225371342",
+      "comment_created_at": "2026-08-08T08:42:50Z",
+      "comment_updated_at": "2026-08-08T08:42:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "246870e0-9305-11f1-9739-f146a685b054",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103623,
+      "author": "lit26",
+      "author_id": 51225681,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-08T08:43:27.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/stepfun-default-3.7-flash",
+        "head_sha": "f3a0937d00bdcff01535c645f5e2dd416ad0ff22",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
