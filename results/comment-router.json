@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T21:53:46.282Z",
+  "updated_at": "2026-08-08T21:53:50.329Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95847:4781080101:2026-08-08T17:36:53Z:clawsweeper_auto_repair",
-      "comment_id": "4781080101",
-      "comment_version_key": "4781080101:2026-08-08T17:36:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95847#issuecomment-4781080101",
-      "comment_created_at": "2026-06-23T16:03:31Z",
-      "comment_updated_at": "2026-08-08T17:36:53Z",
-      "comment_body_sha256": "fd09d2687808373c76a2594447ea2e6b8010508d47930406d45a59ed525643c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95847,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5852eae7f7fa302ab5b7bc8b4852cff1624b2141)",
-      "expected_head_sha": "5852eae7f7fa302ab5b7bc8b4852cff1624b2141",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T17:37:52.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "p1/requester-consumed-completion-credit-clean",
-        "head_sha": "5852eae7f7fa302ab5b7bc8b4852cff1624b2141",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-08T17:37:11Z:clawsweeper_needs_human",
       "comment_id": "5219412032",
@@ -32421,6 +32388,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T21:53:46.282Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1241:5199613781:2026-08-08T20:47:06Z:clawsweeper_needs_human",
+      "comment_id": "5199613781",
+      "comment_version_key": "5199613781:2026-08-08T20:47:06Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1241#issuecomment-5199613781",
+      "comment_created_at": "2026-08-06T02:14:18Z",
+      "comment_updated_at": "2026-08-08T20:47:06Z",
+      "comment_body_sha256": "4b98e8fd423723d04e68cf14f771e0c1a6e56b1a422f9386e24595fbceefec2f",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On Git older than 2.41, an ambiguous missing path that remains in scope now stops sync before transfer; that prevents destructive deletes but can interrupt an existing sparse-checkout... (sha=5dfcd8bcaccc8d854474e66e00a912c9bcad955f)",
+      "expected_head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T21:53:50.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sparse-manifest-safety-20260806",
+        "head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
