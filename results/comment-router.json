@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:31:30.516Z",
+  "updated_at": "2026-08-08T19:31:51.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120470:5226788846:2026-08-08T15:33:21Z:re_review",
-      "comment_id": "5226788846",
-      "comment_version_key": "5226788846:2026-08-08T15:33:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120470#issuecomment-5226788846",
-      "comment_created_at": "2026-08-08T15:33:21Z",
-      "comment_updated_at": "2026-08-08T15:33:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "7d7856d0-933e-11f1-8539-8e599da3a714",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120470,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T15:33:52.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/steering-before-tool-calls-e3da1b",
-        "head_sha": "cda77f5116f144a591589d7ee64f5ebebe2299a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120615:5226792405:2026-08-08T15:34:11Z:re_review",
       "comment_id": "5226792405",
@@ -32273,6 +32225,39 @@
         "kind": "pull_request",
         "branch": "fix/trufflehog-no-update",
         "head_sha": "7c47948066519be99d241cc571ce0ab499f4d717",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:256:5168896416:2026-08-08T19:31:09Z:clawsweeper_needs_human",
+      "comment_id": "5168896416",
+      "comment_version_key": "5168896416:2026-08-08T19:31:09Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/256#issuecomment-5168896416",
+      "comment_created_at": "2026-08-03T16:14:34Z",
+      "comment_updated_at": "2026-08-08T19:31:09Z",
+      "comment_body_sha256": "cd1066c89fe7eaf6b6c19c17fd82958953bca34d5ae885dd21b6fbf3288a520a",
+      "repo": "openclaw/crabline",
+      "issue_number": 256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Baileys rc14 changes the black-box WhatsApp protocol oracle and five transitive development resolutions; the shipped package is unaffected, but CI can begin exposing emulator incompat... (sha=7696217cfbfad9462bb878fb0156c88d19185ccb)",
+      "expected_head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:31:51.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
+        "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
         "cluster_id": null,
         "job_path": null
       }
