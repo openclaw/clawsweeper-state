@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T13:43:52.052Z",
+  "updated_at": "2026-08-08T13:44:33.322Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-08T08:45:06Z:clawsweeper_needs_human",
-      "comment_id": "5225378319",
-      "comment_version_key": "5225378319:2026-08-08T08:45:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-5225378319",
-      "comment_created_at": "2026-08-08T08:45:06Z",
-      "comment_updated_at": "2026-08-08T08:45:06Z",
-      "comment_body_sha256": "4c8532994cdb3d8903959d010b4827fa92ee62a183a10f9a3c4173fb8272ebe4",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes a prior live run but provides no inspectable current-head artifact for the changed failure ordering and Core-revali...; Review finding: [P1] Build the full config before calling config.patch — src/OpenClaw.Connection/GatewayTailscaleAuthUpgrade.cs:155 - [high] Partial config write can erase unrelat... (sha=b68cce1500c36c915ca3fb7663c58cc4272d5c3d)",
-      "expected_head_sha": "b68cce1500c36c915ca3fb7663c58cc4272d5c3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T08:45:42.782Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tailscale-legacy-upgrade-20260807",
-        "head_sha": "b68cce1500c36c915ca3fb7663c58cc4272d5c3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119702:5197460075:2026-08-05T21:17:42Z:re_review",
       "comment_id": "5197460075",
@@ -33274,6 +33241,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T13:43:52.052Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120211:5216628535:2026-08-08T13:43:54Z:clawsweeper_needs_human",
+      "comment_id": "5216628535",
+      "comment_version_key": "5216628535:2026-08-08T13:43:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120211#issuecomment-5216628535",
+      "comment_created_at": "2026-08-07T11:44:54Z",
+      "comment_updated_at": "2026-08-08T13:43:54Z",
+      "comment_body_sha256": "2d3ed00e1d38569191374fbaceca2dab3838caf3ff4944dab42b618787556a87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120211,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the fs-safe receipt contract before merging** - The mapping at the resolver depends on permission-unverified having the claimed Windows ACL-verification meaning; the pinned depen...; Review finding: [medium] Verify the fs-safe receipt contract before merging — src/secrets/resolve.ts:104 (sha=5ed85fcb8834c1a00cff61f25114e75a29f5018b)",
+      "expected_head_sha": "5ed85fcb8834c1a00cff61f25114e75a29f5018b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T13:44:33.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-doctor-secretref-diagnostic",
+        "head_sha": "5ed85fcb8834c1a00cff61f25114e75a29f5018b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
