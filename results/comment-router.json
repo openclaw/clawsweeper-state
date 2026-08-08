@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-08T00:33:41.315Z",
+  "updated_at": "2026-08-08T00:33:49.215Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89395:5221862850:2026-08-07T20:49:03Z:re_review",
-      "comment_id": "5221862850",
-      "comment_version_key": "5221862850:2026-08-07T20:49:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89395#issuecomment-5221862850",
-      "comment_created_at": "2026-08-07T20:49:03Z",
-      "comment_updated_at": "2026-08-07T20:49:03Z",
-      "comment_body_sha256": "84511868cfb580b24a26f802afe3262d331d8dde87dcecf19d0a6658150d8096",
-      "source_delivery_id": "6d8cf3e0-92a1-11f1-8486-4a19caf29bb6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89395,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review (ci-unblock head; scope unchanged)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-07T20:49:40.107Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-media-secretref-silent-swallow",
-        "head_sha": "60dcbead7a3eacb967a3d02702306db03ad34781",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-07T20:48:50Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -32047,6 +31999,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T00:33:41.315Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:60:5121741210:2026-08-08T00:33:11Z:clawsweeper_auto_repair",
+      "comment_id": "5121741210",
+      "comment_version_key": "5121741210:2026-08-08T00:33:11Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/60#issuecomment-5121741210",
+      "comment_created_at": "2026-07-29T18:09:07Z",
+      "comment_updated_at": "2026-08-08T00:33:11Z",
+      "comment_body_sha256": "83e86b6a6d96d5bd1c8f17803269c092525ce5b9a3ab8c8ed79b883364e67eee",
+      "repo": "openclaw/shellbench",
+      "issue_number": 60,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=15dce335440688dd25fa45c28495e3fc0daa75a6)",
+      "expected_head_sha": "15dce335440688dd25fa45c28495e3fc0daa75a6",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-08T00:33:49.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-tool-discovery-telemetry",
+        "head_sha": "15dce335440688dd25fa45c28495e3fc0daa75a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
