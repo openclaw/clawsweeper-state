@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-08T19:45:56.192Z",
+  "updated_at": "2026-08-08T19:46:51.114Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118157:5160078936:2026-08-08T15:40:23Z:clawsweeper_auto_repair",
-      "comment_id": "5160078936",
-      "comment_version_key": "5160078936:2026-08-08T15:40:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118157#issuecomment-5160078936",
-      "comment_created_at": "2026-08-02T19:57:10Z",
-      "comment_updated_at": "2026-08-08T15:40:23Z",
-      "comment_body_sha256": "0a6aafa62e20d4ba69348a3308df2100cb045df9099e490a7f01ea1bfc9f99b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118157,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=31f7ba2480554c92cb051f1743e8ec0c5eebf2d0)",
-      "expected_head_sha": "31f7ba2480554c92cb051f1743e8ec0c5eebf2d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T15:44:21.870Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-max-mb-schema-parity",
-        "head_sha": "31f7ba2480554c92cb051f1743e8ec0c5eebf2d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118282:5160760627:2026-08-06T01:57:46Z:clawsweeper_needs_human",
       "comment_id": "5160760627",
@@ -32043,6 +32010,39 @@
       "status": "skipped",
       "processed_at": "2026-08-08T19:45:56.192Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-08T19:37:49Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-08T19:37:49Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-08T19:37:49Z",
+      "comment_body_sha256": "e98374081b95ed8ba0c6cc6077a5bbf80f2962aea08c027ac3f2236d62c4f9c8",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CrawlKit is a direct runtime dependency for configuration, remote, and mirroring paths; without an after-upgrade Gitcrawl run, compatibility across those paths remains unproven. (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T19:46:51.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
