@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-08T08:31:14.377Z",
+  "updated_at": "2026-08-08T08:31:34.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120187:5224002609:2026-08-08T02:08:01Z:re_review",
-      "comment_id": "5224002609",
-      "comment_version_key": "5224002609:2026-08-08T02:08:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120187#issuecomment-5224002609",
-      "comment_created_at": "2026-08-08T02:08:01Z",
-      "comment_updated_at": "2026-08-08T02:08:01Z",
-      "comment_body_sha256": "2af9fad5ca25412a37f20fc910f8e77c564e7931dcc3fe18d08f830f74374db0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120187,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T03:46:26.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-yield-followup-adoption",
-        "head_sha": "eddfe3b1416d4e0b1325b9ab4c2d818452db2567",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120373:5224005419:2026-08-08T02:08:48Z:re_review",
       "comment_id": "5224005419",
@@ -33169,6 +33122,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-gateway-compatibility-ux",
         "head_sha": "c493b0021c613dbc484dd919e3a54e30eaa032b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/osc-progress:31:5217992134:2026-08-08T08:28:37Z:clawsweeper_needs_human",
+      "comment_id": "5217992134",
+      "comment_version_key": "5217992134:2026-08-08T08:28:37Z",
+      "comment_url": "https://github.com/steipete/osc-progress/pull/31#issuecomment-5217992134",
+      "comment_created_at": "2026-08-07T13:59:11Z",
+      "comment_updated_at": "2026-08-08T08:28:37Z",
+      "comment_body_sha256": "2b4b46e53890ed762d7ae93472909edf2f0fde393c686e791d75e6ab7bec0ec8",
+      "repo": "steipete/osc-progress",
+      "issue_number": 31,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging pins Vite 8.2.0 and updated Rolldown native bindings for frozen installs; the supplied successful check covers Ubuntu with Node 24, not every developer platform. (sha=0d658f23ec01d59a8b8787440348f42e8586efa9)",
+      "expected_head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-08T08:31:34.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/dependencies-02a9b842d7",
+        "head_sha": "0d658f23ec01d59a8b8787440348f42e8586efa9",
         "cluster_id": null,
         "job_path": null
       }
