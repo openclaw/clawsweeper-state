@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:07:06.270Z",
+  "updated_at": "2026-08-09T06:12:39.353Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5229225936:2026-08-09T01:43:18Z:re_review",
-      "comment_id": "5229225936",
-      "comment_version_key": "5229225936:2026-08-09T01:43:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5229225936",
-      "comment_created_at": "2026-08-09T01:43:18Z",
-      "comment_updated_at": "2026-08-09T01:43:18Z",
-      "comment_body_sha256": "fb747bb3df86cc7dfd079484f80bb0589fbab9417e114a2c33f354fee7c614a1",
-      "source_delivery_id": "b2c00400-9393-11f1-9bd6-43b47f21bfe3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T01:43:55.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "c286a7d972a0ff24163f84d91dc3d9e8b87d5cfb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2793:5228933323:2026-08-09T01:43:26Z:clawsweeper_needs_human",
       "comment_id": "5228933323",
@@ -31704,6 +31656,39 @@
         "kind": "pull_request",
         "branch": "claude/mac-dead-island",
         "head_sha": "441182f22b1dde482355a7cc972d775d122d4b58",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-09T06:11:21Z:clawsweeper_needs_human",
+      "comment_id": "5219412032",
+      "comment_version_key": "5219412032:2026-08-09T06:11:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
+      "comment_created_at": "2026-08-07T16:13:44Z",
+      "comment_updated_at": "2026-08-09T06:11:21Z",
+      "comment_body_sha256": "846de98069c7192d99d71dc26ad7cf7d3e1d3ce57e19e53e59c8dcf8336a0391",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate the action update under its existing token permissions** - Both changed CodeQL action references execute in a workflow that can upload security events; verify the exact PR head...; Review finding: [medium] Validate the action update under its existing token permissions — .github/workflows/codeql-light.yml:91 (sha=faacfb0c32a7bf702b04bc38b427139d8fc58cfa)",
+      "expected_head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:12:39.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-97c731b4de",
+        "head_sha": "faacfb0c32a7bf702b04bc38b427139d8fc58cfa",
         "cluster_id": null,
         "job_path": null
       }
