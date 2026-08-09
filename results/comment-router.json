@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T19:45:55.883Z",
+  "updated_at": "2026-08-09T19:45:58.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5230013610:2026-08-09T05:46:50Z:re_review",
-      "comment_id": "5230013610",
-      "comment_version_key": "5230013610:2026-08-09T05:46:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5230013610",
-      "comment_created_at": "2026-08-09T05:46:50Z",
-      "comment_updated_at": "2026-08-09T05:46:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T14:52:02.646Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5230535957:2026-08-09T08:15:36Z:re_review",
       "comment_id": "5230535957",
@@ -33500,6 +33473,39 @@
         "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
         "cluster_id": "automerge-openclaw-openclaw-117976",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121112:5232601224:2026-08-09T19:44:10Z:clawsweeper_needs_human",
+      "comment_id": "5232601224",
+      "comment_version_key": "5232601224:2026-08-09T19:44:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121112#issuecomment-5232601224",
+      "comment_created_at": "2026-08-09T16:42:02Z",
+      "comment_updated_at": "2026-08-09T19:44:10Z",
+      "comment_body_sha256": "5b24e224892dac5bcc5dac60aff7b6963725d3113794a42282f7035701c8ed0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The described real CLI run has no inspectable output or artifact; add redacted terminal or JSON evidence showing the two nested result... (sha=36340572d7ff663850da04d0ce67aa666e78be36)",
+      "expected_head_sha": "36340572d7ff663850da04d0ce67aa666e78be36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T19:45:58.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nested-memory-temporal-decay",
+        "head_sha": "36340572d7ff663850da04d0ce67aa666e78be36",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
