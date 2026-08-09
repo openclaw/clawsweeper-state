@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:46:43.666Z",
+  "updated_at": "2026-08-09T16:46:52.576Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113013:5231367852:2026-08-09T11:51:15Z:re_review",
-      "comment_id": "5231367852",
-      "comment_version_key": "5231367852:2026-08-09T11:51:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113013#issuecomment-5231367852",
-      "comment_created_at": "2026-08-09T11:51:15Z",
-      "comment_updated_at": "2026-08-09T11:51:15Z",
-      "comment_body_sha256": "8eb6714fbb08ff6335df023dafb37c43f9b8a826312ecc4011c4d72bd8a7e5f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113013,
-      "author": "liuhaiyang14",
-      "author_id": 69886048,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/minimax-sensitive-failover",
-        "head_sha": "6465836fe2c2f1fd64919286a7c0c9afb4552719",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5231385358:2026-08-09T11:55:26Z:re_review",
       "comment_id": "5231385358",
@@ -32919,6 +32872,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-codex-refresh-publish",
         "head_sha": "9f0712d2ded777278d6663ced8e1c97c1578173d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121102:5232618493:2026-08-09T16:46:08Z:clawsweeper_needs_human",
+      "comment_id": "5232618493",
+      "comment_version_key": "5232618493:2026-08-09T16:46:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121102#issuecomment-5232618493",
+      "comment_created_at": "2026-08-09T16:46:08Z",
+      "comment_updated_at": "2026-08-09T16:46:08Z",
+      "comment_body_sha256": "81ca94101db56fab18194db124447cd1e674864eafc1d9786434bad7be8e94b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121102,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused tests, but its changed route stubs the CLI runner and supplies no inspectable after-fix runtime trace through workspace... (sha=765449c2cf0ae348cdf6125421571c5b8c3ac499)",
+      "expected_head_sha": "765449c2cf0ae348cdf6125421571c5b8c3ac499",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:46:52.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-agent-openclaw-entry",
+        "head_sha": "765449c2cf0ae348cdf6125421571c5b8c3ac499",
         "cluster_id": null,
         "job_path": null
       }
