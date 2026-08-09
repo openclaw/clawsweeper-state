@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T17:48:14.252Z",
+  "updated_at": "2026-08-09T17:48:16.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114428:5231653684:2026-08-09T13:01:55Z:re_review",
-      "comment_id": "5231653684",
-      "comment_version_key": "5231653684:2026-08-09T13:01:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114428#issuecomment-5231653684",
-      "comment_created_at": "2026-08-09T13:01:55Z",
-      "comment_updated_at": "2026-08-09T13:01:55Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114428,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T13:43:47.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-dedup-messaging-phase-three",
-        "head_sha": "e79bee205ce090e922947f7a87d2c762dc653817",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114428:5088994084:2026-08-09T13:43:00Z:clawsweeper_needs_human",
       "comment_id": "5088994084",
@@ -32106,6 +32059,53 @@
           "status": "executed",
           "label": null,
           "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119367:5185607290:2026-08-09T17:45:45Z:clawsweeper_auto_repair",
+      "comment_id": "5185607290",
+      "comment_version_key": "5185607290:2026-08-09T17:45:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119367#issuecomment-5185607290",
+      "comment_created_at": "2026-08-04T23:09:27Z",
+      "comment_updated_at": "2026-08-09T17:45:45Z",
+      "comment_body_sha256": "714a42806c530132d8fd2d6ebc7987019db0edb3bac1fc19275ffe3a59905cd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119367,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c57ae26b3577bf940306cd1f714b48155696ce02)",
+      "expected_head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T17:48:03.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-119350",
+        "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
+        "cluster_id": "automerge-openclaw-openclaw-119367",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119367.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119367.md"
         },
         {
           "action": "comment",
