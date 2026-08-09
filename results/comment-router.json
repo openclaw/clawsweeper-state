@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:45:18.014Z",
+  "updated_at": "2026-08-09T10:45:24.076Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120694:5229781386:2026-08-09T04:35:08Z:re_review",
-      "comment_id": "5229781386",
-      "comment_version_key": "5229781386:2026-08-09T04:35:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120694#issuecomment-5229781386",
-      "comment_created_at": "2026-08-09T04:35:08Z",
-      "comment_updated_at": "2026-08-09T04:35:08Z",
-      "comment_body_sha256": "681720446303c1d17aa0094cffd303f106cd6926531f1c0cdf7f6b2fe8d342ba",
-      "source_delivery_id": "b3d2bfa0-93ab-11f1-8ef1-219d07e24585",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120694,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the unsupported virtiofs statfs magic finding is fixed on head `b722bedfa72`: the fabricated `0x10002000` literal and its statfs comparison/synthetic test are removed. linux registers virtiofs as a fuse filesystem (`fs/fuse/virtio_fs.c` registers the \"virtiofs\" fs type; `fuse_fill_super_common` sets `sb->s_magic = fuse_super_magic` = 0x65735546), so virtiofs is indistinguishable from sshfs/other fuse mounts at the statfs layer and cannot be classified by a statfs magic. classification now relies on mount type only: mountinfo/mount fstype `virtiofs` and `9p` -> rollback journaling (kept), v9fs statfs magic 0x01021997 (kept, real). added mount-command fallback coverage for virtiofs names; local run of `sqlite-wal.test.ts` passes the classification tests (only pre-existing node-version-guarded real-db tests fail on local node 24.13.1)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T04:35:33.088Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-wal-virtiofs-120549",
-        "head_sha": "b722bedfa72e47b23728976bc4c5b1614e5a5cec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120840:5229781228:2026-08-09T04:35:05Z:re_review",
       "comment_id": "5229781228",
@@ -32804,6 +32756,39 @@
         "kind": "pull_request",
         "branch": "fix/sqlite-upgrade-survivor-assertions",
         "head_sha": "2470b42b4d14c6171b5c48f1ad8d244e16949d2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:77921:4380972492:2026-08-09T10:44:24Z:clawsweeper_needs_human",
+      "comment_id": "4380972492",
+      "comment_version_key": "4380972492:2026-08-09T10:44:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/77921#issuecomment-4380972492",
+      "comment_created_at": "2026-05-05T16:05:42Z",
+      "comment_updated_at": "2026-08-09T10:44:24Z",
+      "comment_body_sha256": "9b76d9516af17b4b000cd9557cd0e47e93369cd1e8d61f5b7a9f0231e48ef38b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 77921,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=752d8645c7f06cab355175ee416aa32a9386c7f5)",
+      "expected_head_sha": "752d8645c7f06cab355175ee416aa32a9386c7f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:45:24.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tts-2",
+        "head_sha": "752d8645c7f06cab355175ee416aa32a9386c7f5",
         "cluster_id": null,
         "job_path": null
       }
