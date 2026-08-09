@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T07:45:54.832Z",
+  "updated_at": "2026-08-09T07:45:57.062Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5106791997:2026-07-28T16:18:54Z:re_review",
-      "comment_id": "5106791997",
-      "comment_version_key": "5106791997:2026-07-28T16:18:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5106791997",
-      "comment_created_at": "2026-07-28T16:18:54Z",
-      "comment_updated_at": "2026-07-28T16:18:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:54:32.256Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5110510875:2026-07-28T22:51:05Z:re_review",
       "comment_id": "5110510875",
@@ -32728,6 +32701,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T07:45:54.831Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112054:5047571071:2026-08-09T07:45:16Z:clawsweeper_needs_human",
+      "comment_id": "5047571071",
+      "comment_version_key": "5047571071:2026-08-09T07:45:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112054#issuecomment-5047571071",
+      "comment_created_at": "2026-07-22T14:40:37Z",
+      "comment_updated_at": "2026-08-09T07:45:16Z",
+      "comment_body_sha256": "83d930bd3527032a3332be604b414ff57912ac37fe56d650ff94d8b209972957",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body supplies a source transformation probe and focused unit tests, but explicitly confirms no after-fix Gemini request; add redacted termi... (sha=b6eed6296c7117046643e1f2ecc277484736e969)",
+      "expected_head_sha": "b6eed6296c7117046643e1f2ecc277484736e969",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T07:45:57.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gemini-multitype-schema",
+        "head_sha": "b6eed6296c7117046643e1f2ecc277484736e969",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
