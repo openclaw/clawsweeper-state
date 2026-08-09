@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:48:05.470Z",
+  "updated_at": "2026-08-09T16:48:37.091Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121048:5231446699:2026-08-09T12:10:51Z:re_review",
-      "comment_id": "5231446699",
-      "comment_version_key": "5231446699:2026-08-09T12:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121048#issuecomment-5231446699",
-      "comment_created_at": "2026-08-09T12:10:51Z",
-      "comment_updated_at": "2026-08-09T12:10:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121048,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-progress-hook-fallback",
-        "head_sha": "8379ccb4cd1b3718d9a0a51f5de69441829159a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121032:5231461248:2026-08-09T12:14:22Z:re_review",
       "comment_id": "5231461248",
@@ -32821,6 +32774,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-foundry-gpt-token-limits",
         "head_sha": "7cce3140f30c56a6101362a5d5a3f18656c50dd8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121081:5232626324:2026-08-09T16:47:58Z:clawsweeper_needs_human",
+      "comment_id": "5232626324",
+      "comment_version_key": "5232626324:2026-08-09T16:47:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121081#issuecomment-5232626324",
+      "comment_created_at": "2026-08-09T16:47:58Z",
+      "comment_updated_at": "2026-08-09T16:47:58Z",
+      "comment_body_sha256": "86065cde6650cca5100575f0bb9d15e645c9c8d2029bcffc74fb15e7bdaef42c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and its iOS check is still in progress; rebase or merge-refresh and exact-head required checks should complete before landing. (sha=2a1bbc0347b15fe4f7d417032b788cb577be1e2c)",
+      "expected_head_sha": "2a1bbc0347b15fe4f7d417032b788cb577be1e2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:48:37.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-worker-current-bundle-tunnel-admission",
+        "head_sha": "2a1bbc0347b15fe4f7d417032b788cb577be1e2c",
         "cluster_id": null,
         "job_path": null
       }
