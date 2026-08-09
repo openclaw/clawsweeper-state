@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:03:52.388Z",
+  "updated_at": "2026-08-09T06:04:10.538Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107026:4971197451:2026-07-14T15:53:03Z:re_review",
-      "comment_id": "4971197451",
-      "comment_version_key": "4971197451:2026-07-14T15:53:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107026#issuecomment-4971197451",
-      "comment_created_at": "2026-07-14T15:53:03Z",
-      "comment_updated_at": "2026-07-14T15:53:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107026,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:42:13.762Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102182:4915056699:2026-08-09T01:36:27Z:clawsweeper_needs_human",
       "comment_id": "4915056699",
@@ -31721,6 +31694,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:262:5225099541:2026-08-09T06:03:35Z:clawsweeper_auto_repair",
+      "comment_id": "5225099541",
+      "comment_version_key": "5225099541:2026-08-09T06:03:35Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/262#issuecomment-5225099541",
+      "comment_created_at": "2026-08-08T07:20:32Z",
+      "comment_updated_at": "2026-08-09T06:03:35Z",
+      "comment_body_sha256": "d024bae2d0e7fb46c41cb4e1a90c895789cffdca4510d2e30982a4bd99f41321",
+      "repo": "openclaw/crabline",
+      "issue_number": 262,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=99a0528fc0bad66312147f14122d2a5d10bd4c1a)",
+      "expected_head_sha": "99a0528fc0bad66312147f14122d2a5d10bd4c1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:04:10.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openclaw-bridge-contracts",
+        "head_sha": "99a0528fc0bad66312147f14122d2a5d10bd4c1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
