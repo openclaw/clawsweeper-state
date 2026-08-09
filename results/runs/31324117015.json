@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119367",
+  "mode": "autonomous",
+  "run_id": "31324117015",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31324117015",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119367.md",
+  "published_at": "2026-08-09T16:42:32.069Z",
+  "canonical": "#119367",
+  "canonical_issue": "#119350",
+  "canonical_pr": "#119367",
+  "summary": "#119367 is the focused repair for #119350 but is behind main and reported conflicted. Plan a contributor-branch rebase and exact-head validation; keep #119350 open until that repaired PR passes. #111811 addresses distinct sweep scheduling fairness.",
+  "actions": [
+    {
+      "target": "#119367",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119367",
+      "candidate_fix": null,
+      "reason": "Repair the same-repo writable contributor branch; merge is disabled by job frontmatter."
+    },
+    {
+      "target": "#119350",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "fixed_by_candidate",
+      "canonical": "#119350",
+      "candidate_fix": "#119367",
+      "reason": "Do not close before the candidate is rebased and validated."
+    },
+    {
+      "target": "#111811",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#119367",
+      "candidate_fix": null,
+      "reason": "Adjacent shared path, but a distinct root cause and fix."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
