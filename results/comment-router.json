@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T22:15:43.019Z",
+  "updated_at": "2026-08-09T22:17:52.920Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101593:4903258229:2026-08-01T07:54:23Z:clawsweeper_needs_human",
-      "comment_id": "4903258229",
-      "comment_version_key": "4903258229:2026-08-01T07:54:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101593#issuecomment-4903258229",
-      "comment_created_at": "2026-07-07T11:27:50Z",
-      "comment_updated_at": "2026-08-01T07:54:23Z",
-      "comment_body_sha256": "40c12f03d4df43bed31f5aa17e821a38fcb24c67ef43489dcd347ed23ba240df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although the supplied GitHub state reports it cleanly mergeable, its exact listener-order assertion should be refreshed and revalidated against the... (sha=8973666477d60c87d276c1b5f4ad22c21b0ccbb5)",
-      "expected_head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T18:42:41.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/automerge-openclaw-openclaw-101489",
-        "head_sha": "8973666477d60c87d276c1b5f4ad22c21b0ccbb5",
-        "cluster_id": "automerge-openclaw-openclaw-101489",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-101489.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104691:4948699444:2026-08-09T16:47:27Z:clawsweeper_needs_human",
       "comment_id": "4948699444",
@@ -31859,6 +31826,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1266:5234127567:2026-08-09T22:17:20Z:re_review",
+      "comment_id": "5234127567",
+      "comment_version_key": "5234127567:2026-08-09T22:17:20Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1266#issuecomment-5234127567",
+      "comment_created_at": "2026-08-09T22:17:20Z",
+      "comment_updated_at": "2026-08-09T22:17:20Z",
+      "comment_body_sha256": "9fff270fe34034be91285d75d54abe2344333e788ae7bfbe7db35498ca245575",
+      "source_delivery_id": "16fd68c0-9440-11f1-9fef-270dd7ba8613",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1266,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T22:17:51.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-error-secret-redaction",
+        "head_sha": "800721eaeda8c21512f35a5345ace2533b5068fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
