@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119367"
 mode: "autonomous"
-run_id: "31324117015"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31324117015"
+run_id: "31327365932"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31327365932"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-09T16:42:32.069Z"
+published_at: "2026-08-09T18:06:50.612Z"
 canonical: "#119367"
-canonical_issue: "#119350"
+canonical_issue: null
 canonical_pr: "#119367"
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31324117015](https://github.com/openclaw/clawsweeper/actions/runs/31324117015)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31327365932](https://github.com/openclaw/clawsweeper/actions/runs/31327365932)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #119367
 
 ## Summary
 
-#119367 is the focused repair for #119350 but is behind main and reported conflicted. Plan a contributor-branch rebase and exact-head validation; keep #119350 open until that repaired PR passes. #111811 addresses distinct sweep scheduling fairness.
+Make PR #119367 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Canonical: #119367
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119367 | build_fix_artifact | planned | canonical | Repair the same-repo writable contributor branch; merge is disabled by job frontmatter. |
-| #119350 | keep_related | planned | fixed_by_candidate | Do not close before the candidate is rebased and validated. |
-| #111811 | keep_independent | planned | independent | Adjacent shared path, but a distinct root cause and fix. |
+| #119367 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
