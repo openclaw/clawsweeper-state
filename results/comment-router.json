@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:35:13.332Z",
+  "updated_at": "2026-08-09T23:35:41.420Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121122:5233518818:2026-08-09T19:45:52Z:clawsweeper_auto_repair",
-      "comment_id": "5233518818",
-      "comment_version_key": "5233518818:2026-08-09T19:45:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121122#issuecomment-5233518818",
-      "comment_created_at": "2026-08-09T19:45:52Z",
-      "comment_updated_at": "2026-08-09T19:45:52Z",
-      "comment_body_sha256": "ad2088cd2b8de5a1e8d5d3998d2ada5573a19ccc91d5d11b778c2fa258cfefd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=67f6287f2d72cc17e488f3488f9338f6b0da58fd)",
-      "expected_head_sha": "67f6287f2d72cc17e488f3488f9338f6b0da58fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T19:46:27.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-reconcile-loss",
-        "head_sha": "67f6287f2d72cc17e488f3488f9338f6b0da58fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113755:5079620059:2026-08-09T19:42:09Z:clawsweeper_auto_repair",
       "comment_id": "5079620059",
@@ -32037,6 +32004,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-09T23:34:39Z:clawsweeper_needs_human",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-09T23:34:39Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-09T23:34:39Z",
+      "comment_body_sha256": "8f8a56691b245d0130067bfd2f410a1b426d1117028c751055fbe20e5f786139",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The v0.3.21 tag already targets this head while main still reports 0.3.20; a release owner should confirm that merging this exact tagged metadata is the intended final reconciliation. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T23:35:41.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
