@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120956"
 mode: "autonomous"
-run_id: "31314135438"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31314135438"
+run_id: "31316375518"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31316375518"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T13:24:57.964Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T13:48:27.813Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31314135438](https://github.com/openclaw/clawsweeper/actions/runs/31314135438)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31316375518](https://github.com/openclaw/clawsweeper/actions/runs/31316375518)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 ## Summary
 
-Confirmed #120956 on main d5809b40: an oversized persisted SQLite notification throws during ready-card dispatch before worker start. The checkout is read-only, so no branch, patch, test run, or PR can be produced here; a narrow, executable fix artifact is ready.
+#120956 is an open, non-security canonical bug report. The hydrated report establishes a bounded Workboard persisted-state repair; plan one narrow credited fix PR with a Doctor-only SQLite repair and regression coverage.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed #120956 on main d5809b40: an oversized persisted SQLite notification t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120956 | fix_needed | planned | canonical | Plugin-owned persisted-state repair is valid and narrow; implementation is blocked only by the read-only checkout. |
-| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned |  | Prepared narrow repair plan; executor must apply it on clawsweeper/issue-openclaw-openclaw-120956. |
+| #120956 | fix_needed | planned | canonical | Plan a narrow plugin-owned Doctor repair; no close or merge action is permitted by the job. |
+| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned | canonical | Build the executable fix plan for the one allowed new fix PR. |
 
 ## Needs Human
 
