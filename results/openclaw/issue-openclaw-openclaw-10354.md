@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-10354"
-mode: "autonomous"
-run_id: "31287461582"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31287461582"
+mode: "plan"
+run_id: "31288056680"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31288056680"
 head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T01:11:18.799Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T01:27:21.987Z"
 canonical: "https://github.com/openclaw/openclaw/issues/10354"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/10354"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31287461582](https://github.com/openclaw/clawsweeper/actions/runs/31287461582)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31288056680](https://github.com/openclaw/clawsweeper/actions/runs/31288056680)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/10354
 
 ## Summary
 
-#10354 remains reproducible on main: the ordinary message-tool schema exposes `channel` as an undocumented optional string while routing treats it as a channel/plugin selector. A narrow two-file fix PR is appropriate; this read-only checkout lacks dependencies, so implementation and validation are blocked here.
+Plan a new narrow PR for canonical issue #10354: add channel-selector guidance to the shared message-tool schema and one ordinary-schema regression test. Do not add an enum or change routing behavior.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/10354
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #10354 | fix_needed | blocked | canonical | Only this worker environment blocks implementation; the deterministic executor can create the new fix PR. |
-| cluster:issue-openclaw-openclaw-10354 | build_fix_artifact | planned | canonical | Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-10354. |
+| #10354 | fix_needed | planned | canonical | A description-only schema repair with focused coverage satisfies the approved bug-fix scope without selecting a dynamic plugin/alias lifecycle contract. |
+| cluster:issue-openclaw-openclaw-10354 | build_fix_artifact | planned | canonical | Create or update clawsweeper/issue-openclaw-openclaw-10354; apply required ClawSweeper labels when opened. |
 
 ## Needs Human
 
