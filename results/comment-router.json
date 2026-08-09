@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T07:07:16.980Z",
+  "updated_at": "2026-08-09T07:07:18.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119520:5229118839:2026-08-09T01:08:48Z:re_review",
-      "comment_id": "5229118839",
-      "comment_version_key": "5229118839:2026-08-09T01:08:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119520#issuecomment-5229118839",
-      "comment_created_at": "2026-08-09T01:08:48Z",
-      "comment_updated_at": "2026-08-09T01:08:48Z",
-      "comment_body_sha256": "92a5022557b1df5bb39a558aa64d257f8494c0b31d6ca3e041807dad505ba513",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119520,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:53:14.813Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119777:5199058768:2026-08-09T01:52:43Z:clawsweeper_needs_human",
       "comment_id": "5199058768",
@@ -32214,6 +32187,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T07:07:16.980Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-09T06:50:51Z:clawsweeper_needs_human",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-09T06:50:51Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-09T06:50:51Z",
+      "comment_body_sha256": "927a23c207062255205cca50d2292b20d5c5d74d6d9e2afb2700b918a32d81b5",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Normalizing explicitly configured extended-length drive and UNC paths changes the path form used by the directory-sync walk; it is a Windows-equivalent mapping, but the supplied live... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
+      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T07:07:18.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
