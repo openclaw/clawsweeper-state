@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:46:52.576Z",
+  "updated_at": "2026-08-09T16:46:59.312Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5231385358:2026-08-09T11:55:26Z:re_review",
-      "comment_id": "5231385358",
-      "comment_version_key": "5231385358:2026-08-09T11:55:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5231385358",
-      "comment_created_at": "2026-08-09T11:55:26Z",
-      "comment_updated_at": "2026-08-09T11:55:26Z",
-      "comment_body_sha256": "aa925da8278953f99b4e1b0391edc1cf70eba14615fbba0269104d9359154714",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-resumable-recovery-v1",
-        "head_sha": "c01c7d2a59211d2f8cb16942cebc1cc73947855e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120668:5231387258:2026-08-09T11:55:57Z:re_review",
       "comment_id": "5231387258",
@@ -32905,6 +32858,39 @@
         "kind": "pull_request",
         "branch": "fix/system-agent-openclaw-entry",
         "head_sha": "765449c2cf0ae348cdf6125421571c5b8c3ac499",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118466:5162442240:2026-08-09T16:43:53Z:clawsweeper_auto_repair",
+      "comment_id": "5162442240",
+      "comment_version_key": "5162442240:2026-08-09T16:43:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118466#issuecomment-5162442240",
+      "comment_created_at": "2026-08-03T04:54:19Z",
+      "comment_updated_at": "2026-08-09T16:43:53Z",
+      "comment_body_sha256": "31537c66d8c0108e381f3c5f1d63f73179f350f6b7b8734af75bc019f610dc92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=91fd57abaf81bef8edf7673dcd80f56a9eb0bcf1)",
+      "expected_head_sha": "91fd57abaf81bef8edf7673dcd80f56a9eb0bcf1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:46:59.312Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/generation-route-model-memo",
+        "head_sha": "91fd57abaf81bef8edf7673dcd80f56a9eb0bcf1",
         "cluster_id": null,
         "job_path": null
       }
