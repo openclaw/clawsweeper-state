@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Workboard legacy-notification dispatch bug from https://github.com/openclaw/openclaw/issues/120956. Current writers already cap new notification messages, but oversized historical SQLite rows are re-normalized during dispatch and abort the pass before ready cards start. Add an idempotent Workboard Doctor state migration that detects and Unicode-safely caps oversized `workboard_card_notifications.message` rows using the same semantics as current writers, with an operator-visible repaired-row outcome. Add a regression that seeds a legacy oversized SQLite row, runs the Doctor repair, and proves dispatch can start a ready card. Keep the repair plugin-local; do not add config, core/gateway routing, a runtime read fallback, a SQLite schema change/version bump, or a CHANGELOG edit. Include user-visible release-note context in the PR body or commit message.
+Repair https://github.com/openclaw/openclaw/issues/120956 at the Workboard plugin’s persisted-state boundary. Add an idempotent Doctor repair for workboard_card_notifications rows whose message exceeds the existing 240-character contract, using the existing UTF-16-safe cap/ellipsis behavior and reporting affected row/card counts. Preserve strict runtime validation and current write-time caps; do not add a delivery/runtime fallback, config surface, core policy, or SQLite schema-version bump. Account for .28 key-value-to-SQLite import ordering so imported legacy rows are repaired in the same Doctor run. Extend the Doctor regression path with a real SQLite ready card: show dispatch fails before repair, run Doctor repair, then show the message is capped and dispatch succeeds. Include user-visible release-note context in the PR body or commit message; do not edit CHANGELOG.md.
 
 Likely files:
 
 - extensions/workboard/doctor-contract-api.ts
 - extensions/workboard/doctor-contract-api.test.ts
-- extensions/workboard/src/store.test.ts
 - extensions/workboard/src/sqlite-store.ts
+- extensions/workboard/src/store-card-helpers.ts
+- extensions/workboard/src/store.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/workboard/doctor-contract-api.test.ts extensions/workboard/src/store.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs extensions/workboard/doctor-contract-api.test.ts
+- node scripts/run-vitest.mjs extensions/workboard/src/store.test.ts
 
 ## Operator Prompt
 
