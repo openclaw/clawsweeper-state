@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T13:47:22.931Z",
+  "updated_at": "2026-08-09T13:47:22.963Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117305:5200238367:2026-08-06T04:02:01Z:re_review",
-      "comment_id": "5200238367",
-      "comment_version_key": "5200238367:2026-08-06T04:02:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5200238367",
-      "comment_created_at": "2026-08-06T04:02:01Z",
-      "comment_updated_at": "2026-08-06T04:02:01Z",
-      "comment_body_sha256": "77b2a0f724e83d7367ac7bb9e93e31d8fccb84473cb30cc6af9b5c6d2e5ba060",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117305,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T08:44:06.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75403:4357671409:2026-08-09T08:41:15Z:clawsweeper_auto_repair",
       "comment_id": "4357671409",
@@ -32772,6 +32745,39 @@
         "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
         "cluster_id": "automerge-openclaw-openclaw-121050",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115761:5118129869:2026-08-09T13:46:36Z:clawsweeper_needs_human",
+      "comment_id": "5118129869",
+      "comment_version_key": "5118129869:2026-08-09T13:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115761#issuecomment-5118129869",
+      "comment_created_at": "2026-07-29T13:04:30Z",
+      "comment_updated_at": "2026-08-09T13:46:36Z",
+      "comment_body_sha256": "b6d5d4d9ab58bc3275d982d23490a0c530c9fceef755ba43d84cf1f59fbbc79b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes live-process ownership during reload, so regression coverage must continue to distinguish safe same-store reloads from disable, removal, store-change, and full-shutdown... (sha=582ea7eec9f3cbf2497914ee9cec8cb8e982a5ac)",
+      "expected_head_sha": "582ea7eec9f3cbf2497914ee9cec8cb8e982a5ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T13:47:22.963Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cron-exit-watcher-reload-once",
+        "head_sha": "582ea7eec9f3cbf2497914ee9cec8cb8e982a5ac",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
