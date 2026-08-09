@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:14:18.697Z",
+  "updated_at": "2026-08-09T23:15:01.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121032:5231092776:2026-08-09T18:49:29Z:clawsweeper_needs_human",
-      "comment_id": "5231092776",
-      "comment_version_key": "5231092776:2026-08-09T18:49:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121032#issuecomment-5231092776",
-      "comment_created_at": "2026-08-09T10:44:11Z",
-      "comment_updated_at": "2026-08-09T18:49:29Z",
-      "comment_body_sha256": "dad2db4d1ef3f1a3cb13a4bf5c4866c62800a1c3713927c1e51e7918413d2c4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121032,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not claim Gateway identity from the unsigned challenge (P1)** - The probe explicitly proves reachability and protocol shape, not that the responding endpoint is this Gateway; this message overstates the secur...; Review finding: [P1] Do not claim Gateway identity from the unsigned challenge — ui/src/i18n/locales/en.ts:530 - [P2] Document the new pairing workflow — ui/src/pages/devices/view... (sha=a784f6095647c5c6e156cff4b83671dc23127d9a)",
-      "expected_head_sha": "a784f6095647c5c6e156cff4b83671dc23127d9a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T19:42:05.356Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/pairing-lan-public-wizard",
-        "head_sha": "d196a1df5628c3abd56149867bb6f2081a56e41b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121063:5231839066:2026-08-09T18:46:15Z:clawsweeper_auto_repair",
       "comment_id": "5231839066",
@@ -31979,6 +31946,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1088:5234346974:2026-08-09T23:14:26Z:re_review",
+      "comment_id": "5234346974",
+      "comment_version_key": "5234346974:2026-08-09T23:14:26Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1088#issuecomment-5234346974",
+      "comment_created_at": "2026-08-09T23:14:26Z",
+      "comment_updated_at": "2026-08-09T23:14:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "11608390-9448-11f1-95fa-c247d2d35cfd",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1088,
+      "author": "brokemac79",
+      "author_id": 255583030,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T23:15:00.177Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-111-durable-noop",
+        "head_sha": "28f3f746439a1e78801d708005320f130cf54ad9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
