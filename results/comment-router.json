@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:44:50.286Z",
+  "updated_at": "2026-08-09T10:45:18.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120589:5229775762:2026-08-09T04:33:16Z:re_review",
-      "comment_id": "5229775762",
-      "comment_version_key": "5229775762:2026-08-09T04:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120589#issuecomment-5229775762",
-      "comment_created_at": "2026-08-09T04:33:16Z",
-      "comment_updated_at": "2026-08-09T04:33:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120589,
-      "author": "Linux2010",
-      "author_id": 35169750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T04:34:12.221Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-120306-discord-tool-progress-args",
-        "head_sha": "d31b5db10d3723b3f8393d8d411bed6c0e0a0623",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120694:5229781386:2026-08-09T04:35:08Z:re_review",
       "comment_id": "5229781386",
@@ -32818,6 +32771,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/pairing-lan-public-wizard",
         "head_sha": "fc2a7130c21121d2224d5d8e1ff1e300df7385e0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120983:5230440335:2026-08-09T10:40:24Z:clawsweeper_auto_repair",
+      "comment_id": "5230440335",
+      "comment_version_key": "5230440335:2026-08-09T10:40:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120983#issuecomment-5230440335",
+      "comment_created_at": "2026-08-09T07:49:49Z",
+      "comment_updated_at": "2026-08-09T10:40:24Z",
+      "comment_body_sha256": "8c419448c1aac8db8467803908b51191f26e4b3a04436ff236bb199462f1b903",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120983,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=2470b42b4d14c6171b5c48f1ad8d244e16949d2d)",
+      "expected_head_sha": "2470b42b4d14c6171b5c48f1ad8d244e16949d2d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:45:18.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-upgrade-survivor-assertions",
+        "head_sha": "2470b42b4d14c6171b5c48f1ad8d244e16949d2d",
         "cluster_id": null,
         "job_path": null
       }
