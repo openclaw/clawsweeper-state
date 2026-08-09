@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120956",
+  "mode": "autonomous",
+  "run_id": "31304346512",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31304346512",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120956.md",
+  "published_at": "2026-08-09T09:13:40.106Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_pr": null,
+  "summary": "#120956 is a current, plugin-local legacy-state bug on main 29c442d48389c834ebf4334e7246675e5f904ca7. Plan a narrow credited Workboard Doctor repair PR; no local patch or test was run because this worker's filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#120956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "A historical oversized workboard_card_notifications row can abort dispatch before ready cards are processed. The owning Workboard Doctor/SQLite boundary can repair it without a runtime fallback, schema change, config change, or core routing change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120956",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "Create a narrow new fix PR from clawsweeper/issue-openclaw-openclaw-120956."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120956",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "No contributor PR exists; the job authorizes one narrow generated fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
