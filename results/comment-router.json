@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:16:18.187Z",
+  "updated_at": "2026-08-09T18:16:50.837Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121060:5231692407:2026-08-09T13:11:22Z:re_review",
-      "comment_id": "5231692407",
-      "comment_version_key": "5231692407:2026-08-09T13:11:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121060#issuecomment-5231692407",
-      "comment_created_at": "2026-08-09T13:11:22Z",
-      "comment_updated_at": "2026-08-09T13:11:22Z",
-      "comment_body_sha256": "0d7f689221740761ee6fda05e497127035fffac9708d1585c53aa9218b4eba96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121060,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T13:47:58.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-matrix-restart-boundary",
-        "head_sha": "021072bd06eb1f17aa0f943ddfc2283e8abf1f05",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121048:5231337067:2026-08-09T13:47:17Z:clawsweeper_needs_human",
       "comment_id": "5231337067",
@@ -32799,6 +32752,39 @@
         "kind": "pull_request",
         "branch": "fix/eventkit-fetch-timeout",
         "head_sha": "42098a0e0e190c1966abcd01f3ead4bc5a50f59b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2799:5229564811:2026-08-09T18:16:04Z:clawsweeper_auto_repair",
+      "comment_id": "5229564811",
+      "comment_version_key": "5229564811:2026-08-09T18:16:04Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2799#issuecomment-5229564811",
+      "comment_created_at": "2026-08-09T03:26:03Z",
+      "comment_updated_at": "2026-08-09T18:16:04Z",
+      "comment_body_sha256": "76fd92c9b0184dc6a549dfa3b9ca3dc616396d80f13402d6f45da1b2462a6ced",
+      "repo": "steipete/codexbar",
+      "issue_number": 2799,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f0712d2ded777278d6663ced8e1c97c1578173d)",
+      "expected_head_sha": "9f0712d2ded777278d6663ced8e1c97c1578173d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:16:50.837Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-codex-refresh-publish",
+        "head_sha": "9f0712d2ded777278d6663ced8e1c97c1578173d",
         "cluster_id": null,
         "job_path": null
       }
