@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121251",
+  "mode": "autonomous",
+  "run_id": "31337812652",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31337812652",
+  "head_sha": "e10a866ba75fb1447b71043ecb43c3472241e4c7",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121251.md",
+  "published_at": "2026-08-09T22:43:46.601Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121251",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121251",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the Claude 5 replay-policy defect. A narrow fix is defined, but this read-only worker cannot edit or run Vitest; Corepack fails with EROFS when creating its cache.",
+  "actions": [
+    {
+      "target": "#121251",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121251",
+      "candidate_fix": null,
+      "reason": "Narrow implementation and focused tests require a writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121251",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121251",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from the requested ClawSweeper branch; no merge or closure is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, extensions, extensionTests [check:changed] extension-impacting surface; extension typecheck included [check:changed] extensions/amazon-bedrock/index.test.ts: extension test [check:changed] extensions/anthropic-vertex/index.test.ts: extension test [check:changed] extensions/anthropic/index.test.ts: extension test [check:changed] src/agents/transcript-policy.test.ts: core test [check:changed] src/plugin-sdk/provider-model-shared.test.ts: public core/plugin contract affects extensions [check:changed] src/plugins/provider-replay-helpers.test.ts: core test [check:changed] src/plugins/provider-replay-helpers.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node --import tsx scripts/check-env-var-count.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node --import tsx scripts/check-duplicates.mts --coverage [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- extensions/amazon-bedrock/index.test.ts extensions/anthropic-vertex/index.test.ts extensions/anthropic/index.test.ts src/agents/transcript-policy.test.ts src/plugin-sdk/provider-model-shared.test.ts src/plugins/provider-replay-helpers.test.ts src/plugins/provider-replay-helpers.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] Plugin SDK package exports $ node --import tsx scripts/sync-plugin-sdk-exports.mts --check [check:changed] Plugin SDK surface budget $ node --max-old-space-size=8192 --import tsx scripts/plugin-sdk-surface-report.mts --check [check:changed] deprecated API usage $ node --import tsx scripts/check-deprecated-api-usage.mts [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.8.0 in package mirror /tmp/clawsweeper-target-user-44GRL8/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 332ms ok conflict markers 416ms ok environment variable count ratchet 14.18s ok max-lines suppression ratchet 298ms ok changelog attributions 295ms ok doctor deprecation registry 318ms ok guarded extension wildcard re-exports 308ms ok plugin-sdk wildcard re-exports 320ms ok duplicate scan target coverage 333ms ok dependency pin guard 312ms ok format changed files 31.07s ok Plugin SDK API contract manifest 300ms ok Plugin SDK package exports 6.81s ok Plugin SDK surface budget 5.30s ok deprecated API usage 1.02s ok plugin boundaries 540ms ok package patch guard 366ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) OPENCLAW_* count 512/512 max-lines ratchet OK: 980 grandfathered suppressions. [doctor-deprecation-registry] OK as of 2026-08-09 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 623 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 19ms on 7 files using 4 threads. OK docs/.generated/plugin-sdk-api-baseline.sha256 plugin-sdk exports synced. all SDK entrypoints: entrypoints: 335 exports: 7705 callable exports: 4644 deprecated exports: 1830 deprecated callable exports: 1137 unique entrypoint-qualified exports: 7705 public package SDK entrypoints: entrypoints: 151 exports: 4848 callable exports: 2920 deprecated exports: 1704 deprecated callable exports: 1048 unique entrypoint-qualified exports: 4848 local-only SDK entrypoints: entrypoints: 184 exports: 2857 callable exports: 1724 deprecated exports: 126 deprecated callable exports: 89 unique entrypoint-qualified exports: 2857 deprecated public subpaths: 19 deprecated barrel subpaths: 3 public wildcard reexports: 80 package-exported forbidden subpaths: 0 deprecated API usage guard passed Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=40 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=20 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=56 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=335 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=7 PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#121251",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
