@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T04:44:26.203Z",
+  "updated_at": "2026-08-09T04:44:27.545Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119817:5228887945:2026-08-09T00:03:04Z:re_review",
-      "comment_id": "5228887945",
-      "comment_version_key": "5228887945:2026-08-09T00:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119817#issuecomment-5228887945",
-      "comment_created_at": "2026-08-09T00:03:04Z",
-      "comment_updated_at": "2026-08-09T00:03:04Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119817,
-      "author": "sallyom",
-      "author_id": 11166065,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T00:40:00.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-heartbeat-targeted-wake-119808",
-        "head_sha": "dc6ff3cd56ee09d6a0a0489a4a7b4eed828e777e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5228911194:2026-08-09T00:09:30Z:re_review",
       "comment_id": "5228911194",
@@ -31871,6 +31824,39 @@
         "kind": "pull_request",
         "branch": "fix-107202-exec-blocked-verb",
         "head_sha": "33fc72c0b75cfd544fbd8445e30629e8c55a173a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120881:5229807905:2026-08-09T04:43:49Z:clawsweeper_auto_repair",
+      "comment_id": "5229807905",
+      "comment_version_key": "5229807905:2026-08-09T04:43:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120881#issuecomment-5229807905",
+      "comment_created_at": "2026-08-09T04:43:49Z",
+      "comment_updated_at": "2026-08-09T04:43:49Z",
+      "comment_body_sha256": "4f12849d6f831033fc889f127641dc50b7df0db176c1911719f632f18e497184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d96ec41ff915775025d9f943ccb6031d40e84fb3)",
+      "expected_head_sha": "d96ec41ff915775025d9f943ccb6031d40e84fb3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T04:44:27.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/serene-kepler-8444e3",
+        "head_sha": "d96ec41ff915775025d9f943ccb6031d40e84fb3",
         "cluster_id": null,
         "job_path": null
       }
