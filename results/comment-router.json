@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:40:06.422Z",
+  "updated_at": "2026-08-09T06:40:18.776Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111466:5016531647:2026-08-09T01:43:42Z:clawsweeper_needs_human",
-      "comment_id": "5016531647",
-      "comment_version_key": "5016531647:2026-08-09T01:43:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111466#issuecomment-5016531647",
-      "comment_created_at": "2026-07-19T16:42:26Z",
-      "comment_updated_at": "2026-08-09T01:43:42Z",
-      "comment_body_sha256": "f80cd025bfc37b83909b354d0cf318d1f7faa4f8d42b0c31a289e09c2428bd20",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head check-prod-types run is failed and substantial required CI is still running, so the new private runtime seam and affected extensions are not yet fully validated on a me... (sha=10830145854f5a0b701176a98ec1a6f9a1ff3530)",
-      "expected_head_sha": "10830145854f5a0b701176a98ec1a6f9a1ff3530",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:45:50.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/teams-meetings-reused-tab-listen-probe",
-        "head_sha": "10830145854f5a0b701176a98ec1a6f9a1ff3530",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111466:5059570418:2026-07-23T14:24:27Z:re_review",
       "comment_id": "5059570418",
@@ -31882,6 +31849,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120905:5230195115:2026-08-09T06:39:46Z:re_review",
+      "comment_id": "5230195115",
+      "comment_version_key": "5230195115:2026-08-09T06:39:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120905#issuecomment-5230195115",
+      "comment_created_at": "2026-08-09T06:39:46Z",
+      "comment_updated_at": "2026-08-09T06:39:46Z",
+      "comment_body_sha256": "5de753fb6f2ec032aa94da358ca219d47aa3730b8b713f802e0056d62972fec0",
+      "source_delivery_id": "1d87b110-93bd-11f1-954f-6e54cdccb968",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120905,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the previous review run appears to have stalled at the status placeholder (lease expired without a durable review). re-queueing. head 7f86406d58d",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T06:40:17.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-app-standalone-head-content-length",
+        "head_sha": "7f86406d58d5a14ff3962f0a38d6e5e7173fb256",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
