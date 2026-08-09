@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T08:41:53.644Z",
+  "updated_at": "2026-08-09T08:41:54.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5080606334:2026-07-25T21:13:23Z:re_review",
-      "comment_id": "5080606334",
-      "comment_version_key": "5080606334:2026-07-25T21:13:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5080606334",
-      "comment_created_at": "2026-07-25T21:13:23Z",
-      "comment_updated_at": "2026-07-25T21:13:23Z",
-      "comment_body_sha256": "13deaa11a2b52dd57afaa18b34067a5b2b6cddab694689d836d6d59d1edeafd3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:42:36.033Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5093478884:2026-07-27T15:44:15Z:re_review",
       "comment_id": "5093478884",
@@ -32969,6 +32942,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120900:5230001171:2026-08-09T08:41:17Z:clawsweeper_needs_human",
+      "comment_id": "5230001171",
+      "comment_version_key": "5230001171:2026-08-09T08:41:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5230001171",
+      "comment_created_at": "2026-08-09T05:42:59Z",
+      "comment_updated_at": "2026-08-09T08:41:17Z",
+      "comment_body_sha256": "8204dfc0c93ddfb90a4f1cacf5f414a5641b6f498b4f16203c096a91adada5c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the unapproved UI runtime dependency (P1)** - This parser duplicates the existing dependency-free structured-error pattern while adding a browser Zod edge and a lockfile change blocked pending exact-head...; Review finding: [P1] Remove the unapproved UI runtime dependency — ui/package.json:43 - [P2] Use policy-neutral review copy — ui/src/i18n/locales/en.ts:2712-2716 - [medium] Unappr... (sha=301bebb78f84cc06bae5ae4bd143956cf255c6f0)",
+      "expected_head_sha": "301bebb78f84cc06bae5ae4bd143956cf255c6f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T08:41:54.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-ui",
+        "head_sha": "301bebb78f84cc06bae5ae4bd143956cf255c6f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
