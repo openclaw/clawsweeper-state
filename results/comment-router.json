@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T00:46:06.586Z",
+  "updated_at": "2026-08-09T00:46:11.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:128:5156335270:2026-08-08T20:47:56Z:clawsweeper_needs_human",
-      "comment_id": "5156335270",
-      "comment_version_key": "5156335270:2026-08-08T20:47:56Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/128#issuecomment-5156335270",
-      "comment_created_at": "2026-08-02T07:51:03Z",
-      "comment_updated_at": "2026-08-08T20:47:56Z",
-      "comment_body_sha256": "9139c181ec9504c4134751e875ab5174f03d2e90d3a6733052d11062f2f1b8de",
-      "repo": "openclaw/lobster",
-      "issue_number": 128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing workflows that only obtain valid output on the formerly implicit extra attempt will fail after upgrade unless their configured retry limit is increased by one. (sha=4e1b81e60284e6250826b792281219df62f96871)",
-      "expected_head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T20:50:25.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-validation-retry-off-by-one",
-        "head_sha": "4e1b81e60284e6250826b792281219df62f96871",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:128:5162671447:2026-08-03T05:31:30Z:re_review",
       "comment_id": "5162671447",
@@ -31975,6 +31942,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T00:46:06.586Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120721:5228350222:2026-08-09T00:45:30Z:clawsweeper_needs_human",
+      "comment_id": "5228350222",
+      "comment_version_key": "5228350222:2026-08-09T00:45:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120721#issuecomment-5228350222",
+      "comment_created_at": "2026-08-08T21:47:05Z",
+      "comment_updated_at": "2026-08-09T00:45:30Z",
+      "comment_body_sha256": "7bdc75d177b22b2fb66f854161e6ac90bee4ceace0dd60534cb7756a1906d00e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body shows a credible live qa-channel-to-Claude-CLI result, but it expressly lacks an after-fix embedded subscription-auth trac... (sha=6217d98c5293def129bcd114c38bca2a8c4ae952)",
+      "expected_head_sha": "6217d98c5293def129bcd114c38bca2a8c4ae952",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T00:46:11.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-image-forwarding",
+        "head_sha": "6217d98c5293def129bcd114c38bca2a8c4ae952",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
