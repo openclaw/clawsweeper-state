@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:42:10.756Z",
+  "updated_at": "2026-08-09T16:42:36.768Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:132:5168142459:2026-08-09T11:58:24Z:clawsweeper_auto_repair",
-      "comment_id": "5168142459",
-      "comment_version_key": "5168142459:2026-08-09T11:58:24Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/132#issuecomment-5168142459",
-      "comment_created_at": "2026-08-03T15:07:17Z",
-      "comment_updated_at": "2026-08-09T11:58:24Z",
-      "comment_body_sha256": "46c705f6a74b0f3ddbe8e5481712145f207ceb603af333ef0151cea473c1c9bf",
-      "repo": "openclaw/lobster",
-      "issue_number": 132,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=3fbc836c0636830d8e6373e5b2b02fae73ff9c03)",
-      "expected_head_sha": "3fbc836c0636830d8e6373e5b2b02fae73ff9c03",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-09T11:59:10.419Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llm-invoke-honor-abort-signal",
-        "head_sha": "3fbc836c0636830d8e6373e5b2b02fae73ff9c03",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-09T11:58:25Z:clawsweeper_needs_human",
       "comment_id": "5156313398",
@@ -33087,6 +33054,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120768:5232600534:2026-08-09T16:41:51Z:re_review",
+      "comment_id": "5232600534",
+      "comment_version_key": "5232600534:2026-08-09T16:41:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5232600534",
+      "comment_created_at": "2026-08-09T16:41:51Z",
+      "comment_updated_at": "2026-08-09T16:41:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "391ddf90-9411-11f1-92fb-68c68f1a96e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T16:42:34.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runners-m3-pair-url",
+        "head_sha": "a3ec451b0bb3bd36011bd207fdda931d19b2e1d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
