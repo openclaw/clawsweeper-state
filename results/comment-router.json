@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T08:49:08.830Z",
+  "updated_at": "2026-08-09T08:49:11.419Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119367:5185607290:2026-08-07T19:39:43Z:clawsweeper_auto_merge",
-      "comment_id": "5185607290",
-      "comment_version_key": "5185607290:2026-08-07T19:39:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119367#issuecomment-5185607290",
-      "comment_created_at": "2026-08-04T23:09:27Z",
-      "comment_updated_at": "2026-08-07T19:39:43Z",
-      "comment_body_sha256": "2b9903c56cd24c52d40c9d2f46ee49b0394d604be04ce82aa9b186bb83516bdf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119367,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=c57ae26b3577bf940306cd1f714b48155696ce02)",
-      "expected_head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-09T02:48:21.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119350",
-        "head_sha": "c57ae26b3577bf940306cd1f714b48155696ce02",
-        "cluster_id": "issue-openclaw-openclaw-119350",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119350.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119500:5188244849:2026-08-06T22:55:57Z:clawsweeper_auto_repair",
       "comment_id": "5188244849",
@@ -32668,6 +32635,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:130:5156377755:2026-08-09T08:48:22Z:clawsweeper_needs_human",
+      "comment_id": "5156377755",
+      "comment_version_key": "5156377755:2026-08-09T08:48:22Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/130#issuecomment-5156377755",
+      "comment_created_at": "2026-08-02T07:58:25Z",
+      "comment_updated_at": "2026-08-09T08:48:22Z",
+      "comment_body_sha256": "974831a4065114cb21a84d39636cdad75b3370d6b1bfd5f9adeedd013fb9e63c",
+      "repo": "openclaw/lobster",
+      "issue_number": 130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, every prior LLM cache entry and matching reusable-state record misses once, which can trigger a paid model call and a fresh workflow result rather than replaying stored... (sha=2b3cef0e3667b41a198f406c43dd9a090d87fac7)",
+      "expected_head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T08:49:11.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-cache-key-sampling-params",
+        "head_sha": "2b3cef0e3667b41a198f406c43dd9a090d87fac7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
