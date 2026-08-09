@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the legacy Workboard SQLite notification-row bug described in https://github.com/openclaw/openclaw/issues/120956. Keep the existing producer-side 240-character caps. Add a second idempotent Workboard doctor state migration that detects oversized workboard_card_notifications.message values, truncates them using the existing 240-character contract, verifies the result, and reports the repair count. Add focused regression coverage that seeds a legacy oversized row and proves doctor repair prevents dispatch from aborting. Do not add a runtime delivery fallback, new config, schema-version bump, manifest change, or CHANGELOG.md edit; capture release-note context in the PR body.
+Repair the Workboard legacy-notification persistence defect. Preserve the existing 240-character producer invariant by adding a plugin-owned doctor migration that selects notification id/message rows, tests message.length in JavaScript, and transactionally rewrites only oversized values with the existing UTF-16-safe capText helper. Do not add runtime read-time truncation, a core/gateway workaround, schema version bump, config option, or CHANGELOG edit. Add regression coverage seeded with a legacy oversized SQLite row, including an astral-Unicode case if compact; prove detect/no-op behavior, migration count, exact-240 preservation, and replay from a reopened store. Record user-visible release context in the PR body instead of editing CHANGELOG.
 
 Likely files:
 
 - extensions/workboard/doctor-contract-api.ts
 - extensions/workboard/doctor-contract-api.test.ts
-- extensions/workboard/src/sqlite-store.ts
+- extensions/workboard/src/store-card-helpers.ts
+- extensions/workboard/src/store.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/workboard/doctor-contract-api.test.ts
-- node scripts/run-vitest.mjs extensions/workboard/src/store.test.ts
+- node scripts/run-vitest.mjs extensions/workboard/doctor-contract-api.test.ts extensions/workboard/src/store.test.ts
+- git diff --check
 
 ## Operator Prompt
 
