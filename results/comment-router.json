@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:09:19.656Z",
+  "updated_at": "2026-08-09T10:09:34.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119538:5229635252:2026-08-09T03:48:44Z:re_review",
-      "comment_id": "5229635252",
-      "comment_version_key": "5229635252:2026-08-09T03:48:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119538#issuecomment-5229635252",
-      "comment_created_at": "2026-08-09T03:48:44Z",
-      "comment_updated_at": "2026-08-09T03:48:44Z",
-      "comment_body_sha256": "4b7b33f25bc929a632a20221489dd275f977ce99cfacb55f0afb0eb6ae809ecc",
-      "source_delivery_id": "384d8f50-93a5-11f1-9933-488b84d0d1bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119538,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T03:49:13.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-07-qqbot-api-error-redaction",
-        "head_sha": "60c34f619385d0e46b077816eb6c5c31edba99bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120575:5226150672:2026-08-09T03:48:26Z:clawsweeper_needs_human",
       "comment_id": "5226150672",
@@ -32768,6 +32720,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1241:5199613781:2026-08-09T10:08:47Z:clawsweeper_needs_human",
+      "comment_id": "5199613781",
+      "comment_version_key": "5199613781:2026-08-09T10:08:47Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1241#issuecomment-5199613781",
+      "comment_created_at": "2026-08-06T02:14:18Z",
+      "comment_updated_at": "2026-08-09T10:08:47Z",
+      "comment_body_sha256": "66e7c01a4e7f584b07b83dc3177eb6e317b68e638d742f368dd6ab3c95452347",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On Git older than 2.41, an intentional deletion of an in-scope tracked path can be indistinguishable from a sparse omission and will now stop sync before upload. (sha=5dfcd8bcaccc8d854474e66e00a912c9bcad955f)",
+      "expected_head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:09:34.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sparse-manifest-safety-20260806",
+        "head_sha": "5dfcd8bcaccc8d854474e66e00a912c9bcad955f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
