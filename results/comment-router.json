@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:05:19.650Z",
+  "updated_at": "2026-08-09T23:05:23.809Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121192:5233311389:2026-08-09T18:54:57Z:re_review",
-      "comment_id": "5233311389",
-      "comment_version_key": "5233311389:2026-08-09T18:54:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121192#issuecomment-5233311389",
-      "comment_created_at": "2026-08-09T18:54:57Z",
-      "comment_updated_at": "2026-08-09T18:54:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121192,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T19:40:50.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/task-terminal-open-completion-race",
-        "head_sha": "bea5ea569c8e1cfa4cca52020b25977c6e17b21d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120864:5233343219:2026-08-09T19:02:42Z:re_review",
       "comment_id": "5233343219",
@@ -32115,6 +32068,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-110-quota-collapse",
         "head_sha": "9b602b60b9511f113e8adfdeb4c9a40a6367aeb6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:260:5214491899:2026-08-09T23:04:11Z:clawsweeper_needs_human",
+      "comment_id": "5214491899",
+      "comment_version_key": "5214491899:2026-08-09T23:04:11Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/260#issuecomment-5214491899",
+      "comment_created_at": "2026-08-07T08:24:18Z",
+      "comment_updated_at": "2026-08-09T23:04:11Z",
+      "comment_body_sha256": "b3d562d2acb565dd3b8ea18f112bb1b4a7258b9c7559f9c9f56c4d8916f40800",
+      "repo": "openclaw/crabline",
+      "issue_number": 260,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Newly injected direct messages will expose canonical native metadata instead of the injected ID; maintainers should confirm the cited Mattermost name and empty-display-name contract f... (sha=9fc67fa2348489f0ee805570c4941563a6ca8310)",
+      "expected_head_sha": "9fc67fa2348489f0ee805570c4941563a6ca8310",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T23:05:23.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-canonical-dm-identity",
+        "head_sha": "9fc67fa2348489f0ee805570c4941563a6ca8310",
         "cluster_id": null,
         "job_path": null
       }
