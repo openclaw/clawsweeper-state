@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T21:43:52.658Z",
+  "updated_at": "2026-08-09T21:40:55.935Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121032:5231092776:2026-08-09T17:45:19Z:clawsweeper_needs_human",
@@ -32652,37 +32652,52 @@
       ]
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111115:5013734241:2026-08-09T20:47:11Z:clawsweeper_auto_repair",
-      "comment_id": "5013734241",
-      "comment_version_key": "5013734241:2026-08-09T20:47:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111115#issuecomment-5013734241",
-      "comment_created_at": "2026-07-19T01:51:53Z",
-      "comment_updated_at": "2026-08-09T20:47:11Z",
-      "comment_body_sha256": "17a1f4c65462bd2cd0916647ac705f0000c7f0d120603ddeff25f9732120543f",
+      "idempotency_key": "comment-router:openclaw/openclaw:121195:5233979406:2026-08-09T21:40:17Z:re_review",
+      "comment_id": "5233979406",
+      "comment_version_key": "5233979406:2026-08-09T21:40:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121195#issuecomment-5233979406",
+      "comment_created_at": "2026-08-09T21:40:17Z",
+      "comment_updated_at": "2026-08-09T21:40:17Z",
+      "comment_body_sha256": "e684af9ee1ded0af9cad792cf2e6b8f04af540f8d8082bdbbcb15d131a42ab52",
+      "source_delivery_id": "ea271580-943a-11f1-80fe-4665dad17152",
       "repo": "openclaw/openclaw",
-      "issue_number": 111115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "issue_number": 121195,
+      "author": "BsnizND",
+      "author_id": 199837910,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=71815c0812f662b6e4b5e95be2731b7eff6ad1d6)",
-      "expected_head_sha": "71815c0812f662b6e4b5e95be2731b7eff6ad1d6",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T21:43:52.658Z",
+      "status": "executed",
+      "processed_at": "2026-08-09T21:40:54.223Z",
       "target": {
         "kind": "pull_request",
-        "branch": "feat/memory-recall-core",
-        "head_sha": "71815c0812f662b6e4b5e95be2731b7eff6ad1d6",
+        "branch": "codex/requester-yield-intentional-quiet",
+        "head_sha": "fed7b54cbf6e12d1263c7e13e8e1b27d1d4b0726",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
