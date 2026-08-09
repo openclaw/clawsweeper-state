@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-55372"
-mode: "autonomous"
-run_id: "31309791488"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31309791488"
+mode: "plan"
+run_id: "31311044042"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31311044042"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T11:17:27.045Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T11:58:33.829Z"
 canonical: "https://github.com/openclaw/openclaw/issues/55372"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/55372"
-canonical_pr: null
-actions_total: 5
+canonical_pr: "https://github.com/openclaw/openclaw/pull/121050"
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31309791488](https://github.com/openclaw/clawsweeper/actions/runs/31309791488)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31311044042](https://github.com/openclaw/clawsweeper/actions/runs/31311044042)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/55372
 
 ## Summary
 
-#55372 is a reproducible Control UI routing defect. A narrow new fix PR should carry explicit webchat delivery context on both config writers, preserving the restart wake while preventing a stale Telegram notice. Implementation is blocked here because the checkout is read-only, lacks dependencies, and does not contain preflight main SHA 8d152c185284e167558075856b1f5412ed703c83 for exact-base validation.
+Keep #55372 open as the canonical report and #121050 as the canonical fix path. The PR is narrow, non-security-sensitive, and has no hydrated actionable review comments; merging remains out of scope for this job and pending checks must finish before any later merge decision.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/55372
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #55372 | keep_canonical | planned | canonical | Keep open until the narrow fix PR is created and validated. |
-| #53940 | keep_closed | skipped | related | Already closed; no closeout or mutation is valid. |
-| cluster:issue-openclaw-openclaw-55372 | fix_needed | planned | canonical | The established protocol has the needed field; the defect is a narrow Control UI omission rather than a request for a new restart-sentinel configuration option. |
-| cluster:issue-openclaw-openclaw-55372 | build_fix_artifact | planned | canonical | Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-55372. |
-| cluster:issue-openclaw-openclaw-55372 | open_fix_pr | blocked | canonical | Executor must rebase or start from preflight main, apply the artifact, then run the listed validations before opening the labeled PR. |
+| #53940 | keep_closed | skipped | related | Already closed in hydrated live state. |
+| #55372 | keep_canonical | planned | canonical | Keep the issue open until the candidate PR is merged; this job forbids close and merge actions. |
+| #121050 | keep_canonical | planned | canonical | Viable canonical PR; preserve it for checks and later exact-head merge preflight. |
 
 ## Needs Human
 

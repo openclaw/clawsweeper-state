@@ -2,15 +2,15 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T11:53:32.532Z",
+  "generated_at": "2026-08-09T11:59:15.379Z",
   "count": 5,
   "summary": {
     "open_prs": 5,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
-    "mergeability_unknown": 1,
-    "needs_checks": 2,
+    "mergeability_unknown": 0,
+    "needs_checks": 1,
     "needs_review": 0,
     "needs_merge_preflight": 5,
     "needs_result_backfill": 0
@@ -40,17 +40,13 @@
       "review_decision": "",
       "security_hold": false,
       "checks": {
-        "total": 133,
+        "total": 135,
         "counts": {
-          "SKIPPED": 45,
-          "SUCCESS": 85,
-          "IN_PROGRESS": 2,
+          "SKIPPED": 46,
+          "SUCCESS": 88,
           "NEUTRAL": 1
         },
-        "blockers": [
-          "CI / checks-node-compact-large-8:IN_PROGRESS",
-          "CI / checks-node-compact-small-7:IN_PROGRESS"
-        ]
+        "blockers": []
       },
       "review_threads": {
         "status": "clean",
@@ -70,19 +66,26 @@
         ]
       },
       "latest_record": {
-        "run_id": "31309791488",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31309791488",
+        "run_id": "31311044042",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31311044042",
         "cluster_id": "issue-openclaw-openclaw-55372",
-        "published_at": "2026-08-09T11:17:27.045Z",
-        "workflow_conclusion": "failure",
-        "apply_action": null
+        "published_at": "2026-08-09T11:58:33.829Z",
+        "workflow_conclusion": "success",
+        "apply_action": {
+          "target": "#121050",
+          "action": "keep_canonical",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#121050",
+          "candidate_fix": null,
+          "reason": "Viable canonical PR; preserve it for checks and later exact-head merge preflight."
+        }
       },
       "blockers": [
         "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-7:IN_PROGRESS",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
     },
     {
       "number": 120652,
@@ -307,8 +310,8 @@
       "cluster_id": "issue-openclaw-openclaw-87336",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
       "updated_at": "2026-08-08T23:35:35Z",
-      "mergeable": "UNKNOWN",
-      "merge_state_status": "UNKNOWN",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -358,12 +361,11 @@
         }
       },
       "blockers": [
-        "mergeability_unknown",
-        "merge_state_unknown",
+        "needs_merge_state:BEHIND",
         "needs_checks:CI / checks-node-compact-small-6:FAILURE; CI / openclaw/ci-gate:FAILURE",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }
