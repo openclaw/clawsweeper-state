@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:46:59.312Z",
+  "updated_at": "2026-08-09T16:47:12.822Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120668:5231387258:2026-08-09T11:55:57Z:re_review",
-      "comment_id": "5231387258",
-      "comment_version_key": "5231387258:2026-08-09T11:55:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120668#issuecomment-5231387258",
-      "comment_created_at": "2026-08-09T11:55:57Z",
-      "comment_updated_at": "2026-08-09T11:55:57Z",
-      "comment_body_sha256": "27e252a723bd6e2c09e2dd407f319ee1f6bd7277f5c2d99642f677ee3fbd59a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120668,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/whatsapp-deferred-ingress-ownership",
-        "head_sha": "c76837e2220cb8f9dfda919ea6ae2bfe7c4d6b4e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119917:5231388061:2026-08-09T11:56:09Z:re_review",
       "comment_id": "5231388061",
@@ -32891,6 +32844,39 @@
         "kind": "pull_request",
         "branch": "perf/generation-route-model-memo",
         "head_sha": "91fd57abaf81bef8edf7673dcd80f56a9eb0bcf1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120668:5228320357:2026-08-09T16:45:33Z:clawsweeper_auto_repair",
+      "comment_id": "5228320357",
+      "comment_version_key": "5228320357:2026-08-09T16:45:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120668#issuecomment-5228320357",
+      "comment_created_at": "2026-08-08T21:41:21Z",
+      "comment_updated_at": "2026-08-09T16:45:33Z",
+      "comment_body_sha256": "29b846a9705541b644239d013b0bdce90d2f5e664e7392038232b54c51840af4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8a82828ce722e1942270ae06cf6c7e94989124b4)",
+      "expected_head_sha": "8a82828ce722e1942270ae06cf6c7e94989124b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:47:12.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-deferred-ingress-ownership",
+        "head_sha": "8a82828ce722e1942270ae06cf6c7e94989124b4",
         "cluster_id": null,
         "job_path": null
       }
