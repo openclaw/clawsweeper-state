@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T04:44:54.008Z",
+  "updated_at": "2026-08-09T04:45:08.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120618:5228920209:2026-08-09T00:11:35Z:re_review",
-      "comment_id": "5228920209",
-      "comment_version_key": "5228920209:2026-08-09T00:11:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120618#issuecomment-5228920209",
-      "comment_created_at": "2026-08-09T00:11:35Z",
-      "comment_updated_at": "2026-08-09T00:11:35Z",
-      "comment_body_sha256": "448fdcee97ec8c5557ee8b9bd5fdaf9f371f1a80e90fb6a87d1baf213187ac8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120618,
-      "author": "sercada",
-      "author_id": 24389792,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T00:40:00.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-sandbox-agents-md-delivery",
-        "head_sha": "e440e5934df6055dba599b704cdb159541d8f18a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120580:5228932614:2026-08-09T00:14:56Z:re_review",
       "comment_id": "5228932614",
@@ -31843,6 +31796,39 @@
         "kind": "pull_request",
         "branch": "claude/doctor-closure-slimming",
         "head_sha": "fa86c6d4f5057b404603a341c84077d1a412f933",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120883:5229810082:2026-08-09T04:44:32Z:clawsweeper_auto_repair",
+      "comment_id": "5229810082",
+      "comment_version_key": "5229810082:2026-08-09T04:44:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120883#issuecomment-5229810082",
+      "comment_created_at": "2026-08-09T04:44:32Z",
+      "comment_updated_at": "2026-08-09T04:44:32Z",
+      "comment_body_sha256": "cd48833ef17668064d3f2eead1ff12f3748b859b7dbb90326cab4c9d1d97faa1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120883,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=92a828575f11c0255c74aafcaca9aba24adf7f77)",
+      "expected_head_sha": "92a828575f11c0255c74aafcaca9aba24adf7f77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T04:45:08.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-secretref-e2e-timeout-120832",
+        "head_sha": "92a828575f11c0255c74aafcaca9aba24adf7f77",
         "cluster_id": null,
         "job_path": null
       }
