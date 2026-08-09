@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-120652",
+  "mode": "autonomous",
+  "run_id": "31321419573",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31321419573",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120652.md",
+  "published_at": "2026-08-09T16:37:44.855Z",
+  "canonical": "#120652",
+  "canonical_issue": "#97601",
+  "canonical_pr": "#120652",
+  "summary": "Repair #120652 on its writable same-repository branch. The hydrated PR is the bounded implementation path for #97601, but its reviewed head is conflicted with current main and still lacks the requested after-fix channel-boundary proof.",
+  "actions": [
+    {
+      "target": "#97601",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120652",
+      "candidate_fix": "#120652",
+      "reason": "The issue supplies the user-visible reproduction and remains the tracking thread while the candidate PR is repaired."
+    },
+    {
+      "target": "#120652",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120652",
+      "candidate_fix": "#120652",
+      "reason": "Repair the existing candidate branch rather than replace it; it is focused, writable, and already preserves the source context."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

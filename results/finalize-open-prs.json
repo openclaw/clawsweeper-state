@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T16:10:20.909Z",
-  "count": 5,
+  "generated_at": "2026-08-09T16:38:17.465Z",
+  "count": 4,
   "summary": {
-    "open_prs": 5,
+    "open_prs": 4,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 2,
+    "needs_rebase": 3,
     "mergeability_unknown": 0,
-    "needs_checks": 1,
+    "needs_checks": 0,
     "needs_review": 0,
-    "needs_merge_preflight": 5,
+    "needs_merge_preflight": 4,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -139,11 +139,11 @@
         ]
       },
       "latest_record": {
-        "run_id": "31319249000",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31319249000",
+        "run_id": "31321419573",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31321419573",
         "cluster_id": "automerge-openclaw-openclaw-120652",
-        "published_at": "2026-08-09T15:02:36.041Z",
-        "workflow_conclusion": "failure",
+        "published_at": "2026-08-09T16:37:44.855Z",
+        "workflow_conclusion": "success",
         "apply_action": {
           "target": "#120652",
           "action": "build_fix_artifact",
@@ -151,7 +151,7 @@
           "classification": "canonical",
           "canonical": "#120652",
           "candidate_fix": "#120652",
-          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+          "reason": "Repair the existing candidate branch rather than replace it; it is focused, writable, and already preserves the source context."
         }
       },
       "blockers": [
@@ -170,8 +170,8 @@
       "cluster_id": "issue-openclaw-openclaw-120356",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120356.md",
       "updated_at": "2026-08-08T15:47:35Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "CONFLICTING",
+      "merge_state_status": "DIRTY",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -223,10 +223,11 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "needs_rebase:CONFLICTING",
+        "needs_merge_state:DIRTY",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
+      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 120550,
@@ -307,72 +308,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
-    },
-    {
-      "number": 120347,
-      "title": "fix(gateway): reject missing sessions_send targets",
-      "url": "https://github.com/openclaw/openclaw/pull/120347",
-      "branch": "clawsweeper/issue-openclaw-openclaw-87336",
-      "head_sha": "26abcc866cbf05e165a9c48344cfb17f15bcb416",
-      "cluster_id": "issue-openclaw-openclaw-87336",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
-      "updated_at": "2026-08-08T23:35:35Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 135,
-        "counts": {
-          "SKIPPED": 52,
-          "SUCCESS": 80,
-          "FAILURE": 2,
-          "NEUTRAL": 1
-        },
-        "blockers": [
-          "CI / checks-node-compact-small-6:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120347#issuecomment-5221829117",
-            "submitted_at": "2026-08-07T20:44:45Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31216402645",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31216402645",
-        "cluster_id": "issue-openclaw-openclaw-87336",
-        "published_at": "2026-08-07T20:52:26.468Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120347",
-          "action": "needs_human",
-          "status": "blocked",
-          "classification": "needs_human",
-          "canonical": "#87336",
-          "candidate_fix": "#120347",
-          "reason": "Maintainer decision required: may sessions_send stop materializing arbitrary explicit key-shaped targets on their first send and instead return a structured missing-target result, retaining only configured-agent-main bootstrap? Approval is also needed before repairing the behind branch and diagnosing the unhydrated CI failures."
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-small-6:FAILURE; CI / openclaw/ci-gate:FAILURE",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
     }
   ]
 }
