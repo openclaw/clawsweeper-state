@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T22:36:05.316Z",
+  "updated_at": "2026-08-09T22:38:19.898Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118751:5168928091:2026-08-06T00:31:25Z:clawsweeper_auto_merge",
-      "comment_id": "5168928091",
-      "comment_version_key": "5168928091:2026-08-06T00:31:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118751#issuecomment-5168928091",
-      "comment_created_at": "2026-08-03T16:17:40Z",
-      "comment_updated_at": "2026-08-06T00:31:25Z",
-      "comment_body_sha256": "21e92268f364bd3312de6ed14927ab5399ebec4ce6daa869c40a0291c6f3ad42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118751,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=7692569535418edbce6d1c57acc0777df543c4f3)",
-      "expected_head_sha": "7692569535418edbce6d1c57acc0777df543c4f3",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-09T18:42:41.152Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-102190",
-        "head_sha": "7692569535418edbce6d1c57acc0777df543c4f3",
-        "cluster_id": "automerge-openclaw-openclaw-118751",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118751.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-08-07T13:53:08Z:clawsweeper_auto_merge",
       "comment_id": "5176973305",
@@ -31856,6 +31823,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121235:5234203704:2026-08-09T22:37:00Z:re_review",
+      "comment_id": "5234203704",
+      "comment_version_key": "5234203704:2026-08-09T22:37:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121235#issuecomment-5234203704",
+      "comment_created_at": "2026-08-09T22:37:00Z",
+      "comment_updated_at": "2026-08-09T22:37:00Z",
+      "comment_body_sha256": "5a4af9eda95ee4b5e8822b51b296669330bd4a7508d9d2667109a2adba3e3b2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121235,
+      "author": "hannesrudolph",
+      "author_id": 49103247,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T22:38:17.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/120315-user-abort-terminal",
+        "head_sha": "6a931316c3abe85307e1fb9dfbd2af79e0fcccfb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
