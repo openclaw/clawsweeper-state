@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120956",
+  "mode": "autonomous",
+  "run_id": "31329698207",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31329698207",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120956.md",
+  "published_at": "2026-08-09T18:54:09.521Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow Workboard legacy SQLite persistence defect on main 40dbc7a65a8af246e7098e643a3bf2b15189fe3a. Fresh producers enforce the 240-UTF-16-unit invariant, but pre-existing rows replay unchanged. A plugin-owned doctor migration is the canonical repair. Implementation is blocked only because this worker checkout is read-only; no maintainer decision is needed.",
+  "actions": [
+    {
+      "target": "#120956",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "The issue remains a real plugin-owned legacy-data repair; no viable PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120956",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "The repair is clear and narrow, but branch implementation is blocked by the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120956",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new fix PR; do not add runtime fallback behavior, schema changes, config, or changelog edits."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

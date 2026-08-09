@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120956"
 mode: "autonomous"
-run_id: "31319438465"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31319438465"
+run_id: "31329698207"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31329698207"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-09T15:20:10.943Z"
+published_at: "2026-08-09T18:54:09.521Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31319438465](https://github.com/openclaw/clawsweeper/actions/runs/31319438465)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31329698207](https://github.com/openclaw/clawsweeper/actions/runs/31329698207)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 ## Summary
 
-#120956 is a current, source-reproducible Workboard persistence bug. A narrow doctor-owned repair is planned, but this worker cannot create the branch or run tests because the checkout is read-only and node_modules is absent.
+Confirmed a narrow Workboard legacy SQLite persistence defect on main 40dbc7a65a8af246e7098e643a3bf2b15189fe3a. Fresh producers enforce the 240-UTF-16-unit invariant, but pre-existing rows replay unchanged. A plugin-owned doctor migration is the canonical repair. Implementation is blocked only because this worker checkout is read-only; no maintainer decision is needed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120956 | keep_canonical | planned | canonical | Canonical bug remains valid on current main; no candidate PR is hydrated. |
-| cluster:issue-openclaw-openclaw-120956 | fix_needed | planned | canonical | Repair belongs at the plugin doctor/state owner boundary; no runtime fallback, config change, manifest change, schema bump, or changelog edit is needed. |
-| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned | canonical | Artifact is ready for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-120956 | open_fix_pr | blocked | canonical | Deterministic executor should implement the attached new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-120956. |
+| #120956 | keep_canonical | planned | canonical | The issue remains a real plugin-owned legacy-data repair; no viable PR is hydrated. |
+| cluster:issue-openclaw-openclaw-120956 | fix_needed | blocked | canonical | The repair is clear and narrow, but branch implementation is blocked by the read-only checkout. |
+| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned | canonical | Prepare one narrow new fix PR; do not add runtime fallback behavior, schema changes, config, or changelog edits. |
 
 ## Needs Human
 
