@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:55:46.195Z",
+  "updated_at": "2026-08-09T21:55:55.144Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121123:5232993235:2026-08-09T18:09:08Z:re_review",
-      "comment_id": "5232993235",
-      "comment_version_key": "5232993235:2026-08-09T18:09:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121123#issuecomment-5232993235",
-      "comment_created_at": "2026-08-09T18:09:08Z",
-      "comment_updated_at": "2026-08-09T18:09:08Z",
-      "comment_body_sha256": "641f3ad434c77098e4002790e7e08b8f38b6f07c47fdd26dfe081b4371dbdd05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121123,
-      "author": "arhxam",
-      "author_id": 132888838,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — rebased onto verified-green upstream `ad1a2cd7e7`; current head is `a6ff2e1599`. all three prior findings remain fixed. exact-head verification: context/static suites 19/19; resolver e2e 1 passed/5 skipped; full typescript and bundled-plugin build completed; neither `getfile` nor proxy fetch executes for tgs/webm stickers",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-sticker-unavailable-context",
-        "head_sha": "a6ff2e1599ae92cc092daf0fdf4e966c9420b586",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121106:5232996571:2026-08-09T18:09:33Z:re_review",
       "comment_id": "5232996571",
@@ -32043,6 +31996,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/pairing-tailscale-contract",
         "head_sha": "9bc22c10d9b8b9d7804b2eedf59b5dada6a42438",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120933:5230216670:2026-08-09T21:55:10Z:clawsweeper_auto_repair",
+      "comment_id": "5230216670",
+      "comment_version_key": "5230216670:2026-08-09T21:55:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120933#issuecomment-5230216670",
+      "comment_created_at": "2026-08-09T06:45:59Z",
+      "comment_updated_at": "2026-08-09T21:55:10Z",
+      "comment_body_sha256": "a26ea20478b3e768ee2f19523e96216ff7429c27047dd72dfb7efaf9504abcaa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120933,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1b2ed8cb141126ba4401f42f317bd39a8ab97a47)",
+      "expected_head_sha": "1b2ed8cb141126ba4401f42f317bd39a8ab97a47",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:55:55.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/pairing-modal-lifecycle",
+        "head_sha": "1b2ed8cb141126ba4401f42f317bd39a8ab97a47",
         "cluster_id": null,
         "job_path": null
       }
