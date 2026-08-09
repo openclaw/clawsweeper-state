@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T17:43:27.834Z",
+  "updated_at": "2026-08-09T17:43:53.158Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113330:5085527352:2026-08-09T12:44:05Z:clawsweeper_needs_human",
-      "comment_id": "5085527352",
-      "comment_version_key": "5085527352:2026-08-09T12:44:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113330#issuecomment-5085527352",
-      "comment_created_at": "2026-07-26T21:41:31Z",
-      "comment_updated_at": "2026-08-09T12:44:05Z",
-      "comment_body_sha256": "2cf7b21b767ae0a79e0a53190c914a4c9501dd442caeaf67235841aab1f42155",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113330,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main; required checks should exercise the resulting current-main merge before landing. (sha=4f43c016152992c1c7be54408bcc239a50ac7a11)",
-      "expected_head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T12:44:44.000Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/redact-shopify-access-tokens",
-        "head_sha": "4f43c016152992c1c7be54408bcc239a50ac7a11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2813:5231564118:2026-08-09T12:44:26Z:clawsweeper_auto_repair",
       "comment_id": "5231564118",
@@ -32857,6 +32824,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116123:5232850686:2026-08-09T17:43:20Z:re_review",
+      "comment_id": "5232850686",
+      "comment_version_key": "5232850686:2026-08-09T17:43:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116123#issuecomment-5232850686",
+      "comment_created_at": "2026-08-09T17:43:20Z",
+      "comment_updated_at": "2026-08-09T17:43:20Z",
+      "comment_body_sha256": "78f515179d8b458150a50cb02911e0f8b0c9666fe48373517bdf7287da267e9d",
+      "source_delivery_id": "d06529a0-9419-11f1-9e23-272a6360c765",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116123,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T17:43:51.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sanitize-text-code-spans",
+        "head_sha": "54139fd9dd0411e64bfde6764c83388d0caf68d0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
