@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T09:53:29.571Z",
+  "updated_at": "2026-08-09T09:53:30.263Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120626:5229626175:2026-08-09T03:46:06Z:re_review",
-      "comment_id": "5229626175",
-      "comment_version_key": "5229626175:2026-08-09T03:46:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120626#issuecomment-5229626175",
-      "comment_created_at": "2026-08-09T03:46:06Z",
-      "comment_updated_at": "2026-08-09T03:46:06Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "da738740-93a4-11f1-9ada-a3f6b67ee617",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120626,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T03:46:38.755Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-plugin-prerelease-baselines-20260808",
-        "head_sha": "6f0ecc0b5ce2e82014d24c8c4cffeffc42269a82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120694:5228323360:2026-08-09T03:42:59Z:clawsweeper_auto_repair",
       "comment_id": "5228323360",
@@ -32755,6 +32707,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0004-doctor-structured-repair",
         "head_sha": "6a2a0c2bc163d600cd1ef52d57c8f10993f06251",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:46:5084093874:2026-08-09T09:46:49Z:clawsweeper_auto_repair",
+      "comment_id": "5084093874",
+      "comment_version_key": "5084093874:2026-08-09T09:46:49Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/46#issuecomment-5084093874",
+      "comment_created_at": "2026-07-26T15:17:29Z",
+      "comment_updated_at": "2026-08-09T09:46:49Z",
+      "comment_body_sha256": "3d48590648f2c7edd3af982802addabdf76078891ec0d3026f0a78dd0e2dea20",
+      "repo": "openclaw/rfcs",
+      "issue_number": 46,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f290e9b3f09708bb309d6c4c9bd2e39dc76b663)",
+      "expected_head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T09:53:30.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0013-continuity-sidecars",
+        "head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
         "cluster_id": null,
         "job_path": null
       }
