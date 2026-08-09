@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-09T12:25:01.946Z",
+  "generated_at": "2026-08-09T12:40:05.128Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/31311685729.json",
+  "run_record": "results/runs/31310453395.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "31311685729",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "31310453395",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/openclaw:#121050:merge_canonical:blocked:checks are not clean: checks-ui-e2e (1/4): IN_PROGRESS, checks-node-compact-large-6: IN_PROGRESS, checks-node-compact-large-8: IN_PROGRESS, checks-node-compact-small-5: IN_PROGRESS, checks-node-compact-small-7: IN_PROGRESS",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/openclaw",
+      "target": "#121050",
+      "title": "fix(control-ui): retain webchat context for config restarts",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31310453395",
+      "cluster_id": "issue-openclaw-openclaw-55372",
+      "hook_run_id": "60b46d03-06c7-4383-aabe-bba31844a4e6",
+      "url": "https://github.com/openclaw/openclaw/pull/121050"
+    },
+    {
+      "key": "clawsweeper.fix_pr_opened:openclaw/openclaw:#121050:open_fix_pr:opened:a7b2ab531422738de9f88397aa0318b0a8bb7744",
+      "type": "clawsweeper.fix_pr_opened",
+      "severity": "info",
+      "repo": "openclaw/openclaw",
+      "target": "#121050",
+      "title": null,
+      "action": "open_fix_pr",
+      "event_status": "opened",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "31310453395",
+      "cluster_id": "issue-openclaw-openclaw-55372",
+      "hook_run_id": "1fa24e1f-76ce-40a6-91ed-a1ba654f2276",
+      "url": "https://github.com/openclaw/openclaw/pull/121050"
+    }
+  ]
 }

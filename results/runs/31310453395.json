@@ -1,0 +1,136 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-55372",
+  "mode": "autonomous",
+  "run_id": "31310453395",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31310453395",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-55372.md",
+  "published_at": "2026-08-09T12:39:14.780Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/55372",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/55372",
+  "canonical_pr": null,
+  "summary": "#55372 remains a reproducible Control UI routing defect at preflight main d1b4ed872cfc31c7aa6a5f57692617a0151eb2fa. A narrow PR should include the active webchat delivery context on both config writers, retaining the restart wake while preventing a stale Telegram notice. Implementation is blocked only because this checkout is read-only and has no installed dependencies.",
+  "actions": [
+    {
+      "target": "#55372",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Keep the issue open for the new narrow fix PR."
+    },
+    {
+      "target": "#53940",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Closed context only; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Fix the producer-side Control UI omission; do not add a restart-sentinel configuration option or gateway fallback."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-55372."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Executor should implement the artifact on the exact base, validate it, then open or update the required labeled PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/121050",
+      "branch": "clawsweeper/issue-openclaw-openclaw-55372",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/121050",
+      "commit": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#55372",
+      "pr": "https://github.com/openclaw/openclaw/pull/121050",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/121050",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#121050",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "fix(control-ui): retain webchat context for config restarts",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-ui-e2e (1/4): IN_PROGRESS, checks-node-compact-large-6: IN_PROGRESS, checks-node-compact-large-8: IN_PROGRESS, checks-node-compact-small-5: IN_PROGRESS, checks-node-compact-small-7: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
