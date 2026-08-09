@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:51:11.117Z",
+  "updated_at": "2026-08-09T18:51:14.513Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116933:5231928479:2026-08-09T14:06:44Z:re_review",
-      "comment_id": "5231928479",
-      "comment_version_key": "5231928479:2026-08-09T14:06:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116933#issuecomment-5231928479",
-      "comment_created_at": "2026-08-09T14:06:44Z",
-      "comment_updated_at": "2026-08-09T14:06:44Z",
-      "comment_body_sha256": "d2d15efc8fb3176d53200ffc5fb9c3cc2bf20b7e0cbc2906246bfe7731b9982e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116933,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T14:41:08.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-cron-alert-routing-20260731",
-        "head_sha": "ac15e61a5ab493155d2e0661bc9ff01f736f38ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120017:5231941909:2026-08-09T14:09:52Z:re_review",
       "comment_id": "5231941909",
@@ -33123,6 +33090,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111628:5018464177:2026-08-09T18:50:20Z:clawsweeper_needs_human",
+      "comment_id": "5018464177",
+      "comment_version_key": "5018464177:2026-08-09T18:50:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111628#issuecomment-5018464177",
+      "comment_created_at": "2026-07-20T03:21:22Z",
+      "comment_updated_at": "2026-08-09T18:50:20Z",
+      "comment_body_sha256": "79c957e9adcfce9fb48987407bb3587703897fe06bad651eda3646a4b2fb1481",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111628,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The persisted acpx.reset_on_next_ensure field is strongly supported by the supplied ACPX 0.13 trace but could not be independently checked against installed upstream source in this en... (sha=8a0f2f19f3c421fedd32c26b7d410e9fdb9c419c)",
+      "expected_head_sha": "8a0f2f19f3c421fedd32c26b7d410e9fdb9c419c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:51:14.513Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-close-discard-acpx-resume",
+        "head_sha": "8a0f2f19f3c421fedd32c26b7d410e9fdb9c419c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
