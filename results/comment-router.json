@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-09T23:06:40.998Z",
+  "updated_at": "2026-08-09T23:05:33.649Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97175:5233392921:2026-08-09T19:14:36Z:re_review",
+      "comment_id": "5233392921",
+      "comment_version_key": "5233392921:2026-08-09T19:14:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5233392921",
+      "comment_created_at": "2026-08-09T19:14:36Z",
+      "comment_updated_at": "2026-08-09T19:14:36Z",
+      "comment_body_sha256": "d797a7cc73c988e1df1aad24b0b998f8b70bb54506b998b3846859db3d3a45c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97175,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — new head b1af3d0fa6",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T19:40:50.297Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/turn-maintenance-per-task-timeout",
+        "head_sha": "b1af3d0fa66d0de19fe0c5a1e3e9d1af0439e2ef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114389:5233452213:2026-08-09T19:29:21Z:re_review",
       "comment_id": "5233452213",
@@ -32038,39 +32085,6 @@
         "kind": "pull_request",
         "branch": "codex/csw-110-quota-collapse",
         "head_sha": "9b602b60b9511f113e8adfdeb4c9a40a6367aeb6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:46:5084093874:2026-08-09T22:02:04Z:clawsweeper_auto_repair",
-      "comment_id": "5084093874",
-      "comment_version_key": "5084093874:2026-08-09T22:02:04Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/46#issuecomment-5084093874",
-      "comment_created_at": "2026-07-26T15:17:29Z",
-      "comment_updated_at": "2026-08-09T22:02:04Z",
-      "comment_body_sha256": "d95cf9095195ce873048e92d982bfb0932c0805ec0dfc7bc131faad58387151c",
-      "repo": "openclaw/rfcs",
-      "issue_number": 46,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f290e9b3f09708bb309d6c4c9bd2e39dc76b663)",
-      "expected_head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:06:40.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-continuity-sidecars",
-        "head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
         "cluster_id": null,
         "job_path": null
       }
