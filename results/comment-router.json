@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:51:21.474Z",
+  "updated_at": "2026-08-09T18:51:23.264Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104691:5232079073:2026-08-09T14:41:12Z:re_review",
-      "comment_id": "5232079073",
-      "comment_version_key": "5232079073:2026-08-09T14:41:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104691#issuecomment-5232079073",
-      "comment_created_at": "2026-08-09T14:41:12Z",
-      "comment_updated_at": "2026-08-09T14:41:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "5efb3bb0-9400-11f1-8de4-4394c8c0b708",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104691,
-      "author": "jimmypuckett",
-      "author_id": 3220069,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T14:41:52.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "spinen/msteams-conversation-migration-safety",
-        "head_sha": "7a407e07863056a5fda04b41548bb6ebbf5cf14d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-09T14:32:45Z:clawsweeper_auto_repair",
       "comment_id": "4854073498",
@@ -33129,6 +33081,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T18:51:21.474Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121107:5233295124:2026-08-09T18:50:37Z:clawsweeper_needs_human",
+      "comment_id": "5233295124",
+      "comment_version_key": "5233295124:2026-08-09T18:50:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121107#issuecomment-5233295124",
+      "comment_created_at": "2026-08-09T18:50:37Z",
+      "comment_updated_at": "2026-08-09T18:50:37Z",
+      "comment_body_sha256": "bf3e4da983a1d24a46d348664063a2e86962a66b5561ecff5119f457c8491e9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies focused mocked tests and CI claims, but no after-fix Claude ACP run with Bedrock credentials; add a redacted runtime trace befo... (sha=2d9580194d294d1364c1a03e02a74e7e0d418571)",
+      "expected_head_sha": "2d9580194d294d1364c1a03e02a74e7e0d418571",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:51:23.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acpx-bedrock-model-prefix",
+        "head_sha": "2d9580194d294d1364c1a03e02a74e7e0d418571",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
