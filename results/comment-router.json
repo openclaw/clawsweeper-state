@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:48:33.373Z",
+  "updated_at": "2026-08-09T06:48:47.537Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5174427026:2026-08-04T03:56:58Z:re_review",
-      "comment_id": "5174427026",
-      "comment_version_key": "5174427026:2026-08-04T03:56:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5174427026",
-      "comment_created_at": "2026-08-04T03:56:58Z",
-      "comment_updated_at": "2026-08-04T03:56:58Z",
-      "comment_body_sha256": "b1e5928183067f584211059a90e293f38eaf26f5ea2a3793aaf00305792f9a06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:52:44.343Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5200332083:2026-08-06T04:18:16Z:re_review",
       "comment_id": "5200332083",
@@ -32024,6 +31997,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T06:48:33.373Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103201:4933838406:2026-08-09T06:48:04Z:clawsweeper_needs_human",
+      "comment_id": "4933838406",
+      "comment_version_key": "4933838406:2026-08-09T06:48:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-4933838406",
+      "comment_created_at": "2026-07-10T09:14:56Z",
+      "comment_updated_at": "2026-08-09T06:48:04Z",
+      "comment_body_sha256": "3972dfdb1a68dadcfb862e78d55632a5cdd0f49052c9725591d5962f11e45fce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Refresh provenance for retained chunks (P1)** - A provenance-only transcript rewrite keeps the same content-addressed chunk IDs, so this branch retains those rows and advances the source hash without updating me...; Review finding: [P1] Refresh provenance for retained chunks — extensions/memory-core/src/memory/manager-embedding-ops.ts:1171-1179 - [high] Stale provenance can cross the consolid... (sha=05e4875ed67080685896cd94dce1d124bff4946a)",
+      "expected_head_sha": "05e4875ed67080685896cd94dce1d124bff4946a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:48:47.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "05e4875ed67080685896cd94dce1d124bff4946a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
