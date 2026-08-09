@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:43:51.804Z",
+  "updated_at": "2026-08-09T01:43:56.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120629:5228253344:2026-08-08T21:28:01Z:re_review",
-      "comment_id": "5228253344",
-      "comment_version_key": "5228253344:2026-08-08T21:28:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120629#issuecomment-5228253344",
-      "comment_created_at": "2026-08-08T21:28:01Z",
-      "comment_updated_at": "2026-08-08T21:28:01Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "0947d9c0-9370-11f1-998d-5cc1b0ac6138",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120629,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T21:37:57.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/sessions-patch-many",
-        "head_sha": "b4d828d8595605e7264c23174c74f88ef28de586",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120500:5225395550:2026-08-08T21:37:38Z:clawsweeper_auto_repair",
       "comment_id": "5225395550",
@@ -32094,6 +32046,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github/codeql-action/analyze-4.37.6",
         "head_sha": "e357d77fd0ccb6c30259ba361bc5bd6e6f348a40",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2793:5228933323:2026-08-09T01:43:26Z:clawsweeper_needs_human",
+      "comment_id": "5228933323",
+      "comment_version_key": "5228933323:2026-08-09T01:43:26Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2793#issuecomment-5228933323",
+      "comment_created_at": "2026-08-09T00:15:07Z",
+      "comment_updated_at": "2026-08-09T01:43:26Z",
+      "comment_body_sha256": "5c9cf5cee8927cbb03ecaf041f247881d3aad20f156aef3df0b94cc7bf96f7c2",
+      "repo": "steipete/codexbar",
+      "issue_number": 2793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Changing native worker stack allocation and QuickJS overflow limits can affect process stability; the CI-only recovery remains unconfirmed until both macOS Swift-test shards pass. (sha=9f14c3da2a3191706a87eab56dc849a77e90b9e2)",
+      "expected_head_sha": "9f14c3da2a3191706a87eab56dc849a77e90b9e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:43:56.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/quickjs-stack-fix2",
+        "head_sha": "9f14c3da2a3191706a87eab56dc849a77e90b9e2",
         "cluster_id": null,
         "job_path": null
       }
