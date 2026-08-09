@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "plan",
+  "run_id": "31299201949",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31299201949",
+  "head_sha": "6971afb72029ac8c845bb29c337134f2534b1dbc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T06:40:21.051Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "#120735 is the live canonical animated/video Telegram sticker-context bug. Current main intentionally avoids downloading TGS/WebM stickers, but the pathless result loses its unavailable reason before agent context is built. Plan a narrow credited fix PR; #83748 and merged #93130 are closed historical static-WEBP work, not duplicates.",
+  "actions": [
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": "#93130",
+      "reason": "Already closed historical context; no close or mutation is valid."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Already merged historical static-sticker repair; it is not the canonical fix for the live unsupported-sticker context defect."
+    },
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "A narrow Telegram owner-boundary repair is warranted; no viable open contributor PR exists."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-120735."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

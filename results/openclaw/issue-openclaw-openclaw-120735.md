@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120735"
-mode: "autonomous"
-run_id: "31297454892"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31297454892"
+mode: "plan"
+run_id: "31299201949"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31299201949"
 head_sha: "6971afb72029ac8c845bb29c337134f2534b1dbc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T06:22:55.870Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T06:40:21.051Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31297454892](https://github.com/openclaw/clawsweeper/actions/runs/31297454892)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31299201949](https://github.com/openclaw/clawsweeper/actions/runs/31299201949)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 ## Summary
 
-#120735 remains reproducible on current main (562129d5): animated TGS and video WebM stickers intentionally avoid download, but their null resolution loses the unsupported outcome and leaves direct agent context empty. A narrow Telegram-plugin fix PR is appropriate, but this worker's checkout is read-only and lacks dependencies, so it cannot create or validate the branch locally.
+#120735 is the live canonical animated/video Telegram sticker-context bug. Current main intentionally avoids downloading TGS/WebM stickers, but the pathless result loses its unavailable reason before agent context is built. Plan a narrow credited fix PR; #83748 and merged #93130 are closed historical static-WEBP work, not duplicates.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #83748 | keep_closed | skipped | related | Historical related context only; no mutation is valid for an already-closed item. |
-| #93130 | keep_closed | skipped | related | Merged historical static-sticker repair; it is related but does not fix #120735. |
-| #120735 | fix_needed | planned | canonical | The root cause is a lost typed outcome at the Telegram resolver/context boundary; no configuration, download, conversion, or core policy change is required. |
-| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-120735 after applying the artifact and validating it in a writable, dependency-ready executor. |
+| #83748 | keep_closed | skipped | related | Already closed historical context; no close or mutation is valid. |
+| #93130 | keep_closed | skipped | related | Already merged historical static-sticker repair; it is not the canonical fix for the live unsupported-sticker context defect. |
+| #120735 | fix_needed | planned | canonical | A narrow Telegram owner-boundary repair is warranted; no viable open contributor PR exists. |
+| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-120735. |
 
 ## Needs Human
 
