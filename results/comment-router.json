@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:09:01.260Z",
+  "updated_at": "2026-08-09T23:09:17.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5233496247:2026-08-09T19:40:17Z:re_review",
-      "comment_id": "5233496247",
-      "comment_version_key": "5233496247:2026-08-09T19:40:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5233496247",
-      "comment_created_at": "2026-08-09T19:40:17Z",
-      "comment_updated_at": "2026-08-09T19:40:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "264b1c70-942a-11f1-8da9-5d5a543465ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T19:40:51.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media",
-        "head_sha": "19df189ef19e8f27ee9599ad5c5e5a407411245d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:79832:4412669695:2026-08-09T18:45:48Z:clawsweeper_auto_repair",
       "comment_id": "4412669695",
@@ -32015,6 +31967,39 @@
         "kind": "pull_request",
         "branch": "steipete/v4-p2-restructures",
         "head_sha": "7876c9c2c3f68c14c12303bc8542d8521faeabdc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-09T23:07:38Z:clawsweeper_needs_human",
+      "comment_id": "5169562551",
+      "comment_version_key": "5169562551:2026-08-09T23:07:38Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/45#issuecomment-5169562551",
+      "comment_created_at": "2026-08-03T17:21:34Z",
+      "comment_updated_at": "2026-08-09T23:07:38Z",
+      "comment_body_sha256": "eac4e9920213539f31e9243d3f188a9b142c43d858a40b093e40f6825d66757b",
+      "repo": "openclaw/libterminal",
+      "issue_number": 45,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Oxfmt and Oxlint can change existing contributors’ formatting or lint outcomes; CI is clean, but no after-update real execution transcript is attached. (sha=0d905fed759afd82db16409c41e75ae13cd5f04d)",
+      "expected_head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T23:09:17.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-a6da792cd5",
+        "head_sha": "0d905fed759afd82db16409c41e75ae13cd5f04d",
         "cluster_id": null,
         "job_path": null
       }
