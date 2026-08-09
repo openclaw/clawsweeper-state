@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:45:22.545Z",
+  "updated_at": "2026-08-09T21:45:27.848Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121088:5232870490:2026-08-09T17:48:02Z:re_review",
-      "comment_id": "5232870490",
-      "comment_version_key": "5232870490:2026-08-09T17:48:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121088#issuecomment-5232870490",
-      "comment_created_at": "2026-08-09T17:48:02Z",
-      "comment_updated_at": "2026-08-09T17:48:02Z",
-      "comment_body_sha256": "39d7805dad18805a0a40751b81d335f3bbed9ef4686b357994eedf94925e35c3",
-      "source_delivery_id": "78358530-941a-11f1-945b-d91e843b04f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121088,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T17:48:43.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-release-harness-tsx-bootstrap",
-        "head_sha": "76826d20730fb4616bb16b36f66067c97776f1de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121173:5232871127:2026-08-09T17:48:11Z:clawsweeper_auto_repair",
       "comment_id": "5232871127",
@@ -32931,6 +32883,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-929",
         "head_sha": "ef0e1a88eeadc4c26a4b80537452dabdee93a728",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121063:5231839066:2026-08-09T21:44:46Z:clawsweeper_needs_human",
+      "comment_id": "5231839066",
+      "comment_version_key": "5231839066:2026-08-09T21:44:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121063#issuecomment-5231839066",
+      "comment_created_at": "2026-08-09T13:45:54Z",
+      "comment_updated_at": "2026-08-09T21:44:46Z",
+      "comment_body_sha256": "d8eafa52ca5e7c6ea7bf5b5bc3178fc56dc05f0f23fa26153f93a6451cad81eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121063,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides a useful mocked provider/tool trace, but not an after-fix real native-session transport trace; add redacted terminal outpu... (sha=ef3fc7bf245f5dac146583116bc6efaa798a12ea)",
+      "expected_head_sha": "ef3fc7bf245f5dac146583116bc6efaa798a12ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:45:27.848Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/br-120962",
+        "head_sha": "ef3fc7bf245f5dac146583116bc6efaa798a12ea",
         "cluster_id": null,
         "job_path": null
       }
