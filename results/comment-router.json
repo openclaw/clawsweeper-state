@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T15:54:00.947Z",
+  "updated_at": "2026-08-09T15:54:03.922Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120982:5230429767:2026-08-09T11:46:38Z:clawsweeper_needs_human",
-      "comment_id": "5230429767",
-      "comment_version_key": "5230429767:2026-08-09T11:46:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120982#issuecomment-5230429767",
-      "comment_created_at": "2026-08-09T07:46:57Z",
-      "comment_updated_at": "2026-08-09T11:46:38Z",
-      "comment_body_sha256": "30493565a6754d4594fb68c9b60fe3b7aea7bd25aca05915bf9d51cba060ec69",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120982,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Authorize the dependency graph on the current head** - The lockfile, shrinkwrap, and workspace exclusion alter the shipped dependency graph and suppress the normal release-age warning,...; Review finding: [medium] Authorize the dependency graph on the current head — pnpm-workspace.yaml:24 (sha=678b0dbab7c9c060791c539f3aaf1cd0618c7148)",
-      "expected_head_sha": "678b0dbab7c9c060791c539f3aaf1cd0618c7148",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T11:48:33.114Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/extended-stable-2026.6.35-release-ci-repairs",
-        "head_sha": "678b0dbab7c9c060791c539f3aaf1cd0618c7148",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120992:5230875167:2026-08-09T11:47:46Z:clawsweeper_needs_human",
       "comment_id": "5230875167",
@@ -32772,6 +32739,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120911:5232398897:2026-08-09T15:53:19Z:re_review",
+      "comment_id": "5232398897",
+      "comment_version_key": "5232398897:2026-08-09T15:53:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120911#issuecomment-5232398897",
+      "comment_created_at": "2026-08-09T15:53:19Z",
+      "comment_updated_at": "2026-08-09T15:53:19Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "71bf6af0-940a-11f1-99be-bae9b0541abf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120911,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T15:54:01.700Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/realtime-audio-buffer-ownership",
+        "head_sha": "ad2d59750c03f134413f7acc2731f96f9215d2bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
