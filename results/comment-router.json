@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:55:26.524Z",
+  "updated_at": "2026-08-09T21:55:33.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5232908065:2026-08-09T17:57:27Z:re_review",
-      "comment_id": "5232908065",
-      "comment_version_key": "5232908065:2026-08-09T17:57:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5232908065",
-      "comment_created_at": "2026-08-09T17:57:27Z",
-      "comment_updated_at": "2026-08-09T17:57:27Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "34c0937b85b59e0790216457138bdb096117587c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112024:5232945425:2026-08-09T18:03:14Z:re_review",
       "comment_id": "5232945425",
@@ -32085,6 +32038,39 @@
         "kind": "pull_request",
         "branch": "fix/geocode-timeout",
         "head_sha": "e4759bac6c2ad75a784c08ecb18d4ed1c669c431",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121141:5233528026:2026-08-09T21:53:46Z:clawsweeper_needs_human",
+      "comment_id": "5233528026",
+      "comment_version_key": "5233528026:2026-08-09T21:53:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121141#issuecomment-5233528026",
+      "comment_created_at": "2026-08-09T19:48:10Z",
+      "comment_updated_at": "2026-08-09T21:53:46Z",
+      "comment_body_sha256": "35220e60afdb448719d00ba0783c440a846c97bbd508525e8e6f3c102e9ed5be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied validation is mock/synthetic only; without a real Telegram mixed-media run, merge would lack the scoped policy’s required proof for visible attachment delivery. (sha=2e5889362d7332eeb6999b3362630246eabc411d)",
+      "expected_head_sha": "2e5889362d7332eeb6999b3362630246eabc411d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:55:33.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0809-telegram-final-media-dedup",
+        "head_sha": "2e5889362d7332eeb6999b3362630246eabc411d",
         "cluster_id": null,
         "job_path": null
       }
