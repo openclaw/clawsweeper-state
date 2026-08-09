@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:46:09.336Z",
+  "updated_at": "2026-08-09T10:46:29.960Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120878:5229794846:2026-08-09T04:39:27Z:re_review",
-      "comment_id": "5229794846",
-      "comment_version_key": "5229794846:2026-08-09T04:39:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120878#issuecomment-5229794846",
-      "comment_created_at": "2026-08-09T04:39:27Z",
-      "comment_updated_at": "2026-08-09T04:39:27Z",
-      "comment_body_sha256": "fe3f5845f5498301b2ef69bea443621df92055236a3600f6f4a062080b433e23",
-      "source_delivery_id": "4e6bed70-93ac-11f1-9e92-0a60ea9905da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120878,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T04:39:54.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task-34-recovery-current-main",
-        "head_sha": "26c0c22e2b85ceaee747a2df431431e69a3e80e2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/libterminal:45:5169562551:2026-08-09T04:33:52Z:clawsweeper_needs_human",
       "comment_id": "5169562551",
@@ -32792,6 +32744,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105990:4954562280:2026-08-09T10:45:53Z:clawsweeper_needs_human",
+      "comment_id": "4954562280",
+      "comment_version_key": "4954562280:2026-08-09T10:45:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105990#issuecomment-4954562280",
+      "comment_created_at": "2026-07-13T04:55:02Z",
+      "comment_updated_at": "2026-08-09T10:45:53Z",
+      "comment_body_sha256": "30cdcb86b89dfb64f1d8b8588a8806bf8d9686be7782c120939357111d67fe1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105990,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused mocked tests are present, but there is no after-fix gateway, transport, or live ClickClack trace; add redacted runtime evidence before... (sha=3916e14d2893ddc272059eeac894df18df815c8e)",
+      "expected_head_sha": "3916e14d2893ddc272059eeac894df18df815c8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:46:29.960Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clickclack-target-prefix-normalization",
+        "head_sha": "3916e14d2893ddc272059eeac894df18df815c8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
