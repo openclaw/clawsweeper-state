@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:45:24.076Z",
+  "updated_at": "2026-08-09T10:45:25.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120840:5229781228:2026-08-09T04:35:05Z:re_review",
-      "comment_id": "5229781228",
-      "comment_version_key": "5229781228:2026-08-09T04:35:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120840#issuecomment-5229781228",
-      "comment_created_at": "2026-08-09T04:35:05Z",
-      "comment_updated_at": "2026-08-09T04:35:05Z",
-      "comment_body_sha256": "c5862a48963025e6b472e37b3a1fe868f0b1a3806babc9fe4e4296b58d2cd233",
-      "source_delivery_id": "b26721b0-93ab-11f1-9682-4c38416ed0fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120840,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T04:35:36.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/happy-diffie-6a9b69",
-        "head_sha": "a1c0f95295039bc081449f80b996da5da5b2ea20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:71:5209990860:2026-08-09T04:35:25Z:clawsweeper_needs_human",
       "comment_id": "5209990860",
@@ -32789,6 +32741,39 @@
         "kind": "pull_request",
         "branch": "tts-2",
         "head_sha": "752d8645c7f06cab355175ee416aa32a9386c7f5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121019:5231085956:2026-08-09T10:42:27Z:clawsweeper_needs_human",
+      "comment_id": "5231085956",
+      "comment_version_key": "5231085956:2026-08-09T10:42:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121019#issuecomment-5231085956",
+      "comment_created_at": "2026-08-09T10:42:27Z",
+      "comment_updated_at": "2026-08-09T10:42:27Z",
+      "comment_body_sha256": "0f69288e9df6b726d4f8cd5a64b298e337822458ad466cdc50fe69b5d6cb5119",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Crabbox 0.41.1 is not yet published, so merging now would make existing cloud-worker installations fail before allocation until operators install an unavailable compatible CLI. (sha=180533cd956d795c10e1642eb11e5528c5b79013)",
+      "expected_head_sha": "180533cd956d795c10e1642eb11e5528c5b79013",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:45:25.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/crabbox-fixed-lease-id",
+        "head_sha": "180533cd956d795c10e1642eb11e5528c5b79013",
         "cluster_id": null,
         "job_path": null
       }
