@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120735"
 mode: "autonomous"
-run_id: "31319223786"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31319223786"
+run_id: "31322445353"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31322445353"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-09T15:37:15.039Z"
+published_at: "2026-08-09T17:10:30.885Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31319223786](https://github.com/openclaw/clawsweeper/actions/runs/31319223786)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31322445353](https://github.com/openclaw/clawsweeper/actions/runs/31322445353)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 ## Summary
 
-Confirmed on main: TGS/WebM stickers deliberately return no media from the Telegram producer, then become a type-only sticker with an empty agent body. A narrow plugin-local repair is planned, but this read-only checkout cannot edit or install the missing tsx dependency required for focused Vitest.
+Confirmed on main eec454489ad30f86ca704a534a312f255117578d: animated TGS and video WebM Telegram stickers intentionally skip download, but their known unavailable outcome is collapsed into a type-only/raw-file reference. A narrow plugin-local repair is ready to implement; this read-only checkout prevents creating and validating the required branch/PR.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed on main: TGS/WebM stickers deliberately return no media from the Teleg
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120735 | fix_needed | planned | canonical | Distinct remaining animated/video sticker context bug; #93130 repaired static WebP staging only. |
-| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Executor can implement the bounded new-PR repair on the requested branch. |
-| #83748 | keep_closed | skipped | related | Already closed; its static WebP concern is not this no-download outcome. |
-| #93130 | keep_closed | skipped | related | Already merged historical context only. |
+| #120735 | fix_needed | planned | canonical | The bug is reproducible from current source and has a narrow Telegram-plugin owner-boundary repair. |
+| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | blocked | canonical | A deterministic executor with a writable task branch should implement and validate the artifact below. |
+| #83748 | keep_closed | skipped | related | Closed historical context; not a closure target for this cluster. |
+| #93130 | keep_closed | skipped | related | Closed historical context; not a closure target for this cluster. |
 
 ## Needs Human
 
