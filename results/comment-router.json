@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:41:06.835Z",
+  "updated_at": "2026-08-09T06:41:09.702Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5229232867:2026-08-09T01:45:38Z:re_review",
-      "comment_id": "5229232867",
-      "comment_version_key": "5229232867:2026-08-09T01:45:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5229232867",
-      "comment_created_at": "2026-08-09T01:45:38Z",
-      "comment_updated_at": "2026-08-09T01:45:38Z",
-      "comment_body_sha256": "80bb5a7838ea8353e381133eb9e3a6b97dd3a65485e3ac27769ccb6bea444ed3",
-      "source_delivery_id": "069113d0-9394-11f1-87c2-c24b898ae96a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — new head db25ecb23c. addressed both open findings: [p2] the write fence now closes before the scheduler abort (fixed earlier on 093fa8f153, present here), and [p1] quarantine is now honored on the logical-turn resolver used by production embedded runs. the configured logical-turn wrapper carries the default engine id so a wedged/timed-out deferred-maintenance run quarantines that slot (the default engine never self-quarantines), and a quarantined configured engine is skipped for the fallback until restart/re-registration; the skip is a typed resolution field driving the operator warning. added successor-turn regressions proving the quarantined turn is served by the fallback (legacy) without re-running the wedged factory, and that the default engine is never quarantined. rebased onto current main. 111 focused tests green (context-engine, host-param-projection, context-engine-maintenance); oxlint/oxfmt clean. pr body evidence updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T01:46:09.813Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "db25ecb23c1216df873487562f45b814b55f3242",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/osc-progress:31:5217992134:2026-08-09T01:45:44Z:clawsweeper_needs_human",
       "comment_id": "5217992134",
@@ -31914,6 +31866,39 @@
         "kind": "pull_request",
         "branch": "fix/upgrade-survivor-convergence-20260808-exact",
         "head_sha": "9d64b5e4b4583929c8be1d573f0e9cd2ad505246",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120904:5229995885:2026-08-09T06:38:37Z:clawsweeper_needs_human",
+      "comment_id": "5229995885",
+      "comment_version_key": "5229995885:2026-08-09T06:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120904#issuecomment-5229995885",
+      "comment_created_at": "2026-08-09T05:41:23Z",
+      "comment_updated_at": "2026-08-09T06:38:37Z",
+      "comment_body_sha256": "bf79569fa34150383b3c8113036b4f058b26df676c8eef5b127a947bb140fa74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main, though GitHub reports it mergeable and the current-main comparison found no overlap in either touched path. (sha=a06cadc16ba68dd6cbe344cffb8d2e730925315b)",
+      "expected_head_sha": "a06cadc16ba68dd6cbe344cffb8d2e730925315b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:41:09.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-discord-voice-temp-cleanup-7f3",
+        "head_sha": "a06cadc16ba68dd6cbe344cffb8d2e730925315b",
         "cluster_id": null,
         "job_path": null
       }
