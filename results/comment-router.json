@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T08:36:23.737Z",
+  "updated_at": "2026-08-09T08:39:09.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112623:5080083550:2026-07-25T18:42:23Z:re_review",
-      "comment_id": "5080083550",
-      "comment_version_key": "5080083550:2026-07-25T18:42:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5080083550",
-      "comment_created_at": "2026-07-25T18:42:23Z",
-      "comment_updated_at": "2026-07-25T18:42:23Z",
-      "comment_body_sha256": "d01f798d09c0a7d8f945a67a7299d7739cac3345751e5a4a3b7743ede224644e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:42:36.033Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5080157285:2026-07-25T19:03:29Z:re_review",
       "comment_id": "5080157285",
@@ -32930,6 +32903,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:492:5205292823:2026-08-09T08:36:09Z:clawsweeper_needs_human",
+      "comment_id": "5205292823",
+      "comment_version_key": "5205292823:2026-08-09T08:36:09Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/492#issuecomment-5205292823",
+      "comment_created_at": "2026-08-06T13:32:37Z",
+      "comment_updated_at": "2026-08-09T08:36:09Z",
+      "comment_body_sha256": "5b03eef96c4d064cbd9296ef390b3df2829fefc9d8d409123e0adbe18446a58c",
+      "repo": "openclaw/acpx",
+      "issue_number": 492,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No after-fix real-environment evidence shows that a clean locked install can run the repository’s development checks with the updated formatter and resolved toolchain. (sha=9491e4120c67b52bb10673e6945e08466d3a7a7f)",
+      "expected_head_sha": "9491e4120c67b52bb10673e6945e08466d3a7a7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T08:39:09.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-5a52b1151d",
+        "head_sha": "9491e4120c67b52bb10673e6945e08466d3a7a7f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
