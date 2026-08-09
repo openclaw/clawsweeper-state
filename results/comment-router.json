@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T02:37:37.024Z",
+  "updated_at": "2026-08-09T02:38:21.947Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120587:5226383992:2026-08-08T20:40:12Z:clawsweeper_auto_repair",
-      "comment_id": "5226383992",
-      "comment_version_key": "5226383992:2026-08-08T20:40:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120587#issuecomment-5226383992",
-      "comment_created_at": "2026-08-08T13:48:14Z",
-      "comment_updated_at": "2026-08-08T20:40:12Z",
-      "comment_body_sha256": "0c36a3557a0584570a7c41b47ff19094196e86608d7906b65d10a89b32e78cda",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120587,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b7b1fda164eafd69a906755100ec44eedb809ae2)",
-      "expected_head_sha": "b7b1fda164eafd69a906755100ec44eedb809ae2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T22:41:41.843Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-lazy-restart-recovery-120378",
-        "head_sha": "b7b1fda164eafd69a906755100ec44eedb809ae2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120603:5227055646:2026-08-08T19:45:45Z:clawsweeper_auto_repair",
       "comment_id": "5227055646",
@@ -31089,6 +31056,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119981:5229403506:2026-08-09T02:37:52Z:re_review",
+      "comment_id": "5229403506",
+      "comment_version_key": "5229403506:2026-08-09T02:37:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119981#issuecomment-5229403506",
+      "comment_created_at": "2026-08-09T02:37:52Z",
+      "comment_updated_at": "2026-08-09T02:37:52Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "51cf2560-939b-11f1-88a6-04d9d848d86b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119981,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T02:38:20.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-node-protocol-floor",
+        "head_sha": "178f21abf15210c9bca28d785a4fa05b27a96272",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
