@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T09:37:19.673Z",
+  "updated_at": "2026-08-09T09:41:13.397Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119804:5229316784:2026-08-09T02:12:46Z:re_review",
-      "comment_id": "5229316784",
-      "comment_version_key": "5229316784:2026-08-09T02:12:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119804#issuecomment-5229316784",
-      "comment_created_at": "2026-08-09T02:12:46Z",
-      "comment_updated_at": "2026-08-09T02:12:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119804,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:48:21.910Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120361:5229318939:2026-08-09T02:13:15Z:re_review",
       "comment_id": "5229318939",
@@ -32764,6 +32737,39 @@
         "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
         "cluster_id": "automerge-openclaw-plugin-inspector-58",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121017:5230851254:2026-08-09T09:40:32Z:clawsweeper_needs_human",
+      "comment_id": "5230851254",
+      "comment_version_key": "5230851254:2026-08-09T09:40:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121017#issuecomment-5230851254",
+      "comment_created_at": "2026-08-09T09:40:32Z",
+      "comment_updated_at": "2026-08-09T09:40:32Z",
+      "comment_body_sha256": "b03b5c8345dcc1bd1e9c01b3534e7137622e1d051905fb3d624dcc8af1cef8f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121017,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This refactor changes the writer-time path for persisted session entries, aliases, and identity effects; refresh it onto current main and retain the authorization, alias-race, rollbac... (sha=a0c3fbf551bfd90c85665a3d4e30ddf078069775)",
+      "expected_head_sha": "a0c3fbf551bfd90c85665a3d4e30ddf078069775",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T09:41:13.397Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/simplify-batch-session-patches",
+        "head_sha": "a0c3fbf551bfd90c85665a3d4e30ddf078069775",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
