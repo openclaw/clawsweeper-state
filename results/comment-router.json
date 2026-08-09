@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T20:18:21.566Z",
+  "updated_at": "2026-08-09T20:18:29.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120727:5229694409:2026-08-09T04:07:24Z:re_review",
-      "comment_id": "5229694409",
-      "comment_version_key": "5229694409:2026-08-09T04:07:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120727#issuecomment-5229694409",
-      "comment_created_at": "2026-08-09T04:07:24Z",
-      "comment_updated_at": "2026-08-09T04:07:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120727,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T15:51:02.641Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104691:4948699444:2026-08-09T15:50:36Z:clawsweeper_auto_repair",
       "comment_id": "4948699444",
@@ -33198,6 +33171,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:140:5233647940:2026-08-09T20:17:46Z:clawsweeper_needs_human",
+      "comment_id": "5233647940",
+      "comment_version_key": "5233647940:2026-08-09T20:17:46Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/140#issuecomment-5233647940",
+      "comment_created_at": "2026-08-09T20:17:46Z",
+      "comment_updated_at": "2026-08-09T20:17:46Z",
+      "comment_body_sha256": "aedf169935c762e803d739ad34451e756dcaf35b08dd59f6aa4fbd7e5b3ef9f7",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Update the paired CodeQL analysis action (P1)** - init now runs v4.37.6, but the following analyze step remains at v4.37.4. The sole workflow change coincides with a failed analyze check; keep the multi-step Cod...; Review finding: [P1] Update the paired CodeQL analysis action — .github/workflows/codeql.yml:33 - [medium] CodeQL scan no longer completes — .github/workflows/codeql.yml:33 (sha=8ce3c67a02fa1ce2937992835df98fc48310a03e)",
+      "expected_head_sha": "8ce3c67a02fa1ce2937992835df98fc48310a03e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T20:18:29.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github/codeql-action/init-4.37.6",
+        "head_sha": "8ce3c67a02fa1ce2937992835df98fc48310a03e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
