@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T03:50:50.288Z",
+  "updated_at": "2026-08-09T03:51:26.060Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120715:5228830143:2026-08-08T23:45:17Z:re_review",
-      "comment_id": "5228830143",
-      "comment_version_key": "5228830143:2026-08-08T23:45:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120715#issuecomment-5228830143",
-      "comment_created_at": "2026-08-08T23:45:17Z",
-      "comment_updated_at": "2026-08-08T23:45:17Z",
-      "comment_body_sha256": "d62be72d203dcd1eb870037a849031d4a7c4fc0f05349c79f6dd1b3e6d3c4a08",
-      "source_delivery_id": "36902050-9383-11f1-9d73-67a129dc41ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120715,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T23:45:54.124Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-worker-lifecycle-closeout-120546",
-        "head_sha": "8946251bbd9f1840f69269ca1a6606983a93a070",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1086:5175302687:2026-08-08T23:45:55Z:clawsweeper_needs_human",
       "comment_id": "5175302687",
@@ -31753,6 +31705,39 @@
         "kind": "pull_request",
         "branch": "fix/sandbox-memory-flush-append-race",
         "head_sha": "ce1d0cff19e60fd777127e6cab36899480a28a21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:964:5216961097:2026-08-09T03:50:49Z:clawsweeper_needs_human",
+      "comment_id": "5216961097",
+      "comment_version_key": "5216961097:2026-08-09T03:50:49Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/964#issuecomment-5216961097",
+      "comment_created_at": "2026-08-07T12:18:28Z",
+      "comment_updated_at": "2026-08-09T03:50:49Z",
+      "comment_body_sha256": "e38301b56a25eef2bd718efd154b5cad80ef7a9fb2432a3c831ed722bd690f22",
+      "repo": "openclaw/gogcli",
+      "issue_number": 964,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes built-binary dry runs, but no inspectable terminal output, recording, logs, or linked artifact shows the after-fix... (sha=b2068d8cd2baf361c6179968061fda120e6c0971)",
+      "expected_head_sha": "b2068d8cd2baf361c6179968061fda120e6c0971",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T03:51:26.060Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gmail-auto-from-addressed-alias-env",
+        "head_sha": "b2068d8cd2baf361c6179968061fda120e6c0971",
         "cluster_id": null,
         "job_path": null
       }
