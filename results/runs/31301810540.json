@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "autonomous",
+  "run_id": "31301810540",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31301810540",
+  "head_sha": "dc6fc0b4a479fe4112e48c37104d7a6b360818df",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T07:52:55.109Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "#120735 is a distinct, source-proven Telegram context defect on main 499d81cdbdadb565c8045a76befe7c170f4ba564. A narrow new fix PR is appropriate, but this worker has a read-only checkout and focused validation is blocked by missing p-map; no code or GitHub mutation was performed.",
+  "actions": [
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "The static-WebP repair in merged #93130 intentionally did not cover TGS/WebM; this issue remains the canonical bounded no-download context repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate the narrow artifact on clawsweeper/issue-openclaw-openclaw-120735."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Open only after the executor applies the artifact, restores dependencies in its writable validation environment, and passes focused proof plus pnpm check:changed."
+    },
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": "#93130",
+      "reason": "Already closed; no mutation."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
