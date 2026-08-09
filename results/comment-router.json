@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T05:43:08.749Z",
+  "updated_at": "2026-08-09T05:43:12.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5226999171:2026-08-08T16:27:44Z:re_review",
-      "comment_id": "5226999171",
-      "comment_version_key": "5226999171:2026-08-08T16:27:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5226999171",
-      "comment_created_at": "2026-08-08T16:27:44Z",
-      "comment_updated_at": "2026-08-08T16:27:44Z",
-      "comment_body_sha256": "512eb63ac912390efad14422fd9a161137bd7ff5b107f6ad4aa3b09e2fa5916a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T00:46:00.727Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5227501455:2026-08-08T18:27:00Z:re_review",
       "comment_id": "5227501455",
@@ -31949,6 +31922,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T05:43:08.749Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112589:5077699954:2026-08-09T05:42:20Z:clawsweeper_needs_human",
+      "comment_id": "5077699954",
+      "comment_version_key": "5077699954:2026-08-09T05:42:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112589#issuecomment-5077699954",
+      "comment_created_at": "2026-07-25T08:28:44Z",
+      "comment_updated_at": "2026-08-09T05:42:20Z",
+      "comment_body_sha256": "bfba8331ee6771b0bf380aba111760d9dee681ec9bede6f41b536450d05e475d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports tests and CI but provides no inspectable current-head runtime evidence showing a reserved spawn accepted through the production...; Review finding: [P1] Scope plugin services with their runtime identity — src/plugin-sdk/session-store-runtime.ts:165 - [P1] Obtain approval before publishing this Plugin SDK contr... (sha=87efd6a1c8e1bd7a10097ec0131029d6d9c60db5)",
+      "expected_head_sha": "87efd6a1c8e1bd7a10097ec0131029d6d9c60db5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T05:43:12.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agentic-os-runtime-contract-v1",
+        "head_sha": "87efd6a1c8e1bd7a10097ec0131029d6d9c60db5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
