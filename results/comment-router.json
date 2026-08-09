@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:50:41.249Z",
+  "updated_at": "2026-08-09T06:51:13.372Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4808905167:2026-06-26T11:00:20Z:re_review",
-      "comment_id": "4808905167",
-      "comment_version_key": "4808905167:2026-06-26T11:00:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4808905167",
-      "comment_created_at": "2026-06-26T11:00:20Z",
-      "comment_updated_at": "2026-06-26T11:00:20Z",
-      "comment_body_sha256": "19832bb6f3b3d7aed5ab6643adfe74ae9d1c4a78ba77ae9a8ea0c063c15ae73e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:52:44.344Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4811277160:2026-06-26T16:06:36Z:re_review",
       "comment_id": "4811277160",
@@ -32104,6 +32077,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T06:50:41.249Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1138:5230232185:2026-08-09T06:50:23Z:clawsweeper_needs_human",
+      "comment_id": "5230232185",
+      "comment_version_key": "5230232185:2026-08-09T06:50:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1138#issuecomment-5230232185",
+      "comment_created_at": "2026-08-09T06:50:23Z",
+      "comment_updated_at": "2026-08-09T06:50:23Z",
+      "comment_body_sha256": "883a244d2963cec3365b8b2fff73b016df3e1a6545293ef71ee3f824b0f7df3d",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before merge, a current-head hosted candidate run must show that setup/connect E2E launched the verified released Tray. Resolver tests alone cannot establish that production release p... (sha=a62b5d3c202f3fadec70e0c8222b12825df31405)",
+      "expected_head_sha": "a62b5d3c202f3fadec70e0c8222b12825df31405",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:51:13.372Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-candidate-tray-override",
+        "head_sha": "a62b5d3c202f3fadec70e0c8222b12825df31405",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
