@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:56:34.102Z",
+  "updated_at": "2026-08-09T21:57:10.018Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121116:5233119496:2026-08-09T18:25:46Z:re_review",
-      "comment_id": "5233119496",
-      "comment_version_key": "5233119496:2026-08-09T18:25:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121116#issuecomment-5233119496",
-      "comment_created_at": "2026-08-09T18:25:46Z",
-      "comment_updated_at": "2026-08-09T18:25:46Z",
-      "comment_body_sha256": "3ef259562dda6091a2466c0ef04bed20f5f2899cf9385bcf82ca78427591d365",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121116,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the stage-scoping finding is addressed in a41e822d05b: pre-send graph/sharepoint failures are tagged msteamssendstage: \"prepare\" (send.ts upload/drive path + messenger.ts buildactivity), and the ambiguous hint now says \"nothing was delivered — safe to retry\" for prepare-stage while keeping \"verify in teams\" only for send-stage 408/5xx. added the teams rate-limit doc reference for the 429-only policy and three stage-aware regressions (errors/messenger/send test files)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-ambiguous-5xx-no-retry",
-        "head_sha": "a41e822d05b0acde8dbef02d951cfa41353ab604",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114079:5233137347:2026-08-09T18:27:54Z:re_review",
       "comment_id": "5233137347",
@@ -31962,6 +31915,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/pairing-connectivity-preflight",
         "head_sha": "7ce770f740393d49e0a8fabcdc8fe904d2159912",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119850:5201748404:2026-08-09T21:56:24Z:clawsweeper_needs_human",
+      "comment_id": "5201748404",
+      "comment_version_key": "5201748404:2026-08-09T21:56:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119850#issuecomment-5201748404",
+      "comment_created_at": "2026-08-06T07:33:14Z",
+      "comment_updated_at": "2026-08-09T21:56:24Z",
+      "comment_body_sha256": "9f1880d5f080d80a1efa3a472ff8628795a301da4f89165dc9db4e504cfaf727",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119850,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the named-profile Keychain namespace (P1)** - Compose this DEBUG bundle scope with AppProfile.current.keychainService(...) when rebasing. Current main makes every named profile own its persistent namesp...; Review finding: [P1] Preserve the named-profile Keychain namespace — apps/macos/Sources/OpenClaw/GatewayConnectionSupport.swift:16-18 - [low] Keep profile-specific Keychain servic... (sha=0dfd1430130bf07d1849ad4152b3a165a2819e4f)",
+      "expected_head_sha": "0dfd1430130bf07d1849ad4152b3a165a2819e4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:57:10.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/macos-bootstrap-e2e",
+        "head_sha": "0dfd1430130bf07d1849ad4152b3a165a2819e4f",
         "cluster_id": null,
         "job_path": null
       }
