@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-55372",
+  "mode": "autonomous",
+  "run_id": "31309791488",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31309791488",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-55372.md",
+  "published_at": "2026-08-09T11:17:27.045Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/55372",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/55372",
+  "canonical_pr": null,
+  "summary": "#55372 is a reproducible Control UI routing defect. A narrow new fix PR should carry explicit webchat delivery context on both config writers, preserving the restart wake while preventing a stale Telegram notice. Implementation is blocked here because the checkout is read-only, lacks dependencies, and does not contain preflight main SHA 8d152c185284e167558075856b1f5412ed703c83 for exact-base validation.",
+  "actions": [
+    {
+      "target": "#55372",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Keep open until the narrow fix PR is created and validated."
+    },
+    {
+      "target": "#53940",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Already closed; no closeout or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "The established protocol has the needed field; the defect is a narrow Control UI omission rather than a request for a new restart-sentinel configuration option."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited PR from clawsweeper/issue-openclaw-openclaw-55372."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-55372",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#55372",
+      "candidate_fix": null,
+      "reason": "Executor must rebase or start from preflight main, apply the artifact, then run the listed validations before opening the labeled PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
