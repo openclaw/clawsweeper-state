@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 9, 2026, 16:47 UTC
+Last source update: Aug 9, 2026, 17:09 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 9, 2026, 16:47 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 9, 2026, 16:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31324245880) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 9, 2026, 17:09 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31325555829) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 9, 2026, 16:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31324204631) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 9, 2026, 12:05 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31312418117) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 9, 2026, 16:42 UTC
+Last source update: Aug 9, 2026, 17:10 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 451 | 100% |
-| Run attempts archived | 1269 | audit |
+| Run attempts archived | 1270 | audit |
 | Latest successful clusters | 384 | 85.1% |
 | Latest failed clusters | 65 | 14.4% |
 | Latest cancelled clusters | 2 | 0.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 451 clusters: 194 maintainer action, 96 automation snapshot, 137 intervention needed, 24 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-121021](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-121021.md) is maintainer_input: Provide a checkout containing the repair commit and reachable base 00194139bad357f31e71a81586a25cf67649f7d6..
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#121046](https://github.com/openclaw/openclaw/pull/121046) is automation_blocked: Implement the narrow shared matcher repair and hybrid-ranking regression in a writable executor..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-120735](cluster:issue-openclaw-openclaw-120735) is automation_failed: A deterministic executor with a writable task branch should implement and validate the artifact below..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119367](https://github.com/openclaw/openclaw/pull/119367) is action_planned: Repair the same-repo writable contributor branch; merge is disabled by job frontmatter..
 - Completed latest: no completed action in the latest records.
 
@@ -187,8 +187,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-120735](cluster:issue-openclaw-openclaw-120735) | automation_failed | A deterministic executor with a writable task branch should implement and validate the artifact below. | Aug 9, 2026, 17:10 UTC | [issue-openclaw-openclaw-120735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120735.md) | [31322445353](https://github.com/openclaw/clawsweeper/actions/runs/31322445353) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#121046](https://github.com/openclaw/openclaw/pull/121046) | automation_blocked | Implement the narrow shared matcher repair and hybrid-ranking regression in a writable executor. | Aug 9, 2026, 16:09 UTC | [issue-openclaw-openclaw-121046](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-121046.md) | [31320111113](https://github.com/openclaw/clawsweeper/actions/runs/31320111113) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#120735](https://github.com/openclaw/openclaw/pull/120735) | automation_failed | Distinct remaining animated/video sticker context bug; #93130 repaired static WebP staging only. | Aug 9, 2026, 15:37 UTC | [issue-openclaw-openclaw-120735](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120735.md) | [31319223786](https://github.com/openclaw/clawsweeper/actions/runs/31319223786) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-120956](cluster:issue-openclaw-openclaw-120956) | automation_failed | Deterministic executor should implement the attached new-fix-PR artifact on clawsweeper/issue-openclaw-openclaw-120956. | Aug 9, 2026, 15:20 UTC | [issue-openclaw-openclaw-120956](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120956.md) | [31319438465](https://github.com/openclaw/clawsweeper/actions/runs/31319438465) |
 | [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 9, 2026, 15:14 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31320220461](https://github.com/openclaw/clawsweeper/actions/runs/31320220461) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=scripts, testRoot, tooling [check:changed] s... | Aug 9, 2026, 13:21 UTC | [issue-openclaw-openclaw-121059](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-121059.md) | [31313946287](https://github.com/openclaw/clawsweeper/actions/runs/31313946287) |
