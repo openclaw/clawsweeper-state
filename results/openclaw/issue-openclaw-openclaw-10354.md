@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-10354"
-mode: "plan"
-run_id: "31288056680"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31288056680"
-head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T01:27:21.987Z"
+mode: "autonomous"
+run_id: "31288906284"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31288906284"
+head_sha: "22c7ddcc305185e3275c8a0a91b71bbbe3e8a42d"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T01:53:10.652Z"
 canonical: "https://github.com/openclaw/openclaw/issues/10354"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/10354"
 canonical_pr: null
-actions_total: 2
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31288056680](https://github.com/openclaw/clawsweeper/actions/runs/31288056680)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31288906284](https://github.com/openclaw/clawsweeper/actions/runs/31288906284)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/10354
 
 ## Summary
 
-Plan a new narrow PR for canonical issue #10354: add channel-selector guidance to the shared message-tool schema and one ordinary-schema regression test. Do not add an enum or change routing behavior.
+#10354 remains a narrow, non-security schema usability bug on main 62b418d551b0ec40fb43fc554d6355f7331bb6dd. A new two-file fix PR is appropriate, but this worker checkout is read-only, so implementation and local validation could not run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,13 @@ Plan a new narrow PR for canonical issue #10354: add channel-selector guidance t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #10354 | fix_needed | planned | canonical | A description-only schema repair with focused coverage satisfies the approved bug-fix scope without selecting a dynamic plugin/alias lifecycle contract. |
-| cluster:issue-openclaw-openclaw-10354 | build_fix_artifact | planned | canonical | Create or update clawsweeper/issue-openclaw-openclaw-10354; apply required ClawSweeper labels when opened. |
+| #10354 | fix_needed | blocked | canonical | Implement the prepared new-fix artifact in a writable executor, then validate before opening or updating clawsweeper/issue-openclaw-openclaw-10354. |
+| #4751 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
+| #10364 | keep_closed | skipped | superseded | Historical closed attempt; the new fix will include focused schema coverage. |
+| #13584 | keep_closed | skipped | superseded | Historical closed attempt; no action may be applied. |
+| #82868 | keep_closed | skipped | superseded | Historical closed attempt; retain only wording lessons. |
+| #84589 | keep_closed | skipped | superseded | Historical closed attempt; do not revive it. |
+| cluster:issue-openclaw-openclaw-10354 | build_fix_artifact | planned | canonical | Create one narrow PR from clawsweeper/issue-openclaw-openclaw-10354 in a writable executor. |
 
 ## Needs Human
 
