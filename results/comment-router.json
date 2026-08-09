@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T14:48:43.852Z",
+  "updated_at": "2026-08-09T14:48:44.693Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113860:5231061015:2026-08-09T10:36:40Z:re_review",
-      "comment_id": "5231061015",
-      "comment_version_key": "5231061015:2026-08-09T10:36:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113860#issuecomment-5231061015",
-      "comment_created_at": "2026-08-09T10:36:40Z",
-      "comment_updated_at": "2026-08-09T10:36:40Z",
-      "comment_body_sha256": "6b548101cbce678bbee221af7467b12c748b75ba8733dba0b3d15f2bc48077eb",
-      "source_delivery_id": "35d01c50-93de-11f1-82ed-6e577b7bbe03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113860,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T10:37:13.318Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-process-remove-live-owner-54df949",
-        "head_sha": "25181c4dcda1c8a416ad32d0970ecb8519887563",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:280:5176998369:2026-08-09T10:37:53Z:clawsweeper_auto_repair",
       "comment_id": "5176998369",
@@ -33171,6 +33123,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T14:48:43.852Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121080:5232106990:2026-08-09T14:48:01Z:clawsweeper_needs_human",
+      "comment_id": "5232106990",
+      "comment_version_key": "5232106990:2026-08-09T14:48:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121080#issuecomment-5232106990",
+      "comment_created_at": "2026-08-09T14:48:01Z",
+      "comment_updated_at": "2026-08-09T14:48:01Z",
+      "comment_body_sha256": "bd4b620337ac9a3cee6083be714c94357d74b9020c37c06656c24950f10c253b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A trusted SHA-pinned Full Release Validation run should confirm that the GitHub ref predicate writes targetRef equal to targetSha; the current test parses the workflow but does not ex... (sha=6d6592d89564f21aae0be1c5d95d7cc9fef91b7e)",
+      "expected_head_sha": "6d6592d89564f21aae0be1c5d95d7cc9fef91b7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T14:48:44.693Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-release-evidence-target-ref",
+        "head_sha": "6d6592d89564f21aae0be1c5d95d7cc9fef91b7e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
