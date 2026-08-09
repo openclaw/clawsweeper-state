@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T02:45:00.456Z",
+  "updated_at": "2026-08-09T02:45:00.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119817:5200297278:2026-08-08T22:40:37Z:clawsweeper_auto_repair",
-      "comment_id": "5200297278",
-      "comment_version_key": "5200297278:2026-08-08T22:40:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119817#issuecomment-5200297278",
-      "comment_created_at": "2026-08-06T04:12:21Z",
-      "comment_updated_at": "2026-08-08T22:40:37Z",
-      "comment_body_sha256": "5a06c5a9a9112a2ceb978001363eaa68e11ad2d3f04322b6c0a2cd66c437229e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119817,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=887c0ef0e8cbc74f1d48435cad5b94bbe150a8b2)",
-      "expected_head_sha": "887c0ef0e8cbc74f1d48435cad5b94bbe150a8b2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T22:46:16.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hook-heartbeat-targeted-wake-119808",
-        "head_sha": "887c0ef0e8cbc74f1d48435cad5b94bbe150a8b2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119817:5201092863:2026-08-06T06:18:14Z:re_review",
       "comment_id": "5201092863",
@@ -31141,6 +31108,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T02:45:00.455Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120647:5227580853:2026-08-09T02:43:08Z:clawsweeper_needs_human",
+      "comment_id": "5227580853",
+      "comment_version_key": "5227580853:2026-08-09T02:43:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120647#issuecomment-5227580853",
+      "comment_created_at": "2026-08-08T18:47:32Z",
+      "comment_updated_at": "2026-08-09T02:43:08Z",
+      "comment_body_sha256": "8511c50f15b83b0df03e05e3675d6b799ecaff41ffd0a0efff190a98d087782d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120647,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused mocked cache tests, but no redacted after-fix real Telegram reply-context trace or diagnostic output; add proof without... (sha=253b97b44b97036c4f205b1b528b4bbe5fb4bb4f)",
+      "expected_head_sha": "253b97b44b97036c4f205b1b528b4bbe5fb4bb4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T02:45:00.665Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-reply-media-reuse",
+        "head_sha": "253b97b44b97036c4f205b1b528b4bbe5fb4bb4f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
