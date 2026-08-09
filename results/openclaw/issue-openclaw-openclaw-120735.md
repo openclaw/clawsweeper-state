@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120735"
-mode: "autonomous"
-run_id: "31291175045"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31291175045"
-head_sha: "81c23bede7a805351bcbb1d5fde54ff278337535"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T03:20:17.340Z"
+mode: "plan"
+run_id: "31293489332"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31293489332"
+head_sha: "095f5c5a9492b90777e7c96eb1ff319b861863cf"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T04:01:58.903Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31291175045](https://github.com/openclaw/clawsweeper/actions/runs/31291175045)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31293489332](https://github.com/openclaw/clawsweeper/actions/runs/31293489332)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 ## Summary
 
-Current main c5bdad48 reproduces #120735 at source level: animated TGS and video WebM stickers are intentionally not fetched, retain a typed sticker fact, but produce no agent-visible unavailable-media outcome. A narrow repair is ready, but this worker checkout is read-only and has no node_modules, so it cannot create or validate the required branch locally.
+Current main still intentionally skips downloading animated TGS and video WebM Telegram stickers, but leaves the agent body and group-history projection empty. Plan a narrow Telegram context repair that adds an unavailable-media notice without changing download, conversion, command parsing, or typed sticker facts.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main c5bdad48 reproduces #120735 at source level: animated TGS and video
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120735 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only worker environment; the executor can apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-120735. |
-| #83748 | keep_closed | skipped | related | Already closed historical context; no mutation. |
-| #93130 | keep_closed | skipped | related | Already closed historical context; no mutation. |
-| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Executor should create the one narrow issue-fix PR from the named ClawSweeper branch. |
+| #120735 | fix_needed | planned | canonical | A narrow bug fix is appropriate: make the intentionally unavailable media visible to the agent while retaining the existing no-download invariant. |
+| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Create one narrow implementation PR from clawsweeper/issue-openclaw-openclaw-120735. |
+| #83748 | keep_closed | skipped | related | Historical related context only; no closure action is valid. |
+| #93130 | keep_closed | skipped | related | Already merged historical PR; no mutation is valid. |
 
 ## Needs Human
 

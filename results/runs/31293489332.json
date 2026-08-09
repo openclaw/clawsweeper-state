@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "plan",
+  "run_id": "31293489332",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31293489332",
+  "head_sha": "095f5c5a9492b90777e7c96eb1ff319b861863cf",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T04:01:58.903Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "Current main still intentionally skips downloading animated TGS and video WebM Telegram stickers, but leaves the agent body and group-history projection empty. Plan a narrow Telegram context repair that adds an unavailable-media notice without changing download, conversion, command parsing, or typed sticker facts.",
+  "actions": [
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "A narrow bug fix is appropriate: make the intentionally unavailable media visible to the agent while retaining the existing no-download invariant."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Create one narrow implementation PR from clawsweeper/issue-openclaw-openclaw-120735."
+    },
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": "#93130",
+      "reason": "Historical related context only; no closure action is valid."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": "#93130",
+      "reason": "Already merged historical PR; no mutation is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

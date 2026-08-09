@@ -1,6 +1,6 @@
 # Open ClawSweeper Repair PR Finalizer
 
-Generated: 2026-08-09T03:29:59.485Z
+Generated: 2026-08-09T04:03:27.823Z
 
 ## Summary
 
@@ -30,7 +30,7 @@ Status: report_only
 
 | PR | Title | Cluster | Mergeable | Merge State | Checks | Blockers | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [#120852](https://github.com/openclaw/openclaw/pull/120852) | test(doctor): give SecretRef scenario timeout headroom | issue-openclaw-openclaw-120832 | MERGEABLE | BEHIND | SKIPPED:25 SUCCESS:66 FAILURE:2; blockers:2 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-7:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
+| [#120852](https://github.com/openclaw/openclaw/pull/120852) | test(doctor): give SecretRef scenario timeout headroom | issue-openclaw-openclaw-120832 | MERGEABLE | BEHIND | SKIPPED:33 SUCCESS:66 FAILURE:2; blockers:2 | needs_merge_state:BEHIND, needs_checks:CI / checks-node-compact-large-7:FAILURE; CI / openclaw/ci-gate:FAILURE, needs_merge_preflight | repair failing checks or document unrelated main flake with touched-surface proof |
 | [#120652](https://github.com/openclaw/openclaw/pull/120652) | fix: suppress fast-auto status updates when progress is hidden | issue-openclaw-openclaw-97601 | MERGEABLE | BEHIND | SKIPPED:50 SUCCESS:83 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
 | [#120586](https://github.com/openclaw/openclaw/pull/120586) | fix(control-ui): prioritize session provider quota window | issue-openclaw-openclaw-120557 | CONFLICTING | DIRTY | SKIPPED:33 SUCCESS:77 | needs_rebase:CONFLICTING, needs_merge_state:DIRTY, needs_merge_preflight | resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review |
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | issue-openclaw-openclaw-120356 | MERGEABLE | BEHIND | SKIPPED:52 SUCCESS:82 NEUTRAL:1 | needs_merge_state:BEHIND, needs_merge_preflight | backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded |
