@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:49:43.272Z",
+  "updated_at": "2026-08-09T16:50:01.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:115006:5231520970:2026-08-09T12:28:22Z:re_review",
-      "comment_id": "5231520970",
-      "comment_version_key": "5231520970:2026-08-09T12:28:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115006#issuecomment-5231520970",
-      "comment_created_at": "2026-08-09T12:28:22Z",
-      "comment_updated_at": "2026-08-09T12:28:22Z",
-      "comment_body_sha256": "e4734cf4f46b1ba81cb024bc556b59ee806869c005755f6c6de3f5066634d5a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115006,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/imessage-real-chat-attachment",
-        "head_sha": "5485cc5dba41733b44d4ecd7a753e359f8c88ea3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120865:5231528550:2026-08-09T12:30:09Z:re_review",
       "comment_id": "5231528550",
@@ -32766,6 +32719,39 @@
         "kind": "pull_request",
         "branch": "steipete/newsession-terminal-start",
         "head_sha": "6a28bff28bcf8c88df7d3b4d06595d3d78c80d2f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-09T16:47:32Z:clawsweeper_needs_human",
+      "comment_id": "5160156082",
+      "comment_version_key": "5160156082:2026-08-09T16:47:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5160156082",
+      "comment_created_at": "2026-08-02T20:17:20Z",
+      "comment_updated_at": "2026-08-09T16:47:32Z",
+      "comment_body_sha256": "b124e975cab1e7dd80166013dc9d4502c8637fee1e39e7637efe11ce498d01ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new setup route changes managed-native Signal onboarding and must preserve the documented manual/non-QR path for existing operators. (sha=5a77ea2e8110c7252883d357b1baf57a519dd149)",
+      "expected_head_sha": "5a77ea2e8110c7252883d357b1baf57a519dd149",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:50:01.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup",
+        "head_sha": "5a77ea2e8110c7252883d357b1baf57a519dd149",
         "cluster_id": null,
         "job_path": null
       }
