@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T12:26:54.558Z",
+  "updated_at": "2026-08-09T12:27:05.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120915:5230230591:2026-08-09T06:49:57Z:clawsweeper_auto_repair",
-      "comment_id": "5230230591",
-      "comment_version_key": "5230230591:2026-08-09T06:49:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120915#issuecomment-5230230591",
-      "comment_created_at": "2026-08-09T06:49:57Z",
-      "comment_updated_at": "2026-08-09T06:49:57Z",
-      "comment_body_sha256": "7cf72c8081b40e103c7a5e6ed80e89260dd1675c8eaf9ad422a631cf6732c785",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120915,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bd61a6d9cc86a9764623a228c01525db16799bf2)",
-      "expected_head_sha": "bd61a6d9cc86a9764623a228c01525db16799bf2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T06:50:40.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galini_microsoft-galin-memory-permissions-v2-p0b-runtime-enforcement",
-        "head_sha": "bd61a6d9cc86a9764623a228c01525db16799bf2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111278:5014854743:2026-07-19T07:24:33Z:re_review",
       "comment_id": "5014854743",
@@ -32748,6 +32715,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T12:26:54.558Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:248:5093836900:2026-08-09T12:26:15Z:clawsweeper_needs_human",
+      "comment_id": "5093836900",
+      "comment_version_key": "5093836900:2026-08-09T12:26:15Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/248#issuecomment-5093836900",
+      "comment_created_at": "2026-07-27T16:16:21Z",
+      "comment_updated_at": "2026-08-09T12:26:15Z",
+      "comment_body_sha256": "4d6cf851149bd807b1d79b042adda304ad7f7533634258faef313d03725622bb",
+      "repo": "openclaw/crabline",
+      "issue_number": 248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Matrix SDK 42.0.0 is a major release with OAuth-related breaking changes; merging without running Crabline’s real Matrix-client integration test could leave provider compatibility unv... (sha=871844c43e665f190a78259c33f2b24f6a326479)",
+      "expected_head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T12:27:05.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/matrix-js-sdk-42.0.0",
+        "head_sha": "871844c43e665f190a78259c33f2b24f6a326479",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
