@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:46:05.931Z",
+  "updated_at": "2026-08-09T01:46:11.705Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114424:5088746208:2026-08-08T20:45:27Z:clawsweeper_needs_human",
-      "comment_id": "5088746208",
-      "comment_version_key": "5088746208:2026-08-08T20:45:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114424#issuecomment-5088746208",
-      "comment_created_at": "2026-07-27T07:56:06Z",
-      "comment_updated_at": "2026-08-08T20:45:27Z",
-      "comment_body_sha256": "4ddb59d19b6b1be5935facad1f6babdfc915e62ae72b8197622645a9475fe808",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resolving the dirty merge mechanically could remove current-main provider regression contracts added after the branch head. (sha=e6e03d0da718456f46107d637eb6390a3fa32f81)",
-      "expected_head_sha": "e6e03d0da718456f46107d637eb6390a3fa32f81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T21:45:37.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-dedup-provider-phase2-b461",
-        "head_sha": "e6e03d0da718456f46107d637eb6390a3fa32f81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-08T21:45:06Z:clawsweeper_auto_repair",
       "comment_id": "5187051359",
@@ -32079,6 +32046,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97175:5229232867:2026-08-09T01:45:38Z:re_review",
+      "comment_id": "5229232867",
+      "comment_version_key": "5229232867:2026-08-09T01:45:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5229232867",
+      "comment_created_at": "2026-08-09T01:45:38Z",
+      "comment_updated_at": "2026-08-09T01:45:38Z",
+      "comment_body_sha256": "80bb5a7838ea8353e381133eb9e3a6b97dd3a65485e3ac27769ccb6bea444ed3",
+      "source_delivery_id": "069113d0-9394-11f1-87c2-c24b898ae96a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97175,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — new head db25ecb23c. addressed both open findings: [p2] the write fence now closes before the scheduler abort (fixed earlier on 093fa8f153, present here), and [p1] quarantine is now honored on the logical-turn resolver used by production embedded runs. the configured logical-turn wrapper carries the default engine id so a wedged/timed-out deferred-maintenance run quarantines that slot (the default engine never self-quarantines), and a quarantined configured engine is skipped for the fallback until restart/re-registration; the skip is a typed resolution field driving the operator warning. added successor-turn regressions proving the quarantined turn is served by the fallback (legacy) without re-running the wedged factory, and that the default engine is never quarantined. rebased onto current main. 111 focused tests green (context-engine, host-param-projection, context-engine-maintenance); oxlint/oxfmt clean. pr body evidence updated",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T01:46:09.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/turn-maintenance-per-task-timeout",
+        "head_sha": "db25ecb23c1216df873487562f45b814b55f3242",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
