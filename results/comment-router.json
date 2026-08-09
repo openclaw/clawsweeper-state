@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T14:50:40.600Z",
+  "updated_at": "2026-08-09T14:50:46.969Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113801:5231101316:2026-08-09T10:46:31Z:re_review",
-      "comment_id": "5231101316",
-      "comment_version_key": "5231101316:2026-08-09T10:46:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113801#issuecomment-5231101316",
-      "comment_created_at": "2026-08-09T10:46:31Z",
-      "comment_updated_at": "2026-08-09T10:46:31Z",
-      "comment_body_sha256": "8e8492cfba492df4b2d507ba98f8b697ee3a6a4714e8c2a0fcf49985ede9c062",
-      "source_delivery_id": "95f57e80-93df-11f1-9a31-13897e59e3bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113801,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T10:47:07.378Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-autoqa-provider-responses-sse-eof-1a2252",
-        "head_sha": "58c61fd2fde8731bed8842b18452ee83ee0dede0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119341:5184658311:2026-08-09T10:46:25Z:clawsweeper_auto_repair",
       "comment_id": "5184658311",
@@ -32943,6 +32895,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-autoqa-update-managed-service-profile-ec061",
         "head_sha": "ee9daa253fe7a98112ebb166a0e51f5b2cf5de09",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120854:5229807960:2026-08-09T14:49:53Z:clawsweeper_needs_human",
+      "comment_id": "5229807960",
+      "comment_version_key": "5229807960:2026-08-09T14:49:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120854#issuecomment-5229807960",
+      "comment_created_at": "2026-08-09T04:43:51Z",
+      "comment_updated_at": "2026-08-09T14:49:53Z",
+      "comment_body_sha256": "8b3195384044703e4dd1c854c5016ef01b07f86e502aef03c094a40357d24ed2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The claimed canary is not inspectable and cites an older head; attach redacted exact-head Mattermost evidence, removing private hosts, tokens,... (sha=067f0cec9f3373fc9810ddd320d8d47519464c87)",
+      "expected_head_sha": "067f0cec9f3373fc9810ddd320d8d47519464c87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T14:50:46.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mattermost-separate-progress-final",
+        "head_sha": "067f0cec9f3373fc9810ddd320d8d47519464c87",
         "cluster_id": null,
         "job_path": null
       }
