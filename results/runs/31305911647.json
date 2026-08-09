@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-52130",
+  "mode": "autonomous",
+  "run_id": "31305911647",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31305911647",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-52130.md",
+  "published_at": "2026-08-09T09:51:35.289Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/52130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/52130",
+  "canonical_pr": null,
+  "summary": "#52130 remains a narrow, non-security documentation/config-contract repair. Preflight at main d0e812e confirms the live issue is open and that Telegram retry guidance conflicts with the strict schema and Doctor-owned retired-key migration; #92229 already covers only the SecretRef portion. Plan one credited fix PR without runtime, schema, compatibility, or changelog changes.",
+  "actions": [
+    {
+      "target": "#52116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no close action is valid."
+    },
+    {
+      "target": "#92229",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged historical context; no mutation is valid."
+    },
+    {
+      "target": "#52130",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#52130",
+      "candidate_fix": null,
+      "reason": "Remove stale configuration guidance and prove the existing migration removes boolean jitter values; do not add runtime coercion or a retry setting."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-52130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#52130",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-52130."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
