@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "autonomous",
+  "run_id": "31311685729",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31311685729",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T12:24:19.691Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "#120735 is a reproducible, narrow Telegram context defect on current main. Animated TGS and video WebM stickers are intentionally not downloaded, but that outcome is dropped before direct, group-history, and chat-window prompt projections; path-less media then exposes a raw telegram:file reference in reply/context projections. A typed unavailable reason and explicit agent notice is the canonical repair. Implementation is blocked only because this checkout is read-only and lacks dependencies.",
+  "actions": [
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "The implementation checkout is read-only and has no node_modules, so this worker cannot patch or validate a branch. The deterministic executor can apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-120735."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Produce one narrow fix PR; do not download, convert, configure, or change Telegram media policy."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
