@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:43:42.473Z",
+  "updated_at": "2026-08-09T01:43:47.931Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120707:5228223071:2026-08-08T21:19:42Z:re_review",
-      "comment_id": "5228223071",
-      "comment_version_key": "5228223071:2026-08-08T21:19:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120707#issuecomment-5228223071",
-      "comment_created_at": "2026-08-08T21:19:42Z",
-      "comment_updated_at": "2026-08-08T21:19:42Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120707,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T21:36:15.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-probe-device-auth-scope",
-        "head_sha": "c2f0c947a02c7c392af5c5b3c78beca438c351ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clownfish:312:5226943919:2026-08-08T21:17:22Z:clawsweeper_auto_repair",
       "comment_id": "5226943919",
@@ -32100,6 +32053,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github/codeql-action/init-4.37.6",
         "head_sha": "eb6006ad124ed7ddf44f338cc3c2ec75b801cb1a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacrawl:63:5225676681:2026-08-09T01:43:14Z:clawsweeper_needs_human",
+      "comment_id": "5225676681",
+      "comment_version_key": "5225676681:2026-08-09T01:43:14Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/63#issuecomment-5225676681",
+      "comment_created_at": "2026-08-08T10:19:08Z",
+      "comment_updated_at": "2026-08-09T01:43:14Z",
+      "comment_body_sha256": "eab64f49cc68514fa376e698bab3c57db2a2f4f21f0b0fb47f9f40da3029edaa",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 63,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging replaces the SQLite engine used for existing source snapshots and persisted archives; successful CI does not demonstrate compatibility with a representative pre-existing archi... (sha=560f7f3e7372a7620398ac77f518851cf2604f7c)",
+      "expected_head_sha": "560f7f3e7372a7620398ac77f518851cf2604f7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:43:47.931Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/modernc.org/sqlite-1.56.0",
+        "head_sha": "560f7f3e7372a7620398ac77f518851cf2604f7c",
         "cluster_id": null,
         "job_path": null
       }
