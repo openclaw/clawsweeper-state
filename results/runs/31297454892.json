@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "autonomous",
+  "run_id": "31297454892",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31297454892",
+  "head_sha": "6971afb72029ac8c845bb29c337134f2534b1dbc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T06:22:55.870Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "#120735 remains reproducible on current main (562129d5): animated TGS and video WebM stickers intentionally avoid download, but their null resolution loses the unsupported outcome and leaves direct agent context empty. A narrow Telegram-plugin fix PR is appropriate, but this worker's checkout is read-only and lacks dependencies, so it cannot create or validate the branch locally.",
+  "actions": [
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no mutation is valid for an already-closed item."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Merged historical static-sticker repair; it is related but does not fix #120735."
+    },
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "The root cause is a lost typed outcome at the Telegram resolver/context boundary; no configuration, download, conversion, or core policy change is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-120735 after applying the artifact and validating it in a writable, dependency-ready executor."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

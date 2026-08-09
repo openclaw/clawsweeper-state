@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120735"
-mode: "plan"
-run_id: "31293489332"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31293489332"
-head_sha: "095f5c5a9492b90777e7c96eb1ff319b861863cf"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T04:01:58.903Z"
+mode: "autonomous"
+run_id: "31297454892"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31297454892"
+head_sha: "6971afb72029ac8c845bb29c337134f2534b1dbc"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T06:22:55.870Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31293489332](https://github.com/openclaw/clawsweeper/actions/runs/31293489332)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31297454892](https://github.com/openclaw/clawsweeper/actions/runs/31297454892)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 ## Summary
 
-Current main still intentionally skips downloading animated TGS and video WebM Telegram stickers, but leaves the agent body and group-history projection empty. Plan a narrow Telegram context repair that adds an unavailable-media notice without changing download, conversion, command parsing, or typed sticker facts.
+#120735 remains reproducible on current main (562129d5): animated TGS and video WebM stickers intentionally avoid download, but their null resolution loses the unsupported outcome and leaves direct agent context empty. A narrow Telegram-plugin fix PR is appropriate, but this worker's checkout is read-only and lacks dependencies, so it cannot create or validate the branch locally.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main still intentionally skips downloading animated TGS and video WebM T
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120735 | fix_needed | planned | canonical | A narrow bug fix is appropriate: make the intentionally unavailable media visible to the agent while retaining the existing no-download invariant. |
-| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Create one narrow implementation PR from clawsweeper/issue-openclaw-openclaw-120735. |
-| #83748 | keep_closed | skipped | related | Historical related context only; no closure action is valid. |
-| #93130 | keep_closed | skipped | related | Already merged historical PR; no mutation is valid. |
+| #83748 | keep_closed | skipped | related | Historical related context only; no mutation is valid for an already-closed item. |
+| #93130 | keep_closed | skipped | related | Merged historical static-sticker repair; it is related but does not fix #120735. |
+| #120735 | fix_needed | planned | canonical | The root cause is a lost typed outcome at the Telegram resolver/context boundary; no configuration, download, conversion, or core policy change is required. |
+| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-120735 after applying the artifact and validating it in a writable, dependency-ready executor. |
 
 ## Needs Human
 
