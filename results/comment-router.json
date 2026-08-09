@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T07:37:23.412Z",
+  "updated_at": "2026-08-09T07:39:17.839Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-09T01:53:27Z:clawsweeper_needs_human",
-      "comment_id": "5229043394",
-      "comment_version_key": "5229043394:2026-08-09T01:53:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229043394",
-      "comment_created_at": "2026-08-09T00:45:52Z",
-      "comment_updated_at": "2026-08-09T01:53:27Z",
-      "comment_body_sha256": "24096294cc94f2ea257530a4a05658fe1091c6e750ef5e18cb15cd36e2502d98",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120768,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a new node connection lifecycle across Gateway, CLI, Control UI, Android, and Apple clients; a regression could prevent a new node from completing initial pairing. (sha=9ef08f040cbcb40a43dbda0aa7a9ca6617490c99)",
-      "expected_head_sha": "9ef08f040cbcb40a43dbda0aa7a9ca6617490c99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:54:02.358Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/runners-m3-pair-url",
-        "head_sha": "9ef08f040cbcb40a43dbda0aa7a9ca6617490c99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116260:5127573463:2026-08-09T01:53:27Z:clawsweeper_needs_human",
       "comment_id": "5127573463",
@@ -32498,6 +32465,54 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-update-notices",
         "head_sha": "344cc44896c2436b2572a9c109aa86bbbbda0bfd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120905:5230400624:2026-08-09T07:38:39Z:re_review",
+      "comment_id": "5230400624",
+      "comment_version_key": "5230400624:2026-08-09T07:38:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120905#issuecomment-5230400624",
+      "comment_created_at": "2026-08-09T07:38:39Z",
+      "comment_updated_at": "2026-08-09T07:38:39Z",
+      "comment_body_sha256": "e19ed0c9aa02509e5b1c900a0f367754da1cbe22b49f465dd79e6e38e466889a",
+      "source_delivery_id": "5755d7c0-93c5-11f1-8d31-c3a51e3d0b2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120905,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the p2 finding is addressed at head dfc4fcc5435: the active-view-limit 429 now goes through the same head-aware respondstring as the other routes, with a get/head parity regression test at activerequests = 4 (429 carries the json content-length, head ends with no body). branch also rebased onto current main as flagged",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T07:39:16.084Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-app-standalone-head-content-length",
+        "head_sha": "dfc4fcc5435d4e633f062551953519580ceac764",
         "cluster_id": null,
         "job_path": null
       },
