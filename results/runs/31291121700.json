@@ -1,0 +1,104 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120832",
+  "mode": "autonomous",
+  "run_id": "31291121700",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31291121700",
+  "head_sha": "81c23bede7a805351bcbb1d5fde54ff278337535",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120832.md",
+  "published_at": "2026-08-09T03:28:37.728Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120832",
+  "canonical_pr": null,
+  "summary": "Current main c5bdad48 confirms the test-only timeout defect: six sequential 120s doctor CLI budgets sit inside a 240s Vitest deadline. A narrow credited fix PR is planned; local focused validation is blocked because this read-only checkout lacks dependencies (missing p-map).",
+  "actions": [
+    {
+      "target": "#120832",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120832",
+      "candidate_fix": null,
+      "reason": "The issue remains reproducible by source structure. The proposed repair is test-only and does not alter Doctor runtime behavior, SecretRef policy, configuration, shared harnesses, or SQLite."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120832",
+      "candidate_fix": null,
+      "reason": "Build one narrow test-only PR for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "opened": 1,
+    "updated": 1
+  },
+  "apply_counts": {
+    "blocked": 1
+  },
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "open_fix_pr",
+      "status": "opened",
+      "target": null,
+      "pr": "https://github.com/openclaw/openclaw/pull/120852",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120832",
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120852",
+      "commit": "4e7cfdce72f80e4c284dcddaeef792577c84e747",
+      "base_sync": true
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#120832",
+      "pr": "https://github.com/openclaw/openclaw/pull/120852",
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": "https://github.com/openclaw/openclaw/pull/120852",
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": [
+    {
+      "target": "#120852",
+      "action": "merge_canonical",
+      "status": "blocked",
+      "classification": "fix_pr",
+      "canonical": null,
+      "candidate_fix": null,
+      "title": "test(doctor): give SecretRef scenario timeout headroom",
+      "idempotency_key": null,
+      "reason": "checks are not clean: checks-node-compact-large-7: FAILURE, checks-windows-node-test: IN_PROGRESS",
+      "merged_at": null,
+      "merge_commit_sha": null,
+      "live_state": null,
+      "live_updated_at": null
+    }
+  ]
+}
