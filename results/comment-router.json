@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T03:49:16.287Z",
+  "updated_at": "2026-08-09T03:49:40.309Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:95132:4974055187:2026-07-14T21:14:08Z:re_review",
-      "comment_id": "4974055187",
-      "comment_version_key": "4974055187:2026-07-14T21:14:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/95132#issuecomment-4974055187",
-      "comment_created_at": "2026-07-14T21:14:08Z",
-      "comment_updated_at": "2026-07-14T21:14:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 95132,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T23:45:29.144Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120757:5228829169:2026-08-08T23:44:59Z:clawsweeper_needs_human",
       "comment_id": "5228829169",
@@ -31750,6 +31723,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T03:49:16.287Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120861:5229635779:2026-08-09T03:48:52Z:clawsweeper_needs_human",
+      "comment_id": "5229635779",
+      "comment_version_key": "5229635779:2026-08-09T03:48:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120861#issuecomment-5229635779",
+      "comment_created_at": "2026-08-09T03:48:52Z",
+      "comment_updated_at": "2026-08-09T03:48:52Z",
+      "comment_body_sha256": "f24078a1e9f7d0806e9e8abc47b3ed860c3191b2ef277651e4f7d64eebc30bc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120861,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A healthy but unusually slow control-plane operation that exceeds 60 seconds will now fail the affected sandboxed run instead of continuing to wait; the reviewed context does not inde... (sha=8b0ba21752eace2a761227d16403919f3c2a567b)",
+      "expected_head_sha": "8b0ba21752eace2a761227d16403919f3c2a567b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T03:49:40.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-provision-timeout",
+        "head_sha": "8b0ba21752eace2a761227d16403919f3c2a567b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
