@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120968"
 mode: "autonomous"
-run_id: "31304422793"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31304422793"
+run_id: "31306215131"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31306215131"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-09T09:17:40.351Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-09T10:08:02.349Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120968"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120968"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31304422793](https://github.com/openclaw/clawsweeper/actions/runs/31304422793)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31306215131](https://github.com/openclaw/clawsweeper/actions/runs/31306215131)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/120968
 
 ## Summary
 
-#120968 is a current, narrow memory-core bug on main 00854a7002a77f47bd56c43b69c2e5ba7b09e8a6. Static Memory Recall guidance and both memory_search descriptors mandate retrieval by category even though Active Memory prepends relevant recall context before the main prompt. A writable, dependency-ready executor should apply the attached focused fix; this worker is read-only and focused Vitest cannot start because dependency p-map is absent.
+#120968 is a source-proven, non-security Memory Core guidance bug. Plan a narrow replacement PR that makes recall evidence-driven when bootstrap or injected Active Memory context already answers the request, while retaining search and source-specific retrieval for unresolved history.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Canonical: https://github.com/openclaw/openclaw/issues/120968
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #29772 | keep_closed | skipped | related | Already closed; no mutation is permitted or needed. |
-| #66686 | keep_closed | skipped | related | Already closed; #120968 is the live canonical repair path. |
-| #72015 | keep_independent | planned | independent | Related plugin area but a different root cause and repair scope. |
-| #120968 | fix_needed | planned | canonical | Replace category-based mandates with an evidence-need rule while retaining search and source-specific retrieval. |
-| cluster:issue-openclaw-openclaw-120968 | build_fix_artifact | planned | canonical | A narrow fix is source-proven; implementation and validation require a writable checkout with dependencies installed. |
-| cluster:issue-openclaw-openclaw-120968 | open_fix_pr | planned | canonical | The job permits one new fix PR but not merge or issue closure. |
+| https://github.com/openclaw/openclaw/issues/29772 | keep_closed | skipped | related | Already closed; retain as related historical evidence only. |
+| https://github.com/openclaw/openclaw/issues/66686 | keep_closed | skipped | related | Already closed; retain as related historical evidence only. |
+| https://github.com/openclaw/openclaw/issues/72015 | keep_independent | planned | independent | Different root cause and repair scope. |
+| https://github.com/openclaw/openclaw/issues/120968 | fix_needed | planned | canonical | Narrow owner-plugin repair is appropriate; no configuration or security-boundary change is needed. |
+| cluster:issue-openclaw-openclaw-120968 | build_fix_artifact | planned | canonical | Prepare a single narrow replacement fix artifact. |
+| cluster:issue-openclaw-openclaw-120968 | open_fix_pr | planned | canonical | Open one labeled PR after the artifact is implemented and validated. |
 
 ## Needs Human
 
