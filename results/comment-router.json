@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T15:06:24.133Z",
+  "updated_at": "2026-08-09T15:06:27.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:107119:4970160113:2026-07-14T14:12:37Z:re_review",
-      "comment_id": "4970160113",
-      "comment_version_key": "4970160113:2026-07-14T14:12:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107119#issuecomment-4970160113",
-      "comment_created_at": "2026-07-14T14:12:37Z",
-      "comment_updated_at": "2026-07-14T14:12:37Z",
-      "comment_body_sha256": "ff0b565a4eec68d7e714d5b4241d4b6bd84ad9d1d568a80ea5ec495f9436e8ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107119,
-      "author": "lzyyzznl",
-      "author_id": 41978486,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - p1 fix: added pmap concurrency proof + concurrency:20 justification in pr body; rebased on upstream/main",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T10:50:04.189Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107119:4970515741:2026-07-14T14:46:32Z:re_review",
       "comment_id": "4970515741",
@@ -32871,6 +32844,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:283:5194901661:2026-08-09T15:05:24Z:clawsweeper_auto_repair",
+      "comment_id": "5194901661",
+      "comment_version_key": "5194901661:2026-08-09T15:05:24Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/283#issuecomment-5194901661",
+      "comment_created_at": "2026-08-05T17:10:34Z",
+      "comment_updated_at": "2026-08-09T15:05:24Z",
+      "comment_body_sha256": "8350986f79299f6242613f64280863035fb33f8d2c36441cbf6ade25ab5d8c5e",
+      "repo": "openclaw/crabpot",
+      "issue_number": 283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0cb363fdae97a06cc91f96525529cb3907ae20ad)",
+      "expected_head_sha": "0cb363fdae97a06cc91f96525529cb3907ae20ad",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-08-09T15:06:12.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "0cb363fdae97a06cc91f96525529cb3907ae20ad",
+        "cluster_id": "automerge-openclaw-crabpot-283",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabpot-283.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:268:5128846606:2026-08-09T15:05:45Z:clawsweeper_auto_repair",
