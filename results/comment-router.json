@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T15:44:43.847Z",
+  "updated_at": "2026-08-09T15:44:53.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114460:5231289744:2026-08-09T11:31:09Z:re_review",
-      "comment_id": "5231289744",
-      "comment_version_key": "5231289744:2026-08-09T11:31:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114460#issuecomment-5231289744",
-      "comment_created_at": "2026-08-09T11:31:09Z",
-      "comment_updated_at": "2026-08-09T11:31:09Z",
-      "comment_body_sha256": "84949bb9073fa7f3414e2f467d1aa7f103e3fc5660bc9ceb78c669b0a3e78b0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114460,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T11:39:48.759Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/sweep-discord-20260727",
-        "head_sha": "978a0bc8d198a9044887e0ffa06a03d584362b9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121025:5231295611:2026-08-09T11:32:39Z:re_review",
       "comment_id": "5231295611",
@@ -32952,6 +32905,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121093:5232352119:2026-08-09T15:44:15Z:clawsweeper_needs_human",
+      "comment_id": "5232352119",
+      "comment_version_key": "5232352119:2026-08-09T15:44:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121093#issuecomment-5232352119",
+      "comment_created_at": "2026-08-09T15:44:15Z",
+      "comment_updated_at": "2026-08-09T15:44:15Z",
+      "comment_body_sha256": "5d9fd5c4c881e78a3014ff748815728cf7acf2026602950ed0be34255617e9b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused test and red/green output support the implementation, but no after-fix real Telegram or production-boundary trace demonstrates the new... (sha=2856a92d242bc1b17d0db9938b97c8db33270fb2)",
+      "expected_head_sha": "2856a92d242bc1b17d0db9938b97c8db33270fb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T15:44:53.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-record-undeliverable-failure-notice",
+        "head_sha": "2856a92d242bc1b17d0db9938b97c8db33270fb2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
