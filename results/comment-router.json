@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T14:44:23.622Z",
+  "updated_at": "2026-08-09T14:44:55.577Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121007:5230893898:2026-08-09T09:52:16Z:clawsweeper_auto_repair",
-      "comment_id": "5230893898",
-      "comment_version_key": "5230893898:2026-08-09T09:52:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121007#issuecomment-5230893898",
-      "comment_created_at": "2026-08-09T09:52:16Z",
-      "comment_updated_at": "2026-08-09T09:52:16Z",
-      "comment_body_sha256": "b85e8a79287c392fa19c3ed7cfe3253f62c29041d61219c3f45e2c58a4d70793",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121007,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=c8c4bdc641c79bf969153b92986d2f32e64a858c)",
-      "expected_head_sha": "c8c4bdc641c79bf969153b92986d2f32e64a858c",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-09T09:53:02.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-matrix-restart-freshness",
-        "head_sha": "c8c4bdc641c79bf969153b92986d2f32e64a858c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114087:5083039829:2026-08-09T09:52:43Z:clawsweeper_needs_human",
       "comment_id": "5083039829",
@@ -33261,6 +33228,54 @@
       "status": "skipped",
       "processed_at": "2026-08-09T14:44:23.622Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119343:5232091887:2026-08-09T14:44:20Z:re_review",
+      "comment_id": "5232091887",
+      "comment_version_key": "5232091887:2026-08-09T14:44:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5232091887",
+      "comment_created_at": "2026-08-09T14:44:20Z",
+      "comment_updated_at": "2026-08-09T14:44:20Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "source_delivery_id": "ced7dc40-9400-11f1-943f-c6256f326283",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119343,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T14:44:53.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-gateway",
+        "head_sha": "7be32871ec354bfac91916a17f8ba9ce8eae0ead",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
