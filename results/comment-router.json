@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T04:35:34.680Z",
+  "updated_at": "2026-08-09T04:35:39.035Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1195:5099637170:2026-08-09T00:05:25Z:clawsweeper_needs_human",
-      "comment_id": "5099637170",
-      "comment_version_key": "5099637170:2026-08-09T00:05:25Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1195#issuecomment-5099637170",
-      "comment_created_at": "2026-07-28T03:36:34Z",
-      "comment_updated_at": "2026-08-09T00:05:25Z",
-      "comment_body_sha256": "7d251302e0c6d95a9975e1ea17a02f14ac3bf57228417c787ee6da4bec89de5d",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1195,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Require a durable ownership claim for sweeper deletes (P1)** - Late finding on unchanged content: the proposed sweeper explicitly avoids Crabbox claims, yet VISION.md requires destructive operations to verify ow...; Review finding: [P1] Require a durable ownership claim for sweeper deletes — docs/features/hosted-live-smoke.md:168-171 - [P3] Remove repository-specific workflow chronology — doc... (sha=5e78d383276c34bb50aefe942411ff7b5ffac73f)",
-      "expected_head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T00:07:21.340Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/944-live-tier",
-        "head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:53:5123889349:2026-08-09T00:07:00Z:clawsweeper_auto_repair",
       "comment_id": "5123889349",
@@ -31800,6 +31767,54 @@
         "kind": "pull_request",
         "branch": "fix/sqlite-wal-virtiofs-120549",
         "head_sha": "b722bedfa72e47b23728976bc4c5b1614e5a5cec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120840:5229781228:2026-08-09T04:35:05Z:re_review",
+      "comment_id": "5229781228",
+      "comment_version_key": "5229781228:2026-08-09T04:35:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120840#issuecomment-5229781228",
+      "comment_created_at": "2026-08-09T04:35:05Z",
+      "comment_updated_at": "2026-08-09T04:35:05Z",
+      "comment_body_sha256": "c5862a48963025e6b472e37b3a1fe868f0b1a3806babc9fe4e4296b58d2cd233",
+      "source_delivery_id": "b26721b0-93ab-11f1-9682-4c38416ed0fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120840,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T04:35:36.781Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/happy-diffie-6a9b69",
+        "head_sha": "a1c0f95295039bc081449f80b996da5da5b2ea20",
         "cluster_id": null,
         "job_path": null
       },
