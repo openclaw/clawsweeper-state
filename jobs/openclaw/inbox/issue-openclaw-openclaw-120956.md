@@ -67,15 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/120956 at the Workboard plugin’s persisted-state boundary. Add an idempotent Doctor repair for workboard_card_notifications rows whose message exceeds the existing 240-character contract, using the existing UTF-16-safe cap/ellipsis behavior and reporting affected row/card counts. Preserve strict runtime validation and current write-time caps; do not add a delivery/runtime fallback, config surface, core policy, or SQLite schema-version bump. Account for .28 key-value-to-SQLite import ordering so imported legacy rows are repaired in the same Doctor run. Extend the Doctor regression path with a real SQLite ready card: show dispatch fails before repair, run Doctor repair, then show the message is capped and dispatch succeeds. Include user-visible release-note context in the PR body or commit message; do not edit CHANGELOG.md.
+Repair the legacy Workboard SQLite notification-row bug described in https://github.com/openclaw/openclaw/issues/120956. Keep the existing producer-side 240-character caps. Add a second idempotent Workboard doctor state migration that detects oversized workboard_card_notifications.message values, truncates them using the existing 240-character contract, verifies the result, and reports the repair count. Add focused regression coverage that seeds a legacy oversized row and proves doctor repair prevents dispatch from aborting. Do not add a runtime delivery fallback, new config, schema-version bump, manifest change, or CHANGELOG.md edit; capture release-note context in the PR body.
 
 Likely files:
 
 - extensions/workboard/doctor-contract-api.ts
 - extensions/workboard/doctor-contract-api.test.ts
 - extensions/workboard/src/sqlite-store.ts
-- extensions/workboard/src/store-card-helpers.ts
-- extensions/workboard/src/store.test.ts
 
 Validation:
 
