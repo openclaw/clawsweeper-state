@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:04:41.610Z",
+  "updated_at": "2026-08-09T01:04:43.859Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:124:5127517079:2026-08-08T21:29:04Z:clawsweeper_auto_repair",
-      "comment_id": "5127517079",
-      "comment_version_key": "5127517079:2026-08-08T21:29:04Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/124#issuecomment-5127517079",
-      "comment_created_at": "2026-07-30T06:40:05Z",
-      "comment_updated_at": "2026-08-08T21:29:04Z",
-      "comment_body_sha256": "a5af9dae9c182563f1aa019f95926baae3c62748efbc194161be628316e98c1b",
-      "repo": "openclaw/lobster",
-      "issue_number": 124,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab)",
-      "expected_head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T21:29:39.446Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "octo/20260729-provider-add-recvqbA32usNcb",
-        "head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/remindctl:66:5157918151:2026-08-08T21:29:02Z:clawsweeper_auto_repair",
       "comment_id": "5157918151",
@@ -31839,6 +31806,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T01:04:41.610Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-09T01:04:00Z:clawsweeper_needs_human",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-09T01:04:00Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-09T01:04:00Z",
+      "comment_body_sha256": "cd9ef2ae640670eaae79ac9487bed8c5fc99a7049ad96253e3c36787e0b551a1",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch rewrites explicitly configured extended-length drive and UNC paths to plain paths; uncommon namespace-specific Windows path semantics need an explicit compatibility decision... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
+      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:04:43.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
