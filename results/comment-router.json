@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:24:55.916Z",
+  "updated_at": "2026-08-09T01:25:54.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/lobster:134:5188427753:2026-08-05T06:37:58Z:re_review",
-      "comment_id": "5188427753",
-      "comment_version_key": "5188427753:2026-08-05T06:37:58Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/134#issuecomment-5188427753",
-      "comment_created_at": "2026-08-05T06:37:58Z",
-      "comment_updated_at": "2026-08-05T06:37:58Z",
-      "comment_body_sha256": "bd8968913415bf6bdfc940add7b88649e654270719ab14f83408ed948d3208ad",
-      "repo": "openclaw/lobster",
-      "issue_number": 134,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T21:31:43.701Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/lobster:134:5189038250:2026-08-05T07:44:56Z:re_review",
       "comment_id": "5189038250",
@@ -32019,6 +31992,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-09T01:24:34Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-09T01:24:34Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-09T01:24:34Z",
+      "comment_body_sha256": "1dd34197cabd6c52b8eaa975931d5bee3f3172c3718fce0ae772479d38af5864",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No Gitcrawl Go test or runtime check is visible for this head; the supplied checks are secret scanning, neutral CodeQL, and skipped automation, so direct-dependency compatibility rema... (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:25:54.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
