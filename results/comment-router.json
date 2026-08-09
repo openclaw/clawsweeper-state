@@ -1,47 +1,6 @@
 {
-  "updated_at": "2026-08-09T17:16:25.455Z",
+  "updated_at": "2026-08-09T17:16:55.498Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121045:5231469131:2026-08-09T12:16:17Z:freeform_assist",
-      "comment_id": "5231469131",
-      "comment_version_key": "5231469131:2026-08-09T12:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121045#issuecomment-5231469131",
-      "comment_created_at": "2026-08-09T12:16:17Z",
-      "comment_updated_at": "2026-08-09T12:16:17Z",
-      "comment_body_sha256": "022681f7f4955ec6e81566eec90b1689b8e9e21eb0cd9b02cf17a031d952635e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121045,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "report the exact-head review state for `585212ebfe6a8875543892676b4a2b2239365d27`. the re-review command is acknowledged, but no matching review worker has appeared while the queue reports throttle-retry backoff. status only. do not repair, rebase, or merge.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:43:24.459Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-install-record-owner-rebuild-20260809",
-        "head_sha": "585212ebfe6a8875543892676b4a2b2239365d27",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98574:4853991815:2026-08-09T12:42:49Z:clawsweeper_needs_human",
       "comment_id": "4853991815",
@@ -32715,6 +32674,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-2638-deepseek-layout-balance",
         "head_sha": "5c7dde5ae7d27cec3e8b69265db864661103d368",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:492:5205292823:2026-08-09T17:16:10Z:clawsweeper_needs_human",
+      "comment_id": "5205292823",
+      "comment_version_key": "5205292823:2026-08-09T17:16:10Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/492#issuecomment-5205292823",
+      "comment_created_at": "2026-08-06T13:32:37Z",
+      "comment_updated_at": "2026-08-09T17:16:10Z",
+      "comment_body_sha256": "73c4a676a5f17c0a230b46fbfb72e5edd11ce2b348b1ee89efbdc6f4d7772c54",
+      "repo": "openclaw/acpx",
+      "issue_number": 492,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body and discussion contain no after-fix terminal transcript or artifact proving a clean frozen install and toolchain run; CI is useful supplemental evidence but does not satis... (sha=9491e4120c67b52bb10673e6945e08466d3a7a7f)",
+      "expected_head_sha": "9491e4120c67b52bb10673e6945e08466d3a7a7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T17:16:55.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-5a52b1151d",
+        "head_sha": "9491e4120c67b52bb10673e6945e08466d3a7a7f",
         "cluster_id": null,
         "job_path": null
       }
