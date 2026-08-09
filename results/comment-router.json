@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:50:01.043Z",
+  "updated_at": "2026-08-09T16:50:09.616Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120865:5231528550:2026-08-09T12:30:09Z:re_review",
-      "comment_id": "5231528550",
-      "comment_version_key": "5231528550:2026-08-09T12:30:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120865#issuecomment-5231528550",
-      "comment_created_at": "2026-08-09T12:30:09Z",
-      "comment_updated_at": "2026-08-09T12:30:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120865,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/connect-resolver-consolidation",
-        "head_sha": "b5145e55002ef14bfcf673178e856322a4c59ccc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113342:5231536481:2026-08-09T12:32:02Z:re_review",
       "comment_id": "5231536481",
@@ -32752,6 +32705,39 @@
         "kind": "pull_request",
         "branch": "jesse/signal-qr-setup",
         "head_sha": "5a77ea2e8110c7252883d357b1baf57a519dd149",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121103:5232632695:2026-08-09T16:49:32Z:clawsweeper_auto_repair",
+      "comment_id": "5232632695",
+      "comment_version_key": "5232632695:2026-08-09T16:49:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121103#issuecomment-5232632695",
+      "comment_created_at": "2026-08-09T16:49:32Z",
+      "comment_updated_at": "2026-08-09T16:49:32Z",
+      "comment_body_sha256": "9534e6bb585d60b23bd1965be56d5468abceb20a37a75e9501a2e2e5ac3557d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a1dd94ac48190ec034f0d773545794826662b775)",
+      "expected_head_sha": "a1dd94ac48190ec034f0d773545794826662b775",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:50:09.616Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-temporal-decay-subdir-dated-files",
+        "head_sha": "a1dd94ac48190ec034f0d773545794826662b775",
         "cluster_id": null,
         "job_path": null
       }
