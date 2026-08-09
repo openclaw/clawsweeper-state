@@ -67,20 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram inbound context for intentionally skipped animated TGS and video WebM stickers. Preserve the existing no-getFile/no-download/no-conversion behavior in extensions/telegram/src/bot/delivery.resolve-media.ts. At the Telegram body/context owner, use the existing channel unavailable-media formatter to add an explicit agent-visible unsupported-media notice for only is_animated/is_video stickers, including when caption text exists; retain the typed sticker fact and keep RawBody unavailable for command parsing. Add focused TGS and WebM regression coverage for agent body and group-history projection, retain the no-fetch invariant coverage, and update the Telegram format-support wording if the observable context changes. Stop if the change would add a config option, conversion capability, or broad media fallback.
+Repair the Telegram inbound context path for animated TGS and video WebM stickers. Preserve the existing no-download/no-conversion policy, carry a typed unsupported-sticker outcome from media resolution into context construction, and render concise agent-visible unavailable-media text in direct and group history. Reuse the canonical unavailable-media formatting pattern; do not add config, stage files, expose raw local paths, or change static WEBP handling. Add focused regressions for TGS/WebM no-fetch plus direct and group agent-visible context. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body.
 
 Likely files:
 
+- extensions/telegram/src/bot/delivery.resolve-media.ts
+- extensions/telegram/src/bot-handlers.inbound.runtime.ts
+- extensions/telegram/src/bot-message-context.types.ts
 - extensions/telegram/src/bot-message-context.body.ts
 - extensions/telegram/src/bot-message-context.media-carriers.test.ts
 - extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts
-- docs/channels/telegram.md
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-context.media-carriers.test.ts extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts src/channels/inbound-event/media.test.ts
-- Run focused Telegram QA or a live Telegram proof that shows the agent receives the unavailable-media notice without a staged TGS/WebM file.
-- pnpm docs:list before any documentation edit, then validate the relevant Telegram docs path.
+- node scripts/run-vitest.mjs extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts extensions/telegram/src/bot-message-context.media-carriers.test.ts
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-context.sticker-media.test.ts
+- git diff --check
 
 ## Operator Prompt
 
