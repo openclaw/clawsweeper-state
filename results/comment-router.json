@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T12:44:18.350Z",
+  "updated_at": "2026-08-09T12:44:25.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120664:5230247617:2026-08-09T06:55:00Z:re_review",
-      "comment_id": "5230247617",
-      "comment_version_key": "5230247617:2026-08-09T06:55:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120664#issuecomment-5230247617",
-      "comment_created_at": "2026-08-09T06:55:00Z",
-      "comment_updated_at": "2026-08-09T06:55:00Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120664,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T07:44:38.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/runners-m2-resume-verb",
-        "head_sha": "c92a3cb9b3db310564f74db081e22dc52545b15f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120664:5227581956:2026-08-09T07:38:44Z:clawsweeper_auto_repair",
       "comment_id": "5227581956",
@@ -32936,6 +32889,39 @@
         "kind": "pull_request",
         "branch": "fix/non-git-workdir-sync-error",
         "head_sha": "d769fccd3e16c5e8077d046b69a9ac6440f0ab59",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120986:5231092594:2026-08-09T12:42:58Z:clawsweeper_auto_repair",
+      "comment_id": "5231092594",
+      "comment_version_key": "5231092594:2026-08-09T12:42:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120986#issuecomment-5231092594",
+      "comment_created_at": "2026-08-09T10:44:09Z",
+      "comment_updated_at": "2026-08-09T12:42:58Z",
+      "comment_body_sha256": "c90a901397f99e903f37e98a144092d4c47cdee50297f23b7f89bceed9e66de3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a9ca1ec26bca42a9d645cdc26641b2474e795dc)",
+      "expected_head_sha": "5a9ca1ec26bca42a9d645cdc26641b2474e795dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T12:44:25.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-frozen-candidate-release-harness",
+        "head_sha": "5a9ca1ec26bca42a9d645cdc26641b2474e795dc",
         "cluster_id": null,
         "job_path": null
       }
