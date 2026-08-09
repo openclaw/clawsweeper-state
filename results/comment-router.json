@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T03:41:46.223Z",
+  "updated_at": "2026-08-09T03:42:05.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109544:5000312989:2026-07-17T07:46:37Z:re_review",
-      "comment_id": "5000312989",
-      "comment_version_key": "5000312989:2026-07-17T07:46:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109544#issuecomment-5000312989",
-      "comment_created_at": "2026-07-17T07:46:37Z",
-      "comment_updated_at": "2026-07-17T07:46:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109544,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T23:43:21.695Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109544:5000828698:2026-07-17T08:39:09Z:re_review",
       "comment_id": "5000828698",
@@ -31610,6 +31583,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120852:5229611150:2026-08-09T03:41:17Z:clawsweeper_needs_human",
+      "comment_id": "5229611150",
+      "comment_version_key": "5229611150:2026-08-09T03:41:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120852#issuecomment-5229611150",
+      "comment_created_at": "2026-08-09T03:41:17Z",
+      "comment_updated_at": "2026-08-09T03:41:17Z",
+      "comment_body_sha256": "227d9b4787b8cc95cd80e75c501db842c12c211ec9c872e1fa626ca8f1125a78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI gate remains red because checks-node-compact-large-7 failed; the available evidence does not establish whether that failure is related to this test-only patch. (sha=4e7cfdce72f80e4c284dcddaeef792577c84e747)",
+      "expected_head_sha": "4e7cfdce72f80e4c284dcddaeef792577c84e747",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T03:42:05.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120832",
+        "head_sha": "4e7cfdce72f80e4c284dcddaeef792577c84e747",
+        "cluster_id": "issue-openclaw-openclaw-120832",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120832.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
