@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:42:36.768Z",
+  "updated_at": "2026-08-09T16:42:51.098Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-09T11:58:25Z:clawsweeper_needs_human",
-      "comment_id": "5156313398",
-      "comment_version_key": "5156313398:2026-08-09T11:58:25Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
-      "comment_created_at": "2026-08-02T07:47:11Z",
-      "comment_updated_at": "2026-08-09T11:58:25Z",
-      "comment_body_sha256": "b9f026147f3d63b6903c02567393d69af2e2c299ac21134f9612cad4a401e5b2",
-      "repo": "openclaw/lobster",
-      "issue_number": 126,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Configured Windows state directories are compatibility-sensitive; the patch preserves Volume GUID paths in direct coverage, while the live after-fix run exercises a drive path rather... (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
-      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T11:59:12.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-ensure-directory-extended-path",
-        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:119:4943783923:2026-08-09T11:58:36Z:clawsweeper_auto_repair",
       "comment_id": "4943783923",
@@ -33102,6 +33069,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121112:5232601224:2026-08-09T16:42:02Z:clawsweeper_needs_human",
+      "comment_id": "5232601224",
+      "comment_version_key": "5232601224:2026-08-09T16:42:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121112#issuecomment-5232601224",
+      "comment_created_at": "2026-08-09T16:42:02Z",
+      "comment_updated_at": "2026-08-09T16:42:02Z",
+      "comment_body_sha256": "88da7b14e013252523f12b3fff1693f9166c6a864511c0c5d4d2093e330af1b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports a focused unit-test run, but supplies no inspectable after-fix real workspace or CLI evidence; add redacted terminal output show... (sha=a0990d3dd1a23982887afaa3495d07bbbd3fb075)",
+      "expected_head_sha": "a0990d3dd1a23982887afaa3495d07bbbd3fb075",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:42:51.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nested-memory-temporal-decay",
+        "head_sha": "a0990d3dd1a23982887afaa3495d07bbbd3fb075",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
