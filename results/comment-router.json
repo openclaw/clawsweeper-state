@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:55:34.497Z",
+  "updated_at": "2026-08-09T21:55:46.195Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121065:5232986230:2026-08-09T18:08:17Z:re_review",
-      "comment_id": "5232986230",
-      "comment_version_key": "5232986230:2026-08-09T18:08:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121065#issuecomment-5232986230",
-      "comment_created_at": "2026-08-09T18:08:17Z",
-      "comment_updated_at": "2026-08-09T18:08:17Z",
-      "comment_body_sha256": "306efade42e3c0074dac6cf73f294aca7538d2a5f35aeb823dd12603f1fe8dbe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121065,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-model-pair-resolution-20260809",
-        "head_sha": "23db6ac1e5f12d0c88a48c353a0c7da85c114081",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121123:5232993235:2026-08-09T18:09:08Z:re_review",
       "comment_id": "5232993235",
@@ -32057,6 +32010,39 @@
         "kind": "pull_request",
         "branch": "fix/control-ui-sidebar-text-scale",
         "head_sha": "c7f2764e75239678c33ec8b68139d7ce658daeee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120890:5230001535:2026-08-09T21:55:06Z:clawsweeper_needs_human",
+      "comment_id": "5230001535",
+      "comment_version_key": "5230001535:2026-08-09T21:55:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120890#issuecomment-5230001535",
+      "comment_created_at": "2026-08-09T05:43:06Z",
+      "comment_updated_at": "2026-08-09T21:55:06Z",
+      "comment_body_sha256": "0820d9ab0506a480365dd2c9640f7f3294e55842957f9888e753403805974905",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120890,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The CapMap and Serve-status parsing is an external Tailscale CLI contract; direct upstream-source inspection was blocked by DNS, so that contract remains independently unverified. (sha=9bc22c10d9b8b9d7804b2eedf59b5dada6a42438)",
+      "expected_head_sha": "9bc22c10d9b8b9d7804b2eedf59b5dada6a42438",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:55:46.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/pairing-tailscale-contract",
+        "head_sha": "9bc22c10d9b8b9d7804b2eedf59b5dada6a42438",
         "cluster_id": null,
         "job_path": null
       }
