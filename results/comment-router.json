@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T05:44:23.419Z",
+  "updated_at": "2026-08-09T05:44:31.508Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117184:5149539587:2026-08-09T00:46:10Z:clawsweeper_needs_human",
-      "comment_id": "5149539587",
-      "comment_version_key": "5149539587:2026-08-09T00:46:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5149539587",
-      "comment_created_at": "2026-08-01T03:14:55Z",
-      "comment_updated_at": "2026-08-09T00:46:10Z",
-      "comment_body_sha256": "a1efebe37bcef34e0326cd2478d90f6b09eeaffa7b79bc6ac4d190f583b1644c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied runtime log proves immediate failure cleanup only; queued media consumption and durable replay after cleanup have test-on...; Review finding: [P1] Do not invent queue ownership for ordinary turns — src/auto-reply/reply/get-reply.ts:1113-1118 - [P1] Delegate cleanup only after queue admission succeeds — s... (sha=5d3dc93b95596ad1467f98fb825dd488baa4018a)",
-      "expected_head_sha": "5d3dc93b95596ad1467f98fb825dd488baa4018a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T00:46:52.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media",
-        "head_sha": "5d3dc93b95596ad1467f98fb825dd488baa4018a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5150492452:2026-08-01T07:51:13Z:re_review",
       "comment_id": "5150492452",
@@ -31998,6 +31965,39 @@
         "head_sha": "10c77befa9781d13642e65b8c96a2aa22740effd",
         "cluster_id": null,
         "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-09T05:38:01Z:clawsweeper_auto_repair",
+      "comment_id": "5154331249",
+      "comment_version_key": "5154331249:2026-08-09T05:38:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117721#issuecomment-5154331249",
+      "comment_created_at": "2026-08-02T01:05:01Z",
+      "comment_updated_at": "2026-08-09T05:38:01Z",
+      "comment_body_sha256": "8f0191af43ddb242219497ac9c31f363569c480c1f088fda7659d1c7c2894a72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e92f3b61d62e2cbd2002ed17fad903e7267511c3)",
+      "expected_head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-09T05:44:31.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-88079",
+        "head_sha": "e92f3b61d62e2cbd2002ed17fad903e7267511c3",
+        "cluster_id": "automerge-openclaw-openclaw-117721",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117721.md"
       }
     }
   ]
