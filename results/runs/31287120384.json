@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-10354",
+  "mode": "autonomous",
+  "run_id": "31287120384",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31287120384",
+  "head_sha": "36179dceb26fbeca33d8a863746b4cf83e325e09",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-10354.md",
+  "published_at": "2026-08-09T01:01:49.368Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/10354",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/10354",
+  "canonical_pr": null,
+  "summary": "#10354 remains a reproducible, narrow schema-usability bug on main. Current main exposes `channel` as a bare optional string while routing interprets it as a provider/plugin selector. A two-file description-and-regression-test PR is appropriate, but this worker has a read-only checkout with no dependencies, so it cannot create the branch, apply the patch, or validate locally.",
+  "actions": [
+    {
+      "target": "#10354",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#10354",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment's read-only filesystem and missing dependency install; the repair itself is narrow and ready for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-10354",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#10354",
+      "candidate_fix": null,
+      "reason": "Create one narrow new fix PR from clawsweeper/issue-openclaw-openclaw-10354."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
