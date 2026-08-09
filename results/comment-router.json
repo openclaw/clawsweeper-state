@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:16:15.525Z",
+  "updated_at": "2026-08-09T18:16:18.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121048:5231728478:2026-08-09T13:19:55Z:re_review",
-      "comment_id": "5231728478",
-      "comment_version_key": "5231728478:2026-08-09T13:19:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121048#issuecomment-5231728478",
-      "comment_created_at": "2026-08-09T13:19:55Z",
-      "comment_updated_at": "2026-08-09T13:19:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121048,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T13:47:55.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-progress-hook-fallback",
-        "head_sha": "48942c0662fb980e8c04895f09891fdeb7e3d2ca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121060:5231692407:2026-08-09T13:11:22Z:re_review",
       "comment_id": "5231692407",
@@ -32813,6 +32766,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-finalize-history-cache-correlation",
         "head_sha": "128bc29b3adc7263d0ad60d3ef9af285c49078d9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/remindctl:66:5157918151:2026-08-09T18:15:40Z:clawsweeper_auto_repair",
+      "comment_id": "5157918151",
+      "comment_version_key": "5157918151:2026-08-09T18:15:40Z",
+      "comment_url": "https://github.com/openclaw/remindctl/pull/66#issuecomment-5157918151",
+      "comment_created_at": "2026-08-02T12:38:15Z",
+      "comment_updated_at": "2026-08-09T18:15:40Z",
+      "comment_body_sha256": "cbeeccdced6d78686353cfaa7162b7625d040b46d300606b40da32fe906880c7",
+      "repo": "openclaw/remindctl",
+      "issue_number": 66,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=42098a0e0e190c1966abcd01f3ead4bc5a50f59b)",
+      "expected_head_sha": "42098a0e0e190c1966abcd01f3ead4bc5a50f59b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:16:18.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/eventkit-fetch-timeout",
+        "head_sha": "42098a0e0e190c1966abcd01f3ead4bc5a50f59b",
         "cluster_id": null,
         "job_path": null
       }
