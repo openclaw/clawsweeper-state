@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:26:03.479Z",
+  "updated_at": "2026-08-09T18:28:07.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5231697463:2026-08-09T13:12:34Z:re_review",
-      "comment_id": "5231697463",
-      "comment_version_key": "5231697463:2026-08-09T13:12:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5231697463",
-      "comment_created_at": "2026-08-09T13:12:34Z",
-      "comment_updated_at": "2026-08-09T13:12:34Z",
-      "comment_body_sha256": "718ee2804ba719dbc896d1a06c391c2c0a46f2b423108782d303785dcc0cd523",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T13:49:17.058Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "65de5f6f0a0228f62a8890f76df655daffc56972",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-09T13:48:24Z:clawsweeper_auto_repair",
       "comment_id": "5224337448",
@@ -32707,6 +32660,39 @@
         "kind": "pull_request",
         "branch": "test/where-command-coverage",
         "head_sha": "cac7c09a70f98bd410923679fbd48982d1a0d025",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:126:5156313398:2026-08-09T18:16:10Z:clawsweeper_needs_human",
+      "comment_id": "5156313398",
+      "comment_version_key": "5156313398:2026-08-09T18:16:10Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/126#issuecomment-5156313398",
+      "comment_created_at": "2026-08-02T07:47:11Z",
+      "comment_updated_at": "2026-08-09T18:16:10Z",
+      "comment_body_sha256": "857f52e47f751db2d28d44382fac361b5c93ccc78a1da97084a71ffdd0001124",
+      "repo": "openclaw/lobster",
+      "issue_number": 126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair remains; the proof-positive patch needs normal maintainer merge review. (sha=e0c84977bd44bdab31ee0d4e93aa0796aab9e326)",
+      "expected_head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:28:07.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-ensure-directory-extended-path",
+        "head_sha": "e0c84977bd44bdab31ee0d4e93aa0796aab9e326",
         "cluster_id": null,
         "job_path": null
       }
