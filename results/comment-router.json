@@ -1,71 +1,6 @@
 {
-  "updated_at": "2026-08-09T18:15:40.986Z",
+  "updated_at": "2026-08-09T18:16:03.590Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194720912:2026-08-05T16:52:55Z:automerge",
-      "comment_id": "5194720912",
-      "comment_version_key": "5194720912:2026-08-05T16:52:55Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194720912",
-      "comment_created_at": "2026-08-05T16:52:55Z",
-      "comment_updated_at": "2026-08-05T16:52:55Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T13:47:35.148Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:62:5123133546:2026-08-09T13:46:57Z:clawsweeper_auto_repair",
       "comment_id": "5123133546",
@@ -32845,6 +32780,39 @@
         "kind": "pull_request",
         "branch": "docs/vault-set-help-clientinfo",
         "head_sha": "2935d6f0294e54ef0a8c1a54276be555903e2b14",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-09T18:15:27Z:clawsweeper_needs_human",
+      "comment_id": "4759967424",
+      "comment_version_key": "4759967424:2026-08-09T18:15:27Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/17#issuecomment-4759967424",
+      "comment_created_at": "2026-06-20T20:57:22Z",
+      "comment_updated_at": "2026-08-09T18:15:27Z",
+      "comment_body_sha256": "b278ddaff621e449adfc24d5c656d0da730a036504cf248209978f256efaaf69",
+      "repo": "openclaw/rfcs",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepting this RFC would set future compatibility expectations for Gateway commands, plugins, persisted sessions, restarts, and delivery ownership before maintainers have chosen the t... (sha=ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4)",
+      "expected_head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T18:16:03.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-independent-core-rfc",
+        "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
         "cluster_id": null,
         "job_path": null
       }
