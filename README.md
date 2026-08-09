@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 9, 2026, 11:42 UTC
+Last source update: Aug 9, 2026, 11:51 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 9, 2026, 11:42 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Aug 9, 2026, 11:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31311231657) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 9, 2026, 11:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31311141110) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 9, 2026, 11:49 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31311658114) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 9, 2026, 11:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31311765209) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 9, 2026, 11:38 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31311270921) |
 
 ### Repositories
@@ -91,18 +91,18 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 9, 2026, 11:17 UTC
+Last source update: Aug 9, 2026, 11:52 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 444 | 100% |
-| Run attempts archived | 1241 | audit |
-| Latest successful clusters | 379 | 85.4% |
-| Latest failed clusters | 63 | 14.2% |
-| Latest cancelled clusters | 2 | 0.5% |
-| Needs-human clusters | 26 | 5.9% |
+| Latest clusters reviewed | 445 | 100% |
+| Run attempts archived | 1242 | audit |
+| Latest successful clusters | 379 | 85.2% |
+| Latest failed clusters | 64 | 14.4% |
+| Latest cancelled clusters | 2 | 0.4% |
+| Needs-human clusters | 26 | 5.8% |
 | Fix actions failed | 22 | 4.4% |
 | Fix actions blocked | 84 | 16.9% |
 | Completed close actions | 0 | 0.0% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 444 clusters: 193 maintainer action, 94 automation snapshot, 133 intervention needed, 24 no pending action, 0 completed.
+- Latest records: 445 clusters: 193 maintainer action, 94 automation snapshot, 134 intervention needed, 24 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120652](https://github.com/openclaw/openclaw/pull/120652) is merge_ready: issue implementation PR checks are green; merge intentionally blocked for this lane.
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [cluster:issue-openclaw-openclaw-55372](cluster:issue-openclaw-openclaw-55372) is automation_failed: Executor must rebase or start from preflight main, apply the artifact, then run the listed validations before opening the labeled PR..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#121034](https://github.com/openclaw/openclaw/pull/121034) is automation_failed: A recognized Claude ACP adapter must receive its native Bedrock model/inference-profile ID, not OpenClaw's amazon-bedrock/ qualifier..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#52130](https://github.com/openclaw/openclaw/pull/52130) is action_planned: No open candidate PR exists; a narrow documentation, UI-hint, generated-metadata, and regression-test fix is appropriate..
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 193 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 94 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 133 | automation failure or blocker recorded |
+| Intervention Needed | 134 | automation failure or blocker recorded |
 | No Pending Action | 24 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -138,7 +138,7 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 51 |
-| automation_failed | 73 |
+| automation_failed | 74 |
 | automation_blocked | 60 |
 | reviewed_no_action | 24 |
 | completed | 0 |
@@ -187,6 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#121034](https://github.com/openclaw/openclaw/pull/121034) | automation_failed | A recognized Claude ACP adapter must receive its native Bedrock model/inference-profile ID, not OpenClaw's amazon-bedrock/ qualifier. | Aug 9, 2026, 11:52 UTC | [issue-openclaw-openclaw-121034](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-121034.md) | [31311473720](https://github.com/openclaw/clawsweeper/actions/runs/31311473720) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-55372](cluster:issue-openclaw-openclaw-55372) | automation_failed | Executor must rebase or start from preflight main, apply the artifact, then run the listed validations before opening the labeled PR. | Aug 9, 2026, 11:17 UTC | [issue-openclaw-openclaw-55372](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-55372.md) | [31309791488](https://github.com/openclaw/clawsweeper/actions/runs/31309791488) |
 | [openclaw/crabpot](https://github.com/openclaw/crabpot) | [#283](https://github.com/openclaw/crabpot/pull/283) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 9, 2026, 08:35 UTC | [automerge-openclaw-crabpot-283](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-crabpot-283.md) | [31303600912](https://github.com/openclaw/clawsweeper/actions/runs/31303600912) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#89252](https://github.com/openclaw/openclaw/pull/89252) | automation_blocked | Current source already satisfies the issue, but the hydrated preflight state is stale relative to the available main checkout. Do not open a duplic... | Aug 9, 2026, 04:39 UTC | [issue-openclaw-openclaw-89252](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-89252.md) | [31294657506](https://github.com/openclaw/clawsweeper/actions/runs/31294657506) |
@@ -201,7 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | Codex /review timed out after 30000ms | Aug 7, 2026, 12:01 UTC | [issue-openclaw-openclaw-120207](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120207.md) | [31171079611](https://github.com/openclaw/clawsweeper/actions/runs/31171079611) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#120157](https://github.com/openclaw/openclaw/pull/120157) | automation_failed | Existing behavior is broken lifecycle preservation, not a new feature or security boundary change. | Aug 7, 2026, 08:35 UTC | [issue-openclaw-openclaw-120157](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-120157.md) | [31158543465](https://github.com/openclaw/clawsweeper/actions/runs/31158543465) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, docs, bundledChannelConfigM... | Aug 7, 2026, 07:43 UTC | [automerge-openclaw-openclaw-120143](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-120143.md) | [31155145929](https://github.com/openclaw/clawsweeper/actions/runs/31155145929) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): validation command runtime budget exhausted | Aug 7, 2026, 06:57 UTC | [automerge-openclaw-openclaw-119172](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119172.md) | [31151537181](https://github.com/openclaw/clawsweeper/actions/runs/31151537181) |
 
 #### No Pending Action
 
