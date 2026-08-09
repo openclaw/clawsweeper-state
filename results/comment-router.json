@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T13:48:19.569Z",
+  "updated_at": "2026-08-09T13:48:20.694Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5193495466:2026-08-05T15:04:08Z:re_review",
-      "comment_id": "5193495466",
-      "comment_version_key": "5193495466:2026-08-05T15:04:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5193495466",
-      "comment_created_at": "2026-08-05T15:04:08Z",
-      "comment_updated_at": "2026-08-05T15:04:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T08:46:12.606Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5194007050:2026-08-05T15:47:52Z:re_review",
       "comment_id": "5194007050",
@@ -32858,6 +32831,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T13:48:19.569Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112054:5047571071:2026-08-09T13:47:41Z:clawsweeper_needs_human",
+      "comment_id": "5047571071",
+      "comment_version_key": "5047571071:2026-08-09T13:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112054#issuecomment-5047571071",
+      "comment_created_at": "2026-07-22T14:40:37Z",
+      "comment_updated_at": "2026-08-09T13:47:41Z",
+      "comment_body_sha256": "9c122ae6f25ab79ea2b45b2730921f3715871e3752165df97aef52800247d249",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies a source probe and focused unit coverage but no after-fix Gemini request; add redacted terminal output or provider logs before... (sha=2d52b49242bb86725d4de57e3f74c4682670bb39)",
+      "expected_head_sha": "2d52b49242bb86725d4de57e3f74c4682670bb39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T13:48:20.694Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gemini-multitype-schema",
+        "head_sha": "2d52b49242bb86725d4de57e3f74c4682670bb39",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
