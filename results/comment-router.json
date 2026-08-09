@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T19:52:56.633Z",
+  "updated_at": "2026-08-09T19:53:02.276Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114072:5082692677:2026-08-09T14:46:48Z:clawsweeper_auto_repair",
-      "comment_id": "5082692677",
-      "comment_version_key": "5082692677:2026-08-09T14:46:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5082692677",
-      "comment_created_at": "2026-07-26T08:19:25Z",
-      "comment_updated_at": "2026-08-09T14:46:48Z",
-      "comment_body_sha256": "e39ef91a3f6d0a328748f9dcec6ddf46fa133f440bea02445e81a45ccb4d2a03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114072,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5141f56b4febe40c0a3aedc153a4920d71aa0912)",
-      "expected_head_sha": "5141f56b4febe40c0a3aedc153a4920d71aa0912",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T15:49:33.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-decomposition-orchestration",
-        "head_sha": "4e68096d2fadca6096952a5827a0832797bdbcbe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114173:5085269514:2026-08-09T14:51:25Z:clawsweeper_needs_human",
       "comment_id": "5085269514",
@@ -32802,6 +32769,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T19:52:56.633Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-09T19:29:35Z:clawsweeper_needs_human",
+      "comment_id": "5225378319",
+      "comment_version_key": "5225378319:2026-08-09T19:29:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-5225378319",
+      "comment_created_at": "2026-08-08T08:45:06Z",
+      "comment_updated_at": "2026-08-09T19:29:35Z",
+      "comment_body_sha256": "adaff5f889b1568c0c12909a9f4cc2ef87c976b08216d5e2227f96a6e305ca7f",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body describes a prior runtime run, but no inspectable current-head artifact proves the final transition, Core revalidation, retai...; Review finding: [medium] Approve the legacy Tailscale authorization boundary — src/OpenClaw.Connection/GatewayTailscaleAuthUpgrade.cs:72 (sha=afc91117402e0ca46834faee791150ded570a90a)",
+      "expected_head_sha": "afc91117402e0ca46834faee791150ded570a90a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T19:53:02.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/tailscale-legacy-upgrade-20260807",
+        "head_sha": "afc91117402e0ca46834faee791150ded570a90a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
