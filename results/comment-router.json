@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:44:31.245Z",
+  "updated_at": "2026-08-09T01:44:35.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120640:5228192608:2026-08-08T21:11:28Z:re_review",
-      "comment_id": "5228192608",
-      "comment_version_key": "5228192608:2026-08-08T21:11:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120640#issuecomment-5228192608",
-      "comment_created_at": "2026-08-08T21:11:28Z",
-      "comment_updated_at": "2026-08-08T21:11:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120640,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T21:40:53.052Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/nice-gates-5fb9eb",
-        "head_sha": "052da61a4b61bcf88de1753ac0d5e4cf5bbf6a1f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120640:5227316399:2026-08-08T21:40:12Z:clawsweeper_needs_human",
       "comment_id": "5227316399",
@@ -32094,6 +32047,39 @@
         "kind": "pull_request",
         "branch": "steipete/ts-conversions-wave3",
         "head_sha": "9ec5c620b34d6d1d80177e902b69e5b1596ea6be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120791:5229227755:2026-08-09T01:43:55Z:clawsweeper_needs_human",
+      "comment_id": "5229227755",
+      "comment_version_key": "5229227755:2026-08-09T01:43:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120791#issuecomment-5229227755",
+      "comment_created_at": "2026-08-09T01:43:55Z",
+      "comment_updated_at": "2026-08-09T01:43:55Z",
+      "comment_body_sha256": "a3f39eb46383393e14f882efbeab08fe9734d810a1321ea02254ad4be0ba58cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120791,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the avatar route for profiles without an upload (P2)** - This omits avatarUrl when hasAvatar is false, but the canonical connection projection always supplies that route so it can serve the Gravatar fal...; Review finding: [P2] Preserve the avatar route for profiles without an upload — src/gateway/server-request-context.ts:287-289 - [P2] Keep Tailscale provider logins out of presence... (sha=e1d1f43cca3bd89ef57a100c11d9272950931ac7)",
+      "expected_head_sha": "e1d1f43cca3bd89ef57a100c11d9272950931ac7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:44:35.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "aiden/fix-profile-identity-sync",
+        "head_sha": "e1d1f43cca3bd89ef57a100c11d9272950931ac7",
         "cluster_id": null,
         "job_path": null
       }
