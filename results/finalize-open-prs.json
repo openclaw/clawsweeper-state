@@ -2,18 +2,18 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T02:42:03.915Z",
-  "count": 10,
+  "generated_at": "2026-08-09T03:21:44.204Z",
+  "count": 11,
   "summary": {
-    "open_prs": 10,
+    "open_prs": 11,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 2,
     "mergeability_unknown": 0,
-    "needs_checks": 2,
+    "needs_checks": 3,
     "needs_review": 0,
-    "needs_merge_preflight": 10,
-    "needs_result_backfill": 0
+    "needs_merge_preflight": 11,
+    "needs_result_backfill": 1
   },
   "dispatch": {
     "enabled": false,
@@ -26,6 +26,59 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 120852,
+      "title": "test(doctor): give SecretRef scenario timeout headroom",
+      "url": "https://github.com/openclaw/openclaw/pull/120852",
+      "branch": "clawsweeper/issue-openclaw-openclaw-120832",
+      "head_sha": "4e7cfdce72f80e4c284dcddaeef792577c84e747",
+      "cluster_id": "issue-openclaw-openclaw-120832",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120832.md",
+      "updated_at": "2026-08-09T03:14:13Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 91,
+        "counts": {
+          "SKIPPED": 24,
+          "SUCCESS": 57,
+          "IN_PROGRESS": 9,
+          "FAILURE": 1
+        },
+        "blockers": [
+          "CI / build-artifacts:IN_PROGRESS",
+          "CI / checks-node-compact-large-6:IN_PROGRESS",
+          "CI / checks-node-compact-large-7:FAILURE",
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-3:IN_PROGRESS",
+          "CI / checks-node-compact-small-5:IN_PROGRESS",
+          "CI / checks-node-compact-small-6:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS",
+          "CI / check-sqlite-session-flip-proof:IN_PROGRESS",
+          "CI / checks-windows-node-test:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 0,
+        "latest": []
+      },
+      "latest_record": null,
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / build-artifacts:IN_PROGRESS; CI / checks-node-compact-large-6:IN_PROGRESS; CI / checks-node-compact-large-7:FAILURE",
+        "needs_merge_preflight",
+        "needs_result_backfill"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 120652,
       "title": "fix: suppress fast-auto status updates when progress is hidden",

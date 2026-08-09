@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "autonomous",
+  "run_id": "31291175045",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31291175045",
+  "head_sha": "81c23bede7a805351bcbb1d5fde54ff278337535",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T03:20:17.340Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "Current main c5bdad48 reproduces #120735 at source level: animated TGS and video WebM stickers are intentionally not fetched, retain a typed sticker fact, but produce no agent-visible unavailable-media outcome. A narrow repair is ready, but this worker checkout is read-only and has no node_modules, so it cannot create or validate the required branch locally.",
+  "actions": [
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker environment; the executor can apply the narrow fix artifact on clawsweeper/issue-openclaw-openclaw-120735."
+    },
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#93130",
+      "reason": "Already closed historical context; no mutation."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Executor should create the one narrow issue-fix PR from the named ClawSweeper branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
