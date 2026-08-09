@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-89252"
 mode: "autonomous"
-run_id: "31035456501"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31035456501"
-head_sha: "2c3ad8f46c9a9ddd3c0e2c0c961bdbf397d14514"
+run_id: "31293529289"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31293529289"
+head_sha: "095f5c5a9492b90777e7c96eb1ff319b861863cf"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-05T20:55:30.455Z"
-canonical: "https://github.com/openclaw/openclaw/issues/89252"
+published_at: "2026-08-09T04:07:21.565Z"
+canonical: "https://github.com/openclaw/openclaw/pull/119717"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/89252"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119717"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31035456501](https://github.com/openclaw/clawsweeper/actions/runs/31035456501)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31293529289](https://github.com/openclaw/clawsweeper/actions/runs/31293529289)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/89252
+Canonical: https://github.com/openclaw/openclaw/pull/119717
 
 ## Summary
 
-Current main still drops configured Telegram custom commands first when the generated menu exceeds Telegram’s count or text budget. Plan a narrow new PR that prioritizes configured commands and proves mixed-overflow behavior.
+No new repair is needed: #119717 is merged and current main already marks configured Telegram commands as priority under count, text-budget, and retry pressure. #89252 remains open because this lane cannot close issues.
 
 ## Impact
 
@@ -54,21 +54,20 @@ Current main still drops configured Telegram custom commands first when the gene
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/119717 | clawsweeper/issue-openclaw-openclaw-89252 |  |
 | issue_implementation_status_comment | updated | #89252 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119717 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #89252 | fix_needed | planned | canonical | The defect is a narrow ordering error in the Telegram plugin. Existing process-local hash behavior correctly re-registers the already-truncated menu on restart; it is not the owner of this loss. |
-| cluster:issue-openclaw-openclaw-89252 | build_fix_artifact | planned | canonical | No open viable PR exists; create one narrow current-main repair PR. |
+| #89252 | keep_canonical | planned | fixed_by_candidate | The canonical issue is covered by merged #119717; closing is explicitly blocked for this lane. |
+| #119717 | keep_closed | skipped | fixed_by_candidate | Already merged; no mutation is valid. |
 
 ## Needs Human
 
