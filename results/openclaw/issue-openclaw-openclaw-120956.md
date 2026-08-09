@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120956"
-mode: "autonomous"
-run_id: "31299486130"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31299486130"
-head_sha: "6971afb72029ac8c845bb29c337134f2534b1dbc"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "31301765658"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31301765658"
+head_sha: "dc6fc0b4a479fe4112e48c37104d7a6b360818df"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-09T07:15:08.916Z"
+published_at: "2026-08-09T07:48:37.632Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31299486130](https://github.com/openclaw/clawsweeper/actions/runs/31299486130)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31301765658](https://github.com/openclaw/clawsweeper/actions/runs/31301765658)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 ## Summary
 
-Current main dba99b355b4e75cc97fddaf78bbf9c5a3058ca34 still has the legacy SQLite notification defect. A narrow, plugin-local Doctor repair PR is planned; this read-only worker cannot create or validate its branch.
+#120956 remains a current, non-security Workboard legacy-state defect on main 499d81cdbdadb565c8045a76befe7c170f4ba564. Plan one narrow plugin-local Doctor repair PR; do not close or merge the issue.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current main dba99b355b4e75cc97fddaf78bbf9c5a3058ca34 still has the legacy SQLit
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120956 | fix_needed | planned | canonical | Source reproduction is conclusive; no existing implementation PR is hydrated. |
-| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned | canonical | Produce one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-120956. |
-| cluster:issue-openclaw-openclaw-120956 | open_fix_pr | planned | canonical | The issue is open and canonical; fix PR creation is allowed, while merge and closure are not. |
+| #120956 | fix_needed | planned | canonical | The issue is open, canonical, source-reproducible, and has no viable candidate PR in the hydrated artifact. |
+| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned | canonical | Create one new fix PR using the explicit repair contract below. |
 
 ## Needs Human
 
