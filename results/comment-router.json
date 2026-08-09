@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:05:29.953Z",
+  "updated_at": "2026-08-09T23:05:31.677Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5233390430:2026-08-09T19:14:01Z:re_review",
-      "comment_id": "5233390430",
-      "comment_version_key": "5233390430:2026-08-09T19:14:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5233390430",
-      "comment_created_at": "2026-08-09T19:14:01Z",
-      "comment_updated_at": "2026-08-09T19:14:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T19:40:50.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media",
-        "head_sha": "2c8501202c0ec71378b5956bb6deafd56e9c8445",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5233392921:2026-08-09T19:14:36Z:re_review",
       "comment_id": "5233392921",
@@ -32099,6 +32052,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
         "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1081:5229948849:2026-08-09T22:51:34Z:clawsweeper_needs_human",
+      "comment_id": "5229948849",
+      "comment_version_key": "5229948849:2026-08-09T22:51:34Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1081#issuecomment-5229948849",
+      "comment_created_at": "2026-08-09T05:27:11Z",
+      "comment_updated_at": "2026-08-09T22:51:34Z",
+      "comment_body_sha256": "fe94986449215efa61c8ef932935452925b18676cbacc4a1030934d3960f8f2a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The narrower heuristic intentionally allows isolated persisted-state or configuration edits without a path hint or corroborating changed-line storage signal to avoid reintroducing fal... (sha=e23ba84401cbfe7827badc9ae72e24f17916bb1d)",
+      "expected_head_sha": "e23ba84401cbfe7827badc9ae72e24f17916bb1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T23:05:31.677Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/persistent-data-classifier-recut",
+        "head_sha": "e23ba84401cbfe7827badc9ae72e24f17916bb1d",
         "cluster_id": null,
         "job_path": null
       }
