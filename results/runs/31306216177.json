@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120956",
+  "mode": "autonomous",
+  "run_id": "31306216177",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31306216177",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120956.md",
+  "published_at": "2026-08-09T09:41:32.820Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120956",
+  "canonical_pr": null,
+  "summary": "#120956 remains a source-proven, non-security Workboard persistence bug on current main d0e812e18f46f64ba8ba8c3cee302c62fa34bf9a. Plan a narrow plugin-local Doctor-only repair and regression; no GitHub or repository mutation was performed in this planning pass.",
+  "actions": [
+    {
+      "target": "#120956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "Legacy SQLite rows can violate the existing notification contract and abort dispatch before a ready card records its dispatch state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120956",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#120956",
+      "candidate_fix": null,
+      "reason": "The fix is narrow, plugin-owned, idempotent, and has a focused persistence/dispatch regression path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
