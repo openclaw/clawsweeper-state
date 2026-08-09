@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T17:11:03.832Z",
-  "count": 4,
+  "generated_at": "2026-08-09T17:32:28.248Z",
+  "count": 3,
   "summary": {
-    "open_prs": 4,
+    "open_prs": 3,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 3,
+    "needs_rebase": 2,
     "mergeability_unknown": 0,
     "needs_checks": 0,
     "needs_review": 0,
-    "needs_merge_preflight": 4,
+    "needs_merge_preflight": 3,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -216,86 +216,6 @@
           "title": "fix(ai): mark missing OpenAI Completions usage unavailable",
           "idempotency_key": null,
           "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
-    },
-    {
-      "number": 120550,
-      "title": "fix(agents): preserve latest context-usage provenance",
-      "url": "https://github.com/openclaw/openclaw/pull/120550",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120536",
-      "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-      "cluster_id": "issue-openclaw-openclaw-120536",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120536.md",
-      "updated_at": "2026-08-08T11:44:53Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 136,
-        "counts": {
-          "SKIPPED": 53,
-          "SUCCESS": 82,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 4,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225569174",
-            "submitted_at": "2026-08-08T09:45:11Z"
-          },
-          {
-            "source": "comment",
-            "author": "vincentkoc",
-            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225777741",
-            "submitted_at": "2026-08-08T10:51:25Z"
-          },
-          {
-            "source": "comment",
-            "author": "vincentkoc",
-            "url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225814862",
-            "submitted_at": "2026-08-08T11:03:12Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31249008962",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31249008962",
-        "cluster_id": "issue-openclaw-openclaw-120536",
-        "published_at": "2026-08-08T09:26:25.901Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120550",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(agents): preserve latest context-usage provenance",
-          "idempotency_key": null,
-          "reason": "checks are not clean: checks-node-compact-small-7: IN_PROGRESS",
           "merged_at": null,
           "merge_commit_sha": null,
           "live_state": null,
