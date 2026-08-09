@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:35:59.679Z",
+  "updated_at": "2026-08-09T23:38:32.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121149:5233516843:2026-08-09T19:45:23Z:clawsweeper_needs_human",
-      "comment_id": "5233516843",
-      "comment_version_key": "5233516843:2026-08-09T19:45:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121149#issuecomment-5233516843",
-      "comment_created_at": "2026-08-09T19:45:23Z",
-      "comment_updated_at": "2026-08-09T19:45:23Z",
-      "comment_body_sha256": "7937be789dab0aec82b8b7853b2f26d59eb3cce7561f02cc935c60aa73379200",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121149,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has an unresolved failed checks-node-compact-large-6 run and failed aggregate CI gate; logs were unavailable, so merge readiness is not established. (sha=c56d44a195817c01cb8bd40284063ab420405ed3)",
-      "expected_head_sha": "c56d44a195817c01cb8bd40284063ab420405ed3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T19:46:41.069Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0809-test-bootstrap-modules",
-        "head_sha": "c56d44a195817c01cb8bd40284063ab420405ed3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:384:5229827528:2026-08-09T19:46:01Z:clawsweeper_auto_repair",
       "comment_id": "5229827528",
@@ -32058,6 +32025,54 @@
         "kind": "pull_request",
         "branch": "fix/delivery-outcomes",
         "head_sha": "c83daddc6b3e988faf8b124649770dee41406653",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120575:5234436890:2026-08-09T23:38:01Z:re_review",
+      "comment_id": "5234436890",
+      "comment_version_key": "5234436890:2026-08-09T23:38:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120575#issuecomment-5234436890",
+      "comment_created_at": "2026-08-09T23:38:01Z",
+      "comment_updated_at": "2026-08-09T23:38:01Z",
+      "comment_body_sha256": "2994ce92b24ee95be59d2f40316ecabe849de5c0e36a6bcc3edd57b7b2a6f145",
+      "source_delivery_id": "5ce3b140-944b-11f1-8528-53fe8a30ed8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120575,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T23:38:30.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/process-poll-notification-ack",
+        "head_sha": "399fc16406db999232c314cb06177c6f987cf868",
         "cluster_id": null,
         "job_path": null
       },
