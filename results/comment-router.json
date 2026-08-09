@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:28:49.853Z",
+  "updated_at": "2026-08-09T23:29:00.541Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121074:5232388280:2026-08-09T19:43:04Z:clawsweeper_needs_human",
-      "comment_id": "5232388280",
-      "comment_version_key": "5232388280:2026-08-09T19:43:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121074#issuecomment-5232388280",
-      "comment_created_at": "2026-08-09T15:50:40Z",
-      "comment_updated_at": "2026-08-09T19:43:04Z",
-      "comment_body_sha256": "43989b72cb6bc4e2d6ad5435ea925394745a89559b9a1443f10ca3488d73eaf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121074,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body shows a real direct-Cloud completion but not the distinguishing outbound payload; add a redacted native trace showing think:... (sha=11815eb3ef4a9f49cc69ca5bb6eb60eaa3ba0190)",
-      "expected_head_sha": "11815eb3ef4a9f49cc69ca5bb6eb60eaa3ba0190",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T19:45:51.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-cloud-thinking-levels",
-        "head_sha": "11815eb3ef4a9f49cc69ca5bb6eb60eaa3ba0190",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-08-09T19:41:37Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -32030,6 +31997,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-09T23:09:53Z:clawsweeper_auto_merge",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-09T23:09:53Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-09T23:09:53Z",
+      "comment_body_sha256": "f1ee7e88bf7e84130f9f3ac2bd61cee1874157a7bf51ca9039d20604b91b9604",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T23:29:00.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:merge-ready",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
