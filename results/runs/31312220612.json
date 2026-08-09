@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121034",
+  "mode": "autonomous",
+  "run_id": "31312220612",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31312220612",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121034.md",
+  "published_at": "2026-08-09T12:09:16.427Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121034",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121034",
+  "canonical_pr": null,
+  "summary": "Current main 0a898b70 still forwards `amazon-bedrock/<id>` unchanged through the Claude ACP adapter. The canonical path is a narrow two-file fix PR; this worker's read-only, dependency-less checkout cannot apply or validate it directly.",
+  "actions": [
+    {
+      "target": "#121034",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121034",
+      "candidate_fix": null,
+      "reason": "The adapter must translate the recognized OpenClaw Bedrock qualifier to the native Claude Agent SDK model/inference-profile ID without changing generic ACP behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121034",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121034",
+      "candidate_fix": null,
+      "reason": "The deterministic executor should implement this artifact on clawsweeper/issue-openclaw-openclaw-121034, validate it, and open or update the single credited fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121034"
 mode: "autonomous"
-run_id: "31311473720"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31311473720"
+run_id: "31312220612"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31312220612"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-09T11:52:45.180Z"
+published_at: "2026-08-09T12:09:16.427Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121034"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121034"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31311473720](https://github.com/openclaw/clawsweeper/actions/runs/31311473720)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31312220612](https://github.com/openclaw/clawsweeper/actions/runs/31312220612)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/121034
 
 ## Summary
 
-Current main reproduces a plugin-local Claude ACP adapter defect. A narrow two-file fix artifact is ready; this read-only checkout has no dependencies, so no branch, test run, or PR was created here.
+Current main 0a898b70 still forwards `amazon-bedrock/<id>` unchanged through the Claude ACP adapter. The canonical path is a narrow two-file fix PR; this worker's read-only, dependency-less checkout cannot apply or validate it directly.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main reproduces a plugin-local Claude ACP adapter defect. A narrow two-f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121034 | fix_needed | planned | canonical | A recognized Claude ACP adapter must receive its native Bedrock model/inference-profile ID, not OpenClaw's amazon-bedrock/ qualifier. |
-| cluster:issue-openclaw-openclaw-121034 | build_fix_artifact | planned | canonical | Create the narrow credited repair PR from clawsweeper/issue-openclaw-openclaw-121034 after applying and validating the artifact. |
+| #121034 | fix_needed | planned | canonical | The adapter must translate the recognized OpenClaw Bedrock qualifier to the native Claude Agent SDK model/inference-profile ID without changing generic ACP behavior. |
+| cluster:issue-openclaw-openclaw-121034 | build_fix_artifact | planned | canonical | The deterministic executor should implement this artifact on clawsweeper/issue-openclaw-openclaw-121034, validate it, and open or update the single credited fix PR. |
 
 ## Needs Human
 
