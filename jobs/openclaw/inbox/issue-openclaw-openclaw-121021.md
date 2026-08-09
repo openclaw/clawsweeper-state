@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the native sessions_spawn task-ledger duplication. Trace native spawn through src/agents/subagent-spawn-gateway.ts into Gateway agent task tracking and preserve distinct legitimate CLI/background work. Make the child Gateway dispatch identify the run as plugin_subagent so it does not create a CLI task before src/agents/subagent-registry-run-manager.ts registers the canonical subagent task. Do not implement a Web UI grouping workaround. Add a regression that exercises native spawn plus Gateway dispatch and asserts exactly one subagent task and no CLI task for the same runId and childSessionKey. Do not edit CHANGELOG.md; it is release-owned.
+Repair the source-proven duplicate Web task records for native sessions_spawn runs. Preserve the dispatch-then-register order because the registry needs the Gateway run ID. Add a trusted internal native-subagent tracking mode that suppresses only Gateway CLI task creation while leaving src/agents/subagent-registry-run-manager.ts as the canonical writer. Do not reuse plugin_subagent unchanged, because its admission path registers early and would collide with the native pipeline; do not add UI-side deduplication, new config, or CHANGELOG.md edits. Add regression coverage for one native run producing exactly one subagent record and no CLI record, including the original ordering and untrusted-lookalike safety boundary.
 
 Likely files:
 
 - src/agents/subagent-spawn-gateway.ts
 - src/gateway/server-methods/agent-task-tracking.ts
-- src/agents/subagent-spawn.test.ts
-- src/gateway/server-methods/agent.sessions-and-models.test-utils.ts
+- src/gateway/server-methods/agent-run-admission-phase.ts
+- src/gateway/server-methods/agent.sessions-and-models.test.ts
+- src/agents/subagent-registry.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/subagent-spawn.test.ts
-- node scripts/run-vitest.mjs src/gateway/server-methods
-- Verify a native sessions_spawn task list contains one runtime=subagent record and no runtime=cli record for that child run.
+- node scripts/run-vitest.mjs src/gateway/server-methods/agent.sessions-and-models.test.ts
+- node scripts/run-vitest.mjs src/agents/subagent-registry.test.ts
+- git diff --check
 
 ## Operator Prompt
 
