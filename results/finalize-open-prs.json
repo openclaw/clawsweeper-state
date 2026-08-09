@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T05:02:14.520Z",
-  "count": 9,
+  "generated_at": "2026-08-09T05:24:44.710Z",
+  "count": 7,
   "summary": {
-    "open_prs": 9,
+    "open_prs": 7,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 2,
+    "needs_rebase": 1,
     "mergeability_unknown": 0,
-    "needs_checks": 3,
+    "needs_checks": 2,
     "needs_review": 0,
-    "needs_merge_preflight": 9,
+    "needs_merge_preflight": 7,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,77 +26,6 @@
     "candidates": []
   },
   "prs": [
-    {
-      "number": 120852,
-      "title": "test(doctor): give SecretRef scenario timeout headroom",
-      "url": "https://github.com/openclaw/openclaw/pull/120852",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120832",
-      "head_sha": "4e7cfdce72f80e4c284dcddaeef792577c84e747",
-      "cluster_id": "issue-openclaw-openclaw-120832",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120832.md",
-      "updated_at": "2026-08-09T03:42:05Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 101,
-        "counts": {
-          "SKIPPED": 33,
-          "SUCCESS": 66,
-          "FAILURE": 2
-        },
-        "blockers": [
-          "CI / checks-node-compact-large-7:FAILURE",
-          "CI / openclaw/ci-gate:FAILURE"
-        ]
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120852#issuecomment-5229611150",
-            "submitted_at": "2026-08-09T03:41:17Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31291121700",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31291121700",
-        "cluster_id": "issue-openclaw-openclaw-120832",
-        "published_at": "2026-08-09T03:28:37.728Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120852",
-          "action": "merge_canonical",
-          "status": "blocked",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "test(doctor): give SecretRef scenario timeout headroom",
-          "idempotency_key": null,
-          "reason": "checks are not clean: checks-node-compact-large-7: FAILURE, checks-windows-node-test: IN_PROGRESS",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_merge_state:BEHIND",
-        "needs_checks:CI / checks-node-compact-large-7:FAILURE; CI / openclaw/ci-gate:FAILURE",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
-    },
     {
       "number": 120652,
       "title": "fix: suppress fast-auto status updates when progress is hidden",
@@ -163,73 +92,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 120586,
-      "title": "fix(control-ui): prioritize session provider quota window",
-      "url": "https://github.com/openclaw/openclaw/pull/120586",
-      "branch": "clawsweeper/issue-openclaw-openclaw-120557",
-      "head_sha": "ab862fb047d07894d17d4fb9e32f971f3f046396",
-      "cluster_id": "issue-openclaw-openclaw-120557",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-120557.md",
-      "updated_at": "2026-08-08T12:39:15Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 110,
-        "counts": {
-          "SKIPPED": 33,
-          "SUCCESS": 77
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 1,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120586#issuecomment-5226137332",
-            "submitted_at": "2026-08-08T12:38:32Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31255477396",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31255477396",
-        "cluster_id": "issue-openclaw-openclaw-120557",
-        "published_at": "2026-08-08T12:24:13.408Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120586",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix(control-ui): prioritize session provider quota window",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
-        }
-      },
-      "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     },
     {
       "number": 120569,
