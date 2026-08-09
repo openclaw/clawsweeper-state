@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:36:39.738Z",
+  "updated_at": "2026-08-09T06:36:45.864Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1195:5099637170:2026-08-09T01:45:01Z:clawsweeper_needs_human",
-      "comment_id": "5099637170",
-      "comment_version_key": "5099637170:2026-08-09T01:45:01Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1195#issuecomment-5099637170",
-      "comment_created_at": "2026-07-28T03:36:34Z",
-      "comment_updated_at": "2026-08-09T01:45:01Z",
-      "comment_body_sha256": "8b4bab13f6c17796d6292356c16714d57621948c38b134a5e9f931ad398bf8e9",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1195,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Require a durable claim before sweeper deletion (P1)** - Late finding on unchanged content: the proposal says the sweeper must not depend on a Crabbox claim, yet current main and VISION.md require an exact provi...; Review finding: [P1] Require a durable claim before sweeper deletion — docs/features/hosted-live-smoke.md:168-172 - [P3] Move repository chronology out of generic docs — docs/feat... (sha=5e78d383276c34bb50aefe942411ff7b5ffac73f)",
-      "expected_head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T01:45:43.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/944-live-tier",
-        "head_sha": "5e78d383276c34bb50aefe942411ff7b5ffac73f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2504:5122252200:2026-08-09T01:45:04Z:clawsweeper_needs_human",
       "comment_id": "5122252200",
@@ -31867,6 +31834,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1081:5230183119:2026-08-09T06:36:14Z:re_review",
+      "comment_id": "5230183119",
+      "comment_version_key": "5230183119:2026-08-09T06:36:14Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1081#issuecomment-5230183119",
+      "comment_created_at": "2026-08-09T06:36:14Z",
+      "comment_updated_at": "2026-08-09T06:36:14Z",
+      "comment_body_sha256": "38b47d2b70304853e14bbd72433c70e0e824f3b4671646a77e95730d1b4c8edf",
+      "source_delivery_id": "9edaa520-93bc-11f1-8e3c-82d37cb237bc",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1081,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T06:36:44.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/persistent-data-classifier-recut",
+        "head_sha": "e23ba84401cbfe7827badc9ae72e24f17916bb1d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
