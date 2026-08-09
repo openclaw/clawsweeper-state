@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:01:37.900Z",
+  "updated_at": "2026-08-09T21:01:57.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121112:5232836482:2026-08-09T17:39:44Z:re_review",
-      "comment_id": "5232836482",
-      "comment_version_key": "5232836482:2026-08-09T17:39:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121112#issuecomment-5232836482",
-      "comment_created_at": "2026-08-09T17:39:44Z",
-      "comment_updated_at": "2026-08-09T17:39:44Z",
-      "comment_body_sha256": "dcc72e60cebf1d44d08710923576b38bef0513186f0c3fec0ee6e12e37d13df8",
-      "source_delivery_id": "4f71d730-9419-11f1-9bf8-91bf8dbe724b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121112,
-      "author": "arhxam",
-      "author_id": 132888838,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — rebased onto verified-green upstream `ad1a2cd7e7`; current head is `36340572d7`. the exact-head focused suite passes 5/5, and i reran the production `memory index` + `memory search` proof: identical lexical scores, evergreen nested note `0.7157172857`, dated nested report `0.0054972910`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T17:40:23.115Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nested-memory-temporal-decay",
-        "head_sha": "36340572d7ff663850da04d0ce67aa666e78be36",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117795:5232836376:2026-08-09T17:39:42Z:re_review",
       "comment_id": "5232836376",
@@ -32674,6 +32626,39 @@
         "kind": "pull_request",
         "branch": "agent/atomic-temp-name-length",
         "head_sha": "dc67122e013cfd271bafa90487f4236565b8607d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:457:5010614271:2026-08-09T21:01:14Z:clawsweeper_needs_human",
+      "comment_id": "5010614271",
+      "comment_version_key": "5010614271:2026-08-09T21:01:14Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/457#issuecomment-5010614271",
+      "comment_created_at": "2026-07-18T08:38:44Z",
+      "comment_updated_at": "2026-08-09T21:01:14Z",
+      "comment_body_sha256": "42a851ced54bd232ec8a5279832c059bd29110c6fc4800c7c36d52ca7bdef279",
+      "repo": "openclaw/acpx",
+      "issue_number": 457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This PR already contains the complete focused cleanup; no repair lane is needed. (sha=692742309c3961c17eba3622578ff2a70aee157d)",
+      "expected_head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:01:57.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/drop-dead-codex-acp-command-detector",
+        "head_sha": "692742309c3961c17eba3622578ff2a70aee157d",
         "cluster_id": null,
         "job_path": null
       }
