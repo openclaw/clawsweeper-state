@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T10:48:16.324Z",
+  "updated_at": "2026-08-09T10:48:30.778Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119342:5229796543:2026-08-09T04:40:01Z:re_review",
-      "comment_id": "5229796543",
-      "comment_version_key": "5229796543:2026-08-09T04:40:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5229796543",
-      "comment_created_at": "2026-08-09T04:40:01Z",
-      "comment_updated_at": "2026-08-09T04:40:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "630424f0-93ac-11f1-82a6-6b4c2650ec7b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119342,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T04:40:28.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-host",
-        "head_sha": "021c28d0171819e5f309e7e32270f22550604c59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92499:4693366672:2026-08-09T04:38:32Z:clawsweeper_auto_repair",
       "comment_id": "4693366672",
@@ -32807,6 +32759,39 @@
         "kind": "pull_request",
         "branch": "jesse/system-agent-qr-web",
         "head_sha": "26e19d0dd23211c4fbfad0b937ab6ae9250fcee4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119342:5184665833:2026-08-09T10:47:41Z:clawsweeper_needs_human",
+      "comment_id": "5184665833",
+      "comment_version_key": "5184665833:2026-08-09T10:47:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5184665833",
+      "comment_created_at": "2026-08-04T21:10:21Z",
+      "comment_updated_at": "2026-08-09T10:47:41Z",
+      "comment_body_sha256": "21a5ba934dc2a06fad72012ee7e58deed283f963022d49fa9600843a63b80065",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional public plugin-SDK QR callback depends on explicit maintainer acceptance of the underlying contract in https://github.com/openclaw/openclaw/pull/119341. (sha=e880a29d0a7e420fdf40e4ec6a0ccb1019ddf144)",
+      "expected_head_sha": "e880a29d0a7e420fdf40e4ec6a0ccb1019ddf144",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T10:48:30.778Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-host",
+        "head_sha": "e880a29d0a7e420fdf40e4ec6a0ccb1019ddf144",
         "cluster_id": null,
         "job_path": null
       }
