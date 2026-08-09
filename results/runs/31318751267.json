@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121021",
+  "mode": "plan",
+  "run_id": "31318751267",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31318751267",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121021.md",
+  "published_at": "2026-08-09T14:41:03.040Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121021",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121021",
+  "canonical_pr": null,
+  "summary": "Merge review is blocked because the supplied checkout is unfixed main, not the repair branch, and does not contain requested base 00194139.",
+  "actions": [
+    {
+      "target": "#121021",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121021",
+      "candidate_fix": null,
+      "reason": "Keep the source issue open while the actual repair branch is restored for review."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121021",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121021",
+      "candidate_fix": null,
+      "reason": "Restore or provide the repair-head checkout and a reachable requested base, then repeat the read-only exact-base review; do not merge this checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a checkout containing the repair commit and reachable base 00194139bad357f31e71a81586a25cf67649f7d6."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

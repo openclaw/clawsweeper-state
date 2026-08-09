@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121021"
-mode: "autonomous"
-run_id: "31316727563"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31316727563"
+mode: "plan"
+run_id: "31318751267"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31318751267"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-09T14:24:53.361Z"
+published_at: "2026-08-09T14:41:03.040Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121021"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121021"
 canonical_pr: null
@@ -18,16 +18,16 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-121021
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31316727563](https://github.com/openclaw/clawsweeper/actions/runs/31316727563)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31318751267](https://github.com/openclaw/clawsweeper/actions/runs/31318751267)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/121021
 
 ## Summary
 
-#121021 remains a current, non-security producer-side bug on main 6a586cd0. Native in-process child dispatch defaults to CLI task tracking before the native registry writes the canonical subagent row. This checkout is clean read-only main with no repair branch or local patch, so implementation is blocked on a writable executor; a narrow credited fix artifact is ready.
+Merge review is blocked because the supplied checkout is unfixed main, not the repair branch, and does not contain requested base 00194139.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/121021
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/121021
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121021 | fix_needed | blocked | canonical | Implementation requires a writable executor checkout. Preserve dispatch-then-register ordering; do not reuse plugin_subagent because its admission path registers competing Gateway-owned state. |
-| cluster:issue-openclaw-openclaw-121021 | build_fix_artifact | planned |  | Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-121021 after applying this artifact in a writable checkout. |
+| #121021 | keep_canonical | planned | canonical | Keep the source issue open while the actual repair branch is restored for review. |
+| cluster:issue-openclaw-openclaw-121021 | fix_needed | blocked | canonical | Restore or provide the repair-head checkout and a reachable requested base, then repeat the read-only exact-base review; do not merge this checkout. |
 
 ## Needs Human
 
-- none
+- Provide a checkout containing the repair commit and reachable base 00194139bad357f31e71a81586a25cf67649f7d6.
