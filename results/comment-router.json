@@ -1,66 +1,6 @@
 {
-  "updated_at": "2026-08-09T08:32:49.762Z",
+  "updated_at": "2026-08-09T08:33:07.521Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120360:5223021029:2026-08-07T22:58:21Z:re_review",
-      "comment_id": "5223021029",
-      "comment_version_key": "5223021029:2026-08-07T22:58:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120360#issuecomment-5223021029",
-      "comment_created_at": "2026-08-07T22:58:21Z",
-      "comment_updated_at": "2026-08-07T22:58:21Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120360,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:40:27.208Z",
-      "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120360:5224165363:2026-08-09T02:39:48Z:clawsweeper_needs_human",
-      "comment_id": "5224165363",
-      "comment_version_key": "5224165363:2026-08-09T02:39:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120360#issuecomment-5224165363",
-      "comment_created_at": "2026-08-08T02:53:10Z",
-      "comment_updated_at": "2026-08-09T02:39:48Z",
-      "comment_body_sha256": "c444807d38f70011ec2962ad5027176f767aecc794279b8631fd6b7f617287a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120360,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is stacked on an open non-main base; current main overlaps exec-runtime and Code Mode paths, so a rebase or three-way integration check is needed before merge. (sha=be371072739368b3f9876c3fe3fe99897ee6fba3)",
-      "expected_head_sha": "be371072739368b3f9876c3fe3fe99897ee6fba3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:40:27.208Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-exec-target-projection-stack-20260807",
-        "head_sha": "be371072739368b3f9876c3fe3fe99897ee6fba3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120814:5229420578:2026-08-09T02:39:58Z:clawsweeper_auto_repair",
       "comment_id": "5229420578",
@@ -32899,6 +32839,106 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1252:5203451081:2026-08-06T10:30:00Z:automerge",
+      "comment_id": "5203451081",
+      "comment_version_key": "5203451081:2026-08-06T10:30:00Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203451081",
+      "comment_created_at": "2026-08-06T10:30:00Z",
+      "comment_updated_at": "2026-08-06T10:30:00Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T08:32:56.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1252:5203255124:2026-08-09T08:27:07Z:clawsweeper_auto_merge",
+      "comment_id": "5203255124",
+      "comment_version_key": "5203255124:2026-08-09T08:27:07Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203255124",
+      "comment_created_at": "2026-08-06T10:11:48Z",
+      "comment_updated_at": "2026-08-09T08:27:07Z",
+      "comment_body_sha256": "4ab2ff00a0c42cff9a93bfc885df7622ce9662ea6130ecf9c5c4847de24acc7a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=cc425267c603456a666e82740a979ec861ff5ba9)",
+      "expected_head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T08:33:07.521Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-spot-fatal-fallback",
+        "head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
+        "cluster_id": "automerge-openclaw-crabbox-1252",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
