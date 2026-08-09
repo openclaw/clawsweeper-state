@@ -2,7 +2,7 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T14:41:12.752Z",
+  "generated_at": "2026-08-09T15:03:17.982Z",
   "count": 5,
   "summary": {
     "open_prs": 5,
@@ -101,7 +101,7 @@
       "head_sha": "730963df60a65fc60858847428cee953e78e0c32",
       "cluster_id": "issue-openclaw-openclaw-97601",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-97601.md",
-      "updated_at": "2026-08-08T22:48:14Z",
+      "updated_at": "2026-08-09T14:57:48Z",
       "mergeable": "CONFLICTING",
       "merge_state_status": "DIRTY",
       "review_decision": "",
@@ -122,36 +122,36 @@
         "examples": []
       },
       "review_bots": {
-        "count": 1,
+        "count": 2,
         "latest": [
           {
             "source": "comment",
             "author": "clawsweeper",
             "url": "https://github.com/openclaw/openclaw/pull/120652#issuecomment-5227576773",
             "submitted_at": "2026-08-08T18:46:28Z"
+          },
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/120652#issuecomment-5232093336",
+            "submitted_at": "2026-08-09T14:44:40Z"
           }
         ]
       },
       "latest_record": {
-        "run_id": "31267879445",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31267879445",
-        "cluster_id": "issue-openclaw-openclaw-97601",
-        "published_at": "2026-08-08T17:52:52.502Z",
-        "workflow_conclusion": "success",
+        "run_id": "31319249000",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31319249000",
+        "cluster_id": "automerge-openclaw-openclaw-120652",
+        "published_at": "2026-08-09T15:02:36.041Z",
+        "workflow_conclusion": "failure",
         "apply_action": {
           "target": "#120652",
-          "action": "merge_canonical",
-          "status": "ready",
-          "classification": "fix_pr",
-          "canonical": null,
-          "candidate_fix": null,
-          "title": "fix: suppress fast-auto status updates when progress is hidden",
-          "idempotency_key": null,
-          "reason": "issue implementation PR checks are green; merge intentionally blocked for this lane",
-          "merged_at": null,
-          "merge_commit_sha": null,
-          "live_state": null,
-          "live_updated_at": null
+          "action": "build_fix_artifact",
+          "status": "planned",
+          "classification": "canonical",
+          "canonical": "#120652",
+          "candidate_fix": "#120652",
+          "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
         }
       },
       "blockers": [
