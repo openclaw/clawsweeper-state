@@ -67,22 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram inbound context path for animated TGS and video WebM stickers. Preserve the existing no-download/no-conversion policy, carry a typed unsupported-sticker outcome from media resolution into context construction, and render concise agent-visible unavailable-media text in direct and group history. Reuse the canonical unavailable-media formatting pattern; do not add config, stage files, expose raw local paths, or change static WEBP handling. Add focused regressions for TGS/WebM no-fetch plus direct and group agent-visible context. Do not edit CHANGELOG.md; include user-visible release-note context in the PR body.
+Repair the source-proven Telegram inbound context bug for animated TGS and video WebM stickers. Preserve the intentional no-download/no-conversion path, but at Telegram context production record an explicit agent-visible unavailable-media notice for the type-only skipped sticker using formatInboundMediaUnavailableText. Add focused direct and cached/group-history regression coverage; do not add config, staging, conversion, or broad media-policy changes. Do not edit CHANGELOG.md; capture user-visible release-note context in the PR body.
 
 Likely files:
 
-- extensions/telegram/src/bot/delivery.resolve-media.ts
-- extensions/telegram/src/bot-handlers.inbound.runtime.ts
-- extensions/telegram/src/bot-message-context.types.ts
 - extensions/telegram/src/bot-message-context.body.ts
 - extensions/telegram/src/bot-message-context.media-carriers.test.ts
 - extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts
+- src/channels/inbound-event/media.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts extensions/telegram/src/bot-message-context.media-carriers.test.ts
-- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-context.sticker-media.test.ts
-- git diff --check
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-context.media-carriers.test.ts extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts
+- Run real Telegram proof showing an animated or video sticker yields an explicit unavailable-media context result without getFile/download; redact private data.
 
 ## Operator Prompt
 
