@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T20:23:16.825Z",
+  "updated_at": "2026-08-09T20:24:34.921Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2797:5232389590:2026-08-09T15:50:59Z:re_review",
-      "comment_id": "5232389590",
-      "comment_version_key": "5232389590:2026-08-09T15:50:59Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2797#issuecomment-5232389590",
-      "comment_created_at": "2026-08-09T15:50:59Z",
-      "comment_updated_at": "2026-08-09T15:50:59Z",
-      "comment_body_sha256": "1cdfb579a29f5fc6ac25d9e85afce426e82707ed5409f2b9ee4605f16ccee9d0",
-      "source_delivery_id": "1e2549a0-940a-11f1-967a-ecd8847fb28f",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2797,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the pr body now includes a `## real behavior proof` section with the real focused-test terminal output at head `d82ccbd5`, and all checks are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T15:51:32.446Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-token-activity-dashboard",
-        "head_sha": "d82ccbd5f3828e6cf44280ab26a781e11348a44d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121074:5232388280:2026-08-09T15:50:40Z:clawsweeper_needs_human",
       "comment_id": "5232388280",
@@ -33231,6 +33183,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:12:5164752963:2026-08-09T20:23:53Z:clawsweeper_auto_repair",
+      "comment_id": "5164752963",
+      "comment_version_key": "5164752963:2026-08-09T20:23:53Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/12#issuecomment-5164752963",
+      "comment_created_at": "2026-08-03T09:41:00Z",
+      "comment_updated_at": "2026-08-09T20:23:53Z",
+      "comment_body_sha256": "53b2e4732d107266dda393b278b8cd9bffc9f253d867ed787a96ef8623dfbf23",
+      "repo": "openclaw/babelfish",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5bd5af6f8503e6a4de23105fef3886f0217929d0)",
+      "expected_head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-09T20:24:34.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-minor-and-patch-0f47153fa6",
+        "head_sha": "5bd5af6f8503e6a4de23105fef3886f0217929d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
