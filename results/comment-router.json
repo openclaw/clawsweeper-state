@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T02:44:34.287Z",
+  "updated_at": "2026-08-09T02:44:50.316Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5228556692:2026-08-08T22:45:20Z:re_review",
-      "comment_id": "5228556692",
-      "comment_version_key": "5228556692:2026-08-08T22:45:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5228556692",
-      "comment_created_at": "2026-08-08T22:45:20Z",
-      "comment_updated_at": "2026-08-08T22:45:20Z",
-      "comment_body_sha256": "dd17837c9ecf9f283cbfa02b959c65216df42246010bdb47897d090195e7372d",
-      "source_delivery_id": "d635a890-937a-11f1-8f9c-b9384af8d48c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-08T22:45:50.110Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "23d5e461699bcde3ee28e4c9647ba03811fed290",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-08T22:45:15Z:clawsweeper_needs_human",
       "comment_id": "5209988007",
@@ -31121,6 +31073,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T02:44:34.287Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1042:5205191188:2026-08-09T02:39:58Z:clawsweeper_needs_human",
+      "comment_id": "5205191188",
+      "comment_version_key": "5205191188:2026-08-09T02:39:58Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1042#issuecomment-5205191188",
+      "comment_created_at": "2026-08-06T13:23:20Z",
+      "comment_updated_at": "2026-08-09T02:39:58Z",
+      "comment_body_sha256": "07c72854a9e3e980389ab6805712c300261418123fbd523808d5be99786e2fc4",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1042,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently reports the draft branch as dirty, with a conflict involving release-owned CHANGELOG.md; it cannot land until a release owner refreshes the branch without restoring n... (sha=1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d)",
+      "expected_head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T02:44:50.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawsweeper-close-guard-pairs",
+        "head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
