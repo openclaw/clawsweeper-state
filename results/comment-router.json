@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T09:35:00.146Z",
+  "updated_at": "2026-08-09T09:35:08.338Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120803:5229257879:2026-08-09T01:54:04Z:clawsweeper_needs_human",
-      "comment_id": "5229257879",
-      "comment_version_key": "5229257879:2026-08-09T01:54:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120803#issuecomment-5229257879",
-      "comment_created_at": "2026-08-09T01:54:04Z",
-      "comment_updated_at": "2026-08-09T01:54:04Z",
-      "comment_body_sha256": "d62951dd3b3fe26dd57611f2a1631a897ff8194277a279cb48fc69424fc01d9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120803,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately converts an otherwise successful cloud-worker turn into a visible retry-local failure when authoritative replay cannot be retained; that availability tradeoff is saf... (sha=9363b1d3bed068f4494f57bcb413256970caa60e)",
-      "expected_head_sha": "9363b1d3bed068f4494f57bcb413256970caa60e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T02:48:21.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/busy-lehmann-5f9628",
-        "head_sha": "9363b1d3bed068f4494f57bcb413256970caa60e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120575:5229265441:2026-08-09T01:56:37Z:re_review",
       "comment_id": "5229265441",
@@ -32739,6 +32706,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120626:5230826209:2026-08-09T09:33:39Z:re_review",
+      "comment_id": "5230826209",
+      "comment_version_key": "5230826209:2026-08-09T09:33:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120626#issuecomment-5230826209",
+      "comment_created_at": "2026-08-09T09:33:39Z",
+      "comment_updated_at": "2026-08-09T09:33:39Z",
+      "comment_body_sha256": "3b002f7759704acf05954ea01ed2ba478c9a5d1f6c558ef1034ee195eff2ad99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120626,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T09:35:06.258Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-plugin-prerelease-baselines-20260808",
+        "head_sha": "90c039e02fb2916a7ea775c528d30862d93920aa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
