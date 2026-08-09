@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-89252"
 mode: "autonomous"
-run_id: "31293529289"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31293529289"
-head_sha: "095f5c5a9492b90777e7c96eb1ff319b861863cf"
+run_id: "31294657506"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31294657506"
+head_sha: "1ab4350383c2f74aee619b92b66e5b2bef29d1e9"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T04:07:21.565Z"
-canonical: "https://github.com/openclaw/openclaw/pull/119717"
+result_status: "blocked"
+published_at: "2026-08-09T04:39:31.965Z"
+canonical: "https://github.com/openclaw/openclaw/issues/89252"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/89252"
-canonical_pr: "https://github.com/openclaw/openclaw/pull/119717"
-actions_total: 2
+canonical_pr: null
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31293529289](https://github.com/openclaw/clawsweeper/actions/runs/31293529289)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31294657506](https://github.com/openclaw/clawsweeper/actions/runs/31294657506)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/pull/119717
+Canonical: https://github.com/openclaw/openclaw/issues/89252
 
 ## Summary
 
-No new repair is needed: #119717 is merged and current main already marks configured Telegram commands as priority under count, text-budget, and retry pressure. #89252 remains open because this lane cannot close issues.
+No fix artifact: the available origin/main checkout already implements the requested capped-menu prioritization, but it materially differs from the preflight main SHA, which is unavailable in this shallow checkout. Refresh preflight against current GitHub state before any PR action.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ No new repair is needed: #119717 is merged and current main already marks config
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #89252 | keep_canonical | planned | fixed_by_candidate | The canonical issue is covered by merged #119717; closing is explicitly blocked for this lane. |
-| #119717 | keep_closed | skipped | fixed_by_candidate | Already merged; no mutation is valid. |
+| #89252 | keep_canonical | blocked | canonical | Current source already satisfies the issue, but the hydrated preflight state is stale relative to the available main checkout. Do not open a duplicate fix PR until refreshed live state identifies the landed fix or re-establishes the defect. |
 
 ## Needs Human
 
