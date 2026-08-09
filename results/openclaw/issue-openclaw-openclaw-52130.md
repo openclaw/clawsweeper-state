@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-52130"
 mode: "autonomous"
-run_id: "31305911647"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31305911647"
+run_id: "31307459262"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31307459262"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-09T09:51:35.289Z"
+published_at: "2026-08-09T10:13:06.630Z"
 canonical: "https://github.com/openclaw/openclaw/issues/52130"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/52130"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31305911647](https://github.com/openclaw/clawsweeper/actions/runs/31305911647)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31307459262](https://github.com/openclaw/clawsweeper/actions/runs/31307459262)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/52130
 
 ## Summary
 
-#52130 remains a narrow, non-security documentation/config-contract repair. Preflight at main d0e812e confirms the live issue is open and that Telegram retry guidance conflicts with the strict schema and Doctor-owned retired-key migration; #92229 already covers only the SecretRef portion. Plan one credited fix PR without runtime, schema, compatibility, or changelog changes.
+#52130 remains an open, non-security canonical bug report. Current main retains strict Telegram configuration and Doctor retirement of retry keys, while the hydrated ClawSweeper review identifies stale retry guidance as the remaining defect. Plan a narrow credited documentation/config-metadata repair; do not close or merge anything.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/52130
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #52116 | keep_closed | skipped | related | Already closed historical context; no close action is valid. |
-| #92229 | keep_closed | skipped | related | Already merged historical context; no mutation is valid. |
-| #52130 | fix_needed | planned | canonical | Remove stale configuration guidance and prove the existing migration removes boolean jitter values; do not add runtime coercion or a retry setting. |
-| cluster:issue-openclaw-openclaw-52130 | build_fix_artifact | planned |  | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-52130. |
+| #52130 | fix_needed | planned | canonical | A narrow fix path is clear and allowed; no viable open contributor PR exists. |
+| cluster:issue-openclaw-openclaw-52130 | build_fix_artifact | planned | canonical | Create a narrow new PR plan that corrects guidance without changing runtime retry behavior or compatibility semantics. |
 
 ## Needs Human
 
