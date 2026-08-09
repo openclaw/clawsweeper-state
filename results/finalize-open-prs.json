@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-09T11:17:35.789Z",
-  "count": 4,
+  "generated_at": "2026-08-09T11:53:32.532Z",
+  "count": 5,
   "summary": {
-    "open_prs": 4,
+    "open_prs": 5,
     "ready_candidates": 0,
     "security_hold": 0,
     "needs_rebase": 1,
-    "mergeability_unknown": 0,
-    "needs_checks": 1,
+    "mergeability_unknown": 1,
+    "needs_checks": 2,
     "needs_review": 0,
-    "needs_merge_preflight": 4,
+    "needs_merge_preflight": 5,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -26,6 +26,64 @@
     "candidates": []
   },
   "prs": [
+    {
+      "number": 121050,
+      "title": "fix(control-ui): retain webchat context for config restarts",
+      "url": "https://github.com/openclaw/openclaw/pull/121050",
+      "branch": "clawsweeper/issue-openclaw-openclaw-55372",
+      "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
+      "cluster_id": "issue-openclaw-openclaw-55372",
+      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-55372.md",
+      "updated_at": "2026-08-09T11:47:35Z",
+      "mergeable": "MERGEABLE",
+      "merge_state_status": "BEHIND",
+      "review_decision": "",
+      "security_hold": false,
+      "checks": {
+        "total": 133,
+        "counts": {
+          "SKIPPED": 45,
+          "SUCCESS": 85,
+          "IN_PROGRESS": 2,
+          "NEUTRAL": 1
+        },
+        "blockers": [
+          "CI / checks-node-compact-large-8:IN_PROGRESS",
+          "CI / checks-node-compact-small-7:IN_PROGRESS"
+        ]
+      },
+      "review_threads": {
+        "status": "clean",
+        "reason": null,
+        "unresolved_count": 0,
+        "examples": []
+      },
+      "review_bots": {
+        "count": 1,
+        "latest": [
+          {
+            "source": "comment",
+            "author": "clawsweeper",
+            "url": "https://github.com/openclaw/openclaw/pull/121050#issuecomment-5231352861",
+            "submitted_at": "2026-08-09T11:47:27Z"
+          }
+        ]
+      },
+      "latest_record": {
+        "run_id": "31309791488",
+        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31309791488",
+        "cluster_id": "issue-openclaw-openclaw-55372",
+        "published_at": "2026-08-09T11:17:27.045Z",
+        "workflow_conclusion": "failure",
+        "apply_action": null
+      },
+      "blockers": [
+        "needs_merge_state:BEHIND",
+        "needs_checks:CI / checks-node-compact-large-8:IN_PROGRESS; CI / checks-node-compact-small-7:IN_PROGRESS",
+        "needs_merge_preflight"
+      ],
+      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+    },
     {
       "number": 120652,
       "title": "fix: suppress fast-auto status updates when progress is hidden",
@@ -249,8 +307,8 @@
       "cluster_id": "issue-openclaw-openclaw-87336",
       "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md",
       "updated_at": "2026-08-08T23:35:35Z",
-      "mergeable": "MERGEABLE",
-      "merge_state_status": "BEHIND",
+      "mergeable": "UNKNOWN",
+      "merge_state_status": "UNKNOWN",
       "review_decision": "",
       "security_hold": false,
       "checks": {
@@ -300,11 +358,12 @@
         }
       },
       "blockers": [
-        "needs_merge_state:BEHIND",
+        "mergeability_unknown",
+        "merge_state_unknown",
         "needs_checks:CI / checks-node-compact-small-6:FAILURE; CI / openclaw/ci-gate:FAILURE",
         "needs_merge_preflight"
       ],
-      "recommended_next_action": "repair failing checks or document unrelated main flake with touched-surface proof"
+      "recommended_next_action": "refresh exact PR mergeability before deciding; do not merge while GitHub reports unknown"
     }
   ]
 }
