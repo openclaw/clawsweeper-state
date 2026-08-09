@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T08:28:28.720Z",
+  "updated_at": "2026-08-09T08:28:30.106Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119249:5229170997:2026-08-09T01:25:41Z:re_review",
-      "comment_id": "5229170997",
-      "comment_version_key": "5229170997:2026-08-09T01:25:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119249#issuecomment-5229170997",
-      "comment_created_at": "2026-08-09T01:25:41Z",
-      "comment_updated_at": "2026-08-09T01:25:41Z",
-      "comment_body_sha256": "5f637f12020b7c4bc7b88a93fdef382ddd51bd28f71665cad55ad349c6b908df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119249,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head e7ce5769aa5: restored the owner component in the clawhub verdict key (registry/owner/slug/version) matching current main, and added an owner-qualified canonical-identity regression. all 61 skills ui tests pass; tsgo typecheck clean",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T02:39:47.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-verdict-canonical-slug-108647",
-        "head_sha": "e7ce5769aa59ef8c167ed4bed939d9974d04a078",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119249:5180193315:2026-08-09T02:37:47Z:clawsweeper_needs_human",
       "comment_id": "5180193315",
@@ -32904,6 +32857,39 @@
         "kind": "pull_request",
         "branch": "fix/clawsweeper-review-state-120232",
         "head_sha": "85abed7ee41f940699832c2b1374493d5d0e677d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1196:5099758281:2026-08-09T08:27:43Z:clawsweeper_auto_repair",
+      "comment_id": "5099758281",
+      "comment_version_key": "5099758281:2026-08-09T08:27:43Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1196#issuecomment-5099758281",
+      "comment_created_at": "2026-07-28T03:57:12Z",
+      "comment_updated_at": "2026-08-09T08:27:43Z",
+      "comment_body_sha256": "dc2b948610b07af6b972077d1c128f5782f4f919246e729b722691a742bbc43e",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1196,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908)",
+      "expected_head_sha": "4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T08:28:30.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/280-perf-design",
+        "head_sha": "4905737a0c5e62b7ea5c1b4fcc1a9c41d9f8c908",
         "cluster_id": null,
         "job_path": null
       }
