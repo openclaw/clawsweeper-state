@@ -1,0 +1,75 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-121059"
+mode: "autonomous"
+run_id: "31313946287"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31313946287"
+head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T13:21:14.508Z"
+canonical: "https://github.com/openclaw/openclaw/issues/121059"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/121059"
+canonical_pr: null
+actions_total: 2
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-121059
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31313946287](https://github.com/openclaw/clawsweeper/actions/runs/31313946287)
+
+Workflow conclusion: failure
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/121059
+
+## Summary
+
+#121059 is a current, source-proven generator bug. Current main deletes libc selectors after npm generates the lock, while pnpm-lock.yaml records glibc/musl selectors. A narrow credited fix PR is appropriate, but this worker checkout is read-only and lacks ready dependencies, so implementation and local validation are blocked; an executable repair artifact is provided.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 2 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=scripts, testRoot, tooling [check:changed] scripts/generate-npm-package-lock.d.mts: tooling surface [check:changed] scripts/generate-npm-package-lock.mjs: tooling surface [check:changed] test/scripts/generate-npm-package-lock.test.ts: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node scripts/check-changelog-attributions.mjs [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node scripts/check-extension-wildcard-reexports.mjs [check:changed] plugin-sdk wildcard re-exports $ node scripts/check-plugin-sdk-wildcard-reexports.mjs [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node scripts/check-dependency-pins.mjs [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- scripts/generate-npm-package-lock.d.mts scripts/generate-npm-package-lock.mjs test/scripts/generate-npm-package-lock.test.ts [check:changed] npm package-lock guard (95 packages) Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_55_341Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fclaude-agent-acp failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_55_249Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@aws-sdk%2fclient-bedrock failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_55_259Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_55_354Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fvertex-sdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_56_049Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/nostr-tools failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_56_781Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/ws failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_57_997Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@openai%2fcodex failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_58_716Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@github%2fcopilot-sdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_12_59_405Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /o ... error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_17_961Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_18_016Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund --legacy-peer-deps npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_18_612Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@anthropic-ai%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_18_715Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/ipaddr.js failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_18_740Z-debug-0.log Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/typebox failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-0t7OZT/home/.npm/_logs/2026-08-09T13_13_19_035Z-debug-0.log [check:changed] summary 328ms ok conflict markers 247ms ok changelog attributions 292ms ok doctor deprecation registry 260ms ok guarded extension wildcard re-exports 231ms ok plugin-sdk wildcard re-exports 264ms ok duplicate scan target coverage 266ms ok dependency pin guard 304ms ok format changed files 24.49s failed:1 npm package-lock guard (95 packages) [check:changed] FAILED (exit 1) [doctor-deprecation-registry] OK as of 2026-08-09 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 621 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 18ms on 3 files using 4 threads. Validating 95 npm package locks with 4 jobs. extensions/arcee: npm package lock validated. extensions/baseten: npm package lock validated. extensions/brave: npm package lock validated. extensions/byteplus: npm package lock validated. extensions/cerebras: npm package lock validated. extensions/chutes: npm package lock validated. extensions/cloudflare-ai-gateway: npm package lock validated. extensions/cohere: npm package lock validated. extensions/comfy: npm package lock validated. extensions/deepinfra: npm package lock validated. extensions/deepseek: npm package lock validated. extensions/diagnostics-prometheus: npm package lock validated. extensions/diffs-language-pack: npm package lock validated. extensions/duckduckgo: npm package lock validated. extensions/exa: npm package lock validated. extensions/featherless: npm package lock validated. extensions/fireworks: npm package lock validated. extensions/fish-audio-speech: npm package lock validated. extensions/gmi: npm package lock validated. extensions/gradium: npm package lock validated. extensions/groq: npm package lock validated. extensions/inworld: npm package lock validated. extensions/kilocode: npm package lock validated. extensions/kimi-coding: npm package lock validated. extensions/llama-cpp: npm package lock validated. extensions/longcat: npm package lock validated. extensions/meta: npm package lock validated. extensions/mistral: npm package lock validated. extensions/moonshot: npm package lock validated. extensions/novita: npm package lock validated. extensions/opencode: npm package lock validated. extensions/opencode-go: npm package lock validated. extensions/parallel: npm package lock validated. extensions/perplexity: npm package lock validated. extensions/pixverse: npm package lock validated. extensions/qianfan: npm package lock validated. extensions/qwen: npm package lock validated. extensions/searxng: npm package lock validated. extensions/stepfun: npm package lock validated. extensions/synthetic: npm package lock validated. extensions/tencent: npm package lock validated. extensions/venice: npm package lock validated. extensions/vercel-ai-gateway: npm package lock validated. extensions/volcengine: npm package lock validated. extensions/voyage: npm package lock validated. extensions/vydra: npm package lock validated. extensions/xiaomi: npm package lock validated. extensions/zai: npm package lock validated. [ELIFECYCLE] Command failed with exit code 1. |
+| issue_implementation_status_comment | updated | #121059 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #121059 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependency install; no product, security, or package-policy decision remains. |
+| cluster:issue-openclaw-openclaw-121059 | build_fix_artifact | planned | canonical | Create one narrow PR from clawsweeper/issue-openclaw-openclaw-121059 after restoring a writable checkout and dependencies. |
+
+## Needs Human
+
+- none
