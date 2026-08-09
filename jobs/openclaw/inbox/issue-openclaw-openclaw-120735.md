@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the Telegram inbound animated TGS/video WebM sticker path so the intentional no-download result is recorded at the Telegram media producer and becomes concise agent-visible unavailable-media context. Preserve the static WebP staging path and do not add conversion, download, config, or a downstream raw-file-reference heuristic. Add focused regressions covering TGS and WebM no-download behavior plus the agent-visible unavailable outcome. Record user-visible release-note context in the PR body or commit message; do not edit CHANGELOG.md. Stop and escalate if the repair requires a new Telegram or plugin API contract.
+Repair the Telegram inbound animated-TGS/video-WebM sticker outcome for https://github.com/openclaw/openclaw/issues/120735. Preserve the existing no-download/no-getFile/no-fetch policy, but retain a typed unsupported reason through the Telegram media/context path, render a concise agent-visible unavailable-media notice, and prevent raw telegram:file references from appearing for that marked outcome. Cover direct and group/prompt-context projections plus both animated and video stickers. Do not add conversion, configuration, a core policy change, or CHANGELOG.md edits; include user-visible release-note context in the PR body.
 
 Likely files:
 
 - extensions/telegram/src/bot/delivery.resolve-media.ts
 - extensions/telegram/src/bot-handlers.inbound.runtime.ts
-- extensions/telegram/src/bot-message-context.session.ts
-- extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts
+- extensions/telegram/src/bot-message-context.body.ts
 - extensions/telegram/src/bot-message-context.media-carriers.test.ts
+- extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/telegram/src/bot.media.stickers-and-fragments.e2e.test.ts extensions/telegram/src/bot-message-context.media-carriers.test.ts
-- Run a real Telegram animated/video sticker probe or approved Telegram QA harness and capture a redacted agent-context result showing the unavailable-media notice and no staged file.
+- node scripts/run-vitest.mjs extensions/telegram/src/bot-message-context.prompt-context.test.ts
+- Run a redacted live Telegram check with one animated TGS and one video WebM sticker, confirming the agent receives the explicit unavailable-media notice and neither file is downloaded.
 
 ## Operator Prompt
 
