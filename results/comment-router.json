@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:08:25.807Z",
+  "updated_at": "2026-08-09T23:09:01.260Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118505:5233474035:2026-08-09T19:34:41Z:re_review",
-      "comment_id": "5233474035",
-      "comment_version_key": "5233474035:2026-08-09T19:34:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118505#issuecomment-5233474035",
-      "comment_created_at": "2026-08-09T19:34:41Z",
-      "comment_updated_at": "2026-08-09T19:34:41Z",
-      "comment_body_sha256": "2d0b7902bf0b771f85445fcd3c2e15e54bf2e16624fc2d5a80c7dd4931a66a69",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118505,
-      "author": "zhilong1115",
-      "author_id": 123119628,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T19:40:50.297Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/macos-realtime-talk-settings",
-        "head_sha": "536bb140296f645a238283f5d9acfe54e8992106",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5233496247:2026-08-09T19:40:17Z:re_review",
       "comment_id": "5233496247",
@@ -32029,6 +31982,39 @@
         "kind": "pull_request",
         "branch": "dependabot/submodules/plugins/honcho-c02ff7c",
         "head_sha": "af84fee880b6f07cabf2a47d1b8a963f52403e77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:339:5234270056:2026-08-09T23:08:21Z:clawsweeper_auto_repair",
+      "comment_id": "5234270056",
+      "comment_version_key": "5234270056:2026-08-09T23:08:21Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/339#issuecomment-5234270056",
+      "comment_created_at": "2026-08-09T22:54:33Z",
+      "comment_updated_at": "2026-08-09T23:08:21Z",
+      "comment_body_sha256": "e95d36fc2b8627c9b6bb4969a9e75df543c18a848a3a02cbe04c30400d8157d8",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=7876c9c2c3f68c14c12303bc8542d8521faeabdc)",
+      "expected_head_sha": "7876c9c2c3f68c14c12303bc8542d8521faeabdc",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-09T23:09:01.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/v4-p2-restructures",
+        "head_sha": "7876c9c2c3f68c14c12303bc8542d8521faeabdc",
         "cluster_id": null,
         "job_path": null
       }
