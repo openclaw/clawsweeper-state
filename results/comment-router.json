@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T13:48:46.921Z",
+  "updated_at": "2026-08-09T13:49:02.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5230013610:2026-08-09T05:46:50Z:re_review",
-      "comment_id": "5230013610",
-      "comment_version_key": "5230013610:2026-08-09T05:46:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5230013610",
-      "comment_created_at": "2026-08-09T05:46:50Z",
-      "comment_updated_at": "2026-08-09T05:46:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T08:46:12.606Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5230535654:2026-08-09T08:15:31Z:re_review",
       "comment_id": "5230535654",
@@ -32876,6 +32849,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T13:48:46.921Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113899:5080971646:2026-08-09T13:48:13Z:clawsweeper_auto_repair",
+      "comment_id": "5080971646",
+      "comment_version_key": "5080971646:2026-08-09T13:48:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113899#issuecomment-5080971646",
+      "comment_created_at": "2026-07-25T23:10:12Z",
+      "comment_updated_at": "2026-08-09T13:48:13Z",
+      "comment_body_sha256": "0e049a06038b9a1286d28daad2ceaf7af2e2664aaf531db7dcee8252f58e206d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fd275c9122a7b17305d721cb5fa85e80dc94d51e)",
+      "expected_head_sha": "fd275c9122a7b17305d721cb5fa85e80dc94d51e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T13:49:02.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-autoqa-qa-channel-dispatch-ack-cursor-81d9",
+        "head_sha": "fd275c9122a7b17305d721cb5fa85e80dc94d51e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
