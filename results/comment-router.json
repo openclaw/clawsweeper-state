@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T12:50:20.867Z",
+  "updated_at": "2026-08-09T12:50:39.806Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120888:5230429915:2026-08-09T07:46:59Z:clawsweeper_needs_human",
-      "comment_id": "5230429915",
-      "comment_version_key": "5230429915:2026-08-09T07:46:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120888#issuecomment-5230429915",
-      "comment_created_at": "2026-08-09T07:46:59Z",
-      "comment_updated_at": "2026-08-09T07:46:59Z",
-      "comment_body_sha256": "ae52fbe7fb3b61f37c1fc100cf26b55384c76441150813dd333ee02870c5c4b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two UI E2E shards are failing and the branch is behind main; confirm their cause, rebase if needed, and require green exact-head CI before merge. (sha=11ee2a0f9f4ba7e6072efcb29b34ebbf6aed9062)",
-      "expected_head_sha": "11ee2a0f9f4ba7e6072efcb29b34ebbf6aed9062",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T07:47:42.222Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/blissful-wu-70fd28",
-        "head_sha": "11ee2a0f9f4ba7e6072efcb29b34ebbf6aed9062",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120855:5229818699:2026-08-09T07:47:00Z:clawsweeper_needs_human",
       "comment_id": "5229818699",
@@ -32803,6 +32770,53 @@
       "status": "skipped",
       "processed_at": "2026-08-09T12:50:20.867Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-09T12:47:57Z:clawsweeper_needs_human",
+      "comment_id": "4971448190",
+      "comment_version_key": "4971448190:2026-08-09T12:47:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107479#issuecomment-4971448190",
+      "comment_created_at": "2026-07-14T16:18:40Z",
+      "comment_updated_at": "2026-08-09T12:47:57Z",
+      "comment_body_sha256": "78ae4b7edd9a364834a1431649ec0e21d0c6fa5968bf51e301c1251799e5b623",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107479,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so exact-head merge checks should be refreshed before the existing human-review hold is lifted; base drift alone is not a code regression. (sha=735b56fa7663bc095e9772c92ad1a5b8c37dfa2b)",
+      "expected_head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T12:50:39.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/automerge-openclaw-openclaw-103304",
+        "head_sha": "735b56fa7663bc095e9772c92ad1a5b8c37dfa2b",
+        "cluster_id": "automerge-openclaw-openclaw-107479",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-107479.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
