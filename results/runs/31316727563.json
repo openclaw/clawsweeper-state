@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121021",
+  "mode": "autonomous",
+  "run_id": "31316727563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31316727563",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121021.md",
+  "published_at": "2026-08-09T14:24:53.361Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121021",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121021",
+  "canonical_pr": null,
+  "summary": "#121021 remains a current, non-security producer-side bug on main 6a586cd0. Native in-process child dispatch defaults to CLI task tracking before the native registry writes the canonical subagent row. This checkout is clean read-only main with no repair branch or local patch, so implementation is blocked on a writable executor; a narrow credited fix artifact is ready.",
+  "actions": [
+    {
+      "target": "#121021",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121021",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout. Preserve dispatch-then-register ordering; do not reuse plugin_subagent because its admission path registers competing Gateway-owned state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121021",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#121021",
+      "candidate_fix": null,
+      "reason": "Create one narrow fix PR from clawsweeper/issue-openclaw-openclaw-121021 after applying this artifact in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
