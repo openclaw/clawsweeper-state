@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121046",
+  "mode": "autonomous",
+  "run_id": "31320111113",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31320111113",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121046.md",
+  "published_at": "2026-08-09T16:09:39.072Z",
+  "canonical": "#121046",
+  "canonical_issue": "#121046",
+  "canonical_pr": null,
+  "summary": "Confirmed #121046 is a narrow current-main defect: the shared date matcher accepts only memory/YYYY-MM-DD.md, so default-produced memory/dreaming/<phase>/YYYY-MM-DD.md reports are classified evergreen and bypass temporal decay. A two-file repair is ready to implement, but this worker's read-only checkout cannot write the branch and lacks tsx/node_modules for focused validation.",
+  "actions": [
+    {
+      "target": "#32745",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": "#121046",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation."
+    },
+    {
+      "target": "#67594",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": "#121046",
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation."
+    },
+    {
+      "target": "#77831",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#121046",
+      "candidate_fix": null,
+      "reason": "Keep the separate dreaming-indexing investigation open."
+    },
+    {
+      "target": "#121046",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121046",
+      "candidate_fix": null,
+      "reason": "Implement the narrow shared matcher repair and hybrid-ranking regression in a writable executor."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121046"
 mode: "autonomous"
-run_id: "31316715605"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31316715605"
+run_id: "31320111113"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31320111113"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-08-09T14:36:38.903Z"
-canonical: "https://github.com/openclaw/openclaw/issues/121046"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/121046"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-08-09T16:09:39.072Z"
+canonical: "#121046"
+canonical_issue: "#121046"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31316715605](https://github.com/openclaw/clawsweeper/actions/runs/31316715605)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31320111113](https://github.com/openclaw/clawsweeper/actions/runs/31320111113)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/121046
+Canonical: #121046
 
 ## Summary
 
-Confirmed on main 6a586cd0eadde0990f1c6bb3991dd190620e50d1: dated nested memory paths fail the shared date matcher, then are classified evergreen before mtime fallback. Plan a narrow new fix PR; no GitHub or filesystem mutations were made in this read-only worker environment.
+Confirmed #121046 is a narrow current-main defect: the shared date matcher accepts only memory/YYYY-MM-DD.md, so default-produced memory/dreaming/<phase>/YYYY-MM-DD.md reports are classified evergreen and bypass temporal decay. A two-file repair is ready to implement, but this worker's read-only checkout cannot write the branch and lacks tsx/node_modules for focused validation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Confirmed on main 6a586cd0eadde0990f1c6bb3991dd190620e50d1: dated nested memory 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121046 | fix_needed | planned | canonical | A narrow matcher expansion repairs the classifier at its owner without changing temporal-decay configuration or dreaming indexing policy. |
-| cluster:issue-openclaw-openclaw-121046 | build_fix_artifact | planned | canonical | No viable PR is hydrated. The deterministic executor should implement this small new PR from the artifact. |
-| #32745 | keep_closed | skipped | duplicate | Historical same-root-cause context only. |
-| #67594 | keep_closed | skipped | duplicate | Historical same-root-cause context only. |
-| #77831 | keep_related | planned | related | Leave the independent dreaming-indexing investigation open; this PR changes only the nested exact-date temporal-decay classification. |
+| #32745 | keep_closed | skipped |  | Historical context only; no mutation. |
+| #67594 | keep_closed | skipped |  | Historical context only; no mutation. |
+| #77831 | keep_related | planned | related | Keep the separate dreaming-indexing investigation open. |
+| #121046 | fix_needed | planned | canonical | Implement the narrow shared matcher repair and hybrid-ranking regression in a writable executor. |
 
 ## Needs Human
 
