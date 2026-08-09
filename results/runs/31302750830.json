@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-120735",
+  "mode": "plan",
+  "run_id": "31302750830",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31302750830",
+  "head_sha": "8ee296bbd674fc76e6ddaa994290b260627c16ed",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-120735.md",
+  "published_at": "2026-08-09T08:12:57.830Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/120735",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Telegram context repair for #120735. Current checkout 411777dc1fcc3c1c915d7347779c3588de60547 still has the intentional TGS/WebM no-download path and the missing agent-visible unavailable outcome; no GitHub or repository mutation is proposed in plan mode.",
+  "actions": [
+    {
+      "target": "#120735",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "#93130 repaired static WebP sticker hydration only; #120735 remains the canonical TGS/WebM context defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-120735",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Create or update the single planned ClawSweeper branch only after applying and validating this artifact."
+    },
+    {
+      "target": "#83748",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": "#93130",
+      "reason": "Already closed; no action."
+    },
+    {
+      "target": "#93130",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#120735",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; no action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
