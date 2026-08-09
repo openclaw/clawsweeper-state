@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T11:52:42.633Z",
+  "updated_at": "2026-08-09T11:55:14.821Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115670:5118073904:2026-08-09T06:42:20Z:clawsweeper_needs_human",
-      "comment_id": "5118073904",
-      "comment_version_key": "5118073904:2026-08-09T06:42:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5118073904",
-      "comment_created_at": "2026-07-29T12:59:23Z",
-      "comment_updated_at": "2026-08-09T06:42:20Z",
-      "comment_body_sha256": "4f774af2b41ff2380563e21b47f9ed9b7447a35c36844dabda89e03be70f08fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115670,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied redacted CLI transcript is useful but was run on 5d48125 rather than current head 5d2eab8; rerun the lifecycle sequence f...; Review finding: [P1] Revalidate adopted files before committing configuration — src/claws/add.ts:291-313 - [medium] Prevent post-preview workspace drift from committing — src/claw... (sha=5d2eab8cc5e543b11bf949b2c197321e9bd74d94)",
-      "expected_head_sha": "5d2eab8cc5e543b11bf949b2c197321e9bd74d94",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T06:45:50.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claws-adopt-existing-workspace",
-        "head_sha": "5d2eab8cc5e543b11bf949b2c197321e9bd74d94",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115670:5124994638:2026-07-30T00:48:03Z:re_review",
       "comment_id": "5124994638",
@@ -32653,6 +32620,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T11:52:42.633Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1042:5205191188:2026-08-09T11:53:24Z:clawsweeper_needs_human",
+      "comment_id": "5205191188",
+      "comment_version_key": "5205191188:2026-08-09T11:53:24Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1042#issuecomment-5205191188",
+      "comment_created_at": "2026-08-06T13:23:20Z",
+      "comment_updated_at": "2026-08-09T11:53:24Z",
+      "comment_body_sha256": "73e1681beaf16fcca62ff0e6d3f5e24abfaef0ceb0c83df5dfefb878def976cb",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1042,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft head as dirty against its base, while current main has since changed overlapping apply/context paths; merge safety and proof must be refreshed after rebase. (sha=1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d)",
+      "expected_head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T11:55:14.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawsweeper-close-guard-pairs",
+        "head_sha": "1c23b39f3174cdd2a0f90ba9e2c1d7882cce454d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
