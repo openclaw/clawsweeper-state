@@ -1,64 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:50:51.259Z",
+  "updated_at": "2026-08-09T16:50:53.720Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:121050",
-      "comment_id": "repair-loop-label-sweep:autofix:121050",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121050",
-      "comment_created_at": "2026-08-09T12:40:38.124Z",
-      "comment_updated_at": "2026-08-09T12:40:38.124Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121050,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T12:42:17.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-55372",
-        "head_sha": "a7b2ab531422738de9f88397aa0318b0a8bb7744",
-        "cluster_id": "automerge-openclaw-openclaw-121050",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121057:5231574633:2026-08-09T12:41:51Z:clawsweeper_auto_repair",
       "comment_id": "5231574633",
@@ -32709,6 +32651,39 @@
         "kind": "pull_request",
         "branch": "feishu-card-v2-action-to-column-set",
         "head_sha": "09ecc9eba006808b5a679454183083daecbfd12e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112659:5085427315:2026-08-09T16:47:56Z:clawsweeper_needs_human",
+      "comment_id": "5085427315",
+      "comment_version_key": "5085427315:2026-08-09T16:47:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112659#issuecomment-5085427315",
+      "comment_created_at": "2026-07-26T21:14:10Z",
+      "comment_updated_at": "2026-08-09T16:47:56Z",
+      "comment_body_sha256": "d203cc97f164d3be8f7c05c07084543f531f035588886a98913c8afbb6dff829",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112659,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the shipped default from stripping all Copilot encrypted reasoning to retaining it only in an active tool loop; maintainers must accept that session-state contract. (sha=78078d3cad27e23c8aca6c114add5081e265354e)",
+      "expected_head_sha": "78078d3cad27e23c8aca6c114add5081e265354e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:50:53.720Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "newfuture-fix-copilot-reasoning-lifecycle",
+        "head_sha": "78078d3cad27e23c8aca6c114add5081e265354e",
         "cluster_id": null,
         "job_path": null
       }
