@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119367",
+  "mode": "autonomous",
+  "run_id": "31329351654",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31329351654",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119367.md",
+  "published_at": "2026-08-09T18:40:38.627Z",
+  "canonical": "#119350",
+  "canonical_issue": "#119350",
+  "canonical_pr": "#119367",
+  "summary": "#119367 remains the focused repair PR for canonical issue #119350. Current main still restarts ingestion from line 0 after an append; build a narrow contributor-branch repair artifact, preserving the issue report credit and leaving unrelated #111811 open as related work.",
+  "actions": [
+    {
+      "target": "#119350",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119350",
+      "candidate_fix": "#119367",
+      "reason": "Keep the report open until the repaired PR is validated and landed."
+    },
+    {
+      "target": "#111811",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119350",
+      "candidate_fix": null,
+      "reason": "Adjacent shared test surface only; no duplicate or supersession action is justified."
+    },
+    {
+      "target": "#119367",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119367",
+      "candidate_fix": "#119367",
+      "reason": "The preflight PR is stale against current main and its source commit is absent from this shallow target checkout; its established narrow behavior change should be ported onto the writable contributor branch."
+    },
+    {
+      "target": "#119367",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119367",
+      "candidate_fix": "#119367",
+      "reason": "Produce the bounded, credited contributor-branch repair required by the job; no merge action is authorized."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
