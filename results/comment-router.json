@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T00:43:17.504Z",
+  "updated_at": "2026-08-09T00:43:27.069Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5225568107:2026-08-08T09:44:51Z:re_review",
-      "comment_id": "5225568107",
-      "comment_version_key": "5225568107:2026-08-08T09:44:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5225568107",
-      "comment_created_at": "2026-08-08T09:44:51Z",
-      "comment_updated_at": "2026-08-08T09:44:51Z",
-      "comment_body_sha256": "47f97508a6846c39f6d465473d375f6abf789029c1c98c61527ee4956d7e6eef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review against current tip",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T20:46:46.563Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5226598449:2026-08-08T14:44:02Z:re_review",
       "comment_id": "5226598449",
@@ -32158,6 +32131,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T00:43:17.504Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120773:5229033443:2026-08-09T00:42:48Z:clawsweeper_needs_human",
+      "comment_id": "5229033443",
+      "comment_version_key": "5229033443:2026-08-09T00:42:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120773#issuecomment-5229033443",
+      "comment_created_at": "2026-08-09T00:42:48Z",
+      "comment_updated_at": "2026-08-09T00:42:48Z",
+      "comment_body_sha256": "3f2600960cdec1af36043e221b71ec59f43b8ca6ad81ecaa6e28bce6bfb0d65d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120773,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require a policy allow in the reference evaluator (P1)** - A store-level placement capability has no principal or audience binding, but this condition treats it as a grant. A backend can therefore pass the confo...; Review finding: [P1] Require a policy allow in the reference evaluator — packages/memory-host-sdk/src/host/authorization-conformance.ts:260-267 - [high] Store capability bypasses... (sha=9798cadf83b672cca3c677ec1c95ee68ff4649e4)",
+      "expected_head_sha": "9798cadf83b672cca3c677ec1c95ee68ff4649e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T00:43:27.069Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galini_microsoft-galin-memory-permissions-v2-p0a-sdk-contract-ship",
+        "head_sha": "9798cadf83b672cca3c677ec1c95ee68ff4649e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
