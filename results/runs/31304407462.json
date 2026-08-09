@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-52130",
+  "mode": "autonomous",
+  "run_id": "31304407462",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31304407462",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-52130.md",
+  "published_at": "2026-08-09T09:37:01.966Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/52130",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/52130",
+  "canonical_pr": null,
+  "summary": "#52130 remains a real narrow docs/config-contract bug on checkout main 29c442d4: Telegram strictly rejects the retired retry subtree while Doctor removes it, but docs and Settings copy still advertise it. A new, credited fix PR is ready to plan; implementation is blocked only because this worker checkout is read-only.",
+  "actions": [
+    {
+      "target": "#52130",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#52130",
+      "candidate_fix": null,
+      "reason": "The repository filesystem is read-only, so this worker cannot edit the branch, regenerate the required config baseline, or run package-manager validation after a patch."
+    },
+    {
+      "target": "#52116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation action is valid."
+    },
+    {
+      "target": "#92229",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged and closed; it is historical evidence, not the candidate for this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-52130",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#52130",
+      "candidate_fix": null,
+      "reason": null
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-52130",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#52130",
+      "candidate_fix": null,
+      "reason": "Blocked pending an executor with a writable checkout to apply the artifact, regenerate docs/.generated/config-baseline.sha256, validate, and raise the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
