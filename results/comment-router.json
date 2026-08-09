@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T00:41:37.388Z",
+  "updated_at": "2026-08-09T00:41:41.256Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112765:5090071813:2026-08-08T20:41:35Z:clawsweeper_needs_human",
-      "comment_id": "5090071813",
-      "comment_version_key": "5090071813:2026-08-08T20:41:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112765#issuecomment-5090071813",
-      "comment_created_at": "2026-07-27T10:13:59Z",
-      "comment_updated_at": "2026-08-08T20:41:35Z",
-      "comment_body_sha256": "90b5e4ae337026df9a2e5098d306609e2c34b2359ebf24f4bd9da2eaf1644ac8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112765,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject App-only MCP tools before invocation (P1)** - catalog.tools deliberately retains entries with uiVisibility: [\"app\"] or [] so normal materialization can apply the App/run allowlist. This direct lookup call...; Review finding: [P1] Reject App-only MCP tools before invocation — src/cli/mcp-cli.ts:917-927 - [high] Bypass App-only MCP execution policy — src/cli/mcp-cli.ts:917 (sha=06c4195f598234e6785fe1cfebea593aa0acf7d3)",
-      "expected_head_sha": "06c4195f598234e6785fe1cfebea593aa0acf7d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T20:46:15.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mcp-call-cli",
-        "head_sha": "06c4195f598234e6785fe1cfebea593aa0acf7d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119520:5188971821:2026-08-08T20:44:16Z:clawsweeper_auto_repair",
       "comment_id": "5188971821",
@@ -32200,6 +32167,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:256:5168896416:2026-08-09T00:41:09Z:clawsweeper_needs_human",
+      "comment_id": "5168896416",
+      "comment_version_key": "5168896416:2026-08-09T00:41:09Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/256#issuecomment-5168896416",
+      "comment_created_at": "2026-08-03T16:14:34Z",
+      "comment_updated_at": "2026-08-09T00:41:09Z",
+      "comment_body_sha256": "5dee76669ad2ed7d9d4905d007cbbb183b30ecf33b88bf7a52678015fa343068",
+      "repo": "openclaw/crabline",
+      "issue_number": 256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Baileys rc14 changes the pre-release WhatsApp client baseline and its resolved dependency graph; the PR contains only CI results, not a recorded rc14 WebSocket handshake and message-f... (sha=7696217cfbfad9462bb878fb0156c88d19185ccb)",
+      "expected_head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T00:41:41.256Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
+        "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
