@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121034"
 mode: "autonomous"
-run_id: "31312220612"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31312220612"
+run_id: "31319310879"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31319310879"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T12:09:16.427Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T15:10:34.148Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121034"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121034"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31312220612](https://github.com/openclaw/clawsweeper/actions/runs/31312220612)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31319310879](https://github.com/openclaw/clawsweeper/actions/runs/31319310879)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/121034
 
 ## Summary
 
-Current main 0a898b70 still forwards `amazon-bedrock/<id>` unchanged through the Claude ACP adapter. The canonical path is a narrow two-file fix PR; this worker's read-only, dependency-less checkout cannot apply or validate it directly.
+The issue remains reproducible on main. Claude ACP strips only `anthropic/`, so `amazon-bedrock/<native-id>` leaks into both startup and runtime model updates. A narrow ACPX-only fix is planned; implementation is blocked by the read-only checkout and absent dependencies.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main 0a898b70 still forwards `amazon-bedrock/<id>` unchanged through the
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121034 | fix_needed | planned | canonical | The adapter must translate the recognized OpenClaw Bedrock qualifier to the native Claude Agent SDK model/inference-profile ID without changing generic ACP behavior. |
-| cluster:issue-openclaw-openclaw-121034 | build_fix_artifact | planned | canonical | The deterministic executor should implement this artifact on clawsweeper/issue-openclaw-openclaw-121034, validate it, and open or update the single credited fix PR. |
+| #121034 | fix_needed | planned | canonical | Open canonical issue with no hydrated PR; the plugin-local conversion gap has a narrow fix path. |
+| cluster:issue-openclaw-openclaw-121034 | build_fix_artifact | blocked | canonical | Executor should implement and validate this artifact on `clawsweeper/issue-openclaw-openclaw-121034`. |
 
 ## Needs Human
 

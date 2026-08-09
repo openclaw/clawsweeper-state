@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121034",
+  "mode": "autonomous",
+  "run_id": "31319310879",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31319310879",
+  "head_sha": "80847d16452c774d7c4e94abe2b9cfb6e1319b57",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121034.md",
+  "published_at": "2026-08-09T15:10:34.148Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121034",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121034",
+  "canonical_pr": null,
+  "summary": "The issue remains reproducible on main. Claude ACP strips only `anthropic/`, so `amazon-bedrock/<native-id>` leaks into both startup and runtime model updates. A narrow ACPX-only fix is planned; implementation is blocked by the read-only checkout and absent dependencies.",
+  "actions": [
+    {
+      "target": "#121034",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121034",
+      "candidate_fix": null,
+      "reason": "Open canonical issue with no hydrated PR; the plugin-local conversion gap has a narrow fix path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121034",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121034",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate this artifact on `clawsweeper/issue-openclaw-openclaw-121034`."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
