@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:43:59.008Z",
+  "updated_at": "2026-08-09T06:44:04.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120703:5229092216:2026-08-09T01:00:34Z:re_review",
-      "comment_id": "5229092216",
-      "comment_version_key": "5229092216:2026-08-09T01:00:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120703#issuecomment-5229092216",
-      "comment_created_at": "2026-08-09T01:00:34Z",
-      "comment_updated_at": "2026-08-09T01:00:34Z",
-      "comment_body_sha256": "06f4d3205cb6845040acd84f50cf2167123c68ab5f258226efc8645f6d34636d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120703,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T01:50:11.112Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/upgrade-survivor-convergence-20260808-exact",
-        "head_sha": "ff0953acd59678d285018d701a0e92b6d84716db",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120703:5229244544:2026-08-09T01:49:35Z:clawsweeper_needs_human",
       "comment_id": "5229244544",
@@ -31965,6 +31918,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1082:5230207297:2026-08-09T06:43:20Z:clawsweeper_auto_repair",
+      "comment_id": "5230207297",
+      "comment_version_key": "5230207297:2026-08-09T06:43:20Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1082#issuecomment-5230207297",
+      "comment_created_at": "2026-08-09T06:43:20Z",
+      "comment_updated_at": "2026-08-09T06:43:20Z",
+      "comment_body_sha256": "6443a0a68bb9a29e31dd8fa888c07587ac0c3999291e0e7c0e40d4551a29a283",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1082,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=12592a0f506f710ea540bc9edef166291367be1c)",
+      "expected_head_sha": "12592a0f506f710ea540bc9edef166291367be1c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:44:04.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr-fast-ack-hardening",
+        "head_sha": "12592a0f506f710ea540bc9edef166291367be1c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
