@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T20:52:08.146Z",
+  "updated_at": "2026-08-09T20:52:15.743Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:124:5127517079:2026-08-09T17:00:21Z:clawsweeper_auto_repair",
-      "comment_id": "5127517079",
-      "comment_version_key": "5127517079:2026-08-09T17:00:21Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/124#issuecomment-5127517079",
-      "comment_created_at": "2026-07-30T06:40:05Z",
-      "comment_updated_at": "2026-08-09T17:00:21Z",
-      "comment_body_sha256": "8de697969c5ff43ac1a3c21ad5578eefae6993e1c9bfbce0cb143ae1fc16c9e8",
-      "repo": "openclaw/lobster",
-      "issue_number": 124,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab)",
-      "expected_head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T17:00:58.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "octo/20260729-provider-add-recvqbA32usNcb",
-        "head_sha": "069b22cfa4e7950a6f0778ca12ec65c3e2cd62ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1101:5195019876:2026-08-09T17:01:37Z:clawsweeper_auto_repair",
       "comment_id": "5195019876",
@@ -32860,6 +32827,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T20:52:08.146Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111187:5014227102:2026-08-09T20:47:46Z:clawsweeper_needs_human",
+      "comment_id": "5014227102",
+      "comment_version_key": "5014227102:2026-08-09T20:47:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111187#issuecomment-5014227102",
+      "comment_created_at": "2026-07-19T04:17:20Z",
+      "comment_updated_at": "2026-08-09T20:47:46Z",
+      "comment_body_sha256": "c4c80ed635333803df1bfa2619e8a5cb53249604891c67476668b0cccbea5e7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111187,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR proves direct-client UIA behavior, but not the claimed one-upload openclaw matrix verify bootstrap path, which source shows boo...; Review finding: [P1] Keep MAS approval URLs out of generic results — extensions/matrix/src/matrix/sdk.ts:524-525 - [P1] Avoid bootstrapping twice in explicit verification — extens... (sha=ccec49992519b964c29e5f45480d3bd8dd06a4a1)",
+      "expected_head_sha": "ccec49992519b964c29e5f45480d3bd8dd06a4a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T20:52:15.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-mas-cross-signing-uia",
+        "head_sha": "ccec49992519b964c29e5f45480d3bd8dd06a4a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
