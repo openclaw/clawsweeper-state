@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T09:52:07.640Z",
+  "updated_at": "2026-08-09T09:52:10.367Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120575:5229611027:2026-08-09T03:41:15Z:re_review",
-      "comment_id": "5229611027",
-      "comment_version_key": "5229611027:2026-08-09T03:41:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120575#issuecomment-5229611027",
-      "comment_created_at": "2026-08-09T03:41:15Z",
-      "comment_updated_at": "2026-08-09T03:41:15Z",
-      "comment_body_sha256": "a58adb1d59f262f79e7d5f701a22619c92c8b0716ff48667a0f953066c2c3dc0",
-      "source_delivery_id": "2d038100-93a4-11f1-88d8-8bb26f70a3ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120575,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T03:41:44.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/process-poll-notification-ack",
-        "head_sha": "cd5dbd1f5f1838ff7c3aaf27ce1e723c53aa5efa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120852:5229611150:2026-08-09T03:41:17Z:clawsweeper_needs_human",
       "comment_id": "5229611150",
@@ -32817,6 +32769,39 @@
         "kind": "pull_request",
         "branch": "codex/agent-runtime-path-cleanup",
         "head_sha": "3c7fc065cf5554261cb0a22d20b4ee0f21e7ab21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121010:5230890764:2026-08-09T09:51:25Z:clawsweeper_needs_human",
+      "comment_id": "5230890764",
+      "comment_version_key": "5230890764:2026-08-09T09:51:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121010#issuecomment-5230890764",
+      "comment_created_at": "2026-08-09T09:51:25Z",
+      "comment_updated_at": "2026-08-09T09:51:25Z",
+      "comment_body_sha256": "7aa8341f69e9e92327e2e76f69bc96b0c481ff57ce3afad46401a35330c97171",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121010,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The PR is correct but carries a maintainer-protected label and author association, so it should remain for explicit maintainer handling rather than automated closure or repair. (sha=a3a3bcabb72f47862ccde8eb05903f6529bf88c6)",
+      "expected_head_sha": "a3a3bcabb72f47862ccde8eb05903f6529bf88c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T09:52:10.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-telegram-startup-plugin-activation",
+        "head_sha": "a3a3bcabb72f47862ccde8eb05903f6529bf88c6",
         "cluster_id": null,
         "job_path": null
       }
