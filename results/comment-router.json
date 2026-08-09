@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T01:45:50.228Z",
+  "updated_at": "2026-08-09T01:45:51.597Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120707:5228339619:2026-08-08T21:44:07Z:clawsweeper_needs_human",
-      "comment_id": "5228339619",
-      "comment_version_key": "5228339619:2026-08-08T21:44:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120707#issuecomment-5228339619",
-      "comment_created_at": "2026-08-08T21:44:07Z",
-      "comment_updated_at": "2026-08-08T21:44:07Z",
-      "comment_body_sha256": "cc022026dbe247027ac26e696693a2e32817d96cc8f8326028424ca963793163",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not scope SSH credentials to the forwarded loopback port (P1)** - The SSH target URL is a reusable local forward, not the remote Gateway origin. A device token paired through ws://127.0.0.1:&lt;port> can ther...; Review finding: [P1] Do not scope SSH credentials to the forwarded loopback port — src/commands/gateway-status/probe-run.ts:136 - [high] SSH loopback address is used as credential... (sha=c2f0c947a02c7c392af5c5b3c78beca438c351ad)",
-      "expected_head_sha": "c2f0c947a02c7c392af5c5b3c78beca438c351ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-08T21:44:39.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-probe-device-auth-scope",
-        "head_sha": "c2f0c947a02c7c392af5c5b3c78beca438c351ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:97103:4813232631:2026-08-08T21:43:33Z:clawsweeper_needs_human",
       "comment_id": "4813232631",
@@ -32073,6 +32040,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T01:45:50.228Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:144:5209988007:2026-08-09T01:45:13Z:clawsweeper_needs_human",
+      "comment_id": "5209988007",
+      "comment_version_key": "5209988007:2026-08-09T01:45:13Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/144#issuecomment-5209988007",
+      "comment_created_at": "2026-08-06T23:38:27Z",
+      "comment_updated_at": "2026-08-09T01:45:13Z",
+      "comment_body_sha256": "5301e23c0e7a95d12f8b1b2139c3206875337aa9eff555d6ac5570b894137eb3",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CrawlKit is a direct dependency used by configuration, remote archive, and SQLite-related paths; the available checks are secret scanning, neutral CodeQL, and skipped automation, with... (sha=16c960dfe88321fd2d04247be893ec7130ebdc23)",
+      "expected_head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T01:45:51.597Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/go_modules/github.com/openclaw/crawlkit-0.14.5",
+        "head_sha": "16c960dfe88321fd2d04247be893ec7130ebdc23",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
