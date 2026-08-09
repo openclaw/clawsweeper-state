@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120956"
 mode: "autonomous"
-run_id: "31306216177"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31306216177"
+run_id: "31314135438"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31314135438"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T09:41:32.820Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T13:24:57.964Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120956"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31306216177](https://github.com/openclaw/clawsweeper/actions/runs/31306216177)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31314135438](https://github.com/openclaw/clawsweeper/actions/runs/31314135438)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 ## Summary
 
-#120956 remains a source-proven, non-security Workboard persistence bug on current main d0e812e18f46f64ba8ba8c3cee302c62fa34bf9a. Plan a narrow plugin-local Doctor-only repair and regression; no GitHub or repository mutation was performed in this planning pass.
+Confirmed #120956 on main d5809b40: an oversized persisted SQLite notification throws during ready-card dispatch before worker start. The checkout is read-only, so no branch, patch, test run, or PR can be produced here; a narrow, executable fix artifact is ready.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/120956
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120956 | fix_needed | planned | canonical | Legacy SQLite rows can violate the existing notification contract and abort dispatch before a ready card records its dispatch state. |
-| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned |  | The fix is narrow, plugin-owned, idempotent, and has a focused persistence/dispatch regression path. |
+| #120956 | fix_needed | planned | canonical | Plugin-owned persisted-state repair is valid and narrow; implementation is blocked only by the read-only checkout. |
+| cluster:issue-openclaw-openclaw-120956 | build_fix_artifact | planned |  | Prepared narrow repair plan; executor must apply it on clawsweeper/issue-openclaw-openclaw-120956. |
 
 ## Needs Human
 
