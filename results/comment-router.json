@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-09T11:21:17.863Z",
+  "updated_at": "2026-08-09T11:25:44.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/codexbar:2377:5090940716:2026-07-27T11:52:35Z:re_review",
-      "comment_id": "5090940716",
-      "comment_version_key": "5090940716:2026-07-27T11:52:35Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2377#issuecomment-5090940716",
-      "comment_created_at": "2026-07-27T11:52:35Z",
-      "comment_updated_at": "2026-07-27T11:52:35Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "steipete/codexbar",
-      "issue_number": 2377,
-      "author": "joeVenner",
-      "author_id": 61122897,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T04:56:48.338Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/codexbar:2377:5091016814:2026-08-09T04:56:11Z:clawsweeper_auto_repair",
       "comment_id": "5091016814",
@@ -32579,6 +32552,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-09T11:24:56Z:clawsweeper_needs_human",
+      "comment_id": "5194538175",
+      "comment_version_key": "5194538175:2026-08-09T11:24:56Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
+      "comment_created_at": "2026-08-05T16:34:55Z",
+      "comment_updated_at": "2026-08-09T11:24:56Z",
+      "comment_body_sha256": "8150db2e18003a18836ce2046a6bb03867186f5b81bd6d0b9a21499d69f82d50",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 58,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The package is already published as v0.3.21 while current main remains at 0.3.20; merge only the exact tagged release commit so source, changelog, and downstream pins remain aligned. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
+      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-09T11:25:44.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-inspector-0.3.21",
+        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
+        "cluster_id": "automerge-openclaw-plugin-inspector-58",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
