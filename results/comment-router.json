@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:42:17.418Z",
+  "updated_at": "2026-08-09T06:42:30.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1075:5229237249:2026-08-09T01:47:06Z:re_review",
-      "comment_id": "5229237249",
-      "comment_version_key": "5229237249:2026-08-09T01:47:06Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1075#issuecomment-5229237249",
-      "comment_created_at": "2026-08-09T01:47:06Z",
-      "comment_updated_at": "2026-08-09T01:47:06Z",
-      "comment_body_sha256": "26e5e32de884b132623a5b32f08d461b73c7fc247eac6d2b9522955a3509497a",
-      "source_delivery_id": "3a5fdd40-9394-11f1-831a-91d4f23e98f6",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1075,
-      "author": "masatohoshino",
-      "author_id": 246810661,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T01:47:30.364Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/finding-base-attribution",
-        "head_sha": "9b52677592436dd2c7459f28b8ffe7f5717d8181",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabline:262:5225202703:2026-08-08T07:50:53Z:re_review",
       "comment_id": "5225202703",
@@ -31982,6 +31934,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120894:5230201696:2026-08-09T06:41:42Z:clawsweeper_needs_human",
+      "comment_id": "5230201696",
+      "comment_version_key": "5230201696:2026-08-09T06:41:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120894#issuecomment-5230201696",
+      "comment_created_at": "2026-08-09T06:41:42Z",
+      "comment_updated_at": "2026-08-09T06:41:42Z",
+      "comment_body_sha256": "652e2d02634c68c5cdf3260497cff87bee04e53e47c5b50ba7aa45b9fc5984f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required direct inspection of upstream Codex app-server behavior is unavailable, so pagination and close-handler assumptions cannot be cleared for merge. (sha=e6c933389a89efc8bb9a29abb01e81eff3989a1b)",
+      "expected_head_sha": "e6c933389a89efc8bb9a29abb01e81eff3989a1b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:42:30.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-catalog-client-ownership",
+        "head_sha": "e6c933389a89efc8bb9a29abb01e81eff3989a1b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
