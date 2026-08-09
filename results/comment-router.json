@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-09T06:46:13.805Z",
+  "updated_at": "2026-08-09T06:46:23.449Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1252:5203451081:2026-08-06T10:30:00Z:automerge",
-      "comment_id": "5203451081",
-      "comment_version_key": "5203451081:2026-08-06T10:30:00Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1252#issuecomment-5203451081",
-      "comment_created_at": "2026-08-06T10:30:00Z",
-      "comment_updated_at": "2026-08-06T10:30:00Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1252,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T01:52:09.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-spot-fatal-fallback",
-        "head_sha": "cc425267c603456a666e82740a979ec861ff5ba9",
-        "cluster_id": "automerge-openclaw-crabbox-1252",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-crabbox-1252.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-09T01:51:28Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -31931,6 +31878,39 @@
         "kind": "pull_request",
         "branch": "fix/workboard-independent-dependency-override",
         "head_sha": "3cb976523e5e961dcdca5e4b624eb78b7fd19bc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120959:5230215586:2026-08-09T06:45:42Z:clawsweeper_needs_human",
+      "comment_id": "5230215586",
+      "comment_version_key": "5230215586:2026-08-09T06:45:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120959#issuecomment-5230215586",
+      "comment_created_at": "2026-08-09T06:45:42Z",
+      "comment_updated_at": "2026-08-09T06:45:42Z",
+      "comment_body_sha256": "a617fa05b8ffe3806b8a17eb58e14e3f13888891dad655d91b912a87e12d92bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A live but stuck same-host lease owner can now hold the competing startup path for up to the existing five-minute lease TTL; the bound and retained terminal error make this an explici... (sha=8867a20e7578e11e75ffbd3b6672b51806cf5fd5)",
+      "expected_head_sha": "8867a20e7578e11e75ffbd3b6672b51806cf5fd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T06:46:23.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/startup-migration-lease-wait",
+        "head_sha": "8867a20e7578e11e75ffbd3b6672b51806cf5fd5",
         "cluster_id": null,
         "job_path": null
       }
