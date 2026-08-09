@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120735"
-mode: "plan"
-run_id: "31313697718"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31313697718"
+mode: "autonomous"
+run_id: "31319223786"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31319223786"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-09T12:43:41.053Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-09T15:37:15.039Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120735"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31313697718](https://github.com/openclaw/clawsweeper/actions/runs/31313697718)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31319223786](https://github.com/openclaw/clawsweeper/actions/runs/31319223786)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 ## Summary
 
-#120735 is the open canonical bug: current main intentionally skips TGS/WebM sticker downloads but loses the known unsupported outcome before context rendering, leaving raw Telegram file refs. Plan one narrow Telegram fix PR; do not close or merge anything.
+Confirmed on main: TGS/WebM stickers deliberately return no media from the Telegram producer, then become a type-only sticker with an empty agent body. A narrow plugin-local repair is planned, but this read-only checkout cannot edit or install the missing tsx dependency required for focused Vitest.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/120735
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #83748 | keep_closed | skipped | related | Historical closed context only; no closure action is valid. |
-| #93130 | keep_closed | skipped | related | Historical merged context; no mutation is valid. |
-| #120735 | fix_needed | planned | canonical | No viable open PR exists. Preserve the intentional no-download policy while carrying a typed unavailable reason into Telegram context and projection rendering. |
-| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Prepare one credited replacement fix PR from clawsweeper/issue-openclaw-openclaw-120735. |
+| #120735 | fix_needed | planned | canonical | Distinct remaining animated/video sticker context bug; #93130 repaired static WebP staging only. |
+| cluster:issue-openclaw-openclaw-120735 | build_fix_artifact | planned | canonical | Executor can implement the bounded new-PR repair on the requested branch. |
+| #83748 | keep_closed | skipped | related | Already closed; its static WebP concern is not this no-download outcome. |
+| #93130 | keep_closed | skipped | related | Already merged historical context only. |
 
 ## Needs Human
 
