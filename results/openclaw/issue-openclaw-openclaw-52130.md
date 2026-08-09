@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-52130"
 mode: "autonomous"
-run_id: "31307459262"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31307459262"
+run_id: "31308133543"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31308133543"
 head_sha: "80847d16452c774d7c4e94abe2b9cfb6e1319b57"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-09T10:13:06.630Z"
+published_at: "2026-08-09T10:48:00.731Z"
 canonical: "https://github.com/openclaw/openclaw/issues/52130"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/52130"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31307459262](https://github.com/openclaw/clawsweeper/actions/runs/31307459262)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31308133543](https://github.com/openclaw/clawsweeper/actions/runs/31308133543)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/52130
 
 ## Summary
 
-#52130 remains an open, non-security canonical bug report. Current main retains strict Telegram configuration and Doctor retirement of retry keys, while the hydrated ClawSweeper review identifies stale retry guidance as the remaining defect. Plan a narrow credited documentation/config-metadata repair; do not close or merge anything.
+#52130 is the open canonical report. The remaining reproducible defect is stale retry configuration guidance conflicting with the strict Telegram schema and existing Doctor migration; a narrow credited fix PR is appropriate. Closed #52116 and merged #92229 are historical context only.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/52130
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #52130 | fix_needed | planned | canonical | A narrow fix path is clear and allowed; no viable open contributor PR exists. |
-| cluster:issue-openclaw-openclaw-52130 | build_fix_artifact | planned | canonical | Create a narrow new PR plan that corrects guidance without changing runtime retry behavior or compatibility semantics. |
+| #52130 | fix_needed | planned | canonical | A narrow documentation, Settings-help, and Doctor-regression repair is allowed without reintroducing runtime coercion or a new configuration surface. |
+| cluster:issue-openclaw-openclaw-52130 | build_fix_artifact | planned | canonical | Produce the narrow implementation artifact before opening the one permitted fix PR. |
+| cluster:issue-openclaw-openclaw-52130 | open_fix_pr | planned | canonical | Open the planned narrow fix after the artifact is implemented and validated. |
 
 ## Needs Human
 
