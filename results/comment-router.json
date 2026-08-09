@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T23:39:56.947Z",
+  "updated_at": "2026-08-09T23:40:59.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121219:5233520984:2026-08-09T19:46:25Z:clawsweeper_auto_repair",
-      "comment_id": "5233520984",
-      "comment_version_key": "5233520984:2026-08-09T19:46:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121219#issuecomment-5233520984",
-      "comment_created_at": "2026-08-09T19:46:25Z",
-      "comment_updated_at": "2026-08-09T19:46:25Z",
-      "comment_body_sha256": "fe4c19bfbe7356c29541983585324e8a0760d156ac71ea87af819d35c929373b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e8ce9db5c2f25057ebfa153999b23337dc5e1a80)",
-      "expected_head_sha": "e8ce9db5c2f25057ebfa153999b23337dc5e1a80",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T19:47:02.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "revert-120874-sjf/slack-grid-native-approvals",
-        "head_sha": "e8ce9db5c2f25057ebfa153999b23337dc5e1a80",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:268:5128846606:2026-08-09T19:46:25Z:clawsweeper_auto_repair",
       "comment_id": "5128846606",
@@ -32105,6 +32072,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:384:5229827528:2026-08-09T23:40:09Z:clawsweeper_needs_human",
+      "comment_id": "5229827528",
+      "comment_version_key": "5229827528:2026-08-09T23:40:09Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/384#issuecomment-5229827528",
+      "comment_created_at": "2026-08-09T04:50:08Z",
+      "comment_updated_at": "2026-08-09T23:40:09Z",
+      "comment_body_sha256": "d488229542b45b43c918d7e2243d0b9c4d35ba30fa1ed612591a8cf5846beb4a",
+      "repo": "steipete/summarize",
+      "issue_number": 384,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally moves validation of unstable model IDs for every custom Google endpoint from Gemini Developer API ListModels to the configured endpoint; default Developer API UR... (sha=90f86cbbe4c25ff81b8df6c1fa0df57ecf24661f)",
+      "expected_head_sha": "90f86cbbe4c25ff81b8df6c1fa0df57ecf24661f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T23:40:59.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-custom-base-url-model-resolution",
+        "head_sha": "90f86cbbe4c25ff81b8df6c1fa0df57ecf24661f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
