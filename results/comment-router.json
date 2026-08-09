@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:56:19.576Z",
+  "updated_at": "2026-08-09T21:56:34.102Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117266:5233099913:2026-08-09T18:23:09Z:re_review",
-      "comment_id": "5233099913",
-      "comment_version_key": "5233099913:2026-08-09T18:23:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117266#issuecomment-5233099913",
-      "comment_created_at": "2026-08-09T18:23:09Z",
-      "comment_updated_at": "2026-08-09T18:23:09Z",
-      "comment_body_sha256": "2cbc1fbbd58d37f8d6ab487982aa41e8a36c790ca443f40f985c668e7a8bda61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117266,
-      "author": "yetval",
-      "author_id": 102706514,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-media-branch-retention",
-        "head_sha": "0469ce301257a5be210e6bac6a6593999045f545",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121116:5233119496:2026-08-09T18:25:46Z:re_review",
       "comment_id": "5233119496",
@@ -31979,6 +31932,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120825:5229433138:2026-08-09T21:55:52Z:clawsweeper_needs_human",
+      "comment_id": "5229433138",
+      "comment_version_key": "5229433138:2026-08-09T21:55:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120825#issuecomment-5229433138",
+      "comment_created_at": "2026-08-09T02:43:54Z",
+      "comment_updated_at": "2026-08-09T21:55:52Z",
+      "comment_body_sha256": "d3311fc176cd0b04afa2e259f696ff59f8385b184a368b81062f29cbf68961e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120825,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate connectivity before every plugin token mint (P1)** - connectivity is resolved once at lines 433-444 and then reused for the initial mint and later fallback reissues. If the active route or auth change...; Review finding: [P1] Revalidate connectivity before every plugin token mint — extensions/device-pair/index.ts:467 - [P3] Do not swallow the QR CLI command failure — src/cli/qr-cli... (sha=7ce770f740393d49e0a8fabcdc8fe904d2159912)",
+      "expected_head_sha": "7ce770f740393d49e0a8fabcdc8fe904d2159912",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:56:34.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/pairing-connectivity-preflight",
+        "head_sha": "7ce770f740393d49e0a8fabcdc8fe904d2159912",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
