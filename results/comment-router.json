@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T19:56:44.635Z",
+  "updated_at": "2026-08-09T19:57:32.987Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-09T14:47:54Z:clawsweeper_needs_human",
-      "comment_id": "5230661991",
-      "comment_version_key": "5230661991:2026-08-09T14:47:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
-      "comment_created_at": "2026-08-09T08:49:31Z",
-      "comment_updated_at": "2026-08-09T14:47:54Z",
-      "comment_body_sha256": "f1a83b20e17135fdb08d48035bed43de9235759042fb987cd2d1cca49ff492db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Forward a one-shot acknowledgement through every install scan (P1)** - The new callback is injected here, but archive and npm helpers drop it before their policy scans, so an acknowledged retry returns the same...; Review finding: [P1] Forward a one-shot acknowledgement through every install scan — src/plugins/management-service.ts:1441-1447 - [P1] Preserve warning details after post-install... (sha=3d6a6ca44c551649831b90ba2c7c71c15b5efa5f)",
-      "expected_head_sha": "3d6a6ca44c551649831b90ba2c7c71c15b5efa5f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T15:49:33.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/install-policy-warning-gateway",
-        "head_sha": "afc52544fc596c48ce5f0f21c5514ff58d4a8a90",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121051:5231351555:2026-08-09T14:52:48Z:clawsweeper_auto_repair",
       "comment_id": "5231351555",
@@ -32962,6 +32929,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:17:4759967424:2026-08-09T19:47:28Z:clawsweeper_needs_human",
+      "comment_id": "4759967424",
+      "comment_version_key": "4759967424:2026-08-09T19:47:28Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/17#issuecomment-4759967424",
+      "comment_created_at": "2026-06-20T20:57:22Z",
+      "comment_updated_at": "2026-08-09T19:47:28Z",
+      "comment_body_sha256": "3a9702695dc8bb34b34aeed432c94a4197b881cb474bfcfc2e057d0d23ff8b2e",
+      "repo": "openclaw/rfcs",
+      "issue_number": 17,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepting the RFC commits OpenClaw to compatibility expectations for Gateway commands, plugins, persisted sessions, restarts, and durable message delivery before maintainers choose th... (sha=ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4)",
+      "expected_head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T19:57:32.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-independent-core-rfc",
+        "head_sha": "ffa5250ddcb49ff62bd830e7fda66a30dfa90ef4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
