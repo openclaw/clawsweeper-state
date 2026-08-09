@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T16:43:14.617Z",
+  "updated_at": "2026-08-09T16:43:18.323Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:481:5118252862:2026-08-09T12:09:34Z:clawsweeper_needs_human",
-      "comment_id": "5118252862",
-      "comment_version_key": "5118252862:2026-08-09T12:09:34Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/481#issuecomment-5118252862",
-      "comment_created_at": "2026-07-29T13:15:36Z",
-      "comment_updated_at": "2026-08-09T12:09:34Z",
-      "comment_body_sha256": "75bfb35ddb4ddb185d581113bb6aee0c32a232363052349feb5834afe57ad5bb",
-      "repo": "openclaw/acpx",
-      "issue_number": 481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Describe origin fields as opaque producer hints (P2)** - _meta values and message IDs come directly from the adapter; the allowlist controls which keys pass through but does not authenticate them. State that con...; Review finding: [P2] Describe origin fields as opaque producer hints — src/runtime/public/contract.ts:183-187 - [low] Producer metadata is not authenticated — src/runtime/public/c... (sha=cd74b417cc004d5145644d57f10003d7291978a5)",
-      "expected_head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T12:10:16.211Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/runtime-text-delta-origin",
-        "head_sha": "cd74b417cc004d5145644d57f10003d7291978a5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:494:5223616670:2026-08-09T12:09:57Z:clawsweeper_auto_repair",
       "comment_id": "5223616670",
@@ -32997,6 +32964,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T16:43:14.617Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120816:5229416876:2026-08-09T16:39:22Z:clawsweeper_needs_human",
+      "comment_id": "5229416876",
+      "comment_version_key": "5229416876:2026-08-09T16:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120816#issuecomment-5229416876",
+      "comment_created_at": "2026-08-09T02:39:09Z",
+      "comment_updated_at": "2026-08-09T16:39:22Z",
+      "comment_body_sha256": "93bb9acbf9ebc9cdb6f20bb4875d092ead646a8609f783b8e48a022a40075dc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes concurrency for 31 QA evidence producers; a mistaken parallel-safety declaration could reintroduce CI-only cache, port, process, or credential contention. The provi... (sha=58ae24815b4186f328041d628b0e571229ac96ce)",
+      "expected_head_sha": "58ae24815b4186f328041d628b0e571229ac96ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T16:43:18.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "vincent/qa-lab-aggregate-scheduler-cache",
+        "head_sha": "58ae24815b4186f328041d628b0e571229ac96ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
