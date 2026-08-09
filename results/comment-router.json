@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-09T21:55:33.107Z",
+  "updated_at": "2026-08-09T21:55:34.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112024:5232945425:2026-08-09T18:03:14Z:re_review",
-      "comment_id": "5232945425",
-      "comment_version_key": "5232945425:2026-08-09T18:03:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112024#issuecomment-5232945425",
-      "comment_created_at": "2026-08-09T18:03:14Z",
-      "comment_updated_at": "2026-08-09T18:03:14Z",
-      "comment_body_sha256": "8cace78728d1b2493d5ffe0978cbfb99768a25334e29b825ed2629e9c8205ef3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112024,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T18:40:33.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pdf-tool-bound-maxbytes",
-        "head_sha": "1bf6e9114bac3d35aaffce014171cb190729c017",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121065:5232986230:2026-08-09T18:08:17Z:re_review",
       "comment_id": "5232986230",
@@ -32071,6 +32024,39 @@
         "kind": "pull_request",
         "branch": "codex/qa0809-telegram-final-media-dedup",
         "head_sha": "2e5889362d7332eeb6999b3362630246eabc411d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121087:5232859287:2026-08-09T21:52:46Z:clawsweeper_needs_human",
+      "comment_id": "5232859287",
+      "comment_version_key": "5232859287:2026-08-09T21:52:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121087#issuecomment-5232859287",
+      "comment_created_at": "2026-08-09T17:45:27Z",
+      "comment_updated_at": "2026-08-09T21:52:46Z",
+      "comment_body_sha256": "c3b5d0a242055006080a1e9888545ebb56910730bb258a083e0ab777002f8713",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121087,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as behind main; use the current merge result and required checks at landing time, without inferring a regression from base drift alone. (sha=c7f2764e75239678c33ec8b68139d7ce658daeee)",
+      "expected_head_sha": "c7f2764e75239678c33ec8b68139d7ce658daeee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-09T21:55:34.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-sidebar-text-scale",
+        "head_sha": "c7f2764e75239678c33ec8b68139d7ce658daeee",
         "cluster_id": null,
         "job_path": null
       }
