@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-09T19:20:04.398Z",
+  "updated_at": "2026-08-09T19:22:44.767Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117056:5147826129:2026-08-09T14:46:30Z:clawsweeper_needs_human",
-      "comment_id": "5147826129",
-      "comment_version_key": "5147826129:2026-08-09T14:46:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117056#issuecomment-5147826129",
-      "comment_created_at": "2026-07-31T21:59:44Z",
-      "comment_updated_at": "2026-08-09T14:46:30Z",
-      "comment_body_sha256": "dfbeeec406a8c52caa3136036f9935d2be8a8cb0201bba3c138b58cec39d94f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local environment could not inspect the pinned OpenAI SDK or run a live request, so the .withResponse() stream-abort contract remains independently unproven before merge. (sha=8c0b23052b81ea04b9f780dd2099cc015cb117e2)",
-      "expected_head_sha": "8c0b23052b81ea04b9f780dd2099cc015cb117e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T14:47:17.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/wave3-openai-chat-response-hook",
-        "head_sha": "8c0b23052b81ea04b9f780dd2099cc015cb117e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113902:5081013519:2026-08-09T14:46:39Z:clawsweeper_auto_repair",
       "comment_id": "5081013519",
@@ -33110,6 +33077,39 @@
       "status": "skipped",
       "processed_at": "2026-08-09T19:20:04.398Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1085:5232709625:2026-08-09T19:22:02Z:clawsweeper_auto_repair",
+      "comment_id": "5232709625",
+      "comment_version_key": "5232709625:2026-08-09T19:22:02Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1085#issuecomment-5232709625",
+      "comment_created_at": "2026-08-09T17:08:14Z",
+      "comment_updated_at": "2026-08-09T19:22:02Z",
+      "comment_body_sha256": "953091ee87a56fd7c4894ccee398a296f15fe26ac5ea715809dd79a46518a12b",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1085,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a6d4e9c351b5c1680618ba9ce844002151df0598)",
+      "expected_head_sha": "a6d4e9c351b5c1680618ba9ce844002151df0598",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-09T19:22:44.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-109-publication-batch-labels",
+        "head_sha": "a6d4e9c351b5c1680618ba9ce844002151df0598",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
