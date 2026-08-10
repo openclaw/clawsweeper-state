@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:02:31.483Z",
+  "updated_at": "2026-08-10T19:02:34.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4805535201:2026-06-26T01:06:55Z:re_review",
-      "comment_id": "4805535201",
-      "comment_version_key": "4805535201:2026-06-26T01:06:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4805535201",
-      "comment_created_at": "2026-06-26T01:06:55Z",
-      "comment_updated_at": "2026-06-26T01:06:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:00:36.414Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4806301160:2026-06-26T04:15:25Z:re_review",
       "comment_id": "4806301160",
@@ -31807,6 +31780,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T19:02:31.483Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120341:5221896707:2026-08-10T19:01:37Z:clawsweeper_needs_human",
+      "comment_id": "5221896707",
+      "comment_version_key": "5221896707:2026-08-10T19:01:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120341#issuecomment-5221896707",
+      "comment_created_at": "2026-08-07T20:53:24Z",
+      "comment_updated_at": "2026-08-10T19:01:37Z",
+      "comment_body_sha256": "ce3e70d800f50497b75d3c771f80cd9eb84811d93be5a75cb59f9a72d678b15b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120341,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body claims CI passed but contains no redacted after-fix trace for credential rotation, workflow execution, or native dependency resolut...; Review finding: [P1] Keep materialized secrets in profile fingerprints — src/agents/execution-auth-binding.ts:282-292 - [P1] Bind selected ambient credential values — src/agents/e... (sha=dc711505281ecc3095987bcc62863a7ffd0dae3f)",
+      "expected_head_sha": "dc711505281ecc3095987bcc62863a7ffd0dae3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:02:34.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "main",
+        "head_sha": "dc711505281ecc3095987bcc62863a7ffd0dae3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
