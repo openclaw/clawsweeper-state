@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:43:31.392Z",
+  "updated_at": "2026-08-10T05:45:57.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121116:5233561177:2026-08-09T19:56:36Z:re_review",
-      "comment_id": "5233561177",
-      "comment_version_key": "5233561177:2026-08-09T19:56:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121116#issuecomment-5233561177",
-      "comment_created_at": "2026-08-09T19:56:36Z",
-      "comment_updated_at": "2026-08-09T19:56:36Z",
-      "comment_body_sha256": "8135237613827313f3fa74d8a3c21167802bf9061aa55958d3ef81a9635f5390",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121116,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — operation scoping addressed in d3a0d09dbae: formatmsteamssenderrorhint now takes an operation parameter; edit/delete catches pass \"edit\"/\"delete\" and get operation-specific ambiguous text (\"may have applied the edit\" / \"may have completed the deletion — verify the message state in teams before retrying\") instead of the create-oriented duplicate-delivery wording. focused 503 regressions added for both operations (errors.test.ts operation cases + send.test.ts end-to-end edit/delete hint assertions); 125 tests pass across the affected files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T00:53:52.775Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121299:5234772815:2026-08-10T00:53:18Z:clawsweeper_needs_human",
       "comment_id": "5234772815",
@@ -32311,6 +32284,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119532:5236366282:2026-08-10T05:45:25Z:re_review",
+      "comment_id": "5236366282",
+      "comment_version_key": "5236366282:2026-08-10T05:45:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119532#issuecomment-5236366282",
+      "comment_created_at": "2026-08-10T05:45:25Z",
+      "comment_updated_at": "2026-08-10T05:45:25Z",
+      "comment_body_sha256": "494693a3352687beef013f1586e8088574e8c9f33bbc5cd9432ed2cb4ead051a",
+      "source_delivery_id": "afada920-947e-11f1-8cdf-e33597f953b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119532,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T05:45:55.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-retry-dispatched-cap-119313",
+        "head_sha": "1f854c75d66c6ff35ae7515c90d16a10d4ae1721",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
