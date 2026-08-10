@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:54:05.349Z",
+  "updated_at": "2026-08-10T21:54:13.330Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121544:5239923169:2026-08-10T12:11:00Z:re_review",
-      "comment_id": "5239923169",
-      "comment_version_key": "5239923169:2026-08-10T12:11:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121544#issuecomment-5239923169",
-      "comment_created_at": "2026-08-10T12:11:00Z",
-      "comment_updated_at": "2026-08-10T12:11:00Z",
-      "comment_body_sha256": "8ba15f8ea38b8ae1887a01548f22f960654c361fbc12ace4fb287cd49dc7cdc5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121544,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T17:56:44.430Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121544:5240414788:2026-08-10T12:41:38Z:re_review",
       "comment_id": "5240414788",
@@ -31784,6 +31757,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T21:54:05.349Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-10T21:50:20Z:clawsweeper_needs_human",
+      "comment_id": "5229031651",
+      "comment_version_key": "5229031651:2026-08-10T21:50:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120736#issuecomment-5229031651",
+      "comment_created_at": "2026-08-09T00:42:16Z",
+      "comment_updated_at": "2026-08-10T21:50:20Z",
+      "comment_body_sha256": "e464cb4ce0c4d94c98330f3d9f8bba56edc5e80d8a9403776874725f5753ce54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The emitted JSON Schema gains 19 documented channel paths, which exact-schema CLI or UI consumers will observe as an additive contract. (sha=ad06a316ba2c9d6aa088f1297970de88a7ea1be0)",
+      "expected_head_sha": "ad06a316ba2c9d6aa088f1297970de88a7ea1be0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:54:13.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-schema-channel-core-keys",
+        "head_sha": "ad06a316ba2c9d6aa088f1297970de88a7ea1be0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
