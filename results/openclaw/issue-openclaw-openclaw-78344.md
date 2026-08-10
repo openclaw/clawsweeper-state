@@ -1,0 +1,80 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-78344"
+mode: "autonomous"
+run_id: "31345729597"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31345729597"
+head_sha: "13f8ffdea32ad5d0940f490cf57e291414b9a26f"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-10T01:09:56.281Z"
+canonical: "https://github.com/openclaw/openclaw/issues/78344"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/78344"
+canonical_pr: null
+actions_total: 8
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 0
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-78344
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31345729597](https://github.com/openclaw/clawsweeper/actions/runs/31345729597)
+
+Workflow conclusion: failure
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/78344
+
+## Summary
+
+Confirmed a narrow current-main defect: restart recovery marks provenance internal but omits sessionEffects="internal", allowing visible session persistence. A one-line dispatch fix plus focused regression is ready for an executor; this read-only checkout cannot apply it and lacks tsx for local tests.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 8 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 0 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #43567 | keep_related | planned | related | Different scope; keep open independently. |
+| #69492 | keep_closed | skipped | related | Closed historical context only. |
+| #70289 | keep_closed | skipped | related | Closed historical context only. |
+| #70373 | keep_closed | skipped | related | Closed historical context only. |
+| #78344 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only, dependency-incomplete worker checkout; no maintainer decision is needed. |
+| #92870 | keep_related | planned | related | Distinct continuation producer and execution order. |
+| #95154 | keep_closed | skipped | related | Closed, unmerged, and only partially adjacent. |
+| cluster:issue-openclaw-openclaw-78344 | build_fix_artifact | planned | canonical | Create the one allowed narrow implementation PR from clawsweeper/issue-openclaw-openclaw-78344. |
+
+## Needs Human
+
+- none
