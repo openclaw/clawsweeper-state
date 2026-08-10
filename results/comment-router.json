@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:02:40.406Z",
+  "updated_at": "2026-08-10T10:02:54.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114079:5231853655:2026-08-09T13:49:22Z:re_review",
-      "comment_id": "5231853655",
-      "comment_version_key": "5231853655:2026-08-09T13:49:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114079#issuecomment-5231853655",
-      "comment_created_at": "2026-08-09T13:49:22Z",
-      "comment_updated_at": "2026-08-09T13:49:22Z",
-      "comment_body_sha256": "b6b5bb57515401ad988e95f418692a3b875d83469e3dbdabccfae6722f998189",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114079,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:03:27.895Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114079:5232513374:2026-08-09T16:20:58Z:re_review",
       "comment_id": "5232513374",
@@ -32101,6 +32074,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T10:02:40.406Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121488:5237392391:2026-08-10T10:02:07Z:clawsweeper_needs_human",
+      "comment_id": "5237392391",
+      "comment_version_key": "5237392391:2026-08-10T10:02:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121488#issuecomment-5237392391",
+      "comment_created_at": "2026-08-10T07:54:00Z",
+      "comment_updated_at": "2026-08-10T10:02:07Z",
+      "comment_body_sha256": "3762f748c77c673a8746af3560953bf2425a88f76d751aa21cad482370e671d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121488,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence is tests and mocked persistence; the PR states its real persisted-history E2E timed out before assertions, so it needs re...; Review finding: [P1] Restrict persisted diagnostics to safe bridge failures — src/agents/embedded-agent-runner/terminal-tool-failure.ts:35-43 - [medium] Raw Code Mode errors reach... (sha=413fdcb4114b3b6ffcf062e82b80e7a850f9abc0)",
+      "expected_head_sha": "413fdcb4114b3b6ffcf062e82b80e7a850f9abc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:02:54.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-tool-policy-diagnostics",
+        "head_sha": "413fdcb4114b3b6ffcf062e82b80e7a850f9abc0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
