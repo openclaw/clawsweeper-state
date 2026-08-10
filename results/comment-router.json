@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:52:57.439Z",
+  "updated_at": "2026-08-10T06:53:08.930Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121254:5235153798:2026-08-10T02:13:37Z:re_review",
-      "comment_id": "5235153798",
-      "comment_version_key": "5235153798:2026-08-10T02:13:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121254#issuecomment-5235153798",
-      "comment_created_at": "2026-08-10T02:13:37Z",
-      "comment_updated_at": "2026-08-10T02:13:37Z",
-      "comment_body_sha256": "4ee8bdfeb772a42e1f44b56aba0efb324f7917e6fa5ba495623d6c1f13f2e38a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121254,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T02:42:20.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/control-ui-optimistic-session-pin",
-        "head_sha": "5b3a8dae486cdc1dfc7486b4eadcba3b4391f359",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5235173314:2026-08-10T02:16:47Z:re_review",
       "comment_id": "5235173314",
@@ -32407,6 +32360,39 @@
         "kind": "pull_request",
         "branch": "steipete/shadow-hazard-renames-0810",
         "head_sha": "809f6ebe3e697eb7a334afbc217111a03ba9d090",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101813:4906248423:2026-08-10T06:47:11Z:clawsweeper_needs_human",
+      "comment_id": "4906248423",
+      "comment_version_key": "4906248423:2026-08-10T06:47:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101813#issuecomment-4906248423",
+      "comment_created_at": "2026-07-07T16:53:13Z",
+      "comment_updated_at": "2026-08-10T06:47:11Z",
+      "comment_body_sha256": "bcc02fb8c1a18dd2ba0f85df31af0dc6b57a583691a1f3a7ab67daadb77c55f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101813,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve out-of-root dependency symlink validation (P1)** - Late finding: this now returns after the optional policy and deletes the installed-tree traversal that rejects a node_modules/openclaw link outside the...; Review finding: [P1] Preserve out-of-root dependency symlink validation — src/plugins/install-security-scan.runtime.ts:434 - [high] External dependency symlink can bypass containm... (sha=7b6cd623021dd1f53c31229af770fe5d3e345ed5)",
+      "expected_head_sha": "7b6cd623021dd1f53c31229af770fe5d3e345ed5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:53:08.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/remove-local-dep-denylist",
+        "head_sha": "7b6cd623021dd1f53c31229af770fe5d3e345ed5",
         "cluster_id": null,
         "job_path": null
       }
