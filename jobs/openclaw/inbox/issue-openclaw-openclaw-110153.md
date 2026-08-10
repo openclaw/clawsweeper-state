@@ -67,17 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the duplicate mutating-tool warning when the visible assistant reply truthfully reports an action being rejected. In src/agents/embedded-agent-runner/run/tool-failure-acknowledgement.ts, extend only the action-bound negative-outcome recognition needed for phrases such as “The sub-issue API rejected the link,” retaining negative/no-op protections. Add focused payload regressions in src/agents/embedded-agent-runner/run/payloads.errors.test.ts proving the truthful acknowledgement emits only the assistant reply and unacknowledged mutation failures still warn. Do not change isToolResultError, exec completed-status handling, mutation fingerprint recovery, warning-policy branches, config surfaces, or CHANGELOG.md. Stop and escalate if the repair requires a new policy/configuration choice.
+Repair the remaining duplicate tool-warning bug. Preserve the merged completed-semantic-exit classifier and fail-closed same-action recovery rules. Extend final-reply acknowledgement handling to recognize truthful negative outcomes such as a rejected API action without suppressing warnings for unrelated prose; add regressions proving an acknowledged failure avoids the duplicate warning and an unacknowledged failure still warns. Do not add configuration, alter the exit-code contract, loosen cross-target recovery, or edit CHANGELOG.md. Include concise release-note context in the PR body.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/run/tool-failure-acknowledgement.ts
-- src/agents/embedded-agent-runner/run/payloads.errors.test.ts
+- src/agents/embedded-agent-runner/run/payloads.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/payloads.errors.test.ts
-- node scripts/run-vitest.mjs src/agents/tool-error-state.test.ts src/agents/tool-terminal-outcome.test.ts
+- node scripts/run-vitest.mjs src/agents/embedded-agent-runner/run/payloads.test.ts
+- node scripts/run-vitest.mjs src/agents/tool-error-state.test.ts src/agents/tool-result-error.test.ts src/agents/embedded-agent-subscribe.tools.test.ts
+- git diff --check
 
 ## Operator Prompt
 
