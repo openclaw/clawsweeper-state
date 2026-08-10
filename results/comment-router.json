@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:02:54.841Z",
+  "updated_at": "2026-08-10T17:03:10.058Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5240410521:2026-08-10T12:41:15Z:re_review",
-      "comment_id": "5240410521",
-      "comment_version_key": "5240410521:2026-08-10T12:41:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5240410521",
-      "comment_created_at": "2026-08-10T12:41:15Z",
-      "comment_updated_at": "2026-08-10T12:41:15Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "c7815030-94b8-11f1-834a-50836a8e4e9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T12:42:01.436Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "89062a02e960f185c5b4fa30fb9a770954126346",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121544:5240414788:2026-08-10T12:41:38Z:re_review",
-      "comment_id": "5240414788",
-      "comment_version_key": "5240414788:2026-08-10T12:41:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121544#issuecomment-5240414788",
-      "comment_created_at": "2026-08-10T12:41:38Z",
-      "comment_updated_at": "2026-08-10T12:41:38Z",
-      "comment_body_sha256": "ebca1612aec669de274972d7b887b11e359b6308cf2148585cea77a44b50bc7e",
-      "source_delivery_id": "d4a65580-94b8-11f1-8597-46be9a0f557d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121544,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T12:42:14.660Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/plugin-command-identity",
-        "head_sha": "5fcdb816e5e373ab3defe9d95f114ce3f360b8b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119620:5192856365:2026-08-10T12:42:32Z:clawsweeper_needs_human",
       "comment_id": "5192856365",
@@ -31252,6 +31156,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-10T17:02:13Z:clawsweeper_needs_human",
+      "comment_id": "5229043394",
+      "comment_version_key": "5229043394:2026-08-10T17:02:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229043394",
+      "comment_created_at": "2026-08-09T00:45:52Z",
+      "comment_updated_at": "2026-08-10T17:02:13Z",
+      "comment_body_sha256": "146ef3b6c29ed247c3b6a144eeb0673a80190fdd66324b880be88faa77adb304",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Discard shared credentials after bootstrap pairing (P1)** - This block drops only the bootstrap token and preference. token/password remain on the client, and the reconnect selector prefers them over the device...; Review finding: [P1] Discard shared credentials after bootstrap pairing — packages/gateway-client/src/client.ts:989-994 - [medium] Shared credentials survive device-auth handoff —... (sha=20dabfd2d371ba81f22b982e2c227ce07b2268c6)",
+      "expected_head_sha": "20dabfd2d371ba81f22b982e2c227ce07b2268c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T17:03:10.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runners-m3-pair-url",
+        "head_sha": "20dabfd2d371ba81f22b982e2c227ce07b2268c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120768:5229384793:2026-08-09T02:32:52Z:re_review",
+      "comment_id": "5229384793",
+      "comment_version_key": "5229384793:2026-08-09T02:32:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229384793",
+      "comment_created_at": "2026-08-09T02:32:52Z",
+      "comment_updated_at": "2026-08-09T02:32:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T17:03:10.058Z",
+      "target": null
     }
   ]
 }
