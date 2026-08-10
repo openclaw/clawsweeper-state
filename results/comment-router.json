@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T11:53:17.865Z",
+  "updated_at": "2026-08-10T11:53:36.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119525:5237032435:2026-08-10T07:14:14Z:re_review",
-      "comment_id": "5237032435",
-      "comment_version_key": "5237032435:2026-08-10T07:14:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119525#issuecomment-5237032435",
-      "comment_created_at": "2026-08-10T07:14:14Z",
-      "comment_updated_at": "2026-08-10T07:14:14Z",
-      "comment_body_sha256": "e96e7b00ca01368a96baf46c172b5471e132a4024066f92897a421e33d4b2b2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119525,
-      "author": "momothemage",
-      "author_id": 35096042,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T07:46:41.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/memory-search-timeout-classification",
-        "head_sha": "cca783dc532834f06074292703c6e971a397ecb7",
-        "cluster_id": "automerge-openclaw-openclaw-119525",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120534:5225762219:2026-08-10T07:45:05Z:clawsweeper_needs_human",
       "comment_id": "5225762219",
@@ -32471,6 +32424,39 @@
         "kind": "pull_request",
         "branch": "leon/plugin-activation-canonical-20260810",
         "head_sha": "098b423d836e49a2004bf8e18386eeee8afbad18",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121557:5239242955:2026-08-10T11:52:50Z:clawsweeper_needs_human",
+      "comment_id": "5239242955",
+      "comment_version_key": "5239242955:2026-08-10T11:52:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5239242955",
+      "comment_created_at": "2026-08-10T10:59:43Z",
+      "comment_updated_at": "2026-08-10T11:52:50Z",
+      "comment_body_sha256": "f7a2890de1d2c825583878d1bbd0c56b441bb8c4f7c98afcc6adff61643a5e79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body supplies exact-head Playwright output, but it drives the browser through a mocked Gateway; add redacted after-fix proof against a r... (sha=5fecff5f1b4ab60928f1c4b82bd81ca9f123d685)",
+      "expected_head_sha": "5fecff5f1b4ab60928f1c4b82bd81ca9f123d685",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T11:53:36.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "5fecff5f1b4ab60928f1c4b82bd81ca9f123d685",
         "cluster_id": null,
         "job_path": null
       }
