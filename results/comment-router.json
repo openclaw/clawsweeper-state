@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T12:58:40.217Z",
+  "updated_at": "2026-08-10T12:58:41.334Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121459:5236858994:2026-08-10T06:52:52Z:clawsweeper_needs_human",
-      "comment_id": "5236858994",
-      "comment_version_key": "5236858994:2026-08-10T06:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121459#issuecomment-5236858994",
-      "comment_created_at": "2026-08-10T06:52:52Z",
-      "comment_updated_at": "2026-08-10T06:52:52Z",
-      "comment_body_sha256": "3d0cde5b4e75501845cdb18790563fd54319ef6ccac4c1f2ffafe162ce53f6db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Cancel abandoned scope-upgrade waiters (P2)** - waitUpgrade has no cancellation or connection-lifecycle input, so Cancel/Retry only aborts the browser's pending request. The coordinator continues rereading pairi...; Review finding: [P2] Cancel abandoned scope-upgrade waiters — src/gateway/server-methods/device-scope-upgrade.ts:163 - [medium] Abandoned waits keep polling pairing state — src/ga... (sha=e55017b0d747e14fe6c72a78acb740e9a9d21358)",
-      "expected_head_sha": "e55017b0d747e14fe6c72a78acb740e9a9d21358",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:03:03.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/scope-upgrade-ux",
-        "head_sha": "18755b4547675032515a1608253ffd1ac7d64896",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121475:5236859419:2026-08-10T07:56:44Z:clawsweeper_auto_repair",
       "comment_id": "5236859419",
@@ -32932,6 +32899,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118169:5240598419:2026-08-10T12:57:54Z:re_review",
+      "comment_id": "5240598419",
+      "comment_version_key": "5240598419:2026-08-10T12:57:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5240598419",
+      "comment_created_at": "2026-08-10T12:57:54Z",
+      "comment_updated_at": "2026-08-10T12:57:54Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "source_delivery_id": "1ac8f9d0-94bb-11f1-822a-5425bf1a7186",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118169,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T12:58:38.990Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup",
+        "head_sha": "f931df961d13e7380ebc7c08bd40dc1225e790e9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119675:5194294895:2026-08-10T12:57:55Z:clawsweeper_auto_repair",
