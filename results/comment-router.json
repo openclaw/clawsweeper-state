@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:53:02.332Z",
+  "updated_at": "2026-08-10T04:53:03.943Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-09T23:50:19Z:clawsweeper_needs_human",
-      "comment_id": "5134107795",
-      "comment_version_key": "5134107795:2026-08-09T23:50:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
-      "comment_created_at": "2026-07-30T17:24:48Z",
-      "comment_updated_at": "2026-08-09T23:50:19Z",
-      "comment_body_sha256": "4dcc892fc4c2cb19b733bd0f1ff39dad61d6e85d7823803ca0fc4b61d05cc576",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the legacy unsafe flag non-authorizing (P1)** - Current main documents this flag as a no-op that cannot bypass security.installPolicy. This new branch makes a policy warn succeed whenever the flag is suppli...; Review finding: [P1] Keep the legacy unsafe flag non-authorizing — src/plugins/install-security-scan.runtime.ts:1005-1007 - [high] Legacy CLI flag authorizes policy warnings — src... (sha=89ea75b796a5a4b163da39a0bd81a5916944a344)",
-      "expected_head_sha": "89ea75b796a5a4b163da39a0bd81a5916944a344",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:55:02.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "89ea75b796a5a4b163da39a0bd81a5916944a344",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-08-09T19:41:37Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -32075,6 +32042,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119532:5236014777:2026-08-10T04:52:31Z:re_review",
+      "comment_id": "5236014777",
+      "comment_version_key": "5236014777:2026-08-10T04:52:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119532#issuecomment-5236014777",
+      "comment_created_at": "2026-08-10T04:52:31Z",
+      "comment_updated_at": "2026-08-10T04:52:31Z",
+      "comment_body_sha256": "981a6f32abdf75b0f11c0d23b8ba44822a607e724b018f6e8cd0f9dcc09b4241",
+      "source_delivery_id": "4c23a6e0-9477-11f1-9ea3-58db1f6edcf7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119532,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T04:53:02.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-retry-dispatched-cap-119313",
+        "head_sha": "7eb5c4cd908a8fdef60629400ff064a3c236814d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
