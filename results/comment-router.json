@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T15:00:47.966Z",
+  "updated_at": "2026-08-10T15:01:18.387Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119950:5205354809:2026-08-10T10:47:26Z:clawsweeper_needs_human",
-      "comment_id": "5205354809",
-      "comment_version_key": "5205354809:2026-08-10T10:47:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119950#issuecomment-5205354809",
-      "comment_created_at": "2026-08-06T13:37:11Z",
-      "comment_updated_at": "2026-08-10T10:47:26Z",
-      "comment_body_sha256": "0c17d91ed5f1a077d90949e8dd7a05638a9ea93ac782b7532f41279d90ad15df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind before hostname discovery (P1)** - getTailnetHostnameAfterServe retries while the daemon settles; awaiting exposure before startListening can leave a configured route unable to reach the Gateway for that re...; Review finding: [P1] Bind before hostname discovery — src/gateway/server-tailscale.ts:33-41 - [medium] Hostname discovery gates Gateway readiness — src/gateway/server-tailscale.ts... (sha=97f214167367ac393ec21f9f2c608de2b2416b3c)",
-      "expected_head_sha": "97f214167367ac393ec21f9f2c608de2b2416b3c",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-10T10:54:36.454Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-898-v2",
-        "head_sha": "97f214167367ac393ec21f9f2c608de2b2416b3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121022:5231594288:2026-08-10T10:50:56Z:clawsweeper_needs_human",
       "comment_id": "5231594288",
@@ -31050,6 +31017,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T15:00:47.966Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T15:00:40Z:re_review",
+      "comment_id": "5240341720",
+      "comment_version_key": "5240341720:2026-08-10T15:00:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5240341720",
+      "comment_created_at": "2026-08-10T12:35:38Z",
+      "comment_updated_at": "2026-08-10T15:00:40Z",
+      "comment_body_sha256": "0d87d6f1625b16da8ce1115f992aa1f4dcc085fceabac36dd5885b9ba59c2751",
+      "source_delivery_id": "409127d0-94cc-11f1-8086-c5eb7fd8d033",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121526,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T15:01:16.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
+        "head_sha": "c96a1d63670f8494f79f565eb0fe43a717b66fef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
