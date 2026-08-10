@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:21:48.586Z",
+  "updated_at": "2026-08-10T04:28:22.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120534:5225762219:2026-08-09T23:42:46Z:clawsweeper_needs_human",
-      "comment_id": "5225762219",
-      "comment_version_key": "5225762219:2026-08-09T23:42:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120534#issuecomment-5225762219",
-      "comment_created_at": "2026-08-08T10:46:25Z",
-      "comment_updated_at": "2026-08-09T23:42:46Z",
-      "comment_body_sha256": "de14c372b9fc1effafa1bfd5e379ebff39c09593e4dcca59a48d2fc4d4ac39ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120534,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify closure-bound authority on the current head** - The prior review identified Copilot's legacy capability path as a policy-boundary gap; without the current head, it is not possibl...; Review finding: [medium] Verify closure-bound authority on the current head (sha=1eadad8eda6caea1d331d91cef2cfaad3a296ec7)",
-      "expected_head_sha": "1eadad8eda6caea1d331d91cef2cfaad3a296ec7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:46:13.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-f1r-canonical-execution-context-carrier",
-        "head_sha": "1eadad8eda6caea1d331d91cef2cfaad3a296ec7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-09T22:57:55Z:clawsweeper_auto_repair",
       "comment_id": "5229031651",
@@ -32023,6 +31990,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/imsg:217:5235863514:2026-08-10T04:27:34Z:re_review",
+      "comment_id": "5235863514",
+      "comment_version_key": "5235863514:2026-08-10T04:27:34Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/217#issuecomment-5235863514",
+      "comment_created_at": "2026-08-10T04:27:34Z",
+      "comment_updated_at": "2026-08-10T04:27:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "cfc9ba10-9473-11f1-8777-50d93301cb1a",
+      "repo": "openclaw/imsg",
+      "issue_number": 217,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T04:28:20.252Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rpc-status-degraded",
+        "head_sha": "842da307d050ee4c00b6c26dde5aab40743a53ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
