@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:51:09.077Z",
+  "updated_at": "2026-08-10T10:51:19.090Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121472:5236825872:2026-08-10T06:48:28Z:clawsweeper_needs_human",
-      "comment_id": "5236825872",
-      "comment_version_key": "5236825872:2026-08-10T06:48:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121472#issuecomment-5236825872",
-      "comment_created_at": "2026-08-10T06:48:28Z",
-      "comment_updated_at": "2026-08-10T06:48:28Z",
-      "comment_body_sha256": "f62eb837d0b8ede9eef822abd0bd3ffb856607685cd20a9da4b25be08e4bbca8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121472,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fail closed when no installation identity is present (P1)** - A standalone CLI process never starts the monitor, so this lookup returns undefined and the condition admits a bare target. That also admits an Enter...; Review finding: [P1] Fail closed when no installation identity is present — extensions/slack/src/detached-target-admission.ts:7 - [high] Bare Enterprise targets bypass identity es... (sha=d08fc889a0f2c69f71babbfb9b6847adac6f8afa)",
-      "expected_head_sha": "d08fc889a0f2c69f71babbfb9b6847adac6f8afa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:49:10.857Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/slack-cli-detached-identity",
-        "head_sha": "d08fc889a0f2c69f71babbfb9b6847adac6f8afa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119204:5178740801:2026-08-10T06:44:16Z:clawsweeper_needs_human",
       "comment_id": "5178740801",
@@ -32071,6 +32038,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121564:5239160232:2026-08-10T10:50:30Z:clawsweeper_needs_human",
+      "comment_id": "5239160232",
+      "comment_version_key": "5239160232:2026-08-10T10:50:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121564#issuecomment-5239160232",
+      "comment_created_at": "2026-08-10T10:50:30Z",
+      "comment_updated_at": "2026-08-10T10:50:30Z",
+      "comment_body_sha256": "db7cc8a568e746b7db28f6e004b1d1f346f2121ecc5e839cda3ffb502b498ad8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes terminal ownership for visible Cloud Worker sessions; an incorrect claim mode could retain or prematurely clear session activity. Exact-head CI is still incomplete, inclu... (sha=a90aa7c12bdb3e320ba68be0f124b507d2322ed6)",
+      "expected_head_sha": "a90aa7c12bdb3e320ba68be0f124b507d2322ed6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:51:19.090Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/recursing-einstein-6b7a9d",
+        "head_sha": "a90aa7c12bdb3e320ba68be0f124b507d2322ed6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
