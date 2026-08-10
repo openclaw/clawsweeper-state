@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:54:00.632Z",
+  "updated_at": "2026-08-10T22:54:07.904Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5243993156:2026-08-10T17:59:59Z:re_review",
-      "comment_id": "5243993156",
-      "comment_version_key": "5243993156:2026-08-10T17:59:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5243993156",
-      "comment_created_at": "2026-08-10T17:59:59Z",
-      "comment_updated_at": "2026-08-10T17:59:59Z",
-      "comment_body_sha256": "c3d0cf98ec9d60c440b5d4f37232fdc934802e2b75d0b6b94065f1d55ab307db",
-      "source_delivery_id": "4e270e00-94e5-11f1-8a3c-b876d17ac2c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T18:00:39.761Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/voice-transcript-echo-polish",
-        "head_sha": "b28a0bec676ad4e8ecee30228b6c71145dfa5917",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-08-10T16:57:52Z:clawsweeper_needs_human",
       "comment_id": "4469526858",
@@ -32491,6 +32443,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/chat-header-icons-alignment",
         "head_sha": "dc19aa5afc8b250c7e4bcb744a13116855b8c70b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120736:5229031651:2026-08-10T22:53:22Z:clawsweeper_needs_human",
+      "comment_id": "5229031651",
+      "comment_version_key": "5229031651:2026-08-10T22:53:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120736#issuecomment-5229031651",
+      "comment_created_at": "2026-08-09T00:42:16Z",
+      "comment_updated_at": "2026-08-10T22:53:22Z",
+      "comment_body_sha256": "c6912924237cd9e81009be5c664823770731eaffea6ade758e1d0f1543266c70",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The generated JSON Schema gains 19 channel paths, so exact-schema CLI or UI consumers observe an additive public contract even though runtime acceptance is unchanged. (sha=30f3ef24781c7607c029aa260383032293651e18)",
+      "expected_head_sha": "30f3ef24781c7607c029aa260383032293651e18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T22:54:07.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-schema-channel-core-keys",
+        "head_sha": "30f3ef24781c7607c029aa260383032293651e18",
         "cluster_id": null,
         "job_path": null
       }
