@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T01:38:59.072Z",
+  "updated_at": "2026-08-10T01:39:10.260Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-09T20:48:41Z:clawsweeper_auto_repair",
-      "comment_id": "5187051359",
-      "comment_version_key": "5187051359:2026-08-09T20:48:41Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3406#issuecomment-5187051359",
-      "comment_created_at": "2026-08-05T03:04:47Z",
-      "comment_updated_at": "2026-08-09T20:48:41Z",
-      "comment_body_sha256": "c6f2a5cb6f9de0b0a9c78675f5bb2121d6c144f1e0e71498962c3824d7ed47d0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=991295dbf4b626b157f40b263556488a755445fd)",
-      "expected_head_sha": "991295dbf4b626b157f40b263556488a755445fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T20:56:36.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/update-skills",
-        "head_sha": "991295dbf4b626b157f40b263556488a755445fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:494:5223616670:2026-08-09T21:00:29Z:clawsweeper_auto_repair",
       "comment_id": "5223616670",
@@ -32173,6 +32140,54 @@
         "kind": "pull_request",
         "branch": "codex/118560-transcript-search-anchor",
         "head_sha": "ac662c908d96809e69258cebaff026d1b6924095",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121198:5234985526:2026-08-10T01:38:35Z:re_review",
+      "comment_id": "5234985526",
+      "comment_version_key": "5234985526:2026-08-10T01:38:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121198#issuecomment-5234985526",
+      "comment_created_at": "2026-08-10T01:38:35Z",
+      "comment_updated_at": "2026-08-10T01:38:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "342ef230-945c-11f1-9059-932a76380084",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121198,
+      "author": "ilyaZar",
+      "author_id": 36898027,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T01:39:08.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat-android-9-support",
+        "head_sha": "e4791ae9823fedb34ce3b0def2eb1ce188eaa416",
         "cluster_id": null,
         "job_path": null
       },
