@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:59:42.838Z",
+  "updated_at": "2026-08-10T08:59:49.207Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117128:5148652773:2026-08-10T04:56:03Z:clawsweeper_needs_human",
-      "comment_id": "5148652773",
-      "comment_version_key": "5148652773:2026-08-10T04:56:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117128#issuecomment-5148652773",
-      "comment_created_at": "2026-08-01T00:42:02Z",
-      "comment_updated_at": "2026-08-10T04:56:03Z",
-      "comment_body_sha256": "bd79ad26728121dc0bc7cf4990226da3f13fe0fcff3b159ecfffedefc5e4578d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The validation shift is intentionally compatibility-sensitive: config commands now inspect the local host filesystem, so shared or remote config workflows must run on the gateway host... (sha=8a2b177d763dde7e04799adb734205fbf53b8522)",
-      "expected_head_sha": "8a2b177d763dde7e04799adb734205fbf53b8522",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:56:57.275Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-secretref-path-preflight-117051",
-        "head_sha": "8a2b177d763dde7e04799adb734205fbf53b8522",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117128:5200201969:2026-08-06T03:55:55Z:re_review",
       "comment_id": "5200201969",
@@ -31696,6 +31663,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T08:59:42.838Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98539:4853395969:2026-08-10T08:58:55Z:clawsweeper_needs_human",
+      "comment_id": "4853395969",
+      "comment_version_key": "4853395969:2026-08-10T08:58:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/98539#issuecomment-4853395969",
+      "comment_created_at": "2026-07-01T10:33:11Z",
+      "comment_updated_at": "2026-08-10T08:58:55Z",
+      "comment_body_sha256": "2fcb47335c1c8f89f8492451c33195fa7ea7cfee2dad054deac8831e29d99f6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 98539,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed cancellation contract can delay an extension result for its existing five-second graceful cleanup window; that is intentional but is observable to callers. (sha=a3f3b1e404e4555b70de65fa58381a6c68e88a8c)",
+      "expected_head_sha": "a3f3b1e404e4555b70de65fa58381a6c68e88a8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:59:49.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/extension-exec-awaited-cleanup",
+        "head_sha": "a3f3b1e404e4555b70de65fa58381a6c68e88a8c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
