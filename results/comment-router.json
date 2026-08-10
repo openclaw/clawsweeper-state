@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:22:59.902Z",
+  "updated_at": "2026-08-10T14:46:22.156Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121520:5237989508:2026-08-10T09:56:05Z:clawsweeper_needs_human",
-      "comment_id": "5237989508",
-      "comment_version_key": "5237989508:2026-08-10T09:56:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121520#issuecomment-5237989508",
-      "comment_created_at": "2026-08-10T08:53:19Z",
-      "comment_updated_at": "2026-08-10T09:56:05Z",
-      "comment_body_sha256": "d385cd42901979e9c3c757c684fafd035ad429abf64d4411f05e829d21b06dde",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121520,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress and GitHub reports the branch behind main, so merge should wait for validation of the actual mergeable head. (sha=c49b1961edef114d166e767743850cebef26fdd9)",
-      "expected_head_sha": "c49b1961edef114d166e767743850cebef26fdd9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T09:56:42.568Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-worker-reclaim-cleanup",
-        "head_sha": "c49b1961edef114d166e767743850cebef26fdd9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121009:5230893777:2026-08-10T09:57:20Z:clawsweeper_auto_repair",
       "comment_id": "5230893777",
@@ -31370,6 +31337,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113899:5241854231:2026-08-10T14:45:36Z:re_review",
+      "comment_id": "5241854231",
+      "comment_version_key": "5241854231:2026-08-10T14:45:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113899#issuecomment-5241854231",
+      "comment_created_at": "2026-08-10T14:45:36Z",
+      "comment_updated_at": "2026-08-10T14:45:36Z",
+      "comment_body_sha256": "27250f8ca6035b244053cd1fca614283ce41eea9fbe914e8b7fdba6cdcb0d31c",
+      "source_delivery_id": "2643fad0-94ca-11f1-86c9-71dfc17af077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113899,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T14:46:19.552Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-autoqa-qa-channel-dispatch-ack-cursor-81d9",
+        "head_sha": "514439e5aa2b6cbabb07a8b778aeca4f613d4da8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
