@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-121422",
+  "mode": "autonomous",
+  "run_id": "31390672949",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31390672949",
+  "head_sha": "0559e03857fa9a9a6de28c984ed495287ec3b9cc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md",
+  "published_at": "2026-08-10T13:32:54.047Z",
+  "canonical": "#121422",
+  "canonical_issue": null,
+  "canonical_pr": "#121422",
+  "summary": "Make PR #121422 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#121422",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121422",
+      "candidate_fix": "#121422",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "failed": 1,
+    "blocked": 1,
+    "executed": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=all [check:changed] extension-impacting surface; extension typecheck included [check:changed] extensions/memory-core/index.test.ts: extension test [check:changed] extensions/memory-core/index.ts: extension production [check:changed] extensions/memory-core/src/authorization.ts: extension production [check:changed] extensions/memory-core/src/runtime-provider.test.ts: extension test [check:changed] extensions/memory-lancedb/index.test.ts: extension test [check:changed] extensions/memory-lancedb/index.ts: extension production [check:changed] extensions/memory-lancedb/src/authorization.ts: extension production [check:changed] package.json: root config/package surface [check:changed] packages/memory-host-sdk/package.json: core production [check:changed] packages/memory-host-sdk/src/authorization-conformance.ts: core production [check:changed] packages/memory-host-sdk/src/authorization.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance-evidence.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance-scenarios.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-operation-requirements.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization.ts: core production [check:changed] scripts/check-changed.mts: tooling surface [check:changed] scripts/lib/plugin-sdk-entrypoints.json: public core/plugin contract affects extensions [check:changed] scripts/plugin-sdk-surface-report.mts: tooling surface [check:changed] src/memory-host-sdk/host/authorization.ts: core production [check:changed] src/plugin-sdk/memory-authorization-conformance.ts: public core/plugin contract affects extensions [check:changed] src/plugin-sdk/memory-authorization.ts: public core/plugin contract affects extensions [check:changed] src/plugins/contracts/extension-package-project-boundaries.test.ts: public core/plugin contract affects extensions [check:changed] src/plugins/contracts/memory-authorization.contract.test.ts: public core/plugin contract affects extensions [check:changed] src/plugins/memory-runtime.ts: core production [check:changed] src/plugins/memory-state.test.ts: core test [check:changed] src/plugins/memory-state.ts: core production [check:changed] src/plugins/registry-contribution-types.ts: core production [check:changed] src/plugins/registry.dual-kind-memory-gate.test.ts: core test [check:changed] test/scripts/changed-lanes.test.ts: root test/support surface [check:changed] test/scripts/type-suppression-inventory.test.ts: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node --import tsx scripts/check-env-var-count.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node --import tsx scripts/check-duplicates.mts --coverage [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/.i18n/glossary.zh-CN.json docs/concepts/2026-07-29-memory-impl-plan.md docs/concepts/memory-multiplayer.md docs/docs.json docs/plugins/sdk-subpaths.md extensions/memory-core/index.test.ts extensions/memory-core/index.ts extensions/memory-core/src/authorization.ts extensions/memory-core/src/runtime-provider.test.ts extensions/memory-lancedb/index.test.ts extensions/memory-lancedb/index.ts extensions/memory-lancedb/src/authorization.ts package.json packages/memory-host-sdk/package.json packages/memory-host-sdk/src/authorization-conformance.ts packages/memory-host-sdk/src/authorization.ts packages/memory-host-sdk/src/host/authorization-conformance-evidence.ts packages/memory-host-sdk/src/host/authorization-conformance-scenarios.ts packages/memory-host-sdk/src/host/authorization-conformance.ts packages/memory-host-sdk/src/host/authorization-operation-requirements.ts packages/memory-host-sdk/src/host/authorization.ts scripts/check-changed.mts scripts/lib/plugin-sdk-entrypoints.json scripts/plugin-sdk-surface-report.mts src/memory-host-sdk/host/authorization.ts src/plugin-sdk/memory-authorization-conformance.ts src/plugin-sdk/memory-authorization.ts src/plugins/contracts/extension-package-project-boundaries.test.ts src/plugins/contracts/memory-authorization.contract.test.ts src/plugins/memory-runtime.ts src/plugins/memory-state.test.ts src/plugins/memory-state.ts src/plugins/registry-contribution-types.ts src/plugins/registry.dual-kind-memory-gate.test.ts test/scripts/changed-lanes.test.ts test/scripts/type-suppression-inventory.test.ts [check:changed] npm package-lock guard Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-A2rI7p/home/.npm/_logs/2026-08-10T13_26_44_499Z-debug-0.log [check:changed] summary 353ms ok conflict markers 446ms ok environment variable count ratchet 15.86s ok max-lines suppression ratchet 345ms ok changelog attributions 322ms ok doctor deprecation registry 363ms ok guarded extension wildcard re-exports 380ms ok plugin-sdk wildcard re-exports 415ms ok duplicate scan target coverage 414ms ok dependency pin guard 743ms ok format changed files 1.12s failed:1 npm package-lock guard [check:changed] FAILED (exit 1) OPENCLAW_* count 507/507 max-lines ratchet OK: 972 grandfathered suppressions. [doctor-deprecation-registry] OK as of 2026-08-10 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 624 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 383ms on 31 files using 8 threads. Validating 1 npm package lock with 1 job. [ELIFECYCLE] Command failed with exit code 1.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=all [check:changed] extension-impacting surface; extension typecheck included [check:changed] extensions/memory-core/index.test.ts: extension test [check:changed] extensions/memory-core/index.ts: extension production [check:changed] extensions/memory-core/src/authorization.ts: extension production [check:changed] extensions/memory-core/src/runtime-provider.test.ts: extension test [check:changed] extensions/memory-lancedb/index.test.ts: extension test [check:changed] extensions/memory-lancedb/index.ts: extension production [check:changed] extensions/memory-lancedb/src/authorization.ts: extension production [check:changed] package.json: root config/package surface [check:changed] packages/memory-host-sdk/package.json: core production [check:changed] packages/memory-host-sdk/src/authorization-conformance.ts: core production [check:changed] packages/memory-host-sdk/src/authorization.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance-evidence.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance-scenarios.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-conformance.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization-operation-requirements.ts: core production [check:changed] packages/memory-host-sdk/src/host/authorization.ts: core production [check:changed] scripts/check-changed.mts: tooling surface [check:changed] scripts/lib/plugin-sdk-entrypoints.json: public core/plugin contract affects extensions [check:changed] scripts/plugin-sdk-surface-report.mts: tooling surface [check:changed] src/memory-host-sdk/host/authorization.ts: core production [check:changed] src/plugin-sdk/memory-authorization-conformance.ts: public core/plugin contract affects extensions [check:changed] src/plugin-sdk/memory-authorization.ts: public core/plugin contract affects extensions [check:changed] src/plugins/contracts/extension-package-project-boundaries.test.ts: public core/plugin contract affects extensions [check:changed] src/plugins/contracts/memory-authorization.contract.test.ts: public core/plugin contract affects extensions [check:changed] src/plugins/memory-runtime.ts: core production [check:changed] src/plugins/memory-state.test.ts: core test [check:changed] src/plugins/memory-state.ts: core production [check:changed] src/plugins/registry-contribution-types.ts: core production [check:changed] src/plugins/registry.dual-kind-memory-gate.test.ts: core test [check:changed] test/scripts/changed-lanes.test.ts: root test/support surface [check:changed] test/scripts/type-suppression-inventory.test.ts: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node --import tsx scripts/check-env-var-count.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node --import tsx scripts/check-duplicates.mts --coverage [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/.i18n/glossary.zh-CN.json docs/concepts/2026-07-29-memory-impl-plan.md docs/concepts/memory-multiplayer.md docs/docs.json docs/plugins/sdk-subpaths.md extensions/memory-core/index.test.ts extensions/memory-core/index.ts extensions/memory-core/src/authorization.ts extensions/memory-core/src/runtime-provider.test.ts extensions/memory-lancedb/index.test.ts extensions/memory-lancedb/index.ts extensions/memory-lancedb/src/authorization.ts package.json packages/memory-host-sdk/package.json packages/memory-host-sdk/src/authorization-conformance.ts packages/memory-host-sdk/src/authorization.ts packages/memory-host-sdk/src/host/authorization-conformance-evidence.ts packages/memory-host-sdk/src/host/authorization-conformance-scenarios.ts packages/memory-host-sdk/src/host/authorization-conformance.ts packages/memory-host-sdk/src/host/authorization-operation-requirements.ts packages/memory-host-sdk/src/host/authorization.ts scripts/check-changed.mts scripts/lib/plugin-sdk-entrypoints.json scripts/plugin-sdk-surface-report.mts src/memory-host-sdk/host/authorization.ts src/plugin-sdk/memory-authorization-conformance.ts src/plugin-sdk/memory-authorization.ts src/plugins/contracts/extension-package-project-boundaries.test.ts src/plugins/contracts/memory-authorization.contract.test.ts src/plugins/memory-runtime.ts src/plugins/memory-state.test.ts src/plugins/memory-state.ts src/plugins/registry-contribution-types.ts src/plugins/registry.dual-kind-memory-gate.test.ts test/scripts/changed-lanes.test.ts test/scripts/type-suppression-inventory.test.ts [check:changed] npm package-lock guard Command failed: /opt/hostedtoolcache/node/24.18.1/x64/bin/node /opt/hostedtoolcache/node/24.18.1/x64/lib/node_modules/npm/bin/npm-cli.js install --package-lock-only --ignore-scripts --no-audit --no-fund npm error code ENOTCACHED npm error request to https://registry.npmjs.org/@agentclientprotocol%2fsdk failed: cache mode is 'only-if-cached' but no cached response is available. npm error A complete log of this run can be found in: /tmp/clawsweeper-target-user-A2rI7p/home/.npm/_logs/2026-08-10T13_26_44_499Z-debug-0.log [check:changed] summary 353ms ok conflict markers 446ms ok environment variable count ratchet 15.86s ok max-lines suppression ratchet 345ms ok changelog attributions 322ms ok doctor deprecation registry 363ms ok guarded extension wildcard re-exports 380ms ok plugin-sdk wildcard re-exports 415ms ok duplicate scan target coverage 414ms ok dependency pin guard 743ms ok format changed files 1.12s failed:1 npm package-lock guard [check:changed] FAILED (exit 1) OPENCLAW_* count 507/507 max-lines ratchet OK: 972 grandfathered suppressions. [doctor-deprecation-registry] OK as of 2026-08-10 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 624 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 383ms on 31 files using 8 threads. Validating 1 npm package lock with 1 job. [ELIFECYCLE] Command failed with exit code 1.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "automerge_repair_outcome_comment",
+      "status": "executed",
+      "target": "#121422",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
