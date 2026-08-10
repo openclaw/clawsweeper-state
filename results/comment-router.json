@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:02:06.952Z",
+  "updated_at": "2026-08-10T21:02:12.584Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T17:02:05Z:re_review",
-      "comment_id": "5240341720",
-      "comment_version_key": "5240341720:2026-08-10T17:02:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5240341720",
-      "comment_created_at": "2026-08-10T12:35:38Z",
-      "comment_updated_at": "2026-08-10T17:02:05Z",
-      "comment_body_sha256": "b0cb16d6dc17b3152942c0e92791c43031bc24e336d28107819fbd8a827c5bc3",
-      "source_delivery_id": "371e4550-94dd-11f1-9a40-c85dae788fa9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121526,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:02:52.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
-        "head_sha": "9c9e69c9231b0058d16389c5fc8eb059e5868e41",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-10T17:02:13Z:clawsweeper_needs_human",
       "comment_id": "5229043394",
@@ -31406,6 +31358,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T21:02:06.952Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-10T21:01:23Z:clawsweeper_needs_human",
+      "comment_id": "5185154559",
+      "comment_version_key": "5185154559:2026-08-10T21:01:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
+      "comment_created_at": "2026-08-04T22:06:16Z",
+      "comment_updated_at": "2026-08-10T21:01:23Z",
+      "comment_body_sha256": "d451dcbb27077ef6d8f6c130ab0c3d7daba9efa9d35f93c22c12c1f9921d58a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; generated baselines and the Doctor contract need an exact-head rebase and CI refresh before merge. (sha=2cd85a74f2aa400ba24bd35e8ce8c07ae58bd79d)",
+      "expected_head_sha": "2cd85a74f2aa400ba24bd35e8ce8c07ae58bd79d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:02:12.584Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/irc-drop-dead-mention-patterns",
+        "head_sha": "2cd85a74f2aa400ba24bd35e8ce8c07ae58bd79d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
