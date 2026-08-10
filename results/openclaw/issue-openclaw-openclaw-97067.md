@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-97067"
 mode: "autonomous"
-run_id: "31363357673"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31363357673"
+run_id: "31365828230"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31365828230"
 head_sha: "e699e83d2707b9fc33d7ec6265f577c5bfcad1c8"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-10T07:01:08.966Z"
+published_at: "2026-08-10T07:32:50.359Z"
 canonical: "https://github.com/openclaw/openclaw/issues/97067"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/97067"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31363357673](https://github.com/openclaw/clawsweeper/actions/runs/31363357673)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31365828230](https://github.com/openclaw/clawsweeper/actions/runs/31365828230)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/97067
 
 ## Summary
 
-#97067 is a current, narrow prompt-assembly bug. Plan a new credited fix PR: suppress user-role inbound context only for synthetic heartbeat runs while retaining their delivery-route facts. No code was changed in this read-only checkout; focused baseline validation is blocked because tsx is absent.
+Current main e4b6173 still unconditionally builds user-role inbound metadata for synthetic heartbeat runs. Create a narrow credited fix PR that omits that prompt context while preserving delivery routing; local validation is blocked by the read-only checkout’s missing tsx dependency.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/97067
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #97067 | fix_needed | planned | canonical | Open canonical issue; no viable open implementation PR exists. |
-| #97072 | keep_closed | skipped | superseded | Already closed; no close or mutation is valid. |
-| #97076 | keep_closed | skipped | superseded | Already closed; no close or mutation is valid. |
-| cluster:issue-openclaw-openclaw-97067 | build_fix_artifact | planned | canonical | A narrow new PR is appropriate; implementation must be performed by the write-capable executor. |
-| cluster:issue-openclaw-openclaw-97067 | open_fix_pr | planned | canonical | Job authorizes one new fix PR and forbids merge or issue closure. |
+| #97067 | fix_needed | planned | canonical | Open canonical bug with no viable open PR; a narrow new fix PR is authorized. |
+| #97072 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| #97076 | keep_closed | skipped | superseded | Already closed; no mutation is valid. |
+| cluster:issue-openclaw-openclaw-97067 | build_fix_artifact | planned | canonical | Implementation is narrow and bug-only; executor must perform the write and validation steps. |
+| cluster:issue-openclaw-openclaw-97067 | open_fix_pr | planned | canonical | Job authorizes a single fix PR and forbids merge or issue closure. |
 
 ## Needs Human
 

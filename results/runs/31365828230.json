@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-97067",
+  "mode": "autonomous",
+  "run_id": "31365828230",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31365828230",
+  "head_sha": "e699e83d2707b9fc33d7ec6265f577c5bfcad1c8",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-97067.md",
+  "published_at": "2026-08-10T07:32:50.359Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/97067",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/97067",
+  "canonical_pr": null,
+  "summary": "Current main e4b6173 still unconditionally builds user-role inbound metadata for synthetic heartbeat runs. Create a narrow credited fix PR that omits that prompt context while preserving delivery routing; local validation is blocked by the read-only checkout’s missing tsx dependency.",
+  "actions": [
+    {
+      "target": "#97067",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97067",
+      "candidate_fix": null,
+      "reason": "Open canonical bug with no viable open PR; a narrow new fix PR is authorized."
+    },
+    {
+      "target": "#97072",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#97067",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#97076",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#97067",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-97067",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97067",
+      "candidate_fix": null,
+      "reason": "Implementation is narrow and bug-only; executor must perform the write and validation steps."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-97067",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#97067",
+      "candidate_fix": null,
+      "reason": "Job authorizes a single fix PR and forbids merge or issue closure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
