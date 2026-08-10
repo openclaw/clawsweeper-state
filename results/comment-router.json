@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T09:54:32.009Z",
+  "updated_at": "2026-08-10T09:54:33.232Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119967:5219745349:2026-08-07T16:48:34Z:re_review",
-      "comment_id": "5219745349",
-      "comment_version_key": "5219745349:2026-08-07T16:48:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119967#issuecomment-5219745349",
-      "comment_created_at": "2026-08-07T16:48:34Z",
-      "comment_updated_at": "2026-08-07T16:48:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119967,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T05:50:05.350Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1090:5235385172:2026-08-10T05:49:40Z:clawsweeper_auto_repair",
       "comment_id": "5235385172",
@@ -31988,6 +31961,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121429:5236437669:2026-08-10T09:53:49Z:clawsweeper_needs_human",
+      "comment_id": "5236437669",
+      "comment_version_key": "5236437669:2026-08-10T09:53:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121429#issuecomment-5236437669",
+      "comment_created_at": "2026-08-10T05:57:06Z",
+      "comment_updated_at": "2026-08-10T09:53:49Z",
+      "comment_body_sha256": "4b6d8c48fe3efbb870d807e14e644d7c0f0aa5ba3396fc618aa45e490532f9cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still running, including SQLite ownership and UI end-to-end lanes, so the availability-sensitive startup change lacks completed independent suite coverage. (sha=49bcbd210fd63c86bf7c8a53e75a5c02c8c93397)",
+      "expected_head_sha": "49bcbd210fd63c86bf7c8a53e75a5c02c8c93397",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T09:54:33.232Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/web-checkbox-placement-fb8e4b",
+        "head_sha": "49bcbd210fd63c86bf7c8a53e75a5c02c8c93397",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
