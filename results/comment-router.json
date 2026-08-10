@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:50:10.328Z",
+  "updated_at": "2026-08-10T08:50:25.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119527:5227892489:2026-08-08T20:05:38Z:re_review",
-      "comment_id": "5227892489",
-      "comment_version_key": "5227892489:2026-08-08T20:05:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119527#issuecomment-5227892489",
-      "comment_created_at": "2026-08-08T20:05:38Z",
-      "comment_updated_at": "2026-08-08T20:05:38Z",
-      "comment_body_sha256": "f1be6c8d3d0f297c3ef2703c116418d37c01d144eba759b2c1d39f9d60384cfb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119527,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:53:50.443Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92287:4685948842:2026-08-10T03:59:12Z:clawsweeper_auto_repair",
       "comment_id": "4685948842",
@@ -31696,6 +31669,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T08:50:10.328Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120609:5226825347:2026-08-10T08:49:42Z:clawsweeper_needs_human",
+      "comment_id": "5226825347",
+      "comment_version_key": "5226825347:2026-08-10T08:49:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120609#issuecomment-5226825347",
+      "comment_created_at": "2026-08-08T15:42:43Z",
+      "comment_updated_at": "2026-08-10T08:49:42Z",
+      "comment_body_sha256": "34558f5d17a8446ec582d22b543aa300a8916a3960513305df9dd51c770e4953",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated pins affect the updater and computer-control bridge, but this head has no recorded packaged-app smoke and its macOS Swift check was still in progress in the supplied exact... (sha=0aec577f26d23fadd3254fa2eaf5b46e3fe82028)",
+      "expected_head_sha": "0aec577f26d23fadd3254fa2eaf5b46e3fe82028",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:50:25.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-91e433a0a9",
+        "head_sha": "0aec577f26d23fadd3254fa2eaf5b46e3fe82028",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
