@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T11:59:17.852Z",
+  "updated_at": "2026-08-10T11:59:53.018Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121491:5237336318:2026-08-10T07:49:11Z:clawsweeper_auto_repair",
-      "comment_id": "5237336318",
-      "comment_version_key": "5237336318:2026-08-10T07:49:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121491#issuecomment-5237336318",
-      "comment_created_at": "2026-08-10T07:49:11Z",
-      "comment_updated_at": "2026-08-10T07:49:11Z",
-      "comment_body_sha256": "c6225a864d4753b5979f9852f13b557400b0948b8efae088565d06985d5b4b93",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=50760b3abff47d227577b721105b7827ad847843)",
-      "expected_head_sha": "50760b3abff47d227577b721105b7827ad847843",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T07:49:54.751Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/context-window-redesign-1d696d",
-        "head_sha": "50760b3abff47d227577b721105b7827ad847843",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121431:5237341655:2026-08-10T07:49:49Z:clawsweeper_needs_human",
       "comment_id": "5237341655",
@@ -32467,6 +32434,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121156:5239804643:2026-08-10T11:59:17Z:re_review",
+      "comment_id": "5239804643",
+      "comment_version_key": "5239804643:2026-08-10T11:59:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121156#issuecomment-5239804643",
+      "comment_created_at": "2026-08-10T11:59:17Z",
+      "comment_updated_at": "2026-08-10T11:59:17Z",
+      "comment_body_sha256": "f945ea442d33dc5dd5e345ffb3afb25baad540e6ef95ba815cc76ec7b4094094",
+      "source_delivery_id": "eac27ca0-94b2-11f1-94e7-1720bd82eb65",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121156,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T11:59:51.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/preserve-unreadable-npm-markers-20260810",
+        "head_sha": "ae89b01edf9dee0aa18597dd6b5aecfbb4a95d79",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
