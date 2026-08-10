@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:28:40.665Z",
+  "updated_at": "2026-08-10T08:31:22.386Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120156:5214530223:2026-08-07T08:26:27Z:re_review",
-      "comment_id": "5214530223",
-      "comment_version_key": "5214530223:2026-08-07T08:26:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120156#issuecomment-5214530223",
-      "comment_created_at": "2026-08-07T08:26:27Z",
-      "comment_updated_at": "2026-08-07T08:26:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120156,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:50:27.121Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5234447293:2026-08-09T23:40:53Z:re_review",
       "comment_id": "5234447293",
@@ -31699,6 +31672,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:220:5237650959:2026-08-10T08:30:47Z:clawsweeper_auto_repair",
+      "comment_id": "5237650959",
+      "comment_version_key": "5237650959:2026-08-10T08:30:47Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/220#issuecomment-5237650959",
+      "comment_created_at": "2026-08-10T08:17:33Z",
+      "comment_updated_at": "2026-08-10T08:30:47Z",
+      "comment_body_sha256": "6f6397a6fd172cb2a12bd44f6aac23d5a039655c072a90e33d5e114ffd401ce0",
+      "repo": "openclaw/imsg",
+      "issue_number": 220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=3a28494411c09aa44f552d6a2f8681bc131debdb)",
+      "expected_head_sha": "3a28494411c09aa44f552d6a2f8681bc131debdb",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:31:22.386Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rpc-bridge-events",
+        "head_sha": "3a28494411c09aa44f552d6a2f8681bc131debdb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
