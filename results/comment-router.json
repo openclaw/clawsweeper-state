@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:51:52.028Z",
+  "updated_at": "2026-08-10T05:52:02.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121100:5232797359:2026-08-09T17:30:16Z:re_review",
-      "comment_id": "5232797359",
-      "comment_version_key": "5232797359:2026-08-09T17:30:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121100#issuecomment-5232797359",
-      "comment_created_at": "2026-08-09T17:30:16Z",
-      "comment_updated_at": "2026-08-09T17:30:16Z",
-      "comment_body_sha256": "99524c16eb59b00da8f96d82102ed01efda55a19a70fd40540ec5af2a40a10b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121100,
-      "author": "arhxam",
-      "author_id": 132888838,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — the prior exact-head review lease expired with its placeholder still in “review started.” the requested generated snapshots and direct production constructor proof remain present on current head `d492ca12e4f`; please resume the fresh review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T01:01:16.454Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121100:5232817622:2026-08-09T17:35:10Z:re_review",
       "comment_id": "5232817622",
@@ -32357,6 +32330,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121442:5236401563:2026-08-10T05:51:20Z:clawsweeper_auto_repair",
+      "comment_id": "5236401563",
+      "comment_version_key": "5236401563:2026-08-10T05:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121442#issuecomment-5236401563",
+      "comment_created_at": "2026-08-10T05:51:20Z",
+      "comment_updated_at": "2026-08-10T05:51:20Z",
+      "comment_body_sha256": "dccf04c0775b19be0974c9a552cd3586ef2403204315c54d1205aab331f7a2b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121442,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7194b96ec3aa42f850c2133d352d1fbcafdfe7d7)",
+      "expected_head_sha": "7194b96ec3aa42f850c2133d352d1fbcafdfe7d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T05:52:02.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/responses-reasoning-summary-null",
+        "head_sha": "7194b96ec3aa42f850c2133d352d1fbcafdfe7d7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
