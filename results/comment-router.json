@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:52:26.134Z",
+  "updated_at": "2026-08-10T03:52:47.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:46:5084093874:2026-08-09T23:11:15Z:clawsweeper_auto_repair",
-      "comment_id": "5084093874",
-      "comment_version_key": "5084093874:2026-08-09T23:11:15Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/46#issuecomment-5084093874",
-      "comment_created_at": "2026-07-26T15:17:29Z",
-      "comment_updated_at": "2026-08-09T23:11:15Z",
-      "comment_body_sha256": "fbb8987f810a1f3a9483508fbc05dd2f063084a15cd2e0d57b99bad2b4841e5b",
-      "repo": "openclaw/rfcs",
-      "issue_number": 46,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2f290e9b3f09708bb309d6c4c9bd2e39dc76b663)",
-      "expected_head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:12:03.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0013-continuity-sidecars",
-        "head_sha": "2f290e9b3f09708bb309d6c4c9bd2e39dc76b663",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:282:5206751181:2026-08-09T23:11:06Z:clawsweeper_auto_repair",
       "comment_id": "5206751181",
@@ -32151,6 +32118,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T03:52:26.134Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121373:5235666139:2026-08-10T03:52:10Z:clawsweeper_needs_human",
+      "comment_id": "5235666139",
+      "comment_version_key": "5235666139:2026-08-10T03:52:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121373#issuecomment-5235666139",
+      "comment_created_at": "2026-08-10T03:52:10Z",
+      "comment_updated_at": "2026-08-10T03:52:10Z",
+      "comment_body_sha256": "8462d57003575a3419be19a165887327545071994fd190e314edf894a63063a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fail closed while Enterprise identity is degraded (P1)** - auth.test failures register degraded, but this helper rejects only enterprise, so a detached bare channel or user target can pass before recovery. An En...; Review finding: [P1] Fail closed while Enterprise identity is degraded — extensions/slack/src/detached-target-admission.ts:5 - [high] Degraded identity permits unscoped Enterprise... (sha=9cceab34379f188a95212d8e264b34a9ad037a8a)",
+      "expected_head_sha": "9cceab34379f188a95212d8e264b34a9ad037a8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:52:47.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/remove-slack-enterprise-setting",
+        "head_sha": "9cceab34379f188a95212d8e264b34a9ad037a8a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
