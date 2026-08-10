@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-08-10T15:54:30.902Z",
+  "updated_at": "2026-08-10T15:54:31.129Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121507:5237938947:2026-08-10T10:55:27Z:clawsweeper_needs_human",
-      "comment_id": "5237938947",
-      "comment_version_key": "5237938947:2026-08-10T10:55:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121507#issuecomment-5237938947",
-      "comment_created_at": "2026-08-10T08:47:47Z",
-      "comment_updated_at": "2026-08-10T10:55:27Z",
-      "comment_body_sha256": "d3d02afd64c881874cbf4c262de996b782d91a66527d3f118c5cc24812c97b05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121507,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing persisted markers without delivery identities will no longer replay; they produce an interruption notice instead, so maintainers must explicitly accept the at-most-once versu... (sha=1224fe4a77383a016e6f5922e494767a7d29a501)",
-      "expected_head_sha": "1224fe4a77383a016e6f5922e494767a7d29a501",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:56:19.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-restart-duplicate",
-        "head_sha": "1224fe4a77383a016e6f5922e494767a7d29a501",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121563:5239206237:2026-08-10T10:55:40Z:clawsweeper_auto_repair",
-      "comment_id": "5239206237",
-      "comment_version_key": "5239206237:2026-08-10T10:55:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121563#issuecomment-5239206237",
-      "comment_created_at": "2026-08-10T10:55:40Z",
-      "comment_updated_at": "2026-08-10T10:55:40Z",
-      "comment_body_sha256": "294285a43981bddee3ca01c06ba54188eed4717bc5862a55515ce7ca5cd0c6f7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121563,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=09443b33f59b3e6162e6da7c7e8eb9209f698a1b)",
-      "expected_head_sha": "09443b33f59b3e6162e6da7c7e8eb9209f698a1b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:56:21.735Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-multi-secret-setup",
-        "head_sha": "09443b33f59b3e6162e6da7c7e8eb9209f698a1b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119950:5205354809:2026-08-10T10:52:19Z:clawsweeper_needs_human",
       "comment_id": "5205354809",
@@ -30969,6 +30903,53 @@
       ]
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:121555:5242087775:2026-08-10T15:04:38Z:re_review",
+      "comment_id": "5242087775",
+      "comment_version_key": "5242087775:2026-08-10T15:04:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121555#issuecomment-5242087775",
+      "comment_created_at": "2026-08-10T15:04:38Z",
+      "comment_updated_at": "2026-08-10T15:04:38Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121555,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T15:54:28.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "5fdcbce58107cd72b46f09c542b577ae49d314d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121488:5237392391:2026-08-10T15:52:00Z:clawsweeper_needs_human",
       "comment_id": "5237392391",
       "comment_version_key": "5237392391:2026-08-10T15:52:00Z",
@@ -31141,6 +31122,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T15:54:30.902Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121555:5239195461:2026-08-10T15:52:33Z:clawsweeper_needs_human",
+      "comment_id": "5239195461",
+      "comment_version_key": "5239195461:2026-08-10T15:52:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121555#issuecomment-5239195461",
+      "comment_created_at": "2026-08-10T10:54:28Z",
+      "comment_updated_at": "2026-08-10T15:52:33Z",
+      "comment_body_sha256": "6e4ba736831e3dbd3b0569509a474b74f42d692359e7629a6a1e29ef3d44d11c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121555,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - checks-ui-e2e (1/4) was still in progress in the supplied exact-head status; merge only after it reaches a successful terminal state. (sha=5fdcbce58107cd72b46f09c542b577ae49d314d2)",
+      "expected_head_sha": "5fdcbce58107cd72b46f09c542b577ae49d314d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T15:54:31.129Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "5fdcbce58107cd72b46f09c542b577ae49d314d2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
