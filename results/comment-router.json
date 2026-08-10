@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:51:11.746Z",
+  "updated_at": "2026-08-10T04:52:13.725Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120721:5234421598:2026-08-09T23:33:53Z:re_review",
-      "comment_id": "5234421598",
-      "comment_version_key": "5234421598:2026-08-09T23:33:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120721#issuecomment-5234421598",
-      "comment_created_at": "2026-08-09T23:33:53Z",
-      "comment_updated_at": "2026-08-09T23:33:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120721,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T23:53:57.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-image-forwarding",
-        "head_sha": "ea64816ac852270b3445f26889238da3938c2190",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121123:5234498579:2026-08-09T23:54:34Z:re_review",
       "comment_id": "5234498579",
@@ -32078,6 +32031,39 @@
         "kind": "pull_request",
         "branch": "steipete/lease-engine-retirement",
         "head_sha": "5a6f7c087bde2616fdfc47dee7f909d167a2df43",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121137:5232875609:2026-08-10T04:51:31Z:clawsweeper_needs_human",
+      "comment_id": "5232875609",
+      "comment_version_key": "5232875609:2026-08-10T04:51:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121137#issuecomment-5232875609",
+      "comment_created_at": "2026-08-09T17:49:20Z",
+      "comment_updated_at": "2026-08-10T04:51:31Z",
+      "comment_body_sha256": "04a5db9787b10068384696142dd105b7798a8a65c5f8ce2dd9c6321bfdabd8ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The described mounted browser run uses a repository mock Gateway WebSocket and has no inspectable attached trace or media artifact, so it is us... (sha=da77f1838acb6eae5c0dd19708cd8952a10812ba)",
+      "expected_head_sha": "da77f1838acb6eae5c0dd19708cd8952a10812ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T04:52:13.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t10-09-cron-overview-generation",
+        "head_sha": "da77f1838acb6eae5c0dd19708cd8952a10812ba",
         "cluster_id": null,
         "job_path": null
       }
