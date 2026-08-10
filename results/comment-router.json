@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T01:36:55.436Z",
+  "updated_at": "2026-08-10T01:37:55.416Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121163:5233791014:2026-08-09T20:53:12Z:clawsweeper_needs_human",
-      "comment_id": "5233791014",
-      "comment_version_key": "5233791014:2026-08-09T20:53:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121163#issuecomment-5233791014",
-      "comment_created_at": "2026-08-09T20:53:12Z",
-      "comment_updated_at": "2026-08-09T20:53:12Z",
-      "comment_body_sha256": "e51b78323c137bbcfc175f3deadf30cb032e30ca55843c01e478fd60cec2a468",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121163,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check context reports failures in Security High (process-exec-boundary), checks-node-compact-large-6, and the aggregate CI gate; GitHub log inspection was unavailable bec... (sha=868eed7330293d966bc51920867ac6ef48294500)",
-      "expected_head_sha": "868eed7330293d966bc51920867ac6ef48294500",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T20:53:54.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0809-responses-hook-lifecycle",
-        "head_sha": "868eed7330293d966bc51920867ac6ef48294500",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121226:5233792083:2026-08-09T20:53:27Z:clawsweeper_auto_repair",
       "comment_id": "5233792083",
@@ -32160,6 +32127,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:52:5234977680:2026-08-10T01:37:01Z:re_review",
+      "comment_id": "5234977680",
+      "comment_version_key": "5234977680:2026-08-10T01:37:01Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/52#issuecomment-5234977680",
+      "comment_created_at": "2026-08-10T01:37:01Z",
+      "comment_updated_at": "2026-08-10T01:37:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "fc8586a0-945b-11f1-8989-1dce8edb57d0",
+      "repo": "openclaw/rfcs",
+      "issue_number": 52,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T01:37:53.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/claws-onboarding-personalization-ui",
+        "head_sha": "59b11e25acf4605771bced523f72083b19a8940f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
