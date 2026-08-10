@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:57:15.648Z",
+  "updated_at": "2026-08-10T17:57:19.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113207:5240569075:2026-08-10T12:55:23Z:re_review",
-      "comment_id": "5240569075",
-      "comment_version_key": "5240569075:2026-08-10T12:55:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113207#issuecomment-5240569075",
-      "comment_created_at": "2026-08-10T12:55:23Z",
-      "comment_updated_at": "2026-08-10T12:55:23Z",
-      "comment_body_sha256": "01fc029c986879e5d66a6d82aa44c37f94b04e8a495bb6b5ac1479ce0c5b092f",
-      "source_delivery_id": "c0b3e900-94ba-11f1-92b3-fe0d9ed67dc1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113207,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T12:56:05.083Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-112912-boot-md-stale-entry",
-        "head_sha": "8d1c69ac9fee53063860ede58e2fb9aeffcdda41",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121591:5240569366:2026-08-10T12:55:25Z:clawsweeper_auto_repair",
       "comment_id": "5240569366",
@@ -31236,6 +31188,39 @@
         "kind": "pull_request",
         "branch": "codex/telegram-durable-partial-visible",
         "head_sha": "a8f286b56ddb86fadb9f46cc63d0aa74c948ae39",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:306:5243424394:2026-08-10T17:50:39Z:clawsweeper_auto_repair",
+      "comment_id": "5243424394",
+      "comment_version_key": "5243424394:2026-08-10T17:50:39Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/306#issuecomment-5243424394",
+      "comment_created_at": "2026-08-10T17:03:37Z",
+      "comment_updated_at": "2026-08-10T17:50:39Z",
+      "comment_body_sha256": "17c0005bb22b61d7e53f8366093dc50d3fe570f7cc3215f616f3347cd07be87d",
+      "repo": "openclaw/mcporter",
+      "issue_number": 306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8fdb6d81f0369629a169e3c302cfb848df7396fb)",
+      "expected_head_sha": "8fdb6d81f0369629a169e3c302cfb848df7396fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T17:57:19.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-refresh-cross-process-lock",
+        "head_sha": "8fdb6d81f0369629a169e3c302cfb848df7396fb",
         "cluster_id": null,
         "job_path": null
       }
