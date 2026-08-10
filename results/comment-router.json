@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:55:48.287Z",
+  "updated_at": "2026-08-10T19:55:48.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119344:5241986942:2026-08-10T14:56:17Z:re_review",
-      "comment_id": "5241986942",
-      "comment_version_key": "5241986942:2026-08-10T14:56:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119344#issuecomment-5241986942",
-      "comment_created_at": "2026-08-10T14:56:17Z",
-      "comment_updated_at": "2026-08-10T14:56:17Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "a417c850-94cb-11f1-83f4-4eaaf5b74cfb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119344,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:57:26.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-cli-link",
-        "head_sha": "579dd2e57b112f3a759f142b8ce10ce6cff00040",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-10T14:56:25Z:clawsweeper_needs_human",
       "comment_id": "5224970607",
@@ -31703,6 +31655,39 @@
         "kind": "pull_request",
         "branch": "fix/problem-task-list-stable-pagination",
         "head_sha": "d5693ddfa434f0485dc94d4935d84fb0ae027df9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120471:5224770986:2026-08-10T19:53:25Z:clawsweeper_needs_human",
+      "comment_id": "5224770986",
+      "comment_version_key": "5224770986:2026-08-10T19:53:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120471#issuecomment-5224770986",
+      "comment_created_at": "2026-08-08T05:40:56Z",
+      "comment_updated_at": "2026-08-10T19:53:25Z",
+      "comment_body_sha256": "765046acdd47e726bde4738b96e37edafb8570eab7e3d8b75ea341d0d91b6bee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120471,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft is behind current main, and the supplied exact-head check rollup contains two failures whose logs were not available; verify those checks only if maintainers choose to rebas... (sha=c9f52a35eb7d02a040fb95cbafe83f7de025ff8c)",
+      "expected_head_sha": "c9f52a35eb7d02a040fb95cbafe83f7de025ff8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:55:48.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-steer-e2e-lint-20260808",
+        "head_sha": "c9f52a35eb7d02a040fb95cbafe83f7de025ff8c",
         "cluster_id": null,
         "job_path": null
       }
