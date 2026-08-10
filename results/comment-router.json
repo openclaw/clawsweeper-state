@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:56:02.722Z",
+  "updated_at": "2026-08-10T19:56:04.308Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105643:4953890977:2026-07-13T02:27:59Z:re_review",
-      "comment_id": "4953890977",
-      "comment_version_key": "4953890977:2026-07-13T02:27:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-4953890977",
-      "comment_created_at": "2026-07-13T02:27:59Z",
-      "comment_updated_at": "2026-07-13T02:27:59Z",
-      "comment_body_sha256": "0f5fdabfd7e18daa6155adb3e706cb7fa4877e29991255e610af2431b3633e45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105643,
-      "author": "totobusnello",
-      "author_id": 246086438,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:58:11.379Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105643:4954057133:2026-07-13T03:05:42Z:re_review",
       "comment_id": "4954057133",
@@ -31706,6 +31679,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121332:5235025462:2026-08-10T19:55:23Z:clawsweeper_needs_human",
+      "comment_id": "5235025462",
+      "comment_version_key": "5235025462:2026-08-10T19:55:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121332#issuecomment-5235025462",
+      "comment_created_at": "2026-08-10T01:46:51Z",
+      "comment_updated_at": "2026-08-10T19:55:23Z",
+      "comment_body_sha256": "bf1ea844c4e479fd07d21a30516935a5880291e061571447eec67a3b290cb2a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked artifact is substantial but explicitly covers the prior product head, not the current session-generation-fence commit; add... (sha=610c5c8c99cb34afdb0aa2616145a829f418c61d)",
+      "expected_head_sha": "610c5c8c99cb34afdb0aa2616145a829f418c61d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:56:04.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/pr-116382-fresh-main",
+        "head_sha": "610c5c8c99cb34afdb0aa2616145a829f418c61d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
