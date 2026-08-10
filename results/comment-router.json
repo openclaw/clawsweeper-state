@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:03:47.831Z",
+  "updated_at": "2026-08-10T08:04:57.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116511:5235976893:2026-08-10T04:45:53Z:re_review",
-      "comment_id": "5235976893",
-      "comment_version_key": "5235976893:2026-08-10T04:45:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5235976893",
-      "comment_created_at": "2026-08-10T04:45:53Z",
-      "comment_updated_at": "2026-08-10T04:45:53Z",
-      "comment_body_sha256": "fa7a0b43520b73daab6050e0097abc794a974951fb0e60da417d0558a8ecfd9b",
-      "source_delivery_id": "5f18ab20-9476-11f1-943c-3be3b67037fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116511,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T04:46:28.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/issue-109656-continuation-skip-sqlite-20260730",
-        "head_sha": "1452c824de8771b612907b644aa04b5aad59ecf9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121398:5235978434:2026-08-10T04:46:11Z:clawsweeper_needs_human",
       "comment_id": "5235978434",
@@ -31712,6 +31664,39 @@
         "job_path": null
       },
       "source_delivery_conflict": true
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1272:5237526222:2026-08-10T08:04:12Z:clawsweeper_needs_human",
+      "comment_id": "5237526222",
+      "comment_version_key": "5237526222:2026-08-10T08:04:12Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1272#issuecomment-5237526222",
+      "comment_created_at": "2026-08-10T08:04:12Z",
+      "comment_updated_at": "2026-08-10T08:04:12Z",
+      "comment_body_sha256": "d75a40ab0c84e6fdd3c0f293b001506b5de7003435fc92516100b399ebcbf5cc",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body lists checks but has no redacted after-fix terminal output or artifact showing this exact head’s fail-closed release behavior; add tha... (sha=221eb5221da6545071258f880ccd8f479dbaaa70)",
+      "expected_head_sha": "221eb5221da6545071258f880ccd8f479dbaaa70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:04:57.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/v0.41.2",
+        "head_sha": "221eb5221da6545071258f880ccd8f479dbaaa70",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
