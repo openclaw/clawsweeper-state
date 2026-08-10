@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T15:00:20.573Z",
+  "updated_at": "2026-08-10T15:00:28.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112227:5238944823:2026-08-10T10:26:45Z:re_review",
-      "comment_id": "5238944823",
-      "comment_version_key": "5238944823:2026-08-10T10:26:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112227#issuecomment-5238944823",
-      "comment_created_at": "2026-08-10T10:26:45Z",
-      "comment_updated_at": "2026-08-10T10:26:45Z",
-      "comment_body_sha256": "729a6de9ad0d3366c7f89cd6c5492604abf6aaf21ecfb9ee445d7f56fadc8d7e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112227,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:53:48.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-106362-concurrent-session-groups",
-        "head_sha": "cd0e3d462a04249ea4a405b73c28d08e25aead3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119702:5239187679:2026-08-10T10:53:36Z:re_review",
       "comment_id": "5239187679",
@@ -31083,6 +31036,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T15:00:20.573Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121575:5239748232:2026-08-10T14:59:30Z:clawsweeper_needs_human",
+      "comment_id": "5239748232",
+      "comment_version_key": "5239748232:2026-08-10T14:59:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121575#issuecomment-5239748232",
+      "comment_created_at": "2026-08-10T11:53:12Z",
+      "comment_updated_at": "2026-08-10T14:59:30Z",
+      "comment_body_sha256": "61da0322a8354472892e153683d24d56ce92475fff73ae01a5fdc5c45666b607",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121575,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Rewrite retained generated plugin catalog credentials (P1)** - When implicit discovery returns no providers, merge mode returns at line 336 before this new replacement pass. ensureOpenClawModelsJson had already...; Review finding: [P1] Rewrite retained generated plugin catalog credentials — src/agents/models-config.plan.ts:377-383 - [high] Legacy plugin catalogs retain plaintext provider key... (sha=41b76463390b8c4d081a60bd285e987e60f65db3)",
+      "expected_head_sha": "41b76463390b8c4d081a60bd285e987e60f65db3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T15:00:28.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-catalog-canonical-auth",
+        "head_sha": "41b76463390b8c4d081a60bd285e987e60f65db3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
