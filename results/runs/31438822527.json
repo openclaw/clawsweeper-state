@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-120652",
+  "mode": "autonomous",
+  "run_id": "31438822527",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31438822527",
+  "head_sha": "51ac499c741b7b4b9b2bd1b7d78686055f8f3738",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120652.md",
+  "published_at": "2026-08-10T22:43:38.892Z",
+  "canonical": "#120652",
+  "canonical_issue": "#97601",
+  "canonical_pr": "#120652",
+  "summary": "Repair #120652 on its writable same-repo branch: rebase onto current main, preserve the durable-tool-result contract, remove fast-auto suppression bypasses and Telegram's direct fallback, then run focused core/Telegram proof plus the changed gate. Keep #97601 open until the repaired PR is validated and lands.",
+  "actions": [
+    {
+      "target": "#97601",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#120652",
+      "candidate_fix": "#120652",
+      "reason": "The issue is the user-facing canonical report, while #120652 is the repair candidate."
+    },
+    {
+      "target": "#120652",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120652",
+      "candidate_fix": "#120652",
+      "reason": "Repair the existing contributor branch rather than replace it; merge is disabled by the job."
+    },
+    {
+      "target": "#120652",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#120652",
+      "candidate_fix": "#120652",
+      "reason": "A narrow rebase-aware repair artifact is available for the writable source branch."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
