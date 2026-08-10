@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:58:16.041Z",
+  "updated_at": "2026-08-10T08:58:36.032Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121262:5234236810:2026-08-10T02:55:20Z:clawsweeper_auto_repair",
-      "comment_id": "5234236810",
-      "comment_version_key": "5234236810:2026-08-10T02:55:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121262#issuecomment-5234236810",
-      "comment_created_at": "2026-08-09T22:45:35Z",
-      "comment_updated_at": "2026-08-10T02:55:20Z",
-      "comment_body_sha256": "004c9486f48827c2625ede9ef1893a81e65ca3a0d553869ba834807ce8278776",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121262,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e0b44889c50869d46dba5de581b422ee7074dd83)",
-      "expected_head_sha": "e0b44889c50869d46dba5de581b422ee7074dd83",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:53:52.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/brave-robinson-bc6b3d",
-        "head_sha": "e0b44889c50869d46dba5de581b422ee7074dd83",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121316:5235052778:2026-08-10T03:52:23Z:clawsweeper_needs_human",
       "comment_id": "5235052778",
@@ -31728,6 +31695,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121522:5238031229:2026-08-10T08:57:48Z:clawsweeper_needs_human",
+      "comment_id": "5238031229",
+      "comment_version_key": "5238031229:2026-08-10T08:57:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121522#issuecomment-5238031229",
+      "comment_created_at": "2026-08-10T08:57:48Z",
+      "comment_updated_at": "2026-08-10T08:57:48Z",
+      "comment_body_sha256": "fcd1aeb413022560fd7b6229f6c94aa6cf9bc6cf0ee40cb56c9386ddd7dba18e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Honor autonomous mode before applying foreground repairs (P1)** - This unconditional prompt tells the model to apply a repair immediately, even though off and propose currently prevent automatic application. Pas...; Review finding: [P1] Honor autonomous mode before applying foreground repairs — src/agents/skill-workshop-prompt.ts:12 - [P1] Bind immediate repairs to the run's used-skill receip... (sha=60156e08d661f8bdd15bb68df94c2264e1cce05d)",
+      "expected_head_sha": "60156e08d661f8bdd15bb68df94c2264e1cce05d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:58:36.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/skill-workshop-immediate-repair",
+        "head_sha": "06f5b8c37c7262042164196c88b45b56a2af1915",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
