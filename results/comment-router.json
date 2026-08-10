@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T07:48:32.402Z",
+  "updated_at": "2026-08-10T07:49:40.729Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121286:5235401007:2026-08-10T03:01:31Z:re_review",
-      "comment_id": "5235401007",
-      "comment_version_key": "5235401007:2026-08-10T03:01:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121286#issuecomment-5235401007",
-      "comment_created_at": "2026-08-10T03:01:31Z",
-      "comment_updated_at": "2026-08-10T03:01:31Z",
-      "comment_body_sha256": "e29acab209d9df2b3a48bb0cc5eb36cbb8783ced17e5523f8da3bf4da8a33a75",
-      "source_delivery_id": "ca4d4540-9467-11f1-93e8-3504f4b4db79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121286,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T03:02:08.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/session-destructive-confirms",
-        "head_sha": "a951aa0e66ff3f2c9736a59c29239b8b0bef0528",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114173:5085269514:2026-08-10T03:01:28Z:clawsweeper_needs_human",
       "comment_id": "5085269514",
@@ -31961,6 +31913,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-10T07:45:51Z:clawsweeper_needs_human",
+      "comment_id": "5229043394",
+      "comment_version_key": "5229043394:2026-08-10T07:45:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229043394",
+      "comment_created_at": "2026-08-09T00:45:52Z",
+      "comment_updated_at": "2026-08-10T07:45:51Z",
+      "comment_body_sha256": "073b917dd7a0e1e5122da3c188be29f89e50483b82fc8b8b2422b8100d8c92f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Clear shared credentials after bootstrap succeeds (P1)** - After storing the device token, this cleanup removes only bootstrap state. On reconnect, retained token/password values win over the stored device crede...; Review finding: [P1] Clear shared credentials after bootstrap succeeds — packages/gateway-client/src/client.ts:999-1002 - [P2] Advance pairing expiry independently of approval sta... (sha=469a3001ee00aff0a5df1091469743cf158dd254)",
+      "expected_head_sha": "469a3001ee00aff0a5df1091469743cf158dd254",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T07:49:40.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runners-m3-pair-url",
+        "head_sha": "469a3001ee00aff0a5df1091469743cf158dd254",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
