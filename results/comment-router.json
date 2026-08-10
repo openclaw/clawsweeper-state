@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T20:55:06.904Z",
+  "updated_at": "2026-08-10T20:55:10.390Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:375:5242914160:2026-08-10T16:17:09Z:clawsweeper_auto_repair",
-      "comment_id": "5242914160",
-      "comment_version_key": "5242914160:2026-08-10T16:17:09Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/375#issuecomment-5242914160",
-      "comment_created_at": "2026-08-10T16:17:09Z",
-      "comment_updated_at": "2026-08-10T16:17:09Z",
-      "comment_body_sha256": "202d4f48642c355fbbd722763601484197ecf839877f0281c326d46dd1d49098",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 375,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e5012f3da8fe2ce17c683fb847fdc15b0617db7)",
-      "expected_head_sha": "2e5012f3da8fe2ce17c683fb847fdc15b0617db7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T16:17:55.237Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/current-model-generation",
-        "head_sha": "2e5012f3da8fe2ce17c683fb847fdc15b0617db7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:267:5242916330:2026-08-10T16:17:19Z:clawsweeper_needs_human",
       "comment_id": "5242916330",
@@ -31837,6 +31804,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121465:5237294299:2026-08-10T20:54:30Z:clawsweeper_needs_human",
+      "comment_id": "5237294299",
+      "comment_version_key": "5237294299:2026-08-10T20:54:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121465#issuecomment-5237294299",
+      "comment_created_at": "2026-08-10T07:44:15Z",
+      "comment_updated_at": "2026-08-10T20:54:30Z",
+      "comment_body_sha256": "02572ece5234e59c674b8eb7c9e76d5491a99ca2385f0c7927c3c8a90603dcc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Honor admin as a write-capable project lister (P1)** - operator.admin authorizes every operator scope, but this literal membership test redacts roots from an admin-only connection. That connection can register a...; Review finding: [P1] Honor admin as a write-capable project lister — src/gateway/server-methods/projects.ts:25 - [P1] Follow the documented derived-project model — src/projects/pr... (sha=fcbc32862635371601fff86d62ca449b4880ae87)",
+      "expected_head_sha": "fcbc32862635371601fff86d62ca449b4880ae87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T20:55:10.390Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/project-registry",
+        "head_sha": "fcbc32862635371601fff86d62ca449b4880ae87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
