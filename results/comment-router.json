@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T00:03:04.006Z",
+  "updated_at": "2026-08-10T00:03:10.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5233562925:2026-08-09T19:57:03Z:re_review",
-      "comment_id": "5233562925",
-      "comment_version_key": "5233562925:2026-08-09T19:57:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5233562925",
-      "comment_created_at": "2026-08-09T19:57:03Z",
-      "comment_updated_at": "2026-08-09T19:57:03Z",
-      "comment_body_sha256": "054d84e30c88aaeccb1facdfc017839d0f924a4908f9ac7801cdb9f150f9dc15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T20:48:09.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "81f768c9fd8eeb06a25776daff9982fc834b09ad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121208:5233589453:2026-08-09T20:03:43Z:re_review",
       "comment_id": "5233589453",
@@ -31961,6 +31914,39 @@
         "kind": "pull_request",
         "branch": "feat/runtime-permission-policy",
         "head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:216:5234438811:2026-08-10T00:01:41Z:clawsweeper_needs_human",
+      "comment_id": "5234438811",
+      "comment_version_key": "5234438811:2026-08-10T00:01:41Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/216#issuecomment-5234438811",
+      "comment_created_at": "2026-08-09T23:38:32Z",
+      "comment_updated_at": "2026-08-10T00:01:41Z",
+      "comment_body_sha256": "807a5eba3dcc648d3da14df55e6fb739ba83f4bce264941c94b5a5e719b63980",
+      "repo": "openclaw/imsg",
+      "issue_number": 216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users will now receive a fail-closed result instead of automatic bridge-to-AppleScript or iMessage-to-SMS fallback after an uncertain outcome. (sha=4eebed1ec51d76a5c613ed6a66d93a46a417f72b)",
+      "expected_head_sha": "4eebed1ec51d76a5c613ed6a66d93a46a417f72b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T00:03:10.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delivery-outcomes",
+        "head_sha": "4eebed1ec51d76a5c613ed6a66d93a46a417f72b",
         "cluster_id": null,
         "job_path": null
       }
