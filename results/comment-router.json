@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:56:01.301Z",
+  "updated_at": "2026-08-10T13:56:04.507Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119687:5199421841:2026-08-06T01:40:42Z:re_review",
-      "comment_id": "5199421841",
-      "comment_version_key": "5199421841:2026-08-06T01:40:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5199421841",
-      "comment_created_at": "2026-08-06T01:40:42Z",
-      "comment_updated_at": "2026-08-06T01:40:42Z",
-      "comment_body_sha256": "c88bc3f745167bf7ea0b5e04f1c856a1fe94cebf7d00ab71ff46d20c838564b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119687,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T09:01:45.690Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119687:5199761716:2026-08-06T02:39:12Z:re_review",
       "comment_id": "5199761716",
@@ -32330,6 +32303,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T13:56:00.091Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120272:5220309593:2026-08-10T13:50:49Z:clawsweeper_needs_human",
+      "comment_id": "5220309593",
+      "comment_version_key": "5220309593:2026-08-10T13:50:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120272#issuecomment-5220309593",
+      "comment_created_at": "2026-08-07T17:48:56Z",
+      "comment_updated_at": "2026-08-10T13:50:49Z",
+      "comment_body_sha256": "01bed92cced99e3eb9226d3a121fd6fa8b12d4408cfd9d215d4d2e44e66a0ab1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that relied on arbitrary non-off strings behaving as an enabled Tailscale mode will now fail early; that is a deliberate tightening to the documented three-value cont... (sha=585d736976a66734b27cf90df8a87ded6881b8da)",
+      "expected_head_sha": "585d736976a66734b27cf90df8a87ded6881b8da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T13:56:04.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-webhooks-tailscale-mode-validation",
+        "head_sha": "585d736976a66734b27cf90df8a87ded6881b8da",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
