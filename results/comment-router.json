@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:52:25.638Z",
+  "updated_at": "2026-08-10T21:52:50.818Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121575:5239748232:2026-08-10T17:52:39Z:clawsweeper_needs_human",
-      "comment_id": "5239748232",
-      "comment_version_key": "5239748232:2026-08-10T17:52:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121575#issuecomment-5239748232",
-      "comment_created_at": "2026-08-10T11:53:12Z",
-      "comment_updated_at": "2026-08-10T17:52:39Z",
-      "comment_body_sha256": "e18b32d5b3e0adeb2e7ba64d2e2dca168668368d92f1d15b75deb526a39189a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121575,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Rewrite retained catalogs before the empty-discovery return (P1)** - When discovery returns no providers, merge mode returns skip before the new replacement pass. The caller preserves the old root and generated-...; Review finding: [P1] Rewrite retained catalogs before the empty-discovery return — src/agents/models-config.plan.ts:336 - [P1] Require a real environment binding for catalog env r... (sha=96bdeee6a92cf2bd197da9d627358fb093b8703e)",
-      "expected_head_sha": "96bdeee6a92cf2bd197da9d627358fb093b8703e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T17:54:09.003Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-canonical-auth",
-        "head_sha": "96bdeee6a92cf2bd197da9d627358fb093b8703e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-08-10T17:53:38Z:clawsweeper_needs_human",
       "comment_id": "5241982342",
@@ -31799,6 +31766,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2849:5246454655:2026-08-10T21:52:15Z:re_review",
+      "comment_id": "5246454655",
+      "comment_version_key": "5246454655:2026-08-10T21:52:15Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2849#issuecomment-5246454655",
+      "comment_created_at": "2026-08-10T21:52:15Z",
+      "comment_updated_at": "2026-08-10T21:52:15Z",
+      "comment_body_sha256": "103138e48a7dd3f77347bb4ff680b5e95ab4965b63ec1203d35fdb65297dba1a",
+      "source_delivery_id": "c0402380-9505-11f1-8c4f-655305d1ebfe",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2849,
+      "author": "Quicksaver",
+      "author_id": 802086,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T21:52:47.774Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-usage-indexing-performance",
+        "head_sha": "3f7c44d2878607a6c7d09cc380d56b8914222a3f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
