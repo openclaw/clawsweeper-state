@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121604"
 mode: "autonomous"
-run_id: "31395334753"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31395334753"
-head_sha: "0559e03857fa9a9a6de28c984ed495287ec3b9cc"
-workflow_conclusion: "failure"
+run_id: "31399715824"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31399715824"
+head_sha: "75ac66b2b3b7dbf9def8007c52f5f05fac616c3d"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-10T14:05:44.465Z"
+published_at: "2026-08-10T14:49:30.276Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121604"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121604"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31395334753](https://github.com/openclaw/clawsweeper/actions/runs/31395334753)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31399715824](https://github.com/openclaw/clawsweeper/actions/runs/31399715824)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/121604
 
 ## Summary
 
-Current main still routes direct dist/index.js root-version calls into runCli before the existing fast path, creating TTY startup progress before synchronous version exit. A narrow two-file repair is ready, but this worker cannot edit, build, or validate because the checkout filesystem is read-only and dependencies are absent.
+Current main ed39f654 still has the direct-entry root-version lifecycle defect. A narrow two-file fix is planned, but this read-only checkout lacks dependencies and dist artifacts, so no branch, validation, or PR can be produced here.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main still routes direct dist/index.js root-version calls into runCli be
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121604 | fix_needed | planned | canonical | A root-only --version/-V/-v invocation should use the existing fast path before startup progress; container-targeted requests must continue through runCli. |
-| cluster:issue-openclaw-openclaw-121604 | build_fix_artifact | planned | canonical | Use the existing fast path at the legacy entry boundary; do not alter progress behavior globally. |
-| cluster:issue-openclaw-openclaw-121604 | open_fix_pr | blocked | canonical | The worker checkout is read-only and has no dependency install or dist artifacts. An executor with a writable checkout must implement and validate the artifact before opening the PR. |
+| #121604 | fix_needed | planned | canonical | The open issue is the canonical report for a real, narrow CLI regression; it is not security-sensitive. |
+| cluster:issue-openclaw-openclaw-121604 | build_fix_artifact | planned | canonical | Reuse the existing root-version owner instead of changing global progress behavior. |
+| cluster:issue-openclaw-openclaw-121604 | open_fix_pr | blocked | canonical | A writable executor with the repository dependencies must apply and validate the planned repair before opening the required PR. |
 
 ## Needs Human
 

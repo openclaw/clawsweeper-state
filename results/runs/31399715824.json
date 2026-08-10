@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121604",
+  "mode": "autonomous",
+  "run_id": "31399715824",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31399715824",
+  "head_sha": "75ac66b2b3b7dbf9def8007c52f5f05fac616c3d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121604.md",
+  "published_at": "2026-08-10T14:49:30.276Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121604",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121604",
+  "canonical_pr": null,
+  "summary": "Current main ed39f654 still has the direct-entry root-version lifecycle defect. A narrow two-file fix is planned, but this read-only checkout lacks dependencies and dist artifacts, so no branch, validation, or PR can be produced here.",
+  "actions": [
+    {
+      "target": "#121604",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "The open issue is the canonical report for a real, narrow CLI regression; it is not security-sensitive."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121604",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "Reuse the existing root-version owner instead of changing global progress behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121604",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "A writable executor with the repository dependencies must apply and validate the planned repair before opening the required PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
