@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:47:52.409Z",
+  "updated_at": "2026-08-10T05:47:55.732Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111205:5234783337:2026-08-10T00:55:34Z:re_review",
-      "comment_id": "5234783337",
-      "comment_version_key": "5234783337:2026-08-10T00:55:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111205#issuecomment-5234783337",
-      "comment_created_at": "2026-08-10T00:55:34Z",
-      "comment_updated_at": "2026-08-10T00:55:34Z",
-      "comment_body_sha256": "b2aad1c41933171536ea3a286cf7c015dac3f9a341ad358dce35d49a3fefc946",
-      "source_delivery_id": "3277b400-9456-11f1-8388-52d087b783b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111205,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T00:56:15.233Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-native-hook-relay-config",
-        "head_sha": "86c9e21c2b5ac143399ea78276c35d367e4a70cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120721:5234783027:2026-08-10T00:55:30Z:re_review",
       "comment_id": "5234783027",
@@ -32344,6 +32296,39 @@
         "kind": "pull_request",
         "branch": "steipete/subagents-move-announce-c9d4",
         "head_sha": "dfe6725fff0edb3a79a7d08332682978f21d5bfb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-10T05:47:09Z:clawsweeper_needs_human",
+      "comment_id": "5230661991",
+      "comment_version_key": "5230661991:2026-08-10T05:47:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
+      "comment_created_at": "2026-08-09T08:49:31Z",
+      "comment_updated_at": "2026-08-10T05:47:09Z",
+      "comment_body_sha256": "ce3e2b1710a80752fe5b0449e1bb9e4b07cc243b4b6b04481d561037be7d6ed7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind Gateway approval to the reviewed warning (P1)** - acknowledgeInstallPolicyWarning is accepted before any warning has been returned, and each retry creates a fresh approval callback. The later comparison onl...; Review finding: [P1] Bind Gateway approval to the reviewed warning — src/plugins/management-service.ts:1437-1439 - [high] Gateway acknowledgement is not tied to a reviewed warning... (sha=17cf4ac8bac08819fe00c4d533dff7d3da60e99e)",
+      "expected_head_sha": "17cf4ac8bac08819fe00c4d533dff7d3da60e99e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T05:47:55.732Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-gateway",
+        "head_sha": "17cf4ac8bac08819fe00c4d533dff7d3da60e99e",
         "cluster_id": null,
         "job_path": null
       }
