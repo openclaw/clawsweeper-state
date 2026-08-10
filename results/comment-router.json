@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:06:46.290Z",
+  "updated_at": "2026-08-10T19:08:28.250Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2841:5241348610:2026-08-10T14:04:20Z:re_review",
-      "comment_id": "5241348610",
-      "comment_version_key": "5241348610:2026-08-10T14:04:20Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2841#issuecomment-5241348610",
-      "comment_created_at": "2026-08-10T14:04:20Z",
-      "comment_updated_at": "2026-08-10T14:04:20Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "62cc67e0-94c4-11f1-98fe-1f0606156226",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2841,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "OWNER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:05:25.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/binding-quota-caps-session",
-        "head_sha": "cf332333955a4a70b03e594a405082f7c4c98bab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1098:5241388227:2026-08-10T14:07:45Z:clawsweeper_auto_repair",
       "comment_id": "5241388227",
@@ -31847,6 +31799,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-122-doc-contract-safety",
         "head_sha": "2c5e8ed5a5fd235f5708487b46581b9cfb8da0e5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:306:5243424394:2026-08-10T19:07:35Z:clawsweeper_needs_human",
+      "comment_id": "5243424394",
+      "comment_version_key": "5243424394:2026-08-10T19:07:35Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/306#issuecomment-5243424394",
+      "comment_created_at": "2026-08-10T17:03:37Z",
+      "comment_updated_at": "2026-08-10T19:07:35Z",
+      "comment_body_sha256": "9e09ce7d009c46f844a5de5a8bc66b9ee1a263daf71b683e19cbd1b3af3648ff",
+      "repo": "openclaw/mcporter",
+      "issue_number": 306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The claimed live run is an uninspectable prose summary from an earlier head; attach a redacted current-head terminal/log artifact show... (sha=031ca975bbedb93ee834ec927635a44b46adf88f)",
+      "expected_head_sha": "031ca975bbedb93ee834ec927635a44b46adf88f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:08:28.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-refresh-cross-process-lock",
+        "head_sha": "031ca975bbedb93ee834ec927635a44b46adf88f",
         "cluster_id": null,
         "job_path": null
       }
