@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:46:46.656Z",
+  "updated_at": "2026-08-10T03:46:55.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101441:5234273886:2026-08-09T22:55:38Z:re_review",
-      "comment_id": "5234273886",
-      "comment_version_key": "5234273886:2026-08-09T22:55:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-5234273886",
-      "comment_created_at": "2026-08-09T22:55:38Z",
-      "comment_updated_at": "2026-08-09T22:55:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "714be6d0-9445-11f1-9387-64fb80b1a4c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101441,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:56:16.438Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-sanitize-outbound-90684",
-        "head_sha": "08e489d3207227c2b8a945dce729aa6e0d28ed00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105643:5234275549:2026-08-09T22:56:07Z:re_review",
       "comment_id": "5234275549",
@@ -32360,6 +32312,39 @@
         "kind": "pull_request",
         "branch": "leon/preserve-unreadable-npm-markers-20260810",
         "head_sha": "3e8e2ed4e5f3868699e28619a98888bd681468ca",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121301:5234765015:2026-08-10T03:46:15Z:clawsweeper_needs_human",
+      "comment_id": "5234765015",
+      "comment_version_key": "5234765015:2026-08-10T03:46:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121301#issuecomment-5234765015",
+      "comment_created_at": "2026-08-10T00:51:26Z",
+      "comment_updated_at": "2026-08-10T03:46:15Z",
+      "comment_body_sha256": "fc74c8455acd8b774512643965a78a56af5b714503c07fa3e44f699229ba12c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains; this PR is ready for ordinary maintainer review and normal exact-head merge gating. (sha=25e1b4b64293a15934c1b92cd1a69142cd041a22)",
+      "expected_head_sha": "25e1b4b64293a15934c1b92cd1a69142cd041a22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:46:55.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/image-understanding-agentdir",
+        "head_sha": "25e1b4b64293a15934c1b92cd1a69142cd041a22",
         "cluster_id": null,
         "job_path": null
       }
