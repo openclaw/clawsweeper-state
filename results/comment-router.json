@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:56:43.051Z",
+  "updated_at": "2026-08-10T14:56:44.107Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1096:5238921962:2026-08-10T10:24:13Z:re_review",
-      "comment_id": "5238921962",
-      "comment_version_key": "5238921962:2026-08-10T10:24:13Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1096#issuecomment-5238921962",
-      "comment_created_at": "2026-08-10T10:24:13Z",
-      "comment_updated_at": "2026-08-10T10:24:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "a29ae190-94a5-11f1-84d1-ef5cac9df9b0",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1096,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:24:47.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-114-doc-drift-checks",
-        "head_sha": "916143113a89dfafd7e483e5f0e69865b82e0999",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:369:5238728493:2026-08-10T10:34:07Z:clawsweeper_auto_repair",
       "comment_id": "5238728493",
@@ -31269,6 +31221,39 @@
         "kind": "pull_request",
         "branch": "fix/cloud-dispatch-retry-singleflight",
         "head_sha": "872eb7d494c650fd224161ecb2c5d7df57fdc619",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119114:5174845543:2026-08-10T14:52:08Z:clawsweeper_needs_human",
+      "comment_id": "5174845543",
+      "comment_version_key": "5174845543:2026-08-10T14:52:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119114#issuecomment-5174845543",
+      "comment_created_at": "2026-08-04T05:07:06Z",
+      "comment_updated_at": "2026-08-10T14:52:08Z",
+      "comment_body_sha256": "6b075abe54586ac9b57c63cc0d39063b7064153c973e6f4c722e149246fbf1be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119114,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft branch behind main; refresh the branch and obtain exact-head UI E2E confirmation before landing. (sha=40dc2d1713ca39a1e65384f2e0b6405cc6b91dcd)",
+      "expected_head_sha": "40dc2d1713ca39a1e65384f2e0b6405cc6b91dcd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:56:44.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/custodian-attached-control-footer",
+        "head_sha": "40dc2d1713ca39a1e65384f2e0b6405cc6b91dcd",
         "cluster_id": null,
         "job_path": null
       }
