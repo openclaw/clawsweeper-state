@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:51:56.772Z",
+  "updated_at": "2026-08-10T16:51:57.664Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121309:5239752371:2026-08-10T11:53:40Z:re_review",
-      "comment_id": "5239752371",
-      "comment_version_key": "5239752371:2026-08-10T11:53:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5239752371",
-      "comment_created_at": "2026-08-10T11:53:40Z",
-      "comment_updated_at": "2026-08-10T11:53:40Z",
-      "comment_body_sha256": "2ea01eee2de111d99a734c786dda1fd1d512515be267af8a3ab75d41fa8f04a6",
-      "source_delivery_id": "21455f00-94b2-11f1-91d2-87dbaf04c998",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T11:54:11.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prep/delete-cleanup-completion-receipts",
-        "head_sha": "e6387a9622bca8e22d664c9f6786c8dc06352876",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121422:5236371280:2026-08-10T11:53:50Z:clawsweeper_needs_human",
       "comment_id": "5236371280",
@@ -31408,6 +31360,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T16:51:56.772Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121651:5243294394:2026-08-10T16:51:16Z:clawsweeper_needs_human",
+      "comment_id": "5243294394",
+      "comment_version_key": "5243294394:2026-08-10T16:51:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121651#issuecomment-5243294394",
+      "comment_created_at": "2026-08-10T16:51:16Z",
+      "comment_updated_at": "2026-08-10T16:51:16Z",
+      "comment_body_sha256": "42576354f6f59a243f2036283d3f8cf4bd7626cce3ffc8561cea6ef48a53b4c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121651,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Named-profile managed CLI discovery changes an upgrade-sensitive path, so the default-profile location and named-profile isolation need exact-head validation. (sha=1987d8ce1aab792746b8dd96d4d742f976d4f047)",
+      "expected_head_sha": "1987d8ce1aab792746b8dd96d4d742f976d4f047",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:51:57.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/reverent-kare-1c64c2",
+        "head_sha": "1987d8ce1aab792746b8dd96d4d742f976d4f047",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
