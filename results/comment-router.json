@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T09:33:40.207Z",
+  "updated_at": "2026-08-10T09:37:43.738Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2797:5236063494:2026-08-10T04:59:31Z:re_review",
-      "comment_id": "5236063494",
-      "comment_version_key": "5236063494:2026-08-10T04:59:31Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2797#issuecomment-5236063494",
-      "comment_created_at": "2026-08-10T04:59:31Z",
-      "comment_updated_at": "2026-08-10T04:59:31Z",
-      "comment_body_sha256": "db356c003189b103845771cef62258f2e8f10e1a06a875b1ea89509249327983",
-      "source_delivery_id": "46291580-9478-11f1-8ffd-a0600b4b0876",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2797,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the test now exercises the production default spenddashboardsource activity-loader path (no injected loader), the provider-architecture gatekeeper entries were re-anchored after the seam, and ci is green on 52b9b68a",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T05:00:07.221Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-token-activity-dashboard",
-        "head_sha": "52b9b68a7062043aab17dc52eb3112de77d40933",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121287:5235029060:2026-08-10T04:59:54Z:clawsweeper_needs_human",
       "comment_id": "5235029060",
@@ -31940,6 +31892,39 @@
         "kind": "pull_request",
         "branch": "steipete/v4-agent-envelope",
         "head_sha": "c57f6ae3f956e585f400ae5dfa8067a1e981e602",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:285:5238453971:2026-08-10T09:37:03Z:clawsweeper_needs_human",
+      "comment_id": "5238453971",
+      "comment_version_key": "5238453971:2026-08-10T09:37:03Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/285#issuecomment-5238453971",
+      "comment_created_at": "2026-08-10T09:37:03Z",
+      "comment_updated_at": "2026-08-10T09:37:03Z",
+      "comment_body_sha256": "1cce0622c149e30f4b22172942cc23fcab550168e41c2a2ee6c747fe16ec0388",
+      "repo": "openclaw/crabpot",
+      "issue_number": 285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Version 2.18.0 can change the external plugin’s observed registrations or compatibility even though the resolved transitive set is unchanged; wait for the pending fixture checks befor... (sha=ee9016d5a2d99aab89fdc7d6f7fc38568791f495)",
+      "expected_head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T09:37:43.738Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/plugins/yuanbao/openclaw-plugin-yuanbao-2.18.0",
+        "head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
         "cluster_id": null,
         "job_path": null
       }
