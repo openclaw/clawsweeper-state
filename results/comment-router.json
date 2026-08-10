@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:26:50.177Z",
+  "updated_at": "2026-08-10T08:27:55.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119687:5199421841:2026-08-06T01:40:42Z:re_review",
-      "comment_id": "5199421841",
-      "comment_version_key": "5199421841:2026-08-06T01:40:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5199421841",
-      "comment_created_at": "2026-08-06T01:40:42Z",
-      "comment_updated_at": "2026-08-06T01:40:42Z",
-      "comment_body_sha256": "c88bc3f745167bf7ea0b5e04f1c856a1fe94cebf7d00ab71ff46d20c838564b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119687,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:50:18.088Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119687:5199761716:2026-08-06T02:39:12Z:re_review",
       "comment_id": "5199761716",
@@ -31672,6 +31645,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:366:5237623983:2026-08-10T08:27:07Z:clawsweeper_needs_human",
+      "comment_id": "5237623983",
+      "comment_version_key": "5237623983:2026-08-10T08:27:07Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/366#issuecomment-5237623983",
+      "comment_created_at": "2026-08-10T08:15:01Z",
+      "comment_updated_at": "2026-08-10T08:27:07Z",
+      "comment_body_sha256": "b0231ef56d99d597fec98dec058c7866361bfa020af87705733ab1959610b2b2",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 366,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Agent JSON failures change from an error string to the documented error object; consumers built from current main must read error.message rather than the legacy string. (sha=83a4f1391512049038574bfa6481c85128896189)",
+      "expected_head_sha": "83a4f1391512049038574bfa6481c85128896189",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:27:55.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/v4-see-envelope",
+        "head_sha": "83a4f1391512049038574bfa6481c85128896189",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
