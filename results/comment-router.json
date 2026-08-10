@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:16:54.368Z",
+  "updated_at": "2026-08-10T22:17:28.252Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96123:5243465209:2026-08-10T17:07:28Z:re_review",
-      "comment_id": "5243465209",
-      "comment_version_key": "5243465209:2026-08-10T17:07:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96123#issuecomment-5243465209",
-      "comment_created_at": "2026-08-10T17:07:28Z",
-      "comment_updated_at": "2026-08-10T17:07:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96123,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:59:53.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovered-tool-warning-ack",
-        "head_sha": "3e9630916f33d54bebc5976ecec614eab392eef7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114079:5243532676:2026-08-10T17:14:10Z:re_review",
       "comment_id": "5243532676",
@@ -32120,6 +32073,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-minor-and-patch-126bae2323",
         "head_sha": "7c723f7d327ba1b38e0909bdb24f7cd2143d0bed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:382:5246654956:2026-08-10T22:16:30Z:clawsweeper_needs_human",
+      "comment_id": "5246654956",
+      "comment_version_key": "5246654956:2026-08-10T22:16:30Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/382#issuecomment-5246654956",
+      "comment_created_at": "2026-08-10T22:16:30Z",
+      "comment_updated_at": "2026-08-10T22:16:30Z",
+      "comment_body_sha256": "398b586d3f5572ce85a496937e57a315086b799381622c32c679024f9cebd390",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 382,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts and MCP clients that invoke Dock or menu-bar mutations without the new consent parameter will now receive a refusal; verify every generated command recommendation and... (sha=ce8699d92e6c35cb5c0ffdd834b20361f92aa38a)",
+      "expected_head_sha": "ce8699d92e6c35cb5c0ffdd834b20361f92aa38a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T22:17:28.252Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/global-ui-consent-stack",
+        "head_sha": "ce8699d92e6c35cb5c0ffdd834b20361f92aa38a",
         "cluster_id": null,
         "job_path": null
       }
