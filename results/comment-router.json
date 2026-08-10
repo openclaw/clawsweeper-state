@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T00:00:41.377Z",
+  "updated_at": "2026-08-10T00:03:04.006Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121116:5233561177:2026-08-09T19:56:36Z:re_review",
-      "comment_id": "5233561177",
-      "comment_version_key": "5233561177:2026-08-09T19:56:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121116#issuecomment-5233561177",
-      "comment_created_at": "2026-08-09T19:56:36Z",
-      "comment_updated_at": "2026-08-09T19:56:36Z",
-      "comment_body_sha256": "8135237613827313f3fa74d8a3c21167802bf9061aa55958d3ef81a9635f5390",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121116,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — operation scoping addressed in d3a0d09dbae: formatmsteamssenderrorhint now takes an operation parameter; edit/delete catches pass \"edit\"/\"delete\" and get operation-specific ambiguous text (\"may have applied the edit\" / \"may have completed the deletion — verify the message state in teams before retrying\") instead of the create-oriented duplicate-delivery wording. focused 503 regressions added for both operations (errors.test.ts operation cases + send.test.ts end-to-end edit/delete hint assertions); 125 tests pass across the affected files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T20:48:09.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/msteams-ambiguous-5xx-no-retry",
-        "head_sha": "d3a0d09dbae32f88b834cf55ecbd48d8c4ce6e07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5233562925:2026-08-09T19:57:03Z:re_review",
       "comment_id": "5233562925",
@@ -31975,6 +31928,39 @@
         "kind": "pull_request",
         "branch": "fix/llm-invoke-honor-abort-signal",
         "head_sha": "c0c8a52b7b172e1fe413daf4855713c71ad43f06",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:468:5121122986:2026-08-09T23:58:52Z:clawsweeper_needs_human",
+      "comment_id": "5121122986",
+      "comment_version_key": "5121122986:2026-08-09T23:58:52Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/468#issuecomment-5121122986",
+      "comment_created_at": "2026-07-29T17:12:36Z",
+      "comment_updated_at": "2026-08-09T23:58:52Z",
+      "comment_body_sha256": "286cbb387cf04965fa616f9485c7554bcef8ba66ca65151b041d7893af2dc863",
+      "repo": "openclaw/acpx",
+      "issue_number": 468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging creates a stable public AcpRuntimeOptions.permissionPolicy contract, including its policy matching and callback-first precedence. (sha=e91cc50439e7ed58845fca82e23c72dcaaf7fd8a)",
+      "expected_head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T00:03:04.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/runtime-permission-policy",
+        "head_sha": "e91cc50439e7ed58845fca82e23c72dcaaf7fd8a",
         "cluster_id": null,
         "job_path": null
       }
