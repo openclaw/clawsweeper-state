@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:53:40.181Z",
+  "updated_at": "2026-08-10T14:53:42.827Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120534:5225762219:2026-08-10T10:01:47Z:clawsweeper_needs_human",
-      "comment_id": "5225762219",
-      "comment_version_key": "5225762219:2026-08-10T10:01:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120534#issuecomment-5225762219",
-      "comment_created_at": "2026-08-08T10:46:25Z",
-      "comment_updated_at": "2026-08-10T10:01:47Z",
-      "comment_body_sha256": "7ba8408a9426be1edf69a25af175370553eb57683cf598380fc553e0ff24e261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120534,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Provide a supported upgrade path for legacy worker bundles (P1)** - The proposed dispatch gate rejects bundles without the new execution-context feature, while current main still recognizes worker-launch-v2; exi...; Review finding: [P1] Provide a supported upgrade path for legacy worker bundles — src/gateway/worker-environments/placement-dispatch.ts:82-85 - [medium] Audit delegated worker aut... (sha=682cae9089739e30aaeb17b57c03001015afb3c0)",
-      "expected_head_sha": "682cae9089739e30aaeb17b57c03001015afb3c0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:02:36.919Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-f1r-canonical-execution-context-carrier",
-        "head_sha": "682cae9089739e30aaeb17b57c03001015afb3c0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109203:5006808816:2026-08-10T10:01:55Z:clawsweeper_needs_human",
       "comment_id": "5006808816",
@@ -31350,6 +31317,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T14:53:40.181Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119722:5196416781:2026-08-10T14:48:59Z:clawsweeper_auto_repair",
+      "comment_id": "5196416781",
+      "comment_version_key": "5196416781:2026-08-10T14:48:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
+      "comment_created_at": "2026-08-05T19:33:37Z",
+      "comment_updated_at": "2026-08-10T14:48:59Z",
+      "comment_body_sha256": "f36a6babd4e6bf4d50afaeafdb619c2ecb0eaad3ef50f416f55d5e449c04af62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119722,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d)",
+      "expected_head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:53:42.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-112625",
+        "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
+        "cluster_id": "automerge-openclaw-openclaw-119722",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119722.md"
+      }
     }
   ]
 }
