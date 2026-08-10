@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:52:34.560Z",
+  "updated_at": "2026-08-10T10:52:37.015Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121477:5236842066:2026-08-10T06:50:31Z:re_review",
-      "comment_id": "5236842066",
-      "comment_version_key": "5236842066:2026-08-10T06:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121477#issuecomment-5236842066",
-      "comment_created_at": "2026-08-10T06:50:31Z",
-      "comment_updated_at": "2026-08-10T06:50:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "c8518ec0-9487-11f1-9793-47109f882700",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121477,
-      "author": "zhangqueping",
-      "author_id": 3436352,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T06:51:08.654Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-120956-workboard-notification-truncation",
-        "head_sha": "56d65f871d5c631d0b20502ddbab43b35066d4c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121249:5234019265:2026-08-10T06:50:12Z:clawsweeper_auto_repair",
       "comment_id": "5234019265",
@@ -32118,6 +32070,39 @@
         "kind": "pull_request",
         "branch": "codex/openclaw-agent-delivery-20260730",
         "head_sha": "54c6736e4b230e5d6e5763b51809af1ec8ab2137",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121565:5239172756:2026-08-10T10:51:55Z:clawsweeper_needs_human",
+      "comment_id": "5239172756",
+      "comment_version_key": "5239172756:2026-08-10T10:51:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121565#issuecomment-5239172756",
+      "comment_created_at": "2026-08-10T10:51:55Z",
+      "comment_updated_at": "2026-08-10T10:51:55Z",
+      "comment_body_sha256": "bc425325920e8c1259e9e57664ec3f7f284d0e095165456ffdb4b8c961edfae4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121565,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check state has a failed check-plugin-sdk-api-baseline run and several exact-head runs remain in progress; resolve that failure and require a green exact head before merg... (sha=c2d03aadfc254e01be97e0a204e98f39ef9b1ad9)",
+      "expected_head_sha": "c2d03aadfc254e01be97e0a204e98f39ef9b1ad9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:52:37.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/clawhub-split-0810",
+        "head_sha": "c2d03aadfc254e01be97e0a204e98f39ef9b1ad9",
         "cluster_id": null,
         "job_path": null
       }
