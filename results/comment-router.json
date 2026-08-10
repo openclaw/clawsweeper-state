@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T01:52:32.131Z",
+  "updated_at": "2026-08-10T01:52:47.380Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120881:5229807905:2026-08-09T21:44:32Z:clawsweeper_needs_human",
-      "comment_id": "5229807905",
-      "comment_version_key": "5229807905:2026-08-09T21:44:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120881#issuecomment-5229807905",
-      "comment_created_at": "2026-08-09T04:43:49Z",
-      "comment_updated_at": "2026-08-09T21:44:32Z",
-      "comment_body_sha256": "a08969eac14fa661d01b49f8fab5f1a5d0ee8976b1d281416c5bd7a18108173c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing upgrades with a legacy roster or generated provider catalog now stop until Doctor repairs them; merge only with the demonstrated refusal-to-recovery path retained for gateway... (sha=74fa19390ef53d90ec3e98dbd8996481cf6f341b)",
-      "expected_head_sha": "74fa19390ef53d90ec3e98dbd8996481cf6f341b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T21:45:10.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/serene-kepler-8444e3",
-        "head_sha": "74fa19390ef53d90ec3e98dbd8996481cf6f341b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-09T21:44:29Z:clawsweeper_auto_repair",
       "comment_id": "5088305683",
@@ -32308,6 +32275,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:114072:5235050120:2026-08-10T01:52:09Z:re_review",
+      "comment_id": "5235050120",
+      "comment_version_key": "5235050120:2026-08-10T01:52:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5235050120",
+      "comment_created_at": "2026-08-10T01:52:09Z",
+      "comment_updated_at": "2026-08-10T01:52:09Z",
+      "comment_body_sha256": "3bd6efd7f45b24f8d8fc61749ea638da2ff99e95d14db59c08677d1dbfa73ac3",
+      "source_delivery_id": "19794290-945e-11f1-868f-c6e2b7fbfca6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114072,
+      "author": "fr-meyer",
+      "author_id": 26621962,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T01:52:45.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-decomposition-orchestration",
+        "head_sha": "1ac72eb94f34f6a466fc39c6a2e09bca136dbd97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
