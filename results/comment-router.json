@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:01:23.812Z",
+  "updated_at": "2026-08-10T14:01:35.031Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121044:5232125420:2026-08-10T09:03:01Z:clawsweeper_needs_human",
-      "comment_id": "5232125420",
-      "comment_version_key": "5232125420:2026-08-10T09:03:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121044#issuecomment-5232125420",
-      "comment_created_at": "2026-08-09T14:52:28Z",
-      "comment_updated_at": "2026-08-10T09:03:01Z",
-      "comment_body_sha256": "38813174cfb81bfdb12131baca03549b128fae4db82f0280d7cde53f7b652152",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121044,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A successful provider fallback now always performs a full shadow reindex; this is the correct identity repair, but it affects persisted memory and session search state and the owner-p... (sha=3f7941e6f42621044d955eb089f4460a2c399a2e)",
-      "expected_head_sha": "3f7941e6f42621044d955eb089f4460a2c399a2e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T09:54:37.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-zero-hit-full-reindex",
-        "head_sha": "3f7941e6f42621044d955eb089f4460a2c399a2e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121150:5234254442:2026-08-10T08:59:22Z:clawsweeper_auto_repair",
       "comment_id": "5234254442",
@@ -31315,6 +31282,54 @@
         "kind": "pull_request",
         "branch": "feat/codex-native-hook-relay-config",
         "head_sha": "6fab40a2fc2a8ded01cdb4f1a73b65ba1229c40f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:105643:5241306675:2026-08-10T14:00:47Z:re_review",
+      "comment_id": "5241306675",
+      "comment_version_key": "5241306675:2026-08-10T14:00:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-5241306675",
+      "comment_created_at": "2026-08-10T14:00:47Z",
+      "comment_updated_at": "2026-08-10T14:00:47Z",
+      "comment_body_sha256": "143886a4b921decc9c32386cf2003914e94e4a9455481fb7a7a72229897640d0",
+      "source_delivery_id": "e3d7a490-94c3-11f1-9301-35a97d122e65",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105643,
+      "author": "totobusnello",
+      "author_id": 246086438,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T14:01:32.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bundle-mcp-temp-sweep",
+        "head_sha": "2cac73e3f20475c1b1aac2d55e3a901b8c31c46b",
         "cluster_id": null,
         "job_path": null
       },
