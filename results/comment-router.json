@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:26:41.161Z",
+  "updated_at": "2026-08-10T17:29:12.053Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5229796565:2026-08-09T04:40:02Z:re_review",
-      "comment_id": "5229796565",
-      "comment_version_key": "5229796565:2026-08-09T04:40:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5229796565",
-      "comment_created_at": "2026-08-09T04:40:02Z",
-      "comment_updated_at": "2026-08-09T04:40:02Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T12:48:20.051Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5229894559:2026-08-09T05:12:02Z:re_review",
       "comment_id": "5229894559",
@@ -31242,6 +31215,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:47:5195034776:2026-08-10T17:22:48Z:clawsweeper_needs_human",
+      "comment_id": "5195034776",
+      "comment_version_key": "5195034776:2026-08-10T17:22:48Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/47#issuecomment-5195034776",
+      "comment_created_at": "2026-08-05T17:23:49Z",
+      "comment_updated_at": "2026-08-10T17:22:48Z",
+      "comment_body_sha256": "ec9c9b1dc973f43dde4e3324f92ef3bffc1eb590cbec32b013fad5850e146910",
+      "repo": "openclaw/libterminal",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the action revision in the publishing job** - pnpm/action-setup runs in the job that has id-token permission and later calls npm trusted publishing, so accepting its new upstream...; Review finding: [medium] Review the action revision in the publishing job — .github/workflows/release.yml:34 (sha=ce346499b3e705479e979be7256d7f144f0af04f)",
+      "expected_head_sha": "ce346499b3e705479e979be7256d7f144f0af04f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T17:29:12.053Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-7d7dfe0edd",
+        "head_sha": "ce346499b3e705479e979be7256d7f144f0af04f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
