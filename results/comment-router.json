@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T15:41:55.931Z",
+  "updated_at": "2026-08-10T15:46:06.468Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119762:5198139710:2026-08-10T10:01:24Z:clawsweeper_needs_human",
-      "comment_id": "5198139710",
-      "comment_version_key": "5198139710:2026-08-10T10:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119762#issuecomment-5198139710",
-      "comment_created_at": "2026-08-05T22:31:15Z",
-      "comment_updated_at": "2026-08-10T10:01:24Z",
-      "comment_body_sha256": "a155aebe637834d8da22ce77d24d142932b4820adb4d76f6fac9445b9535d61f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119762,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Audit the external OIDC consumer before merge** - The three jobs grant id-token: write to an external reusable workflow. Its source could not be fetched during this review, so maintaine...; Review finding: [medium] Audit the external OIDC consumer before merge — .github/workflows/openclaw-release-checks.yml:1171 (sha=d9a037ebb0fbf87eb60f6562578becff308055e5)",
-      "expected_head_sha": "d9a037ebb0fbf87eb60f6562578becff308055e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:54:36.455Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/windows-node-full-release-validation",
-        "head_sha": "d9a037ebb0fbf87eb60f6562578becff308055e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119901:5202908645:2026-08-08T07:43:19Z:clawsweeper_needs_human",
       "comment_id": "5202908645",
@@ -31077,6 +31044,54 @@
         "kind": "pull_request",
         "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
         "head_sha": "55d2a4ba593717726596a5a08a07e33ea1f01658",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:105643:5242546970:2026-08-10T15:44:35Z:re_review",
+      "comment_id": "5242546970",
+      "comment_version_key": "5242546970:2026-08-10T15:44:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-5242546970",
+      "comment_created_at": "2026-08-10T15:44:35Z",
+      "comment_updated_at": "2026-08-10T15:44:35Z",
+      "comment_body_sha256": "82f05b6fe91a291f353347d3874c45e49066a289ed3e921558575b9698b5dd78",
+      "source_delivery_id": "6417cb40-94d2-11f1-9691-55962ef2e72a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 105643,
+      "author": "totobusnello",
+      "author_id": 246086438,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T15:46:04.011Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bundle-mcp-temp-sweep",
+        "head_sha": "57f92b4973d534973b037b6ffb8e0360b857d189",
         "cluster_id": null,
         "job_path": null
       },
