@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:36:41.471Z",
+  "updated_at": "2026-08-10T03:39:03.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabline:257:5168900311:2026-08-09T22:51:25Z:clawsweeper_auto_repair",
-      "comment_id": "5168900311",
-      "comment_version_key": "5168900311:2026-08-09T22:51:25Z",
-      "comment_url": "https://github.com/openclaw/crabline/pull/257#issuecomment-5168900311",
-      "comment_created_at": "2026-08-03T16:14:58Z",
-      "comment_updated_at": "2026-08-09T22:51:25Z",
-      "comment_body_sha256": "b11436ab79c0ad5e20c6eae29cb4342d29593c3a6b8c6389be7fd695f01f982b",
-      "repo": "openclaw/crabline",
-      "issue_number": 257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fa212fc949a445c7e0ef9dcd24a128656d4c5747)",
-      "expected_head_sha": "fa212fc949a445c7e0ef9dcd24a128656d4c5747",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:52:10.569Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/types/node-26.1.2",
-        "head_sha": "fa212fc949a445c7e0ef9dcd24a128656d4c5747",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1059:5219535679:2026-08-09T22:51:35Z:clawsweeper_auto_repair",
       "comment_id": "5219535679",
@@ -32302,6 +32269,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1254:5209899495:2026-08-10T03:38:17Z:clawsweeper_needs_human",
+      "comment_id": "5209899495",
+      "comment_version_key": "5209899495:2026-08-10T03:38:17Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1254#issuecomment-5209899495",
+      "comment_created_at": "2026-08-06T23:25:31Z",
+      "comment_updated_at": "2026-08-10T03:38:17Z",
+      "comment_body_sha256": "7b4673064508246055fa1844ab3d1fd46fada95e8074d8807a906d15d84fdc68",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes durable coordinator records and requires deploying the coordinator before tokenized CLI clients; after create-attempt records are in use, rolling the coordinator back to... (sha=81bd166943db7838de1dedd6148a6618dbe13d77)",
+      "expected_head_sha": "81bd166943db7838de1dedd6148a6618dbe13d77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:39:03.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/coordinator-canceled-create-cleanup",
+        "head_sha": "81bd166943db7838de1dedd6148a6618dbe13d77",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
