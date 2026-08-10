@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:01:57.063Z",
+  "updated_at": "2026-08-10T08:02:38.984Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116562:5136405557:2026-08-10T03:50:46Z:clawsweeper_needs_human",
-      "comment_id": "5136405557",
-      "comment_version_key": "5136405557:2026-08-10T03:50:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5136405557",
-      "comment_created_at": "2026-07-30T21:23:03Z",
-      "comment_updated_at": "2026-08-10T03:50:46Z",
-      "comment_body_sha256": "2fda379bd9c753fcaf02c1d391864dffb4662d3f924ed4e5476c41ba27447021",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 470 production lines and removes 14; the recovery transaction changes persistent-index and runtime lifecycle behavior, so maintainers must consciously accept that co... (sha=491e9290ef4819ef6045e72ab0911e2f24159d92)",
-      "expected_head_sha": "491e9290ef4819ef6045e72ab0911e2f24159d92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T03:55:03.068Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-fallback-recovery-96534",
-        "head_sha": "491e9290ef4819ef6045e72ab0911e2f24159d92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5193770036:2026-08-05T15:27:25Z:re_review",
       "comment_id": "5193770036",
@@ -31817,6 +31784,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:108782:5237503463:2026-08-10T08:02:06Z:re_review",
+      "comment_id": "5237503463",
+      "comment_version_key": "5237503463:2026-08-10T08:02:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/108782#issuecomment-5237503463",
+      "comment_created_at": "2026-08-10T08:02:06Z",
+      "comment_updated_at": "2026-08-10T08:02:06Z",
+      "comment_body_sha256": "486beaae1f7f2319cc2895e4bf566720040e97fd79e91cdd23f8dab16d31e4bd",
+      "source_delivery_id": "c87251a0-9491-11f1-99d3-3ccb75576844",
+      "repo": "openclaw/openclaw",
+      "issue_number": 108782,
+      "author": "jgrandguillaume",
+      "author_id": 151794,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T08:02:37.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/memory-lancedb-scope",
+        "head_sha": "3fa2f90a554e886d322c643e0a709edf20a682bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
