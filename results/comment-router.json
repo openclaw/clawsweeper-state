@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T23:04:18.782Z",
+  "updated_at": "2026-08-10T23:05:11.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-08-10T17:54:27Z:clawsweeper_auto_repair",
-      "comment_id": "5174219273",
-      "comment_version_key": "5174219273:2026-08-10T17:54:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5174219273",
-      "comment_created_at": "2026-08-04T03:19:55Z",
-      "comment_updated_at": "2026-08-10T17:54:27Z",
-      "comment_body_sha256": "aa37cc0c4e295ccf371ffeadce39eeed870ef87afd057afe452bb1aa637f8d2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1a2287deb76cfc54ca90de000c01b7cc232fedcb)",
-      "expected_head_sha": "1a2287deb76cfc54ca90de000c01b7cc232fedcb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T18:00:49.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "1a2287deb76cfc54ca90de000c01b7cc232fedcb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-08-07T13:53:08Z:clawsweeper_auto_merge",
       "comment_id": "5176973305",
@@ -32557,6 +32524,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121665:5245220947:2026-08-10T23:04:17Z:clawsweeper_needs_human",
+      "comment_id": "5245220947",
+      "comment_version_key": "5245220947:2026-08-10T23:04:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121665#issuecomment-5245220947",
+      "comment_created_at": "2026-08-10T19:52:33Z",
+      "comment_updated_at": "2026-08-10T23:04:17Z",
+      "comment_body_sha256": "e753c0ca9b01a5e4c0eb65b15e48181c3b5725b14eca41ee82a68f563967bee9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121665,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +27 lines for a bug fix; the separate cleanup-only lifecycle state is justified by avoiding a full retry that re-embeds unchanged sessions, but merits the exist... (sha=4415ce95248c349f8120f8d288339dc87ea6339b)",
+      "expected_head_sha": "4415ce95248c349f8120f8d288339dc87ea6339b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T23:05:11.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hannes/fix-memory-session-stale-cleanup",
+        "head_sha": "4415ce95248c349f8120f8d288339dc87ea6339b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
