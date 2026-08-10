@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121604",
+  "mode": "autonomous",
+  "run_id": "31395334753",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31395334753",
+  "head_sha": "0559e03857fa9a9a6de28c984ed495287ec3b9cc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121604.md",
+  "published_at": "2026-08-10T14:05:44.465Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121604",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121604",
+  "canonical_pr": null,
+  "summary": "Current main still routes direct dist/index.js root-version calls into runCli before the existing fast path, creating TTY startup progress before synchronous version exit. A narrow two-file repair is ready, but this worker cannot edit, build, or validate because the checkout filesystem is read-only and dependencies are absent.",
+  "actions": [
+    {
+      "target": "#121604",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "A root-only --version/-V/-v invocation should use the existing fast path before startup progress; container-targeted requests must continue through runCli."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121604",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "Use the existing fast path at the legacy entry boundary; do not alter progress behavior globally."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121604",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#121604",
+      "candidate_fix": null,
+      "reason": "The worker checkout is read-only and has no dependency install or dist artifacts. An executor with a writable checkout must implement and validate the artifact before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
