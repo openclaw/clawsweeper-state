@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:57:05.619Z",
+  "updated_at": "2026-08-10T22:58:09.053Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104872:4949550134:2026-08-10T17:51:29Z:clawsweeper_needs_human",
-      "comment_id": "4949550134",
-      "comment_version_key": "4949550134:2026-08-10T17:51:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104872#issuecomment-4949550134",
-      "comment_created_at": "2026-07-12T02:00:28Z",
-      "comment_updated_at": "2026-08-10T17:51:29Z",
-      "comment_body_sha256": "929ed79aae28efe0bba6f3152935f0f9285959124958dac7e90739b07eca1613",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104872,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve verified Discord voice owner authority (P1)** - This removes the only forwarding of context.senderIsOwner. That bit is derived from Discord identity plus commands.ownerAllowFrom, and the existing voice...; Review finding: [P1] Preserve verified Discord voice owner authority — extensions/discord/src/voice/ingress.ts:135-145 - [medium] Verified Discord voice authority is discarded — e... (sha=74e2b96868d32158ec58325ce3b0d9fb67d6cc7f)",
-      "expected_head_sha": "74e2b96868d32158ec58325ce3b0d9fb67d6cc7f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T18:00:49.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/conversation-identity-ingress",
-        "head_sha": "74e2b96868d32158ec58325ce3b0d9fb67d6cc7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105643:4952544572:2026-08-10T15:53:41Z:clawsweeper_auto_repair",
       "comment_id": "4952544572",
@@ -32479,6 +32446,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121665:5246962905:2026-08-10T22:57:37Z:re_review",
+      "comment_id": "5246962905",
+      "comment_version_key": "5246962905:2026-08-10T22:57:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121665#issuecomment-5246962905",
+      "comment_created_at": "2026-08-10T22:57:37Z",
+      "comment_updated_at": "2026-08-10T22:57:37Z",
+      "comment_body_sha256": "53250316d6d185f692dcbaace95c5f2f4e19d3b0f4bb200e2bdcd82d587ade77",
+      "source_delivery_id": "e2069900-950e-11f1-8600-47aea6b2a485",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121665,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T22:58:07.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hannes/fix-memory-session-stale-cleanup",
+        "head_sha": "4415ce95248c349f8120f8d288339dc87ea6339b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
