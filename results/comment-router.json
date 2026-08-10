@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:51:33.906Z",
+  "updated_at": "2026-08-10T10:51:42.716Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114996:5234418446:2026-08-09T23:33:02Z:re_review",
-      "comment_id": "5234418446",
-      "comment_version_key": "5234418446:2026-08-09T23:33:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114996#issuecomment-5234418446",
-      "comment_created_at": "2026-08-09T23:33:02Z",
-      "comment_updated_at": "2026-08-09T23:33:02Z",
-      "comment_body_sha256": "720bca94eb241d43f2fa45de117351dbb79e6aca82963c7b5559b611ab1448a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114996,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:49:28.834Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114996:5234492511:2026-08-09T23:52:55Z:re_review",
       "comment_id": "5234492511",
@@ -32137,6 +32110,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121022:5231594288:2026-08-10T10:50:56Z:clawsweeper_needs_human",
+      "comment_id": "5231594288",
+      "comment_version_key": "5231594288:2026-08-10T10:50:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121022#issuecomment-5231594288",
+      "comment_created_at": "2026-08-09T12:46:57Z",
+      "comment_updated_at": "2026-08-10T10:50:56Z",
+      "comment_body_sha256": "a1fd7ed570d483b00c90bec13a49d57e5ff7036f8e05b20460e9ecae2737fbb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121022,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes patch/apply acknowledgement timing and can return UNAVAILABLE after persistence when runtime application fails; Gateway owners should explicitly accept that... (sha=250e4b8e012ac52ad6a8493bc0fe484a652a6d47)",
+      "expected_head_sha": "250e4b8e012ac52ad6a8493bc0fe484a652a6d47",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:51:42.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-config-patch-apply-barrier",
+        "head_sha": "250e4b8e012ac52ad6a8493bc0fe484a652a6d47",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
