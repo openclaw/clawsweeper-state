@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:01:07.015Z",
+  "updated_at": "2026-08-10T08:01:37.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121167:5235499175:2026-08-10T03:19:26Z:re_review",
-      "comment_id": "5235499175",
-      "comment_version_key": "5235499175:2026-08-10T03:19:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121167#issuecomment-5235499175",
-      "comment_created_at": "2026-08-10T03:19:26Z",
-      "comment_updated_at": "2026-08-10T03:19:26Z",
-      "comment_body_sha256": "e642119352aa32ef0c0902b4fe5a13956d92c9ce7c06ec5e9f702778091b7d3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121167,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T03:47:41.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/beam-confirmed-inactive-20260810",
-        "head_sha": "3a25c14b27c9e209cc7fdaea24e2207da456301b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121167:5233270982:2026-08-10T03:46:59Z:clawsweeper_needs_human",
       "comment_id": "5233270982",
@@ -31964,6 +31917,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121479:5237488719:2026-08-10T08:00:54Z:clawsweeper_needs_human",
+      "comment_id": "5237488719",
+      "comment_version_key": "5237488719:2026-08-10T08:00:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121479#issuecomment-5237488719",
+      "comment_created_at": "2026-08-10T08:00:54Z",
+      "comment_updated_at": "2026-08-10T08:00:54Z",
+      "comment_body_sha256": "fa8ce337abc6320aa356f1b189a70958e61dd3c532555bd00b50d8e69c8942c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121479,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging removes the only shipped inspection/dismissal path for existing commitment rows and removes Doctor import of legacy JSON; retained records become intentionally inaccessible. (sha=bf14c6633f0e66fdca6c2e8400051fbd612fa10d)",
+      "expected_head_sha": "bf14c6633f0e66fdca6c2e8400051fbd612fa10d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:01:37.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/investigate-commitments-feature",
+        "head_sha": "bf14c6633f0e66fdca6c2e8400051fbd612fa10d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
