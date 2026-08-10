@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:47:13.495Z",
+  "updated_at": "2026-08-10T10:47:14.395Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-10T06:03:14Z:clawsweeper_needs_human",
-      "comment_id": "5134107795",
-      "comment_version_key": "5134107795:2026-08-10T06:03:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
-      "comment_created_at": "2026-07-30T17:24:48Z",
-      "comment_updated_at": "2026-08-10T06:03:14Z",
-      "comment_body_sha256": "2effc7b2b91bc44c76bc5d1d6934e535982d8d449b0f15c772f410e51b3cdba6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Forward acknowledgements into both hook scans (P1)** - The new callback is retained in the forward object, but the package-source and dependency-tree scans at lines 157 and 189 never receive it. Interactive hook...; Review finding: [P1] Forward acknowledgements into both hook scans — src/hooks/install.ts:97 - [P1] Keep the legacy unsafe flag non-authorizing — src/plugins/install-security-scan... (sha=b74569fb2a660967b7e8eb0aa986ca1640d89a9f)",
-      "expected_head_sha": "b74569fb2a660967b7e8eb0aa986ca1640d89a9f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:43:50.655Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "287bffb8f9756ead8bdf1786eb1a2a5dcb81165f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-10T06:03:44Z:clawsweeper_needs_human",
       "comment_id": "5160156082",
@@ -32048,6 +32015,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121541:5239125483:2026-08-10T10:46:34Z:re_review",
+      "comment_id": "5239125483",
+      "comment_version_key": "5239125483:2026-08-10T10:46:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121541#issuecomment-5239125483",
+      "comment_created_at": "2026-08-10T10:46:34Z",
+      "comment_updated_at": "2026-08-10T10:46:34Z",
+      "comment_body_sha256": "8209512ca5048f9e6bb3950c78fbc0a8cf34680ebb9c66a54c1e9506d6b3e7a2",
+      "source_delivery_id": "c2305500-94a8-11f1-8f26-a1d7647507f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121541,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T10:47:12.107Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/strip-model-token-separator-121426",
+        "head_sha": "ba0cf6b20c985cb238b13bfca6bacf12d2d0bc1f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121466:5237333237:2026-08-10T10:45:53Z:clawsweeper_needs_human",
