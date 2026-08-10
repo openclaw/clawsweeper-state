@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:57:03.431Z",
+  "updated_at": "2026-08-10T14:57:27.233Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121466:5237333237:2026-08-10T10:45:53Z:clawsweeper_needs_human",
-      "comment_id": "5237333237",
-      "comment_version_key": "5237333237:2026-08-10T10:45:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121466#issuecomment-5237333237",
-      "comment_created_at": "2026-08-10T07:48:50Z",
-      "comment_updated_at": "2026-08-10T10:45:53Z",
-      "comment_body_sha256": "4cada4bf7670b6cc634458095548e16452b00148c71b411c8f3bbb3b84224030",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject case-colliding email scope keys (P1)** - The docs define email keys as case-insensitive, but this record accepts both Admin@example.com and admin@example.com. The resolver gives an exact key precedence an...; Review finding: [P1] Reject case-colliding email scope keys — src/config/zod-schema.gateway.ts:87 - [P1] Limit header capping to identity-bearing sessions — src/gateway/server/ws-... (sha=25362247dab78f9b511ef2bd1078b34395c1b78f)",
-      "expected_head_sha": "25362247dab78f9b511ef2bd1078b34395c1b78f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:47:13.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/identity-scope-grants",
-        "head_sha": "25362247dab78f9b511ef2bd1078b34395c1b78f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119941:5204771748:2026-08-10T10:44:48Z:clawsweeper_needs_human",
       "comment_id": "5204771748",
@@ -31230,6 +31197,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T14:57:03.431Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118169:5241987252:2026-08-10T14:56:18Z:re_review",
+      "comment_id": "5241987252",
+      "comment_version_key": "5241987252:2026-08-10T14:56:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5241987252",
+      "comment_created_at": "2026-08-10T14:56:18Z",
+      "comment_updated_at": "2026-08-10T14:56:18Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "source_delivery_id": "a573d5e0-94cb-11f1-8469-a3a8200348ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118169,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T14:57:23.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-setup",
+        "head_sha": "e2493a6e83b41d1d71574761dae485899538b20f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
