@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:48:11.519Z",
+  "updated_at": "2026-08-10T14:48:33.384Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-10T09:57:02Z:clawsweeper_needs_human",
-      "comment_id": "5230661991",
-      "comment_version_key": "5230661991:2026-08-10T09:57:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
-      "comment_created_at": "2026-08-09T08:49:31Z",
-      "comment_updated_at": "2026-08-10T09:57:02Z",
-      "comment_body_sha256": "9b418bfdfab8142a31d7855fe563f3e4ead6a13fb827289e20ddebd493f5b8f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Forward warning approval through package scans (P1)** - The callback added here is dropped by the shared package-install handoff, so an issued token retry re-enters policy without approval and returns another wa...; Review finding: [P1] Forward warning approval through package scans — src/plugins/management-service.ts:1497-1514 - [medium] Authorize remote warning acknowledgement — src/gateway... (sha=dddc17440ff91b9c1eb2eb43abf0fda2631ce68c)",
-      "expected_head_sha": "dddc17440ff91b9c1eb2eb43abf0fda2631ce68c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T09:58:15.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/install-policy-warning-gateway",
-        "head_sha": "dddc17440ff91b9c1eb2eb43abf0fda2631ce68c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5232419531:2026-08-09T15:58:33Z:re_review",
       "comment_id": "5232419531",
@@ -31389,6 +31356,54 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-managed-chat-eof-20260730",
         "head_sha": "98734c60ec5635849d12a8ea757a1f38dac9873d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120668:5241881624:2026-08-10T14:47:44Z:re_review",
+      "comment_id": "5241881624",
+      "comment_version_key": "5241881624:2026-08-10T14:47:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120668#issuecomment-5241881624",
+      "comment_created_at": "2026-08-10T14:47:44Z",
+      "comment_updated_at": "2026-08-10T14:47:44Z",
+      "comment_body_sha256": "eb745d8718a36915547fc15aeb67f60276efeef22ed6c930cc85edfd44e5a570",
+      "source_delivery_id": "72ae3480-94ca-11f1-8d03-b5ae3391afe2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120668,
+      "author": "fr-meyer",
+      "author_id": 26621962,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T14:48:31.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-deferred-ingress-ownership",
+        "head_sha": "567017c52b22610d2a1f2940ece43b1740896f44",
         "cluster_id": null,
         "job_path": null
       },
