@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:13:55.151Z",
+  "updated_at": "2026-08-10T19:14:55.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1098:5241388227:2026-08-10T14:22:17Z:clawsweeper_needs_human",
-      "comment_id": "5241388227",
-      "comment_version_key": "5241388227:2026-08-10T14:22:17Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1098#issuecomment-5241388227",
-      "comment_created_at": "2026-08-10T14:07:45Z",
-      "comment_updated_at": "2026-08-10T14:22:17Z",
-      "comment_body_sha256": "eb23fe74d0d8658fdc3173406f4e7219510a848f5657bf132c47ca50bbc63621",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1098,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Not applicable: The changed JSON supplies documentation-validation claims and the remaining changes are operator documentation; no runtime, workflow, API, or integration behavior chan... (sha=d8a47bc68a380bb5ebf8a3830963b7dda170512a)",
-      "expected_head_sha": "d8a47bc68a380bb5ebf8a3830963b7dda170512a",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-10T14:22:59.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-119-scheduler-doc-consistency",
-        "head_sha": "d8a47bc68a380bb5ebf8a3830963b7dda170512a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113899:5241854231:2026-08-10T14:45:36Z:re_review",
       "comment_id": "5241854231",
@@ -31869,6 +31836,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1105:5244161548:2026-08-10T19:13:57Z:clawsweeper_needs_human",
+      "comment_id": "5244161548",
+      "comment_version_key": "5244161548:2026-08-10T19:13:57Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1105#issuecomment-5244161548",
+      "comment_created_at": "2026-08-10T18:15:18Z",
+      "comment_updated_at": "2026-08-10T19:13:57Z",
+      "comment_body_sha256": "dcda28464313fbfefab1f51dd41fe2e3ae8612103bea573f087e0bc322cdc471",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deploy the dashboard Worker route before the workflow change: a branchless legacy event can otherwise receive a temporary old-Worker 404 and rely on producer redelivery. (sha=236238166735dd670bc05f55e778a40a01deaf87)",
+      "expected_head_sha": "236238166735dd670bc05f55e778a40a01deaf87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:14:55.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-review-branch-authority",
+        "head_sha": "236238166735dd670bc05f55e778a40a01deaf87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
