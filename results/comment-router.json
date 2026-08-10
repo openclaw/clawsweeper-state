@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:52:18.079Z",
+  "updated_at": "2026-08-10T04:52:20.630Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110261:5008811575:2026-08-09T23:50:32Z:clawsweeper_needs_human",
-      "comment_id": "5008811575",
-      "comment_version_key": "5008811575:2026-08-09T23:50:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110261#issuecomment-5008811575",
-      "comment_created_at": "2026-07-18T00:30:45Z",
-      "comment_updated_at": "2026-08-09T23:50:32Z",
-      "comment_body_sha256": "c02bd8e810df02deacaceba1d8dbc01ed6b4b06f22892d4540a7edf95209c9df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110261,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head credentialed Claude run reports agent.wait status=error before the new correlation can succeed, so merging would enable a live gate that currently fails. (sha=5d60477ed0addc8ef75e41463fa31d6dc31e9b62)",
-      "expected_head_sha": "5d60477ed0addc8ef75e41463fa31d6dc31e9b62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:55:02.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/acp-bind-strict-claude",
-        "head_sha": "5d60477ed0addc8ef75e41463fa31d6dc31e9b62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-09T22:45:09Z:clawsweeper_auto_repair",
       "comment_id": "5088305683",
@@ -32060,6 +32027,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T04:52:18.079Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121179:5236010033:2026-08-10T04:51:46Z:re_review",
+      "comment_id": "5236010033",
+      "comment_version_key": "5236010033:2026-08-10T04:51:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121179#issuecomment-5236010033",
+      "comment_created_at": "2026-08-10T04:51:46Z",
+      "comment_updated_at": "2026-08-10T04:51:46Z",
+      "comment_body_sha256": "0f3667f39954250b09af23d0c6ecdec2c696bd01e3b6db25050d05992531971d",
+      "source_delivery_id": "3168d910-9477-11f1-9e2f-21eb5c61bbda",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121179,
+      "author": "Leon-SK668",
+      "author_id": 17695126,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T04:52:19.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/approval-unavailable-durable-20260810",
+        "head_sha": "3a784b4404e443beec96cef4f8fa90c5949823f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
