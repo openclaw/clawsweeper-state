@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:02:06.191Z",
+  "updated_at": "2026-08-10T03:02:11.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117166:5149221653:2026-08-09T21:49:14Z:clawsweeper_needs_human",
-      "comment_id": "5149221653",
-      "comment_version_key": "5149221653:2026-08-09T21:49:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117166#issuecomment-5149221653",
-      "comment_created_at": "2026-08-01T02:27:32Z",
-      "comment_updated_at": "2026-08-09T21:49:14Z",
-      "comment_body_sha256": "841cbf30636c63c8f17c40172d4431f04c4ee7d0785b06b40196f3f89b2da9c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117166,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This PR changes documentation CI coverage, and the current exact head has failed type/compact checks with lint still in progress; it needs a green exact-head merge result before landi... (sha=f5592c5dd7b96e030f76d08a2d667f4417d47f1c)",
-      "expected_head_sha": "f5592c5dd7b96e030f76d08a2d667f4417d47f1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:48:03.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/91160-markdown-lint",
-        "head_sha": "da2a1865316f104741492fa11e0b024f5307ede8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117721:5154331249:2026-08-09T05:38:01Z:clawsweeper_auto_repair",
       "comment_id": "5154331249",
@@ -32389,6 +32356,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121286:5235401007:2026-08-10T03:01:31Z:re_review",
+      "comment_id": "5235401007",
+      "comment_version_key": "5235401007:2026-08-10T03:01:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121286#issuecomment-5235401007",
+      "comment_created_at": "2026-08-10T03:01:31Z",
+      "comment_updated_at": "2026-08-10T03:01:31Z",
+      "comment_body_sha256": "e29acab209d9df2b3a48bb0cc5eb36cbb8783ced17e5523f8da3bf4da8a33a75",
+      "source_delivery_id": "ca4d4540-9467-11f1-93e8-3504f4b4db79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121286,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T03:02:08.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/session-destructive-confirms",
+        "head_sha": "a951aa0e66ff3f2c9736a59c29239b8b0bef0528",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
