@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:47:27.467Z",
+  "updated_at": "2026-08-10T13:47:28.986Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120283:5237922284:2026-08-10T08:46:02Z:re_review",
-      "comment_id": "5237922284",
-      "comment_version_key": "5237922284:2026-08-10T08:46:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120283#issuecomment-5237922284",
-      "comment_created_at": "2026-08-10T08:46:02Z",
-      "comment_updated_at": "2026-08-10T08:46:02Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "eba556d0-9497-11f1-9aef-91303a416b9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120283,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T08:46:34.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-relay-frame-validation",
-        "head_sha": "e8f9e71b9dc88dc51c5cbe3ed9813eea9267c754",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121521:5237926259:2026-08-10T08:46:28Z:re_review",
       "comment_id": "5237926259",
@@ -32931,6 +32883,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121533:5238617179:2026-08-10T13:46:10Z:clawsweeper_needs_human",
+      "comment_id": "5238617179",
+      "comment_version_key": "5238617179:2026-08-10T13:46:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121533#issuecomment-5238617179",
+      "comment_created_at": "2026-08-10T09:52:56Z",
+      "comment_updated_at": "2026-08-10T13:46:10Z",
+      "comment_body_sha256": "bc4e1566fd3df5d43fdcd0f579133b88240d6fc215abdbf5d6ff42d409f47b31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121533,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that supply malformed or non-HTTP(S) webhook values will now fail locally rather than after a Gateway request; Gateway-side validation already rejects the same values... (sha=208ca570babc4333ccd654dcbb9135fc61ca5db7)",
+      "expected_head_sha": "208ca570babc4333ccd654dcbb9135fc61ca5db7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T13:47:28.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-edit-reject-blank-webhook",
+        "head_sha": "208ca570babc4333ccd654dcbb9135fc61ca5db7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
