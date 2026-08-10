@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:04:07.511Z",
+  "updated_at": "2026-08-10T19:04:24.906Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121553:5239187731:2026-08-10T13:47:18Z:clawsweeper_needs_human",
-      "comment_id": "5239187731",
-      "comment_version_key": "5239187731:2026-08-10T13:47:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121553#issuecomment-5239187731",
-      "comment_created_at": "2026-08-10T10:53:37Z",
-      "comment_updated_at": "2026-08-10T13:47:18Z",
-      "comment_body_sha256": "cf11150b4add0f31f384c32d8d275c3a39793718cf48862d1e582c35c08e8278",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121553,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Only 80 of the 362 changed-file patches were hydrated to this review; a maintainer should confirm the remaining path rewrites are mechanical before merge despite green exact-head CI. (sha=863dc0038fe671b77ee4d98d8ad8dda03e657473)",
-      "expected_head_sha": "863dc0038fe671b77ee4d98d8ad8dda03e657473",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:01:54.640Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/subagents-move-final-a7c3",
-        "head_sha": "863dc0038fe671b77ee4d98d8ad8dda03e657473",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118616:5165254048:2026-08-10T13:59:56Z:clawsweeper_auto_repair",
       "comment_id": "5165254048",
@@ -31850,6 +31817,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121677:5244691497:2026-08-10T19:03:49Z:re_review",
+      "comment_id": "5244691497",
+      "comment_version_key": "5244691497:2026-08-10T19:03:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121677#issuecomment-5244691497",
+      "comment_created_at": "2026-08-10T19:03:49Z",
+      "comment_updated_at": "2026-08-10T19:03:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "38f91010-94ee-11f1-87a6-ed8add6967ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121677,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T19:04:23.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-concurrency-lifecycle",
+        "head_sha": "e49ad2a0c3178a56139f1660bf0ddd4e316b1c91",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
