@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:15:07.720Z",
+  "updated_at": "2026-08-10T19:16:54.101Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116016:5241869199:2026-08-10T14:46:49Z:re_review",
-      "comment_id": "5241869199",
-      "comment_version_key": "5241869199:2026-08-10T14:46:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116016#issuecomment-5241869199",
-      "comment_created_at": "2026-08-10T14:46:49Z",
-      "comment_updated_at": "2026-08-10T14:46:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "521616c0-94ca-11f1-88c5-3cf1284222b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116016,
-      "author": "dynamite-bud",
-      "author_id": 41326026,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:47:24.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telnyx-inference-provider",
-        "head_sha": "24fddd6419eb557e5dd09eca11bfd1395a6ad3a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119671:5194247256:2026-08-10T14:46:32Z:clawsweeper_needs_human",
       "comment_id": "5194247256",
@@ -31853,6 +31805,39 @@
         "kind": "pull_request",
         "branch": "steipete/unify-status-check-rollup",
         "head_sha": "10d0801364df699b697fad5cea1ba59a52b91cae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3446:5243091100:2026-08-10T19:15:44Z:clawsweeper_needs_human",
+      "comment_id": "5243091100",
+      "comment_version_key": "5243091100:2026-08-10T19:15:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3446#issuecomment-5243091100",
+      "comment_created_at": "2026-08-10T16:33:32Z",
+      "comment_updated_at": "2026-08-10T19:15:44Z",
+      "comment_body_sha256": "234eee242d69da3d2e1522b7a8a704e9b7d35259ea4c6193e9e85de96ead085f",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The exact head has one failed moderation local-auth job; its reported backend timeout is outside this two-file dependency diff, but a maintainer should rerun or inspect it before merg... (sha=1f9bc2e1c796a09771350cc63877f9aafc9ac8c8)",
+      "expected_head_sha": "1f9bc2e1c796a09771350cc63877f9aafc9ac8c8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:16:54.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/audit-advisory-bumps",
+        "head_sha": "1f9bc2e1c796a09771350cc63877f9aafc9ac8c8",
         "cluster_id": null,
         "job_path": null
       }
