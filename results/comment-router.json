@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:01:01.497Z",
+  "updated_at": "2026-08-10T08:01:07.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121286:5234762052:2026-08-10T03:46:44Z:clawsweeper_needs_human",
-      "comment_id": "5234762052",
-      "comment_version_key": "5234762052:2026-08-10T03:46:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121286#issuecomment-5234762052",
-      "comment_created_at": "2026-08-10T00:50:43Z",
-      "comment_updated_at": "2026-08-10T03:46:44Z",
-      "comment_body_sha256": "ac036595000749a763508cd8d947490e5025b71e0a34f9ac04329760fad16830",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The opt-out adds a persisted destructive-action policy beyond the WebView bug fix; an operator who enables it can delete sidebar sessions without another prompt. (sha=aa8f93f0b76a140b30745a9d295128b536c82047)",
-      "expected_head_sha": "aa8f93f0b76a140b30745a9d295128b536c82047",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T03:47:38.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/session-destructive-confirms",
-        "head_sha": "aa8f93f0b76a140b30745a9d295128b536c82047",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121167:5235499175:2026-08-10T03:19:26Z:re_review",
       "comment_id": "5235499175",
@@ -31949,6 +31916,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119687:5237482175:2026-08-10T08:00:26Z:re_review",
+      "comment_id": "5237482175",
+      "comment_version_key": "5237482175:2026-08-10T08:00:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5237482175",
+      "comment_created_at": "2026-08-10T08:00:26Z",
+      "comment_updated_at": "2026-08-10T08:00:26Z",
+      "comment_body_sha256": "6b3b133b4c95a443c9b3f3ff20b25ad2629af60379b4e44a4c16143a03a23e44",
+      "source_delivery_id": "8c1940b0-9491-11f1-9361-2ecfcb3af904",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119687,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `e5e0656207d`: rebased onto latest `origin/main` (`da2684b8`, #121482 plugin/onboarding serialization). mergeable is now `true` (dirty cleared). plugin sdk api baseline regenerated against the new main; `--check` green. the previous p1 (remote-host `mediaremotehost` attachments bypassing the bridge) is covered by `stageremotefileintoremotesandboxbridge` + the focused `reply.stage-sandbox-media.scp-remote-path.test.ts` regression on this head. focused suites green: 59 tests across staging/backend/bridge/registration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T08:01:04.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ssh-media-staging-112160",
+        "head_sha": "e5e0656207d7cb0bb297aedd9b7eede9818f7875",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
