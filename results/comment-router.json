@@ -1,87 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:58:48.970Z",
+  "updated_at": "2026-08-10T16:59:06.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1096:5240107213:2026-08-10T12:21:48Z:re_review",
-      "comment_id": "5240107213",
-      "comment_version_key": "5240107213:2026-08-10T12:21:48Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1096#issuecomment-5240107213",
-      "comment_created_at": "2026-08-10T12:21:48Z",
-      "comment_updated_at": "2026-08-10T12:21:48Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "0fa66d80-94b6-11f1-9b4b-9c428c02d261",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1096,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T12:22:28.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-114-doc-drift-checks",
-        "head_sha": "9ee3ce44a1aa43e6165ca886b729e3ac5873fe1b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-10T12:23:19Z:clawsweeper_needs_human",
-      "comment_id": "5225378319",
-      "comment_version_key": "5225378319:2026-08-10T12:23:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-5225378319",
-      "comment_created_at": "2026-08-08T08:45:06Z",
-      "comment_updated_at": "2026-08-10T12:23:19Z",
-      "comment_body_sha256": "e25e00274b1b89c0371918e1b4fd4230ebc3ca69c7f3a7d60350fa9697579f87",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied live output shows revalidation of an already trusted gateway, not the PR's initial adoption transition on the current hea...; Review finding: [medium] Confirm legacy tailnet authorization policy — src/OpenClaw.Connection/GatewayTailscaleAuthUpgrade.cs:27 (sha=653135ce02ad3814604879b516b8e18e7f1b4593)",
-      "expected_head_sha": "653135ce02ad3814604879b516b8e18e7f1b4593",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T12:24:06.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tailscale-legacy-upgrade-20260807",
-        "head_sha": "653135ce02ad3814604879b516b8e18e7f1b4593",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:149:5240264795:2026-08-10T12:31:14Z:clawsweeper_auto_repair",
       "comment_id": "5240264795",
@@ -31378,6 +31297,66 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113491:5077192958:2026-08-10T16:58:14Z:clawsweeper_auto_repair",
+      "comment_id": "5077192958",
+      "comment_version_key": "5077192958:2026-08-10T16:58:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113491#issuecomment-5077192958",
+      "comment_created_at": "2026-07-25T05:50:08Z",
+      "comment_updated_at": "2026-08-10T16:58:14Z",
+      "comment_body_sha256": "ae2b51eff6fd5216734fa3c08d3b94d5efc5bb1c1a7c98dff70cd718b7023a94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=523c0de20012d44b4299c66bce3976a7f98ffd1f)",
+      "expected_head_sha": "523c0de20012d44b4299c66bce3976a7f98ffd1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:59:06.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-0145-ci-baseline",
+        "head_sha": "523c0de20012d44b4299c66bce3976a7f98ffd1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113491:5077611573:2026-07-25T08:00:48Z:re_review",
+      "comment_id": "5077611573",
+      "comment_version_key": "5077611573:2026-07-25T08:00:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113491#issuecomment-5077611573",
+      "comment_created_at": "2026-07-25T08:00:48Z",
+      "comment_updated_at": "2026-07-25T08:00:48Z",
+      "comment_body_sha256": "ddbfbef443a0fb81f1abb9a6bb3ea95bff7752f8f1af2514c982ae51c8f7efc1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113491,
+      "author": "Glucksberg",
+      "author_id": 80581902,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:59:06.471Z",
+      "target": null
     }
   ]
 }
