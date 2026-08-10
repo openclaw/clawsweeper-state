@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:59:57.783Z",
+  "updated_at": "2026-08-10T18:00:01.985Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119675:5202900584:2026-08-06T09:35:25Z:re_review",
-      "comment_id": "5202900584",
-      "comment_version_key": "5202900584:2026-08-06T09:35:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119675#issuecomment-5202900584",
-      "comment_created_at": "2026-08-06T09:35:25Z",
-      "comment_updated_at": "2026-08-06T09:35:25Z",
-      "comment_body_sha256": "b6644666107158fcc8b69dba2a5ad2a075f6788e8f5b8599a62231f7a9b00de2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119675,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T12:58:40.217Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5240598435:2026-08-10T12:57:54Z:re_review",
       "comment_id": "5240598435",
@@ -30848,6 +30821,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T17:59:57.783Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120056:5211039896:2026-08-10T17:58:00Z:clawsweeper_needs_human",
+      "comment_id": "5211039896",
+      "comment_version_key": "5211039896:2026-08-10T17:58:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120056#issuecomment-5211039896",
+      "comment_created_at": "2026-08-07T01:39:34Z",
+      "comment_updated_at": "2026-08-10T17:58:00Z",
+      "comment_body_sha256": "cd7950ff6c8bc8d408817cc93b02bb362dee1d4f0f1d3e9d8e4443d837c94058",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has focused mocked-harness coverage, but no redacted after-fix cron execution, durable-state observation, or alert trace showing the cla... (sha=c4ab223510f14ec9c33941b42ea7769af443abcc)",
+      "expected_head_sha": "c4ab223510f14ec9c33941b42ea7769af443abcc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T18:00:01.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-silent-reply-clears-tool-error",
+        "head_sha": "c4ab223510f14ec9c33941b42ea7769af443abcc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
