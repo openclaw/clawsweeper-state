@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:03:26.824Z",
+  "updated_at": "2026-08-10T13:03:45.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/imsg:220:5237734284:2026-08-10T08:26:10Z:freeform_assist",
-      "comment_id": "5237734284",
-      "comment_version_key": "5237734284:2026-08-10T08:26:10Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/220#issuecomment-5237734284",
-      "comment_created_at": "2026-08-10T08:26:10Z",
-      "comment_updated_at": "2026-08-10T08:26:10Z",
-      "comment_body_sha256": "954be04f0388115ed644ada777349e43dd655db3b1214dac380443b7311e6c91",
-      "repo": "openclaw/imsg",
-      "issue_number": 220,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "please re-review the current head.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T08:26:47.825Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/rpc-bridge-events",
-        "head_sha": "3a28494411c09aa44f552d6a2f8681bc131debdb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:366:5237623983:2026-08-10T08:27:07Z:clawsweeper_needs_human",
       "comment_id": "5237623983",
@@ -32987,6 +32940,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121586:5240474658:2026-08-10T13:03:04Z:clawsweeper_needs_human",
+      "comment_id": "5240474658",
+      "comment_version_key": "5240474658:2026-08-10T13:03:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121586#issuecomment-5240474658",
+      "comment_created_at": "2026-08-10T12:46:50Z",
+      "comment_updated_at": "2026-08-10T13:03:04Z",
+      "comment_body_sha256": "973c637219d198cd1032501a0d2a2b543d6aacdf4d631777fc1166b257c0d353",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121586,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve or explicitly retire current extension workflows (P1)** - This bootstrap replaces the background entry path while the same patch removes the side-panel and page-share entry points. Current main document...; Review finding: [P1] Preserve or explicitly retire current extension workflows — extensions/browser/chrome-extension/background.js:1-2 - [medium] Reinspect the native-host securit... (sha=0740a4d279c191959c3eb5bedb6a0adb65624e07)",
+      "expected_head_sha": "0740a4d279c191959c3eb5bedb6a0adb65624e07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T13:03:45.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/chrome-native-bootstrap",
+        "head_sha": "0740a4d279c191959c3eb5bedb6a0adb65624e07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
