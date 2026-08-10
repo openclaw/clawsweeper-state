@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:55:11.830Z",
+  "updated_at": "2026-08-10T19:55:16.335Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112227:5240690349:2026-08-10T13:06:21Z:re_review",
-      "comment_id": "5240690349",
-      "comment_version_key": "5240690349:2026-08-10T13:06:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112227#issuecomment-5240690349",
-      "comment_created_at": "2026-08-10T13:06:21Z",
-      "comment_updated_at": "2026-08-10T13:06:21Z",
-      "comment_body_sha256": "11f0c8e7320af9b5c92d8ea78864a13be518b93ee62862ef5f8f4ecfd4848b42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112227,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:56:51.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-106362-concurrent-session-groups",
-        "head_sha": "84d2c9eeec30e26e21872061bdc089f0cc3311bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5241986638:2026-08-10T14:56:15Z:re_review",
       "comment_id": "5241986638",
@@ -31810,6 +31763,39 @@
         "kind": "pull_request",
         "branch": "fix/model-catalog-canonical-auth",
         "head_sha": "bfb3b68a8006f708a7ea6e1e7041c9a8343366bc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121665:5245220947:2026-08-10T19:52:33Z:clawsweeper_needs_human",
+      "comment_id": "5245220947",
+      "comment_version_key": "5245220947:2026-08-10T19:52:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121665#issuecomment-5245220947",
+      "comment_created_at": "2026-08-10T19:52:33Z",
+      "comment_updated_at": "2026-08-10T19:52:33Z",
+      "comment_body_sha256": "6ef018574aa1fe7f80f4c44f8d989e4fb7e8ab8f44f3c292032f45dbe237b6e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121665,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +22 lines in a transient sync-state machine; that growth appears necessary to distinguish cleanup-only reconciliation from a full-reindex retry, but it merits t... (sha=d2ab8cbcfcfb2890a53d7a571a8c3183c93bca96)",
+      "expected_head_sha": "d2ab8cbcfcfb2890a53d7a571a8c3183c93bca96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:55:16.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "hannes/fix-memory-session-stale-cleanup",
+        "head_sha": "d2ab8cbcfcfb2890a53d7a571a8c3183c93bca96",
         "cluster_id": null,
         "job_path": null
       }
