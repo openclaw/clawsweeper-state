@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:55:33.199Z",
+  "updated_at": "2026-08-10T19:55:48.287Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5241987252:2026-08-10T14:56:18Z:re_review",
-      "comment_id": "5241987252",
-      "comment_version_key": "5241987252:2026-08-10T14:56:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5241987252",
-      "comment_created_at": "2026-08-10T14:56:18Z",
-      "comment_updated_at": "2026-08-10T14:56:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "a573d5e0-94cb-11f1-8469-a3a8200348ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:57:23.945Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-qr-setup",
-        "head_sha": "e2493a6e83b41d1d71574761dae485899538b20f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119344:5241986942:2026-08-10T14:56:17Z:re_review",
       "comment_id": "5241986942",
@@ -31721,6 +31673,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T19:55:33.199Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120354:5223264010:2026-08-10T19:50:23Z:clawsweeper_needs_human",
+      "comment_id": "5223264010",
+      "comment_version_key": "5223264010:2026-08-10T19:50:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120354#issuecomment-5223264010",
+      "comment_created_at": "2026-08-07T23:42:46Z",
+      "comment_updated_at": "2026-08-10T19:50:23Z",
+      "comment_body_sha256": "7e4788a7e968960007df698626aba284d6b8331978e16733cf52e2b70880a909",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120354,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing external clients with persisted or in-flight numeric cursor strings will receive an explicit stale-cursor error after upgrade and must restart rather than resume. (sha=d5693ddfa434f0485dc94d4935d84fb0ae027df9)",
+      "expected_head_sha": "d5693ddfa434f0485dc94d4935d84fb0ae027df9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:55:48.287Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-task-list-stable-pagination",
+        "head_sha": "d5693ddfa434f0485dc94d4935d84fb0ae027df9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
