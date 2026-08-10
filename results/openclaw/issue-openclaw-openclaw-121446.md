@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-121446"
 mode: "autonomous"
-run_id: "31360539960"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31360539960"
-head_sha: "13709144f5bd54cee22ec6a64ebc2b8fe0b021d5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-10T06:31:23.630Z"
+run_id: "31363526692"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31363526692"
+head_sha: "e699e83d2707b9fc33d7ec6265f577c5bfcad1c8"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-10T06:56:50.370Z"
 canonical: "https://github.com/openclaw/openclaw/issues/121446"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/121446"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31360539960](https://github.com/openclaw/clawsweeper/actions/runs/31360539960)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31363526692](https://github.com/openclaw/clawsweeper/actions/runs/31363526692)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/121446
 
 ## Summary
 
-Current main has the Slack implicit-default SecretRef activation mismatch. A narrow, Slack-local repair is planned, but this worker cannot edit or validate because the checkout is read-only and the required tsx dependency is absent.
+#121446 is the open canonical Slack bug: Slack account listing retains an implicit root-backed default account, while SecretRef collection currently omits that owner when named accounts override the root credentials. Plan a narrow credited fix PR; keep the closed Feishu issue as historical context and quarantine the closed security-sensitive PR separately.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Current main has the Slack implicit-default SecretRef activation mismatch. A nar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121446 | fix_needed | planned | canonical | With an enabled named account overriding both root tokens, Slack still starts its implicit default account but the collector has no inherited owner for either root SecretRef. |
-| #96929 | keep_closed | skipped | related | Already closed; historical evidence only. |
-| #96935 | route_security | planned | security_sensitive | Route only this exact security-sensitive reference to central OpenClaw security handling. |
-| cluster:issue-openclaw-openclaw-121446 | build_fix_artifact | planned | canonical | The executor needs a writable checkout with dependencies installed to add the regression, verify it fails pre-fix, implement, and validate. |
+| #96929 | keep_closed | skipped | related | Already closed; no closure or mutation is valid for this context issue. |
+| #96935 | route_security | planned | security_sensitive | Quarantined from ClawSweeper Repair; no code, comment, close, or merge action is planned for this item. |
+| #121446 | fix_needed | planned | canonical | No viable open contributor PR exists; create one narrow Slack-local fix path. |
+| cluster:issue-openclaw-openclaw-121446 | build_fix_artifact | planned | canonical | Build the approved narrow fix artifact for the canonical open issue. |
 
 ## Needs Human
 
