@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T12:54:02.461Z",
+  "updated_at": "2026-08-10T12:54:56.356Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5232818924:2026-08-09T17:35:31Z:re_review",
-      "comment_id": "5232818924",
-      "comment_version_key": "5232818924:2026-08-09T17:35:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5232818924",
-      "comment_created_at": "2026-08-09T17:35:31Z",
-      "comment_updated_at": "2026-08-09T17:35:31Z",
-      "comment_body_sha256": "55c5b96c6b64a70fce904976f609ec3e9db1c2afdcff5205dc34faa29d274efa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:02:52.335Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5234817558:2026-08-10T01:03:15Z:re_review",
       "comment_id": "5234817558",
@@ -32617,6 +32590,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T12:54:02.461Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121586:5240474658:2026-08-10T12:54:02Z:clawsweeper_needs_human",
+      "comment_id": "5240474658",
+      "comment_version_key": "5240474658:2026-08-10T12:54:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121586#issuecomment-5240474658",
+      "comment_created_at": "2026-08-10T12:46:50Z",
+      "comment_updated_at": "2026-08-10T12:54:02Z",
+      "comment_body_sha256": "90fbc71405fef84620c672b57c99b28b5d55305af213f1e5b10dea97bbafb07f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121586,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve or explicitly retire existing extension workflows (P1)** - The patch removes the copilot and page-share controllers. Current docs, manifest commands, popup controls, and relay delivery expose them as su...; Review finding: [P1] Preserve or explicitly retire existing extension workflows — extensions/browser/chrome-extension/background.js:1-4 - [medium] Inspect native-host authorizatio... (sha=0740a4d279c191959c3eb5bedb6a0adb65624e07)",
+      "expected_head_sha": "0740a4d279c191959c3eb5bedb6a0adb65624e07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T12:54:56.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/chrome-native-bootstrap",
+        "head_sha": "0740a4d279c191959c3eb5bedb6a0adb65624e07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
