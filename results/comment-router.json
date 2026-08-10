@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:52:37.757Z",
+  "updated_at": "2026-08-10T13:52:41.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121521:5237979092:2026-08-10T08:58:07Z:clawsweeper_auto_repair",
-      "comment_id": "5237979092",
-      "comment_version_key": "5237979092:2026-08-10T08:58:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121521#issuecomment-5237979092",
-      "comment_created_at": "2026-08-10T08:52:08Z",
-      "comment_updated_at": "2026-08-10T08:58:07Z",
-      "comment_body_sha256": "9a53d68d72b1c3487398b7dad80039409837740b2b2938733e82bb4978efb797",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121521,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a4328aa044f060b5dde3c92f6955ca51bdac155)",
-      "expected_head_sha": "5a4328aa044f060b5dde3c92f6955ca51bdac155",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:58:49.640Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-stage-sandbox-media-publication-current",
-        "head_sha": "5a4328aa044f060b5dde3c92f6955ca51bdac155",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121527:5238036425:2026-08-10T08:58:21Z:clawsweeper_needs_human",
       "comment_id": "5238036425",
@@ -32356,6 +32323,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T13:52:37.757Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119344:5241206826:2026-08-10T13:51:58Z:re_review",
+      "comment_id": "5241206826",
+      "comment_version_key": "5241206826:2026-08-10T13:51:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119344#issuecomment-5241206826",
+      "comment_created_at": "2026-08-10T13:51:58Z",
+      "comment_updated_at": "2026-08-10T13:51:58Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "source_delivery_id": "a87a0010-94c2-11f1-88bd-23979b47a090",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119344,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T13:52:38.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-qr-cli-link",
+        "head_sha": "8ddec5a4c43ef1e07424a7df21b44815088c7fb4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
