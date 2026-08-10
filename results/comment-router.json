@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:55:17.107Z",
+  "updated_at": "2026-08-10T02:56:05.251Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120373:5234146360:2026-08-09T22:22:13Z:re_review",
-      "comment_id": "5234146360",
-      "comment_version_key": "5234146360:2026-08-09T22:22:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120373#issuecomment-5234146360",
-      "comment_created_at": "2026-08-09T22:22:13Z",
-      "comment_updated_at": "2026-08-09T22:22:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120373,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:46:59.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "add-muse-spark-1.2",
-        "head_sha": "64267e1f8802274dd3f27c700c528a46b3e3d30c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121266:5234163597:2026-08-09T22:26:43Z:re_review",
       "comment_id": "5234163597",
@@ -32533,6 +32486,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/font-mono-token",
         "head_sha": "a645a8149501278c7f0322dd9a5e19b1e5e46e48",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121344:5235371137:2026-08-10T02:55:25Z:clawsweeper_needs_human",
+      "comment_id": "5235371137",
+      "comment_version_key": "5235371137:2026-08-10T02:55:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121344#issuecomment-5235371137",
+      "comment_created_at": "2026-08-10T02:55:25Z",
+      "comment_updated_at": "2026-08-10T02:55:25Z",
+      "comment_body_sha256": "287fc99c38a3be2359118f61fadfff8b0cfdcc30ff5f6cd0da442f9e613f8863",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is behind current main, although GitHub reports it mergeable; refresh the merge result and exact-head checks if the normal landing path requires it. (sha=50b5c290232071c467af674af7d6b66d559de9c5)",
+      "expected_head_sha": "50b5c290232071c467af674af7d6b66d559de9c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T02:56:05.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/run-session-tools-merge",
+        "head_sha": "50b5c290232071c467af674af7d6b66d559de9c5",
         "cluster_id": null,
         "job_path": null
       }
