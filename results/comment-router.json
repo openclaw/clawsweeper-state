@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T20:02:15.649Z",
+  "updated_at": "2026-08-10T20:02:17.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120932:5234910742:2026-08-10T01:22:49Z:re_review",
-      "comment_id": "5234910742",
-      "comment_version_key": "5234910742:2026-08-10T01:22:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120932#issuecomment-5234910742",
-      "comment_created_at": "2026-08-10T01:22:49Z",
-      "comment_updated_at": "2026-08-10T01:22:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120932,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T15:00:20.573Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120932:5235796781:2026-08-10T04:16:28Z:re_review",
       "comment_id": "5235796781",
@@ -31693,6 +31666,53 @@
       "status": "skipped",
       "processed_at": "2026-08-10T20:02:15.649Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:20:5242905250:2026-08-10T20:01:30Z:clawsweeper_needs_human",
+      "comment_id": "5242905250",
+      "comment_version_key": "5242905250:2026-08-10T20:01:30Z",
+      "comment_url": "https://github.com/openclaw/release-workflows/pull/20#issuecomment-5242905250",
+      "comment_created_at": "2026-08-10T16:16:23Z",
+      "comment_updated_at": "2026-08-10T20:01:30Z",
+      "comment_body_sha256": "2789ccca0d04b1f494a294232000fd201e63b768a5f9284866c53813db3b7b7a",
+      "repo": "openclaw/release-workflows",
+      "issue_number": 20,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The accepted Linux container transcript proves the Bash repair, but it predates and does not exercise the final credentialed macOS sig...; Review finding: [medium] Validate the changed signing-key import path — .github/workflows/release-swift-cli.yml:524 (sha=0d04fb8583639378db1bc3f8ed897ee2eafb61d1)",
+      "expected_head_sha": "0d04fb8583639378db1bc3f8ed897ee2eafb61d1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T20:02:17.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/swift-linux-bash-shell",
+        "head_sha": "0d04fb8583639378db1bc3f8ed897ee2eafb61d1",
+        "cluster_id": "automerge-openclaw-release-workflows-20",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-release-workflows-20.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
