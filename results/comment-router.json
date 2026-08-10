@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:44:12.192Z",
+  "updated_at": "2026-08-10T06:44:32.798Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113437:5086099110:2026-08-10T01:52:31Z:clawsweeper_auto_repair",
-      "comment_id": "5086099110",
-      "comment_version_key": "5086099110:2026-08-10T01:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113437#issuecomment-5086099110",
-      "comment_created_at": "2026-07-27T00:17:02Z",
-      "comment_updated_at": "2026-08-10T01:52:31Z",
-      "comment_body_sha256": "e1cad868a7df8300af5a399e5c8a0ab2eaf4cc1666c139a5a825d5fd005f9ebc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113437,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c5456e5aa7ad2990c2236dadda216fd63fea40d4)",
-      "expected_head_sha": "c5456e5aa7ad2990c2236dadda216fd63fea40d4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T01:53:08.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/google-vertex-label",
-        "head_sha": "c5456e5aa7ad2990c2236dadda216fd63fea40d4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121316:5235052778:2026-08-10T01:52:44Z:clawsweeper_needs_human",
       "comment_id": "5235052778",
@@ -32458,6 +32425,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119976:5236790464:2026-08-10T06:43:52Z:re_review",
+      "comment_id": "5236790464",
+      "comment_version_key": "5236790464:2026-08-10T06:43:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119976#issuecomment-5236790464",
+      "comment_created_at": "2026-08-10T06:43:52Z",
+      "comment_updated_at": "2026-08-10T06:43:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "da3263e0-9486-11f1-9d63-936df0376e45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119976,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T06:44:30.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-nextcloud-talk-redact-error-body",
+        "head_sha": "dbecc464f76c9f9ae21fa4a535bb363be6335525",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
