@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T11:54:13.544Z",
+  "updated_at": "2026-08-10T11:54:32.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119687:5237144767:2026-08-10T07:26:51Z:re_review",
-      "comment_id": "5237144767",
-      "comment_version_key": "5237144767:2026-08-10T07:26:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5237144767",
-      "comment_created_at": "2026-08-10T07:26:51Z",
-      "comment_updated_at": "2026-08-10T07:26:51Z",
-      "comment_body_sha256": "ec03d8135f0c939fe7573ba3d6f8c0e38da263debde84014f9e3e88d6d8441e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119687,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head 168ca4f1ad4 (tree-identical to 1ce5cd8fec3; force-push re-sync to trigger ci after the first synchronize event was dropped): remote-host (mediaremotehost) attachments route through the resolved remote bridge for remote-canonical backends, with focused regression coverage; local-canonical backends keep the existing scp-to-workspace path",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T07:48:01.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ssh-media-staging-112160",
-        "head_sha": "9b86104c642f7b16d2df5278ac2cffa1e4cbd712",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119687:5195249086:2026-08-10T07:47:10Z:clawsweeper_auto_repair",
       "comment_id": "5195249086",
@@ -32484,6 +32437,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121422:5236371280:2026-08-10T11:53:50Z:clawsweeper_needs_human",
+      "comment_id": "5236371280",
+      "comment_version_key": "5236371280:2026-08-10T11:53:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121422#issuecomment-5236371280",
+      "comment_created_at": "2026-08-10T05:46:15Z",
+      "comment_updated_at": "2026-08-10T11:53:50Z",
+      "comment_body_sha256": "67e136420a96dda86556cdcf24f1d482ab6bd20ec52ad1f5e4843a649976a4c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require serializable data descriptors for authorized handles (P1)** - The validator accepts a handle whose seven required fields are non-enumerable or accessors because it only checks Reflect.ownKeys and reads t...; Review finding: [P1] Require serializable data descriptors for authorized handles — packages/memory-host-sdk/src/host/authorization-conformance.ts:477-502 - [high] Conformance acc... (sha=11dbae3e17c049b64cdfedeba56af89fc73923a2)",
+      "expected_head_sha": "11dbae3e17c049b64cdfedeba56af89fc73923a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T11:54:32.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-permissions-pr-open-20260809-p0a",
+        "head_sha": "11dbae3e17c049b64cdfedeba56af89fc73923a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
