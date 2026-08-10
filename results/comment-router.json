@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:54:29.711Z",
+  "updated_at": "2026-08-10T19:54:47.488Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121588:5240793635:2026-08-10T13:15:30Z:re_review",
-      "comment_id": "5240793635",
-      "comment_version_key": "5240793635:2026-08-10T13:15:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121588#issuecomment-5240793635",
-      "comment_created_at": "2026-08-10T13:15:30Z",
-      "comment_updated_at": "2026-08-10T13:15:30Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121588,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:56:45.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-sdk-agent-harness-api-baseline",
-        "head_sha": "b534db5a5ef253d49bdcc30bc64efcddd74e8f16",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-08-10T14:55:55Z:clawsweeper_auto_repair",
       "comment_id": "5241982342",
@@ -31827,6 +31780,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T19:54:29.711Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121509:5238588194:2026-08-10T19:53:57Z:clawsweeper_auto_repair",
+      "comment_id": "5238588194",
+      "comment_version_key": "5238588194:2026-08-10T19:53:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121509#issuecomment-5238588194",
+      "comment_created_at": "2026-08-10T09:50:00Z",
+      "comment_updated_at": "2026-08-10T19:53:57Z",
+      "comment_body_sha256": "1d7ab7b1ad7e63dd4ed69f973b88b3200abf8f32d649874ebadcfb71a428bfd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3986378506e8a47d4ff2bb5826cd332284beee75)",
+      "expected_head_sha": "3986378506e8a47d4ff2bb5826cd332284beee75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:54:47.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-cli-session-pingpong",
+        "head_sha": "3986378506e8a47d4ff2bb5826cd332284beee75",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
