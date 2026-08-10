@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:59:21.451Z",
+  "updated_at": "2026-08-10T03:01:04.240Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119042:5174105341:2026-08-09T21:55:41Z:clawsweeper_needs_human",
-      "comment_id": "5174105341",
-      "comment_version_key": "5174105341:2026-08-09T21:55:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119042#issuecomment-5174105341",
-      "comment_created_at": "2026-08-04T03:02:01Z",
-      "comment_updated_at": "2026-08-09T21:55:41Z",
-      "comment_body_sha256": "4b8a4643ee4dec7cb10c72b157dbdb40e8acc92531d5a883873ad68cb44e3780",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119042,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the cron capability fixture test-local (P1)** - dynamic-tool-build.ts keeps this capability private, but this test imports it as a named export. The module cannot load/type-check; define the opaque fixture...; Review finding: [P1] Keep the cron capability fixture test-local — extensions/codex/src/app-server/run-attempt.test.ts:46 - [P1] Preserve per-app authorization when capping cron t... (sha=ddac4545ebbaa1ad9d5ecd47733fd71143aa26bc)",
-      "expected_head_sha": "ddac4545ebbaa1ad9d5ecd47733fd71143aa26bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:48:03.732Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/fix-cron-codex-apps",
-        "head_sha": "ddac4545ebbaa1ad9d5ecd47733fd71143aa26bc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-09T22:44:46Z:clawsweeper_needs_human",
       "comment_id": "5185154559",
@@ -32474,6 +32441,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T02:59:21.451Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121137:5235395473:2026-08-10T03:00:24Z:re_review",
+      "comment_id": "5235395473",
+      "comment_version_key": "5235395473:2026-08-10T03:00:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121137#issuecomment-5235395473",
+      "comment_created_at": "2026-08-10T03:00:24Z",
+      "comment_updated_at": "2026-08-10T03:00:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "a2112150-9467-11f1-8507-b9a1a2fd52dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121137,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T03:01:02.076Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/oc-t10-09-cron-overview-generation",
+        "head_sha": "da77f1838acb6eae5c0dd19708cd8952a10812ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
