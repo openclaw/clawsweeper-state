@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:00:32.811Z",
+  "updated_at": "2026-08-10T02:00:42.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113920:5098843833:2026-07-28T01:41:09Z:re_review",
-      "comment_id": "5098843833",
-      "comment_version_key": "5098843833:2026-07-28T01:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113920#issuecomment-5098843833",
-      "comment_created_at": "2026-07-28T01:33:00Z",
-      "comment_updated_at": "2026-07-28T01:41:09Z",
-      "comment_body_sha256": "b441bc01d9f5f7fb8bd5699ef1ae0e4c461b4a701730c180834021fe8f2bd2b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113920,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T21:51:30.893Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113920:5139039373:2026-07-31T03:48:32Z:re_review",
       "comment_id": "5139039373",
@@ -32356,6 +32329,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T02:00:32.811Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121208:5233538997:2026-08-10T01:59:45Z:clawsweeper_needs_human",
+      "comment_id": "5233538997",
+      "comment_version_key": "5233538997:2026-08-10T01:59:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121208#issuecomment-5233538997",
+      "comment_created_at": "2026-08-09T19:50:54Z",
+      "comment_updated_at": "2026-08-10T01:59:45Z",
+      "comment_body_sha256": "88f27208c7a9ca5edcbed43befe0864d55233dadd1ca4a6de054e12297671dba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121208,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head QA Smoke profile 3/4 failure and aggregate CI gate failure must be classified before merge; the available context does not show whether the failed lane exercises the ch... (sha=3a260ce0c635f888412229ac2a3d389e4fcbd4e7)",
+      "expected_head_sha": "3a260ce0c635f888412229ac2a3d389e4fcbd4e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T02:00:42.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-ci-frozen-script-entrypoints",
+        "head_sha": "3a260ce0c635f888412229ac2a3d389e4fcbd4e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
