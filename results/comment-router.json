@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:55:30.573Z",
+  "updated_at": "2026-08-10T10:55:33.927Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5229153211:2026-08-09T01:19:50Z:re_review",
-      "comment_id": "5229153211",
-      "comment_version_key": "5229153211:2026-08-09T01:19:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5229153211",
-      "comment_created_at": "2026-08-09T01:19:50Z",
-      "comment_updated_at": "2026-08-09T01:19:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:53:13.846Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5229987212:2026-08-09T05:38:36Z:re_review",
       "comment_id": "5229987212",
@@ -32345,6 +32318,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120837:5229432286:2026-08-10T10:54:50Z:clawsweeper_needs_human",
+      "comment_id": "5229432286",
+      "comment_version_key": "5229432286:2026-08-10T10:54:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120837#issuecomment-5229432286",
+      "comment_created_at": "2026-08-09T02:43:39Z",
+      "comment_updated_at": "2026-08-10T10:54:50Z",
+      "comment_body_sha256": "469400eb6bd5b7f75508fc5df5a0c6fa9d8801f5b25cd71b5fd337fb8d700c7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Session-only searches can intentionally omit newly reconciled transcript content until the detached synchronization finishes; ordinary dirty-memory searches remain fresh. (sha=21603632d18f30f2747706d21784c55fbcd5535b)",
+      "expected_head_sha": "21603632d18f30f2747706d21784c55fbcd5535b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:55:33.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-120671",
+        "head_sha": "21603632d18f30f2747706d21784c55fbcd5535b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
