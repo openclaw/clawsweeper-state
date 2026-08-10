@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:00:03.240Z",
+  "updated_at": "2026-08-10T08:00:03.656Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119538:5235638048:2026-08-10T03:46:34Z:re_review",
-      "comment_id": "5235638048",
-      "comment_version_key": "5235638048:2026-08-10T03:46:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119538#issuecomment-5235638048",
-      "comment_created_at": "2026-08-10T03:46:34Z",
-      "comment_updated_at": "2026-08-10T03:46:34Z",
-      "comment_body_sha256": "6d91999cf321e73600eb2b0ee1ba4182daaf57d86fec8946680975fbb9572f65",
-      "source_delivery_id": "15ce6fc0-946e-11f1-880e-2579f407db33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119538,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T03:47:09.969Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-07-qqbot-api-error-redaction",
-        "head_sha": "c34304bb1174bdb9f5534e7e5601dac0006efe40",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121368:5235639794:2026-08-10T03:46:55Z:clawsweeper_needs_human",
       "comment_id": "5235639794",
@@ -31961,6 +31913,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-898-v2",
         "head_sha": "c1019441e36fd6f4b0c0e516ca7bcfb718ed1626",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121387:5236002129:2026-08-10T07:59:23Z:clawsweeper_needs_human",
+      "comment_id": "5236002129",
+      "comment_version_key": "5236002129:2026-08-10T07:59:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121387#issuecomment-5236002129",
+      "comment_created_at": "2026-08-10T04:50:33Z",
+      "comment_updated_at": "2026-08-10T07:59:23Z",
+      "comment_body_sha256": "4c42d630f065d80860159eb1d50bd73200497179ff5b9890f3854482f82f31ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121387,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally makes clients that still call any removed tagged beta/stable RPC receive an unknown-method response; the recorded owner decision accepts that compatibility break. (sha=d7d6507ef284f758c6df5c8a5160895658e384ff)",
+      "expected_head_sha": "d7d6507ef284f758c6df5c8a5160895658e384ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:00:03.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dead-gateway-rpc-cleanup-fbd88e",
+        "head_sha": "d7d6507ef284f758c6df5c8a5160895658e384ff",
         "cluster_id": null,
         "job_path": null
       }
