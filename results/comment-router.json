@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:39:49.286Z",
+  "updated_at": "2026-08-10T05:42:37.529Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121122:5233518818:2026-08-10T00:49:05Z:clawsweeper_auto_repair",
-      "comment_id": "5233518818",
-      "comment_version_key": "5233518818:2026-08-10T00:49:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121122#issuecomment-5233518818",
-      "comment_created_at": "2026-08-09T19:45:52Z",
-      "comment_updated_at": "2026-08-10T00:49:05Z",
-      "comment_body_sha256": "86155a7e79835a95d16425b1c4b9a9a3ab6d566ee7b40651ef224d2a1b89bfe3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c49abd2e0ebd346d00acc68e37fb8ff4aa94b6c8)",
-      "expected_head_sha": "c49abd2e0ebd346d00acc68e37fb8ff4aa94b6c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T00:53:47.009Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-reconcile-loss",
-        "head_sha": "0fabe35b526a537b64c1866b70513de4524c393c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121208:5233503088:2026-08-09T19:41:57Z:re_review",
       "comment_id": "5233503088",
@@ -32299,6 +32266,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120597:5228039030:2026-08-10T05:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5228039030",
+      "comment_version_key": "5228039030:2026-08-10T05:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120597#issuecomment-5228039030",
+      "comment_created_at": "2026-08-08T20:42:44Z",
+      "comment_updated_at": "2026-08-10T05:41:53Z",
+      "comment_body_sha256": "64e4633e2fac32d532dce8f37c46725d8a10c9056f96377adb2390af2edb1012",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120597,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing virtiofs and 9p deployments will switch from WAL to DELETE on their next database open, trading write throughput for safer cross-VM persistence; exact-head CI should complete... (sha=6352b0c35050576a6a055b69b55e6c615bebf2b2)",
+      "expected_head_sha": "6352b0c35050576a6a055b69b55e6c615bebf2b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T05:42:37.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-wal-virtiofs-120549",
+        "head_sha": "6352b0c35050576a6a055b69b55e6c615bebf2b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
