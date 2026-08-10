@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:03:30.023Z",
+  "updated_at": "2026-08-10T10:04:07.422Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:146:5236591630:2026-08-10T06:19:09Z:clawsweeper_auto_repair",
-      "comment_id": "5236591630",
-      "comment_version_key": "5236591630:2026-08-10T06:19:09Z",
-      "comment_url": "https://github.com/openclaw/gitcrawl/pull/146#issuecomment-5236591630",
-      "comment_created_at": "2026-08-10T06:19:09Z",
-      "comment_updated_at": "2026-08-10T06:19:09Z",
-      "comment_body_sha256": "8eb481d1552cb3112bd928c6b856b1643cf7634ccfb3c7b25aa279f608dbf8d0",
-      "repo": "openclaw/gitcrawl",
-      "issue_number": 146,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c99aefa1aadad7fb6b6f26a039788deba8051464)",
-      "expected_head_sha": "c99aefa1aadad7fb6b6f26a039788deba8051464",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:19:59.419Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/deterministic-portable-artifact",
-        "head_sha": "c99aefa1aadad7fb6b6f26a039788deba8051464",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:353:5236628100:2026-08-10T06:23:31Z:clawsweeper_auto_repair",
       "comment_id": "5236628100",
@@ -32105,6 +32072,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T10:03:30.023Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:491:5194278499:2026-08-10T10:03:21Z:clawsweeper_needs_human",
+      "comment_id": "5194278499",
+      "comment_version_key": "5194278499:2026-08-10T10:03:21Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/491#issuecomment-5194278499",
+      "comment_created_at": "2026-08-05T16:10:55Z",
+      "comment_updated_at": "2026-08-10T10:03:21Z",
+      "comment_body_sha256": "01c92630e6405688609b292e10a0290148c6b0caefa7e75a57c211afeaf59478",
+      "repo": "openclaw/acpx",
+      "issue_number": 491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR documents a red/green run against the in-repository mock agent but explicitly excludes the reported live OpenCode reconnect-and-set flow... (sha=336819d141efd2dc882faa6f07edf7283399632c)",
+      "expected_head_sha": "336819d141efd2dc882faa6f07edf7283399632c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:04:07.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/489-reapply-pinned-model-on-set",
+        "head_sha": "336819d141efd2dc882faa6f07edf7283399632c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
