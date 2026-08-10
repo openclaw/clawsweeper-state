@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T11:56:00.131Z",
+  "updated_at": "2026-08-10T11:56:53.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121414:5237325206:2026-08-10T07:47:54Z:re_review",
-      "comment_id": "5237325206",
-      "comment_version_key": "5237325206:2026-08-10T07:47:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121414#issuecomment-5237325206",
-      "comment_created_at": "2026-08-10T07:47:54Z",
-      "comment_updated_at": "2026-08-10T07:47:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "cc929a30-948f-11f1-8cd9-7b09aaf284a4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121414,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T07:48:30.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/opencode-key-scoped-onboarding",
-        "head_sha": "f5ef63b48ff01b079a7f3cd3f7ec3f55fd518b08",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-10T07:45:51Z:clawsweeper_needs_human",
       "comment_id": "5229043394",
@@ -32473,6 +32425,39 @@
         "kind": "pull_request",
         "branch": "fix/context-engine-cron-runtime-121499",
         "head_sha": "45c9ac47ce722a608e2e3b82ebeb7ab0a7316e16",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121559:5239177713:2026-08-10T11:56:11Z:clawsweeper_needs_human",
+      "comment_id": "5239177713",
+      "comment_version_key": "5239177713:2026-08-10T11:56:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121559#issuecomment-5239177713",
+      "comment_created_at": "2026-08-10T10:52:30Z",
+      "comment_updated_at": "2026-08-10T11:56:11Z",
+      "comment_body_sha256": "c8b452e25c173560c75fc845f02c50eb28abf9e96fb091087c5d6a366352ddc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm shared-database credential exposure** - Secret values are persisted unencrypted in shared state; CLI write-only behavior does not protect database, WAL, or backup readers, and c...; Review finding: [medium] Confirm shared-database credential exposure (sha=08b2e7092e0b629c016917d27836f7391ccfa8b1)",
+      "expected_head_sha": "08b2e7092e0b629c016917d27836f7391ccfa8b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T11:56:53.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/secret-store-foundation",
+        "head_sha": "08b2e7092e0b629c016917d27836f7391ccfa8b1",
         "cluster_id": null,
         "job_path": null
       }
