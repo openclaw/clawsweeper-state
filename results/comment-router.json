@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T20:38:05.643Z",
+  "updated_at": "2026-08-10T20:40:24.138Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121544:5242316682:2026-08-10T15:24:19Z:re_review",
-      "comment_id": "5242316682",
-      "comment_version_key": "5242316682:2026-08-10T15:24:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121544#issuecomment-5242316682",
-      "comment_created_at": "2026-08-10T15:24:19Z",
-      "comment_updated_at": "2026-08-10T15:24:19Z",
-      "comment_body_sha256": "b2c7cd47c79422043c001341527f03645227cd98069057e2c647196609f7e1bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121544,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T15:56:38.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/plugin-command-identity",
-        "head_sha": "e44bf49ebbb507165b74b0c29b615c10047504e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121649:5242673797:2026-08-10T15:55:46Z:clawsweeper_needs_human",
       "comment_id": "5242673797",
@@ -31654,6 +31607,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1111:5245043536:2026-08-10T20:39:41Z:clawsweeper_needs_human",
+      "comment_id": "5245043536",
+      "comment_version_key": "5245043536:2026-08-10T20:39:41Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1111#issuecomment-5245043536",
+      "comment_created_at": "2026-08-10T19:35:29Z",
+      "comment_updated_at": "2026-08-10T20:39:41Z",
+      "comment_body_sha256": "e1742b050c1509b22b3e43ac2b7c503d91238572fde6ff2c7a4838297ea53ea3",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1111,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The recorded Worker/Durable Object proof is strong but names prior head 891b0148b9d445347d8d9e8102b132bc03edf01c, not the current guar... (sha=0ded7ef34b7a62ee51daf67190ed4e0a68b9163b)",
+      "expected_head_sha": "0ded7ef34b7a62ee51daf67190ed4e0a68b9163b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T20:40:24.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/parked-review-item-reconcile",
+        "head_sha": "0ded7ef34b7a62ee51daf67190ed4e0a68b9163b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
