@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:49:13.526Z",
+  "updated_at": "2026-08-10T16:49:15.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121573:5239736355:2026-08-10T11:51:52Z:clawsweeper_auto_repair",
-      "comment_id": "5239736355",
-      "comment_version_key": "5239736355:2026-08-10T11:51:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121573#issuecomment-5239736355",
-      "comment_created_at": "2026-08-10T11:51:52Z",
-      "comment_updated_at": "2026-08-10T11:51:52Z",
-      "comment_body_sha256": "0ee290f40a1c5e358cfbdadebe245978693e4b0ea1d0f3478fb4ca0afc33f44e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121573,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8f1c788cf9c658804b071b4ad9f70e91ba7efa28)",
-      "expected_head_sha": "8f1c788cf9c658804b071b4ad9f70e91ba7efa28",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T11:52:41.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "turing/fleet-2849-pw-connection-max-age",
-        "head_sha": "8f1c788cf9c658804b071b4ad9f70e91ba7efa28",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121563:5239206237:2026-08-10T11:52:16Z:clawsweeper_auto_repair",
       "comment_id": "5239206237",
@@ -31349,6 +31316,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103201:4933838406:2026-08-10T16:47:55Z:clawsweeper_needs_human",
+      "comment_id": "4933838406",
+      "comment_version_key": "4933838406:2026-08-10T16:47:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-4933838406",
+      "comment_created_at": "2026-07-10T09:14:56Z",
+      "comment_updated_at": "2026-08-10T16:47:55Z",
+      "comment_body_sha256": "d4cf3fdaf2d54a815c51541635add71b0b8a81b7e76af40df39067311d2cba17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The repair adds net +274 production lines to a persisted session-state writer; merge should wait for exact-head green CI and an owner review of the full-rebuild fallback and recovery... (sha=e170b003eba8a15913b9a2e1b5fa5645efa2d0b3)",
+      "expected_head_sha": "e170b003eba8a15913b9a2e1b5fa5645efa2d0b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:49:15.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "e170b003eba8a15913b9a2e1b5fa5645efa2d0b3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
