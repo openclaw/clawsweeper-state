@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T23:56:16.159Z",
+  "updated_at": "2026-08-10T23:56:36.877Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120899:5232234527:2026-08-09T15:16:58Z:re_review",
-      "comment_id": "5232234527",
-      "comment_version_key": "5232234527:2026-08-09T15:16:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5232234527",
-      "comment_created_at": "2026-08-09T15:16:58Z",
-      "comment_updated_at": "2026-08-09T15:16:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T19:01:34.213Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5232250383:2026-08-09T15:20:36Z:re_review",
       "comment_id": "5232250383",
@@ -32068,6 +32041,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121152:5234010791:2026-08-10T23:52:42Z:clawsweeper_needs_human",
+      "comment_id": "5234010791",
+      "comment_version_key": "5234010791:2026-08-10T23:52:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121152#issuecomment-5234010791",
+      "comment_created_at": "2026-08-09T21:48:11Z",
+      "comment_updated_at": "2026-08-10T23:52:42Z",
+      "comment_body_sha256": "3fff190edb01277d663f445e4df0c56f3d503db90fada9fb8bac910dcdf7811e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Propagate the incognito store through ACP initialization (P1)** - This only uses the ephemeral store for the local entry read; the subsequent manager initialization receives no storage target, so its metadata wr...; Review finding: [P1] Propagate the incognito store through ACP initialization — src/agents/acp-spawn-runtime.ts:176-186 - [P1] Create the rehome target subject before reading its... (sha=e0e9ab219b74b127ed57f11b0663af1b88711a93)",
+      "expected_head_sha": "e0e9ab219b74b127ed57f11b0663af1b88711a93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T23:56:36.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galini_microsoft-galin-memory-permissions-v2-p1a-subject-lifecycle",
+        "head_sha": "e0e9ab219b74b127ed57f11b0663af1b88711a93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
