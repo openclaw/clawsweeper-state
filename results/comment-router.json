@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:05:18.850Z",
+  "updated_at": "2026-08-10T14:05:26.987Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121465:5237294299:2026-08-10T09:54:20Z:clawsweeper_needs_human",
-      "comment_id": "5237294299",
-      "comment_version_key": "5237294299:2026-08-10T09:54:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121465#issuecomment-5237294299",
-      "comment_created_at": "2026-08-10T07:44:15Z",
-      "comment_updated_at": "2026-08-10T09:54:20Z",
-      "comment_body_sha256": "58a6cc9938e0269b5401232febb6ce56f552ba2b1ba4cf49cf87acc7ffe5f516",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep project roots out of read-scope responses (P1)** - projects.list is advertised at operator.read, but every returned record includes the absolute repoRoot and may include its origin URL. That both exposes re...; Review finding: [P1] Keep project roots out of read-scope responses — packages/gateway-protocol/src/schema/projects.ts:13-14 - [P1] Load project branches before enabling Worktree... (sha=38bc47918771dce9ebc348e9c8ea9f62a69bc9a7)",
-      "expected_head_sha": "38bc47918771dce9ebc348e9c8ea9f62a69bc9a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T09:54:58.999Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/project-registry",
-        "head_sha": "38bc47918771dce9ebc348e9c8ea9f62a69bc9a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121535:5238631854:2026-08-10T09:54:32Z:clawsweeper_auto_repair",
       "comment_id": "5238631854",
@@ -31323,6 +31290,54 @@
         "kind": "pull_request",
         "branch": "codex/csw-119-scheduler-doc-consistency",
         "head_sha": "52f76a07fa55843f7907f2b01775bf601de4d95b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2841:5241348610:2026-08-10T14:04:20Z:re_review",
+      "comment_id": "5241348610",
+      "comment_version_key": "5241348610:2026-08-10T14:04:20Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2841#issuecomment-5241348610",
+      "comment_created_at": "2026-08-10T14:04:20Z",
+      "comment_updated_at": "2026-08-10T14:04:20Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "62cc67e0-94c4-11f1-98fe-1f0606156226",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2841,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T14:05:25.223Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/binding-quota-caps-session",
+        "head_sha": "cf332333955a4a70b03e594a405082f7c4c98bab",
         "cluster_id": null,
         "job_path": null
       },
