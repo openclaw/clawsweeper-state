@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:20:33.201Z",
+  "updated_at": "2026-08-10T10:21:28.748Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119341:5236523736:2026-08-10T06:10:00Z:re_review",
-      "comment_id": "5236523736",
-      "comment_version_key": "5236523736:2026-08-10T06:10:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5236523736",
-      "comment_created_at": "2026-08-10T06:10:00Z",
-      "comment_updated_at": "2026-08-10T06:10:00Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119341,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T06:42:47.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract",
-        "head_sha": "e941d83aa6bc657bd492f5a681f9a665e520cb0d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121385:5236534331:2026-08-10T06:11:26Z:re_review",
       "comment_id": "5236534331",
@@ -32147,6 +32100,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:370:5238890320:2026-08-10T10:20:43Z:clawsweeper_needs_human",
+      "comment_id": "5238890320",
+      "comment_version_key": "5238890320:2026-08-10T10:20:43Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/370#issuecomment-5238890320",
+      "comment_created_at": "2026-08-10T10:20:43Z",
+      "comment_updated_at": "2026-08-10T10:20:43Z",
+      "comment_body_sha256": "6a3e239c68a904982701183955f41294b780836241427f1a04c01fd1a05ad750",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This release deliberately exposes breaking v4 command and flag removals to users upgrading from 3.10.0; existing scripts need the documented migration path, so release approval should... (sha=795cbacefdfbd9f020cacb6d551f74ea9a211a08)",
+      "expected_head_sha": "795cbacefdfbd9f020cacb6d551f74ea9a211a08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:21:28.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/release-4.0.0",
+        "head_sha": "795cbacefdfbd9f020cacb6d551f74ea9a211a08",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
