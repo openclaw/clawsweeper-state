@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:47:02.093Z",
+  "updated_at": "2026-08-10T08:47:08.574Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:5064810620:2026-07-24T00:17:13Z:re_review",
-      "comment_id": "5064810620",
-      "comment_version_key": "5064810620:2026-07-24T00:17:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5064810620",
-      "comment_created_at": "2026-07-24T00:17:13Z",
-      "comment_updated_at": "2026-07-24T00:17:13Z",
-      "comment_body_sha256": "3d206eb1338d64e258c59d5fb9e47e0651593328770326ac4f7806ab186b38ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:50:28.993Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:5064874655:2026-07-24T00:28:55Z:re_review",
       "comment_id": "5064874655",
@@ -31884,6 +31857,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-10T08:46:07Z:clawsweeper_needs_human",
+      "comment_id": "5088305683",
+      "comment_version_key": "5088305683:2026-08-10T08:46:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
+      "comment_created_at": "2026-07-27T07:06:46Z",
+      "comment_updated_at": "2026-08-10T08:46:07Z",
+      "comment_body_sha256": "913b57c089497f5cf09059b3dffda9f7682417b8d51c92cc6cceb1cb07941876",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the release-owned changelog entry (P2)** - Remove this normal-PR edit to CHANGELOG.md; release generation owns that file, and the latest ClawSweeper cycle already requested this correction. Keep the relea...; Review finding: [P2] Remove the release-owned changelog entry — CHANGELOG.md:9 - [medium] Prove inherited-auth ownership across upgrade — src/agents/legacy-inherited-auth-dir.ts:11 (sha=14f5c76bb8a79fb261258572f146c7d301bfbe80)",
+      "expected_head_sha": "14f5c76bb8a79fb261258572f146c7d301bfbe80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:47:08.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/no-stored-default",
+        "head_sha": "14f5c76bb8a79fb261258572f146c7d301bfbe80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
