@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:01:04.240Z",
+  "updated_at": "2026-08-10T03:01:45.895Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-09T22:44:46Z:clawsweeper_needs_human",
-      "comment_id": "5185154559",
-      "comment_version_key": "5185154559:2026-08-09T22:44:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
-      "comment_created_at": "2026-08-04T22:06:16Z",
-      "comment_updated_at": "2026-08-09T22:44:46Z",
-      "comment_body_sha256": "ffc57be9dd5b4a66440d5edba77d5e1fef3b4a0d79c99f3e39a7835379df4f00",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently marks the branch dirty, so rebasing may alter generated baselines and requires fresh exact-head migration and metadata checks before merge. (sha=b9e21af7ce3bbaf0ff6ac703a94edb1c368adaf4)",
-      "expected_head_sha": "b9e21af7ce3bbaf0ff6ac703a94edb1c368adaf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:48:03.732Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/irc-drop-dead-mention-patterns",
-        "head_sha": "b9e21af7ce3bbaf0ff6ac703a94edb1c368adaf4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119527:5189261302:2026-08-09T22:44:44Z:clawsweeper_auto_repair",
       "comment_id": "5189261302",
@@ -32489,6 +32456,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121355:5235397933:2026-08-10T03:00:54Z:clawsweeper_needs_human",
+      "comment_id": "5235397933",
+      "comment_version_key": "5235397933:2026-08-10T03:00:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121355#issuecomment-5235397933",
+      "comment_created_at": "2026-08-10T03:00:54Z",
+      "comment_updated_at": "2026-08-10T03:00:54Z",
+      "comment_body_sha256": "4b48c864ddfcdfa79255e801ae560e084fd84842e1b83882cade64e37ba8debd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121355,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Preserve diagnostic probe authorization** - Current readiness details are intentionally restricted to local or authenticated callers; the new condition diagnostic endpoint must prove eq...; Review finding: [medium] Preserve diagnostic probe authorization — src/gateway/server-http.ts:208 (sha=88c15047262ad7512876fc901eb3fa4a6d27eb87)",
+      "expected_head_sha": "88c15047262ad7512876fc901eb3fa4a6d27eb87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:01:45.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "work/condition-health-status-20260809",
+        "head_sha": "88c15047262ad7512876fc901eb3fa4a6d27eb87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
