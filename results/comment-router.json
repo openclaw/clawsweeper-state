@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:49:15.666Z",
+  "updated_at": "2026-08-10T16:49:20.054Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121548:5239166891:2026-08-10T11:51:50Z:clawsweeper_needs_human",
-      "comment_id": "5239166891",
-      "comment_version_key": "5239166891:2026-08-10T11:51:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121548#issuecomment-5239166891",
-      "comment_created_at": "2026-08-10T10:51:17Z",
-      "comment_updated_at": "2026-08-10T11:51:50Z",
-      "comment_body_sha256": "341efe3a2f700b435b02847424fe7f753225f6ad8d9cf6d9c0f2b71ee49e317f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121548,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes Docker QA execution plumbing; after any rebase or behavior-changing refresh, the package-Docker gateway and release-baseline paths need exact-head reruns to ensure the ab... (sha=1044d494c887949bbb46957feffb51d7cce33d1c)",
-      "expected_head_sha": "1044d494c887949bbb46957feffb51d7cce33d1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T11:53:07.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-qa-docker-entrypoints-20260810",
-        "head_sha": "1044d494c887949bbb46957feffb51d7cce33d1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120804:5229242073:2026-08-10T11:48:13Z:clawsweeper_auto_repair",
       "comment_id": "5229242073",
@@ -31345,6 +31312,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T16:49:15.666Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120855:5243257680:2026-08-10T16:48:02Z:re_review",
+      "comment_id": "5243257680",
+      "comment_version_key": "5243257680:2026-08-10T16:48:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120855#issuecomment-5243257680",
+      "comment_created_at": "2026-08-10T16:48:02Z",
+      "comment_updated_at": "2026-08-10T16:48:02Z",
+      "comment_body_sha256": "7df632b4add9a7b159a56680d885009bdd7e7521292f23f0227e151aed30f532",
+      "source_delivery_id": "4119baf0-94db-11f1-959a-bedee42e6025",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120855,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T16:49:18.219Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/pair-client-presentation",
+        "head_sha": "2200de23c9865032903b6e7dc8dca65624bee1a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
