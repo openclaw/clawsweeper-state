@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:56:03.153Z",
+  "updated_at": "2026-08-10T06:56:05.879Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119139:5235359672:2026-08-10T02:53:01Z:re_review",
-      "comment_id": "5235359672",
-      "comment_version_key": "5235359672:2026-08-10T02:53:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119139#issuecomment-5235359672",
-      "comment_created_at": "2026-08-10T02:53:01Z",
-      "comment_updated_at": "2026-08-10T02:53:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "9aab2b00-9466-11f1-8d7a-400cb0eb8739",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119139,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T02:53:41.245Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto/issue-119083",
-        "head_sha": "0574d28e39337c2da5bf6df2aeb37d0ded4f6153",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120496:5224985250:2026-08-10T02:53:11Z:clawsweeper_auto_repair",
       "comment_id": "5224985250",
@@ -31755,6 +31707,39 @@
         "kind": "pull_request",
         "branch": "codex/windows-home-display-casing-publication-9c3",
         "head_sha": "6d787b6f486efa95ba16089df3c38a297fb37392",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1271:5236684901:2026-08-10T06:55:19Z:clawsweeper_needs_human",
+      "comment_id": "5236684901",
+      "comment_version_key": "5236684901:2026-08-10T06:55:19Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1271#issuecomment-5236684901",
+      "comment_created_at": "2026-08-10T06:30:21Z",
+      "comment_updated_at": "2026-08-10T06:55:19Z",
+      "comment_body_sha256": "8d4645ed3357fb5221d502771c65f2e477cbc6f0ca9afb52564497db8140537c",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The longer limit can allow a future hung Scripts job to consume up to five additional runner minutes, although the exact-head result confirms the current suite legitimately exceeds th... (sha=96f0a829dce74ae1a3475c010438d67e8259683b)",
+      "expected_head_sha": "96f0a829dce74ae1a3475c010438d67e8259683b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:56:05.879Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/extend-scripts-timeout",
+        "head_sha": "96f0a829dce74ae1a3475c010438d67e8259683b",
         "cluster_id": null,
         "job_path": null
       }
