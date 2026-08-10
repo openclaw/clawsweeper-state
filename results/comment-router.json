@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T18:06:24.055Z",
+  "updated_at": "2026-08-10T18:07:59.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5241206807:2026-08-10T13:51:58Z:re_review",
-      "comment_id": "5241206807",
-      "comment_version_key": "5241206807:2026-08-10T13:51:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5241206807",
-      "comment_created_at": "2026-08-10T13:51:58Z",
-      "comment_updated_at": "2026-08-10T13:51:58Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "a8283690-94c2-11f1-9b22-3a296af026ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T13:52:40.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "8fbab01448e1dc21f1af8d719076d951ae45e4a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101813:4906248423:2026-08-10T13:52:03Z:clawsweeper_needs_human",
       "comment_id": "4906248423",
@@ -31219,6 +31171,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T18:06:24.055Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121553:5239187731:2026-08-10T18:02:15Z:clawsweeper_needs_human",
+      "comment_id": "5239187731",
+      "comment_version_key": "5239187731:2026-08-10T18:02:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121553#issuecomment-5239187731",
+      "comment_created_at": "2026-08-10T10:53:37Z",
+      "comment_updated_at": "2026-08-10T18:02:15Z",
+      "comment_body_sha256": "4feb925e0bf307524d6f6de9dace3664a1ab748dfd48e7f2e8ddc55b5dd3c092",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes CI routing and path-sensitive tooling while exact-head required gates are red; the reported unrelated-failure attribution needs a current-head maintainer check befo... (sha=d9ff48eaaf7814ff68bf73e25cfd7f533f6d7eab)",
+      "expected_head_sha": "d9ff48eaaf7814ff68bf73e25cfd7f533f6d7eab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T18:07:59.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/subagents-move-final-a7c3",
+        "head_sha": "d9ff48eaaf7814ff68bf73e25cfd7f533f6d7eab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
