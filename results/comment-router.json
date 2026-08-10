@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:57:14.098Z",
+  "updated_at": "2026-08-10T08:57:30.900Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120825:5229433138:2026-08-10T02:59:50Z:clawsweeper_needs_human",
-      "comment_id": "5229433138",
-      "comment_version_key": "5229433138:2026-08-10T02:59:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120825#issuecomment-5229433138",
-      "comment_created_at": "2026-08-09T02:43:54Z",
-      "comment_updated_at": "2026-08-10T02:59:50Z",
-      "comment_body_sha256": "19a387b85f1d744439b6b23845477521b8cd1af6befb452cfbf6f494f446c47b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120825,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Refresh runtime configuration before minting (P1)** - config is captured before route resolution, while the final guard rechecks only auth against that old object. A reload can retire the remote, bind, or Tailsc...; Review finding: [P1] Refresh runtime configuration before minting — src/gateway/server-methods/device-pair-setup.ts:147-156 - [P1] Preserve validated Tailscale URLs for LAN issuan... (sha=66a38cf9db85f757f04a18ecbb41db6d4aa0b23c)",
-      "expected_head_sha": "66a38cf9db85f757f04a18ecbb41db6d4aa0b23c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:53:52.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/pairing-connectivity-preflight",
-        "head_sha": "66a38cf9db85f757f04a18ecbb41db6d4aa0b23c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120942:5230202425:2026-08-10T03:00:50Z:clawsweeper_needs_human",
       "comment_id": "5230202425",
@@ -31716,6 +31683,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T08:57:14.098Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119988:5209726313:2026-08-10T08:56:48Z:clawsweeper_auto_repair",
+      "comment_id": "5209726313",
+      "comment_version_key": "5209726313:2026-08-10T08:56:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119988#issuecomment-5209726313",
+      "comment_created_at": "2026-08-06T22:58:07Z",
+      "comment_updated_at": "2026-08-10T08:56:48Z",
+      "comment_body_sha256": "951423538ba009cb8d8a456d2cfc2630180433ea5f52d13979a1b2771df7e220",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119988,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ff4b0cef5a05f023d8870f6c4fe64fe337f3cf3d)",
+      "expected_head_sha": "ff4b0cef5a05f023d8870f6c4fe64fe337f3cf3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T08:57:30.900Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-attach-sigint-hang",
+        "head_sha": "ff4b0cef5a05f023d8870f6c4fe64fe337f3cf3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
