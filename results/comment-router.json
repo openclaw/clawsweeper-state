@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:04:23.332Z",
+  "updated_at": "2026-08-10T22:04:53.459Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5226084645:2026-08-08T12:23:19Z:re_review",
-      "comment_id": "5226084645",
-      "comment_version_key": "5226084645:2026-08-08T12:23:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5226084645",
-      "comment_created_at": "2026-08-08T12:23:19Z",
-      "comment_updated_at": "2026-08-08T12:23:19Z",
-      "comment_body_sha256": "9f77cf13094ba4300f0bc175bac193071b01911e675b563dbde30f7b494d51ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T17:59:33.376Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5226185090:2026-08-08T12:52:33Z:re_review",
       "comment_id": "5226185090",
@@ -31964,6 +31937,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121694:5244565028:2026-08-10T22:02:57Z:clawsweeper_needs_human",
+      "comment_id": "5244565028",
+      "comment_version_key": "5244565028:2026-08-10T22:02:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121694#issuecomment-5244565028",
+      "comment_created_at": "2026-08-10T18:51:46Z",
+      "comment_updated_at": "2026-08-10T22:02:57Z",
+      "comment_body_sha256": "ce31603851801afd04ac05aade5dcda8294b5c5189fe6b603b6c291d961de7bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121694,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing core policies and cron jobs that explicitly pin spawn_task require openclaw doctor --fix; the intentional no-alias runtime path otherwise leaves the replacement tool unavaila... (sha=a6ce0f67f86a6280f81bc57c656a54608f8a41e9)",
+      "expected_head_sha": "a6ce0f67f86a6280f81bc57c656a54608f8a41e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T22:04:53.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/task-card-model-matrix",
+        "head_sha": "a6ce0f67f86a6280f81bc57c656a54608f8a41e9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
