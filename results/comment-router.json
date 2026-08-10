@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:47:11.934Z",
+  "updated_at": "2026-08-10T03:47:36.905Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1086:5234076458:2026-08-09T22:55:53Z:clawsweeper_auto_repair",
-      "comment_id": "5234076458",
-      "comment_version_key": "5234076458:2026-08-09T22:55:53Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1086#issuecomment-5234076458",
-      "comment_created_at": "2026-08-09T22:04:47Z",
-      "comment_updated_at": "2026-08-09T22:55:53Z",
-      "comment_body_sha256": "11a80fd59e07b60151da5b96f4dc43e96c1ebd261b9fc9249ee34eff509ba9d4",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1086,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=ed5ed937abd15668e8ff0e9a39c1a6de4de42f63)",
-      "expected_head_sha": "ed5ed937abd15668e8ff0e9a39c1a6de4de42f63",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:56:47.483Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-110-quota-collapse",
-        "head_sha": "ed5ed937abd15668e8ff0e9a39c1a6de4de42f63",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5234276432:2026-08-09T22:56:20Z:re_review",
       "comment_id": "5234276432",
@@ -32348,6 +32315,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121368:5235639794:2026-08-10T03:46:55Z:clawsweeper_needs_human",
+      "comment_id": "5235639794",
+      "comment_version_key": "5235639794:2026-08-10T03:46:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121368#issuecomment-5235639794",
+      "comment_created_at": "2026-08-10T03:46:55Z",
+      "comment_updated_at": "2026-08-10T03:46:55Z",
+      "comment_body_sha256": "4f08f15139dd3b267753cda5c55d680a07893d45c9a2f74abab27de8b4417ac9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121368,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests and formatting checks, but no redacted after-fix runtime trace proves both provider input and persisted trans...; Review finding: [P1] Persist the CLI replacement before the CLI runner writes the turn — src/agents/cli-runner/prepare.ts:771-776 - [P1] Persist native harness replacements before... (sha=4cebf30a69485ca6499ec4de68ff7d1fc00dd458)",
+      "expected_head_sha": "4cebf30a69485ca6499ec4de68ff7d1fc00dd458",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:47:36.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-prompt-replacement",
+        "head_sha": "4cebf30a69485ca6499ec4de68ff7d1fc00dd458",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
