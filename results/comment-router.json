@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:56:20.168Z",
+  "updated_at": "2026-08-10T14:56:42.724Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/imsg:221:5238882204:2026-08-10T10:19:50Z:re_review",
-      "comment_id": "5238882204",
-      "comment_version_key": "5238882204:2026-08-10T10:19:50Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/221#issuecomment-5238882204",
-      "comment_created_at": "2026-08-10T10:19:50Z",
-      "comment_updated_at": "2026-08-10T10:19:50Z",
-      "comment_body_sha256": "90dd87c3c1cb3b4990109c24e9b40f112e2831d5818ffed742f289fda26a5bb2",
-      "source_delivery_id": "0630eb60-94a5-11f1-8a2f-6d7dd77e0e3e",
-      "repo": "openclaw/imsg",
-      "issue_number": 221,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:20:31.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/watch-replay-state",
-        "head_sha": "4887126a68d9a968cb74222f715aec0575acbb38",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:370:5238890320:2026-08-10T10:20:43Z:clawsweeper_needs_human",
       "comment_id": "5238890320",
@@ -31272,6 +31224,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121526:5238042650:2026-08-10T14:55:52Z:clawsweeper_needs_human",
+      "comment_id": "5238042650",
+      "comment_version_key": "5238042650:2026-08-10T14:55:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5238042650",
+      "comment_created_at": "2026-08-10T08:59:02Z",
+      "comment_updated_at": "2026-08-10T14:55:52Z",
+      "comment_body_sha256": "c704b49af488a596d8a38e10402dfdf4fc20a1d545d47fb9a2d05f76b1562935",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair has a net production increase of 447 lines across state startup, maintenance, and cache ownership; it is justified only if the shared coordinator and extracted cache owner... (sha=a8fe917b9f0e657bdae65ba8bc64ea306de84e15)",
+      "expected_head_sha": "a8fe917b9f0e657bdae65ba8bc64ea306de84e15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:56:42.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
+        "head_sha": "a8fe917b9f0e657bdae65ba8bc64ea306de84e15",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
