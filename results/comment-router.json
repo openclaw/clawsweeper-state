@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:49:29.660Z",
+  "updated_at": "2026-08-10T13:49:58.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121123:5232993235:2026-08-09T18:09:08Z:re_review",
-      "comment_id": "5232993235",
-      "comment_version_key": "5232993235:2026-08-09T18:09:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121123#issuecomment-5232993235",
-      "comment_created_at": "2026-08-09T18:09:08Z",
-      "comment_updated_at": "2026-08-09T18:09:08Z",
-      "comment_body_sha256": "641f3ad434c77098e4002790e7e08b8f38b6f07c47fdd26dfe081b4371dbdd05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121123,
-      "author": "arhxam",
-      "author_id": 132888838,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — rebased onto verified-green upstream `ad1a2cd7e7`; current head is `a6ff2e1599`. all three prior findings remain fixed. exact-head verification: context/static suites 19/19; resolver e2e 1 passed/5 skipped; full typescript and bundled-plugin build completed; neither `getfile` nor proxy fetch executes for tgs/webm stickers",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:49:34.132Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121123:5234498579:2026-08-09T23:54:34Z:re_review",
       "comment_id": "5234498579",
@@ -32862,6 +32835,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:386:5241177127:2026-08-10T13:49:16Z:clawsweeper_needs_human",
+      "comment_id": "5241177127",
+      "comment_version_key": "5241177127:2026-08-10T13:49:16Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/386#issuecomment-5241177127",
+      "comment_created_at": "2026-08-10T13:49:16Z",
+      "comment_updated_at": "2026-08-10T13:49:16Z",
+      "comment_body_sha256": "864090d8f1b996c737e2b35071fa76baeea5e6d81cff14cf94ad2472f5ebc9a1",
+      "repo": "steipete/summarize",
+      "issue_number": 386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied test (24) and extension-e2e checks were still in progress at review time, so their exact-head results remain to be confirmed before merge. (sha=a3d9f11447601d38c1376a03f39604f05cff3e94)",
+      "expected_head_sha": "a3d9f11447601d38c1376a03f39604f05cff3e94",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T13:49:58.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/dependency-security-refresh",
+        "head_sha": "a3d9f11447601d38c1376a03f39604f05cff3e94",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
