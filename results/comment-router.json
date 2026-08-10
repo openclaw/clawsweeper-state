@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:54:17.393Z",
+  "updated_at": "2026-08-10T02:54:32.860Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120864:5234084591:2026-08-09T22:06:48Z:re_review",
-      "comment_id": "5234084591",
-      "comment_version_key": "5234084591:2026-08-09T22:06:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120864#issuecomment-5234084591",
-      "comment_created_at": "2026-08-09T22:06:34Z",
-      "comment_updated_at": "2026-08-09T22:06:48Z",
-      "comment_body_sha256": "9ee7d558e7c890580ae0a43de6278f869578adc639abe0f4e4b8bdd5a145f211",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120864,
-      "author": "sjf-oa",
-      "author_id": 257630655,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:46:59.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/remove-slack-enterprise-setting",
-        "head_sha": "99cfeccd1db358289b9be73eccf8a57dc8a38a79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121116:5234135032:2026-08-09T22:19:19Z:re_review",
       "comment_id": "5234135032",
@@ -32578,6 +32531,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-10T02:53:10Z:clawsweeper_needs_human",
+      "comment_id": "5134107795",
+      "comment_version_key": "5134107795:2026-08-10T02:53:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
+      "comment_created_at": "2026-07-30T17:24:48Z",
+      "comment_updated_at": "2026-08-10T02:53:10Z",
+      "comment_body_sha256": "9406c973dce799592fd61943c6e8421aa9e9514cf0a1ae6973069f153c4a7bd4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the legacy unsafe flag non-authorizing (P1)** - dangerouslyForceUnsafeInstall now treats any policy warn as acknowledged, and a second warn still returns success. Current main documents this flag as a no-op...; Review finding: [P1] Keep the legacy unsafe flag non-authorizing — src/plugins/install-security-scan.runtime.ts:1028-1048 - [high] Legacy flag bypasses warning acknowledgement — s... (sha=f0d7e042c47732feebc885c2b73465687051e2bf)",
+      "expected_head_sha": "f0d7e042c47732feebc885c2b73465687051e2bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T02:54:32.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/before-install-coverage",
+        "head_sha": "f0d7e042c47732feebc885c2b73465687051e2bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
