@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:48:57.305Z",
+  "updated_at": "2026-08-10T04:49:09.740Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120575:5227162968:2026-08-08T17:08:35Z:re_review",
-      "comment_id": "5227162968",
-      "comment_version_key": "5227162968:2026-08-08T17:08:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120575#issuecomment-5227162968",
-      "comment_created_at": "2026-08-08T17:08:35Z",
-      "comment_updated_at": "2026-08-08T17:08:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120575,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:50:11.932Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120575:5228214448:2026-08-08T21:17:17Z:re_review",
       "comment_id": "5228214448",
@@ -32156,6 +32129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121265:5234253384:2026-08-10T04:48:34Z:clawsweeper_needs_human",
+      "comment_id": "5234253384",
+      "comment_version_key": "5234253384:2026-08-10T04:48:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121265#issuecomment-5234253384",
+      "comment_created_at": "2026-08-09T22:50:01Z",
+      "comment_updated_at": "2026-08-10T04:48:34Z",
+      "comment_body_sha256": "db4ff02ed8cb736d6f787910f3d6f5775bf201de4010c9161639be6d048f98fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121265,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One exact-head shared OpenClawKit scan remains queued; normal merge gating should wait for its terminal result. (sha=fe1da1cb0b53454e3b4bf144b2db127f1e153213)",
+      "expected_head_sha": "fe1da1cb0b53454e3b4bf144b2db127f1e153213",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T04:49:09.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "fe1da1cb0b53454e3b4bf144b2db127f1e153213",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
