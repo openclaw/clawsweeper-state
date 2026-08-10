@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:57:03.443Z",
+  "updated_at": "2026-08-10T06:57:36.018Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-10T02:53:10Z:clawsweeper_needs_human",
-      "comment_id": "5134107795",
-      "comment_version_key": "5134107795:2026-08-10T02:53:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
-      "comment_created_at": "2026-07-30T17:24:48Z",
-      "comment_updated_at": "2026-08-10T02:53:10Z",
-      "comment_body_sha256": "9406c973dce799592fd61943c6e8421aa9e9514cf0a1ae6973069f153c4a7bd4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the legacy unsafe flag non-authorizing (P1)** - dangerouslyForceUnsafeInstall now treats any policy warn as acknowledged, and a second warn still returns success. Current main documents this flag as a no-op...; Review finding: [P1] Keep the legacy unsafe flag non-authorizing — src/plugins/install-security-scan.runtime.ts:1028-1048 - [high] Legacy flag bypasses warning acknowledgement — s... (sha=f0d7e042c47732feebc885c2b73465687051e2bf)",
-      "expected_head_sha": "f0d7e042c47732feebc885c2b73465687051e2bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T02:54:32.860Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "f0d7e042c47732feebc885c2b73465687051e2bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121263:5234244485:2026-08-10T02:53:57Z:clawsweeper_auto_repair",
       "comment_id": "5234244485",
@@ -31722,6 +31689,39 @@
       "status": "waiting",
       "processed_at": "2026-08-10T06:57:03.443Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121345:5235328441:2026-08-10T06:56:57Z:clawsweeper_auto_repair",
+      "comment_id": "5235328441",
+      "comment_version_key": "5235328441:2026-08-10T06:56:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121345#issuecomment-5235328441",
+      "comment_created_at": "2026-08-10T02:47:56Z",
+      "comment_updated_at": "2026-08-10T06:56:57Z",
+      "comment_body_sha256": "fede7300b02da22552fb7d373a275cdcf6138f2cc2f9401c7ace44a10f15f5cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4f1921511d44a38cdc61de66c0908831fbcde1e7)",
+      "expected_head_sha": "4f1921511d44a38cdc61de66c0908831fbcde1e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:57:36.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dead-branches-and-types-cleanup-221d12",
+        "head_sha": "4f1921511d44a38cdc61de66c0908831fbcde1e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
