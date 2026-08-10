@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:54:17.920Z",
+  "updated_at": "2026-08-10T19:54:21.507Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120668:5235087667:2026-08-10T02:00:15Z:re_review",
-      "comment_id": "5235087667",
-      "comment_version_key": "5235087667:2026-08-10T02:00:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120668#issuecomment-5235087667",
-      "comment_created_at": "2026-08-10T02:00:15Z",
-      "comment_updated_at": "2026-08-10T02:00:15Z",
-      "comment_body_sha256": "3550e746a8bdf124b13463d63499cc75f52aaf0447c4a5407235bc5e6121908f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120668,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:55:28.219Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120668:5241601022:2026-08-10T14:25:07Z:re_review",
       "comment_id": "5241601022",
@@ -31907,6 +31880,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T19:54:17.920Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119877:5202927234:2026-08-10T19:48:36Z:clawsweeper_needs_human",
+      "comment_id": "5202927234",
+      "comment_version_key": "5202927234:2026-08-10T19:48:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119877#issuecomment-5202927234",
+      "comment_created_at": "2026-08-06T09:38:08Z",
+      "comment_updated_at": "2026-08-10T19:48:36Z",
+      "comment_body_sha256": "1d2c302b13676f10fbd9d89aa243301ad372d86f252a8cac22130489094f3cd0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Propagate final headers to all credentialed error callers (P1)** - Late finding: this caller already has the final Google headers but does not pass them to the new normalizer, so a provider can still reflect the...; Review finding: [P1] Propagate final headers to all credentialed error callers — extensions/google/speech-provider.ts:460 - [high] Credentialed sibling callers remain unprotected... (sha=d2746611f1c12154b83732ddd25206058884f6bd)",
+      "expected_head_sha": "d2746611f1c12154b83732ddd25206058884f6bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:54:21.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/request-scoped-error-redaction-foundation",
+        "head_sha": "d2746611f1c12154b83732ddd25206058884f6bd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
