@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:57:29.116Z",
+  "updated_at": "2026-08-10T14:57:30.977Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119538:5190089673:2026-08-10T10:43:40Z:clawsweeper_needs_human",
-      "comment_id": "5190089673",
-      "comment_version_key": "5190089673:2026-08-10T10:43:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119538#issuecomment-5190089673",
-      "comment_created_at": "2026-08-05T09:32:36Z",
-      "comment_updated_at": "2026-08-10T10:43:40Z",
-      "comment_body_sha256": "7a441c7738384318aa303e64e20d03ec4e0f0f0029918e01b14adee04621385e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119538,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve unmatched percent escapes in channel-tool data (P2)** - canonicalizePercentEscapes(redacted) rewrites every %xx escape, so a safe 200 response such as {\"id\":\"id%2fpart\"} becomes id%2Fpart before execute...; Review finding: [P2] Preserve unmatched percent escapes in channel-tool data — extensions/qqbot/src/engine/utils/credential-redaction.ts:122 - [low] Unrelated response escapes are... (sha=158474027c215eea438414c6aaa58bd770c99a22)",
-      "expected_head_sha": "158474027c215eea438414c6aaa58bd770c99a22",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T10:47:20.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t24-07-qqbot-api-error-redaction",
-        "head_sha": "158474027c215eea438414c6aaa58bd770c99a22",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119538:5226092246:2026-08-08T12:25:18Z:re_review",
       "comment_id": "5226092246",
@@ -31260,6 +31227,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-10T14:56:25Z:clawsweeper_needs_human",
+      "comment_id": "5224970607",
+      "comment_version_key": "5224970607:2026-08-10T14:56:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
+      "comment_created_at": "2026-08-08T06:42:09Z",
+      "comment_updated_at": "2026-08-10T14:56:25Z",
+      "comment_body_sha256": "306db9dc61b47806848a09cdebbc837743d8fed1fc6d2fe4314b0550eb128052",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The default-on nudge changes model-visible tool results for existing installations without configuration; maintainers must explicitly accept that behavioral default. (sha=c2d1b3567931fe923c827063561c4d7f814696ff)",
+      "expected_head_sha": "c2d1b3567931fe923c827063561c4d7f814696ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:57:30.977Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "c2d1b3567931fe923c827063561c4d7f814696ff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
