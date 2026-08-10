@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:59:25.065Z",
+  "updated_at": "2026-08-10T14:59:39.298Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121560:5239154267:2026-08-10T10:49:50Z:re_review",
-      "comment_id": "5239154267",
-      "comment_version_key": "5239154267:2026-08-10T10:49:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121560#issuecomment-5239154267",
-      "comment_created_at": "2026-08-10T10:49:50Z",
-      "comment_updated_at": "2026-08-10T10:49:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "source_delivery_id": "36e29980-94a9-11f1-9a89-6e53489dd948",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121560,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:50:29.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-reload-recovery-protocol",
-        "head_sha": "e6ab484db7a33b28dff8984763eea4de68362bc1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119702:5239160841:2026-08-10T10:50:35Z:re_review",
       "comment_id": "5239160841",
@@ -31224,6 +31176,39 @@
         "kind": "pull_request",
         "branch": "fix/dispatch-zero-count-attribution",
         "head_sha": "55f679dac58abd61f34068714692a4a68ef98698",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116513:5134791025:2026-08-10T14:58:38Z:clawsweeper_needs_human",
+      "comment_id": "5134791025",
+      "comment_version_key": "5134791025:2026-08-10T14:58:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116513#issuecomment-5134791025",
+      "comment_created_at": "2026-07-30T18:32:10Z",
+      "comment_updated_at": "2026-08-10T14:58:38Z",
+      "comment_body_sha256": "d9b13aad0a5c364ef422dc2f196e44cbf849bf5dd81022af00d6d13c57b0f6e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116513,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Custom OpenAI-compatible endpoints that intentionally use bare EOF as successful completion will now receive a retryable stream error until they emit a finish reason or [DONE]. (sha=98734c60ec5635849d12a8ea757a1f38dac9873d)",
+      "expected_head_sha": "98734c60ec5635849d12a8ea757a1f38dac9873d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:59:39.298Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-managed-chat-eof-20260730",
+        "head_sha": "98734c60ec5635849d12a8ea757a1f38dac9873d",
         "cluster_id": null,
         "job_path": null
       }
