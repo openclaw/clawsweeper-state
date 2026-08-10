@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:50:08.179Z",
+  "updated_at": "2026-08-10T19:50:32.408Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121600:5241155214:2026-08-10T14:51:29Z:clawsweeper_needs_human",
-      "comment_id": "5241155214",
-      "comment_version_key": "5241155214:2026-08-10T14:51:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121600#issuecomment-5241155214",
-      "comment_created_at": "2026-08-10T13:47:18Z",
-      "comment_updated_at": "2026-08-10T14:51:29Z",
-      "comment_body_sha256": "27c19fc3c164ef203fbbe051aa5f1b91f92ff2576ac965497c4a52a8fc88ef68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121600,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Hide Terminal command metadata by default (P1)** - status now suppresses detail only for exec, shell, and bash, but the owned terminal tool accepts and displays both command and cwd. Its generic tool-start event...; Review finding: [P1] Hide Terminal command metadata by default — src/channels/streaming.ts:539-541 - [P2] Update raw failure-alert assertions — src/cron/service/failure-alerts.ts:... (sha=62a83f62903ca42d0026d57ff1f9f5aea3d696d9)",
-      "expected_head_sha": "62a83f62903ca42d0026d57ff1f9f5aea3d696d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:52:12.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-93251-error-disclosure",
-        "head_sha": "62a83f62903ca42d0026d57ff1f9f5aea3d696d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113899:5080971646:2026-08-10T14:52:06Z:clawsweeper_needs_human",
       "comment_id": "5080971646",
@@ -31845,6 +31812,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T19:50:08.179Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121579:5241989373:2026-08-10T19:05:33Z:clawsweeper_auto_repair",
+      "comment_id": "5241989373",
+      "comment_version_key": "5241989373:2026-08-10T19:05:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121579#issuecomment-5241989373",
+      "comment_created_at": "2026-08-10T14:56:28Z",
+      "comment_updated_at": "2026-08-10T19:05:33Z",
+      "comment_body_sha256": "41a10f7ce5699b61b7257479251b16079f2119a8bbf736ff240c8a7cf6595db7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f10f50bc1a101fce32d14d7cdf19399e5a2bcc68)",
+      "expected_head_sha": "f10f50bc1a101fce32d14d7cdf19399e5a2bcc68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:50:32.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/110153-tool-failure-acknowledgement",
+        "head_sha": "f10f50bc1a101fce32d14d7cdf19399e5a2bcc68",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
