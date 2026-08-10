@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T09:31:17.407Z",
+  "updated_at": "2026-08-10T09:33:40.207Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121010:5236062912:2026-08-10T04:59:26Z:re_review",
-      "comment_id": "5236062912",
-      "comment_version_key": "5236062912:2026-08-10T04:59:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121010#issuecomment-5236062912",
-      "comment_created_at": "2026-08-10T04:59:26Z",
-      "comment_updated_at": "2026-08-10T04:59:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "43959960-9478-11f1-9e90-3fa033da9c91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121010,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T05:00:05.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-telegram-startup-plugin-activation",
-        "head_sha": "a3a3bcabb72f47862ccde8eb05903f6529bf88c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:2797:5236063494:2026-08-10T04:59:31Z:re_review",
       "comment_id": "5236063494",
@@ -31955,6 +31907,39 @@
         "kind": "pull_request",
         "branch": "codex/csw-113-codex-policy-applicability",
         "head_sha": "7b1c74b1a7923710eb38053b87ac17b50657e70b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:365:5237521069:2026-08-10T09:33:01Z:clawsweeper_auto_repair",
+      "comment_id": "5237521069",
+      "comment_version_key": "5237521069:2026-08-10T09:33:01Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/365#issuecomment-5237521069",
+      "comment_created_at": "2026-08-10T08:03:36Z",
+      "comment_updated_at": "2026-08-10T09:33:01Z",
+      "comment_body_sha256": "ba6e1f01ab9c0476b3d41b4562519e7747f0b301b95ae9eff0a01b8ea65fe405",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 365,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=c57f6ae3f956e585f400ae5dfa8067a1e981e602)",
+      "expected_head_sha": "c57f6ae3f956e585f400ae5dfa8067a1e981e602",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-10T09:33:40.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/v4-agent-envelope",
+        "head_sha": "c57f6ae3f956e585f400ae5dfa8067a1e981e602",
         "cluster_id": null,
         "job_path": null
       }
