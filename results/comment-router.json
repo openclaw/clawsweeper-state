@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:53:38.807Z",
+  "updated_at": "2026-08-10T21:53:45.562Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121475:5243937525:2026-08-10T17:54:27Z:re_review",
-      "comment_id": "5243937525",
-      "comment_version_key": "5243937525:2026-08-10T17:54:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121475#issuecomment-5243937525",
-      "comment_created_at": "2026-08-10T17:54:27Z",
-      "comment_updated_at": "2026-08-10T17:54:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "8853e590-94e4-11f1-8aee-b50a0ddbbb09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121475,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:55:09.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-desktop-app-launcher",
-        "head_sha": "d7ec1fd56bf8de587671dea7f97535815732b869",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T17:54:44Z:re_review",
       "comment_id": "5240341720",
@@ -31799,6 +31751,39 @@
         "kind": "pull_request",
         "branch": "test/trim-dispatch-call-count",
         "head_sha": "92ff9620bc0dd0d21c73cb98f11cbfc0495231da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119001:5172693459:2026-08-10T21:52:08Z:clawsweeper_needs_human",
+      "comment_id": "5172693459",
+      "comment_version_key": "5172693459:2026-08-10T21:52:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5172693459",
+      "comment_created_at": "2026-08-03T23:08:34Z",
+      "comment_updated_at": "2026-08-10T21:52:08Z",
+      "comment_body_sha256": "b75eaebf87484a427f8c7d407b015d42b5bfaf62f90b6236dfccf8694e479b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR claims local validation but provides no inspectable exact-head after-fix recording, runtime trace, log, or artifact; its body says the c...; Review finding: [P1] Release retained admission on provider-initiated close — src/gateway/talk-realtime-relay-operations.ts:119-120 - [medium] Audit and approve the root dependenc... (sha=1424c032cd4260302c5d15609ae043a08bfc55d8)",
+      "expected_head_sha": "1424c032cd4260302c5d15609ae043a08bfc55d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:53:45.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-native-realtime-voice",
+        "head_sha": "1424c032cd4260302c5d15609ae043a08bfc55d8",
         "cluster_id": null,
         "job_path": null
       }
