@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T08:55:22.582Z",
+  "updated_at": "2026-08-10T08:55:34.001Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120197:5216643546:2026-08-10T03:51:35Z:clawsweeper_needs_human",
-      "comment_id": "5216643546",
-      "comment_version_key": "5216643546:2026-08-10T03:51:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120197#issuecomment-5216643546",
-      "comment_created_at": "2026-08-07T11:46:05Z",
-      "comment_updated_at": "2026-08-10T03:51:35Z",
-      "comment_body_sha256": "5e5376f3be7e7c848fd55de30d5b01cb9c72118498730a75b3149887d664fe5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120197,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body contains terminal-style claims, but the full exact-head gateway recovery trace could not be retrieved or independently ins... (sha=d3ca115488672cffa29d647f2035dbfb6faea2d9)",
-      "expected_head_sha": "d3ca115488672cffa29d647f2035dbfb6faea2d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:53:52.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preflight-codex-compaction-119971",
-        "head_sha": "d3ca115488672cffa29d647f2035dbfb6faea2d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120537:5225395854:2026-08-10T03:48:06Z:clawsweeper_auto_repair",
       "comment_id": "5225395854",
@@ -31635,6 +31602,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120986:5238003483:2026-08-10T08:54:51Z:re_review",
+      "comment_id": "5238003483",
+      "comment_version_key": "5238003483:2026-08-10T08:54:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120986#issuecomment-5238003483",
+      "comment_created_at": "2026-08-10T08:54:51Z",
+      "comment_updated_at": "2026-08-10T08:54:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "26b9bd50-9499-11f1-84bb-d0d401c5b036",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120986,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T08:55:32.018Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-frozen-candidate-release-harness",
+        "head_sha": "2c73d7dd18c2cb4561382cd5a32d9df309224e7e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
