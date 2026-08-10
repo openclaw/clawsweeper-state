@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T12:49:11.266Z",
+  "updated_at": "2026-08-10T12:49:12.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4956918809:2026-07-13T10:20:14Z:re_review",
-      "comment_id": "4956918809",
-      "comment_version_key": "4956918809:2026-07-13T10:20:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4956918809",
-      "comment_created_at": "2026-07-13T10:20:14Z",
-      "comment_updated_at": "2026-07-13T10:20:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:01:35.950Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4960385241:2026-07-13T16:46:51Z:re_review",
       "comment_id": "4960385241",
@@ -32628,6 +32601,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T12:49:11.266Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121578:5240496495:2026-08-10T12:48:25Z:clawsweeper_needs_human",
+      "comment_id": "5240496495",
+      "comment_version_key": "5240496495:2026-08-10T12:48:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121578#issuecomment-5240496495",
+      "comment_created_at": "2026-08-10T12:48:25Z",
+      "comment_updated_at": "2026-08-10T12:48:25Z",
+      "comment_body_sha256": "b10965eca5375f08a690e184bd2db3cf89eff2c710be562d52d443dc3e33e0d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121578,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict marker ownership to model-provider API keys (P1)** - refAssignments contains every audited config SecretRef. talk.providers.*.apiKey and talk.realtime.providers.*.apiKey also have provider IDs, so this...; Review finding: [P1] Restrict marker ownership to model-provider API keys — src/secrets/audit-models-json.ts:52 - [medium] Unrelated provider refs can suppress plaintext findings... (sha=b7910f552a42e1918475da8e68d2904ae2011a08)",
+      "expected_head_sha": "b7910f552a42e1918475da8e68d2904ae2011a08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T12:49:12.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/121543-models-json-secretref",
+        "head_sha": "b7910f552a42e1918475da8e68d2904ae2011a08",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
