@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:45:09.020Z",
+  "updated_at": "2026-08-10T02:45:35.224Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:52:5119082703:2026-08-09T22:02:07Z:clawsweeper_needs_human",
-      "comment_id": "5119082703",
-      "comment_version_key": "5119082703:2026-08-09T22:02:07Z",
-      "comment_url": "https://github.com/openclaw/shellbench/pull/52#issuecomment-5119082703",
-      "comment_created_at": "2026-07-29T14:25:13Z",
-      "comment_updated_at": "2026-08-09T22:02:07Z",
-      "comment_body_sha256": "2dcd53b98117a74602ddb7225ff8a2b5653dd693b954e7d76547d1d9e2920531",
-      "repo": "openclaw/shellbench",
-      "issue_number": 52,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes future successful Claude Code runs eligible native benchmark evidence, so maintainers should explicitly accept that comparability policy before landing it. (sha=ac1c974c12749dddb5d49af734561cec59910c65)",
-      "expected_head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T22:02:49.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/native-claude-trajectory-eligibility",
-        "head_sha": "ac1c974c12749dddb5d49af734561cec59910c65",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3406:5187051359:2026-08-09T22:02:07Z:clawsweeper_auto_repair",
       "comment_id": "5187051359",
@@ -32633,6 +32600,54 @@
       "finding_id": null,
       "status": "executed",
       "processed_at": "2026-08-10T02:45:06.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/grok-local-token-cost",
+        "head_sha": "5ba725d12e709b55162ceab21c1a2e7ae9f00d84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2407:5235312861:2026-08-10T02:44:56Z:re_review",
+      "comment_id": "5235312861",
+      "comment_version_key": "5235312861:2026-08-10T02:44:56Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5235312861",
+      "comment_created_at": "2026-08-10T02:44:56Z",
+      "comment_updated_at": "2026-08-10T02:44:56Z",
+      "comment_body_sha256": "8057fd472cd6c2811e7347d36a758b064792f9a587479329f4ae30ab2490cf2f",
+      "source_delivery_id": "793ee9d0-9465-11f1-971d-0b99ae3cc8b1",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2407,
+      "author": "chenow9",
+      "author_id": 302014081,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T02:45:32.439Z",
       "target": {
         "kind": "pull_request",
         "branch": "feature/grok-local-token-cost",
