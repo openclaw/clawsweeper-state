@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:53:45.562Z",
+  "updated_at": "2026-08-10T21:53:52.209Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T17:54:44Z:re_review",
-      "comment_id": "5240341720",
-      "comment_version_key": "5240341720:2026-08-10T17:54:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5240341720",
-      "comment_created_at": "2026-08-10T12:35:38Z",
-      "comment_updated_at": "2026-08-10T17:54:44Z",
-      "comment_body_sha256": "7d28cea328fa1e33e84ffe258401022c309de6aaea924ce0d2ba7914b3cdda5c",
-      "source_delivery_id": "91be2cd0-94e4-11f1-9deb-b66ed8e0c15a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121526,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:55:15.398Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
-        "head_sha": "d9a16d65362520eeb6a81df043fdfb04785984b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5075745691:2026-07-25T00:10:29Z:re_review",
       "comment_id": "5075745691",
@@ -31784,6 +31736,39 @@
         "kind": "pull_request",
         "branch": "agent/codex-native-realtime-voice",
         "head_sha": "1424c032cd4260302c5d15609ae043a08bfc55d8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121553:5239187731:2026-08-10T21:51:58Z:clawsweeper_needs_human",
+      "comment_id": "5239187731",
+      "comment_version_key": "5239187731:2026-08-10T21:51:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121553#issuecomment-5239187731",
+      "comment_created_at": "2026-08-10T10:53:37Z",
+      "comment_updated_at": "2026-08-10T21:51:58Z",
+      "comment_body_sha256": "e0e7e098be9110cec0e9c6dc2d273f8ee590c0516934cdf6ca55c4f7e8b7bb60",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121553,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head reports failed and incomplete CI, including path-sensitive plugin-SDK and test lanes; the claim that these failures also occur on main could not be independently chec... (sha=2dc0ad832581ec52c5538174732e3e5795ec330a)",
+      "expected_head_sha": "2dc0ad832581ec52c5538174732e3e5795ec330a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:53:52.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/subagents-move-final-a7c3",
+        "head_sha": "2dc0ad832581ec52c5538174732e3e5795ec330a",
         "cluster_id": null,
         "job_path": null
       }
