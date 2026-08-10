@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:00:01.738Z",
+  "updated_at": "2026-08-10T21:00:26.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3446:5243375418:2026-08-10T16:59:03Z:re_review",
-      "comment_id": "5243375418",
-      "comment_version_key": "5243375418:2026-08-10T16:59:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3446#issuecomment-5243375418",
-      "comment_created_at": "2026-08-10T16:59:03Z",
-      "comment_updated_at": "2026-08-10T16:59:03Z",
-      "comment_body_sha256": "f9643da5549073a8d37420ea9f99041674a65377500d6e8ab694a5d3f64dbd95",
-      "source_delivery_id": "cadf16d0-94dc-11f1-8530-4da2a02dabc5",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3446,
-      "author": "Yigtwxx",
-      "author_id": 156921875,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:00:05.313Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/audit-advisory-bumps",
-        "head_sha": "1f9bc2e1c796a09771350cc63877f9aafc9ac8c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116649:5138993946:2026-08-10T16:57:29Z:clawsweeper_auto_repair",
       "comment_id": "5138993946",
@@ -31394,6 +31346,39 @@
         "kind": "pull_request",
         "branch": "bartok9/voice-transcript-echo-polish",
         "head_sha": "6c9f71d8541fe997254067b5cfab19552670a112",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121724:5245903297:2026-08-10T20:59:43Z:clawsweeper_needs_human",
+      "comment_id": "5245903297",
+      "comment_version_key": "5245903297:2026-08-10T20:59:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121724#issuecomment-5245903297",
+      "comment_created_at": "2026-08-10T20:59:43Z",
+      "comment_updated_at": "2026-08-10T20:59:43Z",
+      "comment_body_sha256": "45a7d271e9520b02565bcf1be5b956eb8050939827a253292977ab7f685f9c5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Invalidate last-known-good values after store deletion (P1)** - The new store-mutation wait path still feeds deletion into ordinary degraded reload. A missing referenced row is classified as an unchanged stale o...; Review finding: [P1] Invalidate last-known-good values after store deletion — src/gateway/server-aux-handlers.ts:506-512 - [P2] Require advertised methods for the optional Secrets... (sha=338fc0b4a0df73dcd8a55fd713903c37062c8a41)",
+      "expected_head_sha": "338fc0b4a0df73dcd8a55fd713903c37062c8a41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:00:26.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/secret-store-ui",
+        "head_sha": "338fc0b4a0df73dcd8a55fd713903c37062c8a41",
         "cluster_id": null,
         "job_path": null
       }
