@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:51:11.187Z",
+  "updated_at": "2026-08-10T04:51:11.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114996:5234418446:2026-08-09T23:33:02Z:re_review",
-      "comment_id": "5234418446",
-      "comment_version_key": "5234418446:2026-08-09T23:33:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114996#issuecomment-5234418446",
-      "comment_created_at": "2026-08-09T23:33:02Z",
-      "comment_updated_at": "2026-08-09T23:33:02Z",
-      "comment_body_sha256": "720bca94eb241d43f2fa45de117351dbb79e6aca82963c7b5559b611ab1448a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114996,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T23:53:57.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/skill-opportunity-workboard-capture",
-        "head_sha": "49b3c90cbb30beaed06eaf1c7898d03456ac4580",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120721:5234421598:2026-08-09T23:33:53Z:re_review",
       "comment_id": "5234421598",
@@ -32092,6 +32045,39 @@
         "kind": "pull_request",
         "branch": "steipete/dead-gateway-rpc-cleanup-fbd88e",
         "head_sha": "5b16cf02a5648e45dc735bc0c7daf27e95f9d7bf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121273:5234460098:2026-08-10T04:50:32Z:clawsweeper_needs_human",
+      "comment_id": "5234460098",
+      "comment_version_key": "5234460098:2026-08-10T04:50:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121273#issuecomment-5234460098",
+      "comment_created_at": "2026-08-09T23:44:19Z",
+      "comment_updated_at": "2026-08-10T04:50:32Z",
+      "comment_body_sha256": "c341922200617365324338cbbfec309bb92bf7f081521eedf0c30a98a215b6cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121273,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove raw policy-key aliases during agent deletion (P1)** - The new native regression establishes that Agent A and journal row agent-a are one identity, but this path only reads and deletes agents[key] after no...; Review finding: [P1] Remove raw policy-key aliases during agent deletion — src/infra/exec-approvals-store.ts:197-205 - [medium] Raw policy aliases survive agent deletion — src/inf... (sha=5a6f7c087bde2616fdfc47dee7f909d167a2df43)",
+      "expected_head_sha": "5a6f7c087bde2616fdfc47dee7f909d167a2df43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T04:51:11.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/lease-engine-retirement",
+        "head_sha": "5a6f7c087bde2616fdfc47dee7f909d167a2df43",
         "cluster_id": null,
         "job_path": null
       }
