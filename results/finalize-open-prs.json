@@ -2,17 +2,17 @@
   "repo": "openclaw/openclaw",
   "repair_repo": "openclaw/clawsweeper",
   "head_prefix": "clawsweeper/",
-  "generated_at": "2026-08-10T04:52:59.799Z",
-  "count": 2,
+  "generated_at": "2026-08-10T06:31:33.263Z",
+  "count": 1,
   "summary": {
-    "open_prs": 2,
+    "open_prs": 1,
     "ready_candidates": 0,
     "security_hold": 0,
-    "needs_rebase": 1,
+    "needs_rebase": 0,
     "mergeability_unknown": 0,
     "needs_checks": 0,
     "needs_review": 0,
-    "needs_merge_preflight": 2,
+    "needs_merge_preflight": 1,
     "needs_result_backfill": 0
   },
   "dispatch": {
@@ -92,74 +92,6 @@
         "needs_merge_preflight"
       ],
       "recommended_next_action": "backfill merge preflight: security cleared, comments resolved, Codex /review passed, validation recorded"
-    },
-    {
-      "number": 120652,
-      "title": "fix: suppress fast-auto status updates when progress is hidden",
-      "url": "https://github.com/openclaw/openclaw/pull/120652",
-      "branch": "clawsweeper/issue-openclaw-openclaw-97601",
-      "head_sha": "730963df60a65fc60858847428cee953e78e0c32",
-      "cluster_id": "issue-openclaw-openclaw-97601",
-      "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-97601.md",
-      "updated_at": "2026-08-09T14:57:48Z",
-      "mergeable": "CONFLICTING",
-      "merge_state_status": "DIRTY",
-      "review_decision": "",
-      "security_hold": false,
-      "checks": {
-        "total": 134,
-        "counts": {
-          "SKIPPED": 50,
-          "SUCCESS": 83,
-          "NEUTRAL": 1
-        },
-        "blockers": []
-      },
-      "review_threads": {
-        "status": "clean",
-        "reason": null,
-        "unresolved_count": 0,
-        "examples": []
-      },
-      "review_bots": {
-        "count": 2,
-        "latest": [
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120652#issuecomment-5227576773",
-            "submitted_at": "2026-08-08T18:46:28Z"
-          },
-          {
-            "source": "comment",
-            "author": "clawsweeper",
-            "url": "https://github.com/openclaw/openclaw/pull/120652#issuecomment-5232093336",
-            "submitted_at": "2026-08-09T14:44:40Z"
-          }
-        ]
-      },
-      "latest_record": {
-        "run_id": "31321419573",
-        "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31321419573",
-        "cluster_id": "automerge-openclaw-openclaw-120652",
-        "published_at": "2026-08-09T16:37:44.855Z",
-        "workflow_conclusion": "success",
-        "apply_action": {
-          "target": "#120652",
-          "action": "build_fix_artifact",
-          "status": "planned",
-          "classification": "canonical",
-          "canonical": "#120652",
-          "candidate_fix": "#120652",
-          "reason": "Repair the existing candidate branch rather than replace it; it is focused, writable, and already preserves the source context."
-        }
-      },
-      "blockers": [
-        "needs_rebase:CONFLICTING",
-        "needs_merge_state:DIRTY",
-        "needs_merge_preflight"
-      ],
-      "recommended_next_action": "resume branch, rebase onto current main, repair conflicts, run changed checks, rerun review"
     }
   ]
 }

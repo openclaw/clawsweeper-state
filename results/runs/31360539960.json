@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-121446",
+  "mode": "autonomous",
+  "run_id": "31360539960",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31360539960",
+  "head_sha": "13709144f5bd54cee22ec6a64ebc2b8fe0b021d5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-121446.md",
+  "published_at": "2026-08-10T06:31:23.630Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/121446",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/121446",
+  "canonical_pr": null,
+  "summary": "Current main has the Slack implicit-default SecretRef activation mismatch. A narrow, Slack-local repair is planned, but this worker cannot edit or validate because the checkout is read-only and the required tsx dependency is absent.",
+  "actions": [
+    {
+      "target": "#121446",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121446",
+      "candidate_fix": null,
+      "reason": "With an enabled named account overriding both root tokens, Slack still starts its implicit default account but the collector has no inherited owner for either root SecretRef."
+    },
+    {
+      "target": "#96929",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#96935",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this exact security-sensitive reference to central OpenClaw security handling."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-121446",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121446",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout with dependencies installed to add the regression, verify it fails pre-fix, implement, and validate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
