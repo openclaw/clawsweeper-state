@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-08-10T12:58:46.059Z",
+  "updated_at": "2026-08-10T12:58:48.491Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121450:5236872215:2026-08-10T07:52:51Z:clawsweeper_auto_repair",
-      "comment_id": "5236872215",
-      "comment_version_key": "5236872215:2026-08-10T07:52:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121450#issuecomment-5236872215",
-      "comment_created_at": "2026-08-10T06:54:39Z",
-      "comment_updated_at": "2026-08-10T07:52:51Z",
-      "comment_body_sha256": "40457b7dc3b5249b4801b2599fa9047eebd49aff05df0399d12257f127fff713",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121450,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bdd6e18f11a159fe76374af267c8b316ae7744ca)",
-      "expected_head_sha": "bdd6e18f11a159fe76374af267c8b316ae7744ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:03:03.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "design/nac-78-main-successor",
-        "head_sha": "bdd6e18f11a159fe76374af267c8b316ae7744ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121455:5236877253:2026-08-10T07:49:51Z:clawsweeper_needs_human",
-      "comment_id": "5236877253",
-      "comment_version_key": "5236877253:2026-08-10T07:49:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121455#issuecomment-5236877253",
-      "comment_created_at": "2026-08-10T06:55:19Z",
-      "comment_updated_at": "2026-08-10T07:49:51Z",
-      "comment_body_sha256": "18b389cb7a38b0ea73996942ec9528418830a01a150a20539b16fb876c90fbde",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121455,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Runtime production grows by net 28 lines; the shared owner and package-local terminal matcher justify that growth, but this read-only checkout lacked installed @openclaw/fs-safe sourc... (sha=3004fda99c12120aabd88d8bf0408f6791f45988)",
-      "expected_head_sha": "3004fda99c12120aabd88d8bf0408f6791f45988",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:03:03.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-home-display-casing-publication-9c3",
-        "head_sha": "3004fda99c12120aabd88d8bf0408f6791f45988",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121477:5236890668:2026-08-10T06:57:05Z:clawsweeper_auto_repair",
       "comment_id": "5236890668",
@@ -33022,6 +32956,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:103201:5230269166:2026-08-09T07:01:15Z:re_review",
+      "comment_id": "5230269166",
+      "comment_version_key": "5230269166:2026-08-09T07:01:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-5230269166",
+      "comment_created_at": "2026-08-09T07:01:15Z",
+      "comment_updated_at": "2026-08-09T07:01:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "wr-web",
+      "author_id": 55612496,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T12:58:46.005Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "64cdd20e6353c26285c63ffb773d3e24f5d2f9d5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103201:4933838406:2026-08-10T12:54:54Z:clawsweeper_needs_human",
+      "comment_id": "4933838406",
+      "comment_version_key": "4933838406:2026-08-10T12:54:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103201#issuecomment-4933838406",
+      "comment_created_at": "2026-07-10T09:14:56Z",
+      "comment_updated_at": "2026-08-10T12:54:54Z",
+      "comment_body_sha256": "424e180a7d206f5d8e1a5bbc6e0bf45695988047a2a4c774a228e98aa202a261",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persistent session-index updates from a full rewrite to a delta; the supplied exact-head SQLite proof and memory-core checks were still running. (sha=64cdd20e6353c26285c63ffb773d3e24f5d2f9d5)",
+      "expected_head_sha": "64cdd20e6353c26285c63ffb773d3e24f5d2f9d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T12:58:48.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/incremental-session-chunk-diff",
+        "head_sha": "64cdd20e6353c26285c63ffb773d3e24f5d2f9d5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
