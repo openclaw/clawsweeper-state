@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:14:34.034Z",
+  "updated_at": "2026-08-10T21:15:21.081Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121544:5243884159:2026-08-10T17:49:03Z:re_review",
-      "comment_id": "5243884159",
-      "comment_version_key": "5243884159:2026-08-10T17:49:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121544#issuecomment-5243884159",
-      "comment_created_at": "2026-08-10T17:49:03Z",
-      "comment_updated_at": "2026-08-10T17:49:03Z",
-      "comment_body_sha256": "0667f63a10e816f7dde46b35a28a2669523bf9407963d41afb2b69fb6b716cd8",
-      "source_delivery_id": "c72df180-94e3-11f1-97f4-be8b31337c15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121544,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:50:01.638Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/plugin-command-identity",
-        "head_sha": "eef8242aeaf013099f010eefb1b8d6a9ec1e6dc4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119786:5199962843:2026-08-10T17:49:11Z:clawsweeper_needs_human",
       "comment_id": "5199962843",
@@ -31422,6 +31374,39 @@
         "kind": "pull_request",
         "branch": "fix/metric-row-reset-text-truncation",
         "head_sha": "4728b2f3e06895f2fac14d542898296527acfc51",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:15:5238521306:2026-08-10T21:13:13Z:clawsweeper_needs_human",
+      "comment_id": "5238521306",
+      "comment_version_key": "5238521306:2026-08-10T21:13:13Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/15#issuecomment-5238521306",
+      "comment_created_at": "2026-08-10T09:43:36Z",
+      "comment_updated_at": "2026-08-10T21:13:13Z",
+      "comment_body_sha256": "00801f32d55fda99a89f4a04a9dd689a254ba0d45b13f57a31154534c1dcd3c8",
+      "repo": "openclaw/babelfish",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging replaces code executed by a GitHub Action that uploads security results; the pull-request scan passed, but the scheduled main-branch run will occur only after merge. (sha=ec159ebe9b43583be65f403a1891117a86f8d19a)",
+      "expected_head_sha": "ec159ebe9b43583be65f403a1891117a86f8d19a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T21:15:21.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-97c731b4de",
+        "head_sha": "ec159ebe9b43583be65f403a1891117a86f8d19a",
         "cluster_id": null,
         "job_path": null
       }
