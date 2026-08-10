@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T18:57:04.456Z",
+  "updated_at": "2026-08-10T18:58:08.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5015318434:2026-07-19T10:09:46Z:re_review",
-      "comment_id": "5015318434",
-      "comment_version_key": "5015318434:2026-07-19T10:09:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5015318434",
-      "comment_created_at": "2026-07-19T10:09:46Z",
-      "comment_updated_at": "2026-07-19T10:09:46Z",
-      "comment_body_sha256": "0eb8f923d4bf82fda9cf0c2fc54c588496c7670f429a438a2af5539b6ffb4b5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (0 behind, was 128 behind); pr head is now 04ee3de8d8. this resolves the behind-base condition; all pr-touched suites green locally (workspace 62, load-extra-bootstrap-files 19, internal-hooks 39, bootstrap-extra-files handler 3, attempt-stage-timing 7). please re-review against the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T14:00:36.413Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5016501966:2026-07-19T16:33:25Z:re_review",
       "comment_id": "5016501966",
@@ -31627,6 +31600,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119988:5209726313:2026-08-10T18:55:04Z:clawsweeper_auto_repair",
+      "comment_id": "5209726313",
+      "comment_version_key": "5209726313:2026-08-10T18:55:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119988#issuecomment-5209726313",
+      "comment_created_at": "2026-08-06T22:58:07Z",
+      "comment_updated_at": "2026-08-10T18:55:04Z",
+      "comment_body_sha256": "55e060f170c40470ef8ca7ffd3392f0c0362377969dc8ac23df35dd48e20df19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119988,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb3ea5484d377d1a3a5ac18a9937b594551388b1)",
+      "expected_head_sha": "bb3ea5484d377d1a3a5ac18a9937b594551388b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T18:58:08.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-attach-sigint-hang",
+        "head_sha": "bb3ea5484d377d1a3a5ac18a9937b594551388b1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
