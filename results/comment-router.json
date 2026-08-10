@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T23:51:43.505Z",
+  "updated_at": "2026-08-10T23:51:49.597Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121677:5244270299:2026-08-10T18:24:52Z:re_review",
-      "comment_id": "5244270299",
-      "comment_version_key": "5244270299:2026-08-10T18:24:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121677#issuecomment-5244270299",
-      "comment_created_at": "2026-08-10T18:24:52Z",
-      "comment_updated_at": "2026-08-10T18:24:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121677,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T18:47:15.716Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121677:5244382336:2026-08-10T18:33:54Z:re_review",
       "comment_id": "5244382336",
@@ -32023,6 +31996,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T23:51:43.505Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121668:5243979530:2026-08-10T23:49:58Z:clawsweeper_needs_human",
+      "comment_id": "5243979530",
+      "comment_version_key": "5243979530:2026-08-10T23:49:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121668#issuecomment-5243979530",
+      "comment_created_at": "2026-08-10T17:58:38Z",
+      "comment_updated_at": "2026-08-10T23:49:58Z",
+      "comment_body_sha256": "5386b5128bad502c4a492862c56c6b1cbfb15541f0439305087b922be8bfee1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve non-OpenClaw Codex hooks during relay opt-out (P1)** - When the guarded opt-out is eligible, this branch selects the disabled overlay, which sets features.hooks=false. The reviewed Codex-contract report...; Review finding: [P1] Preserve non-OpenClaw Codex hooks during relay opt-out — extensions/codex/src/app-server/run-attempt-resources.ts:263-264 - [medium] Full opt-out may disable... (sha=fcdfa8a831e799375618f43fd24104aad5b9deb0)",
+      "expected_head_sha": "fcdfa8a831e799375618f43fd24104aad5b9deb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T23:51:49.597Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-native-hook-relay-kill-switch",
+        "head_sha": "ba589538a3526e2f2167481e75a26be0aefa5a11",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
