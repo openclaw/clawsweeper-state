@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:49:31.056Z",
+  "updated_at": "2026-08-10T16:49:37.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-08-10T11:47:18Z:clawsweeper_needs_human",
-      "comment_id": "5159399788",
-      "comment_version_key": "5159399788:2026-08-10T11:47:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
-      "comment_created_at": "2026-08-02T16:58:31Z",
-      "comment_updated_at": "2026-08-10T11:47:18Z",
-      "comment_body_sha256": "16452dc23b67c56526291505348047f8b9e3b0deb0ec8f345e1eff245f735ea5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Route Activity OAuth through the private provider boundary (P1)** - Provider mode redirects only the Activity instance lookup here. The preceding token exchange and user lookup in activities/http.ts still call t...; Review finding: [P1] Route Activity OAuth through the private provider boundary — extensions/discord/src/activities/discord-api.ts:86-99 - [medium] Define Activity OAuth credentia... (sha=6cb9547c21a9bb2af1251bd69bfc2a119b026a7e)",
-      "expected_head_sha": "6cb9547c21a9bb2af1251bd69bfc2a119b026a7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T11:53:15.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-provider-endpoint-runtime",
-        "head_sha": "6cb9547c21a9bb2af1251bd69bfc2a119b026a7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118067:5159687126:2026-08-02T18:13:06Z:re_review",
       "comment_id": "5159687126",
@@ -31366,6 +31333,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T16:49:31.056Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1100:5242903084:2026-08-10T16:44:05Z:clawsweeper_needs_human",
+      "comment_id": "5242903084",
+      "comment_version_key": "5242903084:2026-08-10T16:44:05Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1100#issuecomment-5242903084",
+      "comment_created_at": "2026-08-10T16:16:10Z",
+      "comment_updated_at": "2026-08-10T16:44:05Z",
+      "comment_body_sha256": "d37a414cfd21bf8a8d3547a6ca02e349e303bd4f5f15094aca208187ab824144",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1100,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes compatibility semantics: signed operations that differ only by repository-letter case will be accepted and converge on the lowercase namespace rather than r... (sha=ff1c1c7432a6341b6117afba405caed39e2b9da5)",
+      "expected_head_sha": "ff1c1c7432a6341b6117afba405caed39e2b9da5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:49:37.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-mixed-case-publication-slugs",
+        "head_sha": "ff1c1c7432a6341b6117afba405caed39e2b9da5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
