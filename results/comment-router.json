@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:55:49.304Z",
+  "updated_at": "2026-08-10T10:56:19.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5231697463:2026-08-09T13:12:34Z:re_review",
-      "comment_id": "5231697463",
-      "comment_version_key": "5231697463:2026-08-09T13:12:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5231697463",
-      "comment_created_at": "2026-08-09T13:12:34Z",
-      "comment_updated_at": "2026-08-09T13:12:34Z",
-      "comment_body_sha256": "718ee2804ba719dbc896d1a06c391c2c0a46f2b423108782d303785dcc0cd523",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:53:13.846Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120932:5230657971:2026-08-10T06:51:33Z:clawsweeper_needs_human",
       "comment_id": "5230657971",
@@ -32357,6 +32330,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T10:55:49.304Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121507:5237938947:2026-08-10T10:55:27Z:clawsweeper_needs_human",
+      "comment_id": "5237938947",
+      "comment_version_key": "5237938947:2026-08-10T10:55:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121507#issuecomment-5237938947",
+      "comment_created_at": "2026-08-10T08:47:47Z",
+      "comment_updated_at": "2026-08-10T10:55:27Z",
+      "comment_body_sha256": "d3d02afd64c881874cbf4c262de996b782d91a66527d3f118c5cc24812c97b05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing persisted markers without delivery identities will no longer replay; they produce an interruption notice instead, so maintainers must explicitly accept the at-most-once versu... (sha=1224fe4a77383a016e6f5922e494767a7d29a501)",
+      "expected_head_sha": "1224fe4a77383a016e6f5922e494767a7d29a501",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T10:56:19.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-restart-duplicate",
+        "head_sha": "1224fe4a77383a016e6f5922e494767a7d29a501",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
