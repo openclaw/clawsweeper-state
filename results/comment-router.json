@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:47:36.905Z",
+  "updated_at": "2026-08-10T03:47:38.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5234276432:2026-08-09T22:56:20Z:re_review",
-      "comment_id": "5234276432",
-      "comment_version_key": "5234276432:2026-08-09T22:56:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5234276432",
-      "comment_created_at": "2026-08-09T22:56:20Z",
-      "comment_updated_at": "2026-08-09T22:56:20Z",
-      "comment_body_sha256": "0a97a82af1921d462ccc12992c5441ae7b5505140d06c986db4da6fbf8bb63d8",
-      "source_delivery_id": "8a45cac0-9445-11f1-89df-fdcccbf716a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:57:03.657Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "d0f30e415a234787039b6ce5f3c62466fc66aad6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120890:5230001535:2026-08-09T22:56:58Z:clawsweeper_needs_human",
       "comment_id": "5230001535",
@@ -32345,6 +32297,39 @@
         "kind": "pull_request",
         "branch": "feat/plugin-prompt-replacement",
         "head_sha": "4cebf30a69485ca6499ec4de68ff7d1fc00dd458",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121286:5234762052:2026-08-10T03:46:44Z:clawsweeper_needs_human",
+      "comment_id": "5234762052",
+      "comment_version_key": "5234762052:2026-08-10T03:46:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121286#issuecomment-5234762052",
+      "comment_created_at": "2026-08-10T00:50:43Z",
+      "comment_updated_at": "2026-08-10T03:46:44Z",
+      "comment_body_sha256": "ac036595000749a763508cd8d947490e5025b71e0a34f9ac04329760fad16830",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The opt-out adds a persisted destructive-action policy beyond the WebView bug fix; an operator who enables it can delete sidebar sessions without another prompt. (sha=aa8f93f0b76a140b30745a9d295128b536c82047)",
+      "expected_head_sha": "aa8f93f0b76a140b30745a9d295128b536c82047",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:47:38.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/session-destructive-confirms",
+        "head_sha": "aa8f93f0b76a140b30745a9d295128b536c82047",
         "cluster_id": null,
         "job_path": null
       }
