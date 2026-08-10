@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:16:00.090Z",
+  "updated_at": "2026-08-10T06:16:06.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120597:5235049030:2026-08-10T01:51:54Z:re_review",
-      "comment_id": "5235049030",
-      "comment_version_key": "5235049030:2026-08-10T01:51:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120597#issuecomment-5235049030",
-      "comment_created_at": "2026-08-10T01:51:54Z",
-      "comment_updated_at": "2026-08-10T01:51:54Z",
-      "comment_body_sha256": "2444e8b7af964e2b3443a2372f95540aa89c94dd6e45114679b3c7a2b68ce22d",
-      "source_delivery_id": "1137eaf0-945e-11f1-916c-8d55c7bdfbd9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120597,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T01:52:26.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-wal-virtiofs-120549",
-        "head_sha": "561534da1ecd9f4bc1e8f4f41a9694bc161bf3d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:44025:4354271798:2026-08-10T00:44:39Z:autoclose",
       "comment_id": "4354271798",
@@ -32282,6 +32234,39 @@
         "kind": "pull_request",
         "branch": "steipete/remove-dead-review-telemetry",
         "head_sha": "bc8086157ad850dfa6b3a40cd2ab44a8736f54ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1142:5236561813:2026-08-10T06:15:15Z:clawsweeper_needs_human",
+      "comment_id": "5236561813",
+      "comment_version_key": "5236561813:2026-08-10T06:15:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1142#issuecomment-5236561813",
+      "comment_created_at": "2026-08-10T06:15:15Z",
+      "comment_updated_at": "2026-08-10T06:15:15Z",
+      "comment_body_sha256": "4e097f3c8722555f78c1f8fdec72bd7969cbcbf00a89ec85ff80265f9e0a9973",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1142,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated third-party action controls Copilot environment setup; status-only CI does not show the actual updated action completing its installation path on the PR head. (sha=a736fad27d98e1bbe5bda04ac0ddaf608c175317)",
+      "expected_head_sha": "a736fad27d98e1bbe5bda04ac0ddaf608c175317",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:16:06.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github/gh-aw-actions/setup-cli-0.86.1",
+        "head_sha": "a736fad27d98e1bbe5bda04ac0ddaf608c175317",
         "cluster_id": null,
         "job_path": null
       }
