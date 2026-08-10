@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:53:52.947Z",
+  "updated_at": "2026-08-10T06:53:54.054Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-10T02:00:57Z:clawsweeper_needs_human",
-      "comment_id": "5134107795",
-      "comment_version_key": "5134107795:2026-08-10T02:00:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
-      "comment_created_at": "2026-07-30T17:24:48Z",
-      "comment_updated_at": "2026-08-10T02:00:57Z",
-      "comment_body_sha256": "884539602a05be18aca0d7a53c5c83d43edd877f68faed7b10a77f5c70c72598",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the legacy unsafe flag non-authorizing (P1)** - Current main documents this flag as a no-op, but this branch returns success for warn whenever it is supplied. Existing automation can therefore install warne...; Review finding: [P1] Keep the legacy unsafe flag non-authorizing — src/plugins/install-security-scan.runtime.ts:1008-1010 - [high] Legacy flag bypasses warning acknowledgement — s... (sha=89ea75b796a5a4b163da39a0bd81a5916944a344)",
-      "expected_head_sha": "89ea75b796a5a4b163da39a0bd81a5916944a344",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T02:43:34.223Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/before-install-coverage",
-        "head_sha": "f0d7e042c47732feebc885c2b73465687051e2bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118499:5162621157:2026-08-10T01:54:19Z:clawsweeper_needs_human",
       "comment_id": "5162621157",
@@ -32250,6 +32217,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T06:53:52.947Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120146:5212853171:2026-08-10T06:48:10Z:clawsweeper_needs_human",
+      "comment_id": "5212853171",
+      "comment_version_key": "5212853171:2026-08-10T06:48:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120146#issuecomment-5212853171",
+      "comment_created_at": "2026-08-07T05:35:50Z",
+      "comment_updated_at": "2026-08-10T06:48:10Z",
+      "comment_body_sha256": "f37da560b34101b275f0e555d77b7be040c5e3b361aee43320ce72fc723df0f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked fork artifact could not be retrieved here, so copied markers and mocked tests cannot prove the exact-head after-fix runtime... (sha=8da6a8621c87c4b50cb8d48f4a9e886390ef0e9d)",
+      "expected_head_sha": "8da6a8621c87c4b50cb8d48f4a9e886390ef0e9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:53:54.054Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-device-pair-revoke-silent-failure",
+        "head_sha": "8da6a8621c87c4b50cb8d48f4a9e886390ef0e9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
