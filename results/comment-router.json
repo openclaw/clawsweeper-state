@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T13:50:03.824Z",
+  "updated_at": "2026-08-10T13:50:13.919Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120710:5228349390:2026-08-10T08:47:23Z:clawsweeper_needs_human",
-      "comment_id": "5228349390",
-      "comment_version_key": "5228349390:2026-08-10T08:47:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120710#issuecomment-5228349390",
-      "comment_created_at": "2026-08-08T21:46:51Z",
-      "comment_updated_at": "2026-08-10T08:47:23Z",
-      "comment_body_sha256": "5257278e3c21ed41d6d52ab49dd7b18e3ebea32ec5903c1d4b0c0f5965c50a1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120710,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This alters a secret-bearing reusable CI workflow; exact-head required checks should complete before merge. (sha=b8ac6422d253d8c2601bebe7a2f714c64471659e)",
-      "expected_head_sha": "b8ac6422d253d8c2601bebe7a2f714c64471659e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T08:52:40.518Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-protocol-base-evidence-20260808",
-        "head_sha": "b8ac6422d253d8c2601bebe7a2f714c64471659e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119532:5188835487:2026-08-10T08:45:46Z:clawsweeper_auto_repair",
       "comment_id": "5188835487",
@@ -32607,6 +32574,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T13:50:03.824Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121599:5241178711:2026-08-10T13:49:25Z:clawsweeper_needs_human",
+      "comment_id": "5241178711",
+      "comment_version_key": "5241178711:2026-08-10T13:49:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121599#issuecomment-5241178711",
+      "comment_created_at": "2026-08-10T13:49:25Z",
+      "comment_updated_at": "2026-08-10T13:49:25Z",
+      "comment_body_sha256": "fb34f81eada14c6249213479c50f1334d2d8077d86bb27a1998c7caff81e0014",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121599,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Redact credentials in the package fallback (P1)** - The package snapshot is returned when host strengthening is absent or throws, but this classifier does not remove a generic credential field and the text redac...; Review finding: [P1] Redact credentials in the package fallback — packages/ai/src/utils/credential-redaction.ts:35-51 - [high] Package fallback leaves credential forms visible — p... (sha=e85e29778f423b81eff7e116b5b9645eb46390c1)",
+      "expected_head_sha": "e85e29778f423b81eff7e116b5b9645eb46390c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T13:50:13.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/native-video-security-diagnostics",
+        "head_sha": "e85e29778f423b81eff7e116b5b9645eb46390c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
