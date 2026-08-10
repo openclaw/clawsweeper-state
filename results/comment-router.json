@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T10:51:19.090Z",
+  "updated_at": "2026-08-10T10:51:24.922Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119204:5178740801:2026-08-10T06:44:16Z:clawsweeper_needs_human",
-      "comment_id": "5178740801",
-      "comment_version_key": "5178740801:2026-08-10T06:44:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119204#issuecomment-5178740801",
-      "comment_created_at": "2026-08-04T12:04:32Z",
-      "comment_updated_at": "2026-08-10T06:44:16Z",
-      "comment_body_sha256": "06c78bac5eebffa5d893d846c43783446d06b8249b4e1399c6806e2ec165f8f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119204,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as cleanly mergeable but behind current main; retain normal exact-head merge validation after the merge result is refreshed, without treating base drift as a... (sha=36b4fbd8e3b531d361ee62e236910e8b5ebbb467)",
-      "expected_head_sha": "36b4fbd8e3b531d361ee62e236910e8b5ebbb467",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T06:49:15.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-prs-merged-heads-beyond-cap",
-        "head_sha": "36b4fbd8e3b531d361ee62e236910e8b5ebbb467",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121192:5233517056:2026-08-10T06:45:30Z:clawsweeper_needs_human",
       "comment_id": "5233517056",
@@ -32071,6 +32038,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:82950:5239162278:2026-08-10T10:50:46Z:re_review",
+      "comment_id": "5239162278",
+      "comment_version_key": "5239162278:2026-08-10T10:50:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5239162278",
+      "comment_created_at": "2026-08-10T10:50:46Z",
+      "comment_updated_at": "2026-08-10T10:50:46Z",
+      "comment_body_sha256": "edec1c054a10074283223e6abc15eeacfe1545f01ea8c7e43c2775766449ed03",
+      "source_delivery_id": "57abb250-94a9-11f1-937d-eb5f40a9d362",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82950,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T10:51:22.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approval-redos-guard",
+        "head_sha": "43e642d041ab71b722ef5a3b8a0a03d11e56e8bb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
