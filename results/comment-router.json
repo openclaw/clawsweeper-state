@@ -1,58 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:46:09.754Z",
+  "updated_at": "2026-08-10T22:46:12.334Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:121422",
-      "comment_id": "repair-loop-label-sweep:autofix:121422",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121422",
-      "comment_created_at": "2026-08-10T17:56:40.068Z",
-      "comment_updated_at": "2026-08-10T17:56:40.068Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121422,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "autofix enabled; PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:59:53.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-permissions-pr-open-20260809-p0a",
-        "head_sha": "11dbae3e17c049b64cdfedeba56af89fc73923a2",
-        "cluster_id": "automerge-openclaw-openclaw-121422",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119344:5235889720:2026-08-10T04:31:25Z:re_review",
       "comment_id": "5235889720",
@@ -32052,6 +32000,39 @@
         "kind": "pull_request",
         "branch": "fix/oauth-refresh-cross-process-lock",
         "head_sha": "031ca975bbedb93ee834ec927635a44b46adf88f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:383:5246872647:2026-08-10T22:45:30Z:clawsweeper_needs_human",
+      "comment_id": "5246872647",
+      "comment_version_key": "5246872647:2026-08-10T22:45:30Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/383#issuecomment-5246872647",
+      "comment_created_at": "2026-08-10T22:45:30Z",
+      "comment_updated_at": "2026-08-10T22:45:30Z",
+      "comment_body_sha256": "0d6a0db53901a09575f8818a626f66a8d686728b5e0fe8541a2e97c950875c23",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 383,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - An explicitly long caller timeout can occupy the serial AX worker lane for that target process beyond the former 20-second cap; this is intentional caller-controlled behavior but may... (sha=82e34b58ba20e448bdbe9d5605f085cb47b98990)",
+      "expected_head_sha": "82e34b58ba20e448bdbe9d5605f085cb47b98990",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T22:46:12.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ax-timeout-honesty",
+        "head_sha": "82e34b58ba20e448bdbe9d5605f085cb47b98990",
         "cluster_id": null,
         "job_path": null
       }
