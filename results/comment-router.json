@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T23:55:21.347Z",
+  "updated_at": "2026-08-10T23:55:29.754Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121677:5244613387:2026-08-10T18:56:16Z:re_review",
-      "comment_id": "5244613387",
-      "comment_version_key": "5244613387:2026-08-10T18:56:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121677#issuecomment-5244613387",
-      "comment_created_at": "2026-08-10T18:56:16Z",
-      "comment_updated_at": "2026-08-10T18:56:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "2b2ee690-94ed-11f1-81fb-d0dd10a16f6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121677,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T18:57:02.111Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-concurrency-lifecycle",
-        "head_sha": "9db1ba33f54bc4896d055e10ba956f3428fb1aac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119988:5209726313:2026-08-10T18:55:04Z:clawsweeper_auto_repair",
       "comment_id": "5209726313",
@@ -31980,6 +31932,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T23:55:21.347Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121766:5247383248:2026-08-10T23:54:49Z:clawsweeper_needs_human",
+      "comment_id": "5247383248",
+      "comment_version_key": "5247383248:2026-08-10T23:54:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121766#issuecomment-5247383248",
+      "comment_created_at": "2026-08-10T23:54:49Z",
+      "comment_updated_at": "2026-08-10T23:54:49Z",
+      "comment_body_sha256": "2621f8678b8b3b014dbf9bdb34abd8a1c13ed42bce737313a5320399572eed5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 45 net production lines to restart recovery; exact-head checks should validate the timer lifecycle alongside the focused regression before landing. (sha=25551147052cf7214e5cf3c35e951edbcb8254e0)",
+      "expected_head_sha": "25551147052cf7214e5cf3c35e951edbcb8254e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T23:55:29.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-subagent-restore-latch-g4b2",
+        "head_sha": "25551147052cf7214e5cf3c35e951edbcb8254e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
