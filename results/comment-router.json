@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:51:03.437Z",
+  "updated_at": "2026-08-10T14:51:16.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1096:5238680485:2026-08-10T09:59:36Z:re_review",
-      "comment_id": "5238680485",
-      "comment_version_key": "5238680485:2026-08-10T09:59:36Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1096#issuecomment-5238680485",
-      "comment_created_at": "2026-08-10T09:59:36Z",
-      "comment_updated_at": "2026-08-10T09:59:36Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "source_delivery_id": "32903380-94a2-11f1-977a-e4f0121388d1",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1096,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:00:11.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-114-doc-drift-checks",
-        "head_sha": "6435b477da1063893e48b00a635a14abc847c596",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119993:5209958691:2026-08-10T09:59:50Z:clawsweeper_needs_human",
       "comment_id": "5209958691",
@@ -31350,6 +31302,39 @@
         "kind": "pull_request",
         "branch": "steipete/multimodal-scope-regression",
         "head_sha": "eecbc9f7fbb4c1e58051a5d93dcd1a15869fd068",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121587:5240566486:2026-08-10T14:50:19Z:clawsweeper_needs_human",
+      "comment_id": "5240566486",
+      "comment_version_key": "5240566486:2026-08-10T14:50:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121587#issuecomment-5240566486",
+      "comment_created_at": "2026-08-10T12:55:09Z",
+      "comment_updated_at": "2026-08-10T14:50:19Z",
+      "comment_body_sha256": "3c76c91e68f7a088552192e6cb11c4442cd32a58b2747077887b035171c0657e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds a second state-specific transition (+73 production lines net); its shared transaction helper limits drift, but promotion and dispatch behavior must remain covered toge... (sha=b348ccf5499f582fc1673f1235e74c5c061312dc)",
+      "expected_head_sha": "b348ccf5499f582fc1673f1235e74c5c061312dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:51:16.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-delivery-attempt-promotion-20260810",
+        "head_sha": "b348ccf5499f582fc1673f1235e74c5c061312dc",
         "cluster_id": null,
         "job_path": null
       }
