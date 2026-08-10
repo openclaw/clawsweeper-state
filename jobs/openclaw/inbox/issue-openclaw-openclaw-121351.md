@@ -67,18 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/121351 on current main. In src/shared/text/formatted-reasoning-message.ts, preserve the substantive body exactly after removing a Reasoning:/Thinking preamble; do not alter reasoning-tag semantics or duplicate the repair in individual callers. Add colocated regression coverage for a preamble followed by an indented Markdown code-block line, prove it fails before the repair, then run focused owner and outbound validation. Do not add configuration, compatibility paths, or CHANGELOG.md edits; include the visible formatting impact in the PR body.
+Repair the shared formatted-reasoning cleanup so that removal of a recognized Reasoning/Thinking preamble preserves the selected substantive body exactly, including leading Markdown indentation. Remove the final body trim rather than compensating in callers. Extend the existing `message tool reasoning tag sanitization` table with the reported indented code-body input and expected four leading spaces; confirm it fails before the repair. Inspect sessions-send and message-action alias callers for unchanged use of the shared helper. Do not add configuration, compatibility fallbacks, or a test-only production seam, and do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/shared/text/formatted-reasoning-message.ts
-- src/shared/text/formatted-reasoning-message.test.ts
-- src/infra/outbound/message-action-runner.send-validation.test.ts
+- src/agents/tools/message-tool.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/shared/text/formatted-reasoning-message.test.ts
-- node scripts/run-vitest.mjs src/infra/outbound/message-action-runner.send-validation.test.ts
+- node scripts/run-vitest.mjs src/agents/tools/message-tool.test.ts
+- node scripts/run-vitest.mjs src/agents/openclaw-tools.sessions.test.ts src/infra/outbound/message-action-runner.send-validation.test.ts
 
 ## Operator Prompt
 
