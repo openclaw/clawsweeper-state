@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:57:58.666Z",
+  "updated_at": "2026-08-10T16:58:22.300Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111205:5138605190:2026-07-31T02:36:50Z:re_review",
-      "comment_id": "5138605190",
-      "comment_version_key": "5138605190:2026-07-31T02:36:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111205#issuecomment-5138605190",
-      "comment_created_at": "2026-07-31T02:36:50Z",
-      "comment_updated_at": "2026-07-31T02:36:50Z",
-      "comment_body_sha256": "81ed88d9bb60e1de3eaa20c6478fd3c792c59a7f5a4a2832830f570656402961",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111205,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T12:02:28.328Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111205:5138792082:2026-07-31T03:05:36Z:re_review",
       "comment_id": "5138792082",
@@ -31447,6 +31420,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121648:5242663566:2026-08-10T16:57:31Z:clawsweeper_needs_human",
+      "comment_id": "5242663566",
+      "comment_version_key": "5242663566:2026-08-10T16:57:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121648#issuecomment-5242663566",
+      "comment_created_at": "2026-08-10T15:54:52Z",
+      "comment_updated_at": "2026-08-10T16:57:31Z",
+      "comment_body_sha256": "45353aad355df94f0ae3bd194b67fef80bcb73818be919dbeb7f09a7dbf51b24",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes CI test selection, and the supplied exact-head rollup is not fully green; confirm the remaining failures are resolved or independently attributable before merge. (sha=55f8c887787d6d8af65d14e0f40fa20d969f9dd9)",
+      "expected_head_sha": "55f8c887787d6d8af65d14e0f40fa20d969f9dd9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:58:22.300Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-release-ci-types-lint",
+        "head_sha": "55f8c887787d6d8af65d14e0f40fa20d969f9dd9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
