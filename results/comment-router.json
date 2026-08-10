@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:14:55.949Z",
+  "updated_at": "2026-08-10T19:15:07.720Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113899:5241854231:2026-08-10T14:45:36Z:re_review",
-      "comment_id": "5241854231",
-      "comment_version_key": "5241854231:2026-08-10T14:45:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113899#issuecomment-5241854231",
-      "comment_created_at": "2026-08-10T14:45:36Z",
-      "comment_updated_at": "2026-08-10T14:45:36Z",
-      "comment_body_sha256": "27250f8ca6035b244053cd1fca614283ce41eea9fbe914e8b7fdba6cdcb0d31c",
-      "source_delivery_id": "2643fad0-94ca-11f1-86c9-71dfc17af077",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113899,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:46:19.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-autoqa-qa-channel-dispatch-ack-cursor-81d9",
-        "head_sha": "514439e5aa2b6cbabb07a8b778aeca4f613d4da8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116016:5241869199:2026-08-10T14:46:49Z:re_review",
       "comment_id": "5241869199",
@@ -31871,6 +31823,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1109:5244805041:2026-08-10T19:14:20Z:clawsweeper_needs_human",
+      "comment_id": "5244805041",
+      "comment_version_key": "5244805041:2026-08-10T19:14:20Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1109#issuecomment-5244805041",
+      "comment_created_at": "2026-08-10T19:14:20Z",
+      "comment_updated_at": "2026-08-10T19:14:20Z",
+      "comment_body_sha256": "800c472462fc78cc8588e135423be46064fef2c4856cab9dea647975c38dd416",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1109,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows a before/after test run, but the regression test substitutes a fake gh binary, so it does not prove the changed finalizer beh... (sha=10d0801364df699b697fad5cea1ba59a52b91cae)",
+      "expected_head_sha": "10d0801364df699b697fad5cea1ba59a52b91cae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:15:07.720Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unify-status-check-rollup",
+        "head_sha": "10d0801364df699b697fad5cea1ba59a52b91cae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
