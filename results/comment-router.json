@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T14:59:49.710Z",
+  "updated_at": "2026-08-10T14:59:55.654Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5239162278:2026-08-10T10:50:46Z:re_review",
-      "comment_id": "5239162278",
-      "comment_version_key": "5239162278:2026-08-10T10:50:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5239162278",
-      "comment_created_at": "2026-08-10T10:50:46Z",
-      "comment_updated_at": "2026-08-10T10:50:46Z",
-      "comment_body_sha256": "edec1c054a10074283223e6abc15eeacfe1545f01ea8c7e43c2775766449ed03",
-      "source_delivery_id": "57abb250-94a9-11f1-937d-eb5f40a9d362",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T10:51:22.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "43e642d041ab71b722ef5a3b8a0a03d11e56e8bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112754:5239162569:2026-08-10T10:50:47Z:re_review",
       "comment_id": "5239162569",
@@ -31208,6 +31160,39 @@
         "kind": "pull_request",
         "branch": "fix/121543-models-json-secretref",
         "head_sha": "94f23ccfee25617682f09faa8aaac474dd50bbbb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111205:5014301621:2026-08-10T14:54:39Z:clawsweeper_needs_human",
+      "comment_id": "5014301621",
+      "comment_version_key": "5014301621:2026-08-10T14:54:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111205#issuecomment-5014301621",
+      "comment_created_at": "2026-07-19T04:33:07Z",
+      "comment_updated_at": "2026-08-10T14:54:39Z",
+      "comment_body_sha256": "a2211fac0852f347f866057e90c7ba2d7f5fa346b5439b711b9412049173092d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Assert the captured hook overlay in the live proof (P2)** - This test claims to prove the resolved overlay, but its assertions only verify runtime selection and reply tokens. It never parses thread/start or thre...; Review finding: [P2] Assert the captured hook overlay in the live proof — src/gateway/gateway-codex-harness.native-hook-relay-proof.live.test.ts:622 - [medium] Verify the pinned C... (sha=6fab40a2fc2a8ded01cdb4f1a73b65ba1229c40f)",
+      "expected_head_sha": "6fab40a2fc2a8ded01cdb4f1a73b65ba1229c40f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T14:59:55.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-native-hook-relay-config",
+        "head_sha": "6fab40a2fc2a8ded01cdb4f1a73b65ba1229c40f",
         "cluster_id": null,
         "job_path": null
       }
