@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T21:20:44.866Z",
+  "updated_at": "2026-08-10T21:21:42.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121554:5239165487:2026-08-10T17:48:53Z:clawsweeper_needs_human",
-      "comment_id": "5239165487",
-      "comment_version_key": "5239165487:2026-08-10T17:48:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121554#issuecomment-5239165487",
-      "comment_created_at": "2026-08-10T10:51:08Z",
-      "comment_updated_at": "2026-08-10T17:48:53Z",
-      "comment_body_sha256": "d0eb42e03a19b14ccea814e5bc6ce2464e4fa7eb604d60e858e98aff87e2da13",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Cancel the remote mutation before reporting an abort (P1)** - raceWithAbort rejects OpenClaw locally while executeCommand continues remotely. Because filesystem writes, renames, and removals pass their signal th...; Review finding: [P1] Cancel the remote mutation before reporting an abort — extensions/daytona/src/backend.ts:529-538 - [P2] Restart a stopped sandbox before every operation — ext... (sha=dcd32fed0fc7ab996daba597e988b6acad13ae5b)",
-      "expected_head_sha": "dcd32fed0fc7ab996daba597e988b6acad13ae5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T17:50:41.921Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/daytona-sandbox-backend",
-        "head_sha": "dcd32fed0fc7ab996daba597e988b6acad13ae5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121554:5242172992:2026-08-10T15:11:46Z:re_review",
       "comment_id": "5242172992",
@@ -31460,6 +31427,54 @@
         "kind": "pull_request",
         "branch": "codex/csw-122-operator-contracts",
         "head_sha": "fe71c874b0ff17d8b11b48e99936af0ddcc655ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1113:5246181605:2026-08-10T21:21:07Z:re_review",
+      "comment_id": "5246181605",
+      "comment_version_key": "5246181605:2026-08-10T21:21:07Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1113#issuecomment-5246181605",
+      "comment_created_at": "2026-08-10T21:21:07Z",
+      "comment_updated_at": "2026-08-10T21:21:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "676ba5d0-9501-11f1-993e-e335bae36a29",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1113,
+      "author": "brokemac79",
+      "author_id": 255583030,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T21:21:40.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-125-telemetry-overview",
+        "head_sha": "6f3571adf1fe028483f94e934db067419286f66d",
         "cluster_id": null,
         "job_path": null
       },
