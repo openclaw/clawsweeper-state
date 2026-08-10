@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T06:51:19.528Z",
+  "updated_at": "2026-08-10T06:51:23.796Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119527:5232523193:2026-08-09T16:23:16Z:re_review",
-      "comment_id": "5232523193",
-      "comment_version_key": "5232523193:2026-08-09T16:23:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119527#issuecomment-5232523193",
-      "comment_created_at": "2026-08-09T16:23:16Z",
-      "comment_updated_at": "2026-08-09T16:23:16Z",
-      "comment_body_sha256": "9776fb85183da5a331a48639f3f3ee6114c956aa40c04f934e5c664fb152baaf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119527,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T01:55:29.024Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120942:5230202425:2026-08-10T01:55:21Z:clawsweeper_needs_human",
       "comment_id": "5230202425",
@@ -32623,6 +32596,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T06:51:19.528Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115048:5101444793:2026-08-10T06:48:06Z:clawsweeper_needs_human",
+      "comment_id": "5101444793",
+      "comment_version_key": "5101444793:2026-08-10T06:48:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115048#issuecomment-5101444793",
+      "comment_created_at": "2026-07-28T07:52:52Z",
+      "comment_updated_at": "2026-08-10T06:48:06Z",
+      "comment_body_sha256": "c705e79bdc3464be102d1b0bd54a26e610dc3876041fcea9ab44f6ba85e8cfdc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115048,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main’s Codex app-server prompt builder was refactored after this branch head and still snapshots history independently, so rebase must verify the intended allocation benefit a... (sha=bfdf7c3cd7f8c54b0d62c9f6289cc3cc3969e232)",
+      "expected_head_sha": "bfdf7c3cd7f8c54b0d62c9f6289cc3cc3969e232",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T06:51:23.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "josh/codex-history-copy-on-write",
+        "head_sha": "bfdf7c3cd7f8c54b0d62c9f6289cc3cc3969e232",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
