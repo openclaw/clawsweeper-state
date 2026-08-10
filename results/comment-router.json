@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T09:06:02.110Z",
+  "updated_at": "2026-08-10T09:06:08.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120156:5213484613:2026-08-10T04:56:53Z:clawsweeper_needs_human",
-      "comment_id": "5213484613",
-      "comment_version_key": "5213484613:2026-08-10T04:56:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120156#issuecomment-5213484613",
-      "comment_created_at": "2026-08-07T06:40:56Z",
-      "comment_updated_at": "2026-08-10T04:56:53Z",
-      "comment_body_sha256": "54b3f3cf7eadd0d849a132e24a5443008bdde78575c712cb6dd464455ab659ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120156,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so its otherwise strong exact-head CLI proof does not demonstrate the final merge result; refresh scalar, batch, patch, and include-file proof after... (sha=538724c8485815272549e94eec515bbbfa8f9166)",
-      "expected_head_sha": "538724c8485815272549e94eec515bbbfa8f9166",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T04:57:53.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-config-set-infinity-nan",
-        "head_sha": "538724c8485815272549e94eec515bbbfa8f9166",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-10T04:57:01Z:clawsweeper_needs_human",
       "comment_id": "5230661991",
@@ -31832,6 +31799,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:220:5237650959:2026-08-10T09:05:28Z:clawsweeper_needs_human",
+      "comment_id": "5237650959",
+      "comment_version_key": "5237650959:2026-08-10T09:05:28Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/220#issuecomment-5237650959",
+      "comment_created_at": "2026-08-10T08:17:33Z",
+      "comment_updated_at": "2026-08-10T09:05:28Z",
+      "comment_body_sha256": "2c514df79a6959a2508e48e9dbc150888e99ee922df66ca9bc77fc51af4e987d",
+      "repo": "openclaw/imsg",
+      "issue_number": 220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject non-regular event paths after opening (P2)** - The lstat capability check occurs before this asynchronous open. If the path is replaced with a FIFO in between, open blocks because it lacks O_NONBLOCK, and...; Review finding: [P2] Reject non-regular event paths after opening — Sources/IMsgCore/IMsgEventTailer.swift:219-229 - [medium] Path replacement can block the event tailer — Sources... (sha=73f8ebee1e0f52937b8990106f99aa0061468b98)",
+      "expected_head_sha": "73f8ebee1e0f52937b8990106f99aa0061468b98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T09:06:08.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rpc-bridge-events",
+        "head_sha": "73f8ebee1e0f52937b8990106f99aa0061468b98",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
