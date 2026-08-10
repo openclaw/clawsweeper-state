@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:24:33.243Z",
+  "updated_at": "2026-08-10T19:27:06.708Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120668:5241881624:2026-08-10T14:47:44Z:re_review",
-      "comment_id": "5241881624",
-      "comment_version_key": "5241881624:2026-08-10T14:47:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120668#issuecomment-5241881624",
-      "comment_created_at": "2026-08-10T14:47:44Z",
-      "comment_updated_at": "2026-08-10T14:47:44Z",
-      "comment_body_sha256": "eb745d8718a36915547fc15aeb67f60276efeef22ed6c930cc85edfd44e5a570",
-      "source_delivery_id": "72ae3480-94ca-11f1-8d03-b5ae3391afe2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120668,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:48:31.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/whatsapp-deferred-ingress-ownership",
-        "head_sha": "567017c52b22610d2a1f2940ece43b1740896f44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121526:5238042650:2026-08-10T14:47:29Z:clawsweeper_needs_human",
       "comment_id": "5238042650",
@@ -31856,6 +31808,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:225:5244951938:2026-08-10T19:26:25Z:clawsweeper_needs_human",
+      "comment_id": "5244951938",
+      "comment_version_key": "5244951938:2026-08-10T19:26:25Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/225#issuecomment-5244951938",
+      "comment_created_at": "2026-08-10T19:26:25Z",
+      "comment_updated_at": "2026-08-10T19:26:25Z",
+      "comment_body_sha256": "dac74d018ae7a0d2c95c0e25df3313e2967e452c2964771f065308e2bc0d491e",
+      "repo": "openclaw/imsg",
+      "issue_number": 225,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Wait for independent approval of the pinned workflow (P1)** - The PR body says this revision is still awaiting its required upstream code-owner approval. This changed caller passes signing and publishing secrets...; Review finding: [P1] Wait for independent approval of the pinned workflow — .github/workflows/release.yml:22 - [high] Unapproved privileged workflow revision — .github/workflows/r... (sha=0df39f64a746a4ffd19b1c1294355448242f18c3)",
+      "expected_head_sha": "0df39f64a746a4ffd19b1c1294355448242f18c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:27:06.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-workflow-hotfix-pin",
+        "head_sha": "0df39f64a746a4ffd19b1c1294355448242f18c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
