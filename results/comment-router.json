@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:19:59.562Z",
+  "updated_at": "2026-08-10T02:33:29.343Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110261:5008811575:2026-08-09T21:49:26Z:clawsweeper_needs_human",
-      "comment_id": "5008811575",
-      "comment_version_key": "5008811575:2026-08-09T21:49:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110261#issuecomment-5008811575",
-      "comment_created_at": "2026-07-18T00:30:45Z",
-      "comment_updated_at": "2026-08-09T21:49:26Z",
-      "comment_body_sha256": "e2d6690394e3a1aaf874b064437850731d99fc39c5bdbc30b634a739e22a7730",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110261,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would make the Claude ACP live gate fail until the observed rerouted-turn runtime error is repaired. (sha=5d60477ed0addc8ef75e41463fa31d6dc31e9b62)",
-      "expected_head_sha": "5d60477ed0addc8ef75e41463fa31d6dc31e9b62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T21:52:05.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/acp-bind-strict-claude",
-        "head_sha": "5d60477ed0addc8ef75e41463fa31d6dc31e9b62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:52:5099747945:2026-08-09T21:51:15Z:clawsweeper_auto_repair",
       "comment_id": "5099747945",
@@ -32434,6 +32401,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2407:5235254583:2026-08-10T02:32:50Z:re_review",
+      "comment_id": "5235254583",
+      "comment_version_key": "5235254583:2026-08-10T02:32:50Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2407#issuecomment-5235254583",
+      "comment_created_at": "2026-08-10T02:32:50Z",
+      "comment_updated_at": "2026-08-10T02:32:50Z",
+      "comment_body_sha256": "ee85e0a15bd125b98ff7d4a96f206e77e9ccf7ddffabb7ea6c36d4eae89db91f",
+      "source_delivery_id": "c8dd3750-9463-11f1-9890-f444c940b9e8",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2407,
+      "author": "chenow9",
+      "author_id": 302014081,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T02:33:27.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/grok-local-token-cost",
+        "head_sha": "1fb1af6250e52218a48752aa9b0f7aed543b775d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
