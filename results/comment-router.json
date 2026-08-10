@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T12:00:58.100Z",
+  "updated_at": "2026-08-10T12:01:00.785Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121493:5237358591:2026-08-10T07:51:32Z:clawsweeper_auto_repair",
-      "comment_id": "5237358591",
-      "comment_version_key": "5237358591:2026-08-10T07:51:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121493#issuecomment-5237358591",
-      "comment_created_at": "2026-08-10T07:51:32Z",
-      "comment_updated_at": "2026-08-10T07:51:32Z",
-      "comment_body_sha256": "70542b7808e3e68e754d34b59530a73559ae28f864ca4080e789fb9d93f250f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0aa3e13ac6cc9aab1d13014bc1078e7aa3a5cac7)",
-      "expected_head_sha": "0aa3e13ac6cc9aab1d13014bc1078e7aa3a5cac7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T07:52:14.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t3code/skill-workshop-continuous-improve",
-        "head_sha": "0aa3e13ac6cc9aab1d13014bc1078e7aa3a5cac7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119988:5237061284:2026-08-10T07:17:28Z:re_review",
       "comment_id": "5237061284",
@@ -32425,6 +32392,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T12:00:58.100Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121575:5239748232:2026-08-10T12:00:13Z:clawsweeper_needs_human",
+      "comment_id": "5239748232",
+      "comment_version_key": "5239748232:2026-08-10T12:00:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121575#issuecomment-5239748232",
+      "comment_created_at": "2026-08-10T11:53:12Z",
+      "comment_updated_at": "2026-08-10T12:00:13Z",
+      "comment_body_sha256": "fe5bf2aa4191c0bd587e25d3bc29184f25eef1e00f40d878d9512f32095b546a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121575,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve arbitrary environment-backed catalog authentication (P1)** - The planner intentionally retains CUSTOM_API_KEY when it exists in its environment, but this branch only recognizes known markers and reclass...; Review finding: [P1] Preserve arbitrary environment-backed catalog authentication — src/agents/sessions/model-registry.ts:591-593 - [medium] Environment references are mistaken fo... (sha=d304734d5b38641dc45933d96c8a0d74dd026557)",
+      "expected_head_sha": "d304734d5b38641dc45933d96c8a0d74dd026557",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T12:01:00.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-catalog-canonical-auth",
+        "head_sha": "d304734d5b38641dc45933d96c8a0d74dd026557",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
