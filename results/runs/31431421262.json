@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-113326",
+  "mode": "autonomous",
+  "run_id": "31431421262",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31431421262",
+  "head_sha": "19a744924f5e0acbc051c324e678c6981fc3940a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-113326.md",
+  "published_at": "2026-08-10T22:13:29.414Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/113326",
+  "canonical_pr": null,
+  "summary": "Confirmed source-level bug on main: models auth login rejects all non-TTY calls before resolving the explicitly selected device-code method. A narrow credited fix PR is appropriate, but this worker cannot edit, install dependencies, run tests, or clone required sibling ../codex because the checkout filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#113326",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Repair is narrow and source-reproducible, but implementation and final Codex contract inspection require a writable executor checkout."
+    },
+    {
+      "target": "#100067",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related auth area but a distinct migration/product-decision cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Prepare the bounded PR once a writable executor checkout is available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-113326",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#113326",
+      "candidate_fix": null,
+      "reason": "Issue implementation job permits one labeled ClawSweeper fix PR; this worker cannot create the branch in a read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
