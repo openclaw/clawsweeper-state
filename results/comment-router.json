@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:59:21.655Z",
+  "updated_at": "2026-08-10T04:59:27.786Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5228483866:2026-08-08T22:25:03Z:re_review",
-      "comment_id": "5228483866",
-      "comment_version_key": "5228483866:2026-08-08T22:25:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5228483866",
-      "comment_created_at": "2026-08-08T22:25:03Z",
-      "comment_updated_at": "2026-08-08T22:25:03Z",
-      "comment_body_sha256": "d02605df09cc356f1cdebd7af638ec0bde8c14e3addb1db1cf486aca7de59690",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T00:52:21.961Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120190:5228565586:2026-08-08T22:47:50Z:re_review",
       "comment_id": "5228565586",
@@ -32196,6 +32169,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T04:59:21.655Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119847:5201222556:2026-08-10T04:58:43Z:clawsweeper_needs_human",
+      "comment_id": "5201222556",
+      "comment_version_key": "5201222556:2026-08-10T04:58:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119847#issuecomment-5201222556",
+      "comment_created_at": "2026-08-06T06:36:00Z",
+      "comment_updated_at": "2026-08-10T04:58:43Z",
+      "comment_body_sha256": "c5603f93f8813bb95ed16a994e092e7eaace9ebb4869e2bcb0665c296e7d978d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119847,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Surface retired legacy attachment cleanup to operators (P2)** - This backfill removes the only cleanup owner for recognized legacy receipts, so their potentially private files can remain indefinitely with no dia...; Review finding: [P2] Surface retired legacy attachment cleanup to operators — src/state/openclaw-state-db-legacy-backfills.ts:167-171 - [medium] Legacy private attachments can rem... (sha=1de92de9259ebd1c60198eb147fb7d1da8a729fe)",
+      "expected_head_sha": "1de92de9259ebd1c60198eb147fb7d1da8a729fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T04:59:27.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-929",
+        "head_sha": "1de92de9259ebd1c60198eb147fb7d1da8a729fe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
