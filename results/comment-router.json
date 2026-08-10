@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T16:49:38.205Z",
+  "updated_at": "2026-08-10T16:49:47.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118067:5192329844:2026-08-05T13:27:12Z:re_review",
-      "comment_id": "5192329844",
-      "comment_version_key": "5192329844:2026-08-05T13:27:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5192329844",
-      "comment_created_at": "2026-08-05T13:27:12Z",
-      "comment_updated_at": "2026-08-05T13:27:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T11:53:15.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118067:5192634044:2026-08-05T13:52:28Z:re_review",
       "comment_id": "5192634044",
@@ -31372,6 +31345,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T16:49:38.205Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-08-10T16:46:02Z:clawsweeper_needs_human",
+      "comment_id": "5241982342",
+      "comment_version_key": "5241982342:2026-08-10T16:46:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121622#issuecomment-5241982342",
+      "comment_created_at": "2026-08-10T14:55:55Z",
+      "comment_updated_at": "2026-08-10T16:46:02Z",
+      "comment_body_sha256": "d24dd8f2a8dd68f78e779d1ee0fd764674fb05b0cb6432d9832ff2cd6faa333e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Scope reauth preferences to the active profile (P1)** - Use AppDefaults.standard for these markers. Named profiles deliberately use separate defaults suites, and the existing profile invariant test requires AppP...; Review finding: [P1] Scope reauth preferences to the active profile — apps/macos/Sources/OpenClaw/GatewayDiscoveryPreferences.swift:10-30 - [medium] Global reauthentication marker... (sha=65b17f66305cbd36dd441dfdc0c30fb54b088b8c)",
+      "expected_head_sha": "65b17f66305cbd36dd441dfdc0c30fb54b088b8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T16:49:47.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-gateway-credential-boundary",
+        "head_sha": "65b17f66305cbd36dd441dfdc0c30fb54b088b8c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
