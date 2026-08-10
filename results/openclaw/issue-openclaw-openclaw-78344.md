@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-78344"
-mode: "autonomous"
-run_id: "31346083395"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31346083395"
+mode: "plan"
+run_id: "31346792916"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31346792916"
 head_sha: "13f8ffdea32ad5d0940f490cf57e291414b9a26f"
 workflow_conclusion: "success"
-result_status: "blocked"
-published_at: "2026-08-10T01:49:40.628Z"
-canonical: "https://github.com/openclaw/openclaw/issues/78344"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/78344"
+result_status: "planned"
+published_at: "2026-08-10T01:54:04.366Z"
+canonical: "#78344"
+canonical_issue: "#78344"
 canonical_pr: null
 actions_total: 8
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31346083395](https://github.com/openclaw/clawsweeper/actions/runs/31346083395)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31346792916](https://github.com/openclaw/clawsweeper/actions/runs/31346792916)
 
 Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/78344
+Canonical: #78344
 
 ## Summary
 
-Current main 0b663e7a62efc3d17eda81920b236b8921bd04bb still omits internal session effects from restart-recovery dispatch. The narrow source fix and regression are planned; this read-only checkout cannot apply them and lacks tsx for focused validation.
+Current main still dispatches the restart-recovery continuation with internal provenance but without internal session effects. Gateway preflight therefore defaults it to visible effects. Plan a narrow new fix PR for #78344; related and closed context items remain unchanged.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Current main 0b663e7a62efc3d17eda81920b236b8921bd04bb still omits internal sessi
 | Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Current main 0b663e7a62efc3d17eda81920b236b8921bd04bb still omits internal sessi
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests [check:changed] src/agents/main-session-restart-dispatch.ts: core production [check:changed] src/agents/main-session-restart-recovery.test.ts: core test [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node --import tsx scripts/check-env-var-count.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node --import tsx scripts/check-duplicates.mts --coverage [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/agents/main-session-restart-dispatch.ts src/agents/main-session-restart-recovery.test.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] deprecated API usage $ node --import tsx scripts/check-deprecated-api-usage.mts [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.8.0 in package mirror /tmp/clawsweeper-target-user-0w4HDk/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 322ms ok conflict markers 412ms ok environment variable count ratchet 13.98s ok max-lines suppression ratchet 301ms ok changelog attributions 295ms ok doctor deprecation registry 305ms ok guarded extension wildcard re-exports 300ms ok plugin-sdk wildcard re-exports 320ms ok duplicate scan target coverage 341ms ok dependency pin guard 320ms ok format changed files 30.30s ok Plugin SDK API contract manifest 5.07s ok deprecated API usage 942ms ok plugin boundaries 514ms ok package patch guard 346ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) OPENCLAW_* count 507/507 max-lines ratchet OK: 980 grandfathered suppressions. [doctor-deprecation-registry] OK as of 2026-08-10 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 624 directly declared dependency specs across 179 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 20ms on 2 files using 4 threads. OK docs/.generated/plugin-sdk-api-baseline.sha256 deprecated API usage guard passed Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=40 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=20 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=56 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=336 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=7 PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
-| issue_implementation_status_comment | updated | #78344 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,14 +66,14 @@ Current main 0b663e7a62efc3d17eda81920b236b8921bd04bb still omits internal sessi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #43567 | keep_related | planned | related | Different scope and owner boundary. |
-| #69492 | keep_closed | skipped | related | Closed context only. |
-| #70289 | keep_closed | skipped | related | Closed context only. |
-| #70373 | keep_closed | skipped | related | Closed context only. |
-| #78344 | fix_needed | blocked | canonical | Only implementation and validation are blocked by the worker environment; no maintainer decision is required. |
-| #92870 | keep_related | planned | related | Distinct continuation producer and root cause. |
-| #95154 | keep_closed | skipped | related | Closed, unmerged, and adjacent only. |
-| cluster:issue-openclaw-openclaw-78344 | build_fix_artifact | planned | canonical | Create the single narrow fix PR on clawsweeper/issue-openclaw-openclaw-78344. |
+| #78344 | fix_needed | planned | canonical | A narrow producer-boundary repair is valid: keep the continuation model-visible while preventing it from becoming a visible user-turn/session effect. |
+| cluster:issue-openclaw-openclaw-78344 | build_fix_artifact | planned | canonical | Create one new ClawSweeper PR from the configured branch after implementing and validating the narrow fix. |
+| #43567 | keep_related | planned | related | Same runtime-message family, but a distinct product decision and root cause; do not close or alter it in this fix lane. |
+| #92870 | keep_related | planned | related | Related transcript-attribution work with unique remaining scope; no security routing or closure is warranted. |
+| #69492 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
+| #70289 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
+| #70373 | keep_closed | skipped | related | Historical context only; no closure action is valid. |
+| #95154 | keep_closed | skipped | superseded | Closed historical PR; do not revive or close it from this lane. |
 
 ## Needs Human
 
