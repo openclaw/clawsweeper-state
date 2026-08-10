@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T17:59:33.376Z",
+  "updated_at": "2026-08-10T17:59:35.784Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118134:5160010735:2026-08-10T12:57:04Z:clawsweeper_auto_repair",
-      "comment_id": "5160010735",
-      "comment_version_key": "5160010735:2026-08-10T12:57:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118134#issuecomment-5160010735",
-      "comment_created_at": "2026-08-02T19:38:29Z",
-      "comment_updated_at": "2026-08-10T12:57:04Z",
-      "comment_body_sha256": "8b3cc405d43a19d1089b02ca5be54df4afc684ba78a27a13ea02984553dea6bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dc863e709c4b296046d00920b59900c623edacc7)",
-      "expected_head_sha": "dc863e709c4b296046d00920b59900c623edacc7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T12:57:56.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wizard-remote-password-probes",
-        "head_sha": "dc863e709c4b296046d00920b59900c623edacc7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119342:5240598400:2026-08-10T12:57:54Z:re_review",
       "comment_id": "5240598400",
@@ -30953,6 +30920,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T17:59:33.376Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104872:4949550134:2026-08-10T17:51:29Z:clawsweeper_needs_human",
+      "comment_id": "4949550134",
+      "comment_version_key": "4949550134:2026-08-10T17:51:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104872#issuecomment-4949550134",
+      "comment_created_at": "2026-07-12T02:00:28Z",
+      "comment_updated_at": "2026-08-10T17:51:29Z",
+      "comment_body_sha256": "929ed79aae28efe0bba6f3152935f0f9285959124958dac7e90739b07eca1613",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104872,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve verified Discord voice owner authority (P1)** - This removes the only forwarding of context.senderIsOwner. That bit is derived from Discord identity plus commands.ownerAllowFrom, and the existing voice...; Review finding: [P1] Preserve verified Discord voice owner authority — extensions/discord/src/voice/ingress.ts:135-145 - [medium] Verified Discord voice authority is discarded — e... (sha=74e2b96868d32158ec58325ce3b0d9fb67d6cc7f)",
+      "expected_head_sha": "74e2b96868d32158ec58325ce3b0d9fb67d6cc7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T17:59:35.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/conversation-identity-ingress",
+        "head_sha": "74e2b96868d32158ec58325ce3b0d9fb67d6cc7f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
