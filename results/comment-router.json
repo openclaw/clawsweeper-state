@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:58:57.712Z",
+  "updated_at": "2026-08-10T22:59:13.007Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110569:5010615328:2026-08-10T16:02:55Z:clawsweeper_auto_repair",
-      "comment_id": "5010615328",
-      "comment_version_key": "5010615328:2026-08-10T16:02:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110569#issuecomment-5010615328",
-      "comment_created_at": "2026-07-18T08:39:07Z",
-      "comment_updated_at": "2026-08-10T16:02:55Z",
-      "comment_body_sha256": "0f2a7fcd80b4a9a03b88180e35d433b967952578f5d6010e07e4d9c2f437ef1a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110569,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=936886ed2302930e1068374bd981bc0cab10fedd)",
-      "expected_head_sha": "936886ed2302930e1068374bd981bc0cab10fedd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T18:00:49.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/docs-i18n-glossary-git-timeouts",
-        "head_sha": "936886ed2302930e1068374bd981bc0cab10fedd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111759:5022010262:2026-08-10T17:03:02Z:clawsweeper_auto_repair",
       "comment_id": "5022010262",
@@ -32488,6 +32455,54 @@
       "status": "skipped",
       "processed_at": "2026-08-10T22:58:57.712Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T22:58:39Z:re_review",
+      "comment_id": "5240341720",
+      "comment_version_key": "5240341720:2026-08-10T22:58:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5240341720",
+      "comment_created_at": "2026-08-10T12:35:38Z",
+      "comment_updated_at": "2026-08-10T22:58:39Z",
+      "comment_body_sha256": "da47735be70cf960303718cce628d72de585d8950761ecf9dca61cee7197b6e6",
+      "source_delivery_id": "070719f0-950f-11f1-8a2b-00cfb54d9f98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121526,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-10T22:59:11.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
+        "head_sha": "5d1322ee8c97214811157112bba1a8d5ee4b498f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
