@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:57:21.613Z",
+  "updated_at": "2026-08-10T02:57:40.176Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120854:5234201440:2026-08-09T22:36:27Z:re_review",
-      "comment_id": "5234201440",
-      "comment_version_key": "5234201440:2026-08-09T22:36:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120854#issuecomment-5234201440",
-      "comment_created_at": "2026-08-09T22:36:27Z",
-      "comment_updated_at": "2026-08-09T22:36:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120854,
-      "author": "aolea",
-      "author_id": 35071898,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:46:59.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mattermost-separate-progress-final",
-        "head_sha": "5e732dfcc1e6b2e58844561d0ee64219c9999696",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119847:5201222556:2026-08-09T22:47:02Z:clawsweeper_needs_human",
       "comment_id": "5201222556",
@@ -32491,6 +32444,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/session-destructive-confirms",
         "head_sha": "e432436ad75f0e92b6eff3302a585b056879e654",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:216:5234438811:2026-08-10T02:52:08Z:clawsweeper_needs_human",
+      "comment_id": "5234438811",
+      "comment_version_key": "5234438811:2026-08-10T02:52:08Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/216#issuecomment-5234438811",
+      "comment_created_at": "2026-08-09T23:38:32Z",
+      "comment_updated_at": "2026-08-10T02:52:08Z",
+      "comment_body_sha256": "0cc0bd2397523ab2066e2bd6f77eb040d37c11ad3b7d65896c9b238449ac5c0c",
+      "repo": "openclaw/imsg",
+      "issue_number": 216,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing callers that relied on automatic bridge-to-AppleScript or iMessage-to-SMS fallback after a timeout will instead receive an unknown-delivery result and must inspect Messages h... (sha=6ff72f7d296c2d03125c2148fa56dc538a6d252c)",
+      "expected_head_sha": "6ff72f7d296c2d03125c2148fa56dc538a6d252c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T02:57:40.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delivery-outcomes",
+        "head_sha": "6ff72f7d296c2d03125c2148fa56dc538a6d252c",
         "cluster_id": null,
         "job_path": null
       }
