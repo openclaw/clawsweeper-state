@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T19:47:19.503Z",
+  "updated_at": "2026-08-10T19:47:55.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121526:5240341720:2026-08-10T14:49:20Z:re_review",
-      "comment_id": "5240341720",
-      "comment_version_key": "5240341720:2026-08-10T14:49:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121526#issuecomment-5240341720",
-      "comment_created_at": "2026-08-10T12:35:38Z",
-      "comment_updated_at": "2026-08-10T14:49:20Z",
-      "comment_body_sha256": "28524ec59e0d9925c6599e5ae00f6e0735a6e72bfe7b43eaa69ed5aa66dc2bb2",
-      "source_delivery_id": "ab8c0160-94ca-11f1-9d05-743ca45d3037",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121526,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T14:49:56.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/flaky-concurrent-device-identity-creation-477998",
-        "head_sha": "a8fe917b9f0e657bdae65ba8bc64ea306de84e15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121603:5241339372:2026-08-10T14:49:42Z:clawsweeper_auto_repair",
       "comment_id": "5241339372",
@@ -31916,6 +31868,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1109:5244805041:2026-08-10T19:47:03Z:clawsweeper_needs_human",
+      "comment_id": "5244805041",
+      "comment_version_key": "5244805041:2026-08-10T19:47:03Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1109#issuecomment-5244805041",
+      "comment_created_at": "2026-08-10T19:14:20Z",
+      "comment_updated_at": "2026-08-10T19:47:03Z",
+      "comment_body_sha256": "eeb6bca0ca610eef87444cb7583be195343b284676c8bcd073b8a3ada4832a4a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1109,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies before/after unit output, but the finalizer test substitutes a fake gh; add a redacted real-client production-boundary trace be... (sha=10d0801364df699b697fad5cea1ba59a52b91cae)",
+      "expected_head_sha": "10d0801364df699b697fad5cea1ba59a52b91cae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T19:47:55.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unify-status-check-rollup",
+        "head_sha": "10d0801364df699b697fad5cea1ba59a52b91cae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
