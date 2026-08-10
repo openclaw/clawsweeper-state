@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:59:17.672Z",
+  "updated_at": "2026-08-10T05:59:20.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120190:5234817558:2026-08-10T01:03:15Z:re_review",
-      "comment_id": "5234817558",
-      "comment_version_key": "5234817558:2026-08-10T01:03:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120190#issuecomment-5234817558",
-      "comment_created_at": "2026-08-10T01:03:15Z",
-      "comment_updated_at": "2026-08-10T01:03:15Z",
-      "comment_body_sha256": "2a454578b4f37a17f1cfd9419bee9180548b85baf130136a326a1b77f2ea6a30",
-      "source_delivery_id": "451d74e0-9457-11f1-84a9-79f031e3424c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120190,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T01:03:51.212Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-resumable-recovery-v1",
-        "head_sha": "8b8a210b16e567436f08333c6f0c696cacba7ec1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114864:5099206022:2026-08-10T00:57:53Z:clawsweeper_auto_repair",
       "comment_id": "5099206022",
@@ -32513,6 +32465,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T05:59:17.672Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119532:5188835487:2026-08-10T05:51:30Z:clawsweeper_needs_human",
+      "comment_id": "5188835487",
+      "comment_version_key": "5188835487:2026-08-10T05:51:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119532#issuecomment-5188835487",
+      "comment_created_at": "2026-08-05T07:25:17Z",
+      "comment_updated_at": "2026-08-10T05:51:30Z",
+      "comment_body_sha256": "c5517f30ff2da0b2a30e9aa41ab87730a3f0085219c8ec35a30181981c375e5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied loopback trace exercises real transport but ends in context_overflow rather than the claimed retry_limit result; the exac... (sha=1f854c75d66c6ff35ae7515c90d16a10d4ae1721)",
+      "expected_head_sha": "1f854c75d66c6ff35ae7515c90d16a10d4ae1721",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T05:59:20.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-retry-dispatched-cap-119313",
+        "head_sha": "1f854c75d66c6ff35ae7515c90d16a10d4ae1721",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
