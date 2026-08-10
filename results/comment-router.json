@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T03:44:38.315Z",
+  "updated_at": "2026-08-10T03:45:16.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121226:5234263618:2026-08-09T22:52:48Z:re_review",
-      "comment_id": "5234263618",
-      "comment_version_key": "5234263618:2026-08-09T22:52:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121226#issuecomment-5234263618",
-      "comment_created_at": "2026-08-09T22:52:48Z",
-      "comment_updated_at": "2026-08-09T22:52:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "0bd3a4f0-9445-11f1-9222-a1493aad964b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121226,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:53:27.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-local-media-file-scheme-current",
-        "head_sha": "c8c873a422e0e9fe0c59d679d3f76607f3b9941a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120248:5219166338:2026-08-09T22:53:11Z:clawsweeper_auto_repair",
       "comment_id": "5219166338",
@@ -32347,6 +32299,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121378:5235627467:2026-08-10T03:44:38Z:clawsweeper_needs_human",
+      "comment_id": "5235627467",
+      "comment_version_key": "5235627467:2026-08-10T03:44:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121378#issuecomment-5235627467",
+      "comment_created_at": "2026-08-10T03:44:38Z",
+      "comment_updated_at": "2026-08-10T03:44:38Z",
+      "comment_body_sha256": "7f0bd0abadc59e52032aff5a98dd13e80cc5821321b819a819667766e46691f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121378,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes focused Vitest projection coverage, but it does not provide an after-fix Gateway RPC and session-readback result from a real s... (sha=a8e9a1adc759a8f56b7d2724207a6946582b07fb)",
+      "expected_head_sha": "a8e9a1adc759a8f56b7d2724207a6946582b07fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T03:45:16.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-patch-websearch-true-persist",
+        "head_sha": "a8e9a1adc759a8f56b7d2724207a6946582b07fb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
