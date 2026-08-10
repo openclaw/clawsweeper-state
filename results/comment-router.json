@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T02:52:47.006Z",
+  "updated_at": "2026-08-10T02:52:47.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113920:5234142922:2026-08-09T22:40:50Z:re_review",
-      "comment_id": "5234142922",
-      "comment_version_key": "5234142922:2026-08-09T22:40:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113920#issuecomment-5234142922",
-      "comment_created_at": "2026-08-09T22:21:17Z",
-      "comment_updated_at": "2026-08-09T22:40:50Z",
-      "comment_body_sha256": "37a69f8a3ca07bf88d3ff40756d2e9746c8e6ded9ed62401327ee41ee97d0901",
-      "source_delivery_id": "5f5c7310-9443-11f1-8465-3e8861eaf714",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113920,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-09T22:41:24.838Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/profile-keyed-provider-usage",
-        "head_sha": "c4f443b4a4242f7c85d2aa0327706636a50e5f80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101441:5234220942:2026-08-09T22:41:30Z:re_review",
       "comment_id": "5234220942",
@@ -32598,6 +32550,39 @@
         "kind": "pull_request",
         "branch": "steipete/subagents-move-spawn-b7e2",
         "head_sha": "9126655bf65fbff835ac280dd57848c4e4f06094",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121315:5235352841:2026-08-10T02:51:56Z:clawsweeper_needs_human",
+      "comment_id": "5235352841",
+      "comment_version_key": "5235352841:2026-08-10T02:51:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121315#issuecomment-5235352841",
+      "comment_created_at": "2026-08-10T02:51:56Z",
+      "comment_updated_at": "2026-08-10T02:51:56Z",
+      "comment_body_sha256": "43c1dca20aa9dbdae0b1069f907ac3ee9d8aa24ef23336a073fd7a70fd253b0b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body reports a 48-byte startup gzip increase beyond the current budget, while the supplied exact-head QA runs are still in progress; this needs a maintainer-approved budget tre... (sha=6f43ef6922fcb1ef975fa9e82c6271893df023f5)",
+      "expected_head_sha": "6f43ef6922fcb1ef975fa9e82c6271893df023f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T02:52:47.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/rotated-token-modal",
+        "head_sha": "6f43ef6922fcb1ef975fa9e82c6271893df023f5",
         "cluster_id": null,
         "job_path": null
       }
