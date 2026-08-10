@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-10T23:49:32.778Z",
+  "updated_at": "2026-08-10T23:49:34.248Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1105:5244216771:2026-08-10T18:19:42Z:re_review",
-      "comment_id": "5244216771",
-      "comment_version_key": "5244216771:2026-08-10T18:19:42Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1105#issuecomment-5244216771",
-      "comment_created_at": "2026-08-10T18:19:42Z",
-      "comment_updated_at": "2026-08-10T18:19:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "0f524750-94e8-11f1-928c-8ec4fc49df53",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1105,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T18:20:32.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-review-branch-authority",
-        "head_sha": "6adf4cf20ca1fb2f63da570ec9fc2b6c0054561d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:306:5243424394:2026-08-10T18:21:33Z:clawsweeper_auto_repair",
       "comment_id": "5243424394",
@@ -32329,6 +32281,39 @@
         "kind": "pull_request",
         "branch": "alix/oc-t38-01-feishu-repeated-cursor",
         "head_sha": "29f797d2661a48cf188b1deafbb294f04de9c442",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3449:5247201339:2026-08-10T23:40:58Z:clawsweeper_needs_human",
+      "comment_id": "5247201339",
+      "comment_version_key": "5247201339:2026-08-10T23:40:58Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3449#issuecomment-5247201339",
+      "comment_created_at": "2026-08-10T23:31:20Z",
+      "comment_updated_at": "2026-08-10T23:40:58Z",
+      "comment_body_sha256": "189b68f8b60411046839a09dab6e4ac384569115a985cc462c7b05a3ffc279a4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3449,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The exact-head harness stubs gh, while the cited authenticated trace is from a different producer; add redacted live ClawHub delivery... (sha=01e820ee805731456138b4c42f51a05247615a64)",
+      "expected_head_sha": "01e820ee805731456138b4c42f51a05247615a64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T23:49:34.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-117-clawhub-branch-authority",
+        "head_sha": "01e820ee805731456138b4c42f51a05247615a64",
         "cluster_id": null,
         "job_path": null
       }
