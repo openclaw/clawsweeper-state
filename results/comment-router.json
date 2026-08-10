@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T01:55:29.024Z",
+  "updated_at": "2026-08-10T01:56:04.068Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5153764939:2026-08-01T22:33:35Z:re_review",
-      "comment_id": "5153764939",
-      "comment_version_key": "5153764939:2026-08-01T22:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5153764939",
-      "comment_created_at": "2026-08-01T22:33:35Z",
-      "comment_updated_at": "2026-08-01T22:33:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T21:49:58.519Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5153875856:2026-08-01T22:58:58Z:re_review",
       "comment_id": "5153875856",
@@ -32272,6 +32245,39 @@
       "status": "skipped",
       "processed_at": "2026-08-10T01:55:29.024Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120942:5230202425:2026-08-10T01:55:21Z:clawsweeper_needs_human",
+      "comment_id": "5230202425",
+      "comment_version_key": "5230202425:2026-08-10T01:55:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120942#issuecomment-5230202425",
+      "comment_created_at": "2026-08-09T06:41:54Z",
+      "comment_updated_at": "2026-08-10T01:55:21Z",
+      "comment_body_sha256": "a6c72a6c9990135996e9b032b88c601bb9bfa3dfc57edb8744c621834711b6b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict Enterprise registration to approval callbacks (P1)** - This moves registerSlackInteractionEvents before the Enterprise early return, which registers generic block actions, shortcuts, and every modal lif...; Review finding: [P1] Restrict Enterprise registration to approval callbacks — extensions/slack/src/monitor/events.ts:30-31 - [P1] Preserve Enterprise event app identity validation... (sha=6f35b437fcf8983c7a3a364f23cebd2d683cd444)",
+      "expected_head_sha": "6f35b437fcf8983c7a3a364f23cebd2d683cd444",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T01:56:04.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-grid-native-approvals-951",
+        "head_sha": "6f35b437fcf8983c7a3a364f23cebd2d683cd444",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
