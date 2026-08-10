@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-10T22:17:28.252Z",
+  "updated_at": "2026-08-10T22:20:26.353Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114079:5243532676:2026-08-10T17:14:10Z:re_review",
-      "comment_id": "5243532676",
-      "comment_version_key": "5243532676:2026-08-10T17:14:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114079#issuecomment-5243532676",
-      "comment_created_at": "2026-08-10T17:14:10Z",
-      "comment_updated_at": "2026-08-10T17:14:10Z",
-      "comment_body_sha256": "5b5fdf431fc83400ac649b3cf5a1764e5985ffafc7291dbcab5448eeb239116d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114079,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T17:59:53.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workboard-session-binding-v1",
-        "head_sha": "7d9764510f846d8c0edba58359a27c3e7593de57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:59414:5243552350:2026-08-10T17:16:10Z:re_review",
       "comment_id": "5243552350",
@@ -32106,6 +32059,39 @@
         "kind": "pull_request",
         "branch": "codex/global-ui-consent-stack",
         "head_sha": "ce8699d92e6c35cb5c0ffdd834b20361f92aa38a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1112:5245543078:2026-08-10T22:19:40Z:clawsweeper_needs_human",
+      "comment_id": "5245543078",
+      "comment_version_key": "5245543078:2026-08-10T22:19:40Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1112#issuecomment-5245543078",
+      "comment_created_at": "2026-08-10T20:24:19Z",
+      "comment_updated_at": "2026-08-10T22:19:40Z",
+      "comment_body_sha256": "627cb3c0129499e112f883b2d864855092c93742a4ce365a72638bc671693926",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing consumers that require a 200 Bay document at /bay-demo rather than following redirects will see a compatibility change; the PR proves browser redirect behavior but cannot est... (sha=9fcfcd6532a3fcc982be22fa96cdb0e0fcd3e70d)",
+      "expected_head_sha": "9fcfcd6532a3fcc982be22fa96cdb0e0fcd3e70d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T22:20:26.353Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-124-bay-route",
+        "head_sha": "9fcfcd6532a3fcc982be22fa96cdb0e0fcd3e70d",
         "cluster_id": null,
         "job_path": null
       }
