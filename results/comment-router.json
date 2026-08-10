@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-10T04:43:33.667Z",
+  "updated_at": "2026-08-10T04:45:07.762Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97198:4970141111:2026-07-14T14:10:43Z:re_review",
-      "comment_id": "4970141111",
-      "comment_version_key": "4970141111:2026-07-14T14:10:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97198#issuecomment-4970141111",
-      "comment_created_at": "2026-07-14T14:10:43Z",
-      "comment_updated_at": "2026-07-14T14:10:43Z",
-      "comment_body_sha256": "c50ebf1526985183a032e87d70a58e4d4ead6d1c133a69bc22878ab562b4d19b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97198,
-      "author": "lin-hongkuan",
-      "author_id": 234943746,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review after syncing current main. the refreshed head preserves the scoped feishu bot-identity recovery changes; `git diff --check upstream/main...head` and gitleaks over `upstream/main..head` pass. fresh ci is starting",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-09T23:46:23.904Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120601:5234466092:2026-08-09T23:45:51Z:re_review",
       "comment_id": "5234466092",
@@ -32116,6 +32089,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121361:5235696143:2026-08-10T04:44:28Z:clawsweeper_auto_repair",
+      "comment_id": "5235696143",
+      "comment_version_key": "5235696143:2026-08-10T04:44:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121361#issuecomment-5235696143",
+      "comment_created_at": "2026-08-10T03:58:14Z",
+      "comment_updated_at": "2026-08-10T04:44:28Z",
+      "comment_body_sha256": "462aae6ba0fe6be061a83e2013a79f4f5a7ec5891c4177e8e486946318c1e3a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4e0ee45c424ee9e2a12902746d69ceedae5394ae)",
+      "expected_head_sha": "4e0ee45c424ee9e2a12902746d69ceedae5394ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-10T04:45:07.762Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/rotate-outcome-dialog",
+        "head_sha": "4e0ee45c424ee9e2a12902746d69ceedae5394ae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
