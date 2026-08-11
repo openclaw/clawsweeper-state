@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-113326"
 mode: "autonomous"
-run_id: "31482195112"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31482195112"
-head_sha: "16e2959d529b25fdb5351c07ee9942ede27d6209"
+run_id: "31451582495"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31451582495"
+head_sha: "5a964dadc8131e6e6dc33e9be3536b8141d1d107"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-11T10:37:04.686Z"
+published_at: "2026-08-11T03:10:10.669Z"
 canonical: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/113326"
 canonical_pr: null
-actions_total: 3
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31482195112](https://github.com/openclaw/clawsweeper/actions/runs/31482195112)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31451582495](https://github.com/openclaw/clawsweeper/actions/runs/31451582495)
 
 Workflow conclusion: success
 
@@ -35,16 +35,16 @@ Canonical: https://github.com/openclaw/openclaw/issues/113326
 
 ## Summary
 
-Confirmed the current-main CLI guard rejects every non-TTY login before it resolves `--method`, while the explicit OpenAI device-code method is designed to emit a URL/code and poll without credential input. A narrow repair path exists, but this read-only worker cannot satisfy the mandatory Codex-source gate: sibling `../codex` is absent and cannot be cloned here. Focused tests also cannot run because `tsx` is not installed.
+Confirmed a narrow source-level bug on main 9320bd379ef3ce1fc11f29fbbabf82bd1db94b80: `modelsAuthLoginCommand` rejects non-TTY input before resolving the explicitly selected OpenAI `device-code` method. The OpenAI plugin classifies that method as `device_code` and displays the URL/code through its prompter, without reading stdin. No files were changed because this checkout is read-only; dependency installation and focused tests are blocked by EROFS/missing `tsx`.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,6 +54,7 @@ Confirmed the current-main CLI guard rejects every non-TTY login before it resol
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=core, coreTests, docs [check:changed] src/commands/models/auth.test.ts: core test [check:changed] src/commands/models/auth.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] environment variable count ratchet $ node --import tsx scripts/check-env-var-count.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import tsx scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import tsx scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import tsx scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import tsx scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import tsx scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node --import tsx scripts/check-duplicates.mts --coverage [check:changed] dependency pin guard $ node --import tsx scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- docs/cli/models.md docs/providers/openai.md src/commands/models/auth.test.ts src/commands/models/auth.ts [check:changed] Plugin SDK API contract manifest $ node --max-old-space-size=8192 --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check [check:changed] deprecated API usage $ node --import tsx scripts/check-deprecated-api-usage.mts [check:changed] plugin boundaries $ node --import tsx scripts/plugin-boundary-report.ts --summary --fail-on-cross-owner --fail-on-unclassified-unused-reserved --fail-on-eligible-compat [check:changed] wrapper shadowing $ node --import tsx scripts/check-wrapper-shadowing.mts [check:changed] package patch guard $ node --import tsx scripts/check-package-patches.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode production unused-export scan produced no export sections. [ERR_PNPM_NO_OFFLINE_META] Failed to resolve knip@6.8.0 in package mirror /tmp/clawsweeper-target-user-egxC95/cache/pnpm/v11/metadata-full-filtered/registry.npmjs.org/knip.jsonl [check:changed] summary 317ms ok conflict markers 419ms ok environment variable count ratchet 14.59s ok max-lines suppression ratchet 327ms ok changelog attributions 300ms ok doctor deprecation registry 320ms ok guarded extension wildcard re-exports 308ms ok plugin-sdk wildcard re-exports 326ms ok duplicate scan target coverage 333ms ok dependency pin guard 472ms ok format changed files 31.71s ok Plugin SDK API contract manifest 5.30s ok deprecated API usage 1.08s ok plugin boundaries 3.75s ok wrapper shadowing 568ms ok package patch guard 378ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) OPENCLAW_* count 503/503 max-lines ratchet OK: 970 grandfathered suppressions. [doctor-deprecation-registry] OK as of 2026-08-11 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 625 directly declared dependency specs across 180 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 175ms on 4 files using 4 threads. OK docs/.generated/plugin-sdk-api-baseline.jsonl deprecated API usage guard passed Plugin Boundary Report compat deprecated=39 eligibleForRemoval=0 removalPending=3 removalPendingDue=0 removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=40 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/sdk-setup-tools.ts,extensions/codex/media-understanding-provider.ts,extensions/deepgram/audio.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=20 readers=extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/public-artifacts.ts,extensions/memory-core/src/session-search-visibility.ts,extensions/memory-core/src/tools.citations.test.ts,extensions/memory-core/src/tools.test.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=55 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=336 reserved=0 reservedImports=0 crossOwnerReservedImports=0 unusedReserved=0 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=9 wrapper shadowing guard passed (70 current, 70 baselined). PASS package patch guard: no new pnpm patches; 2 approved patches allowlisted. [ELIFECYCLE] Command failed with exit code 1. |
 | issue_implementation_status_comment | updated | #113326 |  |  |
 
 ## Apply Actions
@@ -66,9 +67,12 @@ Confirmed the current-main CLI guard rejects every non-TTY login before it resol
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113326 | fix_needed | blocked | canonical | Implementation is blocked only on mandatory dependency-source inspection and unavailable test dependencies; no product or security decision is unresolved. |
-| #100067 | keep_related | planned | related | Keep open independently; no duplicate or shared repair path. |
-| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | blocked | canonical | Executor must first inspect the exact sibling Codex source and restore dependencies before applying and validating the artifact. |
+| #50452 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #71864 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #79021 | keep_closed | skipped | related | Closed context only; no mutation. |
+| #100067 | keep_related | planned | related | Same auth area but distinct root cause and scope. |
+| #113326 | fix_needed | blocked | canonical | Implementation is proven and narrow, but this worker cannot write the branch or install dependencies in the read-only checkout. |
+| cluster:issue-openclaw-openclaw-113326 | build_fix_artifact | planned | canonical | A new narrow repair PR is appropriate once an executable checkout is available. |
 
 ## Needs Human
 
