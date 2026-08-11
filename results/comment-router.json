@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T21:08:32.376Z",
+  "updated_at": "2026-08-11T21:08:33.165Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5160228475:2026-08-02T20:36:22Z:re_review",
-      "comment_id": "5160228475",
-      "comment_version_key": "5160228475:2026-08-02T20:36:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5160228475",
-      "comment_created_at": "2026-08-02T20:36:22Z",
-      "comment_updated_at": "2026-08-02T20:36:22Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:58:42.750Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5160259356:2026-08-02T20:44:44Z:re_review",
       "comment_id": "5160259356",
@@ -30438,6 +30411,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122211:5257494960:2026-08-11T21:07:55Z:clawsweeper_needs_human",
+      "comment_id": "5257494960",
+      "comment_version_key": "5257494960:2026-08-11T21:07:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122211#issuecomment-5257494960",
+      "comment_created_at": "2026-08-11T18:54:33Z",
+      "comment_updated_at": "2026-08-11T21:07:55Z",
+      "comment_body_sha256": "e48aa8c9c565260eb197b4e5b3867dc6394500077a883ed3623e133904336393",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122211,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch is behind current main and its active exact-head check is still in progress; refresh/rebase and validate the resulting head before merge. (sha=e8c2417ad5276699c229898f0fed081936316d1f)",
+      "expected_head_sha": "e8c2417ad5276699c229898f0fed081936316d1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T21:08:33.165Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/chat-terminal-broadcasts",
+        "head_sha": "e8c2417ad5276699c229898f0fed081936316d1f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
