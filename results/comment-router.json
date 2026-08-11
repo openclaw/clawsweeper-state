@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T00:57:35.276Z",
+  "updated_at": "2026-08-11T00:58:29.273Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120248:5219658355:2026-08-07T16:39:17Z:re_review",
-      "comment_id": "5219658355",
-      "comment_version_key": "5219658355:2026-08-07T16:39:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120248#issuecomment-5219658355",
-      "comment_created_at": "2026-08-07T16:39:17Z",
-      "comment_updated_at": "2026-08-07T16:39:17Z",
-      "comment_body_sha256": "4157019fc4ad2a6c6093628d0c37288c79d1192848e02e8134b9a44460f019a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120248,
-      "author": "lucascmg-vx",
-      "author_id": 205534446,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:02:15.649Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120248:5219749268:2026-08-07T16:49:00Z:re_review",
       "comment_id": "5219749268",
@@ -32460,6 +32433,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121773:5247812687:2026-08-11T00:57:49Z:clawsweeper_needs_human",
+      "comment_id": "5247812687",
+      "comment_version_key": "5247812687:2026-08-11T00:57:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121773#issuecomment-5247812687",
+      "comment_created_at": "2026-08-11T00:57:49Z",
+      "comment_updated_at": "2026-08-11T00:57:49Z",
+      "comment_body_sha256": "2099607d2fbc71a23805ec46e7c33ae0ed9fdf87418ce3ea15d9008ac33d6184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121773,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with team-scoped env rows will newly pass those readable values to every eligible agent subprocess after upgrade; the filters constrain dangerous names but do n... (sha=2b59baa182f86b4d3d14756725400a59b1d8316e)",
+      "expected_head_sha": "2b59baa182f86b4d3d14756725400a59b1d8316e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T00:58:29.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/secret-store-env-injection",
+        "head_sha": "2b59baa182f86b4d3d14756725400a59b1d8316e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
