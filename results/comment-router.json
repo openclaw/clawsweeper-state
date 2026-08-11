@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:06:33.591Z",
+  "updated_at": "2026-08-11T16:07:18.696Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110868:5012319802:2026-08-11T09:53:35Z:clawsweeper_needs_human",
-      "comment_id": "5012319802",
-      "comment_version_key": "5012319802:2026-08-11T09:53:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110868#issuecomment-5012319802",
-      "comment_created_at": "2026-07-18T17:58:04Z",
-      "comment_updated_at": "2026-08-11T09:53:35Z",
-      "comment_body_sha256": "df029336556ef59c39c5987119048ff944edf38d71de38579a819fdef7a3c3f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110868,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; its exact-head checks are green, but the eventual merge ref should pass the normal required gates. (sha=a21cbc3e72c85b1d2ea241122750deed0c963580)",
-      "expected_head_sha": "a21cbc3e72c85b1d2ea241122750deed0c963580",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-tool-input-order-110769",
-        "head_sha": "a21cbc3e72c85b1d2ea241122750deed0c963580",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111805:5025638526:2026-08-11T10:05:45Z:clawsweeper_needs_human",
       "comment_id": "5025638526",
@@ -32158,6 +32125,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121686:5255674903:2026-08-11T16:06:34Z:re_review",
+      "comment_id": "5255674903",
+      "comment_version_key": "5255674903:2026-08-11T16:06:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121686#issuecomment-5255674903",
+      "comment_created_at": "2026-08-11T16:06:34Z",
+      "comment_updated_at": "2026-08-11T16:06:34Z",
+      "comment_body_sha256": "0b3caeb4d2bdbfa1ac3868aa1cbfe09a58b03195ec672c3902f5f8612cb6221c",
+      "source_delivery_id": "a07d3e90-959e-11f1-8cc6-7d7d72a20175",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121686,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T16:07:15.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/control-ui-update-outcome",
+        "head_sha": "807c8a1cc533c000231362549dd392a3f863d880",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
