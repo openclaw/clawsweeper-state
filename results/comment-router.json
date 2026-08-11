@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:59:58.947Z",
+  "updated_at": "2026-08-11T15:00:01.831Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194599966:2026-08-05T16:41:05Z:maintainer_approve_automerge",
-      "comment_id": "5194599966",
-      "comment_version_key": "5194599966:2026-08-05T16:41:05Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194599966",
-      "comment_created_at": "2026-08-05T16:41:05Z",
-      "comment_updated_at": "2026-08-05T16:41:05Z",
-      "comment_body_sha256": "e6d571999e51fc11207b5b105951d21003ee3c9c583117d356ec0f0e2fa2c648",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T09:53:35.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194623651:2026-08-05T16:43:22Z:maintainer_approve_automerge",
       "comment_id": "5194623651",
@@ -32370,6 +32317,39 @@
         "kind": "pull_request",
         "branch": "fix/121049-terminate-attached-subshells",
         "head_sha": "4655d7473c1ebfa038481008bd345da405ebbcd9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122031:5253558607:2026-08-11T14:55:04Z:clawsweeper_needs_human",
+      "comment_id": "5253558607",
+      "comment_version_key": "5253558607:2026-08-11T14:55:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122031#issuecomment-5253558607",
+      "comment_created_at": "2026-08-11T13:05:35Z",
+      "comment_updated_at": "2026-08-11T14:55:04Z",
+      "comment_body_sha256": "bab29d66f47a6672e8b45f89f0df48265914d60281690ff23170a091cd5fcca1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by +51 lines for a one-call security conversion; the canonical media-reference owner justifies the capability, but the explanatory comments should remain concise... (sha=797957121e58cea694b06a508c86e872bf9d15f2)",
+      "expected_head_sha": "797957121e58cea694b06a508c86e872bf9d15f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T15:00:01.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-history-media-inbound-ref-121753",
+        "head_sha": "797957121e58cea694b06a508c86e872bf9d15f2",
         "cluster_id": null,
         "job_path": null
       }
