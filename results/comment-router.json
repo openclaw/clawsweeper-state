@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:04:22.891Z",
+  "updated_at": "2026-08-11T20:04:28.040Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117184:5152313174:2026-08-01T16:26:31Z:re_review",
-      "comment_id": "5152313174",
-      "comment_version_key": "5152313174:2026-08-01T16:26:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117184#issuecomment-5152313174",
-      "comment_created_at": "2026-08-01T16:26:31Z",
-      "comment_updated_at": "2026-08-01T16:26:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117184,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:53:31.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117184:5152337207:2026-08-01T16:32:52Z:re_review",
       "comment_id": "5152337207",
@@ -29580,6 +29553,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T20:04:22.891Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122188:5257595086:2026-08-11T20:01:36Z:clawsweeper_needs_human",
+      "comment_id": "5257595086",
+      "comment_version_key": "5257595086:2026-08-11T20:01:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122188#issuecomment-5257595086",
+      "comment_created_at": "2026-08-11T19:03:52Z",
+      "comment_updated_at": "2026-08-11T20:01:36Z",
+      "comment_body_sha256": "69468669cc5185a550f6848d4a1cbfa562b2e2c5c3c8fd3ff55085d94c52bac8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two failed exact-head check runs remain unresolved; merge should wait for their scoped failure diagnosis and a green rerun. (sha=1a11c684cdd861fdfd5befbba1d7450aa756830e)",
+      "expected_head_sha": "1a11c684cdd861fdfd5befbba1d7450aa756830e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T20:04:28.040Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/agent-activity-event-emitter",
+        "head_sha": "1a11c684cdd861fdfd5befbba1d7450aa756830e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
