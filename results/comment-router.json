@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T06:02:25.260Z",
+  "updated_at": "2026-08-11T06:04:26.804Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5245820125:2026-08-10T20:51:13Z:re_review",
-      "comment_id": "5245820125",
-      "comment_version_key": "5245820125:2026-08-10T20:51:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5245820125",
-      "comment_created_at": "2026-08-10T20:51:13Z",
-      "comment_updated_at": "2026-08-10T20:51:13Z",
-      "comment_body_sha256": "cf87cc2dc4c57f93c740e5b54026e84f72d2754fb5f739b1672bf0134a782558",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T01:58:49.295Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5247936816:2026-08-11T01:19:23Z:re_review",
       "comment_id": "5247936816",
@@ -31787,6 +31760,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115145:5103231797:2026-08-11T06:03:46Z:clawsweeper_needs_human",
+      "comment_id": "5103231797",
+      "comment_version_key": "5103231797:2026-08-11T06:03:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115145#issuecomment-5103231797",
+      "comment_created_at": "2026-07-28T10:57:20Z",
+      "comment_updated_at": "2026-08-11T06:03:46Z",
+      "comment_body_sha256": "0292c7b6076b2bf5b7e7b300ef42dbacf1c9fde62324587e5765e860fbb51798",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115145,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body confirms that no live MiniMax request ran; mocked assertions and syntax checks do not show an after-fix provider result. After addi... (sha=25879dd220d193a835dfaead4c0782c80846c854)",
+      "expected_head_sha": "25879dd220d193a835dfaead4c0782c80846c854",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T06:04:26.804Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "octo/20260728-parameter-refresh-recvpOqG4OBFfb",
+        "head_sha": "25879dd220d193a835dfaead4c0782c80846c854",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
