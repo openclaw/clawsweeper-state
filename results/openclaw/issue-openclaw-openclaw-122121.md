@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122121"
-mode: "autonomous"
-run_id: "31510272266"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31510272266"
+mode: "plan"
+run_id: "31513687260"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31513687260"
 head_sha: "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-11T16:26:06.833Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-11T16:46:38.013Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122121"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122121"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31510272266](https://github.com/openclaw/clawsweeper/actions/runs/31510272266)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31513687260](https://github.com/openclaw/clawsweeper/actions/runs/31513687260)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122121
 
 ## Summary
 
-Confirmed on main 903af8bef557d66a47ec2ba24a084c3b228debce: disconnect clears an existing tab attachment, but snapshot reconciliation only auto-attaches newly inserted tab IDs. A same-ID reconnect therefore leaves Target.getTargets empty. The narrow repair is planned; this read-only checkout lacks tsx, so no branch or validated PR could be produced here.
+#122121 remains a reproducible, non-security relay-bridge bug on hydrated main a496fd148ede83a0927d8c58c556f96fbc3d3365. Plan a narrow new fix PR that reconciles every accessible tab without an attachment after a snapshot, preserving existing identity fencing and attach coalescing.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Confirmed on main 903af8bef557d66a47ec2ba24a084c3b228debce: disconnect clears an
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122121 | fix_needed | planned | canonical | The bridge is the authoritative snapshot-reconciliation owner; no browser-tool retry, config, or compatibility path is needed. |
-| #33093 | keep_closed | skipped | related | Already closed; no closure action is permitted. |
-| #43842 | keep_closed | skipped | related | Already closed; no closure action is permitted. |
+| #122121 | fix_needed | planned | canonical | The canonical issue has a bounded root-cause repair with no config, policy, dependency, or security-boundary change. |
+| #33093 | keep_closed | skipped | related | Already closed; no closure action is valid. |
+| #43842 | keep_closed | skipped | related | Already closed; no closure action is valid. |
 | #120806 | keep_closed | skipped | related | Already merged and not a candidate fix for this issue. |
-| cluster:issue-openclaw-openclaw-122121 | build_fix_artifact | planned | canonical | A two-file owner-boundary repair and focused regression are well-defined. |
-| cluster:issue-openclaw-openclaw-122121 | open_fix_pr | blocked | canonical | Blocked only on the executor's writable dependency-ready environment; open or update clawsweeper/issue-openclaw-openclaw-122121 after the artifact validations pass. |
+| cluster:issue-openclaw-openclaw-122121 | build_fix_artifact | planned | canonical | A two-file repair artifact is sufficient for deterministic execution. |
+| cluster:issue-openclaw-openclaw-122121 | open_fix_pr | planned | canonical | The job permits one new fix PR and forbids merging or closing. |
 
 ## Needs Human
 
