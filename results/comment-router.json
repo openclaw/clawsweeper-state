@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:03:47.236Z",
+  "updated_at": "2026-08-11T16:04:18.144Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121996:5252069854:2026-08-11T10:39:54Z:re_review",
-      "comment_id": "5252069854",
-      "comment_version_key": "5252069854:2026-08-11T10:39:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121996#issuecomment-5252069854",
-      "comment_created_at": "2026-08-11T10:39:54Z",
-      "comment_updated_at": "2026-08-11T10:39:54Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121996,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.957Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gateway-resident-registry",
-        "head_sha": "3f3da1e7bc9db04058a2bd968e7caef30d63a12c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121991:5252186510:2026-08-11T10:52:09Z:clawsweeper_needs_human",
       "comment_id": "5252186510",
@@ -32146,6 +32113,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120283:5220255174:2026-08-11T15:58:39Z:clawsweeper_needs_human",
+      "comment_id": "5220255174",
+      "comment_version_key": "5220255174:2026-08-11T15:58:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120283#issuecomment-5220255174",
+      "comment_created_at": "2026-08-07T17:43:08Z",
+      "comment_updated_at": "2026-08-11T15:58:39Z",
+      "comment_body_sha256": "5e710bf23c1af7f6d022208694fc77e08915c2caa5b4e6c4bb68da69235a7b41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +38 lines; the separate per-frame checks are justified by distinct bridge dereferences, but no net-neutral owner-boundary refactor was identified. (sha=57617516ee67338cbcf9aea8c2f719c148bab4e2)",
+      "expected_head_sha": "57617516ee67338cbcf9aea8c2f719c148bab4e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T16:04:18.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-relay-frame-validation",
+        "head_sha": "57617516ee67338cbcf9aea8c2f719c148bab4e2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
