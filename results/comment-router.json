@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T00:53:20.266Z",
+  "updated_at": "2026-08-11T00:54:04.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104569:5064661082:2026-07-23T23:50:12Z:re_review",
-      "comment_id": "5064661082",
-      "comment_version_key": "5064661082:2026-07-23T23:50:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5064661082",
-      "comment_created_at": "2026-07-23T23:50:12Z",
-      "comment_updated_at": "2026-07-23T23:50:12Z",
-      "comment_body_sha256": "2c101eeae43ce9b630d2fa8278262b129c1be4c2e75ef3214e54f4811f7eb3d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104569,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T19:59:32.470Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104569:5064810620:2026-07-24T00:17:13Z:re_review",
       "comment_id": "5064810620",
@@ -32430,6 +32403,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T00:53:20.266Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121163:5233791014:2026-08-11T00:49:56Z:clawsweeper_needs_human",
+      "comment_id": "5233791014",
+      "comment_version_key": "5233791014:2026-08-11T00:49:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121163#issuecomment-5233791014",
+      "comment_created_at": "2026-08-09T20:53:12Z",
+      "comment_updated_at": "2026-08-11T00:49:56Z",
+      "comment_body_sha256": "ef0556ec6a7c734460c924ac056df6730516c1095e52e93419631a1a63fc83e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121163,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The branch conflicts with current main’s WebSocket selection and SSE fallback; an incorrect resolution could move an SSE hook back outside timeout/abort ownership or disturb fallback... (sha=868eed7330293d966bc51920867ac6ef48294500)",
+      "expected_head_sha": "868eed7330293d966bc51920867ac6ef48294500",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T00:54:04.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa0809-responses-hook-lifecycle",
+        "head_sha": "868eed7330293d966bc51920867ac6ef48294500",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
