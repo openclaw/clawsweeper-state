@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:08:19.621Z",
+  "updated_at": "2026-08-11T07:08:58.321Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5240598422:2026-08-10T12:57:54Z:re_review",
-      "comment_id": "5240598422",
-      "comment_version_key": "5240598422:2026-08-10T12:57:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5240598422",
-      "comment_created_at": "2026-08-10T12:57:54Z",
-      "comment_updated_at": "2026-08-10T12:57:54Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T02:54:14.711Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5240706290:2026-08-10T13:07:50Z:re_review",
       "comment_id": "5240706290",
@@ -32029,6 +32002,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121904:5250101633:2026-08-11T07:08:13Z:clawsweeper_needs_human",
+      "comment_id": "5250101633",
+      "comment_version_key": "5250101633:2026-08-11T07:08:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121904#issuecomment-5250101633",
+      "comment_created_at": "2026-08-11T07:08:13Z",
+      "comment_updated_at": "2026-08-11T07:08:13Z",
+      "comment_body_sha256": "dc9b04f308c5184fc82a6e11f1696ffa09220d7d4d5e7939f3ae1608a28356b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121904,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty with failed aggregate checks, so merge requires resolving the current-main overlap and rerunning validation on the resulting head. (sha=3e3827a71fa61e3b6dbc2ee18c3fbac4ec5038e4)",
+      "expected_head_sha": "3e3827a71fa61e3b6dbc2ee18c3fbac4ec5038e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:08:58.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/remove-plugin-cache-resize-knob-v2",
+        "head_sha": "3e3827a71fa61e3b6dbc2ee18c3fbac4ec5038e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
