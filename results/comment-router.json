@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:58:24.911Z",
+  "updated_at": "2026-08-11T07:58:36.722Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3451:5247851741:2026-08-11T03:11:19Z:clawsweeper_auto_repair",
-      "comment_id": "5247851741",
-      "comment_version_key": "5247851741:2026-08-11T03:11:19Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3451#issuecomment-5247851741",
-      "comment_created_at": "2026-08-11T01:04:46Z",
-      "comment_updated_at": "2026-08-11T03:11:19Z",
-      "comment_body_sha256": "c41783b402ff8d0465eecec9cfdd54e47647f85a8deaa47be1b94aa1597477b8",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=f78863aa5fcc7e10d4c06b56a9e440785b7561c4)",
-      "expected_head_sha": "f78863aa5fcc7e10d4c06b56a9e440785b7561c4",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-11T03:12:02.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/fix-legacy-download-oom",
-        "head_sha": "f78863aa5fcc7e10d4c06b56a9e440785b7561c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121692:5248374764:2026-08-11T02:38:07Z:re_review",
       "comment_id": "5248374764",
@@ -31864,6 +31831,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111805:5025638526:2026-08-11T07:57:49Z:clawsweeper_needs_human",
+      "comment_id": "5025638526",
+      "comment_version_key": "5025638526:2026-08-11T07:57:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111805#issuecomment-5025638526",
+      "comment_created_at": "2026-07-20T18:16:41Z",
+      "comment_updated_at": "2026-08-11T07:57:49Z",
+      "comment_body_sha256": "7f573ef750493b9d3dd397929d1e20ea93785c8cd780e6eaef57f9d208da59c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm proxy-resolved DNS is acceptable** - For applicable HTTP(S)_PROXY settings, EnvHttpProxyAgent delegates destination resolution to the operator’s proxy instead of OpenClaw’s loca...; Review finding: [medium] Confirm proxy-resolved DNS is acceptable — src/plugins/official-external-plugin-catalog.ts:1125 (sha=8ba4cb4c816949c9ee4e7fd0b8ef6b9829b3c39c)",
+      "expected_head_sha": "8ba4cb4c816949c9ee4e7fd0b8ef6b9829b3c39c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:58:36.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-marketplace-env-proxy",
+        "head_sha": "8ba4cb4c816949c9ee4e7fd0b8ef6b9829b3c39c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
