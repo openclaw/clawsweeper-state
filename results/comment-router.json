@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:42:31.588Z",
+  "updated_at": "2026-08-11T14:43:43.720Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121897:5250007512:2026-08-11T08:59:54Z:clawsweeper_needs_human",
-      "comment_id": "5250007512",
-      "comment_version_key": "5250007512:2026-08-11T08:59:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121897#issuecomment-5250007512",
-      "comment_created_at": "2026-08-11T06:56:30Z",
-      "comment_updated_at": "2026-08-11T08:59:54Z",
-      "comment_body_sha256": "2f7d47f4785199ecd72d5c960dac7a5d7e1f3a5d154edc580058de53a456e758",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Strip the delivery controller from finalization handoffs (P1)** - The new property is removed only for runAttempt. A plugin finalizeSettledTurn instead receives the projection built by prepareHarnessFinalization...; Review finding: [P1] Strip the delivery controller from finalization handoffs — src/agents/harness/selection.ts:718-721 - [medium] Finalization can access private delivery policy... (sha=4f2cd255f60d646c367c784dc27da44334cb6f24)",
-      "expected_head_sha": "4f2cd255f60d646c367c784dc27da44334cb6f24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T09:00:36.851Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-121605-20260810t171350z-2a4019a1",
-        "head_sha": "4f2cd255f60d646c367c784dc27da44334cb6f24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121939:5251095911:2026-08-11T08:59:57Z:clawsweeper_needs_human",
       "comment_id": "5251095911",
@@ -32212,6 +32179,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3446:5243091100:2026-08-11T14:43:02Z:clawsweeper_needs_human",
+      "comment_id": "5243091100",
+      "comment_version_key": "5243091100:2026-08-11T14:43:02Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3446#issuecomment-5243091100",
+      "comment_created_at": "2026-08-10T16:33:32Z",
+      "comment_updated_at": "2026-08-11T14:43:02Z",
+      "comment_body_sha256": "a0bb99958ed47b88db4e1a6188e10969644f59a718daa9f5a048364ef6ad62c8",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The global overrides affect every resolved consumer: Mermaid and Monaco are browser-reachable through DOMPurify, while PostCSS consumes nanoid. Let the current-head pr-gates result co... (sha=5f9d7e8cb21a634e81625e15353e16ab57a6a926)",
+      "expected_head_sha": "5f9d7e8cb21a634e81625e15353e16ab57a6a926",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:43:43.720Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/audit-advisory-bumps",
+        "head_sha": "5f9d7e8cb21a634e81625e15353e16ab57a6a926",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
