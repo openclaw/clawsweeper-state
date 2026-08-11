@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:55:39.033Z",
+  "updated_at": "2026-08-11T07:55:50.228Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121576:5248369038:2026-08-11T02:37:02Z:re_review",
-      "comment_id": "5248369038",
-      "comment_version_key": "5248369038:2026-08-11T02:37:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121576#issuecomment-5248369038",
-      "comment_created_at": "2026-08-11T02:37:02Z",
-      "comment_updated_at": "2026-08-11T02:37:02Z",
-      "comment_body_sha256": "64583b7890087b25d5397de1b0f37ca7687a8407223dca62946c35cb68f2b482",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121576,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T03:07:50.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-special-tokens-separator",
-        "head_sha": "e3f573f541c864a8467e8fdb5899c0563ce27b3e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121576:5239741512:2026-08-11T03:07:14Z:clawsweeper_auto_repair",
       "comment_id": "5239741512",
@@ -31935,6 +31888,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-815",
         "head_sha": "a3109ab4e151e31e8fecff31fa54498880ee4d53",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2856:5250506490:2026-08-11T07:55:07Z:clawsweeper_needs_human",
+      "comment_id": "5250506490",
+      "comment_version_key": "5250506490:2026-08-11T07:55:07Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2856#issuecomment-5250506490",
+      "comment_created_at": "2026-08-11T07:55:07Z",
+      "comment_updated_at": "2026-08-11T07:55:07Z",
+      "comment_body_sha256": "30a426ee9d5b9d58b218f7a3797aecb8c424056afc86f4f23f0140feb0cbc24c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The submitted PR already provides a narrow repair, direct regression coverage, and real CLI evidence; it needs normal maintainer merge review rather than a separate repair lane. (sha=8568fb5f306689b41e37120d51b258895f5fa622)",
+      "expected_head_sha": "8568fb5f306689b41e37120d51b258895f5fa622",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:55:50.228Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-version-walk-runaway",
+        "head_sha": "8568fb5f306689b41e37120d51b258895f5fa622",
         "cluster_id": null,
         "job_path": null
       }
