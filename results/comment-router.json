@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T18:58:23.101Z",
+  "updated_at": "2026-08-11T18:58:33.504Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5228854461:2026-08-08T23:52:31Z:re_review",
-      "comment_id": "5228854461",
-      "comment_version_key": "5228854461:2026-08-08T23:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5228854461",
-      "comment_created_at": "2026-08-08T23:52:31Z",
-      "comment_updated_at": "2026-08-08T23:52:31Z",
-      "comment_body_sha256": "5b9b4047b3b8654e2654dd2cf25224f4a23143df6ed98911a93e25428d377e5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T15:12:50.201Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5228866291:2026-08-08T23:56:10Z:re_review",
       "comment_id": "5228866291",
@@ -31423,6 +31396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122214:5257528474:2026-08-11T18:57:48Z:clawsweeper_needs_human",
+      "comment_id": "5257528474",
+      "comment_version_key": "5257528474:2026-08-11T18:57:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122214#issuecomment-5257528474",
+      "comment_created_at": "2026-08-11T18:57:48Z",
+      "comment_updated_at": "2026-08-11T18:57:48Z",
+      "comment_body_sha256": "97560911ad40eea5673ca0a531ce1a46717eefe4bea6e48487d6482acddd985b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code increases by 34 lines for this bug fix; the two-pass identity collection is needed to know the full configured version map before any archive is rewritten, so no net-n... (sha=22ad7d29af7c0da2d50259ab3f0365a7b9820e8f)",
+      "expected_head_sha": "22ad7d29af7c0da2d50259ab3f0365a7b9820e8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T18:58:33.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ocm-transitive-workspace-pack",
+        "head_sha": "22ad7d29af7c0da2d50259ab3f0365a7b9820e8f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
