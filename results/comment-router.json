@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T15:47:21.923Z",
+  "updated_at": "2026-08-11T15:48:31.067Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110736:5011670269:2026-08-11T09:59:36Z:clawsweeper_needs_human",
-      "comment_id": "5011670269",
-      "comment_version_key": "5011670269:2026-08-11T09:59:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110736#issuecomment-5011670269",
-      "comment_created_at": "2026-07-18T14:44:04Z",
-      "comment_updated_at": "2026-08-11T09:59:36Z",
-      "comment_body_sha256": "378345cce5aa015f9b9ec9f8212832eca176c63572022179124fe4314bcdb4a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110736,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A remote fetch that is slow but not permanently stalled will now fail after 120 seconds rather than consume the broader release-job timeout; this is the intended fail-fast tradeoff. (sha=f7bb7e75003a367b7b5d5602c6590df840caebfb)",
-      "expected_head_sha": "f7bb7e75003a367b7b5d5602c6590df840caebfb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:00:23.302Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/problem-plugin-clawhub-release-git-fetch-operations-lack-timeout-boundin",
-        "head_sha": "f7bb7e75003a367b7b5d5602c6590df840caebfb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110736:5018206253:2026-07-20T02:21:48Z:re_review",
       "comment_id": "5018206253",
@@ -32400,6 +32367,54 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "490378cd690f329b68707e9b93024590ac726991",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121548:5255460720:2026-08-11T15:47:47Z:re_review",
+      "comment_id": "5255460720",
+      "comment_version_key": "5255460720:2026-08-11T15:47:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121548#issuecomment-5255460720",
+      "comment_created_at": "2026-08-11T15:47:47Z",
+      "comment_updated_at": "2026-08-11T15:47:47Z",
+      "comment_body_sha256": "97d2cba4c8b8689729693e8d94ef8ca54d0de08ab761359368e62e99e41c76ec",
+      "source_delivery_id": "00850370-959c-11f1-83b4-903af8e40375",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121548,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T15:48:28.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-qa-docker-entrypoints-20260810",
+        "head_sha": "c17fec2d1b30da4d23ae605e95e33a3fe48f01e3",
         "cluster_id": null,
         "job_path": null
       },
