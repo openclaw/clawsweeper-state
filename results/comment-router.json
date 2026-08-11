@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:22:18.579Z",
+  "updated_at": "2026-08-11T11:22:50.780Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-11T06:52:54Z:clawsweeper_needs_human",
-      "comment_id": "5230661991",
-      "comment_version_key": "5230661991:2026-08-11T06:52:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
-      "comment_created_at": "2026-08-09T08:49:31Z",
-      "comment_updated_at": "2026-08-11T06:52:54Z",
-      "comment_body_sha256": "1f26f6414f1488b1070ceebc4781a73d9716bd895dd6c722074c387b0d5540cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Accept or narrow cross-administrator token use** - The token is deliberately not bound to a Gateway connection or operator identity, so any authenticated administrator can consume it wi...; Review finding: [medium] Accept or narrow cross-administrator token use — src/gateway/server-methods/plugins.ts:83 (sha=5e1a45d6fb445c597a3f8243065a59abcc163228)",
-      "expected_head_sha": "5e1a45d6fb445c597a3f8243065a59abcc163228",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T06:56:29.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/install-policy-warning-gateway",
-        "head_sha": "5e1a45d6fb445c597a3f8243065a59abcc163228",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5231888279:2026-08-09T13:57:37Z:re_review",
       "comment_id": "5231888279",
@@ -31312,6 +31279,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/Peekaboo:400:5252474301:2026-08-11T11:22:07Z:re_review",
+      "comment_id": "5252474301",
+      "comment_version_key": "5252474301:2026-08-11T11:22:07Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/400#issuecomment-5252474301",
+      "comment_created_at": "2026-08-11T11:22:07Z",
+      "comment_updated_at": "2026-08-11T11:22:07Z",
+      "comment_body_sha256": "f54ed4bcfe6a25b10c0f26df0617ebe2eeae97841c378253b83a573e841b0306",
+      "source_delivery_id": "e3b3ffa0-9576-11f1-9fcd-9f498b18f6a7",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 400,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T11:22:48.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/capture-live-sensitivity",
+        "head_sha": "baceec4a1ec6fc1a182e7c63a65100f4859f025a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
