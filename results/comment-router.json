@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:55:13.669Z",
+  "updated_at": "2026-08-11T01:55:20.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5003633197:2026-07-17T13:11:51Z:re_review",
-      "comment_id": "5003633197",
-      "comment_version_key": "5003633197:2026-07-17T13:11:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5003633197",
-      "comment_created_at": "2026-07-17T13:11:51Z",
-      "comment_updated_at": "2026-07-17T13:11:51Z",
-      "comment_body_sha256": "9445c9c05400485d33de6d4fae63af5f2148dec076166353f18e5df632165f2b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:55:51.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5005131588:2026-07-17T16:05:36Z:re_review",
       "comment_id": "5005131588",
@@ -32497,6 +32470,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T01:55:13.669Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121712:5246465092:2026-08-11T01:54:34Z:clawsweeper_needs_human",
+      "comment_id": "5246465092",
+      "comment_version_key": "5246465092:2026-08-11T01:54:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121712#issuecomment-5246465092",
+      "comment_created_at": "2026-08-10T21:53:33Z",
+      "comment_updated_at": "2026-08-11T01:54:34Z",
+      "comment_body_sha256": "28a2672c4b47b3f39545bc36a9f04cfedc2f79292d9f7228e5e79a45f9b70635",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head still has a failed checks-node-compact-large-7 shard and red aggregate CI; the available context does not include its log, so it must be rerun or classified before m... (sha=3334dbb06ec819a9faaa31d12a85948fd89b99fc)",
+      "expected_head_sha": "3334dbb06ec819a9faaa31d12a85948fd89b99fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:55:20.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/sidebar-pinned-group",
+        "head_sha": "3334dbb06ec819a9faaa31d12a85948fd89b99fc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
