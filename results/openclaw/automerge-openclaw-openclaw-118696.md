@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-118696"
 mode: "autonomous"
-run_id: "31520052690"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31520052690"
+run_id: "31523946548"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31523946548"
 head_sha: "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-11T18:13:30.755Z"
+published_at: "2026-08-11T19:21:54.359Z"
 canonical: "#118696"
-canonical_issue: null
+canonical_issue: "#118652"
 canonical_pr: "#118696"
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31520052690](https://github.com/openclaw/clawsweeper/actions/runs/31520052690)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31523946548](https://github.com/openclaw/clawsweeper/actions/runs/31523946548)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #118696
 
 ## Summary
 
-Make PR #118696 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#118696 is the canonical narrow repair for #118652, but its hydrated head is stale/conflicted against current main. Keep it open and repair the writable contributor branch; #120386 is an independent timeout-cancellation defect.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #118696 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #118696 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #118696 | fix_needed | planned | canonical | Repair the existing same-repository writable branch, preserving the PR body attribution to #118652 and @yozakura-ava. Merge is disabled by this job. |
+| #118652 | keep_related | planned | related | Leave the issue open until the repaired candidate has exact-head validation; close actions are blocked by the job. |
+| #120386 | keep_independent | planned | independent | Its macOS/service timeout-cancellation decision surface is outside this shutdown-only repair cluster. |
 
 ## Needs Human
 

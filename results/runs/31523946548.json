@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-118696",
+  "mode": "autonomous",
+  "run_id": "31523946548",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31523946548",
+  "head_sha": "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118696.md",
+  "published_at": "2026-08-11T19:21:54.359Z",
+  "canonical": "#118696",
+  "canonical_issue": "#118652",
+  "canonical_pr": "#118696",
+  "summary": "#118696 is the canonical narrow repair for #118652, but its hydrated head is stale/conflicted against current main. Keep it open and repair the writable contributor branch; #120386 is an independent timeout-cancellation defect.",
+  "actions": [
+    {
+      "target": "#118696",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#118696",
+      "candidate_fix": "#118696",
+      "reason": "Repair the existing same-repository writable branch, preserving the PR body attribution to #118652 and @yozakura-ava. Merge is disabled by this job."
+    },
+    {
+      "target": "#118652",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#118696",
+      "candidate_fix": "#118696",
+      "reason": "Leave the issue open until the repaired candidate has exact-head validation; close actions are blocked by the job."
+    },
+    {
+      "target": "#120386",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#118696",
+      "candidate_fix": null,
+      "reason": "Its macOS/service timeout-cancellation decision surface is outside this shutdown-only repair cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
