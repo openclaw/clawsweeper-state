@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:54:04.659Z",
+  "updated_at": "2026-08-11T01:54:45.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4842373781:2026-06-30T10:27:22Z:re_review",
-      "comment_id": "4842373781",
-      "comment_version_key": "4842373781:2026-06-30T10:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4842373781",
-      "comment_created_at": "2026-06-30T10:27:22Z",
-      "comment_updated_at": "2026-06-30T10:27:22Z",
-      "comment_body_sha256": "25397138a02657960f191459ef7284c544a216dffe85e8e8ff3ae65639f88ba8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 3 commits replayed, no conflicts). new head e48583a664. this refresh resolves the check-docs gate: docs/docs_map.md is generated from doc headings, and the prior failure was relative to the older base; against current main, `pnpm docs:map:check` passes with no diff and the committed docs_map.md matches a fresh regen. no behavior change. pr-touched unit tests all green locally (command-queue 34, context-engine-maintenance 30, transcript-rewrite 7, diagnostic 73 — 181 total)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:55:51.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4867791368:2026-07-02T16:07:54Z:re_review",
       "comment_id": "4867791368",
@@ -32438,6 +32411,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1115:5248131938:2026-08-11T01:53:58Z:re_review",
+      "comment_id": "5248131938",
+      "comment_version_key": "5248131938:2026-08-11T01:53:58Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1115#issuecomment-5248131938",
+      "comment_created_at": "2026-08-11T01:53:58Z",
+      "comment_updated_at": "2026-08-11T01:53:58Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "85343390-9527-11f1-9e7b-a40f75334849",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1115,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:54:43.166Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unify-github-app-auth",
+        "head_sha": "cdf2a6ead92276bd467bdda1e42d1f51880b6caf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
