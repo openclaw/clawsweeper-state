@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:13:56.166Z",
+  "updated_at": "2026-08-11T13:14:00.364Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121917:5250483287:2026-08-11T07:52:25Z:clawsweeper_auto_repair",
-      "comment_id": "5250483287",
-      "comment_version_key": "5250483287:2026-08-11T07:52:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121917#issuecomment-5250483287",
-      "comment_created_at": "2026-08-11T07:52:25Z",
-      "comment_updated_at": "2026-08-11T07:52:25Z",
-      "comment_body_sha256": "9c25029d0e9edebc3cc24639aaae0ba63c0d49cbd55a354ae99f007d7323701a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121917,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7189826f1865284cee7fcc132176b7f36cdad6bb)",
-      "expected_head_sha": "7189826f1865284cee7fcc132176b7f36cdad6bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T07:53:11.636Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "oc-358/scope-sqlite-lifecycle-ci",
-        "head_sha": "7189826f1865284cee7fcc132176b7f36cdad6bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121846:5248833723:2026-08-11T07:53:58Z:clawsweeper_needs_human",
       "comment_id": "5248833723",
@@ -31753,6 +31720,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121900:5250022479:2026-08-11T13:12:22Z:clawsweeper_needs_human",
+      "comment_id": "5250022479",
+      "comment_version_key": "5250022479:2026-08-11T13:12:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121900#issuecomment-5250022479",
+      "comment_created_at": "2026-08-11T06:58:21Z",
+      "comment_updated_at": "2026-08-11T13:12:22Z",
+      "comment_body_sha256": "bfe6ebc4ce70b2f7a4ead6dc6aa3fcf96dd34cbf46b249b5e084202f75800e22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Declare an entitled shared Keychain group (P1)** - The new comment equates the App Group with a Keychain access group, but neither the host nor Share extension declares keychain-access-groups. The calls at lines...; Review finding: [P1] Declare an entitled shared Keychain group — apps/shared/OpenClawKit/Sources/OpenClawKit/ShareGatewayRelaySettings.swift:37-38 - [medium] Shared Keychain acces... (sha=2c5ca4bf58b513600d202895af51425529f48849)",
+      "expected_head_sha": "2c5ca4bf58b513600d202895af51425529f48849",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:14:00.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-815",
+        "head_sha": "2c5ca4bf58b513600d202895af51425529f48849",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
