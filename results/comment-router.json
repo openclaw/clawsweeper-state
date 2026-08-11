@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T12:56:37.824Z",
+  "updated_at": "2026-08-11T12:57:57.174Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121560:5239196783:2026-08-11T07:08:16Z:clawsweeper_needs_human",
-      "comment_id": "5239196783",
-      "comment_version_key": "5239196783:2026-08-11T07:08:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121560#issuecomment-5239196783",
-      "comment_created_at": "2026-08-10T10:54:37Z",
-      "comment_updated_at": "2026-08-11T07:08:16Z",
-      "comment_body_sha256": "57f7894cd8f3cf7c7d4e029d245d994f0533a513b8310be6339f11f7c3a8be9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121560,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Bind recovery transcripts to a session incarnation (P1)** - After an owner’s session is evicted or invalidated, another owner can create the same client-supplied ID. That new live session passes the owner check,...; Review finding: [P1] Bind recovery transcripts to a session incarnation — src/system-agent/transcript-store.ts:34-36 - [high] Recovered rows are not bound to their producing owner... (sha=0d14098305c6582d957b921ade50bd7fa583cb6b)",
-      "expected_head_sha": "0d14098305c6582d957b921ade50bd7fa583cb6b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T07:09:10.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-reload-recovery-protocol",
-        "head_sha": "0d14098305c6582d957b921ade50bd7fa583cb6b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121562:5239219348:2026-08-11T07:08:33Z:clawsweeper_needs_human",
       "comment_id": "5239219348",
@@ -31660,6 +31627,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121618:5253470057:2026-08-11T12:57:14Z:re_review",
+      "comment_id": "5253470057",
+      "comment_version_key": "5253470057:2026-08-11T12:57:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121618#issuecomment-5253470057",
+      "comment_created_at": "2026-08-11T12:57:14Z",
+      "comment_updated_at": "2026-08-11T12:57:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "2d5a7280-9584-11f1-8f3f-7cd55e31b316",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121618,
+      "author": "fr-meyer",
+      "author_id": 26621962,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T12:57:54.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-snapshot-acl-module",
+        "head_sha": "084d57b125e6d3df33e52d8e15fbe91728d2cca8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
