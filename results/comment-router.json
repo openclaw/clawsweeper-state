@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:46:45.258Z",
+  "updated_at": "2026-08-11T01:48:13.782Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114072:5232342319:2026-08-09T15:42:02Z:re_review",
-      "comment_id": "5232342319",
-      "comment_version_key": "5232342319:2026-08-09T15:42:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5232342319",
-      "comment_created_at": "2026-08-09T15:42:02Z",
-      "comment_updated_at": "2026-08-09T15:42:02Z",
-      "comment_body_sha256": "e366f71d49c7ddd43443080212719d8c0f2c15809b2ec1ce7437f8195591ace1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114072,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:50:11.405Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121660:5244640748:2026-08-10T20:49:19Z:clawsweeper_needs_human",
       "comment_id": "5244640748",
@@ -32377,6 +32350,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:388:5247852762:2026-08-11T01:47:35Z:clawsweeper_needs_human",
+      "comment_id": "5247852762",
+      "comment_version_key": "5247852762:2026-08-11T01:47:35Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/388#issuecomment-5247852762",
+      "comment_created_at": "2026-08-11T01:04:56Z",
+      "comment_updated_at": "2026-08-11T01:47:35Z",
+      "comment_body_sha256": "20a8c04d53aa1194796beeccf0a843d69f025a7ea17eb62bcb7f121f0055cd77",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that call action or set-value without a current snapshot will now refuse until they run see or provide an explicit target; this intentional compatibility change is do... (sha=bd851b20c3ed4c732fe947cae709f0dc07014141)",
+      "expected_head_sha": "bd851b20c3ed4c732fe947cae709f0dc07014141",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:48:13.782Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/action-snapshot-required",
+        "head_sha": "bd851b20c3ed4c732fe947cae709f0dc07014141",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
