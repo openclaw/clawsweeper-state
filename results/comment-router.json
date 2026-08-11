@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:05:59.303Z",
+  "updated_at": "2026-08-11T17:06:04.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107295:4969333447:2026-08-11T12:00:19Z:clawsweeper_needs_human",
-      "comment_id": "4969333447",
-      "comment_version_key": "4969333447:2026-08-11T12:00:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107295#issuecomment-4969333447",
-      "comment_created_at": "2026-07-14T12:50:31Z",
-      "comment_updated_at": "2026-08-11T12:00:19Z",
-      "comment_body_sha256": "e2523a5389bc7d6535366ecd493c2883fd14fa5c91c1e7b271a05d1f6de6cc1d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107295,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep approval authority out of the public SDK (P1)** - This export publishes a helper that reads the process-local approval token and creates an operator.approvals client. Gateway treats that local backend conne...; Review finding: [P1] Keep approval authority out of the public SDK — src/plugin-sdk/gateway-runtime.ts:37 - [high] Public SDK exposes process-local approval authority — src/plugin... (sha=25668f07b66b79b00196632e20005aac82221163)",
-      "expected_head_sha": "25668f07b66b79b00196632e20005aac82221163",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T12:01:22.791Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/externalize-qqbot",
-        "head_sha": "25668f07b66b79b00196632e20005aac82221163",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122017:5252865949:2026-08-11T12:00:51Z:clawsweeper_needs_human",
       "comment_id": "5252865949",
@@ -32513,6 +32480,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T17:05:59.303Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122023:5253536720:2026-08-11T17:05:12Z:clawsweeper_auto_repair",
+      "comment_id": "5253536720",
+      "comment_version_key": "5253536720:2026-08-11T17:05:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122023#issuecomment-5253536720",
+      "comment_created_at": "2026-08-11T13:03:33Z",
+      "comment_updated_at": "2026-08-11T17:05:12Z",
+      "comment_body_sha256": "56f7227dc504b39d3924d9f30c05f3c475048a8002929531d5d000cadd115edd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122023,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d47d2a89496440d2eb893b6d7566c9e4a619728b)",
+      "expected_head_sha": "d47d2a89496440d2eb893b6d7566c9e4a619728b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T17:06:04.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-121617",
+        "head_sha": "d47d2a89496440d2eb893b6d7566c9e4a619728b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
