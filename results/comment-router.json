@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:04:18.913Z",
+  "updated_at": "2026-08-11T22:04:51.997Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:4509650455:2026-05-21T15:14:22Z:re_review",
-      "comment_id": "4509650455",
-      "comment_version_key": "4509650455:2026-05-21T15:14:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4509650455",
-      "comment_created_at": "2026-05-21T15:14:22Z",
-      "comment_updated_at": "2026-05-21T15:14:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T18:57:02.887Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:4510287039:2026-05-21T16:20:08Z:re_review",
       "comment_id": "4510287039",
@@ -31043,6 +31016,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T22:04:18.913Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1127:5259204368:2026-08-11T22:04:03Z:clawsweeper_needs_human",
+      "comment_id": "5259204368",
+      "comment_version_key": "5259204368:2026-08-11T22:04:03Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1127#issuecomment-5259204368",
+      "comment_created_at": "2026-08-11T21:44:13Z",
+      "comment_updated_at": "2026-08-11T22:04:03Z",
+      "comment_body_sha256": "c2ac45fc0b736a9da07ef165fc56565b8bf44109a6ddd7420794173258e03bac",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1127,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Committed macOS logs and equivalence artifacts are useful, but the PR explicitly lacks the required fresh current-head Docker-backed C...; Review finding: [P2] Pin jq's expected digest before installing it — docs/proof/split-dashboard-worker-tests/container-proof.sh:16-24 - [medium] Downloaded checksum manifest is th... (sha=c54565b253df36d03e49f3acd8499e4b29f9d516)",
+      "expected_head_sha": "c54565b253df36d03e49f3acd8499e4b29f9d516",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:04:51.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-dashboard-worker-tests",
+        "head_sha": "c87f6b3643b2145c2a5ffbee248e3639c624248f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
