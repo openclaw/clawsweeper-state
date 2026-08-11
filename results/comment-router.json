@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:59:52.676Z",
+  "updated_at": "2026-08-11T14:59:58.947Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:58:5194538175:2026-08-11T09:10:58Z:clawsweeper_needs_human",
-      "comment_id": "5194538175",
-      "comment_version_key": "5194538175:2026-08-11T09:10:58Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194538175",
-      "comment_created_at": "2026-08-05T16:34:55Z",
-      "comment_updated_at": "2026-08-11T09:10:58Z",
-      "comment_body_sha256": "5b612095fb5305049f7f136802df4483f9ef20ccf1351dd0d3c2cef8c418b823",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The npm release and v0.3.21 tag already exist while main still declares 0.3.20, so a release owner must confirm that merging this source-of-record reconciliation is intentional. (sha=dbd761673e104f57a1ac470d4db7aa928b5b75b4)",
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T09:53:35.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194599966:2026-08-05T16:41:05Z:maintainer_approve_automerge",
       "comment_id": "5194599966",
@@ -32384,6 +32337,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-120557-session-quota-provider",
         "head_sha": "9a40272255bfe66f14f23a56524072e8838f1610",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121108:5233280394:2026-08-11T14:54:51Z:clawsweeper_auto_repair",
+      "comment_id": "5233280394",
+      "comment_version_key": "5233280394:2026-08-11T14:54:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121108#issuecomment-5233280394",
+      "comment_created_at": "2026-08-09T18:46:55Z",
+      "comment_updated_at": "2026-08-11T14:54:51Z",
+      "comment_body_sha256": "7a237499f837e3bc607329ab1c32e2004b97873695ac55dcdc64bda524f9ad57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=73d98e522202ba34fe9da3ffc4188ee78fe441a0)",
+      "expected_head_sha": "73d98e522202ba34fe9da3ffc4188ee78fe441a0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:59:58.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/121049-terminate-attached-subshells",
+        "head_sha": "4655d7473c1ebfa038481008bd345da405ebbcd9",
         "cluster_id": null,
         "job_path": null
       }
