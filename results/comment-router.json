@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:55:54.777Z",
+  "updated_at": "2026-08-11T02:56:14.834Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121671:5246770303:2026-08-10T22:31:38Z:re_review",
-      "comment_id": "5246770303",
-      "comment_version_key": "5246770303:2026-08-10T22:31:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121671#issuecomment-5246770303",
-      "comment_created_at": "2026-08-10T22:31:38Z",
-      "comment_updated_at": "2026-08-10T22:31:38Z",
-      "comment_body_sha256": "a638fed37ec0aa0d3072ac984385c79e320f0a2fbc5c61f9f6da633b7877b176",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121671,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T22:50:33.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upbeat-greider-ef8777",
-        "head_sha": "fa13b40bb43486028d1e21895129e4c8c7787b01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121129:5246785028:2026-08-10T22:33:35Z:re_review",
       "comment_id": "5246785028",
@@ -31912,6 +31865,39 @@
         "kind": "pull_request",
         "branch": "steipete/subagent-activity-rows-apple",
         "head_sha": "d4b9c3485c2b57ecf56d61e2a8e17b9032812dcd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121818:5248469649:2026-08-11T02:55:24Z:clawsweeper_needs_human",
+      "comment_id": "5248469649",
+      "comment_version_key": "5248469649:2026-08-11T02:55:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121818#issuecomment-5248469649",
+      "comment_created_at": "2026-08-11T02:55:24Z",
+      "comment_updated_at": "2026-08-11T02:55:24Z",
+      "comment_body_sha256": "1d59463f38d6ab18c712347097afe257f70a1f28698e970b404bb2a5972198c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not delegate the Gateway token to read/write project clients (P1)** - These methods expose the Gateway-wide GitHub credential at read/write scope: projects.searchRemote can return private repository metadata,...; Review finding: [P1] Do not delegate the Gateway token to read/write project clients — src/gateway/methods/core-descriptors.ts:501-507 - [high] Shared GitHub credential crosses op... (sha=c84f5382077aaada1b37142474b0f45f29e22a68)",
+      "expected_head_sha": "c84f5382077aaada1b37142474b0f45f29e22a68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:56:14.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/project-clone-github",
+        "head_sha": "c84f5382077aaada1b37142474b0f45f29e22a68",
         "cluster_id": null,
         "job_path": null
       }
