@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:09:07.204Z",
+  "updated_at": "2026-08-11T01:09:24.426Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120855:5229818699:2026-08-10T20:03:11Z:clawsweeper_needs_human",
-      "comment_id": "5229818699",
-      "comment_version_key": "5229818699:2026-08-10T20:03:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120855#issuecomment-5229818699",
-      "comment_created_at": "2026-08-09T04:47:18Z",
-      "comment_updated_at": "2026-08-10T20:03:11Z",
-      "comment_body_sha256": "305d5f90ac7c01bf0871809ec4ecded83f0e057d52ff44df596211e399041976",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120855,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive optional Plugin SDK and Gateway catalog field is compatibility-sensitive; merge after the in-progress exact-head checks confirm the generated API contract and affected cl... (sha=f236330f799705265d74cd4bf944ef0c68342091)",
-      "expected_head_sha": "f236330f799705265d74cd4bf944ef0c68342091",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:47:41.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/pair-client-presentation",
-        "head_sha": "87a63349c4c1d57c11b9720363de1b03f9c52f7d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121274:5235333920:2026-08-10T20:02:25Z:clawsweeper_auto_repair",
       "comment_id": "5235333920",
@@ -32224,6 +32191,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121787:5247874369:2026-08-11T01:08:39Z:re_review",
+      "comment_id": "5247874369",
+      "comment_version_key": "5247874369:2026-08-11T01:08:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121787#issuecomment-5247874369",
+      "comment_created_at": "2026-08-11T01:08:39Z",
+      "comment_updated_at": "2026-08-11T01:08:39Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "source_delivery_id": "3010e8f0-9521-11f1-839d-cf33828647ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121787,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:09:22.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/direct-ingress-plugin-registry-main",
+        "head_sha": "ac8dc8d64f3594737e162c5d759c97c65e6b2a17",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
