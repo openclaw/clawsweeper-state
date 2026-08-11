@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:09:54.214Z",
+  "updated_at": "2026-08-11T11:10:07.845Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2852:5249743106:2026-08-11T06:23:56Z:re_review",
-      "comment_id": "5249743106",
-      "comment_version_key": "5249743106:2026-08-11T06:23:56Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2852#issuecomment-5249743106",
-      "comment_created_at": "2026-08-11T06:23:56Z",
-      "comment_updated_at": "2026-08-11T06:23:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "3bf5c920-954d-11f1-85d7-ddd13d55dcc7",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2852,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T06:24:35.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cost-cache-stable-save-2495",
-        "head_sha": "dae98aea076ad8ceccec321da9b57985c4c338c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2852:5248523433:2026-08-11T06:28:46Z:clawsweeper_auto_repair",
       "comment_id": "5248523433",
@@ -31619,6 +31571,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:312:5226943919:2026-08-11T11:09:15Z:clawsweeper_auto_repair",
+      "comment_id": "5226943919",
+      "comment_version_key": "5226943919:2026-08-11T11:09:15Z",
+      "comment_url": "https://github.com/openclaw/clownfish/pull/312#issuecomment-5226943919",
+      "comment_created_at": "2026-08-08T16:13:30Z",
+      "comment_updated_at": "2026-08-11T11:09:15Z",
+      "comment_body_sha256": "29b242e6a73ab9d54391018522611fe389140ee536ffe47f032312fd0194a568",
+      "repo": "openclaw/clownfish",
+      "issue_number": 312,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=31f2feffac0d58ca1beded6ab883957acb7d5ae0)",
+      "expected_head_sha": "31f2feffac0d58ca1beded6ab883957acb7d5ae0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-11T11:10:07.845Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clownfish-commonmark-runtime-20260808",
+        "head_sha": "31f2feffac0d58ca1beded6ab883957acb7d5ae0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
