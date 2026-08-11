@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:56:51.107Z",
+  "updated_at": "2026-08-11T13:57:47.158Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5240706263:2026-08-10T13:07:50Z:re_review",
-      "comment_id": "5240706263",
-      "comment_version_key": "5240706263:2026-08-10T13:07:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5240706263",
-      "comment_created_at": "2026-08-10T13:07:50Z",
-      "comment_updated_at": "2026-08-10T13:07:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:04:33.836Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5240927896:2026-08-10T13:27:21Z:re_review",
       "comment_id": "5240927896",
@@ -32112,6 +32085,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121939:5251095911:2026-08-11T13:57:04Z:clawsweeper_needs_human",
+      "comment_id": "5251095911",
+      "comment_version_key": "5251095911:2026-08-11T13:57:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121939#issuecomment-5251095911",
+      "comment_created_at": "2026-08-11T08:59:57Z",
+      "comment_updated_at": "2026-08-11T13:57:04Z",
+      "comment_body_sha256": "f1d64c73ed0d69693771925ac9d180a37b8f6ac98683d94acc3a920f27c621c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121939,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact current head has cancelled or queued native/platform checks, so merge should wait for the repository’s generated-artifact validation and aggregate gate on that head. (sha=1ac36c3fc424cd6b341986467b3306d50a42f44c)",
+      "expected_head_sha": "1ac36c3fc424cd6b341986467b3306d50a42f44c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:57:47.158Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "1ac36c3fc424cd6b341986467b3306d50a42f44c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
