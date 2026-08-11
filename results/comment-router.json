@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T21:59:26.771Z",
+  "updated_at": "2026-08-11T21:59:39.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5247137451:2026-08-10T23:21:53Z:re_review",
-      "comment_id": "5247137451",
-      "comment_version_key": "5247137451:2026-08-10T23:21:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5247137451",
-      "comment_created_at": "2026-08-10T23:21:53Z",
-      "comment_updated_at": "2026-08-10T23:21:53Z",
-      "comment_body_sha256": "3e2f9e01911d293730f00c8593e49bc50197438f3d89b106596b7327e4db4ebb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T18:55:45.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5247654490:2026-08-11T00:33:16Z:re_review",
       "comment_id": "5247654490",
@@ -30745,6 +30718,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T21:59:26.771Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90745:4634964020:2026-08-11T21:56:40Z:clawsweeper_needs_human",
+      "comment_id": "4634964020",
+      "comment_version_key": "4634964020:2026-08-11T21:56:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-4634964020",
+      "comment_created_at": "2026-06-05T19:49:23Z",
+      "comment_updated_at": "2026-08-11T21:56:40Z",
+      "comment_body_sha256": "b24b89c911e93cc3fb785dc4ce426403f0e93306224bda9140fd473c8cc86e04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 90745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides local module output but no exact-head Telegram run or repository-approved channel harness proving the repaired end-to-end behav...; Review finding: [P1] Keep room-event delivery directives trusted — src/agents/embedded-agent-runner/run/runtime-context-prompt.ts:267 - [P2] Preserve reply metadata through queued... (sha=ac9bbfe84a3f8e994d749f37e6c71c0eaa1ac0ca)",
+      "expected_head_sha": "ac9bbfe84a3f8e994d749f37e6c71c0eaa1ac0ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T21:59:39.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-context-runtime",
+        "head_sha": "ac9bbfe84a3f8e994d749f37e6c71c0eaa1ac0ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
