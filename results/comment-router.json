@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:58:01.094Z",
+  "updated_at": "2026-08-11T14:58:18.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2854:5251326124:2026-08-11T09:23:40Z:re_review",
-      "comment_id": "5251326124",
-      "comment_version_key": "5251326124:2026-08-11T09:23:40Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2854#issuecomment-5251326124",
-      "comment_created_at": "2026-08-11T09:23:40Z",
-      "comment_updated_at": "2026-08-11T09:23:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "57812400-9566-11f1-9b8a-e82a8ce3d154",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2854,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T09:24:19.400Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feat-cli-session-grouping",
-        "head_sha": "7a851ad7f8b51d4125e074241204be4ed2086644",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2857:5250519428:2026-08-11T09:25:33Z:clawsweeper_needs_human",
       "comment_id": "5250519428",
@@ -32493,6 +32445,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T14:58:01.094Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122050:5254195301:2026-08-11T14:57:34Z:clawsweeper_needs_human",
+      "comment_id": "5254195301",
+      "comment_version_key": "5254195301:2026-08-11T14:57:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122050#issuecomment-5254195301",
+      "comment_created_at": "2026-08-11T14:01:19Z",
+      "comment_updated_at": "2026-08-11T14:57:34Z",
+      "comment_body_sha256": "19d8d3daccf46f9c9c9f3afe32e7c5e07ea8d39078e8e6e564c7dcd72550ede1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122050,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This test changes process-wide registry setup and teardown; exact-head shared-process CI must remain green before merge because an ordering regression would surface as CI flakiness ra... (sha=f4844a3a6278b419bab3edb470308be95f014158)",
+      "expected_head_sha": "f4844a3a6278b419bab3edb470308be95f014158",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:58:18.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qual/gateway-kernel-registry",
+        "head_sha": "f4844a3a6278b419bab3edb470308be95f014158",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
