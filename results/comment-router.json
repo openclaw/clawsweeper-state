@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:08:29.883Z",
+  "updated_at": "2026-08-11T09:08:31.148Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121541:5249077384:2026-08-11T04:44:13Z:re_review",
-      "comment_id": "5249077384",
-      "comment_version_key": "5249077384:2026-08-11T04:44:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121541#issuecomment-5249077384",
-      "comment_created_at": "2026-08-11T04:44:13Z",
-      "comment_updated_at": "2026-08-11T04:44:13Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121541,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T04:46:48.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/strip-model-token-separator-121426",
-        "head_sha": "3ceb4f0f905130271a574f4a436990ad4f271345",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5249106124:2026-08-11T04:49:10Z:re_review",
       "comment_id": "5249106124",
@@ -31340,6 +31293,39 @@
         "kind": "pull_request",
         "branch": "claude/no-stored-default",
         "head_sha": "06e5c47d0f4ef9a9ed51a20fd40bc27c2f76f0e3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121647:5242645745:2026-08-11T08:59:17Z:clawsweeper_needs_human",
+      "comment_id": "5242645745",
+      "comment_version_key": "5242645745:2026-08-11T08:59:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121647#issuecomment-5242645745",
+      "comment_created_at": "2026-08-10T15:53:13Z",
+      "comment_updated_at": "2026-08-11T08:59:17Z",
+      "comment_body_sha256": "765c721ece51cbe26d87d9459f340b89fe10300f852fc8ba128510271aa8aba9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121647,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A linked real Gateway run proves the earlier range behavior at d911, but it predates the final v2 contract and legacy recovery changes... (sha=9165207c5d12bd718210caafcbf47d414e8ca088)",
+      "expected_head_sha": "9165207c5d12bd718210caafcbf47d414e8ca088",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T09:08:31.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-engine-range-cap-121623",
+        "head_sha": "9165207c5d12bd718210caafcbf47d414e8ca088",
         "cluster_id": null,
         "job_path": null
       }
