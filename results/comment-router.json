@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:55:05.862Z",
+  "updated_at": "2026-08-11T02:55:31.865Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121668:5246683495:2026-08-10T22:20:08Z:re_review",
-      "comment_id": "5246683495",
-      "comment_version_key": "5246683495:2026-08-10T22:20:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121668#issuecomment-5246683495",
-      "comment_created_at": "2026-08-10T22:20:08Z",
-      "comment_updated_at": "2026-08-10T22:20:08Z",
-      "comment_body_sha256": "fcba21f2a3c4075ae76f8bea5bb18bdb6b09ffc248c4dddd7271474b268685ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121668,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T22:50:33.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-native-hook-relay-kill-switch",
-        "head_sha": "fcdfa8a831e799375618f43fd24104aad5b9deb0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105643:5246730916:2026-08-10T22:26:18Z:re_review",
       "comment_id": "5246730916",
@@ -31943,6 +31896,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T02:55:05.862Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121814:5248466023:2026-08-11T02:54:44Z:clawsweeper_needs_human",
+      "comment_id": "5248466023",
+      "comment_version_key": "5248466023:2026-08-11T02:54:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121814#issuecomment-5248466023",
+      "comment_created_at": "2026-08-11T02:54:44Z",
+      "comment_updated_at": "2026-08-11T02:54:44Z",
+      "comment_body_sha256": "afeb77f969b2ef5fc3d81ddf30894ed6563c11b7184d5b5ab9671283e6db4021",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121814,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not fetch individual proposed translation-memory blobs because its promisor remote was unreachable; strict exact-head CI is the available integrity proof... (sha=fc96a4329991e41f7f12e5f984faae833607deb1)",
+      "expected_head_sha": "fc96a4329991e41f7f12e5f984faae833607deb1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:55:31.865Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "fc96a4329991e41f7f12e5f984faae833607deb1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
