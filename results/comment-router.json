@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:12:23.313Z",
+  "updated_at": "2026-08-11T13:12:30.763Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111784:5250454082:2026-08-11T07:48:54Z:re_review",
-      "comment_id": "5250454082",
-      "comment_version_key": "5250454082:2026-08-11T07:48:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111784#issuecomment-5250454082",
-      "comment_created_at": "2026-08-11T07:48:54Z",
-      "comment_updated_at": "2026-08-11T07:48:54Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "1a6ac970-9559-11f1-9f05-d74be9b378d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111784,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T07:49:32.555Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-lab-upgrade-connect-timeout",
-        "head_sha": "452f3fbdca9699750df27d70bf4f248d85ef37e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118954:5171717737:2026-08-11T07:48:29Z:clawsweeper_needs_human",
       "comment_id": "5171717737",
@@ -31750,6 +31702,39 @@
         "kind": "pull_request",
         "branch": "fix/diff-theme-color-normalization",
         "head_sha": "9d4c46f6b60b8082c999aa3e530c34e59672baf0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3450:5247753279:2026-08-11T13:11:48Z:clawsweeper_auto_repair",
+      "comment_id": "5247753279",
+      "comment_version_key": "5247753279:2026-08-11T13:11:48Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3450#issuecomment-5247753279",
+      "comment_created_at": "2026-08-11T00:47:29Z",
+      "comment_updated_at": "2026-08-11T13:11:48Z",
+      "comment_body_sha256": "122e08b730fe73f766ba25d398da0c5e77cccb6dbfee2840af04c908e5119dbf",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5da79064129e785bf8c1019c3363ae71fc1263a1)",
+      "expected_head_sha": "5da79064129e785bf8c1019c3363ae71fc1263a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:12:30.763Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/fix-skills-sh-route-params",
+        "head_sha": "5da79064129e785bf8c1019c3363ae71fc1263a1",
         "cluster_id": null,
         "job_path": null
       }
