@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:33:51.362Z",
+  "updated_at": "2026-08-11T13:41:11.304Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111937:5029060297:2026-08-11T07:52:17Z:clawsweeper_auto_repair",
-      "comment_id": "5029060297",
-      "comment_version_key": "5029060297:2026-08-11T07:52:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111937#issuecomment-5029060297",
-      "comment_created_at": "2026-07-21T01:11:02Z",
-      "comment_updated_at": "2026-08-11T07:52:17Z",
-      "comment_body_sha256": "f800b828fc0ce06001b82054e140c5526f95bafb3650a20edfafa89a322713ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111937,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7)",
-      "expected_head_sha": "ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:01:48.532Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mattermost-fallback-warning-111778",
-        "head_sha": "ce7cd6b79680fe7671fdb7b65f79ea4e4fd277a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5250561958:2026-08-11T08:01:35Z:re_review",
       "comment_id": "5250561958",
@@ -31787,6 +31754,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2863:5253906652:2026-08-11T13:40:32Z:clawsweeper_needs_human",
+      "comment_id": "5253906652",
+      "comment_version_key": "5253906652:2026-08-11T13:40:32Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2863#issuecomment-5253906652",
+      "comment_created_at": "2026-08-11T13:36:31Z",
+      "comment_updated_at": "2026-08-11T13:40:32Z",
+      "comment_body_sha256": "bd7ae17b3422a9efd2c252233ab6e06ccb2e96de63f8179609cfe5148c7e46b9",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2863,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading intentionally invalidates the derived CostUsage SQLite cache through the regenerated parser hash; reports may need a one-time session-file rescan before historical cost data... (sha=2b773e990a146531ba9a931f7b82a3429ab6b5eb)",
+      "expected_head_sha": "2b773e990a146531ba9a931f7b82a3429ab6b5eb",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-11T13:41:11.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-fork-cost-overcount",
+        "head_sha": "2b773e990a146531ba9a931f7b82a3429ab6b5eb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
