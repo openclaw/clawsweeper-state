@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T03:50:29.930Z",
+  "updated_at": "2026-08-11T03:50:39.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4811277160:2026-06-26T16:06:36Z:re_review",
-      "comment_id": "4811277160",
-      "comment_version_key": "4811277160:2026-06-26T16:06:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4811277160",
-      "comment_created_at": "2026-06-26T16:06:36Z",
-      "comment_updated_at": "2026-06-26T16:06:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T23:05:54.697Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4812691745:2026-06-26T19:15:35Z:re_review",
       "comment_id": "4812691745",
@@ -32114,6 +32087,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T03:50:29.930Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121183:5233525038:2026-08-11T03:48:47Z:clawsweeper_needs_human",
+      "comment_id": "5233525038",
+      "comment_version_key": "5233525038:2026-08-11T03:48:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121183#issuecomment-5233525038",
+      "comment_created_at": "2026-08-09T19:47:26Z",
+      "comment_updated_at": "2026-08-11T03:48:47Z",
+      "comment_body_sha256": "5e064a79893ffc851d1543f672a6aed70499a53a510e8252981776a673a7c9b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes a hung setup-owned Gateway from the ordinary two-second return fallback to the existing local-mode 122-second bound; it remains capped but can leave a failed onboardin... (sha=582a065fffa0bb40cdae43bf832f195ef785d9c0)",
+      "expected_head_sha": "582a065fffa0bb40cdae43bf832f195ef785d9c0",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-11T03:50:39.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/setup-tui-cleanup-order-20260810",
+        "head_sha": "582a065fffa0bb40cdae43bf832f195ef785d9c0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
