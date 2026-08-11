@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:06:04.574Z",
+  "updated_at": "2026-08-11T09:06:36.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clownfish:312:5226943919:2026-08-11T04:19:42Z:clawsweeper_auto_repair",
-      "comment_id": "5226943919",
-      "comment_version_key": "5226943919:2026-08-11T04:19:42Z",
-      "comment_url": "https://github.com/openclaw/clownfish/pull/312#issuecomment-5226943919",
-      "comment_created_at": "2026-08-08T16:13:30Z",
-      "comment_updated_at": "2026-08-11T04:19:42Z",
-      "comment_body_sha256": "47c9cf2a98bfaef5a6d754fce0f232ceb76c04e78755c795f2062f21b11d3fc1",
-      "repo": "openclaw/clownfish",
-      "issue_number": 312,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=31f2feffac0d58ca1beded6ab883957acb7d5ae0)",
-      "expected_head_sha": "31f2feffac0d58ca1beded6ab883957acb7d5ae0",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-11T04:20:23.132Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clownfish-commonmark-runtime-20260808",
-        "head_sha": "31f2feffac0d58ca1beded6ab883957acb7d5ae0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:393:5248855311:2026-08-11T04:20:08Z:clawsweeper_auto_repair",
       "comment_id": "5248855311",
@@ -31343,6 +31310,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121871:5251155515:2026-08-11T09:06:02Z:re_review",
+      "comment_id": "5251155515",
+      "comment_version_key": "5251155515:2026-08-11T09:06:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121871#issuecomment-5251155515",
+      "comment_created_at": "2026-08-11T09:06:02Z",
+      "comment_updated_at": "2026-08-11T09:06:02Z",
+      "comment_body_sha256": "52287e6f5e63301bf422589f4943b70613e841a3fdd704af025d1c43650e27b2",
+      "source_delivery_id": "e0fcf090-9563-11f1-8fa9-e9c1e1482c24",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121871,
+      "author": "aadi-joshi",
+      "author_id": 101498089,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T09:06:34.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/duplicate-channel-mirror-bubble",
+        "head_sha": "4b97d5d0135ee2d125df96aad270836d2224c710",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
