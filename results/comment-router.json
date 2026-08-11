@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:47:20.638Z",
+  "updated_at": "2026-08-11T14:47:33.952Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119681:5197120204:2026-08-11T09:00:12Z:clawsweeper_auto_repair",
-      "comment_id": "5197120204",
-      "comment_version_key": "5197120204:2026-08-11T09:00:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119681#issuecomment-5197120204",
-      "comment_created_at": "2026-08-05T20:43:38Z",
-      "comment_updated_at": "2026-08-11T09:00:12Z",
-      "comment_body_sha256": "dba605c7a1e7091de4f525b23e360ccd97f9526483cc283298b7549961a4333b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119681,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=63451b54c782512ecccc18b364a4ec08c8c6080e)",
-      "expected_head_sha": "63451b54c782512ecccc18b364a4ec08c8c6080e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T09:00:58.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "message-tool-heartbeat-strip-119653",
-        "head_sha": "63451b54c782512ecccc18b364a4ec08c8c6080e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121536:5250906133:2026-08-11T08:39:27Z:automerge",
       "comment_id": "5250906133",
@@ -32212,6 +32179,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117432:5254738110:2026-08-11T14:46:51Z:re_review",
+      "comment_id": "5254738110",
+      "comment_version_key": "5254738110:2026-08-11T14:46:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5254738110",
+      "comment_created_at": "2026-08-11T14:46:51Z",
+      "comment_updated_at": "2026-08-11T14:46:51Z",
+      "comment_body_sha256": "42cfa0fec4781ad21ffd9e82cf014d1f2640dcc8e901e43ebb0f9c2e854a0162",
+      "source_delivery_id": "7fb3ffb0-9593-11f1-8153-d79c941ded64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117432,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — resolved the merge conflict by rebasing onto current main (`8d1fa472d9b`) and refreshed the exact-head evidence on `904a112d4e0`: real engine-loop turn, planner-fallback refusal, and the real mcp stdio boundary (all three repro scripts + 103 unit tests pass on the exact head)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T14:47:31.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegated-approval-handoff-116519",
+        "head_sha": "904a112d4e083a0f6ce422422c17c14cbfa60271",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
