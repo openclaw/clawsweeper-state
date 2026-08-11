@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:05:51.483Z",
+  "updated_at": "2026-08-11T17:05:52.202Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:105643:5251493871:2026-08-11T09:40:57Z:re_review",
-      "comment_id": "5251493871",
-      "comment_version_key": "5251493871:2026-08-11T09:40:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-5251493871",
-      "comment_created_at": "2026-08-11T09:40:57Z",
-      "comment_updated_at": "2026-08-11T09:40:57Z",
-      "comment_body_sha256": "f22b2cb0c2edf4192a32e84d2e2121a0baf9f377366a0cf7620d7b7962192f25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105643,
-      "author": "totobusnello",
-      "author_id": 246086438,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T11:58:57.944Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121986:5251684959:2026-08-11T10:55:58Z:clawsweeper_needs_human",
       "comment_id": "5251684959",
@@ -32537,6 +32510,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T17:05:51.483Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113673:5078673549:2026-08-11T17:04:28Z:clawsweeper_needs_human",
+      "comment_id": "5078673549",
+      "comment_version_key": "5078673549:2026-08-11T17:04:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113673#issuecomment-5078673549",
+      "comment_created_at": "2026-07-25T13:32:50Z",
+      "comment_updated_at": "2026-08-11T17:04:28Z",
+      "comment_body_sha256": "a3e139bf2e2c1b53713c9a6ed90c582a287b0a80f72e1b1748d5e6d3dcc7fb9f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added test uses a test plugin API and temporary SQLite; attach a redacted after-fix plugin-host or Gateway transcript, without private sess...; Review finding: [P1] Reject forged claim session keys in generic card writes — extensions/workboard/src/store-normalizers.ts:882 - [P2] Recognize claim-only cards as captured in t... (sha=2cb1afdddc204cc7ade1b1126f4ce232ef970f9d)",
+      "expected_head_sha": "2cb1afdddc204cc7ade1b1126f4ce232ef970f9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T17:05:52.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/workboard-proof-semantics",
+        "head_sha": "2cb1afdddc204cc7ade1b1126f4ce232ef970f9d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
