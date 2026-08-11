@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T05:10:42.227Z",
+  "updated_at": "2026-08-11T05:10:43.452Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121779:5247837686:2026-08-11T01:02:16Z:clawsweeper_needs_human",
-      "comment_id": "5247837686",
-      "comment_version_key": "5247837686:2026-08-11T01:02:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121779#issuecomment-5247837686",
-      "comment_created_at": "2026-08-11T01:02:16Z",
-      "comment_updated_at": "2026-08-11T01:02:16Z",
-      "comment_body_sha256": "de2283c7d105d4656d33e87ca198ebc6760fe61aefc64fa65fdf4336251410a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121779,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The cached continuation and embedded-session disposal changes affect per-session state; the PR body has no after-fix live OpenAI text-and-tool continuation evidence. (sha=d65f680c053c2cc0233b99f38f70006041740e4e)",
-      "expected_head_sha": "d65f680c053c2cc0233b99f38f70006041740e4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T01:02:52.533Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/openai-turn-latency-2",
-        "head_sha": "d65f680c053c2cc0233b99f38f70006041740e4e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121781:5247844365:2026-08-11T01:03:27Z:clawsweeper_needs_human",
       "comment_id": "5247844365",
@@ -31864,6 +31831,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121478:5236878034:2026-08-11T05:10:02Z:clawsweeper_needs_human",
+      "comment_id": "5236878034",
+      "comment_version_key": "5236878034:2026-08-11T05:10:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121478#issuecomment-5236878034",
+      "comment_created_at": "2026-08-10T06:55:25Z",
+      "comment_updated_at": "2026-08-11T05:10:02Z",
+      "comment_body_sha256": "7d7db7bdda3350cd3985ca6ad8e4c5aa9b3755af15d4373a298412c03cc87407",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121478,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted session-recovery selection; preserve the focused pair-collision regressions and validate the actual clean merge result before landing. (sha=931868e74f514e556a0eda4253c9c4022c4776cb)",
+      "expected_head_sha": "931868e74f514e556a0eda4253c9c4022c4776cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T05:10:43.452Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-recovery-paired-session-refs",
+        "head_sha": "931868e74f514e556a0eda4253c9c4022c4776cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
