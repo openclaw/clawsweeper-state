@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:55:22.334Z",
+  "updated_at": "2026-08-11T14:55:41.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90101:4619667271:2026-06-04T06:40:23Z:re_review",
-      "comment_id": "4619667271",
-      "comment_version_key": "4619667271:2026-06-04T06:40:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90101#issuecomment-4619667271",
-      "comment_created_at": "2026-06-04T06:40:23Z",
-      "comment_updated_at": "2026-06-04T06:40:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90101,
-      "author": "napetrov",
-      "author_id": 18015221,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T09:04:25.941Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90101:4622989841:2026-06-04T14:16:59Z:re_review",
       "comment_id": "4622989841",
@@ -32612,6 +32585,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T14:55:22.334Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3447:5243160495:2026-08-11T14:54:21Z:clawsweeper_needs_human",
+      "comment_id": "5243160495",
+      "comment_version_key": "5243160495:2026-08-11T14:54:21Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3447#issuecomment-5243160495",
+      "comment_created_at": "2026-08-10T16:39:39Z",
+      "comment_updated_at": "2026-08-11T14:54:21Z",
+      "comment_body_sha256": "c0af25806e4b237b3db3c8252bb10453070ff8f9aef03ccc7bfde201a11c2a9a",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required checks are presently non-discriminating because the supplied context reports a base-wide audit failure; normal merge gating needs a clean-base rerun or resolution of https://... (sha=25aec92957aac15b7dc719c0dbc5c56e1c4b5d0f)",
+      "expected_head_sha": "25aec92957aac15b7dc719c0dbc5c56e1c4b5d0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:55:41.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-publish-log-newline",
+        "head_sha": "25aec92957aac15b7dc719c0dbc5c56e1c4b5d0f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
