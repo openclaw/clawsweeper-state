@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:48:01.149Z",
+  "updated_at": "2026-08-11T11:51:11.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120899:5232303000:2026-08-09T15:32:49Z:re_review",
-      "comment_id": "5232303000",
-      "comment_version_key": "5232303000:2026-08-09T15:32:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5232303000",
-      "comment_created_at": "2026-08-09T15:32:49Z",
-      "comment_updated_at": "2026-08-09T15:32:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T06:56:29.036Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5232400122:2026-08-09T15:53:38Z:re_review",
       "comment_id": "5232400122",
@@ -31360,6 +31333,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121939:5251095911:2026-08-11T11:49:15Z:clawsweeper_needs_human",
+      "comment_id": "5251095911",
+      "comment_version_key": "5251095911:2026-08-11T11:49:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121939#issuecomment-5251095911",
+      "comment_created_at": "2026-08-11T08:59:57Z",
+      "comment_updated_at": "2026-08-11T11:49:15Z",
+      "comment_body_sha256": "52d32d5c00d964f8baecd85f9d2e85100b9c4ffb19847248648fb7a6bca1c0a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121939,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and android-test-play plus the aggregate CI gate are failing; refresh and validate the generated head against the current merge base before landing. (sha=3e87f9cf6578f200691f75cc9f9feff94ed3884d)",
+      "expected_head_sha": "3e87f9cf6578f200691f75cc9f9feff94ed3884d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T11:51:11.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "3e87f9cf6578f200691f75cc9f9feff94ed3884d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
