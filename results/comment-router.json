@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T21:44:48.750Z",
+  "updated_at": "2026-08-11T21:45:10.599Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2591:5256943769:2026-08-11T18:01:45Z:re_review",
-      "comment_id": "5256943769",
-      "comment_version_key": "5256943769:2026-08-11T18:01:45Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2591#issuecomment-5256943769",
-      "comment_created_at": "2026-08-11T18:01:45Z",
-      "comment_updated_at": "2026-08-11T18:01:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "b7719b40-95ae-11f1-884d-5b1d3cf5c93e",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2591,
-      "author": "ProspectOre",
-      "author_id": 54486432,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T18:02:31.480Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oauth-authority-cancellation",
-        "head_sha": "630645d7592c738593056ab8d7a6b61df6a7f4ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122167:5256912509:2026-08-11T18:02:38Z:clawsweeper_needs_human",
       "comment_id": "5256912509",
@@ -30858,6 +30810,39 @@
         "kind": "pull_request",
         "branch": "steipete/split-dashboard-worker-tests",
         "head_sha": "097ec97f40066397027514d5b59fbe61417feafa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-11T21:44:15Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-11T21:44:15Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-11T21:44:15Z",
+      "comment_body_sha256": "cb229481a0e866183a20d6af2f8859c7cd63974b94b6d58396269a8a1598a690",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is based on an older main revision, so required checks should be refreshed on a current-main merge commit before landing; the existing red checks predate the audit repair now... (sha=ba6aa780bf305ce1c1d807484c76108258b2b6ce)",
+      "expected_head_sha": "ba6aa780bf305ce1c1d807484c76108258b2b6ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T21:45:10.599Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "ba6aa780bf305ce1c1d807484c76108258b2b6ce",
         "cluster_id": null,
         "job_path": null
       }
