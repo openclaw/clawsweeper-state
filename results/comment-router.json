@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:35:57.487Z",
+  "updated_at": "2026-08-11T17:38:19.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122016:5252783270:2026-08-11T12:11:33Z:clawsweeper_auto_repair",
-      "comment_id": "5252783270",
-      "comment_version_key": "5252783270:2026-08-11T12:11:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122016#issuecomment-5252783270",
-      "comment_created_at": "2026-08-11T11:52:17Z",
-      "comment_updated_at": "2026-08-11T12:11:33Z",
-      "comment_body_sha256": "db879aadb977db07feb36a8e4839b2d3a685280aeefea6f4eee0ca587efdafcd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122016,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d6af03c8f83dc6061a18de341ce8d04ae15f2dd4)",
-      "expected_head_sha": "d6af03c8f83dc6061a18de341ce8d04ae15f2dd4",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-11T12:13:29.430Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/sqlite-reliability-followup",
-        "head_sha": "d6af03c8f83dc6061a18de341ce8d04ae15f2dd4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/lobster:119:4943783923:2026-08-11T12:12:42Z:clawsweeper_auto_repair",
       "comment_id": "4943783923",
@@ -32633,6 +32600,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2862:5256696531:2026-08-11T17:37:44Z:re_review",
+      "comment_id": "5256696531",
+      "comment_version_key": "5256696531:2026-08-11T17:37:44Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2862#issuecomment-5256696531",
+      "comment_created_at": "2026-08-11T17:37:44Z",
+      "comment_updated_at": "2026-08-11T17:37:44Z",
+      "comment_body_sha256": "c57b53fbf5dead5c5e168fc302bb72151f6ff9fc47d3dbd35946494664c67d86",
+      "source_delivery_id": "5cb57c60-95ab-11f1-9fb5-182eefb7acf9",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2862,
+      "author": "thomaschow19",
+      "author_id": 29773444,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T17:38:17.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-canonical-long-context-cost",
+        "head_sha": "c7972ecd20b0df050ed06e9c556273658832c7e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
