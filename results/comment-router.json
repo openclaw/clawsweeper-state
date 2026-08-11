@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:15:22.883Z",
+  "updated_at": "2026-08-11T22:15:42.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122193:5257235028:2026-08-11T18:29:45Z:re_review",
-      "comment_id": "5257235028",
-      "comment_version_key": "5257235028:2026-08-11T18:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122193#issuecomment-5257235028",
-      "comment_created_at": "2026-08-11T18:29:45Z",
-      "comment_updated_at": "2026-08-11T18:29:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122193,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T18:59:03.667Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-invalid-tenant-token",
-        "head_sha": "b55fa9b7c1998aa4330a552e6aa2da2160e1bfa5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122193:5257190963:2026-08-11T18:25:30Z:re_review",
       "comment_id": "5257190963",
@@ -31123,6 +31076,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-7776e25466",
         "head_sha": "532f4400815a38efbc4e3655215126d6717f32ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-11T22:14:53Z:clawsweeper_auto_repair",
+      "comment_id": "4854073498",
+      "comment_version_key": "4854073498:2026-08-11T22:14:53Z",
+      "comment_url": "https://github.com/openclaw/clawscan/pull/7#issuecomment-4854073498",
+      "comment_created_at": "2026-07-01T11:37:33Z",
+      "comment_updated_at": "2026-08-11T22:14:53Z",
+      "comment_body_sha256": "559e554fa6d9a3f60095b72ad1530f5502b3db7c74970dd6f37dc04d7b9b46a1",
+      "repo": "openclaw/clawscan",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb644fe1646cbd7f74c81947259ec5b042fad776)",
+      "expected_head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:15:42.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/runtime-tool-updates",
+        "head_sha": "bb644fe1646cbd7f74c81947259ec5b042fad776",
         "cluster_id": null,
         "job_path": null
       }
