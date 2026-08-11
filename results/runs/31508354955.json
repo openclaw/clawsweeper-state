@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119160",
+  "mode": "autonomous",
+  "run_id": "31508354955",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31508354955",
+  "head_sha": "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119160.md",
+  "published_at": "2026-08-11T15:47:33.233Z",
+  "canonical": "#119148",
+  "canonical_issue": "#119148",
+  "canonical_pr": "#119160",
+  "summary": "Keep #119148 as the canonical bug report and repair its writable same-repository PR #119160. The hydrated PR is dirty against main dfb47122585ed1faf48a2d8cede7f93f92ac1bd7 despite a passing prior review and CI, so it needs a deterministic rebase plus exact-head validation; merge remains disabled by job policy.",
+  "actions": [
+    {
+      "target": "#119148",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": "#119160",
+      "reason": "Canonical root-cause report; closure is disabled until a repaired candidate lands."
+    },
+    {
+      "target": "#119160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119148",
+      "candidate_fix": "#119160",
+      "reason": "Repair the existing credited PR rather than replace it; merge is explicitly disabled."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
