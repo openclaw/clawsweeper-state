@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:15:46.701Z",
+  "updated_at": "2026-08-11T14:16:14.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119344:5230535822:2026-08-09T08:15:34Z:re_review",
-      "comment_id": "5230535822",
-      "comment_version_key": "5230535822:2026-08-09T08:15:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119344#issuecomment-5230535822",
-      "comment_created_at": "2026-08-09T08:15:34Z",
-      "comment_updated_at": "2026-08-09T08:15:34Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119344,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:56:56.576Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119344:5231929411:2026-08-09T14:06:57Z:re_review",
       "comment_id": "5231929411",
@@ -32078,6 +32051,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:69:5182424182:2026-08-11T14:15:11Z:clawsweeper_needs_human",
+      "comment_id": "5182424182",
+      "comment_version_key": "5182424182:2026-08-11T14:15:11Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/69#issuecomment-5182424182",
+      "comment_created_at": "2026-08-04T17:25:13Z",
+      "comment_updated_at": "2026-08-11T14:15:11Z",
+      "comment_body_sha256": "42d13dac9f6ffb548c945a9bd52260eaff0e680f59da664d14895e8ec37dffc5",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 69,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hono sits on the public API and CORS boundary; the failed workspace checks leave framework compatibility unverified before merge. (sha=8c90cc5908614911ee5fa649e1612045972794ed)",
+      "expected_head_sha": "8c90cc5908614911ee5fa649e1612045972794ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:16:14.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/hono-4.12.34",
+        "head_sha": "8c90cc5908614911ee5fa649e1612045972794ed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
