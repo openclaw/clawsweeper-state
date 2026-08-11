@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:09:59.423Z",
+  "updated_at": "2026-08-11T09:10:11.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114098:5083385284:2026-08-11T04:48:21Z:clawsweeper_needs_human",
-      "comment_id": "5083385284",
-      "comment_version_key": "5083385284:2026-08-11T04:48:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114098#issuecomment-5083385284",
-      "comment_created_at": "2026-07-26T12:04:14Z",
-      "comment_updated_at": "2026-08-11T04:48:21Z",
-      "comment_body_sha256": "a95a6e911a762212539d70c55d68e59a16177075d15b1c20e3ad5165819a3784",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114098,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - New setup rejects newly entered external native single-account daemons unless their selected account can be proven; maintainers need to accept that stricter compatibility policy. (sha=b10d883fdc07bda6d4e552a7bf1de3812037117d)",
-      "expected_head_sha": "b10d883fdc07bda6d4e552a7bf1de3812037117d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T04:52:49.311Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/signal-setup-wizard-narrow",
-        "head_sha": "b10d883fdc07bda6d4e552a7bf1de3812037117d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114098:5236203988:2026-08-10T05:20:11Z:re_review",
       "comment_id": "5236203988",
@@ -31263,6 +31230,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120247:5219045824:2026-08-11T09:09:08Z:clawsweeper_auto_merge",
+      "comment_id": "5219045824",
+      "comment_version_key": "5219045824:2026-08-11T09:09:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120247#issuecomment-5219045824",
+      "comment_created_at": "2026-08-07T15:38:14Z",
+      "comment_updated_at": "2026-08-11T09:09:08Z",
+      "comment_body_sha256": "a0403b3cd82056d21b978fed084947e1f4238a1b0e44022fa193043173dddba0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120247,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=7e3ebab808da708628b8d617f0a56e7dae52ad29); current checks are failing: android-ktlint:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": "7e3ebab808da708628b8d617f0a56e7dae52ad29",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T09:09:56.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-120228",
+        "head_sha": "7e3ebab808da708628b8d617f0a56e7dae52ad29",
+        "cluster_id": "automerge-openclaw-openclaw-120247",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120247.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120247.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121970:5251185945:2026-08-11T09:09:10Z:clawsweeper_needs_human",
