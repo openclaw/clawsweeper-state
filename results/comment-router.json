@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:58:22.888Z",
+  "updated_at": "2026-08-11T16:58:25.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105643:4952544572:2026-08-11T10:53:04Z:clawsweeper_needs_human",
-      "comment_id": "4952544572",
-      "comment_version_key": "4952544572:2026-08-11T10:53:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-4952544572",
-      "comment_created_at": "2026-07-12T19:53:32Z",
-      "comment_updated_at": "2026-08-11T10:53:04Z",
-      "comment_body_sha256": "8b25b4608061b97d23e5ca34348f999a0f4fd33f855ecd4f290f6c1a23c298a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105643,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and its current CI gate is failing; source inspection does not establish whether those failures are branch-caused, so merge requires a rebased exact-... (sha=945c710e8df5ffad84dd689218936d91aa33ff28)",
-      "expected_head_sha": "945c710e8df5ffad84dd689218936d91aa33ff28",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T11:02:35.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bundle-mcp-temp-sweep",
-        "head_sha": "945c710e8df5ffad84dd689218936d91aa33ff28",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81190:4435224992:2026-08-11T11:02:20Z:clawsweeper_needs_human",
       "comment_id": "4435224992",
@@ -32295,6 +32262,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121991:5256238688:2026-08-11T16:57:43Z:re_review",
+      "comment_id": "5256238688",
+      "comment_version_key": "5256238688:2026-08-11T16:57:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121991#issuecomment-5256238688",
+      "comment_created_at": "2026-08-11T16:57:43Z",
+      "comment_updated_at": "2026-08-11T16:57:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "c5f7a640-95a5-11f1-8ea4-c15b6a7220db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121991,
+      "author": "M-Nabeegh",
+      "author_id": 151343422,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T16:58:23.428Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openclaw-discord-components",
+        "head_sha": "730f57551ee083349b47e11abef260e3e23300be",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
