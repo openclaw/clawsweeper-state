@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:02:00.500Z",
+  "updated_at": "2026-08-11T20:02:20.966Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121186:5235499453:2026-08-10T03:19:29Z:re_review",
-      "comment_id": "5235499453",
-      "comment_version_key": "5235499453:2026-08-10T03:19:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121186#issuecomment-5235499453",
-      "comment_created_at": "2026-08-10T03:19:29Z",
-      "comment_updated_at": "2026-08-10T03:19:29Z",
-      "comment_body_sha256": "4c708f9bc3681fc49274305d2123adf2d212f9b13facbe51ff5a210e4e33684a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121186,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T16:57:54.647Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119344:5184481073:2026-08-04T20:51:45Z:re_review",
       "comment_id": "5184481073",
@@ -31283,6 +31256,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122176:5256873839:2026-08-11T20:01:17Z:clawsweeper_needs_human",
+      "comment_id": "5256873839",
+      "comment_version_key": "5256873839:2026-08-11T20:01:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122176#issuecomment-5256873839",
+      "comment_created_at": "2026-08-11T17:54:55Z",
+      "comment_updated_at": "2026-08-11T20:01:17Z",
+      "comment_body_sha256": "835b8a9ba66a204d1d4df4d42c1117b2f36fb2409ca2693b5450c5fc67328653",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a one-way shared-state upgrade: v7 permanently discards commitments rows, and downgrading requires recreating an empty v6 table. (sha=918cc84ed4571c8368fab0b40e0fdeee8ef5abe7)",
+      "expected_head_sha": "918cc84ed4571c8368fab0b40e0fdeee8ef5abe7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T20:02:20.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/commitments-schema-v7",
+        "head_sha": "918cc84ed4571c8368fab0b40e0fdeee8ef5abe7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
