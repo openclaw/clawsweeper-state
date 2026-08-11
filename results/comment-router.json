@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T19:21:29.996Z",
+  "updated_at": "2026-08-11T19:22:40.149Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120665:5255612247:2026-08-11T16:00:59Z:re_review",
-      "comment_id": "5255612247",
-      "comment_version_key": "5255612247:2026-08-11T16:00:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120665#issuecomment-5255612247",
-      "comment_created_at": "2026-08-11T16:00:59Z",
-      "comment_updated_at": "2026-08-11T16:00:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "d8661990-959d-11f1-8783-5f63b7976c0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120665,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T16:01:43.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gemini-embedding-2-ga",
-        "head_sha": "db2323ba808350057e1aadf4b40b433e69cf6e0e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110569:5010615328:2026-08-11T16:01:09Z:clawsweeper_needs_human",
       "comment_id": "5010615328",
@@ -31575,6 +31527,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabfleet:113:5257780893:2026-08-11T19:21:56Z:clawsweeper_needs_human",
+      "comment_id": "5257780893",
+      "comment_version_key": "5257780893:2026-08-11T19:21:56Z",
+      "comment_url": "https://github.com/openclaw/crabfleet/pull/113#issuecomment-5257780893",
+      "comment_created_at": "2026-08-11T19:21:56Z",
+      "comment_updated_at": "2026-08-11T19:21:56Z",
+      "comment_body_sha256": "904bf21c90bb66477c65d6f5e5284832ac3928f62fa6efc2f6d1b2200029ac9c",
+      "repo": "openclaw/crabfleet",
+      "issue_number": 113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging removes a currently accepted credential path, so any standalone gateway still configured only with CRABBOX_SSH_GATEWAY_TOKEN will lose Worker access until it is migrated. (sha=f01829f746db4f0e661dae732fb48f8966e2b0b4)",
+      "expected_head_sha": "f01829f746db4f0e661dae732fb48f8966e2b0b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T19:22:40.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "revert-112-ssh-legacy-token",
+        "head_sha": "f01829f746db4f0e661dae732fb48f8966e2b0b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
