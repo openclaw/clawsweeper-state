@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:54:46.899Z",
+  "updated_at": "2026-08-11T09:54:49.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5126385366:2026-07-30T04:18:31Z:re_review",
-      "comment_id": "5126385366",
-      "comment_version_key": "5126385366:2026-07-30T04:18:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5126385366",
-      "comment_created_at": "2026-07-30T04:18:31Z",
-      "comment_updated_at": "2026-07-30T04:18:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T05:03:34.443Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5129543974:2026-07-30T10:17:48Z:re_review",
       "comment_id": "5129543974",
@@ -31342,6 +31315,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T09:54:46.899Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120854:5229807960:2026-08-11T09:51:09Z:clawsweeper_needs_human",
+      "comment_id": "5229807960",
+      "comment_version_key": "5229807960:2026-08-11T09:51:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120854#issuecomment-5229807960",
+      "comment_created_at": "2026-08-09T04:43:51Z",
+      "comment_updated_at": "2026-08-11T09:51:09Z",
+      "comment_body_sha256": "437b6626f45e119858ab6c25539e7532b6b4f21850af6a10f07c91ac524b4628",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120854,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a public Mattermost configuration choice and a new durable-message ordering contract; although default behavior remains unchanged, maintainers need to accept the operator an... (sha=010d5554de737e428648d92c54a2bbcf30c4d72d)",
+      "expected_head_sha": "010d5554de737e428648d92c54a2bbcf30c4d72d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T09:54:49.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mattermost-separate-progress-final",
+        "head_sha": "010d5554de737e428648d92c54a2bbcf30c4d72d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
