@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T23:00:11.132Z",
+  "updated_at": "2026-08-11T23:00:15.562Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4607379832:2026-06-02T22:06:00Z:re_review",
-      "comment_id": "4607379832",
-      "comment_version_key": "4607379832:2026-06-02T22:06:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4607379832",
-      "comment_created_at": "2026-06-02T22:06:00Z",
-      "comment_updated_at": "2026-06-02T22:06:00Z",
-      "comment_body_sha256": "006950a83030b81c65aacb1fc682173ac5b2689988d12fd340c231a6e6cfd30b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T19:57:00.932Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4607629901:2026-06-02T22:53:18Z:re_review",
       "comment_id": "4607629901",
@@ -30923,6 +30896,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T23:00:11.132Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119030:5174218063:2026-08-11T22:59:12Z:clawsweeper_needs_human",
+      "comment_id": "5174218063",
+      "comment_version_key": "5174218063:2026-08-11T22:59:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119030#issuecomment-5174218063",
+      "comment_created_at": "2026-08-04T03:19:45Z",
+      "comment_updated_at": "2026-08-11T22:59:12Z",
+      "comment_body_sha256": "243e134bb1cb6d953a16bda6266e32f7778f0fdb7881057d7269858628b641c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Available terminal evidence predates the current head and does not show final account-versus-root reply behavior through the delivery... (sha=1e1a683ad25be78fa937efffc75546aedab7c760)",
+      "expected_head_sha": "1e1a683ad25be78fa937efffc75546aedab7c760",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T23:00:15.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-to-mode-schema-parity",
+        "head_sha": "1e1a683ad25be78fa937efffc75546aedab7c760",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
