@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T18:50:21.329Z",
+  "updated_at": "2026-08-11T18:50:23.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113673:5078673549:2026-08-11T14:57:04Z:clawsweeper_auto_repair",
-      "comment_id": "5078673549",
-      "comment_version_key": "5078673549:2026-08-11T14:57:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113673#issuecomment-5078673549",
-      "comment_created_at": "2026-07-25T13:32:50Z",
-      "comment_updated_at": "2026-08-11T14:57:04Z",
-      "comment_body_sha256": "65af783965184a8850bafb0ed5b5f9ee19305417ef4d1440278514504d025e0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113673,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=564e04f2352043ce96aba5a1d67d7bfb12a7e89c)",
-      "expected_head_sha": "564e04f2352043ce96aba5a1d67d7bfb12a7e89c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T14:58:01.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workboard-proof-semantics",
-        "head_sha": "564e04f2352043ce96aba5a1d67d7bfb12a7e89c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113673:5087271476:2026-07-27T04:28:35Z:re_review",
       "comment_id": "5087271476",
@@ -31666,6 +31633,54 @@
         "kind": "pull_request",
         "branch": "fix/browser-fixture-isolation",
         "head_sha": "e3656647ba40fa55f1edb63464c1029cff6584a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:104569:5257444658:2026-08-11T18:49:36Z:re_review",
+      "comment_id": "5257444658",
+      "comment_version_key": "5257444658:2026-08-11T18:49:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/104569#issuecomment-5257444658",
+      "comment_created_at": "2026-08-11T18:49:36Z",
+      "comment_updated_at": "2026-08-11T18:49:36Z",
+      "comment_body_sha256": "efb2a3e46df44ea2c2c17b0c350fe26546590252544173e00e53e6cc9dd386f7",
+      "source_delivery_id": "67588630-95b5-11f1-8075-a5ed78e8ef0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 104569,
+      "author": "samrusani",
+      "author_id": 14844597,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 8c2d022092bf9dd596b1ae6c422b154b33ed2b2c. the disconnected catalog reset finding is fixed, the branch is rebased onto current main, and the exact affected gateway/ui/protocol/sdk checks are green. the pr body has the complete validation and behavior proof",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T18:50:20.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/model-picker-replace-mode-hint",
+        "head_sha": "8c2d022092bf9dd596b1ae6c422b154b33ed2b2c",
         "cluster_id": null,
         "job_path": null
       },
