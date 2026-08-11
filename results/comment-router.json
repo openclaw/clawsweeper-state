@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-08-11T08:17:43.454Z",
+  "updated_at": "2026-08-11T08:24:12.438Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:35799:4320998054:2026-08-11T01:51:12Z:autoclose",
-      "comment_id": "4320998054",
-      "comment_version_key": "4320998054:2026-08-11T01:51:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/35799#issuecomment-4320998054",
-      "comment_created_at": "2026-04-26T01:31:05Z",
-      "comment_updated_at": "2026-08-11T01:51:12Z",
-      "comment_body_sha256": "7328cfa847c843eb09338f9acf1b055b5d6165862ff0745c99a2139561098598",
-      "repo": "openclaw/openclaw",
-      "issue_number": 35799,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T03:57:41.256Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:42539:4324350610:2026-08-11T01:48:35Z:autoclose",
       "comment_id": "4324350610",
@@ -31454,6 +31423,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2849:5250759048:2026-08-11T08:23:31Z:re_review",
+      "comment_id": "5250759048",
+      "comment_version_key": "5250759048:2026-08-11T08:23:31Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2849#issuecomment-5250759048",
+      "comment_created_at": "2026-08-11T08:23:31Z",
+      "comment_updated_at": "2026-08-11T08:23:31Z",
+      "comment_body_sha256": "0ea9af47c59d7897881bf4548f795146e58533c44dc5c425ebd878bb6885f6bd",
+      "source_delivery_id": "f04f9300-955d-11f1-9de9-3a17732783ee",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2849,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T08:24:10.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-usage-indexing-performance",
+        "head_sha": "11b9cd7d98477c2b0d30a73f6498d29ea3f30af1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
