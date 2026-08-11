@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T19:04:01.626Z",
+  "updated_at": "2026-08-11T19:04:11.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122108:5255536694:2026-08-11T15:54:33Z:clawsweeper_needs_human",
-      "comment_id": "5255536694",
-      "comment_version_key": "5255536694:2026-08-11T15:54:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122108#issuecomment-5255536694",
-      "comment_created_at": "2026-08-11T15:54:33Z",
-      "comment_updated_at": "2026-08-11T15:54:33Z",
-      "comment_body_sha256": "c547e3240ca5b974306fe7d6014e44cbfab64e1eb8e1c6672115d2cbe04e0c10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122108,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied after-fix output comes from a direct resolver call with mocked fetch; add a redacted mock-gateway harness result or real Slack eve... (sha=556bbc368261624fe8002ce303b4421bab0924d0)",
-      "expected_head_sha": "556bbc368261624fe8002ce303b4421bab0924d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T15:55:25.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/slack-media-notice",
-        "head_sha": "556bbc368261624fe8002ce303b4421bab0924d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115278:5106674886:2026-08-11T15:54:47Z:clawsweeper_needs_human",
       "comment_id": "5106674886",
@@ -31491,6 +31458,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97103:5257590208:2026-08-11T19:03:24Z:re_review",
+      "comment_id": "5257590208",
+      "comment_version_key": "5257590208:2026-08-11T19:03:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5257590208",
+      "comment_created_at": "2026-08-11T19:03:24Z",
+      "comment_updated_at": "2026-08-11T19:03:24Z",
+      "comment_body_sha256": "bdd5fd8eacaa9c41d687f86a0d6b6aaa7ec6d77138a39ecb1277f6de2306c6bd",
+      "source_delivery_id": "55183680-95b7-11f1-8f21-bfd6e885bc84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97103,
+      "author": "samrusani",
+      "author_id": 14844597,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head df3027a8c2081d2ccb20fb42c216c334e5542c36. the branch is rebased onto current main 7fe75acb5f4; current-main session `*core` ownership was preserved, the archive-cleanup behavior was revalidated, and the pr body has the exact integration evidence",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T19:04:09.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sessions-cleanup-archive-report",
+        "head_sha": "df3027a8c2081d2ccb20fb42c216c334e5542c36",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
