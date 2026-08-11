@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:07:25.587Z",
+  "updated_at": "2026-08-11T07:07:30.388Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5233058585:2026-08-09T18:17:37Z:re_review",
-      "comment_id": "5233058585",
-      "comment_version_key": "5233058585:2026-08-09T18:17:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5233058585",
-      "comment_created_at": "2026-08-09T18:17:37Z",
-      "comment_updated_at": "2026-08-09T18:17:37Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T02:54:14.711Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5235889591:2026-08-10T04:31:24Z:re_review",
       "comment_id": "5235889591",
@@ -31963,6 +31936,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1246:5200560146:2026-08-11T07:06:42Z:clawsweeper_needs_human",
+      "comment_id": "5200560146",
+      "comment_version_key": "5200560146:2026-08-11T07:06:42Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1246#issuecomment-5200560146",
+      "comment_created_at": "2026-08-06T04:58:21Z",
+      "comment_updated_at": "2026-08-11T07:06:42Z",
+      "comment_body_sha256": "cc83c1d177f01e7dca12566a1663bef60bc4836bc99830425e8fe7d49f35d907",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fail-closed ownership protocol can make a reused lease unavailable after an ambiguous acquire, renewal, or release rather than risk concurrent workspace mutation. (sha=90dd007241fcb895554ea2a5b0da9fcdb03f501d)",
+      "expected_head_sha": "90dd007241fcb895554ea2a5b0da9fcdb03f501d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:07:30.388Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reused-workspace-git-coherence-20260806",
+        "head_sha": "90dd007241fcb895554ea2a5b0da9fcdb03f501d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
