@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:01:18.981Z",
+  "updated_at": "2026-08-11T07:01:37.026Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5161109097:2026-08-03T00:28:16Z:re_review",
-      "comment_id": "5161109097",
-      "comment_version_key": "5161109097:2026-08-03T00:28:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5161109097",
-      "comment_created_at": "2026-08-03T00:28:16Z",
-      "comment_updated_at": "2026-08-03T00:28:16Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T02:08:31.142Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5161234502:2026-08-03T00:56:15Z:re_review",
       "comment_id": "5161234502",
@@ -32112,6 +32085,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121901:5250041256:2026-08-11T07:00:46Z:clawsweeper_needs_human",
+      "comment_id": "5250041256",
+      "comment_version_key": "5250041256:2026-08-11T07:00:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121901#issuecomment-5250041256",
+      "comment_created_at": "2026-08-11T07:00:46Z",
+      "comment_updated_at": "2026-08-11T07:00:46Z",
+      "comment_body_sha256": "be51d9e5b1fa9b4006ed8ababcbcb7ff3634e669a5273ee5892aeee6d73de7f9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121901,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the split modules inside the CodeQL boundary (P1)** - The critical CodeQL configuration still scans only message-tool.ts, which this PR deletes. The new tool entry point and its source-reply/content-policy...; Review finding: [P1] Keep the split modules inside the CodeQL boundary — src/agents/tools/message-tool-execution.ts:236 - [medium] Critical CodeQL scope no longer follows the mess... (sha=dfd120bc626ad51b2984176723e9fb72122a69a8)",
+      "expected_head_sha": "dfd120bc626ad51b2984176723e9fb72122a69a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:01:37.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-message-tool",
+        "head_sha": "dfd120bc626ad51b2984176723e9fb72122a69a8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
