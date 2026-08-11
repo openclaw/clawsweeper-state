@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T04:45:05.668Z",
+  "updated_at": "2026-08-11T04:46:51.375Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-10T23:04:57Z:clawsweeper_needs_human",
-      "comment_id": "5185154559",
-      "comment_version_key": "5185154559:2026-08-10T23:04:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
-      "comment_created_at": "2026-08-04T22:06:16Z",
-      "comment_updated_at": "2026-08-10T23:04:57Z",
-      "comment_body_sha256": "1685b77b9eac8e51f211ed10348f9f591a83bf6fe642b18a285c9d08b6bc1f72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head is conflicting, so generated config and Plugin SDK artifacts must be regenerated after rebase before this can merge. (sha=a94764014c48066ebdbc2d7dd1991b7418858b84)",
-      "expected_head_sha": "a94764014c48066ebdbc2d7dd1991b7418858b84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T00:04:09.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/irc-drop-dead-mention-patterns",
-        "head_sha": "6104c7f7ffc272d0910336624fb2b50e17e983cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119500:5188244849:2026-08-06T22:55:57Z:clawsweeper_auto_repair",
       "comment_id": "5188244849",
@@ -32031,6 +31998,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121541:5249077384:2026-08-11T04:44:13Z:re_review",
+      "comment_id": "5249077384",
+      "comment_version_key": "5249077384:2026-08-11T04:44:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121541#issuecomment-5249077384",
+      "comment_created_at": "2026-08-11T04:44:13Z",
+      "comment_updated_at": "2026-08-11T04:44:13Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121541,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T04:46:48.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/strip-model-token-separator-121426",
+        "head_sha": "3ceb4f0f905130271a574f4a436990ad4f271345",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
