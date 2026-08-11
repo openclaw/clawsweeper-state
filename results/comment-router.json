@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:20:37.749Z",
+  "updated_at": "2026-08-11T16:21:12.509Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120347:5221829117:2026-08-07T20:44:45Z:clawsweeper_needs_human",
-      "comment_id": "5221829117",
-      "comment_version_key": "5221829117:2026-08-07T20:44:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120347#issuecomment-5221829117",
-      "comment_created_at": "2026-08-07T20:44:45Z",
-      "comment_updated_at": "2026-08-07T20:44:45Z",
-      "comment_body_sha256": "5d9e7ab5f4c92c94e83dcee641a3b5ad1bcd54adb38efa2938bb3a0be7ed4099",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120347,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation can currently use a first sessions_send to materialize an arbitrary key-shaped target; after merge it will receive an error and must use an intentional creation fl... (sha=26abcc866cbf05e165a9c48344cfb17f15bcb416)",
-      "expected_head_sha": "26abcc866cbf05e165a9c48344cfb17f15bcb416",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-87336",
-        "head_sha": "26abcc866cbf05e165a9c48344cfb17f15bcb416",
-        "cluster_id": "issue-openclaw-openclaw-87336",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-87336.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-08-08T10:43:58Z:clawsweeper_needs_human",
       "comment_id": "5225566532",
@@ -32202,6 +32169,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3453:5255825815:2026-08-11T16:20:26Z:re_review",
+      "comment_id": "5255825815",
+      "comment_version_key": "5255825815:2026-08-11T16:20:26Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3453#issuecomment-5255825815",
+      "comment_created_at": "2026-08-11T16:20:26Z",
+      "comment_updated_at": "2026-08-11T16:20:26Z",
+      "comment_body_sha256": "9b752d799ad909840fb17a16361b0c095221b2731d862eaf13733d668f8b816c",
+      "source_delivery_id": "90161bb0-95a0-11f1-8b7b-d5af4ed92504",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3453,
+      "author": "pacocartones",
+      "author_id": 253313177,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T16:21:06.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/3440-theme-token-conversion",
+        "head_sha": "650f0d5e4adff10aa51811b809d3272df3e06a10",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
