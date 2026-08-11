@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:57:26.023Z",
+  "updated_at": "2026-08-11T22:57:42.256Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122191:5257543101:2026-08-11T18:59:06Z:clawsweeper_needs_human",
-      "comment_id": "5257543101",
-      "comment_version_key": "5257543101:2026-08-11T18:59:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122191#issuecomment-5257543101",
-      "comment_created_at": "2026-08-11T18:59:06Z",
-      "comment_updated_at": "2026-08-11T18:59:06Z",
-      "comment_body_sha256": "0842f0a7e3dfb30365ff2d62540d4ec6b7de3098a753fa003b6e71ce943af2b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122191,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Verify the 0.19.3 driver contract before pinning it (P2)** - This line now asserts that the existing numeric values are the 0.19.3 contract, but the adapter still hardcodes them and the test injects a mock with...; Review finding: [P2] Verify the 0.19.3 driver contract before pinning it — extensions/cua-computer/src/driver-client.ts:19-25 - [medium] Authorize the native dependency graph befo... (sha=64e36de146022ccee60c10a65fe115a5b0d5db40)",
-      "expected_head_sha": "64e36de146022ccee60c10a65fe115a5b0d5db40",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T19:01:45.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "orclaw/cu-9-driver-0193-upgrade",
-        "head_sha": "64e36de146022ccee60c10a65fe115a5b0d5db40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122200:5257563792:2026-08-11T19:00:51Z:clawsweeper_auto_repair",
       "comment_id": "5257563792",
@@ -31319,6 +31286,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119528:5259813425:2026-08-11T22:56:55Z:re_review",
+      "comment_id": "5259813425",
+      "comment_version_key": "5259813425:2026-08-11T22:56:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119528#issuecomment-5259813425",
+      "comment_created_at": "2026-08-11T22:56:55Z",
+      "comment_updated_at": "2026-08-11T22:56:55Z",
+      "comment_body_sha256": "e9742ae94c5442846338394628d6fd8d87eb62b1c9575fbd64e2a94b9cddbb40",
+      "source_delivery_id": "f37a93c0-95d7-11f1-8201-d40beed3b5f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119528,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T22:57:37.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-94679",
+        "head_sha": "3206876756a5ef218d3323ad292ee8f50851f04b",
+        "cluster_id": "issue-openclaw-openclaw-94679",
+        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
