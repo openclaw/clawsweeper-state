@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T03:08:00.618Z",
+  "updated_at": "2026-08-11T03:08:05.024Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121465:5237294299:2026-08-10T22:59:53Z:clawsweeper_needs_human",
-      "comment_id": "5237294299",
-      "comment_version_key": "5237294299:2026-08-10T22:59:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121465#issuecomment-5237294299",
-      "comment_created_at": "2026-08-10T07:44:15Z",
-      "comment_updated_at": "2026-08-10T22:59:53Z",
-      "comment_body_sha256": "630c910c1de4874bceeee76e667de1c40d3849d2f3ead2484f635dc34b67ed4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm registry-backed write authorization** - Current main restricts arbitrary Gateway paths outside configured workspaces to admin callers; this feature intentionally allows write-sc...; Review finding: [medium] Confirm registry-backed write authorization (sha=badc0c34e4840cb3672fcc5eacba0ba32a88a3bb)",
-      "expected_head_sha": "badc0c34e4840cb3672fcc5eacba0ba32a88a3bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T23:00:37.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/project-registry",
-        "head_sha": "242bbb33f455a320fc51d8183e2b1cab97b4fb5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121129:5232633608:2026-08-10T22:59:57Z:clawsweeper_needs_human",
       "comment_id": "5232633608",
@@ -31879,6 +31846,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120595:5248534717:2026-08-11T03:07:24Z:re_review",
+      "comment_id": "5248534717",
+      "comment_version_key": "5248534717:2026-08-11T03:07:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120595#issuecomment-5248534717",
+      "comment_created_at": "2026-08-11T03:07:24Z",
+      "comment_updated_at": "2026-08-11T03:07:24Z",
+      "comment_body_sha256": "939e42803d34e7f9323f7b0c9d987f55fa520ca309a09f854e3324cd06016e82",
+      "source_delivery_id": "c7c3f380-9531-11f1-8aca-60de79e8bdfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120595,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T03:08:02.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/virtiofs-rollback-120549",
+        "head_sha": "c44b4e5299973036d0acfe497f5c72f82a75190f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
