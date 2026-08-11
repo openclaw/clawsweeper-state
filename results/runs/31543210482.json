@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122298",
+  "mode": "autonomous",
+  "run_id": "31543210482",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31543210482",
+  "head_sha": "83dddd63e750a50bd2ada147f3a7cc8feffeff9f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122298.md",
+  "published_at": "2026-08-11T22:43:37.209Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122298",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122298",
+  "canonical_pr": null,
+  "summary": "#122298 remains a reproducible, non-security canonical bug on refreshed main 67262b70dc7420515eaef263697976a9b14a8bdb. A narrow fix artifact is ready; implementation and write-backed validation are blocked by the read-only worker checkout.",
+  "actions": [
+    {
+      "target": "#122298",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122298",
+      "candidate_fix": null,
+      "reason": "A writable executor must apply and validate the narrow source-boundary repair; this worker cannot write files or run the fixture-writing regression tests."
+    },
+    {
+      "target": "#44783",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed historical context; no mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122298",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122298",
+      "candidate_fix": null,
+      "reason": "Create or update the designated ClawSweeper branch after re-fetching live state."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
