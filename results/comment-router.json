@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:29:43.318Z",
+  "updated_at": "2026-08-11T01:35:23.879Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1113:5245752433:2026-08-10T20:48:37Z:clawsweeper_auto_repair",
-      "comment_id": "5245752433",
-      "comment_version_key": "5245752433:2026-08-10T20:48:37Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1113#issuecomment-5245752433",
-      "comment_created_at": "2026-08-10T20:44:15Z",
-      "comment_updated_at": "2026-08-10T20:48:37Z",
-      "comment_body_sha256": "e148bdd1d1caf0c0759a03cb9ff44d6c6c0daffe667f419d86495429e88aa026",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1113,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5754f2a981052cc8c34e1c8f726ab222745e60fd)",
-      "expected_head_sha": "5754f2a981052cc8c34e1c8f726ab222745e60fd",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:49:22.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-125-telemetry-overview",
-        "head_sha": "5754f2a981052cc8c34e1c8f726ab222745e60fd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121706:5245795329:2026-08-10T20:48:36Z:clawsweeper_needs_human",
       "comment_id": "5245795329",
@@ -32308,6 +32275,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawpatch:186:5248030390:2026-08-11T01:34:52Z:re_review",
+      "comment_id": "5248030390",
+      "comment_version_key": "5248030390:2026-08-11T01:34:52Z",
+      "comment_url": "https://github.com/openclaw/clawpatch/pull/186#issuecomment-5248030390",
+      "comment_created_at": "2026-08-11T01:34:52Z",
+      "comment_updated_at": "2026-08-11T01:34:52Z",
+      "comment_body_sha256": "8e7b35088053c70c91c3b21142e23be7ccc785f64b6d1664ece5f75e5dd1cf6d",
+      "source_delivery_id": "d9fc2de0-9524-11f1-88fe-0eeeac112f18",
+      "repo": "openclaw/clawpatch",
+      "issue_number": 186,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:35:22.339Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/rust-source-groups",
+        "head_sha": "a72a494ec588305c230b6518736728c814aa2d3c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
