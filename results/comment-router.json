@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:36:23.479Z",
+  "updated_at": "2026-08-11T09:37:09.637Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121692:5245320394:2026-08-11T04:53:12Z:clawsweeper_needs_human",
-      "comment_id": "5245320394",
-      "comment_version_key": "5245320394:2026-08-11T04:53:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121692#issuecomment-5245320394",
-      "comment_created_at": "2026-08-10T20:01:59Z",
-      "comment_updated_at": "2026-08-11T04:53:12Z",
-      "comment_body_sha256": "dfdf347c8b228c63281be11688539b62c2a89f320f77c575470127475e494535",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121692,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An open edit deliberately blocks delivery of its row and every later row in the shared outbox, including delivery started from another pane; this preserves no-superseded-delivery sema... (sha=b2a9ca447958f8b8834ebc4aa812d72317df306a)",
-      "expected_head_sha": "b2a9ca447958f8b8834ebc4aa812d72317df306a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T04:54:02.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-edit",
-        "head_sha": "b2a9ca447958f8b8834ebc4aa812d72317df306a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120900:5230001171:2026-08-11T04:49:39Z:clawsweeper_needs_human",
       "comment_id": "5230001171",
@@ -31352,6 +31319,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2854:5251451960:2026-08-11T09:36:34Z:re_review",
+      "comment_id": "5251451960",
+      "comment_version_key": "5251451960:2026-08-11T09:36:34Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2854#issuecomment-5251451960",
+      "comment_created_at": "2026-08-11T09:36:34Z",
+      "comment_updated_at": "2026-08-11T09:36:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "25637b10-9568-11f1-9b42-b0b392777eed",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2854,
+      "author": "Yuxin-Qiao",
+      "author_id": 104957188,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T09:37:08.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/feat-cli-session-grouping",
+        "head_sha": "ea1e4ecf2de1d1b1a1673d4887e5657d532109bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
