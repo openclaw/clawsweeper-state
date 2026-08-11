@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T05:00:38.217Z",
+  "updated_at": "2026-08-11T05:00:55.191Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121745:5246485687:2026-08-10T23:00:53Z:clawsweeper_needs_human",
-      "comment_id": "5246485687",
-      "comment_version_key": "5246485687:2026-08-10T23:00:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121745#issuecomment-5246485687",
-      "comment_created_at": "2026-08-10T21:55:59Z",
-      "comment_updated_at": "2026-08-10T23:00:53Z",
-      "comment_body_sha256": "a4299ab17db69f28427c7af008ea68687b419ed1cd31315376ac327b8586ff9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This maintainer-authored protected-label PR needs normal exact-head maintainer review and checks, not a repair job. (sha=a388a0364c7ef2eda28e073067fbab171497a45f)",
-      "expected_head_sha": "a388a0364c7ef2eda28e073067fbab171497a45f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T00:04:09.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/trim-benchmark-helper-duplicates",
-        "head_sha": "a388a0364c7ef2eda28e073067fbab171497a45f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121748:5246533426:2026-08-10T23:04:30Z:clawsweeper_needs_human",
       "comment_id": "5246533426",
@@ -31990,6 +31957,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121422:5236371280:2026-08-11T04:59:58Z:clawsweeper_needs_human",
+      "comment_id": "5236371280",
+      "comment_version_key": "5236371280:2026-08-11T04:59:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121422#issuecomment-5236371280",
+      "comment_created_at": "2026-08-10T05:46:15Z",
+      "comment_updated_at": "2026-08-11T04:59:58Z",
+      "comment_body_sha256": "98816c4a81795fb6634c29c011b4dda4de6eaa13ee387aea95c40ee275de5745",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Unify the public and conformance plan bindings (P1)** - The public AuthorizedMemoryPlan exposes memoryPolicyRevision and no hostFactsRevision, but the public conformance suite requires policyRevision and hostFac...; Review finding: [P1] Unify the public and conformance plan bindings — packages/memory-host-sdk/src/host/authorization.ts:303-319 - [P2] Decode adapter decisions at a trap-safe bou... (sha=1948e0865776aecc6bafc9c79a82079d6301407c)",
+      "expected_head_sha": "1948e0865776aecc6bafc9c79a82079d6301407c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T05:00:55.191Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-permissions-pr-open-20260809-p0a",
+        "head_sha": "1948e0865776aecc6bafc9c79a82079d6301407c",
+        "cluster_id": "automerge-openclaw-openclaw-121422",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
