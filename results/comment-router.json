@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T08:12:22.169Z",
+  "updated_at": "2026-08-11T08:17:43.454Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121135:5248701702:2026-08-11T03:38:36Z:re_review",
-      "comment_id": "5248701702",
-      "comment_version_key": "5248701702:2026-08-11T03:38:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121135#issuecomment-5248701702",
-      "comment_created_at": "2026-08-11T03:38:36Z",
-      "comment_updated_at": "2026-08-11T03:38:36Z",
-      "comment_body_sha256": "28f7d5e00ca4916512365885303e01b152abcd79557603cf1c762a8c5e0df89d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121135,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T03:56:38.645Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/docs-secretref-default-alias",
-        "head_sha": "3e258824287184942aee9decb32f0f22d3a43322",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:35799:4320998054:2026-08-11T01:51:12Z:autoclose",
       "comment_id": "4320998054",
@@ -31465,6 +31418,39 @@
         "kind": "pull_request",
         "branch": "fix/failure-bundle-command-metadata",
         "head_sha": "72b62f2f2cb00d955de09a4e05839268d16ab975",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1281:5250701295:2026-08-11T08:17:01Z:clawsweeper_needs_human",
+      "comment_id": "5250701295",
+      "comment_version_key": "5250701295:2026-08-11T08:17:01Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1281#issuecomment-5250701295",
+      "comment_created_at": "2026-08-11T08:17:01Z",
+      "comment_updated_at": "2026-08-11T08:17:01Z",
+      "comment_body_sha256": "c148dac74b7805a94e8477b82569efe558b107889831b8dc05c3bcfec8721125",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1281,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body reports successful validation but provides no inspectable after-fix live-smoke transcript, logs, or linked artifact; add redacted evid... (sha=614daaab1eb8e979b15d854939a05a7cbb706cd0)",
+      "expected_head_sha": "614daaab1eb8e979b15d854939a05a7cbb706cd0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T08:17:43.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/v0.41.3-prep",
+        "head_sha": "614daaab1eb8e979b15d854939a05a7cbb706cd0",
         "cluster_id": null,
         "job_path": null
       }
