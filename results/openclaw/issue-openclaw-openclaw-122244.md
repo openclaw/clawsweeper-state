@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122244"
 mode: "autonomous"
-run_id: "31536421907"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31536421907"
+run_id: "31541178357"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31541178357"
 head_sha: "4b79888c3f2ad4b9e0c2ee3345984adc995ea81d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-11T21:44:41.442Z"
-canonical: "https://github.com/openclaw/openclaw/issues/122244"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/122244"
+published_at: "2026-08-11T22:19:15.256Z"
+canonical: "#122244"
+canonical_issue: "#122244"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31536421907](https://github.com/openclaw/clawsweeper/actions/runs/31536421907)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31541178357](https://github.com/openclaw/clawsweeper/actions/runs/31541178357)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/122244
+Canonical: #122244
 
 ## Summary
 
-Confirmed on main c2ad148cb8b750587217b249d0ade95fcb534bdd: `HTTP 502 Bad Gateway` followed by a complete HTML document reaches the raw-status formatting branch because `isCloudflareOrHtmlErrorPage` only accepts HTML at the beginning of `status.rest`. A narrow shared-owner repair and regression coverage are planned. Local validation could not run because Corepack cannot create its cache in this read-only worker environment.
+#122244 is the canonical reproducible bug. Current main parses HTTP 502 but leaves `Bad Gateway` before the HTML body, so the shared classifier rejects the complete page and the UI returns raw markup. A narrow shared-helper repair and regression suite are specified for a new fix PR; this read-only checkout could not create the branch or run pnpm because dependencies are absent and Corepack cannot write its cache.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed on main c2ad148cb8b750587217b249d0ade95fcb534bdd: `HTTP 502 Bad Gatewa
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122244 | fix_needed | planned | canonical | This is a reproducible existing UI-formatting defect with a narrow shared owner and no config, provider-policy, or security-boundary change. |
-| cluster:issue-openclaw-openclaw-122244 | build_fix_artifact | planned |  | Create or update the required narrow fix PR from clawsweeper/issue-openclaw-openclaw-122244. |
+| #122244 | fix_needed | planned | canonical | Implement the source-proven shared parsing repair and create the allowed narrow fix PR; do not close or merge the issue. |
 
 ## Needs Human
 
