@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:04:21.290Z",
+  "updated_at": "2026-08-11T02:05:01.304Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4834690972:2026-06-29T16:18:19Z:re_review",
-      "comment_id": "4834690972",
-      "comment_version_key": "4834690972:2026-06-29T16:18:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4834690972",
-      "comment_created_at": "2026-06-29T16:18:19Z",
-      "comment_updated_at": "2026-06-29T16:18:19Z",
-      "comment_body_sha256": "96f5ae278aaee2b2c8729c2e3a25a733a142c5dbac46f1638beae07728b45c68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:55:51.435Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4837707279:2026-06-29T22:13:34Z:re_review",
       "comment_id": "4837707279",
@@ -32931,6 +32904,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119877:5202927234:2026-08-11T02:04:13Z:clawsweeper_needs_human",
+      "comment_id": "5202927234",
+      "comment_version_key": "5202927234:2026-08-11T02:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119877#issuecomment-5202927234",
+      "comment_created_at": "2026-08-06T09:38:08Z",
+      "comment_updated_at": "2026-08-11T02:04:13Z",
+      "comment_body_sha256": "b9112192d0654f2e976689d70c164965d465d4520dd702ee4691d02cff4e6d18",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: A linked loopback artifact provides meaningful proof for d274661, but the PR body does not demonstrate the later current head; add red...; Review finding: [medium] Refresh proof for the current security boundary (sha=794da8ab5448ba3aaffeea29dc2d7bad7de91f26)",
+      "expected_head_sha": "794da8ab5448ba3aaffeea29dc2d7bad7de91f26",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:05:01.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/request-scoped-error-redaction-foundation",
+        "head_sha": "794da8ab5448ba3aaffeea29dc2d7bad7de91f26",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
