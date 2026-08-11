@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:06:31.905Z",
+  "updated_at": "2026-08-11T13:06:38.966Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5184480709:2026-08-04T20:51:42Z:re_review",
-      "comment_id": "5184480709",
-      "comment_version_key": "5184480709:2026-08-04T20:51:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5184480709",
-      "comment_created_at": "2026-08-04T20:51:42Z",
-      "comment_updated_at": "2026-08-04T20:51:42Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T07:09:23.510Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5193494685:2026-08-05T15:04:03Z:re_review",
       "comment_id": "5193494685",
@@ -31825,6 +31798,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122030:5253448572:2026-08-11T13:05:44Z:clawsweeper_needs_human",
+      "comment_id": "5253448572",
+      "comment_version_key": "5253448572:2026-08-11T13:05:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122030#issuecomment-5253448572",
+      "comment_created_at": "2026-08-11T12:55:06Z",
+      "comment_updated_at": "2026-08-11T13:05:44Z",
+      "comment_body_sha256": "06397c93e5b418983ced8d9f686de6e4849570b6963a749a98324e1026142afb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed boundary is consumed by external OCM in real qualification runs; run the exact PR head through OCM performance qualification, including historical targets, before merge. U... (sha=4bb21fe5c4e39cc05f26fb7384b948ca83714985)",
+      "expected_head_sha": "4bb21fe5c4e39cc05f26fb7384b948ca83714985",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:06:38.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "qual/performance-ocm-wrapper",
+        "head_sha": "4bb21fe5c4e39cc05f26fb7384b948ca83714985",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
