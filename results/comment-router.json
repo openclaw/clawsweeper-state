@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:11:39.195Z",
+  "updated_at": "2026-08-11T16:12:33.941Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119735:5198106186:2026-08-06T00:41:22Z:clawsweeper_auto_merge",
-      "comment_id": "5198106186",
-      "comment_version_key": "5198106186:2026-08-06T00:41:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
-      "comment_created_at": "2026-08-05T22:26:45Z",
-      "comment_updated_at": "2026-08-06T00:41:22Z",
-      "comment_body_sha256": "a9b0283234975518f2aef0dd44a8d641dff3909b16b03b5ad9bc0323cd920518",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=f57eb9ab76670b2a0484db32e1e63ee9026ed190)",
-      "expected_head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-        "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-        "cluster_id": "automerge-openclaw-openclaw-119735",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119737:5198118390:2026-08-07T21:43:09Z:clawsweeper_auto_repair",
       "comment_id": "5198118390",
@@ -32172,6 +32139,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3445:5242917487:2026-08-11T16:11:44Z:clawsweeper_needs_human",
+      "comment_id": "5242917487",
+      "comment_version_key": "5242917487:2026-08-11T16:11:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3445#issuecomment-5242917487",
+      "comment_created_at": "2026-08-10T16:17:24Z",
+      "comment_updated_at": "2026-08-11T16:11:44Z",
+      "comment_body_sha256": "44d835f7455a12a1f0f5d901073f56a30528e5c753730182574a084ec69b55ad",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3445,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore the Carapace archive integrity entry (P2)** - This persists from the prior review: package.json leaves Carapace unchanged, but this line removes its SHA-512 digest. Retain it, or regenerate with Bun 1.3....; Review finding: [P2] Restore the Carapace archive integrity entry — bun.lock:451 - [medium] Carapace integrity digest is removed — bun.lock:451 (sha=0d2293cebbb13d99f89857dae8a2ce60fc8c5160)",
+      "expected_head_sha": "0d2293cebbb13d99f89857dae8a2ce60fc8c5160",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T16:12:33.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-cdfdcf8f87",
+        "head_sha": "0d2293cebbb13d99f89857dae8a2ce60fc8c5160",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
