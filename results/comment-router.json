@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T23:08:10.490Z",
+  "updated_at": "2026-08-11T23:08:22.975Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5224156209:2026-08-08T02:50:26Z:re_review",
-      "comment_id": "5224156209",
-      "comment_version_key": "5224156209:2026-08-08T02:50:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5224156209",
-      "comment_created_at": "2026-08-08T02:50:26Z",
-      "comment_updated_at": "2026-08-08T02:50:26Z",
-      "comment_body_sha256": "728a0c081ba5ff3c67df774645ad68546daf6b7f9cc5aabeb35c0b650708b57f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review against `158e7737`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T20:02:29.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5224173697:2026-08-08T02:55:38Z:re_review",
       "comment_id": "5224173697",
@@ -31254,6 +31227,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T23:08:10.490Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122320:5259892234:2026-08-11T23:07:33Z:clawsweeper_needs_human",
+      "comment_id": "5259892234",
+      "comment_version_key": "5259892234:2026-08-11T23:07:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122320#issuecomment-5259892234",
+      "comment_created_at": "2026-08-11T23:07:33Z",
+      "comment_updated_at": "2026-08-11T23:07:33Z",
+      "comment_body_sha256": "d73ef1888cb982fe37be8e997a25b1fa67fd30c20c8d47b9e27bfea76497ba7f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix adds 44 net production lines for a conditional catalog read; the request is tightly scoped to Appearance with hidden rows, but maintainers should retain that owner-local looku... (sha=f06c36cc5c6e23ac4630dc20e2dcd100377f4646)",
+      "expected_head_sha": "f06c36cc5c6e23ac4630dc20e2dcd100377f4646",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T23:08:22.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/settings-hidden-catalog-label",
+        "head_sha": "f06c36cc5c6e23ac4630dc20e2dcd100377f4646",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
