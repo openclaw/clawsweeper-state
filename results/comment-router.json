@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T04:07:08.928Z",
+  "updated_at": "2026-08-11T04:07:15.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5128667208:2026-07-30T08:53:32Z:re_review",
-      "comment_id": "5128667208",
-      "comment_version_key": "5128667208:2026-07-30T08:53:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5128667208",
-      "comment_created_at": "2026-07-30T08:53:32Z",
-      "comment_updated_at": "2026-07-30T08:53:32Z",
-      "comment_body_sha256": "8ddd51c9f6bb859b82d021cc3ab70b1a7b0e3fc6d5c5bff6baf21d6e44d8c4f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T23:57:56.084Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5243993156:2026-08-10T17:59:59Z:re_review",
       "comment_id": "5243993156",
@@ -32207,6 +32180,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121835:5248863850:2026-08-11T04:06:19Z:clawsweeper_needs_human",
+      "comment_id": "5248863850",
+      "comment_version_key": "5248863850:2026-08-11T04:06:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121835#issuecomment-5248863850",
+      "comment_created_at": "2026-08-11T04:06:19Z",
+      "comment_updated_at": "2026-08-11T04:06:19Z",
+      "comment_body_sha256": "b64029d4e1201f6a99186319097720926ab253a562616ec7501a8cce089d5408",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the trusted Full Release Validation-to-CI dispatch contract; unit-level guards and ordinary CI do not demonstrate one complete frozen-SHA parent-to-child dispatch. (sha=9bbd9f47d1411bb4c504aefbfe6aa1c67e639f76)",
+      "expected_head_sha": "9bbd9f47d1411bb4c504aefbfe6aa1c67e639f76",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T04:07:15.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-frozen-target-context",
+        "head_sha": "9bbd9f47d1411bb4c504aefbfe6aa1c67e639f76",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
