@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122298",
+  "mode": "autonomous",
+  "run_id": "31540632591",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31540632591",
+  "head_sha": "4b79888c3f2ad4b9e0c2ee3345984adc995ea81d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122298.md",
+  "published_at": "2026-08-11T22:10:38.653Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122298",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122298",
+  "canonical_pr": null,
+  "summary": "#122298 is a narrow canonical source-install bug. The supplied current-main SHA is absent from this read-only checkout, so no branch delta or write-backed validation can be safely performed; a bounded new-PR artifact is provided.",
+  "actions": [
+    {
+      "target": "#122298",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122298",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until the executor uses a writable checkout at the preflight main SHA or refreshes the cluster state."
+    },
+    {
+      "target": "#44783",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed context ref; no action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122298",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122298",
+      "candidate_fix": null,
+      "reason": "Executor should apply this artifact on the designated writable branch after refreshing main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
