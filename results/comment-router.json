@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:08:21.715Z",
+  "updated_at": "2026-08-11T01:08:26.116Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121129:5245732697:2026-08-10T20:42:12Z:re_review",
-      "comment_id": "5245732697",
-      "comment_version_key": "5245732697:2026-08-10T20:42:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121129#issuecomment-5245732697",
-      "comment_created_at": "2026-08-10T20:42:12Z",
-      "comment_updated_at": "2026-08-10T20:42:12Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121129,
-      "author": "Takhoffman",
-      "author_id": 781889,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T20:46:00.803Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t20-02-plugin-icon-response-disposal",
-        "head_sha": "66f92789ee52a3b8bcc33e5cb9801eb17e07aa55",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114095:5245761692:2026-08-10T20:45:12Z:re_review",
       "comment_id": "5245761692",
@@ -32247,6 +32200,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-subagent-queue-wake-m2c8",
         "head_sha": "f6d5d15f28b90f250bebb64f96211f29b1b04d67",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121783:5247869192:2026-08-11T01:07:40Z:clawsweeper_needs_human",
+      "comment_id": "5247869192",
+      "comment_version_key": "5247869192:2026-08-11T01:07:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121783#issuecomment-5247869192",
+      "comment_created_at": "2026-08-11T01:07:40Z",
+      "comment_updated_at": "2026-08-11T01:07:40Z",
+      "comment_body_sha256": "dd5f574c40802836e890642e38425538fb7a801b7e9c0db72b096c13f5f4b451",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121783,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head check-test-types and remaining required CI runs were still in progress at review time. (sha=11a2af4864d239b71bc55a5d456d040a025c7e07)",
+      "expected_head_sha": "11a2af4864d239b71bc55a5d456d040a025c7e07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:08:26.116Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nameable-test-helper-types",
+        "head_sha": "11a2af4864d239b71bc55a5d456d040a025c7e07",
         "cluster_id": null,
         "job_path": null
       }
