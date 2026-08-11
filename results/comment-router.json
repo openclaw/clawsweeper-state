@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T22:05:52.349Z",
+  "updated_at": "2026-08-11T22:05:28.433Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118067:5257526966:2026-08-11T18:57:39Z:re_review",
@@ -31006,52 +31006,37 @@
       "target": null
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:115531:5259381795:2026-08-11T22:05:10Z:re_review",
-      "comment_id": "5259381795",
-      "comment_version_key": "5259381795:2026-08-11T22:05:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115531#issuecomment-5259381795",
-      "comment_created_at": "2026-08-11T22:05:10Z",
-      "comment_updated_at": "2026-08-11T22:05:10Z",
-      "comment_body_sha256": "932cd6fe96ecb3b7e29c51755fb3e7dc7fc7d046f62c3a6a82a889cdea256b98",
-      "source_delivery_id": "b8aa49e0-95d0-11f1-83fa-da3fdc70b752",
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119847:5201222556:2026-08-11T22:04:44Z:clawsweeper_auto_repair",
+      "comment_id": "5201222556",
+      "comment_version_key": "5201222556:2026-08-11T22:04:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119847#issuecomment-5201222556",
+      "comment_created_at": "2026-08-06T06:36:00Z",
+      "comment_updated_at": "2026-08-11T22:04:44Z",
+      "comment_body_sha256": "33a1eabcf53232bea547722efb937a62a9d7c7ef8f064628d61f64cd9060e275",
       "repo": "openclaw/openclaw",
-      "issue_number": 115531,
-      "author": "clawSean",
-      "author_id": 260045960,
+      "issue_number": 119847,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
       "author_name": null,
       "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f4b16620e190b0491567fcf5a450dc002b0a7aab)",
+      "expected_head_sha": "f4b16620e190b0491567fcf5a450dc002b0a7aab",
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T22:05:50.096Z",
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:05:28.432Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/imessage-remote-unknown-send-reconciliation",
-        "head_sha": "f5fb490e84e4b99c6df86e91c9ca1635e7373563",
+        "branch": "fix/fix-929",
+        "head_sha": "f4b16620e190b0491567fcf5a450dc002b0a7aab",
         "cluster_id": null,
         "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
+      }
     }
   ]
 }
