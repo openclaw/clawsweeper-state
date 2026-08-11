@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:05:57.360Z",
+  "updated_at": "2026-08-11T16:06:04.607Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107295:4969333447:2026-08-11T09:08:40Z:clawsweeper_needs_human",
-      "comment_id": "4969333447",
-      "comment_version_key": "4969333447:2026-08-11T09:08:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/107295#issuecomment-4969333447",
-      "comment_created_at": "2026-07-14T12:50:31Z",
-      "comment_updated_at": "2026-08-11T09:08:40Z",
-      "comment_body_sha256": "678d332ddacc16792a31914bc3ab1ce2d9dd4d02d451975b5d1ed5f41784bb45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 107295,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Install Tencent’s QQBot package in the setup docs (P1)** - After this PR deletes the bundled QQBot package, the install command still tells fresh operators to install @openclaw/qqbot. Point it at the Tencent pac...; Review finding: [P1] Install Tencent’s QQBot package in the setup docs — docs/channels/qqbot.md:22 - [medium] Constrain the public approval-client exception — src/plugin-sdk/gatew... (sha=f4b6800e653647a44874c01c7bb7ba523973b077)",
-      "expected_head_sha": "f4b6800e653647a44874c01c7bb7ba523973b077",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/externalize-qqbot",
-        "head_sha": "5080bd5bd655b1eb935fccc5628dc69bb1ea9e4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109077:4994041359:2026-08-11T10:09:31Z:clawsweeper_needs_human",
       "comment_id": "4994041359",
@@ -32128,6 +32095,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabline:254:5255662116:2026-08-11T16:05:23Z:re_review",
+      "comment_id": "5255662116",
+      "comment_version_key": "5255662116:2026-08-11T16:05:23Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/254#issuecomment-5255662116",
+      "comment_created_at": "2026-08-11T16:05:23Z",
+      "comment_updated_at": "2026-08-11T16:05:23Z",
+      "comment_body_sha256": "5501f377380a8dd77217809159299fcdc8a423e507b8749a9e757b10e587d678",
+      "source_delivery_id": "7648a600-959e-11f1-84d1-8377fea19c61",
+      "repo": "openclaw/crabline",
+      "issue_number": 254,
+      "author": "LauraGPT",
+      "author_id": 18321252,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T16:06:02.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-audio-inbound",
+        "head_sha": "dbac7c00c520d05db41150611033813e363f3951",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
