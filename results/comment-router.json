@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T21:00:01.222Z",
+  "updated_at": "2026-08-11T21:00:21.174Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103726:4936474803:2026-08-11T17:57:48Z:clawsweeper_needs_human",
-      "comment_id": "4936474803",
-      "comment_version_key": "4936474803:2026-08-11T17:57:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103726#issuecomment-4936474803",
-      "comment_created_at": "2026-07-10T14:42:23Z",
-      "comment_updated_at": "2026-08-11T17:57:48Z",
-      "comment_body_sha256": "975521ca4fd231a0478ff7ca577c19f682d7dd555844077ac9c9ce2d80ab42ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103726,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Configured SecretRefs now govern credential selection ahead of BRAVE_API_KEY; this is the intended shared fail-closed policy, but it is credential-routing-sensitive for existing insta... (sha=a5d42e61584b7610ecf26951fb23729a538d91e0)",
-      "expected_head_sha": "a5d42e61584b7610ecf26951fb23729a538d91e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:58:35.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "llagy007/brave-secretref-env-fallback",
-        "head_sha": "a5d42e61584b7610ecf26951fb23729a538d91e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103726:4941983583:2026-07-11T03:07:42Z:re_review",
       "comment_id": "4941983583",
@@ -30281,6 +30248,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T21:00:01.222Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122246:5258791803:2026-08-11T20:59:36Z:clawsweeper_needs_human",
+      "comment_id": "5258791803",
+      "comment_version_key": "5258791803:2026-08-11T20:59:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122246#issuecomment-5258791803",
+      "comment_created_at": "2026-08-11T20:59:36Z",
+      "comment_updated_at": "2026-08-11T20:59:36Z",
+      "comment_body_sha256": "d04ea7ce97bdf3d60a0b62d666a1b0520f76710a9e8b61e8c188bedf27061ffd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides exact-head CI and structural tests, but no after-fix Docker image output proving the resulting correction image reports the res... (sha=fd2fcf093bf4b08af46ffe1f93cb2c8fcc19e394)",
+      "expected_head_sha": "fd2fcf093bf4b08af46ffe1f93cb2c8fcc19e394",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T21:00:21.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/docker-correction-version-121958",
+        "head_sha": "fd2fcf093bf4b08af46ffe1f93cb2c8fcc19e394",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
