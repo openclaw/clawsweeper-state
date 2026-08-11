@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T23:01:15.547Z",
+  "updated_at": "2026-08-11T23:02:15.826Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5199909991:2026-08-06T03:04:40Z:re_review",
-      "comment_id": "5199909991",
-      "comment_version_key": "5199909991:2026-08-06T03:04:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5199909991",
-      "comment_created_at": "2026-08-06T03:04:40Z",
-      "comment_updated_at": "2026-08-06T03:04:40Z",
-      "comment_body_sha256": "09594e0a8847fbb97f1a725814e3ebf94d30904290796fb01849ed942b758986",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T19:57:00.932Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5200295802:2026-08-06T04:12:06Z:re_review",
       "comment_id": "5200295802",
@@ -31253,6 +31226,39 @@
         "head_sha": "2a233b50962f1a2221ba00d141ec261905ac8438",
         "cluster_id": "automerge-openclaw-openclaw-92230",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121994:5252317064:2026-08-11T23:01:14Z:clawsweeper_needs_human",
+      "comment_id": "5252317064",
+      "comment_version_key": "5252317064:2026-08-11T23:01:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121994#issuecomment-5252317064",
+      "comment_created_at": "2026-08-11T11:04:59Z",
+      "comment_updated_at": "2026-08-11T23:01:14Z",
+      "comment_body_sha256": "7cfcd77f56e16ef8d29c6536b984ee34e4401d64c02cf46940bf2f93589f3356",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch creates a new invoker-evidence mode without a current authoritative producer, so its intended runtime semantics and rollout boundary remain a maintainer choice. (sha=63f122494bcb8c8af06dd5841074fff02011a648)",
+      "expected_head_sha": "63f122494bcb8c8af06dd5841074fff02011a648",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T23:02:15.826Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-f1c-unknown-invoker-foundation",
+        "head_sha": "63f122494bcb8c8af06dd5841074fff02011a648",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
