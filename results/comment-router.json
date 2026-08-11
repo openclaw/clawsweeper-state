@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T19:58:39.061Z",
+  "updated_at": "2026-08-11T19:58:39.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121179:5256202160:2026-08-11T16:54:18Z:re_review",
-      "comment_id": "5256202160",
-      "comment_version_key": "5256202160:2026-08-11T16:54:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121179#issuecomment-5256202160",
-      "comment_created_at": "2026-08-11T16:54:18Z",
-      "comment_updated_at": "2026-08-11T16:54:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "4b56d3c0-95a5-11f1-8610-627ff79ec2d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121179,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T16:55:00.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/approval-unavailable-durable-20260810",
-        "head_sha": "d5bdf0938ea2a740313772601ad937a802abcb7f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122052:5254111497:2026-08-11T16:51:44Z:clawsweeper_needs_human",
       "comment_id": "5254111497",
@@ -31275,6 +31227,39 @@
         "kind": "pull_request",
         "branch": "fix/synology-hosted-media-903",
         "head_sha": "ea33cf33720afa9ba8d22b551dbf64b7842c3e45",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122130:5256311182:2026-08-11T19:03:49Z:clawsweeper_needs_human",
+      "comment_id": "5256311182",
+      "comment_version_key": "5256311182:2026-08-11T19:03:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122130#issuecomment-5256311182",
+      "comment_created_at": "2026-08-11T17:04:35Z",
+      "comment_updated_at": "2026-08-11T19:03:49Z",
+      "comment_body_sha256": "13b4b7166f43aba98d2b2d85cace915980d7242f249e6d84e1cf375d344410e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +12 lines for a bug fix; the added path-resolution, staged-writer callback, and returned published-path propagation are the minimal integration needed to reuse... (sha=6c82d97c5cdc09d667f3506c8eae407d437e7503)",
+      "expected_head_sha": "6c82d97c5cdc09d667f3506c8eae407d437e7503",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T19:58:39.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diagnostics-zip-atomic-overwrite",
+        "head_sha": "6c82d97c5cdc09d667f3506c8eae407d437e7503",
         "cluster_id": null,
         "job_path": null
       }
