@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-121050",
+  "mode": "autonomous",
+  "run_id": "31523949498",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31523949498",
+  "head_sha": "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121050.md",
+  "published_at": "2026-08-11T18:47:15.570Z",
+  "canonical": "#121050",
+  "canonical_issue": "#55372",
+  "canonical_pr": "#121050",
+  "summary": "Keep PR #121050 as the canonical repair path. Rebase its writable same-repo branch onto current main, port the Control UI producer change through the runtime-config module split, retain the existing stale-route regressions, then rerun exact-head review and validation. #55372 remains open until the repaired PR is validated and landed.",
+  "actions": [
+    {
+      "target": "#55372",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#121050",
+      "candidate_fix": "#121050",
+      "reason": "The issue remains the user-report context while PR #121050 owns the concrete repair and validation."
+    },
+    {
+      "target": "#121050",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#121050",
+      "candidate_fix": "#121050",
+      "reason": "The PR is the correct owner-boundary fix but needs a current-main rebase and post-rebase validation before it can be reconsidered for merge."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
