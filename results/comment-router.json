@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:54:05.048Z",
+  "updated_at": "2026-08-11T17:54:13.155Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5253659317:2026-08-11T13:14:56Z:re_review",
-      "comment_id": "5253659317",
-      "comment_version_key": "5253659317:2026-08-11T13:14:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5253659317",
-      "comment_created_at": "2026-08-11T13:14:56Z",
-      "comment_updated_at": "2026-08-11T13:14:56Z",
-      "comment_body_sha256": "cdf1877c3f64c42bb851828e434568fc391f8995e3d7951ddfa3a063ff46c13d",
-      "source_delivery_id": "a65683c0-9586-11f1-8838-587b1f437abd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T13:15:30.551Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "e6c18fd7bb57239f7d96d034f8512c5332815e6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119225:5179486596:2026-08-11T13:15:28Z:clawsweeper_auto_repair",
       "comment_id": "5179486596",
@@ -32013,6 +31965,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T17:54:05.048Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122173:5256858860:2026-08-11T17:53:30Z:clawsweeper_needs_human",
+      "comment_id": "5256858860",
+      "comment_version_key": "5256858860:2026-08-11T17:53:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122173#issuecomment-5256858860",
+      "comment_created_at": "2026-08-11T17:53:30Z",
+      "comment_updated_at": "2026-08-11T17:53:30Z",
+      "comment_body_sha256": "0667b627561134ac99f72bb3d0bd04cf9db877dacc27f6bbc76addee55a5380b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The read-only checkout lacks tsx source and GitHub network reads failed, so exact-head CI/Testbox remains the final verification of tsx 4.23.1 composition behavior. (sha=f2229480d4198e2933d4213e2e238a450bf1dbd3)",
+      "expected_head_sha": "f2229480d4198e2933d4213e2e238a450bf1dbd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T17:54:13.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-help-exit-loader-hook",
+        "head_sha": "f2229480d4198e2933d4213e2e238a450bf1dbd3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
