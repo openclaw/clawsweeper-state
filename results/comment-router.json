@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T06:58:09.123Z",
+  "updated_at": "2026-08-11T06:59:03.385Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118169:5229796567:2026-08-09T04:40:02Z:re_review",
-      "comment_id": "5229796567",
-      "comment_version_key": "5229796567:2026-08-09T04:40:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118169#issuecomment-5229796567",
-      "comment_created_at": "2026-08-09T04:40:02Z",
-      "comment_updated_at": "2026-08-09T04:40:02Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118169,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T02:08:27.045Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5229815671:2026-08-09T04:46:20Z:re_review",
       "comment_id": "5229815671",
@@ -32019,6 +31992,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T06:58:09.123Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121900:5250022479:2026-08-11T06:58:21Z:clawsweeper_needs_human",
+      "comment_id": "5250022479",
+      "comment_version_key": "5250022479:2026-08-11T06:58:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121900#issuecomment-5250022479",
+      "comment_created_at": "2026-08-11T06:58:21Z",
+      "comment_updated_at": "2026-08-11T06:58:21Z",
+      "comment_body_sha256": "0ecd5f74b3854b3d05a82dc6f3cd8de65637ed6d5918098162df51c9c62cda1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Configure a real shared Keychain access group (P1)** - OpenClawAppGroup.identifier resolves to the App Group value, but neither target declares a keychain-access-groups entitlement or corresponding signing capab...; Review finding: [P1] Configure a real shared Keychain access group — apps/shared/OpenClawKit/Sources/OpenClawKit/ShareGatewayRelaySettings.swift:145-148 - [medium] Shared Keychain... (sha=fdf5c079aa202f50e10e838a533064cd8c2474f1)",
+      "expected_head_sha": "fdf5c079aa202f50e10e838a533064cd8c2474f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T06:59:03.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-815",
+        "head_sha": "fdf5c079aa202f50e10e838a533064cd8c2474f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
