@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T10:54:19.128Z",
+  "updated_at": "2026-08-11T10:54:19.910Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121463:5249462285:2026-08-11T05:48:47Z:re_review",
-      "comment_id": "5249462285",
-      "comment_version_key": "5249462285:2026-08-11T05:48:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121463#issuecomment-5249462285",
-      "comment_created_at": "2026-08-11T05:48:47Z",
-      "comment_updated_at": "2026-08-11T05:48:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "52a70ee0-9548-11f1-9231-b082028afbf3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121463,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T05:49:31.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-chattypes-group-114544",
-        "head_sha": "450415b920fff63b0fa181128e4b06e73dd8e5df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121135:5233769454:2026-08-11T05:46:52Z:clawsweeper_needs_human",
       "comment_id": "5233769454",
@@ -31381,6 +31333,39 @@
         "kind": "pull_request",
         "branch": "test/consolidate-sdk-pack-e2e",
         "head_sha": "b973b1c06c8eff2f16007fa26da1412fce7eee37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121633:5243421220:2026-08-11T10:49:43Z:clawsweeper_needs_human",
+      "comment_id": "5243421220",
+      "comment_version_key": "5243421220:2026-08-11T10:49:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121633#issuecomment-5243421220",
+      "comment_created_at": "2026-08-10T17:03:19Z",
+      "comment_updated_at": "2026-08-11T10:49:43Z",
+      "comment_body_sha256": "84d7f02ac0e20e8388930f83a14c27f0a790a1222af8869f9cd4d8d752abbd39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve generated provider-key collision precedence (P1)** - resolveMergedModelProviderConfig selects the first normalized alias, while generated models.json uses a canonical spelling when present and otherwise...; Review finding: [P1] Preserve generated provider-key collision precedence — src/agents/model-auth-markers.ts:115 - [high] Provider-key collision can suppress a plaintext warning —... (sha=bb98cb55f988382c5490b84d9a897fea1df7ff6e)",
+      "expected_head_sha": "bb98cb55f988382c5490b84d9a897fea1df7ff6e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T10:54:19.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-121543-secretref-models-json",
+        "head_sha": "bb98cb55f988382c5490b84d9a897fea1df7ff6e",
         "cluster_id": null,
         "job_path": null
       }
