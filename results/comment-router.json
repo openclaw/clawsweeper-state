@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T19:07:30.870Z",
+  "updated_at": "2026-08-11T19:07:34.104Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118954:5171717737:2026-08-11T15:57:25Z:clawsweeper_needs_human",
-      "comment_id": "5171717737",
-      "comment_version_key": "5171717737:2026-08-11T15:57:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118954#issuecomment-5171717737",
-      "comment_created_at": "2026-08-03T21:06:53Z",
-      "comment_updated_at": "2026-08-11T15:57:25Z",
-      "comment_body_sha256": "8f9fcfdf75f28125210abae98838d12398b7f3a1d5606f7ebe7705c583d63ace",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118954,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Require the parent recovery contract before merge** - The scoped history call can restore a pending sensitive wizard, so this consumer must not be merged independently of the Gateway en...; Review finding: [medium] Require the parent recovery contract before merge — ui/src/pages/custodian/custodian-session-store.ts:571 (sha=7d2c88ad664c51b3e7b7e8b41b11a55297660cf0)",
-      "expected_head_sha": "7d2c88ad664c51b3e7b7e8b41b11a55297660cf0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T16:00:16.661Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-reload-recovery",
-        "head_sha": "7d2c88ad664c51b3e7b7e8b41b11a55297660cf0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118954:5248893880:2026-08-11T04:11:39Z:re_review",
       "comment_id": "5248893880",
@@ -31519,6 +31486,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:82572:5257625886:2026-08-11T19:06:51Z:re_review",
+      "comment_id": "5257625886",
+      "comment_version_key": "5257625886:2026-08-11T19:06:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5257625886",
+      "comment_created_at": "2026-08-11T19:06:51Z",
+      "comment_updated_at": "2026-08-11T19:06:51Z",
+      "comment_body_sha256": "f0439eaac18523f1214a6468b6a0ca5305f8be1098c7aeb516b70f0e1f2656e1",
+      "source_delivery_id": "cf88f850-95b7-11f1-8b6c-bdcf7f36611b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "jewseppi",
+      "author_id": 6901751,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T19:07:31.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "68ee91474305881168191252f28228647cef1751",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
