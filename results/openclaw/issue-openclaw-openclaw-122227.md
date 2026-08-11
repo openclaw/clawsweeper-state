@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122227"
-mode: "autonomous"
-run_id: "31530702397"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31530702397"
+mode: "plan"
+run_id: "31533749490"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31533749490"
 head_sha: "27d0dca681584cb46bc566afd38be71fdf58c949"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-11T20:12:37.559Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-11T20:41:40.714Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122227"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122227"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31530702397](https://github.com/openclaw/clawsweeper/actions/runs/31530702397)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31533749490](https://github.com/openclaw/clawsweeper/actions/runs/31533749490)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122227
 
 ## Summary
 
-Confirmed #122227 on main a1846dbe: stale reply-only work with no handle and queueDepth 0 is retained solely by the shared queue-depth guard, despite stale progress. No code was changed because this checkout is read-only and the required dependencies cannot be installed; a narrow, executable fix artifact is prepared.
+#122227 remains a narrow, source-proven bug on current main e74be5d. Plan a focused recovery-owner fix and regression coverage; no GitHub or repository mutations were made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed #122227 on main a1846dbe: stale reply-only work with no handle and que
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122227 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only checkout and unavailable dependencies, not by product or technical ambiguity. |
-| cluster:issue-openclaw-openclaw-122227 | build_fix_artifact | planned | canonical | Create the implementation PR from clawsweeper/issue-openclaw-openclaw-122227 in a writable executor checkout. |
+| #122227 | fix_needed | planned | canonical | No viable implementation PR is hydrated; the issue is the canonical path for a new narrow fix PR. |
+| cluster:issue-openclaw-openclaw-122227 | build_fix_artifact | planned | canonical | Implement only the stale reply-only zero-backlog path and its owner-boundary regression coverage. |
 
 ## Needs Human
 
