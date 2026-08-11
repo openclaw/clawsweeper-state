@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:08:08.153Z",
+  "updated_at": "2026-08-11T13:08:17.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5230013462:2026-08-09T05:46:47Z:re_review",
-      "comment_id": "5230013462",
-      "comment_version_key": "5230013462:2026-08-09T05:46:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5230013462",
-      "comment_created_at": "2026-08-09T05:46:47Z",
-      "comment_updated_at": "2026-08-09T05:46:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T07:09:23.510Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5230535654:2026-08-09T08:15:31Z:re_review",
       "comment_id": "5230535654",
@@ -31870,6 +31843,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T13:08:08.153Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:402:5253456692:2026-08-11T13:03:05Z:clawsweeper_needs_human",
+      "comment_id": "5253456692",
+      "comment_version_key": "5253456692:2026-08-11T13:03:05Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/402#issuecomment-5253456692",
+      "comment_created_at": "2026-08-11T12:55:54Z",
+      "comment_updated_at": "2026-08-11T13:03:05Z",
+      "comment_body_sha256": "f1a39d8bc37e4acd11c5cec48b8b94b058d3d034cb40d0d4d474febaf29d5249",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older remote hosts that do not advertise background-close support will now refuse a default close instead of silently using foreground fallback; this is the explicitly approved fail-c... (sha=771198d4c81009dbdd9405cc794b129ab23eb417)",
+      "expected_head_sha": "771198d4c81009dbdd9405cc794b129ab23eb417",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:08:17.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remote-background-default",
+        "head_sha": "771198d4c81009dbdd9405cc794b129ab23eb417",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
