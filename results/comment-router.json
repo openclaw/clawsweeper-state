@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:53:43.431Z",
+  "updated_at": "2026-08-11T02:53:53.999Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1111:5245043536:2026-08-10T22:01:51Z:clawsweeper_auto_repair",
-      "comment_id": "5245043536",
-      "comment_version_key": "5245043536:2026-08-10T22:01:51Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1111#issuecomment-5245043536",
-      "comment_created_at": "2026-08-10T19:35:29Z",
-      "comment_updated_at": "2026-08-10T22:01:51Z",
-      "comment_body_sha256": "62a6a3b8649db3a0422bf21950365f2aed16102728afc73547f3b954b33166bf",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1111,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0ded7ef34b7a62ee51daf67190ed4e0a68b9163b)",
-      "expected_head_sha": "0ded7ef34b7a62ee51daf67190ed4e0a68b9163b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T22:02:25.640Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/parked-review-item-reconcile",
-        "head_sha": "0ded7ef34b7a62ee51daf67190ed4e0a68b9163b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121724:5245903297:2026-08-10T22:01:32Z:clawsweeper_needs_human",
       "comment_id": "5245903297",
@@ -32258,6 +32225,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119687:5248458255:2026-08-11T02:53:17Z:re_review",
+      "comment_id": "5248458255",
+      "comment_version_key": "5248458255:2026-08-11T02:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119687#issuecomment-5248458255",
+      "comment_created_at": "2026-08-11T02:53:17Z",
+      "comment_updated_at": "2026-08-11T02:53:17Z",
+      "comment_body_sha256": "c69a8473819bfdf5580192cb863bbece0477cc6710dfe1b2c45de4a043e19d61",
+      "source_delivery_id": "ce55d850-952f-11f1-9b3c-dfc42cf685a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119687,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `2ec48395b19`: rebased onto latest `origin/main` (`17854d4c0b1`, includes #121521 uppercase file url staging fix and #121473 plugin-sdk baseline jsonl migration). mergeable cleared. plugin sdk api baseline regenerated (`.jsonl` format); `api:check` green. conflict in `stage-sandbox-media.ts` resolved: both `readlocalfilesafely` (our bridge staging) and `safefileurltopath` (#121521 file url fix) imports coexist. 84 focused tests pass (staging/bridge/backend/registration); oxlint + oxfmt clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T02:53:52.291Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ssh-media-staging-112160",
+        "head_sha": "2ec48395b19f7541ba231fbc3eaa120acd9646d7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
