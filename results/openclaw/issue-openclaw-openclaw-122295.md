@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122295"
 mode: "autonomous"
-run_id: "31540241615"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31540241615"
-head_sha: "4b79888c3f2ad4b9e0c2ee3345984adc995ea81d"
-workflow_conclusion: "failure"
+run_id: "31543212443"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31543212443"
+head_sha: "83dddd63e750a50bd2ada147f3a7cc8feffeff9f"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-11T22:06:31.078Z"
-canonical: "https://github.com/openclaw/openclaw/issues/122295"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/122295"
+published_at: "2026-08-11T22:47:38.308Z"
+canonical: "#122295"
+canonical_issue: "#122295"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31540241615](https://github.com/openclaw/clawsweeper/actions/runs/31540241615)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31543212443](https://github.com/openclaw/clawsweeper/actions/runs/31543212443)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/122295
+Canonical: #122295
 
 ## Summary
 
-Current main has the reported Teams inbound media-limit precedence defect. A narrow repair is defined, but implementation is blocked because the checkout is read-only and lacks the `tsx` test dependency.
+Current main reproduces #122295: the Teams monitor derives inbound media limits only from agent defaults, unlike the plugin’s shared resolver used on outbound paths. A writable checkout is required to apply and validate the narrow two-file fix.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main has the reported Teams inbound media-limit precedence defect. A nar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122295 | fix_needed | planned | canonical | A narrow bundled-Teams bug fix is warranted; it adds no config, migration, or security-boundary change. |
-| cluster:issue-openclaw-openclaw-122295 | build_fix_artifact | blocked | canonical | Only implementation is blocked; the repair path is fully specified. |
+| #122295 | fix_needed | blocked | canonical | The filesystem sandbox is read-only, preventing the required source/test edits, dependency installation, branch update, and PR creation. |
+| #122295 | build_fix_artifact | planned | canonical |  |
 
 ## Needs Human
 
