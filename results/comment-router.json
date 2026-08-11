@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-11T16:30:02.375Z",
+  "updated_at": "2026-08-11T16:21:55.873Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120609:5226825347:2026-08-11T10:04:42Z:clawsweeper_needs_human",
+      "comment_id": "5226825347",
+      "comment_version_key": "5226825347:2026-08-11T10:04:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120609#issuecomment-5226825347",
+      "comment_created_at": "2026-08-08T15:42:43Z",
+      "comment_updated_at": "2026-08-11T10:04:42Z",
+      "comment_body_sha256": "799d3e586295c428f1f04b872b6fc7e094e97df1484805fb24db79e62a0b428a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120609,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has not yet completed the macOS resolver, release build, and Swift-test checks required to establish compatibility of the updated package graph. (sha=8958c1cff5d9c572e919035ff6f9424f963b9550)",
+      "expected_head_sha": "8958c1cff5d9c572e919035ff6f9424f963b9550",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T10:56:57.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/swift/apps/macos/swift-deps-91e433a0a9",
+        "head_sha": "700453d6031214543ebd285d99794ac94e9812ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-11T08:04:15Z:clawsweeper_auto_repair",
       "comment_id": "5229043394",
@@ -32178,39 +32211,6 @@
       "status": "skipped",
       "processed_at": "2026-08-11T16:21:55.873Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:129:5255920378:2026-08-11T16:29:17Z:clawsweeper_needs_human",
-      "comment_id": "5255920378",
-      "comment_version_key": "5255920378:2026-08-11T16:29:17Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/129#issuecomment-5255920378",
-      "comment_created_at": "2026-08-11T16:29:17Z",
-      "comment_updated_at": "2026-08-11T16:29:17Z",
-      "comment_body_sha256": "ed466b8a4e88e2252be398257cd3b933e30d267a89c46e41ef5d3248b747361b",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports tests and checks but provides no after-fix real Windows run; after correcting the security design, add redacted live Windows out...; Review finding: [P1] Keep unknown Win32 inodes fail-closed — src/file-identity.ts:39-40 - [high] Ambiguous inode can bypass post-open swap detection — src/file-identity.ts:39 (sha=5494a918b99b848f97f226fb81dcf65653a90b1c)",
-      "expected_head_sha": "5494a918b99b848f97f226fb81dcf65653a90b1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T16:30:02.374Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/win32-zero-ino-unknown-identity",
-        "head_sha": "5494a918b99b848f97f226fb81dcf65653a90b1c",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
