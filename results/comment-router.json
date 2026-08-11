@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:50:26.526Z",
+  "updated_at": "2026-08-11T09:53:08.438Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120900:5234447293:2026-08-09T23:40:53Z:re_review",
-      "comment_id": "5234447293",
-      "comment_version_key": "5234447293:2026-08-09T23:40:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5234447293",
-      "comment_created_at": "2026-08-09T23:40:53Z",
-      "comment_updated_at": "2026-08-09T23:40:53Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T04:54:08.169Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5234518639:2026-08-09T23:59:58Z:re_review",
       "comment_id": "5234518639",
@@ -31476,6 +31449,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121977:5251604123:2026-08-11T09:52:28Z:clawsweeper_needs_human",
+      "comment_id": "5251604123",
+      "comment_version_key": "5251604123:2026-08-11T09:52:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121977#issuecomment-5251604123",
+      "comment_created_at": "2026-08-11T09:52:28Z",
+      "comment_updated_at": "2026-08-11T09:52:28Z",
+      "comment_body_sha256": "982084ef015a2fb85e3b8bbe8b8db2d1b6bc7320423d0385a6475e39fef2d14b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121977,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as mergeable but behind current main, so landing should use a refreshed exact-head check after rebase or merge-queue update. (sha=a4beaa838b2322d15e7fd064321d8323af91f1df)",
+      "expected_head_sha": "a4beaa838b2322d15e7fd064321d8323af91f1df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T09:53:08.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/decouple-mingit-curl-assertion",
+        "head_sha": "a4beaa838b2322d15e7fd064321d8323af91f1df",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
