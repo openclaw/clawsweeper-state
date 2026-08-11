@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T05:57:32.202Z",
+  "updated_at": "2026-08-11T05:57:33.662Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112932:5078005219:2026-08-11T01:53:15Z:clawsweeper_needs_human",
-      "comment_id": "5078005219",
-      "comment_version_key": "5078005219:2026-08-11T01:53:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112932#issuecomment-5078005219",
-      "comment_created_at": "2026-07-25T09:36:01Z",
-      "comment_updated_at": "2026-08-11T01:53:15Z",
-      "comment_body_sha256": "cf3787984d497d1479cc5bce814841bc2194b3a634dd2c37befe1d35c02d619d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112932,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes persisted OAuth selection and recovery semantics; a mistaken permanent classification or unsafe adoption path can affect existing OpenAI authentication. (sha=585d9eafe3d684c636195c9ae20c342d3c20b320)",
-      "expected_head_sha": "585d9eafe3d684c636195c9ae20c342d3c20b320",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T01:54:04.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oauth-dead-refresh-rebootstrap",
-        "head_sha": "585d9eafe3d684c636195c9ae20c342d3c20b320",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1115:5248131938:2026-08-11T01:53:58Z:re_review",
       "comment_id": "5248131938",
@@ -31695,6 +31662,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121536:5239235688:2026-08-11T05:52:35Z:clawsweeper_needs_human",
+      "comment_id": "5239235688",
+      "comment_version_key": "5239235688:2026-08-11T05:52:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121536#issuecomment-5239235688",
+      "comment_created_at": "2026-08-10T10:58:55Z",
+      "comment_updated_at": "2026-08-11T05:52:35Z",
+      "comment_body_sha256": "3552ff5c872070173f792c75e1ce67aaeeeefb6f1471c06f57945b0402b93f94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121536,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resolving the current merge conflict can alter session and transcript behavior; the resulting head needs focused session, Gateway, Plugin SDK, and exact-head CI validation before merg... (sha=260a3882624d2fe68a33704392444cc36990c77c)",
+      "expected_head_sha": "260a3882624d2fe68a33704392444cc36990c77c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T05:57:33.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-accessor-infix-removal",
+        "head_sha": "260a3882624d2fe68a33704392444cc36990c77c",
+        "cluster_id": "automerge-openclaw-openclaw-121536",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121536.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
