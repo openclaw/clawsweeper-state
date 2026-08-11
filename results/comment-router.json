@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:04:58.996Z",
+  "updated_at": "2026-08-11T20:05:21.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4828221984:2026-06-29T01:31:21Z:re_review",
-      "comment_id": "4828221984",
-      "comment_version_key": "4828221984:2026-06-29T01:31:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4828221984",
-      "comment_created_at": "2026-06-29T01:31:21Z",
-      "comment_updated_at": "2026-06-29T01:31:21Z",
-      "comment_body_sha256": "62eefdfbf9820813feca0aded175543511e7e9f3051efa0953a45c713e53b603",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:54:05.048Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4829105377:2026-06-29T04:53:03Z:re_review",
       "comment_id": "4829105377",
@@ -29651,6 +29624,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T20:04:58.996Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122221:5258226036:2026-08-11T20:04:32Z:clawsweeper_needs_human",
+      "comment_id": "5258226036",
+      "comment_version_key": "5258226036:2026-08-11T20:04:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122221#issuecomment-5258226036",
+      "comment_created_at": "2026-08-11T20:04:32Z",
+      "comment_updated_at": "2026-08-11T20:04:32Z",
+      "comment_body_sha256": "d021787a2d4f00aa4c9a1c84e32fa77b4234acaa8c3628cf0deeffe06e9bb9a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122221,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes Telegram-visible progress delivery; the branch has strong mock-gateway coverage, but the applicable Telegram guide calls for a real Telegram proof of hidden versus enable... (sha=4505d64fc64af08705088fb5dcc8900cbfa7154b)",
+      "expected_head_sha": "4505d64fc64af08705088fb5dcc8900cbfa7154b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T20:05:21.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fast-auto-progress-97601",
+        "head_sha": "4505d64fc64af08705088fb5dcc8900cbfa7154b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
