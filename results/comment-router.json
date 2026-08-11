@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:17:36.970Z",
+  "updated_at": "2026-08-11T22:21:32.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122199:5257547129:2026-08-11T18:59:28Z:clawsweeper_needs_human",
-      "comment_id": "5257547129",
-      "comment_version_key": "5257547129:2026-08-11T18:59:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122199#issuecomment-5257547129",
-      "comment_created_at": "2026-08-11T18:59:28Z",
-      "comment_updated_at": "2026-08-11T18:59:28Z",
-      "comment_body_sha256": "48df4b87157b494a7cdd03c21ca0c458d5ee3e9b7af688aa248a41f12efc2e44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122199,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The temporary write accepts legacy plugin-owned fields until fresh doctor and strict validation run; merging is upgrade-sensitive, so the pending exact-head CI and package-acceptance... (sha=07febc2146a9cef6a749979d7c4933de1915a39f)",
-      "expected_head_sha": "07febc2146a9cef6a749979d7c4933de1915a39f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T19:00:32.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-upgrade-migration",
-        "head_sha": "07febc2146a9cef6a749979d7c4933de1915a39f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-11T18:59:24Z:clawsweeper_needs_human",
       "comment_id": "5184670120",
@@ -31119,6 +31086,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2852:5259518072:2026-08-11T22:20:53Z:re_review",
+      "comment_id": "5259518072",
+      "comment_version_key": "5259518072:2026-08-11T22:20:53Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2852#issuecomment-5259518072",
+      "comment_created_at": "2026-08-11T22:20:53Z",
+      "comment_updated_at": "2026-08-11T22:20:53Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "eb192340-95d2-11f1-8c88-7401fb1a51a4",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2852,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T22:21:29.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cost-cache-stable-save-2495",
+        "head_sha": "c735150bef293737c30d08b9fe83d3c484a9da8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
