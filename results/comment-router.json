@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T08:04:19.441Z",
+  "updated_at": "2026-08-11T08:04:28.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5153893255:2026-08-01T23:02:37Z:re_review",
-      "comment_id": "5153893255",
-      "comment_version_key": "5153893255:2026-08-01T23:02:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5153893255",
-      "comment_created_at": "2026-08-01T23:02:37Z",
-      "comment_updated_at": "2026-08-01T23:02:37Z",
-      "comment_body_sha256": "69626708fd00caf7467a58c589700d27bee16e237ae7ce00266ee89f698869be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T03:51:57.180Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5154012588:2026-08-01T23:37:21Z:re_review",
       "comment_id": "5154012588",
@@ -31721,6 +31694,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T08:04:19.441Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121593:5240630375:2026-08-11T08:03:44Z:clawsweeper_needs_human",
+      "comment_id": "5240630375",
+      "comment_version_key": "5240630375:2026-08-11T08:03:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121593#issuecomment-5240630375",
+      "comment_created_at": "2026-08-10T13:00:56Z",
+      "comment_updated_at": "2026-08-11T08:03:44Z",
+      "comment_body_sha256": "ebbc7a3e6cc62ac999b58bdd0b00766c605f547deea3e6732525da058344f583",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This creates a durable public Gateway control: an administrator who selects external intentionally gives up OpenClaw's automatic restart fallback for that session. (sha=1320e8a07fc8a42a20986f31aa0a4edd49610b5f)",
+      "expected_head_sha": "1320e8a07fc8a42a20986f31aa0a4edd49610b5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T08:04:28.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/121570-external-recovery-owner",
+        "head_sha": "1320e8a07fc8a42a20986f31aa0a4edd49610b5f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
