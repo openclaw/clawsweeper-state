@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T15:54:50.744Z",
+  "updated_at": "2026-08-11T15:55:25.413Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109077:5251721604:2026-08-11T10:03:58Z:re_review",
-      "comment_id": "5251721604",
-      "comment_version_key": "5251721604:2026-08-11T10:03:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109077#issuecomment-5251721604",
-      "comment_created_at": "2026-08-11T10:03:58Z",
-      "comment_updated_at": "2026-08-11T10:03:58Z",
-      "comment_body_sha256": "0f6e449979320c879f75e83daa49a3773a4761a15279fe3f4abe8d45f77f60f2",
-      "source_delivery_id": "f9347540-956b-11f1-8b1d-1ffeda9875df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109077,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T10:04:36.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-nonroot-install-fetch",
-        "head_sha": "fbad41a44a1fa3d9922b5dce6302c67385577c24",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121165:5251727071:2026-08-11T10:04:33Z:re_review",
       "comment_id": "5251727071",
@@ -32428,6 +32380,39 @@
         "kind": "pull_request",
         "branch": "steipete/context-menu-design-system-91aa10",
         "head_sha": "36ba84cbb43af2cb82e07030acd5c667604c9f9c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122108:5255536694:2026-08-11T15:54:33Z:clawsweeper_needs_human",
+      "comment_id": "5255536694",
+      "comment_version_key": "5255536694:2026-08-11T15:54:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122108#issuecomment-5255536694",
+      "comment_created_at": "2026-08-11T15:54:33Z",
+      "comment_updated_at": "2026-08-11T15:54:33Z",
+      "comment_body_sha256": "c547e3240ca5b974306fe7d6014e44cbfab64e1eb8e1c6672115d2cbe04e0c10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied after-fix output comes from a direct resolver call with mocked fetch; add a redacted mock-gateway harness result or real Slack eve... (sha=556bbc368261624fe8002ce303b4421bab0924d0)",
+      "expected_head_sha": "556bbc368261624fe8002ce303b4421bab0924d0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T15:55:25.413Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/slack-media-notice",
+        "head_sha": "556bbc368261624fe8002ce303b4421bab0924d0",
         "cluster_id": null,
         "job_path": null
       }
