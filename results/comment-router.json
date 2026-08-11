@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:00:21.628Z",
+  "updated_at": "2026-08-11T09:00:36.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119447:5248828693:2026-08-11T04:00:13Z:re_review",
-      "comment_id": "5248828693",
-      "comment_version_key": "5248828693:2026-08-11T04:00:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119447#issuecomment-5248828693",
-      "comment_created_at": "2026-08-11T04:00:13Z",
-      "comment_updated_at": "2026-08-11T04:00:13Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "282342b0-9539-11f1-9a14-875816e1824b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119447,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T04:00:51.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-summary-output-budget",
-        "head_sha": "74f46382a6609c94b2af3743e2015b1cd7c0ccd7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120860:5229610023:2026-08-11T04:00:26Z:clawsweeper_needs_human",
       "comment_id": "5229610023",
@@ -31581,6 +31533,39 @@
         "kind": "pull_request",
         "branch": "dependabot/swift/apps/macos/swift-deps-91e433a0a9",
         "head_sha": "d9648a71173ce1f84657fc41207889181be97139",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121897:5250007512:2026-08-11T08:59:54Z:clawsweeper_needs_human",
+      "comment_id": "5250007512",
+      "comment_version_key": "5250007512:2026-08-11T08:59:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121897#issuecomment-5250007512",
+      "comment_created_at": "2026-08-11T06:56:30Z",
+      "comment_updated_at": "2026-08-11T08:59:54Z",
+      "comment_body_sha256": "2f7d47f4785199ecd72d5c960dac7a5d7e1f3a5d154edc580058de53a456e758",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121897,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Strip the delivery controller from finalization handoffs (P1)** - The new property is removed only for runAttempt. A plugin finalizeSettledTurn instead receives the projection built by prepareHarnessFinalization...; Review finding: [P1] Strip the delivery controller from finalization handoffs — src/agents/harness/selection.ts:718-721 - [medium] Finalization can access private delivery policy... (sha=4f2cd255f60d646c367c784dc27da44334cb6f24)",
+      "expected_head_sha": "4f2cd255f60d646c367c784dc27da44334cb6f24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T09:00:36.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "joshavant/issue-121605-20260810t171350z-2a4019a1",
+        "head_sha": "4f2cd255f60d646c367c784dc27da44334cb6f24",
         "cluster_id": null,
         "job_path": null
       }
