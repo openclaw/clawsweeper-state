@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T18:03:41.522Z",
+  "updated_at": "2026-08-11T18:05:15.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117432:5254798991:2026-08-11T14:51:49Z:re_review",
-      "comment_id": "5254798991",
-      "comment_version_key": "5254798991:2026-08-11T14:51:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117432#issuecomment-5254798991",
-      "comment_created_at": "2026-08-11T14:51:49Z",
-      "comment_updated_at": "2026-08-11T14:51:49Z",
-      "comment_body_sha256": "46b8dd355907172298b67ff17c9e381f0674cd56866616f32fdf9a340647b590",
-      "source_delivery_id": "2f50f810-9594-11f1-9b46-fd6eb9097e28",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117432,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — final rebased head `176c1a43d69` on current main `6472d22a77f`: merge conflict resolved (plugin-sdk baseline regenerated, single intentional agent-harness line) and all three exact-head repro scripts (real engine loop + planner fallback + real mcp stdio json-rpc boundary) plus 103 unit tests pass on this exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T14:52:22.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/delegated-approval-handoff-116519",
-        "head_sha": "176c1a43d69d8165fa1a4d049015bfd116a958ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78747:4393916980:2026-08-11T14:15:17Z:clawsweeper_auto_repair",
       "comment_id": "4393916980",
@@ -31409,6 +31361,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T18:03:41.522Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3412:5194286235:2026-08-11T18:04:30Z:clawsweeper_needs_human",
+      "comment_id": "5194286235",
+      "comment_version_key": "5194286235:2026-08-11T18:04:30Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3412#issuecomment-5194286235",
+      "comment_created_at": "2026-08-05T16:11:36Z",
+      "comment_updated_at": "2026-08-11T18:04:30Z",
+      "comment_body_sha256": "27cdc720991101654d66b1d2cdeae0cf22e84a58a0a0dbfb97b141616e12081f",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3412,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain Carapace’s lockfile integrity digest (P2)** - This jsdom update removes the SHA-512 field for the unchanged Carapace Git dependency. Current main records that digest, so the clean merge would weaken depen...; Review finding: [P2] Retain Carapace’s lockfile integrity digest — bun.lock:448 - [medium] Carapace integrity digest is removed — bun.lock:448 (sha=a30aeac49d70cbe4738e9367a30fbe674b5a3768)",
+      "expected_head_sha": "a30aeac49d70cbe4738e9367a30fbe674b5a3768",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T18:05:15.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/jsdom-30.0.1",
+        "head_sha": "a30aeac49d70cbe4738e9367a30fbe674b5a3768",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
