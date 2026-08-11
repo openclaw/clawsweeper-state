@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:56:14.834Z",
+  "updated_at": "2026-08-11T02:56:16.115Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121129:5246785028:2026-08-10T22:33:35Z:re_review",
-      "comment_id": "5246785028",
-      "comment_version_key": "5246785028:2026-08-10T22:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121129#issuecomment-5246785028",
-      "comment_created_at": "2026-08-10T22:33:35Z",
-      "comment_updated_at": "2026-08-10T22:33:35Z",
-      "comment_body_sha256": "6f23b6649de9ccb26c23187675b694737494459d59bba6b32e299f2e128fdf05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121129,
-      "author": "Takhoffman",
-      "author_id": 781889,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T22:50:33.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/oc-t20-02-plugin-icon-response-disposal",
-        "head_sha": "c35a57cdcd83e9b1e2283f810d1dd68494e1749d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5246792978:2026-08-10T22:34:41Z:re_review",
       "comment_id": "5246792978",
@@ -31898,6 +31851,39 @@
         "kind": "pull_request",
         "branch": "steipete/project-clone-github",
         "head_sha": "c84f5382077aaada1b37142474b0f45f29e22a68",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121817:5248470599:2026-08-11T02:55:35Z:clawsweeper_needs_human",
+      "comment_id": "5248470599",
+      "comment_version_key": "5248470599:2026-08-11T02:55:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121817#issuecomment-5248470599",
+      "comment_created_at": "2026-08-11T02:55:35Z",
+      "comment_updated_at": "2026-08-11T02:55:35Z",
+      "comment_body_sha256": "3fb73c4ff62b7c889d0b5df7d0b650f3028302d22b2372df860aa3d07b52ed4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121817,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The draft is currently dirty against main; resolve the merge state and rerun focused proof on the resulting exact head before landing. (sha=3b60a744a28fd153784cd559e7b0bd5f6c80d67f)",
+      "expected_head_sha": "3b60a744a28fd153784cd559e7b0bd5f6c80d67f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:56:16.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/failover-06-duplicate-absorption",
+        "head_sha": "3b60a744a28fd153784cd559e7b0bd5f6c80d67f",
         "cluster_id": null,
         "job_path": null
       }
