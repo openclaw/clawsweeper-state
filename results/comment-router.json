@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:09:47.891Z",
+  "updated_at": "2026-08-11T01:10:08.682Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121431:5237341655:2026-08-10T20:03:21Z:clawsweeper_needs_human",
-      "comment_id": "5237341655",
-      "comment_version_key": "5237341655:2026-08-10T20:03:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121431#issuecomment-5237341655",
-      "comment_created_at": "2026-08-10T07:49:49Z",
-      "comment_updated_at": "2026-08-10T20:03:21Z",
-      "comment_body_sha256": "471a5609edb9c9321b51682645344b7e059e70194c3ea4b2989309bc2dbeed99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121431,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not hydrate exact PR-head blobs after the GitHub promisor remote failed DNS resolution; exact-head CI, including the Plugin SDK baseline check, was still... (sha=85ad3543539abf5978cb4cfe93df66244dc90a8c)",
-      "expected_head_sha": "85ad3543539abf5978cb4cfe93df66244dc90a8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:47:41.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/consolidate-duplicate-helpers",
-        "head_sha": "57972200de0aa39e5fad77ee94025ed0af1b8446",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121488:5237392391:2026-08-10T20:04:22Z:clawsweeper_needs_human",
       "comment_id": "5237392391",
@@ -32239,6 +32206,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121671:5247878025:2026-08-11T01:09:19Z:re_review",
+      "comment_id": "5247878025",
+      "comment_version_key": "5247878025:2026-08-11T01:09:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121671#issuecomment-5247878025",
+      "comment_created_at": "2026-08-11T01:09:19Z",
+      "comment_updated_at": "2026-08-11T01:09:19Z",
+      "comment_body_sha256": "74fe4446a27ee662a7e67a3f05b050a78f6c1032d3c4bfc603ff3e0f85e31c86",
+      "source_delivery_id": "485fbfd0-9521-11f1-97da-1dfa8a8da45a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121671,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:10:06.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upbeat-greider-ef8777",
+        "head_sha": "6aa805530d6f118d29200b4477f984618b0a9b84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
