@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:08:26.116Z",
+  "updated_at": "2026-08-11T01:08:31.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114095:5245761692:2026-08-10T20:45:12Z:re_review",
-      "comment_id": "5245761692",
-      "comment_version_key": "5245761692:2026-08-10T20:45:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114095#issuecomment-5245761692",
-      "comment_created_at": "2026-08-10T20:45:12Z",
-      "comment_updated_at": "2026-08-10T20:45:12Z",
-      "comment_body_sha256": "750c2571de950cfbc2a1a1717de94ceb87847c9175b9a9afd3139c379a1e5e02",
-      "source_delivery_id": "62ecedc0-94fc-11f1-8ab8-5d75929b6e93",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114095,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T20:46:01.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exact-head-pr-convergence-audit",
-        "head_sha": "36edc8e3fcb0874b695c20b490380e86c9d8b60f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118148:5160037555:2026-08-10T20:04:16Z:clawsweeper_auto_repair",
       "comment_id": "5160037555",
@@ -32233,6 +32185,39 @@
         "kind": "pull_request",
         "branch": "steipete/nameable-test-helper-types",
         "head_sha": "11a2af4864d239b71bc55a5d456d040a025c7e07",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:386:5247649744:2026-08-11T01:03:10Z:clawsweeper_needs_human",
+      "comment_id": "5247649744",
+      "comment_version_key": "5247649744:2026-08-11T01:03:10Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/386#issuecomment-5247649744",
+      "comment_created_at": "2026-08-11T00:32:43Z",
+      "comment_updated_at": "2026-08-11T01:03:10Z",
+      "comment_body_sha256": "07dbd583aef4c927ef661186fb18315227fa6e4530175783b318919e836c1e62",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - CLI and MCP partial rows can now emit is_hidden: null where successful output previously emitted a Boolean; strict decoders need an explicit compatibility decision. (sha=47c590753ed9adb4dbc07f3dd79ea728b0299ab0)",
+      "expected_head_sha": "47c590753ed9adb4dbc07f3dd79ea728b0299ab0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:08:31.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-hidden-inventory-timeout",
+        "head_sha": "47c590753ed9adb4dbc07f3dd79ea728b0299ab0",
         "cluster_id": null,
         "job_path": null
       }
