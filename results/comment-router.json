@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:48:13.782Z",
+  "updated_at": "2026-08-11T01:48:49.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121660:5244640748:2026-08-10T20:49:19Z:clawsweeper_needs_human",
-      "comment_id": "5244640748",
-      "comment_version_key": "5244640748:2026-08-10T20:49:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121660#issuecomment-5244640748",
-      "comment_created_at": "2026-08-10T18:58:41Z",
-      "comment_updated_at": "2026-08-10T20:49:19Z",
-      "comment_body_sha256": "20b8fc62276e14ae538bce39c2839a317cc71a2d81705709b994a76d477b4328",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121660,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and its recorded exact-head CI gate is failed; refresh the branch/checks before merge even though GitHub reports it cleanly mergeable. (sha=13f251da99ce588e4ce457234a279ae0857400e6)",
-      "expected_head_sha": "13f251da99ce588e4ce457234a279ae0857400e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:50:14.515Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "13f251da99ce588e4ce457234a279ae0857400e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121715:5245804542:2026-08-10T20:49:33Z:clawsweeper_needs_human",
       "comment_id": "5245804542",
@@ -32383,6 +32350,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119874:5248101272:2026-08-11T01:48:08Z:re_review",
+      "comment_id": "5248101272",
+      "comment_version_key": "5248101272:2026-08-11T01:48:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119874#issuecomment-5248101272",
+      "comment_created_at": "2026-08-11T01:48:08Z",
+      "comment_updated_at": "2026-08-11T01:48:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "b47db870-9526-11f1-9b04-29756b62db68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119874,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:48:46.930Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-timeout-seconds-naming",
+        "head_sha": "1a9f9e720c5209abe6cea9556862103a31b9557d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
