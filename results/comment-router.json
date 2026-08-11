@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T19:58:22.925Z",
+  "updated_at": "2026-08-11T19:58:26.610Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121181:5256202078:2026-08-11T16:54:17Z:re_review",
-      "comment_id": "5256202078",
-      "comment_version_key": "5256202078:2026-08-11T16:54:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121181#issuecomment-5256202078",
-      "comment_created_at": "2026-08-11T16:54:17Z",
-      "comment_updated_at": "2026-08-11T16:54:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "4b401770-95a5-11f1-850d-9f659761ea4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121181,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T16:54:56.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/invalidate-plugin-skill-memo-acp-20260810",
-        "head_sha": "d17caac93737de1b7641dc66902bfc561a4c08de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122144:5256201113:2026-08-11T16:54:12Z:clawsweeper_needs_human",
       "comment_id": "5256201113",
@@ -31290,6 +31242,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-system-agent-auto-hatch",
         "head_sha": "3caabdfea31f2ca7b9c543efcaa7eb683df1aba3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122191:5257543101:2026-08-11T19:55:43Z:clawsweeper_needs_human",
+      "comment_id": "5257543101",
+      "comment_version_key": "5257543101:2026-08-11T19:55:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122191#issuecomment-5257543101",
+      "comment_created_at": "2026-08-11T18:59:06Z",
+      "comment_updated_at": "2026-08-11T19:55:43Z",
+      "comment_body_sha256": "c10e454c21aa6446c7be844d3f4fdc7a0864aaace1773d4e12ea8b3a905afc58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Verify the 0.19.3 enum contract before pinning it (P2)** - This prior blocker remains on the unchanged head: the new comment asserts that these casts are the 0.19.3 contract, but the test injects the same old nu...; Review finding: [P2] Verify the 0.19.3 enum contract before pinning it — extensions/cua-computer/src/driver-client.ts:19-34 - [medium] Review the new native driver artifacts — pnp... (sha=64e36de146022ccee60c10a65fe115a5b0d5db40)",
+      "expected_head_sha": "64e36de146022ccee60c10a65fe115a5b0d5db40",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T19:58:26.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "orclaw/cu-9-driver-0193-upgrade",
+        "head_sha": "64e36de146022ccee60c10a65fe115a5b0d5db40",
         "cluster_id": null,
         "job_path": null
       }
