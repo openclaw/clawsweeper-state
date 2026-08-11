@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:05:09.270Z",
+  "updated_at": "2026-08-11T22:06:26.253Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103705:4951558048:2026-07-12T14:35:46Z:re_review",
-      "comment_id": "4951558048",
-      "comment_version_key": "4951558048:2026-07-12T14:35:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103705#issuecomment-4951558048",
-      "comment_created_at": "2026-07-12T14:35:46Z",
-      "comment_updated_at": "2026-07-12T14:35:46Z",
-      "comment_body_sha256": "21ff1fb98dd032cbb556c57e67fcc1b5c8a7e0518ce61588958ea2b802a5562b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103705,
-      "author": "petroff",
-      "author_id": 2150355,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T18:58:04.019Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118067:5257526966:2026-08-11T18:57:39Z:re_review",
       "comment_id": "5257526966",
@@ -31031,6 +31004,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T22:05:09.270Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122221:5258226036:2026-08-11T22:05:45Z:clawsweeper_needs_human",
+      "comment_id": "5258226036",
+      "comment_version_key": "5258226036:2026-08-11T22:05:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122221#issuecomment-5258226036",
+      "comment_created_at": "2026-08-11T20:04:32Z",
+      "comment_updated_at": "2026-08-11T22:05:45Z",
+      "comment_body_sha256": "ab647cf2d5a3bf10bc851dfbda5ff26eb9cf63a6d385d7c03650e8bb1537dcdb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122221,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The patch changes the authorization boundary before Telegram’s single-send fallback, so the scoped guide requires real Telegram evidence that hidden progress stays absent and enabled... (sha=d49a267b6a49af166d615fe901a5f63056cf6f87)",
+      "expected_head_sha": "d49a267b6a49af166d615fe901a5f63056cf6f87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:06:26.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fast-auto-progress-97601",
+        "head_sha": "d49a267b6a49af166d615fe901a5f63056cf6f87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
