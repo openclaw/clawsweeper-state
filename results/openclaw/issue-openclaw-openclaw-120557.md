@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-120557"
 mode: "autonomous"
-run_id: "31255477396"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31255477396"
-head_sha: "36179dceb26fbeca33d8a863746b4cf83e325e09"
+run_id: "31483039146"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31483039146"
+head_sha: "16e2959d529b25fdb5351c07ee9942ede27d6209"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-08T12:24:13.408Z"
+published_at: "2026-08-11T10:45:11.351Z"
 canonical: "https://github.com/openclaw/openclaw/issues/120557"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/120557"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31255477396](https://github.com/openclaw/clawsweeper/actions/runs/31255477396)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31483039146](https://github.com/openclaw/clawsweeper/actions/runs/31483039146)
 
 Workflow conclusion: success
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/120557
 
 ## Summary
 
-Current main reproduces #120557: quota selection combines the active session provider with the latest costed assistant-message provider, so ordered provider groups can render B before active-session provider A. Plan a narrow credited fix PR; no GitHub or checkout mutations were made.
+No new fix PR: current origin/main already implements the requested session-provider-first quota selection and regression coverage. Focused validation is externally blocked because this read-only checkout lacks tsx.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,22 +54,20 @@ Current main reproduces #120557: quota selection combines the active session pro
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| open_fix_pr | opened | https://github.com/openclaw/openclaw/pull/120586 | clawsweeper/issue-openclaw-openclaw-120557 |  |
 | issue_implementation_status_comment | updated | #120557 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120586 | merge_canonical | ready | fix_pr | issue implementation PR checks are green; merge intentionally blocked for this lane |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120557 | fix_needed | planned | canonical | A narrow existing-behavior repair is warranted; no viable implementation PR is hydrated. |
-| cluster:issue-openclaw-openclaw-120557 | build_fix_artifact | planned | canonical | Executor should apply the narrow source-and-unit-test repair, then validate from a provisioned trusted environment. |
-| cluster:issue-openclaw-openclaw-120557 | open_fix_pr | planned | canonical | The job permits one new fix PR and forbids merge or issue closure. |
+| #120557 | keep_canonical | skipped | fixed_by_candidate | The reported reproduction is already repaired on current main; creating another implementation PR would duplicate landed behavior. The replacement PR/commit cited by the closed historical PR was not hydrated, so it is retained only as historical evidence and not used as candidate_fix. |
+| #120586 | keep_closed | skipped | superseded | Historical closed PR; no closure or replacement action is valid. |
 
 ## Needs Human
 
