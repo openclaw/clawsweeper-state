@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:03:56.115Z",
+  "updated_at": "2026-08-11T17:04:03.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122006:5252839297:2026-08-11T11:58:02Z:clawsweeper_auto_repair",
-      "comment_id": "5252839297",
-      "comment_version_key": "5252839297:2026-08-11T11:58:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122006#issuecomment-5252839297",
-      "comment_created_at": "2026-08-11T11:58:02Z",
-      "comment_updated_at": "2026-08-11T11:58:02Z",
-      "comment_body_sha256": "ea7295c9c8cdc85a4ab9917d3835bfff205fca8043c1a1033e085fcb2e894803",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122006,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=504b54e6e37293aaae87c45ba65045433382e8b9)",
-      "expected_head_sha": "504b54e6e37293aaae87c45ba65045433382e8b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T11:58:45.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-cleanup-case-sensitive-peers",
-        "head_sha": "504b54e6e37293aaae87c45ba65045433382e8b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103031:4927892183:2026-08-11T11:49:55Z:autoclose",
       "comment_id": "4927892183",
@@ -32572,6 +32539,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T17:03:56.115Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120341:5221896707:2026-08-11T17:02:51Z:clawsweeper_needs_human",
+      "comment_id": "5221896707",
+      "comment_version_key": "5221896707:2026-08-11T17:02:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120341#issuecomment-5221896707",
+      "comment_created_at": "2026-08-07T20:53:24Z",
+      "comment_updated_at": "2026-08-11T17:02:51Z",
+      "comment_body_sha256": "5ee0ba4bb89235b8a83329bf8789245556c824d730dc592cfc99295976ee74b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120341,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body claims CI passed but provides no redacted after-fix trace for credential rotation, workflow execution, or macOS package resolution/...; Review finding: [P1] Bind materialized credentials into fingerprints — src/agents/execution-auth-binding.ts:278-319 - [P1] Update every exact workflow-pin assertion — .github/work... (sha=b1b22ddad3e16c80a26bcd7878cea084c532bc4c)",
+      "expected_head_sha": "b1b22ddad3e16c80a26bcd7878cea084c532bc4c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T17:04:03.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "main",
+        "head_sha": "b1b22ddad3e16c80a26bcd7878cea084c532bc4c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
