@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T09:54:20.757Z",
+  "updated_at": "2026-08-11T09:54:41.716Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5122347661:2026-07-29T19:07:36Z:re_review",
-      "comment_id": "5122347661",
-      "comment_version_key": "5122347661:2026-07-29T19:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5122347661",
-      "comment_created_at": "2026-07-29T19:07:36Z",
-      "comment_updated_at": "2026-07-29T19:07:36Z",
-      "comment_body_sha256": "ad0c52d6f78c0daa2725b3675a166f53944a44a98c1b441dd005349d23490039",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now f011010935. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T05:03:34.443Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5123874426:2026-07-29T22:09:43Z:re_review",
       "comment_id": "5123874426",
@@ -31330,6 +31303,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T09:54:20.757Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113816:5080318011:2026-08-11T09:48:34Z:clawsweeper_needs_human",
+      "comment_id": "5080318011",
+      "comment_version_key": "5080318011:2026-08-11T09:48:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113816#issuecomment-5080318011",
+      "comment_created_at": "2026-07-25T19:48:18Z",
+      "comment_updated_at": "2026-08-11T09:48:34Z",
+      "comment_body_sha256": "764f4df2afca8987aedd22624947c01639f3a55b86aba66fefa27627faf73c63",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plain status will intentionally defer detection of a changed Copilot model or provider key until initialization; current-main proof must confirm strict comparison resumes after discov... (sha=4fae0a6911e8a1e03f9246f9a567dfcafc4835be)",
+      "expected_head_sha": "4fae0a6911e8a1e03f9246f9a567dfcafc4835be",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-11T09:54:41.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/113553-copilot-memory-status",
+        "head_sha": "4fae0a6911e8a1e03f9246f9a567dfcafc4835be",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
