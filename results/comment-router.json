@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T05:57:17.774Z",
+  "updated_at": "2026-08-11T05:57:32.202Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119874:5248128904:2026-08-11T01:53:24Z:re_review",
-      "comment_id": "5248128904",
-      "comment_version_key": "5248128904:2026-08-11T01:53:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119874#issuecomment-5248128904",
-      "comment_created_at": "2026-08-11T01:53:24Z",
-      "comment_updated_at": "2026-08-11T01:53:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "70b24330-9527-11f1-9237-a8b60eb09b68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119874,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T01:54:00.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-timeout-seconds-naming",
-        "head_sha": "1a9f9e720c5209abe6cea9556862103a31b9557d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112932:5078005219:2026-08-11T01:53:15Z:clawsweeper_needs_human",
       "comment_id": "5078005219",
@@ -31707,6 +31659,39 @@
         "kind": "pull_request",
         "branch": "fix/oauth-authority-cancellation",
         "head_sha": "afab0f6448938ff860226563cbe7b7005ad8ba45",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119178:5177561276:2026-08-11T05:52:45Z:clawsweeper_needs_human",
+      "comment_id": "5177561276",
+      "comment_version_key": "5177561276:2026-08-11T05:52:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119178#issuecomment-5177561276",
+      "comment_created_at": "2026-08-04T10:09:49Z",
+      "comment_updated_at": "2026-08-11T05:52:45Z",
+      "comment_body_sha256": "c541539023efc84388a01e104cf42885099605b6957a30dab24eaaa4c370a87b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds +57 tooling/CI lines and a second recursive Markdown traversal; its scope should remain limited to bundled skills unless a future shared Markdown-walking contract is... (sha=79fce9e611eea445df48afb3b08ea6b40c030f00)",
+      "expected_head_sha": "79fce9e611eea445df48afb3b08ea6b40c030f00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T05:57:32.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/taskflow-skills-removed-alias",
+        "head_sha": "79fce9e611eea445df48afb3b08ea6b40c030f00",
         "cluster_id": null,
         "job_path": null
       }
