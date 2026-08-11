@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122251",
+  "mode": "autonomous",
+  "run_id": "31536379915",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31536379915",
+  "head_sha": "4b79888c3f2ad4b9e0c2ee3345984adc995ea81d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122251.md",
+  "published_at": "2026-08-11T21:20:07.991Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122251",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122251",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the cancellation-to-failure flattening. A narrow fix plan is ready, but this checkout is read-only and cannot run Vitest because `tsx` is absent.",
+  "actions": [
+    {
+      "target": "#122251",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122251",
+      "candidate_fix": null,
+      "reason": "Implementation is bounded and ready for a new fix PR, but this worker cannot edit the read-only checkout or install the missing test dependency."
+    },
+    {
+      "target": "#118488",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122251",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; it is historical evidence, not a mutation target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122251",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122251",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate once applied in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
