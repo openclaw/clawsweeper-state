@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:06:10.755Z",
+  "updated_at": "2026-08-11T02:07:14.271Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105643:4952544572:2026-08-10T20:55:00Z:clawsweeper_auto_repair",
-      "comment_id": "4952544572",
-      "comment_version_key": "4952544572:2026-08-10T20:55:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/105643#issuecomment-4952544572",
-      "comment_created_at": "2026-07-12T19:53:32Z",
-      "comment_updated_at": "2026-08-10T20:55:00Z",
-      "comment_body_sha256": "f81039f8e8e450653102562f212d1f0e8a61199431fe12198fc0b508d29c5db0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 105643,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=132b56aae6a116416b70c4ece2b64eb9cee3b2da)",
-      "expected_head_sha": "132b56aae6a116416b70c4ece2b64eb9cee3b2da",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:56:04.337Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bundle-mcp-temp-sweep",
-        "head_sha": "132b56aae6a116416b70c4ece2b64eb9cee3b2da",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:105643:4952652823:2026-07-12T20:27:43Z:re_review",
       "comment_id": "4952652823",
@@ -32973,6 +32940,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119356:5185154559:2026-08-11T02:06:25Z:clawsweeper_needs_human",
+      "comment_id": "5185154559",
+      "comment_version_key": "5185154559:2026-08-11T02:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119356#issuecomment-5185154559",
+      "comment_created_at": "2026-08-04T22:06:16Z",
+      "comment_updated_at": "2026-08-11T02:06:25Z",
+      "comment_body_sha256": "03230469843beb1c2feeaba0940178d62f3909af95b6e078e3f1b8de553c0800",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR removes an accepted configuration key; operators with it must rebase onto current main and retain the Doctor migration for both root and account scope before strict validation. (sha=bf0fc8b94da845402c0bc0a553592fd87c109b2e)",
+      "expected_head_sha": "bf0fc8b94da845402c0bc0a553592fd87c109b2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:07:14.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/irc-drop-dead-mention-patterns",
+        "head_sha": "bf0fc8b94da845402c0bc0a553592fd87c109b2e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
