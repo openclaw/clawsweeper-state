@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:19:05.528Z",
+  "updated_at": "2026-08-11T11:22:18.579Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121845:5248856744:2026-08-11T06:55:26Z:clawsweeper_auto_repair",
-      "comment_id": "5248856744",
-      "comment_version_key": "5248856744:2026-08-11T06:55:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121845#issuecomment-5248856744",
-      "comment_created_at": "2026-08-11T04:05:03Z",
-      "comment_updated_at": "2026-08-11T06:55:26Z",
-      "comment_body_sha256": "c1e9d30b9ed480244fab403edfa403b195f4c1e2c0ca1ad3e7127c0392cd1408",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121845,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=29551457a17978593a5456c5d19146d09c410528)",
-      "expected_head_sha": "29551457a17978593a5456c5d19146d09c410528",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T06:56:28.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/compat-ledger-retire-aug15",
-        "head_sha": "29551457a17978593a5456c5d19146d09c410528",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-11T06:52:54Z:clawsweeper_needs_human",
       "comment_id": "5230661991",
@@ -31312,6 +31279,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/carapace:71:5237784412:2026-08-11T11:20:42Z:clawsweeper_needs_human",
+      "comment_id": "5237784412",
+      "comment_version_key": "5237784412:2026-08-11T11:20:42Z",
+      "comment_url": "https://github.com/openclaw/carapace/pull/71#issuecomment-5237784412",
+      "comment_created_at": "2026-08-10T08:31:32Z",
+      "comment_updated_at": "2026-08-11T11:20:42Z",
+      "comment_body_sha256": "d9e98616f84d57eaac655efa7ea5f3590a21b9db9f87165235d8ad81de607afc",
+      "repo": "openclaw/carapace",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging replaces third-party code that runs in a job with security-events write permission; the successful pull-request runs do not exercise the next weekly scheduled scan. (sha=1335f3cd7c7c51c8e5cbd34000afd98465048c8e)",
+      "expected_head_sha": "1335f3cd7c7c51c8e5cbd34000afd98465048c8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T11:22:18.579Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-97c731b4de",
+        "head_sha": "1335f3cd7c7c51c8e5cbd34000afd98465048c8e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
