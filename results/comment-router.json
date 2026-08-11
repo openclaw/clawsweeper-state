@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:02:30.269Z",
+  "updated_at": "2026-08-11T07:02:30.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5248216819:2026-08-11T02:09:22Z:re_review",
-      "comment_id": "5248216819",
-      "comment_version_key": "5248216819:2026-08-11T02:09:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5248216819",
-      "comment_created_at": "2026-08-11T02:09:22Z",
-      "comment_updated_at": "2026-08-11T02:09:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "ab56b460-9529-11f1-9ed7-684a7d5365a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T02:09:53.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "035dc77d75233e9e01a06152e2078af48143ab3a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118169:5248217038:2026-08-11T02:09:24Z:re_review",
       "comment_id": "5248217038",
@@ -32130,6 +32082,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121913:5250049278:2026-08-11T07:01:46Z:clawsweeper_needs_human",
+      "comment_id": "5250049278",
+      "comment_version_key": "5250049278:2026-08-11T07:01:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121913#issuecomment-5250049278",
+      "comment_created_at": "2026-08-11T07:01:46Z",
+      "comment_updated_at": "2026-08-11T07:01:46Z",
+      "comment_body_sha256": "ba4d97d1becba0ea6ced7316be4c3d75ac5b74f47b67d7277f62c3bea675c9a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This coherent maintainer PR needs routine review and exact-head CI, not an automated replacement repair. (sha=32220174ca495dd92f8bc6dca94b456b257d4c58)",
+      "expected_head_sha": "32220174ca495dd92f8bc6dca94b456b257d4c58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:02:30.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/remove-session-heartbeat-test-seams",
+        "head_sha": "32220174ca495dd92f8bc6dca94b456b257d4c58",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
