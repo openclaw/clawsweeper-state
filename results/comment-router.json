@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:11:14.234Z",
+  "updated_at": "2026-08-11T14:11:39.087Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93247:5243024219:2026-08-10T16:27:13Z:re_review",
-      "comment_id": "5243024219",
-      "comment_version_key": "5243024219:2026-08-10T16:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-5243024219",
-      "comment_created_at": "2026-08-10T16:27:13Z",
-      "comment_updated_at": "2026-08-10T16:27:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:52:22.470Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5250786472:2026-08-11T08:26:22Z:re_review",
       "comment_id": "5250786472",
@@ -32104,6 +32077,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112032:5079052043:2026-08-11T14:07:31Z:clawsweeper_needs_human",
+      "comment_id": "5079052043",
+      "comment_version_key": "5079052043:2026-08-11T14:07:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112032#issuecomment-5079052043",
+      "comment_created_at": "2026-07-25T15:26:51Z",
+      "comment_updated_at": "2026-08-11T14:07:31Z",
+      "comment_body_sha256": "fd854b0387e7d098be80a795484a47fdd0218c666b4c5d781162020fe0c3d140",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR exercises production OAuth code, the SDK, and SQLite, but all MCP and OAuth HTTP endpoints are simulated; add redacted real-server exact... (sha=e999812547cc96581dc3686619be19e54984603d)",
+      "expected_head_sha": "e999812547cc96581dc3686619be19e54984603d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:11:39.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-oauth-refresh-issuer",
+        "head_sha": "e999812547cc96581dc3686619be19e54984603d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
