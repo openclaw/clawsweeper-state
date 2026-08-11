@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:16:05.069Z",
+  "updated_at": "2026-08-11T22:17:03.201Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122207:5257542711:2026-08-11T18:59:04Z:clawsweeper_needs_human",
-      "comment_id": "5257542711",
-      "comment_version_key": "5257542711:2026-08-11T18:59:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122207#issuecomment-5257542711",
-      "comment_created_at": "2026-08-11T18:59:04Z",
-      "comment_updated_at": "2026-08-11T18:59:04Z",
-      "comment_body_sha256": "83689bc0e135e74bf404b59db79573fc6896d6e073a8fcfdecd8ba9f3d0a21c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122207,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - checks-ui and openclaw/ci-gate are failing for the current head, so exact-head validation remains required before merge. (sha=df4c87cf3b97c18d59d0110bb9571d9a98a24352)",
-      "expected_head_sha": "df4c87cf3b97c18d59d0110bb9571d9a98a24352",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T18:59:45.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/chat-full-text-expand",
-        "head_sha": "df4c87cf3b97c18d59d0110bb9571d9a98a24352",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122199:5257145237:2026-08-11T18:21:01Z:re_review",
       "comment_id": "5257145237",
@@ -31118,6 +31085,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1127:5259475755:2026-08-11T22:16:15Z:re_review",
+      "comment_id": "5259475755",
+      "comment_version_key": "5259475755:2026-08-11T22:16:15Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1127#issuecomment-5259475755",
+      "comment_created_at": "2026-08-11T22:16:15Z",
+      "comment_updated_at": "2026-08-11T22:16:15Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "45a5f190-95d2-11f1-927b-f83e5e6394d1",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1127,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T22:17:00.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-dashboard-worker-tests",
+        "head_sha": "19acb56b86abecd5a05f2445c8007e70e9cf5be7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
