@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:08:45.371Z",
+  "updated_at": "2026-08-11T01:08:47.257Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-10T20:03:46Z:clawsweeper_auto_repair",
-      "comment_id": "5160061935",
-      "comment_version_key": "5160061935:2026-08-10T20:03:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118152#issuecomment-5160061935",
-      "comment_created_at": "2026-08-02T19:52:32Z",
-      "comment_updated_at": "2026-08-10T20:03:46Z",
-      "comment_body_sha256": "360cee40b6a53f2e12c5a300c73f9fd6d7774ac7465a0e464b10cf9186ff2466",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118152,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ca9d514cfafb3b1fb6b71b07013db37c6e1e3e05)",
-      "expected_head_sha": "ca9d514cfafb3b1fb6b71b07013db37c6e1e3e05",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:47:41.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/history-limit-schema-parity",
-        "head_sha": "dbdb80d5e22a9da9c167e9e176eec99e7aa46c1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120496:5224985250:2026-08-10T20:02:49Z:clawsweeper_auto_repair",
       "comment_id": "5224985250",
@@ -32236,6 +32203,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121671:5244661809:2026-08-11T01:04:47Z:clawsweeper_needs_human",
+      "comment_id": "5244661809",
+      "comment_version_key": "5244661809:2026-08-11T01:04:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121671#issuecomment-5244661809",
+      "comment_created_at": "2026-08-10T19:00:49Z",
+      "comment_updated_at": "2026-08-11T01:04:47Z",
+      "comment_body_sha256": "100c1035a04ba4bdf11142f1ec32beadd2dec9344678b0e52a28221bf249cc7c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121671,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Prevent cross-principal recovery migration (P1)** - Trusted-proxy authentication succeeds before a browser-supplied device token is verified, but this path hashes that cached token and migrates its pending task...; Review finding: [P1] Prevent cross-principal recovery migration — ui/src/api/gateway.ts:543-556 - [high] Unverified credential-to-principal migration — ui/src/api/gateway.ts:543 (sha=841ac53f26084bfad76b97b803877de6a3d51b62)",
+      "expected_head_sha": "841ac53f26084bfad76b97b803877de6a3d51b62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:08:47.257Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upbeat-greider-ef8777",
+        "head_sha": "841ac53f26084bfad76b97b803877de6a3d51b62",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
