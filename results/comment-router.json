@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:09:37.438Z",
+  "updated_at": "2026-08-11T20:09:37.943Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5123874426:2026-07-29T22:09:43Z:re_review",
-      "comment_id": "5123874426",
-      "comment_version_key": "5123874426:2026-07-29T22:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5123874426",
-      "comment_created_at": "2026-07-29T22:09:43Z",
-      "comment_updated_at": "2026-07-29T22:09:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:54:05.048Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5125146819:2026-07-30T01:09:06Z:re_review",
       "comment_id": "5125146819",
@@ -30154,6 +30127,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122194:5257484409:2026-08-11T20:08:05Z:clawsweeper_needs_human",
+      "comment_id": "5257484409",
+      "comment_version_key": "5257484409:2026-08-11T20:08:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122194#issuecomment-5257484409",
+      "comment_created_at": "2026-08-11T18:53:31Z",
+      "comment_updated_at": "2026-08-11T20:08:05Z",
+      "comment_body_sha256": "011a903e05e84e88d8193f7c3d5d6688fe6c5382a0792c295a5063d86534332c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122194,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports mocked-fetch tests but contains no redacted after-fix trace from a real Responses-compatible endpoint showing continuation and r...; Review finding: [P1] Preserve continuation state across the full-history retry — packages/ai/src/transports/openai-responses-client.ts:142 - [P2] Document the continuation compati... (sha=4a3b4c13c81cc2e16debb4608ba82d335f9edfe7)",
+      "expected_head_sha": "4a3b4c13c81cc2e16debb4608ba82d335f9edfe7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T20:09:37.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/openai-responses-http-continuation-cache",
+        "head_sha": "4a3b4c13c81cc2e16debb4608ba82d335f9edfe7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
