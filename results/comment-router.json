@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T17:11:12.782Z",
+  "updated_at": "2026-08-11T17:12:33.702Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121299:5234772815:2026-08-11T12:04:05Z:clawsweeper_auto_repair",
-      "comment_id": "5234772815",
-      "comment_version_key": "5234772815:2026-08-11T12:04:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121299#issuecomment-5234772815",
-      "comment_created_at": "2026-08-10T00:53:18Z",
-      "comment_updated_at": "2026-08-11T12:04:05Z",
-      "comment_body_sha256": "dbbef94ac50762edb0246c2718b953f87dc2207166093a3aa45276917bfa08c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121299,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c68095856f73c8417844c60c04212193dbe5f9ef)",
-      "expected_head_sha": "c68095856f73c8417844c60c04212193dbe5f9ef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T12:04:54.219Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reload-prepared-model-scope-120154",
-        "head_sha": "c68095856f73c8417844c60c04212193dbe5f9ef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121982:5251626998:2026-08-11T12:03:43Z:clawsweeper_needs_human",
       "comment_id": "5251626998",
@@ -32573,6 +32540,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:409:5256173581:2026-08-11T17:11:47Z:clawsweeper_needs_human",
+      "comment_id": "5256173581",
+      "comment_version_key": "5256173581:2026-08-11T17:11:47Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/409#issuecomment-5256173581",
+      "comment_created_at": "2026-08-11T16:51:33Z",
+      "comment_updated_at": "2026-08-11T17:11:47Z",
+      "comment_body_sha256": "279556020dc6a3922662024f01686f2a94104299cde93b0b04d16dd2a641787e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes the MCP contract: clients that previously sent fractional or non-finite values for integer-shaped fields will now receive a refusal and must retry with an e... (sha=db51c76acd3d5c0a6a5264112b1fc0796ed4d2a4)",
+      "expected_head_sha": "db51c76acd3d5c0a6a5264112b1fc0796ed4d2a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T17:12:33.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-exact-numeric-inputs",
+        "head_sha": "db51c76acd3d5c0a6a5264112b1fc0796ed4d2a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
