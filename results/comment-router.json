@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:49:08.258Z",
+  "updated_at": "2026-08-11T16:52:16.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121554:5239165487:2026-08-11T10:03:33Z:clawsweeper_needs_human",
-      "comment_id": "5239165487",
-      "comment_version_key": "5239165487:2026-08-11T10:03:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121554#issuecomment-5239165487",
-      "comment_created_at": "2026-08-10T10:51:08Z",
-      "comment_updated_at": "2026-08-11T10:03:33Z",
-      "comment_body_sha256": "f6aabbb60f82f9214d0ed0d5044458df9ac316fb16b62eae039eab837afb756f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Install cleanup handlers before starting remote commands (P1)** - This remains the prior P1 blocker on the same head: executeSessionCommand is awaited before any signal handler exists. A timeout or cancellation...; Review finding: [P1] Install cleanup handlers before starting remote commands — extensions/daytona/src/daytona-exec-launcher.mjs:106-123 - [P1] Default new Daytona sandboxes to de... (sha=d67868d5029a051c57ae5949841a127cc97fb405)",
-      "expected_head_sha": "d67868d5029a051c57ae5949841a127cc97fb405",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/daytona-sandbox-backend",
-        "head_sha": "d67868d5029a051c57ae5949841a127cc97fb405",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121690:5244700012:2026-08-11T09:09:46Z:clawsweeper_auto_repair",
       "comment_id": "5244700012",
@@ -32254,6 +32221,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:409:5256173581:2026-08-11T16:51:33Z:clawsweeper_needs_human",
+      "comment_id": "5256173581",
+      "comment_version_key": "5256173581:2026-08-11T16:51:33Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/409#issuecomment-5256173581",
+      "comment_created_at": "2026-08-11T16:51:33Z",
+      "comment_updated_at": "2026-08-11T16:51:33Z",
+      "comment_body_sha256": "00e41744cd6e927ae24ead3fd98045aa3cba9e3b3a315f4624d9aae588b2500e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject fractional legacy selectors before dispatch (P1)** - The new shared guard accepts any finite schema number, but Dialog still declares pid, window_id, window_index, and field_index as numbers while its par...; Review finding: [P1] Reject fractional legacy selectors before dispatch — Core/PeekabooCore/Sources/PeekabooAgentRuntime/MCP/MCPToolArgumentValidation.swift:56-57 - [medium] Legac... (sha=543084e5b8063da9017d5960886df30d7a3fed42)",
+      "expected_head_sha": "543084e5b8063da9017d5960886df30d7a3fed42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T16:52:16.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-exact-numeric-inputs",
+        "head_sha": "543084e5b8063da9017d5960886df30d7a3fed42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
