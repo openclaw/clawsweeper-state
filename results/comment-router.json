@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:53:52.133Z",
+  "updated_at": "2026-08-11T01:54:03.541Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98539:4853395969:2026-08-10T20:54:31Z:clawsweeper_needs_human",
-      "comment_id": "4853395969",
-      "comment_version_key": "4853395969:2026-08-10T20:54:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/98539#issuecomment-4853395969",
-      "comment_created_at": "2026-07-01T10:33:11Z",
-      "comment_updated_at": "2026-08-10T20:54:31Z",
-      "comment_body_sha256": "c7030c4eff0b96c75e80276965d032f4a099499f47a11d60499dc30fae6df317",
-      "repo": "openclaw/openclaw",
-      "issue_number": 98539,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has failed Windows and CI-gate checks; if they are diff-caused, command cancellation could still leak child processes or stall completion on Windows. (sha=cb77e262c88830827856d5747a58114d9a39f061)",
-      "expected_head_sha": "cb77e262c88830827856d5747a58114d9a39f061",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:55:38.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/extension-exec-awaited-cleanup",
-        "head_sha": "cb77e262c88830827856d5747a58114d9a39f061",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121716:5245856687:2026-08-10T20:55:03Z:clawsweeper_needs_human",
       "comment_id": "5245856687",
@@ -32409,6 +32376,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119874:5248128904:2026-08-11T01:53:24Z:re_review",
+      "comment_id": "5248128904",
+      "comment_version_key": "5248128904:2026-08-11T01:53:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119874#issuecomment-5248128904",
+      "comment_created_at": "2026-08-11T01:53:24Z",
+      "comment_updated_at": "2026-08-11T01:53:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "70b24330-9527-11f1-9237-a8b60eb09b68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119874,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T01:54:00.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-timeout-seconds-naming",
+        "head_sha": "1a9f9e720c5209abe6cea9556862103a31b9557d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
