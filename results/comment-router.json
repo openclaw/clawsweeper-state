@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:55:03.040Z",
+  "updated_at": "2026-08-11T16:55:07.780Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121816:5250780794:2026-08-11T08:25:46Z:re_review",
-      "comment_id": "5250780794",
-      "comment_version_key": "5250780794:2026-08-11T08:25:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121816#issuecomment-5250780794",
-      "comment_created_at": "2026-08-11T08:25:46Z",
-      "comment_updated_at": "2026-08-11T08:25:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121816,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5251260804:2026-08-11T09:16:54Z:re_review",
       "comment_id": "5251260804",
@@ -32314,6 +32287,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122052:5254111497:2026-08-11T16:51:44Z:clawsweeper_needs_human",
+      "comment_id": "5254111497",
+      "comment_version_key": "5254111497:2026-08-11T16:51:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122052#issuecomment-5254111497",
+      "comment_created_at": "2026-08-11T13:54:05Z",
+      "comment_updated_at": "2026-08-11T16:51:44Z",
+      "comment_body_sha256": "82bb7f2c9aa7936411410b9ac1f7565405c11bc32c18c3bb5792584c0867cee1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122052,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body and reviewer comment describe focused tests, but neither provides a redacted after-fix agent or MCP runtime trace showing both the... (sha=544e9a7f7caa30d9c6cc88e8ca428e3aa9360821)",
+      "expected_head_sha": "544e9a7f7caa30d9c6cc88e8ca428e3aa9360821",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T16:55:07.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tlon/cron-trigger-schema-gating",
+        "head_sha": "544e9a7f7caa30d9c6cc88e8ca428e3aa9360821",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
