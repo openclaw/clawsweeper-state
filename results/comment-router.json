@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T15:53:46.861Z",
+  "updated_at": "2026-08-11T15:54:07.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2854:5251679912:2026-08-11T10:00:24Z:re_review",
-      "comment_id": "5251679912",
-      "comment_version_key": "5251679912:2026-08-11T10:00:24Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2854#issuecomment-5251679912",
-      "comment_created_at": "2026-08-11T10:00:24Z",
-      "comment_updated_at": "2026-08-11T10:00:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "79228220-956b-11f1-8bab-cb4d08c46c63",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2854,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T10:01:05.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feat-cli-session-grouping",
-        "head_sha": "ea4cf5a14e1046607934562d313f9f7c49e690d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121982:5251681278:2026-08-11T10:00:33Z:re_review",
       "comment_id": "5251681278",
@@ -32497,6 +32449,39 @@
         "kind": "pull_request",
         "branch": "qual/android-hosted-memory",
         "head_sha": "5644412313673505c7eef580586922b4dc4a2a92",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121939:5251095911:2026-08-11T15:53:13Z:clawsweeper_needs_human",
+      "comment_id": "5251095911",
+      "comment_version_key": "5251095911:2026-08-11T15:53:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121939#issuecomment-5251095911",
+      "comment_created_at": "2026-08-11T08:59:57Z",
+      "comment_updated_at": "2026-08-11T15:53:13Z",
+      "comment_body_sha256": "bebb914411da71ea921cf73bf73a15e3627304df645b75374fe8ed108a2ae95e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121939,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and Android, iOS, and macOS exact-head jobs remain unfinished, so merge should wait for a refreshed merge result and green platform checks. (sha=490378cd690f329b68707e9b93024590ac726991)",
+      "expected_head_sha": "490378cd690f329b68707e9b93024590ac726991",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T15:54:07.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "490378cd690f329b68707e9b93024590ac726991",
         "cluster_id": null,
         "job_path": null
       }
