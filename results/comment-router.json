@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:59:26.588Z",
+  "updated_at": "2026-08-11T22:59:40.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5257625886:2026-08-11T19:06:51Z:re_review",
-      "comment_id": "5257625886",
-      "comment_version_key": "5257625886:2026-08-11T19:06:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5257625886",
-      "comment_created_at": "2026-08-11T19:06:51Z",
-      "comment_updated_at": "2026-08-11T19:06:51Z",
-      "comment_body_sha256": "f0439eaac18523f1214a6468b6a0ca5305f8be1098c7aeb516b70f0e1f2656e1",
-      "source_delivery_id": "cf88f850-95b7-11f1-8b6c-bdcf7f36611b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T19:07:31.771Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "68ee91474305881168191252f28228647cef1751",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2855:5249547182:2026-08-11T19:04:35Z:clawsweeper_needs_human",
       "comment_id": "5249547182",
@@ -31238,6 +31190,39 @@
         "kind": "pull_request",
         "branch": "fix/post-core-handoff-env-isolation",
         "head_sha": "9c5f6ed18a5cc6f708f778030f978111878fab0a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113427:5075201059:2026-08-11T22:55:01Z:clawsweeper_needs_human",
+      "comment_id": "5075201059",
+      "comment_version_key": "5075201059:2026-08-11T22:55:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113427#issuecomment-5075201059",
+      "comment_created_at": "2026-07-24T22:46:37Z",
+      "comment_updated_at": "2026-08-11T22:55:01Z",
+      "comment_body_sha256": "217e750c6e97e1def87dd69be9667c7e4ae126ac99cdf09b27a1813e8bcc3142",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113427,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject drive-relative Windows catalog paths (P1)** - C:../outside.json passes this guard but resolves outside the repository on Windows; that value can then reach the trusted refresh write at refreshCatalogs. Re...; Review finding: [P1] Reject drive-relative Windows catalog paths — scripts/localization-catalogs.ts:91 - [high] Drive-relative paths escape the catalog root — scripts/localization... (sha=c984e85239691d2a9cd7116a518ea7fc92a74b79)",
+      "expected_head_sha": "c984e85239691d2a9cd7116a518ea7fc92a74b79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:59:40.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/localization-wizard-migration-offer",
+        "head_sha": "c984e85239691d2a9cd7116a518ea7fc92a74b79",
         "cluster_id": null,
         "job_path": null
       }
