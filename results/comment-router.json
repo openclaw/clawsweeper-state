@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:12:24.652Z",
+  "updated_at": "2026-08-11T20:12:27.333Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114173:5085269514:2026-08-11T16:59:46Z:clawsweeper_needs_human",
-      "comment_id": "5085269514",
-      "comment_version_key": "5085269514:2026-08-11T16:59:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5085269514",
-      "comment_created_at": "2026-07-26T20:31:11Z",
-      "comment_updated_at": "2026-08-11T16:59:46Z",
-      "comment_body_sha256": "dd969d24dded033170748ef591f6de5af2536406d6ab0a78e7eaad32693ebbdc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fence QR continuity on device changes (P1)** - Once selfUser is present, this keeps the old device-derived owner key even when the current client reports a different device. The new QR test explicitly resumes th...; Review finding: [P1] Fence QR continuity on device changes — ui/src/pages/custodian/session-lifecycle.ts:54-56 - [high] QR session can survive a device-identity change — ui/src/pa... (sha=ee589caee8ac356987959ed5c6ae99764a41975e)",
-      "expected_head_sha": "ee589caee8ac356987959ed5c6ae99764a41975e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:55:24.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "ee589caee8ac356987959ed5c6ae99764a41975e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115278:5106674886:2026-08-11T17:06:39Z:clawsweeper_auto_repair",
       "comment_id": "5106674886",
@@ -30219,6 +30186,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118152:5160061935:2026-08-11T20:11:36Z:clawsweeper_auto_repair",
+      "comment_id": "5160061935",
+      "comment_version_key": "5160061935:2026-08-11T20:11:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118152#issuecomment-5160061935",
+      "comment_created_at": "2026-08-02T19:52:32Z",
+      "comment_updated_at": "2026-08-11T20:11:36Z",
+      "comment_body_sha256": "d5c198f768b2b5b3b7746fb01a28109097f074939273520137043e659a5d2ce8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118152,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9cf0106ea2a56a4ffda8e99ad38df5353c218b19)",
+      "expected_head_sha": "9cf0106ea2a56a4ffda8e99ad38df5353c218b19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T20:12:27.333Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/history-limit-schema-parity",
+        "head_sha": "9cf0106ea2a56a4ffda8e99ad38df5353c218b19",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
