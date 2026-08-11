@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T23:55:39.802Z",
+  "updated_at": "2026-08-11T23:56:03.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5227679470:2026-08-08T19:12:36Z:re_review",
-      "comment_id": "5227679470",
-      "comment_version_key": "5227679470:2026-08-08T19:12:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5227679470",
-      "comment_created_at": "2026-08-08T19:12:36Z",
-      "comment_updated_at": "2026-08-08T19:12:36Z",
-      "comment_body_sha256": "6fde3a225ec7db7f36c453dc5fa97cc3ab6cfb24e14eae81559e5d82808b7bb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T20:02:29.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5228054107:2026-08-08T20:45:39Z:re_review",
       "comment_id": "5228054107",
@@ -31386,6 +31359,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122031:5253558607:2026-08-11T23:55:22Z:clawsweeper_needs_human",
+      "comment_id": "5253558607",
+      "comment_version_key": "5253558607:2026-08-11T23:55:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122031#issuecomment-5253558607",
+      "comment_created_at": "2026-08-11T13:05:35Z",
+      "comment_updated_at": "2026-08-11T23:55:22Z",
+      "comment_body_sha256": "d666fb83274b4fd2c8b1fc2de1c767405b62fc18fe39b623d6bbdca517855e32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122031,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a privacy-to-managed-media capability boundary; preserve configured-store containment and canonical URI validation, then wait for exact-head CI. (sha=25afde20d2c496772a7f604b8e68a22a7f043441)",
+      "expected_head_sha": "25afde20d2c496772a7f604b8e68a22a7f043441",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T23:56:03.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-history-media-inbound-ref-121753",
+        "head_sha": "25afde20d2c496772a7f604b8e68a22a7f043441",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
