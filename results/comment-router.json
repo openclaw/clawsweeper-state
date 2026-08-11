@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:19:19.154Z",
+  "updated_at": "2026-08-11T01:23:27.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121465:5245433224:2026-08-10T20:13:16Z:re_review",
-      "comment_id": "5245433224",
-      "comment_version_key": "5245433224:2026-08-10T20:13:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121465#issuecomment-5245433224",
-      "comment_created_at": "2026-08-10T20:13:16Z",
-      "comment_updated_at": "2026-08-10T20:13:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121465,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:47:41.256Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121129:5245548917:2026-08-10T20:24:56Z:re_review",
       "comment_id": "5245548917",
@@ -32269,6 +32242,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1115:5247965083:2026-08-11T01:22:48Z:clawsweeper_auto_repair",
+      "comment_id": "5247965083",
+      "comment_version_key": "5247965083:2026-08-11T01:22:48Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1115#issuecomment-5247965083",
+      "comment_created_at": "2026-08-11T01:22:48Z",
+      "comment_updated_at": "2026-08-11T01:22:48Z",
+      "comment_body_sha256": "b19ba7d536b065bc1d403733b143a208a5fe8c6525f88d6584ebf850875df272",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=075bcf0494864fb1d8fd4475d211b5b9f741c173)",
+      "expected_head_sha": "075bcf0494864fb1d8fd4475d211b5b9f741c173",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:23:27.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/unify-github-app-auth",
+        "head_sha": "075bcf0494864fb1d8fd4475d211b5b9f741c173",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
