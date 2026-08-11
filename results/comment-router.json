@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:09:27.732Z",
+  "updated_at": "2026-08-11T14:09:44.433Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93247:4725780912:2026-06-17T04:00:52Z:re_review",
-      "comment_id": "4725780912",
-      "comment_version_key": "4725780912:2026-06-17T04:00:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-4725780912",
-      "comment_created_at": "2026-06-17T04:00:52Z",
-      "comment_updated_at": "2026-06-17T04:00:52Z",
-      "comment_body_sha256": "f5db008d2769e636126305563f512f5a4fdb0ad380dda7d2bd41ca5266686c7e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — added structured real behavior proof with drift proof (stash→69/2-fail→pop→71 pass)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:52:22.470Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5024525333:2026-07-20T16:21:49Z:re_review",
       "comment_id": "5024525333",
@@ -32044,6 +32017,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122058:5254184796:2026-08-11T14:08:54Z:clawsweeper_needs_human",
+      "comment_id": "5254184796",
+      "comment_version_key": "5254184796:2026-08-11T14:08:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122058#issuecomment-5254184796",
+      "comment_created_at": "2026-08-11T14:00:25Z",
+      "comment_updated_at": "2026-08-11T14:08:54Z",
+      "comment_body_sha256": "2b34295f2eb7388a75183952a9656b59a3cab215e56eaade9c1c95662ce3246e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122058,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release-validation execution budgets; no exact-head expanded survivor matrix has yet run past 60 minutes because the supplied maintainer comment defers a separate release... (sha=1452791f513c6dc1285ea958af87f5a195460587)",
+      "expected_head_sha": "1452791f513c6dc1285ea958af87f5a195460587",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:09:44.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/beta2-expanded-survivor-timeout",
+        "head_sha": "1452791f513c6dc1285ea958af87f5a195460587",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
