@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:56:16.115Z",
+  "updated_at": "2026-08-11T02:56:16.922Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5246792978:2026-08-10T22:34:41Z:re_review",
-      "comment_id": "5246792978",
-      "comment_version_key": "5246792978:2026-08-10T22:34:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5246792978",
-      "comment_created_at": "2026-08-10T22:34:41Z",
-      "comment_updated_at": "2026-08-10T22:34:41Z",
-      "comment_body_sha256": "20145629d8c922398e382f027c6c4478eb0b064f7867edbd8291d3370146b8f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T22:50:33.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/codex-native-realtime-voice",
-        "head_sha": "f38cbf7d4d153ea2dd5777e41f598cca2f63c9d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121747:5246527919:2026-08-10T22:48:51Z:clawsweeper_needs_human",
       "comment_id": "5246527919",
@@ -31884,6 +31837,39 @@
         "kind": "pull_request",
         "branch": "steipete/failover-06-duplicate-absorption",
         "head_sha": "3b60a744a28fd153784cd559e7b0bd5f6c80d67f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121808:5248471030:2026-08-11T02:55:40Z:clawsweeper_needs_human",
+      "comment_id": "5248471030",
+      "comment_version_key": "5248471030:2026-08-11T02:55:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121808#issuecomment-5248471030",
+      "comment_created_at": "2026-08-11T02:55:40Z",
+      "comment_updated_at": "2026-08-11T02:55:40Z",
+      "comment_body_sha256": "82da9c54cee933497d1c47b28d6d9e64ba0e798946b6217403906ccb6be143b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only mocked unit evidence is posted; add a redacted live Feishu deletion transcript, screenshot, or request/response trace, then update the PR... (sha=af4472f62c3169ea54aeaa063b9b9b0f3fa81037)",
+      "expected_head_sha": "af4472f62c3169ea54aeaa063b9b9b0f3fa81037",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:56:16.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/feishu-delete-message",
+        "head_sha": "af4472f62c3169ea54aeaa063b9b9b0f3fa81037",
         "cluster_id": null,
         "job_path": null
       }
