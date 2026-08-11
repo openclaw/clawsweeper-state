@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T18:02:34.079Z",
+  "updated_at": "2026-08-11T18:03:34.173Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-08-07T13:53:08Z:clawsweeper_auto_merge",
-      "comment_id": "5176973305",
-      "comment_version_key": "5176973305:2026-08-07T13:53:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119160#issuecomment-5176973305",
-      "comment_created_at": "2026-08-04T09:14:31Z",
-      "comment_updated_at": "2026-08-07T13:53:08Z",
-      "comment_body_sha256": "bfe527a80458e3df58ece89d937e4a2bc49f0c05fe34578c2bc98332eafc524d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119160,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=6fda8a12802ccea2338f402ce976fea1789030a1); PR has merge conflicts and needs a cloud rebase repair before automerge",
-      "expected_head_sha": "6fda8a12802ccea2338f402ce976fea1789030a1",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T14:50:59.116Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119148",
-        "head_sha": "6fda8a12802ccea2338f402ce976fea1789030a1",
-        "cluster_id": "automerge-openclaw-openclaw-119160",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119160.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119160.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-08-06T00:34:29Z:clawsweeper_auto_merge",
       "comment_id": "5196803797",
@@ -31677,6 +31630,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122167:5256912509:2026-08-11T18:02:38Z:clawsweeper_needs_human",
+      "comment_id": "5256912509",
+      "comment_version_key": "5256912509:2026-08-11T18:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122167#issuecomment-5256912509",
+      "comment_created_at": "2026-08-11T17:58:39Z",
+      "comment_updated_at": "2026-08-11T18:02:38Z",
+      "comment_body_sha256": "44d21a9e4f99b3689e5a23a030a568dea30e761fed9805b214b8108fd7a4957e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122167,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused terminal output and owner-boundary tests, but the inspected Gateway path uses a constructed context and mocked schedule... (sha=02133bc60992d3184d08b3a0def9f0a440b6e60a)",
+      "expected_head_sha": "02133bc60992d3184d08b3a0def9f0a440b6e60a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T18:03:34.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stop-detached-reviews-run-bound",
+        "head_sha": "02133bc60992d3184d08b3a0def9f0a440b6e60a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
