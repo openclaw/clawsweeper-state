@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T12:59:15.752Z",
+  "updated_at": "2026-08-11T12:59:22.874Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5153906120:2026-08-01T23:06:10Z:re_review",
-      "comment_id": "5153906120",
-      "comment_version_key": "5153906120:2026-08-01T23:06:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5153906120",
-      "comment_created_at": "2026-08-01T23:06:10Z",
-      "comment_updated_at": "2026-08-01T23:06:10Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T07:09:23.510Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5153928570:2026-08-01T23:12:11Z:re_review",
       "comment_id": "5153928570",
@@ -31738,6 +31711,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122040:5253482492:2026-08-11T12:58:27Z:clawsweeper_needs_human",
+      "comment_id": "5253482492",
+      "comment_version_key": "5253482492:2026-08-11T12:58:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122040#issuecomment-5253482492",
+      "comment_created_at": "2026-08-11T12:58:27Z",
+      "comment_updated_at": "2026-08-11T12:58:27Z",
+      "comment_body_sha256": "8c7aa6d1d579f169007d49e4e22b0eb2e5919b81f6f207a882afe142927b8f8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress across the broad rename surface; merge only after that matrix is green. (sha=4373c92e6751e61affb8385dd01959a628bddfaf)",
+      "expected_head_sha": "4373c92e6751e61affb8385dd01959a628bddfaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T12:59:22.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/burn-wrapper-shadowing",
+        "head_sha": "4373c92e6751e61affb8385dd01959a628bddfaf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
