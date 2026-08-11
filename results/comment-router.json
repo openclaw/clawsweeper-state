@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:22:50.780Z",
+  "updated_at": "2026-08-11T11:28:10.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120899:5231888279:2026-08-09T13:57:37Z:re_review",
-      "comment_id": "5231888279",
-      "comment_version_key": "5231888279:2026-08-09T13:57:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5231888279",
-      "comment_created_at": "2026-08-09T13:57:37Z",
-      "comment_updated_at": "2026-08-09T13:57:37Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T06:56:29.036Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5232234527:2026-08-09T15:16:58Z:re_review",
       "comment_id": "5232234527",
@@ -31327,6 +31300,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:400:5252368857:2026-08-11T11:27:17Z:clawsweeper_needs_human",
+      "comment_id": "5252368857",
+      "comment_version_key": "5252368857:2026-08-11T11:27:17Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/400#issuecomment-5252368857",
+      "comment_created_at": "2026-08-11T11:10:36Z",
+      "comment_updated_at": "2026-08-11T11:27:17Z",
+      "comment_body_sha256": "541f53eb03abeec5fb2f80945cb5289ed927e243823e32e2343f788dc766716d",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing JSON or MCP consumers that assumed adjacent-sample values will observe the intentionally corrected retained-frame values after a dropped sample. (sha=baceec4a1ec6fc1a182e7c63a65100f4859f025a)",
+      "expected_head_sha": "baceec4a1ec6fc1a182e7c63a65100f4859f025a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T11:28:10.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/capture-live-sensitivity",
+        "head_sha": "baceec4a1ec6fc1a182e7c63a65100f4859f025a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
