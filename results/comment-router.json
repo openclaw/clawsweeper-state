@@ -1,102 +1,6 @@
 {
-  "updated_at": "2026-08-11T04:07:32.383Z",
+  "updated_at": "2026-08-11T04:07:50.279Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121599:5247412057:2026-08-10T23:59:15Z:re_review",
-      "comment_id": "5247412057",
-      "comment_version_key": "5247412057:2026-08-10T23:59:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121599#issuecomment-5247412057",
-      "comment_created_at": "2026-08-10T23:59:15Z",
-      "comment_updated_at": "2026-08-10T23:59:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "7ec93ce0-9517-11f1-8574-3ff55fc20f87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121599,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T23:59:50.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/native-video-security-diagnostics",
-        "head_sha": "088aedb15fd363a6e4e83f76716d5675c48f098f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112932:5247415071:2026-08-10T23:59:46Z:re_review",
-      "comment_id": "5247415071",
-      "comment_version_key": "5247415071:2026-08-10T23:59:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112932#issuecomment-5247415071",
-      "comment_created_at": "2026-08-10T23:59:46Z",
-      "comment_updated_at": "2026-08-10T23:59:46Z",
-      "comment_body_sha256": "65852edacc55f88140c26eb0b8d550d01c92757413bedcf0f63d488b592c4fdb",
-      "source_delivery_id": "912937a0-9517-11f1-8e56-f44dc2ff1c46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112932,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T00:00:16.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oauth-dead-refresh-rebootstrap",
-        "head_sha": "585e6df76ff569ecc9ed15126220aaaa5d4fa55e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120595:5226571518:2026-08-08T14:36:58Z:re_review",
       "comment_id": "5226571518",
@@ -32240,6 +32144,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119209:5179066701:2026-08-11T04:06:46Z:clawsweeper_needs_human",
+      "comment_id": "5179066701",
+      "comment_version_key": "5179066701:2026-08-11T04:06:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119209#issuecomment-5179066701",
+      "comment_created_at": "2026-08-04T12:31:10Z",
+      "comment_updated_at": "2026-08-11T04:06:46Z",
+      "comment_body_sha256": "21f2c72b6454d9132d2a5d3d23534c889e8a1f3bf14171c6b0b753e0befdc290",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Changing OAuth/API-key precedence and failing closed for ordered profiles can break existing Talk setups unless fresh-install and upgrade profile matrices are verified. (sha=422b780c9a74bf52b75bcc4378a820023426a410)",
+      "expected_head_sha": "422b780c9a74bf52b75bcc4378a820023426a410",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T04:07:50.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/realtime-openai-route-auth",
+        "head_sha": "422b780c9a74bf52b75bcc4378a820023426a410",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119209:5187149531:2026-08-05T03:20:47Z:re_review",
+      "comment_id": "5187149531",
+      "comment_version_key": "5187149531:2026-08-05T03:20:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119209#issuecomment-5187149531",
+      "comment_created_at": "2026-08-05T03:20:47Z",
+      "comment_updated_at": "2026-08-05T03:20:47Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119209,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T04:07:50.279Z",
+      "target": null
     }
   ]
 }
