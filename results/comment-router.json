@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T11:02:12.007Z",
+  "updated_at": "2026-08-11T11:02:21.168Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5246997214:2026-08-10T23:02:20Z:re_review",
-      "comment_id": "5246997214",
-      "comment_version_key": "5246997214:2026-08-10T23:02:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5246997214",
-      "comment_created_at": "2026-08-10T23:02:20Z",
-      "comment_updated_at": "2026-08-10T23:02:20Z",
-      "comment_body_sha256": "9a3772bbce007dc70cb47565c454a29dfa10247479951a0ceebd8f53e0f284ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T06:06:22.204Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5247016311:2026-08-10T23:05:05Z:re_review",
       "comment_id": "5247016311",
@@ -31502,6 +31475,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T11:02:12.007Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78035:4382356648:2026-08-11T10:59:59Z:clawsweeper_needs_human",
+      "comment_id": "4382356648",
+      "comment_version_key": "4382356648:2026-08-11T10:59:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/78035#issuecomment-4382356648",
+      "comment_created_at": "2026-05-05T19:30:37Z",
+      "comment_updated_at": "2026-08-11T10:59:59Z",
+      "comment_body_sha256": "74beb28c4910bb20e9fd09e09188673b0f1a477fa5ebf757c5de0bc6d1d5add2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 78035,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies focused tests through the tool API, but no current-head non-test Gateway or CLI transcript with a real registered supplement. A...; Review finding: [P1] Keep the established 15-second supplement window — extensions/memory-core/src/tools.shared.ts:156-218 - [P1] Use complete tool-error redaction for supplement... (sha=a7225f4c92e4f98689b0f09cf05b4a19c8bfd489)",
+      "expected_head_sha": "a7225f4c92e4f98689b0f09cf05b4a19c8bfd489",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T11:02:21.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/77897-corpus-supplement-allsettled",
+        "head_sha": "a7225f4c92e4f98689b0f09cf05b4a19c8bfd489",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
