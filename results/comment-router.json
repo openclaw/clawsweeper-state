@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T16:53:28.440Z",
+  "updated_at": "2026-08-11T16:53:35.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121842:5248834207:2026-08-11T10:09:43Z:clawsweeper_needs_human",
-      "comment_id": "5248834207",
-      "comment_version_key": "5248834207:2026-08-11T10:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121842#issuecomment-5248834207",
-      "comment_created_at": "2026-08-11T04:01:07Z",
-      "comment_updated_at": "2026-08-11T10:09:43Z",
-      "comment_body_sha256": "7ec0bbb05dc2861a635ac1639c673789ad9fa663c5c1447b00f59f322e90cde7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121842,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The committed contract will no longer show which export or declaration changed; accepting module-only digest diagnostics is an SDK maintenance trade-off that green CI does not resolve. (sha=84b44a9cd711b290bc66467666e1f670058b325c)",
-      "expected_head_sha": "84b44a9cd711b290bc66467666e1f670058b325c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T10:56:57.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/api-baseline-merge-0810",
-        "head_sha": "a8b9421fead760a67de7ec536bd276ca49dee0e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121858:5249221040:2026-08-11T08:04:03Z:clawsweeper_auto_repair",
       "comment_id": "5249221040",
@@ -32269,6 +32236,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120768:5256181846:2026-08-11T16:52:21Z:re_review",
+      "comment_id": "5256181846",
+      "comment_version_key": "5256181846:2026-08-11T16:52:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5256181846",
+      "comment_created_at": "2026-08-11T16:52:21Z",
+      "comment_updated_at": "2026-08-11T16:52:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "0626e1f0-95a5-11f1-9162-d8dace7520ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T16:53:33.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runners-m3-pair-url",
+        "head_sha": "4d9f1574aa1e7b45aa985d7952007d6a62bdc79a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
