@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T22:56:45.802Z",
+  "updated_at": "2026-08-11T22:57:26.023Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122191:5257243425:2026-08-11T18:30:33Z:re_review",
-      "comment_id": "5257243425",
-      "comment_version_key": "5257243425:2026-08-11T18:30:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122191#issuecomment-5257243425",
-      "comment_created_at": "2026-08-11T18:30:33Z",
-      "comment_updated_at": "2026-08-11T18:30:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122191,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T19:01:43.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "orclaw/cu-9-driver-0193-upgrade",
-        "head_sha": "64e36de146022ccee60c10a65fe115a5b0d5db40",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122191:5257543101:2026-08-11T18:59:06Z:clawsweeper_needs_human",
       "comment_id": "5257543101",
@@ -31330,6 +31283,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/chat-blockgap",
         "head_sha": "590049880cbff926ccc3d5c8711ad5975346c1b0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122301:5259807325:2026-08-11T22:56:04Z:clawsweeper_needs_human",
+      "comment_id": "5259807325",
+      "comment_version_key": "5259807325:2026-08-11T22:56:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122301#issuecomment-5259807325",
+      "comment_created_at": "2026-08-11T22:56:04Z",
+      "comment_updated_at": "2026-08-11T22:56:04Z",
+      "comment_body_sha256": "1b9794993beea0c37bada618fa9effcf9828d21022b53762c9f56f34d0d7047e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a local live evaluation but supplies no inspectable redacted transcript or artifact, and the new workflow path cannot...; Review finding: [P1] Add the missing workflow entrypoint — .github/workflows/agent-role-evals.yml:86-101 - [P1] Use the canonical config path — scripts/lib/agent-role-evals.mjs:14... (sha=e0082047e9bac627253b307d6f513822c349cdbd)",
+      "expected_head_sha": "e0082047e9bac627253b307d6f513822c349cdbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T22:57:26.023Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/program-manager-mvp-upstream-20260811",
+        "head_sha": "e0082047e9bac627253b307d6f513822c349cdbd",
         "cluster_id": null,
         "job_path": null
       }
