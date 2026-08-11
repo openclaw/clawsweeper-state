@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:03:39.392Z",
+  "updated_at": "2026-08-11T14:04:11.998Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121816:5250967052:2026-08-11T08:46:03Z:re_review",
-      "comment_id": "5250967052",
-      "comment_version_key": "5250967052:2026-08-11T08:46:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121816#issuecomment-5250967052",
-      "comment_created_at": "2026-08-11T08:46:03Z",
-      "comment_updated_at": "2026-08-11T08:46:03Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "15ddcda0-9561-11f1-9b47-2790e8ef6776",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121816,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T08:46:45.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/identity-prefs-recents",
-        "head_sha": "bc496895c96b8a9df885dcc156b6346bac8589ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1118:5250181664:2026-08-11T08:48:21Z:clawsweeper_needs_human",
       "comment_id": "5250181664",
@@ -32040,6 +31992,39 @@
         "kind": "pull_request",
         "branch": "fix/browser-screenshot-agentdir",
         "head_sha": "4afc3e1dae8abee51ec70e13b4079b9f0ca11808",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107295:4969333447:2026-08-11T14:03:16Z:clawsweeper_needs_human",
+      "comment_id": "4969333447",
+      "comment_version_key": "4969333447:2026-08-11T14:03:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107295#issuecomment-4969333447",
+      "comment_created_at": "2026-07-14T12:50:31Z",
+      "comment_updated_at": "2026-08-11T14:03:16Z",
+      "comment_body_sha256": "eb12575dd3f456be3de51d85cf15f9e2ed74b37fd167573073a9e4c3b4d66f76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not publish device-less approval authority (P1)** - This re-exports the trusted operator-approval client through a public Plugin SDK entry point. Any installed plugin can then connect as the local approval ru...; Review finding: [P1] Do not publish device-less approval authority — src/plugin-sdk/gateway-runtime.ts:37-39 - [P1] Update the QQBot installation command — docs/channels/qqbot.md:... (sha=16398b6c42ea4f95415f448523efa5ebfc652c77)",
+      "expected_head_sha": "16398b6c42ea4f95415f448523efa5ebfc652c77",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:04:11.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/externalize-qqbot",
+        "head_sha": "16398b6c42ea4f95415f448523efa5ebfc652c77",
         "cluster_id": null,
         "job_path": null
       }
