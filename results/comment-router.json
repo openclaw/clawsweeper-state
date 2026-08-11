@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T18:32:24.152Z",
+  "updated_at": "2026-08-11T18:34:55.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120665:5254856418:2026-08-11T14:56:29Z:re_review",
-      "comment_id": "5254856418",
-      "comment_version_key": "5254856418:2026-08-11T14:56:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120665#issuecomment-5254856418",
-      "comment_created_at": "2026-08-11T14:56:29Z",
-      "comment_updated_at": "2026-08-11T14:56:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "d6699c60-9594-11f1-9426-0b3043a57a58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120665,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T14:57:07.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gemini-embedding-2-ga",
-        "head_sha": "78d26817f040316c3bfd83fdc7a9292da3fb7996",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117305:5150708682:2026-08-11T14:51:58Z:clawsweeper_needs_human",
       "comment_id": "5150708682",
@@ -31596,6 +31548,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:409:5256173581:2026-08-11T18:33:50Z:clawsweeper_needs_human",
+      "comment_id": "5256173581",
+      "comment_version_key": "5256173581:2026-08-11T18:33:50Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/409#issuecomment-5256173581",
+      "comment_created_at": "2026-08-11T16:51:33Z",
+      "comment_updated_at": "2026-08-11T18:33:50Z",
+      "comment_body_sha256": "b14256beb99c3916bde2d56e1a48826c6fb2955a80fbf0dcf1cf9f8805104c1f",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing MCP clients that send fractional values for fields now declared as integers will receive a refusal rather than prior truncation; the collaborator explicitly accepted this com... (sha=b2e3810f977ca7e0520e257fa9c130fe9d957324)",
+      "expected_head_sha": "b2e3810f977ca7e0520e257fa9c130fe9d957324",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T18:34:55.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/mcp-exact-numeric-inputs",
+        "head_sha": "b2e3810f977ca7e0520e257fa9c130fe9d957324",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
