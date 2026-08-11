@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T10:03:35.940Z",
+  "updated_at": "2026-08-11T10:04:39.794Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121601:5241268025:2026-08-11T04:07:09Z:clawsweeper_needs_human",
-      "comment_id": "5241268025",
-      "comment_version_key": "5241268025:2026-08-11T04:07:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121601#issuecomment-5241268025",
-      "comment_created_at": "2026-08-10T13:57:25Z",
-      "comment_updated_at": "2026-08-11T04:07:09Z",
-      "comment_body_sha256": "e165274bcc8616c3d1227b0a2359344b6b8295c5618d75544d6711c6e78320fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121601,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes existing automatic-update behavior: open terminal PTYs and their in-memory scrollback end after the countdown, although ordinary suspension callers retai... (sha=f2ad46e6833c77dda56892ab39719e28d1d5269e)",
-      "expected_head_sha": "f2ad46e6833c77dda56892ab39719e28d1d5269e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T05:04:02.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/openclaw-deployment-updates-fcd2db",
-        "head_sha": "f2ad46e6833c77dda56892ab39719e28d1d5269e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121647:5242645745:2026-08-11T03:59:56Z:clawsweeper_auto_repair",
       "comment_id": "5242645745",
@@ -31366,6 +31333,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:109077:5251721604:2026-08-11T10:03:58Z:re_review",
+      "comment_id": "5251721604",
+      "comment_version_key": "5251721604:2026-08-11T10:03:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109077#issuecomment-5251721604",
+      "comment_created_at": "2026-08-11T10:03:58Z",
+      "comment_updated_at": "2026-08-11T10:03:58Z",
+      "comment_body_sha256": "0f6e449979320c879f75e83daa49a3773a4761a15279fe3f4abe8d45f77f60f2",
+      "source_delivery_id": "f9347540-956b-11f1-8b1d-1ffeda9875df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109077,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T10:04:36.977Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-nonroot-install-fetch",
+        "head_sha": "fbad41a44a1fa3d9922b5dce6302c67385577c24",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
