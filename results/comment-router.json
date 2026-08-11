@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:49:35.025Z",
+  "updated_at": "2026-08-11T13:54:12.131Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5249971302:2026-08-11T06:52:01Z:re_review",
-      "comment_id": "5249971302",
-      "comment_version_key": "5249971302:2026-08-11T06:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5249971302",
-      "comment_created_at": "2026-08-11T06:52:01Z",
-      "comment_updated_at": "2026-08-11T06:52:01Z",
-      "comment_body_sha256": "54666b7b08fee155b97b47f70e7d58e3aa37f53007e22011a5969cb27e45602f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T08:02:11.331Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5184480345:2026-08-04T20:51:40Z:re_review",
       "comment_id": "5184480345",
@@ -31787,6 +31760,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3453:5254103717:2026-08-11T13:53:25Z:clawsweeper_needs_human",
+      "comment_id": "5254103717",
+      "comment_version_key": "5254103717:2026-08-11T13:53:25Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3453#issuecomment-5254103717",
+      "comment_created_at": "2026-08-11T13:53:25Z",
+      "comment_updated_at": "2026-08-11T13:53:25Z",
+      "comment_body_sha256": "9c3027c8332e889f2533630dc915ddf3d743ced5e806a32987ae6a89f9073125",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3453,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides focused mocked component and unit-test claims, but no after-fix run in a real browser; add redacted browser evidence, then upda... (sha=650f0d5e4adff10aa51811b809d3272df3e06a10)",
+      "expected_head_sha": "650f0d5e4adff10aa51811b809d3272df3e06a10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:54:12.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/3440-theme-token-conversion",
+        "head_sha": "650f0d5e4adff10aa51811b809d3272df3e06a10",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
