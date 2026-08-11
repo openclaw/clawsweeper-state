@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T13:41:11.304Z",
+  "updated_at": "2026-08-11T13:45:20.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93247:5250561958:2026-08-11T08:01:35Z:re_review",
-      "comment_id": "5250561958",
-      "comment_version_key": "5250561958:2026-08-11T08:01:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-5250561958",
-      "comment_created_at": "2026-08-11T08:01:35Z",
-      "comment_updated_at": "2026-08-11T08:01:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e029ff40-955a-11f1-92de-d26ce7e3166f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T08:02:08.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/diagnostic-ghost-entries-pruning",
-        "head_sha": "3d0ac45bd5fc1cc57a907529a74b9cb8636a8390",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112945:5075714857:2026-08-11T07:59:50Z:clawsweeper_needs_human",
       "comment_id": "5075714857",
@@ -31784,6 +31736,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-fork-cost-overcount",
         "head_sha": "2b773e990a146531ba9a931f7b82a3429ab6b5eb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2864:5253998560:2026-08-11T13:44:31Z:clawsweeper_needs_human",
+      "comment_id": "5253998560",
+      "comment_version_key": "5253998560:2026-08-11T13:44:31Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2864#issuecomment-5253998560",
+      "comment_created_at": "2026-08-11T13:44:31Z",
+      "comment_updated_at": "2026-08-11T13:44:31Z",
+      "comment_body_sha256": "100b55e557daf5c392199a3c124915506803ac20d4fb5e5cdbc792c76c60c59c",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2864,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports synthetic-cache tests and checks, but it does not show an after-fix real configured-history catch-up run; add a redacted termina... (sha=185c516a2b19e31790d1c77ab4d0fee30091b3f9)",
+      "expected_head_sha": "185c516a2b19e31790d1c77ab4d0fee30091b3f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T13:45:20.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-finish-now-history-window",
+        "head_sha": "185c516a2b19e31790d1c77ab4d0fee30091b3f9",
         "cluster_id": null,
         "job_path": null
       }
