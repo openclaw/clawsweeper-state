@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:00:42.192Z",
+  "updated_at": "2026-08-11T07:00:47.512Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5156399190:2026-08-02T08:02:04Z:re_review",
-      "comment_id": "5156399190",
-      "comment_version_key": "5156399190:2026-08-02T08:02:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5156399190",
-      "comment_created_at": "2026-08-02T08:02:04Z",
-      "comment_updated_at": "2026-08-02T08:02:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T02:08:31.142Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5160938913:2026-08-02T23:50:29Z:re_review",
       "comment_id": "5160938913",
@@ -32073,6 +32046,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115882:5118252328:2026-08-11T07:00:09Z:clawsweeper_needs_human",
+      "comment_id": "5118252328",
+      "comment_version_key": "5118252328:2026-08-11T07:00:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115882#issuecomment-5118252328",
+      "comment_created_at": "2026-07-29T13:15:33Z",
+      "comment_updated_at": "2026-08-11T07:00:09Z",
+      "comment_body_sha256": "417756807246cc527b3a69c668930665a3d8df320ed59da16dec31aa5a3e853e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115882,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts with action files larger than one megabyte will now fail and must split plans, although this aligns file input with the existing stdin ceiling and documented recovery... (sha=803113065db89c8e6d985e323347db6d720f9a32)",
+      "expected_head_sha": "803113065db89c8e6d985e323347db6d720f9a32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:00:47.512Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/browser-actions-file-limit",
+        "head_sha": "803113065db89c8e6d985e323347db6d720f9a32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
