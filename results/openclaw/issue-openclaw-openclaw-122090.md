@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122090"
 mode: "autonomous"
-run_id: "31509779936"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31509779936"
+run_id: "31511259522"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31511259522"
 head_sha: "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-11T16:06:41.802Z"
+published_at: "2026-08-11T16:20:01.146Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122090"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122090"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31509779936](https://github.com/openclaw/clawsweeper/actions/runs/31509779936)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31511259522](https://github.com/openclaw/clawsweeper/actions/runs/31511259522)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/122090
 
 ## Summary
 
-#122090 is a real, narrow Gateway test reliability regression. The repair is test-only, but this checkout cannot run or edit it: the focused runner lacks `tsx` and the filesystem is read-only.
+#122090 remains a valid narrow test-performance repair. The checkout is read-only and focused Vitest cannot start because module 'tsx' is absent, so no locally validated fix branch can be produced in this run.
 
 ## Impact
 
@@ -66,13 +66,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/122090
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120593 | keep_related | planned | related | Related CI-flake family, but not the same root cause. |
-| #120903 | keep_related | planned | related | Related CI-flake family, not a duplicate of the kernel-test regression. |
-| #122014 | keep_closed | skipped | related | Closed context ref; no mutation is valid. |
-| #122023 | keep_independent | planned | independent | Independent contributor PR. |
-| #122035 | keep_independent | planned | independent | Independent contributor PR. |
-| #122090 | fix_needed | blocked | canonical | Implementation is blocked: the sandbox is read-only and dependencies cannot be installed; the required focused test exits before Vitest with Cannot find module 'tsx'. |
-| cluster:issue-openclaw-openclaw-122090 | build_fix_artifact | planned | canonical | A narrow, non-security test-only PR remains appropriate once a writable checkout with dependencies is available. |
+| https://github.com/openclaw/openclaw/issues/120593 | keep_related | planned | related | Related CI-flake family; no duplicate-close action is permitted or justified. |
+| https://github.com/openclaw/openclaw/issues/120903 | keep_related | planned | related | Different root cause and subsystem. |
+| https://github.com/openclaw/openclaw/pull/122014 | keep_closed | skipped | superseded | Historical implementation context; closed items receive no closure action. |
+| https://github.com/openclaw/openclaw/pull/122023 | keep_independent | planned | independent | No shared repair scope. |
+| https://github.com/openclaw/openclaw/pull/122035 | keep_independent | planned | independent | Independent PR; its CI result supports investigation but does not make it a candidate fix. |
+| https://github.com/openclaw/openclaw/issues/122090 | fix_needed | blocked | canonical | A test-only owner-boundary repair is identified, but this runner cannot edit the branch or install the missing focused-test dependency. |
+| cluster:issue-openclaw-openclaw-122090 | build_fix_artifact | planned | canonical | Creates a narrow, attributable replacement implementation path. |
 
 ## Needs Human
 
