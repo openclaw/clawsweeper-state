@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119718"
 mode: "autonomous"
-run_id: "31503991074"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31503991074"
-head_sha: "c07ff038c0059e57cfacd6bf6601e36988553900"
-workflow_conclusion: "failure"
+run_id: "31508351844"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31508351844"
+head_sha: "5439582beebe57b7e79dc4e3d7bb44acd9f7d65c"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-11T15:12:17.726Z"
+published_at: "2026-08-11T16:32:59.023Z"
 canonical: "#119718"
-canonical_issue: null
+canonical_issue: "#89430"
 canonical_pr: "#119718"
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31503991074](https://github.com/openclaw/clawsweeper/actions/runs/31503991074)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31508351844](https://github.com/openclaw/clawsweeper/actions/runs/31508351844)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #119718
 
 ## Summary
 
-Make PR #119718 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#119718 is the active, credited repair path for #89430. Its hydrated state is open but merge-conflicted/dirty; all listed exact-head CI checks passed and no actionable review comments are hydrated. Plan a deterministic rebase and targeted validation; keep the PR open because this is autofix-only.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Make PR #119718 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119718 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #89430 | keep_canonical | planned | canonical | Keep the root-cause report open while its active fix remains unmerged. |
+| #92518 | keep_closed | skipped | superseded | Already closed historical context; no closure action is valid. |
+| #119718 | build_fix_artifact | planned | canonical | Repair the contributor-credit-preserving same-repository branch via rebase and exact-head validation; merge remains disabled by the job. |
 
 ## Needs Human
 
