@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T03:09:57.240Z",
+  "updated_at": "2026-08-11T03:10:07.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5246997214:2026-08-10T23:02:20Z:re_review",
-      "comment_id": "5246997214",
-      "comment_version_key": "5246997214:2026-08-10T23:02:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5246997214",
-      "comment_created_at": "2026-08-10T23:02:20Z",
-      "comment_updated_at": "2026-08-10T23:02:20Z",
-      "comment_body_sha256": "9a3772bbce007dc70cb47565c454a29dfa10247479951a0ceebd8f53e0f284ef",
-      "source_delivery_id": "8ad3f230-950f-11f1-9e87-bce644b01771",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-10T23:02:58.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bartok9/voice-transcript-echo-polish",
-        "head_sha": "4b7af30dad2cc859fa8ead535330acaff6ab06fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121115:5233513069:2026-08-10T23:02:48Z:clawsweeper_needs_human",
       "comment_id": "5233513069",
@@ -31879,6 +31831,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121422:5236371280:2026-08-11T03:09:02Z:clawsweeper_needs_human",
+      "comment_id": "5236371280",
+      "comment_version_key": "5236371280:2026-08-11T03:09:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121422#issuecomment-5236371280",
+      "comment_created_at": "2026-08-10T05:46:15Z",
+      "comment_updated_at": "2026-08-11T03:09:02Z",
+      "comment_body_sha256": "ed75701be40e3f1b0f0497913a6c9610da63fcd7ba6e1707b899e78b91f24c6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Unify the public and conformance plan bindings (P1)** - The public plan returned by authorize exposes memoryPolicyRevision but no hostFactsRevision, while the conformance binding requires policyRevision plus hos...; Review finding: [P1] Unify the public and conformance plan bindings — packages/memory-host-sdk/src/host/authorization.ts:312-313 - [P2] Parse adapter decisions from safe data desc... (sha=1948e0865776aecc6bafc9c79a82079d6301407c)",
+      "expected_head_sha": "1948e0865776aecc6bafc9c79a82079d6301407c",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T03:10:07.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-permissions-pr-open-20260809-p0a",
+        "head_sha": "1948e0865776aecc6bafc9c79a82079d6301407c",
+        "cluster_id": "automerge-openclaw-openclaw-121422",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121422.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
