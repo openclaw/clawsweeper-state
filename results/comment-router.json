@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T07:59:19.983Z",
+  "updated_at": "2026-08-11T07:59:58.937Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121692:5245320394:2026-08-11T03:11:38Z:clawsweeper_needs_human",
-      "comment_id": "5245320394",
-      "comment_version_key": "5245320394:2026-08-11T03:11:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121692#issuecomment-5245320394",
-      "comment_created_at": "2026-08-10T20:01:59Z",
-      "comment_updated_at": "2026-08-11T03:11:38Z",
-      "comment_body_sha256": "bc17256a4b0704e15a66baa6fb92211855a04baea8a07aa614fe83ac5a68c22e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121692,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Editing intentionally blocks later messages in the same outbox until the operator cancels or submits; that cross-pane delivery pause needs maintainer acceptance as product behavior. (sha=e68043c83918252341a64eaba0262630db1fab3d)",
-      "expected_head_sha": "e68043c83918252341a64eaba0262630db1fab3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T03:13:10.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-edit",
-        "head_sha": "e68043c83918252341a64eaba0262630db1fab3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:392:5248569022:2026-08-11T03:13:47Z:clawsweeper_auto_repair",
       "comment_id": "5248569022",
@@ -31865,6 +31832,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121932:5250541738:2026-08-11T07:59:10Z:clawsweeper_needs_human",
+      "comment_id": "5250541738",
+      "comment_version_key": "5250541738:2026-08-11T07:59:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121932#issuecomment-5250541738",
+      "comment_created_at": "2026-08-11T07:59:10Z",
+      "comment_updated_at": "2026-08-11T07:59:10Z",
+      "comment_body_sha256": "cf7ae3c29dd9135285646a43109e9d3a660a574642cfb1ac5d2bc5597ea1aca7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121932,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes focused mocked tests and static checks, but contains no after-fix real Feishu transport or production-boundary harness evidenc... (sha=40a9969a2d4fc7d3b8fea3ca8db975e6b297aebe)",
+      "expected_head_sha": "40a9969a2d4fc7d3b8fea3ca8db975e6b297aebe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T07:59:58.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-inbound-mention-cascade",
+        "head_sha": "40a9969a2d4fc7d3b8fea3ca8db975e6b297aebe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
