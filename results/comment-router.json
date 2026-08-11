@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T00:48:11.941Z",
+  "updated_at": "2026-08-11T00:50:13.442Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115786:5118144029:2026-08-10T19:47:38Z:clawsweeper_needs_human",
-      "comment_id": "5118144029",
-      "comment_version_key": "5118144029:2026-08-10T19:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115786#issuecomment-5118144029",
-      "comment_created_at": "2026-07-29T13:05:46Z",
-      "comment_updated_at": "2026-08-10T19:47:38Z",
-      "comment_body_sha256": "020d56f2cdff707060f90d5aa0c8cf86dc9774a8eb010b124818419a4a21fdbb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Workboard databases gain a nullable card column without a schema-version bump; merge-head validation must preserve the bare nullable TEXT definition and lazy ensure path. (sha=f50b6b52580adc8f45bf352161219868562990c5)",
-      "expected_head_sha": "f50b6b52580adc8f45bf352161219868562990c5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T19:54:17.920Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-independent-dependency-override",
-        "head_sha": "f50b6b52580adc8f45bf352161219868562990c5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115786:5231758771:2026-08-09T13:27:03Z:re_review",
       "comment_id": "5231758771",
@@ -32412,6 +32379,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:93952:5247764380:2026-08-11T00:49:28Z:re_review",
+      "comment_id": "5247764380",
+      "comment_version_key": "5247764380:2026-08-11T00:49:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93952#issuecomment-5247764380",
+      "comment_created_at": "2026-08-11T00:49:28Z",
+      "comment_updated_at": "2026-08-11T00:49:28Z",
+      "comment_body_sha256": "584d75c4bdb8d96cd1aa0ab4141a231daa101a1bd1002be3b3f71eaed670caaa",
+      "source_delivery_id": "8207c1e0-951e-11f1-806b-393b1b8fe880",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93952,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T00:50:10.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-refresh-deadline-guard",
+        "head_sha": "7e7dfca40e145804d26082f8cab3f41a047b66f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
