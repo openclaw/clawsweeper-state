@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T05:54:58.445Z",
+  "updated_at": "2026-08-11T05:55:16.897Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121668:5248035203:2026-08-11T01:35:43Z:re_review",
-      "comment_id": "5248035203",
-      "comment_version_key": "5248035203:2026-08-11T01:35:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121668#issuecomment-5248035203",
-      "comment_created_at": "2026-08-11T01:35:43Z",
-      "comment_updated_at": "2026-08-11T01:35:43Z",
-      "comment_body_sha256": "84b317939d88700c3b090f36a8b26b11a47292b8fbd3d9dee2a802823fc52db6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121668,
-      "author": "nvtoroy",
-      "author_id": 90771587,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T01:53:00.208Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-native-hook-relay-kill-switch",
-        "head_sha": "ba589538a3526e2f2167481e75a26be0aefa5a11",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121421:5236811514:2026-08-11T01:07:58Z:clawsweeper_needs_human",
       "comment_id": "5236811514",
@@ -31650,6 +31603,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-cron-app-authority",
         "head_sha": "3f10effc592def4298b44db30455ba59fb17eeeb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107295:4969333447:2026-08-11T05:47:08Z:clawsweeper_needs_human",
+      "comment_id": "4969333447",
+      "comment_version_key": "4969333447:2026-08-11T05:47:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/107295#issuecomment-4969333447",
+      "comment_created_at": "2026-07-14T12:50:31Z",
+      "comment_updated_at": "2026-08-11T05:47:08Z",
+      "comment_body_sha256": "616a589248b8b7fab2524a07075a3adae6e164b77438041ef7b8e227b80ce143",
+      "repo": "openclaw/openclaw",
+      "issue_number": 107295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exercise the persisted QQBot upgrade bridge (P1)** - This test supplies pluginId: \"openclaw-qqbot\" directly, but production builds the bridge from the persisted bundled record, whose ID is qqbot. That ID reaches...; Review finding: [P1] Exercise the persisted QQBot upgrade bridge — src/plugins/update.test.ts:4944-4951 - [P1] Carry catalog integrity into bridge installation — src/cli/plugins-l... (sha=24b1e05a1599e94d29009c8582fe102e4e45476a)",
+      "expected_head_sha": "24b1e05a1599e94d29009c8582fe102e4e45476a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T05:55:16.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/externalize-qqbot",
+        "head_sha": "24b1e05a1599e94d29009c8582fe102e4e45476a",
         "cluster_id": null,
         "job_path": null
       }
