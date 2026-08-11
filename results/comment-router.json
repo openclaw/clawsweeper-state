@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-11T08:10:57.512Z",
+  "updated_at": "2026-08-11T08:12:22.169Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119209:5248691883:2026-08-11T03:36:43Z:re_review",
-      "comment_id": "5248691883",
-      "comment_version_key": "5248691883:2026-08-11T03:36:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119209#issuecomment-5248691883",
-      "comment_created_at": "2026-08-11T03:36:43Z",
-      "comment_updated_at": "2026-08-11T03:36:43Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119209,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T03:56:38.645Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/realtime-openai-route-auth",
-        "head_sha": "422b780c9a74bf52b75bcc4378a820023426a410",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121135:5248701702:2026-08-11T03:38:36Z:re_review",
       "comment_id": "5248701702",
@@ -31482,6 +31435,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1251:5202189336:2026-08-11T08:04:04Z:clawsweeper_needs_human",
+      "comment_id": "5202189336",
+      "comment_version_key": "5202189336:2026-08-11T08:04:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1251#issuecomment-5202189336",
+      "comment_created_at": "2026-08-06T08:20:19Z",
+      "comment_updated_at": "2026-08-11T08:04:04Z",
+      "comment_body_sha256": "e4e41b4e1c702e0c07addee0ee95d00649b2abba1aa14c4b0e8ffedff806322d",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1251,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Failure bundles can now contain a command string; values not recognized by the configured, forwarded-value, or structural redactor remain inside the documented caller-review boundary... (sha=72b62f2f2cb00d955de09a4e05839268d16ab975)",
+      "expected_head_sha": "72b62f2f2cb00d955de09a4e05839268d16ab975",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T08:12:22.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failure-bundle-command-metadata",
+        "head_sha": "72b62f2f2cb00d955de09a4e05839268d16ab975",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
