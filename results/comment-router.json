@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T04:54:08.169Z",
+  "updated_at": "2026-08-11T04:54:26.215Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121177:5233772662:2026-08-10T23:58:44Z:clawsweeper_auto_repair",
-      "comment_id": "5233772662",
-      "comment_version_key": "5233772662:2026-08-10T23:58:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121177#issuecomment-5233772662",
-      "comment_created_at": "2026-08-09T20:48:35Z",
-      "comment_updated_at": "2026-08-10T23:58:44Z",
-      "comment_body_sha256": "eba9767537eac8d841754ad0d7f78fe12db610ef8f17a8b7cd977341cd7079a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121177,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c5ce193c1b6cedbd976ee33a631f1c3455c98ea0)",
-      "expected_head_sha": "c5ce193c1b6cedbd976ee33a631f1c3455c98ea0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T00:04:09.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa0809-realtime-terminal-errors",
-        "head_sha": "c5ce193c1b6cedbd976ee33a631f1c3455c98ea0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121287:5235029060:2026-08-10T23:59:10Z:clawsweeper_needs_human",
       "comment_id": "5235029060",
@@ -32000,6 +31967,53 @@
       "status": "skipped",
       "processed_at": "2026-08-11T04:54:08.169Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121536:5239235688:2026-08-11T04:51:07Z:clawsweeper_needs_human",
+      "comment_id": "5239235688",
+      "comment_version_key": "5239235688:2026-08-11T04:51:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121536#issuecomment-5239235688",
+      "comment_created_at": "2026-08-10T10:58:55Z",
+      "comment_updated_at": "2026-08-11T04:51:07Z",
+      "comment_body_sha256": "5b54dc8f219522d818677774da381c24d52f6f35f1c0eec4fc903bab9ee4d2af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121536,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a merge conflict; resolving it can change persistence and transcript behavior, so focused exact-head validation is required. (sha=30dd475d4035fe3df0031c9e060e237ed1949a77)",
+      "expected_head_sha": "30dd475d4035fe3df0031c9e060e237ed1949a77",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T04:54:26.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-accessor-infix-removal",
+        "head_sha": "30dd475d4035fe3df0031c9e060e237ed1949a77",
+        "cluster_id": "automerge-openclaw-openclaw-121536",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-121536.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
