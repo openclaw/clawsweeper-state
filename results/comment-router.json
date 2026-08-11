@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:30:05.877Z",
+  "updated_at": "2026-08-11T20:35:46.889Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119810:5200121094:2026-08-11T17:07:32Z:clawsweeper_auto_repair",
-      "comment_id": "5200121094",
-      "comment_version_key": "5200121094:2026-08-11T17:07:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119810#issuecomment-5200121094",
-      "comment_created_at": "2026-08-06T03:41:44Z",
-      "comment_updated_at": "2026-08-11T17:07:32Z",
-      "comment_body_sha256": "1eeef123c8bf1b49448b2708df8f47cacb4e8cb1f483ee95de842fd5120f892e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119810,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5430e0bbf96dd854e590bb22da13698434045760)",
-      "expected_head_sha": "5430e0bbf96dd854e590bb22da13698434045760",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:55:24.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-control-ui-run-inspector",
-        "head_sha": "5430e0bbf96dd854e590bb22da13698434045760",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120485:5224772532:2026-08-11T17:04:11Z:clawsweeper_needs_human",
       "comment_id": "5224772532",
@@ -30219,6 +30186,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2873:5258549466:2026-08-11T20:35:01Z:re_review",
+      "comment_id": "5258549466",
+      "comment_version_key": "5258549466:2026-08-11T20:35:01Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2873#issuecomment-5258549466",
+      "comment_created_at": "2026-08-11T20:35:01Z",
+      "comment_updated_at": "2026-08-11T20:35:01Z",
+      "comment_body_sha256": "fb1fe5b11763b094de9a0abbef5fe55ed546e2ac1f9c55bc2021204ca005c46b",
+      "source_delivery_id": "20c86a50-95c4-11f1-9d1b-7805ab93346d",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2873,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T20:35:43.257Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/azure-v1-validation-budget",
+        "head_sha": "ed93630ec2074a3f5e0b29b3f5b92d8aa9ea4d6e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
