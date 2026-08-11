@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-11T14:02:03.843Z",
+  "updated_at": "2026-08-11T14:02:12.836Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1118:5250915978:2026-08-11T08:40:31Z:re_review",
-      "comment_id": "5250915978",
-      "comment_version_key": "5250915978:2026-08-11T08:40:31Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1118#issuecomment-5250915978",
-      "comment_created_at": "2026-08-11T08:40:31Z",
-      "comment_updated_at": "2026-08-11T08:40:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "5099ece0-9560-11f1-8994-72061e7d9a38",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1118,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T08:41:04.057Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/blob-hydration-env-gate",
-        "head_sha": "2439d7190c74dc39a76b0947f28db3bb4dc621d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1120:5250573047:2026-08-11T08:40:55Z:clawsweeper_auto_repair",
       "comment_id": "5250573047",
@@ -32070,6 +32022,39 @@
         "kind": "pull_request",
         "branch": "qual/gateway-kernel-registry",
         "head_sha": "b699feea84a23fa4b4545701f48b74044d06f76e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122057:5254197995:2026-08-11T14:01:32Z:clawsweeper_needs_human",
+      "comment_id": "5254197995",
+      "comment_version_key": "5254197995:2026-08-11T14:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122057#issuecomment-5254197995",
+      "comment_created_at": "2026-08-11T14:01:32Z",
+      "comment_updated_at": "2026-08-11T14:01:32Z",
+      "comment_body_sha256": "9df2475177c6b99f90c73c9da5b8630e5097cd1b85d2599f9efde910f6eeb0f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; refresh it against the current base and use the resulting exact head for final CI. (sha=47c196e2de6f69211123cacdbef760b10b85f69e)",
+      "expected_head_sha": "47c196e2de6f69211123cacdbef760b10b85f69e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T14:02:12.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codemode-wildcard-skills",
+        "head_sha": "47c196e2de6f69211123cacdbef760b10b85f69e",
         "cluster_id": null,
         "job_path": null
       }
