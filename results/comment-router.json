@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T02:00:26.238Z",
+  "updated_at": "2026-08-11T02:00:52.585Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5116307340:2026-07-29T10:12:24Z:re_review",
-      "comment_id": "5116307340",
-      "comment_version_key": "5116307340:2026-07-29T10:12:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5116307340",
-      "comment_created_at": "2026-07-29T10:12:24Z",
-      "comment_updated_at": "2026-07-29T10:12:24Z",
-      "comment_body_sha256": "01a42a0309c041fde5f480f112f2bf411eb0eb7c1623212986a367eb7c2f477b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now 4ac51dd9c7. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:55:51.434Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5118251268:2026-07-29T13:15:27Z:re_review",
       "comment_id": "5118251268",
@@ -32789,6 +32762,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T02:00:26.238Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121797:5248165334:2026-08-11T02:00:11Z:clawsweeper_needs_human",
+      "comment_id": "5248165334",
+      "comment_version_key": "5248165334:2026-08-11T02:00:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121797#issuecomment-5248165334",
+      "comment_created_at": "2026-08-11T02:00:11Z",
+      "comment_updated_at": "2026-08-11T02:00:11Z",
+      "comment_body_sha256": "91ced63351af8666b73865bd82b8cbd32a70080d69343c395eab88f931e012a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121797,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused Vitest results, but provides no redacted after-fix configured-MCP cron run or persisted run-history proof; the full... (sha=ab19cd40ceae48a5580ea8b4d3e8623d9b601df6)",
+      "expected_head_sha": "ab19cd40ceae48a5580ea8b4d3e8623d9b601df6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T02:00:52.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-allowlist-suppression-warning",
+        "head_sha": "ab19cd40ceae48a5580ea8b4d3e8623d9b601df6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
