@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-11T01:43:44.954Z",
+  "updated_at": "2026-08-11T01:45:55.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114072:5232781561:2026-08-09T17:26:19Z:re_review",
-      "comment_id": "5232781561",
-      "comment_version_key": "5232781561:2026-08-09T17:26:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114072#issuecomment-5232781561",
-      "comment_created_at": "2026-08-09T17:26:19Z",
-      "comment_updated_at": "2026-08-09T17:26:19Z",
-      "comment_body_sha256": "1558b4c05b2037875adbb9d164955723df904cba744d6f4ace2582b2fe7fb7f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114072,
-      "author": "fr-meyer",
-      "author_id": 26621962,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-10T20:50:11.404Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114072:5083153630:2026-07-26T10:51:27Z:re_review",
       "comment_id": "5083153630",
@@ -32323,6 +32296,39 @@
       "status": "skipped",
       "processed_at": "2026-08-11T01:43:44.954Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:977:5248085470:2026-08-11T01:45:12Z:clawsweeper_needs_human",
+      "comment_id": "5248085470",
+      "comment_version_key": "5248085470:2026-08-11T01:45:12Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/977#issuecomment-5248085470",
+      "comment_created_at": "2026-08-11T01:45:12Z",
+      "comment_updated_at": "2026-08-11T01:45:12Z",
+      "comment_body_sha256": "ab2f7483aa017d97ce921f045be67d126d06711ca3a58cff8080b6d3377e575e",
+      "repo": "openclaw/gogcli",
+      "issue_number": 977,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that supplied malformed or group-only recipient values will now fail early instead of attempting to send or save an addressless message; that compatibility change... (sha=612e439b921acfed706bc71ddc555d2eb91f9038)",
+      "expected_head_sha": "612e439b921acfed706bc71ddc555d2eb91f9038",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-11T01:45:55.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gmail-drafts-mirror",
+        "head_sha": "612e439b921acfed706bc71ddc555d2eb91f9038",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
