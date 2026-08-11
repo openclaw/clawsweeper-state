@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:36:30.802Z",
+  "updated_at": "2026-08-11T20:39:33.520Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-11T17:01:03Z:clawsweeper_auto_repair",
-      "comment_id": "5229043394",
-      "comment_version_key": "5229043394:2026-08-11T17:01:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229043394",
-      "comment_created_at": "2026-08-09T00:45:52Z",
-      "comment_updated_at": "2026-08-11T17:01:03Z",
-      "comment_body_sha256": "0e6a14dc16d140e5df2677375be7291a6bfaf2940c6116fa819ad0077c782ee7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120768,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4d9f1574aa1e7b45aa985d7952007d6a62bdc79a)",
-      "expected_head_sha": "4d9f1574aa1e7b45aa985d7952007d6a62bdc79a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T17:55:24.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/runners-m3-pair-url",
-        "head_sha": "6c07016cc5d19b14a5d589355d07a3d889dd71c9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121450:5236872215:2026-08-11T17:07:17Z:clawsweeper_needs_human",
       "comment_id": "5236872215",
@@ -30234,6 +30201,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1126:5258588617:2026-08-11T20:38:53Z:re_review",
+      "comment_id": "5258588617",
+      "comment_version_key": "5258588617:2026-08-11T20:38:53Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1126#issuecomment-5258588617",
+      "comment_created_at": "2026-08-11T20:38:53Z",
+      "comment_updated_at": "2026-08-11T20:38:53Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "ab354640-95c4-11f1-9422-bedcf761b965",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1126,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T20:39:31.163Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-sqlite-migration",
+        "head_sha": "bd8d595a369c15169a0e39f11728c166bba5b521",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
