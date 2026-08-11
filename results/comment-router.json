@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-11T20:00:04.625Z",
+  "updated_at": "2026-08-11T20:00:11.787Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122150:5256215513:2026-08-11T16:55:35Z:clawsweeper_needs_human",
-      "comment_id": "5256215513",
-      "comment_version_key": "5256215513:2026-08-11T16:55:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122150#issuecomment-5256215513",
-      "comment_created_at": "2026-08-11T16:55:35Z",
-      "comment_updated_at": "2026-08-11T16:55:35Z",
-      "comment_body_sha256": "6c176dadd09303fd3317993385c670f005d8a4df5135bc73e279b0bc23a0c32b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Await normal exact-head UI validation and maintainer review; there is no concrete automated repair to dispatch. (sha=3de2f0da5009e67ba1f2d71fded8f6378501a2bc)",
-      "expected_head_sha": "3de2f0da5009e67ba1f2d71fded8f6378501a2bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T16:56:14.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/chat-markdown-switch-layout",
-        "head_sha": "3de2f0da5009e67ba1f2d71fded8f6378501a2bc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121278:5234497873:2026-08-11T16:51:38Z:clawsweeper_needs_human",
       "comment_id": "5234497873",
@@ -31263,6 +31230,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122103:5258175048:2026-08-11T19:59:30Z:re_review",
+      "comment_id": "5258175048",
+      "comment_version_key": "5258175048:2026-08-11T19:59:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122103#issuecomment-5258175048",
+      "comment_created_at": "2026-08-11T19:59:30Z",
+      "comment_updated_at": "2026-08-11T19:59:30Z",
+      "comment_body_sha256": "173f5b5843ecff766f7c1c720755d69df39cc35605800186ed60dc6df26f514d",
+      "source_delivery_id": "2a85cce0-95bf-11f1-8875-46ec83dc51b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122103,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-11T20:00:08.982Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/attached-browser-cdp-adapter-retirement",
+        "head_sha": "a2d21b2c1a34faca7aba512d1e9aa6ff3ffa88fd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
