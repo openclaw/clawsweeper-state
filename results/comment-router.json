@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T05:18:14.292Z",
+  "updated_at": "2026-08-12T05:19:08.400Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122355:5260908032:2026-08-12T01:16:21Z:clawsweeper_needs_human",
-      "comment_id": "5260908032",
-      "comment_version_key": "5260908032:2026-08-12T01:16:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122355#issuecomment-5260908032",
-      "comment_created_at": "2026-08-12T01:11:38Z",
-      "comment_updated_at": "2026-08-12T01:16:21Z",
-      "comment_body_sha256": "d6d653e570f2b1519e3bf79998b30782babaced78b99614dd39b3f91a63aa64e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122355,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local partial clone could not hydrate the PR's large blobs because github.com DNS was unavailable; this review therefore relies on the supplied file-level diff and exact-head CI r... (sha=2226acf218ea59cf0062371dde50cbb06909bda5)",
-      "expected_head_sha": "2226acf218ea59cf0062371dde50cbb06909bda5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T01:55:06.063Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/native-app-locale-refresh",
-        "head_sha": "ec32c4b7b854efea69a96e6ebe072b7d5a8372ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122316:5259805978:2026-08-12T01:55:06Z:clawsweeper_needs_human",
       "comment_id": "5259805978",
@@ -30440,6 +30407,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:2870:5262650770:2026-08-12T05:18:25Z:re_review",
+      "comment_id": "5262650770",
+      "comment_version_key": "5262650770:2026-08-12T05:18:25Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2870#issuecomment-5262650770",
+      "comment_created_at": "2026-08-12T05:18:25Z",
+      "comment_updated_at": "2026-08-12T05:18:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "3f23d450-960d-11f1-88e2-d7862b952e9b",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2870,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "OWNER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T05:19:06.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-layout-balance",
+        "head_sha": "f2f0a5a3fae8a45f04f371af6de12c6eaaf97a35",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
