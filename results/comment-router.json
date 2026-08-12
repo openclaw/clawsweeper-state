@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:28:03.059Z",
+  "updated_at": "2026-08-12T20:28:03.914Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118681:5167498510:2026-08-12T17:00:08Z:clawsweeper_auto_repair",
-      "comment_id": "5167498510",
-      "comment_version_key": "5167498510:2026-08-12T17:00:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5167498510",
-      "comment_created_at": "2026-08-03T14:12:32Z",
-      "comment_updated_at": "2026-08-12T17:00:08Z",
-      "comment_body_sha256": "68e1eef8e6fb9a0fabe95473e8284c5dd8dca6ba0609bf95dae6d11fab911852",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118681,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=09f5c4a2c8dae2ea9782ce89af19797fa6087de1)",
-      "expected_head_sha": "09f5c4a2c8dae2ea9782ce89af19797fa6087de1",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-12T17:05:08.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reactive-memory-flush-114081",
-        "head_sha": "09f5c4a2c8dae2ea9782ce89af19797fa6087de1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118681:5179994218:2026-08-04T13:50:26Z:re_review",
       "comment_id": "5179994218",
@@ -30873,6 +30840,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T20:27:55.198Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122389:5261828307:2026-08-12T20:27:11Z:clawsweeper_needs_human",
+      "comment_id": "5261828307",
+      "comment_version_key": "5261828307:2026-08-12T20:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122389#issuecomment-5261828307",
+      "comment_created_at": "2026-08-12T03:15:16Z",
+      "comment_updated_at": "2026-08-12T20:27:11Z",
+      "comment_body_sha256": "ff8fc9688268c18861c67cc7ac4520e471457491c63ab9c9faef0c79023ba771",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122389,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify Codex install-selector enforcement** - The command forwards catalog-provided marketplace paths or remote IDs to Codex, so the pinned app-server policy and exact selector validati...; Review finding: [medium] Verify Codex install-selector enforcement — extensions/codex/src/command-plugins-management.ts:374 (sha=bb3fef26c3be5573f0d8306a87e34a853b7abeba)",
+      "expected_head_sha": "bb3fef26c3be5573f0d8306a87e34a853b7abeba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T20:28:03.914Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/dynamic-plugin-marketplaces-owner-install",
+        "head_sha": "bb3fef26c3be5573f0d8306a87e34a853b7abeba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
