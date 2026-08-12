@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 12, 2026, 01:09 UTC
+Last source update: Aug 12, 2026, 01:21 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Aug 12, 2026, 01:09 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 12, 2026, 00:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31550933248) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Aug 12, 2026, 01:21 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31552963821) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 12, 2026, 00:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31551108648) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 12, 2026, 01:09 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/31552664272) |
 
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 12, 2026, 01:10 UTC
+Last source update: Aug 12, 2026, 01:26 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 490 | 100% |
-| Run attempts archived | 1361 | audit |
-| Latest successful clusters | 421 | 85.9% |
-| Latest failed clusters | 67 | 13.7% |
+| Run attempts archived | 1362 | audit |
+| Latest successful clusters | 422 | 86.1% |
+| Latest failed clusters | 66 | 13.5% |
 | Latest cancelled clusters | 2 | 0.4% |
 | Needs-human clusters | 28 | 5.7% |
 | Fix actions failed | 24 | 4.5% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 490 clusters: 195 maintainer action, 111 automation snapshot, 159 intervention needed, 25 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [automerge-openclaw-openclaw-121414](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-121414.md) is maintainer_input: A maintainer must accept or revise the catalog-gated first-run default policy identified by the latest ClawSweeper `clawsweeper:human-rev....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#122353](https://github.com/openclaw/openclaw/pull/122353) is automation_failed: Implementation is blocked only by the restricted local checkout; the bug and repair scope are unambiguous..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#122353](https://github.com/openclaw/openclaw/pull/122353) is automation_blocked: The repair requires edits and validation, but the worker has no write access. The working tree remains clean..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#122352](https://github.com/openclaw/openclaw/pull/122352) is action_planned: The issue remains an ordinary Android presentation-state bug with a narrow in-memory owner-boundary repair; it does not require protocol,....
 - Completed latest: no completed action in the latest records.
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 67 |
-| automation_failed | 79 |
-| automation_blocked | 80 |
+| automation_failed | 78 |
+| automation_blocked | 81 |
 | reviewed_no_action | 25 |
 | completed | 0 |
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#122353](https://github.com/openclaw/openclaw/pull/122353) | automation_failed | Implementation is blocked only by the restricted local checkout; the bug and repair scope are unambiguous. | Aug 12, 2026, 01:10 UTC | [issue-openclaw-openclaw-122353](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122353.md) | [31552289045](https://github.com/openclaw/clawsweeper/actions/runs/31552289045) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#122353](https://github.com/openclaw/openclaw/pull/122353) | automation_blocked | The repair requires edits and validation, but the worker has no write access. The working tree remains clean. | Aug 12, 2026, 01:26 UTC | [issue-openclaw-openclaw-122353](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122353.md) | [31553240528](https://github.com/openclaw/clawsweeper/actions/runs/31553240528) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#122295](https://github.com/openclaw/openclaw/pull/122295) | automation_blocked | The filesystem sandbox is read-only, preventing the required source/test edits, dependency installation, branch update, and PR creation. | Aug 11, 2026, 22:47 UTC | [issue-openclaw-openclaw-122295](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122295.md) | [31543212443](https://github.com/openclaw/clawsweeper/actions/runs/31543212443) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#122298](https://github.com/openclaw/openclaw/pull/122298) | automation_blocked | A writable executor must apply and validate the narrow source-boundary repair; this worker cannot write files or run the fixture-writing regression... | Aug 11, 2026, 22:43 UTC | [issue-openclaw-openclaw-122298](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122298.md) | [31543210482](https://github.com/openclaw/clawsweeper/actions/runs/31543210482) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#122170](https://github.com/openclaw/openclaw/issues/122170) | automation_blocked | Preserve the already-probed readiness fact across the setup result and hatch handoff so only a ready-Gateway hatch uses the normal Gateway TUI path... | Aug 11, 2026, 18:52 UTC | [issue-openclaw-openclaw-122170](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-122170.md) | [31523941364](https://github.com/openclaw/clawsweeper/actions/runs/31523941364) |
