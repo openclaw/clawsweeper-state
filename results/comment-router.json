@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:16:46.943Z",
+  "updated_at": "2026-08-12T12:17:04.356Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257303795:2026-08-11T18:36:03Z:re_review",
-      "comment_id": "5257303795",
-      "comment_version_key": "5257303795:2026-08-11T18:36:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257303795",
-      "comment_created_at": "2026-08-11T18:36:03Z",
-      "comment_updated_at": "2026-08-11T18:36:03Z",
-      "comment_body_sha256": "86acf9f84597dbadc68ec1e4a60685f0b4ae0f93277e9a5ac57323c5259766d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T08:07:18.379Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5257371524:2026-08-11T18:42:30Z:re_review",
       "comment_id": "5257371524",
@@ -31344,6 +31317,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122596:5265834592:2026-08-12T12:16:19Z:clawsweeper_needs_human",
+      "comment_id": "5265834592",
+      "comment_version_key": "5265834592:2026-08-12T12:16:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122596#issuecomment-5265834592",
+      "comment_created_at": "2026-08-12T11:03:22Z",
+      "comment_updated_at": "2026-08-12T12:16:19Z",
+      "comment_body_sha256": "fe537be6462d3104d98d24a37e58f337250e6e9c3d04362f1fff4767ed1edae0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Running two Node/Vitest processes concurrently can expose Windows-only resource or path contention that static workflow checks cannot detect; the exact-head run is healthy, so retain... (sha=c04b8ea2bf35529ae672d8705525cc71cf75a3a8)",
+      "expected_head_sha": "c04b8ea2bf35529ae672d8705525cc71cf75a3a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:17:04.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "amp/ci-windows-parallel",
+        "head_sha": "c04b8ea2bf35529ae672d8705525cc71cf75a3a8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
