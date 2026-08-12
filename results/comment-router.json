@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:11:28.329Z",
+  "updated_at": "2026-08-12T11:12:13.646Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120332:5229378142:2026-08-09T02:30:51Z:re_review",
-      "comment_id": "5229378142",
-      "comment_version_key": "5229378142:2026-08-09T02:30:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120332#issuecomment-5229378142",
-      "comment_created_at": "2026-08-09T02:30:51Z",
-      "comment_updated_at": "2026-08-09T02:30:51Z",
-      "comment_body_sha256": "1bf9aba790c8a25edc02d041045243489e8b0c566bb1e53482041cc4441bba81",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120332,
-      "author": "marmar9615-cloud",
-      "author_id": 271345736,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:16:07.660Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122200:5263287165:2026-08-12T06:43:47Z:re_review",
       "comment_id": "5263287165",
@@ -31150,6 +31123,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122594:5265913319:2026-08-12T11:11:35Z:clawsweeper_needs_human",
+      "comment_id": "5265913319",
+      "comment_version_key": "5265913319:2026-08-12T11:11:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122594#issuecomment-5265913319",
+      "comment_created_at": "2026-08-12T11:11:35Z",
+      "comment_updated_at": "2026-08-12T11:11:35Z",
+      "comment_body_sha256": "9530578ef59d3da746e33c1fa432d9db063a572d0dc5e879fa40bf64eebac98e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body provides a mock DOM regression test and copied test output, but no after-fix real browser/IME run; add redacted recording, terminal... (sha=44840b0d187908ae737a12c950fb0a7dab76ca12)",
+      "expected_head_sha": "44840b0d187908ae737a12c950fb0a7dab76ca12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T11:12:13.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/composer-ime-blur-stuck",
+        "head_sha": "44840b0d187908ae737a12c950fb0a7dab76ca12",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
