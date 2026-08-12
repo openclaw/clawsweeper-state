@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T14:14:30.389Z",
+  "updated_at": "2026-08-12T14:15:18.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119001:5228259106:2026-08-08T21:29:40Z:re_review",
-      "comment_id": "5228259106",
-      "comment_version_key": "5228259106:2026-08-08T21:29:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5228259106",
-      "comment_created_at": "2026-08-08T21:29:40Z",
-      "comment_updated_at": "2026-08-08T21:29:40Z",
-      "comment_body_sha256": "243ba00476ec0d72eb6b4011b7ac83846f75e11a79032ee5a0723fe0e9703ac9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119001,
-      "author": "GoatInAHat",
-      "author_id": 55002508,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review exact head 51c07166508eb0361205d50c0d3de6a522dec327",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T10:06:28.139Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5228471489:2026-08-08T22:21:36Z:re_review",
       "comment_id": "5228471489",
@@ -31242,6 +31215,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T14:14:30.389Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119178:5177561276:2026-08-12T14:10:31Z:clawsweeper_needs_human",
+      "comment_id": "5177561276",
+      "comment_version_key": "5177561276:2026-08-12T14:10:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119178#issuecomment-5177561276",
+      "comment_created_at": "2026-08-04T10:09:49Z",
+      "comment_updated_at": "2026-08-12T14:10:31Z",
+      "comment_body_sha256": "f31b1742a9de0bd676dda0c1ef9b0941eaebb17a9d13b0a69f16ecd00f9b1297",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check snapshot still had check-lint in progress; merge only after it completes successfully. (sha=5b85ac4f669609e634fd6adfe48252f84a2f2696)",
+      "expected_head_sha": "5b85ac4f669609e634fd6adfe48252f84a2f2696",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T14:15:18.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/taskflow-skills-removed-alias",
+        "head_sha": "5b85ac4f669609e634fd6adfe48252f84a2f2696",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
