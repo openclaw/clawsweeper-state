@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T08:08:29.537Z",
+  "updated_at": "2026-08-12T08:08:29.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5148981133:2026-08-01T02:02:19Z:re_review",
-      "comment_id": "5148981133",
-      "comment_version_key": "5148981133:2026-08-01T02:02:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5148981133",
-      "comment_created_at": "2026-08-01T02:02:19Z",
-      "comment_updated_at": "2026-08-01T02:02:19Z",
-      "comment_body_sha256": "18be5365c98af21e8cd193ac59bf494222222fbb8272c99242d693c164c54cfa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head d615377705e79e6b7d60bf820a3b1bfac074a28e. the three existing setup/onboarding pages now distinguish invalid explicit openclaw_locale fallback from inferred lc_all, lc_messages, and lang continuation. full docs checks and 25 focused resolver/wizard tests pass. @vincentkoc, the approved intl-messageformat 11.2.12 graph is unchanged; please apply the dependency guard authorization to this exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T03:27:27.214Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5149583221:2026-08-01T03:27:28Z:re_review",
       "comment_id": "5149583221",
@@ -31302,6 +31275,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122439:5262957437:2026-08-12T08:07:47Z:clawsweeper_auto_repair",
+      "comment_id": "5262957437",
+      "comment_version_key": "5262957437:2026-08-12T08:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122439#issuecomment-5262957437",
+      "comment_created_at": "2026-08-12T05:59:43Z",
+      "comment_updated_at": "2026-08-12T08:07:47Z",
+      "comment_body_sha256": "4a5d940f413545f585c49a2f9e1fe1582a4ed4b9aa0f406af9bd1c8cbc67c4d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122439,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=230b0e175e6dcf247699b033beb13fb500aad108)",
+      "expected_head_sha": "230b0e175e6dcf247699b033beb13fb500aad108",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T08:08:29.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/slack-self-join-intro",
+        "head_sha": "230b0e175e6dcf247699b033beb13fb500aad108",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
