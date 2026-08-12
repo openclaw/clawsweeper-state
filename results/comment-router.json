@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:20:57.895Z",
+  "updated_at": "2026-08-12T12:25:43.405Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122464:5262987587:2026-08-12T09:02:17Z:clawsweeper_needs_human",
-      "comment_id": "5262987587",
-      "comment_version_key": "5262987587:2026-08-12T09:02:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122464#issuecomment-5262987587",
-      "comment_created_at": "2026-08-12T06:04:01Z",
-      "comment_updated_at": "2026-08-12T09:02:17Z",
-      "comment_body_sha256": "9f357d1993b7d08a064873a3fa0b8bac6cdd1e59712f6b1582bd5277464f9002",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 26 lines for a bug fix; the growth is justified only because a prior-dock fact must survive remounts and both toolbar and catalog entry paths without duplicat... (sha=100588fd21c29f34be525289dd3cc93050a9cf3c)",
-      "expected_head_sha": "100588fd21c29f34be525289dd3cc93050a9cf3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:03:07.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-terminal-fill-toggle",
-        "head_sha": "100588fd21c29f34be525289dd3cc93050a9cf3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122444:5262583378:2026-08-12T09:02:30Z:clawsweeper_auto_repair",
       "comment_id": "5262583378",
@@ -30929,6 +30896,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1128:5225378319:2026-08-12T12:24:53Z:clawsweeper_needs_human",
+      "comment_id": "5225378319",
+      "comment_version_key": "5225378319:2026-08-12T12:24:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1128#issuecomment-5225378319",
+      "comment_created_at": "2026-08-08T08:45:06Z",
+      "comment_updated_at": "2026-08-12T12:24:53Z",
+      "comment_body_sha256": "a6bebc2f2e8f3d7bf53eb64e9d0f908d8a7edeb4fae89c690e0f12f41b723e17",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the legacy authorization expansion** - Eligible existing records can move dashboard authorization from a shared token in the URL to verified Tailscale identity, so maintainers m...; Review finding: [medium] Approve the legacy authorization expansion — src/OpenClaw.Connection/GatewayTailscaleAuthUpgrade.cs:31 (sha=653135ce02ad3814604879b516b8e18e7f1b4593)",
+      "expected_head_sha": "653135ce02ad3814604879b516b8e18e7f1b4593",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:25:43.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/tailscale-legacy-upgrade-20260807",
+        "head_sha": "653135ce02ad3814604879b516b8e18e7f1b4593",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
