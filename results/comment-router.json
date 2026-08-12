@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:28:31.361Z",
+  "updated_at": "2026-08-12T17:29:09.225Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122613:5266995006:2026-08-12T12:46:34Z:re_review",
-      "comment_id": "5266995006",
-      "comment_version_key": "5266995006:2026-08-12T12:46:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122613#issuecomment-5266995006",
-      "comment_created_at": "2026-08-12T12:46:34Z",
-      "comment_updated_at": "2026-08-12T12:46:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122613,
-      "author": "Piyushrathoree",
-      "author_id": 163632958,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:07:38.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/projects-github-search-token-cache",
-        "head_sha": "68a6fcca3a4ea21965994fe004851ebc59754e7c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120105:5267226768:2026-08-12T13:07:46Z:re_review",
       "comment_id": "5267226768",
@@ -31608,6 +31561,39 @@
         "kind": "pull_request",
         "branch": "feat/skill-publish-catalog-metadata",
         "head_sha": "f47107d117381576bad760f56bbfb23fac02b6f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:131:5270174423:2026-08-12T17:28:17Z:clawsweeper_needs_human",
+      "comment_id": "5270174423",
+      "comment_version_key": "5270174423:2026-08-12T17:28:17Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/131#issuecomment-5270174423",
+      "comment_created_at": "2026-08-12T17:28:17Z",
+      "comment_updated_at": "2026-08-12T17:28:17Z",
+      "comment_body_sha256": "a5b403a9ee3fb619f40be22651388574cd76b5c22d7410614302b5a64b7e326c",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updated CLI builds native bindings on all release targets; 10 supplied CI jobs, including Windows, musl, coverage, and cargo audit, were still running at review time. (sha=ed6e4188b2c005a6c34b4a43aa5079bd272774f4)",
+      "expected_head_sha": "ed6e4188b2c005a6c34b4a43aa5079bd272774f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:29:09.225Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-012fd98f7b",
+        "head_sha": "ed6e4188b2c005a6c34b4a43aa5079bd272774f4",
         "cluster_id": null,
         "job_path": null
       }
