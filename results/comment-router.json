@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T23:08:06.949Z",
+  "updated_at": "2026-08-12T23:08:09.328Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5184480345:2026-08-04T20:51:40Z:re_review",
-      "comment_id": "5184480345",
-      "comment_version_key": "5184480345:2026-08-04T20:51:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5184480345",
-      "comment_created_at": "2026-08-04T20:51:40Z",
-      "comment_updated_at": "2026-08-04T20:51:40Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T18:17:27.759Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-12T18:14:26Z:clawsweeper_needs_human",
       "comment_id": "5184670120",
@@ -30936,6 +30909,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T23:08:06.949Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122536:5264732276:2026-08-12T23:02:31Z:clawsweeper_needs_human",
+      "comment_id": "5264732276",
+      "comment_version_key": "5264732276:2026-08-12T23:02:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122536#issuecomment-5264732276",
+      "comment_created_at": "2026-08-12T09:13:09Z",
+      "comment_updated_at": "2026-08-12T23:02:31Z",
+      "comment_body_sha256": "67fa917837a48674b09824f03e6e37ec64f7a581aec27f9cebcf6a42b4c2d92e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122536,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Clarify how development-server variables are supplied (P2)** - The guide says OpenClaw passes PORT and PUBLIC_URL to the background development server, but the described portal interface only opens, lists, and c...; Review finding: [P2] Clarify how development-server variables are supplied — docs/gateway/portals.md:19 - [medium] Review the exact portal proxy implementation (sha=2eaf2168a56d97c5486df48b65c79974bbc749a6)",
+      "expected_head_sha": "2eaf2168a56d97c5486df48b65c79974bbc749a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T23:08:09.328Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/portal-feature-replication-10818c",
+        "head_sha": "9e4b49ded9ee0d78844e55f3848ffaa450fcbb3c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
