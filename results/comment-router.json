@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T07:00:39.615Z",
+  "updated_at": "2026-08-12T07:00:57.155Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97295:4846127135:2026-06-30T17:17:08Z:re_review",
@@ -30844,39 +30844,6 @@
       }
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122363:5260904711:2026-08-12T06:59:00Z:clawsweeper_needs_human",
-      "comment_id": "5260904711",
-      "comment_version_key": "5260904711:2026-08-12T06:59:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122363#issuecomment-5260904711",
-      "comment_created_at": "2026-08-12T01:11:05Z",
-      "comment_updated_at": "2026-08-12T06:59:00Z",
-      "comment_body_sha256": "e8c086810cd312f5e319191caf9dcb0192c82ddbe7f29cd548e7e7b1979ee0eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122363,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 48 net lines at a shared session boundary; it intentionally changes prompt context for every channel turn whose route and dispatch sessions differ, so route-f... (sha=e58a28d8a6e76a33dc7112954899dbcdc570c671)",
-      "expected_head_sha": "e58a28d8a6e76a33dc7112954899dbcdc570c671",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:00:07.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/slack-reaction-parent-events-1",
-        "head_sha": "e58a28d8a6e76a33dc7112954899dbcdc570c671",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122383:5261445036:2026-08-12T06:57:14Z:clawsweeper_auto_repair",
       "comment_id": "5261445036",
       "comment_version_key": "5261445036:2026-08-12T06:57:14Z",
@@ -31106,6 +31073,55 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122363:5260904711:2026-08-12T06:59:00Z:clawsweeper_needs_human",
+      "comment_id": "5260904711",
+      "comment_version_key": "5260904711:2026-08-12T06:59:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122363#issuecomment-5260904711",
+      "comment_created_at": "2026-08-12T01:11:05Z",
+      "comment_updated_at": "2026-08-12T06:59:00Z",
+      "comment_body_sha256": "e8c086810cd312f5e319191caf9dcb0192c82ddbe7f29cd548e7e7b1979ee0eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122363,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 48 net lines at a shared session boundary; it intentionally changes prompt context for every channel turn whose route and dispatch sessions differ, so route-f... (sha=e58a28d8a6e76a33dc7112954899dbcdc570c671)",
+      "forced_replay": true,
+      "attempt_id": "completed-review-5262646389-5260904711",
+      "expected_head_sha": "e58a28d8a6e76a33dc7112954899dbcdc570c671",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T07:00:57.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-reaction-parent-events-1",
+        "head_sha": "e58a28d8a6e76a33dc7112954899dbcdc570c671",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
