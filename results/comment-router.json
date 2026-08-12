@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:36:37.554Z",
+  "updated_at": "2026-08-12T12:37:09.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103390:4945985816:2026-07-11T12:42:52Z:re_review",
-      "comment_id": "4945985816",
-      "comment_version_key": "4945985816:2026-07-11T12:42:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103390#issuecomment-4945985816",
-      "comment_created_at": "2026-07-11T12:42:52Z",
-      "comment_updated_at": "2026-07-11T12:42:52Z",
-      "comment_body_sha256": "611fdf935f954b56a1ad41711c7994f51fba79f35d7039bbcf7cc3f36297df8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103390,
-      "author": "ss251",
-      "author_id": 32437884,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:04:49.443Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:103390:4947446536:2026-07-11T16:06:07Z:re_review",
       "comment_id": "4947446536",
@@ -30944,6 +30917,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1111:5206348947:2026-08-12T12:36:23Z:clawsweeper_needs_human",
+      "comment_id": "5206348947",
+      "comment_version_key": "5206348947:2026-08-12T12:36:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1111#issuecomment-5206348947",
+      "comment_created_at": "2026-08-06T14:49:29Z",
+      "comment_updated_at": "2026-08-12T12:36:23Z",
+      "comment_body_sha256": "5febe92eaa7216ae58abaaac055c73608896defb7a269013ea81f545127109fd",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1111,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Persisted envelopes from Gateway versions beyond the exercised Core 2026.7.2-beta.6 shapes could expose an unrecognized alias, although the repaired aliases and focused regressions co... (sha=e05d86c5151bae9e6aa286231975c99616c577ce)",
+      "expected_head_sha": "e05d86c5151bae9e6aa286231975c99616c577ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:37:09.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/companion-main-20260806",
+        "head_sha": "e05d86c5151bae9e6aa286231975c99616c577ce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
