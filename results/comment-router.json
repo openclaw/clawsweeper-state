@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T23:23:02.017Z",
+  "updated_at": "2026-08-12T23:25:36.375Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122747:5270913137:2026-08-12T18:17:28Z:clawsweeper_needs_human",
-      "comment_id": "5270913137",
-      "comment_version_key": "5270913137:2026-08-12T18:17:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122747#issuecomment-5270913137",
-      "comment_created_at": "2026-08-12T18:17:28Z",
-      "comment_updated_at": "2026-08-12T18:17:28Z",
-      "comment_body_sha256": "b20726bd772df95ff01178bef6a779f2ca7a474bb22b77e2eb2a9606eb2fa2c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122747,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR context supplies targeted tests and harnesses, but no after-fix ACP client reconnecting through a restarted Gateway. After adding proof,... (sha=a4dcbb03527c4079f59d5b43281e4098486afbcb)",
-      "expected_head_sha": "a4dcbb03527c4079f59d5b43281e4098486afbcb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T18:18:11.783Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-gateway-recovery",
-        "head_sha": "a4dcbb03527c4079f59d5b43281e4098486afbcb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122759:5270936287:2026-08-12T18:18:57Z:clawsweeper_auto_repair",
       "comment_id": "5270936287",
@@ -31130,6 +31097,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5273968758:2026-08-12T23:24:49Z:re_review",
+      "comment_id": "5273968758",
+      "comment_version_key": "5273968758:2026-08-12T23:24:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5273968758",
+      "comment_created_at": "2026-08-12T23:24:49Z",
+      "comment_updated_at": "2026-08-12T23:24:49Z",
+      "comment_body_sha256": "ef39a54946e7fe619227fbd670e69193c36e727d036e5393cc157cf56bdd13d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T23:25:34.722Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "63edc60acbcac997616c5189349aadc5883c84bf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
