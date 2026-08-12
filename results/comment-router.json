@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-12T11:09:22.827Z",
+  "updated_at": "2026-08-12T11:08:08.608Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122391:5261758739:2026-08-12T07:11:38Z:clawsweeper_auto_repair",
+      "comment_id": "5261758739",
+      "comment_version_key": "5261758739:2026-08-12T07:11:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122391#issuecomment-5261758739",
+      "comment_created_at": "2026-08-12T03:07:51Z",
+      "comment_updated_at": "2026-08-12T07:11:38Z",
+      "comment_body_sha256": "6191cfa72fcd0cb4653327db801427256c49b7ae0af2c77919ebdd8866343690",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122391,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ae67f2e41b273b8de5692a4eb77d81e70697d101)",
+      "expected_head_sha": "ae67f2e41b273b8de5692a4eb77d81e70697d101",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T07:12:23.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr/ui-interaction-accessibility-enhancements",
+        "head_sha": "ae67f2e41b273b8de5692a4eb77d81e70697d101",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121845:5263522588:2026-08-12T07:12:04Z:re_review",
       "comment_id": "5263522588",
@@ -31117,39 +31150,6 @@
       "status": "skipped",
       "processed_at": "2026-08-12T11:08:08.608Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1133:5265184791:2026-08-12T11:03:59Z:clawsweeper_needs_human",
-      "comment_id": "5265184791",
-      "comment_version_key": "5265184791:2026-08-12T11:03:59Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1133#issuecomment-5265184791",
-      "comment_created_at": "2026-08-12T09:57:46Z",
-      "comment_updated_at": "2026-08-12T11:03:59Z",
-      "comment_body_sha256": "6fe55ac998798bb7f39563028419580adb37348a120bfaf558217a36436e2538",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1133,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds persisted local review state that influences later prompts, so the repository/item, base, ancestry, parser, and completed-review gates remain compatibility-critical. (sha=98280ac678bc997d8a62d396605ae0e2df76ce63)",
-      "expected_head_sha": "98280ac678bc997d8a62d396605ae0e2df76ce63",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T11:09:22.827Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-126-local-review-history",
-        "head_sha": "98280ac678bc997d8a62d396605ae0e2df76ce63",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
