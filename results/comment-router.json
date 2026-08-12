@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:55:14.800Z",
+  "updated_at": "2026-08-12T17:57:50.687Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119886:5202545135:2026-08-12T12:14:00Z:clawsweeper_auto_repair",
-      "comment_id": "5202545135",
-      "comment_version_key": "5202545135:2026-08-12T12:14:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119886#issuecomment-5202545135",
-      "comment_created_at": "2026-08-06T08:58:40Z",
-      "comment_updated_at": "2026-08-12T12:14:00Z",
-      "comment_body_sha256": "4f127d25b022f910f2507c9cea020ef43cda74dce2cb254f801d716cd245cc29",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5e1ce74817063a471f1333c66bcef77f439b3175)",
-      "expected_head_sha": "5e1ce74817063a471f1333c66bcef77f439b3175",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T13:09:17.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-identity-recovery-backoff",
-        "head_sha": "47ecfea1c51807288aed9d47ee35e9578787c44d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120837:5229432286:2026-08-12T13:02:39Z:clawsweeper_needs_human",
       "comment_id": "5229432286",
@@ -31576,6 +31543,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122696:5270570601:2026-08-12T17:57:11Z:re_review",
+      "comment_id": "5270570601",
+      "comment_version_key": "5270570601:2026-08-12T17:57:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122696#issuecomment-5270570601",
+      "comment_created_at": "2026-08-12T17:57:11Z",
+      "comment_updated_at": "2026-08-12T17:57:11Z",
+      "comment_body_sha256": "be8195632928bf3574395d8c55517a82bea2b6f7c6ac7fd83480d62695ba3efd",
+      "source_delivery_id": "3e8f7660-9677-11f1-970d-570bbcfd3835",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122696,
+      "author": "vaiplus",
+      "author_id": 31644949,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review requested for final exact head `78618cca8bfd98c0363da02c83b526dfeb2bc8b2` (supersedes prior rework heads)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T17:57:48.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/230-openclaw-mcp-oauth-control-ui",
+        "head_sha": "78618cca8bfd98c0363da02c83b526dfeb2bc8b2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
