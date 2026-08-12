@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:20:55.559Z",
+  "updated_at": "2026-08-12T20:21:12.988Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120899:5232303000:2026-08-09T15:32:49Z:re_review",
-      "comment_id": "5232303000",
-      "comment_version_key": "5232303000:2026-08-09T15:32:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5232303000",
-      "comment_created_at": "2026-08-09T15:32:49Z",
-      "comment_updated_at": "2026-08-09T15:32:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120899,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T17:04:20.550Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120899:5232400122:2026-08-09T15:53:38Z:re_review",
       "comment_id": "5232400122",
@@ -30712,6 +30685,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:72:5257587247:2026-08-12T20:13:22Z:clawsweeper_needs_human",
+      "comment_id": "5257587247",
+      "comment_version_key": "5257587247:2026-08-12T20:13:22Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/72#issuecomment-5257587247",
+      "comment_created_at": "2026-08-11T19:03:08Z",
+      "comment_updated_at": "2026-08-12T20:13:22Z",
+      "comment_body_sha256": "e4f7af54d2c0ba2b0f0dcbf55fdbf1ce603659be7c26faaa42cca48e2f602616",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 72,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep esbuild inside the release-age admission policy (P2)** - The workspace requires a 2,880-minute release age and explicitly admits only esbuild@0.28.1 early, while allowing esbuild to run during installation....; Review finding: [P2] Keep esbuild inside the release-age admission policy — packages/cli/package.json:31 - [medium] Unadmitted install-time binary update — packages/cli/package.js... (sha=43af53cc0b2dac55c63f92edeb5f36d53e9f143b)",
+      "expected_head_sha": "43af53cc0b2dac55c63f92edeb5f36d53e9f143b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T20:21:12.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-c853e21f60",
+        "head_sha": "43af53cc0b2dac55c63f92edeb5f36d53e9f143b",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
