@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122448",
+  "mode": "autonomous",
+  "run_id": "31566125123",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31566125123",
+  "head_sha": "408c28329c188c15e2d3dbefe98a2393cbca4989",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122448.md",
+  "published_at": "2026-08-12T05:27:21.728Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122448",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122448",
+  "canonical_pr": null,
+  "summary": "#122448 is a current, narrow diagnostics bug on main dd57cfb6c150b8201680b8e8930de0403d71856c. The implementation is blocked only because this worker checkout is read-only and lacks the tsx dependency required to run Vitest; a tested new-PR artifact is ready for the executor.",
+  "actions": [
+    {
+      "target": "#122448",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122448",
+      "candidate_fix": null,
+      "reason": "Repair the classifier owner: fresh, explicitly recorded queued progress with no active-work marker must be non-recovery long-running; missing or stale progress remains recoverable stuck state."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122448",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122448",
+      "candidate_fix": null,
+      "reason": "A writable executor with dependencies installed must apply and validate this narrow artifact before opening the single credited autofix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
