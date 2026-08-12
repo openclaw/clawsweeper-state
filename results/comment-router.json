@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:08:35.619Z",
+  "updated_at": "2026-08-12T17:08:47.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5258754344:2026-08-11T20:55:45Z:re_review",
-      "comment_id": "5258754344",
-      "comment_version_key": "5258754344:2026-08-11T20:55:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5258754344",
-      "comment_created_at": "2026-08-11T20:55:45Z",
-      "comment_updated_at": "2026-08-11T20:55:45Z",
-      "comment_body_sha256": "04dce039fa62a7920706a981db46d385e9b7da10714be6b840b522411c3f0d11",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T12:20:14.142Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5261259779:2026-08-12T02:08:59Z:re_review",
       "comment_id": "5261259779",
@@ -31683,6 +31656,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T17:08:35.619Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122108:5255536694:2026-08-12T17:07:43Z:clawsweeper_needs_human",
+      "comment_id": "5255536694",
+      "comment_version_key": "5255536694:2026-08-12T17:07:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122108#issuecomment-5255536694",
+      "comment_created_at": "2026-08-11T15:54:33Z",
+      "comment_updated_at": "2026-08-12T17:07:43Z",
+      "comment_body_sha256": "74964f46c29e700e89b9c6880c06dd0ae346542ce77e55c7f1532688d0f7ff2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122108,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +26 lines for this bug fix; retain only the resolver-owned failure count and its single builder projection, rather than adding downstream rediscovery or paralle... (sha=39f3e20a229a9ea3e268734dceafbf30886a3d63)",
+      "expected_head_sha": "39f3e20a229a9ea3e268734dceafbf30886a3d63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:08:47.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/slack-media-notice",
+        "head_sha": "39f3e20a229a9ea3e268734dceafbf30886a3d63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
