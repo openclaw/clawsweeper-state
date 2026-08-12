@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:21:47.634Z",
+  "updated_at": "2026-08-12T19:22:01.844Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1141:5269049586:2026-08-12T15:42:17Z:re_review",
-      "comment_id": "5269049586",
-      "comment_version_key": "5269049586:2026-08-12T15:42:17Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1141#issuecomment-5269049586",
-      "comment_created_at": "2026-08-12T15:42:17Z",
-      "comment_updated_at": "2026-08-12T15:42:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "66cd42a0-9664-11f1-9837-f7951bb70655",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1141,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T15:42:57.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/dashboard-strict-slice-1",
-        "head_sha": "d7308fa7034596f5886b594ad9a340194b0ebe2d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:427:5268776429:2026-08-12T15:42:24Z:clawsweeper_needs_human",
       "comment_id": "5268776429",
@@ -30792,6 +30744,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116450:5133290546:2026-08-12T19:21:16Z:clawsweeper_needs_human",
+      "comment_id": "5133290546",
+      "comment_version_key": "5133290546:2026-08-12T19:21:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116450#issuecomment-5133290546",
+      "comment_created_at": "2026-07-30T16:03:47Z",
+      "comment_updated_at": "2026-08-12T19:21:16Z",
+      "comment_body_sha256": "2d1df4442f24c020091f12980618c0ac7e6bfc9e3b2b92d67072d33f50809909",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep paramsJSON a string in the Android model (P1)** - GatewaySession still passes payload.paramsJson into InvokeRequest.paramsJson: String?, so changing this field to JsonElement? makes the Elvis expression inc...; Review finding: [P1] Keep paramsJSON a string in the Android model — apps/android/app/src/main/java/ai/openclaw/app/gateway/GatewayProtocol.kt:72 - [medium] Define local-network a... (sha=55e4ca459bf5b6988e977ab95567e17544748c03)",
+      "expected_head_sha": "55e4ca459bf5b6988e977ab95567e17544748c03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T19:22:01.844Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/rust-runtime-followup",
+        "head_sha": "55e4ca459bf5b6988e977ab95567e17544748c03",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
