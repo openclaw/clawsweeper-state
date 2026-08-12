@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T18:09:40.683Z",
+  "updated_at": "2026-08-12T18:09:54.330Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119178:5267783963:2026-08-12T13:55:54Z:re_review",
-      "comment_id": "5267783963",
-      "comment_version_key": "5267783963:2026-08-12T13:55:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119178#issuecomment-5267783963",
-      "comment_created_at": "2026-08-12T13:55:54Z",
-      "comment_updated_at": "2026-08-12T13:55:54Z",
-      "comment_body_sha256": "0ae7838790ecc721f6d4e1df6dd73473231fa7577529e65e3bb03a452e9e54df",
-      "source_delivery_id": "89bda610-9655-11f1-9bbb-d8cf2c32f2af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119178,
-      "author": "santhiprakash",
-      "author_id": 38608178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:57:07.345Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/taskflow-skills-removed-alias",
-        "head_sha": "5b85ac4f669609e634fd6adfe48252f84a2f2696",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Peekaboo:423:5267789744:2026-08-12T13:56:23Z:re_review",
       "comment_id": "5267789744",
@@ -31487,6 +31439,39 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-update-notices",
         "head_sha": "e00bf14bfb7a6558bcca85854a82753c943e6c9f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:47:5195034776:2026-08-12T17:59:55Z:clawsweeper_needs_human",
+      "comment_id": "5195034776",
+      "comment_version_key": "5195034776:2026-08-12T17:59:55Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/47#issuecomment-5195034776",
+      "comment_created_at": "2026-08-05T17:23:49Z",
+      "comment_updated_at": "2026-08-12T17:59:55Z",
+      "comment_body_sha256": "35f66607594933e8c6fcaf75c5a9a7a1b62a58b295443e2432d4afdf549f7f65",
+      "repo": "openclaw/libterminal",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the updated publishing-job action** - The new pnpm action revision runs before npm trusted publishing in a job with id-token: write; immutable pinning avoids ref drift, but maint...; Review finding: [medium] Review the updated publishing-job action — .github/workflows/release.yml:34 (sha=ce346499b3e705479e979be7256d7f144f0af04f)",
+      "expected_head_sha": "ce346499b3e705479e979be7256d7f144f0af04f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T18:09:54.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-7d7dfe0edd",
+        "head_sha": "ce346499b3e705479e979be7256d7f144f0af04f",
         "cluster_id": null,
         "job_path": null
       }
