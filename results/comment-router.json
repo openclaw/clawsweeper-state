@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:09:53.071Z",
+  "updated_at": "2026-08-12T20:10:13.590Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122624:5267235787:2026-08-12T16:17:44Z:clawsweeper_needs_human",
-      "comment_id": "5267235787",
-      "comment_version_key": "5267235787:2026-08-12T16:17:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122624#issuecomment-5267235787",
-      "comment_created_at": "2026-08-12T13:08:33Z",
-      "comment_updated_at": "2026-08-12T16:17:44Z",
-      "comment_body_sha256": "22d8de03e02b4b5313467f41e0b45a1d36efdf0177900b8884532232bf89f2a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair relies on private @slack/socket-mode 3.0.0 fields and event semantics; independently inspect that pinned source before accepting the coupling. (sha=cff1b49ace68a2d527731c30554ce201a333ea85)",
-      "expected_head_sha": "cff1b49ace68a2d527731c30554ce201a333ea85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:18:36.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fix-slack-socket-mode-duplicate-reconnec-20260812120041-69f7f9",
-        "head_sha": "cff1b49ace68a2d527731c30554ce201a333ea85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2890:5269091556:2026-08-12T16:17:37Z:clawsweeper_needs_human",
       "comment_id": "5269091556",
@@ -30649,6 +30616,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122460:5272242167:2026-08-12T20:09:23Z:re_review",
+      "comment_id": "5272242167",
+      "comment_version_key": "5272242167:2026-08-12T20:09:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122460#issuecomment-5272242167",
+      "comment_created_at": "2026-08-12T20:09:23Z",
+      "comment_updated_at": "2026-08-12T20:09:23Z",
+      "comment_body_sha256": "f6acd1b169b9a1640578f6bf186a9f3a67d9e5dd0ca867a8b4bf0d03ad535f98",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122460,
+      "author": "felirami",
+      "author_id": 6752178,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T20:10:11.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/fix-session-attention-fallback-3545",
+        "head_sha": "703d457020e4a9efc09c1619f4d462ed51b8d634",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
