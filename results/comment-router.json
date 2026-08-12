@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T09:44:58.707Z",
+  "updated_at": "2026-08-12T09:53:15.682Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111541:5017461420:2026-08-12T04:05:31Z:clawsweeper_needs_human",
-      "comment_id": "5017461420",
-      "comment_version_key": "5017461420:2026-08-12T04:05:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5017461420",
-      "comment_created_at": "2026-07-19T21:36:04Z",
-      "comment_updated_at": "2026-08-12T04:05:31Z",
-      "comment_body_sha256": "55616a6a060f09a5b0b58b2eb993aab4992783ecd99df62135f20033011cb66f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the new dependency graph before merge** - The new package imports intl-messageformat and the lockfile adds its FormatJS graph; an authorized reviewer must approve the current he...; Review finding: [medium] Approve the new dependency graph before merge — packages/localization-core/package.json:33 (sha=df4b2f0fa9410327fb5ebf6f1e2ad7ed2ba43faf)",
-      "expected_head_sha": "df4b2f0fa9410327fb5ebf6f1e2ad7ed2ba43faf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T05:08:04.019Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/localization-bundle-foundation",
-        "head_sha": "df4b2f0fa9410327fb5ebf6f1e2ad7ed2ba43faf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117122:5148625249:2026-08-12T02:24:52Z:clawsweeper_needs_human",
       "comment_id": "5148625249",
@@ -31374,6 +31341,54 @@
         "kind": "pull_request",
         "branch": "codex/lifetime-spend-dashboard",
         "head_sha": "2b7a138b1fcd65131cd85fe4e5c7ca73be25c646",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122350:5265130007:2026-08-12T09:52:34Z:re_review",
+      "comment_id": "5265130007",
+      "comment_version_key": "5265130007:2026-08-12T09:52:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122350#issuecomment-5265130007",
+      "comment_created_at": "2026-08-12T09:52:34Z",
+      "comment_updated_at": "2026-08-12T09:52:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "8be0a590-9633-11f1-8baa-30af1f878db1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122350,
+      "author": "joshavant",
+      "author_id": 830519,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T09:53:13.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-model-catalog-worker",
+        "head_sha": "1178a688a3834957435ea67682cdcb56f8382673",
         "cluster_id": null,
         "job_path": null
       },
