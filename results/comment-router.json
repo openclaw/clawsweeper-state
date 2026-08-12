@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:59:04.661Z",
+  "updated_at": "2026-08-12T11:59:07.481Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4919698432:2026-07-08T22:16:03Z:re_review",
-      "comment_id": "4919698432",
-      "comment_version_key": "4919698432:2026-07-08T22:16:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4919698432",
-      "comment_created_at": "2026-07-08T22:16:03Z",
-      "comment_updated_at": "2026-07-08T22:16:03Z",
-      "comment_body_sha256": "d602d5a7af2c4f4248ceff3e9fc478660805da57a19244fe8f0b96d467dd984c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto the latest upstream/main (clean, zero conflicts) to keep the branch current; head is now f73e8de731. no code changes beyond the rebase",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:18:26.747Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4921498179:2026-07-09T04:13:04Z:re_review",
       "comment_id": "4921498179",
@@ -31312,6 +31285,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T11:59:04.661Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120860:5229610023:2026-08-12T11:11:41Z:clawsweeper_needs_human",
+      "comment_id": "5229610023",
+      "comment_version_key": "5229610023:2026-08-12T11:11:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120860#issuecomment-5229610023",
+      "comment_created_at": "2026-08-09T03:40:56Z",
+      "comment_updated_at": "2026-08-12T11:11:41Z",
+      "comment_body_sha256": "fe3bd874fed7fd7b748c5077492353b51ad9017bb055d948be52d0d367ea08ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR’s Codex compatibility claim cannot be independently verified without the required sibling ../codex source checkout; this is reviewer-side evidence debt, not contributor rework. (sha=c336fcce0d1061068b4e51bc5f41bfb22864de49)",
+      "expected_head_sha": "c336fcce0d1061068b4e51bc5f41bfb22864de49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T11:59:07.481Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-10354",
+        "head_sha": "c336fcce0d1061068b4e51bc5f41bfb22864de49",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
