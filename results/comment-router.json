@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T01:17:30.989Z",
+  "updated_at": "2026-08-12T01:19:35.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122176:5256873839:2026-08-11T20:01:17Z:clawsweeper_needs_human",
-      "comment_id": "5256873839",
-      "comment_version_key": "5256873839:2026-08-11T20:01:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122176#issuecomment-5256873839",
-      "comment_created_at": "2026-08-11T17:54:55Z",
-      "comment_updated_at": "2026-08-11T20:01:17Z",
-      "comment_body_sha256": "835b8a9ba66a204d1d4df4d42c1117b2f36fb2409ca2693b5450c5fc67328653",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a one-way shared-state upgrade: v7 permanently discards commitments rows, and downgrading requires recreating an empty v6 table. (sha=918cc84ed4571c8368fab0b40e0fdeee8ef5abe7)",
-      "expected_head_sha": "918cc84ed4571c8368fab0b40e0fdeee8ef5abe7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T20:05:28.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/commitments-schema-v7",
-        "head_sha": "918cc84ed4571c8368fab0b40e0fdeee8ef5abe7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122163:5256910503:2026-08-11T20:01:00Z:clawsweeper_needs_human",
       "comment_id": "5256910503",
@@ -32641,6 +32608,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111692:5019468684:2026-08-12T01:18:45Z:clawsweeper_auto_repair",
+      "comment_id": "5019468684",
+      "comment_version_key": "5019468684:2026-08-12T01:18:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111692#issuecomment-5019468684",
+      "comment_created_at": "2026-07-20T06:40:55Z",
+      "comment_updated_at": "2026-08-12T01:18:45Z",
+      "comment_body_sha256": "14a5ec261fcbbddfc4b777a9bc4961d5bd0a65ee695845aa5eb0195462554fd2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111692,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e5aa196e1e360b35ca049bc1ab3da3c79ac004e4)",
+      "expected_head_sha": "e5aa196e1e360b35ca049bc1ab3da3c79ac004e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T01:19:35.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clickclack-rest-request-deadline",
+        "head_sha": "e5aa196e1e360b35ca049bc1ab3da3c79ac004e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
