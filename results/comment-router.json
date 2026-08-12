@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T05:17:51.833Z",
+  "updated_at": "2026-08-12T05:17:59.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122363:5260904711:2026-08-12T01:18:56Z:clawsweeper_auto_repair",
-      "comment_id": "5260904711",
-      "comment_version_key": "5260904711:2026-08-12T01:18:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122363#issuecomment-5260904711",
-      "comment_created_at": "2026-08-12T01:11:05Z",
-      "comment_updated_at": "2026-08-12T01:18:56Z",
-      "comment_body_sha256": "842bb1c570f22bebd5eae6b744a0cd70240e60811a966ab5c5c0298a0797f67d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122363,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=062dd9b76fba1a66b67800df3ac7d07462bdd266)",
-      "expected_head_sha": "062dd9b76fba1a66b67800df3ac7d07462bdd266",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T01:55:06.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/slack-reaction-parent-events-1",
-        "head_sha": "062dd9b76fba1a66b67800df3ac7d07462bdd266",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122366:5260950698:2026-08-12T01:18:42Z:clawsweeper_needs_human",
       "comment_id": "5260950698",
@@ -30452,6 +30419,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T05:17:51.833Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122408:5262099627:2026-08-12T05:17:10Z:clawsweeper_needs_human",
+      "comment_id": "5262099627",
+      "comment_version_key": "5262099627:2026-08-12T05:17:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122408#issuecomment-5262099627",
+      "comment_created_at": "2026-08-12T03:58:09Z",
+      "comment_updated_at": "2026-08-12T05:17:10Z",
+      "comment_body_sha256": "37310c57143808b8564f71cdc811be9cdcedfdfc813082e61b7a2675285cc43c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122408,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not assume every ACP backend can read host paths (P1)** - acp.backend accepts any registered backend, but its public contract has no host-filesystem placement capability. This unconditional flag therefore tel...; Review finding: [P1] Do not assume every ACP backend can read host paths — src/auto-reply/reply/dispatch-acp.ts:724-726 - [medium] Host path reaches an unplaced ACP backend — src/... (sha=ba1a08794f3856258fee1df169ca3a620380cceb)",
+      "expected_head_sha": "ba1a08794f3856258fee1df169ca3a620380cceb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T05:17:59.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/unsupported-document-self-serve",
+        "head_sha": "ba1a08794f3856258fee1df169ca3a620380cceb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
