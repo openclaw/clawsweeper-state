@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:11:21.095Z",
+  "updated_at": "2026-08-12T12:11:32.583Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5223932622:2026-08-08T01:51:18Z:re_review",
-      "comment_id": "5223932622",
-      "comment_version_key": "5223932622:2026-08-08T01:51:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5223932622",
-      "comment_created_at": "2026-08-08T01:51:18Z",
-      "comment_updated_at": "2026-08-08T01:51:18Z",
-      "comment_body_sha256": "03cda9afd012639ecf1adf590dee7c01346a59555d783962047f0cc86a35dea2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T08:07:18.379Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5224128668:2026-08-08T02:42:20Z:re_review",
       "comment_id": "5224128668",
@@ -30977,6 +30950,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1315:5266621958:2026-08-12T12:10:47Z:clawsweeper_needs_human",
+      "comment_id": "5266621958",
+      "comment_version_key": "5266621958:2026-08-12T12:10:47Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1315#issuecomment-5266621958",
+      "comment_created_at": "2026-08-12T12:10:47Z",
+      "comment_updated_at": "2026-08-12T12:10:47Z",
+      "comment_body_sha256": "c565d523991723228c21cf42f28003fc5625ad028c17b5688bcc831275c28359",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides credible red/green mocked-test and CI evidence, but no after-fix run through a real configured Worker authorization flow; add r... (sha=ad783fc1c98c21cb39848aa909926634a0e9cbb8)",
+      "expected_head_sha": "ad783fc1c98c21cb39848aa909926634a0e9cbb8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:11:32.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gh-team-entry-parse",
+        "head_sha": "ad783fc1c98c21cb39848aa909926634a0e9cbb8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
