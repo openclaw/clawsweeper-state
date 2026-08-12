@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T18:02:00.718Z",
+  "updated_at": "2026-08-12T18:02:05.989Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116511:5267246560:2026-08-12T13:09:27Z:re_review",
-      "comment_id": "5267246560",
-      "comment_version_key": "5267246560:2026-08-12T13:09:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5267246560",
-      "comment_created_at": "2026-08-12T13:09:27Z",
-      "comment_updated_at": "2026-08-12T13:09:27Z",
-      "comment_body_sha256": "24978bfa74e0e42d6f714dedbec051d7758d18c165b3b83cc7758320edcac3c0",
-      "source_delivery_id": "0cd5b170-964f-11f1-8976-77c7b2a522df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116511,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:10:00.288Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/issue-109656-continuation-skip-sqlite-20260730",
-        "head_sha": "5dcd2a287912f5a3218f0aec839ba565a683daa3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122570:5265323706:2026-08-12T13:00:19Z:clawsweeper_needs_human",
       "comment_id": "5265323706",
@@ -31631,6 +31583,39 @@
         "kind": "pull_request",
         "branch": "steipete/backup-archive-restore",
         "head_sha": "deb8e899b5f4264089ae86e78d62cae57575c133",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121845:5248856744:2026-08-12T18:01:09Z:clawsweeper_needs_human",
+      "comment_id": "5248856744",
+      "comment_version_key": "5248856744:2026-08-12T18:01:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121845#issuecomment-5248856744",
+      "comment_created_at": "2026-08-11T04:05:03Z",
+      "comment_updated_at": "2026-08-12T18:01:09Z",
+      "comment_body_sha256": "babbb73465f9a95e088e54c0703089df3dddb2b49bae92c288432e14820e5dc7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally removes published Plugin SDK imports; existing external plugins that have not migrated will fail until they use the documented replacements. (sha=9bd80bc0c9f06bd31824fd940a6a6e3cd0be395f)",
+      "expected_head_sha": "9bd80bc0c9f06bd31824fd940a6a6e3cd0be395f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T18:02:05.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compat-ledger-retire-aug15",
+        "head_sha": "9bd80bc0c9f06bd31824fd940a6a6e3cd0be395f",
         "cluster_id": null,
         "job_path": null
       }
