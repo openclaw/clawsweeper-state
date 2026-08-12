@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T04:56:01.755Z",
+  "updated_at": "2026-08-12T04:56:37.737Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122139:5260286049:2026-08-12T00:00:54Z:re_review",
-      "comment_id": "5260286049",
-      "comment_version_key": "5260286049:2026-08-12T00:00:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122139#issuecomment-5260286049",
-      "comment_created_at": "2026-08-12T00:00:54Z",
-      "comment_updated_at": "2026-08-12T00:00:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "e450a7a0-95e0-11f1-9ad3-02b049bb67cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122139,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T00:01:34.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/122090-server-kernel-timeout",
-        "head_sha": "da27d786d01df4af97595abb5da71d4d948d5f7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122309:5260287714:2026-08-12T00:01:09Z:re_review",
       "comment_id": "5260287714",
@@ -31414,6 +31366,39 @@
         "kind": "pull_request",
         "branch": "fix/stop-cancels-experience-review",
         "head_sha": "10741e5fad70d466f75c7825180081767f6e7e77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122432:5262454365:2026-08-12T04:55:56Z:clawsweeper_needs_human",
+      "comment_id": "5262454365",
+      "comment_version_key": "5262454365:2026-08-12T04:55:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122432#issuecomment-5262454365",
+      "comment_created_at": "2026-08-12T04:55:56Z",
+      "comment_updated_at": "2026-08-12T04:55:56Z",
+      "comment_body_sha256": "2b253893c82b6abd9519576fc2db7f2a4e5f42134fd4b64ad21189434e87d061",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; the local three-way merge is clean, but landing should still use exact merged-head CI. (sha=799e85c2068476edec03f877a13c676873000fbd)",
+      "expected_head_sha": "799e85c2068476edec03f877a13c676873000fbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T04:56:37.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/wizardly-aryabhata-5b74c5",
+        "head_sha": "799e85c2068476edec03f877a13c676873000fbd",
         "cluster_id": null,
         "job_path": null
       }
