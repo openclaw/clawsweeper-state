@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122473"
-mode: "plan"
-run_id: "31571595823"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31571595823"
+mode: "autonomous"
+run_id: "31573132548"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31573132548"
 head_sha: "a1795973a9e6bb00b73cd6adc21a4ea02ca78ced"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-12T06:57:23.190Z"
+result_status: "blocked"
+published_at: "2026-08-12T07:27:03.282Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122473"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122473"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31571595823](https://github.com/openclaw/clawsweeper/actions/runs/31571595823)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31573132548](https://github.com/openclaw/clawsweeper/actions/runs/31573132548)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/122473
 
 ## Summary
 
-Plan a narrow canonical fix for rotated terminal Responses message IDs. Keep the distinct tool-call work separate and quarantine the flagged security reference.
+Blocked before implementation: the required direct OpenAI SDK v6.49.0 contract inspection is impossible in this read-only checkout (no node_modules or SDK cache; network unavailable). Current main nevertheless shows the reported identity-only terminal-recovery defect.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Plan a narrow canonical fix for rotated terminal Responses message IDs. Keep the
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #122473 |  |  |
 
 ## Apply Actions
 
@@ -66,13 +66,13 @@ Plan a narrow canonical fix for rotated terminal Responses message IDs. Keep the
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #108460 | keep_related | planned | related | Same transport area, distinct root cause. |
-| #108461 | keep_related | planned | related | Do not alter the separate contributor tool-call repair from this issue plan. |
-| #108511 | keep_closed | skipped | fixed_by_candidate | Historical context only. |
-| #108630 | keep_closed | skipped | related | Historical context only. |
-| #116910 | route_security | planned | security_sensitive | Quarantine this linked reference; it does not block the ordinary bug-fix plan. |
-| #122473 | fix_needed | planned | canonical | Canonical remaining terminal-message reconciliation defect. |
-| cluster:issue-openclaw-openclaw-122473 | build_fix_artifact | planned | canonical | One narrow new fix PR is appropriate. |
+| #108460 | keep_related | planned | related | Keep open independently. |
+| #108461 | keep_related | planned | related | Distinct tool-call defect remains separate. |
+| #108511 | keep_closed | skipped | fixed_by_candidate | Closed historical context; no close action is valid. |
+| #108630 | keep_closed | skipped | related | Closed historical context; no close action is valid. |
+| #116910 | route_security | planned | security_sensitive | Quarantine this linked item to central OpenClaw security handling; it does not block classification of #122473. |
+| #122473 | fix_needed | blocked | canonical | The job requires direct SDK v6.49.0 proof that output_index corresponds to terminal Response.output ordering; that dependency contract cannot be inspected here. |
+| cluster:issue-openclaw-openclaw-122473 | build_fix_artifact | blocked | canonical | Dependency contract and writable validation environment are unavailable. |
 
 ## Needs Human
 
