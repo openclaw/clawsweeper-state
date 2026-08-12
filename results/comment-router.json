@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T14:57:45.184Z",
+  "updated_at": "2026-08-12T14:59:37.535Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121459:5236858994:2026-08-12T10:11:12Z:clawsweeper_needs_human",
-      "comment_id": "5236858994",
-      "comment_version_key": "5236858994:2026-08-12T10:11:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121459#issuecomment-5236858994",
-      "comment_created_at": "2026-08-10T06:52:52Z",
-      "comment_updated_at": "2026-08-12T10:11:12Z",
-      "comment_body_sha256": "c5707952dd076a28bb0c471668e1f7354f14872cde6ac7566b42070baf0a69a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds an additive public Gateway contract that transports a rotated operator credential; merge safety depends on retaining the same-device identity check and terminal-result behav... (sha=861e558f6c887f672a4d2bcfd82011086feceb0b)",
-      "expected_head_sha": "861e558f6c887f672a4d2bcfd82011086feceb0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T10:15:47.446Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/scope-upgrade-ux",
-        "head_sha": "861e558f6c887f672a4d2bcfd82011086feceb0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121764:5247237975:2026-08-10T23:35:47Z:re_review",
       "comment_id": "5247237975",
@@ -31176,6 +31143,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T14:57:45.184Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122672:5268540344:2026-08-12T14:58:47Z:clawsweeper_needs_human",
+      "comment_id": "5268540344",
+      "comment_version_key": "5268540344:2026-08-12T14:58:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122672#issuecomment-5268540344",
+      "comment_created_at": "2026-08-12T14:58:47Z",
+      "comment_updated_at": "2026-08-12T14:58:47Z",
+      "comment_body_sha256": "6c5ca1dfaadfaa6b54f2277c343337c4ce767f16e4665b35a10a8edc92ff03bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122672,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes an ambiguous send into an automatic retry; if imsg does not reserve the exact field pair for a pre-dispatch failure, a recipient could receive a duplicate message. (sha=bb81711700f77a0e4c6ffed358f5f78eb315e5a4)",
+      "expected_head_sha": "bb81711700f77a0e4c6ffed358f5f78eb315e5a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T14:59:37.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-retry-safe-nondispatch",
+        "head_sha": "bb81711700f77a0e4c6ffed358f5f78eb315e5a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
