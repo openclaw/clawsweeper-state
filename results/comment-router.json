@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T10:54:17.974Z",
+  "updated_at": "2026-08-12T10:57:19.054Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122176:5256873839:2026-08-12T05:12:42Z:clawsweeper_needs_human",
-      "comment_id": "5256873839",
-      "comment_version_key": "5256873839:2026-08-12T05:12:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122176#issuecomment-5256873839",
-      "comment_created_at": "2026-08-11T17:54:55Z",
-      "comment_updated_at": "2026-08-12T05:12:42Z",
-      "comment_body_sha256": "164eae4571fc3957a422db4ac902939f5b064c468e2a6933e757bf8634ac8767",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Schema v7 irreversibly deletes persisted commitments rows; downgrading recreates only an empty table. (sha=96863ad01f1017a72b70bfe2f805bcc8f7ca09a2)",
-      "expected_head_sha": "96863ad01f1017a72b70bfe2f805bcc8f7ca09a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T06:02:30.164Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/commitments-schema-v7",
-        "head_sha": "96863ad01f1017a72b70bfe2f805bcc8f7ca09a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122446:5262648715:2026-08-12T05:59:48Z:clawsweeper_auto_repair",
       "comment_id": "5262648715",
@@ -31781,6 +31748,54 @@
         "kind": "pull_request",
         "branch": "codex/lifetime-spend-dashboard",
         "head_sha": "0b4e5d0f958e3e6603260d03238a907350f8a38a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122574:5265772436:2026-08-12T10:56:40Z:re_review",
+      "comment_id": "5265772436",
+      "comment_version_key": "5265772436:2026-08-12T10:56:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122574#issuecomment-5265772436",
+      "comment_created_at": "2026-08-12T10:56:40Z",
+      "comment_updated_at": "2026-08-12T10:56:40Z",
+      "comment_body_sha256": "e1009c6b04d810ae0b566480dd13649457e25d944cb92b905a3efa329ef39d5a",
+      "source_delivery_id": "7fd9f270-963c-11f1-997b-c0ff24099c15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122574,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T10:57:17.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/update-candidate-plugin-plan",
+        "head_sha": "caa3ace8ecd43426676c339a5515218609b6233d",
         "cluster_id": null,
         "job_path": null
       },
