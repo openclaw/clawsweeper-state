@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T07:07:07.668Z",
+  "updated_at": "2026-08-12T07:07:40.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5261315029:2026-08-12T02:17:52Z:re_review",
-      "comment_id": "5261315029",
-      "comment_version_key": "5261315029:2026-08-12T02:17:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5261315029",
-      "comment_created_at": "2026-08-12T02:17:24Z",
-      "comment_updated_at": "2026-08-12T02:17:52Z",
-      "comment_body_sha256": "92690cd942f6e460ade8d549361637172207b299b4e7bef4efd94493961d23d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T02:17:59.138Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/localization-bundle-foundation",
-        "head_sha": "8aaf483c8760168bf7a37511b0e7b4bb656a22b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:267:5242916330:2026-08-12T02:17:19Z:clawsweeper_needs_human",
       "comment_id": "5242916330",
@@ -31119,6 +31072,39 @@
         "kind": "pull_request",
         "branch": "fix/mentions-decorated-identity-names",
         "head_sha": "f9ef3dfeaa391ddd6f1e03118be9fea956a836c7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1099:5242454730:2026-08-12T07:00:25Z:clawsweeper_needs_human",
+      "comment_id": "5242454730",
+      "comment_version_key": "5242454730:2026-08-12T07:00:25Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1099#issuecomment-5242454730",
+      "comment_created_at": "2026-08-10T15:36:23Z",
+      "comment_updated_at": "2026-08-12T07:00:25Z",
+      "comment_body_sha256": "4d0a62ce922c7a856f5e35a2d6acaa3bba00ee51d51ad0986535df5bdb215f83",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1099,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes the temporary-directory environment for every named test target, so an unrecognized test dependency on host-level temporary storage could surface only after merge; the fo... (sha=a602f2ba67f9db0b25c604324cacd307a1075ed8)",
+      "expected_head_sha": "a602f2ba67f9db0b25c604324cacd307a1075ed8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T07:07:40.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/disk-full-incident",
+        "head_sha": "a602f2ba67f9db0b25c604324cacd307a1075ed8",
         "cluster_id": null,
         "job_path": null
       }
