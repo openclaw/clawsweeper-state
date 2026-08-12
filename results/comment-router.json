@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:09:41.154Z",
+  "updated_at": "2026-08-12T02:12:05.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-11T21:02:46Z:clawsweeper_needs_human",
-      "comment_id": "5088305683",
-      "comment_version_key": "5088305683:2026-08-11T21:02:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
-      "comment_created_at": "2026-07-27T07:06:46Z",
-      "comment_updated_at": "2026-08-11T21:02:46Z",
-      "comment_body_sha256": "897ebf3bcbab9bec3de5823bfed259b29b9a5b6512db5a2646176a02a8571e3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fail closed when task caller identity is absent (P1)** - The new fallback returns true whenever callerAgentId is missing. Deferred context maintenance still reaches this boundary with only sessionKey, so an expl...; Review finding: [P1] Fail closed when task caller identity is absent — src/tasks/task-owner-access.ts:29-31 - [medium] Bare owner keys bypass agent authorization — src/tasks/task-... (sha=c9965e25c3f05fc9cabb2a7cdbd31fbdbb071744)",
-      "expected_head_sha": "c9965e25c3f05fc9cabb2a7cdbd31fbdbb071744",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T21:10:00.924Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/no-stored-default",
-        "head_sha": "c9965e25c3f05fc9cabb2a7cdbd31fbdbb071744",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2874:5258888572:2026-08-11T21:09:33Z:clawsweeper_needs_human",
       "comment_id": "5258888572",
@@ -32073,6 +32040,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122346:5260298598:2026-08-12T02:11:22Z:clawsweeper_needs_human",
+      "comment_id": "5260298598",
+      "comment_version_key": "5260298598:2026-08-12T02:11:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122346#issuecomment-5260298598",
+      "comment_created_at": "2026-08-12T00:02:51Z",
+      "comment_updated_at": "2026-08-12T02:11:22Z",
+      "comment_body_sha256": "d9a32d3083541afc9d3ce790e60812a37a5aa29adfbb2e1b48950449bed01d7c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122346,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Forward workspace scope to group-policy resolution (P1)** - The new candidate helper accepts a team ID, but this resolver still passes only groupId. Core supplies groupSpace to both callbacks, so Enterprise team...; Review finding: [P1] Forward workspace scope to group-policy resolution — extensions/slack/src/group-policy.ts:89 - [P1] Keep the Enterprise setup example valid — docs/channels/sl... (sha=cfa13f4591875d1a792424b50c0991ef9861b343)",
+      "expected_head_sha": "cfa13f4591875d1a792424b50c0991ef9861b343",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:12:05.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-team-scoped-policy-8",
+        "head_sha": "cfa13f4591875d1a792424b50c0991ef9861b343",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
