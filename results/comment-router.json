@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:05:48.390Z",
+  "updated_at": "2026-08-12T13:06:07.350Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122559:5264683851:2026-08-12T09:08:29Z:clawsweeper_needs_human",
-      "comment_id": "5264683851",
-      "comment_version_key": "5264683851:2026-08-12T09:08:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122559#issuecomment-5264683851",
-      "comment_created_at": "2026-08-12T09:08:29Z",
-      "comment_updated_at": "2026-08-12T09:08:29Z",
-      "comment_body_sha256": "727182e3efaf8f5ecbce75789b3350974cd96bb2f8c4f8fe8062cd7c009623db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122559,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Testbox and hosted CI are still pending, so the draft lacks landing validation despite the source review. (sha=e90b3183909e57ca8d62771e242bb7d76dd91eba)",
-      "expected_head_sha": "e90b3183909e57ca8d62771e242bb7d76dd91eba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:13:01.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/otel-event-attribute-projection",
-        "head_sha": "e90b3183909e57ca8d62771e242bb7d76dd91eba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:68986:4339483754:2026-08-12T09:02:58Z:autoclose",
       "comment_id": "4339483754",
@@ -30658,6 +30625,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122519:5263961515:2026-08-12T13:05:18Z:clawsweeper_needs_human",
+      "comment_id": "5263961515",
+      "comment_version_key": "5263961515:2026-08-12T13:05:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122519#issuecomment-5263961515",
+      "comment_created_at": "2026-08-12T07:58:51Z",
+      "comment_updated_at": "2026-08-12T13:05:18Z",
+      "comment_body_sha256": "40f36ba5e8954b20ac56e95b5169817767925d35e54ce09d355cc6d642c0d729",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122519,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted session replay ownership; although request-identity validation remains in place, the Codex app-server contract used by the composed live harness could not be in... (sha=6d05d79b37f0f48c3137530105a027c981cfb755)",
+      "expected_head_sha": "6d05d79b37f0f48c3137530105a027c981cfb755",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T13:06:07.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stress/cloud-session-switching",
+        "head_sha": "6d05d79b37f0f48c3137530105a027c981cfb755",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
