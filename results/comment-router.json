@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T06:10:49.877Z",
+  "updated_at": "2026-08-12T06:10:55.850Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5227611515:2026-08-08T18:55:29Z:re_review",
-      "comment_id": "5227611515",
-      "comment_version_key": "5227611515:2026-08-08T18:55:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5227611515",
-      "comment_created_at": "2026-08-08T18:55:29Z",
-      "comment_updated_at": "2026-08-08T18:55:29Z",
-      "comment_body_sha256": "ce60bbd9be95fcb4d02c873c7929b46ecd3c38db03820058ee2310ffc6bebd5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T02:02:16.910Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5227679470:2026-08-08T19:12:36Z:re_review",
       "comment_id": "5227679470",
@@ -30683,6 +30656,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122452:5263033058:2026-08-12T06:10:19Z:clawsweeper_needs_human",
+      "comment_id": "5263033058",
+      "comment_version_key": "5263033058:2026-08-12T06:10:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122452#issuecomment-5263033058",
+      "comment_created_at": "2026-08-12T06:10:19Z",
+      "comment_updated_at": "2026-08-12T06:10:19Z",
+      "comment_body_sha256": "c77d5abbd688784080f9fe17c8903d16ad3d1eb82ee6407d0ca3f275e238a6a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122452,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase or merge-result review and required checks must be evaluated on the exact landing head. (sha=f597ba5ae82314d087a740655663eda27a673c0b)",
+      "expected_head_sha": "f597ba5ae82314d087a740655663eda27a673c0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T06:10:55.850Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/fix-discord-steer-injection",
+        "head_sha": "f597ba5ae82314d087a740655663eda27a673c0b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
