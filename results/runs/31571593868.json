@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122476",
+  "mode": "autonomous",
+  "run_id": "31571593868",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31571593868",
+  "head_sha": "a1795973a9e6bb00b73cd6adc21a4ea02ca78ced",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122476.md",
+  "published_at": "2026-08-12T07:02:03.858Z",
+  "canonical": "#122476",
+  "canonical_issue": "#122476",
+  "canonical_pr": null,
+  "summary": "Issue #122476 remains reproducible on main: the shared prefix classifier forwards uppercase single-character `N`, allowing delta-rendering channels to publish it before the completed `NO_REPLY` is suppressed. A narrow shared-owner repair and regression plan is ready, but this checkout is read-only and validation cannot start because `tsx` is unavailable (`node_modules` is absent).",
+  "actions": [
+    {
+      "target": "#122476",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "A fix PR is allowed, but code and regression edits cannot be created or validated in the supplied read-only checkout."
+    },
+    {
+      "target": "#50365",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is permitted."
+    },
+    {
+      "target": "#51739",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Already closed; retained only as historical evidence."
+    },
+    {
+      "target": "#62845",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Already closed; not a viable candidate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122476",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Ready for execution in a writable checkout with dependencies installed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with dependencies installed (or allow the executor to install them) so the planned code and regression changes can be implemented and validated."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
