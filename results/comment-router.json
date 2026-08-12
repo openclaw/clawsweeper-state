@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T07:18:30.122Z",
+  "updated_at": "2026-08-12T07:19:19.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5230535505:2026-08-09T08:15:29Z:re_review",
-      "comment_id": "5230535505",
-      "comment_version_key": "5230535505:2026-08-09T08:15:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5230535505",
-      "comment_created_at": "2026-08-09T08:15:29Z",
-      "comment_updated_at": "2026-08-09T08:15:29Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T03:05:10.164Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5231885139:2026-08-09T13:56:53Z:re_review",
       "comment_id": "5231885139",
@@ -30917,6 +30890,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122264:5259815331:2026-08-12T07:18:42Z:clawsweeper_needs_human",
+      "comment_id": "5259815331",
+      "comment_version_key": "5259815331:2026-08-12T07:18:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122264#issuecomment-5259815331",
+      "comment_created_at": "2026-08-11T22:57:12Z",
+      "comment_updated_at": "2026-08-12T07:18:42Z",
+      "comment_body_sha256": "ef791d9ac041c530f9e46143ecc261cc143de844726fcd8d7ea725d383b03db1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122264,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR has focused unit tests and lint output, but no redacted after-fix run with a real ACP harness or Control UI/Gateway trace. After adding... (sha=0e853045969b38c5b729b42a3cb669bf9436643b)",
+      "expected_head_sha": "0e853045969b38c5b729b42a3cb669bf9436643b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T07:19:19.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/121993-acp-session-model-projection",
+        "head_sha": "0e853045969b38c5b729b42a3cb669bf9436643b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
