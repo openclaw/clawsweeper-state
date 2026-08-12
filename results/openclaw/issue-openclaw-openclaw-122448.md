@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122448"
 mode: "autonomous"
-run_id: "31566125123"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31566125123"
+run_id: "31567960057"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31567960057"
 head_sha: "408c28329c188c15e2d3dbefe98a2393cbca4989"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-12T05:27:21.728Z"
+published_at: "2026-08-12T06:04:22.756Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122448"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122448"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31566125123](https://github.com/openclaw/clawsweeper/actions/runs/31566125123)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31567960057](https://github.com/openclaw/clawsweeper/actions/runs/31567960057)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/122448
 
 ## Summary
 
-#122448 is a current, narrow diagnostics bug on main dd57cfb6c150b8201680b8e8930de0403d71856c. The implementation is blocked only because this worker checkout is read-only and lacks the tsx dependency required to run Vitest; a tested new-PR artifact is ready for the executor.
+#122448 remains canonical and the defect is present in the local shallow checkout, but implementation is blocked: preflight’s required main SHA 127facd39f251844ee46dcf5024a37cb73b329a2 is unavailable locally, and Vitest cannot start because tsx is absent. Rehydrate the exact preflight main in a writable checkout before applying the narrow fix artifact.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/122448
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122448 | fix_needed | planned | canonical | Repair the classifier owner: fresh, explicitly recorded queued progress with no active-work marker must be non-recovery long-running; missing or stale progress remains recoverable stuck state. |
-| cluster:issue-openclaw-openclaw-122448 | build_fix_artifact | blocked | canonical | A writable executor with dependencies installed must apply and validate this narrow artifact before opening the single credited autofix PR. |
+| #122448 | fix_needed | planned | canonical | The canonical issue has a clear owner-boundary repair, but branch mutation must wait for an exact-main writable executor. |
+| cluster:issue-openclaw-openclaw-122448 | build_fix_artifact | blocked | canonical | Rehydrate the artifact main SHA in a writable checkout with dependencies installed, then apply and validate the artifact before opening the permitted PR. |
 
 ## Needs Human
 
