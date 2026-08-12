@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119718"
 mode: "autonomous"
-run_id: "31638370642"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31638370642"
+run_id: "31635376117"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31635376117"
 head_sha: "3d09c5f72ab26d55c1fe57a624dfc52d6d82ee8d"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-12T20:45:40.009Z"
-canonical: "https://github.com/openclaw/openclaw/pull/119718"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/89430"
-canonical_pr: "https://github.com/openclaw/openclaw/pull/119718"
-actions_total: 4
+published_at: "2026-08-12T20:07:06.754Z"
+canonical: "#119718"
+canonical_issue: null
+canonical_pr: "#119718"
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31638370642](https://github.com/openclaw/clawsweeper/actions/runs/31638370642)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31635376117](https://github.com/openclaw/clawsweeper/actions/runs/31635376117)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/pull/119718
+Canonical: #119718
 
 ## Summary
 
-Keep #119718 as the canonical repair path. Its hydrated state is open but reports merge conflicts; repair the writable same-repo branch, preserve #92518 attribution, revalidate, and leave it open for maintainer merge.
+Make PR #119718 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Keep #119718 as the canonical repair path. Its hydrated state is open but report
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/89430 | keep_related | planned | related | The issue remains the user-facing report while #119718 owns the active implementation and validation. |
-| https://github.com/openclaw/openclaw/pull/92518 | keep_closed | skipped | superseded | Historical source PR only; preserve its attribution through the canonical repair. |
-| https://github.com/openclaw/openclaw/pull/119718 | fix_needed | planned | canonical | Repair the existing canonical branch; merge is disabled by this job. |
-| https://github.com/openclaw/openclaw/pull/119718 | build_fix_artifact | planned | canonical | Produce a narrow, credited rebase-and-review plan for the existing writable branch. |
+| #119718 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
