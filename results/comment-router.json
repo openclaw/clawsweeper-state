@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:18:03.072Z",
+  "updated_at": "2026-08-12T02:18:05.958Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122189:5259189192:2026-08-11T21:42:28Z:re_review",
-      "comment_id": "5259189192",
-      "comment_version_key": "5259189192:2026-08-11T21:42:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122189#issuecomment-5259189192",
-      "comment_created_at": "2026-08-11T21:42:28Z",
-      "comment_updated_at": "2026-08-11T21:42:28Z",
-      "comment_body_sha256": "b76e3957d9ccb7be0d17404e8f8de79bdbecd947217a56147e7b6cd2174fbf61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122189,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T21:53:30.570Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-model-switch-wire-evidence",
-        "head_sha": "c330a819958ce03e9dda29341428fbcc63f1f521",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5259197358:2026-08-11T21:43:40Z:re_review",
       "comment_id": "5259197358",
@@ -31930,6 +31883,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/github-actions-18415f853a",
         "head_sha": "bec328852c3cc2693a6a3f7a94bb8612758cbbdc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:256:5168896416:2026-08-12T02:17:19Z:clawsweeper_needs_human",
+      "comment_id": "5168896416",
+      "comment_version_key": "5168896416:2026-08-12T02:17:19Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/256#issuecomment-5168896416",
+      "comment_created_at": "2026-08-03T16:14:34Z",
+      "comment_updated_at": "2026-08-12T02:17:19Z",
+      "comment_body_sha256": "1660ad152f71da4d51085ef27c613e2c64d2990caeec01e4d6b6d8ad76715ba6",
+      "repo": "openclaw/crabline",
+      "issue_number": 256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - rc14 changes the black-box client that defines the WhatsApp WebSocket compatibility baseline and refreshes four resolved transitive packages; CI alone does not establish the intended... (sha=7696217cfbfad9462bb878fb0156c88d19185ccb)",
+      "expected_head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:18:05.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
+        "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
         "cluster_id": null,
         "job_path": null
       }
