@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:59:39.408Z",
+  "updated_at": "2026-08-12T12:59:46.709Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113013:5264462677:2026-08-12T08:46:19Z:re_review",
-      "comment_id": "5264462677",
-      "comment_version_key": "5264462677:2026-08-12T08:46:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113013#issuecomment-5264462677",
-      "comment_created_at": "2026-08-12T08:46:19Z",
-      "comment_updated_at": "2026-08-12T08:46:19Z",
-      "comment_body_sha256": "cc987659879054a50a8070c596b199ce6b5cc4543fadbaf7be7d83511a97a8e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113013,
-      "author": "liuhaiyang14",
-      "author_id": 69886048,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T09:05:00.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/minimax-sensitive-failover",
-        "head_sha": "bde250039773a84a748bd91464bfc57a7d017888",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122518:5264102976:2026-08-12T09:02:59Z:clawsweeper_needs_human",
       "comment_id": "5264102976",
@@ -31028,6 +30981,39 @@
         "kind": "pull_request",
         "branch": "claude/no-stored-default",
         "head_sha": "3fa3e5539dffe71fa50de4d884247c5c6b2f6401",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122051:5254384411:2026-08-12T12:57:52Z:clawsweeper_needs_human",
+      "comment_id": "5254384411",
+      "comment_version_key": "5254384411:2026-08-12T12:57:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122051#issuecomment-5254384411",
+      "comment_created_at": "2026-08-11T14:17:24Z",
+      "comment_updated_at": "2026-08-12T12:57:52Z",
+      "comment_body_sha256": "3c65c057a2f470978383363c3a13e53d1111ffedb0b41be611b08e15298f38ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject deleted archives before protected recall (P1)** - allowAnchorTranscript only preserves the anchor exclusion for .deleted.* hits. A deleted archive from another same-agent private session has different key...; Review finding: [P1] Reject deleted archives before protected recall — extensions/memory-core/src/session-search-visibility.ts:348 - [high] Deleted archive remains eligible for re... (sha=97f0a2a8002e72ad14cfff442697128e1b01e3fc)",
+      "expected_head_sha": "97f0a2a8002e72ad14cfff442697128e1b01e3fc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:59:46.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-reset-cross-conversation-recall",
+        "head_sha": "97f0a2a8002e72ad14cfff442697128e1b01e3fc",
         "cluster_id": null,
         "job_path": null
       }
