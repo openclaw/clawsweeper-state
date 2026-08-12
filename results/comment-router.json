@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:05:22.134Z",
+  "updated_at": "2026-08-12T13:05:48.390Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122541:5264132331:2026-08-12T09:08:42Z:clawsweeper_needs_human",
-      "comment_id": "5264132331",
-      "comment_version_key": "5264132331:2026-08-12T09:08:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122541#issuecomment-5264132331",
-      "comment_created_at": "2026-08-12T08:14:37Z",
-      "comment_updated_at": "2026-08-12T09:08:42Z",
-      "comment_body_sha256": "1fe7be44f65fb82f6cccfdcda69aaf80a5c32df53e12e67f10cb20351e282e7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122541,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Persist LID ownership only after admission (P1)** - This resolves and writes every unseen direct LID before checkInboundAccessControl runs. Rejected or disabled-policy traffic can therefore fill the 50,000-entry...; Review finding: [P1] Persist LID ownership only after admission — extensions/whatsapp/src/inbound/message-normalization.ts:91-96 - [P1] Clear LID ownership when WhatsApp credentia... (sha=3f4cb432047df67cf8e3307d8931d9cfc85b63d6)",
-      "expected_head_sha": "3f4cb432047df67cf8e3307d8931d9cfc85b63d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:13:01.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-119475-20260811t200403z-d1b38feb",
-        "head_sha": "3f4cb432047df67cf8e3307d8931d9cfc85b63d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122559:5264683851:2026-08-12T09:08:29Z:clawsweeper_needs_human",
       "comment_id": "5264683851",
@@ -30643,6 +30610,54 @@
       "status": "skipped",
       "processed_at": "2026-08-12T13:05:22.134Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113013:5267197760:2026-08-12T13:05:07Z:re_review",
+      "comment_id": "5267197760",
+      "comment_version_key": "5267197760:2026-08-12T13:05:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113013#issuecomment-5267197760",
+      "comment_created_at": "2026-08-12T13:05:07Z",
+      "comment_updated_at": "2026-08-12T13:05:07Z",
+      "comment_body_sha256": "bfac9b6a45f24f08d0ccadfe9a6b236a20cd30c303695255b3dfe94840c20f1e",
+      "source_delivery_id": "71bc0900-964e-11f1-849e-5b6f48d193c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113013,
+      "author": "liuhaiyang14",
+      "author_id": 69886048,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T13:05:46.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/minimax-sensitive-failover",
+        "head_sha": "80d358f19b89679be9570551aef81738c2ed1f74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
