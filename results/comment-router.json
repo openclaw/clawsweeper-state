@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:25:51.857Z",
+  "updated_at": "2026-08-12T19:25:54.594Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3459:5269356531:2026-08-12T16:09:51Z:clawsweeper_needs_human",
-      "comment_id": "5269356531",
-      "comment_version_key": "5269356531:2026-08-12T16:09:51Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3459#issuecomment-5269356531",
-      "comment_created_at": "2026-08-12T16:09:51Z",
-      "comment_updated_at": "2026-08-12T16:09:51Z",
-      "comment_body_sha256": "def5714b138c49033b414845e1437c3f2500a85493dd6a04e76ff29aece12455",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restore the Carapace lock integrity record (P2)** - The existing lock entry records a sha512 value for the unchanged git-hosted Carapace source, but this PR removes only that value. Regenerate the lock with the...; Review finding: [P2] Restore the Carapace lock integrity record — bun.lock:452 - [medium] Git dependency integrity record removed — bun.lock:452 (sha=7d2e664fdbd5d9a78b40b609da3f8231765f4111)",
-      "expected_head_sha": "7d2e664fdbd5d9a78b40b609da3f8231765f4111",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:10:46.525Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-be664e6b80",
-        "head_sha": "7d2e664fdbd5d9a78b40b609da3f8231765f4111",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3454:5255702687:2026-08-12T16:10:28Z:clawsweeper_needs_human",
       "comment_id": "5255702687",
@@ -30005,6 +29972,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122724:5271772147:2026-08-12T19:25:13Z:re_review",
+      "comment_id": "5271772147",
+      "comment_version_key": "5271772147:2026-08-12T19:25:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122724#issuecomment-5271772147",
+      "comment_created_at": "2026-08-12T19:25:13Z",
+      "comment_updated_at": "2026-08-12T19:25:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122724,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T19:25:52.674Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-desktop-stream",
+        "head_sha": "56f51e2770785f04339c1faace768bea0c80d61d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
