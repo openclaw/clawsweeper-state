@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T23:17:56.274Z",
+  "updated_at": "2026-08-12T23:18:34.747Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5241986382:2026-08-10T14:56:14Z:re_review",
-      "comment_id": "5241986382",
-      "comment_version_key": "5241986382:2026-08-10T14:56:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5241986382",
-      "comment_created_at": "2026-08-10T14:56:14Z",
-      "comment_updated_at": "2026-08-10T14:56:14Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T18:17:27.759Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5242112622:2026-08-10T15:06:40Z:re_review",
       "comment_id": "5242112622",
@@ -31112,6 +31085,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122702:5269346146:2026-08-12T23:17:45Z:clawsweeper_needs_human",
+      "comment_id": "5269346146",
+      "comment_version_key": "5269346146:2026-08-12T23:17:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122702#issuecomment-5269346146",
+      "comment_created_at": "2026-08-12T16:08:49Z",
+      "comment_updated_at": "2026-08-12T23:17:45Z",
+      "comment_body_sha256": "aaba6e75aa4b6a01554fe320ac38994dbdfa075f6f7ef9a93757b3695d8c1b41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122702,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds a permanent public CLI option; no maintainer discussion in the supplied context confirms that display labels should be editable through the supported CLI. (sha=1b95cedb1b4f8163b249c828498224700b38ee80)",
+      "expected_head_sha": "1b95cedb1b4f8163b249c828498224700b38ee80",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T23:18:34.747Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/cron-edit-display-name",
+        "head_sha": "1b95cedb1b4f8163b249c828498224700b38ee80",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
