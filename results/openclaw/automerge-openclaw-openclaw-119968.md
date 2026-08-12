@@ -2,15 +2,15 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119968"
 mode: "autonomous"
-run_id: "31640886550"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31640886550"
+run_id: "31643205081"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31643205081"
 head_sha: "3d09c5f72ab26d55c1fe57a624dfc52d6d82ee8d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-12T21:18:52.301Z"
-canonical: "#119968"
-canonical_issue: null
-canonical_pr: "#119968"
+published_at: "2026-08-12T21:41:32.037Z"
+canonical: "#120046"
+canonical_issue: "#119551"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/120046"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31640886550](https://github.com/openclaw/clawsweeper/actions/runs/31640886550)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31643205081](https://github.com/openclaw/clawsweeper/actions/runs/31643205081)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119968
+Canonical: #120046
 
 ## Summary
 
-Make PR #119968 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+#119968 is already closed and its requested ACP model-forwarding repair is present on current main via merged #120046. No branch repair, replacement PR, comment, label, close, or merge action is appropriate.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Make PR #119968 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119968 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #119968 | keep_closed | skipped | superseded | The candidate is already closed and its root cause has an implemented, merged canonical fix; reopening or repairing the obsolete branch would create duplicate work. |
 
 ## Needs Human
 
