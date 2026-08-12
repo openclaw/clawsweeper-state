@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:10:49.337Z",
+  "updated_at": "2026-08-12T12:10:51.525Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121518:5263640481:2026-08-12T07:25:10Z:re_review",
-      "comment_id": "5263640481",
-      "comment_version_key": "5263640481:2026-08-12T07:25:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121518#issuecomment-5263640481",
-      "comment_created_at": "2026-08-12T07:25:10Z",
-      "comment_updated_at": "2026-08-12T07:25:10Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121518,
-      "author": "vaskevich",
-      "author_id": 1815707,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T08:05:39.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ambiguous-clawhub-skill-slug",
-        "head_sha": "5e7827d568f2edb1a28b2dd5860c236ebd3a175d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120768:5263750661:2026-08-12T07:36:37Z:re_review",
       "comment_id": "5263750661",
@@ -31268,6 +31221,39 @@
         "kind": "pull_request",
         "branch": "jesse/before-install-coverage",
         "head_sha": "9d9e3833a60c7e2e9d882564a4d4ebfb180d9c40",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1314:5266615214:2026-08-12T12:10:04Z:clawsweeper_needs_human",
+      "comment_id": "5266615214",
+      "comment_version_key": "5266615214:2026-08-12T12:10:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1314#issuecomment-5266615214",
+      "comment_created_at": "2026-08-12T12:10:04Z",
+      "comment_updated_at": "2026-08-12T12:10:04Z",
+      "comment_body_sha256": "7c7e77805751011f7b7302c65ea5639f3a2d0081d45349287e3625086006073a",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1314,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body describes local results but provides no inspectable redacted terminal output, runtime log, recording, or artifact showing the after-fi... (sha=6e215efe76d67cdea0e4e53c46592388263d2e9f)",
+      "expected_head_sha": "6e215efe76d67cdea0e4e53c46592388263d2e9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:10:51.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/diag-redaction",
+        "head_sha": "6e215efe76d67cdea0e4e53c46592388263d2e9f",
         "cluster_id": null,
         "job_path": null
       }
