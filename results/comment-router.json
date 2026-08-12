@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:05:11.571Z",
+  "updated_at": "2026-08-12T13:05:14.994Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5264202671:2026-08-12T08:20:46Z:re_review",
-      "comment_id": "5264202671",
-      "comment_version_key": "5264202671:2026-08-12T08:20:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5264202671",
-      "comment_created_at": "2026-08-12T08:20:46Z",
-      "comment_updated_at": "2026-08-12T08:20:46Z",
-      "comment_body_sha256": "a1e56e6af1a7f5230cad1d5cab1b388ff391c339f04ebf38a1adfc532a56241b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T09:11:09.748Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "ebb6bf0295cacd87d46eb1aad8581e2a8a60093f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122383:5264322655:2026-08-12T08:32:34Z:re_review",
       "comment_id": "5264322655",
@@ -30873,6 +30826,39 @@
         "kind": "pull_request",
         "branch": "fix/dev-ambient-telegram-autostart",
         "head_sha": "b2a7d8654452487025cab0a2db1c5fe7b4a39473",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122597:5265852035:2026-08-12T13:02:52Z:clawsweeper_needs_human",
+      "comment_id": "5265852035",
+      "comment_version_key": "5265852035:2026-08-12T13:02:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122597#issuecomment-5265852035",
+      "comment_created_at": "2026-08-12T11:05:16Z",
+      "comment_updated_at": "2026-08-12T13:02:52Z",
+      "comment_body_sha256": "603ff1207f2f716db4f62d7eeb4d10bb140534b1c348c2b9c6f9efd81561ad6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122597,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required checks for the current merge head are still in progress, so landing should wait for their terminal result and the session-owner review. (sha=789b083147afb52e022ad66eb007b6f7df6b204f)",
+      "expected_head_sha": "789b083147afb52e022ad66eb007b6f7df6b204f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T13:05:14.994Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/session-checkpoint-mutation",
+        "head_sha": "789b083147afb52e022ad66eb007b6f7df6b204f",
         "cluster_id": null,
         "job_path": null
       }
