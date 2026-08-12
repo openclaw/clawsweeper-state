@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T08:08:18.110Z",
+  "updated_at": "2026-08-12T08:08:34.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5074608378:2026-07-24T21:30:34Z:re_review",
-      "comment_id": "5074608378",
-      "comment_version_key": "5074608378:2026-07-24T21:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5074608378",
-      "comment_created_at": "2026-07-24T21:30:34Z",
-      "comment_updated_at": "2026-07-24T21:30:34Z",
-      "comment_body_sha256": "27bf95ead28b04268f20ca51b486093ff95fe75450f41324ebca20e9b6ea93ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 80c986a800af28aea9f8af35d710e6436022b53f; this is the narrowed 18-file f01 runtime plus wizard consumer. the pr body contains exact source-renderer output, 80 focused tests, the full build, and the four-package dependency report. the superseded 67-file review findings do not describe this head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T03:27:27.214Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111541:5148981133:2026-08-01T02:02:19Z:re_review",
       "comment_id": "5148981133",
@@ -31281,6 +31254,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T08:08:18.110Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119815:5199755063:2026-08-12T08:07:47Z:clawsweeper_needs_human",
+      "comment_id": "5199755063",
+      "comment_version_key": "5199755063:2026-08-12T08:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119815#issuecomment-5199755063",
+      "comment_created_at": "2026-08-06T02:37:56Z",
+      "comment_updated_at": "2026-08-12T08:07:47Z",
+      "comment_body_sha256": "79578eddbe8c344273180f517fde9502992e69e48297a40f77337f812aacc2dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently reports a dirty merge, so the additive state registration and audit-worker behavior need proof on the actual merge result. (sha=96a230e2faf7ed9dcf1a6c6223835597cd6a258e)",
+      "expected_head_sha": "96a230e2faf7ed9dcf1a6c6223835597cd6a258e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T08:08:34.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-id-p0-decision-receipt-foundation",
+        "head_sha": "96a230e2faf7ed9dcf1a6c6223835597cd6a258e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
