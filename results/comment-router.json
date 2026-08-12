@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:02:27.966Z",
+  "updated_at": "2026-08-12T11:02:28.330Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113013:5076032473:2026-08-12T06:08:41Z:clawsweeper_auto_repair",
-      "comment_id": "5076032473",
-      "comment_version_key": "5076032473:2026-08-12T06:08:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113013#issuecomment-5076032473",
-      "comment_created_at": "2026-07-25T01:17:04Z",
-      "comment_updated_at": "2026-08-12T06:08:41Z",
-      "comment_body_sha256": "5dcdb154d69b1949668872b07157e878687b2955b0e6650e29b3e27835d2b431",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113013,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9122ce555e12dea696978a597c384af8a8554085)",
-      "expected_head_sha": "9122ce555e12dea696978a597c384af8a8554085",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T06:09:34.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/minimax-sensitive-failover",
-        "head_sha": "9122ce555e12dea696978a597c384af8a8554085",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113013:5262698336:2026-08-12T05:22:01Z:re_review",
       "comment_id": "5262698336",
@@ -31832,6 +31799,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122502:5263445515:2026-08-12T10:59:04Z:clawsweeper_needs_human",
+      "comment_id": "5263445515",
+      "comment_version_key": "5263445515:2026-08-12T10:59:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122502#issuecomment-5263445515",
+      "comment_created_at": "2026-08-12T07:03:33Z",
+      "comment_updated_at": "2026-08-12T10:59:04Z",
+      "comment_body_sha256": "12f8cf666f9fa751d3422b0ae640e4efa12846c7c2c8c2549c910643b3ffd89f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately changes an existing reset semantic: users who used /reset to clear sidebar grouping will instead need /new or an explicit category edit. (sha=da3f7fb9a8bc2c67a1149c53a34bac1d7461fbee)",
+      "expected_head_sha": "da3f7fb9a8bc2c67a1149c53a34bac1d7461fbee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T11:02:28.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/reset-preserve-session-group",
+        "head_sha": "da3f7fb9a8bc2c67a1149c53a34bac1d7461fbee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
