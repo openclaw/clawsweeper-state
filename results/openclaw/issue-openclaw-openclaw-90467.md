@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90467"
-mode: "autonomous"
-run_id: "31558863453"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31558863453"
+mode: "plan"
+run_id: "31559320102"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31559320102"
 head_sha: "9c7445bdca92d05b5a38317b498d7f41fc19bc2b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-12T03:12:41.527Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-12T03:17:10.944Z"
 canonical: "https://github.com/openclaw/openclaw/issues/90467"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/90467"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31558863453](https://github.com/openclaw/clawsweeper/actions/runs/31558863453)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31559320102](https://github.com/openclaw/clawsweeper/actions/runs/31559320102)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/90467
 
 ## Summary
 
-#90467 remains reproducible on main: cron recipient suggestions combine configured channel account names/IDs with prior job targets. The existing conversations.list Gateway contract already returns canonical channel targets, so a narrow UI repair is appropriate. Implementation and validation are blocked because this checkout is read-only and lacks test dependencies (tsx); the executable new-PR artifact is ready.
+Plan a narrow new fix PR for #90467: replace account-derived cron recipient suggestions with canonical targets from the existing conversations.list API, while preserving free-form input and the account selector.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/90467
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90467 | fix_needed | blocked | canonical | The repair is narrow and source-reproducible, but this worker cannot modify the read-only checkout or install the missing test runtime. |
+| #90467 | fix_needed | planned | canonical | The reported behavior is reproducible and has a narrow owner-boundary repair path. |
 | cluster:issue-openclaw-openclaw-90467 | build_fix_artifact | planned | canonical |  |
-| #90841 | keep_closed | skipped | related | Already closed; no closeout action is permitted. |
-| #91448 | keep_closed | skipped | related | Already closed; no closeout action is permitted. |
+| #90841 | keep_closed | skipped | superseded | Historical context only; no close action is valid. |
+| #91448 | keep_closed | skipped | superseded | Historical context only; no close action is valid. |
 
 ## Needs Human
 
