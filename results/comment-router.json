@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T05:03:38.556Z",
+  "updated_at": "2026-08-12T05:03:53.873Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-11T23:04:49Z:clawsweeper_needs_human",
-      "comment_id": "5224337448",
-      "comment_version_key": "5224337448:2026-08-11T23:04:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5224337448",
-      "comment_created_at": "2026-08-08T03:41:53Z",
-      "comment_updated_at": "2026-08-11T23:04:49Z",
-      "comment_body_sha256": "89a4e4dad712ccae8c0d16969ee4500a217d40e51cac7afbe2c3d62424caac2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The Docker runner exercises real OpenClaw modules against a simulated app-server client and in-memory store; add a redacted after-fix trace fro...; Review finding: [P1] Keep locked harness binding failures recoverable — src/agents/embedded-agent-runner/compact.queued.ts:579-585 - [P2] Resolve a native esbuild binary for every... (sha=abe3b4340884ac4ca64b70eefe1b3b9bb6d8161e)",
-      "expected_head_sha": "abe3b4340884ac4ca64b70eefe1b3b9bb6d8161e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T00:05:23.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "abe3b4340884ac4ca64b70eefe1b3b9bb6d8161e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-11T23:06:42Z:clawsweeper_auto_repair",
       "comment_id": "5224970607",
@@ -31268,6 +31235,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119532:5262499938:2026-08-12T05:03:16Z:re_review",
+      "comment_id": "5262499938",
+      "comment_version_key": "5262499938:2026-08-12T05:03:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119532#issuecomment-5262499938",
+      "comment_created_at": "2026-08-12T05:03:16Z",
+      "comment_updated_at": "2026-08-12T05:03:16Z",
+      "comment_body_sha256": "962992477c93b5b5e934f17739adad15dc3ff10da7513be05ec50a33bc85be6a",
+      "source_delivery_id": "21a78770-960b-11f1-8f59-07db7913a36e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119532,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T05:03:51.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-retry-dispatched-cap-119313",
+        "head_sha": "cefb513aee6dec707947c9f77f765cdfc8e041d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
