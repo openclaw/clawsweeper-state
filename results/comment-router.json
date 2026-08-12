@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:07:06.469Z",
+  "updated_at": "2026-08-12T11:07:06.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122484:5263446339:2026-08-12T07:03:39Z:clawsweeper_needs_human",
-      "comment_id": "5263446339",
-      "comment_version_key": "5263446339:2026-08-12T07:03:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122484#issuecomment-5263446339",
-      "comment_created_at": "2026-08-12T07:03:39Z",
-      "comment_updated_at": "2026-08-12T07:03:39Z",
-      "comment_body_sha256": "c7048270d616cce96be40cfedb361c21871e8a40349d4d3e087cff5db5c0fa5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122484,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging starts retaining pseudonymized durable-profile attribution and optional redacted labels for authenticated Gateway runs; the audit privacy scope needs explicit owner approval. (sha=65bd7d214fae2b1cfd8939afb040321ad2903cf1)",
-      "expected_head_sha": "65bd7d214fae2b1cfd8939afb040321ad2903cf1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:09:17.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-local-user-ingress",
-        "head_sha": "1834105097401e5de374f43bf1d865e406808fce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119268:5263493016:2026-08-12T07:08:39Z:re_review",
       "comment_id": "5263493016",
@@ -31141,6 +31108,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122531:5263960092:2026-08-12T11:06:23Z:clawsweeper_needs_human",
+      "comment_id": "5263960092",
+      "comment_version_key": "5263960092:2026-08-12T11:06:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122531#issuecomment-5263960092",
+      "comment_created_at": "2026-08-12T07:58:43Z",
+      "comment_updated_at": "2026-08-12T11:06:23Z",
+      "comment_body_sha256": "ad21ffef35e01138692e8d0eb5e42a301ab487b3593632ed6f47a204de2e9a82",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Derive trust from the lifecycle record (P1)** - This hard-codes every worker as disposable even though the durable record owns sharedHost: the static-SSH provider sets it true and retains the host on destroy. Pr...; Review finding: [P1] Derive trust from the lifecycle record — src/gateway/server-methods/environments.ts:81 - [P1] Broadcast after ordinary node connections — ui/src/pages/new-ses... (sha=71e1548aa25c2c37fa4e6719220e577e0b2a0494)",
+      "expected_head_sha": "71e1548aa25c2c37fa4e6719220e577e0b2a0494",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T11:07:06.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/picker-liveness-enrichment",
+        "head_sha": "71e1548aa25c2c37fa4e6719220e577e0b2a0494",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
