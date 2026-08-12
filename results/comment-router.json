@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:08:25.534Z",
+  "updated_at": "2026-08-12T20:08:30.309Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119950:5205354809:2026-08-12T16:13:24Z:clawsweeper_needs_human",
-      "comment_id": "5205354809",
-      "comment_version_key": "5205354809:2026-08-12T16:13:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119950#issuecomment-5205354809",
-      "comment_created_at": "2026-08-06T13:37:11Z",
-      "comment_updated_at": "2026-08-12T16:13:24Z",
-      "comment_body_sha256": "6204ae051e87b8638c771590df328751f1a0970e40bd38750bd70c797eb98f7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the final Tailscale provenance contract** - The patch relies on dedicated-listener ownership plus Tailscale header and WhoIs behavior; the final PR object and upstream source wer...; Review finding: [medium] Verify the final Tailscale provenance contract — src/gateway/server-tailscale.ts:16 (sha=0ba43bbd20806ba46fbfd205410a867a648001cb)",
-      "expected_head_sha": "0ba43bbd20806ba46fbfd205410a867a648001cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:17:25.507Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-898-v2",
-        "head_sha": "0ba43bbd20806ba46fbfd205410a867a648001cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122536:5264732276:2026-08-12T16:15:52Z:clawsweeper_needs_human",
       "comment_id": "5264732276",
@@ -30649,6 +30616,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T20:08:25.534Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115390:5118745256:2026-08-12T20:06:35Z:clawsweeper_auto_repair",
+      "comment_id": "5118745256",
+      "comment_version_key": "5118745256:2026-08-12T20:06:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115390#issuecomment-5118745256",
+      "comment_created_at": "2026-07-29T13:58:03Z",
+      "comment_updated_at": "2026-08-12T20:06:35Z",
+      "comment_body_sha256": "feb947b3990ada0ba7059ef0658778725597305768d069a1f3239a4b19e06471",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115390,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3cac3e4a3aa01576cb4c90b5807a29401b139b28)",
+      "expected_head_sha": "3cac3e4a3aa01576cb4c90b5807a29401b139b28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T20:08:30.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/node-invoke-cancel-contract",
+        "head_sha": "3cac3e4a3aa01576cb4c90b5807a29401b139b28",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
