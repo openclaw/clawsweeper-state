@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:11:09.095Z",
+  "updated_at": "2026-08-12T19:11:39.404Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122581:5268478797:2026-08-12T14:53:33Z:re_review",
-      "comment_id": "5268478797",
-      "comment_version_key": "5268478797:2026-08-12T14:53:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122581#issuecomment-5268478797",
-      "comment_created_at": "2026-08-12T14:53:33Z",
-      "comment_updated_at": "2026-08-12T14:53:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "97aa4780-965d-11f1-8452-2f92f161d873",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122581,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T14:54:19.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/keep-shell-compound-command-summary",
-        "head_sha": "9b4842e8a12d15cb21c3c090d2ab238e1869200b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:75165:4354345667:2026-08-12T14:20:15Z:clawsweeper_auto_repair",
       "comment_id": "4354345667",
@@ -31363,6 +31315,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-12T19:00:23Z:clawsweeper_needs_human",
+      "comment_id": "5230661991",
+      "comment_version_key": "5230661991:2026-08-12T19:00:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
+      "comment_created_at": "2026-08-09T08:49:31Z",
+      "comment_updated_at": "2026-08-12T19:00:23Z",
+      "comment_body_sha256": "83af6bd74e563791e876f647319a42fc4f8f4a924f53e852a9ff35c63ad5c983",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Decide cross-client token authority** - The token is scoped and one-shot, but it is not bound to the authenticated operator that received it, so another operator.admin client can consum...; Review finding: [medium] Decide cross-client token authority — docs/tools/plugin.md:164 (sha=71432e1a5472c49d4985dfd455e7b3246c0a6bf5)",
+      "expected_head_sha": "71432e1a5472c49d4985dfd455e7b3246c0a6bf5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T19:11:39.404Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-gateway",
+        "head_sha": "71432e1a5472c49d4985dfd455e7b3246c0a6bf5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
