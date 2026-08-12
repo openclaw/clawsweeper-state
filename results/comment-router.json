@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-12T09:02:14.091Z",
+  "updated_at": "2026-08-12T09:02:07.316Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121459:5236858994:2026-08-12T04:05:01Z:clawsweeper_auto_repair",
+      "comment_id": "5236858994",
+      "comment_version_key": "5236858994:2026-08-12T04:05:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121459#issuecomment-5236858994",
+      "comment_created_at": "2026-08-10T06:52:52Z",
+      "comment_updated_at": "2026-08-12T04:05:01Z",
+      "comment_body_sha256": "ddfa8fe5f5ee007079c5f4229c09ed0cbcdc423157b0f4bfa29a11ce148a1133",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=074dde68a1c66bbd86fdd19212a9ec277ba754d1)",
+      "expected_head_sha": "074dde68a1c66bbd86fdd19212a9ec277ba754d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T04:08:08.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/scope-upgrade-ux",
+        "head_sha": "074dde68a1c66bbd86fdd19212a9ec277ba754d1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122300:5261957477:2026-08-12T03:34:02Z:re_review",
       "comment_id": "5261957477",
@@ -31405,39 +31438,6 @@
       "status": "skipped",
       "processed_at": "2026-08-12T09:02:07.316Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119950:5205354809:2026-08-12T09:00:43Z:clawsweeper_needs_human",
-      "comment_id": "5205354809",
-      "comment_version_key": "5205354809:2026-08-12T09:00:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119950#issuecomment-5205354809",
-      "comment_created_at": "2026-08-06T13:37:11Z",
-      "comment_updated_at": "2026-08-12T09:00:43Z",
-      "comment_body_sha256": "0c07e662bdff6fb348017b16900ab5d5c16f77d6d4f5b6de7c2cba0a7889eb6e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing same-host proxies that send forwarding headers without a narrow trusted-proxy configuration will receive a guided 403 after upgrade instead of credential processing. (sha=08c5ab12854b1ed8a197d9f7c2d01a958be5d70a)",
-      "expected_head_sha": "08c5ab12854b1ed8a197d9f7c2d01a958be5d70a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:02:14.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-898-v2",
-        "head_sha": "08c5ab12854b1ed8a197d9f7c2d01a958be5d70a",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
