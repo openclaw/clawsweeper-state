@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T15:59:18.304Z",
+  "updated_at": "2026-08-12T15:59:22.266Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5229232867:2026-08-09T01:45:38Z:re_review",
-      "comment_id": "5229232867",
-      "comment_version_key": "5229232867:2026-08-09T01:45:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5229232867",
-      "comment_created_at": "2026-08-09T01:45:38Z",
-      "comment_updated_at": "2026-08-09T01:45:38Z",
-      "comment_body_sha256": "80bb5a7838ea8353e381133eb9e3a6b97dd3a65485e3ac27769ccb6bea444ed3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — new head db25ecb23c. addressed both open findings: [p2] the write fence now closes before the scheduler abort (fixed earlier on 093fa8f153, present here), and [p1] quarantine is now honored on the logical-turn resolver used by production embedded runs. the configured logical-turn wrapper carries the default engine id so a wedged/timed-out deferred-maintenance run quarantines that slot (the default engine never self-quarantines), and a quarantined configured engine is skipped for the fallback until restart/re-registration; the skip is a typed resolution field driving the operator warning. added successor-turn regressions proving the quarantined turn is served by the fallback (legacy) without re-running the wedged factory, and that the default engine is never quarantined. rebased onto current main. 111 focused tests green (context-engine, host-param-projection, context-engine-maintenance); oxlint/oxfmt clean. pr body evidence updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T11:03:10.406Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5232517200:2026-08-09T16:21:53Z:re_review",
       "comment_id": "5232517200",
@@ -31831,6 +31804,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T15:59:18.304Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122697:5269237017:2026-08-12T15:58:45Z:clawsweeper_needs_human",
+      "comment_id": "5269237017",
+      "comment_version_key": "5269237017:2026-08-12T15:58:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122697#issuecomment-5269237017",
+      "comment_created_at": "2026-08-12T15:58:45Z",
+      "comment_updated_at": "2026-08-12T15:58:45Z",
+      "comment_body_sha256": "8fdf095e1891f308da969d750e83323cd3fb7f8e39c4883a628aa8c9d321447a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch behind main and required checks are still running; confirm the exact merge result and exact-head CI before landing. (sha=dc9b0ae60e6abf672441db2ba8c44d3eded1d0d8)",
+      "expected_head_sha": "dc9b0ae60e6abf672441db2ba8c44d3eded1d0d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T15:59:22.266Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-classification-truth",
+        "head_sha": "dc9b0ae60e6abf672441db2ba8c44d3eded1d0d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
