@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:13:14.968Z",
+  "updated_at": "2026-08-12T11:13:52.509Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122513:5263563850:2026-08-12T07:16:54Z:clawsweeper_needs_human",
-      "comment_id": "5263563850",
-      "comment_version_key": "5263563850:2026-08-12T07:16:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122513#issuecomment-5263563850",
-      "comment_created_at": "2026-08-12T07:16:54Z",
-      "comment_updated_at": "2026-08-12T07:16:54Z",
-      "comment_body_sha256": "a17b973f27e479be3fdc22cab7a813b9a0a203780537c5164c11af22e003756b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122513,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body shows real normalizer and Markdown-resolver harness output, but its provider input is a local async iterable rather than a real provid...; Review finding: [P1] Preserve the generic protected-range resolver contract — packages/tool-call-repair/src/stream-normalizer.ts:1373-1392 - [medium] Protected literal text can re... (sha=b2b9560adc0921116d0950ebf9631d1f5abe5681)",
-      "expected_head_sha": "b2b9560adc0921116d0950ebf9631d1f5abe5681",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:17:37.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-call-repair-quadratic-protection-parse",
-        "head_sha": "b2b9560adc0921116d0950ebf9631d1f5abe5681",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-08-12T07:17:07Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -31142,6 +31109,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122564:5265929313:2026-08-12T11:13:15Z:re_review",
+      "comment_id": "5265929313",
+      "comment_version_key": "5265929313:2026-08-12T11:13:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122564#issuecomment-5265929313",
+      "comment_created_at": "2026-08-12T11:13:15Z",
+      "comment_updated_at": "2026-08-12T11:13:15Z",
+      "comment_body_sha256": "2ca19decca70f8751315e7ecfe6cea688bbe3b93b984f5422128eafe1b582e8a",
+      "source_delivery_id": "d12fb720-963e-11f1-98dd-6fb0348ffa19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122564,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T11:13:49.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-strict-resolution-87336",
+        "head_sha": "70b64b4a7a8772c5261f45857b0b3c610e89871e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
