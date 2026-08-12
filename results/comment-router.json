@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:04:20.550Z",
+  "updated_at": "2026-08-12T17:04:31.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5240410521:2026-08-10T12:41:15Z:re_review",
-      "comment_id": "5240410521",
-      "comment_version_key": "5240410521:2026-08-10T12:41:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5240410521",
-      "comment_created_at": "2026-08-10T12:41:15Z",
-      "comment_updated_at": "2026-08-10T12:41:15Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T12:11:09.350Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5240598435:2026-08-10T12:57:54Z:re_review",
       "comment_id": "5240598435",
@@ -31990,6 +31963,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T17:04:20.550Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122613:5266656953:2026-08-12T17:00:19Z:clawsweeper_needs_human",
+      "comment_id": "5266656953",
+      "comment_version_key": "5266656953:2026-08-12T17:00:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122613#issuecomment-5266656953",
+      "comment_created_at": "2026-08-12T12:14:16Z",
+      "comment_updated_at": "2026-08-12T17:00:19Z",
+      "comment_body_sha256": "4a7c57ef2d5f3166112dd671743ed7bee63cc854dfd38876cfbf3147e07f20b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122613,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch has a production net increase of three lines; that growth is justified because a fingerprinted credential key avoids retaining bearer tokens while preserving same-token cach... (sha=eb819120bc8f6e6d4874b320fb004532720485ea)",
+      "expected_head_sha": "eb819120bc8f6e6d4874b320fb004532720485ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:04:31.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/projects-github-search-token-cache",
+        "head_sha": "eb819120bc8f6e6d4874b320fb004532720485ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
