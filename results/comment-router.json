@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T00:55:47.021Z",
+  "updated_at": "2026-08-12T00:55:47.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:103726:5257040166:2026-08-11T18:11:07Z:re_review",
-      "comment_id": "5257040166",
-      "comment_version_key": "5257040166:2026-08-11T18:11:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103726#issuecomment-5257040166",
-      "comment_created_at": "2026-08-11T18:11:07Z",
-      "comment_updated_at": "2026-08-11T18:11:07Z",
-      "comment_body_sha256": "0500b58934a692f33d62bd88163f988c93eb67d3783bc552ba719b1c1cf59692",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103726,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T20:04:23.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "llagy007/brave-secretref-env-fallback",
-        "head_sha": "a5d42e61584b7610ecf26951fb23729a538d91e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121991:5257204265:2026-08-11T18:26:48Z:re_review",
       "comment_id": "5257204265",
@@ -32620,6 +32573,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:57:5106099740:2026-08-12T00:07:44Z:clawsweeper_needs_human",
+      "comment_id": "5106099740",
+      "comment_version_key": "5106099740:2026-08-12T00:07:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/57#issuecomment-5106099740",
+      "comment_created_at": "2026-07-28T15:22:58Z",
+      "comment_updated_at": "2026-08-12T00:07:44Z",
+      "comment_body_sha256": "e88b1c5ce24fa6abbcdda06e20315fb8fee9a8254584501d2932621d855ffd9b",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 57,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR offers YAML and secret-scan checks only; it lacks redacted after-fix proof of MiniMax configuration and a successful response through th...; Review finding: [P1] Route MiniMax through the active onboarding flow — roles/openclaw/templates/openclaw-config.yml.j2:27-33 - [P2] Remove MiniMax claims from the retired guide —... (sha=40e8d8c18a5cb08603df59ba7eead9cadb70aab8)",
+      "expected_head_sha": "40e8d8c18a5cb08603df59ba7eead9cadb70aab8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T00:55:47.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "octo/20260728-provider-add-recvq8ai5lL5Z1",
+        "head_sha": "40e8d8c18a5cb08603df59ba7eead9cadb70aab8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
