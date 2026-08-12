@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:57:50.687Z",
+  "updated_at": "2026-08-12T17:57:55.235Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120837:5229432286:2026-08-12T13:02:39Z:clawsweeper_needs_human",
-      "comment_id": "5229432286",
-      "comment_version_key": "5229432286:2026-08-12T13:02:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120837#issuecomment-5229432286",
-      "comment_created_at": "2026-08-09T02:43:39Z",
-      "comment_updated_at": "2026-08-12T13:02:39Z",
-      "comment_body_sha256": "1401f929a7ec47e8e230cdb2b3f0353321dd674232e112017b781ff55d914031",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120837,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Session-transcript hits can briefly lag behind the transcript store until detached reconciliation completes; this is the intentional freshness tradeoff described by the PR. (sha=25bf4eb2cc2d7ec0de1e1f8b4b7ba62402c9ab30)",
-      "expected_head_sha": "25bf4eb2cc2d7ec0de1e1f8b4b7ba62402c9ab30",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T13:09:17.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-120671",
-        "head_sha": "25bf4eb2cc2d7ec0de1e1f8b4b7ba62402c9ab30",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121044:5232125420:2026-08-12T13:02:34Z:clawsweeper_needs_human",
       "comment_id": "5232125420",
@@ -31574,6 +31541,54 @@
         "kind": "pull_request",
         "branch": "codex/230-openclaw-mcp-oauth-control-ui",
         "head_sha": "78618cca8bfd98c0363da02c83b526dfeb2bc8b2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117305:5270568550:2026-08-12T17:57:04Z:re_review",
+      "comment_id": "5270568550",
+      "comment_version_key": "5270568550:2026-08-12T17:57:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5270568550",
+      "comment_created_at": "2026-08-12T17:57:04Z",
+      "comment_updated_at": "2026-08-12T17:57:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "3aa25db0-9677-11f1-93c5-aca567494711",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117305,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T17:57:52.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-visibility-lookup-failed-114653",
+        "head_sha": "c96b0a411016502374b6e5c60dc8a0839e452e5b",
         "cluster_id": null,
         "job_path": null
       },
