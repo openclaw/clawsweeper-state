@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119718",
+  "mode": "autonomous",
+  "run_id": "31638370642",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31638370642",
+  "head_sha": "3d09c5f72ab26d55c1fe57a624dfc52d6d82ee8d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md",
+  "published_at": "2026-08-12T20:45:40.009Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/119718",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/89430",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119718",
+  "summary": "Keep #119718 as the canonical repair path. Its hydrated state is open but reports merge conflicts; repair the writable same-repo branch, preserve #92518 attribution, revalidate, and leave it open for maintainer merge.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/89430",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#119718",
+      "candidate_fix": "#119718",
+      "reason": "The issue remains the user-facing report while #119718 owns the active implementation and validation."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/92518",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#119718",
+      "candidate_fix": null,
+      "reason": "Historical source PR only; preserve its attribution through the canonical repair."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119718",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119718",
+      "candidate_fix": "#119718",
+      "reason": "Repair the existing canonical branch; merge is disabled by this job."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119718",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119718",
+      "candidate_fix": "#119718",
+      "reason": "Produce a narrow, credited rebase-and-review plan for the existing writable branch."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
