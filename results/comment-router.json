@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T18:10:50.685Z",
+  "updated_at": "2026-08-12T18:11:23.682Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119232:5179604293:2026-08-12T13:21:47Z:clawsweeper_auto_repair",
-      "comment_id": "5179604293",
-      "comment_version_key": "5179604293:2026-08-12T13:21:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119232#issuecomment-5179604293",
-      "comment_created_at": "2026-08-04T13:16:39Z",
-      "comment_updated_at": "2026-08-12T13:21:47Z",
-      "comment_body_sha256": "56b88538f4ac33129b4cb81ae8ef0e089e5ebb62d949ca98fa58a137021f0a1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119232,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=20d9a0d431a6712291a611b5a5a6db31fb5b9c34)",
-      "expected_head_sha": "20d9a0d431a6712291a611b5a5a6db31fb5b9c34",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-12T14:15:09.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-117644",
-        "head_sha": "20d9a0d431a6712291a611b5a5a6db31fb5b9c34",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-12T14:02:11Z:clawsweeper_auto_repair",
       "comment_id": "5184670120",
@@ -31324,6 +31291,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T18:10:50.685Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120899:5230661991:2026-08-12T18:10:31Z:clawsweeper_needs_human",
+      "comment_id": "5230661991",
+      "comment_version_key": "5230661991:2026-08-12T18:10:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120899#issuecomment-5230661991",
+      "comment_created_at": "2026-08-09T08:49:31Z",
+      "comment_updated_at": "2026-08-12T18:10:31Z",
+      "comment_body_sha256": "e2405165b5553daca03eb83af3825cb659f2657db1771c13dbbd1c1cc5deebc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve the cross-client bearer capability boundary** - Any authenticated operator.admin client can consume the token displayed to another such client for the matching install; this is...; Review finding: [medium] Approve the cross-client bearer capability boundary — src/gateway/server-methods/plugins.ts:140 (sha=71432e1a5472c49d4985dfd455e7b3246c0a6bf5)",
+      "expected_head_sha": "71432e1a5472c49d4985dfd455e7b3246c0a6bf5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T18:11:23.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-gateway",
+        "head_sha": "71432e1a5472c49d4985dfd455e7b3246c0a6bf5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
