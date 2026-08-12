@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:07:43.166Z",
+  "updated_at": "2026-08-12T20:08:15.636Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102701:4924467587:2026-08-12T16:12:20Z:clawsweeper_needs_human",
-      "comment_id": "4924467587",
-      "comment_version_key": "4924467587:2026-08-12T16:12:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/102701#issuecomment-4924467587",
-      "comment_created_at": "2026-07-09T11:13:52Z",
-      "comment_updated_at": "2026-08-12T16:12:20Z",
-      "comment_body_sha256": "bed49e4503112dbda068e51b88cb9777ed5f2047de1d79992a013484715d8cb8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 102701,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The implementation is backward-safe for plugin ownership, but adding a public core auth namespace still needs an owner decision about command-surface scope. (sha=761b9b263e071a83329322201fdf5d8d919502fa)",
-      "expected_head_sha": "761b9b263e071a83329322201fdf5d8d919502fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:17:17.438Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ishan/73305-auth-list-alias",
-        "head_sha": "761b9b263e071a83329322201fdf5d8d919502fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:102701:5143169261:2026-07-31T13:05:25Z:re_review",
       "comment_id": "5143169261",
@@ -30635,6 +30602,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5272224031:2026-08-12T20:07:29Z:re_review",
+      "comment_id": "5272224031",
+      "comment_version_key": "5272224031:2026-08-12T20:07:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5272224031",
+      "comment_created_at": "2026-08-12T20:07:29Z",
+      "comment_updated_at": "2026-08-12T20:07:29Z",
+      "comment_body_sha256": "d5f13a84696b4a10ef5fe2954554d11df7432920d5ab0c5c39b1ff74e8cdedb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review against tip `7cd4b842134` please (chunk latch + identity gate already landed; remaining ask is real channel-delivery proof if still required after re-score)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T20:08:13.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "7cd4b842134f50841300203e0398ec38d3b6279a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
