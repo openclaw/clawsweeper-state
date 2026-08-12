@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T10:10:09.815Z",
+  "updated_at": "2026-08-12T10:10:59.979Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5005131588:2026-07-17T16:05:36Z:re_review",
-      "comment_id": "5005131588",
-      "comment_version_key": "5005131588:2026-07-17T16:05:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5005131588",
-      "comment_created_at": "2026-07-17T16:05:36Z",
-      "comment_updated_at": "2026-07-17T16:05:36Z",
-      "comment_body_sha256": "791b23c953a32eff5e970418d7f96ffd38d702baa19d731574176eff5a7dd4d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T05:11:46.397Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5006618020:2026-07-17T19:05:26Z:re_review",
       "comment_id": "5006618020",
@@ -31396,6 +31369,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2504:5122252200:2026-08-12T10:10:09Z:clawsweeper_needs_human",
+      "comment_id": "5122252200",
+      "comment_version_key": "5122252200:2026-08-12T10:10:09Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2504#issuecomment-5122252200",
+      "comment_created_at": "2026-07-29T18:57:52Z",
+      "comment_updated_at": "2026-08-12T10:10:09Z",
+      "comment_body_sha256": "03c44085d64d6dea0452a79b4f1eaa05c82ff95659988eb97ad8b9ae017b4add",
+      "repo": "steipete/codexbar",
+      "issue_number": 2504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - OpenCode’s billing endpoint, fields, and fixed-point currency convention are an undocumented upstream contract; a future schema change should fail closed to the existing provider erro... (sha=7d0379ad738a1a9037bce8a9566e9e7e61096945)",
+      "expected_head_sha": "7d0379ad738a1a9037bce8a9566e9e7e61096945",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T10:10:59.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/opencode-pay-as-you-go-usage",
+        "head_sha": "7d0379ad738a1a9037bce8a9566e9e7e61096945",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
