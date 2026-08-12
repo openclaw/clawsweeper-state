@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122616"
 mode: "autonomous"
-run_id: "31599694581"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31599694581"
+run_id: "31604002398"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31604002398"
 head_sha: "ac340908bf694c902f5a673374be1639ef9f220f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-12T13:18:01.787Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-12T14:05:43.527Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122616"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122616"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31599694581](https://github.com/openclaw/clawsweeper/actions/runs/31599694581)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31604002398](https://github.com/openclaw/clawsweeper/actions/runs/31604002398)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122616
 
 ## Summary
 
-Source inspection confirms the canonical bug on main. Implementation is narrowly planned but blocked in this read-only checkout: the required test runner cannot load `tsx`, so no branch edit or validation can be completed here.
+Current main cc99d99f still has the source-proven CLI hydration gap. Plan one narrow fix PR; no security boundary, configuration, closure, or merge action is involved.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source inspection confirms the canonical bug on main. Implementation is narrowly
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122616 | fix_needed | planned | canonical | The active agent’s scoped media roots must be threaded through CLI image hydration; do not weaken the unscoped sibling-workspace guard. |
-| cluster:issue-openclaw-openclaw-122616 | build_fix_artifact | blocked | canonical | Executor must apply the artifact on clawsweeper/issue-openclaw-openclaw-122616 after restoring dependencies and write access. |
+| #122616 | fix_needed | planned | canonical | The canonical issue remains an open, narrow, non-security bug. |
+| cluster:issue-openclaw-openclaw-122616 | build_fix_artifact | planned | canonical | Open/update the designated ClawSweeper branch after applying this artifact. |
 
 ## Needs Human
 
