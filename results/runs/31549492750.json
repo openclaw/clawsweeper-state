@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122352",
+  "mode": "autonomous",
+  "run_id": "31549492750",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31549492750",
+  "head_sha": "83dddd63e750a50bd2ada147f3a7cc8feffeff9f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122352.md",
+  "published_at": "2026-08-12T00:23:40.688Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122352",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122352",
+  "canonical_pr": null,
+  "summary": "#122352 remains a reproducible Android lifecycle bug on main. The narrow owner-boundary repair is ready, but this checkout is read-only, so no branch, regression test, or validation command could be produced here.",
+  "actions": [
+    {
+      "target": "#122352",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "The supplied target checkout permits reads only; implementation and Gradle validation require writes to the working tree and build directories."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122352",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122352",
+      "candidate_fix": null,
+      "reason": "Create the narrow branch repair once a writable checkout is available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
