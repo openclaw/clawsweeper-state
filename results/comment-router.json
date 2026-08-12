@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T22:07:01.941Z",
+  "updated_at": "2026-08-12T22:07:58.461Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121327:5236168467:2026-08-10T05:14:41Z:re_review",
-      "comment_id": "5236168467",
-      "comment_version_key": "5236168467:2026-08-10T05:14:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121327#issuecomment-5236168467",
-      "comment_created_at": "2026-08-10T05:14:41Z",
-      "comment_updated_at": "2026-08-10T05:14:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121327,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T17:17:38.246Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121327:5246986118:2026-08-10T23:00:48Z:re_review",
       "comment_id": "5246986118",
@@ -31380,6 +31353,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122809:5273339481:2026-08-12T22:07:11Z:clawsweeper_needs_human",
+      "comment_id": "5273339481",
+      "comment_version_key": "5273339481:2026-08-12T22:07:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122809#issuecomment-5273339481",
+      "comment_created_at": "2026-08-12T22:07:11Z",
+      "comment_updated_at": "2026-08-12T22:07:11Z",
+      "comment_body_sha256": "760080fb760afcd6cfbab884777a5dc19db28a1553768be8499458bcc380d304",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122809,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; although GitHub reports it mergeable, refresh the exact head against current main before landing. (sha=0293a132dd18d15c38b01df635448d3a314ca4e1)",
+      "expected_head_sha": "0293a132dd18d15c38b01df635448d3a314ca4e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T22:07:58.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/composer-typing-stable-model-picker",
+        "head_sha": "0293a132dd18d15c38b01df635448d3a314ca4e1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
