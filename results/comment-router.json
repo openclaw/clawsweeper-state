@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T05:15:37.602Z",
+  "updated_at": "2026-08-12T05:16:51.528Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:285:5238453971:2026-08-12T01:13:23Z:clawsweeper_auto_repair",
-      "comment_id": "5238453971",
-      "comment_version_key": "5238453971:2026-08-12T01:13:23Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/285#issuecomment-5238453971",
-      "comment_created_at": "2026-08-10T09:37:03Z",
-      "comment_updated_at": "2026-08-12T01:13:23Z",
-      "comment_body_sha256": "d0ae26aaa3b5f24a528ea7038539d70e09e0a4a767f53b3f41248b62408bebdb",
-      "repo": "openclaw/crabpot",
-      "issue_number": 285,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ee9016d5a2d99aab89fdc7d6f7fc38568791f495)",
-      "expected_head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T01:26:55.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/plugins/yuanbao/openclaw-plugin-yuanbao-2.18.0",
-        "head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawscan:7:4854073498:2026-08-12T01:13:16Z:clawsweeper_auto_repair",
       "comment_id": "4854073498",
@@ -30614,6 +30581,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122426:5262624762:2026-08-12T05:16:01Z:clawsweeper_needs_human",
+      "comment_id": "5262624762",
+      "comment_version_key": "5262624762:2026-08-12T05:16:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122426#issuecomment-5262624762",
+      "comment_created_at": "2026-08-12T05:16:01Z",
+      "comment_updated_at": "2026-08-12T05:16:01Z",
+      "comment_body_sha256": "b62dbe18d3a131e4f85a7831acc8999b6a2c39e621c7735689a997c467973667",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122426,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Unit and static checks are reported, but no after-fix Docker image run demonstrates the correction tag, runtime manifest, build-info file, and... (sha=610743e5df039442ab72e3ce8da939103f0c004f)",
+      "expected_head_sha": "610743e5df039442ab72e3ce8da939103f0c004f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T05:16:51.528Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/correction-container-version-121958",
+        "head_sha": "610743e5df039442ab72e3ce8da939103f0c004f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
