@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:32:22.861Z",
+  "updated_at": "2026-08-12T12:32:50.753Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2879:5264640857:2026-08-12T09:04:04Z:re_review",
-      "comment_id": "5264640857",
-      "comment_version_key": "5264640857:2026-08-12T09:04:04Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2879#issuecomment-5264640857",
-      "comment_created_at": "2026-08-12T09:04:04Z",
-      "comment_updated_at": "2026-08-12T09:04:04Z",
-      "comment_body_sha256": "fea7ad241a57667cc89b639fcea82c913f37c9871ad31b3887e388d764b40a9f",
-      "source_delivery_id": "c5165aa0-962c-11f1-837b-1093d18801cc",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2879,
-      "author": "akshayprabhu200",
-      "author_id": 12824090,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T09:04:44.541Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/opencode-go-usage-api",
-        "head_sha": "b839f548cc4bea7b987f7d76faaa9163b25e36ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115370:5118074902:2026-08-12T08:59:58Z:clawsweeper_auto_repair",
       "comment_id": "5118074902",
@@ -30944,6 +30896,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1140:5266485749:2026-08-12T12:32:06Z:clawsweeper_needs_human",
+      "comment_id": "5266485749",
+      "comment_version_key": "5266485749:2026-08-12T12:32:06Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1140#issuecomment-5266485749",
+      "comment_created_at": "2026-08-12T11:56:57Z",
+      "comment_updated_at": "2026-08-12T12:32:06Z",
+      "comment_body_sha256": "eb62999179f1fe76a0a4668b164c56dcacd291ec1d1455dfbd6153ca6315c8f4",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1140,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds a PATH-level observer around credentialed publication GitHub CLI calls; production behavior should remain observe-only and be monitored through the stated six quota windo... (sha=41bdd3bd2ad97475ce36d63f975ee4adc03b8a43)",
+      "expected_head_sha": "41bdd3bd2ad97475ce36d63f975ee4adc03b8a43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:32:50.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-123-phase0-egress-telemetry",
+        "head_sha": "41bdd3bd2ad97475ce36d63f975ee4adc03b8a43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
