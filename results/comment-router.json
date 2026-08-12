@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:20:32.195Z",
+  "updated_at": "2026-08-12T02:21:18.057Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119342:5194005839:2026-08-05T15:47:46Z:re_review",
-      "comment_id": "5194005839",
-      "comment_version_key": "5194005839:2026-08-05T15:47:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5194005839",
-      "comment_created_at": "2026-08-05T15:47:46Z",
-      "comment_updated_at": "2026-08-05T15:47:46Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119342,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T21:54:27.131Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119342:5229796543:2026-08-09T04:40:01Z:re_review",
       "comment_id": "5229796543",
@@ -31938,6 +31911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116093:5123804715:2026-08-12T02:20:33Z:clawsweeper_needs_human",
+      "comment_id": "5123804715",
+      "comment_version_key": "5123804715:2026-08-12T02:20:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116093#issuecomment-5123804715",
+      "comment_created_at": "2026-07-29T22:00:29Z",
+      "comment_updated_at": "2026-08-12T02:20:33Z",
+      "comment_body_sha256": "6bdc3230706c579e94d064fa445b063ebd15f71425c81a865734c42da50ac609",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep minimal profiles from admitting plugin tools (P1)** - preservePluginTools is enabled for every profile step, so minimal adds all materialized plugin tools despite its current core-only contract. This also l...; Review finding: [P1] Keep minimal profiles from admitting plugin tools — src/agents/tool-policy-pipeline.ts:82 - [P2] Apply profile-free discovery to skill commands — src/agents/a... (sha=6d822486453fc4216dc7d854b09b4fcb3a21b0a6)",
+      "expected_head_sha": "6d822486453fc4216dc7d854b09b4fcb3a21b0a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:21:18.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "parv/required-plugin-tools",
+        "head_sha": "6d822486453fc4216dc7d854b09b4fcb3a21b0a6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
