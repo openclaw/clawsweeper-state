@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-12T00:57:04.217Z",
+  "updated_at": "2026-08-12T00:57:04.643Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257371524:2026-08-11T18:42:30Z:re_review",
-      "comment_id": "5257371524",
-      "comment_version_key": "5257371524:2026-08-11T18:42:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257371524",
-      "comment_created_at": "2026-08-11T18:42:30Z",
-      "comment_updated_at": "2026-08-11T18:42:30Z",
-      "comment_body_sha256": "c25f8e25ae412aa69df84b1f4c198c9f677d37dc042380d0f48f0396348336ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T20:04:23.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "eea115effacaa86dcd936a0308427cb0c135050b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121327:5257642231:2026-08-11T19:08:24Z:re_review",
-      "comment_id": "5257642231",
-      "comment_version_key": "5257642231:2026-08-11T19:08:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121327#issuecomment-5257642231",
-      "comment_created_at": "2026-08-11T19:08:24Z",
-      "comment_updated_at": "2026-08-11T19:08:24Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121327,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T20:04:23.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-consent-boundaries",
-        "head_sha": "4df82f0bcf369fbf4bc14e7c9bbd273a3dfd2f49",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:115531:5257674520:2026-08-11T19:11:22Z:re_review",
       "comment_id": "5257674520",
@@ -32564,6 +32470,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122041:5253543361:2026-08-12T00:53:44Z:clawsweeper_needs_human",
+      "comment_id": "5253543361",
+      "comment_version_key": "5253543361:2026-08-12T00:53:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122041#issuecomment-5253543361",
+      "comment_created_at": "2026-08-11T13:04:10Z",
+      "comment_updated_at": "2026-08-12T00:53:44Z",
+      "comment_body_sha256": "77c4bb1c6dc8b016db8b27fea8c5bd4246921939a72942713abdd980f7fdfde4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122041,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 20 net lines for snapshot/index ownership; no net-neutral alternative exists because the prior resolver result exposes parallel payload, index, and history fa... (sha=1fb50b9d809bf3ba9832ff5ede3a5bb1160ef80d)",
+      "expected_head_sha": "1fb50b9d809bf3ba9832ff5ede3a5bb1160ef80d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T00:57:04.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-102135-acp-described-images",
+        "head_sha": "1fb50b9d809bf3ba9832ff5ede3a5bb1160ef80d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122041:5257245806:2026-08-11T18:30:47Z:re_review",
+      "comment_id": "5257245806",
+      "comment_version_key": "5257245806:2026-08-11T18:30:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122041#issuecomment-5257245806",
+      "comment_created_at": "2026-08-11T18:30:47Z",
+      "comment_updated_at": "2026-08-11T18:30:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122041,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T00:57:04.643Z",
+      "target": null
     }
   ]
 }
