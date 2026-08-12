@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:07:06.351Z",
+  "updated_at": "2026-08-12T17:07:20.803Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5226377147:2026-08-08T13:46:25Z:re_review",
-      "comment_id": "5226377147",
-      "comment_version_key": "5226377147:2026-08-08T13:46:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5226377147",
-      "comment_created_at": "2026-08-08T13:46:25Z",
-      "comment_updated_at": "2026-08-08T13:46:25Z",
-      "comment_body_sha256": "ffbd59a9fdeccc8ac48ad938abe03bae5aa6d2538c398bdd32a0d51510a49eb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T12:20:14.142Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5226379044:2026-08-08T13:46:54Z:re_review",
       "comment_id": "5226379044",
@@ -31647,6 +31620,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120900:5230001171:2026-08-12T17:04:21Z:clawsweeper_needs_human",
+      "comment_id": "5230001171",
+      "comment_version_key": "5230001171:2026-08-12T17:04:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5230001171",
+      "comment_created_at": "2026-08-09T05:42:59Z",
+      "comment_updated_at": "2026-08-12T17:04:21Z",
+      "comment_body_sha256": "0b8528e5a80e174a35b044d9aba64108bd93066489cbfd2848898e5ad4d78fa1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120900,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Decide the acknowledgement capability scope** - This call forwards a token whose linked Gateway contract permits use by any authenticated admin client until expiry; bind it to the authe...; Review finding: [medium] Decide the acknowledgement capability scope — ui/src/pages/plugins/view.ts:536 (sha=79b694b5d6c33241c0cbf82ab88a24507b237bca)",
+      "expected_head_sha": "79b694b5d6c33241c0cbf82ab88a24507b237bca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:07:20.803Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-ui",
+        "head_sha": "b6e7571f3270a2eabd2d6eeb25ca66dc84ad39f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
