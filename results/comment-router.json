@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T21:29:39.068Z",
+  "updated_at": "2026-08-12T21:30:54.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5260940031:2026-08-12T01:16:55Z:re_review",
-      "comment_id": "5260940031",
-      "comment_version_key": "5260940031:2026-08-12T01:16:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5260940031",
-      "comment_created_at": "2026-08-12T01:16:55Z",
-      "comment_updated_at": "2026-08-12T01:16:55Z",
-      "comment_body_sha256": "39a530ef484a94e0ec9d18d1d0b5c51b5d2548210a759152dd910d58418ca9a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T17:07:26.180Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5260967738:2026-08-12T01:21:33Z:re_review",
       "comment_id": "5260967738",
@@ -31386,6 +31359,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103840:4938035608:2026-08-12T21:30:13Z:clawsweeper_needs_human",
+      "comment_id": "4938035608",
+      "comment_version_key": "4938035608:2026-08-12T21:30:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/103840#issuecomment-4938035608",
+      "comment_created_at": "2026-07-10T17:49:34Z",
+      "comment_updated_at": "2026-08-12T21:30:13Z",
+      "comment_body_sha256": "e5915adb1914e621394267c4172822f1e4ee389d6d07bb94a90541f7992e2fe2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 103840,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Send the listed session identity with updates (P1)** - StoredSession retains only the key, agent, and presentation item, so this patch cannot pass expectedSessionId. If the session is reset after listing, a stal...; Review finding: [P1] Send the listed session identity with updates — src/mcp/session-tools.ts:290-297 - [P1] Derive create retry keys independently of the MCP process — src/mcp/se... (sha=f52442215e1947e99415a68ec9ec815fb0a893f4)",
+      "expected_head_sha": "f52442215e1947e99415a68ec9ec815fb0a893f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T21:30:54.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openclaw-session-mcp",
+        "head_sha": "f52442215e1947e99415a68ec9ec815fb0a893f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
