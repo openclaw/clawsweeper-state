@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T04:56:37.737Z",
+  "updated_at": "2026-08-12T04:57:03.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122309:5260287714:2026-08-12T00:01:09Z:re_review",
-      "comment_id": "5260287714",
-      "comment_version_key": "5260287714:2026-08-12T00:01:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122309#issuecomment-5260287714",
-      "comment_created_at": "2026-08-12T00:01:09Z",
-      "comment_updated_at": "2026-08-12T00:01:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "eced1790-95e0-11f1-92d4-9cfdba51eb7f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122309,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T00:01:44.507Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/post-core-handoff-env-isolation",
-        "head_sha": "e587fc973a5cb558310c3096967bbb2fcedd5fe4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1291:5259220629:2026-08-12T00:01:06Z:clawsweeper_auto_repair",
       "comment_id": "5259220629",
@@ -31399,6 +31351,39 @@
         "kind": "pull_request",
         "branch": "steipete/wizardly-aryabhata-5b74c5",
         "head_sha": "799e85c2068476edec03f877a13c676873000fbd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122438:5262456604:2026-08-12T04:56:17Z:clawsweeper_needs_human",
+      "comment_id": "5262456604",
+      "comment_version_key": "5262456604:2026-08-12T04:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122438#issuecomment-5262456604",
+      "comment_created_at": "2026-08-12T04:56:17Z",
+      "comment_updated_at": "2026-08-12T04:56:17Z",
+      "comment_body_sha256": "e2ccaebf7d5622424abd0d75ae31093990de42f53d2c48134a5d466d36c1d579",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is +3 net lines; the explicit same-row predicate is needed to bypass the prior no-op return and clear only matching intent debt, so a downstream guard or separate help... (sha=d8cc635de3562f02a3c899c9a669b9fd84c1fb3f)",
+      "expected_head_sha": "d8cc635de3562f02a3c899c9a669b9fd84c1fb3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T04:57:03.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/fix-hamverbot-unconfirmed-reply-spam",
+        "head_sha": "d8cc635de3562f02a3c899c9a669b9fd84c1fb3f",
         "cluster_id": null,
         "job_path": null
       }
