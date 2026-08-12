@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:31:47.801Z",
+  "updated_at": "2026-08-12T19:33:59.066Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-12T16:15:05Z:clawsweeper_needs_human",
-      "comment_id": "5219412032",
-      "comment_version_key": "5219412032:2026-08-12T16:15:05Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
-      "comment_created_at": "2026-08-07T16:13:44Z",
-      "comment_updated_at": "2026-08-12T16:15:05Z",
-      "comment_body_sha256": "6efbdfef1d7da824c554640385ed759b71fb0cfff01b9b21f40a2d47b95d3691",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3438,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the newly executed action revision** - Both changed uses: references execute upstream CodeQL code in a job with security-events: write; verify the release commit before accepting...; Review finding: [medium] Review the newly executed action revision — .github/workflows/codeql-light.yml:91 (sha=c3b6a012227ec68f34510a3d01cd80292a729c5b)",
-      "expected_head_sha": "c3b6a012227ec68f34510a3d01cd80292a729c5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:15:56.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/github_actions/github-actions-97c731b4de",
-        "head_sha": "c3b6a012227ec68f34510a3d01cd80292a729c5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-12T16:14:19Z:clawsweeper_auto_repair",
       "comment_id": "4466829643",
@@ -30065,6 +30032,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T19:31:47.801Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1144:5271641351:2026-08-12T19:33:06Z:clawsweeper_needs_human",
+      "comment_id": "5271641351",
+      "comment_version_key": "5271641351:2026-08-12T19:33:06Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1144#issuecomment-5271641351",
+      "comment_created_at": "2026-08-12T19:16:07Z",
+      "comment_updated_at": "2026-08-12T19:33:06Z",
+      "comment_body_sha256": "0b77cb534c9af4f7b236cb015d1a4b7cbe4fef46c51a43a36dfceba9e8390b5d",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes scheduled workflow failure sequencing: future edits must preserve the deferred remediation failure step after both reconciliation stages so genuine cleanup faults are not... (sha=ab5e594b745cad514b5a9e539dc9ad59b6f1aece)",
+      "expected_head_sha": "ab5e594b745cad514b5a9e539dc9ad59b6f1aece",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T19:33:59.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/remediation-throttle-skip",
+        "head_sha": "ab5e594b745cad514b5a9e539dc9ad59b6f1aece",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
