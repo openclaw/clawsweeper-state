@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:18:05.958Z",
+  "updated_at": "2026-08-12T02:18:25.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111541:5259197358:2026-08-11T21:43:40Z:re_review",
-      "comment_id": "5259197358",
-      "comment_version_key": "5259197358:2026-08-11T21:43:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111541#issuecomment-5259197358",
-      "comment_created_at": "2026-08-11T21:43:25Z",
-      "comment_updated_at": "2026-08-11T21:43:40Z",
-      "comment_body_sha256": "e380f4af21a5101d2ab6151c27727ae945af609a3fc3b2a3b55de5e3f771b409",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111541,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `ec3201d80a9b`. the prior runtime-locale documentation finding is fixed across all three owner docs, and catalog activation now adds explicit pre-parse size bounds; 91 focused tests and the exact-head transcript pass",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T21:53:30.570Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/localization-bundle-foundation",
-        "head_sha": "ec3201d80a9b7534e155089453bd55650b9b402b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122294:5259279316:2026-08-11T21:53:00Z:clawsweeper_needs_human",
       "comment_id": "5259279316",
@@ -31916,6 +31869,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/baileys-7.0.0-rc14",
         "head_sha": "7696217cfbfad9462bb878fb0156c88d19185ccb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122355:5260908032:2026-08-12T02:13:34Z:clawsweeper_needs_human",
+      "comment_id": "5260908032",
+      "comment_version_key": "5260908032:2026-08-12T02:13:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122355#issuecomment-5260908032",
+      "comment_created_at": "2026-08-12T01:11:38Z",
+      "comment_updated_at": "2026-08-12T02:13:34Z",
+      "comment_body_sha256": "5a0565a7d5c68fc535c88c7faecff5b1d723d5ae1b7a2a40447561e8bb5d4316",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122355,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Android, iOS, and macOS build/test checks are still queued or running; merge only after those platform validations succeed. (sha=4e201bb31a46377f6e506e7350ddee62e2339518)",
+      "expected_head_sha": "4e201bb31a46377f6e506e7350ddee62e2339518",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:18:25.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "4e201bb31a46377f6e506e7350ddee62e2339518",
         "cluster_id": null,
         "job_path": null
       }
