@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:21:05.875Z",
+  "updated_at": "2026-08-12T19:21:10.583Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:69346:5268732510:2026-08-12T15:15:02Z:re_review",
-      "comment_id": "5268732510",
-      "comment_version_key": "5268732510:2026-08-12T15:15:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/69346#issuecomment-5268732510",
-      "comment_created_at": "2026-08-12T15:15:02Z",
-      "comment_updated_at": "2026-08-12T15:15:02Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "97c54230-9660-11f1-9b2f-1937548ce3d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 69346,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T15:15:50.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/empty-stream-config-error-diagnostic",
-        "head_sha": "a3cfad1d6199128b61a2522a9fb80ec3021d5477",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122581:5265891484:2026-08-12T15:14:58Z:clawsweeper_auto_repair",
       "comment_id": "5265891484",
@@ -30761,6 +30713,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T19:21:05.875Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:19:5196115695:2026-08-12T19:20:11Z:clawsweeper_needs_human",
+      "comment_id": "5196115695",
+      "comment_version_key": "5196115695:2026-08-12T19:20:11Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/19#issuecomment-5196115695",
+      "comment_created_at": "2026-08-05T19:03:11Z",
+      "comment_updated_at": "2026-08-12T19:20:11Z",
+      "comment_body_sha256": "bf49914fe2c29c1fd5cd0e703a202ca19bcfc1b55e78131fa6fe8fc6530361f3",
+      "repo": "openclaw/uirouter",
+      "issue_number": 19,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify publishing action provenance** - The new pnpm/action-setup commit executes before npm trusted publishing in a job with id-token: write; immutable pinning limits tag drift but doe...; Review finding: [medium] Verify publishing action provenance — .github/workflows/release.yml:33 (sha=e1942b55f87f605619cad577e6cb8ea6aa007e73)",
+      "expected_head_sha": "e1942b55f87f605619cad577e6cb8ea6aa007e73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T19:21:10.583Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-7d7dfe0edd",
+        "head_sha": "e1942b55f87f605619cad577e6cb8ea6aa007e73",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
