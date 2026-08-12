@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:07:20.786Z",
+  "updated_at": "2026-08-12T12:07:22.988Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5053280625:2026-07-23T01:19:19Z:re_review",
-      "comment_id": "5053280625",
-      "comment_version_key": "5053280625:2026-07-23T01:19:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5053280625",
-      "comment_created_at": "2026-07-23T01:19:19Z",
-      "comment_updated_at": "2026-07-23T01:19:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T07:18:26.747Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
       "comment_id": "5055554259",
@@ -31478,6 +31451,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T12:07:20.786Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122612:5266582024:2026-08-12T12:06:40Z:clawsweeper_needs_human",
+      "comment_id": "5266582024",
+      "comment_version_key": "5266582024:2026-08-12T12:06:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122612#issuecomment-5266582024",
+      "comment_created_at": "2026-08-12T12:06:40Z",
+      "comment_updated_at": "2026-08-12T12:06:40Z",
+      "comment_body_sha256": "b7eae9c8283d3332f97694efb005fb9bce03df835a493b4141f819c74442ed38",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122612,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still running in the supplied context; confirm the affected compact test shard passes before merging. (sha=cb6204c57000cd29ba191e07c039b989f8efd14a)",
+      "expected_head_sha": "cb6204c57000cd29ba191e07c039b989f8efd14a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:07:22.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-main-sqlite-vacuum-interruption",
+        "head_sha": "cb6204c57000cd29ba191e07c039b989f8efd14a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
