@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T20:31:44.170Z",
+  "updated_at": "2026-08-12T20:32:11.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4660098613:2026-06-09T13:15:47Z:re_review",
-      "comment_id": "4660098613",
-      "comment_version_key": "4660098613:2026-06-09T13:15:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4660098613",
-      "comment_created_at": "2026-06-09T13:15:47Z",
-      "comment_updated_at": "2026-06-09T13:15:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T17:05:49.330Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4663196981:2026-06-09T19:16:41Z:re_review",
       "comment_id": "4663196981",
@@ -30934,6 +30907,53 @@
         "kind": "pull_request",
         "branch": "codex/slack-passive-failure-dedupe",
         "head_sha": "0b9fa6040688729bb959604011bb4ebe5f399cd8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120464:5272462627:2026-08-12T20:31:29Z:re_review",
+      "comment_id": "5272462627",
+      "comment_version_key": "5272462627:2026-08-12T20:31:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120464#issuecomment-5272462627",
+      "comment_created_at": "2026-08-12T20:31:29Z",
+      "comment_updated_at": "2026-08-12T20:31:29Z",
+      "comment_body_sha256": "6bc0c1ab041b31799aac818b98c7472e1085c137ac13e7d82e07af4037e2d2a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120464,
+      "author": "licheer-zte",
+      "author_id": 305411557,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1 finding (start input concatenating with streamed input_json_delta) fixed on head `64689939ac7`: complete `content_block_start` input is now kept as a separate `startinputjson` fallback used only when no delta arrives; streamed deltas stay canonical. added the mixed-sequence regression (complete start input + later delta) — 30/30 tests pass locally on the new head (`src/agents/cli-output-events.test.ts`, agents-core + agents-support)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T20:32:08.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-progress-tool-args-120306",
+        "head_sha": "64689939ac7aa6b062c8aa1c1082cc106e1d37c4",
         "cluster_id": null,
         "job_path": null
       },
