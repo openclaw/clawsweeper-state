@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:59:48.253Z",
+  "updated_at": "2026-08-12T18:01:01.120Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121459:5236858994:2026-08-12T12:15:49Z:clawsweeper_auto_repair",
-      "comment_id": "5236858994",
-      "comment_version_key": "5236858994:2026-08-12T12:15:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121459#issuecomment-5236858994",
-      "comment_created_at": "2026-08-10T06:52:52Z",
-      "comment_updated_at": "2026-08-12T12:15:49Z",
-      "comment_body_sha256": "58bd14364a56b0e35d192eed07a502a72ab89052943dd5eb839d25e168ccb04d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=21c229e0c102533526ec34952e5fc28e370eceb1)",
-      "expected_head_sha": "21c229e0c102533526ec34952e5fc28e370eceb1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T13:09:17.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/scope-upgrade-ux",
-        "head_sha": "10cb79989ce6924a5784c3a4be6c23a72adf8828",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122388:5261667989:2026-08-12T13:02:19Z:clawsweeper_auto_repair",
       "comment_id": "5261667989",
@@ -31621,6 +31588,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122503:5263449930:2026-08-12T17:18:24Z:clawsweeper_needs_human",
+      "comment_id": "5263449930",
+      "comment_version_key": "5263449930:2026-08-12T17:18:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122503#issuecomment-5263449930",
+      "comment_created_at": "2026-08-12T07:04:05Z",
+      "comment_updated_at": "2026-08-12T17:18:24Z",
+      "comment_body_sha256": "758515989fb12df539cb0f05958c85e5222e2c45783346dc540ab3e475f0e435",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the direct-child identity producer** - The retention gate accepts child identifiers from Codex V1/V2 event payloads; without the pinned upstream producer source, this review cann...; Review finding: [medium] Verify the direct-child identity producer — extensions/codex/src/app-server/native-subagent-monitor.ts:838 (sha=43f106ca858a2ae4d4144b1ce1a9c30986c9693d)",
+      "expected_head_sha": "43f106ca858a2ae4d4144b1ce1a9c30986c9693d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T18:01:01.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-codex-subagents-v2",
+        "head_sha": "43f106ca858a2ae4d4144b1ce1a9c30986c9693d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
