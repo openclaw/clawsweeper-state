@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T07:03:20.973Z",
+  "updated_at": "2026-08-12T07:03:28.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122361:5261286168:2026-08-12T02:13:19Z:re_review",
-      "comment_id": "5261286168",
-      "comment_version_key": "5261286168:2026-08-12T02:13:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122361#issuecomment-5261286168",
-      "comment_created_at": "2026-08-12T02:13:19Z",
-      "comment_updated_at": "2026-08-12T02:13:19Z",
-      "comment_body_sha256": "996192dda7e17ab12f31898710e95cd96db2d51aaac62be771fdab8c28e9e544",
-      "source_delivery_id": "63576720-95f3-11f1-8584-fc8c6824b5a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122361,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T02:14:00.972Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-partial-native-images-122101",
-        "head_sha": "815409436042e1f00bb460db15ee1cb80466f888",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121327:5234959478:2026-08-10T01:33:12Z:re_review",
       "comment_id": "5234959478",
@@ -31125,6 +31077,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T07:03:20.973Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122507:5263439340:2026-08-12T07:02:49Z:clawsweeper_needs_human",
+      "comment_id": "5263439340",
+      "comment_version_key": "5263439340:2026-08-12T07:02:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122507#issuecomment-5263439340",
+      "comment_created_at": "2026-08-12T07:02:49Z",
+      "comment_updated_at": "2026-08-12T07:02:49Z",
+      "comment_body_sha256": "1c2dc83d2e923079bcde54c647518db77b6127fb477c0b12854ff1462802a5ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout has no installed Vite source/types, so the Vite plugin-order contract could not be independently inspected; rely on the supplied after-fix mock proof and final exact-head... (sha=454be3f418f141250af4408135fc1dd9f3fa7335)",
+      "expected_head_sha": "454be3f418f141250af4408135fc1dd9f3fa7335",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T07:03:28.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/button-placement-fix-a92aac",
+        "head_sha": "454be3f418f141250af4408135fc1dd9f3fa7335",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
