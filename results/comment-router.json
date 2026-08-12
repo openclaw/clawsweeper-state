@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:29:09.225Z",
+  "updated_at": "2026-08-12T17:29:19.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120105:5267226768:2026-08-12T13:07:46Z:re_review",
-      "comment_id": "5267226768",
-      "comment_version_key": "5267226768:2026-08-12T13:07:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120105#issuecomment-5267226768",
-      "comment_created_at": "2026-08-12T13:07:46Z",
-      "comment_updated_at": "2026-08-12T13:07:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "source_delivery_id": "d08ea1e0-964e-11f1-8b02-409ae364c6f8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120105,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:08:18.467Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scripts-stable-shard-timing-key",
-        "head_sha": "c7dd134d8cef5e073a4f980e965ac59f830276d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119001:5267224924:2026-08-12T13:07:36Z:re_review",
       "comment_id": "5267224924",
@@ -31594,6 +31546,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-012fd98f7b",
         "head_sha": "ed6e4188b2c005a6c34b4a43aa5079bd272774f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1141:5230783868:2026-08-12T17:28:41Z:clawsweeper_needs_human",
+      "comment_id": "5230783868",
+      "comment_version_key": "5230783868:2026-08-12T17:28:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1141#issuecomment-5230783868",
+      "comment_created_at": "2026-08-09T09:22:11Z",
+      "comment_updated_at": "2026-08-12T17:28:41Z",
+      "comment_body_sha256": "98d1cff7e0d67ae4e16b89942e42a6ea102c3bc0867e226f5189e179e5285aca",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current build (win-x64) check is failing, so merge should wait for its diagnosis and a successful rerun. (sha=e00bf14bfb7a6558bcca85854a82753c943e6c9f)",
+      "expected_head_sha": "e00bf14bfb7a6558bcca85854a82753c943e6c9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:29:19.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-update-notices",
+        "head_sha": "e00bf14bfb7a6558bcca85854a82753c943e6c9f",
         "cluster_id": null,
         "job_path": null
       }
