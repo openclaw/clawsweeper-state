@@ -1,71 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:57:19.702Z",
+  "updated_at": "2026-08-12T02:57:35.235Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194460725:2026-08-05T16:27:55Z:automerge",
-      "comment_id": "5194460725",
-      "comment_version_key": "5194460725:2026-08-05T16:27:55Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194460725",
-      "comment_created_at": "2026-08-05T16:27:55Z",
-      "comment_updated_at": "2026-08-05T16:27:55Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T22:01:18.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:merge-ready",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194720912:2026-08-05T16:52:55Z:automerge",
       "comment_id": "5194720912",
@@ -31971,6 +31906,39 @@
         "kind": "pull_request",
         "branch": "steipete/trusting-pike-497872",
         "head_sha": "d18a377b2e9fe5a737d109d909ca2ee1453b5712",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120768:5229043394:2026-08-12T02:53:58Z:clawsweeper_needs_human",
+      "comment_id": "5229043394",
+      "comment_version_key": "5229043394:2026-08-12T02:53:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120768#issuecomment-5229043394",
+      "comment_created_at": "2026-08-09T00:45:52Z",
+      "comment_updated_at": "2026-08-12T02:53:58Z",
+      "comment_body_sha256": "8622cac2bca691d6caffa9174a22a1b0aabf2ef83ef9822cb85e42fa70ffbaf5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as dirty and non-mergeable, so its actual merge result must be resolved and revalidated. (sha=2d97636d2fe61063f400f8e5e4e999bc1034a655)",
+      "expected_head_sha": "2d97636d2fe61063f400f8e5e4e999bc1034a655",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:57:35.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/runners-m3-pair-url",
+        "head_sha": "2d97636d2fe61063f400f8e5e4e999bc1034a655",
         "cluster_id": null,
         "job_path": null
       }
