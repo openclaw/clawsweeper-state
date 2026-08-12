@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122352"
-mode: "autonomous"
-run_id: "31549492750"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31549492750"
+mode: "plan"
+run_id: "31551204299"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31551204299"
 head_sha: "83dddd63e750a50bd2ada147f3a7cc8feffeff9f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-12T00:23:40.688Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-12T00:49:28.993Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122352"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122352"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31549492750](https://github.com/openclaw/clawsweeper/actions/runs/31549492750)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31551204299](https://github.com/openclaw/clawsweeper/actions/runs/31551204299)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122352
 
 ## Summary
 
-#122352 remains a reproducible Android lifecycle bug on main. The narrow owner-boundary repair is ready, but this checkout is read-only, so no branch, regression test, or validation command could be produced here.
+Plan a narrow Android-only repair for the still-reproducible post-expiry terminal-redelivery bug; no GitHub or checkout mutations were made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/122352
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122352 | fix_needed | blocked | canonical | The supplied target checkout permits reads only; implementation and Gradle validation require writes to the working tree and build directories. |
-| cluster:issue-openclaw-openclaw-122352 | build_fix_artifact | planned | canonical | Create the narrow branch repair once a writable checkout is available. |
+| #122352 | fix_needed | planned | canonical | The issue remains an ordinary Android presentation-state bug with a narrow in-memory owner-boundary repair; it does not require protocol, configuration, persistence, or security changes. |
+| cluster:issue-openclaw-openclaw-122352 | build_fix_artifact | planned | canonical | One new fix PR is appropriate; no viable open implementation PR exists. |
 
 ## Needs Human
 
