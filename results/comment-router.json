@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T11:12:13.646Z",
+  "updated_at": "2026-08-12T11:12:47.211Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122200:5263287165:2026-08-12T06:43:47Z:re_review",
-      "comment_id": "5263287165",
-      "comment_version_key": "5263287165:2026-08-12T06:43:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122200#issuecomment-5263287165",
-      "comment_created_at": "2026-08-12T06:43:47Z",
-      "comment_updated_at": "2026-08-12T06:43:47Z",
-      "comment_body_sha256": "cd57dc4ce2eb4b2eb253211c17f1a9078ca932280eee800932bd02c40e2f931d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122200,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T07:16:17.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/122043-android-expand-truncated",
-        "head_sha": "171b9ea31ef50d428b04d47f15cbb6f368acde60",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122200:5257563792:2026-08-12T07:15:33Z:clawsweeper_needs_human",
       "comment_id": "5257563792",
@@ -31153,6 +31106,39 @@
         "kind": "pull_request",
         "branch": "fix/composer-ime-blur-stuck",
         "head_sha": "44840b0d187908ae737a12c950fb0a7dab76ca12",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122176:5256873839:2026-08-12T11:11:55Z:clawsweeper_needs_human",
+      "comment_id": "5256873839",
+      "comment_version_key": "5256873839:2026-08-12T11:11:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122176#issuecomment-5256873839",
+      "comment_created_at": "2026-08-11T17:54:55Z",
+      "comment_updated_at": "2026-08-12T11:11:55Z",
+      "comment_body_sha256": "e5edccdea50a6bf055ee83a48d265b2538e81b37efaf7822beb2cca7d2ce6aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading a v5/v6 database permanently removes the retained commitments rows; returning to a v6 binary requires the documented manual recreation of an empty table. (sha=6e1fbef5e09aec06881bc2267e9a10889e53021a)",
+      "expected_head_sha": "6e1fbef5e09aec06881bc2267e9a10889e53021a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T11:12:47.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/commitments-schema-v7",
+        "head_sha": "6e1fbef5e09aec06881bc2267e9a10889e53021a",
         "cluster_id": null,
         "job_path": null
       }
