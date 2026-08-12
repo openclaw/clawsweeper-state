@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T16:00:08.051Z",
+  "updated_at": "2026-08-12T16:00:12.782Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-08-12T10:55:59Z:clawsweeper_needs_human",
-      "comment_id": "5224970607",
-      "comment_version_key": "5224970607:2026-08-12T10:55:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5224970607",
-      "comment_created_at": "2026-08-08T06:42:09Z",
-      "comment_updated_at": "2026-08-12T10:55:59Z",
-      "comment_body_sha256": "e7d9e3cc79a5fab19f2eb3a262a7792f6fa821cde0c4091105ef2e96d55aebd9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep admitted caller identity on the routable target (P1)** - The new hook context uses currentMessagingTarget ?? currentChannelId, but caller identity immediately below still signs only currentChannelId. With d...; Review finding: [P1] Keep admitted caller identity on the routable target — src/gateway/mcp-http.ts:399-400 - [P3] Remove the copied delivery-status probe — test/e2e/qa-lab/runtim... (sha=819ba7a0de057d4813afd175e515ac661cb99ef0)",
-      "expected_head_sha": "819ba7a0de057d4813afd175e515ac661cb99ef0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T11:03:26.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "168cbd2daad4ce26e3ff8e643641bd7fab61006b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5250240163:2026-08-11T07:24:39Z:re_review",
       "comment_id": "5250240163",
@@ -31875,6 +31842,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116511:5269245194:2026-08-12T15:59:29Z:re_review",
+      "comment_id": "5269245194",
+      "comment_version_key": "5269245194:2026-08-12T15:59:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116511#issuecomment-5269245194",
+      "comment_created_at": "2026-08-12T15:59:29Z",
+      "comment_updated_at": "2026-08-12T15:59:29Z",
+      "comment_body_sha256": "9c87fef2c7bb57ab6c177ff0bf591d828baf089e2a79542b0076a5b7c9716906",
+      "source_delivery_id": "cdc5f810-9666-11f1-809e-830700623531",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116511,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T16:00:09.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/issue-109656-continuation-skip-sqlite-20260730",
+        "head_sha": "aaf49c832e1630b63bd1e8d0b1220833c30f9b2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
