@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122476",
+  "mode": "autonomous",
+  "run_id": "31569284709",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31569284709",
+  "head_sha": "a1795973a9e6bb00b73cd6adc21a4ea02ca78ced",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122476.md",
+  "published_at": "2026-08-12T06:29:55.654Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122476",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122476",
+  "canonical_pr": null,
+  "summary": "#122476 is a real current-main bug: uppercase streamed `N` is allowed by both the shared auto-reply prefix classifier and the Gateway sibling classifier, so it can reach a Matrix draft before final NO_REPLY suppression. A narrow new-fix-PR artifact is ready, but this read-only checkout lacks tsx/node_modules, so no branch or validation could be produced locally.",
+  "actions": [
+    {
+      "target": "#122476",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only, dependency-incomplete checkout; the provided fix artifact is executable by the repair executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122476",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR from clawsweeper/issue-openclaw-openclaw-122476."
+    },
+    {
+      "target": "#50365",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no mutation is valid for a closed PR."
+    },
+    {
+      "target": "#51739",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Merged historical context; no mutation is valid."
+    },
+    {
+      "target": "#62845",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#122476",
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no mutation is valid."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
