@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:18:00.995Z",
+  "updated_at": "2026-08-12T02:18:03.072Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122036:5259187633:2026-08-11T21:42:19Z:re_review",
-      "comment_id": "5259187633",
-      "comment_version_key": "5259187633:2026-08-11T21:42:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122036#issuecomment-5259187633",
-      "comment_created_at": "2026-08-11T21:42:19Z",
-      "comment_updated_at": "2026-08-11T21:42:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122036,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T21:53:30.570Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-119715-single-timeout-final",
-        "head_sha": "966f4a8ac2419e831505c6ab327c3cbfb6ce7b43",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122189:5259189192:2026-08-11T21:42:28Z:re_review",
       "comment_id": "5259189192",
@@ -31947,6 +31900,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:267:5242916330:2026-08-12T02:17:19Z:clawsweeper_needs_human",
+      "comment_id": "5242916330",
+      "comment_version_key": "5242916330:2026-08-12T02:17:19Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/267#issuecomment-5242916330",
+      "comment_created_at": "2026-08-10T16:17:19Z",
+      "comment_updated_at": "2026-08-12T02:17:19Z",
+      "comment_body_sha256": "22bd67cbc1d857e0225964d8b60fb1322b910cae7ea0921c0d5b6fa7199de162",
+      "repo": "openclaw/crabline",
+      "issue_number": 267,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - actions/stale v11 runs daily with existing authority to label and close issues and pull requests; successful PR checks do not prove its configured scheduled behavior remains unchanged. (sha=bec328852c3cc2693a6a3f7a94bb8612758cbbdc)",
+      "expected_head_sha": "bec328852c3cc2693a6a3f7a94bb8612758cbbdc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T02:18:03.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-18415f853a",
+        "head_sha": "bec328852c3cc2693a6a3f7a94bb8612758cbbdc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
