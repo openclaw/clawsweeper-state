@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T02:31:59.574Z",
+  "updated_at": "2026-08-12T02:32:20.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122015:5252886198:2026-08-11T21:10:35Z:clawsweeper_needs_human",
-      "comment_id": "5252886198",
-      "comment_version_key": "5252886198:2026-08-11T21:10:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122015#issuecomment-5252886198",
-      "comment_created_at": "2026-08-11T12:02:56Z",
-      "comment_updated_at": "2026-08-11T21:10:35Z",
-      "comment_body_sha256": "90b102dc2424784c236ae3a964110c5728591fa64d4cd83e7d109b75d3a209e0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122015,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Carry the live worker run identity into child admission (P1)** - This wrapper supplies only the execution token. callSubagentGateway creates its lineage-bearing runtime identity only when the caller also has an...; Review finding: [P1] Carry the live worker run identity into child admission — src/gateway/worker-environments/worker-session-tool-executor.ts:371-377 - [medium] Worker lineage to... (sha=8931c5807271cfdc1346b373420151330d9c4b50)",
-      "expected_head_sha": "8931c5807271cfdc1346b373420151330d9c4b50",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T21:54:37.323Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-subagent-lineage",
-        "head_sha": "8931c5807271cfdc1346b373420151330d9c4b50",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122036:5253510728:2026-08-11T21:08:34Z:clawsweeper_needs_human",
       "comment_id": "5253510728",
@@ -32091,6 +32058,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117222:5261431105:2026-08-12T02:31:38Z:re_review",
+      "comment_id": "5261431105",
+      "comment_version_key": "5261431105:2026-08-12T02:31:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117222#issuecomment-5261431105",
+      "comment_created_at": "2026-08-12T02:31:38Z",
+      "comment_updated_at": "2026-08-12T02:31:38Z",
+      "comment_body_sha256": "60960177bc80220ec676d4683201ede95bdd73ce97ebb3a34bf0e1e3b666ebe9",
+      "source_delivery_id": "f29bf7f0-95f5-11f1-8bde-893c8531a277",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117222,
+      "author": "funston-bot",
+      "author_id": 261824425,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T02:32:17.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-recent-usage-days",
+        "head_sha": "4a7f7b5ddd14b2da8fc3db26991266a90cb103d5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
