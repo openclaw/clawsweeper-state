@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122615",
+  "mode": "autonomous",
+  "run_id": "31600716790",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31600716790",
+  "head_sha": "ac340908bf694c902f5a673374be1639ef9f220f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122615.md",
+  "published_at": "2026-08-12T13:27:55.625Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122615",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122615",
+  "canonical_pr": null,
+  "summary": "Current main 9b90e104c53377a349b92bc14c7c9984d02b68a9 still loses the active-requester queue refusal: delivery returns an unreasoned `dropped`, dispatch reduces it to `path: \"none\"`, and lifecycle persistence records `sink_unavailable`. The workspace is read-only and lacks dependencies; the required `pnpm install` retry failed with EROFS in Corepack, so implementation and focused validation cannot run here.",
+  "actions": [
+    {
+      "target": "#122615",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122615",
+      "candidate_fix": null,
+      "reason": "The source-proven repair is narrow, but this worker cannot edit the checkout or execute the mandatory regression suites."
+    },
+    {
+      "target": "#92433",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#122615",
+      "candidate_fix": null,
+      "reason": "Keep open: same announce family, distinct root cause and required owner-boundary work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122615",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122615",
+      "candidate_fix": null,
+      "reason": "A writable executor can apply and validate this focused repair on clawsweeper/issue-openclaw-openclaw-122615."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
