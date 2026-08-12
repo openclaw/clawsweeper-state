@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T06:17:27.034Z",
+  "updated_at": "2026-08-12T06:18:05.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5257244850:2026-08-11T18:30:41Z:re_review",
-      "comment_id": "5257244850",
-      "comment_version_key": "5257244850:2026-08-11T18:30:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5257244850",
-      "comment_created_at": "2026-08-11T18:30:41Z",
-      "comment_updated_at": "2026-08-11T18:30:41Z",
-      "comment_body_sha256": "45fe6cae300125e4634b4e6122b000127a7d7b6fb0f06993e50b926fc65985b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T02:02:16.910Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5257303795:2026-08-11T18:36:03Z:re_review",
       "comment_id": "5257303795",
@@ -30850,6 +30823,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122480:5263082841:2026-08-12T06:17:24Z:clawsweeper_needs_human",
+      "comment_id": "5263082841",
+      "comment_version_key": "5263082841:2026-08-12T06:17:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122480#issuecomment-5263082841",
+      "comment_created_at": "2026-08-12T06:17:24Z",
+      "comment_updated_at": "2026-08-12T06:17:24Z",
+      "comment_body_sha256": "075c423cf0358816ff36eb9f6b7c05151db556e6617b54ec64bb2c218557ca94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Confirm broadened beta candidate provenance** - The helper accepts canonical beta branch tips through exact SHA plus unique merged-PR and maintain/admin attribution rather than the form...; Review finding: [medium] Confirm broadened beta candidate provenance — scripts/release-telegram-provenance.sh:199 (sha=3d1d4afeef561a280b8e7bc5fce5d46f2aa9de54)",
+      "expected_head_sha": "3d1d4afeef561a280b8e7bc5fce5d46f2aa9de54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T06:18:05.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "temp/release-2026.8.1-telegram-provenance",
+        "head_sha": "3d1d4afeef561a280b8e7bc5fce5d46f2aa9de54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
