@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T17:24:21.198Z",
+  "updated_at": "2026-08-12T17:28:31.361Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118681:5266989636:2026-08-12T12:46:03Z:re_review",
-      "comment_id": "5266989636",
-      "comment_version_key": "5266989636:2026-08-12T12:46:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5266989636",
-      "comment_created_at": "2026-08-12T12:46:03Z",
-      "comment_updated_at": "2026-08-12T12:46:03Z",
-      "comment_body_sha256": "5946f20b6bf982449de8dbea0117d9cab1e6e3ffb2de51642900360bcf78a36b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118681,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:07:38.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reactive-memory-flush-114081",
-        "head_sha": "7ad19aee8708d318e736f4ab5428b2df8b5b74ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122613:5266995006:2026-08-12T12:46:34Z:re_review",
       "comment_id": "5266995006",
@@ -31625,6 +31578,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-12T17:27:16Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-12T17:27:16Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-12T17:27:16Z",
+      "comment_body_sha256": "50780f41db9422d69f94a715c10a92aa7ad2fb2882c339e8c573b553a83240fc",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Using categories, topics, or either clear flag on a catalog-wide run intentionally creates a new patch version for every selected unchanged skill; the added docs and skill_path guidan... (sha=f47107d117381576bad760f56bbfb23fac02b6f2)",
+      "expected_head_sha": "f47107d117381576bad760f56bbfb23fac02b6f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T17:28:31.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "f47107d117381576bad760f56bbfb23fac02b6f2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
