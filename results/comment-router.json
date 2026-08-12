@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T14:15:27.682Z",
+  "updated_at": "2026-08-12T14:15:40.036Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-12T10:07:51Z:clawsweeper_needs_human",
-      "comment_id": "5088305683",
-      "comment_version_key": "5088305683:2026-08-12T10:07:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
-      "comment_created_at": "2026-07-27T07:06:46Z",
-      "comment_updated_at": "2026-08-12T10:07:51Z",
-      "comment_body_sha256": "e4d03af7334aff17eda7774858a5c1208372a713740b49f75b8c95aa84f182a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fail closed when the caller agent is absent (P1)** - callerAgentId is optional and this new branch authorizes it when absent. A plugin in an explicit fleet can bind global without an agent and then read or cance...; Review finding: [P1] Fail closed when the caller agent is absent — src/tasks/task-owner-access.ts:32 - [medium] Missing caller identity bypasses task ownership — src/tasks/task-ow... (sha=53d7fdeecff456175be4c9700d575a19ead8c2dc)",
-      "expected_head_sha": "53d7fdeecff456175be4c9700d575a19ead8c2dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T10:14:45.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/no-stored-default",
-        "head_sha": "53d7fdeecff456175be4c9700d575a19ead8c2dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114523:5090396176:2026-08-12T10:09:18Z:clawsweeper_auto_repair",
       "comment_id": "5090396176",
@@ -31104,6 +31071,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T14:15:27.682Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116244:5127091563:2026-08-12T14:14:45Z:clawsweeper_needs_human",
+      "comment_id": "5127091563",
+      "comment_version_key": "5127091563:2026-08-12T14:14:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116244#issuecomment-5127091563",
+      "comment_created_at": "2026-07-30T05:46:46Z",
+      "comment_updated_at": "2026-08-12T14:14:45Z",
+      "comment_body_sha256": "0d6428ce43e17c1736bf5d1a7f77d74a46169f712ee5ef134c292f906ae19007",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The newest comment describes a CLI-loopback check but provides no inspectable current-head fresh Dashboard/WebChat Gateway trace and d...; Review finding: [P1] Partition queued batches by exec mode — src/auto-reply/reply/get-reply-exec-overrides.ts:9-12 - [medium] Queued collection collapses distinct exec modes — src... (sha=28ddd31398d9fce0ee5485c6a3c6b6eec32d20d1)",
+      "expected_head_sha": "28ddd31398d9fce0ee5485c6a3c6b6eec32d20d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T14:15:40.036Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/112376-dashboard-exec-inherit-policy",
+        "head_sha": "28ddd31398d9fce0ee5485c6a3c6b6eec32d20d1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
