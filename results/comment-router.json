@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:19:46.069Z",
+  "updated_at": "2026-08-12T19:20:00.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119731:5268145004:2026-08-12T14:26:11Z:re_review",
-      "comment_id": "5268145004",
-      "comment_version_key": "5268145004:2026-08-12T14:26:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119731#issuecomment-5268145004",
-      "comment_created_at": "2026-08-12T14:26:11Z",
-      "comment_updated_at": "2026-08-12T14:26:11Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119731,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T15:10:16.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-57148",
-        "head_sha": "08221ae387d2ee6b90dc678c8aaa505aaf6b2d53",
-        "cluster_id": "automerge-openclaw-openclaw-119731",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119731.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122642:5268151799:2026-08-12T14:26:44Z:re_review",
       "comment_id": "5268151799",
@@ -31315,6 +31268,39 @@
         "kind": "pull_request",
         "branch": "fix/mcp-toolfilter-probe-names-98193",
         "head_sha": "da811254095d4c3faa33d08c5c6ea410797d18b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122724:5270014404:2026-08-12T19:19:09Z:clawsweeper_needs_human",
+      "comment_id": "5270014404",
+      "comment_version_key": "5270014404:2026-08-12T19:19:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122724#issuecomment-5270014404",
+      "comment_created_at": "2026-08-12T17:12:44Z",
+      "comment_updated_at": "2026-08-12T19:19:09Z",
+      "comment_body_sha256": "19e84958fb25da2510ea78fcde51982e2a9f8d3a075bc481c191e76e1b3e9b76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging introduces a privileged desktop relay, so its safety continues to depend on default-denied command policy, current pairing generation, and ticket-bound stream attachment; exac... (sha=9a8ad76e2f19fcd9816b678d15269df2cb4be4c6)",
+      "expected_head_sha": "9a8ad76e2f19fcd9816b678d15269df2cb4be4c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T19:20:00.151Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-desktop-stream",
+        "head_sha": "9a8ad76e2f19fcd9816b678d15269df2cb4be4c6",
         "cluster_id": null,
         "job_path": null
       }
