@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:04:09.224Z",
+  "updated_at": "2026-08-12T13:04:44.937Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122556:5264690143:2026-08-12T09:09:07Z:clawsweeper_needs_human",
-      "comment_id": "5264690143",
-      "comment_version_key": "5264690143:2026-08-12T09:09:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122556#issuecomment-5264690143",
-      "comment_created_at": "2026-08-12T09:09:07Z",
-      "comment_updated_at": "2026-08-12T09:09:07Z",
-      "comment_body_sha256": "51459cd39fc62c510f71c65efe10b5a87e077e996e780063505b155d70cf6386",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only mocked Vitest transcripts are supplied; no real Matrix client fault trace shows the retained draft after handler completion. After adding... (sha=591a019e0b30fbfc05b175212e7d6e0564b80f22)",
-      "expected_head_sha": "591a019e0b30fbfc05b175212e7d6e0564b80f22",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:09:51.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/122498-matrix-draft-redaction",
-        "head_sha": "591a019e0b30fbfc05b175212e7d6e0564b80f22",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118303:5160944009:2026-08-06T23:05:35Z:clawsweeper_auto_repair",
       "comment_id": "5160944009",
@@ -30931,6 +30898,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122608:5267185874:2026-08-12T13:04:00Z:re_review",
+      "comment_id": "5267185874",
+      "comment_version_key": "5267185874:2026-08-12T13:04:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122608#issuecomment-5267185874",
+      "comment_created_at": "2026-08-12T13:04:00Z",
+      "comment_updated_at": "2026-08-12T13:04:00Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "source_delivery_id": "49f4ee00-964e-11f1-9cd1-cf510d0cd280",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122608,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T13:04:42.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-76531-hidden-tts",
+        "head_sha": "493e70354d53908cd4c0df83aa8299adfd507e30",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
