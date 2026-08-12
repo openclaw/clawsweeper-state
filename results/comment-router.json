@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:07:07.629Z",
+  "updated_at": "2026-08-12T13:08:20.372Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80396:4416120074:2026-08-12T08:13:20Z:clawsweeper_auto_repair",
-      "comment_id": "4416120074",
-      "comment_version_key": "4416120074:2026-08-12T08:13:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-4416120074",
-      "comment_created_at": "2026-05-10T19:19:16Z",
-      "comment_updated_at": "2026-08-12T08:13:20Z",
-      "comment_body_sha256": "a1b15d728c39972fde3ae6e7e5136216ffdd2176b2b3109ba339401455a34eea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ce52bfc0efd972abc8072bcb5ab6097ac5e8a28b)",
-      "expected_head_sha": "ce52bfc0efd972abc8072bcb5ab6097ac5e8a28b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:13:01.678Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "ebb6bf0295cacd87d46eb1aad8581e2a8a60093f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103872:4938369172:2026-08-12T07:13:28Z:clawsweeper_auto_repair",
       "comment_id": "4938369172",
@@ -30650,6 +30617,54 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120105:5267226768:2026-08-12T13:07:46Z:re_review",
+      "comment_id": "5267226768",
+      "comment_version_key": "5267226768:2026-08-12T13:07:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120105#issuecomment-5267226768",
+      "comment_created_at": "2026-08-12T13:07:46Z",
+      "comment_updated_at": "2026-08-12T13:07:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "source_delivery_id": "d08ea1e0-964e-11f1-8b02-409ae364c6f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120105,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T13:08:18.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scripts-stable-shard-timing-key",
+        "head_sha": "c7dd134d8cef5e073a4f980e965ac59f830276d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
