@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122746"
-mode: "autonomous"
-run_id: "31627092981"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31627092981"
+mode: "plan"
+run_id: "31628857219"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31628857219"
 head_sha: "e0dc54438e5e346f573af5e6d2cb07c6c1620a8f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-12T18:32:59.564Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-12T19:20:06.308Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122746"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122746"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31627092981](https://github.com/openclaw/clawsweeper/actions/runs/31627092981)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31628857219](https://github.com/openclaw/clawsweeper/actions/runs/31628857219)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122746
 
 ## Summary
 
-Confirmed on main 2ce420091e136da4c83e65071c6caea68f3b1ac1: config validation omits the manifest default-enablement input that plugin inventory supplies. A narrow two-file repair is planned, but this checkout is read-only and lacks tsx; dependency recovery failed with EROFS, so no branch or PR was created.
+Plan a narrow new fix PR for #122746: pass the manifest’s platform-aware default-enablement fact into config validation and add a config-only default-enabled bundled-plugin regression.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Confirmed on main 2ce420091e136da4c83e65071c6caea68f3b1ac1: config validation om
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #113713 | keep_closed | skipped | related | Already closed; no closeout action is valid. |
-| #121329 | keep_closed | skipped | related | Already closed; no closeout action is valid. |
-| #122738 | keep_closed | skipped | duplicate | Already closed duplicate; preserve it as historical evidence only. |
-| #122746 | fix_needed | blocked | canonical | The bug is real and narrowly repairable, but implementation and local validation are blocked by the read-only worker checkout. |
-| cluster:issue-openclaw-openclaw-122746 | build_fix_artifact | planned |  | Prepare a narrow new PR once a writable checkout with dependencies is available. |
+| #122746 | fix_needed | planned | canonical | Current main still has the reproduced configuration-validation mismatch; no viable implementation PR is hydrated. |
+| cluster:issue-openclaw-openclaw-122746 | build_fix_artifact | planned |  | Create one narrow, credited ClawSweeper PR from clawsweeper/issue-openclaw-openclaw-122746. |
 
 ## Needs Human
 
