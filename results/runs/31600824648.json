@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122625",
+  "mode": "autonomous",
+  "run_id": "31600824648",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31600824648",
+  "head_sha": "ac340908bf694c902f5a673374be1639ef9f220f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122625.md",
+  "published_at": "2026-08-12T13:32:41.882Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122625",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122625",
+  "canonical_pr": null,
+  "summary": "Confirmed on main 9b90e104: Matrix marks canonical !room:server IDs non-exact under its default per-user DM scope, and the explicit-recipient planner rejects that non-exact route. A narrow plugin-only repair is ready, but this read-only checkout has no node_modules; focused validation stops on missing tsx.",
+  "actions": [
+    {
+      "target": "#92653",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#122625",
+      "candidate_fix": null,
+      "reason": "Keep open independently; the proposed repair neither implements nor decides the broader inbound-routing feature."
+    },
+    {
+      "target": "#122625",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122625",
+      "candidate_fix": null,
+      "reason": "The issue remains a narrow, source-reproducible Matrix plugin bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122625",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122625",
+      "candidate_fix": null,
+      "reason": "Implementation and validation are blocked only by the unavailable writable dependency installation; the deterministic executor can apply the narrow repair on its writable branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122625",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122625",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-122625 after restoring dependencies and validating."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
