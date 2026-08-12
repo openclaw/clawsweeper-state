@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:59:20.117Z",
+  "updated_at": "2026-08-12T12:59:39.406Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122486:5263456660:2026-08-12T09:01:52Z:clawsweeper_needs_human",
-      "comment_id": "5263456660",
-      "comment_version_key": "5263456660:2026-08-12T09:01:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122486#issuecomment-5263456660",
-      "comment_created_at": "2026-08-12T07:04:50Z",
-      "comment_updated_at": "2026-08-12T09:01:52Z",
-      "comment_body_sha256": "e58247c33895d6d2b199c41ccdf312101904d929a085a7ae95bfa5773999cde4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122486,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The remaining blocker is an explicit maintainer choice between two intentional desktop UI hierarchies, not a mechanical repair. (sha=8b5ca77d1d7267ae2d25795cd35c57fe2790ba4d)",
-      "expected_head_sha": "8b5ca77d1d7267ae2d25795cd35c57fe2790ba4d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:04:55.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/control-ui-sidebar-header-controls",
-        "head_sha": "8b5ca77d1d7267ae2d25795cd35c57fe2790ba4d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122485:5263498300:2026-08-12T09:00:40Z:clawsweeper_auto_repair",
       "comment_id": "5263498300",
@@ -31016,6 +30983,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-12T12:15:31Z:clawsweeper_needs_human",
+      "comment_id": "5088305683",
+      "comment_version_key": "5088305683:2026-08-12T12:15:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
+      "comment_created_at": "2026-07-27T07:06:46Z",
+      "comment_updated_at": "2026-08-12T12:15:31Z",
+      "comment_body_sha256": "abde93b21d3c4f3bd59c665ee77aefa7ea8b5ad218c0061315549f11242db3cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject task access without a caller agent (P1)** - A matching bare owner key is not an authorization identity after this PR makes multi-agent ownership explicit. When callerAgentId is absent this returns true, s...; Review finding: [P1] Reject task access without a caller agent — src/tasks/task-owner-access.ts:27-29 - [P2] Remove the release-owned changelog entry — CHANGELOG.md:11 - [high] Mi... (sha=3fa3e5539dffe71fa50de4d884247c5c6b2f6401)",
+      "expected_head_sha": "3fa3e5539dffe71fa50de4d884247c5c6b2f6401",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T12:59:39.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/no-stored-default",
+        "head_sha": "3fa3e5539dffe71fa50de4d884247c5c6b2f6401",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
