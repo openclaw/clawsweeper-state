@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T05:58:56.249Z",
+  "updated_at": "2026-08-12T06:00:38.681Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122361:5260810936:2026-08-12T01:54:06Z:clawsweeper_auto_repair",
-      "comment_id": "5260810936",
-      "comment_version_key": "5260810936:2026-08-12T01:54:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122361#issuecomment-5260810936",
-      "comment_created_at": "2026-08-12T00:56:05Z",
-      "comment_updated_at": "2026-08-12T01:54:06Z",
-      "comment_body_sha256": "629acddc7f5103ad405691dcf0b8b1a3d0e6e865764755e685f6937fd723260a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=76348e0c538de0166f9e966d66527993cc18632f)",
-      "expected_head_sha": "76348e0c538de0166f9e966d66527993cc18632f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T01:57:09.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-partial-native-images-122101",
-        "head_sha": "76348e0c538de0166f9e966d66527993cc18632f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96937:4806445482:2026-08-12T01:56:04Z:clawsweeper_auto_repair",
       "comment_id": "4806445482",
@@ -30476,6 +30443,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-12T05:57:08Z:clawsweeper_needs_human",
+      "comment_id": "5088305683",
+      "comment_version_key": "5088305683:2026-08-12T05:57:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
+      "comment_created_at": "2026-07-27T07:06:46Z",
+      "comment_updated_at": "2026-08-12T05:57:08Z",
+      "comment_body_sha256": "7568c05126903c754abf22bc1b04a146c9a2db08efa5c82b5e908cd285aabe33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject task access when the caller agent is absent (P1)** - The added branch grants access when callerAgentId is missing. bindSession remains usable without that value, while the trusted tool context already has...; Review finding: [P1] Reject task access when the caller agent is absent — src/tasks/task-owner-access.ts:31-33 - [high] Missing caller identity authorizes task access — src/tasks/... (sha=72b8eb27f754fcff02077b69209d3d559d5b5ad9)",
+      "expected_head_sha": "72b8eb27f754fcff02077b69209d3d559d5b5ad9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T06:00:38.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/no-stored-default",
+        "head_sha": "72b8eb27f754fcff02077b69209d3d559d5b5ad9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
