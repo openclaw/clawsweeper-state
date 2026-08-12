@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T01:08:26.545Z",
+  "updated_at": "2026-08-12T01:09:57.361Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5247961908:2026-08-11T01:22:12Z:re_review",
-      "comment_id": "5247961908",
-      "comment_version_key": "5247961908:2026-08-11T01:22:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5247961908",
-      "comment_created_at": "2026-08-11T01:22:12Z",
-      "comment_updated_at": "2026-08-11T01:22:12Z",
-      "comment_body_sha256": "e0e81fbb70c39d6a4e268b66c32e1c8b116906512f9bd05b6eab39d72c0fead7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T20:04:58.996Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122221:5258226036:2026-08-11T20:04:32Z:clawsweeper_needs_human",
       "comment_id": "5258226036",
@@ -32588,6 +32561,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122359:5260893272:2026-08-12T01:09:11Z:clawsweeper_needs_human",
+      "comment_id": "5260893272",
+      "comment_version_key": "5260893272:2026-08-12T01:09:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122359#issuecomment-5260893272",
+      "comment_created_at": "2026-08-12T01:09:11Z",
+      "comment_updated_at": "2026-08-12T01:09:11Z",
+      "comment_body_sha256": "de02a9f6739145c03c23c84f424687f4a10bc2352ab2003326d633220f21d0bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has a failing checks-node-compact-small-3 aggregate check and failing CI gate despite the supplied UI-specific checks passing; resolve or classify that failure befor... (sha=edf04aa4919af9cb8d44433db941fc39abc406a1)",
+      "expected_head_sha": "edf04aa4919af9cb8d44433db941fc39abc406a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T01:09:57.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-logs-initial-load-race",
+        "head_sha": "edf04aa4919af9cb8d44433db941fc39abc406a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
