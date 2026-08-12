@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T07:12:52.638Z",
+  "updated_at": "2026-08-12T07:12:59.935Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113207:5107465378:2026-07-28T17:24:11Z:re_review",
-      "comment_id": "5107465378",
-      "comment_version_key": "5107465378:2026-07-28T17:24:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113207#issuecomment-5107465378",
-      "comment_created_at": "2026-07-28T17:24:11Z",
-      "comment_updated_at": "2026-07-28T17:24:11Z",
-      "comment_body_sha256": "459ffe8e9f94587d52ac159962c48fd027a0cc3d00d59c8de2d1c9c87f14efc6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113207,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T02:56:52.452Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113207:5240569075:2026-08-10T12:55:23Z:re_review",
       "comment_id": "5240569075",
@@ -30939,6 +30912,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:366:5262114055:2026-08-12T07:12:13Z:clawsweeper_needs_human",
+      "comment_id": "5262114055",
+      "comment_version_key": "5262114055:2026-08-12T07:12:13Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/366#issuecomment-5262114055",
+      "comment_created_at": "2026-08-12T04:00:35Z",
+      "comment_updated_at": "2026-08-12T07:12:13Z",
+      "comment_body_sha256": "32a6ba5158abefd44660c152d9d8c5e6d392148ade0db6126a92ab6008b08443",
+      "repo": "steipete/oracle",
+      "issue_number": 366,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject Grok at MCP’s ChatGPT-only browser boundary (P1)** - This shared predicate now accepts Grok for browser mode, so MCP no longer rejects it during option resolution. MCP still builds ChatGPT configuration a...; Review finding: [P1] Reject Grok at MCP’s ChatGPT-only browser boundary — src/cli/runOptions.ts:80-81 - [medium] MCP can cross authenticated provider boundaries — src/cli/runOptio... (sha=01beb60e9fdb29ab67dc5f588f8eb8a9d4856fc7)",
+      "expected_head_sha": "01beb60e9fdb29ab67dc5f588f8eb8a9d4856fc7",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-12T07:12:59.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/feat-grok-web-browser",
+        "head_sha": "01beb60e9fdb29ab67dc5f588f8eb8a9d4856fc7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
