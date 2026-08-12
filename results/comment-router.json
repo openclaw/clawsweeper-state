@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T00:07:56.908Z",
+  "updated_at": "2026-08-12T00:08:23.564Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5230535654:2026-08-09T08:15:31Z:re_review",
-      "comment_id": "5230535654",
-      "comment_version_key": "5230535654:2026-08-09T08:15:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5230535654",
-      "comment_created_at": "2026-08-09T08:15:31Z",
-      "comment_updated_at": "2026-08-09T08:15:31Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-11T20:04:07.741Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5231885137:2026-08-09T13:56:53Z:re_review",
       "comment_id": "5231885137",
@@ -32069,6 +32042,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1110:5201282392:2026-08-12T00:07:47Z:clawsweeper_auto_repair",
+      "comment_id": "5201282392",
+      "comment_version_key": "5201282392:2026-08-12T00:07:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1110#issuecomment-5201282392",
+      "comment_created_at": "2026-08-06T06:43:54Z",
+      "comment_updated_at": "2026-08-12T00:07:47Z",
+      "comment_body_sha256": "d1618a352759c85cf051862cc1adb7884f862bbafe48f73bb5e1bd9bdbdf9ae3",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2829648f556e96f929fdb18de64fb3ee2c36a3aa)",
+      "expected_head_sha": "2829648f556e96f929fdb18de64fb3ee2c36a3aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T00:08:23.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "calebeden-remove-legacy-chat-ui",
+        "head_sha": "2829648f556e96f929fdb18de64fb3ee2c36a3aa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
