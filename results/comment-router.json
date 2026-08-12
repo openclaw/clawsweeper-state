@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T00:56:43.331Z",
+  "updated_at": "2026-08-12T00:56:53.082Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119341:5257302289:2026-08-11T18:35:56Z:re_review",
-      "comment_id": "5257302289",
-      "comment_version_key": "5257302289:2026-08-11T18:35:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119341#issuecomment-5257302289",
-      "comment_created_at": "2026-08-11T18:35:56Z",
-      "comment_updated_at": "2026-08-11T18:35:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119341,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T20:04:23.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-contract",
-        "head_sha": "b1e5c97dd4f134441d8af462a87478c9077d777f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120805:5257317226:2026-08-11T18:37:18Z:re_review",
       "comment_id": "5257317226",
@@ -32589,6 +32542,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/control-ui-slash-command-menu",
         "head_sha": "1cb82bf1dc3ad34506f67884f7c6a2044b373373",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122361:5260810936:2026-08-12T00:56:05Z:clawsweeper_needs_human",
+      "comment_id": "5260810936",
+      "comment_version_key": "5260810936:2026-08-12T00:56:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122361#issuecomment-5260810936",
+      "comment_created_at": "2026-08-12T00:56:05Z",
+      "comment_updated_at": "2026-08-12T00:56:05Z",
+      "comment_body_sha256": "43a591fc6acd4951422e73975c757a9bfcffc731ba0e139d51f22f43433d1691",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The submitted PR already owns the narrow repair; no separate ClawSweeper repair job is warranted. (sha=b8b2acf883b855de613492509fa3cdd027b63118)",
+      "expected_head_sha": "b8b2acf883b855de613492509fa3cdd027b63118",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T00:56:53.082Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-partial-native-images-122101",
+        "head_sha": "b8b2acf883b855de613492509fa3cdd027b63118",
         "cluster_id": null,
         "job_path": null
       }
