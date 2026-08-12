@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-12T09:15:18.853Z",
+  "updated_at": "2026-08-12T09:14:58.659Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:100583:4888933941:2026-08-12T04:57:28Z:clawsweeper_needs_human",
+      "comment_id": "4888933941",
+      "comment_version_key": "4888933941:2026-08-12T04:57:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/100583#issuecomment-4888933941",
+      "comment_created_at": "2026-07-06T03:55:08Z",
+      "comment_updated_at": "2026-08-12T04:57:28Z",
+      "comment_body_sha256": "71954011d951e970a6f7aa9578f6c7872703c5407ba9d2c97cf7bef719f127e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 100583,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes existing CLI cancellation semantics: rows classified as subagent-backed will now invoke administrative subagent control before task-state mutation. (sha=a4b58e832bf7eae1d88714268e14ab4f79221790)",
+      "expected_head_sha": "a4b58e832bf7eae1d88714268e14ab4f79221790",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T04:58:26.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/taskflow-cancel-reconcile",
+        "head_sha": "a4b58e832bf7eae1d88714268e14ab4f79221790",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:100583:4889002463:2026-07-06T04:12:26Z:re_review",
       "comment_id": "4889002463",
@@ -31723,39 +31756,6 @@
       "status": "skipped",
       "processed_at": "2026-08-12T09:14:58.659Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122565:5264746428:2026-08-12T09:14:38Z:clawsweeper_needs_human",
-      "comment_id": "5264746428",
-      "comment_version_key": "5264746428:2026-08-12T09:14:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122565#issuecomment-5264746428",
-      "comment_created_at": "2026-08-12T09:14:38Z",
-      "comment_updated_at": "2026-08-12T09:14:38Z",
-      "comment_body_sha256": "17c25c0e3af80f48e76feace2530ce72b6d6ac34be3a07f11b46f9fd79dcf521",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122565,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 33 net lines for cursor draining and page-shape preservation; the growth is directly tied to retaining a Gateway protocol field that current code discards. (sha=42441a56d1e78fe08d918d4b9ad6d1a48e7e101c)",
-      "expected_head_sha": "42441a56d1e78fe08d918d4b9ad6d1a48e7e101c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:15:18.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/paginate-active-tasks",
-        "head_sha": "42441a56d1e78fe08d918d4b9ad6d1a48e7e101c",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
