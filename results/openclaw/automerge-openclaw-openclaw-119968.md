@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119968"
 mode: "autonomous"
-run_id: "31584612521"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31584612521"
-head_sha: "a1795973a9e6bb00b73cd6adc21a4ea02ca78ced"
-workflow_conclusion: "success"
+run_id: "31640886550"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31640886550"
+head_sha: "3d09c5f72ab26d55c1fe57a624dfc52d6d82ee8d"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-12T09:55:56.831Z"
+published_at: "2026-08-12T21:18:52.301Z"
 canonical: "#119968"
-canonical_issue: "#119551"
+canonical_issue: null
 canonical_pr: "#119968"
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31584612521](https://github.com/openclaw/clawsweeper/actions/runs/31584612521)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31640886550](https://github.com/openclaw/clawsweeper/actions/runs/31640886550)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #119968
 
 ## Summary
 
-#119968 remains the canonical, open repair path. Its configured-model provenance must persist across ACP metadata rehydration; build a narrow repair on the contributor branch and keep the PR open for exact-head review.
+Make PR #119968 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Canonical: #119968
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/pull/119968 | fix_needed | planned | canonical | Repair the lifecycle owner rather than accepting a model-only rehydration path that silently changes explicit-owner behavior. |
-| https://github.com/openclaw/openclaw/issues/119551 | keep_closed | skipped | fixed_by_candidate | Historical source reproduction only; closure is not permitted or needed. |
-| https://github.com/openclaw/openclaw/pull/119599 | keep_closed | skipped | superseded | Already closed historical contributor work; preserve its contribution as context without mutating it. |
-| https://github.com/openclaw/openclaw/issues/119994 | keep_independent | planned | independent | No closure or repair action in this cluster. |
+| #119968 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
