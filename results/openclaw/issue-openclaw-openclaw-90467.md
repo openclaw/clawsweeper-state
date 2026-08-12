@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-90467"
 mode: "autonomous"
-run_id: "31556721967"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31556721967"
+run_id: "31558863453"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31558863453"
 head_sha: "9c7445bdca92d05b5a38317b498d7f41fc19bc2b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-12T02:32:55.673Z"
+published_at: "2026-08-12T03:12:41.527Z"
 canonical: "https://github.com/openclaw/openclaw/issues/90467"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/90467"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31556721967](https://github.com/openclaw/clawsweeper/actions/runs/31556721967)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31558863453](https://github.com/openclaw/clawsweeper/actions/runs/31558863453)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/90467
 
 ## Summary
 
-Verified the issue remains reproducible by source inspection, but this checkout is read-only. The required patch and dependency install were blocked before any files changed.
+#90467 remains reproducible on main: cron recipient suggestions combine configured channel account names/IDs with prior job targets. The existing conversations.list Gateway contract already returns canonical channel targets, so a narrow UI repair is appropriate. Implementation and validation are blocked because this checkout is read-only and lacks test dependencies (tsx); the executable new-PR artifact is ready.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Verified the issue remains reproducible by source inspection, but this checkout 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #90467 | fix_needed | blocked | canonical | Only implementation and validation are blocked by the read-only environment; the canonical issue and repair scope are clear. |
-| #90841 | keep_closed | skipped | superseded | Historical context only; no action is permitted on an already closed PR. |
-| #91448 | keep_closed | skipped | superseded | Historical context only; no action is permitted on an already closed PR. |
-| cluster:issue-openclaw-openclaw-90467 | build_fix_artifact | planned | canonical | A writable executor can implement the narrow fix without further product or protocol decisions. |
+| #90467 | fix_needed | blocked | canonical | The repair is narrow and source-reproducible, but this worker cannot modify the read-only checkout or install the missing test runtime. |
+| cluster:issue-openclaw-openclaw-90467 | build_fix_artifact | planned | canonical |  |
+| #90841 | keep_closed | skipped | related | Already closed; no closeout action is permitted. |
+| #91448 | keep_closed | skipped | related | Already closed; no closeout action is permitted. |
 
 ## Needs Human
 
