@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T16:15:55.347Z",
+  "updated_at": "2026-08-12T16:15:56.028Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93218:4813601562:2026-06-26T21:35:50Z:re_review",
-      "comment_id": "4813601562",
-      "comment_version_key": "4813601562:2026-06-26T21:35:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93218#issuecomment-4813601562",
-      "comment_created_at": "2026-06-26T21:35:50Z",
-      "comment_updated_at": "2026-06-26T21:35:50Z",
-      "comment_body_sha256": "cc5039897e445200e26f451ef258779a847686a71088f7c9948550ca9c1bbbd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93218,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T12:08:18.890Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93218:4814800743:2026-06-27T02:37:43Z:re_review",
       "comment_id": "4814800743",
@@ -31969,6 +31942,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3438:5219412032:2026-08-12T16:15:05Z:clawsweeper_needs_human",
+      "comment_id": "5219412032",
+      "comment_version_key": "5219412032:2026-08-12T16:15:05Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3438#issuecomment-5219412032",
+      "comment_created_at": "2026-08-07T16:13:44Z",
+      "comment_updated_at": "2026-08-12T16:15:05Z",
+      "comment_body_sha256": "6efbdfef1d7da824c554640385ed759b71fb0cfff01b9b21f40a2d47b95d3691",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the newly executed action revision** - Both changed uses: references execute upstream CodeQL code in a job with security-events: write; verify the release commit before accepting...; Review finding: [medium] Review the newly executed action revision — .github/workflows/codeql-light.yml:91 (sha=c3b6a012227ec68f34510a3d01cd80292a729c5b)",
+      "expected_head_sha": "c3b6a012227ec68f34510a3d01cd80292a729c5b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T16:15:56.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github-actions-97c731b4de",
+        "head_sha": "c3b6a012227ec68f34510a3d01cd80292a729c5b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
