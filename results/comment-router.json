@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T04:58:35.410Z",
+  "updated_at": "2026-08-12T04:58:41.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119528:5260069343:2026-08-11T23:32:28Z:re_review",
-      "comment_id": "5260069343",
-      "comment_version_key": "5260069343:2026-08-11T23:32:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119528#issuecomment-5260069343",
-      "comment_created_at": "2026-08-11T23:32:28Z",
-      "comment_updated_at": "2026-08-11T23:32:28Z",
-      "comment_body_sha256": "79f84eb47d6c86a527f7f3c8df8c2bb45296eea2d02a8ef69712ae5cdc0baea5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119528,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T00:05:03.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-94679",
-        "head_sha": "f564c9782644d1ba94834a171984da5ddcc29869",
-        "cluster_id": "issue-openclaw-openclaw-94679",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-94679.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:40644:4322903435:2026-08-11T23:58:51Z:autoclose",
       "comment_id": "4322903435",
@@ -31235,6 +31188,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111786:5021975232:2026-08-12T04:55:19Z:clawsweeper_needs_human",
+      "comment_id": "5021975232",
+      "comment_version_key": "5021975232:2026-08-12T04:55:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111786#issuecomment-5021975232",
+      "comment_created_at": "2026-07-20T11:59:40Z",
+      "comment_updated_at": "2026-08-12T04:55:19Z",
+      "comment_body_sha256": "7691016c16f269bfadcd3678200fc490edea15c308a049a980d783fabb1bb1b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject programmatic lookups with appended RHS content (P1)** - The assignment patterns stop before the quoted key in bracket/call syntax, but the new matchEnd &lt;= lookupEnd branch treats that partial prefix as...; Review finding: [P1] Reject programmatic lookups with appended RHS content — src/logging/redact.ts:628 - [high] Partial lookup match bypasses secret masking — src/logging/redact.t... (sha=13be98ee06f945f333eccf4a1ae9ebbc7dbeff68)",
+      "expected_head_sha": "13be98ee06f945f333eccf4a1ae9ebbc7dbeff68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T04:58:41.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redact-env-lookups-20260720",
+        "head_sha": "13be98ee06f945f333eccf4a1ae9ebbc7dbeff68",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
