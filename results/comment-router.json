@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T12:10:25.198Z",
+  "updated_at": "2026-08-12T12:10:29.500Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122388:5261667989:2026-08-12T08:01:58Z:clawsweeper_needs_human",
-      "comment_id": "5261667989",
-      "comment_version_key": "5261667989:2026-08-12T08:01:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122388#issuecomment-5261667989",
-      "comment_created_at": "2026-08-12T02:57:49Z",
-      "comment_updated_at": "2026-08-12T08:01:58Z",
-      "comment_body_sha256": "f63f52fcd95077d898baa29549e4671c2d79259ce49b5fae7602ee823fac2d4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR includes a pre-fix production trace, but its after-fix evidence is a focused test with the embedded agent mocked; add redacted real reco... (sha=a786a464858421a296e7a21c22da189c6bcbe0b6)",
-      "expected_head_sha": "a786a464858421a296e7a21c22da189c6bcbe0b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T08:03:25.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-stale-claim-tolerance",
-        "head_sha": "a786a464858421a296e7a21c22da189c6bcbe0b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122508:5263497949:2026-08-12T08:02:29Z:clawsweeper_auto_repair",
       "comment_id": "5263497949",
@@ -31261,6 +31228,54 @@
       "status": "skipped",
       "processed_at": "2026-08-12T12:10:25.198Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122485:5266612102:2026-08-12T12:09:45Z:re_review",
+      "comment_id": "5266612102",
+      "comment_version_key": "5266612102:2026-08-12T12:09:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122485#issuecomment-5266612102",
+      "comment_created_at": "2026-08-12T12:09:45Z",
+      "comment_updated_at": "2026-08-12T12:09:45Z",
+      "comment_body_sha256": "1324a12688ffe45d90231dcf5cbba3ec182d8288986243ae609f5ef3915347bf",
+      "source_delivery_id": "b5c17e30-9646-11f1-9eaf-d7fb4c72182a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122485,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-12T12:10:26.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/backup-ops-git-provider",
+        "head_sha": "737d3563d73bdcac0c9e8602b431cf599ebcf67e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
