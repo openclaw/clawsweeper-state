@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T13:16:55.890Z",
+  "updated_at": "2026-08-12T13:17:00.711Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2340:5016624850:2026-08-12T09:14:36Z:clawsweeper_auto_repair",
-      "comment_id": "5016624850",
-      "comment_version_key": "5016624850:2026-08-12T09:14:36Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2340#issuecomment-5016624850",
-      "comment_created_at": "2026-07-19T17:07:16Z",
-      "comment_updated_at": "2026-08-12T09:14:36Z",
-      "comment_body_sha256": "c219eec1b70774f3a231722b00a82896a9358482b145562ff4d3ac27581c8153",
-      "repo": "steipete/codexbar",
-      "issue_number": 2340,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=76c12ef6e4240745cddbd82f70615bcbad5e3a0b)",
-      "expected_head_sha": "76c12ef6e4240745cddbd82f70615bcbad5e3a0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T09:22:21.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr-reauth-buttons",
-        "head_sha": "76c12ef6e4240745cddbd82f70615bcbad5e3a0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:steipete/codexbar:2377:5090940716:2026-07-27T11:52:35Z:re_review",
       "comment_id": "5090940716",
@@ -30934,6 +30901,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T13:16:55.889Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122556:5264690143:2026-08-12T13:16:22Z:clawsweeper_needs_human",
+      "comment_id": "5264690143",
+      "comment_version_key": "5264690143:2026-08-12T13:16:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122556#issuecomment-5264690143",
+      "comment_created_at": "2026-08-12T09:09:07Z",
+      "comment_updated_at": "2026-08-12T13:16:22Z",
+      "comment_body_sha256": "00436f827645fe4a3bcd591d2b24cb4538e32edeb8f7deaef17e5ca61221b406",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Mocked Vitest output supports the regression, but no after-fix Matrix-client or production-transport trace demonstrates draft retention after h... (sha=491ae1a45f8dc0f0c7c7ddb98d70df90fa2b9df7)",
+      "expected_head_sha": "491ae1a45f8dc0f0c7c7ddb98d70df90fa2b9df7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T13:17:00.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/122498-matrix-draft-redaction",
+        "head_sha": "491ae1a45f8dc0f0c7c7ddb98d70df90fa2b9df7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
