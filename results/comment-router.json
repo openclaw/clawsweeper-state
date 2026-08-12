@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T19:59:32.623Z",
+  "updated_at": "2026-08-12T20:00:23.834Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5206330377:2026-08-06T14:48:14Z:re_review",
-      "comment_id": "5206330377",
-      "comment_version_key": "5206330377:2026-08-06T14:48:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5206330377",
-      "comment_created_at": "2026-08-06T14:48:14Z",
-      "comment_updated_at": "2026-08-06T14:48:14Z",
-      "comment_body_sha256": "6fafb09526aa8b3cb0747402290a80375e94c5e703062d953946aa06d1a04121",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T16:15:56.547Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5220364147:2026-08-07T17:54:54Z:re_review",
       "comment_id": "5220364147",
@@ -30522,6 +30495,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122768:5271702851:2026-08-12T19:59:31Z:clawsweeper_needs_human",
+      "comment_id": "5271702851",
+      "comment_version_key": "5271702851:2026-08-12T19:59:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122768#issuecomment-5271702851",
+      "comment_created_at": "2026-08-12T19:20:26Z",
+      "comment_updated_at": "2026-08-12T19:59:31Z",
+      "comment_body_sha256": "3cb5ef8feb89c53ab813af4dd75e8d28bca26a86597622af472f251aab088e30",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Enable SSH before the documented bootstrap (P1)** - wrangler.jsonc leaves SSH disabled, so the README’s immediate wrangler containers ssh command cannot establish the first interactive session. Match the public...; Review finding: [P1] Enable SSH before the documented bootstrap — scripts/cloudflare/README.md:102-108 - [P2] Lock the deploy-tool dependency graph — scripts/cloudflare/package.js... (sha=b39b22b6bddfc40ae1fabca2e748c3c1ed49e589)",
+      "expected_head_sha": "b39b22b6bddfc40ae1fabca2e748c3c1ed49e589",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T20:00:23.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/cloudflare-deploy-template",
+        "head_sha": "b39b22b6bddfc40ae1fabca2e748c3c1ed49e589",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
