@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-12T03:21:51.937Z",
+  "updated_at": "2026-08-12T03:22:44.714Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122023:5259634427:2026-08-11T22:33:29Z:re_review",
-      "comment_id": "5259634427",
-      "comment_version_key": "5259634427:2026-08-11T22:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122023#issuecomment-5259634427",
-      "comment_created_at": "2026-08-11T22:33:29Z",
-      "comment_updated_at": "2026-08-11T22:33:29Z",
-      "comment_body_sha256": "5dfc6749fd90c3c0e24961fc1f7631777d1b9e07b1de50ddc40b3bb19c4cf989",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122023,
-      "author": "xydigit-zt",
-      "author_id": 294751694,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-11T22:59:37.862Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-121617",
-        "head_sha": "0b29760bcbf91a6c99b50167793b0596bd120d48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122189:5259654921:2026-08-11T22:36:00Z:re_review",
       "comment_id": "5259654921",
@@ -31386,6 +31339,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T03:21:51.937Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/codexbar:2855:5249547182:2026-08-12T03:21:57Z:clawsweeper_needs_human",
+      "comment_id": "5249547182",
+      "comment_version_key": "5249547182:2026-08-12T03:21:57Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2855#issuecomment-5249547182",
+      "comment_created_at": "2026-08-11T06:00:53Z",
+      "comment_updated_at": "2026-08-12T03:21:57Z",
+      "comment_body_sha256": "ad531df2e7df77d823e2ec3d1ec4ded7ec45c03e237f11a2f6b515e47d2c13af",
+      "repo": "steipete/codexbar",
+      "issue_number": 2855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The stacked design intentionally lets the Overview row preference affect rows while the spend summary and share payload cover all enabled or tracked providers; maintainers should expl... (sha=36cf2cdfb8088092a0eb792a3d6304521ceccbc0)",
+      "expected_head_sha": "36cf2cdfb8088092a0eb792a3d6304521ceccbc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T03:22:44.714Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/token-cost-breakdown",
+        "head_sha": "36cf2cdfb8088092a0eb792a3d6304521ceccbc0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
