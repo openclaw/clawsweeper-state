@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122618",
+  "mode": "autonomous",
+  "run_id": "31599955656",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31599955656",
+  "head_sha": "ac340908bf694c902f5a673374be1639ef9f220f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122618.md",
+  "published_at": "2026-08-12T13:22:52.406Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122618",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122618",
+  "canonical_pr": null,
+  "summary": "Confirmed on main fb9a62e9956883c1b0aed5fa742d6e527cb9e86d: the final suffix cap can discard the entire structured summary body. A narrow two-file fix is planned, but this worker has a read-only checkout and focused Vitest cannot start because `tsx` is unavailable.",
+  "actions": [
+    {
+      "target": "#122618",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122618",
+      "candidate_fix": null,
+      "reason": "The report is a reproducible existing-behavior bug with one owner-boundary repair path."
+    },
+    {
+      "target": "#122618",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122618",
+      "candidate_fix": null,
+      "reason": "Use a half-budget body floor only when necessary, retain the UTF-16-safe suffix tail, and preserve the full suffix when it already fits beside the body."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122618",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122618",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this narrow repair and open the single required ClawSweeper fix PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
