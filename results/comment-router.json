@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T09:13:36.007Z",
+  "updated_at": "2026-08-12T09:13:48.337Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121562:5239154441:2026-08-10T10:49:51Z:re_review",
-      "comment_id": "5239154441",
-      "comment_version_key": "5239154441:2026-08-10T10:49:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121562#issuecomment-5239154441",
-      "comment_created_at": "2026-08-10T10:49:51Z",
-      "comment_updated_at": "2026-08-10T10:49:51Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121562,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T04:55:58.227Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121562:5239422705:2026-08-10T11:18:06Z:re_review",
       "comment_id": "5239422705",
@@ -31720,6 +31693,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121299:5234772815:2026-08-12T09:13:00Z:clawsweeper_needs_human",
+      "comment_id": "5234772815",
+      "comment_version_key": "5234772815:2026-08-12T09:13:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121299#issuecomment-5234772815",
+      "comment_created_at": "2026-08-10T00:53:18Z",
+      "comment_updated_at": "2026-08-12T09:13:00Z",
+      "comment_body_sha256": "cd679df7f3e50bb72e0563f5ea8ec02c2917d8cb8dd78b2567ab04f14d138fe9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The bug fix adds net +142 production lines to snapshot lifecycle code; its scope, config-rebind, and pending-build fence must preserve the existing full-refresh fallback and generatio... (sha=733325c3b00c728855a5f9b31b867948a7706c5a)",
+      "expected_head_sha": "733325c3b00c728855a5f9b31b867948a7706c5a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T09:13:48.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reload-prepared-model-scope-120154",
+        "head_sha": "733325c3b00c728855a5f9b31b867948a7706c5a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
