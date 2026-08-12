@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T16:07:07.766Z",
+  "updated_at": "2026-08-12T16:07:08.789Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5265901142:2026-08-12T11:10:18Z:re_review",
-      "comment_id": "5265901142",
-      "comment_version_key": "5265901142:2026-08-12T11:10:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5265901142",
-      "comment_created_at": "2026-08-12T11:10:18Z",
-      "comment_updated_at": "2026-08-12T11:10:18Z",
-      "comment_body_sha256": "94dbc06376b92d94fc560d7b28e93e1f74bab5868f42cf20142f6a5adc49f71e",
-      "source_delivery_id": "6784c810-963e-11f1-9969-8d1b9c929a33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T11:10:49.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "991cc6d54835af155387923887e1c4dd98e7b095",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118676:5265906882:2026-08-12T11:10:54Z:re_review",
       "comment_id": "5265906882",
@@ -32093,6 +32045,39 @@
         "kind": "pull_request",
         "branch": "agent/fix-slack-socket-mode-duplicate-reconnec-20260812120041-69f7f9",
         "head_sha": "cff1b49ace68a2d527731c30554ce201a333ea85",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122668:5269291359:2026-08-12T16:03:39Z:clawsweeper_needs_human",
+      "comment_id": "5269291359",
+      "comment_version_key": "5269291359:2026-08-12T16:03:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122668#issuecomment-5269291359",
+      "comment_created_at": "2026-08-12T16:03:39Z",
+      "comment_updated_at": "2026-08-12T16:03:39Z",
+      "comment_body_sha256": "056aa1d632480468f19cc56ec8e06fc25323368cbc1185018c8f1e0c52662fe3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require retained state before bypassing a consult (P2)** - The marker branch returns exact-speech-echo even when no exact-speech text is retained. That lets a provider tool call containing the marker and an Answ...; Review finding: [P2] Require retained state before bypassing a consult — src/talk/exact-speech-protocol.ts:28-31 - [medium] Internal replay is not bound to session state — src/tal... (sha=33e55a4bb3d9aea3461fe7bf23027a38b1e0825e)",
+      "expected_head_sha": "33e55a4bb3d9aea3461fe7bf23027a38b1e0825e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T16:07:08.789Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/zealous-kapitsa-d49329",
+        "head_sha": "33e55a4bb3d9aea3461fe7bf23027a38b1e0825e",
         "cluster_id": null,
         "job_path": null
       }
