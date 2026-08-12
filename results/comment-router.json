@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-08-12T18:06:57.608Z",
+  "updated_at": "2026-08-12T18:06:59.333Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122356:5267347690:2026-08-12T13:18:25Z:re_review",
-      "comment_id": "5267347690",
-      "comment_version_key": "5267347690:2026-08-12T13:18:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122356#issuecomment-5267347690",
-      "comment_created_at": "2026-08-12T13:18:25Z",
-      "comment_updated_at": "2026-08-12T13:18:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "source_delivery_id": "4d7b43b0-9650-11f1-842b-2190c1370db8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122356,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T13:18:56.812Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-member-durability-real-path",
-        "head_sha": "ebc1f36343ae20e228dbf08b2bf60dfde99c1fa6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122627:5267345684:2026-08-12T13:18:14Z:clawsweeper_needs_human",
       "comment_id": "5267345684",
@@ -31586,6 +31538,39 @@
       "status": "skipped",
       "processed_at": "2026-08-12T18:06:57.608Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:431:5270720687:2026-08-12T18:06:12Z:clawsweeper_needs_human",
+      "comment_id": "5270720687",
+      "comment_version_key": "5270720687:2026-08-12T18:06:12Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/431#issuecomment-5270720687",
+      "comment_created_at": "2026-08-12T18:06:12Z",
+      "comment_updated_at": "2026-08-12T18:06:12Z",
+      "comment_body_sha256": "53435ada5a47f67f7cc90675e4b24d492219d41dfd1388a643d86fa1b2602061",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 431,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The native-only security boundary now relies on the two allowlisted strings remaining compiler metadata; any future addition should require signed-artifact evidence and a near-miss re... (sha=ae53322a7f07eaceb00728a88f56b4dde543eb4d)",
+      "expected_head_sha": "ae53322a7f07eaceb00728a88f56b4dde543eb4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T18:06:59.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-policy-exact-metadata",
+        "head_sha": "ae53322a7f07eaceb00728a88f56b4dde543eb4d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
