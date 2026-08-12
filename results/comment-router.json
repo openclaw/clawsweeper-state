@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-12T22:41:07.906Z",
+  "updated_at": "2026-08-12T22:43:26.729Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5232908065:2026-08-09T17:57:27Z:re_review",
-      "comment_id": "5232908065",
-      "comment_version_key": "5232908065:2026-08-09T17:57:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5232908065",
-      "comment_created_at": "2026-08-09T17:57:27Z",
-      "comment_updated_at": "2026-08-09T17:57:27Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T18:10:50.685Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5235889729:2026-08-10T04:31:25Z:re_review",
       "comment_id": "5235889729",
@@ -30858,6 +30831,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:432:5273397795:2026-08-12T22:42:48Z:clawsweeper_needs_human",
+      "comment_id": "5273397795",
+      "comment_version_key": "5273397795:2026-08-12T22:42:48Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/432#issuecomment-5273397795",
+      "comment_created_at": "2026-08-12T22:14:30Z",
+      "comment_updated_at": "2026-08-12T22:42:48Z",
+      "comment_body_sha256": "5c3b77d933bfde6b12c71abad16a19ef42e8a782a539865298975da0f6088d1e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Agent sessions without persisted foreground authorization will now resume background-only, so prior foreground-dependent workflows require a newly authorized session. (sha=3c2a401e3709aaab94ce563c5572769b2b1ffc3c)",
+      "expected_head_sha": "3c2a401e3709aaab94ce563c5572769b2b1ffc3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T22:43:26.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-background-ceiling",
+        "head_sha": "3c2a401e3709aaab94ce563c5572769b2b1ffc3c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
