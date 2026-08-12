@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T07:57:25.454Z",
+  "updated_at": "2026-08-12T07:58:10.695Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-12T03:07:51Z:clawsweeper_needs_human",
-      "comment_id": "5224337448",
-      "comment_version_key": "5224337448:2026-08-12T03:07:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5224337448",
-      "comment_created_at": "2026-08-08T03:41:53Z",
-      "comment_updated_at": "2026-08-12T03:07:51Z",
-      "comment_body_sha256": "5325909ef37c3e748ea39270cf06941618c71887e77e71b68837c40b4bef098a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted Docker runner executes real OpenClaw modules against a simulated app-server and in-memory binding store, not a real Codex app-ser...; Review finding: [P1] Separate stale recovery from harness-owned compaction — src/agents/embedded-agent-runner/compact.queued.ts:586-592 - [low] Pin the proof toolchain transitivel... (sha=8e4623d3633940bed5eb3a839da6582f0645d21f)",
-      "expected_head_sha": "8e4623d3633940bed5eb3a839da6582f0645d21f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T03:08:59.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119977-codex-stale-binding-compaction",
-        "head_sha": "8e4623d3633940bed5eb3a839da6582f0645d21f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116093:5261771074:2026-08-12T03:09:16Z:re_review",
       "comment_id": "5261771074",
@@ -31001,6 +30968,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122528:5263947240:2026-08-12T07:57:23Z:clawsweeper_needs_human",
+      "comment_id": "5263947240",
+      "comment_version_key": "5263947240:2026-08-12T07:57:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122528#issuecomment-5263947240",
+      "comment_created_at": "2026-08-12T07:57:23Z",
+      "comment_updated_at": "2026-08-12T07:57:23Z",
+      "comment_body_sha256": "914ca34c049a161abb2b0210485cc359d0ee4ef27c1441ab14c8a09f2c3a905b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is reported behind main and one exact-head lint check is still in progress; merge only after GitHub recomputes a clean merge result and all required checks finish. (sha=9e9869a19dbc73fb6626af4741bac4032317df2e)",
+      "expected_head_sha": "9e9869a19dbc73fb6626af4741bac4032317df2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-12T07:58:10.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-compaction-staged-summaries",
+        "head_sha": "9e9869a19dbc73fb6626af4741bac4032317df2e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
