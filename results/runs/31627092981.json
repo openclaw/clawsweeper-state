@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122746",
+  "mode": "autonomous",
+  "run_id": "31627092981",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31627092981",
+  "head_sha": "e0dc54438e5e346f573af5e6d2cb07c6c1620a8f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122746.md",
+  "published_at": "2026-08-12T18:32:59.564Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/122746",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/122746",
+  "canonical_pr": null,
+  "summary": "Confirmed on main 2ce420091e136da4c83e65071c6caea68f3b1ac1: config validation omits the manifest default-enablement input that plugin inventory supplies. A narrow two-file repair is planned, but this checkout is read-only and lacks tsx; dependency recovery failed with EROFS, so no branch or PR was created.",
+  "actions": [
+    {
+      "target": "#113713",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closeout action is valid."
+    },
+    {
+      "target": "#121329",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closeout action is valid."
+    },
+    {
+      "target": "#122738",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#122746",
+      "candidate_fix": null,
+      "reason": "Already closed duplicate; preserve it as historical evidence only."
+    },
+    {
+      "target": "#122746",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122746",
+      "candidate_fix": null,
+      "reason": "The bug is real and narrowly repairable, but implementation and local validation are blocked by the read-only worker checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-122746",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#122746",
+      "candidate_fix": null,
+      "reason": "Prepare a narrow new PR once a writable checkout with dependencies is available."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
