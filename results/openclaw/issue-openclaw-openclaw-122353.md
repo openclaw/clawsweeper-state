@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122353"
 mode: "autonomous"
-run_id: "31552289045"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31552289045"
+run_id: "31553240528"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31553240528"
 head_sha: "9c7445bdca92d05b5a38317b498d7f41fc19bc2b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-12T01:10:44.608Z"
-canonical: "https://github.com/openclaw/openclaw/issues/122353"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/122353"
+published_at: "2026-08-12T01:26:26.673Z"
+canonical: "#122353"
+canonical_issue: "#122353"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31552289045](https://github.com/openclaw/clawsweeper/actions/runs/31552289045)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31553240528](https://github.com/openclaw/clawsweeper/actions/runs/31553240528)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/122353
+Canonical: #122353
 
 ## Summary
 
-Current main reproduces #122353: quoted prose causes `extractBalancedJsonPrefix` to return `{here}` before the later valid JSON object. The narrow Normalization Core repair is specified, but this worker checkout is read-only and lacks `tsx`, so no branch delta or validated PR can be produced here.
+#122353 is a current-main, non-security parser defect. Reproduction returns `{here}` from quoted prose. No change or PR could be produced because this worker filesystem is read-only and the missing test runtime cannot be installed (Corepack EROFS).
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Current main reproduces #122353: quoted prose causes `extractBalancedJsonPrefix`
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122353 | fix_needed | blocked | canonical | Implementation is blocked only by the restricted local checkout; the bug and repair scope are unambiguous. |
-| cluster:issue-openclaw-openclaw-122353 | build_fix_artifact | planned | canonical | A single narrow PR can repair the canonical issue once executed in a writable checkout. |
+| #122353 | fix_needed | blocked | canonical | The repair requires edits and validation, but the worker has no write access. The working tree remains clean. |
 
 ## Needs Human
 
