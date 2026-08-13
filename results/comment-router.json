@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T01:05:10.455Z",
+  "updated_at": "2026-08-13T01:05:43.236Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5084956255:2026-07-26T19:06:32Z:re_review",
-      "comment_id": "5084956255",
-      "comment_version_key": "5084956255:2026-07-26T19:06:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5084956255",
-      "comment_created_at": "2026-07-26T19:06:32Z",
-      "comment_updated_at": "2026-07-26T19:06:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:20:49.459Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5087274277:2026-07-27T04:29:03Z:re_review",
       "comment_id": "5087274277",
@@ -31578,6 +31551,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122889:5274669245:2026-08-13T01:04:54Z:clawsweeper_needs_human",
+      "comment_id": "5274669245",
+      "comment_version_key": "5274669245:2026-08-13T01:04:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122889#issuecomment-5274669245",
+      "comment_created_at": "2026-08-13T01:04:54Z",
+      "comment_updated_at": "2026-08-13T01:04:54Z",
+      "comment_body_sha256": "9304e55c401caaaa7ce20abc219de3019ebd185f621577208ef8fa2702be7d58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Migrated Telegram cache state is session-scoped, so exact-head channel/config checks should confirm the retained owner remains the import target. (sha=dbbb292408941a8054784c9c9cc1bc6269e0f3ff)",
+      "expected_head_sha": "dbbb292408941a8054784c9c9cc1bc6269e0f3ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T01:05:43.236Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-92e/restore-multi-agent-gateway-startup",
+        "head_sha": "dbbb292408941a8054784c9c9cc1bc6269e0f3ff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
