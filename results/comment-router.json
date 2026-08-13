@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:32:58.834Z",
+  "updated_at": "2026-08-13T00:33:50.085Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117585:5153284741:2026-08-01T20:30:03Z:re_review",
-      "comment_id": "5153284741",
-      "comment_version_key": "5153284741:2026-08-01T20:30:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117585#issuecomment-5153284741",
-      "comment_created_at": "2026-08-01T20:30:03Z",
-      "comment_updated_at": "2026-08-01T20:30:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117585,
-      "author": "dineshsuthar123",
-      "author_id": 142929222,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:20:14.603Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117585:5153309676:2026-08-01T20:37:03Z:re_review",
       "comment_id": "5153309676",
@@ -31206,6 +31179,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122877:5274434729:2026-08-13T00:33:13Z:clawsweeper_needs_human",
+      "comment_id": "5274434729",
+      "comment_version_key": "5274434729:2026-08-13T00:33:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122877#issuecomment-5274434729",
+      "comment_created_at": "2026-08-13T00:33:13Z",
+      "comment_updated_at": "2026-08-13T00:33:13Z",
+      "comment_body_sha256": "3e14ded81b937087070e95d78e01526f1d46d6a1769dcdd4ea5f0366e42bceba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes upgrade-sensitive migration behavior: legacy global Telegram caches with divergent configured route owners now intentionally stop for operator resolution instead of selec... (sha=e02962eb4b2e2475854adf8c2a2915bcfd1cf65a)",
+      "expected_head_sha": "e02962eb4b2e2475854adf8c2a2915bcfd1cf65a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:33:50.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-telegram-legacy-owner",
+        "head_sha": "e02962eb4b2e2475854adf8c2a2915bcfd1cf65a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
