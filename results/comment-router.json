@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T06:14:25.222Z",
+  "updated_at": "2026-08-13T06:14:28.218Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5230535505:2026-08-09T08:15:29Z:re_review",
-      "comment_id": "5230535505",
-      "comment_version_key": "5230535505:2026-08-09T08:15:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5230535505",
-      "comment_created_at": "2026-08-09T08:15:29Z",
-      "comment_updated_at": "2026-08-09T08:15:29Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:22:08.390Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5231885139:2026-08-09T13:56:53Z:re_review",
       "comment_id": "5231885139",
@@ -31152,6 +31125,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123019:5276645612:2026-08-13T06:13:50Z:clawsweeper_needs_human",
+      "comment_id": "5276645612",
+      "comment_version_key": "5276645612:2026-08-13T06:13:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123019#issuecomment-5276645612",
+      "comment_created_at": "2026-08-13T06:13:50Z",
+      "comment_updated_at": "2026-08-13T06:13:50Z",
+      "comment_body_sha256": "7b3550a8792ea3742497fc3034dcb655f56fae9561facc95480691b6ffe98259",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes stdout routing in installer and release packaging automation; exact-head CI should complete the package, audit, fresh-install, and update path before merge. (sha=19d4985d4cd4de27e539669f62c7e506b841429c)",
+      "expected_head_sha": "19d4985d4cd4de27e539669f62c7e506b841429c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T06:14:28.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/installer-pack-stdout-receipt",
+        "head_sha": "19d4985d4cd4de27e539669f62c7e506b841429c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
