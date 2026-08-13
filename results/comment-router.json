@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:09:04.788Z",
+  "updated_at": "2026-08-13T02:09:31.926Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122389:5261828307:2026-08-12T19:18:24Z:clawsweeper_needs_human",
-      "comment_id": "5261828307",
-      "comment_version_key": "5261828307:2026-08-12T19:18:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122389#issuecomment-5261828307",
-      "comment_created_at": "2026-08-12T03:15:16Z",
-      "comment_updated_at": "2026-08-12T19:18:24Z",
-      "comment_body_sha256": "8fbdd607b45a77163b40cf66518a2f6f12cbf8641837ffdd950d4141fbaf3f91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Clarify already-installed plugin authorization (P3)** - Late finding: this says policy is recorded only after installation succeeds, but the documented interstitial recovery re-runs the command after Codex has a...; Review finding: [P3] Clarify already-installed plugin authorization — docs/plugins/codex-native-plugins.md:213-217 - [medium] Verify catalog-derived installation authority — exten... (sha=52b5e320b76b4f9ee3a7cacbbbf966d74b9133a7)",
-      "expected_head_sha": "52b5e320b76b4f9ee3a7cacbbbf966d74b9133a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:25:57.920Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dynamic-plugin-marketplaces-owner-install",
-        "head_sha": "52b5e320b76b4f9ee3a7cacbbbf966d74b9133a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114492:5089920919:2026-08-12T19:22:24Z:clawsweeper_auto_repair",
       "comment_id": "5089920919",
@@ -32192,6 +32159,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113816:5275090037:2026-08-13T02:08:42Z:re_review",
+      "comment_id": "5275090037",
+      "comment_version_key": "5275090037:2026-08-13T02:08:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113816#issuecomment-5275090037",
+      "comment_created_at": "2026-08-13T02:08:42Z",
+      "comment_updated_at": "2026-08-13T02:08:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113816,
+      "author": "1052326311",
+      "author_id": 65798732,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T02:09:29.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/113553-copilot-memory-status",
+        "head_sha": "49e55289ac16f7e116705a7009f73f099b0cfdaa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
