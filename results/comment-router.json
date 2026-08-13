@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:12:45.046Z",
+  "updated_at": "2026-08-13T04:14:15.364Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122829:5273319650:2026-08-12T22:19:44Z:clawsweeper_needs_human",
-      "comment_id": "5273319650",
-      "comment_version_key": "5273319650:2026-08-12T22:19:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122829#issuecomment-5273319650",
-      "comment_created_at": "2026-08-12T22:04:55Z",
-      "comment_updated_at": "2026-08-12T22:19:44Z",
-      "comment_body_sha256": "63752254d51d3981bc8aab49e4a02f236a7fbc371ff84de79ac8ed547a4dd09b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the worker group alive when its leader PID is reused (P1)** - This repeats the prior P1 blocker: a detached leader can exit while its descendants retain the original group. Treating reused as dead here, and...; Review finding: [P1] Keep the worker group alive when its leader PID is reused — src/node-host/node-worker-supervisor.ts:186-187 - [high] Recovery abandons a live detached worker... (sha=41658e5b1d80ba98599a5cc9133eeffa7f8f540a)",
-      "expected_head_sha": "41658e5b1d80ba98599a5cc9133eeffa7f8f540a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T22:29:58.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-worker-supervisor",
-        "head_sha": "41658e5b1d80ba98599a5cc9133eeffa7f8f540a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122824:5273393385:2026-08-12T22:13:57Z:clawsweeper_auto_repair",
       "comment_id": "5273393385",
@@ -31803,6 +31770,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122524:5275870555:2026-08-13T04:13:21Z:re_review",
+      "comment_id": "5275870555",
+      "comment_version_key": "5275870555:2026-08-13T04:13:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122524#issuecomment-5275870555",
+      "comment_created_at": "2026-08-13T04:13:21Z",
+      "comment_updated_at": "2026-08-13T04:13:21Z",
+      "comment_body_sha256": "d698b7f53b637a3c32353c4fa20ade45c2f0ea17e4097fbd9cc06ae28b6d1938",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122524,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T04:14:12.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/control-ui-floating-composer",
+        "head_sha": "a6dcef0ea0d08311e34fee5bb26bdf9ddd577080",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
