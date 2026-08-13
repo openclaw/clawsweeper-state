@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:40:04.044Z",
+  "updated_at": "2026-08-13T00:40:22.273Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122350:5264246912:2026-08-12T08:24:57Z:re_review",
-      "comment_id": "5264246912",
-      "comment_version_key": "5264246912:2026-08-12T08:24:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122350#issuecomment-5264246912",
-      "comment_created_at": "2026-08-12T08:24:57Z",
-      "comment_updated_at": "2026-08-12T08:24:57Z",
-      "comment_body_sha256": "1d06c21c246cbe6e8c2ae4cb2913dc5fb4df452784a2c64379481559479811c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122350,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:20:38.085Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122350:5264710058:2026-08-12T09:11:11Z:re_review",
       "comment_id": "5264710058",
@@ -31258,6 +31231,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122879:5274496458:2026-08-13T00:39:42Z:clawsweeper_needs_human",
+      "comment_id": "5274496458",
+      "comment_version_key": "5274496458:2026-08-13T00:39:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122879#issuecomment-5274496458",
+      "comment_created_at": "2026-08-13T00:39:42Z",
+      "comment_updated_at": "2026-08-13T00:39:42Z",
+      "comment_body_sha256": "9ac41318096ad844937bf2bdb5f66e28492f72d150c0dcb99232bb5c9a45319e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122879,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check state reports four failed QA Smoke profiles and several incomplete checks; inspect or rerun exact-head CI before merge because their logs were unavailable during th... (sha=7d946623ae03fb3dfd5877ef23f2943ed1de6630)",
+      "expected_head_sha": "7d946623ae03fb3dfd5877ef23f2943ed1de6630",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:40:22.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-add-use-env-test-owner",
+        "head_sha": "7d946623ae03fb3dfd5877ef23f2943ed1de6630",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
