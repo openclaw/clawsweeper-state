@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T10:09:31.873Z",
+  "updated_at": "2026-08-13T10:09:34.685Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114523:5090396176:2026-08-13T05:03:21Z:clawsweeper_needs_human",
-      "comment_id": "5090396176",
-      "comment_version_key": "5090396176:2026-08-13T05:03:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114523#issuecomment-5090396176",
-      "comment_created_at": "2026-07-27T10:50:05Z",
-      "comment_updated_at": "2026-08-13T05:03:21Z",
-      "comment_body_sha256": "f492132961a8042a34d3c6c6734425b71f54dd7e8bfd6c8f4999ca33e166cd6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114523,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Filter recovered posts through context visibility (P1)** - The fetch maps every server post into history, although the normal inbound path only retains denied-sender history when supplemental context visibility...; Review finding: [P1] Filter recovered posts through context visibility — extensions/mattermost/src/mattermost/monitor-thread-backfill.ts:185-195 - [high] Recovered history bypasse... (sha=8e91935937c81689d05f63c2b3c08bd5c7067e7b)",
-      "expected_head_sha": "8e91935937c81689d05f63c2b3c08bd5c7067e7b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T05:08:07.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mattermost-thread-backfill-recovery",
-        "head_sha": "8e91935937c81689d05f63c2b3c08bd5c7067e7b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122350:5260377404:2026-08-13T05:05:29Z:clawsweeper_needs_human",
       "comment_id": "5260377404",
@@ -31965,6 +31932,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T10:09:31.873Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122350:5260377404:2026-08-13T10:08:32Z:clawsweeper_needs_human",
+      "comment_id": "5260377404",
+      "comment_version_key": "5260377404:2026-08-13T10:08:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122350#issuecomment-5260377404",
+      "comment_created_at": "2026-08-12T00:14:18Z",
+      "comment_updated_at": "2026-08-13T10:08:32Z",
+      "comment_body_sha256": "906a613e31a775b36c8172d907692798558895feb3f7f1b3e666e0c55383589e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122350,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The worker, cache, and generation handoff introduce a broad availability boundary; cold reads, refresh failures, and owner supersession need exact-head validation before merge. (sha=eb98352dad9328e88d0dd3298322a00c9e5fc943)",
+      "expected_head_sha": "eb98352dad9328e88d0dd3298322a00c9e5fc943",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T10:09:34.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-model-catalog-worker",
+        "head_sha": "eb98352dad9328e88d0dd3298322a00c9e5fc943",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
