@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107814"
-mode: "autonomous"
-run_id: "31658808822"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31658808822"
-head_sha: "637c3339dbef38ca3f7444510c8f7e72b95903c6"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-13T01:55:00.151Z"
+mode: "plan"
+run_id: "31659850670"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31659850670"
+head_sha: "56cb78d60734ddc62b5f1e49981bbb4556dcb58d"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-13T02:12:41.677Z"
 canonical: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31658808822](https://github.com/openclaw/clawsweeper/actions/runs/31658808822)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31659850670](https://github.com/openclaw/clawsweeper/actions/runs/31659850670)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/107814
 
 ## Summary
 
-Current main still loses valid streamed tool arguments when either terminal event supplies the nonempty JSON string "{}". A narrow shared-parser repair is planned, but this worker cannot safely implement it: the pinned SDK types and required sibling ../codex source are unavailable, and the read-only sandbox prevents dependency installation and focused-test execution.
+Plan a narrow shared Responses parser fix: prevent terminal "{}" snapshots from replacing valid streamed tool arguments, while retaining "{}" for no-delta parameterless calls. No GitHub mutation is proposed in this mode.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main still loses valid streamed tool arguments when either terminal even
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107814 | fix_needed | blocked | canonical | Implementation must first inspect the pinned SDK event types and sibling Codex runtime, then demonstrate the new regression fails before the repair. Those mandatory prerequisites cannot be completed in this read-only checkout. |
-| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | A dependency-equipped executor can implement this narrow owner-boundary fix after completing the required SDK and Codex source inspection. |
+| #107814 | fix_needed | planned | canonical | The issue is a real shared-parser regression with a narrow owner-boundary repair; no Spark-specific behavior, configuration, fallback, or changelog change is needed. |
+| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR after the executor completes dependency and Codex-source inspection. |
 
 ## Needs Human
 
