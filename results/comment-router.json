@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T09:14:44.777Z",
+  "updated_at": "2026-08-13T09:14:51.767Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119467:5275722286:2026-08-13T03:49:03Z:re_review",
-      "comment_id": "5275722286",
-      "comment_version_key": "5275722286:2026-08-13T03:49:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5275722286",
-      "comment_created_at": "2026-08-13T03:49:03Z",
-      "comment_updated_at": "2026-08-13T03:49:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T04:24:18.205Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-readability-depth-cap",
-        "head_sha": "918804b870e833c8698b040a757845724e7a24c2",
-        "cluster_id": "automerge-openclaw-openclaw-119467",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122983:5275938286:2026-08-13T04:23:44Z:clawsweeper_auto_repair",
       "comment_id": "5275938286",
@@ -31795,6 +31748,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T09:14:44.777Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119001:5172693459:2026-08-13T09:06:43Z:clawsweeper_needs_human",
+      "comment_id": "5172693459",
+      "comment_version_key": "5172693459:2026-08-13T09:06:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119001#issuecomment-5172693459",
+      "comment_created_at": "2026-08-03T23:08:34Z",
+      "comment_updated_at": "2026-08-13T09:06:43Z",
+      "comment_body_sha256": "a97468098bc2d5a748df3741b65e722c73f977ce035033a5e6d4cc6a4ffe6d6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Authorize the dependency graph change** - The branch adds runtime declarations in the root and Codex plugin plus lockfile importer entries; repository automation has blocked this exact...; Review finding: [medium] Authorize the dependency graph change — package.json:2018 - [medium] Verify the authority projection at the Codex boundary — src/talk/provider-types.ts:194 (sha=385a22db1a98440545ab13e3bd81b4f0303bdb7e)",
+      "expected_head_sha": "385a22db1a98440545ab13e3bd81b4f0303bdb7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T09:14:51.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/codex-native-realtime-voice",
+        "head_sha": "385a22db1a98440545ab13e3bd81b4f0303bdb7e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
