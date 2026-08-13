@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T22:39:44.952Z",
+  "updated_at": "2026-08-13T22:39:46.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123083:5278600075:2026-08-13T09:36:34Z:re_review",
-      "comment_id": "5278600075",
-      "comment_version_key": "5278600075:2026-08-13T09:36:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123083#issuecomment-5278600075",
-      "comment_created_at": "2026-08-13T09:36:34Z",
-      "comment_updated_at": "2026-08-13T09:36:34Z",
-      "comment_body_sha256": "0c1ec362bcd2ccc9277b3f873faef70989fd23d3d57cd3cb952d41b9d387aa0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123083,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T10:21:30.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-stored-dev-channel-git-routing",
-        "head_sha": "69c3827e59330dfffd6f4e65a4df4f1f649d195d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121274:5278689304:2026-08-13T09:45:40Z:re_review",
       "comment_id": "5278689304",
@@ -32599,6 +32552,39 @@
         "kind": "pull_request",
         "branch": "bkudiess-app-lifecycle-owners",
         "head_sha": "27afcd4b0ada3806a44a5675431011b7e76b3647",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123281:5286425185:2026-08-13T22:39:01Z:clawsweeper_needs_human",
+      "comment_id": "5286425185",
+      "comment_version_key": "5286425185:2026-08-13T22:39:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123281#issuecomment-5286425185",
+      "comment_created_at": "2026-08-13T21:10:04Z",
+      "comment_updated_at": "2026-08-13T22:39:01Z",
+      "comment_body_sha256": "daba0555c7644820a77db484bfd1df98779fc3d6f9d9d2e45ac8913804c8ac2e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123281,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent current-source, history, and scoped-policy verification could not run because the read-only sandbox failed before executing repository commands. (sha=5de47b4a1a0761a4e38a0805d073c104936823f9)",
+      "expected_head_sha": "5de47b4a1a0761a4e38a0805d073c104936823f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:39:46.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/123275-logs-tail-truncation",
+        "head_sha": "5de47b4a1a0761a4e38a0805d073c104936823f9",
         "cluster_id": null,
         "job_path": null
       }
