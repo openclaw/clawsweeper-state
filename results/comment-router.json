@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T08:25:37.829Z",
+  "updated_at": "2026-08-13T08:25:39.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4719181729:2026-06-16T13:19:10Z:re_review",
-      "comment_id": "4719181729",
-      "comment_version_key": "4719181729:2026-06-16T13:19:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4719181729",
-      "comment_created_at": "2026-06-16T13:19:10Z",
-      "comment_updated_at": "2026-06-16T13:19:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T04:20:23.500Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4722461827:2026-06-16T19:09:27Z:re_review",
       "comment_id": "4722461827",
@@ -31347,6 +31320,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T08:25:37.829Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120332:5221811898:2026-08-13T08:23:21Z:clawsweeper_needs_human",
+      "comment_id": "5221811898",
+      "comment_version_key": "5221811898:2026-08-13T08:23:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120332#issuecomment-5221811898",
+      "comment_created_at": "2026-08-07T20:42:37Z",
+      "comment_updated_at": "2026-08-13T08:23:21Z",
+      "comment_body_sha256": "da6152bc9e47478f20d4d6987d90d94eb01128d786caedac2d42dcccb6663151",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The proposed branch spans validation, SDK, registry, Gateway startup, and secret/runtime recovery; without an exact-head review, the added lifecycle behavior cannot be judged as a nec... (sha=eba673aedd712cd6b622cf4b5a57a28c09306d03)",
+      "expected_head_sha": "eba673aedd712cd6b622cf4b5a57a28c09306d03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T08:25:39.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/92884-prefer-over-channel-schema",
+        "head_sha": "eba673aedd712cd6b622cf4b5a57a28c09306d03",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
