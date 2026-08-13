@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T01:07:37.384Z",
+  "updated_at": "2026-08-13T01:07:42.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5114855235:2026-07-29T08:07:14Z:re_review",
-      "comment_id": "5114855235",
-      "comment_version_key": "5114855235:2026-07-29T08:07:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5114855235",
-      "comment_created_at": "2026-07-29T08:07:14Z",
-      "comment_updated_at": "2026-07-29T08:07:14Z",
-      "comment_body_sha256": "5be3bea08b8f8dd40d493aec590481a5f687b06571205b3df708eb54b0c57bf6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (clean, 8 commits); head is now ccf8b55758. tests green (context-engine-maintenance 26, transcript-rewrite 5, command-queue, diagnostic), tsgo clean on touched files",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:20:49.459Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5116307340:2026-07-29T10:12:24Z:re_review",
       "comment_id": "5116307340",
@@ -31628,6 +31601,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122862:5274344768:2026-08-13T01:06:57Z:clawsweeper_auto_repair",
+      "comment_id": "5274344768",
+      "comment_version_key": "5274344768:2026-08-13T01:06:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122862#issuecomment-5274344768",
+      "comment_created_at": "2026-08-13T00:22:00Z",
+      "comment_updated_at": "2026-08-13T01:06:57Z",
+      "comment_body_sha256": "7330f629c9072e63dd016b5d2356ff2c9a57033357ba2276e0798f022a154714",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=242042eee625397166942179a3bb06839baebc9a)",
+      "expected_head_sha": "242042eee625397166942179a3bb06839baebc9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T01:07:42.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-room-explicit-session-route",
+        "head_sha": "242042eee625397166942179a3bb06839baebc9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
