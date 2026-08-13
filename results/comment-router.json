@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:09:51.160Z",
+  "updated_at": "2026-08-13T03:10:29.305Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122823:5273042583:2026-08-12T21:32:57Z:clawsweeper_auto_repair",
-      "comment_id": "5273042583",
-      "comment_version_key": "5273042583:2026-08-12T21:32:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122823#issuecomment-5273042583",
-      "comment_created_at": "2026-08-12T21:32:57Z",
-      "comment_updated_at": "2026-08-12T21:32:57Z",
-      "comment_body_sha256": "9f1acff442c5b67ca77a2d6db2bccc28fbe60517d49ad6f2969ac178778e4b89",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=21e5f31497b7af9ed32dd1c3cb6302371f285bd1)",
-      "expected_head_sha": "21e5f31497b7af9ed32dd1c3cb6302371f285bd1",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-12T21:33:48.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/logbook-lazy-load-recovery",
-        "head_sha": "21e5f31497b7af9ed32dd1c3cb6302371f285bd1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101248:4899156452:2026-08-12T21:33:57Z:clawsweeper_needs_human",
       "comment_id": "4899156452",
@@ -31541,6 +31508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122425:5275474883:2026-08-13T03:09:47Z:re_review",
+      "comment_id": "5275474883",
+      "comment_version_key": "5275474883:2026-08-13T03:09:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122425#issuecomment-5275474883",
+      "comment_created_at": "2026-08-13T03:09:47Z",
+      "comment_updated_at": "2026-08-13T03:09:47Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122425,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T03:10:27.510Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inline-slash-skills",
+        "head_sha": "02e97163e868c9a4a7504e806559efe0abfa78b2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
