@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:28:28.686Z",
+  "updated_at": "2026-08-13T04:28:33.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122888:5274627610:2026-08-13T00:57:46Z:re_review",
-      "comment_id": "5274627610",
-      "comment_version_key": "5274627610:2026-08-13T00:57:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122888#issuecomment-5274627610",
-      "comment_created_at": "2026-08-13T00:57:46Z",
-      "comment_updated_at": "2026-08-13T00:57:46Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122888,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T00:58:26.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-network-suspend-harness",
-        "head_sha": "548ab00001634407bd3bb50229dafda99a823957",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122862:5274641132:2026-08-13T01:00:07Z:re_review",
       "comment_id": "5274641132",
@@ -30713,6 +30666,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122795:5272462712:2026-08-13T04:27:55Z:clawsweeper_auto_repair",
+      "comment_id": "5272462712",
+      "comment_version_key": "5272462712:2026-08-13T04:27:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122795#issuecomment-5272462712",
+      "comment_created_at": "2026-08-12T20:31:29Z",
+      "comment_updated_at": "2026-08-13T04:27:55Z",
+      "comment_body_sha256": "9d939adc310b5b0809ac9ca138aed90d406e5fe5b241e1dfc5f4a47f795562f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122795,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=166a92b90dfda1152bf5e1c4e4400d962ee09ec0)",
+      "expected_head_sha": "166a92b90dfda1152bf5e1c4e4400d962ee09ec0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T04:28:33.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/122618-compaction-body-floor",
+        "head_sha": "166a92b90dfda1152bf5e1c4e4400d962ee09ec0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
