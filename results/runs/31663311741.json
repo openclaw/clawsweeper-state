@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-119467",
+  "mode": "autonomous",
+  "run_id": "31663311741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31663311741",
+  "head_sha": "56cb78d60734ddc62b5f1e49981bbb4556dcb58d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md",
+  "published_at": "2026-08-13T04:07:44.707Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/119467",
+  "canonical_issue": null,
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/119467",
+  "summary": "Repair #119467 on the contributor branch, preserving @yetval’s authorship. The maintainer-requested constant-time top-of-stack close handling and production-bound regression remain actionable; merge and closure are disabled. Explicit acceptance of the 800-depth fallback compatibility change remains required before a merge-ready verdict.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119467",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119467",
+      "candidate_fix": "#119467",
+      "reason": "The canonical contributor PR is useful and editable, but its current exact head still needs the maintainer-directed guard simplification, regression proof, rebase, and review loop."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/119467",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#119467",
+      "candidate_fix": "#119467",
+      "reason": "Create a narrow contributor-branch repair plan; do not create a replacement PR or merge."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Before any merge-ready verdict, a maintainer must explicitly accept the intentional compatibility trade-off that pages reaching the 800-depth threshold use the existing fallback extraction instead of Readability. The current ClawSweeper review and human-review label identify this as unresolved."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

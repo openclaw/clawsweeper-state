@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-119467"
 mode: "autonomous"
-run_id: "31662517144"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31662517144"
+run_id: "31663311741"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31663311741"
 head_sha: "56cb78d60734ddc62b5f1e49981bbb4556dcb58d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-13T03:06:43.347Z"
-canonical: "#119467"
+published_at: "2026-08-13T04:07:44.707Z"
+canonical: "https://github.com/openclaw/openclaw/pull/119467"
 canonical_issue: null
-canonical_pr: "#119467"
-actions_total: 1
+canonical_pr: "https://github.com/openclaw/openclaw/pull/119467"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # automerge-openclaw-openclaw-119467
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31662517144](https://github.com/openclaw/clawsweeper/actions/runs/31662517144)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31663311741](https://github.com/openclaw/clawsweeper/actions/runs/31663311741)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #119467
+Canonical: https://github.com/openclaw/openclaw/pull/119467
 
 ## Summary
 
-Make PR #119467 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Repair #119467 on the contributor branch, preserving @yetval’s authorship. The maintainer-requested constant-time top-of-stack close handling and production-bound regression remain actionable; merge and closure are disabled. Explicit acceptance of the 800-depth fallback compatibility change remains required before a merge-ready verdict.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,9 @@ Make PR #119467 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119467 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/pull/119467 | fix_needed | planned | canonical | The canonical contributor PR is useful and editable, but its current exact head still needs the maintainer-directed guard simplification, regression proof, rebase, and review loop. |
+| https://github.com/openclaw/openclaw/pull/119467 | build_fix_artifact | planned | canonical | Create a narrow contributor-branch repair plan; do not create a replacement PR or merge. |
 
 ## Needs Human
 
-- none
+- Before any merge-ready verdict, a maintainer must explicitly accept the intentional compatibility trade-off that pages reaching the 800-depth threshold use the existing fallback extraction instead of Readability. The current ClawSweeper review and human-review label identify this as unresolved.
