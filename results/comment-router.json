@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-13T10:48:24.254Z",
+  "updated_at": "2026-08-13T10:44:03.127Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123008:5276391673:2026-08-13T05:35:53Z:re_review",
+      "comment_id": "5276391673",
+      "comment_version_key": "5276391673:2026-08-13T05:35:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123008#issuecomment-5276391673",
+      "comment_created_at": "2026-08-13T05:35:53Z",
+      "comment_updated_at": "2026-08-13T05:35:53Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123008,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T06:07:47.776Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/shared-new-session-composer",
+        "head_sha": "403f1d7e0fc50822ee6e23b569861dde9d56b9bc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123008:5276269194:2026-08-13T06:06:59Z:clawsweeper_needs_human",
       "comment_id": "5276269194",
@@ -31830,39 +31877,6 @@
         "kind": "pull_request",
         "branch": "steipete/inspiring-napier-b420d0",
         "head_sha": "f1796a9d0582d2c3d16986fe8f46fd4669b440e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2906:5279405014:2026-08-13T10:47:44Z:clawsweeper_needs_human",
-      "comment_id": "5279405014",
-      "comment_version_key": "5279405014:2026-08-13T10:47:44Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2906#issuecomment-5279405014",
-      "comment_created_at": "2026-08-13T10:47:44Z",
-      "comment_updated_at": "2026-08-13T10:47:44Z",
-      "comment_body_sha256": "ed794f458dc2bf4654f7d8bd353df2944e63093f0dee41246058feb5edb8ae03",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2906,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair remains; this owner-authored PR should proceed through normal review and its in-progress CI matrix. (sha=8d52f61cb6d7b6d1c583217decdaa0a063a597bc)",
-      "expected_head_sha": "8d52f61cb6d7b6d1c583217decdaa0a063a597bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T10:48:24.254Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2893-cumulative-blank",
-        "head_sha": "8d52f61cb6d7b6d1c583217decdaa0a063a597bc",
         "cluster_id": null,
         "job_path": null
       }
