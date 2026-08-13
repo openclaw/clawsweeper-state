@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T22:12:16.554Z",
+  "updated_at": "2026-08-13T22:12:18.286Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123068:5277860762:2026-08-13T08:34:37Z:clawsweeper_needs_human",
-      "comment_id": "5277860762",
-      "comment_version_key": "5277860762:2026-08-13T08:34:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123068#issuecomment-5277860762",
-      "comment_created_at": "2026-08-13T08:21:57Z",
-      "comment_updated_at": "2026-08-13T08:34:37Z",
-      "comment_body_sha256": "15e755e500bd675e2eb468d14591d9b16b4f34093841153a516ec9140a3bb3b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123068,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a trusted release gate, so merge should wait for the exact-head release-harness checks now in progress. (sha=c637377b9efc831961cc1287adfbb7eaa5a3e3b8)",
-      "expected_head_sha": "c637377b9efc831961cc1287adfbb7eaa5a3e3b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T09:27:49.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-upgrade-survivor-sessionfile-harness",
-        "head_sha": "c637377b9efc831961cc1287adfbb7eaa5a3e3b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123052:5277867012:2026-08-13T09:06:08Z:clawsweeper_auto_repair",
       "comment_id": "5277867012",
@@ -32570,6 +32537,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T22:12:16.554Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123313:5286515210:2026-08-13T22:10:40Z:clawsweeper_needs_human",
+      "comment_id": "5286515210",
+      "comment_version_key": "5286515210:2026-08-13T22:10:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123313#issuecomment-5286515210",
+      "comment_created_at": "2026-08-13T21:19:42Z",
+      "comment_updated_at": "2026-08-13T22:10:40Z",
+      "comment_body_sha256": "3b5acdd4d193c2dfba495825d2abd89dd65e7a95c6b54c98e0340fdb2bea9741",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The added background App Server request runs during attempt startup; its account/workspace semantics, cancellation behavior, and interaction with shutdown remain unverified because di... (sha=618fe826ae53c3186f8412a4302f446b6933275c)",
+      "expected_head_sha": "618fe826ae53c3186f8412a4302f446b6933275c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:12:18.286Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/warn-unavailable-configured-apps",
+        "head_sha": "618fe826ae53c3186f8412a4302f446b6933275c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
