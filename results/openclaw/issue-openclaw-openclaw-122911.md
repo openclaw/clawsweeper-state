@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122911"
 mode: "autonomous"
-run_id: "31659780600"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31659780600"
+run_id: "31663314491"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31663314491"
 head_sha: "56cb78d60734ddc62b5f1e49981bbb4556dcb58d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-13T02:16:37.422Z"
-canonical: "https://github.com/openclaw/openclaw/issues/122911"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/122911"
+published_at: "2026-08-13T03:23:56.346Z"
+canonical: "#122911"
+canonical_issue: "#122911"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-122911
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31659780600](https://github.com/openclaw/clawsweeper/actions/runs/31659780600)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31663314491](https://github.com/openclaw/clawsweeper/actions/runs/31663314491)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/122911
+Canonical: #122911
 
 ## Summary
 
-Verified on main 326501fce3348c4895157b8905221dc7ccbbfbdf: generic terminal transitions and claim release preserve a dispatch-created running execution/attempt, which can starve the owner lane. A narrow fix PR is appropriate, but this worker has a read-only checkout and missing test dependency (`tsx`), so it could not edit, reproduce with a new regression, or validate a branch.
+Current main still has the confirmed Workboard lifecycle defect, but this worker cannot edit or validate a repair because the checkout is read-only. A narrow new-PR artifact is provided.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Verified on main 326501fce3348c4895157b8905221dc7ccbbfbdf: generic terminal tran
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Verified on main 326501fce3348c4895157b8905221dc7ccbbfbdf: generic terminal tran
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122911 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only filesystem and unavailable dependencies; the verified narrow repair is specified in the fix artifact. |
-| cluster:issue-openclaw-openclaw-122911 | build_fix_artifact | planned | canonical |  |
+| #122911 | keep_canonical | planned | canonical | Open canonical source-reproducible bug; closure and merge are disallowed. |
+| #122911 | build_fix_artifact | blocked | canonical | Repair is authorized and narrow, but cannot be implemented in this read-only worker environment. |
 
 ## Needs Human
 
-- none
+- Run this artifact in a writable executor that can create, test, and publish clawsweeper/issue-openclaw-openclaw-122911.

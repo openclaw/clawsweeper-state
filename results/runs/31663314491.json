@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-122911",
+  "mode": "autonomous",
+  "run_id": "31663314491",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31663314491",
+  "head_sha": "56cb78d60734ddc62b5f1e49981bbb4556dcb58d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-122911.md",
+  "published_at": "2026-08-13T03:23:56.346Z",
+  "canonical": "#122911",
+  "canonical_issue": "#122911",
+  "canonical_pr": null,
+  "summary": "Current main still has the confirmed Workboard lifecycle defect, but this worker cannot edit or validate a repair because the checkout is read-only. A narrow new-PR artifact is provided.",
+  "actions": [
+    {
+      "target": "#122911",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#122911",
+      "candidate_fix": null,
+      "reason": "Open canonical source-reproducible bug; closure and merge are disallowed."
+    },
+    {
+      "target": "#122911",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#122911",
+      "candidate_fix": null,
+      "reason": "Repair is authorized and narrow, but cannot be implemented in this read-only worker environment."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Run this artifact in a writable executor that can create, test, and publish clawsweeper/issue-openclaw-openclaw-122911."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
