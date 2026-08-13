@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-13T06:19:04.597Z",
+  "updated_at": "2026-08-13T06:19:51.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119467:5275405879:2026-08-13T02:58:40Z:autofix",
-      "comment_id": "5275405879",
-      "comment_version_key": "5275405879:2026-08-13T02:58:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5275405879",
-      "comment_created_at": "2026-08-13T02:58:40Z",
-      "comment_updated_at": "2026-08-13T02:58:40Z",
-      "comment_body_sha256": "0eede72345f59b608f5051abb664831307f4536b8146d8601a20e5ce6425dfa3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "autofix enabled; current checks are failing: check-lint:FAILURE, openclaw/ci-gate:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T02:59:24.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-readability-depth-cap",
-        "head_sha": "18492e76a6906b97277a594a5af2674b654e0da2",
-        "cluster_id": "automerge-openclaw-openclaw-119467",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122952:5275422449:2026-08-13T03:01:30Z:re_review",
       "comment_id": "5275422449",
@@ -31197,6 +31144,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-90467-cron-conversation-targets",
         "head_sha": "af85250e3abbd858f3412206bda5ba01bb9b7837",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123008:5276269194:2026-08-13T06:18:54Z:clawsweeper_auto_repair",
+      "comment_id": "5276269194",
+      "comment_version_key": "5276269194:2026-08-13T06:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123008#issuecomment-5276269194",
+      "comment_created_at": "2026-08-13T05:16:34Z",
+      "comment_updated_at": "2026-08-13T06:18:54Z",
+      "comment_body_sha256": "fdb5b2f0cb7a8cfe9fdb8c261ca5145189b0782b1181918a62049bc3c580b330",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123008,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0b1ab16d32a97838d9341c2d541f89aa3df5ba11)",
+      "expected_head_sha": "0b1ab16d32a97838d9341c2d541f89aa3df5ba11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T06:19:51.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/shared-new-session-composer",
+        "head_sha": "0b1ab16d32a97838d9341c2d541f89aa3df5ba11",
         "cluster_id": null,
         "job_path": null
       }
