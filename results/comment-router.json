@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:00:50.095Z",
+  "updated_at": "2026-08-13T05:02:14.259Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121459:5236858994:2026-08-13T01:16:50Z:clawsweeper_needs_human",
-      "comment_id": "5236858994",
-      "comment_version_key": "5236858994:2026-08-13T01:16:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121459#issuecomment-5236858994",
-      "comment_created_at": "2026-08-10T06:52:52Z",
-      "comment_updated_at": "2026-08-13T01:16:50Z",
-      "comment_body_sha256": "bcf346930c8f18e77e4f606d202fc4fccf32bf0e345a36a7953d296acc870023",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121459,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces two public read-scoped Gateway methods that can return a rotated administrator credential after approval, so the permanent protocol and credential-delivery contract ne... (sha=3350620e6b3b69a6e7763a83ddcd9def2b7a77b3)",
-      "expected_head_sha": "3350620e6b3b69a6e7763a83ddcd9def2b7a77b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T01:17:43.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/scope-upgrade-ux",
-        "head_sha": "3350620e6b3b69a6e7763a83ddcd9def2b7a77b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122862:5274344768:2026-08-13T01:18:17Z:clawsweeper_auto_repair",
       "comment_id": "5274344768",
@@ -30556,6 +30523,53 @@
         "kind": "pull_request",
         "branch": "agent/codex-native-realtime-voice",
         "head_sha": "f5eff16fb9106fb67d7bf8579855c27e4a07ff65",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97162:5276169758:2026-08-13T05:01:31Z:re_review",
+      "comment_id": "5276169758",
+      "comment_version_key": "5276169758:2026-08-13T05:01:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97162#issuecomment-5276169758",
+      "comment_created_at": "2026-08-13T05:01:31Z",
+      "comment_updated_at": "2026-08-13T05:01:31Z",
+      "comment_body_sha256": "e4b97f8a41cd57f49d28e86c194982cb737706c00f028617ca26e76532a9236a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97162,
+      "author": "wangwllu",
+      "author_id": 7668944,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T05:02:12.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-secrets-audit-check-severity",
+        "head_sha": "10d2d919454b5b269dfdbb669c9fd52ec5ccf3d1",
         "cluster_id": null,
         "job_path": null
       },
