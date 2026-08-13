@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:09:05.950Z",
+  "updated_at": "2026-08-13T03:09:13.772Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5272969484:2026-08-12T21:25:16Z:re_review",
-      "comment_id": "5272969484",
-      "comment_version_key": "5272969484:2026-08-12T21:25:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5272969484",
-      "comment_created_at": "2026-08-12T21:25:16Z",
-      "comment_updated_at": "2026-08-12T21:25:16Z",
-      "comment_body_sha256": "75659409feca0e03a708562d802db1c7478ddb1250897fdcfd4157b87771264f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T21:26:27.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "baffea172fee519d818734230cae150981f503b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119702:5197143667:2026-08-12T21:17:15Z:clawsweeper_needs_human",
       "comment_id": "5197143667",
@@ -31619,6 +31572,39 @@
         "kind": "pull_request",
         "branch": "fix/matrix-room-explicit-session-route",
         "head_sha": "6b8cd21e77cf255a6738319acdbd6c3aee38b912",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122945:5275466918:2026-08-13T03:08:27Z:clawsweeper_needs_human",
+      "comment_id": "5275466918",
+      "comment_version_key": "5275466918:2026-08-13T03:08:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122945#issuecomment-5275466918",
+      "comment_created_at": "2026-08-13T03:08:27Z",
+      "comment_updated_at": "2026-08-13T03:08:27Z",
+      "comment_body_sha256": "fe27deca78695e837164b716c10aa76205ff21447e9b0cc10945240c16f592d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122945,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This migration deletes persisted rows after recognizing a historical layout, so the final draft head needs its focused state-database validation completed before merge; current GitHub... (sha=68b03df8702df88f09b4c380d825a5ab83f89aee)",
+      "expected_head_sha": "68b03df8702df88f09b4c380d825a5ab83f89aee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:09:13.772Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/commitments-upgrade-schema",
+        "head_sha": "68b03df8702df88f09b4c380d825a5ab83f89aee",
         "cluster_id": null,
         "job_path": null
       }
