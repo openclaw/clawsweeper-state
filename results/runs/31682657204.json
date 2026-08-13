@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123073",
+  "mode": "autonomous",
+  "run_id": "31682657204",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31682657204",
+  "head_sha": "96b8703e4c0b4782dfcc488b46777559149326bb",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123073.md",
+  "published_at": "2026-08-13T08:43:37.635Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/123073",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123073",
+  "canonical_pr": null,
+  "summary": "Current main source proves the open canonical bug: a stored dev channel does not select the git flow for a package-detected launcher. A narrow new-PR repair is ready, but this worker cannot write the read-only checkout or run tests because node_modules is absent.",
+  "actions": [
+    {
+      "target": "#123073",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#123073",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker's read-only checkout and missing local dependencies; the fix artifact is ready for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-123073",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123073",
+      "candidate_fix": null,
+      "reason": "Narrow owner-boundary repair for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
