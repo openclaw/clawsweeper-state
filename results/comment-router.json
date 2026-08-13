@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T22:39:15.910Z",
+  "updated_at": "2026-08-13T22:39:41.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112078:5133013242:2026-07-30T15:40:24Z:re_review",
-      "comment_id": "5133013242",
-      "comment_version_key": "5133013242:2026-07-30T15:40:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112078#issuecomment-5133013242",
-      "comment_created_at": "2026-07-30T15:40:24Z",
-      "comment_updated_at": "2026-07-30T15:40:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112078,
-      "author": "jacobtomlinson",
-      "author_id": 1610850,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T10:20:43.268Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/proxyline:22:5279043484:2026-08-13T10:20:00Z:clawsweeper_auto_repair",
       "comment_id": "5279043484",
@@ -32596,6 +32569,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3457:5260969102:2026-08-13T22:39:03Z:clawsweeper_needs_human",
+      "comment_id": "5260969102",
+      "comment_version_key": "5260969102:2026-08-13T22:39:03Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3457#issuecomment-5260969102",
+      "comment_created_at": "2026-08-12T01:21:46Z",
+      "comment_updated_at": "2026-08-13T22:39:03Z",
+      "comment_body_sha256": "b727904ff60ea3fe25fb1f40bc91fa59e94ed0e8628b1d936d67b2077bfff6fe",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required CI jobs are marked failed, but their logs could not be attributed to this two-file patch. (sha=25db30d26c881fd7d9d60956ced543654d1be26b)",
+      "expected_head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:39:41.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-first-fetch-retry",
+        "head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
