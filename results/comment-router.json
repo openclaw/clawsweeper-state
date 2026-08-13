@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T10:26:27.375Z",
+  "updated_at": "2026-08-13T10:26:51.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2811:5276341445:2026-08-13T05:28:43Z:re_review",
-      "comment_id": "5276341445",
-      "comment_version_key": "5276341445:2026-08-13T05:28:43Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2811#issuecomment-5276341445",
-      "comment_created_at": "2026-08-13T05:28:01Z",
-      "comment_updated_at": "2026-08-13T05:28:43Z",
-      "comment_body_sha256": "6772458382cd0db7572e420d7c94f0079ee6cb23803737a29b0090e7662b084d",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2811,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "OWNER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T05:35:19.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tty-hardstop-latency",
-        "head_sha": "da3b7a45d52328995f988773ead3b705770d0ba0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2811:5231037727:2026-08-13T05:34:28Z:clawsweeper_needs_human",
       "comment_id": "5231037727",
@@ -31930,6 +31883,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T10:26:27.375Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122748:5270660232:2026-08-13T10:25:57Z:clawsweeper_needs_human",
+      "comment_id": "5270660232",
+      "comment_version_key": "5270660232:2026-08-13T10:25:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122748#issuecomment-5270660232",
+      "comment_created_at": "2026-08-12T18:02:33Z",
+      "comment_updated_at": "2026-08-13T10:25:57Z",
+      "comment_body_sha256": "098e2e9754205aa1ab735edfd55af8785a4820e3b81e6650bf5884d0442e6639",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main; rebase and refresh the aggregate and sparse-worktree checks on the resulting exact head before merge. (sha=38b4ed8b953bbe425f3db0217076dbdb6674157d)",
+      "expected_head_sha": "38b4ed8b953bbe425f3db0217076dbdb6674157d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T10:26:51.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsgo-test-memory",
+        "head_sha": "38b4ed8b953bbe425f3db0217076dbdb6674157d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
