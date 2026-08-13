@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:20:01.521Z",
+  "updated_at": "2026-08-13T04:20:04.512Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1148:5273924912:2026-08-12T23:30:25Z:clawsweeper_needs_human",
-      "comment_id": "5273924912",
-      "comment_version_key": "5273924912:2026-08-12T23:30:25Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1148#issuecomment-5273924912",
-      "comment_created_at": "2026-08-12T23:18:32Z",
-      "comment_updated_at": "2026-08-12T23:30:25Z",
-      "comment_body_sha256": "842085e712251f4a42dcf62fe77007d150f640ba478b98f5162ee0d7c91ecfb5",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1148,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging enables automatic resolution of production queue rows; it is deliberately fail-closed, but correctness depends on the existing authenticated canonical-record route and the imm... (sha=e44f2bccdbd6da8058c9226e224c39ecd696d93f)",
-      "expected_head_sha": "e44f2bccdbd6da8058c9226e224c39ecd696d93f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T23:31:15.755Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/head-mismatch-supersede",
-        "head_sha": "e44f2bccdbd6da8058c9226e224c39ecd696d93f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1139:5266424498:2026-08-12T23:33:14Z:clawsweeper_auto_repair",
       "comment_id": "5266424498",
@@ -31269,6 +31236,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T04:20:01.521Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-08-13T04:16:04Z:clawsweeper_needs_human",
+      "comment_id": "5224337448",
+      "comment_version_key": "5224337448:2026-08-13T04:16:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5224337448",
+      "comment_created_at": "2026-08-08T03:41:53Z",
+      "comment_updated_at": "2026-08-13T04:16:04Z",
+      "comment_body_sha256": "56f0ff6ee5a9b1fa9b1326a10dc83a0c288619b6b15c24ecc8a17b31e677792a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted proof explicitly simulates both the Codex app-server and binding store, so it does not demonstrate after-fix behavior through a r...; Review finding: [P2] Require a failed result for stale-binding safe continuation — src/agents/embedded-agent-runner/compact-reasons.ts:61-63 - [P2] Pin the proof image's executabl... (sha=b1dcd6abca234b942cc6c1384f50d532263aa4e1)",
+      "expected_head_sha": "b1dcd6abca234b942cc6c1384f50d532263aa4e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T04:20:04.512Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "b1dcd6abca234b942cc6c1384f50d532263aa4e1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
