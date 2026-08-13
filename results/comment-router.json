@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T06:11:23.390Z",
+  "updated_at": "2026-08-13T06:11:35.224Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122350:5264710058:2026-08-12T09:11:11Z:re_review",
-      "comment_id": "5264710058",
-      "comment_version_key": "5264710058:2026-08-12T09:11:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122350#issuecomment-5264710058",
-      "comment_created_at": "2026-08-12T09:11:11Z",
-      "comment_updated_at": "2026-08-12T09:11:11Z",
-      "comment_body_sha256": "4c2bdeff7da2d7eef5d0786a7662ee1d8d684fd9f239096f9d66307787cd3314",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122350,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:21:47.176Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122350:5272107526:2026-08-12T19:55:34Z:re_review",
       "comment_id": "5272107526",
@@ -31024,6 +30997,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123023:5276624277:2026-08-13T06:10:49Z:clawsweeper_auto_repair",
+      "comment_id": "5276624277",
+      "comment_version_key": "5276624277:2026-08-13T06:10:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123023#issuecomment-5276624277",
+      "comment_created_at": "2026-08-13T06:10:49Z",
+      "comment_updated_at": "2026-08-13T06:10:49Z",
+      "comment_body_sha256": "1e6fbac0a28776eed9c2a428a7f95be6e55d7bf4b274768e7a8defba614dbd74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123023,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ef12d72a2867eff1a9df06065d9a26438af6e502)",
+      "expected_head_sha": "ef12d72a2867eff1a9df06065d9a26438af6e502",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T06:11:35.223Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-sqlite-private-dir-diagnostics",
+        "head_sha": "ef12d72a2867eff1a9df06065d9a26438af6e502",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
