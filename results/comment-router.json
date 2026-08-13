@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:20:58.041Z",
+  "updated_at": "2026-08-13T03:21:02.061Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122816:5272838460:2026-08-12T21:30:38Z:clawsweeper_needs_human",
-      "comment_id": "5272838460",
-      "comment_version_key": "5272838460:2026-08-12T21:30:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122816#issuecomment-5272838460",
-      "comment_created_at": "2026-08-12T21:10:45Z",
-      "comment_updated_at": "2026-08-12T21:30:38Z",
-      "comment_body_sha256": "a61c29bcc9f5b0d14cf708e16fd43623578a96fee35fb601406a1fc756a3a76c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122816,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This introduces a card-deletion path in Slack message delivery; the source-level trace is strong, but a redacted after-fix concurrent-mention run would verify the real Slack transport... (sha=22545e70541519afdb3ca584f8159ec7e0ae6ac8)",
-      "expected_head_sha": "22545e70541519afdb3ca584f8159ec7e0ae6ac8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T22:13:48.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/slack-card-supersede-fix",
-        "head_sha": "22545e70541519afdb3ca584f8159ec7e0ae6ac8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122820:5272888441:2026-08-12T21:36:11Z:clawsweeper_needs_human",
       "comment_id": "5272888441",
@@ -31449,6 +31416,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T03:20:58.041Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122948:5275545500:2026-08-13T03:20:14Z:clawsweeper_auto_repair",
+      "comment_id": "5275545500",
+      "comment_version_key": "5275545500:2026-08-13T03:20:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122948#issuecomment-5275545500",
+      "comment_created_at": "2026-08-13T03:20:14Z",
+      "comment_updated_at": "2026-08-13T03:20:14Z",
+      "comment_body_sha256": "4bd6d74495d0d776f666be28f72992d2482300670e4821fd6ac5350de9959766",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122948,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d37f26acc048094bd5788046d45ad95dbbbbef93)",
+      "expected_head_sha": "d37f26acc048094bd5788046d45ad95dbbbbef93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:21:02.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/cron-owner-hardening",
+        "head_sha": "d37f26acc048094bd5788046d45ad95dbbbbef93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
