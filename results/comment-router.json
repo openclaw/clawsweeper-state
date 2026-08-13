@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:14:20.868Z",
+  "updated_at": "2026-08-13T04:14:46.218Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122843:5273494977:2026-08-12T22:25:40Z:clawsweeper_needs_human",
-      "comment_id": "5273494977",
-      "comment_version_key": "5273494977:2026-08-12T22:25:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122843#issuecomment-5273494977",
-      "comment_created_at": "2026-08-12T22:25:40Z",
-      "comment_updated_at": "2026-08-12T22:25:40Z",
-      "comment_body_sha256": "b9c6e5cf08235d85f275a804815d9db6d370411d662da9816871e27ad5f902b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SUT receives group write to the suite root, so the sticky bit and runner-owned 0640 config must remain paired; widening either permission would weaken release isolation. (sha=2d406e35a413967489fc699eae38b1b9086fcad7)",
-      "expected_head_sha": "2d406e35a413967489fc699eae38b1b9086fcad7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T22:29:58.831Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "temp/release-2026.8.1-telegram-isolation",
-        "head_sha": "2d406e35a413967489fc699eae38b1b9086fcad7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122845:5273507514:2026-08-12T22:26:53Z:clawsweeper_auto_repair",
       "comment_id": "5273507514",
@@ -31831,6 +31798,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119295:5183496333:2026-08-13T04:12:23Z:clawsweeper_needs_human",
+      "comment_id": "5183496333",
+      "comment_version_key": "5183496333:2026-08-13T04:12:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119295#issuecomment-5183496333",
+      "comment_created_at": "2026-08-04T19:12:30Z",
+      "comment_updated_at": "2026-08-13T04:12:23Z",
+      "comment_body_sha256": "54c6f075abc699c6893eb0e3486de960ac6c191a42df5c4f9e6ba9a3ad94ced6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows browser E2E output, but its Gateway and OpenAI response are mocked; add a redacted exact-head real OpenAI Control UI run befo... (sha=b90fa70d021122d46d40075596b07882e8b32866)",
+      "expected_head_sha": "b90fa70d021122d46d40075596b07882e8b32866",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T04:14:46.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-webrtc-sdp-answer-limit",
+        "head_sha": "b90fa70d021122d46d40075596b07882e8b32866",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
