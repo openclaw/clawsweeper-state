@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T13:43:28.435Z",
+  "updated_at": "2026-08-13T13:45:47.912Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112820:5075163592:2026-08-13T07:04:01Z:clawsweeper_needs_human",
-      "comment_id": "5075163592",
-      "comment_version_key": "5075163592:2026-08-13T07:04:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112820#issuecomment-5075163592",
-      "comment_created_at": "2026-07-24T22:41:54Z",
-      "comment_updated_at": "2026-08-13T07:04:01Z",
-      "comment_body_sha256": "56398f4b0fa0a46be7527845ad1591b5f0c3a16490bdd23c6e9071ec1597ce56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112820,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the trusted plugin audio authority** - The route gate is intentional, yet this API lets Gateway-dispatched plugins receive PCM events and control output; that durable authority...; Review finding: [medium] Approve the trusted plugin audio authority — src/gateway/talk-plugin-session.ts:29 (sha=2013c554c787542a523e69bb9bedcb4164e5727d)",
-      "expected_head_sha": "2013c554c787542a523e69bb9bedcb4164e5727d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T07:06:58.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/talk-open-session",
-        "head_sha": "2013c554c787542a523e69bb9bedcb4164e5727d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114098:5083385284:2026-08-13T04:05:43Z:clawsweeper_auto_repair",
       "comment_id": "5083385284",
@@ -32243,6 +32210,53 @@
         "kind": "pull_request",
         "branch": "fix/exec-approval-redos-guard",
         "head_sha": "662e642a8c5d739f557e130bae51174782c15e62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123194:5281254792:2026-08-13T13:45:02Z:re_review",
+      "comment_id": "5281254792",
+      "comment_version_key": "5281254792:2026-08-13T13:45:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123194#issuecomment-5281254792",
+      "comment_created_at": "2026-08-13T13:45:02Z",
+      "comment_updated_at": "2026-08-13T13:45:02Z",
+      "comment_body_sha256": "6f607df469756485cb5aa099fb03b705771c5e77b16a3695aadf27366222d4be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123194,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T13:45:46.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/101554-mcp-tools-list-preparse-limit",
+        "head_sha": "85b5a605b77eb9c1e513040047b203e8f6d27a1a",
         "cluster_id": null,
         "job_path": null
       },
