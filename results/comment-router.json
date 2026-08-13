@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:25:01.177Z",
+  "updated_at": "2026-08-13T23:25:03.978Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118568:5280789423:2026-08-13T13:03:48Z:re_review",
-      "comment_id": "5280789423",
-      "comment_version_key": "5280789423:2026-08-13T13:03:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118568#issuecomment-5280789423",
-      "comment_created_at": "2026-08-13T13:03:48Z",
-      "comment_updated_at": "2026-08-13T13:03:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118568,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T13:04:39.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "issue-75184-config-help",
-        "head_sha": "4c29a2906147b746bed4c24c967a61fdb80390e7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5280827643:2026-08-13T13:07:10Z:re_review",
       "comment_id": "5280827643",
@@ -31437,6 +31390,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-current-pro-alias-gpt56",
         "head_sha": "d6f95f5db60ad74b474ff016cadde94f4eab1d21",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123243:5285880311:2026-08-13T23:22:28Z:clawsweeper_needs_human",
+      "comment_id": "5285880311",
+      "comment_version_key": "5285880311:2026-08-13T23:22:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123243#issuecomment-5285880311",
+      "comment_created_at": "2026-08-13T20:14:42Z",
+      "comment_updated_at": "2026-08-13T23:22:28Z",
+      "comment_body_sha256": "0664007351f1f24037c10bd42f5003a7354d29956be5baed2753034c4c138890",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123243,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Redacted logs show a real Discord owner turn, but not the delayed non-owner/owner concurrency path fixed by this PR; add final-head fa... (sha=50145939ad4c3b3a9a1ae4b2fba7ebe2f9febc55)",
+      "expected_head_sha": "50145939ad4c3b3a9a1ae4b2fba7ebe2f9febc55",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:25:03.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-945",
+        "head_sha": "50145939ad4c3b3a9a1ae4b2fba7ebe2f9febc55",
         "cluster_id": null,
         "job_path": null
       }
