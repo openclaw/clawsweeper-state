@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:20:09.200Z",
+  "updated_at": "2026-08-13T05:20:22.338Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5057166130:2026-07-23T10:08:25Z:re_review",
-      "comment_id": "5057166130",
-      "comment_version_key": "5057166130:2026-07-23T10:08:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5057166130",
-      "comment_created_at": "2026-07-23T10:08:25Z",
-      "comment_updated_at": "2026-07-23T10:08:25Z",
-      "comment_body_sha256": "dda4098b018fa52157ac153235755207126f16e6b33d4ef033c6c7b31eed9477",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 8 commits replayed, no conflicts). new head d477eb9333. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, late-write fence, and stalled-session warn backoff are unchanged. local tsgo, oxlint/oxfmt, and the touched unit suites are green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:07:32.865Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5060665917:2026-07-23T16:07:52Z:re_review",
       "comment_id": "5060665917",
@@ -30607,6 +30580,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122983:5275938286:2026-08-13T05:19:37Z:clawsweeper_needs_human",
+      "comment_id": "5275938286",
+      "comment_version_key": "5275938286:2026-08-13T05:19:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122983#issuecomment-5275938286",
+      "comment_created_at": "2026-08-13T04:23:44Z",
+      "comment_updated_at": "2026-08-13T05:19:37Z",
+      "comment_body_sha256": "9eac28b4b332fd885edfe4c4846928a7631ed2fe7e4a7300a3aa8e0967720a7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122983,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Treat user-scoped Unix Codex control as HOME-sensitive (P1)** - The new predicate only returns true for stdio, but the supported Unix transport requires homeScope: \"user\" and the supervision connection owns the...; Review finding: [P1] Treat user-scoped Unix Codex control as HOME-sensitive — extensions/codex/src/session-catalog.ts:1451-1452 - [P1] Document the isolated-session provider contr... (sha=ea5f7f2eee02ccb022eab923b25560a8f5f4ffa2)",
+      "expected_head_sha": "ea5f7f2eee02ccb022eab923b25560a8f5f4ffa2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T05:20:22.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/isolated-catalog-home",
+        "head_sha": "ea5f7f2eee02ccb022eab923b25560a8f5f4ffa2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
