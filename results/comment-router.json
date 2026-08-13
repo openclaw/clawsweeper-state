@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T22:32:22.590Z",
+  "updated_at": "2026-08-13T22:32:30.951Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122863:5278836413:2026-08-13T10:00:25Z:re_review",
-      "comment_id": "5278836413",
-      "comment_version_key": "5278836413:2026-08-13T10:00:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5278836413",
-      "comment_created_at": "2026-08-13T10:00:25Z",
-      "comment_updated_at": "2026-08-13T10:00:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T10:12:41.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-channel-user-ingress",
-        "head_sha": "d66030dab1d30a508feb7b3bcdc94621cbf18f5b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122863:5273991317:2026-08-12T23:27:45Z:re_review",
       "comment_id": "5273991317",
@@ -32597,6 +32550,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-category-groups-invalidation",
         "head_sha": "40f222ec88da93138a8f7f76269035aa92f7a5ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/Swiftdansi:12:5287141021:2026-08-13T22:31:45Z:clawsweeper_needs_human",
+      "comment_id": "5287141021",
+      "comment_version_key": "5287141021:2026-08-13T22:31:45Z",
+      "comment_url": "https://github.com/steipete/Swiftdansi/pull/12#issuecomment-5287141021",
+      "comment_created_at": "2026-08-13T22:31:45Z",
+      "comment_updated_at": "2026-08-13T22:31:45Z",
+      "comment_body_sha256": "e4bea6256e618cd9ff249c31bcd7d01de45d63e82ef904f53c69f765d323a2d2",
+      "repo": "steipete/Swiftdansi",
+      "issue_number": 12,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-main integration and history could not be independently inspected because the read-only execution environment failed. (sha=5e9a8780b49ed97640a66a1ab0953e06024c8bb0)",
+      "expected_head_sha": "5e9a8780b49ed97640a66a1ab0953e06024c8bb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:32:30.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/complete-ansi-escape-sequences",
+        "head_sha": "5e9a8780b49ed97640a66a1ab0953e06024c8bb0",
         "cluster_id": null,
         "job_path": null
       }
