@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:14:19.927Z",
+  "updated_at": "2026-08-13T00:14:25.937Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120900:5230001171:2026-08-12T19:18:50Z:clawsweeper_needs_human",
-      "comment_id": "5230001171",
-      "comment_version_key": "5230001171:2026-08-12T19:18:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5230001171",
-      "comment_created_at": "2026-08-09T05:42:59Z",
-      "comment_updated_at": "2026-08-12T19:18:50Z",
-      "comment_body_sha256": "ce3afc2f30118f06e2f53603b6030c76d190e87d957ba464a5ab2f16982862c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Decide acknowledgement-token binding** - The retry at this line forwards a token whose stated parent contract is not operator- or connection-bound, so another authenticated administrato...; Review finding: [medium] Decide acknowledgement-token binding — ui/src/pages/plugins/view.ts:562 (sha=d5bf0a8e3d616959faf52a87518b829e17a648c4)",
-      "expected_head_sha": "d5bf0a8e3d616959faf52a87518b829e17a648c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:19:41.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/install-policy-warning-ui",
-        "head_sha": "d5bf0a8e3d616959faf52a87518b829e17a648c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5231888381:2026-08-09T13:57:39Z:re_review",
       "comment_id": "5231888381",
@@ -31060,6 +31027,53 @@
       "status": "skipped",
       "processed_at": "2026-08-13T00:14:19.927Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:80396:5274290247:2026-08-13T00:13:43Z:re_review",
+      "comment_id": "5274290247",
+      "comment_version_key": "5274290247:2026-08-13T00:13:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5274290247",
+      "comment_created_at": "2026-08-13T00:13:43Z",
+      "comment_updated_at": "2026-08-13T00:13:43Z",
+      "comment_body_sha256": "50c3aaf3601468d917d379b658275872d2ed1643a47b4ffd674caf35aed5dbda",
+      "repo": "openclaw/openclaw",
+      "issue_number": 80396,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T00:14:24.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/41966-media-token-warn-in-fence",
+        "head_sha": "82be7c8c6ff831845ba63776943749fa632eec38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
