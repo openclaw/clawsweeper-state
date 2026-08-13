@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:14:08.067Z",
+  "updated_at": "2026-08-13T03:14:23.995Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101248:5212219492:2026-08-07T04:01:15Z:re_review",
-      "comment_id": "5212219492",
-      "comment_version_key": "5212219492:2026-08-07T04:01:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101248#issuecomment-5212219492",
-      "comment_created_at": "2026-08-07T04:01:15Z",
-      "comment_updated_at": "2026-08-07T04:01:15Z",
-      "comment_body_sha256": "1ad484b38c0f6fdaf87941e1cffd8390243e32cdc7bb330e4c76eb450084857d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101248,
-      "author": "nicknmorty",
-      "author_id": 16600979,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T21:35:01.956Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:101248:5234966283:2026-08-10T01:34:39Z:re_review",
       "comment_id": "5234966283",
@@ -31649,6 +31622,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122934:5275441104:2026-08-13T03:13:42Z:clawsweeper_needs_human",
+      "comment_id": "5275441104",
+      "comment_version_key": "5275441104:2026-08-13T03:13:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122934#issuecomment-5275441104",
+      "comment_created_at": "2026-08-13T03:04:27Z",
+      "comment_updated_at": "2026-08-13T03:13:42Z",
+      "comment_body_sha256": "136c4bd5c93a41d8905ffecd5ebd7dc915cbce733776274f89d14bf7fc750454",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122934,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Accept W/B selectors in bot owner-presence checks (P1)** - This validator now accepts bare and prefixed W.../B... owner entries, but the bot-room path still normalizes only U... entries before checking channel m...; Review finding: [P1] Accept W/B selectors in bot owner-presence checks — extensions/slack/src/monitor/enterprise-install.ts:72-73 - [medium] Accepted Enterprise owner IDs are not... (sha=ab886309799e677a5ca83c3b15cff1afe27e11f9)",
+      "expected_head_sha": "ab886309799e677a5ca83c3b15cff1afe27e11f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:14:23.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-enterprise-org-user-1",
+        "head_sha": "ab886309799e677a5ca83c3b15cff1afe27e11f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
