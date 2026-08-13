@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T06:12:31.696Z",
+  "updated_at": "2026-08-13T06:12:40.571Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119268:5182185946:2026-08-13T02:21:19Z:clawsweeper_auto_repair",
-      "comment_id": "5182185946",
-      "comment_version_key": "5182185946:2026-08-13T02:21:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119268#issuecomment-5182185946",
-      "comment_created_at": "2026-08-04T17:01:34Z",
-      "comment_updated_at": "2026-08-13T02:21:19Z",
-      "comment_body_sha256": "f2571da5666afb764251a3e28d14ee19a37e2bc4ddb7b63c2dfc16e15b4804e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119268,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b794464bf7bf9f24103d996c423e061913539a5d)",
-      "expected_head_sha": "b794464bf7bf9f24103d996c423e061913539a5d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:22:06.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-telegram-webhook-path-healthz",
-        "head_sha": "b794464bf7bf9f24103d996c423e061913539a5d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119268:5247990514:2026-08-11T01:27:29Z:re_review",
       "comment_id": "5247990514",
@@ -31056,6 +31023,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118954:5171717737:2026-08-13T06:11:25Z:clawsweeper_needs_human",
+      "comment_id": "5171717737",
+      "comment_version_key": "5171717737:2026-08-13T06:11:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118954#issuecomment-5171717737",
+      "comment_created_at": "2026-08-03T21:06:53Z",
+      "comment_updated_at": "2026-08-13T06:11:25Z",
+      "comment_body_sha256": "92a2f3fa3300a25d37886d43c568e576673b9e1df96968580c06f9063f86ee05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118954,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify Gateway ownership before restoring wizard state** - The changed history request can carry a retained opaque session ID. It is safe only if the parent Gateway contract rejects for...; Review finding: [medium] Verify Gateway ownership before restoring wizard state — ui/src/pages/custodian/transcript.ts:93 (sha=0830f916c39e78055b899988c655779cee3547f0)",
+      "expected_head_sha": "0830f916c39e78055b899988c655779cee3547f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T06:12:40.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/custodian-reload-recovery",
+        "head_sha": "0830f916c39e78055b899988c655779cee3547f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
