@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T09:13:39.133Z",
+  "updated_at": "2026-08-13T09:14:22.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121192:5235487574:2026-08-10T03:17:17Z:re_review",
-      "comment_id": "5235487574",
-      "comment_version_key": "5235487574:2026-08-10T03:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121192#issuecomment-5235487574",
-      "comment_created_at": "2026-08-10T03:17:17Z",
-      "comment_updated_at": "2026-08-10T03:17:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121192,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T04:22:43.429Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121192:5235586419:2026-08-10T03:36:50Z:re_review",
       "comment_id": "5235586419",
@@ -31789,6 +31762,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120332:5221811898:2026-08-13T09:10:00Z:clawsweeper_needs_human",
+      "comment_id": "5221811898",
+      "comment_version_key": "5221811898:2026-08-13T09:10:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120332#issuecomment-5221811898",
+      "comment_created_at": "2026-08-07T20:42:37Z",
+      "comment_updated_at": "2026-08-13T09:10:00Z",
+      "comment_body_sha256": "981b82c76c122cbc44a6c7820d6cac3bd1957cdd6d94781600a567030883031a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug-fix branch reports substantial production growth and now changes configuration validation, plugin loading, Gateway startup, registry lifecycle, SDK helpers, and doctor migrat... (sha=a5fb47de7d3e203d28c542dc5410049f4779caf5)",
+      "expected_head_sha": "a5fb47de7d3e203d28c542dc5410049f4779caf5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T09:14:22.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/92884-prefer-over-channel-schema",
+        "head_sha": "a5fb47de7d3e203d28c542dc5410049f4779caf5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
