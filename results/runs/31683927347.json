@@ -1,0 +1,51 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-123073",
+  "mode": "plan",
+  "run_id": "31683927347",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31683927347",
+  "head_sha": "4d41d3df4baf191dca9c385c82689425a135a5c4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-123073.md",
+  "published_at": "2026-08-13T08:58:09.563Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/123083",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/123073",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/123083",
+  "summary": "Keep #123073 open as the canonical report and #123083 as its canonical contributor fix path. The PR is narrow and writable, but its hydrated CI is still pending and the supplied artifact lacks the patch needed for an independent best-fix/code-review verdict; do not merge or replace it yet.",
+  "actions": [
+    {
+      "target": "#123073",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123073",
+      "candidate_fix": "#123083",
+      "reason": "The issue remains the authoritative reproduction and validation thread while #123083 is reviewed."
+    },
+    {
+      "target": "#123083",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#123083",
+      "candidate_fix": null,
+      "reason": "This is the only viable, narrow contributor fix. Rehydrate its patch, review the exact head, run a fresh /review, and wait for or repair relevant CI before considering merge."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

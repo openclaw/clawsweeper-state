@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123073"
-mode: "autonomous"
-run_id: "31682657204"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31682657204"
-head_sha: "96b8703e4c0b4782dfcc488b46777559149326bb"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-13T08:43:37.635Z"
-canonical: "https://github.com/openclaw/openclaw/issues/123073"
+mode: "plan"
+run_id: "31683927347"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31683927347"
+head_sha: "4d41d3df4baf191dca9c385c82689425a135a5c4"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-13T08:58:09.563Z"
+canonical: "https://github.com/openclaw/openclaw/pull/123083"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/123073"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/123083"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31682657204](https://github.com/openclaw/clawsweeper/actions/runs/31682657204)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31683927347](https://github.com/openclaw/clawsweeper/actions/runs/31683927347)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/123073
+Canonical: https://github.com/openclaw/openclaw/pull/123083
 
 ## Summary
 
-Current main source proves the open canonical bug: a stored dev channel does not select the git flow for a package-detected launcher. A narrow new-PR repair is ready, but this worker cannot write the read-only checkout or run tests because node_modules is absent.
+Keep #123073 open as the canonical report and #123083 as its canonical contributor fix path. The PR is narrow and writable, but its hydrated CI is still pending and the supplied artifact lacks the patch needed for an independent best-fix/code-review verdict; do not merge or replace it yet.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main source proves the open canonical bug: a stored dev channel does not
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123073 | fix_needed | blocked | canonical | Implementation is blocked only by this worker's read-only checkout and missing local dependencies; the fix artifact is ready for the deterministic executor. |
-| cluster:issue-openclaw-openclaw-123073 | build_fix_artifact | planned | canonical | Narrow owner-boundary repair for the canonical issue. |
+| #123073 | keep_canonical | planned | canonical | The issue remains the authoritative reproduction and validation thread while #123083 is reviewed. |
+| #123083 | keep_canonical | planned | canonical | This is the only viable, narrow contributor fix. Rehydrate its patch, review the exact head, run a fresh /review, and wait for or repair relevant CI before considering merge. |
 
 ## Needs Human
 
