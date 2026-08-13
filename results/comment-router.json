@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:26:36.332Z",
+  "updated_at": "2026-08-13T23:26:42.986Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123194:5281254792:2026-08-13T13:45:02Z:re_review",
-      "comment_id": "5281254792",
-      "comment_version_key": "5281254792:2026-08-13T13:45:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123194#issuecomment-5281254792",
-      "comment_created_at": "2026-08-13T13:45:02Z",
-      "comment_updated_at": "2026-08-13T13:45:02Z",
-      "comment_body_sha256": "6f607df469756485cb5aa099fb03b705771c5e77b16a3695aadf27366222d4be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123194,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T13:45:46.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/101554-mcp-tools-list-preparse-limit",
-        "head_sha": "85b5a605b77eb9c1e513040047b203e8f6d27a1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123062:5281257559:2026-08-13T13:45:17Z:re_review",
       "comment_id": "5281257559",
@@ -31287,6 +31240,39 @@
         "kind": "pull_request",
         "branch": "claude/shared-auth-relocate",
         "head_sha": "9f5bd21f97e1941d427d76c4a5d048f7ab9dc6c9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123358:5287533506:2026-08-13T23:26:00Z:clawsweeper_needs_human",
+      "comment_id": "5287533506",
+      "comment_version_key": "5287533506:2026-08-13T23:26:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123358#issuecomment-5287533506",
+      "comment_created_at": "2026-08-13T23:26:00Z",
+      "comment_updated_at": "2026-08-13T23:26:00Z",
+      "comment_body_sha256": "cd68f78ebb60fac8a9f6b202e4800dca6a5f17a5f9efd55c4381c226bd46b278",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123358,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as behind current main and two aggregate checks failed; rebase and exact-head CI review are still needed, but the supplied context does not establish that th... (sha=c1eabdf3c2d7b5821d133069966f4c5b71fd4d34)",
+      "expected_head_sha": "c1eabdf3c2d7b5821d133069966f4c5b71fd4d34",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-13T23:26:42.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/log-tail-line-truncation",
+        "head_sha": "c1eabdf3c2d7b5821d133069966f4c5b71fd4d34",
         "cluster_id": null,
         "job_path": null
       }
