@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:25:16.847Z",
+  "updated_at": "2026-08-13T23:25:40.678Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115246:5106218677:2026-08-13T13:05:01Z:clawsweeper_needs_human",
-      "comment_id": "5106218677",
-      "comment_version_key": "5106218677:2026-08-13T13:05:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115246#issuecomment-5106218677",
-      "comment_created_at": "2026-07-28T15:33:00Z",
-      "comment_updated_at": "2026-08-13T13:05:01Z",
-      "comment_body_sha256": "c876f5a8cba7ddf77a0f2db80e692d1fb06ea993bf0009c6d2c409dbd40e9351",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115246,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Finish the browser-owned denial lifecycle before merge (P1)** - The action races its capture promise against a detected policy denial, but the current guard does not safely own download completion and containmen...; Review finding: [P1] Finish the browser-owned denial lifecycle before merge — extensions/browser/src/browser/pw-tools-core.downloads.ts:114-126 - [high] Denied download containmen... (sha=523ead6b78d8064cb8b7ab2605a218d26aa3d807)",
-      "expected_head_sha": "523ead6b78d8064cb8b7ab2605a218d26aa3d807",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T13:28:18.518Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/browser-sandbox-20260728",
-        "head_sha": "523ead6b78d8064cb8b7ab2605a218d26aa3d807",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116206:5126169219:2026-08-13T13:00:25Z:clawsweeper_auto_repair",
       "comment_id": "5126169219",
@@ -31298,6 +31265,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T23:25:16.847Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123219:5285751663:2026-08-13T23:24:57Z:clawsweeper_needs_human",
+      "comment_id": "5285751663",
+      "comment_version_key": "5285751663:2026-08-13T23:24:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123219#issuecomment-5285751663",
+      "comment_created_at": "2026-08-13T20:01:25Z",
+      "comment_updated_at": "2026-08-13T23:24:57Z",
+      "comment_body_sha256": "b2709f734887ea0a5caebee60257d48200e96d00bd3296d17d9257f581cfde78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123219,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and required checks are reported failed; their exact-head causes could not be inspected, so merge readiness is unproven. (sha=640c425b4dabd9416f1425223721c7da23f7303d)",
+      "expected_head_sha": "640c425b4dabd9416f1425223721c7da23f7303d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:25:40.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tasks-terminal-recent-100911",
+        "head_sha": "640c425b4dabd9416f1425223721c7da23f7303d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
