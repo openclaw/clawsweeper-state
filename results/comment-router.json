@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:11:44.495Z",
+  "updated_at": "2026-08-13T00:12:31.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122503:5263449930:2026-08-12T19:18:24Z:clawsweeper_needs_human",
-      "comment_id": "5263449930",
-      "comment_version_key": "5263449930:2026-08-12T19:18:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122503#issuecomment-5263449930",
-      "comment_created_at": "2026-08-12T07:04:05Z",
-      "comment_updated_at": "2026-08-12T19:18:24Z",
-      "comment_body_sha256": "54a9cf415e986b25ad737962649c1a2421a53d36c43fbb3d3002bd4e9ae3d43e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122503,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Validate direct-child identity against the pinned producer** - The monitor turns V1/V2 spawn fields into authority claims and the relay authorizes a flat child id after parent closure;...; Review finding: [medium] Validate direct-child identity against the pinned producer — extensions/codex/src/app-server/native-subagent-monitor.ts:843 (sha=544607a4f7a07320e30bac9333c7e55df4638b62)",
-      "expected_head_sha": "544607a4f7a07320e30bac9333c7e55df4638b62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:19:19.820Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-codex-subagents-v2",
-        "head_sha": "544607a4f7a07320e30bac9333c7e55df4638b62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117906:5156528698:2026-08-12T19:18:38Z:clawsweeper_auto_repair",
       "comment_id": "5156528698",
@@ -31065,6 +31032,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1149:5274232205:2026-08-13T00:11:49Z:clawsweeper_needs_human",
+      "comment_id": "5274232205",
+      "comment_version_key": "5274232205:2026-08-13T00:11:49Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1149#issuecomment-5274232205",
+      "comment_created_at": "2026-08-13T00:04:59Z",
+      "comment_updated_at": "2026-08-13T00:11:49Z",
+      "comment_body_sha256": "19f2c8b73c94fd821f27d96bd4427270eadef499073af1694da7cb8c95933bde",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1149,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Limit operator fallback to active item records (P1)** - The route matcher still sends closed, plans, and decision-packets through this helper, but the sole operator reconciliation client requests only items. The...; Review finding: [P1] Limit operator fallback to active item records — dashboard/worker.ts:2593-2598 - [medium] Operator fallback covers unrelated record collections — dashboard/wo... (sha=e57a601a7a2bbf0dbac53375ab895a39ab97adf6)",
+      "expected_head_sha": "e57a601a7a2bbf0dbac53375ab895a39ab97adf6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:12:31.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/operator-record-read-auth",
+        "head_sha": "e57a601a7a2bbf0dbac53375ab895a39ab97adf6",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
