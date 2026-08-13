@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:07:08.644Z",
+  "updated_at": "2026-08-13T03:07:45.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122819:5272851514:2026-08-12T21:12:09Z:clawsweeper_needs_human",
-      "comment_id": "5272851514",
-      "comment_version_key": "5272851514:2026-08-12T21:12:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122819#issuecomment-5272851514",
-      "comment_created_at": "2026-08-12T21:12:09Z",
-      "comment_updated_at": "2026-08-12T21:12:09Z",
-      "comment_body_sha256": "93a4ff15de7cec6a5950e16bfffad3d3464fdc7a0ca6e8c4aff1740031bafcd9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122819,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The test’s API-version assertion depends on the pinned OpenAI SDK behavior; local SDK source was unavailable for direct inspection, so exact-head CI should remain the final confirmati... (sha=7b3c57c69135983b27e8fe55b521ece5fafe86bf)",
-      "expected_head_sha": "7b3c57c69135983b27e8fe55b521ece5fafe86bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T21:12:58.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/audit-azure-provider-testing-export",
-        "head_sha": "7b3c57c69135983b27e8fe55b521ece5fafe86bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119243:5180861266:2026-08-12T21:12:39Z:clawsweeper_needs_human",
       "comment_id": "5180861266",
@@ -31670,6 +31637,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122934:5275456850:2026-08-13T03:06:55Z:re_review",
+      "comment_id": "5275456850",
+      "comment_version_key": "5275456850:2026-08-13T03:06:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122934#issuecomment-5275456850",
+      "comment_created_at": "2026-08-13T03:06:55Z",
+      "comment_updated_at": "2026-08-13T03:06:55Z",
+      "comment_body_sha256": "4d517186c945113074917ede89b50abb23be1e9c9063a03c24ab9c81eb9af535",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122934,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T03:07:44.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-enterprise-org-user-1",
+        "head_sha": "ab886309799e677a5ca83c3b15cff1afe27e11f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
