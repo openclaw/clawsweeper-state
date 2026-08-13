@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:08:27.265Z",
+  "updated_at": "2026-08-13T04:08:29.415Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5259995234:2026-08-11T23:22:06Z:re_review",
-      "comment_id": "5259995234",
-      "comment_version_key": "5259995234:2026-08-11T23:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5259995234",
-      "comment_created_at": "2026-08-11T23:22:06Z",
-      "comment_updated_at": "2026-08-11T23:22:06Z",
-      "comment_body_sha256": "fc34b58118db85182bc2dd2f03ddc8991a4fc3334ea6a00b229e2e799a91459d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T22:29:20.950Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5260031906:2026-08-11T23:27:06Z:re_review",
       "comment_id": "5260031906",
@@ -31725,6 +31698,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T04:08:27.265Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1320:5275834118:2026-08-13T04:07:43Z:clawsweeper_needs_human",
+      "comment_id": "5275834118",
+      "comment_version_key": "5275834118:2026-08-13T04:07:43Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1320#issuecomment-5275834118",
+      "comment_created_at": "2026-08-13T04:07:43Z",
+      "comment_updated_at": "2026-08-13T04:07:43Z",
+      "comment_body_sha256": "fee39dce932263847fcacb833a943a345d856663c3de71e7dd03d69411c50e69",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied terminal evidence is an isolated Go test; please add a redacted after-fix static macOS sync or crabbox run transcript that shows t... (sha=4f1346dbf27c92998ea38c03c89498069100dc48)",
+      "expected_head_sha": "4f1346dbf27c92998ea38c03c89498069100dc48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T04:08:29.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/static-macos-work-root-user",
+        "head_sha": "4f1346dbf27c92998ea38c03c89498069100dc48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
