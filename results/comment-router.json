@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T14:08:02.401Z",
+  "updated_at": "2026-08-13T14:12:22.828Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122878:5274491589:2026-08-13T06:25:27Z:clawsweeper_needs_human",
-      "comment_id": "5274491589",
-      "comment_version_key": "5274491589:2026-08-13T06:25:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122878#issuecomment-5274491589",
-      "comment_created_at": "2026-08-13T00:39:13Z",
-      "comment_updated_at": "2026-08-13T06:25:27Z",
-      "comment_body_sha256": "aae7e28e06496c3bd2f20a4fe4e0e50564324f23961b91b5f09c0d0fcb1ac3d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122878,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional Plugin SDK cancellation callback and fan-in cancel method establish retry-accounting semantics for external channel plugins; mixed legacy fan-in intentionally consumes an... (sha=466c609d0090b7fe79caca215b670fbdfe9ce966)",
-      "expected_head_sha": "466c609d0090b7fe79caca215b670fbdfe9ce966",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T07:06:58.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "joshavant/issue-122465-20260812t184737z-143684e5",
-        "head_sha": "466c609d0090b7fe79caca215b670fbdfe9ce966",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122884:5274666709:2026-08-13T04:19:42Z:clawsweeper_auto_repair",
       "comment_id": "5274666709",
@@ -32262,6 +32229,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122574:5281566530:2026-08-13T14:11:30Z:re_review",
+      "comment_id": "5281566530",
+      "comment_version_key": "5281566530:2026-08-13T14:11:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122574#issuecomment-5281566530",
+      "comment_created_at": "2026-08-13T14:11:30Z",
+      "comment_updated_at": "2026-08-13T14:11:30Z",
+      "comment_body_sha256": "229adb6a4ce0017d9f5d93aa13f45650e27bee62edcb8da4310d320f7bcb5744",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122574,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T14:12:21.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/update-candidate-plugin-plan",
+        "head_sha": "94d623e07fa1acb0b66f65eda6453196e96c3eec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
