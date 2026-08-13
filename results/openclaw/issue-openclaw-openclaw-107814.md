@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107814"
 mode: "autonomous"
-run_id: "31661682574"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31661682574"
+run_id: "31663313156"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31663313156"
 head_sha: "56cb78d60734ddc62b5f1e49981bbb4556dcb58d"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-13T02:51:28.101Z"
+published_at: "2026-08-13T03:19:41.468Z"
 canonical: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31661682574](https://github.com/openclaw/clawsweeper/actions/runs/31661682574)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31663313156](https://github.com/openclaw/clawsweeper/actions/runs/31663313156)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/107814
 
 ## Summary
 
-A narrow shared-parser fix is warranted: streamed nonempty arguments are overwritten when either terminal field is the nonempty string "{}". Local implementation and proof are blocked because the checkout is read-only, dependencies are absent (focused tests fail before collection: missing tsx), and required sibling ../codex source is unavailable for the Codex-model gate. A new-fix-PR artifact is ready for a writable, hydrated executor.
+Current main aba94bbe still overwrites nonempty streamed tool arguments when a terminal Responses field is the string "{}". The narrow shared-parser repair remains appropriate, but this read-only checkout cannot implement or validate it: focused Vitest stops before collection because tsx is absent, and required sibling ../codex source is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ A narrow shared-parser fix is warranted: streamed nonempty arguments are overwri
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107814 | fix_needed | planned | canonical | Repair the shared Responses owner with terminal empty-object downgrade handling; do not add a Spark-specific route or configuration. |
-| #40069 | keep_closed | skipped | related | Already closed; no closure or mutation is valid. |
-| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | A writable, dependency-hydrated executor can produce one narrow credited fix PR. |
+| #107814 | fix_needed | planned | canonical | The shared Responses stream owner should preserve valid streamed JSON when terminal data is an empty object, without a Spark-specific branch. |
+| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | Prepare one narrow credited fix PR in a writable, dependency-hydrated executor. |
 
 ## Needs Human
 
