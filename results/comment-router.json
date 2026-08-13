@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:14:25.937Z",
+  "updated_at": "2026-08-13T00:15:39.478Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120900:5231888381:2026-08-09T13:57:39Z:re_review",
-      "comment_id": "5231888381",
-      "comment_version_key": "5231888381:2026-08-09T13:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5231888381",
-      "comment_created_at": "2026-08-09T13:57:39Z",
-      "comment_updated_at": "2026-08-09T13:57:39Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:19:41.092Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5232234529:2026-08-09T15:16:58Z:re_review",
       "comment_id": "5232234529",
@@ -31074,6 +31047,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122793:5272772644:2026-08-13T00:14:51Z:clawsweeper_needs_human",
+      "comment_id": "5272772644",
+      "comment_version_key": "5272772644:2026-08-13T00:14:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122793#issuecomment-5272772644",
+      "comment_created_at": "2026-08-12T21:03:46Z",
+      "comment_updated_at": "2026-08-13T00:14:51Z",
+      "comment_body_sha256": "4046154f1c677079ae5eaadcfde54622935ac63938d40dd6a0da541b9979b73a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body supplies tests and a fake Crabbox lifecycle, but no redacted real receipt-producing remote run with observed descendant reuse. Afte... (sha=0aae8cfa2399b59fd5ce1f3d556af39f62cb76f1)",
+      "expected_head_sha": "0aae8cfa2399b59fd5ce1f3d556af39f62cb76f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:15:39.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/phase-check-evidence-reuse",
+        "head_sha": "0aae8cfa2399b59fd5ce1f3d556af39f62cb76f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
