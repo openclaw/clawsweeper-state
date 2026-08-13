@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-122865"
-mode: "autonomous"
-run_id: "31653059935"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31653059935"
-head_sha: "ae36d608d01701af7e06c313be96689068b5c890"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-13T00:14:32.195Z"
+mode: "plan"
+run_id: "31655597674"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31655597674"
+head_sha: "637c3339dbef38ca3f7444510c8f7e72b95903c6"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-13T00:53:33.918Z"
 canonical: "https://github.com/openclaw/openclaw/issues/122865"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/122865"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31653059935](https://github.com/openclaw/clawsweeper/actions/runs/31653059935)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31655597674](https://github.com/openclaw/clawsweeper/actions/runs/31655597674)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/122865
 
 ## Summary
 
-Confirmed #122865 on main 52cda537: shared event reconciliation already debounces canonical refreshes, but the sessions page subscribes to each reconciled result and schedules a direct sessions.list microtask. Implementation is blocked only because this checkout is read-only and lacks tsx for focused Vitest.
+#122865 remains reproducible on main af497642: the page subscribes to shared roster updates and schedules a direct sessions.list call, bypassing the capability-owned event debounce. Plan a narrow page-consumer repair and regression; no mutations made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed #122865 on main 52cda537: shared event reconciliation already debounce
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #122865 | fix_needed | planned | canonical | A narrow owner-boundary repair is valid; no security, configuration, or product-policy change is involved. |
-| cluster:issue-openclaw-openclaw-122865 | build_fix_artifact | blocked | canonical | Build artifact is ready, but this worker cannot edit the read-only checkout or install the missing test dependency. |
+| #122865 | fix_needed | planned | canonical | The issue is an ordinary Control UI bug with a clear shared-owner boundary and no security or product-policy change. |
+| cluster:issue-openclaw-openclaw-122865 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once executed in a writable checkout with dependencies installed. |
 
 ## Needs Human
 
