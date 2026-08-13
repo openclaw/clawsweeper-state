@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:26:42.986Z",
+  "updated_at": "2026-08-13T23:27:13.189Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123062:5281257559:2026-08-13T13:45:17Z:re_review",
-      "comment_id": "5281257559",
-      "comment_version_key": "5281257559:2026-08-13T13:45:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5281257559",
-      "comment_created_at": "2026-08-13T13:45:17Z",
-      "comment_updated_at": "2026-08-13T13:45:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T13:46:04.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-ws-aug13",
-        "head_sha": "4e86f6be203a8108c4fd933ce8657eff5bc150d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122855:5281409366:2026-08-13T13:58:06Z:re_review",
       "comment_id": "5281409366",
@@ -31273,6 +31226,39 @@
         "kind": "pull_request",
         "branch": "fix/log-tail-line-truncation",
         "head_sha": "c1eabdf3c2d7b5821d133069966f4c5b71fd4d34",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123366:5287537569:2026-08-13T23:26:33Z:clawsweeper_needs_human",
+      "comment_id": "5287537569",
+      "comment_version_key": "5287537569:2026-08-13T23:26:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123366#issuecomment-5287537569",
+      "comment_created_at": "2026-08-13T23:26:33Z",
+      "comment_updated_at": "2026-08-13T23:26:33Z",
+      "comment_body_sha256": "08645f23d6e0167f9f9ba3e4cafb8a5edff426803e313add3d6fcf1bf4ce4fad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123366,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provider/API contract, current-main integration paths, and claimed live regression proof require maintainer verification because repository inspection was unavailable. (sha=f31fa929ca0b061c320e63bcdf5aabf1cb6cd86c)",
+      "expected_head_sha": "f31fa929ca0b061c320e63bcdf5aabf1cb6cd86c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:27:13.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gemini-3-7-flash-support-9d51de",
+        "head_sha": "f31fa929ca0b061c320e63bcdf5aabf1cb6cd86c",
         "cluster_id": null,
         "job_path": null
       }
