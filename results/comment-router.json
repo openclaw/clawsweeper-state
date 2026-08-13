@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-13T10:19:17.027Z",
+  "updated_at": "2026-08-13T10:18:38.909Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122444:5276099225:2026-08-13T04:49:53Z:re_review",
+      "comment_id": "5276099225",
+      "comment_version_key": "5276099225:2026-08-13T04:49:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122444#issuecomment-5276099225",
+      "comment_created_at": "2026-08-13T04:49:53Z",
+      "comment_updated_at": "2026-08-13T04:49:53Z",
+      "comment_body_sha256": "1d085349eb44647b1518ad59ce36a665729e0a2d43d98e3d5ced6ce16d8f2a46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122444,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T05:18:07.903Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-90467-cron-conversation-targets",
+        "head_sha": "16385bca366d08e86cb7b21e78f3f6db79a23475",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122444:5262583378:2026-08-13T05:17:18Z:clawsweeper_auto_repair",
       "comment_id": "5262583378",
@@ -31877,39 +31924,6 @@
         "kind": "pull_request",
         "branch": "steipete/sidebar-browser-responsive-28dd91",
         "head_sha": "97ce2b1cbbc2d1e8a632b4091badaed49a162aed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123118:5279028206:2026-08-13T10:18:31Z:clawsweeper_needs_human",
-      "comment_id": "5279028206",
-      "comment_version_key": "5279028206:2026-08-13T10:18:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123118#issuecomment-5279028206",
-      "comment_created_at": "2026-08-13T10:18:31Z",
-      "comment_updated_at": "2026-08-13T10:18:31Z",
-      "comment_body_sha256": "98bb1623e897c505b152ee969be63a3c6e687440537881a4c350447e3914f553",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123118,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head validation is incomplete: check-lint is failing and several checks remain in progress. (sha=93b0507f51c15812ca0ff62425900b3820e4200c)",
-      "expected_head_sha": "93b0507f51c15812ca0ff62425900b3820e4200c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T10:19:17.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release-integration/2026.8.1-beta.2-repair-r21-unsigned",
-        "head_sha": "93b0507f51c15812ca0ff62425900b3820e4200c",
         "cluster_id": null,
         "job_path": null
       }
