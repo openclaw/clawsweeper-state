@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:06:16.874Z",
+  "updated_at": "2026-08-13T23:06:48.284Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108892:4991194647:2026-08-13T09:24:47Z:clawsweeper_auto_repair",
-      "comment_id": "4991194647",
-      "comment_version_key": "4991194647:2026-08-13T09:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108892#issuecomment-4991194647",
-      "comment_created_at": "2026-07-16T11:17:18Z",
-      "comment_updated_at": "2026-08-13T09:24:47Z",
-      "comment_body_sha256": "60b7c528bb7e7e8d4adae23d5ddf7a72c72541c448b8954de0ee69a3a426005f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108892,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=58ef68b1188176d5bf5a5b8f839c901ab432ec3c)",
-      "expected_head_sha": "58ef68b1188176d5bf5a5b8f839c901ab432ec3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T10:22:13.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rex/gemini-flash-lite-cost-metadata",
-        "head_sha": "58ef68b1188176d5bf5a5b8f839c901ab432ec3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110835:5012157846:2026-08-13T10:12:20Z:clawsweeper_auto_repair",
       "comment_id": "5012157846",
@@ -32576,6 +32543,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:374:5287389120:2026-08-13T23:06:08Z:clawsweeper_needs_human",
+      "comment_id": "5287389120",
+      "comment_version_key": "5287389120:2026-08-13T23:06:08Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/374#issuecomment-5287389120",
+      "comment_created_at": "2026-08-13T23:06:08Z",
+      "comment_updated_at": "2026-08-13T23:06:08Z",
+      "comment_body_sha256": "d8bd5a2f52d84c589ecd2360319ef819b5ae80fa658a95127eea64f8f3e7a284",
+      "repo": "steipete/oracle",
+      "issue_number": 374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes existing generic Pro aliases from GPT-5.5 to GPT-5.6 Sol; callers needing the historical target must retain the explicit gpt-5.5-pro model. (sha=a4e20e3032693c055564591deb3cd25cb017c541)",
+      "expected_head_sha": "a4e20e3032693c055564591deb3cd25cb017c541",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:06:48.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-current-pro-alias-gpt56",
+        "head_sha": "a4e20e3032693c055564591deb3cd25cb017c541",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
