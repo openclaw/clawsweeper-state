@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T07:15:42.441Z",
+  "updated_at": "2026-08-13T07:16:19.869Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/Tachikoma:57:5275585039:2026-08-13T03:26:36Z:re_review",
-      "comment_id": "5275585039",
-      "comment_version_key": "5275585039:2026-08-13T03:26:36Z",
-      "comment_url": "https://github.com/openclaw/Tachikoma/pull/57#issuecomment-5275585039",
-      "comment_created_at": "2026-08-13T03:26:36Z",
-      "comment_updated_at": "2026-08-13T03:26:36Z",
-      "comment_body_sha256": "188eef2a13a85d373e6b8136f9236affdef90b87fefdaa9d9c7fc63f02b9d7c6",
-      "repo": "openclaw/Tachikoma",
-      "issue_number": 57,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T03:26:52.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tachikoma-tool-binding-consolidation",
-        "head_sha": "ebb6088b58412333e50a708df6bbd5744e1f9289",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Tachikoma:57:5275582712:2026-08-13T03:26:10Z:clawsweeper_auto_repair",
       "comment_id": "5275582712",
@@ -31041,6 +30994,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T07:15:42.441Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123036:5277243271:2026-08-13T07:15:31Z:clawsweeper_auto_repair",
+      "comment_id": "5277243271",
+      "comment_version_key": "5277243271:2026-08-13T07:15:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123036#issuecomment-5277243271",
+      "comment_created_at": "2026-08-13T07:15:31Z",
+      "comment_updated_at": "2026-08-13T07:15:31Z",
+      "comment_body_sha256": "5ed88efcba08b5e48aa57860424be2cdcf758ac54651e1f0f61ede6d210fe3cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123036,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c347fbd705fa5679c64665a9e41e09bb7c3df239)",
+      "expected_head_sha": "c347fbd705fa5679c64665a9e41e09bb7c3df239",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T07:16:19.869Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "t3code/remove-plugin-sdk-baseline-hashes",
+        "head_sha": "c347fbd705fa5679c64665a9e41e09bb7c3df239",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
