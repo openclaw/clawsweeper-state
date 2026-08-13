@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T20:14:13.864Z",
+  "updated_at": "2026-08-13T20:14:17.357Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121894:5249820475:2026-08-11T06:32:45Z:re_review",
-      "comment_id": "5249820475",
-      "comment_version_key": "5249820475:2026-08-11T06:32:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121894#issuecomment-5249820475",
-      "comment_created_at": "2026-08-11T06:32:45Z",
-      "comment_updated_at": "2026-08-11T06:32:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121894,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T07:28:30.538Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121894:5250107271:2026-08-13T07:26:10Z:clawsweeper_needs_human",
       "comment_id": "5250107271",
@@ -33246,6 +33219,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T20:14:13.864Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123241:5285868940:2026-08-13T20:13:32Z:clawsweeper_needs_human",
+      "comment_id": "5285868940",
+      "comment_version_key": "5285868940:2026-08-13T20:13:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123241#issuecomment-5285868940",
+      "comment_created_at": "2026-08-13T20:13:32Z",
+      "comment_updated_at": "2026-08-13T20:13:32Z",
+      "comment_body_sha256": "fbdf4e5087f11221dcd5ebad0a256d7e97fe7c58663137aa62a8975eadd1d62e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides command names only; add redacted after-fix production-boundary evidence showing a local-use NAT64 origin rejected by default an...; Review finding: [P1] Provide an upgrade path for configured local-use NAT64 origins — packages/net-policy/src/ip.ts:258 - [medium] Recovery broadens the private-network trust surf... (sha=4522113133d1cd0aab776042539d7c16cc499feb)",
+      "expected_head_sha": "4522113133d1cd0aab776042539d7c16cc499feb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T20:14:17.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-942",
+        "head_sha": "4522113133d1cd0aab776042539d7c16cc499feb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
