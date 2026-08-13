@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-107814",
+  "mode": "autonomous",
+  "run_id": "31661682574",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31661682574",
+  "head_sha": "56cb78d60734ddc62b5f1e49981bbb4556dcb58d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-107814.md",
+  "published_at": "2026-08-13T02:51:28.101Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/107814",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/107814",
+  "canonical_pr": null,
+  "summary": "A narrow shared-parser fix is warranted: streamed nonempty arguments are overwritten when either terminal field is the nonempty string \"{}\". Local implementation and proof are blocked because the checkout is read-only, dependencies are absent (focused tests fail before collection: missing tsx), and required sibling ../codex source is unavailable for the Codex-model gate. A new-fix-PR artifact is ready for a writable, hydrated executor.",
+  "actions": [
+    {
+      "target": "#107814",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#107814",
+      "candidate_fix": null,
+      "reason": "Repair the shared Responses owner with terminal empty-object downgrade handling; do not add a Spark-specific route or configuration."
+    },
+    {
+      "target": "#40069",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-107814",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#107814",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-hydrated executor can produce one narrow credited fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

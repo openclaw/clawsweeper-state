@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107814"
-mode: "plan"
-run_id: "31659850670"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31659850670"
+mode: "autonomous"
+run_id: "31661682574"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31661682574"
 head_sha: "56cb78d60734ddc62b5f1e49981bbb4556dcb58d"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-13T02:12:41.677Z"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-08-13T02:51:28.101Z"
 canonical: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31659850670](https://github.com/openclaw/clawsweeper/actions/runs/31659850670)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31661682574](https://github.com/openclaw/clawsweeper/actions/runs/31661682574)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/107814
 
 ## Summary
 
-Plan a narrow shared Responses parser fix: prevent terminal "{}" snapshots from replacing valid streamed tool arguments, while retaining "{}" for no-delta parameterless calls. No GitHub mutation is proposed in this mode.
+A narrow shared-parser fix is warranted: streamed nonempty arguments are overwritten when either terminal field is the nonempty string "{}". Local implementation and proof are blocked because the checkout is read-only, dependencies are absent (focused tests fail before collection: missing tsx), and required sibling ../codex source is unavailable for the Codex-model gate. A new-fix-PR artifact is ready for a writable, hydrated executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan a narrow shared Responses parser fix: prevent terminal "{}" snapshots from 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107814 | fix_needed | planned | canonical | The issue is a real shared-parser regression with a narrow owner-boundary repair; no Spark-specific behavior, configuration, fallback, or changelog change is needed. |
-| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | Create one narrow credited fix PR after the executor completes dependency and Codex-source inspection. |
+| #107814 | fix_needed | planned | canonical | Repair the shared Responses owner with terminal empty-object downgrade handling; do not add a Spark-specific route or configuration. |
+| #40069 | keep_closed | skipped | related | Already closed; no closure or mutation is valid. |
+| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | A writable, dependency-hydrated executor can produce one narrow credited fix PR. |
 
 ## Needs Human
 
