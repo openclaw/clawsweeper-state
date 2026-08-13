@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T14:26:32.741Z",
+  "updated_at": "2026-08-13T14:27:36.112Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123020:5276607446:2026-08-13T06:22:01Z:clawsweeper_auto_repair",
-      "comment_id": "5276607446",
-      "comment_version_key": "5276607446:2026-08-13T06:22:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123020#issuecomment-5276607446",
-      "comment_created_at": "2026-08-13T06:08:25Z",
-      "comment_updated_at": "2026-08-13T06:22:01Z",
-      "comment_body_sha256": "fa69d37b30e2af5c217f7db1da8a1f79ef10d61b99e951ec31d58b509af43bf6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123020,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a5959f9aa3db76cae3e08ecea6bfd135c5984e4)",
-      "expected_head_sha": "5a5959f9aa3db76cae3e08ecea6bfd135c5984e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T07:06:58.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/coercion-helper-consolidation-round7-strict-zero",
-        "head_sha": "52336778465a036b0ede0ef503d11b3dbeee70be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123022:5276616953:2026-08-13T06:20:37Z:clawsweeper_needs_human",
       "comment_id": "5276616953",
@@ -32252,6 +32219,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122899:5281742522:2026-08-13T14:26:43Z:re_review",
+      "comment_id": "5281742522",
+      "comment_version_key": "5281742522:2026-08-13T14:26:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122899#issuecomment-5281742522",
+      "comment_created_at": "2026-08-13T14:26:43Z",
+      "comment_updated_at": "2026-08-13T14:26:43Z",
+      "comment_body_sha256": "1bac60b6f2c8856b58d5d624a8fdfdc7b7daa2acb261141f5bad141b28e4b071",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122899,
+      "author": "ceckert",
+      "author_id": 779559,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T14:27:34.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-file-discovery",
+        "head_sha": "d17c2b6e160075e87b874759ea1425a296346571",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
