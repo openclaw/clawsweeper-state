@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:17:34.544Z",
+  "updated_at": "2026-08-13T02:17:47.709Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5272171852:2026-08-12T20:02:39Z:re_review",
-      "comment_id": "5272171852",
-      "comment_version_key": "5272171852:2026-08-12T20:02:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5272171852",
-      "comment_created_at": "2026-08-12T20:02:11Z",
-      "comment_updated_at": "2026-08-12T20:02:39Z",
-      "comment_body_sha256": "1412a0a0986ade6962057a6865cefe935dc834998f7c642a0edbf03fb0748474",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T20:03:24.255Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/41966-media-token-warn-in-fence",
-        "head_sha": "7cd4b842134f50841300203e0398ec38d3b6279a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116050:5122501052:2026-08-12T19:58:04Z:clawsweeper_needs_human",
       "comment_id": "5122501052",
@@ -31685,6 +31638,39 @@
         "kind": "pull_request",
         "branch": "fix/parallels-preserve-plugin-inventory",
         "head_sha": "295c3a55392841850df35e5009ccebdfae216f89",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122508:5263497949:2026-08-13T02:16:48Z:clawsweeper_needs_human",
+      "comment_id": "5263497949",
+      "comment_version_key": "5263497949:2026-08-13T02:16:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122508#issuecomment-5263497949",
+      "comment_created_at": "2026-08-12T07:09:15Z",
+      "comment_updated_at": "2026-08-13T02:16:48Z",
+      "comment_body_sha256": "938b3364e85a82a2ae9a4ce0c116c336798c108fc699f495807f1b49d607db1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122508,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests and CI are useful supplemental evidence, but the PR lacks after-fix live-channel or mock-gateway boundary proof. After adding pro... (sha=0ee9e9519d62b40a794ca5656bb1669d6a024f87)",
+      "expected_head_sha": "0ee9e9519d62b40a794ca5656bb1669d6a024f87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T02:17:47.709Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/silent-reply-single-char-prefix",
+        "head_sha": "0ee9e9519d62b40a794ca5656bb1669d6a024f87",
         "cluster_id": null,
         "job_path": null
       }
