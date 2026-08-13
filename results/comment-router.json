@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:18:11.622Z",
+  "updated_at": "2026-08-13T05:18:33.058Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5017026097:2026-07-19T19:11:32Z:re_review",
-      "comment_id": "5017026097",
-      "comment_version_key": "5017026097:2026-07-19T19:11:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5017026097",
-      "comment_created_at": "2026-07-19T19:11:32Z",
-      "comment_updated_at": "2026-07-19T19:11:32Z",
-      "comment_body_sha256": "cf8fb63042ca382d791a1a035de98b56c65e423ac35da0f1cbe2add1ac52ad41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main; the only conflict was the generated plugin-sdk api baseline manifest, resolved by regenerating against the new base (the pr touches no plugin-sdk exports). tsgo, tsgo:test, and plugin-sdk:api:check are green locally. no source behavior change. new head c5fa5b6e2b",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:07:32.865Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5021224721:2026-07-20T10:26:06Z:re_review",
       "comment_id": "5021224721",
@@ -30563,6 +30536,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T05:18:11.622Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123014:5276276966:2026-08-13T05:17:48Z:clawsweeper_auto_repair",
+      "comment_id": "5276276966",
+      "comment_version_key": "5276276966:2026-08-13T05:17:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123014#issuecomment-5276276966",
+      "comment_created_at": "2026-08-13T05:17:48Z",
+      "comment_updated_at": "2026-08-13T05:17:48Z",
+      "comment_body_sha256": "5eb6b8df3d2d3c47d800fd5363ac31c1cb1867190196d837f0755711d5a235b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123014,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a3741626ae02812f6853a0aa2b58a617698ed60d)",
+      "expected_head_sha": "a3741626ae02812f6853a0aa2b58a617698ed60d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T05:18:33.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-maintenance-eligible-quota",
+        "head_sha": "a3741626ae02812f6853a0aa2b58a617698ed60d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
