@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T10:29:16.193Z",
+  "updated_at": "2026-08-13T10:29:21.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119877:5276374567:2026-08-13T05:33:20Z:re_review",
-      "comment_id": "5276374567",
-      "comment_version_key": "5276374567:2026-08-13T05:33:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119877#issuecomment-5276374567",
-      "comment_created_at": "2026-08-13T05:33:20Z",
-      "comment_updated_at": "2026-08-13T05:33:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119877,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T06:06:58.426Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/request-scoped-error-redaction-foundation",
-        "head_sha": "3d3e66f4f8e6035d595e2799190c5b71fef175c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119877:5202927234:2026-08-13T06:06:07Z:clawsweeper_needs_human",
       "comment_id": "5202927234",
@@ -31885,6 +31838,39 @@
         "kind": "pull_request",
         "branch": "deps/refresh-2026-08-13",
         "head_sha": "9697a838ad466d502e583d0e8bf531fc76982ded",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111589:5018228671:2026-08-13T10:28:38Z:clawsweeper_needs_human",
+      "comment_id": "5018228671",
+      "comment_version_key": "5018228671:2026-08-13T10:28:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111589#issuecomment-5018228671",
+      "comment_created_at": "2026-07-20T02:27:25Z",
+      "comment_updated_at": "2026-08-13T10:28:38Z",
+      "comment_body_sha256": "d47d514c5521fc7a9ff5c78b95814d4a5914a2c4228cc636d1488e7c9d11720f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bound the prepared catalog capture path (P1)** - The normal static build now reads models.json in prepared-model-runtime.facts.ts before ModelRegistry receives modelsJsonContents, so this changed fallback does n...; Review finding: [P1] Bound the prepared catalog capture path — src/agents/sessions/model-registry.ts:490-497 - [P1] Define recovery before rejecting large catalogs — src/agents/se... (sha=c5f24edfdf55d325e6eaf7972d573e191ee24e87)",
+      "expected_head_sha": "c5f24edfdf55d325e6eaf7972d573e191ee24e87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T10:29:21.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bound-models-catalog-read",
+        "head_sha": "c5f24edfdf55d325e6eaf7972d573e191ee24e87",
         "cluster_id": null,
         "job_path": null
       }
