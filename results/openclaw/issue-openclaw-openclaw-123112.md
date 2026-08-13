@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-123112"
 mode: "autonomous"
-run_id: "31689616884"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31689616884"
+run_id: "31692425362"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31692425362"
 head_sha: "4d41d3df4baf191dca9c385c82689425a135a5c4"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-13T10:14:32.522Z"
-canonical: "https://github.com/openclaw/openclaw/issues/123112"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/123112"
+published_at: "2026-08-13T10:50:44.661Z"
+canonical: "#123112"
+canonical_issue: "#123112"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31689616884](https://github.com/openclaw/clawsweeper/actions/runs/31689616884)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31692425362](https://github.com/openclaw/clawsweeper/actions/runs/31692425362)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/123112
+Canonical: #123112
 
 ## Summary
 
-Confirmed on main 2278ca6952ea8e5f97decf932fde4ee2c7799e1f: named Telegram accounts isolate SessionKey but emit the same direct ConversationLabel. A narrow plugin-local fix is appropriate. This worker cannot edit or validate because the checkout is read-only and focused Vitest lacks the tsx dependency.
+Confirmed on main: named-account Telegram direct sessions have distinct keys but share the same display label because the label is derived only from the sender. A narrow owner-local fix is appropriate, but this worker cannot edit the read-only checkout or run Vitest because the required tsx dependency is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed on main 2278ca6952ea8e5f97decf932fde4ee2c7799e1f: named Telegram accou
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #123112 | fix_needed | blocked | canonical | Implementation and focused validation are blocked only by this read-only worker environment; the deterministic executor should apply the supplied new-PR artifact. |
-| cluster:issue-openclaw-openclaw-123112 | build_fix_artifact | planned | canonical | Narrow new fix PR required. |
+| #123112 | fix_needed | planned | canonical | Repair the Telegram-owned label producer only; do not change routing, session keys, outbound transcript ownership, or configuration. |
 
 ## Needs Human
 
