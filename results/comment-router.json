@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T10:13:44.958Z",
+  "updated_at": "2026-08-13T10:14:01.725Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122899:5275160129:2026-08-13T05:16:44Z:clawsweeper_needs_human",
-      "comment_id": "5275160129",
-      "comment_version_key": "5275160129:2026-08-13T05:16:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122899#issuecomment-5275160129",
-      "comment_created_at": "2026-08-13T02:17:41Z",
-      "comment_updated_at": "2026-08-13T05:16:44Z",
-      "comment_body_sha256": "f6705b760cd819f1e39079aa72585d79e58b988cf1ad121e0bbb927045520898",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122899,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR describes tests, but its no-shell coverage uses a host bridge rather than an observed supported remote or container sandbox backend afte...; Review finding: [P1] Bound bridge directory listings before serializing — src/agents/sandbox/fs-bridge-mutation-helper.ts:256-265 - [P2] Publish the discovery bridge through the s... (sha=c31481b5007ba7932f2b980251cc35f749a253bd)",
-      "expected_head_sha": "c31481b5007ba7932f2b980251cc35f749a253bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T05:17:25.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-file-discovery",
-        "head_sha": "c31481b5007ba7932f2b980251cc35f749a253bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116511:5276021766:2026-08-13T04:36:59Z:re_review",
       "comment_id": "5276021766",
@@ -31797,6 +31764,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122748:5278965577:2026-08-13T10:13:17Z:re_review",
+      "comment_id": "5278965577",
+      "comment_version_key": "5278965577:2026-08-13T10:13:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122748#issuecomment-5278965577",
+      "comment_created_at": "2026-08-13T10:13:17Z",
+      "comment_updated_at": "2026-08-13T10:13:17Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122748,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T10:14:00.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/tsgo-test-memory",
+        "head_sha": "38b4ed8b953bbe425f3db0217076dbdb6674157d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
