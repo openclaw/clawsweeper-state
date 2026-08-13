@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:21:03.829Z",
+  "updated_at": "2026-08-13T23:21:36.121Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110561:5280172035:2026-08-13T12:06:52Z:re_review",
-      "comment_id": "5280172035",
-      "comment_version_key": "5280172035:2026-08-13T12:06:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110561#issuecomment-5280172035",
-      "comment_created_at": "2026-08-13T12:06:52Z",
-      "comment_updated_at": "2026-08-13T12:06:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110561,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T12:07:39.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/strict-blob-text-cast-110186",
-        "head_sha": "ae6ea43537b86b4aa79e9e0984efe0090bd297eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123138:5280173174:2026-08-13T12:06:58Z:re_review",
       "comment_id": "5280173174",
@@ -31756,6 +31709,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T23:21:03.828Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123105:5279074994:2026-08-13T23:16:50Z:clawsweeper_needs_human",
+      "comment_id": "5279074994",
+      "comment_version_key": "5279074994:2026-08-13T23:16:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123105#issuecomment-5279074994",
+      "comment_created_at": "2026-08-13T10:23:27Z",
+      "comment_updated_at": "2026-08-13T23:16:50Z",
+      "comment_body_sha256": "a6f206ddd058fe41f5ee241e43cc5a686ba5e9e818e86d497ff8c82ae05b7aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Retain compatibility for installed llama.cpp plugins (P1)** - The patch removes the SDK re-export that released llama.cpp plugin versions can import. Those plugins will fail while ESM evaluates their entrypoint,...; Review finding: [P1] Retain compatibility for installed llama.cpp plugins — src/plugin-sdk/memory-core-host-engine-embeddings.ts:6-8 - [medium] Verify managed-binary installation... (sha=4a8ee9e82a7c4c4e5b5c2a7ba0694aad6eb3a2bd)",
+      "expected_head_sha": "4a8ee9e82a7c4c4e5b5c2a7ba0694aad6eb3a2bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:21:36.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rebuild/external-llama-server",
+        "head_sha": "4a8ee9e82a7c4c4e5b5c2a7ba0694aad6eb3a2bd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
