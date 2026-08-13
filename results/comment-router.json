@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T21:18:18.061Z",
+  "updated_at": "2026-08-13T21:18:26.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118008:5278033467:2026-08-13T08:40:05Z:re_review",
-      "comment_id": "5278033467",
-      "comment_version_key": "5278033467:2026-08-13T08:40:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118008#issuecomment-5278033467",
-      "comment_created_at": "2026-08-13T08:40:05Z",
-      "comment_updated_at": "2026-08-13T08:40:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118008,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T09:13:13.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-server-terminology",
-        "head_sha": "49b16e23cba56e266122f089f65b462ec1ab7258",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122350:5260377404:2026-08-13T09:11:55Z:clawsweeper_needs_human",
       "comment_id": "5260377404",
@@ -32881,6 +32834,39 @@
         "kind": "pull_request",
         "branch": "test/audit-residual-test-seams",
         "head_sha": "28955cc6d9f28c14a03fed1604340b791a7f6445",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123171:5286480991:2026-08-13T21:16:08Z:clawsweeper_needs_human",
+      "comment_id": "5286480991",
+      "comment_version_key": "5286480991:2026-08-13T21:16:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123171#issuecomment-5286480991",
+      "comment_created_at": "2026-08-13T21:16:08Z",
+      "comment_updated_at": "2026-08-13T21:16:08Z",
+      "comment_body_sha256": "cc1909ba871fba8a9f4eb88d3002983adcf44aa178a7d069dd4c8e4097407fb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head source, Gateway merge semantics, and test execution could not be independently checked because the read-only command runner failed. (sha=84ea153bff2b7d37a693e264fecfdffd5534d490)",
+      "expected_head_sha": "84ea153bff2b7d37a693e264fecfdffd5534d490",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T21:18:26.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-cron-delivery-to-clear",
+        "head_sha": "84ea153bff2b7d37a693e264fecfdffd5534d490",
         "cluster_id": null,
         "job_path": null
       }
