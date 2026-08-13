@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:05:58.336Z",
+  "updated_at": "2026-08-13T00:06:07.248Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117305:5270995232:2026-08-12T18:23:06Z:re_review",
-      "comment_id": "5270995232",
-      "comment_version_key": "5270995232:2026-08-12T18:23:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117305#issuecomment-5270995232",
-      "comment_created_at": "2026-08-12T18:23:06Z",
-      "comment_updated_at": "2026-08-12T18:23:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117305,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:03:04.907Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122752:5271014579:2026-08-12T18:25:03Z:re_review",
       "comment_id": "5271014579",
@@ -31128,6 +31101,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:434:5274156478:2026-08-13T00:03:20Z:clawsweeper_needs_human",
+      "comment_id": "5274156478",
+      "comment_version_key": "5274156478:2026-08-13T00:03:20Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/434#issuecomment-5274156478",
+      "comment_created_at": "2026-08-12T23:52:44Z",
+      "comment_updated_at": "2026-08-13T00:03:20Z",
+      "comment_body_sha256": "fd76b572e39f07c8dd5434d01488c6d60d99d5da8419306bc66699d8593049e0",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 434,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the public cross-process failure contract, so mixed-version clients and hosts must continue to receive exactly the legacy shapes covered by the focused compatibility t... (sha=afbcd43486fa9fb2728abbe9b01ab2f45ed75d6c)",
+      "expected_head_sha": "afbcd43486fa9fb2728abbe9b01ab2f45ed75d6c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:06:07.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bridge-result-projection",
+        "head_sha": "afbcd43486fa9fb2728abbe9b01ab2f45ed75d6c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
