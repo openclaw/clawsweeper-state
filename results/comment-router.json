@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:22:08.390Z",
+  "updated_at": "2026-08-13T02:22:17.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:76082:4523510979:2026-05-23T00:25:12Z:re_review",
-      "comment_id": "4523510979",
-      "comment_version_key": "4523510979:2026-05-23T00:25:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/76082#issuecomment-4523510979",
-      "comment_created_at": "2026-05-23T00:25:12Z",
-      "comment_updated_at": "2026-05-23T00:25:12Z",
-      "comment_body_sha256": "fe2f30fa78785c0dc110ce01a78ec347d82a6b17c0c6129ef9e0199b23c050e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 76082,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T20:21:38.854Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:76082:4699664624:2026-06-13T20:14:02Z:re_review",
       "comment_id": "4699664624",
@@ -31398,6 +31371,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T02:22:08.390Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122689:5269290048:2026-08-13T02:21:26Z:clawsweeper_needs_human",
+      "comment_id": "5269290048",
+      "comment_version_key": "5269290048:2026-08-13T02:21:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122689#issuecomment-5269290048",
+      "comment_created_at": "2026-08-12T16:03:32Z",
+      "comment_updated_at": "2026-08-13T02:21:26Z",
+      "comment_body_sha256": "deb2d87af06631fd635b41d7dd2d3ff181139fc3f73d6f5992437ac84bfd2265",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head has failed checks-ui and checks-node-compact-large-2 results; merge must wait for those exact-head gates to pass or receive a concrete failure diagnosis. (sha=a1309ab6a501f890b1cd9643b0756989e941f3dd)",
+      "expected_head_sha": "a1309ab6a501f890b1cd9643b0756989e941f3dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T02:22:17.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "a1309ab6a501f890b1cd9643b0756989e941f3dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
