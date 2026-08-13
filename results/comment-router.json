@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-12T23:56:59.479Z",
+  "updated_at": "2026-08-13T00:03:46.981Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122184:5257474267:2026-08-12T18:19:00Z:clawsweeper_needs_human",
-      "comment_id": "5257474267",
-      "comment_version_key": "5257474267:2026-08-12T18:19:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122184#issuecomment-5257474267",
-      "comment_created_at": "2026-08-11T18:52:31Z",
-      "comment_updated_at": "2026-08-12T18:19:00Z",
-      "comment_body_sha256": "3eeef2c3ec9a3144fb98313ae35565dc2abac64bf6a33fa6540e00a5f60f0e0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122184,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The body asserts a redacted backported canary, but no inspectable exact-head trace, log, recording, or artifact demonstrates the claimed durabl... (sha=746812bc9a745a2d44f0f5b5fff0b6869502ca3a)",
-      "expected_head_sha": "746812bc9a745a2d44f0f5b5fff0b6869502ca3a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:03:04.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-subagent-model-only",
-        "head_sha": "746812bc9a745a2d44f0f5b5fff0b6869502ca3a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122284:5259871431:2026-08-12T18:10:47Z:clawsweeper_auto_repair",
       "comment_id": "5259871431",
@@ -31106,6 +31073,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122870:5274218246:2026-08-13T00:02:48Z:clawsweeper_needs_human",
+      "comment_id": "5274218246",
+      "comment_version_key": "5274218246:2026-08-13T00:02:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122870#issuecomment-5274218246",
+      "comment_created_at": "2026-08-13T00:02:48Z",
+      "comment_updated_at": "2026-08-13T00:02:48Z",
+      "comment_body_sha256": "aa5e53ed6e8845442ab042f4ca4943894ccf4b3d216043953a4f392c84b4925c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122870,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Bind the resolved key to the handoff key (P1)** - A successful response only checks agentId, so { ok: true, key: \"agent:main:other\", agentId: \"main\" } is accepted for a handoff to agent:main:alpha and starts the...; Review finding: [P1] Bind the resolved key to the handoff key — src/cli/resume-cli.runtime.ts:193-198 - [medium] Same-agent session substitution is accepted — src/cli/resume-cli.r... (sha=2d1a9cca739e52a6d880ce4fe8ab44626a055101)",
+      "expected_head_sha": "2d1a9cca739e52a6d880ce4fe8ab44626a055101",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:03:46.981Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/resume-terminal-handoff",
+        "head_sha": "2d1a9cca739e52a6d880ce4fe8ab44626a055101",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
