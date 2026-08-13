@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:05:39.779Z",
+  "updated_at": "2026-08-13T00:05:58.336Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122752:5270739395:2026-08-12T18:18:48Z:clawsweeper_needs_human",
-      "comment_id": "5270739395",
-      "comment_version_key": "5270739395:2026-08-12T18:18:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122752#issuecomment-5270739395",
-      "comment_created_at": "2026-08-12T18:07:18Z",
-      "comment_updated_at": "2026-08-12T18:18:48Z",
-      "comment_body_sha256": "65cc5626a2cf079691782b5f951be833359159fb217fb9c057140cd26d92b469",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122752,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head was force-pushed after the PR body’s cited Testbox run; its supplied status rollup still has preflight in progress and an actionlint failure. No evidence ties actionl... (sha=feabfc39be10dd744eebe6c8e0f80192b747d105)",
-      "expected_head_sha": "feabfc39be10dd744eebe6c8e0f80192b747d105",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:03:04.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-update-owner-fixture",
-        "head_sha": "feabfc39be10dd744eebe6c8e0f80192b747d105",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117305:5270995232:2026-08-12T18:23:06Z:re_review",
       "comment_id": "5270995232",
@@ -31114,6 +31081,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122503:5274233851:2026-08-13T00:05:15Z:re_review",
+      "comment_id": "5274233851",
+      "comment_version_key": "5274233851:2026-08-13T00:05:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122503#issuecomment-5274233851",
+      "comment_created_at": "2026-08-13T00:05:15Z",
+      "comment_updated_at": "2026-08-13T00:05:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122503,
+      "author": "bek91",
+      "author_id": 66288351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T00:05:56.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-codex-subagents-v2",
+        "head_sha": "9f7885b59de32f6a0d83a11a4e0add76789d74a3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
