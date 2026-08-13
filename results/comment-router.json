@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:13:13.655Z",
+  "updated_at": "2026-08-13T02:13:18.772Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116450:5271779122:2026-08-12T19:25:41Z:re_review",
-      "comment_id": "5271779122",
-      "comment_version_key": "5271779122:2026-08-12T19:25:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116450#issuecomment-5271779122",
-      "comment_created_at": "2026-08-12T19:25:41Z",
-      "comment_updated_at": "2026-08-12T19:25:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116450,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T19:26:30.775Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/rust-runtime-followup",
-        "head_sha": "55e4ca459bf5b6988e977ab95567e17544748c03",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122780:5271782878:2026-08-12T19:26:02Z:clawsweeper_needs_human",
       "comment_id": "5271782878",
@@ -32161,6 +32114,39 @@
         "kind": "pull_request",
         "branch": "fix/openai-responses-failed-code-117609",
         "head_sha": "6886f9458c20a97a80e713ab4b7a3d04d5266b9b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121283:5234764393:2026-08-13T02:12:29Z:clawsweeper_needs_human",
+      "comment_id": "5234764393",
+      "comment_version_key": "5234764393:2026-08-13T02:12:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121283#issuecomment-5234764393",
+      "comment_created_at": "2026-08-10T00:51:17Z",
+      "comment_updated_at": "2026-08-13T02:12:29Z",
+      "comment_body_sha256": "612f4a5a12b853c4de7d00ce0e770f162109bdf48097efe6c44426cfdc803e47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes existing replay treatment for Claude Sonnet 4.5 and Haiku 4.5 from retaining to stripping prior thinking blocks; the final explicit matrix and exact-head checks should re... (sha=ef97ccc4ba086ebbd25248b4034bcabfe77f6931)",
+      "expected_head_sha": "ef97ccc4ba086ebbd25248b4034bcabfe77f6931",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T02:13:18.772Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-thinking-blocks-claude-gen5",
+        "head_sha": "ef97ccc4ba086ebbd25248b4034bcabfe77f6931",
         "cluster_id": null,
         "job_path": null
       }
