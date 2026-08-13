@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:06:16.874Z",
+  "updated_at": "2026-08-13T23:08:00.780Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:108892:4991194647:2026-08-13T09:24:47Z:clawsweeper_auto_repair",
-      "comment_id": "4991194647",
-      "comment_version_key": "4991194647:2026-08-13T09:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/108892#issuecomment-4991194647",
-      "comment_created_at": "2026-07-16T11:17:18Z",
-      "comment_updated_at": "2026-08-13T09:24:47Z",
-      "comment_body_sha256": "60b7c528bb7e7e8d4adae23d5ddf7a72c72541c448b8954de0ee69a3a426005f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 108892,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=58ef68b1188176d5bf5a5b8f839c901ab432ec3c)",
-      "expected_head_sha": "58ef68b1188176d5bf5a5b8f839c901ab432ec3c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T10:22:13.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rex/gemini-flash-lite-cost-metadata",
-        "head_sha": "58ef68b1188176d5bf5a5b8f839c901ab432ec3c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110835:5012157846:2026-08-13T10:12:20Z:clawsweeper_auto_repair",
       "comment_id": "5012157846",
@@ -32576,6 +32543,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123338:5287034268:2026-08-13T23:06:58Z:clawsweeper_needs_human",
+      "comment_id": "5287034268",
+      "comment_version_key": "5287034268:2026-08-13T23:06:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123338#issuecomment-5287034268",
+      "comment_created_at": "2026-08-13T22:17:20Z",
+      "comment_updated_at": "2026-08-13T23:06:58Z",
+      "comment_body_sha256": "8f3a5ae030a242826fc6725f413cc6d5009cdb12be6ea50ebfc603886c8354d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123338,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes release-validation failure reporting; exact-head CI and an after-fix signed upgrade trace should confirm that a failed diagnostic probe cannot replace the update com... (sha=45c811db751a1c06140887c5a35ca329715f86c3)",
+      "expected_head_sha": "45c811db751a1c06140887c5a35ca329715f86c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:08:00.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-upgrade-diagnostic-probe-20260813",
+        "head_sha": "45c811db751a1c06140887c5a35ca329715f86c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
