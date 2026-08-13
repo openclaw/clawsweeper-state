@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T01:13:10.475Z",
+  "updated_at": "2026-08-13T01:14:46.604Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5229120337:2026-08-09T01:09:17Z:re_review",
-      "comment_id": "5229120337",
-      "comment_version_key": "5229120337:2026-08-09T01:09:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5229120337",
-      "comment_created_at": "2026-08-09T01:09:17Z",
-      "comment_updated_at": "2026-08-09T01:09:17Z",
-      "comment_body_sha256": "b9043e892c26b80b3ea3502843014306851557755ca282bdb2082d01d16f37c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — pushed the approved fence-order fix (new head 0c2bcd84f7): close the deferred-maintenance write fence before firing the scheduler abort in foreground preemption, so a write initiated from a synchronous abort listener becomes a fence-closed no-op instead of a late transcript rewrite. no await between the two statements, so effects land atomically for suspended workers; only the synchronous-abort-write path is affected and close-first is strictly safer. 38 maintenance/command-queue unit tests green; lint/format clean; pr body evidence updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:20:49.459Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5229232867:2026-08-09T01:45:38Z:re_review",
       "comment_id": "5229232867",
@@ -31735,6 +31708,53 @@
         "kind": "pull_request",
         "branch": "fix/matrix-room-explicit-session-route",
         "head_sha": "3463ae799671943560eacd3c8d3d814fb3ea0d05",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116253:5274725419:2026-08-13T01:14:03Z:re_review",
+      "comment_id": "5274725419",
+      "comment_version_key": "5274725419:2026-08-13T01:14:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116253#issuecomment-5274725419",
+      "comment_created_at": "2026-08-13T01:14:03Z",
+      "comment_updated_at": "2026-08-13T01:14:03Z",
+      "comment_body_sha256": "d071697c6472a482552f34e88769956311f7cc5732b991172f4322a39ddf0c39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116253,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T01:14:44.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/run-timeout-progress-grace-113182",
+        "head_sha": "7f5abfa55ce74eaa39ce6dd61ff0203f64c6da43",
         "cluster_id": null,
         "job_path": null
       },
