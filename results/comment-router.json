@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:09:26.217Z",
+  "updated_at": "2026-08-13T03:09:33.039Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109038:4999593820:2026-07-17T06:13:48Z:re_review",
-      "comment_id": "4999593820",
-      "comment_version_key": "4999593820:2026-07-17T06:13:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109038#issuecomment-4999593820",
-      "comment_created_at": "2026-07-17T06:13:48Z",
-      "comment_updated_at": "2026-07-17T06:13:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109038,
-      "author": "mushuiyu886",
-      "author_id": 266724580,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T21:33:19.676Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109038:5155850982:2026-08-02T06:10:52Z:re_review",
       "comment_id": "5155850982",
@@ -31523,6 +31496,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T03:09:26.217Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118681:5167498510:2026-08-13T03:08:31Z:clawsweeper_needs_human",
+      "comment_id": "5167498510",
+      "comment_version_key": "5167498510:2026-08-13T03:08:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118681#issuecomment-5167498510",
+      "comment_created_at": "2026-08-03T14:12:32Z",
+      "comment_updated_at": "2026-08-13T03:08:31Z",
+      "comment_body_sha256": "f07a2f1818fbb5d88844d12ca910dc273bf8f1e592d49d38e706844d19630f05",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR includes compelling real overflow logs, but they name 8c6e4fdd0ba rather than the current head that changed the final admission... (sha=379d2e4cd725270e93bceba11d8da953192e0862)",
+      "expected_head_sha": "379d2e4cd725270e93bceba11d8da953192e0862",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:09:33.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reactive-memory-flush-114081",
+        "head_sha": "379d2e4cd725270e93bceba11d8da953192e0862",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
