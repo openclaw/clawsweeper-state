@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:15:05.189Z",
+  "updated_at": "2026-08-13T03:15:16.285Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/AXorcist:30:5273113938:2026-08-12T21:41:01Z:re_review",
-      "comment_id": "5273113938",
-      "comment_version_key": "5273113938:2026-08-12T21:41:01Z",
-      "comment_url": "https://github.com/openclaw/AXorcist/pull/30#issuecomment-5273113938",
-      "comment_created_at": "2026-08-12T21:41:01Z",
-      "comment_updated_at": "2026-08-12T21:41:01Z",
-      "comment_body_sha256": "a2d21dbca8df0c330da1ce8dd43ec0e11b193a314c63085e31d9402f2032303a",
-      "repo": "openclaw/AXorcist",
-      "issue_number": 30,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T21:41:24.131Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/consolidate-parameterized-attributes",
-        "head_sha": "e7b71517df36cf38b85fee05a14b5e1b4a75b511",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:30:5273110414:2026-08-12T21:40:35Z:clawsweeper_auto_repair",
       "comment_id": "5273110414",
@@ -31671,6 +31624,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122906:5275152710:2026-08-13T03:09:56Z:clawsweeper_needs_human",
+      "comment_id": "5275152710",
+      "comment_version_key": "5275152710:2026-08-13T03:09:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122906#issuecomment-5275152710",
+      "comment_created_at": "2026-08-13T02:16:36Z",
+      "comment_updated_at": "2026-08-13T03:09:56Z",
+      "comment_body_sha256": "3caf4d8e2216a2cbcd8082d727542c272657583d3363f774911c4ac0a9fa5b88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122906,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No autonomous repair is indicated; the remaining action is ordinary maintainer review of a member-authored PR. (sha=bea30d792858e269bad663543560440dbaefd580)",
+      "expected_head_sha": "bea30d792858e269bad663543560440dbaefd580",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:15:16.285Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/team-project-select-0812",
+        "head_sha": "bea30d792858e269bad663543560440dbaefd580",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
