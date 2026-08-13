@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T06:08:57.260Z",
+  "updated_at": "2026-08-13T06:09:02.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119909:5224534405:2026-08-08T04:36:54Z:re_review",
-      "comment_id": "5224534405",
-      "comment_version_key": "5224534405:2026-08-08T04:36:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119909#issuecomment-5224534405",
-      "comment_created_at": "2026-08-08T04:36:54Z",
-      "comment_updated_at": "2026-08-08T04:36:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119909,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:11:36.614Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119909:5224676359:2026-08-08T05:13:50Z:re_review",
       "comment_id": "5224676359",
@@ -30978,6 +30951,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123020:5276607446:2026-08-13T06:08:25Z:clawsweeper_needs_human",
+      "comment_id": "5276607446",
+      "comment_version_key": "5276607446:2026-08-13T06:08:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123020#issuecomment-5276607446",
+      "comment_created_at": "2026-08-13T06:08:25Z",
+      "comment_updated_at": "2026-08-13T06:08:25Z",
+      "comment_body_sha256": "986200bef05f39864a50e895698089dc9cf397094f2f11b48ed2dd22b54f3300",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty because its alternate Discord test split overlaps the current-main line-cap repair; it must be rebased and reconciled before merge. (sha=f3c3ecf1b4808a17415573c5431b0870f82e51cb)",
+      "expected_head_sha": "f3c3ecf1b4808a17415573c5431b0870f82e51cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T06:09:02.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/coercion-helper-consolidation-round7-strict-zero",
+        "head_sha": "f3c3ecf1b4808a17415573c5431b0870f82e51cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
