@@ -2,53 +2,6 @@
   "updated_at": "2026-08-13T05:08:07.864Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:118750:5274817020:2026-08-13T01:28:08Z:re_review",
-      "comment_id": "5274817020",
-      "comment_version_key": "5274817020:2026-08-13T01:28:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118750#issuecomment-5274817020",
-      "comment_created_at": "2026-08-13T01:28:08Z",
-      "comment_updated_at": "2026-08-13T01:28:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118750,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T02:01:24.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-core-timestamp-nan-safe",
-        "head_sha": "92e052b72dd21b4862cc2b31e4f24bc038a7ee61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:122350:5274851441:2026-08-13T01:32:45Z:re_review",
       "comment_id": "5274851441",
       "comment_version_key": "5274851441:2026-08-13T01:32:45Z",
@@ -30485,6 +30438,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/plugins/yuanbao/openclaw-plugin-yuanbao-2.18.0",
         "head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121593:5240630375:2026-08-13T05:04:18Z:clawsweeper_auto_repair",
+      "comment_id": "5240630375",
+      "comment_version_key": "5240630375:2026-08-13T05:04:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121593#issuecomment-5240630375",
+      "comment_created_at": "2026-08-10T13:00:56Z",
+      "comment_updated_at": "2026-08-13T05:04:18Z",
+      "comment_body_sha256": "4046806fb875c0fba988276be2fb00d4c9ac2d2b1020fe9ff0f19fc90d18470f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=11423a65a0905595fe8c000b30fb04cb304f624f)",
+      "expected_head_sha": "11423a65a0905595fe8c000b30fb04cb304f624f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T05:08:07.297Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/121570-external-recovery-owner",
+        "head_sha": "11423a65a0905595fe8c000b30fb04cb304f624f",
         "cluster_id": null,
         "job_path": null
       }
