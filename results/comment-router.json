@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T07:28:46.612Z",
+  "updated_at": "2026-08-13T07:28:49.898Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122748:5275849267:2026-08-13T04:09:59Z:re_review",
-      "comment_id": "5275849267",
-      "comment_version_key": "5275849267:2026-08-13T04:09:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122748#issuecomment-5275849267",
-      "comment_created_at": "2026-08-13T04:09:59Z",
-      "comment_updated_at": "2026-08-13T04:09:59Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122748,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T04:10:39.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/tsgo-test-memory",
-        "head_sha": "c45f429b5892116cdb76ed8e7b97142cc30d5011",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122937:5275834584:2026-08-13T04:07:48Z:clawsweeper_auto_repair",
       "comment_id": "5275834584",
@@ -30878,6 +30831,39 @@
         "kind": "pull_request",
         "branch": "claude/cron-owner-hardening",
         "head_sha": "c32d69ff906462b07c918108114c79f15d02ae19",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122884:5274666709:2026-08-13T07:27:16Z:clawsweeper_needs_human",
+      "comment_id": "5274666709",
+      "comment_version_key": "5274666709:2026-08-13T07:27:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122884#issuecomment-5274666709",
+      "comment_created_at": "2026-08-13T01:04:30Z",
+      "comment_updated_at": "2026-08-13T07:27:16Z",
+      "comment_body_sha256": "ec5c0432b0dc33ecf0b4663af6491e379d888b6b242f71d89cfdb90d71e7c41e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122884,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds production code (+28 lines); the error-directed allowlist and retry loop appear justified to preserve valid sibling YAML semantics, but retain that narrow boundary r... (sha=9bc84db4104274c89c3f8fda7bcde50ef7565020)",
+      "expected_head_sha": "9bc84db4104274c89c3f8fda7bcde50ef7565020",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T07:28:49.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frontmatter-freeform-fields-122496",
+        "head_sha": "9bc84db4104274c89c3f8fda7bcde50ef7565020",
         "cluster_id": null,
         "job_path": null
       }
