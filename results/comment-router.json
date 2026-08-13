@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:26:23.310Z",
+  "updated_at": "2026-08-13T23:26:36.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5281228105:2026-08-13T13:42:41Z:re_review",
-      "comment_id": "5281228105",
-      "comment_version_key": "5281228105:2026-08-13T13:42:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5281228105",
-      "comment_created_at": "2026-08-13T13:42:41Z",
-      "comment_updated_at": "2026-08-13T13:42:41Z",
-      "comment_body_sha256": "2211e8d3d1b32ad4b063d59d8d8864a6c394819186b6f3ae18928df10495a468",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T13:43:26.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "662e642a8c5d739f557e130bae51174782c15e62",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123194:5281254792:2026-08-13T13:45:02Z:re_review",
       "comment_id": "5281254792",
@@ -31301,6 +31254,39 @@
         "kind": "pull_request",
         "branch": "fix/92884-narrow-schema-ownership",
         "head_sha": "0675b33134c319adee7b32333aa77b115b7c76fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123349:5287173640:2026-08-13T23:25:39Z:clawsweeper_needs_human",
+      "comment_id": "5287173640",
+      "comment_version_key": "5287173640:2026-08-13T23:25:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123349#issuecomment-5287173640",
+      "comment_created_at": "2026-08-13T22:36:10Z",
+      "comment_updated_at": "2026-08-13T23:25:39Z",
+      "comment_body_sha256": "16db227d50f8f1b267e06b4b06869b16567ec42ddd1f5a1f7a5230d253e630b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the credential migration boundary** - The supplied scope moves persisted authentication and OAuth state across databases; the failed source inspection prevented confirmation that...; Review finding: [medium] Review the credential migration boundary (sha=9f5bd21f97e1941d427d76c4a5d048f7ab9dc6c9)",
+      "expected_head_sha": "9f5bd21f97e1941d427d76c4a5d048f7ab9dc6c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:26:36.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/shared-auth-relocate",
+        "head_sha": "9f5bd21f97e1941d427d76c4a5d048f7ab9dc6c9",
         "cluster_id": null,
         "job_path": null
       }
