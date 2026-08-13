@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-84486"
 mode: "autonomous"
-run_id: "31682735547"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31682735547"
-head_sha: "96b8703e4c0b4782dfcc488b46777559149326bb"
+run_id: "31683593901"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31683593901"
+head_sha: "4d41d3df4baf191dca9c385c82689425a135a5c4"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-13T08:47:45.743Z"
+published_at: "2026-08-13T08:53:49.925Z"
 canonical: "https://github.com/openclaw/openclaw/issues/84486"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/84486"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31682735547](https://github.com/openclaw/clawsweeper/actions/runs/31682735547)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31683593901](https://github.com/openclaw/clawsweeper/actions/runs/31683593901)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/84486
 
 ## Summary
 
-Current main e3b27fec6478aa1b6facc8de50a0658575fff56c still drops pre-tool partial prose: the normal-final path replaces streamText at extensions/feishu/src/reply-dispatcher.ts:1415. A narrow owner-boundary repair and regression are defined below, but this read-only checkout cannot be changed and focused validation is blocked because the required tsx dependency is absent.
+Current main 72359437909f6c61ae225fa62a5c2e2ea94f3c79 still has the focused Feishu loss: a normal final replaces partial pre-tool prose. The narrow repair is defined, but this immutable checkout has no dependencies, so code changes and validation cannot be completed here.
 
 ## Impact
 
@@ -66,12 +66,12 @@ Current main e3b27fec6478aa1b6facc8de50a0658575fff56c still drops pre-tool parti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #84486 | fix_needed | blocked | canonical | Implementation is blocked only by this checkout's read-only filesystem and missing dependencies; the source-level reproduction is clear. |
-| #77685 | keep_related | planned | related | Related Feishu streaming-card family; retain its broader investigation. |
-| #85439 | keep_related | planned | related | Separate product-policy decision; this repair preserves the established transient-status contract. |
-| #117489 | keep_related | planned | related | Adjacent message-composition issue with distinct upstream contract. |
-| #91956 | keep_closed | skipped | related | Closed context reference. |
-| cluster:issue-openclaw-openclaw-84486 | build_fix_artifact | blocked | canonical | Executor must apply and validate the narrow patch in a writable checkout with dependencies installed. |
+| #84486 | fix_needed | blocked | canonical | Implementation is blocked only by immutable checkout state and missing dependencies; current-main source reproduction is clear. |
+| #77685 | keep_related | planned | related | Related but broader root-cause family. |
+| #85439 | keep_related | planned | related | Separate product-policy decision. |
+| #91956 | keep_closed | skipped | related | Already closed. |
+| #117489 | keep_related | planned | related | Adjacent but distinct assistant-message contract. |
+| cluster:issue-openclaw-openclaw-84486 | build_fix_artifact | blocked | canonical | A writable executor with dependencies must apply and validate the repair. |
 
 ## Needs Human
 
