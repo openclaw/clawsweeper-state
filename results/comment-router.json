@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:12:49.231Z",
+  "updated_at": "2026-08-13T23:13:08.745Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4956918809:2026-07-13T10:20:14Z:re_review",
-      "comment_id": "4956918809",
-      "comment_version_key": "4956918809:2026-07-13T10:20:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4956918809",
-      "comment_created_at": "2026-07-13T10:20:14Z",
-      "comment_updated_at": "2026-07-13T10:20:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T11:33:51.902Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4960385241:2026-07-13T16:46:51Z:re_review",
       "comment_id": "4960385241",
@@ -31628,6 +31601,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T23:12:49.231Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123364:5287431982:2026-08-13T23:12:28Z:clawsweeper_needs_human",
+      "comment_id": "5287431982",
+      "comment_version_key": "5287431982:2026-08-13T23:12:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123364#issuecomment-5287431982",
+      "comment_created_at": "2026-08-13T23:12:28Z",
+      "comment_updated_at": "2026-08-13T23:12:28Z",
+      "comment_body_sha256": "0b6b8fa9bf0fc8b14bb0958a28af030f3cad3acf6af3d40f6984afda30899784",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123364,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The backend-specific matrix split and manual-only Node 22 guard can alter CI coverage or release validation; exact-head workflow inspection and completion evidence remain unavailable... (sha=67f260fcdccbd2ad5ed95d5ba57d16e1c4287e5f)",
+      "expected_head_sha": "67f260fcdccbd2ad5ed95d5ba57d16e1c4287e5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:13:08.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/github-tail-lanes",
+        "head_sha": "67f260fcdccbd2ad5ed95d5ba57d16e1c4287e5f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
