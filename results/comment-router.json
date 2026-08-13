@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:27:23.511Z",
+  "updated_at": "2026-08-13T02:30:41.366Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122389:5261828307:2026-08-12T20:27:11Z:clawsweeper_needs_human",
-      "comment_id": "5261828307",
-      "comment_version_key": "5261828307:2026-08-12T20:27:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122389#issuecomment-5261828307",
-      "comment_created_at": "2026-08-12T03:15:16Z",
-      "comment_updated_at": "2026-08-12T20:27:11Z",
-      "comment_body_sha256": "ff8fc9688268c18861c67cc7ac4520e471457491c63ab9c9faef0c79023ba771",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify Codex install-selector enforcement** - The command forwards catalog-provided marketplace paths or remote IDs to Codex, so the pinned app-server policy and exact selector validati...; Review finding: [medium] Verify Codex install-selector enforcement — extensions/codex/src/command-plugins-management.ts:374 (sha=bb3fef26c3be5573f0d8306a87e34a853b7abeba)",
-      "expected_head_sha": "bb3fef26c3be5573f0d8306a87e34a853b7abeba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T20:28:03.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dynamic-plugin-marketplaces-owner-install",
-        "head_sha": "bb3fef26c3be5573f0d8306a87e34a853b7abeba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119576:5272424256:2026-08-12T20:27:28Z:re_review",
-      "comment_id": "5272424256",
-      "comment_version_key": "5272424256:2026-08-12T20:27:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119576#issuecomment-5272424256",
-      "comment_created_at": "2026-08-12T20:27:28Z",
-      "comment_updated_at": "2026-08-12T20:27:28Z",
-      "comment_body_sha256": "aded73c2eddddc10ebe79e2cf9703e30ae57922d201d35f9e588575ab2ba593c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119576,
-      "author": "licheer-zte",
-      "author_id": 305411557,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — exact-head real behavior proof added to evidence: real `startgatewayconfigreloader` + real chokidar + real file driven on commit `77ac0d1597` (the reviewed head) through the revert-cancellation / explicit-restart / coordinator-retirement scenario suite. 42/42 scenario tests passed across gateway-core/server/client. also close+reopened to rerun ci after an unrelated flaky timing assertion in `src/commands/tasks.test.ts:228` (agems 2701430 vs 2701000 slack, tasks/commands surface untouched by this pr)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T20:28:22.770Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-cancel-restart-on-revert-119360",
-        "head_sha": "77ac0d1597d195f7291cf1521af202e9a990aecd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122472:5263005582:2026-08-12T20:27:33Z:clawsweeper_auto_repair",
       "comment_id": "5263005582",
@@ -31349,6 +31269,86 @@
         "kind": "pull_request",
         "branch": "fix/cost-history-preferred-currency",
         "head_sha": "d0fd6e197aa9e97fd18fd758cab9ce00d665eba2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/oracle:368:5275214234:2026-08-13T02:27:04Z:re_review",
+      "comment_id": "5275214234",
+      "comment_version_key": "5275214234:2026-08-13T02:27:04Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/368#issuecomment-5275214234",
+      "comment_created_at": "2026-08-13T02:27:04Z",
+      "comment_updated_at": "2026-08-13T02:27:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/oracle",
+      "issue_number": 368,
+      "author": "enieuwy",
+      "author_id": 121954036,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T02:30:39.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upstream/headless-explicit",
+        "head_sha": "b33973db28691b8d1cd182522887e4dcf2165bc0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:368:5275160919:2026-08-13T02:29:52Z:clawsweeper_needs_human",
+      "comment_id": "5275160919",
+      "comment_version_key": "5275160919:2026-08-13T02:29:52Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/368#issuecomment-5275160919",
+      "comment_created_at": "2026-08-13T02:17:48Z",
+      "comment_updated_at": "2026-08-13T02:29:52Z",
+      "comment_body_sha256": "543cb6230c740d59cc5cba89e747d7516f47ab79ea6514dcaba9776be395ef30",
+      "repo": "steipete/oracle",
+      "issue_number": 368,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing users with a saved browser.headless: true preference will begin launching headless instead of the former silent headful fallback; sites that reject stock headless Chrome can... (sha=b33973db28691b8d1cd182522887e4dcf2165bc0)",
+      "expected_head_sha": "b33973db28691b8d1cd182522887e4dcf2165bc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T02:30:41.366Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upstream/headless-explicit",
+        "head_sha": "b33973db28691b8d1cd182522887e4dcf2165bc0",
         "cluster_id": null,
         "job_path": null
       }
