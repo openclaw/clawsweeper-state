@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:04:51.333Z",
+  "updated_at": "2026-08-13T03:05:13.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122782:5272457493:2026-08-12T20:30:58Z:re_review",
-      "comment_id": "5272457493",
-      "comment_version_key": "5272457493:2026-08-12T20:30:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122782#issuecomment-5272457493",
-      "comment_created_at": "2026-08-12T20:30:58Z",
-      "comment_updated_at": "2026-08-12T20:30:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122782,
-      "author": "Kimiyu-186",
-      "author_id": 202845257,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-12T20:31:42.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/slack-passive-failure-dedupe",
-        "head_sha": "0b9fa6040688729bb959604011bb4ebe5f399cd8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120464:5272462627:2026-08-12T20:31:29Z:re_review",
       "comment_id": "5272462627",
@@ -31470,6 +31423,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122934:5275441104:2026-08-13T03:04:27Z:clawsweeper_needs_human",
+      "comment_id": "5275441104",
+      "comment_version_key": "5275441104:2026-08-13T03:04:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122934#issuecomment-5275441104",
+      "comment_created_at": "2026-08-13T03:04:27Z",
+      "comment_updated_at": "2026-08-13T03:04:27Z",
+      "comment_body_sha256": "9d3c85a49c19b49633fa2ede42145c2d6df1e62e73e6e895db538f50c9c909ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122934,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restrict bare selectors to verified Enterprise identities (P1)** - This admits every bare or prefixed U..., B..., and W... value, but the ingress subject is only the raw event sender ID. A local U/B ID can there...; Review finding: [P1] Restrict bare selectors to verified Enterprise identities — extensions/slack/src/monitor/enterprise-install.ts:72-73 - [high] Bare local IDs become cross-work... (sha=ab886309799e677a5ca83c3b15cff1afe27e11f9)",
+      "expected_head_sha": "ab886309799e677a5ca83c3b15cff1afe27e11f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:05:13.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/slack-enterprise-org-user-1",
+        "head_sha": "ab886309799e677a5ca83c3b15cff1afe27e11f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
