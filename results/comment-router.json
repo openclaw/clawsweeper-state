@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T08:07:06.935Z",
+  "updated_at": "2026-08-13T08:07:16.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122524:5275870555:2026-08-13T04:13:21Z:re_review",
-      "comment_id": "5275870555",
-      "comment_version_key": "5275870555:2026-08-13T04:13:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122524#issuecomment-5275870555",
-      "comment_created_at": "2026-08-13T04:13:21Z",
-      "comment_updated_at": "2026-08-13T04:13:21Z",
-      "comment_body_sha256": "d698b7f53b637a3c32353c4fa20ade45c2f0ea17e4097fbd9cc06ae28b6d1938",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122524,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T04:14:12.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/control-ui-floating-composer",
-        "head_sha": "a6dcef0ea0d08311e34fee5bb26bdf9ddd577080",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121192:5275872664:2026-08-13T04:13:36Z:re_review",
       "comment_id": "5275872664",
@@ -30896,6 +30849,39 @@
         "kind": "pull_request",
         "branch": "fix/discord-progress-tool-args-120306",
         "head_sha": "4766a81947e735409b502cab6f6e0842694e58eb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120522:5225945623:2026-08-13T08:05:07Z:clawsweeper_needs_human",
+      "comment_id": "5225945623",
+      "comment_version_key": "5225945623:2026-08-13T08:05:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120522#issuecomment-5225945623",
+      "comment_created_at": "2026-08-08T11:41:52Z",
+      "comment_updated_at": "2026-08-13T08:05:07Z",
+      "comment_body_sha256": "97dc9caa3624cc9518ca3b5fc4a07724e9f34b5692d04f1c1f16f3bffadff4bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so any release-manager-approved version needs fresh exact-head workflow validation after integration. (sha=6f2758ffa32f716afc3519791479867ba6bbb463)",
+      "expected_head_sha": "6f2758ffa32f716afc3519791479867ba6bbb463",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T08:07:16.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/extended-stable-github-release",
+        "head_sha": "6f2758ffa32f716afc3519791479867ba6bbb463",
         "cluster_id": null,
         "job_path": null
       }
