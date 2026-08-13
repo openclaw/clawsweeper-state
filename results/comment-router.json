@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T17:35:54.291Z",
+  "updated_at": "2026-08-13T17:40:15.578Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122863:5274319581:2026-08-13T07:16:59Z:clawsweeper_needs_human",
-      "comment_id": "5274319581",
-      "comment_version_key": "5274319581:2026-08-13T07:16:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5274319581",
-      "comment_created_at": "2026-08-13T00:18:12Z",
-      "comment_updated_at": "2026-08-13T07:16:59Z",
-      "comment_body_sha256": "a9023e9a91960963bfab3f47bac2ddb78267dd630b783d30ee20ef657ef62e7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Mint participant evidence only after host admission (P1)** - resolveChannelMessageIngress is a public SDK resolver whose caller supplies channelId, accountId, and subject. Binding a present participant carrier t...; Review finding: [P1] Mint participant evidence only after host admission — src/channels/message-access/runtime.ts:671-681 - [P1] Keep participant-evidence copying out of the Plugi... (sha=8d4047c314c5de4341bbe125c60f91f89311fed5)",
-      "expected_head_sha": "8d4047c314c5de4341bbe125c60f91f89311fed5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T07:17:54.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-channel-user-ingress",
-        "head_sha": "8d4047c314c5de4341bbe125c60f91f89311fed5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122863:5274796901:2026-08-13T01:25:26Z:re_review",
       "comment_id": "5274796901",
@@ -32510,6 +32477,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97103:5284251401:2026-08-13T17:39:24Z:re_review",
+      "comment_id": "5284251401",
+      "comment_version_key": "5284251401:2026-08-13T17:39:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-5284251401",
+      "comment_created_at": "2026-08-13T17:39:24Z",
+      "comment_updated_at": "2026-08-13T17:39:24Z",
+      "comment_body_sha256": "921408bb901863197c517590ac801ba6d5f929f249bdcc3a638849ab2d721d10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97103,
+      "author": "samrusani",
+      "author_id": 14844597,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T17:40:13.208Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sessions-cleanup-archive-report",
+        "head_sha": "add96cdb4c807a6d3e5c6b60ffc352b5292733ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
