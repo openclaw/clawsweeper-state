@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-107814",
+  "mode": "autonomous",
+  "run_id": "31658808822",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/31658808822",
+  "head_sha": "637c3339dbef38ca3f7444510c8f7e72b95903c6",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-107814.md",
+  "published_at": "2026-08-13T01:55:00.151Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/107814",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/107814",
+  "canonical_pr": null,
+  "summary": "Current main still loses valid streamed tool arguments when either terminal event supplies the nonempty JSON string \"{}\". A narrow shared-parser repair is planned, but this worker cannot safely implement it: the pinned SDK types and required sibling ../codex source are unavailable, and the read-only sandbox prevents dependency installation and focused-test execution.",
+  "actions": [
+    {
+      "target": "#107814",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#107814",
+      "candidate_fix": null,
+      "reason": "Implementation must first inspect the pinned SDK event types and sibling Codex runtime, then demonstrate the new regression fails before the repair. Those mandatory prerequisites cannot be completed in this read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-107814",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#107814",
+      "candidate_fix": null,
+      "reason": "A dependency-equipped executor can implement this narrow owner-boundary fix after completing the required SDK and Codex source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

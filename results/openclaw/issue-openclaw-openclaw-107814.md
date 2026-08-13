@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-107814"
 mode: "autonomous"
-run_id: "31656833550"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31656833550"
+run_id: "31658808822"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/31658808822"
 head_sha: "637c3339dbef38ca3f7444510c8f7e72b95903c6"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-13T01:18:25.186Z"
+published_at: "2026-08-13T01:55:00.151Z"
 canonical: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/107814"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/31656833550](https://github.com/openclaw/clawsweeper/actions/runs/31656833550)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/31658808822](https://github.com/openclaw/clawsweeper/actions/runs/31658808822)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/107814
 
 ## Summary
 
-Current main already contains the shared terminal-authority guard requested by the issue, so the mandated regression cannot fail there and no narrow implementation PR is appropriate. Local test execution is additionally blocked because this read-only checkout has no installed dependencies.
+Current main still loses valid streamed tool arguments when either terminal event supplies the nonempty JSON string "{}". A narrow shared-parser repair is planned, but this worker cannot safely implement it: the pinned SDK types and required sibling ../codex source are unavailable, and the read-only sandbox prevents dependency installation and focused-test execution.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main already contains the shared terminal-authority guard requested by t
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #107814 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,7 +66,8 @@ Current main already contains the shared terminal-authority guard requested by t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #107814 | keep_canonical | skipped | canonical | The job requires a regression that fails on current main before editing. Static verification shows the proposed repair already exists in the shared owner; creating a duplicate test-only PR without a failing pre-fix reproduction would violate the repair and test-audit gates. |
+| #107814 | fix_needed | blocked | canonical | Implementation must first inspect the pinned SDK event types and sibling Codex runtime, then demonstrate the new regression fails before the repair. Those mandatory prerequisites cannot be completed in this read-only checkout. |
+| cluster:issue-openclaw-openclaw-107814 | build_fix_artifact | planned | canonical | A dependency-equipped executor can implement this narrow owner-boundary fix after completing the required SDK and Codex source inspection. |
 
 ## Needs Human
 
