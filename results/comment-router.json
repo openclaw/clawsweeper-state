@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T04:29:21.488Z",
+  "updated_at": "2026-08-13T04:29:45.731Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122284:5259871431:2026-08-13T01:04:46Z:clawsweeper_needs_human",
-      "comment_id": "5259871431",
-      "comment_version_key": "5259871431:2026-08-13T01:04:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122284#issuecomment-5259871431",
-      "comment_created_at": "2026-08-11T23:04:38Z",
-      "comment_updated_at": "2026-08-13T01:04:46Z",
-      "comment_body_sha256": "83b7bf8f69128e53b81c8853ef5cfc0ffad0b063764c4657bceea9e5e59b8b51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122284,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging adds staticInventory to plugins list/inspect JSON and the exported PluginRecord shape; strict JSON decoders or SDK consumers may need an explicit additive-contract expectation. (sha=c968be20944170f75c7eb07b876fd747df14fbe9)",
-      "expected_head_sha": "c968be20944170f75c7eb07b876fd747df14fbe9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T01:10:15.334Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-static-inventory-status",
-        "head_sha": "c968be20944170f75c7eb07b876fd747df14fbe9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122824:5273393385:2026-08-13T01:04:34Z:clawsweeper_auto_repair",
       "comment_id": "5273393385",
@@ -30559,6 +30526,53 @@
       "status": "skipped",
       "processed_at": "2026-08-13T04:29:21.217Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119877:5275972345:2026-08-13T04:29:03Z:re_review",
+      "comment_id": "5275972345",
+      "comment_version_key": "5275972345:2026-08-13T04:29:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119877#issuecomment-5275972345",
+      "comment_created_at": "2026-08-13T04:29:03Z",
+      "comment_updated_at": "2026-08-13T04:29:03Z",
+      "comment_body_sha256": "25efb9da38142e672fd67d9435c971ee37d43f88c6ad64e339af1c47a15eca2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119877,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T04:29:43.319Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/request-scoped-error-redaction-foundation",
+        "head_sha": "9fc92c16e9d50b80c3b600f4f498850acd50be13",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
