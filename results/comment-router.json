@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T21:15:53.023Z",
+  "updated_at": "2026-08-13T21:16:00.495Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122863:5277852908:2026-08-13T08:21:04Z:re_review",
-      "comment_id": "5277852908",
-      "comment_version_key": "5277852908:2026-08-13T08:21:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5277852908",
-      "comment_created_at": "2026-08-13T08:21:04Z",
-      "comment_updated_at": "2026-08-13T08:21:04Z",
-      "comment_body_sha256": "aad2441a612423bd505b6921297bc78687b9631312cbf1fcd33081c715fa3e8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T08:28:06.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-channel-user-ingress",
-        "head_sha": "6a3409b5d127bb82a382e9affd621aa53495f77b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122863:5274319581:2026-08-13T08:27:20Z:clawsweeper_needs_human",
       "comment_id": "5274319581",
@@ -33269,6 +33222,39 @@
         "kind": "pull_request",
         "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
         "head_sha": "f25ca3622befa31043e2231daca09c11a2bbe30d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123105:5279074994:2026-08-13T21:14:45Z:clawsweeper_needs_human",
+      "comment_id": "5279074994",
+      "comment_version_key": "5279074994:2026-08-13T21:14:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123105#issuecomment-5279074994",
+      "comment_created_at": "2026-08-13T10:23:27Z",
+      "comment_updated_at": "2026-08-13T21:14:45Z",
+      "comment_body_sha256": "2be8a7a9aac40ccd6ca07307dde0e7d7499448d2997b629d085387030e6b8d0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve compatibility for installed llama.cpp plugins (P1)** - The latest review’s P1 remains on this unchanged head: an already-installed plugin that statically imports this export can throw during ESM loading...; Review finding: [P1] Preserve compatibility for installed llama.cpp plugins — packages/memory-host-sdk/src/engine-embeddings.ts:19 - [medium] Verify managed binary acquisition and... (sha=ae249e26d23bf2b50e2728179115d148989bab2a)",
+      "expected_head_sha": "ae249e26d23bf2b50e2728179115d148989bab2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T21:16:00.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rebuild/external-llama-server",
+        "head_sha": "ae249e26d23bf2b50e2728179115d148989bab2a",
         "cluster_id": null,
         "job_path": null
       }
