@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:14:57.354Z",
+  "updated_at": "2026-08-13T03:15:05.189Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/TauTUI:14:5273097894:2026-08-12T21:39:08Z:clawsweeper_needs_human",
-      "comment_id": "5273097894",
-      "comment_version_key": "5273097894:2026-08-12T21:39:08Z",
-      "comment_url": "https://github.com/steipete/TauTUI/pull/14#issuecomment-5273097894",
-      "comment_created_at": "2026-08-12T21:39:08Z",
-      "comment_updated_at": "2026-08-12T21:39:08Z",
-      "comment_body_sha256": "d4978bdda839af7316bef156d8363583f3853b16bf05a52985738b19c1745d97",
-      "repo": "steipete/TauTUI",
-      "issue_number": 14,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The GitHub lint check is still in progress, so final branch validation is not yet known. (sha=a0797c5aae94d0664730602ca504e735408095dc)",
-      "expected_head_sha": "a0797c5aae94d0664730602ca504e735408095dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T21:39:51.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tautui-cleanup-20260812",
-        "head_sha": "a0797c5aae94d0664730602ca504e735408095dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/AXorcist:30:5273113938:2026-08-12T21:41:01Z:re_review",
       "comment_id": "5273113938",
@@ -31648,6 +31615,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119467:5187470155:2026-08-13T03:14:15Z:clawsweeper_needs_human",
+      "comment_id": "5187470155",
+      "comment_version_key": "5187470155:2026-08-13T03:14:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187470155",
+      "comment_created_at": "2026-08-05T04:16:08Z",
+      "comment_updated_at": "2026-08-13T03:14:15Z",
+      "comment_body_sha256": "54df721ae50a989526a381dd42586a0ed33b5379dbdac5e23afebebbe02d09df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The new 800-depth limit intentionally changes deeply nested pages from Readability output to provider/basic fallback; that compatibility trade-off needs explicit acceptance. (sha=9deb147465e7141ecaa5e464f8f51940a58aacde)",
+      "expected_head_sha": "9deb147465e7141ecaa5e464f8f51940a58aacde",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T03:15:05.188Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/web-readability-depth-cap",
+        "head_sha": "9deb147465e7141ecaa5e464f8f51940a58aacde",
+        "cluster_id": "automerge-openclaw-openclaw-119467",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
