@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T02:15:43.937Z",
+  "updated_at": "2026-08-13T02:16:49.383Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122426:5262624762:2026-08-12T19:02:37Z:clawsweeper_auto_repair",
-      "comment_id": "5262624762",
-      "comment_version_key": "5262624762:2026-08-12T19:02:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122426#issuecomment-5262624762",
-      "comment_created_at": "2026-08-12T05:16:01Z",
-      "comment_updated_at": "2026-08-12T19:02:37Z",
-      "comment_body_sha256": "6c68caabd4f868961a0ae82fde61049df22ddb074482a0ed89329aa91dabe4bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122426,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e74da0bb9849a7c0558ede13f13b594aeeeedb63)",
-      "expected_head_sha": "e74da0bb9849a7c0558ede13f13b594aeeeedb63",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:59:32.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/correction-container-version-121958",
-        "head_sha": "e74da0bb9849a7c0558ede13f13b594aeeeedb63",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122726:5269952081:2026-08-12T19:25:15Z:clawsweeper_auto_repair",
       "comment_id": "5269952081",
@@ -31706,6 +31673,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T02:15:43.937Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122917:5275149258:2026-08-13T02:16:06Z:clawsweeper_needs_human",
+      "comment_id": "5275149258",
+      "comment_version_key": "5275149258:2026-08-13T02:16:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122917#issuecomment-5275149258",
+      "comment_created_at": "2026-08-13T02:16:06Z",
+      "comment_updated_at": "2026-08-13T02:16:06Z",
+      "comment_body_sha256": "53a07754b1cff2c33edb49d833cb0d4e1b6f854443f180d8215f0ac8e34ff876",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122917,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head reports failures for checks-node-compact-small-1 and openclaw/ci-gate; the relevant compact shard 13 passed, but the failed required checks need clearing or attributi... (sha=ea73d029f912c08a3417b515afed99326cb91b4f)",
+      "expected_head_sha": "ea73d029f912c08a3417b515afed99326cb91b4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T02:16:49.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-test-extension-sigterm-flake",
+        "head_sha": "ea73d029f912c08a3417b515afed99326cb91b4f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
