@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-13T22:15:24.820Z",
+  "updated_at": "2026-08-13T22:15:27.040Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123036:5278677016:2026-08-13T09:44:25Z:re_review",
-      "comment_id": "5278677016",
-      "comment_version_key": "5278677016:2026-08-13T09:44:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123036#issuecomment-5278677016",
-      "comment_created_at": "2026-08-13T09:44:25Z",
-      "comment_updated_at": "2026-08-13T09:44:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123036,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T10:08:14.310Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "t3code/remove-plugin-sdk-baseline-hashes",
-        "head_sha": "942858f35c30e887f12de8ebdd871adf45f27ffe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123008:5278905756:2026-08-13T10:07:25Z:re_review",
-      "comment_id": "5278905756",
-      "comment_version_key": "5278905756:2026-08-13T10:07:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123008#issuecomment-5278905756",
-      "comment_created_at": "2026-08-13T10:07:25Z",
-      "comment_updated_at": "2026-08-13T10:07:25Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123008,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T10:08:14.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/shared-new-session-composer",
-        "head_sha": "bf2a7faa6647c66ae1a7fbb00bdf68d7c559aa8a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123036:5277243271:2026-08-13T10:07:19Z:clawsweeper_needs_human",
       "comment_id": "5277243271",
@@ -32436,6 +32342,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122855:5273951816:2026-08-13T22:10:19Z:clawsweeper_needs_human",
+      "comment_id": "5273951816",
+      "comment_version_key": "5273951816:2026-08-13T22:10:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122855#issuecomment-5273951816",
+      "comment_created_at": "2026-08-12T23:22:17Z",
+      "comment_updated_at": "2026-08-13T22:10:19Z",
+      "comment_body_sha256": "35ef38a142f37daa27d068147adaeae9b781b670ceb7dbe597af5dfaca6c2419",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a persisted subagent delivery-state value; rebase and exact-head verification against current main should confirm existing readers and cleanup paths preserve the new dist... (sha=05565da36288836ddc822e8eb377d6a9e3c198ff)",
+      "expected_head_sha": "05565da36288836ddc822e8eb377d6a9e3c198ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:15:27.040Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/preserve-announce-drop-reason-732b",
+        "head_sha": "05565da36288836ddc822e8eb377d6a9e3c198ff",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122855:5275962825:2026-08-13T04:27:41Z:re_review",
+      "comment_id": "5275962825",
+      "comment_version_key": "5275962825:2026-08-13T04:27:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122855#issuecomment-5275962825",
+      "comment_created_at": "2026-08-13T04:27:41Z",
+      "comment_updated_at": "2026-08-13T04:27:41Z",
+      "comment_body_sha256": "7f5c883e3b4a3b6df2f641f95b8083053a6e9f021e107a76af4006bbc9c982cb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122855,
+      "author": "felirami",
+      "author_id": 6752178,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T22:15:27.040Z",
+      "target": null
     }
   ]
 }
