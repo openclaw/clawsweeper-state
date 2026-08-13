@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:18:10.454Z",
+  "updated_at": "2026-08-13T03:18:20.694Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122829:5273319650:2026-08-12T22:04:55Z:clawsweeper_needs_human",
-      "comment_id": "5273319650",
-      "comment_version_key": "5273319650:2026-08-12T22:04:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122829#issuecomment-5273319650",
-      "comment_created_at": "2026-08-12T22:04:55Z",
-      "comment_updated_at": "2026-08-12T22:04:55Z",
-      "comment_body_sha256": "c5815067225c7a52a032ea39ba132c20733cc2e529e28efedad9d0b80d2a19aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve the worker group when its leader PID is reused (P1)** - A detached POSIX leader may exit and have its PID reused while descendants retain the original process group. This branch returns dead without che...; Review finding: [P1] Preserve the worker group when its leader PID is reused — src/node-host/node-worker-supervisor.ts:184-188 - [high] Recovery can orphan a worker process group... (sha=16514084271d145bf6bd1a74220d890d0fa9bcdf)",
-      "expected_head_sha": "16514084271d145bf6bd1a74220d890d0fa9bcdf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T22:05:43.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-worker-supervisor",
-        "head_sha": "16514084271d145bf6bd1a74220d890d0fa9bcdf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122350:5273322045:2026-08-12T22:05:12Z:re_review",
       "comment_id": "5273322045",
@@ -31637,6 +31604,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122951:5275530074:2026-08-13T03:17:34Z:clawsweeper_auto_repair",
+      "comment_id": "5275530074",
+      "comment_version_key": "5275530074:2026-08-13T03:17:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122951#issuecomment-5275530074",
+      "comment_created_at": "2026-08-13T03:17:34Z",
+      "comment_updated_at": "2026-08-13T03:17:34Z",
+      "comment_body_sha256": "e8265a022f3082613aa65673360634ee10ff5704524648419edc8735bdead5c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122951,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ca6e2d8115ceff0ee875db4190665f3cbfecedc)",
+      "expected_head_sha": "5ca6e2d8115ceff0ee875db4190665f3cbfecedc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T03:18:20.694Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-122911-done-slot-guard",
+        "head_sha": "5ca6e2d8115ceff0ee875db4190665f3cbfecedc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
