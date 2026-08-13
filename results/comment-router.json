@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:16:10.483Z",
+  "updated_at": "2026-08-13T05:16:47.832Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111005:5013882260:2026-07-19T02:49:18Z:re_review",
-      "comment_id": "5013882260",
-      "comment_version_key": "5013882260:2026-07-19T02:49:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111005#issuecomment-5013882260",
-      "comment_created_at": "2026-07-19T02:49:18Z",
-      "comment_updated_at": "2026-07-19T02:49:18Z",
-      "comment_body_sha256": "387a827b20540c85d9a52c54e46dc5be6857516647dd65f16db81c71b702c6f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111005,
-      "author": "cxbAsDev",
-      "author_id": 294098203,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T02:07:09.248Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111005:5013905425:2026-07-19T02:59:13Z:re_review",
       "comment_id": "5013905425",
@@ -30493,6 +30466,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T05:16:10.483Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123013:5276265934:2026-08-13T05:16:07Z:clawsweeper_needs_human",
+      "comment_id": "5276265934",
+      "comment_version_key": "5276265934:2026-08-13T05:16:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123013#issuecomment-5276265934",
+      "comment_created_at": "2026-08-13T05:16:07Z",
+      "comment_updated_at": "2026-08-13T05:16:07Z",
+      "comment_body_sha256": "85ed3f007a356c5c5763b31cc52c60ceae9073971ba5a3b9e97fb8f2ccb9a2b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123013,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head is behind current main and required checks were still running in the supplied state; merge should use an exact-head CI and mergeability refresh. (sha=017c31bdf722c1e3053d811663139fbe5578f1e5)",
+      "expected_head_sha": "017c31bdf722c1e3053d811663139fbe5578f1e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T05:16:47.832Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/device-worker-turn-launch",
+        "head_sha": "017c31bdf722c1e3053d811663139fbe5578f1e5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
