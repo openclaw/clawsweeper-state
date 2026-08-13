@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T05:08:00.929Z",
+  "updated_at": "2026-08-13T05:08:07.864Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122706:5274798319:2026-08-13T01:25:42Z:re_review",
-      "comment_id": "5274798319",
-      "comment_version_key": "5274798319:2026-08-13T01:25:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122706#issuecomment-5274798319",
-      "comment_created_at": "2026-08-13T01:25:42Z",
-      "comment_updated_at": "2026-08-13T01:25:42Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122706,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T02:01:24.971Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/session-snapshot-perf",
-        "head_sha": "0a4dc7b3196e10ef5deb22495dad9818cc04be4a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118750:5274817020:2026-08-13T01:28:08Z:re_review",
       "comment_id": "5274817020",
@@ -30532,6 +30485,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/plugins/yuanbao/openclaw-plugin-yuanbao-2.18.0",
         "head_sha": "ee9016d5a2d99aab89fdc7d6f7fc38568791f495",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114523:5090396176:2026-08-13T05:03:21Z:clawsweeper_needs_human",
+      "comment_id": "5090396176",
+      "comment_version_key": "5090396176:2026-08-13T05:03:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114523#issuecomment-5090396176",
+      "comment_created_at": "2026-07-27T10:50:05Z",
+      "comment_updated_at": "2026-08-13T05:03:21Z",
+      "comment_body_sha256": "f492132961a8042a34d3c6c6734425b71f54dd7e8bfd6c8f4999ca33e166cd6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114523,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Filter recovered posts through context visibility (P1)** - The fetch maps every server post into history, although the normal inbound path only retains denied-sender history when supplemental context visibility...; Review finding: [P1] Filter recovered posts through context visibility — extensions/mattermost/src/mattermost/monitor-thread-backfill.ts:185-195 - [high] Recovered history bypasse... (sha=8e91935937c81689d05f63c2b3c08bd5c7067e7b)",
+      "expected_head_sha": "8e91935937c81689d05f63c2b3c08bd5c7067e7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T05:08:07.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mattermost-thread-backfill-recovery",
+        "head_sha": "8e91935937c81689d05f63c2b3c08bd5c7067e7b",
         "cluster_id": null,
         "job_path": null
       }
