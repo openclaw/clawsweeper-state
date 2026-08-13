@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T03:06:09.825Z",
+  "updated_at": "2026-08-13T03:06:12.290Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114388:5088305683:2026-08-12T20:31:58Z:clawsweeper_needs_human",
-      "comment_id": "5088305683",
-      "comment_version_key": "5088305683:2026-08-12T20:31:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114388#issuecomment-5088305683",
-      "comment_created_at": "2026-07-27T07:06:46Z",
-      "comment_updated_at": "2026-08-12T20:31:58Z",
-      "comment_body_sha256": "d63b0e7aef9b0353a2cd796a1256c265a2cdcff66d1d80e62949f8d8646996cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114388,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reject agentless bare-key task access (P1)** - The new fallback returns true when callerAgentId is absent, but the bound plugin task runtime still supplies only sessionKey. Two agents bound to global therefore s...; Review finding: [P1] Reject agentless bare-key task access — src/tasks/task-owner-access.ts:31-33 - [high] Bare task bindings bypass agent ownership — src/tasks/task-owner-access.... (sha=8972aa04e635faed1e2dce806261f30b6f52f56c)",
-      "expected_head_sha": "8972aa04e635faed1e2dce806261f30b6f52f56c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T20:32:52.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/no-stored-default",
-        "head_sha": "8972aa04e635faed1e2dce806261f30b6f52f56c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122238:5258303133:2026-08-12T20:32:19Z:clawsweeper_auto_repair",
       "comment_id": "5258303133",
@@ -31442,6 +31409,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122938:5275447645:2026-08-13T03:05:27Z:re_review",
+      "comment_id": "5275447645",
+      "comment_version_key": "5275447645:2026-08-13T03:05:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122938#issuecomment-5275447645",
+      "comment_created_at": "2026-08-13T03:05:27Z",
+      "comment_updated_at": "2026-08-13T03:05:27Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122938,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-13T03:06:10.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/three-chip-picker",
+        "head_sha": "2f63f384ab29f8a21d5d56b881804b6b197d9142",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
