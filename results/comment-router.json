@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T23:27:43.588Z",
+  "updated_at": "2026-08-13T23:30:42.119Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121361:5281457077:2026-08-13T14:02:04Z:re_review",
-      "comment_id": "5281457077",
-      "comment_version_key": "5281457077:2026-08-13T14:02:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121361#issuecomment-5281457077",
-      "comment_created_at": "2026-08-13T14:02:04Z",
-      "comment_updated_at": "2026-08-13T14:02:04Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121361,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T14:02:50.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/rotate-outcome-dialog",
-        "head_sha": "1f4a92fc971a5f1b1cec4022b321fa0291f93a28",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122984:5281463694:2026-08-13T14:02:38Z:re_review",
       "comment_id": "5281463694",
@@ -31245,6 +31198,39 @@
         "kind": "pull_request",
         "branch": "codex/startup-responsiveness-fix",
         "head_sha": "49cb5935782620792fd15ac0a37bccb94f7afafd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114068:5082678216:2026-08-13T23:29:15Z:clawsweeper_needs_human",
+      "comment_id": "5082678216",
+      "comment_version_key": "5082678216:2026-08-13T23:29:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114068#issuecomment-5082678216",
+      "comment_created_at": "2026-07-26T08:14:43Z",
+      "comment_updated_at": "2026-08-13T23:29:15Z",
+      "comment_body_sha256": "cde9338c1aa5148dbc97b1b16e663c6cfd278812365991ad7557bb31b3e9b785",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the unavailable checkout prevents verifying that its duplicated config and dotenv preflight still matches the canonical loader’s current path, e... (sha=8cca45504c0bd9c0bb2863a746c5ffce9a19da2c)",
+      "expected_head_sha": "8cca45504c0bd9c0bb2863a746c5ffce9a19da2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T23:30:42.119Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/root-help-skip-config-load-when-plugins-unaffected",
+        "head_sha": "8cca45504c0bd9c0bb2863a746c5ffce9a19da2c",
         "cluster_id": null,
         "job_path": null
       }
