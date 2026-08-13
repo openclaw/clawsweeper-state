@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-13T20:19:47.620Z",
+  "updated_at": "2026-08-13T20:20:22.741Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123053:5277537485:2026-08-13T07:46:52Z:re_review",
-      "comment_id": "5277537485",
-      "comment_version_key": "5277537485:2026-08-13T07:46:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123053#issuecomment-5277537485",
-      "comment_created_at": "2026-08-13T07:46:52Z",
-      "comment_updated_at": "2026-08-13T07:46:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123053,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T08:16:18.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-responses-aug13",
-        "head_sha": "e0155ed4b9f6168023673bdbd0ba17aa6c6a48aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123053:5277804115:2026-08-13T08:15:39Z:clawsweeper_needs_human",
       "comment_id": "5277804115",
@@ -33169,6 +33122,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/claws-final-exam-runtime",
         "head_sha": "c2041556c3374cce09fab42c228801cdb06943a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122985:5275956727:2026-08-13T20:19:35Z:clawsweeper_needs_human",
+      "comment_id": "5275956727",
+      "comment_version_key": "5275956727:2026-08-13T20:19:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122985#issuecomment-5275956727",
+      "comment_created_at": "2026-08-13T04:26:41Z",
+      "comment_updated_at": "2026-08-13T20:19:35Z",
+      "comment_body_sha256": "92ce6f81801b3238d2b173da02588a62f5a5ed9858209ea593c1f46c71e053ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122985,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has not received successful required UI and aggregate CI validation. (sha=2491fc58b997ed03d8d11c55d95b077bdcf79849)",
+      "expected_head_sha": "2491fc58b997ed03d8d11c55d95b077bdcf79849",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T20:20:22.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webui-composer-scroll-jump",
+        "head_sha": "2491fc58b997ed03d8d11c55d95b077bdcf79849",
         "cluster_id": null,
         "job_path": null
       }
