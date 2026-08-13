@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-13T00:06:48.394Z",
+  "updated_at": "2026-08-13T00:06:59.586Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122724:5271166626:2026-08-12T18:37:42Z:re_review",
-      "comment_id": "5271166626",
-      "comment_version_key": "5271166626:2026-08-12T18:37:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122724#issuecomment-5271166626",
-      "comment_created_at": "2026-08-12T18:37:42Z",
-      "comment_updated_at": "2026-08-12T18:37:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122724,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-12T19:03:04.907Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120332:5221811898:2026-08-12T18:59:40Z:clawsweeper_auto_repair",
       "comment_id": "5221811898",
@@ -31148,6 +31121,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122831:5273312359:2026-08-13T00:06:18Z:clawsweeper_needs_human",
+      "comment_id": "5273312359",
+      "comment_version_key": "5273312359:2026-08-13T00:06:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122831#issuecomment-5273312359",
+      "comment_created_at": "2026-08-12T22:04:11Z",
+      "comment_updated_at": "2026-08-13T00:06:18Z",
+      "comment_body_sha256": "9278263c08e89072b0c4793620ce60d7d841d85ff9be68b30122d79cbe4d3dfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122831,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the Codex app-server provider contract, but the required direct Codex-source inspection cannot be completed while ../codex is absent. (sha=b1b07c5fc619bfa9e60af83a7fcb669b6748c5b3)",
+      "expected_head_sha": "b1b07c5fc619bfa9e60af83a7fcb669b6748c5b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T00:06:59.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/wizard-mirror-warn",
+        "head_sha": "b1b07c5fc619bfa9e60af83a7fcb669b6748c5b3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
