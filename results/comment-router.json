@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-13T10:12:55.730Z",
+  "updated_at": "2026-08-13T10:13:44.958Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120522:5225945623:2026-08-13T05:16:34Z:clawsweeper_auto_repair",
-      "comment_id": "5225945623",
-      "comment_version_key": "5225945623:2026-08-13T05:16:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120522#issuecomment-5225945623",
-      "comment_created_at": "2026-08-08T11:41:52Z",
-      "comment_updated_at": "2026-08-13T05:16:34Z",
-      "comment_body_sha256": "855fbf76059bb389027c74fe453d5c3707de27c57fb02ca5403c5abb0bdbab2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120522,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7b9e793bf3121a538440351e051632c208680641)",
-      "expected_head_sha": "7b9e793bf3121a538440351e051632c208680641",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T05:17:16.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/extended-stable-github-release",
-        "head_sha": "7b9e793bf3121a538440351e051632c208680641",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122899:5275160129:2026-08-13T05:16:44Z:clawsweeper_needs_human",
       "comment_id": "5275160129",
@@ -31797,6 +31764,39 @@
       "status": "skipped",
       "processed_at": "2026-08-13T10:12:55.730Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121156:5233284947:2026-08-13T10:11:03Z:clawsweeper_needs_human",
+      "comment_id": "5233284947",
+      "comment_version_key": "5233284947:2026-08-13T10:11:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121156#issuecomment-5233284947",
+      "comment_created_at": "2026-08-09T18:48:02Z",
+      "comment_updated_at": "2026-08-13T10:11:03Z",
+      "comment_body_sha256": "b997f456c2220baa5322d4368d84315d51e1d2fe8596908a4364603f4322924f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121156,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes cleanup semantics: malformed, unknown, or unreadable retained markers now keep package bytes until an operator repairs or replaces the marker, trading po... (sha=2dd8787751f77a3cb142e0df722ca2af4abb2e90)",
+      "expected_head_sha": "2dd8787751f77a3cb142e0df722ca2af4abb2e90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-13T10:13:44.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/preserve-unreadable-npm-markers-20260810",
+        "head_sha": "2dd8787751f77a3cb142e0df722ca2af4abb2e90",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
