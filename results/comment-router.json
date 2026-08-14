@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:18:00.912Z",
+  "updated_at": "2026-08-14T03:18:01.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5224974235:2026-08-08T06:43:17Z:re_review",
-      "comment_id": "5224974235",
-      "comment_version_key": "5224974235:2026-08-08T06:43:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5224974235",
-      "comment_created_at": "2026-08-08T06:43:17Z",
-      "comment_updated_at": "2026-08-08T06:43:17Z",
-      "comment_body_sha256": "1ca81733cc0f035b03960a41dc77b5d4e2a62a3762a033415e0888dbf8b6cc56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:11:06.676Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5225008513:2026-08-08T06:53:37Z:re_review",
       "comment_id": "5225008513",
@@ -30550,6 +30523,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123441:5288996259:2026-08-14T03:17:16Z:clawsweeper_needs_human",
+      "comment_id": "5288996259",
+      "comment_version_key": "5288996259:2026-08-14T03:17:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123441#issuecomment-5288996259",
+      "comment_created_at": "2026-08-14T03:17:16Z",
+      "comment_updated_at": "2026-08-14T03:17:16Z",
+      "comment_body_sha256": "b12b4fe48465a4a80b2c3395a3528a2278d08241d30758b5f273b17fdef0f6a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123441,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The structured input depends on exact Codex app-server selection semantics; that contract could not be directly checked because repository inspection is unavailable. (sha=4986384600d81c38022fbb326b7d847dc7fcf479)",
+      "expected_head_sha": "4986384600d81c38022fbb326b7d847dc7fcf479",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:18:01.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/issue-123367-phase2-codex-skill-inputs",
+        "head_sha": "4986384600d81c38022fbb326b7d847dc7fcf479",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
