@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T23:23:58.636Z",
+  "updated_at": "2026-08-14T23:24:25.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-14T19:02:21Z:clawsweeper_needs_human",
-      "comment_id": "4466829643",
-      "comment_version_key": "4466829643:2026-08-14T19:02:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
-      "comment_created_at": "2026-05-16T12:19:59Z",
-      "comment_updated_at": "2026-08-14T19:02:21Z",
-      "comment_body_sha256": "e2f83ae6e06d5dad9f698b18f55d2c785556ef20735231c02f9f91a8820ae8a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restore canceled entries when acknowledgement fails (P1)** - dropAbortedFollowups removes canceled entries before persistDrainAcknowledgement(). If that SQLite write throws, the outer catch only logs; the empty...; Review finding: [P1] Restore canceled entries when acknowledgement fails — src/auto-reply/reply/queue/drain.ts:1312-1318 - [high] Canceled follow-up can be replayed after a SQLite... (sha=c8c3f262b82fb77fec520d0d49f4db7254d3dea6)",
-      "expected_head_sha": "c8c3f262b82fb77fec520d0d49f4db7254d3dea6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:04:48.741Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "c8c3f262b82fb77fec520d0d49f4db7254d3dea6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1170:5297118616:2026-08-14T19:04:20Z:clawsweeper_auto_repair",
       "comment_id": "5297118616",
@@ -32424,6 +32391,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T23:23:58.636Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123626:5293270705:2026-08-14T23:23:32Z:clawsweeper_auto_repair",
+      "comment_id": "5293270705",
+      "comment_version_key": "5293270705:2026-08-14T23:23:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123626#issuecomment-5293270705",
+      "comment_created_at": "2026-08-14T12:26:49Z",
+      "comment_updated_at": "2026-08-14T23:23:32Z",
+      "comment_body_sha256": "a51f7056382285cafaa26e933538baccf927ebae76afefa0062f4395b9cc4ae1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=30dbd944a5af0204e9925755738fc41143c1d452)",
+      "expected_head_sha": "30dbd944a5af0204e9925755738fc41143c1d452",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T23:24:25.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fanout-stA/sidebar-typography",
+        "head_sha": "30dbd944a5af0204e9925755738fc41143c1d452",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
