@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:51:11.279Z",
+  "updated_at": "2026-08-14T21:51:26.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123597:5296675903:2026-08-14T18:14:02Z:re_review",
-      "comment_id": "5296675903",
-      "comment_version_key": "5296675903:2026-08-14T18:14:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123597#issuecomment-5296675903",
-      "comment_created_at": "2026-08-14T18:14:02Z",
-      "comment_updated_at": "2026-08-14T18:14:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123597,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:14:58.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/sidebar-update-cta",
-        "head_sha": "10baea8a2cb579e889f41c2aeee3a3c830c224d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123681:5296677946:2026-08-14T18:14:16Z:re_review",
       "comment_id": "5296677946",
@@ -32335,6 +32288,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123856:5298519156:2026-08-14T21:50:42Z:clawsweeper_needs_human",
+      "comment_id": "5298519156",
+      "comment_version_key": "5298519156:2026-08-14T21:50:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123856#issuecomment-5298519156",
+      "comment_created_at": "2026-08-14T21:50:42Z",
+      "comment_updated_at": "2026-08-14T21:50:42Z",
+      "comment_body_sha256": "837076c46007847e38e7e859f84700d682178786ef070d04afaf8800147f1ce7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123856,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is incomplete and the supplied check rollup includes a failing extension-boundary check; resolve or verify that result before merge. (sha=3722ae7d2efb006b2847ffcded7639120b089bd2)",
+      "expected_head_sha": "3722ae7d2efb006b2847ffcded7639120b089bd2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:51:26.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/remove-unused-pairing-device-name",
+        "head_sha": "3722ae7d2efb006b2847ffcded7639120b089bd2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
