@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-14T19:12:54.995Z",
+  "updated_at": "2026-08-14T19:13:00.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:58:5194623651:2026-08-05T16:43:22Z:maintainer_approve_automerge",
-      "comment_id": "5194623651",
-      "comment_version_key": "5194623651:2026-08-05T16:43:22Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/58#issuecomment-5194623651",
-      "comment_created_at": "2026-08-05T16:43:22Z",
-      "comment_updated_at": "2026-08-05T16:43:22Z",
-      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 58,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T16:27:32.387Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/plugin-inspector-0.3.21",
-        "head_sha": "dbd761673e104f57a1ac470d4db7aa928b5b75b4",
-        "cluster_id": "automerge-openclaw-plugin-inspector-58",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-plugin-inspector-58.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117258:5150131384:2026-08-01T06:11:23Z:re_review",
       "comment_id": "5150131384",
@@ -31547,6 +31494,39 @@
         "kind": "pull_request",
         "branch": "steipete/table-injection-sibling-sweep",
         "head_sha": "d5e196940d7ac1799a21186061929fa8ce15f3e1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123695:5294651391:2026-08-14T19:12:16Z:clawsweeper_needs_human",
+      "comment_id": "5294651391",
+      "comment_version_key": "5294651391:2026-08-14T19:12:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123695#issuecomment-5294651391",
+      "comment_created_at": "2026-08-14T14:46:30Z",
+      "comment_updated_at": "2026-08-14T19:12:16Z",
+      "comment_body_sha256": "de689a11fc578ad2babe361a7a7b68ae5894c63df57e5aab36d48f1b52fdabd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new full-manifest audit becomes required in the BCD boundary job; queued exact-head checks have not yet demonstrated its wall-clock and reliability at production CI concurrency. (sha=469976ba44a714256a6934c7724f0fab09d41d57)",
+      "expected_head_sha": "469976ba44a714256a6934c7724f0fab09d41d57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T19:13:00.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "giodl/deps-pin-ci",
+        "head_sha": "469976ba44a714256a6934c7724f0fab09d41d57",
         "cluster_id": null,
         "job_path": null
       }
