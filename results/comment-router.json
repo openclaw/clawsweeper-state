@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:32:51.174Z",
+  "updated_at": "2026-08-14T03:33:12.304Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122863:5279628210:2026-08-13T11:09:28Z:re_review",
-      "comment_id": "5279628210",
-      "comment_version_key": "5279628210:2026-08-13T11:09:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5279628210",
-      "comment_created_at": "2026-08-13T11:09:28Z",
-      "comment_updated_at": "2026-08-13T11:09:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:21:03.828Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122863:5279696672:2026-08-13T11:16:18Z:re_review",
       "comment_id": "5279696672",
@@ -30702,6 +30675,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T03:32:51.174Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123402:5288338308:2026-08-14T03:32:26Z:clawsweeper_needs_human",
+      "comment_id": "5288338308",
+      "comment_version_key": "5288338308:2026-08-14T03:32:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123402#issuecomment-5288338308",
+      "comment_created_at": "2026-08-14T01:25:33Z",
+      "comment_updated_at": "2026-08-14T03:32:26Z",
+      "comment_body_sha256": "ff5ef55c3a9305d008959eeb6b392ec937e40f966b3b6268bbb88a97532b4bb0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - New replay checkpoints are persisted in session transcripts and two model parameters alter request behavior; their current-main compatibility, rewrite, redaction, and upgrade contract... (sha=8f78d142e9e33ff60d18a421e458b5e264307dbd)",
+      "expected_head_sha": "8f78d142e9e33ff60d18a421e458b5e264307dbd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:33:12.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/anthropic-server-compaction",
+        "head_sha": "8f78d142e9e33ff60d18a421e458b5e264307dbd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
