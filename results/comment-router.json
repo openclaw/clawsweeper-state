@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:02:41.089Z",
+  "updated_at": "2026-08-14T22:02:50.472Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123284:5285874241:2026-08-14T18:24:14Z:clawsweeper_needs_human",
-      "comment_id": "5285874241",
-      "comment_version_key": "5285874241:2026-08-14T18:24:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123284#issuecomment-5285874241",
-      "comment_created_at": "2026-08-13T20:14:05Z",
-      "comment_updated_at": "2026-08-14T18:24:14Z",
-      "comment_body_sha256": "8ed448562fdfa7b6e7f5074b72e7ee51752cb51725c6079f979eb375214653e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123284,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +5 lines for the explicit background counter; that growth is justified because the former filter-and-slice form cannot express six background rows plus the sele... (sha=261566e65d79831cb0c8107b27cc8b82774828f9)",
-      "expected_head_sha": "261566e65d79831cb0c8107b27cc8b82774828f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:25:05.510Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/i-find-the-little-subtitles-underneath-the-sessions-in-the-sideb",
-        "head_sha": "261566e65d79831cb0c8107b27cc8b82774828f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120900:5296698500:2026-08-14T18:16:33Z:re_review",
       "comment_id": "5296698500",
@@ -32236,6 +32203,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123837:5298603873:2026-08-14T22:02:07Z:re_review",
+      "comment_id": "5298603873",
+      "comment_version_key": "5298603873:2026-08-14T22:02:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5298603873",
+      "comment_created_at": "2026-08-14T22:02:07Z",
+      "comment_updated_at": "2026-08-14T22:02:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123837,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T22:02:48.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-copy-text-buttons",
+        "head_sha": "4b0b58a02d24f3f3bcec9649eb831e27ebc11af7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
