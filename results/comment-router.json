@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T04:29:47.805Z",
+  "updated_at": "2026-08-14T04:29:48.270Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5250588756:2026-08-11T08:04:41Z:re_review",
-      "comment_id": "5250588756",
-      "comment_version_key": "5250588756:2026-08-11T08:04:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5250588756",
-      "comment_created_at": "2026-08-11T08:04:41Z",
-      "comment_updated_at": "2026-08-11T08:04:41Z",
-      "comment_body_sha256": "26a43127f4274d1db55090245184ab87904f5ef33131b50664c6de70c2906247",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T00:13:46.071Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5250683632:2026-08-11T08:14:57Z:re_review",
       "comment_id": "5250683632",
@@ -30820,6 +30793,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-14T04:29:06Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-14T04:29:06Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-14T04:29:06Z",
+      "comment_body_sha256": "229317e04a67f4948500c3b4e5bbd66da47d5e47b2f17d5fdd94250302373952",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The public reusable-workflow inputs are compatibility-sensitive because categories, topics, and clear flags can republish every selected skill; documentation describes this, but the e... (sha=df1a970afe15ed27e8dc495191d0cf7ec79f63c1)",
+      "expected_head_sha": "df1a970afe15ed27e8dc495191d0cf7ec79f63c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T04:29:48.270Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "df1a970afe15ed27e8dc495191d0cf7ec79f63c1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
