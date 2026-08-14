@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T23:18:36.947Z",
+  "updated_at": "2026-08-14T23:18:57.937Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123709:5297062437:2026-08-14T18:57:57Z:re_review",
-      "comment_id": "5297062437",
-      "comment_version_key": "5297062437:2026-08-14T18:57:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5297062437",
-      "comment_created_at": "2026-08-14T18:57:57Z",
-      "comment_updated_at": "2026-08-14T18:57:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:58:37.999Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-message-delivery",
-        "head_sha": "9caac01b6db2db51945713e3911e8162080d033d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123743:5295798547:2026-08-14T18:57:52Z:clawsweeper_needs_human",
       "comment_id": "5295798547",
@@ -32424,6 +32377,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T23:18:36.947Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123855:5298522235:2026-08-14T23:17:56Z:clawsweeper_auto_repair",
+      "comment_id": "5298522235",
+      "comment_version_key": "5298522235:2026-08-14T23:17:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123855#issuecomment-5298522235",
+      "comment_created_at": "2026-08-14T21:51:09Z",
+      "comment_updated_at": "2026-08-14T23:17:56Z",
+      "comment_body_sha256": "e236d4b5fa2c2088157279364fd395a839a5d75fbc5a3eb282c95e91c99d0255",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4052a40b4b7334d37f1851498ec518f54d262858)",
+      "expected_head_sha": "4052a40b4b7334d37f1851498ec518f54d262858",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T23:18:57.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-embeddings-billing-cooldown",
+        "head_sha": "4052a40b4b7334d37f1851498ec518f54d262858",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
