@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:07:04.513Z",
+  "updated_at": "2026-08-14T03:08:13.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5259458662:2026-08-11T22:14:11Z:re_review",
-      "comment_id": "5259458662",
-      "comment_version_key": "5259458662:2026-08-11T22:14:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5259458662",
-      "comment_created_at": "2026-08-11T22:14:11Z",
-      "comment_updated_at": "2026-08-11T22:14:11Z",
-      "comment_body_sha256": "536191e8ada2e04861c993732337efdf719a9db28bb0eaf90fdad38a74e7f5fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:11:06.675Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5259458855:2026-08-11T22:14:12Z:re_review",
       "comment_id": "5259458855",
@@ -30108,6 +30081,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123438:5288939686:2026-08-14T03:07:28Z:clawsweeper_needs_human",
+      "comment_id": "5288939686",
+      "comment_version_key": "5288939686:2026-08-14T03:07:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123438#issuecomment-5288939686",
+      "comment_created_at": "2026-08-14T03:07:28Z",
+      "comment_updated_at": "2026-08-14T03:07:28Z",
+      "comment_body_sha256": "dceb32e2792af31c99a3440d59ed0743475c78f8889359d835b72da491020716",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This alters a security-sensitive authorization boundary: an incorrect distinction between unprofiled and profile-bound callers could either expose host session metadata/transcripts or... (sha=f937b3181bad3cad45b0b101863ea1c337957a87)",
+      "expected_head_sha": "f937b3181bad3cad45b0b101863ea1c337957a87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:08:13.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/catalog-unprofiled-fail-closed",
+        "head_sha": "f937b3181bad3cad45b0b101863ea1c337957a87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
