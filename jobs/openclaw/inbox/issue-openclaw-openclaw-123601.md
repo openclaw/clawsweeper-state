@@ -67,19 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair explicit `sessions_spawn.model` validation at the child-planning boundary. Before creating or persisting a child session, load the prepared target catalog and reuse the canonical allowed-model resolver for a nonempty explicit model request; canonicalize allowed aliases and return a classified error for unknown or policy-disallowed refs. Preserve configured and implicit default/fallback selection unchanged. Add regressions showing disallowed and unknown explicit refs create no child session, perform no agent launch, and do not return `modelApplied`; retain an allowed configured-provider case. Establish the failing regression before editing. Review related context https://github.com/openclaw/openclaw/issues/103520 and https://github.com/openclaw/openclaw/issues/117993 for the shared misleading-selection invariant. Do not add configuration, runtime fallback shims, or release-owned CHANGELOG.md edits; put release-note context in the PR body.
+Fix the existing sessions_spawn model-selection bug. Before creating or persisting a child session, validate an explicit model argument against the prepared model catalog and the target agent's current modelPolicy.allow using the canonical model-selection resolver; return its classified error and do not launch the child or claim modelApplied when validation fails. Preserve implicit/default subagent selection and do not reinterpret agents.defaults.models as an allowlist. Add boundary regression coverage proving an unknown explicit ref and a policy-denied explicit ref fail before session persistence or gateway agent launch, while an allowed configured-provider ref remains accepted. First establish that each new regression fails on pre-fix main. Do not add config, fallback behavior, or CHANGELOG.md edits.
 
 Likely files:
 
 - src/agents/subagents/spawn/subagent-spawn-child-plan.ts
 - src/agents/subagents/spawn/subagent-spawn.test.ts
-- src/agents/subagents/spawn/subagent-spawn.model-session.test.ts
-- src/agents/openclaw-tools.subagents.sessions-spawn.plan.test.ts
+- src/agents/model-selection.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/subagents/spawn/subagent-spawn.test.ts src/agents/subagents/spawn/subagent-spawn.model-session.test.ts src/agents/openclaw-tools.subagents.sessions-spawn.plan.test.ts src/agents/model-selection-resolve.test.ts
-- Verify the new regression fails before the repair and that rejected explicit refs neither persist a session nor dispatch a child run.
+- node scripts/run-vitest.mjs src/agents/subagents/spawn/subagent-spawn.test.ts
+- node scripts/run-vitest.mjs src/gateway/sessions-patch.test.ts src/gateway/http-utils.model-override.test.ts
 
 ## Operator Prompt
 
