@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:39:36.132Z",
+  "updated_at": "2026-08-14T20:40:32.968Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123676:5294465086:2026-08-14T17:34:28Z:clawsweeper_needs_human",
-      "comment_id": "5294465086",
-      "comment_version_key": "5294465086:2026-08-14T17:34:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123676#issuecomment-5294465086",
-      "comment_created_at": "2026-08-14T14:28:56Z",
-      "comment_updated_at": "2026-08-14T17:34:28Z",
-      "comment_body_sha256": "dbb067606f6d9cae1746e9b49777123a49c1bd4a1da2bec4352c2ebd85953f3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123676,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve valid ACP attachment names (P1)** - The shared validator now rejects every Cc/Cf character, but ACP uses this preparation path only to forward {mediaType,data} and never stages or renders name. Scope th...; Review finding: [P1] Preserve valid ACP attachment names — src/agents/subagents/spawn/subagent-attachments.ts:177-179 - [P1] Render attachment names as untrusted prompt data — src... (sha=1a0455471f717743ac0939ea9356d294ec468f9d)",
-      "expected_head_sha": "1a0455471f717743ac0939ea9356d294ec468f9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:35:17.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cursor/subagent-attachment-file-paths-8a8e",
-        "head_sha": "1a0455471f717743ac0939ea9356d294ec468f9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123676:5294632843:2026-08-14T14:44:39Z:re_review",
       "comment_id": "5294632843",
@@ -32115,6 +32082,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T20:39:36.132Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123818:5297959720:2026-08-14T20:39:49Z:clawsweeper_auto_repair",
+      "comment_id": "5297959720",
+      "comment_version_key": "5297959720:2026-08-14T20:39:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123818#issuecomment-5297959720",
+      "comment_created_at": "2026-08-14T20:39:49Z",
+      "comment_updated_at": "2026-08-14T20:39:49Z",
+      "comment_body_sha256": "6f89e6da0553fd0ad4f8e9915e24dd401c036f1044d3704a4d14120958ed39b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b16867a4d5997763dad168de562a4b087e41d14c)",
+      "expected_head_sha": "b16867a4d5997763dad168de562a4b087e41d14c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T20:40:32.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/silent-model-substitution-123601",
+        "head_sha": "b16867a4d5997763dad168de562a4b087e41d14c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
