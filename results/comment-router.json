@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:44:08.469Z",
+  "updated_at": "2026-08-14T18:46:21.382Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4884387925:2026-07-05T01:20:23Z:re_review",
-      "comment_id": "4884387925",
-      "comment_version_key": "4884387925:2026-07-05T01:20:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4884387925",
-      "comment_created_at": "2026-07-05T01:20:23Z",
-      "comment_updated_at": "2026-07-05T01:20:23Z",
-      "comment_body_sha256": "5301fe69e19cfd0180aeab5f642ef37dd7c34497f27b614a5e9a910644e90238",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, 3 commits replayed, no conflicts). new head 523de2904f. no behavior change in this refresh: the opt-in deferred turn-maintenance per-task timeout, command-queue ontasktimeout fence hook, late-persist shouldabort fence, and stalled-session warning backoff are unchanged. all pr-touched unit tests green locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:22:44.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4902943479:2026-07-07T10:47:29Z:re_review",
       "comment_id": "4902943479",
@@ -30979,6 +30952,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123787:5296953556:2026-08-14T18:45:36Z:re_review",
+      "comment_id": "5296953556",
+      "comment_version_key": "5296953556:2026-08-14T18:45:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123787#issuecomment-5296953556",
+      "comment_created_at": "2026-08-14T18:45:36Z",
+      "comment_updated_at": "2026-08-14T18:45:36Z",
+      "comment_body_sha256": "24f132cdc10ea09c82f4380cab4d8c3896e323fb4f760908612c57087279e340",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123787,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T18:46:18.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-scheduler-outcomes",
+        "head_sha": "ea34e060f869eb575802e846a3661c5fec580b90",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
