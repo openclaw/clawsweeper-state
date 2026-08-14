@@ -2,53 +2,6 @@
   "updated_at": "2026-08-14T00:13:30.714Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:122463:5281509897:2026-08-13T14:06:31Z:re_review",
-      "comment_id": "5281509897",
-      "comment_version_key": "5281509897:2026-08-13T14:06:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122463#issuecomment-5281509897",
-      "comment_created_at": "2026-08-13T14:06:31Z",
-      "comment_updated_at": "2026-08-13T14:06:31Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122463,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T14:07:20.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/new-session-agent-display-name",
-        "head_sha": "60778c2de2dd67f90bbaa0205e6eae6f7c7b216b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:118977:5273349725:2026-08-13T14:07:03Z:re_review",
       "comment_id": "5273349725",
       "comment_version_key": "5273349725:2026-08-13T14:07:03Z",
@@ -31314,6 +31267,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-static-inventory-status",
         "head_sha": "123ef0085838ac47fc3584e0fc0dd516f7c227cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1088:5176249643:2026-08-13T23:52:15Z:clawsweeper_needs_human",
+      "comment_id": "5176249643",
+      "comment_version_key": "5176249643:2026-08-13T23:52:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1088#issuecomment-5176249643",
+      "comment_created_at": "2026-08-04T08:04:07Z",
+      "comment_updated_at": "2026-08-13T23:52:15Z",
+      "comment_body_sha256": "9ac0db1ae7d9607e76e4d5d5198078bc2d4bb9fc21861e5e955baae51fc231d6",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1088,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Activation IPC, settings application order, and teardown are compatibility-, security-, and availability-sensitive; a current-head source pass is still needed because local inspection... (sha=260f287a28ee7452d093e05801df103a972f24ca)",
+      "expected_head_sha": "260f287a28ee7452d093e05801df103a972f24ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T00:13:30.481Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bkudiess-app-lifecycle-owners",
+        "head_sha": "260f287a28ee7452d093e05801df103a972f24ca",
         "cluster_id": null,
         "job_path": null
       }
