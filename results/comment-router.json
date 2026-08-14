@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:17:49.970Z",
+  "updated_at": "2026-08-14T18:19:23.426Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:72129:4322677086:2026-08-14T15:58:20Z:clawsweeper_needs_human",
-      "comment_id": "4322677086",
-      "comment_version_key": "4322677086:2026-08-14T15:58:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/72129#issuecomment-4322677086",
-      "comment_created_at": "2026-04-26T18:14:54Z",
-      "comment_updated_at": "2026-08-14T15:58:20Z",
-      "comment_body_sha256": "c08df2b46de80273e816adf024c008f520820bd3d42ee650ed4e90b7e71d5a47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 72129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body has a real terminal trace from an earlier build, but it ends in HTTP 402 and does not show a successful image or artifact...; Review finding: [P1] Pass config into the Hugging Face readiness check — extensions/huggingface/image-generation-provider.ts:54-58 - [P1] Bound the Hugging Face image response rea... (sha=e2731f63ecd2620e2344438963f48952c98b1d81)",
-      "expected_head_sha": "e2731f63ecd2620e2344438963f48952c98b1d81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:07:39.889Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/huggingface-image-generation",
-        "head_sha": "e2731f63ecd2620e2344438963f48952c98b1d81",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82540:4466649650:2026-08-14T16:02:13Z:clawsweeper_auto_repair",
       "comment_id": "4466649650",
@@ -30812,6 +30779,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123284:5296716663:2026-08-14T18:18:36Z:re_review",
+      "comment_id": "5296716663",
+      "comment_version_key": "5296716663:2026-08-14T18:18:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123284#issuecomment-5296716663",
+      "comment_created_at": "2026-08-14T18:18:36Z",
+      "comment_updated_at": "2026-08-14T18:18:36Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123284,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T18:19:20.966Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/i-find-the-little-subtitles-underneath-the-sessions-in-the-sideb",
+        "head_sha": "261566e65d79831cb0c8107b27cc8b82774828f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
