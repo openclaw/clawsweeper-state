@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:25:13.617Z",
+  "updated_at": "2026-08-14T05:25:50.580Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118568:5177129967:2026-08-04T09:28:04Z:re_review",
-      "comment_id": "5177129967",
-      "comment_version_key": "5177129967:2026-08-04T09:28:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118568#issuecomment-5177129967",
-      "comment_created_at": "2026-08-04T09:28:04Z",
-      "comment_updated_at": "2026-08-04T09:28:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118568,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:16:31.317Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110716:5011497341:2026-08-14T02:09:52Z:clawsweeper_auto_repair",
       "comment_id": "5011497341",
@@ -30250,6 +30223,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T05:25:13.617Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123485:5289821781:2026-08-14T05:25:06Z:clawsweeper_needs_human",
+      "comment_id": "5289821781",
+      "comment_version_key": "5289821781:2026-08-14T05:25:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123485#issuecomment-5289821781",
+      "comment_created_at": "2026-08-14T05:25:06Z",
+      "comment_updated_at": "2026-08-14T05:25:06Z",
+      "comment_body_sha256": "cb3b199aeef4163e6733edb799692b0027ecf5dc802e844456a668b7ea85d7f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted session replay state and durable transcript repair; local source and exact-head tests could not be independently inspected after the read-only sandbox failed. (sha=0a17927198806d77c6f62a420ccba179eaf591fb)",
+      "expected_head_sha": "0a17927198806d77c6f62a420ccba179eaf591fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:25:50.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compaction-replay-invalidation",
+        "head_sha": "0a17927198806d77c6f62a420ccba179eaf591fb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
