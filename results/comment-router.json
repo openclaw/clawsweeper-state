@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:28:04.741Z",
+  "updated_at": "2026-08-14T16:28:07.359Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:79702:5293516185:2026-08-14T12:54:32Z:re_review",
-      "comment_id": "5293516185",
-      "comment_version_key": "5293516185:2026-08-14T12:54:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/79702#issuecomment-5293516185",
-      "comment_created_at": "2026-08-14T12:54:32Z",
-      "comment_updated_at": "2026-08-14T12:54:32Z",
-      "comment_body_sha256": "ef2203b13b9a7dddf84b87fe013107914df669e14d5400ea791be4e37949f039",
-      "repo": "openclaw/openclaw",
-      "issue_number": 79702,
-      "author": "kreucher",
-      "author_id": 120417,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T12:55:16.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "add-query-instruction-prefix-openai-embedding",
-        "head_sha": "389d59cfc0dda62b8ef0347c3c2e82de039e42f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123655:5293517838:2026-08-14T12:54:43Z:re_review",
       "comment_id": "5293517838",
@@ -31154,6 +31107,39 @@
         "kind": "pull_request",
         "branch": "codex/qa400-plugin-casefold-dependency-ownership",
         "head_sha": "e671b9bafc9a38adfdceb08ac103f402a0913567",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117239:5150034546:2026-08-14T16:12:48Z:clawsweeper_auto_repair",
+      "comment_id": "5150034546",
+      "comment_version_key": "5150034546:2026-08-14T16:12:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117239#issuecomment-5150034546",
+      "comment_created_at": "2026-08-01T05:42:28Z",
+      "comment_updated_at": "2026-08-14T16:12:48Z",
+      "comment_body_sha256": "c88d2c91182a4c7e36873dfc65503606b46b8c3125c4291bc66739c02d8a4882",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117239,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a6c9cc6dd0119f4d77485c3847489d31e8a70d23)",
+      "expected_head_sha": "a6c9cc6dd0119f4d77485c3847489d31e8a70d23",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:28:07.359Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-mantis-artifact-freshness",
+        "head_sha": "a6c9cc6dd0119f4d77485c3847489d31e8a70d23",
         "cluster_id": null,
         "job_path": null
       }
