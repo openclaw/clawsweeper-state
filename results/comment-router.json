@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T19:03:56.928Z",
+  "updated_at": "2026-08-14T19:04:48.741Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5231959330:2026-08-09T14:14:00Z:re_review",
-      "comment_id": "5231959330",
-      "comment_version_key": "5231959330:2026-08-09T14:14:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5231959330",
-      "comment_created_at": "2026-08-09T14:14:00Z",
-      "comment_updated_at": "2026-08-09T14:14:00Z",
-      "comment_body_sha256": "921d981a32a961447e180cc4ca2467164914bc9a6e917069180d002ce87aeb83",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:26:58.075Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5233562925:2026-08-09T19:57:03Z:re_review",
       "comment_id": "5233562925",
@@ -31450,6 +31423,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T19:03:56.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-14T19:02:21Z:clawsweeper_needs_human",
+      "comment_id": "4466829643",
+      "comment_version_key": "4466829643:2026-08-14T19:02:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
+      "comment_created_at": "2026-05-16T12:19:59Z",
+      "comment_updated_at": "2026-08-14T19:02:21Z",
+      "comment_body_sha256": "e2f83ae6e06d5dad9f698b18f55d2c785556ef20735231c02f9f91a8820ae8a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore canceled entries when acknowledgement fails (P1)** - dropAbortedFollowups removes canceled entries before persistDrainAcknowledgement(). If that SQLite write throws, the outer catch only logs; the empty...; Review finding: [P1] Restore canceled entries when acknowledgement fails — src/auto-reply/reply/queue/drain.ts:1312-1318 - [high] Canceled follow-up can be replayed after a SQLite... (sha=c8c3f262b82fb77fec520d0d49f4db7254d3dea6)",
+      "expected_head_sha": "c8c3f262b82fb77fec520d0d49f4db7254d3dea6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T19:04:48.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "c8c3f262b82fb77fec520d0d49f4db7254d3dea6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
