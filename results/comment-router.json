@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:17:38.794Z",
+  "updated_at": "2026-08-14T18:17:49.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5295476842:2026-08-14T16:05:07Z:re_review",
-      "comment_id": "5295476842",
-      "comment_version_key": "5295476842:2026-08-14T16:05:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5295476842",
-      "comment_created_at": "2026-08-14T16:05:07Z",
-      "comment_updated_at": "2026-08-14T16:05:07Z",
-      "comment_body_sha256": "28dc556f69a9930b8cf5da549736b8953e52564827747f2a3a1c1551ece516f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T16:07:24.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "58742d439409b1a031e8a9f2286336da60873609",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:72129:4322677086:2026-08-14T15:58:20Z:clawsweeper_needs_human",
       "comment_id": "4322677086",
@@ -30823,6 +30776,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-cron-autodisabled",
         "head_sha": "b4fb2765d64e6075cc28d2381901251183d1082a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123771:5296398499:2026-08-14T18:16:40Z:clawsweeper_needs_human",
+      "comment_id": "5296398499",
+      "comment_version_key": "5296398499:2026-08-14T18:16:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123771#issuecomment-5296398499",
+      "comment_created_at": "2026-08-14T17:43:04Z",
+      "comment_updated_at": "2026-08-14T18:16:40Z",
+      "comment_body_sha256": "8916f2ca2771f04b7aae4066b5a942c79abfa33cc5df2c589e13b4a5df4c021a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123771,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No after-fix real Control UI screenshot, recording, or redacted runtime trace demonstrates either visible disconnected error state. (sha=dc741dd065536d80723a8369d0bf1a766d902e34)",
+      "expected_head_sha": "dc741dd065536d80723a8369d0bf1a766d902e34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:17:49.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-sessions-stale-visibility",
+        "head_sha": "dc741dd065536d80723a8369d0bf1a766d902e34",
         "cluster_id": null,
         "job_path": null
       }
