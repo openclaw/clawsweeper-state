@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:34:49.001Z",
+  "updated_at": "2026-08-14T22:35:04.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2934:5296941219:2026-08-14T18:44:14Z:re_review",
-      "comment_id": "5296941219",
-      "comment_version_key": "5296941219:2026-08-14T18:44:14Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2934#issuecomment-5296941219",
-      "comment_created_at": "2026-08-14T18:44:14Z",
-      "comment_updated_at": "2026-08-14T18:44:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2934,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:48:11.143Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-jwt-org-fallback",
-        "head_sha": "cde89e81f888c18d124be3fd51dab9ea35c89410",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123194:5288634709:2026-08-14T18:47:22Z:clawsweeper_auto_repair",
       "comment_id": "5288634709",
@@ -32080,6 +32033,39 @@
         "kind": "pull_request",
         "branch": "steipete/reconcile-guard-race",
         "head_sha": "7a77f89a46bf728582da5f6603c98582c6f8ca56",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123864:5298827849:2026-08-14T22:34:25Z:clawsweeper_needs_human",
+      "comment_id": "5298827849",
+      "comment_version_key": "5298827849:2026-08-14T22:34:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5298827849",
+      "comment_created_at": "2026-08-14T22:34:25Z",
+      "comment_updated_at": "2026-08-14T22:34:25Z",
+      "comment_body_sha256": "c80de84c84d0498210aa45d6f3aea181bb053cd5c23f1ad508da71e78925cac8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123864,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports schema and gateway-harness tests, but it has no after-fix trace from a real Gateway transport client exercising the stale-r... (sha=9f06cc0a9c9dd8b916759d03c0c3717c7cfee916)",
+      "expected_head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:35:04.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-reset-lifecycle-cas",
+        "head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
         "cluster_id": null,
         "job_path": null
       }
