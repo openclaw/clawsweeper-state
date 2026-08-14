@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:20:50.516Z",
+  "updated_at": "2026-08-14T07:21:12.053Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121560:5239196783:2026-08-14T03:30:39Z:clawsweeper_needs_human",
-      "comment_id": "5239196783",
-      "comment_version_key": "5239196783:2026-08-14T03:30:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121560#issuecomment-5239196783",
-      "comment_created_at": "2026-08-10T10:54:37Z",
-      "comment_updated_at": "2026-08-14T03:30:39Z",
-      "comment_body_sha256": "282c136f5feea3f72a40f890d12d0a22b21d5f2311ceafac09348d958b6113a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121560,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body names an earlier exact head than the current head, so its stated focused-test evidence does not independently establish the latest profile-rebind amendment. (sha=27db5b9a4958f8172cd0ee05343f726c97fe346a)",
-      "expected_head_sha": "27db5b9a4958f8172cd0ee05343f726c97fe346a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T04:32:50.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-reload-recovery-protocol",
-        "head_sha": "27db5b9a4958f8172cd0ee05343f726c97fe346a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121562:5239219348:2026-08-14T03:30:24Z:clawsweeper_needs_human",
       "comment_id": "5239219348",
@@ -30094,6 +30061,53 @@
       "status": "skipped",
       "processed_at": "2026-08-14T07:20:50.516Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123098:5290653336:2026-08-14T07:20:23Z:re_review",
+      "comment_id": "5290653336",
+      "comment_version_key": "5290653336:2026-08-14T07:20:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123098#issuecomment-5290653336",
+      "comment_created_at": "2026-08-14T07:20:23Z",
+      "comment_updated_at": "2026-08-14T07:20:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123098,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T07:21:08.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-discord-transcript-untrusted",
+        "head_sha": "ab19baaf25bb2ec5f411fe980d3e08d869a6c011",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
