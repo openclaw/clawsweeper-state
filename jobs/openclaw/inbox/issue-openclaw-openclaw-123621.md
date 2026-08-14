@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/123621 as a focused Android bug fix. In `apps/android/app/src/main/java/ai/openclaw/app/chat/ChatController.kt`, stop computing and serializing the temporary numbered “New chat” placeholder in new `sessions.create` requests; delete the now-dead placeholder-numbering helper. Preserve parent/worktree/older-Gateway fallback behavior and do not weaken Gateway handling of explicit labels, add configuration, migrate existing sessions, or edit CHANGELOG.md. Update the existing Android request assertions so normal and fallback session-create requests omit `label`, remove obsolete numbered-placeholder coverage, and establish that the regression assertion fails before the fix. Include release-note context in the PR body.
+Repair the Android New chat title conflict for https://github.com/openclaw/openclaw/issues/123621. In the Android session-create producer, stop serializing the client-only “New chat” placeholder as `label`; preserve all parent lifecycle, agent, and worktree parameters. Delete the now-unused placeholder-numbering path if no other caller needs it. Update the focused Android regression tests to assert that New chat creation omits `label`, while retaining the Gateway test coverage that explicit user labels prevent generated titles. Do not add a Gateway string exception, configuration option, migration, or backfill for existing rows. Put user-visible release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - apps/android/app/src/main/java/ai/openclaw/app/chat/ChatController.kt
 - apps/android/app/src/test/java/ai/openclaw/app/chat/ChatControllerCommandControlsTest.kt
+- src/gateway/dashboard-session-title.test.ts
 
 Validation:
 
-- Run `cd apps/android && ./gradlew :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerCommandControlsTest`.
-- Run the relevant Gateway title test to confirm a genuine explicit label still skips automatic naming.
-- Use a real Android-to-Gateway session run to show the first non-command message receives a generated displayName.
+- cd apps/android && ./gradlew --no-daemon :app:testPlayDebugUnitTest --tests ai.openclaw.app.chat.ChatControllerCommandControlsTest
+- node scripts/run-vitest.mjs src/gateway/dashboard-session-title.test.ts
+- Verify a newly created Android session request has no label and a manually renamed session still retains its label.
 
 ## Operator Prompt
 
