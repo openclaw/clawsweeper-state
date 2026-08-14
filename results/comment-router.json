@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T12:28:04.624Z",
+  "updated_at": "2026-08-14T12:29:55.691Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123219:5291191747:2026-08-14T08:26:42Z:re_review",
-      "comment_id": "5291191747",
-      "comment_version_key": "5291191747:2026-08-14T08:26:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123219#issuecomment-5291191747",
-      "comment_created_at": "2026-08-14T08:26:42Z",
-      "comment_updated_at": "2026-08-14T08:26:42Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123219,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T08:27:26.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tasks-terminal-recent-100911",
-        "head_sha": "48c0151e116f623dcba1ff5a8c66c2a410c00ae3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:466:5291194687:2026-08-14T08:27:05Z:clawsweeper_needs_human",
       "comment_id": "5291194687",
@@ -31879,6 +31832,39 @@
         "kind": "pull_request",
         "branch": "fix/clickclack-rest-request-deadline",
         "head_sha": "e5aa196e1e360b35ca049bc1ab3da3c79ac004e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123587:5291853355:2026-08-14T12:29:03Z:clawsweeper_needs_human",
+      "comment_id": "5291853355",
+      "comment_version_key": "5291853355:2026-08-14T12:29:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123587#issuecomment-5291853355",
+      "comment_created_at": "2026-08-14T09:40:27Z",
+      "comment_updated_at": "2026-08-14T12:29:03Z",
+      "comment_body_sha256": "73b14cf47b7be947b6f38430568c620489228f7a45d6db3cac3764706537567a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing malformed-input recovery can change to null when an unmatched preamble quote is paired with a later JSON key quote; callers may stop recovering a usable object. (sha=f01125dfaa169032a0724b7eeda2f39408cb4d8d)",
+      "expected_head_sha": "f01125dfaa169032a0724b7eeda2f39408cb4d8d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T12:29:55.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/122353-balanced-json-quoted-prose",
+        "head_sha": "f01125dfaa169032a0724b7eeda2f39408cb4d8d",
         "cluster_id": null,
         "job_path": null
       }
