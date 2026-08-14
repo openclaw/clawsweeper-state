@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:52:36.636Z",
+  "updated_at": "2026-08-14T18:53:03.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5138051997:2026-07-31T01:16:57Z:re_review",
-      "comment_id": "5138051997",
-      "comment_version_key": "5138051997:2026-07-31T01:16:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5138051997",
-      "comment_created_at": "2026-07-31T01:16:57Z",
-      "comment_updated_at": "2026-07-31T01:16:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:22:44.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:5149881219:2026-08-01T04:55:40Z:re_review",
       "comment_id": "5149881219",
@@ -31183,6 +31156,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T18:52:36.636Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2936:5295682900:2026-08-14T18:52:08Z:clawsweeper_needs_human",
+      "comment_id": "5295682900",
+      "comment_version_key": "5295682900:2026-08-14T18:52:08Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2936#issuecomment-5295682900",
+      "comment_created_at": "2026-08-14T16:26:47Z",
+      "comment_updated_at": "2026-08-14T18:52:08Z",
+      "comment_body_sha256": "019a458ea860e58f7421e70a86722a5127a44612cd3506ad18c5aa55df0c8a12",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2936,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Build output is supplemental; add a redacted live Muse or supported-proxy request/response trace showing a balance or model-validation result i...; Review finding: [P2] Cover Muse probe and endpoint cases — Sources/CodexBarCore/Providers/Muse/MuseUsageFetcher.swift:12 - [medium] Cover the bearer-token destination boundary — S... (sha=8d6505225f71ad4b2d527918ae17f21ce3dd3ea0)",
+      "expected_head_sha": "8d6505225f71ad4b2d527918ae17f21ce3dd3ea0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:53:03.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/muse-provider",
+        "head_sha": "8d6505225f71ad4b2d527918ae17f21ce3dd3ea0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
