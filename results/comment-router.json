@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:05:33.783Z",
+  "updated_at": "2026-08-14T22:08:48.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119941:5296766932:2026-08-14T18:24:17Z:re_review",
-      "comment_id": "5296766932",
-      "comment_version_key": "5296766932:2026-08-14T18:24:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119941#issuecomment-5296766932",
-      "comment_created_at": "2026-08-14T18:24:17Z",
-      "comment_updated_at": "2026-08-14T18:24:17Z",
-      "comment_body_sha256": "ee6ea9d0469a045be843722d93314193aca4eff688fe6cfc54026aa03fc7ff88",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119941,
-      "author": "pgondhi987",
-      "author_id": 270720687,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:30:24.813Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/synology-hosted-media-903",
-        "head_sha": "c0c5ee67a6936dfbe29a260964661edb3c264c5c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2934:5295134315:2026-08-14T18:29:31Z:clawsweeper_auto_repair",
       "comment_id": "5295134315",
@@ -32123,6 +32076,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-381bfc58ca",
         "head_sha": "150667c383fb8d86ea95cf9a117d1e15637af588",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123837:5298318273:2026-08-14T22:08:06Z:clawsweeper_needs_human",
+      "comment_id": "5298318273",
+      "comment_version_key": "5298318273:2026-08-14T22:08:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5298318273",
+      "comment_created_at": "2026-08-14T21:24:44Z",
+      "comment_updated_at": "2026-08-14T22:08:06Z",
+      "comment_body_sha256": "777e21436835f493b378d07567b1fd9b4b3a40d3c6e8d4186b863eabf378ceaf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR records a real Telegram Desktop copy result at the preceding head, but the final sanitizer commit has no exact-head runtime cap... (sha=4b0b58a02d24f3f3bcec9649eb831e27ebc11af7)",
+      "expected_head_sha": "4b0b58a02d24f3f3bcec9649eb831e27ebc11af7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:08:48.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-copy-text-buttons",
+        "head_sha": "4b0b58a02d24f3f3bcec9649eb831e27ebc11af7",
         "cluster_id": null,
         "job_path": null
       }
