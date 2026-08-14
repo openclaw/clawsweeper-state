@@ -1,38 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:26:36.783Z",
+  "updated_at": "2026-08-14T18:26:53.273Z",
   "commands": [
-    {
-      "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118688",
-      "comment_id": "repair-loop-label-sweep:autofix:118688",
-      "comment_version_key": null,
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118688",
-      "comment_created_at": "2026-08-14T16:05:12.547Z",
-      "comment_updated_at": "2026-08-14T16:05:12.547Z",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118688,
-      "author": "clawsweeper[bot]",
-      "author_id": null,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "autofix",
-      "intent": "autofix",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "repair_loop_label_sweep",
-      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-08-14T16:07:39.889Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-118625",
-        "head_sha": "2ce65e201139a35baf00a7fb4046d37f9dd4f0b4",
-        "cluster_id": "automerge-openclaw-openclaw-118688",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118688.md"
-      }
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:autofix:118696",
       "comment_id": "repair-loop-label-sweep:autofix:118696",
@@ -30857,6 +30825,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123773:5296439561:2026-08-14T18:25:29Z:clawsweeper_needs_human",
+      "comment_id": "5296439561",
+      "comment_version_key": "5296439561:2026-08-14T18:25:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123773#issuecomment-5296439561",
+      "comment_created_at": "2026-08-14T17:47:36Z",
+      "comment_updated_at": "2026-08-14T18:25:29Z",
+      "comment_body_sha256": "d562cc00b97f4d4ef4e86be50a08102e1450f1ddbd4e564fdeae6858e855e2f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123773,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 123 net lines for a bug fix; the added private IPC, validation, and scrubbing boundary is justified by the cross-process ownership requirement, but required e... (sha=d80fc5bc0f97f09123d74f932a7dd8c6272bec10)",
+      "expected_head_sha": "d80fc5bc0f97f09123d74f932a7dd8c6272bec10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:26:53.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/worker-admission-retry-reason",
+        "head_sha": "d80fc5bc0f97f09123d74f932a7dd8c6272bec10",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
