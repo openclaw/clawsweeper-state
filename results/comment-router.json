@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T14:49:58.468Z",
+  "updated_at": "2026-08-14T14:51:21.964Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123585:5292068336:2026-08-14T10:04:56Z:re_review",
-      "comment_id": "5292068336",
-      "comment_version_key": "5292068336:2026-08-14T10:04:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123585#issuecomment-5292068336",
-      "comment_created_at": "2026-08-14T10:04:56Z",
-      "comment_updated_at": "2026-08-14T10:04:56Z",
-      "comment_body_sha256": "fdd87964eae130a667eab79f790d07a5faf43316c10bb2c071fd09660c9e8620",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123585,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T10:05:36.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-new-session-cwd-gateway-persistence",
-        "head_sha": "127bf82a2bba35728ce8377b0ce4b2911c99b8f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123550:5291101562:2026-08-14T10:05:37Z:clawsweeper_needs_human",
       "comment_id": "5291101562",
@@ -32161,6 +32114,39 @@
         "kind": "pull_request",
         "branch": "fix/new-session-draft-persistence",
         "head_sha": "993c477eecfbb0cd2779663ab4c9c5c65d807059",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123696:5294690529:2026-08-14T14:50:17Z:clawsweeper_needs_human",
+      "comment_id": "5294690529",
+      "comment_version_key": "5294690529:2026-08-14T14:50:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123696#issuecomment-5294690529",
+      "comment_created_at": "2026-08-14T14:50:17Z",
+      "comment_updated_at": "2026-08-14T14:50:17Z",
+      "comment_body_sha256": "58497008808a7eda0dd5fabace0a11c0990f06f2e3a0226627020cd5dfa20546",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123696,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Route silent pairing pruning through the revocation flow (P1)** - The new helper is called only by explicit removal RPCs. pruneSupersededSilentPairingsAfterApproval also permanently deletes node pairings, but it...; Review finding: [P1] Route silent pairing pruning through the revocation flow — src/gateway/server-methods/devices.ts:526 - [P2] Keep targeted revocation from sweeping unrelated e... (sha=fd7fce67af360974bb5831a8db729544c10a3df8)",
+      "expected_head_sha": "fd7fce67af360974bb5831a8db729544c10a3df8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T14:51:21.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/device-unpair-reconcile",
+        "head_sha": "fd7fce67af360974bb5831a8db729544c10a3df8",
         "cluster_id": null,
         "job_path": null
       }
