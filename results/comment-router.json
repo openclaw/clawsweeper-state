@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:46:21.382Z",
+  "updated_at": "2026-08-14T18:46:47.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4902943479:2026-07-07T10:47:29Z:re_review",
-      "comment_id": "4902943479",
-      "comment_version_key": "4902943479:2026-07-07T10:47:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4902943479",
-      "comment_created_at": "2026-07-07T10:47:29Z",
-      "comment_updated_at": "2026-07-07T10:47:29Z",
-      "comment_body_sha256": "e54523c3773c102fc205ba473e5506c0f4815b7e278e79e166a01adc2f8b12d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (branch was ~940 commits behind; now conflict-free and mergeable). resolved a docs conflict in `docs/reference/session-management-compaction.md` where upstream reflowed the compaction settings section into prose: kept upstream's structure and folded the `turnmaintenancetasktimeoutms` (opt-in, disabled by default) note into a single prose paragraph, dropping the now-duplicated bullet list. no source behavior change in this refresh. verified locally after rebase: tsgo typecheck clean; affected unit suites green (context-engine-maintenance, transcript-rewrite, command-queue, diagnostic — 147 tests passed). new head 0b88bd92ad",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:22:44.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4949446333:2026-07-12T01:16:32Z:re_review",
       "comment_id": "4949446333",
@@ -30999,6 +30972,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123790:5296737049:2026-08-14T18:45:46Z:clawsweeper_needs_human",
+      "comment_id": "5296737049",
+      "comment_version_key": "5296737049:2026-08-14T18:45:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123790#issuecomment-5296737049",
+      "comment_created_at": "2026-08-14T18:20:53Z",
+      "comment_updated_at": "2026-08-14T18:45:46Z",
+      "comment_body_sha256": "3b2b30e593ebb502dceb5fc0daeed9a7a80d112e81f61705c0fd5952efb2e8c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123790,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve managed proxy routing for pinned transfers (P1)** - This new bare agent bypasses the proxy-aware global transport that the node host activates before connecting to the Gateway. In managed-proxy deployme...; Review finding: [P1] Preserve managed proxy routing for pinned transfers — src/node-host/node-worker-transfer-client.ts:34 - [medium] Dedicated agent bypasses managed proxy routin... (sha=6b46a5bcfae488671d99fe2d3f2fc74cd3444430)",
+      "expected_head_sha": "6b46a5bcfae488671d99fe2d3f2fc74cd3444430",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:46:47.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/device-worker-revocation-regression",
+        "head_sha": "6b46a5bcfae488671d99fe2d3f2fc74cd3444430",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
