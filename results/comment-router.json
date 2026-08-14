@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:12:56.765Z",
+  "updated_at": "2026-08-14T05:13:16.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5288229424:2026-08-14T01:07:46Z:re_review",
-      "comment_id": "5288229424",
-      "comment_version_key": "5288229424:2026-08-14T01:07:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5288229424",
-      "comment_created_at": "2026-08-14T01:07:46Z",
-      "comment_updated_at": "2026-08-14T01:07:46Z",
-      "comment_body_sha256": "2c50821e7a95364e1785426eb2de96d304db56f858e3528eab64482ff6e6e30d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T01:08:33.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "1f85be8b512f144d26ac2dfaa63dcaf69a80d621",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1157:5288241778:2026-08-14T01:09:29Z:re_review",
       "comment_id": "5288241778",
@@ -30675,6 +30628,39 @@
         "kind": "pull_request",
         "branch": "doctor-auth-resume-error-cause",
         "head_sha": "aa58e5d08463f19ad95f642383b5992945a26231",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123465:5289745891:2026-08-14T05:12:28Z:clawsweeper_needs_human",
+      "comment_id": "5289745891",
+      "comment_version_key": "5289745891:2026-08-14T05:12:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123465#issuecomment-5289745891",
+      "comment_created_at": "2026-08-14T05:12:28Z",
+      "comment_updated_at": "2026-08-14T05:12:28Z",
+      "comment_body_sha256": "f1fc77a6e41ec8dcdcaeb0f9701df7a1c31b1fae34756cfb7bc75647724e9662",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared setup action now changes cache restoration across additional hosted CI lanes; rebase and exact-head green CI are needed to show the failed Node/UI runs are unrelated and th... (sha=0e9476ba5eca573bac31eb790ac323d0bff19619)",
+      "expected_head_sha": "0e9476ba5eca573bac31eb790ac323d0bff19619",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:13:16.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fs-cache-all-lanes",
+        "head_sha": "0e9476ba5eca573bac31eb790ac323d0bff19619",
         "cluster_id": null,
         "job_path": null
       }
