@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T12:25:15.937Z",
+  "updated_at": "2026-08-14T12:25:44.734Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw.ai:234:5291143231:2026-08-14T08:20:46Z:clawsweeper_needs_human",
-      "comment_id": "5291143231",
-      "comment_version_key": "5291143231:2026-08-14T08:20:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw.ai/pull/234#issuecomment-5291143231",
-      "comment_created_at": "2026-08-14T08:20:46Z",
-      "comment_updated_at": "2026-08-14T08:20:46Z",
-      "comment_body_sha256": "37d8e965b681eb6416fa9df2aace9dc3fc076cff6ae8819c7891cfb06131d514",
-      "repo": "openclaw/openclaw.ai",
-      "issue_number": 234,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=eb5b9a01c4a770ef9118082c9359bef953c80b72)",
-      "expected_head_sha": "eb5b9a01c4a770ef9118082c9359bef953c80b72",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T08:21:30.121Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/video-structured-data",
-        "head_sha": "eb5b9a01c4a770ef9118082c9359bef953c80b72",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123533:5290505861:2026-08-14T08:20:51Z:clawsweeper_auto_repair",
       "comment_id": "5290505861",
@@ -31934,6 +31901,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123633:5293253535:2026-08-14T12:24:53Z:clawsweeper_needs_human",
+      "comment_id": "5293253535",
+      "comment_version_key": "5293253535:2026-08-14T12:24:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123633#issuecomment-5293253535",
+      "comment_created_at": "2026-08-14T12:24:53Z",
+      "comment_updated_at": "2026-08-14T12:24:53Z",
+      "comment_body_sha256": "2091f0991d7e66c3e1e0374fd314451a9d3065d01c4c0c0d5326fffca9b4c2a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Sanitize the PowerShell failure before attaching it (P1)** - runExec rethrows the original process error, which can contain the -EncodedCommand argv. Attaching that object here makes the encoded script available...; Review finding: [P1] Sanitize the PowerShell failure before attaching it — src/snapshot/local-repository.ts:1423-1425 - [medium] Raw encoded PowerShell command can escape via erro... (sha=9e13580c09e5e050538b425a981e798ab8b5a55b)",
+      "expected_head_sha": "9e13580c09e5e050538b425a981e798ab8b5a55b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T12:25:44.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/windows-powershell-cold-spawn",
+        "head_sha": "9e13580c09e5e050538b425a981e798ab8b5a55b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
