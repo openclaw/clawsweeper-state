@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:25:47.898Z",
+  "updated_at": "2026-08-14T16:25:50.885Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123569:5291723097:2026-08-14T12:33:07Z:clawsweeper_needs_human",
-      "comment_id": "5291723097",
-      "comment_version_key": "5291723097:2026-08-14T12:33:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123569#issuecomment-5291723097",
-      "comment_created_at": "2026-08-14T09:27:20Z",
-      "comment_updated_at": "2026-08-14T12:33:07Z",
-      "comment_body_sha256": "c07d1efbf1b7504f9ec959a26f84df149c77be34cb3b4c0839058403ac084acb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123569,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Validate the signed lifecycle before adoption** - The release path validates notarization and signer state in code, but the PR body confirms that no real package, install, recovery, or...; Review finding: [medium] Validate the signed lifecycle before adoption — scripts/mac-elevation-host.sh:169 (sha=6d9590ff7348152baceeeccf7f248da99a3cb439)",
-      "expected_head_sha": "6d9590ff7348152baceeeccf7f248da99a3cb439",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T12:34:33.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mac-elevation-distribution",
-        "head_sha": "6d9590ff7348152baceeeccf7f248da99a3cb439",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123645:5293301392:2026-08-14T12:36:22Z:clawsweeper_auto_repair",
       "comment_id": "5293301392",
@@ -31211,6 +31178,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123730:5295667121:2026-08-14T16:25:03Z:clawsweeper_needs_human",
+      "comment_id": "5295667121",
+      "comment_version_key": "5295667121:2026-08-14T16:25:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123730#issuecomment-5295667121",
+      "comment_created_at": "2026-08-14T16:25:03Z",
+      "comment_updated_at": "2026-08-14T16:25:03Z",
+      "comment_body_sha256": "24a3cdb0a83548131bdc5cc64ae1ba316312a4add2019bacd218043f583ae8ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123730,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No redacted after-fix trace shows image build, transfer, load, controlled redeploy, rollback, and observed service health; add it after the dep...; Review finding: [medium] Repository automation would control an external deployment host — .github/workflows/build.yml:55 (sha=58d0c6943c90b0456fc31ea95b689b7117984906)",
+      "expected_head_sha": "58d0c6943c90b0456fc31ea95b689b7117984906",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:25:50.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-build",
+        "head_sha": "58d0c6943c90b0456fc31ea95b689b7117984906",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
