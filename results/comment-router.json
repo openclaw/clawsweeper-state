@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:27:11.461Z",
+  "updated_at": "2026-08-14T20:28:35.168Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5257053068:2026-08-11T18:12:18Z:re_review",
-      "comment_id": "5257053068",
-      "comment_version_key": "5257053068:2026-08-11T18:12:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5257053068",
-      "comment_created_at": "2026-08-11T18:12:18Z",
-      "comment_updated_at": "2026-08-11T18:12:18Z",
-      "comment_body_sha256": "d2628a4264fcf881feca4b308200422df686019cbcc40a74c6d555e0ff0f8a9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:29:09.287Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5257443896:2026-08-11T18:49:32Z:re_review",
       "comment_id": "5257443896",
@@ -32083,6 +32056,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T20:27:11.461Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121578:5240496495:2026-08-14T20:27:41Z:clawsweeper_needs_human",
+      "comment_id": "5240496495",
+      "comment_version_key": "5240496495:2026-08-14T20:27:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121578#issuecomment-5240496495",
+      "comment_created_at": "2026-08-10T12:48:25Z",
+      "comment_updated_at": "2026-08-14T20:27:41Z",
+      "comment_body_sha256": "dfae6bfd6f1eca8ef7169636afba391274a41889627d65a75980470e3d9c2937",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121578,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Honor the writer’s canonical provider-key precedence (P1)** - The raw assignment loop accepts OpenAI’s LOSING_ENV for a models.json openai entry, even though the writer selects exact canonical openai regardless...; Review finding: [P1] Honor the writer’s canonical provider-key precedence — src/secrets/audit-models-json.ts:57-64 - [medium] Losing aliases can suppress plaintext findings — src/... (sha=b3d92b479fc65edc16488fbe78cb10066546125c)",
+      "expected_head_sha": "b3d92b479fc65edc16488fbe78cb10066546125c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T20:28:35.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/121543-models-json-secretref",
+        "head_sha": "b3d92b479fc65edc16488fbe78cb10066546125c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
