@@ -67,12 +67,13 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Mattermost automatic acknowledgement reactions as an existing shared-config bug. Keep the change plugin-local: after an inbound post passes normal access, mention, and empty-body gates and is durably recorded, resolve the existing shared acknowledgement value and scope through public Plugin SDK seams, add through the existing Mattermost transport, and remove only after a visible reply when the existing global cleanup setting requires it. Do not add Mattermost-specific config, status-reaction behavior, core internals imports, or compatibility paths. Add boundary regression coverage for accepted-post ordering, record failure, mention-drop suppression, and visible-reply-only cleanup; update the Mattermost channel documentation. Include release-note context in the PR body, not CHANGELOG.md, and obtain redacted real Mattermost or approved production-boundary proof before merge.
+Repair the existing Mattermost acknowledgement-policy defect. In the Mattermost plugin, add a static automatic acknowledgement only after the shared inbound turn has successfully recorded the accepted post; use the existing global messages.ackReaction/messages.ackReactionScope policy and the plugin’s authenticated reaction transport. Thread only the already-computed mention and chat-kind facts required by the shared gate. Do not add Mattermost-specific config, core policy, lifecycle status reactions, fallback paths, or messages.removeAckAfterReply support; that setting is retired. Prefer a monitor-safe transport helper using the existing client and known bot identity over the tool-oriented reaction action. Add regression coverage for record → ack → dispatch ordering, scope eligibility, rejected/mention-gated posts, record failure, and non-blocking reaction failure. Update Mattermost public channel docs for the existing global policy and verify actual emoji handling in a redacted live workspace run. Do not edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
 - extensions/mattermost/src/mattermost/monitor-posts.ts
 - extensions/mattermost/src/mattermost/monitor-turn.ts
+- extensions/mattermost/src/mattermost/reactions.ts
 - extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts
 - extensions/mattermost/src/mattermost/reactions.test.ts
 - docs/channels/mattermost.md
@@ -80,8 +81,8 @@ Likely files:
 Validation:
 
 - node scripts/run-vitest.mjs extensions/mattermost/src/mattermost/monitor.inbound-system-event.test.ts extensions/mattermost/src/mattermost/reactions.test.ts
-- git diff --check
-- Redacted real Mattermost workspace smoke or an approved production-boundary harness proving accepted-post acknowledgement and cleanup behavior
+- Run a redacted Mattermost workspace scenario covering a qualifying accepted post, a suppressed post, and a reaction-API failure that still delivers the reply.
+- pnpm plugin-sdk:surface:check
 
 ## Operator Prompt
 
