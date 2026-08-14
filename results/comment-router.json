@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:19:23.895Z",
+  "updated_at": "2026-08-14T06:19:38.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123008:5276391673:2026-08-13T05:35:53Z:re_review",
-      "comment_id": "5276391673",
-      "comment_version_key": "5276391673:2026-08-13T05:35:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123008#issuecomment-5276391673",
-      "comment_created_at": "2026-08-13T05:35:53Z",
-      "comment_updated_at": "2026-08-13T05:35:53Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123008,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:18:01.266Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123008:5276631078:2026-08-13T06:11:48Z:re_review",
       "comment_id": "5276631078",
@@ -30730,6 +30703,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1164:5290162969:2026-08-14T06:18:59Z:clawsweeper_needs_human",
+      "comment_id": "5290162969",
+      "comment_version_key": "5290162969:2026-08-14T06:18:59Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1164#issuecomment-5290162969",
+      "comment_created_at": "2026-08-14T06:18:59Z",
+      "comment_updated_at": "2026-08-14T06:18:59Z",
+      "comment_body_sha256": "796493bc91f4988a7d41a8f0f29affc64bd89b64902071698c6b72eb31b1c322",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1164,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes exact-review automation’s live GitHub-read path; cache skips, failed confirmations, and unavailable queue calls must preserve the existing unconditional-read semantics. (sha=bd2ef9502f5988219a475d2cba83723b0c1038b0)",
+      "expected_head_sha": "bd2ef9502f5988219a475d2cba83723b0c1038b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T06:19:38.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/etag-read-broker",
+        "head_sha": "bd2ef9502f5988219a475d2cba83723b0c1038b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
