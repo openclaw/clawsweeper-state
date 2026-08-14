@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:03:54.244Z",
+  "updated_at": "2026-08-14T07:05:19.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5288899742:2026-08-14T03:00:44Z:re_review",
-      "comment_id": "5288899742",
-      "comment_version_key": "5288899742:2026-08-14T03:00:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5288899742",
-      "comment_created_at": "2026-08-14T03:00:44Z",
-      "comment_updated_at": "2026-08-14T03:00:44Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T03:28:28.212Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-gateway",
-        "head_sha": "a4107168feb9aa89b2a9f596de9cdf8059591974",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-14T03:27:35Z:clawsweeper_needs_human",
       "comment_id": "5184670120",
@@ -30743,6 +30696,39 @@
         "kind": "pull_request",
         "branch": "openclaw/our-openclaw-webui-tool-search-is-a-bit-dumb-when-i-do-openclaw",
         "head_sha": "abda24064c58454a69822b31f68b32d98e70eb47",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-14T06:54:04Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-14T06:54:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-14T06:54:04Z",
+      "comment_body_sha256": "ca88f88c7bfef57c43a0dbcdfd5d55a2f8325ad346079dc98e00aa67dca274d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Validate credentialed action upgrades** - The updated Docker login action receives GitHub and Docker Hub credentials in release workflows, so its revised behavior must be checked on the...; Review finding: [medium] Validate credentialed action upgrades — .github/workflows/docker-release.yml:244 (sha=7b79f027673218d9b3522d96c3239297b7a4d07d)",
+      "expected_head_sha": "7b79f027673218d9b3522d96c3239297b7a4d07d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:05:19.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "7b79f027673218d9b3522d96c3239297b7a4d07d",
         "cluster_id": null,
         "job_path": null
       }
