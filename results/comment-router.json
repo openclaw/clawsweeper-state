@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T10:55:48.237Z",
+  "updated_at": "2026-08-14T10:55:51.187Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119342:5288899535:2026-08-14T03:00:42Z:re_review",
-      "comment_id": "5288899535",
-      "comment_version_key": "5288899535:2026-08-14T03:00:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5288899535",
-      "comment_created_at": "2026-08-14T03:00:42Z",
-      "comment_updated_at": "2026-08-14T03:00:42Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119342,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:27:03.067Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119342:5289417417:2026-08-14T04:18:00Z:re_review",
       "comment_id": "5289417417",
@@ -31559,6 +31532,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T10:55:48.237Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-14T10:46:29Z:clawsweeper_needs_human",
+      "comment_id": "5154193917",
+      "comment_version_key": "5154193917:2026-08-14T10:46:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117712#issuecomment-5154193917",
+      "comment_created_at": "2026-08-02T00:30:44Z",
+      "comment_updated_at": "2026-08-14T10:46:29Z",
+      "comment_body_sha256": "0434d63cad48182482809441c53f93fe939389d60a8c11d22a91f35aa1edd223",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the approved TruffleHog tuple (P1)** - The changed action reference is v3.96.0, but its version input remains the v3.95.9 binary and digest. The focused guard explicitly treats those values as one co...; Review finding: [P1] Synchronize the approved TruffleHog tuple — .github/workflows/ci.yml:1054-1058 - [medium] Mismatched secret-scanner action and binary — .github/workflows/ci.y... (sha=376c360de455bc7490168b099fbbffa8788abd75)",
+      "expected_head_sha": "376c360de455bc7490168b099fbbffa8788abd75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T10:55:51.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-b3ce8c744c",
+        "head_sha": "d7de61fa12c56cadcda7858887731c10208ecc18",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
