@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-14T10:27:51.615Z",
+  "updated_at": "2026-08-14T10:27:22.166Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116489:5134107795:2026-08-14T07:19:48Z:clawsweeper_needs_human",
+      "comment_id": "5134107795",
+      "comment_version_key": "5134107795:2026-08-14T07:19:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5134107795",
+      "comment_created_at": "2026-07-30T17:24:48Z",
+      "comment_updated_at": "2026-08-14T07:19:48Z",
+      "comment_body_sha256": "6b8f30ba168e9edc2da9910556aedbf88a22f3fb74109dc24fa8171fc737490e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This deliberately changes a previously terminal warn policy response into a direct-CLI acknowledgement flow; the branch is behind main, so exact merge-ref checks should be refreshed b... (sha=a4822797ba744182c9cc71c56223a4f46c2b4f4d)",
+      "expected_head_sha": "a4822797ba744182c9cc71c56223a4f46c2b4f4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:20:50.515Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/before-install-coverage",
+        "head_sha": "a4822797ba744182c9cc71c56223a4f46c2b4f4d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116489:5189348277:2026-08-05T08:19:00Z:re_review",
       "comment_id": "5189348277",
@@ -31212,53 +31245,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123288:5292262819:2026-08-14T10:26:53Z:re_review",
-      "comment_id": "5292262819",
-      "comment_version_key": "5292262819:2026-08-14T10:26:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123288#issuecomment-5292262819",
-      "comment_created_at": "2026-08-14T10:26:53Z",
-      "comment_updated_at": "2026-08-14T10:26:53Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123288,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T10:27:47.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/why-are-we-able-to-have-a-loading-spinner-and-an-activity-dot-at",
-        "head_sha": "ae9edaa802dbf207d272de9374907b2886c564ca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
