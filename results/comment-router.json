@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T08:33:10.635Z",
+  "updated_at": "2026-08-14T08:33:29.555Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123509:5290115651:2026-08-14T06:11:43Z:clawsweeper_needs_human",
-      "comment_id": "5290115651",
-      "comment_version_key": "5290115651:2026-08-14T06:11:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123509#issuecomment-5290115651",
-      "comment_created_at": "2026-08-14T06:11:43Z",
-      "comment_updated_at": "2026-08-14T06:11:43Z",
-      "comment_body_sha256": "2f962df6c1f8b4a65738c84f10ec8dbef573226f0c3948705dd399ffa4d89a67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123509,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public plugin SDK entry point is a compatibility-sensitive contract; provider implementations may depend on its validation, registration, and lifecycle semantics. (sha=b2f6e8c3ec65d891dfb2152940df35bff250218d)",
-      "expected_head_sha": "b2f6e8c3ec65d891dfb2152940df35bff250218d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T06:12:33.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cu-provider-seam",
-        "head_sha": "b2f6e8c3ec65d891dfb2152940df35bff250218d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123512:5290117807:2026-08-14T06:12:03Z:clawsweeper_needs_human",
       "comment_id": "5290117807",
@@ -30480,6 +30447,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123193:5291244410:2026-08-14T08:32:47Z:re_review",
+      "comment_id": "5291244410",
+      "comment_version_key": "5291244410:2026-08-14T08:32:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123193#issuecomment-5291244410",
+      "comment_created_at": "2026-08-14T08:32:47Z",
+      "comment_updated_at": "2026-08-14T08:32:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123193,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T08:33:28.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clear-pending-history-error-path-bug-008",
+        "head_sha": "a4df39cad5ccc1af0cf003eeafbcc0fe8231ae74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
