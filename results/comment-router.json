@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:20:01.880Z",
+  "updated_at": "2026-08-14T22:20:34.796Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123793:5296827316:2026-08-14T18:31:11Z:clawsweeper_needs_human",
-      "comment_id": "5296827316",
-      "comment_version_key": "5296827316:2026-08-14T18:31:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123793#issuecomment-5296827316",
-      "comment_created_at": "2026-08-14T18:31:11Z",
-      "comment_updated_at": "2026-08-14T18:31:11Z",
-      "comment_body_sha256": "0fee52cc2bb2ecf4bf283e2d1ea051b93e973deabafe1988e2791524a381f01e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123793,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a Telegram gateway run, but it does not exercise the changed Discord/PluralKit declaration; packaged-consumer success...; Review finding: [P2] Split PluralKit identities before marking Discord IDs verified — extensions/discord/src/monitor/dm-command-auth.ts:64 - [medium] PluralKit member ID is not a... (sha=0a8efaa9212122ac2df2902f5e4239bec2883438)",
-      "expected_head_sha": "0a8efaa9212122ac2df2902f5e4239bec2883438",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:32:19.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/rfc-0027-sdk-surface",
-        "head_sha": "0a8efaa9212122ac2df2902f5e4239bec2883438",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118977:5172284329:2026-08-14T18:31:21Z:clawsweeper_auto_repair",
       "comment_id": "5172284329",
@@ -32130,6 +32097,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123869:5298726043:2026-08-14T22:19:46Z:re_review",
+      "comment_id": "5298726043",
+      "comment_version_key": "5298726043:2026-08-14T22:19:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123869#issuecomment-5298726043",
+      "comment_created_at": "2026-08-14T22:19:46Z",
+      "comment_updated_at": "2026-08-14T22:19:46Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123869,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T22:20:32.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/reconcile-guard-race",
+        "head_sha": "7e3279f54a43827c7ea9809494fd420e8c4c12f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
