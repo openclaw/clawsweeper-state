@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T13:15:32.162Z",
+  "updated_at": "2026-08-14T13:16:40.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116562:5153802360:2026-08-01T22:43:53Z:re_review",
-      "comment_id": "5153802360",
-      "comment_version_key": "5153802360:2026-08-01T22:43:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116562#issuecomment-5153802360",
-      "comment_created_at": "2026-08-01T22:43:53Z",
-      "comment_updated_at": "2026-08-01T22:43:53Z",
-      "comment_body_sha256": "9143972444c5de9e3f8655947c19789e02a54e6dd08094798abd6c12a1a92e6a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116562,
-      "author": "wenrizc",
-      "author_id": 167160780,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T08:35:59.548Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116562:5153848891:2026-08-01T22:54:04Z:re_review",
       "comment_id": "5153848891",
@@ -32344,6 +32317,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123664:5293722542:2026-08-14T13:15:51Z:clawsweeper_needs_human",
+      "comment_id": "5293722542",
+      "comment_version_key": "5293722542:2026-08-14T13:15:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123664#issuecomment-5293722542",
+      "comment_created_at": "2026-08-14T13:15:51Z",
+      "comment_updated_at": "2026-08-14T13:15:51Z",
+      "comment_body_sha256": "834b465e76c60d225f408215cc70b9ff2459ef6cfde198120679efb296bcd074",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head Control UI and required PR checks are still pending, so merge should remain gated on their completion. (sha=f98b5b08ff0a27238a81cbfcd4c101e3d4049585)",
+      "expected_head_sha": "f98b5b08ff0a27238a81cbfcd4c101e3d4049585",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T13:16:40.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/flaky-test-sweep",
+        "head_sha": "f98b5b08ff0a27238a81cbfcd4c101e3d4049585",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
