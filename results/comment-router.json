@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T19:57:21.422Z",
+  "updated_at": "2026-08-14T19:57:27.624Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114173:5085269514:2026-08-14T17:12:34Z:clawsweeper_needs_human",
-      "comment_id": "5085269514",
-      "comment_version_key": "5085269514:2026-08-14T17:12:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5085269514",
-      "comment_created_at": "2026-07-26T20:31:11Z",
-      "comment_updated_at": "2026-08-14T17:12:34Z",
-      "comment_body_sha256": "a0b47e4d6641d83bd349518fd1dda33d0f22abc08501139e208702cdb0986187",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging this UI layer before its dirty Gateway parent is resolved could leave authenticated recovery, invalidation, and QR-byte scrubbing unverified at the owner boundary. (sha=427c13fcb163f8106495c56ec60ed89bac10562b)",
-      "expected_head_sha": "427c13fcb163f8106495c56ec60ed89bac10562b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:22:39.407Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-web",
-        "head_sha": "427c13fcb163f8106495c56ec60ed89bac10562b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5105317634:2026-07-28T14:17:13Z:re_review",
       "comment_id": "5105317634",
@@ -31438,6 +31405,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-08-14T19:56:08Z:clawsweeper_auto_repair",
+      "comment_id": "5196803797",
+      "comment_version_key": "5196803797:2026-08-14T19:56:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
+      "comment_created_at": "2026-08-05T20:10:31Z",
+      "comment_updated_at": "2026-08-14T19:56:08Z",
+      "comment_body_sha256": "a4a24c5428f0a0078b52acd831bbc97d8a5bd0bcac048ff18fbe56c71fdd73af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119718,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=81021f3ac1971e0452a8f7e7d74aeece7e9e4b20)",
+      "expected_head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-08-14T19:57:10.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-89430",
+        "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
+        "cluster_id": "automerge-openclaw-openclaw-119718",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5297566482:2026-08-14T19:56:36Z:re_review",
