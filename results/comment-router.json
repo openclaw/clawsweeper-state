@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:50:15.675Z",
+  "updated_at": "2026-08-14T07:51:59.821Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5258965088:2026-08-11T21:17:37Z:re_review",
-      "comment_id": "5258965088",
-      "comment_version_key": "5258965088:2026-08-11T21:17:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5258965088",
-      "comment_created_at": "2026-08-11T21:17:37Z",
-      "comment_updated_at": "2026-08-11T21:17:37Z",
-      "comment_body_sha256": "dd6bf67c80fdc60e2d1669129a7eb6575fb34d786fa451f9271f597a4273d6ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T05:22:58.575Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5259004795:2026-08-11T21:21:53Z:re_review",
       "comment_id": "5259004795",
@@ -30260,6 +30233,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2853:5248271643:2026-08-14T07:51:17Z:clawsweeper_needs_human",
+      "comment_id": "5248271643",
+      "comment_version_key": "5248271643:2026-08-14T07:51:17Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2853#issuecomment-5248271643",
+      "comment_created_at": "2026-08-11T02:18:31Z",
+      "comment_updated_at": "2026-08-14T07:51:17Z",
+      "comment_body_sha256": "f3a2653e719caafdfaebaa4fb6fc36a54c390152f6d3c3c4234592447e365428",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom layouts containing Weekly pace will replace an unavailable dash with an early signed estimate during the first 1–3% of a quota window. (sha=6896a1ba88fc3e8c29f9356ca454133354e759ca)",
+      "expected_head_sha": "6896a1ba88fc3e8c29f9356ca454133354e759ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:51:59.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pace-token-early-window-2842",
+        "head_sha": "6896a1ba88fc3e8c29f9356ca454133354e759ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
