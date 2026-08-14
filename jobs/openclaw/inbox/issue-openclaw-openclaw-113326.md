@@ -67,21 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the headless OpenAI device-code recovery path in https://github.com/openclaw/openclaw/issues/113326. Preserve OpenClaw’s agent-scoped auth-store ownership and do not unify, import, or mutate standalone Codex CLI credentials. Change the model-auth CLI so an explicitly selected provider method that is contractually non-interactive—cover the OpenAI device-code method—can run without stdin being a TTY, while unspecified and prompt-requiring methods still fail safely with an actionable message. Add a regression test that fails on current main for non-TTY explicit OpenAI device-code selection and passes after the repair; retain the existing private-channel flow. Update the relevant operator docs/help to distinguish OpenClaw profile recovery from standalone Codex login. Do not edit CHANGELOG.md; include release-note context in the PR body. Stop and request review if the repair requires a Codex runtime/storage contract change.
+Repair the source-proven non-TTY device-code login defect in https://github.com/openclaw/openclaw/issues/113326. The CLI maps `--device-code` to the existing provider method, but `modelsAuthLoginCommand` rejects every non-TTY caller before `runModelsAuthLoginFlowCore` can select it. Preserve the interactive guard for flows that require prompts; make an explicitly selected device-code method present its verification URL and short-lived code safely in a noninteractive shell. Do not add config, synchronize/import/unify standalone Codex CLI credentials, alter the OpenClaw auth-store boundary, or combine the separate TTY hang/process-leak work from https://github.com/openclaw/openclaw/issues/113505. Add a command-boundary regression that fails before the repair, confirms no interactive selector is used, and verifies the device pairing flow can reach its provider method with non-TTY stdin. Include user-visible release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- docs/cli/models.md
-- docs/providers/openai.md
+- src/wizard/clack-prompter.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs src/commands/models/auth.test.ts
+- node scripts/run-vitest.mjs src/cli/models-cli.test.ts
 - node scripts/run-vitest.mjs extensions/openai/openai-chatgpt-device-code.test.ts
-- Redacted real headless device-code recovery against a disposable OpenAI profile, showing URL/code emission and resulting OpenClaw profile without exposing credentials.
-- pnpm docs:check
 
 ## Operator Prompt
 
