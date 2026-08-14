@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:44:58.739Z",
+  "updated_at": "2026-08-14T21:45:01.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82572:4466829643:2026-08-14T18:00:55Z:clawsweeper_needs_human",
-      "comment_id": "4466829643",
-      "comment_version_key": "4466829643:2026-08-14T18:00:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4466829643",
-      "comment_created_at": "2026-05-16T12:19:59Z",
-      "comment_updated_at": "2026-08-14T18:00:55Z",
-      "comment_body_sha256": "4d47fb68f4c47e48a05f327fce8f788bd2b34a9a3227ace7149c74cf89f92dfb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Project CLI binding facts before persisting them (P1)** - cliSessionBindingFacts is copied as a whole even though it can contain extraSystemPromptStatic. That value is deliberately excluded as secret-bearing sys...; Review finding: [P1] Project CLI binding facts before persisting them — src/auto-reply/reply/queue/persist.ts:387-410 - [high] Nested CLI binding bypasses prompt exclusion — src/a... (sha=9472d2cf1c6bc52d8426dd0ab3314f37cff271c6)",
-      "expected_head_sha": "9472d2cf1c6bc52d8426dd0ab3314f37cff271c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T18:09:20.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/queue-followup-persistence",
-        "head_sha": "da4d1f5cae9a3ca111822b0c3a304385991eea88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83242:4472225414:2026-08-14T17:51:06Z:clawsweeper_auto_repair",
       "comment_id": "4472225414",
@@ -32386,6 +32353,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T21:44:58.739Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122512:5264065948:2026-08-14T21:40:04Z:clawsweeper_needs_human",
+      "comment_id": "5264065948",
+      "comment_version_key": "5264065948:2026-08-14T21:40:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122512#issuecomment-5264065948",
+      "comment_created_at": "2026-08-12T08:08:39Z",
+      "comment_updated_at": "2026-08-14T21:40:04Z",
+      "comment_body_sha256": "065b695d7dabbaabe17d28f52d9ecb2b0b925fce523b0ac4cc8869387d92a31d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122512,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body shows real classifier and fallback-runner code with an injected provider result, but not a real Claude CLI credit-exhaustion respon... (sha=59d99e12e04fe57f4d757992dcab009d0d9dcae5)",
+      "expected_head_sha": "59d99e12e04fe57f4d757992dcab009d0d9dcae5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:45:01.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-usage-credits-billing",
+        "head_sha": "59d99e12e04fe57f4d757992dcab009d0d9dcae5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
