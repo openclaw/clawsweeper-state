@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T09:56:28.408Z",
+  "updated_at": "2026-08-14T09:56:28.926Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122517:5290373115:2026-08-14T06:46:59Z:re_review",
-      "comment_id": "5290373115",
-      "comment_version_key": "5290373115:2026-08-14T06:46:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122517#issuecomment-5290373115",
-      "comment_created_at": "2026-08-14T06:46:59Z",
-      "comment_updated_at": "2026-08-14T06:46:59Z",
-      "comment_body_sha256": "ffb0304e0709b126766c622be352177a6b406dad99b56b33db72473dd7bc25b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122517,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T06:51:27.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/prevent-cross-channel-approval-leak",
-        "head_sha": "7d9459295ce0533f80dad68c6f098b98bb3186b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122517:5263971717:2026-08-14T06:50:41Z:clawsweeper_needs_human",
       "comment_id": "5263971717",
@@ -30913,6 +30866,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119941:5204771748:2026-08-14T09:54:32Z:clawsweeper_needs_human",
+      "comment_id": "5204771748",
+      "comment_version_key": "5204771748:2026-08-14T09:54:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119941#issuecomment-5204771748",
+      "comment_created_at": "2026-08-06T12:42:49Z",
+      "comment_updated_at": "2026-08-14T09:54:32Z",
+      "comment_body_sha256": "59c46c46c7ff290683ebf7cd2bd21ae690dfc091b7c341e3591feb6b6428b3e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119941,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the streaming API out of the public SDK unless sponsored (P1)** - This adds a new public chunk-streaming contract for a single Synology consumer, but the attachment setup decision does not establish a third...; Review finding: [P1] Keep the streaming API out of the public SDK unless sponsored — src/plugin-sdk/outbound-media.ts:108-112 - [P2] Align the active-document security contract —... (sha=f5bf52641c1cbfe33ce2c9e2fc6f831a14de399c)",
+      "expected_head_sha": "f5bf52641c1cbfe33ce2c9e2fc6f831a14de399c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T09:56:28.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/synology-hosted-media-903",
+        "head_sha": "f5bf52641c1cbfe33ce2c9e2fc6f831a14de399c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
