@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:03:23.672Z",
+  "updated_at": "2026-08-14T07:03:34.306Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119342:5184665833:2026-08-14T03:27:02Z:clawsweeper_needs_human",
-      "comment_id": "5184665833",
-      "comment_version_key": "5184665833:2026-08-14T03:27:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119342#issuecomment-5184665833",
-      "comment_created_at": "2026-08-04T21:10:21Z",
-      "comment_updated_at": "2026-08-14T03:27:02Z",
-      "comment_body_sha256": "94e19e8cf87f0a9fa88a097141109cebddb710190d34b56273d2c909d2a013d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119342,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify QR credential retention boundaries** - The patch claims QR image bytes are scrubbed and raw URIs stay out of assistant history, but those dataflows could not be independently tra...; Review finding: [medium] Verify QR credential retention boundaries (sha=1d39ff6d104d3e5d267f60ab134fa47eacbc6cdf)",
-      "expected_head_sha": "1d39ff6d104d3e5d267f60ab134fa47eacbc6cdf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T03:28:23.534Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/system-agent-qr-host",
-        "head_sha": "1d39ff6d104d3e5d267f60ab134fa47eacbc6cdf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119342:5248216515:2026-08-11T02:09:18Z:re_review",
       "comment_id": "5248216515",
@@ -30726,6 +30693,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:112474:5290500616:2026-08-14T07:02:48Z:re_review",
+      "comment_id": "5290500616",
+      "comment_version_key": "5290500616:2026-08-14T07:02:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112474#issuecomment-5290500616",
+      "comment_created_at": "2026-08-14T07:02:48Z",
+      "comment_updated_at": "2026-08-14T07:02:48Z",
+      "comment_body_sha256": "4f8c482faf52d5ca90b6469c1b332ee90479065928016590d026039de6c3931c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112474,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T07:03:32.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr-line-mattermost-config-promotion",
+        "head_sha": "013ef294cf16a4e359159534e4acce39d9ccb143",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
