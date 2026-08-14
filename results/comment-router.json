@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T01:22:33.818Z",
+  "updated_at": "2026-08-14T01:23:20.047Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123270:5286143971:2026-08-13T20:40:50Z:re_review",
-      "comment_id": "5286143971",
-      "comment_version_key": "5286143971:2026-08-13T20:40:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123270#issuecomment-5286143971",
-      "comment_created_at": "2026-08-13T20:40:50Z",
-      "comment_updated_at": "2026-08-13T20:40:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123270,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T21:09:02.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/android-legacy-branch-compat-20260813",
-        "head_sha": "3d02f5f1c7d56fbec52fda0e9064104f61c5b6d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123308:5286348081:2026-08-13T21:01:50Z:re_review",
       "comment_id": "5286348081",
@@ -30509,6 +30462,39 @@
         "kind": "pull_request",
         "branch": "docs/106452-clawhub-cli-intro",
         "head_sha": "34bb75a95a9bb23a98ae99a0efef93aa278a2e54",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123406:5288320414:2026-08-14T01:22:31Z:clawsweeper_needs_human",
+      "comment_id": "5288320414",
+      "comment_version_key": "5288320414:2026-08-14T01:22:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123406#issuecomment-5288320414",
+      "comment_created_at": "2026-08-14T01:22:31Z",
+      "comment_updated_at": "2026-08-14T01:22:31Z",
+      "comment_body_sha256": "049c5964dff1d3bcdfc0e26735b03de432f4a0b48175edd1aac105851185cd53",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123406,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Local checks and projected timing are useful supplemental evidence, but no completed after-change GitHub-hosted run demonstrates the changed ca... (sha=13fe8defb30b8051f33d688db83cc3a03694cfb1)",
+      "expected_head_sha": "13fe8defb30b8051f33d688db83cc3a03694cfb1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T01:23:20.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/github-five-min",
+        "head_sha": "13fe8defb30b8051f33d688db83cc3a03694cfb1",
         "cluster_id": null,
         "job_path": null
       }
