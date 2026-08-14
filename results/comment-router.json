@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T23:41:55.554Z",
+  "updated_at": "2026-08-14T23:43:08.549Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:5297174223:2026-08-14T19:10:47Z:re_review",
-      "comment_id": "5297174223",
-      "comment_version_key": "5297174223:2026-08-14T19:10:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-5297174223",
-      "comment_created_at": "2026-08-14T19:10:47Z",
-      "comment_updated_at": "2026-08-14T19:10:47Z",
-      "comment_body_sha256": "999ca1284af5f0870e972cd499f455cbdddef670d838e11bfe319ae6fa1ee578",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T19:20:59.364Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/turn-maintenance-per-task-timeout",
-        "head_sha": "bd4dc82bbf13a43610709c8cea77ef76464a6427",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4815745160:2026-06-27T07:04:23Z:re_review",
       "comment_id": "4815745160",
@@ -32417,6 +32370,39 @@
         "kind": "pull_request",
         "branch": "fix/catalog-first-fetch-retry",
         "head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119950:5205354809:2026-08-14T23:42:07Z:clawsweeper_needs_human",
+      "comment_id": "5205354809",
+      "comment_version_key": "5205354809:2026-08-14T23:42:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119950#issuecomment-5205354809",
+      "comment_created_at": "2026-08-06T13:37:11Z",
+      "comment_updated_at": "2026-08-14T23:42:07Z",
+      "comment_body_sha256": "2d5d15b6655653afaa201d3b239e3bdca9e2b2809b0cfb33d54c14aa6e153212",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119950,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the foreground Tailscale readiness contract** - The proposed route-owner worker treats a specific Tailscale stdout marker as proof of a claimed route; the cited upstream contract...; Review finding: [medium] Verify the foreground Tailscale readiness contract — src/infra/tailscale-route-owner.worker.ts:13 (sha=7116365881c28a40093eca6b11faba22efc4d5ed)",
+      "expected_head_sha": "7116365881c28a40093eca6b11faba22efc4d5ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T23:43:08.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-898-v2",
+        "head_sha": "7116365881c28a40093eca6b11faba22efc4d5ed",
         "cluster_id": null,
         "job_path": null
       }
