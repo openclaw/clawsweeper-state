@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:35:47.425Z",
+  "updated_at": "2026-08-14T16:36:00.033Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:33:5079396127:2026-07-25T17:04:18Z:re_review",
-      "comment_id": "5079396127",
-      "comment_version_key": "5079396127:2026-07-25T17:04:18Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/33#issuecomment-5079396127",
-      "comment_created_at": "2026-07-25T17:04:18Z",
-      "comment_updated_at": "2026-07-25T17:04:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/rfcs",
-      "issue_number": 33,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:19:59.800Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117712:5154193917:2026-08-14T13:12:18Z:clawsweeper_needs_human",
       "comment_id": "5154193917",
@@ -31161,6 +31134,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T16:35:47.425Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123742:5295762042:2026-08-14T16:35:06Z:clawsweeper_needs_human",
+      "comment_id": "5295762042",
+      "comment_version_key": "5295762042:2026-08-14T16:35:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123742#issuecomment-5295762042",
+      "comment_created_at": "2026-08-14T16:35:06Z",
+      "comment_updated_at": "2026-08-14T16:35:06Z",
+      "comment_body_sha256": "f03dd46b9f053c764f454a5efcf18326d78426203083775e717fc727951cfc25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused tests, but the added coverage uses mocked handler and broadcast paths and no after-fix Gateway or reviewer-surface...; Review finding: [P1] Sanitize node-policy plugin approvals through the same boundary — src/gateway/server-methods/plugin-approval.ts:153-174 - [high] Node-policy approval text byp... (sha=a296e9dc4efee3c8bea61eadeeeeda955e80d49a)",
+      "expected_head_sha": "a296e9dc4efee3c8bea61eadeeeeda955e80d49a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:36:00.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-approval-sanitize",
+        "head_sha": "a296e9dc4efee3c8bea61eadeeeeda955e80d49a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
