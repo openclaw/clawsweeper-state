@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T04:18:57.172Z",
+  "updated_at": "2026-08-14T04:19:06.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122350:5274221076:2026-08-13T00:03:16Z:re_review",
-      "comment_id": "5274221076",
-      "comment_version_key": "5274221076:2026-08-13T00:03:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122350#issuecomment-5274221076",
-      "comment_created_at": "2026-08-13T00:03:16Z",
-      "comment_updated_at": "2026-08-13T00:03:16Z",
-      "comment_body_sha256": "c6c171c39153523e713a32a6d9d00e26515ed32d173a1168bc94d138c817921a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122350,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:24:48.788Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122350:5279602423:2026-08-13T11:07:13Z:re_review",
       "comment_id": "5279602423",
@@ -30846,6 +30819,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120161:5213486061:2026-08-14T04:10:35Z:clawsweeper_needs_human",
+      "comment_id": "5213486061",
+      "comment_version_key": "5213486061:2026-08-14T04:10:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120161#issuecomment-5213486061",
+      "comment_created_at": "2026-08-07T06:41:09Z",
+      "comment_updated_at": "2026-08-14T04:10:35Z",
+      "comment_body_sha256": "99efdaf7b77f2e25d4db03c5371e9c5125a5d50c64980eb56f2d9e4e0be42800",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes CI execution and sparse-checkout contents while the exact-head Windows Node-test check and CI gate are failing; merge should wait for an attributed rerun or evidence that... (sha=35d20c0fd53515479dd8dc2e903efe2d6a877925)",
+      "expected_head_sha": "35d20c0fd53515479dd8dc2e903efe2d6a877925",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T04:19:06.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-shard-concurrency-env",
+        "head_sha": "35d20c0fd53515479dd8dc2e903efe2d6a877925",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
