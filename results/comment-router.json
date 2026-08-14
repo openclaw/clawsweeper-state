@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T01:23:33.107Z",
+  "updated_at": "2026-08-14T01:23:50.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122855:5286352095:2026-08-13T21:02:16Z:re_review",
-      "comment_id": "5286352095",
-      "comment_version_key": "5286352095:2026-08-13T21:02:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122855#issuecomment-5286352095",
-      "comment_created_at": "2026-08-13T21:02:16Z",
-      "comment_updated_at": "2026-08-13T21:02:16Z",
-      "comment_body_sha256": "64047b762fe83093be7d21a9454298c4f99c8547cb347b43f15c3cd1b859a9e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122855,
-      "author": "felirami",
-      "author_id": 6752178,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T21:09:02.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cursor/preserve-announce-drop-reason-732b",
-        "head_sha": "05565da36288836ddc822e8eb377d6a9e3c198ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123299:5286409645:2026-08-13T21:08:20Z:clawsweeper_needs_human",
       "comment_id": "5286409645",
@@ -30498,6 +30451,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:456:5288324921:2026-08-14T01:23:14Z:clawsweeper_needs_human",
+      "comment_id": "5288324921",
+      "comment_version_key": "5288324921:2026-08-14T01:23:14Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/456#issuecomment-5288324921",
+      "comment_created_at": "2026-08-14T01:23:14Z",
+      "comment_updated_at": "2026-08-14T01:23:14Z",
+      "comment_body_sha256": "1b350d8ff4497190895de28564129a0261527e72e9abf134ed7b1e577e011a54",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 456,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Leave the changelog entry to release preparation (P2)** - CHANGELOG.md is release-owned under the repository policy, so this release-tooling PR should not add the unreleased 4.1.1 entry. Keep the user-visible re...; Review finding: [P2] Leave the changelog entry to release preparation — CHANGELOG.md:5 - [medium] Audit the new PyPI code in the credentialed release path — scripts/dmgbuild-runne... (sha=ab9cf8b4e3046e49898d53a96528bd8305142993)",
+      "expected_head_sha": "ab9cf8b4e3046e49898d53a96528bd8305142993",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T01:23:50.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-dmg-release-layout",
+        "head_sha": "ab9cf8b4e3046e49898d53a96528bd8305142993",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
