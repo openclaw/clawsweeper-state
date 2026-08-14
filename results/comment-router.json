@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T20:11:26.839Z",
+  "updated_at": "2026-08-14T20:12:24.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5235911975:2026-08-10T04:34:50Z:re_review",
-      "comment_id": "5235911975",
-      "comment_version_key": "5235911975:2026-08-10T04:34:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5235911975",
-      "comment_created_at": "2026-08-10T04:34:50Z",
-      "comment_updated_at": "2026-08-10T04:34:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:22:39.407Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5236589601:2026-08-10T06:18:53Z:re_review",
       "comment_id": "5236589601",
@@ -31771,6 +31744,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1126:5225086660:2026-08-14T19:54:15Z:clawsweeper_needs_human",
+      "comment_id": "5225086660",
+      "comment_version_key": "5225086660:2026-08-14T19:54:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1126#issuecomment-5225086660",
+      "comment_created_at": "2026-08-08T07:16:52Z",
+      "comment_updated_at": "2026-08-14T19:54:15Z",
+      "comment_body_sha256": "b41c4902a5d8f9ee8f9cf2eb748eea99f9c153392c8d22dbd3c81d8201e03fd1",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The dirty merge against current-main tray orchestration can lose either the new manager-owned restart path or the refactor's ownership boundaries unless resolved deliberately. (sha=c4b4f90bfc578008c2b92f27a0cdc4deaa7cdd42)",
+      "expected_head_sha": "c4b4f90bfc578008c2b92f27a0cdc4deaa7cdd42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T20:12:24.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shanselman-fix-ssh-owned-handoffs-followup",
+        "head_sha": "c4b4f90bfc578008c2b92f27a0cdc4deaa7cdd42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
