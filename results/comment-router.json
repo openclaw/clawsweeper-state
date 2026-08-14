@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T23:52:51.944Z",
+  "updated_at": "2026-08-14T23:53:00.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4987005857:2026-07-16T01:16:01Z:re_review",
-      "comment_id": "4987005857",
-      "comment_version_key": "4987005857:2026-07-16T01:16:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4987005857",
-      "comment_created_at": "2026-07-16T01:16:01Z",
-      "comment_updated_at": "2026-07-16T01:16:01Z",
-      "comment_body_sha256": "484da84cee2a3e1652eaed53ea0e37403c00fb1e7bb0551cfbc779e077375727",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest upstream/main (clean, no conflicts); new head is green on lint, test-types, max-lines-ratchet, build, and compact test shards. please re-run against the current exact head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T19:21:23.198Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4998975483:2026-07-17T04:27:48Z:re_review",
       "comment_id": "4998975483",
@@ -32521,6 +32494,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123582:5291742642:2026-08-14T23:52:08Z:clawsweeper_needs_human",
+      "comment_id": "5291742642",
+      "comment_version_key": "5291742642:2026-08-14T23:52:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123582#issuecomment-5291742642",
+      "comment_created_at": "2026-08-14T09:29:34Z",
+      "comment_updated_at": "2026-08-14T23:52:08Z",
+      "comment_body_sha256": "91dd456b1bef2cb11a4c95f5f34c3e99bdb290e70a14c9ac2734ea7da692d3fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123582,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR intentionally changes the default sidebar visual hierarchy, so a maintainer should confirm that this product direction is wanted before merge. (sha=ebfb05f3c39a318ffe85814ab3435160d9dfcc76)",
+      "expected_head_sha": "ebfb05f3c39a318ffe85814ab3435160d9dfcc76",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T23:53:00.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/sidebar-account-footer",
+        "head_sha": "ebfb05f3c39a318ffe85814ab3435160d9dfcc76",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
