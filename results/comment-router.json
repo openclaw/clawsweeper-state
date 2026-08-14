@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T14:49:44.721Z",
+  "updated_at": "2026-08-14T14:49:58.468Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123476:5292063691:2026-08-14T10:04:26Z:re_review",
-      "comment_id": "5292063691",
-      "comment_version_key": "5292063691:2026-08-14T10:04:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123476#issuecomment-5292063691",
-      "comment_created_at": "2026-08-14T10:04:26Z",
-      "comment_updated_at": "2026-08-14T10:04:26Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123476,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T10:05:10.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/fast-image-capability-preflight",
-        "head_sha": "f6b79edbe72e2695f7f95a2626e07d6ffba1ac0c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123585:5292068336:2026-08-14T10:04:56Z:re_review",
       "comment_id": "5292068336",
@@ -32175,6 +32128,39 @@
         "kind": "pull_request",
         "branch": "refactor/crabline-server-terminology",
         "head_sha": "dea156ccf9c7b9b4a5a9929d268b61b64915cd1e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123697:5294680584:2026-08-14T14:49:18Z:clawsweeper_needs_human",
+      "comment_id": "5294680584",
+      "comment_version_key": "5294680584:2026-08-14T14:49:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123697#issuecomment-5294680584",
+      "comment_created_at": "2026-08-14T14:49:18Z",
+      "comment_updated_at": "2026-08-14T14:49:18Z",
+      "comment_body_sha256": "376c273e0591256c9a038f15e94ab86071458074c4e4561125745a3387093dc1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 66 net production lines; the growth is justified only because draft text and attachment payloads need one lifecycle-owned transfer across page destruction rather tha... (sha=993c477eecfbb0cd2779663ab4c9c5c65d807059)",
+      "expected_head_sha": "993c477eecfbb0cd2779663ab4c9c5c65d807059",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T14:49:58.468Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/new-session-draft-persistence",
+        "head_sha": "993c477eecfbb0cd2779663ab4c9c5c65d807059",
         "cluster_id": null,
         "job_path": null
       }
