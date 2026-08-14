@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:26:49.858Z",
+  "updated_at": "2026-08-14T03:26:57.849Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2919:5287445003:2026-08-13T23:14:12Z:re_review",
-      "comment_id": "5287445003",
-      "comment_version_key": "5287445003:2026-08-13T23:14:12Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2919#issuecomment-5287445003",
-      "comment_created_at": "2026-08-13T23:14:12Z",
-      "comment_updated_at": "2026-08-13T23:14:12Z",
-      "comment_body_sha256": "86bf4b1c63b685776cbc50ff74c5deb93ab0e6597c5a66a56d36b1cdc4cdec73",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2919,
-      "author": "dhabyx",
-      "author_id": 290991,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T23:17:52.005Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-linux-manual-cookie",
-        "head_sha": "e264e27fe30966589ddea9aa9fef8ba09365b013",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2919:5286723785:2026-08-13T23:16:57Z:clawsweeper_needs_human",
       "comment_id": "5286723785",
@@ -30655,6 +30608,39 @@
         "kind": "pull_request",
         "branch": "codex/autoqa-i18n-callsite-drift",
         "head_sha": "6b6ae83b3ce353bd0905832d4644ae0d6fb0b323",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123443:5288986777:2026-08-14T03:26:09Z:clawsweeper_needs_human",
+      "comment_id": "5288986777",
+      "comment_version_key": "5288986777:2026-08-14T03:26:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123443#issuecomment-5288986777",
+      "comment_created_at": "2026-08-14T03:15:36Z",
+      "comment_updated_at": "2026-08-14T03:26:09Z",
+      "comment_body_sha256": "b0793cba73c658243facbf4eeae8cadeb110fcb9cb62fb6fff157d8c0ba6b2c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports checks but provides no inspectable after-fix exact-head upgrade, install, or restart artifact. After adding proof, update t... (sha=2b54444361fefc434272579c13c88adb8e7b6eb8)",
+      "expected_head_sha": "2b54444361fefc434272579c13c88adb8e7b6eb8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:26:57.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release-integration/2026.8.1-beta.2-repair-r23-unsigned",
+        "head_sha": "2b54444361fefc434272579c13c88adb8e7b6eb8",
         "cluster_id": null,
         "job_path": null
       }
