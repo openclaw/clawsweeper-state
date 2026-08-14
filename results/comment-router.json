@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T11:49:03.694Z",
+  "updated_at": "2026-08-14T11:50:06.812Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123481:5290730584:2026-08-14T07:30:13Z:clawsweeper_needs_human",
-      "comment_id": "5290730584",
-      "comment_version_key": "5290730584:2026-08-14T07:30:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123481#issuecomment-5290730584",
-      "comment_created_at": "2026-08-14T07:30:13Z",
-      "comment_updated_at": "2026-08-14T07:30:13Z",
-      "comment_body_sha256": "d05892b5afb3490d5ad9e20fa953b2df85e3a6d40f545fa3ce7071eab0617e23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body provides mock interaction suites and typechecking, but no redacted screenshot or recording from a running Control UI; repository policy requires real UI evidence for this... (sha=dc62734714a7c530213a8433d043ebcb4eace686)",
-      "expected_head_sha": "dc62734714a7c530213a8433d043ebcb4eace686",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:38:33.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-hidden-catalog-adopted",
-        "head_sha": "dc62734714a7c530213a8433d043ebcb4eace686",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123545:5290760955:2026-08-14T07:33:58Z:clawsweeper_auto_repair",
       "comment_id": "5290760955",
@@ -31785,6 +31752,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123626:5292949143:2026-08-14T11:49:23Z:re_review",
+      "comment_id": "5292949143",
+      "comment_version_key": "5292949143:2026-08-14T11:49:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123626#issuecomment-5292949143",
+      "comment_created_at": "2026-08-14T11:49:23Z",
+      "comment_updated_at": "2026-08-14T11:49:23Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123626,
+      "author": "vyctorbrzezowski",
+      "author_id": 51521767,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T11:50:04.726Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fanout-stA/sidebar-typography",
+        "head_sha": "70878e8ea1f98cd651bb92ca26712247701b4588",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
