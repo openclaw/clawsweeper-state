@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:22:18.944Z",
+  "updated_at": "2026-08-14T06:22:38.541Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123193:5288658886:2026-08-14T02:18:17Z:clawsweeper_needs_human",
-      "comment_id": "5288658886",
-      "comment_version_key": "5288658886:2026-08-14T02:18:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123193#issuecomment-5288658886",
-      "comment_created_at": "2026-08-14T02:18:17Z",
-      "comment_updated_at": "2026-08-14T02:18:17Z",
-      "comment_body_sha256": "003a72ba3b35379667406d07320809573a7a90576f54f98bc3cb2788032b24c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123193,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The proposed change alters group-turn session context after failures; its interaction with recording hooks, retry ownership, and sibling finalization paths still needs an independent... (sha=a4df39cad5ccc1af0cf003eeafbcc0fe8231ae74)",
-      "expected_head_sha": "a4df39cad5ccc1af0cf003eeafbcc0fe8231ae74",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:21:10.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clear-pending-history-error-path-bug-008",
-        "head_sha": "a4df39cad5ccc1af0cf003eeafbcc0fe8231ae74",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123146:5279602923:2026-08-14T02:16:52Z:clawsweeper_needs_human",
       "comment_id": "5279602923",
@@ -30722,6 +30689,53 @@
       "status": "skipped",
       "processed_at": "2026-08-14T06:22:18.944Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123244:5290181991:2026-08-14T06:21:53Z:re_review",
+      "comment_id": "5290181991",
+      "comment_version_key": "5290181991:2026-08-14T06:21:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123244#issuecomment-5290181991",
+      "comment_created_at": "2026-08-14T06:21:53Z",
+      "comment_updated_at": "2026-08-14T06:21:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123244,
+      "author": "coaiMax",
+      "author_id": 147324971,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T06:22:37.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-graph-upload-malformed-response",
+        "head_sha": "061c48063731f06c49fd455a08b24fc13909b59b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
