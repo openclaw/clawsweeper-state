@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:31:41.452Z",
+  "updated_at": "2026-08-14T06:32:59.954Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113802:5288924432:2026-08-14T03:04:53Z:re_review",
-      "comment_id": "5288924432",
-      "comment_version_key": "5288924432:2026-08-14T03:04:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113802#issuecomment-5288924432",
-      "comment_created_at": "2026-08-14T03:04:53Z",
-      "comment_updated_at": "2026-08-14T03:04:53Z",
-      "comment_body_sha256": "9e85fd621bfba21472d2f31c5f64228046a1a14b3237d26ea4f3b31f08204539",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113802,
-      "author": "ArthurNie",
-      "author_id": 264332276,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `86b63a732466b002c79b3184d756f34548bcd5e9` once the new ci run completes",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T03:05:38.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/goal-token-budget-accounting-20260725",
-        "head_sha": "86b63a732466b002c79b3184d756f34548bcd5e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:41:5288927925:2026-08-14T03:05:30Z:clawsweeper_needs_human",
       "comment_id": "5288927925",
@@ -31103,6 +31056,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-terminal-owner-recurrence",
         "head_sha": "85a483dca3baea63cc9ec1ac0d6c22d8207452ae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123525:5290268278:2026-08-14T06:32:20Z:clawsweeper_needs_human",
+      "comment_id": "5290268278",
+      "comment_version_key": "5290268278:2026-08-14T06:32:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123525#issuecomment-5290268278",
+      "comment_created_at": "2026-08-14T06:32:20Z",
+      "comment_updated_at": "2026-08-14T06:32:20Z",
+      "comment_body_sha256": "77b33bccc2c2925d76c9fbc1f3dcbb37f79ff8203228f6407ec47bc4b5ff49e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123525,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix real behavior evidence was provided; the PR reports that focused tests could not run. Add redacted runtime output proving both den...; Review finding: [P1] Bind containment approval to an authoritative runtime record — extensions/codex/src/app-server/native-execution-policy.ts:46 - [high] Caller-controlled contai... (sha=117ad93d8801621fb225f054070627bf18c428f4)",
+      "expected_head_sha": "117ad93d8801621fb225f054070627bf18c428f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T06:32:59.954Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue6-native-command-containment",
+        "head_sha": "117ad93d8801621fb225f054070627bf18c428f4",
         "cluster_id": null,
         "job_path": null
       }
