@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:55:05.939Z",
+  "updated_at": "2026-08-14T16:55:07.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123562:5291341496:2026-08-14T13:33:01Z:clawsweeper_auto_repair",
-      "comment_id": "5291341496",
-      "comment_version_key": "5291341496:2026-08-14T13:33:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123562#issuecomment-5291341496",
-      "comment_created_at": "2026-08-14T08:44:11Z",
-      "comment_updated_at": "2026-08-14T13:33:01Z",
-      "comment_body_sha256": "e2f276002304e74d9765f63a63fdde638e4e0cad42222117f73175ba928e77bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123562,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=efd9b70a99b54a64ae9e92789688cd407d2d30cc)",
-      "expected_head_sha": "efd9b70a99b54a64ae9e92789688cd407d2d30cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:36:55.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/sidebar-section-pinned-parity",
-        "head_sha": "efd9b70a99b54a64ae9e92789688cd407d2d30cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123594:5292163821:2026-08-14T13:34:14Z:clawsweeper_auto_repair",
       "comment_id": "5292163821",
@@ -31365,6 +31332,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T16:55:05.939Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116926:5145228008:2026-08-14T16:43:13Z:clawsweeper_needs_human",
+      "comment_id": "5145228008",
+      "comment_version_key": "5145228008:2026-08-14T16:43:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116926#issuecomment-5145228008",
+      "comment_created_at": "2026-07-31T16:37:44Z",
+      "comment_updated_at": "2026-08-14T16:43:13Z",
+      "comment_body_sha256": "f48c7beeaed350d8b27c4897af9e846616c6808b5623190c1437464782608c7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Block array-length expansion in partial arguments (P1)** - This newly added materializer rejects oversized numeric indexes but accepts $.items.length; after $.items[0] creates an array, that assignment can expan...; Review finding: [P1] Block array-length expansion in partial arguments — extensions/google/transport-stream.ts:300-302 - [P1] Parse complete trailing framed provider errors — exte... (sha=4369e7d0cb0d2b8f6ee8294c6a88b079a070dd87)",
+      "expected_head_sha": "4369e7d0cb0d2b8f6ee8294c6a88b079a070dd87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:55:07.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa200-google-stream-provider",
+        "head_sha": "4369e7d0cb0d2b8f6ee8294c6a88b079a070dd87",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
