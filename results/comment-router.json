@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T02:17:54.364Z",
+  "updated_at": "2026-08-14T02:17:58.443Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123254:5286675034:2026-08-13T21:37:26Z:re_review",
-      "comment_id": "5286675034",
-      "comment_version_key": "5286675034:2026-08-13T21:37:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123254#issuecomment-5286675034",
-      "comment_created_at": "2026-08-13T21:37:26Z",
-      "comment_updated_at": "2026-08-13T21:37:26Z",
-      "comment_body_sha256": "0bd6903e0108616061b34129f9f6032465ad0fb2a6fdd60e9dd4e673dd138310",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123254,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T22:17:46.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/claws-final-exam-runtime",
-        "head_sha": "c2041556c3374cce09fab42c228801cdb06943a6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123321:5286836657:2026-08-13T21:54:09Z:re_review",
       "comment_id": "5286836657",
@@ -30467,6 +30420,39 @@
         "kind": "pull_request",
         "branch": "fix/imessage-binding-route",
         "head_sha": "9c03e6b196ff1a3ebd120cd0672fe5b48aa11e9b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122705:5270029775:2026-08-14T02:11:13Z:clawsweeper_needs_human",
+      "comment_id": "5270029775",
+      "comment_version_key": "5270029775:2026-08-14T02:11:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122705#issuecomment-5270029775",
+      "comment_created_at": "2026-08-12T17:14:13Z",
+      "comment_updated_at": "2026-08-14T02:11:13Z",
+      "comment_body_sha256": "b7f0174f1d5758e0791cb2f870c58437a0829baace19229b93f1b84441c25590",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR reports focused temporary-SQLite tests but no after-fix CLI-backed compaction and next-turn trace; attach redacted terminal or runtime-l... (sha=75126e44d21ff062cb4acb98e80c67164ec0c4c1)",
+      "expected_head_sha": "75126e44d21ff062cb4acb98e80c67164ec0c4c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T02:17:58.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "issue-pr/84593-manual-compact-binding",
+        "head_sha": "75126e44d21ff062cb4acb98e80c67164ec0c4c1",
         "cluster_id": null,
         "job_path": null
       }
