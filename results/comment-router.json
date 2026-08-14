@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T19:20:10.892Z",
+  "updated_at": "2026-08-14T19:20:42.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117259:5150282575:2026-08-14T16:13:22Z:clawsweeper_needs_human",
-      "comment_id": "5150282575",
-      "comment_version_key": "5150282575:2026-08-14T16:13:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117259#issuecomment-5150282575",
-      "comment_created_at": "2026-08-01T06:55:33Z",
-      "comment_updated_at": "2026-08-14T16:13:22Z",
-      "comment_body_sha256": "3dff18d20608e643d6be8586955cee3972199bc70ccf35b31fdb24e6451bcaa0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117259,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, and the unavailable PR blobs prevent checking its clean GitHub merge result against newer Buzz gateway work. (sha=906a603ae7e27f5570fc6052b8a542392bb6edeb)",
-      "expected_head_sha": "906a603ae7e27f5570fc6052b8a542392bb6edeb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:32:14.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/buzz-cold-start-recovery-watermark",
-        "head_sha": "906a603ae7e27f5570fc6052b8a542392bb6edeb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117266:5150387940:2026-08-14T16:20:36Z:clawsweeper_needs_human",
       "comment_id": "5150387940",
@@ -31516,6 +31483,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120900:5297254698:2026-08-14T19:19:58Z:re_review",
+      "comment_id": "5297254698",
+      "comment_version_key": "5297254698:2026-08-14T19:19:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5297254698",
+      "comment_created_at": "2026-08-14T19:19:58Z",
+      "comment_updated_at": "2026-08-14T19:19:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120900,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T19:20:40.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/install-policy-warning-ui",
+        "head_sha": "6c7a452d3eff94cb9b5ac173b25248e65ca6cdde",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
