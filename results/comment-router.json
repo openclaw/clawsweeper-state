@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T14:44:55.770Z",
+  "updated_at": "2026-08-14T14:45:01.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:109581:4999572167:2026-07-17T06:10:25Z:re_review",
-      "comment_id": "4999572167",
-      "comment_version_key": "4999572167:2026-07-17T06:10:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/109581#issuecomment-4999572167",
-      "comment_created_at": "2026-07-17T06:10:25Z",
-      "comment_updated_at": "2026-07-17T06:10:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 109581,
-      "author": "zhangqueping",
-      "author_id": 3436352,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T09:53:52.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:109581:4999855612:2026-07-17T06:49:43Z:re_review",
       "comment_id": "4999855612",
@@ -32146,6 +32119,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T14:44:55.770Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116604:5137949038:2026-08-14T14:37:46Z:clawsweeper_needs_human",
+      "comment_id": "5137949038",
+      "comment_version_key": "5137949038:2026-08-14T14:37:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116604#issuecomment-5137949038",
+      "comment_created_at": "2026-07-31T01:01:06Z",
+      "comment_updated_at": "2026-08-14T14:37:46Z",
+      "comment_body_sha256": "385989626dd6d8e234915fa18f6d2c6313f21b6535379dc97adb07ccf0873f02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116604,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted harness exercises OpenClaw code over a real pipe but substitutes the Codex app server, so it is supplemental rather than after-fi... (sha=2c91cd93074c819016eeb73496e897394cc51bb9)",
+      "expected_head_sha": "2c91cd93074c819016eeb73496e897394cc51bb9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T14:45:01.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-projector-trailing-no-reply",
+        "head_sha": "2c91cd93074c819016eeb73496e897394cc51bb9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
