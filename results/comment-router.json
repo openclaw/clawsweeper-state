@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T10:36:58.108Z",
+  "updated_at": "2026-08-14T10:37:09.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116489:5151612192:2026-08-01T13:23:45Z:re_review",
-      "comment_id": "5151612192",
-      "comment_version_key": "5151612192:2026-08-01T13:23:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116489#issuecomment-5151612192",
-      "comment_created_at": "2026-08-01T13:23:45Z",
-      "comment_updated_at": "2026-08-01T13:23:45Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116489,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:20:50.516Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116489:5156889911:2026-08-02T09:35:00Z:re_review",
       "comment_id": "5156889911",
@@ -31401,6 +31374,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3457:5260969102:2026-08-14T10:36:23Z:clawsweeper_needs_human",
+      "comment_id": "5260969102",
+      "comment_version_key": "5260969102:2026-08-14T10:36:23Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3457#issuecomment-5260969102",
+      "comment_created_at": "2026-08-12T01:21:46Z",
+      "comment_updated_at": "2026-08-14T10:36:23Z",
+      "comment_body_sha256": "d18f3082a4038aadf38c6e44ba60fc10f566a29b48af4b75815f813a9ff834ed",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required CI jobs are failing and need explanation or successful reruns before merge. (sha=25db30d26c881fd7d9d60956ced543654d1be26b)",
+      "expected_head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T10:37:09.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-first-fetch-retry",
+        "head_sha": "25db30d26c881fd7d9d60956ced543654d1be26b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
