@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T08:28:51.276Z",
+  "updated_at": "2026-08-14T08:29:03.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:460:5289957959:2026-08-14T05:47:33Z:clawsweeper_needs_human",
-      "comment_id": "5289957959",
-      "comment_version_key": "5289957959:2026-08-14T05:47:33Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/460#issuecomment-5289957959",
-      "comment_created_at": "2026-08-14T05:47:33Z",
-      "comment_updated_at": "2026-08-14T05:47:33Z",
-      "comment_body_sha256": "5712c1326199ffdbcd5f19f8bcb981ee53b5ed016315274b5496a11569648c25",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 460,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review receipt identity enforcement before merge** - The proposed native-action boundary retains and revalidates raw accessibility identities before dispatch, so maintainers need to ver...; Review finding: [medium] Review receipt identity enforcement before merge (sha=576f165dcea12b098f950f10113961fb2e843a34)",
-      "expected_head_sha": "576f165dcea12b098f950f10113961fb2e843a34",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T05:48:25.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dialog-receipts-1-25-v2",
-        "head_sha": "576f165dcea12b098f950f10113961fb2e843a34",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:316:5289987986:2026-08-14T05:52:33Z:clawsweeper_needs_human",
       "comment_id": "5289987986",
@@ -30602,6 +30569,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:91237:5291205450:2026-08-14T08:28:21Z:re_review",
+      "comment_id": "5291205450",
+      "comment_version_key": "5291205450:2026-08-14T08:28:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/91237#issuecomment-5291205450",
+      "comment_created_at": "2026-08-14T08:28:21Z",
+      "comment_updated_at": "2026-08-14T08:28:21Z",
+      "comment_body_sha256": "1d497fbb579c432949093227578d2b3c1a41dfff19790b0c4363967232f582a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 91237,
+      "author": "Bartok9",
+      "author_id": 259807879,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T08:29:00.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-1h-cache-ttl-eligibility",
+        "head_sha": "1b433d2a65b0237750e79d0e7c77600f41f8c723",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
