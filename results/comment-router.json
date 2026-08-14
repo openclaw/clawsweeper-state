@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:38:14.016Z",
+  "updated_at": "2026-08-14T16:38:26.286Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119204:5178740801:2026-08-14T13:22:34Z:clawsweeper_needs_human",
-      "comment_id": "5178740801",
-      "comment_version_key": "5178740801:2026-08-14T13:22:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119204#issuecomment-5178740801",
-      "comment_created_at": "2026-08-04T12:04:32Z",
-      "comment_updated_at": "2026-08-14T13:22:34Z",
-      "comment_body_sha256": "6ba4b700f8bbd9737ec4d8095d16ea3b0bdec3a4da7d859a5823342626b73d1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119204,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so landing should use a refreshed merge result and exact-head validation. (sha=36b4fbd8e3b531d361ee62e236910e8b5ebbb467)",
-      "expected_head_sha": "36b4fbd8e3b531d361ee62e236910e8b5ebbb467",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:23:21.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-prs-merged-heads-beyond-cap",
-        "head_sha": "36b4fbd8e3b531d361ee62e236910e8b5ebbb467",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123666:5293746180:2026-08-14T13:23:31Z:clawsweeper_auto_repair",
       "comment_id": "5293746180",
@@ -31167,6 +31134,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116934:5295786307:2026-08-14T16:37:39Z:re_review",
+      "comment_id": "5295786307",
+      "comment_version_key": "5295786307:2026-08-14T16:37:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116934#issuecomment-5295786307",
+      "comment_created_at": "2026-08-14T16:37:39Z",
+      "comment_updated_at": "2026-08-14T16:37:39Z",
+      "comment_body_sha256": "5846a52e359e70e619ad867add03b9ed8ed8adcc6262aa1af9d6d92d03249dc9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116934,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T16:38:24.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-crash-backlog-loss",
+        "head_sha": "42d4f18ecf107fec4ef789458238f5b6236e7ee8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
