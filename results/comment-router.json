@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:00:19.654Z",
+  "updated_at": "2026-08-14T05:05:27.104Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123269:5285976882:2026-08-14T00:27:40Z:clawsweeper_needs_human",
-      "comment_id": "5285976882",
-      "comment_version_key": "5285976882:2026-08-14T00:27:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123269#issuecomment-5285976882",
-      "comment_created_at": "2026-08-13T20:23:59Z",
-      "comment_updated_at": "2026-08-14T00:27:40Z",
-      "comment_body_sha256": "fde5399dc44193914b42a1b56c20f416c85f8375fbd234ab3d04a57e294ece6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main and its CI gate failed; inspect the failed job and revalidate the actual three-way merge result before landing. (sha=8d68bc83646904ac9b884e383dcdb1aa2bccdfe9)",
-      "expected_head_sha": "8d68bc83646904ac9b884e383dcdb1aa2bccdfe9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T00:41:54.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-usage-cost-fixes",
-        "head_sha": "8d68bc83646904ac9b884e383dcdb1aa2bccdfe9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123271:5286006897:2026-08-14T00:33:48Z:clawsweeper_needs_human",
       "comment_id": "5286006897",
@@ -30728,6 +30695,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1162:5289635893:2026-08-14T05:04:36Z:clawsweeper_needs_human",
+      "comment_id": "5289635893",
+      "comment_version_key": "5289635893:2026-08-14T05:04:36Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1162#issuecomment-5289635893",
+      "comment_created_at": "2026-08-14T04:53:57Z",
+      "comment_updated_at": "2026-08-14T05:04:36Z",
+      "comment_body_sha256": "d161efffbf9921a49c75b7b32b0ffb49b17da57f275570ba2ee078b09d083287",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1162,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Hosted job-wide AppArmor relaxation** - Setting kernel.apparmor_restrict_unprivileged_userns=0 affects unprivileged user-namespace creation for the remainder of the hosted job, beyond t...; Review finding: [medium] Hosted job-wide AppArmor relaxation — .github/actions/setup-codex/action.yml:68 (sha=fad063b7e6d90732d4613fcbe6aaa01a475ca50e)",
+      "expected_head_sha": "fad063b7e6d90732d4613fcbe6aaa01a475ca50e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:05:27.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/read-only-review-landlock",
+        "head_sha": "fad063b7e6d90732d4613fcbe6aaa01a475ca50e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
