@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:06:31.013Z",
+  "updated_at": "2026-08-14T05:07:12.705Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123192:5286449901:2026-08-14T00:25:20Z:clawsweeper_needs_human",
-      "comment_id": "5286449901",
-      "comment_version_key": "5286449901:2026-08-14T00:25:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123192#issuecomment-5286449901",
-      "comment_created_at": "2026-08-13T21:12:46Z",
-      "comment_updated_at": "2026-08-14T00:25:20Z",
-      "comment_body_sha256": "5b501b95bf55dc253e29e1d1bf2b4e5115a3549b60073a90e7a667f6c3dd308a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123192,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change alters when in-memory session-run state is removed; it needs exact-head validation after rebasing to ensure a delayed projection owner cannot be cleaned up prematurely. (sha=3ba38b817a91c17c383abb864080f6939e26f5df)",
-      "expected_head_sha": "3ba38b817a91c17c383abb864080f6939e26f5df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T00:41:54.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-terminal-pending-sweep",
-        "head_sha": "3ba38b817a91c17c383abb864080f6939e26f5df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123278:5286590925:2026-08-13T23:36:47Z:clawsweeper_needs_human",
       "comment_id": "5286590925",
@@ -30742,6 +30709,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2922:5289600729:2026-08-14T04:54:50Z:clawsweeper_needs_human",
+      "comment_id": "5289600729",
+      "comment_version_key": "5289600729:2026-08-14T04:54:50Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2922#issuecomment-5289600729",
+      "comment_created_at": "2026-08-14T04:47:54Z",
+      "comment_updated_at": "2026-08-14T04:54:50Z",
+      "comment_body_sha256": "0ef1a059bbca9d6ff0550dce80234188ef19895c2b04c42b35c6131ec7d40bd2",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2922,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The crash recurs statistically on the affected host, so the supplied unit and closed-port stress coverage cannot prove that the Linux use-after-free signature is eliminated. (sha=d74595b4989d3967e2b56af35d74450fa17ec63b)",
+      "expected_head_sha": "d74595b4989d3967e2b56af35d74450fa17ec63b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:07:12.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2243-linux-uaf",
+        "head_sha": "d74595b4989d3967e2b56af35d74450fa17ec63b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
