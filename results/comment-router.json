@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T16:25:13.803Z",
+  "updated_at": "2026-08-14T16:25:23.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96291:5293303788:2026-08-14T12:30:34Z:re_review",
-      "comment_id": "5293303788",
-      "comment_version_key": "5293303788:2026-08-14T12:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96291#issuecomment-5293303788",
-      "comment_created_at": "2026-08-14T12:30:34Z",
-      "comment_updated_at": "2026-08-14T12:30:34Z",
-      "comment_body_sha256": "929e95567c3306d9e55ac3a1f3ade4c723dc37b639fb667bf4ddf22fb552239f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96291,
-      "author": "AdrianIp0204",
-      "author_id": 255652477,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T12:31:15.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-90354-memory-flush-bounds",
-        "head_sha": "0a5dcff826abd295c3747eeddc8ee523d7dcd561",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111721:5020486649:2026-08-14T12:31:10Z:clawsweeper_auto_repair",
       "comment_id": "5020486649",
@@ -31194,6 +31147,39 @@
         "kind": "pull_request",
         "branch": "fix/terminal-blank-term-env",
         "head_sha": "6cd7b7bb61a65f51ff084cc658ea9597adfdca65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123695:5294651391:2026-08-14T16:12:23Z:clawsweeper_needs_human",
+      "comment_id": "5294651391",
+      "comment_version_key": "5294651391:2026-08-14T16:12:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123695#issuecomment-5294651391",
+      "comment_created_at": "2026-08-14T14:46:30Z",
+      "comment_updated_at": "2026-08-14T16:12:23Z",
+      "comment_body_sha256": "7d0bb32da2f38295721985e659f9c905583153d08942a4fb300f2f1360fc51f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123695,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging makes the full tracked-manifest audit part of every selected full-Node boundary run, adding CI wall-clock and a new required failure mode; exact-head boundary shards must esta... (sha=a5efca32cdee1419870432b1c6f9f219ac3c3cb3)",
+      "expected_head_sha": "a5efca32cdee1419870432b1c6f9f219ac3c3cb3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T16:25:23.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "giodl/deps-pin-ci",
+        "head_sha": "a5efca32cdee1419870432b1c6f9f219ac3c3cb3",
         "cluster_id": null,
         "job_path": null
       }
