@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T11:40:42.245Z",
+  "updated_at": "2026-08-14T11:41:23.336Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122863:5274319581:2026-08-14T07:03:21Z:clawsweeper_needs_human",
-      "comment_id": "5274319581",
-      "comment_version_key": "5274319581:2026-08-14T07:03:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5274319581",
-      "comment_created_at": "2026-08-13T00:18:12Z",
-      "comment_updated_at": "2026-08-14T07:03:21Z",
-      "comment_body_sha256": "ab06ddf2b0c96d09695ca4e4b903977201ebbf096f8081df8fbb3ac880af3910",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Revalidate plugin-origin attribution after integration** - The proposed admission-evidence owner accepts remote participant facts from active registered channel plugins; its lifecycle,...; Review finding: [medium] Revalidate plugin-origin attribution after integration — src/channels/message-access/admission-evidence.ts:1 (sha=b48aa274d8e41e2d06a4da42ef36534a9bc04f7c)",
-      "expected_head_sha": "b48aa274d8e41e2d06a4da42ef36534a9bc04f7c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:38:33.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-channel-user-ingress",
-        "head_sha": "b48aa274d8e41e2d06a4da42ef36534a9bc04f7c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122943:5275486805:2026-08-14T07:34:09Z:clawsweeper_auto_repair",
       "comment_id": "5275486805",
@@ -31763,6 +31730,53 @@
       "status": "skipped",
       "processed_at": "2026-08-14T11:40:42.245Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123614:5292875908:2026-08-14T11:40:38Z:re_review",
+      "comment_id": "5292875908",
+      "comment_version_key": "5292875908:2026-08-14T11:40:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123614#issuecomment-5292875908",
+      "comment_created_at": "2026-08-14T11:40:38Z",
+      "comment_updated_at": "2026-08-14T11:40:38Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123614,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T11:41:21.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-event-json-errors",
+        "head_sha": "41b5e8f311dbc09194903304aec2e1fb9bb4afac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
