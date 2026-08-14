@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T00:33:22.080Z",
+  "updated_at": "2026-08-14T00:34:03.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123270:5284059689:2026-08-13T17:20:50Z:re_review",
-      "comment_id": "5284059689",
-      "comment_version_key": "5284059689:2026-08-13T17:20:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123270#issuecomment-5284059689",
-      "comment_created_at": "2026-08-13T17:20:50Z",
-      "comment_updated_at": "2026-08-13T17:20:50Z",
-      "comment_body_sha256": "2a6d29b8111d5da44bd8d19c21f1bb61443db00c8d631d0c86117511e73a3d94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123270,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T17:21:30.616Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/android-legacy-branch-compat-20260813",
-        "head_sha": "dea145ca06353c206e1482b8156bfe808bebe049",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122155:5256313719:2026-08-13T17:21:53Z:clawsweeper_needs_human",
       "comment_id": "5256313719",
@@ -31087,6 +31040,39 @@
         "kind": "pull_request",
         "branch": "fix/session-title-sentence-case",
         "head_sha": "4b257383bbc67cf0a60d74af1f1ce437176432b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123264:5285841957:2026-08-14T00:33:25Z:clawsweeper_needs_human",
+      "comment_id": "5285841957",
+      "comment_version_key": "5285841957:2026-08-14T00:33:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123264#issuecomment-5285841957",
+      "comment_created_at": "2026-08-13T20:10:43Z",
+      "comment_updated_at": "2026-08-14T00:33:25Z",
+      "comment_body_sha256": "1be87914847f1b4bcc4ece3c9eab4c895319b99b7fc53a32bcaca54264b11fec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123264,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - First-run users receive a collapsed Channels section while users with saved collapsed-section preferences retain their prior state; maintainers need to confirm that upgrade distinctio... (sha=068f560fccd615d338df27f9d727fabe6ee3ecca)",
+      "expected_head_sha": "068f560fccd615d338df27f9d727fabe6ee3ecca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T00:34:03.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sidebar-channel-conversations",
+        "head_sha": "068f560fccd615d338df27f9d727fabe6ee3ecca",
         "cluster_id": null,
         "job_path": null
       }
