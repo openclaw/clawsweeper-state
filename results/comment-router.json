@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:43:17.122Z",
+  "updated_at": "2026-08-14T21:43:30.651Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120900:5296581668:2026-08-14T18:03:23Z:re_review",
-      "comment_id": "5296581668",
-      "comment_version_key": "5296581668:2026-08-14T18:03:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120900#issuecomment-5296581668",
-      "comment_created_at": "2026-08-14T18:03:23Z",
-      "comment_updated_at": "2026-08-14T18:03:23Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120900,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:09:02.350Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/install-policy-warning-ui",
-        "head_sha": "7fd1505e4089ed53bf3807ae787a72927684ac35",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5296596298:2026-08-14T18:04:59Z:re_review",
       "comment_id": "5296596298",
@@ -32423,6 +32376,39 @@
         "kind": "pull_request",
         "branch": "feat/muse-provider",
         "head_sha": "372bcf067b675bb79da15a528a231b0f57911df9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3414:5195264556:2026-08-14T21:41:32Z:clawsweeper_needs_human",
+      "comment_id": "5195264556",
+      "comment_version_key": "5195264556:2026-08-14T21:41:32Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3414#issuecomment-5195264556",
+      "comment_created_at": "2026-08-05T17:45:33Z",
+      "comment_updated_at": "2026-08-14T21:41:32Z",
+      "comment_body_sha256": "9d17b3551b7dbc24abe9ad665aac760a9cf525cbe3d9287cfcf1badb3256612d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new reusable-workflow inputs intentionally republish every selected unchanged skill when categories, topics, or clear flags are supplied; existing callers are unchanged when they... (sha=df1a970afe15ed27e8dc495191d0cf7ec79f63c1)",
+      "expected_head_sha": "df1a970afe15ed27e8dc495191d0cf7ec79f63c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:43:30.651Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skill-publish-catalog-metadata",
+        "head_sha": "df1a970afe15ed27e8dc495191d0cf7ec79f63c1",
         "cluster_id": null,
         "job_path": null
       }
