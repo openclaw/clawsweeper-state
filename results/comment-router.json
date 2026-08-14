@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:21:12.053Z",
+  "updated_at": "2026-08-14T07:21:41.914Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121562:5239219348:2026-08-14T03:30:24Z:clawsweeper_needs_human",
-      "comment_id": "5239219348",
-      "comment_version_key": "5239219348:2026-08-14T03:30:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121562#issuecomment-5239219348",
-      "comment_created_at": "2026-08-10T10:57:04Z",
-      "comment_updated_at": "2026-08-14T03:30:24Z",
-      "comment_body_sha256": "8f198b909f5b5870feef3b9b62554b55526e44fc6f7186dbd679f0e855150ac7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121562,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify every receipt producer is owner-sanitized** - Receipt metadata is persisted and rendered after wizard acceptance; confirm every producer can emit only the closed { kind } contrac...; Review finding: [medium] Verify every receipt producer is owner-sanitized — src/system-agent/chat-wizard-host.ts:317 (sha=f4faa920fede77ad5e8acb550c8f2398a05dd31c)",
-      "expected_head_sha": "f4faa920fede77ad5e8acb550c8f2398a05dd31c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T04:32:50.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/custodian-inline-setup-receipts",
-        "head_sha": "f4faa920fede77ad5e8acb550c8f2398a05dd31c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121907:5250032455:2026-08-14T04:25:54Z:clawsweeper_needs_human",
       "comment_id": "5250032455",
@@ -30091,6 +30058,53 @@
         "kind": "pull_request",
         "branch": "fix/gap-discord-transcript-untrusted",
         "head_sha": "ab19baaf25bb2ec5f411fe980d3e08d869a6c011",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5290656230:2026-08-14T07:20:45Z:re_review",
+      "comment_id": "5290656230",
+      "comment_version_key": "5290656230:2026-08-14T07:20:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5290656230",
+      "comment_created_at": "2026-08-14T07:20:45Z",
+      "comment_updated_at": "2026-08-14T07:20:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T07:21:39.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "297e186c71c2fb71a0e91e1e8aec49cd9325c807",
         "cluster_id": null,
         "job_path": null
       },
