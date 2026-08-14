@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T04:57:54.147Z",
+  "updated_at": "2026-08-14T05:00:19.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123253:5285918231:2026-08-14T00:25:15Z:clawsweeper_needs_human",
-      "comment_id": "5285918231",
-      "comment_version_key": "5285918231:2026-08-14T00:25:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123253#issuecomment-5285918231",
-      "comment_created_at": "2026-08-13T20:18:32Z",
-      "comment_updated_at": "2026-08-14T00:25:15Z",
-      "comment_body_sha256": "c6a13856acb278b08dec7f7bcb738ad49e26f8d7f90ca839587fa98f80a7a5ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123253,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head is merge-conflicted, so its three-way result against main has not been validated. (sha=9cdf3f23d02bba8bdf25436b22cd92f88ea6b036)",
-      "expected_head_sha": "9cdf3f23d02bba8bdf25436b22cd92f88ea6b036",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T00:41:54.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-cron-sessions-fence",
-        "head_sha": "9cdf3f23d02bba8bdf25436b22cd92f88ea6b036",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123269:5285976882:2026-08-14T00:27:40Z:clawsweeper_needs_human",
       "comment_id": "5285976882",
@@ -30714,6 +30681,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1162:5289668386:2026-08-14T04:59:30Z:re_review",
+      "comment_id": "5289668386",
+      "comment_version_key": "5289668386:2026-08-14T04:59:30Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1162#issuecomment-5289668386",
+      "comment_created_at": "2026-08-14T04:59:30Z",
+      "comment_updated_at": "2026-08-14T04:59:30Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1162,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T05:00:16.080Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/read-only-review-landlock",
+        "head_sha": "fad063b7e6d90732d4613fcbe6aaa01a475ca50e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
