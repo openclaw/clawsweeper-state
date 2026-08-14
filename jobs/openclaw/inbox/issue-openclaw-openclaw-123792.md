@@ -67,21 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Reproduce the bound Claude CLI history failure before editing: create a native Claude transcript with multiple assistant blocks/tool steps plus the same turn's local concatenated `api: "cli"` aggregate, then drive the Gateway history projection or Control UI fixture and show the extra aggregate. Repair the CLI persistence lifecycle so a non-live Claude run suppresses that synthetic aggregate only after its native transcript is confirmed available for import. Preserve aggregate persistence for codex/gemini-style CLI backends, unavailable native transcripts, and managed `claude-stdio` sessions; do not add UI text dedupe, configuration, schema changes, or fallback sidecars. Add focused regression coverage for the imported multi-block case and the local-fallback case, include user-visible release-note context in the PR body, and capture sanitized after-fix client-history proof.
+Repair the Gateway Claude CLI history merge so a turn cannot appear both as imported native per-block history and as a non-equivalent synthetic cli-assistant aggregate. Preserve synthetic persistence as fallback when native history is unavailable; do not add a setting or client-side text-only dedupe. First add a regression through the existing Gateway history boundary using imported assistant blocks plus an overlapping local aggregate. Keep repeated turns and different CLI sessions distinct, and retain existing imported-identity behavior. Do not edit CHANGELOG.md.
 
 Likely files:
 
-- src/agents/cli-runner.ts
-- src/agents/cli-runner/cli-run-transcript.ts
-- src/agents/cli-runner.reliability.test.ts
+- src/gateway/cli-session-history.merge.ts
 - src/gateway/cli-session-history.test.ts
-- ui/src/e2e/chat-cli-history-redaction.e2e.test.ts
+- src/gateway/server-methods/chat-history-pages.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/agents/cli-runner.reliability.test.ts src/gateway/cli-session-history.test.ts
-- node scripts/run-vitest.mjs ui/src/e2e/chat-cli-history-redaction.e2e.test.ts
-- Capture sanitized after-fix Control UI history proof showing imported blocks without the synthetic aggregate.
+- node scripts/run-vitest.mjs src/gateway/cli-session-history.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/chat-history-pages.test.ts
 
 ## Operator Prompt
 
