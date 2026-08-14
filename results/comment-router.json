@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:43:40.667Z",
+  "updated_at": "2026-08-14T18:44:00.839Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97175:4829105377:2026-06-29T04:53:03Z:re_review",
-      "comment_id": "4829105377",
-      "comment_version_key": "4829105377:2026-06-29T04:53:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97175#issuecomment-4829105377",
-      "comment_created_at": "2026-06-29T04:53:03Z",
-      "comment_updated_at": "2026-06-29T04:53:03Z",
-      "comment_body_sha256": "8dd53ea0c4502949a03b8fcba05474d4b6d318d63576a81f45b4c2c48826281f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97175,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:22:44.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97175:4834690972:2026-06-29T16:18:19Z:re_review",
       "comment_id": "4834690972",
@@ -30955,6 +30928,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123794:5296932223:2026-08-14T18:43:13Z:clawsweeper_needs_human",
+      "comment_id": "5296932223",
+      "comment_version_key": "5296932223:2026-08-14T18:43:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123794#issuecomment-5296932223",
+      "comment_created_at": "2026-08-14T18:43:13Z",
+      "comment_updated_at": "2026-08-14T18:43:13Z",
+      "comment_body_sha256": "ae5a99a3727736213353fb7edc527a7aa95d3b4ae7dc9bd36fa8962677c80026",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; allow the pending exact-head checks to finish and use the normal maintainer merge path. (sha=0955b5fb1bb588bf3c990faf5701f0d7ff233fac)",
+      "expected_head_sha": "0955b5fb1bb588bf3c990faf5701f0d7ff233fac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:44:00.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-remove-dead-resolver",
+        "head_sha": "0955b5fb1bb588bf3c990faf5701f0d7ff233fac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
