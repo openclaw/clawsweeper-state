@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current audit-worker ownership bug. In `src/audit/audit-event-writer.worker.ts`, preserve the inherited worker environment while overriding only `OPENCLAW_STATE_DIR`; do not weaken shared-state ownership admission, add a config option, or change the ownership model. Add a real worker-thread regression in `src/audit/audit-event-writer.test.ts`: establish an external ownership claim with the marker, start the audit writer, record and flush an audit event, and verify it persists; retain or extend focused proof that an unmarked writer remains fenced before mutation. Recheck sibling production state-directory overrides for the same replacement-environment pattern. Do not edit CHANGELOG.md.
+Repair the Gateway audit worker’s external shared-state ownership propagation. At the worker’s database-options boundary, preserve inherited process environment values while overriding only OPENCLAW_STATE_DIR. Add one real worker-thread regression: claim ownership with OPENCLAW_SUPERVISOR_MODE=external, persist an audit event through the writer with no error, and retain the existing proof that an unmarked writer is rejected. Do not add configuration, weaken ownership admission, change SQLite schema/version, or edit CHANGELOG.md; include release-note context in the PR body.
 
 Likely files:
 
