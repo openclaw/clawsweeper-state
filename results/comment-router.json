@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:24:48.607Z",
+  "updated_at": "2026-08-14T05:24:53.238Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5248162581:2026-08-11T01:59:41Z:re_review",
-      "comment_id": "5248162581",
-      "comment_version_key": "5248162581:2026-08-11T01:59:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5248162581",
-      "comment_created_at": "2026-08-11T01:59:41Z",
-      "comment_updated_at": "2026-08-11T01:59:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:16:14.281Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118169:5160156082:2026-08-14T02:14:56Z:clawsweeper_needs_human",
       "comment_id": "5160156082",
@@ -30256,6 +30229,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T05:24:48.607Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123187:5281574524:2026-08-14T05:20:52Z:clawsweeper_needs_human",
+      "comment_id": "5281574524",
+      "comment_version_key": "5281574524:2026-08-14T05:20:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123187#issuecomment-5281574524",
+      "comment_created_at": "2026-08-13T14:12:13Z",
+      "comment_updated_at": "2026-08-14T05:20:52Z",
+      "comment_body_sha256": "2d374c9fb8f130daf82c4975e21cbbc202c6310a106895bf7280ea158e78d21f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123187,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify OAuth sidecar ownership and deletion constraints** - The shared candidate path changes which credential sidecars Doctor can reach and later delete, so a maintainer should confirm...; Review finding: [medium] Verify OAuth sidecar ownership and deletion constraints (sha=f4847c5386fbcd7a9e2d81607c7242b11755dbc7)",
+      "expected_head_sha": "f4847c5386fbcd7a9e2d81607c7242b11755dbc7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:24:53.238Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-doctor-candidate-dedupe",
+        "head_sha": "f4847c5386fbcd7a9e2d81607c7242b11755dbc7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
