@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:28:50.233Z",
+  "updated_at": "2026-08-14T21:29:09.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123284:5296461592:2026-08-14T17:50:06Z:re_review",
-      "comment_id": "5296461592",
-      "comment_version_key": "5296461592:2026-08-14T17:50:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123284#issuecomment-5296461592",
-      "comment_created_at": "2026-08-14T17:50:06Z",
-      "comment_updated_at": "2026-08-14T17:50:06Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123284,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T17:50:55.605Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/i-find-the-little-subtitles-underneath-the-sessions-in-the-sideb",
-        "head_sha": "261566e65d79831cb0c8107b27cc8b82774828f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:416:5258105312:2026-08-14T17:50:13Z:clawsweeper_auto_repair",
       "comment_id": "5258105312",
@@ -32233,6 +32186,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123284:5285874241:2026-08-14T21:28:15Z:clawsweeper_needs_human",
+      "comment_id": "5285874241",
+      "comment_version_key": "5285874241:2026-08-14T21:28:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123284#issuecomment-5285874241",
+      "comment_created_at": "2026-08-13T20:14:05Z",
+      "comment_updated_at": "2026-08-14T21:28:15Z",
+      "comment_body_sha256": "90aef399158085a905afb2ade6705d5f704bb7445572b6a6eebb8571aee3cca9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind main and the supplied check rollup is incomplete, so GitHub’s exact-head merge result and required checks need refreshing before landing. (sha=482d666f78e6d2168b58cabd30d56f8b433234cb)",
+      "expected_head_sha": "482d666f78e6d2168b58cabd30d56f8b433234cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:29:09.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/i-find-the-little-subtitles-underneath-the-sessions-in-the-sideb",
+        "head_sha": "482d666f78e6d2168b58cabd30d56f8b433234cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
