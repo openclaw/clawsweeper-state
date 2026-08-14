@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T02:12:18.768Z",
+  "updated_at": "2026-08-14T02:12:20.259Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97103:4818638356:2026-06-27T15:10:23Z:re_review",
-      "comment_id": "4818638356",
-      "comment_version_key": "4818638356:2026-06-27T15:10:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97103#issuecomment-4818638356",
-      "comment_created_at": "2026-06-27T15:10:23Z",
-      "comment_updated_at": "2026-06-27T15:10:23Z",
-      "comment_body_sha256": "eae7ae101ff227218ec51748a8f00920a6791b20c0fbb9d7ce8fa7a6d69e24d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97103,
-      "author": "samrusani",
-      "author_id": 14844597,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T21:17:38.927Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97103:4871227317:2026-07-02T23:16:17Z:re_review",
       "comment_id": "4871227317",
@@ -30586,6 +30559,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123356:5287474810:2026-08-14T02:11:38Z:clawsweeper_needs_human",
+      "comment_id": "5287474810",
+      "comment_version_key": "5287474810:2026-08-14T02:11:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123356#issuecomment-5287474810",
+      "comment_created_at": "2026-08-13T23:18:35Z",
+      "comment_updated_at": "2026-08-14T02:11:38Z",
+      "comment_body_sha256": "3788fec228eab93e9b2314e4e37f1d6ea89818cf2e16b21a55cfc3b324295e99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The staged flow changes how commands from local and remotely supplied catalogs collect arguments; exact-head source review should confirm compatibility with undeclared and dynamic arg... (sha=907e47cf3c5c65046b5c9477ff65f1a3491b7b07)",
+      "expected_head_sha": "907e47cf3c5c65046b5c9477ff65f1a3491b7b07",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T02:12:20.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/command-arg-staged-input",
+        "head_sha": "907e47cf3c5c65046b5c9477ff65f1a3491b7b07",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
