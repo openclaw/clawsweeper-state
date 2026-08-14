@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:19:47.684Z",
+  "updated_at": "2026-08-14T17:19:56.037Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122863:5279032487:2026-08-13T10:18:56Z:re_review",
-      "comment_id": "5279032487",
-      "comment_version_key": "5279032487:2026-08-13T10:18:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5279032487",
-      "comment_created_at": "2026-08-13T10:18:56Z",
-      "comment_updated_at": "2026-08-13T10:18:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T13:44:32.930Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122863:5279127772:2026-08-13T10:27:42Z:re_review",
       "comment_id": "5279127772",
@@ -31483,6 +31456,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T17:19:47.684Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123762:5296174051:2026-08-14T17:19:06Z:clawsweeper_needs_human",
+      "comment_id": "5296174051",
+      "comment_version_key": "5296174051:2026-08-14T17:19:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123762#issuecomment-5296174051",
+      "comment_created_at": "2026-08-14T17:19:06Z",
+      "comment_updated_at": "2026-08-14T17:19:06Z",
+      "comment_body_sha256": "fe028aeb2e43707aa45f9b1ae309f1a601cddfd9b0c5a5cfaef11afb7e8c0f88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123762,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports focused automated tests and static checks, but no after-fix real transport or app-server replay evidence. After adding proo... (sha=b2c200435abdbb62eb50d894a437d0782b5cc58a)",
+      "expected_head_sha": "b2c200435abdbb62eb50d894a437d0782b5cc58a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T17:19:56.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/replay-consolidation",
+        "head_sha": "b2c200435abdbb62eb50d894a437d0782b5cc58a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
