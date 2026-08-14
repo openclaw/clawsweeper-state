@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T07:24:36.522Z",
+  "updated_at": "2026-08-14T07:25:24.863Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:104820:4949602901:2026-07-12T02:19:14Z:re_review",
-      "comment_id": "4949602901",
-      "comment_version_key": "4949602901:2026-07-12T02:19:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104820#issuecomment-4949602901",
-      "comment_created_at": "2026-07-12T02:19:14Z",
-      "comment_updated_at": "2026-07-12T02:19:14Z",
-      "comment_body_sha256": "870ecab97967f08f6953ad592b437bf75121b72a37a5a66dbe84ba545af005d8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104820,
-      "author": "Leon-SK668",
-      "author_id": 17695126,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T04:33:39.044Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:104820:4949711084:2026-07-12T02:57:23Z:re_review",
       "comment_id": "4949711084",
@@ -29976,6 +29949,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T07:24:36.522Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:95887:4781537394:2026-08-14T07:24:41Z:clawsweeper_needs_human",
+      "comment_id": "4781537394",
+      "comment_version_key": "4781537394:2026-08-14T07:24:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/95887#issuecomment-4781537394",
+      "comment_created_at": "2026-06-23T16:57:06Z",
+      "comment_updated_at": "2026-08-14T07:24:41Z",
+      "comment_body_sha256": "95b916f2b2ffcfd002711355952c2fa542d989709c6ab64bcec9c1c06c72a1b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 95887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A positive container detection replaces the current host package-repair instructions with image-redeployment guidance, so maintainers must explicitly accept that compatibility change. (sha=4f0a476565110f6d0e37a5c44de95004c2512d9b)",
+      "expected_head_sha": "4f0a476565110f6d0e37a5c44de95004c2512d9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T07:25:24.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/container-update-guidance",
+        "head_sha": "4f0a476565110f6d0e37a5c44de95004c2512d9b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
