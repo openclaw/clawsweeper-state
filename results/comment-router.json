@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:05:27.104Z",
+  "updated_at": "2026-08-14T05:06:31.013Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123271:5286006897:2026-08-14T00:33:48Z:clawsweeper_needs_human",
-      "comment_id": "5286006897",
-      "comment_version_key": "5286006897:2026-08-14T00:33:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123271#issuecomment-5286006897",
-      "comment_created_at": "2026-08-13T20:26:29Z",
-      "comment_updated_at": "2026-08-14T00:33:48Z",
-      "comment_body_sha256": "d1c2c4d3a9c04a78819812f083ebfa2c2d97e12b07610614e93df2560367632a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123271,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is behind current main, so the exact merge result and exact-head checks need refreshing before merge. (sha=44a9ef705edaf1a98e32f1c3140a01d268e9c3f1)",
-      "expected_head_sha": "44a9ef705edaf1a98e32f1c3140a01d268e9c3f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T00:41:54.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoqa-usage-agent-universe",
-        "head_sha": "44a9ef705edaf1a98e32f1c3140a01d268e9c3f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123192:5286449901:2026-08-14T00:25:20Z:clawsweeper_needs_human",
       "comment_id": "5286449901",
@@ -30728,6 +30695,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:97162:5289705554:2026-08-14T05:05:40Z:re_review",
+      "comment_id": "5289705554",
+      "comment_version_key": "5289705554:2026-08-14T05:05:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/97162#issuecomment-5289705554",
+      "comment_created_at": "2026-08-14T05:05:40Z",
+      "comment_updated_at": "2026-08-14T05:05:40Z",
+      "comment_body_sha256": "cf55f8351a0482422fbb9612c42c003768f72546f47a23cedb144da6baf64aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 97162,
+      "author": "wangwllu",
+      "author_id": 7668944,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T05:06:28.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-secrets-audit-check-severity",
+        "head_sha": "df8f5d505b9c0c4c67bc17b5e68c58a1b025b2e1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
