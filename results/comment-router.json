@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T05:22:58.576Z",
+  "updated_at": "2026-08-14T05:23:14.503Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114173:5235911975:2026-08-10T04:34:50Z:re_review",
-      "comment_id": "5235911975",
-      "comment_version_key": "5235911975:2026-08-10T04:34:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114173#issuecomment-5235911975",
-      "comment_created_at": "2026-08-10T04:34:50Z",
-      "comment_updated_at": "2026-08-10T04:34:50Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114173,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T02:16:14.281Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114173:5236589601:2026-08-10T06:18:53Z:re_review",
       "comment_id": "5236589601",
@@ -30220,6 +30193,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T05:22:58.576Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123487:5289806236:2026-08-14T05:22:27Z:clawsweeper_needs_human",
+      "comment_id": "5289806236",
+      "comment_version_key": "5289806236:2026-08-14T05:22:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123487#issuecomment-5289806236",
+      "comment_created_at": "2026-08-14T05:22:27Z",
+      "comment_updated_at": "2026-08-14T05:22:27Z",
+      "comment_body_sha256": "237f580cc67637953f470d3d6c6396c3ac9d199e706cc21ac36aae00dc795248",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123487,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports mocked WebSocket-harness tests and schematic timing only; add a redacted real Deepgram after-fix transcript or runtime log... (sha=8fd1c2a8fb2d3b9f0d5ce55f3da667da469d1014)",
+      "expected_head_sha": "8fd1c2a8fb2d3b9f0d5ce55f3da667da469d1014",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T05:23:14.503Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/deepgram-realtime-idle-flush",
+        "head_sha": "8fd1c2a8fb2d3b9f0d5ce55f3da667da469d1014",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
