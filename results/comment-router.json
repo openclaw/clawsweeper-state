@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T11:43:10.138Z",
+  "updated_at": "2026-08-14T11:43:55.560Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123418:5288671926:2026-08-14T06:30:15Z:clawsweeper_needs_human",
-      "comment_id": "5288671926",
-      "comment_version_key": "5288671926:2026-08-14T06:30:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123418#issuecomment-5288671926",
-      "comment_created_at": "2026-08-14T02:20:27Z",
-      "comment_updated_at": "2026-08-14T06:30:15Z",
-      "comment_body_sha256": "583c3959e677fb18287461c70ab8f43df697955f2bf827452d8fd5ddedc256d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123418,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Retaining root work for every admitted setup session can delay Gateway drain or restart if a cancellation or exceptional session path does not settle and release its lease; local life... (sha=d6c53e57217cc860239a93669e5508203c64e328)",
-      "expected_head_sha": "d6c53e57217cc860239a93669e5508203c64e328",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:38:33.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-model-setup-drain-admission",
-        "head_sha": "d6c53e57217cc860239a93669e5508203c64e328",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123443:5288986777:2026-08-14T07:14:08Z:clawsweeper_auto_repair",
       "comment_id": "5288986777",
@@ -31777,6 +31744,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123585:5292897544:2026-08-14T11:43:07Z:re_review",
+      "comment_id": "5292897544",
+      "comment_version_key": "5292897544:2026-08-14T11:43:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123585#issuecomment-5292897544",
+      "comment_created_at": "2026-08-14T11:43:07Z",
+      "comment_updated_at": "2026-08-14T11:43:07Z",
+      "comment_body_sha256": "1e174f02ce81d475156a2c0a62ca4b4df295ced6d128aecd838ac7986b93d1ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123585,
+      "author": "Chinmayrawat15",
+      "author_id": 88652081,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T11:43:53.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-new-session-cwd-gateway-persistence",
+        "head_sha": "780b9de983b9bcee1d43dcfa0d8caa10bfc340db",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
