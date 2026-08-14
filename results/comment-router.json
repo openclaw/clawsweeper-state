@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-14T07:05:16.900Z",
+  "updated_at": "2026-08-14T07:03:54.244Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119343:5288899742:2026-08-14T03:00:44Z:re_review",
+      "comment_id": "5288899742",
+      "comment_version_key": "5288899742:2026-08-14T03:00:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5288899742",
+      "comment_created_at": "2026-08-14T03:00:44Z",
+      "comment_updated_at": "2026-08-14T03:00:44Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119343,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T03:28:28.212Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/system-agent-qr-gateway",
+        "head_sha": "a4107168feb9aa89b2a9f596de9cdf8059591974",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119343:5184670120:2026-08-14T03:27:35Z:clawsweeper_needs_human",
       "comment_id": "5184670120",
@@ -30696,39 +30743,6 @@
         "kind": "pull_request",
         "branch": "openclaw/our-openclaw-webui-tool-search-is-a-bit-dumb-when-i-do-openclaw",
         "head_sha": "abda24064c58454a69822b31f68b32d98e70eb47",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123064:5277811095:2026-08-14T07:03:37Z:clawsweeper_needs_human",
-      "comment_id": "5277811095",
-      "comment_version_key": "5277811095:2026-08-14T07:03:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123064#issuecomment-5277811095",
-      "comment_created_at": "2026-08-13T08:16:27Z",
-      "comment_updated_at": "2026-08-14T07:03:37Z",
-      "comment_body_sha256": "0e2f52cff0f334b7cd00e5e397652a46c6ec59095c7e28359d58e7f0c9892fe1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123064,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The sandbox prevented independent confirmation of the current-main wrapper, its callers, sibling terminal paths, and the exact three-way merge result. (sha=50a24b5923fe0d83fcbfc8863a397a775e75fd5d)",
-      "expected_head_sha": "50a24b5923fe0d83fcbfc8863a397a775e75fd5d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:05:16.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-voice-bridge-connect-failure",
-        "head_sha": "50a24b5923fe0d83fcbfc8863a397a775e75fd5d",
         "cluster_id": null,
         "job_path": null
       }
