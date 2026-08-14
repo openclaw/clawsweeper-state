@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T22:04:46.369Z",
+  "updated_at": "2026-08-14T22:05:33.783Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2934:5296780693:2026-08-14T18:25:48Z:re_review",
-      "comment_id": "5296780693",
-      "comment_version_key": "5296780693:2026-08-14T18:25:48Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2934#issuecomment-5296780693",
-      "comment_created_at": "2026-08-14T18:25:48Z",
-      "comment_updated_at": "2026-08-14T18:25:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2934,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T18:30:22.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-jwt-org-fallback",
-        "head_sha": "368b1548c6f9e567c3a4d54cfb3c143cf5510813",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119941:5296766932:2026-08-14T18:24:17Z:re_review",
       "comment_id": "5296766932",
@@ -32137,6 +32090,39 @@
         "kind": "pull_request",
         "branch": "release/next-unreleased-0.14.7-31836986812",
         "head_sha": "6f34f07ff3778be3ab5e66ef1f8113e71f67ea9e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/libterminal:48:5296164372:2026-08-14T22:04:29Z:clawsweeper_needs_human",
+      "comment_id": "5296164372",
+      "comment_version_key": "5296164372:2026-08-14T22:04:29Z",
+      "comment_url": "https://github.com/openclaw/libterminal/pull/48#issuecomment-5296164372",
+      "comment_created_at": "2026-08-14T17:18:01Z",
+      "comment_updated_at": "2026-08-14T22:04:29Z",
+      "comment_body_sha256": "165d1163cf5074493e1ec82577fab0ffd3e64c0328ab45d83e7294f9ee92628c",
+      "repo": "openclaw/libterminal",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR supplies completed CI statuses but no redacted after-fix terminal output, logs, or linked run artifact; CI alone is supplemental and does not satisfy the external-PR real-behav... (sha=150667c383fb8d86ea95cf9a117d1e15637af588)",
+      "expected_head_sha": "150667c383fb8d86ea95cf9a117d1e15637af588",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T22:05:33.783Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-381bfc58ca",
+        "head_sha": "150667c383fb8d86ea95cf9a117d1e15637af588",
         "cluster_id": null,
         "job_path": null
       }
