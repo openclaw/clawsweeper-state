@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T08:38:44.848Z",
+  "updated_at": "2026-08-14T08:38:59.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123503:5290183374:2026-08-14T06:22:07Z:clawsweeper_needs_human",
-      "comment_id": "5290183374",
-      "comment_version_key": "5290183374:2026-08-14T06:22:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123503#issuecomment-5290183374",
-      "comment_created_at": "2026-08-14T06:22:07Z",
-      "comment_updated_at": "2026-08-14T06:22:07Z",
-      "comment_body_sha256": "c759615ff49c5fbf06723b45eec73772b4ea8e3586ec57a79a2aca49f1f6f40e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123503,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the private runtime export cannot be bypassed** - The new package export makes the loopback-request helper resolvable in principle; merge only after confirming the plugin loader’...; Review finding: [medium] Verify the private runtime export cannot be bypassed — package.json:669 (sha=f97ab8802031c3755cdf29c1cf1e363c0fe388bf)",
-      "expected_head_sha": "f97ab8802031c3755cdf29c1cf1e363c0fe388bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T06:22:52.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-launch-perf-isolation",
-        "head_sha": "f97ab8802031c3755cdf29c1cf1e363c0fe388bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123248:5290184534:2026-08-14T06:22:17Z:re_review",
       "comment_id": "5290184534",
@@ -30360,6 +30327,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123491:5291290495:2026-08-14T08:38:14Z:re_review",
+      "comment_id": "5291290495",
+      "comment_version_key": "5291290495:2026-08-14T08:38:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123491#issuecomment-5291290495",
+      "comment_created_at": "2026-08-14T08:38:14Z",
+      "comment_updated_at": "2026-08-14T08:38:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123491,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T08:38:57.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/omit-audio-default-prompt-autodetect-123305",
+        "head_sha": "18e628b49515055e2b7742696c186c33f369f0b3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
