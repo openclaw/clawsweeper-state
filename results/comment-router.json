@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T21:18:54.728Z",
+  "updated_at": "2026-08-14T21:19:02.350Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104223:4943299008:2026-08-14T16:36:49Z:clawsweeper_auto_repair",
-      "comment_id": "4943299008",
-      "comment_version_key": "4943299008:2026-08-14T16:36:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/104223#issuecomment-4943299008",
-      "comment_created_at": "2026-07-11T06:59:30Z",
-      "comment_updated_at": "2026-08-14T16:36:49Z",
-      "comment_body_sha256": "4a2067ab01b1bf2667c90eb8bd912d7015f9f6c20af107b600b2dd15b0daa90d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 104223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=50088384d9167eea77955b14721952fe3e6dc3ee)",
-      "expected_head_sha": "50088384d9167eea77955b14721952fe3e6dc3ee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T17:43:45.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-task-terminal-delivery-generation",
-        "head_sha": "50088384d9167eea77955b14721952fe3e6dc3ee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104394:4945012290:2026-08-14T16:37:25Z:clawsweeper_auto_repair",
       "comment_id": "4945012290",
@@ -32197,6 +32164,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123816:5297981851:2026-08-14T21:18:18Z:clawsweeper_needs_human",
+      "comment_id": "5297981851",
+      "comment_version_key": "5297981851:2026-08-14T21:18:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123816#issuecomment-5297981851",
+      "comment_created_at": "2026-08-14T20:42:30Z",
+      "comment_updated_at": "2026-08-14T21:18:18Z",
+      "comment_body_sha256": "709766e6ae02d186ccefde292bbeafcc4a52a6b787a1ac7371545056a04147f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally rejects existing gateway-hosted sqlite3 access to active state paths; affected automation must use OpenClaw commands or a copied database. (sha=09db2821139b9bffde545d8973df506c847b49be)",
+      "expected_head_sha": "09db2821139b9bffde545d8973df506c847b49be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T21:19:02.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guard-live-state-sqlite-exec",
+        "head_sha": "09db2821139b9bffde545d8973df506c847b49be",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
