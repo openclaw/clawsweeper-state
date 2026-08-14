@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T06:35:07.651Z",
+  "updated_at": "2026-08-14T06:35:14.022Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120933:5288954467:2026-08-14T03:09:52Z:re_review",
-      "comment_id": "5288954467",
-      "comment_version_key": "5288954467:2026-08-14T03:09:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120933#issuecomment-5288954467",
-      "comment_created_at": "2026-08-14T03:09:52Z",
-      "comment_updated_at": "2026-08-14T03:09:52Z",
-      "comment_body_sha256": "fc9a4c69eb224019271598d983d7fad71001b616027f77881078261238c77ca4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120933,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T03:10:38.547Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/pairing-modal-lifecycle",
-        "head_sha": "b7c5990acaeebc89e57da6358569d83e832a2aad",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122463:5288954617:2026-08-14T03:09:54Z:re_review",
       "comment_id": "5288954617",
@@ -30936,6 +30889,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T06:35:07.651Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114098:5083385284:2026-08-14T06:34:15Z:clawsweeper_needs_human",
+      "comment_id": "5083385284",
+      "comment_version_key": "5083385284:2026-08-14T06:34:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/114098#issuecomment-5083385284",
+      "comment_created_at": "2026-07-26T12:04:14Z",
+      "comment_updated_at": "2026-08-14T06:34:15Z",
+      "comment_body_sha256": "5dcbd34504ec8ba214fc090e87bd4304d0d3864cc06c3919db1cfa877d0ba110",
+      "repo": "openclaw/openclaw",
+      "issue_number": 114098,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The setup path changes persisted channel transport behavior and daemon lifecycle ownership; source-level upgrade and ownership review remains unperformed because the local inspection... (sha=0451b2ffefafcfc1f78ecb606c29a297c8efc41f)",
+      "expected_head_sha": "0451b2ffefafcfc1f78ecb606c29a297c8efc41f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T06:35:14.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/signal-setup-wizard-narrow",
+        "head_sha": "0451b2ffefafcfc1f78ecb606c29a297c8efc41f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
