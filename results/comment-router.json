@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:33:23.619Z",
+  "updated_at": "2026-08-14T03:33:30.777Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123193:5287309466:2026-08-13T22:55:01Z:re_review",
-      "comment_id": "5287309466",
-      "comment_version_key": "5287309466:2026-08-13T22:55:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123193#issuecomment-5287309466",
-      "comment_created_at": "2026-08-13T22:55:01Z",
-      "comment_updated_at": "2026-08-13T22:55:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123193,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T23:22:52.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clear-pending-history-error-path-bug-008",
-        "head_sha": "5c700373f3c49165e83f815b97cb96d2ef99e881",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123358:5287315477:2026-08-13T22:55:48Z:re_review",
       "comment_id": "5287315477",
@@ -30674,6 +30627,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T03:33:23.619Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123211:5285619207:2026-08-14T03:28:09Z:clawsweeper_needs_human",
+      "comment_id": "5285619207",
+      "comment_version_key": "5285619207:2026-08-14T03:28:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123211#issuecomment-5285619207",
+      "comment_created_at": "2026-08-13T19:47:52Z",
+      "comment_updated_at": "2026-08-14T03:28:09Z",
+      "comment_body_sha256": "5cd8ac92b9f4a250aa729af57da8f1270ee723bef2bb3427c231f4082a7f1e7a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123211,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current Updates and Memory renderer parity, current-main behavior, and branch freshness were not independently verified because the read-only shell could not start. (sha=f7910927baef24228137487c081b06679870667a)",
+      "expected_head_sha": "f7910927baef24228137487c081b06679870667a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:33:30.777Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-settings-search-narrowing",
+        "head_sha": "f7910927baef24228137487c081b06679870667a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
