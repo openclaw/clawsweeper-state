@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T03:33:31.221Z",
+  "updated_at": "2026-08-14T03:33:37.988Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123219:5287349455:2026-08-13T23:00:37Z:re_review",
-      "comment_id": "5287349455",
-      "comment_version_key": "5287349455:2026-08-13T23:00:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123219#issuecomment-5287349455",
-      "comment_created_at": "2026-08-13T23:00:37Z",
-      "comment_updated_at": "2026-08-13T23:00:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123219,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T23:22:52.785Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tasks-terminal-recent-100911",
-        "head_sha": "640c425b4dabd9416f1425223721c7da23f7303d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5287447481:2026-08-13T23:14:35Z:re_review",
       "comment_id": "5287447481",
@@ -30643,6 +30596,39 @@
         "kind": "pull_request",
         "branch": "codex/release-resume-sparkle-cleanup",
         "head_sha": "979dd2fd12280dd3734969d87e908f61dd24701f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:2920:5289085863:2026-08-14T03:32:52Z:clawsweeper_needs_human",
+      "comment_id": "5289085863",
+      "comment_version_key": "5289085863:2026-08-14T03:32:52Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/2920#issuecomment-5289085863",
+      "comment_created_at": "2026-08-14T03:32:52Z",
+      "comment_updated_at": "2026-08-14T03:32:52Z",
+      "comment_body_sha256": "12ee322d183f928796119c24b1bdd06fee50012085fc084f5c7978f0f5988859",
+      "repo": "steipete/CodexBar",
+      "issue_number": 2920,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted cache-retention semantics; macOS test completion should confirm both save paths preserve retained coverage while budgets remain best-effort. (sha=b4fde0d974fcd6e271541e15b61c94ccef5a0efd)",
+      "expected_head_sha": "b4fde0d974fcd6e271541e15b61c94ccef5a0efd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:33:37.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2914-projection-retention",
+        "head_sha": "b4fde0d974fcd6e271541e15b61c94ccef5a0efd",
         "cluster_id": null,
         "job_path": null
       }
