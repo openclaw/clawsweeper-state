@@ -67,19 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven non-TTY device-code login defect in https://github.com/openclaw/openclaw/issues/113326. The CLI maps `--device-code` to the existing provider method, but `modelsAuthLoginCommand` rejects every non-TTY caller before `runModelsAuthLoginFlowCore` can select it. Preserve the interactive guard for flows that require prompts; make an explicitly selected device-code method present its verification URL and short-lived code safely in a noninteractive shell. Do not add config, synchronize/import/unify standalone Codex CLI credentials, alter the OpenClaw auth-store boundary, or combine the separate TTY hang/process-leak work from https://github.com/openclaw/openclaw/issues/113505. Add a command-boundary regression that fails before the repair, confirms no interactive selector is used, and verifies the device pairing flow can reach its provider method with non-TTY stdin. Include user-visible release-note context in the PR body, not CHANGELOG.md.
+Repair the current-main headless OpenAI device-code login defect. `openclaw models auth login --provider openai --device-code` must start and complete the existing OpenAI provider device-code flow without a TTY, emitting a safe plaintext URL, short-lived code, and progress/completion transcript for browser authorization. Keep any provider/method not explicitly selected fail-closed in non-TTY environments. Do not unify, import, copy, or mutate standalone Codex CLI credential stores; preserve selected-agent OpenClaw profile ownership and add no config. Add a regression that fails at the old unconditional TTY guard and proves the explicit device-code command reaches the provider flow and exposes the authorization prompt. Align docs with behavior; put release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
 - src/commands/models/auth.ts
 - src/commands/models/auth.test.ts
-- src/wizard/clack-prompter.ts
+- docs/providers/openai.md
+- docs/cli/models.md
 
 Validation:
 
 - node scripts/run-vitest.mjs src/commands/models/auth.test.ts
 - node scripts/run-vitest.mjs src/cli/models-cli.test.ts
-- node scripts/run-vitest.mjs extensions/openai/openai-chatgpt-device-code.test.ts
+- node scripts/run-vitest.mjs extensions/openai/openai-chatgpt-provider.test.ts
 
 ## Operator Prompt
 
