@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T01:22:09.534Z",
+  "updated_at": "2026-08-14T01:22:33.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123272:5286109904:2026-08-13T20:37:10Z:re_review",
-      "comment_id": "5286109904",
-      "comment_version_key": "5286109904:2026-08-13T20:37:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123272#issuecomment-5286109904",
-      "comment_created_at": "2026-08-13T20:37:10Z",
-      "comment_updated_at": "2026-08-13T20:37:10Z",
-      "comment_body_sha256": "5268becf66b3002c68fb0736ee64f7eb1f8020b430ab7e057f6626119880eaab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123272,
-      "author": "ZackMitkin",
-      "author_id": 20427502,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-13T21:09:02.037Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-migration-explicit-agent-owner",
-        "head_sha": "20541bc305c45f45ffbb118a7eb1ed349932cf3f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123270:5286143971:2026-08-13T20:40:50Z:re_review",
       "comment_id": "5286143971",
@@ -30523,6 +30476,39 @@
         "kind": "pull_request",
         "branch": "codex/chrome-web-store-release",
         "head_sha": "aa6ea0c4bc59ff7b86c9d92599091ef765d4e7ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106902:4963964756:2026-08-14T01:21:52Z:clawsweeper_needs_human",
+      "comment_id": "4963964756",
+      "comment_version_key": "4963964756:2026-08-14T01:21:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/106902#issuecomment-4963964756",
+      "comment_created_at": "2026-07-13T23:51:25Z",
+      "comment_updated_at": "2026-08-14T01:21:52Z",
+      "comment_body_sha256": "3141508cf3605f97f25414bdff909aea4373e337034ebbac045488f1a69955ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 106902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-main source and ClawHub release-state contract could not be independently verified because all read-only terminal commands failed in the sandbox. (sha=34bb75a95a9bb23a98ae99a0efef93aa278a2e54)",
+      "expected_head_sha": "34bb75a95a9bb23a98ae99a0efef93aa278a2e54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T01:22:33.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/106452-clawhub-cli-intro",
+        "head_sha": "34bb75a95a9bb23a98ae99a0efef93aa278a2e54",
         "cluster_id": null,
         "job_path": null
       }
