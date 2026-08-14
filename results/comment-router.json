@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-14T07:14:05.100Z",
+  "updated_at": "2026-08-14T07:12:22.381Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:42:5289282397:2026-08-14T03:58:44Z:clawsweeper_needs_human",
+      "comment_id": "5289282397",
+      "comment_version_key": "5289282397:2026-08-14T03:58:44Z",
+      "comment_url": "https://github.com/openclaw/AXorcist/pull/42#issuecomment-5289282397",
+      "comment_created_at": "2026-08-14T03:58:44Z",
+      "comment_updated_at": "2026-08-14T03:58:44Z",
+      "comment_body_sha256": "3d1c7e0217a0a78c338f521b42aa792b0e827f024665434ffd2bba0296ddb337",
+      "repo": "openclaw/AXorcist",
+      "issue_number": 42,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A generation reset removes PID-scoped logical tokens; reviewers should confirm that only subscriptions tied to the replaced process are invalidated and that lifecycle callbacks remain... (sha=3532c5c5581f19ec4593f7f4de860836ec35846c)",
+      "expected_head_sha": "3532c5c5581f19ec4593f7f4de860836ec35846c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T03:59:24.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stabilize-global-application-identity",
+        "head_sha": "3532c5c5581f19ec4593f7f4de860836ec35846c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1160:5289304648:2026-08-14T04:02:33Z:clawsweeper_auto_repair",
       "comment_id": "5289304648",
@@ -30653,39 +30686,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123527:5290330733:2026-08-14T07:12:12Z:clawsweeper_auto_repair",
-      "comment_id": "5290330733",
-      "comment_version_key": "5290330733:2026-08-14T07:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123527#issuecomment-5290330733",
-      "comment_created_at": "2026-08-14T06:41:04Z",
-      "comment_updated_at": "2026-08-14T07:12:12Z",
-      "comment_body_sha256": "73b1cc76577dea70e6e926ae301628b5ec2fbfd74b99b1ef8e4734cd0888917c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123527,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=83a7200e31f7cad5760ebad3bbfe3428b772a402)",
-      "expected_head_sha": "83a7200e31f7cad5760ebad3bbfe3428b772a402",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:14:05.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/egress-proxy-sandbox-scope",
-        "head_sha": "83a7200e31f7cad5760ebad3bbfe3428b772a402",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
