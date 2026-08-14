@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T23:27:37.031Z",
+  "updated_at": "2026-08-14T23:27:41.831Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2933:5297162592:2026-08-14T19:09:25Z:re_review",
-      "comment_id": "5297162592",
-      "comment_version_key": "5297162592:2026-08-14T19:09:25Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2933#issuecomment-5297162592",
-      "comment_created_at": "2026-08-14T19:09:25Z",
-      "comment_updated_at": "2026-08-14T19:09:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2933,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T19:12:58.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/codex-oauth-sources",
-        "head_sha": "21cd8ee998d97e53895e812cdf69a0202b9f3060",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123695:5294651391:2026-08-14T19:12:16Z:clawsweeper_needs_human",
       "comment_id": "5294651391",
@@ -32367,6 +32320,39 @@
         "kind": "pull_request",
         "branch": "brzezowski/chat-rails-tabs",
         "head_sha": "34d84e48999d166b03ffc9b80f95c082a3c53ea2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123864:5298827849:2026-08-14T23:26:53Z:clawsweeper_auto_repair",
+      "comment_id": "5298827849",
+      "comment_version_key": "5298827849:2026-08-14T23:26:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5298827849",
+      "comment_created_at": "2026-08-14T22:34:25Z",
+      "comment_updated_at": "2026-08-14T23:26:53Z",
+      "comment_body_sha256": "f1ad4ee5757c7f0ad550ade906d57fc6e9a2c822b5d474e740739eb22e90f990",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123864,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9f06cc0a9c9dd8b916759d03c0c3717c7cfee916)",
+      "expected_head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T23:27:41.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-reset-lifecycle-cas",
+        "head_sha": "9f06cc0a9c9dd8b916759d03c0c3717c7cfee916",
         "cluster_id": null,
         "job_path": null
       }
