@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T15:29:26.667Z",
+  "updated_at": "2026-08-14T15:30:14.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123189:5292171121:2026-08-14T10:16:09Z:re_review",
-      "comment_id": "5292171121",
-      "comment_version_key": "5292171121:2026-08-14T10:16:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123189#issuecomment-5292171121",
-      "comment_created_at": "2026-08-14T10:16:09Z",
-      "comment_updated_at": "2026-08-14T10:16:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123189,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T10:26:11.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-run-recovery-121756",
-        "head_sha": "813319c9b8658cd71b36f0df144a8ecd7f927a07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123189:5281706896:2026-08-14T10:25:18Z:clawsweeper_needs_human",
       "comment_id": "5281706896",
@@ -32191,6 +32144,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:475:5294202007:2026-08-14T15:19:45Z:clawsweeper_needs_human",
+      "comment_id": "5294202007",
+      "comment_version_key": "5294202007:2026-08-14T15:19:45Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/475#issuecomment-5294202007",
+      "comment_created_at": "2026-08-14T14:03:48Z",
+      "comment_updated_at": "2026-08-14T15:19:45Z",
+      "comment_body_sha256": "767cd50d785cab3f08cd1c3ad8a0ff4c5592bbf59195d9fc03bf40f72727bc1f",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 475,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A legitimately slow helper exceeding 15 seconds will be terminated and listing will use the lower-fidelity fallback path; this is an intentional availability tradeoff already used by... (sha=f2ab7e37b7e4cb8593a2bad5ee1c9ab4ccdd9697)",
+      "expected_head_sha": "f2ab7e37b7e4cb8593a2bad5ee1c9ab4ccdd9697",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T15:30:14.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/menubar-helper-process-timeout",
+        "head_sha": "f2ab7e37b7e4cb8593a2bad5ee1c9ab4ccdd9697",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
