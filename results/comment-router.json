@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-14T04:03:20.848Z",
+  "updated_at": "2026-08-14T04:05:54.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122863:5274319581:2026-08-13T23:19:47Z:clawsweeper_needs_human",
-      "comment_id": "5274319581",
-      "comment_version_key": "5274319581:2026-08-13T23:19:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122863#issuecomment-5274319581",
-      "comment_created_at": "2026-08-13T00:18:12Z",
-      "comment_updated_at": "2026-08-13T23:19:47Z",
-      "comment_body_sha256": "201a2c52675225bba576c162290f1296672e456b34cc30b661181462473f401f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122863,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the participant-provenance trust model** - The design makes a registered native channel plugin the authoritative producer of a remote participant fact; core validation may const...; Review finding: [medium] Approve the participant-provenance trust model (sha=87eba3f944fee5d26abdf72095d28ede695a39a4)",
-      "expected_head_sha": "87eba3f944fee5d26abdf72095d28ede695a39a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-13T23:24:03.903Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-channel-user-ingress",
-        "head_sha": "87eba3f944fee5d26abdf72095d28ede695a39a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123018:5276681647:2026-08-13T23:18:31Z:clawsweeper_needs_human",
       "comment_id": "5276681647",
@@ -30632,6 +30599,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122594:5289320111:2026-08-14T04:05:07Z:re_review",
+      "comment_id": "5289320111",
+      "comment_version_key": "5289320111:2026-08-14T04:05:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122594#issuecomment-5289320111",
+      "comment_created_at": "2026-08-14T04:05:07Z",
+      "comment_updated_at": "2026-08-14T04:05:07Z",
+      "comment_body_sha256": "ec10cb705f17f020b774430998fc144e3cbd268eca2addb0fd2aade6959a3a92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122594,
+      "author": "AppleSpriter",
+      "author_id": 26051275,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-14T04:05:52.564Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/composer-ime-blur-stuck",
+        "head_sha": "c3216d2c1233116a9d533fea0280e19308586c7b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
