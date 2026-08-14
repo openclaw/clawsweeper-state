@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T10:49:17.296Z",
+  "updated_at": "2026-08-14T10:49:24.733Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96113:5049052265:2026-07-22T17:00:01Z:re_review",
-      "comment_id": "5049052265",
-      "comment_version_key": "5049052265:2026-07-22T17:00:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96113#issuecomment-5049052265",
-      "comment_created_at": "2026-07-22T17:00:01Z",
-      "comment_updated_at": "2026-07-22T17:00:01Z",
-      "comment_body_sha256": "abae9e37b3d1cee5cd0705d23528be58fee8fe7a48e80bbc69efd072ae6537ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96113,
-      "author": "zaidazmi",
-      "author_id": 5183609,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T07:24:35.931Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:96113:5192661215:2026-08-05T13:54:48Z:re_review",
       "comment_id": "5192661215",
@@ -31525,6 +31498,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123608:5292448928:2026-08-14T10:48:47Z:clawsweeper_auto_repair",
+      "comment_id": "5292448928",
+      "comment_version_key": "5292448928:2026-08-14T10:48:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123608#issuecomment-5292448928",
+      "comment_created_at": "2026-08-14T10:48:47Z",
+      "comment_updated_at": "2026-08-14T10:48:47Z",
+      "comment_body_sha256": "e9ea08b1023fdf54f095efd5d641e073ef0c32ee7d32169ddac45e83eb3a3e31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4b0e83c5bc9f4a2d3e1c4f02a0bc39b64c2e1a66)",
+      "expected_head_sha": "4b0e83c5bc9f4a2d3e1c4f02a0bc39b64c2e1a66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T10:49:24.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-control-plane-load",
+        "head_sha": "4b0e83c5bc9f4a2d3e1c4f02a0bc39b64c2e1a66",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
