@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T09:34:14.181Z",
+  "updated_at": "2026-08-14T09:35:24.876Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119343:5235911855:2026-08-10T04:34:49Z:re_review",
-      "comment_id": "5235911855",
-      "comment_version_key": "5235911855:2026-08-10T04:34:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119343#issuecomment-5235911855",
-      "comment_created_at": "2026-08-10T04:34:49Z",
-      "comment_updated_at": "2026-08-10T04:34:49Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119343,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T06:40:40.152Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119343:5236589456:2026-08-10T06:18:52Z:re_review",
       "comment_id": "5236589456",
@@ -30707,6 +30680,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123525:5290268278:2026-08-14T09:34:40Z:clawsweeper_needs_human",
+      "comment_id": "5290268278",
+      "comment_version_key": "5290268278:2026-08-14T09:34:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123525#issuecomment-5290268278",
+      "comment_created_at": "2026-08-14T06:32:20Z",
+      "comment_updated_at": "2026-08-14T09:34:40Z",
+      "comment_body_sha256": "f5727e52341d423e6d71f349094be7701a0d0e0d86a1eb5e79904feebbdcc6fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123525,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: No after-fix runtime proof shows native denial together with successful OpenClaw sandbox fallback; provide redacted terminal or harness evidenc...; Review finding: [P1] Preserve sandbox fallback when containment is absent — extensions/codex/src/app-server/dynamic-tool-build.ts:778-785 - [P1] Do not mint containment from a fil... (sha=f9afe1ad6417ed7cf057911fcbe469792e195aea)",
+      "expected_head_sha": "f9afe1ad6417ed7cf057911fcbe469792e195aea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T09:35:24.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue6-native-command-containment",
+        "head_sha": "f9afe1ad6417ed7cf057911fcbe469792e195aea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
