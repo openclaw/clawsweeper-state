@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:15:15.929Z",
+  "updated_at": "2026-08-14T18:16:17.339Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121554:5242863357:2026-08-10T16:12:31Z:re_review",
-      "comment_id": "5242863357",
-      "comment_version_key": "5242863357:2026-08-10T16:12:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121554#issuecomment-5242863357",
-      "comment_created_at": "2026-08-10T16:12:31Z",
-      "comment_updated_at": "2026-08-10T16:12:31Z",
-      "comment_body_sha256": "b6fb9d69e32c739d703ac9ea42895471dff8320ae993c40dd01a5987c456e01c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121554,
-      "author": "mislavivanda",
-      "author_id": 72461767,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-14T16:02:02.257Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123721:5295486192:2026-08-14T16:06:06Z:clawsweeper_auto_repair",
       "comment_id": "5295486192",
@@ -30848,6 +30821,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123787:5296688554:2026-08-14T18:15:28Z:clawsweeper_needs_human",
+      "comment_id": "5296688554",
+      "comment_version_key": "5296688554:2026-08-14T18:15:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123787#issuecomment-5296688554",
+      "comment_created_at": "2026-08-14T18:15:28Z",
+      "comment_updated_at": "2026-08-14T18:15:28Z",
+      "comment_body_sha256": "4dd04f22d6547492a13cb697b3b20ee57dc28687912f0cf45e07ba0899186e03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123787,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR documents focused tests and an ephemeral Gateway RPC run, but its cron runner is mocked and no after-fix real-run artifact is posted. Af... (sha=77b1d7c37b636b8d5b9f129d30b2267a2839b5c2)",
+      "expected_head_sha": "77b1d7c37b636b8d5b9f129d30b2267a2839b5c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:16:17.339Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-scheduler-outcomes",
+        "head_sha": "77b1d7c37b636b8d5b9f129d30b2267a2839b5c2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
