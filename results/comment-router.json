@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T18:17:30.746Z",
+  "updated_at": "2026-08-14T18:17:35.958Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123709:5295440596:2026-08-14T16:01:24Z:re_review",
-      "comment_id": "5295440596",
-      "comment_version_key": "5295440596:2026-08-14T16:01:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123709#issuecomment-5295440596",
-      "comment_created_at": "2026-08-14T16:01:24Z",
-      "comment_updated_at": "2026-08-14T16:01:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123709,
-      "author": "joshavant",
-      "author_id": 830519,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T16:07:24.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-id-p0-message-delivery",
-        "head_sha": "99025e29a86dda3f4ea162dd6b82551dc0cb332b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123722:5295461552:2026-08-14T16:03:29Z:re_review",
       "comment_id": "5295461552",
@@ -30851,6 +30804,39 @@
         "kind": "pull_request",
         "branch": "fix/autoqa25-ui-companion-clear-error",
         "head_sha": "39d1bc015e626b5e76b53a768de7aa0404880279",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123752:5295920038:2026-08-14T18:13:58Z:clawsweeper_needs_human",
+      "comment_id": "5295920038",
+      "comment_version_key": "5295920038:2026-08-14T18:13:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123752#issuecomment-5295920038",
+      "comment_created_at": "2026-08-14T16:52:27Z",
+      "comment_updated_at": "2026-08-14T18:13:58Z",
+      "comment_body_sha256": "d4314e1da39b1c80905cb702c48f25e90baa17a81da70b8f9a2c05f8e916e21d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123752,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head e6e438d postdates the cbe6b8ad head named in the recorded Crabbox and exact-head CI evidence; complete current-head checks before merge. (sha=e6e438d601fc7a140ee02999c9964d2a42c4a48a)",
+      "expected_head_sha": "e6e438d601fc7a140ee02999c9964d2a42c4a48a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T18:17:35.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa25-cli-doctor-audit",
+        "head_sha": "e6e438d601fc7a140ee02999c9964d2a42c4a48a",
         "cluster_id": null,
         "job_path": null
       }
