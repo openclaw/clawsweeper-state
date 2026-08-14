@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-14T17:29:51.069Z",
+  "updated_at": "2026-08-14T17:29:58.033Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123640:5294863234:2026-08-14T15:07:00Z:re_review",
-      "comment_id": "5294863234",
-      "comment_version_key": "5294863234:2026-08-14T15:07:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123640#issuecomment-5294863234",
-      "comment_created_at": "2026-08-14T15:07:00Z",
-      "comment_updated_at": "2026-08-14T15:07:00Z",
-      "comment_body_sha256": "c98a077aa478bcf66f301d43389864defbb2ab56f0c3b13b95a38b0ef0a72bb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123640,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-14T15:13:23.748Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/codex-compact-pipeline",
-        "head_sha": "12d040e9755cee95612e68ce2536b2fe3f77a92c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123640:5293157404:2026-08-14T15:12:40Z:clawsweeper_auto_repair",
       "comment_id": "5293157404",
@@ -30490,6 +30443,39 @@
       "status": "skipped",
       "processed_at": "2026-08-14T17:29:51.069Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123766:5296274814:2026-08-14T17:29:09Z:clawsweeper_needs_human",
+      "comment_id": "5296274814",
+      "comment_version_key": "5296274814:2026-08-14T17:29:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123766#issuecomment-5296274814",
+      "comment_created_at": "2026-08-14T17:29:09Z",
+      "comment_updated_at": "2026-08-14T17:29:09Z",
+      "comment_body_sha256": "9c0ff5a389a07482bc2b35ad4831e87fd431a4e8404e09bf9f9e4cfd90dfb383",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by four net lines; the explicit authenticated-versus-configured identity comparison is the necessary owner-boundary behavior, so no safe net-neutral refactor is... (sha=3ae55dfeb27a5b7d6121d057a033b9d04ab5d742)",
+      "expected_head_sha": "3ae55dfeb27a5b7d6121d057a033b9d04ab5d742",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-14T17:29:58.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/autoqa-refill-channel-probes",
+        "head_sha": "3ae55dfeb27a5b7d6121d057a033b9d04ab5d742",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
